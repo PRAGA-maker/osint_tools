@@ -201,7 +201,7 @@ kind: group-index
 - **`kongregate`** (low) — Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a s
 - **`kosmos-2`** (high) — Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physic
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li
-- **`landviewer`** (medium) — satellite observation imagery tool that allows for on-the-fly searching, processing and getting valuable insights from satellite data to tac
+- **`landviewer`** (medium) — Use when you have a `geolocation` and want historical/current satellite imagery of it — returns browsable Sentinel/Landsat (and commercial) 
 - **`last-fm`** (medium) — Use when you have a `username` (or suspect a music handle) and want the person's public listening profile — returns social-profile, real nam
 - **`lexica`** (medium) — Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description 
 - **`librivox`** (high) — Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice 

@@ -29,7 +29,6 @@ kind: group-index
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (low) — Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded 
 - **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
 - **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
-- **`allmytweets`** (medium) — OSINT tool: AllMyTweets.
 - **`amazing-hiring`** (medium) — An extension for Chrome that allows you to find a link to Linkedin, Facebook, VK, StackOverflow, Instagram... by user Github (or other) prof
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
 - **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
@@ -156,7 +155,7 @@ kind: group-index
 - **`facebook-friend-list-scraper`** (high) — Use when you have a target's Facebook profile and want their friend network — returns the names and usernames of accounts on a large friend 
 - **`facebook-friends-list-generator`** (high) — Use when you have a Facebook `social-profile` and want to enumerate that person's friends/connections via a browser tool — returns an associ
 - **`facebook-geo`** (high) — Use when you have a `geolocation` or place and want to surface Facebook posts/pages tied to that location — returns `social-profile` and pos
-- **`facebook-graph-searcher-intelligencex`** (medium) — Web-based tool to search Facebook profiles via graph queries.
+- **`facebook-graph-searcher-intelligencex`** (medium) — Use when you have a Facebook numeric ID (or `name`/`username`) and want ready-made Facebook search/URL queries — returns constructed links t
 - **`facebook-latest-comments-scraper`** (high) — Use when you have a public Facebook post URL and want the full comment thread as structured data — returns commenter names/usernames, text a
 - **`facebook-latest-posts-scraper`** (high) — Use when you have a public Facebook page/profile URL (`social-profile`) and want its recent posts and comments in bulk — returns post/commen
 - **`facebook-matrix-2`** (high) — Use when you have a Facebook numeric UID or profile (`username`/`name`) and want ready-made search-URL templates to pull photos, friends, pl

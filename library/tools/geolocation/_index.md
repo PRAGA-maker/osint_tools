@@ -42,7 +42,7 @@ kind: group-index
 - **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a
 - **`broadcastify`** (low) — OSINT tool: Broadcastify.
 - **`c4-cams`** (low) — OSINT tool: C4-cams.
-- **`calcmaps`** (medium) — Simple online map tools: Calculate area (triangles, quadrilaterals and complex polygons), Calculate distance (for complex routes), Measure r
+- **`calcmaps`** (medium) — Use when you have a `geolocation` and need to measure on a map — returns area, distance, radius, bearing, and elevation for points/routes/po
 - **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
 - **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
 - **`camvista`** (medium) — Use when you have a `geolocation` or `address` in a covered city and want a live public webcam of that spot — returns street-level `image` v

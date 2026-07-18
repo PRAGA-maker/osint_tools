@@ -533,7 +533,6 @@ kind: group-index
 - **`website-information`** (low) — OSINT tool: Website Information.
 - **`website-outlook`** (medium) — Website analytics and network information
 - **`website-search-tool`** (low) — OSINT tool: Website search tool.
-- **`websiteiq`** (medium) — Free website traffic estimates & analytics
 - **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`weebly`** (medium) — Service provider for hosting webpages and websites, specifically oriented towards online shopping

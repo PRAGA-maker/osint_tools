@@ -257,7 +257,7 @@ kind: group-index
 - **`fbi-tools`** (medium) — Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to
 - **`federal-register`** (medium) — Daily journal of the United States government - includes information on regulations, codes and policy
 - **`fefoo-mega-search`** (medium) — Mega-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`felo`** (medium) — Free multilingual AI Search and Answer engine
+- **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
 - **`filechef-com`** (low) — OSINT tool: Filechef.com.
 - **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
 - **`filephish`** (low) — OSINT tool: FilePhish.

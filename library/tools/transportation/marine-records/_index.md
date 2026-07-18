@@ -7,7 +7,7 @@ kind: group-index
 # transportation/marine-records
 
 ## Skills here
-- **`global-fishing-watch`** (medium) — Illegal fishing detection and fisheries activity intelligence
+- **`global-fishing-watch`** (medium) — Use when you have a vessel name/IMO/MMSI or an ocean area and want its movement, fishing, and port history — returns vessel tracks, port vis
 - **`openseamap-the-free-nautical-chart`** (medium) — Nautical geolocation and maritime infrastructure mapping
 - **`ship-ais`** (low) — Use when you have a vessel name or MMSI (or a UK waterway of interest) and want its live position — returns current location, track, and ves
 - **`vessel-finder`** (medium) — Use when you have a vessel `name`/IMO/MMSI or a sea `geolocation` and want the ship's live position, route history, and operator — returns g

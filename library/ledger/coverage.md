@@ -2,50 +2,50 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8303 total · 3062 full · 5241 stub (36% enriched)
+**Tools:** 8301 total · 3071 full · 5230 stub (36% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3322 · medium: 3033 · high: 1948
+low: 3322 · medium: 3031 · high: 1948
 
 ## Tools by trust
-unverified: 4025 · community: 3253 · trusted: 1013 · personal: 6 · untrustworthy: 6
+unverified: 4018 · community: 3252 · trusted: 1019 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/456
 - `archives-cache` — 27/140
 - `communities-forums` — 50/423
-- `dark-web` — 6/119
+- `dark-web` — 7/119
 - `dating-classifieds` — 32/116
 - `documents-metadata` — 18/317
-- `domains-ip-infrastructure` — 44/766
+- `domains-ip-infrastructure` — 44/765
 - `email` — 242/246
 - `evidence-capture` — 3/32
 - `financial-crypto` — 22/131
-- `geolocation` — 196/352
-- `image-video-face` — 378/479
-- `maps-geospatial-data` — 17/146
+- `geolocation` — 197/352
+- `image-video-face` — 379/479
+- `maps-geospatial-data` — 18/146
 - `messaging` — 142/196
 - `opsec-investigator-tooling` — 15/566
 - `people-search` — 223/272
 - `phone` — 132/137
-- `public-records` — 604/1121
-- `search-engines` — 175/962
-- `social-networks` — 578/874
+- `public-records` — 606/1121
+- `search-engines` — 176/962
+- `social-networks` — 579/873
 - `training-ctf` — 0/12
 - `translation-language` — 9/103
-- `transportation` — 45/232
+- `transportation` — 46/232
 - `username` — 98/105
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1058 leaves
 - `library/tools/search-engines` — 894 leaves
-- `library/tools/social-networks` — 845 leaves
+- `library/tools/social-networks` — 844 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
-- `library/tools/domains-ip-infrastructure` — 523 leaves
+- `library/tools/domains-ip-infrastructure` — 522 leaves
 - `library/tools/ai-analysis-automation` — 420 leaves
 - `library/tools/communities-forums` — 409 leaves
 - `library/tools/image-video-face` — 382 leaves

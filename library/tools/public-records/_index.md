@@ -140,7 +140,7 @@ kind: group-index
 - **`canada-gazette`** (medium) — OSINT tool: Canada Gazette.
 - **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
 - **`canadian-copyrights-database`** (medium) — OSINT tool: Canadian Copyrights Database.
-- **`canadian-importers-database`** (medium) — OSINT tool: Canadian Importers Database.
+- **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
 - **`canadian-industrial-designs-database`** (medium) — OSINT tool: Canadian Industrial Designs Database.
 - **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
 - **`canadian-intellectual-property-office`** (medium) — Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `nam
@@ -692,7 +692,7 @@ kind: group-index
 - **`nuans-business-name-search-canada`** (medium) — Canadadian business search engine that searches using company name
 - **`nursing-home-inspect`** (medium) — OSINT tool: Nursing Home Inspect.
 - **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status
-- **`nypd-misconduct-complaint-database`** (medium) — OSINT tool: NYPD Misconduct Complaint Database.
+- **`nypd-misconduct-complaint-database`** (medium) — Use when you have an NYPD officer `name` and want their civilian-complaint history — returns per-officer CCRB complaints, allegations, and s
 - **`nypd-officer-profile`** (medium) — OSINT tool: NYPD Officer Profile.
 - **`nz-certificates-online-new-zealand`** (high) — Use when you have a `name` (plus a `dob`/event detail) and want a certified New Zealand birth, death or marriage certificate — returns an of
 - **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`

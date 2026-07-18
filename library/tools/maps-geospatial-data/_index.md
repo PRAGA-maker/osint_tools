@@ -111,7 +111,7 @@ kind: group-index
 - **`openseamap`** (low) — Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources
 - **`openstreetmap-nominatim`** (medium) — Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocati
 - **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
-- **`overturemaps-org`** (medium) — OSINT tool: overturemaps.org.
+- **`overturemaps-org`** (medium) — Use when you have an `address` or place and want open, structured map data — returns `geolocation` for buildings, places/POIs, addresses, an
 - **`peakvisor-com`** (medium) — Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summ
 - **`peakvisor`** (low) — Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun tr
 - **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
