@@ -80,7 +80,7 @@ kind: group-index
 - **`okcaller`** (medium) — Use when you have a US `phone` number and want caller-ID / reverse-lookup context — returns an associated name and community-reported caller
 - **`oldphonebook-com`** (high) — Use when you have a `name` or `phone` and want a historical US listing (back to ~1994) — returns the archived name, address and phone from o
 - **`open-cnam`** (high) — Use when you have a US `phone` and want the registered caller-ID name (CNAM) for the line — returns the CNAM string (a name), now via Neusta
-- **`osint-forensics-mobile`** (medium) — Collection of mobile OSINT and forensics tools.
+- **`osint-forensics-mobile`** (medium) — Use when you have a `phone`, `device-id` (IMEI), or a seized Android/iOS device and want a curated index of mobile-OSINT and forensics tools
 - **`osintxphone`** (high) — Use when you have a Mexican `phone` and want its carrier, portability status and region — returns geolocation (region/carrier).
 - **`owl-sint`** (high) — Use when you have a phone number (or an IP/Instagram handle) and want a scripted OSINT lookup — returns carrier/line and geographic metadata
 - **`personlookup-co-nz`** (high) — Use when you have a New Zealand `phone` (or `name`/`address`) and want to identify the person behind it — returns a name, residential addres

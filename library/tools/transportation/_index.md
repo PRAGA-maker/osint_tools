@@ -197,7 +197,7 @@ kind: group-index
 - **`track-trace`** (medium) — Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and deliver
 - **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
 - **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
-- **`uk-govt-vessel-lists`** (medium) — Maritime-related website that offers a search of a UK database of naval vessel types
+- **`uk-govt-vessel-lists`** (medium) — Use when you have a UK fishing `vessel-plate`/name and want official registration details — returns vessel name, RSS number, length, and hom
 - **`ukraine-liveuamap-com`** (low) — online tracking of war-related events in Ukraine.
 - **`understanding-war-map-room`** (low) — collection of maps illustrating military conflicts in different countries.
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf

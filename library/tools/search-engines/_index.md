@@ -289,7 +289,7 @@ kind: group-index
 - **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
-- **`gexsi`** (medium) — Search engine that uses its revenues to support sustainable developmental goals.
+- **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
 - **`gibiru`** (low) — OSINT tool: Gibiru.
 - **`gifcities-org`** (low) — GIF Search Engine from archive.org
 - **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.

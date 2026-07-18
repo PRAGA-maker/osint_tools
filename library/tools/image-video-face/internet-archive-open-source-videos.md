@@ -37,6 +37,12 @@ relatedTools:
 - internet-archive-videos
 - wayback-machine
 - web-archive-org
+- parler-archives
+- snitch-list
+- the-twitter-stream-grab
+- tv-closed-caption-search
+- wayback-machine-2
+- web-archive-org-2
 aliases:
 - archive.org Community Video
 - Open Source Movies

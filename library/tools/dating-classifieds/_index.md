@@ -24,7 +24,7 @@ kind: group-index
 - **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
 - **`cia-foia`** (low) — Use when you have a `name`, org, or event and want declassified CIA documents about it — returns full-text-searchable declassified records f
 - **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
-- **`coomer-st`** (medium) — OSINT tool: coomer.st.
+- **`coomer-st`** (medium) — Use when you have a `username` and want to check whether it maps to an adult-subscription-platform (OnlyFans/Fansly) creator profile — retur
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
 - **`datingadvice`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to dating queries
 - **`dudjob-com`** (medium) — OSINT tool: dudjob.com.

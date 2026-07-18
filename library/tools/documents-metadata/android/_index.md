@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata/android
 
 ## Sub-groups
-- **`apps/`** — 13 skill(s) below.
+- **`apps/`** — 12 skill(s) below.
 - **`emulation-tools/`** — 4 skill(s) below.
 
 

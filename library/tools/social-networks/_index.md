@@ -258,7 +258,7 @@ kind: group-index
 - **`graph-tips`** (high) — Use when you have a Facebook profile (`name`/`username`/numeric ID) and want to run Graph-Search-style queries on their photos, posts, frien
 - **`graphtreon-com`** (high) — Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial
 - **`gravatar-email-checker`** (high) — Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reuse
-- **`hadzy-com`** (medium) — OSINT tool: Hadzy.com.
+- **`hadzy-com`** (medium) — Use when you have a YouTube `username` or a specific video and want to search and analyse its public comments — returns matching comments, a
 - **`hashatit`** (low) — OSINT tool: Hashatit.
 - **`hashtagify`** (low) — Use when you have a topic/hashtag or `username` and want to find related hashtags and the top accounts using them — returns influencer `soci
 - **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
@@ -433,7 +433,7 @@ kind: group-index
 - **`palenath`** (high) — Use when you have an `email`, `phone` or `username` and want to enumerate which sites and social accounts it is registered on — returns soci
 - **`parler-archives`** (high) — Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's capt
 - **`parler-com`** (high) — Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-
-- **`pholder`** (medium) — OSINT tool: Pholder.
+- **`pholder`** (medium) — Use when you have a `username`, subreddit, or keyword and want Reddit's images/GIFs for it — returns media posts and the `social-profile`s t
 - **`picodash`** (high) — Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytic
 - **`pictame`** (high) — Use when you have an Instagram `username` (or hashtag/`name`) and want to view a public profile's posts, photos and tags without logging in 
 - **`picuki`** (high) — Use when you have an Instagram `username` and want to view/download their public posts, stories and profile without logging in — returns `im
@@ -816,7 +816,7 @@ kind: group-index
 - **`youtube-word-search`** (medium) — Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
 - **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)
-- **`ytgrep`** (medium) — A tool for quick text search of subtitles in YouTube videos. Supports regular expressions and searching across multiple videos.
+- **`ytgrep`** (medium) — Use when you have one or more YouTube video URLs and want to grep their captions for a word/phrase — returns matching subtitle lines with ti
 - **`zalo-me`** (high) — Use when you have a Vietnamese `phone` number or `name` and want to check for a Zalo messaging account and its public profile — returns a so
 - **`zeoob-com`** (high) — Use when you have a screenshot of a Snapchat/Instagram/WhatsApp chat or post and want to judge whether it could be fabricated — this is a fa
 - **`zesty-facebook-search`** (high) — Use when you have a Facebook profile `name`/`username` (or numeric profile ID) and want to build Graph-Search-style query URLs to surface a 

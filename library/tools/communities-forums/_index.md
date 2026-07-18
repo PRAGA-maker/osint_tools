@@ -384,7 +384,6 @@ kind: group-index
 - **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tutpaste`** (medium) — OSINT tool: TutPaste.
 - **`tvnz-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`typepad`** (medium) — Website related to social networking and blogging
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — OSINT tool: ukbusinessforums.co.uk.
 - **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.

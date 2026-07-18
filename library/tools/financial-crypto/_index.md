@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`bitcoin/`** — 5 skill(s) below.
-- **`chain-analysis-platforms/`** — 4 skill(s) below.
+- **`chain-analysis-platforms/`** — 3 skill(s) below.
 - **`defi-and-dex-tracing/`** — 2 skill(s) below.
 - **`mixer-tracking/`** — 4 skill(s) below.
 - **`monero/`** — 2 skill(s) below.
@@ -22,7 +22,7 @@ kind: group-index
 - **`acfcs-org`** (medium) — OSINT tool: acfcs.org.
 - **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
 - **`addresswatcher-com`** (low) — OSINT tool: Addresswatcher.com.
-- **`afd-co-uk`** (medium) — OSINT tool: afd.co.uk.
+- **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
 - **`aib-gov-uk`** (medium) — OSINT tool: aib.gov.uk.
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
 - **`binbase-com`** (medium) — OSINT tool: binbase.com.

@@ -70,7 +70,7 @@ kind: group-index
 - **`all-net-tools-toolbox-domain-information`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`all-net-tools-toolbox-traceroute`** (medium) — Tool that identifies the traceroute path of an IP address
 - **`alojate-mexico`** (medium) — Mexico based service provider for registering websites and domain addresses
-- **`ample-hosting-south-africa`** (medium) — South African service provider for registering websites and domain addresses
+- **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
 - **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
 - **`anubis`** (low) — Subdomain enumeration and information gathering tool
 - **`aort`** (low) — All in one domain recon tool: portscan; email services enumeration; subdomain information gathering; find info in Wayback Machine and more.

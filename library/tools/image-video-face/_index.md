@@ -312,7 +312,7 @@ kind: group-index
 - **`shutterstock`** (medium) — Use when you have a profile `image` and want to check if it's actually a stock photo (catfish signal) — returns whether the picture is a lic
 - **`sightengine-com`** (high) — Use when you have an `image` or video (e.g. a suspect profile photo) and want to test whether it is AI-generated/deepfaked or moderate its c
 - **`skyline-webcams`** (medium) — OSINT tool: Skyline Webcams.
-- **`sn-radar-vk-photo-search`** (medium) — OSINT tool: SN Radar VK Photo Search.
+- **`sn-radar-vk-photo-search`** (high) — Use when you have a `geolocation` and want VKontakte photos taken there — returns geotagged VK photos and the `social-profile`s that posted 
 - **`snap-scraper`** (high) — Use when you have a `geolocation` (lat/long) and want the public Snapchat media posted there — returns downloaded images/video from Snap Map
 - **`snapchat-com`** (high) — Use when you have a Snapchat `username` and want the public profile behind it — returns the public profile page, Bitmoji/avatar and public S
 - **`snapchat-map-scraper-nemec`** (high) — Use when you have a `geolocation` and want the public Snapchat stories posted there — returns downloaded Snap Map media/stories for the area

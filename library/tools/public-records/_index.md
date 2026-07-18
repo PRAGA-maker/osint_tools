@@ -239,7 +239,6 @@ kind: group-index
 - **`cyprusregistry-com`** (high) — Use when you have an `employer-org` or director `name` in Cyprus and want company officers, shareholders, and addresses — returns employer-o
 - **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
 - **`d-and-b-company-search`** (low) — OSINT tool: D&B Company Search.
-- **`darpan-ngo-search`** (medium) — OSINT tool: Darpan NGO Search.
 - **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
 - **`data-gov`** (low) — OSINT tool: Data.gov.
@@ -940,7 +939,6 @@ kind: group-index
 - **`tennessee-registered-voter-verification`** (medium) — Tennessee registered voter verification and search
 - **`terrorism-incidents-database`** (low) — OSINT tool: Terrorism Incidents Database.
 - **`tess`** (medium) — Search engine for #USA trademarks
-- **`texas-local-superintendent-salaries-search-and-report`** (medium) — OSINT tool: Texas Local Superintendent Salaries Search and Report.
 - **`texas-public-records-search`** (high) — Use when you have a `name` and a Texas nexus and want an organised directory into official Texas state/county record databases — returns lin
 - **`tfl-gov-uk-2`** (medium) — Use when you have a London taxi/private-hire licence or badge number, a vehicle plate, or an operator name and want to confirm it is validly
 - **`tfl-gov-uk`** (high) — Use when you have a London taxi/private-hire driver badge or a vehicle plate and want to confirm the licence is valid — returns licence stat
