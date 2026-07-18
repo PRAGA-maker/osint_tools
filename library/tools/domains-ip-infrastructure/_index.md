@@ -289,7 +289,7 @@ kind: group-index
 - **`ironspider-website-analysis-tools`** (medium) — Search for information on website hosting, as well as other information related to website design
 - **`ismalicious`** (low) — OSINT tool: isMalicious.
 - **`isp-tools`** (low) — OSINT tool: ISP.Tools.
-- **`iwantmyname-search`** (medium) — Tool that identifies if a domain name is available
+- **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
 - **`jaan-internet-solutions-belgium`** (medium) — Belgium based IT company including expertise in technology, web development, mobile applications, and more
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.

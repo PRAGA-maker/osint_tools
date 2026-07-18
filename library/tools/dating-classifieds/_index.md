@@ -35,7 +35,7 @@ kind: group-index
 - **`eroticbeauties-net`** (medium) — OSINT tool: eroticbeauties.net.
 - **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
 - **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
-- **`fansearch`** (medium) — OnlyFans finder with 3M+ accounts.
+- **`fansearch`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a subject's OnlyFans creator profile — returns a `social-profile` 
 - **`fanslist-com`** (medium) — Use when you have a `username` or `name` and want to find a matching OnlyFans creator profile — returns the creator's `social-profile` and l
 - **`fansmetrics-com`** (low) — OSINT tool: Fansmetrics.com.
 - **`fanspedia-net`** (medium) — OSINT tool: fanspedia.net.

@@ -110,7 +110,7 @@ kind: group-index
 - **`discord-center`** (medium) — Use when you want to find or profile a public Discord community by topic or name — returns server listings (social-profile) with member coun
 - **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
-- **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
+- **`discord-id-lookup`** (medium) — Use when you have a Discord user/snowflake ID (`device-id`) and want the account's public identity — returns `username`, avatar, and exact a
 - **`discord-me`** (medium) — Use when you have a `username` or topic and want to find public Discord servers a subject may frequent — returns server listings with catego
 - **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
 - **`discord-user-search`** (medium) — Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning p
@@ -507,7 +507,7 @@ kind: group-index
 - **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
 - **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna
 - **`resavr`** (medium) — OSINT tool: ReSavr.
-- **`return-youtube-comment-username`** (medium) — YouTube has recently stopped showing user names in comments. There is an extension that solves this problem.
+- **`return-youtube-comment-username`** (medium) — Use when you are reading YouTube comments and want the legacy `username` behind an @handle — a browser extension that restores the old displ
 - **`rival-iq`** (high) — Use when you have a public `social-profile`/`username` and want its cross-platform posting history, engagement metrics and audience behaviou
 - **`rknight-me`** (high) — Use when you have a Mastodon `username`/handle and want its numeric account ID to unlock API/RSS access to the account's posts — returns the
 - **`rocketreach-co`** (high) — Use when you have a `name` + `employer-org` (or a company domain) and want the subject's professional email, phone and social profiles — ret

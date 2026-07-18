@@ -30,7 +30,7 @@ kind: group-index
 ## Skills here
 - **`1c-database-converter`** (medium) — 1C is a very popular program in CIS countries for storing data in enterprises (accounting, document management, etc.). This tool allows you 
 - **`4chansearch-org`** (low) — OSINT tool: 4chansearch.org.
-- **`50-states`** (medium) — Resource website containing information on all 50 US states and their capitals
+- **`50-states`** (low) — Use when you have a US state or region and want a curated jump-off to that state's public-records, vital-records, and directory portals — re
 - **`51-000-university-of-michigan-employee-salaries`** (high) — Use when you have a `name` believed to work at the University of Michigan and want to confirm employment, title and pay — returns `employer-
 - **`8chan-8kun-qresearch-board-search`** (low) — OSINT tool: 8chan/8kun QResearch Board Search.
 - **`8chan`** (low) — OSINT tool: 8chan.

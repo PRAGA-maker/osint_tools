@@ -45,7 +45,7 @@ kind: group-index
 - **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
 - **`casa-aircraft-search-australia`** (medium) — Aviation-related website that offers a search of the Australian database of registered aviation owners
-- **`certified-aircraft-database`** (medium) — Aviation-related website database focusing on international aircraft registration prefixes, manufactuerers, disgnators and markings
+- **`certified-aircraft-database`** (low) — Use when you have an aircraft tail number (`vehicle-plate`) and want to decode its country of registration — returns the `geolocation` (nati
 - **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
 - **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm the vehicle and its status — the official DVLA lookup returns make, model, colour

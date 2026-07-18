@@ -80,7 +80,7 @@ kind: group-index
 - **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
 - **`ask-metafilter`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`ask`** (low) — OSINT tool: Ask.
-- **`athlinks`** (medium) — Search engine aimed at competitive endurance athletes.
+- **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
 - **`atscan`** (medium) — OSINT tool: ATSCAN.
 - **`australian-bureau-of-statistics`** (medium) — Australias Bureau of Statistics - includes population and census data
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
@@ -434,7 +434,6 @@ kind: group-index
 - **`kidzsearch`** (low) — Kid-friendly search engine
 - **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
-- **`komo`** (medium) — AI powered search engine
 - **`krugle`** (medium) — Enterprise code search tool
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`laiesken-search-engine-spain`** (medium) — Spanish web search engine covering regional results

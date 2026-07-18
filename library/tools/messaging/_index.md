@@ -158,7 +158,7 @@ kind: group-index
 - **`telemetr-io`** (high) — Use when you have a Telegram channel/`username` or a keyword and want channel analytics, post search and mention monitoring across millions 
 - **`telemetr-me`** (high) — Use when you have a Telegram channel `username` or keyword and want channel analytics — returns subscriber stats, post history, growth, ad t
 - **`telemetrio`** (medium) — Telemetr.io offers a range of Telegram-related services based on a catalog of Telegram channels: country and category-specific rankings, cur
-- **`telemetry`** (medium) — An analytical search tool for Telegram groups and channels.
+- **`telemetry`** (medium) — Use when you have a `username`, `name`, keyword, or `phone` and want to find where it surfaces across public Telegram — returns `social-prof
 - **`telepahty`** (high) — Use when you have a Telegram channel/group or `username` and want to map it — returns member lists (`associate`), archived messages, forward
 - **`telepathy-2`** (high) — Use when you have a Telegram channel/group or a user's `social-profile` and want to archive it and enumerate members — returns member lists,
 - **`telepathy`** (medium) — Telepathy is a versatile Telegram toolkit for OSINT analysts, enabling chat archiving, memberlist gathering, user location lookup, top poste

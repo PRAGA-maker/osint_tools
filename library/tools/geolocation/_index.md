@@ -273,7 +273,7 @@ kind: group-index
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
 - **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
 - **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.
-- **`sondehub`** (medium) — Worldwide map of radiosondes with detailed info (altitude, coordinates, frequency, manufacturer, sonde-type and much more)
+- **`sondehub`** (low) — Use when you have a radiosonde/amateur-balloon serial or a `geolocation` and want live telemetry and predicted landing points — returns `geo
 - **`spot`** (medium) — Use when you have a `geolocation` region plus a described scene and want candidate coordinates matching that description in OpenStreetMap — 
 - **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
 - **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
