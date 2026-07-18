@@ -283,7 +283,6 @@ kind: group-index
 - **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`freewareweb`** (medium) — FTP file search engine
-- **`fresheye-search-japan`** (medium) — Japanese web search engine covering regional results
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Surface web search directory covering worldwide results
@@ -869,7 +868,7 @@ kind: group-index
 - **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
 - **`world-digital-library`** (low) — OSINT tool: World Digital Library.
 - **`world-newspapers`** (low) — OSINT tool: World-Newspapers.
-- **`worldchambersnetwork-directory-search`** (medium) — Business-related search engine that searches using company name
+- **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.
 - **`worldwidescience-org`** (medium) — OSINT tool: WorldWideScience.org.
 - **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results

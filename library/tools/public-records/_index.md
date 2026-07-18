@@ -140,7 +140,7 @@ kind: group-index
 - **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
 - **`canadian-copyrights-database`** (medium) — OSINT tool: Canadian Copyrights Database.
 - **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
-- **`canadian-industrial-designs-database`** (medium) — OSINT tool: Canadian Industrial Designs Database.
+- **`canadian-industrial-designs-database`** (medium) — Use when you have a name or company and want registered Canadian industrial designs they own — returns proprietor name and address plus link
 - **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
 - **`canadian-intellectual-property-office`** (medium) — Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `nam
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
@@ -396,7 +396,7 @@ kind: group-index
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
 - **`gogettr`** (low) — OSINT tool: gogettr.
 - **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
-- **`goodfirms`** (medium) — OSINT tool: GoodFirms.
+- **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
 - **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.
 - **`google-scholar-search-tips`** (medium) — Google scholar search engine tips
 - **`gouvernement-du-qu-bec`** (medium) — OSINT tool: Gouvernement du Québec.
@@ -614,12 +614,11 @@ kind: group-index
 - **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
 - **`milwaukee-wisconsin-city-employee-salaries-2019`** (medium) — OSINT tool: Milwaukee Wisconsin City Employee Salaries 2019.
 - **`ministry-of-corporate-affairs-india`** (medium) — Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporat
-- **`minnesota-registered-voter-verification`** (medium) — Minnesota registered voter verification and search
+- **`minnesota-registered-voter-verification`** (medium) — Use when you have a name plus DOB and want to confirm a Minnesota voter registration — returns registration status and polling-place/precinc
 - **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 
 - **`missouri-registered-voter-verification`** (medium) — Missouri registered voter verification and search
 - **`missouri`** (high) — Use when you have a `name` and want to check whether a subject is in Missouri Department of Corrections custody or supervision — returns off
 - **`mmc-gov-my`** (high) — Use when you have a doctor's `name` in Malaysia and want to verify registration — returns their registration number, qualifying institution,
-- **`mobile-al-salaries-search-and-report`** (medium) — OSINT tool: Mobile AL Salaries Search and Report.
 - **`moci-gov-kw`** (high) — Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying busi
 - **`molfar-com`** (high) — Use when you have a lead and need the right public register or OSINT app for a jurisdiction — Molfar's curated directory returns links to re
 - **`money-house-search-switzerland`** (medium) — Business-related search engine that searches global results by company, location, and country
@@ -988,7 +987,7 @@ kind: group-index
 - **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return
 - **`uglymugs-org`** (high) — Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `
 - **`uk-census-online`** (medium) — Database of deaths, births, and marriages. From 1841 to the beginning of the 21st century. Only the first and last names can be searched.
-- **`uk-government-list-of-overseas-registries`** (medium) — Government of UK list of overseas companies registries with links
+- **`uk-government-list-of-overseas-registries`** (medium) — Use when you need the official company registry for a given country — returns links to worldwide corporate registries so you can pivot to em
 - **`uk-osint`** (high) — Use when you have a UK `name`, `address`, or `phone` and want a curated map of the right UK records, registries, and people-search tools — r
 - **`ukas-com`** (high) — Use when you have an `employer-org` name (a lab, cert body or inspection firm) and want to verify its UK accreditation — returns the org's a
 - **`ukbirthadoptionregister-com`** (high) — Use when you have a `name` and approximate `dob` and are working an adoption-reunion case — searches an adoption contact register to link ad

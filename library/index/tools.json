@@ -137295,40 +137295,51 @@
   {
     "id": "depositphotos-reverse-image-search",
     "name": "DepositPhotos Reverse Image Search",
-    "description": "tool for reverse image search (strictly from DepositPhoto's collection of 222 million files).",
-    "url": "https://ru.depositphotos.com/search/by-images.html",
+    "description": "Use when you suspect a profile/photo is a stock image and want to confirm it — reverse-searches DepositPhotos' stock library to expose that an image is not a real personal photo.",
+    "url": "https://depositphotos.com/search/by-images.html",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a photo is a DepositPhotos stock image (a strong catfish/fake-profile signal).",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Reverse-search and viewing thumbnails/metadata is free; downloading the full stock image requires a paid DepositPhotos plan (you don't need that for OSINT confirmation).",
+    "opsec": "passive",
+    "opsecNote": "You upload/point to an image and it's matched against DepositPhotos' own catalog on their servers. The image's subject is not contacted. Avoid uploading sensitive private imagery to a commercial stock site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Official reverse-search on a major stock-photo agency's own library; authoritative for \"is this one of our stock images,\" but blind to everything outside DepositPhotos.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Depositphotos reverse image",
+      "depositphotos.com by-images"
+    ],
     "tags": [
-      "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
+      "reverse-image",
+      "stock-photos",
+      "catfish-detection",
+      "image-video-face"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/depositphotos-reverse-image-search.md"
   },
   {
@@ -223162,43 +223173,57 @@
   {
     "id": "canadian-industrial-designs-database",
     "name": "Canadian Industrial Designs Database",
-    "description": "OSINT tool: Canadian Industrial Designs Database.",
-    "url": "https://www.ic.gc.ca/app/opic-cipo/id/bscsrch.do",
+    "description": "Use when you have a name or company and want registered Canadian industrial designs they own — returns proprietor name and address plus linked design records.",
+    "url": "https://www.ic.gc.ca/app/opic-cipo/id/bscSrch.do?lang=eng",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Canada's registered industrial designs by proprietor/interested party to tie a person or company to filed design IP.",
     "selectorsIn": [
       "name",
-      "address"
+      "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official CIPO (Canadian Intellectual Property Office) database; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reads public IP-registry records; the proprietor is not notified. Standard government-site logging only. Use a clean browser for sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Canada (CIPO) register of industrial designs dating to 1861; authoritative for Canadian design filings.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "CIPO Industrial Designs",
+      "Canadian Industrial Designs Database",
+      "ic.gc.ca industrial designs"
+    ],
     "tags": [
-      "property"
+      "public-records",
+      "intellectual-property",
+      "canada",
+      "industrial-designs"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canadian-industrial-designs-database.md"
   },
   {
@@ -236609,37 +236634,55 @@
   {
     "id": "goodfirms",
     "name": "GoodFirms",
-    "description": "OSINT tool: GoodFirms.",
+    "description": "Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership from a reviewed vendor directory.",
     "url": "https://www.goodfirms.co/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Researching IT/software/marketing/agency companies — profiles, locations, services, client reviews, and sometimes named executives.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse company profiles and reviews; vendors pay for premium listings, and full lead/contact data may be gated.",
+    "opsec": "passive",
+    "opsecNote": "Public directory browsing; the company is not notified. Reviews and profiles are on GoodFirms' servers — standard web logging. Use a clean browser for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established B2B research/reviews directory; listings are partly vendor-submitted and reviews can be solicited, so treat profile claims as leads to verify.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "GoodFirms.co",
+      "goodfirms"
+    ],
     "tags": [
-      "company-research"
+      "public-records",
+      "company-research",
+      "b2b-directory",
+      "reviews"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/goodfirms.md"
   },
   {
@@ -247740,50 +247783,56 @@
   {
     "id": "minnesota-registered-voter-verification",
     "name": "Minnesota Registered Voter Verification",
-    "description": "Minnesota registered voter verification and search",
+    "description": "Use when you have a name plus DOB and want to confirm a Minnesota voter registration — returns registration status and polling-place/precinct (address) to corroborate residence.",
     "url": "https://mnvotes.sos.state.mn.us/VoterStatus.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a specific Minnesota person is currently registered to vote and their precinct/polling place.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Minnesota Secretary of State service; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads the official voter file via a status-check form; the voter is not notified. You must supply the subject's name, DOB, and county/ZIP, so this confirms a specific identity rather than browsing — only run it where you have a legitimate basis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Minnesota Secretary of State voter-lookup; authoritative for MN registration status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "minnesota"
     ],
+    "aliases": [
+      "MN voter status",
+      "mnvotes.sos.state.mn.us",
+      "Minnesota voter lookup"
+    ],
+    "tags": [
+      "public-records",
+      "voter-registration",
+      "minnesota"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/minnesota-registered-voter-verification.md"
   },
   {
@@ -247939,40 +247988,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/mmc-gov-my.md"
-  },
-  {
-    "id": "mobile-al-salaries-search-and-report",
-    "name": "Mobile AL Salaries Search and Report",
-    "description": "OSINT tool: Mobile AL Salaries Search and Report.",
-    "url": "https://b2.caspio.com/dp/362210004ae292fb5cf34f0fb079",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/mobile-al-salaries-search-and-report.md"
   },
   {
     "id": "moci-gov-kw",
@@ -267165,30 +267180,30 @@
   {
     "id": "uk-government-list-of-overseas-registries",
     "name": "UK Government List of Overseas Registries",
-    "description": "Government of UK list of overseas companies registries with links",
+    "description": "Use when you need the official company registry for a given country — returns links to worldwide corporate registries so you can pivot to employer-org filings, directors, and addresses.",
     "url": "https://www.gov.uk/government/publications/overseas-registries",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A country-by-country index of official company registries worldwide, curated by UK Companies House.",
     "selectorsIn": [
-      "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free GOV.UK publication; no account. (It is a directory of links — the registries it points to may have their own fees.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Just a reference list on GOV.UK; you read it, nothing is queried about a subject. OpSec considerations apply to the individual registries you then visit, not to this page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by UK Companies House; the list itself is authoritative, though it was last refreshed in 2018 so some links may have moved.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -267197,15 +267212,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Companies House overseas registries",
+      "gov.uk overseas registries"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
+      "public-records",
+      "company-search",
+      "registries",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/uk-government-list-of-overseas-registries.md"
   },
   {
@@ -283256,46 +283278,6 @@
       "freeware-web-ftp-file-search"
     ],
     "_file": "library/tools/search-engines/freewareweb.md"
-  },
-  {
-    "id": "fresheye-search-japan",
-    "name": "Fresheye Search (Japan)",
-    "description": "Japanese web search engine covering regional results",
-    "url": "http://www.fresheye.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/fresheye-search-japan.md"
   },
   {
     "id": "ftp-google-dork",
@@ -309974,24 +309956,31 @@
   {
     "id": "worldchambersnetwork-directory-search",
     "name": "WorldChambersNetwork Directory Search",
-    "description": "Business-related search engine that searches using company name",
-    "url": "http://chamberdirectory.worldchambers.com/chambers/template/default_WCN.asp?i=57&k=9873423452345234988",
+    "description": "Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route into local business networks.",
+    "url": "http://chamberdirectory.worldchambers.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating national, regional, bilateral, and local chambers of commerce worldwide as a gateway to regional business contacts.",
+    "selectorsIn": [
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public directory lookup; you search for organizations, not individuals, and nothing is notified. Standard web logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Directory operated within the World Chambers Network / ICC ecosystem; useful as an index, though individual listings vary in freshness.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -310000,15 +309989,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "World Chambers Network directory",
+      "WCN chamber directory",
+      "worldchambers.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "chambers-of-commerce",
+      "business-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/worldchambersnetwork-directory-search.md"
   },
   {
@@ -316255,35 +316251,53 @@
   {
     "id": "discord-center",
     "name": "Discord Center",
-    "description": "OSINT tool: Discord Center.",
+    "description": "Use when you want to find or profile a public Discord community by topic or name — returns server listings (social-profile) with member counts and invite links to explore.",
     "url": "https://discord.center/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering public Discord servers by keyword/category, with member counts, descriptions, and invite links.",
+    "selectorsIn": [
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse and search the server directory; server owners can pay to promote/bump listings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory is passive. But JOINING a server via an invite exposes your Discord account to that community's admins and members — use a sock-puppet Discord account, never your real one, and don't join with an attributable profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of several community-run Discord server directories; listings are owner-submitted, so descriptions and member counts can be inflated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "discord.center",
+      "Discord server directory"
+    ],
+    "tags": [
+      "social-networks",
+      "discord",
+      "community-discovery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/discord-center.md"
   },
   {
@@ -337922,39 +337936,55 @@
   },
   {
     "id": "repostsleuth",
-    "name": "Repostsleuth",
-    "description": "Reddit trends analyzer",
+    "name": "Repost Sleuth",
+    "description": "Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, username, geolocation context) via reverse-image matching.",
     "url": "https://repostsleuth.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-image searching Reddit to find every earlier post of an image and the accounts/subreddits that shared it.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search by image or Reddit URL; a Patreon supports the project but the public search is free.",
+    "opsec": "passive",
+    "opsecNote": "You upload an image or paste a Reddit URL to a third-party service; it queries Reddit's public index, not the target. Don't upload sensitive/private imagery to an external site. No Reddit user is notified of your search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known, heavily-used Reddit repost-detection bot/site (open-source, ~1M searches/day); matching is reliable but limited to Reddit-indexed content.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "RepostSleuth",
+      "Reddit Repost Sleuth",
+      "repostsleuth.com"
+    ],
     "tags": [
-      "Social Media",
-      "Reddit"
+      "social-networks",
+      "reddit",
+      "reverse-image"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/repostsleuth.md"
   },
   {

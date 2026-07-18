@@ -107,7 +107,7 @@ kind: group-index
 - **`dev-to`** (high) — Use when you have a Mastodon `username`/handle and want the numeric account ID via the public API — returns social-profile metadata to pivot
 - **`diaspora`** (high) — Use when you have a `name` or `username` and want to check for a presence on the decentralised Diaspora* social network — returns a social-p
 - **`discord-bots`** (medium) — OSINT tool: Discord Bots.
-- **`discord-center`** (medium) — OSINT tool: Discord Center.
+- **`discord-center`** (medium) — Use when you want to find or profile a public Discord community by topic or name — returns server listings (social-profile) with member coun
 - **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
 - **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
@@ -505,7 +505,7 @@ kind: group-index
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
 - **`report-tree`** (medium) — OSINT tool: Report Tree.
 - **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
-- **`repostsleuth`** (medium) — Reddit trends analyzer
+- **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna
 - **`resavr`** (medium) — OSINT tool: ReSavr.
 - **`return-youtube-comment-username`** (medium) — YouTube has recently stopped showing user names in comments. There is an extension that solves this problem.
 - **`rival-iq`** (high) — Use when you have a public `social-profile`/`username` and want its cross-platform posting history, engagement metrics and audience behaviou

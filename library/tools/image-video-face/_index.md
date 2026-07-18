@@ -81,7 +81,7 @@ kind: group-index
 - **`deep-image-ai`** (high) — Use when you need to upscale, denoise, or sharpen a low-quality photo of a missing person before reverse-image or face search — returns an e
 - **`deepfaceui-github-com`** (high) — Use when you have two face photos and want a local, offline same-person comparison/verification score — returns a match verdict and similari
 - **`deepfind-me-2`** (high) — Use when you need to confirm or geolocate a place by comparing satellite and street-view imagery side by side — returns aerial/street imager
-- **`depositphotos-reverse-image-search`** (medium) — tool for reverse image search (strictly from DepositPhoto's collection of 222 million files).
+- **`depositphotos-reverse-image-search`** (medium) — Use when you suspect a profile/photo is a stock image and want to confirm it — reverse-searches DepositPhotos' stock library to expose that 
 - **`deturl-com`** (medium) — Use when you have a video URL (e.g. a YouTube post tied to a subject) and want to download it locally for analysis/preservation — returns th
 - **`deturl`** (medium) — Use when you have a video URL (YouTube or other site) and want to download and preserve it for offline analysis — returns a saved MP4/MP3 co
 - **`dicom-viewer`** (medium) — view MRI or CT photo online (.DCM files)
