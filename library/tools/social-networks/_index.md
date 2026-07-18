@@ -805,7 +805,6 @@ kind: group-index
 - **`youtube-periscope-twitch-and-dailymotion`** (medium) — Use when you have a `username`/channel on a video platform and want the right search/analytics tools for it — a reference hub of lookups for
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
 - **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
-- **`youtube-screen-capture`** (medium) — allows you to download a stream in pieces and then merge them
 - **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis
 - **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
 - **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret

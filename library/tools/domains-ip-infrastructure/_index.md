@@ -207,7 +207,7 @@ kind: group-index
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
 - **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
-- **`godaddy-whois-lookup`** (medium) — Whois lookup tool offered by GoDaddy that identifies the available registration information for a website or domain name
+- **`godaddy-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, creation/expiry dates, name servers and (when not privacy
 - **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
 - **`gofindwhois`** (low) — More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, 
 - **`gogetcrawl`** (low) — Search and download archived web pages and files from Common Crawl and Wayback Machine.

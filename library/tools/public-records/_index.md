@@ -820,7 +820,7 @@ kind: group-index
 - **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
 - **`related-list`** (medium) — find company-related contacts and confidential documents leaked online
 - **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.
-- **`research-rabbit`** (medium) — Find articles and view its connections - similar works, references, citations and more
+- **`research-rabbit`** (medium) — Use when you have an academic's `name` or a known paper and want their body of work and collaborators — returns papers, co-authors (`associa
 - **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
 - **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 
 - **`resources-library-ubc-ca`** (medium) — OSINT tool: Resources.library.ubc.ca.
@@ -846,7 +846,7 @@ kind: group-index
 - **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
 - **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
 - **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
-- **`scinapse-io`** (medium) — Academic Search Engine. Search by 48000 journals
+- **`scinapse-io`** (medium) — Use when you have an academic's `name` and want their publications, affiliations and co-authors — returns papers, `employer-org` and `associ
 - **`scite-ai`** (medium) — Enter the article title or DOI to get a list of publications that cite it. Results can be filtered by type (book, review, article), year, au
 - **`scoot`** (medium) — OSINT tool: Scoot.
 - **`scotlandspeople-gov-uk-2`** (high) — Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity 

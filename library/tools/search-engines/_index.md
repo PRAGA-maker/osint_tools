@@ -399,7 +399,7 @@ kind: group-index
 - **`jersey-financial-services-commission`** (medium) — Website for the Jersey Financial Services Commission with registered company search
 - **`jewish-virtual-library-online`** (medium) — Website that offers Jewish scripture search services
 - **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
-- **`jobrapido-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobsdb-asia`** (medium) — Website that offers job search services for multiple countries worldwide
 - **`jora-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
@@ -707,7 +707,7 @@ kind: group-index
 - **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
 - **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
 - **`sharedigger`** (low) — search files in popular file hosting services
-- **`sharkscope`** (medium) — Poker player search and stats
+- **`sharkscope`** (medium) — Use when you have a poker `username` and want to confirm and profile the player behind it — returns tournament history, results and country,
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (medium) — Website related to consumer product reviews
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items

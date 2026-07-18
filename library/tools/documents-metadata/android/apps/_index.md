@@ -9,7 +9,6 @@ kind: group-index
 ## Sub-groups
 - **`instant-messaging/`** — 8 skill(s) below.
 - **`social-networking/`** — 3 skill(s) below.
-- **`streaming-video/`** — 0 skill(s) below.
 
 ## Skills here
 - **`truecaller`** (medium) — Use when you have a `phone` number and want a crowd-sourced caller-ID name — returns the name/label others have saved for that number plus c
