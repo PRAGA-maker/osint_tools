@@ -19,7 +19,6 @@ kind: group-index
 - **`google-scholar-case-law`** (medium) — Use when you have a `name` or case citation and want free full-text US court opinions that may mention a person as a party, witness, or subj
 - **`judyrecords`** (high) — Use when you have a `name` and want free nationwide US court-case records — returns case filings, parties (associates), and document-id lead
 - **`most-wanted-criminal-pages`** (medium) — Wanted fugitive identification
-- **`mugshots-com`** (medium) — Arrest record and mugshot lookup
 - **`national-sex-offender-search`** (medium) — National sex offender search
 - **`nationwide-county-court-records`** (medium) — Locating county court records
 - **`the-inmate-locator`** (medium) — Federal inmate location

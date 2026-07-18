@@ -149,7 +149,7 @@ kind: group-index
 - **`chegg-search-engine`** (medium) — Website that offers high school, college, and university book search services, including homework help, online tutoring, and application adv
 - **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
 - **`chromium-code-search`** (medium) — Code search tool
-- **`cisco-talos-intelligence`** (medium) — OSINT tool: Cisco Talos Intelligence.
+- **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
 - **`citeseerx`** (medium) — OSINT tool: CiteSeerX.
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
 - **`citizendium`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases

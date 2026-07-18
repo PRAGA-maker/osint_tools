@@ -151911,49 +151911,6 @@
     "_file": "library/tools/image-video-face/sentinel-hub-eo-browser.md"
   },
   {
-    "id": "sentinel-hub-playground",
-    "name": "Sentinel Hub Playground",
-    "description": "tool for viewing satellite images with different effects and rendering.",
-    "url": "https://apps.sentinel-hub.com/sentinel-playground/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Satellite/aerial imagery"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "sentinel-hub",
-      "sentinel-hub-eo-browser"
-    ],
-    "_file": "library/tools/image-video-face/sentinel-hub-playground.md"
-  },
-  {
     "id": "sherloq",
     "name": "Sherloq",
     "description": "Use when you have an `image` and want to test whether it was edited, staged, or re-saved and pull its embedded metadata — returns `metadata-exif` plus tampering/forensic signals.",
@@ -248279,48 +248236,6 @@
     "_file": "library/tools/public-records/mugshots.md"
   },
   {
-    "id": "mugshots-com",
-    "name": "Mugshots.com",
-    "description": "Arrest record and mugshot lookup",
-    "url": "https://mugshots.com",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "court-criminal-records"
-    ],
-    "bestFor": "Arrest record and mugshot lookup",
-    "input": "Name, location",
-    "output": "Mugshot, charges, arrest info",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public arrest booking data",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "mugshots"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/court-criminal-records/mugshots-com.md"
-  },
-  {
     "id": "musicteachers-co-uk",
     "name": "MusicTeachers.co.uk",
     "description": "Use when you have a `name`, instrument or `address`/area and think the subject is a UK private music teacher — returns teacher `name`, `address`/area, qualifications and `social-profile`.",
@@ -270436,30 +270351,32 @@
   {
     "id": "yahoo-finance",
     "name": "Yahoo Finance",
-    "description": "Yahoo's finance search page, search companies, finance news, market information, and more",
+    "description": "Use when you have a company `name`/ticker or an `employer-org` and want its corporate profile — returns HQ `address`, key executives (`name`), sector and filings/news links.",
     "url": "https://finance.yahoo.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a public company's profile — HQ address, executives, sector, and news — from a name or ticker.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse company profiles, quotes and news; a paid tier adds premium research not needed for OSINT profiling.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public company profile is passive and unseen by anyone. Nothing about your subject is submitted; standard site logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Yahoo Finance aggregates market data and company-supplied profiles; core facts (HQ, executives, ticker) are reliable for public companies, while it holds little/nothing on private firms or individuals.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -270468,15 +270385,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "finance.yahoo.com",
+      "Yahoo! Finance"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/yahoo-finance.md"
   },
   {
@@ -276739,40 +276660,55 @@
   {
     "id": "cisco-talos-intelligence",
     "name": "Cisco Talos Intelligence",
-    "description": "OSINT tool: Cisco Talos Intelligence.",
+    "description": "Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owning network and email-volume data.",
     "url": "https://talosintelligence.com/reputation_center",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking the spam/malware reputation and network owner of an IP, domain, or email sender via Cisco Talos.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public reputation lookups; a Cisco login exists for extra features but the Reputation Center lookup is free with no account.",
+    "opsec": "passive",
+    "opsecNote": "Talos answers from its own global telemetry, so the target host/sender isn't contacted by you — the lookup is invisible to them. Cisco sees your query; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Cisco Talos runs one of the largest commercial threat-intelligence networks; its reputation verdicts and sender-volume data are authoritative signals, though \"reputation\" is about behaviour, not owner identity.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cisco-talos"
     ],
+    "aliases": [
+      "Talos Reputation Center",
+      "talosintelligence.com"
+    ],
+    "tags": [
+      "speciality-search-engines",
+      "threat-intel",
+      "reputation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cisco-talos-intelligence.md"
   },
   {

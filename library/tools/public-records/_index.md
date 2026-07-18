@@ -1061,7 +1061,7 @@ kind: group-index
 - **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
 - **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`
 - **`xrefer`** (medium) — OSINT tool: XRefer.
-- **`yahoo-finance`** (medium) — Yahoo's finance search page, search companies, finance news, market information, and more
+- **`yahoo-finance`** (medium) — Use when you have a company `name`/ticker or an `employer-org` and want its corporate profile — returns HQ `address`, key executives (`name`
 - **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye
 - **`yearbooks-myheritage`** (high) — Use when you have a `name` and want an older photo and school context — searches digitized US school yearbooks and returns yearbook images, 
 - **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
