@@ -18459,37 +18459,49 @@
   {
     "id": "carbon-dating-the-web",
     "name": "Carbon Dating The Web",
-    "description": "OSINT tool: Carbon Dating The Web.",
-    "url": "http://carbondate.cs.odu.edu/",
+    "description": "Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shorteners, crawls, and backlinks.",
+    "url": "https://carbondate.cs.odu.edu/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Estimating the true creation/first-appearance date of a web page by polling multiple independent dating signals.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free academic research service; the public server is capped (~50 concurrent requests) and can be slow or briefly unavailable — for heavy use, self-host from the open-source repo.",
+    "opsec": "passive",
+    "opsecNote": "Passive to the page owner — dating relies on third-party archives/indexes, not on hammering the target. Note the tool submits the URL to external services (Bitly, Memento, Google) as part of dating; the page's own server may see one fetch for its Last-Modified header.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Built and published by Old Dominion University's Web Science and Digital Libraries group (peer-reviewed, arXiv:1304.5213) with open-source code; methodology is transparent and reproducible.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CarbonDate",
+      "carbondate.cs.odu.edu",
+      "cd.cs.odu.edu"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "content-dating",
+      "verification"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/carbon-dating-the-web.md"
   },
   {
@@ -97407,28 +97419,30 @@
   {
     "id": "cybernews-personal-data-leak-check",
     "name": "Cybernews Personal Data Leak Check",
-    "description": "Free leak-checker for emails against aggregated breach datasets.",
+    "description": "Use when you have an `email` and want to know if it appears in known breaches — returns how many leaks it's in and which categories of data were exposed.",
     "url": "https://check.cybernews.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Free check of whether an email appears in aggregated leaked datasets.",
+    "bestFor": "Fast, free check of whether an email (or username) is present in aggregated breach datasets, with a breakdown of exposed data types.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email"
+      "email",
+      "password"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to run a check; no account or payment. Cybernews monetizes via its media site, not the checker.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive to the subject — the target is not notified. But you are submitting the subject's email to a third-party service that logs queries; use a clean session and avoid entering data you must keep fully contained.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by Cybernews, an established security-media outlet; it aggregates publicly known breach corpora. Coverage differs from HIBP, so treat a clean result as \"not in their set,\" not \"never breached.\"",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -97437,8 +97451,12 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "personal-data-leak-checker"
+    ],
     "aliases": [
-      "Cybernews"
+      "Cybernews",
+      "check.cybernews.com"
     ],
     "tags": [
       "email",
@@ -97446,11 +97464,8 @@
       "leak"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "personal-data-leak-checker"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/email/cybernews-personal-data-leak-check.md"
   },
   {
@@ -111535,41 +111550,54 @@
   {
     "id": "breadcrumbs-app",
     "name": "Breadcrumbs.app",
-    "description": "Crypto fund-flow visualization and transaction relationship mapping",
+    "description": "Use when you have a `crypto-wallet` address and want to trace fund flows — returns an interactive transaction graph of connected addresses, in/out patterns, and balances.",
     "url": "https://www.breadcrumbs.app/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "mixer-tracking"
     ],
-    "bestFor": "Crypto fund-flow visualization and transaction relationship mapping",
-    "input": "Cryptocurrency address (Bitcoin, Ethereum, or other supported chains)",
-    "output": "Interactive fund-flow graph, incoming/outgoing transaction patterns, related address recommendations, balance summaries",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visually tracing cryptocurrency fund flows from a wallet address to map connected addresses and follow the money.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier (with a free account) allows building and viewing fund-flow graphs; advanced features, larger investigations, monitoring, and attribution data are paid.",
     "opsec": "passive",
-    "opsecNote": "Public blockchain data visualization; graph relationships may indicate investigation interest to observers.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you analyze public on-chain data, which the wallet owner cannot see you querying. Note that saved/shared investigation graphs live on Breadcrumbs' servers; keep sensitive case graphs private and use a sock-puppet account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A purpose-built blockchain-analytics platform reading public ledger data; the transaction graph is verifiable against any block explorer, though any attribution labels it adds are the vendor's assessment.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": true,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Breadcrumbs",
+      "breadcrumbs.app"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "fund-flow",
+      "transaction-tracing"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/mixer-tracking/breadcrumbs-app.md"
   },
   {
@@ -142162,41 +142190,54 @@
   },
   {
     "id": "image-so-search",
-    "name": "Image So Search",
-    "description": "Qihoo 360 Reverse Images Search",
+    "name": "360 Image Search (image.so.com)",
+    "description": "Use when you have an `image` and want a China-focused reverse search — returns visually similar images and pages indexed by Qihoo 360, complementing Yandex/Google/Bing.",
     "url": "https://image.so.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "China-localized reverse image search — surfacing matches, sources, and lookalikes that Western engines miss, especially for Chinese subjects and content.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search by upload (max ~2MB) or image URL; login optional for basic use.",
+    "opsec": "active",
+    "opsecNote": "Active — you upload the target image to a Chinese search provider (Qihoo 360) that will retain and process it. Treat this as sending the image to a third-party (and a foreign jurisdiction); use a non-sensitive copy and a sock-puppet/clean session, and never upload media you must keep contained.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major Chinese search engine's image tool (Qihoo 360); it works well for China-indexed content but its index and relevance differ from Western engines, and the UI is Chinese-language.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "cn"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "360 image search",
+      "Qihoo 360 reverse image",
+      "image.so.com"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
+      "Reverse Image Search Engines and automation tools",
+      "china"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/image-so-search.md"
   },
   {
@@ -153889,41 +153930,48 @@
   {
     "id": "verification-handbook",
     "name": "Verification Handbook",
-    "description": "Learning repeatable verification workflows for UGC and breaking news",
+    "description": "Use when you need a methodology (not a lookup) for verifying user-generated photos, video, and breaking-news claims — returns free workflows, checklists, and case studies.",
     "url": "https://verificationhandbook.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "source-verification"
     ],
-    "bestFor": "Learning repeatable verification workflows for UGC and breaking news",
-    "input": "Verification learning needs and workflow questions",
-    "output": "Structured guidance, case studies, and checklists",
+    "bestFor": "Learning and applying repeatable verification workflows for images, video, and UGC during breaking news.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read online and download (PDF/ePub/Kindle) in multiple languages; a European Journalism Centre project.",
     "opsec": "passive",
-    "opsecNote": "Static documentation site with no investigative target interaction.",
+    "opsecNote": "Passive — a static documentation site with no investigative target interaction; reading it leaks nothing. It's a reference, not a query tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authored by verification specialists and journalists from the BBC, Storyful, ABC, AP and others, published by the European Journalism Centre; a widely cited standard reference.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "verificationhandbook.com",
+      "The Verification Handbook"
+    ],
+    "tags": [
+      "verification",
+      "methodology",
+      "source-verification",
+      "UGC"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/source-verification/verification-handbook.md"
   },
   {
@@ -196666,37 +196714,52 @@
   {
     "id": "careerbuilder",
     "name": "CareerBuilder",
-    "description": "OSINT tool: CareerBuilder.",
-    "url": "http://www.careerbuilder.com",
+    "description": "Use when you have a `name` or role and want employment/career signal — a US job board where public job postings and (employer-gated) resumes can corroborate a subject's work history.",
+    "url": "https://www.careerbuilder.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Surfacing employment context — job postings tied to an employer, and (for recruiters) resume-database leads on a person's work history.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and search job postings; the resume database that contains individuals' CVs is a paid, employer/recruiter-gated product, not open to the public.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing job listings leaks nothing about a subject. Creating a jobseeker or employer account to reach resumes is active and identity-linked; use a sock puppet and remember resume access is a paid recruiter feature, not free OSINT.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A major, legitimate US job board; its public job postings are reliable, but individual resume data sits behind an employer paywall and is self-reported by candidates.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "careerbuilder.com"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/careerbuilder.md"
   },
   {
@@ -221468,35 +221531,53 @@
   {
     "id": "canada-gazette",
     "name": "Canada Gazette",
-    "description": "OSINT tool: Canada Gazette.",
+    "description": "Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appointments, and regulatory notices.",
     "url": "https://www.gazette.gc.ca/accueil-home-eng.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching the official Government of Canada record for public legal notices — insolvencies, legal name changes, appointments, and regulatory actions.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and read online (1998–present; earlier issues via Library and Archives Canada). Only submitting a notice for publication carries a fee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a static official publication; no subject is notified and nothing leaks. Fully OpSec-safe; ordinary clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official newspaper of the Government of Canada; entries are authoritative primary-source public records published by the federal government.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "gazette.gc.ca",
+      "Gazette du Canada"
+    ],
+    "tags": [
+      "public-records",
+      "official-notices",
+      "canada",
+      "legal"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canada-gazette.md"
   },
   {
@@ -255819,35 +255900,50 @@
   {
     "id": "primelocation",
     "name": "PrimeLocation",
-    "description": "OSINT tool: PrimeLocation.",
+    "description": "Use when you have a UK `address` or area and want property context — returns for-sale/to-rent listings, asking prices, photos, and sold-price history for that location.",
     "url": "https://www.primelocation.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling UK property listings, asking prices, interior photos, and area price history by address or postcode.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search listings and view sold-price/market data; the paid side is for agents/advertisers, not for browsing. No account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public property portal; no owner or occupant is notified. Nothing to leak beyond your own visit; standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A long-standing UK property portal (part of the Zoopla/ZPG group); listings are agent-supplied and reflect the market, not an authoritative land register.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "primelocation.com"
+    ],
+    "tags": [
+      "property",
+      "real-estate",
+      "uk"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/primelocation.md"
   },
   {
@@ -300980,46 +301076,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/search-engines/searchall-net.md"
-  },
-  {
-    "id": "searchboth",
-    "name": "SearchBoth",
-    "description": "Meta-search engine that shows results from two or more other search engines, allowing users to compare results",
-    "url": "http://us.searchboth.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/searchboth.md"
   },
   {
     "id": "searchcode",
@@ -347062,39 +347118,51 @@
   },
   {
     "id": "twitter-account-detector",
-    "name": "Twitter account detector",
-    "description": "A simple and fast Chrome extension that finds all Twitter accounts on a site.",
-    "url": "https://chrome.google.com/webstore/detail/twitter-account-detector/papcdbgfejihdinhieggiamjnkclhkck/related",
+    "name": "Twitter Account Detector",
+    "description": "Use when you have a webpage/`domain` and want the Twitter/X accounts it references — a Chrome extension that surfaces all X handles linked on the page you're viewing.",
+    "url": "https://chromewebstore.google.com/detail/twitter-account-detector/papcdbgfejihdinhieggiamjnkclhkck",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Quickly extracting every Twitter/X account linked from a website while browsing it.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive to the accounts it finds — it only parses the page you already loaded and does not contact the handles. Standard extension caution applies (it can read page content); install from a research browser profile, not one tied to your identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An unofficial open-source extension by developer Andrew Stilliard (stapps.io) with a public GitHub repo and ~4.7★ rating; small user base, code is auditable.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Twitter account detector Chrome extension"
+    ],
     "tags": [
       "Social Media",
-      "Twitter"
+      "Twitter",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-account-detector.md"
   },
   {

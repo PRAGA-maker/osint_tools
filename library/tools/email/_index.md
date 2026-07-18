@@ -39,7 +39,7 @@ kind: group-index
 - **`cleantalk-email-ip-check`** (low) — Free email/IP spam-blacklist reputation check.
 - **`contacthelp-com`** (low) — Use when you want company customer-service contact details (phone, support email); despite its breach-site tag it is a consumer contact dire
 - **`credenshow`** (high) — Use when you have an email, username, phone, or domain and want to search aggregated breach/credential datasets — returns matching leaked re
-- **`cybernews-personal-data-leak-check`** (medium) — Free leak-checker for emails against aggregated breach datasets.
+- **`cybernews-personal-data-leak-check`** (medium) — Use when you have an `email` and want to know if it appears in known breaches — returns how many leaks it's in and which categories of data 
 - **`databreach-com`** (medium) — Use when you want to check whether an email/username appears in known breaches; harvested as a breach-account site but its exact function is
 - **`ddosecrets`** (medium) — Use when you have a name, email, org, or topic and want to search a large archive of leaked/hacked document datasets — returns links to sour
 - **`deepsearch`** (medium) — Use when you want to search Tor hidden-service (.onion) content for a name, username, email, or keyword tied to a subject — returns links to

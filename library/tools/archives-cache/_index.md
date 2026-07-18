@@ -31,7 +31,7 @@ kind: group-index
 - **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
 - **`bridge-suumitsu`** (low) — OSINT tool: Bridge.Suumitsu.
 - **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as
-- **`carbon-dating-the-web`** (medium) — OSINT tool: Carbon Dating The Web.
+- **`carbon-dating-the-web`** (low) — Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shortener
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
 - **`changedetection`** (low) — OSINT tool: ChangeDetection.
 - **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.

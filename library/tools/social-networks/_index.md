@@ -693,7 +693,7 @@ kind: group-index
 - **`twitchmetrics-net`** (low) — OSINT tool: Twitchmetrics.net.
 - **`twitchtracker`** (low) — OSINT tool: TwitchTracker.
 - **`twitter-3d`** (medium) — 3D viewer of relationships between twitter users.
-- **`twitter-account-detector`** (medium) — A simple and fast Chrome extension that finds all Twitter accounts on a site.
+- **`twitter-account-detector`** (low) — Use when you have a webpage/`domain` and want the Twitter/X accounts it references — a Chrome extension that surfaces all X handles linked o
 - **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur
 - **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
 - **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.

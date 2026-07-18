@@ -135,7 +135,7 @@ kind: group-index
 - **`california-registered-voter-verification`** (medium) — California voter registration verification and search
 - **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
 - **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
-- **`canada-gazette`** (medium) — OSINT tool: Canada Gazette.
+- **`canada-gazette`** (medium) — Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appo
 - **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
 - **`canadian-copyrights-database`** (medium) — Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and da
 - **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
@@ -784,7 +784,7 @@ kind: group-index
 - **`portugal`** (high) — Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `ass
 - **`postcert`** (medium) — Use when you have a `name` and want to verify a Colorado peace officer's certification, employment status, and any decertification/misconduc
 - **`pricepaid`** (medium) — OSINT tool: PricePaid.
-- **`primelocation`** (medium) — OSINT tool: PrimeLocation.
+- **`primelocation`** (low) — Use when you have a UK `address` or area and want property context — returns for-sale/to-rent listings, asking prices, photos, and sold-pric
 - **`prison-search-free-prison-inmate-locators`** (high) — Use when you have a `name` and want to find the right official US inmate locator — a state-by-state directory of free federal, state, and co
 - **`private-eye-co-uk`** (high) — Use when you have an `address` or area in England/Wales and want to know if it's owned by an offshore company — returns the offshore owner, 
 - **`probaterecords-co-uk`** (medium) — Use when you have a deceased person's `name` and want an official sealed copy of their England & Wales will or grant of probate — returns `a

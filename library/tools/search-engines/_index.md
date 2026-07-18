@@ -683,7 +683,6 @@ kind: group-index
 - **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi
 - **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
 - **`searchall-net`** (low) — Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — r
-- **`searchboth`** (medium) — Meta-search engine that shows results from two or more other search engines, allowing users to compare results
 - **`searchdorks`** (low) — OSINT tool: SearchDorks.
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
 - **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 

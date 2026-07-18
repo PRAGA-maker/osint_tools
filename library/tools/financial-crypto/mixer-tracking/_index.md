@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`arkham-intelligence`** (medium) — Institutional-grade cryptocurrency entity mapping and fund-flow analysis
-- **`breadcrumbs-app`** (medium) — Crypto fund-flow visualization and transaction relationship mapping
+- **`breadcrumbs-app`** (medium) — Use when you have a `crypto-wallet` address and want to trace fund flows — returns an interactive transaction graph of connected addresses, 
 - **`metasleuth`** (low) — Use when you have a `crypto-wallet` address or tx hash and want to trace fund flows across chains — returns linked `crypto-wallet`s, exchang
 - **`misttrack`** (medium) — Use when you have a `crypto-wallet` address and want an AML risk score plus entity/exchange labels and fund-flow tracing — returns crypto-wa
 

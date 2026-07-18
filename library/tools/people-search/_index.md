@@ -46,7 +46,7 @@ kind: group-index
 - **`canada-post-find-a-postal-code`** (high) — Use when you have a Canadian street `address` and want its exact postal code (or to validate/standardize the address) — returns the canonica
 - **`canada411-advanced-search-whitepages-ca`** (high) — Use when you have a `name`, `phone`, or `address` in Canada and want the matching residential/business listing — returns name, address and p
 - **`canada411`** (high) — Use when you have a Canadian `phone`, `name`, or `address` and want free white-pages data — returns listed `name`, `address`, and `phone` fr
-- **`careerbuilder`** (medium) — OSINT tool: CareerBuilder.
+- **`careerbuilder`** (low) — Use when you have a `name` or role and want employment/career signal — a US job board where public job postings and (employer-gated) resumes
 - **`carrier-lookup-2`** (high) — Use when you have a `phone` number and want its carrier and line type (mobile vs landline) plus the email-to-SMS gateway — returns enriched 
 - **`certificated-bailiff-register-justice-uk`** (high) — Use when you have a `name` of someone claiming to be an enforcement agent (bailiff) in England & Wales and want to verify them — returns whe
 - **`classmates-canada-alumni-lookup`** (high) — Use when you have a `name` and a school/graduation year and want alumni and digitized yearbook records — returns `social-profile`, classmate
