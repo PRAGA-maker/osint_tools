@@ -854,7 +854,6 @@ kind: group-index
 - **`world-newspapers`** (low) — OSINT tool: World-Newspapers.
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.
-- **`worldwidescience-org`** (medium) — OSINT tool: WorldWideScience.org.
 - **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
 - **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 

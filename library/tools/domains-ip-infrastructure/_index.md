@@ -522,7 +522,7 @@ kind: group-index
 - **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`weebly`** (medium) — Service provider for hosting webpages and websites, specifically oriented towards online shopping
-- **`well-known-dev`** (medium) — OSINT tool: well-known.dev.
+- **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a
 - **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 

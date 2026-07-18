@@ -24,7 +24,7 @@ kind: group-index
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
 - **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
 - **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
-- **`alt-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`alt-com`** (medium) — Use when you have a `username`, `email`, or location and want to check for an adult/BDSM dating profile — returns a member `social-profile` 
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
 - **`analystforum-com`** (medium) — OSINT tool: analystforum.com.
@@ -294,7 +294,7 @@ kind: group-index
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
 - **`redditlist`** (low) — OSINT tool: Redditlist.
 - **`redditsearch`** (low) — OSINT tool: RedditSearch.
-- **`rediff-web-portal-india`** (medium) — Indian news, video, email, entertainment, and shopping web portal
+- **`rediff-web-portal-india`** (low) — Use when you have a Rediffmail `email` or an Indian subject and want portal context — a live Indian news/email/shopping portal, most relevan
 - **`reelgood-com`** (low) — search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)
 - **`refdesk-newspaper-search`** (medium) — Searchable website for newspapers in the US and wordwide
 - **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en

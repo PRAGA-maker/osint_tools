@@ -233,7 +233,7 @@ kind: group-index
 - **`news-myseldon`** (medium) — Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and
 - **`noaa-data-access-viewer`** (low) — Use when you have a coastal U.S. `geolocation` and want authoritative imagery, land-cover, and lidar elevation data for it — returns downloa
 - **`numlookup-reverse-image-search`** (medium) — The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches wi
-- **`observer`** (medium) — service allows you to watch data from different orbiting satellites in the record. The data is available in 15-30 minutes after recording.
+- **`observer`** (low) — Use when you want to watch Landsat satellite imagery being acquired in near real-time — returns a live stream of freshly downlinked scenes b
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
 - **`openi-nlm-nih-gov`** (medium) — Reverse image search engine for scientific and medical images
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
@@ -284,7 +284,6 @@ kind: group-index
 - **`reverse-image-search-dmtr-addons-mozilla-org`** (high) — Use when you have an image on a web page and want to reverse-search it fast — returns a right-click menu that sends the image to multiple se
 - **`reverse-image-search`** (high) — Use when you have an `image` or `face` and want to find where else it appears online — returns matching pages, source URLs and visually simi
 - **`reversely`** (high) — Use when you have a `face` or `image` and want AI reverse-image and face search to find where it appears online and identify the person — re
-- **`revesearch-com`** (medium) — allows to upload an image once and immediately search for it in #Google, #Yandex, and #Bing.
 - **`reveye-reverse-image-sear-chrome-google-com`** (high) — Use when you have an `image`/`face` and want to reverse-search it across multiple engines at once — a browser extension that right-click que
 - **`rootabout-wayback-reverse-image`** (medium) — Use when you have an `image` and want to find where it appears in the Internet Archive / OpenLibrary — returns matching archived items (book
 - **`rootabout`** (high) — Use when you have an `image` and want to reverse-search it against the Internet Archive and Open Library (plus Google) — returns matching ar

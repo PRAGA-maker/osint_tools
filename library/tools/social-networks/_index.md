@@ -193,7 +193,7 @@ kind: group-index
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
 - **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
-- **`follower-wonk-compare`** (medium) — this service allows you to find out how many followers two (or three) Twitter accounts have in common.
+- **`follower-wonk-compare`** (medium) — Use when you have two or three Twitter/X `username`s and want their shared audience — returns followers-in-common and overlap analysis to pr
 - **`followeraudit`** (low) — OSINT tool: FollowerAudit.
 - **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — Use when you have a `name`, keyword, or `username` and want to find or profile social accounts by bio text and analyze their followers — ret
 - **`forcesreunited-co-uk`** (high) — Use when you have a UK military subject's `name`, unit, or service era and want to place them via a veterans' network — returns a member `so
@@ -669,7 +669,6 @@ kind: group-index
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
-- **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)
 - **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
@@ -729,7 +728,6 @@ kind: group-index
 - **`twxplorer`** (medium) — OSINT tool: twXplorer.
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
 - **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
-- **`unfollower-stats`** (medium) — iOS App that tracking unfollowers and show nofollowersback and unactive followers for your Twitter account
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
 - **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —
 - **`unlistedvideos-com`** (medium) — OSINT tool: Unlistedvideos.com.

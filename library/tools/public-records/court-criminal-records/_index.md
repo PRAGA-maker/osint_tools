@@ -13,7 +13,7 @@ kind: group-index
 - **`crimereports-com`** (medium) — Crime incident mapping
 - **`docket-alarm`** (medium) — Use when you have a `name` (party) or docket/case number and want US litigation records — returns dockets, filings, and case status across f
 - **`epstein-exposed`** (medium) — Epstein case document research
-- **`familywatchdog-sex-offender-search`** (medium) — Sex offender registry search
+- **`familywatchdog-sex-offender-search`** (medium) — Use when you have a `name` or `address` and want to check US sex-offender registries — returns offender photo, registered `address`, and off
 - **`federal-inmate-locator`** (high) — Use when you have a `name` or BOP register number and want to know if the person is in US federal prison — returns facility, custody status,
 - **`free-law-recap-archive`** (medium) — Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming
 - **`google-scholar-case-law`** (medium) — Use when you have a `name` or case citation and want free full-text US court opinions that may mention a person as a party, witness, or subj
