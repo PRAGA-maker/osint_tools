@@ -272,7 +272,7 @@ kind: group-index
 - **`dnc-email-database`** (medium) — OSINT tool: DNC email database.
 - **`dobsearch`** (high) — Use when you have a `name` and want date of birth, addresses, phone and relatives — returns an aggregated US people-search profile including
 - **`docinfo-org`** (high) — Use when you have a doctor's `name` and want to confirm and locate them professionally — returns the states they're licensed in, medical sch
-- **`doe-data-explorer`** (medium) — Discoverable database of non-text, or data, information in the Department of Energy
+- **`doe-data-explorer`** (medium) — Use when you have a researcher `name` or `employer-org` and want their U.S. Department of Energy scientific datasets — returns author, affil
 - **`drug-enforcement-administration`** (medium) — DEA website providing reports, publications, facts and other resources
 - **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
 - **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
@@ -684,7 +684,6 @@ kind: group-index
 - **`north-carolina-resident-database`** (high) — Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors 
 - **`north-carolina`** (high) — Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender
 - **`northdata-com`** (high) — Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addr
-- **`nsa-css`** (medium) — The NSAs Guide to Internet Research
 - **`nuans-business-name-search-canada`** (medium) — Canadadian business search engine that searches using company name
 - **`nursing-home-inspect`** (medium) — Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and 
 - **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status

@@ -129,7 +129,7 @@ kind: group-index
 - **`terra-server`** (medium) — OSINT tool: Terra server.
 - **`tfl-jamcams`** (medium) — OSINT tool: TfL JamCams.
 - **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
-- **`the-perry-casta-eda-library-map-collection`** (medium) — OSINT tool: The Perry-CastaÃ±eda Library Map Collection.
+- **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
 - **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
 - **`travic-tracker-geops`** (medium) — OSINT tool: TRAVIC TRACKER GEOPS.
 - **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.

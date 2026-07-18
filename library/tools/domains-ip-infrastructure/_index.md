@@ -266,7 +266,6 @@ kind: group-index
 - **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
 - **`ip-checking`** (low) — OSINT tool: IP Checking.
 - **`ip-chicken`** (medium) — Search tool that identifies the IP address you are currently using
-- **`ip-finger-prints`** (medium) — IP address geographical location finder
 - **`ip-geo-location-lookup`** (low) — OSINT tool: IP GEO Location Lookup.
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
 - **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools

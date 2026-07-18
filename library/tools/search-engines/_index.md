@@ -137,7 +137,7 @@ kind: group-index
 - **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
 - **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
 - **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
-- **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Legal-related search engine for locating legal representatives
+- **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Use when you have a `name` or `address`/region and want to find a Canadian lawyer or law firm — returns contact details, firm, address and p
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
@@ -359,7 +359,6 @@ kind: group-index
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
 - **`highwire-free-online-full-text-articles`** (low) — OSINT tool: HighWire: Free Online Full-text Articles.
 - **`hinduwebsite`** (medium) — Website that offers Hindu scripture search services
-- **`his-janes-360`** (medium) — Global defence and security intelligence and analysis site with search feature
 - **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
 - **`homepage-search-engine`** (medium) — OSINT tool: Homepage Search Engine.
 - **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
@@ -809,7 +808,7 @@ kind: group-index
 - **`vinden-meta-search-netherlands`** (medium) — Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
 - **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results
-- **`vulnerability-and-exploit-database`** (medium) — OSINT tool: Vulnerability & Exploit Database.
+- **`vulnerability-and-exploit-database`** (medium) — Use when you have a `domain` or software product tied to a target's infrastructure and want known CVEs/exploits for it — returns vulnerabili
 - **`wackysafe`** (low) — Kid-friendly search engine.
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
 - **`washington-office-of-financial-management`** (medium) — Washingtons Office of Financial Management site providing workforce and population data, and state budget information

@@ -81,7 +81,7 @@ kind: group-index
 - **`european-world-translator`** (medium) — Enter the word in English to see its translation into different European languages on the map.
 - **`everymountainintheworld`** (medium) — Use when you have a `geolocation` with a distinctive peak/summit and want to identify it — returns named mountains with elevation and links 
 - **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
-- **`fao-map-catalog`** (medium) — OSINT tool: FAO Map Catalog.
+- **`fao-map-catalog`** (medium) — Use when you have a `geolocation` or region and want authoritative land-cover, agricultural, water and terrain layers for it — returns geosp
 - **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
 - **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe
 - **`find-food-support`** (medium) — find places where you can get free food by address (USA)

@@ -68,7 +68,7 @@ kind: group-index
 - **`lovingcreators-com`** (medium) — OSINT tool: lovingcreators.com.
 - **`match-com`** (medium) — OSINT tool: Match.com.
 - **`meetup`** (high) — Use when a subject's hobbies/interests are known — find the groups and in-person events they attend, plus public member profiles and RSVP hi
-- **`merchant-circle-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`merchant-circle-classified-ads-united-states`** (medium) — Use when you have a business `name` or `address`/locality and want the local-merchant listing behind it — returns address, phone and busines
 - **`modelsearcher-com`** (medium) — OSINT tool: modelsearcher.com.
 - **`nzdoctor-free-classified-ads-new-zealand`** (medium) — Classified advertisements-related website that provides regional services
 - **`offerup`** (high) — Use when a US subject buys/sells locally — pivot from a seller alias or item to a profile with photos, approximate location, ratings, and tr
