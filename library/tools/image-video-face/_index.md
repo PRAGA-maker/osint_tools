@@ -317,7 +317,7 @@ kind: group-index
 - **`snap-scraper`** (high) — Use when you have a `geolocation` (lat/long) and want the public Snapchat media posted there — returns downloaded images/video from Snap Map
 - **`snapchat-com`** (high) — Use when you have a Snapchat `username` and want the public profile behind it — returns the public profile page, Bitmoji/avatar and public S
 - **`snapchat-map-scraper-nemec`** (high) — Use when you have a `geolocation` and want the public Snapchat stories posted there — returns downloaded Snap Map media/stories for the area
-- **`snapinsta`** (medium) — Download photos, videos and IGTV from public Instagram accounts.
+- **`snapinsta`** (medium) — Use when you have a public Instagram `username` or post URL and want to save its media — returns downloadable photos, videos, reels, and sto
 - **`social-catfish-reverse-image-search`** (high) — Use when you have an `image`/`face` of an online persona and want to know where else it appears and whose identity it maps to — returns matc
 - **`sogou`** (high) — Use when you have an `image`/`face` and want a Chinese-web reverse-image and image search that indexes content Google misses — returns match
 - **`soundcloud`** (high) — Use when you have a `username` or `name` and want to find a subject's audio/podcast presence — returns a `social-profile` with avatar `image

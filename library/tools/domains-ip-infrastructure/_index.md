@@ -94,7 +94,7 @@ kind: group-index
 - **`bi-zone`** (low) — OSINT tool: Bi.Zone.
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — OSINT tool: Bitdefender Threat Map.
-- **`blacklist-alert-check`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`blog`** (medium) — Service provider for hosting webpages and websites
 - **`bluehost-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`breachhq`** (low) — OSINT tool: BreachHQ.

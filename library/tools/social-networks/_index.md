@@ -801,7 +801,6 @@ kind: group-index
 - **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
 - **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
-- **`youtube-comments-analyze`** (medium) — Download detailed information about YouTube video comments to a .tab or .gdf
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
 - **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
 - **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos

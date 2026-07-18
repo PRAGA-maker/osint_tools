@@ -148,9 +148,9 @@ kind: group-index
 - **`telegram-phone-number-checker`** (high) — Use when you have a `phone` number and want to check whether it has a Telegram account — returns account existence plus username/name/ID whe
 - **`telegram-scraper-th3unkn0n`** (medium) — Extract user info and media from Telegram groups.
 - **`telegram-search-channels-groups`** (high) — Use when you have a `username` or `name` and want to find the associated Telegram user, channel, or group — returns public `social-profile` 
-- **`telegram-search-engine`** (medium) — OSINT tool: Telegram Search Engine.
+- **`telegram-search-engine`** (medium) — Use when you have a keyword, link, or `username` and want to find which public Telegram channels posted it — returns channel names and posts
 - **`telegram-search-search-for-posts`** (medium) — Use when you have a `name`, `username`, or keyword and want to find Telegram channels/posts mentioning it — returns matching public channels
-- **`telegram-search`** (medium) — OSINT tool: Telegram Search.
+- **`telegram-search`** (medium) — Use when you have a `username`, `name`, or keyword and want to find public Telegram channels/groups/posts — returns social profiles and chan
 - **`telegram-tools`** (high) — Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creati
 - **`telegramchannels-me`** (medium) — Use when you have a `username`, `name`, or keyword and want to discover public Telegram channels — returns `social-profile` links to matchin
 - **`telegramdb-org`** (medium) — OSINT tool: TelegramDB.org.

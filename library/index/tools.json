@@ -67127,30 +67127,31 @@
   {
     "id": "blacklist-alert-check",
     "name": "Blacklist Alert Check",
-    "description": "Search tool that identifies if an IP addressis on an anti-spam blacklist",
+    "description": "Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.",
     "url": "http://www.blacklistalert.org",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly checking an IP or domain against dozens of DNS-based anti-spam blacklists at once.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free lookup service; no account. The operator explicitly notes it only checks status and cannot delist anyone.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — the tool queries public DNSBL zones on your behalf; the owner of the IP/domain is not notified. Nothing about your investigation is exposed to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small free utility that queries established public DNSBLs; the underlying blacklist data is authoritative, but the aggregator itself is an unbranded third party.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -67159,15 +67160,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mx-toolbox-whois-lookup",
+      "network-solutions-whois-lookup"
+    ],
+    "aliases": [
+      "blacklistalert.org",
+      "DNSBL check"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "reputation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/blacklist-alert-check.md"
   },
   {
@@ -152666,13 +152674,13 @@
   {
     "id": "snapinsta",
     "name": "SnapInsta",
-    "description": "Download photos, videos and IGTV from public Instagram accounts.",
-    "url": "https://snapinsta.app",
+    "description": "Use when you have a public Instagram `username` or post URL and want to save its media — returns downloadable photos, videos, reels, and stories.",
+    "url": "https://snapinsta.to",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Downloading media from public Instagram accounts",
+    "bestFor": "Downloading full-resolution photos/videos/reels/stories from public Instagram accounts without an account.",
     "selectorsIn": [
       "username",
       "social-profile"
@@ -152680,15 +152688,18 @@
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, ad-supported; no login or Instagram account required. Funded by on-page advertising.",
+    "opsec": "active",
+    "opsecNote": "The service fetches the target's Instagram media through its own servers, so your IP does not hit Instagram — but you are trusting a third-party mirror site (heavy ads, frequent domain changes). Use a hardened/sandboxed browser and an ad-blocker; never enter any Instagram credentials.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of many interchangeable Instagram-downloader clone sites; the original snapinsta.app domain no longer resolves and the service now lives on rotating mirrors (snapinsta.to, snap-insta.to, etc.). Treat the operator as untrusted.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -152697,14 +152708,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "inflact",
+      "imginn"
+    ],
+    "aliases": [
+      "snapinsta.app",
+      "snapinsta.to",
+      "Snapinsta"
+    ],
     "tags": [
       "instagram",
       "media-download"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/snapinsta.md"
   },
   {
@@ -170798,35 +170817,55 @@
   {
     "id": "telegram-search",
     "name": "Telegram Search",
-    "description": "OSINT tool: Telegram Search.",
+    "description": "Use when you have a `username`, `name`, or keyword and want to find public Telegram channels/groups/posts — returns social profiles and channel links.",
     "url": "https://cse.google.com/cse?cx=004805129374225513871:p8lhfo0g3hg",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Google-powered keyword search restricted to public Telegram channel/group web pages (t.me links).",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. Coverage is whatever Google has indexed of public t.me pages, filtered by the CSE config.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query Google's index, not Telegram itself, so no channel owner is alerted and you don't join anything. Nothing about your search reaches the target's Telegram.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google CSE curated by an unknown maintainer; it only surfaces what Google indexes of public Telegram web previews, and the CSE config can silently drift or break over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "telegram-search-engine",
+      "telegago"
+    ],
+    "aliases": [
+      "Telegram CSE",
+      "Telegram Google Custom Search"
+    ],
+    "tags": [
+      "telegram",
+      "messaging",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-search.md"
   },
   {
@@ -170888,35 +170927,55 @@
   {
     "id": "telegram-search-engine",
     "name": "Telegram Search Engine",
-    "description": "OSINT tool: Telegram Search Engine.",
+    "description": "Use when you have a keyword, link, or `username` and want to find which public Telegram channels posted it — returns channel names and posts mentioning the term.",
     "url": "https://clickbee.me/Telegram-Search-Engine.html",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether a keyword, referral link, or handle has been posted recently in public Telegram channels.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web search tool; no account needed to run a query. The parent site (ClickBee) also runs unrelated crypto \"earn\" bots.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search ClickBee's index of public channel posts, not Telegram directly, so no channel is alerted. Note the operator's reputation is questionable; avoid its bots and don't enter credentials or wallet info anywhere on the site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Operated by ClickBee, whose main business is crypto-reward bots of dubious reputation; the channel-search feature works but the operator is untrusted, so corroborate any hit directly in Telegram.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "telegram-search",
+      "telegago"
+    ],
+    "aliases": [
+      "ClickBee Telegram Search",
+      "clickbee.me telegram search"
+    ],
+    "tags": [
+      "telegram",
+      "messaging",
+      "keyword-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-search-engine.md"
   },
   {
@@ -182798,7 +182857,7 @@
   {
     "id": "ip-dns-leak-detection",
     "name": "IP / DNS Leak Detection",
-    "description": "Verifying VPN effectiveness, detecting IP and DNS leaks before OSINT operations",
+    "description": "Use when you want to verify your own VPN/anonymization before an operation — returns your visible IP, DNS resolvers, WebRTC leaks, and geolocation.",
     "url": "https://ipleak.net/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -182806,34 +182865,50 @@
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Verifying VPN effectiveness, detecting IP and DNS leaks before OSINT operations",
-    "input": "No input required (automatically tests current connection)",
-    "output": "Detected IP, DNS servers, WebRTC leaks, and geolocation data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a VPN/proxy setup is not leaking your real IP, DNS, or location via WebRTC before touching a target.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Completely free; no account. Run by AirVPN but usable by anyone as a neutral leak-test page.",
     "opsec": "active",
-    "opsecNote": "Connecting to this service reveals your current IP and DNS to their servers; use only to test anonymization setup before operations.",
+    "opsecNote": "Connecting reveals your CURRENT IP/DNS to ipleak's servers — that is the entire point, so run it only through the exact tunnel you intend to operate behind, never from your real connection while thinking about a case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by AirVPN; a long-standing, widely recommended leak-test tool. It reports observed connection facts, not third-party claims.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "user-agent-string-decoder"
+    ],
+    "aliases": [
+      "ipleak.net",
+      "IP leak test",
+      "DNS leak test"
+    ],
+    "tags": [
+      "opsec",
+      "vpn",
+      "leak-test"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ip-dns-leak-detection.md"
   },
   {
@@ -193577,7 +193652,7 @@
   {
     "id": "user-agent-string-decoder",
     "name": "User Agent String Decoder",
-    "description": "Parsing raw UA strings from logs, understanding browser fingerprint components",
+    "description": "Use when you have a raw `user-agent` string (from a log or header) and want it parsed — returns browser family, version, OS, and device type.",
     "url": "https://tools.tracemyip.org/user-agent-string-decoder/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -193585,22 +193660,27 @@
       "anonymous-browsing",
       "spoof-user-agent"
     ],
-    "bestFor": "Parsing raw UA strings from logs, understanding browser fingerprint components",
-    "input": "Raw user agent string",
-    "output": "Parsed browser family, version, OS, and device type breakdown",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Decoding a raw user-agent string into readable browser/OS/device components for log analysis or fingerprint checking.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web utility from tracemyip.org; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Submits the UA string to the tool’s server for parsing; does not expose your real browsing context if used with a test string.",
+    "opsecNote": "Submitting a UA string sends only that string to the tool's server — no exposure of your real browsing context if you paste a test/target string rather than letting it read your live one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party parsing utility on an ad-supported IP-tools site; the decode logic is standard UA parsing, so output is generally reliable, but the operator is not an authoritative source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -193608,13 +193688,21 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "trace-my-ip"
+      "trace-my-ip",
+      "ip-dns-leak-detection"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "UA string decoder",
+      "user agent parser"
+    ],
+    "tags": [
+      "opsec",
+      "user-agent",
+      "fingerprint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/user-agent-string-decoder.md"
   },
   {
@@ -201089,13 +201177,13 @@
   {
     "id": "ghostrecon",
     "name": "GhostRecon",
-    "description": "OSINT framework for online investigations.",
+    "description": "Use when you have a `username`, `email`, `phone`, `ip-address`, or `domain` and want a scripted recon sweep — returns social profiles, network/IP data, and lookups from bundled modules.",
     "url": "https://github.com/KawaCoder/GhostRecon",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "General-purpose multi-selector online investigation",
+    "bestFor": "Running a bundled set of recon lookups (username/email/phone/IP/domain) from one Linux CLI.",
     "selectorsIn": [
       "username",
       "email",
@@ -201108,15 +201196,16 @@
       "ip-address",
       "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open source (Mozilla Public License 2.0); self-hosted, no service fees. Some bundled modules may call third-party APIs that have their own limits.",
+    "opsec": "active",
+    "opsecNote": "Some modules (port scans, IP/domain probes, account checks) touch the target's infrastructure or third-party services directly. Run from a disposable VPS/VPN, review each module's behavior before use, and don't assume everything it does is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community OSINT framework (304 stars).",
+    "trustNote": "A community GitHub project (~300 stars, MPL-2.0, last release v2.0 in 2024); it wraps other tools/APIs, so verify each module's data source and freshness before trusting output.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -201125,16 +201214,22 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "sherlock",
+      "recon-ng"
+    ],
     "aliases": [
-      "ghostrecon"
+      "ghostrecon",
+      "Grecon"
     ],
     "tags": [
       "framework",
-      "multi-tool"
+      "multi-tool",
+      "cli"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ghostrecon.md"
   },
   {
@@ -268791,13 +268886,13 @@
   {
     "id": "uspages-business-directory-united-states",
     "name": "USPages Business Directory (United States)",
-    "description": "Business-related search directory",
+    "description": "Use when you have an `employer-org` or `name` and want a US business listing — returns company address, category, and contact details.",
     "url": "http://www.uspages.com/businessdirectory.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a US company's category, address, and contact details in a general business directory.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -268806,32 +268901,40 @@
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; ad-supported directory, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a public web directory; no business or person is notified. No login, so nothing ties the lookup to you beyond your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general-purpose commercial business directory of uncertain provenance and freshness; listings are self-submitted/aggregated and not authoritative registration records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "corporationwiki",
+      "opencorporates"
+    ],
+    "aliases": [
+      "USPages",
+      "uspages.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "company-search"
+      "company-search",
+      "business-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/uspages-business-directory-united-states.md"
   },
   {
@@ -353710,53 +353813,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/youtube-comment-sorting.md"
-  },
-  {
-    "id": "youtube-comments-analyze",
-    "name": "YouTube Comments Analyze",
-    "description": "Download detailed information about YouTube video comments to a .tab or .gdf",
-    "url": "https://tools.digitalmethods.net/netvizz/youtube/mod_video_info.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "google-autocomplete-scraper",
-      "internet-archive-wayback-machine-link-ripper",
-      "tools-digitalmethods-net",
-      "wikipedia-cross-lingual-image-analysis",
-      "yotube-channel-search",
-      "youtube-data-tools",
-      "ytdt-digitalmethods-net",
-      "ytdt-digitalmethods-net-2"
-    ],
-    "_file": "library/tools/social-networks/youtube-comments-analyze.md"
   },
   {
     "id": "youtube-comments-downloader",

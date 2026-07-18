@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling/anonymous-browsing/spoof-user-agent
 
 ## Skills here
-- **`user-agent-string-decoder`** (medium) — Parsing raw UA strings from logs, understanding browser fingerprint components
+- **`user-agent-string-decoder`** (medium) — Use when you have a raw `user-agent` string (from a log or header) and want it parsed — returns browser family, version, OS, and device type
 - **`useragentstring-com`** (medium) — Identifying user agent strings, finding UA strings to use for spoofing
 - **`whatismybrowser-com`** (medium) — Verifying browser fingerprint and user-agent visibility during OSINT sessions
 

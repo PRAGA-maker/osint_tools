@@ -1016,7 +1016,7 @@ kind: group-index
 - **`us-institute-of-peace`** (medium) — United States Institute of Peace website, providing a special report on the use of the internet in modern terrorism
 - **`us-tax-court`** (high) — Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), part
 - **`usgenweb-archives-united-states`** (high) — Use when you have a `name` and want transcribed US genealogical records — obituaries, wills, cemetery, census, and marriage records — return
-- **`uspages-business-directory-united-states`** (medium) — Business-related search directory
+- **`uspages-business-directory-united-states`** (medium) — Use when you have an `employer-org` or `name` and want a US business listing — returns company address, category, and contact details.
 - **`usrealtyrecords-com`** (high) — Use when you have a US `address` (or owner `name`) and want property ownership, value, sale history and possible owner contact info — return
 - **`ustitlerecords-com`** (high) — Use when you have a `name` or `address` and want US property/title records — returns property ownership, transfer history, liens and all pro
 - **`utah-gun-exchange`** (low) — OSINT tool: Utah Gun Exchange.
