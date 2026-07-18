@@ -203,7 +203,7 @@ kind: group-index
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li
 - **`landviewer`** (medium) — Use when you have a `geolocation` and want historical/current satellite imagery of it — returns browsable Sentinel/Landsat (and commercial) 
 - **`last-fm`** (medium) — Use when you have a `username` (or suspect a music handle) and want the person's public listening profile — returns social-profile, real nam
-- **`lexica`** (medium) — Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description 
+- **`lexica`** (medium) — Use when you have an `image` you suspect is AI-generated and want to check it against a huge Stable-Diffusion corpus — returns visually simi
 - **`librivox`** (high) — Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice 
 - **`libsyn`** (medium) — Use when you have a `name`, `username` or podcast title and want to find a subject's podcast, its episodes and host details — returns `socia
 - **`liftapp-ai`** (medium) — Use when a face/photo lead is too low-quality to search and you want to enhance, upscale or restore it before reverse-image work — returns a

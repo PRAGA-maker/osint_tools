@@ -152,7 +152,7 @@ kind: group-index
 - **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
 - **`citeseerx`** (medium) — OSINT tool: CiteSeerX.
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
-- **`citizendium`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`citizendium`** (medium) — Use when you have a `name` or topic and want an expert-authored encyclopedia entry as a Wikipedia cross-check — returns articles with contri
 - **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
 - **`citysearch`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
@@ -796,7 +796,7 @@ kind: group-index
 - **`twingly`** (low) — OSINT tool: Twingly.
 - **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
 - **`uk-law-society`** (medium) — Legal-related search engine for locating legal representatives including quick search and pro search
-- **`uk-patent-search`** (medium) — UK Governments trademark, copyright, patent and intellectual property search
+- **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f
 - **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`united-states-marine-corps-occupation-codes`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
@@ -815,7 +815,7 @@ kind: group-index
 - **`vancouver-sun-opinions`** (medium) — Read opinion articles from columnists and guest writers on various topics and controversies
 - **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
 - **`vinden-meta-search-netherlands`** (medium) — Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
-- **`virgilio-search-portal-italy`** (medium) — Italy based web portal including a search engine, news, email services, and chat
+- **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
 - **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results
 - **`vulnerability-and-exploit-database`** (medium) — OSINT tool: Vulnerability & Exploit Database.
 - **`wackysafe`** (low) — Kid-friendly search engine.

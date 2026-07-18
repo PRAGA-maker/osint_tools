@@ -101,7 +101,7 @@ kind: group-index
 - **`the-time-machine`** (medium) — Tool for gathering domain info from WayBackMachine: - fetches subdomains from waybackurl; - search for /api/JSON/Configuration endpoints and
 - **`theoldnet-com`** (medium) — OSINT tool: TheOldNet.com.
 - **`time-travel-for-web-chromewebstore-google-com`** (medium) — OSINT tool: time travel for web (chromewebstore.google.com).
-- **`trove`** (medium) — australian web archive
+- **`trove`** (medium) — Use when you have a `name`, place, or event with an Australian angle and want historical records — returns digitised newspapers, gazettes, p
 - **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)
 - **`vandal`** (medium) — extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.
 - **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo

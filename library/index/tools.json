@@ -21613,37 +21613,52 @@
   {
     "id": "trove",
     "name": "Trove",
-    "description": "australian web archive",
-    "url": "http://trove.nla.gov.au/search/category/websites",
+    "description": "Use when you have a `name`, place, or event with an Australian angle and want historical records — returns digitised newspapers, gazettes, photos, and archived Australian websites.",
+    "url": "https://trove.nla.gov.au/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching Australia's national aggregation of digitised newspapers, government gazettes, photos, and archived websites for historical mentions of a person or place.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and read; a free optional account lets you save, tag, and correct text. Some linked third-party items may sit behind their holder's paywall.",
+    "opsec": "passive",
+    "opsecNote": "You search the National Library of Australia's aggregator, never a target — the query is invisible to anyone you're researching. No login needed to search; standard research-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the National Library of Australia, aggregating collections from Australian libraries, archives, and museums; digitised primary sources (newspapers, gazettes) are authoritative, with page images to verify against.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "National Library of Australia Trove",
+      "trove.nla.gov.au"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "newspapers",
+      "australia"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/trove.md"
   },
   {
@@ -59111,41 +59126,56 @@
   {
     "id": "mobsf",
     "name": "MobSF",
-    "description": "Comprehensive mobile app security analysis, vulnerability assessment, artifact extraction, compliance testing",
+    "description": "Use when you have a mobile app (`.apk`/`.ipa`) and want to extract its secrets and identity leads — returns hardcoded URLs, keys, emails, trackers, permissions, and dev artifacts.",
     "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "app-analysis"
     ],
-    "bestFor": "Comprehensive mobile app security analysis, vulnerability assessment, artifact extraction, compliance testing",
-    "input": "APK files, IPA files, source code",
-    "output": "Security vulnerabilities, permissions analysis, data flow analysis, forensic artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Static analysis of an APK/IPA to pull out hardcoded endpoints, API keys, emails, third-party trackers, and developer/signing artifacts.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (self-hosted); run locally via Python or Docker. No cloud account required.",
     "opsec": "passive",
-    "opsecNote": "Can be deployed locally or on private infrastructure for analysis",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Static analysis runs entirely on your own machine against a file you hold — no traffic goes to the app's operator. (Dynamic analysis, which actually runs the app, DOES generate network traffic — keep that on an isolated sandbox/VM behind a VPN.) The app binary itself is safe to dissect statically.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Widely used, actively maintained open-source mobile-security framework (MobSF org); results are auditable and reproducible since you run it yourself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Mobile Security Framework",
+      "Mobile-Security-Framework-MobSF"
+    ],
+    "tags": [
+      "app-analysis",
+      "reverse-engineering",
+      "mobile",
+      "arf-seed"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/app-analysis/mobsf.md"
   },
   {
@@ -145538,40 +145568,49 @@
   {
     "id": "lexica",
     "name": "Lexica",
-    "description": "Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description and keywords.",
+    "description": "Use when you have an `image` you suspect is AI-generated and want to check it against a huge Stable-Diffusion corpus — returns visually similar AI artworks and their prompts.",
     "url": "https://lexica.art/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-searching an image against millions of Stable Diffusion outputs to gauge whether it's AI-generated and recover likely prompts.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse the image gallery; generating your own images requires a paid plan. Search/reverse-search is free.",
+    "opsec": "passive",
+    "opsecNote": "Uploading/pasting an image sends it to Lexica's servers for the similarity search — treat the query image as disclosed to a third party. It doesn't touch any person; still, don't upload sensitive case media you wouldn't want cached. It only searches AI-art, not real photos of people.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial Stable-Diffusion gallery/search product, not a forensic tool. A match only indicates similarity to AI-generated art; it is a weak signal, not proof an image is synthetic.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Lexica.art"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
+      "Reverse Image Search Engines and automation tools",
+      "ai-image"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/lexica.md"
   },
   {
@@ -174213,42 +174252,55 @@
   },
   {
     "id": "anonymouth-document-anonymization",
-    "name": "Anonymouth - Document Anonymization",
-    "description": "Anonymizing written documents, reducing authorship attribution risk in sensitive reports",
+    "name": "Anonymouth (Document Anonymization)",
+    "description": "Use when you must publish/send writing without it being linked to you by style — analyzes a document's stylometric fingerprint and guides edits to reduce authorship attribution.",
     "url": "https://github.com/psal/anonymouth",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "metadata-style"
     ],
-    "bestFor": "Anonymizing written documents, reducing authorship attribution risk in sensitive reports",
-    "input": "Text documents for stylometric analysis and rewriting guidance",
-    "output": "Authorship feature analysis and suggestions for stylistic modification to evade attribution",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Reducing the risk that your own writing style de-anonymizes you, by surfacing the linguistic features that give you away and suggesting changes.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (Java); runs locally. Unmaintained since ~2017 but still runnable with a compatible Java/JRE.",
     "opsec": "passive",
-    "opsecNote": "Runs locally; no data leaves the machine. Project is unmaintained (last active ~2017) but functional for academic and research use.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "This is a defensive OpSec tool for the INVESTIGATOR, not a lookup on a target. It runs entirely offline — your draft never leaves your machine, which is the whole point. Do not run it on someone else's text hoping to identify them; it de-styles your own writing, it doesn't attribute others'.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Built by Drexel's Privacy, Security and Automation Lab (PSAL) as the applied counterpart to their JStylo stylometry research; academically grounded but old and no longer maintained.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Anonymouth",
+      "psal/anonymouth"
+    ],
+    "tags": [
+      "opsec",
+      "stylometry",
+      "anonymization",
+      "arf-seed"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/metadata-style/anonymouth-document-anonymization.md"
   },
   {
@@ -224448,36 +224500,53 @@
   },
   {
     "id": "civilian-office-of-police-accountability",
-    "name": "Civilian Office of Police Accountability",
-    "description": "OSINT tool: Civilian Office of Police Accountability.",
+    "name": "Civilian Office of Police Accountability (COPA Chicago)",
+    "description": "Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegations, video, and outcomes.",
     "url": "https://www.chicagocopa.org/data-cases/case-portal/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up official investigations into Chicago Police misconduct — case details, allegations, released video/audio, and findings — via COPA's public case portal.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public case portal; no account. It publishes the records COPA is legally required to release.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse the City of Chicago's public accountability portal — the search is invisible to any officer or complainant. Nothing sensitive is submitted; standard research-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "COPA is the official City of Chicago agency that investigates Chicago Police Department misconduct; its case portal is a primary/authoritative source, though older or minor cases may not all be posted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "COPA",
+      "Chicago COPA case portal"
+    ],
+    "tags": [
+      "police-accountability",
+      "chicago",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/civilian-office-of-police-accountability.md"
   },
   {
@@ -243098,51 +243167,56 @@
   },
   {
     "id": "justia-us-supreme-court-center-united-states",
-    "name": "Justia US Supreme Court Center (United States)",
-    "description": "Legal-related search engine for legal court cases and documents",
-    "url": "http://supreme.justia.com",
+    "name": "Justia US Supreme Court Center",
+    "description": "Use when you have a `name` or `employer-org` and want to check US Supreme Court case law — returns full opinions where they appear as a party, counsel, or subject.",
+    "url": "https://supreme.justia.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free full-text search and reading of US Supreme Court opinions to find where a person or organization appears as a party or is discussed.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read full opinions; no account. Justia is ad-supported with paid products elsewhere, but the Supreme Court Center is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search Justia's public case-law library, not a target — the lookup is invisible to anyone named in a case. No login; standard research-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Justia is a long-established free legal-information provider; Supreme Court opinions are reproduced from the public record. It is a secondary host — for citation-critical work, confirm against the official U.S. Reports.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "justia-blawgsearch"
     ],
+    "aliases": [
+      "Justia Supreme Court",
+      "supreme.justia.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "legal",
+      "case-law"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/justia-us-supreme-court-center-united-states.md"
   },
   {
@@ -253682,46 +253756,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/beneficial-ownership-lookup/openownership.md"
-  },
-  {
-    "id": "openownership-register",
-    "name": "OpenOwnership Register",
-    "description": "OSINT tool: OpenOwnership Register.",
-    "url": "https://register.openownership.org/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "openownership",
-      "openownership-org"
-    ],
-    "_file": "library/tools/public-records/openownership-register.md"
   },
   {
     "id": "openpayrolls-com",
@@ -276819,24 +276853,29 @@
   {
     "id": "citizendium",
     "name": "Citizendium",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
-    "url": "http://en.citizendium.org",
+    "description": "Use when you have a `name` or topic and want an expert-authored encyclopedia entry as a Wikipedia cross-check — returns articles with contributor real-name accountability.",
+    "url": "https://en.citizendium.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A secondary, real-name-authored encyclopedia to cross-reference a topic or person against Wikipedia — small and largely static, but occasionally holds an entry Wikipedia lacks.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to read; no account needed. Editing requires real-name registration, but the project is largely dormant.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading Citizendium queries only its own server — nothing reaches any target. No login to read; standard research-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real-name, expert-guided wiki encyclopedia founded as a Wikipedia alternative; its accountability model is a plus, but the project is small and largely inactive, so coverage is sparse and articles can be dated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -276845,15 +276884,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "en.citizendium.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "encyclopedia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/citizendium.md"
   },
   {
@@ -306239,42 +306282,55 @@
   },
   {
     "id": "uk-patent-search",
-    "name": "UK Patent Search",
-    "description": "UK Governments trademark, copyright, patent and intellectual property search",
+    "name": "UK Patent Search (GOV.UK / IPO)",
+    "description": "Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and filing dates.",
     "url": "https://www.gov.uk/search-for-patent",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching UK Intellectual Property Office patent records by inventor/applicant name or keyword to tie a person/company to filings.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official government search (UK IPO); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the UK IPO's public patent system, not any target — invisible to the person/company you're researching. No login; standard research-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The UK government's Intellectual Property Office — the authoritative source for UK patent records. Filing details (names, applicant addresses, dates) come straight from the register.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "UK IPO patent search",
+      "gov.uk search for patent"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "patents",
+      "intellectual-property"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/uk-patent-search.md"
   },
   {
@@ -307075,42 +307131,54 @@
   },
   {
     "id": "virgilio-search-portal-italy",
-    "name": "Virgilio Search Portal (Italy)",
-    "description": "Italy based web portal including a search engine, news, email services, and chat",
-    "url": "http://www.virgilio.it",
+    "name": "Virgilio (Italy)",
+    "description": "Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, maps, and directories.",
+    "url": "https://www.virgilio.it/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Italian-language web search, local news, and directory/maps lookups when researching people, businesses, or events in Italy.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account. Ad-supported portal operated by Italiaonline.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching Virgilio queries Italiaonline's portal (and its underlying search partner), not any target. Treat your queries as logged by an Italian ad-media company; use a research browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running mainstream Italian portal (Italiaonline). Its web search is powered by a third-party engine and its content is aggregated/directory-style — useful for Italian localization, but not an authoritative records source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "it"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "virgilio.it",
+      "Virgilio portal"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "italy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/virgilio-search-portal-italy.md"
   },
   {

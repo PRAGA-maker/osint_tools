@@ -173,7 +173,7 @@ kind: group-index
 - **`citizens-police-data-project`** (medium) — OSINT tool: Citizens Police Data Project.
 - **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
 - **`city-of-brandtford-provincial-offence-court`** (medium) — Website for City of Brantford Provincial Offences Court Office
-- **`civilian-office-of-police-accountability`** (medium) — OSINT tool: Civilian Office of Police Accountability.
+- **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
 - **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
 - **`clinicaltrials-gov`** (medium) — 433,207 research studies in 221 countries. For people who have a difficult-to-treat disease, this registry will help them learn about recent
 - **`cme-group`** (medium) — Information on trading, risk management, and more
@@ -529,7 +529,7 @@ kind: group-index
 - **`journalmap-geosearch`** (low) — Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `nam
 - **`junar`** (low) — OSINT tool: Junar.
 - **`jurn-academic-search`** (medium) — Academic-related search engine focused on arts, science, business, law, and medicine and includes millions of academic articles, chapters, a
-- **`justia-us-supreme-court-center-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`justia-us-supreme-court-center-united-states`** (medium) — Use when you have a `name` or `employer-org` and want to check US Supreme Court case law — returns full opinions where they appear as a part
 - **`justice-gov-uk`** (medium) — Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status a
 - **`kaggle`** (low) — OSINT tool: Kaggle.
 - **`kansas-restaurant-inspections`** (medium) — Use when you have a Kansas food-business `name`/`address` (or an owner name) and want its state food-safety inspection history — returns ins
@@ -734,7 +734,6 @@ kind: group-index
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
 - **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.
-- **`openownership-register`** (medium) — OSINT tool: OpenOwnership Register.
 - **`openpayrolls-com`** (medium) — OSINT tool: Openpayrolls.com.
 - **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
 - **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
