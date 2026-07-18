@@ -135,7 +135,7 @@ kind: group-index
 - **`bureau-of-justice-statistics`** (medium) — Department of Justice, Bureau of Justice Statistics website providing crime and justice data online
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
 - **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
-- **`canadian-charity-search`** (medium) — Canada Revenue Agency's searchable list of registered Canadian charities
+- **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
 - **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Legal-related search engine for locating legal representatives
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
@@ -362,7 +362,7 @@ kind: group-index
 - **`his-janes-360`** (medium) — Global defence and security intelligence and analysis site with search feature
 - **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
 - **`homepage-search-engine`** (medium) — OSINT tool: Homepage Search Engine.
-- **`hong-kong-securities-and-futures-commission`** (medium) — Hong Kong Securities & Futures Commission website
+- **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
 - **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
@@ -392,7 +392,7 @@ kind: group-index
 - **`irbis-by-espy`** (medium) — Powerful lookup and reverse search tool
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
 - **`islegitsite`** (medium) — OSINT tool: Islegitsite.
-- **`issuu`** (medium) — Digital publishing platform of over 15 million documents available for free downloading
+- **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n
 - **`itar-tass`** (low) — OSINT tool: Itar-Tass.
 - **`itlaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
 - **`ivmachiavelli-osint-team-links`** (medium) — GitHub-hosted curated list of OSINT links/tools.
@@ -518,7 +518,7 @@ kind: group-index
 - **`nerdydata-source-code-search-engine`** (medium) — Web search engine for source code, including search for keywords, HTML, JavaScript, CSS and plaintext of webpages
 - **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
 - **`neuskool`** (medium) — Personal start page featuring search services on one page, including Google, YouTube, Wikipedia, Twitter, and more.
-- **`new-zealand-law-society`** (medium) — Legal-related search engine for locating legal representives
+- **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
 - **`news-and-moods-search-australia`** (medium) — Search engine that provides keyword stats and trends along with results
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
 - **`news-map`** (low) — OSINT tool: News Map.

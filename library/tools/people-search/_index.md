@@ -79,7 +79,7 @@ kind: group-index
 - **`everypolitician-org`** (low) — Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`so
 - **`expertengine`** (high) — Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — retur
 - **`expertisefinder`** (low) — Use when your subject may be an academic and you have a `name` or field — a directory of university faculty experts returning their institut
-- **`expertpages`** (medium) — OSINT tool: ExpertPages.
+- **`expertpages`** (medium) — Use when you have a specialty or a name and want to identify/verify an expert witness — returns names, credentials, location, and employer-o
 - **`experts-com`** (medium) — Use when you have a `name` or field and want to check if someone is a listed expert witness/consultant — returns employer-org, credentials, 
 - **`family-search`** (high) — Use when you have a `name` and want the largest free genealogy archive — returns birth/marriage/death, census, immigration records with `dob
 - **`familysearch-2`** (high) — Use when you have a `name` and want genealogical records — returns birth/marriage/death records, family links (`associate`), historical `add

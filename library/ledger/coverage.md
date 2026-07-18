@@ -2,7 +2,7 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8288 total · 3156 full · 5132 stub (38% enriched)
+**Tools:** 8288 total · 3165 full · 5123 stub (38% enriched)
 
 **Strategies:** 92 total
 
@@ -10,7 +10,7 @@ _"full" = authored (has a `## When to use` body); the enrichment field is derive
 low: 3337 · medium: 3000 · high: 1951
 
 ## Tools by trust
-unverified: 3941 · community: 3283 · trusted: 1052 · personal: 6 · untrustworthy: 6
+unverified: 3935 · community: 3283 · trusted: 1058 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -29,10 +29,10 @@ unverified: 3941 · community: 3283 · trusted: 1052 · personal: 6 · untrustwo
 - `maps-geospatial-data` — 20/146
 - `messaging` — 145/196
 - `opsec-investigator-tooling` — 18/566
-- `people-search` — 225/272
+- `people-search` — 226/272
 - `phone` — 132/137
-- `public-records` — 628/1118
-- `search-engines` — 187/957
+- `public-records` — 632/1118
+- `search-engines` — 191/957
 - `social-networks` — 587/871
 - `training-ctf` — 0/12
 - `translation-language` — 12/103

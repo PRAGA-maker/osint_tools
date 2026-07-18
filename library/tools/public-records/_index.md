@@ -169,7 +169,7 @@ kind: group-index
 - **`cilexgroup-org-uk`** (high) — Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, g
 - **`cipfa-org`** (medium) — Use when you have a `name` and want to confirm UK public-finance accountancy credentials — returns whether the person is a CIPFA member/regi
 - **`citation-machine`** (medium) — Automatic citation generator for APA, MLA, Chicago, and more writing styles
-- **`citizens-police-data-project`** (medium) — OSINT tool: Citizens Police Data Project.
+- **`citizens-police-data-project`** (medium) — Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint 
 - **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
 - **`city-of-brandtford-provincial-offence-court`** (medium) — Website for City of Brantford Provincial Offences Court Office
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
@@ -688,7 +688,7 @@ kind: group-index
 - **`northdata-com`** (high) — Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addr
 - **`nsa-css`** (medium) — The NSAs Guide to Internet Research
 - **`nuans-business-name-search-canada`** (medium) — Canadadian business search engine that searches using company name
-- **`nursing-home-inspect`** (medium) — OSINT tool: Nursing Home Inspect.
+- **`nursing-home-inspect`** (medium) — Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and 
 - **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status
 - **`nypd-misconduct-complaint-database`** (medium) — Use when you have an NYPD officer `name` and want their civilian-complaint history — returns per-officer CCRB complaints, allegations, and s
 - **`nypd-officer-profile`** (medium) — OSINT tool: NYPD Officer Profile.
@@ -1043,7 +1043,7 @@ kind: group-index
 - **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.
 - **`windeed-co-za`** (high) — Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — 
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
-- **`wisconsin-registered-voter-verification`** (medium) — Wisconsin registered voter verification and search
+- **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
 - **`worcester-ma-employee-gross-pay`** (medium) — OSINT tool: Worcester MA Employee Gross Pay.
 - **`world-bank-data`** (low) — OSINT tool: World Bank Data.

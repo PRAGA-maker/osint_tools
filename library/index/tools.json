@@ -199660,37 +199660,55 @@
   {
     "id": "expertpages",
     "name": "ExpertPages",
-    "description": "OSINT tool: ExpertPages.",
-    "url": "http://expertpages.com",
+    "description": "Use when you have a specialty or a name and want to identify/verify an expert witness — returns names, credentials, location, and employer-org from an expert-witness directory.",
+    "url": "https://expertpages.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding and vetting expert witnesses / litigation consultants by specialty and location, with names, credentials, and locations.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view expert listings; experts pay for membership (the search side is free).",
+    "opsec": "passive",
+    "opsecNote": "Public directory browsing; the expert is not notified unless you contact them. Standard web logging only. Contacting an expert would expose you — browse first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running (since 1995) expert-witness directory; listings are member-submitted marketing profiles, so verify credentials independently.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "expertpages.com",
+      "Expert Pages"
+    ],
     "tags": [
-      "expert-search"
+      "people-search",
+      "expert-witness",
+      "directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/expertpages.md"
   },
   {
@@ -224664,35 +224682,57 @@
   {
     "id": "citizens-police-data-project",
     "name": "Citizens Police Data Project",
-    "description": "OSINT tool: Citizens Police Data Project.",
-    "url": "https://beta.cpdp.co/",
+    "description": "Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint history, awards, and salary.",
+    "url": "https://cpdp.co/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up Chicago Police Department officers' misconduct complaints, disciplinary outcomes, awards, and salary by name or badge.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database published by the Invisible Institute; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a public accountability database compiled from FOIA'd records; the officer is not notified. Standard web logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by the Invisible Institute from litigated/FOIA'd Chicago Police records; a well-established, court-backed accountability dataset.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "CPDP",
+      "cpdp.co",
+      "Invisible Institute police data"
+    ],
+    "tags": [
+      "public-records",
+      "police-accountability",
+      "chicago",
+      "misconduct"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/citizens-police-data-project.md"
   },
   {
@@ -251911,35 +251951,41 @@
   {
     "id": "nursing-home-inspect",
     "name": "Nursing Home Inspect",
-    "description": "OSINT tool: Nursing Home Inspect.",
+    "description": "Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and geolocation to vet or locate a care facility.",
     "url": "https://projects.propublica.org/nursing-homes/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching US nursing-home inspection reports, deficiencies, and fines by facility name or location.",
+    "selectorsIn": [
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free ProPublica public-interest database built on CMS inspection data; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a public journalism database sourced from government (CMS) records; no facility or person is notified. Standard web logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by ProPublica from official CMS/Medicare inspection data; a reputable, well-sourced public-interest resource.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "527-explorer",
       "coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k",
@@ -251949,6 +251995,19 @@
       "police-protest-videos",
       "the-nypd-files"
     ],
+    "aliases": [
+      "ProPublica Nursing Home Inspect",
+      "projects.propublica.org nursing homes"
+    ],
+    "tags": [
+      "public-records",
+      "healthcare",
+      "nursing-homes",
+      "inspections"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nursing-home-inspect.md"
   },
   {
@@ -258004,29 +258063,38 @@
   {
     "id": "public-register-online",
     "name": "Public Register Online",
-    "description": "Requesting hard copy or digital annual reports from participating companies",
+    "description": "Use when you have a company name and want its published annual reports — returns employer-org financial/annual reports to read directors, addresses, and performance.",
     "url": "https://www.annualreportservice.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "annual-reports"
     ],
-    "bestFor": "Requesting hard copy or digital annual reports from participating companies",
+    "bestFor": "Finding and requesting/downloading participating public companies' annual reports in one place.",
     "input": "Company name",
     "output": "Annual report listings with request or download links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and request annual reports; funded by participating companies/advertising rather than user fees.",
     "opsec": "passive",
-    "opsecNote": "Lookup requests go through the service's servers; no direct contact with target company.",
+    "opsecNote": "Browsing and requesting reports goes through the service; the target company is not directly contacted by you. If you request a mailed hard copy you'd supply a delivery address — use a non-attributable one, or just take the digital/download option.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing annual-report aggregation service; the reports themselves are the companies' own published filings.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -258034,11 +258102,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "annualreportservice.com",
+      "Annual Report Service"
+    ],
+    "tags": [
+      "public-records",
+      "annual-reports",
+      "company-research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/annual-reports/public-register-online.md"
   },
   {
@@ -270162,50 +270237,56 @@
   {
     "id": "wisconsin-registered-voter-verification",
     "name": "Wisconsin Registered Voter Verification",
-    "description": "Wisconsin registered voter verification and search",
+    "description": "Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/precinct (address) to corroborate residence.",
     "url": "https://myvote.wi.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a specific Wisconsin person is registered to vote and their polling place/precinct.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official MyVote Wisconsin service from the Wisconsin Elections Commission; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads the official voter file via a status-check form; the voter is not notified. You supply the subject's name and DOB/address, so it confirms a specific identity rather than browsing — only run it with a legitimate basis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Wisconsin Elections Commission (MyVote) system; authoritative for WI registration status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "wisconsin"
     ],
+    "aliases": [
+      "MyVote Wisconsin",
+      "myvote.wi.gov",
+      "WI voter lookup"
+    ],
+    "tags": [
+      "public-records",
+      "voter-registration",
+      "wisconsin"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/wisconsin-registered-voter-verification.md"
   },
   {
@@ -276624,41 +276705,57 @@
   {
     "id": "canadian-charity-search",
     "name": "Canadian Charity Search",
-    "description": "Canada Revenue Agency's searchable list of registered Canadian charities",
-    "url": "http://www.cra-arc.gc.ca/charitylists/",
+    "description": "Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trustees (associates), and financial filings.",
+    "url": "https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?request_locale=en",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Verifying a Canadian registered charity and reading its status, address, directors, and annual (T3010) financial filings.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official CRA (Canada Revenue Agency) List of Charities; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads public charity-registry data; no charity or individual is notified. Standard government-site logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Canada Revenue Agency register; authoritative for Canadian registered-charity status and filings.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "CRA List of Charities",
+      "Canada Revenue Agency charities",
+      "cra-arc.gc.ca charitylists"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "public-records",
+      "charities",
+      "canada",
+      "nonprofits"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/canadian-charity-search.md"
   },
   {
@@ -287159,24 +287256,31 @@
   {
     "id": "hong-kong-securities-and-futures-commission",
     "name": "Hong Kong Securities & Futures Commission",
-    "description": "Hong Kong Securities & Futures Commission website",
-    "url": "http://www.sfc.hk/web/EN/index.html",
+    "description": "Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any disciplinary/enforcement record.",
+    "url": "https://www.sfc.hk/en/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying whether a person or firm is licensed by Hong Kong's SFC, plus checking disciplinary/enforcement actions.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official SFC public register and enforcement listings; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a public regulatory register; the licensee is not notified. Standard web logging only. Use a clean browser for sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Hong Kong Securities and Futures Commission; authoritative for HK licensing and enforcement.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -287185,15 +287289,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "SFC Hong Kong",
+      "HK SFC public register",
+      "sfc.hk"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "public-records",
+      "financial-regulation",
+      "hong-kong",
+      "licensing"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/hong-kong-securities-and-futures-commission.md"
   },
   {
@@ -288688,24 +288800,32 @@
   {
     "id": "issuu",
     "name": "Issuu",
-    "description": "Digital publishing platform of over 15 million documents available for free downloading",
-    "url": "http://issuu.com/",
+    "description": "Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface newsletters, yearbooks, and rosters naming people.",
+    "url": "https://issuu.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Full-text searching a huge library of user-published documents (magazines, newsletters, brochures, yearbooks, reports) for mentions of a person or organization.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read publications online; downloads and publishing features may require an account or paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive searching/reading of public documents; no uploader or subject is notified. Standard web logging. Use a clean browser for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established document-publishing platform; content is user-uploaded and unvetted, so treat any document's claims as coming from its publisher, not Issuu.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -288714,15 +288834,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "issuu.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "search-engines",
+      "documents",
+      "publications",
+      "full-text"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/issuu.md"
   },
   {
@@ -294296,24 +294422,31 @@
   {
     "id": "new-zealand-law-society",
     "name": "New Zealand Law Society",
-    "description": "Legal-related search engine for locating legal representives",
+    "description": "Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the official register of lawyers.",
     "url": "https://www.lawsociety.org.nz/for-the-community/search-register-of-lawyers",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying a New Zealand lawyer's practising status, firm, and location via the official Law Society register.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official register search from the New Zealand Law Society; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a public professional register; the lawyer is not notified. Standard web logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official New Zealand Law Society register of lawyers; authoritative for NZ practising status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -294322,15 +294455,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "NZ Law Society register",
+      "Register of Lawyers New Zealand",
+      "lawsociety.org.nz"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "public-records",
+      "lawyers",
+      "new-zealand",
+      "professional-register"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/new-zealand-law-society.md"
   },
   {
