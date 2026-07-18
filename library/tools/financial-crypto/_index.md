@@ -85,7 +85,7 @@ kind: group-index
 - **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
 - **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
-- **`insolvency-govt-nz`** (medium) — OSINT tool: insolvency.govt.nz.
+- **`insolvency-govt-nz`** (medium) — Use when you have a `name` in New Zealand and want to check for insolvency — returns bankruptcies, No Asset Procedures, and liquidations wit
 - **`insolvencydirect-bis-gov-uk`** (medium) — OSINT tool: insolvencydirect.bis.gov.uk.
 - **`jahs-ie`** (medium) — OSINT tool: jahs.ie.
 - **`learnmeabitcoin-com`** (low) — Use when you have a `crypto-wallet` (Bitcoin address or txid) and want to inspect its raw on-chain data and understand how to read it — retu

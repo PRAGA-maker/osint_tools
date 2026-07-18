@@ -616,7 +616,7 @@ kind: group-index
 - **`ministry-of-corporate-affairs-india`** (medium) — Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporat
 - **`minnesota-registered-voter-verification`** (medium) — Use when you have a name plus DOB and want to confirm a Minnesota voter registration — returns registration status and polling-place/precinc
 - **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 
-- **`missouri-registered-voter-verification`** (medium) — Missouri registered voter verification and search
+- **`missouri-registered-voter-verification`** (medium) — Use when you have a `name` and `dob` for a Missouri subject and want to confirm they're a registered voter — returns registration status, co
 - **`missouri`** (high) — Use when you have a `name` and want to check whether a subject is in Missouri Department of Corrections custody or supervision — returns off
 - **`mmc-gov-my`** (high) — Use when you have a doctor's `name` in Malaysia and want to verify registration — returns their registration number, qualifying institution,
 - **`moci-gov-kw`** (high) — Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying busi

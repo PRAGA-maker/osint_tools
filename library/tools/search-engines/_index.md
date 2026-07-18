@@ -103,7 +103,7 @@ kind: group-index
 - **`bespacific`** (medium) — Blog and searchable database of over 31,000 research updates relating to finance, government, privacy, security, legislation and more
 - **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
 - **`better-chrome-web-store-search-engine`** (medium) — OSINT tool: Better Chrome Web Store Search Engine.
-- **`bevigil`** (medium) — OSINT tool: BeVigil.
+- **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`bibleserver`** (medium) — Website that offers Christian scripture search services, invluding Bible translations in 21 languages
 - **`biblio`** (medium) — Website offering nearly 100 million used books for sale from around the world
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.

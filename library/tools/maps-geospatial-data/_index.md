@@ -102,7 +102,6 @@ kind: group-index
 - **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
-- **`oalley`** (medium) — OSINT tool: OALLEY.
 - **`one-network`** (medium) — OSINT tool: one.network.
 - **`ontario-givesendgo-donors`** (medium) — OSINT tool: Ontario GiveSendGo Donors.
 - **`open-source-munitions-portal`** (low) — A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use a
