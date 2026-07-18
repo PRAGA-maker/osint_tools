@@ -74,7 +74,7 @@ kind: group-index
 - **`community-screwfix-com`** (medium) — OSINT tool: community.screwfix.com.
 - **`computerworld`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computing`** (medium) — News and analysis for UK executives
-- **`context`** (medium) — OSINT tool: Context.
+- **`context`** (medium) — Use when you have a `username` or keyword and want to find pastes/leaked text shared on ctxt.io — returns email, username and password.
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
 - **`council-on-foreign-relations`** (medium) — Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police
@@ -103,7 +103,7 @@ kind: group-index
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`eweek-technology-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`expedia`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`extremetech`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
 - **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
 - **`feedburner`** (medium) — RSS feed management website
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds

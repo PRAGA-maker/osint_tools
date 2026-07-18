@@ -800,7 +800,7 @@ kind: group-index
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
 - **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
-- **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
+- **`youtube-dl`** (medium) — Use when you have a `social-profile` or video URL and want to download the media and its full metadata for offline analysis — returns metada
 - **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos
 - **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
 - **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload

@@ -255,7 +255,7 @@ kind: group-index
 - **`dauphin-county-pa-2017-compensation`** (medium) — OSINT tool: Dauphin County PA 2017 Compensation.
 - **`dbpedia`** (low) — OSINT tool: DBPedia.
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
-- **`deepdyve`** (medium) — Database for scientific and scholarly research including over 18 million journals and articles
+- **`deepdyve`** (medium) — Use when you have a `name` or `employer-org` and want to find someone's academic publications and co-authors — returns employer-org, associa
 - **`delaware`** (high) — Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning cust
 - **`denmark`** (high) — Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business
 - **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re

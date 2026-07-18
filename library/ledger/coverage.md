@@ -2,21 +2,21 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8272 total · 3225 full · 5047 stub (38% enriched)
+**Tools:** 8269 total · 3232 full · 5037 stub (39% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3346 · medium: 2974 · high: 1952
+low: 3346 · medium: 2971 · high: 1952
 
 ## Tools by trust
-unverified: 3891 · community: 3291 · trusted: 1078 · personal: 6 · untrustworthy: 6
+unverified: 3888 · community: 3289 · trusted: 1080 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/456
-- `archives-cache` — 32/140
-- `communities-forums` — 52/423
+- `archives-cache` — 32/139
+- `communities-forums` — 54/423
 - `dark-web` — 9/118
 - `dating-classifieds` — 37/115
 - `documents-metadata` — 19/316
@@ -27,13 +27,13 @@ unverified: 3891 · community: 3291 · trusted: 1078 · personal: 6 · untrustwo
 - `geolocation` — 207/352
 - `image-video-face` — 385/477
 - `maps-geospatial-data` — 22/145
-- `messaging` — 150/196
+- `messaging` — 150/194
 - `opsec-investigator-tooling` — 20/566
 - `people-search` — 227/272
 - `phone` — 132/137
-- `public-records` — 640/1116
-- `search-engines` — 199/953
-- `social-networks` — 597/867
+- `public-records` — 641/1116
+- `search-engines` — 202/953
+- `social-networks` — 598/867
 - `training-ctf` — 0/12
 - `translation-language` — 12/103
 - `transportation` — 55/231
@@ -54,10 +54,10 @@ unverified: 3891 · community: 3291 · trusted: 1078 · personal: 6 · untrustwo
 - `library/tools/people-search` — 262 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 212 leaves
-- `library/tools/messaging` — 181 leaves
+- `library/tools/messaging` — 179 leaves
 - `library/tools/maps-geospatial-data` — 145 leaves
 - `library/tools/phone` — 139 leaves
-- `library/tools/archives-cache` — 122 leaves
+- `library/tools/archives-cache` — 121 leaves
 - `library/tools/dating-classifieds` — 115 leaves
 - `library/tools/financial-crypto` — 109 leaves
 - `library/tools/dark-web` — 107 leaves

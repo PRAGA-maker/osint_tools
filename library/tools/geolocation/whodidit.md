@@ -33,6 +33,9 @@ registration: false
 relatedTools:
 - openstreetmap
 - openstreetmap-overpass-turbo-taginfo-database
+- open-street-map
+- openstreetmap-2
+- openstreetmap-nominatim
 aliases:
 - WhoDidIt OSM Changeset Analyzer
 - whodidit

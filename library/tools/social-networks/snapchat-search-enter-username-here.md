@@ -31,6 +31,10 @@ registration: false
 relatedTools:
 - namechk
 - sherlock
+- google-maps-update-alerts
+- lullar-com-3-appspot-com
+- military-grid-reference-system-coordinates
+- rss-vk-to-rss
 aliases:
 - Snapchat Snapcode lookup
 - feelinsonice snapcode

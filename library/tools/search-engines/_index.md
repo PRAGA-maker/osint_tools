@@ -285,7 +285,7 @@ kind: group-index
 - **`freewareweb`** (medium) — FTP file search engine
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
-- **`galaxy-search-directory`** (medium) — Surface web search directory covering worldwide results
+- **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
 - **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
@@ -843,7 +843,7 @@ kind: group-index
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
 - **`wikimedia-meta-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
-- **`wikiquote`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on q
+- **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a
 - **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`wikishire-united-kingdom`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of 
 - **`wikisource`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
@@ -859,7 +859,7 @@ kind: group-index
 - **`woboq-code-browser`** (medium) — Code search engine
 - **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.
 - **`word-tracker`** (low) — OSINT tool: Word Tracker.
-- **`wordpress-com`** (medium) — OSINT tool: WordPress.com.
+- **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
 - **`wordpress-custom-search`** (low) — OSINT tool: WordPress Custom Search.
 - **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
