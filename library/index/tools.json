@@ -47517,42 +47517,50 @@
   {
     "id": "fanslist-com",
     "name": "fanslist.com",
-    "description": "OSINT tool: fanslist.com.",
+    "description": "Use when you have a `username` or `name` and want to find a matching OnlyFans creator profile — returns the creator's `social-profile` and linked handles.",
     "url": "https://fanslist.com/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a large index of OnlyFans creators by handle/name to locate a profile and its stats.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse; the site aggregates public OnlyFans profile data (1.2m+ indexed accounts).",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a third-party aggregator, not OnlyFans, so the creator is not notified. The site operator sees your search terms. It indexes only public profile metadata; do not treat presence here as anything beyond a public account existing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent aggregator, explicitly not affiliated with OnlyFans; indexes public data and its coverage/accuracy is unverified against the source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FansList"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "creator-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/fanslist-com.md"
   },
   {
@@ -95110,31 +95118,32 @@
   {
     "id": "whatismyipaddress-blacklist-checker",
     "name": "WhatIsMyIPAddress Blacklist Checker",
-    "description": "Search tool that identifies if an IP addressis on an anti-spam blacklist",
+    "description": "Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation verdict per blacklist.",
     "url": "http://whatismyipaddress.com/blacklist-check",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly checking an IP or domain against dozens of DNS blacklists in one query.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query WhatIsMyIPAddress's servers, which in turn query public DNSBLs; the owner of the checked IP/domain is not notified. Your own IP is visible to the service. Do not enter infrastructure you are not authorized to investigate if that itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Long-running consumer IP-tools site; it aggregates results from many third-party DNSBLs, so accuracy depends on those upstream lists, not the site itself.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -95142,19 +95151,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "whatismyipaddress",
       "whatismyipaddress-com"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis",
+      "blacklist"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whatismyipaddress-blacklist-checker.md"
   },
   {
@@ -113869,44 +113878,56 @@
   {
     "id": "etherscan-nft-tracker",
     "name": "Etherscan NFT Tracker",
-    "description": "Ethereum NFT transaction tracking and collection analysis",
+    "description": "Use when you have a `crypto-wallet` address or NFT contract and want its Ethereum NFT transfers and holdings — returns counterparty `crypto-wallet` addresses and collection activity.",
     "url": "https://etherscan.io/nft",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "nft-provenance"
     ],
-    "bestFor": "Ethereum NFT transaction tracking and collection analysis",
-    "input": "NFT contract address, collection name, or transaction hash",
-    "output": "NFT transaction history, collection floor prices, holder distribution, trading volume, minting data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Tracing NFT transfers, holdings, and mint/trade history for an Ethereum address or collection.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse in the web explorer; programmatic access needs a free Etherscan API key (rate-limited free tier).",
     "opsec": "passive",
-    "opsecNote": "Subset of Etherscan; same passive analysis of public Ethereum NFT data.",
+    "opsecNote": "Passive — you read the public Ethereum ledger via Etherscan; the wallet owner is not notified and on-chain reads leave no trace on the target. Etherscan sees your web/API requests; use a clean session for sensitive investigations.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Etherscan explorer view; the underlying data is the public Ethereum blockchain, so it is authoritative for on-chain facts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "etherscan",
       "etherscan-io"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Etherscan NFT",
+      "Etherscan NFT transfers"
+    ],
+    "tags": [
+      "ethereum",
+      "nft",
+      "blockchain",
+      "crypto"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/nft-provenance/etherscan-nft-tracker.md"
   },
   {
@@ -117787,42 +117808,49 @@
   {
     "id": "average-gamma-dose-rate-map",
     "name": "Average Gamma Dose Rate Map",
-    "description": "Shows measurements of environmental radioactivity in the form of gamma dose rate for the last 24 hours. These measurements originate from some 5500 stations in 39 countries",
+    "description": "Use when you have a `geolocation` in Europe and want current environmental radiation readings for that area — returns station-level gamma dose-rate `geolocation` data.",
     "url": "https://eea.government.bg/eea/main-site/bg/output/daily/bulletin-en.html",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Reading near-real-time environmental gamma radiation levels by monitoring station across Europe.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government/EURDEP-fed environmental bulletin; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read a public government environmental dataset; nothing about your subject is submitted or logged against them. It reveals nothing about people, only ambient radiation by station.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Published by the Bulgarian Executive Environment Agency (government source) drawing on a ~5500-station European network; authoritative for its niche but narrow in scope.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bulgarian gamma dose rate bulletin",
+      "environmental radioactivity map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "Urban and industrial infrastructure",
+      "environmental-data"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/average-gamma-dose-rate-map.md"
   },
   {
@@ -157910,7 +157938,10 @@
       "baidu-image-search",
       "baidu-maps",
       "baidu-images",
-      "baiduknows-search-engine-china"
+      "baiduknows-search-engine-china",
+      "baidu-image-search-2",
+      "baidu-translate",
+      "baike-baidu-chinese-language"
     ],
     "aliases": [
       "Baidu Maps",
@@ -166524,48 +166555,60 @@
   {
     "id": "informer-telegram",
     "name": "informer (Telegram)",
-    "description": "Python library to collect Telegram channel and user information.",
+    "description": "Use when you have a Telegram `username`/channel `social-profile` and want to monitor and archive its members and messages — returns participant `username`s and posted `social-profile` links.",
     "url": "https://github.com/paulpierre/informer",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Scraping members and messages from Telegram channels",
+    "bestFor": "Bulk-monitoring 500+ Telegram channels from real (burner) accounts and archiving members/messages to a database.",
     "selectorsIn": [
       "username",
       "social-profile"
     ],
     "selectorsOut": [
       "username",
-      "phone",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Open-source (MIT) Python tool; free to run. You supply your own Telegram accounts and hosting/DB.",
+    "opsec": "active",
+    "opsecNote": "This is highly active. It logs into Telegram as a *real user account* (not a bot) via Telethon and joins/reads channels — Telegram can flag and ban the account, and channel admins may see the join. Use dedicated burner numbers/accounts, never your own, and route through a clean IP. Mass-scraping violates Telegram ToS and may be unlawful in some jurisdictions.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Open-source proof-of-concept by developer Paul Pierre; still receiving dependency/security updates as of late 2025 but self-described as buggy/POC.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "telegram-scraper",
+      "telepathy",
+      "telegago"
+    ],
+    "aliases": [
+      "paulpierre/informer",
+      "Telegram Informer"
+    ],
     "tags": [
       "telegram",
       "scraping",
       "python"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/informer-telegram.md"
   },
   {
@@ -205316,51 +205359,59 @@
   {
     "id": "people-search-results-vk",
     "name": "People search results | VK",
-    "description": "OSINT tool: People search results | VK.",
+    "description": "Use when you have a `name` and want to find matching VKontakte profiles — returns candidate `social-profile`s and `username`s to pivot on.",
     "url": "https://vk.com/people",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Name-based people search across VKontakte, the dominant social network in Russia and the post-Soviet space.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; a logged-in VK account is needed to run the full people search and apply filters.",
+    "opsec": "active",
+    "opsecNote": "Searching requires a logged-in VK account, and VK is a Russian platform that logs account activity. Use a dedicated sock-puppet VK account and a clean IP — never your real account. Viewing profiles does not usually notify the target, but do not send friend requests or messages during recon.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "First-party VKontakte people directory/search — the data is the platform's own, so it is authoritative for what users have posted (though users self-report).",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vk-people-search",
+      "vk-community-search",
+      "vk-com",
+      "get-user-info",
+      "community-search"
+    ],
+    "aliases": [
+      "VK People",
+      "VKontakte people search"
+    ],
     "tags": [
-      "russia"
+      "russia",
+      "social-networks",
+      "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "community-search",
-      "get-user-info",
-      "vk",
-      "vk-com",
-      "vk-com-2",
-      "vk-community-search",
-      "vk-people-search"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/people-search-results-vk.md"
   },
   {
@@ -221179,30 +221230,31 @@
   {
     "id": "biznar-business-search-engines",
     "name": "Biznar (Business Search Engines)",
-    "description": "Specialty search engine targeting businesses",
+    "description": "Use when you have a `name` or `employer-org` and want business/deep-web sources searched in parallel — returns `employer-org` context and `social-profile`/document links.",
     "url": "https://biznar.com/biznar/desktop/en/search.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "One-query federated search across many business/deep-web sources that general engines miss.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, browser-based federated search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — your query is broadcast in real time to many third-party business/reference databases via Biznar's federated backend, so those upstream sources (and Biznar's operator AMPLYFI) see your search terms. Use a clean session and avoid searching identifying strings you don't want logged upstream.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by Deep Web Technologies (acquired by AMPLYFI in 2020); a real, long-running federated search product, but result quality depends on the third-party sources it fronts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -221211,7 +221263,9 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "biznar"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
@@ -221219,11 +221273,8 @@
       "deep-web-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "biznar"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/biznar-business-search-engines.md"
   },
   {
@@ -222787,7 +222838,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "_file": "library/tools/public-records/canadian-business-research.md"
   },
@@ -222870,7 +222922,12 @@
     "relatedTools": [
       "gov-data-canada",
       "federal-corporation-search-canada",
-      "canadian-business-research"
+      "canadian-business-research",
+      "canadian-department-of-finance",
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database",
+      "completed-access-to-information-requests",
+      "government-of-canada-open-data"
     ],
     "aliases": [
       "CID",
@@ -223007,7 +223064,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "aliases": [
       "CIPO",
@@ -223221,7 +223279,8 @@
       "completed-access-to-information-requests",
       "federal-corporation-search-canada",
       "gov-data-canada",
-      "government-of-canada-open-data"
+      "government-of-canada-open-data",
+      "canadian-importers-database"
     ],
     "aliases": [
       "CIPO Trademarks",
@@ -225752,7 +225811,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "_file": "library/tools/public-records/completed-access-to-information-requests.md"
   },
@@ -232377,7 +232437,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "_file": "library/tools/public-records/federal-corporation-search-canada.md"
   },
@@ -236699,7 +236760,10 @@
       "federal-corporation-search-canada",
       "government-of-canada-open-data",
       "completed-access-to-information-requests",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-department-of-finance",
+      "canadian-importers-database",
+      "canadian-intellectual-property-office"
     ],
     "aliases": [
       "open.canada.ca",
@@ -237985,7 +238049,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "canadian-intellectual-property-office",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "_file": "library/tools/public-records/government-of-canada-open-data.md"
   },
@@ -267130,35 +267195,53 @@
   {
     "id": "uky-salaries-2019",
     "name": "UKY Salaries 2019",
-    "description": "OSINT tool: UKY Salaries 2019.",
+    "description": "Use when you have a `name` and want to confirm someone was a University of Kentucky employee in 2019 — returns their `employer-org` unit and salary.",
     "url": "https://c0ect130.caspio.com/dp/c8521000eca729c2125e46c487fd",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming a person's University of Kentucky employment, department, and salary as of September 2019.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public-records datapage; no account or payment required (a CAPTCHA gates access).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive lookup against a static, publicly published salary dataset — the subject is not notified. The query goes to a third-party Caspio-hosted page, so the host sees your search terms; use a clean browser session if that matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A curated Caspio datapage circulated via OSINT resource lists (osint4all); it reflects a real UK public salary disclosure but is a third-party republication, not the university's official portal.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "University of Kentucky Salaries 2019",
+      "UK employee salary database 2019"
+    ],
+    "tags": [
+      "public-records",
+      "salaries",
+      "employment",
+      "kentucky"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/uky-salaries-2019.md"
   },
   {
@@ -276203,7 +276286,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
-      "canadian-trademarks-database"
+      "canadian-trademarks-database",
+      "canadian-importers-database"
     ],
     "_file": "library/tools/search-engines/canadian-department-of-finance.md"
   },
@@ -279545,35 +279629,49 @@
   {
     "id": "dog-bites-search-engine",
     "name": "Dog Bites Search Engine",
-    "description": "OSINT tool: Dog Bites Search Engine.",
+    "description": "Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` leads from case coverage.",
     "url": "https://cse.google.com/cse?cx=partner-pub-8216357153102971:3267723418",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Focused Google Custom Search over dog-bite legal (dogbitelaw.com) and related news content.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable (Custom) Search Engine; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — this is a Google Custom Search over public web content, so the subject is not notified. Google logs the query as with any search; use a clean session for sensitive terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google CSE seeded around dogbitelaw.com; its index scope is defined by an unknown operator and coverage can drift or break over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Dog Bite Law CSE"
+    ],
+    "tags": [
+      "search-engines",
+      "custom-search",
+      "legal"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dog-bites-search-engine.md"
   },
   {
@@ -291149,46 +291247,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/live-traffic-cameras-in-europe.md"
-  },
-  {
-    "id": "looksmart-search-engine-united-kingdom",
-    "name": "LookSmart Search Engine (United Kingdom)",
-    "description": "Surface web search engine covering worldwide results",
-    "url": "http://www.looksmart.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/looksmart-search-engine-united-kingdom.md"
   },
   {
     "id": "loopnet",
@@ -318364,7 +318422,10 @@
       "intelligence-x",
       "intelligence-x-person-tools",
       "intelligencex",
-      "intelx-io"
+      "intelx-io",
+      "intelligence-x-2",
+      "intelligence-x-telegram-search",
+      "intelligencex-linkedin-search"
     ],
     "aliases": [
       "IntelX Facebook tools",

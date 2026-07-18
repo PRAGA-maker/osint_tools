@@ -37,6 +37,7 @@ relatedTools:
 - government-of-canada-open-data
 - canadian-intellectual-property-office
 - canadian-trademarks-database
+- canadian-importers-database
 ---
 
 # Completed Access to Information Requests

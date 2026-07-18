@@ -74,7 +74,7 @@ kind: group-index
 - **`groupio`** (high) — Use when you have a topic, tag, or language and want to find public WhatsApp groups a subject may belong to — returns group listings with me
 - **`himerasearch`** (high) — Use when you have a `phone`, `name`, `email` or `vehicle-plate` and want a Russian-market data-broker bot to return aggregated identity, con
 - **`imagston`** (medium) — Use when you have a `name`/`username` and want to find the subject's Mastodon accounts across servers — returns matching profiles with avata
-- **`informer-telegram`** (medium) — Python library to collect Telegram channel and user information.
+- **`informer-telegram`** (medium) — Use when you have a Telegram `username`/channel `social-profile` and want to monitor and archive its members and messages — returns particip
 - **`instaanonym`** (high) — Use when you have an Instagram `username` and want to view that account's stories/profile media anonymously (without your account appearing 
 - **`instabot`** (high) — Use when you have a public Instagram post/profile URL and want the raw media inside Telegram — returns the downloaded photos/videos as files
 - **`instances-social`** (medium) — Use when you need to enumerate or pick Mastodon/fediverse servers — returns a searchable list of instances (`domain`s) with size, topic and 

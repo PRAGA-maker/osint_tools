@@ -37,6 +37,9 @@ relatedTools:
 - baidu-maps
 - baidu-images
 - baiduknows-search-engine-china
+- baidu-image-search-2
+- baidu-translate
+- baike-baidu-chinese-language
 aliases:
 - Baidu Maps
 - 百度地图

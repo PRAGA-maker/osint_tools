@@ -35,6 +35,9 @@ relatedTools:
 - intelligence-x-person-tools
 - intelligencex
 - intelx-io
+- intelligence-x-2
+- intelligence-x-telegram-search
+- intelligencex-linkedin-search
 aliases:
 - IntelX Facebook tools
 - Facebook ID search

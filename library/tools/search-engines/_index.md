@@ -215,7 +215,7 @@ kind: group-index
 - **`ditto-fashion-search-engine`** (medium) — E-commere website for eyewear, including virtual try-on
 - **`document-search`** (low) — OSINT tool: Document Search.
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
-- **`dog-bites-search-engine`** (medium) — OSINT tool: Dog Bites Search Engine.
+- **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`dorkeye`** (low) — OSINT tool: DorkEye.
 - **`dorkgenius`** (low) — OSINT tool: DorkGenius.
@@ -462,7 +462,6 @@ kind: group-index
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Real-time monitoring of Europe’s 5,481 live traffic cameras
-- **`looksmart-search-engine-united-kingdom`** (medium) — Surface web search engine covering worldwide results
 - **`loopnet`** (medium) — Commercial real estate listing and research site
 - **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results

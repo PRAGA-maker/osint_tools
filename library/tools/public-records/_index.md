@@ -108,7 +108,7 @@ kind: group-index
 - **`binlist`** (low) — OSINT tool: Binlist.
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
 - **`bizeurope`** (medium) — OSINT tool: Bizeurope.
-- **`biznar-business-search-engines`** (medium) — Specialty search engine targeting businesses
+- **`biznar-business-search-engines`** (medium) — Use when you have a `name` or `employer-org` and want business/deep-web sources searched in parallel — returns `employer-org` context and `s
 - **`bizportal-gov-za`** (high) — Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and direc
 - **`bizwiki-business-wiki-search-united-states`** (medium) — Business-related search engine that searches using company name and location
 - **`blockint-nl`** (high) — Use when you have a company or person `name` and want to trace ultimate beneficial owners (UBOs) across EU corporate registers — returns a c
@@ -996,7 +996,7 @@ kind: group-index
 - **`ukbmd-org-uk`** (high) — Use when you have a `name` and want UK births/marriages/deaths records — a portal routing you to local transcribed civil-registration indexe
 - **`ukrlp-co-uk`** (low) — Use when you have a training/education provider `name` or UKPRN and want its official registration — returns `employer-org`, `address`, cont
 - **`uksocialhousing-com`** (medium) — Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in 
-- **`uky-salaries-2019`** (medium) — OSINT tool: UKY Salaries 2019.
+- **`uky-salaries-2019`** (medium) — Use when you have a `name` and want to confirm someone was a University of Kentucky employee in 2019 — returns their `employer-org` unit and
 - **`un-comtrade-database`** (low) — OSINT tool: UN COMTRADE Database.
 - **`un-data`** (low) — OSINT tool: UN Data.
 - **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.

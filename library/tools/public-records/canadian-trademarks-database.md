@@ -41,6 +41,7 @@ relatedTools:
 - federal-corporation-search-canada
 - gov-data-canada
 - government-of-canada-open-data
+- canadian-importers-database
 aliases:
 - CIPO Trademarks
 - Canadian Trademarks Database

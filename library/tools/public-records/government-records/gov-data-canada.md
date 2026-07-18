@@ -37,6 +37,9 @@ relatedTools:
 - government-of-canada-open-data
 - completed-access-to-information-requests
 - canadian-trademarks-database
+- canadian-department-of-finance
+- canadian-importers-database
+- canadian-intellectual-property-office
 aliases:
 - open.canada.ca
 - Government of Canada Open Data

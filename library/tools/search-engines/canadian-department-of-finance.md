@@ -41,6 +41,7 @@ relatedTools:
 - government-of-canada-open-data
 - canadian-intellectual-property-office
 - canadian-trademarks-database
+- canadian-importers-database
 ---
 
 # Canadian Department of Finance

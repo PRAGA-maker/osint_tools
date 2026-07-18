@@ -539,7 +539,7 @@ kind: group-index
 - **`well-known-dev`** (medium) — OSINT tool: well-known.dev.
 - **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
-- **`whatismyipaddress-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
 - **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.
 - **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
 - **`whois-arin-online`** (low) — OSINT tool: Whois Arin Online.

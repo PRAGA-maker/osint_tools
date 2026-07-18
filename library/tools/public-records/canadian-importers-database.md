@@ -32,6 +32,11 @@ relatedTools:
 - gov-data-canada
 - federal-corporation-search-canada
 - canadian-business-research
+- canadian-department-of-finance
+- canadian-intellectual-property-office
+- canadian-trademarks-database
+- completed-access-to-information-requests
+- government-of-canada-open-data
 aliases:
 - CID
 - Canadian Importers Database

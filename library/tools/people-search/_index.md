@@ -183,7 +183,7 @@ kind: group-index
 - **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat
 - **`people-search-2`** (high) — Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives
 - **`people-search-engine`** (high) — Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links a
-- **`people-search-results-vk`** (medium) — OSINT tool: People search results | VK.
+- **`people-search-results-vk`** (high) — Use when you have a `name` and want to find matching VKontakte profiles — returns candidate `social-profile`s and `username`s to pivot on.
 - **`people-search-tool`** (high) — Use when you have a `name`, `username`, `email`, or `phone` and want ready-made search-engine queries across Google/Bing/Yandex/Baidu — retu
 - **`people-search`** (high) — Use when you have a `name` and want a curated jump-off directory of people-search engines to run it through — returns links to address, phon
 - **`peoplebyname-reverse-phone-lookup`** (high) — Use when you have a `phone` (or a `name`) and want the owner's name, address, age, and relatives for the US/Canada — returns contact and hou

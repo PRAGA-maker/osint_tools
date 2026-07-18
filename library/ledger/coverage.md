@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8300 total · 3080 full · 5220 stub (37% enriched)
+**Tools:** 8299 total · 3089 full · 5210 stub (37% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3322 · medium: 3030 · high: 1948
+low: 3324 · medium: 3026 · high: 1949
 
 ## Tools by trust
-unverified: 4012 · community: 3253 · trusted: 1023 · personal: 6 · untrustworthy: 6
+unverified: 4004 · community: 3258 · trusted: 1025 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -18,21 +18,21 @@ unverified: 4012 · community: 3253 · trusted: 1023 · personal: 6 · untrustwo
 - `archives-cache` — 28/140
 - `communities-forums` — 50/423
 - `dark-web` — 7/119
-- `dating-classifieds` — 32/116
+- `dating-classifieds` — 33/116
 - `documents-metadata` — 19/317
-- `domains-ip-infrastructure` — 44/765
+- `domains-ip-infrastructure` — 45/765
 - `email` — 242/246
 - `evidence-capture` — 3/32
-- `financial-crypto` — 22/131
-- `geolocation` — 197/352
+- `financial-crypto` — 23/131
+- `geolocation` — 198/352
 - `image-video-face` — 380/479
 - `maps-geospatial-data` — 18/146
-- `messaging` — 142/196
+- `messaging` — 143/196
 - `opsec-investigator-tooling` — 16/566
-- `people-search` — 223/272
+- `people-search` — 224/272
 - `phone` — 132/137
-- `public-records` — 608/1120
-- `search-engines` — 179/962
+- `public-records` — 610/1120
+- `search-engines` — 180/961
 - `social-networks` — 579/873
 - `training-ctf` — 0/12
 - `translation-language` — 9/103
@@ -42,7 +42,7 @@ unverified: 4012 · community: 3253 · trusted: 1023 · personal: 6 · untrustwo
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1057 leaves
-- `library/tools/search-engines` — 894 leaves
+- `library/tools/search-engines` — 893 leaves
 - `library/tools/social-networks` — 844 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 522 leaves
