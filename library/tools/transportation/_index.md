@@ -23,7 +23,6 @@ kind: group-index
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
 - **`alamo-rental-receipts`** (medium) — OSINT tool: Alamo Rental Receipts.
-- **`all-vehicle-data`** (medium) — OSINT tool: All Vehicle Data.
 - **`american-association-of-motor-vehicle-administrators`** (medium) — Website for the American Association of Motor Vehicle Administrators
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
 - **`ancapa-sciences-intelligence-analysis`** (medium) — Company specializing in analysis, education, and training for both the government and private industries

@@ -68,7 +68,6 @@ kind: group-index
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
 - **`all-net-tools-toolbox-domain-information`** (medium) — Tool that identifies the available registration information for a website or domain name
-- **`all-net-tools-toolbox-traceroute`** (medium) — Tool that identifies the traceroute path of an IP address
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
 - **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
@@ -355,7 +354,6 @@ kind: group-index
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
 - **`online-domain-tools-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
-- **`onomae-server-japan`** (medium) — Japanese service provider for registering websites and domain addresses
 - **`ookla-speedtest`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
 - **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses

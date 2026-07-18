@@ -28502,51 +28502,6 @@
     "_file": "library/tools/communities-forums/forums-overclockers-co-uk.md"
   },
   {
-    "id": "forums-plentyoffish-com",
-    "name": "forums.plentyoffish.com",
-    "description": "OSINT tool: forums.plentyoffish.com.",
-    "url": "https://forums.plentyoffish.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "plentyoffish-online-dating"
-    ],
-    "_file": "library/tools/communities-forums/forums-plentyoffish-com.md"
-  },
-  {
     "id": "fox-news-united-states",
     "name": "Fox News (United States)",
     "description": "Searchable website for a major television network covering global events and having large reader/fan base",
@@ -65219,57 +65174,6 @@
     "_file": "library/tools/domains-ip-infrastructure/all-net-tools-toolbox-domain-information.md"
   },
   {
-    "id": "all-net-tools-toolbox-traceroute",
-    "name": "All Net Tools Toolbox Traceroute",
-    "description": "Tool that identifies the traceroute path of an IP address",
-    "url": "http://all-nettools.com/toolbox/traceroute.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "all-net-tool",
-      "all-net-tools-toolbox-blacklist-checker",
-      "all-net-tools-toolbox-domain-information"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/all-net-tools-toolbox-traceroute.md"
-  },
-  {
     "id": "alojate-mexico",
     "name": "Alojate (Mexico)",
     "description": "Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attribution and an abuse contact.",
@@ -83534,52 +83438,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/online-port-scanner.md"
-  },
-  {
-    "id": "onomae-server-japan",
-    "name": "Onomae Server (Japan)",
-    "description": "Japanese service provider for registering websites and domain addresses",
-    "url": "http://www.onamae-server.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/onomae-server-japan.md"
   },
   {
     "id": "onyphe",
@@ -137341,44 +137199,54 @@
   },
   {
     "id": "duke-reporters-lab",
-    "name": "Duke Reporters' Lab",
-    "description": "Finding and benchmarking fact-checking organizations worldwide",
+    "name": "Duke Reporters' Lab Fact-Checking Database",
+    "description": "Use when you have a claim, story or region and want a vetted fact-checking outlet to consult — returns a searchable global map/list of active fact-checking organizations by country.",
     "url": "https://reporterslab.org/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fact-checking-tools"
     ],
-    "bestFor": "Finding and benchmarking fact-checking organizations worldwide",
-    "input": "Research queries on fact-checking organizations and projects",
-    "output": "Directories, datasets, and reports on fact-checking initiatives",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a reputable fact-checking organization in a given country to verify a claim or media item.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free academic resource from Duke University's Sanford School; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Read-only research portal with standard website analytics.",
+    "opsecNote": "Browsing the fact-checker directory is passive and anonymous; you are reading a public database of organizations, not querying anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Duke Reporters' Lab, a journalism research center at Duke University; its fact-checking census is a widely-cited authoritative directory.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "fact-checking"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Reporters' Lab",
+      "Duke fact-checking database",
+      "Duke Reporters Lab"
+    ],
+    "tags": [
+      "fact-checking",
+      "verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-checking-tools/duke-reporters-lab.md"
   },
   {
@@ -157409,42 +157277,52 @@
   {
     "id": "arcgis-online",
     "name": "ArcGIS Online",
-    "description": "OSINT tool: ArcGIS Online.",
+    "description": "Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial imagery, parcel/admin layers and community-published maps.",
     "url": "https://www.arcgis.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Exploring public web maps, imagery and open GIS layers for a location or area.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free ArcGIS public account lets you view/search public maps, use the map viewer and access imagery; organizational/analysis features and private content require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Viewing and searching public web maps is passive; the target is not involved. A free account is optional for viewing public content — if you create one, use a sock-puppet identity, and avoid publishing anything that could be attributed to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Esri's official platform; base imagery and authoritative layers are reliable, but user-published community maps vary in accuracy and provenance.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ArcGIS",
+      "arcgis.com",
+      "Esri ArcGIS Online"
+    ],
     "tags": [
-      "maps"
+      "maps",
+      "gis",
+      "geospatial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/arcgis-online.md"
   },
   {
@@ -170673,38 +170551,56 @@
   {
     "id": "telegramdb-org",
     "name": "TelegramDB.org",
-    "description": "OSINT tool: TelegramDB.org.",
+    "description": "Use when you have a Telegram `username`/id and want the groups and channels a user belongs to — returns `social-profile` links, group memberships and `associate` context from public Telegram spaces.",
     "url": "https://telegramdb.org/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding which public Telegram groups/channels a username has appeared in, and resolving ids to usernames.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier via the @tgdb_search_bot Telegram bot (basic resolve/search); advanced queries (e.g. /where membership lookups) on TgDB Search Plus require purchased credits.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "Queries run against TgDB's own crawled index of public Telegram content, not against the target's account, so the user is not notified. You must use a Telegram account to run the bot — use a sock-puppet Telegram number/account, never your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party crawler of public Telegram groups/channels; listed in Bellingcat's investigation toolkit, but data is scraped and unofficial — treat as leads.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "telegramdb"
     ],
+    "aliases": [
+      "TgDB",
+      "TelegramDB",
+      "tgdb.org"
+    ],
+    "tags": [
+      "telegram",
+      "messaging"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegramdb-org.md"
   },
   {
@@ -201099,47 +200995,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/howmanyofme.md"
-  },
-  {
-    "id": "human-predictions",
-    "name": "Human Predictions",
-    "description": "OSINT tool: Human Predictions.",
-    "url": "https://humanpredictions.io",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professional"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/human-predictions.md"
   },
   {
     "id": "idcrawl",
@@ -278221,41 +278076,53 @@
   },
   {
     "id": "crt-certificate-search",
-    "name": "CRT Certificate Search",
-    "description": "OSINT tool: CRT Certificate Search.",
+    "name": "crt.sh Certificate Search",
+    "description": "Use when you have a `domain` and want every TLS certificate ever issued for it — returns subdomains, issuance dates, issuing CA and any `email`/org in the certificate.",
     "url": "https://crt.sh",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Enumerating a domain's subdomains and certificate history from public Certificate Transparency logs.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search interface over Certificate Transparency logs; no account, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit crt.sh's aggregated CT-log database, not the target's servers, so the domain owner is not alerted. Fully passive; no sock puppet needed for a lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Sectigo (a public CA); data comes directly from append-only Certificate Transparency logs, which are authoritative and tamper-evident.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "crt-sh-certificate-search"
     ],
+    "aliases": [
+      "crt.sh",
+      "Certificate Transparency search"
+    ],
+    "tags": [
+      "speciality-search-engines",
+      "subdomain-enumeration"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/crt-certificate-search.md"
   },
   {
@@ -291060,41 +290927,50 @@
   {
     "id": "live-traffic-cameras-in-europe",
     "name": "Live Traffic Cameras in Europe",
-    "description": "Real-time monitoring of Europe’s 5,481 live traffic cameras",
+    "description": "Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city and highway for verifying conditions or scenes.",
     "url": "https://livetraffic.eu",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Viewing live public traffic-camera feeds across Europe by country/city/highway.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to view; an optional account exists but core camera browsing works without login or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are watching public traffic-authority camera feeds aggregated by a third party; nothing is sent to any target and no individual is queried. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party aggregator that re-embeds feeds from official traffic authorities (Trafikverket, Statens vegvesen, Fintraffic, ASFINAG, etc.); the underlying feeds are official, the aggregation is not.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "eu"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "livetraffic.eu",
+      "European traffic cameras"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "webcams"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/live-traffic-cameras-in-europe.md"
   },
   {
@@ -298767,42 +298643,52 @@
   },
   {
     "id": "qilt-university-australia",
-    "name": "QILT University (Australia)",
-    "description": "Website related to educational facility ratings",
+    "name": "QILT (Australia)",
+    "description": "Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, student-experience and graduate-employment data.",
     "url": "http://www.qilt.edu.au",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming an Australian higher-education institution exists and comparing its official student/graduate outcome data.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, government-funded public data portal (results published via the ComparED site); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing published survey data is fully passive and anonymous; you are reading aggregate statistics, not querying any individual, so nothing is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Australian Government-endorsed survey program run by the Social Research Centre for the Department of Education; authoritative institution-level data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "QILT",
+      "Quality Indicators for Learning and Teaching",
+      "ComparED"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "education"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/qilt-university-australia.md"
   },
   {
@@ -302168,40 +302054,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/searcher.md"
-  },
-  {
-    "id": "searx",
-    "name": "Searx",
-    "description": "OSINT tool: Searx.",
-    "url": "https://searx.info/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/searx.md"
   },
   {
     "id": "searxng",
@@ -359546,48 +359398,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/transportation/alamo-rental-receipts.md"
-  },
-  {
-    "id": "all-vehicle-data",
-    "name": "All Vehicle Data",
-    "description": "OSINT tool: All Vehicle Data.",
-    "url": "http://www.allvehicledata.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/all-vehicle-data.md"
   },
   {
     "id": "american-association-of-motor-vehicle-administrators",

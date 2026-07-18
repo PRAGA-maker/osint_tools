@@ -125,7 +125,6 @@ kind: group-index
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
 - **`forums-moneysavingexpert-com`** (medium) — OSINT tool: forums.moneysavingexpert.com.
 - **`forums-overclockers-co-uk`** (medium) — OSINT tool: forums.overclockers.co.uk.
-- **`forums-plentyoffish-com`** (medium) — OSINT tool: forums.plentyoffish.com.
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s

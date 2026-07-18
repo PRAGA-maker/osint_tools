@@ -179,7 +179,7 @@ kind: group-index
 - **`criminology-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
-- **`crt-certificate-search`** (medium) — OSINT tool: CRT Certificate Search.
+- **`crt-certificate-search`** (medium) — Use when you have a `domain` and want every TLS certificate ever issued for it — returns subdomains, issuance dates, issuing CA and any `ema
 - **`cse-utopia`** (medium) — Custom search engine
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
 - **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
@@ -453,7 +453,7 @@ kind: group-index
 - **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
-- **`live-traffic-cameras-in-europe`** (medium) — Real-time monitoring of Europe’s 5,481 live traffic cameras
+- **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
 - **`loopnet`** (medium) — Commercial real estate listing and research site
 - **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
@@ -618,7 +618,7 @@ kind: group-index
 - **`publc-com`** (medium) — OSINT tool: Publc.com.
 - **`pubmed`** (low) — OSINT tool: PubMed.
 - **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.
-- **`qilt-university-australia`** (medium) — Website related to educational facility ratings
+- **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
 - **`qsearch`** (medium) — Facebook timeline search tool
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
@@ -694,7 +694,6 @@ kind: group-index
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
 - **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 
 - **`searcher`** (low) — A very fast and simple #go tool that allows you to collect search results from a list of keywords in the following search engines: Ask Bing 
-- **`searx`** (medium) — OSINT tool: Searx.
 - **`searxng-baresearch-org`** (low) — Privacy metasearch aggregator (SearXNG instance).
 - **`searxng`** (low) — OSINT tool: SearXNG.
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social

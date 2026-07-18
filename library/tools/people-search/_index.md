@@ -115,7 +115,6 @@ kind: group-index
 - **`hiretual`** (medium) — OSINT tool: Hiretual.
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a
 - **`howmanyofme`** (high) — Use when you have a `name` and want to know how common it is in the US — returns an estimated count of people sharing that name, to gauge se
-- **`human-predictions`** (medium) — OSINT tool: Human Predictions.
 - **`idealist`** (medium) — OSINT tool: Idealist.
 - **`indeed`** (medium) — OSINT tool: Indeed.
 - **`infospace`** (high) — Use when you have a US `name` or `phone` and want a free white-pages/metasearch lookup — returns address, phone and related directory listin
