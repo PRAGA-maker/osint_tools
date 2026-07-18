@@ -92,7 +92,7 @@ kind: group-index
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
 - **`freecarcheck-co-uk`** (medium) — OSINT tool: Freecarcheck.co.uk.
 - **`freedar`** (low) — OSINT tool: Freedar.
-- **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK database of registered aviation owners
+- **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Use when you have a UK aircraft registration (`vehicle-plate`, a G- mark) and want its registered owner — returns owner `name` and `address`
 - **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
@@ -222,7 +222,7 @@ kind: group-index
 - **`wikiroutes`** (low) — Public transport database.
 - **`world-aviation-accident-database-1962-2007`** (low) — OSINT tool: World Aviation Accident Database 1962-2007.
 - **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.
-- **`world-license-plates`** (medium) — OSINT tool: World License Plates.
+- **`world-license-plates`** (medium) — Use when you have an `image` of a licence plate (or its format) and want to identify where it's from — returns the country/region `geolocati
 - **`world-shipping-register`** (medium) — Maritime-related website focusing on a searchable database of worldwide vessel registration information
 - **`xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat`** (low) — OSINT tool: xBlog: bellingcat - A Beginner's Guide To Flight Tracking - bellingcat.
 - **`zugfinder`** (low) — Detailed information on trains, stations and real-time train traffic for European countries

@@ -21879,37 +21879,39 @@
   {
     "id": "vault-fbi-gov",
     "name": "Vault.fbi.gov",
-    "description": "Vault is FOIA Library, containing 6,700 documents that have been scanned from paper",
+    "description": "Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain historical intelligence on the subject.",
     "url": "https://vault.fbi.gov/search",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching the FBI's public FOIA reading room for declassified files on a named person, organisation, or event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, official FBI FOIA library; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public reading room of already-released documents — searching it doesn't touch any living subject and reveals nothing to them. The FBI logs site visits like any government site; use a clean session if you'd rather not associate your IP with specific searches.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The FBI's own FOIA library (The Vault); documents are authentic government records, though heavily redacted and largely historical, and coverage is limited to what has been processed for release.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives of documents/newspapers"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "fbi-common-fraud-schemes-united-states",
       "fbi-information-technology-united-states",
@@ -21918,6 +21920,19 @@
       "most-wanted-criminal-pages",
       "sex-offender-registry-websites"
     ],
+    "aliases": [
+      "The Vault",
+      "FBI Records Vault",
+      "vault.fbi.gov"
+    ],
+    "tags": [
+      "Archives of documents/newspapers",
+      "foia",
+      "government-records"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/vault-fbi-gov.md"
   },
   {
@@ -82130,13 +82145,13 @@
   {
     "id": "mx-toolbox-blacklist-check",
     "name": "MX Toolbox Blacklist Check",
-    "description": "Search tool that identifies if an IP address is on an anti-spam blacklist",
-    "url": "http://mxtoolbox.com/blacklists.aspx",
+    "description": "Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation signal for the host.",
+    "url": "https://mxtoolbox.com/blacklists.aspx",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a domain/IP against dozens of DNS blacklists at once to gauge its spam/abuse reputation.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -82145,15 +82160,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web check against many blacklists in one query; MXToolbox sells monitoring, but the on-demand check is free with no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "MXToolbox performs the blacklist queries from its own servers, so the target host never sees your IP. Only MXToolbox logs what you looked up; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "MXToolbox is a well-established DNS/email diagnostics provider; it queries the actual DNSBL operators live, so a listing result is authoritative (subject to each blacklist's own accuracy).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -82162,15 +82178,6 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "email-header-analyzer",
       "mx-toolbox-email-header-analyzer",
@@ -82181,6 +82188,18 @@
       "mxtoolbox-com",
       "mxtoolbox-com-2"
     ],
+    "aliases": [
+      "MXToolbox Blacklist Check",
+      "MXToolbox blacklists"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/mx-toolbox-blacklist-check.md"
   },
   {
@@ -292695,43 +292714,57 @@
   {
     "id": "mojeek",
     "name": "Mojeek",
-    "description": "Privacy-preserving searches, independent index not reliant on Google/Bing",
-    "url": "https://mojeek.com/",
+    "description": "Use when you have a `name`, `username` or keyword and want results from a truly independent, non-Google/Bing crawler — returns web pages, `social-profile` and `domain` hits the mainstream engines rank differently.",
+    "url": "https://www.mojeek.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Privacy-preserving searches, independent index not reliant on Google/Bing",
-    "input": "Keywords, advanced operators (site:, intitle:, inurl:, etc.)",
-    "output": "Web results from independent Mojeek index in JSON/XML via API",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A genuinely independent search index (own crawler, no tracking) for cross-checking Google/Bing on a name/username/keyword sweep.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; a paid API is offered for programmatic use, but manual web searching needs no account.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with strong privacy guarantees - no IP tracking, no search history, no personalization; truly independent index",
+    "opsecNote": "Mojeek states it does no IP tracking, no logging and no personalisation, so it leaks little about the investigator and returns an unpersonalised view. Still a third-party server that receives your query text; use a sock puppet/VPN for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Mojeek runs its own independent crawler and index (not a Google/Bing reseller), which is exactly why it's valuable as a second opinion; its index is smaller, so treat blanks as coverage gaps, not proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "mojeek-search-engine-united-kingdom"
+      "mojeek-search-engine-united-kingdom",
+      "swisscows",
+      "stract"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Mojeek search",
+      "mojeek.com"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy-search",
+      "independent-index"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/mojeek.md"
   },
   {
@@ -310697,24 +310730,33 @@
   {
     "id": "yelp",
     "name": "Yelp",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "http://www.yelp.com",
+    "description": "Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and reviewer `social-profile`s that hint at the places a person frequents.",
+    "url": "https://www.yelp.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a business's address/phone/hours, or profiling a Yelp reviewer's location and the venues they visit.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse businesses and reviewer profiles; a free account is only needed to post reviews.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing business pages and public reviewer profiles is passive and unseen by the target. Reviewer profiles are public and often reveal a first name + last initial, a home city, and a trail of visited venues — read, don't interact. Posting or messaging would need a (sock-puppet) account and is active.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Yelp is a large, legitimate reviews platform, but content is user-generated — business details are usually accurate, while reviews and reviewer bios are self-supplied and can be fake or pseudonymous.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -310723,18 +310765,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "yelp-find-friends"
     ],
+    "aliases": [
+      "yelp.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "reviews"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yelp.md"
   },
   {
@@ -362653,41 +362698,53 @@
   {
     "id": "ginfo-civil-aviation-authority-aircraft-search-united-kingdom",
     "name": "GINFO Civil Aviation Authority Aircraft Search (United Kingdom)",
-    "description": "Aviation-related website that offers a search of the UK database of registered aviation owners",
+    "description": "Use when you have a UK aircraft registration (`vehicle-plate`, a G- mark) and want its registered owner — returns owner `name` and `address`, aircraft type and status from the official CAA register.",
     "url": "https://siteapps.caa.co.uk/g-info/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Turning a UK aircraft G-registration into the legally-recorded owner's name and address plus aircraft details.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free read-only web search of the official UK register; no account needed for the online lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An official statutory register, searched via the CAA's own site — the owner is not notified of a lookup. The CAA logs requests against your IP; use a clean session for arm's-length work. The register exists by law to be publicly inspectable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the UK Civil Aviation Authority; by law the register must list the names and addresses of aircraft owners and be publicly inspectable, so the data is authoritative for UK-registered aircraft.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "G-INFO",
+      "CAA aircraft register",
+      "UK aircraft registration search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "aviation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/ginfo-civil-aviation-authority-aircraft-search-united-kingdom.md"
   },
   {
@@ -368634,46 +368691,53 @@
   {
     "id": "world-license-plates",
     "name": "World License Plates",
-    "description": "OSINT tool: World License Plates.",
+    "description": "Use when you have an `image` of a licence plate (or its format) and want to identify where it's from — returns the country/region `geolocation` by matching plate design, colours and format.",
     "url": "https://worldlicenseplates.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the country/region of origin of a licence plate from its design, colours and format.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "image",
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference gallery; no account, nothing to install.",
+    "opsec": "passive",
+    "opsecNote": "A static reference gallery you browse — no query touches any target and nothing about your subject is submitted. Purely a visual identification aid.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running enthusiast reference site cataloguing plate designs worldwide (cited in OSINT toolkits such as Bellingcat's); it's a design catalogue, not an owner database, so it identifies origin, not people.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "licenseplates"
     ],
+    "aliases": [
+      "License Plates of the World",
+      "worldlicenseplates.com"
+    ],
+    "tags": [
+      "vehicle",
+      "geolocation",
+      "plate-identification"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/world-license-plates.md"
   },
   {

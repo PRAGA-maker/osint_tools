@@ -104,7 +104,7 @@ kind: group-index
 - **`trove`** (medium) — australian web archive
 - **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)
 - **`vandal`** (medium) — extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.
-- **`vault-fbi-gov`** (medium) — Vault is FOIA Library, containing 6,700 documents that have been scanned from paper
+- **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo
 - **`vefsafn-is`** (medium) — OSINT tool: Vefsafn.is.
 - **`versionista`** (low) — OSINT tool: versionista.
 - **`view-page-archive-addons-mozilla-org`** (medium) — OSINT tool: view page archive (addons.mozilla.org).

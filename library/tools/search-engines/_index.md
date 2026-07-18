@@ -899,7 +899,7 @@ kind: group-index
 - **`yaraif`** (medium) — OSINT tool: YARAif.
 - **`yassen-com`** (medium) — OSINT tool: Yassen.com.
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
-- **`yelp`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yippy`** (medium) — OSINT tool: Yippy.
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Charitable search engine that allows you to choose an environmental project to support with your search.

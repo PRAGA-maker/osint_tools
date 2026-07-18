@@ -17,7 +17,7 @@ kind: group-index
 - **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only
 - **`izito`** (medium) — Multi-type searches (web, video, news, products in one overview), quick result aggregation
-- **`mojeek`** (medium) — Privacy-preserving searches, independent index not reliant on Google/Bing
+- **`mojeek`** (medium) — Use when you have a `name`, `username` or keyword and want results from a truly independent, non-Google/Bing crawler — returns web pages, `s
 - **`startpage`** (medium) — Privacy-preserving Google searches, anonymous browsing through proxy
 - **`stract`** (medium) — Use when you have a `name`, `username` or keyword and want an independent, non-Google index with custom-rankable results — returns web pages
 - **`swisscows`** (medium) — Use when you have a `name`, `username` or keyword and want an alternative, privacy-preserving web/image search index — returns web results, 
