@@ -18871,48 +18871,6 @@
     "_file": "library/tools/archives-cache/cybdetective-com.md"
   },
   {
-    "id": "databases-today",
-    "name": "Databases.Today",
-    "description": "Identifying whether target identifiers appear in known breach dumps",
-    "url": "https://databases.today/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache",
-      "data-leaks"
-    ],
-    "bestFor": "Identifying whether target identifiers appear in known breach dumps",
-    "input": "Email, username, domain, or keyword",
-    "output": "Indexed breach hit results and source references",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "Operational status requires verification; querying breach portals can create attribution and compliance risk.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/data-leaks/databases-today.md"
-  },
-  {
     "id": "deleted-tweet-finder-digital-digging-cache",
     "name": "Deleted Tweet Finder (Digital Digging Cache)",
     "description": "Search deleted tweets across archives/caches.",
@@ -33064,26 +33022,31 @@
   },
   {
     "id": "myfitnesspal",
-    "name": "Myfitnesspal",
-    "description": "Website related to social networking in the form of health, wellness, and/or fitness",
+    "name": "MyFitnessPal",
+    "description": "Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint — returns a `social-profile` and forum posts.",
     "url": "https://www.myfitnesspal.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a username exists on MyFitnessPal and mining its public community-forum posts for personal detail.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free account tier; the community forum is publicly readable without logging in. A Premium subscription only unlocks tracking features, not more profile visibility.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public forum threads and profile pages is passive and does not notify the member. Diaries and detailed profiles are private-by-default and usually require the member to have opted them public; do not create an account to \"friend\" the target — that is active and visible to them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "MyFitnessPal is a legitimate mainstream fitness platform; content is user-generated and self-reported, so any personal detail in a forum post is unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -33091,15 +33054,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname",
+      "sherlock"
+    ],
+    "aliases": [
+      "MFP",
+      "myfitnesspal.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "online-communities-blogs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/myfitnesspal.md"
   },
   {
@@ -48251,41 +48221,54 @@
   {
     "id": "gumtree-classified-ads-united-kingdom",
     "name": "Gumtree Classified Ads (United Kingdom)",
-    "description": "One of the Top 10 classified advertisements-related websites worldwide",
+    "description": "Use when you have a `name`, `username` or `phone` and want a subject's UK classified listings — returns their ads, rough `geolocation`, contact `phone` and `social-profile` seller pages.",
     "url": "https://www.gumtree.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a UK subject's for-sale/rental/service listings and the location and contact details they attach to them.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search all listings; a Gumtree account (free) is only needed to message sellers or post.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching listings is passive and does not notify the seller. Contacting a seller, replying to an ad, or viewing a phone number behind a \"reveal\" button crosses into active engagement and may alert them — stop at reading public listing content unless engagement is authorised.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Gumtree is an established, legitimate UK marketplace, but listings are user-generated — seller-supplied names, locations and prices are unverified and can be deliberately vague or false.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Gumtree UK",
+      "Gumtree classifieds"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/gumtree-classified-ads-united-kingdom.md"
   },
   {
@@ -82375,42 +82358,38 @@
   {
     "id": "mxtoolbox-com",
     "name": "mxtoolbox.com",
-    "description": "OSINT tool: mxtoolbox.com.",
+    "description": "Use when you have a `domain` and want its DNS Start-of-Authority record — returns the authoritative nameservers, the hostmaster contact, and the zone serial/refresh settings.",
     "url": "https://mxtoolbox.com/SOALookup.aspx",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a domain's SOA record (nameservers, hostmaster email, zone serial) without touching the target's own DNS.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookups; MXToolbox sells monitoring/API subscriptions, but the on-demand SOA/DNS lookups need no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "MXToolbox resolves the query from its own servers, so your IP never contacts the target's DNS — the target sees nothing. MXToolbox itself logs the domain you looked up; use a sock-puppet account if you sign in for higher rate limits.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "MXToolbox is a long-established, reputable commercial DNS/email diagnostics provider; the records it returns are live DNS pulled from authoritative servers, not a cached third-party dataset.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "email-header-analyzer",
       "mx-toolbox-blacklist-check",
@@ -82421,6 +82400,17 @@
       "mxtoolbox-blacklists",
       "mxtoolbox-com-2"
     ],
+    "aliases": [
+      "MXToolbox SOA Lookup",
+      "MX Toolbox DNS lookup"
+    ],
+    "tags": [
+      "domainsandips",
+      "Domains & IPs"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/mxtoolbox-com.md"
   },
   {
@@ -110305,41 +110295,51 @@
   {
     "id": "full-page-screen-capture-chrome-extension",
     "name": "Full Page Screen Capture Chrome Extension",
-    "description": "Full-page documentation, scrollable content capture, visual evidence",
+    "description": "Use when you have a live web page (`social-profile`, `domain` or any URL) and want a scroll-stitched full-page screenshot for evidence — returns a PNG/PDF `metadata-exif`-bearing capture.",
     "url": "https://github.com/mrcoles/full-page-screen-capture-chrome-extension",
     "category": "evidence-capture",
     "path": [
       "evidence-capture",
       "web-browsing"
     ],
-    "bestFor": "Full-page documentation, scrollable content capture, visual evidence",
-    "input": "Website URL",
-    "output": "PNG/JPG/PDF screenshots with export options",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-click full-length screenshots of long/scrolling pages for documentation and evidence preservation.",
+    "selectorsIn": [
+      "social-profile",
+      "domain"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT); install from the Chrome Web Store or load unpacked from GitHub. No account.",
     "opsec": "passive",
-    "opsecNote": "Browser-based passive capture; no traffic interception or modification.",
+    "opsecNote": "The extension captures what your browser already rendered — it makes no extra requests to the target, so it adds no footprint beyond your normal page visit. OpSec risk lives in how you loaded the page (log in with a sock puppet / route through a clean profile) and in the fact that captures can embed your session UI (usernames, tabs) — crop those before sharing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Popular open-source extension (mrcoles, ~1.5k GitHub stars, MIT-licensed); the code is auditable, though the Web Store build tracks a separate private branch, so pin a known version for high-stakes evidence work.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Full Page Screen Capture",
+      "mrcoles full page screenshot"
+    ],
+    "tags": [
+      "evidence-capture",
+      "screenshot"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/web-browsing/full-page-screen-capture-chrome-extension.md"
   },
   {
@@ -123566,7 +123566,9 @@
     "localInstall": true,
     "registration": false,
     "relatedTools": [
-      "seeker"
+      "seeker",
+      "passhunt",
+      "xposedornot"
     ],
     "aliases": [
       "ISeeYou",
@@ -158897,13 +158899,13 @@
   {
     "id": "freemaptools-com",
     "name": "freemaptools.com",
-    "description": "OSINT tool: freemaptools.com.",
+    "description": "Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radius/area overlays and `geolocation` in other reference systems.",
     "url": "https://www.freemaptools.com/find-british-national-grid-reference-from-map.htm",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Converting between coordinate systems (lat/long, UK National Grid, postcodes) and drawing radius/area/distance overlays on a free interactive map.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -158911,33 +158913,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "All tools are free and browser-based; an optional paid tier only removes ads. No account needed.",
+    "opsec": "passive",
+    "opsecNote": "Everything runs client-side against the map provider's tiles — you are not querying the target, so nothing is leaked to them. The only exposure is to FreeMapTools/its map and ad providers; the coordinates you type are visible to them, so avoid entering a live subject's exact home point on a shared machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent utility site; the map data and conversions come from standard providers (OSM/Google tiles, OS grid maths) and are reliable to roughly ~100 m due to WGS84↔OSGB36 datum differences.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "free-map-tools",
+      "freemaptools"
+    ],
+    "aliases": [
+      "Free Map Tools",
+      "FreeMapTools British National Grid"
+    ],
     "tags": [
       "mapsandlocationsites",
       "Maps & Location Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "free-map-tools",
-      "freemaptools"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/freemaptools-com.md"
   },
   {
@@ -221348,7 +221356,14 @@
     "registration": false,
     "relatedTools": [
       "unicourt",
-      "courtlistener"
+      "courtlistener",
+      "arrest-warrants",
+      "criminal-search-criminal-records-by-state-and",
+      "free-aviation-records-black-book-online",
+      "jail-records",
+      "nationwide-county-court-records-by-state-and",
+      "property-search-public-records-by-state",
+      "sex-offender-search"
     ],
     "aliases": [
       "Black Book Online",
@@ -284689,37 +284704,53 @@
   {
     "id": "google-custom-search",
     "name": "Google Custom Search",
-    "description": "OSINT tool: Google Custom Search.",
-    "url": "http://www.google.com/cse",
+    "description": "Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Google web results restricted to your chosen `domain` set.",
+    "url": "https://programmablesearchengine.google.com/about/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Building a reusable search engine that queries Google but only over a hand-picked list of sites (or a topic), for repeatable scoped OSINT sweeps.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier searches your defined sites with AdSense ads; the JSON API is free up to 100 queries/day then paid. The hosted search UI itself is free to build and use.",
+    "opsec": "passive",
+    "opsecNote": "Queries run on Google's infrastructure, not against the target, so nothing reaches the subject. Building an engine requires a Google account, which ties the CSE (and any API key) to that identity — use a dedicated investigative Google account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google product (Programmable Search Engine, formerly Custom Search); results are genuine Google index results scoped by your configuration.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Google Programmable Search Engine",
+      "Google CSE",
+      "Programmable Search"
+    ],
     "tags": [
       "speciality-search-engines"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-custom-search.md"
   },
   {
@@ -304594,43 +304625,53 @@
   {
     "id": "swisscows",
     "name": "Swisscows",
-    "description": "Privacy-conscious searches, family-safe content filtering, Swiss data residency requirement",
+    "description": "Use when you have a `name`, `username` or keyword and want an alternative, privacy-preserving web/image search index — returns web results, `social-profile` and `domain` leads that Google may rank differently.",
     "url": "https://swisscows.com/en",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Privacy-conscious searches, family-safe content filtering, Swiss data residency requirement",
-    "input": "Keywords, natural language queries with semantic understanding",
-    "output": "Ranked web results with optional content filtering, image/video search with filtering",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A privacy-friendly, no-logging alternative search index for name/username/keyword sweeps and for cross-checking Google's ranking.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free with ads (served via System1); an optional Swisscows Pro subscription removes ads and adds source filters. All OSINT searching works on the free tier.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with maximum privacy; data stored in Switzerland outside EU/USA; permanent family-safe filtering cannot be disabled",
+    "opsecNote": "Swisscows advertises no query logging, no IP storage and Swiss data residency, so it leaks less about the investigator than mainstream engines. It is still a third party — route through a sock-puppet browser/VPN for anything sensitive, and remember the permanent family-safe filter silently drops adult results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established Swiss privacy-search company; results are drawn from its own index plus partner engines (Bing/Brave), so it is a legitimate search source rather than a scraper — cross-check ranking rather than treating it as authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "swisscows-com"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Swisscows search"
+    ],
+    "tags": [
+      "privacy-search",
+      "specialty-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/swisscows.md"
   },
   {
@@ -322489,7 +322530,13 @@
     "registration": false,
     "relatedTools": [
       "github-search",
-      "gravatar"
+      "gravatar",
+      "domainrecon",
+      "faviconhash",
+      "metadata-viewer",
+      "pgpkeyanalyser",
+      "searchdorks",
+      "traceroutevisualizer"
     ],
     "aliases": [
       "github-recon",
@@ -364457,43 +364504,53 @@
   {
     "id": "mot-history",
     "name": "MOT History",
-    "description": "OSINT tool: MOT History.",
+    "description": "Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at every MOT, and pass/fail/advisory records back to 2005.",
     "url": "https://www.check-mot.service.gov.uk",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK registration maps to a specific vehicle and tracing its recorded mileage and defect timeline over the years.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official DVSA service; no account, no payment, registration number only.",
+    "opsec": "passive",
+    "opsecNote": "This is a public government lookup keyed only on the plate — the vehicle's owner is never notified and cannot see who searched. DVSA logs the request against your IP; use a clean/sock-puppet session for a fully arm's-length query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the DVSA (UK Driver & Vehicle Standards Agency); the MOT records are first-party government data, authoritative for any vehicle tested in England, Scotland or Wales.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "free-car-license-plate-lookup",
+      "vincheck-info",
+      "vin-check-reports"
+    ],
+    "aliases": [
+      "check-mot.service.gov.uk",
+      "DVSA MOT history check",
+      "Check MOT history"
+    ],
     "tags": [
       "vehicle"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/mot-history.md"
   },
   {
@@ -367913,40 +367970,55 @@
   {
     "id": "vin-check-reports",
     "name": "VIN Check Reports",
-    "description": "OSINT tool: VIN Check Reports.",
+    "description": "Use when you have a `vin` or US `vehicle-plate` and want a free vehicle-history report — returns title/theft/salvage records, recalls, specs and a `physical-description` of the vehicle.",
     "url": "https://vincheck.info/check/vin-check.php",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free VIN or US-plate decoding into title, theft, salvage, recall and specification history.",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "physical-description",
+      "vin"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reports funded by ads; draws on NMVTIS, NHTSA, VinAudit and FMCSA data. No account or payment for the core report.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a lookup against public/industry vehicle databases keyed on the VIN or plate — the vehicle's owner is not notified and cannot see the query. VINCheck.info logs your request; use a clean session for arm's-length work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregates authoritative sources (NMVTIS/NHTSA/FMCSA) but is a third-party ad-funded site; treat title/theft flags as strong leads to confirm against the underlying official record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "free-car-license-plate-lookup",
       "vincheck-info",
+      "free-car-license-plate-lookup",
+      "mot-history",
       "vincheck-nicb"
     ],
+    "aliases": [
+      "VINCheck.info",
+      "VIN Check Info"
+    ],
+    "tags": [
+      "vehicle"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vin-check-reports.md"
   },
   {

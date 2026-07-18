@@ -45,7 +45,7 @@ kind: group-index
 - **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
 - **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur
-- **`freemaptools-com`** (medium) — OSINT tool: freemaptools.com.
+- **`freemaptools-com`** (medium) — Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radiu
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
 - **`generate-a-panorama`** (medium) — OSINT tool: Generate a panorama.
 - **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time

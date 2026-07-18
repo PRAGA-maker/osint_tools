@@ -7,7 +7,7 @@ kind: group-index
 # archives-cache
 
 ## Sub-groups
-- **`data-leaks/`** — 3 skill(s) below.
+- **`data-leaks/`** — 2 skill(s) below.
 - **`other-media/`** — 1 skill(s) below.
 - **`public-datasets/`** — 4 skill(s) below.
 - **`web/`** — 12 skill(s) below.

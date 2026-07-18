@@ -323,7 +323,7 @@ kind: group-index
 - **`google-com-85`** (high) — Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels)
 - **`google-com-hack-attack`** (medium) — OSINT tool: \*.Google.com Hack Attack.
 - **`google-cse-instances-search-engine`** (medium) — OSINT tool: Google CSE instances Search Engine.
-- **`google-custom-search`** (medium) — OSINT tool: Google Custom Search.
+- **`google-custom-search`** (medium) — Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Go
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
 - **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.

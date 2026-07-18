@@ -232,7 +232,7 @@ kind: group-index
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`movabletype`** (medium) — Website related to social networking and blogging
 - **`mumsnet-com`** (medium) — OSINT tool: mumsnet.com.
-- **`myfitnesspal`** (medium) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
 - **`mynetworktv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le

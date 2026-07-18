@@ -333,7 +333,7 @@ kind: group-index
 - **`mx-toolbox-email-header-analyzer`** (medium) — Process for identifying an IP address from an email header
 - **`mx-toolbox-reverse-ip-search`** (low) — Use when you have an `ip-address` and want its reverse-DNS (PTR) hostname to map it to a domain/host — returns domain and hosting leads.
 - **`mx-toolbox-whois-lookup`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS registration details — returns registrar, registrant/org, dates and namese
-- **`mxtoolbox-com`** (medium) — OSINT tool: mxtoolbox.com.
+- **`mxtoolbox-com`** (medium) — Use when you have a `domain` and want its DNS Start-of-Authority record — returns the authoritative nameservers, the hostmaster contact, and
 - **`my-global-ip`** (medium) — Search tool that identifies the IP address you are currently using
 - **`my-ip-address`** (medium) — Search tool that identifies the IP address you are currently using
 - **`myip-ip-address`** (medium) — Tool that identifies the available registration information for a website or domain name

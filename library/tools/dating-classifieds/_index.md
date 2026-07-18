@@ -53,7 +53,7 @@ kind: group-index
 - **`girlfindr`** (low) — OnlyFans creator exploration tool.
 - **`goofbid`** (low) — Use when researching eBay activity and you want to surface mistyped/overlooked listings a subject posted — a misspelling-search front-end fo
 - **`gumtree-classified-ads-australia`** (medium) — Use when you have a `name`, `username` or `phone` and want Australian classified-ad activity — returns seller `social-profile`, item photos 
-- **`gumtree-classified-ads-united-kingdom`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`gumtree-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's UK classified listings — returns their ads, rough `geolocation`, cont
 - **`hallo-london-free-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
 - **`hinge`** (medium) — Use when you have an `image` and rough `geolocation` and want to check a subject against Hinge — a relationship-focused app with richer, pro
 - **`hoobly-classified-ads`** (medium) — Classified advertisements-related website that provides regional services

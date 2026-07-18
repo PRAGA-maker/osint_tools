@@ -32,6 +32,8 @@ localInstall: true
 registration: false
 relatedTools:
 - seeker
+- passhunt
+- xposedornot
 aliases:
 - ISeeYou
 - Viralmaniar/I-See-You

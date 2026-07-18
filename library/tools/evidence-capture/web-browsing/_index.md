@@ -10,7 +10,7 @@ kind: group-index
 - **`ezr-osint-sidebar`** (medium) — OSINT data extraction, metadata analysis, investigation documentation
 - **`fiddler`** (medium) — Network traffic analysis, web debugging, protocol inspection
 - **`forensic-osint`** (medium) — Evidence capture, legal documentation, case-level review
-- **`full-page-screen-capture-chrome-extension`** (medium) — Full-page documentation, scrollable content capture, visual evidence
+- **`full-page-screen-capture-chrome-extension`** (medium) — Use when you have a live web page (`social-profile`, `domain` or any URL) and want a scroll-stitched full-page screenshot for evidence — ret
 - **`page2images`** (medium) — Website documentation, responsive testing, visual archiving
 - **`snapper`** (medium) — Batch website screenshots, post-reconnaissance documentation
 - **`web-page-saver`** (medium) — Document preservation, offline access, evidence capture

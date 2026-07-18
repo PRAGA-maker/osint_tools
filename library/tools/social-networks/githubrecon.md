@@ -33,6 +33,12 @@ registration: false
 relatedTools:
 - github-search
 - gravatar
+- domainrecon
+- faviconhash
+- metadata-viewer
+- pgpkeyanalyser
+- searchdorks
+- traceroutevisualizer
 aliases:
 - github-recon
 - kriztalz github recon

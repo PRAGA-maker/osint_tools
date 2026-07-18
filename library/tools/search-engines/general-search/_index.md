@@ -20,7 +20,7 @@ kind: group-index
 - **`mojeek`** (medium) — Privacy-preserving searches, independent index not reliant on Google/Bing
 - **`startpage`** (medium) — Privacy-preserving Google searches, anonymous browsing through proxy
 - **`stract`** (medium) — Developers, transparency enthusiasts, customizable search, filtering by content type (blogs, indieweb, educational)
-- **`swisscows`** (medium) — Privacy-conscious searches, family-safe content filtering, Swiss data residency requirement
+- **`swisscows`** (medium) — Use when you have a `name`, `username` or keyword and want an alternative, privacy-preserving web/image search index — returns web results, 
 - **`yahoo-advanced-web-search`** (medium) — Use when a Google/Bing search for a `name`, `username` or `email` is incomplete and you want an alternate index with operators — returns soc
 - **`yandex`** (medium) — Use when you have a `name`, `username`, or keyword and want web results with strong Russian/post-Soviet coverage and different indexing than
 
