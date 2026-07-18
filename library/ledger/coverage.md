@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8299 total · 3099 full · 5200 stub (37% enriched)
+**Tools:** 8298 total · 3108 full · 5190 stub (37% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3330 · medium: 3019 · high: 1950
+low: 3332 · medium: 3016 · high: 1950
 
 ## Tools by trust
-unverified: 3994 · community: 3265 · trusted: 1028 · personal: 6 · untrustworthy: 6
+unverified: 3986 · community: 3268 · trusted: 1032 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -18,24 +18,24 @@ unverified: 3994 · community: 3265 · trusted: 1028 · personal: 6 · untrustwo
 - `archives-cache` — 28/140
 - `communities-forums` — 50/423
 - `dark-web` — 7/119
-- `dating-classifieds` — 33/116
+- `dating-classifieds` — 34/116
 - `documents-metadata` — 19/317
 - `domains-ip-infrastructure` — 46/765
 - `email` — 242/246
-- `evidence-capture` — 3/32
+- `evidence-capture` — 4/32
 - `financial-crypto` — 23/131
-- `geolocation` — 198/352
-- `image-video-face` — 381/479
-- `maps-geospatial-data` — 18/146
-- `messaging` — 143/196
+- `geolocation` — 199/352
+- `image-video-face` — 381/478
+- `maps-geospatial-data` — 19/146
+- `messaging` — 144/196
 - `opsec-investigator-tooling` — 17/566
-- `people-search` — 224/272
+- `people-search` — 225/272
 - `phone` — 132/137
-- `public-records` — 612/1120
-- `search-engines` — 180/961
+- `public-records` — 613/1120
+- `search-engines` — 181/961
 - `social-networks` — 584/873
 - `training-ctf` — 0/12
-- `translation-language` — 9/103
+- `translation-language` — 10/103
 - `transportation` — 46/232
 - `username` — 98/105
 
@@ -48,7 +48,7 @@ unverified: 3994 · community: 3265 · trusted: 1028 · personal: 6 · untrustwo
 - `library/tools/domains-ip-infrastructure` — 522 leaves
 - `library/tools/ai-analysis-automation` — 420 leaves
 - `library/tools/communities-forums` — 409 leaves
-- `library/tools/image-video-face` — 382 leaves
+- `library/tools/image-video-face` — 381 leaves
 - `library/tools/geolocation` — 337 leaves
 - `library/tools/documents-metadata` — 264 leaves
 - `library/tools/people-search` — 262 leaves

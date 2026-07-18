@@ -64,7 +64,7 @@ kind: group-index
 - **`amazon-com`** (medium) — OSINT tool: Amazon.com.
 - **`amazon-scraper`** (medium) — scraped detail information about list of items
 - **`ancestor-hunt`** (high) — Use when you have a `name` and want a curated directory of free genealogy/public-record collections (births, deaths, marriages, obituaries, 
-- **`ancestry-family-search-engine-united-kingdom`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national country level
+- **`ancestry-family-search-engine-united-kingdom`** (medium) — Use when you have a `name` and want UK genealogical/historical records — returns relatives (`associate`), historical `address`es, and `dob`/
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
 - **`arabbarometer`** (medium) — database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018
 - **`architecture-com`** (medium) — Use when you have a `name` and think the person is a UK architect — returns their RIBA chartered status, practice/employer-org, and professi

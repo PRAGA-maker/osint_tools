@@ -12,7 +12,7 @@ kind: group-index
 - **`deepl-translator`** (medium) — Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated tex
 - **`free-translation`** (medium) — Fast multi-language text translation in a browser
 - **`google-input-tools`** (low) — Use when a lead is in a non-Latin script and you need to TYPE it accurately (queries, names, addresses) — an input helper, not a subject loo
-- **`google-translate`** (medium) — Quick translation across broad language coverage
+- **`google-translate`** (medium) — Use when you have foreign-language text, a document, or a webpage in an investigation and want it in your language — returns translated text
 - **`slang-dictionary-and-translator`** (medium) — Decoding internet slang and text abbreviations
 - **`slangit-the-slang-dictionary`** (low) — Use when you have chat/text messages full of slang, acronyms, or emoji and want them decoded — returns plain-language definitions and usage 
 - **`urban-dictionary`** (low) — Use when you have slang, a nickname, or a coded term from a subject's posts and want its meaning — returns crowd-sourced definitions that ca

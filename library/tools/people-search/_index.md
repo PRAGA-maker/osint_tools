@@ -53,7 +53,7 @@ kind: group-index
 - **`classmates`** (high) — Use when you have a `name` and a US school (`employer-org`) and want yearbook photos and alumni profiles — returns image, social-profile and
 - **`cloob-com`** (high) — Historical reference only — Iran's "Facebook" people search, permanently shut down in 2021; returns nothing today, so route to archives or o
 - **`clustermaps`** (high) — Use when you have a `name` or `address` and want US resident/address intelligence — returns current and past residents, relatives/neighbors,
-- **`coeus-osint-toolbox`** (medium) — OSINT toolbox bundling tools for intelligence gathering from open sources.
+- **`coeus-osint-toolbox`** (medium) — Use when you have a `username`, `email`, `phone`, or `domain` and want a GUI to run several OSINT lookups at once — returns `social-profile`
 - **`college-recruiter`** (medium) — OSINT tool: College Recruiter.
 - **`community-search`** (medium) — OSINT tool: Поиск сообществ (Community Search).
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3

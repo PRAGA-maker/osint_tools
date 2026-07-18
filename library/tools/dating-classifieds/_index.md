@@ -76,7 +76,7 @@ kind: group-index
 - **`ohio-department-of-transportation`** (medium) — Ohio Department of Transportations website providing information about construction projects and maps dating back to 1912
 - **`okcupid`** (medium) — OSINT tool: OkCupid.
 - **`onlybritish`** (low) — UK OnlyFans creator directory.
-- **`onlycanadian-fans`** (medium) — OSINT tool: onlycanadian.fans.
+- **`onlycanadian-fans`** (medium) — Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filt
 - **`onlydanske-dk`** (medium) — OSINT tool: onlydanske.dk.
 - **`onlyespana-es`** (medium) — OSINT tool: onlyespana.es.
 - **`onlyfam`** (medium) — OnlyFans search and model finder.

@@ -49348,42 +49348,54 @@
   {
     "id": "onlycanadian-fans",
     "name": "onlycanadian.fans",
-    "description": "OSINT tool: onlycanadian.fans.",
+    "description": "Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filtered by Canadian `geolocation`.",
     "url": "https://onlycanadian.fans/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Finding Canadian OnlyFans creators by handle, name, or city/category.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the directory; it aggregates public profile links (the linked OnlyFans accounts themselves may be paid).",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a third-party aggregator, not OnlyFans, so the creator is not notified. The operator logs your searches; it indexes only public profile data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent Canadian-focused OnlyFans directory, explicitly unaffiliated with OnlyFans; coverage and accuracy are unverified against the source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fanslist-com"
+    ],
+    "aliases": [
+      "Only Canadian Fans"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "canada",
+      "creator-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlycanadian-fans.md"
   },
   {
@@ -110133,41 +110145,57 @@
   {
     "id": "ezr-osint-sidebar",
     "name": "EZR OSINT Sidebar",
-    "description": "OSINT data extraction, metadata analysis, investigation documentation",
+    "description": "Use when you're viewing a web page/`image` and want in-browser metadata, EXIF, hashes, and reverse-search links — returns `metadata-exif`, SHA-256 hashes, and pivot links plus screenshots.",
     "url": "https://chromewebstore.google.com/detail/ezr-osint-sidebar/joagbbgciboooipadijeaoidjjigdmof",
     "category": "evidence-capture",
     "path": [
       "evidence-capture",
       "web-browsing"
     ],
-    "bestFor": "OSINT data extraction, metadata analysis, investigation documentation",
-    "input": "Web content, images, emails, IP addresses",
-    "output": "Extracted metadata, EXIF data, SHA-256 hashes, reverse search links, screenshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A browser sidebar that extracts metadata/EXIF, hashes evidence, and generates reverse-search pivots while you browse.",
+    "selectorsIn": [
+      "image",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome/Chromium extension installed from the Chrome Web Store; no account required.",
     "opsec": "passive",
-    "opsecNote": "Aggregates public OSINT data via sidebar-based information extraction; no active probing.",
+    "opsecNote": "Passive by design — it processes content already on the page in your browser and builds reverse-search links (which you choose whether to click). Some enrichment (reverse image, IP lookups) reaches third parties when you trigger it, so treat those clicks as outbound and use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A community-published investigator extension on the Chrome Web Store; useful convenience tooling, but unofficial and unaudited — verify what it extracts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "hunchly",
+      "exif-tool"
+    ],
+    "aliases": [
+      "EZR Sidebar"
+    ],
+    "tags": [
+      "evidence-capture",
+      "browser-extension",
+      "metadata",
+      "exif"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/web-browsing/ezr-osint-sidebar.md"
   },
   {
@@ -126089,43 +126117,49 @@
   },
   {
     "id": "monitor-tracking-civic-space-worldwide-map",
-    "name": "Monitor Tracking Civic Space Worldwide Map",
-    "description": "Civicus (@CIVICUSalliance)",
+    "name": "CIVICUS Monitor (Civic Space Worldwide Map)",
+    "description": "Use when you have a country/`geolocation` and want its civic-space rating and recent rights conditions — returns country civic-freedom ratings and situation reports.",
     "url": "https://monitor.civicus.org",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Country-level civic-space ratings and rights-condition context for a location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public interactive map and reports from CIVICUS, an international civil-society alliance.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read a public NGO map/report; nothing about a subject is submitted. Fully public data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Published by CIVICUS, an established international civil-society alliance; a recognized authority for civic-space ratings, though ratings are country-level assessments, not granular data.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CIVICUS Monitor"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
+      "Politics, conflicts and crisis",
+      "civic-space"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/monitor-tracking-civic-space-worldwide-map.md"
   },
   {
@@ -153597,44 +153631,6 @@
     "_file": "library/tools/image-video-face/telegram-facemath-bot.md"
   },
   {
-    "id": "textgrab",
-    "name": "TextGrab",
-    "description": "Simple #Chrome extension for copying and recognizing text from videos (#YouTube, #GoogleMeetup etc.)",
-    "url": "https://chrome.google.com/webstore/detail/textgrab/kbdckoabalhppclkadhabohnoihdbnja/related",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/textgrab.md"
-  },
-  {
     "id": "the-bitmoji-avatar-history-enumerator",
     "name": "Backmoji (Bitmoji Avatar History Enumerator)",
     "description": "Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars and `physical-description` / appearance cues.",
@@ -159666,42 +159662,48 @@
   {
     "id": "gosur-map",
     "name": "Gosur Map",
-    "description": "OSINT tool: Gosur Map.",
+    "description": "Use when you have an `address` or `geolocation` and want satellite/aerial imagery of it with extras like live cams and weather — returns a satellite view for that `geolocation`.",
     "url": "http://www.gosur.com/map",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Quick satellite/aerial view of an address, with map-overlay extras (webcams, weather, traffic).",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web map viewer; ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you look up public map imagery; no subject is notified. It's an ad-supported third-party site fronting satellite imagery providers, so expect ads/trackers; use a hardened browser session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A third-party map front-end aggregating commercial satellite imagery and overlays; convenient but not an authoritative or first-party mapping source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "gosur.com map"
+    ],
     "tags": [
-      "maps"
+      "maps",
+      "satellite-imagery"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/gosur-map.md"
   },
   {
@@ -171762,45 +171764,57 @@
   {
     "id": "tgspyder",
     "name": "tgspyder",
-    "description": "Telegram analysis tool for social media intelligence and threat research.",
+    "description": "Use when you have a Telegram `username`/channel and want to scrape and analyze its members and messages — returns member `username`s/`social-profile`s and any exposed `phone` numbers.",
     "url": "https://github.com/Darksight-Analytics/tgspyder",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Scraping/analyzing Telegram channels and users",
+    "bestFor": "Scraping and analyzing Telegram channels/users for social-media-intelligence and threat research.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
+      "username",
       "social-profile",
       "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source CLI on GitHub; you supply your own Telegram account and API credentials.",
+    "opsec": "active",
+    "opsecNote": "Active — it authenticates to Telegram with your account/API credentials to read channels and members, so Telegram logs the activity and can ban the account. Use a dedicated burner account and number, never your own, and a clean IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Vendor-released Telegram tool (338 stars).",
+    "trustNote": "Open-source tool released by Darksight Analytics (a few hundred GitHub stars); functional but community-maintained and unaudited.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": true,
-    "aliases": [],
+    "relatedTools": [
+      "telepathy",
+      "telegram-scraper",
+      "informer-telegram"
+    ],
+    "aliases": [
+      "Darksight-Analytics/tgspyder"
+    ],
     "tags": [
       "telegram",
       "scraper"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/tgspyder.md"
   },
   {
@@ -198142,13 +198156,13 @@
   {
     "id": "coeus-osint-toolbox",
     "name": "Coeus-OSINT-ToolBox",
-    "description": "OSINT toolbox bundling tools for intelligence gathering from open sources.",
+    "description": "Use when you have a `username`, `email`, `phone`, or `domain` and want a GUI to run several OSINT lookups at once — returns `social-profile`s, `email`s, and `phone` leads.",
     "url": "https://github.com/AnonCatalyst/Coeus-OSINT-ToolBox",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "GUI-driven multi-selector OSINT lookups",
+    "bestFor": "GUI-driven multi-selector OSINT lookups bundled into one Python app.",
     "selectorsIn": [
       "username",
       "email",
@@ -198160,15 +198174,16 @@
       "email",
       "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GitHub); you run it locally, so the only cost is setup and any API keys individual modules need.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Mostly passive — it queries public sources — but it's a bundle of modules with varying behavior, and some may make requests that touch a target's infrastructure. Run from a sock-puppet environment/VPN and review what each module does before firing it at a real subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "Community OSINT toolbox (227 stars).",
+    "trustNote": "Community project by AnonCatalyst (few hundred GitHub stars); convenient aggregator, but module reliability varies and the code is unaudited.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -198177,8 +198192,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "ominis-osint",
+      "webhound-anoncatalyst"
+    ],
     "aliases": [
-      "coeus"
+      "coeus",
+      "Coeus OSINT ToolBox"
     ],
     "tags": [
       "toolbox",
@@ -198186,12 +198206,8 @@
       "multi-tool"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ominis-osint",
-      "webhound-anoncatalyst"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/coeus-osint-toolbox.md"
   },
   {
@@ -219047,48 +219063,63 @@
   },
   {
     "id": "ancestry-family-search-engine-united-kingdom",
-    "name": "Ancestry Family Search Engine (United Kingdom)",
-    "description": "Geneology-related search for ancestral, family, and historical records, using a database at the national country level",
+    "name": "Ancestry (United Kingdom)",
+    "description": "Use when you have a `name` and want UK genealogical/historical records — returns relatives (`associate`), historical `address`es, and `dob`/vital dates.",
     "url": "http://www.ancestry.co.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Building a family tree and finding UK census, vital, and historical records for a person.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "associate",
+      "address",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search the index and see record \"hints\"/partial results and to build a tree; viewing full record images/details requires a paid subscription (a time-limited free trial is available).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you search historical records; no living subject is notified. Viewing records requires an account, so your searches and tree are tied to that login — use a research account, not your personal one, and be aware Ancestry monetizes user data (including optional DNA).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Major, established genealogy provider with large digitized UK record collections (census, BMD, etc.); authoritative for historical records, though transcriptions can contain errors.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "family-search",
+      "familysearch",
+      "findmypast"
+    ],
+    "aliases": [
+      "ancestry.co.uk",
+      "Ancestry UK"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "vital-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ancestry-family-search-engine-united-kingdom.md"
   },
   {
@@ -304505,41 +304536,56 @@
   {
     "id": "summit-county-fiscal-office",
     "name": "Summit County Fiscal Office",
-    "description": "Summit County Fiscal Office website with property tax and appraisal tool",
+    "description": "Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`, and assessment details.",
     "url": "http://fiscaloffice.summitoh.net/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up Summit County (Akron, OH) property ownership, tax, and appraisal records.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official county government property/tax search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a public government property database; the owner is not notified. Records are public by law. Standard web logging applies; use a clean session for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Summit County, Ohio Fiscal Office website; authoritative for that county's property and tax records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "redfin"
+    ],
+    "aliases": [
+      "Summit County OH Fiscal Office",
+      "fiscaloffice.summitoh.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "property-records",
+      "ohio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/summit-county-fiscal-office.md"
   },
   {
@@ -356528,41 +356574,45 @@
   {
     "id": "google-translate",
     "name": "Google Translate",
-    "description": "Quick translation across broad language coverage",
+    "description": "Use when you have foreign-language text, a document, or a webpage in an investigation and want it in your language — returns translated text and translated pages.",
     "url": "https://translate.google.com/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Quick translation across broad language coverage",
-    "input": "Text, documents, speech, or website URL",
-    "output": "Translated text, speech output, or translated webpage",
+    "bestFor": "Fast, broad-coverage translation of foreign-language OSINT content (posts, records, pages).",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free for interactive web/app use; programmatic use via the Cloud Translation API is paid.",
     "opsec": "active",
-    "opsecNote": "Submitted content is processed by Google services.",
+    "opsecNote": "Active — any text, document, or URL you submit is sent to and processed by Google. Do not paste sensitive case data or names you want to keep private; Google may log the content. For a webpage, requesting Google's translation causes Google (not you) to fetch it, but the content still leaves your control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google service; broad language coverage and reliable for gist, though machine translation of names, slang, and legal/idiomatic text can mislead.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "translate.google.com",
+      "GTranslate"
+    ],
+    "tags": [
+      "translation",
+      "language"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/google-translate.md"
   },
   {

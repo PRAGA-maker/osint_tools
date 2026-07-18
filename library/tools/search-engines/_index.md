@@ -753,7 +753,7 @@ kind: group-index
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`studentreviews-north-america`** (medium) — Website related to education reviews
 - **`suchmaschinen-datenbank`** (medium) — German meta search engine
-- **`summit-county-fiscal-office`** (medium) — Summit County Fiscal Office website with property tax and appraisal tool
+- **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — XDCC file search engine
 - **`superdesk`** (low) — OSINT tool: Superdesk.
 - **`superuser`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries

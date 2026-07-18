@@ -197,7 +197,7 @@ kind: group-index
 - **`mgrs-mapper`** (low) — Use when you have an MGRS/military grid reference or need to plot one on a map — returns an interactive map with MGRS grid overlay to transl
 - **`mindat-org`** (low) — Use when an `image` or sample shows a distinctive rock/mineral and you want to narrow where it came from — returns mineral locality data and
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.
-- **`monitor-tracking-civic-space-worldwide-map`** (medium) — Civicus (@CIVICUSalliance)
+- **`monitor-tracking-civic-space-worldwide-map`** (low) — Use when you have a country/`geolocation` and want its civic-space rating and recent rights conditions — returns country civic-freedom ratin
 - **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc
 - **`mozilla-location-service`** (low) — OSINT tool: Mozilla Location Service.
 - **`murph-live`** (low) — OSINT tool: @murph\_live.

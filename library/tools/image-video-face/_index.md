@@ -336,7 +336,6 @@ kind: group-index
 - **`teachingprivacy-com`** (high) — Use when you have a `username` and want to visualise the geotagged posting history behind a public Twitter/Instagram account — was built to 
 - **`ted`** (medium) — Use when you have a `name` and think the subject gave a TED/TEDx talk, and you want their video, bio, headshot and topic — returns `image`, 
 - **`telegram-facemath-bot`** (high) — Use when you have a `face`/`image` and want to find that person in an archive of public-event photos from Kazakhstan — returns matching even
-- **`textgrab`** (medium) — Simple #Chrome extension for copying and recognizing text from videos (#YouTube, #GoogleMeetup etc.)
 - **`the-bitmoji-avatar-history-enumerator`** (high) — Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars
 - **`the-seint`** (high) — Use when you have an image `metadata-exif`/filename and want to infer the camera make/model that produced it — returns device-id.
 - **`thehackernews-com`** (high) — Use when you have an `image` containing pixelated/blurred redacted text and want to attempt reconstruction — points to the Unredacter/Depix 

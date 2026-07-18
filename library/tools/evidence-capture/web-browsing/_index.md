@@ -7,7 +7,7 @@ kind: group-index
 # evidence-capture/web-browsing
 
 ## Skills here
-- **`ezr-osint-sidebar`** (medium) — OSINT data extraction, metadata analysis, investigation documentation
+- **`ezr-osint-sidebar`** (medium) — Use when you're viewing a web page/`image` and want in-browser metadata, EXIF, hashes, and reverse-search links — returns `metadata-exif`, S
 - **`fiddler`** (medium) — Network traffic analysis, web debugging, protocol inspection
 - **`forensic-osint`** (medium) — Evidence capture, legal documentation, case-level review
 - **`full-page-screen-capture-chrome-extension`** (medium) — Use when you have a live web page (`social-profile`, `domain` or any URL) and want a scroll-stitched full-page screenshot for evidence — ret
