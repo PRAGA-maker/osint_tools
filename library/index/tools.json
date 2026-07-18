@@ -36507,37 +36507,51 @@
   {
     "id": "rentry",
     "name": "Rentry",
-    "description": "OSINT tool: Rentry.",
+    "description": "Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-engine dorks surface them, returning `document-id` content.",
     "url": "https://rentry.co/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding and reading Rentry paste pages (dumps, lists, doxes, notes) that a subject or a leaker has published.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free markdown paste host; no account needed to create or read pastes.",
+    "opsec": "passive",
+    "opsecNote": "Reading a Rentry page is passive and anonymous — the author isn't notified. Pastes are unlisted (not directory-searchable on Rentry itself), so you usually reach them via search-engine dorks; opening one leaks nothing about you beyond a normal page visit. Do not edit/append to a paste (that could require the edit code and alters evidence).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Rentry is a legitimate paste host, but its content is anonymous user-generated text — dumps and \"doxes\" found there are unverified and may be fabricated, outdated, or malicious.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "rentry.co",
+      "rentry.org"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "paste-sites"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/rentry.md"
   },
   {
@@ -76453,30 +76467,31 @@
   {
     "id": "hurricane-electric-internet-services",
     "name": "Hurricane Electric Internet Services",
-    "description": "Tool that identifies the available registration information for a website or domain name",
-    "url": "http://bgp.he.net",
+    "description": "Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse-DNS and co-hosted `domain`s.",
+    "url": "https://bgp.he.net",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping an IP/domain to its ASN, network prefixes, peers and the other domains hosted on the same IP.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public BGP/network toolkit; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Hurricane Electric answers from its own routing/DNS data, so the target host is never contacted by you — the lookup is invisible to them. HE sees your query; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hurricane Electric is a major global network operator; its BGP toolkit reflects live routing-table and DNS data, authoritative for network/ASN relationships (reverse-DNS co-hosting lists can lag).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -76485,18 +76500,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "hurricane-electric-bgp-toolkit"
+    ],
+    "aliases": [
+      "bgp.he.net",
+      "HE BGP Toolkit"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hurricane-electric-bgp-toolkit"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hurricane-electric-internet-services.md"
   },
   {
@@ -77243,46 +77261,56 @@
   {
     "id": "infosniper-net",
     "name": "infosniper.net",
-    "description": "OSINT tool: infosniper.net.",
+    "description": "Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotted on a map.",
     "url": "https://www.infosniper.net/index.php?lang=1",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick IP/domain geolocation with ISP, coordinates and a map view.",
     "selectorsIn": [
+      "ip-address",
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A few free lookups per day (≈5) with basic detail; a low-cost Pro tier removes ads and unlocks fuller ISP/hostname data.",
+    "opsec": "passive",
+    "opsecNote": "InfoSniper geolocates from its own databases, so the target IP/host isn't contacted by you. Only InfoSniper logs the value you looked up; a clean session is enough.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party aggregator of commercial IP-geolocation databases; results are approximate (ISP/city level at best) and can be defeated by VPN/proxy/mobile networks.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "info-sniper",
       "infosniper"
     ],
+    "aliases": [
+      "InfoSniper",
+      "infosniper.net"
+    ],
+    "tags": [
+      "domainsandips",
+      "Domains & IPs",
+      "ip-geolocation"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/infosniper-net.md"
   },
   {
@@ -95649,30 +95677,31 @@
   {
     "id": "whois-request",
     "name": "Whois Request",
-    "description": "Whois lookup tool that identifies the available registration information for a website or domain name",
+    "description": "Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and nameservers, plus newly-registered-domain tracking.",
     "url": "https://whoisrequest.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Free WHOIS lookups on a domain/IP, with the bonus of browsing newly-registered / recently-dropped domains.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free WHOIS lookups and newly-registered-domain lists; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WhoisRequest queries registries/registrars on your behalf, so the target's infrastructure isn't touched by your IP. Only WhoisRequest logs your query; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party WHOIS front-end (also known for its daily newly-registered-domain feeds); records come from authoritative registries but are subject to GDPR/privacy redaction and the site's presentation.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -95681,18 +95710,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whoisrequest",
+      "whois-search-com",
+      "mx-toolbox-whois-lookup"
+    ],
+    "aliases": [
+      "WhoisRequest",
+      "whoisrequest.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "whoisrequest"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-request.md"
   },
   {
@@ -151979,40 +152013,50 @@
   {
     "id": "show-my-street",
     "name": "Show My Street",
-    "description": "simple tool that simplifies and speeds up your research work with Google Street View. Just click on the map and see street panoramas",
-    "url": "http://showmystreet.com",
+    "description": "Use when you have an `address` or `geolocation` and want to see it on the ground — returns Google Street View panoramas (`image`) for quick visual confirmation of a location.",
+    "url": "https://showmystreet.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Fast address-to-Street-View lookup to eyeball what a location actually looks like.",
     "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Street View viewer; no account. (It surfaces Google's Street View imagery through a simpler interface.)",
+    "opsec": "passive",
+    "opsecNote": "You're viewing pre-captured Street View imagery, not contacting anyone at the location — the visit is invisible to any resident. Imagery is served by Google, so treat this as a Google Street View session for OpSec purposes (view logged-out if you prefer).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party front-end over Google Street View; the imagery is Google's (reliable but often months/years old), while the wrapper just makes address lookup faster.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ShowMyStreet",
+      "showmystreet.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Street View"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/show-my-street.md"
   },
   {
@@ -166678,38 +166722,51 @@
   {
     "id": "instances-social",
     "name": "Instances.Social",
-    "description": "A tool for searching across full list of instances in #Mastodon. It can help you choose the right instance to register (matching your views on spam, advertising and pornography) and in finding illegal content to investigate crimes.",
+    "description": "Use when you need to enumerate or pick Mastodon/fediverse servers — returns a searchable list of instances (`domain`s) with size, topic and moderation stats to target a username hunt.",
     "url": "https://instances.social/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Enumerating Mastodon instances by topic/language/size to know where to search for a fediverse user.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory; an API is offered (token-based) for programmatic listing. Manual browsing needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the instance directory is passive — you're reading server metadata, not touching any user. Note that unlike centralised networks, checking a handle on a specific Mastodon instance later means querying that instance, whose admins can see requests; use a sock puppet when you move from listing servers to probing accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known community-run directory (by TheKinrar, open source); instance stats are self-reported by servers via the Mastodon API, so counts/topics are indicative, not audited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "instances.social",
+      "Mastodon instances directory"
+    ],
     "tags": [
       "Social Media",
-      "Mastodon"
+      "Mastodon",
+      "fediverse"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/instances-social.md"
   },
   {

@@ -235,7 +235,7 @@ kind: group-index
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
 - **`httpfy`** (low) — A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redire
-- **`hurricane-electric-internet-services`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse
 - **`hussh`** (low) — shell script for domain analyzing
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
 - **`hypestat`** (low) — OSINT tool: HypeStat.
@@ -249,7 +249,7 @@ kind: group-index
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
 - **`infobox-russia`** (medium) — Russian service provider for registering websites and domain addresses
-- **`infosniper-net`** (medium) — OSINT tool: infosniper.net.
+- **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — OSINT tool: Infosniper.
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
 - **`inmotion-hosting-united-states`** (medium) — Service provider for registering websites and domain addresses
@@ -549,7 +549,7 @@ kind: group-index
 - **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
 - **`whois-history`** (low) — OSINT tool: Whois History.
 - **`whois-lookup-service`** (medium) — Tool that identifies the available registration information for a website or domain name
-- **`whois-request`** (medium) — Whois lookup tool that identifies the available registration information for a website or domain name
+- **`whois-request`** (medium) — Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and name
 - **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi
 - **`whois-search`** (low) — OSINT tool: Whois Search.
 - **`whois-service`** (low) — OSINT tool: WHOIS Service.

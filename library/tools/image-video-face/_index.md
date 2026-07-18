@@ -309,7 +309,7 @@ kind: group-index
 - **`sentinel-hub-eo-browser`** (medium) — complete archive of Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P, ESA's archive of Landsat 5, 7 and 8, global coverage of Landsat 8, Envi
 - **`sentinel-hub-playground`** (medium) — tool for viewing satellite images with different effects and rendering.
 - **`sherloq`** (medium) — Use when you have an `image` and want to test whether it was edited, staged, or re-saved and pull its embedded metadata — returns `metadata-
-- **`show-my-street`** (medium) — simple tool that simplifies and speeds up your research work with Google Street View. Just click on the map and see street panoramas
+- **`show-my-street`** (medium) — Use when you have an `address` or `geolocation` and want to see it on the ground — returns Google Street View panoramas (`image`) for quick 
 - **`shutterfly`** (high) — Use when you have a `name`/`username` and suspect the subject uses Shutterfly to share photos — returns `image` galleries and shared-album p
 - **`shutterstock`** (medium) — Use when you have a profile `image` and want to check if it's actually a stock photo (catfish signal) — returns whether the picture is a lic
 - **`sightengine-com`** (high) — Use when you have an `image` or video (e.g. a suspect profile photo) and want to test whether it is AI-generated/deepfaked or moderate its c

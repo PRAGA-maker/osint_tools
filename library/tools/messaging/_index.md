@@ -77,7 +77,7 @@ kind: group-index
 - **`informer-telegram`** (medium) — Python library to collect Telegram channel and user information.
 - **`instaanonym`** (high) — Use when you have an Instagram `username` and want to view that account's stories/profile media anonymously (without your account appearing 
 - **`instabot`** (high) — Use when you have a public Instagram post/profile URL and want the raw media inside Telegram — returns the downloaded photos/videos as files
-- **`instances-social`** (medium) — A tool for searching across full list of instances in #Mastodon. It can help you choose the right instance to register (matching your views 
+- **`instances-social`** (medium) — Use when you need to enumerate or pick Mastodon/fediverse servers — returns a searchable list of instances (`domain`s) with size, topic and 
 - **`intelligence-x-telegram-search`** (medium) — Google-based search engine for Telegram (includes Telegago)
 - **`itp-infotrack`** (high) — Use when you have a `name` (optionally a US `address` or `phone`) and want a free people-search preview — returns name, address, phone, age/
 - **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.

@@ -312,7 +312,7 @@ kind: group-index
 - **`rediff-web-portal-india`** (medium) — Indian news, video, email, entertainment, and shopping web portal
 - **`reelgood-com`** (low) — search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)
 - **`refdesk-newspaper-search`** (medium) — Searchable website for newspapers in the US and wordwide
-- **`rentry`** (medium) — OSINT tool: Rentry.
+- **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en
 - **`restaurant-news-united-states`** (medium) — Website related to news on restaurants, cafes, bars, other eating places, and the food services industry
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`rss-tools-website`** (medium) — Website that provides links to tools and informatino related to RSS Feeds
