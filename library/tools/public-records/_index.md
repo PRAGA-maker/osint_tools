@@ -933,7 +933,7 @@ kind: group-index
 - **`teachingcouncil-ie`** (high) — Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — r
 - **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
 - **`tendersinfo`** (medium) — Search tenders around the world by keywords.
-- **`tennessee-registered-voter-verification`** (medium) — Tennessee registered voter verification and search
+- **`tennessee-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` and want to confirm a Tennessee voter registration — returns registration status, county, and polling pla
 - **`terrorism-incidents-database`** (low) — OSINT tool: Terrorism Incidents Database.
 - **`tess`** (medium) — Search engine for #USA trademarks
 - **`texas-public-records-search`** (high) — Use when you have a `name` and a Texas nexus and want an organised directory into official Texas state/county record databases — returns lin

@@ -191,7 +191,7 @@ kind: group-index
 - **`submarinecablemap-com`** (low) — submarine communications cables map
 - **`surfy`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, 
 - **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
-- **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
+- **`the-burnsy-vehicle-osint`** (medium) — Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and regi
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
 - **`track-trace`** (medium) — Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and deliver
 - **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&

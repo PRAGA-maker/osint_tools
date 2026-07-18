@@ -30,7 +30,7 @@ kind: group-index
 - **`abc-search-engine`** (medium) — Surface web search engine covering worldwide results, including various categories to choose from
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
 - **`abilogic`** (low) — Business web directory
-- **`aboutus`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`aboutus`** (low) — Use when you have a `domain` and want a legacy profile of a website/business — a wiki of site descriptions and contact info, now largely arc
 - **`abusech`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `d
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
 - **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
@@ -705,7 +705,7 @@ kind: group-index
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.
-- **`similar-site-search`** (medium) — Search engine that searches for websites and webages similar to the original entry made by the user
+- **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
 - **`similarsites-com`** (medium) — Discover websites that are similar to each other
 - **`similarsites`** (low) — OSINT tool: SimilarSites.
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
@@ -766,7 +766,7 @@ kind: group-index
 - **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
 - **`totalbeauty`** (medium) — Website related to makeup, skincare, and other beauty related reviews
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
-- **`trademarkia`** (medium) — Search tool for trademarks filed in the US since 1870
+- **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
 - **`trooclick`** (low) — OSINT tool: Trooclick.
 - **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
 - **`trulia-united-states`** (medium) — Real estate listing search tool that also provides a location data overview

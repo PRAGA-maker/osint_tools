@@ -67,7 +67,7 @@ kind: group-index
 - **`edgar`** (low) — Database of corporate filings for the US
 - **`elliptic`** (low) — OSINT tool: Elliptic.
 - **`ether-chain`** (low) — OSINT tool: Ether Chain.
-- **`etherscan-io`** (medium) — OSINT tool: etherscan.io.
+- **`etherscan-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address and want its full on-chain history — returns balance, every transaction, token holding
 - **`ethplorer-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address (or a token/contract) and want its balances, token holdings, and transaction counterpa
 - **`ethtective-com`** (medium) — Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link 
 - **`eu-consolidated-corporate-registers`** (low) — Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.

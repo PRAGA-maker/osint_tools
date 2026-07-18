@@ -19,7 +19,7 @@ kind: group-index
 - **`google-scholar-case-law`** (medium) — Use when you have a `name` or case citation and want free full-text US court opinions that may mention a person as a party, witness, or subj
 - **`judyrecords`** (high) — Use when you have a `name` and want free nationwide US court-case records — returns case filings, parties (associates), and document-id lead
 - **`most-wanted-criminal-pages`** (medium) — Use when you have a `name`, `image` or `physical-description` and want to check the FBI's wanted lists — returns fugitive profiles with phot
-- **`national-sex-offender-search`** (medium) — National sex offender search
+- **`national-sex-offender-search`** (medium) — Use when you have a `name` or `address` and want an authoritative US-wide offender check — the DOJ portal that searches all 50 states, DC, t
 - **`nationwide-county-court-records`** (medium) — Locating county court records
 - **`the-inmate-locator`** (high) — Use when you have a `name` (or BOP register number) and want to find someone in U.S. federal prison — returns their facility `geolocation`, 
 - **`unicourt`** (medium) — Use when you have a `name` (party) and want US litigation history — searches state and federal court dockets to return cases, filings and th

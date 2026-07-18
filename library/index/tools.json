@@ -49644,44 +49644,56 @@
   {
     "id": "quikr-classified-ads-india",
     "name": "Quikr Classified Ads (India)",
-    "description": "Classified advertisements-related website that provides regional services",
-    "url": "http://www.quikr.com",
+    "description": "Use when you have a `name`, handle, or location in India and want a subject's classified ads — returns listings with seller display name, photos, city, and contact leads.",
+    "url": "https://www.quikr.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's for-sale/rental/jobs/services classified ads across Indian cities to surface photos, location, and contact leads.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search listings; posting is free too, with paid promotion optional. No account needed to browse.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive while browsing public ads — the seller is not notified. Replying to or messaging a seller is active and exposes your account; use a sock-puppet profile if you must make contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major Indian classifieds marketplace; listings are user-generated and unverified, so seller-provided details are leads rather than confirmed facts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "quikr-india-classifieds"
     ],
+    "aliases": [
+      "quikr.com",
+      "Quikr India"
+    ],
+    "tags": [
+      "toddington",
+      "classifieds",
+      "marketplace",
+      "india"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/quikr-classified-ads-india.md"
   },
   {
@@ -111022,41 +111034,52 @@
   {
     "id": "bitquery-explorer",
     "name": "Bitquery Explorer",
-    "description": "Advanced cross-chain data querying and real-time blockchain event tracking",
+    "description": "Use when you have a `crypto-wallet` address across chains and want deep, queryable on-chain data — returns transactions, token transfers, and DEX trades over 40+ blockchains.",
     "url": "https://explorer.bitquery.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "multi-chain-explorers"
     ],
-    "bestFor": "Advanced cross-chain data querying and real-time blockchain event tracking",
-    "input": "Blockchain query via GraphQL (address, transaction, token, smart contract), or web interface search",
-    "output": "Transaction data, token transfer history, DEX trades, smart contract events, real-time streaming via WebSocket",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Cross-chain blockchain data querying — following an address's transfers, token flows, and DEX activity across many chains from one interface (or GraphQL API).",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web explorer and a free API tier (rate-limited, needs a free API key); high-volume/GraphQL streaming use is paid.",
     "opsec": "passive",
-    "opsecNote": "API-first platform; queries are processed by Bitquery servers. Free tier available with rate limits.",
+    "opsecNote": "Passive — you query public on-chain data via Bitquery's servers; the wallet owner sees nothing. API use ties queries to your (sock-puppet) account and key; the web explorer needs no login for lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established blockchain-data provider indexing 40+ chains; its data derives from the public ledgers and is checkable against each chain's native explorer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Bitquery",
+      "explorer.bitquery.io"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "multi-chain",
+      "graphql"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/multi-chain-explorers/bitquery-explorer.md"
   },
   {
@@ -111464,46 +111487,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin/blockonomics.md"
-  },
-  {
-    "id": "blockscan",
-    "name": "Blockscan",
-    "description": "EVM-chain portfolio aggregation and cross-chain transaction tracking",
-    "url": "https://blockscan.com/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto",
-      "chain-analysis-platforms"
-    ],
-    "bestFor": "EVM-chain portfolio aggregation and cross-chain transaction tracking",
-    "input": "Wallet address across EVM chains or transaction hash",
-    "output": "Portfolio balances across chains, transaction history, token holdings, DeFi position tracking",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Aggregates data from public blockchain APIs; no account required for basic lookups.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/chain-analysis-platforms/blockscan.md"
   },
   {
     "id": "bpfi-ie",
@@ -112810,48 +112793,56 @@
   },
   {
     "id": "etherscan-io",
-    "name": "etherscan.io",
-    "description": "OSINT tool: etherscan.io.",
-    "url": "https://etherscan.io/balancecheck-tool",
+    "name": "Etherscan",
+    "description": "Use when you have an Ethereum `crypto-wallet` address and want its full on-chain history — returns balance, every transaction, token holdings, ENS name, and public labels.",
+    "url": "https://etherscan.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Inspecting any Ethereum address or transaction — balances, complete transfer history, tokens/NFTs, and community/exchange labels.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "crypto-wallet",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse all on-chain data; an optional API key (free tier) is needed only for programmatic access.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read public ledger data; the address owner cannot see you querying. No sock puppet needed for browsing, though an API key ties automated queries to an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The canonical, widely-trusted Ethereum block explorer; the raw chain data is authoritative, and it's the reference other Ethereum tools are checked against.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "etherscan",
       "etherscan-nft-tracker"
     ],
+    "aliases": [
+      "etherscan.io",
+      "Etherscan Ethereum explorer"
+    ],
+    "tags": [
+      "cryptosites",
+      "CryptoCurrency Related Sites",
+      "ethereum",
+      "block-explorer"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/etherscan-io.md"
   },
   {
@@ -248239,42 +248230,57 @@
   },
   {
     "id": "national-sex-offender-search",
-    "name": "National Sex Offender Search",
-    "description": "National sex offender search",
+    "name": "National Sex Offender Search (NSOPW)",
+    "description": "Use when you have a `name` or `address` and want an authoritative US-wide offender check — the DOJ portal that searches all 50 states, DC, territories, and tribal registries at once.",
     "url": "https://www.nsopw.gov/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "National sex offender search",
-    "input": "Name, address, jurisdiction",
-    "output": "Registry info, photo, address",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative nationwide (US) sex-offender lookup by name or location, querying every state/territory/tribal registry from one federal front end.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "image",
+      "physical-description"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official U.S. Department of Justice public service; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Official government aggregator",
+    "opsecNote": "Passive — you query official public registries; the registrant is not notified. Registry data is provided for public safety only — using it to harass or discriminate is unlawful.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Dru Sjodin National Sex Offender Public Website, operated by the U.S. Department of Justice, querying the authoritative state/territorial/tribal registries in real time — the primary source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NSOPW",
+      "Dru Sjodin National Sex Offender Public Website",
+      "nsopw.gov"
+    ],
+    "tags": [
+      "sex-offender",
+      "registry",
+      "public-records",
+      "doj"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/national-sex-offender-search.md"
   },
   {
@@ -263778,47 +263784,53 @@
   {
     "id": "tennessee-registered-voter-verification",
     "name": "Tennessee Registered Voter Verification",
-    "description": "Tennessee registered voter verification and search",
+    "description": "Use when you have a `name` + `dob` and want to confirm a Tennessee voter registration — returns registration status, county, and polling place for a matched voter.",
     "url": "https://tnmap.tn.gov/voterlookup/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person with a given birth month/year is a registered voter in Tennessee, and where.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official tool from the Tennessee Secretary of State; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query an official state lookup; the person is not notified. It requires exact identifying inputs (name + birth month/year + county), so it confirms a known identity rather than trawling for one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Tennessee Secretary of State voter-lookup service; results reflect the state's authoritative voter file.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "TN voter lookup",
+      "tnmap.tn.gov voterlookup"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "voter-records",
+      "public-records",
+      "tennessee"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tennessee-registered-voter-verification.md"
   },
   {
@@ -270756,26 +270768,32 @@
   },
   {
     "id": "aboutus",
-    "name": "Aboutus",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
-    "url": "http://www.aboutus.com",
+    "name": "AboutUs",
+    "description": "Use when you have a `domain` and want a legacy profile of a website/business — a wiki of site descriptions and contact info, now largely archival and best checked via web archives.",
+    "url": "https://www.aboutus.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling a historical, wiki-style description and contact details for a website or business domain (mostly of archival value now).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "employer-org"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to browse; the wiki is no longer actively maintained, so treat entries as legacy/archival rather than current.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read a public wiki about a domain; the domain owner is not notified. Nothing to leak beyond your own visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A crowdsourced site-directory wiki that peaked around 2008–2014 (20M+ entries) and is now inactive/unmaintained; entries are user-generated, often stale, and should be corroborated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -270783,15 +270801,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "aboutus.com",
+      "AboutUs.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "domain-profile",
+      "legacy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/aboutus.md"
   },
   {
@@ -302157,42 +302180,50 @@
   {
     "id": "similar-site-search",
     "name": "Similar Site Search",
-    "description": "Search engine that searches for websites and webages similar to the original entry made by the user",
-    "url": "http://www.similarsitesearch.com",
+    "description": "Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the one you entered.",
+    "url": "https://www.similarsitesearch.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding websites similar to a given site to discover competitors, mirrors, or alternatives in the same niche.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search for similar sites; supported by ads. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query the tool's own index by domain; the target site's operator is not contacted or notified. Nothing to leak beyond your own lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A consumer-oriented site-discovery service; its \"similarity\" is algorithmic/community-driven, useful as a lead generator rather than an authoritative relationship map.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "similarsitesearch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "search-engines",
-      "specialty-search"
+      "site-discovery"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/similar-site-search.md"
   },
   {
@@ -304943,45 +304974,57 @@
   {
     "id": "trademarkia",
     "name": "Trademarkia",
-    "description": "Search tool for trademarks filed in the US since 1870",
-    "url": "http://www.trademarkia.com/",
+    "description": "Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney, and filing dates across US/EU/UK/CA.",
+    "url": "https://www.trademarkia.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Free trademark search by mark or by owner name to tie a person/company to brands, with the owner's name, address, and filing history.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Trademark search (12M+ marks) is free; the paid side is Trademarkia's registration/legal filing services, not the search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a public trademark database; no subject is notified. Owner names and addresses in filings are public record; standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Search is drawn from official trademark-office records (USPTO and equivalents); the underlying filings are authoritative public records, though Trademarkia itself is a commercial law-firm platform.",
     "missingPersonsRelevance": "medium",
     "coverage": [
+      "us",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "european-trademark-search",
       "international-trademark-search"
     ],
+    "aliases": [
+      "trademarkia.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "trademark",
+      "business"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/trademarkia.md"
   },
   {
@@ -366279,46 +366322,56 @@
   },
   {
     "id": "the-burnsy-vehicle-osint",
-    "name": "The Burnsy Vehicle OSINT",
-    "description": "OSINT tool: The Burnsy Vehicle OSINT.",
+    "name": "The Burnsy Vehicle OSINT Collection",
+    "description": "Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and registries for 50+ countries.",
     "url": "https://github.com/theburnsy/vehicle-osint-collection",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "A one-stop, country-indexed directory of license-plate lookups, VIN decoders, and vehicle-image recognition tools to route a vehicle query to the correct resource.",
     "selectorsIn": [
       "vehicle-plate",
-      "vin"
+      "vin",
+      "image"
     ],
     "selectorsOut": [
       "name",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source GitHub collection (a curated README); the individual tools it links vary from free government portals to paid services.",
+    "opsec": "passive",
+    "opsecNote": "Passive — the collection itself is a static list, safe to read. OpSec depends on the linked tool you then use; some plate/VIN lookups are active queries against registries, so apply each tool's own precautions and a sock puppet where needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-regarded, actively-maintained community repository (~1k stars) by TheBurnsy; it curates third-party tools it doesn't operate, so vet each linked resource individually.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Vehicle OSINT Collection",
+      "theburnsy vehicle-osint"
+    ],
     "tags": [
       "vehicle",
       "open-source",
-      "cli"
+      "directory",
+      "license-plate",
+      "vin"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/the-burnsy-vehicle-osint.md"
   },
   {

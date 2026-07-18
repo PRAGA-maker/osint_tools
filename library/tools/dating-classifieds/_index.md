@@ -90,7 +90,7 @@ kind: group-index
 - **`plenty-of-fish-com`** (high) — Use when a subject may have a dating profile — search POF by username/area/age to surface a photo, self-description, and approximate locatio
 - **`plentyoffish-online-dating`** (medium) — OSINT tool: PlentyOfFish (Online Dating).
 - **`pornhoard-com`** (medium) — OSINT tool: pornhoard.com.
-- **`quikr-classified-ads-india`** (medium) — Classified advertisements-related website that provides regional services
+- **`quikr-classified-ads-india`** (medium) — Use when you have a `name`, handle, or location in India and want a subject's classified ads — returns listings with seller display name, ph
 - **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu
 - **`recycler-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
 - **`sales-spider`** (medium) — Use when you have a `name` or `employer-org` in North American SMB circles and want business-directory and profile detail — returns employer
