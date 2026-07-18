@@ -40,7 +40,7 @@ kind: group-index
 - **`emily-bz`** (medium) — OSINT tool: emily.bz.
 - **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally
 - **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
-- **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
+- **`findlatitudeandlongitude-com`** (low) — Use when you have an `address` or a map point and want exact latitude/longitude (or the reverse) — returns `geolocation`.
 - **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur
 - **`freemaptools-com`** (medium) — Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radiu
@@ -76,7 +76,7 @@ kind: group-index
 - **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
 - **`landmark-toolpie-com`** (medium) — OSINT tool: landmark.toolpie.com.
 - **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
-- **`live-map-of-london-underground-trains`** (medium) — OSINT tool: Live map of London Underground trains.
+- **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
 - **`livecorona-co-kr`** (medium) — OSINT tool: Livecorona.co.kr.
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv

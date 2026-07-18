@@ -60,7 +60,6 @@ kind: group-index
 - **`justlanded-classified-ads-worldwide`** (medium) — Use when your subject is an expat/mover and you have a `name`/`username` — Just Landed's per-country classifieds, housing, jobs and communit
 - **`kijiji-canada-classifieds`** (medium) — Use when investigating a Canadian subject and you want to search local classifieds for their posts, sales, vehicles, or contact details by `
 - **`kijiji-canada`** (medium) — OSINT tool: Kijiji (Canada).
-- **`kijiji-classified-ads-canada`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
 - **`kleinanzeigen-de`** (high) — Use when a German-speaking subject may post on Germany's largest classifieds site — pivot from name/phone/location to seller listings and co
 - **`locanto-free-classified-ads-worldwide`** (medium) — Use when you have a username, phone, or location and want to find a subject's classified ads (jobs, personals, sales) — returns social-profi
 - **`look-by-username-replace-username-in-this-case-mark`** (medium) — OSINT tool: Look by username - replace @username (in this case, Mark).

@@ -86,7 +86,7 @@ kind: group-index
 - **`association-assq-qc-ca`** (medium) — OSINT tool: Association-assq.qc.ca.
 - **`austcemindex-com`** (high) — Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `
 - **`australian-business-register-abn-lookup`** (medium) — Use when you have a `name` or `employer-org` in Australia and want the official business registration record — returns employer-org, address
-- **`australian-securities-and-investments-commission`** (medium) — ASIC company register search
+- **`australian-securities-and-investments-commission`** (medium) — Use when you have a company/business `name` or a person's `name` in Australia and want registered company, business-name, and officeholder r
 - **`austria`** (high) — Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
 - **`aws-public-datasets`** (low) — OSINT tool: AWS Public Datasets.
 - **`b2bhint-com`** (high) — Use when you have an `employer-org` or officer `name` and want company data across 190 countries — returns company details, current/former d
@@ -490,7 +490,6 @@ kind: group-index
 - **`integrated-companies-research-china-hong-kong`** (medium) — Chinese business-related search engine that searches by company name and director name
 - **`inteltechniques-business-search-tool`** (high) — Use when you have a company `employer-org` or a business owner's `name` and want to sweep many business-record sources at once — returns reg
 - **`interment`** (high) — Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and rela
-- **`international-company-profile-united-kingdom`** (medium) — UK based website providing company credit reports, appraisals, and other business-related information
 - **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.
 - **`international-federation-of-accountants-ifac`** (low) — Use when you have a `name`/`employer-org` in accountancy and want to trace their professional body — returns member-organization directories
 - **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
@@ -518,7 +517,7 @@ kind: group-index
 - **`jail-records`** (high) — Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators r
 - **`jailbase`** (high) — Use when you have a `name` and want to check for a recent US arrest — returns booking records with mugshot, charges, booking date and county
 - **`jerseyfsc-org`** (high) — Use when you have an `employer-org` or `name` tied to a Jersey company/entity and want official registry data — returns entity existence, st
-- **`jisc`** (medium) — Access thousands of resources from e-books and images to journals and texts
+- **`jisc`** (low) — Use when researching a UK academic/institutional subject and want a gateway to archives, journals, and digitised collections that may mentio
 - **`journal-officiel-gouv-fr`** (medium) — Use when you have a French association `name`, person, or `address` and want the official register — returns declared non-profit association
 - **`journalmap-geosearch`** (low) — Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `nam
 - **`junar`** (low) — OSINT tool: Junar.

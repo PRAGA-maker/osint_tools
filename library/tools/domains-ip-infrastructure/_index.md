@@ -508,7 +508,6 @@ kind: group-index
 - **`web-check`** (low) — OSINT tool: Web-Check.
 - **`web-dsn-taiwan`** (medium) — Taiwan based service provider for registering websites and domain addresses
 - **`web-hosting-ireland`** (medium) — Ireland based service provider for registering websites and domain addresses
-- **`web-misr-egypt`** (medium) — Egypt based service provider for registering websites and domain addresses
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Tool used to identify the age of a website
 - **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera

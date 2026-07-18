@@ -45,7 +45,7 @@ kind: group-index
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
 - **`airlines-inform`** (medium) — Aviation-related website that offers a search of the global database of airlines and airports
 - **`alabama-medical-license-search`** (medium) — Alabama Board of Medical Examiners physician license search tool
-- **`alhea-search-engine`** (medium) — Surface web search engine covering worldwide results
+- **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
 - **`all-in-one`** (low) — OSINT tool: All-in-One.
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
 - **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
@@ -658,8 +658,7 @@ kind: group-index
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
 - **`salary-and-wage-occupation-codes-australia`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`sapo-portugal`** (low) — OSINT tool: SAPO (Portugal).
-- **`sapo`** (medium) — OSINT tool: SAPO.
+- **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`savvysearch`** (medium) — Meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
 - **`scala`** (medium) — Open source code search engine
 - **`scholarpedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on s

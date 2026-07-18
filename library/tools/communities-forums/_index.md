@@ -77,7 +77,7 @@ kind: group-index
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
 - **`council-on-foreign-relations`** (medium) — Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police
 - **`createtv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`crn-com-technology-news-for-solution-providers`** (medium) — Online articles, news, and analysis for solution providers and technology integrators
+- **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`cutapaste`** (medium) — OSINT tool: Cutapaste.

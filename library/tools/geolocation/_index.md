@@ -294,7 +294,7 @@ kind: group-index
 - **`timejones-com`** (medium) — OSINT tool: timejones.com.
 - **`timestamp-converter-com`** (medium) — Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns 
 - **`toronto-area-live-traffic-cams`** (low) — OSINT tool: Toronto area Live Traffic Cams.
-- **`toronto-live`** (medium) — OSINT tool: Toronto Live.
+- **`toronto-live`** (low) — Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolo
 - **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
 - **`trendsmap-com`** (medium) — Explore most popular #Twitter trends, hashtags and users on the worldmap

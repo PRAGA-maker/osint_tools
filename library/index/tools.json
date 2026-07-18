@@ -26291,25 +26291,33 @@
   {
     "id": "crn-com-technology-news-for-solution-providers",
     "name": "CRN.com Technology News For Solution Providers",
-    "description": "Online articles, news, and analysis for solution providers and technology integrators",
+    "description": "Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns `employer-org`, `associate`, `social-profile`.",
     "url": "http://www.crn.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Researching IT-channel companies, executives, and partners through a searchable technology-news archive.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; no account required (some content may be gated behind a free registration or ad-blocker prompt).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching articles is passive and anonymous; you reveal nothing to the subject. Avoid submitting newsletter/registration forms with real details.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "An established trade publication (The Channel Company) with editorial standards; reliable for corporate/executive context, though it is journalism, not a records database.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -26317,15 +26325,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CRN",
+      "Computer Reseller News"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "it-industry"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/crn-com-technology-news-for-solution-providers.md"
   },
   {
@@ -48213,50 +48226,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/kijiji-canada-classifieds.md"
-  },
-  {
-    "id": "kijiji-classified-ads-canada",
-    "name": "Kijiji Classified Ads (Canada)",
-    "description": "One of the Top 10 classified advertisements-related websites in Canada",
-    "url": "http://www.kijiji.ca",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "kijiji-canada",
-      "kijiji-canada-classifieds"
-    ],
-    "_file": "library/tools/dating-classifieds/kijiji-classified-ads-canada.md"
   },
   {
     "id": "kleinanzeigen-de",
@@ -93233,52 +93202,6 @@
     "_file": "library/tools/domains-ip-infrastructure/reputation/web-inspector-online-scan.md"
   },
   {
-    "id": "web-misr-egypt",
-    "name": "Web Misr (Egypt)",
-    "description": "Egypt based service provider for registering websites and domain addresses",
-    "url": "http://webmisr.net",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/web-misr-egypt.md"
-  },
-  {
     "id": "web-tech-survey",
     "name": "Web Tech Survey",
     "description": "OSINT tool: Web Tech Survey.",
@@ -114474,29 +114397,35 @@
   {
     "id": "orbit",
     "name": "Orbit",
-    "description": "Bitcoin transaction network visualization and wallet relationship mapping",
+    "description": "Use when you have a Bitcoin `crypto-wallet` address and want to map the wallets it transacts with as a graph — returns `crypto-wallet`, `associate`.",
     "url": "https://github.com/s0md3v/Orbit",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "bitcoin"
     ],
-    "bestFor": "Bitcoin transaction network visualization and wallet relationship mapping",
-    "input": "Bitcoin address(es) via command line; supports single or multiple wallet analysis",
-    "output": "Interactive graph visualization showing fund flows, transaction frequency, node connections",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recursively crawling a Bitcoin address's transaction network and visualising related wallets as a graph.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python CLI); you run it yourself, so no cost beyond your own compute.",
     "opsec": "active",
-    "opsecNote": "Makes direct queries to blockchain APIs (configurable). Graph output may leak investigation scope to observers.",
+    "opsecNote": "Orbit queries public blockchain data over the network from your machine, so your IP hits those endpoints — route through a VPN/sock-puppet. The graph file you generate reveals your investigation's scope, so store and share it carefully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular open-source tool by a well-known author (s0md3v, ~600+ stars); functional and widely used, but wallet clustering is heuristic — links are leads, not proof of shared ownership.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -114509,11 +114438,17 @@
       "zen",
       "zen-github-com"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "s0md3v/Orbit"
+    ],
+    "tags": [
+      "bitcoin",
+      "blockchain",
+      "graph-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin/orbit.md"
   },
   {
@@ -129862,35 +129797,50 @@
   {
     "id": "toronto-live",
     "name": "Toronto Live",
-    "description": "OSINT tool: Toronto Live.",
+    "description": "Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolocation`.",
     "url": "https://apps.esri.ca/torontolive/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Viewing live Toronto incident/traffic map layers to add situational context to a location.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Esri Canada demo map; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are viewing a public live map; nothing is sent to any subject and no personal query is made. Purely geographic/situational context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Published by Esri Canada using City of Toronto / open live-data feeds; a demonstration app, reliable as a data viewer but not an investigative database.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Esri Toronto Live"
+    ],
+    "tags": [
+      "live-map",
+      "toronto",
+      "situational-awareness"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/toronto-live.md"
   },
   {
@@ -157891,43 +157841,51 @@
   {
     "id": "findlatitudeandlongitude-com",
     "name": "findlatitudeandlongitude.com",
-    "description": "OSINT tool: findlatitudeandlongitude.com.",
+    "description": "Use when you have an `address` or a map point and want exact latitude/longitude (or the reverse) — returns `geolocation`.",
     "url": "https://www.findlatitudeandlongitude.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Converting between a street address and precise lat/long coordinates for mapping and cross-referencing.",
     "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
       "geolocation",
       "address"
     ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web utility, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Geocoding runs server-side on the site; you reveal the address/coordinate you look up to that site, not to the subject. Nothing is sent to the location's occupant.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-standing free geocoding convenience site built on mapping-provider data; fine for coordinate conversion, not an authoritative record.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "find latitude and longitude"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "geocoding"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/findlatitudeandlongitude-com.md"
   },
   {
@@ -159415,35 +159373,50 @@
   {
     "id": "live-map-of-london-underground-trains",
     "name": "Live map of London Underground trains",
-    "description": "OSINT tool: Live map of London Underground trains.",
+    "description": "Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — returns `geolocation`.",
     "url": "https://traintimes.org.uk/map/tube/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Watching live approximate Tube train positions and line status across the London Underground.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public visualisation built on Transport for London's open data; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are just viewing a public live map; nothing is sent to any subject and no query about a person is made. Purely situational/geographic context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Built by Matthew Somerville on official TfL open data; a well-known, reliable public visualisation, though positions are interpolated from timetables/feeds, not GPS.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "traintimes tube map",
+      "London Underground live map"
+    ],
+    "tags": [
+      "transit",
+      "live-map",
+      "london"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/live-map-of-london-underground-trains.md"
   },
   {
@@ -219136,47 +219109,57 @@
   {
     "id": "australian-securities-and-investments-commission",
     "name": "Australian Securities & Investments Commission",
-    "description": "ASIC company register search",
-    "url": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx?_adf.ctrl-state=6vyfl5n6o_20",
+    "description": "Use when you have a company/business `name` or a person's `name` in Australia and want registered company, business-name, and officeholder records — returns `employer-org`, `address`, `associate`.",
+    "url": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming Australian companies/business names and linking a person to registered entities and addresses.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Name/existence searches on ASIC Connect are free; full extracts (officeholders, historical details) are pay-per-document, purchased through ASIC or an information broker.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Querying the register does not notify the company or person. Free searches are anonymous; buying a paid extract requires payment details, which are attributable — use appropriate billing if you go that far.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Australian government corporate regulator's register — authoritative for company and business-name status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "ASIC",
+      "ASIC Connect",
+      "ASIC company register"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "corporate-registry"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/australian-securities-and-investments-commission.md"
   },
   {
@@ -240552,52 +240535,6 @@
     "_file": "library/tools/public-records/interment.md"
   },
   {
-    "id": "international-company-profile-united-kingdom",
-    "name": "International Company Profile (United Kingdom)",
-    "description": "UK based website providing company credit reports, appraisals, and other business-related information",
-    "url": "https://www.icpcredit.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/international-company-profile-united-kingdom.md"
-  },
-  {
     "id": "international-energy-agency-statistics",
     "name": "International Energy Agency Statistics",
     "description": "OSINT tool: International Energy Agency Statistics.",
@@ -241987,47 +241924,55 @@
   {
     "id": "jisc",
     "name": "JISC",
-    "description": "Access thousands of resources from e-books and images to journals and texts",
+    "description": "Use when researching a UK academic/institutional subject and want a gateway to archives, journals, and digitised collections that may mention a `name` or `employer-org` — returns `employer-org`, `document-id`, `associate`.",
     "url": "https://www.jisc.ac.uk/learning-and-research-resources",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reaching UK academic/archival databases (archives, theses, digitised collections) that can place a person in an institution or record.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "JISC itself is a UK non-profit; its landing page and some services (e.g. Archives Hub) are free/public, while many licensed databases require a UK institutional login.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing public JISC services (Archives Hub, etc.) is passive and anonymous. Licensed resources need an institutional Shibboleth/OpenAthens login, which is attributable to that account — only use one you're entitled to.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "JISC is the UK's established non-profit digital agency for education/research; the services it fronts are authoritative academic sources, though it is a gateway rather than a single searchable person index.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Jisc",
+      "Joint Information Systems Committee"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/jisc.md"
   },
   {
@@ -271462,25 +271407,33 @@
   {
     "id": "alhea-search-engine",
     "name": "Alhea Search Engine",
-    "description": "Surface web search engine covering worldwide results",
+    "description": "Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile`, `domain`.",
     "url": "http://www.alhea.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick alternate-engine metasearch pass to catch results your primary engine buries.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to use, ad-supported; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ad-heavy metasearch historically bundled as a browser-hijacker/PUP. Query it in a sandboxed/sock-puppet browser, never install its toolbar or extensions, and treat any redirect prompts with suspicion.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A low-reputation ad-driven metasearch flagged by security vendors as a potentially-unwanted browser hijacker; results are aggregated third-party output, not its own index.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -271488,15 +271441,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Alhea"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "metasearch"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/alhea-search-engine.md"
   },
   {
@@ -299820,85 +299777,53 @@
   {
     "id": "sapo",
     "name": "SAPO",
-    "description": "OSINT tool: SAPO.",
+    "description": "Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — returns `social-profile`, `domain`.",
     "url": "https://www.sapo.pt",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Portugal-focused web search and portal content that global engines under-rank.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "search",
-      "international"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "sapo-portugal"
-    ],
-    "_file": "library/tools/search-engines/sapo.md"
-  },
-  {
-    "id": "sapo-portugal",
-    "name": "SAPO (Portugal)",
-    "description": "OSINT tool: SAPO (Portugal).",
-    "url": "http://www.sapo.pt",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse; a free SAPO account is only needed for its mail/webmail and personalised services.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive and anonymous. Do not sign into a SAPO account tied to your real identity; if you need account-gated services, use a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major, long-established Portuguese web portal (Altice Portugal); reliable as a regional search/content gateway, though results are aggregated web content, not a vetted record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "pt"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SAPO Portugal",
+      "sapo.pt"
+    ],
     "tags": [
-      "main-national-search-engines"
+      "search",
+      "international",
+      "portugal"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "sapo"
-    ],
-    "_file": "library/tools/search-engines/sapo-portugal.md"
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
+    "_file": "library/tools/search-engines/sapo.md"
   },
   {
     "id": "savvysearch",
