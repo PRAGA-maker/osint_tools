@@ -35,7 +35,7 @@ kind: group-index
 - **`batchgeo`** (medium) — Use when you have a spreadsheet/list of addresses and want to drop them onto an interactive, shareable map fast — no GIS account or setup.
 - **`baton-rouge-traffic-cams`** (low) — OSINT tool: Baton Rouge Traffic Cams.
 - **`bellingcat-openstreetmap-search`** (medium) — A user interface to search OpenStreetMap data for features in proximity to each other.
-- **`bfro-bigfoot-sightings-database`** (medium) — This comprehensive database of credible sightings and related reports is maintained by an all-volunteer network of bigfoot/sasquatch researc
+- **`bfro-bigfoot-sightings-database`** (medium) — Use when you have a `geolocation` (US state/county or Canadian province) and want dated eyewitness reports pinned to remote areas — returns 
 - **`bigfoot-and-ufo-map`** (medium) — Bigfoot, UFO and other sightings around USA and Europe
 - **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Bigfoot sightings reports density around the USA
 - **`bing-maps`** (medium) — Use when you need a second mapping/imagery source — Microsoft aerial and 3D views, directions, and business search — to confirm a location o

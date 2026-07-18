@@ -14,7 +14,7 @@ kind: group-index
 - **`crunchbase`** (medium) — Startup funding research, investor mapping, and executive tracking
 - **`europages`** (low) — Use when you have a company `name`, product, or `employer-org` and want European B2B company listings — returns employer-org contact details
 - **`littlesis`** (medium) — Use when you have a `name`/`employer-org` of a public figure or company and want their power network — returns board seats, donations, and r
-- **`opencorporates`** (medium) — Cross-jurisdictional company research and corporate network mapping
+- **`opencorporates`** (medium) — Use when you have a `name` (person or company) and want corporate records across jurisdictions — returns companies, officers/directorships, 
 - **`owler`** (medium) — Competitive intelligence and company profile research
 - **`rusprofile`** (medium) — Researching Russian companies, directors, and legal entity registration
 - **`uk-data`** (medium) — Use when you have a UK `employer-org` (company name or number) and want its registration, financials, and directors — returns `employer-org`

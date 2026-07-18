@@ -54,7 +54,7 @@ kind: group-index
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
 - **`business-com`** (medium) — Business and technology-related guides and articles
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
-- **`buzzsumo`** (medium) — Social Media Search Engine
+- **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`cafemom`** (medium) — Pregnant women networking website
 - **`care2`** (medium) — Wellness welfare and rights networking website
 - **`catster`** (medium) — Networking website for cat lovers

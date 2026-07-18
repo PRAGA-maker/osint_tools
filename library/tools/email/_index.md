@@ -226,7 +226,7 @@ kind: group-index
 - **`whatbreach`** (high) — Use when you have an `email` and want to know which data breaches it appears in — returns breach names, associated pastes and (with keys) do
 - **`whatismyipaddress-com`** (high) — Use when you have a raw email's full headers and want the originating IP and its approximate geolocation — paste headers into the Email Trac
 - **`wonderoftech-com`** (high) — Use to learn about Ugly Email — a browser extension that flags tracking pixels in incoming Gmail — this URL is a how-to article, not the ext
-- **`xposedornot`** (medium) — Searches an aggregated repository of compromised/breached passwords to check exposure.
+- **`xposedornot`** (medium) — Use when you have an `email` (or password) and want to know which known data breaches it appears in — returns breach names, leaked data clas
 - **`yahoo-mail`** (high) — Use when you have an `email` and want to confirm whether it is a live Yahoo/AOL account (via the sign-in / account-recovery flow) — returns 
 - **`yandex-mail`** (high) — Use when you have an `email` on the yandex domain (or need a sock-puppet base in the Yandex ecosystem) and want account-existence confirmati
 - **`yellow-pages`** (high) — Use when you have a Canadian `name`, business, or `phone` and want directory details — returns `address`, `phone`, and business (`employer-o

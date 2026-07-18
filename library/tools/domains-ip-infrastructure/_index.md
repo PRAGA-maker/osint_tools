@@ -340,7 +340,6 @@ kind: group-index
 - **`name-com-bulk-search`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`name-com-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`namecheap-united-states`** (medium) — Tool that identifies the available registration information for a website or domain name
-- **`namecheap-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
 - **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page

@@ -690,7 +690,7 @@ kind: group-index
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
 - **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
-- **`twipho`** (medium) — OSINT tool: Twipho.
+- **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
 - **`twish`** (medium) — very simple, quick, comfortable and nicely designed advanced #Twitter search query builder for #GoogleChrome.
 - **`twitch-database`** (medium) — Following List + Channel Metadata + Role Lookup
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
@@ -808,7 +808,7 @@ kind: group-index
 - **`youtube-comments-analyze`** (medium) — Download detailed information about YouTube video comments to a .tab or .gdf
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
 - **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
-- **`youtube-geo-search-tool`** (medium) — OSINT tool: Youtube Geo Search Tool.
+- **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos
 - **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
 - **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload
 - **`youtube-periscope-twitch-and-dailymotion`** (medium) — Use when you have a `username`/channel on a video platform and want the right search/analytics tools for it — a reference hub of lookups for

@@ -265,7 +265,6 @@ kind: group-index
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Movie listings website
-- **`finaid-mail-drop-search`** (medium) — Database search by address, city name, state and zip code
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (medium) — UK bank sort code search tool
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
@@ -304,7 +303,6 @@ kind: group-index
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
 - **`goo-japan`** (low) — OSINT tool: Goo (Japan).
-- **`goo`** (medium) — OSINT tool: Goo.
 - **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
 - **`goodhousekeeping`** (medium) — Housekeeping product reviews website
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
@@ -481,7 +479,7 @@ kind: group-index
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
 - **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
 - **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
-- **`mamont`** (medium) — OSINT tool: Mamont.
+- **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
 - **`meganzsearch-com`** (medium) — OSINT tool: Meganzsearch.com.
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S

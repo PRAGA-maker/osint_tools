@@ -109,7 +109,6 @@ kind: group-index
 - **`versionista`** (low) — OSINT tool: versionista.
 - **`view-page-archive-addons-mozilla-org`** (medium) — OSINT tool: view page archive (addons.mozilla.org).
 - **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
-- **`warcat`** (medium) — My favorite (because it's the easiest) tool for working with Warc files. It allows you to see the list of files in the archive (command "lis
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
 - **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.
 - **`wayback-google-analytics`** (medium) — Use when you have a `domain` and want to link it to other sites via shared current/historical Google Analytics or AdSense IDs — returns rela
