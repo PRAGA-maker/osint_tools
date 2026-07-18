@@ -125,7 +125,7 @@ kind: group-index
 - **`live-train-tracker`** (low) — A world map showing real-time train traffic (with route point's exact geographic coordinates) and schedules on the roads of Europe, North an
 - **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
 - **`llyoyd-list-intelligence-maritime-search`** (medium) — Maritime-related website focusing on Lloyds of London and their maritime vessel registration search, including associated vessel information
-- **`lucas-county-ohio-areis-online`** (medium) — Lucas County Auditor's Real Estate Information System - includes parcel, ownership, valuation, and tax information
+- **`lucas-county-ohio-areis-online`** (medium) — Use when you have a `name` or `address` in Lucas County, Ohio and want property records — returns owner `name`, parcel `address`, mailing ad
 - **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.

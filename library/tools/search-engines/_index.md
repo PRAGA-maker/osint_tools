@@ -795,7 +795,7 @@ kind: group-index
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
 - **`urvx-com`** (low) — File storage search engine based by Google CSE
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
-- **`us-census-bureau`** (medium) — Provides US census information and population statistics
+- **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
 - **`us-department-of-housing-and-urban-development`** (medium) — US Department of Housing and Urban Development - includes research, publications and data sets
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations

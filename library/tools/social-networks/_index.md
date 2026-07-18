@@ -225,7 +225,7 @@ kind: group-index
 - **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
 - **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
 - **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
-- **`github-trending-archives`** (medium) — Github trending archive for a specific date.
+- **`github-trending-archives`** (low) — Use when you want to know which repos/developers trended on GitHub on a past date — returns dated archives of GitHub's trending lists for hi
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
 - **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r
 - **`githubrecon`** (medium) — Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (in

@@ -219,7 +219,7 @@ kind: group-index
 - **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
 - **`graphystories`** (low) — OSINT tool: GraphyStories.
 - **`greynoise-intelligence`** (low) — OSINT tool: GreyNoise Intelligence.
-- **`gtmetrix-website-performance`** (medium) — Provides details about your website's speed and performance, and allows searching for information about any website
+- **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`h3x-cctv`** (low) — A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras
 - **`hacker-target`** (medium) — Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
