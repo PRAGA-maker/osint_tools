@@ -13,13 +13,13 @@ kind: group-index
 - **`brave`** (medium) — Use when you have a `name`, `username` or `domain` and want an independent web index that returns different results than Google — returns `d
 - **`duckduckgo`** (medium) — Use when you have a `name`, `username`, or `email` and want web results without a personalized filter bubble or search-history trail — retur
 - **`google-advanced-search`** (medium) — Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, 
-- **`google`** (medium) — General web OSINT, historical information via cache, broad searches with operators
+- **`google`** (medium) — Use when you have almost any selector (`name`, `username`, `email`, `phone`, `domain`) and want the broadest web footprint — returns pages, 
 - **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only
 - **`izito`** (medium) — Multi-type searches (web, video, news, products in one overview), quick result aggregation
 - **`mojeek`** (medium) — Privacy-preserving searches, independent index not reliant on Google/Bing
 - **`startpage`** (medium) — Privacy-preserving Google searches, anonymous browsing through proxy
-- **`stract`** (medium) — Developers, transparency enthusiasts, customizable search, filtering by content type (blogs, indieweb, educational)
+- **`stract`** (medium) — Use when you have a `name`, `username` or keyword and want an independent, non-Google index with custom-rankable results — returns web pages
 - **`swisscows`** (medium) — Use when you have a `name`, `username` or keyword and want an alternative, privacy-preserving web/image search index — returns web results, 
 - **`yahoo-advanced-web-search`** (medium) — Use when a Google/Bing search for a `name`, `username` or `email` is incomplete and you want an alternate index with operators — returns soc
 - **`yandex`** (medium) — Use when you have a `name`, `username`, or keyword and want web results with strong Russian/post-Soviet coverage and different indexing than

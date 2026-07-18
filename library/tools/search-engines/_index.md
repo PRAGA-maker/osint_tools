@@ -326,7 +326,6 @@ kind: group-index
 - **`google-custom-search`** (medium) — Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Go
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
-- **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
@@ -572,7 +571,7 @@ kind: group-index
 - **`open-directory-finder`** (low) — OSINT tool: Open Directory Finder.
 - **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
 - **`open-grey`** (low) — OSINT tool: Open Grey.
-- **`open-hub`** (medium) — Search engine for open source projects
+- **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
 - **`open-source-intelligence-txuswashere`** (low) — Comprehensive list of OSINT tools and methodologies.
 - **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.

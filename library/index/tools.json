@@ -64941,30 +64941,31 @@
   {
     "id": "ahrefs-backlink-checker",
     "name": "Ahrefs Backlink Checker",
-    "description": "Free online website backlink checker tool",
+    "description": "Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of associated sites.",
     "url": "https://ahrefs.com/backlink-checker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping which other sites link to a target domain, revealing its web of associated/affiliated sites.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier shows the top ~100 backlinks and referring-domain counts (a free Ahrefs account/Webmaster Tools verification unlocks more); full backlink data needs a paid subscription (from ~$29/mo).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Ahrefs serves results from its own crawl index, so the target site is never contacted by you — the lookup is invisible to them. Accessing the deeper report requires a (sock-puppet) Ahrefs account, which ties usage to that login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Ahrefs runs one of the largest independent web crawlers; its backlink index is industry-standard and refreshed frequently, though the free view is a capped sample of the full dataset.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -64973,18 +64974,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ahrefs"
+    ],
+    "aliases": [
+      "Ahrefs free backlink checker"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ahrefs"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ahrefs-backlink-checker.md"
   },
   {
@@ -120412,44 +120415,53 @@
   },
   {
     "id": "felt",
-    "name": "FELT",
-    "description": "FREE online tool for creating map-based visualizations: - put labels with names and descriptions - draw lines and routes - choose from hundreds of backgrounds - download your work as PDF, image, GeoJSON or share link to online version",
+    "name": "Felt",
+    "description": "Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn features, exportable as image/GeoJSON.",
     "url": "https://felt.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly building a collaborative annotated map — plotting points, drawing routes/areas, geocoding an address list — and sharing or exporting it.",
     "selectorsIn": [
       "geolocation",
-      "image"
+      "address"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier for individuals (create/share maps); paid plans add larger data, private teams and database connectors. Signup required.",
+    "opsec": "passive",
+    "opsecNote": "Felt is a workspace, not a query against the target — plotting points doesn't touch the subject. But maps are cloud-hosted and shareable, and a public/link-shared map can leak your investigation; keep maps private, and use a sock-puppet account, if the work is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Felt is an established commercial cloud-GIS product; it's an authoring/visualisation tool, so trust concerns the base map/data you bring, not a dataset Felt asserts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "felt.com",
+      "Felt maps"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Tools"
+      "mapping"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/felt.md"
   },
   {
@@ -283968,41 +283980,59 @@
   {
     "id": "google",
     "name": "Google",
-    "description": "General web OSINT, historical information via cache, broad searches with operators",
-    "url": "https://www.google.com/?gws_rd=ssl",
+    "description": "Use when you have almost any selector (`name`, `username`, `email`, `phone`, `domain`) and want the broadest web footprint — returns pages, `social-profile`, `domain` and document hits, sharpened with search operators (dorks).",
+    "url": "https://www.google.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "General web OSINT, historical information via cache, broad searches with operators",
-    "input": "Keywords, search operators (site:, intitle:, inurl:, filetype:, cache:, etc.)",
-    "output": "Ranked web pages, snippets, images, news, cached pages",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "The default first-pass web search for any selector, made precise with operators (site:, intext:, filetype:, inurl:, \"exact phrase\").",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search. The paid Custom Search / Programmable Search JSON API is a separate product; manual searching needs no account.",
     "opsec": "passive",
-    "opsecNote": "Passive reconnaissance technique; widely monitored by targets; Google tracks all searches if logged in; extensively documented for OSINT use",
+    "opsecNote": "Searching is passive toward the target, but if you are signed into a Google account every query is tied to that identity and personalises/creates a history — search logged out, in a clean/sock-puppet profile, ideally via VPN. Clicking a result then contacts that site directly, which can expose your IP to the target's server; open sensitive results through an archive or sandbox.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The results index is Google's and authoritative as a pointer to live/cached pages; the linked pages themselves are third-party and must be judged individually.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-custom-search",
+      "google-dork-cheatsheet"
+    ],
+    "aliases": [
+      "Google Search",
+      "google.com"
+    ],
+    "tags": [
+      "search-engine",
+      "google-dorks"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/google.md"
   },
   {
@@ -284853,40 +284883,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/search-engines/google-domain-hacker.md"
-  },
-  {
-    "id": "google-dork-cheatsheet",
-    "name": "Google Dork Cheatsheet",
-    "description": "OSINT tool: Google Dork Cheatsheet.",
-    "url": "https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-dork-cheatsheet.md"
   },
   {
     "id": "google-drive-folder-search-engine",
@@ -296018,24 +296014,31 @@
   {
     "id": "open-hub",
     "name": "Open Hub",
-    "description": "Search engine for open source projects",
+    "description": "Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profile`s, projects, languages and commit activity.",
     "url": "https://www.openhub.net/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a developer's open-source footprint — projects contributed to, languages, commit timeline, and linked accounts.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view profiles/projects; a free account is only needed to edit/claim listings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Open Hub reads from public repository metadata it has already indexed, so browsing a developer or project page doesn't touch the target. It's a directory of public FOSS activity; nothing you view alerts the person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established open-source directory (formerly Ohloh, run by Black Duck); data is aggregated from public repositories and can be stale or incompletely linked, since much depends on volunteer-maintained project entries.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -296044,15 +296047,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ohloh",
+      "openhub.net",
+      "Black Duck Open Hub"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "open-source"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/open-hub.md"
   },
   {
@@ -301969,41 +301978,52 @@
   {
     "id": "searchcode",
     "name": "Searchcode",
-    "description": "Source code snippet and function discovery across public repositories",
+    "description": "Use when you have a `username`, `email` or distinctive string and want to find it in public source code — returns code files across GitHub/GitLab/Bitbucket that expose handles, contacts and leaked secrets.",
     "url": "https://searchcode.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "code-search"
     ],
-    "bestFor": "Source code snippet and function discovery across public repositories",
-    "input": "Code snippet, function name, or keyword",
-    "output": "Matching source code files with context and repository links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Full-text search across billions of lines of public code for a name, handle, email, or leaked string.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search on the web; an API is offered (currently free during beta / no key for basic use). No account needed for manual searches.",
     "opsec": "passive",
-    "opsecNote": "Searches are routed through Searchcode's servers; no direct contact with target repositories.",
+    "opsecNote": "Searchcode queries its own index, so the developer/repo whose code you find is not notified. Note that searching for a live secret (API key, password) that you then use would be active and possibly illegal — treat found secrets as evidence, do not exercise them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent code-search engine indexing public repositories; results are real code, but its index is a subset of all public code and can lag GitHub's live state.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "searchcode.com",
+      "searchcode source"
+    ],
+    "tags": [
+      "code-search",
+      "source-code"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/code-search/searchcode.md"
   },
   {
@@ -304219,41 +304239,53 @@
   {
     "id": "stract",
     "name": "Stract",
-    "description": "Developers, transparency enthusiasts, customizable search, filtering by content type (blogs, indieweb, educational)",
+    "description": "Use when you have a `name`, `username` or keyword and want an independent, non-Google index with custom-rankable results — returns web pages, `social-profile` and `domain` hits filterable by \"Optics\".",
     "url": "https://stract.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Developers, transparency enthusiasts, customizable search, filtering by content type (blogs, indieweb, educational)",
-    "input": "Keywords, custom Optics rules for filtering",
-    "output": "Customized ranked results with filtering options",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "An open-source, independent search index whose \"Optics\" rules let you bias results toward blogs, indieweb, academic or specific sites.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; open source (StractOrg/stract) and self-hostable. No account.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with complete code transparency; open source project suitable for security research; can be self-hosted",
+    "opsecNote": "An independent non-Google engine with its own crawl, so queries aren't tied to a Google identity — useful for a lower-profile search. Still a third-party server that sees your query; use a sock-puppet/VPN for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent open-source non-profit search engine (created by Mikkel Denker); code is public and auditable, but its index is far smaller than Google's, so it's a complement, not a replacement.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Stract search",
+      "stract.com"
+    ],
+    "tags": [
+      "search-engine",
+      "open-source",
+      "indieweb"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/stract.md"
   },
   {
@@ -313068,46 +313100,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/birdhunt.md"
-  },
-  {
-    "id": "birdsql",
-    "name": "BirdSQL",
-    "description": "New Twitter search tool using OpenAI GPT 3.5. Type queries in simple english language to get lists of tweets or users. For example: most liked tweets abou people followed by Jeff Bezos who don't follow him back total number of users/tweet",
-    "url": "http://perplexity.ai/sql",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "perplexity"
-    ],
-    "_file": "library/tools/social-networks/birdsql.md"
   },
   {
     "id": "birdwatcher",
@@ -337074,35 +337066,50 @@
   {
     "id": "redective",
     "name": "Redective",
-    "description": "OSINT tool: Redective.",
+    "description": "Use when you have a Reddit `username` (or subreddit/keyword) and want a fast activity profile — returns their subreddits, most-used words, active hours and posts as a `social-profile` summary.",
     "url": "https://www.redective.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Rapidly profiling a Reddit user's behaviour — favourite subreddits, active hours, vocabulary — from their public history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web tool; real-time queries against Reddit's public data, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Redective queries Reddit's public API in real time and stores nothing, so it doesn't touch the target directly — but Reddit sees Redective's requests, not yours, keeping you at arm's length. Analysing timing/subreddits is passive OSINT; drawing conclusions (e.g. timezone) is inference, not fact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing third-party Reddit analytics tool; it summarises genuine public Reddit activity, but its stats depend on Reddit's API returning full history (older/removed content may be missing).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Redective the Reddit Search Detective",
+      "redective.com"
+    ],
+    "tags": [
+      "reddit",
+      "social-media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/redective.md"
   },
   {

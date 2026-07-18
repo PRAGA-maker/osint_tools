@@ -59,7 +59,7 @@ kind: group-index
 - **`account-arin-net`** (medium) — OSINT tool: account.arin.net.
 - **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
-- **`ahrefs-backlink-checker`** (medium) — Free online website backlink checker tool
+- **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of
 - **`ahrefs`** (low) — OSINT tool: ahrefs.
 - **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.

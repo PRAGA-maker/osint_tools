@@ -83,7 +83,7 @@ kind: group-index
 - **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
 - **`fao-map-catalog`** (medium) — OSINT tool: FAO Map Catalog.
 - **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
-- **`felt`** (medium) — FREE online tool for creating map-based visualizations: - put labels with names and descriptions - draw lines and routes - choose from hundr
+- **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe
 - **`find-food-support`** (medium) — find places where you can get free food by address (USA)
 - **`fisgonia`** (low) — OSINT tool: Fisgonia.
 - **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea

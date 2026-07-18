@@ -55,7 +55,6 @@ kind: group-index
 - **`bibliogram`** (high) — Use when you have an Instagram `username` and want to view a profile/posts without an Instagram login — but note this front-end is defunct; 
 - **`bikermatch-co-uk`** (high) — Use when you have a `username` or `name` tied to UK motorcycling and want to find a member profile — returns social-profile, photos, and rou
 - **`birdhunt`** (high) — Use when you have a `geolocation` (place of interest) and want X/Twitter posts sent from near it — returns geographically-filtered posts and
-- **`birdsql`** (medium) — New Twitter search tool using OpenAI GPT 3.5. Type queries in simple english language to get lists of tweets or users. For example: most lik
 - **`bitchute-com`** (high) — Use when you have a `username` or `name` and want to find a subject's video presence on the alt-tech platform BitChute — returns channels, v
 - **`bitdownloader-io`** (high) — Use when you have a `social-profile` post/media URL and want the raw video or photo file off-platform — returns the downloaded `image`/video
 - **`bitmoji-avatar-history-enumerator`** (medium) — BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make
@@ -499,7 +498,7 @@ kind: group-index
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.
 - **`reddloader-com`** (medium) — Reddit video downloader
-- **`redective`** (medium) — OSINT tool: Redective.
+- **`redective`** (medium) — Use when you have a Reddit `username` (or subreddit/keyword) and want a fast activity profile — returns their subreddits, most-used words, a
 - **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Simplified Reddit web interface.
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
