@@ -33,6 +33,7 @@ enrichment: stub
 relatedTools:
 - craigslist
 - craigslist-forums
+- craigslist-classified-ads-worldwide
 ---
 
 # Craiglist

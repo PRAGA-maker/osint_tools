@@ -389,7 +389,7 @@ kind: group-index
 - **`github-io`** (high) — Use when you have the `name` of a deceased person and want to find their burial record and, via neighbouring graves, family surnames — retur
 - **`givesendgo`** (low) — OSINT tool: GiveSendGo.
 - **`gla-gov-uk`** (high) — Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed bus
-- **`glassdoor`** (medium) — OSINT tool: Glassdoor.
+- **`glassdoor`** (medium) — Use when you have an `employer-org` (or a person's employer) and want inside detail — returns salaries, reviews, interview accounts, and occ
 - **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.
 - **`globaledge-database-of-international-business-statistics`** (low) — OSINT tool: globalEDGE Database of International Business Statistics.
 - **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun

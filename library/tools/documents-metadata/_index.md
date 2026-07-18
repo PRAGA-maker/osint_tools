@@ -224,7 +224,6 @@ kind: group-index
 - **`screencast-o-matic`** (low) — Website that offers services related to downloading and saving audio content from a website
 - **`screenshot-guru`** (low) — Website that provides screen capture capability, taking screenshots of full webpages via a URL
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
-- **`search4faces-com`** (medium) — Face recognition and reverse image search engine for Vkontakte, Odnoklassniki, avatars of TikTok & ClubHouse users
 - **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
 - **`shared-count`** (low) — Social URL analytics tool for tracking URL shares, likes and tweets
 - **`shhgit`** (low) — OSINT tool: Shhgit.

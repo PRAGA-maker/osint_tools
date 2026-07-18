@@ -40,6 +40,7 @@ deprecated: false
 relatedTools:
 - craiglist
 - craigslist-forums
+- craigslist-classified-ads-worldwide
 aliases: []
 tags:
 - classifieds

@@ -26411,7 +26411,8 @@
     "deprecated": false,
     "relatedTools": [
       "craiglist",
-      "craigslist"
+      "craigslist",
+      "craigslist-classified-ads-worldwide"
     ],
     "aliases": [],
     "tags": [],
@@ -47137,7 +47138,8 @@
     "deprecated": false,
     "relatedTools": [
       "craiglist",
-      "craigslist-forums"
+      "craigslist-forums",
+      "craigslist-classified-ads-worldwide"
     ],
     "aliases": [],
     "tags": [
@@ -47148,46 +47150,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/craigslist.md"
-  },
-  {
-    "id": "craigslist-classified-ads-worldwide",
-    "name": "Craigslist Classified Ads (Worldwide)",
-    "description": "One of the Top 10 classified advertisements-related websites worldwide",
-    "url": "http://www.craigslist.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/craigslist-classified-ads-worldwide.md"
   },
   {
     "id": "datingadvice",
@@ -61601,51 +61563,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/search-the-current-site.md"
-  },
-  {
-    "id": "search4faces-com",
-    "name": "Search4Faces.com",
-    "description": "Face recognition and reverse image search engine for Vkontakte, Odnoklassniki, avatars of TikTok & ClubHouse users",
-    "url": "https://search4faces.com/en/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search4faces",
-      "search4faces-com-ch00"
-    ],
-    "_file": "library/tools/documents-metadata/search4faces-com.md"
   },
   {
     "id": "searchfiles-de",
@@ -144521,41 +144438,57 @@
   {
     "id": "invid-weverify-verification-plugin",
     "name": "InVID-WeVerify Verification Plugin",
-    "description": "Social media image/video verification workflows",
+    "description": "Use when you have an `image` or video and want to verify it and pull it apart — returns reverse-search pivots, extracted keyframes, `metadata-exif`, and forensic/deepfake signals.",
     "url": "https://www.invid-project.eu/tools-and-services/invid-verification-plugin/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "deepfake-detection"
     ],
-    "bestFor": "Social media image/video verification workflows",
-    "input": "Web pages, social posts, images, and videos",
-    "output": "Verification artifacts, reverse-search pivots, and extracted media context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-click multi-engine reverse image search, video keyframing, EXIF/metadata extraction, and image forensics on social-media media.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free browser extension (Chrome/Firefox/Edge), maintained by the EU-funded InVID/WeVerify/vera.ai projects. No account required.",
     "opsec": "active",
-    "opsecNote": "Extension-driven workflows query external platforms and search engines, creating third-party telemetry.",
+    "opsecNote": "Reverse-search and analysis modules send the image/keyframe to third-party engines (Google, Bing, Yandex, Baidu, TinEye), creating query telemetry there. EXIF and forensic (ELA/copy-move) modules run locally in the browser with no upload. Do the reverse searches from a sock-puppet browser/IP if the collection is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Developed by the EU InVID/WeVerify/vera.ai research consortium and endorsed in Bellingcat's toolkit; a long-standing, widely-used verification standard among journalists and OSINT investigators.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "InVID",
+      "WeVerify",
+      "Fake News Debunker",
+      "InVID plugin"
+    ],
+    "tags": [
+      "verification",
+      "reverse-image-search",
+      "image-forensics",
+      "deepfake-detection",
+      "browser-extension"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deepfake-detection/invid-weverify-verification-plugin.md"
   },
   {
@@ -198613,7 +198546,8 @@
     "enrichment": "stub",
     "relatedTools": [
       "craigslist",
-      "craigslist-forums"
+      "craigslist-forums",
+      "craigslist-classified-ads-worldwide"
     ],
     "_file": "library/tools/people-search/craiglist.md"
   },
@@ -236370,37 +236304,53 @@
   {
     "id": "glassdoor",
     "name": "Glassdoor",
-    "description": "OSINT tool: Glassdoor.",
+    "description": "Use when you have an `employer-org` (or a person's employer) and want inside detail — returns salaries, reviews, interview accounts, and occasionally employee `associate`/role signals.",
     "url": "https://www.glassdoor.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Researching a company's pay, culture, locations, and workforce from employee-submitted reviews and salary reports.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to use, but Glassdoor gates most content behind a free account and a \"give to get\" wall (you must post a review/salary or register to read others'). No payment for the core content.",
+    "opsec": "passive",
+    "opsecNote": "Browsing company pages is passive and does not touch your target. However Glassdoor requires an account to see most content — register with a sock-puppet email, never a work/attributable identity, and avoid posting real content to unlock pages.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Reviews and salaries are self-reported, unverified, and can be manipulated (astroturfed or review-bombed); treat aggregate patterns as signal and individual reviews as anecdotes.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "glassdoor.com"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "employer",
+      "reviews"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/glassdoor.md"
   },
   {
@@ -294307,44 +294257,57 @@
   {
     "id": "nerdydata-source-code-search-engine",
     "name": "NerdyData Source Code Search Engine",
-    "description": "Web search engine for source code, including search for keywords, HTML, JavaScript, CSS and plaintext of webpages",
-    "url": "https://search.nerdydata.com/code",
+    "description": "Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`, and `employer-org` details.",
+    "url": "https://www.nerdydata.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding every website that contains a given code snippet, script URL, analytics/ad ID, cookie name, or technology.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free registration unlocks 100 rows per report (no card); larger exports and full results require a paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You search NerdyData's own crawl of public page source, not the target sites, so no site is notified. Registration is required — use a sock-puppet email. Nothing you search touches the domains you're investigating.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial code/tech search engine crawling millions of live domains; coverage is broad but not exhaustive and reflects crawl freshness, so a miss is not proof of absence.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "nerdydata"
     ],
+    "aliases": [
+      "nerdydata.com",
+      "NerdyData code search"
+    ],
+    "tags": [
+      "toddington",
+      "source-code-search",
+      "infrastructure-pivot",
+      "specialty-search"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/nerdydata-source-code-search-engine.md"
   },
   {
@@ -323267,38 +323230,50 @@
   {
     "id": "gitstar-ranking",
     "name": "Gitstar Ranking",
-    "description": "Unofficial GitHub star ranking for users, organizations and repositories",
+    "description": "Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and the linked GitHub `social-profile`.",
     "url": "https://gitstar-ranking.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Ranking and comparing GitHub users, organizations, and repositories by total stars.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse rankings and user/org pages; optional \"Sign in with GitHub\" is not required to view.",
+    "opsec": "passive",
+    "opsecNote": "Reads only public GitHub data via an external ranking site — the target is not notified. If you sign in with GitHub to unlock features, you become attributable; a plain lookup does not require it, so stay signed out.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Unofficial third-party ranking derived from GitHub's public star counts; rankings can lag GitHub and are only as current as its crawl.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gitstar-ranking.com"
+    ],
     "tags": [
-      "Social Media",
-      "Github"
+      "Github",
+      "developer-osint",
+      "Social Media"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gitstar-ranking.md"
   },
   {
@@ -337244,44 +337219,53 @@
   {
     "id": "reddit-timer",
     "name": "Reddit Timer",
-    "description": "Get last week's hourly activity schedule for a specific subreddit",
+    "description": "Use when you have a subreddit (`social-profile`) and want its weekly posting-activity pattern — returns an hourly heatmap of when that community is most active.",
     "url": "https://ebof1223-reddit-timer.netlify.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Visualising a subreddit's busiest posting hours across the last week as a day/hour heatmap.",
+    "selectorsIn": [
+      "social-profile"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web app, no account. Reads Reddit's public post data.",
+    "opsec": "passive",
+    "opsecNote": "You query a subreddit's public post timing, not any individual — nobody is notified. It touches Reddit's public API/data via the app; use a clean session if the interest is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A small independent (bootcamp-style) Netlify app over Reddit's public data; useful for aggregate timing, not for individual-user attribution. Netlify demo apps can go offline without notice.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Reddit"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "api-guesser",
       "deaditarchive-netlify-app",
       "dorksearch-netlify-app",
       "search-it"
     ],
+    "aliases": [
+      "reddit-timer",
+      "Reddit Timer netlify"
+    ],
+    "tags": [
+      "Reddit",
+      "Social Media",
+      "activity-analysis"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-timer.md"
   },
   {
@@ -353637,35 +353621,51 @@
   {
     "id": "youtube-comment-finder",
     "name": "YouTube Comment Finder",
-    "description": "OSINT tool: YouTube Comment Finder.",
+    "description": "Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `username`, `social-profile`, and timestamps.",
     "url": "https://ytcomment.kmcat.uk/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/username search inside a YouTube video's comments, or dumping all comments to one scrollable page.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool, no account. Reads public YouTube comment data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the tool (which reads YouTube's public comment data), not the commenter — no notification is sent and you are not logged into YouTube. Standard passive collection; use a logged-out/sock-puppet browser if the interest is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent hobby tool (kmcat.uk) that surfaces public YouTube comments; reliability depends on YouTube's data availability, and very large comment sets may not load fully.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "YCF",
+      "ytcomment.kmcat.uk"
+    ],
+    "tags": [
+      "YouTube",
+      "comment-search",
+      "Social Media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-comment-finder.md"
   },
   {
@@ -367685,24 +367685,29 @@
   {
     "id": "skyscanner-travel-search-engine",
     "name": "Skyscanner Travel Search Engine",
-    "description": "Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment, including pricing and reviews",
-    "url": "http://www.skyscanner.com",
+    "description": "Use when you have a `geolocation` route and want travel-feasibility context — returns flight/route options, dates, prices, and carriers to corroborate or rule out a journey.",
+    "url": "https://www.skyscanner.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking flight routes, schedules, prices, and connecting airports between two locations.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free flight/hotel/car meta-search; no account needed to search. Bookings redirect to third-party providers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching routes reveals nothing to any target — you query an aggregator, not a person. Only your own browsing is exposed; note Skyscanner uses tracking/cookies and prices can be personalised, so use a clean session for consistent results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established, widely-used commercial flight meta-search aggregating airline and OTA data; route/schedule data is reliable, though live prices/availability fluctuate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -367711,18 +367716,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "skyscanner"
     ],
+    "aliases": [
+      "skyscanner.com",
+      "Skyscanner"
+    ],
+    "tags": [
+      "toddington",
+      "travel",
+      "flights",
+      "specialty-search"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/skyscanner-travel-search-engine.md"
   },
   {

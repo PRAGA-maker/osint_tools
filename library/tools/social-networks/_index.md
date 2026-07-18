@@ -232,7 +232,7 @@ kind: group-index
 - **`githut`** (low) — GitHub statistics and programming language visualizations.
 - **`gitleak`** (medium) — OSINT tool: GitLeak.
 - **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo
-- **`gitstar-ranking`** (medium) — Unofficial GitHub star ranking for users, organizations and repositories
+- **`gitstar-ranking`** (medium) — Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and th
 - **`gitvio`** (medium) — A tool to quickly and easily view detailed information about a user's Github profile: the most popular repositories, number of commits, issu
 - **`gitxray`** (medium) — Use when you have a GitHub `username` or repo and want deep recon on the account — returns contributor emails, leaked keys, activity-timing 
 - **`google-account-finder-epieos`** (high) — Use when you have an `email` (Gmail) or `phone` and want the linked Google account's profile photo, public Maps reviews/photos, and which se
@@ -485,7 +485,7 @@ kind: group-index
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Live-stream Reddit comments in real time.
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
-- **`reddit-timer`** (medium) — Get last week's hourly activity schedule for a specific subreddit
+- **`reddit-timer`** (low) — Use when you have a subreddit (`social-profile`) and want its weekly posting-activity pattern — returns an hourly heatmap of when that commu
 - **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an
 - **`reddit-user-extractor`** (medium) — Use when you have a Reddit `username` and want their full comment/post history offline — returns a CSV of comments (id, subreddit, date, bod
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
@@ -799,7 +799,7 @@ kind: group-index
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
 - **`youtube-channel-search`** (medium) — OSINT tool: Youtube Channel Search.
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
-- **`youtube-comment-finder`** (medium) — OSINT tool: YouTube Comment Finder.
+- **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
 - **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
 - **`youtube-comments-analyze`** (medium) — Download detailed information about YouTube video comments to a .tab or .gdf

@@ -514,7 +514,7 @@ kind: group-index
 - **`national-geographic-kids`** (low) — National Geographic's website intended for kids
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
 - **`naver-south-korea`** (low) — OSINT tool: Naver (South Korea).
-- **`nerdydata-source-code-search-engine`** (medium) — Web search engine for source code, including search for keywords, HTML, JavaScript, CSS and plaintext of webpages
+- **`nerdydata-source-code-search-engine`** (medium) — Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`
 - **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
 - **`neuskool`** (medium) — Personal start page featuring search services on one page, including Google, YouTube, Wikipedia, Twitter, and more.
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
