@@ -233,7 +233,7 @@ kind: group-index
 - **`peakfinder`** (high) — Use when an outdoor photo shows a mountain skyline and you want to identify peaks or confirm/narrow the camera location by matching the hori
 - **`pedestriansfirst`** (medium) — Evaluate the pedestrian friendliness of streets in different cities. There is a lot of detailed data that will be useful both for choosing a
 - **`perry-castaneda-library`** (high) — Use when you have a place name or region and need historical/topographic/political reference maps to interpret a geolocation.
-- **`photo-map-ru`** (medium) — Geotagged VK posts.
+- **`photo-map-ru`** (medium) — Use when you have a `geolocation` in the former USSR and want VK posts taken there — returns geotagged VKontakte photos/posts plotted on a m
 - **`pic2map`** (high) — Use when you have a photo and want to extract embedded EXIF/GPS metadata and plot the capture location on a map.
 - **`pictimo`** (low) — Use when you have a `geolocation`/place and want live public webcams there to observe or corroborate a scene — returns real-time imagery for
 - **`plowto`** (low) — OSINT tool: PlowTO.

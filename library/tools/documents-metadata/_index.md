@@ -216,7 +216,7 @@ kind: group-index
 - **`restaurant-association-of-new-zealand`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-report-website-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurants-canada-website-canada`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`reveal-image-verification-assistant`** (medium) — Forensic providing eight filters to detect still images alterations. Web-based image tool. Also available within InVID verification plugin.
+- **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Website that offers services related to downloading and saving videos from a web page
 - **`savevideo-me`** (low) — Website that offers services related to downloading and saving videos from a web page
 - **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi

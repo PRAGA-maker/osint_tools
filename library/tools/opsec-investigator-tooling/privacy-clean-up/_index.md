@@ -12,7 +12,7 @@ kind: group-index
 - **`just-delete-me`** (low) — Use when you have a service `username`/account and want the direct account-deletion link and difficulty rating — supports investigator OpSec
 - **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists
 - **`panopticlick`** (low) — Use when you want to test your investigative browser's fingerprint and tracker-blocking before an op — returns a uniqueness score and detail
-- **`privacy-guides`** (medium) — Selecting privacy tools, building an OSINT operational security toolkit
+- **`privacy-guides`** (low) — Use when you're building an investigator's OpSec setup and need vetted privacy tools — returns curated, criteria-based recommendations for V
 - **`privacy-tools`** (medium) — Privacy tool discovery, OPSEC toolkit building
 - **`social-media-fingerprint`** (low) — Use when you want to verify your own OpSec — checks in-browser which social networks you are logged into, so you can confirm an investigatio
 - **`the-many-hats-club-privacy-resources`** (medium) — Discovering community-vetted privacy and OPSEC resources

@@ -487,7 +487,7 @@ kind: group-index
 - **`inpi-fr`** (high) — Use when you have a French `name`, `employer-org`, or `address` and want official company records and directors/beneficial owners — returns 
 - **`insight-jini`** (medium) — Extreme quick, extreme simple and free online tool for data visalization and analysis
 - **`insolvency-practitioners-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a UK insolvency practitioner's licence, firm, and business address — returns name, em
-- **`integrated-companies-research-china-hong-kong`** (medium) — Chinese business-related search engine that searches by company name and director name
+- **`integrated-companies-research-china-hong-kong`** (medium) — Use when you have a `name` or company and want Hong Kong corporate records — searches HK-registered companies by name and directors, returni
 - **`inteltechniques-business-search-tool`** (high) — Use when you have a company `employer-org` or a business owner's `name` and want to sweep many business-record sources at once — returns reg
 - **`interment`** (high) — Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and rela
 - **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.

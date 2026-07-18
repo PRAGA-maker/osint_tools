@@ -72,7 +72,7 @@ kind: group-index
 - **`effect-group`** (high) — Use when you have a name, email or phone and want an aggregated OSINT profile — returns linked profiles, contact data, breach hits and face/
 - **`ellis-island-new-york-passenger-search`** (high) — Use when you have a historical immigrant's `name` and want their Port of New York / Ellis Island arrival record — returns arrival date, ship
 - **`ellis-island`** (high) — Use when you have a `name` of a US immigrant ancestor (1892-1957) and want their arrival record — returns arrival date, age (`dob`), origin/
-- **`eluta-canada`** (medium) — OSINT tool: Eluta (Canada).
+- **`eluta-canada`** (low) — Use when you have a `name` or `employer-org` in Canada and want employment signal — a job engine that indexes employer career pages directly
 - **`eniro`** (high) — Use when you have a Swedish `name` (or `phone`/`address`) and want the person's registered address, phone and household — returns `address`,
 - **`eurojobs`** (medium) — OSINT tool: Eurojobs.
 - **`everypolitician-org`** (low) — Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`so

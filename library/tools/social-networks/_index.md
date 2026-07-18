@@ -599,7 +599,7 @@ kind: group-index
 - **`streamweasels-com`** (high) — Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that s
 - **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
 - **`subreddit-stats-user-overlap`** (medium) — Use when you have a subreddit a subject frequents and want the communities its users also inhabit — returns ranked overlapping subreddits to
-- **`sully-gnome`** (medium) — detailed analysis of #Twitch streamer stats
+- **`sully-gnome`** (medium) — Use when you have a Twitch `username`/channel and want its activity history — returns games streamed, schedule, growth, watch-time, and peak
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
 - **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho
 - **`tailwind`** (low) — Social media scheduling tool including Pinterest.
@@ -793,7 +793,6 @@ kind: group-index
 - **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload
 - **`youtube-periscope-twitch-and-dailymotion`** (medium) — Use when you have a `username`/channel on a video platform and want the right search/analytics tools for it — a reference hub of lookups for
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
-- **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
 - **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis
 - **`youtube-timestamp-comments`** (low) — Use when analysing a YouTube video and want every timestamp mentioned in its comments collected and sorted chronologically to navigate key m
 - **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret

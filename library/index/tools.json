@@ -60665,14 +60665,14 @@
   },
   {
     "id": "reveal-image-verification-assistant",
-    "name": "Reveal Image Verification Assistant",
-    "description": "Forensic providing eight filters to detect still images alterations. Web-based image tool. Also available within InVID verification plugin.",
-    "url": "https://www.rand.org/research/projects/truth-decay/fighting-disinformation/search/items/reveal-image-verification-assistant.html",
+    "name": "Image Verification Assistant (REVEAL / WeVerify)",
+    "description": "Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus metadata and GPS.",
+    "url": "https://weverify.eu/tools/image-verification-assistant/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Running a battery of image-forensics filters on a photo to spot splices, clones, and re-compression, alongside metadata/GPS extraction.",
     "selectorsIn": [
       "image",
       "metadata-exif"
@@ -60681,33 +60681,41 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, EU-funded (InVID / REVEAL / WeVerify, Horizon 2020); also bundled in the free InVID-WeVerify browser plugin. No payment.",
+    "opsec": "active",
+    "opsecNote": "Active in that you upload the target image to an EU-project server for processing. Use a non-sensitive copy; assume the file is retained for analysis. The InVID plugin runs the same filters and is the option when you'd rather not hand the image to a hosted page unnecessarily.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by EU research projects (InVID, REVEAL, WeVerify) and widely used by journalists/fact-checkers; the forensic algorithms are documented in academic literature.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "invid-verification-plugin"
+    ],
+    "aliases": [
+      "REVEAL Image Verification Assistant",
+      "WeVerify Image Verification Assistant",
+      "InVID image forensics"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "metadata"
+      "metadata",
+      "image-forensics",
+      "verification"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rand-terrorism-research",
-      "terrorism-incidents-database"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/reveal-image-verification-assistant.md"
   },
   {
@@ -126856,43 +126864,54 @@
   {
     "id": "photo-map-ru",
     "name": "Photo-Map.RU",
-    "description": "Geotagged VK posts.",
+    "description": "Use when you have a `geolocation` in the former USSR and want VK posts taken there — returns geotagged VKontakte photos/posts plotted on a map around a point.",
     "url": "http://photo-map.ru/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding geotagged VKontakte (VK) photos and posts by location — surfacing who posted from a specific place in Russia/CIS.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; depends on VK API access, which has tightened over time, so availability/coverage can be intermittent.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse geotagged public VK content via the tool; the posters aren't notified. If you then open a VK profile to investigate, do so from a sock-puppet VK session, not an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community geolocation tool listed in Bellingcat's toolkit; it surfaces public VK data via the VK API, so results depend on what users made public and on continued API access.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ru"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "photo-map.ru",
+      "VK photo map"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "geolocation"
+      "geolocation",
+      "vkontakte",
+      "russia"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/photo-map-ru.md"
   },
   {
@@ -143297,6 +143316,9 @@
     "source": "bellingcat-toolkit",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "reveal-image-verification-assistant"
+    ],
     "_file": "library/tools/image-video-face/invid-verification-plugin.md"
   },
   {
@@ -186535,41 +186557,48 @@
   {
     "id": "privacy-guides",
     "name": "Privacy Guides",
-    "description": "Selecting privacy tools, building an OSINT operational security toolkit",
+    "description": "Use when you're building an investigator's OpSec setup and need vetted privacy tools — returns curated, criteria-based recommendations for VPNs, browsers, email, and more.",
     "url": "https://www.privacyguides.org/en/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "privacy-clean-up"
     ],
-    "bestFor": "Selecting privacy tools, building an OSINT operational security toolkit",
-    "input": "No input required (reference guide)",
-    "output": "Curated tool recommendations with evaluation criteria and comparison tables",
+    "bestFor": "Choosing trustworthy privacy/security tools to harden your own OSINT operational security and sock-puppet infrastructure.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-free, nonprofit; not affiliated with the tools it lists.",
     "opsec": "passive",
-    "opsecNote": "Reference resource only; no data submission required.",
+    "opsecNote": "Passive reference — you read recommendations, submit nothing. This is about protecting *your* footprint as an investigator, not querying a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A well-regarded nonprofit (since 2021) that publishes transparent selection criteria and takes no money from listed providers; recommendations are community-reviewed and open-source-friendly.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "privacyguides.org",
+      "Privacy Guides"
+    ],
+    "tags": [
+      "opsec",
+      "privacy",
+      "tooling",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/privacy-guides.md"
   },
   {
@@ -198062,37 +198091,50 @@
   {
     "id": "eluta-canada",
     "name": "Eluta (Canada)",
-    "description": "OSINT tool: Eluta (Canada).",
-    "url": "http://www.eluta.ca",
+    "description": "Use when you have a `name` or `employer-org` in Canada and want employment signal — a job engine that indexes employer career pages directly, corroborating who works where.",
+    "url": "https://www.eluta.ca",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Canadian jobs indexed straight from employer websites to corroborate a company's hiring and, occasionally, named hiring contacts.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search job listings; monetized via employer/advertising, not user fees. No account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing indexed public job postings leaks nothing about a subject. Applying to a job is a separate, identity-linked action done on the employer's site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "An established Canadian job-search engine (Mediacorp) that crawls employer career pages directly; postings reflect the employers' own sites, but Eluta itself is a third-party index.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "eluta.ca"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment",
+      "canada"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/eluta-canada.md"
   },
   {
@@ -240296,51 +240338,61 @@
   },
   {
     "id": "integrated-companies-research-china-hong-kong",
-    "name": "Integrated Companies Research (China, Hong Kong)",
-    "description": "Chinese business-related search engine that searches by company name and director name",
-    "url": "http://www.icris.cr.gov.hk/csci",
+    "name": "Integrated Companies Research (Hong Kong ICRIS)",
+    "description": "Use when you have a `name` or company and want Hong Kong corporate records — searches HK-registered companies by name and directors, returning company particulars.",
+    "url": "https://www.e-services.cr.gov.hk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Hong Kong's official company register by company name or director to confirm registration, status, and directors/officers.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic index search (company name/number, directors, status) is free; purchasing full documents (annual returns, incorporation forms with director particulars) charges a per-document fee.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you search the official registry; no subject is notified. Buying documents requires an account/payment tied to you; use appropriate separation, and note the registry logs document purchases.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Hong Kong Companies Registry's official Integrated Companies Registration Information System (ICRIS / e-Services); records are authoritative government filings.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "hk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "gov-hk"
     ],
+    "aliases": [
+      "ICRIS",
+      "HK Companies Registry",
+      "Cyber Search Centre",
+      "e-services.cr.gov.hk"
+    ],
+    "tags": [
+      "toddington",
+      "company-search",
+      "hong-kong",
+      "corporate-registry"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/integrated-companies-research-china-hong-kong.md"
   },
   {
@@ -271441,41 +271493,52 @@
   {
     "id": "alabama-medical-license-search",
     "name": "Alabama Medical License Search",
-    "description": "Alabama Board of Medical Examiners physician license search tool",
+    "description": "Use when you have a physician's `name` and want to verify Alabama licensure — returns license number, status, issue/expiry, medical school, and any disciplinary actions.",
     "url": "https://www.albme.gov/consumers/licensee-search/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying a doctor's Alabama medical license, credentials, and disciplinary history by name.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official search from the Alabama Board of Medical Examiners / Medical Licensure Commission; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query an official state licensure database; the physician is not notified. Nothing to leak beyond your own lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Official Alabama Board of Medical Examiners data, uploaded directly from the Medical Licensure Commission database and updated daily — primary-source verified (except self-reported specialty).",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ALBME licensee search",
+      "Alabama Board of Medical Examiners search"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "license-verification",
+      "medical",
+      "alabama"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/alabama-medical-license-search.md"
   },
   {
@@ -280124,42 +280187,40 @@
   },
   {
     "id": "europa-press-releases",
-    "name": "Europa Press Releases",
-    "description": "Europe press release database - includes search and notification features",
-    "url": "http://europa.eu/rapid/search.htm",
+    "name": "Europa Press Releases (Press Corner)",
+    "description": "Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speeches by keyword and date.",
+    "url": "https://ec.europa.eu/commission/presscorner/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the official EU press-release archive for mentions of a person, company, policy, or event across statements, speeches, and Q&As.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official EU service; searchable archive with email/RSS notifications. No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a static official archive; nobody is notified and nothing leaks. Fully OpSec-safe; ordinary clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "The European Commission's official press service (Press Corner, successor to europa.eu/rapid); entries are authoritative primary-source EU communications.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "eu"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "e-justice-europa-eu",
       "eu-consolidated-corporate-registers",
@@ -280172,6 +280233,20 @@
       "inspire-geoportal",
       "vat-number-validation"
     ],
+    "aliases": [
+      "europa.eu/rapid",
+      "EU Press Corner",
+      "RAPID"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "eu",
+      "press-releases"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/europa-press-releases.md"
   },
   {
@@ -298871,25 +298946,31 @@
   {
     "id": "recruit-net",
     "name": "Recruit.net",
-    "description": "Website that offers job search services across the country at the national and province/state level",
-    "url": "http://usa.recruit.net",
+    "description": "Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many countries into one search.",
+    "url": "https://www.recruit.net/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregated job-listing search across employers and boards to corroborate that a company is hiring for specific roles/locations.",
+    "selectorsIn": [
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse aggregated job listings; monetized via employer/advertiser referrals, not user fees. No account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — browsing aggregated public job listings leaks nothing about a subject. Applying to a listing is a separate, identity-linked action done off-site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A job-aggregator that indexes listings from many third-party sources; postings are as accurate as the originating employer/board and can be stale or duplicated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -298897,15 +298978,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "recruit.net",
+      "usa.recruit.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "employment",
+      "job-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/recruit-net.md"
   },
   {
@@ -341852,42 +341938,52 @@
   },
   {
     "id": "sully-gnome",
-    "name": "Sully Gnome",
-    "description": "detailed analysis of #Twitch streamer stats",
+    "name": "SullyGnome",
+    "description": "Use when you have a Twitch `username`/channel and want its activity history — returns games streamed, schedule, growth, watch-time, and peak/average viewership over time.",
     "url": "https://sullygnome.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Profiling a Twitch streamer's public history — what they stream, when, how often, and how their audience has changed.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse channel and game analytics; an optional Patreon supports the project. No account needed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read aggregated public Twitch data; the streamer isn't notified. The site asks users not to scrape it (hobby project) — browse manually rather than automating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known independent Twitch-analytics hobby project (not affiliated with Twitch); its numbers are aggregated from public Twitch data and are indicative rather than official.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitch"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "search-for-a-twitch-channel"
     ],
+    "aliases": [
+      "sullygnome.com"
+    ],
+    "tags": [
+      "Social Media",
+      "Twitch",
+      "streamer-analytics"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sully-gnome.md"
   },
   {
@@ -352445,56 +352541,6 @@
       "web-proxy"
     ],
     "_file": "library/tools/social-networks/youtube-playlist-len.md"
-  },
-  {
-    "id": "youtube-scraper",
-    "name": "YouTube Scraper",
-    "description": "Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.",
-    "url": "https://apify.com/bernardo/youtube-scraper",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "apify-s-google-maps-scraper",
-      "dark-web-scraper",
-      "facebook-latest-comments-scraper",
-      "facebook-latest-posts-scraper",
-      "google-maps-scraper",
-      "google-search-scraper",
-      "instagram-hashtag-scraper",
-      "instagram-scraper",
-      "reddit-scraper",
-      "twitter-scraper",
-      "twitter-url-scraper"
-    ],
-    "_file": "library/tools/social-networks/youtube-scraper.md"
   },
   {
     "id": "youtube-search-tool",

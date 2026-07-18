@@ -44,7 +44,7 @@ kind: group-index
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
 - **`airlines-inform`** (medium) — Aviation-related website that offers a search of the global database of airlines and airports
-- **`alabama-medical-license-search`** (medium) — Alabama Board of Medical Examiners physician license search tool
+- **`alabama-medical-license-search`** (low) — Use when you have a physician's `name` and want to verify Alabama licensure — returns license number, status, issue/expiry, medical school, 
 - **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
 - **`all-in-one`** (low) — OSINT tool: All-in-One.
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
@@ -235,7 +235,7 @@ kind: group-index
 - **`entireweb-text-based-search-engine`** (medium) — Surface web search engine covering worldwide results
 - **`etools`** (low) — OSINT tool: Etools.
 - **`euronews`** (low) — OSINT tool: Euronews.
-- **`europa-press-releases`** (medium) — Europe press release database - includes search and notification features
+- **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
 - **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
@@ -632,7 +632,7 @@ kind: group-index
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
 - **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
-- **`recruit-net`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
 - **`reeder`** (low) — OSINT tool: Reeder.
 - **`reference-source-microsoft`** (medium) — Open source code search engine
 - **`religion-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
