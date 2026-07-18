@@ -18,7 +18,7 @@ kind: group-index
 - **`search-tools/`** — 9 skill(s) below.
 
 ## Skills here
-- **`100-search-engines`** (medium) — Meta search engine searching over a range of popular sites including Yahoo, Amazon, LinkedIn, Craigslist, Google Maps, and more.
+- **`100-search-engines`** (medium) — Use when you have a `name`/`username` and want to fan one query across many sites (LinkedIn, Craigslist, Maps, Amazon…) — returns social-pro
 - **`1337x-torrent-search-engine`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
 - **`1websdirectory`** (medium) — General web directory, browsable by category, keyword and country
@@ -102,7 +102,7 @@ kind: group-index
 - **`beso-shopping-search-engine`** (medium) — Online retailer for fashion items, manufactured products and other online shopping items
 - **`bespacific`** (medium) — Blog and searchable database of over 31,000 research updates relating to finance, government, privacy, security, legislation and more
 - **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
-- **`better-chrome-web-store-search-engine`** (medium) — OSINT tool: Better Chrome Web Store Search Engine.
+- **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`bibleserver`** (medium) — Website that offers Christian scripture search services, invluding Bible translations in 21 languages
 - **`biblio`** (medium) — Website offering nearly 100 million used books for sale from around the world
@@ -113,7 +113,7 @@ kind: group-index
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
 - **`binparcel-com`** (medium) — OSINT tool: Binparcel.com.
 - **`bizjournals-business-news-search`** (medium) — Business-related news from over 4 million news articles
-- **`biznar`** (medium) — OSINT tool: Biznar.
+- **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
 - **`blogpond-blogging`** (medium) — Australian website that provides a search engine that searches blogs; includes the top 100 blogs and articles
@@ -140,7 +140,7 @@ kind: group-index
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Legal-related search engine for locating legal representatives
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
-- **`carrier-route`** (medium) — Lookup tool that provides a list of all carrier routes within a specified radius from a central location
+- **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
 - **`carrot2-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`ceek-meta-search-japan`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
@@ -216,7 +216,7 @@ kind: group-index
 - **`document-search`** (low) — OSINT tool: Document Search.
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
-- **`dogpile-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
 - **`dorkeye`** (low) — OSINT tool: DorkEye.
 - **`dorkgenius`** (low) — OSINT tool: DorkGenius.
 - **`dorkgpt`** (low) — OSINT tool: DorkGPT.
@@ -293,7 +293,7 @@ kind: group-index
 - **`gibiru`** (low) — OSINT tool: Gibiru.
 - **`gifcities-org`** (low) — GIF Search Engine from archive.org
 - **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.
-- **`girlsaskguys`** (medium) — Search engine that searches for answers to questions on the subject of relationships between males and females
+- **`girlsaskguys`** (medium) — Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
 - **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.

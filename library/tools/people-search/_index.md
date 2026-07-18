@@ -241,7 +241,6 @@ kind: group-index
 - **`the-law-pages`** (high) — Use when you have a `name` and want to check whether that person appears in England & Wales Crown Court criminal sentencing records — return
 - **`the-national-archives-uk`** (high) — Use when you have a `name` and want UK historical government records — returns Discovery-catalogue hits on wills, military, immigration and 
 - **`thisnumber`** (high) — Use when you have a `name` or `phone` in a specific country and need that country's phone directory — a gateway to national white/yellow-pag
-- **`trexpertwitness`** (medium) — OSINT tool: TRExpertWitness.
 - **`truepeoplesearch`** (high) — Use when you have a US `name`, `phone`, or `address` and want current/past addresses, phone numbers, and relatives — returns address, phone,
 - **`trufflehog`** (high) — Use when you have a subject's code presence (`username`/`domain` — GitHub org, repo, site) and want secrets and contact data leaked in commi
 - **`ufind-name`** (high) — Use when you have a `name` (or a `phone`/`email`) in the US and want a consolidated people-search profile — returns addresses, phone numbers

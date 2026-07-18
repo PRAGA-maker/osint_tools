@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8255 total · 3262 full · 4993 stub (39% enriched)
+**Tools:** 8254 total · 3274 full · 4980 stub (39% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3346 · medium: 2957 · high: 1952
+low: 3346 · medium: 2956 · high: 1952
 
 ## Tools by trust
-unverified: 3855 · community: 3293 · trusted: 1095 · personal: 6 · untrustworthy: 6
+unverified: 3847 · community: 3296 · trusted: 1099 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -29,10 +29,10 @@ unverified: 3855 · community: 3293 · trusted: 1095 · personal: 6 · untrustwo
 - `maps-geospatial-data` — 22/143
 - `messaging` — 151/194
 - `opsec-investigator-tooling` — 21/565
-- `people-search` — 227/271
+- `people-search` — 227/270
 - `phone` — 132/137
-- `public-records` — 647/1115
-- `search-engines` — 205/953
+- `public-records` — 653/1115
+- `search-engines` — 211/953
 - `social-networks` — 601/866
 - `training-ctf` — 0/12
 - `translation-language` — 12/103
@@ -51,7 +51,7 @@ unverified: 3855 · community: 3293 · trusted: 1095 · personal: 6 · untrustwo
 - `library/tools/image-video-face` — 380 leaves
 - `library/tools/geolocation` — 337 leaves
 - `library/tools/documents-metadata` — 263 leaves
-- `library/tools/people-search` — 261 leaves
+- `library/tools/people-search` — 260 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 212 leaves
 - `library/tools/messaging` — 179 leaves

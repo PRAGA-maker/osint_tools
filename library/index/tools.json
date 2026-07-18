@@ -208661,42 +208661,6 @@
     "_file": "library/tools/people-search/thisnumber.md"
   },
   {
-    "id": "trexpertwitness",
-    "name": "TRExpertWitness",
-    "description": "OSINT tool: TRExpertWitness.",
-    "url": "https://trexpertwitness.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/trexpertwitness.md"
-  },
-  {
     "id": "truepeoplesearch",
     "name": "TruePeopleSearch",
     "description": "Use when you have a US `name`, `phone`, or `address` and want current/past addresses, phone numbers, and relatives — returns address, phone, associate, and approximate dob.",
@@ -242468,37 +242432,46 @@
   {
     "id": "ipums-variable-search",
     "name": "IPUMS Variable Search",
-    "description": "A service for finding variables in data from sociological surveys in 157 countries from 1960 to 2022. You can find completely rare and surprising things there, like a survey to count the number of bananaboat owners in Zambia.",
+    "description": "Use when you need census/survey variables to frame demographic context — a research-data tool, not a person lookup (aggregate, anonymised data only).",
     "url": "https://variable-search.ipums.org/#/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding variables across international census/survey microdata (157 countries, 1960–2022) for demographic and contextual research.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search variables; downloading microdata extracts requires a free IPUMS account and agreement to terms.",
+    "opsec": "passive",
+    "opsecNote": "IPUMS data is aggregated and anonymised — it contains NO identifiable individuals. Searching it is passive and cannot expose any specific person; it is for demographic context only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IPUMS (University of Minnesota) is an authoritative academic data repository; variable metadata is reliable, but the data is statistical, not personal.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IPUMS",
+      "variable-search.ipums.org"
+    ],
     "tags": [
-      "Datasets"
+      "census",
+      "survey-data",
+      "demographics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ipums-variable-search.md"
   },
   {
@@ -252438,51 +252411,51 @@
   },
   {
     "id": "office-of-national-drug-control-policy",
-    "name": "Office of National Drug Control Policy",
-    "description": "US Office of National Drug Control website linking to publications, programs, prevention, treatment, enforcement, drug facts, state and local directories, and science and technology",
+    "name": "US Office of National Drug Control Policy (ONDCP)",
+    "description": "Use for US drug-policy context and program/directory references — a government information site, not a person search (no personal records).",
     "url": "http://www.whitehouse.gov/ondcp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
+    "bestFor": "Official US drug-policy information — programs, prevention/treatment directories, drug facts and state/local links (reference, not a people database).",
+    "selectorsIn": [],
+    "selectorsOut": [
       "employer-org"
     ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government site; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public policy site reveals nothing about any subject and contains no personal records. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official White House/Executive Office agency site; authoritative for policy and program references, not individuals.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "white-house-disclosures"
     ],
+    "aliases": [
+      "ONDCP",
+      "whitehouse.gov/ondcp"
+    ],
+    "tags": [
+      "government",
+      "drug-policy",
+      "reference"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/office-of-national-drug-control-policy.md"
   },
   {
@@ -253320,48 +253293,53 @@
   },
   {
     "id": "ontario-genealogy-and-history-database-index",
-    "name": "Ontario Genealogy and History Database Index",
-    "description": "Ontario (Upper Canada) Genealogy and History Database Index - searchable marriage and death records",
+    "name": "Ontario Genealogy & History Database Index",
+    "description": "Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death records.",
     "url": "http://www.ontariogenealogy.com/ancestors.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching historical Ontario (Upper Canada) marriage and death record indexes for genealogical leads.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search the indexes; some transcriptions link out or suggest paid record copies elsewhere.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching historical genealogy indexes is fully passive and involves deceased/historical subjects; no live-target exposure. Standard hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A volunteer-compiled genealogy index; transcriptions can contain errors — verify against original registrations.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ontario Genealogy",
+      "ontariogenealogy.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "genealogy",
+      "vital-records",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ontario-genealogy-and-history-database-index.md"
   },
   {
@@ -254503,46 +254481,49 @@
   {
     "id": "osint-hub-fr",
     "name": "OSINT-HUB-FR",
-    "description": "OSINT database covering France and international resources.",
+    "description": "Use when investigating a France-linked subject and you need French-focused tools, sources and methods — a curated directory pointing to other resources.",
     "url": "https://github.com/Anadema/OSINT-HUB-FR",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "France-specific public records and OSINT sources",
-    "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
-      "address"
-    ],
-    "status": "unknown",
+    "bestFor": "A curated French/international OSINT resource hub — tools, methodologies and guides, especially for France-focused investigations.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GitHub); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference repository — reading it touches no target and reveals nothing. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Regional curated hub (38 stars).",
+    "trustNote": "Community-maintained French OSINT hub (Anadema); a directory of methods and links, not a data source — vet each linked resource independently.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "eu"
+      "fr",
+      "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "osint-kit-buddhsen-tripathi"
+    ],
+    "aliases": [
+      "OSINT-HUB-FR",
+      "Anadema/OSINT-HUB-FR"
+    ],
     "tags": [
+      "meta-resource",
       "france",
-      "regional",
-      "catalog"
+      "tool-directory"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/osint-hub-fr.md"
   },
   {
@@ -254710,43 +254691,56 @@
   {
     "id": "owler",
     "name": "Owler",
-    "description": "Competitive intelligence and company profile research",
+    "description": "Use when you have an `employer-org` and want company profile, leadership and competitor context — returns employer-org, associate and domain.",
     "url": "https://www.owler.com/corp",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "Competitive intelligence and company profile research",
-    "input": "Company name or domain",
-    "output": "Revenue estimates, employee count, funding history, competitors, and news",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick company profiles — HQ, size, leadership, competitors and news — to contextualise a subject's employer.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free profiles are viewable with a free account (registration/login); deeper competitive-intel features are paid.",
     "opsec": "passive",
-    "opsecNote": "Queries processed through Owler servers; aggregates from public and crowdsourced data.",
+    "opsecNote": "Viewing public company profiles is passive. Registration ties access to an account — use a sock-puppet email; crowd-sourced fields can be inaccurate, so don't act on a single unverified detail.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A crowd-sourced competitive-intelligence platform; profiles blend public data and community estimates, so figures (revenue, headcount) are approximate.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Owler",
+      "owler.com"
+    ],
+    "tags": [
+      "company-research",
+      "competitive-intelligence",
+      "business"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/owler.md"
   },
   {
@@ -268289,44 +268283,58 @@
   },
   {
     "id": "us-federal-election-commission",
-    "name": "US Federal Election Commission",
-    "description": "Federal campaign finance records",
+    "name": "US Federal Election Commission (FEC) Data",
+    "description": "Use when you have a US `name` and want political donations that reveal address, employer and occupation — returns address, employer-org and dob-era leads.",
     "url": "https://fec.gov/data",
     "category": "public-records",
     "path": [
       "public-records",
       "us-political-records"
     ],
-    "bestFor": "Federal campaign finance records",
-    "input": "Candidate, committee, donor name",
-    "output": "Contributions, expenditures, disclosures",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching itemized US federal campaign contributions by donor name to recover self-reported address, employer and occupation.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official US government data and API; no account needed (an API key raises rate limits).",
     "opsec": "passive",
-    "opsecNote": "Official government source",
+    "opsecNote": "Searching public, legally mandated disclosure records is fully passive and does not touch the subject. No sock puppet needed beyond normal hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authoritative US federal agency; contributors self-report the data by law, so fields are as accurate as the donor's own filing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "campaign-finance-reports-and-data"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FEC",
+      "fec.gov",
+      "OpenFEC"
+    ],
+    "tags": [
+      "campaign-finance",
+      "us",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-political-records/us-federal-election-commission.md"
   },
   {
@@ -271259,24 +271267,31 @@
   {
     "id": "100-search-engines",
     "name": "100 Search Engines",
-    "description": "Meta search engine searching over a range of popular sites including Yahoo, Amazon, LinkedIn, Craigslist, Google Maps, and more.",
+    "description": "Use when you have a `name`/`username` and want to fan one query across many sites (LinkedIn, Craigslist, Maps, Amazon…) — returns social-profile and domain.",
     "url": "https://www.100searchengines.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Firing a single query at many popular sites at once (search engines, marketplaces, social, maps) from one page.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It hands your query off to many third-party sites; each sees the search. Passive toward the subject, but use a sock-puppet/VPN and avoid entering anything identifying beyond the target term.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenience launcher that re-runs your query across many external sites; it aggregates links rather than holding data itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -271285,15 +271300,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "dogpile-meta-search"
+    ],
+    "aliases": [
+      "100searchengines.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
+      "metasearch",
+      "search-engine"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/100-search-engines.md"
   },
   {
@@ -274982,35 +275001,51 @@
   {
     "id": "better-chrome-web-store-search-engine",
     "name": "Better Chrome Web Store Search Engine",
-    "description": "OSINT tool: Better Chrome Web Store Search Engine.",
+    "description": "Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-profile and domain.",
     "url": "https://cse.google.com/cse/publicurl?cx=006205189065513216365:pn3lumi80ne",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A Google Custom Search Engine that searches the Chrome Web Store more precisely than its native search.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public CSE is passive and reveals nothing to any developer. Standard search hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-configured Google CSE scoped to the Chrome Web Store; results are Google's index of store pages.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Chrome Web Store CSE",
+      "Better Chrome Web Store Search"
+    ],
+    "tags": [
+      "chrome-extensions",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/better-chrome-web-store-search-engine.md"
   },
   {
@@ -275528,40 +275563,55 @@
   {
     "id": "biznar",
     "name": "Biznar",
-    "description": "OSINT tool: Biznar.",
+    "description": "Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org and domain.",
     "url": "http://biznar.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A federated (\"deep web\") business search that queries many business sources in real time and clusters the results.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public federated search; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Federated search is passive toward the subject, but your query is broadcast in real time to many underlying business databases — use a sock-puppet/VPN and keep the query to the target term.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A federated business search (Deep Web Technologies lineage); it queries third-party sources live rather than holding an index, so coverage depends on those sources' availability.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "biznar-business-search-engines"
     ],
+    "aliases": [
+      "Biznar",
+      "biznar.com"
+    ],
+    "tags": [
+      "deep-web",
+      "business-search",
+      "federated-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/biznar.md"
   },
   {
@@ -276691,47 +276741,56 @@
   },
   {
     "id": "carrier-route",
-    "name": "Carrier Route",
-    "description": "Lookup tool that provides a list of all carrier routes within a specified radius from a central location",
+    "name": "Melissa Carrier Route Radius Lookup",
+    "description": "Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.",
     "url": "http://www.melissadata.com/lookups/cartradius.asp",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Listing USPS carrier routes within a chosen radius of a central US address/ZIP — a niche geographic/postal context tool.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The web lookup is free; bulk/data-append and API products from Melissa are paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A postal-geography lookup that touches no person — fully passive. It returns route/area data, not resident details.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Melissa (Melissa Data) is an established address-data provider; postal-route data is authoritative but purely geographic.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "melissa-us",
       "melissadata-campaign-contributions",
       "mellssa-data"
     ],
+    "aliases": [
+      "Melissa Carrier Route",
+      "carrier route radius"
+    ],
+    "tags": [
+      "postal",
+      "geography",
+      "us"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/carrier-route.md"
   },
   {
@@ -279955,25 +280014,32 @@
   },
   {
     "id": "dogpile-meta-search",
-    "name": "Dogpile Meta Search",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
+    "name": "Dogpile Meta-Search",
+    "description": "Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.",
     "url": "http://www.dogpile.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A metasearch that merges results from several major engines, useful for a quick blended first pass on a term.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A metasearch query is passive and doesn't touch the subject, but it runs through Dogpile's servers and its upstream engines — use a sock-puppet/VPN as with any search, and it offers less query control (operators) than searching engines directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running metasearch aggregator (InfoSpace lineage); it re-ranks other engines' results rather than crawling itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -279982,18 +280048,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "100-search-engines",
       "dogpile"
     ],
+    "aliases": [
+      "Dogpile",
+      "dogpile.com"
+    ],
+    "tags": [
+      "metasearch",
+      "search-engine"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dogpile-meta-search.md"
   },
   {
@@ -283609,24 +283678,30 @@
   {
     "id": "girlsaskguys",
     "name": "GirlsAskGuys",
-    "description": "Search engine that searches for answers to questions on the subject of relationships between males and females",
+    "description": "Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.",
     "url": "http://www.girlsaskguys.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a relationships/opinions Q&A community for a handle's questions, answers and self-disclosures.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read/search; posting requires a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public posts is passive. Do not register or interact from an identifiable account; a sock-puppet is only needed if you must view gated content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A user-generated Q&A community; handles are pseudonymous and content is self-reported, so treat any detail as unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -283635,15 +283710,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GirlsAskGuys",
+      "girlsaskguys.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "forum",
+      "qa-community",
+      "socmint"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/girlsaskguys.md"
   },
   {

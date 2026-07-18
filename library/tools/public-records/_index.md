@@ -511,7 +511,7 @@ kind: group-index
 - **`iowa-warrant-inquiry-polk-county`** (high) — Use when you have a `name` and want to check whether the subject has a possible active warrant held by the Polk County (Florida) Sheriff's O
 - **`ipo-gov-uk-2`** (high) — Use when you have a `name` or `employer-org` and want UK trademark filings tied to them — returns the owner/applicant `name`, `address`, and
 - **`ipo-gov-uk`** (high) — Use when you have a `name`/`employer-org` and want the UK trademarks they own — the UK Intellectual Property Office owner search returns the
-- **`ipums-variable-search`** (medium) — A service for finding variables in data from sociological surveys in 157 countries from 1960 to 2022. You can find completely rare and surpr
+- **`ipums-variable-search`** (medium) — Use when you need census/survey variables to frame demographic context — a research-data tool, not a person lookup (aggregate, anonymised da
 - **`irelandhouse-ie`** (high) — Use when you have an Irish `address`/Eircode (or an area) and want historical property sale prices and dates — returns sale price, date and 
 - **`irelandnursing-com`** (high) — Use when you have a `name` and want to check if they're a registered Irish nurse/midwife — returns license status and directory details for 
 - **`irishdentalassoc-ie`** (medium) — Use when you have a dentist's `name` or a location in Ireland and want to confirm they are a practising IDA member and find their practice —
@@ -701,7 +701,7 @@ kind: group-index
 - **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.
 - **`ofac-sanctioned-search-engine`** (low) — OSINT tool: OFAC Sanctioned Search Engine.
 - **`offender-tracking-information-system-otis`** (high) — Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and loc
-- **`office-of-national-drug-control-policy`** (medium) — US Office of National Drug Control website linking to publications, programs, prevention, treatment, enforcement, drug facts, state and loca
+- **`office-of-national-drug-control-policy`** (medium) — Use for US drug-policy context and program/directory references — a government information site, not a person search (no personal records).
 - **`offshorealert-com`** (medium) — Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports an
 - **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
 - **`ohio-mhas`** (medium) — Use when an Ohio subject may be in behavioral-health treatment and you want licensed-provider/facility references — returns employer-org and
@@ -719,7 +719,7 @@ kind: group-index
 - **`online-students-research-toolkit`** (medium) — Use when you have a research question and want a curated index of authoritative databases and advanced-search tips — returns links to subjec
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
 - **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
-- **`ontario-genealogy-and-history-database-index`** (medium) — Ontario (Upper Canada) Genealogy and History Database Index - searchable marriage and death records
+- **`ontario-genealogy-and-history-database-index`** (medium) — Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death
 - **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
@@ -740,7 +740,7 @@ kind: group-index
 - **`os-death-records`** (high) — Use when you have a `name` and want to reach the right US state/county death-record and obituary databases — returns links yielding `dob`, d
 - **`os-divorce-records`** (high) — Use when you have a `name` and want to reach the official US county/state agency that holds that person's divorce (dissolution) record — ret
 - **`osint-for-countries-wddadk`** (high) — Use when a lead is tied to a specific `address`/country and you want the local registries and people-search resources for it — returns point
-- **`osint-hub-fr`** (medium) — OSINT database covering France and international resources.
+- **`osint-hub-fr`** (medium) — Use when investigating a France-linked subject and you need French-focused tools, sources and methods — a curated directory pointing to othe
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Bulgarian OSINT tools list (regional registries and sources).
 - **`osti-science-cinema-search`** (medium) — Multi-media search engine focusing on videos in the OSTI database related to science
