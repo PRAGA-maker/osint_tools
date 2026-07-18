@@ -49,7 +49,6 @@ kind: group-index
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
 - **`bootsnall`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
-- **`brijj`** (medium) — Networking website for business professionals from top companies and top colleges
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
 - **`business-com`** (medium) — Business and technology-related guides and articles
@@ -141,7 +140,7 @@ kind: group-index
 - **`gettr-search`** (low) — Structured Gettr user search.
 - **`ghost`** (low) — OSINT tool: Ghost.
 - **`github-gist`** (medium) — OSINT tool: GitHub gist.
-- **`gizmag-technology-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
+- **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (medium) — Online articles, news, and reviews related to science, business, computers, gadgets, technology, and future trends
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-10`** (medium) — OSINT tool: google.com.
@@ -199,7 +198,6 @@ kind: group-index
 - **`justfornurses-co-uk`** (medium) — Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, memb
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
-- **`kinja-rss-news-feed`** (medium) — Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
 - **`knok`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`knowledge-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`kyc360`** (medium) — Online anti-money laundering community - account required to access news, facts, articles and more
@@ -369,7 +367,7 @@ kind: group-index
 - **`the-independent-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
 - **`the-province-news`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`the-silph-road`** (low) — Pokemon GO community travelers' card/profile directory; lets you look up a player's public Silph card by username. Referenced in sinwindie's
-- **`the-wall-street-journal`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
+- **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
 - **`theaustralian-national-news`** (medium) — Searchable website for a major newspaper covering national and local events in Australia
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
 - **`thenextweb`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends

@@ -21038,48 +21038,6 @@
     "_file": "library/tools/archives-cache/scrapestorm-com.md"
   },
   {
-    "id": "screenshots-com",
-    "name": "Screenshots.com",
-    "description": "Visual timeline checks of website appearance changes",
-    "url": "https://www.screenshots.com/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache",
-      "web"
-    ],
-    "bestFor": "Visual timeline checks of website appearance changes",
-    "input": "Domain or URL",
-    "output": "Stored website screenshots and capture previews",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Operational status requires follow-up verification; treat availability as uncertain.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/web/screenshots-com.md"
-  },
-  {
     "id": "selfoss",
     "name": "Selfoss",
     "description": "OSINT tool: Selfoss.",
@@ -25094,46 +25052,6 @@
     "_file": "library/tools/communities-forums/bpaste.md"
   },
   {
-    "id": "brijj",
-    "name": "Brijj",
-    "description": "Networking website for business professionals from top companies and top colleges",
-    "url": "http://www.brijj.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/brijj.md"
-  },
-  {
     "id": "budgettravel",
     "name": "Budgettravel",
     "description": "Website related to social networking in the form of travel and accomodations",
@@ -29130,25 +29048,31 @@
   },
   {
     "id": "gizmag-technology-news",
-    "name": "GizMag Technology News",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
+    "name": "GizMag Technology News (New Atlas)",
+    "description": "Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.",
     "url": "http://www.gizmag.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a science/technology/gadget news archive (now branded New Atlas) for a subject's inventions, products or coverage.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported; no account required. gizmag.com redirects to its current brand, newatlas.com.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching published articles reveals nothing to any subject. Standard browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established science/tech news publication rebranded from Gizmag to New Atlas in 2016; edited, bylined content.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -29157,15 +29081,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Gizmag",
+      "New Atlas",
+      "newatlas.com"
+    ],
     "tags": [
-      "toddington",
+      "news-journalism",
       "curated-directory",
-      "news-journalism"
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/gizmag-technology-news.md"
   },
   {
@@ -31700,46 +31629,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/katbin.md"
-  },
-  {
-    "id": "kinja-rss-news-feed",
-    "name": "Kinja RSS News Feed",
-    "description": "Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest",
-    "url": "https://kinja.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/kinja-rss-news-feed.md"
   },
   {
     "id": "knok",
@@ -38943,24 +38832,31 @@
   {
     "id": "the-wall-street-journal",
     "name": "The Wall Street Journal",
-    "description": "Searchable website for a major online news/media publisher covering global events and having large reader/fan base",
+    "description": "Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.",
     "url": "http://www.wsj.com/news/world",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Searching a major business/financial news archive for a subject's mentions, quotes, deals and affiliations.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Headlines and search are free; most full articles are behind a paid WSJ subscription. Archived copies and syndication often surface the text without paying.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading/searching published journalism is invisible to any subject. No sock puppet required to read; only a WSJ login would tie a session to you (avoid it).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A leading edited financial newspaper (Dow Jones); bylined, fact-checked reporting that is citable and attributable.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -38969,19 +38865,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WSJ",
+      "wsj.com"
+    ],
     "tags": [
-      "toddington",
+      "news-journalism",
       "curated-directory",
-      "news-journalism"
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "tweet-metadata",
-      "wsj-technology-news"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/the-wall-street-journal.md"
   },
   {
@@ -45893,42 +45789,51 @@
   },
   {
     "id": "ukons-standard-industrial-classifications-united-kingdom",
-    "name": "UKONS Standard Industrial Classifications (United Kingdom)",
-    "description": "Website that identifies the industrial sector classification across the country at the national level",
+    "name": "UK ONS Standard Industrial Classifications (SIC)",
+    "description": "Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.",
     "url": "https://webarchive.nationalarchives.gov.uk/20160105230903/http://www.ons.gov.uk/ons/guide-method/classifications/current-standard-classifications/standard-industrial-classification/index.html",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up and interpreting UK Standard Industrial Classification (SIC) codes attached to registered companies.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free UK government reference; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference lookup on a National Archives snapshot — reveals nothing about the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK Office for National Statistics classification, preserved on the UK National Archives web archive; authoritative reference data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "UK SIC codes",
+      "ONS Standard Industrial Classification"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "reference",
+      "company-classification",
+      "uk"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/ukons-standard-industrial-classifications-united-kingdom.md"
   },
   {
@@ -116768,59 +116673,6 @@
     "_file": "library/tools/financial-crypto/wikipedia-org.md"
   },
   {
-    "id": "x-com",
-    "name": "x.com",
-    "description": "OSINT tool: x.com.",
-    "url": "https://x.com/epieos/status/1904907899681604016",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "help-x-com",
-      "here-19",
-      "here-20",
-      "twitter-search",
-      "twitter-x-advanced-search",
-      "verif-cation-quiz-bot",
-      "x-com-3",
-      "x-com-4",
-      "x-com-6"
-    ],
-    "_file": "library/tools/financial-crypto/x-com.md"
-  },
-  {
     "id": "xmrchain-net",
     "name": "XMRChain.net",
     "description": "Use when you have a Monero transaction ID or block hash and want to inspect it on-chain — returns transaction/block details, though Monero's privacy hides senders, receivers, and amounts.",
@@ -121674,36 +121526,54 @@
   {
     "id": "geoprotests-api",
     "name": "geoprotests API",
-    "description": "OSINT tool: geoprotests API.",
+    "description": "Use when you have a location/date and want geolocated protest-event records for that place and time — returns geolocation and address.",
     "url": "https://rapidapi.com/gisfromscratch/api/geoprotests/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Querying geocoded protest/civil-unrest events by area and date range as structured points.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Hosted on RapidAPI with a free tier plus paid quota tiers; requires a (free) RapidAPI account and API key.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "opsecNote": "You query a third-party event dataset, not the subject — nothing is disclosed to any person. Standard API-key hygiene applies; don't embed the key in shared notebooks.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "unverified",
+    "trustNote": "Independent developer API (gisfromscratch) aggregating open protest-event data; coverage and freshness are not independently audited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": null,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "geoprotests",
+      "gisfromscratch geoprotests"
+    ],
+    "tags": [
+      "geospatial",
+      "events",
+      "protests"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geoprotests-api.md"
   },
   {
@@ -203475,47 +203345,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/manycontacts-mail-check.md"
-  },
-  {
-    "id": "marketvisual",
-    "name": "MarketVisual",
-    "description": "OSINT tool: MarketVisual.",
-    "url": "http://www.marketvisual.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professional"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/marketvisual.md"
   },
   {
     "id": "mattiapasti-com",
@@ -334295,47 +334124,6 @@
       "toutatis"
     ],
     "_file": "library/tools/social-networks/palenath.md"
-  },
-  {
-    "id": "parler-archive",
-    "name": "Parler archive",
-    "description": "OSINT tool: Parler archive.",
-    "url": "https://parler.adatascienti.st/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Parler"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "parler-archive-search",
-      "ppp-adatascienti-st"
-    ],
-    "_file": "library/tools/social-networks/parler-archive.md"
   },
   {
     "id": "parler-archives",

@@ -146,7 +146,6 @@ kind: group-index
 - **`lookupuk`** (high) — Use when you're trying to trace a lost friend/relative in the UK and want a portal of search resources plus reunion message boards — returns
 - **`lullar-com-3-appspot-com`** (high) — Use when you have an `email`, `username`, or `name` and want to sweep 175+ platforms for matching public profiles in one query — returns soc
 - **`manycontacts-mail-check`** (medium) — Use when you have an `email` and want to know if it's valid/deliverable before pivoting on it — returns an existence/deliverability verdict,
-- **`marketvisual`** (medium) — OSINT tool: MarketVisual.
 - **`mattiapasti-com`** (high) — Use when you have a `name` (first + last) and want to sweep many social platforms for matching profiles at once — returns social-profile, us
 - **`maven`** (medium) — OSINT tool: Maven.
 - **`melissa-com`** (high) — Use when you have a US `name`, `email`, `phone` or `address` fragment and want verified, cross-linked contact data — returns matched `addres

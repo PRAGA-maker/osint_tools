@@ -111,7 +111,7 @@ kind: group-index
 - **`torry-io`** (low) — OSINT tool: torry.io.
 - **`tweepi`** (medium) — Twitter monitor and search tool
 - **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.
-- **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
 - **`vocalink`** (medium) — UKs national payment infrastructure operator - provides industry research and white papers
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.

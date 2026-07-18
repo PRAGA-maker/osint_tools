@@ -431,7 +431,6 @@ kind: group-index
 - **`outx-ai`** (high) — Use when you have a LinkedIn profile URL (`social-profile`) or `username` and want to read it anonymously without your account appearing in 
 - **`overseas-weibo-com`** (high) — Use when you have a `name`/`username` and want to reach Sina Weibo to search for a Chinese-language social profile — returns social-profile,
 - **`palenath`** (high) — Use when you have an `email`, `phone` or `username` and want to enumerate which sites and social accounts it is registered on — returns soci
-- **`parler-archive`** (medium) — OSINT tool: Parler archive.
 - **`parler-archives`** (high) — Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's capt
 - **`parler-com`** (high) — Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-
 - **`pholder`** (medium) — OSINT tool: Pholder.
