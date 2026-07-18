@@ -261,7 +261,7 @@ kind: group-index
 - **`gravatar-email-checker`** (high) — Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reuse
 - **`hadzy-com`** (medium) — OSINT tool: Hadzy.com.
 - **`hashatit`** (low) — OSINT tool: Hashatit.
-- **`hashtagify`** (medium) — OSINT tool: Hashtagify.
+- **`hashtagify`** (low) — Use when you have a topic/hashtag or `username` and want to find related hashtags and the top accounts using them — returns influencer `soci
 - **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
 - **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears
 - **`here-15`** (high) — Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns pro
@@ -309,7 +309,7 @@ kind: group-index
 - **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s
 - **`instagram-monitor`** (high) — Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/fol
 - **`instagram-reddit-and-snapchat`** (high) — Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-prof
-- **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
+- **`instagram-scraper`** (high) — Use when you have an Instagram `username`/`social-profile` and want its posts, stories, and commenters at scale — returns `username`s, `imag
 - **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
 - **`instagram-tool-inteltechniques-com`** (high) — Use when you have an Instagram `username` and want a one-stop panel of query shortcuts (profile, media, followers, location) — returns pre-b
 - **`instagram-user-id`** (high) — Use when you have an Instagram `username` and want its stable numeric user ID plus basic account stats — returns social-profile (numeric ID)
@@ -447,7 +447,7 @@ kind: group-index
 - **`pokoinsta-com`** (high) — Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image
 - **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
 - **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p
-- **`profile-summary-for-github`** (medium) — Get detailed stats by Github username
+- **`profile-summary-for-github`** (medium) — Use when you have a GitHub `username` and want a visual profile summary — returns stated `name`/`geolocation`, top languages, and repo/activ
 - **`prot1ntelligence`** (medium) — Use when you have a ProtonMail/Proton `email` or custom domain and want to confirm it uses Proton and read its PGP-key metadata — returns do
 - **`proxycurl`** (high) — Use when you have a `name`/`social-profile` and want enriched professional data (employer, role, contact) via API — but note the service has
 - **`psnprofiles`** (high) — Use when you have a PlayStation Network `username` and want a public gaming profile — returns trophy/games activity, country, avatar `image`
@@ -582,7 +582,7 @@ kind: group-index
 - **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
 - **`spaces-down`** (medium) — Twitter Spaces download service (available after the broadcast ends). Works for quite a long time. It took about 5 minutes to generate an MP
 - **`speak-subtitles-to-youtube`** (medium) — Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works 
-- **`spotify-downloader`** (medium) — download spotify playlist in mp3 from YouTube
+- **`spotify-downloader`** (low) — Use when you have a subject's public Spotify playlist/profile `social-profile` and want to archive its track metadata and audio — returns a 
 - **`spotlight`** (medium) — OSINT tool: Spotlight.
 - **`sssthreads-pro`** (high) — Use when you have a Threads (Meta) post URL or `username` and want to view/download its public media — but the service is now permanently cl
 - **`ssstik-io`** (medium) — Use when you have a TikTok video URL/`social-profile` and want to save it (watermark-free) without login — returns the downloaded video `ima
@@ -713,7 +713,7 @@ kind: group-index
 - **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
 - **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.
 - **`twitter-chat-schedule`** (high) — Use when you have a subject's topic/interest or a hashtag and want to find the recurring Twitter/X chats and moderators around it — returns 
-- **`twitter-control-panel`** (medium) — A cross-browser extension that allows you to have maximum control over your Twitter feed: Hide retweets, quote tweets, who to follow etc; Re
+- **`twitter-control-panel`** (low) — Use when you review X/Twitter feeds during investigations and want to strip the algorithmic clutter — returns a cleaner, chronological view 
 - **`twitter-developer-platform`** (medium) — OSINT tool: Twitter Developer Platform.
 - **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return
 - **`twitter-mentions-map`** (medium) — A world map that shows the locations of users who mention you in their tweets.

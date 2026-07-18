@@ -179,7 +179,7 @@ kind: group-index
 - **`cme-group`** (medium) — Information on trading, risk management, and more
 - **`cms-gov`** (medium) — Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the pay
 - **`college-police-uk`** (high) — Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's 
-- **`colorado-statewide-marriage-index`** (medium) — Colorado Statewide Marriage Index of records from 1953 to 2006
+- **`colorado-statewide-marriage-index`** (medium) — Use when you have a `name` and want to find their Colorado marriage record (1953–2006) — returns spouse `name`/`associate` and marriage `dob
 - **`colorado`** (high) — Use when you have a `name` and want to check whether a subject is in Colorado Department of Corrections custody — returns offender record wi
 - **`coloradovoters-info`** (high) — Use when you have a `name` in Colorado and want registered-voter data — returns `address`, approximate `dob`/age, party affiliation, and vot
 - **`companies-and-orgs-search-engine`** (medium) — OSINT tool: Companies & Orgs Search Engine.

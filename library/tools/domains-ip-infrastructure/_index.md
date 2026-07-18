@@ -503,7 +503,7 @@ kind: group-index
 - **`validin`** (low) — OSINT tool: Validin.
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
 - **`verisign`** (low) — OSINT tool: Verisign.
-- **`versionista-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
+- **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
 - **`view-rendered-source`** (low) — The standard browser source code view did not display the actual source code. View Rendered Source extension solve this problem. It shows th

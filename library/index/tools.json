@@ -93056,50 +93056,51 @@
   {
     "id": "versionista-website-monitoring",
     "name": "Versionista Website Monitoring",
-    "description": "Website monitoring tool that monitors webpages for changes",
+    "description": "Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored page.",
     "url": "https://versionista.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Watching a specific web page for edits and keeping a timestamped archive of what changed.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier monitors a limited number of pages; higher volumes and features require paid plans.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive from the target's view — Versionista's servers fetch the page, not you, so your IP doesn't hit the site directly. Note that you must register an account, so Versionista logs which pages you monitor.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Established commercial web-change-monitoring service (operating since 2007); reliable for its purpose but a third-party host of the archived snapshots.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "versionista"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis",
+      "change-monitoring"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/versionista-website-monitoring.md"
   },
   {
@@ -147394,46 +147395,55 @@
   {
     "id": "noaa-data-access-viewer",
     "name": "NOAA Data Access Viewer",
-    "description": "satellite images of the coastal U.S.(discover, customize, and download authoritative land cover, imagery, and lidar data.)",
+    "description": "Use when you have a coastal U.S. `geolocation` and want authoritative imagery, land-cover, and lidar elevation data for it — returns downloadable geospatial imagery for that area.",
     "url": "https://coast.noaa.gov/dataviewer/#/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading authoritative aerial imagery, land-cover, and lidar elevation for coastal U.S. locations.",
     "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free U.S. government (NOAA Office for Coastal Management) data portal; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse and download public government geospatial datasets; nothing about a subject is submitted and no one is notified. NOAA logs standard web requests; use a clean session for sensitive investigations.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by NOAA (U.S. federal agency); the imagery, land-cover, and lidar are authoritative government sources.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Satellite/aerial imagery"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ncei-noaa-gov",
       "nexrad-data-inventory-search",
       "ngdc-bathymetry-map",
       "noaa-fisheries-vessel-search"
     ],
+    "aliases": [
+      "NOAA Digital Coast Data Access Viewer"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "Satellite/aerial imagery",
+      "lidar"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/noaa-data-access-viewer.md"
   },
   {
@@ -191561,41 +191571,54 @@
   {
     "id": "this-person-does-not-exist",
     "name": "This Person Does Not Exist",
-    "description": "Creating realistic profile photos for sock puppet accounts or personas",
+    "description": "Use when you need a realistic non-real face for a sock-puppet persona — returns a fresh AI-generated portrait `image` on each load.",
     "url": "https://thispersondoesnotexist.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "persona-creation"
     ],
-    "bestFor": "Creating realistic profile photos for sock puppet accounts or personas",
-    "input": "No input required (random generation on each load)",
-    "output": "High-resolution photorealistic portrait of a non-existent person",
+    "bestFor": "Generating a photorealistic, non-real profile photo for an investigator sock-puppet account.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "image",
+      "face"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; a new StyleGAN-generated portrait loads each time you open/refresh the page.",
     "opsec": "passive",
-    "opsecNote": "Purely generative; no data submitted and no real person involved.",
+    "opsecNote": "Passive and generative — no input is submitted and no real person is involved, so nothing about your subject leaks. But every generated face is well-known GAN output; sophisticated targets and some platforms can flag \"TPDNE\"-style images (fixed eye placement, warped backgrounds/accessories), so vet and lightly edit before use, and never reuse the same face across personas.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A well-known demo of NVIDIA's StyleGAN; images are synthetic by construction, so there is no data-quality question — only detectability.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "generated-photos",
+      "fake-name-generator"
+    ],
+    "aliases": [
+      "TPDNE",
+      "thispersondoesnotexist.com"
+    ],
+    "tags": [
+      "persona-creation",
+      "sock-puppet",
+      "gan",
+      "opsec"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/persona-creation/this-person-does-not-exist.md"
   },
   {
@@ -224893,59 +224916,61 @@
   {
     "id": "colorado-statewide-marriage-index",
     "name": "Colorado Statewide Marriage Index",
-    "description": "Colorado Statewide Marriage Index of records from 1953 to 2006",
+    "description": "Use when you have a `name` and want to find their Colorado marriage record (1953–2006) — returns spouse `name`/`associate` and marriage `dob` (date) and county.",
     "url": "https://familysearch.org/search/collection/1932434",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a marriage in Colorado (1953–2006) and identifying the spouse and date/county.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view via FamilySearch; requires a free FamilySearch account to see full record details.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you search a historical vital-records index; no living subject is notified. FamilySearch requires a (free) login, so your searches are tied to that account; use a research/sock-puppet account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted by FamilySearch (operated by the nonprofit that runs the largest genealogy archive); indexed from official Colorado state vital records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "family-search",
+      "familysearch",
+      "familysearch-org",
+      "familysearch-2",
+      "familysearch-research-wiki"
+    ],
+    "aliases": [
+      "Colorado Marriage Index 1953-2006"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "vital-records",
+      "marriage"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "alabama-deaths",
-      "family-search",
-      "familysearch",
-      "familysearch-2",
-      "familysearch-births-and-baptisms-1972-1981-australia",
-      "familysearch-deaths-and-burials-1816-1980-australia",
-      "familysearch-free-family-trees-and-genealogy-archives-familysearch-org",
-      "familysearch-guessing-a-name-variation",
-      "familysearch-org",
-      "familysearch-research-wiki"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/colorado-statewide-marriage-index.md"
   },
   {
@@ -258261,41 +258286,54 @@
   {
     "id": "redfin",
     "name": "Redfin",
-    "description": "Property history and market data",
+    "description": "Use when you have an `address` and want a property's sale history, valuation, and details — returns ownership-history dates, prices, and `geolocation` context.",
     "url": "https://redfin.com",
     "category": "public-records",
     "path": [
       "public-records",
       "property-records"
     ],
-    "bestFor": "Property history and market data",
-    "input": "Address or property ID",
-    "output": "Sale history, price trends, tax info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Pulling a U.S. property's sale/price history, tax, and listing details from an address.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse property and sale-history data; no account needed for public listing/record pages.",
     "opsec": "passive",
-    "opsecNote": "Public real estate platform",
+    "opsecNote": "Passive — Redfin is a public real-estate platform; looking up a property does not notify anyone associated with it. Redfin logs standard web activity; use a clean session for sensitive lookups and avoid saving searches/favorites under a real account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Major licensed U.S. real-estate brokerage; listing and sale-history data are sourced from MLS and public records, making them reliable (though owner names are not shown).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "zillow",
+      "realtor-com"
+    ],
+    "aliases": [
+      "redfin.com"
+    ],
+    "tags": [
+      "property-records",
+      "real-estate",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/property-records/redfin.md"
   },
   {
@@ -324277,46 +324315,52 @@
   {
     "id": "hashtagify",
     "name": "Hashtagify",
-    "description": "OSINT tool: Hashtagify.",
+    "description": "Use when you have a topic/hashtag or `username` and want to find related hashtags and the top accounts using them — returns influencer `social-profile`s and hashtag popularity.",
     "url": "https://hashtagify.me",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a hashtag's related tags and the top influencers who use it on X/Twitter and Instagram.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "geolocation"
+      "username"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic hashtag search is free on the site; deeper analytics, tracking, and the Chrome extension require a paid plan / trial.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query aggregated public hashtag data; targets are not notified. The free tier requires no account, so lookups aren't tied to you; paid features need registration.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Established commercial hashtag-analytics product; useful for trend/influencer mapping but a marketing tool, and free-tier depth is limited.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "hashtagifyme"
     ],
+    "aliases": [
+      "Hashtagify.me"
+    ],
+    "tags": [
+      "twitter",
+      "hashtags",
+      "social-analytics"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/hashtagify.md"
   },
   {
@@ -327062,52 +327106,66 @@
   },
   {
     "id": "instagram-scraper",
-    "name": "Instagram Scraper",
-    "description": "Scrape info about accounts, posts, stories and comment",
+    "name": "Instagram Scraper (Apify)",
+    "description": "Use when you have an Instagram `username`/`social-profile` and want its posts, stories, and commenters at scale — returns `username`s, `image`s, captions, and `geolocation` tags.",
     "url": "https://apify.com/jaroslavhejlek/instagram-scraper",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting an Instagram account's posts, stories, comments, and follower interactions via a hosted actor.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "username",
+      "image",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Runs on Apify's platform; free monthly platform credits cover light use, heavier runs consume paid compute units. No Instagram login of your own is required.",
+    "opsec": "passive",
+    "opsecNote": "The scrape runs from Apify's cloud infrastructure and residential proxies, not your IP, so it's passive toward the target and doesn't tie the activity to you. It only collects public data; scraping still violates Instagram's ToS, and Apify sees your job inputs.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trust": "community",
+    "trustNote": "A popular, maintained third-party actor by jaroslavhejlek on the Apify marketplace; widely used but community-built, and Instagram anti-scraping changes can break or throttle it.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Instagram"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
-      "apify-s-google-maps-scraper",
-      "dark-web-scraper",
-      "facebook-latest-comments-scraper",
-      "facebook-latest-posts-scraper",
-      "google-maps-scraper",
-      "google-search-scraper",
       "instagram-hashtag-scraper",
-      "reddit-scraper",
+      "facebook-latest-posts-scraper",
+      "facebook-latest-comments-scraper",
       "twitter-scraper",
-      "twitter-url-scraper",
+      "reddit-scraper",
       "youtube-scraper"
     ],
+    "aliases": [
+      "jaroslavhejlek/instagram-scraper",
+      "Apify Instagram Scraper"
+    ],
+    "tags": [
+      "Social Media",
+      "Instagram",
+      "scraping",
+      "apify"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-scraper.md"
   },
   {
@@ -334534,41 +334592,51 @@
   },
   {
     "id": "profile-summary-for-github",
-    "name": "Profile Summary for Github",
-    "description": "Get detailed stats by Github username",
+    "name": "Profile Summary for GitHub",
+    "description": "Use when you have a GitHub `username` and want a visual profile summary — returns stated `name`/`geolocation`, top languages, and repo/activity stats.",
     "url": "https://profile-summary-for-github.com/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One-page visual breakdown of a GitHub user's languages, repos, and activity from just their username.",
     "selectorsIn": [
       "username"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; reads the public GitHub API. Heavy use may hit GitHub's unauthenticated rate limits.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it queries GitHub's public API for already-public profile data; the target is not notified. The lookup runs client-side/via the tool's backend against GitHub, not against the user directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Open-source community web app (tipsy/profile-summary-for-github); it visualizes GitHub's own public API data, so accuracy tracks GitHub.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "profile-summary-for-github.com"
+    ],
     "tags": [
       "Social Media",
-      "Github"
+      "Github",
+      "developer-osint"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/profile-summary-for-github.md"
   },
   {
@@ -341415,39 +341483,50 @@
   },
   {
     "id": "spotify-downloader",
-    "name": "Spotify downloader",
-    "description": "download spotify playlist in mp3 from YouTube",
+    "name": "spotDL (Spotify Downloader)",
+    "description": "Use when you have a subject's public Spotify playlist/profile `social-profile` and want to archive its track metadata and audio — returns a downloaded copy of the playlist contents.",
     "url": "https://github.com/spotDL/spotify-downloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Archiving a public Spotify playlist (metadata + audio sourced from YouTube) for offline analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source CLI (Python). No Spotify subscription needed; it reads public Spotify metadata and pulls audio from YouTube.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — it reads a public playlist's metadata via Spotify's API and downloads matching audio from YouTube; the playlist owner is not notified. Downloading copyrighted audio may raise legal/ToS issues, so limit use to metadata/archival purposes where appropriate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Well-known, actively maintained open-source project (spotDL org); reliable as a downloader, but a media utility rather than a purpose-built OSINT tool.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "spotDL",
+      "spotdl"
+    ],
     "tags": [
       "Social Media",
-      "Spotify"
+      "Spotify",
+      "media-archival"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/spotify-downloader.md"
   },
   {
@@ -348561,39 +348640,51 @@
   },
   {
     "id": "twitter-control-panel",
-    "name": "Twitter Control Panel",
-    "description": "A cross-browser extension that allows you to have maximum control over your Twitter feed: Hide retweets, quote tweets, who to follow etc; Reduce \"engagement\"; Hide UI items; Remove algoritmic content",
+    "name": "Control Panel for Twitter",
+    "description": "Use when you review X/Twitter feeds during investigations and want to strip the algorithmic clutter — returns a cleaner, chronological view of a `social-profile` timeline.",
     "url": "https://github.com/insin/control-panel-for-twitter",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "De-cluttering the X/Twitter UI so you can review a target's real activity without algorithmic noise.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (MIT); available for Chrome, Firefox, Edge, Safari.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it only modifies how X pages render in your own browser; it makes no requests to the target and sends no data anywhere. It does not de-anonymize you, but you should still browse from a sock-puppet/logged-out session as usual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Popular, actively maintained open-source extension by developer insin; widely used and source-auditable, but a community project, not an official X tool.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Control Panel for Twitter",
+      "control-panel-for-twitter",
+      "Twitter Control Panel"
+    ],
     "tags": [
       "Social Media",
-      "Twitter"
+      "Twitter",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-control-panel.md"
   },
   {

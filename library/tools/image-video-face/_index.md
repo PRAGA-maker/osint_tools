@@ -234,7 +234,7 @@ kind: group-index
 - **`nasa-earthdata-search`** (medium) — search in 8555+ collection and photos.
 - **`neural-network-image-super-resolution-and-enhancement`** (high) — Use when a lead photo is too small/low-res and you need AI upscaling to a larger, clearer image for human review — returns an upscaled image
 - **`news-myseldon`** (medium) — Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and
-- **`noaa-data-access-viewer`** (medium) — satellite images of the coastal U.S.(discover, customize, and download authoritative land cover, imagery, and lidar data.)
+- **`noaa-data-access-viewer`** (low) — Use when you have a coastal U.S. `geolocation` and want authoritative imagery, land-cover, and lidar elevation data for it — returns downloa
 - **`numlookup-reverse-image-search`** (medium) — The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches wi
 - **`observer`** (medium) — service allows you to watch data from different orbiting satellites in the record. The data is available in 15-30 minutes after recording.
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
