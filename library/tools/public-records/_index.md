@@ -370,7 +370,7 @@ kind: group-index
 - **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
 - **`genealogyplace-family-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`geneanet-org`** (high) — Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family)
-- **`geneologyintime-family-tree-search-engine`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`geneologyintime-family-tree-search-engine`** (medium) — Use when you have a `name` and want free genealogy records across many databases at once — returns relatives (`associate`), historical `addr
 - **`general-land-office-records`** (medium) — The Official Federal Land Records Site providing search tool for land patents, surveys and field notes
 - **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
 - **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
@@ -509,7 +509,7 @@ kind: group-index
 - **`iowa-courts-online-search`** (high) — Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/a
 - **`iowa-judicial-branch`** (high) — Use when you have a `name` and want Iowa state court cases — returns civil, criminal, traffic and other case records with parties, charges a
 - **`iowa-offender-search`** (high) — Use when you have a `name` and want to locate someone in Iowa state correctional custody or supervision — returns incarceration/supervision 
-- **`iowa-registered-voter-verification`** (medium) — Iowa registered voter verification and search
+- **`iowa-registered-voter-verification`** (medium) — Use when you have a `name` and DOB and want to confirm someone is a registered Iowa voter — returns registration status and county/precinct 
 - **`iowa-warrant-inquiry-polk-county`** (high) — Use when you have a `name` and want to check whether the subject has a possible active warrant held by the Polk County (Florida) Sheriff's O
 - **`ipo-gov-uk-2`** (high) — Use when you have a `name` or `employer-org` and want UK trademark filings tied to them — returns the owner/applicant `name`, `address`, and
 - **`ipo-gov-uk`** (high) — Use when you have a `name`/`employer-org` and want the UK trademarks they own — the UK Intellectual Property Office owner search returns the
@@ -1055,7 +1055,7 @@ kind: group-index
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
 - **`world-wide-science-resources`** (medium) — Academic-related global science gateway includes a list of websites participating in WorldWideScience.org
 - **`wto-statistics`** (low) — OSINT tool: WTO Statistics.
-- **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — OSINT tool: www.infogo.gov.on.ca/infogo/home.html.
+- **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
 - **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
 - **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`

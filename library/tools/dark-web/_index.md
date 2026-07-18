@@ -17,7 +17,6 @@ kind: group-index
 - **`4-ever-proxy`** (low) — OSINT tool: 4 Ever Proxy.
 - **`activetk`** (low) — OSINT tool: ActiveTK.
 - **`ahmia-link-graph`** (low) — Enter the name of the site in the .onion domain zone and see what other sites in the #onion domain zone it is associated with.
-- **`aleph-open-search`** (medium) — OSINT tool: Aleph Open Search.
 - **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
 - **`ancestor-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national level
 - **`andi`** (medium) — AI search assistant, ad-free and privacy-focused

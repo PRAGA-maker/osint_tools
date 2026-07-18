@@ -165,7 +165,7 @@ kind: group-index
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
 - **`cnn`** (low) — OSINT tool: CNN.
 - **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
-- **`colorado-licensed-professional-lookup`** (medium) — Colorados licensed professional or business search tool
+- **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Colorados unclaimed property search tool
 - **`comicvine`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
 - **`command-e`** (medium) — Universal search and productivity app
@@ -365,7 +365,6 @@ kind: group-index
 - **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
 - **`homepage-search-engine`** (medium) — OSINT tool: Homepage Search Engine.
 - **`hong-kong-securities-and-futures-commission`** (medium) — Hong Kong Securities & Futures Commission website
-- **`hotbot-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
@@ -391,7 +390,6 @@ kind: group-index
 - **`internet-archive`** (medium) — OSINT tool: Internet Archive.
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
-- **`ipfs-search-com`** (medium) — OSINT tool: Ipfs-search.com.
 - **`ipse-io`** (medium) — OSINT tool: Ipse.io.
 - **`irbis-by-espy`** (medium) — Powerful lookup and reverse search tool
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
@@ -759,7 +757,7 @@ kind: group-index
 - **`superuser`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`surf-canyon-ebay-search`** (medium) — eBay search engine
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
-- **`susper`** (medium) — Decentralized web search engine that uses the peer to peer system 'YaCy' and 'Apache Solr' to crawl and index search results.
+- **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
 - **`tabnine`** (medium) — Java code search engine
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.

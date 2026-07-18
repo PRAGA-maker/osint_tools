@@ -21,7 +21,7 @@ kind: group-index
 - **`most-wanted-criminal-pages`** (medium) — Wanted fugitive identification
 - **`national-sex-offender-search`** (medium) — National sex offender search
 - **`nationwide-county-court-records`** (medium) — Locating county court records
-- **`the-inmate-locator`** (medium) — Federal inmate location
+- **`the-inmate-locator`** (high) — Use when you have a `name` (or BOP register number) and want to find someone in U.S. federal prison — returns their facility `geolocation`, 
 - **`unicourt`** (medium) — Use when you have a `name` (party) and want US litigation history — searches state and federal court dockets to return cases, filings and th
 - **`world-legal-information-institute`** (medium) — Use when you have a `name` and want free access to court decisions and legal materials across jurisdictions — returns case `document-id`, `a
 

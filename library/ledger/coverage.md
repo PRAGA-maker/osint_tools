@@ -2,22 +2,22 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8298 total · 3108 full · 5190 stub (37% enriched)
+**Tools:** 8294 total · 3114 full · 5180 stub (37% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3332 · medium: 3016 · high: 1950
+low: 3333 · medium: 3010 · high: 1951
 
 ## Tools by trust
-unverified: 3986 · community: 3268 · trusted: 1032 · personal: 6 · untrustworthy: 6
+unverified: 3979 · community: 3267 · trusted: 1036 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/456
 - `archives-cache` — 28/140
 - `communities-forums` — 50/423
-- `dark-web` — 7/119
+- `dark-web` — 7/118
 - `dating-classifieds` — 34/116
 - `documents-metadata` — 19/317
 - `domains-ip-infrastructure` — 46/765
@@ -31,18 +31,18 @@ unverified: 3986 · community: 3268 · trusted: 1032 · personal: 6 · untrustwo
 - `opsec-investigator-tooling` — 17/566
 - `people-search` — 225/272
 - `phone` — 132/137
-- `public-records` — 613/1120
-- `search-engines` — 181/961
+- `public-records` — 617/1120
+- `search-engines` — 183/959
 - `social-networks` — 584/873
 - `training-ctf` — 0/12
 - `translation-language` — 10/103
 - `transportation` — 46/232
-- `username` — 98/105
+- `username` — 98/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1057 leaves
-- `library/tools/search-engines` — 893 leaves
+- `library/tools/search-engines` — 891 leaves
 - `library/tools/social-networks` — 844 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 522 leaves
@@ -60,9 +60,9 @@ unverified: 3986 · community: 3268 · trusted: 1032 · personal: 6 · untrustwo
 - `library/tools/archives-cache` — 122 leaves
 - `library/tools/dating-classifieds` — 116 leaves
 - `library/tools/financial-crypto` — 109 leaves
-- `library/tools/dark-web` — 108 leaves
+- `library/tools/dark-web` — 107 leaves
 - `library/tools/translation-language` — 89 leaves
-- `library/tools/username` — 87 leaves
+- `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
 - `library/tools/domains-ip-infrastructure/reputation` — 21 leaves
