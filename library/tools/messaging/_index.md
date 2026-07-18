@@ -113,7 +113,6 @@ kind: group-index
 - **`readergram-com`** (medium) — OSINT tool: Readergram.com.
 - **`reddit-com-2`** (high) — Use when you have a Telegram `username` and want the account's stable numeric user ID — this is a community how-to thread describing the bot
 - **`regdatebot`** (high) — Use when you have a Telegram `username` or account and want to estimate when it was created — returns an approximate account registration da
-- **`retrieve-metadata`** (medium) — OSINT tool: Retrieve Metadata.
 - **`sangmata-beta`** (high) — Use when you have a Telegram user (a `username` or forwarded message) and want their history of past names and usernames — returns prior `na
 - **`sangmatainfo-bot`** (high) — Use when you have a Telegram user (via a forwarded message or numeric ID) and want their history of past display names and usernames — retur
 - **`search-buzz-im`** (medium) — OSINT tool: Search.buzz.im.

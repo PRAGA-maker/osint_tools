@@ -20,7 +20,7 @@ kind: group-index
 - **`archieinitiative-com`** (medium) — OSINT tool: archieinitiative.com.
 - **`atlas-co`** (medium) — OSINT tool: atlas.co.
 - **`awesome-maps-ukraine`** (medium) — OSINT tool: awesome-maps-ukraine.
-- **`baidu-com`** (medium) — OSINT tool: baidu.com.
+- **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
 - **`cat-uxo`** (low) — A repository for professionals working in the explosive ordnance disposal (EOD) space.
@@ -65,7 +65,7 @@ kind: group-index
 - **`google-map-search-engine`** (medium) — OSINT tool: Google Map Search Engine.
 - **`gosur-map`** (medium) — OSINT tool: Gosur Map.
 - **`govmap`** (low) — GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and i
-- **`gps-latitude-longitude-com`** (medium) — OSINT tool: gps-latitude-longitude.com.
+- **`gps-latitude-longitude-com`** (medium) — Use when you have an `address` or a map point and want its precise coordinates — returns `geolocation` in decimal, DMS, and UTM formats.
 - **`gpx-file-editor`** (medium) — OSINT tool: Gpx File Editor.
 - **`gridreferencefinder-com`** (medium) — OSINT tool: gridreferencefinder.com.
 - **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro

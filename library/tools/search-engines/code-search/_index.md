@@ -7,7 +7,7 @@ kind: group-index
 # search-engines/code-search
 
 ## Skills here
-- **`github-dorks`** (medium) — Finding exposed credentials and sensitive files on GitHub via advanced search dorks
+- **`github-dorks`** (medium) — Use when you have a `username`, org, or `domain` and want to hunt exposed secrets/sensitive files in their GitHub repos — returns matching c
 - **`gitleaks`** (medium) — Use when you have a target's git repo/`username` and want secrets and committer identities buried in its history — returns leaked credential
 - **`nerdydata`** (low) — Use when you have a code snippet, tracking ID, or tech string and want every website whose source contains it — returns the matching `domain
 - **`publicwww`** (medium) — Finding websites with specific code/analytics IDs, competitive intelligence, security research

@@ -1031,7 +1031,7 @@ kind: group-index
 - **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na
 - **`vat-search-eu`** (medium) — Use when you have an EU company `name` or VAT number and want to validate/resolve it — returns the VAT-registered business `name`, `address`
 - **`viking-rifle-series-shooter-live-results`** (medium) — OSINT tool: Viking Rifle Series Shooter Live Results.
-- **`virtualglobetrotting-com`** (medium) — OSINT tool: Virtualglobetrotting.com.
+- **`virtualglobetrotting-com`** (medium) — Use when you have a `name` or place and want user-submitted satellite/street-view locations — returns pinpointed `address`es/coordinates for
 - **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
 - **`vizala`** (low) — OSINT tool: Vizala.
 - **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n

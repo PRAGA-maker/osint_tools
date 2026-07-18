@@ -112,7 +112,7 @@ kind: group-index
 - **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
 - **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
-- **`discord-me`** (medium) — OSINT tool: Discord Me.
+- **`discord-me`** (medium) — Use when you have a `username` or topic and want to find public Discord servers a subject may frequent — returns server listings with catego
 - **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
 - **`discord-user-search`** (medium) — Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning p
 - **`discordservers`** (medium) — OSINT tool: DiscordServers.
@@ -205,7 +205,7 @@ kind: group-index
 - **`fulldp-co`** (high) — Use when you have an Instagram `username` and want the full-resolution profile picture Instagram normally shows only as a thumbnail — return
 - **`gab-com`** (high) — Use when you have a `username` or `name` and want to find/monitor a subject on the Gab social network — returns their `social-profile` and p
 - **`gab-social`** (high) — Use when you have a `name`/`username` and suspect the subject uses the alt-tech network Gab — returns their `social-profile`, posts, and con
-- **`gallery-dl`** (medium) — Quick and simple tool for downloading image galleries and collections from #flickr, #danbooru, #pixiv, #deviantart, #exhentai
+- **`gallery-dl`** (medium) — Use when you have a `social-profile` or gallery URL and want to bulk-download all its images/videos with metadata — returns local `image` fi
 - **`gapowork-com`** (high) — Use when a Vietnamese subject's `employer-org` uses GapoWork and you're identifying the platform — a closed enterprise workspace, so it yiel
 - **`geochirp`** (low) — Use when you have a `geolocation` or keyword and want to find tweets/Twitter users near a place on a map — returns `social-profile` and `geo
 - **`geocreepy`** (high) — Use when you want to aggregate a target's geotagged social-media posts onto a map to infer locations/pattern-of-life — returns `geolocation`

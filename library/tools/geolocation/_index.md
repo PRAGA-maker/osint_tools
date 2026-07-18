@@ -79,7 +79,7 @@ kind: group-index
 - **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
 - **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.
 - **`european-world-translator`** (medium) — Enter the word in English to see its translation into different European languages on the map.
-- **`everymountainintheworld`** (medium) — Map of the world showing the mountains (with absolute and relative altitude and links to Peakbagger, Listsofjohn and Caltopo).
+- **`everymountainintheworld`** (medium) — Use when you have a `geolocation` with a distinctive peak/summit and want to identify it — returns named mountains with elevation and links 
 - **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
 - **`fao-map-catalog`** (medium) — OSINT tool: FAO Map Catalog.
 - **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
