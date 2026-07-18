@@ -27598,46 +27598,6 @@
     "_file": "library/tools/communities-forums/fark-com.md"
   },
   {
-    "id": "feedburner",
-    "name": "Feedburner",
-    "description": "RSS feed management website",
-    "url": "http://feedburner.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/feedburner.md"
-  },
-  {
     "id": "feeddemon-rss-reader",
     "name": "Feeddemon RSS Reader",
     "description": "Website that provides an online bookmarking application for managing RSS feeds",
@@ -28039,46 +27999,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/flixwatch-co.md"
-  },
-  {
-    "id": "fohboh",
-    "name": "Fohboh",
-    "description": "Website related to news on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "http://fohboh.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/fohboh.md"
   },
   {
     "id": "food-network-canada",
@@ -31793,45 +31713,57 @@
   },
   {
     "id": "linkedin-groups",
-    "name": "Linkedin Groups",
-    "description": "OSINT tool: Linkedin Groups.",
-    "url": "http://www.linkedin.com",
+    "name": "LinkedIn Groups",
+    "description": "Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to and fellow members (`associate`).",
+    "url": "https://www.linkedin.com/groups/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding which LinkedIn Groups a person belongs to (and co-members) to infer interests, industry, and connections.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free with a LinkedIn account; deeper visibility (who's in a group, full member lists) needs login and sometimes group membership.",
+    "opsec": "active",
+    "opsecNote": "LinkedIn ties activity to your account and shows \"who viewed your profile\"; browsing a target's profile or joining their group can notify them. Use a well-aged sock-puppet account, disable public activity broadcasts, and browse in private mode — never your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party LinkedIn data — group memberships and member lists are genuine; the caveat is visibility limits and your own OpSec, not data authenticity.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "LinkedIn Groups OSINT"
+    ],
     "tags": [
-      "forums-and-discussion-boards-search"
+      "linkedin",
+      "professional",
+      "social-networks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "relatedTools": [
-      "griffin-glynn-hatless1der",
       "hatless-investigations-group",
       "linkedin",
-      "linkedin-advanced-search",
       "linkedin-com",
-      "robert-devere-bunn",
       "www-linkedin-com-pub-dir-people-search"
     ],
     "_file": "library/tools/communities-forums/linkedin-groups.md"
@@ -52040,43 +51972,55 @@
   {
     "id": "apkleaks",
     "name": "APKLeaks",
-    "description": "API endpoint discovery, hardcoded credential detection, sensitive data extraction from APKs",
+    "description": "Use when you have an Android APK and want to extract its secrets — returns discovered URLs/API endpoints, hardcoded keys/tokens, and other sensitive strings.",
     "url": "https://github.com/dwisiswant0/apkleaks",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "app-analysis"
     ],
-    "bestFor": "API endpoint discovery, hardcoded credential detection, sensitive data extraction from APKs",
-    "input": "APK files",
-    "output": "Discovered secrets, API endpoints, hardcoded strings, configuration data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Scanning an APK for URIs, API endpoints, and hardcoded credentials/secrets during app analysis.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "password"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (Apache 2.0); install via pip/Go, or run in Docker.",
     "opsec": "passive",
-    "opsecNote": "Local analysis only; no network communication required",
+    "opsecNote": "The scan runs locally against an APK file you already hold — it makes no requests to the app's backend or to any subject, so it's passive. If you later probe the endpoints it finds, that becomes active recon; keep those steps separate and behind proper OpSec.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A widely-used open-source tool by dwisiswant0; results are literal strings extracted from the APK — genuine, but require human judgement to tell live secrets from placeholders.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "apkleaks",
+      "dwisiswant0/apkleaks"
+    ],
+    "tags": [
+      "android",
+      "apk",
+      "app-analysis",
+      "secrets-scanning"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "relatedTools": [
       "go-dork"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/documents-metadata/app-analysis/apkleaks.md"
   },
   {
@@ -158850,44 +158794,51 @@
   },
   {
     "id": "geomastr-com",
-    "name": "geomastr.com",
-    "description": "OSINT tool: geomastr.com.",
+    "name": "Geomastr",
+    "description": "Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, poles, and other visual identifiers by country.",
     "url": "https://geomastr.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a photo's country/region from visual infrastructure clues (bollards, license plates, road signs, poles, alphabets).",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference/training hub; no account required.",
+    "opsec": "passive",
+    "opsecNote": "A reference site you consult while analysing an image offline — you never query or touch the subject. Nothing is signalled; the interpretation happens on your side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community GeoGuessr training resource; the visual-clue references are well-organised and broadly accurate, but it's a study aid, not an authoritative geographic database.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "geomastr.com",
+      "Geomastr GeoGuessr hub"
+    ],
     "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "geolocation",
+      "geoguessr",
+      "image-analysis",
+      "visual-clues"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/geomastr-com.md"
   },
   {
@@ -212956,31 +212907,31 @@
   {
     "id": "numpi",
     "name": "Numpi",
-    "description": "Reverse-phone people lookup.",
+    "description": "Use when you have a US `phone` number and want to identify the owner — returns possible name, location, and carrier/line type from a reverse-lookup directory.",
     "url": "https://numpi.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Reverse phone lookup with owner details (free preview).",
+    "bestFor": "Reverse-lookup of a US phone number to a possible owner name and location.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "phone",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic reverse-lookup surfaces some data free; full owner reports are typically gated behind a paid/upsell step.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Numpi's aggregated directory, not the number's owner — the subject is not called or notified. You disclose the target number to a US data broker; use a clean session and avoid entering numbers you must keep siloed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A commercial US reverse-phone/data-broker aggregator; matches are probabilistic and drawn from mixed public/marketing sources, so treat owner attributions as leads to confirm.",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "us"
     ],
@@ -212988,14 +212939,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "numpi.com"
+    ],
     "tags": [
-      "phone",
-      "reverse-phone"
+      "reverse-phone",
+      "people-search",
+      "phone"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/phone/numpi.md"
   },
   {
@@ -222445,50 +222399,70 @@
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "_file": "library/tools/public-records/canadian-business-research.md"
   },
   {
     "id": "canadian-copyrights-database",
     "name": "Canadian Copyrights Database",
-    "description": "OSINT tool: Canadian Copyrights Database.",
-    "url": "https://www.ic.gc.ca/app/opic-cipo/cpyrghts/dsplysrch.do",
+    "description": "Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and dates.",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright/canadian-copyrights-database",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Canada's official copyright register for works, authors, and owners (registrations from 1991 on).",
     "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
-      "address",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official CIPO database; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You search a public government register, not the individual — nothing is signalled. Standard web logging on the CIPO/canada.ca side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Canadian Intellectual Property Office (CIPO / ISED); authoritative for copyright registrations filed in Canada.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CIPO Copyrights Database",
+      "Canadian Copyright Database"
+    ],
     "tags": [
-      "property"
+      "copyright",
+      "public-records",
+      "canada",
+      "intellectual-property"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
+    "relatedTools": [
+      "canadian-business-research",
+      "canadian-department-of-finance",
+      "canadian-importers-database",
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database",
+      "completed-access-to-information-requests",
+      "federal-corporation-search-canada",
+      "gov-data-canada",
+      "government-of-canada-open-data"
+    ],
     "_file": "library/tools/public-records/canadian-copyrights-database.md"
   },
   {
@@ -222533,7 +222507,8 @@
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
       "completed-access-to-information-requests",
-      "government-of-canada-open-data"
+      "government-of-canada-open-data",
+      "canadian-copyrights-database"
     ],
     "aliases": [
       "CID",
@@ -222685,7 +222660,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "aliases": [
       "CIPO",
@@ -222900,7 +222876,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "aliases": [
       "CIPO Trademarks",
@@ -225460,7 +225437,8 @@
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "_file": "library/tools/public-records/completed-access-to-information-requests.md"
   },
@@ -232075,7 +232053,8 @@
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "_file": "library/tools/public-records/federal-corporation-search-canada.md"
   },
@@ -236441,7 +236420,8 @@
       "canadian-trademarks-database",
       "canadian-department-of-finance",
       "canadian-importers-database",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-copyrights-database"
     ],
     "aliases": [
       "open.canada.ca",
@@ -237728,7 +237708,8 @@
       "gov-data-canada",
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "_file": "library/tools/public-records/government-of-canada-open-data.md"
   },
@@ -259482,47 +259463,46 @@
   {
     "id": "rxlist",
     "name": "RxList",
-    "description": "Internet drug index for prescription drugs and medications",
-    "url": "http://www.rxlist.com/script/main/hp.asp",
+    "description": "Use when you have a pill's imprint/shape/colour or a drug name and want to identify the medication — returns the drug identity, uses, and imagery.",
+    "url": "https://www.rxlist.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
+    "bestFor": "Identifying an unknown medication from its pill markings, or looking up a named drug's details.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free drug/medication reference (WebMD/RxList); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference lookup against a drug database — no subject is involved and nothing is signalled. Purely informational; the investigative link is yours to make offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Operated by RxList/WebMD using pharmaceutical reference data; authoritative for US drug information and pill identification.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RxList pill identifier",
+      "rxlist.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "academic-scholarly-research-tools"
+      "medical",
+      "drug-reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rxlist.md"
   },
   {
@@ -275315,46 +275295,6 @@
     "_file": "library/tools/search-engines/blinde-kuh-childrens-search-engine-germany.md"
   },
   {
-    "id": "blogpond-blogging",
-    "name": "Blogpond Blogging",
-    "description": "Australian website that provides a search engine that searches blogs; includes the top 100 blogs and articles",
-    "url": "http://blogpond.com.au",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/blogpond-blogging.md"
-  },
-  {
     "id": "blogs-search-engine",
     "name": "Blogs Search Engine",
     "description": "OSINT tool: Blogs Search Engine.",
@@ -276225,7 +276165,8 @@
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
-      "canadian-importers-database"
+      "canadian-importers-database",
+      "canadian-copyrights-database"
     ],
     "_file": "library/tools/search-engines/canadian-department-of-finance.md"
   },
@@ -283517,35 +283458,46 @@
   {
     "id": "github-with-awesome-list-search-engine",
     "name": "Github with Awesome-List Search Engine",
-    "description": "OSINT tool: Github with Awesome-List Search Engine.",
+    "description": "Use when you need to discover an OSINT/security tool or resource — returns matches scoped to GitHub \"awesome-*\" curated lists via a Google Custom Search Engine.",
     "url": "https://cse.google.com/cse/publicurl?cx=017261104271573007538:fqn_jyftcdq",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding tools, repos, and resources by searching across GitHub's curated \"awesome-list\" collections.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine (CSE); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search Google's index of public GitHub awesome-lists — no target is involved. It's a tool-discovery aid, not a subject lookup; nothing is signalled.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A community-built Google CSE scoped to GitHub awesome-lists; results are genuine index entries, but the CSE's scope and freshness depend on its anonymous maintainer and Google's crawl.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "awesome-list search",
+      "GitHub awesome CSE"
+    ],
+    "tags": [
+      "directory",
+      "github",
+      "google-cse",
+      "tool-discovery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/github-with-awesome-list-search-engine.md"
   },
   {
@@ -305990,42 +305942,54 @@
   },
   {
     "id": "uk-law-society",
-    "name": "UK Law Society",
-    "description": "Legal-related search engine for locating legal representatives including quick search and pro search",
-    "url": "http://solicitors.lawsociety.org.uk",
+    "name": "UK Law Society — Find a Solicitor",
+    "description": "Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and regulated status.",
+    "url": "https://solicitors.lawsociety.org.uk",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming and locating a solicitor (or law firm) regulated in England & Wales via the official register.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official register; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the public register of solicitors, not the individual — nothing is signalled to the subject. Standard web logging applies on the Law Society's side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Law Society \"Find a Solicitor\" register, drawing on SRA-regulated records; authoritative for who is a practising solicitor in England & Wales.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find a Solicitor",
+      "Law Society solicitor register",
+      "solicitors.lawsociety.org.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "legal",
+      "professional-register"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/uk-law-society.md"
   },
   {

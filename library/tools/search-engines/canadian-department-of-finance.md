@@ -42,6 +42,7 @@ relatedTools:
 - canadian-intellectual-property-office
 - canadian-trademarks-database
 - canadian-importers-database
+- canadian-copyrights-database
 ---
 
 # Canadian Department of Finance

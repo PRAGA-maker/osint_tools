@@ -40,6 +40,7 @@ relatedTools:
 - government-of-canada-open-data
 - canadian-trademarks-database
 - canadian-importers-database
+- canadian-copyrights-database
 aliases:
 - CIPO
 - Canadian Patents Database

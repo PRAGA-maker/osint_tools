@@ -70,7 +70,7 @@ kind: group-index
 - **`no-nonsense-intel`** (high) — Use when you have a `phone` number and want to search the web for it in every format people actually write it — returns ready-made search qu
 - **`number-guru-lookup`** (high) — Use when you have a `phone` number and want the likely owner name, carrier, line type and spam reputation — returns name and phone metadata.
 - **`numberingplans-com`** (medium) — Use when you have a `phone` number, IMEI or IMSI and want to decode its country, operator/number-type or device make — returns carrier/geolo
-- **`numpi`** (medium) — Reverse-phone people lookup.
+- **`numpi`** (high) — Use when you have a US `phone` number and want to identify the owner — returns possible name, location, and carrier/line type from a reverse
 - **`numspy-api`** (high) — Use when you have an Indian mobile `phone` number and want basic subscriber/network details via a simple GET API — returns `name`, carrier, 
 - **`numspy-india`** (high) — Use when you have an Indian mobile `phone` number and want carrier/region (and, when its data source works, name) — a legacy CLI that querie
 - **`numspy`** (high) — Use when you have an Indian `phone` number and want scripted carrier/region lookup from Python/CLI — returns carrier, circle/region, and num

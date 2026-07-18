@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata/app-analysis
 
 ## Skills here
-- **`apkleaks`** (medium) — API endpoint discovery, hardcoded credential detection, sensitive data extraction from APKs
+- **`apkleaks`** (low) — Use when you have an Android APK and want to extract its secrets — returns discovered URLs/API endpoints, hardcoded keys/tokens, and other s
 - **`jadx`** (low) — Use when you have an Android `document-id` app package (APK/DEX) and want to read its logic and extract embedded strings — returns `domain`,
 - **`mobsf`** (medium) — Use when you have a mobile app (`.apk`/`.ipa`) and want to extract its secrets and identity leads — returns hardcoded URLs, keys, emails, tr
 

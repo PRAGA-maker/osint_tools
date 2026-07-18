@@ -104,7 +104,6 @@ kind: group-index
 - **`expedia`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
 - **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
-- **`feedburner`** (medium) — RSS feed management website
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`files-pushshift-io-reddit`** (low) — OSINT tool: Files.pushshift.io/reddit.
@@ -115,7 +114,6 @@ kind: group-index
 - **`flixable-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
-- **`fohboh`** (medium) — Website related to news on restaurants, cafes, bars, other eating places, and the food services industry
 - **`food-network-canada`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`footballforums-net`** (medium) — OSINT tool: footballforums.net.
 - **`forbes-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
@@ -201,7 +199,7 @@ kind: group-index
 - **`lavalife`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
 - **`liferea-linux-rss-news-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
-- **`linkedin-groups`** (medium) — OSINT tool: Linkedin Groups.
+- **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — OSINT tool: Linkode(alpha).
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
 - **`logpasta`** (medium) — OSINT tool: Logpasta.

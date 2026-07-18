@@ -137,7 +137,7 @@ kind: group-index
 - **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
 - **`canada-gazette`** (medium) — OSINT tool: Canada Gazette.
 - **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
-- **`canadian-copyrights-database`** (medium) — OSINT tool: Canadian Copyrights Database.
+- **`canadian-copyrights-database`** (medium) — Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and da
 - **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
 - **`canadian-industrial-designs-database`** (medium) — Use when you have a name or company and want registered Canadian industrial designs they own — returns proprietor name and address plus link
 - **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
@@ -839,7 +839,7 @@ kind: group-index
 - **`ros-gov-uk`** (high) — Use when you have a `name` or Scottish `address` and want property ownership or a will/deed — returns address, owner name and employer-org l
 - **`royal-canadian-mounted-police`** (medium) — OSINT tool: Royal Canadian Mounted Police.
 - **`royalmail-com`** (high) — Use when you have a UK `address` fragment or postcode and want to resolve the full, canonical postal address (or the postcode for an address
-- **`rxlist`** (medium) — Internet drug index for prescription drugs and medications
+- **`rxlist`** (low) — Use when you have a pill's imprint/shape/colour or a drug name and want to identify the medication — returns the drug identity, uses, and im
 - **`ryersonindex-org`** (high) — Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, so
 - **`saa-gov-uk`** (high) — Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns addre
 - **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu

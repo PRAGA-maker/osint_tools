@@ -116,7 +116,6 @@ kind: group-index
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
-- **`blogpond-blogging`** (medium) — Australian website that provides a search engine that searches blogs; includes the top 100 blogs and articles
 - **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
 - **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
 - **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
@@ -296,7 +295,7 @@ kind: group-index
 - **`girlsaskguys`** (medium) — Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
-- **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.
+- **`github-with-awesome-list-search-engine`** (low) — Use when you need to discover an OSINT/security tool or resource — returns matches scoped to GitHub "awesome-*" curated lists via a Google C
 - **`globalleaks`** (low) — Use when you need to RECEIVE tips securely or recognise a whistleblowing intake site — open-source software that powers anonymous, encrypted
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
@@ -785,7 +784,7 @@ kind: group-index
 - **`twellow`** (medium) — Twitter user search
 - **`twingly`** (low) — OSINT tool: Twingly.
 - **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
-- **`uk-law-society`** (medium) — Legal-related search engine for locating legal representatives including quick search and pro search
+- **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re
 - **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f
 - **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`united-states-marine-corps-occupation-codes`** (medium) — Website that identifies the occupation classification code across the country at the national level

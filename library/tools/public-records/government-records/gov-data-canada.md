@@ -40,6 +40,7 @@ relatedTools:
 - canadian-department-of-finance
 - canadian-importers-database
 - canadian-intellectual-property-office
+- canadian-copyrights-database
 aliases:
 - open.canada.ca
 - Government of Canada Open Data

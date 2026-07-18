@@ -48,7 +48,7 @@ kind: group-index
 - **`generate-a-panorama`** (medium) — OSINT tool: Generate a panorama.
 - **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time
 - **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
-- **`geomastr-com`** (medium) — OSINT tool: geomastr.com.
+- **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 
 - **`geonarra-com`** (medium) — OSINT tool: Geonarra.com.
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup
 - **`getlostgame-app`** (medium) — OSINT tool: getlostgame.app.

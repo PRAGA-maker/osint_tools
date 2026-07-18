@@ -38,6 +38,7 @@ relatedTools:
 - canadian-intellectual-property-office
 - canadian-trademarks-database
 - canadian-importers-database
+- canadian-copyrights-database
 ---
 
 # Completed Access to Information Requests

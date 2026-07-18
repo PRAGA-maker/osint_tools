@@ -46,6 +46,7 @@ relatedTools:
 - canadian-intellectual-property-office
 - canadian-trademarks-database
 - canadian-importers-database
+- canadian-copyrights-database
 ---
 
 # Federal Corporation Search (Canada)

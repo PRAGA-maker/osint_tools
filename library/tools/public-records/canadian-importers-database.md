@@ -37,6 +37,7 @@ relatedTools:
 - canadian-trademarks-database
 - completed-access-to-information-requests
 - government-of-canada-open-data
+- canadian-copyrights-database
 aliases:
 - CID
 - Canadian Importers Database
