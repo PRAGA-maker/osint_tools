@@ -647,7 +647,7 @@ kind: group-index
 - **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 
 - **`nb-courts-public-self-serve-website`** (high) — Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case partici
 - **`nc-state-employee-overtime-2018-search-and-report`** (medium) — OSINT tool: NC State Employee Overtime 2018 Search and Report.
-- **`nc-state-government-salaries-search-and-report`** (medium) — OSINT tool: NC State Government Salaries Search and Report.
+- **`nc-state-government-salaries-search-and-report`** (medium) — Use when you have a `name` you think is a North Carolina state employee and want to confirm it — returns their agency (`employer-org`), job 
 - **`ncra-sourcebook`** (high) — Use when you have a `name` you believe belongs to a court reporter, captioner, or legal videographer and want to confirm the professional an
 - **`nebraska`** (high) — Use when you have a `name` and want to check whether a person is or was incarcerated in Nebraska state prison — returns inmate record, ID (`
 - **`netherlands`** (medium) — Use when you have a `name` or `employer-org` linked to the Netherlands and want registered companies, directors and addresses — returns `emp

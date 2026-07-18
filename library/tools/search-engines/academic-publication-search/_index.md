@@ -12,7 +12,7 @@ kind: group-index
 - **`copyscape-plagiarism-checker`** (medium) — Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matchi
 - **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
 - **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
-- **`lazy-scholar`** (medium) — Finding free full-text access to paywalled academic papers without institutional subscription
+- **`lazy-scholar`** (medium) — Use when you have a paper's DOI/URL and want its free full text — a browser extension that finds legal open-access copies of paywalled acade
 - **`library-databases`** (medium) — Identifying specialized academic databases by subject for deep literature research
 - **`microsoft-academic`** (medium) — Academic paper discovery with author disambiguation and citation graph analysis
 - **`open-access-scholarly-journals`** (low) — Use when you have an author `name` and want their open-access papers on this publisher — returns publications that reveal `employer-org` aff

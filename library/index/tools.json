@@ -12773,63 +12773,6 @@
     "_file": "library/tools/ai-analysis-automation/rawgraphs.md"
   },
   {
-    "id": "recon-ng-paralax-fork",
-    "name": "Recon-ng (paralax fork)",
-    "description": "Reconnaissance-focused OSINT framework (personal fork).",
-    "url": "https://github.com/paralax/Recon-ng",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "Modular recon with marketplace modules (contacts, profiles, hosts)",
-    "selectorsIn": [
-      "domain",
-      "email",
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "email",
-      "social-profile",
-      "domain",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "trusted",
-    "trustNote": "Recon-ng is a well-known, mature framework; this is a personal fork (15 stars). Prefer the canonical lanmaster53/recon-ng.",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [
-      "recon-ng",
-      "reconng"
-    ],
-    "tags": [
-      "recon",
-      "modules",
-      "marketplace",
-      "framework"
-    ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "awesome-honeypots"
-    ],
-    "_file": "library/tools/ai-analysis-automation/recon-ng-paralax-fork.md"
-  },
-  {
     "id": "reconftw",
     "name": "ReconFTW",
     "description": "OSINT tool: ReconFTW.",
@@ -76496,53 +76439,6 @@
     "_file": "library/tools/domains-ip-infrastructure/icann-lookup.md"
   },
   {
-    "id": "icann-org",
-    "name": "icann.org",
-    "description": "OSINT tool: icann.org.",
-    "url": "https://www.icann.org/en/contracted-parties/registry-operators/resources/registration-data-access-protocol",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "icann-lookup",
-      "icann-whois-lookup",
-      "lookup-icann-org",
-      "rdrs-icann-org"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/icann-org.md"
-  },
-  {
     "id": "icann-whois-lookup",
     "name": "ICANN Whois Lookup",
     "description": "Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public registrant contact via ICANN's official lookup.",
@@ -138946,37 +138842,50 @@
   {
     "id": "find-youtube-video",
     "name": "Find YouTube Video",
-    "description": "OSINT tool: Find YouTube Video.",
+    "description": "Use when you have a deleted/private YouTube URL or video ID and want to recover it — returns archived copies and metadata (title, description, thumbnail) from multiple archive services.",
     "url": "https://findyoutubevideo.thetechrobo.ca/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering a removed, private or deleted YouTube video and its metadata from web archives.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; no account, with an API available.",
+    "opsec": "passive",
+    "opsecNote": "It queries third-party archives (Wayback, GhostArchive, etc.), not YouTube's servers for the target, so the uploader is not notified. Fully passive; use a VPN if you want to keep even the archive queries off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source community tool that aggregates public archive services; it only surfaces what those archives hold, and archived availability varies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find YouTube Video",
+      "findyoutubevideo",
+      "thetechrobo find youtube video"
+    ],
     "tags": [
-      "video-search-and-other-video-tools"
+      "video-search-and-other-video-tools",
+      "archive",
+      "youtube"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/find-youtube-video.md"
   },
   {
@@ -201197,42 +201106,6 @@
     "_file": "library/tools/people-search/inmate-database-search.md"
   },
   {
-    "id": "innocentive",
-    "name": "Innocentive",
-    "description": "OSINT tool: Innocentive.",
-    "url": "http://www.innocentive.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/innocentive.md"
-  },
-  {
     "id": "inteligator-people-trace-united-states",
     "name": "Inteligator People Trace (United States)",
     "description": "Use when you have a `name` (optionally + state) and want a US background-style report — returns address, phone, email, relatives and public-records hits, behind a paid subscription.",
@@ -249020,36 +248893,52 @@
   },
   {
     "id": "nc-state-government-salaries-search-and-report",
-    "name": "NC State Government Salaries Search and Report",
-    "description": "OSINT tool: NC State Government Salaries Search and Report.",
+    "name": "NC State Government Salaries (News & Observer)",
+    "description": "Use when you have a `name` you think is a North Carolina state employee and want to confirm it — returns their agency (`employer-org`), job title and current base salary.",
     "url": "https://b2.caspio.com/dp/96073000345d59bc5b1744109afe",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming a person is an NC state government employee and reading their agency, title and salary.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public-service database published by The News & Observer; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public salary database is passive and anonymous; the employee is not notified. You are reading a public record, so no sock puppet is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled by The News & Observer from official North Carolina state payroll data, updated monthly; sourced from public records, so authoritative for the roles it covers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NC state salaries",
+      "North Carolina government salaries",
+      "News and Observer salary database"
+    ],
+    "tags": [
+      "public-records",
+      "salaries",
+      "us",
+      "government"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nc-state-government-salaries-search-and-report.md"
   },
   {
@@ -284850,46 +284739,6 @@
     "_file": "library/tools/search-engines/search-engine-guides/google-hacking-database.md"
   },
   {
-    "id": "google-minus-google-search-engine",
-    "name": "Google Minus Google Search Engine",
-    "description": "Search with Google without getting results from other Google services such as Blogger and Youtube",
-    "url": "http://www.startupbin.com/google-google",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-minus-google-search-engine.md"
-  },
-  {
     "id": "google-news",
     "name": "Google News",
     "description": "OSINT tool: Google News.",
@@ -288498,41 +288347,51 @@
   {
     "id": "jora-job-search-engine-new-zealand",
     "name": "Jora Job Search Engine (New Zealand)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
+    "description": "Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company and place, useful for confirming an employer is hiring.",
     "url": "https://nz.jora.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregated New Zealand job-listing search by company, title and location.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for job seekers to search and browse; an optional account only adds email alerts.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching listings is passive and notifies no employer or applicant. Browse logged-out; only register (with a sock puppet) if you want saved alerts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established job aggregator (part of SEEK); it republishes third-party listings, so postings are only as accurate as their source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "nz"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Jora NZ",
+      "nz.jora.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "jobs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jora-job-search-engine-new-zealand.md"
   },
   {
@@ -290093,41 +289952,51 @@
   {
     "id": "lazy-scholar",
     "name": "Lazy Scholar",
-    "description": "Finding free full-text access to paywalled academic papers without institutional subscription",
+    "description": "Use when you have a paper's DOI/URL and want its free full text — a browser extension that finds legal open-access copies of paywalled academic articles.",
     "url": "https://lazyscholar.org/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Finding free full-text access to paywalled academic papers without institutional subscription",
-    "input": "Paywalled journal article URL or DOI (via browser extension)",
-    "output": "Links to free legal full-text versions of the paper from open-access sources",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Getting free legal full-text of a paywalled paper via a browser extension.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free browser extension; no subscription needed (optional free account syncs your library across devices).",
     "opsec": "passive",
-    "opsecNote": "Extension queries open-access databases in the background; no personal data sent to external servers.",
+    "opsecNote": "The extension queries open-access indexes in the background for the paper you're viewing; it doesn't broadcast your identity to the publisher. Still, install it in a research/sock-puppet browser profile rather than a personal one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Community-built academic-access extension similar to Unpaywall; it links to legal open-access copies from public indexes, so reliability depends on those sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LazyScholar",
+      "lazyscholar.org"
+    ],
+    "tags": [
+      "academic",
+      "open-access",
+      "browser-extension"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/lazy-scholar.md"
   },
   {
@@ -301384,24 +301253,29 @@
   {
     "id": "search-shared",
     "name": "Search Shared",
-    "description": "File sharing and search engine",
+    "description": "Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafire/4shared, occasionally surfacing leaked documents.",
     "url": "https://www.searchshared.info",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching one-click file-hosting sites at once for files matching a name or keyword.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; the linked file-hosts have their own free/paid download limits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the index is passive, but the linked file-hosts and any download are on third-party (often sketchy) sites — use a sandbox/VM and VPN, never open unknown files on your working machine, and be mindful of legality.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party aggregator over one-click file lockers (Mediafire, 4shared, RapidGator, etc.); results are noisy, unvetted, and often piracy-oriented — treat with strong caution.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -301410,15 +301284,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Search Shared",
+      "searchshared.info"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "file-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-shared.md"
   },
   {
@@ -331439,43 +331317,6 @@
     "_file": "library/tools/social-networks/ny-dolls-org.md"
   },
   {
-    "id": "nzbfriends",
-    "name": "NZBFRIENDS",
-    "description": "usenet search engine",
-    "url": "http://nzbfriends.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Usenet"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/nzbfriends.md"
-  },
-  {
     "id": "o365chk",
     "name": "o365chk",
     "description": "Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, and validity of specific email addresses.",
@@ -337896,36 +337737,50 @@
   },
   {
     "id": "search-reddit",
-    "name": "Search Reddit",
-    "description": "OSINT tool: Search Reddit.",
+    "name": "Search Reddit (bmai.dev)",
+    "description": "Use when you have a `username` or keyword and want a subject's Reddit activity — returns matching posts/comments as a front-end over Reddit's public search, exposing interests and history.",
     "url": "https://bmai.dev/reddit/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A lightweight web front-end for searching Reddit posts and comments by keyword or user.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It queries Reddit's public data; browsing results does not notify the target. As with any third-party front-end, prefer a VPN and don't sign into Reddit while pivoting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party hobby front-end over Reddit's public search/JSON; it surfaces Reddit's own public data, so accuracy depends on Reddit's index and the tool's upkeep.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Search Reddit",
+      "bmai.dev reddit"
+    ],
+    "tags": [
+      "Social Media",
+      "Reddit"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search-reddit.md"
   },
   {
@@ -348923,52 +348778,63 @@
   },
   {
     "id": "twitter-url-scraper",
-    "name": "Twitter URL Scraper",
-    "description": "A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's tweets and replies. Data can be exported to CSV, JSON, XML.",
+    "name": "Twitter URL Scraper (Apify)",
+    "description": "Use when you have a Twitter/X conversation or profile URL and want it captured as data — returns tweet text, usernames, profile pictures and replies, exported to CSV/JSON/XML.",
     "url": "https://apify.com/zuzka/twitter-url-scraper",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Capturing the text, authors and profile pictures of a Twitter/X thread or page as structured data.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "image",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Runs on the Apify platform, which gives free monthly usage credits; heavy runs consume paid compute/proxy units. An Apify account is required.",
+    "opsec": "passive",
+    "opsecNote": "Scraping reads public tweets via the Apify cloud, not from your own IP, so the target is unlikely to see you. You must hold an Apify account — register it under a sock-puppet identity, not your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "api",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-published Apify actor (not an official Apify or X product); Twitter/X's frequent anti-scraping changes mean any given actor can break, so verify it still runs before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
-      "apify-s-google-maps-scraper",
-      "dark-web-scraper",
-      "facebook-latest-comments-scraper",
-      "facebook-latest-posts-scraper",
-      "google-maps-scraper",
-      "google-search-scraper",
-      "instagram-hashtag-scraper",
-      "instagram-scraper",
-      "reddit-scraper",
       "twitter-scraper",
+      "reddit-scraper",
+      "instagram-scraper",
+      "facebook-latest-posts-scraper",
       "youtube-scraper"
     ],
+    "aliases": [
+      "Apify Twitter URL Scraper",
+      "zuzka twitter-url-scraper"
+    ],
+    "tags": [
+      "Social Media",
+      "Twitter",
+      "apify",
+      "scraper"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-url-scraper.md"
   },
   {

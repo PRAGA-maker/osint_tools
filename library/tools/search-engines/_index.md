@@ -322,7 +322,6 @@ kind: group-index
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
-- **`google-minus-google-search-engine`** (medium) — Search with Google without getting results from other Google services such as Blogger and Youtube
 - **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
 - **`google-news`** (low) — OSINT tool: Google News.
 - **`google-safesearch-filter`** (low) — Google safesearch settings
@@ -400,7 +399,7 @@ kind: group-index
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobsdb-asia`** (medium) — Website that offers job search services for multiple countries worldwide
-- **`jora-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
 - **`journal-guide`** (low) — OSINT tool: Journal Guide.
 - **`journal-seek`** (low) — OSINT tool: Journal Seek.
 - **`journalist-s-toolbox-investigative`** (medium) — SPJ-associated curated set of investigative research tools for journalists.
@@ -684,7 +683,7 @@ kind: group-index
 - **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
 - **`search-it`** (medium) — Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
-- **`search-shared`** (medium) — File sharing and search engine
+- **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi
 - **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
 - **`searchall-net`** (low) — Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — r
 - **`searchboth`** (medium) — Meta-search engine that shows results from two or more other search engines, allowing users to compare results

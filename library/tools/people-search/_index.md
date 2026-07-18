@@ -119,7 +119,6 @@ kind: group-index
 - **`infospace`** (high) — Use when you have a US `name` or `phone` and want a free white-pages/metasearch lookup — returns address, phone and related directory listin
 - **`infotracer`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want a US background/contact profile — returns addresses, phones, relatives (
 - **`inmate-database-search`** (high) — Use when you have a `name` and want to check whether a person is held in the Indianapolis / Marion County jail — returns booking record, inm
-- **`innocentive`** (medium) — OSINT tool: Innocentive.
 - **`inteligator-people-trace-united-states`** (high) — Use when you have a `name` (optionally + state) and want a US background-style report — returns address, phone, email, relatives and public-
 - **`intelius-people-search-engine`** (high) — Use when you have a US `name`, `phone`, or `address` and want a consolidated background profile — returns addresses, phones, relatives, and 
 - **`intelligence-x-person-tools`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a launchpad of prebuilt search links into many people-search services a

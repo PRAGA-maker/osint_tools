@@ -115,7 +115,7 @@ kind: group-index
 - **`filmot`** (medium) — Use when you have a `name`, phrase, or keyword and want to find the exact YouTube videos and timestamps where it is spoken — returns videos,
 - **`find-and-set-scale-from-image`** (medium) — OSINT tool: Find and Set Scale From Image.
 - **`find-any-film`** (low) — Use when you have a film or TV title and want to confirm it exists and find where it can legally be watched in the UK — returns release meta
-- **`find-youtube-video`** (medium) — OSINT tool: Find YouTube Video.
+- **`find-youtube-video`** (medium) — Use when you have a deleted/private YouTube URL or video ID and want to recover it — returns archived copies and metadata (title, descriptio
 - **`findpiclocation-com`** (high) — Use when you have a photo and need to estimate where it was taken (image geolocation) to localize a missing person or a sighting.
 - **`findsounds`** (low) — Use when you have a distinctive sound in a recording/video and want to source or identify a matching audio sample on the web — returns downl
 - **`fireshot-addons-mozilla-org`** (medium) — Use when you need to capture a full-page screenshot of a web profile or post to preserve evidence before it is edited or deleted.

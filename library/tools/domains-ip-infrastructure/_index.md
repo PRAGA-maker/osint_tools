@@ -241,7 +241,6 @@ kind: group-index
 - **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
 - **`icann-lookup`** (low) — OSINT tool: Icann Lookup.
-- **`icann-org`** (medium) — OSINT tool: icann.org.
 - **`icann-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public r
 - **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times

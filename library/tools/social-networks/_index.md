@@ -397,7 +397,6 @@ kind: group-index
 - **`noxinluencer`** (medium) — Use when you have a YouTube channel (`social-profile`/`username`) and want its audience, growth and engagement analytics — returns channel a
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
-- **`nzbfriends`** (medium) — usenet search engine
 - **`o365chk`** (low) — Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, a
 - **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
@@ -516,7 +515,7 @@ kind: group-index
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
 - **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
 - **`search-reddit-comments-by-user`** (medium) — Use when you have a Reddit `username` and want to search that user's comment history for keywords — returns matching comments with subreddit
-- **`search-reddit`** (medium) — OSINT tool: Search Reddit.
+- **`search-reddit`** (medium) — Use when you have a `username` or keyword and want a subject's Reddit activity — returns matching posts/comments as a front-end over Reddit'
 - **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc
 - **`search-twitter-users`** (high) — Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter dat
 - **`search4faces-com-ch00`** (medium) — Use when you have a `face`/`image` of a person and want to match it against Clubhouse profile avatars — returns candidate Clubhouse `social-
@@ -721,7 +720,7 @@ kind: group-index
 - **`twitter-shadow-ban-checker`** (medium) — If you suddenly notice that your account's tweets have decreased in views and the flow of audience has slowed down, it's worth checking to s
 - **`twitter-shadowban-test`** (medium) — OSINT tool: Twitter Shadowban Test.
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
-- **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
+- **`twitter-url-scraper`** (medium) — Use when you have a Twitter/X conversation or profile URL and want it captured as data — returns tweet text, usernames, profile pictures and
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
 - **`twitter-x-location-search`** (medium) — Use when you have a `geolocation` and want posts sent from near it — returns geotagged X/Twitter posts and the `social-profile`s behind them

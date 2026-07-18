@@ -325,7 +325,6 @@ kind: group-index
 - **`raphael`** (low) — OSINT tool: Raphael.
 - **`raw`** (low) — OSINT tool: RAW.
 - **`rawgraphs`** (low) — RAWGraphs is an open-source data visualization tool designed for non-technical users, enabling the creation of customizable, editable charts
-- **`recon-ng-paralax-fork`** (medium) — Reconnaissance-focused OSINT framework (personal fork).
 - **`reconftw`** (low) — OSINT tool: ReconFTW.
 - **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
