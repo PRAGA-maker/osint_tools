@@ -341,7 +341,7 @@ kind: group-index
 - **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techcrunch`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
-- **`techradar`** (medium) — Online articles, news, and reviews related to technology, gadgets, devices, photography equipment, and more
+- **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
 - **`techrepublic`** (medium) — Online articles and news related to computers, gadgets, technology, and future trends
 - **`telemundo-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec

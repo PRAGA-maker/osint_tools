@@ -31,7 +31,7 @@ kind: group-index
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
 - **`abilogic`** (low) — Business web directory
 - **`aboutus`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
-- **`abusech`** (medium) — OSINT tool: Abusech.
+- **`abusech`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `d
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
 - **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
@@ -104,7 +104,7 @@ kind: group-index
 - **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
 - **`bibleserver`** (medium) — Website that offers Christian scripture search services, invluding Bible translations in 21 languages
-- **`biblio`** (medium) — Website offering nearly 100 million used books for sale from around the world
+- **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
 - **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
 - **`bing-advanced-search-options`** (medium) — Website showing Bings reference list of advanced search engine operators
@@ -345,7 +345,7 @@ kind: group-index
 - **`grey-literature-strategies`** (low) — OSINT tool: Grey Literature Strategies.
 - **`greynet-international`** (low) — OSINT tool: GreyNet International.
 - **`greynoise-io`** (low) — OSINT tool: Greynoise.io.
-- **`gsearch`** (medium) — Google search in one domain - search for a site or specific domain
+- **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Hacker News search engine with filters. Useful for finding all mentions of a product or person.
 - **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
 - **`harmari-unified-listings-search`** (medium) — OSINT tool: Harmari (Unified Listings Search).
@@ -566,7 +566,7 @@ kind: group-index
 - **`oscobo`** (medium) — Privacy-oriented search engine that keeps searches private through SSL encryption and does not store personal information
 - **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
 - **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
-- **`osint-cheat-sheet`** (medium) — OSINT cheat sheet listing tools, wikis, datasets, articles and books.
+- **`osint-cheat-sheet`** (low) — Use when you need to discover more OSINT tools, datasets, or techniques for a selector — a curated index pointing to resources across people
 - **`osint-combine-tools`** (high) — Use when you have a `username`, `geolocation`, or social handle and want a vetted free toolset to expand it — returns social-profiles, geo l
 - **`osint-encyclopedia-optiv-cham423`** (medium) — Optiv-published GitHub encyclopedia of OSINT resources and techniques.
 - **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
@@ -844,7 +844,7 @@ kind: group-index
 - **`wiley`** (low) — OSINT tool: Wiley.
 - **`wintria`** (low) — OSINT tool: Wintria.
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
-- **`wiredmagazine-electronic-device-reviews`** (medium) — Website related to tech news and reviews
+- **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —
 - **`woboq-code-browser`** (medium) — Code search engine
 - **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.
 - **`word-tracker`** (low) — OSINT tool: Word Tracker.

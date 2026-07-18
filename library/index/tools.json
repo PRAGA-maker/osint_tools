@@ -30019,41 +30019,58 @@
   {
     "id": "google-groups-search",
     "name": "Google Groups Search",
-    "description": "Researching archived mailing-list and discussion-group content",
-    "url": "https://groups.google.com/forum/#!overview",
+    "description": "Use when you have a `name`, `email`, or `username` and want decades of archived Usenet and mailing-list posts they may have written — returns `email`, `social-profile`, `associate`.",
+    "url": "https://groups.google.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "forum-search-engines"
     ],
-    "bestFor": "Researching archived mailing-list and discussion-group content",
-    "input": "Keywords, group names, authors, and date ranges",
-    "output": "Thread messages and group-level discussion results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Digging up historical Usenet/mailing-list posts tied to a person's old handle or email.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read public groups; a Google account is only needed to post or join some groups.",
     "opsec": "passive",
-    "opsecNote": "Searches archived public discussions through Google-hosted infrastructure where activity is logged.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching and reading are passive; the subject is not notified. You disclose your queries to Google — use a sock-puppet Google session if you sign in, and don't join a group under an attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google-operated; incorporates the Deja News Usenet archive, so historical posts are authentic, though archive coverage has gaps and the UI has been repeatedly reworked.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google Groups",
+      "Usenet archive search",
+      "Deja News"
+    ],
+    "tags": [
+      "usenet",
+      "mailing-lists",
+      "historical-archive"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/forum-search-engines/google-groups-search.md"
   },
   {
@@ -37834,25 +37851,32 @@
   {
     "id": "techradar",
     "name": "TechRadar",
-    "description": "Online articles, news, and reviews related to technology, gadgets, devices, photography equipment, and more",
-    "url": "http://www.techradar.com",
+    "description": "Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from detailed reviews — returns `device-id`, `physical-description`.",
+    "url": "https://www.techradar.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying and dating a consumer electronic device (phone, camera, laptop, wearable) from in-depth reviews.",
+    "selectorsIn": [
+      "image",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "physical-description"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read, ad-supported; no account or paywall for reviews.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading reviews reveals nothing to any subject — you are researching a product, not a person. No target queries are made.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "TechRadar (Future plc) is an established consumer-tech publication with broad review coverage; reliable for device identification, though it is journalism, not a hardware registry.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -37860,15 +37884,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "wiredmagazine-electronic-device-reviews"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "device-identification",
+      "reviews"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/techradar.md"
   },
   {
@@ -112982,43 +113009,51 @@
   {
     "id": "ethplorer-io",
     "name": "ethplorer.io",
-    "description": "OSINT tool: ethplorer.io.",
+    "description": "Use when you have an Ethereum `crypto-wallet` address (or a token/contract) and want its balances, token holdings, and transaction counterparties — returns `crypto-wallet`, `associate`.",
     "url": "https://ethplorer.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Inspecting an Ethereum address's ERC-20 token holdings, balances, and transfer counterparties.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web explorer for address/token lookups; higher-volume programmatic access needs a (paid) API key, but the website lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "You query Ethplorer's servers about a public address; the subject is not notified. Reading the chain is passive, but the address you look up is disclosed to Ethplorer — use a sock-puppet browser for sensitive cases.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established Ethereum explorer (by EverStake); it reflects authoritative public on-chain data, though entity/label enrichment is best-effort.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ethplorer"
+    ],
     "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
+      "ethereum",
+      "blockchain",
+      "token-explorer",
+      "cryptosites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/ethplorer-io.md"
   },
   {
@@ -189421,29 +189456,32 @@
   {
     "id": "social-media-fingerprint",
     "name": "Social Media Fingerprint",
-    "description": "Checking social media session exposure, verifying browser compartmentalization effectiveness",
+    "description": "Use when you want to verify your own OpSec — checks in-browser which social networks you are logged into, so you can confirm an investigation profile is isolated — returns `social-profile` (your own session exposure).",
     "url": "https://robinlinus.github.io/socialmedia-leak/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "privacy-clean-up"
     ],
-    "bestFor": "Checking social media session exposure, verifying browser compartmentalization effectiveness",
-    "input": "No input required (automatic detection via browser)",
-    "output": "List of social media platforms where active sessions are detected",
+    "bestFor": "Confirming an OSINT browser profile leaks no logged-in personal social sessions before you use it.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free open-source demo page hosted on GitHub Pages; nothing to install.",
     "opsec": "active",
-    "opsecNote": "Detects your active social media sessions locally in-browser; use to verify that OSINT browser profiles are properly isolated from personal accounts.",
+    "opsecNote": "This is a self-check, not a tool to point at a subject. It uses login-detection (cross-site redirect timing) to reveal which networks THIS browser is logged into — run it in the profile you plan to investigate from, to confirm it is not carrying your personal sessions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A well-known proof-of-concept by Robin Linus demonstrating the social-media login-leak technique; open-source and static, but detection accuracy drifts as platforms patch the trick.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -189451,11 +189489,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "socialmedia-leak",
+      "Robin Linus social media leak"
+    ],
+    "tags": [
+      "opsec",
+      "browser-fingerprint",
+      "self-check"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/social-media-fingerprint.md"
   },
   {
@@ -270759,38 +270804,44 @@
   },
   {
     "id": "abusech",
-    "name": "Abusech",
-    "description": "OSINT tool: Abusech.",
+    "name": "abuse.ch",
+    "description": "Use when you have a `domain`, `ip-address`, URL, or file hash and want to know if it is linked to malware, botnets, or phishing — returns `domain`, `ip-address`, `associate` (threat infrastructure).",
     "url": "https://hunting.abuse.ch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a domain/IP/URL/hash is tied to known malware, C2, or phishing infrastructure.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free threat-intelligence platform (community project, now under the Institute for Cybersecurity and Engineering); a free account/Auth-Key is needed for the API and some bulk features, but web lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "You query abuse.ch's databases, not the malicious host itself, so you don't touch the adversary's infrastructure. Signing up for an API key ties activity to that account — use an appropriate one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A widely-trusted, long-running threat-intel project (MalwareBazaar, URLhaus, ThreatFox, Feodo Tracker) used across the security industry; data is community-contributed but curated.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "malwarebazaar",
       "urlhaus",
@@ -270798,6 +270849,14 @@
       "zeus-c2-tracker",
       "zeus-tracker"
     ],
+    "tags": [
+      "speciality-search-engines",
+      "threat-intelligence",
+      "malware"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/abusech.md"
   },
   {
@@ -274068,25 +274127,33 @@
   {
     "id": "biblio",
     "name": "Biblio",
-    "description": "Website offering nearly 100 million used books for sale from around the world",
-    "url": "http://www.biblio.com",
+    "description": "Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `social-profile`, `address`, `associate`.",
+    "url": "https://www.biblio.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a global used/rare-book marketplace for a seller's listings or a specific title's vendors.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse listings and seller pages; buying is transactional but the OSINT lookups are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings and seller pages is passive; the subject/seller is not notified. Contacting a seller through the site is active and attributable — use a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "An established used/rare-book marketplace aggregating independent booksellers; seller-provided info is self-reported and should be corroborated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -274094,15 +274161,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Biblio.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "marketplace"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/biblio.md"
   },
   {
@@ -285442,25 +285513,33 @@
   {
     "id": "gsearch",
     "name": "Gsearch",
-    "description": "Google search in one domain - search for a site or specific domain",
-    "url": "https://www.gsearch.one/#gsc.tab=0",
+    "description": "Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — returns `social-profile`, `domain`.",
+    "url": "https://www.gsearch.one/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quick Google-powered searches scoped to a single site or domain.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; it's a thin Google Custom Search Engine (CSE) front-end, ad-supported, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries are proxied through Google's CSE; you disclose the search terms to Google and the site operator, not to the subject. Use a sock-puppet browser for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A lightweight third-party wrapper around Google Custom Search; results are Google's, but the wrapper adds no vetting and could change or vanish.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -285468,15 +285547,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gsearch.one"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "google-cse"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/gsearch.md"
   },
   {
@@ -295665,25 +295748,26 @@
   {
     "id": "osint-cheat-sheet",
     "name": "OSINT-Cheat-sheet",
-    "description": "OSINT cheat sheet listing tools, wikis, datasets, articles and books.",
+    "description": "Use when you need to discover more OSINT tools, datasets, or techniques for a selector — a curated index pointing to resources across people, social, geo, and more — returns pointers to other tools.",
     "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Reference index of OSINT techniques, tools and datasets across categories.",
+    "bestFor": "A reference index for finding additional OSINT tools, datasets, and techniques by category.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free open GitHub repository; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a GitHub reference list is passive and reveals nothing about any subject. The linked tools each carry their own OpSec cost — apply that when you actually use them, not here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Curated cheat-sheet/awesome list, not an executable tool.",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A community-maintained \"awesome\"-style cheat sheet on GitHub; a useful discovery index, but link freshness and tool quality vary and are not vetted.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -295691,17 +295775,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
       "Jieyab89/OSINT-Cheat-sheet"
     ],
     "tags": [
       "awesome-list",
       "cheat-sheet",
-      "datasets"
+      "datasets",
+      "reference"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-cheat-sheet.md"
   },
   {
@@ -308228,26 +308314,33 @@
   },
   {
     "id": "wiredmagazine-electronic-device-reviews",
-    "name": "WiredMagazine Electronic Device Reviews",
-    "description": "Website related to tech news and reviews",
-    "url": "http://www.wired.com/category/gear/reviews",
+    "name": "Wired — Gear Reviews",
+    "description": "Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews — returns `device-id`, `physical-description`.",
+    "url": "https://www.wired.com/category/gear/reviews",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Identifying a consumer electronic device (model, era, specs) from Wired's detailed gear reviews.",
+    "selectorsIn": [
+      "image",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Reviews are free to read; Wired applies a metered paywall after a number of articles per month.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading reviews reveals nothing to any subject — you are researching a product, not a person. No queries about the target are made.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Wired (Condé Nast) is an established technology publication with editorial standards; reliable for product identification, though it's journalism, not a hardware database.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -308255,18 +308348,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "wired-tech-news-and-trends"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "device-identification",
+      "reviews"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wiredmagazine-electronic-device-reviews.md"
   },
   {
@@ -339399,47 +339492,6 @@
     "_file": "library/tools/social-networks/social-media-salary-calculator.md"
   },
   {
-    "id": "social-mention",
-    "name": "Social Mention",
-    "description": "OSINT tool: Social Mention.",
-    "url": "http://socialmention.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "social"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/social-mention.md"
-  },
-  {
     "id": "social-mentions",
     "name": "Social Mentions",
     "description": "OSINT tool: Social Mentions.",
@@ -345193,47 +345245,6 @@
     "_file": "library/tools/social-networks/twdown-net.md"
   },
   {
-    "id": "tweeds",
-    "name": "TWEEDS",
-    "description": "A very easy-to-use Python library that allows you to collect all of a user's tweets into a CSV/JSON file. Also it's possible to collect tweets by hashtag or geolocation.",
-    "url": "https://github.com/achyuthjoism/tweeds",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweeds.md"
-  },
-  {
     "id": "tweeplers",
     "name": "Tweeplers",
     "description": "OSINT tool: Tweeplers.",
@@ -346521,38 +346532,52 @@
   {
     "id": "twish",
     "name": "Twish",
-    "description": "very simple, quick, comfortable and nicely designed advanced #Twitter search query builder for #GoogleChrome.",
-    "url": "https://chrome.google.com/webstore/detail/twish/afpegchfbaddfmenhkajjggbnjfjejeh/related",
+    "description": "Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorising operators — returns `social-profile`.",
+    "url": "https://chromewebstore.google.com/detail/twish/afpegchfbaddfmenhkajjggbnjfjejeh",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Quickly constructing precise Twitter/X advanced-search queries from a simple form.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment. (X's own advanced search still requires being logged in to view many results.)",
+    "opsec": "passive",
+    "opsecNote": "The extension only builds a twitter.com/x.com search URL locally; the actual searching happens on X, which sees the request. Do it from a sock-puppet X session, not your personal login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A small third-party Chrome extension (cyb-detective-sourced); it just assembles query strings, but as a legacy extension its behaviour may lag X's frequent search changes — verify results on X.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Twish Chrome extension"
+    ],
     "tags": [
       "Social Media",
-      "Twitter"
+      "Twitter",
+      "advanced-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twish.md"
   },
   {

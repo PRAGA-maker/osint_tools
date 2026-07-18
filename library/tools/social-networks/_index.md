@@ -555,7 +555,6 @@ kind: group-index
 - **`social-blade`** (medium) — Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `socia
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
 - **`social-media-salary-calculator`** (medium) — for YouTube, TikTok, Instagram
-- **`social-mention`** (medium) — OSINT tool: Social Mention.
 - **`social-mentions`** (low) — OSINT tool: Social Mentions.
 - **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
 - **`social-rank-first-follower`** (medium) — OSINT tool: Social Rank First Follower.
@@ -658,7 +657,6 @@ kind: group-index
 - **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
 - **`twazzup`** (medium) — OSINT tool: Twazzup.
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
-- **`tweeds`** (medium) — A very easy-to-use Python library that allows you to collect all of a user's tweets into a CSV/JSON file. Also it's possible to collect twee
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.
 - **`tweepsmap-unfollows`** (medium) — displayed unsubscribed accounts (list for the one week available for free)
 - **`tweet-archive-search`** (high) — Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile
@@ -682,7 +680,7 @@ kind: group-index
 - **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
 - **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
-- **`twish`** (medium) — very simple, quick, comfortable and nicely designed advanced #Twitter search query builder for #GoogleChrome.
+- **`twish`** (low) — Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorisi
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
 - **`twitch-followage-tool`** (medium) — Enter the Twitch username and get a complete list of channels he/she follows (with start dates)
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.

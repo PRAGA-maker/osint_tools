@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8188 total · 3416 full · 4772 stub (41% enriched)
+**Tools:** 8186 total · 3426 full · 4760 stub (41% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3374 · medium: 2857 · high: 1957
+low: 3382 · medium: 2847 · high: 1957
 
 ## Tools by trust
-unverified: 3702 · community: 3323 · trusted: 1151 · personal: 6 · untrustworthy: 6
+unverified: 3693 · community: 3325 · trusted: 1156 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
 - `archives-cache` — 38/136
-- `communities-forums` — 75/408
+- `communities-forums` — 77/408
 - `dark-web` — 13/118
 - `dating-classifieds` — 43/113
 - `documents-metadata` — 22/314
 - `domains-ip-infrastructure` — 64/753
 - `email` — 242/246
 - `evidence-capture` — 4/32
-- `financial-crypto` — 28/128
+- `financial-crypto` — 29/128
 - `geolocation` — 214/351
 - `image-video-face` — 395/476
 - `maps-geospatial-data` — 28/143
 - `messaging` — 153/194
-- `opsec-investigator-tooling` — 22/562
+- `opsec-investigator-tooling` — 23/562
 - `people-search` — 230/266
 - `phone` — 134/137
 - `public-records` — 675/1106
-- `search-engines` — 243/940
-- `social-networks` — 613/861
+- `search-engines` — 248/940
+- `social-networks` — 614/859
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
 - `transportation` — 61/230
@@ -43,7 +43,7 @@ unverified: 3702 · community: 3323 · trusted: 1151 · personal: 6 · untrustwo
 
 - `library/tools/public-records` — 1043 leaves
 - `library/tools/search-engines` — 876 leaves
-- `library/tools/social-networks` — 833 leaves
+- `library/tools/social-networks` — 831 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 512 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
