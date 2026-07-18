@@ -37,7 +37,7 @@ kind: group-index
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
 - **`access-to-archival-databases`** (medium) — The National Archives database of archival databases
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
-- **`adzuna-job-search-engine-united-kingdom`** (medium) — Website that offers job search services for multiple countries worldwide, including salary statistics
+- **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
 - **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
 - **`african-journal-online`** (low) — OSINT tool: African Journal Online.
 - **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).

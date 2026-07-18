@@ -146,7 +146,7 @@ kind: group-index
 - **`opensky-network`** (low) — Community, open source flight tracking network.
 - **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
 - **`orto-website`** (medium) — OSINT tool: Orto.website.
-- **`oscar-job-function-codes-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`oscar-job-function-codes-united-kingdom`** (medium) — Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a p
 - **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
 - **`panjiva-cargo`** (low) — OSINT tool: Panjiva (Cargo).
 - **`partial-number-plate-search`** (medium) — OSINT tool: Partial Number Plate Search.

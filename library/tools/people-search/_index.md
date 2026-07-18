@@ -55,7 +55,6 @@ kind: group-index
 - **`clustermaps`** (high) — Use when you have a `name` or `address` and want US resident/address intelligence — returns current and past residents, relatives/neighbors,
 - **`coeus-osint-toolbox`** (medium) — Use when you have a `username`, `email`, `phone`, or `domain` and want a GUI to run several OSINT lookups at once — returns `social-profile`
 - **`college-recruiter`** (medium) — OSINT tool: College Recruiter.
-- **`community-search`** (medium) — OSINT tool: Поиск сообществ (Community Search).
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
 - **`craiglist`** (medium) — OSINT tool: Craiglist.
 - **`crosslinked`** (medium) — Use when you have an `employer-org` and want to enumerate its employees' names and likely emails from LinkedIn — returns names and format-ge

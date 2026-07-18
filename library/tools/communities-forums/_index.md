@@ -20,7 +20,7 @@ kind: group-index
 - **`a-small-world`** (medium) — Private luxury travel community
 - **`abc-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`actualidad-world-newspapers-online`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
+- **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
 - **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
 - **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
@@ -374,7 +374,7 @@ kind: group-index
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`tripit`** (medium) — Website related to social networking in the form of travel and tourism
-- **`trucknetuk-com`** (medium) — OSINT tool: trucknetuk.com.
+- **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
 - **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tutpaste`** (medium) — OSINT tool: TutPaste.
 - **`tvnz-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

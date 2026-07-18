@@ -173,7 +173,7 @@ kind: group-index
 - **`city-of-brandtford-provincial-offence-court`** (medium) — Website for City of Brantford Provincial Offences Court Office
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
 - **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
-- **`clinicaltrials-gov`** (medium) — 433,207 research studies in 221 countries. For people who have a difficult-to-treat disease, this registry will help them learn about recent
+- **`clinicaltrials-gov`** (medium) — Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, spon
 - **`cme-group`** (medium) — Information on trading, risk management, and more
 - **`cms-gov`** (medium) — Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the pay
 - **`college-police-uk`** (high) — Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's 
@@ -291,7 +291,7 @@ kind: group-index
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
-- **`europages-business-search-europe`** (medium) — Database of over 3 million company listings in Europe
+- **`europages-business-search-europe`** (medium) — Use when you have a company `name`/`employer-org` and want to find and locate it in Europe — returns matching business listings with `addres
 - **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.
 - **`europeana`** (medium) — Collection of over 57 million European artworks, artifacts, books, films, music, and more
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.

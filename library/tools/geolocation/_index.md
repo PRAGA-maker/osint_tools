@@ -212,7 +212,7 @@ kind: group-index
 - **`nyc-crime-map`** (high) — Use when you have a New York City `address` or `geolocation` and want the local crime picture — returns mapped NYPD crime incidents by area,
 - **`ocearch-shark-tracker`** (medium) — Click on a shark on the world map and find out its name, size and travel log.
 - **`old-maps-online`** (high) — Use when you have a `geolocation` or place `address` and want historical maps of that spot across time — returns historical map imagery and 
-- **`oldmapsonline`** (medium) — World aggregator of old maps from various sources (498,908 maps)
+- **`oldmapsonline`** (medium) — Use when you have a `geolocation` and want historical maps of it — returns georeferenced old maps from libraries worldwide, for dating image
 - **`open-benches`** (medium) — Use when you have a `name` from a memorial-bench inscription and want its location — returns the bench `geolocation`, photo and full inscrip
 - **`open-street-map`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its features, POIs, and tags — without vendor
 - **`openinfrastructuremap`** (medium) — Use when an image or area shows power lines, pylons, substations, or telecom masts and you want to identify/confirm a location by its infras

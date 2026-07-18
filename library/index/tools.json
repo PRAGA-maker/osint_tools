@@ -23706,25 +23706,28 @@
   },
   {
     "id": "actualidad-world-newspapers-online",
-    "name": "Actualidad World Newspapers Online",
-    "description": "Searchable website for a major online news/media publisher covering global events and having large reader/fan base",
+    "name": "Actualidad — World Newspapers Online",
+    "description": "Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search local coverage of a name or event.",
     "url": "http://www.actualidad.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the right country/local newspapers to search for coverage of a person or event.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory/aggregator of online newspapers; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a newspaper directory and reading public news is passive and anonymous; nothing is sent to any target. Do the actual name-searching on the linked newspaper sites, ideally behind a VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party curated gateway to world newspapers; it links out to independent outlets whose own reporting quality varies.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -23733,15 +23736,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Actualidad",
+      "actualidad.com",
+      "World Newspapers Online"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/actualidad-world-newspapers-online.md"
   },
   {
@@ -39365,44 +39372,55 @@
   },
   {
     "id": "trucknetuk-com",
-    "name": "trucknetuk.com",
-    "description": "OSINT tool: trucknetuk.com.",
-    "url": "http://www.trucknetuk.com/phpBB/viewforum.php?f=49&sid=422fddbe890b9f8237d0508ca947f96d",
+    "name": "Trucknet UK",
+    "description": "Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer clues, exposing interests and `associate` links.",
+    "url": "https://www.trucknetuk.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a UK professional-driver's posts and profile to surface employer, routes and interests under a handle.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read public threads and profiles; an account is only needed to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading public posts/profiles is passive and doesn't notify the user. Registration/posting is attributable — use a sock puppet if you must log in, and never message the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Britain's largest professional-driver forum (80k+ members, millions of posts); content is user-generated and pseudonymous, so details are self-reported.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Trucknet UK",
+      "trucknetuk.com",
+      "TruckNet"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "uk",
+      "haulage",
+      "transport"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/trucknetuk-com.md"
   },
   {
@@ -76979,52 +76997,6 @@
     "_file": "library/tools/domains-ip-infrastructure/infrapedia.md"
   },
   {
-    "id": "inmotion-hosting-united-states",
-    "name": "Inmotion Hosting (United States)",
-    "description": "Service provider for registering websites and domain addresses",
-    "url": "http://www.inmotionhosting.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/inmotion-hosting-united-states.md"
-  },
-  {
     "id": "instantdomainsearch",
     "name": "InstantDomainSearch",
     "description": "search for domains for sale",
@@ -114553,48 +114525,6 @@
     "_file": "library/tools/financial-crypto/mixero-io.md"
   },
   {
-    "id": "monero-blocks",
-    "name": "Monero Blocks",
-    "description": "Monero block and transaction lookup with basic privacy-coin exploration",
-    "url": "https://localmonero.co/blocks/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto",
-      "monero"
-    ],
-    "bestFor": "Monero block and transaction lookup with basic privacy-coin exploration",
-    "input": "Monero block hash, block height, or transaction ID",
-    "output": "Block details, transaction count, network hashrate, difficulty, emission rate",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public Monero blockchain browsing; inherent privacy from Monero's ring signature design limits address-level tracing.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "localmonero-co"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/monero/monero-blocks.md"
-  },
-  {
     "id": "mylostaccount-org-uk",
     "name": "mylostaccount.org.uk",
     "description": "Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns an employer-org/provider match by name and address.",
@@ -126197,45 +126127,52 @@
   {
     "id": "oldmapsonline",
     "name": "OldMapsOnline",
-    "description": "World aggregator of old maps from various sources (498,908 maps)",
+    "description": "Use when you have a `geolocation` and want historical maps of it — returns georeferenced old maps from libraries worldwide, for dating imagery, resolving old place names and verifying a location's past.",
     "url": "https://www.oldmapsonline.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding historical maps of a specific place to compare past and present or resolve old/renamed locations.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and view maps; it links to the holding library/archive for each map, some of which have their own access terms for high-res downloads.",
+    "opsec": "passive",
+    "opsecNote": "Searching and viewing archived maps is passive and anonymous; nothing is sent to any target. Safe to use freely.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregator by Klokan Technologies/Charles University linking to maps held by national libraries and map collections; the maps are authoritative archival materials from their source institutions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Other"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "old-maps-online"
     ],
+    "aliases": [
+      "Old Maps Online",
+      "oldmapsonline.org"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "maps",
+      "historical"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/oldmapsonline.md"
   },
   {
@@ -177647,8 +177584,8 @@
   },
   {
     "id": "email-leak-tests",
-    "name": "Email Leak Tests",
-    "description": "Verifying email IP privacy, testing anonymous email service configurations",
+    "name": "Email IP Leak Test",
+    "description": "Use when you want to confirm your own sock-puppet email doesn't expose your `ip-address` — send a test message and it reports whether your real IP appears in the outbound headers.",
     "url": "https://emailipleak.com/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -177656,34 +177593,44 @@
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Verifying email IP privacy, testing anonymous email service configurations",
-    "input": "Send a test email to a provided address",
-    "output": "IP addresses found in email headers with assessment of anonymization effectiveness",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Verifying that your investigative email account does not leak your real IP address in message headers.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free diagnostic; no account or payment.",
     "opsec": "active",
-    "opsecNote": "Requires sending a test email that includes your real email headers; use a dedicated test account.",
+    "opsecNote": "This is an OPSEC self-check, not a lookup on a target. You send a test email from YOUR sock-puppet account to the address it gives you; the tool reads the headers of that message. Run it from the exact account/VPN setup you use for investigations, never from a personal account, and don't send anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Simple single-purpose header-inspection utility; it only reports what your own email's headers contain, so there's little to misrepresent, but it's an unofficial third-party service.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "emailipleak.com",
+      "Email IP Leak"
+    ],
+    "tags": [
+      "opsec",
+      "anonymity",
+      "email-headers"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/email-leak-tests.md"
   },
   {
@@ -197674,56 +197621,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/people-search/college-recruiter.md"
-  },
-  {
-    "id": "community-search",
-    "name": "Поиск сообществ (Community Search)",
-    "description": "OSINT tool: Поиск сообществ (Community Search).",
-    "url": "https://vk.com/communities",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "get-user-info",
-      "people-search-results-vk",
-      "vk",
-      "vk-com",
-      "vk-com-2",
-      "vk-community-search",
-      "vk-people-search"
-    ],
-    "_file": "library/tools/people-search/community-search.md"
   },
   {
     "id": "contactout",
@@ -224062,38 +223959,53 @@
   },
   {
     "id": "clinicaltrials-gov",
-    "name": "clinicaltrials.gov",
-    "description": "433,207 research studies in 221 countries. For people who have a difficult-to-treat disease, this registry will help them learn about recently developed drugs and treatments and get contacts of organizations that are researching a particula",
+    "name": "ClinicalTrials.gov",
+    "description": "Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, sponsoring `employer-org`s, trial sites and contact `address`/`phone`.",
     "url": "https://clinicaltrials.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding the investigators, sponsoring organizations and site locations tied to a clinical study.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free U.S. government registry (NIH/NLM); no account or payment, with a free public API for bulk access.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public government registry is passive and anonymous; investigators and sponsors are named in the public record, and querying does not notify anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official registry operated by the U.S. National Library of Medicine (NIH); submissions are legally required for many trials, making it an authoritative record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ClinicalTrials.gov",
+      "clinicaltrials.gov",
+      "NIH clinical trials registry"
+    ],
     "tags": [
-      "Science"
+      "Science",
+      "public-records",
+      "medical"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/clinicaltrials-gov.md"
   },
   {
@@ -230462,47 +230374,53 @@
   {
     "id": "europages-business-search-europe",
     "name": "Europages Business Search (Europe)",
-    "description": "Database of over 3 million company listings in Europe",
-    "url": "http://www.europages.com",
+    "description": "Use when you have a company `name`/`employer-org` and want to find and locate it in Europe — returns matching business listings with `address`, sector and contact details.",
+    "url": "https://www.europages.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a European company's listing, address and contact details from its name or sector.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and view company listings; a business account/paid plans exist for suppliers/lead-generation, but investigative lookups need no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a B2B directory is passive and does not notify the company; you read published business listings. No sock puppet needed for a lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large European B2B directory (millions of listings); entries are business-submitted and vary in completeness/freshness — indicative, not a legal registry.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "eu"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Europages",
+      "europages.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "b2b"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/europages-business-search-europe.md"
   },
   {
@@ -271570,42 +271488,52 @@
   },
   {
     "id": "adzuna-job-search-engine-united-kingdom",
-    "name": "Adzuna Job Search Engine (United Kingdom)",
-    "description": "Website that offers job search services for multiple countries worldwide, including salary statistics",
-    "url": "http://www.adzuna.co.uk",
+    "name": "Adzuna Job Search Engine (UK)",
+    "description": "Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by company and place, useful for confirming an employer is hiring.",
+    "url": "https://www.adzuna.co.uk",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregated UK job-listing search by company, title and location, with salary statistics.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for job seekers to search and browse; Adzuna also offers a free developer API (key required) for programmatic access.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching listings is passive and notifies no employer or applicant. Browse logged-out; only register (with a sock puppet) if you want saved alerts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established job-search aggregator; it republishes third-party listings and models salary statistics, so postings are only as accurate as their source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Adzuna",
+      "adzuna.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "jobs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/adzuna-job-search-engine-united-kingdom.md"
   },
   {
@@ -357646,44 +357574,51 @@
   },
   {
     "id": "slang-dictionary-and-translator",
-    "name": "Slang Dictionary & Translator",
-    "description": "Decoding internet slang and text abbreviations",
+    "name": "NoSlang Slang Dictionary & Translator",
+    "description": "Use when you have text full of internet slang/abbreviations and want it decoded — returns plain-English meanings of chat/text acronyms to interpret a subject's messages or posts.",
     "url": "https://www.noslang.com/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Decoding internet slang and text abbreviations",
-    "input": "Slang terms or plain-language text",
-    "output": "Definitions or slang-style equivalents",
+    "bestFor": "Translating internet slang, chat acronyms and text abbreviations into plain English.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web dictionary/translator; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Lookup-based dictionary usage without direct interaction with investigation targets.",
+    "opsecNote": "A reference lookup with no target interaction — you paste text you already have; nothing is sent to or about a subject. Fully passive and safe to use freely.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running community-maintained slang dictionary; crowd-sourced definitions are broadly useful but can be incomplete or dated for very new slang.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "noslang-dictionary"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NoSlang",
+      "noslang.com",
+      "Slang Translator"
+    ],
+    "tags": [
+      "translation",
+      "slang",
+      "text"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/slang-dictionary-and-translator.md"
   },
   {
@@ -365064,42 +364999,49 @@
   },
   {
     "id": "oscar-job-function-codes-united-kingdom",
-    "name": "Oscar Job Function Codes (United Kingdom)",
-    "description": "Website that identifies the occupation classification code across the country at the national level",
+    "name": "Oscar Research Job Function Codes (UK)",
+    "description": "Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a postholder's title to their organizational role.",
     "url": "http://www.oscar-research.co.uk/databases/categorycodes",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding Oscar's UK public-sector function/category codes to interpret a postholder's role.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "The category-code reference/data dictionary is free to view/download; Oscar's underlying contact databases are a paid commercial product.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public reference/data dictionary is passive and anonymous; you are decoding a classification scheme, not querying any individual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by Oscar Research, a UK public-sector data/marketing vendor; the code list is their proprietary classification, authoritative for their own datasets only.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Oscar Research category codes",
+      "Oscar function codes"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/oscar-job-function-codes-united-kingdom.md"
   },
   {

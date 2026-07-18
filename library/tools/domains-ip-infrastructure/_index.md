@@ -250,7 +250,6 @@ kind: group-index
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — OSINT tool: Infosniper.
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
-- **`inmotion-hosting-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
 - **`internet-access-providers-meta-list`** (medium) — Website that provides a list of internet access providers in the US, Canada, and worldwide
