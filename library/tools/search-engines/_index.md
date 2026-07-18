@@ -84,7 +84,7 @@ kind: group-index
 - **`atscan`** (medium) — OSINT tool: ATSCAN.
 - **`australian-bureau-of-statistics`** (medium) — Australias Bureau of Statistics - includes population and census data
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
-- **`avvo-north-america`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of lawyers
+- **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
 - **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
 - **`baidu-china`** (low) — OSINT tool: Baidu (China).

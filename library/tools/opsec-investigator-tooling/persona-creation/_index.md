@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling/persona-creation
 
 ## Skills here
-- **`fake-identity-generator`** (medium) — Persona creation, anonymous account registration, test data
+- **`fake-identity-generator`** (low) — Use when you are building a sock-puppet persona and need consistent synthetic details — returns a generated `name`, `address`, `dob`, `usern
 - **`fake-name-generator`** (medium) — Use when you need a coherent synthetic identity for a sock-puppet account — returns a generated `name`, `address`, `email`, `phone` and `dob
 - **`random-user-generator`** (medium) — Bulk persona generation, test account data, application seeding
 - **`this-person-does-not-exist`** (medium) — Creating realistic profile photos for sock puppet accounts or personas

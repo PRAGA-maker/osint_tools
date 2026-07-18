@@ -427,7 +427,7 @@ kind: group-index
 - **`govdata-das-datenportal-f-r-deutschland-german`** (medium) — German administrative data
 - **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
 - **`government-staff-directory`** (medium) — OSINT tool: Government staff directory.
-- **`govsalaries`** (medium) — OSINT tool: GovSalaries.
+- **`govsalaries`** (medium) — Use when you have a `name` (and ideally a US state/employer) and want to confirm public-sector employment and pay — returns `employer-org`, 
 - **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
 - **`greataupair-com`** (medium) — Use when you have a `name` and suspect the subject works or seeks work in childcare/eldercare — returns a social-profile with location, job 
@@ -660,7 +660,7 @@ kind: group-index
 - **`netherlands`** (medium) — Use when you have a `name` or `employer-org` linked to the Netherlands and want registered companies, directors and addresses — returns `emp
 - **`nethouseprices-com`** (medium) — Use when you have a UK `address`/postcode and want its sale history — returns sold prices and dates (England & Wales, from HM Land Registry)
 - **`nettrace`** (high) — Use when you have a `name` and an Australian (or AU/UK/US/NZ) subject and want the right free public-record source — returns a curated direc
-- **`nevada-registered-voter-verification`** (medium) — Nevada registered voter verification and search
+- **`nevada-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for someone possibly in Nevada and want to confirm voter registration — returns registration status, coun
 - **`new-england-facts`** (high) — Use when you have a `name` in the US Northeast and want an address, phone, relatives and property links — returns an aggregated people/prope
 - **`new-hampshire`** (high) — Use when you have a `name` and want to check New Hampshire state custody — returns offender name, current location, charges/convictions, par
 - **`new-jersey-registered-voter-verification`** (medium) — New Jersey registered voter verification and search
@@ -734,7 +734,6 @@ kind: group-index
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
 - **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.
-- **`openownership-org`** (medium) — Wordwide beneficial ownership data.
 - **`openownership-register`** (medium) — OSINT tool: OpenOwnership Register.
 - **`openpayrolls-com`** (medium) — OSINT tool: Openpayrolls.com.
 - **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.

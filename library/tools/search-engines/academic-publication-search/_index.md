@@ -15,7 +15,7 @@ kind: group-index
 - **`lazy-scholar`** (medium) — Finding free full-text access to paywalled academic papers without institutional subscription
 - **`library-databases`** (medium) — Identifying specialized academic databases by subject for deep literature research
 - **`microsoft-academic`** (medium) — Academic paper discovery with author disambiguation and citation graph analysis
-- **`open-access-scholarly-journals`** (medium) — Accessing open-access peer-reviewed research in biomedical and natural sciences
+- **`open-access-scholarly-journals`** (low) — Use when you have an author `name` and want their open-access papers on this publisher — returns publications that reveal `employer-org` aff
 - **`open-library`** (medium) — Finding and borrowing digitized books, especially out-of-print or historical publications
 - **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w
 - **`pubmed-national-center-for-biotechnology-information`** (medium) — Biomedical, clinical, and life sciences literature research with high-quality metadata

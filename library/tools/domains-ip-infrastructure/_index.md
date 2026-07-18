@@ -274,7 +274,7 @@ kind: group-index
 - **`ip-neighbors`** (low) — Find the hosting neighbors for a specific web site or hostname
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
 - **`ip2geo-dev`** (low) — OSINT tool: ip2geo.dev.
-- **`ip2location-free-email-header-tracer`** (medium) — Process for identifying an IP address from an email header
+- **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
 - **`ipaddress-tools`** (medium) — Tooks including IP Address Lookup, Reverse IP Lookup, Whois Lookup, Email Address Tracer and more
@@ -550,7 +550,7 @@ kind: group-index
 - **`whois-history`** (low) — OSINT tool: Whois History.
 - **`whois-lookup-service`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`whois-request`** (medium) — Whois lookup tool that identifies the available registration information for a website or domain name
-- **`whois-search-com`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi
 - **`whois-search`** (low) — OSINT tool: Whois Search.
 - **`whois-service`** (low) — OSINT tool: WHOIS Service.
 - **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
