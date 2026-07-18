@@ -83,7 +83,7 @@ kind: group-index
 - **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)
 - **`replayweb`** (medium) — If the warc file is small, you can view its contents with this extreme simple online tool. Also it's possible to deploy ReplayWeb on your ow
 - **`ricks-apps-com`** (medium) — OSINT tool: ricks-apps.com.
-- **`rootssearch`** (medium) — Quick search service for five sites with genealogical information (as well as births, weddings and deaths/burials)
+- **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
 - **`rss-feed-reader`** (low) — OSINT tool: RSS Feed Reader.
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.
 - **`rss-search-engine`** (low) — OSINT tool: RSS Search Engine.
@@ -107,7 +107,7 @@ kind: group-index
 - **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo
 - **`vefsafn-is`** (medium) — OSINT tool: Vefsafn.is.
 - **`versionista`** (low) — OSINT tool: versionista.
-- **`view-page-archive-addons-mozilla-org`** (medium) — OSINT tool: view page archive (addons.mozilla.org).
+- **`view-page-archive-addons-mozilla-org`** (medium) — Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style sn
 - **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
 - **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.

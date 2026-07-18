@@ -602,7 +602,6 @@ kind: group-index
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
 - **`story-saver`** (medium) — Use when you have a public Instagram `username` and want to grab its Stories/Highlights before they expire — returns downloadable `image`/vi
 - **`storydownloader-app`** (high) — Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story co
-- **`storylooker`** (medium) — View public Snapchat/Instagram stories anonymously.
 - **`storysaver-net`** (high) — Use when you have a public Instagram post/story/reel `url` (from a target's `social-profile`) and want to download the media for offline cap
 - **`storysaver`** (high) — Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos 
 - **`streamscharts-com`** (medium) — Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public
@@ -691,7 +690,6 @@ kind: group-index
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
 - **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
 - **`twish`** (medium) — very simple, quick, comfortable and nicely designed advanced #Twitter search query builder for #GoogleChrome.
-- **`twitch-database`** (medium) — Following List + Channel Metadata + Role Lookup
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
 - **`twitch-followage-tool`** (medium) — Enter the Twitch username and get a complete list of channels he/she follows (with start dates)
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.

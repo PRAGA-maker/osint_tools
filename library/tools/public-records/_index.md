@@ -121,7 +121,6 @@ kind: group-index
 - **`boston-police-internal-affairs-cases-2010-2020`** (medium) — OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.
 - **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
-- **`brazillian-address-cep-search-and-report`** (medium) — OSINT tool: Brazillian Address CEP Search and Report.
 - **`brb-public-records`** (medium) — Public records source directory
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
 - **`brownbook`** (medium) — Use when you have a business `name`/`employer-org` and want its listing — returns address, phone, and contact details from a global crowd-so

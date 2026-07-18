@@ -93,7 +93,7 @@ kind: group-index
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`medium-com`** (medium) — OSINT tool: medium.com.
 - **`mixero-io`** (medium) — OSINT tool: mixero.io.
-- **`mylostaccount-org-uk`** (medium) — OSINT tool: mylostaccount.org.uk.
+- **`mylostaccount-org-uk`** (medium) — Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns
 - **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)
 - **`north-data`** (low) — Search for people and companies in EU corporate and trade registers + visualize relationships
 - **`numbers`** (low) — Search NFT by Content ID, Commit hash, keywords or uploaded photo.

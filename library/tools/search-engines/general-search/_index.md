@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`advangle`** (medium) — Building complex search queries with multiple filters (domain, language, date published)
-- **`baidu`** (medium) — Chinese language OSINT, Chinese market research, regional search coverage
+- **`baidu`** (medium) — Use when your subject or clue is Chinese-language or China-based and you want web/image/news coverage Google misses — returns pages, images,
 - **`bing`** (medium) — Use when you have any `name`, `username`, `domain`, or keyword and want a second major search index with strong operators — returns web/imag
 - **`brave`** (medium) — Use when you have a `name`, `username` or `domain` and want an independent web index that returns different results than Google — returns `d
 - **`duckduckgo`** (medium) — Use when you have a `name`, `username`, or `email` and want web results without a personalized filter bubble or search-history trail — retur

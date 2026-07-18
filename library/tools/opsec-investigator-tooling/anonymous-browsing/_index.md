@@ -14,7 +14,7 @@ kind: group-index
 
 ## Skills here
 - **`browser-leaks`** (medium) — Use when you (the investigator) want to check your own OpSec before an operation — returns what your browser leaks (real IP, WebRTC, DNS, ca
-- **`browserspy-dk`** (medium) — Detailed browser fingerprint inventory, identifying what data is visible to websites
+- **`browserspy-dk`** (medium) — Use when you want to audit what a website can see about your investigative browser — returns your fingerprint (fonts, plugins, screen, ip-ad
 - **`firefox-debloat`** (low) — Use when you want to harden Firefox for investigative browsing — a curated user.js/policies config that strips telemetry and reduces fingerp
 - **`locabrowser-com`** (medium) — Testing browser geolocation exposure, verifying location permission settings
 - **`noscript`** (medium) — Browser hardening, preventing JavaScript-based fingerprinting and tracking during OSINT

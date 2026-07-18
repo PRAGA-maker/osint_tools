@@ -302,7 +302,7 @@ kind: group-index
 - **`ufo-reporting-map`** (medium) — YouMap of UFO sightings reporting around the USA
 - **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
 - **`unixtime-org`** (medium) — OSINT tool: unixtime.org.
-- **`unixtimestamp-com`** (medium) — OSINT tool: unixtimestamp.com.
+- **`unixtimestamp-com`** (medium) — Use when you have a Unix/epoch timestamp from metadata or a log and want the human date/time — returns the converted datetime to anchor an e
 - **`urbex-database-map`** (medium) — Europe lost places map based by Urbex database
 - **`us-crisis-monitor`** (medium) — Use when you have a `geolocation` or `address` in the US and want to know what protests, political violence, or armed-group activity was rec
 - **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.

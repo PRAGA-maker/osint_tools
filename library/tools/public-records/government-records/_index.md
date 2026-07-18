@@ -7,7 +7,7 @@ kind: group-index
 # public-records/government-records
 
 ## Skills here
-- **`ca-salary-db`** (medium) — California public employee salary lookup
+- **`ca-salary-db`** (medium) — Use when you have a name and suspect the subject is a California public employee — returns employer-org, exact salary/benefits, and job titl
 - **`gov-data-canada`** (medium) — Use when you have an `employer-org`, place, or topic and want Canadian federal open data — returns datasets (business registrations, address
 - **`nc-salary-db`** (medium) — NC public employee salary lookup
 

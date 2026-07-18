@@ -36,7 +36,7 @@ kind: group-index
 - **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.
 - **`bikemap`** (low) — biking route world map
 - **`boatnerd-great-lakes-shipping`** (medium) — Maritime-related website focusing on Great Lakes and seaway shipping, including vessel information, photos, facts, and figures
-- **`canadian-black-book-values`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information
+- **`canadian-black-book-values`** (medium) — Use when you have a Canadian vehicle's year/make/model or VIN and want its market value — returns physical-description and a valuation to co
 - **`canadian-black-book`** (medium) — Use when you have a vehicle's make/model/year and want its Canadian market value — returns used-car trade-in/retail pricing to sanity-check 
 - **`canadian-civil-aircraft-register-search-canada`** (medium) — Transport Canada's registered civil aircraft registration search
 - **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types

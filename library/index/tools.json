@@ -20798,37 +20798,57 @@
   {
     "id": "rootssearch",
     "name": "RootsSearch",
-    "description": "Quick search service for five sites with genealogical information (as well as births, weddings and deaths/burials)",
+    "description": "Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and associate/dob leads across FamilySearch, Ancestry, and more.",
     "url": "https://rootssearch.io/search",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-form, multi-site genealogy search (and a browser extension that auto-fills a person's details) across the major records providers.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "associate",
+      "dob",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The RootsSearch tool/extension is free; the destination sites it searches (Ancestry, FindMyPast) may paywall the full record while FamilySearch/FindAGrave are free.",
+    "opsec": "passive",
+    "opsecNote": "You enter a person's identifying details and hand them off to third-party genealogy sites; those sites log the query. No target is notified. Use a research account/clean browser, and remember genealogy records expose living relatives — handle sensitively.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Long-running open-source project (rootsdev), an official FamilySearch partner; it only forwards searches to reputable providers rather than hosting data itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Roots Search",
+      "rootssearch.io",
+      "RootsSearch Chrome extension"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "archives-cache",
+      "genealogy",
+      "records-search",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/rootssearch.md"
   },
   {
@@ -22043,43 +22063,55 @@
   },
   {
     "id": "view-page-archive-addons-mozilla-org",
-    "name": "view page archive (addons.mozilla.org)",
-    "description": "OSINT tool: view page archive (addons.mozilla.org).",
+    "name": "Web Archives (View Page Archive)",
+    "description": "Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style snapshots to recover deleted content.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "One-click lookup of a page's archived/cached versions across Wayback, Archive.today, Google cache, and more, from the browser.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (Firefox and Chrome); optional donations. No account.",
+    "opsec": "passive",
+    "opsecNote": "The extension opens archive services in your browser; each archive you open sees your IP/request, but the target site itself is not contacted (you view cached copies, not the live page). Use a clean browser for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Mozilla-'Recommended' open-source add-on (a.k.a. Web Archives) with a strong review history; source is public and auditable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Web Archives",
+      "View Page Archive & Cache",
+      "web-archives-extension"
+    ],
     "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
+      "archives-cache",
+      "browser-extension",
+      "web-archiving",
+      "cached-pages"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/view-page-archive-addons-mozilla-org.md"
   },
   {
@@ -42001,41 +42033,56 @@
   {
     "id": "cpic-stolen-property-search",
     "name": "CPIC Stolen Property Search",
-    "description": "Canadian Police Information Centre stolen vehicle and property search",
+    "description": "Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to flag illicit property or a subject's assets.",
     "url": "http://www.cpic-cipc.ca/index-eng.htm",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Public check of the Canadian Police Information Centre for stolen vehicles, boats, bicycles, firearms, and property by identifier.",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "vehicle-plate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public service of the RCMP-operated Canadian Police Information Centre; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An official Canadian police portal — assume searches are logged. It is a legitimate public lookup, but run only queries you can justify; do not treat it as anonymous. Use a clean browser for sensitive checks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the RCMP/Canadian Police Information Centre; the stolen-property data is authoritative Canadian law-enforcement data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "CPIC",
+      "Canadian Police Information Centre",
+      "cpic-cipc.ca"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "deep-web-search"
+      "stolen-property",
+      "canada",
+      "law-enforcement",
+      "vehicles"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/cpic-stolen-property-search.md"
   },
   {
@@ -115204,43 +115251,57 @@
   {
     "id": "mylostaccount-org-uk",
     "name": "mylostaccount.org.uk",
-    "description": "OSINT tool: mylostaccount.org.uk.",
+    "description": "Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns an employer-org/provider match by name and address.",
     "url": "https://www.mylostaccount.org.uk/search",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "The official free UK route to trace lost or dormant bank, building society, and NS&I accounts for a named person.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free official service run jointly by UK Finance, the Building Societies Association, and NS&I. There is never a fee — treat any site charging for this as a scam.",
+    "opsec": "passive",
+    "opsecNote": "You must create an online profile and submit a claim, so this is only for legitimate holders/estates — the application is forwarded to the named provider(s), who respond by email or letter. It is not a covert lookup; only use it where you have a lawful basis (your own account, or as next of kin/executor).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by UK Finance, the BSA, and NS&I — the authoritative UK dormant-account tracing scheme, not a third-party data broker.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "My Lost Account",
+      "mylostaccount.org.uk"
+    ],
     "tags": [
-      "banksites",
-      "Banking Related Sites"
+      "financial-crypto",
+      "dormant-accounts",
+      "uk",
+      "asset-tracing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/mylostaccount-org-uk.md"
   },
   {
@@ -131148,42 +131209,53 @@
   {
     "id": "unixtimestamp-com",
     "name": "unixtimestamp.com",
-    "description": "OSINT tool: unixtimestamp.com.",
+    "description": "Use when you have a Unix/epoch timestamp from metadata or a log and want the human date/time — returns the converted datetime to anchor an event in time.",
     "url": "https://www.unixtimestamp.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting epoch/Unix timestamps to human-readable UTC/local dates and back, for reading log and metadata timestamps.",
     "selectorsIn": [
-      "geolocation"
+      "metadata-exif"
     ],
     "selectorsOut": [
-      "geolocation"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web converter; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Conversion is arithmetic and can be done entirely client-side; nothing about your subject is transmitted meaningfully. For sensitive values, convert offline (e.g. `date -d @<epoch>`) so the timestamp never leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Simple, widely used utility; the math is standard and independently verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "unixtimestamp.com",
+      "epoch converter"
+    ],
     "tags": [
-      "timezones",
-      "Time Zones & Converters"
+      "geolocation",
+      "timestamps",
+      "time-conversion",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/unixtimestamp-com.md"
   },
   {
@@ -175928,29 +176000,35 @@
   {
     "id": "browserspy-dk",
     "name": "BrowserSpy.dk",
-    "description": "Detailed browser fingerprint inventory, identifying what data is visible to websites",
+    "description": "Use when you want to audit what a website can see about your investigative browser — returns your fingerprint (fonts, plugins, screen, ip-address) so you can harden your OpSec.",
     "url": "https://browserspy.dk/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "anonymous-browsing"
     ],
-    "bestFor": "Detailed browser fingerprint inventory, identifying what data is visible to websites",
+    "bestFor": "Self-auditing the fingerprint/identifying data your browser leaks to sites, to check that a sock-puppet setup isn't uniquely trackable.",
     "input": "No input required (automatic browser detection)",
     "output": "Comprehensive browser property list including plugins, fonts, screen data, and capabilities",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "selectorsOut": [
+      "ip-address",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free; no account. Long-running hobby site by Henrik Gemal.",
     "opsec": "active",
-    "opsecNote": "Collects detailed browser fingerprint; use only for anonymization setup auditing.",
+    "opsecNote": "This profiles YOUR browser, not a target's. Run it in the exact sock-puppet browser/VPN profile you use for investigations to see what leaks — but the site is old and shows ads/possibly stale links, so run it in a disposable session, not your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent hobby site (gemal.dk); still referenced as a fingerprint tester but the interface is dated and content is not actively curated — treat as a rough self-check, not an authority.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -175958,11 +176036,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BrowserSpy",
+      "gemal.dk browserspy",
+      "browserspy.dk"
+    ],
+    "tags": [
+      "opsec",
+      "browser-fingerprint",
+      "anonymous-browsing"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browserspy-dk.md"
   },
   {
@@ -222032,40 +222118,6 @@
     "_file": "library/tools/public-records/bps-org-uk.md"
   },
   {
-    "id": "brazillian-address-cep-search-and-report",
-    "name": "Brazillian Address CEP Search and Report",
-    "description": "OSINT tool: Brazillian Address CEP Search and Report.",
-    "url": "https://c2abn462.caspio.com/dp/6c2d80006c6adb825b3b45079cb8",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/brazillian-address-cep-search-and-report.md"
-  },
-  {
     "id": "brb-public-records",
     "name": "BRB Public Records",
     "description": "Public records source directory",
@@ -222641,29 +222693,38 @@
   {
     "id": "ca-salary-db",
     "name": "CA Salary DB",
-    "description": "California public employee salary lookup",
+    "description": "Use when you have a name and suspect the subject is a California public employee — returns employer-org, exact salary/benefits, and job title from public payroll records.",
     "url": "https://transparentcalifornia.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "government-records"
     ],
-    "bestFor": "California public employee salary lookup",
+    "bestFor": "Looking up a named California state/local/school/agency employee's exact pay, benefits, employer, and job title.",
     "input": "Name, employer, position",
     "output": "Salary, benefits, employer",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public-records database; no account or payment. Funded by a nonprofit/foundation.",
     "opsec": "passive",
-    "opsecNote": "Transparency-focused public records",
+    "opsecNote": "Reads already-public payroll disclosures; no login and no target notification. Standard web logging only. Use a clean browser for sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Transparent California compiles official payroll data obtained via California Public Records Act requests; figures trace back to government sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -222671,11 +222732,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Transparent California",
+      "transparentcalifornia.com"
+    ],
+    "tags": [
+      "public-records",
+      "salary",
+      "california",
+      "government-employees"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/government-records/ca-salary-db.md"
   },
   {
@@ -274287,29 +274356,39 @@
   {
     "id": "baidu",
     "name": "Baidu",
-    "description": "Chinese language OSINT, Chinese market research, regional search coverage",
+    "description": "Use when your subject or clue is Chinese-language or China-based and you want web/image/news coverage Google misses — returns pages, images, and social-profile leads from the Chinese web.",
     "url": "https://www.baidu.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Chinese language OSINT, Chinese market research, regional search coverage",
+    "bestFor": "Searching the Chinese-language web (news, forums, Tieba, Baike) for people, companies, and images that Western engines under-index.",
     "input": "Keywords, operators (inurl:, intitle:, site:, filetype:), language and time filters",
     "output": "Ranked web pages, images, news, knowledge graph, trending queries",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web search; no account needed. An API and paid ad products exist but core search is free.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with emphasis on Chinese content; government monitoring potential within China; broader regional coverage",
+    "opsecNote": "Passive querying, but Baidu is a Chinese company subject to PRC data/monitoring law; assume queries and IPs are logged and may be visible to authorities. Do not run China-sensitive searches from an attributable IP — use a sock-puppet browser and consider a non-attributable exit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Baidu, China's dominant search engine; results are authentic index data (with PRC content filtering/censorship applied).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -274327,11 +274406,18 @@
       "baiduknows-search-engine-china",
       "baike-baidu-chinese-language"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "百度",
+      "baidu.com"
+    ],
+    "tags": [
+      "search-engines",
+      "china",
+      "chinese-language"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/baidu.md"
   },
   {
@@ -342605,48 +342691,6 @@
     "_file": "library/tools/social-networks/storydownloader-app.md"
   },
   {
-    "id": "storylooker",
-    "name": "StoryLooker",
-    "description": "View public Snapchat/Instagram stories anonymously.",
-    "url": "https://storylooker.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "image"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "kimi-2026"
-    ],
-    "source": "kimi-tiktok-snap",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/storylooker.md"
-  },
-  {
     "id": "storysaver",
     "name": "StorySaver",
     "description": "Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos with possible `geolocation`/timestamp context.",
@@ -347721,43 +347765,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twish.md"
-  },
-  {
-    "id": "twitch-database",
-    "name": "Twitch Database",
-    "description": "Following List + Channel Metadata + Role Lookup",
-    "url": "https://www.twitchdatabase.com/following",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitch"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitch-database.md"
   },
   {
     "id": "twitch-fckdmca-com",
@@ -360451,44 +360458,56 @@
   {
     "id": "canadian-black-book-values",
     "name": "Canadian Black Book Values",
-    "description": "Vehicle-related website that assesses the value of a vehicle based on entered information",
+    "description": "Use when you have a Canadian vehicle's year/make/model or VIN and want its market value — returns physical-description and a valuation to corroborate ownership or affordability.",
     "url": "https://www.canadianblackbook.com/value-your-vehicle/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free used-vehicle valuation for the Canadian market from year/make/model/trim (or VIN).",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "physical-description"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer valuation tool; some enrichment (full history, dealer products like CBB Online+) is paid, but the basic value estimate is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A consumer valuation form; you enter vehicle attributes, not a person. It may ask for an email to return a full report, so use a sock-puppet address. No vehicle owner is notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Canadian Black Book is the leading Canadian vehicle-valuation provider; its figures are an industry reference.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "canadian-black-book"
     ],
+    "aliases": [
+      "Canadian Black Book",
+      "CBB value your vehicle",
+      "canadianblackbook.com"
+    ],
+    "tags": [
+      "transportation",
+      "vehicle-valuation",
+      "canada"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/canadian-black-book-values.md"
   },
   {
