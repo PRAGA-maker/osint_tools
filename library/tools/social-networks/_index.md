@@ -402,7 +402,7 @@ kind: group-index
 - **`o365chk`** (low) — Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, a
 - **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
-- **`oh365userfinder`** (medium) — A simple tool that shows if an #Office365 account is tied to a specific email address. It's possible to check an entire list of emails from 
+- **`oh365userfinder`** (medium) — Use when you have an `email` and want to confirm it is a valid Microsoft 365 account — returns account existence (email validity).
 - **`ollie-boyd-github-io`** (high) — Use when you have a LinkedIn post/activity URL and want the exact time it was published — returns the precise creation timestamp (local + UT
 - **`onedrive-enumeration-tool`** (medium) — A tool that checks the existence of OneDrive accounts with certain usernames (from the users.txt file) in the domain of a certain company.
 - **`onemilliontweetmap`** (medium) — Use when you have a place and want geotagged tweets there — plots recent X/Twitter posts on a live world map, returning location-bearing `so
@@ -593,7 +593,7 @@ kind: group-index
 - **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
 - **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
-- **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
+- **`steamid-uk`** (medium) — Use when you have a Steam `username`/ID and want name history and friend-link timelines — returns username, social-profile and associate.
 - **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
 - **`story-saver`** (medium) — Use when you have a public Instagram `username` and want to grab its Stories/Highlights before they expire — returns downloadable `image`/vi

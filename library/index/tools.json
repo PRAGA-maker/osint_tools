@@ -30241,48 +30241,6 @@
     "_file": "library/tools/communities-forums/google-com-40.md"
   },
   {
-    "id": "google-com-41",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Athestudentroom.co.uk%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-41.md"
-  },
-  {
     "id": "google-com-6",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -32617,42 +32575,47 @@
   },
   {
     "id": "metv-united-states",
-    "name": "METV (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "name": "MeTV (United States)",
+    "description": "Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.",
     "url": "http://www.metv.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Checking MeTV's classic-television schedule, station affiliates and programme info (broadcast reference, not a person search).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported US TV network site; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing TV schedules and programme pages reveals nothing about any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official site of the MeTV classic-television network (Weigel Broadcasting); authoritative for its own schedule/affiliates, not a people resource.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MeTV",
+      "metv.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "television",
+      "us",
+      "broadcast-reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/metv-united-states.md"
   },
   {
@@ -32694,46 +32657,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/mghurston-list-of-fake-news-satire-and-hoax-websites.md"
-  },
-  {
-    "id": "mibbit-irc-network-search",
-    "name": "Mibbit IRC Network Search",
-    "description": "Searches Internet Relay Chat networks and channels",
-    "url": "http://search.mibbit.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/mibbit-irc-network-search.md"
   },
   {
     "id": "militaryforums-co-uk",
@@ -74701,30 +74624,30 @@
   {
     "id": "godaddy",
     "name": "GoDaddy",
-    "description": "Service provider for registering websites and domain addresses",
+    "description": "Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-org context.",
     "url": "https://ca.godaddy.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising GoDaddy as a domain's registrar and using its WHOIS/availability tools as one infrastructure-context source.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "WHOIS/availability lookups are free; domain registration and services are paid. Note parked GoDaddy \"for sale\" pages often indicate a domain is dead/available.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WHOIS/availability lookups are passive and don't notify a domain owner. Any legal/abuse process about a hosted domain must go through GoDaddy's proper channels, not casual contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The world's largest domain registrar; authoritative for domains it registers, though its bundled WHOIS may be privacy-shielded.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -74732,21 +74655,25 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
     "relatedTools": [
+      "ipaddress-tools",
       "cyclect",
       "godaddy-com",
       "godaddy-whois-lookup"
     ],
+    "aliases": [
+      "GoDaddy",
+      "godaddy.com"
+    ],
+    "tags": [
+      "registrar",
+      "whois",
+      "domains"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/godaddy.md"
   },
   {
@@ -82466,31 +82393,29 @@
   },
   {
     "id": "my-ip-address",
-    "name": "My IP Address",
-    "description": "Search tool that identifies the IP address you are currently using",
+    "name": "MyIPAddress.com",
+    "description": "Use when checking what public IP your own connection exposes (sock-puppet/VPN verification) — returns your current ip-address and coarse geolocation.",
     "url": "http://www.myipaddress.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
+    "bestFor": "Instantly showing the public IP (and rough geolocation) that YOUR current connection presents to websites.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This reports YOUR own egress IP, not a target's — an OPSEC self-check. Load it through the exact VPN/proxy you plan to use and confirm it shows the cover exit, not your real IP, before doing any collection.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple \"what is my IP\" reflector; it just echoes your connection's public IP, so the value is objective (subject to your VPN state).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -82499,15 +82424,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmybrowser-org"
+    ],
+    "aliases": [
+      "myipaddress.com",
+      "what is my IP"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "ip-check",
+      "opsec"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/my-ip-address.md"
   },
   {
@@ -83270,47 +83200,52 @@
   {
     "id": "nindo-host-morocco",
     "name": "Nindo Host (Morocco)",
-    "description": "Moroccan service provider for registering websites and domain addresses",
+    "description": "Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider) context.",
     "url": "http://www.nindohost.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising and contextualising a Moroccan web-hosting/registrar provider that appears in WHOIS/DNS for Morocco-linked infrastructure.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Commercial hosting/registrar (paid services); the site itself is free to view. Redirects to nindohost.ma.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the provider's site is passive. Any abuse/legal request about a hosted domain must go through the provider's proper channels, not casual contact that could tip off a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial Moroccan hosting/registrar; relevant only as infrastructure context, not as an OSINT data source itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ma"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "Nindo Host",
+      "nindohost.com",
+      "nindohost.ma"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "hosting",
+      "registrar",
+      "morocco"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nindo-host-morocco.md"
   },
   {
@@ -85275,52 +85210,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/pidrila.md"
-  },
-  {
-    "id": "piwik-web-analytics",
-    "name": "PIWIK Web Analytics",
-    "description": "Search for information and statistics about any online website using open source software",
-    "url": "http://piwik.org",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/piwik-web-analytics.md"
   },
   {
     "id": "planethoster-canada",
@@ -246146,40 +246035,6 @@
     "_file": "library/tools/public-records/londonstockexchange-com.md"
   },
   {
-    "id": "lou-barletta-2017-donors",
-    "name": "Lou Barletta 2017 Donors",
-    "description": "OSINT tool: Lou Barletta 2017 Donors.",
-    "url": "https://b2.caspio.com/dp/0a9210001cdd2eaac90941488478",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/lou-barletta-2017-donors.md"
-  },
-  {
     "id": "louisiana",
     "name": "Louisiana",
     "description": "Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, and DOC `document-id` (offender number).",
@@ -252777,51 +252632,54 @@
   },
   {
     "id": "ohio-mhas",
-    "name": "Ohio MHAS",
-    "description": "Ohio Mental Health and Addiction Services site - includes facts and resources for prevention and regulation",
+    "name": "Ohio Dept. of Mental Health & Addiction Services (OhioMHAS)",
+    "description": "Use when an Ohio subject may be in behavioral-health treatment and you want licensed-provider/facility references — returns employer-org and address leads.",
     "url": "http://mha.ohio.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Ohio behavioral-health agency site — provider/facility references and regulatory info, not a person search.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Ohio state government site; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public government resource site reveals nothing about any subject. Note that individual patient/treatment records are confidential and NOT available here — this is agency/provider information only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Ohio state agency (OhioMHAS); authoritative for licensed providers and regulations, but not a database of individuals.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ohio"
     ],
+    "aliases": [
+      "OhioMHAS",
+      "mha.ohio.gov"
+    ],
+    "tags": [
+      "behavioral-health",
+      "ohio",
+      "government"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ohio-mhas.md"
   },
   {
@@ -259949,42 +259807,55 @@
   },
   {
     "id": "rusprofile",
-    "name": "Rusprofile",
-    "description": "Researching Russian companies, directors, and legal entity registration",
+    "name": "RusProfile",
+    "description": "Use when you have a Russian `name` or company and want directorships, registration and ownership links — returns employer-org, associate and address.",
     "url": "https://www.rusprofile.ru/",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "Researching Russian companies, directors, and legal entity registration",
-    "input": "Company name, INN (tax ID), or OGRN (registration number)",
-    "output": "Registration details, directors, financial data, and legal filings for Russian entities",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free lookup of Russian legal entities, their directors/founders, and cross-links between people and companies.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Core company/director data is free to view; detailed reports and some filings are paid. No account needed for basic lookups.",
     "opsec": "passive",
-    "opsecNote": "Queries routed through Rusprofile servers; aggregates from Russian government registries.",
+    "opsecNote": "Searching a public registry mirror does not touch the subject. Route Russian-site traffic through an appropriate VPN and a sock-puppet browser; be mindful of the legal/operational sensitivities of researching Russian entities.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used aggregator of Russia's official company registry (EGRUL/EGRIP) data; convenient and generally accurate, but a third-party mirror — confirm critical facts against the primary registry.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ru"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RusProfile",
+      "rusprofile.ru"
+    ],
+    "tags": [
+      "corporate-registry",
+      "russia",
+      "company-research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/rusprofile.md"
   },
   {
@@ -267636,44 +267507,39 @@
   },
   {
     "id": "unclaimed-and-abandoned-property-search-directory",
-    "name": "Unclaimed and Abandoned Property Search Directory",
-    "description": "OSINT tool: Unclaimed and Abandoned Property Search Directory.",
+    "name": "Unclaimed & Abandoned Property Search Directory",
+    "description": "Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org leads.",
     "url": "http://publicrecords.onlinesearches.com/unclaimed-property.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A directory of official US state unclaimed-property search portals to check a name against, state by state.",
     "selectorsIn": [
-      "name",
-      "address"
+      "name"
     ],
     "selectorsOut": [
       "address",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory linking to free official state treasury/unclaimed-property search sites.",
+    "opsec": "passive",
+    "opsecNote": "Searching state unclaimed-property databases is passive and does not notify anyone. Standard sock-puppet browsing hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "OnlineSearches is a directory aggregator; it links to authoritative state-government unclaimed-property portals where the actual records live.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "court-records-search-directory",
       "free-public-records-directory-us",
@@ -267687,6 +267553,18 @@
       "public-records-directory",
       "sex-offender-us"
     ],
+    "aliases": [
+      "unclaimed property search",
+      "abandoned property directory"
+    ],
+    "tags": [
+      "unclaimed-property",
+      "public-records",
+      "us"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unclaimed-and-abandoned-property-search-directory.md"
   },
   {
@@ -311598,37 +311476,55 @@
   {
     "id": "zoomeye",
     "name": "ZoomEye",
-    "description": "OSINT tool: ZoomEye.",
+    "description": "Use when you have a `domain`/`ip-address` and want exposed-host, service and banner intel — returns ip-address, domain and device-id.",
     "url": "https://www.zoomeye.ai/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "An internet-wide scanner search engine (Shodan/Censys-style) for finding hosts, open services, banners and devices tied to an IP or domain.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "device-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier (registration + monthly query quota) covers most lookups; higher volume and advanced filters need a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "ZoomEye serves results from its own prior scans, so querying it does NOT touch the target's infrastructure — it is passive reconnaissance. Do not follow up by directly connecting to discovered hosts unless authorized, as that would be active. Use a sock-puppet account for registration.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established internet-wide scanning search engine (Knownsec); results are its own scan data — accurate at scan time but may be stale.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ZoomEye",
+      "zoomeye.ai"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "attack-surface",
+      "internet-scan",
+      "infrastructure"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/zoomeye.md"
   },
   {
@@ -332418,47 +332314,56 @@
   {
     "id": "oh365userfinder",
     "name": "Oh365UserFinder",
-    "description": "A simple tool that shows if an #Office365 account is tied to a specific email address. It's possible to check an entire list of emails from a text file at once.",
+    "description": "Use when you have an `email` and want to confirm it is a valid Microsoft 365 account — returns account existence (email validity).",
     "url": "https://github.com/dievus/Oh365UserFinder",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Validating whether one email (or a whole list) corresponds to a real Office/Microsoft 365 account, without alerting the owner.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "address"
+      "email",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python, GitHub); no account or key required.",
+    "opsec": "active",
+    "opsecNote": "It queries Microsoft's login/GetCredentialType endpoint about the target address. This is unauthenticated enumeration Microsoft may log; it does NOT notify the account owner, but tenant admins may see anomalous validation traffic. Run from a sock-puppet IP and keep volume low to avoid tripping tenant defenses.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool (dievus); relies on Microsoft's own account-validation response, so a positive is a reliable existence signal.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Office365"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "account-live-com",
       "dork-dump",
       "geemail-user-finder",
       "mayorsecdnsscan"
     ],
+    "aliases": [
+      "Oh365UserFinder",
+      "dievus/Oh365UserFinder"
+    ],
+    "tags": [
+      "office365",
+      "account-enumeration",
+      "email"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/oh365userfinder.md"
   },
   {
@@ -342421,39 +342326,54 @@
   },
   {
     "id": "steamid-uk",
-    "name": "SteamId.uk",
-    "description": "Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) seach based on previously used names (paid).",
+    "name": "SteamID.uk",
+    "description": "Use when you have a Steam `username`/ID and want name history and friend-link timelines — returns username, social-profile and associate.",
     "url": "http://steamid.uk/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving Steam IDs, viewing a player's previous display names, and seeing when accounts friended each other.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier resolves IDs, shows previous names and friend-link dates. Bulk search-by-former-name and account screenshots are paid.",
+    "opsec": "passive",
+    "opsecNote": "Lookups query Steam's public data via the site, not the target — the player is not notified. Sign in with Steam only from a sock-puppet account if you use features that require it; avoid tying queries to your real Steam identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known community Steam-OSINT utility (in the Bellingcat toolkit); data derives from Steam's public APIs.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "steamid.uk",
+      "SteamID UK"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "other-platforms"
+      "gaming",
+      "steam",
+      "username"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/steamid-uk.md"
   },
   {

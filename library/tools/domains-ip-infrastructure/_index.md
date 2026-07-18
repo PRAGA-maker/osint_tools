@@ -209,7 +209,7 @@ kind: group-index
 - **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Whois lookup tool offered by GoDaddy that identifies the available registration information for a website or domain name
-- **`godaddy`** (medium) — Service provider for registering websites and domain addresses
+- **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
 - **`gofindwhois`** (low) — More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, 
 - **`gogetcrawl`** (low) — Search and download archived web pages and files from Common Crawl and Wayback Machine.
 - **`google-bug-bounty-dorks-generator`** (low) — Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.
@@ -333,7 +333,7 @@ kind: group-index
 - **`mx-toolbox-whois-lookup`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS registration details — returns registrar, registrant/org, dates and namese
 - **`mxtoolbox-com`** (medium) — Use when you have a `domain` and want its DNS Start-of-Authority record — returns the authoritative nameservers, the hostmaster contact, and
 - **`my-global-ip`** (medium) — Search tool that identifies the IP address you are currently using
-- **`my-ip-address`** (medium) — Search tool that identifies the IP address you are currently using
+- **`my-ip-address`** (medium) — Use when checking what public IP your own connection exposes (sock-puppet/VPN verification) — returns your current ip-address and coarse geo
 - **`myip-ip-address`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`name-com-bulk-search`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`name-com-united-states`** (medium) — Service provider for registering websites and domain addresses
@@ -348,7 +348,7 @@ kind: group-index
 - **`network-tools`** (medium) — Web trace, WHOIS, and domain lookups
 - **`nibbler-website-test`** (medium) — Search for information and statistics about any online website
 - **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
-- **`nindo-host-morocco`** (medium) — Moroccan service provider for registering websites and domain addresses
+- **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
@@ -378,7 +378,6 @@ kind: group-index
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
-- **`piwik-web-analytics`** (medium) — Search for information and statistics about any online website using open source software
 - **`planethoster-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`poodle-check`** (low) — OSINT tool: Poodle Check.
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri

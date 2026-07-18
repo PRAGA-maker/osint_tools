@@ -168,7 +168,6 @@ kind: group-index
 - **`google-com-37`** (medium) — OSINT tool: google.com.
 - **`google-com-39`** (medium) — OSINT tool: google.com.
 - **`google-com-40`** (medium) — OSINT tool: google.com.
-- **`google-com-41`** (medium) — OSINT tool: google.com.
 - **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
@@ -221,9 +220,8 @@ kind: group-index
 - **`meetic-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
 - **`metafilter`** (medium) — Communitu blogging website allowing anyone to contribute
-- **`metv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
-- **`mibbit-irc-network-search`** (medium) — Searches Internet Relay Chat networks and channels
 - **`militaryforums-co-uk`** (medium) — OSINT tool: militaryforums.co.uk.
 - **`money-talk-org`** (medium) — OSINT tool: money-talk.org.
 - **`moneyforums-citywire-co-uk`** (medium) — OSINT tool: moneyforums.citywire.co.uk.

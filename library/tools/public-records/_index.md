@@ -583,7 +583,6 @@ kind: group-index
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
 - **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area
 - **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
-- **`lou-barletta-2017-donors`** (medium) — OSINT tool: Lou Barletta 2017 Donors.
 - **`louisiana-registered-voter-verification`** (medium) — Louisiana registered voter verification and search
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
 - **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
@@ -705,7 +704,7 @@ kind: group-index
 - **`office-of-national-drug-control-policy`** (medium) — US Office of National Drug Control website linking to publications, programs, prevention, treatment, enforcement, drug facts, state and loca
 - **`offshorealert-com`** (medium) — Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports an
 - **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
-- **`ohio-mhas`** (medium) — Ohio Mental Health and Addiction Services site - includes facts and resources for prevention and regulation
+- **`ohio-mhas`** (medium) — Use when an Ohio subject may be in behavioral-health treatment and you want licensed-provider/facility references — returns employer-org and
 - **`ohio-obituaries-death-and-marriage-search`** (high) — Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead a
 - **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
 - **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
@@ -996,7 +995,7 @@ kind: group-index
 - **`un-comtrade-database`** (low) — OSINT tool: UN COMTRADE Database.
 - **`un-data`** (low) — OSINT tool: UN Data.
 - **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.
-- **`unclaimed-and-abandoned-property-search-directory`** (medium) — OSINT tool: Unclaimed and Abandoned Property Search Directory.
+- **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
 - **`unclaimed-money-us-google-search`** (medium) — OSINT tool: "unclaimed money" US - Google Search.
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns
 - **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — OSINT tool: Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa.

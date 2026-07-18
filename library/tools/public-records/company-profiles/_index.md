@@ -16,7 +16,7 @@ kind: group-index
 - **`littlesis`** (medium) — Use when you have a `name`/`employer-org` of a public figure or company and want their power network — returns board seats, donations, and r
 - **`opencorporates`** (medium) — Use when you have a `name` (person or company) and want corporate records across jurisdictions — returns companies, officers/directorships, 
 - **`owler`** (medium) — Competitive intelligence and company profile research
-- **`rusprofile`** (medium) — Researching Russian companies, directors, and legal entity registration
+- **`rusprofile`** (medium) — Use when you have a Russian `name` or company and want directorships, registration and ownership links — returns employer-org, associate and
 - **`uk-data`** (medium) — Use when you have a UK `employer-org` (company name or number) and want its registration, financials, and directors — returns `employer-org`
 - **`vault`** (medium) — Company culture research, salary benchmarking, and employee sentiment analysis
 
