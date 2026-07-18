@@ -65,7 +65,7 @@ kind: group-index
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
 - **`alexa`** (low) — OSINT tool: Alexa.
 - **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
-- **`all-net-tool`** (medium) — Network analysis tools; whois lookups; traceroute
+- **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
 - **`all-net-tools-toolbox-domain-information`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`all-net-tools-toolbox-traceroute`** (medium) — Tool that identifies the traceroute path of an IP address
@@ -95,7 +95,6 @@ kind: group-index
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — OSINT tool: Bitdefender Threat Map.
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
-- **`blog`** (medium) — Service provider for hosting webpages and websites
 - **`bluehost-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`breachhq`** (low) — OSINT tool: BreachHQ.
 - **`broadband-speed-checker-uk`** (medium) — Analysis tool that assesses the speed of your Internet connection

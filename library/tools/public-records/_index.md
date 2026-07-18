@@ -685,7 +685,7 @@ kind: group-index
 - **`nursing-home-inspect`** (medium) — Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and 
 - **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status
 - **`nypd-misconduct-complaint-database`** (medium) — Use when you have an NYPD officer `name` and want their civilian-complaint history — returns per-officer CCRB complaints, allegations, and s
-- **`nypd-officer-profile`** (medium) — OSINT tool: NYPD Officer Profile.
+- **`nypd-officer-profile`** (medium) — Use when you have an NYPD officer's `name` or shield/tax number and want their official record — returns rank/shield history, commands, awar
 - **`nz-certificates-online-new-zealand`** (high) — Use when you have a `name` (plus a `dob`/event detail) and want a certified New Zealand birth, death or marriage certificate — returns an of
 - **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`
 - **`oanda`** (medium) — Currency converter, view historial and live exchange rates
@@ -948,7 +948,7 @@ kind: group-index
 - **`the-data-and-story-library`** (low) — OSINT tool: The Data and Story Library.
 - **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
 - **`the-nypd-files`** (medium) — OSINT tool: The NYPD Files.
-- **`the-pegasus-project-occrp`** (medium) — OSINT tool: The Pegasus Project \| OCCRP.
+- **`the-pegasus-project-occrp`** (medium) — Use when you have a `name` and want to know if they appear among Pegasus spyware targets — returns the "Who's on the List" investigative fin
 - **`the-philadelphia-police-misconduct-database`** (medium) — OSINT tool: The Philadelphia Police Misconduct Database.
 - **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p
 - **`the-tribal-court-clearinghouse`** (high) — Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference port

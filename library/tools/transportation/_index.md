@@ -90,7 +90,7 @@ kind: group-index
 - **`free-car-license-plate-lookup`** (medium) — OSINT tool: Free Car License Plate Lookup.
 - **`free-license-plate-search-check-any-license-plate-free`** (medium) — OSINT tool: FREE License Plate Search | Check Any License Plate FREE.
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
-- **`freecarcheck-co-uk`** (medium) — OSINT tool: Freecarcheck.co.uk.
+- **`freecarcheck-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want free vehicle history — returns make/model, MOT & tax status, DVLA history, stolen/plate-chan
 - **`freedar`** (low) — OSINT tool: Freedar.
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Use when you have a UK aircraft registration (`vehicle-plate`, a G- mark) and want its registered owner — returns owner `name` and `address`
 - **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area

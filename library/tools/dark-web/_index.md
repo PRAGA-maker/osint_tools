@@ -18,7 +18,7 @@ kind: group-index
 - **`activetk`** (low) — OSINT tool: ActiveTK.
 - **`ahmia-link-graph`** (low) — Enter the name of the site in the .onion domain zone and see what other sites in the #onion domain zone it is associated with.
 - **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
-- **`ancestor-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national level
+- **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — AI search assistant, ad-free and privacy-focused
 - **`anz-standard-industrial-classification`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`astra-guns`** (low) — OSINT tool: Astra Guns.

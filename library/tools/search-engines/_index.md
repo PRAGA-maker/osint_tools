@@ -159,7 +159,7 @@ kind: group-index
 - **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
 - **`clearing-and-depository-services`** (medium) — Non-government site maintained by the Canadian Depository for Securities Limited
 - **`clicklaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
-- **`cloud-bucket-search-engine`** (medium) — OSINT tool: Cloud Bucket Search Engine.
+- **`cloud-bucket-search-engine`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want exposed cloud storage — returns public S3/Azure/GCS bucket listings and file
 - **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)
 - **`cloudflare-radar`** (medium) — OSINT tool: Cloudflare Radar.
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
@@ -343,7 +343,6 @@ kind: group-index
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Searchable database of available US government grants
 - **`government-science-portal`** (medium) — Gateway or portal to scientific government information, including research and development results
-- **`graball-search-engine`** (medium) — Surface web search engine covering worldwide results
 - **`grayhatwarfare`** (medium) — OSINT tool: GrayhatWarfare.
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
@@ -495,7 +494,7 @@ kind: group-index
 - **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
 - **`monstercrawler-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`moody-s`** (medium) — Website related to credit ratings
+- **`moody-s`** (low) — Use when you have an `employer-org` (a company or bond issuer) and want its credit standing — returns issuer profiles, credit ratings, and r
 - **`mouthshut-north-america`** (medium) — Website related to product reviews
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
@@ -630,7 +629,7 @@ kind: group-index
 - **`qwant`** (low) — OSINT tool: Qwant.
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
-- **`rambler-search-engine-russia`** (medium) — Russian web search engine covering worldwide results
+- **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe
 - **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
 - **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
 - **`ratemyemployer-canada`** (medium) — Website related to employwer ratings

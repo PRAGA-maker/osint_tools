@@ -207,7 +207,7 @@ kind: group-index
 - **`gapowork-com`** (high) — Use when a Vietnamese subject's `employer-org` uses GapoWork and you're identifying the platform — a closed enterprise workspace, so it yiel
 - **`geochirp`** (low) — Use when you have a `geolocation` or keyword and want to find tweets/Twitter users near a place on a map — returns `social-profile` and `geo
 - **`geocreepy`** (high) — Use when you want to aggregate a target's geotagged social-media posts onto a map to infer locations/pattern-of-life — returns `geolocation`
-- **`get-user-info`** (medium) — OSINT tool: Get User info.
+- **`get-user-info`** (medium) — Use when you have a VKontakte `username`/screen-name or numeric ID and want profile fields — returns the VK `social-profile` (name, city, ph
 - **`getdaytrends`** (low) — Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an even
 - **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
 - **`gettwitterid`** (medium) — OSINT tool: GetTwitterID.
