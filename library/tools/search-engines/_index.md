@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`academic-publication-search/`** — 17 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
-- **`ftp-search/`** — 3 skill(s) below.
+- **`ftp-search/`** — 2 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 13 skill(s) below.
@@ -507,7 +507,6 @@ kind: group-index
 - **`mywoodle-com`** (medium) — OSINT tool: Mywoodle.com.
 - **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
 - **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
-- **`napalm`** (medium) — File search engine
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
 - **`nate-search-engine-south-korea`** (medium) — South Korean web search engine covering regional results
 - **`national-criminal-justice-service`** (medium) — National Criminal Justice Reference Service site providing research, publications and statistics

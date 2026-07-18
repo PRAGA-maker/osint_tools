@@ -99,7 +99,6 @@ kind: group-index
 - **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
 - **`icarus-flights`** (medium) — OSINT tool: Icarus.flights.
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
-- **`illicit-services-vehicle-search`** (medium) — Free search engine over leaked datasets; can pivot plates, names and phones to personal records.
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
 - **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
 - **`international-aircraft-search-by-manufacturer`** (medium) — Aviation-related website that offers a search of a US database of registered aviation owners

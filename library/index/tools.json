@@ -117048,47 +117048,54 @@
   },
   {
     "id": "acled-data-crisis-map",
-    "name": "Acled data crisis map",
-    "description": "OSINT tool: Acled data crisis map.",
+    "name": "ACLED Data Crisis Map",
+    "description": "Use when you have a `geolocation` and want dated political-violence, protest, and conflict events there — returns geolocated events with dates and actors.",
     "url": "https://acleddata.com/dashboard/#/dashboard",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing an interactive map/dashboard of political violence, riots, and protests by country, date, and event type.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The public dashboard and curated data are free to browse; bulk data export/API and some datasets require free registration or an academic/nonprofit license.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a published conflict-events dashboard; nothing about your query is exposed to any subject. It reports events, not individuals, so there is no target to alert.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ACLED (Armed Conflict Location & Event Data Project) is a widely-cited, methodologically documented nonprofit dataset used by researchers, journalists, and governments.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "acled-armed-conflict-location-and-event-data-project",
       "us-crisis-monitor"
     ],
+    "aliases": [
+      "ACLED Dashboard",
+      "ACLED crisis map"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "conflict",
+      "crisis-mapping"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/acled-data-crisis-map.md"
   },
   {
@@ -161220,35 +161227,53 @@
   {
     "id": "modis-wildfire",
     "name": "MODIS Wildfire",
-    "description": "OSINT tool: MODIS Wildfire.",
+    "description": "Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points with detection times.",
     "url": "https://www.arcgis.com/apps/dashboards/bf5df3a49a624521844a2e5e1ec7df05",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether NASA's MODIS satellite detected active fires/thermal anomalies at a location and time.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free ArcGIS dashboard over NASA MODIS/FIRMS fire-detection data; no account to view. Bulk FIRMS data is also free but may need a NASA Earthdata login.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you view a public satellite-fire dashboard; nothing about your query is exposed. It maps thermal anomalies, not people, so there is no subject to alert.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Underlying data is NASA MODIS/FIRMS active-fire detections (authoritative satellite science); the ArcGIS dashboard is a third-party presentation layer over that data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "nasa-firms",
+      "earth-engine-dataset"
+    ],
+    "aliases": [
+      "MODIS fire map",
+      "MODIS thermal anomalies"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "wildfire",
+      "satellite"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/modis-wildfire.md"
   },
   {
@@ -166926,48 +166951,62 @@
   {
     "id": "intelligence-x-telegram-search",
     "name": "Intelligence X Telegram Search",
-    "description": "Google-based search engine for Telegram (includes Telegago)",
+    "description": "Use when you have a keyword or `username` and want to search public Telegram content — returns channels/posts via Google CSEs and Telegago.",
     "url": "https://intelx.io/tools?tab=telegram",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-page launcher for multiple Google-based public Telegram searches (two CSEs plus Telegago).",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The Telegram search launchers on the tools page are free to use; Intelligence X's own paid breach-search product is separate and not required here.",
+    "opsec": "passive",
+    "opsecNote": "Passive — the launchers run Google searches over public t.me pages; you don't touch Telegram or join channels, and no channel owner is alerted. IntelX notes it isn't responsible for third-party results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Intelligence X is a reputable OSINT vendor, but these Telegram launchers are thin wrappers over third-party Google CSEs and Telegago, so coverage/quality is inherited from those and can drift.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "telegram"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "telegago",
+      "telegram-search",
       "facebook-graph-searcher-intelligencex",
       "intelligence-x",
       "intelligence-x-2",
       "intelligence-x-person-tools",
       "intelligencex",
       "intelligencex-linkedin-search",
-      "intelx-io",
-      "tools"
+      "intelx-io"
     ],
+    "aliases": [
+      "IntelX Telegram tools",
+      "intelx.io telegram"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "telegram",
+      "custom-search-engine"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/intelligence-x-telegram-search.md"
   },
   {
@@ -239087,37 +239126,60 @@
   {
     "id": "guidestar",
     "name": "GuideStar",
-    "description": "OSINT tool: GuideStar.",
-    "url": "http://www.guidestar.org",
+    "description": "Use when you have an `employer-org` (nonprofit) or a `name` and want US nonprofit filings and leadership — returns officers, addresses, Forms 990, and financials.",
+    "url": "https://www.guidestar.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Profiling a US nonprofit and the people who run it (CEO, board chair, key staff) via IRS Form 990 data.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free registered account gives up to 3 years of Forms 990, current-year revenue/expense data, and CEO/board-chair info; deeper history and analytics are paid (Candid Pro).",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read published nonprofit filings; no organization or person is notified. A free account is tied to your email, so register with a research identity rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Candid (the GuideStar + Foundation Center merger); data comes from the IRS Business Master File and Forms 990 plus nonprofit self-reporting, making it authoritative for US nonprofit records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates",
+      "corporationwiki"
+    ],
+    "aliases": [
+      "GuideStar by Candid",
+      "guidestar.org",
+      "Candid"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "nonprofit",
+      "form-990"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/guidestar.md"
   },
   {
@@ -261918,47 +261980,55 @@
   {
     "id": "selective-service-online-registration",
     "name": "Selective Service Online Registration",
-    "description": "Selective Service Systems Online Registration Search - search requires last name, social security number and date of birth",
+    "description": "Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.",
     "url": "https://www.sss.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a US male is registered with the Selective Service and retrieving the registration number.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government service; no payment or account. The verification form is public but requires the subject's identifying data.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you submit identifiers to a government verification form; it returns a yes/no plus registration number and does not notify the individual. Only run it on a subject you are authorized to check, since it requires their SSN.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US Selective Service System; the registration-status result is authoritative for US draft-registration records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "national-archives-and-records"
+    ],
+    "aliases": [
+      "SSS registration check",
+      "sss.gov verification"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "government-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/selective-service-online-registration.md"
   },
   {
@@ -293970,91 +294040,6 @@
     "_file": "library/tools/search-engines/najdsi-slovenia.md"
   },
   {
-    "id": "napalm",
-    "name": "Napalm",
-    "description": "File search engine",
-    "url": "http://www.searchftps.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "napalm-ftp"
-    ],
-    "_file": "library/tools/search-engines/napalm.md"
-  },
-  {
-    "id": "napalm-ftp",
-    "name": "Napalm FTP",
-    "description": "Large-scale FTP file discovery across hundreds of indexed public servers",
-    "url": "https://www.searchftps.net/",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "ftp-search"
-    ],
-    "bestFor": "Large-scale FTP file discovery across hundreds of indexed public servers",
-    "input": "Filename, file type, or keyword",
-    "output": "Matching files with FTP server address, path, file size, and date",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Searches Napalm FTP's index; no direct connection to target FTP servers during search.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "napalm"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/ftp-search/napalm-ftp.md"
-  },
-  {
     "id": "nasa-kids-club",
     "name": "NASA Kids Club",
     "description": "Space-themed entertainment and information about NASA for kids",
@@ -312646,46 +312631,6 @@
       "fanpage-karma"
     ],
     "_file": "library/tools/social-networks/app-fanpagekarma-com.md"
-  },
-  {
-    "id": "archive-4plebs-org",
-    "name": "archive.4plebs.org",
-    "description": "4plebs is an unofficial archive of certain boards of 4chan.org, including 11 boards. It offers a large number of searchable discussions with many different parameters.",
-    "url": "https://archive.4plebs.org",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "4chan"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "4plebs"
-    ],
-    "_file": "library/tools/social-networks/archive-4plebs-org.md"
   },
   {
     "id": "arctic-shift-2",
@@ -363782,58 +363727,6 @@
     "_file": "library/tools/transportation/illegal-unreported-unregular-fishing-vessels-list.md"
   },
   {
-    "id": "illicit-services-vehicle-search",
-    "name": "Illicit Services Vehicle Search",
-    "description": "Free search engine over leaked datasets; can pivot plates, names and phones to personal records.",
-    "url": "https://search.illicit.services/",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "Free leaked-data search engine that can resolve plates/names to records.",
-    "selectorsIn": [
-      "vehicle-plate",
-      "name",
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "phone",
-      "vehicle-plate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "Illicit Services"
-    ],
-    "tags": [
-      "plate",
-      "leaked-data",
-      "records",
-      "people-search"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/illicit-services-vehicle-search.md"
-  },
-  {
     "id": "imo-registry",
     "name": "IMO Registry",
     "description": "Ship/shipping-related information from the IMO",
@@ -371686,13 +371579,13 @@
   {
     "id": "namechecker-org",
     "name": "NameChecker.org",
-    "description": "Free username availability checker.",
+    "description": "Use when you have a `username` and want to see which of 190+ social networks it is taken on — returns per-platform taken/available status and profile links.",
     "url": "https://www.namechecker.org/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Free username availability checker across social and domain platforms.",
+    "bestFor": "Fanning a single handle across 190+ social/brand platforms to spot where an account already exists.",
     "selectorsIn": [
       "username"
     ],
@@ -371700,15 +371593,16 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account; funded as a brand/naming utility so there's no paywall on the availability check.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive toward the subject — the checker queries each platform for handle existence; it does not log into or notify any account. It is built for brand-name checks, so results indicate \"taken\" not \"belongs to your subject\" — verify each hit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A naming/branding availability tool, not an OSINT-purpose scraper; \"taken\" checks can false-positive (reserved/parked handles) and false-negative (rate-limited platforms), so treat results as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -371717,16 +371611,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "namechk",
+      "sherlock"
+    ],
     "aliases": [
-      "NameChecker"
+      "NameChecker",
+      "namechecker.org"
     ],
     "tags": [
       "username",
       "account-enumeration"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/username/namechecker-org.md"
   },
   {

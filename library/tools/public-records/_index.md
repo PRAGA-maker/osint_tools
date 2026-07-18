@@ -436,7 +436,7 @@ kind: group-index
 - **`gtcs-org-uk`** (high) — Use when you have a `name` claimed to be a Scottish teacher and want to verify registration — returns registration status, number and qualif
 - **`guernseyregistry-com`** (high) — Use when you have a company `name`, a director `name`, or a Guernsey business connection and want official company/director records — return
 - **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
-- **`guidestar`** (medium) — OSINT tool: GuideStar.
+- **`guidestar`** (medium) — Use when you have an `employer-org` (nonprofit) or a `name` and want US nonprofit filings and leadership — returns officers, addresses, Form
 - **`gun-dealer-inspections-the-trace`** (medium) — OSINT tool: Gun Dealer Inspections \| The Trace.
 - **`gutneberg-project`** (medium) — Database of over 59,000 free eBooks, including Kindle eBooks
 - **`guttr`** (low) — OSINT tool: GUTTR.
@@ -878,7 +878,7 @@ kind: group-index
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
 - **`security-licence-status-verification`** (medium) — OSINT tool: Security Licence Status Verification.
 - **`seethroughny-pensions`** (medium) — OSINT tool: SeeThroughNY :: Pensions.
-- **`selective-service-online-registration`** (medium) — Selective Service Systems Online Registration Search - search requires last name, social security number and date of birth
+- **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
 - **`semantic-scholar`** (medium) — Searchable database of peer-reviewed research and liteature
 - **`serpstat`** (medium) — OSINT tool: Serpstat.

@@ -35,7 +35,6 @@ kind: group-index
 - **`anonymous-ad-preview-tool`** (low) — OSINT tool: Anonymous Ad Preview Tool.
 - **`anylizer-com`** (medium) — Use when you have a YouTube/Vimeo video URL and want to inspect it frame-by-frame in slow motion — returns a precise per-frame view for read
 - **`app-fanpagekarma-com`** (high) — Use when you have a `name` or `username` and want to find and compare public Facebook (and other social) pages/profiles by keyword — returns
-- **`archive-4plebs-org`** (medium) — 4plebs is an unofficial archive of certain boards of 4chan.org, including 11 boards. It offers a large number of searchable discussions with
 - **`arctic-shift-2`** (high) — Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — retur
 - **`arrse-co-uk-2`** (high) — Use when you have a `username` or `name` and want to find a subject's profile on the UK's main British-Army community forum — returns their 
 - **`audiense`** (high) — Use when you have a Twitter/X `username` or audience and want deep audience-segmentation intelligence — returns audience segments, influence

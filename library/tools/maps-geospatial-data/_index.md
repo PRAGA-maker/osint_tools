@@ -96,7 +96,7 @@ kind: group-index
 - **`mapy-cz`** (low) — Mapping service for Czechia
 - **`merlin`** (low) — Identify birds (visually), through an app.
 - **`military-bases-around-the-world-umap`** (medium) — OSINT tool: Military bases around the world. - uMap.
-- **`modis-wildfire`** (medium) — OSINT tool: MODIS Wildfire.
+- **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
 - **`movebank`** (low) — Platform for animal tracking data.
 - **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
 - **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,

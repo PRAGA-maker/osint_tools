@@ -15,7 +15,7 @@ kind: group-index
 ## Skills here
 - **`24timezones-com`** (medium) — OSINT tool: 24timezones.com.
 - **`511on-ca`** (low) — OSINT tool: 511on.ca.
-- **`acled-data-crisis-map`** (medium) — OSINT tool: Acled data crisis map.
+- **`acled-data-crisis-map`** (medium) — Use when you have a `geolocation` and want dated political-violence, protest, and conflict events there — returns geolocated events with dat
 - **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
 - **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
 - **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
