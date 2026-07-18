@@ -325,7 +325,7 @@ kind: group-index
 - **`wheelmap-org`** (medium) — Use when you have a `geolocation` and want a crowdsourced map of wheelchair-accessible public places nearby — returns place types, addresses
 - **`whereis-com-maps-of-australia`** (medium) — Use when you have an Australian `address` or place and want to map, verify, and geolocate it (coordinates, directions, nearby context) — ret
 - **`whereisthisplace`** (high) — Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.
-- **`whodidit`** (medium) — Click on an area on the OpenStreetMap to get a list of nicknames of users who have made changes on it (with dates).
+- **`whodidit`** (medium) — Use when you have a `geolocation` and want the OpenStreetMap editors who changed that area — returns editor usernames and edit dates.
 - **`whoishere-py`** (medium) — WiFi client detection tool that identifies people by naming devices seen issuing wireless probe requests.
 - **`wifispc-com`** (low) — OSINT tool: Wifispc.com.
 - **`wikiloc-gps-location-sharing`** (high) — Use when you have a `username`/`name` or an area `geolocation` and want user-posted GPS trails (with start points, dates and photos) — retur

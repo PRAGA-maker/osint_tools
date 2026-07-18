@@ -366,7 +366,7 @@ kind: group-index
 - **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
-- **`i-intelligence-osint-handbook-2025`** (medium) — The widely-used i-intelligence OSINT Handbook of tools and resources.
+- **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
 - **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
 - **`ialeia`** (medium) — International Association of Law Enforcement Intelligence Analysts
 - **`ibj-criminal-defense-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l

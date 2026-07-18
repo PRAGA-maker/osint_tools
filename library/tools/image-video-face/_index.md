@@ -72,7 +72,6 @@ kind: group-index
 - **`codeofaninja-com-2`** (high) — Use when you have a YouTube channel URL or handle for a person of interest and need its stable channel ID — returns the UC… channel ID.
 - **`codeofaninja-com-3`** (high) — Use when you have a YouTube video URL and want its full-resolution thumbnail to run through reverse-image or face search — returns the HD th
 - **`compress-or-die-com-analyze`** (medium) — get detail information about images (exif, metatags, ICC_Profile, quantanisation tables)
-- **`copernicus-open-access-hub`** (medium) — ESA's open access portal to Sentinel data
 - **`copyseeker-net`** (high) — Use when you have a photo of a missing person or a place and want to find where else that image (or visually similar ones) appears online — 
 - **`crunchyroll`** (high) — Use when you have a `username` and want to check for a matching anime-streaming profile — returns a `social-profile` (public display name, a
 - **`dacast`** (high) — Use when you encounter a live/embedded video stream and want to identify its host — Dacast is a B2B streaming platform with no public people

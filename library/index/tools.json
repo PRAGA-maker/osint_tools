@@ -23870,24 +23870,32 @@
   {
     "id": "airbnb",
     "name": "Airbnb",
-    "description": "Website related to travel and accomodations",
+    "description": "Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate listing locations.",
     "url": "https://www.airbnb.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating a subject's Airbnb host or guest profile and the reviews, photos, and area of their listings.",
+    "selectorsIn": [
+      "name",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Browsing profiles and listings is free without an account; messaging or booking requires a free Airbnb account.",
+    "opsec": "active",
+    "opsecNote": "Logged-in browsing can leave a footprint — viewing a profile is generally silent, but sending a message or booking request notifies the host. Browse public listing/profile pages in a sock-puppet or logged-out session where possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Profile and review content is user-generated; hosts curate what they show, and listing locations are deliberately approximate until booking, so treat details as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -23896,15 +23904,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vrbo",
+      "couchsurfing"
+    ],
+    "aliases": [
+      "airbnb.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "accommodation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/airbnb.md"
   },
   {
@@ -132282,50 +132296,55 @@
   {
     "id": "whodidit",
     "name": "WhoDidIt",
-    "description": "Click on an area on the OpenStreetMap to get a list of nicknames of users who have made changes on it (with dates).",
+    "description": "Use when you have a `geolocation` and want the OpenStreetMap editors who changed that area — returns editor usernames and edit dates.",
     "url": "https://simon04.dev.openstreetmap.org/whodidit/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding which OSM contributors edited a specific map area and when, to attribute or investigate local mapping activity.",
     "selectorsIn": [
       "geolocation",
       "username"
     ],
     "selectorsOut": [
+      "username",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free community OSM tool; no account needed. Data comes from OSM's public changeset feed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a public changeset index; OSM editing is public by design, so no one is notified. The usernames it returns are self-chosen OSM handles, already public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run OSM changeset analyzer (simon04); it reflects public OSM edit metadata, which is authoritative for who-edited-what but says nothing about the real identity behind a handle.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Other"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "open-street-map",
       "openstreetmap",
-      "openstreetmap-2",
-      "openstreetmap-nominatim",
       "openstreetmap-overpass-turbo-taginfo-database"
     ],
+    "aliases": [
+      "WhoDidIt OSM Changeset Analyzer",
+      "whodidit"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "openstreetmap",
+      "changeset"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/whodidit.md"
   },
   {
@@ -136524,48 +136543,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/compress-or-die-com-analyze.md"
-  },
-  {
-    "id": "copernicus-open-access-hub",
-    "name": "Copernicus Open Access Hub",
-    "description": "ESA's open access portal to Sentinel data",
-    "url": "https://scihub.copernicus.eu/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Satellite/aerial imagery"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "copernicus-browser-formerly-sentinel-hub-playground-eo-browser"
-    ],
-    "_file": "library/tools/image-video-face/copernicus-open-access-hub.md"
   },
   {
     "id": "copyseeker-net",
@@ -158717,35 +158694,52 @@
   {
     "id": "earthquake-watch",
     "name": "Earthquake Watch",
-    "description": "OSINT tool: Earthquake Watch.",
+    "description": "Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.",
     "url": "https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking recent earthquakes near a location — magnitude, depth, and timing — as situational context.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free ArcGIS dashboard over public earthquake feeds (USGS-style seismic data); no account to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you view a public seismic dashboard; nothing about your query is exposed and no subject is involved. It maps natural events, not people.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party ArcGIS dashboard presenting authoritative public seismic feeds; the underlying earthquake data is scientific, the dashboard is a community-built viewer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "modis-wildfire",
+      "nasa-firms"
+    ],
+    "aliases": [
+      "Earthquake dashboard"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "earthquake",
+      "disaster"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/earthquake-watch.md"
   },
   {
@@ -287710,24 +287704,27 @@
   {
     "id": "i-intelligence-osint-handbook-2025",
     "name": "i-intelligence OSINT Handbook (2025)",
-    "description": "The widely-used i-intelligence OSINT Handbook of tools and resources.",
+    "description": "Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for a task.",
     "url": "https://www.osinthandbook.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Comprehensive PDF/web compendium of OSINT tools and methods",
+    "bestFor": "A broad, categorized reference compendium of OSINT tools and techniques to consult when planning an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to download; the maintainer (i-intelligence) typically asks for an email address to send the PDF, so it's free-with-registration.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — it's reference material, not a live query tool; reading it exposes nothing about a subject. Downloading may require giving an email to the publisher, so use a research address.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Long-standing, well-regarded OSINT handbook (i-intelligence).",
+    "trustNote": "A long-standing, well-regarded OSINT reference maintained by i-intelligence and updated periodically; it's a curated directory, so individual linked tools still need their own verification.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -287736,15 +287733,23 @@
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "relatedTools": [
+      "osint-framework",
+      "bellingcat-s-online-investigation-toolkit"
+    ],
+    "aliases": [
+      "OSINT Tools and Resources Handbook",
+      "i-intelligence handbook",
+      "osinthandbook.com"
+    ],
     "tags": [
       "handbook",
       "tool-collection",
       "reference"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/i-intelligence-osint-handbook-2025.md"
   },
   {
@@ -296655,41 +296660,54 @@
   {
     "id": "open-library",
     "name": "Open Library",
-    "description": "Finding and borrowing digitized books, especially out-of-print or historical publications",
+    "description": "Use when you have an author `name`, title, or ISBN and want book records — returns editions, publication metadata, and links to readable/borrowable copies.",
     "url": "https://openlibrary.org/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Finding and borrowing digitized books, especially out-of-print or historical publications",
-    "input": "Title, author, ISBN, or subject",
-    "output": "Book records with metadata, cover images, and links to borrowable or readable editions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a person's published books and pulling bibliographic metadata, including out-of-print and historical titles.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open (an Internet Archive project); searching and metadata need no account, borrowing scanned books needs a free Archive login.",
     "opsec": "passive",
-    "opsecNote": "Public searches require no account; borrowing requires free registration which logs activity.",
+    "opsecNote": "Passive — public catalog search needs no account and notifies no one. Borrowing a scanned book requires an Internet Archive login, which logs your activity to that account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Internet Archive; bibliographic records are community- and library-sourced (some crowd-edited), so metadata is broad and generally reliable but not uniformly authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "semantic-scholar",
+      "google-scholar-case-law"
+    ],
+    "aliases": [
+      "openlibrary.org",
+      "Open Library Internet Archive"
+    ],
+    "tags": [
+      "books",
+      "bibliographic",
+      "internet-archive"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/open-library.md"
   },
   {
@@ -330989,38 +331007,60 @@
   {
     "id": "meta-content-library",
     "name": "Meta Content Library",
-    "description": "Meta Content Library is a controlled-access tool that lets approved academic and non-profit researchers search the full public archive of Facebook, Instagram, and Threads posts, in near-real-time.",
+    "description": "Use when you have a `name`, `username`, or keyword and (as an approved researcher) want to search all public Facebook/Instagram/Threads posts — returns posts, accounts, and engagement.",
     "url": "https://transparency.meta.com/researchtools/meta-content-library",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the full public archive of Facebook, Instagram, and Threads posts in near-real-time — for approved academic/nonprofit researchers.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but access is gated to vetted researchers at qualified academic/nonprofit institutions; there is no paid path around the approval requirement.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward subjects — you query Meta's archive, not accounts, so no one is notified. But access is tied to your vetted, named researcher identity and use is bound to an approved project scope and Meta's terms; it is not anonymous.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A first-party Meta research tool serving Meta's own public-content data; authoritative for what it covers, but access-gated and scope-limited by Meta's research program.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": true,
+    "relatedTools": [
+      "crowdtangle",
+      "facebook-search-tool"
+    ],
+    "aliases": [
+      "Meta Content Library",
+      "MCL",
+      "Meta transparency research tools"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "facebook"
+      "facebook",
+      "instagram",
+      "threads"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/meta-content-library.md"
   },
   {
@@ -338010,48 +338050,6 @@
     "_file": "library/tools/social-networks/renren-com.md"
   },
   {
-    "id": "report-tree",
-    "name": "Report Tree",
-    "description": "OSINT tool: Report Tree.",
-    "url": "http://dcpu.ru/vk_repost_tree.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vk",
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/report-tree.md"
-  },
-  {
     "id": "repos-timeline",
     "name": "Repos Timeline",
     "description": "Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.",
@@ -340227,43 +340225,54 @@
   },
   {
     "id": "snapchat-search-enter-username-here",
-    "name": "SnapChat Search (ENTER-USERNAME-HERE)",
-    "description": "OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).",
+    "name": "SnapChat Snapcode Check",
+    "description": "Use when you have a Snapchat `username` and want to confirm the account exists — returns a Snapcode image when the handle is valid.",
     "url": "https://feelinsonice.appspot.com/web/deeplink/snapcode?username=ENTER-USERNAME-HERE&size=400&type=SVG",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming whether a Snapchat username resolves to a real account by requesting its Snapcode.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Snapcode endpoint (Snapchat's own deeplink service); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you request a public Snapcode image by username; you do not view the account, add it, or notify the owner. No login involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Uses Snapchat's own feelinsonice deeplink/Snapcode endpoint, so a returned code reliably indicates a valid handle — but it confirms existence only, not identity or activity.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "google-maps-update-alerts",
-      "lullar-com-3-appspot-com",
-      "military-grid-reference-system-coordinates",
-      "rss-vk-to-rss",
-      "sentiment140"
+      "namechk",
+      "sherlock"
     ],
+    "aliases": [
+      "Snapchat Snapcode lookup",
+      "feelinsonice snapcode"
+    ],
+    "tags": [
+      "snapchat",
+      "account-existence",
+      "username"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapchat-search-enter-username-here.md"
   },
   {

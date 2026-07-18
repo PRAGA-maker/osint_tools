@@ -372,7 +372,7 @@ kind: group-index
 - **`memory-lol-github-com`** (high) — Use when you have a Twitter/X `username` or numeric account ID and want its historical screen-name changes — returns prior `username`s and a
 - **`memory-lol`** (high) — Use when you have a Twitter/X `username` and want that account's past handles/screen-name history — returns prior usernames and the dates th
 - **`mentionmapp-analytics`** (low) — OSINT tool: Mentionmapp Analytics.
-- **`meta-content-library`** (medium) — Meta Content Library is a controlled-access tool that lets approved academic and non-profit researchers search the full public archive of Fa
+- **`meta-content-library`** (medium) — Use when you have a `name`, `username`, or keyword and (as an approved researcher) want to search all public Facebook/Instagram/Threads post
 - **`mewe`** (high) — Use when you have a `name` or `username` and want to check for a MeWe profile (a privacy-focused social network that draws communities pushe
 - **`minesight`** (medium) — Minecraft #osint tool. By nickname, it checks the presence of users on different servers and collects information about them (date of regist
 - **`mixi-japan`** (high) — Use when you have a Japanese `name`/`username` and want a Mixi social-networking profile — returns profile, community memberships and diary/
@@ -501,7 +501,6 @@ kind: group-index
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
 - **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
-- **`report-tree`** (medium) — OSINT tool: Report Tree.
 - **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
 - **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna
 - **`resavr`** (medium) — OSINT tool: ReSavr.
@@ -545,7 +544,7 @@ kind: group-index
 - **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
-- **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).
+- **`snapchat-search-enter-username-here`** (medium) — Use when you have a Snapchat `username` and want to confirm the account exists — returns a Snapcode image when the handle is valid.
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
 - **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc

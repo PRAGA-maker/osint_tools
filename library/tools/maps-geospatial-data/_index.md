@@ -36,7 +36,7 @@ kind: group-index
 - **`disputed-territories`** (medium) — OSINT tool: Disputed Territories.
 - **`douwe-com`** (medium) — OSINT tool: douwe.com.
 - **`earth`** (medium) — OSINT tool: Earth.
-- **`earthquake-watch`** (medium) — OSINT tool: Earthquake Watch.
+- **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
 - **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
 - **`emily-bz`** (medium) — OSINT tool: emily.bz.
 - **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally

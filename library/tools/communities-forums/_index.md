@@ -22,7 +22,7 @@ kind: group-index
 - **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`actualidad-world-newspapers-online`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
-- **`airbnb`** (medium) — Website related to travel and accomodations
+- **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
 - **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`alt-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
