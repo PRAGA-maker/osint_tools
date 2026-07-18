@@ -717,7 +717,7 @@ kind: group-index
 - **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
-- **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
+- **`open-data-policing`** (medium) — Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-f
 - **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
 - **`open-knowledge-maps`** (medium) — Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an auth
 - **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
@@ -745,7 +745,7 @@ kind: group-index
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
 - **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a
-- **`padmapper`** (medium) — OSINT tool: Padmapper.
+- **`padmapper`** (low) — Use when you have an `address` or area and want the rental market around it — returns mapped rental listings (price, unit details, location)
 - **`panjiva-com`** (low) — Use when you have a company `name`/`employer-org` in trade and want its import/export shipments — returns bill-of-lading records naming supp
 - **`paperpanda`** (medium) — In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registra
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
@@ -939,7 +939,7 @@ kind: group-index
 - **`texas-public-records-search`** (high) — Use when you have a `name` and a Texas nexus and want an organised directory into official Texas state/county record databases — returns lin
 - **`tfl-gov-uk-2`** (medium) — Use when you have a London taxi/private-hire licence or badge number, a vehicle plate, or an operator name and want to confirm it is validly
 - **`tfl-gov-uk`** (high) — Use when you have a London taxi/private-hire driver badge or a vehicle plate and want to confirm the licence is valid — returns licence stat
-- **`tgcg-members-page`** (medium) — OSINT tool: TGCG Members Page.
+- **`tgcg-members-page`** (low) — Use when you have a business name or region and want contact details for a listed member org — returns business `name`, `address`, and `phon
 - **`the-ancestor-hunt`** (high) — Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records —
 - **`the-atlas-of-economic-complexity`** (low) — OSINT tool: The Atlas of Economic Complexity.
 - **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re

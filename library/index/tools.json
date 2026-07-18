@@ -33010,29 +33010,34 @@
   {
     "id": "netsplit-de",
     "name": "netsplit.de",
-    "description": "Passive IRC channel discovery and network trend checks",
+    "description": "Use when you have a topic, keyword, or channel name and want to find the IRC communities that discuss it — returns channel names, networks, topics, and user counts.",
     "url": "https://netsplit.de/channels/search.php",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "irc-search"
     ],
-    "bestFor": "Passive IRC channel discovery and network trend checks",
-    "input": "Channel names, keywords, and network filters",
-    "output": "Channel listings with network and user-count context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Passively discovering active IRC channels and networks by keyword, plus network size/health stats.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public IRC search/statistics site; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Uses aggregated indexed IRC data and does not require direct IRC server interaction for searches.",
+    "opsecNote": "Passive — you search netsplit.de's own crawled index, not the live IRC networks, so your query never touches a server the subject is on and generates no join/whois against them. Actually joining a discovered channel to observe users would be an active step done elsewhere.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent IRC statistics service that crawls ~500 networks for public channel lists and user counts; data is as current as its last crawl, not real-time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -33040,11 +33045,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "netsplit.de IRC search",
+      "irc.netsplit.de"
+    ],
+    "tags": [
+      "irc",
+      "communities",
+      "channel-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/irc-search/netsplit-de.md"
   },
   {
@@ -35343,7 +35355,19 @@
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "here",
+      "reddit",
+      "reddit-askmeanything",
+      "reddit-com",
+      "reddit-com-2",
+      "reddit-darknet",
+      "reddit-deep-web",
+      "reddit-guide-to-opting-out-of-background-check-websites",
+      "reddit-old-reddit-search",
+      "reddit-onions",
+      "reddit-r-translator"
+    ],
     "aliases": [
       "r/opendirectories",
       "opendirectories subreddit"
@@ -48101,45 +48125,56 @@
   {
     "id": "kijiji-canada",
     "name": "Kijiji (Canada)",
-    "description": "OSINT tool: Kijiji (Canada).",
+    "description": "Use when you have a `name`, handle, or location and want a subject's classified ads — returns listings with seller display name, photos, area, and sometimes a phone.",
     "url": "https://www.kijiji.ca",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's for-sale / rental / services classified ads across Canada to surface photos, location, and contact leads.",
     "selectorsIn": [
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search listings; posting or messaging a seller needs a free account.",
+    "opsec": "passive",
+    "opsecNote": "Passive while browsing/searching public ads — the seller is not notified. Messaging or replying to a seller is active and reveals your account; use a sock-puppet profile if you must make contact, and never post from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Canada's dominant classifieds marketplace (eBay-lineage, now Adevinta); listings are user-generated and unverified, so seller-provided details are leads rather than confirmed facts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "classifieds"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "kijiji-canada-classifieds",
       "kijiji-classified-ads-canada"
     ],
+    "aliases": [
+      "kijiji.ca",
+      "Kijiji Canada"
+    ],
+    "tags": [
+      "classifieds",
+      "marketplace",
+      "canada"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/kijiji-canada.md"
   },
   {
@@ -55309,47 +55344,55 @@
   {
     "id": "forensic-analyzer",
     "name": "Forensic Analyzer",
-    "description": "OSINT tool: Forensic Analyzer.",
+    "description": "Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`, hashes, and an error-level-analysis map.",
     "url": "https://www.imageforensic.org",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Free browser-based error-level analysis plus full EXIF/GPS/metadata extraction on a single uploaded image.",
     "selectorsIn": [
-      "metadata-exif",
-      "image"
+      "image",
+      "metadata-exif"
     ],
     "selectorsOut": [
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; results are stored for 7 days then expire (resubmit to regenerate). No account required.",
+    "opsec": "active",
+    "opsecNote": "Active in the sense that you upload the target image to a third-party server that retains it for 7 days. Never upload sensitive/case-original media you cannot risk exposing; strip nothing beforehand if you need the metadata, but assume the file leaves your control. Use a copy, not the master.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent hobby/research image-forensics service implementing the well-documented Krawetz ELA method plus the open-source exifr parser; results are reproducible but the operator is not a named institution.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "metadata",
-      "exif"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "image-forensic-ghiro-online"
     ],
+    "aliases": [
+      "imageforensic.org",
+      "Digital Image Forensic Analyzer"
+    ],
+    "tags": [
+      "metadata",
+      "exif",
+      "image-forensics",
+      "error-level-analysis"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/forensic-analyzer.md"
   },
   {
@@ -118807,47 +118850,6 @@
     "_file": "library/tools/geolocation/earthexplorer.md"
   },
   {
-    "id": "emmeline-carto-com",
-    "name": "emmeline.carto.com",
-    "description": "OSINT tool: emmeline.carto.com.",
-    "url": "https://emmeline.carto.com/me",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/emmeline-carto-com.md"
-  },
-  {
     "id": "environmental-investigation-agency",
     "name": "Environmental Investigation Agency",
     "description": "Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.",
@@ -127402,7 +127404,8 @@
     "registration": false,
     "invitationOnly": false,
     "relatedTools": [
-      "cloakquest3r"
+      "cloakquest3r",
+      "https-github-com-spyboy-productions-valid8proxy"
     ],
     "aliases": [
       "spyboy-productions/r4ven"
@@ -130271,42 +130274,50 @@
   {
     "id": "ventusky-com",
     "name": "Ventusky.com",
-    "description": "collection of weather map (wind, rain, temperature, air pressure, humidity, waves etc)",
+    "description": "Use when you have a `geolocation` and a date/time and want to know the weather then — returns historical and forecast wind, rain, temperature, cloud, and pressure maps for verification.",
     "url": "https://www.ventusky.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking what the weather was (or will be) at a specific place and time to corroborate or debunk a photo, video, or account.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive maps and historical/forecast layers; a paid tier adds higher-resolution models and extended archive, but the free layers cover most verification needs.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query weather data by coordinates, never anything tied to a person. No subject interaction and nothing to leak; ordinary browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built on established public numerical weather models (GFS, ECMWF, ICON, etc.); the underlying meteorological data is authoritative and checkable against other providers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ventusky",
+      "ventusky.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "weather",
+      "chronolocation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ventusky-com.md"
   },
   {
@@ -252325,35 +252336,51 @@
   {
     "id": "open-data-policing",
     "name": "Open Data Policing",
-    "description": "OSINT tool: Open Data Policing.",
+    "description": "Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-force records (no names).",
     "url": "https://opendatapolicing.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Analyzing traffic-stop, search, and use-of-force patterns by agency, officer ID, or jurisdiction in NC, MD, and IL.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database funded by civil-rights and academic partners; no account or payment needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read a static public dataset hosted by the project, not any government login. Nothing is sent to the subject or their agency, so no sock puppet is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Forward Justice, the ACLU, and academic researchers from official state stop-collection datasets; the underlying records are government-sourced and auditable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Open Data Policing NC",
+      "opendatapolicingnc.com"
+    ],
+    "tags": [
+      "public-records",
+      "police",
+      "traffic-stops"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/open-data-policing.md"
   },
   {
@@ -253912,44 +253939,53 @@
   },
   {
     "id": "padmapper",
-    "name": "Padmapper",
-    "description": "OSINT tool: Padmapper.",
-    "url": "https://www.padmapper.com people looker (us)",
+    "name": "PadMapper",
+    "description": "Use when you have an `address` or area and want the rental market around it — returns mapped rental listings (price, unit details, location), not personal records.",
+    "url": "https://www.padmapper.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping rental/apartment listings across the US and Canada by location to build property/area context.",
     "selectorsIn": [
-      "name",
-      "address"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
-      "address",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view rental listings; powered by Zumper. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse an aggregated public listings map; no query is tied to a subject and nothing is sent to anyone. Creating an account or contacting a listing would be an active step done separately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A rental-listing aggregator powered by Zumper; listings come from many third-party feeds, so accuracy and freshness vary by market and it is not an authoritative property register.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "padmapper.com",
+      "Zumper"
+    ],
     "tags": [
-      "property"
+      "property",
+      "rentals",
+      "real-estate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/padmapper.md"
   },
   {
@@ -263968,35 +264004,52 @@
   {
     "id": "tgcg-members-page",
     "name": "TGCG Members Page",
-    "description": "OSINT tool: TGCG Members Page.",
+    "description": "Use when you have a business name or region and want contact details for a listed member org — returns business `name`, `address`, and `phone` from a garden-center trade directory.",
     "url": "https://c2ffn114.caspio.com/dp/e6a74000833e44e23c324a10987c",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up an independent garden-center / nursery member business by state to get its address and phone.",
+    "selectorsIn": [
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Caspio-hosted directory; no login or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading a published member directory. No subject is notified; the only footprint is your own visit to a third-party Caspio datapage. Standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A member-maintained trade-group directory embedded via Caspio; contact data is self-reported by member businesses and not independently verified.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "TGCG member directory"
+    ],
+    "tags": [
+      "directory",
+      "business",
+      "trade-group"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tgcg-members-page.md"
   },
   {
@@ -276386,47 +276439,52 @@
   {
     "id": "clicklaw",
     "name": "Clicklaw",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on law",
-    "url": "http://wiki.clicklaw.bc.ca",
+    "description": "Use when you need plain-language British Columbia / Canadian legal context and want to understand a process or your rights — returns curated legal explainers, not personal records.",
+    "url": "https://wiki.clicklaw.bc.ca",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding a BC or Canadian legal process (family, employment, criminal, seniors, Indigenous law) in plain language before pursuing records.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, publicly funded legal-information wiki; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading static public wiki pages. No query touches any subject and there is nothing to leak; standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Operated by Courthouse Libraries BC with the Law Foundation of BC, Law Society of BC, and the BC Ministry of Attorney General; authored by 50+ legal professionals and non-profits.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cso",
       "search-for-open-information-documents",
       "search-the-open-information-catalogue",
       "security-licence-status-verification"
     ],
+    "aliases": [
+      "Clicklaw Wikibooks",
+      "wiki.clicklaw.bc.ca"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "legal-information",
+      "canada"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/clicklaw.md"
   },
   {
@@ -277594,25 +277652,26 @@
   {
     "id": "cyber-criminals-most-wanted",
     "name": "Cyber Criminals Most Wanted",
-    "description": "Cyber crime awareness, prevention and internet safety information portal",
-    "url": "http://www.ccmostwanted.com/",
+    "description": "Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource pointers — returns educational content, not a searchable database.",
+    "url": "https://www.ccmostwanted.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Background reading on cybercrime, cyberstalking, and internet-safety topics with links onward to law-enforcement and reporting channels.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public awareness portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading static informational pages. No subject query is involved and nothing is leaked; ordinary clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-running (10+ years) volunteer awareness site; explicitly states it is not law enforcement, not legal counsel, and cannot make arrests — treat its content as orientation, not authority.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -277620,15 +277679,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ccmostwanted.com",
+      "CCMW"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "cybercrime",
+      "awareness"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cyber-criminals-most-wanted.md"
   },
   {
@@ -298662,48 +298726,6 @@
     "_file": "library/tools/search-engines/realtor-com-united-states.md"
   },
   {
-    "id": "recon",
-    "name": "Recon",
-    "description": "OSINT tool: Recon.",
-    "url": "http://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion.pet/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepsearch",
-      "facebook-scraped-data-search",
-      "kilos-darknet-search-engine",
-      "raklet",
-      "ransomware-group-sites",
-      "related-list"
-    ],
-    "_file": "library/tools/search-engines/recon.md"
-  },
-  {
     "id": "reconspider",
     "name": "reconspider",
     "description": "Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — returns aggregated results (geolocation, profiles, related identifiers).",
@@ -301951,26 +301973,32 @@
   },
   {
     "id": "shopperapproved",
-    "name": "Shopperapproved",
-    "description": "Website related to consumer product reviews",
-    "url": "http://www.shopperapproved.com",
+    "name": "Shopper Approved",
+    "description": "Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments and review text, occasionally pivotable.",
+    "url": "https://www.shopperapproved.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Reading a specific online store's public review wall to surface reviewer names/locations and buyer sentiment.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read published review pages; the paid product is the merchant-side collection service (free 15-day trial), not review browsing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read published review pages; no query is tied to a person and nothing is sent to a subject. Reviewer data shown is limited (first name + coarse location), so treat fragments as leads, not confirmed identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A commercial review-collection platform (100M+ reviews across 10k+ stores); reviews are merchant-solicited, so selection is skewed positive and reviewer identity is only partial.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -301978,15 +302006,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "shopperapproved.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "reviews",
+      "e-commerce"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/shopperapproved.md"
   },
   {
@@ -332064,7 +332096,13 @@
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "followgraph-for-mastodon",
+      "gitvio",
+      "section-16-deadline-calculator",
+      "xplore-x-vercel-app",
+      "youtube-lookup"
+    ],
     "aliases": [
       "SteamReveal",
       "steam-reveal.vercel.app",
@@ -336607,40 +336645,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/social-networks/repostsleuth.md"
-  },
-  {
-    "id": "resavr",
-    "name": "ReSavr",
-    "description": "OSINT tool: ReSavr.",
-    "url": "https://www.resavr.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/resavr.md"
   },
   {
     "id": "return-youtube-comment-username",
@@ -352100,43 +352104,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/youtube-comment-search-chrome-extension.md"
-  },
-  {
-    "id": "youtube-comment-sorting",
-    "name": "YouTube comment Sorting",
-    "description": "OSINT tool: YouTube comment Sorting.",
-    "url": "https://youtube-comments.io/get-comments",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/youtube-comment-sorting.md"
   },
   {
     "id": "youtube-comments-downloader",

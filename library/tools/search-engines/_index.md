@@ -156,7 +156,7 @@ kind: group-index
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
 - **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
 - **`clearing-and-depository-services`** (medium) — Non-government site maintained by the Canadian Depository for Securities Limited
-- **`clicklaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`clicklaw`** (low) — Use when you need plain-language British Columbia / Canadian legal context and want to understand a process or your rights — returns curated
 - **`cloud-bucket-search-engine`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want exposed cloud storage — returns public S3/Azure/GCS bucket listings and file
 - **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)
 - **`cloudflare-radar`** (medium) — OSINT tool: Cloudflare Radar.
@@ -182,7 +182,7 @@ kind: group-index
 - **`cse-utopia`** (medium) — Custom search engine
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
 - **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
-- **`cyber-criminals-most-wanted`** (medium) — Cyber crime awareness, prevention and internet safety information portal
+- **`cyber-criminals-most-wanted`** (low) — Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource p
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
 - **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
@@ -631,7 +631,6 @@ kind: group-index
 - **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
 - **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
-- **`recon`** (medium) — OSINT tool: Recon.
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
 - **`recruit-net`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`reeder`** (low) — OSINT tool: Reeder.
@@ -703,7 +702,7 @@ kind: group-index
 - **`sharedigger`** (low) — search files in popular file hosting services
 - **`sharkscope`** (medium) — Use when you have a poker `username` and want to confirm and profile the player behind it — returns tournament history, results and country,
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
-- **`shopperapproved`** (medium) — Website related to consumer product reviews
+- **`shopperapproved`** (low) — Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments a
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.

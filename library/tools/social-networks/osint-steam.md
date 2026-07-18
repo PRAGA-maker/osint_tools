@@ -32,7 +32,12 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- followgraph-for-mastodon
+- gitvio
+- section-16-deadline-calculator
+- xplore-x-vercel-app
+- youtube-lookup
 aliases:
 - SteamReveal
 - steam-reveal.vercel.app

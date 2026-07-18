@@ -28,7 +28,18 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- here
+- reddit
+- reddit-askmeanything
+- reddit-com
+- reddit-com-2
+- reddit-darknet
+- reddit-deep-web
+- reddit-guide-to-opting-out-of-background-check-websites
+- reddit-old-reddit-search
+- reddit-onions
+- reddit-r-translator
 aliases:
 - r/opendirectories
 - opendirectories subreddit

@@ -114,7 +114,7 @@ kind: group-index
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
 - **`folkd`** (low) — Social bookmarking and social search site
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
-- **`forensic-analyzer`** (medium) — OSINT tool: Forensic Analyzer.
+- **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
 - **`foursquare-time-machine`** (low) — Foursquare history visualizer and discovery tool
 - **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.

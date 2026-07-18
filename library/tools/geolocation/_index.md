@@ -71,7 +71,6 @@ kind: group-index
 - **`dualmaps`** (high) — Use when you have a coordinate or address and want side-by-side map, aerial, and Street View of the same spot to confirm a location.
 - **`earth-engine-dataset`** (medium) — OSINT tool: Earth Engine Dataset.
 - **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
-- **`emmeline-carto-com`** (medium) — OSINT tool: emmeline.carto.com.
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
 - **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
 - **`epochconverter-com`** (medium) — OSINT tool: epochconverter.com.
@@ -307,7 +306,7 @@ kind: group-index
 - **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.
 - **`usa-fishermap`** (medium) — when you click on a freshwater body of water, its detailed map opens, on which the depth at different points is marked
 - **`vdot-traffic-cams`** (low) — OSINT tool: VDOT Traffic Cams.
-- **`ventusky-com`** (medium) — collection of weather map (wind, rain, temperature, air pressure, humidity, waves etc)
+- **`ventusky-com`** (medium) — Use when you have a `geolocation` and a date/time and want to know the weather then — returns historical and forecast wind, rain, temperatur
 - **`viamichelin`** (medium) — Use when you need driving routes, distances, ETAs, and toll/fuel cost estimates between two places to test whether a journey or timeline is 
 - **`view-in-google-earth`** (medium) — Use when you have coordinates or a map view and want to open them in Google Earth (via a generated KML link) for 3D/historical-imagery inspe
 - **`virtual-globe-trotting`** (medium) — Add latitude and longitude to the URL to see the nearby : Unusual and funny images from Google Street View; Interesting parts of the satelli

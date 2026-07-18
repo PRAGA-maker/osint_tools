@@ -499,7 +499,6 @@ kind: group-index
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
 - **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
 - **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna
-- **`resavr`** (medium) — OSINT tool: ReSavr.
 - **`return-youtube-comment-username`** (medium) — Use when you are reading YouTube comments and want the legacy `username` behind an @handle — a browser extension that restores the old displ
 - **`rival-iq`** (high) — Use when you have a public `social-profile`/`username` and want its cross-platform posting history, engagement metrics and audience behaviou
 - **`rknight-me`** (high) — Use when you have a Mastodon `username`/handle and want its numeric account ID to unlock API/RSS access to the account's posts — returns the
@@ -789,7 +788,6 @@ kind: group-index
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
 - **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
-- **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
 - **`youtube-dl`** (medium) — Use when you have a `social-profile` or video URL and want to download the media and its full metadata for offline analysis — returns metada
 - **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos
