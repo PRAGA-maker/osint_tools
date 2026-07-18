@@ -254,7 +254,7 @@ kind: group-index
 - **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
 - **`fatfingers`** (low) — Use when you have a `name`, brand, or item keyword and want to find eBay listings with misspellings/typos — returns mistyped listings (and t
 - **`fbi-tools`** (medium) — Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to
-- **`federal-register`** (medium) — Daily journal of the United States government - includes information on regulations, codes and policy
+- **`federal-register`** (medium) — Use when you have a `name` or `employer-org` and want to find their appearance in US federal rules, notices, or agency actions — returns nam
 - **`fefoo-mega-search`** (medium) — Mega-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
 - **`filechef-com`** (low) — OSINT tool: Filechef.com.

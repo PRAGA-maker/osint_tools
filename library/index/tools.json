@@ -83123,30 +83123,34 @@
   {
     "id": "network-solutions-whois-lookup",
     "name": "Network Solutions WHOIS Lookup",
-    "description": "Whois lookup, search by domain name or IP address",
+    "description": "Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not privacy-protected.",
     "url": "https://www.networksolutions.com/whois/index.jsp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the public WHOIS record for a domain to expose registrant identity, contact info, and registration timeline.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
+      "name",
+      "email",
+      "address",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The WHOIS lookup itself is free (no account needed); Network Solutions only charges for its registrar/privacy products, which are irrelevant to running a lookup.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — a WHOIS query hits registry/registrar databases, not the domain owner, so nothing reaches the subject. As a courtesy, avoid clicking through into Network Solutions' sales funnel with an identifiable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Network Solutions is an ICANN-accredited registrar; the WHOIS data it returns comes from authoritative registry sources, though registrant fields are often redacted by privacy services or GDPR.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -83155,15 +83159,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "icann-whois-lookup",
+      "who-is"
+    ],
+    "aliases": [
+      "Network Solutions WHOIS",
+      "networksolutions.com whois"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "domain-registration"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/network-solutions-whois-lookup.md"
   },
   {
@@ -87937,47 +87948,58 @@
   {
     "id": "search-censys-io",
     "name": "search.censys.io",
-    "description": "OSINT tool: search.censys.io.",
+    "description": "Use when you have a `domain` or `ip-address` and want its internet-facing infrastructure, certificates, and services — returns linked domains, IPs, and hosting details.",
     "url": "https://search.censys.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fingerprinting a target's hosts, open services, and TLS certificates to pivot between IPs and domains.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Unauthenticated search works on a limited dataset; a free non-commercial account raises the cap to ~250 queries/month. Full history and API volume are paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive against the target — Censys serves results from its own internet-wide scans, so you never touch the subject's infrastructure directly. Your queries are, however, logged to your Censys account; use a research account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Censys, Inc. (spun out of University of Michigan scans.io research); a widely cited, reputable internet-measurement provider.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
+    "coverage": [
+      "global"
     ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "account",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
     "relatedTools": [
       "censys",
       "censys-certificates",
       "censys-ipv4"
     ],
+    "aliases": [
+      "Censys Search",
+      "censys.io"
+    ],
+    "tags": [
+      "domainsandips",
+      "infrastructure",
+      "certificate-transparency"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/search-censys-io.md"
   },
   {
@@ -125588,13 +125610,13 @@
   {
     "id": "mapnificent",
     "name": "Mapnificent",
-    "description": "Choose a city on the world map, then select an address on the map and see what places you can get to by public transport in a certain time interval (range from 1 to 90 minutes)",
+    "description": "Use when you have a `geolocation` and want the area reachable from it by public transport within a time budget — returns the reachable zone and addresses inside it.",
     "url": "https://www.mapnificent.net/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Drawing a public-transit isochrone — everywhere reachable from a point within N minutes — to bound where a subject could plausibly have travelled.",
     "selectorsIn": [
       "geolocation"
     ],
@@ -125602,29 +125624,39 @@
       "address",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool built on open GTFS transit feeds; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Passive and self-contained — you enter a location into an in-browser map; nothing is sent to or about any subject. No login, no tracking of your target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent open-source project by Stefan Wehrmeyer built on public GTFS feeds; accuracy depends entirely on the freshness of each city's transit data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "openstreetmap"
+    ],
+    "aliases": [
+      "Mapnificent.net",
+      "transit isochrone map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Tools"
+      "isochrone",
+      "public-transit"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/mapnificent.md"
   },
   {
@@ -132084,42 +132116,53 @@
   {
     "id": "wheelmap-org",
     "name": "Wheelmap.org",
-    "description": "map shows public places that are accessible and partially accessible to #wheelchair users",
+    "description": "Use when you have a `geolocation` and want a crowdsourced map of wheelchair-accessible public places nearby — returns place types, addresses, and accessibility status.",
     "url": "https://wheelmap.org",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating public venues (cafés, libraries, transit stops, shops) around a point and their wheelchair-accessibility status.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
+      "address",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free non-profit service (Sozialhelden e.V., Berlin); all data is open and free to view and share. Built on OpenStreetMap.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse an open crowdsourced map; no query touches any subject. Editing/tagging a place, however, is tied to your OpenStreetMap account, so use a research account if contributing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced on top of OpenStreetMap; accessibility tags and place data are contributed by volunteers and vary in freshness and completeness.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "openstreetmap"
+    ],
+    "aliases": [
+      "Wheelmap",
+      "wheelmap.org"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "accessibility",
+      "openstreetmap"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/wheelmap-org.md"
   },
   {
@@ -226523,37 +226566,54 @@
   {
     "id": "corporationwiki",
     "name": "CorporationWiki",
-    "description": "OSINT tool: CorporationWiki.",
+    "description": "Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and known addresses.",
     "url": "https://www.corporationwiki.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Linking a US person to the companies they are (or were) an officer of, and to the other people around those companies.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core people/company search and connection graphs are free; the site sells a paid \"Enhanced Business Search\" but the free tier is fully usable for pivoting.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query CorporationWiki's aggregated copy of public corporate filings, not the registry or the subject directly, so nothing reaches the target. Use a sock-puppet browser out of habit; the site is ad-heavy and fingerprints visitors.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregator of US Secretary-of-State corporate filings; officer names and addresses are only as current as the underlying state filings, which lag reality by months to years.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates"
+    ],
+    "aliases": [
+      "Corporation Wiki",
+      "corporationwiki.com"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "business-registry"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/corporationwiki.md"
   },
   {
@@ -231316,42 +231376,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/europages-business-search-europe.md"
-  },
-  {
-    "id": "european-business-register",
-    "name": "European Business Register",
-    "description": "OSINT tool: European Business Register.",
-    "url": "http://www.ebr.org",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/european-business-register.md"
   },
   {
     "id": "european-union-open-data-portal",
@@ -260373,39 +260397,56 @@
   {
     "id": "san-francisco-copwatch-database",
     "name": "San Francisco CopWatch Database",
-    "description": "OSINT tool: San Francisco CopWatch Database.",
+    "description": "Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs, incidents, and employer details.",
     "url": "https://airtable.com/embed/shreS9yA6eWiJAmHZ/tbl0A1AfPBOaPNBhH?backgroundColor=blue",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up publicly released misconduct, use-of-force, and disciplinary records for named San Francisco police and sheriff officers.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database published by the SF Public Defender's Office as an Airtable; no account or payment required to browse or search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a published Airtable of public records; nothing reaches the officers named. It is a public-interest transparency dataset, so accessing it carries no target-side signal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled and published by the San Francisco Public Defender's Office from SB 1421 record releases, lawsuits, and complaints; an official-office source, though coverage is partial and lags records requests.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "buffalo-police",
       "simplescraper-osint-airtable"
     ],
+    "aliases": [
+      "CopWatch SF",
+      "SF Public Defender CopWatch"
+    ],
+    "tags": [
+      "police-accountability",
+      "public-records",
+      "airtable"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/san-francisco-copwatch-database.md"
   },
   {
@@ -266938,40 +266979,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/tsa-no-fly-list.md"
-  },
-  {
-    "id": "ttabcenter-com",
-    "name": "Ttabcenter.com",
-    "description": "OSINT tool: Ttabcenter.com.",
-    "url": "https://ttabcenter.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/ttabcenter-com.md"
   },
   {
     "id": "tutorhunt-com",
@@ -282092,41 +282099,55 @@
   {
     "id": "federal-register",
     "name": "Federal Register",
-    "description": "Daily journal of the United States government - includes information on regulations, codes and policy",
+    "description": "Use when you have a `name` or `employer-org` and want to find their appearance in US federal rules, notices, or agency actions — returns names, organizations, and document IDs.",
     "url": "https://www.federalregister.gov/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching the daily journal of the US government for a person or organization named in regulations, notices, sanctions, or agency actions.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Fully free, official US government service; no payment ever required. Registration only adds email alerts and saved searches.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a public government publication; nothing reaches the subject. The site blocks bulk scraping (CAPTCHA/redirect), so use the official API for automation rather than hammering the web UI.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US Office of the Federal Register / GPO; it is the authoritative primary publication for federal rules and notices.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [
+      "us-government-printing-office"
+    ],
+    "aliases": [
+      "federalregister.gov",
+      "Daily Journal of the United States Government"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "government-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/federal-register.md"
   },
   {
@@ -341327,46 +341348,56 @@
   {
     "id": "socialdata-api",
     "name": "SocialData API",
-    "description": "Unofficial Twitter/X API alternative for data access.",
+    "description": "Use when you have a `username` or `name` and want Twitter/X profile and tweet data programmatically — returns social profiles, posts, and follower relationships.",
     "url": "https://socialdata.tools/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Programmatic access to Twitter/X data without official API",
+    "bestFor": "Pulling Twitter/X user profiles, tweets, followers, and search results via API without the official (expensive) X API.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Pay-as-you-go at ~$0.20 per 1,000 tweets/users fetched, no subscription; a free trial with credits (no credit card) lets you evaluate it. Effectively metered rather than free.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — SocialData fetches from X on its servers, so your IP never touches the target's profile and no view/notification reaches them. Your queries and API key are, however, logged by SocialData; treat it as a third party handling your target list.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party unofficial X data reseller; reliability tracks X's anti-scraping countermeasures and the vendor's own stability, neither of which is guaranteed.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "relatedTools": [
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "socialdata.tools",
+      "SocialData"
+    ],
     "tags": [
       "twitter",
       "api",
       "data-access"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/socialdata-api.md"
   },
   {

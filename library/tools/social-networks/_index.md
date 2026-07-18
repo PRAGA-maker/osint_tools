@@ -570,7 +570,7 @@ kind: group-index
 - **`social-trends`** (low) — OSINT tool: Social Trends.
 - **`socialbearing`** (high) — Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns 
 - **`socialblade`** (high) — Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles
-- **`socialdata-api`** (medium) — Unofficial Twitter/X API alternative for data access.
+- **`socialdata-api`** (medium) — Use when you have a `username` or `name` and want Twitter/X profile and tweet data programmatically — returns social profiles, posts, and fo
 - **`socialgrep`** (medium) — Use when you have a `username`, keyword, or subreddit and want to find and export a subject's Reddit posts/comments across 2010–present — re
 - **`socialmedialist-org`** (high) — Use when you have a `username`/`name` and want a checklist of niche and non-Western social networks to hunt it across — returns a reference 
 - **`socmint`** (high) — Use when you are starting social-media intelligence work and want a curated launchpad — a start.me dashboard linking dozens of SOCMINT tools

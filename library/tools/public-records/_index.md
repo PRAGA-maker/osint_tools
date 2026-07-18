@@ -205,7 +205,7 @@ kind: group-index
 - **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
 - **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
 - **`corporate-information`** (medium) — OSINT tool: Corporate Information.
-- **`corporationwiki`** (medium) — OSINT tool: CorporationWiki.
+- **`corporationwiki`** (medium) — Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and 
 - **`corporative-registry-catalog`** (medium) — worldwide catalog of business registries (63 countries)
 - **`corrections-com-inmate-locaton-links`** (high) — Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links th
 - **`counciltaxrates-info`** (medium) — Use when you have a UK `address`/postcode and want the property's council-tax band and local rates — returns band, rateable value and the re
@@ -294,7 +294,6 @@ kind: group-index
 - **`eric-institute-of-education-sciences`** (medium) — Education Resources Information Center
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
 - **`europages-business-search-europe`** (medium) — Database of over 3 million company listings in Europe
-- **`european-business-register`** (medium) — OSINT tool: European Business Register.
 - **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.
 - **`europeana`** (medium) — Collection of over 57 million European artworks, artifacts, books, films, music, and more
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
@@ -850,7 +849,7 @@ kind: group-index
 - **`saa-gov-uk`** (high) — Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns addre
 - **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu
 - **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
-- **`san-francisco-copwatch-database`** (medium) — OSINT tool: San Francisco CopWatch Database.
+- **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
 - **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
 - **`scinapse-io`** (medium) — Academic Search Engine. Search by 48000 journals
 - **`scite-ai`** (medium) — Enter the article title or DOI to get a list of publications that cite it. Results can be filtered by type (book, review, article), year, au
@@ -983,7 +982,6 @@ kind: group-index
 - **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.
 - **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
 - **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.
-- **`ttabcenter-com`** (medium) — OSINT tool: Ttabcenter.com.
 - **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return
 - **`uglymugs-org`** (high) — Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `
 - **`uk-census-online`** (medium) — Database of deaths, births, and marriages. From 1841 to the beginning of the 21st century. Only the first and last names can be searched.

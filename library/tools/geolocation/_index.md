@@ -187,7 +187,7 @@ kind: group-index
 - **`mapillary`** (high) — Use when you need crowd-sourced street-level imagery to verify or geolocate a place from a photo — returns dated ground-level views for a ge
 - **`mapjam`** (low) — Use when you want to make a simple stylized custom map with points of interest — a basic map maker that appears defunct; verify before relyi
 - **`mapline`** (medium) — Use when you need to plot a large spreadsheet of addresses on a map with territories and heat layers — a business data-mapping platform (pai
-- **`mapnificent`** (medium) — Choose a city on the world map, then select an address on the map and see what places you can get to by public transport in a certain time i
+- **`mapnificent`** (medium) — Use when you have a `geolocation` and want the area reachable from it by public transport within a time budget — returns the reachable zone 
 - **`mapquest-maps-and-directions`** (high) — Use when you have an `address` or `geolocation` (lat/long) and want to map it, get directions/travel times, or reverse-geocode coordinates t
 - **`mapquest`** (high) — Use when you need geocoding, routing, or distance/ETA between locations — returns coordinates, turn-by-turn routes, and travel metrics for a
 - **`maps-app-by-apple`** (high) — Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level "Look Ar
@@ -322,7 +322,7 @@ kind: group-index
 - **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio
 - **`whatiswhere-com`** (medium) — Use when you have an approximate geolocation and want every nearby point-of-interest of a given type — returns candidate addresses and geolo
 - **`whatiswhere`** (high) — Use when you have a `geolocation` or `address` and want to enumerate every nearby point-of-interest by type/keyword — returns `geolocation` 
-- **`wheelmap-org`** (medium) — map shows public places that are accessible and partially accessible to #wheelchair users
+- **`wheelmap-org`** (medium) — Use when you have a `geolocation` and want a crowdsourced map of wheelchair-accessible public places nearby — returns place types, addresses
 - **`whereis-com-maps-of-australia`** (medium) — Use when you have an Australian `address` or place and want to map, verify, and geolocate it (coordinates, directions, nearby context) — ret
 - **`whereisthisplace`** (high) — Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.
 - **`whodidit`** (medium) — Click on an area on the OpenStreetMap to get a list of nicknames of users who have made changes on it (with dates).

@@ -345,7 +345,7 @@ kind: group-index
 - **`netcraft-site-report`** (low) — OSINT tool: Netcraft Site Report.
 - **`netcraft`** (low) — Site reports, DNS search, and hosting history tools.
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
-- **`network-solutions-whois-lookup`** (medium) — Whois lookup, search by domain name or IP address
+- **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
 - **`network-tools`** (medium) — Web trace, WHOIS, and domain lookups
 - **`nibbler-website-test`** (medium) — Search for information and statistics about any online website
 - **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
@@ -421,7 +421,7 @@ kind: group-index
 - **`scrape-api`** (low) — Proxy API for Web Scraping
 - **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
 - **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne
-- **`search-censys-io`** (medium) — OSINT tool: search.censys.io.
+- **`search-censys-io`** (medium) — Use when you have a `domain` or `ip-address` and want its internet-facing infrastructure, certificates, and services — returns linked domain
 - **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
 - **`secmas-host-guatemala`** (medium) — Guatemala based service provider for registering websites and domain addresses
 - **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
