@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling
 
 ## Sub-groups
-- **`anonymous-browsing/`** — 23 skill(s) below.
+- **`anonymous-browsing/`** — 22 skill(s) below.
 - **`metadata-style/`** — 2 skill(s) below.
 - **`persona-creation/`** — 4 skill(s) below.
 - **`privacy-clean-up/`** — 10 skill(s) below.

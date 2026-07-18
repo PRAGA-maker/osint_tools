@@ -286,7 +286,7 @@ kind: group-index
 - **`terrafly-map-united-states`** (high) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery
 - **`the-haunted-map`** (low) — Use when you have a `geolocation` and want to check whether it coincides with a catalogued "haunted"/reported-sighting location — a niche cr
 - **`the-meddin-bike-sharing-world-map`** (low) — Use when you have a `geolocation` and want to identify the bike-share system, operator, and station layout there — returns local bikeshare d
-- **`the-painted-planet`** (medium) — Click on a point on the map to get a list of landscapes by famous artists depicting the area.
+- **`the-painted-planet`** (low) — Use when you have a `geolocation` and want artworks depicting that place — returns landscape/cityscape paintings (from Wikidata) tied to the
 - **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.
 - **`thingful`** (low) — OSINT tool: thingful.
 - **`time-is`** (medium) — OSINT tool: time.is.

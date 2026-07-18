@@ -13,7 +13,6 @@ kind: group-index
 - **`ip-dns-leak-detection`** (medium) — Use when you want to verify your own VPN/anonymization before an operation — returns your visible IP, DNS resolvers, WebRTC leaks, and geolo
 - **`ipv6-leak-tests`** (medium) — Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification
 - **`jondonym`** (low) — Use when you want to audit your investigative connection's anonymity — returns your exposed IP, headers, cookies, and fingerprint with an an
-- **`letmecheck-it`** (medium) — Comprehensive pre-operation anonymization check covering multiple leak vectors
 - **`perfect-privacy`** (medium) — Pre-operation anonymization verification, IP and DNS leak check
 - **`trace-my-ip`** (medium) — Verifying visible IP and geolocation before OSINT operations
 - **`webrtc-leak-test`** (medium) — Use when you want to confirm your VPN isn't leaking your real IP via WebRTC — returns the IP addresses WebRTC exposes to any website, so you

@@ -581,7 +581,7 @@ kind: group-index
 - **`osint-investigation-assistant-lambda-black`** (medium) — Single-page assistant linking OSINT tools/queries for investigations.
 - **`osint-investigation-coldvisionz`** (low) — Collection of useful OSINT tools.
 - **`osint-kit-buddhsen-tripathi`** (medium) — Use when you need to discover which tool fits an investigative task — a curated, categorised directory of OSINT tools returning pointers to 
-- **`osint-link`** (medium) — Directory-style portal of OSINT links organized by category.
+- **`osint-link`** (medium) — Use when you need to discover an OSINT tool for a task — returns a categorised directory of OSINT resources (search, social, geolocation, br
 - **`osint-open-source-projects`** (medium) — OSINT tool: Osint Open Source Projects.
 - **`osint-sh-buckets`** (low) — Azure Public Buckets Search
 - **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe

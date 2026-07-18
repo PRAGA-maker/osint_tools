@@ -10,7 +10,7 @@ kind: group-index
 - **`browser-tests/`** — 3 skill(s) below.
 - **`proxy-tests/`** — 1 skill(s) below.
 - **`spoof-user-agent/`** — 3 skill(s) below.
-- **`vpn-tests/`** — 10 skill(s) below.
+- **`vpn-tests/`** — 9 skill(s) below.
 
 ## Skills here
 - **`browser-leaks`** (medium) — Use when you (the investigator) want to check your own OpSec before an operation — returns what your browser leaks (real IP, WebRTC, DNS, ca

@@ -282,7 +282,7 @@ kind: group-index
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
 - **`plazoo-rss-feed-search-engine`** (medium) — Website that searches for links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
 - **`plentyoffish`** (medium) — Online dating profile site
-- **`plurk`** (medium) — Website related to social networking and micro-blogging
+- **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`polymeta-news`** (medium) — International news website

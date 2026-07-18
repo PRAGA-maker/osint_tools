@@ -264,7 +264,7 @@ kind: group-index
 - **`pixplot`** (low) — PixPlot is a tool that utilizes machine learning and WebGL to provide an interactive visualization of large image collections, allowing user
 - **`pixsy`** (medium) — Use when you have an `image` (ideally your own/authorised) and want to find everywhere it appears online via deep match monitoring — returns
 - **`placespotter-com`** (high) — Use when you have an `image` and want an AI's guess at where it was taken — returns approximate coordinates and location details.
-- **`planet-gallery`** (medium) — A collection of satellite images to compare changes in specific locations before and after any significant events (fires, military actions, 
+- **`planet-gallery`** (medium) — Use when you have a `geolocation` and a notable event and want before/after satellite imagery of that place — returns curated Planet satelli
 - **`playboard-co`** (medium) — Use when you have a YouTube channel `social-profile`/`username` and want independent analytics — returns channel stats, rankings, growth, ea
 - **`playlists-at`** (high) — Use when you have a `name` or `username` and want to find a subject's YouTube uploads or appearances via advanced search operators — returns
 - **`pocket`** (low) — OSINT tool: Pocket.

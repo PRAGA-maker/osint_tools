@@ -132,7 +132,7 @@ kind: group-index
 - **`interpol`** (high) — Use when you have a `name` and want to check INTERPOL's public Red (wanted) and Yellow (missing persons) notices — returns name, dob, image,
 - **`ioa`** (high) — Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — 
 - **`jobs-poland`** (medium) — Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locati
-- **`jobsite-uk`** (medium) — OSINT tool: Jobsite (UK).
+- **`jobsite-uk`** (low) — Use when you have a `name` or `employer-org` and want UK job-market context — returns job listings and, for logged-in recruiters, candidate 
 - **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
 - **`karus`** (medium) — Multi-purpose OSINT utility with a custom web interface.
 - **`knowem-username-search`** (high) — Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/avai

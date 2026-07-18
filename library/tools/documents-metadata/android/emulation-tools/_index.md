@@ -7,7 +7,6 @@ kind: group-index
 # documents-metadata/android/emulation-tools
 
 ## Skills here
-- **`apk-online`** (medium) — Quick APK analysis, permission review, app feature reconnaissance
 - **`bluestacks-2`** (medium) — Quick Android testing, forensic artifact extraction, app analysis
 - **`genymotion`** (medium) — Testing mobile apps, forensic analysis, multi-device simulation
 - **`nox-app-player`** (medium) — Use when you need to run Android OSINT/messaging apps on a desktop to investigate a `phone`/`username` — an emulator that hosts mobile-only 

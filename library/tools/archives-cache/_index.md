@@ -56,7 +56,7 @@ kind: group-index
 - **`gau`** (medium) — Simple #golang tool to fetch all known website URLs from: WayBackMachine, AlienVault's Open Threat Exchange, Common Crawl, URLScan
 - **`gh-archive`** (low) — Public dataset of GitHub activity events.
 - **`grab-site`** (medium) — Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with doz
-- **`har2warc`** (medium) — Convert HTTP Archive (HAR) -> Web Archive (WARC) format
+- **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
 - **`index-commoncrawl-org`** (medium) — OSINT tool: index.commoncrawl.org.
 - **`industrydocuments-ucsf-edu`** (medium) — digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)
 - **`infominder`** (low) — OSINT tool: InfoMinder.
