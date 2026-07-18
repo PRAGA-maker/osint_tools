@@ -29,7 +29,6 @@ kind: group-index
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (low) — Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded 
 - **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
 - **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
-- **`amazing-hiring`** (medium) — An extension for Chrome that allows you to find a link to Linkedin, Facebook, VK, StackOverflow, Instagram... by user Github (or other) prof
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
 - **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
 - **`anonymous-ad-preview-tool`** (low) — OSINT tool: Anonymous Ad Preview Tool.
@@ -218,7 +217,7 @@ kind: group-index
 - **`git-awards`** (low) — Rank GitHub users and repositories.
 - **`gitcolombo`** (medium) — simple and fast tool that collects information (edit statistics and contacts) about repository contributors on Github
 - **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
-- **`github-hovercard`** (medium) — Displays a block of detailed information about the repository or user when the mouse pointer is placed over it. Save time for those who look
+- **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening
 - **`github-monitor`** (medium) — OSINT tool: github_monitor.
 - **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
 - **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
@@ -725,7 +724,7 @@ kind: group-index
 - **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
-- **`twitter-x-location-search`** (medium) — Search for geocoded tweets by their distance from some coordinates.
+- **`twitter-x-location-search`** (medium) — Use when you have a `geolocation` and want posts sent from near it — returns geotagged X/Twitter posts and the `social-profile`s behind them
 - **`twitterfall`** (medium) — OSINT tool: Twitterfall.
 - **`twittertrails-com`** (high) — Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com d
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for

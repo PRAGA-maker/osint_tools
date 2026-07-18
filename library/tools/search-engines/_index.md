@@ -471,7 +471,6 @@ kind: group-index
 - **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
 - **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
-- **`meganzsearch-com`** (medium) — OSINT tool: Meganzsearch.com.
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
@@ -531,7 +530,7 @@ kind: group-index
 - **`newspaperindex`** (low) — OSINT tool: Newspaperindex.
 - **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
 - **`newswhip`** (low) — OSINT tool: NewsWhip.
-- **`niche`** (medium) — Website related to college facility rankings
+- **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
 - **`nmhdds-open-directory`** (medium) — Open directory search database.
 - **`nod`** (low) — OSINT tool: Nod.
 - **`notey`** (low) — OSINT tool: Notey.
@@ -781,7 +780,6 @@ kind: group-index
 - **`trulia-united-states`** (medium) — Real estate listing search tool that also provides a location data overview
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
-- **`twellow`** (medium) — Twitter user search
 - **`twingly`** (low) — OSINT tool: Twingly.
 - **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re

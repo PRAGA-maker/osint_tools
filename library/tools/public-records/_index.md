@@ -446,7 +446,7 @@ kind: group-index
 - **`his-piers`** (low) — OSINT tool: HIS Piers.
 - **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
 - **`home-comptroller-texas-gov`** (medium) — OSINT tool: Home Comptroller.Texas.Gov.
-- **`homefacts-us`** (medium) — OSINT tool: HomeFacts (US).
+- **`homefacts-us`** (medium) — Use when you have a US `address` and want neighborhood/property intelligence — returns property details plus nearby registered offenders, ha
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
 - **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
 - **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
@@ -893,7 +893,7 @@ kind: group-index
 - **`sijilat-bh-2`** (high) — Use when you have a Bahraini business `name`/CR number or an `employer-org` and want official commercial-registration data — returns company
 - **`sijilat-bh`** (high) — Use when you have a company `name`/`employer-org` (or owner name) in Bahrain and want the official commercial-registration record — returns 
 - **`skilledtradesontario-ca`** (medium) — Use when you have a `name` and want to verify whether a person holds a valid Ontario skilled-trades certification/registration — returns cer
-- **`skyscraperpage`** (medium) — OSINT tool: SkyscraperPage.
+- **`skyscraperpage`** (low) — Use when you have a building `name`/`address` or a skyline `image` and want to identify a structure — returns building details, height, date
 - **`slovakia`** (high) — Use when you have a company `name`/`employer-org` or a `name` doing business with the Slovak state and want its verified beneficial owners —
 - **`slovenia`** (high) — Use when you have a company `name`, `address`, or registration number in Slovenia and want official registry data — returns employer-org det
 - **`snitch-list`** (low) — OSINT tool: Snitch List.

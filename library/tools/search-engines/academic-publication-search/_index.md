@@ -18,7 +18,7 @@ kind: group-index
 - **`open-access-scholarly-journals`** (low) — Use when you have an author `name` and want their open-access papers on this publisher — returns publications that reveal `employer-org` aff
 - **`open-library`** (medium) — Use when you have an author `name`, title, or ISBN and want book records — returns editions, publication metadata, and links to readable/bor
 - **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w
-- **`pubmed-national-center-for-biotechnology-information`** (medium) — Biomedical, clinical, and life sciences literature research with high-quality metadata
+- **`pubmed-national-center-for-biotechnology-information`** (medium) — Use when you have a researcher/clinician `name` and want their biomedical publications — returns authored papers with affiliations, co-autho
 - **`pubpeer`** (medium) — Use when you have a `name`, DOI, or paper title and want post-publication peer critique — returns comment threads flagging errors, image man
 - **`science-direct`** (medium) — Scientific and technical literature search across Elsevier's extensive journal catalog
 - **`science-publications`** (medium) — OSINT tool: Science Publications.

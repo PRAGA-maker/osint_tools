@@ -17,7 +17,7 @@ kind: group-index
 - **`411-us`** (high) — Use when you have a US `name`, `phone` or `address` and want contact and household details — returns addresses, phone numbers and associated
 - **`411`** (high) — Use when you have a US `name`, `phone`, or `address` and want white-pages data — returns listed `name`, `address`, `phone`, relatives, and b
 - **`411directoryassistance-ca`** (high) — Use when you have a Canadian `name` or `phone` and want listed directory details — returns addresses and phone numbers from Canadian white/y
-- **`academia`** (medium) — OSINT tool: Academia.
+- **`academia`** (medium) — Use when you have a researcher's `name` and want their academic footprint — returns their profile, papers, affiliations, and research intere
 - **`address-check-1-2-united-states`** (high) — Use when you have an `address` (or name) and want to verify/standardize a US address and identify residents — returns a validated address pl
 - **`advancedbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` and want a free US people lookup with relatives and address history — returns names, phone
 - **`allareacodes`** (high) — Use when you have a US/Canada `phone` number and want free white-pages identification — returns the owner `name` and `address`, or carrier/c

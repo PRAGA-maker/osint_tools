@@ -91,7 +91,7 @@ kind: group-index
 - **`username-generation-guide`** (high) — Use when you have a `name` or a known `username` and want a systematic method to expand it into candidate handles before running enumerators
 - **`username-search-2`** (high) — Use when you have a `username` and want the social-media profiles and possible real identity behind it across 100+ platforms — returns socia
 - **`username-search-tool`** (high) — Use when you have a `username` and want a fast dashboard of search links across engines and people/username databases — returns pivot links 
-- **`usernamechecker-checkistan`** (medium) — Free username availability checker.
+- **`usernamechecker-checkistan`** (high) — Use when you have a `username` and want to see where it's registered — returns per-platform taken/available status across 50+ social network
 - **`usersherlock-com`** (high) — Use when you have a `username` and want a quick web check of which popular sites have an account under that handle — returns social-profile 
 - **`vk-com`** (high) — Use when you have an `email`, `phone` or VK `username` and want to confirm whether it's tied to a VK account — returns account existence plu
 - **`whatsmyname-python`** (high) — Use when you have a `username` and want to enumerate which of 600+ sites have an account with that handle — returns matching social-profile 

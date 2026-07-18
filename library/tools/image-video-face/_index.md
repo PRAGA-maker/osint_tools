@@ -195,7 +195,6 @@ kind: group-index
 - **`jpegsnoop-image-decoder`** (high) — Use when you have an `image` and want its embedded metadata plus signs of editing/manipulation — returns EXIF, camera/software fingerprint, 
 - **`kairos-com`** (high) — Use when you have two face images and want to verify whether they are the same person — returns a similarity/match score.
 - **`kartavision`** (high) — Use when you have a street-level or scenic image and want to find visually similar locations to help geolocate where it was taken — returns 
-- **`keep-save-it`** (medium) — OSINT tool: Keep Save It.
 - **`keyhole-engelsjk`** (low) — Use when you have a `geolocation` and want to see how it looked in declassified 1960–1984 US spy-satellite imagery — returns historical KH/C
 - **`kongregate`** (low) — Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a s
 - **`kosmos-2`** (high) — Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physic
