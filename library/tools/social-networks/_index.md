@@ -59,7 +59,7 @@ kind: group-index
 - **`blastup`** (low) — Use when you have an Instagram post/reel/photo URL and want to save the original-quality media (no watermark, no login) for offline analysis
 - **`blog-compass-security-com`** (high) — Use when you have a subject on LinkedIn (`name`/`username`) and want proven techniques to deanonymise surnames, detect language, and X-ray p
 - **`bluesky-insights-dwagentai-com`** (medium) — Use when you have a Bluesky `username`/handle and want follower-growth analytics and similar-account discovery — returns social-profile metr
-- **`bluesky-users-stats`** (medium) — OSINT tool: BlueSky users stats.
+- **`bluesky-users-stats`** (medium) — Use when you're working a Bluesky lead and want ecosystem context — returns platform stats, top-account rankings and a directory of Bluesky 
 - **`bluesky`** (high) — Use when you have a `username` or `name` and want to find and read a subject's Bluesky account and social graph — returns social-profile, po
 - **`blueskydirectory-com`** (high) — Use when you have a `name`, `username`, or interest and want to find or search Bluesky (bsky/AT Protocol) profiles, lists, and starter packs
 - **`blueskymeter-com`** (high) — Use when you have a Bluesky `username` (handle) and want public account analytics — returns follower/engagement metrics and profile activity
@@ -141,7 +141,7 @@ kind: group-index
 - **`expand-all-facebook-comments-bookmarklet`** (high) — Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full 
 - **`exportdata`** (high) — Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate link
 - **`extract-meta-data-youtube`** (medium) — OSINT tool: Extract Meta Data YouTube.
-- **`f5bot`** (medium) — Sends you an email when a keyword is mentioned on Reddit.
+- **`f5bot`** (medium) — Use when you have a `name`, `username` or keyword and want to be emailed whenever it's mentioned on Reddit/Hacker News/Lobsters — returns ma
 - **`facebook-ad-s-link`** (medium) — Use when you have a Facebook Page `social-profile` (or its page-ID) and want to pull every ad it has run — returns the advertiser's other pa
 - **`facebook-applications-khalil-shreateh`** (low) — Collection of tools automating Facebook functions.
 - **`facebook-bulk-id-usernames-to-s`** (high) — Use when you have Facebook profile/page `username`s or URLs and want their durable numeric IDs in bulk — returns the numeric account IDs tha
@@ -659,7 +659,6 @@ kind: group-index
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
-- **`tweeview`** (medium) — Twitter conversation visualization (beta)
 - **`twemex`** (medium) — Use when you're reading X/Twitter and want a research sidebar — returns quick access to a user's best tweets, quotes of a post, and your own
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
 - **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t

@@ -40,7 +40,7 @@ kind: group-index
 - **`canadian-civil-aircraft-register-search-canada`** (medium) — Use when you have a Canadian tail number (`vehicle-plate`) or owner `name` and want registration details — returns registered owner `name`/`
 - **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types
 - **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
-- **`caranalytics-co-uk`** (medium) — OSINT tool: Caranalytics.co.uk.
+- **`caranalytics-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and p
 - **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
 - **`casa-aircraft-search-australia`** (medium) — Use when you have an Australian aircraft mark (VH-xxx) and want the aircraft and its registered holder — returns aircraft details, employer-
@@ -51,7 +51,7 @@ kind: group-index
 - **`check-that-vin-search`** (medium) — Use when you have a `vin` and want the vehicle's NMVTIS title history — returns titling states/dates, brands (salvage/junk/flood), odometer,
 - **`check-that-vin`** (medium) — OSINT tool: Check That Vin.
 - **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
-- **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information
+- **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Use when you have a UK aircraft registration mark (`vehicle-plate`, e.g. G-ABCD) and want the registered owner — returns owner `name` and `a
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
 - **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
 - **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st

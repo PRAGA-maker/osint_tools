@@ -33,6 +33,8 @@ relatedTools:
 - followgraph-for-mastodon
 - osint-steam
 - youtube-lookup
+- section-16-deadline-calculator
+- xplore-x-vercel-app
 aliases:
 - gitvio.vercel.app
 tags:

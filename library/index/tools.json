@@ -123453,46 +123453,53 @@
   {
     "id": "map-view-ngmdb",
     "name": "Map View NGMDB",
-    "description": "map for exploring some geologic maps and articles from the NGMDB (National Geologic Map Database).",
+    "description": "Use when you have a US `geolocation` and want authoritative geologic and historical topographic maps of that spot — returns map imagery and `geolocation` context.",
     "url": "https://ngmdb.usgs.gov/mapview/?center=-97,39.6&zoom=4",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Overlaying USGS geologic maps and the full historical topographic map archive on any US location to read terrain, place-name history and old features.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free US Geological Survey service; no account. Maps (including historical topo scans) are viewable and downloadable at no cost.",
+    "opsec": "passive",
+    "opsecNote": "A public government map viewer; browsing leaks nothing and touches no target. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the USGS National Geologic Map Database; the maps are official government cartographic products.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "earthexplorer",
+      "landsatlook-viewer"
+    ],
+    "aliases": [
+      "NGMDB MapView",
+      "USGS TopoView",
+      "National Geologic Map Database"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Nature"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "earthexplorer",
-      "landsatlook-viewer"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/map-view-ngmdb.md"
   },
   {
@@ -219247,37 +219254,53 @@
   {
     "id": "better-business-bureau",
     "name": "Better Business Bureau",
-    "description": "OSINT tool: Better Business Bureau.",
-    "url": "http://www.bbb.org",
+    "description": "Use when you have a business `name` or `employer-org` and want its contact details, principals and complaint history — returns `address`, `phone` and `associate` leads.",
+    "url": "https://www.bbb.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a US/Canada business — address, phone, listed principals, accreditation and complaint history — and checking a name against the BBB Scam Tracker.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read business profiles, reviews, complaints and the Scam Tracker; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading BBB profiles is anonymous and does not notify the business. Filing a complaint or review would be active and identifying — stay on the read side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-established nonprofit. Business contact/principal data is generally reliable; ratings and complaint outcomes are BBB's own methodology and reflect its process, not a court finding.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BBB",
+      "bbb.org",
+      "BBB Scam Tracker"
+    ],
     "tags": [
       "company-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/better-business-bureau.md"
   },
   {
@@ -287535,44 +287558,56 @@
   {
     "id": "jersey-financial-services-commission",
     "name": "Jersey Financial Services Commission",
-    "description": "Website for the Jersey Financial Services Commission with registered company search",
-    "url": "http://www.jerseyfsc.org",
+    "description": "Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and officer/`associate` leads.",
+    "url": "https://www.jerseyfsc.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a Jersey-registered company exists and pulling its registry basics — status, number, type — as an entry point into offshore corporate structures.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic company-registry search (name, number, status, type) is free via the JFSC Companies Registry / myRegistry. Full filed documents and ownership detail are paid, per-document.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the public registry is anonymous and does not alert the company. Purchasing filings requires a myRegistry account but is a normal, non-alerting transaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official statutory regulator and companies registrar for Jersey; registry records are authoritative for existence/status, though beneficial ownership is not fully public.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "je"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "jerseyfsc-org"
     ],
+    "aliases": [
+      "JFSC",
+      "jerseyfsc.org",
+      "Jersey Companies Registry"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "corporate-registry"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jersey-financial-services-commission.md"
   },
   {
@@ -305202,42 +305237,54 @@
   },
   {
     "id": "us-department-of-housing-and-urban-development",
-    "name": "US Department of Housing and Urban Development",
-    "description": "US Department of Housing and Urban Development - includes research, publications and data sets",
+    "name": "US Department of Housing and Urban Development (HUD USER)",
+    "description": "Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housing datasets.",
     "url": "https://www.huduser.gov/portal/home.html",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling authoritative US housing and neighbourhood data — fair-market rents, income limits, assisted-housing locations and area datasets — to add context to an address.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government research portal (HUD's Office of Policy Development & Research); datasets, maps and query tools are open with no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public government data portal; querying it is anonymous and touches no individual. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US federal (HUD) research data; authoritative for the housing/area statistics it publishes, though it is area/dataset-level, not a per-person lookup.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HUD USER",
+      "huduser.gov",
+      "HUD PD&R"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "government-data"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/us-department-of-housing-and-urban-development.md"
   },
   {
@@ -312191,38 +312238,50 @@
   {
     "id": "bluesky-users-stats",
     "name": "BlueSky users stats",
-    "description": "OSINT tool: BlueSky users stats.",
+    "description": "Use when you're working a Bluesky lead and want ecosystem context — returns platform stats, top-account rankings and a directory of Bluesky OSINT tools.",
     "url": "https://vqv.app/stats/chart",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Getting a feel for the Bluesky landscape (growth, most-followed and most-blocked accounts) and finding the right Bluesky-specific lookup tools for a target.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free dashboard; no account. Aggregate stats and rankings update hourly; the linked tools directory points to other free Bluesky utilities.",
+    "opsec": "passive",
+    "opsecNote": "Viewing aggregate stats and rankings is anonymous and touches no individual account. Any follow-on account lookup should be done with a passive/logged-out method where possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run Bluesky analytics site; useful for aggregate ranking/stats and as a tools hub, but it is not an authoritative per-account record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "vqv.app",
+      "VQV Bluesky Stats",
+      "Top 1000 Bluesky Users"
+    ],
     "tags": [
       "Social Media",
       "Bluesky"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bluesky-users-stats.md"
   },
   {
@@ -316301,43 +316360,51 @@
   {
     "id": "f5bot",
     "name": "F5Bot",
-    "description": "Sends you an email when a keyword is mentioned on Reddit.",
+    "description": "Use when you have a `name`, `username` or keyword and want to be emailed whenever it's mentioned on Reddit/Hacker News/Lobsters — returns matching posts and posters' `social-profile`s.",
     "url": "https://f5bot.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Standing keyword monitoring — get emailed the moment a subject's name, handle, phone, or unique phrase appears on Reddit, Hacker News or Lobsters.",
     "selectorsIn": [
-      "email"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free. You register an email address and keyword list; alerts arrive by email, usually within minutes of a mention.",
+    "opsec": "passive",
+    "opsecNote": "Monitoring is server-side against public posts; the people posting are never told they're being watched. Use a dedicated (non-attributable) email for the alerts so the monitoring can't be tied back to your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known free monitoring service in the OSINT/marketing community; it only surfaces public posts and depends on the platforms' public feeds.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "f5bot.com",
+      "F5 Bot"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "other-platforms"
+      "other-platforms",
+      "monitoring"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/f5bot.md"
   },
   {
@@ -321364,7 +321431,9 @@
       "checkuser",
       "followgraph-for-mastodon",
       "osint-steam",
-      "youtube-lookup"
+      "youtube-lookup",
+      "section-16-deadline-calculator",
+      "xplore-x-vercel-app"
     ],
     "aliases": [
       "gitvio.vercel.app"
@@ -345361,43 +345430,6 @@
     "_file": "library/tools/social-networks/twitter/archive-deleted-tweets/tweetvacuum.md"
   },
   {
-    "id": "tweeview",
-    "name": "Tweeview",
-    "description": "Twitter conversation visualization (beta)",
-    "url": "https://tweeview.ml/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweeview.md"
-  },
-  {
     "id": "twemex",
     "name": "Twemex (Tweet Hunter X Sidebar)",
     "description": "Use when you're reading X/Twitter and want a research sidebar — returns quick access to a user's best tweets, quotes of a post, and your own search shortcuts.",
@@ -358517,43 +358549,48 @@
   {
     "id": "caranalytics-co-uk",
     "name": "Caranalytics.co.uk",
-    "description": "OSINT tool: Caranalytics.co.uk.",
+    "description": "Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and plate-change history.",
     "url": "https://www.caranalytics.co.uk",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a UK number plate's vehicle history — make/model, MOT and tax status, mileage, write-off/stolen/finance flags — with a free tier.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "vehicle-plate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier returns ~14 data points (spec, MOT history, tax, mileage, recalls, ULEZ). Deeper history — previous-keeper counts, plate-change history, write-off/finance/stolen checks — is paid (from ~£2.99).",
+    "opsec": "passive",
+    "opsecNote": "Queries aggregated DVLA/MOT/insurance datasets, not the keeper directly; the owner is not notified. UK keeper personal data (names/addresses) is GDPR-protected and is NOT returned by this or any consumer check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial reseller of DVLA/MOT/insurance data; the free vehicle facts trace back to official sources, but this is a third-party aggregator, not the DVLA itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "caranalytics.co.uk",
+      "Car Analytics UK"
+    ],
     "tags": [
       "vehicle"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/caranalytics-co-uk.md"
   },
   {
@@ -359071,41 +359108,53 @@
   {
     "id": "civil-aviation-authority-aircraft-register-united-kingdom",
     "name": "Civil Aviation Authority Aircraft Register (United Kingdom)",
-    "description": "Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information",
-    "url": "https://www.caa.co.uk/licences-and-other-approvals/licences-and-other-approvals/",
+    "description": "Use when you have a UK aircraft registration mark (`vehicle-plate`, e.g. G-ABCD) and want the registered owner — returns owner `name` and `address`.",
+    "url": "https://www.caa.co.uk/aircraft-register/g-info/search-g-info/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Turning a UK \"G-\" aircraft registration mark into the registered owner's name and address via the official CAA G-INFO register.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public G-INFO search. Bulk data extracts / data queries are a paid CAA service, but single-mark lookups are free with no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the CAA's own public register, not the owner; no one is notified. The register exists by law for public inspection, so use is legitimate and non-alerting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK Civil Aviation Authority register, maintained by law. Owner details are as supplied to the CAA; note the register records the registered owner, not necessarily legal title.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "G-INFO",
+      "CAA aircraft register",
+      "UK aircraft register"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "aircraft"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/civil-aviation-authority-aircraft-register-united-kingdom.md"
   },
   {

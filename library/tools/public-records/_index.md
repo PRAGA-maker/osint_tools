@@ -100,7 +100,7 @@ kind: group-index
 - **`belgium`** (high) — Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, ad
 - **`bellingcat-com`** (high) — Use when you have a `name` or keyword and want verbatim quotes from UK & Ireland local-council meetings — returns transcript hits naming who
 - **`berkely-library-data-lab`** (low) — OSINT tool: Berkely Library: Data Lab.
-- **`better-business-bureau`** (medium) — OSINT tool: Better Business Bureau.
+- **`better-business-bureau`** (medium) — Use when you have a business `name` or `employer-org` and want its contact details, principals and complaint history — returns `address`, `p
 - **`bgafd-co-uk`** (medium) — Use when you need to identify a British adult-film performer by stage name and resolve aliases/physical description — a niche performer data
 - **`big101-obituaries-listing-north-america`** (high) — Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obitua
 - **`bigquery-public-datasets`** (low) — OSINT tool: BigQuery public datasets.

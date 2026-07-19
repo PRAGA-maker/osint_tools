@@ -175,7 +175,7 @@ kind: group-index
 - **`map-army`** (medium) — Online tool for creating schemes of battles and military operations on the map. Extensive customization possibilities and a huge library of 
 - **`map-fight`** (medium) — compare size of two countries
 - **`map-maker`** (high) — Use when you need free forward/reverse geocoding or a quick custom map from an address — returns lat/lon coordinates (maps.co geocoding).
-- **`map-view-ngmdb`** (medium) — map for exploring some geologic maps and articles from the NGMDB (National Geologic Map Database).
+- **`map-view-ngmdb`** (medium) — Use when you have a US `geolocation` and want authoritative geologic and historical topographic maps of that spot — returns map imagery and 
 - **`mapalist`** (medium) — Use when you want to batch-plot a spreadsheet of addresses onto one map — geocodes an address list to mapped points (likely defunct; verify)
 - **`mapbox`** (medium) — Use when you need to build custom maps, geocode at scale, or run isochrone/routing queries via API — a mapping platform, not an investigativ
 - **`mapchart-net`** (low) — Use when you need to create a custom colored/annotated reference map (regions, coverage areas) for a case briefing — a map-making tool, not 

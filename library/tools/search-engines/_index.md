@@ -388,7 +388,7 @@ kind: group-index
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
 - **`ixigo`** (medium) — India travel information site
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
-- **`jersey-financial-services-commission`** (medium) — Website for the Jersey Financial Services Commission with registered company search
+- **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
 - **`jewish-virtual-library-online`** (medium) — Website that offers Jewish scripture search services
 - **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
@@ -768,7 +768,7 @@ kind: group-index
 - **`urvx-com`** (low) — File storage search engine based by Google CSE
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
 - **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
-- **`us-department-of-housing-and-urban-development`** (medium) — US Department of Housing and Urban Development - includes research, publications and data sets
+- **`us-department-of-housing-and-urban-development`** (medium) — Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housi
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
