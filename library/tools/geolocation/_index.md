@@ -20,7 +20,7 @@ kind: group-index
 - **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
 - **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
 - **`aprs-on-google-maps`** (high) — Use when you have an amateur-radio callsign or an area and want real-time/historic position tracks — returns map locations, movement history
-- **`aqicn`** (medium) — Air pollution gauges on the map
+- **`aqicn`** (low) — Use when you have a `geolocation` and want a map of live air-quality monitoring stations there — returns station points that double as corro
 - **`arcgis-mapping-platform`** (high) — Use when you have a `geolocation`/`address` and want to view or analyse published geospatial layers (parcels, imagery, infrastructure) — ret
 - **`arcgis`** (medium) — Use when you need authoritative basemaps, imagery, demographic, boundary, or live-feed map layers to add geographic context to a location, a
 - **`arggis-military-overlay`** (medium) — Military Overlay can be used to create overlays with standard military symbols, by using and adapting existing feature templates in **ArgGis
@@ -98,7 +98,7 @@ kind: group-index
 - **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points
 - **`geogig`** (low) — Use when you need to version, branch, and merge large geospatial datasets like Git for GIS — a data-engineering tool, not a lookup.
 - **`geogratis-canada`** (high) — Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names —
-- **`geohints`** (medium) — GeoHints is a website that provides information about things like traffic lights, utility poles, bollards etc. for different regions of the 
+- **`geohints`** (medium) — Use when you have an unidentified `image`/scene and want country-level geolocation clues — a reference of poles, bollards, signs, plates and
 - **`geoinfer`** (medium) — Use cautiously — listed as a geolocation tool but the site returns 404 and capabilities are unconfirmed; treat as unverified.
 - **`geoint-py`** (low) — Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/pr
 - **`geoint-search`** (medium) — OSINT tool: GeoINT Search.
@@ -328,7 +328,7 @@ kind: group-index
 - **`wikimapia`** (medium) — Use when you need crowd-labeled names and descriptions of buildings, businesses, and landmarks at a location that official maps leave blank.
 - **`wikinearby`** (medium) — Use when you have coordinates and want Wikipedia-documented places around them — returns nearby notable geolocation/landmarks to identify or
 - **`wikipedia-list-of-online-mapping-programs-worldwide`** (high) — Use when you have a `geolocation`/`address` in a specific country and want the right regional map/imagery service for it — routes you to loc
-- **`wikishootme`** (medium) — Worldwide map of geotagged Wikipedia Creative Commons Images. To display more information, log in with your Media Wiki account.
+- **`wikishootme`** (medium) — Use when you have a `geolocation` and want geotagged Wikipedia/Wikidata items and Commons images near it on a map — returns nearby `image`s 
 - **`wiman`** (low) — OSINT tool: Wiman.
 - **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce
 - **`world-population-density-map`** (medium) — Very detailed data. It's possible to look at the density not only by country and city, but also by individual metropolitan areas, towns, and

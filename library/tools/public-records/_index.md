@@ -777,7 +777,7 @@ kind: group-index
 - **`population-reference-bureau-data-finder`** (low) — OSINT tool: Population Reference Bureau Data Finder.
 - **`portugal`** (high) — Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `ass
 - **`postcert`** (medium) — Use when you have a `name` and want to verify a Colorado peace officer's certification, employment status, and any decertification/misconduc
-- **`pricepaid`** (medium) — OSINT tool: PricePaid.
+- **`pricepaid`** (low) — Use when you have a UK `address`/postcode and want its property sale history — returns sale prices, dates and property type (no owner names)
 - **`primelocation`** (low) — Use when you have a UK `address` or area and want property context — returns for-sale/to-rent listings, asking prices, photos, and sold-pric
 - **`prison-search-free-prison-inmate-locators`** (high) — Use when you have a `name` and want to find the right official US inmate locator — a state-by-state directory of free federal, state, and co
 - **`private-eye-co-uk`** (high) — Use when you have an `address` or area in England/Wales and want to know if it's owned by an offshore company — returns the offshore owner, 

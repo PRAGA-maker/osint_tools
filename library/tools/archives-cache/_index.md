@@ -39,7 +39,7 @@ kind: group-index
 - **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 
 - **`deltafeed`** (low) — OSINT tool: Deltafeed.
 - **`diggreader`** (low) — OSINT tool: DiggReader.
-- **`directory-of-open-access-journals`** (medium) — Search by 16 920 journals, 6, 588, 661 articles, 80 lanquages, 129 countries
+- **`directory-of-open-access-journals`** (low) — Use when you have a `name`/topic and want peer-reviewed open-access articles and journals — returns free full-text scholarly records for res
 - **`distill-io`** (low) — Distill.io is a website change monitoring tool that allows users to track changes on web pages.
 - **`easycache`** (medium) — quick search website old versions in different search engines and archives
 - **`factinsect`** (medium) — Free online tool for automating #factchecking. In order to confirm or deny some information, the service provides several arguments with ref

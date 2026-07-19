@@ -2,20 +2,20 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8115 total · 3637 full · 4478 stub (44% enriched)
+**Tools:** 8114 total · 3644 full · 4470 stub (44% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3442 · medium: 2712 · high: 1961
+low: 3447 · medium: 2706 · high: 1961
 
 ## Tools by trust
-unverified: 3482 · community: 3387 · trusted: 1234 · personal: 6 · untrustworthy: 6
+unverified: 3475 · community: 3389 · trusted: 1238 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 7/455
-- `archives-cache` — 48/133
+- `archives-cache` — 49/133
 - `communities-forums` — 93/397
 - `dark-web` — 15/118
 - `dating-classifieds` — 46/112
@@ -24,15 +24,15 @@ unverified: 3482 · community: 3387 · trusted: 1234 · personal: 6 · untrustwo
 - `email` — 244/246
 - `evidence-capture` — 5/31
 - `financial-crypto` — 34/127
-- `geolocation` — 224/348
+- `geolocation` — 227/348
 - `image-video-face` — 405/471
 - `maps-geospatial-data` — 31/141
 - `messaging` — 159/191
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 237/266
 - `phone` — 134/137
-- `public-records` — 715/1099
-- `search-engines` — 293/927
+- `public-records` — 716/1099
+- `search-engines` — 295/926
 - `social-networks` — 636/846
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
@@ -69,8 +69,8 @@ unverified: 3482 · community: 3387 · trusted: 1234 · personal: 6 · untrustwo
 - `library/tools/public-records/court-criminal-records` — 18 leaves
 - `library/tools/domains-ip-infrastructure/subdomains` — 17 leaves
 - `library/tools/image-video-face/images/metadata` — 17 leaves
-- `library/tools/search-engines/academic-publication-search` — 17 leaves
 - `library/tools/domains-ip-infrastructure/threat-feeds-and-platforms` — 16 leaves
+- `library/tools/search-engines/academic-publication-search` — 16 leaves
 - `library/tools/search-engines/general-search` — 16 leaves
 - `library/tools/documents-metadata/hosted-automated-analysis` — 14 leaves
 - `library/tools/domains-ip-infrastructure/whois-records` — 14 leaves

@@ -7,7 +7,7 @@ kind: group-index
 # search-engines
 
 ## Sub-groups
-- **`academic-publication-search/`** — 17 skill(s) below.
+- **`academic-publication-search/`** — 16 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
 - **`ftp-search/`** — 2 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
@@ -606,7 +606,7 @@ kind: group-index
 - **`project-vote-smart`** (medium) — Website providing information on US elected officials and candidates
 - **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`property-services-regulatory-authority`** (medium) — Irelands Property Services Regulatory Authority
-- **`property-value`** (medium) — Australian property value, sales history, and valuation report search tool
+- **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
 - **`pubmed`** (low) — OSINT tool: PubMed.
 - **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
@@ -742,7 +742,7 @@ kind: group-index
 - **`terrorism-reports`** (medium) — US Department of States country reports on terrorism
 - **`the-best-document-search-engine`** (medium) — OSINT tool: The best document search engine.
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
-- **`the-guantanamo-docket`** (medium) — Docket containing documents and research related to the detainee population of Guantanamo Bay from 2002
+- **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.
 - **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
