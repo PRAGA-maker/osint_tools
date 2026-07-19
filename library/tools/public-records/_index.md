@@ -12,7 +12,7 @@ kind: group-index
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
 - **`birth-records/`** — 1 skill(s) below.
 - **`company-profiles/`** — 12 skill(s) below.
-- **`court-criminal-records/`** — 18 skill(s) below.
+- **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
 - **`employee-profiles-and-resumes/`** — 3 skill(s) below.
 - **`financial-tax-resources/`** — 3 skill(s) below.
@@ -94,7 +94,7 @@ kind: group-index
 - **`bahrainbourse-com`** (low) — Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announce
 - **`bank-for-international-settlements-statistics`** (low) — OSINT tool: Bank for International Settlements Statistics.
 - **`banq-num-rique`** (low) — OSINT tool: BAnQ numérique.
-- **`barcode-lookup`** (medium) — OSINT tool: Barcode lookup.
+- **`barcode-lookup`** (medium) — Use when you have a barcode/UPC/EAN number (a `document-id`) — read off a product, package, or object in a photo — and want to identify the 
 - **`base-academic-search-engine`** (medium) — Academic-related search engine focusing on science and research
 - **`baytown-tx-employee-directory`** (medium) — OSINT tool: Baytown TX Employee Directory.
 - **`belgium`** (high) — Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, ad
@@ -187,7 +187,7 @@ kind: group-index
 - **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
 - **`company-information-service-gov-uk`** (high) — Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships 
 - **`company-research-resources-by-country-comparably`** (medium) — OSINT tool: Company Research Resources by Country Comparably.
-- **`company-search-tool`** (medium) — OSINT tool: Company search tool.
+- **`company-search-tool`** (medium) — Use when you have a company name or an `employer-org`/`associate` link and want to investigate the company and its directors/owners across m
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
 - **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
 - **`competeshark`** (medium) — OSINT tool: CompeteShark.

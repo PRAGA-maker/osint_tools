@@ -18,7 +18,7 @@ kind: group-index
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
 - **`arcgis-wildfire-map`** (medium) — OSINT tool: ArcGIS Wildfire Map.
 - **`archieinitiative-com`** (medium) — OSINT tool: archieinitiative.com.
-- **`atlas-co`** (medium) — OSINT tool: atlas.co.
+- **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
@@ -29,7 +29,7 @@ kind: group-index
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
 - **`covid-19-map`** (medium) — OSINT tool: COVID-19 Map.
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
-- **`digitaldigging-org`** (medium) — OSINT tool: digitaldigging.org.
+- **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
 - **`digitalglobe`** (medium) — OSINT tool: DigitalGlobe.
 - **`douwe-com`** (medium) — OSINT tool: douwe.com.
 - **`earth`** (medium) — OSINT tool: Earth.

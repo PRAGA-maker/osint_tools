@@ -117,7 +117,6 @@ kind: group-index
 - **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
 - **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
 - **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
-- **`blurtit`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
 - **`bookfinder-search-engine`** (medium) — Website that offers book search services by book title, author, or ISBN
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
@@ -469,7 +468,7 @@ kind: group-index
 - **`metacritic`** (medium) — Website related to movie and TV ratings
 - **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
-- **`metager-privacy-protected-search`** (medium) — OSINT tool: MetaGer: Privacy Protected Search.
+- **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
 - **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
