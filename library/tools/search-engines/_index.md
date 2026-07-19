@@ -21,7 +21,7 @@ kind: group-index
 - **`100-search-engines`** (medium) — Use when you have a `name`/`username` and want to fan one query across many sites (LinkedIn, Craigslist, Maps, Amazon…) — returns social-pro
 - **`1337x-torrent-search-engine`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
-- **`1websdirectory`** (medium) — General web directory, browsable by category, keyword and country
+- **`1websdirectory`** (medium) — Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classif
 - **`2lingual-search`** (medium) — OSINT tool: 2lingual Search.
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
@@ -730,7 +730,6 @@ kind: group-index
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
 - **`termwiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on w
 - **`terrorism-reports`** (medium) — US Department of States country reports on terrorism
-- **`the-best-document-search-engine`** (medium) — OSINT tool: The best document search engine.
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.

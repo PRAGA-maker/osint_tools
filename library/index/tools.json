@@ -17815,43 +17815,51 @@
   },
   {
     "id": "archive-page-addons-mozilla-org",
-    "name": "archive page (addons.mozilla.org)",
-    "description": "OSINT tool: archive page (addons.mozilla.org).",
+    "name": "Archive Page (Firefox add-on)",
+    "description": "Use when you have a `domain`/URL and want to preserve a live page before it changes — saves a permanent archive.today snapshot you can cite later.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/archive-page/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "One-click preservation of a web page to archive.today so evidence survives deletion or edits.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "document-id"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source Firefox extension; archive.today itself is free.",
+    "opsec": "active",
+    "opsecNote": "Archiving is ACTIVE — it makes archive.today fetch the target URL, and the snapshot becomes PUBLIC and permanently indexed at a shareable URL. Do not archive pages you need to keep confidential, and be aware the target's server sees archive.today's fetch (not your IP). Archive from a sock-puppet browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "A well-reviewed open-source add-on (10k+ users, ~4.7★) that simply drives archive.today; the archiving service is a widely-used, reputable preservation tool.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Archive Page Firefox extension",
+      "archive.today saver"
+    ],
     "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
+      "archiving",
+      "evidence-preservation",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/archive-page-addons-mozilla-org.md"
   },
   {
@@ -25368,38 +25376,52 @@
   },
   {
     "id": "centos-pastebin-service",
-    "name": "CentOS Pastebin Service",
-    "description": "OSINT tool: CentOS Pastebin Service.",
+    "name": "CentOS Pastebin",
+    "description": "Use when you have a `username`/keyword and want to search public pastes for leaked configs, logs, or credentials — returns paste content tied to a subject or system.",
     "url": "https://paste.centos.org/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding technical pastes (configs, logs, error dumps, sometimes credentials) that a subject or their systems posted for troubleshooting.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public paste service (a Stikked/fpaste-style bin used by the CentOS/Linux community); no account required to view or create pastes.",
+    "opsec": "passive",
+    "opsecNote": "Reading existing public pastes is passive. Do NOT paste any target data yourself — pastes are public and indexable, and creating one leaks your content. Browse from a sock-puppet profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community paste bin; content is anonymous user-submitted text, so anything found is unverified and must be corroborated — but leaked configs/logs are often genuine.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
+    "relatedTools": [],
+    "aliases": [
+      "paste.centos.org",
+      "CentOS pastebin"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "pastebin",
+      "leaks",
+      "linux"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/centos-pastebin-service.md"
   },
   {
@@ -27319,25 +27341,32 @@
   },
   {
     "id": "eweek-technology-news",
-    "name": "Eweek Technology News",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
+    "name": "eWeek (Technology News)",
+    "description": "Use when you have a `name`/`employer-org` in enterprise IT and want press coverage — returns articles, quotes, and role/company context.",
     "url": "http://www.eweek.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding enterprise-IT trade coverage — quoted executives, analysts, and vendors — to corroborate a subject's role or claims.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported enterprise-technology news site; no account to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading/searching of a public news site; no subject interaction. Ad/tracker-heavy — use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running enterprise-IT trade publication; editorial journalism, reliable reporting but a secondary source for any personal detail.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -27346,15 +27375,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "eWeek",
+      "eweek.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/eweek-technology-news.md"
   },
   {
@@ -76163,52 +76196,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/info-sniper.md"
-  },
-  {
-    "id": "infobox-russia",
-    "name": "Infobox (Russia)",
-    "description": "Russian service provider for registering websites and domain addresses",
-    "url": "http://infobox.ru",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/infobox-russia.md"
   },
   {
     "id": "infosniper",
@@ -166153,36 +166140,52 @@
   },
   {
     "id": "lyzem-blog",
-    "name": "Lyzem Blog",
-    "description": "OSINT tool: Lyzem Blog.",
+    "name": "Lyzem",
+    "description": "Use when you have a `username`/keyword and want public Telegram channels, groups, and messages — returns matching Telegram content and channel social-profiles.",
     "url": "https://lyzem.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching public Telegram channels, groups, and messages by keyword or username without joining anything.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Telegram search engine; no account needed to search public content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searches an external index of already-public Telegram content, so you do not join channels or reveal a Telegram account — passive. If you then open a channel inside Telegram to verify, use a sock-puppet Telegram account, since viewing/joining there can be observable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Telegram search index; coverage is limited to public channels it has crawled, and results can be stale — treat as a discovery layer, then verify in Telegram.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [],
+    "aliases": [
+      "Lyzem search",
+      "lyzem.com Telegram search"
+    ],
+    "tags": [
+      "telegram",
+      "messaging-osint",
+      "channel-search"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/lyzem-blog.md"
   },
   {
@@ -168324,39 +168327,52 @@
   },
   {
     "id": "telegcrack-com",
-    "name": "Telegcrack.com",
-    "description": "search in telegra.ph",
+    "name": "Telegcrack",
+    "description": "Use when you have a `name`/keyword and want Telegra.ph articles about or by a subject — returns matching telegra.ph posts (a common Telegram publishing surface).",
     "url": "https://telegcrack.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching Telegra.ph (Telegram's article publisher) by title/keyword to surface posts that don't show up in normal search engines.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free search engine for Telegra.ph content; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searches an index of already-public Telegra.ph pages; the author is not notified and you never touch Telegram directly. Passive. Opening a found telegra.ph page is an ordinary web request.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An independent third-party index of Telegra.ph (billed as \"the first Telegra.ph search engine\", 15M+ posts); coverage depends on what it has crawled, so absence isn't proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Telegcrack",
+      "Telegra.ph search"
+    ],
     "tags": [
-      "Messengers",
-      "Telegram"
+      "telegram",
+      "telegraph",
+      "messaging-osint"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegcrack-com.md"
   },
   {
@@ -221244,48 +221260,53 @@
   },
   {
     "id": "california-registered-voter-verification",
-    "name": "California Registered Voter Verification",
-    "description": "California voter registration verification and search",
+    "name": "California Registered Voter Verification (Alameda County / ACVote)",
+    "description": "Use when you have a `name` + DOB and want to confirm California voter registration status — returns a registration confirmation, not a searchable voter file.",
     "url": "https://www.acvote.org/index",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a specific California (Alameda County) voter is registered, plus official county election information.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official county government election site; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The public \"check my registration\" tool is designed for a voter to confirm their OWN status and typically requires identifying details (name + DOB) that only match a specific record; it is not a browse-anyone database. Passive toward any third party. Do not attempt to misuse it; California voter-file data for others is restricted to authorized (e.g., election/campaign) users under state law.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Alameda County (California) Registrar of Voters site; authoritative for that county's registration status and election information.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "ACVote",
+      "Alameda County Registrar of Voters",
+      "California voter registration check"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "voter-records",
+      "elections",
+      "california"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/california-registered-voter-verification.md"
   },
   {
@@ -228887,30 +228908,25 @@
   {
     "id": "easybib-citation-generator",
     "name": "EasyBib Citation Generator",
-    "description": "Academic-related program that generates an automatic bibliographical reference and/or citation from a website URL",
+    "description": "Use when you have a source URL/document and want a formatted citation for a report — returns a bibliographic reference (a write-up aid, not a person lookup).",
     "url": "http://www.easybib.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Generating properly formatted citations (MLA/APA/etc.) for the sources in an investigative report or dossier.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free MLA citation generation; APA/Chicago and advanced features are gated behind a Chegg/EasyBib account or paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A write-up/documentation aid, not an investigative query — it does not touch any subject. Note you paste source URLs into a Chegg-owned service; avoid entering sensitive/internal URLs you don't want logged by a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known Chegg-owned citation tool; reliable for formatting references, but auto-pulled citation metadata should be proofread. It provides no person-level intelligence.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -228919,18 +228935,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "easybib"
     ],
+    "aliases": [
+      "EasyBib",
+      "easybib.com"
+    ],
+    "tags": [
+      "citation",
+      "reporting",
+      "documentation"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/easybib-citation-generator.md"
   },
   {
@@ -245664,54 +245683,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/medicalcouncil-ie.md"
-  },
-  {
-    "id": "melissadata-campaign-contributions",
-    "name": "MelissaData (Campaign Contributions)",
-    "description": "OSINT tool: MelissaData (Campaign Contributions).",
-    "url": "http://www.melissadata.com/lookups/fec.asp",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "voter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "carrier-route",
-      "melissa-us",
-      "mellssa-data"
-    ],
-    "_file": "library/tools/public-records/melissadata-campaign-contributions.md"
   },
   {
     "id": "mergent-online",
@@ -267045,53 +267016,56 @@
   },
   {
     "id": "us-dept-of-energy-office-of-science-search",
-    "name": "US Dept of Energy Office of Science Search",
-    "description": "Academic-related search engine for open access publications in the sciences that uses federated search technology",
+    "name": "OSTI.gov (US DOE Office of Scientific & Technical Information)",
+    "description": "Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.",
     "url": "http://www.osti.gov/home",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a scientist/engineer's US Department of Energy-funded publications, their affiliations, and co-author networks.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government federated search over DOE-funded scientific and technical publications; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive search of a public government research repository; the subject is not notified. Runs on osti.gov; no target footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US DOE Office of Scientific and Technical Information; authoritative for DOE-funded research metadata, though it covers only DOE-related output.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "department-of-energy-patents",
       "doe-data-explorer",
       "osti-science-cinema-search"
     ],
+    "aliases": [
+      "OSTI.gov",
+      "DOE Office of Science search",
+      "Office of Scientific and Technical Information"
+    ],
+    "tags": [
+      "academic",
+      "research-publications",
+      "government"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-dept-of-energy-office-of-science-search.md"
   },
   {
@@ -270236,24 +270210,30 @@
   {
     "id": "1websdirectory",
     "name": "1WebsDirectory",
-    "description": "General web directory, browsable by category, keyword and country",
+    "description": "Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classification.",
     "url": "http://www.1websdirectory.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a small business in a browsable web directory to find its website, category, and country.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "domain",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free general web directory browsable by category, keyword, and country; free (often paid-featured) business submissions.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive browsing of a public directory; no subject interaction. Low-traffic directory site — use a clean browser for ad/tracker hygiene, but there is no target footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general-purpose, submission-driven web directory of the early-2000s type; listings are self-submitted and unvetted, so treat any entry as a lead to verify.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -270262,15 +270242,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "1WebsDirectory",
+      "1websdirectory.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "web-directory",
+      "business-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/1websdirectory.md"
   },
   {
@@ -303926,40 +303909,6 @@
       "voter-registration-data"
     ],
     "_file": "library/tools/search-engines/terrorism-reports.md"
-  },
-  {
-    "id": "the-best-document-search-engine",
-    "name": "The best document search engine",
-    "description": "OSINT tool: The best document search engine.",
-    "url": "http://www.doc-txt.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/the-best-document-search-engine.md"
   },
   {
     "id": "the-cyber-post-osint-tools-and-resources",

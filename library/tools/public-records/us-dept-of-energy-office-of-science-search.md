@@ -1,56 +1,90 @@
 ---
 id: us-dept-of-energy-office-of-science-search
-name: US Dept of Energy Office of Science Search
-description: Academic-related search engine for open access publications in the sciences that uses federated search technology
+name: OSTI.gov (US DOE Office of Scientific & Technical Information)
+description: Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
 url: http://www.osti.gov/home
 category: public-records
 path:
 - public-records
-bestFor: ''
+bestFor: Finding a scientist/engineer's US Department of Energy-funded publications, their affiliations, and co-author networks.
 selectorsIn:
 - name
-- employer-org
 selectorsOut:
 - employer-org
-- address
-status: unknown
+- associate
+status: live
 pricing: free
+costNote: Free US government federated search over DOE-funded scientific and technical publications; no account needed.
 opsec: passive
-opsecNote: ''
+opsecNote: Passive search of a public government research repository; the subject is not notified. Runs on osti.gov; no target footprint.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
-trust: unverified
-trustNote: ''
+trust: trusted
+trustNote: Operated by the US DOE Office of Scientific and Technical Information; authoritative for DOE-funded research metadata, though it covers only DOE-related output.
 missingPersonsRelevance: medium
 coverage:
-- global
+- us
 auth: none
-api: false
+api: true
 localInstall: false
 registration: false
-aliases: []
-tags:
-- toddington
-- curated-directory
-- academic-scholarly-research-tools
-source: toddington-resources
-lastVerified: ''
-enrichment: full
 relatedTools:
-- department-of-energy-patents
 - doe-data-explorer
 - osti-science-cinema-search
+aliases:
+- OSTI.gov
+- DOE Office of Science search
+- Office of Scientific and Technical Information
+tags:
+- academic
+- research-publications
+- government
+source: toddington-resources
+lastVerified: '2026-07-19'
+enrichment: full
 ---
 
-# US Dept of Energy Office of Science Search
+# OSTI.gov (US DOE Office of Scientific & Technical Information)
 
-> Academic-related search engine for open access publications in the sciences that uses federated search technology
+> The US Department of Energy's research repository — search a scientist by name to pull their DOE-funded publications, lab/university affiliations, and co-authors.
 
-- **URL:** http://www.osti.gov/home
-- **Best for:** —
-- **Source:** harvested from `toddington-resources`
+## When to use
+Your subject is (or was) a scientist, engineer, or researcher who may have received DOE funding — think national labs (Oak Ridge, Los Alamos, Berkeley, Sandia), energy, physics, nuclear, or materials work. Searching their `name` returns papers, technical reports, and datasets that reveal their institution (`employer-org`), research focus, timeframe, and co-authors (`associate` network) — strong professional-identity corroboration.
 
-Harvested from Toddington International free OSINT resources directory (category: Academic & Scholarly Research Tools). Curated third-party tool reviewed by TII; availability and pricing not independently verified.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open https://www.osti.gov/ and search the researcher's name (quote it; add a field/keyword to disambiguate common names).
+2. Open records: authors, affiliations, sponsoring org/lab, publication dates, and abstracts.
+3. Note co-authors and the funding lab/university.
+4. Pivot: an affiliation feeds directory/LinkedIn searches; co-authors are `associate` leads; an ORCID/author ID (when present) links to broader publication databases. A free API supports bulk queries.
 
-_Enrichment: full. If stub, complete per `schema/templates/tool.template.md`._
+## Inputs → Outputs
+- **In:** `name` (researcher)
+- **Out:** publications, `employer-org` (lab/university), co-author `associate` links, research timeline
+- **Empty/negative result looks like:** no records — the person may not do DOE-funded work; try PubMed, Google Scholar, arXiv, or ORCID for other fields. Absence here only rules out DOE-related output.
+
+## Gotchas & OpSec
+- Scope is DOE-funded science only — a researcher outside energy/physics/nuclear may have zero records despite a strong publication record elsewhere.
+- Common names collide; disambiguate with institution/topic/co-author.
+- OpSec: passive government-repository search.
+
+## Overlaps ("do both")
+- Complements PubMed, Google Scholar, arXiv, and ORCID — each indexes a different research domain; OSTI is the DOE lens on a subject's scientific output.
+
+## Trust & verifiability
+`trust: trusted` — authoritative first-party DOE repository; publication and affiliation metadata are reliable within its DOE-funded scope.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | us-dept-of-energy-office-of-science-search |
+| category | public-records |
+| selectorsIn → selectorsOut | name → employer-org, associate |
+| pricing / cost | free |
+| trust | trusted |
+| MP relevance | medium |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | no |

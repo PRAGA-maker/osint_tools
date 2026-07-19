@@ -88,7 +88,7 @@ kind: group-index
 - **`line-me`** (high) — Use when you have a `phone` number or LINE ID (`username`) for a subject likely in Japan/Taiwan/Thailand and want to confirm a LINE account 
 - **`linecorp-com`** (high) — Use when you have a `phone` or `username` tied to a LINE messenger account and need to know what data LINE holds and how (via legal process)
 - **`lookup-guru`** (high) — Use when you have a Discord user ID (`device-id`/snowflake) and want the public profile behind it — returns username, avatar/banner image, a
-- **`lyzem-blog`** (medium) — OSINT tool: Lyzem Blog.
+- **`lyzem-blog`** (medium) — Use when you have a `username`/keyword and want public Telegram channels, groups, and messages — returns matching Telegram content and chann
 - **`maigret-osint-bot`** (high) — Use when you have a `username` and want to check thousands of sites for accounts without installing anything — a Telegram bot wrapper for Ma
 - **`maltego-telegram`** (high) — Use when you have a `phone`, Telegram `username`, or channel and want to map users, groups, admins, and forwards in Maltego — returns social
 - **`mastovue`** (low) — Use when you have a hashtag or topic and want to browse matching Mastodon accounts/posts across the fediverse without an account — returns `
@@ -124,7 +124,7 @@ kind: group-index
 - **`support-discord-com`** (high) — Use when you're resolving a Discord `username` and need to understand the 2023 unique-username vs display-name system — returns reference kn
 - **`surftg-bot`** (high) — Use when you have a `name`, `username`, or keyword and want to find matching Telegram messages/channels via a search bot — returns `social-p
 - **`telegago-2`** (high) — Use when you have a `name`, `username`, keyword, or phone and want to find public Telegram content mentioning it — a Google Custom Search En
-- **`telegcrack-com`** (medium) — search in telegra.ph
+- **`telegcrack-com`** (medium) — Use when you have a `name`/keyword and want Telegra.ph articles about or by a subject — returns matching telegra.ph posts (a common Telegram
 - **`telegram-channel-joiner`** (high) — Use when you have a list of Telegram channel `username`s/links and want to bulk-join them from a sock-puppet account for monitoring — return
 - **`telegram-channels-list`** (medium) — Use when you have a topic/keyword and want to discover public Telegram channels around it — returns social-profile and username.
 - **`telegram-channels-scraper-telegraphite`** (high) — Use when you have public Telegram channel `username`s and want their posts, media, and any leaked contacts archived to JSON — returns social

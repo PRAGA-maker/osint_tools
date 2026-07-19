@@ -240,7 +240,6 @@ kind: group-index
 - **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
-- **`infobox-russia`** (medium) — Russian service provider for registering websites and domain addresses
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — OSINT tool: Infosniper.
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges

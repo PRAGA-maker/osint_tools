@@ -18,7 +18,7 @@ kind: group-index
 - **`archive-md`** (medium) — Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `d
 - **`archive-org-downloader`** (medium) — A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution t
 - **`archive-org`** (high) — Use when you have a `domain` or URL and want to retrieve historical snapshots of a page as it looked in the past — returns archived captures
-- **`archive-page-addons-mozilla-org`** (medium) — OSINT tool: archive page (addons.mozilla.org).
+- **`archive-page-addons-mozilla-org`** (medium) — Use when you have a `domain`/URL and want to preserve a live page before it changes — saves a permanent archive.today snapshot you can cite 
 - **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
 - **`archive-vn`** (high) — Use when you have a `domain` or URL and want an on-demand, permanent snapshot of a page (including JS-heavy or short-lived content) — return

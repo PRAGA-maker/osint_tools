@@ -53,7 +53,7 @@ kind: group-index
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`care2`** (medium) — Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
-- **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
+- **`centos-pastebin-service`** (medium) — Use when you have a `username`/keyword and want to search public pastes for leaked configs, logs, or credentials — returns paste content tie
 - **`charitable-impact`** (medium) — Network of charities in Canada
 - **`chemistry-com`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Chemistry.com dating site — returns a soc
 - **`christian-mingle`** (medium) — Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile
@@ -94,7 +94,7 @@ kind: group-index
 - **`eumom-ie`** (medium) — OSINT tool: eumom.ie.
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`eweek-technology-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`eweek-technology-news`** (medium) — Use when you have a `name`/`employer-org` in enterprise IT and want press coverage — returns articles, quotes, and role/company context.
 - **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
 - **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds

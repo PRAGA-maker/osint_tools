@@ -130,7 +130,7 @@ kind: group-index
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
 - **`cal-poly-email-search`** (medium) — OSINT tool: Cal Poly Email Search.
-- **`california-registered-voter-verification`** (medium) — California voter registration verification and search
+- **`california-registered-voter-verification`** (medium) — Use when you have a `name` + DOB and want to confirm California voter registration status — returns a registration confirmation, not a searc
 - **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
 - **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
 - **`canada-gazette`** (medium) — Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appo
@@ -274,7 +274,7 @@ kind: group-index
 - **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
-- **`easybib-citation-generator`** (medium) — Academic-related program that generates an automatic bibliographical reference and/or citation from a website URL
+- **`easybib-citation-generator`** (medium) — Use when you have a source URL/document and want a formatted citation for a report — returns a bibliographic reference (a write-up aid, not 
 - **`easystreet`** (medium) — OSINT tool: EasyStreet.
 - **`ebra-be`** (high) — Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward e
 - **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
@@ -591,7 +591,6 @@ kind: group-index
 - **`massachusetts`** (high) — Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink t
 - **`media-room-and-blue-book`** (low) — Use when you have a subject affiliated with the University of Toronto and want their expert profile and media contact — returns faculty affi
 - **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
-- **`melissadata-campaign-contributions`** (medium) — OSINT tool: MelissaData (Campaign Contributions).
 - **`mergent-online`** (medium) — OSINT tool: Mergent Online.
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
@@ -993,7 +992,7 @@ kind: group-index
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
 - **`us-data-and-statistics`** (low) — OSINT tool: US Data and Statistics.
-- **`us-dept-of-energy-office-of-science-search`** (medium) — Academic-related search engine for open access publications in the sciences that uses federated search technology
+- **`us-dept-of-energy-office-of-science-search`** (medium) — Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
 - **`us-institute-of-peace`** (medium) — United States Institute of Peace website, providing a special report on the use of the internet in modern terrorism
 - **`us-tax-court`** (high) — Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), part
 - **`usgenweb-archives-united-states`** (high) — Use when you have a `name` and want transcribed US genealogical records — obituaries, wills, cemetery, census, and marriage records — return
