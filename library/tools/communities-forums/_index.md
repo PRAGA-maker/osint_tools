@@ -54,7 +54,6 @@ kind: group-index
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`care2`** (medium) — Wellness welfare and rights networking website
-- **`catster`** (medium) — Networking website for cat lovers
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
 - **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
 - **`charitable-impact`** (medium) — Network of charities in Canada
@@ -149,7 +148,6 @@ kind: group-index
 - **`google-com-27`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.
-- **`google-com-32`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
 - **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.

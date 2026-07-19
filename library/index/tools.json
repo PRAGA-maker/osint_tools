@@ -25288,46 +25288,6 @@
     "_file": "library/tools/communities-forums/care2.md"
   },
   {
-    "id": "catster",
-    "name": "Catster",
-    "description": "Networking website for cat lovers",
-    "url": "http://www.catster.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/catster.md"
-  },
-  {
     "id": "cbc-news-worldwide-canada",
     "name": "CBC News (Canada)",
     "description": "Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `employer-org`, `geolocation`.",
@@ -29479,48 +29439,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-31.md"
-  },
-  {
-    "id": "google-com-32",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Adefencetalk.com%2Fmilitary%2Fforums%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-32.md"
   },
   {
     "id": "google-com-33",
@@ -134228,45 +134146,6 @@
     "_file": "library/tools/image-video-face/images/metadata/c2pa-verify.md"
   },
   {
-    "id": "caloriemama",
-    "name": "Caloriemama",
-    "description": "AI can identify the type of food from the photo and give information about its caloric value.",
-    "url": "https://www.caloriemama.ai/api",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Image Analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/caloriemama.md"
-  },
-  {
     "id": "camera-summary-exif-tool",
     "name": "Camera Summary EXIF Tool",
     "description": "Use when you have an `image` (JPEG) and want its embedded camera metadata — returns EXIF details like camera make/model, timestamp and any GPS geolocation.",
@@ -201751,41 +201630,55 @@
   },
   {
     "id": "licenseplates",
-    "name": "Licenseplates",
-    "description": "OSINT tool: Licenseplates.",
+    "name": "License Plates of the World",
+    "description": "Use when you have an `image` of an unknown `vehicle-plate` and want to identify its origin — returns the country/state/era a plate design belongs to as a geolocation lead.",
     "url": "http://www.worldlicenseplates.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying which country, US state or era a license plate is from by matching its design, colours and format.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public reference gallery; no account, no payment, no registration.",
+    "opsec": "passive",
+    "opsecNote": "You browse a static reference gallery — nothing is submitted about your subject, no lookup is logged against a target, and no one is notified. Entirely passive; the plate number itself never leaves your notes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing enthusiast reference (cited in the Bellingcat toolkit) documenting plate designs worldwide; excellent for design/origin identification, but it is a design catalog, not a registration database — it never returns an owner.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "world-license-plates"
     ],
+    "aliases": [
+      "worldlicenseplates.com",
+      "License Plates of the World"
+    ],
+    "tags": [
+      "expert-search",
+      "vehicle",
+      "plate-identification",
+      "geolocation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/licenseplates.md"
   },
   {
@@ -233798,52 +233691,6 @@
     "_file": "library/tools/public-records/genealogyintime.md"
   },
   {
-    "id": "genealogyplace-family-search",
-    "name": "GenealogyPlace Family Search",
-    "description": "Geneology-related search for ancestral, family, and historical records, using a database from multiple countries",
-    "url": "http://www.genealogyplace.com/records/000/WorldWide-1-0.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/genealogyplace-family-search.md"
-  },
-  {
     "id": "geneanet-org",
     "name": "geneanet.org",
     "description": "Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family), `dob`, and `address`/place links.",
@@ -236844,41 +236691,55 @@
   },
   {
     "id": "govdata-das-datenportal-f-r-deutschland-german",
-    "name": "GOVDATA - Das Datenportal für Deutschland (German)",
-    "description": "German administrative data",
+    "name": "GovData — Das Datenportal für Deutschland",
+    "description": "Use when you have a German place, agency or `employer-org` and want official open datasets — returns administrative, geographic and statistical data with source metadata.",
     "url": "https://www.govdata.de/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "German administrative data",
-    "input": "Dataset name, keyword, category",
-    "output": "Open datasets, metadata, downloads",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching Germany's official open-government data portal for administrative, municipal and geographic datasets.",
+    "selectorsIn": [
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, openly-licensed government open-data portal; no account needed to search or download (licences noted per dataset).",
     "opsec": "passive",
-    "opsecNote": "Official German government portal",
+    "opsecNote": "Anonymous browsing/downloading of published open-government data. No login, nothing written, no subject notification. This is aggregate/administrative data, not a person-lookup, so re-identification risk is low but check each dataset's licence before republishing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official portal operated for the German federal, state and municipal administrations; datasets are published by government bodies, so provenance is authoritative (individual dataset accuracy still depends on the publishing agency).",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "de"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GovData",
+      "Datenportal für Deutschland"
+    ],
+    "tags": [
+      "open-data",
+      "germany",
+      "government-portal"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/govdata-das-datenportal-f-r-deutschland-german.md"
   },
   {
@@ -260605,37 +260466,50 @@
   {
     "id": "serpstat",
     "name": "Serpstat",
-    "description": "OSINT tool: Serpstat.",
+    "description": "Use when you have a `domain` and want its SEO/traffic footprint — returns keywords, competitors, backlinks and estimated visibility to profile a site or organization.",
     "url": "https://serpstat.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Profiling a domain's search footprint, backlinks and competitor set to understand an organization's online presence.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — a free account gives a small daily quota of lookups; deep backlink/keyword data needs a paid plan or the 7-day trial.",
+    "opsec": "passive",
+    "opsecNote": "You query Serpstat's own index, not the target's server, so the site owner is not directly pinged. A free account requires registration (email), which is attributable — use a research identity. Nothing is written to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trustNote": "A commercial SEO analytics vendor; metrics (traffic, keyword volume, visibility) are Serpstat's estimates from its own crawl, so treat figures as directional, not exact.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Serpstat SEO"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "domain-analytics",
+      "seo"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/serpstat.md"
   },
   {
@@ -286343,46 +286217,6 @@
     "_file": "library/tools/search-engines/i-search-from.md"
   },
   {
-    "id": "ialeia",
-    "name": "IALEIA",
-    "description": "International Association of Law Enforcement Intelligence Analysts",
-    "url": "http://www.ialeia.org/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/ialeia.md"
-  },
-  {
     "id": "ibj-criminal-defense-wiki",
     "name": "IBJ Criminal Defense Wiki",
     "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on law",
@@ -293304,30 +293138,37 @@
   },
   {
     "id": "newsbrief",
-    "name": "NewsBrief",
-    "description": "OSINT tool: NewsBrief.",
+    "name": "EMM NewsBrief",
+    "description": "Use when you have a `name` or `employer-org` and want breaking multilingual news mentions — returns clustered articles across ~70 languages with named-entity links.",
     "url": "https://emm.newsbrief.eu/NewsBrief/clusteredition/en/latest.html",
     "category": "search-engines",
     "path": [
       "search-engines",
       "news-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Monitoring a person, organization or place across thousands of news sources in dozens of languages, clustered in near-real time.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service run by the European Commission's Joint Research Centre (Europe Media Monitor); no account or payment. (The service is being consolidated under media-monitor.europa.eu.)",
+    "opsec": "passive",
+    "opsecNote": "Reading a public news-aggregation site — no login, nothing written, the subject is not notified. Ordinary web-reading hygiene applies; the value is that queries touch the aggregator, not the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the EU's Joint Research Centre (Europe Media Monitor / EMM); the clustering and entity-tagging are automated over third-party news, so verify the underlying articles at their source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -293335,11 +293176,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NewsBrief",
+      "Europe Media Monitor",
+      "EMM"
+    ],
+    "tags": [
+      "news-aggregator",
+      "multilingual",
+      "named-entity"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/newsbrief.md"
   },
   {
@@ -302680,25 +302529,33 @@
   {
     "id": "sonicrun",
     "name": "SonicRun",
-    "description": "Sonic Run is an internet search engine providing web, meta, blog, and news search results.",
+    "description": "Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream engines may bury or omit.",
     "url": "https://www.sonicrun.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A free alternative/meta search engine to run a name or handle against a different index than Google/Bing.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; ad-supported and offers paid site-submission/SEO listings, but querying costs nothing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A third-party search box logs your query and IP like any engine; the target is never contacted. Use a research browser profile. Results quality is uneven, so treat it as a supplementary net, not a primary source.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A small independent search/metasearch portal; it surfaces third-party pages it does not control, so verify every hit at its source.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -302706,15 +302563,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Sonic Run"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "alternative-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sonicrun.md"
   },
   {
@@ -309894,46 +309754,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/yelp.md"
-  },
-  {
-    "id": "yippy",
-    "name": "Yippy",
-    "description": "OSINT tool: Yippy.",
-    "url": "https://yippy.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "meta-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/yippy.md"
   },
   {
     "id": "yogsec",
@@ -350434,39 +350254,51 @@
   },
   {
     "id": "wikistalk-analyze-wikipedia-user-s-activity",
-    "name": "WikiStalk : Analyze Wikipedia User's Activity",
-    "description": "OSINT tool: WikiStalk : Analyze Wikipedia User's Activity.",
+    "name": "WikiStalk: Analyze Wikipedia User Activity",
+    "description": "Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pattern-of-life signal.",
     "url": "https://github.com/altilunium/wistalk",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a Wikipedia editor's contributions, active hours and topical interests from their public edit history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python script on GitHub); no account or payment. You run it locally.",
+    "opsec": "passive",
+    "opsecNote": "It reads Wikipedia's PUBLIC contribution API, so the target editor is not notified and you only touch Wikimedia's public endpoints. Run it from a research machine/IP; the analysis reveals nothing the public contributions page doesn't, it just aggregates it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "A small community Python project (altilunium/wistalk); it aggregates official Wikimedia data, so the underlying facts are authoritative even though the script itself is unverified — sanity-check results against Special:Contributions.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wistalk",
+      "WikiStalk"
+    ],
     "tags": [
       "Social Media",
-      "Wikipedia"
+      "Wikipedia",
+      "pattern-of-life"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/wikistalk-analyze-wikipedia-user-s-activity.md"
   },
   {

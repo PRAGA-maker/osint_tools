@@ -362,7 +362,6 @@ kind: group-index
 - **`genealogy`** (high) — Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob
 - **`genealogybank-ssdi`** (medium) — Use when you have a `name` (and maybe `dob`) and want to confirm a death or find an obituary — returns Social Security Death Index and obitu
 - **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
-- **`genealogyplace-family-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`geneanet-org`** (high) — Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family)
 - **`geneologyintime-family-tree-search-engine`** (medium) — Use when you have a `name` and want free genealogy records across many databases at once — returns relatives (`associate`), historical `addr
 - **`general-land-office-records`** (medium) — The Official Federal Land Records Site providing search tool for land patents, surveys and field notes
@@ -418,7 +417,7 @@ kind: group-index
 - **`gov-uk-9`** (high) — Use when you (lawfully) hold a subject's driving-licence number plus their NI number and postcode, or they give you a share code — the DVLA 
 - **`gov-uk`** (medium) — Use when you have a UK VAT number (an `employer-org` identifier) and want to validate it — HMRC returns the registered business `name` and `
 - **`govchain-co-za`** (high) — Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a 
-- **`govdata-das-datenportal-f-r-deutschland-german`** (medium) — German administrative data
+- **`govdata-das-datenportal-f-r-deutschland-german`** (low) — Use when you have a German place, agency or `employer-org` and want official open datasets — returns administrative, geographic and statisti
 - **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
 - **`government-staff-directory`** (medium) — OSINT tool: Government staff directory.
 - **`govsalaries`** (medium) — Use when you have a `name` (and ideally a US state/employer) and want to confirm public-sector employment and pay — returns `employer-org`, 
@@ -871,7 +870,7 @@ kind: group-index
 - **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
 - **`semantic-scholar`** (medium) — Use when you have a `name` in academia and want their papers, co-authors and affiliations as a free citation graph — returns employer-org, a
-- **`serpstat`** (medium) — OSINT tool: Serpstat.
+- **`serpstat`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns keywords, competitors, backlinks and estimated visibility to profi
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
 - **`services-en-ligne`** (low) — OSINT tool: Services en ligne.
 - **`sesac-com`** (high) — Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns

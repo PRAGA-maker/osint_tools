@@ -753,7 +753,7 @@ kind: group-index
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
 - **`wikimedia-cloud-page-views`** (medium) — The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare
 - **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
-- **`wikistalk-analyze-wikipedia-user-s-activity`** (medium) — OSINT tool: WikiStalk : Analyze Wikipedia User's Activity.
+- **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
 - **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t
 - **`wikiwho`** (medium) — Database of edits made to #Wikipedia using IP ranges of organizations, government agencies and companies (FBI, NATO, European Parliament, et
 - **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.

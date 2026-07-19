@@ -361,7 +361,6 @@ kind: group-index
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
 - **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
-- **`ialeia`** (medium) — International Association of Law Enforcement Intelligence Analysts
 - **`ibj-criminal-defense-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
 - **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
@@ -714,7 +713,7 @@ kind: group-index
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
 - **`sogou-china`** (low) — OSINT tool: SoGou (China).
 - **`somalia-conflict`** (medium) — List of individuals reported missing in connection with the conflict in Somalia
-- **`sonicrun`** (medium) — Sonic Run is an internet search engine providing web, meta, blog, and news search results.
+- **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`soovle`** (low) — OSINT tool: Soovle.
 - **`soso`** (medium) — Chinese web search engine
 - **`sougou-com`** (medium) — OSINT tool: Sougou.com.
@@ -871,7 +870,6 @@ kind: group-index
 - **`yassen-com`** (medium) — OSINT tool: Yassen.com.
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
-- **`yippy`** (medium) — OSINT tool: Yippy.
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Charitable search engine that allows you to choose an environmental project to support with your search.
 - **`youdao-search-engine-china`** (medium) — Chinese based web search engine by NetEase

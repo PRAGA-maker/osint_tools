@@ -51,7 +51,6 @@ kind: group-index
 - **`bhuvan`** (medium) — Indian Geo-platfrom of ISRO.
 - **`bleepingcomputer-com`** (low) — Use when you have a redacted/pixelated image and need to understand whether obscured text can be recovered — this is a reference article, no
 - **`buzzsprout`** (high) — Use when you have a `name` or `username` and want to find a subject's podcast presence — returns social-profile, audio/show-notes content, a
-- **`caloriemama`** (medium) — AI can identify the type of food from the photo and give information about its caloric value.
 - **`camera-summary-exif-tool`** (high) — Use when you have an `image` (JPEG) and want its embedded camera metadata — returns EXIF details like camera make/model, timestamp and any G
 - **`camera-trace`** (medium) — Use when an image's EXIF holds a camera serial number and you want to find other photos taken by that same camera across the web.
 - **`camgirlfinder-net`** (medium) — Use when you have a face photo and want to check whether the person appears as a model on adult webcam (cam) sites.
