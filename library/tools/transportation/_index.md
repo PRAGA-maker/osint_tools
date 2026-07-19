@@ -37,7 +37,7 @@ kind: group-index
 - **`canadian-black-book-values`** (medium) — Use when you have a Canadian vehicle's year/make/model or VIN and want its market value — returns physical-description and a valuation to co
 - **`canadian-black-book`** (medium) — Use when you have a vehicle's make/model/year and want its Canadian market value — returns used-car trade-in/retail pricing to sanity-check 
 - **`canadian-civil-aircraft-register-search-canada`** (medium) — Use when you have a Canadian tail number (`vehicle-plate`) or owner `name` and want registration details — returns registered owner `name`/`
-- **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types
+- **`canadian-vessel-registration-query-system`** (medium) — Use when you have a vessel name, official number, or an owner `name` and want Canadian vessel registration detail — returns registered/licen
 - **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
 - **`caranalytics-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and p
 - **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews

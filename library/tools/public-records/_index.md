@@ -75,7 +75,7 @@ kind: group-index
 - **`argo-scholar`** (medium) — A tool for analysing connections between research articles
 - **`ariadne2-isti-cnr-it`** (low) — OSINT tool: Ariadne2.isti.cnr.it.
 - **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
-- **`arizona-genealogy-birth-and-death-certificates`** (medium) — Searchable database of public Arizona birth and death certificates - birth records available from 1885 to 1937 and death records available f
+- **`arizona-genealogy-birth-and-death-certificates`** (medium) — Use when you have a `name` (and roughly a date/place) and want scanned Arizona birth or death certificates in the public window — returns im
 - **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
 - **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
@@ -765,7 +765,7 @@ kind: group-index
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
 - **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
 - **`police1`** (medium) — OSINT tool: Police1.
-- **`policecrime-bgsu-edu`** (medium) — OSINT tool: Policecrime.bgsu.edu.
+- **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —
 - **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code
 - **`polk-court-records`** (high) — Use when you have a `name` and want to check Polk County, Florida court cases tied to them — returns case records, DOB, and case/document ID

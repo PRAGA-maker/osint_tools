@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8034 total · 3911 full · 4123 stub (48% enriched)
+**Tools:** 8032 total · 3918 full · 4114 stub (48% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2584 · high: 1962
+low: 3488 · medium: 2582 · high: 1962
 
 ## Tools by trust
-community: 3463 · unverified: 3250 · trusted: 1310 · untrustworthy: 6 · personal: 5
+community: 3463 · unverified: 3243 · trusted: 1315 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
@@ -20,7 +20,7 @@ community: 3463 · unverified: 3250 · trusted: 1310 · untrustworthy: 6 · pers
 - `dark-web` — 20/117
 - `dating-classifieds` — 52/107
 - `documents-metadata` — 26/314
-- `domains-ip-infrastructure` — 83/743
+- `domains-ip-infrastructure` — 83/742
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 39/126
@@ -31,21 +31,21 @@ community: 3463 · unverified: 3250 · trusted: 1310 · untrustworthy: 6 · pers
 - `opsec-investigator-tooling` — 30/562
 - `people-search` — 244/262
 - `phone` — 134/137
-- `public-records` — 744/1093
-- `search-engines` — 345/911
-- `social-networks` — 658/825
+- `public-records` — 746/1093
+- `search-engines` — 348/910
+- `social-networks` — 659/825
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
-- `transportation` — 93/222
+- `transportation` — 94/222
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1032 leaves
-- `library/tools/search-engines` — 850 leaves
+- `library/tools/search-engines` — 849 leaves
 - `library/tools/social-networks` — 797 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
-- `library/tools/domains-ip-infrastructure` — 502 leaves
+- `library/tools/domains-ip-infrastructure` — 501 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
 - `library/tools/communities-forums` — 383 leaves
 - `library/tools/image-video-face` — 371 leaves

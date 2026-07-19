@@ -334,7 +334,6 @@ kind: group-index
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
 - **`network-tools`** (medium) — Web trace, WHOIS, and domain lookups
-- **`nibbler-website-test`** (medium) — Search for information and statistics about any online website
 - **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire

@@ -123,7 +123,7 @@ kind: group-index
 - **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
 - **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
 - **`brightcloud`** (medium) — OSINT tool: BrightCloud.
-- **`british-and-irish-legal-information-institute`** (medium) — British and Irish Legal Information Institute providing access to freely available public legal information
+- **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
 - **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
 - **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
@@ -456,7 +456,6 @@ kind: group-index
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
-- **`merobase-code-search`** (medium) — A code search platform for Java software components.
 - **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metabot-ru-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Website related to movie and TV ratings
@@ -686,7 +685,7 @@ kind: group-index
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (low) — Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments a
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
-- **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
+- **`short-url-search-engine`** (medium) — Use when you have a `username`, `name`, or keyword and want to find shortened links (bit.ly, t.co, goo.gl, etc.) referencing it — a Google C
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.
 - **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
 - **`similarsites-com`** (medium) — Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche
@@ -778,7 +777,7 @@ kind: group-index
 - **`vulnerability-and-exploit-database`** (medium) — Use when you have a `domain` or software product tied to a target's infrastructure and want known CVEs/exploits for it — returns vulnerabili
 - **`wackysafe`** (low) — Kid-friendly search engine.
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
-- **`washington-office-of-financial-management`** (medium) — Washingtons Office of Financial Management site providing workforce and population data, and state budget information
+- **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
 - **`watch-out-investors`** (medium) — Allows you to search for regulatory or disciplinary actions against corporate entities
 - **`wazap-video-and-game-search-japan`** (medium) — Website that offers a search engine for locating videos and games
 - **`we-feel`** (medium) — Twitter search tool that analyzes emotions in real-time
