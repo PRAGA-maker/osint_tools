@@ -177,7 +177,7 @@ kind: group-index
 - **`voicemsgbot`** (medium) — telegram bot to which you can send voice messages and it converts them into text
 - **`wachannelsfinder-com`** (high) — Use when you have a topic, region, or organization name and want to find public WhatsApp channels a subject may run or follow — returns chan
 - **`wacheck-online`** (high) — Use when you have a `phone` number and want to monitor its WhatsApp online/offline activity to infer a pattern of life and timezone — return
-- **`wagscraper`** (medium) — Scraps Whatsapp Group Links From Google Results And Gives Working Links (with group names and images)
+- **`wagscraper`** (medium) — Use when you have a `name`, topic, or `phone` and want to find public WhatsApp group invite links referencing it — returns working chat.what
 - **`watools-io`** (medium) — Use when you have a `phone` number and want the account's public WhatsApp profile photo — returns an `image` for reverse-image/face pivots.
 - **`waybien-com`** (medium) — Use when you have a topic, name, or handle and want public groups/channels a subject may belong to across Telegram, WhatsApp, Discord, Signa
 - **`web-botim-me`** (high) — Use when you have a `phone` number likely used in the UAE/Gulf and want to check whether it's on BOTIM and pull the profile photo/name — a p

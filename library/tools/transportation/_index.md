@@ -109,7 +109,7 @@ kind: group-index
 - **`lefranz-geneva-dictators`** (low) — OSINT tool: lefranz/geneva-dictators.
 - **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
 - **`license-plate-lookup`** (medium) — Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-
-- **`license-plate-mania`** (medium) — OSINT tool: License Plate Mania.
+- **`license-plate-mania`** (medium) — Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plat
 - **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
 - **`license-plates-in-canada`** (medium) — OSINT tool: 🚗License Plates in Canada 🇨🇦.
 - **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 

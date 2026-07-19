@@ -130,7 +130,7 @@ kind: group-index
 - **`cookieserve-com`** (low) — detailed website cookie analyze
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
 - **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
-- **`cqcounter-site-info`** (medium) — Search for information and statistics about any online website; includes a whois lookup tool, traceroute, and more
+- **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
 - **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
 - **`cve-binary-tool`** (low) — #Python tool to find known vulnerabilities in software, using data from the NVD), list of CVEs, Redhat, OSV and GAD. 200+ checkers in one to
@@ -499,7 +499,7 @@ kind: group-index
 - **`web-dsn-taiwan`** (medium) — Taiwan based service provider for registering websites and domain addresses
 - **`web-hosting-ireland`** (medium) — Ireland based service provider for registering websites and domain addresses
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
-- **`webconfs-domain-age-tool`** (medium) — Tool used to identify the age of a website
+- **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera
 - **`webemailextractor-com`** (low) — extract email's and phone numbers from the website or list of website
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.

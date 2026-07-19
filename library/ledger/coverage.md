@@ -2,48 +2,48 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8036 total · 3903 full · 4133 stub (48% enriched)
+**Tools:** 8034 total · 3911 full · 4123 stub (48% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2586 · high: 1962
+low: 3488 · medium: 2584 · high: 1962
 
 ## Tools by trust
-community: 3456 · unverified: 3259 · trusted: 1309 · personal: 6 · untrustworthy: 6
+community: 3463 · unverified: 3250 · trusted: 1310 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 8/455
-- `archives-cache` — 58/132
+- `archives-cache` — 59/132
 - `communities-forums` — 126/390
-- `dark-web` — 20/118
+- `dark-web` — 20/117
 - `dating-classifieds` — 52/107
 - `documents-metadata` — 26/314
-- `domains-ip-infrastructure` — 81/743
+- `domains-ip-infrastructure` — 83/743
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 39/126
-- `geolocation` — 250/347
+- `geolocation` — 251/347
 - `image-video-face` — 421/467
 - `maps-geospatial-data` — 42/138
-- `messaging` — 167/190
+- `messaging` — 168/190
 - `opsec-investigator-tooling` — 30/562
 - `people-search` — 244/262
 - `phone` — 134/137
-- `public-records` — 743/1093
+- `public-records` — 744/1093
 - `search-engines` — 345/911
-- `social-networks` — 658/826
+- `social-networks` — 658/825
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
-- `transportation` — 92/222
-- `username` — 101/104
+- `transportation` — 93/222
+- `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1032 leaves
 - `library/tools/search-engines` — 850 leaves
-- `library/tools/social-networks` — 798 leaves
+- `library/tools/social-networks` — 797 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 502 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
@@ -59,8 +59,8 @@ community: 3456 · unverified: 3259 · trusted: 1309 · personal: 6 · untrustwo
 - `library/tools/maps-geospatial-data` — 138 leaves
 - `library/tools/archives-cache` — 116 leaves
 - `library/tools/financial-crypto` — 108 leaves
-- `library/tools/dark-web` — 107 leaves
 - `library/tools/dating-classifieds` — 107 leaves
+- `library/tools/dark-web` — 106 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

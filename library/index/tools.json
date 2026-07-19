@@ -22943,43 +22943,53 @@
   },
   {
     "id": "web-archives-chrome-google-com",
-    "name": "web archives (chrome.google.com)",
-    "description": "OSINT tool: web archives (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao",
+    "name": "Web Archives (browser extension)",
+    "description": "Use when you have a `domain`/URL and want archived or cached copies of it fast — a browser extension that queries Wayback, Archive.today, Google Cache and more from the toolbar or right-click, without leaving the page.",
+    "url": "https://chromewebstore.google.com/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "One-click lookup of a page's archived/cached versions across many archive services from the browser.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (Chrome/Firefox/Edge); optional Patreon support. No account.",
+    "opsec": "passive",
+    "opsecNote": "It queries archive services (Wayback, Archive.today, etc.), not the target's live server, so the site owner isn't alerted. Right-clicking a link to check it doesn't visit the page itself. Install only the official build and review permissions like any extension.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Popular open-source extension (60k+ users, ~4.8 rating, by armin.dev); it's a convenience front-end over well-known archive services whose results you can verify directly.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "wayback-machine",
+      "archive-org"
+    ],
+    "aliases": [
+      "Web Archives extension"
+    ],
     "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
+      "archives",
+      "cache",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web-archives-chrome-google-com.md"
   },
   {
@@ -45442,46 +45452,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/dark-web/us-inmate-locator.md"
-  },
-  {
-    "id": "vocalink",
-    "name": "VocaLink",
-    "description": "UKs national payment infrastructure operator - provides industry research and white papers",
-    "url": "http://www.vocalink.com/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/vocalink.md"
   },
   {
     "id": "vorm-web",
@@ -69065,30 +69035,32 @@
   {
     "id": "cqcounter-site-info",
     "name": "CQCounter Site Info",
-    "description": "Search for information and statistics about any online website; includes a whois lookup tool, traceroute, and more",
+    "description": "Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP, visual traceroute, and rough traffic/valuation estimates.",
     "url": "http://cqcounter.com/siteinfo",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-page site profile — WHOIS, DNS, reverse IP, visual traceroute, and traffic estimates for a domain or IP.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WHOIS/DNS/site-info queries run from CQCounter's servers against public data and are not attributed to you. The visual-traceroute tool, however, actually routes packets toward the target host — skip it if you must stay fully passive against a subject-controlled server.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-lived (since 2001) free network-tools/counter site; WHOIS/DNS values mirror authoritative sources, but its traffic and site-value estimates are rough approximations, not measured data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -69097,15 +69069,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cqcounter.com",
+      "CQ Counter Site Info"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cqcounter-site-info.md"
   },
   {
@@ -92736,30 +92711,29 @@
   {
     "id": "webconfs-domain-age-tool",
     "name": "WebConfs Domain Age Tool",
-    "description": "Tool used to identify the age of a website",
+    "description": "Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback Machine capture, useful for dating when a site/persona first appeared.",
     "url": "http://www.webconfs.com/domain-age.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Estimating a website's age from its earliest web-archive capture (checks several domains at once).",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free SEO utility; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool derives age from the Wayback Machine, not from the target's server, so the subject sees nothing. Only the domain string is submitted to WebConfs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established SEO-tools site; the age figure reflects the first Internet Archive capture, which is an approximation of first-online date, not the official WHOIS registration date.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -92768,15 +92742,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "webconfs.com domain age"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webconfs-domain-age-tool.md"
   },
   {
@@ -126128,42 +126104,48 @@
   {
     "id": "osm-smart-menu",
     "name": "OSM Smart Menu",
-    "description": "Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)",
-    "url": "https://chrome.google.com/webstore/detail/osm-smart-menu/icipmdhgbkejfideagkhdebiaeohfijk/related",
+    "description": "Use when you have a `geolocation` open in one map/OSM page and want to jump to the same spot in dozens of other maps and OSM tools — a browser extension that carries the current coordinates/zoom (or OSM element) across services in one click.",
+    "url": "https://chromewebstore.google.com/detail/osm-smart-menu/icipmdhgbkejfideagkhdebiaeohfijk",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "One-click switching between map services and OpenStreetMap tools while preserving the current location, zoom, or OSM element.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser extension (Chrome/Firefox); no account. Developer states no data is sold or transferred.",
+    "opsec": "passive",
+    "opsecNote": "The extension reads the map parameters (lat/long/zoom, OSM IDs) from the page you're on and builds links locally; it doesn't transmit your target anywhere. As with any extension, install only from the official store and review its permissions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source OpenStreetMap-community extension (by jgpacker) with a small user base; it manipulates URL parameters locally and is inspectable, but adoption is modest.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSM Smart Menu"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
+      "openstreetmap",
+      "maps",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/osm-smart-menu.md"
   },
   {
@@ -171297,41 +171279,53 @@
   },
   {
     "id": "wagscraper",
-    "name": "WAGSCRAPER",
-    "description": "Scraps Whatsapp Group Links From Google Results And Gives Working Links (with group names and images)",
+    "name": "WaGpScraper",
+    "description": "Use when you have a `name`, topic, or `phone` and want to find public WhatsApp group invite links referencing it — returns working chat.whatsapp.com group links (with names/images) harvested via Google dorks.",
     "url": "https://github.com/riz4d/WaGpScraper",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public WhatsApp group invite links on a keyword via Google dorking, and validating which still work.",
     "selectorsIn": [
-      "image"
+      "name",
+      "phone"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python); no cost. Relies on Google search, which may rate-limit or CAPTCHA heavy automated querying.",
+    "opsec": "passive",
+    "opsecNote": "The scraping step queries Google, not WhatsApp, so it does not alert group members. But ACTUALLY JOINING a discovered group is active and exposes your number/identity — validate links passively and use a burner number if you must enter a group.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source GitHub project (~45 stars); code is short and inspectable, but it depends on Google's unofficial results and an aging `google` Python package, so reliability varies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Messengers",
-      "WhatsApp"
+    "aliases": [
+      "WAGSCRAPER",
+      "WaGpScraper"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "whatsapp",
+      "messaging",
+      "dorking"
+    ],
+    "source": "gh-topic-osint-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wagscraper.md"
   },
   {
@@ -227962,47 +227956,51 @@
   {
     "id": "digital-public-library-of-america",
     "name": "Digital Public Library of America",
-    "description": "Academic-related search engine providing open access to digitized library resources including images, texts, videos, and sounds",
-    "url": "http://dp.la",
+    "description": "Use when you have a `name`, place, or `employer-org` and want to search digitized U.S. library, archive, and museum holdings — returns photos, texts, records, and local-history items (document-id) that may name or depict the subject.",
+    "url": "https://dp.la",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Federated search across millions of digitized items from U.S. libraries, archives, and museums (photos, texts, oral histories, local records).",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "document-id",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, non-profit aggregator; no account required to search or view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query DPLA's aggregated index of public cultural-heritage collections; nothing reaches the subject. Safe to use without a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Non-profit aggregator of vetted U.S. libraries, archives, and museums; items are authentic institutional holdings, each linking back to its source institution for provenance.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DPLA",
+      "dp.la"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
+      "academic-scholarly-research",
+      "archives",
+      "public-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/digital-public-library-of-america.md"
   },
   {
@@ -339067,43 +339065,6 @@
     "_file": "library/tools/social-networks/social-media-osint-tools-collection.md"
   },
   {
-    "id": "social-media-salary-calculator",
-    "name": "Social Media Salary Calculator",
-    "description": "for YouTube, TikTok, Instagram",
-    "url": "http://lickd.co/blog/social-salary-calculator",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Universal"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/social-media-salary-calculator.md"
-  },
-  {
     "id": "social-mentions",
     "name": "Social Mentions",
     "description": "OSINT tool: Social Mentions.",
@@ -361982,43 +361943,52 @@
   {
     "id": "license-plate-mania",
     "name": "License Plate Mania",
-    "description": "OSINT tool: License Plate Mania.",
+    "description": "Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plates from 119 countries plus the country-oval codes, so you can match a plate's design to a place.",
     "url": "https://licenseplatemania.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the country/region and era of a licence plate by comparing its design against a large reference collection.",
     "selectorsIn": [
       "vehicle-plate",
-      "vin"
+      "image"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reference site; no account.",
+    "opsec": "passive",
+    "opsecNote": "You browse a static reference collection; nothing is submitted and the subject is not contacted. Fully safe to use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Personal enthusiast archive (Jeroen Coninx, since 2000) of 6,800+ plate photos from 119 countries; excellent as a visual reference, but it is a hobby collection, not an authoritative registry, and it does not look up individual plate owners.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "licenseplatemania.com",
+      "License Plate Mania"
+    ],
     "tags": [
-      "vehicle"
+      "transportation",
+      "vehicles",
+      "license-plates"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/license-plate-mania.md"
   },
   {
@@ -372706,32 +372676,35 @@
   {
     "id": "youngersibling",
     "name": "YoungerSibling",
-    "description": "OSINT CLI tool with web scraping, DNS lookups, EXIF extraction, and username availability checks.",
+    "description": "Use when you have a `username`, `email`, `domain`, `phone`, or `image` and want a quick combined recon sweep — returns username availability across 400+ sites, MX/DNS/IP data, EXIF metadata, and search results from one CLI.",
     "url": "https://github.com/aeticusdev/YoungerSibling",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Quick combined recon: username availability, DNS, and EXIF from images",
+    "bestFor": "Quick combined recon: username availability across 400+ platforms plus DNS/IP, email MX, phone, and EXIF lookups.",
     "selectorsIn": [
       "username",
+      "email",
       "domain",
+      "phone",
       "image"
     ],
     "selectorsOut": [
       "social-profile",
-      "metadata-exif",
-      "geolocation"
+      "ip-address",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); `pip install youngersibling`. Some functions call third-party services that may rate-limit.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally and queries public sources/site presence server-to-server, so it is not attributed to the subject. The username module probes 400+ sites for a handle — high request volume can trip rate limits; route through appropriate egress and avoid bursts against sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "personal",
-    "trustNote": "~3 stars; educational personal project.",
+    "trust": "community",
+    "trustNote": "Small MIT-licensed solo project (v1.2, late 2024) with modest adoption; code is open and inspectable, but low star count means less community vetting — verify hits downstream.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -372740,16 +372713,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "username-check",
-      "exif",
-      "dns",
-      "educational"
+    "aliases": [
+      "YoungerSibling"
     ],
-    "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "username",
+      "enrichment",
+      "python",
+      "exif"
+    ],
+    "source": "gh-topic-osint-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/username/youngersibling.md"
   }
 ]

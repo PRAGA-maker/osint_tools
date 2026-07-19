@@ -257,7 +257,7 @@ kind: group-index
 - **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re
 - **`dfw1n-osint`** (medium) — Use when you have an Australian `name`, `address`, or `domain` and need the right AU registry/people resource — a curated, missing-persons-o
 - **`diagramify`** (medium) — Use when you have investigation findings in prose and want a quick flowchart/relationship diagram from a text description — a workflow/visua
-- **`digital-public-library-of-america`** (medium) — Academic-related search engine providing open access to digitized library resources including images, texts, videos, and sounds
+- **`digital-public-library-of-america`** (medium) — Use when you have a `name`, place, or `employer-org` and want to search digitized U.S. library, archive, and museum holdings — returns photo
 - **`diligenciagroup-com`** (high) — Use when you have a `name`, `address`, or `employer-org` linked to the Middle East or Africa and want authoritative corporate-registry data,
 - **`directaccessportal-co-uk`** (high) — Use when you have a barrister's `name` (or need to identify one in England & Wales) and want their chambers, practice areas and contact rout
 - **`directorwho-co-uk`** (high) — Use when you have a `name` and want the UK companies they are/were a director of, plus co-directors and DOB/address hints — returns employer

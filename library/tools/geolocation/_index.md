@@ -222,7 +222,7 @@ kind: group-index
 - **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
 - **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
 - **`opentopia`** (low) — OSINT tool: Opentopia.
-- **`osm-smart-menu`** (medium) — Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)
+- **`osm-smart-menu`** (medium) — Use when you have a `geolocation` open in one map/OSM page and want to jump to the same spot in dozens of other maps and OSM tools — a brows
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 
 - **`outage-map`** (low) — OSINT tool: Outage map.
 - **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects
