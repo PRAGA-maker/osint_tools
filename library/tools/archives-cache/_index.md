@@ -57,7 +57,7 @@ kind: group-index
 - **`grab-site`** (medium) — Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with doz
 - **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
 - **`index-commoncrawl-org`** (medium) — Use when you have a `domain` and want every URL Common Crawl captured for it — returns archived URLs (`document-id`s) with pointers to the s
-- **`industrydocuments-ucsf-edu`** (medium) — digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)
+- **`industrydocuments-ucsf-edu`** (medium) — Use when you have a `name` (executive, scientist, lobbyist) or `employer-org` and want their internal industry documents — returns document-
 - **`infominder`** (low) — OSINT tool: InfoMinder.
 - **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
 - **`linctas-ent-sirsidynix-net-au`** (medium) — OSINT tool: linctas.ent.sirsidynix.net.au.
@@ -68,7 +68,7 @@ kind: group-index
 - **`mention`** (low) — OSINT tool: Mention.
 - **`metawarc`** (medium) — Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamp
 - **`microsystools-com`** (low) — Use when you have a `domain` you need to preserve and want a full offline copy — returns a locally-saved, browsable snapshot of the entire s
-- **`national-center-for-biotechnology`** (medium) — unique tool to search 39 scientific databases (Pubmed, SRA, OMIN, MedGen etc) from one page
+- **`national-center-for-biotechnology`** (medium) — Use when you have a researcher `name` or affiliation and want their publications, datasets and co-authors across 30+ biomedical databases — 
 - **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
 - **`newsblur`** (low) — OSINT tool: Newsblur.
 - **`newspaper-navigator`** (medium) — Keyword search of a database of 1.5 million newspaper clippings with photos from the Library of Congress database. It's possible to filter r

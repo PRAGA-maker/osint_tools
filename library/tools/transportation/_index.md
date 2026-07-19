@@ -136,7 +136,6 @@ kind: group-index
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
 - **`my-ship-tracking`** (low) — OSINT tool: My Ship Tracking.
 - **`nada-car-price-guides-north-america`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes a vehicle search engine
-- **`nada-guides`** (medium) — Vehicle-related website that identifies vehicles by type and model based on entered information
 - **`national-insurance-crime-bureau-vin-search`** (medium) — OSINT tool: National Insurance Crime Bureau(Vin Search).
 - **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
 - **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai

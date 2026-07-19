@@ -110,7 +110,6 @@ kind: group-index
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
 - **`discord-id-lookup`** (medium) — Use when you have a Discord user/snowflake ID (`device-id`) and want the account's public identity — returns `username`, avatar, and exact a
 - **`discord-me`** (medium) — Use when you have a `username` or topic and want to find public Discord servers a subject may frequent — returns server listings with catego
-- **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
 - **`discord-user-search`** (medium) — Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning p
 - **`discordservers`** (medium) — OSINT tool: DiscordServers.
 - **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
@@ -215,7 +214,7 @@ kind: group-index
 - **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
 - **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
 - **`git-awards`** (low) — Rank GitHub users and repositories.
-- **`gitcolombo`** (medium) — simple and fast tool that collects information (edit statistics and contacts) about repository contributors on Github
+- **`gitcolombo`** (medium) — Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlate
 - **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
 - **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening
 - **`github-monitor`** (medium) — OSINT tool: github_monitor.

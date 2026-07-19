@@ -25,11 +25,11 @@ kind: group-index
 - **`people-search/`** — 274 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
 - **`public-records/`** — 1113 skill(s) below.
-- **`search-engines/`** — 935 skill(s) below.
-- **`social-networks/`** — 886 skill(s) below.
+- **`search-engines/`** — 932 skill(s) below.
+- **`social-networks/`** — 885 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 229 skill(s) below.
+- **`transportation/`** — 228 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
 

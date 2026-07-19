@@ -565,7 +565,7 @@ kind: group-index
 - **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
 - **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo
 - **`list-of-criminal-charges-findlaw`** (high) — Use when you have a charge or offense name from a court/arrest record and want to understand what it means — returns plain-English legal def
-- **`list-org`** (medium) — OSINT tool: list-org.
+- **`list-org`** (medium) — Use when you have a Russian company `name`, tax ID, or a director's `name` and want the linked officers, address and business connections — 
 - **`lists-of-united-states-state-prisons-wikipedia`** (high) — Use when you have a state or a facility `name` and want the roster/location of that state's prisons — returns facility names and `address`/l
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
@@ -586,7 +586,7 @@ kind: group-index
 - **`manitoba-assessment-online`** (low) — OSINT tool: Manitoba Assessment Online.
 - **`manitoba-court-records`** (high) — Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and 
 - **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
-- **`manta-north-america`** (medium) — American business-related search engine that searches using company name
+- **`manta-north-america`** (medium) — Use when you have a US small-business `name` or `employer-org` and want its address, phone and category listing — returns address, phone, em
 - **`manta`** (low) — OSINT tool: Manta.
 - **`mappingpoliceviolence-org`** (medium) — OSINT tool: Mappingpoliceviolence.org.
 - **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir

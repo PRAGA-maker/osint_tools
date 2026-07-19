@@ -19632,38 +19632,55 @@
   },
   {
     "id": "industrydocuments-ucsf-edu",
-    "name": "industrydocuments.ucsf.edu",
-    "description": "digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)",
+    "name": "UCSF Industry Documents Library",
+    "description": "Use when you have a `name` (executive, scientist, lobbyist) or `employer-org` and want their internal industry documents — returns document-id, associate links and name mentions in tobacco/drug/chemical/fossil-fuel files.",
     "url": "http://industrydocuments.ucsf.edu/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Full-text searching millions of internal corporate documents (tobacco, drug, chemical, food, fossil-fuel, opioid) for named individuals and their communications.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public access, no account required to search or download; run by a public university library.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public academic archive of historical corporate documents; nothing touches any living subject and no login is needed. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the UCSF Library; documents are authenticated originals released via litigation, FOIA and whistleblowers, with stable citations and metadata.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Industry Documents Library",
+      "UCSF Truth Tobacco",
+      "industrydocuments.ucsf.edu"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "Archives of documents/newspapers",
+      "corporate-documents",
+      "full-text-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/industrydocuments-ucsf-edu.md"
   },
   {
@@ -20146,43 +20163,58 @@
   },
   {
     "id": "national-center-for-biotechnology",
-    "name": "National Center for Biotechnology",
-    "description": "unique tool to search 39 scientific databases (Pubmed, SRA, OMIN, MedGen etc) from one page",
+    "name": "NCBI (National Center for Biotechnology Information)",
+    "description": "Use when you have a researcher `name` or affiliation and want their publications, datasets and co-authors across 30+ biomedical databases — returns name, associate and employer-org.",
     "url": "https://www.ncbi.nlm.nih.gov/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "One-stop cross-search of PubMed and 30+ biomedical/genomic databases to profile a scientist by their papers, datasets and collaborators.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public access to search and abstracts across all databases; no account required (a free NCBI/My Bibliography account only adds saved-search convenience). Some journal full texts are paywalled at the publisher, not by NCBI.",
+    "opsec": "passive",
+    "opsecNote": "Public government research portal; searches touch NCBI, never the subject. Fully passive — no login, no notification.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US National Library of Medicine (NIH); an authoritative, canonical index of the biomedical literature.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pubmed",
+      "openi-nlm-nih-gov"
+    ],
+    "aliases": [
+      "NCBI",
+      "Entrez",
+      "ncbi.nlm.nih.gov"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "Archives of documents/newspapers",
+      "academic",
+      "biomedical",
+      "researcher-profiling"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "openi-nlm-nih-gov",
-      "pubmed",
-      "pubmed-national-center-for-biotechnology-information"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/national-center-for-biotechnology.md"
   },
   {
@@ -37010,42 +37042,55 @@
   },
   {
     "id": "south-asian-american-digital-archive",
-    "name": "South Asian American Digital Archive",
-    "description": "Digital archive of documents pertaining to the history of the South Asian American community",
+    "name": "South Asian American Digital Archive (SAADA)",
+    "description": "Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name mentions and associate/family context.",
     "url": "https://www.saada.org/resources",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a community-history archive (oral histories, photos, letters, newspapers) for named South Asian Americans and their family/community links.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-access non-profit archive; no account required to search or view items.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public historical archive; searching touches SAADA, not any living person. Fully passive, no login, no notification.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An established non-profit community archive with curated, provenance-documented collections; items carry source attribution and metadata.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SAADA",
+      "saada.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "community-archive"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/south-asian-american-digital-archive.md"
   },
   {
@@ -38997,46 +39042,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/tripadvisor.md"
-  },
-  {
-    "id": "tripit",
-    "name": "Tripit",
-    "description": "Website related to social networking in the form of travel and tourism",
-    "url": "https://www.tripit.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/tripit.md"
   },
   {
     "id": "trucknetuk-com",
@@ -109010,50 +109015,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/evidence-capture/web-browsing/fiddler.md"
-  },
-  {
-    "id": "forensic-osint",
-    "name": "Forensic OSINT",
-    "description": "Evidence capture, legal documentation, case-level review",
-    "url": "https://www.forensicosint.com/",
-    "category": "evidence-capture",
-    "path": [
-      "evidence-capture",
-      "web-browsing"
-    ],
-    "bestFor": "Evidence capture, legal documentation, case-level review",
-    "input": "Website URL",
-    "output": "Full-page screenshots with metadata, timestamps, and case organization",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Browser-based evidence tool; creates timestamped records suitable for disclosure.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "forensic-osint-kb-guides",
-      "forensicosint-com",
-      "forensicosint-com-3"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/evidence-capture/web-browsing/forensic-osint.md"
   },
   {
     "id": "forensic-osint-full-page-screen-capture",
@@ -244136,36 +244097,58 @@
   },
   {
     "id": "list-org",
-    "name": "list-org",
-    "description": "OSINT tool: list-org.",
+    "name": "List-Org",
+    "description": "Use when you have a Russian company `name`, tax ID, or a director's `name` and want the linked officers, address and business connections — returns employer-org, address, associate.",
     "url": "https://www.list-org.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free lookup of Russian legal entities and sole proprietors — directors, founders, address, procurement and litigation links.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "document-id",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Explicitly free with no registration — \"все данные отдаем без регистрации и абсолютно бесплатно\" (all data given without registration, absolutely free).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Aggregator of already-public Russian registry data; queries hit List-Org, not the subject, so it is passive. Use a sock-puppet browser/VPN out of general caution when researching Russian entities, but no notification reaches the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator (not an official registry) compiling data from 20+ official Russian sources including the FTS tax service, Rosstat, courts and the patent office; cross-check critical facts against the primary source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ru"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "list-org.com",
+      "ЛистОрг"
+    ],
+    "tags": [
+      "company-search",
+      "russia",
+      "business-registry"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/list-org.md"
   },
   {
@@ -245258,50 +245241,55 @@
   {
     "id": "manta-north-america",
     "name": "Manta (North America)",
-    "description": "American business-related search engine that searches using company name",
+    "description": "Use when you have a US small-business `name` or `employer-org` and want its address, phone and category listing — returns address, phone, employer-org.",
     "url": "http://www.manta.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a US small/local business by name to get its listed address, phone and industry category.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search the directory and view company profiles; owners can claim a free listing. A Premium listing upgrade (~$99/mo) is seller-side only and irrelevant to lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public business-directory search; queries hit Manta, not the subject. Passive — no notification reaches the business or owner. Nothing to sock-puppet, but a clean browser avoids ad/tracking noise.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Crowd/aggregator directory — profiles are built from public sources and owner submissions; \"claimed\" profiles are owner-verified, unclaimed ones may be stale or auto-generated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "manta"
     ],
+    "aliases": [
+      "manta.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "company-search",
+      "business-directory"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/manta-north-america.md"
   },
   {
@@ -297545,40 +297533,6 @@
     "_file": "library/tools/search-engines/property-value.md"
   },
   {
-    "id": "publc-com",
-    "name": "Publc.com",
-    "description": "OSINT tool: Publc.com.",
-    "url": "https://publc.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/publc-com.md"
-  },
-  {
     "id": "publicwww",
     "name": "PublicWWW",
     "description": "Finding websites with specific code/analytics IDs, competitive intelligence, security research",
@@ -298517,44 +298471,58 @@
   {
     "id": "realtor-com-united-states",
     "name": "Realtor.com (United States)",
-    "description": "Real estate-related search engine for locating property, residences, rental space, or real estate representatives",
+    "description": "Use when you have a US `address` or an agent `name` and want property listing history or a real-estate agent's contact/brokerage — returns address details, agent phone and employer-org.",
     "url": "http://www.realtor.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling a US property's listing/sale history or finding a named real-estate agent's brokerage and contact details.",
+    "selectorsIn": [
+      "address",
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse listings and the agent directory; no account needed for search. Realtor.com monetizes via agent advertising, not user fees.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing is passive against the subject — you query a public listings portal, not the person. Note the site runs aggressive bot-detection (PerimeterX), so automated scraping trips CAPTCHAs; drive it in a normal browser and it leaks nothing to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Move, Inc. (News Corp) and the official consumer-facing portal affiliated with the National Association of Realtors; listing data is sourced from MLS feeds.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "realtor"
     ],
+    "aliases": [
+      "realtor.com",
+      "Move Inc listings"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "real-estate"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/realtor-com-united-states.md"
   },
   {
@@ -300187,40 +300155,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/search-all.md"
-  },
-  {
-    "id": "search-atlas",
-    "name": "Search Atlas",
-    "description": "OSINT tool: Search Atlas.",
-    "url": "https://searchatlas.org/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/search-atlas.md"
   },
   {
     "id": "search-by-filetype",
@@ -303987,41 +303921,52 @@
   {
     "id": "the-open-syllabus-project",
     "name": "The Open Syllabus Project",
-    "description": "OSINT tool: The Open Syllabus Project.",
+    "description": "Use when you have an author `name` or a text/title and want to see which universities and courses assign it — returns employer-org (institutions) and teaching context.",
     "url": "https://www.opensyllabus.org/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding where a book, text or author is taught across universities, or profiling an academic by their assigned/authored works.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core exploration tools (Explorer, Course Matcher) are free; a print store and some institutional analytics are paid but not needed for OSINT use.",
+    "opsec": "passive",
+    "opsecNote": "Queries a public research archive of aggregated syllabi; nothing touches any individual. Fully passive — no account, no subject notification.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A non-profit academic archive (Columbia-affiliated origins) of 30M+ syllabi widely cited in higher-ed research; data is aggregated and methodologically documented.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Open Syllabus",
+      "opensyllabus.org"
+    ],
+    "tags": [
+      "academic",
+      "syllabi",
+      "education"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/the-open-syllabus-project.md"
   },
   {
@@ -306824,46 +306769,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/webkams.md"
-  },
-  {
-    "id": "webwombat-search-engine-australia",
-    "name": "WebWombat Search Engine (Australia)",
-    "description": "Australian based web search engine covering worldwide results",
-    "url": "http://www.webwombat.com.au",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/webwombat-search-engine-australia.md"
   },
   {
     "id": "welcome-to-dealstrap",
@@ -314933,40 +314838,6 @@
     "_file": "library/tools/social-networks/discord-me.md"
   },
   {
-    "id": "discord-servers-portal",
-    "name": "Discord Servers Portal",
-    "description": "OSINT tool: Discord Servers Portal.",
-    "url": "https://www.discordportal.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/discord-servers-portal.md"
-  },
-  {
     "id": "discord-user-search",
     "name": "DiscordHub User Search",
     "description": "Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning profile, avatar and activity details.",
@@ -320951,51 +320822,61 @@
   {
     "id": "gitcolombo",
     "name": "Gitcolombo",
-    "description": "simple and fast tool that collects information (edit statistics and contacts) about repository contributors on Github",
+    "description": "Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlated associate identities.",
     "url": "https://github.com/soxoj/gitcolombo",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting contributor names, emails and cross-account identity links from a git repo, user or org's commit history.",
+    "selectorsIn": [
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "email",
+      "associate",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). No paid tier; the only cost is an optional GitHub API token to raise rate limits.",
+    "opsec": "passive",
+    "opsecNote": "Reads public commit metadata via git and the GitHub API — it never contacts the subject and leaves no trace on their profile. Authenticated API calls are tied to YOUR token, so use a sock-puppet GitHub account/token, not your real one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "By soxoj (author of Maigret), a well-regarded OSINT developer; open source and auditable on GitHub.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Github"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "1c-database-converter",
-      "awesome-osint-mcp-servers",
-      "counter-osint-guide-for-russians",
-      "fravia-soxoj",
       "maigret",
-      "maigret-via-socid-extractor-soxoj-ecosystem",
-      "mailto-analyzer",
+      "socid-extractor",
       "marple",
       "osint-namecheckers-list",
-      "socid-extractor",
-      "username-generation-guide"
+      "mailto-analyzer"
     ],
+    "aliases": [
+      "gitcolombo",
+      "soxoj gitcolombo"
+    ],
+    "tags": [
+      "Social Media",
+      "Github",
+      "git-metadata",
+      "email-extraction"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gitcolombo.md"
   },
   {
@@ -363343,49 +363224,6 @@
       "nada-guides"
     ],
     "_file": "library/tools/transportation/nada-car-price-guides-north-america.md"
-  },
-  {
-    "id": "nada-guides",
-    "name": "NADA Guides",
-    "description": "Vehicle-related website that identifies vehicles by type and model based on entered information",
-    "url": "http://www.nadaguides.com/Cars/Body-styles",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "nada-car-price-guides-north-america"
-    ],
-    "_file": "library/tools/transportation/nada-guides.md"
   },
   {
     "id": "national-insurance-crime-bureau-vin-search",

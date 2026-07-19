@@ -317,7 +317,7 @@ kind: group-index
 - **`snippet-host`** (medium) — OSINT tool: snippet.host.
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
 - **`socialbrite`** (medium) — Website aimed at helping nonprofits, NGOs, foundations, and other organizations use social media to their benefit
-- **`south-asian-american-digital-archive`** (medium) — Digital archive of documents pertaining to the history of the South Asian American community
+- **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — OSINT tool: Spacebin.
 - **`sqoop`** (medium) — Investigative journalism website providing research tools and email alerts for breaking news
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
@@ -362,7 +362,6 @@ kind: group-index
 - **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
-- **`tripit`** (medium) — Website related to social networking in the form of travel and tourism
 - **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
 - **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tutpaste`** (medium) — OSINT tool: TutPaste.

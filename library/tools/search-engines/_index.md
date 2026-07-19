@@ -607,7 +607,6 @@ kind: group-index
 - **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`property-services-regulatory-authority`** (medium) — Irelands Property Services Regulatory Authority
 - **`property-value`** (medium) — Australian property value, sales history, and valuation report search tool
-- **`publc-com`** (medium) — OSINT tool: Publc.com.
 - **`pubmed`** (low) — OSINT tool: PubMed.
 - **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
@@ -626,7 +625,7 @@ kind: group-index
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
 - **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
-- **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`realtor-com-united-states`** (medium) — Use when you have a US `address` or an agent `name` and want property listing history or a real-estate agent's contact/brokerage — returns a
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
 - **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
 - **`reeder`** (low) — OSINT tool: Reeder.
@@ -663,7 +662,6 @@ kind: group-index
 - **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
 - **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
-- **`search-atlas`** (medium) — OSINT tool: Search Atlas.
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
@@ -807,7 +805,6 @@ kind: group-index
 - **`webdork`** (medium) — OSINT tool: webdork.
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`webkams`** (medium) — Search live webcams around the world
-- **`webwombat-search-engine-australia`** (medium) — Australian based web search engine covering worldwide results
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
 - **`white-house-disclosures`** (medium) — White House disclosure reports
 - **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
