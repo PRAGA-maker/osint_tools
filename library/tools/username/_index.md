@@ -54,7 +54,7 @@ kind: group-index
 - **`paypal-com`** (high) — Use when you have an `email` (or phone) and want to confirm whether it is tied to a live PayPal account plus any masked recovery hints — ret
 - **`peek-you-user-name`** (high) — Use when you have a `username` and want the real person behind it — returns linked social-profiles, a probable name, and aggregated identity
 - **`profil3r`** (high) — Use when you have a `username` and want to enumerate matching accounts across social networks plus derive and breach-check likely emails — r
-- **`profilediscover`** (medium) — Username-to-profile discovery search.
+- **`profilediscover`** (medium) — Use when you have a `username` and want the social-media accounts using it across many platforms — returns a report of candidate `social-pro
 - **`pyosint`** (high) — Use when you have a `username` (or a `domain`) and want a CLI that enumerates accounts across ~326 sites plus scrapes links and subdomains —
 - **`quidam`** (high) — Use when you have an `email` or `username` and want to harvest the masked account-recovery hints that "forgot password" flows leak — returns
 - **`reccon-sammwyy`** (medium) — Use when you have a `username` and want to check it across many sites at once through a browser UI — returns candidate `social-profile` hits

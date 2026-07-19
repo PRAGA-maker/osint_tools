@@ -650,7 +650,7 @@ kind: group-index
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`savvysearch`** (medium) — Meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
 - **`scala`** (medium) — Open source code search engine
-- **`scholarpedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on s
+- **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedirect`** (low) — OSINT tool: ScienceDirect.
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
 - **`scirp`** (low) — OSINT tool: SCIRP.

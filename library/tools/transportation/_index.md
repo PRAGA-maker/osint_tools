@@ -180,7 +180,7 @@ kind: group-index
 - **`shipspotting-com`** (low) — Community website for uploading pictures & details of vessels spotted around the world.
 - **`shipspotting-live-ais`** (medium) — Use when you have a vessel name/IMO or a ship photo and want vessel identification and imagery — returns ship photos, vessel details, and ph
 - **`skyscanner-travel-search-engine`** (medium) — Use when you have a `geolocation` route and want travel-feasibility context — returns flight/route options, dates, prices, and carriers to c
-- **`skyscanner`** (medium) — OSINT tool: Skyscanner.
+- **`skyscanner`** (medium) — Use when you have an origin/destination and dates and want to know which flights, routes, and airlines connect them — returns schedules, car
 - **`skyvector`** (low) — tool is designed for planning private flights. And you can find an incredible amount of data about the current situation in the sky on it
 - **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.

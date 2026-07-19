@@ -7,7 +7,7 @@ kind: group-index
 # search-engines/academic-publication-search
 
 ## Skills here
-- **`arxiv-org`** (medium) — OSINT tool: arXiv.org.
+- **`arxiv-org`** (medium) — Use when you have a `name` (a researcher/academic) and want their preprints and research footprint — returns papers, co-authors, affiliation
 - **`bielefeld-academic-search-engine`** (medium) — Use when you have a researcher `name` or topic and want open-access scholarship across repositories — returns papers, theses, and datasets w
 - **`copyscape-plagiarism-checker`** (medium) — Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matchi
 - **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
