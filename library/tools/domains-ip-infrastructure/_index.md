@@ -166,7 +166,6 @@ kind: group-index
 - **`dotster-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`dpulse`** (low) — Tool for a complex, comprehensive approach to domain OSINT with reporting.
 - **`drishti`** (low) — Nodejs toolkit for OSINT
-- **`dsl-reports-ping-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
 - **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
@@ -428,7 +427,7 @@ kind: group-index
 - **`silicon-house-india`** (medium) — India based service provider for registering websites and domain addresses
 - **`simplifica-spain`** (medium) — Spanish service provider for registering websites and domain addresses
 - **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
-- **`site-analyzer`** (medium) — Online website analyzing tool
+- **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Domain investigation #python tool
 - **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
@@ -457,7 +456,7 @@ kind: group-index
 - **`technology-lookup`** (low) — OSINT tool: Technology Lookup.
 - **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps
 - **`test-net-network-tools`** (medium) — Tools including whois lookup, reverse lookup, traceroute, ping test, proxy checker, and more
-- **`testmy-net-internet-speed-test`** (medium) — Analysis tool that assesses the speed of your website performance
+- **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`thales`** (low) — OSINT tool: Thales.
 - **`the-favicon-finder`** (low) — Instantly finds the favicon and all .ico files on the site, and then generates links to download them quickly.
@@ -472,7 +471,7 @@ kind: group-index
 - **`traceroutevisualizer`** (low) — OSINT tool: TracerouteVisualizer.
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
 - **`try-jsoup-org`** (low) — online version of HTML pasrer [http://github.com/jhy/jsoup](http://github.com/jhy/jsoup)
-- **`tucows-canada`** (medium) — Canada based service provider for registering websites and domain addresses
+- **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
 - **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
 - **`ubersuggest-keyword-creator`** (medium) — Language-related search for keyword combinations by using a word and current search engine results to create new keywords
 - **`udon`** (low) — #go tool to find assets/domains based by Google Analytics ID

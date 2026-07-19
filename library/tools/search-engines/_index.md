@@ -246,7 +246,7 @@ kind: group-index
 - **`fact-checking`** (low) — OSINT tool: Fact-Checking.
 - **`fact-monster`** (low) — Kid friendly search engine.
 - **`faganfinder`** (low) — OSINT tool: FaganFinder.
-- **`falla`** (medium) — A search engine command line scraper for more than 15 search engines, including Google, Duckduckgo, Bing, Ask, and more.
+- **`falla`** (medium) — Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain`
 - **`familypedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
 - **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
 - **`fatfingers`** (low) — Use when you have a `name`, brand, or item keyword and want to find eBay listings with misspellings/typos — returns mistyped listings (and t

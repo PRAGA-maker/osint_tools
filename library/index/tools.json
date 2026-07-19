@@ -24920,25 +24920,26 @@
   },
   {
     "id": "bootsnall",
-    "name": "Bootsnall",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "http://www.bootsnall.com",
+    "name": "BootsnAll",
+    "description": "Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; limited direct people-search value.",
+    "url": "https://www.bootsnall.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Independent-travel guides and articles (round-the-world routes, career breaks); background/context, not a people directory.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free travel-content site; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read public travel articles/guides, transmitting nothing about any person. Historically it had community forums where a member's posts might surface; today it is mostly editorial.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent travel site since 1998; reliable as editorial/travel content, but now primarily articles rather than an active social network, so little user-profile data to mine.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -24947,15 +24948,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BootsnAll"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "travel",
       "online-communities-blogs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/bootsnall.md"
   },
   {
@@ -29751,48 +29755,6 @@
     "_file": "library/tools/communities-forums/google-com-39.md"
   },
   {
-    "id": "google-com-40",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforums.golf-monthly.co.uk/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-40.md"
-  },
-  {
     "id": "google-com-6",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -31913,45 +31875,58 @@
   },
   {
     "id": "match",
-    "name": "Match",
-    "description": "Online dating profile site",
-    "url": "http://www.match.com/",
+    "name": "Match (Match.com)",
+    "description": "Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first names, ages, and location clues.",
+    "url": "https://www.match.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Discovering or confirming a subject's dating profile (photos, first name, age, city, self-described details) on a mainstream dating platform.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse/search profiles; messaging and some features require a paid subscription.",
+    "opsec": "active",
+    "opsecNote": "ACTIVE — you generally need an account to search, and Match shows profiles you view / may surface you to them (\"who viewed you\", suggested matches). Use a sock-puppet account, never your own; never message or interact with the subject. Assume viewing can leave a trace.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A legitimate mainstream dating site (Match Group); profiles are self-authored and often embellished or partly anonymised, so treat details as claims.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "match-com"
     ],
+    "aliases": [
+      "Match.com"
+    ],
+    "tags": [
+      "toddington",
+      "dating",
+      "social-profile"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/match.md"
   },
   {
@@ -33299,24 +33274,30 @@
   {
     "id": "newsnow-united-kingdom",
     "name": "NewsNow (United Kingdom)",
-    "description": "Searchable website for a major online news/media publisher covering global events, including sections on business, science, sports, and entertainment",
-    "url": "http://www.newsnow.co.uk/h",
+    "description": "Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain`s across many outlets.",
+    "url": "https://www.newsnow.co.uk/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Real-time, cross-outlet news aggregation to find current and recent coverage of a person, event, or organisation.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse/search aggregated headlines; a paid tier exists for professional media-monitoring features.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read aggregated public headlines; nothing about a subject is transmitted. Clicking through visits the source outlet with a normal footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established UK news aggregator; it indexes third-party outlets rather than reporting, so trust flows to the underlying source, not NewsNow.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -33325,15 +33306,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "NewsNow"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "news-aggregator",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/newsnow-united-kingdom.md"
   },
   {
@@ -71806,52 +71790,6 @@
     "_file": "library/tools/domains-ip-infrastructure/blacklists/dshield-api.md"
   },
   {
-    "id": "dsl-reports-ping-test",
-    "name": "DSL Reports Ping Test",
-    "description": "Analysis tool that assesses the privacy vulnerabilities of your system",
-    "url": "http://www.dslreports.com/tools/pingtest",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/dsl-reports-ping-test.md"
-  },
-  {
     "id": "dumpsterdiver",
     "name": "DumpsterDiver",
     "description": "Tool can analyze big volumes of data and find some \"secrets\" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)",
@@ -88044,30 +87982,29 @@
   {
     "id": "site-analyzer",
     "name": "Site Analyzer",
-    "description": "Online website analyzing tool",
-    "url": "http://www.site-analyzer.com",
+    "description": "Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastructure/context, not personal data).",
+    "url": "https://www.site-analyzer.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A quick SEO/technical audit of a website (indexability, content quality, UX) to profile a domain of interest.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — free page analysis without a credit card; paid plans for deeper/recurring audits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive toward any person — you audit a website's public pages. Note that the analyzer fetches the target site (its logs may see the scanner's requests, not necessarily yours), and you submit the URL to a third-party SaaS that logs it. Fine for public sites; avoid submitting sensitive/private URLs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established commercial SEO-analysis SaaS (100k+ users); reliable for the technical/SEO signals it reports, but it profiles websites, not people.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -88076,15 +88013,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Site Analyzer"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "seo",
+      "website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/site-analyzer.md"
   },
   {
@@ -90092,30 +90032,29 @@
   {
     "id": "testmy-net-internet-speed-test",
     "name": "TestMy.Net Internet Speed Test",
-    "description": "Analysis tool that assesses the speed of your website performance",
-    "url": "http://testmy.net/upload",
+    "description": "Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-lookup value.",
+    "url": "https://testmy.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Benchmarking your own connection and confirming the public IP/ISP your research egress exposes (an opsec self-check).",
     "selectorsIn": [
-      "domain",
       "ip-address"
     ],
     "selectorsOut": [
-      "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser-based speed test; optional account to log results over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The test discloses YOUR public IP, ISP, and rough location to TestMy's servers — it profiles your own egress, not a target. Use it to confirm what your VPN/research connection leaks; it cannot look up someone else's IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent speed-test service; dependable for bandwidth/your-own-IP, but not an intelligence source about other people.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -90124,15 +90063,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "speedtest-com",
+      "ozspeedtest-australia"
+    ],
+    "aliases": [
+      "TestMy.net"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "speed-test",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/testmy-net-internet-speed-test.md"
   },
   {
@@ -90898,31 +90843,30 @@
   },
   {
     "id": "tucows-canada",
-    "name": "Tucows (Canada)",
-    "description": "Canada based service provider for registering websites and domain addresses",
-    "url": "http://www.tucows.com",
+    "name": "Tucows",
+    "description": "Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site itself is not a lookup tool.",
+    "url": "https://www.tucows.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding the registrar (Tucows/OpenSRS/Hover) behind a domain you found in WHOIS; not a domain-lookup service itself.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The corporate site is informational; domain registration is a paid service via Tucows Domains/OpenSRS/Hover.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading Tucows' corporate/informational pages transmits nothing about a target. Actual WHOIS lookups happen in a WHOIS tool, not here; and WHOIS queries themselves are logged by the registry.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Tucows is a major, publicly traded internet company and the world's second-largest domain registrar; authoritative as a registrar, but tucows.com is a corporate portal, not an OSINT lookup.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -90930,16 +90874,21 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "OpenSRS",
+      "Hover",
+      "Tucows Domains"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "registrar",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/tucows-canada.md"
   },
   {
@@ -203446,30 +203395,32 @@
   {
     "id": "officialusa-usa-official",
     "name": "OfficialUSA / USA-Official",
-    "description": "Free directory-style people lookup aggregator.",
+    "description": "Use when you have a US `name` and want a free directory-style lookup — returns associated `address`es, `phone`s, and possible relatives/`associate`s.",
     "url": "https://www.officialusa.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Free directory-style people lookup by name returning basic address/phone records.",
+    "bestFor": "Free first-pass US people lookup by name for addresses, phones, and relative links before paying for a deeper report.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "phone"
+      "phone",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free directory listings and basic results; deeper \"background report\" pages upsell paid third-party services.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a data-broker aggregator, not the person; they are not notified. The broker logs your query. Note it is a data-broker with an opt-out process; treat its data as scraped/aggregated, and only use for legitimate investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A US data-broker/directory aggregator; data is compiled from public and commercial sources and is often stale or conflated — a lead source, not authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
@@ -203478,17 +203429,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
       "OfficialUSA",
       "USA-Official"
     ],
     "tags": [
       "people-search",
-      "directory"
+      "directory",
+      "data-broker"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/officialusa-usa-official.md"
   },
   {
@@ -221230,52 +221183,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/business-source.md"
-  },
-  {
-    "id": "business-type-phone-book-united-kingdom",
-    "name": "Business Type Phone Book (United Kingdom)",
-    "description": "Search for a business by type or name",
-    "url": "http://www.thephonebook.bt.com/publisha.content/en",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/business-type-phone-book-united-kingdom.md"
   },
   {
     "id": "buzzfile",
@@ -244061,52 +243968,6 @@
     "_file": "library/tools/public-records/lexington-ky-employee-salaries-2021.md"
   },
   {
-    "id": "lexisnexis",
-    "name": "LexisNexis",
-    "description": "Legal-related search engine for legal court cases and documents",
-    "url": "https://www.lexisnexis.com/en-us/home.page",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/lexisnexis.md"
-  },
-  {
     "id": "lexisnexis-advance-quicklaw",
     "name": "LexisNexis Advance Quicklaw",
     "description": "Legal-related search engine for legal court cases and documents with advanced search forms for a more precise search",
@@ -244799,47 +244660,54 @@
   {
     "id": "local-directories-search-australia",
     "name": "Local Directories Search (Australia)",
-    "description": "Australian business-related search engine that searches global results by product, occupation, business and city name",
-    "url": "http://www.localdirectories.com.au",
+    "description": "Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with `address` and `phone`.",
+    "url": "https://www.localsearch.com.au/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding Australian businesses/tradespeople by name/category and suburb, with address and phone.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search listings; paid tiers exist for business owners (premium profiles/marketing).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public Australian business directory, transmitting nothing about a personal target. Only relevant when a subject is tied to an AU business/trade.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major Australian local-business directory (localdirectories.com.au now redirects to Localsearch); reliable for business listings, not personal records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Localsearch",
+      "localdirectories.com.au"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "company-search"
+      "company-search",
+      "australia",
+      "local-business"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/local-directories-search-australia.md"
   },
   {
@@ -256911,48 +256779,51 @@
   },
   {
     "id": "quandl",
-    "name": "Quandl",
-    "description": "Database of corporate, financial, trade, and capital market data",
-    "url": "https://www.quandl.com/search?query=",
+    "name": "Quandl (Nasdaq Data Link)",
+    "description": "Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and economics (aggregate data, not personal records).",
+    "url": "https://data.nasdaq.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Sourcing financial, economic, and market datasets (some free) for background on a company or market context.",
     "selectorsIn": [
-      "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Quandl rebranded to Nasdaq Data Link; many datasets are free (some need a free API key), premium datasets are paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query aggregated financial datasets, not a person; nothing reaches any subject. A free account/API key ties queries to you; use a research account for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Nasdaq (formerly Quandl); authoritative for the financial/market datasets it hosts, but it provides aggregate/market data, not individual PII.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Quandl",
+      "Nasdaq Data Link"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "financial-data",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/quandl.md"
   },
   {
@@ -280741,41 +280612,55 @@
   {
     "id": "falla",
     "name": "Falla",
-    "description": "A search engine command line scraper for more than 15 search engines, including Google, Duckduckgo, Bing, Ask, and more.",
+    "description": "Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain` and get aggregated result `domain`s.",
     "url": "https://github.com/Sanix-Darker/falla",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "CLI scraping of many search engines (Google, Bing, DuckDuckGo, Yandex, Ask, etc.) at once for a single query.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free, open-source (Python) on GitHub; self-hosted, no API key.",
+    "opsec": "active",
+    "opsecNote": "ACTIVE — it automates scraping across many search engines, which they detect and CAPTCHA/ban; the scraping originates from your IP. Use proxies/throttling and disposable infrastructure. Passive toward any person (you touch search engines, not the target), but noisy toward those engines.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Small open-source project (Sanix-Darker); handy for breadth but unaudited and dependent on scraping that engines actively block — expect breakage.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "scanner-inurlbr"
+    ],
+    "aliases": [
+      "falla"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "search-scraper",
+      "cli",
+      "python"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/falla.md"
   },
   {
@@ -341803,38 +341688,50 @@
   {
     "id": "stweet",
     "name": "Stweet",
-    "description": "Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.",
+    "description": "Use when you have a `username`, hashtag, or keyword and want to bulk-scrape historical tweets without an API key — returns tweet `social-profile` data (text, dates, engagement).",
     "url": "https://github.com/markowanga/stweet",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Programmatic bulk scraping of tweets by user/hashtag/keyword from Python with no login or API key.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (Python) on GitHub; no API key or paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the target — it reads Twitter/X's public web endpoints; it does not touch the user's account or notify them. It scrapes anonymously (no login), which is good for your footprint, but scraping may breach X's ToS and endpoints break often — run from research infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source library (markowanga, ~270+ stars); technique is sound but fragile against X's frequent API changes and only lightly maintained — verify it still runs before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "stweet"
+    ],
     "tags": [
       "Social Media",
-      "Twitter"
+      "Twitter",
+      "python",
+      "scraper"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/stweet.md"
   },
   {
@@ -367360,48 +367257,54 @@
   {
     "id": "vincheck-info",
     "name": "VINCheck.info",
-    "description": "OSINT tool: VINCheck.info.",
-    "url": "http://vincheck.info",
+    "description": "Use when you have a `vin` or `vehicle-plate` and want a free vehicle history — returns title/salvage/theft history, specs, and recalls (vehicle context, not owner identity).",
+    "url": "https://vincheck.info",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free VIN or license-plate lookup for a vehicle's title, salvage, theft, recall and spec history.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vin",
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "vin"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free; ad-supported (replaces the usual paywall). Pulls from NMVTIS, NHTSA, VinAudit.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query public/aggregated vehicle databases, not a person. The vehicle owner is not notified. Note it returns vehicle history, not current owner PII; do not expect an owner name/address from a plate here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates authoritative sources (NMVTIS, NHTSA) but is a third-party free service; treat title/theft/recall data as reliable-but-verify against the official NMVTIS provider for anything decisive.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "free-car-license-plate-lookup",
       "vin-check-reports",
       "vincheck-nicb"
     ],
+    "aliases": [
+      "VINCheck.info"
+    ],
+    "tags": [
+      "vehicle",
+      "vin",
+      "license-plate"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vincheck-info.md"
   },
   {

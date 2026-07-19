@@ -166,7 +166,7 @@ kind: group-index
 - **`no-1-free-people-search`** (high) — Use when you have a `name` and want a web-mention aggregation of that person (links, news, images, profiles) — returns `social-profile`s, re
 - **`obituaries-australia`** (high) — Use when you have the `name` of a deceased person with an Australian connection and want their published obituary — returns death details, b
 - **`ofac-specially-designated-nationals-search-united-states`** (high) — Use when you have a `name` and want to check the US Treasury sanctions/SDN list — returns match with aliases, `address`es, `dob`, and linked
-- **`officialusa-usa-official`** (medium) — Free directory-style people lookup aggregator.
+- **`officialusa-usa-official`** (medium) — Use when you have a US `name` and want a free directory-style lookup — returns associated `address`es, `phone`s, and possible relatives/`ass
 - **`one-charliebrassington`** (high) — Use when you have an `email`, `username`, `name` or UK postcode and want a Python CLI that scrapes multiple people-search and account source
 - **`osint-san`** (medium) — Framework for rapid information discovery and user deanonymization.
 - **`osint-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to search a curated set of people/OSINT sites at once — a prebuilt Google Custom 

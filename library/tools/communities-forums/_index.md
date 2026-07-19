@@ -47,7 +47,7 @@ kind: group-index
 - **`boards-ie`** (medium) — OSINT tool: boards.ie.
 - **`bodybuilding-com`** (medium) — Forum related to health, wellness, and/or fitness
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
-- **`bootsnall`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`bootsnall`** (medium) — Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; lim
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
@@ -156,7 +156,6 @@ kind: group-index
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-com-37`** (medium) — OSINT tool: google.com.
 - **`google-com-39`** (medium) — OSINT tool: google.com.
-- **`google-com-40`** (medium) — OSINT tool: google.com.
 - **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
@@ -203,7 +202,7 @@ kind: group-index
 - **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`mamba-ru`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`mashable`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
-- **`match`** (medium) — Online dating profile site
+- **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
 - **`mate1-com-website`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`medium`** (low) — OSINT tool: Medium.
 - **`meetic-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -234,7 +233,7 @@ kind: group-index
 - **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`new-york-times`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`newsblur-rss-feeder`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
-- **`newsnow-united-kingdom`** (medium) — Searchable website for a major online news/media publisher covering global events, including sections on business, science, sports, and ente
+- **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — View and translate all newspapers from around the world on a visual map
 - **`ning`** (medium) — OSINT tool: Ning.
 - **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile

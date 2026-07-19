@@ -596,7 +596,7 @@ kind: group-index
 - **`storysaver`** (high) — Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos 
 - **`streamscharts-com`** (medium) — Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public
 - **`streamweasels-com`** (high) — Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that s
-- **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
+- **`stweet`** (medium) — Use when you have a `username`, hashtag, or keyword and want to bulk-scrape historical tweets without an API key — returns tweet `social-pro
 - **`subreddit-stats-user-overlap`** (medium) — Use when you have a subreddit a subject frequents and want the communities its users also inhabit — returns ranked overlapping subreddits to
 - **`sully-gnome`** (medium) — Use when you have a Twitch `username`/channel and want its activity history — returns games streamed, schedule, growth, watch-time, and peak
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu

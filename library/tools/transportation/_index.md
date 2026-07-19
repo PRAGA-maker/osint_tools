@@ -211,7 +211,7 @@ kind: group-index
 - **`vin-decoder-and-lookup`** (low) — Use when you have a `vin` and want to decode the vehicle's year, make, model and specs for free — returns a physical-description to confirm 
 - **`vin-decoder`** (medium) — Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing 
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
-- **`vincheck-info`** (medium) — OSINT tool: VINCheck.info.
+- **`vincheck-info`** (medium) — Use when you have a `vin` or `vehicle-plate` and want a free vehicle history — returns title/salvage/theft history, specs, and recalls (vehi
 - **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
 - **`wandermap`** (low) — hiking routes world map
 - **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor

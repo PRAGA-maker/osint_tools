@@ -129,7 +129,6 @@ kind: group-index
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
 - **`business-source`** (medium) — OSINT tool: Business Source.
-- **`business-type-phone-book-united-kingdom`** (medium) — Search for a business by type or name
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
 - **`cal-poly-email-search`** (medium) — OSINT tool: Cal Poly Email Search.
 - **`california-registered-voter-verification`** (medium) — California voter registration verification and search
@@ -561,7 +560,6 @@ kind: group-index
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
 - **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
 - **`lexisnexis-advance-quicklaw`** (medium) — Legal-related search engine for legal court cases and documents with advanced search forms for a more precise search
-- **`lexisnexis`** (medium) — Legal-related search engine for legal court cases and documents
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
@@ -574,7 +572,7 @@ kind: group-index
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
 - **`liveroots`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
-- **`local-directories-search-australia`** (medium) — Australian business-related search engine that searches global results by product, occupation, business and city name
+- **`local-directories-search-australia`** (medium) — Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with 
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
 - **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area
 - **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
@@ -800,7 +798,7 @@ kind: group-index
 - **`public-library-of-science-search`** (medium) — Academic-related search engine for the Public Library of Science articles, providing access to various scientific publications and collectio
 - **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
 - **`public-records`** (medium) — Unclear - requires VP clarification
-- **`quandl`** (medium) — Database of corporate, financial, trade, and capital market data
+- **`quandl`** (medium) — Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and 
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
 - **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
