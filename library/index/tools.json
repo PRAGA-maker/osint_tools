@@ -42922,25 +42922,31 @@
   {
     "id": "naval-open-source-intelligence",
     "name": "Naval Open Source Intelligence",
-    "description": "Operational naval news curated from open source intelligence",
+    "description": "Use when you need curated open-source naval/maritime-military news and analysis — returns an actively updated feed of naval developments for domain context, not a people lookup.",
     "url": "https://nosi.org/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A curated, actively updated feed of open-source naval and maritime-military news for subject-matter context and monitoring.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; funded by its owner with no advertising, and an optional free email subscription for new posts.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news-aggregation blog is passive and touches no target. Subscribing by email reveals your address to the site owner — use a sock-puppet address if you subscribe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A single-curator naval-news aggregation (funded by Michael P. D'Alessandro); it points to primary open sources but is one person's editorial selection, so follow through to the underlying reporting.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -42948,15 +42954,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NOSI",
+      "nosi.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "deep-web-search"
+      "naval",
+      "maritime"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/naval-open-source-intelligence.md"
   },
   {
@@ -50428,47 +50438,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dating-classifieds/transsearcher-com.md"
-  },
-  {
-    "id": "truedater-online-dating-reports",
-    "name": "TrueDater (Online Dating Reports)",
-    "description": "OSINT tool: TrueDater (Online Dating Reports).",
-    "url": "http://www.truedater.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "dating"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/truedater-online-dating-reports.md"
   },
   {
     "id": "ukclassifieds",
@@ -71738,52 +71707,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/ekhwan-uae.md"
-  },
-  {
-    "id": "elisa-net-finland",
-    "name": "Elisa.net (Finland)",
-    "description": "Finnish telecommunications and digital services website",
-    "url": "http://www.elisa.net",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/elisa-net-finland.md"
   },
   {
     "id": "ericom-page-risk-analysis",
@@ -110185,43 +110108,55 @@
   {
     "id": "arkham-intelligence",
     "name": "Arkham Intelligence",
-    "description": "Institutional-grade cryptocurrency entity mapping and fund-flow analysis",
+    "description": "Use when you have a `crypto-wallet` or entity `name` and want labelled entity mapping and fund-flow analysis — returns entity profiles, address labels, counterparties and transaction graphs.",
     "url": "https://intel.arkm.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "mixer-tracking"
     ],
-    "bestFor": "Institutional-grade cryptocurrency entity mapping and fund-flow analysis",
-    "input": "Cryptocurrency address, entity name, or organization identifier",
-    "output": "Entity profile pages, address labels, transaction network visualization, fund-flow tracking, counterparty analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "De-anonymising and mapping crypto activity — turning an address or entity name into labelled owners, counterparties, and visual fund-flow graphs.",
+    "selectorsIn": [
+      "crypto-wallet",
+      "name"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to create an account and use the core Explorer (entity profiles, labels, transaction graphs); advanced/enterprise features and higher API limits are paid.",
     "opsec": "active",
-    "opsecNote": "Aggregates on-chain and off-chain intelligence; registered users leave account footprint. Government and institutional adoption.",
+    "opsecNote": "Requires registration, so your queries are tied to an account — use a sock-puppet email/identity. Searching an address on Arkham does not notify the wallet owner, but Arkham logs what you look up; keep case-linked searches on a dedicated account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used crypto-intelligence platform with government/institutional adoption; its entity labels blend algorithmic attribution and human input, so high-confidence labels are strong leads but should be corroborated on-chain before you rely on them.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Arkham",
+      "intel.arkm.com"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain-analysis",
+      "entity-mapping"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/mixer-tracking/arkham-intelligence.md"
   },
   {
@@ -126501,43 +126436,50 @@
   },
   {
     "id": "pedestriansfirst",
-    "name": "Pedestriansfirst",
-    "description": "Evaluate the pedestrian friendliness of streets in different cities. There is a lot of detailed data that will be useful both for choosing a place to live and for a variety of research",
+    "name": "PedestriansFirst",
+    "description": "Use when you have a `geolocation`/city and want walkability and urban-mobility metrics for it — returns per-city pedestrian-infrastructure data useful as environmental context.",
     "url": "https://pedestriansfirst.itdp.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling ITDP walkability/urban-mobility indicators for a city — contextual data about a place's pedestrian infrastructure, not a people lookup.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public tool from ITDP (Institute for Transportation and Development Policy); no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading published urban-mobility data is fully passive — no target interaction. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Maintained by ITDP, a reputable non-profit transport-policy institute; the walkability metrics are derived from open geospatial data and are methodologically documented.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Pedestrians First",
+      "ITDP PedestriansFirst"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "Urban and industrial infrastructure",
+      "walkability"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/pedestriansfirst.md"
   },
   {
@@ -256896,52 +256838,6 @@
     "_file": "library/tools/public-records/rechercher-par-r-pondant.md"
   },
   {
-    "id": "recruitem",
-    "name": "RecruitEm",
-    "description": "X-Ray searching LinkedIn and other platforms for employee and candidate profiles",
-    "url": "https://recruitin.net/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "employee-profiles-and-resumes"
-    ],
-    "bestFor": "X-Ray searching LinkedIn and other platforms for employee and candidate profiles",
-    "input": "Job title, skills, location, and target platform",
-    "output": "Google search query and direct results links for profile discovery",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Generates Google dork queries; actual searches routed through Google.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "google-to-search-profiles-on-dribbble",
-      "google-to-search-profiles-on-github",
-      "google-to-search-profiles-on-stack-overflow",
-      "google-to-search-profiles-on-twitter",
-      "google-to-search-profiles-on-xing"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/employee-profiles-and-resumes/recruitem.md"
-  },
-  {
     "id": "redfin",
     "name": "Redfin",
     "description": "Use when you have an `address` and want a property's sale history, valuation, and details — returns ownership-history dates, prices, and `geolocation` context.",
@@ -299169,35 +299065,50 @@
   {
     "id": "robots-txt-search-engine",
     "name": "Robots.txt Search Engine",
-    "description": "OSINT tool: Robots.txt Search Engine.",
+    "description": "Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth probing, via a Google CSE.",
     "url": "https://cse.google.com/cse?cx=013991603413798772546:zu7epjqvunu",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching across sites' robots.txt files to surface \"Disallow\" paths (admin, staging, hidden directories) that hint at non-public site structure.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free hosted Google Programmable Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Querying the CSE runs on Google and does not touch the target site, so it's passive. If you then visit a discovered path directly, that request hits the target's server — use a sock-puppet IP for that step.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party-configured Google CSE scoped to robots.txt content; its index and scope are opaque and may drift, so treat null results as non-authoritative.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "robots.txt CSE"
+    ],
+    "tags": [
+      "google-cse",
+      "recon",
+      "web-infrastructure"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/robots-txt-search-engine.md"
   },
   {
@@ -314676,39 +314587,55 @@
   },
   {
     "id": "discord-chat-exporter",
-    "name": "Discord Chat Exporter",
-    "description": "A tool for exporting Discord chat logs in multiple formats.",
+    "name": "DiscordChatExporter",
+    "description": "Use when you have access to a Discord server/channel and want an offline, searchable archive of its messages — returns exported chat logs (HTML/JSON/CSV) with authors, timestamps, attachments.",
     "url": "https://github.com/Tyrrrz/DiscordChatExporter",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Exporting Discord channel/DM history to a searchable, preservable file (HTML/JSON/CSV) for evidence capture and analysis.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (GUI, CLI, and Docker builds). No cost beyond your own Discord account/token.",
+    "opsec": "active",
+    "opsecNote": "Exporting requires your (or a sock-puppet) Discord account's token and reads channels that account can see — using a personal user token to automate reads is against Discord's ToS and can get the account banned. Use a dedicated sock-puppet account, only in servers you have legitimate access to, and never share the token.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A very popular, actively maintained open-source tool by Tyrrrz, featured in Bellingcat's toolkit; the export faithfully reflects what your account can see, so accuracy is high but scope is limited by your access.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DiscordChatExporter",
+      "Tyrrrz DiscordChatExporter"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "other-platforms"
+      "discord",
+      "evidence-preservation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/discord-chat-exporter.md"
   },
   {
@@ -348749,35 +348676,49 @@
   {
     "id": "unlistedvideos-com",
     "name": "Unlistedvideos.com",
-    "description": "OSINT tool: Unlistedvideos.com.",
+    "description": "Use when you want to discover unlisted YouTube videos (not shown in search or on a channel) — returns a crowd-submitted, searchable index of otherwise-hidden public videos.",
     "url": "https://unlistedvideos.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding \"unlisted\" YouTube videos — publicly viewable but hidden from search/channel listings — via a crowdsourced, no-login index.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no registration required to browse, search, or submit.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing is passive and touches only this third-party index, not YouTube's account systems — the video owner gets no signal. Watching the underlying YouTube video does count a view but doesn't identify you. Use a sock-puppet browser for separation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "unverified",
+    "trustNote": "A small crowdsourced directory; it only contains videos users have submitted, so coverage is partial and it excludes content unlisted for privacy — treat it as a lucky-dip supplement, not a comprehensive index.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Unlisted Videos"
+    ],
+    "tags": [
+      "youtube",
+      "unlisted-content"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/unlistedvideos-com.md"
   },
   {
@@ -358259,43 +358200,54 @@
   {
     "id": "autodna-vin-lookup",
     "name": "autoDNA VIN Lookup",
-    "description": "VIN-based damage, ownership, and service history checks",
+    "description": "Use when you have a `vin` and want a vehicle's damage, mileage, and ownership-history record — returns a decoded profile plus (paid) history report across European/US data.",
     "url": "https://www.autodna.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "vehicle-records"
     ],
-    "bestFor": "VIN-based damage, ownership, and service history checks",
-    "input": "17-character VIN",
-    "output": "Inspection, damage, repair, ownership, and mileage records",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Decoding a VIN and pulling damage/mileage/ownership history for a specific vehicle, with strong European coverage.",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "physical-description",
+      "document-id",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic VIN decode (make/model/specs) is free; the full history report (damage, mileage timeline, photos, records count) is a paid one-off purchase. Free tier alone confirms the VIN is valid and its specs.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup model; full intelligence requires paid report access.",
+    "opsecNote": "A VIN lookup is passive — you query autoDNA, not the owner, and no target is notified. Buying a report requires payment details; use a separated payment method if you need the paid report and want to avoid linkage.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "autoDNA is an established commercial VIN-history provider (strong in Poland/EU); report data aggregates dealer, inspection, and insurance sources — reliable but never exhaustive, and gaps are common outside its core regions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "autoDNA",
+      "autodna.com"
+    ],
+    "tags": [
+      "vehicle",
+      "vin-decoder",
+      "vehicle-history"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-records/autodna-vin-lookup.md"
   },
   {

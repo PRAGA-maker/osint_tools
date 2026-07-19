@@ -106,7 +106,7 @@ kind: group-index
 - **`diaspora`** (high) — Use when you have a `name` or `username` and want to check for a presence on the decentralised Diaspora* social network — returns a social-p
 - **`discord-bots`** (medium) — OSINT tool: Discord Bots.
 - **`discord-center`** (medium) — Use when you want to find or profile a public Discord community by topic or name — returns server listings (social-profile) with member coun
-- **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
+- **`discord-chat-exporter`** (medium) — Use when you have access to a Discord server/channel and want an offline, searchable archive of its messages — returns exported chat logs (H
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
 - **`discord-id-lookup`** (medium) — Use when you have a Discord user/snowflake ID (`device-id`) and want the account's public identity — returns `username`, avatar, and exact a
 - **`discord-me`** (medium) — Use when you have a `username` or topic and want to find public Discord servers a subject may frequent — returns server listings with catego
@@ -723,7 +723,7 @@ kind: group-index
 - **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
 - **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —
-- **`unlistedvideos-com`** (medium) — OSINT tool: Unlistedvideos.com.
+- **`unlistedvideos-com`** (low) — Use when you want to discover unlisted YouTube videos (not shown in search or on a channel) — returns a crowd-submitted, searchable index of
 - **`untwitch-com`** (medium) — Twitch video downloader
 - **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
 - **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.

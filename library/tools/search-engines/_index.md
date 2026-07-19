@@ -640,7 +640,7 @@ kind: group-index
 - **`reviewmeta`** (low) — OSINT tool: ReviewMeta.
 - **`rfc-fyi`** (low) — Browseable, searchable RFC index
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
-- **`robots-txt-search-engine`** (medium) — OSINT tool: Robots.txt Search Engine.
+- **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth
 - **`rocketlawyer`** (medium) — Website related to social networking and crowdsourceing with thousands of online responses to legal queries
 - **`rockstargames-socialclub-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`roger-ebert`** (medium) — Website related to movie reviews

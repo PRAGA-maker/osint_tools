@@ -230,7 +230,7 @@ kind: group-index
 - **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O
 - **`pastvu-com`** (medium) — Use when you have a `geolocation` or an old `image` and want historical photos mapped to that spot — returns dated, geolocated imagery to co
 - **`peakfinder`** (high) — Use when an outdoor photo shows a mountain skyline and you want to identify peaks or confirm/narrow the camera location by matching the hori
-- **`pedestriansfirst`** (medium) — Evaluate the pedestrian friendliness of streets in different cities. There is a lot of detailed data that will be useful both for choosing a
+- **`pedestriansfirst`** (low) — Use when you have a `geolocation`/city and want walkability and urban-mobility metrics for it — returns per-city pedestrian-infrastructure d
 - **`perry-castaneda-library`** (high) — Use when you have a place name or region and need historical/topographic/political reference maps to interpret a geolocation.
 - **`photo-map-ru`** (medium) — Use when you have a `geolocation` in the former USSR and want VK posts taken there — returns geotagged VKontakte photos/posts plotted on a m
 - **`pic2map`** (high) — Use when you have a photo and want to extract embedded EXIF/GPS metadata and plot the capture location on a map.
