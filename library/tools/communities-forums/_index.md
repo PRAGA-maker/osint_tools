@@ -260,7 +260,7 @@ kind: group-index
 - **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`pc-magazine`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
-- **`pinkbike`** (medium) — Online community forum
+- **`pinkbike`** (medium) — Use when you have a `username` or `name` tied to mountain biking and want their profile, posts and marketplace listings — returns social-pro
 - **`pistonheads-com`** (medium) — OSINT tool: pistonheads.com.
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
 - **`plazoo-rss-feed-search-engine`** (medium) — Website that searches for links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest

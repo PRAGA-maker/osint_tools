@@ -86,7 +86,7 @@ kind: group-index
 - **`diffchecker`** (high) — Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing e
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr
 - **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.
-- **`downalbum`** (medium) — Chrome extension for downloading photo albums from social media.
+- **`downalbum`** (medium) — Use when you have a public `social-profile` and want to bulk-download its photo albums for offline analysis — returns image sets from Facebo
 - **`downloadhelper`** (medium) — Use when you have a page hosting a video/image you need to preserve for analysis — returns the downloaded media file for archiving, framing,
 - **`dupli-checker`** (high) — Use when you have a photo of a person/place and want a quick multi-engine reverse-image lookup — returns matching social-profile pages and i
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
@@ -299,7 +299,7 @@ kind: group-index
 - **`second-life`** (high) — Use when you have a `username` (Second Life resident name) or `name` and want to find a subject's virtual-world avatar profile — returns soc
 - **`see-it-search-it`** (high) — Use when you have an `image` (a face, object, place, or logo) and want to find matching or similar images across the web via Bing's reverse/
 - **`seintpl-github-io`** (high) — Use when you have a YouTube video URL and want its data and thumbnails — returns the video's metadata (title, channel, dates) and downloadab
-- **`sentinel-hub-eo-browser`** (medium) — complete archive of Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P, ESA's archive of Landsat 5, 7 and 8, global coverage of Landsat 8, Envi
+- **`sentinel-hub-eo-browser`** (medium) — Use when you have a `geolocation`/coordinates and want dated satellite imagery of that spot — returns time-stamped multispectral imagery for
 - **`sherloq`** (medium) — Use when you have an `image` and want to test whether it was edited, staged, or re-saved and pull its embedded metadata — returns `metadata-
 - **`show-my-street`** (medium) — Use when you have an `address` or `geolocation` and want to see it on the ground — returns Google Street View panoramas (`image`) for quick 
 - **`shutterfly`** (high) — Use when you have a `name`/`username` and suspect the subject uses Shutterfly to share photos — returns `image` galleries and shared-album p

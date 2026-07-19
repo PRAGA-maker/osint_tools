@@ -786,7 +786,7 @@ kind: group-index
 - **`project-whispers`** (low) — OSINT tool: Project Whispers.
 - **`proper-ie`** (high) — Use when you have an Irish `address`/area and want sale-price history from Ireland's public Residential Property Price Register — returns tr
 - **`property-records-public-records-by-state`** (high) — Use when you have a `name` or `address` and want official county property/deed records — returns a directory of free government sources to p
-- **`property-search-public-records-by-state`** (medium) — OSINT tool: Property Search - Public Records by State.
+- **`property-search-public-records-by-state`** (medium) — Use when you have a US `name` or `address` and want the right county/state property-records portal — returns links to official assessor/reco
 - **`propertypriceregister-ie`** (medium) — Use when you have an Irish `address` (or area) and want to confirm a residential sale, its date and price — returns the sale date, price and
 - **`propertypriceregisterireland-com`** (high) — Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address 
 - **`prs-risk-indicators`** (low) — OSINT tool: PRS Risk Indicators.

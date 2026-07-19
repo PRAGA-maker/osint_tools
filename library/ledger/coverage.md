@@ -2,21 +2,21 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8123 total · 3598 full · 4525 stub (44% enriched)
+**Tools:** 8122 total · 3607 full · 4515 stub (44% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3433 · medium: 2730 · high: 1960
+low: 3433 · medium: 2729 · high: 1960
 
 ## Tools by trust
-unverified: 3508 · community: 3383 · trusted: 1220 · personal: 6 · untrustworthy: 6
+unverified: 3501 · community: 3385 · trusted: 1224 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
 - `archives-cache` — 47/134
-- `communities-forums` — 92/397
+- `communities-forums` — 93/397
 - `dark-web` — 15/118
 - `dating-classifieds` — 46/112
 - `documents-metadata` — 26/314
@@ -25,18 +25,18 @@ unverified: 3508 · community: 3383 · trusted: 1220 · personal: 6 · untrustwo
 - `evidence-capture` — 5/31
 - `financial-crypto` — 34/127
 - `geolocation` — 220/349
-- `image-video-face` — 401/471
+- `image-video-face` — 403/471
 - `maps-geospatial-data` — 30/141
 - `messaging` — 157/193
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 236/266
 - `phone` — 134/137
-- `public-records` — 709/1100
-- `search-engines` — 285/927
+- `public-records` — 710/1100
+- `search-engines` — 286/927
 - `social-networks` — 632/846
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
-- `transportation` — 70/228
+- `transportation` — 74/227
 - `username` — 100/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -53,7 +53,7 @@ unverified: 3508 · community: 3383 · trusted: 1220 · personal: 6 · untrustwo
 - `library/tools/documents-metadata` — 263 leaves
 - `library/tools/people-search` — 256 leaves
 - `library/tools/email` — 222 leaves
-- `library/tools/transportation` — 209 leaves
+- `library/tools/transportation` — 208 leaves
 - `library/tools/messaging` — 178 leaves
 - `library/tools/maps-geospatial-data` — 141 leaves
 - `library/tools/phone` — 139 leaves

@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`autodna-vin-lookup`** (medium) — VIN-based damage, ownership, and service history checks
-- **`autoref-eu`** (medium) — EU vehicle specification lookup and plate-to-VIN workflows
+- **`autoref-eu`** (medium) — Use when you have a European `vehicle-plate` or `vin` and want the vehicle's identity and specification — returns make/model/engine and VIN-
 - **`carnet-ai`** (medium) — Use when you have an `image` of a car and want to identify its make, model and generation — returns a physical-description of the vehicle to
 - **`findbyplate`** (medium) — Use when you have a US `vehicle-plate` + state and want to decode the vehicle and probe for ownership hints — returns vin and vehicle specs 
 - **`finnik-nl`** (medium) — Use when you have a Dutch `vehicle-plate` and want its full vehicle record — returns specs, APK (inspection) history, tax/insurance status, 

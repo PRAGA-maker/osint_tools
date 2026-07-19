@@ -43,7 +43,7 @@ kind: group-index
 - **`caranalytics-co-uk`** (medium) — OSINT tool: Caranalytics.co.uk.
 - **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
-- **`casa-aircraft-search-australia`** (medium) — Aviation-related website that offers a search of the Australian database of registered aviation owners
+- **`casa-aircraft-search-australia`** (medium) — Use when you have an Australian aircraft mark (VH-xxx) and want the aircraft and its registered holder — returns aircraft details, employer-
 - **`certified-aircraft-database`** (low) — Use when you have an aircraft tail number (`vehicle-plate`) and want to decode its country of registration — returns the `geolocation` (nati
 - **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
@@ -62,7 +62,7 @@ kind: group-index
 - **`crewlist-org-uk`** (low) — OSINT tool: Crewlist.org.uk.
 - **`cruise-mapper`** (low) — OSINT tool: Cruise Mapper.
 - **`cyclevin`** (low) — Motorcycle-specific VIN history.
-- **`deciphering-number-plates`** (medium) — OSINT tool: Deciphering Number Plates.
+- **`deciphering-number-plates`** (medium) — Use when you have a `vehicle-plate` in a photo and want to decode its country/region format — a reference series explaining how plates are s
 - **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
 - **`enterprise-rental-receipts`** (medium) — OSINT tool: enterprise Rental Receipts.
 - **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
@@ -75,7 +75,6 @@ kind: group-index
 - **`faa-registry`** (low) — OSINT tool: FAA Registry.
 - **`faxvin`** (medium) — OSINT tool: FaxVIN.
 - **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.
-- **`fleetmon-vessel-search`** (medium) — Maritime-related website that provides live ship tracking worldwide
 - **`fleetmon`** (low) — OSINT tool: FleetMon.
 - **`flight-radar-24`** (low) — OSINT tool: Flight Radar 24.
 - **`flight-stats`** (low) — Use when you have a flight number, route or airport and want status/history — returns real-time and historical flight data to confirm a pers
@@ -164,7 +163,7 @@ kind: group-index
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
 - **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
 - **`recordsfinder`** (medium) — Records aggregator covering people, phones and vehicles.
-- **`redbook-car-pricing-authority-australia`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes information on bikes and boats
+- **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif
 - **`reverse-genie-license-plate-search`** (medium) — OSINT tool: Reverse Genie (License Plate Search).
 - **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
 - **`runmap`** (low) — running routes world map

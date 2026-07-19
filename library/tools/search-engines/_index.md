@@ -762,7 +762,7 @@ kind: group-index
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
 - **`trooclick`** (low) — OSINT tool: Trooclick.
 - **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
-- **`trulia-united-states`** (medium) — Real estate listing search tool that also provides a location data overview
+- **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`twingly`** (low) — OSINT tool: Twingly.
