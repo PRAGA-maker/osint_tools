@@ -592,7 +592,6 @@ kind: group-index
 - **`media-room-and-blue-book`** (low) — Use when you have a subject affiliated with the University of Toronto and want their expert profile and media contact — returns faculty affi
 - **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
 - **`melissadata-campaign-contributions`** (medium) — OSINT tool: MelissaData (Campaign Contributions).
-- **`mellssa-data`** (medium) — OSINT tool: Mellssa Data.
 - **`mergent-online`** (medium) — OSINT tool: Mergent Online.
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
@@ -1044,7 +1043,7 @@ kind: group-index
 - **`yell-online-business-directory-uk`** (medium) — Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website
 - **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
 - **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
-- **`youcontrol`** (medium) — OSINT tool: YouControl.
+- **`youcontrol`** (medium) — Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, address
 - **`zendy-io`** (medium) — Discover academic journals, articles, & books on one seamless platform. Search keyword, authors, titles ISBN, ISSN etc
 - **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.
 - **`zillow`** (medium) — Use when you have a US `address` and want property details, sale/price history and interior photos — returns geolocation, physical-descripti

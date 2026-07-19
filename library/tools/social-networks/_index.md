@@ -214,7 +214,7 @@ kind: group-index
 - **`gitcolombo`** (medium) — Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlate
 - **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
 - **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening
-- **`github-monitor`** (medium) — OSINT tool: github_monitor.
+- **`github-monitor`** (medium) — Use when you have a GitHub `username` and want to watch their activity over time — returns real-time alerts on new events, follows, stars an
 - **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
 - **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
 - **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
@@ -510,7 +510,6 @@ kind: group-index
 - **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc
 - **`search-twitter-users`** (high) — Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter dat
 - **`search4faces-com-ch00`** (medium) — Use when you have a `face`/`image` of a person and want to match it against Clubhouse profile avatars — returns candidate Clubhouse `social-
-- **`searcheddit`** (medium) — OSINT tool: Searcheddit.
 - **`searchisback`** (high) — Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and pos
 - **`searchmy-bio`** (high) — Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profile
 - **`searchstream-live`** (low) — OSINT tool: Searchstream.live.

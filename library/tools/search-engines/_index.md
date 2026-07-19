@@ -366,7 +366,7 @@ kind: group-index
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
 - **`indeed-job-search-engine-canada`** (low) — Use when you have an `employer-org` or a person's trade/role in Canada and want employment context — returns job postings that reveal locati
-- **`indeed-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`indeed-job-search-engine-worldwide`** (low) — Use when you have an `employer-org`, role, or location and want job-market context — returns job postings that reveal employers, locations, 
 - **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
 - **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia

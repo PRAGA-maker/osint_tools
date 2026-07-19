@@ -245354,53 +245354,6 @@
     "_file": "library/tools/public-records/melissadata-campaign-contributions.md"
   },
   {
-    "id": "mellssa-data",
-    "name": "Mellssa Data",
-    "description": "OSINT tool: Mellssa Data.",
-    "url": "http://melissadata.com/lookups/zipnumber.asp",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
-      "address",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "carrier-route",
-      "melissa-us",
-      "melissadata-campaign-contributions"
-    ],
-    "_file": "library/tools/public-records/mellssa-data.md"
-  },
-  {
     "id": "mergent-online",
     "name": "Mergent Online",
     "description": "OSINT tool: Mergent Online.",
@@ -269431,37 +269384,57 @@
   {
     "id": "youcontrol",
     "name": "YouControl",
-    "description": "OSINT tool: YouControl.",
+    "description": "Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, addresses and linked entities.",
     "url": "https://youcontrol.com.ua/en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Profiling Ukrainian companies and their people — founders, beneficial owners, and connections across 7M+ entities from official registries.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier after registration — OpenData across 22 registries, ~7 profiles/day and limited monitoring; full analytics and higher volume require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Searches query aggregated official registries, not the subject, so no one is notified. A free account is required and its activity is logged to you — use a dedicated account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A widely-used Ukrainian corporate-intelligence platform sourcing from 220+ official registries and used by most Ukrainian banks; the underlying data is authoritative government registry data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "youcontrol.com.ua"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "ukraine",
+      "beneficial-ownership"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/youcontrol.md"
   },
   {
@@ -286262,25 +286235,33 @@
   {
     "id": "indeed-job-search-engine-worldwide",
     "name": "Indeed Job Search Engine Worldwide",
-    "description": "Website that offers job search services for multiple countries worldwide",
-    "url": "http://www.indeed.com/advanced_search?q=Usa",
+    "description": "Use when you have an `employer-org`, role, or location and want job-market context — returns job postings that reveal employers, locations, hiring contacts and salaries.",
+    "url": "https://www.indeed.com/advanced_search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching worldwide job listings to link people/companies to roles, locations, and hiring activity.",
+    "selectorsIn": [
+      "employer-org",
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search job listings; posting jobs and employer tools are paid, but the OSINT-relevant search is open. Some views may prompt a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching public job listings is passive and reveals nothing about your subject. Applying to a job or contacting a recruiter would be active — don't, unless it's a deliberate, authorized pretext.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A mainstream aggregator of job postings from many sources; listings are advertiser-supplied and can be duplicated, stale, or reposted, so corroborate.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -286288,19 +286269,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "indeed",
       "indeed-job-search-engine-canada"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "jobs",
+      "employment"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/indeed-job-search-engine-worldwide.md"
   },
   {
@@ -320776,47 +320760,60 @@
   {
     "id": "github-monitor",
     "name": "github_monitor",
-    "description": "OSINT tool: github_monitor.",
+    "description": "Use when you have a GitHub `username` and want to watch their activity over time — returns real-time alerts on new events, follows, stars and profile changes.",
     "url": "https://github.com/misiektoja/github_monitor",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github"
+    "bestFor": "Real-time monitoring of a GitHub user's activity and profile changes, with notifications and CSV export.",
+    "selectorsIn": [
+      "username"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "username",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GPLv3), installable via `pip install github_monitor`. A free GitHub token raises rate limits.",
+    "opsec": "passive",
+    "opsecNote": "It polls GitHub's public API for the target's public activity — it does not interact with or notify the user. Run it with a token from a sock-puppet GitHub account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "An open-source monitoring tool by misiektoja (part of a family of *-monitor tools), actively maintained on GitHub; it only surfaces public GitHub data.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "instagram-monitor",
       "lastfm-monitor",
+      "spotify-monitor",
+      "steam-monitor",
       "lol-monitor",
       "psn-monitor",
-      "spotify-monitor",
       "spotify-profile-monitor",
-      "steam-monitor",
       "xbox-monitor"
     ],
+    "tags": [
+      "github",
+      "monitoring",
+      "cli"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/github-monitor.md"
   },
   {
@@ -337044,40 +337041,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/social-networks/search4faces-com-ch00.md"
-  },
-  {
-    "id": "searcheddit",
-    "name": "Searcheddit",
-    "description": "OSINT tool: Searcheddit.",
-    "url": "http://searcheddit.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/searcheddit.md"
   },
   {
     "id": "searchisback",
@@ -363324,35 +363287,53 @@
   {
     "id": "nomerogram-ru",
     "name": "Nomerogram.ru",
-    "description": "OSINT tool: Nomerogram.ru.",
+    "description": "Use when you have a Russian `vehicle-plate` and want photos of that car — returns user-submitted images of vehicles matching the plate, with rough location/time context.",
     "url": "https://www.nomerogram.ru/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding crowd-sourced photographs of a specific Russian license plate to identify or corroborate a vehicle.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "image",
+      "vehicle-plate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search a plate and view matching photos; some detail/volume may require registration or a paid tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a photo database, not a live vehicle or its owner, so no one is notified. Note it's a Russian-hosted service; use a sock-puppet session and avoid submitting anything that reveals your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A crowd-sourced Russian plate-photo database; images are user-submitted with variable accuracy on plate/time/place, so treat matches as leads to verify.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "nomerogram",
+      "номерограм"
+    ],
+    "tags": [
+      "vehicle-plate",
+      "russia",
+      "vehicle-photos"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/nomerogram-ru.md"
   },
   {
