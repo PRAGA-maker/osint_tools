@@ -296,7 +296,7 @@ kind: group-index
 - **`instagram-crawler-gitgub`** (high) — Use when you have an Instagram `username` (or hashtag) and want to bulk-download that account's posts, captions, comments and timestamps for
 - **`instagram-deep-photo-search-engine`** (high) — Use when you have a `username`/`name`/keyword and want to search Instagram content via Google — a prebuilt Custom Search Engine that returns
 - **`instagram-explorer`** (medium) — Use when you have a `geolocation` and date range and want Instagram posts made there — builds a link to view location-tagged posts for that 
-- **`instagram-hashtag-scraper`** (medium) — Enter hashtag name and scrape all post tagged it. Get caption, commentsCount, photo dimensions, URL, other hashtags and other details in CSV
+- **`instagram-hashtag-scraper`** (medium) — Use when you have an Instagram hashtag and want every post tagged with it — returns usernames, captions, image URLs and location leads as CS
 - **`instagram-hashtag-search`** (high) — Use when you have an event/location/interest `name` and want public Instagram posts under that hashtag — the native explore/tags URL returns
 - **`instagram-location-search`** (medium) — Use when you have a `geolocation` (lat/long) and want the Instagram location tags near that point — returns location tag IDs to pivot into `
 - **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s

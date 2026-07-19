@@ -92,7 +92,6 @@ kind: group-index
 - **`recycler-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
 - **`sales-spider`** (medium) — Use when you have a `name` or `employer-org` in North American SMB circles and want business-directory and profile detail — returns employer
 - **`salespider-north-america`** (medium) — Classified advertisements-related website that provides regional services
-- **`search-all-junk`** (medium) — OSINT tool: Search All Junk.
 - **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.
 - **`search-tempest`** (high) — Use when you need to sweep Craigslist (and eBay) across many cities at once for a subject's listings, alias, or distinctive item — instead o
 - **`searchalljunk`** (high) — Use when you want to query multiple classifieds/marketplace sources from one box — a meta-search front-end for second-hand listings across p

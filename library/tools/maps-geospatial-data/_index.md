@@ -27,7 +27,6 @@ kind: group-index
 - **`cites-trade-database`** (low) — Around 23 million records of trade in wildlife since 1975.
 - **`convert-geographic-units`** (low) — A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
-- **`covid-19-map`** (medium) — OSINT tool: COVID-19 Map.
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
 - **`digitalglobe`** (medium) — OSINT tool: DigitalGlobe.

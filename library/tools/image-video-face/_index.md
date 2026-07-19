@@ -227,7 +227,7 @@ kind: group-index
 - **`neural-network-image-super-resolution-and-enhancement`** (high) — Use when a lead photo is too small/low-res and you need AI upscaling to a larger, clearer image for human review — returns an upscaled image
 - **`news-myseldon`** (medium) — Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and
 - **`noaa-data-access-viewer`** (low) — Use when you have a coastal U.S. `geolocation` and want authoritative imagery, land-cover, and lidar elevation data for it — returns downloa
-- **`numlookup-reverse-image-search`** (medium) — The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches wi
+- **`numlookup-reverse-image-search`** (medium) — Use when you have an image and want exact-match copies of it online — returns pages/URLs hosting the same picture (social-profile, image lea
 - **`observer`** (low) — Use when you want to watch Landsat satellite imagery being acquired in near real-time — returns a live stream of freshly downlinked scenes b
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
 - **`openi-nlm-nih-gov`** (low) — Use when you have a scientific/medical `image` and want its source paper — returns matching figures from open-access biomedical literature v

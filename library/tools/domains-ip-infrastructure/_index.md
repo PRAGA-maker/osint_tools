@@ -148,7 +148,6 @@ kind: group-index
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — TwiSub-domain takeover tool
-- **`dnsstuff-tools`** (medium) — Includes domain tools, IP tools, networking tools, and email tools
 - **`domain-codex`** (low) — OSINT tool: Domain Codex.
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.

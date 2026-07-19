@@ -253,12 +253,12 @@ kind: group-index
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
 - **`pastesite-net`** (medium) — Use when you have a `username`, `email` or keyword and want to check a pastebin for dumped text — browse/search public pastes that may conta
 - **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`pc-magazine`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`pc-magazine`** (medium) — Use when you have a consumer-tech product name or spec surfaced in a case and want authoritative reviews, specs and background — returns pro
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
 - **`pinkbike`** (medium) — Use when you have a `username` or `name` tied to mountain biking and want their profile, posts and marketplace listings — returns social-pro
 - **`pistonheads-com`** (medium) — OSINT tool: pistonheads.com.
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
-- **`plazoo-rss-feed-search-engine`** (medium) — Website that searches for links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
+- **`plazoo-rss-feed-search-engine`** (medium) — Use when you have a name/keyword and want it across blog & news RSS feeds — returns matching feed posts (social-profile, associate leads).
 - **`plentyoffish`** (medium) — Online dating profile site
 - **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.

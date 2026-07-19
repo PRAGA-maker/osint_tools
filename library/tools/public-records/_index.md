@@ -161,7 +161,7 @@ kind: group-index
 - **`chicago-police-department-demographics`** (medium) — OSINT tool: Chicago Police Department Demographics.
 - **`childcare-co-uk`** (high) — Use when you have a `name` or postcode and want to find a subject who works in UK childcare/tutoring — returns provider profiles with area, 
 - **`childminding-ie`** (high) — Use when you have an Irish county/`address` (or a childminder's `name`) and want to find registered childminders in that area — returns chil
-- **`ci-general-company-registry-cayman-islands`** (medium) — Business-related search engine that searches national results by company name
+- **`ci-general-company-registry-cayman-islands`** (medium) — Use when you have a company name or director name and want the official Cayman Islands corporate record — returns company existence, directo
 - **`cia-world-factbook`** (low) — OSINT tool: CIA World Factbook.
 - **`cilexgroup-org-uk`** (high) — Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, g
 - **`cipfa-org`** (medium) — Use when you have a `name` and want to confirm UK public-finance accountancy credentials — returns whether the person is a CIPFA member/regi
@@ -666,7 +666,6 @@ kind: group-index
 - **`nmc-org-in`** (high) — Use when you have a doctor's `name` (or registration number) in India and want to verify their medical registration — returns registration n
 - **`nmc-uk-org`** (high) — Use when you have a `name` claimed to be a UK nurse or midwife and want to verify their registration — returns registration status, PIN, qua
 - **`nonprofit-explorer`** (medium) — Use when you have an `employer-org` or a person's `name` and want their US nonprofit ties and pay — returns officer/director names, compensa
-- **`noodle-educational-faculty-search-united-states`** (medium) — Academic-related search engine focusing on educational facilities
 - **`north-carolina-resident-database`** (high) — Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors 
 - **`north-carolina`** (high) — Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender
 - **`northdata-com`** (high) — Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addr
@@ -679,7 +678,7 @@ kind: group-index
 - **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`
 - **`oanda`** (medium) — Use when you have a money amount and a date and want the exchange rate then — returns historical and live currency conversion at a chosen da
 - **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
-- **`obsidian-cli`** (medium) — Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with an
+- **`obsidian-cli`** (medium) — Use when you keep case notes in an Obsidian vault and want to open, search, create and edit them from the terminal — returns scripted, autom
 - **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp
 - **`oecd-aid-database`** (low) — OSINT tool: OECD Aid Database.
 - **`oecd-data`** (low) — OSINT tool: OECD Data.
@@ -1029,7 +1028,6 @@ kind: group-index
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
 - **`world-bank-investing-across-borders`** (low) — OSINT tool: World Bank Investing Across Borders.
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
-- **`world-wide-science-resources`** (medium) — Academic-related global science gateway includes a list of websites participating in WorldWideScience.org
 - **`wto-statistics`** (low) — OSINT tool: WTO Statistics.
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address

@@ -84,7 +84,7 @@ kind: group-index
 - **`flightwise`** (low) — OSINT tool: Flightwise.
 - **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.
 - **`free-car-license-plate-lookup`** (medium) — Use when you have a `vehicle-plate` (plus state) and want to pull the linked vehicle profile and VIN — returns vin plus make/model/title sig
-- **`free-license-plate-search-check-any-license-plate-free`** (medium) — OSINT tool: FREE License Plate Search | Check Any License Plate FREE.
+- **`free-license-plate-search-check-any-license-plate-free`** (medium) — Use when you have a US license plate and want to identify the vehicle — returns year/make/model, specs and VIN-linked history (NOT owner nam
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
 - **`freecarcheck-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want free vehicle history — returns make/model, MOT & tax status, DVLA history, stolen/plate-chan
 - **`freedar`** (low) — OSINT tool: Freedar.
@@ -195,7 +195,7 @@ kind: group-index
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
 - **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Use when you have a vessel `name`, `employer-org` or keyword and want US Coast Guard marine-casualty investigation reports — returns documen
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
-- **`vehicle-documents`** (medium) — OSINT tool: Vehicle Documents.
+- **`vehicle-documents`** (medium) — Use when you have a license plate or vehicle document in a photo and want to identify its country/type and read its format — returns plate/d
 - **`vehicle-enquiry`** (medium) — Use when you have a UK vehicle registration (number plate) and want to confirm the make, colour, and tax/MOT status of that vehicle — return
 - **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.
 - **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe

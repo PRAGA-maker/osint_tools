@@ -49,12 +49,10 @@ kind: group-index
 - **`all-in-one`** (low) — OSINT tool: All-in-One.
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
 - **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
-- **`alleba`** (medium) — OSINT tool: Alleba.
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
 - **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
-- **`amazon`** (medium) — Technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence
 - **`american-association-of-port-authorities`** (medium) — Site providing information on all the ports of the Western Hemisphere
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — A tool that helps developers view the Android source code.
@@ -170,7 +168,6 @@ kind: group-index
 - **`copyright-search`** (medium) — Search copyright infringement complaints against websites
 - **`core`** (low) — OSINT tool: Core.
 - **`country-of-grey-canada`** (medium) — County of Grey site offering Provincial Offences Act resources
-- **`credit-guru`** (medium) — Listing of credit agencies around the world
 - **`criminology-wiki`** (medium) — Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to 
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
@@ -639,7 +636,6 @@ kind: group-index
 - **`s`** (low) — Search from command line in 106 different sources
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
-- **`salary-and-wage-occupation-codes-australia`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`scala`** (medium) — Open source code search engine
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
@@ -809,7 +805,7 @@ kind: group-index
 - **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a
 - **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`wikishire-united-kingdom`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of 
-- **`wikisource`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
 - **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`wikisummaries`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
