@@ -127,7 +127,7 @@ kind: group-index
 - **`foxmonitor`** (medium) — OSINT tool: FoxMonitor.
 - **`frame-by-frame`** (medium) — OSINT tool: Frame by Frame.
 - **`free-music-search`** (low) — Use when you need to search for and identify a song or music track by name/artist online — returns links to matching audio/sources; marginal
-- **`full-fact`** (medium) — OSINT tool: Full Fact.
+- **`full-fact`** (low) — Use when you have a viral claim, image or story and want an evidence-based verification — returns the UK charity's fact-checks, sourcing, an
 - **`fulldp-co-2`** (high) — Use when you have a TikTok username/profile and need the full-resolution profile picture (TikTok serves a thumbnail) — returns a downloadabl
 - **`fulldp-co-3`** (high) — Use when you have a VK (VKontakte) profile and need the full-resolution profile picture rather than the cropped thumbnail — returns a downlo
 - **`fulldp-co-4`** (high) — Use when you have a social username/profile and need the full-resolution profile picture (Instagram/TikTok/VK/YouTube etc.) — the fulldp.co 

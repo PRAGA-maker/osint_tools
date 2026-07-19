@@ -6058,29 +6058,33 @@
   {
     "id": "gumshoe",
     "name": "gumshoe",
-    "description": "Recursive investigation tool based on the OSINT Framework (work in progress).",
+    "description": "Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained findings/leads across resource types.",
     "url": "https://github.com/tracelabs/gumshoe",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Automating recursive pivots across OSINT Framework resources.",
+    "bestFor": "Automating recursive pivots across OSINT Framework resources — feed a seed selector, get chained follow-on findings.",
     "selectorsIn": [
       "name",
       "username",
       "email",
       "domain"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MPL-2.0) on GitHub. Self-hosted Go project — no account or fee, but you build/run it yourself.",
+    "opsec": "passive",
+    "opsecNote": "A local Go tool; OpSec depends on what resources it queries under the hood. As a proof-of-concept it may fan out requests to many third-party services — run from a sock-puppet IP and review which sources it touches before pointing it at a real target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Official Trace Labs project (marked WIP).",
+    "trustNote": "Official Trace Labs project, but explicitly marked \"[WIP] Proof of Concept\"; ~19 commits, no releases, limited recent activity. Capable in principle, not production-ready.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -6089,7 +6093,15 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "h8mail-trace-labs-fork",
+      "the-osint-field-manual-tofm",
+      "trace-labs-awesome-osint",
+      "trace-labs-osint-vm-tlosint-vm"
+    ],
+    "aliases": [
+      "tracelabs gumshoe"
+    ],
     "tags": [
       "go",
       "recursion",
@@ -6098,14 +6110,8 @@
       "wip"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "h8mail-trace-labs-fork",
-      "the-osint-field-manual-tofm",
-      "trace-labs-awesome-osint",
-      "trace-labs-osint-vm-tlosint-vm"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gumshoe.md"
   },
   {
@@ -18322,48 +18328,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/archives-cache/bridge-suumitsu.md"
-  },
-  {
-    "id": "cached-pages",
-    "name": "Cached Pages",
-    "description": "Finding recent cached copies of pages that changed or disappeared",
-    "url": "https://www.cachedpages.com/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache",
-      "web"
-    ],
-    "bestFor": "Finding recent cached copies of pages that changed or disappeared",
-    "input": "URL",
-    "output": "Links to cached or archived snapshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Queries third-party caches and archives without contacting the target site directly.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "cashedpages"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/web/cached-pages.md"
   },
   {
     "id": "cached-view",
@@ -118255,36 +118219,51 @@
   },
   {
     "id": "datacore-gn-unepgrid-ch",
-    "name": "Datacore-gn.unepgrid.ch",
-    "description": "OSINT tool: Datacore-gn.unepgrid.ch.",
+    "name": "UNEP/GRID-Geneva Metadata Catalogue",
+    "description": "Use when you have a `geolocation`/region and want authoritative environmental geospatial layers for it — returns UNEP GeoNetwork datasets (hydrology, land cover, boundaries).",
     "url": "https://datacore-gn.unepgrid.ch/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering and downloading UNEP/GRID-Geneva geospatial datasets — watersheds, surface water, land cover, international boundaries — for a region.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, publicly accessible GeoNetwork metadata catalogue from UNEP/GRID-Geneva; no account to search or download most layers. (The root URL redirects into the /geonetwork/ catalogue.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse an environmental data catalogue, not a person — fully passive, nothing about your subject is exposed. Standard browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by UNEP/GRID-Geneva (a UNEP + Swiss FOEN + University of Geneva partnership) on open-source GeoNetwork; datasets are authoritative scientific/agency sources (e.g. HydroSHEDS).",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GRID-Geneva GeoNetwork",
+      "UNEP GRID Geneva catalogue"
+    ],
+    "tags": [
+      "geospatial",
+      "environmental-data",
+      "geonetwork",
+      "unep"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/datacore-gn-unepgrid-ch.md"
   },
   {
@@ -118566,36 +118545,54 @@
   },
   {
     "id": "earth-engine-dataset",
-    "name": "Earth Engine Dataset",
-    "description": "OSINT tool: Earth Engine Dataset.",
+    "name": "Earth Engine Data Catalog",
+    "description": "Use when you have a `geolocation` and want historical/current satellite and geospatial data for it — returns 40+ years of imagery, terrain, land-cover and night-lights datasets.",
     "url": "https://developers.google.com/earth-engine/datasets/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Accessing decades of satellite imagery (Landsat, Sentinel, MODIS), elevation, land-cover, and night-lights data for a location, analysable at planetary scale.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free for non-commercial/research use via a Google account and Earth Engine sign-up; the raw catalog is browsable without login. Commercial use requires a paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Google's imagery archive, not the target — nothing about your subject is exposed. The one attributable step is Earth Engine access via a Google account; use a research/sock-puppet Google account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google Earth Engine is a first-party, well-documented planetary-scale geospatial platform aggregating authoritative datasets (NASA/USGS Landsat, ESA Sentinel, etc.).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "Google Earth Engine",
+      "GEE Data Catalog"
+    ],
+    "tags": [
+      "satellite",
+      "geospatial",
+      "remote-sensing",
+      "google"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/earth-engine-dataset.md"
   },
   {
@@ -126141,61 +126138,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/geolocation/opentopia.md"
-  },
-  {
-    "id": "osm-finder",
-    "name": "OSM Finder",
-    "description": "A tool for automate work with Overpass Turbo. Upload a photo, mark a line on the map roads, railroads, power lines and get a ready-made query to find sections of the map corresponding to the photo.",
-    "url": "https://osm-finder.herokuapp.com/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "image"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "mmhdan",
-      "query-server",
-      "redditsearch",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
-    ],
-    "_file": "library/tools/geolocation/osm-finder.md"
   },
   {
     "id": "osm-smart-menu",
@@ -139331,37 +139273,47 @@
   {
     "id": "full-fact",
     "name": "Full Fact",
-    "description": "OSINT tool: Full Fact.",
+    "description": "Use when you have a viral claim, image or story and want an evidence-based verification — returns the UK charity's fact-checks, sourcing, and AI-media/edit assessments.",
     "url": "https://fullfact.org",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Checking whether a widely shared claim, quote, statistic, or image has been independently fact-checked and debunked/confirmed.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; run by a UK registered charity funded by donations. No account needed to browse or search fact-checks.",
+    "opsec": "passive",
+    "opsecNote": "You read published fact-checks and never contact any subject — fully passive. Standard browsing hygiene is enough; nothing about your query is exposed to a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Full Fact is the UK's established independent fact-checking charity, a signatory of the International Fact-Checking Network's code; its checks cite primary sources.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FullFact",
+      "Full Fact UK"
+    ],
     "tags": [
-      "fact-checking"
+      "fact-checking",
+      "verification",
+      "disinformation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/full-fact.md"
   },
   {
@@ -161592,14 +161544,14 @@
   },
   {
     "id": "visionofbritain-org-uk",
-    "name": "visionofbritain.org.uk",
-    "description": "OSINT tool: visionofbritain.org.uk.",
-    "url": "https://www.visionofbritain.org.uk/maps/#",
+    "name": "A Vision of Britain through Time",
+    "description": "Use when you have a UK place name/postcode or `geolocation` and want its historical maps, census and descriptions 1801–2001 — returns historic `geolocation` boundaries and context.",
+    "url": "https://www.visionofbritain.org.uk/maps/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up historical maps, administrative boundaries, census statistics and travel-writing descriptions for any British town or village over the past 250 years.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -161607,29 +161559,37 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic resource (University of Portsmouth). No account needed to browse maps, census reports, and place pages.",
+    "opsec": "passive",
+    "opsecNote": "You query a historical-geography archive, not a person or their infrastructure — fully passive. Nothing about your subject is exposed; ordinary browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A long-running academic project (University of Portsmouth) built on Ordnance Survey historic maps, official census reports, and the GB1900 gazetteer; authoritative for historical UK geography.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Vision of Britain",
+      "A Vision of Britain Through Time"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "historical-maps",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/visionofbritain-org-uk.md"
   },
   {
@@ -171573,38 +171533,49 @@
   {
     "id": "whatsanalyze-com",
     "name": "whatsanalyze.com",
-    "description": "analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)",
-    "url": "https://Whatsanalyze.com",
+    "description": "Use when you have an exported WhatsApp chat file and want message statistics — returns per-participant activity, timelines, word frequency, all processed on-device.",
+    "url": "https://whatsanalyze.com",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Analysing an exported WhatsApp chat (.txt/.zip) for per-participant message counts, timelines, activity patterns and word clouds — entirely in-browser.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free hosted tool; open source (GitHub Pages, SpiritFour/whatsanalyze). All processing is client-side in your browser — an optional paid PDF/premium export exists, but core analysis is free.",
+    "opsec": "passive",
+    "opsecNote": "Because analysis runs entirely locally in your browser and no chat data is sent to any server, this is safe for sensitive exports. The privacy risk is on your side — you must lawfully possess the exported chat, and the file itself contains participants' phone numbers/names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source, client-side tool hosted on GitHub Pages; the code is public and no data leaves the device. Not affiliated with WhatsApp/Meta.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WhatsAnalyze",
+      "WhatsApp Chat Analyzer"
+    ],
     "tags": [
       "Messengers",
-      "WhatsApp"
+      "WhatsApp",
+      "chat-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whatsanalyze-com.md"
   },
   {
@@ -205674,37 +205645,49 @@
   {
     "id": "simplyhired",
     "name": "SimplyHired",
-    "description": "OSINT tool: SimplyHired.",
-    "url": "http://www.simplyhired.com",
+    "description": "Use when you have a `name` or `employer-org` and want employment/job-market context — returns job postings, employer listings and salary estimates (an Indeed-partnered aggregator).",
+    "url": "https://www.simplyhired.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching aggregated job postings by title, company, or location to build employment/industry context around a subject or organisation.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for job seekers; now unified with Indeed (one account across both). No payment needed to search; some features prompt account creation.",
+    "opsec": "passive",
+    "opsecNote": "You browse public job listings and aggregate data — nothing is sent to or about a person, so searching is passive. If you create/sign into an account (or the shared Indeed account), that is attributable — use a sock-puppet and avoid applying to anything.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A well-established job-search aggregator now operated alongside Indeed. It indexes employer postings, not identity records — useful for context, not confirmation of an individual.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Simply Hired"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/simplyhired.md"
   },
   {
@@ -216926,35 +216909,52 @@
   {
     "id": "alberta-police-misconduct-database",
     "name": "Alberta Police Misconduct Database",
-    "description": "OSINT tool: Alberta Police Misconduct Database.",
+    "description": "Use when you have a `name` of an Alberta police officer and want documented misconduct history — returns named incidents, investigation outcomes and source documents.",
     "url": "https://www.policemisconductdatabase.ca/database/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching a named Alberta police officer against ~30 years of documented misconduct incidents and their investigation outcomes.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, publicly accessible database run by an Alberta volunteer group; no account or payment. Compiled from public records (news, disciplinary decisions, CanLII, FOI).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a published public-records database; the officer is not notified and nothing ties the query to you beyond normal web hygiene. Records concern named public officials, so this is low-risk — but treat entries as sourced allegations/outcomes, not blanket guilt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Compiled by a volunteer group of lawyers, academics and students from publicly available records (news articles, disciplinary decisions, CanLII cases, FOI documents); each entry is source-cited.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "APMD",
+      "Police Misconduct Database Canada"
+    ],
+    "tags": [
+      "police-accountability",
+      "public-records",
+      "canada",
+      "alberta"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/alberta-police-misconduct-database.md"
   },
   {

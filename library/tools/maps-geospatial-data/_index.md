@@ -137,7 +137,7 @@ kind: group-index
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
 - **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
 - **`virtualvacation-us`** (low) — Use when you want to train street-level geolocation skills — a free GeoGuessr-style game (City Guesser) that drops you into a random locatio
-- **`visionofbritain-org-uk`** (medium) — OSINT tool: visionofbritain.org.uk.
+- **`visionofbritain-org-uk`** (low) — Use when you have a UK place name/postcode or `geolocation` and want its historical maps, census and descriptions 1801–2001 — returns histor
 - **`visitedplaces-com`** (medium) — OSINT tool: visitedplaces.com.
 - **`walmart-store-status`** (medium) — OSINT tool: Walmart Store Status.
 - **`waze`** (low) — Use when you have a `geolocation` and want real-time, crowd-sourced road conditions there — returns live traffic, incidents, and user report

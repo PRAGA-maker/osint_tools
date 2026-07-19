@@ -171,7 +171,7 @@ kind: group-index
 - **`greynoise`** (low) — OSINT tool: Greynoise.
 - **`guardian-project`** (low) — OSINT tool: Guardian Project.
 - **`guerrilla-mail`** (low) — OSINT tool: Guerrilla Mail.
-- **`gumshoe`** (medium) — Recursive investigation tool based on the OSINT Framework (work in progress).
+- **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
 - **`h-i-v-e`** (medium) — Automated OSINT multi-tool for efficient data gathering.
 - **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack

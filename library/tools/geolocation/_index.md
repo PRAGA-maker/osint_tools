@@ -62,14 +62,14 @@ kind: group-index
 - **`currentmillis-com`** (medium) — OSINT tool: currentmillis.com.
 - **`cybermap`** (high) — Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged a
 - **`cyclocane`** (low) — Use when a photo/event references a storm or you need to know what tropical cyclone was active at a place and time — returns current and rec
-- **`datacore-gn-unepgrid-ch`** (medium) — OSINT tool: Datacore-gn.unepgrid.ch.
+- **`datacore-gn-unepgrid-ch`** (low) — Use when you have a `geolocation`/region and want authoritative environmental geospatial layers for it — returns UNEP GeoNetwork datasets (h
 - **`default-router-login`** (low) — OSINT tool: Default Router Login.
 - **`degulesider-mapping-program-for-europe-denmark`** (high) — Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — 
 - **`demo-4map-com`** (medium) — 3D interactive world map
 - **`digikam`** (high) — Use when you have a batch of images and need to read/map their EXIF GPS and metadata at scale — an open-source photo manager that geotags, m
 - **`dual-maps`** (high) — Use when geolocating a spot and you want Google map, satellite, and Street View synchronized in one view — pan one panel and the others foll
 - **`dualmaps`** (high) — Use when you have a coordinate or address and want side-by-side map, aerial, and Street View of the same spot to confirm a location.
-- **`earth-engine-dataset`** (medium) — OSINT tool: Earth Engine Dataset.
+- **`earth-engine-dataset`** (medium) — Use when you have a `geolocation` and want historical/current satellite and geospatial data for it — returns 40+ years of imagery, terrain, 
 - **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
 - **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
@@ -222,7 +222,6 @@ kind: group-index
 - **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
 - **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
 - **`opentopia`** (low) — OSINT tool: Opentopia.
-- **`osm-finder`** (medium) — A tool for automate work with Overpass Turbo. Upload a photo, mark a line on the map roads, railroads, power lines and get a ready-made quer
 - **`osm-smart-menu`** (medium) — Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)
 - **`osmaps-radius`** (medium) — drawing circles with a certain radius on the map
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 

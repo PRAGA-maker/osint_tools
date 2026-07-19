@@ -51,7 +51,7 @@ kind: group-index
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
 - **`alberta-business-search`** (low) — OSINT tool: Alberta Business Search.
-- **`alberta-police-misconduct-database`** (medium) — OSINT tool: Alberta Police Misconduct Database.
+- **`alberta-police-misconduct-database`** (low) — Use when you have a `name` of an Alberta police officer and want documented misconduct history — returns named incidents, investigation outc
 - **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
 - **`alibaba-china`** (medium) — China's largest e-commerce company hosting millions of merchents and businesses
 - **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con

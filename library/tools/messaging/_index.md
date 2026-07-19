@@ -184,7 +184,7 @@ kind: group-index
 - **`web-botim-me`** (high) — Use when you have a `phone` number likely used in the UAE/Gulf and want to check whether it's on BOTIM and pull the profile photo/name — a p
 - **`wechat-com`** (high) — Use when you have a `phone` or WeChat ID (`username`) and want to confirm it maps to a WeChat account and view its public profile — returns 
 - **`what-goes-on-mastodon`** (low) — Use when you want to gauge which Mastodon instances are most active before searching them for a subject — returns instance/domain leads, not
-- **`whatsanalyze-com`** (medium) — analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)
+- **`whatsanalyze-com`** (medium) — Use when you have an exported WhatsApp chat file and want message statistics — returns per-participant activity, timelines, word frequency, 
 - **`whatsapp-checkleaked`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp and view its public profile photo and About — returns social-profile
 - **`whatsapp-tools-of-all-kind`** (medium) — Use when you have a `phone` and want its WhatsApp footprint — a suite of tools to check if a number is on WhatsApp, view its public profile 
 - **`whatsthat-github-com`** (medium) — Use when you have access to a WhatsApp Web group chat and want to map member relationship dynamics — returns per-member influence, reply/rea

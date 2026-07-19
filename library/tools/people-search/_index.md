@@ -212,7 +212,7 @@ kind: group-index
 - **`searchbug`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want cross-linked contact and background data — returns addresses, phones, 
 - **`seek-australia`** (medium) — OSINT tool: Seek (Australia).
 - **`shesource`** (medium) — Use when you have a `name` or an area of expertise and want to identify/verify a woman expert or media source — returns `name`, `employer-or
-- **`simplyhired`** (medium) — OSINT tool: SimplyHired.
+- **`simplyhired`** (low) — Use when you have a `name` or `employer-org` and want employment/job-market context — returns job postings, employer listings and salary est
 - **`singlehire`** (high) — Use when you have a `name` (+ `employer-org`/`geolocation`) or a work `email`/`phone` and want the person's contact details — returns email,
 - **`skip-ease`** (high) — Use when you have a `name`/`phone`/`address` and want a curated launchpad of people-search and public-record tools — a directory linking to 
 - **`skopenow-com`** (high) — Use when you have a `name` (or email/phone) and want an automated OSINT dossier on a person — returns `address`, `phone`, `email`, `social-p
