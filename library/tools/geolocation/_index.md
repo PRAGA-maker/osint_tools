@@ -200,7 +200,7 @@ kind: group-index
 - **`mozilla-location-service`** (low) — OSINT tool: Mozilla Location Service.
 - **`murph-live`** (low) — OSINT tool: @murph\_live.
 - **`native-land-ca`** (medium) — Use when you have a `geolocation` and want the Indigenous nations, languages and treaties historically tied to that point — returns territor
-- **`natural-hazards-map-worldwide`** (medium) — Enter location and assess the risk of flooding, earthquakes and hail in this place on the map.
+- **`natural-hazards-map-worldwide`** (medium) — Use when you have a `geolocation`/`address` and want its natural-hazard exposure (flood, quake, wind/hail) — returns hazard-zone `geolocatio
 - **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
 - **`ncei-noaa-gov`** (medium) — Use when you have a `geolocation` and want historical natural-hazard events near it — returns dated earthquake, tsunami and volcano events g
 - **`nest-cam-directory`** (low) — OSINT tool: Nest Cam Directory.

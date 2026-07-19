@@ -199,7 +199,7 @@ kind: group-index
 - **`ratsit`** (high) — Use when you have a `name` or `phone` in Sweden and want the person's address, age, and household — returns `address`, `phone`, `dob`, `asso
 - **`recordsearch-naa-gov-au`** (high) — Use when you have a `name` and want Australian federal archival records — immigration/passenger arrivals, naturalisation, service files — re
 - **`recordsfinder-people-search-ca`** (high) — Use when you have a `name` and want a data-broker aggregate profile via RecordsFinder's Canada portal — teases address/phone/associate leads
-- **`reed-uk`** (medium) — OSINT tool: Reed (UK).
+- **`reed-uk`** (medium) — Use when you have a `name` or `username` and want a UK jobseeker/CV or employer footprint — returns `social-profile`, `employer-org` and ski
 - **`reseacherid`** (low) — Use when you have an academic `name` and want their publication identity — returns a unique researcher ID, publication list and affiliations
 - **`reunion`** (high) — Use when you follow an old Reunion.com people-finder link — the brand is retired and now redirects to MyLife, a US people-search returning `
 - **`rocketreach`** (high) — Use when you have a `name` plus an `employer-org` (or a LinkedIn `social-profile`) and want that person's professional `email` and `phone` —

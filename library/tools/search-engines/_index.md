@@ -333,7 +333,7 @@ kind: group-index
 - **`goosh-org`** (low) — online google search command line tool
 - **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
-- **`government-grants`** (medium) — Searchable database of available US government grants
+- **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
 - **`grayhatwarfare`** (medium) — OSINT tool: GrayhatWarfare.
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
@@ -791,7 +791,7 @@ kind: group-index
 - **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
 - **`web-directories`** (low) — Directory of web directories
 - **`web-search-navigator`** (low) — extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others
-- **`webcam-hopper`** (medium) — Search live webcams around the world
+- **`webcam-hopper`** (medium) — Use when you have a `geolocation`/`address` and want live public webcam views of that area — returns live `image` feeds searchable by countr
 - **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
 - **`webcrawler-meta-search`** (low) — Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a na

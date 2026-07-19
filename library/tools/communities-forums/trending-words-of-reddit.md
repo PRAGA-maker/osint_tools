@@ -43,7 +43,6 @@ relatedTools:
 - the-favicon-finder
 - username-availability-checker
 - web-proxy
-- youtube-playlist-len
 ---
 
 # Trending Words of Reddit

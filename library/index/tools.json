@@ -24492,8 +24492,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/communities-forums/before-reddit-optimize-a-post.md"
   },
@@ -35616,8 +35615,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/communities-forums/redditsearch.md"
   },
@@ -38810,8 +38808,7 @@
       "redditsearch",
       "the-favicon-finder",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/communities-forums/trending-words-of-reddit.md"
   },
@@ -78952,42 +78949,53 @@
   {
     "id": "lacnic",
     "name": "LACNIC",
-    "description": "OSINT tool: LACNIC.",
-    "url": "https://www.lacnic.net/",
+    "description": "Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts and `address`/country.",
+    "url": "https://query.milacnic.lacnic.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "WHOIS-style lookups for IP ranges and ASNs registered in Latin America and the Caribbean — the authoritative RIR for that region.",
     "selectorsIn": [
+      "ip-address",
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "employer-org",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public RIR WHOIS; no account. Rate limits apply to heavy automated querying.",
+    "opsec": "passive",
+    "opsecNote": "Querying the registry is passive and does not touch the target host; only LACNIC sees the lookup. Safe. (Resolving a domain to an IP first is also passive if you use public DNS.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "LACNIC is the official Regional Internet Registry for Latin America and the Caribbean; allocation records are authoritative for who holds an IP block/ASN in the region.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LACNIC WHOIS",
+      "lacnic.net",
+      "milacnic"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "rir-whois"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/lacnic.md"
   },
   {
@@ -80630,8 +80638,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/domains-ip-infrastructure/mmhdan.md"
   },
@@ -89604,8 +89611,7 @@
       "redditsearch",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/domains-ip-infrastructure/the-favicon-finder.md"
   },
@@ -124742,42 +124748,50 @@
   {
     "id": "natural-hazards-map-worldwide",
     "name": "Natural Hazards Map (worldwide)",
-    "description": "Enter location and assess the risk of flooding, earthquakes and hail in this place on the map.",
+    "description": "Use when you have a `geolocation`/`address` and want its natural-hazard exposure (flood, quake, wind/hail) — returns hazard-zone `geolocation` context.",
     "url": "https://www.fmglobal.com/research-and-resources/nathaz-toolkit/flood-map",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the flood/earthquake/wind-hail hazard profile of a specific worldwide location as terrain/environmental context for a site.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "FM Global's public NatHaz toolkit maps (flood, earthquake, etc.) are free to view worldwide; deeper commercial risk products are paid, but the map viewer is open.",
+    "opsec": "passive",
+    "opsecNote": "A public hazard-map viewer; entering a location queries FM Global's map service only and touches no individual. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by FM Global, a major commercial property insurer; the hazard modelling is professional-grade, though it is their model rather than an official government hazard map.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "FM Global NatHaz",
+      "FM Global flood map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Nature"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/natural-hazards-map-worldwide.md"
   },
   {
@@ -174923,8 +174937,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/opsec-investigator-tooling/cheat-sheet-maker.md"
   },
@@ -192824,8 +192837,7 @@
       "redditsearch",
       "the-favicon-finder",
       "trending-words-of-reddit",
-      "username-availability-checker",
-      "youtube-playlist-len"
+      "username-availability-checker"
     ],
     "_file": "library/tools/opsec-investigator-tooling/web-proxy.md"
   },
@@ -204912,37 +204924,50 @@
   {
     "id": "reed-uk",
     "name": "Reed (UK)",
-    "description": "OSINT tool: Reed (UK).",
-    "url": "http://www.reed.co.uk",
+    "description": "Use when you have a `name` or `username` and want a UK jobseeker/CV or employer footprint — returns `social-profile`, `employer-org` and skills/work history leads.",
+    "url": "https://www.reed.co.uk",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking one of the UK's largest job boards for a subject's public jobseeker profile, CV traces, or an employer's hiring footprint.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse jobs and register as a jobseeker/recruiter. Full CV database access is a paid recruiter product; public profiles/CV fragments may surface via search engines.",
+    "opsec": "passive",
+    "opsecNote": "Browsing jobs and public pages is passive. Viewing candidate CVs requires a recruiter account and may be logged; use a sock-puppet recruiter account and do not contact the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major, legitimate UK recruitment platform. Jobseeker-supplied data (CV, skills, history) is self-reported and unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Reed.co.uk",
+      "reed.co.uk"
+    ],
     "tags": [
       "job-search-resources"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/reed-uk.md"
   },
   {
@@ -284918,42 +284943,53 @@
   },
   {
     "id": "government-grants",
-    "name": "Government Grants",
-    "description": "Searchable database of available US government grants",
-    "url": "http://www.grants.gov/web/grants/search-grants.html",
+    "name": "Government Grants (Grants.gov)",
+    "description": "Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisation/`associate` leads.",
+    "url": "https://www.grants.gov/search-grants",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching US federal grant opportunities by keyword/agency/eligibility to link an organisation or individual to federal funding activity.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official US government portal (run under HHS); search and opportunity details are open with no account. Applying requires registration, but searching does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public government search; anonymous and non-alerting. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official US federal grants portal; opportunity data is authoritative. Note it lists opportunities — for who actually received awards, pair with USAspending/agency award data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Grants.gov",
+      "grants.gov"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "government-data"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/government-grants.md"
   },
   {
@@ -297768,8 +297804,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/search-engines/query-server.md"
   },
@@ -306371,24 +306406,30 @@
   {
     "id": "webcam-hopper",
     "name": "Webcam Hopper",
-    "description": "Search live webcams around the world",
+    "description": "Use when you have a `geolocation`/`address` and want live public webcam views of that area — returns live `image` feeds searchable by country/region.",
     "url": "https://www.webcamhopper.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding live public webcams near a location worldwide — cities, landmarks, beaches, airports — to corroborate a place or watch a public area.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse; aggregates publicly-published live webcam feeds. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Watching aggregated public webcam streams leaks nothing to any target. A clean browser is good hygiene, but no sock puppet is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party aggregator of public webcam feeds; coverage and stream reliability depend on the underlying camera operators, and feeds can be geotagged loosely.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -306397,15 +306438,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "webcamhopper.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "webcam",
+      "cctv"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/webcam-hopper.md"
   },
   {
@@ -351775,56 +351821,6 @@
     "_file": "library/tools/social-networks/youtube-periscope-twitch-and-dailymotion.md"
   },
   {
-    "id": "youtube-playlist-len",
-    "name": "YouTube playlist len",
-    "description": "Find out the total time of all the videos in playlist",
-    "url": "https://ytplaylist-len.herokuapp.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "mmhdan",
-      "osm-finder",
-      "query-server",
-      "redditsearch",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/social-networks/youtube-playlist-len.md"
-  },
-  {
     "id": "youtube-search-tool",
     "name": "YouTube search tool",
     "description": "Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlists by type and upload date.",
@@ -352524,43 +352520,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/zesty-facebook-search.md"
-  },
-  {
-    "id": "zspotify",
-    "name": "Zspotify",
-    "description": "Spotify track downloader. Download mp3 by link or by keywords",
-    "url": "https://github.com/Footsiefat/zspotify",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Spotify"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/zspotify.md"
   },
   {
     "id": "cyber-intelligence-toolkit-oryon",
@@ -367761,8 +367720,7 @@
       "the-favicon-finder",
       "trending-words-of-reddit",
       "username-availability-checker",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "_file": "library/tools/username/blackbird-2.md"
   },
@@ -372186,8 +372144,7 @@
       "redditsearch",
       "the-favicon-finder",
       "trending-words-of-reddit",
-      "web-proxy",
-      "youtube-playlist-len"
+      "web-proxy"
     ],
     "tags": [
       "Nicknames",

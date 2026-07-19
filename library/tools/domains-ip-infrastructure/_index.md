@@ -288,7 +288,7 @@ kind: group-index
 - **`kloth`** (low) — OSINT tool: Kloth.
 - **`knockknock`** (low) — A very fast script written in #go that queries the ViewDNSInfo API (free, 500 results limit) and gets a list of domains related to target do
 - **`knowledgenow`** (low) — OSINT tool: KNOWLEDGENOW.
-- **`lacnic`** (medium) — OSINT tool: LACNIC.
+- **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
 - **`larger-io`** (low) — OSINT tool: Larger.io.
 - **`lazarusholic`** (low) — OSINT tool: lazarusholic.
 - **`leakix`** (low) — OSINT tool: LeakIX.
