@@ -240,7 +240,6 @@ kind: group-index
 - **`police-crime-maps-uk`** (medium) — Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns stre
 - **`polymaps`** (low) — Use when you are a developer building a custom slippy-map web visualization with SVG/vector tiles, not for ad-hoc lookups.
 - **`poweroutage`** (low) — Use when you have a `geolocation`/region and a time and want to confirm whether a power outage was occurring there — returns live and histor
-- **`presto-map-lead-extractor`** (medium) — Converts information about labels on Google Maps to CSV or XLSX
 - **`python-overpy`** (medium) — Use when you have a `geolocation` or a described place feature and want to query OpenStreetMap data programmatically — returns matching map 
 - **`qgis`** (high) — Use when you need to overlay, measure and analyze geospatial layers (imagery, terrain, coordinates) for serious location analysis.
 - **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
@@ -277,7 +276,7 @@ kind: group-index
 - **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
 - **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..
 - **`sunearthtools-com`** (medium) — Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun 
-- **`surging-seas-risk-zone-map`** (medium) — Map of points where there is a risk of significant sea level rise in the event of melting glaciers.
+- **`surging-seas-risk-zone-map`** (medium) — Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocati
 - **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.
 - **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map
 - **`taste-atlas`** (medium) — Worldwide online map of national cuisine. There are thousands of dishes typical of countries or regions as a whole, as well as small towns.

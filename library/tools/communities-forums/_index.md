@@ -142,7 +142,6 @@ kind: group-index
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-14`** (medium) — OSINT tool: google.com.
 - **`google-com-15`** (medium) — OSINT tool: google.com.
-- **`google-com-16`** (medium) — OSINT tool: google.com.
 - **`google-com-17`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-22`** (medium) — OSINT tool: google.com.

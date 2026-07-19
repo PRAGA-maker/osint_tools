@@ -135,7 +135,7 @@ kind: group-index
 - **`telegram-finder-telegram-finder-io`** (high) — Use when you have a `phone`, `email` or LinkedIn `social-profile` and want to find the matching Telegram account — returns the linked Telegr
 - **`telegram-finder`** (high) — Use when you have a `phone` number (or email) and want to find the linked Telegram account — returns the Telegram profile/username where the
 - **`telegram-group-find-telegram-channels-bots-and-groups`** (medium) — OSINT tool: Telegram Group: Find Telegram Channels, Bots & Groups.
-- **`telegram-group-joiner`** (medium) — Automate joining multiple Telegram groups and channels, ideal for researchers monitoring specific topics.
+- **`telegram-group-joiner`** (medium) — Use when you have a list of Telegram group/channel links and want a research account joined to all of them at once — a batch-join helper; en
 - **`telegram-group-telegram-group-com`** (low) — Search and join Telegram groups.
 - **`telegram-history-dump`** (low) — Dump Telegram chat history to JSON.
 - **`telegram-message-analyzer`** (medium) — Export #Telegram chat (with Windows version of Telegram app) and get detailed analyze of it (message count, average message count per day, w

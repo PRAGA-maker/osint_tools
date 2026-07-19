@@ -2,37 +2,37 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8160 total · 3507 full · 4653 stub (42% enriched)
+**Tools:** 8155 total · 3515 full · 4640 stub (43% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3410 · medium: 2791 · high: 1959
+low: 3410 · medium: 2786 · high: 1959
 
 ## Tools by trust
-unverified: 3613 · community: 3351 · trusted: 1184 · personal: 6 · untrustworthy: 6
+unverified: 3602 · community: 3353 · trusted: 1188 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
 - `archives-cache` — 43/134
-- `communities-forums` — 84/406
+- `communities-forums` — 84/405
 - `dark-web` — 14/118
 - `dating-classifieds` — 45/112
 - `documents-metadata` — 25/314
-- `domains-ip-infrastructure` — 66/751
+- `domains-ip-infrastructure` — 67/751
 - `email` — 243/246
 - `evidence-capture` — 4/32
 - `financial-crypto` — 33/127
-- `geolocation` — 217/350
+- `geolocation` — 218/349
 - `image-video-face` — 398/473
-- `maps-geospatial-data` — 29/143
-- `messaging` — 155/193
+- `maps-geospatial-data` — 29/142
+- `messaging` — 156/193
 - `opsec-investigator-tooling` — 26/562
-- `people-search` — 232/266
+- `people-search` — 233/266
 - `phone` — 134/137
-- `public-records` — 693/1106
-- `search-engines` — 265/936
+- `public-records` — 694/1106
+- `search-engines` — 268/934
 - `social-networks` — 620/851
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
@@ -42,20 +42,20 @@ unverified: 3613 · community: 3351 · trusted: 1184 · personal: 6 · untrustwo
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1043 leaves
-- `library/tools/search-engines` — 872 leaves
+- `library/tools/search-engines` — 870 leaves
 - `library/tools/social-networks` — 823 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 510 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 393 leaves
+- `library/tools/communities-forums` — 392 leaves
 - `library/tools/image-video-face` — 377 leaves
-- `library/tools/geolocation` — 335 leaves
+- `library/tools/geolocation` — 334 leaves
 - `library/tools/documents-metadata` — 263 leaves
 - `library/tools/people-search` — 256 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 210 leaves
 - `library/tools/messaging` — 178 leaves
-- `library/tools/maps-geospatial-data` — 143 leaves
+- `library/tools/maps-geospatial-data` — 142 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/archives-cache` — 117 leaves
 - `library/tools/dating-classifieds` — 112 leaves

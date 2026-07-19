@@ -188,7 +188,7 @@ kind: group-index
 - **`peoplesmart-us`** (high) — Use when you have a `name`, `email`, `phone`, or LinkedIn (`social-profile`) and want a business/contact-data lookup — returns name, email, 
 - **`permits-city-of-vancouver-application-permit-search-by-address`** (high) — Use when you have a Vancouver (BC) `address` and want the building/development permit applications tied to it, which often name owners, appl
 - **`person-lookup`** (high) — Use when you have a `name` or `phone` in South Africa and want the matching landline and address — returns telephone/address records and pro
-- **`pinosin`** (medium) — Framework for investigating individuals and tracking investigation progress.
+- **`pinosin`** (medium) — Use when you want a self-hosted framework to organise a person investigation and track its progress — a Go case-management tool; you feed it
 - **`pipl-com`** (high) — Use when you have a `name`/`email`/`phone` and need deep identity resolution — but note Pipl is now an enterprise fraud/identity API, no lon
 - **`political-graveyard`** (medium) — Use when you have a `name` of a US political figure (or their relative) and want biographical and burial data — returns life dates, offices 
 - **`political-moneyline-us`** (high) — Use when you have a `name` and want US political-donation and lobbying records tied to that person — returns the donor's home address, emplo

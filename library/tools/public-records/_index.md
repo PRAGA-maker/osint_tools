@@ -535,7 +535,7 @@ kind: group-index
 - **`ky-state-salary-2019`** (medium) — Use when you have a surname and suspect a Kentucky state-government job — returns employer-org (cabinet/department) and 2019 salary to confi
 - **`la-county-ca-restaurant-health-violations`** (medium) — OSINT tool: LA County CA Restaurant Health Violations.
 - **`labcfrontdoor-co-uk`** (medium) — Use when you have a UK `address`/postcode or trade `employer-org` and want to find the registered "competent person" building tradespeople t
-- **`land-valuation-bermuda`** (medium) — OSINT tool: Land Valuation - Bermuda.
+- **`land-valuation-bermuda`** (medium) — Use when you have a Bermuda property `address` (parish/road) or assessment number and want its official valuation record — returns the prope
 - **`landlordregistrationscotland-gov-uk`** (high) — Use when you have a Scottish rental property `address` (postcode) or a landlord registration number and want to confirm who is the registere
 - **`landmatrix`** (low) — OSINT tool: LandMatrix.
 - **`landregistryireland-com`** (high) — Use when you have an Irish property `address`/eircode and want to buy its ownership record — returns owner name, address, and mortgage/assoc

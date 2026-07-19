@@ -29154,48 +29154,6 @@
     "_file": "library/tools/communities-forums/google-com-15.md"
   },
   {
-    "id": "google-com-16",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Asaafe.info%2Fmain%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-16.md"
-  },
-  {
     "id": "google-com-17",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -83981,47 +83939,49 @@
   {
     "id": "ozspeedtest-australia",
     "name": "OzSpeedTest (Australia)",
-    "description": "Analysis tool that assesses the speed of your Internet connection, including download speed and upload speed",
+    "description": "Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basic \"what's my IP\" tool; limited OSINT value.",
     "url": "http://www.ozspeedtest.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Testing your own internet connection speed against AU/NZ/UK/US servers; a bundled tool also shows your current public IP.",
     "selectorsIn": [
-      "domain",
       "ip-address"
     ],
     "selectorsOut": [
-      "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free speed test and IP tool; optional account for saving results.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The speed test reveals YOUR connection's public IP and location to the test servers — it does not query a target. If you run it, it profiles your own egress, so use it only from research infrastructure you're happy to expose, never as a target lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running Australian broadband speed-test and news site; reliable for its stated purpose but not a person/infrastructure intelligence source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Oz Broadband Speed Test"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "speed-test",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ozspeedtest-australia.md"
   },
   {
@@ -127225,47 +127185,6 @@
     "_file": "library/tools/geolocation/poweroutage.md"
   },
   {
-    "id": "presto-map-lead-extractor",
-    "name": "Presto Map lead extractor",
-    "description": "Converts information about labels on Google Maps to CSV or XLSX",
-    "url": "https://chrome.google.com/webstore/detail/presto-map-lead-extractor/ljnhdpilgapdpecpbpdiideeknfpkiih/related",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/presto-map-lead-extractor.md"
-  },
-  {
     "id": "python-overpy",
     "name": "OverPy (python-overpy)",
     "description": "Use when you have a `geolocation` or a described place feature and want to query OpenStreetMap data programmatically — returns matching map features (coordinates, tags) as geolocation leads.",
@@ -129038,42 +128957,50 @@
   {
     "id": "surging-seas-risk-zone-map",
     "name": "Surging Seas: Risk Zone Map",
-    "description": "Map of points where there is a risk of significant sea level rise in the event of melting glaciers.",
-    "url": "https://ss2.climatecentral.org/#12/40.7298/-74.0070?show=satellite&projections=0-K14_RCP85-SLR&level=5&unit=feet&pois=hide",
+    "description": "Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocation` overlays (limited direct people-search value).",
+    "url": "https://ss2.climatecentral.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising which coastal areas around a location flood at given sea-level-rise scenarios; environmental context, not person location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free interactive map from Climate Central; no account.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you browse a public climate map keyed to coordinates, not to any person. Nothing about a subject is transmitted; only Climate Central sees which area you viewed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Climate Central, an established science/journalism nonprofit; the modelling is peer-reviewed but the tool is environmental, not investigative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Climate Central Coastal Risk Screening",
+      "Surging Seas"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "climate"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/surging-seas-risk-zone-map.md"
   },
   {
@@ -159835,43 +159762,6 @@
     "_file": "library/tools/maps-geospatial-data/mappy.md"
   },
   {
-    "id": "maps-descarteslabs-com",
-    "name": "Maps.descarteslabs.com",
-    "description": "OSINT tool: Maps.descarteslabs.com.",
-    "url": "https://maps.descarteslabs.com/",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "geovisual-search"
-    ],
-    "_file": "library/tools/maps-geospatial-data/maps-descarteslabs-com.md"
-  },
-  {
     "id": "mapswitcher",
     "name": "MapSwitcher",
     "description": "Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source map.",
@@ -169116,42 +169006,54 @@
   {
     "id": "telegram-group-joiner",
     "name": "Telegram Group Joiner",
-    "description": "Automate joining multiple Telegram groups and channels, ideal for researchers monitoring specific topics.",
+    "description": "Use when you have a list of Telegram group/channel links and want a research account joined to all of them at once — a batch-join helper; enables monitoring, returns access to those `social-profile`s.",
     "url": "https://bellingcat.github.io/telegram-group-joiner/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-joining many public/private Telegram groups and channels with one research account so you can monitor them for a topic or person.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source (MIT), browser-based; runs client-side. No paid tier.",
+    "opsec": "active",
+    "opsecNote": "This is ACTIVE — you log a real Telegram account in and it joins groups, which is visible to admins and other members and can expose your account. Use a dedicated, non-personal research account with a burner number and a VPN, never your own; Telegram may rate-limit or block accounts that mass-join. You need your own api_id/api_hash from my.telegram.org.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Bellingcat as part of their public Online Investigation Toolkit; open-source and client-side (uses tdlib, no server-side data retention).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "telegram"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bellingcat-name-variant-search",
       "bellingcat-tiktok-date-extract"
     ],
+    "aliases": [
+      "Bellingcat Telegram Group Joiner"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "telegram",
+      "monitoring"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-group-joiner.md"
   },
   {
@@ -204759,13 +204661,13 @@
   {
     "id": "pinosin",
     "name": "pinosin",
-    "description": "Framework for investigating individuals and tracking investigation progress.",
+    "description": "Use when you want a self-hosted framework to organise a person investigation and track its progress — a Go case-management tool; you feed it `name`/`username`/`email`/`phone` and record findings (`social-profile`, `associate`).",
     "url": "https://github.com/vvspower/pinosin",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Person-centric investigation with case tracking",
+    "bestFor": "Structuring and tracking the investigation of a specific individual (case notes/progress), rather than automatically pulling new data about them.",
     "selectorsIn": [
       "name",
       "username",
@@ -204776,15 +204678,16 @@
       "social-profile",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, open-source (Apache-2.0), self-hosted; you build and run it yourself.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive by nature — it is a local case-tracking framework, so nothing leaves your machine unless a module actively queries an external source. Any lookups you record are only as safe as the tools/queries you ran to get them; the framework itself sends nothing to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Small community person-investigation framework (18 stars).",
+    "trustNote": "Small, early-stage GitHub project (vvspower, ~18 stars) the author describes as on standby; usable but unaudited and not actively maintained — treat as experimental.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -204793,14 +204696,16 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [],
     "tags": [
       "person-investigation",
-      "case-tracking"
+      "case-tracking",
+      "osint-framework"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/pinosin.md"
   },
   {
@@ -242885,43 +242790,50 @@
   {
     "id": "land-valuation-bermuda",
     "name": "Land Valuation - Bermuda",
-    "description": "OSINT tool: Land Valuation - Bermuda.",
+    "description": "Use when you have a Bermuda property `address` (parish/road) or assessment number and want its official valuation record — returns the property `address`, assessment number, and rateable value.",
     "url": "http://www.landvaluation.bm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the Bermuda Government's official land-valuation record for a property by parish/road/assessment number.",
     "selectorsIn": [
-      "name",
       "address"
     ],
     "selectorsOut": [
-      "address",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government portal; personal use only (commercial use needs written permission). No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a public government valuation list, not any individual. The department may log queries, but nothing is sent to a subject. Personal-use terms apply; do not scrape or reuse commercially.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Bermuda Government Land Valuation Department portal maintaining the statutory Valuation List for land-tax purposes; authoritative for valuation data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "bm"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Bermuda Land Valuation",
+      "landvaluation.bm"
+    ],
     "tags": [
-      "property"
+      "property",
+      "public-records",
+      "bermuda"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/land-valuation-bermuda.md"
   },
   {
@@ -279867,24 +279779,32 @@
   {
     "id": "ekoru",
     "name": "Ekoru",
-    "description": "A charitable search engine that is powered by run-of-river hydro-electricity; uses funds to keep our oceans clean.",
+    "description": "Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain` to get web results without Google's personalization.",
     "url": "https://ekoru.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A low-personalization alternative search engine to diversify results away from a Google/Bing bubble.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported charitable search engine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive toward the target — a normal web search touching no site of theirs. Ekoru markets not storing search/IP data, which reduces your own footprint versus mainstream engines, but treat privacy claims as unaudited; still use a clean/sock-puppet browser for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small independent metasearch (results drawn from partner indexes) with an environmental/privacy mission; useful as a diversity lens, not a primary authoritative source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -279893,15 +279813,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ekoru Search"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "privacy-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ekoru.md"
   },
   {
@@ -284314,41 +284237,60 @@
   {
     "id": "google-custom-search-engine",
     "name": "Google Custom Search Engine",
-    "description": "OSINT tool: Google Custom Search Engine.",
+    "description": "Use when you want to build your own Google search scoped to a chosen set of sites/domains — a Programmable Search Engine you configure, then query with a `name`/`username`/`domain` to get focused web results.",
     "url": "https://cse.google.com/cse/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "search-tools"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Creating and running a curated Google Programmable Search Engine that searches only sites you pick (e.g. all major social platforms, or a country's news outlets).",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to create and use Google Programmable Search Engines; a Google account is needed to build one (not to run a shared one).",
+    "opsec": "passive",
+    "opsecNote": "Passive toward targets — you run Google searches, touching no site of theirs. Building a CSE ties it to your Google account; querying is logged to your session. Use a research/sock-puppet Google account and clean browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google product (Programmable Search Engine, formerly Custom Search Engine); Google runs the search, you control the source list.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-cse-instances-search-engine"
+    ],
+    "aliases": [
+      "Programmable Search Engine",
+      "Google PSE",
+      "CSE builder"
+    ],
+    "tags": [
+      "search-engine",
+      "google-cse",
+      "programmable-search",
+      "search-tools"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-tools/google-custom-search-engine.md"
   },
   {
@@ -289576,86 +289518,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/search-engines/kvasir-search-engine-norway.md"
-  },
-  {
-    "id": "laiesken-search-engine-spain",
-    "name": "Laiesken Search Engine (Spain)",
-    "description": "Spanish web search engine covering regional results",
-    "url": "http://www.laiesken.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/laiesken-search-engine-spain.md"
-  },
-  {
-    "id": "lapozz-search-engine-hungary",
-    "name": "Lapozz Search Engine (Hungary)",
-    "description": "Hungarian surface web search engine covering regional results",
-    "url": "http://lapozz.hu",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/lapozz-search-engine-hungary.md"
   },
   {
     "id": "law-enforcement-resource-portal",
@@ -298417,24 +298279,29 @@
   {
     "id": "quickfound-subject-search-engine",
     "name": "QuickFound Subject Search Engine",
-    "description": "Search engine that searches by subject, topic and/or category of information including a section on news, science, travel, and more",
+    "description": "Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biography resources; returns `domain`s of topical sources (little direct people-search value).",
     "url": "http://quickfound.net",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A retro subject directory that points you to reference sites and topical search portals (news, science, history, biography) rather than searching people directly.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported reference directory; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a static directory of links, transmitting nothing about a subject. Following an outbound link carries only that link's normal footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent reference/link directory (Quicksand Foundation); it curates outbound links, not personal data — an index, not an authority.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -298443,15 +298310,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "QuickFound",
+      "Quick News"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/quickfound-subject-search-engine.md"
   },
   {

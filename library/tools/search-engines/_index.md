@@ -226,7 +226,7 @@ kind: group-index
 - **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
 - **`egerin-search-engine-kurdish`** (medium) — Kurdish surface web search engine covering regional results
-- **`ekoru`** (medium) — A charitable search engine that is powered by run-of-river hydro-electricity; uses funds to keep our oceans clean.
+- **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
 - **`elocalfinder-hybrid-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`elsevier`** (low) — OSINT tool: Elsevier.
 - **`encyclopedia-of-math`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on m
@@ -429,8 +429,6 @@ kind: group-index
 - **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
-- **`laiesken-search-engine-spain`** (medium) — Spanish web search engine covering regional results
-- **`lapozz-search-engine-hungary`** (medium) — Hungarian surface web search engine covering regional results
 - **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
 - **`law-net-united-states`** (medium) — Legal-related search engine for locating legal representives, legal resources, action groups, bar associations, publications, legal services
 - **`lawforkids`** (low) — Law-related search engine for kids
@@ -618,7 +616,7 @@ kind: group-index
 - **`qsearch`** (medium) — Facebook timeline search tool
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
-- **`quickfound-subject-search-engine`** (medium) — Search engine that searches by subject, topic and/or category of information including a section on news, science, travel, and more
+- **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
 - **`quranicarabiccorpus`** (medium) — Website that offers Quranic scripture search services
 - **`qwant`** (low) — OSINT tool: Qwant.
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.

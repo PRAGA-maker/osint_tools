@@ -89,7 +89,6 @@ kind: group-index
 - **`mapme-com`** (medium) — OSINT tool: mapme.com.
 - **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mappy`** (low) — Mapping service (and streetview in a couple of French cities \[double check this!])
-- **`maps-descarteslabs-com`** (medium) — OSINT tool: Maps.descarteslabs.com.
 - **`mapswitcher`** (low) — Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source m
 - **`mapy-cz`** (low) — Mapping service for Czechia
 - **`merlin`** (low) — Identify birds (visually), through an app.

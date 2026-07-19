@@ -365,7 +365,7 @@ kind: group-index
 - **`orb`** (low) — Massive footprinting tool.
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
-- **`ozspeedtest-australia`** (medium) — Analysis tool that assesses the speed of your Internet connection, including download speed and upload speed
+- **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
