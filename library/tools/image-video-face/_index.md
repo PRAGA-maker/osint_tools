@@ -170,7 +170,6 @@ kind: group-index
 - **`imagewhisperer-org`** (high) — Use when you have an `image` and want to know whether it is AI-generated, deepfaked or edited before you trust it — returns a plain-language
 - **`imageyoutube-com`** (high) — Use when you have a YouTube video or channel `social-profile` URL and want to extract its full-resolution thumbnail, avatar, or banner `imag
 - **`imglarger-com`** (high) — Use when you have a small/blurry `image` or `face` and want to upscale and sharpen it before a face/reverse-image search — returns an enhanc
-- **`immerse-zone`** (medium) — Reverse Image Search Engine. Search by uploaded image or URl; Search by sketch (it can be drawn directly in the browser); Search by quote (c
 - **`impulseadventure`** (high) — Use when you have a JPEG and want to inspect its compression signatures and structure for tampering/source clues — returns forensic markers 
 - **`imvu`** (high) — Use when you have a `username` and want to check IMVU, a large 3D-avatar social network — returns a `social-profile` with avatar images, joi
 - **`in20years-co`** (high) — Use when you have a face photo and want to visualize an aged-up version of the same person — returns an AI age-progressed face image.

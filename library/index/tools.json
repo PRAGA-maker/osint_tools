@@ -44638,41 +44638,52 @@
   {
     "id": "stark-county-auditor",
     "name": "Stark County Auditor",
-    "description": "Stark County Auditors website offering a property search with map capabilities by parcel number, owner, address and intersection, with advanced search filters",
+    "description": "Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner name, property address, parcel and assessed value.",
     "url": "http://www.starkcountyohio.gov/auditor",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Property ownership and valuation lookups for Stark County, Ohio by name, address or parcel.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official county government property search; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public-records property search — passive, and the property owner is not notified. It's an official government source, so results are authoritative public record; standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Stark County (Ohio) Auditor's office real-estate database; authoritative public record for that county.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Stark County Ohio Auditor",
+      "Stark County real estate search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "property",
+      "public-records",
+      "ohio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/stark-county-auditor.md"
   },
   {
@@ -119362,42 +119373,37 @@
   {
     "id": "frontex-migratory-map",
     "name": "Frontex Migratory Map",
-    "description": "click on a country or region to see how many illegal border crossings have been reported there in the last six months.",
+    "description": "Use when you need irregular-migration route context (`geolocation`) for a region — returns aggregate detected-border-crossing figures by route, not individual data.",
     "url": "https://frontex.europa.eu/we-know/migratory-map/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregate irregular-border-crossing statistics by European migratory route and period.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public data from the EU border agency; no account.",
+    "opsec": "passive",
+    "opsecNote": "Aggregate, de-identified route statistics — nothing about any individual and no subject contact. Fully passive background/context research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Frontex (European Border and Coast Guard Agency) data; authoritative for the routes/counts it reports, within the well-known caveats about how \"detections\" are counted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "e-justice-europa-eu",
       "eu-consolidated-corporate-registers",
@@ -119410,6 +119416,17 @@
       "inspire-geoportal",
       "vat-number-validation"
     ],
+    "aliases": [
+      "Frontex migratory routes map"
+    ],
+    "tags": [
+      "geolocation",
+      "migration",
+      "eu"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/frontex-migratory-map.md"
   },
   {
@@ -142390,45 +142407,6 @@
     "_file": "library/tools/image-video-face/images/search/imgur-search.md"
   },
   {
-    "id": "immerse-zone",
-    "name": "Immerse Zone",
-    "description": "Reverse Image Search Engine. Search by uploaded image or URl; Search by sketch (it can be drawn directly in the browser); Search by quote (can be selected from the catalog)",
-    "url": "http://immerse.zone",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/immerse-zone.md"
-  },
-  {
     "id": "impulseadventure",
     "name": "ImpulseAdventure",
     "description": "Use when you have a JPEG and want to inspect its compression signatures and structure for tampering/source clues — returns forensic markers via the JPEGsnoop tool hosted on this site.",
@@ -159825,40 +159803,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/one-network.md"
-  },
-  {
-    "id": "ontario-givesendgo-donors",
-    "name": "Ontario GiveSendGo Donors",
-    "description": "OSINT tool: Ontario GiveSendGo Donors.",
-    "url": "https://www.google.com/maps/d/viewer?mid=1heAgrb9bDuk287yqseyvhZ7-U_kz64hM",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/ontario-givesendgo-donors.md"
   },
   {
     "id": "open-source-munitions-portal",
@@ -253176,49 +253120,51 @@
   {
     "id": "osint-tools-bulgaria",
     "name": "OSINT-Tools-Bulgaria",
-    "description": "Bulgarian OSINT tools list (regional registries and sources).",
+    "description": "Use when a subject, company or vehicle ties to Bulgaria and you need country-specific registries and search resources — returns a curated directory of Bulgarian people/company/geo OSINT sources.",
     "url": "https://github.com/LinaYorda/OSINT-Tools-Bulgaria",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Bulgaria-specific public records and OSINT sources",
+    "bestFor": "A starting directory of Bulgaria-specific registries and OSINT sources (people, companies, geo).",
     "selectorsIn": [
       "name",
-      "address"
+      "employer-org"
     ],
-    "selectorsOut": [
-      "address"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free open GitHub repository (curated list); no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a GitHub resource list is passive. The linked Bulgarian registries themselves vary in OpSec — some may require accounts or log queries; assess each source individually when you follow a link, and use a sock puppet for any that need login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Regional list (20 stars).",
+    "trustNote": "A community-maintained curated list (LinaYorda); it points to third-party Bulgarian sources whose quality/availability the author explicitly notes is uneven — treat as a signpost, verify each source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "eu"
+      "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bulgaria",
-      "regional",
-      "catalog"
-    ],
-    "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "osinttools-linayorda"
     ],
+    "aliases": [
+      "OSINT Tools Bulgaria",
+      "LinaYorda Bulgaria OSINT"
+    ],
+    "tags": [
+      "public-records",
+      "bulgaria",
+      "curated-directory"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/osint-tools-bulgaria.md"
   },
   {
@@ -254905,35 +254851,45 @@
   {
     "id": "police-surveillance-in-chicago",
     "name": "Police Surveillance in Chicago",
-    "description": "OSINT tool: Police Surveillance in Chicago.",
+    "description": "Use when you need to understand what surveillance technology Chicago police deploy (for counter-surveillance/context) — returns an educational, FOIA-based reference on tactics, not a searchable dataset.",
     "url": "https://redshiftzero.github.io/policesurveillance/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding the types of police surveillance tech used in Chicago, for counter-surveillance context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free educational resource; no account. Note it's a static project last updated in 2021, so treat as historical context.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a static educational site is passive. Its value for an investigator is defensive — knowing that license-plate readers, cell-site simulators, gunshot detectors, biometric and social-media monitoring are in use informs your own counter-surveillance and OpSec when operating in that area. It contains no personal data on anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent FOIA-based research/education project; well-intentioned and sourced, but a 2021 snapshot — specifics may be outdated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Chicago police surveillance"
+    ],
+    "tags": [
+      "public-records",
+      "surveillance",
+      "chicago"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/police-surveillance-in-chicago.md"
   },
   {
@@ -254987,48 +254943,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/public-records/policecrime-bgsu-edu.md"
-  },
-  {
-    "id": "political-moneyline",
-    "name": "Political MoneyLine",
-    "description": "Campaign finance and lobbying tracking",
-    "url": "https://www.opensecrets.org/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "us-political-records"
-    ],
-    "bestFor": "Campaign finance and lobbying tracking",
-    "input": "Candidate name, donor, committee",
-    "output": "Contributions, expenditures, disclosures",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "OpenSecrets nonprofit database",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "open-secrets"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/us-political-records/political-moneyline.md"
   },
   {
     "id": "politicalmoneyline",
@@ -279898,69 +279812,31 @@
     "_file": "library/tools/search-engines/european-trademark-search.md"
   },
   {
-    "id": "excite",
-    "name": "Excite",
-    "description": "OSINT tool: Excite.",
-    "url": "https://www.excite.com",
+    "id": "excite-search-engine",
+    "name": "Excite Search Engine",
+    "description": "Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news results and directory jump-offs for a `name`.",
+    "url": "http://www.excite.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A legacy metasearch portal for second-opinion results and quick White/Yellow Pages access.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "meta-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "excite-search-engine"
-    ],
-    "_file": "library/tools/search-engines/excite.md"
-  },
-  {
-    "id": "excite-search-engine",
-    "name": "Excite Search Engine",
-    "description": "Surface web search engine covering worldwide results including news and information on topics such as tech, finance, sports, and entertainment",
-    "url": "http://www.excite.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "costNote": "Free ad-supported portal; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A plain web search is passive and the subject isn't notified. Excite aggregates other engines' results and embeds third-party services (Yahoo, ESPN, White/Yellow Pages), so clicking through hands you off to those sites — normal browsing hygiene applies; use a clean profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A surviving legacy web portal that now aggregates third-party search/content rather than running its own crawler; useful as a different result mix, not an authoritative index.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -279969,18 +279845,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Excite",
+      "excite.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "excite"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/excite-search-engine.md"
   },
   {
@@ -284173,41 +284050,55 @@
   {
     "id": "google-scholar",
     "name": "Google Scholar",
-    "description": "Comprehensive academic literature discovery with citation tracking across all disciplines",
+    "description": "Use when you have a `name` (or `employer-org`) and want the subject's academic output, co-authors and affiliations — returns papers, citations, and (often) a profile with a photo and institution.",
     "url": "https://scholar.google.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Comprehensive academic literature discovery with citation tracking across all disciplines",
-    "input": "Author, paper title, keyword, or institution",
-    "output": "Academic publications with citation counts, links to full text, and related work",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mapping a person's publications, co-authors, affiliations and academic timeline.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; no account needed to read. Authors may create a public Scholar profile (that's what exposes photo/affiliation/co-authors).",
     "opsec": "passive",
-    "opsecNote": "Searches are logged by Google; results reflect Google's index with no direct contact to journals or authors.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching is passive and the subject isn't notified. Clicking through to publisher PDFs hits third-party sites (normal browsing). Heavy scripted querying triggers Google's CAPTCHA/rate limiting — search manually or throttle. Use a clean browser profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's academic index — broad and authoritative for discovery, though it indexes some non-peer-reviewed material, so treat a hit as \"published somewhere,\" then check the venue.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "scholar.google.com",
+      "Google Scholar profiles"
+    ],
+    "tags": [
+      "academic",
+      "scholarly",
+      "search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/google-scholar.md"
   },
   {
@@ -303834,24 +303725,25 @@
   {
     "id": "toddington-online-research-cheat-sheets",
     "name": "Toddington Online Research Cheat Sheets",
-    "description": "Toddington International's free cheat sheets for online research.",
+    "description": "Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PDFs, not a lookup on any selector.",
     "url": "https://www.toddington.com/resources/cheat-sheets/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Quick-reference cheat sheets for platform-specific searching",
+    "bestFor": "Quick-reference cheat sheets for search operators and social-media investigation techniques.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free downloadable reference material from Toddington International (TII); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is reference material about how to search — reading it involves no subject and no queries against anyone. Fully passive; nothing to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Toddington is an established online-research training firm.",
+    "trustNote": "Published by Toddington International, a well-established OSINT training firm; reputable, professionally-maintained reference content.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -303860,18 +303752,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "cheatsheet",
-      "reference",
-      "social-networks"
-    ],
-    "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "toddington-free-osint-resources"
     ],
+    "aliases": [
+      "TII cheat sheets",
+      "Toddington cheat sheets"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "reference"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/toddington-online-research-cheat-sheets.md"
   },
   {

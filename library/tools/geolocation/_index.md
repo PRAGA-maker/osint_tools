@@ -92,7 +92,7 @@ kind: group-index
 - **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
 - **`freedomhouse-org`** (low) — Use when you have a `geolocation` (country) and want its political-rights and civil-liberties context — returns freedom scores and country-l
 - **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
-- **`frontex-migratory-map`** (medium) — click on a country or region to see how many illegal border crossings have been reported there in the last six months.
+- **`frontex-migratory-map`** (medium) — Use when you need irregular-migration route context (`geolocation`) for a region — returns aggregate detected-border-crossing figures by rou
 - **`gaisma`** (medium) — Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the s
 - **`gdal3-js-org`** (medium) — One of the main problems of using geospatial data in investigations is the large number of applications for working with it, which save the 
 - **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points

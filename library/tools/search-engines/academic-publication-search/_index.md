@@ -10,7 +10,7 @@ kind: group-index
 - **`arxiv-org`** (medium) — Use when you have a `name` (a researcher/academic) and want their preprints and research footprint — returns papers, co-authors, affiliation
 - **`bielefeld-academic-search-engine`** (medium) — Use when you have a researcher `name` or topic and want open-access scholarship across repositories — returns papers, theses, and datasets w
 - **`copyscape-plagiarism-checker`** (medium) — Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matchi
-- **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
+- **`google-scholar`** (medium) — Use when you have a `name` (or `employer-org`) and want the subject's academic output, co-authors and affiliations — returns papers, citatio
 - **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
 - **`lazy-scholar`** (medium) — Use when you have a paper's DOI/URL and want its free full text — a browser extension that finds legal open-access copies of paywalled acade
 - **`library-databases`** (medium) — Identifying specialized academic databases by subject for deep literature research

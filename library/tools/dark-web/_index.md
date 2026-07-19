@@ -95,7 +95,7 @@ kind: group-index
 - **`riseup`** (low) — OSINT tool: RiseUp.
 - **`rooted`** (low) — OSINT tool: Rooted.
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
-- **`stark-county-auditor`** (medium) — Stark County Auditors website offering a property search with map capabilities by parcel number, owner, address and intersection, with advan
+- **`stark-county-auditor`** (medium) — Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner nam
 - **`state-of-delaware-professional-license-validator`** (medium) — Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, a
 - **`swp-cx`** (low) — OSINT tool: swp.cx.
 - **`tails-the-amnesic-incognito-live-system`** (low) — OSINT tool: TAILS - The Amnesic Incognito Live System.

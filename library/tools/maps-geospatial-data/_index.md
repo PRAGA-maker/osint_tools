@@ -93,7 +93,6 @@ kind: group-index
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
 - **`one-network`** (medium) — Use when you have a `geolocation`/`address` and a date and want the roadworks, closures, and traffic disruptions there — returns a live/plan
-- **`ontario-givesendgo-donors`** (medium) — OSINT tool: Ontario GiveSendGo Donors.
 - **`open-source-munitions-portal`** (low) — A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use a
 - **`openaerialmap`** (low) — Platform for accessing open-licensed satellite and unmanned aerial vehicle (UAV) imagery
 - **`openguessr-com`** (medium) — OSINT tool: openguessr.com.

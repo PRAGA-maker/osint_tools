@@ -24,7 +24,7 @@ kind: group-index
 - **`sanctions-pep/`** — 2 skill(s) below.
 - **`sanctions-screening/`** — 4 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
-- **`us-political-records/`** — 3 skill(s) below.
+- **`us-political-records/`** — 2 skill(s) below.
 - **`us-voter-records/`** — 1 skill(s) below.
 
 ## Skills here
@@ -725,7 +725,7 @@ kind: group-index
 - **`osint-for-countries-wddadk`** (high) — Use when a lead is tied to a specific `address`/country and you want the local registries and people-search resources for it — returns point
 - **`osint-hub-fr`** (medium) — Use when investigating a France-linked subject and you need French-focused tools, sources and methods — a curated directory pointing to othe
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
-- **`osint-tools-bulgaria`** (medium) — Bulgarian OSINT tools list (regional registries and sources).
+- **`osint-tools-bulgaria`** (medium) — Use when a subject, company or vehicle ties to Bulgaria and you need country-specific registries and search resources — returns a curated di
 - **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
 - **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
 - **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
@@ -759,7 +759,7 @@ kind: group-index
 - **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
 - **`police-complaint-lookup`** (low) — Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved of
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
-- **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
+- **`police-surveillance-in-chicago`** (medium) — Use when you need to understand what surveillance technology Chicago police deploy (for counter-surveillance/context) — returns an education
 - **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —
 - **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code

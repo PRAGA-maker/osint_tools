@@ -232,8 +232,7 @@ kind: group-index
 - **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
-- **`excite-search-engine`** (medium) — Surface web search engine covering worldwide results including news and information on topics such as tech, finance, sports, and entertainme
-- **`excite`** (medium) — OSINT tool: Excite.
+- **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
 - **`fact-checking`** (low) — OSINT tool: Fact-Checking.
 - **`fact-monster`** (low) — Kid friendly search engine.
@@ -730,7 +729,7 @@ kind: group-index
 - **`thereisabotforthat-com`** (low) — search by catalog of 5151 bots for 17 different apps and platforms
 - **`thingful-net`** (low) — OSINT tool: Thingful.net.
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
-- **`toddington-online-research-cheat-sheets`** (medium) — Toddington International's free cheat sheets for online research.
+- **`toddington-online-research-cheat-sheets`** (medium) — Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PD
 - **`topix`** (low) — OSINT tool: Topix.
 - **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
