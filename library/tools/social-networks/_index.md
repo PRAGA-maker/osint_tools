@@ -596,7 +596,6 @@ kind: group-index
 - **`target-log`** (medium) — OSINT tool: Target Log.
 - **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
 - **`teddit`** (medium) — OSINT tool: teddit.
-- **`tenai`** (medium) — Simple tool that uncover some followers of a private #Instagram account
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
 - **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li
@@ -651,7 +650,6 @@ kind: group-index
 - **`tweet-finder`** (high) — Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com lin
 - **`tweet-machine`** (medium) — Simple #bash script which retrieves links to the deleted (and other) tweets and replies of any Twitter user from WayBackMachine.
 - **`tweet-mapper`** (medium) — OSINT tool: Tweet Mapper.
-- **`tweet-sentiment-visualization`** (medium) — OSINT tool: Tweet Sentiment Visualization.
 - **`tweet-topic-explorer`** (high) — Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and f
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s

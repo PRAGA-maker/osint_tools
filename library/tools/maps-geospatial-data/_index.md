@@ -77,7 +77,6 @@ kind: group-index
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
 - **`livecorona-co-kr`** (medium) — OSINT tool: Livecorona.co.kr.
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
-- **`lonny-com`** (medium) — OSINT tool: lonny.com.
 - **`manhole-co-il`** (medium) — OSINT tool: manhole.co.il.
 - **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th
 - **`mapa-sk`** (low) — Mapping service for Slovakia
@@ -127,7 +126,7 @@ kind: group-index
 - **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
 - **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
-- **`travic-tracker-geops`** (medium) — OSINT tool: TRAVIC TRACKER GEOPS.
+- **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora
 - **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.
 - **`ukraine-war-map-heatmap`** (medium) — OSINT tool: Ukraine War Map/Heatmap.
 - **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.

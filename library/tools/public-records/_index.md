@@ -626,7 +626,7 @@ kind: group-index
 - **`nadj-org-uk`** (medium) — Use when you have a `name`, business name or `address`/area and want to find a UK disc jockey's professional listing — returns `name`, `empl
 - **`naics-code-search`** (low) — OSINT tool: NAICS Code Search.
 - **`napit-org-uk`** (high) — Use when you have a UK tradesperson `name`, `employer-org` or postcode and want to verify NAPIT registration — returns the registered busine
-- **`narcotics-control-reports`** (medium) — US Department of State Narcotics Control Strategy Reports
+- **`narcotics-control-reports`** (medium) — Use when you have a country/region and want US State Dept assessments of its drug trafficking and money-laundering landscape — returns count
 - **`nation-master`** (low) — OSINT tool: Nation Master.
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents

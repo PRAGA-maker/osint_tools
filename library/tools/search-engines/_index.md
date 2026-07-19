@@ -256,7 +256,7 @@ kind: group-index
 - **`filepursuit-com`** (low) — OSINT tool: Filepursuit.com.
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
-- **`filmaffinity-canada`** (medium) — Movie listings website
+- **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
@@ -426,7 +426,7 @@ kind: group-index
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
 - **`leaklooker`** (medium) — Tool to find open databases/services.
-- **`leet`** (medium) — Open directory search engine.
+- **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
 - **`leit-search-engine-iceland`** (medium) — Iceland based surface web search engine covering regional results
 - **`lendx`** (low) — OSINT tool: LENDX.

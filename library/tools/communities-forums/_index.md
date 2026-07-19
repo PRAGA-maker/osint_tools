@@ -285,7 +285,7 @@ kind: group-index
 - **`reelgood-com`** (low) — search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)
 - **`refdesk-newspaper-search`** (medium) — Searchable website for newspapers in the US and wordwide
 - **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en
-- **`restaurant-news-united-states`** (medium) — Website related to news on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurant-news-united-states`** (medium) — Use when you have an `employer-org`/`name` in US foodservice and want press-release coverage — returns announcements, franchise info, and na
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`rss-tools-website`** (medium) — Website that provides links to tools and informatino related to RSS Feeds
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
@@ -303,7 +303,7 @@ kind: group-index
 - **`seniorpeoplemeet`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`sina-weibo-chinese`** (medium) — Chinese website related to social networking and micro-blogging
+- **`sina-weibo-chinese`** (medium) — Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/assoc
 - **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
 - **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
 - **`smat`** (low) — OSINT tool: smat.
@@ -336,7 +336,7 @@ kind: group-index
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-economist-world-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
 - **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
-- **`the-guardian-united-kingdom`** (medium) — The Guardian's UK politics section
+- **`the-guardian-united-kingdom`** (medium) — Use when you have a `name`/`employer-org` in UK public life and want investigative coverage and gov-data journalism — returns articles, name
 - **`the-guardian-world`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`the-independent-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
 - **`the-province-news`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
@@ -346,7 +346,7 @@ kind: group-index
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
 - **`thepaperboy`** (medium) — Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to searc
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
-- **`theverge-tech-news`** (medium) — Online articles, news, and reviews related to technology, science, gadgets, future trends, and more
+- **`theverge-tech-news`** (medium) — Use when you have a `name`/`employer-org` in tech, startups, or gadgets and want coverage — returns articles, quotes, and role/company conte
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party
 - **`tilersforums-co-uk`** (medium) — OSINT tool: tilersforums.co.uk.
 - **`time-news`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base

@@ -176,7 +176,7 @@ kind: group-index
 - **`h-i-v-e`** (medium) — Automated OSINT multi-tool for efficient data gathering.
 - **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
 - **`harpoon`** (low) — CLI tool for open-source and threat intelligence with many plugin commands.
-- **`helix`** (medium) — Advanced asynchronous OSINT identity mapper and relation tool.
+- **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
 - **`highcharts`** (low) — OSINT tool: Highcharts.
 - **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
 - **`hohli`** (low) — OSINT tool: Hohli.
