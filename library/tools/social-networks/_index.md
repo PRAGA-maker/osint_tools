@@ -524,7 +524,7 @@ kind: group-index
 - **`skype`** (medium) — Use when an old lead references a Skype username/account — returns little live intelligence; Skype was retired in May 2025, so treat it as h
 - **`skyzoo-blue`** (high) — Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-
 - **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
-- **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — OSINT tool: small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without.
+- **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — Use when you have a VK (VKontakte) numeric user id and want hidden profile metadata without logging in — returns account creation/last-seen 
 - **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
 - **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
@@ -607,14 +607,13 @@ kind: group-index
 - **`threadster-app`** (high) — Use when you have a public Threads (Meta) post `url` from a subject's `social-profile` and want to download its video/photo/GIF for offline 
 - **`thumbtube-com-2`** (high) — Use when you have an Instagram video/IGTV post URL and want to save the media for offline analysis — returns the downloaded video/image file
 - **`thumbtube-com`** (high) — Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/
-- **`tikbuddy`** (medium) — TikTok profile analytics
 - **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
 - **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
 - **`tiktake-net`** (medium) — TikTok Video Downloader
 - **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
-- **`tiktok-scraper`** (medium) — scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of cl
+- **`tiktok-scraper`** (medium) — Use when you have a TikTok `username`, hashtag, or music/trend and want to collect its posts and metadata in bulk — returns video posts plus
 - **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
 - **`tiktok-user-search`** (medium) — OSINT tool: TikTok User Search.
@@ -728,7 +727,7 @@ kind: group-index
 - **`weibo-china`** (high) — Use when you have a Chinese-context `name`/`username` and want their microblog presence — returns the `social-profile`, posts, photos (`imag
 - **`weibo-com`** (high) — Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos 
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
-- **`wikimedia-cloud-page-views`** (medium) — The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare
+- **`wikimedia-cloud-page-views`** (medium) — Use when you have a `name` or topic with a Wikipedia article and want its traffic over time — returns daily/monthly pageview counts you can 
 - **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
 - **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t

@@ -117,7 +117,7 @@ kind: group-index
 - **`bmi-com`** (low) — Use when you have a `name` (songwriter, performer, or publisher) or a song title and want to link a person to musical works, co-writers, and
 - **`boatinfoworld`** (medium) — Use when you have a `name` (owner or vessel) and want US Coast Guard documented-vessel records — returns owner `name`, `address`, `document-
 - **`bookkeepers-org-uk`** (medium) — Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's busine
-- **`boston-police-internal-affairs-cases-2010-2020`** (medium) — OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.
+- **`boston-police-internal-affairs-cases-2010-2020`** (medium) — Use when you have a `name` of a Boston Police officer and want their internal-affairs/disciplinary history — returns documented IA cases (20
 - **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
 - **`brb-public-records`** (medium) — Use when you need to find the authoritative source for a US public record and want to know which agency holds it — returns links and access 

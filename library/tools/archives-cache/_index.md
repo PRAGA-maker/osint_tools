@@ -34,7 +34,7 @@ kind: group-index
 - **`carbon-dating-the-web`** (low) — Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shortener
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
 - **`changedetection`** (low) — OSINT tool: ChangeDetection.
-- **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.
+- **`commoncrawl-org`** (medium) — Use when you have a `domain`/URL or a broad pattern and want to mine a massive open archive of the web at scale — returns historical page ca
 - **`cybdetective-com`** (medium) — Use when you have a `domain`/URL and want a fast year-by-year view of its history — pulls one Wayback Machine snapshot per year for side-by-
 - **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 
 - **`deltafeed`** (low) — OSINT tool: Deltafeed.
@@ -63,7 +63,7 @@ kind: group-index
 - **`linctas-ent-sirsidynix-net-au`** (medium) — OSINT tool: linctas.ent.sirsidynix.net.au.
 - **`linkedin-com`** (medium) — OSINT tool: linkedin.com.
 - **`lumen`** (low) — A research project collecting and publishing legal takedown notices for online content transparency
-- **`lux-leaks`** (medium) — — the name of a financial scandal revealed in November 2014 by a journalistic investigation. On this site you will find documents related to
+- **`lux-leaks`** (medium) — Use when you have an `employer-org` (a large company) and want to know if it appears in the Luxembourg Leaks tax-ruling investigation — retu
 - **`memento-timetravel`** (low) — Meta-archive search across multiple web-archive providers.
 - **`mention`** (low) — OSINT tool: Mention.
 - **`metawarc`** (medium) — Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamp

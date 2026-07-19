@@ -131,7 +131,7 @@ kind: group-index
 - **`mobissimo-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
 - **`my-ship-tracking`** (low) — OSINT tool: My Ship Tracking.
-- **`national-insurance-crime-bureau-vin-search`** (medium) — OSINT tool: National Insurance Crime Bureau(Vin Search).
+- **`national-insurance-crime-bureau-vin-search`** (medium) — Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns
 - **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
 - **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai
 - **`nomerogram-ru`** (medium) — Use when you have a Russian `vehicle-plate` and want photos of that car — returns user-submitted images of vehicles matching the plate, with

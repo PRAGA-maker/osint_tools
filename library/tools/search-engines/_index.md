@@ -792,7 +792,7 @@ kind: group-index
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`webkams`** (medium) — Search live webcams around the world
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
-- **`white-house-disclosures`** (medium) — White House disclosure reports
+- **`white-house-disclosures`** (medium) — Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 
 - **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`

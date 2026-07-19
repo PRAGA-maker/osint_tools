@@ -274,7 +274,6 @@ kind: group-index
 - **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
 - **`ipvoid`** (low) — OSINT tool: IPVoid.
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
-- **`ironspider-website-analysis-tools`** (medium) — Search for information on website hosting, as well as other information related to website design
 - **`ismalicious`** (low) — OSINT tool: isMalicious.
 - **`isp-tools`** (low) — OSINT tool: ISP.Tools.
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or

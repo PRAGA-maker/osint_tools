@@ -18635,47 +18635,53 @@
   },
   {
     "id": "commoncrawl-org",
-    "name": "commoncrawl.org",
-    "description": "OSINT tool: commoncrawl.org.",
+    "name": "Common Crawl",
+    "description": "Use when you have a `domain`/URL or a broad pattern and want to mine a massive open archive of the web at scale — returns historical page captures and an index (document-id) you can query for URLs, snapshots, and extracted text.",
     "url": "https://commoncrawl.org/overview",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk/at-scale web-corpus mining — querying billions of archived pages and URL indexes by domain or pattern.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "document-id"
+      "document-id",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free open dataset (hosted on AWS S3); the data is free, but processing it at scale can incur your own compute/egress costs.",
+    "opsec": "passive",
+    "opsecNote": "You query a pre-collected open archive, not the target's live site, so nothing reaches the subject. Fully passive; ideal when you must avoid touching a subject-controlled server.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Common Crawl Foundation, a well-known non-profit whose corpus underpins major web-scale research; captures are authentic but partial (a sample of the web per crawl), not exhaustive.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "commoncrawl",
+      "Common Crawl corpus"
+    ],
     "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
+      "archives",
+      "web-corpus",
+      "big-data"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "common-crawl",
-      "index-commoncrawl-org"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/commoncrawl-org.md"
   },
   {
@@ -19972,41 +19978,52 @@
   },
   {
     "id": "lux-leaks",
-    "name": "Lux Leaks",
-    "description": "— the name of a financial scandal revealed in November 2014 by a journalistic investigation. On this site you will find documents related to more than 350 of the world's largest companies involved in this story",
+    "name": "LuxLeaks (ICIJ)",
+    "description": "Use when you have an `employer-org` (a large company) and want to know if it appears in the Luxembourg Leaks tax-ruling investigation — returns which multinationals had secret Luxembourg tax deals, by industry.",
     "url": "https://projects.icij.org/luxembourg-leaks/viz/industries/index.html",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking whether a multinational appears in the 2014 ICIJ LuxLeaks tax-ruling investigation, browsable by industry.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free ICIJ investigative project; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You browse a published ICIJ investigation of already-public leaked documents; nothing is disclosed to any company. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the International Consortium of Investigative Journalists from the 2014 LuxLeaks disclosures; a vetted, widely-reported dataset — though it is a fixed historical investigation, not a live registry.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Luxembourg Leaks",
+      "LuxLeaks"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "icij",
+      "leaks",
+      "tax",
+      "corporate"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "icij-offshore-leaks-database"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/lux-leaks.md"
   },
   {
@@ -78356,52 +78373,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/iqwhois.md"
-  },
-  {
-    "id": "ironspider-website-analysis-tools",
-    "name": "IronSpider Website Analysis Tools",
-    "description": "Search for information on website hosting, as well as other information related to website design",
-    "url": "http://www.ironspider.ca/freetools/siteanalysis.htm",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ironspider-website-analysis-tools.md"
   },
   {
     "id": "ismalicious",
@@ -220444,36 +220415,51 @@
   },
   {
     "id": "boston-police-internal-affairs-cases-2010-2020",
-    "name": "Boston Police Internal Affairs Cases, 2010-2020",
-    "description": "OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.",
-    "url": "https://apps.bostonglobe.com/graphics/2020/law-enforcement/index.html?initialWidth=1029&childId=police-embed&parentTitle=Database%3A%20Search%2010%20years%27%20worth%20of%20Boston%20Police%20Department%20disciplinary%20action&parentUrl=https%3A%2F%2Fwww.bostonglobe.com%2F2020%2F11%2F24%2Fmetro%2Fheres-searchable-database-boston-police-department-internal-investigations-disciplinary-actions-more%2F",
+    "name": "Boston Police Internal Affairs Cases (2010–2020)",
+    "description": "Use when you have a `name` of a Boston Police officer and want their internal-affairs/disciplinary history — returns documented IA cases (2010–Aug 2020) with allegation type, outcome, and officer attributes.",
+    "url": "https://apps.bostonglobe.com/graphics/2020/law-enforcement/index.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Boston Police Department internal-affairs cases and disciplinary outcomes 2010–2020 by officer name or attribute.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public interactive database published by The Boston Globe; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a published news database of already-public records; the officer is not notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled by The Boston Globe from records obtained from the Boston Police Department; a vetted journalistic dataset covering Jan 2010–Aug 2020, not a live official registry.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Boston Globe police IA database"
+    ],
+    "tags": [
+      "police-misconduct",
+      "public-records",
+      "boston"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/boston-police-internal-affairs-cases-2010-2020.md"
   },
   {
@@ -306939,44 +306925,53 @@
   {
     "id": "white-house-disclosures",
     "name": "White House Disclosures",
-    "description": "White House disclosure reports",
+    "description": "Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 278 financial disclosures, ethics waivers, transaction reports, and staff salary listings.",
     "url": "https://www.whitehouse.gov/disclosures/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Retrieving White House staff financial disclosures, ethics waivers, periodic transaction reports, and salary/title listings.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official U.S. government disclosures page; no account. Some individual OGE 278 reports require a simple request form.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You download published U.S. government ethics filings; the official is not notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party whitehouse.gov publication of legally-required ethics/financial filings; authoritative, though the specific documents posted change with each administration and over time.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "whitehouse.gov disclosures",
+      "White House financial disclosures"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "government-data",
+      "financial-disclosure",
+      "ethics",
+      "public-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "office-of-national-drug-control-policy"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/white-house-disclosures.md"
   },
   {
@@ -338147,46 +338142,54 @@
   },
   {
     "id": "small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without",
-    "name": "small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without",
-    "description": "OSINT tool: small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without.",
+    "name": "VK FOAF Metadata Retriever",
+    "description": "Use when you have a VK (VKontakte) numeric user id and want hidden profile metadata without logging in — returns account creation/last-seen dates, state, and other FOAF fields via VK's public FOAF endpoint.",
     "url": "https://gist.github.com/cryptolok/8a023875b47e20bc5e64ba8e27294261",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a VK user's hidden FOAF metadata (created/last-login dates, state) anonymously via a small Bash script.",
     "selectorsIn": [
       "username",
-      "name"
-    ],
-    "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "dob",
+      "metadata-exif",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-file Bash gist (public); no cost, no account.",
+    "opsec": "passive",
+    "opsecNote": "It reads VK's public FOAF XML endpoint with curl and does not log in, so the request is not tied to your VK identity and the target isn't notified. Still route via a sock-puppet IP; VK can log the requesting address, and the FOAF endpoint's availability changes over time.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "An old community gist (cryptolok) that scrapes VK's FOAF endpoint; the technique is genuine but brittle — VK has tightened access, so many profiles now return \"deleted/disallowed,\" and results depend on the target's privacy state.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VK FOAF scraper",
+      "vkontakte hidden metadata tool"
+    ],
     "tags": [
       "vk",
-      "russia",
-      "open-source",
-      "cli"
+      "vkontakte",
+      "metadata",
+      "foaf"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without.md"
   },
   {
@@ -342801,43 +342804,6 @@
     "_file": "library/tools/social-networks/thumbtube-com-2.md"
   },
   {
-    "id": "tikbuddy",
-    "name": "Tikbuddy",
-    "description": "TikTok profile analytics",
-    "url": "https://app.tikbuddy.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "TikTok"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tikbuddy.md"
-  },
-  {
     "id": "tikface-com",
     "name": "tikface.com",
     "description": "Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — returns social-profile, image and video content.",
@@ -343210,39 +343176,54 @@
   },
   {
     "id": "tiktok-scraper",
-    "name": "TikTok Scraper",
-    "description": "scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of clips or users from a file",
+    "name": "tiktok-scraper",
+    "description": "Use when you have a TikTok `username`, hashtag, or music/trend and want to collect its posts and metadata in bulk — returns video posts plus user/video metadata (JSON/CSV) without an API key.",
     "url": "https://github.com/drawrowfly/tiktok-scraper",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk collection of TikTok user/hashtag/trend/music feeds and metadata, with optional video download, from the CLI or Node.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Node.js/TypeScript, MIT). No cost, but it scrapes TikTok's unofficial web endpoints and needs no login.",
+    "opsec": "active",
+    "opsecNote": "This makes automated requests directly to TikTok for the target's content; TikTok can see and rate-limit/block the traffic. Use a sock-puppet egress (proxy/VPN), throttle requests, and expect to supply session/signature values as TikTok's anti-bot measures change. Do not run from an attributable IP against a sensitive target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source scraper (5k+ stars) but last released in 2021; TikTok's frequent changes mean parts break periodically, so treat it as maintained-by-community and verify it still works before relying on a run.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tiktok-scraper",
+      "drawrowfly tiktok-scraper"
+    ],
     "tags": [
-      "Social Media",
-      "TikTok"
+      "tiktok",
+      "scraper",
+      "social-media"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok-scraper.md"
   },
   {
@@ -349675,39 +349656,50 @@
   },
   {
     "id": "wikimedia-cloud-page-views",
-    "name": "WikiMedia Cloud Page Views",
-    "description": "The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare 2 or more pages with each other. Who is more popular?",
+    "name": "Wikipedia Pageviews Analysis",
+    "description": "Use when you have a `name` or topic with a Wikipedia article and want its traffic over time — returns daily/monthly pageview counts you can compare across pages to gauge public attention and pin spikes to events.",
     "url": "https://pageviews.wmcloud.org/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Charting and comparing Wikipedia article pageviews over time to measure and date public interest in a person or topic.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool on Wikimedia Cloud (built on the official Wikimedia pageviews API); no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query aggregate Wikipedia traffic statistics, not any individual; nothing reaches the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Community-built but based on the official Wikimedia pageviews API; the counts are Wikimedia's own aggregate statistics and are authoritative for article traffic (from mid-2015 onward).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Pageviews Analysis",
+      "pageviews.wmcloud.org"
+    ],
     "tags": [
-      "Social Media",
-      "Wikipedia"
+      "wikipedia",
+      "analytics",
+      "traffic"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/wikimedia-cloud-page-views.md"
   },
   {
@@ -362932,47 +362924,53 @@
   },
   {
     "id": "national-insurance-crime-bureau-vin-search",
-    "name": "National Insurance Crime Bureau(Vin Search)",
-    "description": "OSINT tool: National Insurance Crime Bureau(Vin Search).",
+    "name": "NICB VINCheck",
+    "description": "Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns theft and salvage flags from participating U.S. insurers.",
     "url": "https://www.nicb.org/theft_and_fraud_awareness/vincheck",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free U.S. VIN check for outstanding theft records and salvage/total-loss history from insurer data.",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public service from the National Insurance Crime Bureau; limited to a small number of searches per day per user (anti-abuse cap).",
+    "opsec": "passive",
+    "opsecNote": "You query NICB's database about a VIN, not the owner; nothing is disclosed to any vehicle owner. A CAPTCHA gates each lookup. Passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the NICB, a not-for-profit backed by U.S. insurers; theft/salvage flags come from participating insurance-company data, so it is authoritative for what those insurers report (not a complete national record).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NICB VINCheck",
+      "VINCheck"
+    ],
     "tags": [
-      "vehicle"
+      "transportation",
+      "vehicles",
+      "vin",
+      "theft"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "vincheck"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/national-insurance-crime-bureau-vin-search.md"
   },
   {
