@@ -95,7 +95,7 @@ kind: group-index
 - **`bank-for-international-settlements-statistics`** (low) — OSINT tool: Bank for International Settlements Statistics.
 - **`banq-num-rique`** (low) — OSINT tool: BAnQ numérique.
 - **`barcode-lookup`** (medium) — Use when you have a barcode/UPC/EAN number (a `document-id`) — read off a product, package, or object in a photo — and want to identify the 
-- **`base-academic-search-engine`** (medium) — Academic-related search engine focusing on science and research
+- **`base-academic-search-engine`** (medium) — Use when you have a `name` and want their scholarly output across repositories worldwide — returns papers, theses, and documents (with autho
 - **`baytown-tx-employee-directory`** (medium) — OSINT tool: Baytown TX Employee Directory.
 - **`belgium`** (high) — Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, ad
 - **`bellingcat-com`** (high) — Use when you have a `name` or keyword and want verbatim quotes from UK & Ireland local-council meetings — returns transcript hits naming who

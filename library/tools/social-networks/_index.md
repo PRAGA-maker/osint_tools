@@ -216,7 +216,7 @@ kind: group-index
 - **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening
 - **`github-monitor`** (medium) — Use when you have a GitHub `username` and want to watch their activity over time — returns real-time alerts on new events, follows, stars an
 - **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
-- **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
+- **`github-release-stats`** (medium) — Use when you have a GitHub repo (a `username`/org + repo) and want its per-release download counts and release metadata — returns download t
 - **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
 - **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
 - **`github-trending-archives`** (low) — Use when you want to know which repos/developers trended on GitHub on a past date — returns dated archives of GitHub's trending lists for hi

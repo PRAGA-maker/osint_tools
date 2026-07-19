@@ -10,7 +10,7 @@ kind: group-index
 - **`ezr-osint-sidebar`** (medium) — Use when you're viewing a web page/`image` and want in-browser metadata, EXIF, hashes, and reverse-search links — returns `metadata-exif`, S
 - **`fiddler`** (medium) — Use when you're investigating a website/app and want to see the HTTP(S) traffic it exchanges — returns captured requests/responses, headers,
 - **`full-page-screen-capture-chrome-extension`** (medium) — Use when you have a live web page (`social-profile`, `domain` or any URL) and want a scroll-stitched full-page screenshot for evidence — ret
-- **`page2images`** (medium) — Website documentation, responsive testing, visual archiving
+- **`page2images`** (medium) — Use when you have a `domain`/URL and want a screenshot of the live page from a neutral third-party server — returns full-page and device-spe
 - **`snapper`** (medium) — Batch website screenshots, post-reconnaissance documentation
 - **`web-page-saver`** (medium) — Use when you have a list of web URLs and need forensic-grade, offline, court-ready captures — a free Windows tool producing scrolling snapsh
 

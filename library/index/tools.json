@@ -22870,41 +22870,48 @@
   {
     "id": "web-archive-ru",
     "name": "Web Archive-RU",
-    "description": "Supplemental archive checks when mainstream archives lack coverage",
+    "description": "Use when a `domain`/URL isn't well covered by mainstream archives and you want an alternative snapshot source — a Russian web-archive service returning saved copies of pages by date.",
     "url": "https://web-arhive.ru/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "web"
     ],
-    "bestFor": "Supplemental archive checks when mainstream archives lack coverage",
-    "input": "URL or keyword",
-    "output": "Available archived pages and snapshot listings",
-    "selectorsIn": [],
+    "bestFor": "A supplemental archive to check when the Wayback Machine or archive.today lacks a snapshot — sometimes covers pages (often RU-region) others missed.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "degraded",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free service for viewing archived page copies by date. Some add-on/premium features exist, but basic snapshot lookup is free.",
     "opsec": "passive",
-    "opsecNote": "Operational status requires follow-up verification; use as secondary source until confirmed.",
+    "opsecNote": "You query the archive's own copy, not the live target — the site owner isn't alerted. Passive. It is a Russian third-party service, so route through a sock-puppet and don't submit sensitive query terms you wouldn't share with it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party (Russian) web-archive service, not a first-party institution like the Internet Archive; useful as a supplementary source, but verify snapshots and don't rely on it as sole provenance.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "web-arhive.ru",
+      "Web Archive RU"
+    ],
+    "tags": [
+      "web-archive",
+      "cache",
+      "supplemental"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web/web-archive-ru.md"
   },
   {
@@ -109160,43 +109167,51 @@
   {
     "id": "page2images",
     "name": "Page2Images",
-    "description": "Website documentation, responsive testing, visual archiving",
+    "description": "Use when you have a `domain`/URL and want a screenshot of the live page from a neutral third-party server — returns full-page and device-specific captures for visual documentation.",
     "url": "https://www.page2images.com/URL-Live-Website-Screenshot-Generator",
     "category": "evidence-capture",
     "path": [
       "evidence-capture",
       "web-browsing"
     ],
-    "bestFor": "Website documentation, responsive testing, visual archiving",
-    "input": "Domain URL",
-    "output": "Full-page screenshots (PNG/JPG), mobile previews, device-specific captures",
-    "selectorsIn": [],
+    "bestFor": "Capturing a screenshot of a web page from a remote server (not your own browser), for evidence or documentation.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free online screenshot generator for occasional captures; higher volume and the API are paid. No install needed for the web tool.",
     "opsec": "passive",
-    "opsecNote": "Remote screenshot capture via third-party service; passive documentation with no direct interaction.",
+    "opsecNote": "The screenshot is taken by Page2Images' server, so the target site sees Page2Images' IP/user-agent, not yours — a useful buffer that keeps your own address off the target's logs. Passive from your side; the target site is still visited (by the service).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "A commercial third-party screenshot service; for court-grade evidence prefer a purpose-built preservation tool with hashing/timestamps, but it's fine for quick visual documentation.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "page2images.com",
+      "Page2Images screenshot generator"
+    ],
+    "tags": [
+      "screenshot",
+      "web-capture",
+      "evidence"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "pages2images"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/evidence-capture/web-browsing/page2images.md"
   },
   {
@@ -113724,41 +113739,52 @@
   {
     "id": "opensea",
     "name": "OpenSea",
-    "description": "Multi-chain NFT trading history and collection-level analysis",
+    "description": "Use when you have a `crypto-wallet` address and want its NFT holdings and trading history — returns the wallet's owned/created NFTs, transfers, sales, and offers across multiple chains.",
     "url": "https://opensea.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "nft-provenance"
     ],
-    "bestFor": "Multi-chain NFT trading history and collection-level analysis",
-    "input": "NFT collection address, wallet address, or transaction search",
-    "output": "Trading history, collection floor prices, holder analysis, transaction data, offer history",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Viewing a wallet's NFT collection and trade history, and tracing NFT provenance between wallets.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse wallets, collections, and transaction/offer history without an account. Buying/selling needs a connected wallet; viewing does not.",
     "opsec": "passive",
-    "opsecNote": "Public marketplace; wallet connections identify users for OpenSea platform (not blockchain-level deanonymization).",
+    "opsecNote": "Browsing a wallet's public activity is passive — the owner isn't notified. Do NOT connect your own wallet when investigating (that links your identity to OpenSea and can leak your address); just view the public profile/URL.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OpenSea is the largest, established NFT marketplace; on-chain data it surfaces is verifiable against the blockchain, so the trading history is authoritative (usernames/profiles are self-set).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "opensea.io",
+      "OpenSea NFT"
+    ],
+    "tags": [
+      "nft",
+      "crypto",
+      "provenance",
+      "blockchain"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/nft-provenance/opensea.md"
   },
   {
@@ -199983,37 +200009,50 @@
   {
     "id": "indeed",
     "name": "Indeed",
-    "description": "OSINT tool: Indeed.",
-    "url": "http://www.indeed.com",
+    "description": "Use when you have a `name` or `employer-org` and want employment context — company profiles, reviews, and (via public resumes/job posts) work-history leads — returns employer and career-footprint signals.",
+    "url": "https://www.indeed.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Researching an employer (reviews, locations, staff signals) and picking up work-history leads around a person.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search jobs and read company pages/reviews. The searchable resume database is an employer-paid feature; general users get job listings and company research only.",
+    "opsec": "passive",
+    "opsecNote": "Searching listings and company pages is passive. If you view/contact via an Indeed employer account, that account is attributable — use a sock-puppet and stay in read-only public browsing for OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Indeed is a major mainstream job platform; company data and reviews are user/employer-contributed (so reviews are opinion), while job postings come from employers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "indeed.com",
+      "Indeed Jobs"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "indeed-job-search-engine-canada",
       "indeed-job-search-engine-worldwide"
@@ -218978,47 +219017,51 @@
   {
     "id": "base-academic-search-engine",
     "name": "Base Academic Search Engine",
-    "description": "Academic-related search engine focusing on science and research",
+    "description": "Use when you have a `name` and want their scholarly output across repositories worldwide — returns papers, theses, and documents (with authors, affiliations, dates) from 300M+ indexed academic records.",
     "url": "https://www.base-search.net",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Broad academic-footprint search across open-access repositories, theses, and grey literature that single databases miss.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read metadata; most results link to open-access full text. No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public academic index; nothing about your subject is disclosed. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BASE (Bielefeld Academic Search Engine) is operated by Bielefeld University Library — one of the largest, well-established academic search engines, harvesting from vetted repositories.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BASE",
+      "Bielefeld Academic Search Engine",
+      "base-search.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "base",
       "bielefeld-academic-search-engine"
@@ -320840,38 +320883,47 @@
   {
     "id": "github-release-stats",
     "name": "Github Release Stats",
-    "description": "Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.",
+    "description": "Use when you have a GitHub repo (a `username`/org + repo) and want its per-release download counts and release metadata — returns download totals and release info to gauge a project's reach and activity.",
     "url": "https://tooomm.github.io/github-release-stats/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Quickly seeing how many times each release of a GitHub project was downloaded, and basic release metadata.",
+    "selectorsIn": [
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static (GitHub Pages) tool that queries the public GitHub API in your browser. No account for normal use; unauthenticated GitHub API calls are rate-limited (~60/hr).",
+    "opsec": "passive",
+    "opsecNote": "It calls the public GitHub API from your browser for public repo data — nothing about your subject is disclosed to a third party beyond GitHub itself. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small open-source community tool hosted on GitHub Pages; it just formats the official GitHub API's numbers, so the underlying data is authoritative even though the tool is unofficial.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "github-release-stats",
+      "GitHub release download counts"
+    ],
     "tags": [
       "Social Media",
-      "Github"
+      "Github",
+      "release-stats"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/github-release-stats.md"
   },
   {

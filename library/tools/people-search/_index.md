@@ -114,7 +114,7 @@ kind: group-index
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a
 - **`howmanyofme`** (high) — Use when you have a `name` and want to know how common it is in the US — returns an estimated count of people sharing that name, to gauge se
 - **`idealist`** (medium) — OSINT tool: Idealist.
-- **`indeed`** (medium) — OSINT tool: Indeed.
+- **`indeed`** (medium) — Use when you have a `name` or `employer-org` and want employment context — company profiles, reviews, and (via public resumes/job posts) wor
 - **`infospace`** (high) — Use when you have a US `name` or `phone` and want a free white-pages/metasearch lookup — returns address, phone and related directory listin
 - **`infotracer`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want a US background/contact profile — returns addresses, phones, relatives (
 - **`inmate-database-search`** (high) — Use when you have a `name` and want to check whether a person is held in the Indianapolis / Marion County jail — returns booking record, inm
