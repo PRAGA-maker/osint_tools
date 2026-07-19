@@ -80,7 +80,7 @@ kind: group-index
 - **`ask`** (low) — OSINT tool: Ask.
 - **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
 - **`atscan`** (medium) — OSINT tool: ATSCAN.
-- **`australian-bureau-of-statistics`** (medium) — Australias Bureau of Statistics - includes population and census data
+- **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
 - **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
@@ -89,7 +89,7 @@ kind: group-index
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
 - **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
 - **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
-- **`bank-of-canada-unclaimed-balances`** (medium) — Bank of Canada's unclaimed balance search
+- **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
 - **`bank-of-canada`** (medium) — Offering general information about the Bank of Canada, its actions and services
 - **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`base`** (low) — OSINT tool: Base.
@@ -365,7 +365,7 @@ kind: group-index
 - **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
-- **`indeed-job-search-engine-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`indeed-job-search-engine-canada`** (low) — Use when you have an `employer-org` or a person's trade/role in Canada and want employment context — returns job postings that reveal locati
 - **`indeed-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
 - **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe

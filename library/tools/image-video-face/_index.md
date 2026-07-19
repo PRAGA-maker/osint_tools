@@ -177,12 +177,11 @@ kind: group-index
 - **`imvu`** (high) — Use when you have a `username` and want to check IMVU, a large 3D-avatar social network — returns a `social-profile` with avatar images, joi
 - **`in20years-co`** (high) — Use when you have a face photo and want to visualize an aged-up version of the same person — returns an AI age-progressed face image.
 - **`inpe-image-catalog`** (medium) — free satellite images catalogue.
-- **`instruct-pix2pix`** (medium) — Image editing with prompt
 - **`internet-archive-open-source-videos`** (medium) — Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, download
 - **`invid-verification-plugin`** (low) — A toolkit that supports the verification of videos and images.
 - **`ios-gadgethacks-com`** (low) — Use when you need awareness that blacked-out / redacted regions in images can sometimes be recovered — this is a how-to article, not an inte
 - **`ipvm-calculator`** (low) — Tool for simulating camera views (for geolocations).
-- **`iqdb-org`** (medium) — reverse image search specially for anime art
+- **`iqdb-org`** (low) — Use when you have an `image` that looks like anime/manga/game art and want its source — returns matching booru-database entries (source, art
 - **`isgen-ai`** (medium) — Use when you have an image and want to estimate whether it was AI-generated (deepfake/synthetic) — returns a likelihood/verdict, not a rever
 - **`istockphoto`** (medium) — Use when you suspect a profile `image` is a stock/model photo and want to check it against a major royalty-free catalog — returns matching s
 - **`itemfix`** (high) — Use when you have a keyword, event or `username` and want user-uploaded incident/dashcam/CCTV video — returns hashtag-searchable clips and t

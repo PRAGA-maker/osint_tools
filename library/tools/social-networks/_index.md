@@ -412,7 +412,7 @@ kind: group-index
 - **`osgint`** (medium) — Use when you have a GitHub `username` or `email` and want to pivot between them plus profile intel — returns commit-leaked `email`s, linked 
 - **`osi-ig`** (high) — Use when you have an Instagram `username` and want to pull the profile's public data — user ID, name, bio, counts, profile photo, and any em
 - **`osint-and-socmint-tooling`** (high) — Use when you have logged-in sessions on major social platforms and want browser-extension tooling to extract data from them — returns friend
-- **`osint-combine-reddit-post-analyzer`** (medium) — Analyze Reddit posts for OSINT signals.
+- **`osint-combine-reddit-post-analyzer`** (medium) — Use when you have a Reddit post/thread URL (a `social-profile`) and want its comment metadata — returns commenter usernames, timestamps, tim
 - **`osint-combine-tiktok-quick-search`** (high) — Use when you have a `username`, `name`, or keyword/hashtag and want to jump straight into the right TikTok search views — returns social-pro
 - **`osint-github-com-2`** (high) — Use when you are on a TikTok video page and want its embedded metadata, or need a quick Yandex reverse-image jump — returns extracted page m
 - **`osint-steam`** (medium) — Use when you have a Steam `username`/SteamID and want the account's social graph and clues — returns close friends, a probable `geolocation`
