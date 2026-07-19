@@ -129,7 +129,7 @@ kind: group-index
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
 - **`bureau-of-justice-statistics`** (medium) — Use when you need official US crime/justice statistics (arrests, corrections, victimization) for context — an aggregate government data port
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
-- **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
+- **`campaign-finance-reports-and-data`** (medium) — Use when you have a `name` and want US federal political donation records — returns address, employer-org, and occupation from FEC filings.
 - **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
 - **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Use when you have a `name` or `address`/region and want to find a Canadian lawyer or law firm — returns contact details, firm, address and p
@@ -171,7 +171,7 @@ kind: group-index
 - **`core`** (low) — OSINT tool: Core.
 - **`country-of-grey-canada`** (medium) — County of Grey site offering Provincial Offences Act resources
 - **`credit-guru`** (medium) — Listing of credit agencies around the world
-- **`criminology-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`criminology-wiki`** (medium) — Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to 
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
 - **`crt-certificate-search`** (medium) — Use when you have a `domain` and want every TLS certificate ever issued for it — returns subdomains, issuance dates, issuing CA and any `ema
@@ -626,7 +626,7 @@ kind: group-index
 - **`remax-house-listing-search-canada`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`research-gate`** (low) — OSINT tool: Research Gate.
 - **`resellerratings-north-america`** (medium) — Website related to reseller ratings
-- **`restaurant-business-online-united-states`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
 - **`reverse-genie-lookup`** (medium) — Database search by telephone number, person name, email, plate number, address, IP, domain or area code
@@ -760,7 +760,7 @@ kind: group-index
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re
 - **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f
 - **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`united-states-marine-corps-occupation-codes`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`united-states-marine-corps-occupation-codes`** (medium) — Use when you have a USMC MOS `document-id` code and want to decode the Marine's job specialty — returns the occupation/role behind the code.
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
 - **`urvx-com`** (low) — File storage search engine based by Google CSE
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service

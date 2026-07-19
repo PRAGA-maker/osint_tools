@@ -113,7 +113,7 @@ kind: group-index
 - **`fortune-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
-- **`forum-officer-com`** (medium) — OSINT tool: forum.officer.com.
+- **`forum-officer-com`** (medium) — Use when you have a `username` and want to check for a matching law-enforcement community profile — returns social-profile, posts, and locat
 - **`forums-digitalspy-com`** (medium) — OSINT tool: forums.digitalspy.com.
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
 - **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social

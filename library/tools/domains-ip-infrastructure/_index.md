@@ -538,7 +538,7 @@ kind: group-index
 - **`whoisrequest`** (low) — OSINT tool: WhoIsRequest.
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
-- **`wintelguy-com`** (medium) — OSINT tool: wintelguy.com.
+- **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
 - **`woorank-review-and-seo`** (medium) — Search for information and statistics about any online website
 - **`wordpress`** (medium) — Website creation and hosting site
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o

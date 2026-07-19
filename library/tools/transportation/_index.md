@@ -85,7 +85,7 @@ kind: group-index
 - **`flightconnections`** (low) — OSINT tool: FlightConnections.
 - **`flightwise`** (low) — OSINT tool: Flightwise.
 - **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.
-- **`free-car-license-plate-lookup`** (medium) — OSINT tool: Free Car License Plate Lookup.
+- **`free-car-license-plate-lookup`** (medium) — Use when you have a `vehicle-plate` (plus state) and want to pull the linked vehicle profile and VIN — returns vin plus make/model/title sig
 - **`free-license-plate-search-check-any-license-plate-free`** (medium) — OSINT tool: FREE License Plate Search | Check Any License Plate FREE.
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
 - **`freecarcheck-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want free vehicle history — returns make/model, MOT & tax status, DVLA history, stolen/plate-chan

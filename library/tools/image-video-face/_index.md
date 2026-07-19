@@ -318,7 +318,7 @@ kind: group-index
 - **`stolen-camera-finder`** (high) — Use when you have a photo with EXIF and want other photos taken by the same camera — returns other `image`s and the `social-profile`s/pages 
 - **`stolencamerafinder-com`** (high) — Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial numb
 - **`stolencamerafinder`** (high) — Use when you have an `image` with a camera serial number in its EXIF and want other photos from the same physical camera — returns other onl
-- **`street-clip`** (medium) — AI, which determines from a photo the likelihood that it was taken in a particular country. (don't forget to change the list of countries fo
+- **`street-clip`** (medium) — Use when you have an `image` and want a zero-shot guess of which country/region it was taken in — returns a ranked geolocation likelihood.
 - **`subtitlevideo`** (medium) — Extract subtitles from video
 - **`svg-editor`** (high) — Use when you have an SVG `image` and want to inspect, edit, annotate or redact it in-browser — returns a modified image/vector, useful for m
 - **`tactiq-io`** (high) — Use when you have a YouTube video URL (`social-profile` / `metadata`) and want its full spoken transcript to mine for names, places and date
