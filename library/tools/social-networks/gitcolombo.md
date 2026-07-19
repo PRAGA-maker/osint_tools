@@ -38,6 +38,12 @@ relatedTools:
 - marple
 - osint-namecheckers-list
 - mailto-analyzer
+- 1c-database-converter
+- awesome-osint-mcp-servers
+- counter-osint-guide-for-russians
+- fravia-soxoj
+- maigret-via-socid-extractor-soxoj-ecosystem
+- username-generation-guide
 aliases:
 - gitcolombo
 - soxoj gitcolombo

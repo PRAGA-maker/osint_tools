@@ -119,7 +119,7 @@ kind: group-index
 - **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
 - **`blurtit`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
 - **`bookfinder-search-engine`** (medium) — Website that offers book search services by book title, author, or ISBN
-- **`bookmarks`** (medium) — OSINT tool: Bookmarks.
+- **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
 - **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
@@ -261,7 +261,7 @@ kind: group-index
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Movie listings website
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
-- **`find-sort-codes`** (medium) — UK bank sort code search tool
+- **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
 - **`findhow`** (medium) — The how-to directory
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
@@ -405,7 +405,7 @@ kind: group-index
 - **`jubii-search-engine-denmark`** (medium) — Denmark based web search engine covering regional results
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
-- **`justice-directory`** (medium) — Exhaustive list of law enforcement agency websites
+- **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
 - **`kartoo-visual-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
@@ -814,7 +814,7 @@ kind: group-index
 - **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikibooks`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
 - **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
-- **`wikicrimes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (medium) — Website that provides wiki hosting services
 - **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 
 - **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites

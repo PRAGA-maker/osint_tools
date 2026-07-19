@@ -34,7 +34,7 @@ kind: group-index
 - **`baidu-maps`** (medium) — Use when a person, address, or photo points to mainland China and you need the local-quality map, POIs, satellite, and street-level Panorama
 - **`batchgeo`** (medium) — Use when you have a spreadsheet/list of addresses and want to drop them onto an interactive, shareable map fast — no GIS account or setup.
 - **`baton-rouge-traffic-cams`** (low) — OSINT tool: Baton Rouge Traffic Cams.
-- **`bellingcat-openstreetmap-search`** (medium) — A user interface to search OpenStreetMap data for features in proximity to each other.
+- **`bellingcat-openstreetmap-search`** (high) — Use when you have a `physical-description` of a scene (several nearby feature types) and want candidate `geolocation`s where they co-occur —
 - **`bfro-bigfoot-sightings-database`** (medium) — Use when you have a `geolocation` (US state/county or Canadian province) and want dated eyewitness reports pinned to remote areas — returns 
 - **`bigfoot-and-ufo-map`** (medium) — Bigfoot, UFO and other sightings around USA and Europe
 - **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Bigfoot sightings reports density around the USA
@@ -53,7 +53,7 @@ kind: group-index
 - **`city-webcams-com`** (low) — OSINT tool: city-webcams.com.
 - **`collection-of-cadastral-maps`** (medium) — 41 countries
 - **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color
-- **`copernix`** (medium) — Worldwide map of geolocated Wikipedia articles. It's possible to enter the name of a locality to see articles about local streets or attract
+- **`copernix`** (low) — Use when you have a place name or `geolocation` and want to see every Wikipedia article geotagged to that area on a map — returns local `geo
 - **`corona`** (low) — Use when you need declassified 1960s–70s CORONA spy-satellite imagery of a location for historical landscape analysis — returns georeference
 - **`crimemapping-com`** (medium) — Use when you have a `geolocation`/address and want recent reported crime around it — an interactive map of incidents from participating US l
 - **`crisisgroup`** (medium) — OSINT tool: Crisisgroup.

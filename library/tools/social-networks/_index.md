@@ -542,7 +542,7 @@ kind: group-index
 - **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
 - **`snapintel`** (medium) — Use when you have a Snapchat `username` and want that account's public content — returns stories, spotlights, lenses, bitmoji and an upload-
-- **`snapmap-archiver`** (medium) — OSINT tool: snapmap-archiver.
+- **`snapmap-archiver`** (medium) — Use when you have a `geolocation` (or a Snap Map URL) and want to bulk-download all public Snapchat Snap Map posts from that spot — returns 
 - **`snapscraper`** (high) — Use when you have a `geolocation` (lat/long) and want public Snapchat media there — downloads Snap Map "Our Story" videos and their metadata
 - **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram
 - **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
@@ -674,7 +674,7 @@ kind: group-index
 - **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
 - **`twish`** (low) — Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorisi
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
-- **`twitch-followage-tool`** (medium) — Enter the Twitch username and get a complete list of channels he/she follows (with start dates)
+- **`twitch-followage-tool`** (medium) — Use when you have a Twitch `username` and want the full list of channels that account follows, with follow dates — returns `social-profile` 
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.
 - **`twitch-insights`** (medium) — Account stats; Game ranking; Extensions stats; List of all Twitch bot; Check user status by nickname or ID; List of Twitch team (history bef
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
@@ -697,7 +697,7 @@ kind: group-index
 - **`twitter-control-panel`** (low) — Use when you review X/Twitter feeds during investigations and want to strip the algorithmic clutter — returns a cleaner, chronological view 
 - **`twitter-developer-platform`** (medium) — OSINT tool: Twitter Developer Platform.
 - **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return
-- **`twitter-mentions-map`** (medium) — A world map that shows the locations of users who mention you in their tweets.
+- **`twitter-mentions-map`** (low) — Use when you have access to a Twitter/X account and want a world map of where the users mentioning it are located — returns `geolocation` cl
 - **`twitter-money-calculator`** (medium) — Use when you have a Twitter/X `username` and want a quick read of its follower count and engagement metrics — returns account activity/engag
 - **`twitter-monitoring`** (high) — Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns soc
 - **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).

@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - pubmed
 - openi-nlm-nih-gov
+- pubmed-national-center-for-biotechnology-information
 aliases:
 - NCBI
 - Entrez

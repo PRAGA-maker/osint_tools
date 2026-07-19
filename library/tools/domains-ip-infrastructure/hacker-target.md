@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - hacker-target-reverse-dns
 - hackertarget-com
+- online-tool-to-extract-links-from-any-web-page
 aliases:
 - hackertarget.com
 tags:

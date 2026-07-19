@@ -174,7 +174,7 @@ kind: group-index
 - **`proofy`** (medium) — Use when you have an email address and need to confirm it is real/deliverable before investing in it — returns a validity/deliverability ver
 - **`proton-me`** (low) — Use when an email ends in @proton.me/@protonmail.com and you need to understand the provider — an encrypted Swiss mail host that yields almo
 - **`protosint`** (high) — Use when you have a ProtonMail `email` (or a Proton-related `ip-address`) and want to confirm the account exists and pull its public PGP key
-- **`proxynova-comb`** (medium) — Free lookup against the COMB aggregated-breach dataset.
+- **`proxynova-comb`** (medium) — Use when you have an `email`, `username`, or `password` and want to check the COMB aggregated-breach dataset — returns leaked email:password
 - **`public-email-records`** (low) — Use when you want to try a reverse-email lookup for an owner name/location — an obscure aggregator site that typically funnels to a paid peo
 - **`readnotify-com-2`** (medium) — Use when you want to covertly track whether a sent document/email was opened and capture the reader's IP/geolocation — ReadNotify's tracking
 - **`readnotify-com`** (medium) — Use when you need to covertly confirm a sent email was opened and capture the reader's IP/geolocation — ReadNotify's tracking-pixel ("covert
