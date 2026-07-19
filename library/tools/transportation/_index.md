@@ -145,7 +145,7 @@ kind: group-index
 - **`oscar-job-function-codes-united-kingdom`** (medium) — Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a p
 - **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
 - **`panjiva-cargo`** (low) — OSINT tool: Panjiva (Cargo).
-- **`partial-number-plate-search`** (medium) — OSINT tool: Partial Number Plate Search.
+- **`partial-number-plate-search`** (medium) — Use when you have only part of a UK `vehicle-plate` (from a witness or dashcam) and want to shortlist the full plate — narrow candidates wit
 - **`passenger-airlines-wiki`** (low) — OSINT tool: Passenger Airlines Wiki.
 - **`plane-finder`** (low) — OSINT tool: Plane Finder.
 - **`planefinder-army-live-flight-tracker`** (low) — OSINT tool: Planefinder Army Live Flight Tracker.

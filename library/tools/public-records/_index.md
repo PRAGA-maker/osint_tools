@@ -860,7 +860,7 @@ kind: group-index
 - **`secret-surveillance-catalogue`** (medium) — Use when you have a `device-id` / equipment name (an IMSI-catcher, cell-site simulator, or surveillance box) and want to understand its capa
 - **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
-- **`security-licence-status-verification`** (medium) — OSINT tool: Security Licence Status Verification.
+- **`security-licence-status-verification`** (medium) — Use when you have a `name`, business name or licence number and want to confirm a British Columbia security-worker/business licence — return
 - **`seethroughny-pensions`** (medium) — Use when you have a `name` of a New York public-sector retiree and want their pension record — returns employer-org, retirement date and ann
 - **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.

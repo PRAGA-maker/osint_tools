@@ -645,7 +645,6 @@ kind: group-index
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
 - **`salary-and-wage-occupation-codes-australia`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
-- **`savvysearch`** (medium) — Meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
 - **`scala`** (medium) — Open source code search engine
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedirect`** (low) — OSINT tool: ScienceDirect.
@@ -793,7 +792,7 @@ kind: group-index
 - **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
 - **`webcrawler-meta-search`** (low) — Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a na
-- **`webdork`** (medium) — OSINT tool: webdork.
+- **`webdork`** (medium) — Use when you have a `domain` or `employer-org` and want to automate Google-dorking for exposed data — a Python CLI that runs dork queries to
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`webkams`** (medium) — Search live webcams around the world
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.

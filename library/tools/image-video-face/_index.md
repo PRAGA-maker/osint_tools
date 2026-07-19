@@ -347,7 +347,6 @@ kind: group-index
 - **`usespottr-com`** (high) — Use when you have a long `image`/video and want to find a person, vehicle plate or scene inside it — returns matched moments, incl. OCR'd pl
 - **`vaughnlivetv`** (high) — Use when you have a `username`/handle or need to browse live IRL/streaming video and want to find a person's live channel and on-camera appe
 - **`vdownloader`** (high) — Use when you have a video URL (a subject's `social-profile`/post) and want to preserve it offline for analysis — a desktop downloader that s
-- **`veoh`** (medium) — OSINT tool: Veoh.
 - **`verexif`** (high) — Use when you have an `image` and want its EXIF metadata (or to strip it) — returns GPS `geolocation`, camera details and other `metadata-exi
 - **`vevo`** (high) — Use when a subject is a recording artist and you have their stage/artist `name` and want their official music-video catalogue and verified c
 - **`video-stabilization-methods`** (medium) — OSINT tool: Video Stabilization Methods.

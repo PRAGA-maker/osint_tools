@@ -781,7 +781,7 @@ kind: group-index
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
 - **`youtube-word-search`** (medium) — Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
-- **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)
+- **`ytcs`** (medium) — Use when you have a `username` or `name` and a YouTube video and want to find their comments — a browser extension that keyword-searches a v
 - **`ytgrep`** (medium) — Use when you have one or more YouTube video URLs and want to grep their captions for a word/phrase — returns matching subtitle lines with ti
 - **`zalo-me`** (high) — Use when you have a Vietnamese `phone` number or `name` and want to check for a Zalo messaging account and its public profile — returns a so
 - **`zeoob-com`** (high) — Use when you have a screenshot of a Snapchat/Instagram/WhatsApp chat or post and want to judge whether it could be fabricated — this is a fa

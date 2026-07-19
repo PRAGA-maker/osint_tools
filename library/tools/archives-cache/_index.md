@@ -35,7 +35,7 @@ kind: group-index
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
 - **`changedetection`** (low) — OSINT tool: ChangeDetection.
 - **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.
-- **`cybdetective-com`** (medium) — OSINT tool: cybdetective.com.
+- **`cybdetective-com`** (medium) — Use when you have a `domain`/URL and want a fast year-by-year view of its history — pulls one Wayback Machine snapshot per year for side-by-
 - **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 
 - **`deltafeed`** (low) — OSINT tool: Deltafeed.
 - **`diggreader`** (low) — OSINT tool: DiggReader.
@@ -71,7 +71,6 @@ kind: group-index
 - **`national-center-for-biotechnology`** (medium) — Use when you have a researcher `name` or affiliation and want their publications, datasets and co-authors across 30+ biomedical databases — 
 - **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
 - **`newsblur`** (low) — OSINT tool: Newsblur.
-- **`newspaper-navigator`** (medium) — Keyword search of a database of 1.5 million newspaper clippings with photos from the Library of Congress database. It's possible to filter r
 - **`omeareader`** (low) — OSINT tool: OmeaReader.
 - **`onwebchange`** (low) — OSINT tool: OnWebChange.
 - **`osint2h22v-substack-com`** (medium) — OSINT tool: osint2h22v.substack.com.
