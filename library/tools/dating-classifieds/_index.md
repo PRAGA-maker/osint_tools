@@ -109,9 +109,9 @@ kind: group-index
 - **`totalcraigsearch`** (high) — Use when you want to search Craigslist across many cities/states at once for a subject's listings, alias, or distinctive item — without chec
 - **`trademe-new-zealand`** (medium) — Use when you have a `username`/`name` tied to New Zealand and want their marketplace footprint — returns a member's listings, feedback, join
 - **`tradingpost-australia`** (medium) — Classified advertisements-related website that provides regional services
-- **`transsearcher-com`** (medium) — OSINT tool: transsearcher.com.
+- **`transsearcher-com`** (medium) — Use when you have a `username` or a location and want matching adult-creator (OnlyFans) profiles — returns creator `social-profile` links fi
 - **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
-- **`used-ca`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
+- **`used-ca`** (medium) — Use when you have a `name`, `username`, `phone` or a BC/Canadian location and want a subject's classified ads — returns seller listings with
 - **`vivastreet-classified-ads-united-kingdom`** (medium) — Use when you have a `phone`, `name`, or region and want to find a subject's UK classified ads (jobs, personals, services, vehicles for sale)
 - **`x-ray-contact`** (medium) — OSINT tool: x-ray.contact.
 - **`yourclassifieds-ca-canada`** (medium) — Classified advertisements-related website that provides regional services

@@ -270,7 +270,6 @@ kind: group-index
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
-- **`foundation-finder`** (medium) — Foundation Centers online foundation directory
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
 - **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
@@ -746,7 +745,7 @@ kind: group-index
 - **`toddington-online-research-cheat-sheets`** (medium) — Toddington International's free cheat sheets for online research.
 - **`topix`** (low) — OSINT tool: Topix.
 - **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
-- **`topuniversities`** (low) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
+- **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — torrents search engine
 - **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
 - **`totalbeauty`** (medium) — Website related to makeup, skincare, and other beauty related reviews

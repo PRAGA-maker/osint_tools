@@ -501,7 +501,6 @@ kind: group-index
 - **`rumble-com`** (high) — Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel p
 - **`savettok`** (medium) — Download TikTok videos (incl. without watermark) for evidence/frame analysis.
 - **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci
-- **`scoutzen`** (medium) — search twitter lists by keywords
 - **`search-for-a-twitch-channel`** (low) — OSINT tool: Search for a Twitch channel.
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
 - **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
@@ -533,7 +532,6 @@ kind: group-index
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — Use when you have a Snapchat `username` and want to confirm the account exists — returns a Snapcode image when the handle is valid.
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
-- **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
 - **`snapintel`** (medium) — Use when you have a Snapchat `username` and want that account's public content — returns stories, spotlights, lenses, bitmoji and an upload-
 - **`snapmap-archiver`** (medium) — Use when you have a `geolocation` (or a Snap Map URL) and want to bulk-download all public Snapchat Snap Map posts from that spot — returns 
@@ -691,7 +689,6 @@ kind: group-index
 - **`twitter-mentions-map`** (low) — Use when you have access to a Twitter/X account and want a world map of where the users mentioning it are located — returns `geolocation` cl
 - **`twitter-money-calculator`** (medium) — Use when you have a Twitter/X `username` and want a quick read of its follower count and engagement metrics — returns account activity/engag
 - **`twitter-monitoring`** (high) — Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns soc
-- **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).
 - **`twitter-photo-search`** (high) — Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — ret
 - **`twitter-scraper`** (medium) — Use when you have a Twitter/X `username` and want their full tweet history at scale — returns tweets, replies, retweets and thread data as s
 - **`twitter-search-engine`** (high) — Use when you have a `name`, `username`, or keyword and want to search Twitter/X content and profiles through a Google Custom Search Engine —

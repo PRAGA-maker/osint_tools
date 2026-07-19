@@ -23,7 +23,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Operated by QS Quacquarelli Symonds, a well-known higher-education rankings publisher. Rankings are its own methodology/opinion; institution existence and location are reliable.
-missingPersonsRelevance: low
+missingPersonsRelevance: medium
 coverage:
 - global
 auth: none
@@ -48,7 +48,7 @@ enrichment: full
 > QS's public rankings and institution directory — a quick reference to confirm a named university exists, where it is, and how it ranks.
 
 ## When to use
-A subject or document claims a degree or job at a specific university and you want a fast, neutral check that the institution is real, correctly named, and located where claimed. This is a corroboration/reference tool, not an investigative lookup — it returns nothing about individuals. Low missing-persons relevance: use it only to validate an `employer-org` string (an educational institution) that appears elsewhere in your case.
+A subject or document claims a degree or job at a specific university and you want a fast, neutral check that the institution is real, correctly named, and located where claimed. This is a corroboration/reference tool, not an investigative lookup — it returns nothing about individuals. Use it only to validate an `employer-org` string (an educational institution) that appears elsewhere in your case.
 
 ## How to use it (`bestInteractionPattern`: web-manual)
 1. Open https://www.topuniversities.com/university-rankings .
@@ -83,7 +83,7 @@ A subject or document claims a degree or job at a specific university and you wa
 | selectorsIn → selectorsOut | employer-org, name → employer-org, address |
 | pricing / cost | free |
 | trust | unverified |
-| MP relevance | low |
+| MP relevance | medium |
 | interaction | web-manual |
 | opsec | passive |
 | human-in-loop | no |

@@ -62,7 +62,7 @@ kind: group-index
 - **`cl1p`** (medium) — OSINT tool: cl1p.
 - **`cnet`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`coffeemetsbagel`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
 - **`collegeblender`** (medium) — University lifestyle networking website
 - **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (medium) — OSINT tool: community.screwfix.com.
@@ -227,7 +227,7 @@ kind: group-index
 - **`ning`** (low) — Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member
 - **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile
 - **`nopaste-net`** (medium) — OSINT tool: nopaste.net.
-- **`nopaste`** (medium) — OSINT tool: NoPaste.
+- **`nopaste`** (medium) — Use when you have found a `nopaste.boris.sh` link in a subject's history and want to read its contents — decodes the paste that is embedded 
 - **`notes`** (medium) — OSINT tool: Notes.
 - **`nova-czech-republick`** (medium) — Online articles and news related to business, travel, sports, entertainment, and more
 - **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
@@ -251,7 +251,7 @@ kind: group-index
 - **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
-- **`pastesite-net`** (medium) — OSINT tool: PasteSite.Net.
+- **`pastesite-net`** (medium) — Use when you have a `username`, `email` or keyword and want to check a pastebin for dumped text — browse/search public pastes that may conta
 - **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`pc-magazine`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
