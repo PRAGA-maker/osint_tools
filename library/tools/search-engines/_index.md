@@ -106,7 +106,7 @@ kind: group-index
 - **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
 - **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
-- **`bing-advanced-search-options`** (medium) — Website showing Bings reference list of advanced search engine operators
+- **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
 - **`bing-news`** (low) — OSINT tool: Bing News.
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
 - **`bizjournals-business-news-search`** (medium) — Business-related news from over 4 million news articles
@@ -329,7 +329,6 @@ kind: group-index
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
 - **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
 - **`googler`** (low) — command line google search tool
-- **`gooru-search-engine-poland`** (medium) — Poland based web search engine covering regional results
 - **`goosh-org`** (low) — online google search command line tool
 - **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
@@ -747,7 +746,7 @@ kind: group-index
 - **`toddington-online-research-cheat-sheets`** (medium) — Toddington International's free cheat sheets for online research.
 - **`topix`** (low) — OSINT tool: Topix.
 - **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
-- **`topuniversities`** (medium) — Website related to educational facility ratings
+- **`topuniversities`** (low) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — torrents search engine
 - **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
 - **`totalbeauty`** (medium) — Website related to makeup, skincare, and other beauty related reviews

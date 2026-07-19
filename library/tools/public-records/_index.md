@@ -666,7 +666,7 @@ kind: group-index
 - **`nmbi-ie`** (high) — Use when you have a `name` (and ideally a registration number) for a nurse or midwife in Ireland and want to confirm their professional regi
 - **`nmc-org-in`** (high) — Use when you have a doctor's `name` (or registration number) in India and want to verify their medical registration — returns registration n
 - **`nmc-uk-org`** (high) — Use when you have a `name` claimed to be a UK nurse or midwife and want to verify their registration — returns registration status, PIN, qua
-- **`nonprofit-explorer`** (medium) — OSINT tool: Nonprofit Explorer.
+- **`nonprofit-explorer`** (medium) — Use when you have an `employer-org` or a person's `name` and want their US nonprofit ties and pay — returns officer/director names, compensa
 - **`noodle-educational-faculty-search-united-states`** (medium) — Academic-related search engine focusing on educational facilities
 - **`north-carolina-resident-database`** (high) — Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors 
 - **`north-carolina`** (high) — Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender
@@ -936,7 +936,7 @@ kind: group-index
 - **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re
 - **`the-data-and-story-library`** (low) — OSINT tool: The Data and Story Library.
 - **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
-- **`the-nypd-files`** (medium) — OSINT tool: The NYPD Files.
+- **`the-nypd-files`** (medium) — Use when you have a New York City police officer `name` (or badge number) and want their civilian-complaint history — returns misconduct rec
 - **`the-pegasus-project-occrp`** (medium) — Use when you have a `name` and want to know if they appear among Pegasus spyware targets — returns the "Who's on the List" investigative fin
 - **`the-philadelphia-police-misconduct-database`** (medium) — OSINT tool: The Philadelphia Police Misconduct Database.
 - **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p

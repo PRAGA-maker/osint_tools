@@ -25500,41 +25500,58 @@
   {
     "id": "christian-mingle",
     "name": "Christian Mingle",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
+    "description": "Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile` with photos and self-described details.",
     "url": "https://www.christianmingle.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a subject maintains a profile on this faith-based dating platform and reading what they disclose there.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse limited matches; a paid subscription is required to message and to unlock full search/visibility.",
+    "opsec": "active",
+    "opsecNote": "Searching requires a member account, and dating platforms surface \"who viewed you\" / mutual-interest signals, so a logged-in look can alert the target. Use a sock-puppet account with a neutral persona; never browse from a real profile, and do not initiate contact.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A mainstream commercial dating brand (Spark Networks). The platform is genuine, but profiles are self-created, pseudonymous and often embellished, so identity and claims need corroboration.",
     "missingPersonsRelevance": "medium",
     "coverage": [
+      "us",
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "ChristianMingle",
+      "christianmingle.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
+      "dating",
       "online-communities-blogs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/christian-mingle.md"
   },
   {
@@ -28211,13 +28228,13 @@
   {
     "id": "forums-moneysavingexpert-com",
     "name": "forums.moneysavingexpert.com",
-    "description": "OSINT tool: forums.moneysavingexpert.com.",
+    "description": "Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social-profile` plus posting history.",
     "url": "https://forums.moneysavingexpert.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a UK-flavoured handle to a public forum profile and its self-disclosed post history on money and life topics.",
     "selectorsIn": [
       "username"
     ],
@@ -28225,29 +28242,36 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; a free account is only needed to post, not to view profiles or posts.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public profiles and posts is read-only and does not notify the member. Do NOT register or send a private message from a real account — use a sock puppet if you must log in. Members frequently disclose location, employer, debts and family events in posts, so treat the content as sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-running UK consumer forum (part of MoneySavingExpert / Moneysupermarket). Content is user-generated and unverified, but profiles and post timestamps are authentic.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MoneySavingExpert forum",
+      "MSE forum"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/forums-moneysavingexpert-com.md"
   },
   {
@@ -47135,41 +47159,56 @@
   {
     "id": "freeads-classified-ads-united-kingdom",
     "name": "Freeads Classified Ads (United Kingdom)",
-    "description": "Classified advertisements-related website that provides regional services",
-    "url": "http://www.freeads.co.uk",
+    "description": "Use when you have a `name`, `username`, `phone` or UK location and want a subject's classified listings — returns seller ads with contact details, photos and area.",
+    "url": "https://www.freeads.co.uk",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a UK subject's buy/sell/pet/vehicle classified ads and the seller contact info and location they attach to them.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search all ads; posting is free with optional paid upgrades. No account needed to view listings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching ads is read-only and does not notify the seller. Contacting a seller (reply form/phone) would expose you — do that only from a sock puppet, and never reveal your interest in the person. Ads often expose a real phone number and town.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent UK classifieds platform (Freeads Classifieds Ltd, est. 2002). Listings are user-posted and unverified, but seller-supplied contact details and locations are genuine leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Freeads",
+      "freeads.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "uk"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/freeads-classified-ads-united-kingdom.md"
   },
   {
@@ -199797,47 +199836,6 @@
     "_file": "library/tools/people-search/hey-press.md"
   },
   {
-    "id": "hiretual",
-    "name": "Hiretual",
-    "description": "OSINT tool: Hiretual.",
-    "url": "https://hiretual.com | https://chrome.google.com/webstore/detail/hiretual-10x-faster- talen/jeablngoapekimaeoeclgcefdcpjhjcg",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professional"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/hiretual.md"
-  },
-  {
     "id": "hitta-se-2",
     "name": "Hitta.se",
     "description": "Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, age and household `associate`s.",
@@ -249745,35 +249743,41 @@
   {
     "id": "nonprofit-explorer",
     "name": "Nonprofit Explorer",
-    "description": "OSINT tool: Nonprofit Explorer.",
+    "description": "Use when you have an `employer-org` or a person's `name` and want their US nonprofit ties and pay — returns officer/director names, compensation and Form 990 filings.",
     "url": "https://projects.propublica.org/nonprofits/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding a US nonprofit's officers, directors and their reported compensation, and full-text-searching Form 990 filings for a person's name.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open; no account required for search or to view/download Form 990 PDFs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only public IRS data via a ProPublica web app. No login, no query attribution. Names and pay of real individuals appear; treat as sensitive though it is already public record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Built by ProPublica directly from IRS Form 990 filings and audit records; sourcing and coverage windows are documented. Reputable newsroom.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "527-explorer",
       "coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k",
@@ -249783,6 +249787,18 @@
       "police-protest-videos",
       "the-nypd-files"
     ],
+    "aliases": [
+      "ProPublica Nonprofit Explorer",
+      "Form 990 search"
+    ],
+    "tags": [
+      "public-records",
+      "nonprofits",
+      "us"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nonprofit-explorer.md"
   },
   {
@@ -263955,35 +263971,40 @@
   {
     "id": "the-nypd-files",
     "name": "The NYPD Files",
-    "description": "OSINT tool: The NYPD Files.",
+    "description": "Use when you have a New York City police officer `name` (or badge number) and want their civilian-complaint history — returns misconduct records tied to that `employer-org` role.",
     "url": "https://projects.propublica.org/nypd-ccrb/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up an NYPD officer's substantiated civilian-complaint record from the CCRB (1985–2020).",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open; no account required. The dataset is frozen — it stopped being updated in July 2020.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only ProPublica web app. No login, no query attribution to your subject. Records name real officers; handle as sensitive personal data and corroborate before drawing conclusions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Published by ProPublica from official CCRB data obtained after the repeal of NY Civil Rights Law 50-a. Sourcing is documented; ProPublica is a reputable investigative newsroom.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "527-explorer",
       "coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k",
@@ -263993,6 +264014,18 @@
       "parler-capitol-videos",
       "police-protest-videos"
     ],
+    "aliases": [
+      "NYPD CCRB database",
+      "ProPublica NYPD Files"
+    ],
+    "tags": [
+      "public-records",
+      "police",
+      "us"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/the-nypd-files.md"
   },
   {
@@ -269154,31 +269187,41 @@
   {
     "id": "xing",
     "name": "XING",
-    "description": "Professional background research for German and European contacts",
+    "description": "Use when you have a `name` or `employer-org` in the German-speaking market and want their professional profile — returns employment history, job title and connections (`social-profile`).",
     "url": "https://www.xing.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "employee-profiles-and-resumes"
     ],
-    "bestFor": "Professional background research for German and European contacts",
-    "input": "Person name or company name",
-    "output": "Professional profiles, employment history, company pages, and connections",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Professional background research on people and companies in the DACH region (Germany, Austria, Switzerland), where XING rivals LinkedIn.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account lets you search and view basic profiles; a paid Premium tier unlocks deeper search filters and full visitor/contact features.",
     "opsec": "active",
-    "opsecNote": "Profile views may be visible to the target; use private browsing to reduce exposure.",
+    "opsecNote": "XING shows members \"who viewed your profile\", so a logged-in view can expose your account to the target. Always use a sock-puppet XING account, and prefer public/logged-out or cached views for read-only checks. Never view from an attributable personal account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established DACH professional network (owned by New Work SE). Profiles are self-reported by members, so employment claims are unverified, but the platform itself is authentic and widely used.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "de",
+      "at",
+      "ch"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
@@ -269186,11 +269229,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "xing.com",
+      "New Work XING"
+    ],
+    "tags": [
+      "professional",
+      "employee-profiles",
+      "dach"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/employee-profiles-and-resumes/xing.md"
   },
   {
@@ -273999,24 +274049,34 @@
   {
     "id": "bing-advanced-search-options",
     "name": "Bing Advanced Search Options",
-    "description": "Website showing Bings reference list of advanced search engine operators",
-    "url": "http://help.bing.microsoft.com/#apex/18/en-us/10002/0",
+    "description": "Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, contains:, ip:) for sharper OSINT dorking.",
+    "url": "https://help.bing.microsoft.com/#apex/bing/en-us/10002/0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Learning Bing's operator syntax so you can build targeted dorks that surface results Google filters out.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference documentation from Microsoft; Bing search itself is free and needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the operator reference is passive. Running the resulting queries touches Microsoft/Bing (which logs searches) but does not contact your target directly; use a sock-puppet browser/IP for sensitive dorks and avoid clicking through to attacker-controlled result pages from a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft help documentation for the Bing search engine; the operator list is authoritative even if some operators are quietly deprecated over time.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -274025,15 +274085,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bing search operators",
+      "Bing dorking reference"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "dorking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bing-advanced-search-options.md"
   },
   {
@@ -284779,46 +284843,6 @@
       "ddgr"
     ],
     "_file": "library/tools/search-engines/googler.md"
-  },
-  {
-    "id": "gooru-search-engine-poland",
-    "name": "Gooru Search Engine (Poland)",
-    "description": "Poland based web search engine covering regional results",
-    "url": "http://www.gooru.pl",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/gooru-search-engine-poland.md"
   },
   {
     "id": "goosh-org",
@@ -304372,26 +304396,33 @@
   },
   {
     "id": "topuniversities",
-    "name": "Topuniversities",
-    "description": "Website related to educational facility ratings",
-    "url": "http://www.topuniversities.com/university-rankings",
+    "name": "TopUniversities (QS World University Rankings)",
+    "description": "Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institution profile, location and standing.",
+    "url": "https://www.topuniversities.com/university-rankings",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Sanity-checking a claimed university/alma mater against QS's global rankings and institution profiles.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse rankings and institution profiles; a free account is only needed for the applicant tools, not for lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only reference browsing on a public education site; nothing is attributed to your subject. Purely a corroboration aid, not a people database.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "Operated by QS Quacquarelli Symonds, a well-known higher-education rankings publisher. Rankings are its own methodology/opinion; institution existence and location are reliable.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -304399,15 +304430,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "QS World University Rankings",
+      "topuniversities.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "education",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/topuniversities.md"
   },
   {

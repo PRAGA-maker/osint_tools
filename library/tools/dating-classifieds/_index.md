@@ -43,7 +43,7 @@ kind: group-index
 - **`findr-fans`** (low) — OSINT tool: Findr.fans.
 - **`francais-a-londres-org-french-classifieds`** (low) — Use when investigating a French-speaking subject in London/the UK — search this Franco-British community site's classifieds and listings by 
 - **`free-classified-website-listing`** (medium) — Classified advertisements-related website that lists at least 1000 websites worldwide
-- **`freeads-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`freeads-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `username`, `phone` or UK location and want a subject's classified listings — returns seller ads with contact de
 - **`freefans-de`** (low) — German OnlyFans directory.
 - **`freefans-nl`** (low) — Dutch OnlyFans directory.
 - **`full-dp-com`** (medium) — OSINT tool: full-dp.com.

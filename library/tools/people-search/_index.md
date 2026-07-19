@@ -110,7 +110,6 @@ kind: group-index
 - **`haro`** (medium) — OSINT tool: HARO.
 - **`hauziz`** (high) — Use when you have an `address` (or a `name`) and want the residents/owner tied to a US property plus pivot links into paid brokers — returns
 - **`hey-press`** (high) — Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and
-- **`hiretual`** (medium) — OSINT tool: Hiretual.
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a
 - **`howmanyofme`** (high) — Use when you have a `name` and want to know how common it is in the US — returns an estimated count of people sharing that name, to gauge se
 - **`idealist`** (medium) — OSINT tool: Idealist.

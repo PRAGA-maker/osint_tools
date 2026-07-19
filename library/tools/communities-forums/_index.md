@@ -56,7 +56,7 @@ kind: group-index
 - **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
 - **`charitable-impact`** (medium) — Network of charities in Canada
 - **`chemistry-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`christian-mingle`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`christian-mingle`** (medium) — Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
 - **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness
 - **`cl1p`** (medium) — OSINT tool: cl1p.
@@ -116,7 +116,7 @@ kind: group-index
 - **`forum-officer-com`** (medium) — OSINT tool: forum.officer.com.
 - **`forums-digitalspy-com`** (medium) — OSINT tool: forums.digitalspy.com.
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
-- **`forums-moneysavingexpert-com`** (medium) — OSINT tool: forums.moneysavingexpert.com.
+- **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social
 - **`forums-overclockers-co-uk`** (medium) — OSINT tool: forums.overclockers.co.uk.
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
