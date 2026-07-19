@@ -138,7 +138,7 @@ kind: group-index
 - **`canadian-copyrights-database`** (medium) — Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and da
 - **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
 - **`canadian-industrial-designs-database`** (medium) — Use when you have a name or company and want registered Canadian industrial designs they own — returns proprietor name and address plus link
-- **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
+- **`canadian-institute-for-health-information`** (medium) — Use when you need Canadian health-system context (`geolocation`/`employer-org`) — returns aggregate statistics and reports on hospitals, hea
 - **`canadian-intellectual-property-office`** (medium) — Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `nam
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
 - **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
@@ -290,7 +290,7 @@ kind: group-index
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
 - **`europages-business-search-europe`** (medium) — Use when you have a company `name`/`employer-org` and want to find and locate it in Europe — returns matching business listings with `addres
 - **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.
-- **`europeana`** (medium) — Collection of over 57 million European artworks, artifacts, books, films, music, and more
+- **`europeana`** (medium) — Use when you have a `name`, place, or `employer-org` and want historical photos, records, artworks or documents about them — returns digitiz
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
 - **`eurostat`** (low) — OSINT tool: Eurostat.
 - **`exa-ai`** (high) — Use when you have a company `name` or website `domain` and want an AI-compiled dossier — people, funding, competitors, news — returns `emplo
@@ -416,7 +416,7 @@ kind: group-index
 - **`govchain-co-za`** (high) — Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a 
 - **`govdata-das-datenportal-f-r-deutschland-german`** (low) — Use when you have a German place, agency or `employer-org` and want official open datasets — returns administrative, geographic and statisti
 - **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
-- **`government-staff-directory`** (medium) — OSINT tool: Government staff directory.
+- **`government-staff-directory`** (medium) — Use when you have a `name` or department (`employer-org`) of a Government of Alberta employee and want to confirm the role and a work phone 
 - **`govsalaries`** (medium) — Use when you have a `name` (and ideally a US state/employer) and want to confirm public-sector employment and pay — returns `employer-org`, 
 - **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
@@ -758,7 +758,6 @@ kind: group-index
 - **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
 - **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
 - **`police-complaint-lookup`** (low) — Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved of
-- **`police-decertifcations-search-and-report`** (medium) — OSINT tool: Police Decertifcations Search and Report.
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
 - **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
 - **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —

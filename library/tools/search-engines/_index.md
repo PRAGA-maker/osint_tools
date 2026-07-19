@@ -791,7 +791,7 @@ kind: group-index
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
 - **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
-- **`wikibooks`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
+- **`wikibooks`** (medium) — Use when you have an author `name`/`username` or a subject-matter lead and want open textbooks/manuals and their contributor histories — ret
 - **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile

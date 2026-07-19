@@ -135,7 +135,6 @@ kind: group-index
 - **`en-wikipedia-org-5`** (high) — Use when you have a `username`/`name` that may be on GETTR and want to understand the platform before searching it — returns background cont
 - **`en-wikipedia-org-8`** (high) — Use when you have a `name`/`username` seen on Rumble and want to understand the platform and its context before investigating accounts there
 - **`en-wikipedia-org`** (medium) — Use when you have a `username` or `name` and want an exhaustive checklist of social platforms to search — returns a reference list of networ
-- **`enlarge-discord-avatars`** (medium) — OSINT tool: Enlarge Discord avatars.
 - **`epieos`** (high) — Use when you have an `email` or `phone` and want to reverse-lookup the accounts, profiles and Google identity tied to it — returns social-pr
 - **`exolyt`** (medium) — Use when you have a TikTok `social-profile`/`username` and want analytics on it — returns posting patterns, engagement, audience geography a
 - **`expand-all-facebook-comments-bookmarklet`** (high) — Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full 
@@ -353,7 +352,7 @@ kind: group-index
 - **`lotus-vn`** (high) — Use when you have a `username` or `name` and think the subject uses Lotus, a Vietnamese social network — returns `social-profile`, `name`, p
 - **`mail-ru-social-network-search`** (high) — Use when you have a `name` or `username` for a RU/CIS subject and want to surface Russian-language social and web results — returns social-p
 - **`map-of-github`** (low) — Use when you have a GitHub repository or topic and want to see related projects clustered by similarity — returns a visual map of neighborin
-- **`map-of-reddit`** (medium) — OSINT tool: Map of Reddit.
+- **`map-of-reddit`** (medium) — Use when you have a subreddit or topic and want to discover adjacent communities a subject might frequent — returns an interactive similarit
 - **`mastodon-github-com`** (medium) — Use when you have a known Mastodon `username`/handle on a specific instance and want to resolve it to a stable account ID and profile metada
 - **`mastodon-search-engine`** (low) — OSINT tool: Mastodon Search Engine.
 - **`mastodon`** (high) — Use when you have a `name` or `username` and want to find a subject's profile on the decentralised Mastodon/fediverse network — returns a so
