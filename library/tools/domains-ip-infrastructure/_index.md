@@ -538,7 +538,7 @@ kind: group-index
 - **`whoismind`** (low) — OSINT tool: WhoisMind.
 - **`whoisrequest`** (low) — OSINT tool: WhoIsRequest.
 - **`whoxy`** (low) — OSINT tool: Whoxy.
-- **`whtop`** (medium) — Webhosting directory including tools such as IP location lookup, as well as other website information
+- **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — OSINT tool: wintelguy.com.
 - **`woorank-review-and-seo`** (medium) — Search for information and statistics about any online website
 - **`wordpress`** (medium) — Website creation and hosting site

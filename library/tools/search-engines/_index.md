@@ -381,7 +381,7 @@ kind: group-index
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
 - **`ipse-io`** (medium) — OSINT tool: Ipse.io.
-- **`irbis-by-espy`** (medium) — Powerful lookup and reverse search tool
+- **`irbis-by-espy`** (medium) — Use when you have a `name`, `email`, `phone`, `username`, or `image` and want an aggregated digital-identity profile — returns linked social
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
 - **`islegitsite`** (medium) — OSINT tool: Islegitsite.
 - **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n

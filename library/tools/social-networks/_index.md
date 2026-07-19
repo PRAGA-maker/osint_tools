@@ -662,7 +662,7 @@ kind: group-index
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)
-- **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
+- **`twemex`** (medium) — Use when you're reading X/Twitter and want a research sidebar — returns quick access to a user's best tweets, quotes of a post, and your own
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
 - **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
@@ -705,7 +705,7 @@ kind: group-index
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — Use when you have a Twitter/X conversation or profile URL and want it captured as data — returns tweet text, usernames, profile pictures and
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f
-- **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
+- **`twitter-x-advanced-search`** (medium) — Use when you have a `username`, keyword, place, or date range and want precise X posts — returns filtered tweets by user, time, location and
 - **`twitter-x-location-search`** (medium) — Use when you have a `geolocation` and want posts sent from near it — returns geotagged X/Twitter posts and the `social-profile`s behind them
 - **`twittertrails-com`** (high) — Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com d
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for

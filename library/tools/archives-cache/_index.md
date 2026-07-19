@@ -98,7 +98,7 @@ kind: group-index
 - **`theoldnet-com`** (low) — Use when you have a `domain` and want to browse its historical versions rendered for old browsers — returns archived page content via a Wayb
 - **`time-travel-for-web-chromewebstore-google-com`** (medium) — Use when you have a `domain`/page URL and want a past version — returns the nearest archived snapshot across many web archives via the Memen
 - **`trove`** (medium) — Use when you have a `name`, place, or event with an Australian angle and want historical records — returns digitised newspapers, gazettes, p
-- **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)
+- **`ukwa`** (medium) — Use when you have a UK `domain`/website that has changed or vanished and want an archived copy — returns historical snapshots of UK web page
 - **`vandal`** (medium) — extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.
 - **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo
 - **`vefsafn-is`** (medium) — Use when you have an Icelandic `domain` or URL and want historical snapshots of it — returns archived captures of .is / Iceland-related web 

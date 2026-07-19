@@ -11,7 +11,7 @@ kind: group-index
 - **`archive-is`** (medium) — Use when you have a `domain`/URL and want a permanent, tamper-proof snapshot of a page — captures and retrieves frozen copies, including pag
 - **`cached-view`** (medium) — Use when you have a `domain`/URL that has been removed or changed and want to see an archived copy — returns cached snapshots via the Waybac
 - **`common-crawl`** (medium) — Use when you have a `domain`/URL and want to mine web content at scale across billions of pages — a free petabyte-scale web corpus queryable
-- **`pdf-my-url`** (medium) — Generating quick PDF evidence captures of web pages
+- **`pdf-my-url`** (medium) — Use when you have a web page URL and want a clean PDF capture for evidence — returns a PDF snapshot of the page's rendered content.
 - **`textfiles-com`** (low) — Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from 
 - **`uk-web-archive`** (medium) — Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-ex
 - **`wayback-machine-chrome-extension`** (medium) — Use when you hit a dead/changed page (a `domain` or URL) and want its archived version fast — returns the Internet Archive's saved snapshots
