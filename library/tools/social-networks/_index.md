@@ -612,7 +612,6 @@ kind: group-index
 - **`thumbtube-com`** (high) — Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/
 - **`tikbuddy`** (medium) — TikTok profile analytics
 - **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
-- **`tikrank-com`** (medium) — free tool for comparing and analyzing #TikTok accounts. Available ranking of the most popular users by country (there are more than a millio
 - **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
 - **`tiktake-net`** (medium) — TikTok Video Downloader
 - **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
@@ -766,7 +765,7 @@ kind: group-index
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
 - **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
-- **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
+- **`youtube-comment-search-chrome-extension`** (medium) — Use when you have a YouTube video and a `username`/keyword and want to find matching comments — returns comments by author/content with time
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
 - **`youtube-dl`** (medium) — Use when you have a `social-profile` or video URL and want to download the media and its full metadata for offline analysis — returns metada
 - **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos

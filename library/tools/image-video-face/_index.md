@@ -213,7 +213,7 @@ kind: group-index
 - **`mangolinkworld`** (low) — Use when you have a `geolocation` and want a live view of it — returns links to public live webcams for cities, beaches, ports, and landmark
 - **`maps-video`** (medium) — Google street view alternative. Online YouTube video driving map for different routes. Worldwide, but most videos in the USA and Europe.
 - **`maxar`** (low) — Use when you have a `geolocation` and want to see what high-resolution satellite imagery exists over it and when — returns dated `image` cap
-- **`media-io-watermark-remover`** (medium) — Select the area and mark the time frame in which you want to remove the object. Works for barely visible watermarks as well as for bright an
+- **`media-io-watermark-remover`** (medium) — Use when you have an `image` (or video) with a watermark/overlay obscuring detail and want it cleaned — returns a de-watermarked image for d
 - **`metadata-viewer`** (high) — Use when you have an `image` (file or URL) and want its embedded EXIF — returns GPS `geolocation`, camera/device `metadata-exif` and creatio
 - **`metatube-com`** (high) — Use when you have a `name`/`username` or keyword and want to find videos about a subject aggregated from across platforms — returns social-p
 - **`midomi-music-search-engine`** (high) — Use when you have an audio clip, hum, or song playing in a subject's video and want to identify the track — returns song title/artist metada

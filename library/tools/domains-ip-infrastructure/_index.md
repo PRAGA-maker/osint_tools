@@ -411,7 +411,7 @@ kind: group-index
 - **`securitytrails`** (low) — OSINT tool: SecurityTrails.
 - **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
-- **`seo-spyglass`** (medium) — Free online backlink checker and analysis tool
+- **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
 - **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.

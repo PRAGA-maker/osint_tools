@@ -96,7 +96,7 @@ kind: group-index
 - **`banq-num-rique`** (low) — OSINT tool: BAnQ numérique.
 - **`barcode-lookup`** (medium) — Use when you have a barcode/UPC/EAN number (a `document-id`) — read off a product, package, or object in a photo — and want to identify the 
 - **`base-academic-search-engine`** (medium) — Use when you have a `name` and want their scholarly output across repositories worldwide — returns papers, theses, and documents (with autho
-- **`baytown-tx-employee-directory`** (medium) — OSINT tool: Baytown TX Employee Directory.
+- **`baytown-tx-employee-directory`** (medium) — Use when you have a `name` you suspect works for the City of Baytown, Texas and want to confirm — returns employee/department listing detail
 - **`belgium`** (high) — Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, ad
 - **`bellingcat-com`** (high) — Use when you have a `name` or keyword and want verbatim quotes from UK & Ireland local-council meetings — returns transcript hits naming who
 - **`berkely-library-data-lab`** (low) — OSINT tool: Berkely Library: Data Lab.

@@ -25681,24 +25681,31 @@
   {
     "id": "cnet",
     "name": "CNET",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
+    "description": "Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/company context.",
     "url": "https://www.cnet.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding technology-industry news coverage, product reviews, and quoted experts to corroborate a subject's role or claims.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported consumer-tech news and reviews; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading and site-scoped searching of a public news site; no subject interaction or notification. Ad/tracker-heavy — use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established mainstream tech-news publisher (Red Ventures); editorial journalism — reliable reporting but a secondary source for any personal detail.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -25707,18 +25714,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cnet-technology-products-reviews"
     ],
+    "aliases": [
+      "CNET.com",
+      "CNET News"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "news"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/cnet.md"
   },
   {
@@ -32324,41 +32334,50 @@
   {
     "id": "mynetworktv-united-states",
     "name": "MyNetworkTV (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "description": "Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Locate A Station tool.",
     "url": "http://www.mynetworktv.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding which local US broadcast station and market carries MyNetworkTV programming for a given area.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free network/programming site; over-the-air programming, no account needed to browse.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive browsing of a public broadcast-network site; no subject interaction. Entering a ZIP/location in the station locator only queries the network's affiliate map, not anything about a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official MyNetworkTV (Fox-owned programming service) site; authoritative for its own schedule and affiliate/station listings.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MyNetworkTV",
+      "mynetworktv.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "broadcast"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/mynetworktv-united-states.md"
   },
   {
@@ -36462,42 +36481,55 @@
   },
   {
     "id": "seeking-arrangement",
-    "name": "Seeking Arrangement",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "https://www.seekingarrangement.com",
+    "name": "Seeking (SeekingArrangement)",
+    "description": "Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a social-profile with photos and location.",
+    "url": "https://www.seeking.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a subject maintains a profile on the Seeking (\"sugar dating\") platform and extracting its photos, location, and self-description.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse profiles; messaging and some features are paywalled. Profile search requires a (free) logged-in account.",
+    "opsec": "active",
+    "opsecNote": "Searching requires an account, and browsing a profile can trigger a \"viewed you\" notice depending on settings — that is ACTIVE and can alert the subject. Use a dedicated sock-puppet account, never a real or attributable identity, and expect the platform to log your activity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large commercial dating platform; profiles are self-created and unverified, and people commonly use aliases and stock or altered photos, so treat everything as claimed, not confirmed.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "SeekingArrangement",
+      "Seeking.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "dating",
+      "social-networking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/seeking-arrangement.md"
   },
   {
@@ -37433,44 +37465,54 @@
   },
   {
     "id": "taxi-driver-co-uk",
-    "name": "taxi-driver.co.uk",
-    "description": "OSINT tool: taxi-driver.co.uk.",
+    "name": "Taxi Driver Online (taxi-driver.co.uk)",
+    "description": "Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and locality/licensing hints.",
     "url": "http://www.taxi-driver.co.uk/phpBB2/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Finding whether a subject participates in the UK taxi/private-hire trade community and mining posts for locality, licensing authority, and trade details.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free phpBB forum; reading public threads needs no account, posting requires (free) registration.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Registering and posting is active and traceable — avoid unless necessary and never with an attributable identity. The community is regional/trade-focused, so newcomers stand out.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running phpBB community forum for UK taxi/private-hire drivers; user-generated, self-reported content — corroborate any claim.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Taxi Driver Online forum",
+      "taxi-driver.co.uk phpBB"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/taxi-driver-co-uk.md"
   },
   {
@@ -86892,47 +86934,53 @@
   {
     "id": "seo-spyglass",
     "name": "SEO SpyGlass",
-    "description": "Free online backlink checker and analysis tool",
+    "description": "Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.",
     "url": "https://www.link-assistant.com/seo-spyglass/free-backlink-checker-tool.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating the backlink profile of a target domain to discover affiliated sites, networks, and shared hosting infrastructure.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free desktop edition analyzes up to ~1,100 backlink entries per project; the online tool has a daily report cap. Full/unlimited analysis is paid, but the free tier is usable for scoping.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Queries link-assistant's own backlink index, not the target's server, so the target site is not touched or alerted. The desktop app runs locally; only your account/IP is exposed to link-assistant.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "A commercial SEO vendor (LinkAssistant / SEO PowerSuite); backlink data is aggregated from its own crawl and third parties, so coverage and freshness vary versus other backlink indexes.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "SEO PowerSuite backlink checker",
+      "LinkAssistant SpyGlass"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "domainsandips",
+      "Domains & IPs",
+      "backlinks"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/seo-spyglass.md"
   },
   {
@@ -123379,43 +123427,53 @@
   },
   {
     "id": "macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca",
-    "name": "Macrostrat's geologic map system integrates over 290 bedrock geologic maps from around the world into a single, multisca",
-    "description": "Macrostrat's geologic map system integrates over 290 bedrock geologic maps from around the world into a single, multiscale database (c).",
+    "name": "Macrostrat Geologic Map",
+    "description": "Use when you have a `geolocation` and want the bedrock geology at that spot — returns rock type/formation/age to corroborate or narrow a location from ground clues.",
     "url": "https://macrostrat.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the bedrock geology (rock type, formation, age) of a coordinate to cross-check or constrain a suspected photo location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open academic platform (University of Wisconsin); data under CC-BY-4.0, with a free public API.",
+    "opsec": "passive",
+    "opsecNote": "Passive query of a scientific map database; nothing about a person or the target site is signalled. Runs on Macrostrat's servers; no subject footprint.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-established academic geoscience platform integrating peer-reviewed geologic maps; authoritative for bedrock geology, though map resolution/coverage varies by region.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Macrostrat",
+      "macrostrat.org geologic map"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Nature"
+      "geolocation",
+      "geology",
+      "maps"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca.md"
   },
   {
@@ -145035,44 +145093,55 @@
   },
   {
     "id": "media-io-watermark-remover",
-    "name": "Media IO Watermark Remover",
-    "description": "Select the area and mark the time frame in which you want to remove the object. Works for barely visible watermarks as well as for bright and large objects.",
+    "name": "Media.io Watermark Remover (AniEraser)",
+    "description": "Use when you have an `image` (or video) with a watermark/overlay obscuring detail and want it cleaned — returns a de-watermarked image for downstream analysis.",
     "url": "https://www.media.io/app/removeWatermark",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Removing watermarks, text overlays, or objects from an image so the underlying detail is usable for reverse-image and geolocation work.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free online use for basic/limited removals (redirects to anieraser.media.io); higher resolution, batch, and video processing are paywalled/subscription.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to Media.io's (Wondershare) servers, which see and may retain it. Do NOT upload sensitive or evidentiary originals; work on copies and assume the third party stores what you send. No footprint reaches the image's subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A Wondershare consumer media-tools brand; the removal is AI inpainting that fabricates plausible pixels over the masked area — it edits, it does not recover hidden ground-truth.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Image editing tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "anieraser-media-io"
     ],
+    "aliases": [
+      "AniEraser",
+      "media.io remove watermark"
+    ],
+    "tags": [
+      "Image Search and Identification",
+      "Image Analyze",
+      "image-cleanup"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/media-io-watermark-remover.md"
   },
   {
@@ -177932,41 +178001,51 @@
   {
     "id": "fake-us-identities",
     "name": "Fake US Identities",
-    "description": "Generating synthetic US identity data for persona creation and testing",
+    "description": "Use when you need a synthetic US persona for sock-puppet/OPSEC work — returns a fabricated name, address, and biographical data (no real person).",
     "url": "https://xdd2.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "privacy-clean-up"
     ],
-    "bestFor": "Generating synthetic US identity data for persona creation and testing",
-    "input": "No input required",
-    "output": "Synthetic US name, address, SSN, DL number, and biographical data",
+    "bestFor": "Generating a coherent synthetic US identity (name, address, DOB, biographical filler) to seed a sock-puppet account or honeypot dataset.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free static identity-generator site; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Generates synthetic data only; using fake SSNs for fraudulent purposes is illegal — intended for legitimate testing and OSINT persona research only.",
+    "opsecNote": "Generates fabricated data only; nothing you do touches any real person. IMPORTANT — use synthetic identities strictly for lawful sock-puppet/OPSEC/testing; using fabricated SSNs, IDs, or personas to commit fraud or impersonation is illegal. This is for building non-attributable research personas, not deception of real institutions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running fake-identity generator (derived from an open-source whole-country generator project, originally built for corporate honeypots); output is deliberately random and non-real.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "xdd2.org fake identity",
+      "synthetic US identity generator"
+    ],
+    "tags": [
+      "opsec",
+      "sockpuppet",
+      "persona"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/fake-us-identities.md"
   },
   {
@@ -186306,42 +186385,48 @@
   },
   {
     "id": "privacy-tools",
-    "name": "Privacy Tools",
-    "description": "Privacy tool discovery, OPSEC toolkit building",
+    "name": "PrivacyTools.io",
+    "description": "Use when you're building an investigator OPSEC toolkit and want vetted privacy/security alternatives — returns a curated directory of tools by category.",
     "url": "https://www.privacytools.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "privacy-clean-up"
     ],
-    "bestFor": "Privacy tool discovery, OPSEC toolkit building",
-    "input": "No input required (reference directory)",
-    "output": "Curated lists of privacy-respecting tools by category with brief descriptions",
+    "bestFor": "Choosing privacy-respecting tools (VPNs, browsers, email, DNS, etc.) to harden your own investigative OPSEC setup.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free curated directory; no account. Some recommended services (VPNs, paid email) charge, but the directory itself is free and many picks are free/open-source.",
     "opsec": "passive",
-    "opsecNote": "Reference site only. Note: privacytools.io has gone through ownership changes; privacyguides.org is the community-maintained successor.",
+    "opsecNote": "This is an OPSEC-hardening reference for the investigator, not a lookup tool against a target. Reading it has no subject footprint. Use it to build a compartmentalized research environment before you touch a case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run privacy-tools directory established 2015; recommendations reflect maintainer/community judgment and criteria, not independent audits — evaluate picks yourself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "privacytools.io",
+      "Privacy Tools directory"
+    ],
+    "tags": [
+      "opsec",
+      "privacy",
+      "toolkit"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/privacy-tools.md"
   },
   {
@@ -219186,35 +219271,49 @@
   {
     "id": "baytown-tx-employee-directory",
     "name": "Baytown TX Employee Directory",
-    "description": "OSINT tool: Baytown TX Employee Directory.",
+    "description": "Use when you have a `name` you suspect works for the City of Baytown, Texas and want to confirm — returns employee/department listing details.",
     "url": "https://c0ctb134.caspio.com/dp/c5f5200097e7aef4edb54e09bd5e",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming whether a person is a City of Baytown (Texas) municipal employee and finding their department/role.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public Caspio-hosted directory datapage; no login or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive lookup of a public municipal directory; the employee is not notified. It is a third-party Caspio embed, so your query hits Caspio's servers rather than a city domain — no target footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A standalone Caspio datapage with no visible official City-of-Baytown branding on the embed URL; treat as an unofficial/mirrored directory and confirm any hit against the city's own site before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Baytown Texas city employee directory"
+    ],
+    "tags": [
+      "public-records",
+      "employee-directory",
+      "municipal"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/baytown-tx-employee-directory.md"
   },
   {
@@ -342929,43 +343028,6 @@
     "_file": "library/tools/social-networks/tikface-com.md"
   },
   {
-    "id": "tikrank-com",
-    "name": "Tikrank.com",
-    "description": "free tool for comparing and analyzing #TikTok accounts. Available ranking of the most popular users by country (there are more than a million accounts with the largest number of subscribers in the database)",
-    "url": "https://tikrank.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "TikTok"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tikrank-com.md"
-  },
-  {
     "id": "tikstats",
     "name": "TikStats",
     "description": "detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account",
@@ -351460,39 +351522,51 @@
   },
   {
     "id": "youtube-comment-search-chrome-extension",
-    "name": "YouTube Comment Search Chrome Extension",
-    "description": "OSINT tool: YouTube Comment Search Chrome Extension.",
-    "url": "https://chrome.google.com/webstore/detail/ycs-youtube-comment-searc/pmfhcilikeembgbiadjiojgfgcfbcoaa/related",
+    "name": "YCS — YouTube Comment Search (Chrome Extension)",
+    "description": "Use when you have a YouTube video and a `username`/keyword and want to find matching comments — returns comments by author/content with timestamps.",
+    "url": "https://chromewebstore.google.com/detail/ycs-youtube-comment-searc/pmfhcilikeembgbiadjiojgfgcfbcoaa",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching all comments/replies on a YouTube video by author name or content — impossible through YouTube's native UI.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension (50k+ users) with no account required; installs into your browser.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally in your browser against the video's already-public comments; you are not interacting with or notifying any commenter. The developer states it does not collect user data. Install into a sock-puppet browser profile as good hygiene, but there is no target-facing footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely-installed third-party extension (≈50k users, ~3.3★, last updated Oct 2024); it reads public YouTube comment data client-side. Vet the extension's permissions before installing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YCS",
+      "YouTube Comment Search extension"
+    ],
     "tags": [
-      "Social Media",
-      "YouTube"
+      "youtube",
+      "comment-search",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-comment-search-chrome-extension.md"
   },
   {

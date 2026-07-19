@@ -60,7 +60,7 @@ kind: group-index
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
 - **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness
 - **`cl1p`** (medium) — OSINT tool: cl1p.
-- **`cnet`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
+- **`cnet`** (medium) — Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/compa
 - **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
 - **`collegeblender`** (medium) — University lifestyle networking website
@@ -207,7 +207,7 @@ kind: group-index
 - **`movabletype`** (medium) — Website related to social networking and blogging
 - **`mumsnet-com`** (medium) — OSINT tool: mumsnet.com.
 - **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
-- **`mynetworktv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`nachricht`** (medium) — OSINT tool: Nachricht.
@@ -298,7 +298,7 @@ kind: group-index
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
 - **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
-- **`seeking-arrangement`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
 - **`seniorfriendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`seniorpeoplemeet`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
@@ -321,7 +321,7 @@ kind: group-index
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.
 - **`svbtle`** (medium) — Website related to social networking and blogging
 - **`sympsons-screencaps-search`** (low) — OSINT tool: Sympsons screencaps search.
-- **`taxi-driver-co-uk`** (medium) — OSINT tool: taxi-driver.co.uk.
+- **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
 - **`tech-advisor-uk`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techcrunch`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
