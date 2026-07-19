@@ -59,7 +59,7 @@ kind: group-index
 - **`cryptocompare-com`** (medium) — OSINT tool: cryptocompare.com.
 - **`cryptocurrency-alerting`** (low) — OSINT tool: Cryptocurrency Alerting.
 - **`cryptocurrency-search-tool`** (low) — OSINT tool: Cryptocurrency search tool.
-- **`cryptocurrencyalerting-com`** (medium) — OSINT tool: cryptocurrencyalerting.com.
+- **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
 - **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
 - **`csol-ie`** (medium) — OSINT tool: csol.ie.
 - **`economy-ni-gov-uk`** (medium) — OSINT tool: economy-ni.gov.uk.

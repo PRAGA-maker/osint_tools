@@ -12,7 +12,7 @@ kind: group-index
 - **`carnet-ai`** (medium) — Use when you have an `image` of a car and want to identify its make, model and generation — returns a physical-description of the vehicle to
 - **`findbyplate`** (medium) — Use when you have a US `vehicle-plate` + state and want to decode the vehicle and probe for ownership hints — returns vin and vehicle specs 
 - **`finnik-nl`** (medium) — Use when you have a Dutch `vehicle-plate` and want its full vehicle record — returns specs, APK (inspection) history, tax/insurance status, 
-- **`myaccident-traffic-accident-map`** (medium) — US accident history verification and claims investigations
+- **`myaccident-traffic-accident-map`** (medium) — Use when you have a `vin`, `address`/`geolocation`, or crash details and want the police accident report — returns driver, vehicle, injury a
 - **`nhtsa-vehicle-api`** (medium) — Use when you have a `vin` and want authoritative make/model/year/manufacturer specs to corroborate a vehicle — returns decoded vehicle attri
 - **`vindecodr`** (low) — Use when you have a 17-character `vin` and want the vehicle's specs — returns make, model, year, engine, body, and recall details.
 

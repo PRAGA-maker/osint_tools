@@ -353,7 +353,7 @@ kind: group-index
 - **`linkedindumper`** (high) — Use when you have an `employer-org` and want its staff roster from LinkedIn — a Python tool that dumps employee names, titles, locations, pr
 - **`linkedinsider-deutschland-blog-von-stephan-ko`** (high) — Use when investigating a subject on LinkedIn (especially German-market) and want expert technique/hidden-feature tips — returns methods for 
 - **`linkedprospect`** (high) — Use when you have a target's role or `employer-org` and want a ready-made LinkedIn Boolean query to surface matching profiles — returns a co
-- **`location-search`** (medium) — OSINT tool: Location Search.
+- **`location-search`** (medium) — Use when you have a `geolocation` and want videos filmed there — returns YouTube videos geotagged near a point, with uploader channels and c
 - **`lotus-vn`** (high) — Use when you have a `username` or `name` and think the subject uses Lotus, a Vietnamese social network — returns `social-profile`, `name`, p
 - **`mail-ru-social-network-search`** (high) — Use when you have a `name` or `username` for a RU/CIS subject and want to surface Russian-language social and web results — returns social-p
 - **`map-of-github`** (low) — Use when you have a GitHub repository or topic and want to see related projects clustered by similarity — returns a visual map of neighborin
@@ -579,7 +579,7 @@ kind: group-index
 - **`ssstwitter-com`** (high) — Use when you have a tweet/X `social-profile` URL and want to download its video/media for offline analysis and archiving — returns the media
 - **`stalkface`** (high) — Use when you have a Facebook `social-profile` (or numeric ID) and want prebuilt Facebook Graph-search queries for their photos, activity and
 - **`stalkscan`** (high) — Use when you want to run Facebook Graph-search queries against a profile to surface photos, friends and likes — but the tool is defunct (Fac
-- **`star-history`** (medium) — simple tool that shows how the number of stars a repository on #Github has changed over the past three months.
+- **`star-history`** (low) — Use when you have a GitHub repo (from a subject's `username`) and want its star trajectory — returns a star-count-over-time chart as a signa
 - **`statflux`** (high) — Use when you have an Instagram `username` and want a public-facing analytics snapshot of the account — returns `social-profile` metrics and 
 - **`stayfriends-de`** (high) — Use when you have a German-speaking subject's `name` and a school and want to place them via a class-reunion network — returns a `social-pro
 - **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
