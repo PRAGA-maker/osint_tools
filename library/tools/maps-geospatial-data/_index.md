@@ -44,7 +44,6 @@ kind: group-index
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
 - **`generate-a-panorama`** (medium) — Use when you have a candidate viewpoint `geolocation` and a photo showing a horizon/mountain skyline — returns a labelled synthetic panorama
 - **`geocam-ru`** (medium) — Use when you have a `geolocation` (a city or place) and want live public webcam feeds there — returns real-time street/traffic/scenic camera
-- **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Use when you have a `name` of a healthcare provider in Georgia (US) and want to verify their license — returns license status, type, number,
 - **`getlostgame-app`** (low) — Use when you want to train and sharpen geolocation skills on random street-view scenes — a free GeoGuessr-style game; it builds the skill, i

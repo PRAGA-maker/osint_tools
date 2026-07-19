@@ -89,7 +89,7 @@ kind: group-index
 - **`pornhoard-com`** (medium) — OSINT tool: pornhoard.com.
 - **`quikr-classified-ads-india`** (medium) — Use when you have a `name`, handle, or location in India and want a subject's classified ads — returns listings with seller display name, ph
 - **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu
-- **`recycler-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`recycler-classified-ads-united-states`** (medium) — Use when you have a name/phone/email and want their US classified ads — returns listings with seller contact details and location, useful fo
 - **`sales-spider`** (medium) — Use when you have a `name` or `employer-org` in North American SMB circles and want business-directory and profile detail — returns employer
 - **`salespider-north-america`** (medium) — Classified advertisements-related website that provides regional services
 - **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.

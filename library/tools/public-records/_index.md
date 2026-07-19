@@ -11,7 +11,7 @@ kind: group-index
 - **`annual-reports/`** — 4 skill(s) below.
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
 - **`birth-records/`** — 1 skill(s) below.
-- **`company-profiles/`** — 12 skill(s) below.
+- **`company-profiles/`** — 11 skill(s) below.
 - **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
 - **`employee-profiles-and-resumes/`** — 3 skill(s) below.
@@ -491,7 +491,7 @@ kind: group-index
 - **`international-monetary-fund`** (medium) — Website providing data and publications regarding IMF lending, exchange rates, and other economic and financial indicators
 - **`international-trade-center`** (low) — OSINT tool: International Trade Center.
 - **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
-- **`investing-com`** (medium) — View a detailed investment profile of the company
+- **`investing-com`** (medium) — Use when you have a public company or ticker and want its profile — returns business description, key executives, financials and filings con
 - **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — OSINT tool: Ioserv.com/en/jurisdictions/jurisdlist/.
 - **`iowa-cities-police-budgets`** (low) — Use when you need Iowa municipal police-budget figures for context or accountability research — returns a published comparison of police spe
 - **`iowa-courts-online-search`** (high) — Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/a
@@ -762,7 +762,6 @@ kind: group-index
 - **`police-decertifcations-search-and-report`** (medium) — OSINT tool: Police Decertifcations Search and Report.
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
 - **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
-- **`police1`** (medium) — OSINT tool: Police1.
 - **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —
 - **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code

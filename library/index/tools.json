@@ -21057,43 +21057,52 @@
   },
   {
     "id": "send-to-internet-archive-addons-mozilla-org",
-    "name": "send to internet archive (addons.mozilla.org)",
-    "description": "OSINT tool: send to internet archive (addons.mozilla.org).",
+    "name": "Send to Internet Archive (Firefox add-on)",
+    "description": "Use when you have a live page/URL you want preserved as evidence — one click sends it to the Wayback Machine, returning a timestamped archive URL (document-id).",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/send-to-internet-archive/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "One-click preservation of the page you're viewing (or a right-clicked link) into the Internet Archive before it changes or is deleted.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source Firefox add-on; no account. Relies on the free Internet Archive Save Page Now service.",
+    "opsec": "active",
+    "opsecNote": "Saving a page makes the Internet Archive FETCH the live URL — that fetch comes from Archive's IP (not yours) but can appear in the target site's logs, and the archived copy becomes public. Don't archive a page if a fetch or a public permanent copy would tip off the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Community-built add-on that simply calls the Internet Archive; the archiving itself is done by the trusted Archive, but the extension is dated (last updated 2019) and may need compatibility checking.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "web-archive-org",
+      "archive-org"
+    ],
+    "aliases": [
+      "Send to Internet Archive Firefox extension"
+    ],
     "tags": [
       "archive",
       "Archive & Cached Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/send-to-internet-archive-addons-mozilla-org.md"
   },
   {
@@ -49649,41 +49658,53 @@
   {
     "id": "recycler-classified-ads-united-states",
     "name": "Recycler Classified Ads (United States)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a name/phone/email and want their US classified ads — returns listings with seller contact details and location, useful for tracing goods and sellers.",
     "url": "http://www.recycler.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a long-running US classifieds site for a subject's for-sale ads and the contact info attached to them.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "phone",
+      "email",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search listings; posting is free with registration. No paywall for reading ads.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching public ads is passive and doesn't notify the seller. Replying through the site's contact form is active and reveals your interest — stop at reading the public listing unless direct contact is intended.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established US classifieds brand (print since 1973, online for decades); listings are user-posted and unverified, so any contact detail is a lead, not a confirmed fact.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Recycler.com",
+      "The Recycler"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/recycler-classified-ads-united-states.md"
   },
   {
@@ -52049,8 +52070,8 @@
   },
   {
     "id": "bluestacks-2",
-    "name": "BlueStacks 2",
-    "description": "Quick Android testing, forensic artifact extraction, app analysis",
+    "name": "BlueStacks",
+    "description": "Use when you need to run a mobile app on your desktop to investigate it — returns a working Android environment for exercising apps and extracting their on-device data.",
     "url": "https://www.bluestacks.com/",
     "category": "documents-metadata",
     "path": [
@@ -52058,34 +52079,40 @@
       "android",
       "emulation-tools"
     ],
-    "bestFor": "Quick Android testing, forensic artifact extraction, app analysis",
-    "input": "APK files, installed apps",
-    "output": "App data, SQLite databases, shared preferences, file system artifacts",
+    "bestFor": "Quickly running Android apps on a PC to use their in-app features and pull app data artifacts.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "geolocation",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer Android emulator (ad-supported / optional paid premium); no purchase needed to run apps.",
     "opsec": "active",
-    "opsecNote": "Emulator detection possible via device properties and system checks",
+    "opsecNote": "A consumer gaming emulator, not a forensics tool — it's easily fingerprinted as an emulator and signs into Google/apps like a normal device. Only ever use sock-puppet accounts and a spoofed location inside it; assume anything you do in an app reaches that app's servers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Popular free consumer Android emulator (BlueStack Systems); fine for casual app access, but consumer-grade and bundles ads/telemetry, so it's less clean than a purpose-built forensic emulator.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BlueStacks App Player"
+    ],
+    "tags": [
+      "android",
+      "emulator"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/emulation-tools/bluestacks-2.md"
   },
   {
@@ -55499,7 +55526,7 @@
   {
     "id": "genymotion",
     "name": "Genymotion",
-    "description": "Testing mobile apps, forensic analysis, multi-device simulation",
+    "description": "Use when you need to run a target's mobile app in a controlled Android environment — returns app runtime behaviour, on-device data artifacts and system logs for analysis.",
     "url": "https://www.genymotion.com/",
     "category": "documents-metadata",
     "path": [
@@ -55507,36 +55534,44 @@
       "android",
       "emulation-tools"
     ],
-    "bestFor": "Testing mobile apps, forensic analysis, multi-device simulation",
-    "input": "APK files, app bundles",
-    "output": "Runtime behavior, app data artifacts, system logs",
+    "bestFor": "Running and inspecting Android apps in a configurable virtual device for app analysis and mobile forensics.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "geolocation",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Freemium — a free personal/edu tier exists; business use and cloud (SaaS) devices are paid. Requires a (free) account to download and run.",
     "opsec": "active",
-    "opsecNote": "Genymotion generates detectable device signatures; fingerprinting tools may identify it as emulated",
+    "opsecNote": "Genymotion presents a detectable emulator signature; apps with emulator/root detection may behave differently or refuse to run. If you sign into an app inside it, that uses a real account and touches the app's servers — always use a sock-puppet account and a spoofed/neutral GPS location, never your own credentials.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Commercial Android emulator (Genymobile) widely used by developers and mobile forensics/OSINT practitioners; established and reputable, but a third-party runtime, not a data source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": true,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Genymotion Desktop",
+      "Genymotion Android emulator"
+    ],
+    "tags": [
+      "android",
+      "emulator",
+      "mobile-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/emulation-tools/genymotion.md"
   },
   {
@@ -157489,47 +157524,6 @@
     "_file": "library/tools/maps-geospatial-data/geocam-ru.md"
   },
   {
-    "id": "geolocatethis",
-    "name": "GeoLocateThis",
-    "description": "OSINT tool: GeoLocateThis.",
-    "url": "https://geolocatethis.site",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "maps"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/geolocatethis.md"
-  },
-  {
     "id": "geomastr-com",
     "name": "Geomastr",
     "description": "Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, poles, and other visual identifiers by country.",
@@ -168987,13 +168981,13 @@
   {
     "id": "telegram-scraper-th3unkn0n",
     "name": "TeleGram-Scraper (th3unkn0n)",
-    "description": "Extract user info and media from Telegram groups.",
+    "description": "Use when you have a Telegram group you can join and want its member list — returns members' usernames, user IDs and (where exposed) phone numbers, plus scraped media, as CSV.",
     "url": "https://github.com/th3unkn0n/TeleGram-Scraper",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Scraping member lists and media from Telegram groups",
+    "bestFor": "Bulk-exporting the member list (usernames/IDs/phones) and media of a Telegram group you have access to.",
     "selectorsIn": [
       "username",
       "social-profile"
@@ -169001,27 +168995,36 @@
     "selectorsOut": [
       "username",
       "phone",
+      "device-id",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free open-source Python tool; you supply your own Telegram API credentials (free from my.telegram.org).",
+    "opsec": "active",
+    "opsecNote": "You must run it from a real Telegram account that has joined the target group — that account is visible to admins and is what does the scraping, so use a dedicated sock-puppet account and number, never your own. Mass-scraping can trip Telegram anti-abuse and get the account limited/banned. Members whose privacy hides their phone won't expose it; don't assume a number is retrievable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source OSINT script (th3unkn0n/TeleGram-Scraper); community-maintained Python wrapping the official Telegram (Telethon) API, so data comes from Telegram itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
-    "registration": false,
+    "registration": true,
+    "relatedTools": [
+      "osi-ig"
+    ],
     "aliases": [
-      "Telegram Scraper"
+      "Telegram Scraper",
+      "th3unkn0n TeleGram-Scraper"
     ],
     "tags": [
       "telegram",
@@ -169029,11 +169032,8 @@
       "python"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "osi-ig"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-scraper-th3unkn0n.md"
   },
   {
@@ -223880,46 +223880,6 @@
     "_file": "library/tools/public-records/company-check-zauba.md"
   },
   {
-    "id": "company-data-rex-eu",
-    "name": "Company Data Rex (EU)",
-    "description": "Cross-border EU company research and registry data lookup",
-    "url": "https://www.cdrex.com/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "company-profiles"
-    ],
-    "bestFor": "Cross-border EU company research and registry data lookup",
-    "input": "Company name or registration number",
-    "output": "Company registration details, financial summaries, and officer information",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Queries processed through CDRex servers; aggregates from EU national registries.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/company-profiles/company-data-rex-eu.md"
-  },
-  {
     "id": "company-information-service-gov-uk",
     "name": "UK Companies House (Find & Update Company Information)",
     "description": "Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships (`employer-org`), registered/service `address`es and officer `name`s.",
@@ -240441,37 +240401,47 @@
   {
     "id": "investing-com",
     "name": "Investing.com",
-    "description": "View a detailed investment profile of the company",
+    "description": "Use when you have a public company or ticker and want its profile — returns business description, key executives, financials and filings context for a company tied to your subject.",
     "url": "https://www.investing.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling a publicly-traded company's profile, executives and financials to corroborate a subject's corporate links.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view quotes, company profiles and news; an ad-free \"Pro\"/premium tier and some data are paid, but the company-profile and executives info is free.",
+    "opsec": "passive",
+    "opsecNote": "Reading public market data is passive and reveals nothing about your target. The site sets ad/analytics cookies and nags for account creation; use a clean browser profile and you never need to log in for the profile pages.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large commercial financial-data portal (Investing.com); good for a quick public-company overview, but a third-party aggregator — verify anything evidential against primary filings (SEC/registry).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "investing.com"
+    ],
     "tags": [
       "Company information search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/investing-com.md"
   },
   {
@@ -254853,40 +254823,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/police-surveillance-in-chicago.md"
-  },
-  {
-    "id": "police1",
-    "name": "Police1",
-    "description": "OSINT tool: Police1.",
-    "url": "https://bloopbase.keybase.pub/ACAB/POLICEONE/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/police1.md"
   },
   {
     "id": "policecrime-bgsu-edu",
@@ -344624,48 +344560,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/tweet-machine.md"
-  },
-  {
-    "id": "tweet-mapper",
-    "name": "Tweet Mapper",
-    "description": "OSINT tool: Tweet Mapper.",
-    "url": "https://keitharm.me/projects/tweet",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweet-mapper.md"
   },
   {
     "id": "tweet-metadata",

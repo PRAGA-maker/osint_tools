@@ -140,7 +140,7 @@ kind: group-index
 - **`telegram-osint-lib-postuf`** (medium) — Use when you have a `phone` or `username` and want to enrich it against Telegram programmatically — a PHP library that checks presence, reso
 - **`telegram-phone-number-checker-github-com`** (high) — Use when you have a `phone` number and want to know if it's on Telegram — returns whether an account exists plus the linked `username`, disp
 - **`telegram-phone-number-checker`** (high) — Use when you have a `phone` number and want to check whether it has a Telegram account — returns account existence plus username/name/ID whe
-- **`telegram-scraper-th3unkn0n`** (medium) — Extract user info and media from Telegram groups.
+- **`telegram-scraper-th3unkn0n`** (medium) — Use when you have a Telegram group you can join and want its member list — returns members' usernames, user IDs and (where exposed) phone nu
 - **`telegram-search-channels-groups`** (high) — Use when you have a `username` or `name` and want to find the associated Telegram user, channel, or group — returns public `social-profile` 
 - **`telegram-search-engine`** (medium) — Use when you have a keyword, link, or `username` and want to find which public Telegram channels posted it — returns channel names and posts
 - **`telegram-search-search-for-posts`** (medium) — Use when you have a `name`, `username`, or keyword and want to find Telegram channels/posts mentioning it — returns matching public channels

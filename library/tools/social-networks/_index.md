@@ -646,7 +646,6 @@ kind: group-index
 - **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ
 - **`tweet-finder`** (high) — Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com lin
 - **`tweet-machine`** (medium) — Simple #bash script which retrieves links to the deleted (and other) tweets and replies of any Twitter user from WayBackMachine.
-- **`tweet-mapper`** (medium) — OSINT tool: Tweet Mapper.
 - **`tweet-topic-explorer`** (high) — Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and f
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
