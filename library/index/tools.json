@@ -70497,30 +70497,32 @@
   {
     "id": "dnsquery",
     "name": "DNSQuery",
-    "description": "Tool that identifies the available registration information for a website or domain name",
+    "description": "Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, reverse DNS, geolocation, and blocklist (RBL) status.",
     "url": "https://dnsquery.org",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-stop web console for WHOIS, DNS records, reverse DNS, IP geolocation, and RBL checks on a domain or IP.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use, funded by donations; no account or API key required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries run from DNSQuery's servers against public DNS/WHOIS/RBL data, so the lookup is not attributed to you and does not touch the target's host directly (except the standard traceroute/ping tools, which do send packets to the target — avoid those if you need to stay fully passive).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent community-run diagnostic site; results mirror authoritative WHOIS/DNS/RBL sources and can be cross-checked, but the site itself is unverified as an organisation.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -70529,15 +70531,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dnsquery.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dnsquery.md"
   },
   {
@@ -123189,45 +123193,53 @@
   {
     "id": "localfocus-nl-geokit",
     "name": "localfocus.nl/geokit",
-    "description": "geographic toolkit for investigative journalists",
+    "description": "Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocoded coordinates, reprojected/converted formats, and admin-boundary joins.",
     "url": "https://www.localfocus.nl/geokit/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Free browser GIS utilities for journalists — batch geocoding, coordinate reprojection, KML conversion, and spatial joins.",
     "selectorsIn": [
+      "address",
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, web-based, no download and no account required for the GeoKit tools.",
+    "opsec": "passive",
+    "opsecNote": "You paste address/coordinate lists into a browser tool that calls a geocoding backend; the subject is not contacted. Your pasted data is processed by LocalFocus/their geocoder, so don't paste sensitive victim addresses you wouldn't want a third party to handle — batch small, non-identifying sets or self-host geocoding for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by LocalFocus, a reputable data-journalism tooling company; conversions are deterministic GIS operations and geocoding quality depends on the underlying provider.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "localfocus"
     ],
+    "aliases": [
+      "LocalFocus GeoKit",
+      "geokit"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "Tools",
+      "geocoding"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/localfocus-nl-geokit.md"
   },
   {
@@ -128187,42 +128199,51 @@
   {
     "id": "smappen",
     "name": "Smappen",
-    "description": "Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truck).",
+    "description": "Use when you have a `geolocation` (a last-known point) and want to bound where a person could have travelled in a given time by foot/car/bike/train — returns an isochrone catchment area you can overlay on a search grid.",
     "url": "https://www.smappen.com/app/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Drawing isochrone (travel-time) and radius catchment areas around a point to bound a plausible search zone.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier (account required) allows a limited number of maps/isochrones; paid plans add more computations, layers, and exports. Core isochrone drawing works on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "You enter only a point/location into Smappen's own mapping app; nothing is sent to the subject. Your account and inputs are stored on Smappen's servers, so use a research account and avoid embedding identifying case detail in map names.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial map-analytics product (formerly Cartesius/Enghouse-adjacent isochrone tooling); travel-time polygons come from routing engines and are estimates, not guarantees.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "smappen.com",
+      "Smappen isochrone"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Tools"
+      "Tools",
+      "isochrone"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/smappen.md"
   },
   {
@@ -129117,42 +129138,48 @@
   {
     "id": "time-is",
     "name": "time.is",
-    "description": "OSINT tool: time.is.",
+    "description": "Use when you have a `geolocation` (a city, place, or timezone) and want the exact current local time, UTC offset, and DST state there — returns time/timezone context you can use to reason about photo timestamps, alibis, or when a subject is likely awake.",
     "url": "https://time.is/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Getting the exact local time, UTC offset, and DST status for any city or timezone in the world.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free with ads; an optional paid ad-free tier exists. No account needed for any lookup.",
+    "opsec": "passive",
+    "opsecNote": "You query time.is, never the subject or their infrastructure. Nothing about your lookup reaches the target. Safe to run without a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely-cited atomic-clock reference site; time/offset data is authoritative and independently checkable against any other clock source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "time.is",
+      "Time.is exact time"
+    ],
     "tags": [
       "timezones",
       "Time Zones & Converters"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/time-is.md"
   },
   {
@@ -154041,41 +154068,49 @@
   },
   {
     "id": "watermarkremover",
-    "name": "Watermarkremover",
-    "description": "Remove watermark from image with AI",
+    "name": "WatermarkRemover.io",
+    "description": "Use when you have an `image` carrying a stock/agency watermark or overlaid text and want a cleaner copy to run through reverse-image and face tools — returns a de-watermarked image.",
     "url": "https://www.watermarkremover.io/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "AI removal of watermarks, logos, and text overlays from an image so the underlying photo reverse-searches better.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier removes watermarks from individual images in-browser; paid plans add bulk/batch processing and higher throughput. Basic single-image use needs no payment.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to WatermarkRemover.io's servers (Pixelbin), so a copy of your source image leaves your control and may be retained. Never upload sensitive or victim imagery you would not want a third party to hold; strip EXIF first if the file is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial image-editing SaaS (Pixelbin.io); competent at its stated task but not an investigative tool, and it handles your uploads on its own infrastructure.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "watermarkremover.io",
+      "Pixelbin WatermarkRemover"
+    ],
     "tags": [
       "Image Search and Identification",
       "Image editing tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/watermarkremover.md"
   },
   {
@@ -157679,24 +157714,30 @@
   {
     "id": "geocam-ru",
     "name": "Geocam.ru",
-    "description": "Webcams from around the world, broadcasting in real time",
+    "description": "Use when you have a `geolocation` (a city or place) and want live public webcam feeds there — returns real-time street/traffic/scenic camera views for ground-truthing weather, activity, or a scene at a location.",
     "url": "https://www.geocam.ru/en/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing thousands of live public webcams worldwide by country/city to see current conditions at a location.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view public webcam streams hosted/aggregated by geocam.ru; the subject is not contacted and camera operators do not see you individually. The site is Russian-operated — use a hardened browser and a VPN; don't log in or submit anything.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running webcam aggregator (Russian) indexing public/third-party camera feeds; individual feeds' uptime and true location depend on their operators and can be stale or mislabelled.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -157705,15 +157746,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "geocam.ru",
+      "Geocam world webcams"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "webcams"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/geocam-ru.md"
   },
   {
@@ -196041,42 +196086,6 @@
     "_file": "library/tools/people-search/bellingcat-name-variant-search.md"
   },
   {
-    "id": "beyond",
-    "name": "Beyond",
-    "description": "OSINT tool: Beyond.",
-    "url": "http://www.beyond.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "job-search-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/beyond.md"
-  },
-  {
     "id": "biographies-net",
     "name": "Biographies.net",
     "url": "https://www.biographies.net",
@@ -196939,37 +196948,47 @@
   {
     "id": "college-recruiter",
     "name": "College Recruiter",
-    "description": "OSINT tool: College Recruiter.",
+    "description": "Use when you have a `name` or `employer-org` and want to check entry-level/student job listings and employer pages — returns job postings and hiring-employer context, occasionally corroborating a person's early-career or student status.",
     "url": "https://www.collegerecruiter.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching entry-level, internship, and student job listings and the employers posting them.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for job seekers to search and view listings; monetised via employer job-posting/advertising services. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "You search a public job board; nothing reaches the subject. Applying to or registering with a listing is active and identifiable — stay on the search/browse side for OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established US entry-level job board; it lists employer postings, not a searchable people/resume database, so its direct person-lookup value is limited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "collegerecruiter.com"
+    ],
     "tags": [
       "job-search-resources"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/college-recruiter.md"
   },
   {
@@ -270878,29 +270897,37 @@
   {
     "id": "advangle",
     "name": "Advangle",
-    "description": "Building complex search queries with multiple filters (domain, language, date published)",
+    "description": "Use when you have a search intent and want to compose a complex Google/Bing query visually — returns a ready-to-run advanced search URL built from domain, language, date, and region filters.",
     "url": "https://advangle.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Building complex search queries with multiple filters (domain, language, date published)",
-    "input": "Visual form-based query builder parameters (domain, language, date, region)",
-    "output": "Complex search queries executed in Google or Bing with multiple parameters",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visually building a multi-operator Google or Bing query (site, language, date, region) without memorising operator syntax.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free; an optional free account lets you save up to 5 queries. No payment.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT tool; site lacks SSL certificate (HTTP only), domain expires March 5, 2026; functionality may be compromised",
+    "opsecNote": "Advangle only assembles the query string in your browser; the actual search runs when you click through to Google/Bing, which then see your search under your own session. The site is HTTP-only (no TLS), so treat it as untrusted transport and avoid entering anything sensitive; better still, copy the built operators and run them directly in a search engine yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party query-builder of unverified ownership; HTTP-only and on a domain slated to expire (2026), so longevity is uncertain — the underlying value is just standard Google/Bing operators you can also type by hand.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -270910,11 +270937,16 @@
     "relatedTools": [
       "advangle-advanced-web-search"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "advangle.com"
+    ],
+    "tags": [
+      "search-operators",
+      "dorking"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/advangle.md"
   },
   {
@@ -277922,13 +277954,13 @@
   {
     "id": "datasploit-fogsec-mirror",
     "name": "datasploit (FOGSEC mirror)",
-    "description": "OSINT framework to perform reconnaissance on companies, people, emails, domains, and phone numbers.",
+    "description": "Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findings — returns emails, social profiles, and domain/subdomain data in HTML/JSON.",
     "url": "https://github.com/FOGSEC/datasploit",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Automated enrichment across people/email/domain/phone selectors",
+    "bestFor": "Automated enrichment across people/email/domain/phone selectors via a scriptable Python framework (reference/legacy).",
     "selectorsIn": [
       "name",
       "email",
@@ -277941,25 +277973,29 @@
       "social-profile",
       "domain"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0). No cost, but many modules require your own third-party API keys to return results.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Runs locally on your machine and queries public/API sources server-to-server, so it is not attributed to the subject. Beware that some modules hit paid/rate-limited APIs under your keys, and active submodules (subdomain brute force, port/active scans) DO touch target infrastructure — disable those if you need to stay passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Mirror of the classic (now largely unmaintained) DataSploit framework (13 stars on mirror).",
+    "trustNote": "Community fork/mirror of the original (now largely unmaintained) DataSploit framework; Python 2.7-era code with stale modules — useful as a reference and for still-working sources, not a turnkey pipeline.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "datasploit"
+      "datasploit",
+      "DataSploit"
     ],
     "tags": [
       "framework",
@@ -277967,8 +278003,8 @@
       "python"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/datasploit-fogsec-mirror.md"
   },
   {
@@ -287145,50 +287181,58 @@
   {
     "id": "internet-archive",
     "name": "Internet Archive",
-    "description": "OSINT tool: Internet Archive.",
+    "description": "Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, audio, software, and captured web media — returns archived documents and media (document-id) that may name or depict the subject.",
     "url": "https://archive.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text and media search across the Internet Archive's collections (texts, TV News Archive, audio, software, video) — distinct from single-URL Wayback snapshots.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free non-profit library; no account needed to search or view. A free account only adds uploads and \"Save Page Now\" captures.",
+    "opsec": "passive",
+    "opsecNote": "You search archive.org's own index, not the subject or any live site they control, so nothing reaches the target. The Archive logs your IP; a VPN is prudent for heavy scraping but a sock puppet is unnecessary.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Internet Archive, a long-established non-profit digital library; captures and scanned items are authentic, though anyone may upload community items, so treat uploader-supplied metadata with normal skepticism.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-org",
-      "internet-archive-open-source-videos",
-      "internet-archive-videos",
-      "parler-archives",
-      "snitch-list",
-      "the-twitter-stream-grab",
-      "tv-closed-caption-search",
       "wayback-machine",
-      "wayback-machine-2",
-      "web-archive-org",
-      "web-archive-org-2"
+      "internet-archive-videos",
+      "internet-archive-open-source-videos",
+      "tv-closed-caption-search"
     ],
+    "aliases": [
+      "archive.org search",
+      "Internet Archive library"
+    ],
+    "tags": [
+      "speciality-search-engines",
+      "archives"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/internet-archive.md"
   },
   {
@@ -348183,53 +348227,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twtdata-download-twitter-data.md"
-  },
-  {
-    "id": "twxplorer",
-    "name": "twXplorer",
-    "description": "OSINT tool: twXplorer.",
-    "url": "https://twxplorer.knightlab.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "storymap",
-      "timeline",
-      "timeline-js3"
-    ],
-    "_file": "library/tools/social-networks/twxplorer.md"
   },
   {
     "id": "uk-pinterest-com",

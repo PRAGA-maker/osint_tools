@@ -165,7 +165,7 @@ kind: group-index
 - **`live-bar-and-pub-webcams`** (low) — OSINT tool: Live Bar and Pub Webcams.
 - **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
 - **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
-- **`localfocus-nl-geokit`** (medium) — geographic toolkit for investigative journalists
+- **`localfocus-nl-geokit`** (medium) — Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocod
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lookr`** (medium) — OSINT tool: Lookr.
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
@@ -266,7 +266,7 @@ kind: group-index
 - **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
 - **`skydb`** (low) — Use when you have an `image`/`geolocation` clue featuring a tall building and want to identify it — returns building height, city, year, dev
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
-- **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
+- **`smappen`** (medium) — Use when you have a `geolocation` (a last-known point) and want to bound where a person could have travelled in a given time by foot/car/bik
 - **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.
 - **`sondehub`** (low) — Use when you have a radiosonde/amateur-balloon serial or a `geolocation` and want live telemetry and predicted landing points — returns `geo
 - **`spot`** (medium) — Use when you have a `geolocation` region plus a described scene and want candidate coordinates matching that description in OpenStreetMap — 
@@ -284,7 +284,7 @@ kind: group-index
 - **`the-painted-planet`** (low) — Use when you have a `geolocation` and want artworks depicting that place — returns landscape/cityscape paintings (from Wikidata) tied to the
 - **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.
 - **`thingful`** (low) — OSINT tool: thingful.
-- **`time-is`** (medium) — OSINT tool: time.is.
+- **`time-is`** (medium) — Use when you have a `geolocation` (a city, place, or timezone) and want the exact current local time, UTC offset, and DST state there — retu
 - **`timeanddate-com`** (medium) — Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
 - **`timejones-com`** (medium) — Use when you have times across `geolocation`s and want to align them — returns cross-city time-zone conversions and a meeting/event schedule

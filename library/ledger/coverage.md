@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8038 total · 3893 full · 4145 stub (48% enriched)
+**Tools:** 8036 total · 3903 full · 4133 stub (48% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2588 · high: 1962
+low: 3488 · medium: 2586 · high: 1962
 
 ## Tools by trust
-community: 3454 · unverified: 3265 · trusted: 1307 · personal: 6 · untrustworthy: 6
+community: 3456 · unverified: 3259 · trusted: 1309 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -20,20 +20,20 @@ community: 3454 · unverified: 3265 · trusted: 1307 · personal: 6 · untrustwo
 - `dark-web` — 20/118
 - `dating-classifieds` — 52/107
 - `documents-metadata` — 26/314
-- `domains-ip-infrastructure` — 80/743
+- `domains-ip-infrastructure` — 81/743
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 39/126
-- `geolocation` — 247/347
-- `image-video-face` — 420/467
-- `maps-geospatial-data` — 41/138
+- `geolocation` — 250/347
+- `image-video-face` — 421/467
+- `maps-geospatial-data` — 42/138
 - `messaging` — 167/190
 - `opsec-investigator-tooling` — 30/562
-- `people-search` — 243/263
+- `people-search` — 244/262
 - `phone` — 134/137
 - `public-records` — 743/1093
-- `search-engines` — 342/911
-- `social-networks` — 658/827
+- `search-engines` — 345/911
+- `social-networks` — 658/826
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
 - `transportation` — 92/222
@@ -43,7 +43,7 @@ community: 3454 · unverified: 3265 · trusted: 1307 · personal: 6 · untrustwo
 
 - `library/tools/public-records` — 1032 leaves
 - `library/tools/search-engines` — 850 leaves
-- `library/tools/social-networks` — 799 leaves
+- `library/tools/social-networks` — 798 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 502 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
@@ -51,7 +51,7 @@ community: 3454 · unverified: 3265 · trusted: 1307 · personal: 6 · untrustwo
 - `library/tools/image-video-face` — 371 leaves
 - `library/tools/geolocation` — 332 leaves
 - `library/tools/documents-metadata` — 263 leaves
-- `library/tools/people-search` — 253 leaves
+- `library/tools/people-search` — 252 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 204 leaves
 - `library/tools/messaging` — 175 leaves

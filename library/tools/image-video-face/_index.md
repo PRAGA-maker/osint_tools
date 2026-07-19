@@ -354,7 +354,7 @@ kind: group-index
 - **`viewing-bitmoji-changes`** (high) — Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infe
 - **`vimeo`** (medium) — OSINT tool: Vimeo.
 - **`watannetwork-com`** (low) — Use when you have a YouTube video URL/ID and want to see which countries it is available or blocked in — returns geolocation (country allow/
-- **`watermarkremover`** (medium) — Remove watermark from image with AI
+- **`watermarkremover`** (medium) — Use when you have an `image` carrying a stock/agency watermark or overlaid text and want a cleaner copy to run through reverse-image and fac
 - **`webcam-cse`** (medium) — Use when you have a place/`geolocation` and want a live street webcam there — returns webcam feeds from 10 online webcam catalogs via one Go
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu
 - **`who-stole-my-pictures-addons-mozilla-org`** (high) — Use when you have an `image` and want to run it through several reverse-image engines at once from a right-click menu — returns matching pag

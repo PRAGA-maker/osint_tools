@@ -44,7 +44,7 @@ kind: group-index
 - **`freemaptools-com`** (medium) — Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radiu
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
 - **`generate-a-panorama`** (medium) — Use when you have a candidate viewpoint `geolocation` and a photo showing a horizon/mountain skyline — returns a labelled synthetic panorama
-- **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time
+- **`geocam-ru`** (medium) — Use when you have a `geolocation` (a city or place) and want live public webcam feeds there — returns real-time street/traffic/scenic camera
 - **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup

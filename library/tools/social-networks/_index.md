@@ -702,7 +702,6 @@ kind: group-index
 - **`twitwork`** (medium) — Electron/Node.js desktop app to monitor a live Twitter stream.
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
 - **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
-- **`twxplorer`** (medium) — OSINT tool: twXplorer.
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
 - **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 

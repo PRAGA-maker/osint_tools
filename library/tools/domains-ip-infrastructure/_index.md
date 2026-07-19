@@ -146,7 +146,7 @@ kind: group-index
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
 - **`dns-history`** (low) — OSINT tool: DNS History.
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
-- **`dnsquery`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — TwiSub-domain takeover tool
 - **`dnsstuff-tools`** (medium) — Includes domain tools, IP tools, networking tools, and email tools
 - **`domain-codex`** (low) — OSINT tool: Domain Codex.

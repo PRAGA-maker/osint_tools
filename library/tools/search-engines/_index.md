@@ -185,7 +185,7 @@ kind: group-index
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
-- **`datasploit-fogsec-mirror`** (medium) — OSINT framework to perform reconnaissance on companies, people, emails, domains, and phone numbers.
+- **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
 - **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
 - **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
@@ -370,7 +370,7 @@ kind: group-index
 - **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
 - **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`international-trademark-search`** (medium) — Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and d
-- **`internet-archive`** (medium) — OSINT tool: Internet Archive.
+- **`internet-archive`** (medium) — Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, a
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
 - **`ipse-io`** (medium) — OSINT tool: Ipse.io.

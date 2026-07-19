@@ -37,7 +37,6 @@ kind: group-index
 - **`behind-the-name-arabic-names`** (high) — Use when you have an Arabic `name` and want its meaning, script, and spelling/transliteration variants so you can search every plausible for
 - **`behindthenames`** (high) — Use when you have a `name` and want its variants, diminutives, foreign-language forms and etymology to widen a search — returns alternate `n
 - **`bellingcat-name-variant-search`** (high) — Use when you have a `name` and want every plausible spelling, transliteration, and nickname to search across — returns an expanded set of `n
-- **`beyond`** (medium) — OSINT tool: Beyond.
 - **`biographies-net`** (medium) — Use when you have a `name` of a notable-ish person and want a biographical summary — returns birth/death `dob`, profession, family `associat
 - **`british-phone-book`** (high) — Use when you have a UK `name` and want a residential landline listing with address — returns address and phone (landline).
 - **`buscapaginasblancas`** (high) — Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct bec
@@ -54,7 +53,7 @@ kind: group-index
 - **`cloob-com`** (high) — Historical reference only — Iran's "Facebook" people search, permanently shut down in 2021; returns nothing today, so route to archives or o
 - **`clustermaps`** (high) — Use when you have a `name` or `address` and want US resident/address intelligence — returns current and past residents, relatives/neighbors,
 - **`coeus-osint-toolbox`** (medium) — Use when you have a `username`, `email`, `phone`, or `domain` and want a GUI to run several OSINT lookups at once — returns `social-profile`
-- **`college-recruiter`** (medium) — OSINT tool: College Recruiter.
+- **`college-recruiter`** (medium) — Use when you have a `name` or `employer-org` and want to check entry-level/student job listings and employer pages — returns job postings an
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
 - **`crosslinked`** (medium) — Use when you have an `employer-org` and want to enumerate its employees' names and likely emails from LinkedIn — returns names and format-ge
 - **`cvfox`** (medium) — OSINT tool: CVFox.
