@@ -327,7 +327,6 @@ kind: group-index
 - **`karma-decay`** (medium) — Use when you have an `image` and want to find whether/where it was posted on Reddit — returns the Reddit submissions (subreddits, `username`
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
 - **`keepvid`** (low) — OSINT tool: KeepVid.
-- **`keyhole`** (medium) — OSINT tool: Keyhole.
 - **`khalil-shreateh-social-applications`** (medium) — More than 20 tools to extend the standard functionality of #Facebook, #TikTok, #Instagram, #Twitter (information gathering, random pickers f
 - **`khendrikse-netlify-app`** (high) — Use when you have a Mastodon handle (`username`@instance) and want its stable numeric account ID for API queries — a short guide returning t
 - **`khoji-github-com`** (high) — Use when you have a Snapchat `username` and want to download that user's full Bitmoji avatar history — returns image artifacts revealing app

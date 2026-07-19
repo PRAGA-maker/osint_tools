@@ -389,7 +389,7 @@ kind: group-index
 - **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
 - **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
 - **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.
-- **`google-scholar-search-tips`** (medium) — Google scholar search engine tips
+- **`google-scholar-search-tips`** (medium) — Use when you want to sharpen a Google Scholar query (author operators, phrase/field syntax) — returns the official help/reference for search
 - **`gouvernement-du-qu-bec`** (medium) — OSINT tool: Gouvernement du Québec.
 - **`gov-cy`** (high) — Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`,
 - **`gov-hk`** (high) — Use when you have a Hong Kong `employer-org`, `name`, or `address` and want official company/director records — routes to the Companies Regi

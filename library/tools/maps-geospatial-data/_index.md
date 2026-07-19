@@ -33,7 +33,7 @@ kind: group-index
 - **`earth`** (medium) — OSINT tool: Earth.
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
 - **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
-- **`emily-bz`** (medium) — OSINT tool: emily.bz.
+- **`emily-bz`** (medium) — Use when you have a Google Street View panorama URL and want its exact capture time — returns the precise timestamp (to ~2s) of that pano, a
 - **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally
 - **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
 - **`findlatitudeandlongitude-com`** (low) — Use when you have an `address` or a map point and want exact latitude/longitude (or the reverse) — returns `geolocation`.

@@ -330,7 +330,7 @@ kind: group-index
 - **`wikishootme`** (medium) — Use when you have a `geolocation` and want geotagged Wikipedia/Wikidata items and Commons images near it on a map — returns nearby `image`s 
 - **`wiman`** (low) — OSINT tool: Wiman.
 - **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce
-- **`world-population-density-map`** (medium) — Very detailed data. It's possible to look at the density not only by country and city, but also by individual metropolitan areas, towns, and
+- **`world-population-density-map`** (medium) — Use when you have a place (`geolocation`) and want fine-grained population-density context down to towns and metros — returns an interactive
 - **`worldcam`** (low) — OSINT tool: WorldCam.
 - **`worldmap-harvard`** (low) — Use when you need specialized GIS data layers (historical, demographic, environmental) overlaid on a base map to add context to a location, 
 - **`worldtimebuddy-com`** (low) — Use when you have a post/message timestamp and a candidate `geolocation` and want to convert between time zones — helps infer a subject's lo

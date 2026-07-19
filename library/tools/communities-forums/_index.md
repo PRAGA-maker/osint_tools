@@ -171,7 +171,7 @@ kind: group-index
 - **`itworldcanada`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`ivpaste`** (medium) — OSINT tool: ivpaste.
 - **`joomla`** (low) — OSINT tool: Joomla.
-- **`jsbin`** (medium) — OSINT tool: jsbin.
+- **`jsbin`** (medium) — Use when you have a `jsbin.com` link or need to inspect/preserve shared front-end code — returns the saved HTML/CSS/JS of a "bin" (a `docume
 - **`justfornurses-co-uk`** (medium) — Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, memb
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.

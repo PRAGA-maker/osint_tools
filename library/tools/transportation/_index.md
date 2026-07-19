@@ -139,7 +139,7 @@ kind: group-index
 - **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.
 - **`opensky-network`** (low) — Community, open source flight tracking network.
 - **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
-- **`orto-website`** (medium) — OSINT tool: Orto.website.
+- **`orto-website`** (medium) — Use when you have a US `vehicle-plate`, `vin`, or photo of a car and want its history and specs — returns make/model/year, VIN, specs, valua
 - **`oscar-job-function-codes-united-kingdom`** (medium) — Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a p
 - **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
 - **`panjiva-cargo`** (low) — OSINT tool: Panjiva (Cargo).

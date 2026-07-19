@@ -30869,38 +30869,51 @@
   },
   {
     "id": "jsbin",
-    "name": "jsbin",
-    "description": "OSINT tool: jsbin.",
-    "url": "https://Jsbin.com",
+    "name": "JS Bin",
+    "description": "Use when you have a `jsbin.com` link or need to inspect/preserve shared front-end code — returns the saved HTML/CSS/JS of a \"bin\" (a `document-id`) that may leak endpoints, keys or author hints.",
+    "url": "https://jsbin.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Reading or preserving shared front-end code snippets (\"bins\") that may expose leads.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create and view bins; a paid \"Pro\" tier adds private bins and extras. Public bins are viewable without an account.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public bin is passive and the author isn't notified. There's no global search, so you usually arrive via a shared link or a search-engine dork. Bins can embed live API calls — open untrusted bins' code as text/read-only rather than running them, and use a sandboxed browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known, long-running code playground; the platform is reputable, but bin *content* is arbitrary user code to be treated as unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "jsbin.com",
+      "JSBin"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "code-playground"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/jsbin.md"
   },
   {
@@ -131239,42 +131252,50 @@
   {
     "id": "world-population-density-map",
     "name": "World Population Density Map",
-    "description": "Very detailed data. It's possible to look at the density not only by country and city, but also by individual metropolitan areas, towns, and villages",
+    "description": "Use when you have a place (`geolocation`) and want fine-grained population-density context down to towns and metros — returns an interactive density map, useful background for geolocation reasoning.",
     "url": "https://luminocity3d.org/WorldPopDen/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Fine-grained (town/metro/village-level) population-density context for a location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free interactive visualization; no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing an aggregate density map is passive and involves no subject. Fully safe background research; standard browser hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An independent visualization built on public gridded-population datasets; the map is a rendering of that data, so it's context, not an authoritative record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LuminoCity population density",
+      "WorldPopDen"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "geolocation",
+      "population",
+      "map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/world-population-density-map.md"
   },
   {
@@ -157116,43 +157137,51 @@
   {
     "id": "emily-bz",
     "name": "emily.bz",
-    "description": "OSINT tool: emily.bz.",
+    "description": "Use when you have a Google Street View panorama URL and want its exact capture time — returns the precise timestamp (to ~2s) of that pano, a strong chronolocation signal (`metadata-exif`).",
     "url": "https://pano-date.emily.bz/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering the exact capture date/time of a Google Street View panorama for chronolocation.",
     "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; no account. Runs against Google's Street View data.",
+    "opsec": "passive",
+    "opsecNote": "You submit a Street View pano URL to the tool, which queries Google's imagery metadata — the subject is not involved and nothing is revealed to them. Passive chronolocation research; use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (GitHub + write-up) by the author; results derive from Google's own pano metadata, so the timestamp is as authoritative as Google's data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
+    "relatedTools": [],
+    "aliases": [
+      "pano-date",
+      "pano date resolver",
+      "Street View pano date"
     ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "geolocation",
+      "chronolocation",
+      "street-view"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/emily-bz.md"
   },
   {
@@ -166264,43 +166293,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/messaging/mothersearchbot.md"
-  },
-  {
-    "id": "movetodon",
-    "name": "Movetodon",
-    "description": "Get a list of your Twitter followings in Mastodon. With the ability to sort by date of registration, date of last activity, and buttons for quick subscriptions.",
-    "url": "https://movetodon.org/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Mastodon"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/movetodon.md"
   },
   {
     "id": "neuroautosearch",
@@ -235151,30 +235143,25 @@
   {
     "id": "google-scholar-search-tips",
     "name": "Google Scholar Search Tips",
-    "description": "Google scholar search engine tips",
+    "description": "Use when you want to sharpen a Google Scholar query (author operators, phrase/field syntax) — returns the official help/reference for searching Scholar precisely, not a lookup itself.",
     "url": "http://scholar.google.com/intl/en/scholar/help.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
+    "bestFor": "Reference on Google Scholar's search operators and author/phrase syntax.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official Google help page; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It's a static help/reference page — reading it involves no subject and no queries against anyone. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own documentation for Scholar; authoritative for how the search operators work.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -235183,15 +235170,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
+    "relatedTools": [
+      "google-scholar"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "Scholar search help"
+    ],
+    "tags": [
+      "academic",
+      "reference",
+      "search"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/google-scholar-search-tips.md"
   },
   {
@@ -267575,41 +267567,51 @@
   {
     "id": "vault",
     "name": "Vault",
-    "description": "Company culture research, salary benchmarking, and employee sentiment analysis",
+    "description": "Use when you have an `employer-org` and want company culture, rankings and employee-sentiment context — returns company profiles, industry rankings and internship/employer info (deep salary data is paid).",
     "url": "https://vault.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "Company culture research, salary benchmarking, and employee sentiment analysis",
-    "input": "Company name or industry",
-    "output": "Company profiles, employee reviews, rankings, and salary data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Company-culture, rankings and employer research to contextualize a subject's workplace.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free sign-up gives company profiles, rankings and career content; \"Vault Gold\" is a paid tier for deeper salary/insider data.",
     "opsec": "passive",
-    "opsecNote": "Queries processed through Vault servers; content sourced from employee submissions.",
+    "opsecNote": "Reading company profiles is passive and involves no individual subject. Creating a free account ties activity to an email — use a research address. Nothing here reaches or reveals a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established careers/employer-research brand; profiles and rankings are editorial + crowd-sourced sentiment, so treat as context, not authoritative fact about any individual.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "vault.com",
+      "Vault Gold"
+    ],
+    "tags": [
+      "company-profiles",
+      "employer-research",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/vault.md"
   },
   {
@@ -276604,42 +276606,49 @@
   {
     "id": "context-menu-search",
     "name": "Context Menu Search",
-    "description": "Chrome extension allowing users to search for selected text in different search engines using the right click menu.",
-    "url": "https://chrome.google.com/webstore/detail/context-menu-search/ocpcmghnefmdhljkoiapafejjohldoga?hl=en",
+    "description": "Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine search to the context menu.",
+    "url": "https://chromewebstore.google.com/detail/context-menu-search/ocpcmghnefmdhljkoiapafejjohldoga",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Right-click searching selected text across many configurable engines from the context menu.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free core (add up to ~40 engines); an optional paid tier adds AI prompts, sub-menus and multi-launch. No account for the free features.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The extension only builds context-menu links to search engines locally; the searches themselves run on whichever engine you pick and are logged there against your IP/fingerprint. Run it in a dedicated sock-puppet browser profile when investigating a live subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Popular third-party extension (~90k users, 4.5★, no violation history); workflow glue that adds no data of its own.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "search-all"
+    ],
+    "aliases": [
+      "Context Menu Search extension"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search",
+      "search",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/context-menu-search.md"
   },
   {
@@ -309216,24 +309225,29 @@
   {
     "id": "youcare",
     "name": "YouCare",
-    "description": "Charitable search engine that allows you to choose an environmental project to support with your search.",
+    "description": "Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns aggregated web results from an alternative front end.",
     "url": "https://youcare.world",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A privacy-leaning, alternative-front-end web search for second-opinion results.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free charitable search engine; ad revenue funds environmental projects. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A web search is passive toward the subject. YouCare is a front end over an upstream search provider and states a privacy-respecting stance, but you're still trusting its operator with your queries — use a clean/sock-puppet browser as usual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A charitable search front end (not its own crawler); result quality tracks the upstream engine it wraps, so treat it as an alternative view rather than an authoritative index.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -309242,15 +309256,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+    "relatedTools": [],
+    "aliases": [
+      "youcare.world"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "search",
+      "privacy"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/youcare.md"
   },
   {
@@ -326761,48 +326777,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/keepvid.md"
-  },
-  {
-    "id": "keyhole",
-    "name": "Keyhole",
-    "description": "OSINT tool: Keyhole.",
-    "url": "https://keyhole.co",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/keyhole.md"
   },
   {
     "id": "khalil-shreateh-social-applications",
@@ -362846,35 +362820,56 @@
   {
     "id": "orto-website",
     "name": "Orto.website",
-    "description": "OSINT tool: Orto.website.",
+    "description": "Use when you have a US `vehicle-plate`, `vin`, or photo of a car and want its history and specs — returns make/model/year, VIN, specs, valuation and damage/accident history (owner PII is paid, via a partner).",
     "url": "https://orto.website/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free US license-plate / VIN / photo lookup returning vehicle make-model-year, specs and history.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "vin",
+      "image"
+    ],
+    "selectorsOut": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives make/model/year, specs, valuation and basic history from a plate/VIN/photo. Owner details are not free — routed to a paid partner (Info Tracer); stay on the free vehicle-data side.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a plate/VIN against public DMV-derived data is passive toward the subject — no notification. It uses the app/website's own backend, which logs your queries; use a sock-puppet account/app install. Do NOT proceed into the paid owner-details flow if you want to stay passive and free.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "mobile-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial ALPR/vehicle-data service (Orto Labs) with a genuine free vehicle-history tier; data is DMV/aggregator-derived, so treat specifics as leads to confirm.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "askmid"
+    ],
+    "aliases": [
+      "Orto",
+      "Orto Labs",
+      "ORTO License Plate VIN Check"
+    ],
+    "tags": [
+      "vehicle",
+      "alpr",
+      "license-plate"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/orto-website.md"
   },
   {

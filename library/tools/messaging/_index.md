@@ -94,7 +94,6 @@ kind: group-index
 - **`mastovue`** (low) — Use when you have a hashtag or topic and want to browse matching Mastodon accounts/posts across the fediverse without an account — returns `
 - **`mnp-bot`** (high) — Use when you have a `phone` number and want its geographic region and mobile carrier via a Telegram bot — returns region/operator context on
 - **`mothersearchbot`** (high) — Use when you have a `username`, `name` or keyword and want to search across Telegram for channels, groups and messages mentioning it — retur
-- **`movetodon`** (medium) — Get a list of your Twitter followings in Mastodon. With the ability to sort by date of registration, date of last activity, and buttons for 
 - **`neuroautosearch`** (high) — Use when you have a Russian `vehicle-plate` or `vin` and want owner/vehicle history details via a Telegram bot — returns vehicle data and po
 - **`now-gg`** (high) — Use when you need to run a mobile messaging/social app (WhatsApp, Telegram, TikTok, etc.) in a disposable cloud Android instance — OpSec inf
 - **`oksearch`** (high) — Use when you have a `name`/`username`/keyword and want to find Telegram channels, groups, and posts mentioning it — returns social-profile l

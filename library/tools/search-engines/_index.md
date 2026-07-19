@@ -163,7 +163,7 @@ kind: group-index
 - **`command-e`** (medium) — Universal search and productivity app
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
 - **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
-- **`context-menu-search`** (medium) — Chrome extension allowing users to search for selected text in different search engines using the right click menu.
+- **`context-menu-search`** (medium) — Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine
 - **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
 - **`copyright-search`** (medium) — Search copyright infringement complaints against websites
 - **`core`** (low) — OSINT tool: Core.
@@ -846,7 +846,7 @@ kind: group-index
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
-- **`youcare`** (medium) — Charitable search engine that allows you to choose an environmental project to support with your search.
+- **`youcare`** (medium) — Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns ag
 - **`youdao-search-engine-china`** (medium) — Chinese based web search engine by NetEase
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
