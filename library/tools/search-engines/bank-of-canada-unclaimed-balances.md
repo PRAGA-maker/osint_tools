@@ -40,6 +40,7 @@ tags:
 - financial-records
 source: toddington-resources
 lastVerified: '2026-07-19'
+enrichment: full
 ---
 
 # Bank of Canada Unclaimed Balances

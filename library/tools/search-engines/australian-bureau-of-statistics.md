@@ -39,6 +39,7 @@ tags:
 - australia
 source: toddington-resources
 lastVerified: '2026-07-19'
+enrichment: full
 ---
 
 # Australian Bureau of Statistics

@@ -44,6 +44,7 @@ tags:
 - jobs
 source: toddington-resources
 lastVerified: '2026-07-19'
+enrichment: full
 ---
 
 # Indeed Job Search Engine (Canada)

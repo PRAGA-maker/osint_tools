@@ -496,7 +496,7 @@ kind: group-index
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
 - **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
-- **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
+- **`repos-timeline`** (low) — Use when you have a GitHub `username` and want their activity over time — returns a chronological timeline of the user's repositories and fo
 - **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna
 - **`return-youtube-comment-username`** (medium) — Use when you are reading YouTube comments and want the legacy `username` behind an @handle — a browser extension that restores the old displ
 - **`rival-iq`** (high) — Use when you have a public `social-profile`/`username` and want its cross-platform posting history, engagement metrics and audience behaviou
@@ -653,7 +653,6 @@ kind: group-index
 - **`ttsave-app-2`** (high) — Use when you have a TikTok video or profile URL and want to download the media without watermark or login — returns the video, thumbnail `im
 - **`tumblr-search`** (medium) — OSINT tool: Tumblr Search.
 - **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
-- **`twazzup`** (medium) — OSINT tool: Twazzup.
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.
 - **`tweepsmap-unfollows`** (medium) — displayed unsubscribed accounts (list for the one week available for free)

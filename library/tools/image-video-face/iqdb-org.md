@@ -37,6 +37,7 @@ tags:
 - anime
 source: cyb-detective
 lastVerified: '2026-07-19'
+enrichment: full
 ---
 
 # IQDB.org

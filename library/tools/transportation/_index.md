@@ -139,7 +139,7 @@ kind: group-index
 - **`nada-guides`** (medium) — Vehicle-related website that identifies vehicles by type and model based on entered information
 - **`national-insurance-crime-bureau-vin-search`** (medium) — OSINT tool: National Insurance Crime Bureau(Vin Search).
 - **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
-- **`noaa-fisheries-vessel-search`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai
 - **`nomerogram-ru`** (medium) — OSINT tool: Nomerogram.ru.
 - **`number-plate-check`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — retu
 - **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.

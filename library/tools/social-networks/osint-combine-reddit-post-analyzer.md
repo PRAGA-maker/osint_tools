@@ -38,6 +38,7 @@ tags:
 - pattern-of-life
 source: osintambition-social
 lastVerified: '2026-07-19'
+enrichment: full
 relatedTools:
 - facebook-geo
 - instagram-explorer

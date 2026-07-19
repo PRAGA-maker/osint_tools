@@ -700,7 +700,7 @@ kind: group-index
 - **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
 - **`ohio`** (high) — Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and off
 - **`oklahoma-offender-search`** (high) — Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, 
-- **`oklahoma-registered-voter-verification`** (medium) — Oklahoma registered voter verification and search
+- **`oklahoma-registered-voter-verification`** (medium) — Use when you have a `name` and want to confirm an Oklahoma voter registration — returns a registration match (and, on the official portal, p
 - **`oklahoma-voters-search`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details — returns registration data (address/precinct) from Oklahoma vote
 - **`oklavoters-com`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details (address, party, precinct) — returns address, name, dob.
 - **`on-demand-court-records`** (high) — Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), fi
@@ -770,7 +770,6 @@ kind: group-index
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
 - **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
 - **`police1`** (medium) — OSINT tool: Police1.
-- **`policebrutalitydatabase-org`** (medium) — OSINT tool: Policebrutalitydatabase.org.
 - **`policecrime-bgsu-edu`** (medium) — OSINT tool: Policecrime.bgsu.edu.
 - **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code
@@ -1041,7 +1040,6 @@ kind: group-index
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
 - **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
 - **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`
-- **`xrefer`** (medium) — OSINT tool: XRefer.
 - **`yahoo-finance`** (medium) — Use when you have a company `name`/ticker or an `employer-org` and want its corporate profile — returns HQ `address`, key executives (`name`
 - **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye
 - **`yearbooks-myheritage`** (high) — Use when you have a `name` and want an older photo and school context — searches digitized US school yearbooks and returns yearbook images, 

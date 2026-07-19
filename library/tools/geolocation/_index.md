@@ -250,7 +250,7 @@ kind: group-index
 - **`radioid-database`** (low) — OSINT tool: RadioID Database.
 - **`radioreference`** (low) — OSINT tool: RadioReference.
 - **`rain-alarm`** (medium) — shows where it is raining on the map. You can enable notification of approaching rain (in the browser and in the mobile app)
-- **`rally-maps`** (medium) — A worldwide map showing thousands of race (regular and one-off) locations. It's possinle to find names of winners, routes, dates and other d
+- **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
 - **`rivermap`** (medium) — Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): directi
