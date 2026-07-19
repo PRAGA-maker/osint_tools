@@ -323,7 +323,7 @@ kind: group-index
 - **`subtitlevideo`** (medium) — Extract subtitles from video
 - **`svg-editor`** (high) — Use when you have an SVG `image` and want to inspect, edit, annotate or redact it in-browser — returns a modified image/vector, useful for m
 - **`tactiq-io`** (high) — Use when you have a YouTube video URL (`social-profile` / `metadata`) and want its full spoken transcript to mine for names, places and date
-- **`tagrum`** (medium) — Upload a video file to the site or leave a link to the video. Wait a few minutes. Get a subtitled version of the video in English (other lan
+- **`tagrum`** (medium) — Use when you have a foreign-language video (uploaded or a social link) and want to understand what's said — returns an AI-translated, Englis
 - **`teachingprivacy-com`** (high) — Use when you have a `username` and want to visualise the geotagged posting history behind a public Twitter/Instagram account — was built to 
 - **`ted`** (medium) — Use when you have a `name` and think the subject gave a TED/TEDx talk, and you want their video, bio, headshot and topic — returns `image`, 
 - **`telegram-facemath-bot`** (high) — Use when you have a `face`/`image` and want to find that person in an archive of public-event photos from Kazakhstan — returns matching even

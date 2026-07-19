@@ -678,7 +678,7 @@ kind: group-index
 - **`nypd-officer-profile`** (medium) — Use when you have an NYPD officer's `name` or shield/tax number and want their official record — returns rank/shield history, commands, awar
 - **`nz-certificates-online-new-zealand`** (high) — Use when you have a `name` (plus a `dob`/event detail) and want a certified New Zealand birth, death or marriage certificate — returns an of
 - **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`
-- **`oanda`** (medium) — Currency converter, view historial and live exchange rates
+- **`oanda`** (medium) — Use when you have a money amount and a date and want the exchange rate then — returns historical and live currency conversion at a chosen da
 - **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
 - **`obsidian-cli`** (medium) — Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with an
 - **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp

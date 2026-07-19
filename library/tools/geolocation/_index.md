@@ -166,7 +166,7 @@ kind: group-index
 - **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
 - **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
 - **`localfocus-nl-geokit`** (medium) — geographic toolkit for investigative journalists
-- **`localtimes-info`** (medium) — OSINT tool: localtimes.info.
+- **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lookr`** (medium) — OSINT tool: Lookr.
 - **`lost-places-map`** (medium) — A map of independent research reports on urban spaces that are published in the Lost places Facebook community
 - **`lostplace-atlas`** (medium) — Google map of lost places in Germany and other Europe countries
@@ -223,7 +223,6 @@ kind: group-index
 - **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
 - **`opentopia`** (low) — OSINT tool: Opentopia.
 - **`osm-smart-menu`** (medium) — Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)
-- **`osmaps-radius`** (medium) — drawing circles with a certain radius on the map
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 
 - **`outage-map`** (low) — OSINT tool: Outage map.
 - **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects

@@ -74,7 +74,7 @@ kind: group-index
 - **`aort`** (low) — All in one domain recon tool: portscan; email services enumeration; subdomain information gathering; find info in Wayback Machine and more.
 - **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
 - **`api-mylnikov-org`** (low) — get lattitude and longitude by WiFI BBSID
-- **`apnic`** (medium) — OSINT tool: APNIC.
+- **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,
 - **`appsumo-content-analyzer`** (low) — Enter the name of the domain and find out for free its three most popular publications in social networks (for six months, a quarter, a mont
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
 - **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y

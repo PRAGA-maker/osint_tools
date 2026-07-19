@@ -12,7 +12,7 @@ kind: group-index
 - **`ftp-search/`** — 2 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
-- **`news-search/`** — 13 skill(s) below.
+- **`news-search/`** — 12 skill(s) below.
 - **`other-search/`** — 3 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
@@ -109,7 +109,6 @@ kind: group-index
 - **`bing-advanced-search-options`** (medium) — Website showing Bings reference list of advanced search engine operators
 - **`bing-news`** (low) — OSINT tool: Bing News.
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
-- **`binparcel-com`** (medium) — OSINT tool: Binparcel.com.
 - **`bizjournals-business-news-search`** (medium) — Business-related news from over 4 million news articles
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items

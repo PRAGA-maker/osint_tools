@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8074 total · 3753 full · 4321 stub (46% enriched)
+**Tools:** 8071 total · 3758 full · 4313 stub (46% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3489 · medium: 2623 · high: 1962
+low: 3489 · medium: 2620 · high: 1962
 
 ## Tools by trust
-community: 3405 · unverified: 3385 · trusted: 1272 · personal: 6 · untrustworthy: 6
+community: 3406 · unverified: 3378 · trusted: 1275 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -20,19 +20,19 @@ community: 3405 · unverified: 3385 · trusted: 1272 · personal: 6 · untrustwo
 - `dark-web` — 18/118
 - `dating-classifieds` — 48/109
 - `documents-metadata` — 26/314
-- `domains-ip-infrastructure` — 75/745
+- `domains-ip-infrastructure` — 76/745
 - `email` — 244/246
 - `evidence-capture` — 6/31
 - `financial-crypto` — 38/127
-- `geolocation` — 239/348
-- `image-video-face` — 415/469
-- `maps-geospatial-data` — 37/139
+- `geolocation` — 240/347
+- `image-video-face` — 416/469
+- `maps-geospatial-data` — 38/139
 - `messaging` — 161/190
 - `opsec-investigator-tooling` — 27/562
 - `people-search` — 239/264
 - `phone` — 134/137
-- `public-records` — 726/1094
-- `search-engines` — 313/922
+- `public-records` — 727/1094
+- `search-engines` — 313/920
 - `social-networks` — 648/837
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
@@ -42,14 +42,14 @@ community: 3405 · unverified: 3385 · trusted: 1272 · personal: 6 · untrustwo
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1033 leaves
-- `library/tools/search-engines` — 859 leaves
+- `library/tools/search-engines` — 858 leaves
 - `library/tools/social-networks` — 809 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 504 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
 - `library/tools/communities-forums` — 383 leaves
 - `library/tools/image-video-face` — 373 leaves
-- `library/tools/geolocation` — 333 leaves
+- `library/tools/geolocation` — 332 leaves
 - `library/tools/documents-metadata` — 263 leaves
 - `library/tools/people-search` — 254 leaves
 - `library/tools/email` — 222 leaves
@@ -75,7 +75,6 @@ community: 3405 · unverified: 3385 · trusted: 1272 · personal: 6 · untrustwo
 - `library/tools/documents-metadata/hosted-automated-analysis` — 14 leaves
 - `library/tools/domains-ip-infrastructure/whois-records` — 14 leaves
 - `library/tools/people-search/general-people-search` — 13 leaves
-- `library/tools/search-engines/news-search` — 13 leaves
 
 ## Source exhaustion (Go Deep)
 
