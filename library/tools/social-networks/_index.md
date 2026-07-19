@@ -65,7 +65,7 @@ kind: group-index
 - **`blueskymeter-com`** (high) — Use when you have a Bluesky `username` (handle) and want public account analytics — returns follower/engagement metrics and profile activity
 - **`bot-sentinel-dashboard-bot-sentinel`** (low) — OSINT tool: Bot Sentinel Dashboard ‹ Bot Sentinel.
 - **`botometer-by-osome`** (low) — OSINT tool: Botometer by OSoMe.
-- **`botometer`** (medium) — OSINT tool: Botometer.
+- **`botometer`** (medium) — Use when you have a Twitter/X `username` and want a bot-likelihood score for the account — returns a bot/human probability and behavioural s
 - **`botslayer`** (low) — OSINT tool: BotSlayer.
 - **`brandwatch`** (high) — Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, se
 - **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
@@ -648,7 +648,6 @@ kind: group-index
 - **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.
-- **`tweepsmap-unfollows`** (medium) — displayed unsubscribed accounts (list for the one week available for free)
 - **`tweet-archive-search`** (high) — Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile
 - **`tweet-beaver-friends-following`** (low) — Use when you have two Twitter/X `username`s and want to see the accounts they both follow or that follow both — returns the overlapping `soc
 - **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ
@@ -700,7 +699,6 @@ kind: group-index
 - **`twitter-search-tool`** (high) — Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter acco
 - **`twitter-search`** (high) — Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns twe
 - **`twitter-shadow-ban-checker`** (medium) — If you suddenly notice that your account's tweets have decreased in views and the flow of audience has slowed down, it's worth checking to s
-- **`twitter-shadowban-test`** (medium) — OSINT tool: Twitter Shadowban Test.
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — Use when you have a Twitter/X conversation or profile URL and want it captured as data — returns tweet text, usernames, profile pictures and
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f

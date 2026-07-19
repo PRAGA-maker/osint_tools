@@ -825,7 +825,7 @@ kind: group-index
 - **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
 - **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`wikisummaries`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
-- **`wikitravel`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
 - **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
 - **`wiley`** (low) — OSINT tool: Wiley.
 - **`wintria`** (low) — OSINT tool: Wintria.

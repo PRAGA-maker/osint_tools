@@ -225,7 +225,7 @@ kind: group-index
 - **`musipedia-music-search-engine`** (high) — Use when you have a melody (hummed, whistled, or tapped) — e.g. background music in a subject's video — and want to identify the tune; retur
 - **`mxface-ai`** (high) — Use when you have two photos and need a 1:1 face-match score (same person or not), or face detection/landmarks — returns a similarity score 
 - **`myheritage-photo-enhancer`** (high) — Use when a missing-person photo is blurry/low-res and you need an AI-sharpened, face-focused version for human review — returns an enhanced 
-- **`nasa-earthdata-search`** (medium) — search in 8555+ collection and photos.
+- **`nasa-earthdata-search`** (medium) — Use when you have a `geolocation` (bounding box) and a date range and want satellite/earth-observation imagery and data covering it — return
 - **`neural-network-image-super-resolution-and-enhancement`** (high) — Use when a lead photo is too small/low-res and you need AI upscaling to a larger, clearer image for human review — returns an upscaled image
 - **`news-myseldon`** (medium) — Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and
 - **`noaa-data-access-viewer`** (low) — Use when you have a coastal U.S. `geolocation` and want authoritative imagery, land-cover, and lidar elevation data for it — returns downloa

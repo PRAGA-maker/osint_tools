@@ -110182,43 +110182,44 @@
   {
     "id": "bitcoin-org",
     "name": "bitcoin.org",
-    "description": "OSINT tool: bitcoin.org.",
+    "description": "Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — returns links to the actual tracing tools, not lookups itself.",
     "url": "https://bitcoin.org/en/resources",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
+    "bestFor": "Finding trustworthy starting-point tools (block explorers, mempool.space, on-chain analytics, glossaries) when beginning a Bitcoin investigation.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The page and everything it links are free/open-source; bitcoin.org is community-funded and asks only for donations.",
+    "opsec": "passive",
+    "opsecNote": "This is a static resource-directory page — reading it discloses nothing about a target. The tools it links to (e.g. block explorers) have their own OpSec considerations; treat those separately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "bitcoin.org is a long-standing community-maintained educational hub (historically the reference site for the Bitcoin project); it is a curated link directory, not a data source, so trust flows to the tools it points at.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "bitcoin.org resources"
+    ],
     "tags": [
       "cryptosites",
-      "CryptoCurrency Related Sites"
+      "CryptoCurrency Related Sites",
+      "directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin-org.md"
   },
   {
@@ -115186,42 +115187,49 @@
   {
     "id": "24timezones-com",
     "name": "24timezones.com",
-    "description": "OSINT tool: 24timezones.com.",
+    "description": "Use when you have a `geolocation` (city/country) and want its current local time, UTC offset, and DST state — returns the local wall-clock time and zone so you can localize a timestamp to where your subject was.",
     "url": "https://24timezones.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a known instant into the correct local time at a place, and checking a location's UTC offset / daylight-saving status for a given date.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free world-clock, time-zone converter, and meeting planner. Optional embeddable widgets are also free; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You are looking up a place's time zone, not touching the subject. Fully passive; nothing is disclosed about who you are investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running (since 2005) consumer world-clock site; zone/offset data matches the standard IANA tz database, so the values are checkable against any other clock.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "24timezones",
+      "24timezones world clock"
+    ],
     "tags": [
       "timezones",
-      "Time Zones & Converters"
+      "Time Zones & Converters",
+      "world-clock"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/24timezones-com.md"
   },
   {
@@ -118439,42 +118447,47 @@
   {
     "id": "epochconverter-io",
     "name": "epochconverter.io",
-    "description": "OSINT tool: epochconverter.io.",
+    "description": "Use when you have a raw Unix/epoch timestamp pulled from `metadata-exif`, a log, a filename, or an API response and want the human-readable UTC/local date-time — returns the decoded calendar date and time.",
     "url": "https://www.epochconverter.io/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a numeric epoch timestamp (seconds/milliseconds/microseconds/nanoseconds) into a readable date, and back again.",
     "selectorsIn": [
-      "geolocation"
+      "metadata-exif"
     ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, browser-side converter. No account, no rate limit, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Conversion happens in your browser against a static tool; you are not submitting the target's data to any lookup service. Fully passive. (For sensitive values, note the number still travels through the page's JS — but no identity is disclosed.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A single-purpose community timestamp converter; the arithmetic is verifiable against any other epoch tool, so trust the math rather than the operator.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "epochconverter.io",
+      "epoch timestamp converter"
+    ],
     "tags": [
       "timezones",
-      "Time Zones & Converters"
+      "Time Zones & Converters",
+      "timestamp"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/epochconverter-io.md"
   },
   {
@@ -124201,42 +124214,49 @@
   {
     "id": "meteoblue",
     "name": "MeteoBlue",
-    "description": "Weather stats data",
+    "description": "Use when you have a `geolocation` and a date and want the historical or forecast weather conditions there — returns weather archive data (temperature, precipitation, wind, cloud cover) tied to a place and time.",
     "url": "https://www.meteoblue.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Reconstructing what the weather was doing at a specific place and time (e.g. corroborating a witness account, dating a photo, or assessing search conditions).",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core forecasts and the point-and-click \"Weather Archive / History & Climate\" pages are free with ads. Ad-free (~€9/yr) and \"point+\" high-resolution history (~€50/yr) are paid; the free archive is enough for most investigative corroboration.",
+    "opsec": "passive",
+    "opsecNote": "You are querying a public weather site about a place, not a person. Nothing about the subject is disclosed to Meteoblue. Fully passive; no sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by meteoblue AG (spun out of the University of Basel); a long-established meteorological data provider, not a scraper.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "meteoblue.com",
+      "meteoblue Weather Archive"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "weather"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/meteoblue.md"
   },
   {
@@ -145671,40 +145691,51 @@
   {
     "id": "nasa-earthdata-search",
     "name": "NASA Earthdata Search",
-    "description": "search in 8555+ collection and photos.",
+    "description": "Use when you have a `geolocation` (bounding box) and a date range and want satellite/earth-observation imagery and data covering it — returns matching granules (imagery, thermal, land-cover) you can preview and download.",
     "url": "https://search.earthdata.nasa.gov/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding dated satellite/aerial imagery and earth-observation data over a specific area and time window (scene reconstruction, environmental context, change over time).",
     "selectorsIn": [
-      "image"
+      "geolocation"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "All NASA Earthdata is free. Browsing and searching need no login; downloading most collections requires a free Earthdata Login (NASA URS) account.",
+    "opsec": "passive",
+    "opsecNote": "You search public satellite archives by area and date; nothing about your subject is revealed. Passive. Note downloads are tied to your Earthdata Login account, so use a research account, not a personal one you want kept separate.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by NASA's Earth Science Data and Information System (ESDIS); the authoritative first-party portal to NASA/USGS earth-observation archives.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Earthdata Search",
+      "search.earthdata.nasa.gov"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Satellite/aerial imagery"
+      "Satellite/aerial imagery",
+      "earth-observation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "firms",
       "nasa-firms",
@@ -158451,35 +158482,50 @@
   {
     "id": "inciweb",
     "name": "InciWeb",
-    "description": "OSINT tool: InciWeb.",
-    "url": "https://inciweb.nwcg.gov/",
+    "description": "Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size, dates, evacuation and closure info for that area.",
+    "url": "https://inciweb.wildfire.gov/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Establishing whether an active US wildfire, its evacuations, or road/area closures affected a place at a given time (search planning, timeline corroboration).",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official US government service. No account or payment; some data is also available as downloadable feeds/KML.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public government incident site — you query fire locations, never the subject. Fully passive; nothing about your investigation is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US National Wildfire Coordinating Group (NWCG) on a .gov domain — the authoritative inter-agency source for US wildfire incident information.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Incident Information System",
+      "inciweb.wildfire.gov",
+      "inciweb.nwcg.gov"
+    ],
+    "tags": [
+      "wildfire",
+      "emergency",
+      "Maps, Geolocation and Transport"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/inciweb.md"
   },
   {
@@ -307616,24 +307662,29 @@
   {
     "id": "wikitravel",
     "name": "Wikitravel",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on travel",
-    "url": "http://wikitravel.org",
+    "description": "Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, \"get in/get around\" logistics — returns background context to interpret a location, not personal data.",
+    "url": "https://wikitravel.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting a fast human-written orientation to an unfamiliar destination (layout, transport hubs, districts, common tourist routes) referenced in an investigation.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, ad-supported community wiki. No account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public travel wiki reveals nothing about your subject and touches no target infrastructure. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced and community-edited; largely frozen since most contributors forked to Wikivoyage (2012), so entries can be dated and some pages carry spam. Corroborate specifics.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -307642,15 +307693,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wikitravel.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "travel"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "wikitravel-org"
     ],
@@ -312411,43 +312465,51 @@
   {
     "id": "botometer",
     "name": "Botometer",
-    "description": "OSINT tool: Botometer.",
-    "url": "https://botometer.iuni.iu.edu",
+    "description": "Use when you have a Twitter/X `username` and want a bot-likelihood score for the account — returns a bot/human probability and behavioural sub-scores, from pre-June-2023 archival data.",
+    "url": "https://botometer.osome.iu.edu/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Assessing whether a Twitter/X account is automated/inauthentic when weighing how much to trust a \"sighting\" or lead posted by that account.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "geolocation"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to query. The public web form is limited; programmatic scoring requires a RapidAPI key (free tier) plus Twitter/X API credentials, which are now costly — hence the tool's archival-only state.",
+    "opsec": "passive",
+    "opsecNote": "You look up a public account's bot score; the target is not notified. Scoring is passive. Do not read the score as proof of identity or intent — it is a probabilistic signal only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and published by Indiana University's Observatory on Social Media (OSoMe); peer-reviewed methodology. The limitation is data freshness, not credibility.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Botometer X",
+      "BotometerLite",
+      "OSoMe Botometer"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "bot-detection"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "relatedTools": [
       "botometer-by-osome",
       "botslayer",
@@ -344712,43 +344774,6 @@
     "_file": "library/tools/social-networks/twitter/analytics/profile/tweepsect.md"
   },
   {
-    "id": "tweepsmap-unfollows",
-    "name": "Tweepsmap Unfollows",
-    "description": "displayed unsubscribed accounts (list for the one week available for free)",
-    "url": "https://tweepsmap.com/dash/unfollows",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweepsmap-unfollows.md"
-  },
-  {
     "id": "tweet-archive-search",
     "name": "Tweet Archive Search",
     "description": "Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile` activity and post content.",
@@ -347546,48 +347571,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twitter-shadow-ban-checker.md"
-  },
-  {
-    "id": "twitter-shadowban-test",
-    "name": "Twitter Shadowban Test",
-    "description": "OSINT tool: Twitter Shadowban Test.",
-    "url": "https://shadowban.eu",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitter-shadowban-test.md"
   },
   {
     "id": "twitter-trending-hashtags-and-topics",

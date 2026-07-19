@@ -31,7 +31,7 @@ kind: group-index
 - **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
 - **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.
 - **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
-- **`bitcoin-org`** (medium) — OSINT tool: bitcoin.org.
+- **`bitcoin-org`** (medium) — Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — retur
 - **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —
 - **`bitcoinwhoswho`** (low) — OSINT tool: Bitcoinwhoswho.
 - **`bitinfocharts-com`** (medium) — OSINT tool: bitinfocharts.com.

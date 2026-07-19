@@ -13,7 +13,7 @@ kind: group-index
 - **`mobile-coverage/`** — 4 skill(s) below.
 
 ## Skills here
-- **`24timezones-com`** (medium) — OSINT tool: 24timezones.com.
+- **`24timezones-com`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time, UTC offset, and DST state — returns the local wall-clock t
 - **`511on-ca`** (low) — OSINT tool: 511on.ca.
 - **`acled-data-crisis-map`** (medium) — Use when you have a `geolocation` and want dated political-violence, protest, and conflict events there — returns geolocated events with dat
 - **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
@@ -74,7 +74,7 @@ kind: group-index
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
 - **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
 - **`epochconverter-com`** (medium) — OSINT tool: epochconverter.com.
-- **`epochconverter-io`** (medium) — OSINT tool: epochconverter.io.
+- **`epochconverter-io`** (medium) — Use when you have a raw Unix/epoch timestamp pulled from `metadata-exif`, a log, a filename, or an API response and want the human-readable 
 - **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
 - **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.
 - **`european-world-translator`** (low) — Use when you have a foreign word/label and want to see how it translates across European languages on a map — returns a per-country translat
@@ -191,7 +191,7 @@ kind: group-index
 - **`maps-app-by-apple`** (high) — Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level "Look Ar
 - **`measuremaponline`** (medium) — Use when you have a `geolocation` and want to measure real-world distances, areas, and perimeters on satellite imagery — returns measurement
 - **`measuretool-googlemaps-v3`** (low) — Use when you have a `geolocation`/map area and want to measure real distances and areas on it — click waypoints on Google Maps to get length
-- **`meteoblue`** (medium) — Weather stats data
+- **`meteoblue`** (medium) — Use when you have a `geolocation` and a date and want the historical or forecast weather conditions there — returns weather archive data (te
 - **`mgrs-mapper`** (low) — Use when you have an MGRS/military grid reference or need to plot one on a map — returns an interactive map with MGRS grid overlay to transl
 - **`mindat-org`** (low) — Use when an `image` or sample shows a distinctive rock/mineral and you want to narrow where it came from — returns mineral locality data and
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.

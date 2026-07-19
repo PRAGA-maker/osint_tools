@@ -67,7 +67,7 @@ kind: group-index
 - **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.
 - **`hitta-se`** (low) — Mapping service for Sweden
 - **`howtogeek-com`** (medium) — OSINT tool: howtogeek.com.
-- **`inciweb`** (medium) — OSINT tool: InciWeb.
+- **`inciweb`** (medium) — Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
 - **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
