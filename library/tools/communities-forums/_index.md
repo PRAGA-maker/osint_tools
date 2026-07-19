@@ -38,7 +38,6 @@ kind: group-index
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
-- **`blackplanet`** (medium) — Community networking website
 - **`blogger`** (medium) — Service by Google for hosting and publishing blogs
 - **`bloglovin`** (medium) — Website related to social networking and blogging
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa

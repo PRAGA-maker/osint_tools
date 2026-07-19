@@ -116,7 +116,7 @@ kind: group-index
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
-- **`web-archive-org`** (medium) — OSINT tool: web.archive.org.
+- **`web-archive-org`** (medium) — Use when you have a domain/URL and want its historical snapshots — returns past versions of a page (deleted content, old contact details, pr
 - **`web-archives-chrome-google-com`** (medium) — Use when you have a `domain`/URL and want archived or cached copies of it fast — a browser extension that queries Wayback, Archive.today, Go
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.
 - **`web-cache-viewer-chrome-google-com`** (medium) — Use when you have a `domain`/URL and want an archived copy of a page — right-click to open its Wayback Machine or Google Cache version, retu

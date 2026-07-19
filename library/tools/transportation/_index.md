@@ -96,7 +96,7 @@ kind: group-index
 - **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
-- **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
+- **`inmarsat-ships-directory`** (medium) — Use when you have a vessel name/ID and want its satellite contact numbers — returns Inmarsat mobile numbers (phone/telex/fax) for ships fitt
 - **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries
 - **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi
 - **`investigative-dashboard`** (medium) — Use when you have a company or person and want to find the right corporate/land/court registry to trace ownership across borders — returns a

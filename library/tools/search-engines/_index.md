@@ -337,7 +337,7 @@ kind: group-index
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Hacker News search engine with filters. Useful for finding all mentions of a product or person.
 - **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
-- **`hawaii-professional-and-vocational-license-search`** (medium) — State of Hawaiis professional and vocational licensing search utility
+- **`hawaii-professional-and-vocational-license-search`** (medium) — Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and th
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
 - **`highwire-free-online-full-text-articles`** (low) — OSINT tool: HighWire: Free Online Full-text Articles.

@@ -272,7 +272,7 @@ kind: group-index
 - **`igexport-export-instagram-chrome-google-com`** (high) — Use when you have an Instagram `social-profile` and want its full follower/following list as a spreadsheet — returns username, name, image, 
 - **`imginn`** (medium) — Use when you have an Instagram `username` and want to view/download their public posts, stories and tagged photos anonymously — returns imag
 - **`imgur`** (medium) — Use when you have a `username`, keyword or an `image` lead and want to find hosted images/albums and a user's uploads — returns images, albu
-- **`improve-youtube`** (medium) — extension with dozens of different tweaks to the standard #YouTube interface
+- **`improve-youtube`** (medium) — Use when you need to analyse a YouTube video closely — a browser extension adding frame-stepping, speed control, loop, zoom and screenshot t
 - **`inaturalist-org`** (high) — Use when you have a `username`/`name` on iNaturalist and want their nature observations — returns geotagged, time-stamped observation photos
 - **`indownloader-app-2`** (high) — Use when you have an Instagram post/profile URL (`social-profile`) and want to save the media without logging in — returns downloaded `image
 - **`indownloader-app`** (high) — Use when you have a public Instagram `username` or post URL and want to view/download the profile picture, photos, reels or stories without 
@@ -707,7 +707,7 @@ kind: group-index
 - **`unlistedvideos-com`** (low) — Use when you want to discover unlisted YouTube videos (not shown in search or on a channel) — returns a crowd-submitted, searchable index of
 - **`untwitch-com`** (medium) — Twitch video downloader
 - **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
-- **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.
+- **`us-twitter-trend-calendar`** (medium) — Use when you have a date and want to know what was trending on X/Twitter (and Google) in the US then — returns ranked historical trending ke
 - **`username-availability`** (low) — OSINT tool: Username Availability.
 - **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
 - **`vidnice`** (medium) — Use when you have a TikTok `username`/hashtag and want to view the profile and videos anonymously — returns social-profile, videos, stats, a
@@ -763,7 +763,7 @@ kind: group-index
 - **`youtube-comments-downloader`** (medium) — Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `nam
 - **`youtube-dl`** (medium) — Use when you have a `social-profile` or video URL and want to download the media and its full metadata for offline analysis — returns metada
 - **`youtube-geo-search-tool`** (medium) — Use when you have a `geolocation` (and optional keyword/timeframe) and want YouTube videos tagged near that spot — returns geo-tagged videos
-- **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
+- **`youtube-lookup`** (medium) — Use when you have a YouTube video URL/ID and want its full metadata — returns title, channel, exact publish time, statistics, status and thu
 - **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload
 - **`youtube-periscope-twitch-and-dailymotion`** (medium) — Use when you have a `username`/channel on a video platform and want the right search/analytics tools for it — a reference hub of lookups for
 - **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis

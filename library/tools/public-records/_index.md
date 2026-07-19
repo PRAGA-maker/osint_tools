@@ -566,7 +566,6 @@ kind: group-index
 - **`lists-of-united-states-state-prisons-wikipedia`** (high) — Use when you have a state or a facility `name` and want the roster/location of that state's prisons — returns facility names and `address`/l
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
-- **`liveroots`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`local-directories-search-australia`** (medium) — Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with 
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
 - **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area

@@ -22829,43 +22829,41 @@
   },
   {
     "id": "web-archive-org",
-    "name": "web.archive.org",
-    "description": "OSINT tool: web.archive.org.",
+    "name": "web.archive.org (Wayback Machine)",
+    "description": "Use when you have a domain/URL and want its historical snapshots — returns past versions of a page (deleted content, old contact details, prior identities) and can save a live page now.",
     "url": "https://web.archive.org/save",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering deleted/changed web pages and preserving a live page before it disappears.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "document-id"
+      "document-id",
+      "name",
+      "email",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service of the Internet Archive; no account needed to browse snapshots or to Save Page Now.",
+    "opsec": "passive",
+    "opsecNote": "Browsing existing snapshots is fully passive — the target's server is not touched, only Archive's. \"Save Page Now\" is DIFFERENT — it makes the Archive fetch the live URL, which can appear in the target site's logs (from Archive's IP, not yours). Prefer browsing existing captures; only save when you accept that fetch.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Internet Archive, a long-established nonprofit; snapshots are timestamped and widely accepted as evidence, though captures can be partial.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-org",
       "internet-archive",
@@ -22879,6 +22877,18 @@
       "wayback-machine-2",
       "web-archive-org-2"
     ],
+    "aliases": [
+      "Wayback Machine",
+      "web.archive.org",
+      "Save Page Now"
+    ],
+    "tags": [
+      "archive",
+      "Archive & Cached Related Sites"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web-archive-org.md"
   },
   {
@@ -24621,50 +24631,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/bigsoccer-com.md"
-  },
-  {
-    "id": "blackplanet",
-    "name": "Blackplanet",
-    "description": "Community networking website",
-    "url": "http://www.blackplanet.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "blackplanet-com",
-      "blackplanet-com-member-find"
-    ],
-    "_file": "library/tools/communities-forums/blackplanet.md"
   },
   {
     "id": "blogger",
@@ -45863,24 +45829,34 @@
   {
     "id": "adpost-com-worldwide",
     "name": "Adpost.com (Worldwide)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a name/username/phone/email and want their classified ads worldwide — returns matching listings with seller contact details and location.",
     "url": "http://www.adpost.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a long-running global classifieds site for a person's ads and the contact details attached to them.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "phone",
+      "email",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search listings; posting/registration is free too. No paywall for reading ads.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching public ads is passive — the seller isn't notified. Contacting a seller through the site (reply form/messaging) is active and reveals your interest; stop at reading the listing's public details unless direct contact is warranted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established global classifieds platform (since the late 1990s); listings are user-posted and unverified, so contact details are leads, not confirmed facts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -45889,15 +45865,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Adpost classifieds",
+      "adpost.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/adpost-com-worldwide.md"
   },
   {
@@ -63639,13 +63618,13 @@
   {
     "id": "xifr",
     "name": "xIFr",
-    "description": "A Firefox add-on for extracting EXIF metadata by right-clicking an image.",
+    "description": "Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a map view of GPS geolocation.",
     "url": "https://github.com/StigNygaard/xIFr",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "One-right-click EXIF/GPS extraction from any image you can see in Firefox, without downloading it first.",
     "selectorsIn": [
       "image",
       "metadata-exif"
@@ -63654,29 +63633,35 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MPL 2.0); install from Mozilla Add-ons, no account.",
+    "opsec": "passive",
+    "opsecNote": "Metadata is read locally in your browser from the image bytes — nothing is uploaded to a third-party service, so this leaks nothing about your investigation. Viewing the image itself is a normal page load; the extraction step is fully offline/local.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source Firefox add-on (StigNygaard/xIFr, descended from wxIF/FxIF); community-maintained, code is auditable, and it reads standard metadata rather than interpreting it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "xIFr Firefox add-on",
+      "FxIF successor"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "metadata"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/xifr.md"
   },
   {
@@ -81191,52 +81176,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/mxtoolbox-com.md"
-  },
-  {
-    "id": "my-global-ip",
-    "name": "My Global IP",
-    "description": "Search tool that identifies the IP address you are currently using",
-    "url": "http://www.myglobalip.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/my-global-ip.md"
   },
   {
     "id": "my-ip-address",
@@ -114177,51 +114116,6 @@
       "reddit-r-translator"
     ],
     "_file": "library/tools/financial-crypto/reddit-com.md"
-  },
-  {
-    "id": "researchgate-net",
-    "name": "researchgate.net",
-    "description": "OSINT tool: researchgate.net.",
-    "url": "https://www.researchgate.net/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "research-gate"
-    ],
-    "_file": "library/tools/financial-crypto/researchgate-net.md"
   },
   {
     "id": "rupep",
@@ -244363,52 +244257,6 @@
     "_file": "library/tools/public-records/company-profiles/littlesis.md"
   },
   {
-    "id": "liveroots",
-    "name": "LiveRoots",
-    "description": "Geneology-related search for ancestral, family, and historical records, using a database from multiple countries",
-    "url": "http://www.liveroots.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/liveroots.md"
-  },
-  {
     "id": "local-directories-search-australia",
     "name": "Local Directories Search (Australia)",
     "description": "Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with `address` and `phone`.",
@@ -285272,41 +285120,52 @@
   {
     "id": "hawaii-professional-and-vocational-license-search",
     "name": "Hawaii Professional and Vocational License Search",
-    "description": "State of Hawaiis professional and vocational licensing search utility",
+    "description": "Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and the licensee's listed name/location.",
     "url": "http://pvl.ehawaii.gov/pvlsearch/app",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming whether a person holds a Hawaii state professional or vocational license and its current standing.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official State of Hawaii (DCCA) license lookup; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public government records search — you query the state's database, not the person, so no notice reaches them. Passive; only your own search is logged by the state portal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official State of Hawaii Department of Commerce and Consumer Affairs (DCCA) licensing search — authoritative for HI-issued licenses.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hawaii DCCA PVL search",
+      "MyPVL license search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/hawaii-professional-and-vocational-license-search.md"
   },
   {
@@ -323816,41 +323675,49 @@
   {
     "id": "improve-youtube",
     "name": "Improve YouTube",
-    "description": "extension with dozens of different tweaks to the standard #YouTube interface",
+    "description": "Use when you need to analyse a YouTube video closely — a browser extension adding frame-stepping, speed control, loop, zoom and screenshot tools that aid geolocation and verification.",
     "url": "https://chrome.google.com/webstore/detail/improve-youtube-video-you/bnomihfieiccainjcjblhegjgglakjdd",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Frame-by-frame and slow/zoomed playback of a YouTube video to read signs, plates, faces and details for geolocation/verification.",
     "selectorsIn": [
-      "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "geolocation",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free open-source browser extension; no account. Optional donations only.",
+    "opsec": "passive",
+    "opsecNote": "The extension only modifies the YouTube player locally in your browser — it sends nothing extra to Google beyond your normal (logged-in or not) viewing. For sensitive analysis, watch while signed out / in a clean profile so the view isn't tied to your account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source YouTube-enhancement extension; it's a viewing aid, not a data source, so trust concerns are about extension permissions rather than data accuracy.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Improve YouTube!",
+      "YouTube enhancer"
+    ],
     "tags": [
       "Social Media",
       "YouTube"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/improve-youtube.md"
   },
   {
@@ -348224,38 +348091,44 @@
   {
     "id": "us-twitter-trend-calendar",
     "name": "US Twitter Trend Calendar",
-    "description": "OSINT tool: US Twitter Trend Calendar.",
+    "description": "Use when you have a date and want to know what was trending on X/Twitter (and Google) in the US then — returns ranked historical trending keywords by day for context and timeline work.",
     "url": "https://us.trend-calendar.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up what topics/hashtags trended on a specific past date to contextualise a post, event, or timeline.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the daily archive; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "You read a public trends archive — you enter no target selector and touch no one's account, so it leaks nothing. Purely passive background research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent trend-archiving site (not X/Twitter or Google); useful for context but its capture cadence and completeness are unofficial and unaudited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Trend Calendar US",
+      "us.trend-calendar.com"
+    ],
     "tags": [
       "Social Media",
       "Twitter"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/us-twitter-trend-calendar.md"
   },
   {
@@ -351206,39 +351079,39 @@
   },
   {
     "id": "youtube-lookup",
-    "name": "Youtube Lookup",
-    "description": "Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails",
+    "name": "YouTube Lookup",
+    "description": "Use when you have a YouTube video URL/ID and want its full metadata — returns title, channel, exact publish time, statistics, status and thumbnail URLs for verification.",
     "url": "https://youtube-lookup.vercel.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Pulling a YouTube video's precise metadata (publish timestamp, channel, stats, thumbnails) for provenance and timeline work.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account. Runs on the YouTube Data API behind the scenes.",
+    "opsec": "passive",
+    "opsecNote": "You submit a public video ID to a third-party front-end, not to the uploader — the channel owner isn't notified and no view/interaction is attributed to you. Passive; only the video ID (already public) is shared with the tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent developer tool wrapping the official YouTube Data API; the underlying data is Google's, the convenience layer is community-built and unaudited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "checkuser",
       "followgraph-for-mastodon",
@@ -351247,6 +351120,16 @@
       "section-16-deadline-calculator",
       "xplore-x-vercel-app"
     ],
+    "aliases": [
+      "youtube-lookup.vercel.app"
+    ],
+    "tags": [
+      "Social Media",
+      "YouTube"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-lookup.md"
   },
   {
@@ -361009,24 +360892,31 @@
   {
     "id": "inmarsat-ships-directory",
     "name": "Inmarsat Ships Directory",
-    "description": "Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment",
+    "description": "Use when you have a vessel name/ID and want its satellite contact numbers — returns Inmarsat mobile numbers (phone/telex/fax) for ships fitted with Inmarsat terminals.",
     "url": "http://www.inmarsat.com/ships-directory",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the satellite phone/fax numbers for a specific ocean-going vessel equipped with Inmarsat.",
+    "selectorsIn": [
+      "name",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "phone",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public directory operated by Inmarsat Maritime; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Inmarsat's own vessel directory, not the ship or crew — passive. Do NOT call the numbers you find as part of reconnaissance; satellite calls are billed and a call is direct contact with the vessel, which is active and traceable. Stop at collecting the number.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party directory from Inmarsat (now Viasat), the satellite operator itself — authoritative for Inmarsat-registered maritime terminals.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -361035,15 +360925,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Inmarsat Maritime ships directory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/inmarsat-ships-directory.md"
   },
   {

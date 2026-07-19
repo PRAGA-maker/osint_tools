@@ -278,7 +278,7 @@ kind: group-index
 - **`wheredoesthislinkgo-modified-url-expander`** (low) — Tool for expanding URL address hyperlinks that have been previously shortened
 - **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
 - **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).
-- **`xifr`** (medium) — A Firefox add-on for extracting EXIF metadata by right-clicking an image.
+- **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 
 - **`yotpo`** (low) — eCommerce marketing platform offering advanced solutions for customer reviews and visual marketing
 - **`zamzar-online-file-converter`** (low) — Online file donversion tool, converts documents, images, videos, and more to various formats
 

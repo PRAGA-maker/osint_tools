@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`ad-mart-classified-ads-united-kingdom`** (medium) — Use when you have a `name`/`username` or item and want UK classified-ad activity — now UK Classifieds; returns ads exposing seller `phone`/l
 - **`admireme-vip`** (medium) — OSINT tool: admireme.vip.
-- **`adpost-com-worldwide`** (medium) — Classified advertisements-related website that provides regional services
+- **`adpost-com-worldwide`** (medium) — Use when you have a name/username/phone/email and want their classified ads worldwide — returns matching listings with seller contact detail
 - **`adultfriendfinder`** (medium) — Use when you have a `username`, `image`, or rough `geolocation` and want to check whether a subject maintains an adult-dating profile — sear
 - **`anonib-to`** (medium) — OSINT tool: anonib.to.
 - **`ashley-madison`** (medium) — OSINT tool: Ashley Madison.
