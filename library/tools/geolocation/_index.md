@@ -101,7 +101,7 @@ kind: group-index
 - **`geohints`** (medium) — Use when you have an unidentified `image`/scene and want country-level geolocation clues — a reference of poles, bollards, signs, plates and
 - **`geoinfer`** (medium) — Use cautiously — listed as a geolocation tool but the site returns 404 and capabilities are unconfirmed; treat as unverified.
 - **`geoint-py`** (low) — Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/pr
-- **`geoint-search`** (medium) — OSINT tool: GeoINT Search.
+- **`geoint-search`** (medium) — Use when you have a place name/`geolocation` clue and want to search a curated set of geospatial/OSINT sources at once — returns geolocation
 - **`geoint`** (medium) — OSINT tool: GEOINT.
 - **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
 - **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
@@ -337,7 +337,7 @@ kind: group-index
 - **`worldtimebuddy-com`** (low) — Use when you have a post/message timestamp and a candidate `geolocation` and want to convert between time zones — helps infer a subject's lo
 - **`worldtimelapse-mapping-website`** (high) — Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — return
 - **`worldwebcams`** (medium) — OSINT tool: WorldWebcams.
-- **`worldwide-detention-centres-map`** (medium) — This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.
+- **`worldwide-detention-centres-map`** (high) — Use when you have a `geolocation`/country and want to identify immigration detention facilities there — returns facility locations, status a
 - **`worldwide-osint-tools-map`** (medium) — Use when you need to discover country-specific OSINT resources (registries, directories, search sites) for the country where a case is locat
 - **`wunderground`** (medium) — Use when you have a `geolocation` and a date and want the weather that day — returns historical temperature, precipitation, wind, and condit
 - **`yahoo-maps`** (low) — Use only as a legacy fallback map; the standalone Yahoo Maps product was discontinued and the URL now redirects to a partner/search experien

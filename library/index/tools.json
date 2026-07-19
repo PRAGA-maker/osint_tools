@@ -38722,46 +38722,6 @@
     "_file": "library/tools/communities-forums/tinychat.md"
   },
   {
-    "id": "tom-s-hardware",
-    "name": "Tom’s Hardware",
-    "description": "Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends",
-    "url": "http://www.tomshardware.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/tom-s-hardware.md"
-  },
-  {
     "id": "top-gg",
     "name": "Top.gg",
     "description": "Use when you have a `username` or community/bot name and want to discover public Discord servers and bots — returns server/bot listings with owners, member counts, and invite links.",
@@ -113855,43 +113815,48 @@
   {
     "id": "mixero-io",
     "name": "mixero.io",
-    "description": "OSINT tool: mixero.io.",
+    "description": "Use when you have a `crypto-wallet` and want to recognise whether funds were routed through a Bitcoin mixer/tumbler — returns awareness of a mixing service, not a lookup.",
     "url": "https://mixero.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding one of the active Bitcoin mixing services a target's funds may have passed through (an obfuscation service, not an investigative lookup).",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The mixing service charges a user-selectable fee per transaction; the informational pages (Letter of Guarantee, how-it-works) are free to read without an account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public site is passive. Do NOT deposit funds or interact with the mixer as an investigator — that would move real money through a tumbler and expose your own wallet. Treat this purely as a reference to understand the service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymously operated mixing service (CoinJoin plus an XMR bridge). It is a subject-of-investigation, not a vetted analytical tool; nothing it publishes about itself is independently verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mixero Bitcoin Mixer"
+    ],
     "tags": [
       "cryptosites",
-      "CryptoCurrency Related Sites"
+      "CryptoCurrency Related Sites",
+      "mixer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/mixero-io.md"
   },
   {
@@ -114177,13 +114142,13 @@
   {
     "id": "osint-assassin",
     "name": "OSINT-Assassin",
-    "description": "OSINT tool: OSINT-Assassin.",
+    "description": "Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot into, not a lookup itself.",
     "url": "https://start.me/u/l61Bqy",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing a community-curated start.me dashboard of OSINT resources (with a cryptocurrency/blockchain slant) as a jumping-off point to other tools.",
     "selectorsIn": [
       "crypto-wallet",
       "name"
@@ -114191,35 +114156,38 @@
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view; start.me pages are publicly readable without an account.",
+    "opsec": "passive",
+    "opsecNote": "Reading a start.me link dashboard is passive — you're just browsing a curated list of links. OpSec matters at the tools you click through to, not here. Nothing on this page queries a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A personal, user-curated start.me page (author handle l61Bqy); it is a link collection whose quality and freshness depend entirely on one uploader — treat linked tools on their own merits.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "cse-utopia",
-      "geoint",
-      "socmint",
       "start-me"
     ],
+    "aliases": [
+      "OSINT Assassin start.me"
+    ],
+    "tags": [
+      "cryptosites",
+      "CryptoCurrency Related Sites",
+      "link-directory"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/osint-assassin.md"
   },
   {
@@ -120103,35 +120071,52 @@
   {
     "id": "geoint-search",
     "name": "GeoINT Search",
-    "description": "OSINT tool: GeoINT Search.",
+    "description": "Use when you have a place name/`geolocation` clue and want to search a curated set of geospatial/OSINT sources at once — returns geolocation references via a Google Programmable Search Engine.",
     "url": "https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Querying a pre-scoped Google Custom Search Engine focused on geolocation/GEOINT resources for place identification and imagery leads.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free hosted Google Programmable Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries hit Google's Programmable Search infrastructure like a normal Google search — passive toward any target. Use a sock-puppet Google session/IP if you want the query untied to you; Google logs the search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured GEOINT-themed Google CSE; its exact source list is not visible and coverage depends on the unknown creator's scope, which may drift over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GEOINT CSE"
+    ],
+    "tags": [
+      "google-cse",
+      "geolocation",
+      "geoint"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geoint-search.md"
   },
   {
@@ -131637,42 +131622,50 @@
   {
     "id": "worldwide-detention-centres-map",
     "name": "Worldwide Detention Centres Map",
-    "description": "This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.",
+    "description": "Use when you have a `geolocation`/country and want to identify immigration detention facilities there — returns facility locations, status and type for trafficking/missing-migrant work.",
     "url": "https://www.globaldetentionproject.org/detention-centres/map-view",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Locating immigration detention centres worldwide by country/region, with operational status and facility type — relevant to missing migrants, refugees and trafficking cases.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public research resource from the Global Detention Project (a non-profit); no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Browsing published research data is fully passive — you are reading a public NGO database, not touching any target infrastructure. No sock puppet strictly needed, though normal separation hygiene is good practice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Maintained by the Global Detention Project, an established Geneva-based research non-profit that documents immigration detention; data is sourced and cited in country profiles.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Global Detention Project map",
+      "GDP detention centres map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
+      "Politics, conflicts and crisis",
+      "migration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/worldwide-detention-centres-map.md"
   },
   {
@@ -138092,40 +138085,52 @@
   {
     "id": "find-and-set-scale-from-image",
     "name": "Find and Set Scale From Image",
-    "description": "OSINT tool: Find and Set Scale From Image.",
+    "description": "Use when you have an `image` with one known real-world dimension and want to measure other distances/areas in it — returns scaled measurements (a lightweight photogrammetry aid).",
     "url": "https://www.blocklayer.com/scale-fixereng.aspx",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Calibrating a photo against a known measurement, then measuring unknown lengths and areas within it for geolocation/scene analysis.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "geolocation",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free browser calculator; ad-supported with an optional charity donation prompt. No account required.",
+    "opsec": "passive",
+    "opsecNote": "Runs client-side in the browser as an image measurement calculator. Your uploaded/pasted image is processed in-page; still, avoid uploading sensitive case imagery to a third-party site and prefer a local screenshot crop where possible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Blocklayer is a long-running free calculators site (construction/DIY tools); the scale tool is a utility, not a data source, so accuracy depends entirely on your calibration input.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Blocklayer Scale From Image",
+      "Scale Fixer"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image Analyze"
+      "Image Analyze",
+      "photogrammetry"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/find-and-set-scale-from-image.md"
   },
   {
@@ -139118,40 +139123,51 @@
   {
     "id": "foxmonitor",
     "name": "FoxMonitor",
-    "description": "OSINT tool: FoxMonitor.",
+    "description": "Use when you have a `geolocation` (or want live ground truth at a place) and need publicly accessible CCTV/webcam feeds there — returns live camera streams by location.",
     "url": "https://www.foxmonitor.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing freely available live public CCTV/IP-camera streams worldwide by approximate location for real-time ground truth.",
     "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account or payment required to view listed streams.",
+    "opsec": "passive",
+    "opsecNote": "Viewing an already-public stream through FoxMonitor is passive from the target's perspective. Do not attempt to access any camera that requires a password or is not openly listed — that crosses into unauthorised access. Use a sock-puppet browser and expect the aggregator itself to log your visit.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent volunteer-run directory of open CCTV streams; positions are approximate and listings are community-sourced, so neither location accuracy nor uptime is guaranteed.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Fox Monitor CCTV directory"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Worldwide street webcams"
+      "Worldwide street webcams",
+      "cctv"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/foxmonitor.md"
   },
   {
@@ -285815,35 +285831,51 @@
   {
     "id": "homepage-search-engine",
     "name": "Homepage Search Engine",
-    "description": "OSINT tool: Homepage Search Engine.",
+    "description": "Use when you have a `name`/`username` and want to search across a curated set of personal-homepage/website sources — returns web pages and `social-profile` links via a Google Programmable Search Engine.",
     "url": "https://cse.google.com/cse?cx=005797772976587943970:3tu7im1-rdg#gsc.tab=0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a name/username query against a pre-scoped Google Custom Search Engine biased toward personal homepages and profile sites.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; it is a hosted Google Programmable Search Engine with no account required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries go to Google's Programmable Search infrastructure like any Google search — passive toward the target. Use a sock-puppet Google session/IP if you don't want the query tied to you, and be aware Google logs the search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google CSE; you cannot see its exact site list, and coverage depends entirely on whatever domains the (unknown) creator scoped it to and may drift over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Homepage CSE"
+    ],
+    "tags": [
+      "google-cse",
+      "search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/homepage-search-engine.md"
   },
   {
@@ -331136,41 +331168,55 @@
   },
   {
     "id": "onedrive-enumeration-tool",
-    "name": "Onedrive Enumeration Tool",
-    "description": "A tool that checks the existence of OneDrive accounts with certain usernames (from the users.txt file) in the domain of a certain company.",
+    "name": "OneDrive Enumeration Tool",
+    "description": "Use when you have candidate `username`s and a target's `domain`/tenant and want to confirm which are valid Microsoft 365 accounts — returns valid usernames via OneDrive URL status codes.",
     "url": "https://github.com/nyxgeek/onedrive_user_enum",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Validating which usernames exist as real Microsoft 365 / OneDrive accounts within a specific organisation's tenant, without authenticating.",
     "selectorsIn": [
-      "username"
+      "username",
+      "domain"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "username",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source Python tool (MIT-style); no cost, but you supply your own username wordlist.",
+    "opsec": "active",
+    "opsecNote": "This sends real HTTP probes to Microsoft's OneDrive endpoints for the target tenant. Microsoft may log the requests. It is unauthenticated enumeration but still active reconnaissance — run only with authorisation, from an attributable-to-you-not-your-org sock-puppet host, and throttle threads to avoid noise.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known offensive-security tool by nyxgeek (TrustedSec); ~750+ GitHub stars, updated through 2023. Community-vetted but unofficial — it relies on a Microsoft behaviour that could change.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com"
+    ],
+    "aliases": [
+      "onedrive_user_enum",
+      "nyxgeek onedrive enum"
+    ],
     "tags": [
       "Social Media",
-      "OneDrive"
+      "OneDrive",
+      "account-existence"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/onedrive-enumeration-tool.md"
   },
   {
@@ -333926,48 +333972,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/pushshift-api-guide.md"
-  },
-  {
-    "id": "quarter-tweets",
-    "name": "quarter tweets",
-    "description": "OSINT tool: quarter tweets.",
-    "url": "http://qtrtweets.com/twitter",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/quarter-tweets.md"
   },
   {
     "id": "quickvid-net",

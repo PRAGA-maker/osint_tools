@@ -400,7 +400,7 @@ kind: group-index
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
 - **`oh365userfinder`** (medium) — Use when you have an `email` and want to confirm it is a valid Microsoft 365 account — returns account existence (email validity).
 - **`ollie-boyd-github-io`** (high) — Use when you have a LinkedIn post/activity URL and want the exact time it was published — returns the precise creation timestamp (local + UT
-- **`onedrive-enumeration-tool`** (medium) — A tool that checks the existence of OneDrive accounts with certain usernames (from the users.txt file) in the domain of a certain company.
+- **`onedrive-enumeration-tool`** (medium) — Use when you have candidate `username`s and a target's `domain`/tenant and want to confirm which are valid Microsoft 365 accounts — returns 
 - **`onemilliontweetmap`** (medium) — Use when you have a place and want geotagged tweets there — plots recent X/Twitter posts on a live world map, returning location-bearing `so
 - **`onli-vk-ru`** (high) — Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate link
 - **`open-measures`** (medium) — Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.
@@ -450,7 +450,6 @@ kind: group-index
 - **`pullpush`** (high) — Use when you have a Reddit `username`, subreddit or keyword and want to search historical Reddit comments/submissions Reddit's own search bu
 - **`pushshift-api-guide`** (medium) — OSINT tool: Pushshift API Guide.
 - **`pushshift-api`** (high) — Use when you want archived Reddit posts/comments (including deleted ones) — historically a full Reddit archive, now restricted to Reddit mod
-- **`quarter-tweets`** (medium) — OSINT tool: quarter tweets.
 - **`quickvid-net`** (high) — Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` f
 - **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
 - **`qzone`** (high) — Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` 

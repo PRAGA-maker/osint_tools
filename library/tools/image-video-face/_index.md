@@ -110,7 +110,7 @@ kind: group-index
 - **`fact-check`** (medium) — OSINT tool: Fact Check.
 - **`fdupes`** (low) — Github - Locating exact matches of duplicate files.
 - **`filmot`** (medium) — Use when you have a `name`, phrase, or keyword and want to find the exact YouTube videos and timestamps where it is spoken — returns videos,
-- **`find-and-set-scale-from-image`** (medium) — OSINT tool: Find and Set Scale From Image.
+- **`find-and-set-scale-from-image`** (medium) — Use when you have an `image` with one known real-world dimension and want to measure other distances/areas in it — returns scaled measuremen
 - **`find-any-film`** (low) — Use when you have a film or TV title and want to confirm it exists and find where it can legally be watched in the UK — returns release meta
 - **`find-youtube-video`** (medium) — Use when you have a deleted/private YouTube URL or video ID and want to recover it — returns archived copies and metadata (title, descriptio
 - **`findpiclocation-com`** (high) — Use when you have a photo and need to estimate where it was taken (image geolocation) to localize a missing person or a sighting.
@@ -123,7 +123,7 @@ kind: group-index
 - **`fotki-image-search`** (high) — Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.
 - **`fotki`** (high) — Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the 
 - **`fotoforensics-com`** (high) — Use when you need a fast Error Level Analysis and metadata dump on a photo to check for editing — returns ELA heatmap, EXIF/JPEG metadata, a
-- **`foxmonitor`** (medium) — OSINT tool: FoxMonitor.
+- **`foxmonitor`** (medium) — Use when you have a `geolocation` (or want live ground truth at a place) and need publicly accessible CCTV/webcam feeds there — returns live
 - **`frame-by-frame`** (medium) — OSINT tool: Frame by Frame.
 - **`free-music-search`** (low) — Use when you need to search for and identify a song or music track by name/artist online — returns links to matching audio/sources; marginal
 - **`full-fact`** (low) — Use when you have a viral claim, image or story and want an evidence-based verification — returns the UK charity's fact-checks, sourcing, an

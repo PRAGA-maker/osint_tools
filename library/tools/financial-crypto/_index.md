@@ -92,12 +92,12 @@ kind: group-index
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`medium-com`** (medium) — OSINT tool: medium.com.
-- **`mixero-io`** (medium) — OSINT tool: mixero.io.
+- **`mixero-io`** (medium) — Use when you have a `crypto-wallet` and want to recognise whether funds were routed through a Bitcoin mixer/tumbler — returns awareness of a
 - **`mylostaccount-org-uk`** (medium) — Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns
 - **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)
 - **`north-data`** (low) — Search for people and companies in EU corporate and trade registers + visualize relationships
 - **`numbers`** (low) — Search NFT by Content ID, Commit hash, keywords or uploaded photo.
-- **`osint-assassin`** (medium) — OSINT tool: OSINT-Assassin.
+- **`osint-assassin`** (low) — Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot 
 - **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
 - **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
 - **`palatine-co-uk`** (medium) — OSINT tool: palatine.co.uk.
