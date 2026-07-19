@@ -385,7 +385,7 @@ kind: group-index
 - **`redirectdetective`** (low) — OSINT tool: RedirectDetective.
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
 - **`regexper`** (low) — A simple and free online tool for visualizing regular expressions. Just copy the regular expression to the site and convert it into a detail
-- **`registerit-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
 - **`remote-dns-lookup`** (low) — OSINT tool: Remote DNS Lookup.
 - **`repolist`** (low) — A very fast and simple tool that allows to generate wordlists for different CMS and frameworks (using Github repos).
 - **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries

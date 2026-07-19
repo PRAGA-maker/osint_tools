@@ -18332,29 +18332,34 @@
   {
     "id": "cached-view",
     "name": "Cached View",
-    "description": "Quick verification of whether a removed page still exists in cache",
+    "description": "Use when you have a `domain`/URL that has been removed or changed and want to see an archived copy — returns cached snapshots via the Wayback Machine.",
     "url": "https://cachedview.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "web"
     ],
-    "bestFor": "Quick verification of whether a removed page still exists in cache",
-    "input": "URL",
-    "output": "Cached page links from available providers",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "One-box front end for pulling an archived copy of a page that has been deleted, edited, or taken offline.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, ad-supported, no account. Value now depends entirely on the underlying Wayback Machine coverage.",
     "opsec": "passive",
-    "opsecNote": "Lookup activity is handled by the cache service and does not interact with the target host directly.",
+    "opsecNote": "You query the archive/cache service, not the target's live server, so the site owner does not see your request. The archive provider (Internet Archive) logs the lookup, not the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A thin third-party UI over public archives; it holds no data itself. Trust the underlying Wayback snapshot, not CachedView the wrapper.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -18362,13 +18367,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "cachedview"
+      "cachedview",
+      "wayback-machine"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "archive",
+      "cache",
+      "wayback"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web/cached-view.md"
   },
   {
@@ -41946,7 +41955,11 @@
     "registration": false,
     "relatedTools": [
       "vault-fbi-gov",
-      "most-wanted"
+      "most-wanted",
+      "fbi-common-fraud-schemes-united-states",
+      "fbi-information-technology-united-states",
+      "most-wanted-criminal-pages",
+      "sex-offender-registry-websites"
     ],
     "aliases": [
       "FBI Vault",
@@ -62334,7 +62347,19 @@
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "aliases": [],
     "tags": [],
     "source": "arf-seed",
@@ -62380,6 +62405,19 @@
     "source": "toddington-resources",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/documents-metadata/twitter-analytics.md"
   },
   {
@@ -84952,47 +84990,52 @@
   {
     "id": "registerit-whois-lookup",
     "name": "RegisterIt Whois Lookup",
-    "description": "Tool that identifies the available registration information for a website or domain name",
+    "description": "Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not privacy-masked.",
     "url": "http://www.register.it/domains/whois.html?chglng=eng",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick WHOIS/availability check on a domain via the Register.it registrar's public lookup.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "The WHOIS/availability lookup is free with no account; Register.it is a registrar so the page also upsells domain purchases.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WHOIS queries hit the registry/registrar, not the target's server, so the domain owner is not notified. Prefer a neutral WHOIS tool over a registrar's sales-oriented page for repeated lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A commercial Italian registrar's lookup box; it reflects registry WHOIS but exists to sell domains. Cross-check registrant data against a dedicated WHOIS/history service.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "register.it whois"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "whois"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/registerit-whois-lookup.md"
   },
   {
@@ -89969,6 +90012,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/tormap.md"
   },
   {
@@ -113704,7 +113760,10 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "start-me"
+      "start-me",
+      "cse-utopia",
+      "geoint",
+      "socmint"
     ],
     "aliases": [
       "OSINT Assassin start.me"
@@ -120069,45 +120128,50 @@
   {
     "id": "global-conflict-tracker",
     "name": "Global Conflict Tracker",
-    "description": "OSINT tool: Global Conflict Tracker.",
-    "url": "https://www.cfr.org/global-conflict-tracker/?category=us",
+    "description": "Use when you have a `geolocation`/region and want to understand active armed conflicts there — returns conflict status, actors and regional context.",
+    "url": "https://www.cfr.org/global-conflict-tracker/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Interactive map and briefings on ~30 ongoing armed conflicts worldwide, for regional risk and context.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account required. Published by a nonprofit think tank.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public think-tank map is entirely passive and reveals nothing about your subject or investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Maintained by the Center for Preventive Action at the Council on Foreign Relations, a nonpartisan US think tank; it is analytical context, not primary field data.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "council-on-foreign-relations"
     ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "Politics, conflicts and crisis",
+      "conflict"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/global-conflict-tracker.md"
   },
   {
@@ -120236,7 +120300,19 @@
     "api": false,
     "localInstall": false,
     "registration": true,
-    "relatedTools": [],
+    "relatedTools": [
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "aliases": [
       "GTD",
       "START Global Terrorism Database"
@@ -124465,6 +124541,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "global-terriorism-database",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/geolocation/murph-live.md"
   },
   {
@@ -152864,6 +152953,19 @@
     "source": "metaosint",
     "lastVerified": "2026-07-15",
     "enrichment": "full",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/image-video-face/twitter-com.md"
   },
   {
@@ -152909,7 +153011,18 @@
     "registration": true,
     "relatedTools": [
       "twitter-search-2",
-      "search-twitter-bios-and-profiles"
+      "search-twitter-bios-and-profiles",
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
     ],
     "aliases": [
       "X image search",
@@ -184983,6 +185096,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/opsec-investigator-tooling/parrot-security.md"
   },
   {
@@ -196450,47 +196576,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/contactout.md"
-  },
-  {
-    "id": "craiglist",
-    "name": "Craiglist",
-    "description": "OSINT tool: Craiglist.",
-    "url": "http://losangeles.craigslist.org",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "job-search-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "craigslist",
-      "craigslist-forums",
-      "craigslist-classified-ads-worldwide"
-    ],
-    "_file": "library/tools/people-search/craiglist.md"
   },
   {
     "id": "crosslinked",
@@ -215606,41 +215691,57 @@
   },
   {
     "id": "990-finder",
-    "name": "990 finder",
-    "description": "Enter the company name and select the state to get a link to download its 900 form.",
+    "name": "990 Finder",
+    "description": "Use when you have an `employer-org`/nonprofit name and want its IRS Form 990 filings and profile — returns officer/director names, financials and EIN.",
     "url": "https://candid.org/research-and-verify-nonprofits/990-finder",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating a US nonprofit's Form 990 filings to surface its officers, directors and finances.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Basic search of 1.9M organizations by name/EIN/keyword and links to Form 990 filings are free; detailed Candid profiles and analytics sit behind a paid subscription. For fully free 990 access, prefer ProPublica Nonprofit Explorer.",
+    "opsec": "passive",
+    "opsecNote": "Searching a nonprofit's public filings does not notify anyone at the organization. Candid may require a free login for some views and will log that account's activity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Candid (the merger of GuideStar and Foundation Center) is the long-standing authority on US nonprofit data; the underlying 990s are official IRS filings.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "foundation-finder",
+      "nonprofit-explorer"
+    ],
     "tags": [
-      "Company information search"
+      "Company information search",
+      "nonprofit",
+      "irs-990"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "foundation-finder"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/990-finder.md"
   },
   {
@@ -220436,42 +220537,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/business-govt-nz.md"
-  },
-  {
-    "id": "business-source",
-    "name": "Business Source",
-    "description": "OSINT tool: Business Source.",
-    "url": "https://www.ebscohost.com/academic/business-source-complete",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/business-source.md"
   },
   {
     "id": "buzzfile",
@@ -281373,7 +281438,15 @@
     "relatedTools": [
       "maigret",
       "socid-extractor",
-      "username-generation-guide"
+      "username-generation-guide",
+      "1c-database-converter",
+      "awesome-osint-mcp-servers",
+      "counter-osint-guide-for-russians",
+      "gitcolombo",
+      "maigret-via-socid-extractor-soxoj-ecosystem",
+      "mailto-analyzer",
+      "marple",
+      "osint-namecheckers-list"
     ],
     "aliases": [
       "The Art of Searching",
@@ -286587,24 +286660,33 @@
   {
     "id": "international-trademark-search",
     "name": "International Trademark Search",
-    "description": "International trademark search tool - searchable by country",
+    "description": "Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and dates.",
     "url": "http://www.trademarkia.com/international-trademark-search/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Free search of 12M+ trademarks by name, owner, or logo to link a person or business to its brand filings.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "image"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic search across 12M+ trademarks is free with no login; attorney-led professional searches ($199+) and registration services ($499+) are paid but not needed to read filings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Trademark records are public filings; searching them alerts no one. Queries go only to Trademarkia, never to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Trademarkia mirrors official trademark-office data (USPTO and others) but is a commercial front end; verify critical hits against the primary registry.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -286613,19 +286695,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "european-trademark-search",
       "trademarkia"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "trademark"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/international-trademark-search.md"
   },
   {
@@ -306811,25 +306895,32 @@
   {
     "id": "wikidot",
     "name": "Wikidot",
-    "description": "Website that provides wiki hosting services",
+    "description": "Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profiles.",
     "url": "http://www.wikidot.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding niche community wikis and their contributor profiles across the Wikidot hosting platform.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read all public wikis and to view member profiles; Pro features start at about $4/month but are not needed for OSINT reading.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public Wikidot pages and profiles is passive. Creating an account to reach members-only areas is logged; use a sock puppet if you must join a wiki.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A hosting platform, not a data source — content quality depends entirely on the individual wiki's community; treat user-authored pages as unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -306837,15 +306928,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "wikidot.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "wiki"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wikidot.md"
   },
   {
@@ -343035,44 +343132,54 @@
   },
   {
     "id": "tiktok-video-downloader",
-    "name": "TikTok video downloader",
-    "description": "OSINT tool: TikTok video downloader.",
+    "name": "TikTok Video Downloader",
+    "description": "Use when you have a TikTok video URL (`social-profile`) and want to preserve the clip as evidence — returns a downloadable MP4/MP3 for offline analysis.",
     "url": "https://ttdown.org",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Saving a TikTok video (and its audio) offline before it can be deleted, for evidence and frame-by-frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account, no software install; ad-supported and works entirely in the browser.",
+    "opsec": "passive",
+    "opsecNote": "You paste a link into ttdown.org; the download is served without notifying the TikTok account owner. Do not like/follow/comment from a real account while collecting — that would tip off the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party downloader of unknown ownership; it works but do not enter credentials, and scan downloads. The video content itself is the authoritative artifact, not the downloader.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ttdown",
+      "ttdown.org"
+    ],
     "tags": [
-      "tiktok"
+      "tiktok",
+      "video",
+      "evidence-preservation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok-video-downloader.md"
   },
   {
@@ -346420,7 +346527,18 @@
     "localInstall": false,
     "registration": true,
     "relatedTools": [
-      "memory-lol"
+      "memory-lol",
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
     ],
     "aliases": [
       "X Advanced Search",
@@ -346720,6 +346838,19 @@
     "source": "arf-seed",
     "lastVerified": "2026-07-10",
     "enrichment": "full",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/social-networks/twitter/search/twitter-date-search.md"
   },
   {
@@ -346984,6 +347115,19 @@
     "source": "metaosint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-x-location-search"
+    ],
     "_file": "library/tools/social-networks/twitter-name-search-twitter-name-search.md"
   },
   {
@@ -347597,6 +347741,19 @@
     "source": "bellingcat-toolkit",
     "lastVerified": "2026-07-18",
     "enrichment": "full",
+    "relatedTools": [
+      "global-terriorism-database",
+      "murph-live",
+      "parrot-security",
+      "tormap",
+      "twitter",
+      "twitter-advanced-search",
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-name-search-twitter-name-search"
+    ],
     "_file": "library/tools/social-networks/twitter-x-location-search.md"
   },
   {
@@ -356746,29 +356903,30 @@
   {
     "id": "word-reference",
     "name": "Word Reference",
-    "description": "Word-level translation with conjugation and usage context",
+    "description": "Use when you have foreign-language text (a bio, message, or listing) and want an accurate word-level translation with conjugations and idiom notes — returns translations, definitions and usage examples.",
     "url": "https://www.wordreference.com/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Word-level translation with conjugation and usage context",
-    "input": "Words and short phrases",
-    "output": "Translations, definitions, conjugation tables, and examples",
+    "bestFor": "Precise word- and phrase-level translation with conjugation tables and native-speaker forum discussion of idioms.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use in the browser; ad-supported, no account required. Mobile apps are free too.",
     "opsec": "passive",
-    "opsecNote": "Dictionary lookups are passive requests and do not engage targets.",
+    "opsecNote": "Dictionary lookups go only to WordReference and never touch the target or their content host, so the subject learns nothing. Do not paste sensitive raw case text into any third-party site out of habit — translate only the fragment you need.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established (since 1999) reference dictionary with human-curated bilingual dictionaries and heavily moderated language forums; not a data broker.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -356778,11 +356936,18 @@
     "relatedTools": [
       "wordreference-translator"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WordReference",
+      "wordreference.com"
+    ],
+    "tags": [
+      "translation",
+      "dictionary",
+      "language"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/word-reference.md"
   },
   {
@@ -364129,33 +364294,38 @@
   {
     "id": "recordsfinder",
     "name": "RecordsFinder",
-    "description": "Records aggregator covering people, phones and vehicles.",
+    "description": "Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, contact info and vehicle links.",
     "url": "https://recordsfinder.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "People, phone and vehicle records lookup.",
+    "bestFor": "US public-records aggregator spanning people, phone, address, and vehicle (plate/VIN) lookups in one search.",
     "selectorsIn": [
       "vehicle-plate",
       "vin",
       "name",
-      "phone"
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "name",
       "address",
+      "phone",
       "vehicle-plate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to start a search and see teaser hits; viewing a full report requires buying a report or a paid membership. Not FCRA-compliant — not for employment/tenant/credit decisions.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searches run against the broker's aggregated data, not against the subject, so the person is not notified. Use a sock-puppet email/payment if you register, since the account ties the searches to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial data broker; coverage and accuracy vary by jurisdiction and records are frequently stale or mismatched. Corroborate every hit against a primary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
@@ -364163,9 +364333,11 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "RecordFinder"
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "recordsfinder-people-search-ca"
     ],
     "tags": [
       "plate",
@@ -364174,11 +364346,8 @@
       "records"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "recordsfinder-people-search-ca"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/recordsfinder.md"
   },
   {

@@ -628,7 +628,7 @@ kind: group-index
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
 - **`tiktok-user-search`** (medium) — OSINT tool: TikTok User Search.
 - **`tiktok-video-downloader-chromewebstore-google-com`** (low) — Use when you have a subject's TikTok video/profile and want to save the clip (no watermark) for offline analysis and evidence preservation —
-- **`tiktok-video-downloader`** (medium) — OSINT tool: TikTok video downloader.
+- **`tiktok-video-downloader`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to preserve the clip as evidence — returns a downloadable MP4/MP3 for offli
 - **`tiktokapi`** (medium) — Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific use
 - **`tikvib-com`** (medium) — Use when you have a TikTok `username` and want to view/download their public videos and profile stats anonymously — returns `social-profile`
 - **`tinder-2`** (high) — Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns so

@@ -28,7 +28,18 @@ auth: none
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- murph-live
+- parrot-security
+- tormap
+- twitter
+- twitter-advanced-search
+- twitter-analytics
+- twitter-com
+- twitter-date-search
+- twitter-image-search
+- twitter-name-search-twitter-name-search
+- twitter-x-location-search
 aliases:
 - GTD
 - START Global Terrorism Database

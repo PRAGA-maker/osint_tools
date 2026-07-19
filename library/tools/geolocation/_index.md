@@ -111,7 +111,7 @@ kind: group-index
 - **`geoseer-net`** (medium) — OSINT tool: Geoseer.net.
 - **`geovisual-search`** (medium) — Use when you want to find places that look like a chosen feature in satellite imagery (visual similarity search across the globe).
 - **`global-biodiversity-information-facility`** (low) — Use when you have a species name or a `geolocation` and want to know where a plant/animal occurs — returns mapped occurrence points that hel
-- **`global-conflict-tracker`** (medium) — OSINT tool: Global Conflict Tracker.
+- **`global-conflict-tracker`** (low) — Use when you have a `geolocation`/region and want to understand active armed conflicts there — returns conflict status, actors and regional 
 - **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
 - **`global-terriorism-database`** (medium) — Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors,

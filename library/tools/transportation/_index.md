@@ -160,7 +160,7 @@ kind: group-index
 - **`radarbox24-pro`** (low) — OSINT tool: radarbox24-pro.
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
 - **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
-- **`recordsfinder`** (medium) — Records aggregator covering people, phones and vehicles.
+- **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 
 - **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif
 - **`reverse-genie-license-plate-search`** (medium) — OSINT tool: Reverse Genie (License Plate Search).
 - **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.

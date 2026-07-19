@@ -56,7 +56,6 @@ kind: group-index
 - **`coeus-osint-toolbox`** (medium) — Use when you have a `username`, `email`, `phone`, or `domain` and want a GUI to run several OSINT lookups at once — returns `social-profile`
 - **`college-recruiter`** (medium) — OSINT tool: College Recruiter.
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
-- **`craiglist`** (medium) — OSINT tool: Craiglist.
 - **`crosslinked`** (medium) — Use when you have an `employer-org` and want to enumerate its employees' names and likely emails from LinkedIn — returns names and format-ge
 - **`cvfox`** (medium) — OSINT tool: CVFox.
 - **`cyberbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` in the US and want current/past addresses, phone numbers and named relatives for free — re

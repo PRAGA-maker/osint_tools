@@ -33,6 +33,14 @@ relatedTools:
 - maigret
 - socid-extractor
 - username-generation-guide
+- 1c-database-converter
+- awesome-osint-mcp-servers
+- counter-osint-guide-for-russians
+- gitcolombo
+- maigret-via-socid-extractor-soxoj-ecosystem
+- mailto-analyzer
+- marple
+- osint-namecheckers-list
 aliases:
 - The Art of Searching
 - searchlore

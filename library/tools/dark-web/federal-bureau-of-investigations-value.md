@@ -34,6 +34,10 @@ registration: false
 relatedTools:
 - vault-fbi-gov
 - most-wanted
+- fbi-common-fraud-schemes-united-states
+- fbi-information-technology-united-states
+- most-wanted-criminal-pages
+- sex-offender-registry-websites
 aliases:
 - FBI Vault
 - vault.fbi.gov

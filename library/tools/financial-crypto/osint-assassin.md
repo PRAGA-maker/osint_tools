@@ -31,6 +31,9 @@ localInstall: false
 registration: false
 relatedTools:
 - start-me
+- cse-utopia
+- geoint
+- socmint
 aliases:
 - OSINT Assassin start.me
 tags:

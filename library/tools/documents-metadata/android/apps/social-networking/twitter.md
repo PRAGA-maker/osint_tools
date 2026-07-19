@@ -32,7 +32,18 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- global-terriorism-database
+- murph-live
+- parrot-security
+- tormap
+- twitter-advanced-search
+- twitter-analytics
+- twitter-com
+- twitter-date-search
+- twitter-image-search
+- twitter-name-search-twitter-name-search
+- twitter-x-location-search
 aliases: []
 tags: []
 source: arf-seed

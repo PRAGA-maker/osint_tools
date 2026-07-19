@@ -35,6 +35,17 @@ localInstall: false
 registration: true
 relatedTools:
 - memory-lol
+- global-terriorism-database
+- murph-live
+- parrot-security
+- tormap
+- twitter
+- twitter-analytics
+- twitter-com
+- twitter-date-search
+- twitter-image-search
+- twitter-name-search-twitter-name-search
+- twitter-x-location-search
 aliases:
 - X Advanced Search
 - Twitter search operators

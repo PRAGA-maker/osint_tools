@@ -376,7 +376,7 @@ kind: group-index
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
 - **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
 - **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`international-trademark-search`** (medium) — International trademark search tool - searchable by country
+- **`international-trademark-search`** (medium) — Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and d
 - **`internet-archive`** (medium) — OSINT tool: Internet Archive.
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
@@ -813,7 +813,7 @@ kind: group-index
 - **`wikibooks`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
 - **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
-- **`wikidot`** (medium) — Website that provides wiki hosting services
+- **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile
 - **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 
 - **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites

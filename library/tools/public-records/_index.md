@@ -34,7 +34,7 @@ kind: group-index
 - **`51-000-university-of-michigan-employee-salaries`** (high) — Use when you have a `name` believed to work at the University of Michigan and want to confirm employment, title and pay — returns `employer-
 - **`8chan-8kun-qresearch-board-search`** (low) — OSINT tool: 8chan/8kun QResearch Board Search.
 - **`8chan`** (low) — OSINT tool: 8chan.
-- **`990-finder`** (medium) — Enter the company name and select the state to get a link to download its 900 form.
+- **`990-finder`** (medium) — Use when you have an `employer-org`/nonprofit name and want its IRS Form 990 filings and profile — returns officer/director names, financial
 - **`aat-org-uk`** (high) — Use when you have an accountant/bookkeeper `name` or a UK location and want to verify AAT-licensed status — returns member/firm name, busine
 - **`academictree`** (medium) — Use when you have an academic's `name` and want their mentors, students and collaborators — returns `associate` links, `employer-org` affili
 - **`accaglobal-com`** (high) — Use when you have a `name`, firm or town and want to confirm someone is a chartered certified accountant (ACCA member) — returns membership 
@@ -128,7 +128,6 @@ kind: group-index
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
-- **`business-source`** (medium) — OSINT tool: Business Source.
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
 - **`cal-poly-email-search`** (medium) — OSINT tool: Cal Poly Email Search.
 - **`california-registered-voter-verification`** (medium) — California voter registration verification and search
