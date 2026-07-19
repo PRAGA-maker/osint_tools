@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8155 total · 3515 full · 4640 stub (43% enriched)
+**Tools:** 8153 total · 3527 full · 4626 stub (43% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3410 · medium: 2786 · high: 1959
+low: 3410 · medium: 2784 · high: 1959
 
 ## Tools by trust
-unverified: 3602 · community: 3353 · trusted: 1188 · personal: 6 · untrustworthy: 6
+unverified: 3588 · community: 3360 · trusted: 1193 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
-- `archives-cache` — 43/134
-- `communities-forums` — 84/405
-- `dark-web` — 14/118
+- `archives-cache` — 44/134
+- `communities-forums` — 85/405
+- `dark-web` — 15/118
 - `dating-classifieds` — 45/112
 - `documents-metadata` — 25/314
-- `domains-ip-infrastructure` — 67/751
+- `domains-ip-infrastructure` — 68/751
 - `email` — 243/246
-- `evidence-capture` — 4/32
+- `evidence-capture` — 5/32
 - `financial-crypto` — 33/127
 - `geolocation` — 218/349
-- `image-video-face` — 398/473
+- `image-video-face` — 399/473
 - `maps-geospatial-data` — 29/142
-- `messaging` — 156/193
+- `messaging` — 157/193
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 233/266
 - `phone` — 134/137
-- `public-records` — 694/1106
-- `search-engines` — 268/934
-- `social-networks` — 620/851
+- `public-records` — 696/1106
+- `search-engines` — 270/933
+- `social-networks` — 621/850
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
 - `transportation` — 62/229
@@ -42,8 +42,8 @@ unverified: 3602 · community: 3353 · trusted: 1188 · personal: 6 · untrustwo
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1043 leaves
-- `library/tools/search-engines` — 870 leaves
-- `library/tools/social-networks` — 823 leaves
+- `library/tools/search-engines` — 869 leaves
+- `library/tools/social-networks` — 822 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 510 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves

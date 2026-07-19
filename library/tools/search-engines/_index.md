@@ -130,7 +130,7 @@ kind: group-index
 - **`btdig`** (medium) — OSINT tool: btdig.
 - **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
-- **`bureau-of-justice-statistics`** (medium) — Department of Justice, Bureau of Justice Statistics website providing crime and justice data online
+- **`bureau-of-justice-statistics`** (medium) — Use when you need official US crime/justice statistics (arrests, corrections, victimization) for context — an aggregate government data port
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
 - **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
 - **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
@@ -353,7 +353,7 @@ kind: group-index
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
 - **`highwire-free-online-full-text-articles`** (low) — OSINT tool: HighWire: Free Online Full-text Articles.
-- **`hinduwebsite`** (medium) — Website that offers Hindu scripture search services
+- **`hinduwebsite`** (medium) — Use when you need to search or read Hindu (and other) scripture texts — a niche reference/scripture search site with essentially no direct p
 - **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
 - **`homepage-search-engine`** (medium) — OSINT tool: Homepage Search Engine.
 - **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
@@ -745,7 +745,6 @@ kind: group-index
 - **`termwiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on w
 - **`terrorism-reports`** (medium) — US Department of States country reports on terrorism
 - **`the-best-document-search-engine`** (medium) — OSINT tool: The best document search engine.
-- **`the-book-seer-recommendation-website`** (medium) — Website that offers recommendations on what books to read
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (medium) — Docket containing documents and research related to the detainee population of Guantanamo Bay from 2002
 - **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.

@@ -89,7 +89,7 @@ kind: group-index
 - **`scrapestorm-com`** (medium) — OSINT tool: scrapestorm.com.
 - **`selfoss`** (low) — OSINT tool: Selfoss.
 - **`send-to-internet-archive-addons-mozilla-org`** (medium) — OSINT tool: send to internet archive (addons.mozilla.org).
-- **`send-to-internet-archive-chrome-google-com`** (medium) — OSINT tool: send to internet archive (chrome.google.com).
+- **`send-to-internet-archive-chrome-google-com`** (medium) — Use when you have a page open and want a one-click permanent Wayback capture — a browser extension that saves the current URL to the Interne
 - **`sourceforge-net`** (medium) — OSINT tool: sourceforge.net.
 - **`swap-stanford-edu`** (medium) — OSINT tool: Swap.stanford.edu.
 - **`talkwalker`** (low) — OSINT tool: Talkwalker.

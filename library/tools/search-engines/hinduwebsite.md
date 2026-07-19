@@ -1,23 +1,24 @@
 ---
 id: hinduwebsite
 name: HinduWebsite
-description: Website that offers Hindu scripture search services
-url: http://www.hinduwebsite.com/sacredscripts/hinduism_scripts.asp
+description: Use when you need to search or read Hindu (and other) scripture texts — a niche reference/scripture search site with essentially no direct people-search value.
+url: https://www.hinduwebsite.com/sacredscripts/hinduism_scripts.asp
 category: search-engines
 path:
 - search-engines
-bestFor: ''
+bestFor: Looking up Hindu scriptures and religious reference material; background/context only, not investigative lookups.
 selectorsIn: []
 selectorsOut: []
-status: unknown
+status: live
 pricing: free
+costNote: Free reference site; no account.
 opsec: passive
-opsecNote: ''
+opsecNote: Passive — you read public reference/scripture content, transmitting nothing about any person. No investigative footprint.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
-trust: unverified
-trustNote: ''
+trust: community
+trustNote: A long-standing independent religious-reference site; reliable for scripture/reference content, but not an OSINT data source.
 missingPersonsRelevance: medium
 coverage:
 - global
@@ -25,24 +26,57 @@ auth: none
 api: false
 localInstall: false
 registration: false
-aliases: []
+relatedTools: []
+aliases:
+- HinduWebsite.com
 tags:
 - toddington
-- curated-directory
-- specialty-search
+- reference
+- scripture
 source: toddington-resources
-lastVerified: ''
-enrichment: stub
+lastVerified: '2026-07-19'
+enrichment: full
 ---
 
 # HinduWebsite
 
-> Website that offers Hindu scripture search services
+> A Hindu scripture and religious-reference site — useful for context/reference reading, effectively irrelevant for finding a person.
 
-- **URL:** http://www.hinduwebsite.com/sacredscripts/hinduism_scripts.asp
-- **Best for:** —
-- **Source:** harvested from `toddington-resources`
+## When to use
+Only when you need religious/scriptural reference material (e.g. to understand a quote, symbol, or cultural context that appears in a case). It offers no personal data, no selectors, and no investigative pivots — treat it purely as a reference source.
 
-Harvested from Toddington International free OSINT resources directory (category: Specialty Search). Curated third-party tool reviewed by TII; availability and pricing not independently verified.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open https://www.hinduwebsite.com/ and navigate to the scriptures/reference section.
+2. Search or browse for the text/topic you need.
+3. Read the reference content.
+4. Pivot: none for people-search — use it only to inform background/context.
 
-_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._
+## Inputs → Outputs
+- **In:** a topic/scripture query (no personal selector)
+- **Out:** reference/scripture text and articles
+- **Empty/negative result looks like:** no matching text for a query — it is a curated reference site, not a comprehensive index.
+
+## Gotchas & OpSec
+- No OSINT/people-search utility; do not expect any identifying output.
+- Human-in-the-loop: none. OpSec: passive.
+
+## Overlaps ("do both")
+- No meaningful overlap with investigative tools in this library; it is a reference resource.
+
+## Trust & verifiability
+`trust: community` — a stable independent reference site; verify any factual/scriptural claim against a scholarly source if it matters to a case.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | hinduwebsite |
+| category | search-engines |
+| selectorsIn → selectorsOut |  →  |
+| pricing / cost | free |
+| trust | community |
+| MP relevance | medium |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | no |

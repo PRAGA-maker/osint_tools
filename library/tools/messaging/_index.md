@@ -140,7 +140,7 @@ kind: group-index
 - **`telegram-history-dump`** (low) — Dump Telegram chat history to JSON.
 - **`telegram-message-analyzer`** (medium) — Export #Telegram chat (with Windows version of Telegram app) and get detailed analyze of it (message count, average message count per day, w
 - **`telegram-nearby-map`** (medium) — Use when you have a `geolocation` and want to find Telegram users who enabled "People Nearby" there — returns nearby profiles plotted on a m
-- **`telegram-osint-lib-postuf`** (medium) — Python OSINT library for Telegram.
+- **`telegram-osint-lib-postuf`** (medium) — Use when you have a `phone` or `username` and want to enrich it against Telegram programmatically — a PHP library that checks presence, reso
 - **`telegram-phone-number-checker-github-com`** (high) — Use when you have a `phone` number and want to know if it's on Telegram — returns whether an account exists plus the linked `username`, disp
 - **`telegram-phone-number-checker`** (high) — Use when you have a `phone` number and want to check whether it has a Telegram account — returns account existence plus username/name/ID whe
 - **`telegram-scraper-th3unkn0n`** (medium) — Extract user info and media from Telegram groups.

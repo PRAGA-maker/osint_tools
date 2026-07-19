@@ -409,7 +409,7 @@ kind: group-index
 - **`open-source`** (medium) — OSINT tool: open-source.
 - **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
 - **`orbit-livasch`** (medium) — A tool for analyzing connections between Twitter accounts (based on the number of likes, retweets, tweet citations, and mentions).
-- **`osgint`** (medium) — A simple #python tool to collect information about a Github user. It can be used to gather: all available emails avatar_url twitter_username
+- **`osgint`** (medium) — Use when you have a GitHub `username` or `email` and want to pivot between them plus profile intel — returns commit-leaked `email`s, linked 
 - **`osi-ig`** (high) — Use when you have an Instagram `username` and want to pull the profile's public data — user ID, name, bio, counts, profile photo, and any em
 - **`osint-and-socmint-tooling`** (high) — Use when you have logged-in sessions on major social platforms and want browser-extension tooling to extract data from them — returns friend
 - **`osint-combine-reddit-post-analyzer`** (medium) — Analyze Reddit posts for OSINT signals.
@@ -438,7 +438,6 @@ kind: group-index
 - **`pinterest-pin-stats`** (high) — Use when you have a Pinterest `username`/board and want each pin's engagement and creation date to reconstruct activity timing — returns soc
 - **`pixnoy-com`** (high) — Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — re
 - **`pockettube`** (low) — Use when you have a set of YouTube channels (`social-profile`/`username`) to monitor and want them grouped, deduped and watched in one feed 
-- **`pogu-live`** (medium) — Tool that allows you to watch sub only or deleted VODs for free. It works because when a streamer deletes a video, iit is not deleted from T
 - **`pokoinsta-com`** (high) — Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image
 - **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
 - **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p

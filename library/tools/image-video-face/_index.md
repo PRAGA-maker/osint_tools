@@ -291,7 +291,7 @@ kind: group-index
 - **`same-energy`** (high) — Use when you have an `image` and want aesthetically/visually similar images to identify a scene, object, or style — returns visually similar
 - **`savevideo`** (medium) — Use when you have a social-media video URL and want to download the file for offline analysis — returns the video and its metadata-exif for 
 - **`scene-detection`** (medium) — Use when you have a long video and want its cut points — detects the timecodes where the scene changes, so you can jump between distinct sho
-- **`scene-edit-detection`** (medium) — A tool to help speed up and automate your video viewing. It highlights the frames where a new scene begins and allows you to quickly analyze
+- **`scene-edit-detection`** (medium) — Use when you have a video (`image`/frames) and want its cut points found automatically — returns the frames/timestamps where a new scene beg
 - **`screencast`** (medium) — Use when you have a `name`/`username` and want to find screen recordings, tutorial videos, or captured images a subject has published — retu
 - **`search-by-image-addons-mozilla-org`** (high) — Use when you have an `image` and want to reverse-search it across 30+ engines from the browser — returns social-profile, face and other matc
 - **`search-by-image-chrome-google-com`** (high) — Use when you have an `image` or `face` and want to reverse-search it across 30+ engines at once — returns matching pages/profiles from Googl

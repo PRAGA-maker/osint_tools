@@ -440,7 +440,7 @@ kind: group-index
 - **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
 - **`sourcewolf`** (low) — A tool for analyzing #javascript files. It finds all the variables, endpoints and social media links mentioned in the code in just a few sec
-- **`speedtest-com`** (medium) — Analysis tool that assesses the speed of your Internet connection
+- **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shod
 - **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
 - **`spyse-cli`** (low) — command line client for Spyse.com

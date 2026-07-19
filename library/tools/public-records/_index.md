@@ -700,7 +700,7 @@ kind: group-index
 - **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
 - **`ohio-mhas`** (medium) — Use when an Ohio subject may be in behavioral-health treatment and you want licensed-provider/facility references — returns employer-org and
 - **`ohio-obituaries-death-and-marriage-search`** (high) — Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead a
-- **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
+- **`ohio-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for someone in Ohio and want to confirm voter registration — returns registration status, county, precinc
 - **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
 - **`ohio`** (high) — Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and off
 - **`oklahoma-offender-search`** (high) — Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, 
@@ -1026,7 +1026,7 @@ kind: group-index
 - **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
 - **`whitepages-reverse-address-search`** (medium) — Use when you have an `address` and want to know who is associated with it — returns resident names, phone numbers and likely associates.
 - **`who-data`** (low) — OSINT tool: WHO Data.
-- **`who-do-you-search`** (medium) — Business-related search engine; searches global results by product, occupation, business and city name
+- **`who-do-you-search`** (medium) — Use when you have a business/service `name` or trade and a city and want local recommendations and business listings — returns local `employ
 - **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
 - **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.
 - **`windeed-co-za`** (high) — Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — 

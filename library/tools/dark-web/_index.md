@@ -115,7 +115,7 @@ kind: group-index
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
 - **`vocalink`** (medium) — UKs national payment infrastructure operator - provides industry research and white papers
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.
-- **`western-union-agent-locator`** (medium) — Search tool for locating Western Union agent locations worldwide
+- **`western-union-agent-locator`** (medium) — Use when you have a `geolocation`/`address` (city/country) and want the Western Union agent/pickup locations there — returns branch `address
 - **`wikieducator`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
 - **`witchdoctor-new-zealand`** (medium) — Website related to tech reviews
 - **`world-real-time-air-quality-index`** (medium) — Real-time air pollution index, ranking regions by air quality

@@ -213,7 +213,7 @@ kind: group-index
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
 - **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
 - **`money-talk-org`** (medium) — OSINT tool: money-talk.org.
-- **`moneyforums-citywire-co-uk`** (medium) — OSINT tool: moneyforums.citywire.co.uk.
+- **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`movabletype`** (medium) — Website related to social networking and blogging
 - **`mumsnet-com`** (medium) — OSINT tool: mumsnet.com.
