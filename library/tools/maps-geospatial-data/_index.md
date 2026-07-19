@@ -83,7 +83,7 @@ kind: group-index
 - **`mapa-sk`** (low) — Mapping service for Slovakia
 - **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage
 - **`maploco-com`** (medium) — Use when a subject has shared a "places I've visited" map graphic and you want to read their claimed travel — a widget generator you use to 
-- **`mapme-com`** (medium) — OSINT tool: mapme.com.
+- **`mapme-com`** (medium) — Use when a subject or org may publish a public interactive directory/map here — browse Mapme-hosted maps to place people, businesses or poin
 - **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mappy`** (low) — Mapping service (and streetview in a couple of French cities \[double check this!])
 - **`mapswitcher`** (low) — Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source m

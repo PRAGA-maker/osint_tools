@@ -2,41 +2,41 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8056 total · 3823 full · 4233 stub (47% enriched)
+**Tools:** 8055 total · 3832 full · 4223 stub (47% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2606 · high: 1962
+low: 3488 · medium: 2605 · high: 1962
 
 ## Tools by trust
-community: 3422 · unverified: 3328 · trusted: 1294 · personal: 6 · untrustworthy: 6
+community: 3424 · unverified: 3325 · trusted: 1294 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 7/455
-- `archives-cache` — 55/133
-- `communities-forums` — 110/390
+- `archives-cache` — 56/133
+- `communities-forums` — 113/390
 - `dark-web` — 18/118
-- `dating-classifieds` — 52/108
+- `dating-classifieds` — 52/107
 - `documents-metadata` — 26/314
 - `domains-ip-infrastructure` — 77/744
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 39/127
 - `geolocation` — 244/347
-- `image-video-face` — 417/468
-- `maps-geospatial-data` — 39/139
-- `messaging` — 164/190
+- `image-video-face` — 418/468
+- `maps-geospatial-data` — 40/139
+- `messaging` — 165/190
 - `opsec-investigator-tooling` — 27/562
 - `people-search` — 242/263
 - `phone` — 134/137
-- `public-records` — 736/1094
+- `public-records` — 737/1094
 - `search-engines` — 328/916
 - `social-networks` — 653/831
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
-- `transportation` — 88/224
+- `transportation` — 89/224
 - `username` — 101/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -58,9 +58,9 @@ community: 3422 · unverified: 3328 · trusted: 1294 · personal: 6 · untrustwo
 - `library/tools/maps-geospatial-data` — 139 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/archives-cache` — 117 leaves
-- `library/tools/dating-classifieds` — 108 leaves
 - `library/tools/financial-crypto` — 108 leaves
 - `library/tools/dark-web` — 107 leaves
+- `library/tools/dating-classifieds` — 107 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

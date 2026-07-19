@@ -27,7 +27,7 @@ kind: group-index
 - **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
 - **`awasu`** (low) — OSINT tool: Awasu.
 - **`bellingcat-tiktok-hashtag-analysis`** (low) — Archive content and metadata from TikTok posts that contain one or more specified hashtags
-- **`blackwidow`** (medium) — OSINT tool: BlackWidow.
+- **`blackwidow`** (medium) — Use when you have a `domain`/website and want to mirror or harvest it — a Windows site scanner that crawls a target site and extracts its li
 - **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
 - **`bridge-suumitsu`** (low) — OSINT tool: Bridge.Suumitsu.
 - **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as

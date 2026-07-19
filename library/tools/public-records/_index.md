@@ -220,7 +220,7 @@ kind: group-index
 - **`covidbailouttracker-com`** (low) — Use when you have an `employer-org` (or business name/owner) and want to know if it took CARES Act relief — returns PPP/airline-bailout reco
 - **`cpaverify-org`** (medium) — Use when you have a `name` and want to confirm whether someone is a licensed US CPA — returns license status, jurisdiction, and issuing-boar
 - **`credibly-accused`** (medium) — Use when you have a `name` (or diocese/location) and want to check whether a US Catholic clergy member was named on a credibly-accused-of-ab
-- **`creditrisk-monitor`** (medium) — Business-related directory of public companies worldwide
+- **`creditrisk-monitor`** (medium) — Use when you have a company `name`/`employer-org` and want a public-company profile — a free worldwide directory of listed firms by country,
 - **`creditsafe-com`** (high) — Use when you have an `employer-org`, `name` or `address` and want a business credit report — returns company details, registered address, di
 - **`crime-brasil`** (low) — OSINT tool: Crime Brasil.
 - **`crimereports`** (medium) — Use when you have an `address`/`geolocation` and want to see recent reported crime incidents around it — returns block-level incident locati

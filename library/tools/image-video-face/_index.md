@@ -338,7 +338,7 @@ kind: group-index
 - **`tineye`** (high) — Use when you have an `image` and want its provenance — returns exact and modified copies across the web, ranked so you can find the earliest
 - **`tracepoint`** (high) — Use when you have an `image` with visible directional features and want to triangulate where the camera stood — returns an estimated `geoloc
 - **`ttsave-app`** (high) — Use when you have a TikTok post/profile URL and want to download the video, audio, slideshow, thumbnail or profile photo watermark-free — re
-- **`tubuep`** (medium) — OSINT tool: Tubuep.
+- **`tubuep`** (medium) — Use when you have a `social-profile` or video URL and want a permanent copy — a CLI that downloads a video (via yt-dlp) with metadata and up
 - **`tumblr-com`** (high) — Use when you have a `username` and want to find a subject's Tumblr blog and image posts — returns a `social-profile` and the images/text the
 - **`twitch-tv`** (high) — Use when you have a `username` and want a person's live-streaming presence — returns their channel, VODs/clips, chat activity and voice/face
 - **`twitter-com`** (high) — Use when you have a `name`, keyword, or event and want eyewitness photos/media posted to X — returns `social-profile`s of posters and `image

@@ -18225,37 +18225,51 @@
   {
     "id": "blackwidow",
     "name": "BlackWidow",
-    "description": "OSINT tool: BlackWidow.",
+    "description": "Use when you have a `domain`/website and want to mirror or harvest it — a Windows site scanner that crawls a target site and extracts its links, emails, images and files.",
     "url": "http://softbytelabs.com/wp/blackwidow/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Crawling a target website to build an offline mirror and harvest its structure, emails, and downloadable files for analysis.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Legacy Windows shareware from SoftByte Labs — free trial with a paid licence to unlock full use.",
+    "opsec": "active",
+    "opsecNote": "BlackWidow actively crawls the target site from your machine, generating many requests that appear in the site's server logs and can reveal your IP and a scanner user-agent. Use a VPN/sock-puppet network, throttle the crawl, and respect scope/authorization — aggressive scraping can be hostile or unlawful.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing commercial Windows utility from SoftByte Labs; a legacy tool that still works for classic HTML sites but is dated for modern JavaScript-heavy pages.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SoftByte BlackWidow",
+      "BlackWidow site scanner"
+    ],
     "tags": [
-      "web-history-and-website-capture"
+      "web-history-and-website-capture",
+      "crawler",
+      "desktop-app"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/blackwidow.md"
   },
   {
@@ -25104,41 +25118,49 @@
   {
     "id": "business-com",
     "name": "Business.com",
-    "description": "Business and technology-related guides and articles",
-    "url": "http://www.business.com",
+    "description": "Use when you have an `employer-org` and want B2B context — a business advice/reviews site that can corroborate a company's existence and category, but not look up people.",
+    "url": "https://www.business.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Light corroboration of a small/mid-size US business's category and services; NOT a people-search or person-lookup tool.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read articles, guides and B2B service listings/reviews; it is ad/lead-generation funded.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only browsing of a public content/reviews site; nothing is attributed to your subject. It exposes company-level marketing content, not personal data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial B2B media and vendor-reviews site (business advice plus a services directory). Content is editorial/marketing and lead-gen; treat listings and reviews as promotional, not authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "business.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "b2b"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/business-com.md"
   },
   {
@@ -28298,13 +28320,13 @@
   {
     "id": "forums-overclockers-co-uk",
     "name": "forums.overclockers.co.uk",
-    "description": "OSINT tool: forums.overclockers.co.uk.",
+    "description": "Use when you have a `username` and want to check one of the UK's largest PC-hardware communities — returns a `social-profile` and long post history for tech-leaning handles.",
     "url": "https://forums.overclockers.co.uk/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a UK tech/gaming handle to a public Overclockers UK forum profile and its post history.",
     "selectorsIn": [
       "username"
     ],
@@ -28312,29 +28334,36 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read profiles and threads; an account is only needed to post, not to view public content.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public profiles and posts is read-only and does not notify the member. Registering or messaging would expose you — use a sock puppet if you must log in. Members often discuss their kit, location, employer and marketplace trades, which can leak identifying detail.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running, well-known UK enthusiast forum tied to the Overclockers UK retailer. The platform is authentic; individual posts are unverified user speech and often pseudonymous.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Overclockers UK forum",
+      "OcUK forums"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/forums-overclockers-co-uk.md"
   },
   {
@@ -36084,37 +36113,48 @@
   {
     "id": "safenote",
     "name": "SafeNote",
-    "description": "OSINT tool: SafeNote.",
+    "description": "Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (you likely get a single view).",
     "url": "https://safenote.co/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Opening a specific self-destructing SafeNote link you already possess; NOT a searchable index (encrypted, one-time, link-only).",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web service; no account, password or email required to read or create a note.",
+    "opsec": "passive",
+    "opsecNote": "SafeNote notes are end-to-end encrypted and self-destruct after one view or on expiry, so opening a link consumes it — the sender/recipient loses access afterward, and reading it may tip off that it was opened. Open in a sandbox, snapshot immediately, and never paste a target's data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A privacy-focused self-destructing-note service (Privnote-style). The encryption/expiry model is its stated design; you must trust the operator not to tamper. Content is anonymous unless the sender added identifying info.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "safenote.co",
+      "Safenote secure notes"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "self-destructing"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/safenote.md"
   },
   {
@@ -45933,46 +45973,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/ayi-com.md"
-  },
-  {
-    "id": "backpage-craigslist-alternative",
-    "name": "Backpage (Craigslist Alternative)",
-    "description": "OSINT tool: Backpage (Craigslist Alternative).",
-    "url": "http://backpage.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "classifieds"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/backpage-craigslist-alternative.md"
   },
   {
     "id": "badoo",
@@ -152954,38 +152954,58 @@
   },
   {
     "id": "tubuep",
-    "name": "Tubuep",
-    "description": "OSINT tool: Tubuep.",
+    "name": "TubeUp",
+    "description": "Use when you have a `social-profile` or video URL and want a permanent copy — a CLI that downloads a video (via yt-dlp) with metadata and uploads it to the Internet Archive.",
     "url": "https://github.com/bibanon/tubeup",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Preserving a subject's YouTube/other video (and its metadata) to the Internet Archive before it can be deleted.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (GPLv3); requires a free Internet Archive account for uploads.",
+    "opsec": "active",
+    "opsecNote": "Downloading with yt-dlp is passive to the target, but uploading creates a PUBLIC Internet Archive item under your archive.org account — that is attributable and permanent. Use a dedicated archive account, and be sure you have the right to re-host the content before uploading.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by Bibliotheca Anonoma; widely used, open-source, and auditable on GitHub. It wraps yt-dlp and the Internet Archive's own upload API.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "tubeup",
+      "Tubuep"
+    ],
     "tags": [
-      "video-search-and-other-video-tools"
+      "video-search-and-other-video-tools",
+      "archiving",
+      "cli"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tubuep.md"
   },
   {
@@ -159282,43 +159302,52 @@
   {
     "id": "mapme-com",
     "name": "mapme.com",
-    "description": "OSINT tool: mapme.com.",
+    "description": "Use when a subject or org may publish a public interactive directory/map here — browse Mapme-hosted maps to place people, businesses or points at a `geolocation`/`address`.",
     "url": "https://mapme.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading public interactive maps/directories (member maps, business locators, project portfolios) that pin a subject or place.",
     "selectorsIn": [
-      "geolocation",
+      "name",
+      "employer-org",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Creating maps is a freemium SaaS; viewing published public maps is free and needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a published public map is read-only and does not notify anyone. If you sign up to build a map you expose an account — for OSINT you only need to view public maps, ideally from a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Mapme is a legitimate no-code map-building platform; the map content itself is created by third parties (orgs/individuals) and is only as accurate and current as those creators made it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mapme",
+      "mapme.com"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mapme-com.md"
   },
   {
@@ -167066,35 +167095,50 @@
   {
     "id": "readergram-com",
     "name": "Readergram.com",
-    "description": "OSINT tool: Readergram.com.",
+    "description": "Use when you have a `username`, channel name or keyword and want to browse public Telegram channels/groups from the web — returns channel `social-profile`s and their content.",
     "url": "https://readergram.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering and reading public Telegram channels, groups and posts in a browser without a Telegram account.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free to browse and read public Telegram content; no Telegram account needed. Availability is occasionally flaky (the site returned server errors during checks).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Readergram is a third-party web viewer of public Telegram channels, so you read without joining, logging in, or revealing a Telegram identity to the channel. It only sees public channels; do not treat absence as proof. Use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent third-party Telegram directory/viewer, not affiliated with Telegram. It mirrors public channel content; freshness and completeness are not guaranteed.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Readergram",
+      "Telegram reader"
+    ],
+    "tags": [
+      "telegram",
+      "messaging"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/readergram-com.md"
   },
   {
@@ -225925,14 +225969,14 @@
   },
   {
     "id": "creditrisk-monitor",
-    "name": "CreditRisk Monitor",
-    "description": "Business-related directory of public companies worldwide",
-    "url": "http://www.crmz.com/Directory",
+    "name": "CreditRiskMonitor Directory",
+    "description": "Use when you have a company `name`/`employer-org` and want a public-company profile — a free worldwide directory of listed firms by country, industry and active/inactive status.",
+    "url": "https://www.crmz.com/Directory",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a public company exists and browsing peers by country/industry; deep credit-risk data is paid.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -225941,15 +225985,16 @@
       "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The public-company directory (browse by country/state/SIC industry, active vs inactive) is free; CreditRiskMonitor's actual financial-risk reports and ratings require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only browsing of a public directory; nothing is attributed to your subject and no login is needed for the directory. It covers public (listed) companies only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "CreditRiskMonitor is an established commercial credit-research firm (crmz.com). The free directory is a straightforward index of public companies; the value-add risk analytics are the paid product.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -225958,15 +226003,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CreditRiskMonitor",
+      "crmz.com directory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/creditrisk-monitor.md"
   },
   {
@@ -362001,39 +362049,54 @@
   },
   {
     "id": "license-plate-lookup",
-    "name": "License Plate Lookup",
-    "description": "OSINT tool: License Plate Lookup.",
+    "name": "License Plate Lookup (SearchQuarry)",
+    "description": "Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-gated membership.",
     "url": "https://www.searchquarry.com/free-license-plate-number-lookup/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting free basic vehicle specs from a US plate, with owner data available only via SearchQuarry's paid, DPPA-compliant membership.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Basic vehicle info (make/model/year) is free; owner name/address and full history reports require a paid SearchQuarry membership and a stated DPPA-permissible purpose.",
+    "opsec": "active",
+    "opsecNote": "You submit the target's plate to a commercial broker that logs the query and requires you to affirm a DPPA reason before showing owner data. US DMV owner data is DPPA-protected — only query plates you have a lawful reason to look up. Use a sock-puppet browser and never proceed to owner data without a permissible purpose.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "SearchQuarry is a long-standing US public-records data broker. It aggregates from many public sources and openly warns results \"may not always be accurate or current\" — treat owner data as unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "searchquarry"
     ],
+    "aliases": [
+      "SearchQuarry plate lookup"
+    ],
+    "tags": [
+      "vehicle",
+      "license-plate"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/license-plate-lookup.md"
   },
   {

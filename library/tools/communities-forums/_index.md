@@ -48,7 +48,7 @@ kind: group-index
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
-- **`business-com`** (medium) — Business and technology-related guides and articles
+- **`business-com`** (medium) — Use when you have an `employer-org` and want B2B context — a business advice/reviews site that can corroborate a company's existence and cat
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`care2`** (medium) — Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile
@@ -117,7 +117,7 @@ kind: group-index
 - **`forums-digitalspy-com`** (medium) — OSINT tool: forums.digitalspy.com.
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
 - **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social
-- **`forums-overclockers-co-uk`** (medium) — OSINT tool: forums.overclockers.co.uk.
+- **`forums-overclockers-co-uk`** (medium) — Use when you have a `username` and want to check one of the UK's largest PC-hardware communities — returns a `social-profile` and long post 
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
@@ -289,7 +289,7 @@ kind: group-index
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`rss-tools-website`** (medium) — Website that provides links to tools and informatino related to RSS Feeds
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
-- **`safenote`** (medium) — OSINT tool: SafeNote.
+- **`safenote`** (medium) — Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (y
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
 - **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base

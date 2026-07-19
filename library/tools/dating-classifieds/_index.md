@@ -15,7 +15,6 @@ kind: group-index
 - **`ashley-madison`** (medium) — OSINT tool: Ashley Madison.
 - **`autotrader-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
 - **`ayi-com`** (low) — Use when checking whether a subject keeps a casual/location-based dating profile by `username` or `geolocation` — a legacy "Are You Interest
-- **`backpage-craigslist-alternative`** (medium) — OSINT tool: Backpage (Craigslist Alternative).
 - **`badoo`** (medium) — Use when you have a `username`, `image`, or `geolocation` and want to find a subject's profile on one of the largest global dating/people-ne
 - **`bargaincity-classified-ads-canada`** (medium) — Classified advertisements-related website that provides regional services
 - **`beautifulpeople-com`** (low) — Use when checking a niche, member-voted dating community for a subject's profile by `username` or `image` — a small, vetting-gated platform.

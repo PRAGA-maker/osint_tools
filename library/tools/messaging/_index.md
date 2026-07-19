@@ -107,7 +107,7 @@ kind: group-index
 - **`pimeyes`** (high) — Use when you have a `face`/`image` of a subject and want to find other web pages showing that same face — returns matching photos and the UR
 - **`pixelatomy-com`** (medium) — Use when you have a Discord ID (`document-id` snowflake from a user, message, or channel) and want its exact creation date/time — returns th
 - **`prankshit-com-2`** (high) — Use when you have a screenshot of a `phone`/`username` WhatsApp "chat" and want to know whether it could be fabricated — this is a fake-chat
-- **`readergram-com`** (medium) — OSINT tool: Readergram.com.
+- **`readergram-com`** (medium) — Use when you have a `username`, channel name or keyword and want to browse public Telegram channels/groups from the web — returns channel `s
 - **`reddit-com-2`** (high) — Use when you have a Telegram `username` and want the account's stable numeric user ID — this is a community how-to thread describing the bot
 - **`regdatebot`** (high) — Use when you have a Telegram `username` or account and want to estimate when it was created — returns an approximate account registration da
 - **`sangmata-beta`** (high) — Use when you have a Telegram user (a `username` or forwarded message) and want their history of past names and usernames — returns prior `na
