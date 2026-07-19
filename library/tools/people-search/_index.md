@@ -67,7 +67,7 @@ kind: group-index
 - **`dice`** (low) — Use when you have a `name` or `username` of a US tech worker and want their professional profile — returns employer, skills, location, and c
 - **`digi-netra`** (medium) — Use when you have a `phone`, `username`, `ip-address` or `email` and want a quick multi-source CLI trace — returns carrier/geo, cross-platfo
 - **`discordleaks`** (high) — Use when you have a `name`, `username`, or keyword and want to search leaked messages from white-supremacist / neo-nazi Discord (and RocketC
-- **`dob-search-death-records`** (medium) — OSINT tool: DOB Search - Death records.
+- **`dob-search-death-records`** (medium) — Use when you have a `name` and want to determine whether the person is deceased — returns death date/location, obituary, and burial leads.
 - **`effect-group`** (high) — Use when you have a name, email or phone and want an aggregated OSINT profile — returns linked profiles, contact data, breach hits and face/
 - **`ellis-island-new-york-passenger-search`** (high) — Use when you have a historical immigrant's `name` and want their Port of New York / Ellis Island arrival record — returns arrival date, ship
 - **`ellis-island`** (high) — Use when you have a `name` of a US immigrant ancestor (1892-1957) and want their arrival record — returns arrival date, age (`dob`), origin/

@@ -23,7 +23,6 @@ kind: group-index
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
 - **`alamo-rental-receipts`** (medium) — OSINT tool: Alamo Rental Receipts.
-- **`american-association-of-motor-vehicle-administrators`** (medium) — Website for the American Association of Motor Vehicle Administrators
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
 - **`ancapa-sciences-intelligence-analysis`** (medium) — Company specializing in analysis, education, and training for both the government and private industries
 - **`askmid`** (medium) — OSINT tool: askMID.
@@ -215,7 +214,7 @@ kind: group-index
 - **`world-aviation-accident-database-1962-2007`** (low) — OSINT tool: World Aviation Accident Database 1962-2007.
 - **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.
 - **`world-license-plates`** (medium) — Use when you have an `image` of a licence plate (or its format) and want to identify where it's from — returns the country/region `geolocati
-- **`world-shipping-register`** (medium) — Maritime-related website focusing on a searchable database of worldwide vessel registration information
+- **`world-shipping-register`** (medium) — Use when you have a ship `name`/IMO or an owner and want vessel registration details — returns owner/manager/builder links and vessel specs.
 - **`xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat`** (low) — OSINT tool: xBlog: bellingcat - A Beginner's Guide To Flight Tracking - bellingcat.
 - **`zugfinder`** (low) — Detailed information on trains, stations and real-time train traffic for European countries
 

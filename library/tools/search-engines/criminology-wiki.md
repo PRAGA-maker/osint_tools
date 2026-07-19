@@ -32,6 +32,7 @@ registration: false
 relatedTools:
 - wikiaentertainment
 - wowwiki-world-of-warcraft-wiki
+- itlaw
 aliases:
 - Criminology Fandom wiki
 tags:

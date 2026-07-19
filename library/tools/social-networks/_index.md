@@ -737,7 +737,7 @@ kind: group-index
 - **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
 - **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t
-- **`wikiwho`** (medium) — Database of edits made to #Wikipedia using IP ranges of organizations, government agencies and companies (FBI, NATO, European Parliament, et
+- **`wikiwho`** (medium) — Use when you have an `employer-org` and want anonymous Wikipedia edits made from its IP ranges — returns the org's edit history and the page
 - **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.
 - **`wiza-co`** (medium) — Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `
 - **`worldcam-search-instagram-by-location`** (high) — Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and socia

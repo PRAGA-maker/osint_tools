@@ -36,6 +36,7 @@ enrichment: stub
 relatedTools:
 - criminology-wiki
 - wowwiki-world-of-warcraft-wiki
+- itlaw
 ---
 
 # WikiaEntertainment

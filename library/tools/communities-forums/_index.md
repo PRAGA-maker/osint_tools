@@ -55,7 +55,7 @@ kind: group-index
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
 - **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
 - **`charitable-impact`** (medium) — Network of charities in Canada
-- **`chemistry-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`chemistry-com`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Chemistry.com dating site — returns a soc
 - **`christian-mingle`** (medium) — Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
 - **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness

@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`academic-publication-search/`** — 16 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
-- **`ftp-search/`** — 2 skill(s) below.
+- **`ftp-search/`** — 1 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 12 skill(s) below.
@@ -175,7 +175,7 @@ kind: group-index
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
 - **`crt-certificate-search`** (medium) — Use when you have a `domain` and want every TLS certificate ever issued for it — returns subdomains, issuance dates, issuing CA and any `ema
-- **`cse-utopia`** (medium) — Custom search engine
+- **`cse-utopia`** (medium) — Use when you have any selector and want a big curated set of Google Custom Search Engines to pivot it — returns links to purpose-built CSEs 
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
 - **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
 - **`cyber-criminals-most-wanted`** (low) — Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource p
@@ -322,7 +322,7 @@ kind: group-index
 - **`google-safesearch-filter`** (low) — Google safesearch settings
 - **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
 - **`google-search`** (low) — OSINT tool: Google Search.
-- **`google-shopping-search-engine`** (medium) — Search for items on sale across the Web on Google's platform
+- **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — OSINT tool: Google to search profiles on Stack Overflow.
 - **`google-unlocked`** (low) — browser extension uncensor google search results
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
@@ -381,7 +381,7 @@ kind: group-index
 - **`islegitsite`** (medium) — OSINT tool: Islegitsite.
 - **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n
 - **`itar-tass`** (low) — OSINT tool: Itar-Tass.
-- **`itlaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
 - **`ivmachiavelli-osint-team-links`** (medium) — GitHub-hosted curated list of OSINT links/tools.
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
 - **`ixigo`** (medium) — India travel information site
@@ -527,7 +527,7 @@ kind: group-index
 - **`octosearch-dootech-com`** (medium) — Use when you want to search GitHub repositories starred by people you follow — a personal discovery tool over your own GitHub network's cura
 - **`od-search-tool`** (medium) — Open directory search tool.
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
-- **`odin`** (medium) — OSINT tool: ODIN.
+- **`odin`** (medium) — Use when you have an `ip-address` or `domain` and want its exposed hosts/services — returns open ports, services, banners, and certificate/h
 - **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
 - **`oh-shint-osint-web-resources`** (medium) — GitBook of OSINT web resources and methodology.
 - **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
@@ -721,7 +721,7 @@ kind: group-index
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — XDCC file search engine
 - **`superdesk`** (low) — OSINT tool: Superdesk.
-- **`superuser`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
 - **`surf-canyon-ebay-search`** (medium) — eBay search engine
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
