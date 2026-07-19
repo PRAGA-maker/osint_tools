@@ -373,7 +373,6 @@ kind: group-index
 - **`mixi`** (high) — Use when you have a Japanese `username` or `name` and want to check for a mixi social profile — returns a social-profile, but most content i
 - **`mocospace`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MocoSpace/Moco mobile social network — returns the matching 
 - **`monnett-social`** (high) — Use when you have a `username` or `name` and suspect the subject is on Monnett, a small privacy-focused European social app — returns a soci
-- **`montage-meedan-com`** (medium) — Search #YouTube video by date (uploaded or recording) and by geolocation.
 - **`mostly-harmless`** (high) — Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension retur
 - **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
 - **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
@@ -531,7 +530,7 @@ kind: group-index
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — Use when you have a Snapchat `username` and want to confirm the account exists — returns a Snapcode image when the handle is valid.
-- **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
+- **`snapchat-user-search`** (medium) — Use when you have a `username`/`name` or a city and want to find Snapchat users — returns member profiles with age, location, and photos (se
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
 - **`snapintel`** (medium) — Use when you have a Snapchat `username` and want that account's public content — returns stories, spotlights, lenses, bitmoji and an upload-
 - **`snapmap-archiver`** (medium) — Use when you have a `geolocation` (or a Snap Map URL) and want to bulk-download all public Snapchat Snap Map posts from that spot — returns 
@@ -714,7 +713,7 @@ kind: group-index
 - **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.
 - **`username-availability`** (low) — OSINT tool: Username Availability.
 - **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
-- **`vidnice`** (medium) — OSINT tool: Vidnice.
+- **`vidnice`** (medium) — Use when you have a TikTok `username`/hashtag and want to view the profile and videos anonymously — returns social-profile, videos, stats, a
 - **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile
 - **`vk-city4me-com`** (medium) — Use when you have a VK `social-profile`/`username` and want their activity patterns — returns online/offline timelines and profile-change hi
 - **`vk-com-2`** (high) — Use when you have a `name` or `username` (especially for a Russian/CIS-linked subject) and want to find their VKontakte profile — returns `s

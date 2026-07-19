@@ -287,7 +287,7 @@ kind: group-index
 - **`time-is`** (medium) — OSINT tool: time.is.
 - **`timeanddate-com`** (medium) — Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
-- **`timejones-com`** (medium) — OSINT tool: timejones.com.
+- **`timejones-com`** (medium) — Use when you have times across `geolocation`s and want to align them — returns cross-city time-zone conversions and a meeting/event schedule
 - **`timestamp-converter-com`** (medium) — Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns 
 - **`toronto-area-live-traffic-cams`** (low) — OSINT tool: Toronto area Live Traffic Cams.
 - **`toronto-live`** (low) — Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolo

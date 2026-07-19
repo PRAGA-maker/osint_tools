@@ -30586,41 +30586,52 @@
   {
     "id": "ircsnapshot",
     "name": "ircsnapshot",
-    "description": "IRC topology mapping and user/channel relationship analysis",
+    "description": "Use when you have an IRC server/network and want its structure — returns channels, users, and user↔channel relationships as a graph.",
     "url": "https://github.com/bwall/ircsnapshot",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "irc-search"
     ],
-    "bestFor": "IRC topology mapping and user/channel relationship analysis",
-    "input": "IRC server details, bot config, and channel targets",
-    "output": "Collected user, hostmask, and channel affiliation data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Snapshotting an IRC server's channels and users and mapping who is in what, exportable as a Gephi graph.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT) Python tool; no cost, run locally.",
     "opsec": "active",
-    "opsecNote": "Requires active network participation via bot accounts and is likely visible to channel operators.",
+    "opsecNote": "This CONNECTS to the target IRC server as a client (it joins/queries), so the server and its operators can see your bot's nick, host, and activity — that is ACTIVE. Use SOCKS4 proxy support and a throwaway nick/host; do not use an attributable identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established open-source recon tool (packaged in Kali); it faithfully reports what the server exposes, but IRC identities (nicks, realnames) are trivially spoofable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "ircsnapshot",
+      "bwall/ircsnapshot"
+    ],
+    "tags": [
+      "irc",
+      "network-mapping",
+      "recon"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/irc-search/ircsnapshot.md"
   },
   {
@@ -115355,50 +115366,6 @@
     "_file": "library/tools/financial-crypto/privacy-coin-analysis/xmrchain-net-monero.md"
   },
   {
-    "id": "zcash-block-explorer",
-    "name": "Zcash Block Explorer",
-    "description": "Zcash transparent transaction tracking (limited privacy-coin OSINT)",
-    "url": "https://blockchair.com/zcash",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto",
-      "privacy-coin-analysis"
-    ],
-    "bestFor": "Zcash transparent transaction tracking (limited privacy-coin OSINT)",
-    "input": "Zcash address (transparent), transaction hash, or block height",
-    "output": "Transaction details, address balance (transparent addresses only), block information, mining statistics",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Only transparent Zcash transactions are traceable; shielded transactions provide privacy beyond analysis capability.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "bitcoin-explorer",
-      "blockchair",
-      "blockchair-com"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/privacy-coin-analysis/zcash-block-explorer.md"
-  },
-  {
     "id": "24timezones-com",
     "name": "24timezones.com",
     "description": "Use when you have a `geolocation` (city/country) and want its current local time, UTC offset, and DST state — returns the local wall-clock time and zone so you can localize a timestamp to where your subject was.",
@@ -129298,43 +129265,51 @@
   },
   {
     "id": "timejones-com",
-    "name": "timejones.com",
-    "description": "OSINT tool: timejones.com.",
+    "name": "TimeJones",
+    "description": "Use when you have times across `geolocation`s and want to align them — returns cross-city time-zone conversions and a meeting/event scheduler view.",
     "url": "https://www.timejones.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a timestamp between cities/time zones and visualizing overlapping local times across multiple locations.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web time-zone converter, event scheduler, and world-clock utility; no account.",
+    "opsec": "passive",
+    "opsecNote": "A client-side time/date utility; nothing about a subject is queried and there is no target footprint. Fully safe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A straightforward time-zone/scheduling utility; conversions are deterministic and easy to re-verify, so accuracy depends only on correct DST/zone handling.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TimeJones",
+      "timejones.com"
+    ],
     "tags": [
       "timezones",
-      "Time Zones & Converters"
+      "Time Zones & Converters",
+      "scheduling"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/timejones-com.md"
   },
   {
@@ -174596,8 +174571,8 @@
   },
   {
     "id": "browser-statistics",
-    "name": "Browser Statistics",
-    "description": "Selecting realistic browser user agents, understanding browser fingerprint believability",
+    "name": "W3Schools Browser Statistics",
+    "description": "Use when building a believable sock-puppet browser fingerprint — returns current browser/OS market-share stats so your user-agent choice blends in.",
     "url": "https://www.w3schools.com/browsers/default.asp",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -174605,34 +174580,40 @@
       "anonymous-browsing",
       "browser-tests"
     ],
-    "bestFor": "Selecting realistic browser user agents, understanding browser fingerprint believability",
-    "input": "No input required (static reference data)",
-    "output": "Browser market share percentages by browser family and version",
+    "bestFor": "Choosing a common, unremarkable browser/OS/user-agent for a sock-puppet so it doesn't stand out as a rare fingerprint.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public reference pages; no account.",
     "opsec": "passive",
-    "opsecNote": "Reference page only; visiting W3Schools does not expose sensitive operational data.",
+    "opsecNote": "A reference for hardening YOUR OWN browsing footprint, not a query against a target. Reading it has no subject footprint. Use it to pick a high-share, boring fingerprint so your research browser blends into the crowd.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "W3Schools' stats are drawn from its own (developer-skewed) visitor logs, so treat the numbers as indicative of \"what's common,\" not a precise global census; cross-check with StatCounter for population-level share.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "W3Schools browser stats",
+      "browser market share"
+    ],
+    "tags": [
+      "opsec",
+      "fingerprint",
+      "sockpuppet"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/browser-statistics.md"
   },
   {
@@ -279804,36 +279785,52 @@
   },
   {
     "id": "engine-presearch-org",
-    "name": "Engine.presearch.org",
-    "description": "OSINT tool: Engine.presearch.org.",
+    "name": "Presearch",
+    "description": "Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/personalization of mainstream engines.",
     "url": "https://engine.presearch.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a query through a decentralized, privacy-focused metasearch engine to get less-personalized, alternative results.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search; no account needed for basic use (an optional account/token rewards system exists but isn't required).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Presearch is privacy-oriented and doesn't build a personal profile of you the way mainstream engines do, which is useful for reducing filter-bubble bias and your own footprint. Still route through a sock-puppet/VPN as normal; the search itself doesn't touch the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A decentralized community/crypto-backed metasearch project; it aggregates results from multiple sources, so quality varies and it should supplement, not replace, mainstream engines.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [],
+    "aliases": [
+      "Presearch",
+      "engine.presearch.org"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy",
+      "metasearch"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/engine-presearch-org.md"
   },
   {
@@ -281647,46 +281644,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/flippity.md"
-  },
-  {
-    "id": "flixster",
-    "name": "Flixster",
-    "description": "Movie listings website",
-    "url": "http://www.flixster.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/flixster.md"
   },
   {
     "id": "fluther",
@@ -285623,42 +285580,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/hacking-the-cloud.md"
-  },
-  {
-    "id": "harmari-unified-listings-search",
-    "name": "Harmari (Unified Listings Search)",
-    "description": "OSINT tool: Harmari (Unified Listings Search).",
-    "url": "https://www.harmari.com/search/unified",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/harmari-unified-listings-search.md"
   },
   {
     "id": "hawaii-professional-and-vocational-license-search",
@@ -329802,50 +329723,6 @@
     "_file": "library/tools/social-networks/monnett-social.md"
   },
   {
-    "id": "montage-meedan-com",
-    "name": "Montage.meedan.com",
-    "description": "Search #YouTube video by date (uploaded or recording) and by geolocation.",
-    "url": "https://montage.meedan.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "check"
-    ],
-    "_file": "library/tools/social-networks/montage-meedan-com.md"
-  },
-  {
     "id": "mostly-harmless",
     "name": "Mostly Harmless",
     "description": "Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension returning social-profile (Reddit) leads.",
@@ -338538,36 +338415,56 @@
   },
   {
     "id": "snapchat-user-search",
-    "name": "Snapchat User Search",
-    "description": "OSINT tool: Snapchat User Search.",
+    "name": "SoVIP — Snapchat User Search",
+    "description": "Use when you have a `username`/`name` or a city and want to find Snapchat users — returns member profiles with age, location, and photos (self-listed on SoVIP).",
     "url": "https://sovip.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering Snapchat users by name/handle or by city/age filters via a third-party directory of self-listed Snapchatters.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search; a free account (email or social sign-in) unlocks full access.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "SoVIP indexes profiles that users voluntarily submitted TO SoVIP — it is not Snapchat's official data, and searching it does not touch the person's Snapchat account or notify them (passive). Register with a sock-puppet, not a real identity, since sign-up wants an email/social login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party, user-submitted Snapchat directory — anyone can list (or impersonate) a handle, and the site itself warns about fraudulent listings, so treat every entry as unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "SoVIP",
+      "sovip.io",
+      "Snapchat user search"
+    ],
+    "tags": [
+      "snapchat",
+      "people-search",
+      "social-networking"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapchat-user-search.md"
   },
   {
@@ -348847,47 +348744,53 @@
   },
   {
     "id": "vidnice",
-    "name": "Vidnice",
-    "description": "OSINT tool: Vidnice.",
+    "name": "VidNice",
+    "description": "Use when you have a TikTok `username`/hashtag and want to view the profile and videos anonymously — returns social-profile, videos, stats, and comments without a TikTok account.",
     "url": "https://vidnice.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing a TikTok profile, its videos, stats, and comments anonymously (no TikTok login), and downloading videos for analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web-based TikTok viewer, analytics, and downloader; no account needed to browse public profiles.",
+    "opsec": "passive",
+    "opsecNote": "Views TikTok's public content through VidNice's servers, so you don't log into TikTok or reveal a TikTok account — passive, no view/follow signal reaches the subject. VidNice sees your queries; use a clean/sock-puppet browser. Downloading videos routes through VidNice, not your own request to TikTok.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party TikTok viewer/analytics site; data mirrors public TikTok content but is scraped, so figures can lag and it may miss private/removed content.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "tiktok"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "tiktok-user-search"
     ],
+    "aliases": [
+      "Vid Nice",
+      "vidnice.com"
+    ],
+    "tags": [
+      "tiktok",
+      "anonymous-viewer",
+      "social-networking"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vidnice.md"
   },
   {
@@ -359008,51 +358911,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/transportation/check-if-a-vehicle-is-taxed-and-has-an-mot.md"
-  },
-  {
-    "id": "check-that-vin",
-    "name": "Check That Vin",
-    "description": "OSINT tool: Check That Vin.",
-    "url": "https://checkthatvin.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "check-that-vin-search"
-    ],
-    "_file": "library/tools/transportation/check-that-vin.md"
   },
   {
     "id": "check-that-vin-search",

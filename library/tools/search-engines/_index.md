@@ -226,7 +226,7 @@ kind: group-index
 - **`elocalfinder-hybrid-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`elsevier`** (low) — OSINT tool: Elsevier.
 - **`encyclopedia-of-math`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on m
-- **`engine-presearch-org`** (medium) — OSINT tool: Engine.presearch.org.
+- **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
 - **`eniro-sweden`** (low) — OSINT tool: Eniro (Sweden).
 - **`entireweb-text-based-search-engine`** (medium) — Surface web search engine covering worldwide results
 - **`etools`** (low) — OSINT tool: Etools.
@@ -265,7 +265,6 @@ kind: group-index
 - **`firebounty`** (low) — Bug bounty search engine
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
 - **`flippity`** (medium) — OSINT tool: Flippity.
-- **`flixster`** (medium) — Movie listings website
 - **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
@@ -342,7 +341,6 @@ kind: group-index
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Hacker News search engine with filters. Useful for finding all mentions of a product or person.
 - **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
-- **`harmari-unified-listings-search`** (medium) — OSINT tool: Harmari (Unified Listings Search).
 - **`hawaii-professional-and-vocational-license-search`** (medium) — State of Hawaiis professional and vocational licensing search utility
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
