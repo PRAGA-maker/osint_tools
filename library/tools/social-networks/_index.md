@@ -486,7 +486,7 @@ kind: group-index
 - **`redditery`** (low) — Explore Reddit posts and comments by criteria.
 - **`redditle-com`** (medium) — OSINT tool: Redditle.com.
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
-- **`redditsave-com`** (medium) — Reddit video downloader
+- **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.
 - **`reddloader-com`** (medium) — Reddit video downloader
@@ -667,7 +667,6 @@ kind: group-index
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
-- **`tweetreach`** (medium) — OSINT tool: Tweetreach.
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)
 - **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
@@ -719,7 +718,6 @@ kind: group-index
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for
 - **`twitterwebviewer-com`** (high) — Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile conten
 - **`twitwork`** (medium) — Electron/Node.js desktop app to monitor a live Twitter stream.
-- **`twlets`** (medium) — OSINT tool: Twlets.
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
 - **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
 - **`twxplorer`** (medium) — OSINT tool: twXplorer.
