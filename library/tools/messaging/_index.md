@@ -156,7 +156,7 @@ kind: group-index
 - **`telemetry`** (medium) — Use when you have a `username`, `name`, keyword, or `phone` and want to find where it surfaces across public Telegram — returns `social-prof
 - **`telepahty`** (high) — Use when you have a Telegram channel/group or `username` and want to map it — returns member lists (`associate`), archived messages, forward
 - **`telepathy-2`** (high) — Use when you have a Telegram channel/group or a user's `social-profile` and want to archive it and enumerate members — returns member lists,
-- **`telepathy`** (medium) — Telepathy is a versatile Telegram toolkit for OSINT analysts, enabling chat archiving, memberlist gathering, user location lookup, top poste
+- **`telepathy`** (medium) — Use when you have a Telegram channel/group or `username` and want to archive and analyze it at scale — returns member lists, message archive
 - **`telerecon`** (high) — Use when you have a Telegram `username`, `phone` or channel and want to scrape and profile that target across Telegram — returns messages, c
 - **`telescan`** (medium) — search users in groups (and in which groups is the user) by id, username or phone number (if it's in your contacts)
 - **`telesearch`** (high) — Use when you have a `name`/keyword and want to find public Telegram channels, groups, and bots about it — returns social-profile leads with 

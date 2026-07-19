@@ -406,7 +406,6 @@ kind: group-index
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
-- **`kartoo-visual-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
 - **`keys-openpgp-org`** (medium) — OSINT tool: keys.openpgp.org.
 - **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
@@ -827,7 +826,7 @@ kind: group-index
 - **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`wikisummaries`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
 - **`wikitravel`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
-- **`wikivoyage`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
 - **`wiley`** (low) — OSINT tool: Wiley.
 - **`wintria`** (low) — OSINT tool: Wintria.
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de

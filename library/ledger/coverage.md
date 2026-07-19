@@ -2,20 +2,20 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8085 total · 3710 full · 4375 stub (45% enriched)
+**Tools:** 8083 total · 3716 full · 4367 stub (45% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3480 · medium: 2643 · high: 1962
+low: 3483 · medium: 2638 · high: 1962
 
 ## Tools by trust
-unverified: 3424 · community: 3395 · trusted: 1254 · personal: 6 · untrustworthy: 6
+unverified: 3417 · community: 3397 · trusted: 1257 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 7/455
-- `archives-cache` — 51/133
+- `archives-cache` — 52/133
 - `communities-forums` — 100/390
 - `dark-web` — 18/118
 - `dating-classifieds` — 47/109
@@ -25,15 +25,15 @@ unverified: 3424 · community: 3395 · trusted: 1254 · personal: 6 · untrustwo
 - `evidence-capture` — 6/31
 - `financial-crypto` — 37/127
 - `geolocation` — 235/348
-- `image-video-face` — 411/470
-- `maps-geospatial-data` — 33/139
-- `messaging` — 160/191
+- `image-video-face` — 413/470
+- `maps-geospatial-data` — 34/139
+- `messaging` — 161/191
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 239/264
 - `phone` — 134/137
 - `public-records` — 721/1096
-- `search-engines` — 304/924
-- `social-networks` — 643/842
+- `search-engines` — 305/923
+- `social-networks` — 643/841
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
 - `transportation` — 80/225
@@ -42,8 +42,8 @@ unverified: 3424 · community: 3395 · trusted: 1254 · personal: 6 · untrustwo
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1034 leaves
-- `library/tools/search-engines` — 861 leaves
-- `library/tools/social-networks` — 814 leaves
+- `library/tools/search-engines` — 860 leaves
+- `library/tools/social-networks` — 813 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 504 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves

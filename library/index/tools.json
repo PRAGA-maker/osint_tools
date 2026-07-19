@@ -18990,38 +18990,48 @@
   },
   {
     "id": "factinsect",
-    "name": "FACTINSECT",
-    "description": "Free online tool for automating #factchecking. In order to confirm or deny some information, the service provides several arguments with references to information sources.",
+    "name": "Factinsect",
+    "description": "Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict with cited sources.",
     "url": "https://factinsect.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Automated first-pass fact-checking of a claim or article, with a traffic-light verdict and links to confirming/contradicting sources.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free automated fact-checking tool (Austrian project); offered via the website and a browser extension.",
+    "opsec": "passive",
+    "opsecNote": "Submitting a public claim/URL to Factinsect touches only Factinsect's service, not the claim's subject. Avoid pasting sensitive non-public case text into a third-party checker.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An independent AI fact-checking startup (MediaFutures-backed); its automated verdicts are a screening aid, not authoritative — always read the cited sources yourself.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "factinsect.com"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "Archives of documents/newspapers",
+      "fact-checking",
+      "verification"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/factinsect.md"
   },
   {
@@ -133379,40 +133389,54 @@
   {
     "id": "bhuvan",
     "name": "Bhuvan",
-    "description": "Indian Geo-platfrom of ISRO.",
+    "description": "Use when you have a `geolocation` in India and want satellite/aerial imagery and thematic map layers — returns ISRO earth-observation imagery and geospatial data.",
     "url": "https://bhuvan.nrsc.gov.in/home/index.php",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "ISRO's Indian geoportal — high-detail satellite imagery and thematic map layers for locations across India.",
     "selectorsIn": [
+      "geolocation",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the map viewer and many layers; some datasets and downloads require a free registration. Run by India's National Remote Sensing Centre (ISRO).",
+    "opsec": "passive",
+    "opsecNote": "Viewing satellite/map imagery is passive and reveals nothing about your subject. Registering to download data creates an account with a government body; use appropriate discretion.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official ISRO/NRSC (Government of India) earth-observation platform; the imagery is authoritative government remote-sensing data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ISRO Bhuvan",
+      "NRSC Bhuvan"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Satellite/aerial imagery"
+      "Satellite/aerial imagery",
+      "india"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/bhuvan.md"
   },
   {
@@ -153819,40 +153843,53 @@
   {
     "id": "webcam-cse",
     "name": "WEBCAM CSE",
-    "description": "Google Custom Search Engine for search in 10 online street webcam catalogs",
+    "description": "Use when you have a place/`geolocation` and want a live street webcam there — returns webcam feeds from 10 online webcam catalogs via one Google Custom Search.",
     "url": "https://cipher387.github.io/webcamcse/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One search box across 10 street-webcam directories to find a live public camera near a location of interest.",
     "selectorsIn": [
+      "geolocation",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; a static GitHub Pages page wrapping a Google Custom Search Engine. No account.",
+    "opsec": "passive",
+    "opsecNote": "You're searching public webcam directories via Google, not accessing anyone's private camera. Viewing the resulting public webcams is passive and legal; do not attempt to reach cameras that aren't intentionally public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-built Google CSE by cipher387 (well-known OSINT curator); it only searches existing public webcam catalogs, so quality tracks those sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "webcamcse"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Worldwide street webcams"
+      "Worldwide street webcams",
+      "webcam"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/webcam-cse.md"
   },
   {
@@ -160203,42 +160240,54 @@
   },
   {
     "id": "policy-map",
-    "name": "Policy Map",
-    "description": "Data mapping tool; includes crime stats, demographics and other data sets",
-    "url": "http://www.policymap.com/",
+    "name": "PolicyMap",
+    "description": "Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housing, income, health and crime.",
+    "url": "https://www.policymap.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Mapping demographic, housing, economic, health, and area-level indicators down to neighborhood/census-tract level (mainly US).",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free tier lets you open the map and view many public datasets; deeper data, downloads, and reports require a paid subscription. Common at libraries/universities that provide institutional access.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You map aggregate data about an area, not a person, so nothing about your subject is exposed. Any free account you create is logged to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "A well-established data-visualization platform sourcing from authoritative public datasets (Census, HUD, CDC, etc.); the underlying data is reputable government/institutional data.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "policymap.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "demographics"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/policy-map.md"
   },
   {
@@ -169596,41 +169645,62 @@
   {
     "id": "telepathy",
     "name": "Telepathy",
-    "description": "Telepathy is a versatile Telegram toolkit for OSINT analysts, enabling chat archiving, memberlist gathering, user location lookup, top poster analysis, message mapping, and more.",
-    "url": "https://github.com/proseltd/Telepathy-Community?utm_source=chatgpt.com",
+    "description": "Use when you have a Telegram channel/group or `username` and want to archive and analyze it at scale — returns member lists, message archives, forward maps and user activity.",
+    "url": "https://github.com/proseltd/Telepathy-Community",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Command-line archiving and analysis of Telegram chats — member lists, message history, top posters, and forward/edge mapping.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "username",
+      "name",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (MIT) Community edition installable via pip; a commercial \"Telepathy Pro\" exists but the free CLI covers core OSINT needs.",
+    "opsec": "active",
+    "opsecNote": "Telepathy operates through YOUR authenticated Telegram account and its API credentials — scanning a group means your account joins/queries it, which admins and anti-bot tooling can detect. Use a dedicated sock-puppet Telegram account and number, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known Bellingcat-listed toolkit maintained by Prose (proseltd) on GitHub; open-source and actively maintained, though results depend on Telegram's API behavior.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "telepahty",
+      "telegram",
+      "find-telegram-channels-bots-groups"
+    ],
+    "aliases": [
+      "Telepathy-Community"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "telegram"
+      "telegram",
+      "cli"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "telepahty"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telepathy.md"
   },
   {
@@ -288119,46 +288189,6 @@
     "_file": "library/tools/search-engines/kagi-search.md"
   },
   {
-    "id": "kartoo-visual-meta-search-engine",
-    "name": "Kartoo Visual Meta Search Engine",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
-    "url": "http://www.kartoo.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/kartoo-visual-meta-search-engine.md"
-  },
-  {
     "id": "kelkoo-shopping-search-engine-europe",
     "name": "Kelkoo (Shopping Search, Europe)",
     "description": "Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what price.",
@@ -307559,25 +307589,31 @@
   {
     "id": "wikivoyage",
     "name": "Wikivoyage",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on travel",
+    "description": "Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, transport and local detail.",
     "url": "https://www.wikivoyage.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Crowdsourced local knowledge about a place — neighborhoods, landmarks, transport, and on-the-ground detail useful for geolocation and planning.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-free Wikimedia project; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a travel wiki is entirely passive and reveals nothing about your subject or investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "A Wikimedia Foundation project with open editing and community moderation; reliable for general local context, though crowdsourced detail can be dated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -307585,15 +307621,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "wikivoyage.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "travel",
+      "local-context"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wikivoyage.md"
   },
   {
@@ -317839,48 +317882,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/faceparty.md"
-  },
-  {
-    "id": "fake-follower-check",
-    "name": "Fake Follower Check",
-    "description": "OSINT tool: Fake Follower Check.",
-    "url": "https://fakers.statuspeople.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/fake-follower-check.md"
   },
   {
     "id": "fakedetail-com",

@@ -169,7 +169,6 @@ kind: group-index
 - **`facebook-video-downloader`** (high) — Use when you have a public Facebook video `url` (from a target's `social-profile`) and want to save the file for offline capture and analysi
 - **`facebook-watch`** (high) — Use when you have a `name`/`username` or page and want to find video content that person or page has posted or appears in on Facebook — retu
 - **`faceparty`** (medium) — Use when you have a `name` or `username` possibly tied to an older UK internet user and want to check for a legacy FaceParty profile — retur
-- **`fake-follower-check`** (medium) — OSINT tool: Fake Follower Check.
 - **`fakedetail-com`** (low) — Not a lookup — a generator of fake Snapchat/social chat screenshots; relevant to OSINT only for recognising fabricated evidence and (cautiou
 - **`fakeinfo-net`** (high) — Use when you need consistent fake persona details for a research sock puppet, or want to understand how forgeable "evidence" is — this fake-
 - **`fanpage-karma`** (low) — Use when you have a public `social-profile` (page/account) and want its analytics — posting cadence, engagement, follower trends — returns `

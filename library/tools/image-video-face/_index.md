@@ -48,7 +48,7 @@ kind: group-index
 - **`berify`** (high) — Use when you have an `image` or `face` and want to find where else it appears online across multiple engines plus a proprietary index — retu
 - **`betaface`** (high) — Use when you have a face photo and want automated facial analysis — landmark detection, demographic/attribute estimation, and similarity com
 - **`betterviewer`** (medium) — #Google Chrome extension for work with images. Right click on the picture and open it in new tab. You will get access to the following tools
-- **`bhuvan`** (medium) — Indian Geo-platfrom of ISRO.
+- **`bhuvan`** (medium) — Use when you have a `geolocation` in India and want satellite/aerial imagery and thematic map layers — returns ISRO earth-observation imager
 - **`bleepingcomputer-com`** (low) — Use when you have a redacted/pixelated image and need to understand whether obscured text can be recovered — this is a reference article, no
 - **`buzzsprout`** (high) — Use when you have a `name` or `username` and want to find a subject's podcast presence — returns social-profile, audio/show-notes content, a
 - **`camera-summary-exif-tool`** (high) — Use when you have an `image` (JPEG) and want its embedded camera metadata — returns EXIF details like camera make/model, timestamp and any G
@@ -358,7 +358,7 @@ kind: group-index
 - **`vimeo`** (medium) — OSINT tool: Vimeo.
 - **`watannetwork-com`** (low) — Use when you have a YouTube video URL/ID and want to see which countries it is available or blocked in — returns geolocation (country allow/
 - **`watermarkremover`** (medium) — Remove watermark from image with AI
-- **`webcam-cse`** (medium) — Google Custom Search Engine for search in 10 online street webcam catalogs
+- **`webcam-cse`** (medium) — Use when you have a place/`geolocation` and want a live street webcam there — returns webcam feeds from 10 online webcam catalogs via one Go
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu
 - **`who-stole-my-pictures-addons-mozilla-org`** (high) — Use when you have an `image` and want to run it through several reverse-image engines at once from a right-click menu — returns matching pag
 - **`world-cams`** (high) — Use when you have a `geolocation`/`address` and want live eyes on it — returns public live-webcam feeds (`image`/video) from that place for 

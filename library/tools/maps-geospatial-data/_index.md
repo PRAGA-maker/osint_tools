@@ -109,7 +109,7 @@ kind: group-index
 - **`peakvisor`** (low) — Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun tr
 - **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
 - **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond
-- **`policy-map`** (medium) — Data mapping tool; includes crime stats, demographics and other data sets
+- **`policy-map`** (low) — Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housin
 - **`power-plants-in-the-united-states`** (medium) — OSINT tool: Power Plants in the United States.
 - **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
 - **`quick-geolocation-search`** (low) — A tool that brings several maps into one place for easy location search.
