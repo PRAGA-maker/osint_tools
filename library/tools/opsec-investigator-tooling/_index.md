@@ -56,7 +56,7 @@ kind: group-index
 - **`avg-antivirus-for-mac`** (low) — Malware and virus detection and elimination program for PC and Mac
 - **`avg-antivirus-for-pc`** (low) — Malware and virus detection and elimination program for PC
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
-- **`awesome-browser-extensions-for-osint`** (medium) — Collection of browser extensions useful for OSINT with use-case documentation.
+- **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
 - **`backbox`** (low) — OSINT tool: BackBox.
 - **`badoo-dating-app-mobile-android`** (low) — App for android mobile device for meeting people on Badoo

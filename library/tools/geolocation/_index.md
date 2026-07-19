@@ -83,7 +83,7 @@ kind: group-index
 - **`fao-map-catalog`** (medium) — Use when you have a `geolocation` or region and want authoritative land-cover, agricultural, water and terrain layers for it — returns geosp
 - **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
 - **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe
-- **`find-food-support`** (medium) — find places where you can get free food by address (USA)
+- **`find-food-support`** (low) — Use when you have a US `address`/area and want nearby free-food resources — returns food pantries, meal services and EBT-accepting stores by
 - **`fisgonia`** (low) — OSINT tool: Fisgonia.
 - **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea
 - **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.

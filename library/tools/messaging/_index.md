@@ -67,7 +67,6 @@ kind: group-index
 - **`getairplane`** (medium) — Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route)
 - **`getchatlist`** (high) — Use when you have a Telegram `username` or user ID and want to map which groups/channels that account belongs to — returns the list of Teleg
 - **`github-com-skarlso-rscrap`** (medium) — OSINT tool: Github.com/Skarlso/rscrap.
-- **`global-telegram-database`** (medium) — OSINT tool: Global Telegram Database.
 - **`groupda-com`** (high) — Use when you have a topic/place/keyword and want to find public WhatsApp & Telegram groups a subject might be in — returns group invite link
 - **`groupda`** (high) — Use when you have a topic, country, or language and want to find public Telegram (and WhatsApp) groups a subject may be active in — returns 
 - **`groupio`** (high) — Use when you have a topic, tag, or language and want to find public WhatsApp groups a subject may belong to — returns group listings with me

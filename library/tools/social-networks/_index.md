@@ -206,7 +206,6 @@ kind: group-index
 - **`get-user-info`** (medium) — Use when you have a VKontakte `username`/screen-name or numeric ID and want profile fields — returns the VK `social-profile` (name, city, ph
 - **`getdaytrends`** (low) — Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an even
 - **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
-- **`gettwitterid`** (medium) — OSINT tool: GetTwitterID.
 - **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
 - **`ghostcodes-addmesnaps-directories`** (medium) — Use when you have a `name`, interest, or handle and want to find someone's Snapchat account — returns public Snapchat usernames from opt-in 
 - **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.

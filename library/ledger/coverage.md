@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8083 total · 3722 full · 4361 stub (46% enriched)
+**Tools:** 8081 total · 3728 full · 4353 stub (46% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3484 · medium: 2637 · high: 1962
+low: 3487 · medium: 2632 · high: 1962
 
 ## Tools by trust
-unverified: 3412 · community: 3399 · trusted: 1260 · personal: 6 · untrustworthy: 6
+unverified: 3407 · community: 3400 · trusted: 1262 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -24,16 +24,16 @@ unverified: 3412 · community: 3399 · trusted: 1260 · personal: 6 · untrustwo
 - `email` — 244/246
 - `evidence-capture` — 6/31
 - `financial-crypto` — 37/127
-- `geolocation` — 235/348
-- `image-video-face` — 413/470
+- `geolocation` — 236/348
+- `image-video-face` — 414/470
 - `maps-geospatial-data` — 34/139
-- `messaging` — 161/191
-- `opsec-investigator-tooling` — 26/562
+- `messaging` — 161/190
+- `opsec-investigator-tooling` — 27/562
 - `people-search` — 239/264
 - `phone` — 134/137
 - `public-records` — 723/1096
-- `search-engines` — 305/923
-- `social-networks` — 644/841
+- `search-engines` — 308/923
+- `social-networks` — 644/840
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
 - `transportation` — 82/225
@@ -43,7 +43,7 @@ unverified: 3412 · community: 3399 · trusted: 1260 · personal: 6 · untrustwo
 
 - `library/tools/public-records` — 1034 leaves
 - `library/tools/search-engines` — 860 leaves
-- `library/tools/social-networks` — 813 leaves
+- `library/tools/social-networks` — 812 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 504 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
@@ -54,7 +54,7 @@ unverified: 3412 · community: 3399 · trusted: 1260 · personal: 6 · untrustwo
 - `library/tools/people-search` — 254 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 206 leaves
-- `library/tools/messaging` — 176 leaves
+- `library/tools/messaging` — 175 leaves
 - `library/tools/maps-geospatial-data` — 139 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/archives-cache` — 117 leaves

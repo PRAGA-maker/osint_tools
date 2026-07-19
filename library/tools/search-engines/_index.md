@@ -288,7 +288,7 @@ kind: group-index
 - **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
 - **`gibiru`** (low) — OSINT tool: Gibiru.
 - **`gifcities-org`** (low) — GIF Search Engine from archive.org
-- **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.
+- **`gijn-online-research-tools`** (medium) — Use when you need a vetted OSINT/verification tool for a task and want a journalist-grade curated list — returns pointers to tools for recor
 - **`girlsaskguys`** (medium) — Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
@@ -356,7 +356,7 @@ kind: group-index
 - **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
 - **`homepage-search-engine`** (medium) — Use when you have a `name`/`username` and want to search across a curated set of personal-homepage/website sources — returns web pages and `
 - **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
-- **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`hotpads-real-estate-search-engine`** (medium) — Use when you have an `address`/area and want rental-listing context — returns rentals, prices, photos, and listing/manager contacts for a lo
 - **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
@@ -798,7 +798,7 @@ kind: group-index
 - **`webcam-hopper`** (medium) — Search live webcams around the world
 - **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
-- **`webcrawler-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`webcrawler-meta-search`** (low) — Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a na
 - **`webdork`** (medium) — OSINT tool: webdork.
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`webkams`** (medium) — Search live webcams around the world

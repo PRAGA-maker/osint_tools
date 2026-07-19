@@ -118822,43 +118822,53 @@
   {
     "id": "find-food-support",
     "name": "Find Food Support",
-    "description": "find places where you can get free food by address (USA)",
+    "description": "Use when you have a US `address`/area and want nearby free-food resources — returns food pantries, meal services and EBT-accepting stores by location.",
     "url": "https://findfoodsupport.withgoogle.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping food pantries, meal programs, and EBT/SNAP retailers near a US address.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google.org tool; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Searching for food resources near an address is passive and reveals nothing about your subject; it queries Google's directory, not any person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A Google.org project surfacing verified food-assistance locations and USDA EBT retailer data; the underlying location data is from vetted sources.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Google Find Food Support"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "Urban and industrial infrastructure",
+      "food-assistance"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/find-food-support.md"
   },
   {
@@ -149556,29 +149566,30 @@
   {
     "id": "scicheck",
     "name": "SciCheck",
-    "description": "Validating scientific and medical claims in public discourse",
-    "url": "https://factcheck.org/scicheck/",
+    "description": "Use when you have a scientific or health claim and want an evidence-based verdict — returns FactCheck.org explanatory articles debunking or confirming the claim.",
+    "url": "https://www.factcheck.org/scicheck/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fact-checking-tools"
     ],
-    "bestFor": "Validating scientific and medical claims in public discourse",
-    "input": "Scientific or health-related claims",
-    "output": "Evidence-backed explanatory fact-check articles",
+    "bestFor": "Vetting scientific, medical, and public-health claims against evidence-backed fact-check reporting.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free feature of FactCheck.org, a nonprofit at the Annenberg Public Policy Center; no account.",
     "opsec": "passive",
-    "opsecNote": "Standard web consumption with no required interaction with investigated subjects.",
+    "opsecNote": "Reading fact-check articles is passive and reveals nothing about your subject. Don't paste confidential case text into any third-party site out of habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Published by FactCheck.org (Annenberg Public Policy Center), a long-established, nonpartisan, well-regarded fact-checking organization.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -149589,11 +149600,15 @@
       "debunking-false-stories-archives",
       "fact-check"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "fact-checking",
+      "science",
+      "health",
+      "verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-checking-tools/scicheck.md"
   },
   {
@@ -164570,40 +164585,6 @@
     "_file": "library/tools/messaging/github-com-skarlso-rscrap.md"
   },
   {
-    "id": "global-telegram-database",
-    "name": "Global Telegram Database",
-    "description": "OSINT tool: Global Telegram Database.",
-    "url": "https://t.me/s/privatelinks",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/global-telegram-database.md"
-  },
-  {
     "id": "google-cse-for-telegram-links",
     "name": "Google CSE for Telegram links",
     "description": "Use when you have a keyword, `name`, or `username` and want public Telegram channels/groups mentioning it — returns Google-indexed t.me links to public Telegram resources.",
@@ -173473,24 +173454,25 @@
   {
     "id": "awesome-browser-extensions-for-osint",
     "name": "Awesome Browser Extensions for OSINT",
-    "description": "Collection of browser extensions useful for OSINT with use-case documentation.",
+    "description": "Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with use-case notes.",
     "url": "https://github.com/osintambition/Awesome-Browser-Extensions-for-OSINT",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Finding browser extensions to speed up investigations",
+    "bestFor": "A curated, categorized catalog of browser extensions useful across OSINT tasks (image search, profile scraping, capture, OpSec).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub \"awesome\" list; the extensions it links are mostly free too.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the list is passive. Installing an extension is not neutral — extensions can read page content and phone home; vet each one's permissions and use a dedicated investigation browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "Curated extension list (368 stars).",
+    "trustNote": "A community-maintained GitHub list (osintambition); the curation is helpful but the linked extensions are third-party and must be vetted individually before install.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -173499,18 +173481,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "social-media-osint-tools-collection"
+    ],
     "tags": [
       "browser-extension",
       "awesome-list",
       "catalog"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "social-media-osint-tools-collection"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/awesome-browser-extensions-for-osint.md"
   },
   {
@@ -282177,24 +282160,25 @@
   {
     "id": "gijn-online-research-tools",
     "name": "GIJN Online Research Tools",
-    "description": "Global Investigative Journalism Network's curated research tools page.",
+    "description": "Use when you need a vetted OSINT/verification tool for a task and want a journalist-grade curated list — returns pointers to tools for records, people, images and verification.",
     "url": "https://gijn.org/online-research-tools/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Journalism-grade vetted research and verification tools",
+    "bestFor": "A journalism-grade, curated directory of research and verification tools, organized by investigative task.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free resource directory maintained by a nonprofit journalism network; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a curated tool list is passive. OpSec applies only to the individual tools it points you to, each of which you should assess separately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "GIJN is a respected global journalism organization.",
+    "trustNote": "Maintained by the Global Investigative Journalism Network (GIJN), a respected nonprofit; its recommendations are vetted for professional investigative use.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -282203,20 +282187,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "tool-collection",
-      "journalism",
-      "verification"
-    ],
-    "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "gijn-org",
       "gijn-org-3",
       "gijn-org-4"
     ],
+    "tags": [
+      "tool-collection",
+      "journalism",
+      "verification",
+      "meta-resource"
+    ],
+    "source": "ultimate-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/gijn-online-research-tools.md"
   },
   {
@@ -285697,41 +285683,57 @@
   {
     "id": "hotpads-real-estate-search-engine",
     "name": "HotPads Real Estate Search Engine",
-    "description": "Real estate-related search engine for locating property, residences, rental space, or real estate representatives",
+    "description": "Use when you have an `address`/area and want rental-listing context — returns rentals, prices, photos, and listing/manager contacts for a location.",
     "url": "https://hotpads.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Map-based US rental search — finding listings, prices, photos, and listing-agent/manager contacts for an address or neighborhood.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse listings; a Zillow-owned rental marketplace, no account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings is passive. Contacting a lister/manager is active — use a sock-puppet identity, and don't reveal who or what you're actually looking into.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A mainstream Zillow-owned rental platform; listings are advertiser-supplied so accuracy and availability vary, and it's not an authoritative property-ownership record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "HotPads",
+      "hotpads.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "real-estate",
+      "rentals"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/hotpads-real-estate-search-engine.md"
   },
   {
@@ -306409,25 +306411,31 @@
   {
     "id": "webcrawler-meta-search",
     "name": "WebCrawler Meta Search",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
-    "url": "http://www.webcrawler.com",
+    "description": "Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a name, handle, or term.",
+    "url": "https://www.webcrawler.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-box metasearch that blends results from several major engines, for a fast alternate view on a query.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported metasearch; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A metasearch query is passive — it goes to the search engine, not to any person. As with any engine, avoid signing in and use a clean/sock-puppet session to keep searches unlinked to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A long-running metasearch (now operated by System1) that aggregates other engines' results with heavy ads; useful as a supplementary view, not an authoritative index.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -306435,18 +306443,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "webcrawler-com"
     ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "meta-mega-search-tools",
+      "metasearch"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/webcrawler-meta-search.md"
   },
   {
@@ -320329,48 +320339,6 @@
       "gettr-search"
     ],
     "_file": "library/tools/social-networks/gettr-com.md"
-  },
-  {
-    "id": "gettwitterid",
-    "name": "GetTwitterID",
-    "description": "OSINT tool: GetTwitterID.",
-    "url": "http://gettwitterid.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/gettwitterid.md"
   },
   {
     "id": "ghnames",

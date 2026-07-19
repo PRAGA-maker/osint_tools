@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`duke-reporters-lab`** (medium) — Use when you have a claim, story or region and want a vetted fact-checking outlet to consult — returns a searchable global map/list of activ
 - **`politifact`** (low) — Use when you have a claim or a public figure's `name` and want to check whether a statement was fact-checked — returns rated fact-check arti
-- **`scicheck`** (medium) — Validating scientific and medical claims in public discourse
+- **`scicheck`** (low) — Use when you have a scientific or health claim and want an evidence-based verdict — returns FactCheck.org explanatory articles debunking or 
 - **`snopes`** (low) — Use when you have a viral claim, rumor, image or story (a `document-id`) and want to check whether it is true — returns a sourced verdict an
 - **`stop-fake-tools`** (medium) — Investigating Ukraine-focused propaganda and disinformation narratives
 
