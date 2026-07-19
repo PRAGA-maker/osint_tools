@@ -59,7 +59,7 @@ kind: group-index
 - **`crisisgroup`** (medium) — OSINT tool: Crisisgroup.
 - **`crowdmap`** (low) — Use when you want to aggregate and map crowdsourced incident/sighting reports — but note Crowdmap (Ushahidi's hosted platform) has been disc
 - **`ctlrq-address-lookup`** (high) — Use when you need to convert between a map pin/coordinates and a street address — drop a pin to get the address, or enter an address to get 
-- **`currentmillis-com`** (medium) — OSINT tool: currentmillis.com.
+- **`currentmillis-com`** (medium) — Use when you have a raw Unix/epoch timestamp (`metadata-exif`) from a URL, log, cookie or export and want the real UTC/local date-time — ret
 - **`cybermap`** (high) — Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged a
 - **`cyclocane`** (low) — Use when a photo/event references a storm or you need to know what tropical cyclone was active at a place and time — returns current and rec
 - **`datacore-gn-unepgrid-ch`** (low) — Use when you have a `geolocation`/region and want authoritative environmental geospatial layers for it — returns UNEP GeoNetwork datasets (h

@@ -70,7 +70,7 @@ kind: group-index
 - **`context`** (medium) — Use when you have a `username` or keyword and want to find pastes/leaked text shared on ctxt.io — returns email, username and password.
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
-- **`council-on-foreign-relations`** (medium) — Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police
+- **`council-on-foreign-relations`** (medium) — Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers
 - **`createtv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -213,7 +213,7 @@ kind: group-index
 - **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
 - **`nbc-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`ndtv-s-gadgets-360`** (medium) — Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends; includes an eCommerce search engi
+- **`ndtv-s-gadgets-360`** (medium) — Use when you have a device/product name (`device-id`) or a tech-news lead and want specs, reviews and India-market pricing/availability — re
 - **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
@@ -355,7 +355,7 @@ kind: group-index
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
 - **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`tutpaste`** (medium) — OSINT tool: TutPaste.
+- **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content
 - **`tvnz-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — OSINT tool: ukbusinessforums.co.uk.

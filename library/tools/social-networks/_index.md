@@ -81,7 +81,7 @@ kind: group-index
 - **`chartmasters-org-spotify-streaming-numbers-tool`** (low) — Use when you have an artist `name` and want their Spotify streaming totals per track — returns a public activity/popularity profile for that
 - **`chat-downloader`** (medium) — Use when you have a `social-profile` / livestream or VOD URL and want the full chat log — returns commenter `username`s, `name`s, and timest
 - **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
-- **`chearch`** (medium) — OSINT tool: Chearch.
+- **`chearch`** (medium) — Use when you have a Reddit `username` or keyword and want to query historical Reddit posts/comments with filters — returns matching posts/co
 - **`check-channel-badges`** (low) — OSINT tool: Check channel badges.
 - **`check-twitch-follow-length`** (low) — OSINT tool: Check Twitch follow length.
 - **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
@@ -482,7 +482,6 @@ kind: group-index
 - **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.
-- **`reddloader-com`** (medium) — Reddit video downloader
 - **`redective`** (medium) — Use when you have a Reddit `username` (or subreddit/keyword) and want a fast activity profile — returns their subreddits, most-used words, a
 - **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Simplified Reddit web interface.

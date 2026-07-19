@@ -745,7 +745,6 @@ kind: group-index
 - **`pennsylvania-registered-voter-verification`** (medium) — Use when you have a `name` (plus DOB and county) for a Pennsylvania resident and want to confirm voter registration — returns registration s
 - **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB
 - **`people-search-4`** (high) — Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and
-- **`peoplefinder-com-reverse-address`** (medium) — OSINT tool: PeopleFinder.com - Reverse Address.
 - **`permits-and-inspections-search-by-state`** (high) — Use when you have a property `address` or owner `name` and want building/permit records — returns a state-by-state directory of official per
 - **`pew-research-center`** (low) — OSINT tool: Pew Research Center.
 - **`pharmacyregulation-org`** (high) — Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, numb
@@ -938,7 +937,6 @@ kind: group-index
 - **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p
 - **`the-tribal-court-clearinghouse`** (high) — Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference port
 - **`the-weapons-id-database`** (high) — Use when you have an `image` or `physical-description` of a firearm/ammunition and want to identify make, model and markings — returns weapo
-- **`the-world-bank-open-data-catalog`** (medium) — Development data and statistics
 - **`thebppa-com`** (high) — Use when you have a `name` and suspect the subject is a UK press photographer and want their portfolio, byline history and professional iden
 - **`thegazette-co-uk`** (high) — Use when you have a `name` and want official UK notices — insolvency, deceased-estates/wills, and company notices — returns published notice
 - **`thegenealogist-co-uk`** (high) — Use when you have a `name` (plus rough `dob`/`address`) and want UK census, BMD, parish, will and 1939-register records — returns name, dob,

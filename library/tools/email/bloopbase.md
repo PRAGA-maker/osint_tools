@@ -29,6 +29,17 @@ localInstall: false
 registration: false
 relatedTools:
 - breach-vip
+- 8chan
+- foodora
+- gettr
+- givesendgo
+- iron-march
+- ledger
+- liker
+- royal-canadian-mounted-police
+- slack
+- utah-gun-exchange
+- weedmaps
 aliases:
 - bloopbase.keybase.pub
 tags:

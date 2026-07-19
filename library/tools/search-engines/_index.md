@@ -114,7 +114,7 @@ kind: group-index
 - **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
 - **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
 - **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
-- **`bookfinder-search-engine`** (medium) — Website that offers book search services by book title, author, or ISBN
+- **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
@@ -622,7 +622,6 @@ kind: group-index
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
-- **`reverse-genie-lookup`** (medium) — Database search by telephone number, person name, email, plate number, address, IP, domain or area code
 - **`reviewmeta`** (low) — OSINT tool: ReviewMeta.
 - **`rfc-fyi`** (low) — Browseable, searchable RFC index
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
@@ -644,7 +643,7 @@ kind: group-index
 - **`scirp`** (low) — OSINT tool: SCIRP.
 - **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
-- **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
+- **`search-all`** (medium) — Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.

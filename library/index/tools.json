@@ -20480,42 +20480,51 @@
   {
     "id": "pagecached-com",
     "name": "pagecached.com",
-    "description": "OSINT tool: pagecached.com.",
+    "description": "Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yahoo Japan and other caches for that page.",
     "url": "https://pagecached.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot check of whether a specific URL is cached across multiple archive services.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You submit a URL to pagecached, which then queries several third-party caches — the archives (not the target site) see the lookup. Retrieving an archived snapshot does not touch the target's live server, so it's a safe way to view a page without alerting the site owner. Still, do the lookup from a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small third-party aggregator that dispatches to the real archives; it's a convenience router, and the authoritative content lives on Wayback/Archive.today themselves.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "archive-today",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "PageCached"
+    ],
     "tags": [
       "archive",
       "Archive & Cached Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/pagecached-com.md"
   },
   {
@@ -26232,24 +26241,31 @@
   {
     "id": "council-on-foreign-relations",
     "name": "Council on Foreign Relations",
-    "description": "Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police",
+    "description": "Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers and expert profiles — returns organizational and analytical context.",
     "url": "https://www.cfr.org/defense-and-security",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Authoritative background and interactive trackers on armed groups, conflicts and security institutions.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Public analysis, trackers and articles are free to read; some events/membership content is gated but not needed for research reading.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public think-tank site is passive; the subject is not notified. CFR is a widely-read US foreign-policy institution — visiting it reveals nothing about your target. Standard clean-browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established US foreign-policy think tank publishing sourced expert analysis and maintained trackers (e.g. Global Conflict Tracker); reputable secondary/context source, not a primary record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -26258,18 +26274,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "global-conflict-tracker"
+    ],
+    "aliases": [
+      "CFR",
+      "cfr.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "global-conflict-tracker"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/council-on-foreign-relations.md"
   },
   {
@@ -32712,41 +32731,51 @@
   {
     "id": "ndtv-s-gadgets-360",
     "name": "NDTV’s Gadgets 360",
-    "description": "Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends; includes an eCommerce search engine and online shop",
-    "url": "http://gadgets.ndtv.com",
+    "description": "Use when you have a device/product name (`device-id`) or a tech-news lead and want specs, reviews and India-market pricing/availability — returns product specifications and editorial coverage.",
+    "url": "https://gadgets.ndtv.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up device specifications, reviews and India-market tech news/product details.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; ad-supported. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public tech-news/product-database site is passive; no subject interaction. Standard clean-browser hygiene; the site carries the usual ad/tracker load, so a hardened browser profile is sensible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "India's leading technology-news outlet (Red Pixels Ventures, ex-NDTV); professional reviews and a large product-specs database. Reliable for spec/pricing reference, editorial for opinion.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "global",
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Gadgets 360",
+      "gadgets.ndtv.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ndtv-s-gadgets-360.md"
   },
   {
@@ -39236,37 +39265,49 @@
   {
     "id": "tutpaste",
     "name": "TutPaste",
-    "description": "OSINT tool: TutPaste.",
+    "description": "Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content (`document-id`) that may expose credentials or contact data.",
     "url": "https://tutpaste.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a subject's data or handle appears in a public paste on this pastebin.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and to create pastes; no account required. Premium tiers add longer expiry but nothing needed for OSINT reading.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public paste is passive and the poster is not notified. There is no site-wide full-text search, so you typically arrive via a Google dork or a direct paste URL — do that from a sock-puppet browser. Never re-paste sensitive victim data you find; treat leaked credentials as read-only evidence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A generic public pastebin (text/code/images, custom expiry); content is user-submitted and unverified, so anything found needs independent corroboration.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TutPaste pastebin"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/tutpaste.md"
   },
   {
@@ -96314,7 +96355,18 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "breach-vip"
+      "breach-vip",
+      "8chan",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
     ],
     "aliases": [
       "bloopbase.keybase.pub"
@@ -99620,7 +99672,19 @@
     "aliases": [],
     "tags": [],
     "source": "osint4all",
-    "relatedTools": [],
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/email/foodora.md"
@@ -102397,6 +102461,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/email/ledger.md"
   },
   {
@@ -102434,6 +102511,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/email/liker.md"
   },
   {
@@ -105741,6 +105831,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/email/slack.md"
   },
   {
@@ -107750,6 +107853,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange"
+    ],
     "_file": "library/tools/email/weedmaps.md"
   },
   {
@@ -117708,42 +117824,49 @@
   {
     "id": "currentmillis-com",
     "name": "currentmillis.com",
-    "description": "OSINT tool: currentmillis.com.",
+    "description": "Use when you have a raw Unix/epoch timestamp (`metadata-exif`) from a URL, log, cookie or export and want the real UTC/local date-time — returns human-readable timestamps and format conversions.",
     "url": "https://currentmillis.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting epoch-millisecond and other machine timestamps to human-readable UTC/local date-time.",
     "selectorsIn": [
-      "geolocation"
+      "metadata-exif"
     ],
     "selectorsOut": [
-      "geolocation"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account, no payment, runs client-side in the browser.",
+    "opsec": "passive",
+    "opsecNote": "Conversion happens in your browser — the timestamp you type is not sent to a subject and reveals nothing about your target. Fully passive; no special hygiene beyond not pasting sensitive full strings you don't want cached.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, single-purpose utility with transparent client-side conversion; the arithmetic is verifiable and deterministic.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "currentmillis",
+      "epoch converter"
+    ],
     "tags": [
       "timezones",
       "Time Zones & Converters"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/currentmillis-com.md"
   },
   {
@@ -215885,6 +216008,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/8chan.md"
   },
   {
@@ -234038,6 +234174,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/gettr.md"
   },
   {
@@ -234385,6 +234534,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/givesendgo.md"
   },
   {
@@ -241147,6 +241309,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/iron-march.md"
   },
   {
@@ -253963,51 +254138,6 @@
     "_file": "library/tools/public-records/people-search-4.md"
   },
   {
-    "id": "peoplefinder-com-reverse-address",
-    "name": "PeopleFinder.com - Reverse Address",
-    "description": "OSINT tool: PeopleFinder.com - Reverse Address.",
-    "url": "https://www.peoplefinder.com/reverse-address-lookup",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
-      "address",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "free-people-search"
-    ],
-    "_file": "library/tools/public-records/peoplefinder-com-reverse-address.md"
-  },
-  {
     "id": "pepchecker",
     "name": "PepChecker",
     "description": "Screening individuals against PEP lists and international sanctions databases",
@@ -258148,6 +258278,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "slack",
+      "utah-gun-exchange",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/royal-canadian-mounted-police.md"
   },
   {
@@ -264201,49 +264344,6 @@
     "_file": "library/tools/public-records/the-weapons-id-database.md"
   },
   {
-    "id": "the-world-bank-open-data-catalog",
-    "name": "The World Bank Open Data Catalog",
-    "description": "Development data and statistics",
-    "url": "https://datacatalog.worldbank.org/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "Development data and statistics",
-    "input": "Country, indicator, dataset name",
-    "output": "Economic, social, health data",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Official World Bank datasets",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "world-bank-data",
-      "world-bank-investing-across-borders",
-      "world-integrated-trade-solution"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/the-world-bank-open-data-catalog.md"
-  },
-  {
     "id": "thebppa-com",
     "name": "thebppa.com",
     "description": "Use when you have a `name` and suspect the subject is a UK press photographer and want their portfolio, byline history and professional identity — returns social-profile and employer-org leads.",
@@ -267277,6 +267377,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "8chan",
+      "bloopbase",
+      "foodora",
+      "gettr",
+      "givesendgo",
+      "iron-march",
+      "ledger",
+      "liker",
+      "royal-canadian-mounted-police",
+      "slack",
+      "weedmaps"
+    ],
     "_file": "library/tools/public-records/utah-gun-exchange.md"
   },
   {
@@ -274271,24 +274384,29 @@
   {
     "id": "bookfinder-search-engine",
     "name": "Bookfinder Search Engine",
-    "description": "Website that offers book search services by book title, author, or ISBN",
-    "url": "http://www.bookfinder.com",
+    "description": "Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book listings and seller offers across 100k+ booksellers.",
+    "url": "https://www.bookfinder.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a person authored/self-published a book and finding where copies are sold.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free price-comparison search; buying a book costs money but searching does not, and no account is needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive lookups of a public book marketplace — nothing is sent to the subject. Searches are logged by BookFinder and the booksellers it federates to; a plain query is low-risk but use a sock puppet if the subject is a niche self-publisher who might monitor buyers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running (since 1997), well-known meta-search aggregating major marketplaces (AbeBooks, Alibris, eBay, Amazon sellers); listings reflect real seller inventory.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -274297,15 +274415,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BookFinder.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bookfinder-search-engine.md"
   },
   {
@@ -298574,51 +298695,6 @@
     "_file": "library/tools/search-engines/reuters.md"
   },
   {
-    "id": "reverse-genie-lookup",
-    "name": "Reverse Genie Lookup",
-    "description": "Database search by telephone number, person name, email, plate number, address, IP, domain or area code",
-    "url": "http://www.reversegenie.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "reverse-genie",
-      "reverse-genie-license-plate-search",
-      "reversegenie"
-    ],
-    "_file": "library/tools/search-engines/reverse-genie-lookup.md"
-  },
-  {
     "id": "reviewmeta",
     "name": "ReviewMeta",
     "description": "OSINT tool: ReviewMeta.",
@@ -299634,33 +299710,40 @@
   {
     "id": "search-all",
     "name": "Search All",
-    "description": "Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines",
-    "url": "https://chrome.google.com/webstore/detail/search-all/kpdkbemdpepjjppbfgeapjienologapa",
+    "description": "Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google, Bing, DuckDuckGo and custom engines from one toolbar.",
+    "url": "https://chromewebstore.google.com/detail/search-all/kpdkbemdpepjjppbfgeapjienologapa",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Rapidly re-running one selector across multiple search engines without retyping.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The extension only rewrites your search URL locally and collects no data per the developer. But every engine you fan the query out to still logs the search against your IP/browser fingerprint, so run it from a sock-puppet browser profile when querying a live subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Third-party extension (offered by \"Screen Recorder\"), ~20k users and 4.4★; useful workflow glue, not an authoritative data source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Search All Chrome extension"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
@@ -299668,8 +299751,8 @@
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-all.md"
   },
   {
@@ -313012,35 +313095,50 @@
   {
     "id": "chearch",
     "name": "Chearch",
-    "description": "OSINT tool: Chearch.",
+    "description": "Use when you have a Reddit `username` or keyword and want to query historical Reddit posts/comments with filters — returns matching posts/comments (a `social-profile` timeline), if you hold a Pushshift token.",
     "url": "https://adhesivecheese.github.io/chearch/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Filtered search of a Reddit user's or subreddit's historical posts and comments via Pushshift.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "The web front end is free, but it queries the Pushshift API, which since 2023 is restricted to verified Reddit moderators — without an approved Pushshift token you cannot run searches.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries go to Pushshift's archive, not to Reddit or the subject — the target is not notified. It's a static client-side page hosted on GitHub Pages; your searches are seen by Pushshift under whatever token/account you authenticate with, so use a research account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source hobby front end (adhesivecheese on GitHub) over the third-party Pushshift archive; only as current/complete as Pushshift's data and your access to it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Chearch Reddit search"
+    ],
+    "tags": [
+      "social-networks",
+      "reddit"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/chearch.md"
   },
   {
@@ -335448,43 +335546,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/redditvids.md"
-  },
-  {
-    "id": "reddloader-com",
-    "name": "Reddloader.com",
-    "description": "Reddit video downloader",
-    "url": "https://reddloader.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Reddit"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/reddloader-com.md"
   },
   {
     "id": "redective",
