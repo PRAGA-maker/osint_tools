@@ -272,7 +272,7 @@ kind: group-index
 - **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
-- **`foreign-agents-registration-act`** (medium) — Registered Foreign Agents quick search
+- **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
 - **`foundation-finder`** (medium) — Foundation Centers online foundation directory
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — "The Art of Searching" - advanced search engine techniques and resources.
@@ -441,7 +441,7 @@ kind: group-index
 - **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
 - **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
 - **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
-- **`lilo`** (medium) — Charitable search engine that supports environmental initiatives each time a user searches.
+- **`lilo`** (medium) — Use when you want an alternate (French) search front-end to cross-check results outside your usual engine — returns general web results with
 - **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.

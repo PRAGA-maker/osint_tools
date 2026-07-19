@@ -29,7 +29,7 @@ kind: group-index
 - **`social-networks/`** — 885 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 226 skill(s) below.
+- **`transportation/`** — 225 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
 

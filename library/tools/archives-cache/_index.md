@@ -78,7 +78,7 @@ kind: group-index
 - **`pagecached-com`** (medium) — OSINT tool: pagecached.com.
 - **`perma-cc`** (medium) — OSINT tool: perma.cc.
 - **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)
-- **`replayweb`** (medium) — If the warc file is small, you can view its contents with this extreme simple online tool. Also it's possible to deploy ReplayWeb on your ow
+- **`replayweb`** (medium) — Use when you have a WARC/WACZ web-archive file and want to browse it as a live site — returns an interactive replay of the captured pages, i
 - **`ricks-apps-com`** (medium) — OSINT tool: ricks-apps.com.
 - **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
 - **`rss-feed-reader`** (low) — OSINT tool: RSS Feed Reader.

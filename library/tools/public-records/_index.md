@@ -864,7 +864,7 @@ kind: group-index
 - **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
 - **`security-licence-status-verification`** (medium) — OSINT tool: Security Licence Status Verification.
-- **`seethroughny-pensions`** (medium) — OSINT tool: SeeThroughNY :: Pensions.
+- **`seethroughny-pensions`** (medium) — Use when you have a `name` of a New York public-sector retiree and want their pension record — returns employer-org, retirement date and ann
 - **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
 - **`semantic-scholar`** (medium) — Use when you have a `name` in academia and want their papers, co-authors and affiliations as a free citation graph — returns employer-org, a

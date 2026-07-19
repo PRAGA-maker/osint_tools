@@ -391,7 +391,7 @@ kind: group-index
 - **`nicolasconstant-github-io`** (high) — Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse
 - **`nitter-ca`** (high) — Use when you have a Twitter/X `username` and want to read the timeline without an X login — returns public tweets/profile via a lightweight,
 - **`nitter-it`** (high) — Use when you have a Twitter/X `username` and want to read their tweets/media without an X account or login — a Nitter privacy front-end retu
-- **`nitter`** (medium) — OSINT tool: Nitter.
+- **`nitter`** (medium) — Use when you have an X/Twitter `username` and want to read their tweets without an account or JS — returns the profile's posts, media and an
 - **`noxinluencer`** (medium) — Use when you have a YouTube channel (`social-profile`/`username`) and want its audience, growth and engagement analytics — returns channel a
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
