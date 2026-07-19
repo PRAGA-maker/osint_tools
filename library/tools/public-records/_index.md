@@ -361,7 +361,7 @@ kind: group-index
 - **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
 - **`geneanet-org`** (high) — Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family)
 - **`geneologyintime-family-tree-search-engine`** (medium) — Use when you have a `name` and want free genealogy records across many databases at once — returns relatives (`associate`), historical `addr
-- **`general-land-office-records`** (medium) — The Official Federal Land Records Site providing search tool for land patents, surveys and field notes
+- **`general-land-office-records`** (medium) — Use when you have a `name` and want historical US federal land grants to that person — returns land-patent records with `geolocation` (state
 - **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
 - **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
 - **`george-floyd-where-black-people-are-most-disproportionately-killed-by-police`** (medium) — OSINT tool: George Floyd - Where black people are most disproportionately killed by police.
@@ -571,7 +571,7 @@ kind: group-index
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
 - **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area
 - **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
-- **`louisiana-registered-voter-verification`** (medium) — Louisiana registered voter verification and search
+- **`louisiana-registered-voter-verification`** (medium) — Use when you have a `name` (+ `dob`) and want to confirm Louisiana voter registration and locate the person by parish — returns registration
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
 - **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
 - **`ma-middlesex-county-city-employee-salary-2019`** (medium) — OSINT tool: MA Middlesex County City employee salary 2019.
@@ -980,7 +980,7 @@ kind: group-index
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
 - **`unclaimed-money-us-google-search`** (medium) — OSINT tool: "unclaimed money" US - Google Search.
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns
-- **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — OSINT tool: Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa.
+- **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — Use when you have a `name` and want unclaimed-property records — returns a last-known `address`, holder, and sometimes co-owner `associate` 
 - **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
 - **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.
 - **`unctad-stat`** (low) — OSINT tool: UNCTAD STAT.

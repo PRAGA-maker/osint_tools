@@ -168,7 +168,7 @@ kind: group-index
 - **`localfocus-nl-geokit`** (medium) — geographic toolkit for investigative journalists
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lookr`** (medium) — OSINT tool: Lookr.
-- **`lost-places-map`** (medium) — A map of independent research reports on urban spaces that are published in the Lost places Facebook community
+- **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
 - **`lostplace-atlas`** (medium) — Google map of lost places in Germany and other Europe countries
 - **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
 - **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Macrostrat's geologic map system integrates over 290 bedrock geologic maps from around the world into a single, multiscale database (c).

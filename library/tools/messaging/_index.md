@@ -81,7 +81,7 @@ kind: group-index
 - **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.
 - **`kalilinuxtutorials-com`** (high) — Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — return
 - **`kikusernames-com`** (medium) — Use when you have a Kik `username`/`name` and want to find a matching self-listed Kik profile — returns the profile `social-profile` and sta
-- **`kirbstr-s-mastodon-search`** (medium) — Google CSE for some of the most popular and open mastodon instances.
+- **`kirbstr-s-mastodon-search`** (medium) — Use when you have a `name`, `username` or keyword and want to search across popular Mastodon instances at once — returns matching posts and 
 - **`knowlesys-com-2`** (high) — Use when you have a Telegram `username` and want the stable numeric user ID (which survives username/name changes) — returns a how-to for th
 - **`knowlesys-com-4`** (high) — Use when you have a `phone` or `username` tied to WhatsApp and want a methodology — a how-to guide for extracting profile pictures and findi
 - **`leak-osint`** (high) — Use when you have an `email`, `phone`, `username` or `name` and want to check it against aggregated data-breach dumps via a Telegram bot — r
@@ -166,7 +166,7 @@ kind: group-index
 - **`tgramsearch`** (medium) — Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, d
 - **`tgspyder`** (medium) — Use when you have a Telegram `username`/channel and want to scrape and analyze its members and messages — returns member `username`s/`social
 - **`tgstat-ru`** (medium) — Use when you have a Telegram channel/`username`, `name` or keyword and want to find and analyze public Telegram channels and posts — returns
-- **`tlgrm-eu-channels`** (medium) — Search Telegram channels.
+- **`tlgrm-eu-channels`** (medium) — Use when you have a topic or channel `name`/`username` and want to find public Telegram channels — returns channel `social-profile`s and lin
 - **`transcriber-bot`** (low) — Use when you have an audio/voice message or an `image` of text and want it turned into searchable text — a Telegram bot that transcribes voi
 - **`trunk`** (low) — Use when you have a topic/interest and want curated lists of Mastodon/Fediverse accounts about it — returns `social-profile` handles to expl
 - **`turibot`** (medium) — Use when you have a Telegram numeric user ID and want the current @username / account behind it (or vice-versa) — returns username and socia

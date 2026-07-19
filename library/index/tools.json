@@ -123165,44 +123165,51 @@
   {
     "id": "lost-places-map",
     "name": "Lost places map",
-    "description": "A map of independent research reports on urban spaces that are published in the Lost places Facebook community",
+    "description": "Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s of documented \"lost places\".",
     "url": "https://www.google.com/maps/d/viewer?mid=1M6OeH-DCWCLHGLQ2_CiGPd0aO7IjPHqo&hl=de&ll=50.06460483234834%2C8.681870511153518&z=10",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Matching a photo of an abandoned/derelict location (mostly German-speaking Europe) to a mapped, documented urban-exploration site.",
     "selectorsIn": [
-      "face",
       "geolocation",
       "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Google My Maps layer curated from a \"Lost Places\" urbex community; no account to view.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a shared Google map is anonymous. Note the underlying reports originate from a Facebook community — following links there is account-linked, so use a sock puppet if you go deeper.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A crowd-curated hobbyist map of abandoned sites; locations are community-reported and unverified, and the layer persists only while its creator maintains it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "de"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Lost Places Google Map",
+      "Verlassene Orte Karte"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
+      "Anomalies and \"Lost Places\"",
+      "urbex"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/lost-places-map.md"
   },
   {
@@ -165493,38 +165500,50 @@
   {
     "id": "kirbstr-s-mastodon-search",
     "name": "Kirbstr's Mastodon search",
-    "description": "Google CSE for some of the most popular and open mastodon instances.",
+    "description": "Use when you have a `name`, `username` or keyword and want to search across popular Mastodon instances at once — returns matching posts and `social-profile`s.",
     "url": "https://cse.google.com/cse?cx=e57e14c971ef34e61",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Full-text searching many large, open Mastodon instances in a single query via a purpose-built Google Programmable Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom/Programmable Search Engine; no account. Coverage is limited to instances Google has indexed and the CSE owner included.",
+    "opsec": "passive",
+    "opsecNote": "This is a Google search restricted to Mastodon domains — the query goes to Google, not to any Mastodon user, so no one is alerted. Standard search-privacy hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained Google CSE; it depends on Google's index and the owner keeping the engine live, so coverage and availability are not guaranteed.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Mastodon Google CSE",
+      "Kirbstr Mastodon search"
+    ],
     "tags": [
       "Social Media",
       "Mastodon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/kirbstr-s-mastodon-search.md"
   },
   {
@@ -170404,41 +170423,52 @@
   {
     "id": "tlgrm-eu-channels",
     "name": "tlgrm.eu channels",
-    "description": "Search Telegram channels.",
-    "url": "http://tlgrm.eu/channels",
+    "description": "Use when you have a topic or channel `name`/`username` and want to find public Telegram channels — returns channel `social-profile`s and links.",
+    "url": "https://tlgrm.eu/channels",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering public Telegram channels by topic/category or name as an entry point into Telegram-based communities and content.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free third-party directory; no account. Lists opt-in / submitted public channels, so coverage is partial.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is anonymous and does not touch Telegram or alert any channel. Opening a channel inside the Telegram app, however, is done from your account — use a sock-puppet Telegram account for actual viewing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An unaffiliated Telegram channel catalogue built from submissions; useful for discovery but not exhaustive and not an authoritative index of all channels.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "telegram-channels-list"
+    ],
+    "aliases": [
+      "tlgrm.eu",
+      "tlgrm.eu channel directory"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "telegram"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "telegram-channels-list"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/tlgrm-eu-channels.md"
   },
   {
@@ -233487,48 +233517,55 @@
   },
   {
     "id": "general-land-office-records",
-    "name": "General Land Office Records",
-    "description": "The Official Federal Land Records Site providing search tool for land patents, surveys and field notes",
-    "url": "http://www.glorecords.blm.gov/search/default.aspx",
+    "name": "General Land Office Records (BLM GLO)",
+    "description": "Use when you have a `name` and want historical US federal land grants to that person — returns land-patent records with `geolocation` (state/county/legal description).",
+    "url": "https://glorecords.blm.gov/search/default.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding historical federal land patents by patentee name to tie an ancestor/person to a specific place, date and parcel in US land-grant history.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official US Bureau of Land Management site; records and scanned patent images are viewable/downloadable at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public federal records search; nothing is sent to any living person. Entirely safe and non-alerting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official BLM General Land Office records site; land patents are authoritative federal documents, mostly 1800s–early 1900s.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GLO Records",
+      "BLM GLO",
+      "glorecords.blm.gov",
+      "Federal Land Records"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "land-records",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/general-land-office-records.md"
   },
   {
@@ -244437,47 +244474,52 @@
   {
     "id": "louisiana-registered-voter-verification",
     "name": "Louisiana Registered Voter Verification",
-    "description": "Louisiana registered voter verification and search",
+    "description": "Use when you have a `name` (+ `dob`) and want to confirm Louisiana voter registration and locate the person by parish — returns registration status and `geolocation`.",
     "url": "https://voterportal.sos.la.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming someone is a registered Louisiana voter and narrowing them to a parish/polling location from name plus date of birth.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Louisiana Secretary of State voter portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An anonymous public-records lookup on the state's own portal; the subject is not notified. No sock puppet required, though a clean session is good practice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Louisiana Secretary of State voter portal — authoritative for registration status; it exposes parish/polling detail, not full home address.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "Louisiana voter portal",
+      "voterportal.sos.la.gov"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "voter-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/louisiana-registered-voter-verification.md"
   },
   {
@@ -266129,44 +266171,54 @@
   },
   {
     "id": "unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa",
-    "name": "Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa",
-    "description": "OSINT tool: Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa.",
-    "url": "http://www.missingmoney.com",
+    "name": "Unclaimed Property FREE SEARCH (MissingMoney / NAUPA)",
+    "description": "Use when you have a `name` and want unclaimed-property records — returns a last-known `address`, holder, and sometimes co-owner `associate` links across US states.",
+    "url": "https://www.missingmoney.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person's past presence and a last-known address by searching official multi-state unclaimed-property databases by name.",
     "selectorsIn": [
       "name",
       "address"
     ],
     "selectorsOut": [
       "address",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official NAUPA-endorsed multi-state search; claiming property requires ID, but searching is free and open.",
+    "opsec": "passive",
+    "opsecNote": "Searching is an anonymous public-records lookup; the subject is not notified. Do NOT attempt to claim property that isn't yours — that crosses from OSINT into fraud.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official unclaimed-property search endorsed by NAUPA and participating US states/provinces; records come from state treasuries, so the name/address data is authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MissingMoney",
+      "missingmoney.com",
+      "NAUPA unclaimed property"
+    ],
     "tags": [
-      "property"
+      "property",
+      "unclaimed-property"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa.md"
   },
   {
@@ -274721,35 +274773,51 @@
   {
     "id": "btdig",
     "name": "btdig",
-    "description": "OSINT tool: btdig.",
+    "description": "Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file listings and torrent metadata.",
     "url": "https://btdig.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching BitTorrent DHT content by keyword to surface leaked datasets, document dumps, or a subject's name/handle appearing inside shared file collections.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free DHT search engine; no account. It indexes torrent metadata/file names from the DHT — it does not host files.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the index is passive and non-alerting. Actually downloading a torrent it points to is ACTIVE and exposes your IP to the swarm — never download from an attributable connection, and treat linked content as potentially malicious or illegal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running DHT crawler/search engine; the index is genuine but reflects whatever is shared on BitTorrent — unvetted, often stale, and legally/ethically fraught content.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "btdig.com",
+      "BTDigg"
+    ],
+    "tags": [
+      "torrent",
+      "dht-search",
+      "leaks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/btdig.md"
   },
   {
@@ -285736,36 +285804,50 @@
   },
   {
     "id": "https-vulmon-com",
-    "name": "https://vulmon.com/",
-    "description": "OSINT tool: https://vulmon.com/.",
+    "name": "Vulmon",
+    "description": "Use when you have a `domain`/software or a CVE and want vulnerability intelligence — returns CVE details, affected products and exploit references for infrastructure OSINT.",
     "url": "https://vulmon.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching CVEs by product, version or keyword to assess the exposure of infrastructure tied to a target domain/organisation.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free vulnerability search and CVE details; \"Vulmon Recon\" e-mail alerts are also free with signup. No paywall for core search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching Vulmon's CVE database is passive and touches only Vulmon — it does NOT scan the target. Actually probing a subject's host for the vulnerabilities you find is active and intrusive; keep to research unless authorised.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known vulnerability search engine aggregating public CVE/advisory data; the underlying CVE data is authoritative, the aggregation is third-party.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "vulmon.com"
+    ],
+    "tags": [
+      "vulnerabilities",
+      "cve",
+      "infrastructure"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/https-vulmon-com.md"
   },
   {

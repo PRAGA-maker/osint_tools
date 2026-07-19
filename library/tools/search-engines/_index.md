@@ -124,7 +124,7 @@ kind: group-index
 - **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
 - **`brightcloud`** (medium) — OSINT tool: BrightCloud.
 - **`british-and-irish-legal-information-institute`** (medium) — British and Irish Legal Information Institute providing access to freely available public legal information
-- **`btdig`** (medium) — OSINT tool: btdig.
+- **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
 - **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
 - **`bureau-of-justice-statistics`** (medium) — Use when you need official US crime/justice statistics (arrests, corrections, victimization) for context — an aggregate government data port
@@ -354,7 +354,7 @@ kind: group-index
 - **`homepage-search-engine`** (medium) — Use when you have a `name`/`username` and want to search across a curated set of personal-homepage/website sources — returns web pages and `
 - **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
 - **`hotpads-real-estate-search-engine`** (medium) — Use when you have an `address`/area and want rental-listing context — returns rentals, prices, photos, and listing/manager contacts for a lo
-- **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
+- **`https-vulmon-com`** (medium) — Use when you have a `domain`/software or a CVE and want vulnerability intelligence — returns CVE details, affected products and exploit refe
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
 - **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
