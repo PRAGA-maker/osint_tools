@@ -323,7 +323,7 @@ kind: group-index
 - **`invidious-instances`** (low) — Use when you have a YouTube `social-profile`/video and want to view it privately without an account — returns the same `social-profile` cont
 - **`izuum`** (high) — Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now large
 - **`jesus-social`** (high) — Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`
-- **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes
+- **`jump-cutter`** (medium) — Use when you must review long video/audio evidence (`image`/media, lectures, streams) and want to skip silent gaps — an extension that fast-
 - **`justlog`** (medium) — Use when you have a Twitch `username` and a channel and want their chat history there — returns the user's logged messages (with timestamps)
 - **`karma-decay`** (medium) — Use when you have an `image` and want to find whether/where it was posted on Reddit — returns the Reddit submissions (subreddits, `username`
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
@@ -467,7 +467,6 @@ kind: group-index
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
-- **`reddit-search`** (medium) — OSINT tool: Reddit Search.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Live-stream Reddit comments in real time.
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
@@ -558,7 +557,7 @@ kind: group-index
 - **`sotwe-com`** (high) — Use when you have a Twitter/X `username` and want to read their tweets without an X login — returns `social-profile` timeline content, thoug
 - **`sourcinglab-pinterest-search`** (low) — Pinterest search for pins, boards and users.
 - **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
-- **`spaces-down`** (medium) — Twitter Spaces download service (available after the broadcast ends). Works for quite a long time. It took about 5 minutes to generate an MP
+- **`spaces-down`** (medium) — Use when you have an X/Twitter Spaces link or a host `username` and want the audio for review — returns a downloadable MP3 recording of the 
 - **`speak-subtitles-to-youtube`** (medium) — Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works 
 - **`spotify-downloader`** (low) — Use when you have a subject's public Spotify playlist/profile `social-profile` and want to archive its track metadata and audio — returns a 
 - **`spotlight`** (medium) — OSINT tool: Spotlight.

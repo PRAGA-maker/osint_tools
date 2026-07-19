@@ -695,7 +695,6 @@ kind: group-index
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`soovle`** (low) — OSINT tool: Soovle.
 - **`soso`** (medium) — Chinese web search engine
-- **`sougou-com`** (medium) — OSINT tool: Sougou.com.
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated

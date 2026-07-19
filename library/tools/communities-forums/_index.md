@@ -39,7 +39,7 @@ kind: group-index
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
 - **`blogger`** (medium) — Service by Google for hosting and publishing blogs
-- **`bloglovin`** (medium) — Website related to social networking and blogging
+- **`bloglovin`** (medium) — Use when you have a `name`/`username` and want to find a person's blog presence and the blogs they follow — returns blogger profiles and fol
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
 - **`boards-ie`** (medium) — OSINT tool: boards.ie.
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
@@ -220,7 +220,6 @@ kind: group-index
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`new-paste`** (medium) — OSINT tool: New Paste.
 - **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
-- **`newsblur-rss-feeder`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — Use when you have a `geolocation` (a place a subject is tied to) and want the local newspapers covering it — returns links to those papers (
 - **`ning`** (low) — Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member
@@ -237,7 +236,7 @@ kind: group-index
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
 - **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.
 - **`ownerdirect-united-states`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`paaster`** (medium) — OSINT tool: paaster.
+- **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
 - **`parler-search`** (low) — Structured Parler user/hashtag search.
 - **`parship-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`passion-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -292,7 +291,7 @@ kind: group-index
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
 - **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`sciencedaily-com`** (medium) — Searchable website for the latest news on research, specifically focusing on science and health research
+- **`sciencedaily-com`** (medium) — Use when you have a researcher `name` or `employer-org` and want their reported studies for background — returns science/health research new
 - **`scrt-link`** (medium) — OSINT tool: scrt.link.
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.

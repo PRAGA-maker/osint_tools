@@ -2,22 +2,22 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8007 total · 3963 full · 4044 stub (49% enriched)
+**Tools:** 8004 total · 3970 full · 4034 stub (49% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2557 · high: 1962
+low: 3488 · medium: 2554 · high: 1962
 
 ## Tools by trust
-community: 3481 · unverified: 3180 · trusted: 1335 · untrustworthy: 6 · personal: 5
+community: 3483 · unverified: 3172 · trusted: 1338 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 8/455
 - `archives-cache` — 64/132
-- `communities-forums` — 132/389
-- `dark-web` — 20/117
+- `communities-forums` — 135/388
+- `dark-web` — 21/117
 - `dating-classifieds` — 54/106
 - `documents-metadata` — 29/314
 - `domains-ip-infrastructure` — 84/739
@@ -32,22 +32,22 @@ community: 3481 · unverified: 3180 · trusted: 1335 · untrustworthy: 6 · pers
 - `people-search` — 244/262
 - `phone` — 134/137
 - `public-records` — 752/1086
-- `search-engines` — 354/903
-- `social-networks` — 667/822
+- `search-engines` — 354/902
+- `social-networks` — 669/821
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
-- `transportation` — 98/222
+- `transportation` — 99/222
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1027 leaves
-- `library/tools/search-engines` — 843 leaves
-- `library/tools/social-networks` — 794 leaves
+- `library/tools/search-engines` — 842 leaves
+- `library/tools/social-networks` — 793 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 498 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 382 leaves
+- `library/tools/communities-forums` — 381 leaves
 - `library/tools/image-video-face` — 371 leaves
 - `library/tools/geolocation` — 332 leaves
 - `library/tools/documents-metadata` — 263 leaves
