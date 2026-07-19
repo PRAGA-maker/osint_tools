@@ -94,7 +94,7 @@ kind: group-index
 - **`swap-stanford-edu`** (medium) — OSINT tool: Swap.stanford.edu.
 - **`talkwalker`** (low) — OSINT tool: Talkwalker.
 - **`the-old-reader`** (low) — OSINT tool: The Old Reader.
-- **`the-time-machine`** (medium) — Tool for gathering domain info from WayBackMachine: - fetches subdomains from waybackurl; - search for /api/JSON/Configuration endpoints and
+- **`the-time-machine`** (low) — Use when you have a `domain` and want historical intel from the Wayback Machine — CLI that harvests archived subdomains, URLs, parameters an
 - **`theoldnet-com`** (low) — Use when you have a `domain` and want to browse its historical versions rendered for old browsers — returns archived page content via a Wayb
 - **`time-travel-for-web-chromewebstore-google-com`** (medium) — Use when you have a `domain`/page URL and want a past version — returns the nearest archived snapshot across many web archives via the Memen
 - **`trove`** (medium) — Use when you have a `name`, place, or event with an Australian angle and want historical records — returns digitised newspapers, gazettes, p

@@ -310,7 +310,6 @@ kind: group-index
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
 - **`metadetective`** (low) — A simple tool that analyzes the metadata of files in a specific directory and extracts important information from them (names of document cr
 - **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
-- **`mijndomein-netherlands`** (medium) — Service provider for registering websites and domain addresses
 - **`misp-galaxy`** (low) — OSINT tool: MISP Galaxy.
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
@@ -347,7 +346,6 @@ kind: group-index
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
-- **`ookla-speedtest`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
 - **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata

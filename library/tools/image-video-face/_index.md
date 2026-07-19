@@ -91,7 +91,7 @@ kind: group-index
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
 - **`earthviewer360-com`** (medium) — Click on a point on the map to see a 360 degree video panorama (it's possiblle to pause to see some areas in more detail)
 - **`efficientnetv2`** (medium) — DeepFake Video Detector
-- **`everypixel`** (medium) — Reverse image search engine. Search across 50 leading stock images agencies. It's possible to filter only free or only paid images.
+- **`everypixel`** (medium) — Use when you have an `image` and want to find it across stock-photo agencies (and check if it's AI-generated) — returns matching stock listi
 - **`exiflooter`** (high) — Use when you have images (or a URL/directory of them) and want to extract GPS metadata and map it — returns geolocation from metadata-exif.
 - **`exiftool-2`** (high) — Use when you have a media/document file and want a full local metadata dump — returns metadata-exif, geolocation, device-id (same tool as ex
 - **`experte-com`** (medium) — Use when you have a photo and want to strip the background to isolate the subject/face before a reverse-image search — returns a cleaned ima

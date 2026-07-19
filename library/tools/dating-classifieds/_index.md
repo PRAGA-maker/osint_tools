@@ -47,7 +47,7 @@ kind: group-index
 - **`freefans-de`** (low) — German OnlyFans directory.
 - **`freefans-nl`** (low) — Dutch OnlyFans directory.
 - **`full-dp-com`** (medium) — OSINT tool: full-dp.com.
-- **`geebo-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`geebo-classified-ads-united-states`** (low) — Use when a subject may have posted a US classified ad (jobs, vehicles, services, rentals) and you want to find it — returns ads with contact
 - **`girlfindr`** (low) — OnlyFans creator exploration tool.
 - **`goofbid`** (low) — Use when researching eBay activity and you want to surface mistyped/overlooked listings a subject posted — a misspelling-search front-end fo
 - **`gumtree-classified-ads-australia`** (medium) — Use when you have a `name`, `username` or `phone` and want Australian classified-ad activity — returns seller `social-profile`, item photos 

@@ -15,7 +15,7 @@ kind: group-index
 
 ## Skills here
 - **`4chan-search`** (medium) — Use when you have a `username`, phrase, or image tied to 4chan and want to search across boards and archives for posts — returns matching th
-- **`4chan`** (medium) — Image based bulletin board where users can post comments and share images anonymously
+- **`4chan`** (low) — Use when a subject or image may surface on 4chan and you want to find/preserve posts — returns anonymous threads and images (best searched v
 - **`51-com-china`** (medium) — Web game platform based in China
 - **`a-small-world`** (medium) — Private luxury travel community
 - **`abc-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -35,7 +35,6 @@ kind: group-index
 - **`babycenter`** (medium) — Networking website for new and expecting parents
 - **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
 - **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`beanpaste`** (medium) — OSINT tool: BeanPaste.
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re

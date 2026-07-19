@@ -47,7 +47,6 @@ kind: group-index
 - **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time
 - **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 
-- **`geonarra-com`** (medium) — OSINT tool: Geonarra.com.
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup
 - **`getlostgame-app`** (low) — Use when you want to train and sharpen geolocation skills on random street-view scenes — a free GeoGuessr-style game; it builds the skill, i
 - **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from

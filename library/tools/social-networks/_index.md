@@ -470,7 +470,6 @@ kind: group-index
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
-- **`reddit-search-tool`** (medium) — OSINT tool: Reddit Search Tool.
 - **`reddit-search`** (medium) — OSINT tool: Reddit Search.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Live-stream Reddit comments in real time.

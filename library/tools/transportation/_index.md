@@ -99,7 +99,7 @@ kind: group-index
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
 - **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
-- **`international-aircraft-search-by-manufacturer`** (medium) — Aviation-related website that offers a search of a US database of registered aviation owners
+- **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries
 - **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi
 - **`investigative-dashboard`** (medium) — Website providing resources and links for journalists to track finances and company ownership information across international borders
 - **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
