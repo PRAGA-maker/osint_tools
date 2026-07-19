@@ -77,7 +77,7 @@ kind: group-index
 - **`epochconverter-io`** (medium) — OSINT tool: epochconverter.io.
 - **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
 - **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.
-- **`european-world-translator`** (medium) — Enter the word in English to see its translation into different European languages on the map.
+- **`european-world-translator`** (low) — Use when you have a foreign word/label and want to see how it translates across European languages on a map — returns a per-country translat
 - **`everymountainintheworld`** (medium) — Use when you have a `geolocation` with a distinctive peak/summit and want to identify it — returns named mountains with elevation and links 
 - **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
 - **`fao-map-catalog`** (medium) — Use when you have a `geolocation` or region and want authoritative land-cover, agricultural, water and terrain layers for it — returns geosp

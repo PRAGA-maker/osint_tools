@@ -25287,24 +25287,31 @@
   {
     "id": "care2",
     "name": "Care2",
-    "description": "Wellness welfare and rights networking website",
+    "description": "Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile on a large activism network — returns `social-profile`, `associate`.",
     "url": "http://www.care2.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's activism/advocacy footprint (petitions, causes, member profile) on a 40M+ member social-good network.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse petitions and public profiles; a free account is only needed to sign/create petitions, not to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public petitions and member pages is passive. Signing a petition or messaging a member exposes your account and is active — stay logged out for research, and use a sock puppet if you ever need to sign in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate, long-running activism platform; profile data is self-reported by members, so treat names/locations as claims to corroborate, not verified facts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -25313,15 +25320,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Care2 petitions",
+      "thepetitionsite"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "activism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/care2.md"
   },
   {
@@ -26410,42 +26421,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/ctv-sci-fi-canada.md"
-  },
-  {
-    "id": "cutapaste",
-    "name": "Cutapaste",
-    "description": "OSINT tool: Cutapaste.",
-    "url": "https://cutapaste.net/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/cutapaste.md"
   },
   {
     "id": "deck-for-reddit",
@@ -37876,42 +37851,51 @@
   },
   {
     "id": "the-comedy-network-television-canada",
-    "name": "The Comedy Network Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "name": "CTV Comedy Channel (Canada)",
+    "description": "Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/programming context (low investigative value).",
     "url": "https://www.ctvcomedy.ca",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up Canadian comedy-TV programming, shows, and on-air talent — a niche entertainment reference, not a people-search tool.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse programming pages; full episode streaming may require a TV-provider sign-in, but that's not needed for the reference/search use here.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public broadcaster's programming site is passive and touches no target. Nothing here queries or notifies anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "The official site of a Bell Media comedy TV brand (formerly \"The Comedy Network\"); accurate for its own programming but of very limited use for investigating ordinary individuals.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The Comedy Network",
+      "CTV Comedy Channel"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "entertainment"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/the-comedy-network-television-canada.md"
   },
   {
@@ -39234,46 +39218,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/uksexforum-co-uk.md"
-  },
-  {
-    "id": "univision-television-united-states",
-    "name": "Univision Television (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.univision.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/univision-television-united-states.md"
   },
   {
     "id": "unogs-com",
@@ -118935,43 +118879,49 @@
   },
   {
     "id": "european-world-translator",
-    "name": "European World Translator",
-    "description": "Enter the word in English to see its translation into different European languages on the map.",
+    "name": "European Word Translator",
+    "description": "Use when you have a foreign word/label and want to see how it translates across European languages on a map — returns a per-country translation map to hint at a term's likely language/region.",
     "url": "https://ukdataexplorer.com/european-translator/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising an English word's translation across European languages on a map, to hint which country/language a foreign term or label belongs to.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use (optional small donation toward hosting); no account needed. Note the translation data is static, captured around 2014.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — a client-side visualisation using pre-fetched translation data. Typing a word reveals nothing to any target. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A hobby data-visualisation by UK Data Explorer using ~2014 Google Translate output; translations can be inaccurate, use non-European variants, and fail on proper nouns — treat as a rough hint only.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "European Translator map",
+      "ukdataexplorer European translator"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Other"
+      "language"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/european-world-translator.md"
   },
   {
@@ -134354,38 +134304,48 @@
   },
   {
     "id": "captin-fact",
-    "name": "Captin Fact",
-    "description": "OSINT tool: Captin Fact.",
+    "name": "CaptainFact",
+    "description": "Use when you have a video (YouTube) and want crowd-sourced fact-checks of statements in it — returns sourced verifications/refutations tied to timestamps.",
     "url": "https://captainfact.io/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether specific claims in a (YouTube) video have been collaboratively fact-checked, with cited sources tied to timestamps.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and non-profit; all code is open-source. A free account is only needed to contribute votes/sources, not to read.",
+    "opsec": "passive",
+    "opsecNote": "Reading fact-checks is passive and touches no target. If you contribute (votes/sources), that activity is public under your account — use a sock puppet if you don't want it attributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Community-run collaborative fact-checking (French-origin, non-profit, open source); each check is only as good as the sources its contributors attach — verify the cited sources yourself.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Captain Fact"
+    ],
     "tags": [
-      "fact-checking"
+      "fact-checking",
+      "video-verification"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/captin-fact.md"
   },
   {
@@ -229311,43 +229271,6 @@
     "_file": "library/tools/public-records/elicit.md"
   },
   {
-    "id": "employee-contact-directory-search-novascotia-ca",
-    "name": "Employee Contact Directory Search \\| novascotia.ca",
-    "description": "OSINT tool: Employee Contact Directory Search \\| novascotia.ca.",
-    "url": "https://novascotia.ca/psc/geds/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rjsc-connect"
-    ],
-    "_file": "library/tools/public-records/employee-contact-directory-search-novascotia-ca.md"
-  },
-  {
     "id": "en-52wmb-com",
     "name": "en.52wmb.com",
     "description": "Search information about worldwide buyers and suppliers by product name, company name or HS code.",
@@ -288205,46 +288128,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/jstor.md"
-  },
-  {
-    "id": "jubii-search-engine-denmark",
-    "name": "Jubii Search Engine (Denmark)",
-    "description": "Denmark based web search engine covering regional results",
-    "url": "http://www.jubii.dk",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/jubii-search-engine-denmark.md"
   },
   {
     "id": "jurispro-expert-witness-listings-united-states",
@@ -358324,44 +358207,53 @@
   },
   {
     "id": "auto-bid-master-auction",
-    "name": "auto bid master (auction)",
-    "description": "OSINT tool: auto bid master (auction).",
+    "name": "AutoBidMaster (auction)",
+    "description": "Use when you have a `vin` and want a salvage/auction history and photos of a specific vehicle — returns listing photos, damage/condition, title status and a VIN history report.",
     "url": "http://www.autobidmaster.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling salvage-auction listings and VIN history (photos, damage, title status) for a specific vehicle from US public salvage auctions (Copart broker).",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "image",
+      "physical-description",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing/searching current and past salvage listings is free; a full ClearVin vehicle-history report costs from ~$14.99, and bidding requires a (paid-deposit) account. The free listing search alone is often enough for OSINT.",
+    "opsec": "passive",
+    "opsecNote": "Searching public auction listings is passive. Registering/bidding requires personal/payment details and identifies you — do not create an account just to look; use the free search. No target is notified by a listing search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, established public-access salvage-auction broker (fronts Copart/IAAI inventory); listing data comes from the auctions, while paid VIN reports are supplied by the ClearVin third party.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "AutoBidMaster",
+      "auto bid master"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "salvage-auction"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/auto-bid-master-auction.md"
   },
   {
@@ -360067,44 +359959,52 @@
   },
   {
     "id": "enterprise-rental-receipts",
-    "name": "enterprise Rental Receipts",
-    "description": "OSINT tool: enterprise Rental Receipts.",
+    "name": "Enterprise Rental Receipts",
+    "description": "Use when you (or lawful process) have access to an Enterprise Plus account and need that account's own rental receipts — returns the renter's `name`, `address`, dates and vehicle; NOT a third-party lookup.",
     "url": "https://www.enterprise.com/en/reserve/receipts.html",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving an Enterprise Plus account holder's own past rental receipts (name, billing address, dates, vehicle) — only usable with that account's login.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "name"
     ],
     "selectorsOut": [
       "name",
-      "address"
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but only for the logged-in Enterprise Plus account holder's own rentals; no fee and no public/anonymous lookup.",
+    "opsec": "active",
+    "opsecNote": "This requires signing into an Enterprise Plus account. Do NOT log into anyone else's account. It is only appropriate for your own rentals or where you have lawful authority (e.g. subpoena/consent). Accessing another person's account without authorisation is illegal.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "The official Enterprise receipt-retrieval page; the data is first-party and authoritative, but it is scoped strictly to the account holder's own rentals — it is not an OSINT lookup against arbitrary vehicles or people.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Enterprise get a receipt"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "rental"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/enterprise-rental-receipts.md"
   },
   {

@@ -29,7 +29,7 @@ kind: group-index
 - **`askmid`** (medium) — OSINT tool: askMID.
 - **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference
 - **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
-- **`auto-bid-master-auction`** (medium) — OSINT tool: auto bid master (auction).
+- **`auto-bid-master-auction`** (medium) — Use when you have a `vin` and want a salvage/auction history and photos of a specific vehicle — returns listing photos, damage/condition, ti
 - **`autogespot`** (medium) — OSINT tool: Autogespot.
 - **`autowini-vin-search-international`** (medium) — OSINT tool: Autowini (Vin Search International).
 - **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.
@@ -64,7 +64,7 @@ kind: group-index
 - **`cyclevin`** (low) — Motorcycle-specific VIN history.
 - **`deciphering-number-plates`** (medium) — Use when you have a `vehicle-plate` in a photo and want to decode its country/region format — a reference series explaining how plates are s
 - **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
-- **`enterprise-rental-receipts`** (medium) — OSINT tool: enterprise Rental Receipts.
+- **`enterprise-rental-receipts`** (low) — Use when you (or lawful process) have access to an Enterprise Plus account and need that account's own rental receipts — returns the renter'
 - **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
 - **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
 - **`eships-net`** (low) — OSINT tool: eships.net.

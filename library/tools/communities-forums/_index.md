@@ -53,7 +53,7 @@ kind: group-index
 - **`business-com`** (medium) — Business and technology-related guides and articles
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
-- **`care2`** (medium) — Wellness welfare and rights networking website
+- **`care2`** (medium) — Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
 - **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
 - **`charitable-impact`** (medium) — Network of charities in Canada
@@ -78,7 +78,6 @@ kind: group-index
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`cutapaste`** (medium) — OSINT tool: Cutapaste.
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
 - **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
 - **`defuse`** (medium) — OSINT tool: Defuse.
@@ -337,7 +336,7 @@ kind: group-index
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin-code`** (medium) — OSINT tool: Textbin-Code.
 - **`textbin`** (medium) — OSINT tool: TextBin.
-- **`the-comedy-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`the-comedy-network-television-canada`** (low) — Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/progr
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-economist-world-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
 - **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
@@ -366,7 +365,6 @@ kind: group-index
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — OSINT tool: ukbusinessforums.co.uk.
 - **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.
-- **`univision-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`unogs-com`** (low) — Netflix search without registration
 - **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`usa-today-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may 

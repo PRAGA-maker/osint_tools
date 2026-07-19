@@ -285,7 +285,6 @@ kind: group-index
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
 - **`elicit`** (medium) — AI research assistant. Find answers to any question from 175 million papers. The results show a list of papers with summaries + Summary of t
-- **`employee-contact-directory-search-novascotia-ca`** (medium) — OSINT tool: Employee Contact Directory Search \| novascotia.ca.
 - **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and

@@ -402,7 +402,6 @@ kind: group-index
 - **`journal-seek`** (low) — OSINT tool: Journal Seek.
 - **`journalist-s-toolbox-investigative`** (medium) — SPJ-associated curated set of investigative research tools for journalists.
 - **`jstor`** (low) — OSINT tool: JSTOR.
-- **`jubii-search-engine-denmark`** (medium) — Denmark based web search engine covering regional results
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus

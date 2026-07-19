@@ -56,7 +56,7 @@ kind: group-index
 - **`camgirlfinder-net`** (medium) — Use when you have a face photo and want to check whether the person appears as a model on adult webcam (cam) sites.
 - **`camstreamer`** (medium) — OSINT tool: Camstreamer.
 - **`capcut-com`** (low) — Use when you need to trim, stabilize, upscale, or extract frames from video/CCTV footage — an editor, not a search tool.
-- **`captin-fact`** (medium) — OSINT tool: Captin Fact.
+- **`captin-fact`** (low) — Use when you have a video (YouTube) and want crowd-sourced fact-checks of statements in it — returns sourced verifications/refutations tied 
 - **`carrot2`** (medium) — Use when a name or keyword returns sprawling web results and you want them auto-clustered into themes to spot relevant sub-topics fast.
 - **`check`** (medium) — Use when you (as a newsroom/CSO team) have a claim, image, or video to verify collaboratively at scale — returns a shared workspace with tip
 - **`citizen-evidence-lab-toolbox`** (high) — Use when you have an `image`/video and want Amnesty International's curated list of verification tools (metadata viewers, reverse-image sear
