@@ -29102,48 +29102,6 @@
     "_file": "library/tools/communities-forums/google-com-14.md"
   },
   {
-    "id": "google-com-15",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforums.plentyoffish.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-15.md"
-  },
-  {
     "id": "google-com-21",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -29310,48 +29268,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-25.md"
-  },
-  {
-    "id": "google-com-27",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aboards.ie/b/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-27.md"
   },
   {
     "id": "google-com-29",
@@ -55455,41 +55371,56 @@
   {
     "id": "frida",
     "name": "Frida",
-    "description": "Runtime behavior analysis, API call interception, encryption bypass, behavior modification",
+    "description": "Use when you have a device you control (`device-id`) running a target app and want to inspect/intercept its runtime — returns intercepted secrets, tokens and data (password, metadata-exif).",
     "url": "https://frida.re/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "device-forensics"
     ],
-    "bestFor": "Runtime behavior analysis, API call interception, encryption bypass, behavior modification",
-    "input": "Running app processes, method signatures, target functions",
-    "output": "Intercepted method calls, API parameters, return values, runtime state",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Dynamic instrumentation of a running app on a device you control — hooking functions to observe API calls, decrypt data, and pull credentials/tokens.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "password",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (wxWindows/BSD-style licensing); no paid tier.",
     "opsec": "active",
-    "opsecNote": "Requires rooted/jailbroken device or emulator; app-level detection is possible",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "This runs ON a device you control and modifies a target app's runtime — it is only lawful/appropriate on devices and accounts you own or are authorized to examine (e.g. a recovered phone in an authorized investigation). Apps can detect Frida (anti-instrumentation), and instrumenting an account can trip its security signals. Never point it at infrastructure or accounts you don't control.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A mature, widely used open-source project (maintained by Ole André Vadla Ravnås / NowSecure community); auditable source and huge user base.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "frida.re",
+      "frida-tools",
+      "frida-trace"
+    ],
+    "tags": [
+      "device-forensics",
+      "dynamic-instrumentation",
+      "reverse-engineering",
+      "mobile"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/device-forensics/frida.md"
   },
   {
@@ -130948,13 +130879,13 @@
   {
     "id": "whoishere-py",
     "name": "whoishere.py",
-    "description": "WiFi client detection tool that identifies people by naming devices seen issuing wireless probe requests.",
+    "description": "Use when you have monitor-mode WiFi hardware on-site and want to detect a person's presence via their device's probe requests — returns mac-address, device-id and a mapped name.",
     "url": "https://github.com/hkm/whoishere.py",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Physical-presence detection of a person via their device's WiFi probe requests",
+    "bestFor": "On-site physical-presence detection — passively sniffing 802.11 probe requests to tell when a known device (person) is nearby.",
     "selectorsIn": [
       "mac-address",
       "device-id"
@@ -130964,15 +130895,18 @@
       "device-id",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open source (GitHub); the only cost is a WiFi adapter capable of monitor mode.",
+    "opsec": "active",
+    "opsecNote": "RF sniffing is receive-only so it emits nothing and doesn't touch the subject's device — but it requires YOU to be physically on-site with monitor-mode hardware, and passive interception of wireless traffic is legally restricted in many jurisdictions. Confirm you are authorized before deploying.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "248 stars; requires monitor-mode WiFi hardware and physical proximity.",
+    "trustNote": "A small but real open-source project (hkm/whoishere.py); it does what it claims but requires correct hardware/driver setup and manual device-to-person mapping.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -130981,7 +130915,11 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "whoishere",
+      "hkm/whoishere.py"
+    ],
     "tags": [
       "wifi",
       "probe-request",
@@ -130989,8 +130927,8 @@
       "physical"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/whoishere-py.md"
   },
   {
@@ -263581,42 +263519,58 @@
   },
   {
     "id": "tess",
-    "name": "TESS",
-    "description": "Search engine for #USA trademarks",
-    "url": "https://tmsearch.uspto.gov/bin/gate.exe?f=login&p_lang=english&p_d=trmk",
+    "name": "USPTO Trademark Search (formerly TESS)",
+    "description": "Use when you have a person or company `name`, a brand, or a serial number and want US trademark filings — returns employer-org, name and address of the trademark owner/attorney.",
+    "url": "https://tmsearch.uspto.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching US federal trademarks by owner name, mark text or serial/registration number to reach an owner's legal name, address and attorney.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public USPTO service; no account or payment required to search or view filings.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public government registry; nothing touches the subject and no login is required. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US Patent and Trademark Office; filings are authoritative primary records. (The legacy TESS system was retired in 2023 and replaced by the current tmsearch.uspto.gov search.)",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "us-patent-office-search",
+      "patent-attorneys-agent-search"
+    ],
+    "aliases": [
+      "TESS",
+      "USPTO Trademark Search",
+      "Trademark Electronic Search System"
+    ],
     "tags": [
-      "Brand/trademark information search"
+      "Brand/trademark information search",
+      "trademark",
+      "business-registry"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "patent-attorneys-agent-search",
-      "us-patent-office-search"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tess.md"
   },
   {
@@ -269845,30 +269799,34 @@
   {
     "id": "zoominfo",
     "name": "ZoomInfo",
-    "description": "Business to business company contact information",
+    "description": "Use when you have a person `name` or `employer-org` and want their job title, company and colleagues — returns employer-org, address and associate links from public B2B profile pages.",
     "url": "https://www.zoominfo.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reading ZoomInfo's free, search-indexed B2B profile pages for a person's title/employer or a company's location and staff roster.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The platform (bulk contacts, direct emails/phones) is a paid subscription, but individual person and company profile pages are free to view and indexed by search engines — that public layer is the OSINT value.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing an indexed public profile page is passive. The full platform requires an account and gates contact details behind login/payment; do not create an account tied to your identity if you want to stay clean.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial B2B data aggregator; titles/employers are often accurate but can be stale or auto-scraped — corroborate before relying.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -269877,15 +269835,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "zoominfo.com",
+      "DiscoverOrg"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "b2b-contacts"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/zoominfo.md"
   },
   {
@@ -294003,24 +293966,30 @@
   {
     "id": "oceanhero",
     "name": "OceanHero",
-    "description": "Charitable search engine that supports our oceans.",
+    "description": "Use when you want a Bing-backed alternate search front-end to cross-check or de-personalize web results — returns web results powered by Microsoft Bing.",
     "url": "https://oceanhero.today",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A free Bing-powered alternate search front-end, useful as a second-opinion search that isn't tied to your Google session.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Completely free — no subscription or premium tier; funded by search-ad revenue that pays for ocean-plastic cleanup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A search front-end over Bing; querying it doesn't touch the subject. As with any search engine, your queries are logged by the provider — use a sock-puppet/logged-out session for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, operational charitable metasearch (live since 2019) that resells Bing results; result quality equals Bing, and the charitable angle doesn't affect data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -294029,15 +293998,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "oceanhero.today"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "metasearch"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/oceanhero.md"
   },
   {
@@ -298923,24 +298896,25 @@
   {
     "id": "reuser-s-repertorium",
     "name": "Reuser's Repertorium",
-    "description": "Arno Reuser's long-standing repertorium of OSINT sources and tools.",
+    "description": "Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map and search tools.",
     "url": "http://rr.reuser.biz/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Deep reference list from a veteran OSINT practitioner",
+    "bestFor": "A veteran-curated directory of OSINT sources (registries, maps, people, country-specific tools) to seed an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public reference site; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static link directory — browsing it touches only Reuser's site, not any subject. Fully passive. Note it is served over plain HTTP, so treat the connection as unencrypted (fine for reading a public list).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Arno Reuser is a pioneering OSINT practitioner.",
+    "trustNote": "Maintained by Arno Reuser, a pioneering professional OSINT practitioner; a long-respected, hand-curated reference rather than an automated harvest.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -298949,15 +298923,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Reuser's Repertorium",
+      "rr.reuser.biz"
+    ],
     "tags": [
       "tool-collection",
       "repertorium",
-      "reference"
+      "reference",
+      "directory"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/reuser-s-repertorium.md"
   },
   {
@@ -344706,41 +344685,55 @@
   {
     "id": "tumblr-search",
     "name": "Tumblr Search",
-    "description": "OSINT tool: Tumblr Search.",
+    "description": "Use when you have a `username`, `name` or keyword and want related Tumblr blogs and posts — returns social-profile and username leads.",
     "url": "http://www.tumblr.com/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Tumblr's public posts and tags to find a subject's blog, aliases, or interest-based communities.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search; viewing all results and adult-flagged content may prompt a login.",
+    "opsec": "passive",
+    "opsecNote": "Searching public Tumblr content is passive and doesn't notify anyone. Browsing while logged in ties views to your account and can surface you in \"who to follow\"/analytics — use a sock-puppet account or logged-out browsing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party on-site search of a major blogging platform; results are real Tumblr content, though the ranking is opaque and tag-driven.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "tumblr"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "tumblr",
       "tumblr-com"
     ],
+    "aliases": [
+      "tumblr.com/search"
+    ],
+    "tags": [
+      "tumblr",
+      "social-media-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tumblr-search.md"
   },
   {
@@ -359364,45 +359357,51 @@
   {
     "id": "connecticut-license-verification",
     "name": "Connecticut License Verification",
-    "description": "Connecticut Department of Motor Vehicles license verification utility",
+    "description": "Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential status only (no personal data).",
     "url": "https://www.dmvselfservice.ct.gov/LicenseStatusService.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Validating a Connecticut driver-license/ID credential number and checking its current status.",
+    "selectorsIn": [
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public Connecticut DMV self-service tool; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries the CT DMV about a credential number, not a named person; by design it returns no personal information. Passive — the subject is not notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Connecticut DMV self-service portal; the status it returns is authoritative for the credential number entered.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "connecticut-registered-voter-verification",
       "state-of-connecticut-licensing"
     ],
+    "aliases": [
+      "CT DMV license status"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "dmv"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/connecticut-license-verification.md"
   },
   {

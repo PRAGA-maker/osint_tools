@@ -650,7 +650,7 @@ kind: group-index
 - **`truthnest`** (medium) — Use when you have an X/Twitter `username` and want deep account analytics (activity patterns, hashtags, mentions, bot-likelihood signals) — 
 - **`truthsocial-com`** (medium) — Use when you have a `username` or `name` and want to check for a Truth Social presence — returns a `social-profile` with posts, bio, and con
 - **`ttsave-app-2`** (high) — Use when you have a TikTok video or profile URL and want to download the media without watermark or login — returns the video, thumbnail `im
-- **`tumblr-search`** (medium) — OSINT tool: Tumblr Search.
+- **`tumblr-search`** (medium) — Use when you have a `username`, `name` or keyword and want related Tumblr blogs and posts — returns social-profile and username leads.
 - **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.

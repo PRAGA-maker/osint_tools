@@ -323,7 +323,7 @@ kind: group-index
 - **`whereis-com-maps-of-australia`** (medium) — Use when you have an Australian `address` or place and want to map, verify, and geolocate it (coordinates, directions, nearby context) — ret
 - **`whereisthisplace`** (high) — Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.
 - **`whodidit`** (medium) — Use when you have a `geolocation` and want the OpenStreetMap editors who changed that area — returns editor usernames and edit dates.
-- **`whoishere-py`** (medium) — WiFi client detection tool that identifies people by naming devices seen issuing wireless probe requests.
+- **`whoishere-py`** (medium) — Use when you have monitor-mode WiFi hardware on-site and want to detect a person's presence via their device's probe requests — returns mac-
 - **`wifispc-com`** (low) — OSINT tool: Wifispc.com.
 - **`wikiloc-gps-location-sharing`** (high) — Use when you have a `username`/`name` or an area `geolocation` and want user-posted GPS trails (with start points, dates and photos) — retur
 - **`wikimapia`** (medium) — Use when you need crowd-labeled names and descriptions of buildings, businesses, and landmarks at a location that official maps leave blank.

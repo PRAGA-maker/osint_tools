@@ -54,7 +54,7 @@ kind: group-index
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
 - **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
-- **`connecticut-license-verification`** (medium) — Connecticut Department of Motor Vehicles license verification utility
+- **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st
 - **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
 - **`container-tracking`** (low) — OSINT tool: Container Tracking.
 - **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.

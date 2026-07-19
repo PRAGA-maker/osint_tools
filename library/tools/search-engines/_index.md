@@ -530,7 +530,7 @@ kind: group-index
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
 - **`oa-mg`** (low) — OSINT tool: OA.mg.
 - **`occrp-org`** (medium) — Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated di
-- **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
+- **`oceanhero`** (medium) — Use when you want a Bing-backed alternate search front-end to cross-check or de-personalize web results — returns web results powered by Mic
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
 - **`octosearch-dootech-com`** (medium) — Use when you want to search GitHub repositories starred by people you follow — a personal discovery tool over your own GitHub network's cura
 - **`od-search-tool`** (medium) — Open directory search tool.
@@ -635,7 +635,7 @@ kind: group-index
 - **`research-gate`** (low) — OSINT tool: Research Gate.
 - **`resellerratings-north-america`** (medium) — Website related to reseller ratings
 - **`restaurant-business-online-united-states`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`reuser-s-repertorium`** (medium) — Arno Reuser's long-standing repertorium of OSINT sources and tools.
+- **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
 - **`reverse-genie-lookup`** (medium) — Database search by telephone number, person name, email, plate number, address, IP, domain or area code
 - **`reviewmeta`** (low) — OSINT tool: ReviewMeta.

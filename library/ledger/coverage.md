@@ -2,41 +2,41 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8125 total · 3590 full · 4535 stub (44% enriched)
+**Tools:** 8123 total · 3598 full · 4525 stub (44% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3433 · medium: 2732 · high: 1960
+low: 3433 · medium: 2730 · high: 1960
 
 ## Tools by trust
-unverified: 3514 · community: 3381 · trusted: 1218 · personal: 6 · untrustworthy: 6
+unverified: 3508 · community: 3383 · trusted: 1220 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
 - `archives-cache` — 47/134
-- `communities-forums` — 92/399
+- `communities-forums` — 92/397
 - `dark-web` — 15/118
 - `dating-classifieds` — 46/112
-- `documents-metadata` — 25/314
+- `documents-metadata` — 26/314
 - `domains-ip-infrastructure` — 71/750
 - `email` — 243/246
 - `evidence-capture` — 5/31
 - `financial-crypto` — 34/127
-- `geolocation` — 219/349
+- `geolocation` — 220/349
 - `image-video-face` — 401/471
 - `maps-geospatial-data` — 30/141
 - `messaging` — 157/193
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 236/266
 - `phone` — 134/137
-- `public-records` — 707/1100
-- `search-engines` — 283/927
-- `social-networks` — 631/846
+- `public-records` — 709/1100
+- `search-engines` — 285/927
+- `social-networks` — 632/846
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
-- `transportation` — 69/228
+- `transportation` — 70/228
 - `username` — 100/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -47,7 +47,7 @@ unverified: 3514 · community: 3381 · trusted: 1218 · personal: 6 · untrustwo
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 509 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 387 leaves
+- `library/tools/communities-forums` — 385 leaves
 - `library/tools/image-video-face` — 375 leaves
 - `library/tools/geolocation` — 334 leaves
 - `library/tools/documents-metadata` — 263 leaves
