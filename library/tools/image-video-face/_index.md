@@ -124,7 +124,7 @@ kind: group-index
 - **`fotki`** (high) — Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the 
 - **`fotoforensics-com`** (high) — Use when you need a fast Error Level Analysis and metadata dump on a photo to check for editing — returns ELA heatmap, EXIF/JPEG metadata, a
 - **`foxmonitor`** (medium) — Use when you have a `geolocation` (or want live ground truth at a place) and need publicly accessible CCTV/webcam feeds there — returns live
-- **`frame-by-frame`** (medium) — OSINT tool: Frame by Frame.
+- **`frame-by-frame`** (medium) — Use when you have a video and want to step through it one frame at a time — returns precise still frames for landmark, plate, or face captur
 - **`free-music-search`** (low) — Use when you need to search for and identify a song or music track by name/artist online — returns links to matching audio/sources; marginal
 - **`full-fact`** (low) — Use when you have a viral claim, image or story and want an evidence-based verification — returns the UK charity's fact-checks, sourcing, an
 - **`fulldp-co-2`** (high) — Use when you have a TikTok username/profile and need the full-resolution profile picture (TikTok serves a thumbnail) — returns a downloadabl

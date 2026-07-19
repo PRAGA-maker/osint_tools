@@ -620,7 +620,7 @@ kind: group-index
 - **`tikrank-com`** (medium) — free tool for comparing and analyzing #TikTok accounts. Available ranking of the most popular users by country (there are more than a millio
 - **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
 - **`tiktake-net`** (medium) — TikTok Video Downloader
-- **`tiktok-creative-center-statistics`** (medium) — List of most popular hashtags; songs; creators; videos for different countries and periods.
+- **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
 - **`tiktok-scraper`** (medium) — scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of cl
@@ -698,7 +698,7 @@ kind: group-index
 - **`twitter-monitoring`** (high) — Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns soc
 - **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).
 - **`twitter-photo-search`** (high) — Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — ret
-- **`twitter-scraper`** (medium) — Scrape any #Twitter user profile. Creates an unofficial Twitter API to extract tweets, retweets, replies, favorites, and conversation thread
+- **`twitter-scraper`** (medium) — Use when you have a Twitter/X `username` and want their full tweet history at scale — returns tweets, replies, retweets and thread data as s
 - **`twitter-search-engine`** (high) — Use when you have a `name`, `username`, or keyword and want to search Twitter/X content and profiles through a Google Custom Search Engine —
 - **`twitter-search-tool`** (high) — Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter acco
 - **`twitter-search`** (high) — Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns twe

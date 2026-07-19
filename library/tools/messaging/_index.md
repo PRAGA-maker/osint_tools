@@ -59,7 +59,7 @@ kind: group-index
 - **`fake-whatsapp-chat-generator`** (medium) — OSINT tool: Fake WhatsApp Chat Generator.
 - **`fakedetail-com-2`** (medium) — Use when you need to understand or demonstrate how a WhatsApp chat screenshot can be fabricated — a counter-OSINT/evidence-verification refe
 - **`fediverse-explorer`** (medium) — Search Mastodon users by interests
-- **`find-telegram-channels-bots-groups`** (medium) — OSINT tool: Find Telegram Channels/Bots/Groups.
+- **`find-telegram-channels-bots-groups`** (medium) — Use when you have a topic, name, or keyword and want to discover related Telegram channels/groups/bots — returns channel links, descriptions
 - **`findstickercreator`** (medium) — Use when you have a Telegram sticker pack (or a `social-profile` that shared one) and want to de-anonymise its creator — returns the creator
 - **`followgraph-for-mastodon`** (medium) — Use when you have a Mastodon `username`/handle and want the accounts followed by the people they follow — returns associate and social-profi
 - **`geogramint`** (high) — Use when you have a `geolocation` (coordinates) and want to enumerate Telegram users/groups who have shared their location nearby — returns 

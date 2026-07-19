@@ -33023,37 +33023,52 @@
   {
     "id": "ning",
     "name": "Ning",
-    "description": "OSINT tool: Ning.",
+    "description": "Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member profiles and posts.",
     "url": "http://www.ning.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Reaching interest-based communities and their member profiles hosted on the Ning social-network platform.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Ning charges creators to host a network, but the resulting community sites are typically free to browse; some require a free member account to see member content.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public Ning community pages is passive. Joining a network to see members-only content creates an account the community admins can see — use a sock puppet, not a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A hosting platform, not a data source; each Ning network is run by its own community and content is user-generated and unverified.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ning.com"
+    ],
     "tags": [
-      "forums-and-discussion-boards-search"
+      "forums-and-discussion-boards-search",
+      "community-platform"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ning.md"
   },
   {
@@ -138840,37 +138855,52 @@
   {
     "id": "frame-by-frame",
     "name": "Frame by Frame",
-    "description": "OSINT tool: Frame by Frame.",
-    "url": "https://chrome.google.com/webstore/detail/frame-by-frame/cclnaabdfgnehogonpeddbgejclcjneh/",
+    "description": "Use when you have a video and want to step through it one frame at a time — returns precise still frames for landmark, plate, or face capture.",
+    "url": "https://chromewebstore.google.com/detail/frame-by-frame/cclnaabdfgnehogonpeddbgejclcjneh",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Advancing any web video frame-by-frame with the arrow keys to isolate a single revealing still.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "vehicle-plate",
+      "face"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Chrome extension (by Code for Charity); no account, no in-app purchases.",
+    "opsec": "passive",
+    "opsecNote": "The extension runs locally in your browser on video already loaded on the page; it sends nothing to the video's owner and the developer states it collects no user data. Standard OpSec for how you loaded the video still applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source, Featured on the Chrome Web Store with a public GitHub repo; a simple client-side utility rather than a data source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Frame by Frame for YouTube"
+    ],
     "tags": [
-      "video-search-and-other-video-tools"
+      "video-search-and-other-video-tools",
+      "video-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/frame-by-frame.md"
   },
   {
@@ -164053,35 +164083,53 @@
   {
     "id": "find-telegram-channels-bots-groups",
     "name": "Find Telegram Channels/Bots/Groups",
-    "description": "OSINT tool: Find Telegram Channels/Bots/Groups.",
+    "description": "Use when you have a topic, name, or keyword and want to discover related Telegram channels/groups/bots — returns channel links, descriptions and subscriber counts.",
     "url": "https://xtea.io/ts_en.html",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword discovery of Telegram channels, groups, and bots without joining or logging in.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free unlimited searching; a paid Pro tier only removes ads. No account needed to search or open results.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching XTEA's index is passive and does not touch Telegram or the target. Opening/joining a channel from the results IS an active step inside Telegram — use a sock-puppet Telegram account, never your real one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party search index (~50k channels across 143 countries); coverage is partial and it self-reports no query logging. Treat it as a discovery aid, not a complete map of Telegram.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "telegram",
+      "telegago"
+    ],
+    "tags": [
+      "telegram",
+      "messaging",
+      "channel-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/find-telegram-channels-bots-groups.md"
   },
   {
@@ -220090,28 +220138,35 @@
   {
     "id": "brb-public-records",
     "name": "BRB Public Records",
-    "description": "Public records source directory",
+    "description": "Use when you need to find the authoritative source for a US public record and want to know which agency holds it — returns links and access instructions by record type and jurisdiction.",
     "url": "https://www.brbpublications.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Public records source directory",
-    "input": "Record type, jurisdiction",
-    "output": "Agency links, access instructions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A directory that points you to the correct government agency or database for a given US public record by state and record type.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "BRB's Free Public Records Directory of government record-source links is free to browse; its in-depth research guides and the Public Record Retriever Network are paid products.",
     "opsec": "passive",
-    "opsecNote": "Aggregator of public access links",
+    "opsecNote": "You're reading a directory of where records live, not querying any record about the subject, so this step leaks nothing. OpSec considerations apply only when you follow a link to an actual agency search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BRB Publications has been a respected authority on public-record sources for decades; its directory is a curated, well-maintained map of official access points.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -220122,11 +220177,14 @@
       "public-records",
       "state-appellate-and-supreme-courts"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "public-records",
+      "directory",
+      "record-sources"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/brb-public-records.md"
   },
   {
@@ -342793,43 +342851,53 @@
   {
     "id": "tiktok-creative-center-statistics",
     "name": "TikTok Creative Center Statistics",
-    "description": "List of most popular hashtags; songs; creators; videos for different countries and periods.",
+    "description": "Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by country and period.",
     "url": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en?from=001114",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Official TikTok trend data — top hashtags, songs, creators and videos filtered by country and time period.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; run by TikTok itself for advertisers. A TikTok Business/ads login unlocks deeper views but basic trend browsing is open.",
+    "opsec": "passive",
+    "opsecNote": "Reading TikTok's own trends dashboard is passive and reveals nothing about your subject. It queries no individual's account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party TikTok product (Creative Center); the trend figures come straight from TikTok's own data, though they are advertiser-oriented aggregates.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "tiktok",
+      "tiktok-search-inteltechniques-method",
+      "here-15"
+    ],
     "tags": [
       "Social Media",
-      "TikTok"
+      "TikTok",
+      "trends"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "here-15",
-      "tiktok",
-      "tiktok-search-inteltechniques-method"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok-creative-center-statistics.md"
   },
   {
@@ -347182,51 +347250,65 @@
   {
     "id": "twitter-scraper",
     "name": "Twitter Scraper",
-    "description": "Scrape any #Twitter user profile. Creates an unofficial Twitter API to extract tweets, retweets, replies, favorites, and conversation threads with no Twitter API limits.",
+    "description": "Use when you have a Twitter/X `username` and want their full tweet history at scale — returns tweets, replies, retweets and thread data as structured JSON/CSV.",
     "url": "https://console.apify.com/actors/u6ppkMWAx2E2MpEuF",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting a Twitter/X account's tweets, replies and threads via an Apify actor without the official API's limits.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Runs on Apify, which gives a small free monthly credit; heavy scraping is pay-per-result (roughly cents per 1,000 tweets). Requires a free Apify account and API token.",
+    "opsec": "active",
+    "opsecNote": "Scraping runs from Apify's infrastructure, not your IP, so the target isn't queried directly by you — but it is an unofficial extraction against X's terms and it touches X servers. Use a dedicated Apify account and avoid tying results to a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "api",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Apify actor, not an official Twitter/X product; actors change, break, or get delisted as X alters its site, so verify output freshness each run.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
+      "twitter-url-scraper",
+      "twitter",
+      "instagram-scraper",
+      "reddit-scraper",
+      "youtube-scraper",
       "apify-s-google-maps-scraper",
       "dark-web-scraper",
       "facebook-latest-comments-scraper",
       "facebook-latest-posts-scraper",
-      "google-maps-scraper",
       "google-search-scraper",
-      "instagram-hashtag-scraper",
-      "instagram-scraper",
-      "reddit-scraper",
-      "twitter-url-scraper",
-      "youtube-scraper"
+      "instagram-hashtag-scraper"
     ],
+    "tags": [
+      "Social Media",
+      "Twitter",
+      "scraper"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-scraper.md"
   },
   {

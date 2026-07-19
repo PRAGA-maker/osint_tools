@@ -120,7 +120,7 @@ kind: group-index
 - **`boston-police-internal-affairs-cases-2010-2020`** (medium) — OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.
 - **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
-- **`brb-public-records`** (medium) — Public records source directory
+- **`brb-public-records`** (medium) — Use when you need to find the authoritative source for a US public record and want to know which agency holds it — returns links and access 
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
 - **`brownbook`** (medium) — Use when you have a business `name`/`employer-org` and want its listing — returns address, phone, and contact details from a global crowd-so
 - **`buffalo-police`** (medium) — Use when you have a Buffalo (NY) police officer `name` or badge and want accountability/misconduct records — returns officer identity and co

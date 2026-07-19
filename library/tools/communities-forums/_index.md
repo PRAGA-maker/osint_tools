@@ -224,7 +224,7 @@ kind: group-index
 - **`newsblur-rss-feeder`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — View and translate all newspapers from around the world on a visual map
-- **`ning`** (medium) — OSINT tool: Ning.
+- **`ning`** (low) — Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member
 - **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile
 - **`nopaste-net`** (medium) — OSINT tool: nopaste.net.
 - **`nopaste`** (medium) — OSINT tool: NoPaste.
