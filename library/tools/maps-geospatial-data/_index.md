@@ -43,7 +43,7 @@ kind: group-index
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur
 - **`freemaptools-com`** (medium) — Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radiu
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
-- **`generate-a-panorama`** (medium) — OSINT tool: Generate a panorama.
+- **`generate-a-panorama`** (medium) — Use when you have a candidate viewpoint `geolocation` and a photo showing a horizon/mountain skyline — returns a labelled synthetic panorama
 - **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time
 - **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 

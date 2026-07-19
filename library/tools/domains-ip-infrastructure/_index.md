@@ -327,7 +327,7 @@ kind: group-index
 - **`my-ip-address`** (medium) — Use when checking what public IP your own connection exposes (sock-puppet/VPN verification) — returns your current ip-address and coarse geo
 - **`myip-ip-address`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`name-com-bulk-search`** (medium) — Tool that identifies the available registration information for a website or domain name
-- **`name-com-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`name-com-united-states`** (low) — Use when you have a `domain` and want registration/availability and WHOIS basics — returns registrar/availability data and (redacted) WHOIS 
 - **`namecheap-united-states`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
 - **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page

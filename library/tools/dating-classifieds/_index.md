@@ -28,7 +28,6 @@ kind: group-index
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
 - **`datingadvice`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to dating queries
 - **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
-- **`ebay-classifieds-united-states`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`ebin-pub`** (medium) — OSINT tool: ebin.pub.
 - **`eroticbeauties-net`** (medium) — OSINT tool: eroticbeauties.net.
@@ -62,7 +61,6 @@ kind: group-index
 - **`kijiji-canada`** (medium) — Use when you have a `name`, handle, or location and want a subject's classified ads — returns listings with seller display name, photos, are
 - **`kleinanzeigen-de`** (high) — Use when a German-speaking subject may post on Germany's largest classifieds site — pivot from name/phone/location to seller listings and co
 - **`locanto-free-classified-ads-worldwide`** (medium) — Use when you have a username, phone, or location and want to find a subject's classified ads (jobs, personals, sales) — returns social-profi
-- **`look-by-username-replace-username-in-this-case-mark`** (medium) — OSINT tool: Look by username - replace @username (in this case, Mark).
 - **`loot-com-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
 - **`lovingcreators-com`** (medium) — OSINT tool: lovingcreators.com.
 - **`match-com`** (medium) — Use when you have a `username`, photo or profile detail and want to confirm a subject's dating presence — returns dating profile, photos and

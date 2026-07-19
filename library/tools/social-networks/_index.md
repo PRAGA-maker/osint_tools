@@ -187,7 +187,6 @@ kind: group-index
 - **`find-my-facebook-id`** (high) — Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID th
 - **`find-my-snap-check-if-your-snapchat-account-was-leaked-on-the-2013-hack`** (medium) — OSINT tool: Find My Snap - Check if your SnapChat account was leaked on the 2013 hack..
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
-- **`findface`** (medium) — OSINT tool: FindFace.
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
 - **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
@@ -404,7 +403,7 @@ kind: group-index
 - **`onemilliontweetmap`** (medium) — Use when you have a place and want geotagged tweets there — plots recent X/Twitter posts on a live world map, returning location-bearing `so
 - **`onli-vk-ru`** (high) — Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate link
 - **`open-measures`** (medium) — Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.
-- **`open-source-software-insight`** (medium) — Amazing service that allows to analyze developers and repositories data based on more than 5 billion (!) Github Events.
+- **`open-source-software-insight`** (medium) — Use when you have a GitHub `username`/repo and want deep activity analytics — returns a developer's contribution patterns, tech stack, colla
 - **`open-source`** (medium) — OSINT tool: open-source.
 - **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
 - **`orbit-livasch`** (medium) — A tool for analyzing connections between Twitter accounts (based on the number of likes, retweets, tweet citations, and mentions).

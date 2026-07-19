@@ -296,7 +296,7 @@ kind: group-index
 - **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`sciencedaily-com`** (medium) — Searchable website for the latest news on research, specifically focusing on science and health research
 - **`scrt-link`** (medium) — OSINT tool: scrt.link.
-- **`search-engine-watch`** (medium) — Online articles and news related to search engines, as well as business, computers, gadgets, technology, and future trends
+- **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
 - **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`seeking-arrangement`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships

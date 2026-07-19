@@ -36202,25 +36202,30 @@
   {
     "id": "search-engine-watch",
     "name": "Search Engine Watch",
-    "description": "Online articles and news related to search engines, as well as business, computers, gadgets, technology, and future trends",
+    "description": "Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a people or content lookup.",
     "url": "http://searchenginewatch.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keeping current on search-engine/SEO methods and news to sharpen query craft — background learning, not an investigative lookup.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read articles; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading an industry news site is passive and touches no target. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-running SEO/search-industry news publication; reliable for its domain (search marketing), but it is a news/education site, not an investigative data source.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -36228,15 +36233,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "searchenginewatch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "seo"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/search-engine-watch.md"
   },
   {
@@ -45349,42 +45357,54 @@
   },
   {
     "id": "ycombinator",
-    "name": "Ycombinator",
-    "description": "Website related to social networking and crowdsourcing with thousands of online responses to general queries",
+    "name": "Hacker News (Y Combinator)",
+    "description": "Use when you have a `username` (or name) in the tech world and want their Hacker News posts/comments — returns a `social-profile` and a searchable trail of opinions, links and disclosures.",
     "url": "https://news.ycombinator.com/ask",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Hacker News for a tech-adjacent subject's posts, comments, and profile — often candid disclosures about employers, projects, and locations.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; no account required to browse (only to post/comment).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading HN is passive. The best search route (Algolia HN Search) queries a third party, not the user. Stay logged out; use a sock-puppet browser if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Hacker News is a legitimate, widely used tech community run by Y Combinator; posts are genuine user content, but identities are self-asserted handles — corroborate before attributing.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hacker News",
+      "HN",
+      "news.ycombinator.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "tech-community"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/ycombinator.md"
   },
   {
@@ -46431,46 +46451,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/ebay.md"
-  },
-  {
-    "id": "ebay-classifieds-united-states",
-    "name": "Ebay Classifieds (United States)",
-    "description": "One of the Top 10 classified advertisements-related websites worldwide",
-    "url": "http://www.ebayclassifieds.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/ebay-classifieds-united-states.md"
   },
   {
     "id": "ebin-pub",
@@ -47957,50 +47937,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/locanto-free-classified-ads-worldwide.md"
-  },
-  {
-    "id": "look-by-username-replace-username-in-this-case-mark",
-    "name": "Look by username - replace @username (in this case, Mark)",
-    "description": "OSINT tool: Look by username - replace @username (in this case, Mark).",
-    "url": "https://www.gotinder.com/@username",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "dating"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "tinder-2",
-      "tinder-usernames"
-    ],
-    "_file": "library/tools/dating-classifieds/look-by-username-replace-username-in-this-case-mark.md"
   },
   {
     "id": "loot-com-classified-ads-united-kingdom",
@@ -81357,50 +81293,54 @@
   {
     "id": "name-com-united-states",
     "name": "Name.com (United States)",
-    "description": "Service provider for registering websites and domain addresses",
+    "description": "Use when you have a `domain` and want registration/availability and WHOIS basics — returns registrar/availability data and (redacted) WHOIS via a major US registrar's lookup.",
     "url": "https://www.name.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a domain's availability/registration status and basic WHOIS through a major registrar, plus bulk domain-name searching.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "WHOIS/availability lookups are free; registering domains costs money. No account needed to run a lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A WHOIS/availability lookup is passive and doesn't touch the site owner. It queries registry data through name.com — use a sock-puppet session if you'd rather the lookup not be tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A large, established ICANN-accredited US registrar; availability/registration data is authoritative, but post-GDPR WHOIS is heavily redacted, so registrant personal details are usually hidden.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
     "relatedTools": [
       "name-com-bulk-search"
     ],
+    "aliases": [
+      "Name.com",
+      "name.com WHOIS"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis",
+      "registrar"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/name-com-united-states.md"
   },
   {
@@ -157334,36 +157274,53 @@
   },
   {
     "id": "generate-a-panorama",
-    "name": "Generate a panorama",
-    "description": "OSINT tool: Generate a panorama.",
+    "name": "Generate a Panorama (Ulrich Deuschle)",
+    "description": "Use when you have a candidate viewpoint `geolocation` and a photo showing a horizon/mountain skyline — returns a labelled synthetic panorama of what should be visible, to confirm or refute the location.",
     "url": "https://www.udeuschle.de/panoramas/makepanoramas_en.htm",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Generating a labelled mountain/horizon panorama from a chosen viewpoint and bearing to match against the skyline in a photo for geolocation.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account required. (Optional donation to the author.)",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Fully passive — it renders terrain from elevation data on the server; no target is involved. No sock puppet needed for a routine geolocation check.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-established, well-regarded terrain-panorama generator (Ulrich Deuschle) widely used in the geolocation community; output is computed from digital elevation models, so ridgelines are accurate where the terrain data is.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "udeuschle",
+      "Deuschle panorama generator",
+      "mountain panorama tool"
+    ],
+    "tags": [
+      "geolocation",
+      "terrain",
+      "skyline-matching"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/generate-a-panorama.md"
   },
   {
@@ -208233,37 +208190,51 @@
   {
     "id": "ziprecruiter",
     "name": "ZipRecruiter",
-    "description": "OSINT tool: ZipRecruiter.",
+    "description": "Use when you have a `name` and want employment/job-history leads — returns candidate resumes, job-seeker profiles and employer context from a major US job marketplace.",
     "url": "https://www.ziprecruiter.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Finding a subject's job-seeker profile/resume or employer/job-posting context on a large US employment marketplace.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse job listings and register as a job-seeker; recruiter-side candidate search (full resume database) requires a paid employer account. Public job postings and some profile data are free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public listings is passive. Accessing candidate resumes at scale means posing as an employer (paid account) — that leaves a footprint and may notify candidates their profile was viewed. Use a sock-puppet employer identity only if genuinely necessary and lawful.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A large, legitimate US job marketplace; profile/resume data is self-reported by job-seekers, so treat stated employers/locations as claims to corroborate.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ZipRecruiter.com"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ziprecruiter.md"
   },
   {
@@ -272927,41 +272898,51 @@
   {
     "id": "bank-of-canada",
     "name": "Bank of Canada",
-    "description": "Offering general information about the Bank of Canada, its actions and services",
+    "description": "Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one genuinely people-relevant search; otherwise reference/economic info.",
     "url": "http://www.bank-banque-canada.ca/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reaching the Bank of Canada's Unclaimed Balances search (dormant/forgotten Canadian bank accounts) by name — plus authoritative economic/currency reference.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official central-bank site and free Unclaimed Balances search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public government registry is passive and touches no target. No sock puppet needed for a routine public-record check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Canada's central bank; its published data and the Unclaimed Balances registry are authoritative official records.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Banque du Canada",
+      "Bank of Canada Unclaimed Balances"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "unclaimed-property"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bank-of-canada.md"
   },
   {
@@ -319058,48 +319039,6 @@
     "_file": "library/tools/social-networks/finddit-viralharia.md"
   },
   {
-    "id": "findface",
-    "name": "FindFace",
-    "description": "OSINT tool: FindFace.",
-    "url": "https://findface.ru",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vk",
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/findface.md"
-  },
-  {
     "id": "first-tweet",
     "name": "First Tweet",
     "description": "Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes broke it); retained as historical reference.",
@@ -331020,39 +330959,52 @@
   },
   {
     "id": "open-source-software-insight",
-    "name": "Open Source Software Insight",
-    "description": "Amazing service that allows to analyze developers and repositories data based on more than 5 billion (!) Github Events.",
+    "name": "OSS Insight",
+    "description": "Use when you have a GitHub `username`/repo and want deep activity analytics — returns a developer's contribution patterns, tech stack, collaborators and repo insights from billions of GitHub events.",
     "url": "https://ossinsight.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a GitHub developer or repository — activity timeline, languages, collaborators, and behavioural patterns from analysed GitHub event data.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use the public analytics/dashboards; no account required for the core insights (advanced/API usage may have limits).",
+    "opsec": "passive",
+    "opsecNote": "Analysing public GitHub activity is passive — you query aggregated public event data, not the developer, who is not notified. Use a sock-puppet browser if you want the lookup unattributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by the PingCAP/TiDB team on top of public GitHub Archive event data; analytics are derived from real public events, so they're reliable, though inferences (tech stack, activity times) are statistical.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSSInsight",
+      "ossinsight.io"
+    ],
     "tags": [
       "Social Media",
-      "Github"
+      "Github",
+      "developer-analytics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/open-source-software-insight.md"
   },
   {

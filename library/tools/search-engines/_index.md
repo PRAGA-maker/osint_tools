@@ -90,7 +90,7 @@ kind: group-index
 - **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
 - **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
 - **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
-- **`bank-of-canada`** (medium) — Offering general information about the Bank of Canada, its actions and services
+- **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
 - **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`base`** (low) — OSINT tool: Base.
 - **`bazel`** (medium) — Google’s own build tool that has built-in support for building both client and server software, including client applications for both Andro
