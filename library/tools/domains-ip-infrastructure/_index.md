@@ -352,7 +352,6 @@ kind: group-index
 - **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
-- **`open-web-analytics-tool`** (medium) — Search for information and statistics about any online website using open source software
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
 - **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.

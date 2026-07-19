@@ -44,7 +44,6 @@ kind: group-index
 - **`bloglovin`** (medium) — Website related to social networking and blogging
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
 - **`boards-ie`** (medium) — OSINT tool: boards.ie.
-- **`bodybuilding-com`** (medium) — Forum related to health, wellness, and/or fitness
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
 - **`bootsnall`** (medium) — Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; lim
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
@@ -224,7 +223,6 @@ kind: group-index
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`new-paste`** (medium) — OSINT tool: New Paste.
 - **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
-- **`new-york-times`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`newsblur-rss-feeder`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — View and translate all newspapers from around the world on a visual map

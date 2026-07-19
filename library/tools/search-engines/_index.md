@@ -154,7 +154,7 @@ kind: group-index
 - **`citysearch`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
 - **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
-- **`clearing-and-depository-services`** (medium) — Non-government site maintained by the Canadian Depository for Securities Limited
+- **`clearing-and-depository-services`** (low) — Use when you need Canadian securities-market infrastructure info (participant lists, ISIN issuance, regulatory notices) — mostly institution
 - **`clicklaw`** (low) — Use when you need plain-language British Columbia / Canadian legal context and want to understand a process or your rights — returns curated
 - **`cloud-bucket-search-engine`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want exposed cloud storage — returns public S3/Azure/GCS bucket listings and file
 - **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)

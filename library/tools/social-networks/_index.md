@@ -694,7 +694,6 @@ kind: group-index
 - **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.
 - **`twitter-chat-schedule`** (high) — Use when you have a subject's topic/interest or a hashtag and want to find the recurring Twitter/X chats and moderators around it — returns 
 - **`twitter-control-panel`** (low) — Use when you review X/Twitter feeds during investigations and want to strip the algorithmic clutter — returns a cleaner, chronological view 
-- **`twitter-developer-platform`** (medium) — OSINT tool: Twitter Developer Platform.
 - **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return
 - **`twitter-mentions-map`** (low) — Use when you have access to a Twitter/X account and want a world map of where the users mentioning it are located — returns `geolocation` cl
 - **`twitter-money-calculator`** (medium) — Use when you have a Twitter/X `username` and want a quick read of its follower count and engagement metrics — returns account activity/engag

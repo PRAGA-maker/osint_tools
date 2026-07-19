@@ -206,7 +206,7 @@ kind: group-index
 - **`listen-notes`** (medium) — Use when you want to find a person, name or topic mentioned across podcasts — returns matching podcast episodes with show, date and audio.
 - **`live-beaches`** (medium) — Beaches webcam only
 - **`livestream-aka-vimeo`** (high) — Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-
-- **`logobook`** (medium) — help to see which companies have a logo that looks like a certain object. You can use the suggested variants to geolocate photo.
+- **`logobook`** (low) — Use when you have an `image` with an unknown logo/emblem and want to identify the company/brand by its visual form — returns candidate brand
 - **`lossless-cut`** (low) — Use when you have an `image`/video file and want to trim, split or inspect it without re-encoding — returns clipped segments and preserved `
 - **`lycos-image-search`** (low) — Use when you want a secondary keyword image-search index outside Google/Bing — returns image results for a text query.
 - **`lykdat-com`** (medium) — Use when you have an `image` showing clothing and want to identify the garments and find visually matching retail products — returns clothin

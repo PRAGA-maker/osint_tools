@@ -100,7 +100,7 @@ kind: group-index
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
 - **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
 - **`international-aircraft-search-by-manufacturer`** (medium) — Aviation-related website that offers a search of a US database of registered aviation owners
-- **`international-registry-of-mobile-assets`** (medium) — Aviation-related website that offers a search for international aircraft and organizations owning aircraft
+- **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi
 - **`investigative-dashboard`** (medium) — Website providing resources and links for journalists to track finances and company ownership information across international borders
 - **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
 - **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.

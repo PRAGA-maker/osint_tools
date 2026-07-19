@@ -265,7 +265,7 @@ kind: group-index
 - **`shadow-finder`** (medium) — Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where t
 - **`shadowmap`** (medium) — Use when you have a `geolocation`/`address` and a candidate date-time and want the sun position and building shadows in 3D — returns shadow 
 - **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
-- **`skydb`** (medium) — Worldwide database of skyscrapers and tall buildings.
+- **`skydb`** (low) — Use when you have an `image`/`geolocation` clue featuring a tall building and want to identify it — returns building height, city, year, dev
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
 - **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
 - **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.

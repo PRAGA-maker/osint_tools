@@ -366,7 +366,7 @@ kind: group-index
 - **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
 - **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
 - **`george-floyd-where-black-people-are-most-disproportionately-killed-by-police`** (medium) — OSINT tool: George Floyd - Where black people are most disproportionately killed by police.
-- **`georgefloyd-protest-police-brutality-videos`** (medium) — OSINT tool: GeorgeFloyd Protest police brutality videos.
+- **`georgefloyd-protest-police-brutality-videos`** (low) — Use when you have a `geolocation`/date from the 2020 George Floyd protests and want documented incident footage — returns a curated spreadsh
 - **`georgia-ports-authority`** (medium) — Georgia Ports Authority Guide and Directory
 - **`georgia-voters-com`** (high) — Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address,
 - **`georgia`** (high) — Use when you have a `name` (or GDC ID) and want to locate someone in Georgia state prison custody — returns current facility/status plus dob
