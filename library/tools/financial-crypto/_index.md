@@ -43,7 +43,7 @@ kind: group-index
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
 - **`bpfi-ie`** (medium) — OSINT tool: bpfi.ie.
 - **`btc-com`** (low) — OSINT tool: BTC.com.
-- **`btcbook-guarda-com`** (medium) — OSINT tool: btcbook.guarda.com.
+- **`btcbook-guarda-com`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history,
 - **`business-hsbc-co-uk`** (medium) — OSINT tool: business.hsbc.co.uk.
 - **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi
 - **`chainalysis`** (low) — OSINT tool: Chainalysis.

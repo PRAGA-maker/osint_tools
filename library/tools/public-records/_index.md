@@ -281,7 +281,7 @@ kind: group-index
 - **`ebra-be`** (high) — Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward e
 - **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
 - **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — Use when you have a `name` or `employer-org` and want SEC filings that mention them — returns officer/insider `name`s, `employer-org` links 
-- **`eff-atlas-of-surveillance`** (medium) — OSINT tool: EFF Atlas of Surveillance.
+- **`eff-atlas-of-surveillance`** (medium) — Use when you have a `geolocation`/`address` (city, county, agency) and want to know what surveillance technology local law enforcement opera
 - **`egafd-com`** (high) — Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — re
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register

@@ -717,7 +717,6 @@ kind: group-index
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
 - **`twitter-x-location-search`** (medium) — Use when you have a `geolocation` and want posts sent from near it — returns geotagged X/Twitter posts and the `social-profile`s behind them
-- **`twitterfall`** (medium) — OSINT tool: Twitterfall.
 - **`twittertrails-com`** (high) — Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com d
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for
 - **`twitterwebviewer-com`** (high) — Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile conten

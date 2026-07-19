@@ -36,7 +36,7 @@ kind: group-index
 - **`changedetection`** (low) — OSINT tool: ChangeDetection.
 - **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.
 - **`cybdetective-com`** (medium) — OSINT tool: cybdetective.com.
-- **`deleted-tweet-finder-digital-digging-cache`** (medium) — Search deleted tweets across archives/caches.
+- **`deleted-tweet-finder-digital-digging-cache`** (medium) — Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, 
 - **`deltafeed`** (low) — OSINT tool: Deltafeed.
 - **`diggreader`** (low) — OSINT tool: DiggReader.
 - **`directory-of-open-access-journals`** (medium) — Search by 16 920 journals, 6, 588, 661 articles, 80 lanquages, 129 countries
@@ -101,7 +101,7 @@ kind: group-index
 - **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)
 - **`vandal`** (medium) — extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.
 - **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo
-- **`vefsafn-is`** (medium) — OSINT tool: Vefsafn.is.
+- **`vefsafn-is`** (medium) — Use when you have an Icelandic `domain` or URL and want historical snapshots of it — returns archived captures of .is / Iceland-related web 
 - **`versionista`** (low) — OSINT tool: versionista.
 - **`view-page-archive-addons-mozilla-org`** (medium) — Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style sn
 - **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,

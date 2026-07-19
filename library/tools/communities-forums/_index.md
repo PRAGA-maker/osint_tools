@@ -357,7 +357,7 @@ kind: group-index
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
 - **`theaustralian-national-news`** (medium) — Searchable website for a major newspaper covering national and local events in Australia
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
-- **`thepaperboy`** (medium) — Searchable website for a directory of leading US and worldwide online newspapers
+- **`thepaperboy`** (medium) — Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to searc
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
 - **`theverge-tech-news`** (medium) — Online articles, news, and reviews related to technology, science, gadgets, future trends, and more
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party

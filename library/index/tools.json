@@ -18765,28 +18765,30 @@
   {
     "id": "deleted-tweet-finder-digital-digging-cache",
     "name": "Deleted Tweet Finder (Digital Digging Cache)",
-    "description": "Search deleted tweets across archives/caches.",
+    "description": "Use when you have a tweet/`social-profile` URL and want to recover a deleted or edited tweet — returns cached/archived copies from Wayback, Archive.today, Ghostarchive, Google/Bing/Yandex caches.",
     "url": "https://cache.digitaldigging.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "Recovering deleted tweets from cached/archived sources",
+    "bestFor": "One-click fan-out that checks many web caches/archives for a deleted tweet from a single Twitter/X URL.",
     "selectorsIn": [
+      "social-profile",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool by Henk van Ess (Digital Digging); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You query third-party archives (Wayback, Archive.today, Ghostarchive, search-engine caches), never X/Twitter itself, so the account owner gets no signal. The tool builds lookup URLs client-side; using an archive only touches that archive, not the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by well-known OSINT trainer Henk van Ess; it orchestrates reputable public archives rather than holding data itself, but some cache sources need manual confirmation.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -18795,7 +18797,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ai-search-whisper",
+      "digitaldigging-org",
+      "digitaldigging-org-2",
+      "visualorigins-digitaldigging-org"
+    ],
+    "aliases": [
+      "Digital Digging Cache",
+      "cache.digitaldigging.org"
+    ],
     "tags": [
       "twitter",
       "deleted-tweets",
@@ -18803,14 +18814,8 @@
       "cache"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ai-search-whisper",
-      "digitaldigging-org",
-      "digitaldigging-org-2",
-      "visualorigins-digitaldigging-org"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/deleted-tweet-finder-digital-digging-cache.md"
   },
   {
@@ -21805,38 +21810,53 @@
   },
   {
     "id": "vefsafn-is",
-    "name": "Vefsafn.is",
-    "description": "OSINT tool: Vefsafn.is.",
+    "name": "Vefsafn.is (Icelandic Web Archive)",
+    "description": "Use when you have an Icelandic `domain` or URL and want historical snapshots of it — returns archived captures of .is / Iceland-related web pages from 1996 to now.",
     "url": "https://vefsafn.is/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Recovering deleted or changed Icelandic web pages (.is domains and Iceland-related sites) that the global Wayback Machine may have missed.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public archive by the National and University Library of Iceland; open URL search, no account.",
+    "opsec": "passive",
+    "opsecNote": "You query the library's Wayback-style archive, not the live site, so the page owner sees nothing. The library may log your lookups; standard archive privacy applies. Some captures are access-restricted (paywalled or owner-closed) and simply won't display.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the National and University Library of Iceland (Landsbókasafn) as a legal-deposit web archive; an authoritative institutional source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Íslenska vefsafnið",
+      "Icelandic Web Archive",
+      "wayback.vefsafn.is"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "web-archive",
+      "iceland"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/vefsafn-is.md"
   },
   {
@@ -38586,24 +38606,30 @@
   {
     "id": "thepaperboy",
     "name": "ThePaperboy",
-    "description": "Searchable website for a directory of leading US and worldwide online newspapers",
+    "description": "Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to search for coverage of a person or event.",
     "url": "https://www.thepaperboy.com/newspapers-by-country.cfm",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right local/national newspaper websites for a country, US state, or city to hunt for press coverage of a subject.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory; no account or payment. Online since 1997, rebuilt 2025.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory itself is passive — you are only reading a public list of publication links. OpSec exposure begins only once you follow through to a specific newspaper's site and run searches there; the target is never touched by using Paperboy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent directory (since 1997) cataloguing 11,000+ papers across 230+ countries; it curates links, it does not hold personal data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -38612,18 +38638,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "paperboy"
+    ],
+    "aliases": [
+      "Paperboy",
+      "World Newspaper Directory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "paperboy"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/thepaperboy.md"
   },
   {
@@ -111634,43 +111663,50 @@
   {
     "id": "btcbook-guarda-com",
     "name": "btcbook.guarda.com",
-    "description": "OSINT tool: btcbook.guarda.com.",
+    "description": "Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history, and linked `crypto-wallet` addresses.",
     "url": "https://btcbook.guarda.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Quick Bitcoin block-explorer lookups — inspect an address's balance, transactions, and counterparties.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free block explorer operated by Guarda Wallet; no account needed to view chain data.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public Bitcoin blockchain is passive and invisible to the address owner. Guarda logs your lookups to their servers, so if the query is sensitive use a clean browser/VPN; consider a self-hosted explorer for maximum privacy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Explorer run by Guarda (an established non-custodial wallet vendor); chain data itself is authoritative, but it is a commercial front-end with wallet/exchange upsells.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Guarda BTC explorer",
+      "btcbook"
+    ],
     "tags": [
       "cryptosites",
-      "CryptoCurrency Related Sites"
+      "bitcoin",
+      "block-explorer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/btcbook-guarda-com.md"
   },
   {
@@ -163377,38 +163413,51 @@
   {
     "id": "chatvisualizer-com",
     "name": "chatvisualizer.com",
-    "description": "another #WhatsApp chat analyzer.",
+    "description": "Use when you already possess a WhatsApp chat export and want visual statistics of it — returns activity patterns and per-participant `name`/`associate` breakdowns (who talks, when, how much).",
     "url": "https://chatvisualizer.com",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Turning a WhatsApp chat export you lawfully hold into charts — message volume per participant, active hours, and interaction patterns.",
+    "selectorsIn": [
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web service; results delivered by email link. No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the chat participants (they get no signal), but you must EMAIL the entire private conversation to a third-party server (robot@chatvisualizer.com) that then processes and stores it. That is a serious data-exposure and consent risk — only use on data you are legally entitled to analyse, prefer a self-hosted analyzer for sensitive material, and never upload chats you cannot lawfully share.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party service with no transparency about data retention; you are handing it a full private chat log, so treat it as untrusted with your data and verify results yourself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Chatvisualizer"
+    ],
     "tags": [
       "Messengers",
-      "WhatsApp"
+      "WhatsApp",
+      "chat-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/chatvisualizer-com.md"
   },
   {
@@ -229349,35 +229398,53 @@
   {
     "id": "eff-atlas-of-surveillance",
     "name": "EFF Atlas of Surveillance",
-    "description": "OSINT tool: EFF Atlas of Surveillance.",
+    "description": "Use when you have a `geolocation`/`address` (city, county, agency) and want to know what surveillance technology local law enforcement operates there — returns the deploying `employer-org` and tech types.",
     "url": "https://atlasofsurveillance.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Mapping which surveillance tech (ALPR, drones, face recognition, ring/cameras) a given US locality's police run — situational awareness for an investigation.",
+    "selectorsIn": [
+      "geolocation",
+      "address",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database from EFF; no account required. Bulk CSV export available.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Entirely passive — you query EFF's own database, not any police or target system. Nothing about your subject is transmitted; you are only reading published records about agencies. No footprint reaches the locality.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by the Electronic Frontier Foundation with the University of Nevada Reno's Reynolds School of Journalism, compiled by 1,000+ students/volunteers from public/nonprofit sources; each data point is sourced.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Atlas of Surveillance",
+      "EFF surveillance database"
+    ],
+    "tags": [
+      "surveillance",
+      "law-enforcement",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/eff-atlas-of-surveillance.md"
   },
   {
@@ -272672,36 +272739,47 @@
   },
   {
     "id": "argumentsearch-com",
-    "name": "Argumentsearch.com",
-    "description": "OSINT tool: Argumentsearch.com.",
+    "name": "ArgumentSearch (args.me)",
+    "description": "Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a people-search selector tool.",
     "url": "http://argumentsearch.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving structured pro and con arguments on a debatable topic for background reasoning; negligible direct value for locating a person.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free academic search engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive academic search over a fixed argument corpus. You submit a topic string to a research service; no target selector is involved, so there is no subject-side footprint. Standard query-logging by the host applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Academic tool (args.me / ULB argument-search research line) indexing arguments from debate sites; a reasoning aid, not an investigative data source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "args.me",
+      "ULB Argument Search Engine"
+    ],
+    "tags": [
+      "search-engine",
+      "academic",
+      "argument-mining"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/argumentsearch-com.md"
   },
   {
@@ -284132,35 +284210,53 @@
   {
     "id": "google-cse-instances-search-engine",
     "name": "Google CSE instances Search Engine",
-    "description": "OSINT tool: Google CSE instances Search Engine.",
+    "description": "Use when you have a `name`/`username`/`domain` and want to search a curated OSINT-focused Google Programmable Search Engine that queries only a hand-picked set of sources — returns web results (`social-profile`, `domain`).",
     "url": "https://cse.google.com/cse?cx=009462381166450434430:vggeu3dhhgg#gsc.tab=0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a keyword/name query against a pre-built OSINT Google CSE that restricts results to a curated source list, cutting general-web noise.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine (formerly Custom Search Engine); no account needed to run queries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit a query string to Google's CSE infrastructure — passive with respect to the target (no site of theirs is touched). Google logs the search against your session/IP; use a sock-puppet/clean browser if the query itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Programmable Search Engine; Google runs the search, but the source list is curated by an unnamed maintainer and its exact scope is not independently documented.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Google Programmable Search Engine",
+      "OSINT CSE"
+    ],
+    "tags": [
+      "search-engine",
+      "google-cse",
+      "programmable-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-cse-instances-search-engine.md"
   },
   {
@@ -300103,30 +300199,39 @@
   },
   {
     "id": "scanner-inurlbr",
-    "name": "Scanner-inurlbr",
-    "description": "OSINT tool: Scanner-inurlbr.",
+    "name": "SCANNER-INURLBR",
+    "description": "Use when you have a search dork or `domain` and want to mass-harvest matching URLs and exposed `email`s across many search engines from the CLI — returns `domain`s and `email`s.",
     "url": "https://github.com/googleinurl/SCANNER-INURLBR",
     "category": "search-engines",
     "path": [
       "search-engines",
       "search-tools"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automated multi-engine dorking from the command line to collect URLs/emails matching a pattern (advanced recon), rather than one-off manual Google queries.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source (GPL) PHP tool on GitHub; you self-host and run it locally.",
+    "opsec": "active",
+    "opsecNote": "This automates high-volume queries against Google/Bing/Yandex and can validate discovered targets, which is active and easily fingerprinted — search engines will CAPTCHA/ban the source IP and touched hosts may log the visits. Run from a disposable VPS/proxy chain, throttle it, and never point it at infrastructure you are not authorised to probe.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing open-source project (googleinurl, ~880 stars) widely used in pentest/recon circles; unaudited PHP, so review before running and treat output as leads.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -300134,11 +300239,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "inurlbr",
+      "inurl scanner"
+    ],
+    "tags": [
+      "dorking",
+      "recon",
+      "cli",
+      "search-tools"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-tools/scanner-inurlbr.md"
   },
   {
@@ -348557,48 +348670,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-x-location-search.md"
-  },
-  {
-    "id": "twitterfall",
-    "name": "Twitterfall",
-    "description": "OSINT tool: Twitterfall.",
-    "url": "https://twitterfall.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitterfall.md"
   },
   {
     "id": "twittertrails-com",

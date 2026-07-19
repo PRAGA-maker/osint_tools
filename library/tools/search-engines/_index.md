@@ -71,7 +71,7 @@ kind: group-index
 - **`arabo-com`** (medium) — OSINT tool: Arabo.com.
 - **`archiplanet`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
-- **`argumentsearch-com`** (medium) — OSINT tool: Argumentsearch.com.
+- **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
 - **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
@@ -315,7 +315,7 @@ kind: group-index
 - **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co
 - **`google-com-85`** (high) — Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels)
 - **`google-com-hack-attack`** (medium) — OSINT tool: \*.Google.com Hack Attack.
-- **`google-cse-instances-search-engine`** (medium) — OSINT tool: Google CSE instances Search Engine.
+- **`google-cse-instances-search-engine`** (medium) — Use when you have a `name`/`username`/`domain` and want to search a curated OSINT-focused Google Programmable Search Engine that queries onl
 - **`google-custom-search`** (medium) — Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Go
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia

@@ -35,7 +35,7 @@ kind: group-index
 - **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.
 - **`chatsearchrobot`** (high) — Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram c
 - **`chattoday`** (low) — Online chat platform for connecting and chatting with people.
-- **`chatvisualizer-com`** (medium) — another #WhatsApp chat analyzer.
+- **`chatvisualizer-com`** (medium) — Use when you already possess a WhatsApp chat export and want visual statistics of it — returns activity patterns and per-participant `name`/
 - **`commentgram-cse`** (medium) — search by Telegram comments
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
 - **`create-spoof-fake-text-sms-messages`** (high) — Use when you are assessing whether a text/SMS "from" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID,
