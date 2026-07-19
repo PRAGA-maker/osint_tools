@@ -111,7 +111,7 @@ kind: group-index
 - **`discord-id-lookup`** (medium) — Use when you have a Discord user/snowflake ID (`device-id`) and want the account's public identity — returns `username`, avatar, and exact a
 - **`discord-me`** (medium) — Use when you have a `username` or topic and want to find public Discord servers a subject may frequent — returns server listings with catego
 - **`discord-user-search`** (medium) — Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning p
-- **`discordservers`** (medium) — OSINT tool: DiscordServers.
+- **`discordservers`** (medium) — Use when you have a topic, interest, or community name and want public Discord servers about it — returns server listings you can browse and
 - **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
 - **`douban`** (high) — Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `s
 - **`downgit`** (medium) — Create GitHub Resource Download Link

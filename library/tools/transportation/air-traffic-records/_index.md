@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`ads-b-exchange`** (medium) — Use when you have an aircraft identifier or a `geolocation`/time and want unfiltered live or historical flight tracks — returns positions, a
-- **`ads-b-nl`** (medium) — European and military aircraft movement monitoring
+- **`ads-b-nl`** (low) — Use when you have an aircraft registration or callsign and want to track its movements — returns flight traces and movement history, with a 
 - **`flightradar24-com`** (medium) — Use when you have an aircraft registration (tail number), flight number or airport and want live/recent position and routing — returns `geol
 - **`openaip-world-aeronautical-database`** (medium) — Use when you have an airfield/airspace `geolocation` and want aeronautical data — a free open database; returns runway, frequency, navaid, a
 - **`world-aeronautical-database`** (medium) — Aviation reference checks for airports, airlines, and aircraft

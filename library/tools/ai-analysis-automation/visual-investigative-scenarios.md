@@ -36,6 +36,7 @@ relatedTools:
 - occrp-org
 - organized-crime-and-corruption-reporting-project
 - the-pegasus-project-occrp
+- investigative-dashboard
 ---
 
 # Visual Investigative Scenarios

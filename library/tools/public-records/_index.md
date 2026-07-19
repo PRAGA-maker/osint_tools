@@ -608,7 +608,7 @@ kind: group-index
 - **`moci-gov-kw`** (high) — Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying busi
 - **`molfar-com`** (high) — Use when you have a lead and need the right public register or OSINT app for a jurisdiction — Molfar's curated directory returns links to re
 - **`money-house-search-switzerland`** (medium) — Use when you have a `name` or Swiss `employer-org` and want commercial-register data — returns company registrations, directorships and addr
-- **`montana-registered-voter-verification`** (medium) — Montana registered voter verification and search
+- **`montana-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for a Montana resident and want to confirm voter registration — returns registration status, precinct and
 - **`montana`** (high) — Use when you have a `name` (or DOC ID) and want to check Montana state incarceration/supervision records — returns offender status, facility
 - **`montreal-council-of-social-agencies-database`** (medium) — OSINT tool: Montreal Council of Social Agencies Database.
 - **`most-wanted`** (high) — Use when you have a `name` (or are working an image/case) and want to check whether the person appears on the FBI's wanted/most-wanted lists

@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8083 total · 3716 full · 4367 stub (45% enriched)
+**Tools:** 8083 total · 3722 full · 4361 stub (46% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3483 · medium: 2638 · high: 1962
+low: 3484 · medium: 2637 · high: 1962
 
 ## Tools by trust
-unverified: 3417 · community: 3397 · trusted: 1257 · personal: 6 · untrustworthy: 6
+unverified: 3412 · community: 3399 · trusted: 1260 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -18,7 +18,7 @@ unverified: 3417 · community: 3397 · trusted: 1257 · personal: 6 · untrustwo
 - `archives-cache` — 52/133
 - `communities-forums` — 100/390
 - `dark-web` — 18/118
-- `dating-classifieds` — 47/109
+- `dating-classifieds` — 48/109
 - `documents-metadata` — 26/314
 - `domains-ip-infrastructure` — 74/745
 - `email` — 244/246
@@ -31,12 +31,12 @@ unverified: 3417 · community: 3397 · trusted: 1257 · personal: 6 · untrustwo
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 239/264
 - `phone` — 134/137
-- `public-records` — 721/1096
+- `public-records` — 723/1096
 - `search-engines` — 305/923
-- `social-networks` — 643/841
+- `social-networks` — 644/841
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
-- `transportation` — 80/225
+- `transportation` — 82/225
 - `username` — 100/104
 
 ## Folders needing a split (>12 leaves — go deeper)

@@ -84,7 +84,7 @@ kind: group-index
 - **`onlysuomi`** (low) — Finnish OnlyFans directory.
 - **`onlytop-fr`** (medium) — Use when you have a `username`, `name`, or location and want to find a matching OnlyFans creator profile — returns `social-profile`, locatio
 - **`oodle-classified-advertisements-united-states`** (medium) — Use when you have a `geolocation` and keyword/`name` and want US classifieds across many sources at once — returns aggregated listings that 
-- **`oodle-online-classifieds`** (medium) — OSINT tool: Oodle (Online Classifieds).
+- **`oodle-online-classifieds`** (medium) — Use when you have a `name`, seller handle, or item and want classified listings across many sites at once — returns aggregated ads for cars,
 - **`plenty-of-fish-com`** (high) — Use when a subject may have a dating profile — search POF by username/area/age to surface a photo, self-description, and approximate locatio
 - **`plentyoffish-online-dating`** (medium) — OSINT tool: PlentyOfFish (Online Dating).
 - **`pornhoard-com`** (medium) — OSINT tool: pornhoard.com.

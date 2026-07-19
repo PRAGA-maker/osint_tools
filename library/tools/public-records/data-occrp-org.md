@@ -35,6 +35,7 @@ relatedTools:
 - organized-crime-and-corruption-reporting-project
 - the-pegasus-project-occrp
 - visual-investigative-scenarios
+- investigative-dashboard
 ---
 
 # data.occrp.org

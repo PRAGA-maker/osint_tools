@@ -41,6 +41,7 @@ relatedTools:
 - occrp-org
 - the-pegasus-project-occrp
 - visual-investigative-scenarios
+- investigative-dashboard
 aliases:
 - OCCRP
 - Aleph

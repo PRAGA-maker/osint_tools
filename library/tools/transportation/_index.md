@@ -101,7 +101,7 @@ kind: group-index
 - **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
 - **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries
 - **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi
-- **`investigative-dashboard`** (medium) — Website providing resources and links for journalists to track finances and company ownership information across international borders
+- **`investigative-dashboard`** (medium) — Use when you have a company or person and want to find the right corporate/land/court registry to trace ownership across borders — returns a
 - **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
 - **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.
 - **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
