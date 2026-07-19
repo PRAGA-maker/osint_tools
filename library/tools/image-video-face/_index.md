@@ -63,7 +63,6 @@ kind: group-index
 - **`citizen-evidence-lab`** (high) — Use when you have a video or `image` (often eyewitness/social footage) and want to verify its origin, upload time, and authenticity — return
 - **`clarify`** (low) — Use only as a legacy reference — clarify.io was a media/audio-indexing API and appears discontinued.
 - **`cleanup-pictures`** (low) — Web tool for quickly removing objects from an image.
-- **`clip-blast`** (medium) — OSINT tool: Clip Blast.
 - **`clipconverter-cc`** (low) — Use when you need to download/convert an online video for offline frame-by-frame analysis or preservation — a converter, not a search tool.
 - **`clipdrop-co`** (high) — Use when you have an `image` of poor/cluttered quality and want to clean it up before a face/reverse-image search — returns an edited `image
 - **`clipsnap-com-4`** (high) — Use when you have a blurry or low-quality photo of a missing person and want to sharpen it before reverse-image search — returns an enhanced

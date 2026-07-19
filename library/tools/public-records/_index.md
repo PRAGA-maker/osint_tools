@@ -450,7 +450,7 @@ kind: group-index
 - **`icaew-com`** (medium) — Use when you have a `name` or firm and want to confirm a UK chartered accountant / ICAEW-regulated firm — returns the firm/member `employer-
 - **`icas-org-uk-2`** (high) — Use when you have a `name` of a Scottish chartered accountant and want to check for published disciplinary findings against them — returns n
 - **`icas-org-uk`** (high) — Use when you have a `name` or firm and want to verify/locate a Chartered Accountant registered with ICAS — returns the member/firm, their fi
-- **`ice-patrol`** (medium) — OSINT tool: ICE Patrol.
+- **`ice-patrol`** (medium) — Use when you have a `name` or `employer-org` and want to check WikiLeaks' 2018 scrape of ~9,000 US ICE-linked LinkedIn profiles — returns jo
 - **`iceland`** (high) — Use when you have an Icelandic `employer-org`, `name`, or `address` and want official company-registry details — returns `employer-org`, `ad
 - **`ico-org-uk`** (high) — Use when you have an organisation/sole-trader `name` and want to confirm UK data-protection registration and its contact details — returns r
 - **`idaho`** (high) — Use when you have a `name` and want to check Idaho Department of Correction custody/probation/parole status — returns `name`, `document-id` 

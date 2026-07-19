@@ -71,7 +71,7 @@ kind: group-index
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
 - **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
-- **`landmark-toolpie-com`** (medium) — OSINT tool: landmark.toolpie.com.
+- **`landmark-toolpie-com`** (medium) — Use when you have an `image` showing a recognizable landmark and want to identify it — returns the landmark's name and `geolocation`/`addres
 - **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
 - **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret

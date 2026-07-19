@@ -162,7 +162,7 @@ kind: group-index
 - **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
 - **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 
 - **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif
-- **`reverse-genie-license-plate-search`** (medium) — OSINT tool: Reverse Genie (License Plate Search).
+- **`reverse-genie-license-plate-search`** (medium) — Use when you have a US `vehicle-plate` and want to try to tie it to an owner — a free front-end that funnels toward name/address results, mo
 - **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
 - **`runmap`** (low) — running routes world map
 - **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis

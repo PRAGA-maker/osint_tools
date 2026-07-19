@@ -78,7 +78,7 @@ kind: group-index
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
 - **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
-- **`defuse`** (medium) — OSINT tool: Defuse.
+- **`defuse`** (medium) — Use when you have found a `defuse.ca` pastebin link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you al
 - **`deviantart`** (medium) — Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and communit
 - **`digg`** (medium) — Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — retu
 - **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
@@ -305,7 +305,7 @@ kind: group-index
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Chinese website related to social networking and micro-blogging
 - **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
-- **`slashdot`** (medium) — Website related to social networking and bookmarking activities; includes world news stories
+- **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
 - **`smat`** (low) — OSINT tool: smat.
 - **`snippet-host`** (medium) — OSINT tool: snippet.host.
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
@@ -366,7 +366,7 @@ kind: group-index
 - **`usa-today-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may 
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (medium) — OSINT tool: vaultbin.
-- **`verybin`** (medium) — OSINT tool: Verybin.
+- **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
 - **`vrbo`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`w3newspapers`** (medium) — World newspapers, news sites, and magazines categorized by country

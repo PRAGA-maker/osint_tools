@@ -26529,44 +26529,53 @@
   },
   {
     "id": "defuse",
-    "name": "Defuse",
-    "description": "OSINT tool: Defuse.",
+    "name": "Defuse Pastebin",
+    "description": "Use when you have found a `defuse.ca` pastebin link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already hold the link for.",
     "url": "https://defuse.ca/pastebin.htm",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decrypting a specific defuse.ca paste link you already possess; NOT a searchable index (robots-blocked, link-only access).",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Defuse's pastebin encrypts text in the browser before it is sent over TLS, and blocks search-engine indexing via robots.txt, so pastes are link-only. Opening a link decrypts locally, but the operator could in principle serve modified code — open unknown links in a sandbox, and never paste a target's data here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by Defuse Security (Taylor Hornby), a reputable security site with a long-lived, high-traffic pastebin. Client-side encryption is auditable, but you must trust the server operator not to tamper.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "big-number-calculator",
       "html-sanitizer-tool",
       "text-and-file-hash-calculator",
       "x86-and-x64-intel-assembler"
     ],
+    "aliases": [
+      "defuse.ca pastebin"
+    ],
+    "tags": [
+      "pastebins"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/defuse.md"
   },
   {
@@ -36760,24 +36769,30 @@
   {
     "id": "slashdot",
     "name": "Slashdot",
-    "description": "Website related to social networking and bookmarking activities; includes world news stories",
-    "url": "http://slashdot.org",
+    "description": "Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on this veteran tech-news community.",
+    "url": "https://slashdot.org",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pivoting a tech-leaning handle to a public Slashdot profile and its long comment history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read profiles, comments and posts; an account is only needed to post/comment, not to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public profiles and comment history is read-only and does not notify the user. Registering or commenting would expose you — use a sock puppet if you must log in. Long comment histories can reveal employer, location, opinions and timeline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established (since 1997) technology-news community. The platform is authentic; individual comments are unverified user speech and often pseudonymous.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -36786,15 +36801,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "/.",
+      "slashdot.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "forums"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/slashdot.md"
   },
   {
@@ -39441,37 +39460,46 @@
   {
     "id": "verybin",
     "name": "Verybin",
-    "description": "OSINT tool: Verybin.",
+    "description": "Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already have the link (and key) for.",
     "url": "https://www.verybin.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decrypting a specific Verybin link you already possess; NOT a searchable leak index (zero-knowledge server, not indexed).",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (PrivateBin-based); no account, no server-side plaintext.",
+    "opsec": "passive",
+    "opsecNote": "Verybin is zero-knowledge — text is AES-encrypted in the browser and the decryption key lives in the URL fragment, so opening a link decrypts locally and nothing is sent in the clear. Open unknown links in a sandbox in case the decoded content is malicious, and never paste a target's data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An open-source PrivateBin instance; the mechanism is publicly auditable, but you must trust the operator not to tamper with the served JavaScript. Pastes can be set to expire or burn-after-reading.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "verybin.com"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/verybin.md"
   },
   {
@@ -50267,49 +50295,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/totalcraigsearch.md"
-  },
-  {
-    "id": "totalcraigsearch-searches-all-regions",
-    "name": "TotalCraigSearch (Searches All Regions)",
-    "description": "OSINT tool: TotalCraigSearch (Searches All Regions).",
-    "url": "http://www.totalcraigsearch.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "classifieds"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "totalcraigsearch"
-    ],
-    "_file": "library/tools/dating-classifieds/totalcraigsearch-searches-all-regions.md"
   },
   {
     "id": "trademe-new-zealand",
@@ -134617,42 +134602,6 @@
     "_file": "library/tools/image-video-face/cleanup-pictures.md"
   },
   {
-    "id": "clip-blast",
-    "name": "Clip Blast",
-    "description": "OSINT tool: Clip Blast.",
-    "url": "http://www.clipblast.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "video-search-and-other-video-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/clip-blast.md"
-  },
-  {
     "id": "clipconverter-cc",
     "name": "clipconverter.cc",
     "description": "Use when you need to download/convert an online video for offline frame-by-frame analysis or preservation — a converter, not a search tool.",
@@ -158784,48 +158733,54 @@
   {
     "id": "landmark-toolpie-com",
     "name": "landmark.toolpie.com",
-    "description": "OSINT tool: landmark.toolpie.com.",
+    "description": "Use when you have an `image` showing a recognizable landmark and want to identify it — returns the landmark's name and `geolocation`/`address` from ~50,000 known sites.",
     "url": "https://landmark.toolpie.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a famous natural or architectural landmark in a photo to geolocate where it was taken.",
     "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
       "geolocation",
       "address"
     ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool; no account or payment required.",
+    "opsec": "active",
+    "opsecNote": "You must upload the image to Toolpie's server for analysis, so the photo (and any embedded metadata/faces) leaves your control and may be retained. Strip EXIF and crop to the landmark before uploading, and use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free third-party recognition service of unknown provenance; useful for a first guess but its matches are model outputs that must be visually confirmed.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "age-toolpie-com",
       "car-vehicle-model-recognition-online",
       "face-comparison-by-toolpie"
     ],
+    "aliases": [
+      "Toolpie landmark recognition"
+    ],
+    "tags": [
+      "mapsandlocationsites",
+      "Maps & Location Related Sites",
+      "geolocation"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/landmark-toolpie-com.md"
   },
   {
@@ -208460,37 +208415,51 @@
   {
     "id": "zintro",
     "name": "Zintro",
-    "description": "OSINT tool: Zintro.",
+    "description": "Use when you have a `name` and want to check for an expert/consultant profile — Zintro is an expert-network marketplace whose profiles sometimes surface a subject's specialty and bio.",
     "url": "https://www.zintro.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Finding whether a subject markets themselves as a paid expert/consultant, and what specialty and background they claim.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to join and create/search as an expert; clients pay per research project. Full directory browsing is largely gated behind an account.",
+    "opsec": "passive",
+    "opsecNote": "Public Zintro profiles are best reached via search engines rather than logging in; logged-in browsing may leave a footprint on a two-sided marketplace. Use a sock-puppet account if you need to search inside the platform, and do not contact the expert.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A legitimate expert-network / market-research marketplace. Profiles are self-authored marketing bios, so claims of expertise and employment are unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Zintro expert network",
+      "zintro.com"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "professional"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/people-search/zintro.md"
   },
   {
@@ -238319,35 +238288,41 @@
   {
     "id": "ice-patrol",
     "name": "ICE Patrol",
-    "description": "OSINT tool: ICE Patrol.",
+    "description": "Use when you have a `name` or `employer-org` and want to check WikiLeaks' 2018 scrape of ~9,000 US ICE-linked LinkedIn profiles — returns job, location and school details.",
     "url": "https://ice.wikileaks.org/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up whether a person appears in the 2018 ICEPatrol dataset of US Immigration & Customs Enforcement staff, searchable by name/location/employer/school.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to search; no account. A static 2018 snapshot, not maintained or updated.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a published archive; queries are not attributed to your subject. The data names real individuals scraped from LinkedIn — handle as sensitive PII, and note that hosting/availability is intermittent (WikiLeaks infrastructure returns errors at times).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Published by WikiLeaks from data originally collected by researcher Sam Lavigne from public LinkedIn profiles. The source profiles were public, but the dataset is a frozen 2018 scrape and may be stale or contain mismatches.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "akp-email-database",
       "dnc-email-database",
@@ -238358,6 +238333,18 @@
       "wikileaks",
       "wikileaks-search"
     ],
+    "aliases": [
+      "ICEPatrol",
+      "WikiLeaks ICE database"
+    ],
+    "tags": [
+      "public-records",
+      "wikileaks",
+      "us"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ice-patrol.md"
   },
   {
@@ -342055,38 +342042,39 @@
   {
     "id": "the-twitter-stream-grab",
     "name": "The Twitter Stream Grab",
-    "description": "Full archives of tweets in JSON for a particular month (from 2011, but some months are not available).",
+    "description": "Use when you have a `username` and want historical tweets — Internet Archive's monthly JSON dumps of the public Twitter stream (from 2011), searchable/parseable offline.",
     "url": "https://archive.org/details/twitterstream",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Recovering a subject's older public tweets from Internet Archive's monthly Twitter-stream JSON archives after deletion or account loss.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to download from the Internet Archive; no account needed. Coverage is partial — some months are missing and the archive largely predates Twitter's API lockdown.",
+    "opsec": "passive",
+    "opsecNote": "You download static archive files from archive.org and analyse them offline, so nothing touches Twitter/X or notifies the target. The files are huge; work locally. Handle any personal data found responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Hosted by the Internet Archive from the historical Twitter \"spritzer/streaming\" sample. Authentic archival data, but it is a 1% sample for many periods and not a complete record of any account.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-org",
       "internet-archive",
@@ -342100,6 +342088,18 @@
       "web-archive-org",
       "web-archive-org-2"
     ],
+    "aliases": [
+      "Twitter Stream Grab",
+      "archive.org twitterstream"
+    ],
+    "tags": [
+      "Social Media",
+      "Twitter",
+      "archive"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/the-twitter-stream-grab.md"
   },
   {
@@ -364511,13 +364511,13 @@
   {
     "id": "reverse-genie-license-plate-search",
     "name": "Reverse Genie (License Plate Search)",
-    "description": "OSINT tool: Reverse Genie (License Plate Search).",
+    "description": "Use when you have a US `vehicle-plate` and want to try to tie it to an owner — a free front-end that funnels toward name/address results, mostly via paid broker upsells.",
     "url": "https://www.reversegenie.com/plate.php",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "A free starting point for US license-plate lookups, understanding that real owner data usually sits behind a paid data-broker handoff.",
     "selectorsIn": [
       "vehicle-plate",
       "vin"
@@ -364526,33 +364526,41 @@
       "name",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The search form is free, but actual owner name/address results are typically gated behind a third-party paid data-broker report the site refers you to.",
+    "opsec": "active",
+    "opsecNote": "You submit the target's plate to a commercial lookup portal that logs the query and routes you to data brokers; brokers may retain your search and require an account/payment. DMV-sourced owner data is protected under the US DPPA — only query plates you have a lawful reason to look up, and use a sock-puppet browser.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A lead-generation lookup aggregator, not an authoritative DMV source. Results come from downstream brokers of varying quality; treat any name/address as unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "reverse-genie",
       "reverse-genie-lookup",
       "reversegenie"
     ],
+    "aliases": [
+      "Reverse Genie plate lookup"
+    ],
+    "tags": [
+      "vehicle",
+      "license-plate"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/reverse-genie-license-plate-search.md"
   },
   {

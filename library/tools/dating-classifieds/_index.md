@@ -105,7 +105,6 @@ kind: group-index
 - **`tantan`** (high) — Use when an East-Asia / Chinese-diaspora subject may use a Tinder-style swipe app — surface a profile photo, age, and approximate location v
 - **`the-west-classifieds-australia`** (medium) — Use when you have a `name` or `phone` tied to Western Australia and want ads, notices or listings they posted — returns contact `phone`, `ad
 - **`tinder`** (high) — Use when a subject likely uses the dominant swipe-dating app — surface a recent photo, age, approximate location, and bio via geolocation-ba
-- **`totalcraigsearch-searches-all-regions`** (medium) — OSINT tool: TotalCraigSearch (Searches All Regions).
 - **`totalcraigsearch`** (high) — Use when you want to search Craigslist across many cities/states at once for a subject's listings, alias, or distinctive item — without chec
 - **`trademe-new-zealand`** (medium) — Use when you have a `username`/`name` tied to New Zealand and want their marketplace footprint — returns a member's listings, feedback, join
 - **`tradingpost-australia`** (medium) — Classified advertisements-related website that provides regional services

@@ -600,7 +600,7 @@ kind: group-index
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
 - **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li
-- **`the-twitter-stream-grab`** (medium) — Full archives of tweets in JSON for a particular month (from 2011, but some months are not available).
+- **`the-twitter-stream-grab`** (medium) — Use when you have a `username` and want historical tweets — Internet Archive's monthly JSON dumps of the public Twitter stream (from 2011), 
 - **`the-visualized`** (medium) — visualize profile tweets to see the most popular from the last month; get info about the use of a particular hashtag (popular tweets, relate
 - **`thread-reader`** (high) — Use when you have an X/Twitter thread `social-profile` URL and want it as one readable, preservable page — returns the full unrolled thread 
 - **`threads-net`** (high) — Use when you have a `username` (usually the subject's Instagram handle) and want their Threads posts, bio and network — returns `social-prof
