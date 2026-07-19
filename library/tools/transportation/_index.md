@@ -105,7 +105,6 @@ kind: group-index
 - **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
 - **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.
 - **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
-- **`janes-all-the-world-s-aircraft-yearbook`** (medium) — Aviation-related website that offers a search of the global database of aircraft types
 - **`janes-fighting-ships-yearbook`** (medium) — Maritime-related website that offers a search of the global database of naval vessel types
 - **`kayak-travel-search-engine`** (low) — Use when you have a route/date and want to test whether a claimed trip was feasible — returns flights, schedules, and prices to corroborate 
 - **`kelley-blue-book-for-cars-united-states`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s

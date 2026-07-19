@@ -202,7 +202,7 @@ kind: group-index
 - **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
 - **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
 - **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
-- **`corporate-information`** (medium) — OSINT tool: Corporate Information.
+- **`corporate-information`** (medium) — Use when you have a company `name` and want a consolidated financial/company profile — returns employer-org details, address and executive n
 - **`corporationwiki`** (medium) — Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and 
 - **`corporative-registry-catalog`** (medium) — worldwide catalog of business registries (63 countries)
 - **`corrections-com-inmate-locaton-links`** (high) — Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links th
@@ -302,7 +302,6 @@ kind: group-index
 - **`extremist-groups`** (low) — OSINT tool: Extremist Groups.
 - **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
 - **`ezilon`** (medium) — OSINT tool: Ezilon.
-- **`factiva`** (medium) — OSINT tool: Factiva.
 - **`familyecho-com`** (medium) — Use when you have gathered several relatives (`name`/`associate`) and want a free workspace to build and visualise the family tree — returns
 - **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 
 - **`familysearch-deaths-and-burials-1816-1980-australia`** (high) — Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/buria
@@ -460,7 +459,7 @@ kind: group-index
 - **`idealista-com`** (high) — Use when you have an `address` or area and want property listings tied to it in Spain, Italy, or Portugal — returns listing photos, features
 - **`identitynumber-org`** (high) — Use when you have a South African `name` or ID number (`document-id`) and want identity verification plus genealogy/death records — returns 
 - **`ifa-org-uk`** (high) — Use when you have an accountant's `name` and want to verify UK IFA membership/practising status — returns employer-org and address of the pr
-- **`illinois-inmate-search`** (medium) — Illinois past and present inmate search
+- **`illinois-inmate-search`** (medium) — Use when you have a `name`, DOB or IDOC number and want an Illinois prison custody record — returns custody status, facility location, dates
 - **`illinois-public-salaries`** (medium) — OSINT tool: Illinois Public Salaries.
 - **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
 - **`ilo-world-employment-and-social-outlook-trends`** (low) — OSINT tool: ILO World Employment and Social Outlook Trends.

@@ -216,7 +216,7 @@ kind: group-index
 - **`greynoise-intelligence`** (low) — OSINT tool: GreyNoise Intelligence.
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`h3x-cctv`** (low) — A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras
-- **`hacker-target`** (medium) — Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more
+- **`hacker-target`** (medium) — Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hos
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
 - **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).

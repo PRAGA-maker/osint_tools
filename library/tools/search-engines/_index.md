@@ -471,7 +471,7 @@ kind: group-index
 - **`metabot-ru-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Website related to movie and TV ratings
 - **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`metager-meta-search-engine`** (medium) — Meta-search engine yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
 - **`metager-privacy-protected-search`** (medium) — OSINT tool: MetaGer: Privacy Protected Search.
 - **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke

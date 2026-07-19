@@ -24,12 +24,12 @@ kind: group-index
 - **`opsec-investigator-tooling/`** — 565 skill(s) below.
 - **`people-search/`** — 274 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
-- **`public-records/`** — 1113 skill(s) below.
+- **`public-records/`** — 1112 skill(s) below.
 - **`search-engines/`** — 932 skill(s) below.
 - **`social-networks/`** — 885 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 227 skill(s) below.
+- **`transportation/`** — 226 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
 

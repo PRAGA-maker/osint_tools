@@ -74713,14 +74713,14 @@
   },
   {
     "id": "hacker-target",
-    "name": "Hacker Target",
-    "description": "Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more",
+    "name": "HackerTarget",
+    "description": "Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hosting infrastructure.",
     "url": "https://hackertarget.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-stop web recon on a domain or IP — WHOIS, DNS, reverse IP (co-hosted sites), reverse DNS, traceroute and more from a browser or API.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -74729,37 +74729,42 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web tools and a free API tier (daily query limits); paid membership raises limits and unlocks the full toolset. The free tier is enough for ad-hoc recon.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "HackerTarget queries the target's public infrastructure (DNS/WHOIS/reverse-IP) from ITS servers, not yours — so the lookup isn't attributable to your IP. This is passive recon; it doesn't probe the subject's own devices. Still, treat active scanning tools (port/URL scans) with care and authorization.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established, widely used web-recon service; results mirror authoritative DNS/WHOIS data, so reliability tracks the underlying registries.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "hacker-target-reverse-dns",
+      "hackertarget-com"
+    ],
+    "aliases": [
+      "hackertarget.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "dns-recon"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hacker-target-reverse-dns",
-      "hackertarget-com",
-      "online-tool-to-extract-links-from-any-web-page"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hacker-target.md"
   },
   {
@@ -142374,41 +142379,52 @@
   {
     "id": "imgops",
     "name": "ImgOps",
-    "description": "Fast multi-engine reverse image analysis from one entry point",
+    "description": "Use when you have an `image` and want to run it through many reverse-search and analysis engines at once — returns pivot links to matches, metadata and forensic tools.",
     "url": "https://imgops.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "reverse-media-search"
     ],
-    "bestFor": "Fast multi-engine reverse image analysis from one entry point",
-    "input": "Image URL, uploaded file, or pasted image",
-    "output": "Pivot links and results across reverse-search and image-analysis engines",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A single launchpad that fans one image out to dozens of reverse-image, EXIF and forensic services.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account. It links out to third-party engines, some of which have their own limits.",
     "opsec": "active",
-    "opsecNote": "Routes images to third-party services, which may log content and request metadata.",
+    "opsecNote": "ImgOps forwards your image (or its URL) to many third-party services — each may log the image and your request. Treat this as active/exposed — don't submit sensitive or case-confidential imagery you don't want cached by outside providers; strip/duplicate first if needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing, well-known OSINT convenience layer; it doesn't hold data itself, just routes to reputable engines, so trust rests on those downstream services.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "imgops.com"
+    ],
+    "tags": [
+      "reverse-image-search",
+      "exif",
+      "image-forensics",
+      "multi-engine"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/reverse-media-search/imgops.md"
   },
   {
@@ -168371,46 +168387,52 @@
   },
   {
     "id": "telegram-channels",
-    "name": "Telegram Channels",
-    "description": "OSINT tool: Telegram Channels.",
+    "name": "Telegram Channels (telegramchannels.me)",
+    "description": "Use when you have a `username`, keyword or topic and want to discover public Telegram channels/groups — returns social-profile links to matching Telegram channels.",
     "url": "https://telegramchannels.me",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "A searchable catalog/directory of public Telegram channels and groups by keyword, category or name.",
     "selectorsIn": [
       "username",
-      "phone"
+      "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the channel catalog; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a third-party directory is passive — it doesn't touch Telegram accounts or the subject. But once you OPEN a channel inside Telegram, viewing/joining is tied to your Telegram identity; use a sock-puppet Telegram account for that step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party community catalog of Telegram channels; listings are user/crowd-submitted, so coverage is partial and unofficial.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "telegramchannels-me"
     ],
+    "aliases": [
+      "telegramchannels.me"
+    ],
+    "tags": [
+      "telegram",
+      "channel-directory"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-channels.md"
   },
   {
@@ -224831,37 +224853,55 @@
   {
     "id": "corporate-information",
     "name": "Corporate Information",
-    "description": "OSINT tool: Corporate Information.",
+    "description": "Use when you have a company `name` and want a consolidated financial/company profile — returns employer-org details, address and executive names.",
     "url": "http://www.corporateinformation.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Pulling a consolidated company profile (financials, address, executives) for a business tied to your subject.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free company snapshots (profiles across ~46,000 companies worldwide); a free registration and paid research reports unlock deeper financials. Basic profile browsing is free.",
+    "opsec": "passive",
+    "opsecNote": "Querying a company-research portal, not the subject — passive, no notification. A free login may be prompted for fuller data; use a sock-puppet email.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Wright Investors' Service (a long-running financial-data firm); company data is compiled from filings/providers — reliable at the profile level, corroborate specifics.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "corporateinformation.com",
+      "Wright Investors Service"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "financials",
+      "business-registry"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/corporate-information.md"
   },
   {
@@ -230285,42 +230325,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/ezilon.md"
-  },
-  {
-    "id": "factiva",
-    "name": "Factiva",
-    "description": "OSINT tool: Factiva.",
-    "url": "https://global.factiva.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/factiva.md"
   },
   {
     "id": "familyecho-com",
@@ -238844,51 +238848,59 @@
   },
   {
     "id": "illinois-inmate-search",
-    "name": "Illinois Inmate Search",
-    "description": "Illinois past and present inmate search",
-    "url": "http://www2.illinois.gov/IDOC/OFFENDER/Pages/InmateSearch.aspx",
+    "name": "Illinois Inmate Search (IDOC)",
+    "description": "Use when you have a `name`, DOB or IDOC number and want an Illinois prison custody record — returns custody status, facility location, dates and a photo.",
+    "url": "https://idoc.illinois.gov/offender/inmatesearch.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a person is or was in Illinois state prison and locating them by facility, with custody dates and a photo.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob",
+      "document-id"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "address",
+      "physical-description",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public Illinois DOC search; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a public government corrections database about a person's record — passive, no notification to the subject, no login. Sensitive personal data; handle results responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Illinois Department of Corrections; the authoritative source for Illinois state-prison custody records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "illinois"
     ],
+    "aliases": [
+      "IDOC inmate search",
+      "Illinois Individual in Custody Search"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "corrections",
+      "inmate-search"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/illinois-inmate-search.md"
   },
   {
@@ -291131,24 +291143,30 @@
   {
     "id": "metager-meta-search-engine",
     "name": "MetaGer Meta Search Engine",
-    "description": "Meta-search engine yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
+    "description": "Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Google may personalize away.",
     "url": "https://metager.de",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A privacy-focused metasearch that blends several engines' results, useful as an unpersonalized second pass and for German/European coverage.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search (run by the non-profit SUMA-EV); an optional paid membership removes ads and adds features, but search itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "MetaGer is built for privacy — it proxies queries to underlying engines and offers an anonymizing \"open anonymously\" proxy for opening results, so your searches and clicks aren't tied to your identity the way a logged-in Google session is. Passive toward any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by SUMA-EV, a German non-profit; a long-standing, reputable privacy metasearch.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -291157,15 +291175,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "metager.de",
+      "MetaGer"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "meta-mega-search-tools"
+      "meta-mega-search-tools",
+      "metasearch",
+      "privacy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/metager-meta-search-engine.md"
   },
   {
@@ -361938,51 +361962,6 @@
       "janes-fighting-ships-yearbook"
     ],
     "_file": "library/tools/transportation/jane-s-defence-land-platforms-yearbook.md"
-  },
-  {
-    "id": "janes-all-the-world-s-aircraft-yearbook",
-    "name": "Janes All The World’s Aircraft Yearbook",
-    "description": "Aviation-related website that offers a search of the global database of aircraft types",
-    "url": "https://www.ihs.com/products/janes-worlds-aircraft-development.html",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "his-piers",
-      "jane-s-defence-land-platforms-yearbook",
-      "janes-fighting-ships-yearbook"
-    ],
-    "_file": "library/tools/transportation/janes-all-the-world-s-aircraft-yearbook.md"
   },
   {
     "id": "janes-fighting-ships-yearbook",
