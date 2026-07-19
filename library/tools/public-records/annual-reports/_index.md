@@ -7,7 +7,7 @@ kind: group-index
 # public-records/annual-reports
 
 ## Skills here
-- **`annualreports-com`** (medium) — Locating and downloading public company annual reports
+- **`annualreports-com`** (low) — Use when you have a public-company `employer-org` name or ticker and want its annual/proxy reports — returns downloadable filings naming off
 - **`international-registries`** (medium) — Use when you have an `employer-org` in a foreign jurisdiction and want the official company registry to verify it — returns `employer-org`, 
 - **`public-register-online`** (medium) — Use when you have a company name and want its published annual reports — returns employer-org financial/annual reports to read directors, ad
 - **`public-register-s-annual-report-service`** (medium) — Browsing annual reports for US public companies alphabetically

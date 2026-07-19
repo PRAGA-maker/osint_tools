@@ -272,7 +272,7 @@ kind: group-index
 - **`sondehub`** (low) — Use when you have a radiosonde/amateur-balloon serial or a `geolocation` and want live telemetry and predicted landing points — returns `geo
 - **`spot`** (medium) — Use when you have a `geolocation` region plus a described scene and want candidate coordinates matching that description in OpenStreetMap — 
 - **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
-- **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
+- **`street-art-cities`** (medium) — Use when you have a photo of a mural/street-art in the background and want its `geolocation` — a crowdsourced world map of geotagged street 
 - **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..
 - **`sunearthtools-com`** (medium) — Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun 
 - **`surging-seas-risk-zone-map`** (medium) — Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocati

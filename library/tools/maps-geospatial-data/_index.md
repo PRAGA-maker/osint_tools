@@ -19,7 +19,6 @@ kind: group-index
 - **`arcgis-wildfire-map`** (medium) — OSINT tool: ArcGIS Wildfire Map.
 - **`archieinitiative-com`** (medium) — OSINT tool: archieinitiative.com.
 - **`atlas-co`** (medium) — OSINT tool: atlas.co.
-- **`awesome-maps-ukraine`** (medium) — OSINT tool: awesome-maps-ukraine.
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.

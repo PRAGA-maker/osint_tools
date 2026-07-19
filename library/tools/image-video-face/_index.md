@@ -75,7 +75,6 @@ kind: group-index
 - **`crunchyroll`** (high) — Use when you have a `username` and want to check for a matching anime-streaming profile — returns a `social-profile` (public display name, a
 - **`dacast`** (high) — Use when you encounter a live/embedded video stream and want to identify its host — Dacast is a B2B streaming platform with no public people
 - **`dailymotion-com`** (high) — Use when you want to find videos of or uploaded by a person on Dailymotion — returns videos, channels, and profile info to mine for faces, l
-- **`dailymotion`** (medium) — OSINT tool: DailyMotion.
 - **`deep-image-ai`** (high) — Use when you need to upscale, denoise, or sharpen a low-quality photo of a missing person before reverse-image or face search — returns an e
 - **`deepfaceui-github-com`** (high) — Use when you have two face photos and want a local, offline same-person comparison/verification score — returns a match verdict and similari
 - **`deepfind-me-2`** (high) — Use when you need to confirm or geolocate a place by comparing satellite and street-view imagery side by side — returns aerial/street imager

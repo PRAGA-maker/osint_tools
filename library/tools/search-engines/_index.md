@@ -158,7 +158,7 @@ kind: group-index
 - **`clicklaw`** (low) — Use when you need plain-language British Columbia / Canadian legal context and want to understand a process or your rights — returns curated
 - **`cloud-bucket-search-engine`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want exposed cloud storage — returns public S3/Azure/GCS bucket listings and file
 - **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)
-- **`cloudflare-radar`** (medium) — OSINT tool: Cloudflare Radar.
+- **`cloudflare-radar`** (low) — Use when you have a `domain` or `ip-address` and want internet-intelligence on it — returns domain rankings, traffic/AS data, URL-scan resul
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
 - **`cnn`** (low) — OSINT tool: CNN.
 - **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links

@@ -155,7 +155,7 @@ kind: group-index
 - **`my-life-people-search`** (high) — Use when you have a `name` for a US subject and want an aggregated profile with a "reputation" angle — returns age, address history, phones,
 - **`mylife-compilation-and-search-engine`** (high) — Use when you have a US `name` and want an aggregated profile with address, phone, age and relatives — returns contact and background leads, 
 - **`namecheckerr-com`** (medium) — Use when you have a `username` and want to see where that handle is already taken across social platforms (and as a domain) — returns which 
-- **`national-speakers-association`** (medium) — OSINT tool: National Speakers Association.
+- **`national-speakers-association`** (low) — Use when you have a `name` of a US professional/keynote speaker and want their member profile — returns bio, topics, location and credential
 - **`naukri-india`** (medium) — Use when you have a `name` for an India-based subject and want employment/CV context — returns `employer-org`, skills and career history fro
 - **`netbootcamp-s-people-tool`** (high) — Use when you have a `name` (or screen name / phone / address) and want one console that fires the query into dozens of US people-search and 
 - **`neutrosint`** (high) — Use when you have an `email` or `username` and want to confirm whether it exists as a Proton Mail address (and get its PGP key-creation date
