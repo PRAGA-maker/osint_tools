@@ -7,7 +7,7 @@ kind: group-index
 # dating-classifieds
 
 ## Skills here
-- **`ad-mart-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`ad-mart-classified-ads-united-kingdom`** (medium) — Use when you have a `name`/`username` or item and want UK classified-ad activity — now UK Classifieds; returns ads exposing seller `phone`/l
 - **`admireme-vip`** (medium) — OSINT tool: admireme.vip.
 - **`adpost-com-worldwide`** (medium) — Classified advertisements-related website that provides regional services
 - **`adultfriendfinder`** (medium) — Use when you have a `username`, `image`, or rough `geolocation` and want to check whether a subject maintains an adult-dating profile — sear

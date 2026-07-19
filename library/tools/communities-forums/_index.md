@@ -31,7 +31,7 @@ kind: group-index
 - **`answers-com`** (low) — OSINT tool: Answers.com.
 - **`aol-travel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`arabian-business-news-middle-east-english-language`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
-- **`arrse-co-uk`** (medium) — OSINT tool: arrse.co.uk.
+- **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (medium) — Networking website for new and expecting parents
 - **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
 - **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -39,11 +39,10 @@ kind: group-index
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Real estate investors networking platform
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
-- **`bing-creations`** (medium) — News, articles, and guides related to technology, business, health, and entertainment
 - **`blackplanet`** (medium) — Community networking website
 - **`blogger`** (medium) — Service by Google for hosting and publishing blogs
 - **`bloglovin`** (medium) — Website related to social networking and blogging
-- **`bloomberg-business-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
+- **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
 - **`boards-ie`** (medium) — OSINT tool: boards.ie.
 - **`bodybuilding-com`** (medium) — Forum related to health, wellness, and/or fitness
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website

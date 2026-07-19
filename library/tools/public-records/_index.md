@@ -110,7 +110,7 @@ kind: group-index
 - **`bizeurope`** (medium) — OSINT tool: Bizeurope.
 - **`biznar-business-search-engines`** (medium) — Use when you have a `name` or `employer-org` and want business/deep-web sources searched in parallel — returns `employer-org` context and `s
 - **`bizportal-gov-za`** (high) — Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and direc
-- **`bizwiki-business-wiki-search-united-states`** (medium) — Business-related search engine that searches using company name and location
+- **`bizwiki-business-wiki-search-united-states`** (medium) — Use when you have a US business `name` and a location and want its listing — a free crawler-built directory; returns `employer-org` details 
 - **`blockint-nl`** (high) — Use when you have a company or person `name` and want to trace ultimate beneficial owners (UBOs) across EU corporate registers — returns a c
 - **`bloomberg-com`** (high) — Use when you have a company `name`/ticker or an `employer-org` and want executives, filings-level corporate data and officer profiles — retu
 - **`bloomberg`** (medium) — OSINT tool: Bloomberg.
@@ -529,7 +529,6 @@ kind: group-index
 - **`katrina-spending-search`** (high) — Use when you have a `name` or `employer-org` and want to check Hurricane Katrina federal-aid/contract recipients — returns recipient `name`,
 - **`kmle-medical-dictionary-korean`** (medium) — Korean Medical Library Engine: academic-related search engine focusing on medicine
 - **`knoema`** (low) — OSINT tool: Knoema.
-- **`knowledge-guide-to-international-company-registration`** (medium) — OSINT tool: Knowledge guide to international company registration.
 - **`koreabr-com`** (high) — Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-cre
 - **`ky-state-salary-2019`** (medium) — Use when you have a surname and suspect a Kentucky state-government job — returns employer-org (cabinet/department) and 2019 salary to confi
 - **`la-county-ca-restaurant-health-violations`** (medium) — OSINT tool: LA County CA Restaurant Health Violations.
@@ -735,7 +734,7 @@ kind: group-index
 - **`osint-hub-fr`** (medium) — Use when investigating a France-linked subject and you need French-focused tools, sources and methods — a curated directory pointing to othe
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Bulgarian OSINT tools list (regional registries and sources).
-- **`osti-science-cinema-search`** (medium) — Multi-media search engine focusing on videos in the OSTI database related to science
+- **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
 - **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
 - **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
 - **`pa-perry-county-2017-compensation-search-and-report`** (medium) — OSINT tool: PA Perry County 2017 Compensation Search and Report.

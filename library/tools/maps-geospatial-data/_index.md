@@ -32,7 +32,6 @@ kind: group-index
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
 - **`digitaldigging-org`** (medium) — OSINT tool: digitaldigging.org.
 - **`digitalglobe`** (medium) — OSINT tool: DigitalGlobe.
-- **`disputed-territories`** (medium) — OSINT tool: Disputed Territories.
 - **`douwe-com`** (medium) — OSINT tool: douwe.com.
 - **`earth`** (medium) — OSINT tool: Earth.
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
@@ -125,7 +124,7 @@ kind: group-index
 - **`species-plus`** (low) — Centralized website with vulnerable species information.
 - **`strava`** (low) — Social media fitness app with exercise map based on users' GPS data.
 - **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
-- **`terra-server`** (medium) — OSINT tool: Terra server.
+- **`terra-server`** (medium) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to downlo
 - **`tfl-jamcams`** (medium) — OSINT tool: TfL JamCams.
 - **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag

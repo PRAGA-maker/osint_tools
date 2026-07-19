@@ -24180,44 +24180,53 @@
   },
   {
     "id": "arrse-co-uk",
-    "name": "arrse.co.uk",
-    "description": "OSINT tool: arrse.co.uk.",
+    "name": "ARRSE (Army Rumour Service)",
+    "description": "Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts, `social-profile` history, and community leads.",
     "url": "https://www.arrse.co.uk/community/forums/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a large British-military community forum for a member's posts, handle history, and military/regimental context.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; registration/login required to post and to see some content.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Registering or posting is active and leaves a footprint in a tight-knit, security-aware community — use a sock-puppet account, never engage the subject, and expect members to notice unusual accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established, well-known British Army community forum; genuine user content, but pseudonymous, opinionated, and full of in-jokes/rumour — treat posts as leads.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Army Rumour Service",
+      "ARRSE"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "uk",
+      "military"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/arrse-co-uk.md"
   },
   {
@@ -24519,58 +24528,6 @@
     "_file": "library/tools/communities-forums/bigsoccer-com.md"
   },
   {
-    "id": "bing-creations",
-    "name": "Bing Creations",
-    "description": "News, articles, and guides related to technology, business, health, and entertainment",
-    "url": "http://www.bing.com/creations",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bing",
-      "bing-images",
-      "bing-ip-search",
-      "bing-maps",
-      "bing-microsoft-translator",
-      "bing-news",
-      "bing-translate",
-      "bing-videos",
-      "bing-webmaster-tools",
-      "see-it-search-it"
-    ],
-    "_file": "library/tools/communities-forums/bing-creations.md"
-  },
-  {
     "id": "blackplanet",
     "name": "Blackplanet",
     "description": "Community networking website",
@@ -24697,24 +24654,33 @@
   {
     "id": "bloomberg-business-news",
     "name": "Bloomberg Business News",
-    "description": "Searchable website for a major newspaper covering national and local events in the United States",
-    "url": "http://www.bloomberg.com",
+    "description": "Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to companies, deals, and events (metered paywall).",
+    "url": "https://www.bloomberg.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding authoritative business/financial news mentions of a person or company (executives, deals, filings, controversies).",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Some articles are free; most sit behind a metered/subscription paywall. Headlines and snippets are usually visible free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — reading news transmits nothing about a subject. To bypass a paywall use archives/cache rather than logging in; a login ties reading to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Bloomberg is a major, professionally edited financial-news organisation; reporting is authoritative and fact-checked (cite the article, verify claims against primary filings).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -24723,21 +24689,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bloomberg",
       "bloomberg-com",
       "bloomberg-public-companies-search",
       "lei-bloomberg-com"
     ],
+    "aliases": [
+      "Bloomberg",
+      "Bloomberg.com"
+    ],
+    "tags": [
+      "toddington",
+      "news-journalism",
+      "business"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/bloomberg-business-news.md"
   },
   {
@@ -45788,41 +45757,53 @@
   {
     "id": "ad-mart-classified-ads-united-kingdom",
     "name": "Ad-Mart Classified Ads (United Kingdom)",
-    "description": "Classified advertisements-related website that provides regional services",
-    "url": "http://ad-mart.co.uk",
+    "description": "Use when you have a `name`/`username` or item and want UK classified-ad activity — now UK Classifieds; returns ads exposing seller `phone`/location and `social-profile` handles.",
+    "url": "https://www.ukclassifieds.co.uk/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching free UK regional classified ads (for-sale, vehicles, services, jobs, pets) for a subject's listings and the contact details they reveal.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "phone",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and post; account optional and free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — browsing/searching public ads sends nothing to the seller. Contacting a seller (call/message) is active and exposes you; never engage the subject. Use a sock-puppet if you must register.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running (18+ years) free UK classifieds platform (ad-mart.co.uk redirects here); user-posted ads, so details are self-reported and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "UK Classifieds",
+      "Ad-Mart"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "uk"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/ad-mart-classified-ads-united-kingdom.md"
   },
   {
@@ -157307,50 +157288,6 @@
     "_file": "library/tools/maps-geospatial-data/digitalglobe.md"
   },
   {
-    "id": "disputed-territories",
-    "name": "Disputed Territories",
-    "description": "OSINT tool: Disputed Territories.",
-    "url": "http://metrocosm.com/disputed-territories-map.html",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "maps"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "metrocosm"
-    ],
-    "_file": "library/tools/maps-geospatial-data/disputed-territories.md"
-  },
-  {
     "id": "douwe-com",
     "name": "douwe.com",
     "description": "OSINT tool: douwe.com.",
@@ -161295,14 +161232,14 @@
   },
   {
     "id": "terra-server",
-    "name": "Terra server",
-    "description": "OSINT tool: Terra server.",
+    "name": "TerraServer",
+    "description": "Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to download high-res; returns imagery for a location.",
     "url": "https://www.terraserver.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing aerial photos, satellite images, and USGS topo maps for a location (free online preview; purchase for downloads/prints).",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -161310,28 +161247,36 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and view imagery online; downloading high-resolution images or prints is paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you view imagery of a location, not a person; nothing reaches any subject. Buying a download ties a purchase to you; for pure viewing, no account is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial imagery reseller (since 1997); the imagery is real and sourced, but it is a paid-download vendor — free access is view/preview only.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TerraServer.com"
+    ],
     "tags": [
-      "maps"
+      "maps",
+      "satellite-imagery",
+      "aerial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/terra-server.md"
   },
   {
@@ -220149,47 +220094,52 @@
   {
     "id": "bizwiki-business-wiki-search-united-states",
     "name": "Bizwiki Business Wiki Search (United States)",
-    "description": "Business-related search engine that searches using company name and location",
-    "url": "http://www.bizwiki.com",
+    "description": "Use when you have a US business `name` and a location and want its listing — a free crawler-built directory; returns `employer-org` details with `address` and `phone`.",
+    "url": "https://www.bizwiki.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free US business-directory lookup by company name and location, returning address, phone, and category.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory; listings are bot-generated. Owners can claim/update listings for free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public, crawler-built business directory, transmitting nothing about a personal target. Relevant only when a subject is tied to a US business.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large US business directory built by an automated crawler; coverage is broad but listings can be stale, auto-generated, or inaccurate — a lead source, not authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Bizwiki"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "company-search"
+      "company-search",
+      "business-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bizwiki-business-wiki-search-united-states.md"
   },
   {
@@ -242522,45 +242472,6 @@
     "_file": "library/tools/public-records/knoema.md"
   },
   {
-    "id": "knowledge-guide-to-international-company-registration",
-    "name": "Knowledge guide to international company registration",
-    "description": "OSINT tool: Knowledge guide to international company registration.",
-    "url": "http://www.icaew.com/en/library/subject-gateways/business-management/company-administration/knowledge-guide-international-company-registration",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "icaew-com"
-    ],
-    "_file": "library/tools/public-records/knowledge-guide-to-international-company-registration.md"
-  },
-  {
     "id": "koreabr-com",
     "name": "koreabr.com",
     "description": "Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-credit portal; free search, paid detailed reports.",
@@ -253539,52 +253450,54 @@
   {
     "id": "osti-science-cinema-search",
     "name": "OSTI Science Cinema Search",
-    "description": "Multi-media search engine focusing on videos in the OSTI database related to science",
-    "url": "http://www.osti.gov/sciencecinema",
+    "description": "Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/videos and their author `associate`/affiliation context.",
+    "url": "https://www.osti.gov/sciencecinema",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding US Department of Energy science videos/talks and the researchers in them via spoken-word (audio-indexed) search.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US DOE (Office of Scientific and Technical Information) service; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a public government multimedia index, transmitting nothing about a subject. Standard government query-logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US DOE Office of Scientific and Technical Information (OSTI); authoritative for the DOE-funded research videos it indexes.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "department-of-energy-patents",
       "doe-data-explorer",
       "us-dept-of-energy-office-of-science-search"
     ],
+    "aliases": [
+      "ScienceCinema"
+    ],
+    "tags": [
+      "toddington",
+      "academic",
+      "government-data"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/osti-science-cinema-search.md"
   },
   {
@@ -276165,37 +276078,51 @@
   {
     "id": "citeseerx",
     "name": "CiteSeerX",
-    "description": "OSINT tool: CiteSeerX.",
-    "url": "http://citeseer.ist.psu.edu",
+    "description": "Use when you have an author `name` and want their academic papers/citations — a free scientific-literature search engine (CS-heavy); returns papers, co-authors (`associate`), and affiliations.",
+    "url": "https://citeseerx.ist.psu.edu/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding an academic's papers, co-authors, and affiliations, especially in computer/information science.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open academic search engine (Penn State); no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you search a public scholarly index, transmitting nothing about the author. Standard host query-logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-standing academic search engine/digital library from Penn State; authoritative for the scholarly documents it indexes (strongest in computer & information science).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CiteSeer",
+      "CiteSeerX"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "academic",
+      "citations"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/citeseerx.md"
   },
   {
@@ -305906,45 +305833,48 @@
   {
     "id": "usa-gov",
     "name": "USA.gov",
-    "description": "The US governments official web portal",
-    "url": "http://www.usa.gov/",
+    "description": "Use as the official gateway to US government services and agencies — a directory/portal to find the right federal/state agency and record system for a lookup, not a people-search itself.",
+    "url": "https://www.usa.gov/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct US government agency, benefit, or records system to pursue an official lookup (vital records, benefits, agency contacts).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official US government portal; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public government directory, transmitting nothing about a subject. It only points you to agencies; any actual record request happens through the linked agency's own channels.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The US federal government's official web portal (GSA); authoritative as a directory of agencies/services, but it is a signpost, not a records database.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "state-local-tribal-gov-page-search",
       "us-data-and-statistics"
     ],
+    "aliases": [
+      "USA.gov"
+    ],
+    "tags": [
+      "toddington",
+      "government",
+      "directory"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/usa-gov.md"
   },
   {
@@ -363978,29 +363908,34 @@
   {
     "id": "openaip-world-aeronautical-database",
     "name": "OpenAIP World Aeronautical Database",
-    "description": "Airspace and airfield intelligence with reusable open data",
+    "description": "Use when you have an airfield/airspace `geolocation` and want aeronautical data — a free open database; returns runway, frequency, navaid, and airspace structure for a location.",
     "url": "https://www.openaip.net/",
     "category": "transportation",
     "path": [
       "transportation",
       "air-traffic-records"
     ],
-    "bestFor": "Airspace and airfield intelligence with reusable open data",
-    "input": "Airfield name, coordinates, or airspace criteria",
-    "output": "Runway, frequency, elevation, navaid, and airspace structure data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Looking up airfields, runways, radio frequencies, navaids, and airspace structure worldwide from free open data.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, community-maintained open aeronautical data; a free account/API key is needed for bulk/API access.",
     "opsec": "passive",
-    "opsecNote": "Static open aviation data retrieval with no live target interaction.",
+    "opsecNote": "Passive — you query a static open aviation dataset, not a person or aircraft; nothing reaches any subject. Registering for API access ties queries to an account; use a research account for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained open aeronautical database used in flight-planning tools; broadly reliable for airspace/airfield structure, but crowd-sourced — verify safety-critical detail against official AIP.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -364008,11 +363943,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OpenAIP"
+    ],
+    "tags": [
+      "aviation",
+      "airspace",
+      "open-data"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/air-traffic-records/openaip-world-aeronautical-database.md"
   },
   {

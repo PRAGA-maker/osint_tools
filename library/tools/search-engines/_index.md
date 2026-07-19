@@ -148,7 +148,7 @@ kind: group-index
 - **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
 - **`chromium-code-search`** (medium) — Code search tool
 - **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
-- **`citeseerx`** (medium) — OSINT tool: CiteSeerX.
+- **`citeseerx`** (medium) — Use when you have an author `name` and want their academic papers/citations — a free scientific-literature search engine (CS-heavy); returns
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
 - **`citizendium`** (medium) — Use when you have a `name` or topic and want an expert-authored encyclopedia entry as a Wikipedia cross-check — returns articles with contri
 - **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
@@ -783,7 +783,7 @@ kind: group-index
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
-- **`usa-gov`** (medium) — The US governments official web portal
+- **`usa-gov`** (medium) — Use as the official gateway to US government services and agencies — a directory/portal to find the right federal/state agency and record sy
 - **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
 - **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
