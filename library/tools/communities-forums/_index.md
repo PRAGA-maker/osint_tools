@@ -195,7 +195,6 @@ kind: group-index
 - **`mamba-ru`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`mashable`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
-- **`mate1-com-website`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`medium`** (low) — OSINT tool: Medium.
 - **`meetic-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
@@ -234,7 +233,7 @@ kind: group-index
 - **`nova-czech-republick`** (medium) — Online articles and news related to business, travel, sports, entertainment, and more
 - **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
 - **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
-- **`onefinestay`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`onefinestay`** (low) — Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listi
 - **`onefootballforum-co-uk`** (medium) — OSINT tool: onefootballforum.co.uk.
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns

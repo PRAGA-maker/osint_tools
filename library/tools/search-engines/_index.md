@@ -65,7 +65,7 @@ kind: group-index
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — OSINT tool: Aol.
 - **`ap`** (low) — OSINT tool: AP.
-- **`app-store-and-itunes-search-engine`** (medium) — OSINT tool: App Store and iTunes search engine.
+- **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
 - **`app-store-custom-search-engine`** (medium) — OSINT tool: App Store Custom Search Engine.
 - **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
 - **`arabo-com`** (medium) — OSINT tool: Arabo.com.
@@ -275,7 +275,7 @@ kind: group-index
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
 - **`foundation-finder`** (medium) — Foundation Centers online foundation directory
 - **`france24`** (low) — OSINT tool: France24.
-- **`fravia-soxoj`** (medium) — "The Art of Searching" - advanced search engine techniques and resources.
+- **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
 - **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`freewareweb`** (medium) — FTP file search engine
@@ -448,7 +448,6 @@ kind: group-index
 - **`loopnet`** (medium) — Commercial real estate listing and research site
 - **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
-- **`lycos-search-engine-uk`** (medium) — Surface web search engine
 - **`lycos`** (low) — OSINT tool: Lycos.
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
 - **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name

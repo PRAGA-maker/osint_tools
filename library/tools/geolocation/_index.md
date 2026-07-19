@@ -208,7 +208,7 @@ kind: group-index
 - **`nga-geoint`** (low) — Use when you need open-source geospatial libraries/datasets (GeoServer plugins, geodata tools) from the US National Geospatial-Intelligence 
 - **`ngdc-bathymetry-map`** (medium) — worldwide detailed interactive bathymetry map
 - **`nyc-crime-map`** (high) — Use when you have a New York City `address` or `geolocation` and want the local crime picture — returns mapped NYPD crime incidents by area,
-- **`ocearch-shark-tracker`** (medium) — Click on a shark on the world map and find out its name, size and travel log.
+- **`ocearch-shark-tracker`** (low) — Use when you want a worked example of live animal-telemetry mapping (tagged sharks/marine animals) — returns per-animal tracks; essentially 
 - **`old-maps-online`** (high) — Use when you have a `geolocation` or place `address` and want historical maps of that spot across time — returns historical map imagery and 
 - **`oldmapsonline`** (medium) — Use when you have a `geolocation` and want historical maps of it — returns georeferenced old maps from libraries worldwide, for dating image
 - **`open-benches`** (medium) — Use when you have a `name` from a memorial-bench inscription and want its location — returns the bench `geolocation`, photo and full inscrip

@@ -50,7 +50,7 @@ kind: group-index
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
 - **`eucanna`** (low) — OSINT tool: EuCanna.
-- **`federal-bureau-of-investigations-value`** (medium) — FBI Records Vault of 6,700 documents and other media
+- **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
 - **`ftse-industry-classification-benchmark-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.

@@ -31672,46 +31672,6 @@
     "_file": "library/tools/communities-forums/match.md"
   },
   {
-    "id": "mate1-com-website",
-    "name": "Mate1.com Website",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://www.mate1.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/mate1-com-website.md"
-  },
-  {
     "id": "medium",
     "name": "Medium",
     "description": "OSINT tool: Medium.",
@@ -33383,26 +33343,33 @@
   },
   {
     "id": "onefinestay",
-    "name": "Onefinestay",
-    "description": "Website related to social networking in the form of travel and accomodations",
+    "name": "onefinestay",
+    "description": "Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listings with photos and neighbourhoods; limited people-search value.",
     "url": "http://www.onefinestay.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing curated luxury short-term rental listings (photos, neighbourhoods, amenities) that may correspond to a property or host of interest.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse listings; booking a stay costs money, but the OSINT value (listing photos, locations) needs no purchase.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public rental listings is passive. Do not contact hosts or make enquiries with your real identity — use a sock puppet if you must interact. Listings intentionally give approximate neighbourhoods, not exact addresses.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A legitimate luxury-rental brand (part of Accor); listing data is genuine marketing content, but it is a booking platform, not a people-search source, so investigative yield is limited.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -33410,15 +33377,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "one fine stay"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "rentals"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/onefinestay.md"
   },
   {
@@ -41942,50 +41912,59 @@
   },
   {
     "id": "federal-bureau-of-investigations-value",
-    "name": "Federal Bureau of Investigations Value",
-    "description": "FBI Records Vault of 6,700 documents and other media",
+    "name": "FBI Records Vault (vault.fbi.gov)",
+    "description": "Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and media from the FBI's public reading room.",
     "url": "https://vault.fbi.gov/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the FBI's public FOIA reading room for declassified records on a person, organisation, or historical event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public U.S. government FOIA reading room; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a U.S. government public records site is passive and touches no target. It's an official .gov site, so use normal browsing hygiene; a sock-puppet session is optional, not required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The FBI's official public document vault; records are authentic government FOIA releases (often redacted). Authoritative, though limited to what has been declassified and published.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vault-fbi-gov",
+      "most-wanted"
+    ],
+    "aliases": [
+      "FBI Vault",
+      "vault.fbi.gov",
+      "FBI Records"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "deep-web-search"
+      "deep-web-search",
+      "foia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fbi-common-fraud-schemes-united-states",
-      "fbi-information-technology-united-states",
-      "most-wanted",
-      "most-wanted-criminal-pages",
-      "sex-offender-registry-websites",
-      "vault-fbi-gov"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/federal-bureau-of-investigations-value.md"
   },
   {
@@ -87416,52 +87395,6 @@
     "_file": "library/tools/domains-ip-infrastructure/analytics/similarweb.md"
   },
   {
-    "id": "simplifica-spain",
-    "name": "Simplifica (Spain)",
-    "description": "Spanish service provider for registering websites and domain addresses",
-    "url": "http://www.simplifica.es",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/simplifica-spain.md"
-  },
-  {
     "id": "single-file",
     "name": "SIngle File",
     "description": "GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file",
@@ -125124,43 +125057,50 @@
   },
   {
     "id": "ocearch-shark-tracker",
-    "name": "Ocearch Shark Tracker",
-    "description": "Click on a shark on the world map and find out its name, size and travel log.",
+    "name": "OCEARCH Shark Tracker",
+    "description": "Use when you want a worked example of live animal-telemetry mapping (tagged sharks/marine animals) — returns per-animal tracks; essentially no people-search value, useful mainly as an OSINT teaching/marine-context tool.",
     "url": "https://www.ocearch.org/tracker/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing live tracks of tagged sharks and marine animals on a world map — a marine-telemetry dataset, not a people-OSINT lookup.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public tracker from the OCEARCH research non-profit; no account required (paid tiers are for donations/support, not access).",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you view published marine-research telemetry; no person or target is involved. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Run by OCEARCH, a legitimate marine-research organisation; the tracking data is genuine scientific telemetry — reliable for what it is (animal movement), which is unrelated to investigating people.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OCEARCH tracker",
+      "Shark Tracker"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "telemetry"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ocearch-shark-tracker.md"
   },
   {
@@ -205098,54 +205038,6 @@
     "_file": "library/tools/people-search/rootsweb.md"
   },
   {
-    "id": "rss-vk-to-rss",
-    "name": "ВКонтакте RSS VK to RSS",
-    "description": "OSINT tool: ВКонтакте RSS VK to RSS.",
-    "url": "https://vk-to-rss.appspot.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "google-maps-update-alerts",
-      "lullar-com-3-appspot-com",
-      "military-grid-reference-system-coordinates",
-      "sentiment140",
-      "snapchat-search-enter-username-here"
-    ],
-    "_file": "library/tools/people-search/rss-vk-to-rss.md"
-  },
-  {
     "id": "scamdigger-com",
     "name": "ScamDigger",
     "description": "Use when you have a `name`, `email`, `phone`, or `ip-address` from a suspected romance/dating scammer and want matching documented scam profiles — returns name, email, phone, image, and address leads.",
@@ -256947,36 +256839,52 @@
   },
   {
     "id": "registrant-directory",
-    "name": "Registrant directory",
-    "description": "OSINT tool: Registrant directory.",
+    "name": "CPSBC Registrant Directory (BC physicians)",
+    "description": "Use when you have a physician's `name` in British Columbia and want to verify their medical registration/licence — returns registration status, class, and practice location.",
     "url": "https://www.cpsbc.ca/public/registrant-directory",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Verifying whether a person is a licensed physician/surgeon in British Columbia and pulling their registration status and practice details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public regulator lookup; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public professional-licensing register is passive and touches no target. No sock puppet needed for a routine public-record check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the College of Physicians and Surgeons of British Columbia (the official medical regulator); registration data is authoritative for licensure status in BC.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CPSBC registrant directory",
+      "BC physician lookup"
+    ],
+    "tags": [
+      "professional-license",
+      "medical",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/public-records/registrant-directory.md"
   },
   {
@@ -271844,36 +271752,52 @@
   },
   {
     "id": "app-store-and-itunes-search-engine",
-    "name": "App Store and iTunes search engine",
-    "description": "OSINT tool: App Store and iTunes search engine.",
+    "name": "App Store and iTunes Search (fnd.io)",
+    "description": "Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app listings, developer names and links.",
     "url": "https://fnd.io/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A web front-end to search Apple's App Store/iTunes catalogue by app or developer, from any browser without iTunes installed.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and browse listings; the apps/media themselves are sold on Apple's stores (fnd just surfaces the catalogue).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a catalogue front-end is passive; the developer/target is not notified. It queries Apple's public catalogue via a third party — use a sock-puppet browser if you want the lookup unattributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "unverified",
+    "trustNote": "A third-party web interface over Apple's App Store/iTunes catalogue; data originates from Apple, but the front-end is community-run and could lag or change.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fnd.io",
+      "fnd App Store search"
+    ],
+    "tags": [
+      "app-store",
+      "itunes",
+      "apple"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/app-store-and-itunes-search-engine.md"
   },
   {
@@ -281551,26 +281475,30 @@
   {
     "id": "fravia-soxoj",
     "name": "FRAVIA (soxoj)",
-    "description": "\"The Art of Searching\" - advanced search engine techniques and resources.",
+    "description": "Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource (\"The Art of Searching\") that improves how you query, not a lookup itself.",
     "url": "https://github.com/soxoj/FRAVIA",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Advanced search-engine querying methodology",
+    "bestFor": "Learning advanced search-engine querying technique (operators, source-finding, \"searchlore\") to locate hard-to-find references on a subject.",
     "selectorsIn": [
       "name"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open resource on GitHub; no account required (a GitHub login only helps if you want to star/fork).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a methodology repo is passive. The OpSec that matters happens when you run the searches it teaches — do those in a sock-puppet browser/search session if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "By soxoj.",
+    "trustNote": "Maintained by soxoj (author of Maigret and other respected OSINT tooling), preserving/extending the late Fravia's \"searchlore\"; a well-regarded, non-commercial methodology source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -281579,28 +281507,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "maigret",
+      "socid-extractor",
+      "username-generation-guide"
+    ],
+    "aliases": [
+      "The Art of Searching",
+      "searchlore",
+      "soxoj FRAVIA"
+    ],
     "tags": [
       "search",
       "methodology",
       "guide"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "1c-database-converter",
-      "awesome-osint-mcp-servers",
-      "counter-osint-guide-for-russians",
-      "gitcolombo",
-      "maigret",
-      "maigret-via-socid-extractor-soxoj-ecosystem",
-      "mailto-analyzer",
-      "marple",
-      "osint-namecheckers-list",
-      "socid-extractor",
-      "username-generation-guide"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/fravia-soxoj.md"
   },
   {
@@ -290067,46 +289991,6 @@
       "lycos-mail-usa"
     ],
     "_file": "library/tools/search-engines/lycos.md"
-  },
-  {
-    "id": "lycos-search-engine-uk",
-    "name": "Lycos Search Engine (UK)",
-    "description": "Surface web search engine",
-    "url": "http://www.lycos.co.uk",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/lycos-search-engine-uk.md"
   },
   {
     "id": "mac-address-lookup",

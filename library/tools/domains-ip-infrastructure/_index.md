@@ -423,7 +423,6 @@ kind: group-index
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`sify-technologies-limited-india`** (medium) — Indian information and communications technology company that provides end to end ICT solutions
 - **`silicon-house-india`** (medium) — India based service provider for registering websites and domain addresses
-- **`simplifica-spain`** (medium) — Spanish service provider for registering websites and domain addresses
 - **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Domain investigation #python tool

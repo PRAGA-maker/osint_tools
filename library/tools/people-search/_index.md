@@ -205,7 +205,6 @@ kind: group-index
 - **`reunion`** (high) — Use when you follow an old Reunion.com people-finder link — the brand is retired and now redirects to MyLife, a US people-search returning `
 - **`rocketreach`** (high) — Use when you have a `name` plus an `employer-org` (or a LinkedIn `social-profile`) and want that person's professional `email` and `phone` —
 - **`rootsweb`** (high) — Use when you have a `name`/surname and want historic genealogy data — user-submitted family trees, surname lists, and archived mailing lists
-- **`rss-vk-to-rss`** (medium) — OSINT tool: ВКонтакте RSS VK to RSS.
 - **`scamdigger-com`** (high) — Use when you have a `name`, `email`, `phone`, or `ip-address` from a suspected romance/dating scammer and want matching documented scam prof
 - **`scotland-landlord-search`** (high) — Use when you have a Scottish rental-property `address` (postcode) or a landlord registration number and want to find who owns/manages it — r
 - **`scylla`** (high) — Use when you have a `username`, `phone`, or `name` and want an all-in-one recon sweep from a local CLI — returns social profiles, geolocatio
