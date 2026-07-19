@@ -136,7 +136,6 @@ kind: group-index
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
-- **`carrot2-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`ceek-meta-search-japan`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
@@ -164,7 +163,7 @@ kind: group-index
 - **`colorado-unclaimed-property-search`** (medium) — Colorados unclaimed property search tool
 - **`comicvine`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
 - **`command-e`** (medium) — Universal search and productivity app
-- **`conservapedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
 - **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
 - **`context-menu-search`** (medium) — Chrome extension allowing users to search for selected text in different search engines using the right click menu.
 - **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
@@ -335,7 +334,7 @@ kind: group-index
 - **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Searchable database of available US government grants
-- **`government-science-portal`** (medium) — Gateway or portal to scientific government information, including research and development results
+- **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
 - **`grayhatwarfare`** (medium) — OSINT tool: GrayhatWarfare.
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
@@ -618,7 +617,7 @@ kind: group-index
 - **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
 - **`ratemyemployer-canada`** (medium) — Website related to employwer ratings
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
-- **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
+- **`ratemyteachers-north-america`** (medium) — Use when you have a teacher's `name` or a school and want to confirm an `employer-org` affiliation and location — returns school/district li
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
 - **`realtor-com-united-states`** (medium) — Use when you have a US `address` or an agent `name` and want property listing history or a real-estate agent's contact/brokerage — returns a
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
@@ -695,8 +694,7 @@ kind: group-index
 - **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.
 - **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
-- **`similarsites-com`** (medium) — Discover websites that are similar to each other
-- **`similarsites`** (low) — OSINT tool: SimilarSites.
+- **`similarsites-com`** (medium) — Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
 - **`sitelike`** (medium) — Website allowing users to search for related or similar sites.
 - **`siteslike`** (low) — OSINT tool: SitesLike.

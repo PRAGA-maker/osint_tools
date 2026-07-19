@@ -70,7 +70,7 @@ kind: group-index
 - **`eships-net`** (low) — OSINT tool: eships.net.
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
 - **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
-- **`europlates-eu`** (medium) — OSINT tool: Europlates.eu.
+- **`europlates-eu`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of origin by matching format and design — returns a `
 - **`exotic-cars-the-largest-photo-collection`** (low) — Use when you have an `image` or `vehicle-plate` of an exotic car and want spotting records — returns dated, geotagged photos of that specifi
 - **`faa-registry`** (low) — OSINT tool: FAA Registry.
 - **`faxvin`** (medium) — OSINT tool: FaxVIN.
@@ -185,7 +185,6 @@ kind: group-index
 - **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
 - **`submarinecablemap-com`** (low) — submarine communications cables map
-- **`surfy`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, 
 - **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
 - **`the-burnsy-vehicle-osint`** (medium) — Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and regi
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)

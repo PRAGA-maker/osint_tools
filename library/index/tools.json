@@ -48459,42 +48459,53 @@
   {
     "id": "okcupid",
     "name": "OkCupid",
-    "description": "OSINT tool: OkCupid.",
+    "description": "Use when you have a `name`, `username` or photo and want to check for a dating profile — returns `social-profile`, `image` and self-reported `physical-description`.",
     "url": "https://www.okcupid.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's OkCupid dating profile (photos, bio, location, self-reported details) once you have a likely handle or are searching a local area.",
     "selectorsIn": [
       "name",
-      "username"
+      "username",
+      "image"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse; premium tiers add filters and incognito. You must create an account to view profiles at all.",
+    "opsec": "active",
+    "opsecNote": "OkCupid is interaction-visible. Viewing a profile can appear in the target's \"visitors\" list, and likes/messages are obviously visible. Always use a dedicated sock-puppet account (fresh email, no real photos, plausible location) and never interact from a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major mainstream dating platform (Match Group). Profiles are self-authored, so content is real-but-unverified; identity, age and location are whatever the user chose to claim.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "okcupid.com"
+    ],
     "tags": [
       "dating"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/okcupid.md"
   },
   {
@@ -70828,59 +70839,13 @@
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [
-      "domainiq-com"
-    ],
+    "relatedTools": [],
     "aliases": [],
     "tags": [],
     "source": "arf-seed",
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/domainiq.md"
-  },
-  {
-    "id": "domainiq-com",
-    "name": "domainiq.com",
-    "description": "OSINT tool: domainiq.com.",
-    "url": "https://www.domainiq.com/reverse_analytics#",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "domainiq"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/domainiq-com.md"
   },
   {
     "id": "domainrecon",
@@ -130150,13 +130115,13 @@
   {
     "id": "webcam-nl-nl",
     "name": "Webcam.nl (NL)",
-    "description": "OSINT tool: Webcam.nl (NL).",
+    "description": "Use when you have a Dutch `geolocation` or `address` and want live public-camera imagery of that spot — returns `image` (live video stills).",
     "url": "https://webcam.nl/live_streaming",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling live public webcam views of Dutch beaches, harbours, traffic routes and tourist spots to corroborate a location or last-known-seen area.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -130164,29 +130129,37 @@
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view; the operator (Unlimited Visions BV) sells camera hardware/installation but streams are hosted free on YouTube with no login.",
+    "opsec": "passive",
+    "opsecNote": "You are watching a public YouTube livestream — nothing is sent to the target and the camera operator cannot tie a view back to you. No sock puppet needed, though a clean browser is still good hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Run by a legitimate Dutch webcam installer (KvK 30163988); streams are genuine live feeds, but framing/coverage is whatever the operator chose to publish — not an official municipal CCTV index.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "nl"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "webcam.nl",
+      "Unlimited Visions webcams"
+    ],
     "tags": [
       "cctv",
-      "webcam"
+      "webcam",
+      "netherlands"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/webcam-nl-nl.md"
   },
   {
@@ -134216,9 +134189,7 @@
     "source": "awesome-osint",
     "lastVerified": "",
     "enrichment": "full",
-    "relatedTools": [
-      "carrot2-meta-search"
-    ],
+    "relatedTools": [],
     "_file": "library/tools/image-video-face/carrot2.md"
   },
   {
@@ -164216,38 +164187,53 @@
   {
     "id": "fediverse-explorer",
     "name": "Fediverse Explorer",
-    "description": "Search Mastodon users by interests",
+    "description": "Use when you have an interest, `name` or `username` and want to find matching Mastodon/fediverse accounts — returns `social-profile`s.",
     "url": "https://fediverse.info/explore/people",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Discovering Mastodon and other fediverse accounts by topic/interest or handle when a subject may have left mainstream networks for the fediverse.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory; no account required to browse. Listings are opt-in profiles that have chosen to be discoverable.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is read-only and does not notify anyone. Note that actually following or interacting with an account from your own fediverse instance is active and visible — stop at viewing unless you use a sock-puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run fediverse onboarding/discovery portal; it only indexes accounts that opted into discovery, so coverage is partial and self-selected.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "followgraph-for-mastodon"
+    ],
+    "aliases": [
+      "fediverse.info",
+      "Fedi explore people"
+    ],
     "tags": [
       "Social Media",
       "Mastodon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/messaging/fediverse-explorer.md"
   },
   {
@@ -275266,49 +275252,6 @@
     "_file": "library/tools/search-engines/carrier-route.md"
   },
   {
-    "id": "carrot2-meta-search",
-    "name": "Carrot2 Meta Search",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
-    "url": "http://search.carrot2.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "carrot2"
-    ],
-    "_file": "library/tools/search-engines/carrot2-meta-search.md"
-  },
-  {
     "id": "catawiki",
     "name": "Catawiki",
     "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
@@ -276560,24 +276503,29 @@
   {
     "id": "conservapedia",
     "name": "Conservapedia",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on the Christain faith",
+    "description": "Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns background and `associate` links.",
     "url": "http://www.conservapedia.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a conservative-Christian-POV encyclopedia entry on a notable political, religious or public figure to surface claimed affiliations and framing.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; editing requires an account but reading does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching are anonymous and leak nothing to any subject. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An openly partisan wiki (self-described American conservative / fundamentalist Christian viewpoint) widely criticised for factual inaccuracy and bias — treat every claim as opinion to verify elsewhere.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -276586,15 +276534,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "conservapedia.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "wiki"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/conservapedia.md"
   },
   {
@@ -284915,42 +284867,53 @@
   },
   {
     "id": "government-science-portal",
-    "name": "Government Science Portal",
-    "description": "Gateway or portal to scientific government information, including research and development results",
-    "url": "http://www.science.gov/",
+    "name": "Government Science Portal (Science.gov)",
+    "description": "Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id` leads.",
+    "url": "https://www.science.gov/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Federating a search across US government science databases to tie a person's name to research, agency affiliations and technical reports.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government meta-search; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A standard federated search over public government databases; the subject is not notified and the query only touches government indexes. Safe to use directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US federal government (CENDI/OSTI); it federates authoritative agency databases, so results are official records — the caveat is coverage (US federal science only).",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "science.gov",
+      "Science.gov"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "academic"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/government-science-portal.md"
   },
   {
@@ -298174,45 +298137,56 @@
   {
     "id": "ratemyteachers-north-america",
     "name": "RateMyTeachers (North America)",
-    "description": "Website related to teachers and professor ratings",
+    "description": "Use when you have a teacher's `name` or a school and want to confirm an `employer-org` affiliation and location — returns school/district links and ratings.",
     "url": "http://ratemyteachers.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tying a K-12 teacher's name to the specific school/district (and thus town) where they work, via a crowd-sourced ratings directory.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to search and read. A 2019 relaunch wiped all legacy open-text reviews, so historical commentary is gone; current data is thinner survey-style ratings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only public search; the teacher is not notified. Posting a rating would be active and is unnecessary for OSINT — stay on the search/read side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowd-sourced ratings site; the school/location linkage is generally reliable, but ratings themselves are anonymous, sparse post-2019, and easily gamed.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ratemyteachers-com",
+      "www-ratemyteachers-com"
+    ],
+    "aliases": [
+      "ratemyteachers.com",
+      "Rate My Teachers"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ratemyteachers-com",
-      "www-ratemyteachers-com"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ratemyteachers-north-america.md"
   },
   {
@@ -301755,65 +301729,31 @@
     "_file": "library/tools/search-engines/similar-site-search.md"
   },
   {
-    "id": "similarsites",
-    "name": "SimilarSites",
-    "description": "OSINT tool: SimilarSites.",
-    "url": "http://www.similarsites.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "similar-sites-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "similarsites-com"
-    ],
-    "_file": "library/tools/search-engines/similarsites.md"
-  },
-  {
     "id": "similarsites-com",
     "name": "SimilarSites.com",
-    "description": "Discover websites that are similar to each other",
+    "description": "Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche or infrastructure.",
     "url": "https://www.similarsites.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Expanding one known website into a cluster of thematically or structurally similar sites to spot an owner's wider network or comparable sources.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; a Chrome extension is the primary interface. Similarity data is powered by SimilarWeb's traffic/audience model.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries a third-party similarity index, not the target site itself, so the domain owner sees no traffic from you. The browser extension, however, can report your own browsing to SimilarWeb — install it in a throwaway/OSINT browser profile if you care about that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Backed by SimilarWeb's commercial dataset; \"similar\" is an algorithmic audience/topic overlap, not a verified ownership link — useful for leads, not proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -301822,18 +301762,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "similarsites-firefox"
+    ],
+    "aliases": [
+      "similarsites.com",
+      "SimilarSites Chrome extension"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "similarsites"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/similarsites-com.md"
   },
   {
@@ -321386,46 +321329,53 @@
   {
     "id": "gitvio",
     "name": "Gitvio",
-    "description": "A tool to quickly and easily view detailed information about a user's Github profile: the most popular repositories, number of commits, issues and , statistics of languages used, and more.",
+    "description": "Use when you have a GitHub `username` and want a quick visual digest of that account's repos, languages and activity — returns an enriched `social-profile`.",
     "url": "https://gitvio.vercel.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Turning a GitHub username into an at-a-glance profile summary (top repos, language mix, follower/following counts) without clicking through GitHub itself.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free hobby web app; no account or payment. Data comes from GitHub's public API, so it only shows what the profile already exposes publicly.",
+    "opsec": "passive",
+    "opsecNote": "Gitvio reads GitHub's public API server-side; the target is not notified and cannot see who queried them. Equivalent to viewing a public GitHub page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party open-source project hosted on Vercel; it only reformats public GitHub data, so accuracy tracks GitHub itself, but it is unaffiliated with GitHub and could go offline at any time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "checkuser",
+      "followgraph-for-mastodon",
+      "osint-steam",
+      "youtube-lookup"
+    ],
+    "aliases": [
+      "gitvio.vercel.app"
+    ],
     "tags": [
       "Social Media",
       "Github"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "checkuser",
-      "followgraph-for-mastodon",
-      "osint-steam",
-      "section-16-deadline-calculator",
-      "xplore-x-vercel-app",
-      "youtube-lookup"
-    ],
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gitvio.md"
   },
   {
@@ -359996,35 +359946,51 @@
   {
     "id": "europlates-eu",
     "name": "Europlates.eu",
-    "description": "OSINT tool: Europlates.eu.",
+    "description": "Use when you have a photo of a `vehicle-plate` and want to identify its country/region of origin by matching format and design — returns a `geolocation` lead.",
     "url": "https://www.europlates.eu/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying which country (and often region/era) a licence plate comes from by comparing its layout, colours and codes against a photo reference archive.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference archive; users can also submit plate photos. It is NOT a registration-lookup service — no owner data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are browsing a static photo catalogue; nothing is queried against any official registry and no one is alerted. Fully safe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A collaborative enthusiast-maintained photo archive of plate designs worldwide; excellent for visual identification, but it holds no registration data and entries are community-submitted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "europlates.eu",
+      "€uroplates"
+    ],
+    "tags": [
+      "vehicle-plate",
+      "license-plate",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-19",
+    "enrichment": "full",
     "_file": "library/tools/transportation/europlates-eu.md"
   },
   {
@@ -365563,46 +365529,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/transportation/submarinecablemap-com.md"
-  },
-  {
-    "id": "surfy",
-    "name": "Surfy",
-    "description": "Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, and trending keywords",
-    "url": "http://www.surfy.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/surfy.md"
   },
   {
     "id": "thatsthem-vin-search",

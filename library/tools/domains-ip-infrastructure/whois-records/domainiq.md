@@ -30,8 +30,7 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools:
-- domainiq-com
+relatedTools: []
 aliases: []
 tags: []
 source: arf-seed

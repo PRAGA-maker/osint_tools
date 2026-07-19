@@ -227,7 +227,7 @@ kind: group-index
 - **`gitleak`** (medium) — OSINT tool: GitLeak.
 - **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo
 - **`gitstar-ranking`** (medium) — Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and th
-- **`gitvio`** (medium) — A tool to quickly and easily view detailed information about a user's Github profile: the most popular repositories, number of commits, issu
+- **`gitvio`** (medium) — Use when you have a GitHub `username` and want a quick visual digest of that account's repos, languages and activity — returns an enriched `
 - **`gitxray`** (medium) — Use when you have a GitHub `username` or repo and want deep recon on the account — returns contributor emails, leaked keys, activity-timing 
 - **`google-account-finder-epieos`** (high) — Use when you have an `email` (Gmail) or `phone` and want the linked Google account's profile photo, public Maps reviews/photos, and which se
 - **`google-com-2`** (high) — Use when you have a `name` (and a German school/town) and want to find someone's StayFriends classmates profile without an account — returns

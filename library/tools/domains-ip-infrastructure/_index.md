@@ -153,7 +153,6 @@ kind: group-index
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.
-- **`domainiq-com`** (medium) — OSINT tool: domainiq.com.
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (low) — OSINT tool: DomainWatch.

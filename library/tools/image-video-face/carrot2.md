@@ -35,8 +35,7 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
-relatedTools:
-- carrot2-meta-search
+relatedTools: []
 ---
 
 # Carrot2

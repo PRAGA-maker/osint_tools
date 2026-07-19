@@ -310,7 +310,7 @@ kind: group-index
 - **`wayback-imagery`** (high) — Use when you need to see how a location's satellite imagery looked on specific past dates — to detect change, date a structure, or match an 
 - **`waze-livemap`** (high) — Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — retu
 - **`webcam-live`** (low) — OSINT tool: WEBCAM LIVE.
-- **`webcam-nl-nl`** (medium) — OSINT tool: Webcam.nl (NL).
+- **`webcam-nl-nl`** (medium) — Use when you have a Dutch `geolocation` or `address` and want live public-camera imagery of that spot — returns `image` (live video stills).
 - **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
 - **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.
 - **`webcamtaxi`** (low) — OSINT tool: Webcamtaxi.
