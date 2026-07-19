@@ -549,7 +549,7 @@ kind: group-index
 - **`legacy`** (high) — Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date,
 - **`legal-entity-types-by-country`** (low) — OSINT tool: Legal Entity Types by Country.
 - **`legalmondo-com`** (high) — Use when you have a Spanish `employer-org`/company name and want to know which registries hold its data — a free methodology guide pointing 
-- **`lei-bloomberg-com`** (medium) — search information about company by Legal Identify Number
+- **`lei-bloomberg-com`** (medium) — Use when you have an `employer-org` name or a Legal Entity Identifier (LEI) and want authoritative entity-registration detail — returns the 
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
 - **`leolist`** (low) — OSINT tool: LeoList.
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
@@ -585,7 +585,7 @@ kind: group-index
 - **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
 - **`manta-north-america`** (medium) — Use when you have a US small-business `name` or `employer-org` and want its address, phone and category listing — returns address, phone, em
 - **`manta`** (low) — OSINT tool: Manta.
-- **`mappingpoliceviolence-org`** (medium) — OSINT tool: Mappingpoliceviolence.org.
+- **`mappingpoliceviolence-org`** (medium) — Use when you have a `name`, date, or `geolocation` and want to check whether a person was killed by U.S. police — returns documented killing
 - **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir
 - **`maryland`** (high) — Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate d
 - **`massachusetts`** (high) — Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink t

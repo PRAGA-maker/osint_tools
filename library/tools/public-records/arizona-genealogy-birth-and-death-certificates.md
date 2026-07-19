@@ -42,6 +42,8 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-19'
 enrichment: full
+relatedTools:
+- arizona-inmate-datasearch
 ---
 
 # Arizona Genealogy Birth and Death Certificates

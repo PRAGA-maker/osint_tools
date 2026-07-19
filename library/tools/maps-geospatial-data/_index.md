@@ -47,7 +47,7 @@ kind: group-index
 - **`geocam-ru`** (medium) — Use when you have a `geolocation` (a city or place) and want live public webcam feeds there — returns real-time street/traffic/scenic camera
 - **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 
-- **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup
+- **`georgia-licensed-healthcare-provider-search`** (medium) — Use when you have a `name` of a healthcare provider in Georgia (US) and want to verify their license — returns license status, type, number,
 - **`getlostgame-app`** (low) — Use when you want to train and sharpen geolocation skills on random street-view scenes — a free GeoGuessr-style game; it builds the skill, i
 - **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from
 - **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)

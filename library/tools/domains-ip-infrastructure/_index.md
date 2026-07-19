@@ -82,7 +82,7 @@ kind: group-index
 - **`arin-net`** (medium) — OSINT tool: arin.net.
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
-- **`atsameip-intercode-ca`** (medium) — OSINT tool: atsameip.intercode.ca.
+- **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
 - **`autoexif`** (low) — A simple script to read and delete metadata from images and ACVH videos.
 - **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.

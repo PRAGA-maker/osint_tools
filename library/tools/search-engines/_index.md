@@ -13,7 +13,7 @@ kind: group-index
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 12 skill(s) below.
-- **`other-search/`** — 3 skill(s) below.
+- **`other-search/`** — 2 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
 
@@ -235,7 +235,6 @@ kind: group-index
 - **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
-- **`eventful`** (medium) — Movie theater and event search engine
 - **`excite-search-engine`** (medium) — Surface web search engine covering worldwide results including news and information on topics such as tech, finance, sports, and entertainme
 - **`excite`** (medium) — OSINT tool: Excite.
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
@@ -592,7 +591,7 @@ kind: group-index
 - **`pricegrabber`** (medium) — Website allowing users to compare prices of products from different websites
 - **`pricerunner-europe`** (medium) — Website allowing users to compare prices of products from different websites
 - **`productreviews-australia`** (medium) — Website related to product reviews
-- **`project-vote-smart`** (medium) — Website providing information on US elected officials and candidates
+- **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`property-services-regulatory-authority`** (medium) — Irelands Property Services Regulatory Authority
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co

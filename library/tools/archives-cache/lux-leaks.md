@@ -40,6 +40,8 @@ tags:
 source: cyb-detective
 lastVerified: '2026-07-19'
 enrichment: full
+relatedTools:
+- icij-offshore-leaks-database
 ---
 
 # LuxLeaks (ICIJ)

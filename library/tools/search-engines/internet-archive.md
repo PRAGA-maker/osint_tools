@@ -37,6 +37,12 @@ relatedTools:
 - internet-archive-videos
 - internet-archive-open-source-videos
 - tv-closed-caption-search
+- parler-archives
+- snitch-list
+- the-twitter-stream-grab
+- wayback-machine-2
+- web-archive-org
+- web-archive-org-2
 aliases:
 - archive.org search
 - Internet Archive library
