@@ -135,7 +135,7 @@ kind: group-index
 - **`ghost`** (low) — OSINT tool: Ghost.
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
-- **`gizmodo-com`** (medium) — Online articles, news, and reviews related to science, business, computers, gadgets, technology, and future trends
+- **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-10`** (medium) — OSINT tool: google.com.
 - **`google-com-12`** (medium) — OSINT tool: google.com.

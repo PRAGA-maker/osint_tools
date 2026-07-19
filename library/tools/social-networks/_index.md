@@ -84,7 +84,7 @@ kind: group-index
 - **`chearch`** (medium) — OSINT tool: Chearch.
 - **`check-channel-badges`** (low) — OSINT tool: Check channel badges.
 - **`check-twitch-follow-length`** (low) — OSINT tool: Check Twitch follow length.
-- **`chosic-com`** (medium) — analyze the playlist on Spotiify, calculate the prevailing mood, genres, decades and favorite artists
+- **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
 - **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
 - **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
 - **`clubsearch-search-clubhouse-rooms`** (low) — OSINT tool: ClubSearch -- search Clubhouse rooms.
@@ -128,7 +128,7 @@ kind: group-index
 - **`dumpor-instagram-search`** (high) — Use when you have an Instagram `username`, `name` or hashtag and want to view/download the public profile anonymously — returns profile, pos
 - **`dumpor-io`** (high) — Use when you have an Instagram `username` and want to view/download that public profile's posts, stories, reels and follower lists without l
 - **`duolingosint`** (medium) — Use when you have a `username` or `email` and want to check for a Duolingo account — returns profile data (name, avatar, country, streak, cr
-- **`eightify`** (medium) — ChatGPT YouTube summary
+- **`eightify`** (low) — Use when you have a `social-profile` (a YouTube video/channel) and want to triage its content fast — returns an AI summary and key-point tim
 - **`ello`** (low) — Use when a historical lead points to an `ello.co` profile — returns nothing live; the network shut down in 2023 and the domain is now hijack
 - **`en-wikipedia-org-2`** (high) — Use when you need an overview of far-right online platforms/ecosystems to decide where to search for an extremist-adjacent subject — returns
 - **`en-wikipedia-org-3`** (high) — Use when you need background on BitChute (alt-tech video platform) before searching it for a subject's content — returns platform context an

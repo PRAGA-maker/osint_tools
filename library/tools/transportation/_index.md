@@ -71,7 +71,7 @@ kind: group-index
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
 - **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
 - **`europlates-eu`** (medium) — OSINT tool: Europlates.eu.
-- **`exotic-cars-the-largest-photo-collection`** (medium) — OSINT tool: Exotic Cars | The Largest Photo Collection.
+- **`exotic-cars-the-largest-photo-collection`** (low) — Use when you have an `image` or `vehicle-plate` of an exotic car and want spotting records — returns dated, geotagged photos of that specifi
 - **`faa-registry`** (low) — OSINT tool: FAA Registry.
 - **`faxvin`** (medium) — OSINT tool: FaxVIN.
 - **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.

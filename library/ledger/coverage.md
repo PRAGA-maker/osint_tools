@@ -2,21 +2,21 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8146 total · 3548 full · 4598 stub (43% enriched)
+**Tools:** 8145 total · 3557 full · 4588 stub (43% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3410 · medium: 2777 · high: 1959
+low: 3417 · medium: 2769 · high: 1959
 
 ## Tools by trust
-unverified: 3563 · community: 3372 · trusted: 1199 · personal: 6 · untrustworthy: 6
+unverified: 3555 · community: 3377 · trusted: 1201 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
 - `archives-cache` — 44/134
-- `communities-forums` — 90/403
+- `communities-forums` — 91/403
 - `dark-web` — 15/118
 - `dating-classifieds` — 46/112
 - `documents-metadata` — 25/314
@@ -31,18 +31,18 @@ unverified: 3563 · community: 3372 · trusted: 1199 · personal: 6 · untrustwo
 - `opsec-investigator-tooling` — 26/562
 - `people-search` — 234/266
 - `phone` — 134/137
-- `public-records` — 700/1103
-- `search-engines` — 273/933
-- `social-networks` — 622/850
+- `public-records` — 701/1103
+- `search-engines` — 276/932
+- `social-networks` — 624/850
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
-- `transportation` — 64/229
+- `transportation` — 66/229
 - `username` — 100/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1040 leaves
-- `library/tools/search-engines` — 869 leaves
+- `library/tools/search-engines` — 868 leaves
 - `library/tools/social-networks` — 822 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 509 leaves

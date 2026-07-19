@@ -67,9 +67,8 @@ kind: group-index
 - **`ap`** (low) — OSINT tool: AP.
 - **`app-store-and-itunes-search-engine`** (medium) — OSINT tool: App Store and iTunes search engine.
 - **`app-store-custom-search-engine`** (medium) — OSINT tool: App Store Custom Search Engine.
-- **`appropedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
 - **`arabo-com`** (medium) — OSINT tool: Arabo.com.
-- **`archiplanet`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
 - **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
 - **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
@@ -305,7 +304,7 @@ kind: group-index
 - **`goofram`** (low) — OSINT tool: Goofram.
 - **`google-advanced-search-operators-guide`** (low) — Reference document listing Google advanced search operators.
 - **`google-adwords`** (low) — OSINT tool: Google Adwords.
-- **`google-and-bing`** (medium) — OSINT tool: Google & Bing.
+- **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
 - **`google-autocomplete-scraper`** (low) — One of the best ways to learn more about a person, company, or subject is to see what people are more likely to type in a search engine alon
 - **`google-blog-directory`** (medium) — Website that provides a search engine that searches blogs; search by topoc, language, region, or type
 - **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
@@ -432,7 +431,7 @@ kind: group-index
 - **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
 - **`law-net-united-states`** (medium) — Legal-related search engine for locating legal representives, legal resources, action groups, bar associations, publications, legal services
 - **`lawforkids`** (low) — Law-related search engine for kids
-- **`lawyerratingz-north-america`** (medium) — Website related to lawyer ratings
+- **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
 - **`leaklooker`** (medium) — Tool to find open databases/services.
 - **`leet`** (medium) — Open directory search engine.

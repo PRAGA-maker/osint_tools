@@ -218,7 +218,7 @@ kind: group-index
 - **`courthousedirect-com`** (high) — Use when you have a `name` or property identifier and want deeds, liens, real-property and grantor/grantee records (mainly TX/NM, links nati
 - **`courtlistener-recap`** (high) — Use when you have a `name` and want free US court opinions and PACER federal dockets — returns matching case parties (`name`), docket/case n
 - **`courts-and-tribunals-judiciary`** (high) — Use when you have a `name` and want to find UK court/tribunal judgments naming them — returns published judgments, sentencing remarks and or
-- **`covidbailouttracker-com`** (medium) — OSINT tool: Covidbailouttracker.com.
+- **`covidbailouttracker-com`** (low) — Use when you have an `employer-org` (or business name/owner) and want to know if it took CARES Act relief — returns PPP/airline-bailout reco
 - **`cpaverify-org`** (medium) — Use when you have a `name` and want to confirm whether someone is a licensed US CPA — returns license status, jurisdiction, and issuing-boar
 - **`credibly-accused`** (medium) — Use when you have a `name` (or diocese/location) and want to check whether a US Catholic clergy member was named on a credibly-accused-of-ab
 - **`creditrisk-monitor`** (medium) — Business-related directory of public companies worldwide
