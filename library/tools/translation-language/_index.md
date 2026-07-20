@@ -92,7 +92,7 @@ kind: group-index
 - **`trans8it`** (low) — OSINT tool: Trans8it.
 - **`translate-by-babylon-free-online-translation`** (low) — OSINT tool: Translate by Babylon - Free Online Translation.
 - **`translate-com`** (low) — OSINT tool: Translate.com.
-- **`translate-shell`** (medium) — Command-line translator backed by Google, Bing, Yandex and other engines.
+- **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
 - **`urbandictionary-com`** (low) — OSINT tool: urbandictionary.com.
 - **`vizard-ai`** (low) — OSINT tool: vizard.ai.

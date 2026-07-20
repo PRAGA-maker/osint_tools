@@ -56,7 +56,7 @@ kind: group-index
 - **`college-recruiter`** (medium) — Use when you have a `name` or `employer-org` and want to check entry-level/student job listings and employer pages — returns job postings an
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
 - **`crosslinked`** (medium) — Use when you have an `employer-org` and want to enumerate its employees' names and likely emails from LinkedIn — returns names and format-ge
-- **`cvfox`** (medium) — OSINT tool: CVFox.
+- **`cvfox`** (medium) — Use when you have a `name` (± employer/skill) and want to find a subject's CV/résumé published online — returns résumé documents yielding `e
 - **`cyberbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` in the US and want current/past addresses, phone numbers and named relatives for free — re
 - **`cybersecstu-osint-for-finding-people`** (high) — Use when you have a `name`/`username`/`email`/`phone` and want a curated list of which tools to try next for locating a person — returns poi
 - **`daprofiler`** (high) — Use when you have a `name` (best for a French subject) and want to auto-aggregate emails, phones, addresses, and social profiles via scrapin

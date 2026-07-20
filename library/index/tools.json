@@ -34807,41 +34807,54 @@
   {
     "id": "plentyoffish",
     "name": "PlentyOfFish",
-    "description": "Online dating profile site",
+    "description": "Use when you have a `username`, `name`, or photo and want to check a major dating platform for a subject's profile — returns `social-profile`, `physical-description`, location, and `image` for cross-matching.",
     "url": "http://www.pof.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Locating a subject's dating profile (photos, self-description, approximate location) on a large free dating platform.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "physical-description",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create an account and browse/search profiles; premium upgrades exist but basic search is free.",
+    "opsec": "active",
+    "opsecNote": "Searching requires an account, and viewing a profile can register a \"visitor\" notification to the target — this is ACTIVE and can tip off the subject. Always use a sock-puppet account, sock-puppet photos, and a clean IP. Never message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "PlentyOfFish (owned by Match Group) is a legitimate major dating platform; profile content is self-created and can be fake, aged, or aspirational.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "POF",
+      "pof.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "relatedTools": [
       "plenty-of-fish-com"
     ],
@@ -37285,41 +37298,54 @@
   {
     "id": "sqoop",
     "name": "Sqoop",
-    "description": "Investigative journalism website providing research tools and email alerts for breaking news",
+    "description": "Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits yielding `associate`, `employer-org`, and case `document-id`.",
     "url": "https://sqoop.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-stop searching (and alerting) across SEC filings, PACER federal court dockets, patents, and DOJ records for a person or company.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for journalists/researchers; requires a free account to search and set alerts.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching aggregated public filings is passive and never touches the subject. You do create an account (with your email) on Sqoop itself — use a research/sock-puppet email, since your saved searches and alerts live under that account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Sqoop is an established newsroom research tool aggregating authoritative US government sources (SEC/EDGAR, PACER, USPTO, DOJ); the underlying records are official.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "sqoop.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "court-records",
+      "sec-filings"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "_file": "library/tools/communities-forums/sqoop.md"
   },
   {
@@ -196939,37 +196965,51 @@
   {
     "id": "cvfox",
     "name": "CVFox",
-    "description": "OSINT tool: CVFox.",
+    "description": "Use when you have a `name` (± employer/skill) and want to find a subject's CV/résumé published online — returns résumé documents yielding `email`, `phone`, `employer-org`, and `address`.",
     "url": "http://www.cvfox.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Surfacing a person's résumé/CV posted anywhere on the web, which often carries direct contact details and full work/education history.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool / portal of résumé-search utilities and boolean-string generators; no payment to run the searches.",
+    "opsec": "passive",
+    "opsecNote": "CVFox builds Google/boolean queries that run against public search engines — it doesn't touch the subject. Passive. Still run the resulting searches from a sock-puppet/logged-out session and avoid opening subject-controlled links directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "CVFox is an established recruiter-focused résumé-search portal with in-house boolean tooling; it's a query builder over public indexes, so results are only as good as what's publicly posted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cvfox.com",
+      "CV Fox"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "resume-search",
+      "people-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "_file": "library/tools/people-search/cvfox.md"
   },
   {
@@ -226170,36 +226210,52 @@
   },
   {
     "id": "criminal-cop-database-lookup",
-    "name": "Criminal Cop Database Lookup",
-    "description": "OSINT tool: Criminal Cop Database Lookup.",
+    "name": "Criminal Cop Database (Bay Area News Group)",
+    "description": "Use when you have a `name` of a California law-enforcement officer and want to check for a criminal conviction — returns the officer's name, agency, crime, and case context.",
     "url": "https://extras.mercurynews.com/criminalcops/database/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether a named California police/law-enforcement officer was convicted of a crime, per a large investigative database of ~1,000 cases.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public investigative database published by the Bay Area News Group / Mercury News; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a published journalistic database is passive and leaks nothing about anyone. It reflects a fixed 2019 investigation, so treat it as a historical snapshot, not a live registry.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Compiled by Bay Area News Group / Mercury News reporters from court files across nearly every California county (2019 \"Criminal Cops\" investigation); professionally sourced from public records.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Criminal Cops",
+      "Mercury News Criminal Cops database"
+    ],
+    "tags": [
+      "police-accountability",
+      "california",
+      "court-records",
+      "investigative-database"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "_file": "library/tools/public-records/criminal-cop-database-lookup.md"
   },
   {
@@ -333603,38 +333659,53 @@
   {
     "id": "raditube",
     "name": "RadiTube",
-    "description": "A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says\" of \"voter fraud\" in 170,000 videos, and the search results will link you to the specific time-code in the vide",
+    "description": "Use when you have a phrase or claim and want to find where it was spoken across hundreds of radical/fringe YouTube channels — returns transcript hits linked to the exact video timecode.",
     "url": "https://tool.raditube.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text searching the subtitles/transcripts of hundreds of radical YouTube channels to locate who said a given phrase and when.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free research tool; the public version is being rebuilt and is currently in private beta (request access via info@raditube.com).",
+    "opsec": "passive",
+    "opsecNote": "Searching an external transcript index is passive and never touches the target channel. Following result links opens YouTube, which logs the view against your account/IP — use a sock-puppet/logged-out session for the click-through.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A Bellingcat-listed research tool for monitoring radical-channel discourse; indexes are built by the maintainer, so coverage is a curated (not exhaustive) channel set.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tool.raditube.com",
+      "RadiTube search"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "youtube"
+      "youtube",
+      "extremism-research",
+      "transcript-search"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "_file": "library/tools/social-networks/raditube.md"
   },
   {
@@ -341288,40 +341359,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/taringa-latin-america.md"
-  },
-  {
-    "id": "teddit",
-    "name": "teddit",
-    "description": "OSINT tool: teddit.",
-    "url": "https://teddit.net/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/teddit.md"
   },
   {
     "id": "the-bitmoji-avatar-history-enumerator-2",
@@ -355928,24 +355965,30 @@
   {
     "id": "translate-shell",
     "name": "Translate Shell",
-    "description": "Command-line translator backed by Google, Bing, Yandex and other engines.",
+    "description": "Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns readable English (or any target) plus language detection.",
     "url": "https://github.com/soimort/translate-shell",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "Quickly translating foreign-language posts, names and content from the terminal.",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quickly translating, detecting, or transliterating foreign-language content from the command line while processing OSINT collection.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Unlicense); no API key needed for default web-engine backends.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It sends the text you translate to the chosen web engine (Google/Bing/Yandex, etc.), so do NOT paste sensitive investigative notes verbatim. Translation queries can be logged by that engine; translate only the target's public text, and consider self-hosted engines for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Listed in Trace Labs awesome-osint and installed in the Trace Labs VM.",
+    "trustNote": "A popular, long-maintained open-source project (soimort/translate-shell); shipped in the Trace Labs OSINT VM and packaged in major Linux distros.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -355964,8 +356007,7 @@
       "language"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
     "relatedTools": [
       "you-get"
     ],

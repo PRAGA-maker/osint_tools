@@ -257,7 +257,7 @@ kind: group-index
 - **`pistonheads-com`** (medium) — OSINT tool: pistonheads.com.
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
 - **`plazoo-rss-feed-search-engine`** (medium) — Use when you have a name/keyword and want it across blog & news RSS feeds — returns matching feed posts (social-profile, associate leads).
-- **`plentyoffish`** (medium) — Online dating profile site
+- **`plentyoffish`** (medium) — Use when you have a `username`, `name`, or photo and want to check a major dating platform for a subject's profile — returns `social-profile
 - **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
@@ -309,7 +309,7 @@ kind: group-index
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — OSINT tool: Spacebin.
-- **`sqoop`** (medium) — Investigative journalism website providing research tools and email alerts for breaking news
+- **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
 - **`stackexchange`** (low) — OSINT tool: StackExchange.
 - **`stratfor-global-intelligence`** (medium) — World's leading geopolitical intelligence platform analysing global events

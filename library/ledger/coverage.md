@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7992 total · 3999 full · 3993 stub (50% enriched)
+**Tools:** 7991 total · 3999 full · 3992 stub (50% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3506 · medium: 2524 · high: 1962
+low: 3508 · medium: 2521 · high: 1962
 
 ## Tools by trust
-community: 3493 · unverified: 3132 · trusted: 1356 · untrustworthy: 6 · personal: 5
+community: 3492 · unverified: 3130 · trusted: 1358 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
@@ -33,7 +33,7 @@ community: 3493 · unverified: 3132 · trusted: 1356 · untrustworthy: 6 · pers
 - `phone` — 134/137
 - `public-records` — 761/1083
 - `search-engines` — 361/901
-- `social-networks` — 670/818
+- `social-networks` — 670/817
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
 - `transportation` — 100/222
@@ -43,7 +43,7 @@ community: 3493 · unverified: 3132 · trusted: 1356 · untrustworthy: 6 · pers
 
 - `library/tools/public-records` — 1025 leaves
 - `library/tools/search-engines` — 841 leaves
-- `library/tools/social-networks` — 790 leaves
+- `library/tools/social-networks` — 789 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 498 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves

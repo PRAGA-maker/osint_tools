@@ -446,7 +446,7 @@ kind: group-index
 - **`quickvid-net`** (high) — Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` f
 - **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
 - **`qzone`** (high) — Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` 
-- **`raditube`** (medium) — A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says" of "voter 
+- **`raditube`** (low) — Use when you have a phrase or claim and want to find where it was spoken across hundreds of radical/fringe YouTube channels — returns transc
 - **`react-reddit-search-app`** (low) — React-based Reddit search interface.
 - **`readr-for-reddit`** (low) — Chrome extension for improved Reddit reading.
 - **`recruitryte-com`** (high) — Use when you have a `name` / role / `employer-org` and want a ready-made LinkedIn X-Ray Boolean string to run in Google — returns a search q
@@ -588,7 +588,6 @@ kind: group-index
 - **`tailwind`** (low) — Social media scheduling tool including Pinterest.
 - **`target-log`** (medium) — OSINT tool: Target Log.
 - **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
-- **`teddit`** (medium) — OSINT tool: teddit.
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
 - **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li

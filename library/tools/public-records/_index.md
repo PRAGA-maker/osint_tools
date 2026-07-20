@@ -224,7 +224,7 @@ kind: group-index
 - **`creditsafe-com`** (high) — Use when you have an `employer-org`, `name` or `address` and want a business credit report — returns company details, registered address, di
 - **`crime-brasil`** (low) — OSINT tool: Crime Brasil.
 - **`crimereports`** (medium) — Use when you have an `address`/`geolocation` and want to see recent reported crime incidents around it — returns block-level incident locati
-- **`criminal-cop-database-lookup`** (medium) — OSINT tool: Criminal Cop Database Lookup.
+- **`criminal-cop-database-lookup`** (low) — Use when you have a `name` of a California law-enforcement officer and want to check for a criminal conviction — returns the officer's name,
 - **`criminal-search-criminal-records-by-state-and`** (high) — Use when you have a `name` and want to reach the right official US criminal/court record database for a given state or county — returns link
 - **`cro-ie-2`** (high) — Use when you have an `employer-org` or director `name` in Ireland and want company registration, officers, and addresses — returns employer-
 - **`cro-ie`** (high) — Use when you have a `name` or company (`employer-org`) in Ireland and want registration, status and directors — returns employer-org, name, 
