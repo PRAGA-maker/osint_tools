@@ -35,7 +35,7 @@ kind: group-index
 - **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
 - **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
-- **`access-to-archival-databases`** (medium) — The National Archives database of archival databases
+- **`access-to-archival-databases`** (medium) — Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, 
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
 - **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
@@ -421,7 +421,7 @@ kind: group-index
 - **`leaklooker`** (medium) — Tool to find open databases/services.
 - **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
-- **`leit-search-engine-iceland`** (medium) — Iceland based surface web search engine covering regional results
+- **`leit-search-engine-iceland`** (low) — Use when you have a `name` and want Icelandic web, phone-directory, and business results — returns phone, address, and social-profile leads 
 - **`lendx`** (low) — OSINT tool: LENDX.
 - **`lexcraft-cornell-university-legal-wiki-canada`** (low) — Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-informati
 - **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
@@ -735,7 +735,7 @@ kind: group-index
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
 - **`torrent-seeker`** (low) — torrents search engine
 - **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
-- **`totalbeauty`** (medium) — Website related to makeup, skincare, and other beauty related reviews
+- **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
 - **`trooclick`** (low) — OSINT tool: Trooclick.

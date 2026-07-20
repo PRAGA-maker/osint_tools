@@ -105,7 +105,7 @@ kind: group-index
 - **`geoint`** (medium) — OSINT tool: GEOINT.
 - **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
 - **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
-- **`geoplatform-portal`** (medium) — OSINT tool: GeoPlatform Portal.
+- **`geoplatform-portal`** (low) — Use when you have a `geolocation` or `address` and want authoritative U.S. federal geospatial layers — returns geolocation context (boundari
 - **`geoportail-france`** (high) — Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadast
 - **`geoprotests-api`** (medium) — Use when you have a location/date and want geolocated protest-event records for that place and time — returns geolocation and address.
 - **`geoseer-net`** (medium) — OSINT tool: Geoseer.net.

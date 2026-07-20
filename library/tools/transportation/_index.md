@@ -105,7 +105,7 @@ kind: group-index
 - **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
 - **`janes-fighting-ships-yearbook`** (medium) — Maritime-related website that offers a search of the global database of naval vessel types
 - **`kayak-travel-search-engine`** (low) — Use when you have a route/date and want to test whether a claimed trip was feasible — returns flights, schedules, and prices to corroborate 
-- **`kelley-blue-book-for-cars-united-states`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s
+- **`kelley-blue-book-for-cars-united-states`** (low) — Use when you have a `vin` (or make/model/year) for a subject's vehicle and want its market value and specs — returns asset-valuation context
 - **`lefranz-geneva-dictators`** (low) — OSINT tool: lefranz/geneva-dictators.
 - **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
 - **`license-plate-lookup`** (medium) — Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-

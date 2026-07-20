@@ -74,7 +74,7 @@ kind: group-index
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
 - **`livecorona-co-kr`** (medium) — OSINT tool: Livecorona.co.kr.
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
-- **`manhole-co-il`** (medium) — OSINT tool: manhole.co.il.
+- **`manhole-co-il`** (low) — Use when you have an `image` or `geolocation` and want to identify a manhole/utility cover's origin — returns geolocation clues (country/cit
 - **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th
 - **`mapa-sk`** (low) — Mapping service for Slovakia
 - **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage

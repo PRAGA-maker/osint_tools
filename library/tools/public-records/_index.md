@@ -47,7 +47,7 @@ kind: group-index
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
 - **`aiddata`** (low) — OSINT tool: AidData.
 - **`akp-email-database`** (medium) — OSINT tool: AKP email database.
-- **`alabama-deaths`** (medium) — FamilySearch genealogy site providing death records for Alabama from 1908 to 1974
+- **`alabama-deaths`** (medium) — Use when you have a `name` and want an Alabama death record (1908–1974) — returns dob, address, and associate (next-of-kin) links from the F
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
 - **`alberta-business-search`** (low) — OSINT tool: Alberta Business Search.
@@ -712,7 +712,7 @@ kind: group-index
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
 - **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.
-- **`openpayrolls-com`** (medium) — OSINT tool: Openpayrolls.com.
+- **`openpayrolls-com`** (medium) — Use when you have a `name` and want a subject's public-sector salary, job title, and employer — returns employer-org, address (locale), and 
 - **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
 - **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
 - **`optical-org`** (medium) — Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registrati

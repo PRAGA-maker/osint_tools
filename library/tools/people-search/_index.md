@@ -111,7 +111,7 @@ kind: group-index
 - **`hey-press`** (high) — Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a
 - **`howmanyofme`** (high) — Use when you have a `name` and want to know how common it is in the US — returns an estimated count of people sharing that name, to gauge se
-- **`idealist`** (medium) — OSINT tool: Idealist.
+- **`idealist`** (low) — Use when you have a `name` or `employer-org` in the nonprofit/social-impact world and want affiliation leads — returns employer-org, social-
 - **`indeed`** (medium) — Use when you have a `name` or `employer-org` and want employment context — company profiles, reviews, and (via public resumes/job posts) wor
 - **`infospace`** (high) — Use when you have a US `name` or `phone` and want a free white-pages/metasearch lookup — returns address, phone and related directory listin
 - **`infotracer`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want a US background/contact profile — returns addresses, phones, relatives (

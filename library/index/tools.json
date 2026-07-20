@@ -37972,41 +37972,51 @@
   {
     "id": "telemundo-network-television-united-states",
     "name": "Telemundo Network Television (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "description": "Use when you have a `name` tied to U.S. Hispanic/Latin-American news and want Spanish-language coverage — returns news mentions, associate, and employer-org context.",
     "url": "http://www.telemundo.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Spanish-language U.S. news coverage for mentions of a person, event, or organization.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read news articles and video segments; some live streaming may require a TV-provider login, but news search itself is open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site; the subject is not contacted. Ordinary web logging applies to you, not the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Telemundo is a major NBCUniversal-owned Spanish-language broadcaster; its news reporting is a mainstream journalistic source.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Telemundo",
+      "telemundo.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "spanish-language"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/telemundo-network-television-united-states.md"
   },
   {
@@ -39726,38 +39736,48 @@
   },
   {
     "id": "vaultbin",
-    "name": "vaultbin",
-    "description": "OSINT tool: vaultbin.",
+    "name": "VaultBin",
+    "description": "Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password, or other leaked data pasted by a target.",
     "url": "https://vaultb.in/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading the contents of a VaultBin paste linked from a subject's posts, or from a leak/dump reference.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source pastebin; no account or payment to create or read a paste.",
+    "opsec": "passive",
+    "opsecNote": "Opening a paste is a plain read — the paste author is not notified. There is no public index, so you cannot enumerate a person's pastes; you only view links you already have. Fetch via a sock-puppet browser/VPN if the link source is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "An open-source community pastebin (GitHub-published); content is user-submitted and unverified, and there is no search/index to vouch for coverage.",
+    "missingPersonsRelevance": "low",
     "coverage": [],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "vaultb.in"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "paste-monitoring",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/vaultbin.md"
   },
   {
@@ -120073,35 +120093,52 @@
   {
     "id": "geoplatform-portal",
     "name": "GeoPlatform Portal",
-    "description": "OSINT tool: GeoPlatform Portal.",
+    "description": "Use when you have a `geolocation` or `address` and want authoritative U.S. federal geospatial layers — returns geolocation context (boundaries, imagery, infrastructure) plus metadata-exif-style dataset provenance.",
     "url": "https://www.geoplatform.gov/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Pulling official U.S. federal map layers and datasets (imagery, boundaries, hydrology, infrastructure) for a location of interest.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free U.S. government geospatial catalog and viewer; no account needed to browse or download most public datasets.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse and download public federal map data; no query concerns the subject and nothing is transmitted about them. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. Federal Geographic Data Committee; datasets are authoritative federal-agency sources.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GeoPlatform",
+      "geoplatform.gov"
+    ],
+    "tags": [
+      "geospatial",
+      "government-records",
+      "maps",
+      "open-data"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geoplatform-portal.md"
   },
   {
@@ -159040,43 +159077,52 @@
   {
     "id": "manhole-co-il",
     "name": "manhole.co.il",
-    "description": "OSINT tool: manhole.co.il.",
+    "description": "Use when you have an `image` or `geolocation` and want to identify a manhole/utility cover's origin — returns geolocation clues (country/city) by matching cover design against a global catalog.",
     "url": "https://manhole.co.il/default.asp",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Geolocating a photo by identifying the manhole/utility cover in it against a catalog of ~14,000 covers from 80 countries.",
     "selectorsIn": [
+      "image",
       "geolocation",
       "address"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse and search the catalog; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You browse a static reference catalog and compare imagery yourself — no query about the subject leaves your machine beyond ordinary page loads. Fully passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running enthusiast catalog maintained by Eli Zvuluny; imagery and locations are hobbyist-contributed, so treat matches as leads to corroborate, not proof.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The ultimate manhole covers site"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "geolocation",
+      "image-geolocation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/manhole-co-il.md"
   },
   {
@@ -200080,37 +200126,52 @@
   {
     "id": "idealist",
     "name": "Idealist",
-    "description": "OSINT tool: Idealist.",
+    "description": "Use when you have a `name` or `employer-org` in the nonprofit/social-impact world and want affiliation leads — returns employer-org, social-profile, and associate context from jobs, volunteers, and org listings.",
     "url": "http://www.idealist.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Linking a person to nonprofit organizations, roles, or volunteer activity via a large social-impact jobs/org directory.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for job/volunteer seekers to search jobs, volunteer opportunities, and 200k+ organizations; posting listings (org side) may cost, but searching does not.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public org/job/volunteer listings; no one is contacted. Some personalized features prompt an account login — read anonymously where possible, and use a sock-puppet account if you must sign in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A well-established (30+ year) nonprofit-sector platform; org and listing data is real but self-posted, so treat affiliations as leads.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "idealist.org"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "people-search",
+      "nonprofit",
+      "employment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/people-search/idealist.md"
   },
   {
@@ -216735,59 +216796,63 @@
   {
     "id": "alabama-deaths",
     "name": "Alabama Deaths",
-    "description": "FamilySearch genealogy site providing death records for Alabama from 1908 to 1974",
+    "description": "Use when you have a `name` and want an Alabama death record (1908–1974) — returns dob, address, and associate (next-of-kin) links from the FamilySearch collection.",
     "url": "https://familysearch.org/search/collection/1307888",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an Alabama death and pulling dates, residence, and family links for genealogy timelines.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view; requires a free FamilySearch account to see full record details.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching indexed historical death records; the deceased and living relatives are not notified. You must be logged into a FamilySearch account to view full images, so those queries tie to your account — use a research/sock-puppet account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by FamilySearch (a non-profit run by the LDS Church); the collection indexes official Alabama state death records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "family-search",
+      "familysearch",
+      "familysearch-org",
+      "familysearch-research-wiki",
+      "colorado-statewide-marriage-index"
+    ],
+    "aliases": [
+      "FamilySearch Alabama Deaths",
+      "Alabama Deaths 1908-1974"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "vital-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "colorado-statewide-marriage-index",
-      "family-search",
-      "familysearch",
-      "familysearch-2",
-      "familysearch-births-and-baptisms-1972-1981-australia",
-      "familysearch-deaths-and-burials-1816-1980-australia",
-      "familysearch-free-family-trees-and-genealogy-archives-familysearch-org",
-      "familysearch-guessing-a-name-variation",
-      "familysearch-org",
-      "familysearch-research-wiki"
-    ],
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/public-records/alabama-deaths.md"
   },
   {
@@ -252478,36 +252543,54 @@
   },
   {
     "id": "openpayrolls-com",
-    "name": "Openpayrolls.com",
-    "description": "OSINT tool: Openpayrolls.com.",
+    "name": "OpenPayrolls.com",
+    "description": "Use when you have a `name` and want a subject's public-sector salary, job title, and employer — returns employer-org, address (locale), and confirmed name/title from ~200M government payroll records.",
     "url": "https://openpayrolls.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming that a named person works (or worked) for a U.S. government or publicly funded employer, plus their title and pay.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and view names, employers, job titles, and salary figures; the site monetizes via ads and optional premium/background-report upsells, but the core payroll lookup needs no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are searching an aggregator's copy of published FOIA payroll data — the subject is never contacted or notified. Standard web logging applies to you, not to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator of genuine public-records payroll disclosures; underlying data is authoritative FOIA-released government payroll, but freshness and completeness vary by employer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Open Payrolls",
+      "OpenPayrolls"
+    ],
+    "tags": [
+      "public-records",
+      "salary-records",
+      "employment",
+      "government-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/public-records/openpayrolls-com.md"
   },
   {
@@ -270599,45 +270682,59 @@
   {
     "id": "access-to-archival-databases",
     "name": "Access to Archival Databases",
-    "description": "The National Archives database of archival databases",
+    "description": "Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, address, employer-org matches from military, immigration, and casualty databases.",
     "url": "http://aad.archives.gov/aad/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching NARA's structured electronic records (military service, POW/casualty, immigration) for a named individual.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free U.S. government service; no account or payment required to search or view records.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit a federal government server and are logged like any web request, but the search is anonymous and touches only historical public records — nothing reaches the subject. Use a clean browser/VPN if you want your research IP out of NARA logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. National Archives and Records Administration (NARA); records are authoritative primary-source government data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "national-archives-and-records",
+      "archives-library-information-center-alic"
+    ],
+    "aliases": [
+      "AAD",
+      "NARA AAD"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "government-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "archives-library-information-center-alic",
-      "national-archives-and-records"
-    ],
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/access-to-archival-databases.md"
   },
   {
@@ -289334,25 +289431,33 @@
   {
     "id": "leit-search-engine-iceland",
     "name": "Leit Search Engine (Iceland)",
-    "description": "Iceland based surface web search engine covering regional results",
+    "description": "Use when you have a `name` and want Icelandic web, phone-directory, and business results — returns phone, address, and social-profile leads for people and businesses in Iceland.",
     "url": "http://leit.is",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regional Iceland lookups — surfacing local web pages, phone/business directory entries, and news for an Icelandic name or company.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free keyword search and directory; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ordinary search-engine queries against an Icelandic index; the subject is not contacted. Queries are logged by leit.is like any search engine — use a VPN if you want to keep your research IP out of their logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Long-running Icelandic search engine (DCG ehf, launched 1999); a legitimate regional index, but a third-party aggregator rather than an authoritative registry.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -289360,15 +289465,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "leit.is"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "regional-search",
+      "iceland"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/leit-search-engine-iceland.md"
   },
   {
@@ -304158,26 +304267,31 @@
   },
   {
     "id": "totalbeauty",
-    "name": "Totalbeauty",
-    "description": "Website related to makeup, skincare, and other beauty related reviews",
+    "name": "TotalBeauty",
+    "description": "Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style reviewer activity.",
     "url": "http://www.totalbeauty.com/reviews",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a username against a beauty-review community and reading a member's public review history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse reviews and public member profiles; writing reviews requires a free account, but reading does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read public member/review pages; the member is not notified. If you log in to interact, that ties activity to your account — use a sock-puppet account, and avoid any action that alerts the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A consumer beauty-review site; member content is self-submitted and unverified, useful only as a username/social-footprint signal.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -304185,15 +304299,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "totalbeauty.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "username-enumeration",
+      "community-profile"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/totalbeauty.md"
   },
   {
@@ -361224,41 +361342,49 @@
   {
     "id": "kelley-blue-book-for-cars-united-states",
     "name": "Kelley Blue Book for Cars (United States)",
-    "description": "Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s",
+    "description": "Use when you have a `vin` (or make/model/year) for a subject's vehicle and want its market value and specs — returns asset-valuation context, not owner data.",
     "url": "http://www.kbb.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Estimating the market value and decoding the specs of a known U.S. vehicle for asset/lifestyle profiling.",
+    "selectorsIn": [
+      "vin"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free vehicle valuation and VIN decode; KBB monetizes via dealer leads and ads, but the value/spec lookup needs no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query KBB about a vehicle's make/model/VIN, not about the owner — nothing reaches the subject. Entering a real VIN may prompt dealer-lead marketing to you (the searcher); use a throwaway contact if a form demands one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Kelley Blue Book is a long-established, authoritative U.S. vehicle-valuation brand (owned by Cox Automotive).",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KBB",
+      "kbb.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "vehicles",
+      "asset-valuation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-20",
+    "enrichment": "full",
     "_file": "library/tools/transportation/kelley-blue-book-for-cars-united-states.md"
   },
   {

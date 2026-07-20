@@ -325,7 +325,7 @@ kind: group-index
 - **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
 - **`techrepublic`** (medium) — Online articles and news related to computers, gadgets, technology, and future trends
-- **`telemundo-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`telemundo-network-television-united-states`** (low) — Use when you have a `name` tied to U.S. Hispanic/Latin-American news and want Spanish-language coverage — returns news mentions, associate, 
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin-code`** (medium) — OSINT tool: Textbin-Code.
 - **`textbin`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text, credentials, or contact frag
@@ -362,7 +362,7 @@ kind: group-index
 - **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`usa-today-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may 
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
-- **`vaultbin`** (medium) — OSINT tool: vaultbin.
+- **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,
 - **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
 - **`vrbo`** (medium) — Website related to social networking in the form of travel and accomodations
