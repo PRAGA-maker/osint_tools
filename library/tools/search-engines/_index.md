@@ -473,7 +473,7 @@ kind: group-index
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
 - **`myallsearch`** (low) — OSINT tool: Myallsearch.
-- **`mybuilder-north-america`** (medium) — Website related to construction ratings
+- **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
 - **`mysimon-shopping-search-engine`** (medium) — A comparison shopping website offering recommendations, buying advice, and price comparisons
 - **`mywoodle-com`** (medium) — OSINT tool: Mywoodle.com.
@@ -617,7 +617,7 @@ kind: group-index
 - **`religion-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`remax-house-listing-search-canada`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`research-gate`** (low) — OSINT tool: Research Gate.
-- **`resellerratings-north-america`** (medium) — Website related to reseller ratings
+- **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
@@ -747,7 +747,7 @@ kind: group-index
 - **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re
 - **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f
-- **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`ukons-standard-occupational-classifications-united-kingdom`** (low) — Use when you have a UK job-title lead and want to normalize it to the ONS SOC occupation code — returns the standard classification, not a p
 - **`united-states-marine-corps-occupation-codes`** (medium) — Use when you have a USMC MOS `document-id` code and want to decode the Marine's job specialty — returns the occupation/role behind the code.
 - **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
 - **`urvx-com`** (low) — File storage search engine based by Google CSE
@@ -823,7 +823,7 @@ kind: group-index
 - **`world-newspapers`** (low) — OSINT tool: World-Newspapers.
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.
-- **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
+- **`wow-search-engine-united-kingdom`** (low) — Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web result
 - **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine

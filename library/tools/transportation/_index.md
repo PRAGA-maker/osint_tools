@@ -40,7 +40,7 @@ kind: group-index
 - **`canadian-vessel-registration-query-system`** (medium) — Use when you have a vessel name, official number, or an owner `name` and want Canadian vessel registration detail — returns registered/licen
 - **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
 - **`caranalytics-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and p
-- **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
+- **`cars-com-black-book-value`** (low) — Use when you have a known vehicle (make/model/year/mileage) and want an independent market value — returns a valuation figure to sanity-chec
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
 - **`casa-aircraft-search-australia`** (medium) — Use when you have an Australian aircraft mark (VH-xxx) and want the aircraft and its registered holder — returns aircraft details, employer-
 - **`certified-aircraft-database`** (low) — Use when you have an aircraft tail number (`vehicle-plate`) and want to decode its country of registration — returns the `geolocation` (nati

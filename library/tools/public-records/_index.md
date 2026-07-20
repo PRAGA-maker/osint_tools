@@ -274,7 +274,7 @@ kind: group-index
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
 - **`easybib-citation-generator`** (medium) — Use when you have a source URL/document and want a formatted citation for a report — returns a bibliographic reference (a write-up aid, not 
-- **`easystreet`** (medium) — OSINT tool: EasyStreet.
+- **`easystreet`** (medium) — Use when you have an NYC `address` or building and want listing, price, and agent history — returns real-estate records that yield `address`
 - **`ebra-be`** (high) — Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward e
 - **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
 - **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — Use when you have a `name` or `employer-org` and want SEC filings that mention them — returns officer/insider `name`s, `employer-org` links 
@@ -706,7 +706,7 @@ kind: group-index
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-f
-- **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
+- **`open-data-portal-m-nchen-german`** (low) — Use when you need official Munich municipal datasets (statistics, geography, infrastructure) to ground-truth a location or administrative co
 - **`open-knowledge-maps`** (medium) — Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an auth
 - **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
@@ -957,7 +957,7 @@ kind: group-index
 - **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.
 - **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return
 - **`uglymugs-org`** (high) — Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `
-- **`uk-census-online`** (medium) — Database of deaths, births, and marriages. From 1841 to the beginning of the 21st century. Only the first and last names can be searched.
+- **`uk-census-online`** (medium) — Use when you have a UK `name` and want historical births/deaths/marriages and census records (1841–early 1900s) — returns life-event records
 - **`uk-government-list-of-overseas-registries`** (medium) — Use when you need the official company registry for a given country — returns links to worldwide corporate registries so you can pivot to em
 - **`uk-osint`** (high) — Use when you have a UK `name`, `address`, or `phone` and want a curated map of the right UK records, registries, and people-search tools — r
 - **`ukas-com`** (high) — Use when you have an `employer-org` name (a lab, cert body or inspection firm) and want to verify its UK accreditation — returns the org's a

@@ -19,7 +19,7 @@ kind: group-index
 ## Skills here
 - **`527-explorer`** (low) — ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which
 - **`a-ton-of-privacy`** (low) — Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.
-- **`acfcs-org`** (medium) — OSINT tool: acfcs.org.
+- **`acfcs-org`** (low) — Use when you want reference material and technique guides for tracing crypto/financial crime (e.g. Bitcoin tracking for investigators) — ret
 - **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
 - **`addresswatcher-com`** (low) — OSINT tool: Addresswatcher.com.
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
