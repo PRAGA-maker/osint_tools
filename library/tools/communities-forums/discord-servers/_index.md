@@ -7,7 +7,7 @@ kind: group-index
 # communities-forums/discord-servers
 
 ## Skills here
-- **`discord-bot-list`** (medium) — Discord bot discovery and ecosystem mapping
+- **`discord-bot-list`** (low) — Use when you are investigating a Discord community and want to identify or vet a bot seen in a server — returns bot profiles, owner handles,
 - **`reconxplorer`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `username` or Discord ID and want quick multi-source recon from one menu-driven CLI — r
 - **`top-gg`** (medium) — Use when you have a `username` or community/bot name and want to discover public Discord servers and bots — returns server/bot listings with
 

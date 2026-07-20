@@ -32,13 +32,13 @@ kind: group-index
 - **`aol-travel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`arabian-business-news-middle-east-english-language`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
-- **`babycenter`** (medium) — Networking website for new and expecting parents
+- **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
 - **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
 - **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
-- **`blogger`** (medium) — Service by Google for hosting and publishing blogs
+- **`blogger`** (medium) — Use when you have a `name` or `username` and want to find a subject's personal blog or Blogger/Blogspot profile — returns `social-profile`, 
 - **`bloglovin`** (medium) — Use when you have a `name`/`username` and want to find a person's blog presence and the blogs they follow — returns blogger profiles and fol
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
 - **`boards-ie`** (medium) — OSINT tool: boards.ie.
@@ -99,7 +99,7 @@ kind: group-index
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`files-pushshift-io-reddit`** (low) — OSINT tool: Files.pushshift.io/reddit.
-- **`financial-post`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
+- **`financial-post`** (low) — Use when you have a `name` or `employer-org` and want to search Canadian business-news coverage for mentions — returns article context linki
 - **`flickmetrix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flicksurfer-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flipkey`** (medium) — Website related to social networking in the form of travel and accomodations
@@ -218,7 +218,7 @@ kind: group-index
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`new-paste`** (medium) — OSINT tool: New Paste.
+- **`new-paste`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text — returns paste content that 
 - **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — Use when you have a `geolocation` (a place a subject is tied to) and want the local newspapers covering it — returns links to those papers (
@@ -243,7 +243,7 @@ kind: group-index
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
 - **`paste-in-ua`** (medium) — OSINT tool: paste.in.ua.
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
-- **`paste-monster`** (medium) — OSINT tool: Paste.Monster.
+- **`paste-monster`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public markdown pastebin for dumped text — returns paste cont
 - **`paste-sh`** (medium) — OSINT tool: paste.sh.
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
 - **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.
@@ -307,7 +307,6 @@ kind: group-index
 - **`smat`** (low) — OSINT tool: smat.
 - **`snippet-host`** (medium) — OSINT tool: snippet.host.
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
-- **`socialbrite`** (medium) — Website aimed at helping nonprofits, NGOs, foundations, and other organizations use social media to their benefit
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — OSINT tool: Spacebin.
 - **`sqoop`** (medium) — Investigative journalism website providing research tools and email alerts for breaking news
@@ -329,7 +328,7 @@ kind: group-index
 - **`telemundo-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin-code`** (medium) — OSINT tool: Textbin-Code.
-- **`textbin`** (medium) — OSINT tool: TextBin.
+- **`textbin`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text, credentials, or contact frag
 - **`the-comedy-network-television-canada`** (low) — Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/progr
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-economist-world-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom

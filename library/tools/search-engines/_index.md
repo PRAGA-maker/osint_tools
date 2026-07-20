@@ -113,7 +113,7 @@ kind: group-index
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
 - **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
 - **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
-- **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
+- **`blue-search`** (low) — Use when you want an alternative general web search engine (now rebranded GOOD, on the independent Brave index) to cross-check results a mai
 - **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
 - **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
@@ -218,7 +218,7 @@ kind: group-index
 - **`ecosia`** (low) — Use when you want an alternative general web search index (Bing-backed) to cross-check a `name`, `username` or `email` against Google — retu
 - **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
-- **`egerin-search-engine-kurdish`** (medium) — Kurdish surface web search engine covering regional results
+- **`egerin-search-engine-kurdish`** (low) — Use when you have a `name`, `username`, or keyword in a Kurdish context and want Kurdish-language web/news results — returns regional pages 
 - **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
 - **`elocalfinder-hybrid-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`elsevier`** (low) — OSINT tool: Elsevier.
@@ -363,7 +363,7 @@ kind: group-index
 - **`intelligence-x`** (medium) — Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop la
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
 - **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
-- **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`international-standard-classification-of-occupations`** (low) — Use when you have an `employer-org`/job-title lead and want to normalize or interpret an occupation into a standard ISCO code — returns the 
 - **`international-trademark-search`** (medium) — Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and d
 - **`internet-archive`** (medium) — Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, a
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
@@ -571,7 +571,7 @@ kind: group-index
 - **`paperball-news`** (low) — OSINT tool: Paperball.news.
 - **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).
-- **`parseek`** (medium) — OSINT tool: Parseek.
+- **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
 - **`pay-toronto-tickets`** (medium) — City of Toronto site for paying provincial tickets - lists location IDs and corresponding municipalities
 - **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
 - **`pdfsearch-io`** (low) — OSINT tool: Pdfsearch.io.

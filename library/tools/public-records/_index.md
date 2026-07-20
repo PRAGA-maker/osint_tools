@@ -239,7 +239,6 @@ kind: group-index
 - **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
 - **`data-gov`** (low) — OSINT tool: Data.gov.
-- **`data-occrp-org`** (medium) — OSINT tool: data.occrp.org.
 - **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
 - **`data-world`** (low) — OSINT tool: data.world.
 - **`databasd`** (low) — OSINT tool: Databasd.
@@ -628,7 +627,7 @@ kind: group-index
 - **`narcotics-control-reports`** (medium) — Use when you have a country/region and want US State Dept assessments of its drug trafficking and money-laundering landscape — returns count
 - **`nation-master`** (low) — OSINT tool: Nation Master.
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
-- **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`national-center-for-state-courts-united-states`** (low) — Use when you have a US `address`/jurisdiction and want to find the correct state or county court-record system to search — returns pointers 
 - **`national-company-registers`** (medium) — Use when you have an `employer-org` (or a person's directorship) in a specific country and need the official corporate registry — a director
 - **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics
 - **`nationwide-business-directory-australia`** (medium) — Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address

@@ -2,21 +2,21 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7995 total · 3992 full · 4003 stub (49% enriched)
+**Tools:** 7992 total · 3998 full · 3994 stub (50% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3488 · medium: 2545 · high: 1962
+low: 3499 · medium: 2531 · high: 1962
 
 ## Tools by trust
-community: 3484 · unverified: 3153 · trusted: 1347 · untrustworthy: 6 · personal: 5
+community: 3489 · unverified: 3141 · trusted: 1351 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 8/455
 - `archives-cache` — 64/132
-- `communities-forums` — 136/388
+- `communities-forums` — 140/387
 - `dark-web` — 22/117
 - `dating-classifieds` — 54/106
 - `documents-metadata` — 29/314
@@ -31,9 +31,9 @@ community: 3484 · unverified: 3153 · trusted: 1347 · untrustworthy: 6 · pers
 - `opsec-investigator-tooling` — 31/562
 - `people-search` — 244/262
 - `phone` — 134/137
-- `public-records` — 759/1084
-- `search-engines` — 360/901
-- `social-networks` — 670/819
+- `public-records` — 760/1083
+- `search-engines` — 361/901
+- `social-networks` — 670/818
 - `training-ctf` — 0/12
 - `translation-language` — 14/103
 - `transportation` — 100/222
@@ -41,13 +41,13 @@ community: 3484 · unverified: 3153 · trusted: 1347 · untrustworthy: 6 · pers
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1026 leaves
+- `library/tools/public-records` — 1025 leaves
 - `library/tools/search-engines` — 841 leaves
-- `library/tools/social-networks` — 791 leaves
+- `library/tools/social-networks` — 790 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 498 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 381 leaves
+- `library/tools/communities-forums` — 380 leaves
 - `library/tools/image-video-face` — 370 leaves
 - `library/tools/geolocation` — 332 leaves
 - `library/tools/documents-metadata` — 263 leaves
