@@ -16,7 +16,7 @@ kind: group-index
 - **`google`** (medium) — Use when you have almost any selector (`name`, `username`, `email`, `phone`, `domain`) and want the broadest web footprint — returns pages, 
 - **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only
-- **`izito`** (medium) — Multi-type searches (web, video, news, products in one overview), quick result aggregation
+- **`izito`** (low) — Use when you have a `name`, `username`, or keyword and want a fast multi-source aggregate — returns social-profile and address leads pooled 
 - **`mojeek`** (medium) — Use when you have a `name`, `username` or keyword and want results from a truly independent, non-Google/Bing crawler — returns web pages, `s
 - **`startpage`** (medium) — Use when you have a `name`/`username`/keyword and want Google-quality results without a personal search footprint — returns web results anon
 - **`stract`** (medium) — Use when you have a `name`, `username` or keyword and want an independent, non-Google index with custom-rankable results — returns web pages

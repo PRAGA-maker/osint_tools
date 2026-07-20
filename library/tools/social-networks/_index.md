@@ -138,7 +138,6 @@ kind: group-index
 - **`exolyt`** (medium) — Use when you have a TikTok `social-profile`/`username` and want analytics on it — returns posting patterns, engagement, audience geography a
 - **`expand-all-facebook-comments-bookmarklet`** (high) — Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full 
 - **`exportdata`** (high) — Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate link
-- **`extract-meta-data-youtube`** (medium) — OSINT tool: Extract Meta Data YouTube.
 - **`f5bot`** (medium) — Use when you have a `name`, `username` or keyword and want to be emailed whenever it's mentioned on Reddit/Hacker News/Lobsters — returns ma
 - **`facebook-ad-s-link`** (medium) — Use when you have a Facebook Page `social-profile` (or its page-ID) and want to pull every ad it has run — returns the advertiser's other pa
 - **`facebook-applications-khalil-shreateh`** (low) — Collection of tools automating Facebook functions.
@@ -742,7 +741,7 @@ kind: group-index
 - **`yesitsme`** (high) — Use when you have a `name` plus a partial `email` or `phone` and want to find the matching Instagram account — returns the username/social-p
 - **`yoodownload-com`** (high) — Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and m
 - **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
-- **`youfilter-youtube-advanced-search-filter`** (medium) — An extension that displays #YouTube search results in a table with very detailed information about each video (including quick links to the 
+- **`youfilter-youtube-advanced-search-filter`** (low) — Use when you have a YouTube search or channel and want structured results — returns social-profile and username leads (channel owners, conta
 - **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
 - **`yout`** (medium) — OSINT tool: Yout.
 - **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula

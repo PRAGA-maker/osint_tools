@@ -64,7 +64,7 @@ kind: group-index
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
 - **`collegeblender`** (medium) — University lifestyle networking website
 - **`commie`** (medium) — OSINT tool: commie.
-- **`community-screwfix-com`** (medium) — OSINT tool: community.screwfix.com.
+- **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
 - **`computerworld`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computing`** (medium) — News and analysis for UK executives
 - **`context`** (medium) — Use when you have a `username` or keyword and want to find pastes/leaked text shared on ctxt.io — returns email, username and password.
@@ -144,7 +144,6 @@ kind: group-index
 - **`google-com-33`** (medium) — OSINT tool: google.com.
 - **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
-- **`google-com-37`** (medium) — OSINT tool: google.com.
 - **`google-com-39`** (medium) — OSINT tool: google.com.
 - **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.

@@ -38,6 +38,11 @@ relatedTools:
 - familysearch-org
 - familysearch-research-wiki
 - colorado-statewide-marriage-index
+- familysearch-2
+- familysearch-births-and-baptisms-1972-1981-australia
+- familysearch-deaths-and-burials-1816-1980-australia
+- familysearch-free-family-trees-and-genealogy-archives-familysearch-org
+- familysearch-guessing-a-name-variation
 aliases:
 - FamilySearch Alabama Deaths
 - Alabama Deaths 1908-1974

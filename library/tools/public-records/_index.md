@@ -145,7 +145,7 @@ kind: group-index
 - **`canadian-patents-database`** (medium) — Use when you have an inventor/applicant `name` (or a company) and want their Canadian patents, filing dates, and listed addresses — returns 
 - **`canadian-trademarks-database`** (medium) — Use when you have a `name`, brand, or `employer-org` and want Canadian trademark filings tied to them — returns the owner's name, `address` 
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
-- **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
+- **`canlii-database`** (medium) — Use when you have a `name` and want Canadian court and tribunal records mentioning them — returns associate, address, employer-org, and dob 
 - **`canpages-search-canada`** (medium) — Use when you have a Canadian `name`, business, `phone`, or `address` and want directory details — returns business/residential listings, pho
 - **`capstat-nyc`** (medium) — OSINT tool: CAPstat.nyc.
 - **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
@@ -199,7 +199,7 @@ kind: group-index
 - **`cop26-registered-attendees`** (low) — Use when you have a `name`/`employer-org` possibly present at the 2021 UN COP26 summit and want to confirm attendance — returns their listed
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
 - **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
-- **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
+- **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — Use when you have a `name` or `employer-org` and want to check U.S. PPP/pandemic loans — returns employer-org, address, and associate (owner
 - **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
 - **`corporate-information`** (medium) — Use when you have a company `name` and want a consolidated financial/company profile — returns employer-org details, address and executive n
 - **`corporationwiki`** (medium) — Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and 
@@ -389,7 +389,7 @@ kind: group-index
 - **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
 - **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.
 - **`google-scholar-search-tips`** (medium) — Use when you want to sharpen a Google Scholar query (author operators, phrase/field syntax) — returns the official help/reference for search
-- **`gouvernement-du-qu-bec`** (medium) — OSINT tool: Gouvernement du Québec.
+- **`gouvernement-du-qu-bec`** (low) — Use when you have an `employer-org`, `address`, or `geolocation` in Québec and want official open data — returns employer-org, address, and 
 - **`gov-cy`** (high) — Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`,
 - **`gov-hk`** (high) — Use when you have a Hong Kong `employer-org`, `name`, or `address` and want official company/director records — routes to the Companies Regi
 - **`gov-im-2`** (high) — Use when you have a `name` and an Isle of Man life event and want an official birth/death/marriage certificate — returns registered vital-re
@@ -829,7 +829,6 @@ kind: group-index
 - **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
 - **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
 - **`scinapse-io`** (medium) — Use when you have an academic's `name` and want their publications, affiliations and co-authors — returns papers, `employer-org` and `associ
-- **`scite-ai`** (medium) — Enter the article title or DOI to get a list of publications that cite it. Results can be filtered by type (book, review, article), year, au
 - **`scoot`** (medium) — OSINT tool: Scoot.
 - **`scotlandspeople-gov-uk-2`** (high) — Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity 
 - **`scotlandspeople-gov-uk-3`** (high) — Use when you have a `name` and want official Scottish vital records — births, marriages, deaths, divorces, censuses — returns `dob`/life dat

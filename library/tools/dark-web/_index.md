@@ -54,7 +54,7 @@ kind: group-index
 - **`ftse-industry-classification-benchmark-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
-- **`global-security`** (medium) — Global Security database of defense, space, intelligence and homeland security news
+- **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat
 - **`hidden-guns`** (low) — OSINT tool: Hidden Guns.
 - **`honor-guns`** (low) — OSINT tool: Honor Guns.
 - **`human-trafficking-search`** (medium) — Search portal for information on human trafficking with a view to raising awareness and prevention
