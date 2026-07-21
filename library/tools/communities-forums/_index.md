@@ -94,7 +94,7 @@ kind: group-index
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`eweek-technology-news`** (medium) — Use when you have a `name`/`employer-org` in enterprise IT and want press coverage — returns articles, quotes, and role/company context.
 - **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
-- **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
+- **`fark-com`** (low) — Use when you have a `username` and want to read a long-time Fark member's comment history and interests — a veteran news-commentary communit
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`files-pushshift-io-reddit`** (low) — OSINT tool: Files.pushshift.io/reddit.
@@ -145,7 +145,6 @@ kind: group-index
 - **`hgtv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homestay`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`hot-or-not`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`huffington-post-online-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
@@ -277,7 +276,7 @@ kind: group-index
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
 - **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`sciencedaily-com`** (medium) — Use when you have a researcher `name` or `employer-org` and want their reported studies for background — returns science/health research new
-- **`scrt-link`** (medium) — OSINT tool: scrt.link.
+- **`scrt-link`** (low) — Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
 - **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
@@ -331,7 +330,7 @@ kind: group-index
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party
 - **`tilersforums-co-uk`** (medium) — OSINT tool: tilersforums.co.uk.
 - **`time-news`** (low) — Use when you have a `name` that may have drawn national/international press and want to search a major magazine's archive for coverage — ret
-- **`tinychat`** (medium) — Online video chat community
+- **`tinychat`** (low) — Use when you have a `username` and want to check for a presence on Tinychat's video-chat platform — a long-running live video-chat community
 - **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer

@@ -21767,37 +21767,50 @@
   {
     "id": "vandal",
     "name": "Vandal",
-    "description": "extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.",
-    "url": "https://chrome.google.com/webstore/detail/vandal/knoccgahmcfhngbjhdbcodajdioedgdo/related",
+    "description": "Use when you have a `domain`/URL and want to browse its Wayback Machine history efficiently — a browser extension that overlays archive.org captures (calendar/graph views) on the page you're viewing.",
+    "url": "https://chromewebstore.google.com/detail/vandal/knoccgahmcfhngbjhdbcodajdioedgdo",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Fast, in-tab navigation of a page's Wayback Machine captures without leaving the current site.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (AGPLv3); no account required.",
+    "opsec": "passive",
+    "opsecNote": "It queries the Internet Archive's Wayback API for the URL you're on, not the live target site — so it does not touch the subject's infrastructure. As with any extension, install it in a research-only browser profile; the archive lookups are attributable to your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source extension by Vignesh Anand, not affiliated with the Internet Archive; it is a UI wrapper over the public Wayback Machine API.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Vandal Wayback extension",
+      "Vandal archive navigator"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "wayback-machine",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/vandal.md"
   },
   {
@@ -27544,25 +27557,30 @@
   {
     "id": "fark-com",
     "name": "Fark.com",
-    "description": "Online community allowing members to comment on daily news articles",
+    "description": "Use when you have a `username` and want to read a long-time Fark member's comment history and interests — a veteran news-commentary community searchable by handle.",
     "url": "http://www.fark.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a Fark member's accumulated comments and the topics/links they submit as interest and disclosure leads.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search. A paid \"TotalFark\" tier exists for extra features but is not needed to research public comments.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public member pages and comment threads leaks nothing to the subject. Do not register or reply to interact with the target; if you must sign up to view something, use a sock-puppet identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "An established (since 1999) news-aggregation community; content is user-generated commentary, so treat personal claims as self-reported and unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -27570,15 +27588,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Fark",
+      "fark.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "forum"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/fark-com.md"
   },
   {
@@ -29841,46 +29864,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/homestay.md"
-  },
-  {
-    "id": "hot-or-not",
-    "name": "Hot Or Not",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "https://hotornot.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/hot-or-not.md"
   },
   {
     "id": "hot-sheet-news",
@@ -36146,37 +36129,48 @@
   {
     "id": "scrt-link",
     "name": "scrt.link",
-    "description": "OSINT tool: scrt.link.",
+    "description": "Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time, self-destructing link. An operational OpSec utility, not a subject lookup.",
     "url": "https://scrt.link/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Sending passwords/credentials/sensitive notes to a teammate through a link that is destroyed after a single view.",
+    "selectorsIn": [
+      "password"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier covers basic one-time secrets; paid upgrade extends limits and adds features (e.g. larger files, retention options).",
+    "opsec": "passive",
+    "opsecNote": "This is a tool you use, not one you point at a target. The encryption key lives in the URL fragment and is never sent to the server, so scrt.link cannot read your secret. Deliver the link over a separate channel from any password it protects, and remember the secret self-destructs on first open — a \"already viewed\" error can mean interception.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Open-source, privacy-focused one-time-secret service; client-side encryption is verifiable, but as with any hosted service you extend some trust to the operator's uptime and integrity.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "scrt.link",
+      "Scrt one-time secret"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "opsec",
+      "one-time-secret"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/scrt-link.md"
   },
   {
@@ -38649,25 +38643,30 @@
   {
     "id": "tinychat",
     "name": "Tinychat",
-    "description": "Online video chat community",
+    "description": "Use when you have a `username` and want to check for a presence on Tinychat's video-chat platform — a long-running live video-chat community.",
     "url": "http://tinychat.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Checking whether a handle maps to a Tinychat account/room on a veteran live video-chat service.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free random one-on-one video chat; premium features (location/gender filtering) are paid, but not needed for a presence check.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Checking for a profile/handle is passive. Entering a live room or matching with users is active and can expose your camera/presence — never join a room to observe a target without a locked-down sock-puppet setup (no real camera, mic, name, or account).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "An established consumer video-chat service; there is no vetted public directory, so any presence found is user-generated and self-reported.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -38675,15 +38674,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TinyChat",
+      "tinychat.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "video-chat"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/tinychat.md"
   },
   {
@@ -171125,38 +171129,46 @@
   {
     "id": "ytranslatebot",
     "name": "@YTranslateBot",
-    "description": "type text or resend messages to Telegram bot for translate it.",
+    "description": "Use when you have foreign-language Telegram text and need it translated in-app — a Yandex-powered Telegram bot that translates messages you send or forward to it. An operational language utility, not a subject lookup.",
     "url": "https://t.me/YTranslateBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly translating Telegram messages or forwarded text into your language without leaving Telegram.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use for message translation; powered by Yandex Translate.",
+    "opsec": "passive",
+    "opsecNote": "This is a tool you use, not one aimed at a target. But you are sending text to a third-party bot backed by Yandex (Russian infrastructure) — do NOT forward sensitive, case-identifying, or personal content you wouldn't want logged. Use a research-only Telegram account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party Telegram bot (~36k monthly users) using Yandex Translate; unaffiliated with Telegram, so treat both availability and data handling as unverified.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YTranslateBot",
+      "Telegram translate bot"
+    ],
     "tags": [
       "Messengers",
-      "Telegram"
+      "Telegram",
+      "translation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/messaging/ytranslatebot.md"
   },
   {
@@ -241729,35 +241741,53 @@
   {
     "id": "la-county-ca-restaurant-health-violations",
     "name": "LA County CA Restaurant Health Violations",
-    "description": "OSINT tool: LA County CA Restaurant Health Violations.",
+    "description": "Use when you have an `employer-org` (a restaurant/food business name) or `address` in Los Angeles County and want its public health-inspection record — returns address and violation/enforcement history.",
     "url": "https://b2.caspio.com/dp.asp?AppKey=22341000af0b9c98ebf047f1b9f2",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Pulling a named LA County restaurant's health-code violations, inspection scores, and permit-suspension history.",
+    "selectorsIn": [
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free searchable database sourced from LA County Department of Public Health records; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries a third-party database of public inspection records, not the business itself. Nothing is disclosed to any subject. Use a clean browser/IP if you want the search unlinked from your normal browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A Caspio-hosted searchable mirror of LA County Department of Public Health inspection data; the underlying records are official, but this front end is a third-party republication.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "LA County restaurant inspections",
+      "Los Angeles restaurant health violations"
+    ],
+    "tags": [
+      "public-records",
+      "health-inspections",
+      "los-angeles",
+      "business"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/la-county-ca-restaurant-health-violations.md"
   },
   {
@@ -280823,46 +280853,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/fravia-soxoj.md"
-  },
-  {
-    "id": "free-economic-data",
-    "name": "Free Economic Data",
-    "description": "Database of freely available economic, demographic and financial data",
-    "url": "http://www.economy.com/freelunch/default.asp",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/free-economic-data.md"
   },
   {
     "id": "freeware-web-ftp-file-search",
@@ -344886,43 +344876,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/profile/twitonomy.md"
-  },
-  {
-    "id": "twitter-3d",
-    "name": "Twitter 3D",
-    "description": "3D viewer of relationships between twitter users.",
-    "url": "https://twitter.jeffprod.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitter-3d.md"
   },
   {
     "id": "twitter-account-detector",

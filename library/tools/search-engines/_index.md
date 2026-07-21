@@ -264,7 +264,6 @@ kind: group-index
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
-- **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`freewareweb`** (medium) — FTP file search engine
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports

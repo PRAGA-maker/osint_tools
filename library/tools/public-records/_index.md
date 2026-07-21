@@ -524,7 +524,7 @@ kind: group-index
 - **`knoema`** (low) — OSINT tool: Knoema.
 - **`koreabr-com`** (high) — Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-cre
 - **`ky-state-salary-2019`** (medium) — Use when you have a surname and suspect a Kentucky state-government job — returns employer-org (cabinet/department) and 2019 salary to confi
-- **`la-county-ca-restaurant-health-violations`** (medium) — OSINT tool: LA County CA Restaurant Health Violations.
+- **`la-county-ca-restaurant-health-violations`** (medium) — Use when you have an `employer-org` (a restaurant/food business name) or `address` in Los Angeles County and want its public health-inspecti
 - **`labcfrontdoor-co-uk`** (medium) — Use when you have a UK `address`/postcode or trade `employer-org` and want to find the registered "competent person" building tradespeople t
 - **`land-valuation-bermuda`** (medium) — Use when you have a Bermuda property `address` (parish/road) or assessment number and want its official valuation record — returns the prope
 - **`landlordregistrationscotland-gov-uk`** (high) — Use when you have a Scottish rental property `address` (postcode) or a landlord registration number and want to confirm who is the registere
