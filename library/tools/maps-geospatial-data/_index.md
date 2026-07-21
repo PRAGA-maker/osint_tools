@@ -82,7 +82,7 @@ kind: group-index
 - **`mapswitcher`** (low) — Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source m
 - **`mapy-cz`** (low) — Mapping service for Czechia
 - **`merlin`** (low) — Identify birds (visually), through an app.
-- **`military-bases-around-the-world-umap`** (medium) — OSINT tool: Military bases around the world. - uMap.
+- **`military-bases-around-the-world-umap`** (medium) — Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `g
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
 - **`movebank`** (low) — Platform for animal tracking data.
 - **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
@@ -92,7 +92,7 @@ kind: group-index
 - **`one-network`** (medium) — Use when you have a `geolocation`/`address` and a date and want the roadworks, closures, and traffic disruptions there — returns a live/plan
 - **`open-source-munitions-portal`** (low) — A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use a
 - **`openaerialmap`** (low) — Platform for accessing open-licensed satellite and unmanned aerial vehicle (UAV) imagery
-- **`openguessr-com`** (medium) — OSINT tool: openguessr.com.
+- **`openguessr-com`** (medium) — Use when you want to train `geolocation`-from-street-view skills — a free GeoGuessr-style game that drills recognising a place from visual c
 - **`openseamap`** (low) — Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources
 - **`openstreetmap-nominatim`** (medium) — Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocati
 - **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for

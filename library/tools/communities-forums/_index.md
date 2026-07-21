@@ -158,7 +158,7 @@ kind: group-index
 - **`itpro`** (medium) — Enterprise and business IT news
 - **`itv-television-united-kingdom`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`itworldcanada`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`ivpaste`** (medium) — OSINT tool: ivpaste.
+- **`ivpaste`** (medium) — Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email
 - **`joomla`** (low) — OSINT tool: Joomla.
 - **`jsbin`** (medium) — Use when you have a `jsbin.com` link or need to inspect/preserve shared front-end code — returns the saved HTML/CSS/JS of a "bin" (a `docume
 - **`justfornurses-co-uk`** (medium) — Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, memb

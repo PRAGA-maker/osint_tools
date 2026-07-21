@@ -30466,37 +30466,52 @@
   {
     "id": "ivpaste",
     "name": "ivpaste",
-    "description": "OSINT tool: ivpaste.",
-    "url": "https://Ivpaste.com",
+    "description": "Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email`, `password`, and `document-id` fragments.",
+    "url": "https://ivpaste.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching (via site-scoped web search) a pastebin for a subject's identifiers appearing in leaked or dumped text.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public pastebin; no account needed to create or view pastes.",
+    "opsec": "passive",
+    "opsecNote": "Reading public pastes is passive. Treat any credentials/PII you find as sensitive evidence — never test found passwords or reuse leaked data; that would be active and likely illegal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A minor public pastebin; pastes are anonymous and unverified, and content can be fabricated, so corroborate anything found before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ivpaste.com"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks",
+      "paste-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ivpaste.md"
   },
   {
@@ -158941,36 +158956,51 @@
   },
   {
     "id": "military-bases-around-the-world-umap",
-    "name": "Military bases around the world. - uMap",
-    "description": "OSINT tool: Military bases around the world. - uMap.",
+    "name": "Military Bases Around the World (uMap)",
+    "description": "Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `geolocation`s.",
     "url": "https://umap.openstreetmap.fr/en/map/military-bases-around-the-world_510207",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Cross-referencing a location or image against a crowd-mapped global layer of military bases and installations.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free community uMap layer on OpenStreetMap infrastructure; no account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public uMap layer is passive and touches only the OSM/uMap host, not any subject or facility. Do not attempt to physically approach or photograph active military sites based on a pin — that carries real legal risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A crowd-sourced OpenStreetMap uMap; pins are user-contributed and may be incomplete, approximate, or dated — confirm any pin against satellite imagery.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "military bases uMap",
+      "military bases world map"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "military",
+      "reference-map"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/military-bases-around-the-world-umap.md"
   },
   {
@@ -159390,44 +159420,54 @@
   },
   {
     "id": "openguessr-com",
-    "name": "openguessr.com",
-    "description": "OSINT tool: openguessr.com.",
+    "name": "OpenGuessr",
+    "description": "Use when you want to train `geolocation`-from-street-view skills — a free GeoGuessr-style game that drills recognising a place from visual clues alone.",
     "url": "https://openguessr.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Practising and sharpening the \"where was this photo taken\" reflex on free street-level panoramas.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to play, no account required; a free GeoGuessr alternative using open panorama imagery.",
+    "opsec": "passive",
+    "opsecNote": "A practice game against random public street-view imagery — there is no live subject involved. Fully passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party geo-guessing game built on open/street-view imagery; it's a training aid, so \"trust\" concerns accuracy of the game, not investigative data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "openguessr.com",
+      "OpenGuessr geo game"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "training",
+      "geolocation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/openguessr-com.md"
   },
   {
@@ -258068,37 +258108,53 @@
   {
     "id": "scoot",
     "name": "Scoot",
-    "description": "OSINT tool: Scoot.",
+    "description": "Use when you have a UK business `name`/`employer-org` and a `geolocation` and want its listing — returns `address`, `phone`, and `domain`.",
     "url": "http://www.scoot.co.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a UK business's contact details (address, phone, website) from a national business directory.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view UK business listings; no account required to browse.",
+    "opsec": "passive",
+    "opsecNote": "A public directory lookup that touches only Scoot's servers; the listed business is not notified. Routine sock-puppet browsing is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A UK business directory aggregating listings from multiple feeds; data can be stale or duplicated, so confirm contact details against a second source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "scoot.co.uk"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "uk",
+      "business-directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scoot.md"
   },
   {
@@ -286679,24 +286735,25 @@
   {
     "id": "ivmachiavelli-osint-team-links",
     "name": "IVMachiavelli OSINT Team Links",
-    "description": "GitHub-hosted curated list of OSINT links/tools.",
+    "description": "Use when you need to find the right OSINT tool for a task — a large community-curated GitHub directory of OSINT links organized by category.",
     "url": "https://github.com/IVMachiavelli/OSINT_Team_Links",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Browsing a community OSINT link directory",
+    "bestFor": "Discovering, by category, community-vetted OSINT tools and resources when your own toolkit has a gap.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account needed to read (a free GitHub account only to star/fork).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public GitHub repo is passive. OpSec depends on the third-party tools you then visit — vet and use each behind sock-puppet hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community GitHub list.",
+    "trustNote": "A long-running, well-starred community OSINT link collection (600+ stars, recently updated); it's a curated index, so verify each linked tool is still live and reputable before use.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -286705,15 +286762,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OSINT_Team_Links",
+      "IVMachiavelli OSINT links"
+    ],
     "tags": [
       "tool-collection",
       "awesome-list",
-      "github"
+      "github",
+      "directory"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ivmachiavelli-osint-team-links.md"
   },
   {
@@ -297410,24 +297472,33 @@
   {
     "id": "ratedpeople-united-kingdom",
     "name": "RatedPeople (United Kingdom)",
-    "description": "Website related to tradesman ratings",
+    "description": "Use when you have a UK tradesperson's `name`/`employer-org` or a `geolocation` and want their trade profile — returns `social-profile`, `employer-org`, reviews, and service area.",
     "url": "http://www.ratedpeople.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a UK tradesperson's business profile, reviews, gallery, and coverage area.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for homeowners to browse tradesperson profiles and post jobs; tradespeople pay for leads, but their public profiles are viewable without payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing tradesperson profiles is passive and does not notify them. Posting a job would generate outreach and expose you — don't post a job just to investigate; stay on the public profiles.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large, active UK trade marketplace; reviews are user-submitted and profiles self-managed, so treat stated business details as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -297436,15 +297507,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ratedpeople.com",
+      "Rated People"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "uk",
+      "trades"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ratedpeople-united-kingdom.md"
   },
   {

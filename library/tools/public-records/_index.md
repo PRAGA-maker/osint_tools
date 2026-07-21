@@ -823,7 +823,7 @@ kind: group-index
 - **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
 - **`scholarcy`** (low) — Use when you have a long `document-id` (paper, report, PDF) and want its key facts fast — returns an AI summary of concepts, findings, figur
 - **`scinapse-io`** (medium) — Use when you have an academic's `name` and want their publications, affiliations and co-authors — returns papers, `employer-org` and `associ
-- **`scoot`** (medium) — OSINT tool: Scoot.
+- **`scoot`** (medium) — Use when you have a UK business `name`/`employer-org` and a `geolocation` and want its listing — returns `address`, `phone`, and `domain`.
 - **`scotlandspeople-gov-uk-2`** (high) — Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity 
 - **`scotlandspeople-gov-uk-3`** (high) — Use when you have a `name` and want official Scottish vital records — births, marriages, deaths, divorces, censuses — returns `dob`/life dat
 - **`scottishepcregister-org-uk`** (medium) — Use when you have a Scottish `address` or postcode and want the property's Energy Performance Certificate — returns property characteristics

@@ -373,7 +373,7 @@ kind: group-index
 - **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n
 - **`itar-tass`** (low) — OSINT tool: Itar-Tass.
 - **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
-- **`ivmachiavelli-osint-team-links`** (medium) — GitHub-hosted curated list of OSINT links/tools.
+- **`ivmachiavelli-osint-team-links`** (medium) — Use when you need to find the right OSINT tool for a task — a large community-curated GitHub directory of OSINT links organized by category.
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
 - **`ixigo`** (medium) — India travel information site
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
@@ -599,7 +599,7 @@ kind: group-index
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
 - **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe
 - **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
-- **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
+- **`ratedpeople-united-kingdom`** (medium) — Use when you have a UK tradesperson's `name`/`employer-org` or a `geolocation` and want their trade profile — returns `social-profile`, `emp
 - **`ratemyemployer-canada`** (low) — Use when you have an `employer-org` in Canada and want employee reviews and context — returns workplace ratings, location/industry and revie
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
 - **`ratemyteachers-north-america`** (medium) — Use when you have a teacher's `name` or a school and want to confirm an `employer-org` affiliation and location — returns school/district li
