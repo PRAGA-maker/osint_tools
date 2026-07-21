@@ -61,7 +61,7 @@ kind: group-index
 - **`ama-assn-org`** (high) — Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practi
 - **`amazon-asin-finder`** (low) — Use when you have an Amazon `document-id` (ASIN) or product URL tied to a seller and want product/seller intelligence — returns `employer-or
 - **`amazon-co-uk`** (medium) — Use when you have a `name` and want to find their public Amazon wedding/gift registry — returns partner/associate names, approximate locatio
-- **`amazon-com`** (medium) — OSINT tool: Amazon.com.
+- **`amazon-com`** (medium) — Use when you have a `name` and want to find a person's public Amazon wedding/baby registry — returns the registrant `name`, an approximate c
 - **`amazon-scraper`** (medium) — scraped detail information about list of items
 - **`ancestor-hunt`** (high) — Use when you have a `name` and want a curated directory of free genealogy/public-record collections (births, deaths, marriages, obituaries, 
 - **`ancestry-family-search-engine-united-kingdom`** (medium) — Use when you have a `name` and want UK genealogical/historical records — returns relatives (`associate`), historical `address`es, and `dob`/
@@ -557,7 +557,7 @@ kind: group-index
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
-- **`library-of-congress-united-states`** (medium) — Largest library in the world allowing users to search for books, audio recordings, videos, newspapers, maps, and more
+- **`library-of-congress-united-states`** (medium) — Use when you have a `name`, place or topic and want historical records — newspapers, directories, photos, manuscripts, maps — that can place
 - **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
 - **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo
 - **`list-of-criminal-charges-findlaw`** (high) — Use when you have a charge or offense name from a court/arrest record and want to understand what it means — returns plain-English legal def
@@ -855,7 +855,7 @@ kind: group-index
 - **`security-licence-status-verification`** (medium) — Use when you have a `name`, business name or licence number and want to confirm a British Columbia security-worker/business licence — return
 - **`seethroughny-pensions`** (medium) — Use when you have a `name` of a New York public-sector retiree and want their pension record — returns employer-org, retirement date and ann
 - **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
-- **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
+- **`sellerapp-com-amazon-reverse-asin-search`** (low) — Use when you have an Amazon product (ASIN/URL) and want the search keywords it ranks for — returns competitor keyword lists (product/seller 
 - **`semantic-scholar`** (medium) — Use when you have a `name` in academia and want their papers, co-authors and affiliations as a free citation graph — returns employer-org, a
 - **`serpstat`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns keywords, competitors, backlinks and estimated visibility to profi
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r

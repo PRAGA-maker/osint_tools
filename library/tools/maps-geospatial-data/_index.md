@@ -67,7 +67,7 @@ kind: group-index
 - **`inciweb`** (medium) — Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
-- **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
+- **`kayak-airlines-search-engine`** (low) — Use when you have an airline name or IATA code and want its official identifier and contact line — returns the airline's name, two-letter co
 - **`landmark-toolpie-com`** (medium) — Use when you have an `image` showing a recognizable landmark and want to identify it — returns the landmark's name and `geolocation`/`addres
 - **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
 - **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu

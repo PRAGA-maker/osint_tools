@@ -156,7 +156,7 @@ kind: group-index
 - **`netbootcamp-s-people-tool`** (high) — Use when you have a `name` (or screen name / phone / address) and want one console that fires the query into dozens of US people-search and 
 - **`neutrosint`** (high) — Use when you have an `email` or `username` and want to confirm whether it exists as a Proton Mail address (and get its PGP key-creation date
 - **`new-canada-411`** (high) — Use when you have a Canadian `name`, `phone` or `address` and want the matching listing — returns name, address, phone and (via same-address
-- **`newswise`** (medium) — OSINT tool: Newswise.
+- **`newswise`** (medium) — Use when you have a topic or expert `name` and want the researchers/spokespeople and institutions behind news — returns expert `name`s, thei
 - **`next-door`** (high) — Use when you have an `address`/neighborhood and want the residents, local posts, and real names tied to it — returns names and associates, b
 - **`nigeriaphonebook`** (high) — Use when you have a Nigerian `phone` or `name` and want caller/owner identification or a business listing — returns name, phone, and address
 - **`no-1-free-people-search`** (high) — Use when you have a `name` and want a web-mention aggregation of that person (links, news, images, profiles) — returns `social-profile`s, re

@@ -519,7 +519,7 @@ kind: group-index
 - **`skyzoo-blue`** (high) — Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-
 - **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
 - **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — Use when you have a VK (VKontakte) numeric user id and want hidden profile metadata without logging in — returns account creation/last-seen 
-- **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
+- **`sn0int-framework-module-for-pornhub`** (medium) — Use when you have a Pornhub `username`/profile and want its linked identities — returns the display `name`, linked `social-profile`s (Instag
 - **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
@@ -602,7 +602,7 @@ kind: group-index
 - **`thumbtube-com`** (high) — Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/
 - **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
 - **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
-- **`tiktake-net`** (medium) — TikTok Video Downloader
+- **`tiktake-net`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to save the original, watermark-free clip for analysis or evidence — return
 - **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down

@@ -20590,43 +20590,53 @@
   },
   {
     "id": "perma-cc",
-    "name": "perma.cc",
-    "description": "OSINT tool: perma.cc.",
+    "name": "Perma.cc",
+    "description": "Use when you have a web page `domain`/URL that is evidence and want a permanent, citable archived snapshot — returns a stable perma-link (`document-id`) that won't rot or be edited.",
     "url": "https://perma.cc/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Creating tamper-evident, permanent archived snapshots of web pages for evidence preservation and citation.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Viewing existing perma-links is free and open to anyone. Creating links is free for users affiliated with participating libraries/courts and for a limited monthly quota; heavier use needs a paid/registrar tier.",
+    "opsec": "passive",
+    "opsecNote": "Perma.cc's servers (not your machine) fetch and capture the target page, so the capture request comes from Perma's infrastructure, not your IP. Creating a link ties the snapshot to your Perma account, so use an appropriate account. Viewing a perma-link is anonymous.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Harvard Law School Library Innovation Lab in partnership with a consortium of libraries; a scholarly-grade, tamper-evident web-archiving service.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "perma.cc",
+      "Perma"
+    ],
     "tags": [
       "archive",
-      "Archive & Cached Related Sites"
+      "Archive & Cached Related Sites",
+      "web-archiving",
+      "evidence-preservation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/perma-cc.md"
   },
   {
@@ -158695,26 +158705,31 @@
   },
   {
     "id": "kayak-airlines-search-engine",
-    "name": "Kayak Airlines Search Engine",
-    "description": "Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points",
-    "url": "http://www.kayak.com/airlines",
+    "name": "Kayak Airlines Directory",
+    "description": "Use when you have an airline name or IATA code and want its official identifier and contact line — returns the airline's name, two-letter code and customer/contact phone number.",
+    "url": "https://www.kayak.com/airlines",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick global directory mapping airline names to IATA codes and contact phone numbers.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference directory; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference page — passive and anonymous, with no target interaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "Convenience directory on a commercial travel-metasearch site (Kayak); useful for airline code/contact lookup, not a data source about individuals.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -158722,18 +158737,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "kayak-travel-search-engine"
     ],
+    "aliases": [
+      "Kayak airlines list",
+      "kayak.com/airlines"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "aviation"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/kayak-airlines-search-engine.md"
   },
   {
@@ -202719,37 +202738,50 @@
   {
     "id": "newswise",
     "name": "Newswise",
-    "description": "OSINT tool: Newswise.",
-    "url": "http://www.newswise.com",
+    "description": "Use when you have a topic or expert `name` and want the researchers/spokespeople and institutions behind news — returns expert `name`s, their `employer-org` (university/institution) and contact routes from research press releases.",
+    "url": "https://www.newswise.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding named academic/research experts and their institutions via a research-news and expert-source wire.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; press-release distribution and full journalist features may require a free registration.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching is passive and anonymous. Contacting an expert or listed PIO reveals an identity — use a sock-puppet journalist persona, not your real one, and never approach a subject's colleagues from a traceable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established research-news wire aggregating university and institutional press releases and an expert directory; content is issued by the institutions, so it's authentic but promotional.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "newswise.com"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "research-news",
+      "press-releases"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/people-search/newswise.md"
   },
   {
@@ -217393,14 +217425,14 @@
   },
   {
     "id": "amazon-com",
-    "name": "Amazon.com",
-    "description": "OSINT tool: Amazon.com.",
+    "name": "Amazon Registry Search",
+    "description": "Use when you have a `name` and want to find a person's public Amazon wedding/baby registry — returns the registrant `name`, an approximate city/state `address` and their listed items.",
     "url": "https://www.amazon.com/gp/registry/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person's public Amazon wedding/baby gift registry by name to confirm identity, location and life events.",
     "selectorsIn": [
       "name"
     ],
@@ -217408,37 +217440,39 @@
       "name",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no Amazon account required to search public gift registries.",
+    "opsec": "passive",
+    "opsecNote": "Searching public registries is passive and anonymous to the target. Do NOT purchase items or contact the registrant — that reveals you and is intrusive. Registries are self-published, so treat the data as volunteered public info.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Amazon's own first-party registry search; the data is exactly what registrants chose to make public, so it is authentic but self-reported.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "amazon-registry-search"
+    ],
+    "aliases": [
+      "Amazon.com registry search",
+      "Amazon wedding/baby registry finder"
+    ],
     "tags": [
-      "registry"
+      "registry",
+      "amazon",
+      "wishlist"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "amazon",
-      "amazon-pay",
-      "amazon-registry-search",
-      "amazon-rekognition",
-      "amazon-sns",
-      "aws-public-datasets",
-      "us-east-1-console-aws-amazon-com"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/amazon-com.md"
   },
   {
@@ -243967,53 +244001,59 @@
   {
     "id": "library-of-congress-united-states",
     "name": "Library of Congress (United States)",
-    "description": "Largest library in the world allowing users to search for books, audio recordings, videos, newspapers, maps, and more",
-    "url": "http://www.loc.gov",
+    "description": "Use when you have a `name`, place or topic and want historical records — newspapers, directories, photos, manuscripts, maps — that can place or identify a person — returns catalog records, digitized documents and mentions.",
+    "url": "https://www.loc.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Deep historical/archival research — digitized newspapers, city directories, photographs and manuscripts that name and place people.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
+      "name",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public access to catalogs and vast digitized collections; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching an open government library catalog is fully passive and anonymous — nothing is exposed to any individual and no login is used.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Library of Congress is the US national library; its catalogs and digitized primary sources are authoritative archival records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "library-of-congress-ask-a-librarian",
       "newspaper-navigator",
       "usa-telephone-directory-collection",
       "webarchive-loc-gov"
     ],
+    "aliases": [
+      "LOC",
+      "loc.gov",
+      "Library of Congress"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "academic-scholarly-research-tools",
+      "historical-records"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/library-of-congress-united-states.md"
   },
   {
@@ -260190,39 +260230,50 @@
   },
   {
     "id": "sellerapp-com-amazon-reverse-asin-search",
-    "name": "Sellerapp.com. Amazon Reverse ASIN search",
-    "description": "OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.",
+    "name": "SellerApp Amazon Reverse ASIN Search",
+    "description": "Use when you have an Amazon product (ASIN/URL) and want the search keywords it ranks for — returns competitor keyword lists (product/seller market intel, not personal data).",
     "url": "https://www.sellerapp.com/amazon-reverse-asin.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-ASIN keyword extraction — seeing what search terms an Amazon listing ranks for.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "A free reverse-ASIN lookup is offered; deeper keyword volume, tracking and bulk features sit behind SellerApp's paid seller-analytics plans.",
+    "opsec": "passive",
+    "opsecNote": "You query SellerApp's own index with a product ASIN; nothing touches the seller directly and no target individual is involved. Only SellerApp sees the ASIN you look up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Commercial Amazon seller-analytics vendor; keyword data is estimated/derived and aimed at e-commerce competitive research, not identity investigation.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SellerApp Reverse ASIN",
+      "Amazon reverse ASIN"
+    ],
     "tags": [
       "Tender/shipment information search",
-      "Amazon"
+      "Amazon",
+      "ecommerce-intel"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sellerapp-com-amazon-reverse-asin-search.md"
   },
   {
@@ -337816,39 +337867,52 @@
   },
   {
     "id": "sn0int-framework-module-for-pornhub",
-    "name": "Sn0int framework module for Pornhub",
-    "description": "OSINT tool: Sn0int framework module for Pornhub.",
+    "name": "sn0int module for Pornhub",
+    "description": "Use when you have a Pornhub `username`/profile and want its linked identities — returns the display `name`, linked `social-profile`s (Instagram, Twitter, Snapchat, ModelHub, FanCentro) and online status, via the sn0int OSINT framework.",
     "url": "https://sn0int.com/r/kpcyrd/pornhub",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Pivoting a Pornhub profile to its linked mainstream social accounts inside the sn0int framework.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source (GPL-3.0) module for the free sn0int framework; you self-host sn0int.",
+    "opsec": "passive",
+    "opsecNote": "The module fetches the target's PUBLIC Pornhub profile from YOUR IP with no login; the account owner is not notified. Requests originate from you, so run sn0int behind a VPN/sock-puppet, especially given the sensitive platform.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Community module in kpcyrd's well-regarded open-source sn0int framework; it parses public profile HTML, so it breaks if Pornhub changes its page structure.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sn0int pornhub module",
+      "kpcyrd/pornhub"
+    ],
     "tags": [
       "Social Media",
-      "Pornhub"
+      "Pornhub",
+      "sn0int",
+      "username-pivot"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sn0int-framework-module-for-pornhub.md"
   },
   {
@@ -342495,38 +342559,49 @@
   {
     "id": "tiktake-net",
     "name": "TikTake.net",
-    "description": "TikTok Video Downloader",
+    "description": "Use when you have a TikTok video URL (`social-profile`) and want to save the original, watermark-free clip for analysis or evidence — returns the downloadable video file in original quality.",
     "url": "https://tiktake.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Downloading a TikTok video without watermark, in original quality, by pasting its URL.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free; the operator states there are no ads and no account is required.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public video URL into a third-party downloader; the TikTok user is not notified. The downloader sees which video you fetch, so use a sock-puppet session for sensitive work. Preserve/download BEFORE any outreach so the original clip is captured if the poster later deletes it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party downloader run by an individual; convenient and currently ad-free, but unaffiliated with TikTok and could change or disappear, and downloaded files should be scanned.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tiktake.net",
+      "TikTok video downloader"
+    ],
     "tags": [
       "Social Media",
-      "TikTok"
+      "TikTok",
+      "video-download"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktake-net.md"
   },
   {

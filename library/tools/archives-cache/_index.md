@@ -75,7 +75,7 @@ kind: group-index
 - **`onwebchange`** (low) — OSINT tool: OnWebChange.
 - **`osint2h22v-substack-com`** (medium) — OSINT tool: osint2h22v.substack.com.
 - **`pagecached-com`** (medium) — Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yah
-- **`perma-cc`** (medium) — OSINT tool: perma.cc.
+- **`perma-cc`** (medium) — Use when you have a web page `domain`/URL that is evidence and want a permanent, citable archived snapshot — returns a stable perma-link (`d
 - **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)
 - **`replayweb`** (medium) — Use when you have a WARC/WACZ web-archive file and want to browse it as a live site — returns an interactive replay of the captured pages, i
 - **`ricks-apps-com`** (medium) — OSINT tool: ricks-apps.com.
