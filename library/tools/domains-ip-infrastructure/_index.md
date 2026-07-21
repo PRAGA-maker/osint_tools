@@ -79,7 +79,7 @@ kind: group-index
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
 - **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
 - **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
-- **`arin-net`** (medium) — OSINT tool: arin.net.
+- **`arin-net`** (medium) — Use when you have an `ip-address` or ASN and want its full historical registration chain — returns the organizations, contacts, and domain/o
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted

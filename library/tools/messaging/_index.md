@@ -18,7 +18,7 @@ kind: group-index
 ## Skills here
 - **`2-skypeipresolver-net`** (medium) — OSINT tool: 2- Skypeipresolver.net.
 - **`2chat`** (high) — Use when you have a phone number and need to confirm whether it has an active WhatsApp account.
-- **`3-webresolver`** (medium) — OSINT tool: 3- Webresolver.
+- **`3-webresolver`** (low) — Use when you have a `username`, `email`, `phone`, or `ip-address` and want grey-hat resolver lookups (legacy Skype-to-IP, phone info, leaked
 - **`4-vedbex-email-to-skype`** (medium) — OSINT tool: 4- Vedbex: Email to Skype.
 - **`agentfns-bot`** (low) — Use when you have a Russian company INN/OGRN (or counterparty name) and need instant official business-registry details via Telegram.
 - **`aicontentfy-com`** (low) — Use when you need to learn Google-dork techniques for surfacing public WhatsApp group invite links — this is a how-to article, not a tool.

@@ -276,7 +276,7 @@ kind: group-index
 - **`surging-seas-risk-zone-map`** (medium) — Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocati
 - **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.
 - **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map
-- **`taste-atlas`** (medium) — Worldwide online map of national cuisine. There are thousands of dishes typical of countries or regions as a whole, as well as small towns.
+- **`taste-atlas`** (low) — Use when you have an `image` of an identifiable regional dish and want to narrow the `geolocation` where it's traditional — returns a countr
 - **`terrafly-map-united-states`** (high) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery
 - **`the-haunted-map`** (low) — Use when you have a `geolocation` and want to check whether it coincides with a catalogued "haunted"/reported-sighting location — a niche cr
 - **`the-meddin-bike-sharing-world-map`** (low) — Use when you have a `geolocation` and want to identify the bike-share system, operator, and station layout there — returns local bikeshare d

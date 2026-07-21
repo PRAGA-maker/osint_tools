@@ -898,7 +898,7 @@ kind: group-index
 - **`state-public-records-laws`** (high) — Use when you need to obtain a US public record about a person and want to know each state's records-law rules and file the request — returns
 - **`statista`** (low) — OSINT tool: Statista.
 - **`statistics-and-data`** (high) — Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-lev
-- **`statistics-canada`** (medium) — OSINT tool: Statistics Canada.
+- **`statistics-canada`** (low) — Use when you have a Canadian `address`, postal area, or `employer-org` and want authoritative demographic, economic, and community context —
 - **`street-name-changes`** (high) — Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the
 - **`superpages-directory-united-states`** (medium) — Search directory for local businesses and retailers
 - **`supreme-court-of-canada-cases`** (high) — Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (

@@ -65,13 +65,13 @@ kind: group-index
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
 - **`app-store-custom-search-engine`** (medium) — OSINT tool: App Store Custom Search Engine.
 - **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
-- **`arabo-com`** (medium) — OSINT tool: Arabo.com.
+- **`arabo-com`** (low) — Use when you have a `name`, business, or topic in the Arab world and want Arabic-language sites a Western engine misses — returns social-pro
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
 - **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
 - **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
-- **`asian-development-bank`** (medium) — Asian Development Banks website providing statistics, data, and research publications
+- **`asian-development-bank`** (low) — Use when you have an `employer-org`, project, or contractor tied to development work in Asia-Pacific and want official project, procurement,
 - **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
 - **`ask-metafilter`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`ask`** (low) — OSINT tool: Ask.
@@ -85,7 +85,7 @@ kind: group-index
 - **`baidu-china`** (low) — OSINT tool: Baidu (China).
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
 - **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
-- **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
+- **`ballotpedia-united-states`** (medium) — Use when you have a `name` of a US politician, candidate, or public official and want their verified biography, offices held, and campaign/e
 - **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
 - **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
 - **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
@@ -219,7 +219,7 @@ kind: group-index
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
 - **`egerin-search-engine-kurdish`** (low) — Use when you have a `name`, `username`, or keyword in a Kurdish context and want Kurdish-language web/news results — returns regional pages 
 - **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
-- **`elocalfinder-hybrid-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`elocalfinder-hybrid-meta-search`** (low) — Use when you have a US `name` or business term and want the same query run across several web engines side by side — returns social-profile 
 - **`elsevier`** (low) — OSINT tool: Elsevier.
 - **`encyclopedia-of-math`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on m
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
