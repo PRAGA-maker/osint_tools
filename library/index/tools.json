@@ -37179,37 +37179,52 @@
   {
     "id": "spacebin",
     "name": "Spacebin",
-    "description": "OSINT tool: Spacebin.",
+    "description": "Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expose passwords, emails, and personal data.",
     "url": "https://spaceb.in/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking an open-source paste host for leaked dumps or mentions tied to a selector.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "password",
+      "email",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-free, donation-supported open-source pastebin; accounts optional.",
+    "opsec": "passive",
+    "opsecNote": "Reading public pastes is passive. It lacks full-text search, so query via Google (`site:spaceb.in \"selector\"`); never paste your own case data, as content is public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A generic open-source paste host; anonymous and unmoderated, so any data found is unverified and possibly fabricated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Spacebin",
+      "spaceb.in"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/spacebin.md"
   },
   {
@@ -37849,25 +37864,31 @@
   {
     "id": "techrepublic",
     "name": "TechRepublic",
-    "description": "Online articles and news related to computers, gadgets, technology, and future trends",
+    "description": "Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads mentioning the subject.",
     "url": "http://www.techrepublic.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding enterprise-IT and technology trade coverage that names a person or company.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Articles are free to read; some downloads/premium research require a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading published trade articles is passive and reveals nothing to the subject; prefer site-scoped web search over signing in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "An established technology/enterprise-IT trade publication; edited journalism, but a secondary source to corroborate.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -37875,15 +37896,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TechRepublic",
+      "techrepublic.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "tech-trade-press"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/techrepublic.md"
   },
   {
@@ -47579,42 +47604,52 @@
   {
     "id": "full-dp-com",
     "name": "full-dp.com",
-    "description": "OSINT tool: full-dp.com.",
+    "description": "Use when you have a `username` and want the full-resolution profile picture behind a thumbnail — returns the HD display-photo `image` for reverse-image and face work.",
     "url": "https://full-dp.com/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing/downloading a full-size profile photo from a username where the platform only shows a small thumbnail.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
+      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view/download; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Retrieves a publicly hosted profile image without following, messaging, or notifying the subject. Route through a sock-puppet browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party display-picture fetcher; it only surfaces the platform's already-public profile image, but the operator and freshness are not accountable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "full-dp",
+      "full-dp.com",
+      "full DP viewer"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "profile-picture",
+      "image"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/full-dp-com.md"
   },
   {
@@ -48004,55 +48039,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dating-classifieds/hoobly-classified-ads.md"
-  },
-  {
-    "id": "hubite",
-    "name": "Hubite",
-    "description": "Advanced OnlyFans search engine.",
-    "url": "https://hubite.com/en/onlyfans-search/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "Advanced filtering of OnlyFans creators",
-    "selectorsIn": [
-      "name",
-      "username",
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "creator-search",
-      "adult"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-onlyfans-profiles"
-    ],
-    "_file": "library/tools/dating-classifieds/hubite.md"
   },
   {
     "id": "justlanded-classified-ads-worldwide",
@@ -129445,43 +129431,50 @@
   },
   {
     "id": "ufo-reporting-map",
-    "name": "UFO reporting map",
-    "description": "YouMap of UFO sightings reporting around the USA",
+    "name": "UFO Reporting Map (YouMap)",
+    "description": "Use when you have a `geolocation`/time and want crowd-posted sighting reports there — a niche map of user \"UFO\" posts that can occasionally corroborate an unusual event witness.",
     "url": "https://youmap.com/app/2-ufo-reporting/posts",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing crowd-submitted \"UFO/anomaly\" sighting posts pinned to locations, as a very niche corroboration layer.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Viewing posts on the YouMap web/app is free; full app features may prompt the mobile app or an account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public crowd-map is passive and anonymous. Note posts themselves are user-generated and may include the poster's own location metadata.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A crowd-sourced YouMap channel of anonymous \"sighting\" posts; content is unverified anecdote with no vetting.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UFO Reporting Map",
+      "YouMap UFO reporting"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
+      "Anomalies and \"Lost Places\"",
+      "crowd-map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ufo-reporting-map.md"
   },
   {
@@ -187663,46 +187656,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/security-in-a-box.md"
-  },
-  {
-    "id": "self-destructing-cookies",
-    "name": "Self-Destructing Cookies",
-    "description": "Automatic cookie cleanup to prevent cross-session tracking",
-    "url": "https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling",
-      "anonymous-browsing"
-    ],
-    "bestFor": "Automatic cookie cleanup to prevent cross-session tracking",
-    "input": "Firefox extension installation",
-    "output": "Automatic cookie deletion on tab close with per-site whitelist support",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Reduces cookie-based tracking; modern Firefox’s built-in cookie management may provide equivalent protection.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/self-destructing-cookies.md"
   },
   {
     "id": "send",
@@ -266708,32 +266661,33 @@
   },
   {
     "id": "us-institute-of-peace",
-    "name": "US Institute of Peace",
-    "description": "United States Institute of Peace website, providing a special report on the use of the internet in modern terrorism",
+    "name": "United States Institute of Peace (USIP)",
+    "description": "Use when a case touches conflict, extremism, or a fragile region and you need vetted research and named actors/organizations — returns reports and employer-org/associate leads, not individual records.",
     "url": "http://www.usip.org/publications/wwwterrornet-how-modern-terrorism-uses-the-internet",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative research on conflict, terrorism, and fragile states, and the actors/organizations involved.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free publications and research library; no account required. (The harvested deep link is an older report; browse usip.org for current material.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a research institute's publications is passive and discloses nothing about a subject; this is background literature, not a targeted query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "USIP is a US congressionally funded national institute; its research is authoritative analysis, though secondary to primary records.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -266741,15 +266695,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USIP",
+      "United States Institute of Peace",
+      "usip.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "academic-scholarly-research-tools"
+      "academic-scholarly-research-tools",
+      "conflict-research"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-institute-of-peace.md"
   },
   {
@@ -288851,46 +288810,6 @@
       "forum-officer-com"
     ],
     "_file": "library/tools/search-engines/law-enforcement-resource-portal.md"
-  },
-  {
-    "id": "law-net-united-states",
-    "name": "Law.net (United States)",
-    "description": "Legal-related search engine for locating legal representives, legal resources, action groups, bar associations, publications, legal services, attorneys, barristers, etc",
-    "url": "http://www.law.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/law-net-united-states.md"
   },
   {
     "id": "lawforkids",
@@ -330684,38 +330603,55 @@
   },
   {
     "id": "open-source",
-    "name": "open-source",
-    "description": "OSINT tool: open-source.",
+    "name": "SteamReveal (OSINT-steam)",
+    "description": "Use when you have a Steam `username`/ID and want its social graph and probable location — returns close-friend associates and a geographic estimate from public profile data.",
     "url": "https://github.com/Berchez/OSINT-steam",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping a Steam profile's close friends and estimating location from its public social network.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open source (self-hosted web app); no paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Analyzes only public Steam data via the Steam Web API, so the target isn't touched or notified. You supply a Steam API key; run it locally so queries originate from your controlled environment.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An open-source project (TypeScript/Next.js) on GitHub; results are heuristic inferences from public data, reproducible by inspecting the code.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SteamReveal",
+      "OSINT-steam",
+      "Berchez/OSINT-steam"
+    ],
     "tags": [
-      "steam"
+      "steam",
+      "social-graph",
+      "gaming-osint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/open-source.md"
   },
   {
@@ -338103,47 +338039,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/snaptik-app.md"
-  },
-  {
-    "id": "snapvip",
-    "name": "Snapvip",
-    "description": "OSINT tool: Snapvip.",
-    "url": "https://snapvip.io",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "snapchat"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/snapvip.md"
   },
   {
     "id": "snradar",
@@ -359334,40 +359229,57 @@
   {
     "id": "faxvin",
     "name": "FaxVIN",
-    "description": "OSINT tool: FaxVIN.",
+    "description": "Use when you have a `vin` or US `vehicle-plate` and want the vehicle's identity and history — returns free decoded specs plus (paid) title, accident, theft, and odometer records.",
     "url": "https://www.faxvin.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Decoding a VIN and pulling US vehicle history (title, accidents, theft, odometer) from NMVTIS-backed data.",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "VIN decode (year/make/model/trim/engine) and plate-to-VIN are free; the full history report (title, accidents, theft, liens) is paid per report.",
+    "opsec": "passive",
+    "opsecNote": "Lookups query aggregated registry/insurance data, not the owner; the vehicle's owner is not notified. Note US history reports do not include the current owner's name (DPPA-protected).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial history aggregator drawing on NMVTIS and state registries; the free decode is standard VIN data, paid history is as good as its sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle-automobile-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "vin-check-and-get-vehicle-history-report"
     ],
+    "aliases": [
+      "FaxVIN",
+      "faxvin.com"
+    ],
+    "tags": [
+      "vehicle-automobile-research",
+      "vin",
+      "plate-lookup"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/transportation/faxvin.md"
   },
   {

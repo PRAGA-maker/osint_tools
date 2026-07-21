@@ -413,7 +413,6 @@ kind: group-index
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
-- **`law-net-united-states`** (medium) — Legal-related search engine for locating legal representives, legal resources, action groups, bar associations, publications, legal services
 - **`lawforkids`** (low) — Law-related search engine for kids
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives

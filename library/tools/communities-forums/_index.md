@@ -303,7 +303,7 @@ kind: group-index
 - **`snippet-host`** (medium) — OSINT tool: snippet.host.
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
-- **`spacebin`** (medium) — OSINT tool: Spacebin.
+- **`spacebin`** (medium) — Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expo
 - **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
 - **`stackexchange`** (low) — OSINT tool: StackExchange.
@@ -319,7 +319,7 @@ kind: group-index
 - **`techcrunch`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
-- **`techrepublic`** (medium) — Online articles and news related to computers, gadgets, technology, and future trends
+- **`techrepublic`** (low) — Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads me
 - **`telemundo-network-television-united-states`** (low) — Use when you have a `name` tied to U.S. Hispanic/Latin-American news and want Spanish-language coverage — returns news mentions, associate, 
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin-code`** (medium) — OSINT tool: Textbin-Code.

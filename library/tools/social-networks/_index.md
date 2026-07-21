@@ -396,7 +396,7 @@ kind: group-index
 - **`onli-vk-ru`** (high) — Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate link
 - **`open-measures`** (medium) — Use when you have a `username`, keyword or `name` and want to find posts and accounts across fringe/alt platforms (Telegram, Gab, Truth Soci
 - **`open-source-software-insight`** (medium) — Use when you have a GitHub `username`/repo and want deep activity analytics — returns a developer's contribution patterns, tech stack, colla
-- **`open-source`** (medium) — OSINT tool: open-source.
+- **`open-source`** (medium) — Use when you have a Steam `username`/ID and want its social graph and probable location — returns close-friend associates and a geographic e
 - **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
 - **`osgint`** (medium) — Use when you have a GitHub `username` or `email` and want to pivot between them plus profile intel — returns commit-leaked `email`s, linked 
 - **`osi-ig`** (high) — Use when you have an Instagram `username` and want to pull the profile's public data — user ID, name, bio, counts, profile photo, and any em
@@ -529,7 +529,6 @@ kind: group-index
 - **`snapscraper`** (high) — Use when you have a `geolocation` (lat/long) and want public Snapchat media there — downloads Snap Map "Our Story" videos and their metadata
 - **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram
 - **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
-- **`snapvip`** (medium) — OSINT tool: Snapvip.
 - **`snradar`** (medium) — OSINT tool: Snradar.
 - **`snscrape`** (high) — Use when you have a `username`, hashtag, or keyword and want to bulk-collect a social account's public posts without an API key — returns po
 - **`social-blade`** (medium) — Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `socia

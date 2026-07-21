@@ -293,7 +293,7 @@ kind: group-index
 - **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
 - **`trendsmap-com`** (medium) — Explore most popular #Twitter trends, hashtags and users on the worldmap
-- **`ufo-reporting-map`** (medium) — YouMap of UFO sightings reporting around the USA
+- **`ufo-reporting-map`** (low) — Use when you have a `geolocation`/time and want crowd-posted sighting reports there — a niche map of user "UFO" posts that can occasionally 
 - **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
 - **`unixtime-org`** (medium) — Use when you have a Unix/epoch timestamp from `metadata-exif`, logs, or filenames and want the human date/time — returns the converted calen
 - **`unixtimestamp-com`** (medium) — Use when you have a Unix/epoch timestamp from metadata or a log and want the human date/time — returns the converted datetime to anchor an e

@@ -45,7 +45,7 @@ kind: group-index
 - **`freeads-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `username`, `phone` or UK location and want a subject's classified listings — returns seller ads with contact de
 - **`freefans-de`** (low) — German OnlyFans directory.
 - **`freefans-nl`** (low) — Dutch OnlyFans directory.
-- **`full-dp-com`** (medium) — OSINT tool: full-dp.com.
+- **`full-dp-com`** (medium) — Use when you have a `username` and want the full-resolution profile picture behind a thumbnail — returns the HD display-photo `image` for re
 - **`geebo-classified-ads-united-states`** (low) — Use when a subject may have posted a US classified ad (jobs, vehicles, services, rentals) and you want to find it — returns ads with contact
 - **`girlfindr`** (low) — OnlyFans creator exploration tool.
 - **`goofbid`** (low) — Use when researching eBay activity and you want to surface mistyped/overlooked listings a subject posted — a misspelling-search front-end fo
@@ -54,7 +54,6 @@ kind: group-index
 - **`hallo-london-free-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
 - **`hinge`** (medium) — Use when you have an `image` and rough `geolocation` and want to check a subject against Hinge — a relationship-focused app with richer, pro
 - **`hoobly-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
-- **`hubite`** (medium) — Advanced OnlyFans search engine.
 - **`justlanded-classified-ads-worldwide`** (medium) — Use when your subject is an expat/mover and you have a `name`/`username` — Just Landed's per-country classifieds, housing, jobs and communit
 - **`kijiji-canada-classifieds`** (medium) — Use when investigating a Canadian subject and you want to search local classifieds for their posts, sales, vehicles, or contact details by `
 - **`kijiji-canada`** (medium) — Use when you have a `name`, handle, or location and want a subject's classified ads — returns listings with seller display name, photos, are

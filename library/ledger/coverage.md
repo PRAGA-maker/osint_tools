@@ -2,48 +2,48 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7953 total · 4129 full · 3824 stub (51% enriched)
+**Tools:** 7949 total · 4136 full · 3813 stub (52% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3577 · medium: 2414 · high: 1962
+low: 3580 · medium: 2407 · high: 1962
 
 ## Tools by trust
-community: 3504 · unverified: 3036 · trusted: 1402 · untrustworthy: 6 · personal: 5
+community: 3505 · unverified: 3030 · trusted: 1403 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 9/455
 - `archives-cache` — 67/130
-- `communities-forums` — 159/381
+- `communities-forums` — 161/381
 - `dark-web` — 25/116
-- `dating-classifieds` — 57/106
+- `dating-classifieds` — 58/105
 - `documents-metadata` — 30/314
 - `domains-ip-infrastructure` — 90/734
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 42/124
-- `geolocation` — 266/346
+- `geolocation` — 267/346
 - `image-video-face` — 425/464
 - `maps-geospatial-data` — 48/132
 - `messaging` — 172/189
-- `opsec-investigator-tooling` — 32/562
+- `opsec-investigator-tooling` — 32/561
 - `people-search` — 248/261
 - `phone` — 134/137
-- `public-records` — 783/1077
-- `search-engines` — 385/895
-- `social-networks` — 685/813
+- `public-records` — 784/1077
+- `search-engines` — 385/894
+- `social-networks` — 686/812
 - `training-ctf` — 0/12
 - `translation-language` — 15/103
-- `transportation` — 103/221
+- `transportation` — 104/221
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1019 leaves
-- `library/tools/search-engines` — 835 leaves
-- `library/tools/social-networks` — 785 leaves
+- `library/tools/search-engines` — 834 leaves
+- `library/tools/social-networks` — 784 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 493 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves

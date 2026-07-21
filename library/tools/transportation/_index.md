@@ -71,7 +71,7 @@ kind: group-index
 - **`europlates-eu`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of origin by matching format and design — returns a `
 - **`exotic-cars-the-largest-photo-collection`** (low) — Use when you have an `image` or `vehicle-plate` of an exotic car and want spotting records — returns dated, geotagged photos of that specifi
 - **`faa-registry`** (low) — OSINT tool: FAA Registry.
-- **`faxvin`** (medium) — OSINT tool: FaxVIN.
+- **`faxvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want the vehicle's identity and history — returns free decoded specs plus (paid) title, 
 - **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.
 - **`fleetmon`** (low) — OSINT tool: FleetMon.
 - **`flight-radar-24`** (low) — OSINT tool: Flight Radar 24.

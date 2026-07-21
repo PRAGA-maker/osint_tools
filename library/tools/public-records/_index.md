@@ -980,7 +980,7 @@ kind: group-index
 - **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
 - **`us-data-and-statistics`** (low) — OSINT tool: US Data and Statistics.
 - **`us-dept-of-energy-office-of-science-search`** (medium) — Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
-- **`us-institute-of-peace`** (medium) — United States Institute of Peace website, providing a special report on the use of the internet in modern terrorism
+- **`us-institute-of-peace`** (low) — Use when a case touches conflict, extremism, or a fragile region and you need vetted research and named actors/organizations — returns repor
 - **`us-tax-court`** (high) — Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), part
 - **`usgenweb-archives-united-states`** (high) — Use when you have a `name` and want transcribed US genealogical records — obituaries, wills, cemetery, census, and marriage records — return
 - **`uspages-business-directory-united-states`** (medium) — Use when you have an `employer-org` or `name` and want a US business listing — returns company address, category, and contact details.
