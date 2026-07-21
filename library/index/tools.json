@@ -11454,48 +11454,58 @@
   {
     "id": "phantomtrace",
     "name": "PhantomTrace",
-    "description": "Python OSINT tool aggregating public data from 35+ platforms.",
+    "description": "Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach checks, EXIF and WHOIS — returns `social-profile`, `email`, `metadata-exif`, `geolocation`.",
     "url": "https://github.com/nomadrai/osint-PhantomTrace",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Aggregating public profile/account data from many platforms in one run",
+    "bestFor": "Running a fast multi-selector OSINT sweep (username enumeration + breach + EXIF + WHOIS + dorks) and getting a consolidated HTML report.",
     "selectorsIn": [
       "username",
       "email",
-      "name"
+      "domain",
+      "image"
     ],
     "selectorsOut": [
       "social-profile",
-      "email"
+      "email",
+      "metadata-exif",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python 3); the only cost is a HaveIBeenPwned API key for the breach-check module.",
+    "opsec": "passive",
+    "opsecNote": "It queries public profile pages and third-party APIs (HIBP, WHOIS), not the subject directly, so it's passive toward the target — but every lookup goes out from your IP; run it behind a VPN/sock-puppet and expect the usual username-enumeration false positives.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "personal",
-    "trustNote": "0 stars; unverified small project.",
+    "trust": "unverified",
+    "trustNote": "A small, low-profile GitHub project; treat it as a convenience wrapper over public sources whose logic you should read before trusting, and corroborate every hit at the source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "osint-PhantomTrace"
+    ],
     "tags": [
+      "osint",
       "aggregator",
-      "multi-platform",
-      "osint"
+      "username-enumeration",
+      "cli"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/phantomtrace.md"
   },
   {
@@ -135736,41 +135746,52 @@
   },
   {
     "id": "dicom-viewer",
-    "name": "Dicom Viewer",
-    "description": "view MRI or CT photo online (.DCM files)",
+    "name": "IMAIOS DICOM Viewer",
+    "description": "Use when you have a `.DCM` medical image file (MRI/CT) and want to view it in the browser without special software — returns the rendered `image`.",
     "url": "https://www.imaios.com/en/Imaios-Dicom-Viewer",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Opening and viewing DICOM (.DCM) medical scans (MRI, CT) online with no install or account.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free for personal/non-commercial use directly in the browser (also an app, IDV); no account or install required.",
+    "opsec": "active",
+    "opsecNote": "DICOM files routinely embed patient identifiers (name, DOB, ID, institution) in their headers, so a scan is sensitive personal/health data. Uploading a subject's DICOM to a third-party viewer discloses that data to the operator — only load files you are authorised to handle, and prefer an offline viewer for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "IMAIOS is an established medical-imaging education company; the viewer is a genuine tool, explicitly \"not a medical device / not FDA-CE approved,\" so it is fine for inspection but not diagnosis.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IMAIOS IDV",
+      "online DICOM viewer"
+    ],
     "tags": [
-      "Image Search and Identification",
-      "Image Analyze"
+      "image-video-face",
+      "dicom",
+      "medical-imaging",
+      "file-viewer"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/dicom-viewer.md"
   },
   {
@@ -288940,44 +288961,57 @@
   {
     "id": "leaklooker",
     "name": "LeakLooker",
-    "description": "Tool to find open databases/services.",
+    "description": "Use when you have a `domain`/keyword and want to discover exposed, unauthenticated databases and services associated with it — returns `ip-address`, `domain`.",
     "url": "https://github.com/woj-ciech/LeakLooker",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding open/unauthenticated databases and services (Elasticsearch, MongoDB, Kibana, S3, etc.) tied to a keyword or organisation.",
+    "selectorsIn": [
+      "domain",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (Python 3); requires your own BinaryEdge.io API key (free tier available) to run queries.",
+    "opsec": "active",
+    "opsecNote": "Do NOT connect to or download from any exposed database you find — that can be unlawful access. LeakLooker only discovers via BinaryEdge's index (so you don't touch the targets during search), but keep it to discovery, log your authorisation, and route through a sock-puppet key/account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Well-known tool by researcher woj-ciech, but the original repo was archived in 2020 (read-only); detection logic may be stale — the maintained successor is LeakLooker-X (GUI).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "socialpath"
     ],
+    "aliases": [
+      "LeakLooker CLI"
+    ],
+    "tags": [
+      "exposed-databases",
+      "binaryedge",
+      "infrastructure",
+      "cli",
+      "toddington"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/leaklooker.md"
   },
   {
@@ -289584,41 +289618,55 @@
   {
     "id": "loopnet",
     "name": "LoopNet",
-    "description": "Commercial real estate listing and research site",
-    "url": "http://www.loopnet.com/",
+    "description": "Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `address`, `employer-org`, `associate`.",
+    "url": "https://www.loopnet.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Researching commercial real estate — a business's premises, a property's listing history, and the broker/agent tied to it.",
+    "selectorsIn": [
+      "address",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing listings and searching is free; a free account unlocks saved searches and some detail, and premium/CoStar data is paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public listings site; searching properties reveals nothing to any subject. A login isn't needed to browse — avoid registering with identifying details; use a sock-puppet account if you do.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major, established US commercial-real-estate marketplace (CoStar-owned); listing data is broker-supplied and generally reliable, though listings can be dated or removed once let/sold.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "loopnet.com",
+      "commercial real estate search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "search-engines",
+      "real-estate",
+      "commercial-property",
+      "business-research",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/loopnet.md"
   },
   {
@@ -345278,43 +345326,56 @@
   {
     "id": "twitch-stream-filter",
     "name": "Twitch Stream Filter",
-    "description": "Search streams and filter results by title, game, language, number of viewers.",
+    "description": "Use when you want to find live Twitch streams by criteria — title, game, language, viewer count, broadcaster type — returns `social-profile`.",
     "url": "https://twitch-tools.rootonline.de/channel_previews.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Filtering the live Twitch stream directory by title/game/language/viewers to surface specific channels.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool (part of CommanderRoot's twitch-tools suite); no login required.",
+    "opsec": "passive",
+    "opsecNote": "Queries Twitch's public directory via a third-party tool; you don't interact with any channel, so it's passive. Use a sock-puppet browser for hygiene; watching a live stream from your own account could reveal you in chat/viewer signals, so browse listings here rather than joining.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by CommanderRoot (a known Twitch-tools developer); it reads Twitch's public API, so results are as accurate as Twitch's live data at query time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitch-tools",
+      "twitch-tools-rootonline-de",
+      "removetweets"
+    ],
+    "aliases": [
+      "Twitch channel previews",
+      "rootonline twitch filter"
+    ],
     "tags": [
-      "Social Media",
-      "Twitch"
+      "social-networks",
+      "twitch",
+      "live-streams",
+      "filtering"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "removetweets",
-      "twitch-tools",
-      "twitch-tools-rootonline-de"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitch-stream-filter.md"
   },
   {
@@ -365423,48 +365484,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-enquiry.md"
-  },
-  {
-    "id": "vehicle-history-reports-get-a-carfax-report",
-    "name": "Vehicle History Reports – Get a CARFAX Report",
-    "description": "OSINT tool: Vehicle History Reports – Get a CARFAX Report.",
-    "url": "https://www.carfax.com/vehicle-history-reports",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/vehicle-history-reports-get-a-carfax-report.md"
   },
   {
     "id": "venicle-number-search-toolbox",

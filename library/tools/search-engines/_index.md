@@ -416,7 +416,7 @@ kind: group-index
 - **`lawforkids`** (low) — Law-related search engine for kids
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
-- **`leaklooker`** (medium) — Tool to find open databases/services.
+- **`leaklooker`** (medium) — Use when you have a `domain`/keyword and want to discover exposed, unauthenticated databases and services associated with it — returns `ip-a
 - **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
 - **`leit-search-engine-iceland`** (low) — Use when you have a `name` and want Icelandic web, phone-directory, and business results — returns phone, address, and social-profile leads 
@@ -430,7 +430,7 @@ kind: group-index
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
-- **`loopnet`** (medium) — Commercial real estate listing and research site
+- **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
 - **`lycos`** (low) — OSINT tool: Lycos.

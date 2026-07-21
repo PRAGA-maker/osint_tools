@@ -196,7 +196,6 @@ kind: group-index
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
 - **`vehicle-documents`** (medium) — Use when you have a license plate or vehicle document in a photo and want to identify its country/type and read its format — returns plate/d
 - **`vehicle-enquiry`** (medium) — Use when you have a UK vehicle registration (number plate) and want to confirm the make, colour, and tax/MOT status of that vehicle — return
-- **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.
 - **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe
 - **`vin-check-and-get-vehicle-history-report`** (medium) — Use when you have a `vin` (or plate to look up a VIN) and want to decode the vehicle and screen for theft/salvage flags — returns vehicle ph
 - **`vin-check-reports`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want a free vehicle-history report — returns title/theft/salvage records, recalls, specs

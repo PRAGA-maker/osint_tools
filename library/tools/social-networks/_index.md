@@ -653,7 +653,7 @@ kind: group-index
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
 - **`twitch-payout-search`** (low) — OSINT tool: Twitch Payout Search.
 - **`twitch-recover`** (medium) — Use when you have a Twitch channel `username` (or stream ID/timestamp) and want to recover deleted, sub-only or unlisted VODs, clips and str
-- **`twitch-stream-filter`** (medium) — Search streams and filter results by title, game, language, number of viewers.
+- **`twitch-stream-filter`** (medium) — Use when you want to find live Twitch streams by criteria — title, game, language, viewer count, broadcaster type — returns `social-profile`
 - **`twitch-tools-lolarchiver-com`** (high) — Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, 
 - **`twitch-tools-rootonline-de`** (high) — Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filt
 - **`twitch-tools`** (low) — OSINT tool: Twitch Tools.

@@ -80,7 +80,7 @@ kind: group-index
 - **`depositphotos-reverse-image-search`** (medium) — Use when you suspect a profile/photo is a stock image and want to confirm it — reverse-searches DepositPhotos' stock library to expose that 
 - **`deturl-com`** (medium) — Use when you have a video URL (e.g. a YouTube post tied to a subject) and want to download it locally for analysis/preservation — returns th
 - **`deturl`** (medium) — Use when you have a video URL (YouTube or other site) and want to download and preserve it for offline analysis — returns a saved MP4/MP3 co
-- **`dicom-viewer`** (medium) — view MRI or CT photo online (.DCM files)
+- **`dicom-viewer`** (medium) — Use when you have a `.DCM` medical image file (MRI/CT) and want to view it in the browser without special software — returns the rendered `i
 - **`diffchecker`** (high) — Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing e
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr
 - **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.

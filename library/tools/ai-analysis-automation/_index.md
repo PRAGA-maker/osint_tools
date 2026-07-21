@@ -292,7 +292,7 @@ kind: group-index
 - **`perspective`** (low) — OSINT tool: Perspective.
 - **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
-- **`phantomtrace`** (medium) — Python OSINT tool aggregating public data from 35+ platforms.
+- **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.
 - **`phishingseclists`** (low) — OSINT tool: PhishingSecLists.
 - **`phone-number-search-constructor`** (low) — OSINT tool: Phone Number Search Constructor.
