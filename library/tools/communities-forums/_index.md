@@ -132,9 +132,7 @@ kind: group-index
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
-- **`google-com-31`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
-- **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa

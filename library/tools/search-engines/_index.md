@@ -19,7 +19,7 @@ kind: group-index
 
 ## Skills here
 - **`100-search-engines`** (medium) — Use when you have a `name`/`username` and want to fan one query across many sites (LinkedIn, Craigslist, Maps, Amazon…) — returns social-pro
-- **`1337x-torrent-search-engine`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`1337x-torrent-search-engine`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
 - **`1websdirectory`** (medium) — Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classif
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
@@ -542,7 +542,7 @@ kind: group-index
 - **`osint-encyclopedia-optiv-cham423`** (medium) — Use when you have a selector but not a method and want a reference catalogue of OSINT techniques and tools to consult — returns methodology 
 - **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
 - **`osint-framework-3`** (high) — Use when you have a selector type (`email`, `username`, `phone`, etc.) but not the right tool — returns a categorized directory tree pointin
-- **`osint-investigation-assistant-lambda-black`** (medium) — Single-page assistant linking OSINT tools/queries for investigations.
+- **`osint-investigation-assistant-lambda-black`** (medium) — Use when you have a name, username, or email and want a single page that generates ready-to-run search queries and tool links across many so
 - **`osint-investigation-coldvisionz`** (low) — Collection of useful OSINT tools.
 - **`osint-kit-buddhsen-tripathi`** (medium) — Use when you need to discover which tool fits an investigative task — a curated, categorised directory of OSINT tools returning pointers to 
 - **`osint-link`** (medium) — Use when you need to discover an OSINT tool for a task — returns a categorised directory of OSINT resources (search, social, geolocation, br

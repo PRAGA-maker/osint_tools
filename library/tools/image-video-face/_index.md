@@ -140,7 +140,7 @@ kind: group-index
 - **`google-lens-2`** (high) — Use when you have a photo and want to identify locations, objects, or text in it via Google's image recognition — returns identified places/
 - **`google-lens`** (high) — Use when you have a photo and want object, landmark, text, or scene recognition plus reverse image search — returns identified objects/place
 - **`google-reverse-image-fix`** (high) — Use when you have an `image` URL and want to date it and find where it appears — returns earliest/latest appearances and source pages across
-- **`google-reverse-image-search-fix`** (medium) — Google lens is not too user friendly for investigations. But this tool will help you get back to the old Google Image Search. (in case of pr
+- **`google-reverse-image-search-fix`** (medium) — Use when you have an image and want Google's classic "find this exact image on the web" behaviour that Google Lens removed — returns domain,
 - **`google-reverse-image-search`** (high) — Use when you have an `image` of a person or place and want to find where else it appears online — returns matching/related images, source pa
 - **`google-reverse-search`** (high) — Use when you have a photo and want to find every page that hosts the same or a similar image — returns matching pages, source sites, and soc
 - **`goris`** (medium) — Use when you have an `image` URL and want to script Google reverse image search at scale — returns links to matching images and web pages ho

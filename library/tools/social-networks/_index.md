@@ -597,7 +597,7 @@ kind: group-index
 - **`tiktok-user-search`** (medium) — Use when you have a `username` (or a creator's display name / hashtag) and want to browse a TikTok profile, its videos, follower counts and 
 - **`tiktok-video-downloader-chromewebstore-google-com`** (low) — Use when you have a subject's TikTok video/profile and want to save the clip (no watermark) for offline analysis and evidence preservation —
 - **`tiktok-video-downloader`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to preserve the clip as evidence — returns a downloadable MP4/MP3 for offli
-- **`tiktokapi`** (medium) — Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific use
+- **`tiktokapi`** (medium) — Use when you have a TikTok username and want to programmatically pull that account's profile and video list — returns social-profile, associ
 - **`tikvib-com`** (medium) — Use when you have a TikTok `username` and want to view/download their public videos and profile stats anonymously — returns `social-profile`
 - **`tinder-2`** (high) — Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns so
 - **`tokimeki-blue`** (high) — Use when you have a Bluesky `username` (handle) and want a TweetDeck-style, multi-column view of that account's posts, feeds and media to mo
@@ -723,7 +723,7 @@ kind: group-index
 - **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
 - **`youfilter-youtube-advanced-search-filter`** (low) — Use when you have a YouTube search or channel and want structured results — returns social-profile and username leads (channel owners, conta
 - **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
-- **`yout`** (medium) — OSINT tool: Yout.
+- **`yout`** (medium) — Use when you have a link to a video/audio post (YouTube, TikTok, Instagram, etc.) and want to preserve it as a file before it disappears — r
 - **`youtube-actual-top-comments`** (medium) — Use when you have a YouTube `social-profile`/video and want to surface a target's or subject's most-liked comments — returns `social-profile
 - **`youtube-booster`** (low) — Use when you have a YouTube video with a location/object you want to identify and want one-click frame extraction into reverse-image search 
 - **`youtube-caption-searcher`** (low) — Use when you have a YouTube video and a keyword and want to jump to where it's spoken in the captions — returns caption timestamps, surfacin
