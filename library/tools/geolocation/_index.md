@@ -249,7 +249,7 @@ kind: group-index
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
-- **`rivermap`** (medium) — Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): directi
+- **`rivermap`** (medium) — Use when you have a `geolocation` (an image of a river/waterway or a European region) and want detailed hydrological data to help identify i
 - **`safe-airspace`** (medium) — Use when you have a country/region `geolocation` and want conflict-zone aviation risk intel — warnings, incident history, GPS jamming/spoofi
 - **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.
 - **`satellites-pro`** (high) — Use when you have coordinates or a place and want a quick free web view of satellite imagery and map layers.
@@ -291,7 +291,7 @@ kind: group-index
 - **`toronto-live`** (low) — Use when you need live Toronto situational data (traffic collisions, incidents, cameras) around a `geolocation` in the city — returns `geolo
 - **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
-- **`trendsmap-com`** (medium) — Explore most popular #Twitter trends, hashtags and users on the worldmap
+- **`trendsmap-com`** (medium) — Use when you have a `geolocation` (a city/region) and want the Twitter/X trends, hashtags and active accounts there — returns `social-profil
 - **`ufo-reporting-map`** (low) — Use when you have a `geolocation`/time and want crowd-posted sighting reports there — a niche map of user "UFO" posts that can occasionally 
 - **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
 - **`unixtime-org`** (medium) — Use when you have a Unix/epoch timestamp from `metadata-exif`, logs, or filenames and want the human date/time — returns the converted calen

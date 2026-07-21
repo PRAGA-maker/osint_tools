@@ -15,7 +15,7 @@ kind: group-index
 - **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
 - **`employee-profiles-and-resumes/`** — 3 skill(s) below.
-- **`financial-tax-resources/`** — 3 skill(s) below.
+- **`financial-tax-resources/`** — 2 skill(s) below.
 - **`general-info-and-news/`** — 6 skill(s) below.
 - **`government-records/`** — 3 skill(s) below.
 - **`kyc-aml-tools/`** — 3 skill(s) below.
@@ -462,7 +462,7 @@ kind: group-index
 - **`imf-world-economic-outlook-database`** (low) — OSINT tool: IMF World Economic Outlook Database.
 - **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
 - **`immo-data-fr`** (high) — Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/da
-- **`inc-5000`** (medium) — OSINT tool: Inc. 5000.
+- **`inc-5000`** (medium) — Use when you have an `employer-org` or `name` and want to confirm a fast-growing US private company, its location and leadership — returns `
 - **`inciteful`** (low) — Use when you have a `document-id` (a paper's title/DOI/arXiv/PubMed link) and want its citation network — returns connected papers and their
 - **`independent-fundamental-baptist-sexual-misconduct-database`** (high) — Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — ret
 - **`index-mundi`** (low) — OSINT tool: Index Mundi.

@@ -7,7 +7,6 @@ kind: group-index
 # public-records/financial-tax-resources
 
 ## Skills here
-- **`bin-base`** (medium) — Business registration verification
 - **`netr-online`** (medium) — Use when you have a US address or property-owner name and want county deeds, tax-assessor records, and parcel data — returns address, associ
 - **`vat-research`** (medium) — Dutch VAT number verification
 

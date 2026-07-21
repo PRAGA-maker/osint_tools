@@ -38,7 +38,7 @@ kind: group-index
 - **`canadian-black-book`** (medium) — Use when you have a vehicle's make/model/year and want its Canadian market value — returns used-car trade-in/retail pricing to sanity-check 
 - **`canadian-civil-aircraft-register-search-canada`** (medium) — Use when you have a Canadian tail number (`vehicle-plate`) or owner `name` and want registration details — returns registered owner `name`/`
 - **`canadian-vessel-registration-query-system`** (medium) — Use when you have a vessel name, official number, or an owner `name` and want Canadian vessel registration detail — returns registered/licen
-- **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
+- **`car-vehicle-model-recognition-online`** (medium) — Use when you have an `image` of a vehicle and want its brand, model, year and colour identified — returns a `physical-description` of the ve
 - **`caranalytics-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and p
 - **`cars-com-black-book-value`** (low) — Use when you have a known vehicle (make/model/year/mileage) and want an independent market value — returns a valuation figure to sanity-chec
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.

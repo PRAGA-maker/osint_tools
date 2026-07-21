@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa
+- colorado-licensed-professional-lookup
 aliases:
 - Great Colorado Payback
 - Colorado unclaimed money search

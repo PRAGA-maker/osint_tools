@@ -16,7 +16,6 @@ kind: group-index
 - **`whatsapp/`** — 2 skill(s) below.
 
 ## Skills here
-- **`2-skypeipresolver-net`** (medium) — OSINT tool: 2- Skypeipresolver.net.
 - **`2chat`** (high) — Use when you have a phone number and need to confirm whether it has an active WhatsApp account.
 - **`3-webresolver`** (low) — Use when you have a `username`, `email`, `phone`, or `ip-address` and want grey-hat resolver lookups (legacy Skype-to-IP, phone info, leaked
 - **`4-vedbex-email-to-skype`** (medium) — OSINT tool: 4- Vedbex: Email to Skype.

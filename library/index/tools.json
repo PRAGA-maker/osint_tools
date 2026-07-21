@@ -94591,31 +94591,30 @@
   },
   {
     "id": "woorank-review-and-seo",
-    "name": "Woorank Review & SEO",
-    "description": "Search for information and statistics about any online website",
+    "name": "WooRank Review & SEO",
+    "description": "Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers — returns `domain`.",
     "url": "https://www.woorank.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Getting a one-page technical/marketing profile of a website — its tech stack, meta data, traffic estimates and on-page details.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "One or a few free \"instant\" reviews are available; deeper reports, history and multiple projects require a paid plan or trial.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WooRank fetches and analyses the target site from its own infrastructure, so your IP does not hit the target directly — but you submit the domain to a third party that logs it. Use a sock puppet for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial SEO/marketing product; its audit data is generally accurate for on-page/tech signals, but traffic and ranking figures are estimates, not ground truth.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -94624,15 +94623,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "woorank.com",
+      "WooRank website review"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "domains-ip-infrastructure",
+      "website-analysis",
+      "seo",
+      "tech-stack",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/woorank-review-and-seo.md"
   },
   {
@@ -127228,42 +127233,53 @@
   {
     "id": "rivermap",
     "name": "Rivermap",
-    "description": "Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): direction and speed, water temperature, depth, slope angle, etc.",
+    "description": "Use when you have a `geolocation` (an image of a river/waterway or a European region) and want detailed hydrological data to help identify it — returns `geolocation`.",
     "url": "https://rivermap.org/map/#sprache=en",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and characterising European rivers (flow direction/speed, depth, gradient) to help geolocate waterway imagery.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive map (collaborative/donation-supported); some contributor features and data may sit behind membership.",
+    "opsec": "passive",
+    "opsecNote": "Read-only public map; nothing is disclosed to any subject. Standard browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community/collaborative database aimed at paddlers; coverage is strongest in Central Europe and data is contributor-supplied, so treat details as indicative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "openstreetmap"
+    ],
+    "aliases": [
+      "rivermap.org",
+      "river map Europe"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Nature"
+      "geolocation",
+      "rivers",
+      "hydrology",
+      "europe"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/rivermap.md"
   },
   {
@@ -129365,47 +129381,56 @@
   },
   {
     "id": "trendsmap-com",
-    "name": "Trendsmap.com",
-    "description": "Explore most popular #Twitter trends, hashtags and users on the worldmap",
+    "name": "Trendsmap",
+    "description": "Use when you have a `geolocation` (a city/region) and want the Twitter/X trends, hashtags and active accounts there — returns `social-profile`, `geolocation`.",
     "url": "https://www.trendsmap.com/map",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Seeing which Twitter/X topics, hashtags and users are trending in a specific place, to tie online chatter to a location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
+      "social-profile",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive map with current trends by location; historical data, alerts and deeper analytics require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "You browse an aggregated public map; you are not contacting any account. No login needed for the free map. Use a sock-puppet browser for hygiene if the region/topic is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator of Twitter/X data; trend coverage depends on its API access and can be incomplete, and free-tier data is limited to the present.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Social media and photos"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "trendsmap",
       "twitter-trending-hashtags-and-topics"
     ],
+    "aliases": [
+      "trendsmap.com",
+      "Twitter trends map"
+    ],
+    "tags": [
+      "geolocation",
+      "twitter",
+      "social-media",
+      "trends"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/trendsmap-com.md"
   },
   {
@@ -161687,51 +161712,6 @@
     "_file": "library/tools/maps-geospatial-data/worldofo-com.md"
   },
   {
-    "id": "2-skypeipresolver-net",
-    "name": "2- Skypeipresolver.net",
-    "description": "OSINT tool: 2- Skypeipresolver.net.",
-    "url": "http://www.skypeipresolver.net",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "skype"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cloudflare-resolver",
-      "skype-resolver"
-    ],
-    "_file": "library/tools/messaging/2-skypeipresolver-net.md"
-  },
-  {
     "id": "2chat",
     "name": "2Chat",
     "description": "Use when you have a phone number and need to confirm whether it has an active WhatsApp account.",
@@ -183083,46 +183063,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/markwhen.md"
-  },
-  {
-    "id": "mat2",
-    "name": "MAT2",
-    "description": "Removing EXIF/metadata from files before publication, cleaning documents prior to evidence submission or sharing",
-    "url": "https://0xacab.org/jvoisin/mat2",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling",
-      "metadata-style"
-    ],
-    "bestFor": "Removing EXIF/metadata from files before publication, cleaning documents prior to evidence submission or sharing",
-    "input": "Files (PDF, DOCX, JPEG, PNG, MP3, etc.)",
-    "output": "Metadata-stripped clean copies of input files",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Runs entirely locally; highly recommended before sharing any file collected during OSINT operations.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/metadata-style/mat2.md"
   },
   {
     "id": "match-social-networking-app-mobile-android",
@@ -219439,48 +219379,6 @@
     "_file": "library/tools/public-records/billiongraves-com.md"
   },
   {
-    "id": "bin-base",
-    "name": "BIN Base",
-    "description": "Business registration verification",
-    "url": "https://www.buybindatabase.binbase.com/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "financial-tax-resources"
-    ],
-    "bestFor": "Business registration verification",
-    "input": "Company name or BIN",
-    "output": "Business registration, status, details",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Commercial company database",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "binbase-com"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/financial-tax-resources/bin-base.md"
-  },
-  {
     "id": "binlist",
     "name": "Binlist",
     "description": "OSINT tool: Binlist.",
@@ -239001,37 +238899,54 @@
   {
     "id": "inc-5000",
     "name": "Inc. 5000",
-    "description": "OSINT tool: Inc. 5000.",
-    "url": "http://www.inc.com/inc5000",
+    "description": "Use when you have an `employer-org` or `name` and want to confirm a fast-growing US private company, its location and leadership — returns `employer-org`, `address`, `name`.",
+    "url": "https://www.inc.com/inc5000",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a US private company on Inc.'s fastest-growing-companies list to confirm it exists, where it's based, and who runs it.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the online Inc. 5000 (and regional) lists; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading a published magazine ranking; nothing is disclosed to any company or person. No special precautions needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Inc. is an established business-media brand; the ranking is based on self-reported revenue growth that Inc. vets, so listings are credible but figures are company-supplied.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Inc 5000",
+      "Inc. fastest growing companies"
+    ],
     "tags": [
-      "company-research"
+      "public-records",
+      "company-research",
+      "business",
+      "us"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/inc-5000.md"
   },
   {
@@ -276278,6 +276193,9 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-18",
     "enrichment": "full",
+    "relatedTools": [
+      "colorado-unclaimed-property-search"
+    ],
     "_file": "library/tools/search-engines/colorado-licensed-professional-lookup.md"
   },
   {
@@ -276316,7 +276234,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa"
+      "unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa",
+      "colorado-licensed-professional-lookup"
     ],
     "aliases": [
       "Great Colorado Payback",
@@ -357709,40 +357628,55 @@
   {
     "id": "car-vehicle-model-recognition-online",
     "name": "Car/Vehicle Model Recognition Online",
-    "description": "OSINT tool: Car/Vehicle Model Recognition Online.",
+    "description": "Use when you have an `image` of a vehicle and want its brand, model, year and colour identified — returns a `physical-description` of the vehicle.",
     "url": "https://carmodel.toolpie.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying a car's make, model, year and colour from a photo when you can't tell by eye.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free online recognizer (toolpie.com); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload a vehicle image to a third-party server, so treat the operator as untrusted — crop out plates, faces and backgrounds first, and use a sock-puppet session so you don't leak the wider photo or its metadata.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A consumer ML classifier; it returns best-guess make/model/year and can be confidently wrong, so treat every result as a lead to verify, not a fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "age-toolpie-com",
       "face-comparison-by-toolpie",
       "landmark-toolpie-com"
     ],
+    "aliases": [
+      "Toolpie car model recognition",
+      "vehicle make/model identifier"
+    ],
+    "tags": [
+      "transportation",
+      "vehicle",
+      "image-recognition",
+      "ml"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/transportation/car-vehicle-model-recognition-online.md"
   },
   {
@@ -362641,43 +362575,57 @@
   {
     "id": "openrailwaymap",
     "name": "OpenRailwayMap",
-    "description": "Rail infrastructure mapping and line characteristic analysis",
+    "description": "Use when you have a `geolocation` (an image of a railway scene or a region) and want to identify the rail line, its infrastructure and characteristics — returns `geolocation`.",
     "url": "https://www.openrailwaymap.org/",
     "category": "transportation",
     "path": [
       "transportation",
       "railway-records"
     ],
-    "bestFor": "Rail infrastructure mapping and line characteristic analysis",
-    "input": "Map coordinates, region, or railway line context",
-    "output": "Track layouts, rail types, electrification, speed classes, and map overlays",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Identifying and analysing rail infrastructure — line routes, electrification, gauge, speed and signalling — as an OSM overlay for geolocation.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open (OpenStreetMap-based); no account required, and the underlying data is under the ODbL licence.",
     "opsec": "passive",
-    "opsecNote": "Crowd-sourced mapping interface with passive read-only usage.",
+    "opsecNote": "Read-only public map; querying it reveals nothing to any subject. Standard browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built on crowd-sourced OpenStreetMap data — coverage and accuracy vary by region and depend on volunteer mapping, so treat detail as indicative and verify against imagery.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "openrailwaymap-2"
+      "openrailwaymap-2",
+      "openstreetmap",
+      "bellingcat-openstreetmap-search"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ORM",
+      "OpenStreetMap railway layer"
+    ],
+    "tags": [
+      "transportation",
+      "railway",
+      "geolocation",
+      "openstreetmap"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/transportation/railway-records/openrailwaymap.md"
   },
   {

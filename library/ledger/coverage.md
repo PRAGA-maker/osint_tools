@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7948 total · 4144 full · 3804 stub (52% enriched)
+**Tools:** 7945 total · 4150 full · 3795 stub (52% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3580 · medium: 2406 · high: 1962
+low: 3580 · medium: 2403 · high: 1962
 
 ## Tools by trust
-community: 3505 · unverified: 3026 · trusted: 1406 · untrustworthy: 6 · personal: 5
+community: 3506 · unverified: 3022 · trusted: 1406 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
@@ -20,23 +20,23 @@ community: 3505 · unverified: 3026 · trusted: 1406 · untrustworthy: 6 · pers
 - `dark-web` — 25/116
 - `dating-classifieds` — 58/105
 - `documents-metadata` — 30/314
-- `domains-ip-infrastructure` — 91/734
+- `domains-ip-infrastructure` — 92/734
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 42/124
-- `geolocation` — 268/345
+- `geolocation` — 270/345
 - `image-video-face` — 425/464
 - `maps-geospatial-data` — 49/132
-- `messaging` — 172/189
-- `opsec-investigator-tooling` — 32/561
+- `messaging` — 172/188
+- `opsec-investigator-tooling` — 32/560
 - `people-search` — 248/261
 - `phone` — 134/137
-- `public-records` — 785/1077
+- `public-records` — 786/1076
 - `search-engines` — 388/894
 - `social-networks` — 687/812
 - `training-ctf` — 0/12
 - `translation-language` — 15/103
-- `transportation` — 104/221
+- `transportation` — 106/221
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -54,7 +54,7 @@ community: 3505 · unverified: 3026 · trusted: 1406 · untrustworthy: 6 · pers
 - `library/tools/people-search` — 251 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 203 leaves
-- `library/tools/messaging` — 174 leaves
+- `library/tools/messaging` — 173 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 132 leaves
 - `library/tools/archives-cache` — 115 leaves

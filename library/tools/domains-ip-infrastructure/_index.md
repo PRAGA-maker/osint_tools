@@ -529,7 +529,7 @@ kind: group-index
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
-- **`woorank-review-and-seo`** (medium) — Search for information and statistics about any online website
+- **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
 - **`wordpress`** (medium) — Website creation and hosting site
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
 - **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
