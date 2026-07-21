@@ -31,6 +31,11 @@ localInstall: false
 registration: false
 relatedTools:
 - amazon-registry-search
+- amazon-pay
+- amazon-rekognition
+- amazon-sns
+- aws-public-datasets
+- us-east-1-console-aws-amazon-com
 aliases:
 - Amazon.com registry search
 - Amazon wedding/baby registry finder

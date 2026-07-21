@@ -136,7 +136,6 @@ kind: group-index
 - **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai
 - **`nomerogram-ru`** (medium) — Use when you have a Russian `vehicle-plate` and want photos of that car — returns user-submitted images of vehicles matching the plate, with
 - **`number-plate-check`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — retu
-- **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.
 - **`opensky-network`** (low) — Community, open source flight tracking network.
 - **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
 - **`orto-website`** (medium) — Use when you have a US `vehicle-plate`, `vin`, or photo of a car and want its history and specs — returns make/model/year, VIN, specs, valua

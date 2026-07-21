@@ -298,7 +298,7 @@ kind: group-index
 - **`explore-canada-s-real-estate-market`** (medium) — Use when you have a Canadian `address` or area and want current property listings — returns listing photos, asking price, address details an
 - **`extremist-groups`** (low) — OSINT tool: Extremist Groups.
 - **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
-- **`ezilon`** (medium) — OSINT tool: Ezilon.
+- **`ezilon`** (low) — Use when you have an `employer-org` or business `name` in a specific world region and want a human-curated directory listing to confirm it e
 - **`familyecho-com`** (medium) — Use when you have gathered several relatives (`name`/`associate`) and want a free workspace to build and visualise the family tree — returns
 - **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 
 - **`familysearch-deaths-and-burials-1816-1980-australia`** (high) — Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/buria

@@ -86,7 +86,7 @@ kind: group-index
 - **`disqus`** (medium) — Worldide blog comment hosting service
 - **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses
 - **`doxbin`** (medium) — OSINT tool: doxbin.
-- **`dpaste`** (medium) — OSINT tool: dpaste.
+- **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
 - **`ehow`** (low) — OSINT tool: eHow.
 - **`engadget-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
@@ -158,7 +158,7 @@ kind: group-index
 - **`homeaway`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`homestay`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`hot-or-not`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`hot-sheet-news`** (medium) — Website providing a list of links to leading TV, sports and news websites for current news and information
+- **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`huffington-post-online-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
@@ -226,7 +226,7 @@ kind: group-index
 - **`nopaste-net`** (medium) — OSINT tool: nopaste.net.
 - **`nopaste`** (medium) — Use when you have found a `nopaste.boris.sh` link in a subject's history and want to read its contents — decodes the paste that is embedded 
 - **`notes`** (medium) — OSINT tool: Notes.
-- **`nova-czech-republick`** (medium) — Online articles and news related to business, travel, sports, entertainment, and more
+- **`nova-czech-republick`** (low) — Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-langu
 - **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
 - **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
 - **`onefinestay`** (low) — Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listi

@@ -277,7 +277,6 @@ kind: group-index
 - **`isp-tools`** (low) — OSINT tool: ISP.Tools.
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
-- **`jaan-internet-solutions-belgium`** (medium) — Belgium based IT company including expertise in technology, web development, mobile applications, and more
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
 - **`jsluice`** (low) — #go library for extracting juicy info from JavaScript files: urls, paths, API secrets etc.
 - **`kali-intelligence-suite-kis`** (low) — Framework for fast, autonomous, centralized collection of intelligence by orchestrating standard pentest tools.
@@ -485,7 +484,6 @@ kind: group-index
 - **`vincos-it`** (low) — world social media popularity map
 - **`virus-total`** (low) — OSINT tool: Virus Total.
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
-- **`vmaker-host-pakistan`** (medium) — Service provider for registering websites and domain addresses
 - **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.

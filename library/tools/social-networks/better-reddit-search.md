@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - react-reddit-search-app
+- geospy-2
 aliases:
 - betterredditsearch
 tags:

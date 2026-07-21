@@ -51,7 +51,7 @@ kind: group-index
 - **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns
 - **`citizen-com`** (medium) — Use when you have a US `geolocation` and time window and want to know what safety incidents (shootings, fires, police activity, missing-pers
 - **`city-webcams-com`** (low) — OSINT tool: city-webcams.com.
-- **`collection-of-cadastral-maps`** (medium) — 41 countries
+- **`collection-of-cadastral-maps`** (medium) — Use when you have an `address` or `geolocation` in a specific country and want the official land-registry/cadastral portal that maps parcels
 - **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color
 - **`copernix`** (low) — Use when you have a place name or `geolocation` and want to see every Wikipedia article geotagged to that area on a map — returns local `geo
 - **`corona`** (low) — Use when you need declassified 1960s–70s CORONA spy-satellite imagery of a location for historical landscape analysis — returns georeference

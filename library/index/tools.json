@@ -27173,37 +27173,53 @@
   {
     "id": "dpaste",
     "name": "dpaste",
-    "description": "OSINT tool: dpaste.",
-    "url": "https://Dpaste.com",
+    "description": "Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists or config that mention it — returns exposed text snippets and associated selectors.",
+    "url": "https://dpaste.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking a public paste service for leaked data, dumps or shared snippets mentioning a target selector.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "password",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free paste service with a public feed and API; no account required to read public pastes.",
+    "opsec": "passive",
+    "opsecNote": "Reading public pastes and the public feed is passive and invisible to any target. Do NOT paste your own investigative notes or target data into it — anything you submit becomes publicly retrievable. Treat found credentials as evidence to report, never to use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "dpaste is a long-running open pastebin (Django-based); it hosts user-submitted content, so anything found is unvetted and possibly stale, spoofed, or planted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dpaste.com",
+      "dpaste.org"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks",
+      "breach-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/dpaste.md"
   },
   {
@@ -30337,25 +30353,31 @@
   {
     "id": "hot-sheet-news",
     "name": "Hot Sheet News",
-    "description": "Website providing a list of links to leading TV, sports and news websites for current news and information",
+    "description": "Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage — returns links to news sources, not records.",
     "url": "http://www.hotsheet.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-page launcher of leading news/TV/sports sites for quickly canvassing mainstream media coverage of a person or event.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported news portal; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are only visiting an aggregator's link page and then public news sites; nothing reaches the subject. No sock puppet required, though normal browser hygiene is sensible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "Long-standing personal/independent news-link dashboard; it curates links to third-party outlets and originates no reporting of its own.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -30363,15 +30385,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "hotsheet.com",
+      "HotSheet Instant News"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "email-breach-analysis"
     ],
@@ -33483,42 +33508,53 @@
   },
   {
     "id": "nova-czech-republick",
-    "name": "Nova (Czech Republick)",
-    "description": "Online articles and news related to business, travel, sports, entertainment, and more",
+    "name": "Nova (Czech Republic)",
+    "description": "Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-language news mentions and `associate` context.",
     "url": "http://tn.nova.cz",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching TV Nova's Czech news portal for coverage of a Czech-linked person, incident or location.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported Czech news portal; no account needed to read or search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading a public national news site; the subject is not notified. The site may bot-block or geo-throttle (a 403 on automated fetch is common) — browse manually, ideally from a Czech-locale/VPN session if blocked.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "tn.nova.cz is the news portal of TV Nova, a major established Czech broadcaster — genuine journalism, though commercial and headline-driven.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "cz"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tn.nova.cz",
+      "TV Nova news"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "czech-republic"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/nova-czech-republick.md"
   },
   {
@@ -78667,52 +78703,6 @@
     "_file": "library/tools/domains-ip-infrastructure/ixss-warsong-pw.md"
   },
   {
-    "id": "jaan-internet-solutions-belgium",
-    "name": "Jaan Internet Solutions (Belgium)",
-    "description": "Belgium based IT company including expertise in technology, web development, mobile applications, and more",
-    "url": "http://www.jaan.be",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/jaan-internet-solutions-belgium.md"
-  },
-  {
     "id": "jager",
     "name": "Jager",
     "description": "IOC collection and aggregation",
@@ -92018,52 +92008,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/visualping.md"
-  },
-  {
-    "id": "vmaker-host-pakistan",
-    "name": "Vmaker Host (Pakistan)",
-    "description": "Service provider for registering websites and domain addresses",
-    "url": "http://www.vmakerhost.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/vmaker-host-pakistan.md"
   },
   {
     "id": "vstat-info",
@@ -117551,42 +117495,51 @@
   {
     "id": "collection-of-cadastral-maps",
     "name": "Collection of cadastral maps",
-    "description": "41 countries",
+    "description": "Use when you have an `address` or `geolocation` in a specific country and want the official land-registry/cadastral portal that maps parcels and ownership — returns a jumping-off link, not data directly.",
     "url": "https://cipher387.github.io/collection_of_cadastral_maps/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right national cadastral/land-registry map portal for a given country before pivoting to property/owner lookups.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory itself is free; individual country cadastres it links to vary — some are free, some flag \"(r)\" registration or \"($)\" paid access.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the cipher387 index leaks nothing about your target. OpSec risk begins on the downstream cadastre — some national portals log searches or require login; treat each linked site on its own terms and use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained GitHub Pages index by cipher387 (cyb_detective), a well-known OSINT curator; carries a self-disclosed \"no longer being updated\" notice.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cipher387 cadastral maps",
+      "cadastral maps directory"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Other"
+      "property-records",
+      "cadastre"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/collection-of-cadastral-maps.md"
   },
   {
@@ -217473,7 +217426,12 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "amazon-registry-search"
+      "amazon-registry-search",
+      "amazon-pay",
+      "amazon-rekognition",
+      "amazon-sns",
+      "aws-public-datasets",
+      "us-east-1-console-aws-amazon-com"
     ],
     "aliases": [
       "Amazon.com registry search",
@@ -230332,37 +230290,51 @@
   {
     "id": "ezilon",
     "name": "Ezilon",
-    "description": "OSINT tool: Ezilon.",
+    "description": "Use when you have an `employer-org` or business `name` in a specific world region and want a human-curated directory listing to confirm it exists and find its site/address — returns business links and regional context.",
     "url": "http://www.ezilon.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A region-organized web directory for locating and corroborating a business or organization by country/region.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "domain",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; ad-supported directory, no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Directory browsing is passive and reveals nothing to the subject. It relies on manual editorial submissions, so treat listings as leads to confirm, not authoritative records.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "unverified",
+    "trustNote": "A long-running (since 2002) human-edited regional web directory; entries are self-submitted and can be stale, so corroborate anything you rely on.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ezilon.com",
+      "Ezilon regional directory"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "web-directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ezilon.md"
   },
   {
@@ -295499,24 +295471,32 @@
   {
     "id": "osint-encyclopedia-optiv-cham423",
     "name": "OSINT Encyclopedia (optiv / cham423)",
-    "description": "Optiv-published GitHub encyclopedia of OSINT resources and techniques.",
+    "description": "Use when you have a selector but not a method and want a reference catalogue of OSINT techniques and tools to consult — returns methodology and tool pointers, not target data.",
     "url": "https://github.com/optiv/OSINT_Encyclopedia",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Reference encyclopedia of OSINT methods and tools",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A reference encyclopedia of OSINT methods, resources and tooling to plan an investigation or find the right technique for a given selector.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source GitHub repository; clone or read online at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading or cloning the repo is invisible to any target. Techniques it describes vary from passive to active — apply the opsec judgment of whichever specific method you enact, not of the encyclopedia itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Published by Optiv (security firm) on GitHub.",
+    "trustNote": "Published by Optiv (an established security firm) and maintained by cham423 on GitHub; a curated reference, not a data source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -295525,15 +295505,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT_Encyclopedia",
+      "optiv OSINT encyclopedia",
+      "cham423 encyclopedia"
+    ],
     "tags": [
       "tool-collection",
       "encyclopedia",
-      "github"
+      "github",
+      "methodology"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-encyclopedia-optiv-cham423.md"
   },
   {
@@ -300238,46 +300223,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/search-craigslist.md"
-  },
-  {
-    "id": "search-encrypt",
-    "name": "Search Encrypt",
-    "description": "Private search engine that encrypts searches",
-    "url": "https://www.searchencrypt.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/search-encrypt.md"
   },
   {
     "id": "search-engine-colossus",
@@ -306058,41 +306003,55 @@
   {
     "id": "watch-out-investors",
     "name": "Watch Out Investors",
-    "description": "Allows you to search for regulatory or disciplinary actions against corporate entities",
+    "description": "Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or economic-offence action — returns matches to `employer-org`, `associate` and disqualification records.",
     "url": "http://www.watchoutinvestors.com/default2a.asp",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Screening an individual or company against India's aggregated database of economic offenders, defaulters and disqualified directors.",
+    "selectorsIn": [
+      "name",
+      "document-id",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public search; no account or payment required for the core name/ID lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searches run against a third-party aggregator, not the target, so nothing is disclosed to the subject. Standard web hygiene (clean browser/IP) is enough; there is no notification back to any named party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated as a public-interest database aggregating orders from ~46 Indian regulators (MCA, SEBI, RBI, etc.); a secondary aggregator, so always confirm hits against the primary regulator's order.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "watchoutinvestors.com",
+      "WOI economic offenders database"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "financial-regulatory",
+      "india"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/watch-out-investors.md"
   },
   {
@@ -311614,7 +311573,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "react-reddit-search-app"
+      "react-reddit-search-app",
+      "geospy-2"
     ],
     "aliases": [
       "betterredditsearch"
@@ -352857,37 +352817,51 @@
   {
     "id": "awesome-translations-list",
     "name": "Awesome Translations list",
-    "description": "OSINT tool: Awesome Translations list.",
+    "description": "Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render it into a searchable form — returns tool links, not translations.",
     "url": "https://github.com/mbiesiad/awesome-translations#tools",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Picking the right translation/transliteration/dictionary tool when a lead is in a language or script you can't search directly.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The list is a free open-source GitHub \"awesome\" page; the tools it links to are mostly free (a few freemium).",
+    "opsec": "passive",
+    "opsecNote": "Reading a GitHub list leaks nothing. When you later paste target text into a downstream machine-translation service, remember that service now holds that text — for sensitive names/documents prefer offline or self-hosted translators the list also catalogues.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community \"awesome-*\" list maintained by mbiesiad on GitHub; a curated index, quality of linked tools varies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "awesome-translations",
+      "mbiesiad awesome translations"
+    ],
     "tags": [
-      "language-tools"
+      "language-tools",
+      "tool-collection",
+      "transliteration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/awesome-translations-list.md"
   },
   {
@@ -362984,48 +362958,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/transportation/number-plate-check.md"
-  },
-  {
-    "id": "open-data-soft-navitia",
-    "name": "Open Data Soft - Navitia",
-    "description": "OSINT tool: Open Data Soft - Navitia.",
-    "url": "https://navitia.opendatasoft.com/explore/?sort=modifi",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/open-data-soft-navitia.md"
   },
   {
     "id": "openaip-world-aeronautical-database",

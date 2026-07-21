@@ -548,7 +548,7 @@ kind: group-index
 - **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
 - **`osint-cheat-sheet`** (low) — Use when you need to discover more OSINT tools, datasets, or techniques for a selector — a curated index pointing to resources across people
 - **`osint-combine-tools`** (high) — Use when you have a `username`, `geolocation`, or social handle and want a vetted free toolset to expand it — returns social-profiles, geo l
-- **`osint-encyclopedia-optiv-cham423`** (medium) — Optiv-published GitHub encyclopedia of OSINT resources and techniques.
+- **`osint-encyclopedia-optiv-cham423`** (medium) — Use when you have a selector but not a method and want a reference catalogue of OSINT techniques and tools to consult — returns methodology 
 - **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
 - **`osint-framework-3`** (high) — Use when you have a selector type (`email`, `username`, `phone`, etc.) but not the right tool — returns a categorized directory tree pointin
 - **`osint-investigation-assistant-lambda-black`** (medium) — Single-page assistant linking OSINT tools/queries for investigations.
@@ -648,7 +648,6 @@ kind: group-index
 - **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience
 - **`search-craigslist`** (medium) — Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns mat
-- **`search-encrypt`** (medium) — Private search engine that encrypts searches
 - **`search-engine-colossus`** (low) — International directory of search engines
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
 - **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
@@ -770,7 +769,7 @@ kind: group-index
 - **`wackysafe`** (low) — Kid-friendly search engine.
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
 - **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
-- **`watch-out-investors`** (medium) — Allows you to search for regulatory or disciplinary actions against corporate entities
+- **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
 - **`wazap-video-and-game-search-japan`** (medium) — Website that offers a search engine for locating videos and games
 - **`we-feel`** (medium) — Twitter search tool that analyzes emotions in real-time
 - **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.

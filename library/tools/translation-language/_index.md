@@ -18,7 +18,7 @@ kind: group-index
 - **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing
 - **`alphadictionary-com`** (low) — Search from over 1000 online English dictionaries at once
 - **`apertium-org`** (low) — OSINT tool: apertium.org.
-- **`awesome-translations-list`** (medium) — OSINT tool: Awesome Translations list.
+- **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
 - **`babelfish-language-translations`** (low) — Text and web content translation tool
 - **`baidu-translate`** (low) — OSINT tool: Baidu Translate.
 - **`binary-translator`** (low) — Tool for translating from one language form to another
