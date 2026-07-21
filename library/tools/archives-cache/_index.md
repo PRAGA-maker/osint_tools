@@ -16,7 +16,7 @@ kind: group-index
 - **`alltop`** (low) — OSINT tool: Alltop.
 - **`archive-it`** (low) — Website that provides cached page recovery services of a specific URL link
 - **`archive-md`** (medium) — Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `d
-- **`archive-org-downloader`** (medium) — A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution t
+- **`archive-org-downloader`** (medium) — Use when you have an archive.org `document-id`/URL for a borrow-only book and want the full text offline — returns a downloaded PDF you can 
 - **`archive-org`** (high) — Use when you have a `domain` or URL and want to retrieve historical snapshots of a page as it looked in the past — returns archived captures
 - **`archive-page-addons-mozilla-org`** (medium) — Use when you have a `domain`/URL and want to preserve a live page before it changes — saves a permanent archive.today snapshot you can cite 
 - **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
@@ -112,7 +112,7 @@ kind: group-index
 - **`wayback-tweets`** (medium) — Use when you have a Twitter/X `username` and want their deleted or historical tweets — returns archived tweet captures pulled from the Wayba
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
-- **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
+- **`waymore`** (medium) — Use when you have a `domain` and want the fullest possible historical URL/content footprint — returns archived links and downloaded response
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
 - **`web-archive-org`** (medium) — Use when you have a domain/URL and want its historical snapshots — returns past versions of a page (deleted content, old contact details, pr
 - **`web-archives-chrome-google-com`** (medium) — Use when you have a `domain`/URL and want archived or cached copies of it fast — a browser extension that queries Wayback, Archive.today, Go

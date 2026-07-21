@@ -508,7 +508,6 @@ kind: group-index
 - **`skype-search-engine`** (high) — Use when you have a `username`, `email` or `name` and want to find a Skype account's profile, avatar and location — now largely historical a
 - **`skype`** (medium) — Use when an old lead references a Skype username/account — returns little live intelligence; Skype was retired in May 2025, so treat it as h
 - **`skyzoo-blue`** (high) — Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-
-- **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
 - **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — Use when you have a VK (VKontakte) numeric user id and want hidden profile metadata without logging in — returns account creation/last-seen 
 - **`sn0int-framework-module-for-pornhub`** (medium) — Use when you have a Pornhub `username`/profile and want its linked identities — returns the display `name`, linked `social-profile`s (Instag
 - **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 

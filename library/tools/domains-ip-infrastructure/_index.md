@@ -182,7 +182,6 @@ kind: group-index
 - **`focsec`** (low) — OSINT tool: Focsec.
 - **`follow-net`** (low) — OSINT tool: Follow.net.
 - **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
-- **`free-hosting`** (medium) — Service provider for hosting webpages and websites
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
 - **`gandi-uk`** (medium) — UK based service provider for registering websites and domain addresses

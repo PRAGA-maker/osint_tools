@@ -155,7 +155,7 @@ kind: group-index
 - **`cloudflare-radar`** (low) — Use when you have a `domain` or `ip-address` and want internet-intelligence on it — returns domain rankings, traffic/AS data, URL-scan resul
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
 - **`cnn`** (low) — OSINT tool: CNN.
-- **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
+- **`coalition-against-insurance-fraud`** (low) — Use when you have a subject/lead tied to possible insurance fraud and want the right reporting/lookup channel — returns a directory of US st
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
 - **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
@@ -573,7 +573,7 @@ kind: group-index
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`phind`** (low) — OSINT tool: Phind.
 - **`pinterest-trends`** (low) — OSINT tool: Pinterest Trends.
-- **`population-reference-bureau`** (medium) — Population Reference Bureaus US and international data search of population indicator
+- **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.
 - **`presearch`** (low) — OSINT tool: Presearch.
 - **`press-reader`** (low) — OSINT tool: Press Reader.
@@ -746,7 +746,7 @@ kind: group-index
 - **`us-government-printing-office`** (medium) — Use when you have a `name` and want to find them in official US federal publications — congressional hearings, court opinions, the Federal R
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
 - **`usa-gov`** (medium) — Use as the official gateway to US government services and agencies — a directory/portal to find the right federal/state agency and record sy
-- **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`usarmy-occupation-codes-united-states`** (medium) — Use when you have a US Army MOS code or role reference for a subject and want to decode it — returns the `employer-org`/job meaning to inter
 - **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
 - **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
 - **`vancouver-sun-opinions`** (low) — Use when you have a `name` linked to British Columbia and want op-ed/columnist coverage — returns `associate`, `employer-org` and viewpoint/

@@ -70,7 +70,6 @@ kind: group-index
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
 - **`council-on-foreign-relations`** (medium) — Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers
-- **`createtv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
@@ -305,7 +304,6 @@ kind: group-index
 - **`tech-advisor-uk`** (low) — Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publicatio
 - **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techcrunch`** (low) — Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer
-- **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
 - **`techrepublic`** (low) — Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads me
 - **`telemundo-network-television-united-states`** (low) — Use when you have a `name` tied to U.S. Hispanic/Latin-American news and want Spanish-language coverage — returns news mentions, associate, 
@@ -354,7 +352,6 @@ kind: group-index
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.
 - **`wikipedia-list-of-world-newspapers`** (medium) — Wikipedia's list of world newspapers categorized by continent/country
-- **`wimdu`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`win-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.

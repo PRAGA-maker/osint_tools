@@ -520,7 +520,7 @@ kind: group-index
 - **`kansas-restaurant-inspections`** (medium) — Use when you have a Kansas food-business `name`/`address` (or an owner name) and want its state food-safety inspection history — returns ins
 - **`kansas`** (high) — Use when you have a `name` and want to check whether a subject is in the Kansas Department of Corrections population — returns offense histo
 - **`katrina-spending-search`** (high) — Use when you have a `name` or `employer-org` and want to check Hurricane Katrina federal-aid/contract recipients — returns recipient `name`,
-- **`kmle-medical-dictionary-korean`** (medium) — Korean Medical Library Engine: academic-related search engine focusing on medicine
+- **`kmle-medical-dictionary-korean`** (medium) — Use when you have Korean-language medical terms in a subject's records and want them decoded (or need Korean medical-community context) — re
 - **`knoema`** (low) — OSINT tool: Knoema.
 - **`koreabr-com`** (high) — Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-cre
 - **`ky-state-salary-2019`** (medium) — Use when you have a surname and suspect a Kentucky state-government job — returns employer-org (cabinet/department) and 2019 salary to confi

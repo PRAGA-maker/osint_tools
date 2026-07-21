@@ -17799,40 +17799,53 @@
   {
     "id": "archive-org-downloader",
     "name": "Archive-org-Downloader",
-    "description": "A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution to optimize file size and work with link lists.",
+    "description": "Use when you have an archive.org `document-id`/URL for a borrow-only book and want the full text offline — returns a downloaded PDF you can then read for names, addresses and other leads.",
     "url": "https://github.com/MiniGlome/Archive.org-Downloader",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading full borrow-only books/documents from archive.org as a searchable PDF instead of the 1-hour/14-day online loan.",
     "selectorsIn": [
-      "image"
+      "document-id"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source Python script. Requires a free archive.org account (email + password) — no payment.",
+    "opsec": "active",
+    "opsecNote": "You must log in with an archive.org account, so the download is tied to that identity — use a dedicated sock-puppet account, never a personal one. The script \"borrows\" the item under your account to fetch the page images, which archive.org logs. Downloading many items quickly can trip rate limits or account flags.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source utility (MiniGlome) that automates archive.org's own lending viewer; it does not alter content, only stitches the borrowed page images into a PDF.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "waymore"
+    ],
+    "aliases": [
+      "Archive.org-Downloader",
+      "MiniGlome archive downloader"
+    ],
     "tags": [
       "Archives",
       "Tools for working with web archives"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/archive-org-downloader.md"
   },
   {
@@ -22747,41 +22760,53 @@
   {
     "id": "waymore",
     "name": "WayMore",
-    "description": "Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).",
+    "description": "Use when you have a `domain` and want the fullest possible historical URL/content footprint — returns archived links and downloaded response bodies as `document-id`/`metadata-exif` leads.",
     "url": "https://github.com/xnl-h4ck3r/waymore",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling every known archived URL for a domain (and optionally the archived page bodies) from many sources at once.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (pip/Docker). Some sources (URLScan, VirusTotal, Intelligence X) work better or faster with a free API key you add to the config.",
+    "opsec": "passive",
+    "opsecNote": "Queries public archive indexes (Wayback, Common Crawl, AlienVault OTX, URLScan, VirusTotal, GhostArchive, Intelligence X), not the live target site, so it does not touch the subject's own infrastructure. The requests go to those third parties under your own IP/API keys — run from a research VPN if you don't want those providers to log your investigative interest. Downloading archived responses (mode R/B) can be high-volume; respect rate limits.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely used, actively maintained open-source tool by xnl-h4ck3r; results are only as authoritative as the underlying public archives it aggregates.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "xnlinkfinder",
+      "archive-org-downloader"
+    ],
+    "aliases": [
+      "waymore.py",
+      "xnl-h4ck3r waymore"
+    ],
     "tags": [
       "Archives",
       "Tools for working with web archives"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "xnlinkfinder"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/waymore.md"
   },
   {
@@ -26400,46 +26425,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/forum-search-engines/craigslist-forums.md"
-  },
-  {
-    "id": "createtv-united-states",
-    "name": "CreateTV (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://createtv.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/createtv-united-states.md"
   },
   {
     "id": "crn-com-technology-news-for-solution-providers",
@@ -37484,46 +37469,6 @@
     "_file": "library/tools/communities-forums/techcrunch.md"
   },
   {
-    "id": "technorati-news",
-    "name": "Technorati News",
-    "description": "Online articles and news related to business, computers, gadgets, technology, gaming, and future trends",
-    "url": "http://technorati.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/technorati-news.md"
-  },
-  {
     "id": "techradar",
     "name": "TechRadar",
     "description": "Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from detailed reviews — returns `device-id`, `physical-description`.",
@@ -39818,46 +39763,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/wikipedia-list-of-world-newspapers.md"
-  },
-  {
-    "id": "wimdu",
-    "name": "Wimdu",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "http://www.wimdu.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/wimdu.md"
   },
   {
     "id": "win-television-australia",
@@ -72611,52 +72516,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/reputation/fortiguard-reputation-service.md"
-  },
-  {
-    "id": "free-hosting",
-    "name": "Free Hosting",
-    "description": "Service provider for hosting webpages and websites",
-    "url": "https://www.freehosting.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/free-hosting.md"
   },
   {
     "id": "free-online-network-tools",
@@ -241572,47 +241431,50 @@
   {
     "id": "kmle-medical-dictionary-korean",
     "name": "KMLE Medical Dictionary – Korean",
-    "description": "Korean Medical Library Engine: academic-related search engine focusing on medicine",
+    "description": "Use when you have Korean-language medical terms in a subject's records and want them decoded (or need Korean medical-community context) — returns term definitions, not personal records.",
     "url": "http://www.kmle.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding Korean/English medical terminology in documents and browsing a Korean medical-professional community as background context.",
     "selectorsIn": [
-      "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Korean medical dictionary and community portal; the dictionary is open, some community boards require a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public dictionary/community site — you look up terms, not people. Reading the dictionary leaves no target-side footprint. If you register to read gated community boards, use a sock-puppet account; those boards are frequented by Korean medical professionals who may recognise unusual activity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, privately run Korean medical reference (KMLE) widely used by Korean med students and clinicians; the dictionary is reliable for terminology, community content is user-generated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "kr"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KMLE",
+      "Korean Medical Library Engine",
+      "kmle.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kmle-medical-dictionary-korean.md"
   },
   {
@@ -275782,41 +275644,45 @@
   {
     "id": "coalition-against-insurance-fraud",
     "name": "Coalition Against Insurance Fraud",
-    "description": "The Coalition Against Insurance Fraud website providing numerous resource links",
+    "description": "Use when you have a subject/lead tied to possible insurance fraud and want the right reporting/lookup channel — returns a directory of US state fraud bureaus plus scam-type reference material.",
     "url": "https://insurancefraud.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A gateway/directory to US state insurance-fraud bureaus and fraud-scheme reference, for routing and contextualising insurance-fraud leads.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Public resources (state-bureau directory, scam alerts, statistics) are free. Deeper databases (Fraud Tracker, arrests/convictions, legislative map) are member-only behind a login.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public non-profit advocacy site — you read reference material and a bureau directory, no target lookup and no subject-alerting. The gated databases require membership; do not attempt to access them without authorisation. Reporting a subject to a state bureau is an active real-world step — treat that as an escalation outside passive OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "The Coalition Against Insurance Fraud is an established national alliance of 300+ insurers, regulators and consumer groups; its bureau directory and statistics are authoritative reference.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "insurancefraud.org",
+      "CAIF"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/coalition-against-insurance-fraud.md"
   },
   {
@@ -296085,24 +295951,27 @@
   {
     "id": "population-reference-bureau",
     "name": "Population Reference Bureau",
-    "description": "Population Reference Bureaus US and international data search of population indicator",
+    "description": "Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — returns population statistics, not individual records.",
     "url": "https://www.prb.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Pulling US and international demographic indicators for a country/state/region to frame the population context around a case.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free non-profit research resource; data sheets and the International/US Data Centers are open. Optional free newsletter subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public statistics site — you query aggregate demographic data by place, never a person. No target-side footprint; browsing is anonymous. Nothing here identifies an individual, so there is no subject-alerting risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established, widely cited non-profit demographic research organisation; figures are sourced from census bureaus, UN and national statistics agencies.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -296111,18 +295980,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "population-reference-bureau-data-finder"
+    ],
+    "aliases": [
+      "PRB",
+      "prb.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "population-reference-bureau-data-finder"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/population-reference-bureau.md"
   },
   {
@@ -299815,29 +299687,37 @@
   {
     "id": "searchdiggity",
     "name": "SearchDiggity",
-    "description": "OSINT tool: SearchDiggity.",
-    "url": "https://bishopfox.com/resources",
+    "description": "Use when you have a `domain` (or org) and want to surface exposed files/credentials via automated search-engine dorking — returns `document-id`/`email` leads from Google, Bing and Shodan.",
+    "url": "https://bishopfox.com/tools/google-hacking-diggity-project",
     "category": "search-engines",
     "path": [
       "search-engines",
       "search-tools"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automated Google/Bing/Shodan dorking of a domain to find publicly exposed documents, directories and credentials.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "email"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free Windows GUI download from Bishop Fox. No licence cost, but several back-ends depend on search-engine APIs (Google/Bing) that have changed since the last major release, so some scanners no longer return results.",
+    "opsec": "passive",
+    "opsecNote": "Queries Google, Bing and Shodan about the target domain rather than touching the target's own servers, so it is passive toward the subject. The dork queries run under your IP/API keys and can be throttled or blocked by the search engines; use research infrastructure and API keys you are willing to burn. Do not act on any exposed credentials it surfaces — record, do not use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Published by Bishop Fox, an established security consultancy, as part of the long-running Google Hacking Diggity Project; the tool is legitimate, though aging.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -299845,11 +299725,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google Hacking Diggity",
+      "Diggity",
+      "SearchDiggity 3.1"
+    ],
+    "tags": [
+      "search-tools",
+      "google-dorking"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-tools/searchdiggity.md"
   },
   {
@@ -304561,41 +304448,49 @@
   {
     "id": "usarmy-occupation-codes-united-states",
     "name": "USArmy Occupation Codes (United States)",
-    "description": "Website that identifies the occupation classification code across the country at the national level",
+    "description": "Use when you have a US Army MOS code or role reference for a subject and want to decode it — returns the `employer-org`/job meaning to interpret military records and background.",
     "url": "https://en.wikipedia.org/wiki/List_of_United_States_Army_careers",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding US Army MOS codes / career fields mentioned in a subject's records into a plain-language role.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Wikipedia reference page; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public reference page — you look up a code, not a person. No target-side footprint and nothing that could alert a subject; browse normally (Wikipedia sees only that the page was viewed).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Wikipedia-maintained list; MOS/career-field entries are factual and generally sourced, but confirm any specific code against the official US Army MOS listing before relying on it.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "List of United States Army careers",
+      "Army MOS codes"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/usarmy-occupation-codes-united-states.md"
   },
   {
@@ -336555,43 +336450,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/skyzoo-blue.md"
-  },
-  {
-    "id": "slash-tags",
-    "name": "Slash Tags",
-    "description": "tool for recommending YouTube tags and displaying related statistical data from search keyword(s)",
-    "url": "https://github.com/huhmit/slashtags",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "YouTube"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/slash-tags.md"
   },
   {
     "id": "small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without",
