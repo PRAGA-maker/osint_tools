@@ -29,6 +29,7 @@ registration: false
 relatedTools:
 - criminology-wiki
 - wikiaentertainment
+- familypedia
 aliases:
 - IT Law Wiki
 - itlaw.wikia.com

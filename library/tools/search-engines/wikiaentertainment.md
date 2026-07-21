@@ -47,6 +47,7 @@ relatedTools:
 - criminology-wiki
 - wowwiki-world-of-warcraft-wiki
 - itlaw
+- familypedia
 ---
 
 # Fandom (Entertainment wikis)

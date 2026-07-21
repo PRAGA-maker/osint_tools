@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7884 total · 4290 full · 3594 stub (54% enriched)
+**Tools:** 7883 total · 4293 full · 3590 stub (54% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3611 · medium: 2310 · high: 1963
+low: 3611 · medium: 2309 · high: 1963
 
 ## Tools by trust
-community: 3510 · unverified: 2928 · trusted: 1436 · untrustworthy: 6 · personal: 4
+community: 3510 · unverified: 2926 · trusted: 1437 · untrustworthy: 6 · personal: 4
 
 ## Tools by category (full/total)
 
@@ -23,16 +23,16 @@ community: 3510 · unverified: 2928 · trusted: 1436 · untrustworthy: 6 · pers
 - `domains-ip-infrastructure` — 93/731
 - `email` — 244/246
 - `evidence-capture` — 8/31
-- `financial-crypto` — 44/120
+- `financial-crypto` — 45/120
 - `geolocation` — 276/345
-- `image-video-face` — 433/462
+- `image-video-face` — 433/461
 - `maps-geospatial-data` — 53/131
 - `messaging` — 175/188
 - `opsec-investigator-tooling` — 36/558
 - `people-search` — 251/260
 - `phone` — 134/137
 - `public-records` — 806/1073
-- `search-engines` — 413/882
+- `search-engines` — 415/882
 - `social-networks` — 704/797
 - `training-ctf` — 3/12
 - `translation-language` — 15/103

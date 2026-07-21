@@ -27,7 +27,7 @@ kind: group-index
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
 - **`binbase-com`** (medium) — Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-o
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
-- **`bindb-com`** (medium) — OSINT tool: bindb.com.
+- **`bindb-com`** (medium) — Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch a
 - **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
 - **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.
 - **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.

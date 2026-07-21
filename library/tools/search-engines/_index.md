@@ -119,7 +119,7 @@ kind: group-index
 - **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
 - **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
 - **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
-- **`brightcloud`** (medium) — OSINT tool: BrightCloud.
+- **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
 - **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
 - **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
@@ -380,7 +380,7 @@ kind: group-index
 - **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
-- **`jobsdb-asia`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`jobsdb-asia`** (medium) — Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV
 - **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
 - **`journal-guide`** (low) — OSINT tool: Journal Guide.
 - **`journal-seek`** (low) — OSINT tool: Journal Seek.

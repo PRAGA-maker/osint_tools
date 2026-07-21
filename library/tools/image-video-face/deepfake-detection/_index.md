@@ -11,7 +11,6 @@ kind: group-index
 - **`deepfakebench`** (medium) — Comparing deepfake detector performance across common benchmarks
 - **`deepfakedetector`** (medium) — Use when you have an `image` or video and want a quick real/fake classification — returns a binary verdict with a confidence score, runnable
 - **`deepsafe`** (medium) — Use when you have an `image`, video, or audio clip and want to test whether it is AI-generated/manipulated — returns per-model real/fake ver
-- **`faceforensics-plus-plus`** (medium) — Training and benchmarking deepfake detection models
 - **`invid-weverify-verification-plugin`** (medium) — Use when you have an `image` or video and want to verify it and pull it apart — returns reverse-search pivots, extracted keyframes, `metadat
 - **`truthscan-deepfake-detector`** (medium) — Use when you have an `image`, video or audio clip of uncertain origin and want an AI-manipulation verdict — returns a synthetic-probability 
 

@@ -33,6 +33,7 @@ relatedTools:
 - wikiaentertainment
 - wowwiki-world-of-warcraft-wiki
 - itlaw
+- familypedia
 aliases:
 - Criminology Fandom wiki
 tags:

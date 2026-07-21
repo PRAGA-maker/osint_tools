@@ -109687,43 +109687,49 @@
   {
     "id": "bindb-com",
     "name": "bindb.com",
-    "description": "OSINT tool: bindb.com.",
+    "description": "Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch and country — returns `employer-org` (the bank) and `geolocation`/country.",
     "url": "https://www.bindb.com/sort-codes",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a card BIN/IIN or a UK/Irish sort code to its issuing bank, branch and country of issue.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free online demo/lookup exists; bulk access and the full downloadable database are paid B2B products. The single-lookup demo is enough for investigative use.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a reference database with a bank identifier, not the subject. Only enter the routing/BIN digits, never a full card/account number, and never a card's full PAN or CVV.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial BIN/sort-code database (marketed for fraud prevention); the free demo's data can lag reissued BIN ranges, so corroborate the bank/country for anything decisive.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BinDB",
+      "BIN/IIN lookup"
+    ],
     "tags": [
       "banksites",
       "Banking Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bindb-com.md"
   },
   {
@@ -136808,48 +136814,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/facecheck-facial-recognition-search.md"
-  },
-  {
-    "id": "faceforensics-plus-plus",
-    "name": "FaceForensics++",
-    "description": "Training and benchmarking deepfake detection models",
-    "url": "https://www.faceforensics.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "deepfake-detection"
-    ],
-    "bestFor": "Training and benchmarking deepfake detection models",
-    "input": "Registration request and dataset usage context",
-    "output": "Curated deepfake datasets with annotations and metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Dataset access requires form submission but does not require uploading investigative targets.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/deepfake-detection/faceforensics-plus-plus.md"
   },
   {
     "id": "facelytics-io",
@@ -274099,40 +274063,53 @@
   {
     "id": "brightcloud",
     "name": "BrightCloud",
-    "description": "OSINT tool: BrightCloud.",
+    "description": "Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation and co-hosted domains — returns `domain`/`ip-address` reputation and infrastructure context.",
     "url": "https://brightcloud.com/tools/url-ip-lookup.php",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reputation, content-category and infrastructure lookup for a domain or IP — including co-hosted (virtually hosted) domains on an IP.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single lookups (you accept OpenText's terms on use); bulk/API \"Web Classification\" and \"IP Reputation\" feeds are paid enterprise products.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — you query OpenText's threat-intel index about the domain/IP, not the target's server, so no connection reaches the subject's infrastructure. OpenText logs your lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by OpenText (formerly Webroot BrightCloud), a major commercial threat-intelligence provider; classifications are authoritative for reputation/category, though the free tool is a summarized view of the paid feed.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "webroot-brightcloud-url-ip-lookup"
+    ],
+    "aliases": [
+      "Webroot BrightCloud",
+      "OpenText BrightCloud URL/IP lookup"
+    ],
     "tags": [
       "speciality-search-engines"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "webroot-brightcloud-url-ip-lookup"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/brightcloud.md"
   },
   {
@@ -276419,7 +276396,8 @@
     "relatedTools": [
       "wikiaentertainment",
       "wowwiki-world-of-warcraft-wiki",
-      "itlaw"
+      "itlaw",
+      "familypedia"
     ],
     "aliases": [
       "Criminology Fandom wiki"
@@ -279651,7 +279629,9 @@
       "religion-wiki",
       "thefaceoff-ice-hockey-wiki",
       "wikiawikis",
-      "wikirecipes"
+      "wikirecipes",
+      "criminology-wiki",
+      "wikiaentertainment"
     ],
     "aliases": [
       "Familypedia",
@@ -286605,7 +286585,8 @@
     "registration": false,
     "relatedTools": [
       "criminology-wiki",
-      "wikiaentertainment"
+      "wikiaentertainment",
+      "familypedia"
     ],
     "aliases": [
       "IT Law Wiki",
@@ -287079,24 +287060,30 @@
   {
     "id": "jobsdb-asia",
     "name": "JobsDB (Asia)",
-    "description": "Website that offers job search services for multiple countries worldwide",
+    "description": "Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV) an `employer-org` — returns employment/recruitment context across SE Asia.",
     "url": "http://www.jobsdb.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Employment/recruitment OSINT across Hong Kong, Singapore, Malaysia, Thailand, Indonesia, the Philippines and Vietnam via a leading regional job platform.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse job listings; a free jobseeker account unlocks profile/CV features. Employer/recruiter tools are paid but not needed for searching.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive for public job-listing search. If you register a jobseeker account to view more, use a sock-puppet identity; do not contact employers or apply, which would be active and attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major, legitimate SEEK-owned regional job platform (24M+ candidates); listings are real employer/recruiter content, but a person's presence here is inferred from postings, not a verified identity record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -287105,15 +287092,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "JobsDB",
+      "SEEK Asia JobsDB"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "employment"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jobsdb-asia.md"
   },
   {
@@ -306051,7 +306042,8 @@
     "relatedTools": [
       "criminology-wiki",
       "wowwiki-world-of-warcraft-wiki",
-      "itlaw"
+      "itlaw",
+      "familypedia"
     ],
     "_file": "library/tools/search-engines/wikiaentertainment.md"
   },

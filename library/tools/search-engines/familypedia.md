@@ -38,6 +38,8 @@ relatedTools:
 - thefaceoff-ice-hockey-wiki
 - wikiawikis
 - wikirecipes
+- criminology-wiki
+- wikiaentertainment
 aliases:
 - Familypedia
 - Family History and Genealogy Wiki

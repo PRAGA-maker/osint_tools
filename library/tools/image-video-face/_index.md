@@ -7,7 +7,7 @@ kind: group-index
 # image-video-face
 
 ## Sub-groups
-- **`deepfake-detection/`** — 7 skill(s) below.
+- **`deepfake-detection/`** — 6 skill(s) below.
 - **`documents/`** — 12 skill(s) below.
 - **`fact-checking-tools/`** — 5 skill(s) below.
 - **`fonts/`** — 4 skill(s) below.
