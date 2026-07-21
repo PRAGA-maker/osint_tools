@@ -111,7 +111,7 @@ kind: group-index
 - **`geovisual-search`** (medium) — Use when you want to find places that look like a chosen feature in satellite imagery (visual similarity search across the globe).
 - **`global-biodiversity-information-facility`** (low) — Use when you have a species name or a `geolocation` and want to know where a plant/animal occurs — returns mapped occurrence points that hel
 - **`global-conflict-tracker`** (low) — Use when you have a `geolocation`/region and want to understand active armed conflicts there — returns conflict status, actors and regional 
-- **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
+- **`global-flood-database-and-interactive-map`** (medium) — Use when you have a `geolocation` and a date and want to know whether that area flooded then — corroborates chronolocation and event timelin
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
 - **`global-terriorism-database`** (medium) — Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors,
 - **`global-wetlands-map`** (low) — Use when you have a `geolocation` or an outdoor `image` of watery terrain and want to test whether a spot is wetland/peatland — returns wetl
@@ -167,7 +167,7 @@ kind: group-index
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
 - **`lookr`** (medium) — OSINT tool: Lookr.
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
-- **`lostplace-atlas`** (medium) — Google map of lost places in Germany and other Europe countries
+- **`lostplace-atlas`** (medium) — Use when you have a `geolocation` (or an image of an abandoned site) in Germany/Europe and want to identify or cross-reference it — returns 
 - **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
 - **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Use when you have a `geolocation` and want the bedrock geology at that spot — returns rock type/formation/age to corroborate or narrow a loc
 - **`map-army`** (low) — Use when you have `geolocation` data and want to annotate it with standardized military/tactical symbology — returns an annotated `geolocati

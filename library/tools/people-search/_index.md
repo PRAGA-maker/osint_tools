@@ -88,7 +88,7 @@ kind: group-index
 - **`finalnotes-obituary-research-guide`** (high) — Use when you have a `name` of a possibly-deceased person and want a methodology plus source list for finding and verifying their obituary — 
 - **`find-a-postal-code-address`** (high) — Use when you have a Canadian `address` and want its exact postal code (or to confirm the address is deliverable) — returns a normalized `add
 - **`find-people-search-us`** (high) — Use when you have a `name` and want a free first-pass US people-search that surfaces addresses, phones, relatives and possible social profil
-- **`fish4jobs`** (medium) — OSINT tool: Fish4Jobs.
+- **`fish4jobs`** (medium) — Use when you have a `name` or `employer-org` and want a matching UK job posting or candidate footprint — returns `employer-org`, `geolocatio
 - **`fixmystreet`** (medium) — Use when you have an `address`/`geolocation` (or a reporter's `name`) and want public local-problem reports tied to that spot — returns `nam
 - **`fold3-us-military-records`** (high) — Use when you have a `name` of a US veteran/service member (often historical) and want military records — returns service records, casualty/u
 - **`forebears`** (high) — Use when you have a surname/given `name` and want its geographic distribution and origin — returns where the name is common (`geolocation`) 

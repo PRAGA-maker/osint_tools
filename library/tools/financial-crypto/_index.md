@@ -25,7 +25,7 @@ kind: group-index
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
 - **`aib-gov-uk`** (medium) — OSINT tool: aib.gov.uk.
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
-- **`binbase-com`** (medium) — OSINT tool: binbase.com.
+- **`binbase-com`** (medium) — Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-o
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — OSINT tool: bindb.com.
 - **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.

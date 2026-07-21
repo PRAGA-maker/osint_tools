@@ -838,7 +838,6 @@ kind: group-index
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns ag
-- **`youdao-search-engine-china`** (medium) — Chinese based web search engine by NetEase
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment

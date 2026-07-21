@@ -7,7 +7,7 @@ kind: group-index
 # communities-forums
 
 ## Sub-groups
-- **`blog-search-engines/`** — 1 skill(s) below.
+- **`blog-search-engines/`** — 0 skill(s) below.
 - **`discord-servers/`** — 3 skill(s) below.
 - **`forum-search-engines/`** — 4 skill(s) below.
 - **`irc-search/`** — 3 skill(s) below.

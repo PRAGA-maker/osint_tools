@@ -31090,48 +31090,6 @@
     "_file": "library/tools/communities-forums/linkode-alpha.md"
   },
   {
-    "id": "live-journal-seek",
-    "name": "Live Journal Seek",
-    "description": "Finding public LiveJournal entries and historical community discussions",
-    "url": "https://ljseek.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums",
-      "blog-search-engines"
-    ],
-    "bestFor": "Finding public LiveJournal entries and historical community discussions",
-    "input": "Keywords and search terms",
-    "output": "Matching journal entries with author, date, and snippets",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Searches publicly indexed content and does not contact journal owners directly; queries are likely logged.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "ljseek-livejournal-blog-search"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/blog-search-engines/live-journal-seek.md"
-  },
-  {
     "id": "livejournal",
     "name": "LiveJournal",
     "description": "OSINT tool: LiveJournal.",
@@ -92888,52 +92846,6 @@
     "_file": "library/tools/domains-ip-infrastructure/whois-records/website-informer.md"
   },
   {
-    "id": "website-outlook",
-    "name": "Website Outlook",
-    "description": "Website analytics and network information",
-    "url": "http://websiteoutlook.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/website-outlook.md"
-  },
-  {
     "id": "website-search-tool",
     "name": "Website search tool",
     "description": "OSINT tool: Website search tool.",
@@ -109848,47 +109760,54 @@
   },
   {
     "id": "binbase-com",
-    "name": "binbase.com",
-    "description": "OSINT tool: binbase.com.",
+    "name": "BinBase",
+    "description": "Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-org` (bank), card type, and `geolocation` (country).",
     "url": "https://www.binbase.com/search.html",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the issuing bank, brand, card type, and country behind a credit/debit-card BIN.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free single-BIN web lookup is available; bulk/database and API access are paid.",
+    "opsec": "passive",
+    "opsecNote": "You look up an anonymous 6–8 digit issuer prefix, not a full card number, against BinBase's own database — nothing touches the cardholder or bank. Never enter a full card number here; the BIN alone is what identifies the issuer.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running commercial BIN database; issuer mappings are generally accurate but self-maintained, so confirm anything decisive against a second BIN source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bin-base"
     ],
+    "aliases": [
+      "binbase.com",
+      "BIN lookup"
+    ],
+    "tags": [
+      "banksites",
+      "Banking Related Sites",
+      "bin-lookup"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/binbase-com.md"
   },
   {
@@ -120004,43 +119923,51 @@
   },
   {
     "id": "global-flood-database-and-interactive-map",
-    "name": "Global Flood Database (and interactive map)",
-    "description": "Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, duration in days, etc.",
+    "name": "Global Flood Database (interactive map)",
+    "description": "Use when you have a `geolocation` and a date and want to know whether that area flooded then — corroborates chronolocation and event timelines with satellite-derived flood extents.",
     "url": "http://global-flood-database.cloudtostreet.ai/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether and when a specific area was flooded over the past ~two decades, with flood extent, dates, duration, and people affected.",
     "selectorsIn": [
       "geolocation"
     ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free interactive map and openly published dataset (satellite-derived flood events); no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query a published scientific dataset; nothing touches the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Peer-reviewed research dataset (Cloud to Street / Floodbase, published in Nature) derived from MODIS satellite imagery; authoritative for mapped events within its coverage window.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Global Flood Database",
+      "cloudtostreet flood map",
+      "Floodbase"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "chronolocation",
+      "disasters"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/global-flood-database-and-interactive-map.md"
   },
   {
@@ -122925,43 +122852,52 @@
   },
   {
     "id": "lostplace-atlas",
-    "name": "Lostplace atlas",
-    "description": "Google map of lost places in Germany and other Europe countries",
+    "name": "Lostplace-Atlas",
+    "description": "Use when you have a `geolocation` (or an image of an abandoned site) in Germany/Europe and want to identify or cross-reference it — returns catalogued abandoned-place `geolocation`s.",
     "url": "https://www.google.com/maps/d/viewer?mid=1yRkY_mc-IpSVTfQgR3G6Pvjno3w&hl=en_US&ll=36.86911339765801%2C22.7511350249344&z=4",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Cross-referencing photos of abandoned/derelict \"lost places\" against a crowd-mapped atlas, mainly in Germany and Europe.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free crowd-curated Google My Maps layer; no account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public Google My Map is passive. It is hosted on Google Maps, so your view is subject to normal Google logging — use a sock-puppet Google session if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-maintained Google My Maps layer; pin locations are user-contributed and unverified, so treat any match as a candidate to confirm on satellite/street imagery.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Lostplace atlas",
+      "lost places map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
+      "Anomalies and \"Lost Places\"",
+      "urbex"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/lostplace-atlas.md"
   },
   {
@@ -156567,36 +156503,49 @@
   },
   {
     "id": "earth",
-    "name": "Earth",
-    "description": "OSINT tool: Earth.",
+    "name": "earth (nullschool)",
+    "description": "Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocation claims about a photo or event.",
     "url": "https://earth.nullschool.net/#current",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Checking historical/current wind, weather, and ocean-current conditions at a place and time on an interactive globe.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; data primarily from NOAA/GFS with selectable dates back to 2013.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a public scientific visualization; nothing touches the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known open visualization of official NOAA/GFS model data; the underlying data is authoritative (model output), though it is forecast/reanalysis, not point observations.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "earth.nullschool.net",
+      "nullschool earth"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "weather",
+      "chronolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/earth.md"
   },
   {
@@ -198150,37 +198099,52 @@
   {
     "id": "fish4jobs",
     "name": "Fish4Jobs",
-    "description": "OSINT tool: Fish4Jobs.",
+    "description": "Use when you have a `name` or `employer-org` and want a matching UK job posting or candidate footprint — returns `employer-org`, `geolocation`, and career detail.",
     "url": "http://www.fish4.co.uk",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a legacy UK job board for a subject's job applications context or an employer's vacancies by location.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view job listings; posting/recruiter features may need an account. Note the platform is a declining legacy site with reduced coverage.",
+    "opsec": "passive",
+    "opsecNote": "Searching public job listings is passive and does not notify anyone. If you register or use recruiter features, that activity is attributable — use a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A once-major UK job board now much diminished (the operating company is in liquidation/dormant); the site still serves listings but coverage is thin, so absence proves little.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "fish4.co.uk",
+      "Fish4"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "employment",
+      "uk"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/people-search/fish4jobs.md"
   },
   {
@@ -308940,46 +308904,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/youcare.md"
-  },
-  {
-    "id": "youdao-search-engine-china",
-    "name": "Youdao Search Engine (China)",
-    "description": "Chinese based web search engine by NetEase",
-    "url": "http://www.youdao.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/youdao-search-engine-china.md"
   },
   {
     "id": "yougotthenews",

@@ -29,7 +29,7 @@ kind: group-index
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
 - **`douwe-com`** (medium) — OSINT tool: douwe.com.
-- **`earth`** (medium) — OSINT tool: Earth.
+- **`earth`** (medium) — Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocat
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
 - **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
 - **`emily-bz`** (medium) — Use when you have a Google Street View panorama URL and want its exact capture time — returns the precise timestamp (to ~2s) of that pano, a
