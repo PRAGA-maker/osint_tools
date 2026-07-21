@@ -280,7 +280,7 @@ kind: group-index
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
 - **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
-- **`seniorfriendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`seniorfriendfinder`** (medium) — Use when you have a `name`/`username`/`geolocation` for an older subject and want a dating-profile check — returns a `social-profile` with p
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/assoc

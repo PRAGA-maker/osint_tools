@@ -88,7 +88,6 @@ kind: group-index
 - **`dupli-checker`** (high) — Use when you have a photo of a person/place and want a quick multi-engine reverse-image lookup — returns matching social-profile pages and i
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
 - **`earthviewer360-com`** (medium) — Click on a point on the map to see a 360 degree video panorama (it's possiblle to pause to see some areas in more detail)
-- **`efficientnetv2`** (medium) — DeepFake Video Detector
 - **`everypixel`** (medium) — Use when you have an `image` and want to find it across stock-photo agencies (and check if it's AI-generated) — returns matching stock listi
 - **`exiflooter`** (high) — Use when you have images (or a URL/directory of them) and want to extract GPS metadata and map it — returns geolocation from metadata-exif.
 - **`exiftool-2`** (high) — Use when you have a media/document file and want a full local metadata dump — returns metadata-exif, geolocation, device-id (same tool as ex
@@ -344,7 +343,6 @@ kind: group-index
 - **`vdownloader`** (high) — Use when you have a video URL (a subject's `social-profile`/post) and want to preserve it offline for analysis — a desktop downloader that s
 - **`verexif`** (high) — Use when you have an `image` and want its EXIF metadata (or to strip it) — returns GPS `geolocation`, camera details and other `metadata-exi
 - **`vevo`** (high) — Use when a subject is a recording artist and you have their stage/artist `name` and want their official music-video catalogue and verified c
-- **`video-stabilization-methods`** (medium) — OSINT tool: Video Stabilization Methods.
 - **`videosearch-io`** (high) — Use when you have a `name`/`username`/keyword and want to search for videos of or about a subject across many platforms at once — returns so
 - **`viewing-bitmoji-changes`** (high) — Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infe
 - **`vimeo`** (medium) — Use when you have a `name`, `username` or topic and want video content and creator profiles on Vimeo — returns `social-profile`s, videos and

@@ -10,7 +10,7 @@ kind: group-index
 - **`commercial-register-worldwide`** (medium) — Use when you have an `employer-org` or `name` tied to a business in canton St. Gallen and want its registration details — returns `address`,
 - **`global-edge-resource-directory`** (medium) — Finding international business intelligence resources and databases by topic
 - **`google-finance`** (medium) — Use when you have a company name or ticker (`employer-org`) and want a quick financial and news overview — returns stock data, company summa
-- **`international-white-pages`** (medium) — International business and personal contact lookups by country
+- **`international-white-pages`** (medium) — Use when you have a `name`/`phone` in a specific country and want directory listings — returns `address` and `phone` from national white/yel
 - **`sec-gov-edgar`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings tying a person to a public company as officer, director or major
 - **`uk-companies`** (medium) — Use when you have a UK company or a person's `name` and want official corporate records — returns registered details, officers, directors' a
 

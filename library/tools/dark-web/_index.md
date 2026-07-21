@@ -65,7 +65,7 @@ kind: group-index
 - **`kilos-darknet-search-engine`** (low) — OSINT tool: KILOS Darknet Search Engine.
 - **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
 - **`mail2tor`** (low) — OSINT tool: Mail2Tor.
-- **`medina-county-auditor`** (medium) — Media County Auditors website, providing information regarding property records and GIS tax maps
+- **`medina-county-auditor`** (medium) — Use when you have a `name` or `address` in Medina County, Ohio and want property records — returns owner `name`, `address`, parcel/valuation
 - **`money-center`** (low) — OSINT tool: Money Center.
 - **`mullvad-vpn`** (low) — OSINT tool: Mullvad VPN.
 - **`naval-open-source-intelligence`** (low) — Use when you need curated open-source naval/maritime-military news and analysis — returns an actively updated feed of naval developments for

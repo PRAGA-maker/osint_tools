@@ -36427,42 +36427,56 @@
   },
   {
     "id": "seniorfriendfinder",
-    "name": "Seniorfriendfinder",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
+    "name": "SeniorFriendFinder",
+    "description": "Use when you have a `name`/`username`/`geolocation` for an older subject and want a dating-profile check — returns a `social-profile` with photos, location and stated details (requires joining).",
     "url": "http://seniorfriendfinder.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Searching the SeniorFriendFinder (FriendFinder network) dating community for a mature/older subject's profile by location and attributes.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and run basic member searches; messaging and full features are paid (paywall-partial). A profile is required to see member content.",
+    "opsec": "active",
+    "opsecNote": "You must register and log in to search members, and browsing/viewing a dating profile can be visible to that member — use a fully built sock-puppet with a plausible profile, never a personal account, and do not message or \"wink at\" the subject. The site states it does NOT background-check members, so all profile content is self-asserted and possibly fake.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, operating FriendFinder-network dating site; profiles are entirely self-created and unverified (the site explicitly does no criminal screening), so treat everything as claims.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Senior FriendFinder",
+      "seniorfriendfinder.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/seniorfriendfinder.md"
   },
   {
@@ -42829,42 +42843,53 @@
   },
   {
     "id": "medina-county-auditor",
-    "name": "Medina County Auditor",
-    "description": "Media County Auditors website, providing information regarding property records and GIS tax maps",
+    "name": "Medina County Auditor (Ohio)",
+    "description": "Use when you have a `name` or `address` in Medina County, Ohio and want property records — returns owner `name`, `address`, parcel/valuation and GIS tax-map data.",
     "url": "http://www.medinacountyauditor.org/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Medina County (Ohio) property records by owner name or address to confirm ownership, addresses and parcel/GIS detail.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public government property-records portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a public county record system, with no contact to the owner and no subject-alerting. Searches run under your IP against a government server; use research infrastructure if you prefer not to appear in local access logs, but the records themselves are public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Medina County, Ohio Auditor's office property/GIS system; ownership and valuation data are authoritative government records (as of each assessment cycle).",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Medina County Ohio Auditor",
+      "medinacountyauditor.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "property-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/medina-county-auditor.md"
   },
   {
@@ -135770,56 +135795,6 @@
     "_file": "library/tools/image-video-face/earthviewer360-com.md"
   },
   {
-    "id": "efficientnetv2",
-    "name": "EfficientNetV2",
-    "description": "DeepFake Video Detector",
-    "url": "https://huggingface.co/spaces/Ron0420/EfficientNetV2_Deepfakes_Video_Detector",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "get-text-from-video",
-      "hugging-face-ai-detector",
-      "huggingface-co",
-      "huggingface-co-4",
-      "instruct-pix2pix",
-      "kosmos-2",
-      "pix2pix-video",
-      "scene-edit-detection",
-      "youtube-whisperer",
-      "scene-detection"
-    ],
-    "_file": "library/tools/image-video-face/efficientnetv2.md"
-  },
-  {
     "id": "everypixel",
     "name": "EveryPixel",
     "description": "Use when you have an `image` and want to find it across stock-photo agencies (and check if it's AI-generated) — returns matching stock listings and an AI-image likelihood score.",
@@ -152944,42 +152919,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/vevo.md"
-  },
-  {
-    "id": "video-stabilization-methods",
-    "name": "Video Stabilization Methods",
-    "description": "OSINT tool: Video Stabilization Methods.",
-    "url": "https://github.com/yaochih/awesome-video-stabilization",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "video-search-and-other-video-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/video-stabilization-methods.md"
   },
   {
     "id": "videosearch-io",
@@ -239695,30 +239634,37 @@
   },
   {
     "id": "international-white-pages",
-    "name": "International White Pages",
-    "description": "International business and personal contact lookups by country",
+    "name": "International White Pages (WAYP)",
+    "description": "Use when you have a `name`/`phone` in a specific country and want directory listings — returns `address` and `phone` from national white/yellow-pages directories worldwide.",
     "url": "https://www.wayp.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "general-info-and-news"
     ],
-    "bestFor": "International business and personal contact lookups by country",
-    "input": "Name, business name, or phone number",
-    "output": "Contact listings including address and phone data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A gateway/directory to national telephone directories worldwide for personal and business contact lookups by country.",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to use; it mainly routes you to each country's own directory service, some of which may have their own limits or fees.",
     "opsec": "passive",
-    "opsecNote": "Lookup queries routed through WAYP servers; no direct contact with listed individuals.",
+    "opsecNote": "Passive — you query directory listings, with no contact to the listed person. Queries go through WAYP and the linked national directories under your IP; use research infrastructure. Directory results are public listings, so there is no subject-alerting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "WAYP (World Area Yellow Pages) is a long-standing directory aggregator; coverage and freshness vary widely by country and it links to third-party national directories of mixed quality — treat listings as leads.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -239726,11 +239672,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WAYP",
+      "World Area Yellow Pages",
+      "wayp.com"
+    ],
+    "tags": [
+      "phone-directory",
+      "white-pages"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/general-info-and-news/international-white-pages.md"
   },
   {
@@ -256140,36 +256093,52 @@
   },
   {
     "id": "regional-municipality-of-durham",
-    "name": "Regional Municipality of Durham",
-    "description": "OSINT tool: Regional Municipality of Durham.",
+    "name": "Regional Municipality of Durham — Open Data",
+    "description": "Use when a case touches Durham Region (Ontario, Canada) and you need geospatial/municipal context — returns open datasets (boundaries, facilities, addresses) as `geolocation`/`address` context.",
     "url": "https://opendata.durham.ca/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "The Durham Region (Ontario) open-data portal — municipal and geospatial datasets (boundaries, facilities, transit, addresses) for local context and mapping.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free open-government data portal; download/API access open, no account required for public datasets.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you download aggregate municipal/geospatial datasets, not individual person records. No target interaction and no subject-alerting. This is context data (facilities, boundaries, infrastructure), not a personal-record lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official open-data portal of the Regional Municipality of Durham; datasets are government-published, though coverage is municipal/geospatial rather than personal.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Durham Region open data",
+      "opendata.durham.ca"
+    ],
+    "tags": [
+      "open-data",
+      "geospatial",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/regional-municipality-of-durham.md"
   },
   {
@@ -298226,43 +298195,55 @@
   },
   {
     "id": "rockstargames-socialclub-player-search",
-    "name": "RockStarGames Socialclub Player Search",
-    "description": "Website that offers a search engine for locating players of leading games and gaming communities",
+    "name": "Rockstar Social Club Player/Crew Search",
+    "description": "Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-profile` with activity and connections.",
     "url": "http://socialclub.rockstargames.com/crews/search/alltypes",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's Rockstar Games Social Club profile and the crews they belong to, pivoting a gaming handle into a social graph.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but a (free) Rockstar Games / Social Club account and login are required to run searches and view most profile detail.",
+    "opsec": "active",
+    "opsecNote": "Searching requires logging into a Rockstar account, so activity is tied to that identity — use a dedicated sock-puppet account, never a personal one. Viewing a profile or crew, or interacting in-platform, can be visible to the subject; stay to passive viewing and do not friend/message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Rockstar Games (first-party); profile/crew data is authoritative for the platform, though usernames and bios are player-chosen and not identity-verified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Rockstar Games Social Club",
+      "socialclub.rockstargames.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": null,
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/rockstargames-socialclub-player-search.md"
   },
   {
