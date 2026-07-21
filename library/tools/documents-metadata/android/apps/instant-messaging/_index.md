@@ -10,7 +10,7 @@ kind: group-index
 - **`kik`** (medium) — User discovery, profile analysis, public username search
 - **`line`** (high) — Use when you have a LINE ID (`username`) or `phone` and want to confirm a LINE account and view its public profile — returns display name, a
 - **`signal-private-messenger`** (medium) — Identity verification, account discovery via phone/email, community research
-- **`snapchat`** (medium) — User verification, story analysis, location tracking via snap maps, relationship mapping
+- **`snapchat`** (medium) — Use when you have a `username`, Snapcode, or `phone` and want to confirm a Snapchat identity and pull public Snap Map/story signals — return
 - **`telegram`** (medium) — Use when you have a `username`, `phone` or channel link and want Telegram intelligence — returns `social-profile`, `associate` links and pub
 - **`whatsapp-messenger`** (medium) — Use when you have a `phone` number and want to confirm it has an active WhatsApp account and pull its public profile — returns `image` (phot
 - **`yik-yak`** (medium) — Location-based event monitoring, community sentiment analysis, anonymity assessment

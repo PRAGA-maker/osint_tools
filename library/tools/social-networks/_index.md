@@ -220,7 +220,7 @@ kind: group-index
 - **`githubrecon`** (medium) — Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (in
 - **`githut`** (low) — GitHub statistics and programming language visualizations.
 - **`gitleak`** (medium) — Use when you have a GitHub `username` and want the email address(es) they used to author commits — returns `email` (and thereby a real-name 
-- **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo
+- **`gitsome`** (medium) — Use when you have an `email`, `username`/org, or `domain` and want to pivot through GitHub — extracts commit emails, maps emails to GitHub a
 - **`gitstar-ranking`** (medium) — Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and th
 - **`gitvio`** (medium) — Use when you have a GitHub `username` and want a quick visual digest of that account's repos, languages and activity — returns an enriched `
 - **`gitxray`** (medium) — Use when you have a GitHub `username` or repo and want deep recon on the account — returns contributor emails, leaked keys, activity-timing 

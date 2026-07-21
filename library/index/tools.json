@@ -33562,41 +33562,56 @@
   {
     "id": "passion-com",
     "name": "Passion.com",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://passion.com",
+    "description": "Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site) — returns social-profile leads.",
+    "url": "https://passion.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a handle or persona has a profile on the Passion.com adult dating/social network.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse basic profiles; messaging and full features are paywalled. No payment needed to check for a profile's existence.",
+    "opsec": "active",
+    "opsecNote": "Meaningful browsing requires a logged-in account, and profile views/likes/messages can notify the member. Adult platforms also fingerprint and may show you as a \"recent visitor.\" Use a fully sandboxed sock-puppet account with a burner email and no real photos; never interact from an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A FriendFinder Networks adult-dating property; profiles are self-created and unverified, and the network is known for fake/bot profiles, so treat any match cautiously.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Passion",
+      "passion.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating",
+      "adult"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/passion-com.md"
   },
   {
@@ -36389,46 +36404,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/seniorfriendfinder.md"
-  },
-  {
-    "id": "seniorpeoplemeet",
-    "name": "SeniorpeopleMeet",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://www.seniorpeoplemeet.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/seniorpeoplemeet.md"
   },
   {
     "id": "shaadi-com",
@@ -61072,7 +61047,7 @@
   {
     "id": "snapchat",
     "name": "Snapchat",
-    "description": "User verification, story analysis, location tracking via snap maps, relationship mapping",
+    "description": "Use when you have a `username`, Snapcode, or `phone` and want to confirm a Snapchat identity and pull public Snap Map/story signals — returns social-profile, name, and geolocation leads.",
     "url": "https://www.snapchat.com/",
     "category": "documents-metadata",
     "path": [
@@ -61081,27 +61056,36 @@
       "apps",
       "instant-messaging"
     ],
-    "bestFor": "User verification, story analysis, location tracking via snap maps, relationship mapping",
-    "input": "Usernames, Snapcodes, phone numbers",
-    "output": "User profiles, story content, snap maps, friend networks",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a Snapchat account from a handle/phone and reading public Snap Map activity and story content for location and network leads.",
+    "selectorsIn": [
+      "username",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; a Snapchat account is needed to see friends/stories, and much public content is visible via the web (snapchat.com/add/<user>, map.snapchat.com).",
     "opsec": "active",
-    "opsecNote": "Snapchat actively detects and blocks third-party clients; API access is restricted",
+    "opsecNote": "Interacting (adding a friend, viewing a story while logged in, subscribing) can notify the target and reveal your account. Snapchat detects and blocks third-party/automation clients. Use a fully separated sock-puppet account and prefer the public web surfaces (profile page, Snap Map) over anything that generates a friend request or a story view.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "First-party platform, so account existence is authoritative; but user-posted content is self-presented and Snap Map location is only as precise as the user's sharing settings allow.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
@@ -61109,11 +61093,17 @@
       "snap-map",
       "snapchat-com"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Snap"
+    ],
+    "tags": [
+      "social-media",
+      "messaging",
+      "snap-map"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/snapchat.md"
   },
   {
@@ -110053,13 +110043,13 @@
   {
     "id": "bitinfocharts-com",
     "name": "bitinfocharts.com",
-    "description": "OSINT tool: bitinfocharts.com.",
+    "description": "Use when you have a `crypto-wallet` address (or a name/exchange label) and want its balance, transaction activity, wealth rank, and public owner tags — returns crypto-wallet intelligence across 13 major coins.",
     "url": "https://bitinfocharts.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a crypto address's balance/history and reading community-submitted owner tags, plus rich-list ranking.",
     "selectorsIn": [
       "crypto-wallet",
       "name"
@@ -110067,29 +110057,38 @@
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free explorer, charts, rich lists, and address monitoring; no account required for lookups.",
+    "opsec": "passive",
+    "opsecNote": "Blockchain data is public and queries hit bitinfocharts, not the wallet owner — nothing alerts the subject. Do NOT add a public tag/comment to an address you're investigating; that is active and would tip off anyone watching the address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running third-party analytics site; on-chain figures are reliable, but the crowd-sourced address \"tags/comments\" are user-submitted and must be corroborated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BitInfoCharts",
+      "bitinfocharts explorer"
+    ],
     "tags": [
       "cryptosites",
-      "CryptoCurrency Related Sites"
+      "CryptoCurrency Related Sites",
+      "blockchain-explorer",
+      "rich-list"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitinfocharts-com.md"
   },
   {
@@ -320335,40 +320334,57 @@
   {
     "id": "gitsome",
     "name": "gitSome",
-    "description": "A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info about repository (with forks); - search info by domain name",
+    "description": "Use when you have an `email`, `username`/org, or `domain` and want to pivot through GitHub — extracts commit emails, maps emails to GitHub accounts, and finds org members — returns email, username, and employer-org links.",
     "url": "https://github.com/chm0dx/gitSome",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting email addresses from a GitHub user/org's commits and mapping an email back to the GitHub account that authored it.",
     "selectorsIn": [
-      "email"
+      "email",
+      "username",
+      "domain"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "email",
+      "username",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source Python CLI. A (free) GitHub personal access token is recommended for rate limits and the email→account feature.",
+    "opsec": "active",
+    "opsecNote": "Queries the GitHub API, which is logged by GitHub against your token/IP; it does not alert the subject. The tool bundles FireProx to rotate source IPs during recon — only use IP rotation within authorized engagements. Use a dedicated (sock-puppet) GitHub token, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source OSINT tool by chm0dx; it reads public GitHub data via the official API, so results are as authoritative as GitHub's own records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gitSome",
+      "chm0dx gitSome"
+    ],
     "tags": [
       "Social Media",
-      "Github"
+      "Github",
+      "cli",
+      "email-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gitsome.md"
   },
   {

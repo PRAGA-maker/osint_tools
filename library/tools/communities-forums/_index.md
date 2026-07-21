@@ -223,7 +223,7 @@ kind: group-index
 - **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
 - **`parler-search`** (low) — Structured Parler user/hashtag search.
 - **`parship-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`passion-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`passion-com`** (low) — Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
 - **`paste-in-ua`** (medium) — Use when you have a `username`, `email` or `domain` and want to check a Ukrainian/RU-language pastebin for dumped credentials, leaked lists 
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
@@ -282,7 +282,6 @@ kind: group-index
 - **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
 - **`seniorfriendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`seniorpeoplemeet`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/assoc
