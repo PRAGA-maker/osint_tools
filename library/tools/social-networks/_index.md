@@ -399,7 +399,6 @@ kind: group-index
 - **`open-source-software-insight`** (medium) — Use when you have a GitHub `username`/repo and want deep activity analytics — returns a developer's contribution patterns, tech stack, colla
 - **`open-source`** (medium) — OSINT tool: open-source.
 - **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
-- **`orbit-livasch`** (medium) — A tool for analyzing connections between Twitter accounts (based on the number of likes, retweets, tweet citations, and mentions).
 - **`osgint`** (medium) — Use when you have a GitHub `username` or `email` and want to pivot between them plus profile intel — returns commit-leaked `email`s, linked 
 - **`osi-ig`** (high) — Use when you have an Instagram `username` and want to pull the profile's public data — user ID, name, bio, counts, profile photo, and any em
 - **`osint-and-socmint-tooling`** (high) — Use when you have logged-in sessions on major social platforms and want browser-extension tooling to extract data from them — returns friend
@@ -591,7 +590,7 @@ kind: group-index
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
 - **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li
 - **`the-twitter-stream-grab`** (medium) — Use when you have a `username` and want historical tweets — Internet Archive's monthly JSON dumps of the public Twitter stream (from 2011), 
-- **`the-visualized`** (medium) — visualize profile tweets to see the most popular from the last month; get info about the use of a particular hashtag (popular tweets, relate
+- **`the-visualized`** (low) — Use when you have a Twitter/X `username` or a hashtag and want a quick visual read of a profile's top tweets, activity pattern and hashtag c
 - **`thread-reader`** (high) — Use when you have an X/Twitter thread `social-profile` URL and want it as one readable, preservable page — returns the full unrolled thread 
 - **`threads-net`** (high) — Use when you have a `username` (usually the subject's Instagram handle) and want their Threads posts, bio and network — returns `social-prof
 - **`threads`** (high) — Use when you have an Instagram/`username` or `name` and want the subject's Threads presence — returns their Threads profile, posts and (shar

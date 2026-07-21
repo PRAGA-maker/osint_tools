@@ -22,7 +22,6 @@ kind: group-index
 - **`1337x-torrent-search-engine`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
 - **`1websdirectory`** (medium) — Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classif
-- **`2lingual-search`** (medium) — OSINT tool: 2lingual Search.
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
 - **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
@@ -528,7 +527,7 @@ kind: group-index
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
 - **`onet`** (medium) — OSINT tool: Onet.
-- **`online-books-page-united-states`** (medium) — Website that offers book search services, covering over 1 million online books
+- **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (low) — OSINT tool: OnlineNewspapers.
 - **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.
 - **`open-directory-finder`** (low) — OSINT tool: Open Directory Finder.
@@ -770,7 +769,7 @@ kind: group-index
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
 - **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
 - **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
-- **`wazap-video-and-game-search-japan`** (medium) — Website that offers a search engine for locating videos and games
+- **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie
 - **`we-feel`** (medium) — Twitter search tool that analyzes emotions in real-time
 - **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
 - **`web-directories`** (low) — Directory of web directories

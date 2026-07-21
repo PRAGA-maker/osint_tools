@@ -109,7 +109,6 @@ kind: group-index
 - **`tor2web-tor-hidden-services-gateway`** (low) — OSINT tool: Tor2Web: Tor Hidden Services Gateway.
 - **`torbox`** (low) — OSINT tool: TorBox.
 - **`torry-io`** (low) — OSINT tool: torry.io.
-- **`tweepi`** (medium) — Twitter monitor and search tool
 - **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil

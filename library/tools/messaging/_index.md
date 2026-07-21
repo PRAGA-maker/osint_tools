@@ -173,7 +173,7 @@ kind: group-index
 - **`username-to-id-bot`** (high) — Use when you have a Telegram `username` (or forwarded message) and want the stable numeric user/group/channel ID behind it — returns a devic
 - **`usinfobot`** (high) — Use when you have a Telegram `username` or a forwarded message and want the account's stable numeric Telegram ID, display name and profile p
 - **`viber-com`** (high) — Use when you have a `phone` number and want to check whether it is registered on Viber — returns the account's public display name and profi
-- **`voicemsgbot`** (medium) — telegram bot to which you can send voice messages and it converts them into text
+- **`voicemsgbot`** (low) — Use when you have a Telegram voice message and want it transcribed to searchable text — returns the spoken content as text you can quote, tr
 - **`wachannelsfinder-com`** (high) — Use when you have a topic, region, or organization name and want to find public WhatsApp channels a subject may run or follow — returns chan
 - **`wacheck-online`** (high) — Use when you have a `phone` number and want to monitor its WhatsApp online/offline activity to infer a pattern of life and timezone — return
 - **`wagscraper`** (medium) — Use when you have a `name`, topic, or `phone` and want to find public WhatsApp group invite links referencing it — returns working chat.what

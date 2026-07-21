@@ -168,7 +168,6 @@ kind: group-index
 - **`citation-machine`** (medium) — Automatic citation generator for APA, MLA, Chicago, and more writing styles
 - **`citizens-police-data-project`** (medium) — Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint 
 - **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
-- **`city-of-brandtford-provincial-offence-court`** (medium) — Website for City of Brantford Provincial Offences Court Office
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
 - **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
 - **`clinicaltrials-gov`** (medium) — Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, spon
@@ -667,7 +666,6 @@ kind: group-index
 - **`north-carolina-resident-database`** (high) — Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors 
 - **`north-carolina`** (high) — Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender
 - **`northdata-com`** (high) — Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addr
-- **`nuans-business-name-search-canada`** (medium) — Canadadian business search engine that searches using company name
 - **`nursing-home-inspect`** (medium) — Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and 
 - **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status
 - **`nypd-misconduct-complaint-database`** (medium) — Use when you have an NYPD officer `name` and want their civilian-complaint history — returns per-officer CCRB complaints, allegations, and s

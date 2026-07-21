@@ -41,7 +41,7 @@ kind: group-index
 - **`blogger`** (medium) — Use when you have a `name` or `username` and want to find a subject's personal blog or Blogger/Blogspot profile — returns `social-profile`, 
 - **`bloglovin`** (medium) — Use when you have a `name`/`username` and want to find a person's blog presence and the blogs they follow — returns blogger profiles and fol
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
-- **`boards-ie`** (medium) — OSINT tool: boards.ie.
+- **`boards-ie`** (medium) — Use when you have a `username` or topic tied to Ireland and want to search one of Ireland's largest discussion forums for a user's posts and
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
 - **`bootsnall`** (medium) — Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; lim
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
@@ -175,7 +175,7 @@ kind: group-index
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
 - **`knok`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`knowledge-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`kyc360`** (medium) — Online anti-money laundering community - account required to access news, facts, articles and more
+- **`kyc360`** (low) — Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage
 - **`lavalife`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
 - **`liferea-linux-rss-news-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
@@ -262,7 +262,7 @@ kind: group-index
 - **`polymeta-news`** (medium) — International news website
 - **`popsugar-australia`** (medium) — Website related to fashion trends, entertainment, beauty, and fitness
 - **`postach-io`** (medium) — Website related to social networking and blogging
-- **`posthaven`** (medium) — Website related to social networking and blogging; allows users to save posts forever
+- **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
 - **`proboards`** (low) — OSINT tool: ProBoards.
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re
 - **`quora`** (low) — OSINT tool: Quora.

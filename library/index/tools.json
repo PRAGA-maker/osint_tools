@@ -24898,43 +24898,50 @@
   {
     "id": "boards-ie",
     "name": "boards.ie",
-    "description": "OSINT tool: boards.ie.",
+    "description": "Use when you have a `username` or topic tied to Ireland and want to search one of Ireland's largest discussion forums for a user's posts and community ties — returns forum posts, `associate` and location leads.",
     "url": "https://www.boards.ie/b/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a major Irish discussion forum for a handle's post history, interests, and local context.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search public posts; a free account is only needed to post, not to read.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching public threads is passive and invisible to the user. Register a sock puppet only if some content is members-only; never reply from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "boards.ie is a long-established, real Irish community forum; posts are user-generated and pseudonymous, so content is genuine but unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "boards.ie"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/boards-ie.md"
   },
   {
@@ -31182,41 +31189,54 @@
   {
     "id": "kyc360",
     "name": "KYC360",
-    "description": "Online anti-money laundering community - account required to access news, facts, articles and more",
-    "url": "http://www.kyc360.com/",
+    "description": "Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage to frame your research — returns AML/KYC news and context, not a person-lookup.",
+    "url": "https://www.kyc360.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Staying current on AML/KYC regulatory news and guidance to contextualise financial-crime research on an entity.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free news/articles with a free-registration wall for full access; deeper training/screening products (RiskScreen) are paid and out of scope here.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading AML news/articles is passive and reveals nothing about a subject. Registration ties access to an email — use a dedicated research address rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Operated by RiskScreen, an established AML/KYC technology and training firm; editorial content is professional and credible (a news/knowledge community, not a records database).",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "KYC360",
+      "RiskScreen KYC360"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "aml",
+      "financial-crime"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/kyc360.md"
   },
   {
@@ -35142,25 +35162,34 @@
   {
     "id": "posthaven",
     "name": "Posthaven",
-    "description": "Website related to social networking and blogging; allows users to save posts forever",
+    "description": "Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biography, `associate` and location context.",
     "url": "https://posthaven.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding and reading a subject's Posthaven blog for self-published biographical detail.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Reading public Posthaven blogs is free; publishing a blog is a paid subscription (irrelevant to OSINT reading).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public blog posts is passive and invisible to the author. Don't comment or subscribe from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "Posthaven is a legitimate long-term blog host (successor to Posterous); content is self-published by the blogger, so it's first-person but unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -35168,15 +35197,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "posthaven.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "blog"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/posthaven.md"
   },
   {
@@ -45464,46 +45496,6 @@
     "_file": "library/tools/dark-web/torry-io.md"
   },
   {
-    "id": "tweepi",
-    "name": "Tweepi",
-    "description": "Twitter monitor and search tool",
-    "url": "http://tweepi.com",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/tweepi.md"
-  },
-  {
     "id": "uk-guns-and-ammo",
     "name": "UK Guns & Ammo",
     "description": "OSINT tool: UK Guns & Ammo.",
@@ -47239,42 +47231,51 @@
   {
     "id": "fanspedia-net",
     "name": "fanspedia.net",
-    "description": "OSINT tool: fanspedia.net.",
+    "description": "Use when you have a `username`, creator name or location and want to check a third-party OnlyFans directory for a matching creator profile — returns a `social-profile`, category and location leads.",
     "url": "https://fanspedia.net/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Searching an independent OnlyFans creator directory to link a handle/name/location to an adult-content profile.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse the directory; individual creators' OnlyFans subscriptions are separate and out of scope.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public directory is passive. This is sensitive adult-content OSINT — handle any finding with care, restrict use to a legitimate, authorized investigation, and avoid subscribing/contacting (that becomes active and identifying).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party directory explicitly \"not affiliated with OnlyFans\"; listings are scraped/aggregated and unverified, and such adult-directory sites change hosts frequently.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fanspedia"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "adult"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/fanspedia-net.md"
   },
   {
@@ -59380,42 +59381,56 @@
   },
   {
     "id": "osint-researcher",
-    "name": "OSINT Researcher",
-    "description": "GitHub OSINT, organization structure analysis, open-source project discovery, team reconnaissance",
+    "name": "OSINT Researcher (iOS)",
+    "description": "Use when you have a GitHub `username`, org or repo URL and want members, repos and contribution history on the go — returns linked accounts, project metadata and `associate` (team) leads.",
     "url": "https://apps.apple.com/us/app/osint-researcher/id6747302251",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "ios"
     ],
-    "bestFor": "GitHub OSINT, organization structure analysis, open-source project discovery, team reconnaissance",
-    "input": "Organization names, GitHub URLs, repository URLs",
-    "output": "Organization members, repository lists, contribution history, project metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mobile GitHub reconnaissance — mapping an organization's members, repositories, and contribution history from an iPhone/iPad.",
+    "selectorsIn": [
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "username",
+      "associate",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free iOS app on the US App Store; requires an Apple device to install (no web version).",
     "opsec": "passive",
-    "opsecNote": "App Store only; limited availability and distribution",
+    "opsecNote": "It queries GitHub's public API/data, so it doesn't alert the target. But it runs on your personal device via your App Store account — install from a research device/account if attribution matters, and be aware it's a third-party app whose data handling is unverified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party iOS app of unknown developer provenance; it surfaces public GitHub data, which you can independently verify on github.com.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OSINT Researcher app"
+    ],
+    "tags": [
+      "github",
+      "code-osint",
+      "ios",
+      "mobile-app"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/ios/osint-researcher.md"
   },
   {
@@ -170958,38 +170973,53 @@
   {
     "id": "voicemsgbot",
     "name": "@VoiceMsgBot",
-    "description": "telegram bot to which you can send voice messages and it converts them into text",
+    "description": "Use when you have a Telegram voice message and want it transcribed to searchable text — returns the spoken content as text you can quote, translate and search.",
     "url": "https://t.me/VoiceMsgBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Converting collected Telegram voice notes into text for searching, quoting, and translation.",
+    "selectorsIn": [
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free bot for basic transcription; may impose rate limits or premium tiers, and Telegram bots can disappear without notice.",
+    "opsec": "active",
+    "opsecNote": "You must forward the audio to a third-party bot inside Telegram, using a real Telegram account — that account (not anonymous) is exposed to the bot operator, and the audio content leaves your control. Use a dedicated sock-puppet Telegram account and never forward sensitive/evidential audio you can't risk exposing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "A third-party Telegram bot of unknown operator; transcription accuracy and data handling are unverified, so treat both the transcript and the operator's discretion with caution.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VoiceMsgBot",
+      "Telegram voice-to-text bot"
+    ],
     "tags": [
       "Messengers",
-      "Telegram"
+      "Telegram",
+      "transcription"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/messaging/voicemsgbot.md"
   },
   {
@@ -185690,8 +185720,8 @@
   },
   {
     "id": "perfect-privacy",
-    "name": "Perfect Privacy",
-    "description": "Pre-operation anonymization verification, IP and DNS leak check",
+    "name": "Perfect Privacy Check-IP",
+    "description": "Use when you are about to run an operation and want to confirm your own connection isn't leaking — returns your visible `ip-address`, DNS servers, WebRTC status and a fingerprint summary.",
     "url": "https://www.perfect-privacy.com/check-ip/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -185699,36 +185729,45 @@
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Pre-operation anonymization verification, IP and DNS leak check",
-    "input": "No input required (automatic connection analysis)",
-    "output": "Visible IP address, DNS servers, WebRTC status, and browser fingerprint summary",
+    "bestFor": "Pre-operation self-check that your VPN/proxy hides your real IP and isn't leaking via DNS or WebRTC.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free leak-check page provided by the Perfect Privacy VPN service; no account needed to run the test.",
     "opsec": "active",
-    "opsecNote": "Sends your current IP and browser data to a third-party VPN provider’s servers; use only for anonymization testing.",
+    "opsecNote": "This is a self-directed check — you point it at your OWN connection, not a target. It necessarily sends your current IP/DNS/browser data to a third-party VPN provider's server, so run it only as an anonymization test and be aware Perfect Privacy sees that request. Never run it while logged into anything attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Hosted by Perfect Privacy, a commercial VPN vendor; the leak-check itself is a standard, verifiable browser test, though it's a vendor page (cross-check with an independent leak tester).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "webrtc-leak-test"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Perfect Privacy IP check",
+      "perfect-privacy check-ip"
+    ],
+    "tags": [
+      "opsec",
+      "vpn-test",
+      "leak-check"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/perfect-privacy.md"
   },
   {
@@ -223133,52 +223172,6 @@
     "_file": "library/tools/public-records/citma-org-uk.md"
   },
   {
-    "id": "city-of-brandtford-provincial-offence-court",
-    "name": "City of Brandtford Provincial Offence Court",
-    "description": "Website for City of Brantford Provincial Offences Court Office",
-    "url": "https://www.brantford.ca/en/your-government/provincial-offences-court.aspx",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/city-of-brandtford-provincial-offence-court.md"
-  },
-  {
     "id": "civilian-office-of-police-accountability",
     "name": "Civilian Office of Police Accountability (COPA Chicago)",
     "description": "Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegations, video, and outcomes.",
@@ -250206,52 +250199,6 @@
     "_file": "library/tools/public-records/northdata-com.md"
   },
   {
-    "id": "nuans-business-name-search-canada",
-    "name": "NUANS Business Name Search (Canada)",
-    "description": "Canadadian business search engine that searches using company name",
-    "url": "http://www.bdc-canada.com/BDC/Sub/nuans.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/nuans-business-name-search-canada.md"
-  },
-  {
     "id": "nursing-home-inspect",
     "name": "Nursing Home Inspect",
     "description": "Use when you have a US nursing-home name or location and want its inspection/deficiency history — returns employer-org facility records and geolocation to vet or locate a care facility.",
@@ -270178,45 +270125,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/search-engines/2lingual.md"
-  },
-  {
-    "id": "2lingual-search",
-    "name": "2lingual Search",
-    "description": "OSINT tool: 2lingual Search.",
-    "url": "http://www.2lingual.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "2lingual"
-    ],
-    "_file": "library/tools/search-engines/2lingual-search.md"
   },
   {
     "id": "3dfindit",
@@ -294465,26 +294373,32 @@
   },
   {
     "id": "online-books-page-united-states",
-    "name": "Online Books Page (United States)",
-    "description": "Website that offers book search services, covering over 1 million online books",
+    "name": "Online Books Page (University of Pennsylvania)",
+    "description": "Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can corroborate authorship, biography or historical detail.",
     "url": "http://digital.library.upenn.edu/books/search.html",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating free full-text books by a person (as author) or on a subject, for authorship confirmation and background research.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Entirely free; a curated index of legally free-to-read online books, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public library catalog is passive and invisible to any subject. No sock puppet required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Maintained since 1993 by editor John Mark Ockerbloom at the University of Pennsylvania Libraries — a long-established, curated academic index.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -294492,15 +294406,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Online Books Page",
+      "OBP UPenn"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "books"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/online-books-page-united-states.md"
   },
   {
@@ -306112,42 +306030,53 @@
   },
   {
     "id": "wazap-video-and-game-search-japan",
-    "name": "Wazap Video and Game Search (Japan)",
-    "description": "Website that offers a search engine for locating videos and games",
-    "url": "http://jp.wazap.com",
+    "name": "Wazap (Japan game community)",
+    "description": "Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, reviews and handles — returns community posts and account leads.",
+    "url": "https://wazap.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a Japanese video-game database and user community for a gamer handle, review, or game-linked profile.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; a free account is only needed to post, not to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing/searching public game pages and profiles is passive and invisible to the target. Create a sock-puppet account only if you need to view members-restricted content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-running Japanese gaming community/database; user-generated content, so profiles and posts are unvetted.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "jp"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wazap.com",
+      "jp.wazap.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "gaming",
+      "japan"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wazap-video-and-game-search-japan.md"
   },
   {
@@ -331193,43 +331122,6 @@
     "_file": "library/tools/social-networks/opinioncrawl.md"
   },
   {
-    "id": "orbit-livasch",
-    "name": "Orbit livasch",
-    "description": "A tool for analyzing connections between Twitter accounts (based on the number of likes, retweets, tweet citations, and mentions).",
-    "url": "https://orbit.livasch.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/orbit-livasch.md"
-  },
-  {
     "id": "orkut-brazil",
     "name": "Orkut (archived)",
     "description": "Use when you have a `username`/`name` for a subject active before 2014 and want their old Orkut profile via web archives — returns social-profile, name, associates, and photos from historical snapshots.",
@@ -341806,38 +341698,51 @@
   {
     "id": "the-visualized",
     "name": "The Visualized",
-    "description": "visualize profile tweets to see the most popular from the last month; get info about the use of a particular hashtag (popular tweets, related hashtags, profiles that frequently use this hashtag); lists of #Twitter and #YouTube trends by cou",
+    "description": "Use when you have a Twitter/X `username` or a hashtag and want a quick visual read of a profile's top tweets, activity pattern and hashtag community — returns charts, word clouds and related-account leads.",
     "url": "https://thevisualized.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast visual triage of a Twitter/X profile's recent output and of a hashtag's community and related accounts.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free \"Basic\" tier is operational; advertised paid tiers show \"announcing soon,\" so treat premium features as unavailable.",
+    "opsec": "passive",
+    "opsecNote": "You are querying an analytics site about public tweets, not touching the target's account. Passive, but your query passes through a third-party host — avoid entering anything sensitive beyond the public handle/hashtag.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A small, apparently stalled third-party analytics site; usefulness is capped by Twitter/X API restrictions, so treat outputs as indicative, not complete.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thevisualized.com"
+    ],
     "tags": [
       "Social Media",
-      "Universal"
+      "Universal",
+      "twitter-analytics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/the-visualized.md"
   },
   {
