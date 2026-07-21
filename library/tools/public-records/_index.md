@@ -113,7 +113,6 @@ kind: group-index
 - **`bizwiki-business-wiki-search-united-states`** (medium) — Use when you have a US business `name` and a location and want its listing — a free crawler-built directory; returns `employer-org` details 
 - **`blockint-nl`** (high) — Use when you have a company or person `name` and want to trace ultimate beneficial owners (UBOs) across EU corporate registers — returns a c
 - **`bloomberg-com`** (high) — Use when you have a company `name`/ticker or an `employer-org` and want executives, filings-level corporate data and officer profiles — retu
-- **`bloomberg`** (medium) — OSINT tool: Bloomberg.
 - **`bmi-com`** (low) — Use when you have a `name` (songwriter, performer, or publisher) or a song title and want to link a person to musical works, co-writers, and
 - **`boatinfoworld`** (medium) — Use when you have a `name` (owner or vessel) and want US Coast Guard documented-vessel records — returns owner `name`, `address`, `document-
 - **`bookkeepers-org-uk`** (medium) — Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's busine

@@ -293,7 +293,6 @@ kind: group-index
 - **`google-adwords`** (low) — OSINT tool: Google Adwords.
 - **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
 - **`google-autocomplete-scraper`** (low) — One of the best ways to learn more about a person, company, or subject is to see what people are more likely to type in a search engine alon
-- **`google-blog-directory`** (medium) — Website that provides a search engine that searches blogs; search by topoc, language, region, or type
 - **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
@@ -712,7 +711,7 @@ kind: group-index
 - **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
 - **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
-- **`thepiratebay`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`thepiratebay`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
 - **`thereisabotforthat-com`** (low) — search by catalog of 5151 bots for 17 different apps and platforms
 - **`thingful-net`** (low) — OSINT tool: Thingful.net.
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
@@ -823,7 +822,7 @@ kind: group-index
 - **`yahoo-news`** (low) — OSINT tool: Yahoo News.
 - **`yahoo-search`** (low) — OSINT tool: Yahoo! Search.
 - **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
-- **`yamli-arabic`** (medium) — Arabic search engine and smart Arabic keyboard
+- **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t
 - **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
 - **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
 - **`yaraif`** (medium) — OSINT tool: YARAif.

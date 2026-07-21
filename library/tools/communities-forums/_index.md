@@ -81,7 +81,7 @@ kind: group-index
 - **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
 - **`disboards`** (medium) — Use when you have a `username` or `name` you suspect posts on this Disney-fan forum and want their post history — returns `social-profile`, 
 - **`discovery-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`disqus`** (medium) — Worldide blog comment hosting service
+- **`disqus`** (medium) — Use when you have a Disqus username and want that person's cross-site public comment history — returns social-profile, associate and text le
 - **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses
 - **`doxbin`** (medium) — OSINT tool: doxbin.
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
@@ -143,7 +143,7 @@ kind: group-index
 - **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e
 - **`hgtv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`homestay`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`huffington-post-online-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
@@ -345,7 +345,7 @@ kind: group-index
 - **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,
 - **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
-- **`vrbo`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`vrbo`** (medium) — Use when you have a name or a location and want to check a vacation-rental platform for a host's listing — returns address-area, image and s
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
 - **`washington-post-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`washington-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
@@ -358,7 +358,6 @@ kind: group-index
 - **`world-channel-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`write-as`** (medium) — OSINT tool: Write.as.
 - **`wsj-technology-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
-- **`xanga-2-0`** (medium) — Blog archive website
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
