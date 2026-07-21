@@ -58,7 +58,7 @@ kind: group-index
 - **`christian-mingle`** (medium) — Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
 - **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness
-- **`cl1p`** (medium) — OSINT tool: cl1p.
+- **`cl1p`** (medium) — Use when you have a known/guessable `username` or label and want to check whether someone left text or files at cl1p.net/<that-name> — retur
 - **`cnet`** (medium) — Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/compa
 - **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 

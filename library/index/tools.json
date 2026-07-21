@@ -25750,41 +25750,52 @@
   },
   {
     "id": "cl1p",
-    "name": "cl1p",
-    "description": "OSINT tool: cl1p.",
-    "url": "https://Cl1p.net",
+    "name": "cl1p (Internet Clipboard)",
+    "description": "Use when you have a known/guessable `username` or label and want to check whether someone left text or files at cl1p.net/<that-name> — returns any stored paste content (which can leak links, credentials or documents).",
+    "url": "https://cl1p.net",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking human-memorable cl1p.net URLs for data someone parked there, and understanding cl1p as a paste-sharing channel.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic clipboard; paid accounts add larger limits, retention and access controls.",
+    "opsec": "passive",
+    "opsecNote": "Reading a cl1p URL is passive, but note the DEFAULT clip self-destructs on first read — opening one can DESTROY the evidence and tip off nobody-but-yourself that it's gone. Capture/screenshot first, and be aware whoever set it may notice it was consumed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running free \"internet clipboard\"; content is user-supplied and URLs are user-chosen, so anything found is unverified and its provenance unknown.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "the-internet-clipboard-url-tool"
     ],
+    "aliases": [
+      "cl1p.net",
+      "internet clipboard"
+    ],
+    "tags": [
+      "pastebins",
+      "ephemeral-storage"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/cl1p.md"
   },
   {
@@ -113384,44 +113395,54 @@
   },
   {
     "id": "insolvencydirect-bis-gov-uk",
-    "name": "insolvencydirect.bis.gov.uk",
-    "description": "OSINT tool: insolvencydirect.bis.gov.uk.",
+    "name": "Individual Insolvency Register (UK)",
+    "description": "Use when you have a `name` and want to check UK personal-insolvency records (bankruptcies, IVAs, debt relief orders) — returns the individual's `name`, `address`, `dob` and insolvency case details.",
     "url": "https://www.insolvencydirect.bis.gov.uk/eiir/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the official England & Wales register of bankruptcies, IVAs and debt relief orders by name.",
     "selectorsIn": [
-      "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "name",
+      "address",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government register; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Querying an open government register is passive and anonymous — the subject is not notified and no login is used.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Individual Insolvency Register (EIIR) is maintained by the UK Insolvency Service; entries are official statutory records for England & Wales.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "EIIR",
+      "Individual Insolvency Register",
+      "Insolvency Service register"
+    ],
     "tags": [
       "creditdebt",
-      "Credit & Debtor Information"
+      "Credit & Debtor Information",
+      "insolvency",
+      "uk-public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/insolvencydirect-bis-gov-uk.md"
   },
   {
@@ -122303,40 +122324,6 @@
     "_file": "library/tools/geolocation/inspire-geoportal.md"
   },
   {
-    "id": "inspire-geoportal-eu",
-    "name": "Inspire-geoportal.eu",
-    "description": "OSINT tool: Inspire-geoportal.eu.",
-    "url": "http://www.inspire-geoportal.eu/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/inspire-geoportal-eu.md"
-  },
-  {
     "id": "instahunt-2",
     "name": "Instahunt",
     "description": "Use when you have a `geolocation` (a map point/area) and want Instagram posts tagged there — returns location-tagged posts, the `username`/`social-profile` behind them and their `image`s.",
@@ -127508,42 +127495,50 @@
   {
     "id": "safe-airspace",
     "name": "Safe Airspace",
-    "description": "(Conflict Zone & Risk Database) worldwide map showing the countries where flying over may be dangerous; detailed history of incidents and official warnings for each country",
+    "description": "Use when you have a country/region `geolocation` and want conflict-zone aviation risk intel — warnings, incident history, GPS jamming/spoofing and military-activity alerts — returns a country-by-country risk picture and a `geolocation` hazard map.",
     "url": "https://safeairspace.net/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Conflict-zone and aviation-risk intelligence by country, including GPS spoofing/jamming alerts relevant to geolocation work.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "\"Eternally free\" per the operator; no account or payment required to browse warnings, the map or PDF briefings.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public risk database is fully passive and anonymous — no target interaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Run by OPSGROUP, an independent aviation-operations membership organization; it aggregates official EASA/FAA/national-CAA warnings plus member incident reports — well-regarded but a curated aggregator, not an issuing authority.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "safeairspace.net",
+      "OPSGROUP conflict zones"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
+      "Politics, conflicts and crisis",
+      "conflict-zones",
+      "gps-spoofing"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/safe-airspace.md"
   },
   {
@@ -133684,40 +133679,48 @@
   {
     "id": "betterviewer",
     "name": "BetterViewer",
-    "description": "#Google Chrome extension for work with images. Right click on the picture and open it in new tab. You will get access to the following tools: Zoom, Flip, Rotate, Color picker, Extract text, Reverse image search, QR code scanner and much mor",
-    "url": "https://chrome.google.com/webstore/detail/betterviewer/llcpfkbjgkpmapiidpnohffjmmnhpmpb",
+    "description": "Use when you have an `image` on a web page and want an in-browser toolkit to inspect it — zoom, rotate, extract text (OCR), reverse-image search and scan QR codes — returns leads like a `social-profile` (via reverse search) or embedded text.",
+    "url": "https://chromewebstore.google.com/detail/betterviewer/llcpfkbjgkpmapiidpnohffjmmnhpmpb",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "A right-click Chrome toolkit for on-the-spot image inspection — OCR, reverse-image search, QR scan, zoom/rotate.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension (~10k users, 4.6★); no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "In-browser image manipulation (zoom/rotate/OCR) is local and passive. But its reverse-image and QR actions send the image/URL to third parties (e.g. Google Images), and a browser extension can see pages you visit — install only from the official store and use a dedicated OSINT browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Chrome extension (community-published, featured, well-rated) rather than an audited tool; grant it a dedicated browser profile and review its permissions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BetterViewer Chrome extension"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image Analyze"
+      "Image Analyze",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/betterviewer.md"
   },
   {
@@ -153945,37 +153948,48 @@
   {
     "id": "vimeo",
     "name": "Vimeo",
-    "description": "OSINT tool: Vimeo.",
+    "description": "Use when you have a `name`, `username` or topic and want video content and creator profiles on Vimeo — returns `social-profile`s, videos and the descriptions/locations/links attached to them.",
     "url": "https://vimeo.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching Vimeo for a subject's videos and creator profile, and mining video pages for links, locations and collaborators.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search, watch and view public profiles; uploading/hosting has free and paid tiers, but consumption for OSINT is free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public videos and profiles is passive; the creator isn't notified. Logging in, liking, following or commenting reveals an identity — do that only from a sock-puppet account, never your real one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Vimeo is the first-party platform; profiles and videos are authentic user content (though bios/links are self-declared).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "vimeo.com"
+    ],
     "tags": [
-      "video-search-and-other-video-tools"
+      "video-search-and-other-video-tools",
+      "video-platform"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/vimeo.md"
   },
   {
@@ -230189,39 +230203,54 @@
   },
   {
     "id": "explore-canada-s-real-estate-market",
-    "name": "Explore Canada's Real Estate Market",
-    "description": "OSINT tool: Explore Canada's Real Estate Market.",
+    "name": "RE/MAX Canada Property Search",
+    "description": "Use when you have a Canadian `address` or area and want current property listings — returns listing photos, asking price, address details and the listing agent (`social-profile`), useful for viewing and geolocating a property.",
     "url": "https://www.remax.ca/find-real-estate",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Viewing Canadian real-estate listings (photos, price, area) to inspect or geolocate a property by address/neighbourhood.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and view listings; no account required for browsing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public listings is passive and anonymous. Contacting a listing agent or booking a viewing reveals you — don't, unless from a sock-puppet and with good reason.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major commercial real-estate brokerage's public listing portal; listings reflect properties currently for sale/rent, not ownership records, and are marketing content.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "remax-house-listing-search-canada"
     ],
+    "aliases": [
+      "RE/MAX Canada",
+      "remax.ca"
+    ],
+    "tags": [
+      "real-estate",
+      "canada",
+      "property-search"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/explore-canada-s-real-estate-market.md"
   },
   {
@@ -259126,36 +259155,50 @@
   },
   {
     "id": "scotussearch-com",
-    "name": "Scotussearch.com",
-    "description": "OSINT tool: Scotussearch.com.",
+    "name": "SCOTUS Search",
+    "description": "Use when you have a `name` and want to find where it appears in US Supreme Court oral arguments (as a party, attorney or speaker) — returns the matching argument statements, case names and speakers.",
     "url": "https://www.scotussearch.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text search of US Supreme Court oral-argument transcripts by name, party, speaker or case since the 1950s.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free (BETA); no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching public court-argument transcripts is passive and anonymous — no target interaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A free BETA research tool indexing public SCOTUS oral-argument transcripts (1.4M+ statements across ~6,800 arguments); a third-party index of authoritative primary transcripts.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "scotussearch.com",
+      "SCOTUS Search"
+    ],
+    "tags": [
+      "court-records",
+      "supreme-court",
+      "legal-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scotussearch-com.md"
   },
   {

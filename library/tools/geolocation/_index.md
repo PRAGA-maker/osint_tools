@@ -145,7 +145,6 @@ kind: group-index
 - **`huntel-io`** (medium) — Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts 
 - **`i-see-you-iseeyou`** (medium) — Use when you can get a target to click a link in an AUTHORIZED engagement and want their precise `geolocation` — returns HTML5 GPS coordinat
 - **`imb-piracy-and-armed-robbery-map`** (high) — Use when you have a `geolocation` or maritime region and want reported piracy/armed-robbery incidents there — returns geolocation and incide
-- **`inspire-geoportal-eu`** (medium) — OSINT tool: Inspire-geoportal.eu.
 - **`inspire-geoportal`** (medium) — Use when you need official EU spatial datasets (boundaries, addresses, land use, transport) for a `geolocation` in a European member state.
 - **`instahunt-2`** (high) — Use when you have a `geolocation` (a map point/area) and want Instagram posts tagged there — returns location-tagged posts, the `username`/`
 - **`instant-google-street-view`** (high) — Use when you have an `address`/`geolocation` and want an immediate, navigable Google Street View panorama of that exact spot.
@@ -252,7 +251,7 @@ kind: group-index
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
 - **`rivermap`** (medium) — Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): directi
-- **`safe-airspace`** (medium) — (Conflict Zone & Risk Database) worldwide map showing the countries where flying over may be dangerous; detailed history of incidents and of
+- **`safe-airspace`** (medium) — Use when you have a country/region `geolocation` and want conflict-zone aviation risk intel — warnings, incident history, GPS jamming/spoofi
 - **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.
 - **`satellites-pro`** (high) — Use when you have coordinates or a place and want a quick free web view of satellite imagery and map layers.
 - **`satintel`** (low) — Use when you need satellite reconnaissance (orbital/TLE data, satellite tracking) rather than ground geolocation of a person.

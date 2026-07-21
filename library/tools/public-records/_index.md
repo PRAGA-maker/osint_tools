@@ -295,7 +295,7 @@ kind: group-index
 - **`exa-ai`** (high) — Use when you have a company `name` or website `domain` and want an AI-compiled dossier — people, funding, competitors, news — returns `emplo
 - **`explainpaper`** (low) — Use when you have a dense academic/technical `document-id` (a paper) and want plain-language explanations of it — returns simplified explana
 - **`explee-com`** (high) — Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-
-- **`explore-canada-s-real-estate-market`** (medium) — OSINT tool: Explore Canada's Real Estate Market.
+- **`explore-canada-s-real-estate-market`** (medium) — Use when you have a Canadian `address` or area and want current property listings — returns listing photos, asking price, address details an
 - **`extremist-groups`** (low) — OSINT tool: Extremist Groups.
 - **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
 - **`ezilon`** (medium) — OSINT tool: Ezilon.
@@ -834,7 +834,7 @@ kind: group-index
 - **`scotlandspeople-gov-uk-3`** (high) — Use when you have a `name` and want official Scottish vital records — births, marriages, deaths, divorces, censuses — returns `dob`/life dat
 - **`scottishepcregister-org-uk`** (medium) — Use when you have a Scottish `address` or postcode and want the property's Energy Performance Certificate — returns property characteristics
 - **`scottishindexes-com`** (high) — Use when you have a `name` linked to Scotland and want historical Scottish records — returns free indexed entries (Court of Session, census,
-- **`scotussearch-com`** (medium) — OSINT tool: Scotussearch.com.
+- **`scotussearch-com`** (low) — Use when you have a `name` and want to find where it appears in US Supreme Court oral arguments (as a party, attorney or speaker) — returns 
 - **`scwonline-wales`** (high) — Use when you have a `name` of a social care worker in Wales and want to verify their registration — returns the registrant `name`, registrat
 - **`search-datasets`** (low) — OSINT tool: Search Datasets.
 - **`search-for-a-federal-corporation`** (low) — OSINT tool: Search for a Federal Corporation.

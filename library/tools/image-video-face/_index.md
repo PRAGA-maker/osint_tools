@@ -47,7 +47,7 @@ kind: group-index
 - **`befunky-com`** (low) — Use when you need to crop, rotate, adjust, or annotate a subject photo before reverse-image search or comparison — a general browser photo e
 - **`berify`** (high) — Use when you have an `image` or `face` and want to find where else it appears online across multiple engines plus a proprietary index — retu
 - **`betaface`** (high) — Use when you have a face photo and want automated facial analysis — landmark detection, demographic/attribute estimation, and similarity com
-- **`betterviewer`** (medium) — #Google Chrome extension for work with images. Right click on the picture and open it in new tab. You will get access to the following tools
+- **`betterviewer`** (medium) — Use when you have an `image` on a web page and want an in-browser toolkit to inspect it — zoom, rotate, extract text (OCR), reverse-image se
 - **`bhuvan`** (medium) — Use when you have a `geolocation` in India and want satellite/aerial imagery and thematic map layers — returns ISRO earth-observation imager
 - **`bleepingcomputer-com`** (low) — Use when you have a redacted/pixelated image and need to understand whether obscured text can be recovered — this is a reference article, no
 - **`buzzsprout`** (high) — Use when you have a `name` or `username` and want to find a subject's podcast presence — returns social-profile, audio/show-notes content, a
@@ -350,7 +350,7 @@ kind: group-index
 - **`video-stabilization-methods`** (medium) — OSINT tool: Video Stabilization Methods.
 - **`videosearch-io`** (high) — Use when you have a `name`/`username`/keyword and want to search for videos of or about a subject across many platforms at once — returns so
 - **`viewing-bitmoji-changes`** (high) — Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infe
-- **`vimeo`** (medium) — OSINT tool: Vimeo.
+- **`vimeo`** (medium) — Use when you have a `name`, `username` or topic and want video content and creator profiles on Vimeo — returns `social-profile`s, videos and
 - **`watannetwork-com`** (low) — Use when you have a YouTube video URL/ID and want to see which countries it is available or blocked in — returns geolocation (country allow/
 - **`watermarkremover`** (medium) — Use when you have an `image` carrying a stock/agency watermark or overlaid text and want a cleaner copy to run through reverse-image and fac
 - **`webcam-cse`** (medium) — Use when you have a place/`geolocation` and want a live street webcam there — returns webcam feeds from 10 online webcam catalogs via one Go
