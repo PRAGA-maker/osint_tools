@@ -47,7 +47,7 @@ kind: group-index
 - **`behance`** (high) — Use when you have a `name` or `username` of a creative professional and want their portfolio profile — returns a `social-profile` with work,
 - **`bellingcat-tiktok-date-extract`** (medium) — Use when you have a TikTok video `social-profile` URL/ID and want its exact upload time — returns the precise `metadata-exif`-style creation
 - **`best-tiktok-hashtags`** (medium) — OSINT tool: Best tiktok hashtags.
-- **`better-reddit-search`** (medium) — Reddit search tool for posts and subreddits (with boolean filters by keywords and filters by publication date).
+- **`better-reddit-search`** (medium) — Use when you have a keyword, `name` or phrase and want to search Reddit posts with real Boolean, subreddit and date filters — returns matchi
 - **`bibliogram-art`** (high) — Use when you have an Instagram `username` and want to view their public profile/posts without an Instagram login — but this Bibliogram insta
 - **`bibliogram`** (high) — Use when you have an Instagram `username` and want to view a profile/posts without an Instagram login — but note this front-end is defunct; 
 - **`bikermatch-co-uk`** (high) — Use when you have a `username` or `name` tied to UK motorcycling and want to find a member profile — returns social-profile, photos, and rou
@@ -334,7 +334,7 @@ kind: group-index
 - **`kribrum-io`** (medium) — searchengine for different social media platforms with filters by author and time period
 - **`kribrum`** (high) — Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram
 - **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
-- **`kworb`** (medium) — A lot of different statistics on views and listens collected from #YouTube, #iTunes, #Spotify. Ratings by country, year, music type, and mor
+- **`kworb`** (medium) — Use when you have a musician/artist `name` and want to gauge their public streaming and chart footprint across YouTube, Spotify and iTunes —
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
 - **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
 - **`linkedin-datahub`** (medium) — linkedIn's generalized metadata search & discovery tool
@@ -395,7 +395,7 @@ kind: group-index
 - **`onedrive-enumeration-tool`** (medium) — Use when you have candidate `username`s and a target's `domain`/tenant and want to confirm which are valid Microsoft 365 accounts — returns 
 - **`onemilliontweetmap`** (medium) — Use when you have a place and want geotagged tweets there — plots recent X/Twitter posts on a live world map, returning location-bearing `so
 - **`onli-vk-ru`** (high) — Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate link
-- **`open-measures`** (medium) — Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.
+- **`open-measures`** (medium) — Use when you have a `username`, keyword or `name` and want to find posts and accounts across fringe/alt platforms (Telegram, Gab, Truth Soci
 - **`open-source-software-insight`** (medium) — Use when you have a GitHub `username`/repo and want deep activity analytics — returns a developer's contribution patterns, tech stack, colla
 - **`open-source`** (medium) — OSINT tool: open-source.
 - **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
@@ -680,7 +680,7 @@ kind: group-index
 - **`twitter-search-engine`** (high) — Use when you have a `name`, `username`, or keyword and want to search Twitter/X content and profiles through a Google Custom Search Engine —
 - **`twitter-search-tool`** (high) — Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter acco
 - **`twitter-search`** (high) — Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns twe
-- **`twitter-shadow-ban-checker`** (medium) — If you suddenly notice that your account's tweets have decreased in views and the flow of audience has slowed down, it's worth checking to s
+- **`twitter-shadow-ban-checker`** (medium) — Use when you have an X/Twitter `username` and want to know whether that account is being algorithmically suppressed (search-banned, ghost-ba
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — Use when you have a Twitter/X conversation or profile URL and want it captured as data — returns tweet text, usernames, profile pictures and
 - **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f

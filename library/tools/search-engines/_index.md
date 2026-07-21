@@ -647,7 +647,7 @@ kind: group-index
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience
-- **`search-craigslist`** (medium) — OSINT tool: Search craigslist.
+- **`search-craigslist`** (medium) — Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns mat
 - **`search-encrypt`** (medium) — Private search engine that encrypts searches
 - **`search-engine-colossus`** (low) — International directory of search engines
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
@@ -763,7 +763,7 @@ kind: group-index
 - **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
 - **`vancouver-sun-opinions`** (medium) — Read opinion articles from columnists and guest writers on various topics and controversies
 - **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
-- **`vinden-meta-search-netherlands`** (medium) — Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
+- **`vinden-meta-search-netherlands`** (medium) — Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links t
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
 - **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results
 - **`vulnerability-and-exploit-database`** (medium) — Use when you have a `domain` or software product tied to a target's infrastructure and want known CVEs/exploits for it — returns vulnerabili

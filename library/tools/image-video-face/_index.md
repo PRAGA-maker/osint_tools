@@ -135,7 +135,6 @@ kind: group-index
 - **`geograph-worldwide`** (medium) — Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare 
 - **`geospy-2`** (high) — Use when you have an outdoor `image` and no location metadata and want an AI location estimate — returns predicted `geolocation` (region/coo
 - **`get-metadata-com`** (high) — Use when you have an `image` (or document/video/audio file) and want its hidden EXIF/metadata — returns `metadata-exif`, GPS `geolocation`, 
-- **`get-text-from-video`** (medium) — Transcribe uploaded video file
 - **`get-youtube-thumbnail-com`** (high) — Use when you have a YouTube video URL (`social-profile`) and want its full-resolution thumbnail image to reverse-search or face-analyse — re
 - **`gfpgan`** (high) — Use when you have a low-quality, blurry, or degraded `face`/`image` and want an AI-restored version to improve recognition and reverse-image
 - **`gijn-org-4`** (high) — Use when you have an `image`/video and need a methodology to judge whether it is AI-generated or manipulated — returns verification techniqu

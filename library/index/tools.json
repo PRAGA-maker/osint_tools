@@ -81388,31 +81388,33 @@
   },
   {
     "id": "myip-ip-address",
-    "name": "MyIP IP Address",
-    "description": "Tool that identifies the available registration information for a website or domain name",
-    "url": "http://myip.ms",
+    "name": "MyIP.ms",
+    "description": "Use when you have an `ip-address` or `domain` and want its geolocation, hosting/ISP owner, WHOIS and reverse-IP neighbors — returns `geolocation`, hosting `employer-org`, and co-hosted `domain`s.",
+    "url": "https://myip.ms",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Enriching an IP or domain with geolocation, hosting owner, WHOIS and reverse-IP neighbors from a large IP-intelligence database.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
+      "ip-address",
       "domain",
-      "ip-address"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic IP/domain lookup (location, ISP, blacklist status, WHOIS) is free; downloadable databases, API access and bulk/Excel exports are paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries run against MyIP.ms's own database, so the target host never sees you. Only MyIP.ms sees the IP/domain you look up; no login needed for the free lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large commercial IP-intelligence database (hundreds of millions of sites indexed); geolocation and hosting data are good but, like all IP data, approximate and occasionally stale.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -81421,15 +81423,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "myip.ms",
+      "MyIP world IP database"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "reverse-ip"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/myip-ip-address.md"
   },
   {
@@ -95249,46 +95255,54 @@
   },
   {
     "id": "yougetsignal-com",
-    "name": "yougetsignal.com",
-    "description": "OSINT tool: yougetsignal.com.",
+    "name": "yougetsignal.com (Reverse IP Domain Check)",
+    "description": "Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain`s.",
     "url": "https://www.yougetsignal.com/tools/web-sites-on-web-server/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-IP lookup — listing other domains that share a server/IP with a known domain.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Basic reverse-IP check is free with no account; a paid \"Connected\" service offers complete/historical results.",
+    "opsec": "passive",
+    "opsecNote": "The lookup runs server-side against YouGetSignal's own dataset, so the target's server never sees your query. You only reveal the domain/IP of interest to YouGetSignal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing free networking-tools site; the free reverse-IP result is a partial, sampled view of co-hosted domains, not an exhaustive list.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "you-get-signal"
     ],
+    "aliases": [
+      "YouGetSignal Reverse IP",
+      "Reverse IP Domain Check"
+    ],
+    "tags": [
+      "domainsandips",
+      "Domains & IPs",
+      "reverse-ip"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/yougetsignal-com.md"
   },
   {
@@ -139976,56 +139990,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/get-metadata-com.md"
-  },
-  {
-    "id": "get-text-from-video",
-    "name": "Get text from video",
-    "description": "Transcribe uploaded video file",
-    "url": "https://huggingface.co/spaces/kabita-choudhary/get_text_from_video",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "efficientnetv2",
-      "hugging-face-ai-detector",
-      "huggingface-co",
-      "huggingface-co-4",
-      "instruct-pix2pix",
-      "kosmos-2",
-      "pix2pix-video",
-      "scene-edit-detection",
-      "youtube-whisperer",
-      "scene-detection"
-    ],
-    "_file": "library/tools/image-video-face/get-text-from-video.md"
   },
   {
     "id": "get-youtube-thumbnail-com",
@@ -223766,35 +223730,50 @@
   {
     "id": "companies-and-orgs-search-engine",
     "name": "Companies & Orgs Search Engine",
-    "description": "OSINT tool: Companies & Orgs Search Engine.",
+    "description": "Use when you have a company or organization `name` (or an `employer-org` lead) and want a Google Custom Search Engine tuned to corporate/org registries and directories — returns company records and links.",
     "url": "https://cse.google.com/cse?cx=72ea9d8cfefc142d3",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A pre-tuned Google Custom Search Engine focused on company and organization registries/directories.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a Google-hosted search box; queries go to Google like any web search. Passive with respect to the target, but log in to a sock-puppet Google account (or use a clean session) if you don't want the searches tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-built Google CSE; its value depends entirely on the (opaque, unverifiable) list of sites its creator configured, and that config can silently degrade or narrow over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Companies and Orgs CSE"
+    ],
+    "tags": [
+      "google-cse",
+      "companies",
+      "organizations"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/companies-and-orgs-search-engine.md"
   },
   {
@@ -300125,35 +300104,50 @@
   {
     "id": "search-craigslist",
     "name": "Search craigslist",
-    "description": "OSINT tool: Search craigslist.",
+    "description": "Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns matching listings that can leak `phone`, location and contact details.",
     "url": "http://searchcraigslist.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Nationwide keyword search of Craigslist classified ads (Craigslist's own search is one-city-at-a-time).",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; ad-supported, no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a third-party aggregator, not the poster's account; posters are not notified of searches. Do NOT reply to a listing from your real identity — replying emails the poster and reveals you. Use a sock puppet if you must make contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent third-party aggregator over Craigslist's public postings; freshness lags Craigslist by minutes-to-hours and coverage is best-effort, not exhaustive.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "searchcraigslist.org",
+      "Craigslist nationwide search"
+    ],
+    "tags": [
+      "classifieds",
+      "craigslist"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-craigslist.md"
   },
   {
@@ -305656,41 +305650,48 @@
   {
     "id": "vinden-meta-search-netherlands",
     "name": "Vinden Meta Search (Netherlands)",
-    "description": "Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)",
-    "url": "http://www.vinden.nl",
+    "description": "Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links to Dutch services that can surface a `social-profile` or address lead.",
+    "url": "https://www.vinden.nl",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A Netherlands-focused search portal for surfacing Dutch web results and directory links.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; ad-supported Dutch portal, no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A standard web search/portal — passive, but it is a Dutch commercial site that sets cookies and may pass queries to underlying search partners. Use a clean browser session for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Dutch commercial search portal/directory; useful mainly for its Dutch-language bias and curated NL service links, not for unique data of its own.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "nl"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "vinden.nl"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "meta-mega-search-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/vinden-meta-search-netherlands.md"
   },
   {
@@ -311491,42 +311492,51 @@
   {
     "id": "better-reddit-search",
     "name": "Better Reddit Search",
-    "description": "Reddit search tool for posts and subreddits (with boolean filters by keywords and filters by publication date).",
+    "description": "Use when you have a keyword, `name` or phrase and want to search Reddit posts with real Boolean, subreddit and date filters — returns matching threads that expose the author `username` and `social-profile`.",
     "url": "https://betterredditsearch.web.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Advanced Boolean/date/subreddit search of Reddit posts beyond Reddit's weak native search.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web app; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries Reddit's public search on your behalf; you are not logged in as anyone and the authors of matched posts are not notified. Do not click through and interact with (upvote/reply/DM) a subject's posts from a real account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party front-end (by LasTechLabs) over Reddit's public search API; results are only as complete as Reddit exposes, and the hosted app could go offline without notice.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "react-reddit-search-app"
+    ],
+    "aliases": [
+      "betterredditsearch"
+    ],
     "tags": [
       "Social Media",
       "Reddit"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "geospy-2",
-      "react-reddit-search-app"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/better-reddit-search.md"
   },
   {
@@ -327504,38 +327514,48 @@
   {
     "id": "kworb",
     "name": "Kworb",
-    "description": "A lot of different statistics on views and listens collected from #YouTube, #iTunes, #Spotify. Ratings by country, year, music type, and more.",
+    "description": "Use when you have a musician/artist `name` and want to gauge their public streaming and chart footprint across YouTube, Spotify and iTunes — returns aggregate play/view statistics and links to their platform profiles.",
     "url": "https://kworb.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Corroborating a musician/artist subject's public streaming footprint (Spotify, YouTube, iTunes) via aggregated chart data.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account, API key or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Purely a read of publicly published chart/streaming aggregates. Nothing you look up is exposed to the subject, and no login is involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent chart-aggregation site; data is scraped/derived from Spotify, iTunes and YouTube public figures, so treat totals as good-faith aggregates rather than official numbers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "kworb.net"
+    ],
     "tags": [
       "Social Media",
-      "Universal"
+      "Universal",
+      "music-streaming-stats"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/kworb.md"
   },
   {
@@ -330929,38 +330949,51 @@
   {
     "id": "open-measures",
     "name": "Open Measures",
-    "description": "Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.",
+    "description": "Use when you have a `username`, keyword or `name` and want to find posts and accounts across fringe/alt platforms (Telegram, Gab, Truth Social, 4chan, Rumble, VK, and more) — returns matching posts and `social-profile`s.",
     "url": "https://public.openmeasures.io",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk keyword/username search across alternative and fringe social platforms (Telegram, 4chan, Gab, Truth Social, Rumble, Bluesky, VK, etc.).",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public app and public API require no registration but are rate-limited (~39 requests/day) and date-limited (~last 6 months of data); paid subscriptions unlock full history, higher limits and more datasets.",
+    "opsec": "passive",
+    "opsecNote": "You query Open Measures' collected archives, not the platforms directly, so the target account is never touched or notified. Only Open Measures sees your query terms. No login is required for the public tier.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established open-source research organization (widely cited by Bellingcat and academic disinformation researchers); it archives public posts from alt platforms for open-source investigation.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "openmeasures.io",
+      "Open Measures Public App",
+      "formerly Open Measures / Network Contagion"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "multiple-platforms"
+      "multiple-platforms",
+      "fringe-platforms"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/open-measures.md"
   },
   {
@@ -346995,38 +347028,50 @@
   {
     "id": "twitter-shadow-ban-checker",
     "name": "Twitter Shadow Ban Checker",
-    "description": "If you suddenly notice that your account's tweets have decreased in views and the flow of audience has slowed down, it's worth checking to see if your account has been shadow-banned.",
+    "description": "Use when you have an X/Twitter `username` and want to know whether that account is being algorithmically suppressed (search-banned, ghost-banned, reply-deboosted) — returns a per-test shadowban status for the profile.",
     "url": "https://shadowban.yuzurisa.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking whether a public X/Twitter handle is search-banned, ghost-banned, or reply-deboosted.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; the page carries an optional PayPal donation link, no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party checker, not the target's account. The target is not notified and nothing is posted. The checker itself sees the handle you look up, so use a sock-puppet session if you don't want that handle tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community rebuild of the original open-source shadowban.eu tester (made in Germany by @shadowban_eu, rebuilt by @Sena_n_Karin); it probes X's public search/reply surfaces rather than any private data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "shadowban.eu",
+      "Twitter shadowban test",
+      "X shadowban checker"
+    ],
     "tags": [
       "Social Media",
-      "Twitter"
+      "Twitter",
+      "account-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-shadow-ban-checker.md"
   },
   {

@@ -178,7 +178,7 @@ kind: group-index
 - **`colorado-statewide-marriage-index`** (medium) — Use when you have a `name` and want to find their Colorado marriage record (1953–2006) — returns spouse `name`/`associate` and marriage `dob
 - **`colorado`** (high) — Use when you have a `name` and want to check whether a subject is in Colorado Department of Corrections custody — returns offender record wi
 - **`coloradovoters-info`** (high) — Use when you have a `name` in Colorado and want registered-voter data — returns `address`, approximate `dob`/age, party affiliation, and vot
-- **`companies-and-orgs-search-engine`** (medium) — OSINT tool: Companies & Orgs Search Engine.
+- **`companies-and-orgs-search-engine`** (medium) — Use when you have a company or organization `name` (or an `employer-org` lead) and want a Google Custom Search Engine tuned to corporate/org
 - **`companieshouse-gi`** (medium) — Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors
 - **`companieshouse-im`** (medium) — Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `addre
 - **`company-check-zauba`** (low) — OSINT tool: Company Check Zauba.
