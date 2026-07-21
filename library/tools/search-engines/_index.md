@@ -191,7 +191,6 @@ kind: group-index
 - **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
 - **`defcad`** (medium) — Search engine for 3D printable models
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
-- **`deutscheseiten-search-engine-germany`** (medium) — German surface web search engine covering regional results
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
 - **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
@@ -601,7 +600,7 @@ kind: group-index
 - **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe
 - **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
 - **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
-- **`ratemyemployer-canada`** (medium) — Website related to employwer ratings
+- **`ratemyemployer-canada`** (low) — Use when you have an `employer-org` in Canada and want employee reviews and context — returns workplace ratings, location/industry and revie
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
 - **`ratemyteachers-north-america`** (medium) — Use when you have a teacher's `name` or a school and want to confirm an `employer-org` affiliation and location — returns school/district li
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
@@ -712,7 +711,7 @@ kind: group-index
 - **`tabnine`** (medium) — Java code search engine
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
 - **`termwiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on w
-- **`terrorism-reports`** (medium) — US Department of States country reports on terrorism
+- **`terrorism-reports`** (medium) — Use when you have a `name` or `employer-org` and want to check it against the US State Department's congressionally-mandated annual terroris
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.
@@ -755,7 +754,7 @@ kind: group-index
 - **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
 - **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
-- **`vancouver-sun-opinions`** (medium) — Read opinion articles from columnists and guest writers on various topics and controversies
+- **`vancouver-sun-opinions`** (low) — Use when you have a `name` linked to British Columbia and want op-ed/columnist coverage — returns `associate`, `employer-org` and viewpoint/
 - **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
 - **`vinden-meta-search-netherlands`** (medium) — Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links t
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m

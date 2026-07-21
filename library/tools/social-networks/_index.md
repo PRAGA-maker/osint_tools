@@ -385,7 +385,6 @@ kind: group-index
 - **`nitter`** (medium) — Use when you have an X/Twitter `username` and want to read their tweets without an account or JS — returns the profile's posts, media and an
 - **`noxinluencer`** (medium) — Use when you have a YouTube channel (`social-profile`/`username`) and want its audience, growth and engagement analytics — returns channel a
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
-- **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
 - **`o365chk`** (low) — Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, a
 - **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
@@ -693,7 +692,7 @@ kind: group-index
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
 - **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —
 - **`unlistedvideos-com`** (low) — Use when you want to discover unlisted YouTube videos (not shown in search or on a channel) — returns a crowd-submitted, searchable index of
-- **`untwitch-com`** (medium) — Twitch video downloader
+- **`untwitch-com`** (medium) — Use when you have a `social-profile` (a Twitch VOD or clip URL) and want to pull the video offline for frame-by-frame analysis — returns `im
 - **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
 - **`us-twitter-trend-calendar`** (medium) — Use when you have a date and want to know what was trending on X/Twitter (and Google) in the US then — returns ranked historical trending ke
 - **`username-availability`** (low) — OSINT tool: Username Availability.
@@ -740,7 +739,7 @@ kind: group-index
 - **`youfilter-youtube-advanced-search-filter`** (low) — Use when you have a YouTube search or channel and want structured results — returns social-profile and username leads (channel owners, conta
 - **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
 - **`yout`** (medium) — OSINT tool: Yout.
-- **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
+- **`youtube-actual-top-comments`** (medium) — Use when you have a YouTube `social-profile`/video and want to surface a target's or subject's most-liked comments — returns `social-profile
 - **`youtube-booster`** (low) — Use when you have a YouTube video with a location/object you want to identify and want one-click frame extraction into reverse-image search 
 - **`youtube-caption-searcher`** (low) — Use when you have a YouTube video and a keyword and want to jump to where it's spoken in the captions — returns caption timestamps, surfacin
 - **`youtube-channel-archiver`** (medium) — Use when you have a YouTube `social-profile` (channel URL) and want to bulk-preserve its videos, thumbnails, and comments before they vanish

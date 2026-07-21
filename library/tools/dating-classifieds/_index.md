@@ -29,7 +29,7 @@ kind: group-index
 - **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`ebin-pub`** (medium) — OSINT tool: ebin.pub.
-- **`eroticbeauties-net`** (medium) — OSINT tool: eroticbeauties.net.
+- **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p
 - **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
 - **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
 - **`fansearch`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a subject's OnlyFans creator profile — returns a `social-profile` 

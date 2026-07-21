@@ -318,7 +318,7 @@ kind: group-index
 - **`financialplanning-org-uk`** (high) — Use when you have a `name`, firm or UK location and want to confirm a certified financial planner — returns the planner's name, firm/employe
 - **`fincen-msb-registrant-search`** (low) — OSINT tool: FinCEN MSB Registrant Search.
 - **`find-a-prisoner`** (high) — Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public d
-- **`find-a-teacher`** (medium) — OSINT tool: Find a Teacher.
+- **`find-a-teacher`** (medium) — Use when you have a `name` and want to confirm someone is a certified Ontario teacher — returns certification status, qualifications, and an
 - **`findagraveinscotland-com`** (high) — Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), c
 - **`findingstartups-com`** (medium) — OSINT tool: Findingstartups.com.
 - **`findmypast-co-uk`** (high) — Use when you have a `name` (and rough era/place) and want UK/Irish genealogy and historical records — returns census, BMD, electoral, milita

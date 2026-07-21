@@ -60,7 +60,7 @@ kind: group-index
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc
 - **`i2p-invisible-internet-project`** (low) — OSINT tool: I2P - Invisible Internet Project.
 - **`iaca-dark-web-investigation-support`** (medium) — Federated dark web investigation support and discovery
-- **`inmates-plus`** (medium) — Free inmate locator for state and county jails, with arrest records
+- **`inmates-plus`** (high) — Use when you have a `name` and want to check whether someone is or was incarcerated in a US state or county facility — returns `address` (fa
 - **`international-organization-for-standardization-catalogue`** (medium) — Website that identifies the worlwide industrial sector standards for materials and quality assessments
 - **`kilos-darknet-search-engine`** (low) — OSINT tool: KILOS Darknet Search Engine.
 - **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
