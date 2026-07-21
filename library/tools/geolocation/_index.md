@@ -65,7 +65,7 @@ kind: group-index
 - **`datacore-gn-unepgrid-ch`** (low) — Use when you have a `geolocation`/region and want authoritative environmental geospatial layers for it — returns UNEP GeoNetwork datasets (h
 - **`default-router-login`** (low) — OSINT tool: Default Router Login.
 - **`degulesider-mapping-program-for-europe-denmark`** (high) — Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — 
-- **`demo-4map-com`** (medium) — 3D interactive world map
+- **`demo-4map-com`** (medium) — Use when you have a `geolocation` and want a 3D view of the built environment — returns rendered building heights, shapes, and roof forms fr
 - **`digikam`** (high) — Use when you have a batch of images and need to read/map their EXIF GPS and metadata at scale — an open-source photo manager that geotags, m
 - **`dual-maps`** (high) — Use when geolocating a spot and you want Google map, satellite, and Street View synchronized in one view — pan one panel and the others foll
 - **`dualmaps`** (high) — Use when you have a coordinate or address and want side-by-side map, aerial, and Street View of the same spot to confirm a location.
@@ -73,7 +73,7 @@ kind: group-index
 - **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
 - **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
-- **`epochconverter-com`** (medium) — OSINT tool: epochconverter.com.
+- **`epochconverter-com`** (low) — Use when you have a Unix timestamp from `metadata-exif`, a filename, a database dump, or an API response and want the human date/time — retu
 - **`epochconverter-io`** (medium) — Use when you have a raw Unix/epoch timestamp pulled from `metadata-exif`, a log, a filename, or an API response and want the human-readable 
 - **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
 - **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.

@@ -485,7 +485,7 @@ kind: group-index
 - **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.
-- **`weare-ie`** (medium) — OSINT tool: weare.ie.
+- **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-cam-taxi`** (low) — open webcams around the world
 - **`web-check`** (low) — OSINT tool: Web-Check.
 - **`web-dsn-taiwan`** (medium) — Taiwan based service provider for registering websites and domain addresses

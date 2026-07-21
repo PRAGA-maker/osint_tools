@@ -221,7 +221,7 @@ kind: group-index
 - **`newspapermap`** (medium) — Use when you have a `geolocation` (a place a subject is tied to) and want the local newspapers covering it — returns links to those papers (
 - **`ning`** (low) — Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member
 - **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile
-- **`nopaste-net`** (medium) — OSINT tool: nopaste.net.
+- **`nopaste-net`** (medium) — Use when you have an `email`, `username`, or `name` and want to check paste sites for leaked dumps mentioning it — returns pasted text that 
 - **`nopaste`** (medium) — Use when you have found a `nopaste.boris.sh` link in a subject's history and want to read its contents — decodes the paste that is embedded 
 - **`notes`** (medium) — OSINT tool: Notes.
 - **`nova-czech-republick`** (low) — Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-langu

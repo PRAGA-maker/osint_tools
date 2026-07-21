@@ -785,7 +785,6 @@ kind: group-index
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (low) — Use when you have a `name` or `username` tied to entertainment/fan communities and want crowdsourced wiki detail — returns biographical/fan-
-- **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikibooks`** (medium) — Use when you have an author `name`/`username` or a subject-matter lead and want open textbooks/manuals and their contributor histories — ret
 - **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit

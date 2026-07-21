@@ -205,7 +205,7 @@ kind: group-index
 - **`scotland-landlord-search`** (high) — Use when you have a Scottish rental-property `address` (postcode) or a landlord registration number and want to find who owns/manages it — r
 - **`scylla`** (high) — Use when you have a `username`, `phone`, or `name` and want an all-in-one recon sweep from a local CLI — returns social profiles, geolocatio
 - **`searchbug`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want cross-linked contact and background data — returns addresses, phones, 
-- **`seek-australia`** (medium) — OSINT tool: Seek (Australia).
+- **`seek-australia`** (low) — Use when you have a `name` or `employer-org` in Australia/NZ and want employment context — returns recruiter/company postings and profile le
 - **`shesource`** (medium) — Use when you have a `name` or an area of expertise and want to identify/verify a woman expert or media source — returns `name`, `employer-or
 - **`simplyhired`** (low) — Use when you have a `name` or `employer-org` and want employment/job-market context — returns job postings, employer listings and salary est
 - **`singlehire`** (high) — Use when you have a `name` (+ `employer-org`/`geolocation`) or a work `email`/`phone` and want the person's contact details — returns email,

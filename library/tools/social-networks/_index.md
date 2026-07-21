@@ -70,7 +70,7 @@ kind: group-index
 - **`brandwatch`** (high) — Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, se
 - **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
 - **`bsky-social`** (medium) — Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow
-- **`bskyfollowfinder`** (medium) — A tool that identifies which Bluesky accounts are followed by a profile’s contacts but not by that profile. Can be used for expanding networ
+- **`bskyfollowfinder`** (medium) — Use when you have a Bluesky `username`/`social-profile` and want to map its social graph — returns associate accounts that the profile's own
 - **`bskyviewer-github-io`** (high) — Use when you have a Bluesky `username`/handle and want to view a profile, posts, and threads without an account — returns social-profile con
 - **`buffer`** (low) — Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwi
 - **`burrrd`** (medium) — OSINT tool: burrrd..
@@ -470,7 +470,7 @@ kind: group-index
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
 - **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
 - **`redditery`** (low) — Explore Reddit posts and comments by criteria.
-- **`redditle-com`** (medium) — OSINT tool: Redditle.com.
+- **`redditle-com`** (medium) — Use when you have a `username`, `name`, or topic and want to search Reddit cleanly — returns Reddit posts, comments, and social-profile lead
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
 - **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
