@@ -23,7 +23,6 @@ kind: group-index
 - **`aqicn`** (low) — Use when you have a `geolocation` and want a map of live air-quality monitoring stations there — returns station points that double as corro
 - **`arcgis-mapping-platform`** (high) — Use when you have a `geolocation`/`address` and want to view or analyse published geospatial layers (parcels, imagery, infrastructure) — ret
 - **`arcgis`** (medium) — Use when you need authoritative basemaps, imagery, demographic, boundary, or live-feed map layers to add geographic context to a location, a
-- **`arggis-military-overlay`** (medium) — Military Overlay can be used to create overlays with standard military symbols, by using and adapting existing feature templates in **ArgGis
 - **`argis-ufo-map`** (medium) — UFO sightings interactive map. USA only
 - **`astronomy-sun-moon-eclipses`** (medium) — Use when you have a `geolocation` and a date/time and want the sun/moon position and light times — returns azimuth, elevation, sunrise/sunse
 - **`atlas`** (low) — Use when you have your own case location data (spreadsheet/coordinates) and want to load, map, and run spatial analysis on it collaborativel
@@ -172,7 +171,7 @@ kind: group-index
 - **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
 - **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Use when you have a `geolocation` and want the bedrock geology at that spot — returns rock type/formation/age to corroborate or narrow a loc
 - **`map-army`** (medium) — Online tool for creating schemes of battles and military operations on the map. Extensive customization possibilities and a huge library of 
-- **`map-fight`** (medium) — compare size of two countries
+- **`map-fight`** (medium) — Use when you have two areas (countries, regions or cities) as `geolocation` and want to compare their true relative size by overlaying them 
 - **`map-maker`** (high) — Use when you need free forward/reverse geocoding or a quick custom map from an address — returns lat/lon coordinates (maps.co geocoding).
 - **`map-view-ngmdb`** (medium) — Use when you have a US `geolocation` and want authoritative geologic and historical topographic maps of that spot — returns map imagery and 
 - **`mapalist`** (medium) — Use when you want to batch-plot a spreadsheet of addresses onto one map — geocodes an address list to mapped points (likely defunct; verify)

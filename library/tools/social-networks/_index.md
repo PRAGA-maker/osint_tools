@@ -606,7 +606,7 @@ kind: group-index
 - **`tiktok-scraper`** (medium) — Use when you have a TikTok `username`, hashtag, or music/trend and want to collect its posts and metadata in bulk — returns video posts plus
 - **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
-- **`tiktok-user-search`** (medium) — OSINT tool: TikTok User Search.
+- **`tiktok-user-search`** (medium) — Use when you have a `username` (or a creator's display name / hashtag) and want to browse a TikTok profile, its videos, follower counts and 
 - **`tiktok-video-downloader-chromewebstore-google-com`** (low) — Use when you have a subject's TikTok video/profile and want to save the clip (no watermark) for offline analysis and evidence preservation —
 - **`tiktok-video-downloader`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to preserve the clip as evidence — returns a downloadable MP4/MP3 for offli
 - **`tiktokapi`** (medium) — Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific use

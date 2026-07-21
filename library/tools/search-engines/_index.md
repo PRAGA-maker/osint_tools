@@ -157,7 +157,7 @@ kind: group-index
 - **`cnn`** (low) — OSINT tool: CNN.
 - **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
-- **`colorado-unclaimed-property-search`** (medium) — Colorados unclaimed property search tool
+- **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
 - **`comicvine`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
 - **`command-e`** (medium) — Universal search and productivity app
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
@@ -677,7 +677,7 @@ kind: group-index
 - **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
 - **`similarsites-com`** (medium) — Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
-- **`sitelike`** (medium) — Website allowing users to search for related or similar sites.
+- **`sitelike`** (medium) — Use when you have a `domain` and want to find related/similar websites (competitors, clones, same-niche sites) — returns candidate `domain`s
 - **`siteslike`** (low) — OSINT tool: SitesLike.
 - **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
@@ -749,7 +749,7 @@ kind: group-index
 - **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
 - **`us-department-of-housing-and-urban-development`** (medium) — Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housi
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
+- **`us-government-printing-office`** (medium) — Use when you have a `name` and want to find them in official US federal publications — congressional hearings, court opinions, the Federal R
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
 - **`usa-gov`** (medium) — Use as the official gateway to US government services and agencies — a directory/portal to find the right federal/state agency and record sy
 - **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level

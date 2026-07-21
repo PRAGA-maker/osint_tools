@@ -266,7 +266,7 @@ kind: group-index
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
 - **`ipage-united-states`** (medium) — Service provider for registering websites and domain addresses
-- **`ipanalyzer-privacy-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
+- **`ipanalyzer-privacy-test`** (medium) — Use when you have an `ip-address` (or `domain`) and want its geolocation, network owner, reverse DNS, open services and blacklist status in 
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
 - **`ipinfo-map`** (low) — paste up to 500,000 IPs below to see where they're located on a map
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as

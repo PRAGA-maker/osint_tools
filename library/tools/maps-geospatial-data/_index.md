@@ -58,7 +58,7 @@ kind: group-index
 - **`gosur-map`** (low) — Use when you have an `address` or `geolocation` and want satellite/aerial imagery of it with extras like live cams and weather — returns a s
 - **`govmap`** (low) — GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and i
 - **`gps-latitude-longitude-com`** (medium) — Use when you have an `address` or a map point and want its precise coordinates — returns `geolocation` in decimal, DMS, and UTM formats.
-- **`gpx-file-editor`** (medium) — OSINT tool: Gpx File Editor.
+- **`gpx-file-editor`** (medium) — Use when you have a `.gpx`/`.kml` track file (with embedded `metadata-exif` timestamps) and want to view, edit and read the route, points an
 - **`gridreferencefinder-com`** (medium) — Use when you have a UK `address`, postcode, or `geolocation` and want to convert it between coordinate systems — returns OSGB grid reference
 - **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro
 - **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.

@@ -777,7 +777,7 @@ kind: group-index
 - **`prs-risk-indicators`** (low) — OSINT tool: PRS Risk Indicators.
 - **`psa-gov-ie`** (high) — Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns li
 - **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
-- **`public-library-of-science-search`** (medium) — Academic-related search engine for the Public Library of Science articles, providing access to various scientific publications and collectio
+- **`public-library-of-science-search`** (medium) — Use when you have a researcher's `name` (or `employer-org`) and want their open-access publications, co-authors and institutional affiliatio
 - **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
 - **`public-records`** (medium) — Unclear - requires VP clarification
 - **`quandl`** (medium) — Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and 
