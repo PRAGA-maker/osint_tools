@@ -72,7 +72,7 @@ kind: group-index
 - **`ellis-island`** (high) — Use when you have a `name` of a US immigrant ancestor (1892-1957) and want their arrival record — returns arrival date, age (`dob`), origin/
 - **`eluta-canada`** (low) — Use when you have a `name` or `employer-org` in Canada and want employment signal — a job engine that indexes employer career pages directly
 - **`eniro`** (high) — Use when you have a Swedish `name` (or `phone`/`address`) and want the person's registered address, phone and household — returns `address`,
-- **`eurojobs`** (medium) — OSINT tool: Eurojobs.
+- **`eurojobs`** (medium) — Use when you have a person's `name` or an `employer-org` and want to check for a matching CV/candidate profile or job posting across Europe 
 - **`everypolitician-org`** (low) — Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`so
 - **`expertengine`** (high) — Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — retur
 - **`expertisefinder`** (low) — Use when your subject may be an academic and you have a `name` or field — a directory of university faculty experts returning their institut

@@ -425,7 +425,7 @@ kind: group-index
 - **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
 - **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
 - **`lilo`** (medium) — Use when you want an alternate (French) search front-end to cross-check results outside your usual engine — returns general web results with
-- **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`limetorrents`** (medium) — Use when you have a `username`/uploader handle or a content keyword and want to see torrents linked to it — returns uploader `social-profile
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a

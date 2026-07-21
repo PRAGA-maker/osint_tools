@@ -14,7 +14,7 @@ kind: group-index
 - **`defcon-database`** (low) — Searchable database of DEFCON talks/resources (shared in TL #library-submissions).
 - **`forensic-osint-kb-guides`** (low) — Digital evidence preservation, chain-of-custody documentation, court-ready OSINT reporting
 - **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.
-- **`gralhix-osint-exercises`** (medium) — Sofia Santos' curated list of hands-on OSINT exercises incl. geolocation/verification drills (shared in TL #library-submissions).
+- **`gralhix-osint-exercises`** (medium) — Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercis
 - **`intel-codex`** (low) — Knowledge base covering OSINT, forensics, reverse engineering, and security frameworks.
 - **`non-typical-osint-guide`** (medium) — Unconventional OSINT guide for experienced investigators covering advanced techniques.
 - **`pentestingeverything`** (low) — Comprehensive penetration testing methodology guide (web, mobile, API, network).

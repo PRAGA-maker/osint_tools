@@ -89,7 +89,7 @@ kind: group-index
 - **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu
 - **`recycler-classified-ads-united-states`** (medium) — Use when you have a name/phone/email and want their US classified ads — returns listings with seller contact details and location, useful fo
 - **`sales-spider`** (medium) — Use when you have a `name` or `employer-org` in North American SMB circles and want business-directory and profile detail — returns employer
-- **`salespider-north-america`** (medium) — Classified advertisements-related website that provides regional services
+- **`salespider-north-america`** (medium) — Use when you have a business `name` or `employer-org` and a `geolocation` and want its listing/owner contact — returns `address`, `phone`, a
 - **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.
 - **`search-tempest`** (high) — Use when you need to sweep Craigslist (and eBay) across many cities at once for a subject's listings, alias, or distinctive item — instead o
 - **`searchalljunk`** (high) — Use when you want to query multiple classifieds/marketplace sources from one box — a meta-search front-end for second-hand listings across p

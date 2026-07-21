@@ -252,7 +252,7 @@ kind: group-index
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`polymeta-news`** (medium) — International news website
 - **`popsugar-australia`** (medium) — Website related to fashion trends, entertainment, beauty, and fitness
-- **`postach-io`** (medium) — Website related to social networking and blogging
+- **`postach-io`** (medium) — Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` a
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
 - **`proboards`** (low) — OSINT tool: ProBoards.
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re

@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata/android/apps
 
 ## Sub-groups
-- **`instant-messaging/`** — 8 skill(s) below.
+- **`instant-messaging/`** — 7 skill(s) below.
 - **`social-networking/`** — 3 skill(s) below.
 
 ## Skills here

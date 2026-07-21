@@ -426,7 +426,7 @@ kind: group-index
 - **`guernseyregistry-com`** (high) — Use when you have a company `name`, a director `name`, or a Guernsey business connection and want official company/director records — return
 - **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
 - **`guidestar`** (medium) — Use when you have an `employer-org` (nonprofit) or a `name` and want US nonprofit filings and leadership — returns officers, addresses, Form
-- **`gun-dealer-inspections-the-trace`** (medium) — OSINT tool: Gun Dealer Inspections \| The Trace.
+- **`gun-dealer-inspections-the-trace`** (medium) — Use when you have a US gun-dealer business `name` or `address`/`geolocation` and want its ATF inspection/disciplinary history — returns `emp
 - **`gutneberg-project`** (medium) — Database of over 59,000 free eBooks, including Kindle eBooks
 - **`guttr`** (low) — OSINT tool: GUTTR.
 - **`hathitrust-digital-library`** (medium) — Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns em

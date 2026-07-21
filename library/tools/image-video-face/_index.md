@@ -229,7 +229,7 @@ kind: group-index
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
 - **`osint-essentials`** (medium) — Verification-focused tool and resource site for journalists/researchers.
 - **`pbs-search`** (low) — Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and menti
-- **`perceptual-image-analysis`** (medium) — Chrome extension for quick access to image #forensic tools: Metadata Levels Principal Component Analysis Slopes Error Level Analysis
+- **`perceptual-image-analysis`** (medium) — Use when you have an `image` and want quick in-browser forensic checks for manipulation — returns Error Level Analysis, PCA, and `metadata-e
 - **`peteyvid-com`** (high) — Use when you have a `name`, `username` or keyword and want to find videos of the subject across non-YouTube platforms — returns social-profi
 - **`photo-album-finder`** (high) — Use when you have a `name`, `username`, or `email` and want to find public photo albums/galleries hosting that person's images across photo-
 - **`photokit-com`** (low) — Use when you have a low-quality face or scene image and want to enhance, retouch, or upscale it before running reverse-image or face search 

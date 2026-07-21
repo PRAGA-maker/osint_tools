@@ -9,7 +9,6 @@ kind: group-index
 ## Skills here
 - **`kik`** (medium) — User discovery, profile analysis, public username search
 - **`line`** (high) — Use when you have a LINE ID (`username`) or `phone` and want to confirm a LINE account and view its public profile — returns display name, a
-- **`riot-im-communicate-your-way`** (medium) — Open community monitoring, channel discovery, user verification
 - **`signal-private-messenger`** (medium) — Identity verification, account discovery via phone/email, community research
 - **`snapchat`** (medium) — User verification, story analysis, location tracking via snap maps, relationship mapping
 - **`telegram`** (medium) — Use when you have a `username`, `phone` or channel link and want Telegram intelligence — returns `social-profile`, `associate` links and pub

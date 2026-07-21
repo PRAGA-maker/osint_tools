@@ -530,7 +530,6 @@ kind: group-index
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
 - **`social-mentions`** (low) — OSINT tool: Social Mentions.
 - **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
-- **`social-rank-first-follower`** (medium) — OSINT tool: Social Rank First Follower.
 - **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
 - **`social-stats`** (medium) — Use when you have a VK community/user `username` or `name` and want engagement and activity statistics for that VKontakte page — returns soc
 - **`social-trends`** (low) — OSINT tool: Social Trends.
