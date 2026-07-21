@@ -236,7 +236,7 @@ kind: group-index
 - **`fact-monster`** (low) — Kid friendly search engine.
 - **`faganfinder`** (low) — OSINT tool: FaganFinder.
 - **`falla`** (medium) — Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain`
-- **`familypedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
+- **`familypedia`** (medium) — Use when you have a `name` (especially with an ancestor/surname angle) and want crowdsourced genealogy — family trees, relatives, dates — re
 - **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
 - **`fatfingers`** (low) — Use when you have a `name`, brand, or item keyword and want to find eBay listings with misspellings/typos — returns mistyped listings (and t
 - **`fbi-tools`** (medium) — Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to

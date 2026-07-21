@@ -45,7 +45,7 @@ kind: group-index
 - **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
 - **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
 - **`camvista`** (medium) — Use when you have a `geolocation` or `address` in a covered city and want a live public webcam of that spot — returns street-level `image` v
-- **`carte-ma`** (medium) — Mapping/streetview service for Morocco
+- **`carte-ma`** (medium) — Use when you have a Moroccan `geolocation`/`address` or a street-level photo taken in Morocco and want to match or verify the scene against 
 - **`cartodb`** (low) — Use when you have a sizeable spatial dataset (addresses, coordinates, geometries) and need cloud-based mapping, SQL/spatial analysis, and sh
 - **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns
 - **`citizen-com`** (medium) — Use when you have a US `geolocation` and time window and want to know what safety incidents (shootings, fires, police activity, missing-pers

@@ -213,7 +213,7 @@ kind: group-index
 - **`notes`** (medium) — OSINT tool: Notes.
 - **`nova-czech-republick`** (low) — Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-langu
 - **`nursingforum-co-uk`** (medium) — Use when you have a `username` or `name` and want to find a UK nurse's forum posts, member profile, or jobseeker/CV entries — returns a `soc
-- **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
+- **`ohsint-gitbook`** (medium) — Use when you need OSINT/OPSEC methodology or a curated tool pointer for a particular investigative problem — returns tradecraft articles and
 - **`onefinestay`** (low) — Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listi
 - **`onefootballforum-co-uk`** (low) — Use when you have a `username` active in UK football fandom and want their forum post history and interactions — returns posts, interests an
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an

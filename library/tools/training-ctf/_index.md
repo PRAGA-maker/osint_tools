@@ -16,7 +16,7 @@ kind: group-index
 - **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.
 - **`gralhix-osint-exercises`** (medium) — Use when you want to build or sharpen practical `image`/`geolocation` verification skills — a free, graded library of hands-on OSINT exercis
 - **`intel-codex`** (low) — Knowledge base covering OSINT, forensics, reverse engineering, and security frameworks.
-- **`non-typical-osint-guide`** (medium) — Unconventional OSINT guide for experienced investigators covering advanced techniques.
+- **`non-typical-osint-guide`** (medium) — Use when a standard approach has stalled and you want unconventional OSINT techniques, mindset training, or pointers to niche tools (crypto,
 - **`pentestingeverything`** (low) — Comprehensive penetration testing methodology guide (web, mobile, API, network).
 - **`smart-questions`** (low) — Research methodology, effective questioning, and stronger information-seeking habits
 - **`the-osint-field-manual-tofm`** (medium) — Trace Labs field manual documenting OSINT methodology and workflows.

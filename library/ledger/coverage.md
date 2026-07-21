@@ -2,21 +2,21 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7885 total · 4280 full · 3605 stub (54% enriched)
+**Tools:** 7884 total · 4290 full · 3594 stub (54% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3611 · medium: 2311 · high: 1963
+low: 3611 · medium: 2310 · high: 1963
 
 ## Tools by trust
-community: 3509 · unverified: 2932 · trusted: 1434 · untrustworthy: 6 · personal: 4
+community: 3510 · unverified: 2928 · trusted: 1436 · untrustworthy: 6 · personal: 4
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 10/455
-- `archives-cache` — 71/129
-- `communities-forums` — 188/368
+- `archives-cache` — 72/129
+- `communities-forums` — 189/368
 - `dark-web` — 27/116
 - `dating-classifieds` — 63/104
 - `documents-metadata` — 33/313
@@ -24,17 +24,17 @@ community: 3509 · unverified: 2932 · trusted: 1434 · untrustworthy: 6 · pers
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 44/120
-- `geolocation` — 275/345
-- `image-video-face` — 432/462
+- `geolocation` — 276/345
+- `image-video-face` — 433/462
 - `maps-geospatial-data` — 53/131
 - `messaging` — 175/188
 - `opsec-investigator-tooling` — 36/558
 - `people-search` — 251/260
 - `phone` — 134/137
-- `public-records` — 803/1073
-- `search-engines` — 412/882
-- `social-networks` — 703/798
-- `training-ctf` — 2/12
+- `public-records` — 806/1073
+- `search-engines` — 413/882
+- `social-networks` — 704/797
+- `training-ctf` — 3/12
 - `translation-language` — 15/103
 - `transportation` — 106/219
 - `username` — 102/104
@@ -43,7 +43,7 @@ community: 3509 · unverified: 2932 · trusted: 1434 · untrustworthy: 6 · pers
 
 - `library/tools/public-records` — 1016 leaves
 - `library/tools/search-engines` — 825 leaves
-- `library/tools/social-networks` — 770 leaves
+- `library/tools/social-networks` — 769 leaves
 - `library/tools/opsec-investigator-tooling` — 526 leaves
 - `library/tools/domains-ip-infrastructure` — 490 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves

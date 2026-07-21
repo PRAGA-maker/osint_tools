@@ -105,7 +105,7 @@ kind: group-index
 - **`facesearch-arrests-org`** (high) — Use when you have a face photo and want to check it against US arrest/booking (mugshot) records aggregated by Arrests.org.
 - **`facesearch`** (low) — Use when triaging legacy OSINT lists for a reverse face/photo search tool — but this entry's domain is misspelled and likely dead; verify be
 - **`facial-composite-identikit-maker`** (medium) — Use when you have only a witness/verbal physical description and need to build a composite face image (identikit) to use as a search or circ
-- **`fact-check`** (medium) — OSINT tool: Fact Check.
+- **`fact-check`** (medium) — Use when you have a claim, quote, or viral `image`/video attributed to a US public figure and want to know if it's already been verified or 
 - **`fdupes`** (low) — Github - Locating exact matches of duplicate files.
 - **`filmot`** (medium) — Use when you have a `name`, phrase, or keyword and want to find the exact YouTube videos and timestamps where it is spoken — returns videos,
 - **`find-and-set-scale-from-image`** (medium) — Use when you have an `image` with one known real-world dimension and want to measure other distances/areas in it — returns scaled measuremen

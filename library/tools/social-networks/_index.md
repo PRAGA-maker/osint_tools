@@ -321,7 +321,7 @@ kind: group-index
 - **`karma-decay`** (medium) — Use when you have an `image` and want to find whether/where it was posted on Reddit — returns the Reddit submissions (subreddits, `username`
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
 - **`keepvid`** (low) — OSINT tool: KeepVid.
-- **`khalil-shreateh-social-applications`** (medium) — More than 20 tools to extend the standard functionality of #Facebook, #TikTok, #Instagram, #Twitter (information gathering, random pickers f
+- **`khalil-shreateh-social-applications`** (medium) — Use when you have a social `username` and want quick enrichment — profile-picture full-view, ID lookup, post/account timestamps, TikTok user
 - **`khendrikse-netlify-app`** (high) — Use when you have a Mastodon handle (`username`@instance) and want its stable numeric account ID for API queries — a short guide returning t
 - **`khoji-github-com`** (high) — Use when you have a Snapchat `username` and want to download that user's full Bitmoji avatar history — returns image artifacts revealing app
 - **`khoji-onrender-com`** (high) — Use when you have a Snapchat `username` and want to confirm the account and see its Bitmoji avatar — returns the account's Bitmoji image and
@@ -573,7 +573,6 @@ kind: group-index
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
 - **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho
 - **`tailwind`** (low) — Social media scheduling tool including Pinterest.
-- **`target-log`** (medium) — OSINT tool: Target Log.
 - **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia

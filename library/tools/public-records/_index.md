@@ -189,7 +189,7 @@ kind: group-index
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
 - **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
 - **`competeshark`** (medium) — OSINT tool: CompeteShark.
-- **`completed-access-to-information-requests`** (medium) — OSINT tool: Completed Access to Information Requests.
+- **`completed-access-to-information-requests`** (medium) — Use when you have a topic, agency, or `name` and want to search summaries of already-completed Canadian federal ATI (freedom-of-information)
 - **`connectedpapers`** (low) — Use when you have an academic `name` or a paper and want to map their body of work and co-authors as a visual citation graph — returns colla
 - **`connecticut-registered-voter-verification`** (medium) — Use when you have a `name` and `dob` in Connecticut and want to confirm voter registration — returns registration status, town, and polling 
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
@@ -201,7 +201,7 @@ kind: group-index
 - **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
 - **`corporate-information`** (medium) — Use when you have a company `name` and want a consolidated financial/company profile — returns employer-org details, address and executive n
 - **`corporationwiki`** (medium) — Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and 
-- **`corporative-registry-catalog`** (medium) — worldwide catalog of business registries (63 countries)
+- **`corporative-registry-catalog`** (medium) — Use when you have an `employer-org` or company lead in a specific country and want the link to that country's official business/company regi
 - **`corrections-com-inmate-locaton-links`** (high) — Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links th
 - **`counciltaxrates-info`** (medium) — Use when you have a UK `address`/postcode and want the property's council-tax band and local rates — returns band, rateable value and the re
 - **`county-clerks-recorded-doc-s-by-state`** (high) — Use when you have a `name` and a US location and want official recorded-document / public-record databases (deeds, liens, UCC, vital, court)
@@ -961,7 +961,7 @@ kind: group-index
 - **`un-data`** (low) — OSINT tool: UN Data.
 - **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
-- **`unclaimed-money-us-google-search`** (medium) — OSINT tool: "unclaimed money" US - Google Search.
+- **`unclaimed-money-us-google-search`** (medium) — Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns 
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns
 - **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — Use when you have a `name` and want unclaimed-property records — returns a last-known `address`, holder, and sometimes co-owner `associate` 
 - **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.

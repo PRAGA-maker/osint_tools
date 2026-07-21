@@ -103,7 +103,7 @@ kind: group-index
 - **`view-page-archive-addons-mozilla-org`** (medium) — Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style sn
 - **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
-- **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.
+- **`wayback-archive`** (medium) — Use when you have a Wayback Machine snapshot `domain`/URL and want to download it as a fully working offline copy — returns a local, self-co
 - **`wayback-google-analytics`** (medium) — Use when you have a `domain` and want to link it to other sites via shared current/historical Google Analytics or AdSense IDs — returns rela
 - **`wayback-keywords-search`** (medium) — Use when you have a `domain` and a `name`/keyword and want to find it in the site's history — downloads a domain's Wayback snapshots for a p
 - **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —

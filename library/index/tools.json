@@ -22102,41 +22102,48 @@
   {
     "id": "wayback-archive",
     "name": "Wayback-Archive",
-    "description": "OSINT tool: Wayback-Archive.",
+    "description": "Use when you have a Wayback Machine snapshot `domain`/URL and want to download it as a fully working offline copy — returns a local, self-contained rebuild of the archived site (evidence preservation, no selector output).",
     "url": "https://github.com/GeiserX/Wayback-Archive",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Downloading an archived web page/site from the Wayback Machine and reconstructing it (HTML, CSS, JS, images, fonts) for offline, self-contained viewing.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (pip install). Only cost is your bandwidth/disk.",
+    "opsec": "passive",
+    "opsecNote": "Passive with respect to the target — you pull from archive.org's Wayback Machine, not the subject's live server, so the subject gets no signal. Your requests hit the Internet Archive from your IP; route through normal research egress.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source Python tool (GeiserX/Wayback-Archive), actively maintained (v1.4.x, 2026); it re-fetches from the Internet Archive, so provenance traces to Wayback's captures.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-history-and-website-capture"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "buscapaginasblancas",
       "website-diff"
     ],
+    "aliases": [
+      "Wayback Archive downloader"
+    ],
+    "tags": [
+      "web-history-and-website-capture"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/wayback-archive.md"
   },
   {
@@ -33118,24 +33125,25 @@
   {
     "id": "ohsint-gitbook",
     "name": "OhSINT GitBook",
-    "description": "OSINT blog and resource collection with tools and investigative references.",
+    "description": "Use when you need OSINT/OPSEC methodology or a curated tool pointer for a particular investigative problem — returns tradecraft articles and category-organized tool/resource links (reference reading, no selector output).",
     "url": "https://github.com/OhShINT/ohshint.gitbook.io",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Methodology reading and curated tool references",
+    "bestFor": "Methodology reading and curated, category-organized OSINT/OPSEC tool references when you're deciding how to approach an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open knowledge base (GitHub source + GitBook reader). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading public documentation. Note the site itself heavily covers OPSEC/counter-surveillance, which is useful guidance for keeping your own investigation clean.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community knowledge base (900+ stars).",
+    "trustNote": "Community knowledge base (OhShINT, ~900+ stars) curated by an individual researcher; a reference/reading resource, not a data source, so weigh advice and verify linked tools yourself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -33152,8 +33160,8 @@
       "knowledge-base"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ohsint-gitbook.md"
   },
   {
@@ -116472,13 +116480,13 @@
   {
     "id": "carte-ma",
     "name": "Carte.ma",
-    "description": "Mapping/streetview service for Morocco",
+    "description": "Use when you have a Moroccan `geolocation`/`address` or a street-level photo taken in Morocco and want to match or verify the scene against 2013–2015 street imagery — returns a confirmed `geolocation` from historical street view.",
     "url": "http://carte.ma/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Historical street-level imagery of Morocco (2013–2015) for geolocating or verifying photos and scenes when Google Street View coverage is absent.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -116486,29 +116494,35 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public map. No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing a public map/imagery archive over OpenStreetMap/CARTO tiles; nothing is disclosed to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent Moroccan street-view project (in the Bellingcat toolkit); imagery is a fixed 2013–2015 capture, so it documents that era, not the present.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ma"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Carte Maroc",
+      "Morocco Street View"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "street-view"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/carte-ma.md"
   },
   {
@@ -137209,42 +137223,49 @@
   },
   {
     "id": "fact-check",
-    "name": "Fact Check",
-    "description": "OSINT tool: Fact Check.",
+    "name": "FactCheck.org",
+    "description": "Use when you have a claim, quote, or viral `image`/video attributed to a US public figure and want to know if it's already been verified or debunked — returns fact-check verdicts and sourced context (no direct selector output).",
     "url": "http://www.factcheck.org",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Checking whether a US political/public claim, quote, or manipulated media artifact has already been fact-checked, with a documented evidence trail.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, nonprofit (Annenberg Public Policy Center). No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read published fact-checks and search an archive; nothing is disclosed to any subject. Standard web-read hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Nonpartisan project of the Annenberg Public Policy Center (University of Pennsylvania), a long-established, well-regarded fact-checker with transparent sourcing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "fact-checking"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "debunking-false-stories-archives",
       "scicheck"
     ],
+    "aliases": [
+      "FactCheck.org"
+    ],
+    "tags": [
+      "fact-checking"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-check.md"
   },
   {
@@ -223539,35 +223560,37 @@
   {
     "id": "completed-access-to-information-requests",
     "name": "Completed Access to Information Requests",
-    "description": "OSINT tool: Completed Access to Information Requests.",
+    "description": "Use when you have a topic, agency, or `name` and want to search summaries of already-completed Canadian federal ATI (freedom-of-information) requests — returns request summaries and `document-id`s you can order copies of.",
     "url": "https://open.canada.ca/en/search/ati",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching the Government of Canada's index of completed Access to Information request summaries to find records already released (or requestable) across federal institutions.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search summaries; ordering a previously-released package is free or a nominal fee. No payment to run the search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you search a public government portal, not the subject. Ordering a specific released package is logged by the institution but concerns a document, not a live person; use a sock-puppet email if you order and want to stay unattributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Canada open-data portal; the summaries are authoritative records of processed ATI requests across federal institutions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "canadian-business-research",
       "canadian-department-of-finance",
@@ -223579,6 +223602,19 @@
       "canadian-importers-database",
       "canadian-copyrights-database"
     ],
+    "aliases": [
+      "ATI Summaries",
+      "open.canada.ca ATI search"
+    ],
+    "tags": [
+      "public-records",
+      "foia",
+      "canada",
+      "government"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/completed-access-to-information-requests.md"
   },
   {
@@ -224158,37 +224194,44 @@
   {
     "id": "corporative-registry-catalog",
     "name": "Corporative Registry Catalog",
-    "description": "worldwide catalog of business registries (63 countries)",
+    "description": "Use when you have an `employer-org` or company lead in a specific country and want the link to that country's official business/company registry — returns direct links to 63 national corporate registries (a routing directory, no direct selector output).",
     "url": "https://cipher387.github.io/corporative_registry_worldwide_catalog/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Quickly finding the official company-registration search site for a given country to then look up a business, its directors and filings.",
+    "selectorsIn": [
+      "employer-org"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "The catalog itself is free; individual national registries it links to may charge or require registration (marked $ / r in the list).",
+    "opsec": "passive",
+    "opsecNote": "Passive — a static list of links. The registry sites you land on may log searches; use a clean browser if you want to avoid a trail on a specific jurisdiction's registry.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Curated by researcher cipher387 (Cyb_Detective); the page itself carries a notice that it is no longer being updated and points to the newer Worldwide OSINT Tools Map, so treat the link list as a frozen-2020s snapshot.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Worldwide Corporate Registry Catalog"
+    ],
     "tags": [
       "Company information search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/corporative-registry-catalog.md"
   },
   {
@@ -265372,13 +265415,13 @@
   {
     "id": "unclaimed-money-us-google-search",
     "name": "\"unclaimed money\" US - Google Search",
-    "description": "OSINT tool: \"unclaimed money\" US - Google Search.",
+    "description": "Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns confirmation of a claim tied to a `name`/`address` and a state to pursue.",
     "url": "https://www.google.com/search?q=%22unclaimed+money%22",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Using a Google entry point to reach US state unclaimed-property databases and check whether a subject has unclaimed funds tied to a name and address.",
     "selectorsIn": [
       "name",
       "address"
@@ -265387,28 +265430,36 @@
       "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — a Google search plus free state unclaimed-property portals (never pay a \"finder\" service to search).",
+    "opsec": "passive",
+    "opsecNote": "Passive — searching public asset databases by name. The subject is not notified. Standard search hygiene applies; nothing is disclosed to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "This entry is a search-technique launcher, not a data source; trust the official state treasury/unclaimed-property sites it leads to, and distrust paid \"asset locator\" middlemen.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "unclaimed money search",
+      "unclaimed property search"
+    ],
     "tags": [
-      "property"
+      "property",
+      "public-records",
+      "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unclaimed-money-us-google-search.md"
   },
   {
@@ -279560,24 +279611,31 @@
   {
     "id": "familypedia",
     "name": "Familypedia",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on family history",
-    "url": "http://familypedia.wikia.com",
+    "description": "Use when you have a `name` (especially with an ancestor/surname angle) and want crowdsourced genealogy — family trees, relatives, dates — returns `associate` (kin), `dob`, and locality from a semantic genealogy wiki.",
+    "url": "https://familypedia.fandom.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Crowdsourced genealogy lookups — connecting a person to relatives, ancestors, surnames, dates and places via a semantic family-history wiki.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "dob",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, community-run wiki on Fandom. No account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading public wiki articles. Editing (which needs a Fandom account) is unnecessary for research; if you do edit, use a sock-puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-edited semantic wiki (100,000+ articles) hosted on Fandom; contributor-supplied genealogy is often unsourced, so treat entries as leads to verify against primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -279586,15 +279644,6 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "itlaw",
       "lotrowikia",
@@ -279604,6 +279653,19 @@
       "wikiawikis",
       "wikirecipes"
     ],
+    "aliases": [
+      "Familypedia",
+      "Family History and Genealogy Wiki"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "genealogy"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/familypedia.md"
   },
   {
@@ -325954,44 +326016,51 @@
   {
     "id": "khalil-shreateh-social-applications",
     "name": "Khalil Shreateh Social Applications",
-    "description": "More than 20 tools to extend the standard functionality of #Facebook, #TikTok, #Instagram, #Twitter (information gathering, random pickers for contests, content downloaders etc.)",
+    "description": "Use when you have a social `username` and want quick enrichment — profile-picture full-view, ID lookup, post/account timestamps, TikTok username→email — returns `image`, sometimes `email`, and account-age/timestamp metadata.",
     "url": "https://khalil-shreateh.com/khalil.shtml/social_applications/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A grab-bag of free web utilities for Facebook/Instagram/TikTok/Twitter — profile-pic viewers, ID lookups, timestamp/account-age checkers, downloaders and a TikTok username-to-email tool.",
     "selectorsIn": [
-      "face",
-      "image"
+      "username"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "email"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tools (ad-supported). No account for most utilities.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the target — the utilities query public platform data/APIs, not the subject, and viewing a profile picture via a third-party viewer avoids visiting the profile directly. But you are handing the target's handle to a third-party site; assume it may log queries, so avoid entering anything sensitive and don't rely on it for anonymity-critical work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Personal tool site of security researcher Khalil Shreateh; utilities are free and generally functional but unvetted, ad-heavy, and dependent on platform APIs that break — verify outputs elsewhere.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "facebook-applications-khalil-shreateh"
+    ],
+    "aliases": [
+      "Khalil Shreateh social tools"
+    ],
     "tags": [
       "Social Media",
       "Universal"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-applications-khalil-shreateh"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/khalil-shreateh-social-applications.md"
   },
   {
@@ -340090,48 +340159,6 @@
     "_file": "library/tools/social-networks/search/talkwalker-social-media-search.md"
   },
   {
-    "id": "target-log",
-    "name": "Target Log",
-    "description": "OSINT tool: Target Log.",
-    "url": "https://targetolog.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vk",
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/target-log.md"
-  },
-  {
     "id": "taringa-latin-america",
     "name": "Taringa (Latin America)",
     "description": "Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns archived social-profile leads.",
@@ -350920,24 +350947,25 @@
   {
     "id": "non-typical-osint-guide",
     "name": "Non-typical OSINT Guide",
-    "description": "Unconventional OSINT guide for experienced investigators covering advanced techniques.",
+    "description": "Use when a standard approach has stalled and you want unconventional OSINT techniques, mindset training, or pointers to niche tools (crypto, geolocation, counter-OSINT) — returns methodology and curated resource links (reference reading, no selector output).",
     "url": "https://github.com/OffcierCia/non-typical-OSINT-guide",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Advanced/creative OSINT methodology and lesser-known resources",
+    "bestFor": "Advanced/creative OSINT methodology, cognitive-bias and tradecraft training, and lesser-known tools for crypto, due-diligence and geolocation work.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub guide. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading public documentation. Includes counter-OSINT sections useful for hardening your own operational security before working a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Well-regarded advanced guide (1.5k+ stars).",
+    "trustNote": "Well-regarded community guide by OfficerCia (~1.5k stars, multi-language); a curated reference, not a data source — verify each linked tool independently.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -350946,15 +350974,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OfficerCia OSINT guide"
+    ],
     "tags": [
       "guide",
       "techniques",
       "methodology"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/non-typical-osint-guide.md"
   },
   {
