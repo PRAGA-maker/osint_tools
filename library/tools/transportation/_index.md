@@ -127,7 +127,6 @@ kind: group-index
 - **`maritime-database`** (low) — OSINT tool: Maritime Database.
 - **`maritimeconnector`** (low) — OSINT tool: MaritimeConnector.
 - **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.
-- **`mobissimo-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
 - **`my-ship-tracking`** (low) — OSINT tool: My Ship Tracking.
 - **`national-insurance-crime-bureau-vin-search`** (medium) — Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns

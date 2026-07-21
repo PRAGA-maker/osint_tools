@@ -199,7 +199,7 @@ kind: group-index
 - **`spamhaus`** (high) — Use when you have a domain or IP from an email header and want its spam/abuse reputation — returns blocklist status for that domain/IP.
 - **`spotthem-com`** (high) — Use when you have an email or name and want a quick people/email-search aggregator lookup — purpose inferred from name/listing; outputs unve
 - **`spycloud-com`** (low) — Use when you have an `email` on a domain you control/investigate and want to know whether that identity or domain appears in recaptured dark
-- **`spycloud`** (medium) — Breach/infostealer exposure check.
+- **`spycloud`** (medium) — Use when you have an email or domain and want to know whether it appears in breach and infostealer-malware data — returns exposure confirmat
 - **`stealseek`** (high) — Use when you have an email/username/domain and want to check exposure in infostealer logs and breach data — returns leaked credentials/accou
 - **`support-cloudhq-net`** (high) — Use when you need to understand email tracking pixels — a reference article on how an opened email can reveal a recipient's IP/device; techn
 - **`support-google-com`** (high) — Use when you have an email you received and need to read its full headers — Gmail's help page on viewing the original message to extract sen

@@ -19905,56 +19905,6 @@
     "_file": "library/tools/archives-cache/linctas-ent-sirsidynix-net-au.md"
   },
   {
-    "id": "linkedin-com",
-    "name": "linkedin.com",
-    "description": "OSINT tool: linkedin.com.",
-    "url": "https://www.linkedin.com/pulse/download-web-history-from-common-crawl-another-wayback-albert-hui-2yfbe/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "griffin-glynn-hatless1der",
-      "hatless-investigations-group",
-      "linkedin",
-      "linkedin-advanced-search",
-      "linkedin-groups",
-      "robert-devere-bunn",
-      "www-linkedin-com-pub-dir-people-search"
-    ],
-    "_file": "library/tools/archives-cache/linkedin-com.md"
-  },
-  {
     "id": "lumen",
     "name": "Lumen",
     "description": "A research project collecting and publishing legal takedown notices for online content transparency",
@@ -30709,42 +30659,56 @@
   },
   {
     "id": "knok",
-    "name": "Knok",
-    "description": "Website related to social networking in the form of travel and accomodations",
+    "name": "Knok (now HomeExchange)",
+    "description": "Use when you have a name or location and want to check a home-exchange community for a member profile or listed property — returns social-profile, address-area, and image leads from home-swap listings.",
     "url": "http://www.knok.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking a home-exchange/home-swap community for a member's profile and listed property.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Registration is free; a paid annual membership (~€160) unlocks unlimited exchanges. Browsing member/property listings is largely gated behind an account.",
+    "opsec": "active",
+    "opsecNote": "Knok was acquired by and folded into HomeExchange — www.knok.com now redirects there. Meaningfully browsing listings requires an account, and viewing a member/property may be visible to the community (hosts can see interest). Use a sock-puppet membership; do not contact the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "The original Knok brand is defunct; the URL redirects to HomeExchange, a live home-swap platform. Member-authored profiles/listings are self-reported and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "knok.com",
+      "HomeExchange"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "travel"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/knok.md"
   },
   {
@@ -105634,37 +105598,44 @@
   {
     "id": "spycloud",
     "name": "SpyCloud",
-    "description": "Breach/infostealer exposure check.",
-    "url": "https://portal.spycloud.com/",
+    "description": "Use when you have an email or domain and want to know whether it appears in breach and infostealer-malware data — returns exposure confirmation and, on the paid platform, recaptured records.",
+    "url": "https://spycloud.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Check exposure of an email in breach/infostealer data (free check, paid platform).",
+    "bestFor": "Checking whether an email/domain is exposed in breach and infostealer (stealer-log) datasets.",
     "selectorsIn": [
       "email",
       "domain"
     ],
     "selectorsOut": [
-      "email"
+      "email",
+      "password"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free self-service \"check your exposure\" tool gives a yes/exposed summary for an email or domain. The detailed recaptured records (plaintext creds, malware-infection detail) sit behind an enterprise, quote-based platform.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The free check queries SpyCloud's own recaptured-data index, not the target's accounts, so nothing is sent to the data subject. Entering a target address does log it with a commercial vendor — use a work/sock-puppet context and never submit a subject's password to any \"check\" field.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "SpyCloud is an established commercial breach/infostealer-intelligence vendor; its data is well-regarded in fraud and account-takeover prevention. The free tier only summarises exposure — the substantive records require a paid contract.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": true,
+    "relatedTools": [
+      "spycloud-com"
+    ],
     "aliases": [
       "Spycloud"
     ],
@@ -105674,11 +105645,8 @@
       "email"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "spycloud-com"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/email/spycloud.md"
   },
   {
@@ -115044,47 +115012,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/arcgis-mapping-platform.md"
-  },
-  {
-    "id": "argis-ufo-map",
-    "name": "Argis UFO map",
-    "description": "UFO sightings interactive map. USA only",
-    "url": "https://www.arcgis.com/apps/View/index.html?appid=6cd609921ebc44ff914a4e8059813b16",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/argis-ufo-map.md"
   },
   {
     "id": "astrometry",
@@ -168753,41 +168680,56 @@
   {
     "id": "telemetrio",
     "name": "Telemetrio",
-    "description": "Telemetr.io offers a range of Telegram-related services based on a catalog of Telegram channels: country and category-specific rankings, curated collections, real-time event tracking, and an API.",
+    "description": "Use when you have a Telegram channel name, keyword, or forwarded post and want to search across a large catalog of channels — returns social-profile links, associated channels, and post history.",
     "url": "https://telemetr.io/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching and analysing public Telegram channels — keyword search across posts, channel discovery, and forwarding-network mapping.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free plan covers 1,000 requests/month, 5 verified channels, and 7 days of post history; paid tiers extend limits, history depth, and API access.",
+    "opsec": "passive",
+    "opsecNote": "You query Telemetrio's own scraped catalog, not Telegram directly, so the target is not notified and never sees your identity. Registration ties activity to your account — use a sock-puppet email if you want to keep the investigation compartmentalised.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Listed in Bellingcat's Online Investigation Toolkit; a commercial Telegram-analytics vendor widely used by journalists and OSINT analysts. Data quality is good for public channels but the vendor's index, not an authoritative source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "telegram"
+    "coverage": [
+      "global"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "account",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
     "relatedTools": [
       "telemetr-io"
     ],
+    "aliases": [
+      "telemetr.io",
+      "Telemetr"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "telegram",
+      "channel-analytics"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telemetrio.md"
   },
   {
@@ -214755,37 +214697,40 @@
   {
     "id": "1c-database-converter",
     "name": "1C Database Converter",
-    "description": "1C is a very popular program in CIS countries for storing data in enterprises (accounting, document management, etc.). This tool allows you to convert 1C files into CSV files.",
+    "description": "Use when you have a seized/leaked 1C accounting database file (.1CD, .cf, .epf, .efd) and want to read its records — returns grepable CSV that can surface name, address, phone and employer-org fields.",
     "url": "https://github.com/soxoj/1c-database-converter",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting person/company records from CIS-region 1C enterprise database dumps into grepable CSV.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (soxoj). No account or API key — you need Python 3 and the source files themselves.",
+    "opsec": "passive",
+    "opsecNote": "Fully offline — it parses local binary files on your machine and makes no network calls, so nothing reaches the data subject or any third party. The only real risk is legal — that you hold and process the 1C files lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Written by soxoj (author of Maigret and other well-known OSINT tooling); small, transparent, open-source repo. Community-trusted rather than institutionally audited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Databases and data analyzes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "awesome-osint-mcp-servers",
       "counter-osint-guide-for-russians",
@@ -214799,6 +214744,18 @@
       "socid-extractor",
       "username-generation-guide"
     ],
+    "aliases": [
+      "onec-database-converter",
+      "soxoj 1c converter"
+    ],
+    "tags": [
+      "Databases and data analyzes",
+      "cis",
+      "offline-parser"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/1c-database-converter.md"
   },
   {
@@ -269387,24 +269344,32 @@
   {
     "id": "abc-search-engine",
     "name": "ABC Search Engine",
-    "description": "Surface web search engine covering worldwide results, including various categories to choose from",
-    "url": "http://www.abcsearchengine.com",
+    "description": "Use when you have a name, username, or domain and want an alternate general web-search index to catch links a mainstream engine ranks differently — returns social-profile and domain leads.",
+    "url": "http://www.abcsearchengine.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A minor alternate web-search index for cross-checking name/handle results.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free general web search; no account. It is a small, ad-supported metasearch/portal rather than an independent crawler.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A general search query leaks nothing about your subject to the subject. As with any small third-party engine, your query terms pass through the operator's servers; keep sensitive strings out of it and prefer a clean/sock-puppet IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A low-traffic, ad-supported general search portal of unclear provenance and index quality; slow and thinly used. Useful only as a marginal cross-check, never as a primary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -269413,15 +269378,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "abcsearchengine.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/abc-search-engine.md"
   },
   {
@@ -274797,25 +274764,30 @@
   },
   {
     "id": "chegg-search-engine",
-    "name": "Chegg Search Engine",
-    "description": "Website that offers high school, college, and university book search services, including homework help, online tutoring, and application advice",
-    "url": "http://www.chegg.com",
+    "name": "Chegg",
+    "description": "Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public profile or Q&A/review footprint — returns social-profile leads.",
+    "url": "https://www.chegg.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Niche check for a student/tutor footprint on the Chegg education platform.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing marketing pages and some Q&A/reviews is free; textbook solutions, homework help, and tutoring sit behind a paid subscription. No paid tier is needed for the limited OSINT reconnaissance here.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public browsing of Chegg's marketing and Q&A pages is anonymous and does not notify anyone. Do not create an account tied to a real identity, and do not attempt to access another person's account or private study data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Chegg is a large, legitimate US education-technology company, but as an OSINT source it exposes very little person-level data — its investigative value is marginal and context-dependent.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -274824,15 +274796,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "chegg.com",
+      "Chegg Search Engine"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "education"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/chegg-search-engine.md"
   },
   {
@@ -288304,41 +288280,54 @@
   {
     "id": "lawyers-com",
     "name": "Lawyers.com",
-    "description": "Legal-related search engine for locating legal representatives",
-    "url": "http://www.lawyers.com",
+    "description": "Use when you have a name (of an attorney) or a location + practice area and want a professional profile — returns employer-org (firm), address, phone and practice details drawn largely from state-bar records.",
+    "url": "https://www.lawyers.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating and profiling a US/Canada attorney by name, firm, or practice area.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "phone",
+      "physical-description"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and to view attorney profiles; profiles are free listings partly auto-built from bar records. Attorneys pay to enhance their listing, but consumer search costs nothing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public consumer directory; searching is anonymous browsing and does not notify the attorney. No login needed. Standard web hygiene (clean IP/browser) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Part of Internet Brands' Martindale legal-marketing network (Martindale.com, Avvo, Nolo). Baseline data derives from state-bar records so it is reasonably reliable, but enhanced profiles are self-authored marketing.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "lawyers.com",
+      "Martindale Lawyers.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "legal",
+      "professional-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/lawyers-com.md"
   },
   {
@@ -303642,25 +303631,31 @@
   },
   {
     "id": "tviv",
-    "name": "Tviv",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on television programming",
+    "name": "The TV IV",
+    "description": "Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and associate leads (cast/crew) for corroborating a media reference.",
     "url": "http://tviv.org/Main_Page",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying a television programme and its cast/air history from a partial clue.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open, community-editable wiki. No account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ordinary anonymous browsing of a public wiki; reading leaks nothing about your subject. Editing would require an account and expose activity, but this is a read-only reference use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A crowdsourced, anyone-can-edit TV encyclopedia; useful for orientation but, like any open wiki, individual facts should be confirmed against a primary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -303669,15 +303664,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tviv.org",
+      "The TV IV"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "television"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/tviv.md"
   },
   {
@@ -337149,48 +337148,59 @@
   },
   {
     "id": "snradar",
-    "name": "Snradar",
-    "description": "OSINT tool: Snradar.",
-    "url": "http://snradar.azurewebsites.net",
+    "name": "SnRadar",
+    "description": "Use when you have a geolocation (or a VK profile) and want to find VKontakte photos taken near that point — returns social-profile links and geotagged image leads.",
+    "url": "https://snradar.azurewebsites.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Map-based search for geotagged VKontakte photos around a location.",
     "selectorsIn": [
-      "username",
-      "name"
+      "geolocation",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tool. No account required; it queries VK's public photo data through VK's API.",
+    "opsec": "passive",
+    "opsecNote": "Searches VK's public geotagged-photo index; it does not visit the target's profile or notify anyone. Runs on a free Azure host that frequently sleeps — a passive lookup, but treat the third-party host as untrusted with your query terms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing community VK-OSINT utility referenced by OSINTCurio.us and Russian-speaking OSINT lists. Hobbyist-run on free Azure hosting, so uptime is unreliable and it may break when VK changes its API.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vk",
-      "russia"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "osintdashboard-azurewebsites-net",
       "sn-radar-vk-photo-search"
     ],
+    "aliases": [
+      "Snradar",
+      "SN Radar"
+    ],
+    "tags": [
+      "vk",
+      "russia",
+      "geolocation",
+      "photo-search"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snradar.md"
   },
   {
@@ -360938,46 +360948,6 @@
       "submarine-tracker"
     ],
     "_file": "library/tools/transportation/military-ship-tracker.md"
-  },
-  {
-    "id": "mobissimo-travel-search-engine",
-    "name": "Mobissimo Travel Search Engine",
-    "description": "Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment, including pricing and reviews",
-    "url": "http://www.mobissimo.com/search_airfare.php",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/mobissimo-travel-search-engine.md"
   },
   {
     "id": "mot-history",

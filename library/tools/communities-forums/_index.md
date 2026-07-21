@@ -160,7 +160,7 @@ kind: group-index
 - **`justfornurses-co-uk`** (medium) — Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, memb
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
-- **`knok`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`knok`** (medium) — Use when you have a name or location and want to check a home-exchange community for a member profile or listed property — returns social-pr
 - **`knowledge-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`kyc360`** (low) — Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage
 - **`lavalife`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships

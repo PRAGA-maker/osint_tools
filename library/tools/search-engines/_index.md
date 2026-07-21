@@ -26,7 +26,7 @@ kind: group-index
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
 - **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
 - **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.
-- **`abc-search-engine`** (medium) — Surface web search engine covering worldwide results, including various categories to choose from
+- **`abc-search-engine`** (medium) — Use when you have a name, username, or domain and want an alternate general web-search index to catch links a mainstream engine ranks differ
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
 - **`abilogic`** (low) — Business web directory
 - **`aboutus`** (low) — Use when you have a `domain` and want a legacy profile of a website/business — a wiki of site descriptions and contact info, now largely arc
@@ -137,7 +137,7 @@ kind: group-index
 - **`ceek-meta-search-japan`** (low) — Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sourc
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
 - **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
-- **`chegg-search-engine`** (medium) — Website that offers high school, college, and university book search services, including homework help, online tutoring, and application adv
+- **`chegg-search-engine`** (medium) — Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public p
 - **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
 - **`chromium-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and co
 - **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
@@ -411,7 +411,7 @@ kind: group-index
 - **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
 - **`lawforkids`** (low) — Law-related search engine for kids
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
-- **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
+- **`lawyers-com`** (medium) — Use when you have a name (of an attorney) or a location + practice area and want a professional profile — returns employer-org (firm), addre
 - **`leaklooker`** (medium) — Use when you have a `domain`/keyword and want to discover exposed, unauthenticated databases and services associated with it — returns `ip-a
 - **`leet`** (medium) — Use when you have a filename/keyword and want files exposed on open web directories — returns links to publicly-listed files and directory i
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
@@ -729,7 +729,7 @@ kind: group-index
 - **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
 - **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
-- **`tviv`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`tviv`** (medium) — Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and ass
 - **`twingly`** (low) — OSINT tool: Twingly.
 - **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re

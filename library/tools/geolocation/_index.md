@@ -23,7 +23,6 @@ kind: group-index
 - **`aqicn`** (low) — Use when you have a `geolocation` and want a map of live air-quality monitoring stations there — returns station points that double as corro
 - **`arcgis-mapping-platform`** (high) — Use when you have a `geolocation`/`address` and want to view or analyse published geospatial layers (parcels, imagery, infrastructure) — ret
 - **`arcgis`** (medium) — Use when you need authoritative basemaps, imagery, demographic, boundary, or live-feed map layers to add geographic context to a location, a
-- **`argis-ufo-map`** (medium) — UFO sightings interactive map. USA only
 - **`astronomy-sun-moon-eclipses`** (medium) — Use when you have a `geolocation` and a date/time and want the sun/moon position and light times — returns azimuth, elevation, sunrise/sunse
 - **`atlas`** (low) — Use when you have your own case location data (spreadsheet/coordinates) and want to load, map, and run spatial analysis on it collaborativel
 - **`atlasify`** (low) — Use when checking an OSINT toollist reference to atlasify.com — the domain is currently unreachable (TLS/self-signed certificate error), so 

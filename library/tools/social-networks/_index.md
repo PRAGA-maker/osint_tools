@@ -521,7 +521,7 @@ kind: group-index
 - **`snapscraper`** (high) — Use when you have a `geolocation` (lat/long) and want public Snapchat media there — downloads Snap Map "Our Story" videos and their metadata
 - **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram
 - **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
-- **`snradar`** (medium) — OSINT tool: Snradar.
+- **`snradar`** (medium) — Use when you have a geolocation (or a VK profile) and want to find VKontakte photos taken near that point — returns social-profile links and
 - **`snscrape`** (high) — Use when you have a `username`, hashtag, or keyword and want to bulk-collect a social account's public posts without an API key — returns po
 - **`social-blade`** (medium) — Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `socia
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
