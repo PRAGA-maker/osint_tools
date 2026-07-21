@@ -820,7 +820,7 @@ kind: group-index
 - **`ryersonindex-org`** (high) — Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, so
 - **`saa-gov-uk`** (high) — Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns addre
 - **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu
-- **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
+- **`samhsa`** (medium) — Use when you have a `geolocation` and want US behavioral-health context — returns treatment-facility `address` listings by area plus nationa
 - **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
 - **`scholarcy`** (low) — Use when you have a long `document-id` (paper, report, PDF) and want its key facts fast — returns an AI summary of concepts, findings, figur
 - **`scinapse-io`** (medium) — Use when you have an academic's `name` and want their publications, affiliations and co-authors — returns papers, `employer-org` and `associ

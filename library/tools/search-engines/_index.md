@@ -339,7 +339,7 @@ kind: group-index
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
 - **`highwire-free-online-full-text-articles`** (low) — OSINT tool: HighWire: Free Online Full-text Articles.
 - **`hinduwebsite`** (medium) — Use when you need to search or read Hindu (and other) scripture texts — a niche reference/scripture search site with essentially no direct p
-- **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
+- **`home-co-uk`** (medium) — Use when you have a UK `address` or postcode and want property and price history — returns sold-price `address` records, listings and area c
 - **`homepage-search-engine`** (medium) — Use when you have a `name`/`username` and want to search across a curated set of personal-homepage/website sources — returns web pages and `
 - **`hong-kong-securities-and-futures-commission`** (medium) — Use when you have a person or firm name and want to check Hong Kong financial licensing — returns employer-org licence status and any discip
 - **`hotpads-real-estate-search-engine`** (medium) — Use when you have an `address`/area and want rental-listing context — returns rentals, prices, photos, and listing/manager contacts for a lo

@@ -33,6 +33,8 @@ localInstall: false
 registration: true
 relatedTools:
 - forums-plentyoffish-com
+- plenty-of-fish-com
+- plentyoffish
 aliases:
 - Plenty of Fish
 - POF

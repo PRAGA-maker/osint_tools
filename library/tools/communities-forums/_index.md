@@ -132,7 +132,6 @@ kind: group-index
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`google-com-10`** (medium) — OSINT tool: google.com.
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
@@ -326,7 +325,7 @@ kind: group-index
 - **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
 - **`the-guardian-united-kingdom`** (medium) — Use when you have a `name`/`employer-org` in UK public life and want investigative coverage and gov-data journalism — returns articles, name
 - **`the-guardian-world`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
-- **`the-independent-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
+- **`the-independent-news-united-kingdom`** (medium) — Use when you have a `name` linked to the UK or a nationally covered event and want reporting — returns `associate`, `employer-org` and event
 - **`the-province-news`** (medium) — Use when you have a `name` or `address` tied to British Columbia and want local news coverage — returns `associate`, `employer-org` and even
 - **`the-silph-road`** (low) — Pokemon GO community travelers' card/profile directory; lets you look up a player's public Silph card by username. Referenced in sinwindie's
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
@@ -347,7 +346,7 @@ kind: group-index
 - **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content
 - **`tvnz-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
-- **`ukbusinessforums-co-uk`** (medium) — OSINT tool: ukbusinessforums.co.uk.
+- **`ukbusinessforums-co-uk`** (medium) — Use when you have a `username` or `name` of a UK small-business owner and want their forum footprint — returns the linked `social-profile`, 
 - **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.
 - **`unogs-com`** (low) — Netflix search without registration
 - **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships

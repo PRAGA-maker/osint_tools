@@ -477,7 +477,6 @@ kind: group-index
 - **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Simplified Reddit web interface.
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
-- **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
 - **`repos-timeline`** (low) — Use when you have a GitHub `username` and want their activity over time — returns a chronological timeline of the user's repositories and fo
 - **`repostsleuth`** (medium) — Use when you have an image and want to find where it was posted on Reddit before — returns the matching Reddit posts (social-profile, userna

@@ -160,7 +160,6 @@ kind: group-index
 - **`image-google-com`** (high) — Use when you have a photo of a missing person, location, or object and want to find where else it appears online or what it depicts — return
 - **`image-raider-2`** (high) — Use when you have a photo and want Infringement Report's multi-engine reverse-image search (the current home of ImageRaider) to find every p
 - **`image-raider`** (high) — Use when you have a photo and want to run it across multiple reverse-image engines at once to find every page reusing it — returns matching 
-- **`image-search-assistant`** (medium) — searches for a picture, screenshot or fragment of a screenshot in several search engines and stores at once
 - **`image-so-search`** (medium) — Use when you have an `image` and want a China-focused reverse search — returns visually similar images and pages indexed by Qihoo 360, compl
 - **`imageamigo-com-2`** (medium) — Use when a subject photo is blurry and you want to sharpen/deblur it before OCR, face comparison, or reverse-image search — returns an enhan
 - **`imageamigo-com`** (medium) — Use when you need to strip the background out of a subject photo so the person/object is isolated before reverse-image search or comparison 

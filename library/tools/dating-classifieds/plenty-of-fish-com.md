@@ -43,6 +43,7 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - plentyoffish
+- plentyoffish-online-dating
 aliases:
 - POF
 - PlentyOfFish

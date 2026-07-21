@@ -109,7 +109,7 @@ kind: group-index
 - **`wayback-keywords-search`** (medium) — Use when you have a `domain` and a `name`/keyword and want to find it in the site's history — downloads a domain's Wayback snapshots for a p
 - **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —
 - **`wayback-machine-downloader-github-com`** (medium) — Use when you have a `domain` and want to bulk-download its entire archived history from the Internet Archive — returns the reconstructed sit
-- **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
+- **`wayback-machine`** (medium) — Use when you have a `domain`/URL or `social-profile` and want to see what a page said in the past — returns archived `social-profile` snapsh
 - **`wayback-tweets`** (medium) — Use when you have a Twitter/X `username` and want their deleted or historical tweets — returns archived tweet captures pulled from the Wayba
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a

@@ -22312,50 +22312,63 @@
   {
     "id": "wayback-machine",
     "name": "Wayback Machine",
-    "description": "OSINT tool: Wayback Machine.",
-    "url": "http://archive.org/web/web.php",
+    "description": "Use when you have a `domain`/URL or `social-profile` and want to see what a page said in the past — returns archived `social-profile` snapshots and deleted/changed content over time.",
+    "url": "https://web.archive.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering deleted, edited, or vanished web pages and profiles by viewing their historical snapshots.",
+    "selectorsIn": [
+      "domain",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account (donation-funded Internet Archive). Saving a page also free. No paywall.",
+    "opsec": "passive",
+    "opsecNote": "Reading archived snapshots does not touch the target's live site — the request goes to the Internet Archive, so the target is not alerted. Fully passive. Note that if you \"Save Page Now\" a live URL, that fetch DOES hit the live site and creates a public, permanent archive record — do that deliberately, not by reflex.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Internet Archive, a long-established nonprofit. Snapshots are authentic captures with timestamps; the standard, court-cited source for web history.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-history-and-website-capture"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-org",
       "internet-archive",
+      "web-archive-org",
+      "web-archive-org-2",
+      "wayback-machine-2",
       "internet-archive-open-source-videos",
       "internet-archive-videos",
       "parler-archives",
       "snitch-list",
       "the-twitter-stream-grab",
-      "tv-closed-caption-search",
-      "wayback-machine-2",
-      "web-archive-org",
-      "web-archive-org-2"
+      "tv-closed-caption-search"
     ],
+    "aliases": [
+      "web.archive.org",
+      "Internet Archive Wayback Machine",
+      "archive.org web"
+    ],
+    "tags": [
+      "web-history-and-website-capture"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/wayback-machine.md"
   },
   {
@@ -29177,48 +29190,6 @@
     "_file": "library/tools/communities-forums/global-television-canada.md"
   },
   {
-    "id": "google-com-10",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aukbusinessforums.co.uk&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-10.md"
-  },
-  {
     "id": "google-com-12",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -34641,7 +34612,8 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "relatedTools": [
-      "plenty-of-fish-com"
+      "plenty-of-fish-com",
+      "plentyoffish-online-dating"
     ],
     "_file": "library/tools/communities-forums/plentyoffish.md"
   },
@@ -38276,42 +38248,48 @@
   },
   {
     "id": "the-independent-news-united-kingdom",
-    "name": "The Independent News (United Kingdom)",
-    "description": "Searchable website for a major newspaper covering national and local events in the United Kingdom",
-    "url": "http://www.independent.co.uk",
+    "name": "The Independent (UK news)",
+    "description": "Use when you have a `name` linked to the UK or a nationally covered event and want reporting — returns `associate`, `employer-org` and event context from published articles.",
+    "url": "https://www.independent.co.uk",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding UK national news coverage of a person, company, court case, or event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Mostly free to read (ad-supported) with a metered \"Independent Premium\" upsell on some pieces. Search and most articles are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news site transmits nothing about your subject. Fully passive; a private window avoids personalisation cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major UK national news brand; reliable secondary source, with the usual journalistic caveats and a now digital-only, high-volume publishing model.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The Independent",
+      "independent.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/the-independent-news-united-kingdom.md"
   },
   {
@@ -39341,44 +39319,53 @@
   },
   {
     "id": "ukbusinessforums-co-uk",
-    "name": "ukbusinessforums.co.uk",
-    "description": "OSINT tool: ukbusinessforums.co.uk.",
+    "name": "UK Business Forums (UKBF)",
+    "description": "Use when you have a `username` or `name` of a UK small-business owner and want their forum footprint — returns the linked `social-profile`, `employer-org` and disclosed business detail.",
     "url": "https://www.ukbusinessforums.co.uk/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling UK small-business owners and sole traders through their posts on a large business community.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read and search all public posts; membership upgrade (paid) adds a featured directory listing and extras. Reading requires no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching public posts is passive and does not alert the member. Members often name their own businesses/websites in signatures and posts. Do not register or post from a real identity; use a sock puppet if you need account features.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-running (since 2003) UK small-business community with 250k+ members. User-generated content — claims are unverified, but self-linked business names/sites are strong pivots.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UKBF",
+      "UK Business Forums",
+      "ukbusinessforums.co.uk"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "business"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ukbusinessforums-co-uk.md"
   },
   {
@@ -49389,7 +49376,8 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "plentyoffish"
+      "plentyoffish",
+      "plentyoffish-online-dating"
     ],
     "aliases": [
       "POF",
@@ -49444,7 +49432,9 @@
     "localInstall": false,
     "registration": true,
     "relatedTools": [
-      "forums-plentyoffish-com"
+      "forums-plentyoffish-com",
+      "plenty-of-fish-com",
+      "plentyoffish"
     ],
     "aliases": [
       "Plenty of Fish",
@@ -141530,45 +141520,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/image-raider-2.md"
-  },
-  {
-    "id": "image-search-assistant",
-    "name": "Image Search Assistant",
-    "description": "searches for a picture, screenshot or fragment of a screenshot in several search engines and stores at once",
-    "url": "https://chrome.google.com/webstore/detail/image-search-assistant/kldhhobmmejaeaiilomaibhjlcfpceac/related",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/image-search-assistant.md"
   },
   {
     "id": "image-so-search",
@@ -257993,48 +257944,52 @@
   },
   {
     "id": "samhsa",
-    "name": "SAMHSA",
-    "description": "Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing national data on drug and alcohol use and abuse patterns in the US",
-    "url": "http://www.samhsa.gov/data/",
+    "name": "SAMHSA (data & treatment locator)",
+    "description": "Use when you have a `geolocation` and want US behavioral-health context — returns treatment-facility `address` listings by area plus national substance-use/mental-health statistics.",
+    "url": "https://www.samhsa.gov/data/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregate US substance-use / mental-health data and locating treatment facilities in an area (facility addresses, not patient records).",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US-government data and locator; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading published government data and searching a public facility locator transmits nothing about any individual, and returns facility (not patient) information. Fully passive. Patient/treatment records are confidential (42 CFR Part 2 / HIPAA) and are NOT available here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party US government agency (SAMHSA, part of HHS). Authoritative for national behavioral-health statistics and the official treatment-facility directory.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Substance Abuse and Mental Health Services Administration",
+      "FindTreatment.gov",
+      "samhsa.gov"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "academic-scholarly-research-tools"
+      "academic-scholarly-research-tools",
+      "public-health"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/samhsa.md"
   },
   {
@@ -284900,41 +284855,51 @@
   {
     "id": "home-co-uk",
     "name": "Home.co.uk",
-    "description": "Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Scotland and Northern Ireland",
-    "url": "http://www.home.co.uk",
+    "description": "Use when you have a UK `address` or postcode and want property and price history — returns sold-price `address` records, listings and area context (30+ years of data).",
+    "url": "https://www.home.co.uk",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "UK property intelligence — sold prices, current/past listings, and area market data by address or postcode.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search for buyers/renters/researchers; agents list for free. No account needed for property and sold-price search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a property portal transmits your query to Home.co.uk but nothing to any person; the occupant/owner is not notified. Fully passive. Use a VPN if you want the search off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established UK property portal aggregating agent listings and Land Registry sold-price data. Listing data is agent-supplied; sold prices derive from Land Registry (authoritative), area stats are the portal's own analysis.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Home.co.uk",
+      "home.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "property"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/home-co-uk.md"
   },
   {
@@ -335104,48 +335069,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/regvk-com.md"
-  },
-  {
-    "id": "removetweets",
-    "name": "removeTweets",
-    "description": "In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with this tool.",
-    "url": "https://twitter-tools.rootonline.de/removeTweets",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "twitch-stream-filter",
-      "twitch-tools",
-      "twitch-tools-rootonline-de"
-    ],
-    "_file": "library/tools/social-networks/removetweets.md"
   },
   {
     "id": "renren-com",
