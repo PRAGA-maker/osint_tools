@@ -106,7 +106,6 @@ kind: group-index
 - **`google-custom-search-2`** (high) — Use when you have a `name`/`username`/`email` and want to search a curated slice of the web (a pre-built Custom Search Engine) rather than a
 - **`government-electronic-directory-services-canada`** (high) — Use when you have a `name` and think the person is a Canadian federal public servant — returns their title, department, work phone/email and
 - **`gravatar`** (high) — Use when you have an `email` (or its MD5 hash) or a Gravatar `username` and want the linked public avatar and profile — returns a profile ph
-- **`haro`** (medium) — OSINT tool: HARO.
 - **`hauziz`** (high) — Use when you have an `address` (or a `name`) and want the residents/owner tied to a US property plus pivot links into paid brokers — returns
 - **`hey-press`** (high) — Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a

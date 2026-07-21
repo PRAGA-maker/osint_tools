@@ -137,14 +137,12 @@ kind: group-index
 - **`google-com-14`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
-- **`google-com-25`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
 - **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-com-39`** (medium) — OSINT tool: google.com.
-- **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
@@ -199,7 +197,7 @@ kind: group-index
 - **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`movabletype`** (medium) — Website related to social networking and blogging
-- **`mumsnet-com`** (medium) — OSINT tool: mumsnet.com.
+- **`mumsnet-com`** (medium) — Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, p
 - **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
 - **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
@@ -214,7 +212,7 @@ kind: group-index
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`new-paste`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text — returns paste content that 
-- **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
+- **`new-york-post`** (medium) — Use when you have a `name` linked to New York or a tabloid-worthy event and want fast, name-heavy coverage — returns `associate`, `address` 
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
 - **`newspapermap`** (medium) — Use when you have a `geolocation` (a place a subject is tied to) and want the local newspapers covering it — returns links to those papers (
 - **`ning`** (low) — Use when you have a niche community or interest and want member-built social networks on the Ning platform — returns community sites, member
@@ -334,7 +332,7 @@ kind: group-index
 - **`the-province-news`** (medium) — Use when you have a `name` or `address` tied to British Columbia and want local news coverage — returns `associate`, `employer-org` and even
 - **`the-silph-road`** (low) — Pokemon GO community travelers' card/profile directory; lets you look up a player's public Silph card by username. Referenced in sinwindie's
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
-- **`theaustralian-national-news`** (medium) — Searchable website for a major newspaper covering national and local events in Australia
+- **`theaustralian-national-news`** (medium) — Use when you have a `name` or `employer-org` linked to Australia and want national coverage — returns `associate`, `employer-org` and event 
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
 - **`thepaperboy`** (medium) — Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to searc
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex

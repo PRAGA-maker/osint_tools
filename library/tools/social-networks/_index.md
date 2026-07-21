@@ -629,7 +629,6 @@ kind: group-index
 - **`tumblr-search`** (medium) — Use when you have a `username`, `name` or keyword and want related Tumblr blogs and posts — returns social-profile and username leads.
 - **`tumblr-tool`** (low) — Use when you have a Tumblr tag/term and want to harvest posts tagged with it plus their co-tag network — returns a tabular post dump and a G
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
-- **`tweeplers`** (medium) — OSINT tool: Tweeplers.
 - **`tweet-archive-search`** (high) — Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile
 - **`tweet-beaver-friends-following`** (low) — Use when you have two Twitter/X `username`s and want to see the accounts they both follow or that follow both — returns the overlapping `soc
 - **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ

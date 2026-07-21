@@ -170,7 +170,7 @@ kind: group-index
 - **`lostplace-atlas`** (medium) — Google map of lost places in Germany and other Europe countries
 - **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
 - **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Use when you have a `geolocation` and want the bedrock geology at that spot — returns rock type/formation/age to corroborate or narrow a loc
-- **`map-army`** (medium) — Online tool for creating schemes of battles and military operations on the map. Extensive customization possibilities and a huge library of 
+- **`map-army`** (low) — Use when you have `geolocation` data and want to annotate it with standardized military/tactical symbology — returns an annotated `geolocati
 - **`map-fight`** (medium) — Use when you have two areas (countries, regions or cities) as `geolocation` and want to compare their true relative size by overlaying them 
 - **`map-maker`** (high) — Use when you need free forward/reverse geocoding or a quick custom map from an address — returns lat/lon coordinates (maps.co geocoding).
 - **`map-view-ngmdb`** (medium) — Use when you have a US `geolocation` and want authoritative geologic and historical topographic maps of that spot — returns map imagery and 

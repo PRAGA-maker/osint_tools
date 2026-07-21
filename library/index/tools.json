@@ -29381,48 +29381,6 @@
     "_file": "library/tools/communities-forums/google-com-24.md"
   },
   {
-    "id": "google-com-25",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Afrg.org.uk/ParentsForum/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-25.md"
-  },
-  {
     "id": "google-com-29",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -29673,48 +29631,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-39.md"
-  },
-  {
-    "id": "google-com-6",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Acommunity.screwfix.com%2Fforums%2F+OR+site%3Acommunity.screwfix.com%2Fthreads%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-6.md"
   },
   {
     "id": "google-com-9",
@@ -32264,14 +32180,14 @@
   },
   {
     "id": "mumsnet-com",
-    "name": "mumsnet.com",
-    "description": "OSINT tool: mumsnet.com.",
+    "name": "Mumsnet (Talk forum)",
+    "description": "Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, post history and self-disclosed detail.",
     "url": "https://www.mumsnet.com/Talk",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a username against a huge, candid UK community and mining a member's public posts for disclosed personal detail.",
     "selectorsIn": [
       "username"
     ],
@@ -32279,29 +32195,36 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search all public threads; an account is only needed to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading/searching public threads is passive and does not alert the member. Mumsnet posters are often very candid under pseudonyms — never register or post from a real identity; use a sock puppet if you need to search while logged in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-running UK community forum. User-generated content — post claims are unverified, but the handle, timeline, and disclosed details are genuine artefacts worth correlating.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mumsnet",
+      "mumsnet.com",
+      "Mumsnet Talk"
+    ],
     "tags": [
       "forums",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/mumsnet-com.md"
   },
   {
@@ -32996,41 +32919,46 @@
   {
     "id": "new-york-post",
     "name": "New York Post",
-    "description": "Searchable website for a major newspaper covering national and local events in the United States",
-    "url": "http://nypost.com",
+    "description": "Use when you have a `name` linked to New York or a tabloid-worthy event and want fast, name-heavy coverage — returns `associate`, `address` and event context from published articles.",
+    "url": "https://nypost.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding NYC-area and national tabloid coverage that names people, neighborhoods and case details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported, no hard paywall on most articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news site transmits nothing about your subject. Fully passive; a private window avoids personalisation cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running US tabloid daily (News Corp). Reports quickly and names people/locations freely, but is sensational — treat specifics as leads to verify against primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NY Post",
+      "nypost.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/new-york-post.md"
   },
   {
@@ -38596,42 +38524,48 @@
   },
   {
     "id": "theaustralian-national-news",
-    "name": "TheAustralian National News",
-    "description": "Searchable website for a major newspaper covering national and local events in Australia",
-    "url": "http://www.theaustralian.com.au",
+    "name": "The Australian (national news)",
+    "description": "Use when you have a `name` or `employer-org` linked to Australia and want national coverage — returns `associate`, `employer-org` and event context from published articles.",
+    "url": "https://www.theaustralian.com.au",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding Australian national news coverage of a person, company, or case.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A hard subscription paywall — a limited number of free articles, then subscription required. Search, headlines and standfirsts are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news site leaks nothing about your subject. The paywall sets cookies and prompts sign-up; use a private window and decline. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Australia's main national broadsheet (News Corp Australia); an established paper of record, subject to its known editorial slant. Reliable secondary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The Australian",
+      "theaustralian.com.au"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/theaustralian-national-news.md"
   },
   {
@@ -46106,47 +46040,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dating-classifieds/anonib-to.md"
-  },
-  {
-    "id": "ashley-madison",
-    "name": "Ashley Madison",
-    "description": "OSINT tool: Ashley Madison.",
-    "url": "https://www.ashleymadison.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "dating"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/ashley-madison.md"
   },
   {
     "id": "autotrader-classified-ads-united-kingdom",
@@ -123302,42 +123195,48 @@
   {
     "id": "map-army",
     "name": "Map.Army",
-    "description": "Online tool for creating schemes of battles and military operations on the map. Extensive customization possibilities and a huge library of symbols.",
+    "description": "Use when you have `geolocation` data and want to annotate it with standardized military/tactical symbology — returns an annotated `geolocation` map for conflict/incident analysis.",
     "url": "https://www.map.army/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Annotating maps with NATO/APP-6 military symbols to reconstruct or communicate battles, movements and incidents.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier lets you draw and use the symbol library in-browser; advanced features / larger projects and saving may require a paid account.",
+    "opsec": "passive",
+    "opsecNote": "A drawing/annotation tool — you plot coordinates you already have; it does not query any target and reveals nothing about a person. Anything you save to a shared/public project, however, is exposed — keep sensitive work in private/local projects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A specialist commercial web app for military map symbology; reliable as a drawing surface, but it produces your interpretation of a scene, not sourced data.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Map Army",
+      "map.army"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Military visualisation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/map-army.md"
   },
   {
@@ -135361,42 +135260,52 @@
   },
   {
     "id": "deepfake-detect",
-    "name": "DeepFake-Detect",
-    "description": "Research-grade deepfake detection model experimentation",
+    "name": "DeepFake-Detection (Dessa)",
+    "description": "Use when you have an `image`/video and want to experiment with ML-based deepfake detection — returns a real/fake `image` classification score (research codebase, not a turnkey tool).",
     "url": "https://github.com/dessa-oss/DeepFake-Detection",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "deepfake-detection"
     ],
-    "bestFor": "Research-grade deepfake detection model experimentation",
-    "input": "Image or video files",
-    "output": "Real/fake classification scores",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "A self-hosted research codebase for training and testing deepfake-detection models on face videos.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (Apache/MIT-style). No fees, but requires a GPU machine, datasets, and Docker to run — cost is in compute and setup, not licensing.",
     "opsec": "passive",
-    "opsecNote": "Local/open-source workflow can run fully offline when self-hosted.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "opsecNote": "Runs entirely on your own hardware — media you analyse never leaves your machine, so it is fully offline and leaks nothing. Ideal when you must not upload a sensitive image to a third-party detector.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Open-source research project by Dessa (2020), now unmaintained. Its own README concludes the models do NOT generalise well to real-world manipulations — treat outputs as experimental, not authoritative.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DeepFake-Detect",
+      "Dessa deepfake detection"
+    ],
+    "tags": [
+      "deepfake-detection",
+      "ml"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deepfake-detection/deepfake-detect.md"
   },
   {
@@ -199347,42 +199256,6 @@
       "gravatar-email-checker"
     ],
     "_file": "library/tools/people-search/gravatar.md"
-  },
-  {
-    "id": "haro",
-    "name": "HARO",
-    "description": "OSINT tool: HARO.",
-    "url": "http://www.helpareporter.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/haro.md"
   },
   {
     "id": "hauziz",
@@ -343897,48 +343770,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/twdown-net.md"
-  },
-  {
-    "id": "tweeplers",
-    "name": "Tweeplers",
-    "description": "OSINT tool: Tweeplers.",
-    "url": "https://www.tweeplers.com/map",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweeplers.md"
   },
   {
     "id": "tweepsect",

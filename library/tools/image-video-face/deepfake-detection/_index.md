@@ -7,7 +7,7 @@ kind: group-index
 # image-video-face/deepfake-detection
 
 ## Skills here
-- **`deepfake-detect`** (medium) — Research-grade deepfake detection model experimentation
+- **`deepfake-detect`** (low) — Use when you have an `image`/video and want to experiment with ML-based deepfake detection — returns a real/fake `image` classification scor
 - **`deepfakebench`** (medium) — Comparing deepfake detector performance across common benchmarks
 - **`deepfakedetector`** (medium) — Use when you have an `image` or video and want a quick real/fake classification — returns a binary verdict with a confidence score, runnable
 - **`deepsafe`** (medium) — Use when you have an `image`, video, or audio clip and want to test whether it is AI-generated/manipulated — returns per-model real/fake ver
