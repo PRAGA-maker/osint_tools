@@ -563,7 +563,7 @@ kind: group-index
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
 - **`local-directories-search-australia`** (medium) — Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with 
-- **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
+- **`local-government-gis-beacon`** (medium) — Use when you have an `address` or owner `name` in a US county that uses Beacon and want the parcel record — returns property owner `name`, m
 - **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
 - **`louisiana-registered-voter-verification`** (medium) — Use when you have a `name` (+ `dob`) and want to confirm Louisiana voter registration and locate the person by parish — returns registration
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an

@@ -261,7 +261,7 @@ kind: group-index
 - **`shademap`** (medium) — Use when you have a `geolocation` and an image with shadows and want to verify or find the time — simulates terrain/building/tree shadows fo
 - **`shadow-finder`** (medium) — Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where t
 - **`shadowmap`** (medium) — Use when you have a `geolocation`/`address` and a candidate date-time and want the sun position and building shadows in 3D — returns shadow 
-- **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
+- **`site24x7-com`** (medium) — Use when you have a Unix/epoch timestamp (from `metadata-exif`, logs, or a filename) and want the human-readable date/time in any timezone —
 - **`skydb`** (low) — Use when you have an `image`/`geolocation` clue featuring a tall building and want to identify it — returns building height, city, year, dev
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
 - **`smappen`** (medium) — Use when you have a `geolocation` (a last-known point) and want to bound where a person could have travelled in a given time by foot/car/bik

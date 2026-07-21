@@ -547,7 +547,6 @@ kind: group-index
 - **`spaces-down`** (medium) — Use when you have an X/Twitter Spaces link or a host `username` and want the audio for review — returns a downloadable MP3 recording of the 
 - **`speak-subtitles-to-youtube`** (medium) — Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works 
 - **`spotify-downloader`** (low) — Use when you have a subject's public Spotify playlist/profile `social-profile` and want to archive its track metadata and audio — returns a 
-- **`spotlight`** (medium) — OSINT tool: Spotlight.
 - **`sssthreads-pro`** (high) — Use when you have a Threads (Meta) post URL or `username` and want to view/download its public media — but the service is now permanently cl
 - **`ssstik-io`** (medium) — Use when you have a TikTok video URL/`social-profile` and want to save it (watermark-free) without login — returns the downloaded video `ima
 - **`ssstwitter-com`** (high) — Use when you have a tweet/X `social-profile` URL and want to download its video/media for offline analysis and archiving — returns the media
@@ -627,13 +626,13 @@ kind: group-index
 - **`tweet-beaver-friends-following`** (low) — Use when you have two Twitter/X `username`s and want to see the accounts they both follow or that follow both — returns the overlapping `soc
 - **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ
 - **`tweet-finder`** (high) — Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com lin
-- **`tweet-machine`** (medium) — Simple #bash script which retrieves links to the deleted (and other) tweets and replies of any Twitter user from WayBackMachine.
+- **`tweet-machine`** (medium) — Use when you have a Twitter/X `username` and want to recover their deleted or otherwise-gone tweets and replies from the Wayback Machine — r
 - **`tweet-topic-explorer`** (high) — Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and f
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
 - **`twemex`** (medium) — Use when you're reading X/Twitter and want a research sidebar — returns quick access to a user's best tweets, quotes of a post, and your own
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
-- **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
+- **`twiiter-trending-archive`** (medium) — Use when you have a date, place, or keyword and want to know what was trending on Twitter/X — returns historical trending topics by day and 
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
 - **`twipho`** (medium) — Use when you have a `username`, hashtag, or keyword and want image-rich Twitter/X posts — returns photo-bearing posts and the accounts that 
 - **`twish`** (low) — Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorisi

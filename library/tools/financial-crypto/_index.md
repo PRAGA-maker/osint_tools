@@ -100,7 +100,6 @@ kind: group-index
 - **`osint-assassin`** (low) — Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot 
 - **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
 - **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
-- **`palatine-co-uk`** (medium) — OSINT tool: palatine.co.uk.
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — OSINT tool: radixdlt.com.
 - **`reddit-com`** (medium) — OSINT tool: reddit.com.

@@ -12,7 +12,7 @@ kind: group-index
 - **`ftp-search/`** — 1 skill(s) below.
 - **`general-search/`** — 15 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
-- **`news-search/`** — 12 skill(s) below.
+- **`news-search/`** — 11 skill(s) below.
 - **`other-search/`** — 1 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
@@ -840,7 +840,6 @@ kind: group-index
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
-- **`zoek-search-engine`** (medium) — Netherlands based search engine covering regional results
 - **`zoo-search`** (medium) — OSINT tool: Zoo Search.
 - **`zoomeye`** (medium) — Use when you have a `domain`/`ip-address` and want exposed-host, service and banner intel — returns ip-address, domain and device-id.
 - **`zorexeye`** (medium) — OSINT tool: ZorexEye.
