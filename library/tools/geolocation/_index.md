@@ -304,7 +304,7 @@ kind: group-index
 - **`ventusky-com`** (medium) — Use when you have a `geolocation` and a date/time and want to know the weather then — returns historical and forecast wind, rain, temperatur
 - **`viamichelin`** (medium) — Use when you need driving routes, distances, ETAs, and toll/fuel cost estimates between two places to test whether a journey or timeline is 
 - **`view-in-google-earth`** (medium) — Use when you have coordinates or a map view and want to open them in Google Earth (via a generated KML link) for 3D/historical-imagery inspe
-- **`virtual-globe-trotting`** (medium) — Add latitude and longitude to the URL to see the nearby : Unusual and funny images from Google Street View; Interesting parts of the satelli
+- **`virtual-globe-trotting`** (medium) — Use when you have `geolocation` coordinates or a landmark/celebrity-home lead and want a labelled satellite/Street View catalogue — returns 
 - **`wayback-imagery`** (high) — Use when you need to see how a location's satellite imagery looked on specific past dates — to detect change, date a structure, or match an 
 - **`waze-livemap`** (high) — Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — retu
 - **`webcam-live`** (low) — OSINT tool: WEBCAM LIVE.

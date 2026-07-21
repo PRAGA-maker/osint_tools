@@ -300,7 +300,7 @@ kind: group-index
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across
 - **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co
 - **`google-com-85`** (high) — Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels)
-- **`google-com-hack-attack`** (medium) — OSINT tool: \*.Google.com Hack Attack.
+- **`google-com-hack-attack`** (medium) — Use when you have a `domain`/target and want a ready-made dorking surface — a Google Custom Search Engine pre-tuned to surface exposed files
 - **`google-cse-instances-search-engine`** (medium) — Use when you have a `name`/`username`/`domain` and want to search a curated OSINT-focused Google Programmable Search Engine that queries onl
 - **`google-custom-search`** (medium) — Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Go
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
@@ -352,7 +352,6 @@ kind: group-index
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
 - **`indeed-job-search-engine-canada`** (low) — Use when you have an `employer-org` or a person's trade/role in Canada and want employment context — returns job postings that reveal locati
 - **`indeed-job-search-engine-worldwide`** (low) — Use when you have an `employer-org`, role, or location and want job-market context — returns job postings that reveal employers, locations, 
-- **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
 - **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia
 - **`insecac`** (medium) — Worlds biggest online cameras directory
@@ -511,7 +510,7 @@ kind: group-index
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
 - **`octosearch-dootech-com`** (medium) — Use when you want to search GitHub repositories starred by people you follow — a personal discovery tool over your own GitHub network's cura
 - **`od-search-tool`** (medium) — Use when you have a filename, `name` or keyword and want files sitting in exposed open web directories — returns direct links to publicly li
-- **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
+- **`odbparser`** (medium) — Use when you have a `name`/`email`/keyword and want to find it inside exposed public databases — returns leaked PII (`email`, `phone`, `addr
 - **`odin`** (medium) — Use when you have an `ip-address` or `domain` and want its exposed hosts/services — returns open ports, services, banners, and certificate/h
 - **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
 - **`oh-shint-osint-web-resources`** (medium) — Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real 

@@ -751,7 +751,7 @@ kind: group-index
 - **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
 - **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
 - **`police-complaint-lookup`** (low) — Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved of
-- **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
+- **`police-protest-videos`** (medium) — Use when you have a US `geolocation`/date around the 2020 protests and want documented incident footage — returns geolocated videos of polic
 - **`police-surveillance-in-chicago`** (medium) — Use when you need to understand what surveillance technology Chicago police deploy (for counter-surveillance/context) — returns an education
 - **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —
 - **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
@@ -940,7 +940,7 @@ kind: group-index
 - **`trading-economics`** (low) — OSINT tool: Trading Economics.
 - **`transparency-org-corruption-perception-index`** (low) — OSINT tool: Transparency.org Corruption Perception Index.
 - **`trellis`** (medium) — Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics
-- **`trinka`** (medium) — A partly free online tool to help you prepare a research paper for publication: AI Grammar; Checker (made especially for scientific papers);
+- **`trinka`** (medium) — Use when you have two texts/documents and want authorship, plagiarism or consistency signals — returns grammar/style/plagiarism analysis to 
 - **`trouver-une-d-cision`** (medium) — OSINT tool: Trouver une décision.
 - **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re
 - **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.

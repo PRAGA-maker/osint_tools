@@ -101,7 +101,7 @@ kind: group-index
 - **`vefsafn-is`** (medium) — Use when you have an Icelandic `domain` or URL and want historical snapshots of it — returns archived captures of .is / Iceland-related web 
 - **`versionista`** (low) — OSINT tool: versionista.
 - **`view-page-archive-addons-mozilla-org`** (medium) — Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style sn
-- **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
+- **`vislibri`** (medium) — Use when a lead is a rare/old/second-hand book or document and you want to locate a copy and its sellers — returns marketplace listings (`ad
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
 - **`wayback-archive`** (medium) — Use when you have a Wayback Machine snapshot `domain`/URL and want to download it as a fully working offline copy — returns a local, self-co
 - **`wayback-google-analytics`** (medium) — Use when you have a `domain` and want to link it to other sites via shared current/historical Google Analytics or AdSense IDs — returns rela
