@@ -145,7 +145,7 @@ kind: group-index
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
 - **`citizendium`** (medium) — Use when you have a `name` or topic and want an expert-authored encyclopedia entry as a Wikipedia cross-check — returns articles with contri
 - **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
-- **`citysearch`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`citysearch`** (medium) — Use when you have a business `name` or `employer-org` and a `geolocation` and want its listing details — returns `address`, `phone`, and a `
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
 - **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
 - **`clearing-and-depository-services`** (low) — Use when you need Canadian securities-market infrastructure info (participant lists, ISIN issuance, regulatory notices) — mostly institution
@@ -158,7 +158,7 @@ kind: group-index
 - **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
-- **`comicvine`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
 - **`command-e`** (medium) — Universal search and productivity app
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
 - **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
@@ -325,7 +325,7 @@ kind: group-index
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
-- **`grayhatwarfare`** (medium) — OSINT tool: GrayhatWarfare.
+- **`grayhatwarfare`** (medium) — Use when you have a `name`, `email`, or `domain` and want to find files a target accidentally exposed in misconfigured public cloud buckets 
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
 - **`grey-literature-strategies`** (low) — OSINT tool: Grey Literature Strategies.
@@ -692,7 +692,6 @@ kind: group-index
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — OSINT tool: Springer.
 - **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
-- **`stacksearch`** (medium) — OSINT tool: Stacksearch.
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
 - **`startpagina-search-netherlands`** (low) — Use when you have a `name` or keyword tied to the Netherlands and want Dutch-focused web results and directory links — returns `social-profi
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice

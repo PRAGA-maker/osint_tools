@@ -219,7 +219,7 @@ kind: group-index
 - **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r
 - **`githubrecon`** (medium) — Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (in
 - **`githut`** (low) — GitHub statistics and programming language visualizations.
-- **`gitleak`** (medium) — OSINT tool: GitLeak.
+- **`gitleak`** (medium) — Use when you have a GitHub `username` and want the email address(es) they used to author commits — returns `email` (and thereby a real-name 
 - **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo
 - **`gitstar-ranking`** (medium) — Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and th
 - **`gitvio`** (medium) — Use when you have a GitHub `username` and want a quick visual digest of that account's repos, languages and activity — returns an enriched `
@@ -307,7 +307,6 @@ kind: group-index
 - **`instaloader`** (high) — Use when you have an Instagram `username` and want to bulk-download their public posts, stories highlights, captions, and metadata — returns
 - **`instalooter-2`** (medium) — Use when you have an Instagram `username` and want to bulk-download a profile's media — returns saved `image`s (with any EXIF/`geolocation`)
 - **`instalooter`** (high) — Use when you have a public Instagram `username`, hashtag, or location and want to bulk-download its media without login or the API — returns
-- **`instanavigation`** (medium) — Anonymous Instagram story viewing.
 - **`instatracker`** (medium) — Use when you have an Instagram `username` and want to monitor it over time — returns a timestamped log of changes to followers, following, p
 - **`insto`** (high) — Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersection
 - **`intel-sw-com`** (high) — Use when you have a `name` or `employer-org` and want to find someone's Facebook profile and mutual connections via advanced Graph-style ope
@@ -486,7 +485,7 @@ kind: group-index
 - **`rooms-of-clubhouse`** (low) — OSINT tool: Rooms of Clubhouse.
 - **`ruby`** (medium) — Simple tool for searching videos by keyword in Rumble, BitChute, YouTube and saving results (author, title, link) to CSV file.
 - **`rumble-com`** (high) — Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel p
-- **`savettok`** (medium) — Download TikTok videos (incl. without watermark) for evidence/frame analysis.
+- **`savettok`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want a clean, watermark-free copy for frame-by-frame or reverse-image analysis —
 - **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci
 - **`search-for-a-twitch-channel`** (low) — OSINT tool: Search for a Twitch channel.
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
@@ -643,7 +642,7 @@ kind: group-index
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
 - **`twitch-followage-tool`** (medium) — Use when you have a Twitch `username` and want the full list of channels that account follows, with follow dates — returns `social-profile` 
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.
-- **`twitch-insights`** (medium) — Account stats; Game ranking; Extensions stats; List of all Twitch bot; Check user status by nickname or ID; List of Twitch team (history bef
+- **`twitch-insights`** (medium) — Use when you have a Twitch `username` (or numeric ID) and want to confirm the account exists, when it was created, and whether it is a known
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
 - **`twitch-payout-search`** (low) — OSINT tool: Twitch Payout Search.
 - **`twitch-recover`** (medium) — Use when you have a Twitch channel `username` (or stream ID/timestamp) and want to recover deleted, sub-only or unlisted VODs, clips and str

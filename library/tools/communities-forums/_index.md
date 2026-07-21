@@ -121,7 +121,7 @@ kind: group-index
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`frg-org-uk`** (medium) — OSINT tool: frg.org.uk.
-- **`friendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — OSINT tool: Friendpaste.
 - **`geek-com`** (medium) — Online articles and news related to science, technology, television, and movies
 - **`get-pocket-news-saving-app`** (medium) — Website offers article saving service, mostly on mobile devices, but also PC compatible
