@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7980 total · 4058 full · 3922 stub (50% enriched)
+**Tools:** 7978 total · 4068 full · 3910 stub (50% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3527 · medium: 2491 · high: 1962
+low: 3534 · medium: 2482 · high: 1962
 
 ## Tools by trust
-community: 3495 · unverified: 3097 · trusted: 1377 · untrustworthy: 6 · personal: 5
+community: 3496 · unverified: 3088 · trusted: 1383 · untrustworthy: 6 · personal: 5
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 8/455
 - `archives-cache` — 66/132
-- `communities-forums` — 147/386
+- `communities-forums` — 149/385
 - `dark-web` — 23/117
 - `dating-classifieds` — 54/106
 - `documents-metadata` — 29/314
 - `domains-ip-infrastructure` — 86/737
 - `email` — 244/246
 - `evidence-capture` — 8/31
-- `financial-crypto` — 40/124
-- `geolocation` — 258/346
-- `image-video-face` — 424/465
+- `financial-crypto` — 42/124
+- `geolocation` — 261/346
+- `image-video-face` — 425/464
 - `maps-geospatial-data` — 46/134
 - `messaging` — 170/189
 - `opsec-investigator-tooling` — 31/562
 - `people-search` — 247/261
 - `phone` — 134/137
-- `public-records` — 774/1082
+- `public-records` — 775/1082
 - `search-engines` — 372/900
-- `social-networks` — 678/816
+- `social-networks` — 679/816
 - `training-ctf` — 0/12
 - `translation-language` — 15/103
 - `transportation` — 102/221
@@ -47,8 +47,8 @@ community: 3495 · unverified: 3097 · trusted: 1377 · untrustworthy: 6 · pers
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 496 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 379 leaves
-- `library/tools/image-video-face` — 369 leaves
+- `library/tools/communities-forums` — 378 leaves
+- `library/tools/image-video-face` — 368 leaves
 - `library/tools/geolocation` — 331 leaves
 - `library/tools/documents-metadata` — 263 leaves
 - `library/tools/people-search` — 251 leaves

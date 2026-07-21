@@ -56,7 +56,7 @@ kind: group-index
 - **`coinwink-com`** (low) — OSINT tool: Coinwink.com.
 - **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
 - **`credit-osint`** (low) — A very simple #python tool to gather information about bank cards and validate them.
-- **`cryptocompare-com`** (medium) — OSINT tool: cryptocompare.com.
+- **`cryptocompare-com`** (low) — Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextu
 - **`cryptocurrency-alerting`** (low) — OSINT tool: Cryptocurrency Alerting.
 - **`cryptocurrency-search-tool`** (low) — OSINT tool: Cryptocurrency search tool.
 - **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
@@ -72,7 +72,7 @@ kind: group-index
 - **`ethtective-com`** (medium) — Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link 
 - **`eu-consolidated-corporate-registers`** (low) — Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.
 - **`eu-sanctions-map`** (low) — Database of sanctions imposed by the European Union and the United Nations
-- **`europa-eu`** (medium) — OSINT tool: europa.eu.
+- **`europa-eu`** (low) — Use when you are tracing a `crypto-wallet` in a criminal-finance context and want an authoritative methodology reference — returns Europol's
 - **`experian-co-uk`** (medium) — OSINT tool: experian.co.uk.
 - **`fdic-search`** (low) — Search banks by FDIC (Federal Deposit Insurance Corporation) certificate number and get detailed information about it
 - **`fingble-nftport`** (low) — One of the most accurate search engines for finding NFT by uploaded image. Works well with faces. Also it's possible to search by keyword or

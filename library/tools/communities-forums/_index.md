@@ -136,7 +136,6 @@ kind: group-index
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-14`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
-- **`google-com-22`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
 - **`google-com-25`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
@@ -240,7 +239,7 @@ kind: group-index
 - **`parship-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`passion-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
-- **`paste-in-ua`** (medium) — OSINT tool: paste.in.ua.
+- **`paste-in-ua`** (medium) — Use when you have a `username`, `email` or `domain` and want to check a Ukrainian/RU-language pastebin for dumped credentials, leaked lists 
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
 - **`paste-monster`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public markdown pastebin for dumped text — returns paste cont
 - **`paste-sh`** (medium) — OSINT tool: paste.sh.
@@ -345,7 +344,7 @@ kind: group-index
 - **`theverge-tech-news`** (medium) — Use when you have a `name`/`employer-org` in tech, startups, or gadgets and want coverage — returns articles, quotes, and role/company conte
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party
 - **`tilersforums-co-uk`** (medium) — OSINT tool: tilersforums.co.uk.
-- **`time-news`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
+- **`time-news`** (low) — Use when you have a `name` that may have drawn national/international press and want to search a major magazine's archive for coverage — ret
 - **`tinychat`** (medium) — Online video chat community
 - **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.

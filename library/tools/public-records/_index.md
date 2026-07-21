@@ -647,7 +647,7 @@ kind: group-index
 - **`new-jersey-voter-records`** (high) — Use when you have a `name` and want to confirm a New Jersey address, birth year, and party from voter-registration data — returns residentia
 - **`new-jersey`** (high) — Use when you have a `name` and want to check New Jersey state prison custody — returns inmate status, `document-id` (SBI/ID number), `dob`/a
 - **`new-mexico`** (high) — Use when you have a `name` (or offender number) and want to check whether someone is in New Mexico state custody or has absconded — returns 
-- **`new-york-public-library-search`** (medium) — Academic-related search engine for the New York Public Librarys compilation of articles and databases
+- **`new-york-public-library-search`** (medium) — Use when you have a `name` or `employer-org` and want to search premium newspaper, genealogy and business databases free via a public librar
 - **`new-york-state-prison-records`** (high) — Use when you have a `name` and want to search indexed historical New York State prison/inmate records — returns identity confirmation, dob/a
 - **`new-york-state-voter-records`** (high) — Use when you have a `name` in New York State and want their voter registration — returns address, dob, party and household associate voters.
 - **`new-york-state`** (high) — Use when you have a `name` or DIN and think the subject may be in New York State prison — returns custody status, facility `address`, `dob` 

@@ -201,7 +201,7 @@ kind: group-index
 - **`likefont-com`** (low) — Use when you have an `image` containing text and want to identify the typeface used — returns candidate font names, which help verify docume
 - **`lingolens`** (medium) — Use when you have an `image` and want to run Google Lens across many languages/countries at once (results vary by locale) — returns a combin
 - **`listen-notes`** (medium) — Use when you want to find a person, name or topic mentioned across podcasts — returns matching podcast episodes with show, date and audio.
-- **`live-beaches`** (medium) — Beaches webcam only
+- **`live-beaches`** (low) — Use when you have a coastal `image` or a beach `geolocation` and want a live webcam of that shoreline to corroborate location, weather or ti
 - **`livestream-aka-vimeo`** (high) — Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-
 - **`logobook`** (low) — Use when you have an `image` with an unknown logo/emblem and want to identify the company/brand by its visual form — returns candidate brand
 - **`lossless-cut`** (low) — Use when you have an `image`/video file and want to trim, split or inspect it without re-encoding — returns clipped segments and preserved `
@@ -209,7 +209,6 @@ kind: group-index
 - **`lykdat-com`** (medium) — Use when you have an `image` showing clothing and want to identify the garments and find visually matching retail products — returns clothin
 - **`lyrics-net`** (low) — Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — return
 - **`mangolinkworld`** (low) — Use when you have a `geolocation` and want a live view of it — returns links to public live webcams for cities, beaches, ports, and landmark
-- **`maps-video`** (medium) — Google street view alternative. Online YouTube video driving map for different routes. Worldwide, but most videos in the USA and Europe.
 - **`maxar`** (low) — Use when you have a `geolocation` and want to see what high-resolution satellite imagery exists over it and when — returns dated `image` cap
 - **`media-io-watermark-remover`** (medium) — Use when you have an `image` (or video) with a watermark/overlay obscuring detail and want it cleaned — returns a de-watermarked image for d
 - **`metadata-viewer`** (high) — Use when you have an `image` (file or URL) and want its embedded EXIF — returns GPS `geolocation`, camera/device `metadata-exif` and creatio

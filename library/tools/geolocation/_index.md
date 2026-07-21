@@ -102,7 +102,7 @@ kind: group-index
 - **`geoinfer`** (medium) — Use cautiously — listed as a geolocation tool but the site returns 404 and capabilities are unconfirmed; treat as unverified.
 - **`geoint-py`** (low) — Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/pr
 - **`geoint-search`** (medium) — Use when you have a place name/`geolocation` clue and want to search a curated set of geospatial/OSINT sources at once — returns geolocation
-- **`geoint`** (medium) — OSINT tool: GEOINT.
+- **`geoint`** (medium) — Use when you have an `image` or `geolocation` to place and want a curated hub of geolocation/GEOINT tools and datasets in one board — return
 - **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
 - **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
 - **`geoplatform-portal`** (low) — Use when you have a `geolocation` or `address` and want authoritative U.S. federal geospatial layers — returns geolocation context (boundari
@@ -115,7 +115,7 @@ kind: group-index
 - **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
 - **`global-terriorism-database`** (medium) — Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors,
-- **`global-wetlands-map`** (medium) — Interactive map of open waters, mangroves, swamps, fens, riverines, floodswamps, marshs, wet meadows and floodplains (unfortunately, there a
+- **`global-wetlands-map`** (low) — Use when you have a `geolocation` or an outdoor `image` of watery terrain and want to test whether a spot is wetland/peatland — returns wetl
 - **`globalfishingmap`** (low) — Use when you have a `geolocation` or vessel and want maritime activity there — returns fishing effort, vessel tracks, and identities from Gl
 - **`gmaps-extractor`** (low) — Use when you have a place/area and business type on Google Maps and want the listings in bulk — returns extracted business names, addresses,
 - **`google-earth-overlays`** (medium) — Use when you want to layer external map grids, charts, or KML/KMZ data over Google Earth imagery for cross-referencing a location.
@@ -205,7 +205,7 @@ kind: group-index
 - **`nest-cam-directory`** (low) — OSINT tool: Nest Cam Directory.
 - **`nexrad-data-inventory-search`** (medium) — Use when you need to prove or check the weather at a US place and time — pull archived NWS Doppler radar for chronolocation and timeline cor
 - **`nga-geoint`** (low) — Use when you need open-source geospatial libraries/datasets (GeoServer plugins, geodata tools) from the US National Geospatial-Intelligence 
-- **`ngdc-bathymetry-map`** (medium) — worldwide detailed interactive bathymetry map
+- **`ngdc-bathymetry-map`** (low) — Use when you have a marine/coastal `geolocation` or a water-scene `image` and want seafloor depth and coastal relief to test plausibility — 
 - **`nyc-crime-map`** (high) — Use when you have a New York City `address` or `geolocation` and want the local crime picture — returns mapped NYPD crime incidents by area,
 - **`ocearch-shark-tracker`** (low) — Use when you want a worked example of live animal-telemetry mapping (tagged sharks/marine animals) — returns per-animal tracks; essentially 
 - **`old-maps-online`** (high) — Use when you have a `geolocation` or place `address` and want historical maps of that spot across time — returns historical map imagery and 
