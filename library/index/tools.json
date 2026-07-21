@@ -23648,42 +23648,54 @@
   },
   {
     "id": "a-small-world",
-    "name": "A Small World",
-    "description": "Private luxury travel community",
+    "name": "ASMALLWORLD",
+    "description": "Use when you have a `name`/`username` for an affluent-travel subject and want to check for a members-club profile — returns a `social-profile` and event/travel activity (requires joining).",
     "url": "https://www.asmallworld.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a subject holds a profile in the ASMALLWORLD luxury-travel members community and reading their public-to-members activity.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free account tier exists; the core \"membership\" (events, full benefits) is a paid annual club. You must register to see member content.",
+    "opsec": "active",
+    "opsecNote": "To search members you must create an account and log in, so your presence and searches happen from that identity — use a fully built-out sock-puppet, never a personal account, and expect that a niche community may notice odd behaviour. Viewing a member's profile may be visible to them depending on settings.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, established members-only travel network; profiles are self-created by members, so identity and travel claims are self-reported and need corroboration.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ASW",
+      "asmallworld.com",
+      "A Small World"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "online-communities-blogs"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/a-small-world.md"
   },
   {
@@ -30164,29 +30176,36 @@
   {
     "id": "ircp",
     "name": "IRCP",
-    "description": "IRC server enumeration and protocol-level reconnaissance",
+    "description": "Use when you have an IRC server/network scope and want to enumerate its channels and users — returns `username`/`social-profile` and channel metadata to map who is on a network.",
     "url": "https://github.com/internet-relay-chat/IRCP",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "irc-search"
     ],
-    "bestFor": "IRC server enumeration and protocol-level reconnaissance",
-    "input": "Target ranges, IRC ports, and server parameters",
-    "output": "Server and channel metadata in machine-readable output",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Large-scale enumeration of IRC servers — listing channels and harvesting nick/user data across a network.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source Python tool; no cost.",
     "opsec": "active",
-    "opsecNote": "Actively connects to IRC services and may be detectable by network monitoring and server logs.",
+    "opsecNote": "ACTIVE and noisy. IRCP connects directly to target IRC servers, issues VERSION/INFO/LIST and joins channels to WHOIS users — this is visible in server logs and to operators/monitoring, and can get your IP/host banned. Use dedicated research infrastructure (never a personal IP), and honour the tool's opt-out list for administrators who decline scanning.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source IRC reconnaissance tool with an active commit history; it collects live protocol data, so results are current but self-reported by the servers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -30194,11 +30213,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IRC Protocol",
+      "internet-relay-chat/IRCP"
+    ],
+    "tags": [
+      "irc",
+      "enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/irc-search/ircp.md"
   },
   {
@@ -45675,84 +45700,53 @@
     "_file": "library/tools/dating-classifieds/adultfriendfinder.md"
   },
   {
-    "id": "anonib-to",
-    "name": "anonib.to",
-    "description": "OSINT tool: anonib.to.",
-    "url": "https://anonib.to/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/anonib-to.md"
-  },
-  {
     "id": "autotrader-classified-ads-united-kingdom",
-    "name": "Autotrader Classified Ads (United Kingdom)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "name": "Auto Trader (United Kingdom)",
+    "description": "Use when you have a UK `vehicle-plate` or a car for sale and want vehicle/seller detail — returns basic vehicle-check data and, from listings, seller location and contact.",
     "url": "http://www.autotrader.co.uk",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Searching the UK's largest used-vehicle marketplace and running a free basic reg-plate vehicle check.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search listings and to run the basic vehicle check (make/model/year/MOT basics). Full history/valuation reports and selling adverts are paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings and the basic reg check are passive — you query Auto Trader, not the seller. Contacting a seller (phone/message form) is an active step that reveals your interest and, if you call, your number; use a research line and a pretext plan before making contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Auto Trader is the UK's established, publicly listed vehicle marketplace; listing and basic vehicle-check data are reliable, though private-seller ad details are self-reported.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "autotrader.co.uk",
+      "AutoTrader UK"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "vehicle"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/autotrader-classified-ads-united-kingdom.md"
   },
   {
@@ -131906,41 +131900,49 @@
   },
   {
     "id": "aperislove",
-    "name": "Aperislove",
-    "description": "Online steganography tool: PngCheck,Strings,Foremost,Binwalk,ExifTool,Outguess,Steghide,Zsteg,Blue/Green/Red/Superimposed",
+    "name": "Aperi'Solve",
+    "description": "Use when you have an `image` and want to pull hidden data and embedded metadata — returns `metadata-exif` (EXIF/GPS) plus any steganographic payloads for further leads.",
     "url": "https://www.aperisolve.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot layered analysis of an image — EXIF/metadata plus a full steganography sweep (zsteg, steghide, outguess, binwalk, foremost, strings).",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web service (currently v3.4.2); no account required. Also self-hostable via Docker if you prefer not to upload.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — you analyse a file you already hold, nothing is sent to the image's origin. BUT you are uploading the target's image to a third-party server, which may retain it; for sensitive material use the self-hosted/Docker build or offline exiftool/binwalk instead. Never upload evidence you are not authorised to disclose.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known open-source image-forensics front-end (Aperi'Solve) wrapping standard, trusted CLI tools; results reflect those underlying tools' output.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exiftool"
+    ],
     "tags": [
       "Image Search and Identification",
       "Image Analyze"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/aperislove.md"
   },
   {
@@ -159869,44 +159871,51 @@
   },
   {
     "id": "somerandomstuff1-wordpress-com",
-    "name": "somerandomstuff1.wordpress.com",
-    "description": "OSINT tool: somerandomstuff1.wordpress.com.",
+    "name": "The Digital Labyrinth — GeoGuessr Techniques",
+    "description": "Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markings, poles and signage to narrow a location.",
     "url": "https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "A detailed reference guide to visual geolocation clues (driving side, plates, bollards, road numbers, signage) for pinning down where a photo was taken.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "image",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog post; no account.",
+    "opsec": "passive",
+    "opsecNote": "A reading resource — you learn a technique, you don't query anything about a subject. Nothing leaks. OpSec only applies to whatever tool (Street View, maps) you then use to apply the method.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A hobbyist GeoGuessr guide; the clue heuristics are broadly sound and widely used in the geolocation community, but it is informal reference, not authoritative — always confirm a placement against imagery.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Digital Labyrinth GeoGuessr guide",
+      "GeoGuessr tips tricks techniques"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/somerandomstuff1-wordpress-com.md"
   },
   {
@@ -160416,35 +160425,49 @@
   {
     "id": "us-labor-strike-map",
     "name": "US Labor Strike Map",
-    "description": "OSINT tool: US Labor Strike Map.",
+    "description": "Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an event or a subject's whereabouts.",
     "url": "https://www.google.com/maps/d/viewer?mid=1hE1nDR-Ff_sVgOS67IteJSxGZlvqIP3k",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A crowd-curated Google My Map plotting US labor strikes and actions by location, employer and date for situational context.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to view (a public Google My Map); a Google account is only needed to save/copy it, not to browse.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public map you read — no target interaction and nothing leaked about a subject. Viewing is anonymous; you are looking at aggregated event pins, not querying anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A user-maintained Google My Map, not an official labor-statistics source; pins are crowd-curated and may be incomplete or dated — corroborate specific actions against news/union sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Labor strike tracker map"
+    ],
+    "tags": [
+      "maps",
+      "labor",
+      "context"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/us-labor-strike-map.md"
   },
   {
@@ -199996,47 +200019,6 @@
     "_file": "library/tools/people-search/jobsite-uk.md"
   },
   {
-    "id": "jobster-job-posts-resumes",
-    "name": "Jobster (Job Posts / Resumes)",
-    "description": "OSINT tool: Jobster (Job Posts / Resumes).",
-    "url": "http://www.jobster.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professional"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/jobster-job-posts-resumes.md"
-  },
-  {
     "id": "karus",
     "name": "karus",
     "description": "Use when you have a gaming/dev `username` (Roblox, Steam, Minecraft, GitHub) and want to pull profile data across those platforms from one web UI — returns `social-profile`, `email`, `associate`.",
@@ -202176,13 +202158,13 @@
   {
     "id": "osint-san",
     "name": "OSINT-SAN",
-    "description": "Framework for rapid information discovery and user deanonymization.",
+    "description": "Use when you have an `ip-address`, `phone`, `username` or `name` and want a multi-module recon sweep — returns `geolocation`, `social-profile` and infrastructure leads across bundled tools.",
     "url": "https://github.com/Bafomet666/OSINT-SAN",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Multi-module deanonymization (IP, phone, social, geolocation)",
+    "bestFor": "Running many OSINT modules (IP/Shodan, phone, social, geolocation) from one Python framework.",
     "selectorsIn": [
       "ip-address",
       "phone",
@@ -202195,15 +202177,18 @@
       "ip-address",
       "phone"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free (a paid PRO variant exists). The free framework needs several third-party API keys (Shodan, ZoomEye, numverify, VirusTotal, whatcms). The README notes some GitHub-tool modules are no longer maintained.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "MIXED and partly AGGRESSIVE. Passive modules (Shodan/ZoomEye/numverify lookups) query third parties about a selector. But OSINT-SAN also ships IP-logger/\"grabber\" modules that generate a link you send to the target so their browser leaks IP/geo — that is intrusive, interacts directly with the subject, and may be unlawful without consent. Use ONLY the passive lookup modules for casework; never deploy the grabber/deanon-by-link modules against a person without explicit legal authorisation. Run from research infrastructure with burner API keys.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community deanonymization framework (604 stars); some modules use grabber/IP-logger techniques (active).",
+    "trustNote": "Community deanonymization framework (600+ stars); useful as a launcher for standard APIs, but it bundles intrusive grabber techniques and some modules are unmaintained — treat outputs as leads, not proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -202223,8 +202208,8 @@
       "phone"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/people-search/osint-san.md"
   },
   {
@@ -220345,41 +220330,42 @@
   {
     "id": "canadian-business-research",
     "name": "Canadian Business Research",
-    "description": "OSINT tool: Canadian Business Research.",
+    "description": "Use when you have a Canadian company or business `name` and want the official research gateway — returns links to federal corporation search, financial benchmarks and industry data (`employer-org`, `address`).",
     "url": "https://www.canada.ca/en/services/business/research.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "The Government of Canada's hub page linking corporate registry, financial-performance and market-research tools for researching a Canadian business.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Government of Canada portal; the tools it links (Corporations Canada search, Statistics Canada data) are free.",
+    "opsec": "passive",
+    "opsecNote": "A public government gateway — you read reference links and, from them, query official registries about a company, not a person. No subject-side footprint and no login for the public tools; browsing is anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Canada (canada.ca) page linking authoritative federal registries and Statistics Canada; the downstream data is primary-source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "federal-corporation-search-canada",
       "canadian-department-of-finance",
       "completed-access-to-information-requests",
-      "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-intellectual-property-office",
@@ -220387,6 +220373,16 @@
       "canadian-importers-database",
       "canadian-copyrights-database"
     ],
+    "aliases": [
+      "Canada.ca business research",
+      "Government of Canada business research"
+    ],
+    "tags": [
+      "company-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canadian-business-research.md"
   },
   {
@@ -270168,24 +270164,29 @@
   {
     "id": "airlines-inform",
     "name": "Airlines Inform",
-    "description": "Aviation-related website that offers a search of the global database of airlines and airports",
+    "description": "Use when you have an airline, airport or aircraft-type reference and want to decode it — returns airline/fleet/airport details (`employer-org` context) to interpret aviation leads.",
     "url": "http://www.airlines-inform.com/commercial-aircraft",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reference lookups on airlines, airports and commercial aircraft types to contextualise aviation-related leads.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free aviation reference site supported by ads; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public reference encyclopaedia — you look up airlines/aircraft/airports, not people or live flights. No target interaction and no subject-alerting; browse normally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing aviation reference portal; useful for airline/aircraft/airport facts, but it is a hobby/commercial reference, not an authoritative aviation registry — confirm critical facts against official aviation authorities.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -270194,15 +270195,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "airlines-inform.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/airlines-inform.md"
   },
   {
@@ -275663,7 +275666,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
     "trustNote": "The Coalition Against Insurance Fraud is an established national alliance of 300+ insurers, regulators and consumer groups; its bureau directory and statistics are authoritative reference.",
-    "missingPersonsRelevance": "low",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
     ],
@@ -293160,24 +293163,25 @@
   {
     "id": "oh-shint-osint-web-resources",
     "name": "OH SHINT! OSINT Web Resources",
-    "description": "GitBook of OSINT web resources and methodology.",
+    "description": "Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real estate, etc.) to pick your next lookup.",
     "url": "https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/introduction-to-osint-web-resources",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Methodology-rich walkthrough of web resources by topic",
+    "bestFor": "A maintained, topic-organised catalogue of OSINT tools to discover the right resource for a given selector/case type.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public GitBook; downloadable as PDF and importable HTML bookmarks, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reading resource — you browse a tool catalogue, so there is no target interaction and nothing to leak. OpSec only matters once you leave here and run the tools it lists; apply each of those tools' own precautions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community GitBook (OH SHINT!).",
+    "trustNote": "A single practitioner-maintained GitBook (OH SHINT!); it points to third-party tools, so vet each linked resource independently before relying on it.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -293186,18 +293190,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "data-sets-oh-shint"
+    ],
+    "aliases": [
+      "OH SHINT",
+      "ohshint gitbook"
+    ],
     "tags": [
       "tool-collection",
       "gitbook",
       "methodology"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "data-sets-oh-shint"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/oh-shint-osint-web-resources.md"
   },
   {

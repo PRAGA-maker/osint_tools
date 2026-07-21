@@ -42,7 +42,7 @@ kind: group-index
 - **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
-- **`airlines-inform`** (medium) — Aviation-related website that offers a search of the global database of airlines and airports
+- **`airlines-inform`** (medium) — Use when you have an airline, airport or aircraft-type reference and want to decode it — returns airline/fleet/airport details (`employer-or
 - **`alabama-medical-license-search`** (low) — Use when you have a physician's `name` and want to verify Alabama licensure — returns license number, status, issue/expiry, medical school, 
 - **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
 - **`all-in-one`** (low) — OSINT tool: All-in-One.
@@ -155,7 +155,7 @@ kind: group-index
 - **`cloudflare-radar`** (low) — Use when you have a `domain` or `ip-address` and want internet-intelligence on it — returns domain rankings, traffic/AS data, URL-scan resul
 - **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
 - **`cnn`** (low) — OSINT tool: CNN.
-- **`coalition-against-insurance-fraud`** (low) — Use when you have a subject/lead tied to possible insurance fraud and want the right reporting/lookup channel — returns a directory of US st
+- **`coalition-against-insurance-fraud`** (medium) — Use when you have a subject/lead tied to possible insurance fraud and want the right reporting/lookup channel — returns a directory of US st
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
 - **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
@@ -514,7 +514,7 @@ kind: group-index
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
 - **`odin`** (medium) — Use when you have an `ip-address` or `domain` and want its exposed hosts/services — returns open ports, services, banners, and certificate/h
 - **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
-- **`oh-shint-osint-web-resources`** (medium) — GitBook of OSINT web resources and methodology.
+- **`oh-shint-osint-web-resources`** (medium) — Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real 
 - **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
 - **`one-liner-osint`** (low) — Collection of powerful one-liner commands for OSINT gathering.

@@ -16,7 +16,7 @@ kind: group-index
 - **`4chan-search`** (medium) — Use when you have a `username`, phrase, or image tied to 4chan and want to search across boards and archives for posts — returns matching th
 - **`4chan`** (low) — Use when a subject or image may surface on 4chan and you want to find/preserve posts — returns anonymous threads and images (best searched v
 - **`51-com-china`** (medium) — Web game platform based in China
-- **`a-small-world`** (medium) — Private luxury travel community
+- **`a-small-world`** (medium) — Use when you have a `name`/`username` for an affluent-travel subject and want to check for a members-club profile — returns a `social-profil
 - **`abc-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search

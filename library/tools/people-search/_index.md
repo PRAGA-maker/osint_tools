@@ -125,7 +125,6 @@ kind: group-index
 - **`ioa`** (high) — Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — 
 - **`jobs-poland`** (medium) — Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locati
 - **`jobsite-uk`** (low) — Use when you have a `name` or `employer-org` and want UK job-market context — returns job listings and, for logged-in recruiters, candidate 
-- **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
 - **`karus`** (medium) — Use when you have a gaming/dev `username` (Roblox, Steam, Minecraft, GitHub) and want to pull profile data across those platforms from one w
 - **`knowem-username-search`** (high) — Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/avai
 - **`kompass`** (high) — Use when you have a company `employer-org` or a business `name` and want firmographics and business contacts — returns company address, phon
@@ -163,7 +162,7 @@ kind: group-index
 - **`ofac-specially-designated-nationals-search-united-states`** (high) — Use when you have a `name` and want to check the US Treasury sanctions/SDN list — returns match with aliases, `address`es, `dob`, and linked
 - **`officialusa-usa-official`** (medium) — Use when you have a US `name` and want a free directory-style lookup — returns associated `address`es, `phone`s, and possible relatives/`ass
 - **`one-charliebrassington`** (high) — Use when you have an `email`, `username`, `name` or UK postcode and want a Python CLI that scrapes multiple people-search and account source
-- **`osint-san`** (medium) — Framework for rapid information discovery and user deanonymization.
+- **`osint-san`** (medium) — Use when you have an `ip-address`, `phone`, `username` or `name` and want a multi-module recon sweep — returns `geolocation`, `social-profil
 - **`osint-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to search a curated set of people/OSINT sites at once — a prebuilt Google Custom 
 - **`osint-toolkit-ayxkaddd`** (medium) — Web interface providing access to various OSINT tools and resources.
 - **`osrframework-2`** (high) — Use when you have a `username`, `email`, `phone`, or full `name` and want to enumerate accounts and profiles across many platforms from the 

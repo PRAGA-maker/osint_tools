@@ -19,7 +19,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: The Coalition Against Insurance Fraud is an established national alliance of 300+ insurers, regulators and consumer groups; its bureau directory and statistics are authoritative reference.
-missingPersonsRelevance: low
+missingPersonsRelevance: medium
 coverage:
 - us
 auth: none
@@ -78,7 +78,7 @@ You have a lead that touches suspected insurance fraud (staged accidents, fake c
 | selectorsIn → selectorsOut | — → — |
 | pricing / cost | free |
 | trust | trusted |
-| MP relevance | low |
+| MP relevance | medium |
 | interaction | web-manual |
 | opsec | passive |
 | human-in-loop | no |

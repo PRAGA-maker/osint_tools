@@ -2,37 +2,37 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7878 total · 4300 full · 3578 stub (54% enriched)
+**Tools:** 7876 total · 4310 full · 3566 stub (54% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3612 · medium: 2303 · high: 1963
+low: 3611 · medium: 2302 · high: 1963
 
 ## Tools by trust
-community: 3514 · unverified: 2914 · trusted: 1440 · untrustworthy: 6 · personal: 4
+community: 3518 · unverified: 2906 · trusted: 1442 · untrustworthy: 6 · personal: 4
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 10/455
 - `archives-cache` — 74/129
-- `communities-forums` — 189/365
+- `communities-forums` — 191/365
 - `dark-web` — 27/116
-- `dating-classifieds` — 63/104
+- `dating-classifieds` — 64/103
 - `documents-metadata` — 33/313
 - `domains-ip-infrastructure` — 93/730
 - `email` — 244/246
 - `evidence-capture` — 8/31
 - `financial-crypto` — 45/120
 - `geolocation` — 276/345
-- `image-video-face` — 433/461
-- `maps-geospatial-data` — 53/131
+- `image-video-face` — 434/461
+- `maps-geospatial-data` — 55/131
 - `messaging` — 175/188
 - `opsec-investigator-tooling` — 36/558
-- `people-search` — 251/260
+- `people-search` — 252/259
 - `phone` — 134/137
-- `public-records` — 807/1073
-- `search-engines` — 419/882
+- `public-records` — 808/1073
+- `search-engines` — 421/882
 - `social-networks` — 704/796
 - `training-ctf` — 3/12
 - `translation-language` — 15/103
@@ -51,15 +51,15 @@ community: 3514 · unverified: 2914 · trusted: 1440 · untrustworthy: 6 · pers
 - `library/tools/communities-forums` — 360 leaves
 - `library/tools/geolocation` — 330 leaves
 - `library/tools/documents-metadata` — 263 leaves
-- `library/tools/people-search` — 250 leaves
+- `library/tools/people-search` — 249 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 201 leaves
 - `library/tools/messaging` — 173 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 131 leaves
 - `library/tools/archives-cache` — 114 leaves
-- `library/tools/dating-classifieds` — 106 leaves
 - `library/tools/dark-web` — 105 leaves
+- `library/tools/dating-classifieds` — 105 leaves
 - `library/tools/financial-crypto` — 102 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves

@@ -7,7 +7,7 @@ kind: group-index
 # communities-forums/irc-search
 
 ## Skills here
-- **`ircp`** (medium) — IRC server enumeration and protocol-level reconnaissance
+- **`ircp`** (medium) — Use when you have an IRC server/network scope and want to enumerate its channels and users — returns `username`/`social-profile` and channel
 - **`ircsnapshot`** (medium) — Use when you have an IRC server/network and want its structure — returns channels, users, and user↔channel relationships as a graph.
 - **`netsplit-de`** (medium) — Use when you have a topic, keyword, or channel name and want to find the IRC communities that discuss it — returns channel names, networks, 
 

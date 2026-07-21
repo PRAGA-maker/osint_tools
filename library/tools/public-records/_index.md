@@ -134,7 +134,7 @@ kind: group-index
 - **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
 - **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
 - **`canada-gazette`** (medium) — Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appo
-- **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
+- **`canadian-business-research`** (medium) — Use when you have a Canadian company or business `name` and want the official research gateway — returns links to federal corporation search
 - **`canadian-copyrights-database`** (medium) — Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and da
 - **`canadian-importers-database`** (medium) — Use when you have a product/commodity or place and want to find Canadian companies importing it — returns importer `employer-org` names by p
 - **`canadian-industrial-designs-database`** (medium) — Use when you have a name or company and want registered Canadian industrial designs they own — returns proprietor name and address plus link

@@ -110,7 +110,7 @@ kind: group-index
 - **`rammb-slider`** (low) — Real-time weather satellites of the entire globe
 - **`resource-watch`** (low) — A free open-data platform that hosts 300+ datasets on different topics relating to the environment and human well-being, including real-time
 - **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow
-- **`somerandomstuff1-wordpress-com`** (medium) — OSINT tool: somerandomstuff1.wordpress.com.
+- **`somerandomstuff1-wordpress-com`** (medium) — Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markin
 - **`species-plus`** (low) — Centralized website with vulnerable species information.
 - **`strava`** (low) — Social media fitness app with exercise map based on users' GPS data.
 - **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
@@ -123,7 +123,7 @@ kind: group-index
 - **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.
 - **`ukraine-war-map-heatmap`** (medium) — OSINT tool: Ukraine War Map/Heatmap.
 - **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
-- **`us-labor-strike-map`** (medium) — OSINT tool: US Labor Strike Map.
+- **`us-labor-strike-map`** (medium) — Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an eve
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
 - **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
 - **`virtualvacation-us`** (low) — Use when you want to train street-level geolocation skills — a free GeoGuessr-style game (City Guesser) that drops you into a random locatio
