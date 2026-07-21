@@ -55,7 +55,6 @@ kind: group-index
 - **`876-solutions-jamaica`** (medium) — Jamaican service provider for registering websites and domain addresses
 - **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
-- **`account-arin-net`** (medium) — OSINT tool: account.arin.net.
 - **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of

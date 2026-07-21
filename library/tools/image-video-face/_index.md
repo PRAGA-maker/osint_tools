@@ -227,7 +227,7 @@ kind: group-index
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
 - **`openi-nlm-nih-gov`** (low) — Use when you have a scientific/medical `image` and want its source paper — returns matching figures from open-access biomedical literature v
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
-- **`osint-essentials`** (medium) — Verification-focused tool and resource site for journalists/researchers.
+- **`osint-essentials`** (medium) — Use when you have an `image`, `geolocation`, `name`, or `username` and need a curated jump-off list of vetted verification/geolocation/peopl
 - **`pbs-search`** (low) — Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and menti
 - **`perceptual-image-analysis`** (medium) — Use when you have an `image` and want quick in-browser forensic checks for manipulation — returns Error Level Analysis, PCA, and `metadata-e
 - **`peteyvid-com`** (high) — Use when you have a `name`, `username` or keyword and want to find videos of the subject across non-YouTube platforms — returns social-profi

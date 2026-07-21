@@ -434,7 +434,6 @@ kind: group-index
 - **`publer-io-3`** (high) — Use when you have a `social-profile` (a Threads post/profile URL) and want to archive its video/media before it is deleted — returns the dow
 - **`publer-io`** (high) — Use when you have an Instagram `username`/post URL and want to download public media or gauge audience authenticity without logging in — ret
 - **`pullpush`** (high) — Use when you have a Reddit `username`, subreddit or keyword and want to search historical Reddit comments/submissions Reddit's own search bu
-- **`pushshift-api-guide`** (medium) — OSINT tool: Pushshift API Guide.
 - **`pushshift-api`** (high) — Use when you want archived Reddit posts/comments (including deleted ones) — historically a full Reddit archive, now restricted to Reddit mod
 - **`quickvid-net`** (high) — Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` f
 - **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
@@ -545,7 +544,7 @@ kind: group-index
 - **`sourcinglab-pinterest-search`** (low) — Pinterest search for pins, boards and users.
 - **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
 - **`spaces-down`** (medium) — Use when you have an X/Twitter Spaces link or a host `username` and want the audio for review — returns a downloadable MP3 recording of the 
-- **`speak-subtitles-to-youtube`** (medium) — Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works 
+- **`speak-subtitles-to-youtube`** (low) — Use when you have a `social-profile` (a foreign-language YouTube video/channel of a subject) and need to understand its spoken content — a b
 - **`spotify-downloader`** (low) — Use when you have a subject's public Spotify playlist/profile `social-profile` and want to archive its track metadata and audio — returns a 
 - **`sssthreads-pro`** (high) — Use when you have a Threads (Meta) post URL or `username` and want to view/download its public media — but the service is now permanently cl
 - **`ssstik-io`** (medium) — Use when you have a TikTok video URL/`social-profile` and want to save it (watermark-free) without login — returns the downloaded video `ima
@@ -596,7 +595,7 @@ kind: group-index
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
 - **`tiktok-scraper`** (medium) — Use when you have a TikTok `username`, hashtag, or music/trend and want to collect its posts and metadata in bulk — returns video posts plus
-- **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
+- **`tiktok-search-engine`** (medium) — Use when you have a `username` or `name` and want to find a subject's TikTok profile/videos without logging into TikTok — returns social-pro
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
 - **`tiktok-user-search`** (medium) — Use when you have a `username` (or a creator's display name / hashtag) and want to browse a TikTok profile, its videos, follower counts and 
 - **`tiktok-video-downloader-chromewebstore-google-com`** (low) — Use when you have a subject's TikTok video/profile and want to save the clip (no watermark) for offline analysis and evidence preservation —
@@ -706,7 +705,6 @@ kind: group-index
 - **`weibo-com`** (high) — Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos 
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
 - **`wikimedia-cloud-page-views`** (medium) — Use when you have a `name` or topic with a Wikipedia article and want its traffic over time — returns daily/monthly pageview counts you can 
-- **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
 - **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t
 - **`wikiwho`** (medium) — Use when you have an `employer-org` and want anonymous Wikipedia edits made from its IP ranges — returns the org's edit history and the page

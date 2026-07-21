@@ -107,7 +107,6 @@ kind: group-index
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
 - **`food-network-canada`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`footballforums-net`** (medium) — Use when you have a `username` tied to football fandom and want their forum presence — returns their profile, posts and club allegiance, exp
-- **`forbes-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`fortune-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
@@ -184,7 +183,7 @@ kind: group-index
 - **`medium`** (low) — OSINT tool: Medium.
 - **`meetic-com-europe`** (medium) — Use when you have a `username`, `name` or photo and want to check for a Meetic dating profile in Europe — returns the linked `social-profile
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
-- **`metafilter`** (medium) — Communitu blogging website allowing anyone to contribute
+- **`metafilter`** (low) — Use when you have a `username` (or real `name`) and want to surface a long-running community member's post/comment history and interests — r
 - **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
 - **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
@@ -305,7 +304,7 @@ kind: group-index
 - **`svbtle`** (medium) — Website related to social networking and blogging
 - **`sympsons-screencaps-search`** (low) — OSINT tool: Sympsons screencaps search.
 - **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
-- **`tech-advisor-uk`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`tech-advisor-uk`** (low) — Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publicatio
 - **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techcrunch`** (low) — Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer
 - **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends

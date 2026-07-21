@@ -28086,50 +28086,6 @@
     "_file": "library/tools/communities-forums/footballforums-net.md"
   },
   {
-    "id": "forbes-magazine",
-    "name": "Forbes Magazine",
-    "description": "Searchable website for a worldwide major magazine with large readership and or global publishing",
-    "url": "https://www.forbes.com/#6f293ee82254",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "forbes-com",
-      "forbes-global-2000"
-    ],
-    "_file": "library/tools/communities-forums/forbes-magazine.md"
-  },
-  {
     "id": "fortune-magazine",
     "name": "Fortune Magazine",
     "description": "Searchable website for a worldwide major magazine with large readership and or global publishing",
@@ -31654,26 +31610,32 @@
   },
   {
     "id": "metafilter",
-    "name": "Metafilter",
-    "description": "Communitu blogging website allowing anyone to contribute",
+    "name": "MetaFilter",
+    "description": "Use when you have a `username` (or real `name`) and want to surface a long-running community member's post/comment history and interests — returns social-profile and associate/interest leads.",
     "url": "http://www.metafilter.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a MetaFilter member's full posting history and the sub-sites (Ask MetaFilter, Projects) they participate in.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Reading and searching are free. Posting requires a one-time $5 signup fee, but no payment is needed to research existing content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public member pages and threads leaks nothing to the subject. Do not create an account to interact with the target; if you must sign up to see anything gated, use a sock-puppet identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A well-established, moderated community weblog since 1999; user-generated content, so treat individual posts as self-reported and unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -31681,18 +31643,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ask-metafilter"
     ],
+    "aliases": [
+      "MeFi",
+      "MetaFilter Community Weblog"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "online-communities-blogs",
+      "forum"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/metafilter.md"
   },
   {
@@ -37377,25 +37343,30 @@
   {
     "id": "tech-advisor-uk",
     "name": "Tech Advisor (UK)",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
+    "description": "Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publication searchable for author pages and coverage.",
     "url": "https://www.techadvisor.co.uk",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating a UK tech writer's byline/author page and their published articles as background/corroboration.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public publication reveals nothing to any subject. Use a clean browser if you want the visit unlinked from your normal browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A mainstream consumer-technology publication (reviews/how-tos); editorial content is professionally produced, but it is a niche background source, not an investigative database.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -37403,15 +37374,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "techadvisor.co.uk",
+      "Tech Advisor"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/tech-advisor-uk.md"
   },
   {
@@ -44169,7 +44144,14 @@
       "r-opendirectories",
       "reddit-com",
       "reddit-deep-web",
-      "reddit-onions"
+      "reddit-onions",
+      "here",
+      "reddit",
+      "reddit-askmeanything",
+      "reddit-com-2",
+      "reddit-guide-to-opting-out-of-background-check-websites",
+      "reddit-old-reddit-search",
+      "reddit-r-translator"
     ],
     "aliases": [
       "r/darknet"
@@ -63953,54 +63935,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/about-rdap-org.md"
-  },
-  {
-    "id": "account-arin-net",
-    "name": "account.arin.net",
-    "description": "OSINT tool: account.arin.net.",
-    "url": "https://account.arin.net/public/secure/downloads",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "arin",
-      "arin-net",
-      "search-arin-net",
-      "whois-arin",
-      "whois-arin-online"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/account-arin-net.md"
   },
   {
     "id": "accuranker",
@@ -145761,27 +145695,33 @@
   {
     "id": "osint-essentials",
     "name": "OSINT Essentials",
-    "description": "Verification-focused tool and resource site for journalists/researchers.",
+    "description": "Use when you have an `image`, `geolocation`, `name`, or `username` and need a curated jump-off list of vetted verification/geolocation/people tools — returns pointers to social-profile and geolocation resources.",
     "url": "https://www.osintessentials.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Content verification, image/video, and geolocation tools",
+    "bestFor": "A curated, verification-focused directory of image/video, geolocation, social-media, and people-search tools for journalists and researchers.",
     "selectorsIn": [
       "image",
+      "geolocation",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
       "geolocation"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory; the linked tools are mostly free (some have optional paid tiers).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The directory itself is just reading a webpage — no target interaction. OpSec risk lives in the individual tools it links to; assess each one before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Long-running verification resource (First Draft lineage).",
+    "trustNote": "Long-running verification resource curated by Eoghan Sweeney (First Draft lineage); a hand-picked directory, not an automated scraper.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -145790,15 +145730,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "osintessentials.com",
+      "OSINT Essentials directory"
+    ],
     "tags": [
       "verification",
       "image",
-      "geolocation"
+      "geolocation",
+      "directory"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/osint-essentials.md"
   },
   {
@@ -221266,35 +221211,55 @@
   {
     "id": "capstat-nyc",
     "name": "CAPstat.nyc",
-    "description": "OSINT tool: CAPstat.nyc.",
+    "description": "Use when you have a `name` of a New York City police officer (or a lawsuit plaintiff) and want to find their command/precinct history and co-defendants — returns employer-org, associate, and case document-ids.",
     "url": "https://www.capstat.nyc/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Tying an NYPD officer's name to their command/precinct assignments and to the federal civil-rights lawsuits naming them.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database published by the Legal Aid Society; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit a third-party public site, not the subject. Nothing is sent to the person being researched. Searches may be logged by the host; use a clean browser/IP if you want to avoid linking the query to your normal browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by the Legal Aid Society's Cop Accountability Project (CAP) from filed federal court records; primary-source, not a scraped aggregator.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "CAPstat",
+      "Cop Accountability Project database",
+      "Law Enforcement Lookup",
+      "LELU"
+    ],
+    "tags": [
+      "police-accountability",
+      "court-records",
+      "nypd",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/capstat-nyc.md"
   },
   {
@@ -238233,35 +238198,52 @@
   {
     "id": "illinois-public-salaries",
     "name": "Illinois Public Salaries",
-    "description": "OSINT tool: Illinois Public Salaries.",
+    "description": "Use when you have a `name` and want to confirm public-sector employment and compensation in Illinois — returns employer-org (unit of government), job title, and salary/work history.",
     "url": "https://c0ctb111.caspio.com/dp/1a7210001e4dbabdb7204962bc03",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming that an Illinois public employee works for a specific government body and viewing their pay and title history.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free searchable database published by the Better Government Association; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit a third-party database, not the subject. Nothing is disclosed to the person being researched. Use a clean browser/IP if you want to keep the search unlinked from your normal browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled by the Better Government Association (BGA) with DataMade from open-records requests to 1,800+ Illinois government units; primary FOIA-sourced data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "BGA Salary Database",
+      "Illinois Public Salaries Database",
+      "salary.bettergov.org"
+    ],
+    "tags": [
+      "public-records",
+      "salary",
+      "government-employees",
+      "illinois"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/illinois-public-salaries.md"
   },
   {
@@ -256495,50 +256477,6 @@
       "poland"
     ],
     "_file": "library/tools/public-records/rejestr-sprawc-w-przest-pstw-na-tle-seksualnym.md"
-  },
-  {
-    "id": "related-list",
-    "name": "Related List",
-    "description": "find company-related contacts and confidential documents leaked online",
-    "url": "http://relateoak2hkvdty6ldp7x67hys7pzaeax3hwhidbqkjzva3223jpxqd.onion.pet/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Company information search"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepsearch",
-      "facebook-scraped-data-search",
-      "kilos-darknet-search-engine",
-      "raklet",
-      "ransomware-group-sites",
-      "recon"
-    ],
-    "_file": "library/tools/public-records/related-list.md"
   },
   {
     "id": "rental-in-canada",
@@ -286425,38 +286363,51 @@
   },
   {
     "id": "islegitsite",
-    "name": "Islegitsite",
-    "description": "OSINT tool: Islegitsite.",
+    "name": "IsLegitSite",
+    "description": "Use when you have a `domain` and want a quick trust/scam assessment of a website — returns reputation, blocklist status, and HTTPS/popularity signals about the domain.",
     "url": "https://www.islegitsite.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A fast first-pass legitimacy/scam check on a website domain a subject is linked to.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required.",
+    "opsec": "active",
+    "opsecNote": "Submitting a domain sends it to IsLegitSite's \"Site Trustworthiness API\", and their terms state submitted data is shared with security companies. Do NOT submit a domain that would itself reveal your investigation (e.g. a private or target-controlled host) unless you accept it may be logged/shared. Checking well-known public domains is low-risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party aggregator that composes reputation, blocklist, and popularity signals; its verdicts are heuristic, not authoritative, and it monetizes via ads/affiliates.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Is Legit Site",
+      "islegitsite.com"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "scam-check",
+      "website-reputation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/islegitsite.md"
   },
   {
@@ -294986,39 +294937,49 @@
   },
   {
     "id": "osint-open-source-projects",
-    "name": "Osint Open Source Projects",
-    "description": "OSINT tool: Osint Open Source Projects.",
+    "name": "OSINT Open Source Projects (Awesome Open Source)",
+    "description": "Use when you want to discover open-source OSINT tools/repos by topic — a browsable directory of GitHub projects tagged \"osint\" — returns pointers to tooling, not subject data.",
     "url": "https://awesomeopensource.com/projects/osint",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and comparing open-source OSINT projects/repositories by popularity within the \"osint\" topic.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Tooling discovery only — no target is queried. Reading the directory reveals nothing about your investigation. OpSec considerations belong to whatever tool you go on to install and run.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party aggregator that ranks GitHub projects by stars/topic; useful for discovery, but inclusion is automated and implies no vetting of any listed tool.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "awesome-open-source"
     ],
+    "aliases": [
+      "Awesome Open Source OSINT",
+      "awesomeopensource.com osint"
+    ],
+    "tags": [
+      "tool-directory",
+      "open-source",
+      "discovery"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-open-source-projects.md"
   },
   {
@@ -332584,40 +332545,6 @@
     "_file": "library/tools/social-networks/pushshift-api.md"
   },
   {
-    "id": "pushshift-api-guide",
-    "name": "Pushshift API Guide",
-    "description": "OSINT tool: Pushshift API Guide.",
-    "url": "https://github.com/pushshift/api",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/pushshift-api-guide.md"
-  },
-  {
     "id": "quickvid-net",
     "name": "quickvid.net",
     "description": "Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` files with `metadata-exif`.",
@@ -338539,39 +338466,50 @@
   },
   {
     "id": "speak-subtitles-to-youtube",
-    "name": "Speak subtitles to YouTube",
-    "description": "Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works with glitches, try different settings to get better results.",
-    "url": "https://chrome.google.com/webstore/detail/speak-subtitles-for-youtu/fjoiihoancoimepbgfcmopaciegpigpa/related",
+    "name": "Speak Subtitles for YouTube",
+    "description": "Use when you have a `social-profile` (a foreign-language YouTube video/channel of a subject) and need to understand its spoken content — a browser extension that reads YouTube subtitles aloud as AI speech in your language.",
+    "url": "https://chromewebstore.google.com/detail/speak-subtitles-for-youtu/fjoiihoancoimepbgfcmopaciegpigpa",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Making foreign-language YouTube videos of a subject reviewable by dubbing their subtitles into speech you understand.",
+    "selectorsIn": [
+      "social-profile"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to install and use; some voices/features rely on cloud TTS and may be gated or usage-limited.",
+    "opsec": "passive",
+    "opsecNote": "The extension sends subtitle text to Google/Microsoft cloud TTS services (and through the developer's extension) to synthesize speech. Nothing is sent to the video's owner and viewing a public video is passive, but be aware subtitle text leaves your machine to third-party TTS. Use a research-only browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party Chrome extension (400k+ users) not affiliated with YouTube; it has broad permissions and routes text through external TTS, so treat it as unverified and sandbox it.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Speak subtitles to YouTube",
+      "YouTube subtitle dubbing extension"
+    ],
     "tags": [
       "Social Media",
-      "YouTube"
+      "YouTube",
+      "browser-extension",
+      "translation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/speak-subtitles-to-youtube.md"
   },
   {
@@ -341696,36 +341634,52 @@
   },
   {
     "id": "tiktok-search-engine",
-    "name": "TIKTOK Search Engine",
-    "description": "OSINT tool: TIKTOK Search Engine.",
+    "name": "TikTok Search Engine (Google CSE)",
+    "description": "Use when you have a `username` or `name` and want to find a subject's TikTok profile/videos without logging into TikTok — returns social-profile links.",
     "url": "https://cse.google.com/cse?cx=011444696387487602669:aqf7d9w73om",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching TikTok content and profiles from outside the app via a Google Custom Search Engine scoped to tiktok.com.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs through Google, not TikTok — TikTok's app/API is not touched and the subject is not alerted. Google logs the query against your IP/session; use a clean browser if you want it unlinked. Clicking through to a TikTok URL is the point at which TikTok itself may log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine, not an official TikTok tool; results depend on the CSE's configuration and Google's index of tiktok.com, and may drift over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "TikTok CSE",
+      "TikTok custom search"
+    ],
+    "tags": [
+      "Social Media",
+      "TikTok",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok-search-engine.md"
   },
   {
@@ -348110,53 +348064,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/social-networks/wikimedia-cloud-page-views.md"
-  },
-  {
-    "id": "wikipedia-cross-lingual-image-analysis",
-    "name": "Wikipedia Cross-lingual Image Analysis",
-    "description": "A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept in one glance.",
-    "url": "https://tools.digitalmethods.net/beta/wikipediaCrosslingualImageAnalysis/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Wikipedia"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "google-autocomplete-scraper",
-      "internet-archive-wayback-machine-link-ripper",
-      "tools-digitalmethods-net",
-      "yotube-channel-search",
-      "youtube-comments-analyze",
-      "youtube-data-tools",
-      "ytdt-digitalmethods-net",
-      "ytdt-digitalmethods-net-2"
-    ],
-    "_file": "library/tools/social-networks/wikipedia-cross-lingual-image-analysis.md"
   },
   {
     "id": "wikistalk-analyze-wikipedia-user-s-activity",

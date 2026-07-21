@@ -368,7 +368,7 @@ kind: group-index
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
 - **`irbis-by-espy`** (medium) — Use when you have a `name`, `email`, `phone`, `username`, or `image` and want an aggregated digital-identity profile — returns linked social
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
-- **`islegitsite`** (medium) — OSINT tool: Islegitsite.
+- **`islegitsite`** (low) — Use when you have a `domain` and want a quick trust/scam assessment of a website — returns reputation, blocklist status, and HTTPS/popularit
 - **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n
 - **`itar-tass`** (low) — OSINT tool: Itar-Tass.
 - **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
@@ -550,7 +550,7 @@ kind: group-index
 - **`osint-investigation-coldvisionz`** (low) — Collection of useful OSINT tools.
 - **`osint-kit-buddhsen-tripathi`** (medium) — Use when you need to discover which tool fits an investigative task — a curated, categorised directory of OSINT tools returning pointers to 
 - **`osint-link`** (medium) — Use when you need to discover an OSINT tool for a task — returns a categorised directory of OSINT resources (search, social, geolocation, br
-- **`osint-open-source-projects`** (medium) — OSINT tool: Osint Open Source Projects.
+- **`osint-open-source-projects`** (low) — Use when you want to discover open-source OSINT tools/repos by topic — a browsable directory of GitHub projects tagged "osint" — returns poi
 - **`osint-sh-buckets`** (low) — Azure Public Buckets Search
 - **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe
 - **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate

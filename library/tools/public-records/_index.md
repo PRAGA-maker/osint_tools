@@ -147,7 +147,7 @@ kind: group-index
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
 - **`canlii-database`** (medium) — Use when you have a `name` and want Canadian court and tribunal records mentioning them — returns associate, address, employer-org, and dob 
 - **`canpages-search-canada`** (medium) — Use when you have a Canadian `name`, business, `phone`, or `address` and want directory details — returns business/residential listings, pho
-- **`capstat-nyc`** (medium) — OSINT tool: CAPstat.nyc.
+- **`capstat-nyc`** (medium) — Use when you have a `name` of a New York City police officer (or a lawsuit plaintiff) and want to find their command/precinct history and co
 - **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
 - **`catalogue-of-research-databases-occrp-id`** (low) — OSINT tool: Catalogue of Research Databases | OCCRP ID.
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
@@ -455,7 +455,7 @@ kind: group-index
 - **`identitynumber-org`** (high) — Use when you have a South African `name` or ID number (`document-id`) and want identity verification plus genealogy/death records — returns 
 - **`ifa-org-uk`** (high) — Use when you have an accountant's `name` and want to verify UK IFA membership/practising status — returns employer-org and address of the pr
 - **`illinois-inmate-search`** (medium) — Use when you have a `name`, DOB or IDOC number and want an Illinois prison custody record — returns custody status, facility location, dates
-- **`illinois-public-salaries`** (medium) — OSINT tool: Illinois Public Salaries.
+- **`illinois-public-salaries`** (medium) — Use when you have a `name` and want to confirm public-sector employment and compensation in Illinois — returns employer-org (unit of governm
 - **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
 - **`ilo-world-employment-and-social-outlook-trends`** (low) — OSINT tool: ILO World Employment and Social Outlook Trends.
 - **`ilostat`** (low) — OSINT tool: ILOSTAT.
@@ -794,7 +794,6 @@ kind: group-index
 - **`registrant-lookup`** (low) — OSINT tool: Registrant Lookup.
 - **`rehold`** (medium) — Use when you have a US `address` and want current/historical residents plus their phones — returns `name`, `phone`, `associate`, property de
 - **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
-- **`related-list`** (medium) — find company-related contacts and confidential documents leaked online
 - **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.
 - **`research-rabbit`** (medium) — Use when you have an academic's `name` or a known paper and want their body of work and collaborators — returns papers, co-authors (`associa
 - **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
