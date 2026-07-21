@@ -26,7 +26,7 @@ kind: group-index
 - **`black-market`** (low) — OSINT tool: Black Market.
 - **`blockpath-com`** (low) — OSINT tool: Blockpath.com.
 - **`browseriling`** (low) — OSINT tool: Browseriling.
-- **`canadian-numbering-administrator`** (medium) — Canadian Numbering Administrator site providing regulatory telecommunications information and listing assigned carrier codes
+- **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
 - **`centre-for-investigative-journalism`** (medium) — Resource and information website for investigative journalists
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return

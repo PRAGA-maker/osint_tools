@@ -73,7 +73,7 @@ kind: group-index
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
 - **`asian-development-bank`** (low) — Use when you have an `employer-org`, project, or contractor tied to development work in Asia-Pacific and want official project, procurement,
 - **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
-- **`ask-metafilter`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`ask-metafilter`** (low) — Use when you have a `username`, `name`, or niche question and want a long-lived Q&A community's answers — returns posts, member profiles, an
 - **`ask`** (low) — OSINT tool: Ask.
 - **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
 - **`atscan`** (medium) — OSINT tool: ATSCAN.
@@ -662,7 +662,6 @@ kind: group-index
 - **`searxng`** (low) — OSINT tool: SearXNG.
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social
 - **`seek-job-search-engine-new-zealand`** (medium) — Use when you have a `name` or `employer-org` and want a subject's NZ job/employment footprint — returns employer, role, and location leads f
-- **`sensebot`** (medium) — Provides a text summary for your search query instead of a collection of links to Web pages
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
 - **`seosly-com`** (medium) — Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working s
 - **`seqe-search-engines-query-engine`** (medium) — OSINT tool: SEQE - Search Engines Query Engine.
@@ -786,7 +785,7 @@ kind: group-index
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (low) — Use when you have a `name` or `username` tied to entertainment/fan communities and want crowdsourced wiki detail — returns biographical/fan-
 - **`wikibooks`** (medium) — Use when you have an author `name`/`username` or a subject-matter lead and want open textbooks/manuals and their contributor histories — ret
-- **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wikichristian`** (low) — Use when you have a `name` of a religious figure, denomination, or Christian topic and want a community encyclopedia entry — returns backgro
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile
 - **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 

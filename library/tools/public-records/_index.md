@@ -823,7 +823,7 @@ kind: group-index
 - **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu
 - **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
 - **`san-francisco-copwatch-database`** (medium) — Use when you have a `name` of an SF police/sheriff officer and want their public misconduct and disciplinary records — returns document IDs,
-- **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
+- **`scholarcy`** (low) — Use when you have a long `document-id` (paper, report, PDF) and want its key facts fast — returns an AI summary of concepts, findings, figur
 - **`scinapse-io`** (medium) — Use when you have an academic's `name` and want their publications, affiliations and co-authors — returns papers, `employer-org` and `associ
 - **`scoot`** (medium) — OSINT tool: Scoot.
 - **`scotlandspeople-gov-uk-2`** (high) — Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity 
@@ -910,7 +910,7 @@ kind: group-index
 - **`taxpolicy-org-uk`** (high) — Use when you have a person `name`, `address` or company `employer-org` and want to map UK companies' Persons with Significant Control geogra
 - **`teachingcouncil-ie`** (high) — Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — r
 - **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
-- **`tendersinfo`** (medium) — Search tenders around the world by keywords.
+- **`tendersinfo`** (medium) — Use when you have an `employer-org` and want to see the government/private tenders it bids on or wins worldwide — returns procurement listin
 - **`tennessee-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` and want to confirm a Tennessee voter registration — returns registration status, county, and polling pla
 - **`terrorism-incidents-database`** (low) — OSINT tool: Terrorism Incidents Database.
 - **`tess`** (medium) — Use when you have a person or company `name`, a brand, or a serial number and want US trademark filings — returns employer-org, name and add

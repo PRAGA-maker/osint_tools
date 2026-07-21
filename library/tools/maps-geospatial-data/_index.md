@@ -63,7 +63,6 @@ kind: group-index
 - **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro
 - **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.
 - **`hitta-se`** (low) — Mapping service for Sweden
-- **`howtogeek-com`** (medium) — OSINT tool: howtogeek.com.
 - **`inciweb`** (medium) — Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
@@ -72,7 +71,6 @@ kind: group-index
 - **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
 - **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
-- **`livecorona-co-kr`** (medium) — OSINT tool: Livecorona.co.kr.
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
 - **`manhole-co-il`** (low) — Use when you have an `image` or `geolocation` and want to identify a manhole/utility cover's origin — returns geolocation clues (country/cit
 - **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th

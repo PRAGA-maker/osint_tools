@@ -160,7 +160,7 @@ kind: group-index
 - **`dork-scanner`** (low) — NOT support Google. Only Bing, ASK and [http://WoW.com](http://WoW.com) (AOL) search engines. Can work with very long lists of queries/docum
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
 - **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
-- **`doteasy-canada`** (medium) — Canadian service provider for registering websites and domain addresses
+- **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
 - **`dotster-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`dpulse`** (low) — Tool for a complex, comprehensive approach to domain OSINT with reporting.
 - **`drishti`** (low) — Nodejs toolkit for OSINT
