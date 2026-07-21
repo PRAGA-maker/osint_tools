@@ -327,7 +327,7 @@ kind: group-index
 - **`khoji-onrender-com`** (high) — Use when you have a Snapchat `username` and want to confirm the account and see its Bitmoji avatar — returns the account's Bitmoji image and
 - **`klear`** (high) — Use when you have an `name`/`username` of a social-media creator and want audience/reach analytics and profile discovery across Instagram, T
 - **`knowlesys-com`** (high) — Use when you have a `username`/`name` tied to Pinterest and want a methodology — a how-to article on investigating Pinterest profiles and bo
-- **`kribrum-io`** (medium) — searchengine for different social media platforms with filters by author and time period
+- **`kribrum-io`** (medium) — Use when you have a `name`/`username` and want to search public social-media posts by author and time period — returns `social-profile` and 
 - **`kribrum`** (high) — Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram
 - **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
 - **`kworb`** (medium) — Use when you have a musician/artist `name` and want to gauge their public streaming and chart footprint across YouTube, Spotify and iTunes —
@@ -592,7 +592,6 @@ kind: group-index
 - **`thumbtube-com-2`** (high) — Use when you have an Instagram video/IGTV post URL and want to save the media for offline analysis — returns the downloaded video/image file
 - **`thumbtube-com`** (high) — Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/
 - **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
-- **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
 - **`tiktake-net`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to save the original, watermark-free clip for analysis or evidence — return
 - **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.

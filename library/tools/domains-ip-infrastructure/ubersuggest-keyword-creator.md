@@ -1,54 +1,91 @@
 ---
 id: ubersuggest-keyword-creator
-name: UberSuggest Keyword Creator
-description: Language-related search for keyword combinations by using a word and current search engine results to create new keywords
+name: Ubersuggest
+description: Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-footprint data.
 url: https://neilpatel.com/ubersuggest/
 category: domains-ip-infrastructure
 path:
 - domains-ip-infrastructure
-bestFor: ''
+bestFor: Profiling a website's traffic, top content, backlinks, and competitor domains for domain/infrastructure OSINT.
 selectorsIn:
 - domain
-- ip-address
 selectorsOut:
 - domain
-- ip-address
-status: unknown
-pricing: free
+status: live
+pricing: freemium
+costNote: Free tier allows a small number of searches per day (historically ~3); deeper reports, more results, and history sit behind a subscription or lifetime plan.
 opsec: passive
-opsecNote: ''
-humanInLoop: false
-humanInLoopReason: []
+opsecNote: You query Ubersuggest's own aggregated SEO index, not the target's server, so the lookup is passive and unseen by the site owner. A free account is typically prompted after the first search.
+humanInLoop: true
+humanInLoopReason:
+- rate-limit
+- account-login
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: ''
+trustNote: A well-known commercial SEO tool (NP Digital / Neil Patel); traffic and backlink figures are modeled estimates, not ground truth, so treat them as directional.
 missingPersonsRelevance: medium
 coverage:
 - global
-auth: none
+auth: account
 api: false
 localInstall: false
-registration: false
-aliases: []
+registration: true
+relatedTools:
+- neilpatel-backlinks-analyzer
+aliases:
+- ubersuggest
+- neilpatel ubersuggest
 tags:
 - toddington
 - curated-directory
 - whois-ip-lookups-website-analysis
+- seo
 source: toddington-resources
-lastVerified: ''
+lastVerified: '2026-07-21'
 enrichment: full
-relatedTools:
-- neilpatel-backlinks-analyzer
 ---
 
-# UberSuggest Keyword Creator
+# Ubersuggest
 
-> Language-related search for keyword combinations by using a word and current search engine results to create new keywords
+> An SEO/traffic-analysis tool that, for OSINT, profiles a `domain`'s footprint — estimated traffic, top pages, keywords, backlinks, and competitor domains — surfacing related sites and content an owner would rather you didn't connect.
 
-- **URL:** https://neilpatel.com/ubersuggest/
-- **Best for:** —
-- **Source:** harvested from `toddington-resources`
+## When to use
+You have a `domain` tied to your subject (their business site, blog, or a domain from a WHOIS pivot) and want to understand its footprint: how much traffic it gets, which pages matter, what keywords it ranks for, and — most usefully for link analysis — its **backlinks and competitor/related domains**. Backlinks can reveal other sites the subject controls or is affiliated with; top pages can surface content (bios, contact pages, staff lists) worth reading directly.
 
-Harvested from Toddington International free OSINT resources directory (category: Whois, IP Lookups & Website Analysis). Curated third-party tool reviewed by TII; availability and pricing not independently verified.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open https://neilpatel.com/ubersuggest/ in a sock-puppet browser.
+2. Enter the target `domain` and run the domain overview.
+3. Review: estimated traffic, top pages, ranking keywords, and the **backlinks** and "similar/competitor domains" reports.
+4. Free searches are capped per day and a login is prompted — register a sock-puppet account; stop when you hit the paywall rather than paying.
+5. Pivot: feed backlink and competitor `domain`s into WHOIS/registrant tools to find shared ownership; open top pages directly for names, emails, and addresses.
 
-_Enrichment: full. If stub, complete per `schema/templates/tool.template.md`._
+## Inputs → Outputs
+- **In:** a `domain`
+- **Out:** traffic estimate, top pages, keywords, backlink `domain`s, competitor/related `domain`s
+- **Empty/negative result looks like:** little or no data for an obscure/new domain (Ubersuggest models popular sites best), or a paywall gate before the useful detail loads.
+
+## Gotchas & OpSec
+- **Estimates, not facts:** traffic and backlink numbers are modeled — use them to find *connections* (which other domains), not to assert exact figures.
+- Human-in-the-loop: a hard daily free-search cap and a login prompt; deep data is paid — don't pay, pivot to free tools instead.
+- OpSec: passive; the target's server is never touched.
+
+## Overlaps ("do both")
+- Pairs with `[[neilpatel-backlinks-analyzer]]` (same provider) and with WHOIS/registrant and reverse-IP tools — Ubersuggest surfaces related domains; those confirm shared ownership/hosting behind them.
+
+## Trust & verifiability
+`trust: unverified` — a legitimate commercial SEO product, but its metrics are estimates; verify any domain relationship it suggests via WHOIS/DNS before treating it as fact.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | ubersuggest-keyword-creator |
+| category | domains-ip-infrastructure |
+| selectorsIn → selectorsOut | domain → domain |
+| pricing / cost | freemium |
+| trust | unverified |
+| MP relevance | medium |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | yes (rate-limit) |

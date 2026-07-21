@@ -14,7 +14,6 @@ kind: group-index
 - **`duckduckgo`** (medium) — Use when you have a `name`, `username`, or `email` and want web results without a personalized filter bubble or search-history trail — retur
 - **`google-advanced-search`** (medium) — Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, 
 - **`google`** (medium) — Use when you have almost any selector (`name`, `username`, `email`, `phone`, `domain`) and want the broadest web footprint — returns pages, 
-- **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only
 - **`izito`** (low) — Use when you have a `name`, `username`, or keyword and want a fast multi-source aggregate — returns social-profile and address leads pooled 
 - **`mojeek`** (medium) — Use when you have a `name`, `username` or keyword and want results from a truly independent, non-Google/Bing crawler — returns web pages, `s

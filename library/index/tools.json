@@ -35735,24 +35735,28 @@
   {
     "id": "refdesk-newspaper-search",
     "name": "RefDesk Newspaper Search",
-    "description": "Searchable website for newspapers in the US and wordwide",
+    "description": "Use when you have a subject's `name` and a `geolocation` and want the right local newspaper to search for coverage of them — returns links to regional news outlets.",
     "url": "http://www.refdesk.com/paper.html",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the local/regional newspaper(s) covering a given US or world location so you can search them for a person.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory of external newspaper links; RefDesk hosts no content and requires no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "RefDesk itself is a passive link directory. OpSec depends on the newspaper sites you then visit — use a sock-puppet browser, since a local paper's site could log or paywall-track you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, well-known reference-desk site (\"Fact Checker for the Internet\"); it curates links to primary news sources rather than hosting claims itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -35761,18 +35765,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "refdesk"
+    ],
+    "aliases": [
+      "refdesk.com newspapers"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "refdesk"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/refdesk-newspaper-search.md"
   },
   {
@@ -47864,24 +47870,32 @@
   {
     "id": "hoobly-classified-ads",
     "name": "Hoobly Classified Ads",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a `username`, `geolocation`, or item keyword and want a subject's classified listings — returns `social-profile`, `geolocation`, `image`, and account age.",
     "url": "http://www.hoobly.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's classified ads (especially pets/animals) and the seller username, location, and account age attached to them.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse, search, and post ads; no account needed to read listings or seller pages.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings and seller pages is passive and does not notify the seller. Only messaging a seller (which needs an account) would expose you — use a sock puppet if you must make contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, active free-classifieds marketplace; listings are user-posted and unverified, so treat seller-stated details as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -47890,15 +47904,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "hoobly.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "classifieds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/hoobly-classified-ads.md"
   },
   {
@@ -90206,51 +90224,57 @@
   },
   {
     "id": "ubersuggest-keyword-creator",
-    "name": "UberSuggest Keyword Creator",
-    "description": "Language-related search for keyword combinations by using a word and current search engine results to create new keywords",
+    "name": "Ubersuggest",
+    "description": "Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-footprint data.",
     "url": "https://neilpatel.com/ubersuggest/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling a website's traffic, top content, backlinks, and competitor domains for domain/infrastructure OSINT.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows a small number of searches per day (historically ~3); deeper reports, more results, and history sit behind a subscription or lifetime plan.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Ubersuggest's own aggregated SEO index, not the target's server, so the lookup is passive and unseen by the site owner. A free account is typically prompted after the first search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A well-known commercial SEO tool (NP Digital / Neil Patel); traffic and backlink figures are modeled estimates, not ground truth, so treat them as directional.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "neilpatel-backlinks-analyzer"
     ],
+    "aliases": [
+      "ubersuggest",
+      "neilpatel ubersuggest"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis",
+      "seo"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ubersuggest-keyword-creator.md"
   },
   {
@@ -114525,48 +114549,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/uk-equifax-com.md"
-  },
-  {
-    "id": "validate-creditcard",
-    "name": "validate.creditcard",
-    "description": "OSINT tool: validate.creditcard.",
-    "url": "http://validate.creditcard/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/validate-creditcard.md"
   },
   {
     "id": "wallet-explorer",
@@ -153255,41 +153237,48 @@
   {
     "id": "verification-junkie",
     "name": "Verification Junkie",
-    "description": "Discovering verification tools and practitioner-oriented references",
+    "description": "Use when you have an `image`, video, or claim to verify and want a curated menu of the right verification tools — returns links to tools, not data itself.",
     "url": "https://verificationjunkie.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "source-verification"
     ],
-    "bestFor": "Discovering verification tools and practitioner-oriented references",
-    "input": "Category browsing and keyword searches",
-    "output": "Collections of linked tools and verification guidance",
-    "selectorsIn": [],
+    "bestFor": "Discovering, by category, the verification/forensics tools to reach for when checking media or eyewitness claims.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free directory; hosts no data, only categorized links to third-party verification tools.",
     "opsec": "passive",
-    "opsecNote": "Site has certificate issues; treat access as unstable and verify links before relying on them.",
+    "opsecNote": "Browsing the directory is passive. Note it currently has a TLS certificate mismatch, so the site throws a security warning — inspect links carefully and don't submit anything on the page itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A practitioner-built directory (by journalist Josh Stearns) of verification tools; useful as a map, but link rot and the current certificate issue mean you must verify each linked tool independently.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "verificationjunkie.com"
+    ],
+    "tags": [
+      "source-verification",
+      "media-forensics",
+      "directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/source-verification/verification-junkie.md"
   },
   {
@@ -184210,42 +184199,53 @@
   },
   {
     "id": "optout-credit-prescreen",
-    "name": "OptOut Credit Prescreen",
-    "description": "Reducing data broker exposure, removing from credit prescreening lists",
+    "name": "OptOutPrescreen",
+    "description": "Use when you (the investigator) want to reduce your own `name`/`address` exposure to prescreened credit/insurance offers — the official US bureau opt-out, not a lookup tool.",
     "url": "https://www.optoutprescreen.com/?rf=t",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "privacy-clean-up"
     ],
-    "bestFor": "Reducing data broker exposure, removing from credit prescreening lists",
-    "input": "Personal information (SSN, DOB, address) for opt-out request",
-    "output": "Confirmed opt-out from credit and insurance prescreening offers",
-    "selectorsIn": [],
+    "bestFor": "Opting your own identity out of the four US credit bureaus' prescreened firm-offer lists to shrink your data-broker footprint.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official service; the 5-year opt-out is done online at no cost, a permanent opt-out requires mailing a signed form.",
     "opsec": "active",
-    "opsecNote": "Requires submitting real personal information to major credit bureaus; only use for actual personal privacy protection, not during OSINT operations.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is a personal-privacy hygiene action for the INVESTIGATOR, not something to run against a subject. It requires submitting your own real name, address, SSN, and DOB to the bureaus — never enter a third party's data here.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official industry opt-out site jointly operated by Equifax, Experian, Innovis, and TransUnion — the authoritative endpoint, not a third-party broker.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "optoutprescreen.com",
+      "prescreen opt-out"
+    ],
+    "tags": [
+      "privacy",
+      "opsec",
+      "data-broker-removal"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/optout-credit-prescreen.md"
   },
   {
@@ -285193,46 +285193,6 @@
     "_file": "library/tools/search-engines/news-search/hubii.md"
   },
   {
-    "id": "hulbee",
-    "name": "Hulbee",
-    "description": "Corporate information only, NOT for web search OSINT",
-    "url": "https://hulbee.com/de",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "general-search"
-    ],
-    "bestFor": "Corporate information only, NOT for web search OSINT",
-    "input": "Company information",
-    "output": "Corporate website content",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Category mismatch - this is a company website, not a search engine. Swisscows is the actual search product (already listed separately)",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/general-search/hulbee.md"
-  },
-  {
     "id": "hunter-search-engine",
     "name": "Hunter (hunter.how)",
     "description": "Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — returns `ip-address`, `domain`, and infrastructure metadata.",
@@ -290225,24 +290185,29 @@
   {
     "id": "metacritic",
     "name": "Metacritic",
-    "description": "Website related to movie and TV ratings",
-    "url": "http://www.metacritic.com",
+    "description": "Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — returns `social-profile`.",
+    "url": "https://www.metacritic.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Testing a reused handle against Metacritic's user reviewer profiles and reading a subject's public rating/review activity.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read profiles and reviews; an account is only needed to post your own reviews.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public reviewer profiles is passive and unlogged to the target. Only creating an account or posting would expose you. Browse from a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established review aggregator (Fandom-owned); user profiles are pseudonymous and self-created, so a handle match is a lead, not identity proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -290251,15 +290216,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "metacritic.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reviews"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/metacritic.md"
   },
   {
@@ -298610,24 +298579,29 @@
   {
     "id": "rotten-tomatoes",
     "name": "Rotten Tomatoes",
-    "description": "Website related to movie and TV reviews",
-    "url": "http://www.rottentomatoes.com",
+    "description": "Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — returns `social-profile`.",
+    "url": "https://www.rottentomatoes.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Testing a reused handle against Rotten Tomatoes audience/user profiles and reading a subject's public ratings and reviews.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read profiles and reviews; an account (or Fandango-linked login) is only needed to post ratings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public user profiles is passive and unlogged to the target. Only creating an account or rating would expose you. Browse from a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Major film/TV review site (Fandango-owned); audience profiles are pseudonymous and self-created, so a handle match is a lead, not identity proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -298636,15 +298610,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "metacritic"
+    ],
+    "aliases": [
+      "rottentomatoes.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reviews"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/rotten-tomatoes.md"
   },
   {
@@ -326666,41 +326646,55 @@
   {
     "id": "kribrum-io",
     "name": "Kribrum.io",
-    "description": "searchengine for different social media platforms with filters by author and time period",
+    "description": "Use when you have a `name`/`username` and want to search public social-media posts by author and time period — returns `social-profile` and post content.",
     "url": "https://kribrum.io/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching across multiple social platforms for posts filtered by author and date range (strong Russian-language coverage).",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Freemium social-listening service; basic search is free but deeper/analytic features and history generally require registration and a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "You query Kribrum's own aggregated social-media index, not the target's accounts, so the search does not notify the subject. It is a Russian service — assume queries may be logged on that side; use a sock-puppet identity and avoid entering sensitive terms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established Russian social-media monitoring platform; index coverage and freshness are opaque, so treat results as a partial view and corroborate.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Universal"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "kribrum"
     ],
+    "aliases": [
+      "kribrum.io",
+      "Крибрум"
+    ],
+    "tags": [
+      "Social Media",
+      "Universal",
+      "social-monitoring"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/kribrum-io.md"
   },
   {
@@ -341574,43 +341568,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/tikface-com.md"
-  },
-  {
-    "id": "tikstats",
-    "name": "TikStats",
-    "description": "detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account",
-    "url": "https://tikstats.org/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "TikTok"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tikstats.md"
   },
   {
     "id": "tiktake-net",

@@ -10,7 +10,7 @@ kind: group-index
 - **`awesome-opt-out-guide-2026`** (low) — Use when you (the investigator) want to remove your own footprint from data brokers — returns categorized opt-out links, templates and step-
 - **`fake-us-identities`** (medium) — Use when you need a synthetic US persona for sock-puppet/OPSEC work — returns a fabricated name, address, and biographical data (no real per
 - **`just-delete-me`** (low) — Use when you have a service `username`/account and want the direct account-deletion link and difficulty rating — supports investigator OpSec
-- **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists
+- **`optout-credit-prescreen`** (medium) — Use when you (the investigator) want to reduce your own `name`/`address` exposure to prescreened credit/insurance offers — the official US b
 - **`panopticlick`** (low) — Use when you want to test your investigative browser's fingerprint and tracker-blocking before an op — returns a uniqueness score and detail
 - **`privacy-guides`** (low) — Use when you're building an investigator's OpSec setup and need vetted privacy tools — returns curated, criteria-based recommendations for V
 - **`privacy-tools`** (medium) — Use when you're building an investigator OPSEC toolkit and want vetted privacy/security alternatives — returns a curated directory of tools 

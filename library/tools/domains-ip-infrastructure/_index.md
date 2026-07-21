@@ -459,7 +459,7 @@ kind: group-index
 - **`try-jsoup-org`** (low) — online version of HTML pasrer [http://github.com/jhy/jsoup](http://github.com/jhy/jsoup)
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
 - **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
-- **`ubersuggest-keyword-creator`** (medium) — Language-related search for keyword combinations by using a word and current search engine results to create new keywords
+- **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo
 - **`udon`** (low) — #go tool to find assets/domains based by Google Analytics ID
 - **`umatrix`** (low) — Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, track
 - **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP

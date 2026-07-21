@@ -10,7 +10,7 @@ kind: group-index
 - **`academic-publication-search/`** — 16 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
 - **`ftp-search/`** — 1 skill(s) below.
-- **`general-search/`** — 16 skill(s) below.
+- **`general-search/`** — 15 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 12 skill(s) below.
 - **`other-search/`** — 2 skill(s) below.
@@ -449,7 +449,7 @@ kind: group-index
 - **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`metacritic`** (medium) — Website related to movie and TV ratings
+- **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
 - **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
 - **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
@@ -624,7 +624,7 @@ kind: group-index
 - **`rockstargames-socialclub-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`roger-ebert`** (medium) — Website related to movie reviews
 - **`rootdig`** (medium) — Genealogy blog providing links to genealogical resources
-- **`rotten-tomatoes`** (medium) — Website related to movie and TV reviews
+- **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Search from command line in 106 different sources
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
