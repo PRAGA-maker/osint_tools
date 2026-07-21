@@ -226,7 +226,7 @@ kind: group-index
 - **`mailbox`** (low) — OSINT tool: Mailbox.
 - **`mailvelope`** (low) — OSINT tool: Mailvelope.
 - **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
-- **`maltego-transforms-m0m0sms-osint`** (medium) — Compilation of Maltego assets, local transforms, and helper scripts.
+- **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
 - **`master-password`** (low) — OSINT tool: Master Password.
 - **`merklemap`** (low) — OSINT tool: Merklemap.

@@ -318,7 +318,7 @@ kind: group-index
 - **`mxtoolbox-com`** (medium) — Use when you have a `domain` and want its DNS Start-of-Authority record — returns the authoritative nameservers, the hostmaster contact, and
 - **`my-ip-address`** (medium) — Use when checking what public IP your own connection exposes (sock-puppet/VPN verification) — returns your current ip-address and coarse geo
 - **`myip-ip-address`** (medium) — Use when you have an `ip-address` or `domain` and want its geolocation, hosting/ISP owner, WHOIS and reverse-IP neighbors — returns `geoloca
-- **`name-com-bulk-search`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`name-com-bulk-search`** (low) — Use when you have a `domain` or brand stem and want to see, across many TLDs and permutations at once, which variants are registered vs avai
 - **`name-com-united-states`** (low) — Use when you have a `domain` and want registration/availability and WHOIS basics — returns registrar/availability data and (redacted) WHOIS 
 - **`namecheap-united-states`** (medium) — Use when you have a `domain` and want registration/availability and WHOIS details — returns registrar, registration status, and any unredact
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
@@ -339,7 +339,6 @@ kind: group-index
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
 - **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
-- **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
@@ -506,7 +505,6 @@ kind: group-index
 - **`website-search-tool`** (low) — OSINT tool: Website search tool.
 - **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
-- **`weebly`** (medium) — Service provider for hosting webpages and websites, specifically oriented towards online shopping
 - **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a
 - **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests

@@ -451,7 +451,6 @@ kind: group-index
 - **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`metabot-ru-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Website related to movie and TV ratings
 - **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
@@ -558,7 +557,7 @@ kind: group-index
 - **`osint-sh-buckets`** (low) — Azure Public Buckets Search
 - **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe
 - **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate
-- **`osint-toolkit-cybersight-security`** (medium) — Comprehensive catalog of tools and websites for OSINT investigations.
+- **`osint-toolkit-cybersight-security`** (low) — Use when you have a selector but need the right tool and want a categorized catalog of OSINT tools/websites to pick from — returns tool poin
 - **`osint-tools-howtofind-bot`** (low) — Catalog of open-source OSINT tools.
 - **`osint-tools-yogsec`** (low) — Collection of OSINT tools and methods for intelligence gathering.
 - **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
@@ -785,7 +784,7 @@ kind: group-index
 - **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
-- **`wikiaentertainment`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
+- **`wikiaentertainment`** (low) — Use when you have a `name` or `username` tied to entertainment/fan communities and want crowdsourced wiki detail — returns biographical/fan-
 - **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikibooks`** (medium) — Use when you have an author `name`/`username` or a subject-matter lead and want open textbooks/manuals and their contributor histories — ret
 - **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t

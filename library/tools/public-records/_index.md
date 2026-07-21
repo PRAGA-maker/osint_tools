@@ -158,7 +158,6 @@ kind: group-index
 - **`charteredaccountants-ie`** (medium) — Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and 
 - **`checkatrade-com`** (medium) — Use when you have a tradesperson's `name`, business name or `address`/area and want their UK trade listing, reviews and contact/location — r
 - **`chicago-cook-county-genealogy`** (high) — Use when you have a name tied to Chicago/Cook County and want vital-record indexes — returns birth, marriage and death index entries to orde
-- **`chicago-police-department-demographics`** (medium) — OSINT tool: Chicago Police Department Demographics.
 - **`childcare-co-uk`** (high) — Use when you have a `name` or postcode and want to find a subject who works in UK childcare/tutoring — returns provider profiles with area, 
 - **`childminding-ie`** (high) — Use when you have an Irish county/`address` (or a childminder's `name`) and want to find registered childminders in that area — returns chil
 - **`ci-general-company-registry-cayman-islands`** (medium) — Use when you have a company name or director name and want the official Cayman Islands corporate record — returns company existence, directo
@@ -281,7 +280,7 @@ kind: group-index
 - **`egafd-com`** (high) — Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — re
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
-- **`elicit`** (medium) — AI research assistant. Find answers to any question from 175 million papers. The results show a list of papers with summaries + Summary of t
+- **`elicit`** (low) — Use when you have a `name` or research question and want AI-assisted discovery of relevant academic papers and their authors — returns paper
 - **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
@@ -514,7 +513,7 @@ kind: group-index
 - **`journal-officiel-gouv-fr`** (medium) — Use when you have a French association `name`, person, or `address` and want the official register — returns declared non-profit association
 - **`journalmap-geosearch`** (low) — Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `nam
 - **`junar`** (low) — OSINT tool: Junar.
-- **`jurn-academic-search`** (medium) — Academic-related search engine focused on arts, science, business, law, and medicine and includes millions of academic articles, chapters, a
+- **`jurn-academic-search`** (low) — Use when you have an author `name` or topic and want free full-text scholarly content across arts, science, business, law and medicine — ret
 - **`justia-us-supreme-court-center-united-states`** (medium) — Use when you have a `name` or `employer-org` and want to check US Supreme Court case law — returns full opinions where they appear as a part
 - **`justice-gov-uk`** (medium) — Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status a
 - **`kaggle`** (low) — OSINT tool: Kaggle.
@@ -998,7 +997,7 @@ kind: group-index
 - **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
 - **`vizala`** (low) — OSINT tool: Vizala.
 - **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n
-- **`webmd-medical-sciences-search`** (medium) — Academic-related search engine focusing on science, research, and medicine
+- **`webmd-medical-sciences-search`** (low) — Use when you have a doctor's `name` (US) and want their practice location, specialty and credentials — returns a practice `address`, `employ
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
 - **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
 - **`whaleslide`** (medium) — OSINT tool: WhaleSlide.

@@ -42,7 +42,7 @@ kind: group-index
 - **`bloglovin`** (medium) — Use when you have a `name`/`username` and want to find a person's blog presence and the blogs they follow — returns blogger profiles and fol
 - **`bloomberg-business-news`** (medium) — Use when you have a `name`/`employer-org` and want business/financial news coverage — a major outlet; returns articles tying people to compa
 - **`boards-ie`** (medium) — Use when you have a `username` or topic tied to Ireland and want to search one of Ireland's largest discussion forums for a user's posts and
-- **`boingboing-bbs`** (medium) — Mediafeed and comments website
+- **`boingboing-bbs`** (low) — Use when you have a `username` active in tech/geek/maker culture and want their post history on Boing Boing's community forum — returns post
 - **`bootsnall`** (medium) — Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; lim
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
@@ -147,7 +147,6 @@ kind: group-index
 - **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
-- **`grasswire`** (medium) — Collaborative real-time news reporting database for fact-checking social media content
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`guesttoguest`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`hashbin`** (medium) — OSINT tool: HashBin.
@@ -229,7 +228,7 @@ kind: group-index
 - **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
 - **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
 - **`onefinestay`** (low) — Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listi
-- **`onefootballforum-co-uk`** (medium) — OSINT tool: onefootballforum.co.uk.
+- **`onefootballforum-co-uk`** (low) — Use when you have a `username` active in UK football fandom and want their forum post history and interactions — returns posts, interests an
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
 - **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.

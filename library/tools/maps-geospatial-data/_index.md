@@ -12,7 +12,7 @@ kind: group-index
 - **`active-agency-map`** (medium) — OSINT tool: Active Agency Map.
 - **`alltrails`** (low) — AllTrails.com is a tool for discovering hiking, biking, and running trails worldwide, providing detailed trail maps, user reviews, and navig
 - **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
-- **`apple-com`** (medium) — OSINT tool: apple.com.
+- **`apple-com`** (medium) — Use when you have an `address` or `geolocation` and want Apple's maps, satellite, and street-level "Look Around" imagery as a second source 
 - **`apple-maps`** (low) — Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.
 - **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
