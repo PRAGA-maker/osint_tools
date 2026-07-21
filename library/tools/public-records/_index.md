@@ -72,7 +72,7 @@ kind: group-index
 - **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres
 - **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
 - **`archives`** (high) — Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, na
-- **`argo-scholar`** (medium) — A tool for analysing connections between research articles
+- **`argo-scholar`** (low) — Use when you have a `name` (a researcher) or a paper and want to map their academic network — returns co-author `associate`s and `employer-o
 - **`ariadne2-isti-cnr-it`** (low) — OSINT tool: Ariadne2.isti.cnr.it.
 - **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
 - **`arizona-genealogy-birth-and-death-certificates`** (medium) — Use when you have a `name` (and roughly a date/place) and want scanned Arizona birth or death certificates in the public window — returns im
@@ -242,7 +242,7 @@ kind: group-index
 - **`databasd`** (low) — OSINT tool: Databasd.
 - **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
-- **`dataset-domainsproject-org`** (medium) — dataset of 616 millions domains (16GB!)
+- **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
 - **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
 - **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
 - **`dauphin-county-pa-2017-compensation`** (medium) — OSINT tool: Dauphin County PA 2017 Compensation.
@@ -281,7 +281,7 @@ kind: group-index
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
 - **`elicit`** (low) — Use when you have a `name` or research question and want AI-assisted discovery of relevant academic papers and their authors — returns paper
-- **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
+- **`en-52wmb-com`** (low) — Use when you have an `employer-org` and want its import/export trade footprint — returns trading `associate`s (buyers/suppliers), `address` 
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
@@ -586,7 +586,6 @@ kind: group-index
 - **`massachusetts`** (high) — Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink t
 - **`media-room-and-blue-book`** (low) — Use when you have a subject affiliated with the University of Toronto and want their expert profile and media contact — returns faculty affi
 - **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
-- **`mergent-online`** (medium) — OSINT tool: Mergent Online.
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 

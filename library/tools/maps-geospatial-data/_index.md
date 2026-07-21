@@ -23,7 +23,6 @@ kind: group-index
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
 - **`cat-uxo`** (low) — A repository for professionals working in the explosive ordnance disposal (EOD) space.
-- **`cesium-stories`** (medium) — OSINT tool: Cesium Stories.
 - **`cites-trade-database`** (low) — Around 23 million records of trade in wildlife since 1975.
 - **`convert-geographic-units`** (low) — A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with

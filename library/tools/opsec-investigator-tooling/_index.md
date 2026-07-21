@@ -10,7 +10,7 @@ kind: group-index
 - **`anonymous-browsing/`** — 21 skill(s) below.
 - **`metadata-style/`** — 2 skill(s) below.
 - **`persona-creation/`** — 4 skill(s) below.
-- **`privacy-clean-up/`** — 10 skill(s) below.
+- **`privacy-clean-up/`** — 9 skill(s) below.
 
 ## Skills here
 - **`10minutemail-com`** (low) — OSINT tool: 10minutemail.com.

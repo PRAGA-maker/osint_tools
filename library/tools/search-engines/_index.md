@@ -694,7 +694,7 @@ kind: group-index
 - **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
 - **`stacksearch`** (medium) — OSINT tool: Stacksearch.
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
-- **`startpagina-search-netherlands`** (medium) — Netherlands based web search engine that also includes news, TV, radio, and a blog
+- **`startpagina-search-netherlands`** (low) — Use when you have a `name` or keyword tied to the Netherlands and want Dutch-focused web results and directory links — returns `social-profi
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
 - **`storyful`** (low) — OSINT tool: Storyful.

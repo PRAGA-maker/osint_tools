@@ -113,7 +113,7 @@ kind: group-index
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
 - **`forum-officer-com`** (medium) — Use when you have a `username` and want to check for a matching law-enforcement community profile — returns social-profile, posts, and locat
-- **`forums-digitalspy-com`** (medium) — OSINT tool: forums.digitalspy.com.
+- **`forums-digitalspy-com`** (medium) — Use when you have a `username` and want to check for an account on a large long-running UK entertainment forum — returns the linked `social-
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
 - **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social
 - **`forums-overclockers-co-uk`** (medium) — Use when you have a `username` and want to check one of the UK's largest PC-hardware communities — returns a `social-profile` and long post 
@@ -326,7 +326,7 @@ kind: group-index
 - **`textbin`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text, credentials, or contact frag
 - **`the-comedy-network-television-canada`** (low) — Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/progr
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`the-economist-world-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
+- **`the-economist-world-news-united-kingdom`** (low) — Use when you have a `name` or `employer-org` of some public prominence and want serious international coverage or analysis — returns `employ
 - **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
 - **`the-guardian-united-kingdom`** (medium) — Use when you have a `name`/`employer-org` in UK public life and want investigative coverage and gov-data journalism — returns articles, name
 - **`the-guardian-world`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
