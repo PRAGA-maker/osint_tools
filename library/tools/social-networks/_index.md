@@ -181,7 +181,6 @@ kind: group-index
 - **`find-my-facebook-id-2`** (high) — Use when you have a Facebook profile/page/group URL or vanity name and want its stable numeric ID — returns the numeric Facebook ID for use 
 - **`find-my-facebook-id-3`** (high) — Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile ag
 - **`find-my-facebook-id`** (high) — Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID th
-- **`find-my-snap-check-if-your-snapchat-account-was-leaked-on-the-2013-hack`** (medium) — OSINT tool: Find My Snap - Check if your SnapChat account was leaked on the 2013 hack..
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
@@ -692,7 +691,6 @@ kind: group-index
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
 - **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
-- **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
 - **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —
 - **`unlistedvideos-com`** (low) — Use when you want to discover unlisted YouTube videos (not shown in search or on a channel) — returns a crowd-submitted, searchable index of

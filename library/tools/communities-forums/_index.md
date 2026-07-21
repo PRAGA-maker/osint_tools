@@ -48,7 +48,7 @@ kind: group-index
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
 - **`business-com`** (medium) — Use when you have an `employer-org` and want B2B context — a business advice/reviews site that can corroborate a company's existence and cat
-- **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
+- **`buzzfeed`** (low) — Use when you have a `name` and want to check whether a person was profiled or named in BuzzFeed's viral or investigative coverage — returns 
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`care2`** (medium) — Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
@@ -183,7 +183,7 @@ kind: group-index
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
 - **`logpasta`** (medium) — OSINT tool: Logpasta.
 - **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
-- **`lonely-planet`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`lonely-planet`** (low) — Use when you have a `geolocation` and need travel-context — venues, neighbourhoods, transport, and accommodation a subject might use — retur
 - **`loveaholics`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
@@ -378,7 +378,7 @@ kind: group-index
 - **`wsj-technology-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`xanga-2-0`** (medium) — Blog archive website
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
-- **`yahootech-news-and-updates`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
+- **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
 - **`zbin`** (medium) — OSINT tool: ZBin.
 - **`zdnet-technology-news-and-reviews`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends

@@ -479,7 +479,7 @@ kind: group-index
 - **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
-- **`national-criminal-justice-service`** (medium) — National Criminal Justice Reference Service site providing research, publications and statistics
+- **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere
 - **`national-geographic-kids`** (low) — National Geographic's website intended for kids
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
 - **`naver-south-korea`** (low) — OSINT tool: Naver (South Korea).

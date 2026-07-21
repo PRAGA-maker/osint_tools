@@ -94,7 +94,7 @@ kind: group-index
 - **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
 - **`frontex-migratory-map`** (medium) — Use when you need irregular-migration route context (`geolocation`) for a region — returns aggregate detected-border-crossing figures by rou
 - **`gaisma`** (medium) — Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the s
-- **`gdal3-js-org`** (medium) — One of the main problems of using geospatial data in investigations is the large number of applications for working with it, which save the 
+- **`gdal3-js-org`** (low) — Use when you have geospatial data (`geolocation`) in one format and need it in another — returns the same data converted between GeoJSON, KM
 - **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points
 - **`geogig`** (low) — Use when you need to version, branch, and merge large geospatial datasets like Git for GIS — a data-engineering tool, not a lookup.
 - **`geogratis-canada`** (high) — Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names —
