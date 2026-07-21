@@ -7,7 +7,7 @@ kind: group-index
 # dark-web/general-info
 
 ## Skills here
-- **`reddit-darknet`** (medium) — Market ecosystem pulse and discussion-driven lead generation
+- **`reddit-darknet`** (medium) — Use when you need darknet-market ecosystem context — r/darknet threads for chatter about markets, scams, and incidents that generate directi
 - **`reddit-deep-web`** (low) — Use when you need dark-web/deep-web OSINT context or leads and want a community's discussion — returns crowd-shared links, techniques, and t
 - **`reddit-onions`** (medium) — Tracking .onion ecosystem changes via community reports
 

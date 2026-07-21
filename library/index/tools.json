@@ -20708,43 +20708,50 @@
   },
   {
     "id": "ricks-apps-com",
-    "name": "ricks-apps.com",
-    "description": "OSINT tool: ricks-apps.com.",
+    "name": "SiteSucker (ricks-apps.com)",
+    "description": "Use when you have a `domain`/URL and want a full local, offline copy of the site before it changes or disappears — returns a browsable mirror of pages, images, PDFs and files preserved as evidence.",
     "url": "https://ricks-apps.com/osx/sitesucker/index.html",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Mirroring a target website to disk (macOS/iOS) to preserve evidence before it's edited or taken down.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free version on the Mac App Store handles standard site downloads; SiteSucker Pro (paid) adds embedded-video download and Tor access. The free tier is fully usable for basic mirroring.",
+    "opsec": "active",
+    "opsecNote": "Downloading a site fetches every page from the target's server — that is direct, logged contact from your IP. Use a VPN/sock-puppet network; the Pro version's Tor support helps. A crawl can be noisy, so throttle it for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-established, actively maintained macOS/iOS app (Rick Cranisky) distributed via the Mac App Store; the download it produces is a faithful copy you control and can verify.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SiteSucker",
+      "SiteSucker Pro"
+    ],
     "tags": [
       "archive",
-      "Archive & Cached Related Sites"
+      "Archive & Cached Related Sites",
+      "website-mirror"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "sitesucker"
     ],
@@ -44128,29 +44135,30 @@
   {
     "id": "reddit-darknet",
     "name": "Reddit Darknet",
-    "description": "Market ecosystem pulse and discussion-driven lead generation",
+    "description": "Use when you need darknet-market ecosystem context — r/darknet threads for chatter about markets, scams, and incidents that generate directional leads (not a person-lookup).",
     "url": "https://www.reddit.com/r/darknet/",
     "category": "dark-web",
     "path": [
       "dark-web",
       "general-info"
     ],
-    "bestFor": "Market ecosystem pulse and discussion-driven lead generation",
-    "input": "Posts, comments, and subreddit search terms",
-    "output": "Discussion intelligence, incident chatter, and directional leads",
+    "bestFor": "Reading darknet-community discussion for market status, scam warnings, and incident chatter as directional leads.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; a Reddit account (free) is only needed to post, and there's a public JSON/API.",
     "opsec": "passive",
-    "opsecNote": "Passive reading is low-risk, but participation creates account-linked activity trails.",
+    "opsecNote": "Passive reading is low-risk. Do NOT post or comment from an attributable account — participation creates an account-linked trail. Read logged-out or via a sock-puppet, and never click through to onion links from a real browser/IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An open public subreddit — anonymous, unmoderated-quality user chatter; treat every claim as a rumor-grade lead to corroborate, not fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -44158,23 +44166,22 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "here",
       "r-opendirectories",
-      "reddit",
-      "reddit-askmeanything",
       "reddit-com",
-      "reddit-com-2",
       "reddit-deep-web",
-      "reddit-guide-to-opting-out-of-background-check-websites",
-      "reddit-old-reddit-search",
-      "reddit-onions",
-      "reddit-r-translator"
+      "reddit-onions"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "r/darknet"
+    ],
+    "tags": [
+      "reddit",
+      "darknet",
+      "monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/general-info/reddit-darknet.md"
   },
   {
@@ -263352,35 +263359,48 @@
   {
     "id": "the-philadelphia-police-misconduct-database",
     "name": "The Philadelphia Police Misconduct Database",
-    "description": "OSINT tool: The Philadelphia Police Misconduct Database.",
+    "description": "Use when you have a Philadelphia police officer's `name` and want their disciplinary/arbitration history — returns per-officer misconduct case records and arbitration outcomes.",
     "url": "https://datawrapper.dwcdn.net/3GbVI/1/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a named Philadelphia police officer's disciplinary and arbitration outcomes.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, public searchable table (journalism data project); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — a static, public data visualization; searching it is not logged against you in any meaningful way and does not notify the officer. Standard browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A journalism-built database of ~170 arbitration outcomes since 2011; accurate to its sourced records but narrow in scope (arbitration cases, not the full disciplinary universe).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Philadelphia police arbitration database"
+    ],
+    "tags": [
+      "police-misconduct",
+      "accountability",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "arizona-le-database-abc15",
       "clearview-ai-us-taxpayer-funded-entities",
@@ -266210,29 +266230,37 @@
   {
     "id": "us-patent-office-search",
     "name": "US Patent Office Search",
-    "description": "US patent search",
+    "description": "Use when you have an inventor `name` (or a company) and want their US patents — returns inventor `name` + city/state (`address`), the `employer-org` assignee, and co-inventors (`associate`s).",
     "url": "https://www.uspto.gov/patents/search",
     "category": "public-records",
     "path": [
       "public-records",
       "patent-records"
     ],
-    "bestFor": "US patent search",
-    "input": "Patent number, inventor name, keyword",
-    "output": "Patent documents, claims, assignee info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a person's US patents to place them at an employer, a city, and among named co-inventors.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official USPTO service (Patent Public Search); also has a free Open Data Portal API. No account required for basic search.",
     "opsec": "passive",
-    "opsecNote": "Official USPTO database",
+    "opsecNote": "Passive — querying the government patent database does not notify anyone. It's a public record search; standard sock-puppet hygiene is more than enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official United States Patent and Trademark Office database — authoritative primary-source records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -266243,11 +266271,17 @@
       "patent-attorneys-agent-search",
       "tess"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "USPTO Patent Public Search",
+      "PPUBS"
+    ],
+    "tags": [
+      "patents",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/patent-records/us-patent-office-search.md"
   },
   {
@@ -339376,40 +339410,54 @@
   {
     "id": "sterraxcyl",
     "name": "Sterraxcyl",
-    "description": "Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following count, etc)",
+    "description": "Use when you have an Instagram `username` and want their followers/following exported with details — returns each connection's `username`, full `name`, bio and counts (a social graph of `associate`s). Archived/unmaintained.",
     "url": "https://github.com/novitae/sterraxcyl",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-exporting an Instagram account's followers/following (with names and bios) to Excel/CSV/JSON to map its social graph.",
     "selectorsIn": [
       "username"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "username",
+      "name",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source (GPL-3.0); install via `pip install sterra`. No paid tier — but the repo was archived in Oct 2024 and is unmaintained.",
+    "opsec": "active",
+    "opsecNote": "It authenticates to Instagram (GraphQL) and pulls another user's connections — that is active, account-linked activity Instagram can rate-limit or flag. Use a burner/sock-puppet Instagram account and a clean IP; never your real login. Expect the target's account to be public for best results.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-author open-source project, now archived (read-only since Oct 2024); Instagram API changes break such tools quickly, so verify it still works before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sterra",
+      "novitae sterraxcyl"
+    ],
     "tags": [
       "Social Media",
-      "Instagram"
+      "Instagram",
+      "follower-export"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "tenai"
     ],
@@ -350828,24 +350876,25 @@
   {
     "id": "cyber-intelligence-toolkit-oryon",
     "name": "Cyber Intelligence Toolkit (oryon)",
-    "description": "Curated manuals, playbooks, and checklists for OSINT, OPSEC, and investigations.",
+    "description": "Use when you need investigation methodology rather than a lookup — a curated GitHub library of OSINT/OPSEC manuals, playbooks, and checklists to structure and document a case.",
     "url": "https://github.com/oryon-osint/cyber-intelligence-toolkit",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Methodology, playbooks, and investigator checklists",
+    "bestFor": "Methodology, playbooks, and investigator checklists for running and documenting OSINT investigations rigorously.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, publicly readable GitHub repository; clone or browse online, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading reference material is fully passive and reveals nothing about a case. Its OPSEC value is instructional — it teaches you how not to leak while investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Curated methodology/playbook collection (130 stars).",
+    "trustNote": "A community-curated methodology collection (~130 stars) maintained by oryon with OSINT360; reference material, so judge each guide on its merits.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -350854,7 +350903,9 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "oryon cyber-intelligence-toolkit"
+    ],
     "tags": [
       "playbooks",
       "methodology",
@@ -350862,8 +350913,8 @@
       "checklists"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "oryon-querytool"
     ],

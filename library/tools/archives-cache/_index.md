@@ -77,7 +77,7 @@ kind: group-index
 - **`perma-cc`** (medium) — Use when you have a web page `domain`/URL that is evidence and want a permanent, citable archived snapshot — returns a stable perma-link (`d
 - **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)
 - **`replayweb`** (medium) — Use when you have a WARC/WACZ web-archive file and want to browse it as a live site — returns an interactive replay of the captured pages, i
-- **`ricks-apps-com`** (medium) — OSINT tool: ricks-apps.com.
+- **`ricks-apps-com`** (medium) — Use when you have a `domain`/URL and want a full local, offline copy of the site before it changes or disappears — returns a browsable mirro
 - **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
 - **`rss-feed-reader`** (low) — OSINT tool: RSS Feed Reader.
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.

@@ -10,7 +10,7 @@ kind: group-index
 - **`games/`** — 2 skill(s) below.
 
 ## Skills here
-- **`cyber-intelligence-toolkit-oryon`** (medium) — Curated manuals, playbooks, and checklists for OSINT, OPSEC, and investigations.
+- **`cyber-intelligence-toolkit-oryon`** (medium) — Use when you need investigation methodology rather than a lookup — a curated GitHub library of OSINT/OPSEC manuals, playbooks, and checklist
 - **`defcon-database`** (low) — Searchable database of DEFCON talks/resources (shared in TL #library-submissions).
 - **`forensic-osint-kb-guides`** (low) — Digital evidence preservation, chain-of-custody documentation, court-ready OSINT reporting
 - **`gosint-ruyynn`** (low) — Python educational framework for learning open-source intelligence techniques.

@@ -923,7 +923,7 @@ kind: group-index
 - **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
 - **`the-nypd-files`** (medium) — Use when you have a New York City police officer `name` (or badge number) and want their civilian-complaint history — returns misconduct rec
 - **`the-pegasus-project-occrp`** (medium) — Use when you have a `name` and want to know if they appear among Pegasus spyware targets — returns the "Who's on the List" investigative fin
-- **`the-philadelphia-police-misconduct-database`** (medium) — OSINT tool: The Philadelphia Police Misconduct Database.
+- **`the-philadelphia-police-misconduct-database`** (medium) — Use when you have a Philadelphia police officer's `name` and want their disciplinary/arbitration history — returns per-officer misconduct ca
 - **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p
 - **`the-tribal-court-clearinghouse`** (high) — Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference port
 - **`the-weapons-id-database`** (high) — Use when you have an `image` or `physical-description` of a firearm/ammunition and want to identify make, model and markings — returns weapo

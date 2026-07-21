@@ -561,7 +561,7 @@ kind: group-index
 - **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
 - **`steamid-uk`** (medium) — Use when you have a Steam `username`/ID and want name history and friend-link timelines — returns username, social-profile and associate.
-- **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
+- **`sterraxcyl`** (medium) — Use when you have an Instagram `username` and want their followers/following exported with details — returns each connection's `username`, f
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
 - **`story-saver`** (medium) — Use when you have a public Instagram `username` and want to grab its Stories/Highlights before they expire — returns downloadable `image`/vi
 - **`storydownloader-app`** (high) — Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story co
