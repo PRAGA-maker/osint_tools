@@ -19014,43 +19014,6 @@
     "_file": "library/tools/archives-cache/distill-io.md"
   },
   {
-    "id": "easycache",
-    "name": "EasyCache",
-    "description": "quick search website old versions in different search engines and archives",
-    "url": "https://gaetanlhf.github.io/EasyCache/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives",
-      "Tools for working with web archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/easycache.md"
-  },
-  {
     "id": "factinsect",
     "name": "Factinsect",
     "description": "Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict with cited sources.",
@@ -31992,46 +31955,6 @@
     "_file": "library/tools/communities-forums/montreal-gazette.md"
   },
   {
-    "id": "movabletype",
-    "name": "MovableType",
-    "description": "Website related to social networking and blogging",
-    "url": "http://www.moveabletype.org",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/movabletype.md"
-  },
-  {
     "id": "mumsnet-com",
     "name": "Mumsnet (Talk forum)",
     "description": "Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, post history and self-disclosed detail.",
@@ -32268,42 +32191,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/n0paste.md"
-  },
-  {
-    "id": "nachricht",
-    "name": "Nachricht",
-    "description": "OSINT tool: Nachricht.",
-    "url": "https://nachricht.co/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/nachricht.md"
   },
   {
     "id": "national-geographic-magazine",
@@ -33945,37 +33832,45 @@
   {
     "id": "paste-sh",
     "name": "paste.sh",
-    "description": "OSINT tool: paste.sh.",
+    "description": "Use when you have a `password`-protected or link-shared snippet and want to read or create an end-to-end-encrypted paste — returns text content, but is NOT indexable/searchable so it yields no discovery leads.",
     "url": "https://paste.sh/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Reading a specific encrypted paste.sh link a subject shared, or creating one yourself for secure snippet handoff.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (bash + JS) pastebin; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Retrieving a paste.sh URL a subject already published is passive. The encryption key lives in the URL fragment (after",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source, single-author project (Dave Coombs); reputable in the security community, but a niche self-hosted-style service, not a data source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "paste.sh encrypted pastebin"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "encrypted"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/paste-sh.md"
   },
   {
@@ -34382,43 +34277,51 @@
   {
     "id": "pistonheads-com",
     "name": "pistonheads.com",
-    "description": "OSINT tool: pistonheads.com.",
+    "description": "Use when you have a `username` (or a car/plate a subject is known to own) and want to find their PistonHeads forum posts, profile and classified/auction listings — returns `social-profile`, `associate` and vehicle/`address`-adjacent leads.",
     "url": "https://www.pistonheads.com/gassing/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a UK car-enthusiast subject from a forum handle to years of posts, garage details, and vehicles for sale.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Reading forums, profiles and classifieds is free; an account (free) is needed only to post or message.",
+    "opsec": "passive",
+    "opsecNote": "Browsing threads, profiles and listings while logged out is passive. Do NOT register or message a member from a real identity — use a sock-puppet account, since PistonHeads shows \"last active\" and can notify a user of profile views/DMs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "PistonHeads is a long-running (since 1998) UK automotive community now owned by CarGurus; content is user-generated, so treat individual claims as unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PistonHeads",
+      "Gassing Station"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "automotive"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/pistonheads-com.md"
   },
   {
@@ -37883,42 +37786,6 @@
     "lastVerified": "2026-07-20",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/textbin.md"
-  },
-  {
-    "id": "textbin-code",
-    "name": "Textbin-Code",
-    "description": "OSINT tool: Textbin-Code.",
-    "url": "https://textbin.online/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/textbin-code.md"
   },
   {
     "id": "the-comedy-network-television-canada",
@@ -48758,42 +48625,51 @@
   {
     "id": "onlydanske-dk",
     "name": "onlydanske.dk",
-    "description": "OSINT tool: onlydanske.dk.",
+    "description": "Use when you have a `username` or creator name and want to check whether it maps to a Danish OnlyFans persona — returns the linked `social-profile` (OnlyFans account) and any handle/name variants listed.",
     "url": "https://onlydanske.dk/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a username/creator handle to a Danish adult-creator (OnlyFans) profile and its cross-links.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; it links out to OnlyFans, where the actual content sits behind that platform's own paywalls. Browsing/searching the directory costs nothing.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it's a third-party directory that scrapes/links public OnlyFans creator pages; searching it does not notify the creator. It is an adult-content site; use a sock-puppet browser, and never authenticate or subscribe from a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An unaffiliated third-party aggregator of Danish OnlyFans creators (explicitly \"ikke tilknyttet onlyfans.com\"); listings are user/scrape-sourced and unverified, and creators come and go.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "dk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "onlydanske",
+      "Only Danske"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "adult"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlydanske-dk.md"
   },
   {
@@ -182216,29 +182092,32 @@
   {
     "id": "locabrowser-com",
     "name": "LocaBrowser.com",
-    "description": "Testing browser geolocation exposure, verifying location permission settings",
+    "description": "Use when you have a `domain`/URL and want to see how it renders from different countries and devices (geo-targeting, redirects, cloaking) — returns location-specific page views; also tests your own browser geolocation exposure.",
     "url": "https://www.locabrowser.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "anonymous-browsing"
     ],
-    "bestFor": "Testing browser geolocation exposure, verifying location permission settings",
-    "input": "No input required (requests browser geolocation permission)",
-    "output": "Latitude, longitude, and accuracy of browser-reported geolocation",
-    "selectorsIn": [],
+    "bestFor": "Loading a target URL as if from another country/device to reveal geo-targeted content, redirects, or cloaking — without touching it from your own IP.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free tier lets you load a URL from a set of locations; a Chrome extension and higher-volume/parallel use are the paid/upsell side. Core geo-viewing is usable free.",
     "opsec": "active",
-    "opsecNote": "Requests and logs your browser’s geolocation; verify location masking is working before conducting location-sensitive OSINT.",
+    "opsecNote": "Requests are made from LocaBrowser's nodes, not your IP — good for not tipping the target off. But it also demonstrates browser-geolocation exposure (it can read your real position if you grant permission), so use it to *verify* your masking before location-sensitive work; deny the geolocation prompt unless testing yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial geo-testing service (aimed at marketers/SEO); reliable for what it does, but a third party that sees the URLs you submit.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -182246,11 +182125,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LocaBrowser",
+      "locabrowser.com"
+    ],
+    "tags": [
+      "geo-testing",
+      "anonymous-browsing",
+      "redirects"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/locabrowser-com.md"
   },
   {
@@ -247317,29 +247203,38 @@
   {
     "id": "nationwide-county-court-records",
     "name": "Nationwide County Court Records",
-    "description": "Locating county court records",
+    "description": "Use when you have a `name` plus a county/state and want the official portal to search that jurisdiction's court records — returns links out to court systems that yield case records, `address` and `associate` leads.",
     "url": "https://www.publicrecordcenter.com/onlinecourtrecords.htm",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Locating county court records",
-    "input": "County name and state",
-    "output": "Links to county court systems",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A directory that routes you to the correct federal/state/county court record system so you can search cases by name.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "address",
+      "associate"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "The directory and links are free; PACER (federal) charges per page for documents, and some state/county portals levy their own retrieval fees. Finding and searching is generally free.",
     "opsec": "passive",
-    "opsecNote": "Aggregator of public court links",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive at the directory level. The court portals it links to are also passive lookups, but some (e.g. PACER) require registration and log searches; use appropriate accounts and expect an audit trail on official systems.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A privately owned directory that links to official court resources; it stores no records itself, so trust the destination government portals, not the directory's framing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -247347,11 +247242,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PublicRecordCenter court records",
+      "online court records directory"
+    ],
+    "tags": [
+      "court-records",
+      "directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/nationwide-county-court-records.md"
   },
   {
@@ -247720,29 +247621,39 @@
   {
     "id": "neighbor-report",
     "name": "Neighbor Report",
-    "description": "Neighborhood demographics and safety",
+    "description": "Use when you have a `name`, `address` or `phone` and want a free US public-records aggregate — returns residents at an `address`, associated `phone`, and likely `associate` links plus neighborhood complaint posts.",
     "url": "https://neighbor.report/",
     "category": "public-records",
     "path": [
       "public-records",
       "property-records"
     ],
-    "bestFor": "Neighborhood demographics and safety",
-    "input": "Address or zip code",
-    "output": "Crime stats, schools, community data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free reverse-address and reverse-phone lookup tying residents, numbers, and neighbors together across the US.",
+    "selectorsIn": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "name",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; the site monetises via ads and \"find more\" hand-offs to paid people-search brokers — you never need to pay to see the base aggregate.",
     "opsec": "passive",
-    "opsecNote": "Public aggregator, no footprint concerns",
+    "opsecNote": "Passive — it serves cached public-record aggregates and does not notify the person searched. It does log visitors like any site; use a sock-puppet browser/VPN for hygiene, and note the underlying data can be stale.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A US data-aggregator (BBB-listed) republishing public records; accuracy is uneven and entries can be outdated or conflate people with the same name.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -247750,11 +247661,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "neighbor.report"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-address",
+      "reverse-phone"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/property-records/neighbor-report.md"
   },
   {
@@ -259981,47 +259898,50 @@
   {
     "id": "sex-offender-registry",
     "name": "Sex Offender Registry",
-    "description": "United States Sex Offender Registry - searchable by location or name",
+    "description": "Use when you have a `name` or `address` and want to check US sex-offender registry listings — returns a registrant's `address`, `physical-description` and offense record (aggregates state registries).",
     "url": "http://www.sexoffender.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A single-entry point to search US state sex-offender registries by name or location.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "selectorsOut": [
+      "address",
+      "physical-description"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The registry search itself is free (registries are public by law); the site carries ads and may hand off to paid background-check brokers, but you do not need to pay to view registry listings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — registry data is public and the search does not alert the registrant. For authoritative, non-commercial results prefer the government source (NSOPW.gov); use this aggregator only as a convenience layer, via a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party commercial aggregator of public registry data, not a government site; listings can be stale or incomplete, so confirm against the official state registry or NSOPW.gov.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sexoffender.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sex-offender-registry.md"
   },
   {
@@ -275970,48 +275890,6 @@
     "_file": "library/tools/search-engines/colorado-unclaimed-property-search.md"
   },
   {
-    "id": "colossus-international-engine-list",
-    "name": "Colossus International Engine List",
-    "description": "OSINT tool: Colossus International Engine List.",
-    "url": "https://www.searchenginecolossus.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "other-search"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "search-engine-colossus"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/other-search/colossus-international-engine-list.md"
-  },
-  {
     "id": "comicvine",
     "name": "Comic Vine",
     "description": "Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum/activity history.",
@@ -286409,40 +286287,6 @@
     "_file": "library/tools/search-engines/inventory-raw-pm.md"
   },
   {
-    "id": "ipse-io",
-    "name": "Ipse.io",
-    "description": "OSINT tool: Ipse.io.",
-    "url": "https://www.ipse.io/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/ipse-io.md"
-  },
-  {
     "id": "irbis-by-espy",
     "name": "IRBIS by Espy",
     "description": "Use when you have a `name`, `email`, `phone`, `username`, or `image` and want an aggregated digital-identity profile — returns linked social accounts, contacts and identity signals.",
@@ -295514,24 +295358,32 @@
   {
     "id": "osintgeek-tools",
     "name": "OSINTgeek Tools",
-    "description": "OSINTgeek's curated set of tools and dashboards.",
+    "description": "Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) — returns links out to `social-profile` and other research services.",
     "url": "https://osintgeek.de/tools",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Curated tools and custom search dashboards",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A curated, category-organised toolbox of free investigation tools, strong on German/Austrian/Swiss (DACH) sources.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "image",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The tool links and search dashboards are free to use; the operator also sells an optional PDF guide via Stripe, but nothing on the toolbox itself is paywalled.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The catalogue page itself is passive — browsing it reveals nothing about your target. OpSec risk lives in the third-party tools it links out to; assess each destination (some touch the target's infrastructure) before running it, and use a sock-puppet browser for anything active.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community OSINT resource (osintgeek.de).",
+    "trustNote": "Maintained by OSINTgeek (osintgeek.de), an established German-language OSINT educator; a curated directory rather than a data source, so trust is in the curation, not in any single linked tool.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global",
@@ -295541,14 +295393,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINTgeek Toolbox",
+      "osintgeek.de/tools"
+    ],
     "tags": [
       "tool-collection",
-      "dashboards"
+      "dashboards",
+      "dach"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osintgeek-tools.md"
   },
   {
@@ -318080,42 +317936,51 @@
   {
     "id": "fidonet-nodelist",
     "name": "Fidonet nodelist",
-    "description": "search by node number, sysop name and sysop location",
+    "description": "Use when you have a person's name or a rough location tied to old BBS/FidoNet activity and want to find their sysop node entry — returns a `geolocation` (city/region), node number and sysop `name` from 1986–present nodelists.",
     "url": "https://nodehist.fidonet.org.ua/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an old FidoNet node number or sysop name to a city/region and time window across 40 years of weekly nodelists.",
     "selectorsIn": [
+      "name",
       "geolocation"
     ],
     "selectorsOut": [
+      "name",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search interface over the historical FidoNet nodelist archive; no account.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you are querying a static historical archive, not contacting anyone. Nothing about your search reaches the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run nodelist history search (nodehist.fidonet.org.ua) built from the official weekly nodelists; the underlying data is authoritative, the interface community-maintained.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FidoNet nodelist history",
+      "nodehist"
+    ],
     "tags": [
       "Social Media",
-      "Fidonet"
+      "Fidonet",
+      "historical"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fidonet-nodelist.md"
   },
   {
@@ -360824,40 +360689,6 @@
       "china-related-resources"
     ],
     "_file": "library/tools/transportation/license-plate-maps.md"
-  },
-  {
-    "id": "license-plates-in-canada",
-    "name": "🚗License Plates in Canada 🇨🇦",
-    "description": "OSINT tool: 🚗License Plates in Canada 🇨🇦.",
-    "url": "https://www.google.com/maps/d/viewer?mid=1zXYL2BF2MByEduLzYN5brVnli9J3cIlv",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/license-plates-in-canada.md"
   },
   {
     "id": "live-air-traffic-control",

@@ -7,7 +7,7 @@ kind: group-index
 # public-records/property-records
 
 ## Skills here
-- **`neighbor-report`** (medium) — Neighborhood demographics and safety
+- **`neighbor-report`** (medium) — Use when you have a `name`, `address` or `phone` and want a free US public-records aggregate — returns residents at an `address`, associated
 - **`redfin`** (medium) — Use when you have an `address` and want a property's sale history, valuation, and details — returns ownership-history dates, prices, and `ge
 - **`regrid-us-only`** (medium) — Use when you have a US `address` or parcel number and want the property's parcel boundary, owner and assessment data — returns owner `name`,
 

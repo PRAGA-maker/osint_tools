@@ -7,7 +7,6 @@ kind: group-index
 # communities-forums
 
 ## Sub-groups
-- **`blog-search-engines/`** — 0 skill(s) below.
 - **`discord-servers/`** — 3 skill(s) below.
 - **`forum-search-engines/`** — 4 skill(s) below.
 - **`irc-search/`** — 3 skill(s) below.
@@ -192,13 +191,11 @@ kind: group-index
 - **`money-talk-org`** (medium) — OSINT tool: money-talk.org.
 - **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
-- **`movabletype`** (medium) — Website related to social networking and blogging
 - **`mumsnet-com`** (medium) — Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, p
 - **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
 - **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
-- **`nachricht`** (medium) — OSINT tool: Nachricht.
 - **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
 - **`nbc-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -233,7 +230,7 @@ kind: group-index
 - **`paste-in-ua`** (medium) — Use when you have a `username`, `email` or `domain` and want to check a Ukrainian/RU-language pastebin for dumped credentials, leaked lists 
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
 - **`paste-monster`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public markdown pastebin for dumped text — returns paste cont
-- **`paste-sh`** (medium) — OSINT tool: paste.sh.
+- **`paste-sh`** (medium) — Use when you have a `password`-protected or link-shared snippet and want to read or create an end-to-end-encrypted paste — returns text cont
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
 - **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
@@ -243,7 +240,7 @@ kind: group-index
 - **`pc-magazine`** (medium) — Use when you have a consumer-tech product name or spec surfaced in a case and want authoritative reviews, specs and background — returns pro
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
 - **`pinkbike`** (medium) — Use when you have a `username` or `name` tied to mountain biking and want their profile, posts and marketplace listings — returns social-pro
-- **`pistonheads-com`** (medium) — OSINT tool: pistonheads.com.
+- **`pistonheads-com`** (medium) — Use when you have a `username` (or a car/plate a subject is known to own) and want to find their PistonHeads forum posts, profile and classi
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
 - **`plazoo-rss-feed-search-engine`** (medium) — Use when you have a name/keyword and want it across blog & news RSS feeds — returns matching feed posts (social-profile, associate leads).
 - **`plentyoffish`** (medium) — Use when you have a `username`, `name`, or photo and want to check a major dating platform for a subject's profile — returns `social-profile
@@ -316,7 +313,6 @@ kind: group-index
 - **`techrepublic`** (low) — Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads me
 - **`telemundo-network-television-united-states`** (low) — Use when you have a `name` tied to U.S. Hispanic/Latin-American news and want Spanish-language coverage — returns news mentions, associate, 
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
-- **`textbin-code`** (medium) — OSINT tool: Textbin-Code.
 - **`textbin`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text, credentials, or contact frag
 - **`the-comedy-network-television-canada`** (low) — Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/progr
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

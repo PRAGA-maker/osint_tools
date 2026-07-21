@@ -13,7 +13,7 @@ kind: group-index
 - **`general-search/`** — 15 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 12 skill(s) below.
-- **`other-search/`** — 2 skill(s) below.
+- **`other-search/`** — 1 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
 
@@ -366,7 +366,6 @@ kind: group-index
 - **`internet-archive`** (medium) — Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, a
 - **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
-- **`ipse-io`** (medium) — OSINT tool: Ipse.io.
 - **`irbis-by-espy`** (medium) — Use when you have a `name`, `email`, `phone`, `username`, or `image` and want an aggregated digital-identity profile — returns linked social
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
 - **`islegitsite`** (medium) — OSINT tool: Islegitsite.
@@ -559,7 +558,7 @@ kind: group-index
 - **`osint-tools-howtofind-bot`** (low) — Catalog of open-source OSINT tools.
 - **`osint-tools-yogsec`** (low) — Collection of OSINT tools and methods for intelligence gathering.
 - **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
-- **`osintgeek-tools`** (medium) — OSINTgeek's curated set of tools and dashboards.
+- **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
 - **`oxford-journals`** (low) — OSINT tool: Oxford Journals.
 - **`packettotal`** (low) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline 

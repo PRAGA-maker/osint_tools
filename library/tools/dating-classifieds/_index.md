@@ -70,7 +70,7 @@ kind: group-index
 - **`okcupid`** (medium) — Use when you have a `name`, `username` or photo and want to check for a dating profile — returns `social-profile`, `image` and self-reported
 - **`onlybritish`** (low) — UK OnlyFans creator directory.
 - **`onlycanadian-fans`** (medium) — Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filt
-- **`onlydanske-dk`** (medium) — OSINT tool: onlydanske.dk.
+- **`onlydanske-dk`** (medium) — Use when you have a `username` or creator name and want to check whether it maps to a Danish OnlyFans persona — returns the linked `social-p
 - **`onlyespana-es`** (low) — Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
 - **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.

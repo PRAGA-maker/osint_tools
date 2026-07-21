@@ -860,7 +860,7 @@ kind: group-index
 - **`setlist-fm`** (high) — Use when you have a performer/band `name` and want their concert history — dates, venues and cities — returns geolocation and address of gig
 - **`sex-offender-korea`** (high) — Use when you need to check South Korea's official sex-offender registry for a `name`/location — returns offender name, photo, address area a
 - **`sex-offender-registry-websites`** (high) — Use when you have a `name` or `geolocation` and want to check US sex-offender registries — returns registrant `name`, `address`, `image`, `p
-- **`sex-offender-registry`** (medium) — United States Sex Offender Registry - searchable by location or name
+- **`sex-offender-registry`** (medium) — Use when you have a `name` or `address` and want to check US sex-offender registry listings — returns a registrant's `address`, `physical-de
 - **`sex-offender-search`** (high) — Use when you have a `name` and want to check US state sex-offender registries — returns registry listings with photo, offense, registered ad
 - **`sex-offender-us`** (high) — Use when you have a `name` or `address` and want to check US state sex-offender registries — returns registrant name, address, DOB, photo an
 - **`sherpaintelligence-substack-com`** (high) — Use when you need a methodology for investigating an organisation (charity/company) tied to a subject — returns a walkthrough of registries 

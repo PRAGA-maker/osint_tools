@@ -111,7 +111,6 @@ kind: group-index
 - **`license-plate-lookup`** (medium) — Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-
 - **`license-plate-mania`** (medium) — Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plat
 - **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
-- **`license-plates-in-canada`** (medium) — OSINT tool: 🚗License Plates in Canada 🇨🇦.
 - **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 
 - **`live-atc`** (low) — Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft a
 - **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
