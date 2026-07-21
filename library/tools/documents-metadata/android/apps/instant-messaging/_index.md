@@ -12,7 +12,7 @@ kind: group-index
 - **`riot-im-communicate-your-way`** (medium) — Open community monitoring, channel discovery, user verification
 - **`signal-private-messenger`** (medium) — Identity verification, account discovery via phone/email, community research
 - **`snapchat`** (medium) — User verification, story analysis, location tracking via snap maps, relationship mapping
-- **`telegram`** (medium) — User discovery, channel monitoring, group reconnaissance, bot creation for data collection
+- **`telegram`** (medium) — Use when you have a `username`, `phone` or channel link and want Telegram intelligence — returns `social-profile`, `associate` links and pub
 - **`whatsapp-messenger`** (medium) — Use when you have a `phone` number and want to confirm it has an active WhatsApp account and pull its public profile — returns `image` (phot
 - **`yik-yak`** (medium) — Location-based event monitoring, community sentiment analysis, anonymity assessment
 

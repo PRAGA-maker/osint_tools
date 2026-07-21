@@ -229,7 +229,7 @@ kind: group-index
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
 - **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
-- **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
+- **`european-trademark-search`** (low) — Use when you have a brand `name` or `employer-org` and want EU trademark filings — returns the trademark owner `name`/`employer-org` and fil
 - **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
 - **`fact-checking`** (low) — OSINT tool: Fact-Checking.

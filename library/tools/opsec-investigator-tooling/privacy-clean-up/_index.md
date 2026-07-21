@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling/privacy-clean-up
 
 ## Skills here
-- **`awesome-opt-out-guide-2026`** (medium) — Data broker removal, comprehensive opt-out across multiple platforms and services
+- **`awesome-opt-out-guide-2026`** (low) — Use when you (the investigator) want to remove your own footprint from data brokers — returns categorized opt-out links, templates and step-
 - **`fake-us-identities`** (medium) — Use when you need a synthetic US persona for sock-puppet/OPSEC work — returns a fabricated name, address, and biographical data (no real per
 - **`just-delete-me`** (low) — Use when you have a service `username`/account and want the direct account-deletion link and difficulty rating — supports investigator OpSec
 - **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists

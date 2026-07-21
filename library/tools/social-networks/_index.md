@@ -238,7 +238,6 @@ kind: group-index
 - **`google-com-71`** (high) — Use when you're chasing a subject's Parler footprint and want Google's indexed/archived copies of Parler posts via a site-search dork — retu
 - **`google-com-72`** (high) — Use when you have a `name` or `username` and want their presence on Rumble — returns Rumble channels/videos via a Google `site:rumble.com` d
 - **`google-com-88`** (high) — Use when you have a `username` or `name` and want to find a subject's public Snapchat Spotlight content via a Google site-search dork — retu
-- **`google-plus-photo-custom-search`** (medium) — OSINT tool: Google+ Photo Custom Search.
 - **`google-to-search-profiles-on-dribbble`** (high) — Use when you have a skill/keyword (and optionally a `name` or `username`) and want to find Dribbble creative profiles via a Google site-sear
 - **`google-to-search-profiles-on-twitter`** (high) — Use when you have a `name`, keyword, or location and want to find matching X/Twitter profiles via a Google X-ray query — returns candidate `
 - **`google-to-search-profiles-on-xing`** (medium) — Use when you have a `name`/role in the German-speaking business world and want their Xing profile — builds a Google X-ray query that returns
@@ -728,7 +727,7 @@ kind: group-index
 - **`xingdumper`** (medium) — Use when you have an `employer-org` (a XING company page) and want to enumerate its employees — returns `name`, `social-profile`, and option
 - **`xplore-x-vercel-app`** (high) — Use when you have a `geolocation` (a point/area of interest) and want to see live X/Twitter posts from that place — returns geographically-f
 - **`xquik`** (high) — Use when you have a `username` or keyword and want to search public X (Twitter) posts and export an account's follower list — returns `socia
-- **`yaseeker`** (medium) — Get information about [http://Yandex.ru](http://Yandex.ru) account by login
+- **`yaseeker`** (medium) — Use when you have a Yandex `username`/`email` and want to resolve the account — returns the owner `name`, profile `image`, linked `social-pr
 - **`yesitsme`** (high) — Use when you have a `name` plus a partial `email` or `phone` and want to find the matching Instagram account — returns the username/social-p
 - **`yoodownload-com`** (high) — Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and m
 - **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
