@@ -53,7 +53,7 @@ kind: group-index
 - **`followthatpage`** (low) — OSINT tool: FollowThatPage.
 - **`gau`** (medium) — Use when you have a `domain` and want every URL ever seen for it across web archives — returns a bulk list of historical URLs (`document-id`
 - **`gh-archive`** (low) — Public dataset of GitHub activity events.
-- **`grab-site`** (medium) — Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with doz
+- **`grab-site`** (medium) — Use when you have a `domain` or `social-profile` URL and want to capture a full, court-quality WARC archive of it before it changes or disap
 - **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
 - **`index-commoncrawl-org`** (medium) — Use when you have a `domain` and want every URL Common Crawl captured for it — returns archived URLs (`document-id`s) with pointers to the s
 - **`industrydocuments-ucsf-edu`** (medium) — Use when you have a `name` (executive, scientist, lobbyist) or `employer-org` and want their internal industry documents — returns document-

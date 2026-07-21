@@ -173,7 +173,7 @@ kind: group-index
 - **`logpasta`** (medium) — OSINT tool: Logpasta.
 - **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
 - **`lonely-planet`** (low) — Use when you have a `geolocation` and need travel-context — venues, neighbourhoods, transport, and accommodation a subject might use — retur
-- **`loveaholics`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`loveaholics`** (medium) — Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating sit
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`mamba-ru`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -212,7 +212,7 @@ kind: group-index
 - **`nopaste`** (medium) — Use when you have found a `nopaste.boris.sh` link in a subject's history and want to read its contents — decodes the paste that is embedded 
 - **`notes`** (medium) — OSINT tool: Notes.
 - **`nova-czech-republick`** (low) — Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-langu
-- **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
+- **`nursingforum-co-uk`** (medium) — Use when you have a `username` or `name` and want to find a UK nurse's forum posts, member profile, or jobseeker/CV entries — returns a `soc
 - **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
 - **`onefinestay`** (low) — Use when a subject may be linked to a high-end short-term rental property and you want listing/location detail — returns luxury-rental listi
 - **`onefootballforum-co-uk`** (low) — Use when you have a `username` active in UK football fandom and want their forum post history and interactions — returns posts, interests an
@@ -348,7 +348,7 @@ kind: group-index
 - **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
 - **`vrbo`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`w3newspapers`** (medium) — World newspapers, news sites, and magazines categorized by country
+- **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
 - **`washington-post-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`washington-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix

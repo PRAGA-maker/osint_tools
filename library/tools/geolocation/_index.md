@@ -86,7 +86,7 @@ kind: group-index
 - **`fisgonia`** (low) — OSINT tool: Fisgonia.
 - **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea
 - **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.
-- **`flickr-common-map`** (medium) — displays only Flickr photos distributed under a Creative Commons license (250 of the latest for each location)
+- **`flickr-common-map`** (medium) — Use when you have an old/undated `image` or a `geolocation` and want to browse geotagged Flickr Commons archive photos for that place to hel
 - **`foursquare`** (high) — Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address
 - **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
 - **`freedomhouse-org`** (low) — Use when you have a `geolocation` (country) and want its political-rights and civil-liberties context — returns freedom scores and country-l

@@ -451,7 +451,6 @@ kind: group-index
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
-- **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
@@ -705,7 +704,7 @@ kind: group-index
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
 - **`wikimedia-cloud-page-views`** (medium) — Use when you have a `name` or topic with a Wikipedia article and want its traffic over time — returns daily/monthly pageview counts you can 
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (low) — Use when you have a Wikipedia `username` and want a behavioural profile — returns the pages they edit, activity timing and topic focus as pa
-- **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t
+- **`wikit`** (medium) — Use when you have a `name` of a notable person, place or organization and want to read its Wikipedia summary from the command line — returns
 - **`wikiwho`** (medium) — Use when you have an `employer-org` and want anonymous Wikipedia edits made from its IP ranges — returns the org's edit history and the page
 - **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.
 - **`wiza-co`** (medium) — Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `

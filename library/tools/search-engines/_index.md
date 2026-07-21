@@ -95,7 +95,7 @@ kind: group-index
 - **`beautiful-news`** (low) — OSINT tool: Beautiful News.
 - **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
 - **`beso-shopping-search-engine`** (medium) — Online retailer for fashion items, manufactured products and other online shopping items
-- **`bespacific`** (medium) — Blog and searchable database of over 31,000 research updates relating to finance, government, privacy, security, legislation and more
+- **`bespacific`** (medium) — Use when you have a topic, agency, or `name` tied to law/tech/government and want a curated, searchable feed of primary-source reporting on 
 - **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
 - **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
@@ -469,7 +469,6 @@ kind: group-index
 - **`myallsearch`** (low) — OSINT tool: Myallsearch.
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
-- **`mysimon-shopping-search-engine`** (medium) — A comparison shopping website offering recommendations, buying advice, and price comparisons
 - **`mywoodle-com`** (medium) — OSINT tool: Mywoodle.com.
 - **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
 - **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
@@ -621,7 +620,6 @@ kind: group-index
 - **`rocketlawyer`** (medium) — Website related to social networking and crowdsourceing with thousands of online responses to legal queries
 - **`rockstargames-socialclub-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`roger-ebert`** (medium) — Website related to movie reviews
-- **`rootdig`** (medium) — Genealogy blog providing links to genealogical resources
 - **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Search from command line in 106 different sources
@@ -794,7 +792,6 @@ kind: group-index
 - **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
 - **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
-- **`wikisummaries`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
 - **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
 - **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
 - **`wiley`** (low) — OSINT tool: Wiley.

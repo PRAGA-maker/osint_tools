@@ -19508,39 +19508,47 @@
   },
   {
     "id": "grab-site",
-    "name": "GRAB SITE",
-    "description": "Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with dozens of different settings that will optimize the process as much as possible.",
+    "name": "grab-site",
+    "description": "Use when you have a `domain` or `social-profile` URL and want to capture a full, court-quality WARC archive of it before it changes or disappears — returns a self-contained WARC archive (evidence preservation, no selector output).",
     "url": "https://github.com/ArchiveTeam/grab-site",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Recursively crawling and preserving a target website or profile to WARC with a live dashboard and adjustable ignore rules.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (ArchiveTeam). Costs are only your own bandwidth and disk.",
+    "opsec": "active",
+    "opsecNote": "This is ACTIVE — a recursive crawl hits the target's server directly and appears in their logs (source IP, User-Agent, request volume). Crawl from a sock-puppet VPS/IP, throttle with --delay and --concurrency, and prefer a one-shot capture (--1) if you only need a single page. Never point it at a login-gated area you accessed with the subject's credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by ArchiveTeam (the group behind large-scale web preservation); widely used, open-source, produces standard WARC readable in any WARC viewer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "grab-site",
+      "ArchiveTeam grab-site"
+    ],
     "tags": [
       "Archives",
       "Tools for working with WARC (WebARChive) files"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/grab-site.md"
   },
   {
@@ -31193,41 +31201,58 @@
   {
     "id": "loveaholics",
     "name": "Loveaholics",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
+    "description": "Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating site — returns a `social-profile` with photos, stated age/location and physical description.",
     "url": "https://www.loveaholics.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a subject maintains a dating profile on Loveaholics and reading the profile's photos, location and self-described details.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "physical-description",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Registration is free; browsing/search is available to members, but messaging and some features are paywalled. No purchase needed for the existence/profile check.",
+    "opsec": "active",
+    "opsecNote": "This is ACTIVE — you must register and, to browse, appear as a live member; viewing a profile can surface you in the target's \"who viewed you\" and the platform records your account and IP. Always use a fully disposable sock-puppet identity, sock-puppet email, and clean browser/IP; never use a real or attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Part of a large affiliate dating network widely reported to carry fake/bot profiles and aggressive upsells; treat any profile as unverified and possibly not the real person.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Loveaholics.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/loveaholics.md"
   },
   {
@@ -33045,43 +33070,49 @@
   {
     "id": "nursingforum-co-uk",
     "name": "nursingforum.co.uk",
-    "description": "OSINT tool: nursingforum.co.uk.",
+    "description": "Use when you have a `username` or `name` and want to find a UK nurse's forum posts, member profile, or jobseeker/CV entries — returns a `social-profile` and possible `employer-org` context.",
     "url": "http://www.nursingforum.co.uk/default.aspx",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a UK nursing professional's forum activity, member profile, or CV/jobseeker posts by username or name.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and register; account needs only email, username and password. No payment for public sections.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public forum threads and member profiles is passive and leaves no trace to the target. If you register to reach gated areas you create an account record on a third-party site — use a sock-puppet email. The \"Nurses Only Forum\" asks for NMC registration credentials you will not have; do not attempt to fake professional credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small independent UK community board (© Hillcroft Surgery Supplies Ltd); user-generated content, so treat any claim as a lead, not verified fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nursing Forum UK"
+    ],
     "tags": [
       "forums",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/nursingforum-co-uk.md"
   },
   {
@@ -39545,24 +39576,27 @@
   {
     "id": "w3newspapers",
     "name": "W3Newspapers",
-    "description": "World newspapers, news sites, and magazines categorized by country",
+    "description": "Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituaries or notices — returns links to regional news outlets (a pivot, no direct selector output).",
     "url": "http://www.w3newspapers.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the right local/regional newspaper sites for a given country so you can search them for a subject's name, obituary, or notices.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory of links; no account. Individual newspaper sites may have their own paywalls.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The directory itself is a passive link index. Searching each newspaper afterwards is also passive, but some outlets set cookies or require registration — use a clean browser if you want to avoid a trail on a specific paper.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running curated link directory; it points you at outlets but publishes no data of its own, so quality risk lives in the destination sites, not here.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -39571,15 +39605,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "W3 Newspapers"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/w3newspapers.md"
   },
   {
@@ -63751,52 +63787,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/1-and-1-ionos-united-states.md"
-  },
-  {
-    "id": "876-solutions-jamaica",
-    "name": "876 Solutions (Jamaica)",
-    "description": "Jamaican service provider for registering websites and domain addresses",
-    "url": "http://www.876solutions.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/876-solutions-jamaica.md"
   },
   {
     "id": "aa419-fake-sites-database",
@@ -118438,14 +118428,14 @@
   },
   {
     "id": "flickr-common-map",
-    "name": "Flickr Common Map",
-    "description": "displays only Flickr photos distributed under a Creative Commons license (250 of the latest for each location)",
+    "name": "Flickr Commons Map",
+    "description": "Use when you have an old/undated `image` or a `geolocation` and want to browse geotagged Flickr Commons archive photos for that place to help identify or place a scene — returns candidate matching historical photos and their `geolocation`.",
     "url": "http://www.whatsthatpicture.com/flickr/commons-map.php",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Locating historical, copyright-free Flickr Commons archive photographs by place on a world map to assist old-photo identification and scene matching.",
     "selectorsIn": [
       "geolocation",
       "image"
@@ -118453,29 +118443,35 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public tool; no account. Built on the Flickr API over the Flickr Commons (public archive) collection.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public map of institutional archive photos; nothing is sent to or about a living subject. Standard web-request egress only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent project by James Morley (What's That Picture) using the Flickr API and OpenLayers over Flickr Commons; it surfaces institutional archive images, so provenance traces back to named cultural institutions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Flickr Commons World Map",
+      "What's That Picture Flickr map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Social media and photos"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/flickr-common-map.md"
   },
   {
@@ -151053,42 +151049,50 @@
   },
   {
     "id": "stop-fake-tools",
-    "name": "Stop Fake Tools",
-    "description": "Investigating Ukraine-focused propaganda and disinformation narratives",
+    "name": "StopFake",
+    "description": "Use when you have an `image`, claim, or narrative (especially Russia/Ukraine-related) and want to check whether it has already been debunked or contextualized — returns fact-check verdicts, source analysis and provenance context (no direct selector output).",
     "url": "http://www.stopfake.org/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fact-checking-tools"
     ],
-    "bestFor": "Investigating Ukraine-focused propaganda and disinformation narratives",
-    "input": "Claims, narratives, and media artifacts related to regional information operations",
-    "output": "Debunks, context analysis, and educational guidance",
-    "selectorsIn": [],
+    "bestFor": "Verifying or debunking disinformation, staged media and false narratives, with a strong focus on the Russia/Ukraine information space.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; no account.",
     "opsec": "passive",
-    "opsecNote": "Read-only consumption of published reporting and educational content.",
+    "opsecNote": "Passive — you read published fact-checks and search an archive. Nothing is disclosed to any subject; requests originate from your IP like any web read.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established Ukrainian fact-checking project (originating at Kyiv-Mohyla journalism school); reputable within the anti-disinformation community, though it has an explicit editorial focus (counter-Russian-disinformation) to keep in mind.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "StopFake.org"
+    ],
+    "tags": [
+      "fact-checking",
+      "disinformation",
+      "verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-checking-tools/stop-fake-tools.md"
   },
   {
@@ -162243,38 +162247,50 @@
   {
     "id": "commentgram-cse",
     "name": "Commentgram CSE",
-    "description": "search by Telegram comments",
+    "description": "Use when you have a `username`, `name` or keyword and want to search across indexed Telegram channel comments/discussion for it — returns matching Telegram posts and commenter `social-profile` links.",
     "url": "https://cse.google.com/cse?cx=006368593537057042503:ig4r3rz35qi#gsc.tab=0",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Keyword/username search over Google-indexed Telegram comment and discussion pages via a purpose-built Custom Search Engine.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account or key. Results limited to what Google has indexed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query Google's index, not Telegram directly, so the target's channel is not touched and gets no signal. Heavy repeated querying can trigger a Google CAPTCHA; solve it and continue.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Google CSE (creator-defined site list); its coverage scope is opaque and can silently drift, so absence of results is not proof of absence.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Commentgram",
+      "Telegram comments CSE"
+    ],
     "tags": [
       "Messengers",
       "Telegram"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/messaging/commentgram-cse.md"
   },
   {
@@ -272800,24 +272816,27 @@
   {
     "id": "bespacific",
     "name": "beSpacific",
-    "description": "Blog and searchable database of over 31,000 research updates relating to finance, government, privacy, security, legislation and more",
+    "description": "Use when you have a topic, agency, or `name` tied to law/tech/government and want a curated, searchable feed of primary-source reporting on it — returns links to authoritative documents and articles (a research pivot, no direct selector output).",
     "url": "http://www.bespacific.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Topic-driven research on law, privacy, surveillance, government and technology via a long-running curated blog with a searchable 20+ year archive.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; no account. Some linked primary sources may sit behind their own paywalls.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — reading and searching a public research blog. Requests come from your IP and reveal nothing to any subject. If you follow links to logging destinations, standard web-hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authored since 2002 by law librarian Sabrina I. Pacifici; a widely respected, single-author professional resource that links to primary sources rather than publishing rumor.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -272826,15 +272845,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "beSpacific.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "legal-research"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bespacific.md"
   },
   {
@@ -291100,46 +291122,6 @@
     "_file": "library/tools/search-engines/mymunka-safe-search-engine-for-kids.md"
   },
   {
-    "id": "mysimon-shopping-search-engine",
-    "name": "mySimon Shopping Search Engine",
-    "description": "A comparison shopping website offering recommendations, buying advice, and price comparisons",
-    "url": "http://www.mysimon.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/mysimon-shopping-search-engine.md"
-  },
-  {
     "id": "mywoodle-com",
     "name": "Mywoodle.com",
     "description": "OSINT tool: Mywoodle.com.",
@@ -298361,49 +298343,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/roger-ebert.md"
-  },
-  {
-    "id": "rootdig",
-    "name": "RootDig",
-    "description": "Genealogy blog providing links to genealogical resources",
-    "url": "http://rootdig.blogspot.ca/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "free-classified-website-listing"
-    ],
-    "_file": "library/tools/search-engines/rootdig.md"
   },
   {
     "id": "rotten-tomatoes",
@@ -306746,46 +306685,6 @@
       "wikimedia-meta-wiki"
     ],
     "_file": "library/tools/search-engines/wikispecies.md"
-  },
-  {
-    "id": "wikisummaries",
-    "name": "Wikisummaries",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on books and literature",
-    "url": "http://www.wikisummaries.org/Main_Page",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/wikisummaries.md"
   },
   {
     "id": "wikitravel",
@@ -333718,47 +333617,6 @@
     "_file": "library/tools/social-networks/reddit-post-scraping-tool.md"
   },
   {
-    "id": "reddit-reditr",
-    "name": "Reddit - Reditr",
-    "description": "OSINT tool: Reddit - Reditr.",
-    "url": "http://reditr.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "social"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/reddit-reditr.md"
-  },
-  {
     "id": "reddit-search-cemulate",
     "name": "Reddit Search (cemulate)",
     "description": "Alternative Reddit search tool.",
@@ -348086,41 +347944,45 @@
   {
     "id": "wikit",
     "name": "WIKIT",
-    "description": "A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have to open browser (with Facebook, YouTube and other time eaters) to find out about something.",
+    "description": "Use when you have a `name` of a notable person, place or organization and want to read its Wikipedia summary from the command line — returns article text (no structured selector output).",
     "url": "https://github.com/KorySchneider/wikit",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Fast terminal lookup of a Wikipedia summary or full article for a named subject, scriptable into an OSINT pipeline.",
     "selectorsIn": [
-      "face",
-      "image"
+      "name"
     ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (npm). No account or API key.",
+    "opsec": "passive",
+    "opsecNote": "Queries Wikipedia's public API/pages; requests originate from your IP, not the target's, and reveal nothing to the subject. Route through your normal research egress like any web request.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source CLI wrapper (KorySchneider/wikit, ~290 stars); it only reformats Wikipedia, so data quality is Wikipedia's, not the tool's.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wikit cli"
+    ],
     "tags": [
       "Social Media",
       "Wikipedia"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/wikit.md"
   },
   {
