@@ -316,7 +316,6 @@ kind: group-index
 - **`online-link-scan`** (low) — Website that offers an online virus scanner that scans links for malware, trojans and viruses
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
 - **`opera`** (low) — OSINT tool: Opera.
-- **`osint-sync-karamabbasi05`** (medium) — Browser extension to discover usernames, emails, and phone numbers across 20+ platforms.
 - **`osint-sync`** (low) — Browser extension for OSINT (Osint Sync).
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
 - **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.

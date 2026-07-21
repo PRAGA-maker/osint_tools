@@ -99,7 +99,7 @@ kind: group-index
 - **`genealogy-bank`** (high) — Use when you have a US `name` and want historical newspapers and obituaries — returns obituaries, articles, and SSDI records yielding `dob`/
 - **`genealogy-links`** (high) — Use when you have a `name` and want the right regional genealogy/vital-records source — returns a directory of 50k+ curated links to birth/m
 - **`getcontact`** (high) — Use when you have a `phone` number and want the name(s) other people saved it under — returns crowdsourced name tags and profile hints.
-- **`ghostintel`** (medium) — Python OSINT framework for investigation via username, email, domain, IP, and phone.
+- **`ghostintel`** (medium) — Use when you have a `username`, `email`, `domain`, `ip-address` or `phone` and want a one-command recon sweep across public sources — return
 - **`ghostrecon`** (medium) — Use when you have a `username`, `email`, `phone`, `ip-address`, or `domain` and want a scripted recon sweep — returns social profiles, netwo
 - **`globalexperts`** (medium) — OSINT tool: GlobalExperts.
 - **`gofindwho-com`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `address` and want a curated set of pre-built search forms that pivot across fr

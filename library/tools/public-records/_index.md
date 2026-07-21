@@ -1029,7 +1029,7 @@ kind: group-index
 - **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
 - **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
 - **`youcontrol`** (medium) — Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, address
-- **`zendy-io`** (medium) — Discover academic journals, articles, & books on one seamless platform. Search keyword, authors, titles ISBN, ISSN etc
+- **`zendy-io`** (medium) — Use when you have a researcher's `name` (or a topic) and want their academic publications, affiliations and co-authors across many publisher
 - **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.
 - **`zillow`** (medium) — Use when you have a US `address` and want property details, sale/price history and interior photos — returns geolocation, physical-descripti
 - **`zoominfo`** (medium) — Use when you have a person `name` or `employer-org` and want their job title, company and colleagues — returns employer-org, address and ass

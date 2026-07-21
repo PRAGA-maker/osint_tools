@@ -316,7 +316,7 @@ kind: group-index
 - **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
 - **`google-search`** (low) — OSINT tool: Google Search.
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
-- **`google-to-search-profiles-on-stack-overflow`** (medium) — OSINT tool: Google to search profiles on Stack Overflow.
+- **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia
 - **`google-unlocked`** (low) — browser extension uncensor google search results
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
 - **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
