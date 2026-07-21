@@ -65,7 +65,7 @@ kind: group-index
 - **`collegeblender`** (medium) — University lifestyle networking website
 - **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
-- **`computerworld`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`computerworld`** (low) — Use when you have a `name` or `employer-org` in enterprise IT and want long-run coverage — returns `employer-org`, `associate` and professio
 - **`computing`** (low) — Use when you have a `name` or `employer-org` in the UK tech/IT sector and want to search a leading trade publication for coverage — returns 
 - **`context`** (medium) — Use when you have a `username` or keyword and want to find pastes/leaked text shared on ctxt.io — returns email, username and password.
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
@@ -134,7 +134,6 @@ kind: group-index
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-10`** (medium) — OSINT tool: google.com.
 - **`google-com-12`** (medium) — OSINT tool: google.com.
-- **`google-com-14`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
@@ -142,7 +141,6 @@ kind: group-index
 - **`google-com-33`** (medium) — OSINT tool: google.com.
 - **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
-- **`google-com-39`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
@@ -187,7 +185,7 @@ kind: group-index
 - **`mashable`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
 - **`medium`** (low) — OSINT tool: Medium.
-- **`meetic-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`meetic-com-europe`** (medium) — Use when you have a `username`, `name` or photo and want to check for a Meetic dating profile in Europe — returns the linked `social-profile
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
 - **`metafilter`** (medium) — Communitu blogging website allowing anyone to contribute
 - **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
@@ -314,7 +312,7 @@ kind: group-index
 - **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
 - **`tech-advisor-uk`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
-- **`techcrunch`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
+- **`techcrunch`** (low) — Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer
 - **`technorati-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
 - **`techrepublic`** (low) — Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads me

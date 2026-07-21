@@ -106,7 +106,7 @@ kind: group-index
 - **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
 - **`quick-geolocation-search`** (low) — A tool that brings several maps into one place for easy location search.
 - **`radar-interference-tracker-rit`** (low) — Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.
-- **`radio-garden`** (medium) — OSINT tool: Radio Garden.
+- **`radio-garden`** (low) — Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language cont
 - **`rammb-slider`** (low) — Real-time weather satellites of the entire globe
 - **`resource-watch`** (low) — A free open-data platform that hosts 300+ datasets on different topics relating to the environment and human well-being, including real-time
 - **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow

@@ -83,7 +83,7 @@ kind: group-index
 - **`oodle-classified-advertisements-united-states`** (medium) — Use when you have a `geolocation` and keyword/`name` and want US classifieds across many sources at once — returns aggregated listings that 
 - **`oodle-online-classifieds`** (medium) — Use when you have a `name`, seller handle, or item and want classified listings across many sites at once — returns aggregated ads for cars,
 - **`plenty-of-fish-com`** (high) — Use when a subject may have a dating profile — search POF by username/area/age to surface a photo, self-description, and approximate locatio
-- **`plentyoffish-online-dating`** (medium) — OSINT tool: PlentyOfFish (Online Dating).
+- **`plentyoffish-online-dating`** (medium) — Use when you have a `username`, `name` or photo and want to check for a POF dating profile — returns the linked `social-profile` and self-di
 - **`pornhoard-com`** (medium) — OSINT tool: pornhoard.com.
 - **`quikr-classified-ads-india`** (medium) — Use when you have a `name`, handle, or location in India and want a subject's classified ads — returns listings with seller display name, ph
 - **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu

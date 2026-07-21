@@ -26041,42 +26041,48 @@
   },
   {
     "id": "computerworld",
-    "name": "ComputerWorld",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
-    "url": "http://www.computerworld.com",
+    "name": "Computerworld",
+    "description": "Use when you have a `name` or `employer-org` in enterprise IT and want long-run coverage — returns `employer-org`, `associate` and professional-timeline context from articles.",
+    "url": "https://www.computerworld.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Enterprise-IT press coverage — tracing IT leaders, vendors, and long-standing tech-industry figures.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news site transmits nothing about your subject. Fully passive; a private window avoids personalisation cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "A long-established enterprise-IT publication (Foundry/IDG). Reliable secondary source with a decades-long archive, subject to the usual journalistic caveats.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ComputerWorld",
+      "computerworld.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/computerworld.md"
   },
   {
@@ -29255,48 +29261,6 @@
     "_file": "library/tools/communities-forums/google-com-12.md"
   },
   {
-    "id": "google-com-14",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Amoney-talk.org&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-14.md"
-  },
-  {
     "id": "google-com-21",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -29589,48 +29553,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-36.md"
-  },
-  {
-    "id": "google-com-39",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Abigsoccer.com/forums/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-39.md"
   },
   {
     "id": "google-com-9",
@@ -31743,42 +31665,56 @@
   },
   {
     "id": "meetic-com-europe",
-    "name": "Meetic.com (Europe)",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://www.meetic.com",
+    "name": "Meetic (Europe)",
+    "description": "Use when you have a `username`, `name` or photo and want to check for a Meetic dating profile in Europe — returns the linked `social-profile` and self-disclosed detail.",
+    "url": "https://www.meetic.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a European subject has a Meetic dating profile and reading its public detail.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse limited profiles; messaging and full visibility are paid. Viewing requires a (sock-puppet) account; country sites redirect (e.g. meetic.fr, meetic.es).",
+    "opsec": "active",
+    "opsecNote": "Meetic is a live dating platform that can show profile visitors and requires login — browsing can leave a footprint and potentially surface you to the target. Use a fully isolated sock-puppet account with no real details or photo, and match the correct country site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A major, real European dating brand (Match Group). Profiles are self-authored and unverified; ages, locations, and photos should be treated as leads to corroborate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "eu"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Meetic",
+      "meetic.com",
+      "meetic.fr"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/meetic-com-europe.md"
   },
   {
@@ -37678,41 +37614,47 @@
   {
     "id": "techcrunch",
     "name": "TechCrunch",
-    "description": "Online articles and news related to business, computers, gadgets, technology, gaming, and future trends",
-    "url": "http://techcrunch.com",
+    "description": "Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer-org`, `associate` and timeline context.",
+    "url": "https://techcrunch.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracing startup founders, executives, funding rounds, and company histories through tech-press coverage.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported, no hard paywall on standard articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news site transmits nothing about your subject. Fully passive; a private window avoids personalisation cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "A leading, long-running technology/startup news outlet (Yahoo). Reliable secondary source for the tech and venture world, with the usual journalistic caveats.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TechCrunch",
+      "techcrunch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/techcrunch.md"
   },
   {
@@ -49465,46 +49407,56 @@
   },
   {
     "id": "plentyoffish-online-dating",
-    "name": "PlentyOfFish (Online Dating)",
-    "description": "OSINT tool: PlentyOfFish (Online Dating).",
-    "url": "http://www.plentyoffish.com",
+    "name": "PlentyOfFish (POF)",
+    "description": "Use when you have a `username`, `name` or photo and want to check for a POF dating profile — returns the linked `social-profile` and self-disclosed detail (age, area, photos).",
+    "url": "https://www.pof.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a subject has a Plenty of Fish dating profile and reading its public detail.",
     "selectorsIn": [
+      "username",
       "name",
-      "username"
+      "image"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to join and browse; some messaging/visibility features are paid. Viewing profiles requires a (sock-puppet) account.",
+    "opsec": "active",
+    "opsecNote": "POF shows other users who viewed their profile and is a live social platform — browsing while logged in can alert the target and leaves a footprint. Always use a fully isolated sock-puppet account, disable \"recent visitors\" exposure where possible, and never use a real identity or photo.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large, real dating platform (Match Group). Profiles are self-authored — ages, locations, and photos are unverified and often deliberately vague; treat as leads.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "forums-plentyoffish-com"
+    ],
+    "aliases": [
+      "Plenty of Fish",
+      "POF",
+      "pof.com"
+    ],
     "tags": [
       "dating"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "forums-plentyoffish-com"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/plentyoffish-online-dating.md"
   },
   {
@@ -114420,51 +114372,6 @@
     "_file": "library/tools/financial-crypto/start-me.md"
   },
   {
-    "id": "thenextweb-com",
-    "name": "thenextweb.com",
-    "description": "OSINT tool: thenextweb.com.",
-    "url": "https://thenextweb.com/news/bitcoin-money-laundering-2",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thenextweb"
-    ],
-    "_file": "library/tools/financial-crypto/thenextweb-com.md"
-  },
-  {
     "id": "tmx",
     "name": "TMX",
     "description": "OSINT tool: TMX.",
@@ -150566,40 +150473,48 @@
   {
     "id": "skyline-webcams",
     "name": "Skyline Webcams",
-    "description": "OSINT tool: Skyline Webcams.",
+    "description": "Use when you have a `geolocation` and want a live public webcam of that place — returns real-time `image`/video of the location for verification and monitoring.",
     "url": "https://www.skylinewebcams.com/webcam.html",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a live public webcam near a location to verify current conditions or monitor a place in real time.",
     "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free live streams for most cams; a premium tier adds features (higher quality, timelapse/archive on some cams). Browsing the catalogue is free, no account.",
+    "opsec": "passive",
+    "opsecNote": "You watch a publicly broadcast webcam; nothing is sent to any target and no one is notified. Fully passive. The feeds are operator-published public cams — treat what they show as public, and be mindful that people incidentally on camera are bystanders.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An established global webcam aggregator hosting operator-provided live feeds. The service is reliable; individual cam locations/labels should be sanity-checked, as labels can be approximate.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SkylineWebcams",
+      "skylinewebcams.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Worldwide street webcams"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/skyline-webcams.md"
   },
   {
@@ -160271,35 +160186,48 @@
   {
     "id": "radio-garden",
     "name": "Radio Garden",
-    "description": "OSINT tool: Radio Garden.",
-    "url": "http://radio.garden/search",
+    "description": "Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language context and chronolocation cues.",
+    "url": "https://radio.garden",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Listening to live local radio at a specific place on a spinnable globe — useful for language, cultural, and time-of-day context.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use in-browser; no account. Ad-free listening.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You listen to a public radio stream selected on a map; nothing is sent to any target. Fully passive. The stream is a third-party broadcast; use a VPN if you want the listening off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A well-known cultural project mapping thousands of live radio streams to their broadcast locations. Reliable as a listening tool; station geolocation is approximate to the broadcaster's city.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "radio.garden"
+    ],
+    "tags": [
+      "maps",
+      "radio",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/radio-garden.md"
   },
   {
@@ -319884,40 +319812,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/social-networks/ghostcodes-addmesnaps-directories.md"
-  },
-  {
-    "id": "ghostcodes-com",
-    "name": "Ghostcodes.com",
-    "description": "OSINT tool: Ghostcodes.com.",
-    "url": "https://www.ghostcodes.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/ghostcodes-com.md"
   },
   {
     "id": "ghunt-online-version",

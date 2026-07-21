@@ -111,7 +111,6 @@ kind: group-index
 - **`secjuice-com`** (medium) — OSINT tool: secjuice.com.
 - **`sortcodes-co-uk`** (medium) — Use when you have a UK bank `document-id` (six-digit sort code) and want to identify the bank and branch behind it — returns the institution
 - **`start-me`** (medium) — Use when you have a `crypto-wallet` or a crypto-investigation goal and want a curated directory of blockchain/crypto OSINT tools — returns p
-- **`thenextweb-com`** (medium) — OSINT tool: thenextweb.com.
 - **`tmx-tsx`** (low) — OSINT tool: TMX TSX.
 - **`tmx`** (low) — OSINT tool: TMX.
 - **`token-view`** (low) — OSINT tool: Token View.

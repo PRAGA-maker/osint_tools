@@ -204,7 +204,6 @@ kind: group-index
 - **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
 - **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
 - **`ghostcodes-addmesnaps-directories`** (medium) — Use when you have a `name`, interest, or handle and want to find someone's Snapchat account — returns public Snapchat usernames from opt-in 
-- **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
 - **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
 - **`git-awards`** (low) — Rank GitHub users and repositories.
 - **`gitcolombo`** (medium) — Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlate
