@@ -517,7 +517,7 @@ kind: group-index
 - **`oceanhero`** (medium) — Use when you want a Bing-backed alternate search front-end to cross-check or de-personalize web results — returns web results powered by Mic
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
 - **`octosearch-dootech-com`** (medium) — Use when you want to search GitHub repositories starred by people you follow — a personal discovery tool over your own GitHub network's cura
-- **`od-search-tool`** (medium) — Open directory search tool.
+- **`od-search-tool`** (medium) — Use when you have a filename, `name` or keyword and want files sitting in exposed open web directories — returns direct links to publicly li
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
 - **`odin`** (medium) — Use when you have an `ip-address` or `domain` and want its exposed hosts/services — returns open ports, services, banners, and certificate/h
 - **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
@@ -543,7 +543,7 @@ kind: group-index
 - **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
 - **`orion`** (low) — open-Source Search Engine for social networking websites.
 - **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
-- **`oscobo`** (medium) — Privacy-oriented search engine that keeps searches private through SSL encryption and does not store personal information
+- **`oscobo`** (medium) — Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links
 - **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
 - **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
 - **`osint-cheat-sheet`** (low) — Use when you need to discover more OSINT tools, datasets, or techniques for a selector — a curated index pointing to resources across people
@@ -589,7 +589,7 @@ kind: group-index
 - **`productreviews-australia`** (medium) — Website related to product reviews
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
-- **`property-services-regulatory-authority`** (medium) — Irelands Property Services Regulatory Authority
+- **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
 - **`pubmed`** (low) — OSINT tool: PubMed.
 - **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.

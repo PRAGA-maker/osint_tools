@@ -118,7 +118,6 @@ kind: group-index
 - **`tradint-research-tool`** (low) — OSINT tool: Tradint Research Tool.
 - **`trustonline-org-uk`** (medium) — OSINT tool: trustonline.org.uk.
 - **`uk-equifax-com`** (medium) — OSINT tool: uk.equifax.com.
-- **`unclaimedestates-com`** (medium) — OSINT tool: unclaimedestates.com.
 - **`validate-creditcard`** (medium) — OSINT tool: validate.creditcard.
 - **`wallet-labels`** (low) — Search across more than 7.5M #Ethereum addresses labeled to easily identify wallets and exchange
 - **`wearepay-uk`** (medium) — OSINT tool: wearepay.uk.

@@ -108,7 +108,7 @@ kind: group-index
 - **`geoplatform-portal`** (low) — Use when you have a `geolocation` or `address` and want authoritative U.S. federal geospatial layers — returns geolocation context (boundari
 - **`geoportail-france`** (high) — Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadast
 - **`geoprotests-api`** (medium) — Use when you have a location/date and want geolocated protest-event records for that place and time — returns geolocation and address.
-- **`geoseer-net`** (medium) — OSINT tool: Geoseer.net.
+- **`geoseer-net`** (medium) — Use when you have a place `geolocation` or theme and want to find published GIS/spatial datasets and live map services covering it — returns
 - **`geovisual-search`** (medium) — Use when you want to find places that look like a chosen feature in satellite imagery (visual similarity search across the globe).
 - **`global-biodiversity-information-facility`** (low) — Use when you have a species name or a `geolocation` and want to know where a plant/animal occurs — returns mapped occurrence points that hel
 - **`global-conflict-tracker`** (low) — Use when you have a `geolocation`/region and want to understand active armed conflicts there — returns conflict status, actors and regional 

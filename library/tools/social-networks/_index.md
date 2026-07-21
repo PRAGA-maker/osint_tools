@@ -75,7 +75,7 @@ kind: group-index
 - **`buffer`** (low) — Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwi
 - **`burrrd`** (medium) — OSINT tool: burrrd..
 - **`buzz-sumo`** (low) — Use when you have a topic, `domain`, or `name` and want to find their top content, who shared it, and connected authors/journalists — return
-- **`calialec-snap-map-private-api`** (medium) — OSINT tool: CaliAlec/snap-map-private-api.
+- **`calialec-snap-map-private-api`** (medium) — Use when you have a `geolocation` (coordinates/place) and want the public Snapchat snaps and stories posted there — returns Snap Map media w
 - **`castrick`** (high) — Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-pr
 - **`channel-crawler`** (low) — OSINT tool: Channel Crawler.
 - **`chartmasters-org-spotify-streaming-numbers-tool`** (low) — Use when you have an artist `name` and want their Spotify streaming totals per track — returns a public activity/popularity profile for that

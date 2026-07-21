@@ -140,7 +140,6 @@ kind: group-index
 - **`lullar-com-3-appspot-com`** (high) — Use when you have an `email`, `username`, or `name` and want to sweep 175+ platforms for matching public profiles in one query — returns soc
 - **`manycontacts-mail-check`** (medium) — Use when you have an `email` and want to know if it's valid/deliverable before pivoting on it — returns an existence/deliverability verdict,
 - **`mattiapasti-com`** (high) — Use when you have a `name` (first + last) and want to sweep many social platforms for matching profiles at once — returns social-profile, us
-- **`maven`** (medium) — OSINT tool: Maven.
 - **`melissa-com`** (high) — Use when you have a US `name`, `email`, `phone` or `address` fragment and want verified, cross-linked contact data — returns matched `addres
 - **`melissa-us-2`** (high) — Use when you have a `name`, `address`, `phone` or `email` and want to verify and enrich it into full contact detail — returns matched name, 
 - **`melissa-us`** (high) — Use when you have a US `address` (or name/phone) and want to verify/normalise it and find associated residents — returns standardised `addre
@@ -190,7 +189,7 @@ kind: group-index
 - **`political-graveyard`** (medium) — Use when you have a `name` of a US political figure (or their relative) and want biographical and burial data — returns life dates, offices 
 - **`political-moneyline-us`** (high) — Use when you have a `name` and want US political-donation and lobbying records tied to that person — returns the donor's home address, emplo
 - **`private-eye`** (high) — Use when you have a `name`, `phone`, or `email` and want a US people-search profile — returns address, phone, and associate (relatives) lead
-- **`prnewswire`** (medium) — OSINT tool: PRNewswire.
+- **`prnewswire`** (medium) — Use when you have a company `employer-org` or person `name` and want press releases naming executives, spokespeople and media contacts — ret
 - **`public-info-directory-us`** (high) — Use when you have a US `name` and want a free aggregated people/public-records profile — returns addresses, phones, relatives, and record po
 - **`publicrecordsnow`** (high) — Use when you have a `name`, `phone`, or `address` and want an aggregate people-search profile — teases addresses, phones, relatives, and bac
 - **`radaris-people-and-business-search-north-america`** (high) — Use when you have a `name`, `phone` or `address` and want a US person's contacts and associates — returns addresses, phone numbers, relative

@@ -203,7 +203,7 @@ kind: group-index
 - **`vin-check-reports`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want a free vehicle-history report — returns title/theft/salvage records, recalls, specs
 - **`vin-decoder-and-lookup`** (low) — Use when you have a `vin` and want to decode the vehicle's year, make, model and specs for free — returns a physical-description to confirm 
 - **`vin-decoder`** (medium) — Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing 
-- **`vin-info`** (medium) — OSINT tool: Vin-Info.
+- **`vin-info`** (medium) — Use when you have a `vin` and want a vehicle-history/decoder report — returns technical specs, damage/auction/mileage history and historical
 - **`vincheck-info`** (medium) — Use when you have a `vin` or `vehicle-plate` and want a free vehicle history — returns title/salvage/theft history, specs, and recalls (vehi
 - **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
 - **`wandermap`** (low) — hiking routes world map

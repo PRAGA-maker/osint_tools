@@ -7,7 +7,7 @@ kind: group-index
 # archives-cache/public-datasets
 
 ## Skills here
-- **`labeled-faces-in-the-wild-db`** (medium) — Facial recognition benchmarking and person-image research baselines
+- **`labeled-faces-in-the-wild-db`** (medium) — Use when you need a labeled benchmark set of real-world `face` images to test, tune or baseline a face-recognition/verification pipeline — r
 - **`stanford-large-network-dataset-collection`** (medium) — Network analysis modeling and graph-based OSINT experimentation
 - **`uci-spambase-data-set`** (medium) — Email spam model benchmarking and feature-engineering practice
 - **`visual-genome`** (medium) — Image relationship analysis and multimodal data research

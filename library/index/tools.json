@@ -19811,42 +19811,55 @@
   },
   {
     "id": "labeled-faces-in-the-wild-db",
-    "name": "Labeled Faces in the Wild DB",
-    "description": "Facial recognition benchmarking and person-image research baselines",
+    "name": "Labeled Faces in the Wild (LFW)",
+    "description": "Use when you need a labeled benchmark set of real-world `face` images to test, tune or baseline a face-recognition/verification pipeline — returns 13,233 named face photos of 5,749 people.",
     "url": "https://vis-www.cs.umass.edu/lfw/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "public-datasets"
     ],
-    "bestFor": "Facial recognition benchmarking and person-image research baselines",
-    "input": "Dataset download request",
-    "output": "Labeled face image dataset files and metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A canonical labeled face dataset for benchmarking and validating face-recognition tools before you trust them on a case.",
+    "selectorsIn": [
+      "face"
+    ],
+    "selectorsOut": [
+      "face",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free academic download; no account or payment. Also bundled in scikit-learn, TensorFlow Datasets and similar libraries.",
     "opsec": "passive",
-    "opsecNote": "Static academic dataset retrieval with no direct target interaction.",
+    "opsecNote": "Static academic dataset retrieval — no target interaction and nothing exposed. Note the images are real people (mostly public figures) scraped from news; handle in line with data-use norms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, widely cited benchmark maintained by University of Massachusetts researchers; the de-facto reference set for face-verification evaluation.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LFW",
+      "Labeled Faces in the Wild"
+    ],
+    "tags": [
+      "face-dataset",
+      "benchmark",
+      "public-dataset"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/public-datasets/labeled-faces-in-the-wild-db.md"
   },
   {
@@ -114958,48 +114971,6 @@
     "_file": "library/tools/financial-crypto/uk-equifax-com.md"
   },
   {
-    "id": "unclaimedestates-com",
-    "name": "unclaimedestates.com",
-    "description": "OSINT tool: unclaimedestates.com.",
-    "url": "https://www.unclaimedestates.com/search",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/unclaimedestates-com.md"
-  },
-  {
     "id": "validate-creditcard",
     "name": "validate.creditcard",
     "description": "OSINT tool: validate.creditcard.",
@@ -120241,36 +120212,50 @@
   },
   {
     "id": "geoseer-net",
-    "name": "Geoseer.net",
-    "description": "OSINT tool: Geoseer.net.",
+    "name": "GeoSeer",
+    "description": "Use when you have a place `geolocation` or theme and want to find published GIS/spatial datasets and live map services covering it — returns WMS/WFS/WCS/WMTS layers you can pull for imagery, boundaries and features.",
     "url": "https://www.geoseer.net/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching millions of public GIS spatial datasets (WMS/WFS/WCS/WMTS) by place and theme.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Web search is free; an API and higher-volume/commercial use are licensed/paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public index of spatial-data services; no target interaction. Note that opening a discovered WMS/WFS service does hit that third-party GIS server directly, so use a clean session if the service operator is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent, well-known spatial-data search index (3.5M+ datasets across 400k+ live services); it points to third-party services whose accuracy and uptime it does not control.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "geoseer.net",
+      "spatial data search engine"
+    ],
+    "tags": [
+      "gis",
+      "spatial-data",
+      "maps"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geoseer-net.md"
   },
   {
@@ -201770,42 +201755,6 @@
     "_file": "library/tools/people-search/mattiapasti-com.md"
   },
   {
-    "id": "maven",
-    "name": "Maven",
-    "description": "OSINT tool: Maven.",
-    "url": "http://www.maven.co",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/maven.md"
-  },
-  {
     "id": "melissa-com",
     "name": "melissa.com",
     "url": "https://www.melissa.com/v2/lookups/personatorsearch/",
@@ -204627,41 +204576,57 @@
   },
   {
     "id": "prnewswire",
-    "name": "PRNewswire",
-    "description": "OSINT tool: PRNewswire.",
+    "name": "PR Newswire (for Journalists)",
+    "description": "Use when you have a company `employer-org` or person `name` and want press releases naming executives, spokespeople and media contacts — returns names, roles, organizations and often a PR contact `email`/phone.",
     "url": "https://prnmedia.prnewswire.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mining corporate press releases for named executives, spokespeople and PR-contact details, plus expert sourcing via ProfNet.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for content creators (journalists, freelancers, bloggers); a free registration unlocks profile customization and full downloads, but releases are publicly readable.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching press releases is passive and anonymous. If you register or use ProfNet to contact a source, you reveal an identity — use a sock-puppet journalist profile, not your real one, and never contact a subject's associates from a traceable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Cision; PR Newswire is a major official press-release distributor, so releases are authentic primary documents (though written by the issuing organization, i.e. promotional).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "pr-newswire"
     ],
+    "aliases": [
+      "PRNewswire",
+      "PR Newswire for Journalists",
+      "prnmedia",
+      "ProfNet"
+    ],
+    "tags": [
+      "expert-search",
+      "press-releases"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/people-search/prnewswire.md"
   },
   {
@@ -293916,25 +293881,30 @@
   },
   {
     "id": "od-search-tool",
-    "name": "OD Search Tool",
-    "description": "Open directory search tool.",
+    "name": "OD Search Tool (Open Directories)",
+    "description": "Use when you have a filename, `name` or keyword and want files sitting in exposed open web directories — returns direct links to publicly listed files (docs, media, backups) on unprotected servers.",
     "url": "https://open-directories.reecemercer.dev",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching indexed open directories for exposed files by keyword or filename.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the index is passive, but DOWNLOADING a discovered file connects you directly to that (often unsecured, sometimes hostile) server, which logs your IP. Fetch discovered files through a VPN/sandbox, never from your real environment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent hobby project (by Reece Mercer) that queries open-directory indexes; coverage depends on what has been crawled and the hosted app could disappear without notice.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -293943,15 +293913,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "open-directories.reecemercer.dev",
+      "Reece Mercer Open Directory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "open-directories"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/od-search-tool.md"
   },
   {
@@ -295197,24 +295171,29 @@
   {
     "id": "oscobo",
     "name": "Oscobo",
-    "description": "Privacy-oriented search engine that keeps searches private through SSL encryption and does not store personal information",
+    "description": "Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links that can surface a `social-profile` or mention.",
     "url": "https://www.oscobo.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A no-tracking web search engine for OSINT queries you don't want logged to a personal profile.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account required. Also offers a free \"Oscobo Browser\" download.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Oscobo states it does not store personal information or track searches, which is the point — it reduces the trail your OSINT queries leave. Results are still fetched over the web; use with a VPN/sock-puppet if you need network-level anonymity too.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Privacy-marketed metasearch engine; its no-tracking claims are self-asserted and its index is not its own, so treat it as an alternative front-end rather than a unique data source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -295223,15 +295202,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "oscobo.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "privacy-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/oscobo.md"
   },
   {
@@ -297264,42 +297246,55 @@
   },
   {
     "id": "property-services-regulatory-authority",
-    "name": "Property Services Regulatory Authority",
-    "description": "Irelands Property Services Regulatory Authority",
+    "name": "Property Services Regulatory Authority (Ireland)",
+    "description": "Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`name`, licence, location) and residential property sale prices/dates by `address`.",
     "url": "https://www.psr.ie",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Ireland's official registers — licensed property-services providers plus the residential property price register (sale price/date by address).",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public registers; no account or payment. Data is viewable online and downloadable (PDF/Excel).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Official government registers queried directly; nothing is exposed to any individual and no login is used. Ordinary web access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "PSRA is Ireland's statutory regulator for the property-services sector; the registers are official records sourced from licensing data and Revenue stamp-duty declarations.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ie"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PSRA",
+      "psr.ie",
+      "Residential Property Price Register"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "ireland",
+      "property-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/property-services-regulatory-authority.md"
   },
   {
@@ -313002,44 +312997,51 @@
   {
     "id": "calialec-snap-map-private-api",
     "name": "CaliAlec/snap-map-private-api",
-    "description": "OSINT tool: CaliAlec/snap-map-private-api.",
+    "description": "Use when you have a `geolocation` (coordinates/place) and want the public Snapchat snaps and stories posted there — returns Snap Map media with location, timestamps and thumbnails.",
     "url": "https://github.com/calialec/snap-map-private-api",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling public Snap Map snaps/stories for a set of coordinates via Snapchat's unofficial map API.",
     "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Node.js library; no account or API key required, but you self-host it.",
+    "opsec": "passive",
+    "opsecNote": "The library hits Snapchat's public Snap Map endpoints from YOUR IP — no login is used and the posters are not notified, but the requests originate from you, so run it behind a VPN/sock-puppet if you don't want your IP hitting Snap's endpoints.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "api",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Unofficial community wrapper (single-author, minimal commit history) around Snapchat's private Snap Map API; unaffiliated with Snap and liable to break whenever Snap changes its endpoints.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "snap-map-private-api",
+      "Snapchat Snap Map API wrapper"
+    ],
     "tags": [
       "snapchat",
       "open-source",
-      "cli"
+      "cli",
+      "geolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/calialec-snap-map-private-api.md"
   },
   {
@@ -366139,43 +366141,48 @@
   {
     "id": "vin-info",
     "name": "Vin-Info",
-    "description": "OSINT tool: Vin-Info.",
-    "url": "https://uk.vin-info.com",
+    "description": "Use when you have a `vin` and want a vehicle-history/decoder report — returns technical specs, damage/auction/mileage history and historical photos (with a `geolocation` trail), NOT the current owner's identity.",
+    "url": "https://www.vin-info.com/en/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding a VIN and pulling a used-vehicle history report (damage, mileage, auction records, photos).",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic VIN decode (factory specs) is typically free; the full multi-source history report (damage, mileage, auction records, photos) is a paid per-report purchase.",
+    "opsec": "passive",
+    "opsecNote": "You query an aggregator's databases with a VIN; neither the seller nor any owner is notified. No login is needed for a basic decode. Only Vin-Info sees the VIN you submit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial third-party report aggregator combining many data sources; coverage and accuracy vary by region and vehicle, so treat records as leads, not proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "vin-info.com",
+      "uk.vin-info.com"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "vin-decode"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vin-info.md"
   },
   {
