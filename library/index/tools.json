@@ -29274,48 +29274,6 @@
     "_file": "library/tools/communities-forums/google-com-21.md"
   },
   {
-    "id": "google-com-24",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforums.overclockers.co.uk/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-24.md"
-  },
-  {
     "id": "google-com-29",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -190336,8 +190294,8 @@
   },
   {
     "id": "trace-my-ip",
-    "name": "Trace My IP",
-    "description": "Verifying visible IP and geolocation before OSINT operations",
+    "name": "Trace My IP (tracemyip.org)",
+    "description": "Use when you want to confirm your own visible `ip-address`/`geolocation` before operating, or to generate a tracking link — returns the visitor's IP, geolocation and connection details.",
     "url": "https://www.tracemyip.org/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -190345,36 +190303,44 @@
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Verifying visible IP and geolocation before OSINT operations",
-    "input": "No input required (detects current IP automatically)",
-    "output": "IP address, ISP, country, region, city, coordinates, and connection type",
+    "bestFor": "Verifying what IP/geolocation you are exposing (VPN/proxy self-check), and optionally creating tracking links/pixels that log visitors.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free to see your own IP/geo and to sign up for basic visitor tracking; advanced tracking (many sites, alerts, history) is paid.",
     "opsec": "active",
-    "opsecNote": "Logs your IP on visit; use only for verifying anonymization setup before conducting actual OSINT work.",
+    "opsecNote": "Visiting logs YOUR IP — that is the point when self-checking, but only visit through the setup you intend to use operationally. Its tracking-link feature, if you deploy it against a target, is ACTIVE and legally sensitive — sending someone a logging link to grab their IP can be unlawful/entrapment-adjacent depending on jurisdiction and consent; do not use it without authorisation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A long-running commercial IP-info and visitor-tracking service. Reliable for showing your own connection details; geolocation of any IP is ISP-level approximate, not a precise address.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "user-agent-string-decoder"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TraceMyIP",
+      "tracemyip.org"
+    ],
+    "tags": [
+      "vpn-test",
+      "ip-lookup"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/trace-my-ip.md"
   },
   {
@@ -243186,52 +243152,6 @@
     "_file": "library/tools/public-records/lexington-ky-employee-salaries-2021.md"
   },
   {
-    "id": "lexisnexis-advance-quicklaw",
-    "name": "LexisNexis Advance Quicklaw",
-    "description": "Legal-related search engine for legal court cases and documents with advanced search forms for a more precise search",
-    "url": "http://www.lexisnexis.ca/en-ca/products/quicklaw-full-service.page",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/lexisnexis-advance-quicklaw.md"
-  },
-  {
     "id": "libguides-community-search",
     "name": "LibGuides Community Search",
     "description": "Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide",
@@ -273524,42 +273444,50 @@
   },
   {
     "id": "bizjournals-business-news-search",
-    "name": "Bizjournals Business News Search",
-    "description": "Business-related news from over 4 million news articles",
-    "url": "http://www.bizjournals.com",
+    "name": "Bizjournals (American City Business Journals)",
+    "description": "Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and career/company context from articles.",
+    "url": "https://www.bizjournals.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "US metro-level business news — executives, local companies, deals, promotions, and awards across 40+ American cities.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Headlines, search, and article previews are free; full articles metered behind a subscription. Many people-relevant details appear in the free preview.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading a public news network transmits nothing about your subject. Fully passive; a private window avoids personalisation cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "American City Business Journals — an established US local-business news network across 40+ metros. Reliable secondary source with the usual journalistic caveats.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bizjournals",
+      "American City Business Journals",
+      "bizjournals.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "business"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bizjournals-business-news-search.md"
   },
   {
@@ -275056,25 +274984,33 @@
   {
     "id": "chromium-code-search",
     "name": "Chromium Code Search",
-    "description": "Code search tool",
+    "description": "Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and code context where the string appears.",
     "url": "https://source.chromium.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the vast Chromium/Chrome open-source codebase for a string, symbol, contributor, or leaked identifier.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "email",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public code browser hosted by Google; no account. Searchable via web UI.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google's public code-search index, not any target's own infrastructure; the person whose string you search is not notified. Fully passive. Use a VPN if you want the query off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Google's official code browser for the Chromium project. The code and commit metadata are authentic first-party open-source records.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -275082,15 +275018,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "source.chromium.org",
+      "cs.chromium.org",
+      "Chromium code search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "code-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/chromium-code-search.md"
   },
   {
@@ -277330,44 +277271,57 @@
   {
     "id": "debian-code-search",
     "name": "Debian Code Search",
-    "description": "Code search tool",
-    "url": "http://codesearch.debian.net",
+    "description": "Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and code context wherever it appears.",
+    "url": "https://codesearch.debian.net",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regex-searching the entire corpus of open-source software packaged in Debian for a string, identifier, or contributor.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "email",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public service run by the Debian project; no account. Supports regex search across all source packages.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Debian's public code index, not any target's infrastructure; no one is notified. Fully passive. Use a VPN if you want the query off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Official Debian project service indexing the source of tens of thousands of packages. Authentic first-party open-source records; attribution from commit/author metadata still needs corroboration.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "paste-debian",
+      "chromium-code-search"
+    ],
+    "aliases": [
+      "codesearch.debian.net",
+      "Debian code search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "code-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "paste-debian"
-    ],
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/debian-code-search.md"
   },
   {

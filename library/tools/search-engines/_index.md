@@ -106,7 +106,7 @@ kind: group-index
 - **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
 - **`bing-news`** (low) — OSINT tool: Bing News.
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
-- **`bizjournals-business-news-search`** (medium) — Business-related news from over 4 million news articles
+- **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
@@ -139,7 +139,7 @@ kind: group-index
 - **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
 - **`chegg-search-engine`** (medium) — Website that offers high school, college, and university book search services, including homework help, online tutoring, and application adv
 - **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
-- **`chromium-code-search`** (medium) — Code search tool
+- **`chromium-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and co
 - **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
 - **`citeseerx`** (medium) — Use when you have an author `name` and want their academic papers/citations — a free scientific-literature search engine (CS-heavy); returns
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
@@ -187,7 +187,7 @@ kind: group-index
 - **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
 - **`debate-cards`** (medium) — OSINT tool: Debate.cards.
-- **`debian-code-search`** (medium) — Code search tool
+- **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
 - **`defcad`** (medium) — Search engine for 3D printable models
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.

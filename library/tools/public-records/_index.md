@@ -551,7 +551,6 @@ kind: group-index
 - **`leolist`** (low) — OSINT tool: LeoList.
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
 - **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
-- **`lexisnexis-advance-quicklaw`** (medium) — Legal-related search engine for legal court cases and documents with advanced search forms for a more precise search
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE

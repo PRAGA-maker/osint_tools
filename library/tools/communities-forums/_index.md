@@ -134,7 +134,6 @@ kind: group-index
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
-- **`google-com-24`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
