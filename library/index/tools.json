@@ -21711,46 +21711,6 @@
     "_file": "library/tools/archives-cache/other-media/tv-closed-caption-search.md"
   },
   {
-    "id": "uci-spambase-data-set",
-    "name": "UCI Spambase Data Set",
-    "description": "Email spam model benchmarking and feature-engineering practice",
-    "url": "https://archive.ics.uci.edu/dataset/94/spambase",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache",
-      "public-datasets"
-    ],
-    "bestFor": "Email spam model benchmarking and feature-engineering practice",
-    "input": "Dataset page access or download request",
-    "output": "Tabular spam classification dataset and metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public dataset retrieval only with negligible operational exposure.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/public-datasets/uci-spambase-data-set.md"
-  },
-  {
     "id": "uk-web-archive",
     "name": "UK Web Archive",
     "description": "Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-exif.",
@@ -26120,42 +26080,54 @@
   },
   {
     "id": "computing",
-    "name": "Computing",
-    "description": "News and analysis for UK executives",
+    "name": "Computing (computing.co.uk)",
+    "description": "Use when you have a `name` or `employer-org` in the UK tech/IT sector and want to search a leading trade publication for coverage — returns industry news mentions and `associate`/role leads.",
     "url": "http://www.computing.co.uk",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a UK IT/technology trade outlet for coverage of tech executives, companies, and industry events.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search most articles; some content or events may require a free registration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public trade publication is invisible to the subject. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "computing.co.uk is an established UK IT/business trade publication (Incisive Media); genuine trade journalism, sector-focused.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "computing.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "uk",
+      "technology"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/computing.md"
   },
   {
@@ -40561,42 +40533,6 @@
     "_file": "library/tools/communities-forums/yahoo-answers.md"
   },
   {
-    "id": "yahoo-groups",
-    "name": "Yahoo Groups",
-    "description": "OSINT tool: Yahoo Groups.",
-    "url": "https://groups.yahoo.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums-and-discussion-boards-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/yahoo-groups.md"
-  },
-  {
     "id": "yahootech-news-and-updates",
     "name": "YahooTech News & Updates",
     "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
@@ -46542,42 +46478,51 @@
   {
     "id": "camsoda-com",
     "name": "camsoda.com",
-    "description": "OSINT tool: camsoda.com.",
+    "description": "Use when you have a `username` you suspect maps to an adult-webcam performer and want to check the CamSoda platform for a matching model profile — returns a `social-profile` and stated location/handle leads.",
     "url": "https://www.camsoda.com/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a handle corresponds to an adult live-cam model profile on CamSoda.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching model profiles is free; private shows/tips are paid but irrelevant to profile lookup.",
+    "opsec": "active",
+    "opsecNote": "Sensitive adult-platform OSINT. Browsing profiles is passive, but the site is adult and may prompt sign-up; do NOT create an account, tip, or enter a show from an attributable identity — that becomes active and identifying. Use a sock-puppet browser and confine use to an authorized investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "This is the live adult-cam platform itself (not an index); a matching handle is a lead, since performers use stage names that may not tie to a real identity.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "camsoda"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "adult",
+      "cam"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/camsoda-com.md"
   },
   {
@@ -49081,42 +49026,53 @@
   {
     "id": "onlyespana-es",
     "name": "onlyespana.es",
-    "description": "OSINT tool: onlyespana.es.",
+    "description": "Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a `social-profile`, location and category leads.",
     "url": "https://onlyespana.es/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a Spain-scoped OnlyFans creator directory to link a handle/name/city to an adult-content profile.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and filter the directory; creators' OnlyFans subscriptions are separate and out of scope.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public directory is passive. Sensitive adult-content OSINT — restrict to an authorized investigation, do not subscribe/contact (that becomes active/identifying), and never handle leaked content (the site itself flags that as illegal).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party directory explicitly \"not affiliated with onlyfans.com\"; listings are aggregated and unverified, and such adult sites change hosts frequently.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "es"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "onlyespana",
+      "OnlyFans España"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "adult",
+      "spain"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyespana-es.md"
   },
   {
@@ -79677,53 +79633,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/logsensor.md"
-  },
-  {
-    "id": "lookup-icann-org",
-    "name": "lookup.icann.org",
-    "description": "OSINT tool: lookup.icann.org.",
-    "url": "https://lookup.icann.org/en",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "icann-lookup",
-      "icann-org",
-      "icann-whois-lookup",
-      "rdrs-icann-org"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/lookup-icann-org.md"
   },
   {
     "id": "lookyloo",
@@ -122991,43 +122900,51 @@
   },
   {
     "id": "lightingmaps",
-    "name": "Lightingmaps",
-    "description": "lightning strikes in real time and also data on thunderstorms that ended months or years ago",
+    "name": "LightningMaps",
+    "description": "Use when you have an `image`/video showing a storm or a claimed time+place and want to verify lightning activity there and then — returns real-time and historical strike data for chronolocation.",
     "url": "https://www.lightningmaps.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Corroborating or debunking the time and place of storm imagery via real-time and archived lightning-strike data.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free access to the live map; historical archive access is free with an account, with some advanced features reserved for contributors.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public lightning map discloses nothing about your subject — you're checking weather data, not touching them. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Powered by the Blitzortung.org community lightning-detection network — well-regarded, crowd-run sensor data used widely for storm tracking.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "lightningmaps.org",
+      "Blitzortung map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "chronolocation",
+      "weather"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/lightingmaps.md"
   },
   {
@@ -224458,38 +224375,51 @@
   },
   {
     "id": "connectedpapers",
-    "name": "ConnectedPapers",
-    "description": "A tool for gathering information about academic papers. It shows a large graph of references to other articles that are present in the text and clearly see the connections between different authors.",
+    "name": "Connected Papers",
+    "description": "Use when you have an academic `name` or a paper and want to map their body of work and co-authors as a visual citation graph — returns collaborator (`associate`) and affiliation (`employer-org`) leads.",
     "url": "https://www.connectedpapers.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping an academic's papers and collaboration network from a starting paper or author.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier allows a limited number of graphs; unlimited use is a paid subscription, but the free allowance covers most investigative lookups.",
+    "opsec": "passive",
+    "opsecNote": "Building a citation graph queries public academic metadata, not the subject — nothing is disclosed to them. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A well-known, widely-used academic tool built on the Semantic Scholar corpus; metadata is reliable, bounded by that corpus's coverage.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "connectedpapers.com"
+    ],
     "tags": [
-      "Science"
+      "Science",
+      "academic",
+      "citation-graph"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/public-records/connectedpapers.md"
   },
   {
@@ -244582,52 +244512,6 @@
     "_file": "library/tools/public-records/local-government-gis-beacon.md"
   },
   {
-    "id": "local-north-america",
-    "name": "Local (North America)",
-    "description": "Business-realted website that allows search for local businesses in your area",
-    "url": "http://www.local.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/local-north-america.md"
-  },
-  {
     "id": "londonstockexchange-com",
     "name": "London Stock Exchange",
     "description": "Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns company records, addresses, and named directors.",
@@ -263042,52 +262926,6 @@
     "_file": "library/tools/public-records/sweden.md"
   },
   {
-    "id": "sweetsearch",
-    "name": "SweetSearch",
-    "description": "Research search engine for students",
-    "url": "https://www.sweetsearch.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/sweetsearch.md"
-  },
-  {
     "id": "switzerland",
     "name": "Switzerland (Zefix)",
     "description": "Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered `address`, and links to the cantonal register with officers.",
@@ -275446,42 +275284,53 @@
   },
   {
     "id": "ceek-meta-search-japan",
-    "name": "Ceek Meta Search (Japan)",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
+    "name": "Ceek (Japan meta-search)",
+    "description": "Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sources — returns broad Japanese-web coverage in one query.",
     "url": "http://www.ceek.jp",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Broad Japanese-web and news meta-search for a name/keyword that Western engines index poorly.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Running a meta-search discloses nothing to the subject. Passive; note that queries pass through the ceek.jp aggregator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-standing independent Japanese meta-search/news aggregator; it federates other engines' results, so quality reflects those upstream sources.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "jp"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ceek.jp",
+      "Ceek.jp News"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "meta-mega-search-tools"
+      "meta-mega-search-tools",
+      "japan"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ceek-meta-search-japan.md"
   },
   {
@@ -297078,46 +296927,6 @@
     "_file": "library/tools/search-engines/pricegrabber.md"
   },
   {
-    "id": "pricerunner-europe",
-    "name": "PriceRunner (Europe)",
-    "description": "Website allowing users to compare prices of products from different websites",
-    "url": "https://www.pricerunner.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/pricerunner-europe.md"
-  },
-  {
     "id": "productreviews-australia",
     "name": "Productreviews (Australia)",
     "description": "Website related to product reviews",
@@ -307208,25 +307017,32 @@
   {
     "id": "wikimedia-meta-wiki",
     "name": "Wikimedia Meta-Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
+    "description": "Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked project accounts and `associate` collaboration leads.",
     "url": "https://meta.wikimedia.org/wiki/Main_Page",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a Wikimedia editor's global (cross-wiki) account and coordination-space activity from a username.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open; no account needed to read pages or global account info.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public wiki pages and global-account tools is passive and invisible to the editor. Note that editing/logging any action from an account is itself a public, attributable edit — stay in read-only mode.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Meta-Wiki is the official Wikimedia Foundation coordination wiki; account and log data is authoritative, though user-supplied page content is self-reported.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -307234,15 +307050,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "meta.wikimedia.org",
+      "Meta-Wiki"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "wikimedia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "relatedTools": [
       "wikispecies"
     ],
@@ -320653,38 +320473,50 @@
   {
     "id": "github-chart",
     "name": "GitHub-Chart",
-    "description": "it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see \"productivity peaks\" and see which days of the week a person is most active",
-    "url": "https://chrome.google.com/webstore/detail/github-chart/apaldppjjcjgjddfobajdclccgkbkkje/related",
+    "description": "Use when you have a GitHub `username` and want to profile their activity rhythm — returns a visual of commit timing that hints at timezone, work schedule, and active days.",
+    "url": "https://chromewebstore.google.com/detail/github-chart/apaldppjjcjgjddfobajdclccgkbkkje",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Inferring a GitHub user's timezone and activity pattern from the temporal distribution of their commits.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "device-id"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; verify it is still listed on the Chrome Web Store before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "It visualizes public commit-timestamp data already on the user's GitHub page — no interaction with the subject, nothing disclosed. Passive. Any extension gets browser permissions, so use a dedicated research profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party Chrome extension by an unknown developer; it derives from public GitHub timestamps you can verify, but timezone inference is probabilistic.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GitHub Chart extension"
+    ],
     "tags": [
       "Social Media",
-      "Github"
+      "Github",
+      "browser-extension",
+      "pattern-of-life"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/github-chart.md"
   },
   {
@@ -350635,75 +350467,99 @@
   {
     "id": "youtube-booster",
     "name": "YouTube Booster",
-    "description": "This extension selects frames from videos and generates quick links to find them on Google and TinEye!",
-    "url": "https://chrome.google.com/webstore/detail/youtube-booster/dajnidicmkknmmbapmmmlemjdfolgjnf/related",
+    "description": "Use when you have a YouTube video with a location/object you want to identify and want one-click frame extraction into reverse-image search — returns Google/TinEye lookups on grabbed frames for geolocation.",
+    "url": "https://chromewebstore.google.com/detail/youtube-booster/dajnidicmkknmmbapmmmlemjdfolgjnf",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Grabbing frames from a YouTube video and pushing them straight into reverse-image search for geolocation/object ID.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; verify it is still listed on the Chrome Web Store before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "Frame-grabbing works on a video you're already watching; the subsequent reverse-image searches hit Google/TinEye, not the uploader — passive toward the target. Any extension gets browser permissions, so use a dedicated research profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party Chrome extension by an unknown developer; it just automates frame capture and hands off to established reverse-image engines you can verify.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YouTube Booster extension"
+    ],
     "tags": [
       "Social Media",
-      "YouTube"
+      "YouTube",
+      "browser-extension",
+      "reverse-image"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-booster.md"
   },
   {
     "id": "youtube-caption-searcher",
     "name": "YouTube Caption Searcher",
-    "description": "Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.",
-    "url": "https://chrome.google.com/webstore/detail/youtube-caption-searcher/aagdogpbnlhfcaaendmehjmdnepolaap/related",
+    "description": "Use when you have a YouTube video and a keyword and want to jump to where it's spoken in the captions — returns caption timestamps, surfacing names/places/context mentioned in the audio.",
+    "url": "https://chromewebstore.google.com/detail/youtube-caption-searcher/aagdogpbnlhfcaaendmehjmdnepolaap",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Keyword-searching a YouTube video's subtitles to locate exactly where a term is spoken.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; verify it is still listed on the Chrome Web Store before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "The extension reads the caption track of a video you are already watching — no interaction with the uploader, nothing disclosed. Passive. Installing any extension grants it browser permissions, so use a dedicated research profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party Chrome extension by an unknown developer; it operates on YouTube's own caption data, which you can verify by reading the captions directly.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YouTube caption search"
+    ],
     "tags": [
       "Social Media",
-      "YouTube"
+      "YouTube",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-21",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-caption-searcher.md"
   },
   {

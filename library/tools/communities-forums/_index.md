@@ -66,7 +66,7 @@ kind: group-index
 - **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
 - **`computerworld`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`computing`** (medium) — News and analysis for UK executives
+- **`computing`** (low) — Use when you have a `name` or `employer-org` in the UK tech/IT sector and want to search a leading trade publication for coverage — returns 
 - **`context`** (medium) — Use when you have a `username` or keyword and want to find pastes/leaked text shared on ctxt.io — returns email, username and password.
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
@@ -379,7 +379,6 @@ kind: group-index
 - **`wsj-technology-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`xanga-2-0`** (medium) — Blog archive website
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
-- **`yahoo-groups`** (medium) — OSINT tool: Yahoo Groups.
 - **`yahootech-news-and-updates`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
 - **`zbin`** (medium) — OSINT tool: ZBin.

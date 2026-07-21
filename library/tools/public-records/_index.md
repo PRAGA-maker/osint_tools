@@ -191,7 +191,7 @@ kind: group-index
 - **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
 - **`competeshark`** (medium) — OSINT tool: CompeteShark.
 - **`completed-access-to-information-requests`** (medium) — OSINT tool: Completed Access to Information Requests.
-- **`connectedpapers`** (medium) — A tool for gathering information about academic papers. It shows a large graph of references to other articles that are present in the text 
+- **`connectedpapers`** (low) — Use when you have an academic `name` or a paper and want to map their body of work and co-authors as a visual citation graph — returns colla
 - **`connecticut-registered-voter-verification`** (medium) — Use when you have a `name` and `dob` in Connecticut and want to confirm voter registration — returns registration status, town, and polling 
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
@@ -566,7 +566,6 @@ kind: group-index
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
 - **`local-directories-search-australia`** (medium) — Use when you have an Australian business `name`/type and a location and want listings — now Localsearch; returns local `employer-org`s with 
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
-- **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area
 - **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
 - **`louisiana-registered-voter-verification`** (medium) — Use when you have a `name` (+ `dob`) and want to confirm Louisiana voter registration and locate the person by parish — returns registration
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
@@ -907,7 +906,6 @@ kind: group-index
 - **`supreme-court`** (high) — Use when you have a `name` and want to find whether that person was a party in a Supreme Court of Canada case — returns name, document-id, a
 - **`supremecourt-uk`** (high) — Use when you have a `name` and want to check if they are a party in a UK Supreme Court case — returns case parties, document-id citations, a
 - **`sweden`** (high) — Use when you have a Swedish company `name`/`employer-org` or person and want official registry data — returns registered company details, ad
-- **`sweetsearch`** (medium) — Research search engine for students
 - **`switzerland`** (high) — Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered
 - **`systemday-com`** (medium) — Use when you have a company `name` or number in an offshore/hard-to-reach jurisdiction and want an official registry search report — returns
 - **`taxpolicy-org-uk`** (high) — Use when you have a person `name`, `address` or company `employer-org` and want to map UK companies' Persons with Significant Control geogra

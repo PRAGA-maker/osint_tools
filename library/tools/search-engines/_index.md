@@ -134,7 +134,7 @@ kind: group-index
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
 - **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
-- **`ceek-meta-search-japan`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`ceek-meta-search-japan`** (low) — Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sourc
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
 - **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
 - **`chegg-search-engine`** (medium) — Website that offers high school, college, and university book search services, including homework help, online tutoring, and application adv
@@ -584,7 +584,6 @@ kind: group-index
 - **`presearch`** (low) — OSINT tool: Presearch.
 - **`press-reader`** (low) — OSINT tool: Press Reader.
 - **`pricegrabber`** (medium) — Website allowing users to compare prices of products from different websites
-- **`pricerunner-europe`** (medium) — Website allowing users to compare prices of products from different websites
 - **`productreviews-australia`** (medium) — Website related to product reviews
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
@@ -795,7 +794,7 @@ kind: group-index
 - **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 
 - **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
-- **`wikimedia-meta-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`wikimedia-meta-wiki`** (low) — Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
 - **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a
 - **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r

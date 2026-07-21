@@ -20,7 +20,7 @@ kind: group-index
 - **`beautifulpeople-com`** (low) — Use when checking a niche, member-voted dating community for a subject's profile by `username` or `image` — a small, vetting-gated platform.
 - **`bed-page`** (medium) — OSINT tool: Bed Page.
 - **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
-- **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
+- **`camsoda-com`** (low) — Use when you have a `username` you suspect maps to an adult-webcam performer and want to check the CamSoda platform for a matching model pro
 - **`cia-foia`** (low) — Use when you have a `name`, org, or event and want declassified CIA documents about it — returns full-text-searchable declassified records f
 - **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
 - **`coomer-st`** (medium) — Use when you have a `username` and want to check whether it maps to an adult-subscription-platform (OnlyFans/Fansly) creator profile — retur
@@ -73,7 +73,7 @@ kind: group-index
 - **`onlybritish`** (low) — UK OnlyFans creator directory.
 - **`onlycanadian-fans`** (medium) — Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filt
 - **`onlydanske-dk`** (medium) — OSINT tool: onlydanske.dk.
-- **`onlyespana-es`** (medium) — OSINT tool: onlyespana.es.
+- **`onlyespana-es`** (low) — Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
 - **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a

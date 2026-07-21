@@ -209,7 +209,7 @@ kind: group-index
 - **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
 - **`git-awards`** (low) — Rank GitHub users and repositories.
 - **`gitcolombo`** (medium) — Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlate
-- **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
+- **`github-chart`** (low) — Use when you have a GitHub `username` and want to profile their activity rhythm — returns a visual of commit timing that hints at timezone, 
 - **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening
 - **`github-monitor`** (medium) — Use when you have a GitHub `username` and want to watch their activity over time — returns real-time alerts on new events, follows, stars an
 - **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
@@ -744,8 +744,8 @@ kind: group-index
 - **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
 - **`yout`** (medium) — OSINT tool: Yout.
 - **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
-- **`youtube-booster`** (medium) — This extension selects frames from videos and generates quick links to find them on Google and TinEye!
-- **`youtube-caption-searcher`** (medium) — Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.
+- **`youtube-booster`** (low) — Use when you have a YouTube video with a location/object you want to identify and want one-click frame extraction into reverse-image search 
+- **`youtube-caption-searcher`** (low) — Use when you have a YouTube video and a keyword and want to jump to where it's spoken in the captions — returns caption timestamps, surfacin
 - **`youtube-channel-archiver`** (medium) — Use when you have a YouTube `social-profile` (channel URL) and want to bulk-preserve its videos, thumbnails, and comments before they vanish
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 

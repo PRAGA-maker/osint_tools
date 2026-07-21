@@ -8,12 +8,12 @@ kind: group-index
 
 ## Sub-groups
 - **`ai-analysis-automation/`** — 455 skill(s) below.
-- **`archives-cache/`** — 133 skill(s) below.
-- **`communities-forums/`** — 392 skill(s) below.
+- **`archives-cache/`** — 132 skill(s) below.
+- **`communities-forums/`** — 391 skill(s) below.
 - **`dark-web/`** — 116 skill(s) below.
 - **`dating-classifieds/`** — 106 skill(s) below.
 - **`documents-metadata/`** — 315 skill(s) below.
-- **`domains-ip-infrastructure/`** — 740 skill(s) below.
+- **`domains-ip-infrastructure/`** — 739 skill(s) below.
 - **`email/`** — 250 skill(s) below.
 - **`evidence-capture/`** — 33 skill(s) below.
 - **`financial-crypto/`** — 126 skill(s) below.
@@ -24,8 +24,8 @@ kind: group-index
 - **`opsec-investigator-tooling/`** — 565 skill(s) below.
 - **`people-search/`** — 269 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
-- **`public-records/`** — 1095 skill(s) below.
-- **`search-engines/`** — 904 skill(s) below.
+- **`public-records/`** — 1093 skill(s) below.
+- **`search-engines/`** — 903 skill(s) below.
 - **`social-networks/`** — 854 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.

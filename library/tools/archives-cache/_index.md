@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`data-leaks/`** — 2 skill(s) below.
 - **`other-media/`** — 1 skill(s) below.
-- **`public-datasets/`** — 4 skill(s) below.
+- **`public-datasets/`** — 3 skill(s) below.
 - **`web/`** — 10 skill(s) below.
 
 ## Skills here

@@ -294,7 +294,6 @@ kind: group-index
 - **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
 - **`logsensor`** (low) — #Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies
-- **`lookup-icann-org`** (medium) — OSINT tool: lookup.icann.org.
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
 - **`majestic`** (low) — OSINT tool: Majestic.
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
