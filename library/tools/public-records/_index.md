@@ -82,7 +82,7 @@ kind: group-index
 - **`arrests`** (high) — Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, 
 - **`ascap-com`** (medium) — Use when you have a `name` who may be a songwriter/composer/publisher and want to confirm it — ASCAP's ACE database returns registered works
 - **`asic-gov-au`** (high) — Use when you have a person `name`, company `name`/ACN or `address` in Australia and want official corporate/registration records — returns c
-- **`association-assq-qc-ca`** (medium) — OSINT tool: Association-assq.qc.ca.
+- **`association-assq-qc-ca`** (medium) — Use when you have a `name` and want to confirm a Québec statistician's professional membership — returns `employer-org` affiliation and `soc
 - **`austcemindex-com`** (high) — Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `
 - **`australian-business-register-abn-lookup`** (medium) — Use when you have a `name` or `employer-org` in Australia and want the official business registration record — returns employer-org, address
 - **`australian-securities-and-investments-commission`** (medium) — Use when you have a company/business `name` or a person's `name` in Australia and want registered company, business-name, and officeholder r

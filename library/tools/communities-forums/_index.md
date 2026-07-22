@@ -57,7 +57,6 @@ kind: group-index
 - **`cnet`** (medium) — Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/compa
 - **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
-- **`collegeblender`** (medium) — University lifestyle networking website
 - **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
 - **`computerworld`** (low) — Use when you have a `name` or `employer-org` in enterprise IT and want long-run coverage — returns `employer-org`, `associate` and professio
@@ -79,13 +78,12 @@ kind: group-index
 - **`discovery-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`disqus`** (medium) — Use when you have a Disqus username and want that person's cross-site public comment history — returns social-profile, associate and text le
 - **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses
-- **`doxbin`** (medium) — OSINT tool: doxbin.
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
 - **`ehow`** (low) — OSINT tool: eHow.
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
 - **`eumom-ie`** (medium) — Use when you have a `username` or `name` and want to trace an Irish parent's pregnancy/parenting forum posts — returns `social-profile` post
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
-- **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`everplaces`** (medium) — Use when you have a `username` and want a subject's saved/recommended places — returns `geolocation` travel footprint and `social-profile` l
 - **`eweek-technology-news`** (medium) — Use when you have a `name`/`employer-org` in enterprise IT and want press coverage — returns articles, quotes, and role/company context.
 - **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
 - **`fark-com`** (low) — Use when you have a `username` and want to read a long-time Fark member's comment history and interests — a veteran news-commentary communit
@@ -156,7 +154,7 @@ kind: group-index
 - **`loveaholics`** (medium) — Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating sit
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
-- **`mamba-ru`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`mamba-ru`** (medium) — Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, 
 - **`mashable`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
 - **`medium`** (low) — OSINT tool: Medium.
@@ -176,7 +174,7 @@ kind: group-index
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
-- **`nbc-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
+- **`nbc-united-states`** (medium) — Use when you have a `name` and want US news coverage mentioning a subject — returns `social-profile`/byline attribution, event dates and cor
 - **`ndtv-s-gadgets-360`** (medium) — Use when you have a device/product name (`device-id`) or a tech-news lead and want specs, reviews and India-market pricing/availability — re
 - **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
@@ -301,7 +299,7 @@ kind: group-index
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
 - **`theverge-tech-news`** (medium) — Use when you have a `name`/`employer-org` in tech, startups, or gadgets and want coverage — returns articles, quotes, and role/company conte
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party
-- **`tilersforums-co-uk`** (medium) — OSINT tool: tilersforums.co.uk.
+- **`tilersforums-co-uk`** (medium) — Use when you have a `username` and want a UK tiling-trade professional's forum footprint — returns `social-profile`, reused `username` and d
 - **`time-news`** (low) — Use when you have a `name` that may have drawn national/international press and want to search a major magazine's archive for coverage — ret
 - **`tinychat`** (low) — Use when you have a `username` and want to check for a presence on Tinychat's video-chat platform — a long-running live video-chat community
 - **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle

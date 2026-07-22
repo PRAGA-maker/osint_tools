@@ -102,7 +102,7 @@ kind: group-index
 - **`tinder`** (high) — Use when a subject likely uses the dominant swipe-dating app — surface a recent photo, age, approximate location, and bio via geolocation-ba
 - **`totalcraigsearch`** (high) — Use when you want to search Craigslist across many cities/states at once for a subject's listings, alias, or distinctive item — without chec
 - **`trademe-new-zealand`** (medium) — Use when you have a `username`/`name` tied to New Zealand and want their marketplace footprint — returns a member's listings, feedback, join
-- **`tradingpost-australia`** (medium) — Classified advertisements-related website that provides regional services
+- **`tradingpost-australia`** (medium) — Use when you have a `name`, `username` or `phone` and want to find an Australian seller's classified listings — returns `geolocation` (regio
 - **`transsearcher-com`** (medium) — Use when you have a `username` or a location and want matching adult-creator (OnlyFans) profiles — returns creator `social-profile` links fi
 - **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
 - **`used-ca`** (medium) — Use when you have a `name`, `username`, `phone` or a BC/Canadian location and want a subject's classified ads — returns seller listings with

@@ -478,7 +478,6 @@ kind: group-index
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-cam-taxi`** (low) — open webcams around the world
 - **`web-check`** (low) — OSINT tool: Web-Check.
-- **`web-dsn-taiwan`** (medium) — Taiwan based service provider for registering websites and domain addresses
 - **`web-hosting-ireland`** (medium) — Ireland based service provider for registering websites and domain addresses
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 

@@ -195,7 +195,6 @@ kind: group-index
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
 - **`disneybooks`** (low) — Disney books search aimed at kids
 - **`disneysearch`** (low) — Disney's search feature aimed at kids
-- **`ditto-fashion-search-engine`** (medium) — E-commere website for eyewear, including virtual try-on
 - **`document-search`** (low) — OSINT tool: Document Search.
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
@@ -366,7 +365,7 @@ kind: group-index
 - **`ixigo`** (medium) — India travel information site
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
 - **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
-- **`jewish-virtual-library-online`** (medium) — Website that offers Jewish scripture search services
+- **`jewish-virtual-library-online`** (medium) — Use when you have a `name` of a notable figure and want a biographical/reference entry — returns `social-profile`-style biography, dates and
 - **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
@@ -425,7 +424,6 @@ kind: group-index
 - **`magportal`** (low) — OSINT tool: MagPortal.
 - **`mailing-list-archives-search-engine`** (low) — OSINT tool: Mailing List Archives Search Engine.
 - **`makeupalley`** (medium) — Website related to makeup, skincare, and other beauty related reviews
-- **`maktoob-yahoo-search-engine-arabic`** (medium) — Search engine for the Middle East and North Africa region, acquired by Yahoo!
 - **`maldevel-osint`** (low) — Tools, scripts and tips useful during OSINT investigations and reconnaissance.
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
@@ -448,7 +446,7 @@ kind: group-index
 - **`mojeek-search-engine-united-kingdom`** (medium) — Use when you have a `name`, `username`, `email`, or `phone` and want results from an independent, non-Google/Bing index that surfaces pages 
 - **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
-- **`monstercrawler-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`monstercrawler-meta-search-engine`** (medium) — Use when you have a `name`, `username` or `email` and want blended results across Google/Bing/Yahoo at once — returns `social-profile`, `dom
 - **`moody-s`** (low) — Use when you have an `employer-org` (a company or bond issuer) and want its credit standing — returns issuer profiles, credit ratings, and r
 - **`mouthshut-north-america`** (medium) — Website related to product reviews
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p

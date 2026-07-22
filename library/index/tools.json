@@ -25731,46 +25731,6 @@
     "_file": "library/tools/communities-forums/coffeemetsbagel.md"
   },
   {
-    "id": "collegeblender",
-    "name": "Collegeblender",
-    "description": "University lifestyle networking website",
-    "url": "http://www.collegeblender.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/collegeblender.md"
-  },
-  {
     "id": "commie",
     "name": "commie",
     "description": "OSINT tool: commie.",
@@ -26920,42 +26880,6 @@
     "_file": "library/tools/communities-forums/doesthedogdie.md"
   },
   {
-    "id": "doxbin",
-    "name": "doxbin",
-    "description": "OSINT tool: doxbin.",
-    "url": "https://doxbin.net/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/doxbin.md"
-  },
-  {
     "id": "dpaste",
     "name": "dpaste",
     "description": "Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists or config that mention it — returns exposed text snippets and associated selectors.",
@@ -27182,24 +27106,30 @@
   {
     "id": "everplaces",
     "name": "Everplaces",
-    "description": "Website related to social networking in the form of travel and accomodations",
+    "description": "Use when you have a `username` and want a subject's saved/recommended places — returns `geolocation` travel footprint and `social-profile` links.",
     "url": "https://everplaces.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling the locations a person has saved, visited or recommended from their travel/places profile.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to browse and view public profiles; account only needed to save places.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public place-collections and profiles is passive. Do not follow or message a target from a real account — interaction is attributable. Use a sock puppet if you must sign in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legacy travel/places social app (launched ~2012) that appears maintained but low-activity; profile data is self-curated and may be stale.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -27208,15 +27138,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "everplaces.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "social-network",
+      "travel",
+      "places"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/everplaces.md"
   },
   {
@@ -30588,42 +30520,57 @@
   },
   {
     "id": "mamba-ru",
-    "name": "Mamba.ru",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
+    "name": "Mamba (mamba.ru)",
+    "description": "Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, `geolocation` (city), `image` and `dob`/age.",
     "url": "http://www.mamba.ru",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Locating a subject's profile on the large Russian/CIS dating-and-social network, with city, age and photos.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "image",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse profiles; premium (VIP) unlocks messaging, advanced search and who-viewed-you. Profile discovery/viewing is free.",
+    "opsec": "active",
+    "opsecNote": "Viewing a Mamba profile while logged in can register as a \"guest/visitor\" the target may see, and boosts your account into their suggestions. ALWAYS use a sock-puppet account, a clean browser and ideally a Russian/CIS-region IP. Never search or view from an attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major, long-established Russian dating platform; profiles are user-created self-report and heavily populated with fakes/bots, so identity claims need corroboration.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ru"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Mamba",
+      "mamba.ru"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "dating",
+      "social-network",
+      "russia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/mamba-ru.md"
   },
   {
@@ -31523,42 +31470,51 @@
   },
   {
     "id": "nbc-united-states",
-    "name": "NBC (United States)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.nbcnews.com",
+    "name": "NBC News (United States)",
+    "description": "Use when you have a `name` and want US news coverage mentioning a subject — returns `social-profile`/byline attribution, event dates and corroborating context.",
+    "url": "https://www.nbcnews.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a major US national news archive for a person named, quoted, or reported on.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported, no paywall for most articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject. Only NBC/its ad partners log your visit; nothing ties the search to your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major US national news organisation with editorial standards; reporting is professionally sourced, though still journalism (interpretation), not primary record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NBC News",
+      "nbcnews.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "archive",
+      "united-states"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/nbc-united-states.md"
   },
   {
@@ -37604,44 +37560,52 @@
   },
   {
     "id": "tilersforums-co-uk",
-    "name": "tilersforums.co.uk",
-    "description": "OSINT tool: tilersforums.co.uk.",
+    "name": "Tilers Forums (UK)",
+    "description": "Use when you have a `username` and want a UK tiling-trade professional's forum footprint — returns `social-profile`, reused `username` and disclosed location/employer detail.",
     "url": "https://www.tilersforums.co.uk/forums/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a UK tiler/construction tradesperson's posts, handle reuse and disclosed trade details on a niche trade forum.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read most threads; a free account is needed to post or view members-only areas.",
+    "opsec": "passive",
+    "opsecNote": "Reading and Google-dorking public threads is passive. Registering or messaging a member is active and visible — use a sock puppet only if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established UK trade community forum; posts are user self-report, valuable mainly for handle reuse and volunteered trade/location detail.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Tilers Forums",
+      "tilersforums.co.uk"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "trade-community",
+      "construction"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/tilersforums-co-uk.md"
   },
   {
@@ -49263,42 +49227,54 @@
   },
   {
     "id": "tradingpost-australia",
-    "name": "TradingPost (Australia)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "name": "Trading Post (Australia)",
+    "description": "Use when you have a `name`, `username` or `phone` and want to find an Australian seller's classified listings — returns `geolocation` (region), `phone` and item/asset detail.",
     "url": "https://www.tradingpost.com.au",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding an Australian person's for-sale classified ads and the region/contact behind them.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search listings; posting an ad may require a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading listings is passive. Do not contact a seller from an attributable identity — enquiries are active. If you must contact, use a sock-puppet account/number.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running Australian classifieds brand (now online-only); listing content is seller-supplied and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Trading Post",
+      "tradingpost.com.au"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "marketplace",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/tradingpost-australia.md"
   },
   {
@@ -90639,52 +90615,6 @@
     "_file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/web-data-exposure-scanner.md"
   },
   {
-    "id": "web-dsn-taiwan",
-    "name": "Web DSN (Taiwan)",
-    "description": "Taiwan based service provider for registering websites and domain addresses",
-    "url": "http://www.webdsn.net",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/web-dsn-taiwan.md"
-  },
-  {
     "id": "web-hosting-ireland",
     "name": "Web Hosting Ireland",
     "description": "Ireland based service provider for registering websites and domain addresses",
@@ -111444,44 +111374,53 @@
   },
   {
     "id": "jahs-ie",
-    "name": "jahs.ie",
-    "description": "OSINT tool: jahs.ie.",
+    "name": "Insolvency Service of Ireland — Public Register",
+    "description": "Use when you have an Irish subject's `name` and want to check whether they hold an insolvency/debt arrangement — returns `address`, `dob` and court-record `document-id`.",
     "url": "https://isi.jahs.ie/public/cases",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named Irish person is on the statutory insolvency/bankruptcy registers, with address and year of birth.",
     "selectorsIn": [
-      "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "dob",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public statutory register; no account or payment needed to search.",
+    "opsec": "passive",
+    "opsecNote": "A public statutory register — searching a name is passive and generates no notice to the subject. Only the ISI portal's own server logs your query. No login, so nothing ties the search to you beyond your IP; use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official register maintained by the Insolvency Service of Ireland, an independent statutory body (est. 2013); entries are authoritative legal records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ISI public register",
+      "Insolvency Service of Ireland register",
+      "isi.jahs.ie"
+    ],
     "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
+      "insolvency",
+      "public-records",
+      "financial"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/jahs-ie.md"
   },
   {
@@ -215881,36 +215820,52 @@
   },
   {
     "id": "association-assq-qc-ca",
-    "name": "Association-assq.qc.ca",
-    "description": "OSINT tool: Association-assq.qc.ca.",
+    "name": "Association des statisticien·ne·s du Québec (ASSQ)",
+    "description": "Use when you have a `name` and want to confirm a Québec statistician's professional membership — returns `employer-org` affiliation and `social-profile` directory listing.",
     "url": "https://www.association-assq.qc.ca/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Verifying whether a named person is a listed member of Québec's professional statisticians' association.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public site; member and institutional directories are viewable without payment (some detail may sit behind a member login).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the public directory is passive and unconnected to any subject. Logging into \"Mon compte\" requires membership and is attributable — do not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Official site of a small (~100-member) professional association (founded 1995, based at Université Laval); directory listings are self/association-maintained, not a government register.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ASSQ",
+      "association-assq.qc.ca",
+      "Association des statisticiennes et statisticiens du Québec"
+    ],
+    "tags": [
+      "professional-association",
+      "directory",
+      "quebec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
       "banq-num-rique",
@@ -275118,46 +275073,6 @@
     "_file": "library/tools/search-engines/disneysearch.md"
   },
   {
-    "id": "ditto-fashion-search-engine",
-    "name": "Ditto Fashion Search Engine",
-    "description": "E-commere website for eyewear, including virtual try-on",
-    "url": "https://www.ditto.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/ditto-fashion-search-engine.md"
-  },
-  {
     "id": "document-search",
     "name": "Document Search",
     "description": "OSINT tool: Document Search.",
@@ -283961,25 +283876,31 @@
   },
   {
     "id": "jewish-virtual-library-online",
-    "name": "Jewish Virtual Library Online",
-    "description": "Website that offers Jewish scripture search services",
-    "url": "https://www.jewishvirtuallibrary.org/jsource/Bible/jpstoc.html",
+    "name": "Jewish Virtual Library",
+    "description": "Use when you have a `name` of a notable figure and want a biographical/reference entry — returns `social-profile`-style biography, dates and `associate` links.",
+    "url": "https://www.jewishvirtuallibrary.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up biographies and reference entries on notable Jewish figures, Israel and Jewish history.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online reference library; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public reference site; reading it is passive and reveals nothing to any subject. Only the site's server logs your visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large online reference library published by the American-Israeli Cooperative Enterprise (AICE); an editorial/advocacy encyclopedia — useful reference, not a neutral primary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -283988,15 +283909,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Jewish Virtual Library",
+      "jewishvirtuallibrary.org",
+      "JVL"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "reference",
+      "encyclopedia",
+      "biography"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jewish-virtual-library-online.md"
   },
   {
@@ -286613,46 +286538,6 @@
     "_file": "library/tools/search-engines/makeupalley.md"
   },
   {
-    "id": "maktoob-yahoo-search-engine-arabic",
-    "name": "Maktoob-Yahoo Search Engine (Arabic)",
-    "description": "Search engine for the Middle East and North Africa region, acquired by Yahoo!",
-    "url": "https://maktoob.yahoo.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/maktoob-yahoo-search-engine-arabic.md"
-  },
-  {
     "id": "maldevel-osint",
     "name": "maldevel/osint",
     "description": "Tools, scripts and tips useful during OSINT investigations and reconnaissance.",
@@ -287723,25 +287608,33 @@
   },
   {
     "id": "monstercrawler-meta-search-engine",
-    "name": "Monstercrawler Meta Search Engine",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
+    "name": "MonsterCrawler (Meta Search Engine)",
+    "description": "Use when you have a `name`, `username` or `email` and want blended results across Google/Bing/Yahoo at once — returns `social-profile`, `domain` and page leads.",
     "url": "http://www.monstercrawler.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running one query across multiple major search engines to surface results any single engine ranks differently.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web meta-search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries are proxied through the meta-search to the underlying engines; use a clean/sock-puppet browser and avoid logging into any account. It leaks your search terms to MonsterCrawler and the engines it federates.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small third-party meta-search that federates Google/Bing/Yahoo; ranking and ad-injection are opaque, so treat it as a convenience aggregator, not an authoritative source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -287750,15 +287643,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Monster Crawler",
+      "monstercrawler.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
+      "meta-search",
+      "search-engine"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "monster-crawler-search",
       "monstercrawler-com"

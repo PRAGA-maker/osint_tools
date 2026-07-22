@@ -87,7 +87,7 @@ kind: group-index
 - **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
 - **`insolvency-govt-nz`** (medium) — Use when you have a `name` in New Zealand and want to check for insolvency — returns bankruptcies, No Asset Procedures, and liquidations wit
 - **`insolvencydirect-bis-gov-uk`** (medium) — Use when you have a `name` and want to check UK personal-insolvency records (bankruptcies, IVAs, debt relief orders) — returns the individua
-- **`jahs-ie`** (medium) — OSINT tool: jahs.ie.
+- **`jahs-ie`** (medium) — Use when you have an Irish subject's `name` and want to check whether they hold an insolvency/debt arrangement — returns `address`, `dob` an
 - **`learnmeabitcoin-com`** (low) — Use when you have a `crypto-wallet` (Bitcoin address or txid) and want to inspect its raw on-chain data and understand how to read it — retu
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
