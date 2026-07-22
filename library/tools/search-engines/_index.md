@@ -110,7 +110,6 @@ kind: group-index
 - **`brightcloud`** (medium) — Use when you have a `domain` or `ip-address` and want its web-content category, reputation score, WHOIS summary and (for IPs) geolocation an
 - **`british-and-irish-legal-information-institute`** (medium) — Use when you have a `name` and want to find court judgments, tribunal decisions, or legislation naming them across UK and Irish jurisdiction
 - **`btdig`** (medium) — Use when you have a `name`, `username`, email or keyword and want to find files/torrents mentioning it on the BitTorrent DHT — returns file 
-- **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
 - **`bureau-of-justice-statistics`** (medium) — Use when you need official US crime/justice statistics (arrests, corrections, victimization) for context — an aggregate government data port
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
@@ -428,7 +427,7 @@ kind: group-index
 - **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere
 - **`national-geographic-kids`** (low) — National Geographic's website intended for kids
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
-- **`naver-south-korea`** (low) — OSINT tool: Naver (South Korea).
+- **`naver-south-korea`** (medium) — Use when your subject or topic is South Korean and you want Korea-specific web, blog, café and news results Google misses — returns Korean `
 - **`nerdydata-source-code-search-engine`** (medium) — Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`
 - **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 

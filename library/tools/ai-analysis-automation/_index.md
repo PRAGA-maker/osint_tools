@@ -288,7 +288,7 @@ kind: group-index
 - **`passiverecon`** (low) — OSINT tool: PassiveRecon.
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
 - **`peerblock`** (low) — OSINT tool: Peerblock.
-- **`personal-security-checklist`** (low) — OSINT tool: personal-security-checklist.
+- **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
 - **`perspective`** (low) — OSINT tool: Perspective.
 - **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.

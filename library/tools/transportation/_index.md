@@ -161,7 +161,7 @@ kind: group-index
 - **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.
 - **`ship-spotting`** (low) — OSINT tool: Ship Spotting.
 - **`shipais`** (low) — OSINT tool: ShipAIS.
-- **`shipfinder`** (low) — ShipFinder is an application designed to track vessels in near real-time across the globe, available on iPhone and Android platforms (but no
+- **`shipfinder`** (low) — Use when you have a vessel name or identifier (MMSI/IMO) and want its near-real-time position and details — returns the ship's `geolocation`
 - **`shipmentlink`** (low) — OSINT tool: ShipmentLink.
 - **`shipping-database`** (low) — OSINT tool: Shipping Database.
 - **`shippingexplorer`** (low) — OSINT tool: ShippingExplorer.

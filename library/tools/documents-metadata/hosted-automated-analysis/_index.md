@@ -11,7 +11,6 @@ kind: group-index
 - **`office-files/`** — 2 skill(s) below.
 
 ## Skills here
-- **`any-run`** (low) — Interactive malware analysis with real-time system interaction
 - **`detux-linux-sandbox`** (low) — Linux malware analysis across multiple architectures
 - **`ether`** (low) — Transparent malware analysis resistant to anti-analysis evasion
 - **`hybrid-analysis`** (low) — Advanced malware behavior analysis and evasion detection

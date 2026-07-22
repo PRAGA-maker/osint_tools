@@ -20,7 +20,7 @@ kind: group-index
 - **`apertium-org`** (low) — OSINT tool: apertium.org.
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
 - **`babelfish-language-translations`** (low) — Text and web content translation tool
-- **`baidu-translate`** (low) — OSINT tool: Baidu Translate.
+- **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 
 - **`binary-translator`** (low) — Tool for translating from one language form to another
 - **`bing-microsoft-translator`** (low) — Machine translation service.
 - **`clipto-com`** (low) — OSINT tool: clipto.com.
