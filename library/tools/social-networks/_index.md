@@ -496,7 +496,7 @@ kind: group-index
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
 - **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
 - **`shabbat`** (high) — Use when you have a `name` or `username` for someone in the Jewish community and want to find their member profile and location on this soci
-- **`shotstars`** (medium) — OSINT tool: Shotstars.
+- **`shotstars`** (medium) — Use when you have a GitHub repo or `username` and want to analyse its stargazers for fake/inflated stars and overlapping accounts — returns 
 - **`simplescraper-osint-airtable`** (low) — Twitter OSINT scraping resources collated in Airtable.
 - **`sinwindie-osint`** (high) — Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform 
 - **`skircle-me`** (high) — Use when you have a Bluesky `username`/handle and want to see who they interact with most — returns an interaction "circle" of their top ~49

@@ -23,7 +23,6 @@ kind: group-index
 - **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
 - **`coomer-st`** (medium) — Use when you have a `username` and want to check whether it maps to an adult-subscription-platform (OnlyFans/Fansly) creator profile — retur
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
-- **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p
 - **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
@@ -32,7 +31,6 @@ kind: group-index
 - **`fanslist-com`** (medium) — Use when you have a `username` or `name` and want to find a matching OnlyFans creator profile — returns the creator's `social-profile` and l
 - **`fansmetrics-com`** (low) — OSINT tool: Fansmetrics.com.
 - **`fanspedia-net`** (low) — Use when you have a `username`, creator name or location and want to check a third-party OnlyFans directory for a matching creator profile —
-- **`fapello-com`** (medium) — OSINT tool: fapello.com.
 - **`farmers-only`** (low) — Use when a subject has a rural/agricultural background and you want to check for a profile on this US niche dating site by `username` or `im
 - **`fikfap-com`** (medium) — Use when you have a `username` and want to check for a subject's presence on this adult short-video platform — returns `social-profile`, `im
 - **`findr-fans`** (low) — OSINT tool: Findr.fans.
@@ -47,7 +45,7 @@ kind: group-index
 - **`goofbid`** (low) — Use when researching eBay activity and you want to surface mistyped/overlooked listings a subject posted — a misspelling-search front-end fo
 - **`gumtree-classified-ads-australia`** (medium) — Use when you have a `name`, `username` or `phone` and want Australian classified-ad activity — returns seller `social-profile`, item photos 
 - **`gumtree-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's UK classified listings — returns their ads, rough `geolocation`, cont
-- **`hallo-london-free-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
+- **`hallo-london-free-classified-ads`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find UK classified ads a subject posted — returns phone, address-area, and as
 - **`hinge`** (medium) — Use when you have an `image` and rough `geolocation` and want to check a subject against Hinge — a relationship-focused app with richer, pro
 - **`hoobly-classified-ads`** (medium) — Use when you have a `username`, `geolocation`, or item keyword and want a subject's classified listings — returns `social-profile`, `geoloca
 - **`justlanded-classified-ads-worldwide`** (medium) — Use when your subject is an expat/mover and you have a `name`/`username` — Just Landed's per-country classifieds, housing, jobs and communit

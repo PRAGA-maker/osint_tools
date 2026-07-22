@@ -91,7 +91,7 @@ kind: group-index
 - **`frontex-migratory-map`** (medium) — Use when you need irregular-migration route context (`geolocation`) for a region — returns aggregate detected-border-crossing figures by rou
 - **`gaisma`** (medium) — Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the s
 - **`gdal3-js-org`** (low) — Use when you have geospatial data (`geolocation`) in one format and need it in another — returns the same data converted between GeoJSON, KM
-- **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points
+- **`geodesics-on-the-earth`** (medium) — Use when you have two `geolocation` coordinates and want the true great-circle shortest path and its bearing/distance — returns a geolocatio
 - **`geogig`** (low) — Use when you need to version, branch, and merge large geospatial datasets like Git for GIS — a data-engineering tool, not a lookup.
 - **`geogratis-canada`** (high) — Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names —
 - **`geohints`** (medium) — Use when you have an unidentified `image`/scene and want country-level geolocation clues — a reference of poles, bollards, signs, plates and

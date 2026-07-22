@@ -19891,47 +19891,6 @@
     "_file": "library/tools/archives-cache/public-datasets/labeled-faces-in-the-wild-db.md"
   },
   {
-    "id": "linctas-ent-sirsidynix-net-au",
-    "name": "linctas.ent.sirsidynix.net.au",
-    "description": "OSINT tool: linctas.ent.sirsidynix.net.au.",
-    "url": "https://linctas.ent.sirsidynix.net.au/client/en_AU/library/search/results?qf=LOCAL_FORMAT%09Format+(Specific)%09archived+website%09archived+website",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/linctas-ent-sirsidynix-net-au.md"
-  },
-  {
     "id": "lumen",
     "name": "Lumen",
     "description": "A research project collecting and publishing legal takedown notices for online content transparency",
@@ -27635,49 +27594,6 @@
     "_file": "library/tools/communities-forums/footballforums-net.md"
   },
   {
-    "id": "fortune-magazine",
-    "name": "Fortune Magazine",
-    "description": "Searchable website for a worldwide major magazine with large readership and or global publishing",
-    "url": "http://fortune.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fortune-500-list-of-companies-2020-fortune"
-    ],
-    "_file": "library/tools/communities-forums/fortune-magazine.md"
-  },
-  {
     "id": "forum-cyclinguk-org",
     "name": "forum.cyclinguk.org",
     "description": "OSINT tool: forum.cyclinguk.org.",
@@ -28487,48 +28403,6 @@
     "_file": "library/tools/communities-forums/gizmodo-com.md"
   },
   {
-    "id": "google-com-36",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforum.officer.com/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-36.md"
-  },
-  {
     "id": "google-groups",
     "name": "Google Groups",
     "description": "Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messages, often exposing an email, real name, and decades-old activity.",
@@ -29255,46 +29129,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/irc-search/ircsnapshot.md"
-  },
-  {
-    "id": "itpro",
-    "name": "ITPro",
-    "description": "Enterprise and business IT news",
-    "url": "http://www.itpro.co.uk",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/itpro.md"
   },
   {
     "id": "itworldcanada",
@@ -30940,46 +30774,6 @@
     "_file": "library/tools/communities-forums/mynetworktv-united-states.md"
   },
   {
-    "id": "mytwinplace",
-    "name": "Mytwinplace",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "https://www.mytwinplace.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/mytwinplace.md"
-  },
-  {
     "id": "n0paste",
     "name": "n0paste",
     "description": "Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-leak leads.",
@@ -31410,46 +31204,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/network-nine-television-australia.md"
-  },
-  {
-    "id": "network-ten-television-australia",
-    "name": "Network Ten Television (Australia)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "https://10play.com.au",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/network-ten-television-australia.md"
   },
   {
     "id": "new-paste",
@@ -32279,46 +32033,6 @@
       "telegram-osint"
     ],
     "_file": "library/tools/communities-forums/osint-communities-practitioners.md"
-  },
-  {
-    "id": "ownerdirect-united-states",
-    "name": "Ownerdirect (United States)",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "http://www.ownerdirect.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/ownerdirect-united-states.md"
   },
   {
     "id": "paaster",
@@ -33955,59 +33669,6 @@
     "_file": "library/tools/communities-forums/discord-servers/reconxplorer.md"
   },
   {
-    "id": "reddit-askmeanything",
-    "name": "Reddit AskMeAnything",
-    "description": "Website related to social networking and crowdsourcing with thousands of online responses to general queries",
-    "url": "https://www.reddit.com/r/AMA",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "here",
-      "r-opendirectories",
-      "reddit",
-      "reddit-com",
-      "reddit-com-2",
-      "reddit-darknet",
-      "reddit-deep-web",
-      "reddit-guide-to-opting-out-of-background-check-websites",
-      "reddit-old-reddit-search",
-      "reddit-onions",
-      "reddit-r-translator"
-    ],
-    "_file": "library/tools/communities-forums/reddit-askmeanything.md"
-  },
-  {
     "id": "reddit-insight",
     "name": "Reddit Insight",
     "description": "OSINT tool: Reddit Insight.",
@@ -35161,46 +34822,6 @@
     "_file": "library/tools/communities-forums/shaadi-com.md"
   },
   {
-    "id": "showcase-television-canada",
-    "name": "Showcase Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.showcase.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/showcase-television-canada.md"
-  },
-  {
     "id": "sina-weibo-chinese",
     "name": "Sina Weibo",
     "description": "Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/associate signals.",
@@ -36035,46 +35656,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/tech-advisor-uk.md"
-  },
-  {
-    "id": "tech2-com",
-    "name": "Tech2.com",
-    "description": "Online articles and news related to business, computers, gadgets, technology, gaming, and future trends",
-    "url": "http://tech.firstpost.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/tech2-com.md"
   },
   {
     "id": "techcrunch",
@@ -39532,46 +39113,6 @@
     "_file": "library/tools/dark-web/cannabisuk.md"
   },
   {
-    "id": "centre-for-investigative-journalism",
-    "name": "Centre for Investigative Journalism",
-    "description": "Resource and information website for investigative journalists",
-    "url": "https://tcij.org/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "deep-web-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/centre-for-investigative-journalism.md"
-  },
-  {
     "id": "charity-navigator",
     "name": "Charity Navigator",
     "description": "Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — returns EIN, finances and named officers/associates.",
@@ -40589,46 +40130,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/dark-web/clients/freenet-project.md"
-  },
-  {
-    "id": "ftse-industry-classification-benchmark-united-states",
-    "name": "FTSE Industry Classification Benchmark (United States)",
-    "description": "Website that identifies the industrial sector classification across the country at the national level",
-    "url": "https://www.ftserussell.com/data/industry-classification-benchmark-icb",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/ftse-industry-classification-benchmark-united-states.md"
   },
   {
     "id": "github-apurv-singh-gautam",
@@ -44908,47 +44409,6 @@
     "_file": "library/tools/dating-classifieds/craigslist.md"
   },
   {
-    "id": "dudjob-com",
-    "name": "dudjob.com",
-    "description": "OSINT tool: dudjob.com.",
-    "url": "https://dudjob.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/dudjob-com.md"
-  },
-  {
     "id": "ebay",
     "name": "eBay",
     "description": "Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest auction marketplace.",
@@ -45311,47 +44771,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/fanspedia-net.md"
-  },
-  {
-    "id": "fapello-com",
-    "name": "fapello.com",
-    "description": "OSINT tool: fapello.com.",
-    "url": "https://fapello.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/fapello-com.md"
   },
   {
     "id": "farmers-only",
@@ -46046,41 +45465,53 @@
   {
     "id": "hallo-london-free-classified-ads",
     "name": "Hallo London Free Classified Ads",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a `name`, `phone`, or `username` and want to find UK classified ads a subject posted — returns phone, address-area, and associate leads.",
     "url": "http://www.hallo.co.uk",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating UK classified ads (for-sale, rooms, services, personals) that a subject placed, and the contact details attached to them.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; posting an ad requires a free account, but reading listings does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching listings is passive — you are only reading public ads. Do NOT contact an advertiser or reply to an ad from your own identity; that is active and alerts the poster. Use a sock-puppet account/IP if you must register.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial UK classifieds marketplace; listings are user-submitted and unvetted, so treat any detail as a lead to corroborate, not fact.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "hallo.co.uk",
+      "Hallo UK classifieds"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "classifieds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/hallo-london-free-classified-ads.md"
   },
   {
@@ -84518,52 +83949,6 @@
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/shadowserver-foundation.md"
   },
   {
-    "id": "shaw-speed-test-canada",
-    "name": "Shaw Speed Test (Canada)",
-    "description": "Analysis tool that assesses the speed of your Internet connection",
-    "url": "http://speedtest.shaw.ca",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/shaw-speed-test-canada.md"
-  },
-  {
     "id": "shodan",
     "name": "Shodan",
     "description": "Finding exposed services and infrastructure risk indicators",
@@ -116047,45 +115432,47 @@
   {
     "id": "geodesics-on-the-earth",
     "name": "Geodesics on the Earth",
-    "description": "finding the shortest path between two points",
+    "description": "Use when you have two `geolocation` coordinates and want the true great-circle shortest path and its bearing/distance — returns a geolocation/route measurement.",
     "url": "https://academo.org/demos/geodesics/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising and measuring the great-circle (geodesic) route between two points, so straight-line distance and bearing are correct rather than distorted by a flat map.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free interactive demo; no account, no payment, no registration.",
+    "opsec": "passive",
+    "opsecNote": "The coordinates are handled in-browser for the visualisation; nothing is sent to the target. Fully passive. Still, avoid entering operationally sensitive coordinates into any third-party web page — do the math offline if the locations themselves are sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An educational physics/maths demo by academo.org; the geodesic geometry is standard and correct, but it is a teaching visualiser, not a survey-grade tool.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "academo geodesics",
+      "great circle path demo"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "geolocation-utility"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mp3-spectrum-analyzer"
-    ],
+    "lastVerified": "2026-07-22",
     "_file": "library/tools/geolocation/geodesics-on-the-earth.md"
   },
   {
@@ -151549,37 +150936,57 @@
   {
     "id": "youtube",
     "name": "YouTube",
-    "description": "OSINT tool: YouTube.",
+    "description": "Use when you have a `name`, `username`, `image`, or `geolocation` and want videos, channels, and faces tied to a subject — returns social-profile, face, and geolocation leads.",
     "url": "https://www.youtube.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's own channel/videos, or footage that shows them, their location, vehicle, or associates.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "image",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "face",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and watch; a Google account is only needed to comment or subscribe, not to view.",
+    "opsec": "passive",
+    "opsecNote": "Searching and watching are passive against the subject. But liking, commenting, subscribing, or viewing while logged in ties the activity to your Google identity and can surface you in the creator's analytics — watch logged-out in a sock-puppet browser. Downloading videos for frame analysis is fine and offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google platform; the videos themselves are authentic primary material, though titles/descriptions are creator-supplied and can mislead.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "youtube.com",
+      "YouTube video search"
+    ],
     "tags": [
       "video-search-and-other-video-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "relatedTools": [
+      "youtube-metadata",
+      "youtube-geofind",
+      "youtube-dataviewer-amnesty"
+    ],
     "_file": "library/tools/image-video-face/youtube.md"
   },
   {
@@ -152723,48 +152130,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/maps-geospatial-data/arcgis-wildfire-map.md"
-  },
-  {
-    "id": "archieinitiative-com",
-    "name": "archieinitiative.com",
-    "description": "OSINT tool: archieinitiative.com.",
-    "url": "https://app.archieinitiative.com/map?mode=oil",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/archieinitiative-com.md"
   },
   {
     "id": "atlas-co",
@@ -163217,40 +162582,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/sangmatainfo-bot.md"
-  },
-  {
-    "id": "search-buzz-im",
-    "name": "Search.buzz.im",
-    "description": "OSINT tool: Search.buzz.im.",
-    "url": "https://search.buzz.im/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/search-buzz-im.md"
   },
   {
     "id": "search-firm-bot",
@@ -227730,40 +227061,6 @@
     "_file": "library/tools/public-records/fivethirtyeight.md"
   },
   {
-    "id": "fl-energy-money-in-politics",
-    "name": "FL Energy Money in Politics",
-    "description": "OSINT tool: FL Energy Money in Politics.",
-    "url": "https://b2.caspio.com/dp.asp?AppKey=c73210001174b8c2a8d444768f5c",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/fl-energy-money-in-politics.md"
-  },
-  {
     "id": "florida",
     "name": "Florida DOC Offender Search",
     "description": "Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirmation, dob, offender document-id and physical description.",
@@ -240251,50 +239548,6 @@
     "_file": "library/tools/public-records/ma-middlesex-county-city-employee-salary-2019.md"
   },
   {
-    "id": "macron-campaign-emails",
-    "name": "Macron Campaign Emails",
-    "description": "OSINT tool: Macron Campaign Emails.",
-    "url": "https://wikileaks.org//macron-emails/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "akp-email-database",
-      "dnc-email-database",
-      "gi-files",
-      "ice-patrol",
-      "leaked-cables",
-      "sony-archives",
-      "wikileaks",
-      "wikileaks-search"
-    ],
-    "_file": "library/tools/public-records/macron-campaign-emails.md"
-  },
-  {
     "id": "maine",
     "name": "Maine DOC Corrections Search",
     "description": "Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC identifier, and facility/supervision status.",
@@ -251424,46 +250677,6 @@
     "_file": "library/tools/public-records/annual-reports/public-register-online.md"
   },
   {
-    "id": "public-register-s-annual-report-service",
-    "name": "Public Register's Annual Report Service",
-    "description": "Browsing annual reports for US public companies alphabetically",
-    "url": "https://www.prars.com/search/alpha/A",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "annual-reports"
-    ],
-    "bestFor": "Browsing annual reports for US public companies alphabetically",
-    "input": "Company name (alphabetical browse)",
-    "output": "Annual reports and financial filings",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "All requests pass through PRARS servers; no direct contact with target entity.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/annual-reports/public-register-s-annual-report-service.md"
-  },
-  {
     "id": "quandl",
     "name": "Quandl (Nasdaq Data Link)",
     "description": "Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and economics (aggregate data, not personal records).",
@@ -256039,40 +255252,6 @@
     "_file": "library/tools/public-records/sherpaintelligence-substack-com.md"
   },
   {
-    "id": "shopsearchengine-com",
-    "name": "Shopsearchengine.com",
-    "description": "OSINT tool: Shopsearchengine.com.",
-    "url": "http://shopsearchengine.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/shopsearchengine-com.md"
-  },
-  {
     "id": "sijilat-bh",
     "name": "sijilat.bh (Bahrain Commercial Registry)",
     "description": "Use when you have a company `name`/`employer-org` (or owner name) in Bahrain and want the official commercial-registration record — returns registered business name, activity, address and status.",
@@ -259658,42 +258837,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/thentiacloud-net.md"
-  },
-  {
-    "id": "thewebco",
-    "name": "TheWebCo",
-    "description": "OSINT tool: TheWebCo.",
-    "url": "https://thewebco.ai",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/thewebco.md"
   },
   {
     "id": "tmdn-design-view",
@@ -267406,40 +266549,6 @@
     "_file": "library/tools/search-engines/athlinks.md"
   },
   {
-    "id": "atscan",
-    "name": "ATSCAN",
-    "description": "OSINT tool: ATSCAN.",
-    "url": "https://github.com/AlisamTechnology/ATSCAN",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/atscan.md"
-  },
-  {
     "id": "australian-bureau-of-statistics",
     "name": "Australian Bureau of Statistics",
     "description": "Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame a location, not individual records.",
@@ -268474,46 +267583,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/bevigil.md"
-  },
-  {
-    "id": "bibleserver",
-    "name": "Bibleserver",
-    "description": "Website that offers Christian scripture search services, invluding Bible translations in 21 languages",
-    "url": "http://www.bibleserver.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/bibleserver.md"
   },
   {
     "id": "biblio",
@@ -271371,46 +270440,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/conservapedia.md"
-  },
-  {
-    "id": "contenko-search-engine-united-kingdom",
-    "name": "Contenko Search Engine (United Kingdom)",
-    "description": "UK based surface web search engine covering regional results",
-    "url": "http://www.contenko.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/contenko-search-engine-united-kingdom.md"
   },
   {
     "id": "context-menu-search",
@@ -274454,46 +273483,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/european-commission-home-affairs.md"
-  },
-  {
-    "id": "european-search-engines-directories-and-lists",
-    "name": "European Search Engines, Directories, and Lists",
-    "description": "List of European search engines, directories, and lists",
-    "url": "http://www.searchenginesoftheworld.com/search_en%20gines_of_europe",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/european-search-engines-directories-and-lists.md"
   },
   {
     "id": "european-trademark-search",
@@ -281826,46 +280815,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/jewish-virtual-library-online.md"
-  },
-  {
-    "id": "jobactive-job-search-engine-australia",
-    "name": "JobActive Job Search Engine (Australia)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
-    "url": "https://jobsearch.gov.au/job/search",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/jobactive-job-search-engine-australia.md"
   },
   {
     "id": "jobrapido-job-search-engine-worldwide",
@@ -292173,54 +291122,6 @@
     "_file": "library/tools/search-engines/reference-source-microsoft.md"
   },
   {
-    "id": "religion-wiki",
-    "name": "Religion Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on religion",
-    "url": "http://religion.wikia.com/wiki/Portal",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "familypedia",
-      "itlaw",
-      "lotrowikia",
-      "thefaceoff-ice-hockey-wiki",
-      "wikiawikis",
-      "wikirecipes"
-    ],
-    "_file": "library/tools/search-engines/religion-wiki.md"
-  },
-  {
     "id": "remax-house-listing-search-canada",
     "name": "RE/MAX Canada Listings",
     "description": "Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the listing agent.",
@@ -300041,24 +298942,30 @@
   {
     "id": "wiby",
     "name": "Wiby",
-    "description": "Search engine for older style pages, based on a subject of interest.",
+    "description": "Use when you have a `name` or `username` and want to surface mentions on old, small, independent \"classic web\" pages that mainstream engines bury — returns social-profile leads.",
     "url": "https://wiby.me",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person or handle named on personal homepages, hobby sites, and old-web pages that Google no longer ranks.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, donation-supported search engine; no account or payment needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit Wiby's own index, not the target and not Google, so this is passive. No login or cookies required. Normal search-engine query logging applies; use a VPN/sock-puppet if you want to avoid tying the search to your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent, community-curated project indexing hand-submitted classic-web pages; small and human-maintained rather than an authoritative crawler.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -300067,15 +298974,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wiby.me",
+      "Wiby classic web search"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wiby.md"
   },
   {
@@ -300634,54 +299544,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/wikiquote.md"
-  },
-  {
-    "id": "wikirecipes",
-    "name": "Wikirecipes",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on recipes",
-    "url": "http://recipes.wikia.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "familypedia",
-      "itlaw",
-      "lotrowikia",
-      "religion-wiki",
-      "thefaceoff-ice-hockey-wiki",
-      "wikiawikis"
-    ],
-    "_file": "library/tools/search-engines/wikirecipes.md"
   },
   {
     "id": "wikishire-united-kingdom",
@@ -301562,46 +300424,6 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "_file": "library/tools/search-engines/wow-search-engine-united-kingdom.md"
-  },
-  {
-    "id": "wowjobs-canada",
-    "name": "WowJobs (Canada)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
-    "url": "http://www.wowjobs.ca",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/wowjobs-canada.md"
   },
   {
     "id": "wpscan",
@@ -302960,40 +301782,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/zilladog-safe-email-and-games-for-kids.md"
-  },
-  {
-    "id": "zoo-search",
-    "name": "Zoo Search",
-    "description": "OSINT tool: Zoo Search.",
-    "url": "https://www.metacrawler.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/zoo-search.md"
   },
   {
     "id": "zoomeye",
@@ -330044,41 +328832,54 @@
   {
     "id": "shotstars",
     "name": "Shotstars",
-    "description": "OSINT tool: Shotstars.",
+    "description": "Use when you have a GitHub repo or `username` and want to analyse its stargazers for fake/inflated stars and overlapping accounts — returns social-profile and associate leads.",
     "url": "https://github.com/snooppr/shotstars",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github"
+    "bestFor": "Auditing a GitHub project's star history and stargazer accounts to spot artificial inflation and clusters of linked/overlapping users.",
+    "selectorsIn": [
+      "username"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0). No paid tier. An optional free GitHub token raises the API rate limit from ~6K to ~500K stars/hour.",
+    "opsec": "passive",
+    "opsecNote": "Shotstars reads GitHub's public API for star/stargazer data; it does not contact the repo owner or notify anyone, so it is passive. If you authenticate with a GitHub token the calls are tied to that account — use a sock-puppet GitHub token, not your real one, if attribution matters.",
+    "humanInLoop": false,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Open-source project by snooppr (same author as Snoop); actively released (v4.x in 2026). Community-maintained, self-hostable, and its outputs are reproducible from public GitHub data.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
     "relatedTools": [
       "snoop",
       "snoop-2"
     ],
+    "aliases": [
+      "snooppr/shotstars",
+      "GitHub star analyzer"
+    ],
+    "tags": [
+      "github"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/shotstars.md"
   },
   {
@@ -354248,46 +353049,6 @@
       "fleetmon-vessel-search"
     ],
     "_file": "library/tools/transportation/live-vessel-tracking-and-monitoring-with-fleetmon-explorer.md"
-  },
-  {
-    "id": "llyoyd-list-intelligence-maritime-search",
-    "name": "Llyoyd List Intelligence Maritime Search",
-    "description": "Maritime-related website focusing on Lloyds of London and their maritime vessel registration search, including associated vessel information",
-    "url": "https://www.lloydslistintelligence.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/llyoyd-list-intelligence-maritime-search.md"
   },
   {
     "id": "lucas-county-ohio-areis-online",

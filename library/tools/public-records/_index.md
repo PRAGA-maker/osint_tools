@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`additional-resources/`** — 2 skill(s) below.
-- **`annual-reports/`** — 4 skill(s) below.
+- **`annual-reports/`** — 3 skill(s) below.
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
 - **`company-profiles/`** — 11 skill(s) below.
 - **`court-criminal-records/`** — 17 skill(s) below.
@@ -315,7 +315,6 @@ kind: group-index
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
 - **`finland`** (medium) — Use when you have a `name` or `employer-org` linked to Finland and want registered companies, officers and addresses — returns `employer-org
 - **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
-- **`fl-energy-money-in-politics`** (medium) — OSINT tool: FL Energy Money in Politics.
 - **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
 - **`florida-residents-directory`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, rela
 - **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma
@@ -547,7 +546,6 @@ kind: group-index
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
 - **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
 - **`ma-middlesex-county-city-employee-salary-2019`** (medium) — OSINT tool: MA Middlesex County City employee salary 2019.
-- **`macron-campaign-emails`** (medium) — OSINT tool: Macron Campaign Emails.
 - **`maine-county-law-enforcement-discipline-chart`** (low) — Use when you have a `name` of a Maine law-enforcement officer and want any recorded discipline — returns officer, agency and disciplinary de
 - **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
 - **`maldives-sex-offender`** (high) — Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, ad
@@ -830,7 +828,6 @@ kind: group-index
 - **`sex-offender-search`** (high) — Use when you have a `name` and want to check US state sex-offender registries — returns registry listings with photo, offense, registered ad
 - **`sex-offender-us`** (high) — Use when you have a `name` or `address` and want to check US state sex-offender registries — returns registrant name, address, DOB, photo an
 - **`sherpaintelligence-substack-com`** (high) — Use when you need a methodology for investigating an organisation (charity/company) tied to a subject — returns a walkthrough of registries 
-- **`shopsearchengine-com`** (medium) — OSINT tool: Shopsearchengine.com.
 - **`sijilat-bh-2`** (high) — Use when you have a Bahraini business `name`/CR number or an `employer-org` and want official commercial-registration data — returns company
 - **`sijilat-bh`** (high) — Use when you have a company `name`/`employer-org` (or owner name) in Bahrain and want the official commercial-registration record — returns 
 - **`skilledtradesontario-ca`** (medium) — Use when you have a `name` and want to verify whether a person holds a valid Ontario skilled-trades certification/registration — returns cer
@@ -898,7 +895,6 @@ kind: group-index
 - **`thegenealogist-co-uk`** (high) — Use when you have a `name` (plus rough `dob`/`address`) and want UK census, BMD, parish, will and 1939-register records — returns name, dob,
 - **`thekyb-com`** (high) — Use when you have a company `name` or `employer-org` and want verified registry data — legal name, address, officers, and beneficial owners 
 - **`thentiacloud-net`** (medium) — Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns regis
-- **`thewebco`** (medium) — OSINT tool: TheWebCo.
 - **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
 - **`toronto-star`** (low) — OSINT tool: Toronto Star.
 - **`tracxn`** (medium) — Use when you have a company or `name` and want private-market intelligence — returns startup profiles, funding, founders, and investor/assoc

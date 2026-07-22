@@ -358,7 +358,7 @@ kind: group-index
 - **`younow`** (high) — Use when you have a `username` and want to check for a live-streaming profile with bio, photo, and broadcast history — returns a social-prof
 - **`youtube-captions-alternate-extractor`** (low) — Use when you have a video URL (YouTube and others) and want its subtitles/transcript — returns the caption text, surfacing names, places and
 - **`youtube-metadata`** (medium) — Use when you have a YouTube video, channel, or playlist URL and want its full metadata — returns upload/publish timestamps, geotags, thumbna
-- **`youtube`** (medium) — OSINT tool: YouTube.
+- **`youtube`** (medium) — Use when you have a `name`, `username`, `image`, or `geolocation` and want videos, channels, and faces tied to a subject — returns social-pr
 - **`youtubetranscript-com`** (high) — Use when you have a YouTube video (a `social-profile` URL) and want its full spoken transcript to mine for names, places and details — retur
 - **`ytdt-digitalmethods-net-2`** (high) — Use when you have a YouTube `social-profile` (channel URL/ID) or a search term and want channel/video metadata plus the network of connected
 - **`ytdt-digitalmethods-net`** (high) — Use when you have a YouTube video/channel (`social-profile`) and want its full commenter list and comment text — returns commenter `name`s/c

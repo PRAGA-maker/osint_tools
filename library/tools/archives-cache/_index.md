@@ -59,7 +59,6 @@ kind: group-index
 - **`industrydocuments-ucsf-edu`** (medium) — Use when you have a `name` (executive, scientist, lobbyist) or `employer-org` and want their internal industry documents — returns document-
 - **`infominder`** (low) — OSINT tool: InfoMinder.
 - **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
-- **`linctas-ent-sirsidynix-net-au`** (medium) — OSINT tool: linctas.ent.sirsidynix.net.au.
 - **`lumen`** (low) — A research project collecting and publishing legal takedown notices for online content transparency
 - **`lux-leaks`** (medium) — Use when you have an `employer-org` (a large company) and want to know if it appears in the Luxembourg Leaks tax-ruling investigation — retu
 - **`memento-timetravel`** (low) — Meta-archive search across multiple web-archive providers.

@@ -108,7 +108,6 @@ kind: group-index
 - **`regdatebot`** (high) — Use when you have a Telegram `username` or account and want to estimate when it was created — returns an approximate account registration da
 - **`sangmata-beta`** (high) — Use when you have a Telegram user (a `username` or forwarded message) and want their history of past names and usernames — returns prior `na
 - **`sangmatainfo-bot`** (high) — Use when you have a Telegram user (via a forwarded message or numeric ID) and want their history of past display names and usernames — retur
-- **`search-buzz-im`** (medium) — OSINT tool: Search.buzz.im.
 - **`search-firm-bot`** (high) — Use when you have a Russian `employer-org` name/ID and want registry, bank, and postal-index details via a Telegram bot — returns org record
 - **`searchforchats`** (high) — Use when you have a keyword, topic or `name` and want to discover Telegram groups and channels about it — a Telegram catalog bot returning m
 - **`sherlock-3`** (high) — Use when you have a `phone` number and want the names it is saved as in other people's contacts — a Telegram GetContact-style lookup bot tha

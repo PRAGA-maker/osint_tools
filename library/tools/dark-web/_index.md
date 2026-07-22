@@ -28,7 +28,6 @@ kind: group-index
 - **`browseriling`** (low) — OSINT tool: Browseriling.
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
-- **`centre-for-investigative-journalism`** (medium) — Resource and information website for investigative journalists
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
 - **`charlieuk`** (low) — OSINT tool: CharlieUK.
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
@@ -51,7 +50,6 @@ kind: group-index
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
 - **`eucanna`** (low) — OSINT tool: EuCanna.
 - **`federal-bureau-of-investigations-value`** (medium) — Use when you have a `name` (person or org) and want declassified/FOIA FBI records about them — returns scanned case files, documents, and me
-- **`ftse-industry-classification-benchmark-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
 - **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
 - **`global-security`** (low) — Use when you have an `employer-org` (military unit/agency) or defense subject and want reference context — returns employer-org and geolocat

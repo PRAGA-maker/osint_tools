@@ -94,7 +94,6 @@ kind: group-index
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
 - **`footballforums-net`** (medium) — Use when you have a `username` tied to football fandom and want their forum presence — returns their profile, posts and club allegiance, exp
-- **`fortune-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
 - **`forum-officer-com`** (medium) — Use when you have a `username` and want to check for a matching law-enforcement community profile — returns social-profile, posts, and locat
@@ -112,7 +111,6 @@ kind: group-index
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
-- **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`hashbin`** (low) — Use when you have a `hashb.in` paste link (with its key in the URL fragment) and want to read its contents — returns the decrypted paste tex
@@ -125,7 +123,6 @@ kind: group-index
 - **`information-week-news`** (medium) — Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-o
 - **`inkdrop-international-newspapers`** (medium) — English online news outlets from around the world
 - **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
-- **`itpro`** (medium) — Enterprise and business IT news
 - **`itworldcanada`** (low) — Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies a
 - **`ivpaste`** (medium) — Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email
 - **`joomla`** (low) — OSINT tool: Joomla.
@@ -159,7 +156,6 @@ kind: group-index
 - **`mumsnet-com`** (medium) — Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, p
 - **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
 - **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
-- **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
@@ -168,7 +164,6 @@ kind: group-index
 - **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
-- **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`new-paste`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text — returns paste content that 
 - **`new-york-post`** (medium) — Use when you have a `name` linked to New York or a tabloid-worthy event and want fast, name-heavy coverage — returns `associate`, `address` 
 - **`newsnow-united-kingdom`** (medium) — Use when you have a `name`/topic and want fast, real-time aggregated news coverage — a UK-based headline aggregator; returns article `domain
@@ -186,7 +181,6 @@ kind: group-index
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
 - **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.
-- **`ownerdirect-united-states`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
 - **`parler-search`** (low) — Structured Parler user/hashtag search.
 - **`passion-com`** (low) — Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site
@@ -219,7 +213,6 @@ kind: group-index
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
-- **`reddit-askmeanything`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.
 - **`reddit-metrics`** (low) — OSINT tool: Reddit Metrics.
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
@@ -243,7 +236,6 @@ kind: group-index
 - **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
 - **`seniorfriendfinder`** (medium) — Use when you have a `name`/`username`/`geolocation` for an older subject and want a dating-profile check — returns a `social-profile` with p
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
-- **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/assoc
 - **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
 - **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
@@ -262,7 +254,6 @@ kind: group-index
 - **`sympsons-screencaps-search`** (low) — OSINT tool: Sympsons screencaps search.
 - **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
 - **`tech-advisor-uk`** (low) — Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publicatio
-- **`tech2-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, gaming, and future trends
 - **`techcrunch`** (low) — Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer
 - **`techradar`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model, specs, and release date from det
 - **`techrepublic`** (low) — Use when you have a `name` tied to enterprise IT or tech and want trade-press coverage — returns articles, quotes, and employer-org leads me

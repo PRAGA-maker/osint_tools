@@ -73,7 +73,6 @@ kind: group-index
 - **`ask-metafilter`** (low) — Use when you have a `username`, `name`, or niche question and want a long-lived Q&A community's answers — returns posts, member profiles, an
 - **`ask`** (low) — OSINT tool: Ask.
 - **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
-- **`atscan`** (medium) — OSINT tool: ATSCAN.
 - **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
@@ -95,7 +94,6 @@ kind: group-index
 - **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
 - **`better-chrome-web-store-search-engine`** (medium) — Use when you have a developer `name`/`username` and want their Chrome extensions — a Google CSE over the Chrome Web Store returning social-p
 - **`bevigil`** (low) — Use when you have an app/package name, developer, or `domain` and want mobile-app intelligence — returns exposed secrets, endpoints, develop
-- **`bibleserver`** (medium) — Website that offers Christian scripture search services, invluding Bible translations in 21 languages
 - **`biblio`** (low) — Use when a subject deals in used/rare/antiquarian books and you want to find their seller listings or a specific book's sellers — returns `s
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
 - **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
@@ -152,7 +150,6 @@ kind: group-index
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
 - **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
-- **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
 - **`context-menu-search`** (medium) — Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine
 - **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
 - **`copyright-search`** (low) — Use when you have a `domain`, `name` or `employer-org` and want to see copyright/DMCA complaints tied to it — returns complainant/sender det
@@ -215,7 +212,6 @@ kind: group-index
 - **`euronews`** (low) — OSINT tool: Euronews.
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
 - **`european-commission-home-affairs`** (medium) — Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agen
-- **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (low) — Use when you have a brand `name` or `employer-org` and want EU trademark filings — returns the trademark owner `name`/`employer-org` and fil
 - **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
@@ -357,7 +353,6 @@ kind: group-index
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
 - **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
 - **`jewish-virtual-library-online`** (medium) — Use when you have a `name` of a notable figure and want a biographical/reference entry — returns `social-profile`-style biography, dates and
-- **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobsdb-asia`** (medium) — Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV
@@ -570,7 +565,6 @@ kind: group-index
 - **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
 - **`reeder`** (low) — OSINT tool: Reeder.
 - **`reference-source-microsoft`** (medium) — Open source code search engine
-- **`religion-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`remax-house-listing-search-canada`** (medium) — Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the lis
 - **`research-gate`** (low) — OSINT tool: Research Gate.
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
@@ -729,7 +723,7 @@ kind: group-index
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
 - **`white-house-disclosures`** (medium) — Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 
-- **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
+- **`wiby`** (medium) — Use when you have a `name` or `username` and want to surface mentions on old, small, independent "classic web" pages that mainstream engines
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
 - **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (low) — Use when you have a `name` or `username` tied to entertainment/fan communities and want crowdsourced wiki detail — returns biographical/fan-
@@ -741,7 +735,6 @@ kind: group-index
 - **`wikimedia-meta-wiki`** (low) — Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
 - **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a
-- **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`wikishire-united-kingdom`** (medium) — Use when you have a British/Irish place name and want to resolve it geographically — returns county, coordinates, and local geographic conte
 - **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
@@ -762,7 +755,6 @@ kind: group-index
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.
 - **`wow-search-engine-united-kingdom`** (low) — Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web result
-- **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
@@ -788,7 +780,6 @@ kind: group-index
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
-- **`zoo-search`** (medium) — OSINT tool: Zoo Search.
 - **`zoomeye`** (medium) — Use when you have a `domain`/`ip-address` and want exposed-host, service and banner intel — returns ip-address, domain and device-id.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

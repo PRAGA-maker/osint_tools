@@ -391,7 +391,6 @@ kind: group-index
 - **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
-- **`shaw-speed-test-canada`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`sify-technologies-limited-india`** (medium) — Indian information and communications technology company that provides end to end ICT solutions
 - **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
