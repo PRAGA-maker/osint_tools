@@ -24045,44 +24045,53 @@
   },
   {
     "id": "analystforum-com",
-    "name": "analystforum.com",
-    "description": "OSINT tool: analystforum.com.",
+    "name": "AnalystForum",
+    "description": "Use when you have a `username` and want to trace a finance/CFA-candidate's forum footprint — returns `social-profile`, reused `username` and disclosed career/location detail.",
     "url": "https://www.analystforum.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a finance professional's or CFA/FRM candidate's posts, handle reuse and volunteered career details.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; a free account is needed to post or view some member fields.",
+    "opsec": "passive",
+    "opsecNote": "Reading and Google-dorking public threads is passive. Registering or messaging a member is active and visible — sock puppet only if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running community for CFA/finance-exam candidates; posts are user self-report, valuable mainly for handle reuse and volunteered career/location detail.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Analyst Forum",
+      "analystforum.com"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "finance",
+      "cfa"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/analystforum-com.md"
   },
   {
@@ -30576,24 +30585,31 @@
   {
     "id": "mashable",
     "name": "Mashable",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
+    "description": "Use when you have a `name` or `username` and want tech/social-media/pop-culture coverage mentioning them — returns `social-profile`/byline, viral-event context and `associate` links.",
     "url": "https://mashable.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding tech, internet-culture or viral-event coverage that names, quotes or profiles a subject.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported, no hard paywall.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject; only Mashable/its ad partners log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established tech/entertainment news site; solid for internet-culture context but a commercial outlet mixing reporting and lighter content — corroborate specifics.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -30602,15 +30618,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "mashable.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "tech",
+      "internet-culture"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/mashable.md"
   },
   {
@@ -34095,25 +34113,31 @@
   },
   {
     "id": "radio-free-europe",
-    "name": "Radio Free Europe",
-    "description": "News broadcaster reporting news in 22 countries where a free press is banned by the government; inclludes uncensored news and discussion",
+    "name": "Radio Free Europe / Radio Liberty (RFE/RL)",
+    "description": "Use when you have a `name` and want reporting from Eastern Europe, Russia, Central Asia, the Caucasus or Iran — returns `social-profile`/mention, event dates and `associate` context.",
     "url": "http://www.rferl.org",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching regional reporting on people and events across the former USSR, Eastern Europe, Central Asia and Iran.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; multilingual, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject. Only RFE/RL's servers log your visit; use a clean session in restrictive regions where the site may itself be monitored/blocked.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A US-funded international broadcaster with professional newsrooms across the region; well-sourced but a funded outlet — treat as credible journalism, corroborated where possible.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -34122,15 +34146,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RFE/RL",
+      "Radio Liberty",
+      "rferl.org"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "eastern-europe",
+      "central-asia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/radio-free-europe.md"
   },
   {
@@ -67315,52 +67343,6 @@
     "_file": "library/tools/domains-ip-infrastructure/coffer-com.md"
   },
   {
-    "id": "cogipas-internet-privacy-guide",
-    "name": "Cogipas Internet Privacy Guide",
-    "description": "Search tool that identifies the IP address you are currently using",
-    "url": "http://www.cogipas.com/whats-my-ip",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/cogipas-internet-privacy-guide.md"
-  },
-  {
     "id": "contacts-details-scraper",
     "name": "Contacts Details Scraper",
     "description": "Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any website.",
@@ -78284,50 +78266,54 @@
   },
   {
     "id": "matika",
-    "name": "Matika",
-    "description": "Browser extension for searching IP, domain, URL, hash, etc. via the context menu",
+    "name": "Mitaka (OSINT browser extension)",
+    "description": "Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engines — returns `domain`/infrastructure and threat-intel leads.",
     "url": "https://chromewebstore.google.com/detail/mitaka/bfjbejmeoibbdpfdbmbacmefcbannnbg",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click right-click pivoting of a selected IoC/selector (IP, domain, URL, hash, email, BTC address) to dozens of OSINT/intel engines.",
     "selectorsIn": [
+      "ip-address",
       "domain",
-      "ip-address"
+      "email",
+      "crypto-wallet"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source browser extension (MIT). Some destination engines it links to may themselves require accounts/API keys.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The extension itself only opens search URLs; it does not phone home (developer discloses no data collection). But each engine you launch (VirusTotal, Shodan, urlscan, Censys…) receives and may log the selector you pivoted — treat those queries as active toward the infrastructure, and use a clean browser/API keys as appropriate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Open-source (github.com/ninoseki/mitaka) by Manabu Niseki, widely used in the DFIR/OSINT community; code is auditable.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mitaka",
+      "ninoseki/mitaka"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis",
-      "specialty-search",
-      "add-ons-apps-extensions"
+      "browser-extension",
+      "ioc-pivot",
+      "threat-intel"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/matika.md"
   },
   {
@@ -107987,44 +107973,54 @@
   },
   {
     "id": "aib-gov-uk",
-    "name": "aib.gov.uk",
-    "description": "OSINT tool: aib.gov.uk.",
+    "name": "Accountant in Bankruptcy — Register of Insolvencies (Scotland)",
+    "description": "Use when you have a `name` and want to check Scotland's statutory insolvency register — returns `address`, `dob` and case `document-id` for bankruptcies/protected trust deeds.",
     "url": "https://roi.aib.gov.uk/roi/Security/Home/Landing",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person has a Scottish bankruptcy or protected trust deed, with address and date of birth.",
     "selectorsIn": [
-      "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "dob",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public statutory register run by Accountant in Bankruptcy (a Scottish Government agency); no payment to search.",
+    "opsec": "passive",
+    "opsecNote": "A public statutory register — a name search is passive and generates no notice to the subject. Only the AiB server logs your query; no login, so use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Register of Insolvencies maintained by Accountant in Bankruptcy, an agency of the Scottish Government; entries are authoritative legal records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb-sct"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Accountant in Bankruptcy",
+      "Register of Insolvencies",
+      "AiB ROI",
+      "roi.aib.gov.uk"
+    ],
     "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
+      "insolvency",
+      "public-records",
+      "scotland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/aib-gov-uk.md"
   },
   {
@@ -115366,43 +115362,51 @@
   },
   {
     "id": "crisisgroup",
-    "name": "Crisisgroup",
-    "description": "OSINT tool: Crisisgroup.",
+    "name": "International Crisis Group — CrisisWatch",
+    "description": "Use when you have a `geolocation`/country and want current conflict and security status there — returns `geolocation` risk/context for planning and interpreting a region.",
     "url": "https://www.crisisgroup.org/crisiswatch",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Assessing the conflict, security and political situation in a country or region before or during work there.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to read; CrisisWatch and country analyses are open, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading public analysis is passive and unconnected to any subject. Only Crisis Group's servers log your visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The International Crisis Group is a respected independent conflict-analysis NGO; CrisisWatch is a monthly-updated, professionally-researched conflict tracker.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CrisisWatch",
+      "International Crisis Group",
+      "crisisgroup.org"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
+      "conflict-analysis",
+      "country-risk",
+      "geopolitics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/crisisgroup.md"
   },
   {
@@ -214251,31 +214255,33 @@
   },
   {
     "id": "alibaba-china",
-    "name": "Alibaba (China)",
-    "description": "China's largest e-commerce company hosting millions of merchents and businesses",
+    "name": "Alibaba.com",
+    "description": "Use when you have an `employer-org`, product or supplier and want the company behind it — returns `employer-org` profile, `address`, `phone` and trade/verification detail.",
     "url": "http://www.alibaba.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and profiling the manufacturer/supplier behind a product, with company address, contacts and trade history.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse supplier profiles, product listings and company verification badges; buying/messaging requires a free account, and full trade data may be gated.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing supplier and product pages is passive. Messaging a supplier or requesting a quote is active and attributable — use a sock-puppet buyer account and never your investigation identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The world's largest B2B marketplace; supplier profiles include third-party verification badges, but self-listed company detail can still be inflated or fronted — corroborate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -214284,15 +214290,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Alibaba",
+      "alibaba.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "b2b",
+      "supplier-research",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/alibaba-china.md"
   },
   {
@@ -221212,38 +221221,53 @@
   },
   {
     "id": "company-research-resources-by-country-comparably",
-    "name": "Company Research Resources by Country Comparably",
-    "description": "OSINT tool: Company Research Resources by Country Comparably.",
+    "name": "Comparably",
+    "description": "Use when you have an `employer-org` or an executive `name` and want company culture, pay and leadership data — returns `employer-org` detail, named executives and `social-profile` links.",
     "url": "https://www.comparably.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Researching a company's culture, salary bands and named leadership, or verifying an executive's role.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse company profiles, culture ratings, named executives and salary ranges; some detailed data is gated behind an account/premium.",
+    "opsec": "passive",
+    "opsecNote": "Browsing company/executive profiles is passive and reveals nothing to any subject. Reviews are anonymous; do not attempt to deanonymise a reviewer or post from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A workplace-culture and compensation site built on employee-submitted reviews plus aggregated data; ratings are self-reported and can be gamed, so treat as indicative not authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Comparably",
+      "comparably.com"
+    ],
     "tags": [
-      "company-research"
+      "company-research",
+      "salary",
+      "workplace-reviews"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-research-resources-by-country-comparably.md"
   },
   {
@@ -228827,40 +228851,6 @@
     "_file": "library/tools/public-records/findagraveinscotland-com.md"
   },
   {
-    "id": "findingstartups-com",
-    "name": "Findingstartups.com",
-    "description": "OSINT tool: Findingstartups.com.",
-    "url": "https://findingstartups.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/findingstartups-com.md"
-  },
-  {
     "id": "findmypast",
     "name": "FindMyPast",
     "description": "Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing relatives (`associate`), `dob` and historical `address`es.",
@@ -231276,40 +231266,6 @@
       "weedmaps"
     ],
     "_file": "library/tools/public-records/gettr.md"
-  },
-  {
-    "id": "gettysburg-pa-adams-county-2017-payroll-search-and-report",
-    "name": "Gettysburg PA Adams County 2017 Payroll Search and Report",
-    "description": "OSINT tool: Gettysburg PA Adams County 2017 Payroll Search and Report.",
-    "url": "https://b2.caspio.com/dp/0a9210006f0ddf22afd8417f9711",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/gettysburg-pa-adams-county-2017-payroll-search-and-report.md"
   },
   {
     "id": "gi-files",
@@ -285283,42 +285239,52 @@
   },
   {
     "id": "law-enforcement-resource-portal",
-    "name": "Law Enforcement Resource Portal",
-    "description": "Resources for law enforcement officers, agencies and associations around the world",
+    "name": "Officer.com (Law Enforcement Resource Portal)",
+    "description": "Use when you have a `name` or agency and want US law-enforcement news, products and community context — returns `social-profile`/mention and agency/vendor `employer-org` leads.",
     "url": "http://www.officer.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Researching US policing news, agencies, LE products and the law-enforcement professional community.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read news, directories and forums; some directory/vendor features may require a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading news, directories and public forum threads is passive. Registering or posting is active and attributable — sock puppet only if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running US law-enforcement trade portal (news + community + product directory); content mixes journalism, vendor material and user posts — weight accordingly.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Officer.com",
+      "officer.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "law-enforcement",
+      "news-media",
+      "trade-portal"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "forum-officer-com"
     ],
@@ -286983,46 +286949,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/search-engines/metacritic.md"
-  },
-  {
-    "id": "metaeureka-meta-search-engine",
-    "name": "MetaEureka Meta Search Engine",
-    "description": "Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
-    "url": "http://www.metaeureka.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/metaeureka-meta-search-engine.md"
   },
   {
     "id": "metager-meta-search-engine",
@@ -289442,46 +289368,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/niche.md"
-  },
-  {
-    "id": "nmhdds-open-directory",
-    "name": "NMHDDS Open Directory",
-    "description": "Open directory search database.",
-    "url": "https://doyou.needmorehdd.space",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/nmhdds-open-directory.md"
   },
   {
     "id": "nod",
@@ -307424,41 +307310,53 @@
   },
   {
     "id": "bitmoji-avatar-history-enumerator",
-    "name": "Bitmoji Avatar History Enumerator",
-    "description": "BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make “maximum value” requests for the images of that user’s Bitmoji. Those images will be displayed belo",
+    "name": "Bitmoji / Snapchat Avatar History Enumerator",
+    "description": "Use when you have a Snapchat `username`/`social-profile` and want the linked Bitmoji avatar and its historical versions — returns `image` avatars and physical-description cues.",
     "url": "https://webbreacher.github.io/osinttools/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a Snapchat user's Bitmoji avatar and prior avatar versions to read appearance/style changes and confirm activity.",
     "selectorsIn": [
-      "image"
+      "username",
+      "social-profile"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser-based tool; no account needed. Uses Snapchat/Bitmoji's own public avatar endpoints.",
+    "opsec": "passive",
+    "opsecNote": "The tool resolves public Bitmoji avatar URLs; it does not friend, follow or message the target, so it does not alert them. Run from a clean/sock-puppet browser. Do not escalate to adding the account on Snapchat, which is active and visible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community OSINT utility (WebBreacher / My OSINT Training) that queries public Bitmoji avatar endpoints; reliability depends on Snapchat not changing those endpoints.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Backmoji",
+      "Bitmoji history",
+      "Snapchat Bitmoji enumerator"
+    ],
     "tags": [
-      "Social Media",
-      "Snapchat"
+      "snapchat",
+      "bitmoji",
+      "avatar"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bitmoji-avatar-history-enumerator.md"
   },
   {

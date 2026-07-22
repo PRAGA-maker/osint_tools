@@ -397,7 +397,7 @@ kind: group-index
 - **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
-- **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
+- **`law-enforcement-resource-portal`** (medium) — Use when you have a `name` or agency and want US law-enforcement news, products and community context — returns `social-profile`/mention and
 - **`lawforkids`** (low) — Law-related search engine for kids
 - **`lawyerratingz-north-america`** (low) — Use when you have a `name` you believe is an attorney and want to confirm the practice and location — returns firm/city listing plus consume
 - **`lawyers-com`** (medium) — Use when you have a name (of an attorney) or a location + practice area and want a professional profile — returns employer-org (firm), addre
@@ -434,7 +434,6 @@ kind: group-index
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
-- **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
 - **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
 - **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
@@ -484,7 +483,6 @@ kind: group-index
 - **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
 - **`newswhip`** (low) — OSINT tool: NewsWhip.
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
-- **`nmhdds-open-directory`** (medium) — Open directory search database.
 - **`nod`** (low) — OSINT tool: Nod.
 - **`notey`** (low) — OSINT tool: Notey.
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.

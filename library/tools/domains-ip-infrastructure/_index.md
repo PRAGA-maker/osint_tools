@@ -117,7 +117,6 @@ kind: group-index
 - **`cloudunflare`** (low) — Reconnaissance Real IP address for Cloudflare Bypass
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (medium) — OSINT tool: coffer.com.
-- **`cogipas-internet-privacy-guide`** (medium) — Search tool that identifies the IP address you are currently using
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
 - **`cookieserve-com`** (low) — detailed website cookie analyze
@@ -287,7 +286,7 @@ kind: group-index
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
 - **`majestic`** (low) — OSINT tool: Majestic.
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
-- **`matika`** (medium) — Browser extension for searching IP, domain, URL, hash, etc. via the context menu
+- **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
 - **`maxmind`** (low) — OSINT tool: MaxMind.
 - **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.
 - **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.

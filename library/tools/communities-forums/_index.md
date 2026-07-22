@@ -25,7 +25,7 @@ kind: group-index
 - **`alt-com`** (medium) — Use when you have a `username`, `email`, or location and want to check for an adult/BDSM dating profile — returns a member `social-profile` 
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
-- **`analystforum-com`** (medium) — OSINT tool: analystforum.com.
+- **`analystforum-com`** (medium) — Use when you have a `username` and want to trace a finance/CFA-candidate's forum footprint — returns `social-profile`, reused `username` and
 - **`answers-com`** (low) — OSINT tool: Answers.com.
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
@@ -155,7 +155,7 @@ kind: group-index
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`mamba-ru`** (medium) — Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, 
-- **`mashable`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
+- **`mashable`** (medium) — Use when you have a `name` or `username` and want tech/social-media/pop-culture coverage mentioning them — returns `social-profile`/byline, 
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
 - **`medium`** (low) — OSINT tool: Medium.
 - **`meetic-com-europe`** (medium) — Use when you have a `username`, `name` or photo and want to check for a Meetic dating profile in Europe — returns the linked `social-profile
@@ -228,7 +228,7 @@ kind: group-index
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re
 - **`quora`** (low) — OSINT tool: Quora.
 - **`r-opendirectories`** (low) — Use when you want to find publicly-exposed open web directories (files, media, dumps) — returns links to open directories others have discov
-- **`radio-free-europe`** (medium) — News broadcaster reporting news in 22 countries where a free press is banned by the government; inclludes uncensored news and discussion
+- **`radio-free-europe`** (medium) — Use when you have a `name` and want reporting from Eastern Europe, Russia, Central Asia, the Caucasus or Iran — returns `social-profile`/men
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota

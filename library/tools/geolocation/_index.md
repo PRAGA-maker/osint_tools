@@ -53,7 +53,7 @@ kind: group-index
 - **`copernix`** (low) — Use when you have a place name or `geolocation` and want to see every Wikipedia article geotagged to that area on a map — returns local `geo
 - **`corona`** (low) — Use when you need declassified 1960s–70s CORONA spy-satellite imagery of a location for historical landscape analysis — returns georeference
 - **`crimemapping-com`** (medium) — Use when you have a `geolocation`/address and want recent reported crime around it — an interactive map of incidents from participating US l
-- **`crisisgroup`** (medium) — OSINT tool: Crisisgroup.
+- **`crisisgroup`** (medium) — Use when you have a `geolocation`/country and want current conflict and security status there — returns `geolocation` risk/context for plann
 - **`crowdmap`** (low) — Use when you want to aggregate and map crowdsourced incident/sighting reports — but note Crowdmap (Ushahidi's hosted platform) has been disc
 - **`ctlrq-address-lookup`** (high) — Use when you need to convert between a map pin/coordinates and a street address — drop a pin to get the address, or enter an address to get 
 - **`currentmillis-com`** (medium) — Use when you have a raw Unix/epoch timestamp (`metadata-exif`) from a URL, log, cookie or export and want the real UTC/local date-time — ret

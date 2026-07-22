@@ -54,7 +54,7 @@ kind: group-index
 - **`birdhunt`** (high) — Use when you have a `geolocation` (place of interest) and want X/Twitter posts sent from near it — returns geographically-filtered posts and
 - **`bitchute-com`** (high) — Use when you have a `username` or `name` and want to find a subject's video presence on the alt-tech platform BitChute — returns channels, v
 - **`bitdownloader-io`** (high) — Use when you have a `social-profile` post/media URL and want the raw video or photo file off-platform — returns the downloaded `image`/video
-- **`bitmoji-avatar-history-enumerator`** (medium) — BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make
+- **`bitmoji-avatar-history-enumerator`** (medium) — Use when you have a Snapchat `username`/`social-profile` and want the linked Bitmoji avatar and its historical versions — returns `image` av
 - **`blackplanet-com`** (high) — Use when you have a `username` or `name` and want to check a legacy BlackPlanet profile — but note the site has pivoted to a news platform, 
 - **`blastup`** (low) — Use when you have an Instagram post/reel/photo URL and want to save the original-quality media (no watermark, no login) for offline analysis
 - **`blog-compass-security-com`** (high) — Use when you have a subject on LinkedIn (`name`/`username`) and want proven techniques to deanonymise surnames, detect language, and X-ray p

@@ -52,7 +52,7 @@ kind: group-index
 - **`alberta-business-search`** (low) — OSINT tool: Alberta Business Search.
 - **`alberta-police-misconduct-database`** (low) — Use when you have a `name` of an Alberta police officer and want documented misconduct history — returns named incidents, investigation outc
 - **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
-- **`alibaba-china`** (medium) — China's largest e-commerce company hosting millions of merchents and businesses
+- **`alibaba-china`** (medium) — Use when you have an `employer-org`, product or supplier and want the company behind it — returns `employer-org` profile, `address`, `phone`
 - **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con
 - **`allmyfaves`** (low) — Use when you need to discover categorized links to popular sites (social, search, video, shopping) as a visual start-page directory — return
 - **`allpeople`** (medium) — Use when you have a `name` or `employer-org` and want US business-contact details — returns work `email`, `phone`, title and company `addres
@@ -179,7 +179,7 @@ kind: group-index
 - **`company-information-service-gov-uk-2`** (high) — Use when you have a `name`, `employer-org` or `address` and want dissolved/closed UK companies — returns company details, registered address
 - **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
 - **`company-information-service-gov-uk`** (high) — Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships 
-- **`company-research-resources-by-country-comparably`** (medium) — OSINT tool: Company Research Resources by Country Comparably.
+- **`company-research-resources-by-country-comparably`** (medium) — Use when you have an `employer-org` or an executive `name` and want company culture, pay and leadership data — returns `employer-org` detail
 - **`company-search-tool`** (medium) — Use when you have a company name or an `employer-org`/`associate` link and want to investigate the company and its directors/owners across m
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
 - **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
@@ -315,7 +315,6 @@ kind: group-index
 - **`find-a-prisoner`** (high) — Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public d
 - **`find-a-teacher`** (medium) — Use when you have a `name` and want to confirm someone is a certified Ontario teacher — returns certification status, qualifications, and an
 - **`findagraveinscotland-com`** (high) — Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), c
-- **`findingstartups-com`** (medium) — OSINT tool: Findingstartups.com.
 - **`findmypast-co-uk`** (high) — Use when you have a `name` (and rough era/place) and want UK/Irish genealogy and historical records — returns census, BMD, electoral, milita
 - **`findmypast-ie`** (high) — Use when you have a `name` and Irish ancestry/context and want historical records (census, BMD, church, migration) to build family and ident
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
@@ -362,7 +361,6 @@ kind: group-index
 - **`german-gov-employee-database-unknown`** (medium) — OSINT tool: German Gov Employee Database (Unknown).
 - **`germany`** (high) — Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — ret
 - **`gettr`** (low) — OSINT tool: Gettr.
-- **`gettysburg-pa-adams-county-2017-payroll-search-and-report`** (medium) — OSINT tool: Gettysburg PA Adams County 2017 Payroll Search and Report.
 - **`gi-files`** (medium) — Use when you have a `name`/`email` possibly tied to Stratfor's 2004–2011 intelligence emails and want mentions or correspondence — returns m
 - **`gibraltar`** (high) — Use when you have a Gibraltar company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
 - **`gijn-org-3`** (medium) — Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownersh
