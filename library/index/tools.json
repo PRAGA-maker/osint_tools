@@ -197,37 +197,45 @@
   {
     "id": "aha-music",
     "name": "AHA Music",
-    "description": "A very simple tool that helps you determine what track is playing in the current browser tab. What I like best about it is that it works when the sound is turned OFF (albeit with a slight delay)",
+    "description": "Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser extension that names the song.",
     "url": "https://chrome.google.com/webstore/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf/related",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the song playing in a browser tab (video, stream, clip) to add context to a piece of media.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser extension (ACRCloud-backed); optional paid/pro features exist but basic song ID is free.",
+    "opsec": "passive",
+    "opsecNote": "The extension sends an audio fingerprint of the tab to a recognition service to identify it — the audio snippet leaves your machine. It doesn't contact the subject, but don't run it on confidential audio you can't share with a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular browser extension using commercial audio-recognition (ACRCloud); reliable for mainstream tracks, weaker on obscure/edited audio.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "AHA Music",
+      "ACRCloud song finder"
+    ],
     "tags": [
-      "Sound indefication and analyze"
+      "Sound indefication and analyze",
+      "audio"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/aha-music.md"
   },
   {
@@ -15153,37 +15161,45 @@
   {
     "id": "the-citizen-lab",
     "name": "The Citizen Lab",
-    "description": "OSINT tool: The Citizen Lab.",
+    "description": "Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can monitor and cite.",
     "url": "https://citizenlab.ca/feed/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Following and citing rigorous research on state spyware (Pegasus etc.), surveillance vendors, censorship and targeted digital threats.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; reports and the RSS feed are open access, no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading published research is passive and reveals nothing about your subject. Value is contextual/analytic — it names spyware, vendors and indicators you can use to interpret findings elsewhere.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An interdisciplinary research lab at the University of Toronto's Munk School; peer-recognised, evidence-heavy reporting cited across journalism and policy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Citizen Lab",
+      "citizenlab.ca"
+    ],
     "tags": [
-      "osint-rss-feeds"
+      "osint-rss-feeds",
+      "research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/the-citizen-lab.md"
   },
   {
@@ -52328,37 +52344,55 @@
   {
     "id": "github-code-search",
     "name": "GitHub Code Search",
-    "description": "OSINT tool: GitHub Code Search.",
+    "description": "Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matching code, repos and author `social-profile`s.",
     "url": "https://github.com/search?type=code",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching across public GitHub code and commits for emails, usernames, domains, hard-coded secrets, or a person's projects.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; searching code requires being signed in to a (free) GitHub account.",
+    "opsec": "passive",
+    "opsecNote": "Searching public code is passive — the code authors aren't notified. Your queries are tied to your GitHub account, so use a dedicated/sock-puppet account, and treat any secrets you find as off-limits to actually use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party GitHub search over real repositories; results are authoritative for what public code contains, though not exhaustive of all history.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "jsluice",
+      "linkfinder"
+    ],
+    "aliases": [
+      "GitHub code search"
+    ],
     "tags": [
       "code-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/github-code-search.md"
   },
   {
@@ -58325,28 +58359,29 @@
   {
     "id": "stegseek",
     "name": "stegseek",
-    "description": "Fast steghide cracker that brute-forces passphrases to extract hidden data.",
+    "description": "Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts the hidden payload (`metadata-exif`).",
     "url": "https://github.com/RickdeJager/stegseek",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "Cracking steghide-protected files when the passphrase is unknown.",
+    "bestFor": "Cracking steghide-protected files fast (wordlist brute-force) to recover hidden data when the passphrase is unknown.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
       "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT); a single fast CLI binary.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Cracking runs entirely offline against a file you already hold — nothing is sent anywhere and no subject is contacted. Work on a copy and hash the original for chain-of-custody.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Installed in the Trace Labs VM (install_stegseek).",
+    "trustNote": "Open source and bundled in the Trace Labs OSINT VM; results are deterministic and reproducible against the same file/wordlist.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58355,15 +58390,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "stegseek"
+    ],
     "tags": [
       "steganography",
       "cracking",
       "ctf"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/stegseek.md"
   },
   {
@@ -59937,46 +59975,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/search/vx-vault.md"
-  },
-  {
-    "id": "warble-alerts",
-    "name": "Warble Alerts",
-    "description": "Website offering social media content monitoring and alert services; sends daily alerts via email",
-    "url": "https://warble.co",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/warble-alerts.md"
   },
   {
     "id": "webpreserver",
@@ -75068,35 +75066,53 @@
   {
     "id": "leakix",
     "name": "LeakIX",
-    "description": "OSINT tool: LeakIX.",
+    "description": "Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed services, host details and related `domain`s.",
     "url": "https://leakix.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching internet-wide indexed data on exposed services, misconfigurations and leaks by IP, host, ASN or protocol.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free search and browsing with an account; higher-volume access, full leak details and API scale are paid tiers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries LeakIX's own scan index, not the target host, so the subject is never contacted. Note the ethical/legal weight of \"leak\" data — it may include sensitive exposed information; handle accordingly and stay within authorised scope.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A respected independent scan/leak-index project with public docs and an API; findings are first-party scan observations you can corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "onyphe",
+      "securitytrails"
+    ],
+    "aliases": [
+      "leakix.net"
+    ],
+    "tags": [
+      "internet-scanning",
+      "exposed-services"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/leakix.md"
   },
   {
@@ -75183,42 +75199,50 @@
   {
     "id": "linkfinder",
     "name": "LinkFinder",
-    "description": "Simple tool discover endpoints and their parameters in JavaScript files. It's possible to discover individual URLs, groups of URLs and directories. Supports regular expressions.",
+    "description": "Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — returns discovered endpoints (`domain`).",
     "url": "https://github.com/GerbenJavado/LinkFinder",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling hidden endpoints, paths and URLs out of a site's JavaScript with regex-based extraction.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (a Python tool); no account.",
+    "opsec": "passive",
+    "opsecNote": "Parsing JS you've downloaded is passive. If you point LinkFinder at a live URL, it fetches the site's JS from your IP — source files via an archive or a disposable IP if that contact should not be attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used open-source recon tool (GerbenJavado); output is reproducible against the same JS input.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jsluice"
+    ],
+    "aliases": [
+      "LinkFinder"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Source Code Analyzes"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/linkfinder.md"
   },
   {
@@ -182617,24 +182641,25 @@
   {
     "id": "snopes-fact-checker",
     "name": "Snopes Fact Checker",
-    "description": "Fact-checking website, formerly known as Urban Legends Reference Pages",
+    "description": "Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check verdict.",
     "url": "http://www.snopes.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a rumour, viral claim, meme or \"urban legend\" has already been investigated and rated.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read (ad-supported); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a fact-check is passive and reveals nothing about your subject. It's a verification aid — use it to avoid amplifying a false claim, not as a lookup on a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "One of the oldest and most established fact-checking outlets; rulings cite sources, though (like any single outlet) confirm high-stakes claims against additional references.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -182643,18 +182668,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "snopes"
     ],
+    "aliases": [
+      "Snopes",
+      "snopes.com"
+    ],
+    "tags": [
+      "fact-checking",
+      "verification"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/snopes-fact-checker.md"
   },
   {

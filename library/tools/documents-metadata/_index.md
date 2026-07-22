@@ -125,7 +125,7 @@ kind: group-index
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
 - **`git-hound`** (low) — OSINT tool: git-hound.
 - **`gitdorker`** (low) — OSINT tool: GitDorker.
-- **`github-code-search`** (low) — OSINT tool: GitHub Code Search.
+- **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — OSINT tool: GitHub Search Engine.
 - **`github`** (low) — Open source code hosting community for users to collaborate and create projects.
 - **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -242,7 +242,7 @@ kind: group-index
 - **`statwing`** (low) — Intuitive data analytics tool
 - **`steghide`** (low) — Steganography tool to detect and extract data hidden inside image and audio files.
 - **`stegosuite`** (low) — Graphical steganography tool to hide and extract data in image files.
-- **`stegseek`** (low) — Fast steghide cracker that brute-forces passphrases to extract hidden data.
+- **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
 - **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
 - **`taskrabbit`** (low) — Website related to outsourcing of jobs related to homes and neighbourhoods
@@ -271,7 +271,6 @@ kind: group-index
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
-- **`warble-alerts`** (low) — Website offering social media content monitoring and alert services; sends daily alerts via email
 - **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
 - **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
 - **`wheredoesthislinkgo-modified-url-expander`** (low) — Tool for expanding URL address hyperlinks that have been previously shortened

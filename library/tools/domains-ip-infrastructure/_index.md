@@ -271,9 +271,9 @@ kind: group-index
 - **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
 - **`larger-io`** (low) — OSINT tool: Larger.io.
 - **`lazarusholic`** (low) — OSINT tool: lazarusholic.
-- **`leakix`** (low) — OSINT tool: LeakIX.
+- **`leakix`** (low) — Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed service
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
-- **`linkfinder`** (low) — Simple tool discover endpoints and their parameters in JavaScript files. It's possible to discover individual URLs, groups of URLs and direc
+- **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu
 - **`linkklipper`** (low) — The easiest extension to collect links from an open web page: - select links with Ctrl/Command key or download all; - filter links by extens
 - **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/

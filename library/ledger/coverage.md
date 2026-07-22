@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7541 total · 4580 full · 2961 stub (60% enriched)
+**Tools:** 7540 total · 4587 full · 2953 stub (60% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3622 · high: 1964 · medium: 1955
+low: 3621 · high: 1964 · medium: 1955
 
 ## Tools by trust
-community: 3502 · unverified: 2499 · trusted: 1531 · untrustworthy: 6 · personal: 3
+community: 3502 · unverified: 2495 · trusted: 1534 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 18/455
+- `ai-analysis-automation` — 20/455
 - `archives-cache` — 83/124
 - `communities-forums` — 234/289
 - `dark-web` — 35/110
 - `dating-classifieds` — 78/91
-- `documents-metadata` — 37/311
-- `domains-ip-infrastructure` — 119/707
+- `documents-metadata` — 39/310
+- `domains-ip-infrastructure` — 121/707
 - `email` — 245/246
 - `evidence-capture` — 11/29
 - `financial-crypto` — 51/111
@@ -28,7 +28,7 @@ community: 3502 · unverified: 2499 · trusted: 1531 · untrustworthy: 6 · pers
 - `image-video-face` — 439/452
 - `maps-geospatial-data` — 62/123
 - `messaging` — 178/184
-- `opsec-investigator-tooling` — 42/553
+- `opsec-investigator-tooling` — 43/553
 - `people-search` — 256/258
 - `phone` — 134/137
 - `public-records` — 846/1012
@@ -50,7 +50,7 @@ community: 3502 · unverified: 2499 · trusted: 1531 · untrustworthy: 6 · pers
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 286 leaves
-- `library/tools/documents-metadata` — 262 leaves
+- `library/tools/documents-metadata` — 261 leaves
 - `library/tools/people-search` — 248 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves

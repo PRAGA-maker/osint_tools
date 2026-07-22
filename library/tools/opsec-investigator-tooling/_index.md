@@ -406,7 +406,7 @@ kind: group-index
 - **`smstome-com`** (low) — OSINT tool: Smstome.com.
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
 - **`snapchat-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and self-deleting messages
-- **`snopes-fact-checker`** (low) — Fact-checking website, formerly known as Urban Legends Reference Pages
+- **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
 - **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
 - **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers
 - **`soundcloud-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music

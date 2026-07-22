@@ -21,7 +21,7 @@ kind: group-index
 - **`adium`** (low) — OSINT tool: Adium.
 - **`advanced-search-operators-list`** (low) — List of the links to the docs for different services, which explain using of advanced search operators
 - **`aeon`** (low) — OSINT tool: Aeon.
-- **`aha-music`** (low) — A very simple tool that helps you determine what track is playing in the current browser tab. What I like best about it is that it works whe
+- **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Detecting AI-generated images and audio in disinformation investigations and media verification
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
 - **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
@@ -381,7 +381,7 @@ kind: group-index
 - **`text-and-file-hash-calculator`** (low) — OSINT tool: Text and File Hash Calculator.
 - **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 
-- **`the-citizen-lab`** (low) — OSINT tool: The Citizen Lab.
+- **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
 - **`the-fuck`** (low) — Simple app which corrects your previous console commands.
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
