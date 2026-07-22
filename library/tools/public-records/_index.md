@@ -14,7 +14,7 @@ kind: group-index
 - **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
 - **`employee-profiles-and-resumes/`** — 3 skill(s) below.
-- **`financial-tax-resources/`** — 2 skill(s) below.
+- **`financial-tax-resources/`** — 1 skill(s) below.
 - **`general-info-and-news/`** — 6 skill(s) below.
 - **`government-records/`** — 3 skill(s) below.
 - **`kyc-aml-tools/`** — 3 skill(s) below.
@@ -54,12 +54,11 @@ kind: group-index
 - **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con
 - **`allmyfaves`** (low) — Use when you need to discover categorized links to popular sites (social, search, video, shopping) as a visual start-page directory — return
 - **`allpeople`** (medium) — Use when you have a `name` or `employer-org` and want US business-contact details — returns work `email`, `phone`, title and company `addres
-- **`allstockslinks`** (medium) — OSINT tool: AllStocksLinks.
 - **`ama-assn-org`** (high) — Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practi
 - **`amazon-asin-finder`** (low) — Use when you have an Amazon `document-id` (ASIN) or product URL tied to a seller and want product/seller intelligence — returns `employer-or
 - **`amazon-co-uk`** (medium) — Use when you have a `name` and want to find their public Amazon wedding/gift registry — returns partner/associate names, approximate locatio
 - **`amazon-com`** (medium) — Use when you have a `name` and want to find a person's public Amazon wedding/baby registry — returns the registrant `name`, an approximate c
-- **`amazon-scraper`** (medium) — scraped detail information about list of items
+- **`amazon-scraper`** (medium) — Use when you have Amazon product/search URLs and want structured listing and review data pulled to disk — returns associate leads (reviewer 
 - **`ancestor-hunt`** (high) — Use when you have a `name` and want a curated directory of free genealogy/public-record collections (births, deaths, marriages, obituaries, 
 - **`ancestry-family-search-engine-united-kingdom`** (medium) — Use when you have a `name` and want UK genealogical/historical records — returns relatives (`associate`), historical `address`es, and `dob`/
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
@@ -527,7 +526,6 @@ kind: group-index
 - **`lei-bloomberg-com`** (medium) — Use when you have an `employer-org` name or a Legal Entity Identifier (LEI) and want authoritative entity-registration detail — returns the 
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
 - **`leolist`** (low) — OSINT tool: LeoList.
-- **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
@@ -545,7 +543,6 @@ kind: group-index
 - **`louisiana-registered-voter-verification`** (medium) — Use when you have a `name` (+ `dob`) and want to confirm Louisiana voter registration and locate the person by parish — returns registration
 - **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
 - **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
-- **`ma-middlesex-county-city-employee-salary-2019`** (medium) — OSINT tool: MA Middlesex County City employee salary 2019.
 - **`maine-county-law-enforcement-discipline-chart`** (low) — Use when you have a `name` of a Maine law-enforcement officer and want any recorded discipline — returns officer, agency and disciplinary de
 - **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
 - **`maldives-sex-offender`** (high) — Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, ad
@@ -598,7 +595,6 @@ kind: group-index
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
 - **`national-center-for-state-courts-united-states`** (low) — Use when you have a US `address`/jurisdiction and want to find the correct state or county court-record system to search — returns pointers 
 - **`national-company-registers`** (medium) — Use when you have an `employer-org` (or a person's directorship) in a specific country and need the official corporate registry — a director
-- **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics
 - **`nationwide-business-directory-australia`** (medium) — Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address
 - **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 
 - **`nb-courts-public-self-serve-website`** (high) — Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case partici
@@ -626,7 +622,6 @@ kind: group-index
 - **`nidirect-gov-uk`** (high) — Use when your subject is in Northern Ireland and you need the official channel for driver/vehicle records and NI government services — retur
 - **`nigeria-sexual-offenders-registers`** (high) — Use when you have a `name` and want to check whether a person appears in Nigeria's national sexual-offenders database as reported, arraigned
 - **`niscc-org`** (high) — Use when you have a `name` and want to confirm they are a registered social worker / social care worker in Northern Ireland — returns regist
-- **`nj-police-and-fire-fy-2011-pension-contribution`** (medium) — OSINT tool: NJ Police and Fire FY 2011 Pension contribution.
 - **`njparcels-com`** (high) — Use when you have a New Jersey property `address` (or an owner `name`) and want the assessed owner, sale history, and parcel details — retur
 - **`nmbi-ie`** (high) — Use when you have a `name` (and ideally a registration number) for a nurse or midwife in Ireland and want to confirm their professional regi
 - **`nmc-org-in`** (high) — Use when you have a doctor's `name` (or registration number) in India and want to verify their medical registration — returns registration n
@@ -778,7 +773,6 @@ kind: group-index
 - **`rootsweb-2`** (high) — Use when you have a `name` and want ancestry/family links — returns user-submitted family trees (WorldConnect), relatives, birth/death dates
 - **`ros-gov-uk-2`** (high) — Use when you have a Scottish property `address` (postcode) and want the owner and price history — returns owner name, address, and document-
 - **`ros-gov-uk`** (high) — Use when you have a `name` or Scottish `address` and want property ownership or a will/deed — returns address, owner name and employer-org l
-- **`royal-canadian-mounted-police`** (medium) — OSINT tool: Royal Canadian Mounted Police.
 - **`royalmail-com`** (high) — Use when you have a UK `address` fragment or postcode and want to resolve the full, canonical postal address (or the postcode for an address
 - **`rxlist`** (low) — Use when you have a pill's imprint/shape/colour or a drug name and want to identify the medication — returns the drug identity, uses, and im
 - **`ryersonindex-org`** (high) — Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, so
@@ -904,7 +898,7 @@ kind: group-index
 - **`transparency-org-corruption-perception-index`** (low) — OSINT tool: Transparency.org Corruption Perception Index.
 - **`trellis`** (medium) — Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics
 - **`trinka`** (medium) — Use when you have two texts/documents and want authorship, plagiarism or consistency signals — returns grammar/style/plagiarism analysis to 
-- **`trouver-une-d-cision`** (medium) — OSINT tool: Trouver une décision.
+- **`trouver-une-d-cision`** (medium) — Use when you have a `name` and want Quebec/Canadian court and tribunal decisions that mention the person as a party, witness, or professiona
 - **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re
 - **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.
 - **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
@@ -934,7 +928,6 @@ kind: group-index
 - **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
 - **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
-- **`university-of-texas-libraries-database`** (medium) — Academic-related search engine for the University of Texas publication catalog of articles, journals, books and media
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
 - **`us-data-and-statistics`** (low) — OSINT tool: US Data and Statistics.

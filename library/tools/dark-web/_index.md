@@ -20,7 +20,6 @@ kind: group-index
 - **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
-- **`anz-standard-industrial-classification`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`astra-guns`** (low) — OSINT tool: Astra Guns.
 - **`bitpharma`** (low) — OSINT tool: BitPharma.
 - **`black-market`** (low) — OSINT tool: Black Market.
@@ -112,7 +111,6 @@ kind: group-index
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.
 - **`western-union-agent-locator`** (medium) — Use when you have a `geolocation`/`address` (city/country) and want the Western Union agent/pickup locations there — returns branch `address
-- **`wikieducator`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
 - **`witchdoctor-new-zealand`** (medium) — Use when you have a `name` and want to check a long-running NZ technology-review publication's byline/quote archive — returns `social-profil
 - **`world-real-time-air-quality-index`** (medium) — Use when you have a place (`geolocation`/`address`) and want current or historical air-quality readings for environmental context — returns 
 - **`ycombinator`** (low) — Use when you have a `username` (or name) in the tech world and want their Hacker News posts/comments — returns a `social-profile` and a sear

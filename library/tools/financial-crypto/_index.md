@@ -78,7 +78,6 @@ kind: group-index
 - **`flowscan-org`** (low) — OSINT tool: Flowscan.org.
 - **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
 - **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
-- **`freeformatter-com`** (medium) — OSINT tool: freeformatter.com.
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
 - **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
 - **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service

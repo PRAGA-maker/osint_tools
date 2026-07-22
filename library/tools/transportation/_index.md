@@ -89,7 +89,6 @@ kind: group-index
 - **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
-- **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
 - **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO

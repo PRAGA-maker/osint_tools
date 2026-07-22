@@ -25,7 +25,6 @@ kind: group-index
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p
-- **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
 - **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
 - **`fansearch`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a subject's OnlyFans creator profile — returns a `social-profile` 
 - **`fanslist-com`** (medium) — Use when you have a `username` or `name` and want to find a matching OnlyFans creator profile — returns the creator's `social-profile` and l
@@ -98,7 +97,7 @@ kind: group-index
 - **`trademe-new-zealand`** (medium) — Use when you have a `username`/`name` tied to New Zealand and want their marketplace footprint — returns a member's listings, feedback, join
 - **`tradingpost-australia`** (medium) — Use when you have a `name`, `username` or `phone` and want to find an Australian seller's classified listings — returns `geolocation` (regio
 - **`transsearcher-com`** (medium) — Use when you have a `username` or a location and want matching adult-creator (OnlyFans) profiles — returns creator `social-profile` links fi
-- **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
+- **`ukclassifieds`** (medium) — Use when you have a `name`, `phone`, or `username` and want UK classified ads a subject posted — returns phone, address-area, and associate 
 - **`used-ca`** (medium) — Use when you have a `name`, `username`, `phone` or a BC/Canadian location and want a subject's classified ads — returns seller listings with
 - **`vivastreet-classified-ads-united-kingdom`** (medium) — Use when you have a `phone`, `name`, or region and want to find a subject's UK classified ads (jobs, personals, services, vehicles for sale)
 - **`x-ray-contact`** (medium) — Use when you have a `name`, `email`, `phone`, `image`, or `username` and want a broker-aggregated people-search across 16+ data providers — 

@@ -392,7 +392,6 @@ kind: group-index
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
-- **`sify-technologies-limited-india`** (medium) — Indian information and communications technology company that provides end to end ICT solutions
 - **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Domain investigation #python tool
@@ -469,7 +468,6 @@ kind: group-index
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-cam-taxi`** (low) — open webcams around the world
 - **`web-check`** (low) — OSINT tool: Web-Check.
-- **`web-hosting-ireland`** (medium) — Ireland based service provider for registering websites and domain addresses
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera

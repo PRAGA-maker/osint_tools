@@ -21,7 +21,6 @@ kind: group-index
 - **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
 - **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
-- **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`alt-com`** (medium) — Use when you have a `username`, `email`, or location and want to check for an adult/BDSM dating profile — returns a member `social-profile` 
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
@@ -40,7 +39,6 @@ kind: group-index
 - **`boingboing-bbs`** (low) — Use when you have a `username` active in tech/geek/maker culture and want their post history on Boing Boing's community forum — returns post
 - **`bootsnall`** (medium) — Use when a subject is an independent traveler and you want travel guides/community content for context — a long-running travel resource; lim
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
-- **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
 - **`business-com`** (medium) — Use when you have an `employer-org` and want B2B context — a business advice/reviews site that can corroborate a company's existence and cat
 - **`buzzfeed`** (low) — Use when you have a `name` and want to check whether a person was profiled or named in BuzzFeed's viral or investigative coverage — returns 
@@ -98,7 +96,6 @@ kind: group-index
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
 - **`forum-officer-com`** (medium) — Use when you have a `username` and want to check for a matching law-enforcement community profile — returns social-profile, posts, and locat
 - **`forums-digitalspy-com`** (medium) — Use when you have a `username` and want to check for an account on a large long-running UK entertainment forum — returns the linked `social-
-- **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
 - **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social
 - **`forums-overclockers-co-uk`** (medium) — Use when you have a `username` and want to check one of the UK's largest PC-hardware communities — returns a `social-profile` and long post 
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -158,7 +155,6 @@ kind: group-index
 - **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
-- **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
 - **`nbc-united-states`** (medium) — Use when you have a `name` and want US news coverage mentioning a subject — returns `social-profile`/byline attribution, event dates and cor
 - **`ndtv-s-gadgets-360`** (medium) — Use when you have a device/product name (`device-id`) or a tech-news lead and want specs, reviews and India-market pricing/availability — re
 - **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
@@ -172,7 +168,6 @@ kind: group-index
 - **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile
 - **`nopaste-net`** (medium) — Use when you have an `email`, `username`, or `name` and want to check paste sites for leaked dumps mentioning it — returns pasted text that 
 - **`nopaste`** (medium) — Use when you have found a `nopaste.boris.sh` link in a subject's history and want to read its contents — decodes the paste that is embedded 
-- **`notes`** (medium) — OSINT tool: Notes.
 - **`nova-czech-republick`** (low) — Use when you have a `name` tied to the Czech Republic and want to check a mainstream Czech news/TV outlet for coverage — returns Czech-langu
 - **`nursingforum-co-uk`** (medium) — Use when you have a `username` or `name` and want to find a UK nurse's forum posts, member profile, or jobseeker/CV entries — returns a `soc
 - **`ohsint-gitbook`** (medium) — Use when you need OSINT/OPSEC methodology or a curated tool pointer for a particular investigative problem — returns tradecraft articles and
@@ -285,9 +280,7 @@ kind: group-index
 - **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — Use when you have a `username` or `name` of a UK small-business owner and want their forum footprint — returns the linked `social-profile`, 
-- **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.
 - **`unogs-com`** (low) — Netflix search without registration
-- **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`usa-today-news`** (medium) — Use when you have a `name` and want US national or local news coverage — returns articles and obituaries naming people, relatives and dates.
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,
@@ -299,7 +292,6 @@ kind: group-index
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.
 - **`wikipedia-list-of-world-newspapers`** (medium) — Wikipedia's list of world newspapers categorized by continent/country
-- **`win-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 

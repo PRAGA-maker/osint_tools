@@ -25,7 +25,6 @@ kind: group-index
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
 - **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
-- **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.
 - **`abc-search-engine`** (medium) — Use when you have a name, username, or domain and want an alternate general web-search index to catch links a mainstream engine ranks differ
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
 - **`abilogic`** (low) — Business web directory
@@ -224,7 +223,7 @@ kind: group-index
 - **`fatfingers`** (low) — Use when you have a `name`, brand, or item keyword and want to find eBay listings with misspellings/typos — returns mistyped listings (and t
 - **`fbi-tools`** (medium) — Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to
 - **`federal-register`** (medium) — Use when you have a `name` or `employer-org` and want to find their appearance in US federal rules, notices, or agency actions — returns nam
-- **`fefoo-mega-search`** (medium) — Mega-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`fefoo-mega-search`** (medium) — Use when you have a `name` or `username` and want to fire the same query across many search engines and verticals fast — returns social-prof
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
 - **`filechef-com`** (low) — OSINT tool: Filechef.com.
 - **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
@@ -240,7 +239,6 @@ kind: group-index
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
 - **`firebounty`** (low) — Bug bounty search engine
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
-- **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
@@ -354,7 +352,6 @@ kind: group-index
 - **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
 - **`jewish-virtual-library-online`** (medium) — Use when you have a `name` of a notable figure and want a biographical/reference entry — returns `social-profile`-style biography, dates and
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
-- **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`jobsdb-asia`** (medium) — Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV
 - **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
 - **`journal-guide`** (low) — OSINT tool: Journal Guide.
@@ -380,7 +377,6 @@ kind: group-index
 - **`kidsnet-search-engine-australia`** (low) — Kid friendly search engine, including a dictionary, thesauras, and encylopedia
 - **`kidtopia`** (low) — Kid-friendly search engine.
 - **`kidzsearch`** (low) — Kid-friendly search engine
-- **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`law-enforcement-resource-portal`** (medium) — Use when you have a `name` or agency and want US law-enforcement news, products and community context — returns `social-profile`/mention and
@@ -401,7 +397,6 @@ kind: group-index
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
-- **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
 - **`lycos`** (low) — OSINT tool: Lycos.
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
@@ -564,7 +559,6 @@ kind: group-index
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
 - **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
 - **`reeder`** (low) — OSINT tool: Reeder.
-- **`reference-source-microsoft`** (medium) — Open source code search engine
 - **`remax-house-listing-search-canada`** (medium) — Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the lis
 - **`research-gate`** (low) — OSINT tool: Research Gate.
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
@@ -576,7 +570,6 @@ kind: group-index
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth
 - **`rockstargames-socialclub-player-search`** (medium) — Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-pro
-- **`roger-ebert`** (medium) — Website related to movie reviews
 - **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Search from command line in 106 different sources

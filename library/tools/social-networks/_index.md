@@ -180,7 +180,6 @@ kind: group-index
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
-- **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
 - **`follower-wonk-compare`** (medium) — Use when you have two or three Twitter/X `username`s and want their shared audience — returns followers-in-common and overlap analysis to pr
 - **`followeraudit`** (low) — OSINT tool: FollowerAudit.
