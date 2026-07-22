@@ -166,7 +166,6 @@ kind: group-index
 - **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
 - **`copyright-search`** (medium) — Search copyright infringement complaints against websites
 - **`core`** (low) — OSINT tool: Core.
-- **`country-of-grey-canada`** (medium) — County of Grey site offering Provincial Offences Act resources
 - **`criminology-wiki`** (medium) — Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to 
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
@@ -478,7 +477,7 @@ kind: group-index
 - **`naver-south-korea`** (low) — OSINT tool: Naver (South Korea).
 - **`nerdydata-source-code-search-engine`** (medium) — Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`
 - **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
-- **`neuskool`** (medium) — Personal start page featuring search services on one page, including Google, YouTube, Wikipedia, Twitter, and more.
+- **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
 - **`news-and-moods-search-australia`** (medium) — Search engine that provides keyword stats and trends along with results
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
@@ -641,7 +640,7 @@ kind: group-index
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
 - **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
 - **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
-- **`search-it`** (medium) — Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.
+- **`search-it`** (medium) — Use when you have one selector and want to query it fast across many engines/platforms — returns a single-page launcher for Google, Bing, Re
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
 - **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi
 - **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
@@ -786,7 +785,7 @@ kind: group-index
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
 - **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a
 - **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
-- **`wikishire-united-kingdom`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of 
+- **`wikishire-united-kingdom`** (medium) — Use when you have a British/Irish place name and want to resolve it geographically — returns county, coordinates, and local geographic conte
 - **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
 - **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a

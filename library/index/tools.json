@@ -18721,41 +18721,59 @@
   {
     "id": "cryptome-2",
     "name": "Cryptome",
-    "description": "Searching historical leaked documents and primary-source disclosures",
+    "description": "Use when you have a `name`, agency, or topic and want primary-source leaked documents and dossiers — returns filings, cables, dossiers, and disclosure files.",
     "url": "https://cryptome.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "data-leaks"
     ],
-    "bestFor": "Searching historical leaked documents and primary-source disclosures",
-    "input": "Keyword or document browsing",
-    "output": "Published leak archives and document files",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Full-text (Google-scoped) search of a long-running archive of leaked and prohibited primary-source documents.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open; no account. The site is a flat document archive funded by donations/document sales, not a paywall.",
     "opsec": "passive",
-    "opsecNote": "Read-only document access with standard web logging by host infrastructure.",
+    "opsecNote": "Reading Cryptome is passive, but the archive hosts sensitive/classified material — accessing certain documents may itself be noteworthy on a monitored network. Use a clean browser/VPN, and be aware some files are large or contain live personal data. Use only the primary domain; the operators warn mirrors may be tampered with.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established since 1996 (John Young); a curated but independent archive — documents are primary sources of varying provenance, not editorially verified facts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wikileaks",
+      "wikileaks-search",
+      "gi-files",
+      "leaked-cables"
+    ],
+    "aliases": [
+      "cryptome.org",
+      "Cryptome archive"
+    ],
+    "tags": [
+      "leaks",
+      "primary-sources",
+      "documents"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/data-leaks/cryptome-2.md"
   },
   {
@@ -24209,42 +24227,55 @@
   },
   {
     "id": "arabian-business-news-middle-east-english-language",
-    "name": "Arabian Business News (Middle East, English language)",
-    "description": "Searchable website for a major online news/media publisher covering global events and having large reader/fan base",
-    "url": "http://www.arabianbusiness.com",
+    "name": "Arabian Business",
+    "description": "Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and company affiliations.",
+    "url": "https://www.arabianbusiness.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding English-language Gulf/Middle East business coverage that ties a person to a company, role, or event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read online; funded by advertising with no hard paywall on most articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read-only browsing/searching of a public news site. No account and no per-subject notification; standard web hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established English-language Middle East business publisher (ITP Media Group); reporting is edited journalism but promotional/PR-adjacent in places.",
     "missingPersonsRelevance": "medium",
     "coverage": [
+      "ae",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ArabianBusiness.com",
+      "Arabian Business News"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "middle-east"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/arabian-business-news-middle-east-english-language.md"
   },
   {
@@ -28608,48 +28639,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/freeview-television-united-kingdom.md"
-  },
-  {
-    "id": "frg-org-uk",
-    "name": "frg.org.uk",
-    "description": "OSINT tool: frg.org.uk.",
-    "url": "https://www.frg.org.uk/ParentsForum/viewforum.php?f=13",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/frg-org-uk.md"
   },
   {
     "id": "friendfinder",
@@ -33499,46 +33488,6 @@
       "parler-com"
     ],
     "_file": "library/tools/communities-forums/parler-search.md"
-  },
-  {
-    "id": "parship-com-europe",
-    "name": "Parship.com (Europe)",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "https://www.parship.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/parship-com-europe.md"
   },
   {
     "id": "passion-com",
@@ -39961,50 +39910,6 @@
     "_file": "library/tools/communities-forums/write-as.md"
   },
   {
-    "id": "wsj-technology-news",
-    "name": "WSJ Technology News",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
-    "url": "http://www.wsj.com/news/technology",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "the-wall-street-journal",
-      "tweet-metadata"
-    ],
-    "_file": "library/tools/communities-forums/wsj-technology-news.md"
-  },
-  {
     "id": "yahoo-answers",
     "name": "Yahoo Answers",
     "description": "OSINT tool: Yahoo Answers.",
@@ -41982,42 +41887,56 @@
   },
   {
     "id": "freenet-project",
-    "name": "Freenet Project",
-    "description": "Anonymous peer-to-peer content distribution",
+    "name": "Freenet / Hyphanet",
+    "description": "Use when an investigation points to content hosted on the Freenet/Hyphanet darknet — returns access to censorship-resistant sites, forums, and files inside the network.",
     "url": "https://www.hyphanet.org/",
     "category": "dark-web",
     "path": [
       "dark-web",
       "clients"
     ],
-    "bestFor": "Anonymous peer-to-peer content distribution",
-    "input": "Locally hosted or requested content within the network",
-    "output": "Distributed content retrieval and sharing",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Accessing and monitoring content published on the Freenet/Hyphanet anonymous peer-to-peer network.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Traffic is routed through a decentralized overlay, reducing direct source attribution.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (GPL). No account or payment; you only supply disk and bandwidth to run a node.",
+    "opsec": "active",
+    "opsecNote": "Running a Freenet/Hyphanet node makes your machine part of the network — you route and cache other users' (encrypted) data, and your node advertises to peers. Use a dedicated/VM install, never your main machine, and understand you are participating in, not just reading, the network. Opennet mode exposes you to arbitrary strangers; darknet (friend-to-friend) mode is more discreet.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-standing open-source project (since 1999, now Hyphanet); the client is legitimate, but content published inside the network is anonymous and unvetted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Freenet",
+      "Hyphanet",
+      "hyphanet.org"
+    ],
+    "tags": [
+      "darknet",
+      "p2p",
+      "anonymous-network"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/clients/freenet-project.md"
   },
   {
@@ -108631,46 +108550,6 @@
     "_file": "library/tools/evidence-capture/slideshare-downloader.md"
   },
   {
-    "id": "snapper",
-    "name": "Snapper",
-    "description": "Batch website screenshots, post-reconnaissance documentation",
-    "url": "https://github.com/dxa4481/Snapper",
-    "category": "evidence-capture",
-    "path": [
-      "evidence-capture",
-      "web-browsing"
-    ],
-    "bestFor": "Batch website screenshots, post-reconnaissance documentation",
-    "input": "URLs or host lists",
-    "output": "PNG screenshots, batch capture output",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Open-source passive screenshot capture tool; sends HTTP requests to targets during capture.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/evidence-capture/web-browsing/snapper.md"
-  },
-  {
     "id": "soundscrape",
     "name": "SoundScrape",
     "description": "Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com.",
@@ -114000,48 +113879,6 @@
       "tradeint"
     ],
     "_file": "library/tools/financial-crypto/tradint-research-tool.md"
-  },
-  {
-    "id": "uk-equifax-com",
-    "name": "uk.equifax.com",
-    "description": "OSINT tool: uk.equifax.com.",
-    "url": "http://www.uk.equifax.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/uk-equifax-com.md"
   },
   {
     "id": "wallet-explorer",
@@ -215504,46 +215341,62 @@
   },
   {
     "id": "akp-email-database",
-    "name": "AKP email database",
-    "description": "OSINT tool: AKP email database.",
-    "url": "https://wikileaks.org//akp-emails/",
+    "name": "AKP Emails (WikiLeaks)",
+    "description": "Use when you have a `name`, `email`, or keyword tied to Turkey's AKP party and want leaked emails — returns messages, senders/recipients, and attachments.",
+    "url": "https://wikileaks.org/akp-emails/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching ~400k leaked emails from Turkey's ruling AKP party by sender, recipient, keyword, or attachment.",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and public; WikiLeaks hosts the searchable interface with no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a public archive. Queries hit WikiLeaks' servers; on a monitored network, accessing a politically sensitive leak may itself be notable, so use a clean browser/VPN. Do not download and redistribute unredacted personal data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Hosted by WikiLeaks; the corpus is genuine leaked material but individual message authenticity/context is unverified and politically charged.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "dnc-email-database",
       "gi-files",
-      "ice-patrol",
       "leaked-cables",
       "macron-campaign-emails",
       "sony-archives",
       "wikileaks",
       "wikileaks-search"
     ],
+    "aliases": [
+      "AKP emails",
+      "akparti.org.tr leak"
+    ],
+    "tags": [
+      "leaks",
+      "email-leak",
+      "wikileaks"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/akp-email-database.md"
   },
   {
@@ -276074,46 +275927,6 @@
     "_file": "library/tools/search-engines/core.md"
   },
   {
-    "id": "country-of-grey-canada",
-    "name": "Country of Grey (Canada)",
-    "description": "County of Grey site offering Provincial Offences Act resources",
-    "url": "https://www.grey.ca/traffic-tickets-provincial-offences",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/country-of-grey-canada.md"
-  },
-  {
     "id": "criminology-wiki",
     "name": "Criminology Wiki",
     "description": "Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to corroborate elsewhere.",
@@ -291457,24 +291270,30 @@
   {
     "id": "neuskool",
     "name": "Neuskool",
-    "description": "Personal start page featuring search services on one page, including Google, YouTube, Wikipedia, Twitter, and more.",
+    "description": "Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, Wikipedia, Twitter, and more.",
     "url": "https://neuskool.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A privacy-minded personal start page that launches one query into many search and content services.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free personal start page; no account. States it collects no personally identifiable information.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page forwards your query straight to each service and says it does not collect PII, so exposure equals whatever the destination service logs. Use a sock-puppet/VPN when the underlying searches are sensitive; the launcher itself adds little footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent start page; it aggregates links to third-party engines and adds no data of its own.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -291483,15 +291302,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "search-it"
+    ],
+    "aliases": [
+      "Neuskool",
+      "neuskool.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "start-page"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/neuskool.md"
   },
   {
@@ -299317,24 +299143,30 @@
   {
     "id": "search-it",
     "name": "Search-It",
-    "description": "Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.",
+    "description": "Use when you have one selector and want to query it fast across many engines/platforms — returns a single-page launcher for Google, Bing, Reddit, Twitter, and more.",
     "url": "https://search-it.netlify.app/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-page launcher to fire the same query into many search engines and social platforms.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free single-page web app; no account, no ads-wall.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page itself just hands your query off to each destination — \"your searches go straight to the source.\" So OpSec is whatever the destination engine's is; use a sock-puppet/VPN if the underlying searches would expose you. The launcher does not store or intercept queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-built static launcher hosted on Netlify; it adds no data of its own, only convenient links to third-party engines.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -299343,21 +299175,26 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "neuskool",
       "api-guesser",
       "deaditarchive-netlify-app",
       "dorksearch-netlify-app",
       "reddit-timer"
     ],
+    "aliases": [
+      "Search-It",
+      "search-it.netlify.app"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "meta-mega-search-tools",
+      "start-page"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-it.md"
   },
   {
@@ -306395,42 +306232,54 @@
   },
   {
     "id": "wikishire-united-kingdom",
-    "name": "Wikishire (United Kingdom)",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of Britain and Ireland Wiki",
+    "name": "Wikishire (UK & Ireland gazetteer)",
+    "description": "Use when you have a British/Irish place name and want to resolve it geographically — returns county, coordinates, and local geographic context.",
     "url": "http://wikishire.co.uk/wiki/Main_Page",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving and disambiguating British and Irish place names to their historic county, location, and geography.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, openly editable MediaWiki gazetteer; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only reference lookup with no per-subject query; ordinary web browsing. No login or footprint concerns beyond standard logging.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced MediaWiki gazetteer (~36k articles) organised by historic counties; community-edited, so treat details as reference-grade, not authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb",
+      "ie"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wikishire",
+      "wikishire.co.uk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "gazetteer",
+      "geography"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wikishire-united-kingdom.md"
   },
   {
@@ -313056,39 +312905,53 @@
   },
   {
     "id": "dashboard-laterforreddit-com-analysis",
-    "name": "dashboard.laterforreddit.com/analysis",
-    "description": "examine popular post trends for a given subreddit",
+    "name": "Later for Reddit — Subreddit Analysis",
+    "description": "Use when you have a subreddit and want its activity patterns — returns best-post-time heatmaps and popular-post trends for that community.",
     "url": "https://dashboard.laterforreddit.com/analysis",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a subreddit's posting-activity heatmap and top-post trends to understand when a community is active.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The subreddit analysis/best-time view is free to run in-browser; the wider Later for Reddit scheduling product has paid tiers and needs a Reddit login.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a subreddit name, not a person, and the tool reads public Reddit data. No login is needed for the analysis view; do not connect a real Reddit account if you want to stay unattributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party analytics on public Reddit data (Later for Reddit); figures are derived estimates, not official Reddit metrics.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit-timer"
+    ],
+    "aliases": [
+      "Later for Reddit analysis",
+      "dashboard.laterforreddit.com"
+    ],
     "tags": [
       "Social Media",
-      "Reddit"
+      "Reddit",
+      "subreddit-analytics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/dashboard-laterforreddit-com-analysis.md"
   },
   {

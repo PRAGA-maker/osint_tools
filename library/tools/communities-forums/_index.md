@@ -29,7 +29,7 @@ kind: group-index
 - **`analystforum-com`** (medium) — OSINT tool: analystforum.com.
 - **`answers-com`** (low) — OSINT tool: Answers.com.
 - **`aol-travel`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`arabian-business-news-middle-east-english-language`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
+- **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
 - **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
@@ -117,7 +117,6 @@ kind: group-index
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
-- **`frg-org-uk`** (medium) — OSINT tool: frg.org.uk.
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — OSINT tool: Friendpaste.
 - **`geek-com`** (medium) — Online articles and news related to science, technology, television, and movies
@@ -219,7 +218,6 @@ kind: group-index
 - **`ownerdirect-united-states`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
 - **`parler-search`** (low) — Structured Parler user/hashtag search.
-- **`parship-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`passion-com`** (low) — Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
 - **`paste-in-ua`** (medium) — Use when you have a `username`, `email` or `domain` and want to check a Ukrainian/RU-language pastebin for dumped credentials, leaked lists 
@@ -355,7 +353,6 @@ kind: group-index
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`write-as`** (medium) — OSINT tool: Write.as.
-- **`wsj-technology-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation

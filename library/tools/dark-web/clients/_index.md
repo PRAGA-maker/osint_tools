@@ -7,7 +7,7 @@ kind: group-index
 # dark-web/clients
 
 ## Skills here
-- **`freenet-project`** (medium) — Anonymous peer-to-peer content distribution
+- **`freenet-project`** (medium) — Use when an investigation points to content hosted on the Freenet/Hyphanet darknet — returns access to censorship-resistant sites, forums, a
 - **`i2p-anonymous-network`** (medium) — Use when an investigation points into the I2P darknet — install the router to reach I2P-only "eepsites" and services that Tor and the clearn
 - **`tor-download`** (medium) — Use when you need to reach .onion sites or browse anonymously for an investigation — the official source for verified Tor Browser installers
 

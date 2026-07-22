@@ -98,7 +98,7 @@ kind: group-index
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
 - **`covaxxy`** (low) — OSINT tool: CoVaxxy.
 - **`crowdtangle`** (low) — Use when you want historical Facebook/Instagram public-post monitoring — but note the tool was SHUT DOWN by Meta in August 2024 and is no lo
-- **`dashboard-laterforreddit-com-analysis`** (medium) — examine popular post trends for a given subreddit
+- **`dashboard-laterforreddit-com-analysis`** (medium) — Use when you have a subreddit and want its activity patterns — returns best-post-time heatmaps and popular-post trends for that community.
 - **`datanyze-com`** (medium) — Use when you have a `name` on LinkedIn or an `employer-org` and want business contact data — returns work `email`, direct-dial `phone` and f
 - **`deaditarchive-netlify-app`** (medium) — Use when you have a `username`/topic tied to a banned or purged subreddit and want the removed posts — returns archived content from deleted
 - **`deck-blue`** (high) — Use when you have a Bluesky `username` and want to monitor their posts, searches and lists in real time across columns — returns live `socia

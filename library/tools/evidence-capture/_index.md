@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`map-locations/`** — 1 skill(s) below.
 - **`screen-capture/`** — 2 skill(s) below.
-- **`web-browsing/`** — 7 skill(s) below.
+- **`web-browsing/`** — 6 skill(s) below.
 
 ## Skills here
 - **`commentexporter-com`** (low) — OSINT tool: Commentexporter.com.

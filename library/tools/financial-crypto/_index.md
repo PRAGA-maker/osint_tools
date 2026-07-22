@@ -114,7 +114,6 @@ kind: group-index
 - **`tmx`** (low) — OSINT tool: TMX.
 - **`token-view`** (low) — OSINT tool: Token View.
 - **`tradint-research-tool`** (low) — OSINT tool: Tradint Research Tool.
-- **`uk-equifax-com`** (medium) — OSINT tool: uk.equifax.com.
 - **`wallet-labels`** (low) — Search across more than 7.5M #Ethereum addresses labeled to easily identify wallets and exchange
 - **`wearepay-uk`** (medium) — OSINT tool: wearepay.uk.
 - **`wikipedia-list-of-registers`** (low) — Wikipedia list of official business registers around the world.

@@ -46,7 +46,7 @@ kind: group-index
 - **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
 - **`aiddata`** (low) — OSINT tool: AidData.
-- **`akp-email-database`** (medium) — OSINT tool: AKP email database.
+- **`akp-email-database`** (medium) — Use when you have a `name`, `email`, or keyword tied to Turkey's AKP party and want leaked emails — returns messages, senders/recipients, an
 - **`alabama-deaths`** (medium) — Use when you have a `name` and want an Alabama death record (1908–1974) — returns dob, address, and associate (next-of-kin) links from the F
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
