@@ -46,7 +46,6 @@ kind: group-index
 - **`bearpanther-com`** (high) — Use when you have a `geolocation` (a point or area on a map) and want to surface public Instagram posts tagged there — returns social-profil
 - **`behance`** (high) — Use when you have a `name` or `username` of a creative professional and want their portfolio profile — returns a `social-profile` with work,
 - **`bellingcat-tiktok-date-extract`** (medium) — Use when you have a TikTok video `social-profile` URL/ID and want its exact upload time — returns the precise `metadata-exif`-style creation
-- **`best-tiktok-hashtags`** (medium) — OSINT tool: Best tiktok hashtags.
 - **`better-reddit-search`** (medium) — Use when you have a keyword, `name` or phrase and want to search Reddit posts with real Boolean, subreddit and date filters — returns matchi
 - **`bibliogram-art`** (high) — Use when you have an Instagram `username` and want to view their public profile/posts without an Instagram login — but this Bibliogram insta
 - **`bibliogram`** (high) — Use when you have an Instagram `username` and want to view a profile/posts without an Instagram login — but note this front-end is defunct; 

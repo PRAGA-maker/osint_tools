@@ -110,7 +110,6 @@ kind: group-index
 - **`findsounds`** (low) — Use when you have a distinctive sound in a recording/video and want to source or identify a matching audio sample on the web — returns downl
 - **`fireshot-addons-mozilla-org`** (medium) — Use when you need to capture a full-page screenshot of a web profile or post to preserve evidence before it is edited or deleted.
 - **`fix-picture-image-conversion-tool`** (high) — Use when you have an `image` in an awkward format (HEIC, RAW, TIFF, WebP) and want a clean JPG/PNG at a controlled size — returns a converte
-- **`flexclip`** (medium) — Get video metadata
 - **`flickr-com`** (high) — Use when you want to browse geotagged Flickr photos on a map to place a person or scene — a duplicate listing pointing at Flickr's map view.
 - **`font-spring`** (medium) — Use when you have an `image` containing text/lettering and want to identify the typeface used — returns image-analysis leads (font identity)
 - **`fotki-image-search`** (high) — Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.
@@ -308,7 +307,6 @@ kind: group-index
 - **`stolencamerafinder-com`** (high) — Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial numb
 - **`stolencamerafinder`** (high) — Use when you have an `image` with a camera serial number in its EXIF and want other photos from the same physical camera — returns other onl
 - **`street-clip`** (medium) — Use when you have an `image` and want a zero-shot guess of which country/region it was taken in — returns a ranked geolocation likelihood.
-- **`subtitlevideo`** (medium) — Extract subtitles from video
 - **`svg-editor`** (high) — Use when you have an SVG `image` and want to inspect, edit, annotate or redact it in-browser — returns a modified image/vector, useful for m
 - **`tactiq-io`** (high) — Use when you have a YouTube video URL (`social-profile` / `metadata`) and want its full spoken transcript to mine for names, places and date
 - **`tagrum`** (medium) — Use when you have a foreign-language video (uploaded or a social link) and want to understand what's said — returns an AI-translated, Englis

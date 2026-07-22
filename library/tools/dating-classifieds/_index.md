@@ -23,7 +23,6 @@ kind: group-index
 - **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
 - **`coomer-st`** (medium) — Use when you have a `username` and want to check whether it maps to an adult-subscription-platform (OnlyFans/Fansly) creator profile — retur
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
-- **`datingadvice`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to dating queries
 - **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p

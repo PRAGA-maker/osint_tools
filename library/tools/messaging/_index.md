@@ -76,7 +76,6 @@ kind: group-index
 - **`instances-social`** (medium) — Use when you need to enumerate or pick Mastodon/fediverse servers — returns a searchable list of instances (`domain`s) with size, topic and 
 - **`intelligence-x-telegram-search`** (medium) — Use when you have a keyword or `username` and want to search public Telegram content — returns channels/posts via Google CSEs and Telegago.
 - **`itp-infotrack`** (high) — Use when you have a `name` (optionally a US `address` or `phone`) and want a free people-search preview — returns name, address, phone, age/
-- **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.
 - **`kalilinuxtutorials-com`** (high) — Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — return
 - **`kikusernames-com`** (medium) — Use when you have a Kik `username`/`name` and want to find a matching self-listed Kik profile — returns the profile `social-profile` and sta
 - **`kirbstr-s-mastodon-search`** (medium) — Use when you have a `name`, `username` or keyword and want to search across popular Mastodon instances at once — returns matching posts and 

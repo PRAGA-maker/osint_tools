@@ -127,7 +127,6 @@ kind: group-index
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
 - **`california-registered-voter-verification`** (medium) — Use when you have a `name` + DOB and want to confirm California voter registration status — returns a registration confirmation, not a searc
 - **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
-- **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
 - **`canada-gazette`** (medium) — Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appo
 - **`canadian-business-research`** (medium) — Use when you have a Canadian company or business `name` and want the official research gateway — returns links to federal corporation search
 - **`canadian-copyrights-database`** (medium) — Use when you have a `name` or work title and want Canadian copyright registrations — returns registered works with author/owner names and da
@@ -521,7 +520,6 @@ kind: group-index
 - **`lawsoc-ni-org`** (medium) — Use when you have a `name` or firm and want to confirm a Northern Ireland solicitor — returns the solicitor's firm, office address and profe
 - **`lawsociety-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a solicitor's registration and workplace in England & Wales — returns the solicitor's
 - **`le-necrologue-obituary-search-canada`** (high) — Use when you have a `name` and want Canadian death notices/obituaries — returns `dob`/death date, `address` (city/province), funeral home an
-- **`lebanon-county-pa-2017-search-and-report`** (medium) — OSINT tool: Lebanon County PA 2017 Search and Report.
 - **`lefigaro-fr`** (high) — Use when you have a French company `name`/`employer-org` or a director `name` and want free company records and leadership data — returns em
 - **`legacy-com`** (high) — Use when you have a `name` and want to find a death notice or obituary — returns date of death, age, location, funeral home and surviving/pr
 - **`legacy`** (high) — Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date,
@@ -928,7 +926,6 @@ kind: group-index
 - **`uky-salaries-2019`** (medium) — Use when you have a `name` and want to confirm someone was a University of Kentucky employee in 2019 — returns their `employer-org` unit and
 - **`un-comtrade-database`** (low) — OSINT tool: UN COMTRADE Database.
 - **`un-data`** (low) — OSINT tool: UN Data.
-- **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
 - **`unclaimed-money-us-google-search`** (medium) — Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns 
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns

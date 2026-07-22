@@ -37,7 +37,6 @@ kind: group-index
 - **`access-to-archival-databases`** (medium) — Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, 
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
-- **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
 - **`african-journal-online`** (low) — OSINT tool: African Journal Online.
 - **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
@@ -57,7 +56,6 @@ kind: group-index
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
 - **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
-- **`antso-search-engine-china`** (medium) — Chinese surgace web search engine covering regional results
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — OSINT tool: Aol.
 - **`ap`** (low) — OSINT tool: AP.
@@ -106,7 +104,6 @@ kind: group-index
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
 - **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
-- **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
 - **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
 - **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
@@ -186,7 +183,6 @@ kind: group-index
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
 - **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
-- **`dirio-search-engine-bulgaria`** (medium) — Bulgarian surface web search engine covering regional results
 - **`dirjournal`** (low) — Web directory, offering local searches by categories
 - **`disconnect-search`** (low) — OSINT tool: Disconnect Search.
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
@@ -344,7 +340,6 @@ kind: group-index
 - **`inside`** (low) — Human edited web directory, formerly known as Mahalo
 - **`intelligence-x`** (medium) — Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop la
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
-- **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
 - **`international-standard-classification-of-occupations`** (low) — Use when you have an `employer-org`/job-title lead and want to normalize or interpret an occupation into a standard ISCO code — returns the 
 - **`international-trademark-search`** (medium) — Use when you have a `name`, brand, or `employer-org` and want its trademark filings — returns owner names, companies, filing attorneys and d
 - **`internet-archive`** (medium) — Use when you have a `name`, `username`, or topic keyword and want to full-text search the Internet Archive's collections — books, TV News, a
@@ -586,7 +581,6 @@ kind: group-index
 - **`rfc-fyi`** (low) — Browseable, searchable RFC index
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth
-- **`rocketlawyer`** (medium) — Website related to social networking and crowdsourceing with thousands of online responses to legal queries
 - **`rockstargames-socialclub-player-search`** (medium) — Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-pro
 - **`roger-ebert`** (medium) — Website related to movie reviews
 - **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
@@ -659,7 +653,6 @@ kind: group-index
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
 - **`storyful`** (low) — OSINT tool: Storyful.
-- **`studentreviews-north-america`** (medium) — Website related to education reviews
 - **`suchmaschinen-datenbank`** (medium) — German meta search engine
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — XDCC file search engine

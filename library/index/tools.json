@@ -26778,46 +26778,6 @@
     "_file": "library/tools/communities-forums/discord-servers/discord-bot-list.md"
   },
   {
-    "id": "discovery-channel-television-canada",
-    "name": "Discovery Channel Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.discovery.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/discovery-channel-television-canada.md"
-  },
-  {
     "id": "disqus",
     "name": "Disqus",
     "description": "Use when you have a Disqus username and want that person's cross-site public comment history — returns social-profile, associate and text leads that can expose location, opinions, and other handles.",
@@ -26989,42 +26949,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/ehow.md"
-  },
-  {
-    "id": "etusivu",
-    "name": "Etusivu",
-    "description": "OSINT tool: Etusivu.",
-    "url": "https://pastebin.fi/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/etusivu.md"
   },
   {
     "id": "eumom-ie",
@@ -27325,46 +27249,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/fark-com.md"
-  },
-  {
-    "id": "feeddemon-rss-reader",
-    "name": "Feeddemon RSS Reader",
-    "description": "Website that provides an online bookmarking application for managing RSS feeds",
-    "url": "http://www.feeddemon.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/feeddemon-rss-reader.md"
   },
   {
     "id": "feedly-rss-reader",
@@ -27698,46 +27582,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/flixwatch-co.md"
-  },
-  {
-    "id": "food-network-canada",
-    "name": "Food Network (Canada)",
-    "description": "Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry",
-    "url": "http://www.foodnetwork.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/food-network-canada.md"
   },
   {
     "id": "footballforums-net",
@@ -29453,46 +29297,6 @@
     "_file": "library/tools/communities-forums/itpro.md"
   },
   {
-    "id": "itv-television-united-kingdom",
-    "name": "ITV Television (United Kingdom)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.itv.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/itv-television-united-kingdom.md"
-  },
-  {
     "id": "itworldcanada",
     "name": "ITWorldCanada",
     "description": "Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies and roles.",
@@ -29896,46 +29700,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/knok.md"
-  },
-  {
-    "id": "knowledge-network-television-canada",
-    "name": "Knowledge Network Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "https://www.knowledge.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/knowledge-network-television-canada.md"
   },
   {
     "id": "kyc360",
@@ -30385,46 +30149,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/loveaholics.md"
-  },
-  {
-    "id": "macleans-magazine-canada",
-    "name": "Macleans Magazine (Canada)",
-    "description": "Searchable website for a worldwide major magazine with large readership and or global publishing",
-    "url": "http://www.macleans.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/macleans-magazine-canada.md"
   },
   {
     "id": "mamba-ru",
@@ -32744,42 +32468,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/passion-com.md"
-  },
-  {
-    "id": "paste-cash",
-    "name": "Paste.Cash",
-    "description": "OSINT tool: Paste.Cash.",
-    "url": "https://www.paste.cash/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/paste-cash.md"
   },
   {
     "id": "paste-in-ua",
@@ -36893,49 +36581,6 @@
     "_file": "library/tools/communities-forums/the-guardian-united-kingdom.md"
   },
   {
-    "id": "the-guardian-world",
-    "name": "The Guardian (World)",
-    "description": "Searchable website for a major online news/media publisher covering global events and having large reader/fan base",
-    "url": "http://www.theguardian.com/world",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "the-guardian-united-kingdom"
-    ],
-    "_file": "library/tools/communities-forums/the-guardian-world.md"
-  },
-  {
     "id": "the-independent-news-united-kingdom",
     "name": "The Independent (UK news)",
     "description": "Use when you have a `name` linked to the UK or a nationally covered event and want reporting — returns `associate`, `employer-org` and event context from published articles.",
@@ -37930,46 +37575,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/tutpaste.md"
-  },
-  {
-    "id": "tvnz-television-new-zealand",
-    "name": "TVNZ Television (New Zealand)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "https://www.tvnz.co.nz",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/tvnz-television-new-zealand.md"
   },
   {
     "id": "uberpeople-net",
@@ -45301,46 +44906,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/craigslist.md"
-  },
-  {
-    "id": "datingadvice",
-    "name": "Datingadvice",
-    "description": "Website related to social networking and crowdsourcing with thousands of online responses to dating queries",
-    "url": "http://www.datingadvice.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/datingadvice.md"
   },
   {
     "id": "dudjob-com",
@@ -108762,48 +108327,6 @@
     "_file": "library/tools/financial-crypto/btcbook-guarda-com.md"
   },
   {
-    "id": "business-hsbc-co-uk",
-    "name": "business.hsbc.co.uk",
-    "description": "OSINT tool: business.hsbc.co.uk.",
-    "url": "https://www.business.hsbc.uk/en-gb/solutions/iban-and-bic",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/business-hsbc-co-uk.md"
-  },
-  {
     "id": "chainabuse",
     "name": "Chainabuse",
     "description": "Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns community abuse reports plus linked wallets, domains and social handles.",
@@ -112231,48 +111754,6 @@
     "_file": "library/tools/financial-crypto/wallet-labels.md"
   },
   {
-    "id": "wearepay-uk",
-    "name": "wearepay.uk",
-    "description": "OSINT tool: wearepay.uk.",
-    "url": "https://newseventsinsights.wearepay.uk/sort-code-checker/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/wearepay-uk.md"
-  },
-  {
     "id": "wikipedia-list-of-registers",
     "name": "Wikipedia list of registers",
     "description": "Wikipedia list of official business registers around the world.",
@@ -115523,47 +115004,6 @@
       "eia-global-environmental-crime-tracker"
     ],
     "_file": "library/tools/geolocation/environmental-investigation-agency.md"
-  },
-  {
-    "id": "epoch101-com",
-    "name": "epoch101.com",
-    "description": "OSINT tool: epoch101.com.",
-    "url": "https://www.epoch101.com/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "timezones",
-      "Time Zones & Converters"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/epoch101-com.md"
   },
   {
     "id": "epochconverter-com",
@@ -135349,44 +134789,6 @@
     "_file": "library/tools/image-video-face/fix-picture-image-conversion-tool.md"
   },
   {
-    "id": "flexclip",
-    "name": "FlexClip",
-    "description": "Get video metadata",
-    "url": "https://www.flexclip.com/tools/metadata-video/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/flexclip.md"
-  },
-  {
     "id": "flickr",
     "name": "Flickr",
     "description": "Use when a person of interest may have a Flickr account and you want their public photos, tags, EXIF/geolocation, and account context.",
@@ -148752,44 +148154,6 @@
     "_file": "library/tools/image-video-face/street-clip.md"
   },
   {
-    "id": "subtitlevideo",
-    "name": "Subtitlevideo",
-    "description": "Extract subtitles from video",
-    "url": "https://www.subtitlevideo.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/subtitlevideo.md"
-  },
-  {
     "id": "surfface-face-and-people-search-engine",
     "name": "Surfface Face & People Search Engine",
     "description": "Use when you have a `face`/photo of an unknown person and want to find where else they appear online — returns matched `social-profile`s, names and source links with similarity scores.",
@@ -154914,40 +154278,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/maps-geospatial-data/google-flood-hub.md"
-  },
-  {
-    "id": "google-map-search-engine",
-    "name": "Google Map Search Engine",
-    "description": "OSINT tool: Google Map Search Engine.",
-    "url": "https://cse.google.com/cse?cx=013991603413798772546:mofb1uoaebi",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/google-map-search-engine.md"
   },
   {
     "id": "gosur-map",
@@ -162054,50 +161384,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/messaging/itp-infotrack.md"
-  },
-  {
-    "id": "jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization",
-    "name": "Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization",
-    "description": "OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.",
-    "url": "https://eeradicalization.com/jihadi-telegram-tutorial-channels-the-lone-wolfs-lair",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "phone"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization"
-    ],
-    "_file": "library/tools/messaging/jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization.md"
   },
   {
     "id": "kalilinuxtutorials-com",
@@ -217780,52 +217066,6 @@
     "_file": "library/tools/public-records/california-registered-voter-verification.md"
   },
   {
-    "id": "caltech-coolcosmos-infrared-zoo",
-    "name": "CalTech CoolCosmos Infrared Zoo",
-    "description": "View infra-red pictures and information about animals",
-    "url": "http://coolcosmos.ipac.caltech.edu",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/caltech-coolcosmos-infrared-zoo.md"
-  },
-  {
     "id": "canada-gazette",
     "name": "Canada Gazette",
     "description": "Use when you have a `name` or `employer-org` and want official Canadian public notices — returns bankruptcies, name changes, government appointments, and regulatory notices.",
@@ -239557,40 +238797,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/le-necrologue-obituary-search-canada.md"
-  },
-  {
-    "id": "lebanon-county-pa-2017-search-and-report",
-    "name": "Lebanon County PA 2017 Search and Report",
-    "description": "OSINT tool: Lebanon County PA 2017 Search and Report.",
-    "url": "https://b2.caspio.com/dp/0a9210001cc98f2f21004ce4a3d4",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/lebanon-county-pa-2017-search-and-report.md"
   },
   {
     "id": "lefigaro-fr",
@@ -261924,40 +261130,6 @@
     "_file": "library/tools/public-records/un-data.md"
   },
   {
-    "id": "unc-system-employees-with-the-biggest-paychecks",
-    "name": "UNC System employees with the biggest paychecks",
-    "description": "OSINT tool: UNC System employees with the biggest paychecks.",
-    "url": "https://c0dzk127.caspio.com/dp/b95b1000e0821c125a8a43cd9cc1",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/unc-system-employees-with-the-biggest-paychecks.md"
-  },
-  {
     "id": "unclaimed-and-abandoned-property-search-directory",
     "name": "Unclaimed & Abandoned Property Search Directory",
     "description": "Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org leads.",
@@ -266512,46 +265684,6 @@
     "_file": "library/tools/search-engines/adzuna-job-search-engine-united-kingdom.md"
   },
   {
-    "id": "african-development-bank",
-    "name": "African Development Bank",
-    "description": "African Development Bank Groups statistical search site",
-    "url": "http://www.afdb.org/en/knowledge/statistics/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/african-development-bank.md"
-  },
-  {
     "id": "african-journal-online",
     "name": "African Journal Online",
     "description": "OSINT tool: African Journal Online.",
@@ -267431,46 +266563,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/anon-scraper.md"
-  },
-  {
-    "id": "antso-search-engine-china",
-    "name": "Antso Search Engine (China)",
-    "description": "Chinese surgace web search engine covering regional results",
-    "url": "http://www.antso.cn",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/antso-search-engine-china.md"
   },
   {
     "id": "aol",
@@ -269907,46 +268999,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/biznar.md"
-  },
-  {
-    "id": "bizrate-shopping-search-engine",
-    "name": "Bizrate Shopping Search Engine",
-    "description": "E-commere website for fashion items, manufactured products and other online shopping items",
-    "url": "http://www.bizrate.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/bizrate-shopping-search-engine.md"
   },
   {
     "id": "blinde-kuh-childrens-search-engine-germany",
@@ -273756,46 +272808,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/direct-download-almost-anything.md"
-  },
-  {
-    "id": "dirio-search-engine-bulgaria",
-    "name": "Dirio Search Engine (Bulgaria)",
-    "description": "Bulgarian surface web search engine covering regional results",
-    "url": "http://search.dir.bg/indexwide.php",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/dirio-search-engine-bulgaria.md"
   },
   {
     "id": "dirjournal",
@@ -281906,46 +280918,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/search-engines/inteltechniques-tools-search-engines-suite.md"
-  },
-  {
-    "id": "international-association-of-chiefs-of-police",
-    "name": "International Association of Chiefs of Police",
-    "description": "Site identifying the issues in law enforcement and providing information and research to the public",
-    "url": "http://www.theiacp.org/research",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/international-association-of-chiefs-of-police.md"
   },
   {
     "id": "international-standard-classification-of-occupations",
@@ -293697,46 +292669,6 @@
     "_file": "library/tools/search-engines/robots-txt-search-engine.md"
   },
   {
-    "id": "rocketlawyer",
-    "name": "Rocketlawyer",
-    "description": "Website related to social networking and crowdsourceing with thousands of online responses to legal queries",
-    "url": "https://www.rocketlawyer.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/rocketlawyer.md"
-  },
-  {
     "id": "rockstargames-socialclub-player-search",
     "name": "Rockstar Social Club Player/Crew Search",
     "description": "Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-profile` with activity and connections.",
@@ -297350,46 +296282,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/stract.md"
-  },
-  {
-    "id": "studentreviews-north-america",
-    "name": "Studentreviews (North America)",
-    "description": "Website related to education reviews",
-    "url": "http://www.studentsreview.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/studentreviews-north-america.md"
   },
   {
     "id": "suchmaschinen-datenbank",
@@ -305578,48 +304470,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/social-networks/bellingcat-tiktok-date-extract.md"
-  },
-  {
-    "id": "best-tiktok-hashtags",
-    "name": "Best tiktok hashtags",
-    "description": "OSINT tool: Best tiktok hashtags.",
-    "url": "https://tiktokhashtags.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "tiktok"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/best-tiktok-hashtags.md"
   },
   {
     "id": "better-reddit-search",

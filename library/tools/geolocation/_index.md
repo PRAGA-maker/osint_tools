@@ -69,7 +69,6 @@ kind: group-index
 - **`earth-engine-dataset`** (medium) — Use when you have a `geolocation` and want historical/current satellite and geospatial data for it — returns 40+ years of imagery, terrain, 
 - **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
-- **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
 - **`epochconverter-com`** (low) — Use when you have a Unix timestamp from `metadata-exif`, a filename, a database dump, or an API response and want the human date/time — retu
 - **`epochconverter-io`** (medium) — Use when you have a raw Unix/epoch timestamp pulled from `metadata-exif`, a log, a filename, or an API response and want the human-readable 
 - **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
