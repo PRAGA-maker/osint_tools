@@ -15,7 +15,7 @@ kind: group-index
 - **`fierce-domain-scanner`** (low) — DNS recon and subdomain-to-IP mapping
 - **`findsubdomains`** (low) — Automated subdomain enumeration, organization name filtering, subdomain statistics
 - **`gdns`** (low) — Quick DNS enumeration via Google DNS services
-- **`gobuster`** (low) — Fast DNS and vhost brute-force enumeration
+- **`gobuster`** (low) — Use when you have a `domain` and want to brute-force its subdomains/paths/vhosts — returns discovered subdomains, directories and virtual ho
 - **`google-subdomains`** (low) — Indexed subdomain discovery, publicly visible subdomain enumeration
 - **`owasp-maryam`** (low) — Scriptable multi-module OSINT reconnaissance workflows
 - **`pentest-tools-com-subdomains`** (low) — Use when you have a `domain` and want a quick browser-based subdomain enumeration with no local setup — returns discovered subdomains and DN

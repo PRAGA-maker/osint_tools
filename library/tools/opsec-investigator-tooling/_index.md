@@ -131,7 +131,7 @@ kind: group-index
 - **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`eset-smart-security`** (low) — Malware and virus detection and elimination program
 - **`exif-viewer-add-on-for-chrome`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
-- **`exif-viewer-firefox-add-on`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
+- **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Website search that identifies if a given IP address was used as a Tor relay
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
 - **`export-chrome-history`** (low) — A simple extension for Googlechrome that allows you to save detailed information about links from browser history as CSV/JSON. Useful for bo

@@ -13,7 +13,7 @@ kind: group-index
 - **`kraken`** (low) — CLI-driven reconnaissance against domain and host assets
 - **`online-nikto-scanner`** (low) — Web server vulnerability scanning
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior
-- **`shodan`** (low) — Finding exposed services and infrastructure risk indicators
+- **`shodan`** (low) — Use when you have an `ip-address`, `domain` or `employer-org` and want its internet-exposed devices/services — returns open ports, banners, 
 - **`sitediff`** (low) — Tracking site changes between snapshots for monitoring and QA
 - **`urldna`** (low) — Quick URL/domain triage and intelligence pivoting
 - **`urlscan-io`** (low) — Use when you have a `domain`/URL or `ip-address` and want its scan history — returns screenshots, contacted domains/IPs, and page resources 

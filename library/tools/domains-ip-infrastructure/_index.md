@@ -86,7 +86,7 @@ kind: group-index
 - **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
 - **`bi-zone`** (low) — OSINT tool: Bi.Zone.
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
-- **`bitdefender-threat-map`** (low) — OSINT tool: Bitdefender Threat Map.
+- **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`breachhq`** (low) — OSINT tool: BreachHQ.
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.

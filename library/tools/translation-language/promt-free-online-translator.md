@@ -29,6 +29,7 @@ registration: false
 relatedTools:
 - reverso-free-online-translator
 - frengly-free-online-translator
+- online-translator
 aliases:
 - PROMT.One
 - online-translator.com

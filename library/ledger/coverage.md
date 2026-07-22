@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7532 total · 4627 full · 2905 stub (61% enriched)
+**Tools:** 7530 total · 4633 full · 2897 stub (61% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3610 · high: 1964 · medium: 1958
+low: 3608 · high: 1964 · medium: 1958
 
 ## Tools by trust
-community: 3502 · unverified: 2471 · trusted: 1550 · untrustworthy: 6 · personal: 3
+community: 3500 · unverified: 2467 · trusted: 1554 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 25/454
+- `ai-analysis-automation` — 25/453
 - `archives-cache` — 83/124
 - `communities-forums` — 235/289
 - `dark-web` — 35/110
 - `dating-classifieds` — 78/90
-- `documents-metadata` — 42/309
-- `domains-ip-infrastructure` — 128/705
+- `documents-metadata` — 42/308
+- `domains-ip-infrastructure` — 132/705
 - `email` — 245/246
 - `evidence-capture` — 11/29
 - `financial-crypto` — 53/111
@@ -28,7 +28,7 @@ community: 3502 · unverified: 2471 · trusted: 1550 · untrustworthy: 6 · pers
 - `image-video-face` — 439/452
 - `maps-geospatial-data` — 63/123
 - `messaging` — 178/184
-- `opsec-investigator-tooling` — 46/552
+- `opsec-investigator-tooling` — 47/552
 - `people-search` — 256/258
 - `phone` — 134/137
 - `public-records` — 852/1012
@@ -36,7 +36,7 @@ community: 3502 · unverified: 2471 · trusted: 1550 · untrustworthy: 6 · pers
 - `social-networks` — 719/788
 - `training-ctf` — 4/12
 - `translation-language` — 20/101
-- `transportation` — 116/211
+- `transportation` — 117/211
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -50,7 +50,7 @@ community: 3502 · unverified: 2471 · trusted: 1550 · untrustworthy: 6 · pers
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 286 leaves
-- `library/tools/documents-metadata` — 261 leaves
+- `library/tools/documents-metadata` — 260 leaves
 - `library/tools/people-search` — 248 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves

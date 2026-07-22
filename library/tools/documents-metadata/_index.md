@@ -42,7 +42,6 @@ kind: group-index
 - **`awesomelists-top`** (low) — OSINT tool: Awesomelists.top.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool
-- **`bitbucket-repo-search`** (low) — OSINT tool: Bitbucket Repo Search.
 - **`bitly-url-shortener-and-link-manager`** (low) — Tool for shortening URL address hyperlinks
 - **`bookmarkee-bookmark-organizer`** (low) — Online bookmark manager to organize links
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services

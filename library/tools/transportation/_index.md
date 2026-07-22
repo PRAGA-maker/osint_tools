@@ -54,7 +54,7 @@ kind: group-index
 - **`container-tracking`** (low) — OSINT tool: Container Tracking.
 - **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.
 - **`cosint-osint-on-cars`** (medium) — Use when you have a `vehicle-plate`, `vin`, or a photo of a car and want a method for pivoting to an owner or location — returns `name`, `ad
-- **`crewlist-org-uk`** (low) — OSINT tool: Crewlist.org.uk.
+- **`crewlist-org-uk`** (low) — Use when you have a `name` of a British merchant seafarer (c.1855–1950s) and want their crew-list records — returns ships served, dates and 
 - **`cruise-mapper`** (low) — OSINT tool: Cruise Mapper.
 - **`cyclevin`** (low) — Motorcycle-specific VIN history.
 - **`deciphering-number-plates`** (medium) — Use when you have a `vehicle-plate` in a photo and want to decode its country/region format — a reference series explaining how plates are s

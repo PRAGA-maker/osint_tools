@@ -38,6 +38,8 @@ tags:
 source: cyb-detective
 lastVerified: '2026-07-22'
 enrichment: full
+relatedTools:
+- oblivion
 ---
 
 # Goblyn

@@ -396,7 +396,6 @@ kind: group-index
 - **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
 - **`tldr`** (low) — A tool that is a great time-saver when working with the command line. Enter "tldr command name" and get a brief description with examples of
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
-- **`tor-project`** (low) — OSINT tool: Tor Project.
 - **`torrent-to-magnet`** (low) — OSINT tool: Torrent to Magnet.
 - **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
 - **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
