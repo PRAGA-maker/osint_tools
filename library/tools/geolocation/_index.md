@@ -127,7 +127,6 @@ kind: group-index
 - **`grassgis`** (medium) — Use when you need heavy-duty desktop GIS analysis of raster/vector `geolocation` data — terrain, viewshed, imagery — beyond what a web map o
 - **`ham-radio-qrz-callsign-database-search`** (low) — OSINT tool: Ham Radio QRZ Callsign Database Search.
 - **`hate-map`** (medium) — Use when you have a `geolocation` (US state/area) or a group name and want to see hate/anti-government groups active there — returns `employ
-- **`haunted-places`** (medium) — Google Earth map of ghost sightings around the world
 - **`hawaii-traffic-cameras`** (low) — OSINT tool: Hawaii Traffic Cameras.
 - **`here-2`** (high) — Use when you have an `address`/`geolocation` and want maps, routing, and location context from HERE's mapping platform (alternative basemap 
 - **`here-com-geolocation-and-mapping-tool`** (medium) — Use when you have an `address` or coordinates and want an alternative map view — returns `geolocation`, satellite/street imagery, and routin

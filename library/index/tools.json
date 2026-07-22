@@ -26150,46 +26150,6 @@
     "_file": "library/tools/communities-forums/ctv-news-worldwide-canada.md"
   },
   {
-    "id": "ctv-sci-fi-canada",
-    "name": "CTV Sci-fi (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "https://www.ctvscifi.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/ctv-sci-fi-canada.md"
-  },
-  {
     "id": "deck-for-reddit",
     "name": "Deck for Reddit",
     "description": "OSINT tool: Deck for Reddit.",
@@ -27806,86 +27766,6 @@
     "_file": "library/tools/communities-forums/forums-overclockers-co-uk.md"
   },
   {
-    "id": "fox-news-united-states",
-    "name": "Fox News (United States)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.foxnews.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/fox-news-united-states.md"
-  },
-  {
-    "id": "freeview-television-new-zealand",
-    "name": "Freeview Television (New Zealand)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.freeviewnz.tv",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/freeview-television-new-zealand.md"
-  },
-  {
     "id": "freeview-television-united-kingdom",
     "name": "Freeview (United Kingdom)",
     "description": "Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-search value.",
@@ -28824,46 +28704,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/information-week-news.md"
-  },
-  {
-    "id": "inkdrop-international-newspapers",
-    "name": "Inkdrop International Newspapers",
-    "description": "English online news outlets from around the world",
-    "url": "http://www.inkdrop.net/news",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/inkdrop-international-newspapers.md"
   },
   {
     "id": "iptv-org",
@@ -36867,46 +36707,6 @@
     "_file": "library/tools/communities-forums/trucknetuk-com.md"
   },
   {
-    "id": "tsn-sports-television-canada",
-    "name": "TSN Sports Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.tsn.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/tsn-sports-television-canada.md"
-  },
-  {
     "id": "tutpaste",
     "name": "TutPaste",
     "description": "Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content (`document-id`) that may expose credentials or contact data.",
@@ -37555,46 +37355,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/wideband-shortware-radio-receiver-map.md"
-  },
-  {
-    "id": "wikipedia-list-of-world-newspapers",
-    "name": "Wikipedia List of World Newspapers",
-    "description": "Wikipedia's list of world newspapers categorized by continent/country",
-    "url": "https://en.wikipedia.org/wiki/Lists_of_newspapers",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/wikipedia-list-of-world-newspapers.md"
   },
   {
     "id": "wired-tech-news-and-trends",
@@ -116837,47 +116597,6 @@
     "_file": "library/tools/geolocation/hate-map.md"
   },
   {
-    "id": "haunted-places",
-    "name": "Haunted places",
-    "description": "Google Earth map of ghost sightings around the world",
-    "url": "https://earth.google.com/web/@-7.15227307,116.57647982,-5437.85537383a,22257190.23309946d,35y,0h,0t,0r/data=CjoSOBIgNzgxN2E2YmFhZTA3MTFlN2E3Y2M3M2UxNjM3ZTRhMjMiFGVmX2djc19sb2NhbGd1aWRlc182",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/haunted-places.md"
-  },
-  {
     "id": "hawaii-traffic-cameras",
     "name": "Hawaii Traffic Cameras",
     "description": "OSINT tool: Hawaii Traffic Cameras.",
@@ -151532,40 +151251,6 @@
     "_file": "library/tools/maps-geospatial-data/arcgis-online.md"
   },
   {
-    "id": "arcgis-wildfire-map",
-    "name": "ArcGIS Wildfire Map",
-    "description": "OSINT tool: ArcGIS Wildfire Map.",
-    "url": "https://www.arcgis.com/home/webmap/viewer.html?webmap=df8bcc10430f48878b01c96e907a1fc3#!",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/arcgis-wildfire-map.md"
-  },
-  {
     "id": "atlas-co",
     "name": "atlas.co",
     "description": "Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance/area/overlay analysis and shareable output.",
@@ -155846,35 +155531,51 @@
   {
     "id": "tfl-jamcams",
     "name": "TfL JamCams",
-    "description": "OSINT tool: TfL JamCams.",
+    "description": "Use when you have a London `geolocation` or `address` and want near-live traffic-camera stills plus incidents at that spot — returns geolocation and image observations.",
     "url": "https://www.tfljamcams.net",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking near-real-time TfL traffic-camera images and live road incidents at a specific London junction, bridge, or road.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and ad-free; installable as a PWA. Runs on TfL's free Open Data API — no account or payment needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are viewing public traffic-camera stills; nothing touches the target and no login is required, so this is fully passive. Note the cameras are TfL's own public feed — you are only observing a public place, not surveilling an individual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party map (built by Jason Brooks, not affiliated with TfL) that surfaces TfL's official Open Data camera feed; the underlying images are authoritative TfL data, the map wrapper is community-made.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "tfljamcams.net",
+      "London JamCams map"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "live-cameras",
+      "london"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/tfl-jamcams.md"
   },
   {
@@ -158931,50 +158632,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/messaging/whatsapp/email2whatsapp.md"
-  },
-  {
-    "id": "exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization",
-    "name": "Exploring The Jihadi Telegram World: A Brief Overview - European Eye on Radicalization",
-    "description": "OSINT tool: Exploring The Jihadi Telegram World: A Brief Overview - European Eye on Radicalization.",
-    "url": "https://eeradicalization.com/exploring-the-jihadi-telegram-world-a-brief-overview",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "phone"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization"
-    ],
-    "_file": "library/tools/messaging/exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization.md"
   },
   {
     "id": "fakedetail-com-2",
@@ -223096,40 +222753,6 @@
     "_file": "library/tools/public-records/dsc-data-science-search-engine.md"
   },
   {
-    "id": "dutchess-and-ulster-bridge-safety-ratings-2015",
-    "name": "Dutchess and Ulster bridge safety ratings 2015",
-    "description": "OSINT tool: Dutchess and Ulster bridge safety ratings 2015.",
-    "url": "https://b2.caspio.com/dp.asp?AppKey=996f1000109b0cd3b24b408daf60",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/dutchess-and-ulster-bridge-safety-ratings-2015.md"
-  },
-  {
     "id": "e-gov-kw",
     "name": "e.gov.kw",
     "description": "Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warrants, travel bans, residency) — returns document-id and address/status confirmations.",
@@ -223833,52 +223456,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/public-records/en-52wmb-com.md"
-  },
-  {
-    "id": "enotes-academic-search",
-    "name": "Enotes Academic Search",
-    "description": "Academic-related search engine that searches literature and provides expert summaries and analyses",
-    "url": "http://www.enotes.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/enotes-academic-search.md"
   },
   {
     "id": "epstein-exposed",
@@ -251081,40 +250658,6 @@
     "_file": "library/tools/public-records/residential-rental-properties.md"
   },
   {
-    "id": "resources-library-ubc-ca",
-    "name": "Resources.library.ubc.ca",
-    "description": "OSINT tool: Resources.library.ubc.ca.",
-    "url": "https://resources.library.ubc.ca/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/resources-library-ubc-ca.md"
-  },
-  {
     "id": "responsesource-com",
     "name": "ResponseSource Journalist Profiles",
     "description": "Use when you have a `name` and want to confirm a UK journalist's outlet, beat and role — returns employer-org, social-profile, name.",
@@ -266339,46 +265882,6 @@
     "_file": "library/tools/search-engines/base-de-datos-spanish-language.md"
   },
   {
-    "id": "bazel",
-    "name": "Bazel",
-    "description": "Google’s own build tool that has built-in support for building both client and server software, including client applications for both Android and iOS.",
-    "url": "https://cs.opensource.google/bazel",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/bazel.md"
-  },
-  {
     "id": "bbc-news",
     "name": "BBC News",
     "description": "OSINT tool: BBC News.",
@@ -274201,49 +273704,6 @@
       "freewareweb"
     ],
     "_file": "library/tools/search-engines/freeware-web-ftp-file-search.md"
-  },
-  {
-    "id": "freewareweb",
-    "name": "FreewareWeb",
-    "description": "FTP file search engine",
-    "url": "https://www.freewareweb.com/ftpsearch.shtml",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "freeware-web-ftp-file-search"
-    ],
-    "_file": "library/tools/search-engines/freewareweb.md"
   },
   {
     "id": "ftp-google-dork",
@@ -288682,46 +288142,6 @@
     "_file": "library/tools/search-engines/news-search/pressreader-com.md"
   },
   {
-    "id": "productreviews-australia",
-    "name": "Productreviews (Australia)",
-    "description": "Website related to product reviews",
-    "url": "http://www.productreview.com.au",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/productreviews-australia.md"
-  },
-  {
     "id": "project-vote-smart",
     "name": "Vote Smart",
     "description": "Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record, issue positions, interest-group ratings, and campaign/contact details.",
@@ -289293,46 +288713,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/quickfound-subject-search-engine.md"
-  },
-  {
-    "id": "quranicarabiccorpus",
-    "name": "QuranicArabicCorpus",
-    "description": "Website that offers Quranic scripture search services",
-    "url": "http://corpus.quran.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/quranicarabiccorpus.md"
   },
   {
     "id": "qwant",
@@ -294832,54 +294212,6 @@
     "_file": "library/tools/search-engines/the-osint-rack-mario-santella.md"
   },
   {
-    "id": "thefaceoff-ice-hockey-wiki",
-    "name": "TheFaceOff Ice Hockey Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on ice hockey",
-    "url": "http://icehockey.wikia.com/wiki/The_Face_Off",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "familypedia",
-      "itlaw",
-      "lotrowikia",
-      "religion-wiki",
-      "wikiawikis",
-      "wikirecipes"
-    ],
-    "_file": "library/tools/search-engines/thefaceoff-ice-hockey-wiki.md"
-  },
-  {
     "id": "thelookup",
     "name": "TheLookup",
     "description": "Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profile, domain and document-id leads.",
@@ -296365,46 +295697,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/us-department-of-housing-and-urban-development.md"
-  },
-  {
-    "id": "us-dod-function-codes-united-states",
-    "name": "US DOD Function Codes (United States)",
-    "description": "Website that identifies the occupation classification code across the country at the national level",
-    "url": "http://prhome.defense.gov/Portals/52/Documents/RFM/TFPRQ/Docs/DoD%20Function%20Codes%20-%202009.pdf",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/us-dod-function-codes-united-states.md"
   },
   {
     "id": "us-government-printing-office",
@@ -300166,38 +299458,39 @@
   },
   {
     "id": "yaraif",
-    "name": "YARAif",
-    "description": "OSINT tool: YARAif.",
+    "name": "YARAify",
+    "description": "Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — returns domain and associate (sample/campaign) leads.",
     "url": "https://yaraify.abuse.ch/scan/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scanning a file or looking up a hash against a large YARA-rule and sample database to identify malware family and pivot to related samples and C2 infrastructure.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community service run by abuse.ch (Spamhaus). No payment; an optional free API key (Auth-Key) enables programmatic scanning and lookups.",
+    "opsec": "passive",
+    "opsecNote": "Scanning uploads the file to abuse.ch, which shares malware intelligence with the community — do NOT upload files that contain victim/target PII or that would tip off an adversary, as submissions can become searchable. For a passive check, look up the file's hash rather than uploading the file itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by abuse.ch (now part of Spamhaus), a well-established, widely-cited threat-intelligence provider; its data underpins many commercial and open feeds.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "abusech",
       "malwarebazaar",
@@ -300205,6 +299498,18 @@
       "zeus-c2-tracker",
       "zeus-tracker"
     ],
+    "aliases": [
+      "yaraify.abuse.ch",
+      "abuse.ch YARAify"
+    ],
+    "tags": [
+      "speciality-search-engines",
+      "threat-intel",
+      "malware"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yaraif.md"
   },
   {

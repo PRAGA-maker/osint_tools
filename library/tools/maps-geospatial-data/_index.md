@@ -16,7 +16,6 @@ kind: group-index
 - **`apple-maps`** (low) — Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.
 - **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
-- **`arcgis-wildfire-map`** (medium) — OSINT tool: ArcGIS Wildfire Map.
 - **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
@@ -110,7 +109,7 @@ kind: group-index
 - **`strava`** (low) — Social media fitness app with exercise map based on users' GPS data.
 - **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
 - **`terra-server`** (medium) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to downlo
-- **`tfl-jamcams`** (medium) — OSINT tool: TfL JamCams.
+- **`tfl-jamcams`** (medium) — Use when you have a London `geolocation` or `address` and want near-live traffic-camera stills plus incidents at that spot — returns geoloca
 - **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
 - **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.

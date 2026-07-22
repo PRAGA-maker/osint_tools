@@ -257,7 +257,6 @@ kind: group-index
 - **`doe-data-explorer`** (medium) — Use when you have a researcher `name` or `employer-org` and want their U.S. Department of Energy scientific datasets — returns author, affil
 - **`drug-enforcement-administration`** (medium) — Use when you have a `name` and want DEA public records — returns fugitive listings, press-release arrest details and (via Diversion Control)
 - **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
-- **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
 - **`easybib-citation-generator`** (medium) — Use when you have a source URL/document and want a formatted citation for a report — returns a bibliographic reference (a write-up aid, not 
@@ -271,7 +270,6 @@ kind: group-index
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
 - **`elicit`** (low) — Use when you have a `name` or research question and want AI-assisted discovery of relevant academic papers and their authors — returns paper
 - **`en-52wmb-com`** (low) — Use when you have an `employer-org` and want its import/export trade footprint — returns trading `associate`s (buyers/suppliers), `address` 
-- **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
 - **`europages-business-search-europe`** (medium) — Use when you have a company `name`/`employer-org` and want to find and locate it in Europe — returns matching business listings with `addres
@@ -759,7 +757,6 @@ kind: group-index
 - **`research-rabbit`** (medium) — Use when you have an academic's `name` or a known paper and want their body of work and collaborators — returns papers, co-authors (`associa
 - **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
 - **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 
-- **`resources-library-ubc-ca`** (medium) — OSINT tool: Resources.library.ubc.ca.
 - **`responsesource-com`** (high) — Use when you have a `name` and want to confirm a UK journalist's outlet, beat and role — returns employer-org, social-profile, name.
 - **`rhode-island-registered-voter-verification`** (medium) — Use when you have a `name` (with DOB) for a Rhode Island resident and want to confirm voter registration and district — returns address/dist
 - **`rhode-island`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Rhode Island state corrections — returns inmate record, ID 

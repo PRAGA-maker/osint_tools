@@ -65,7 +65,6 @@ kind: group-index
 - **`council-on-foreign-relations`** (medium) — Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Use when you have a `name` and want Canadian national/local news coverage of a subject — returns `social-profile`/mention, event dates and n
-- **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
 - **`defencetalk-com`** (medium) — Use when you have a `username` or defence-topic interest and want to trace a member on the DefenceTalk military forum — returns social-profi
 - **`defuse`** (medium) — Use when you have found a `defuse.ca` pastebin link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you al
@@ -98,8 +97,6 @@ kind: group-index
 - **`forums-digitalspy-com`** (medium) — Use when you have a `username` and want to check for an account on a large long-running UK entertainment forum — returns the linked `social-
 - **`forums-moneysavingexpert-com`** (medium) — Use when you have a `username` and want to check whether it maps to a member on Britain's largest consumer-finance forum — returns a `social
 - **`forums-overclockers-co-uk`** (medium) — Use when you have a `username` and want to check one of the UK's largest PC-hardware communities — returns a `social-profile` and long post 
-- **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
-- **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — Use when you have a `username`, `email`, or leak keyword and want to find text/code dumps posted publicly — returns pasted `password`, `emai
@@ -118,7 +115,6 @@ kind: group-index
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
 - **`information-week-news`** (medium) — Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-o
-- **`inkdrop-international-newspapers`** (medium) — English online news outlets from around the world
 - **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
 - **`itworldcanada`** (low) — Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies a
 - **`ivpaste`** (medium) — Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email
@@ -276,7 +272,6 @@ kind: group-index
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
 - **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`trucknetuk-com`** (medium) — Use when you have a `username` linked to UK trucking/haulage and want their forum presence — returns their profile, posts and route/employer
-- **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — Use when you have a `username` or `name` of a UK small-business owner and want their forum footprint — returns the linked `social-profile`, 
@@ -291,7 +286,6 @@ kind: group-index
 - **`washington-times-news`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want US national/political news coverage and its searchable archive — retur
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.
-- **`wikipedia-list-of-world-newspapers`** (medium) — Wikipedia's list of world newspapers categorized by continent/country
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 

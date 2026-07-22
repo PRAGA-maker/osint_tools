@@ -54,7 +54,6 @@ kind: group-index
 - **`doxbin-com`** (high) — Use when you have a `name`, `username` or `phone` and want to check whether the subject has been doxed — returns any leaked personal dossier
 - **`easyvin`** (high) — Use when you have a Russian vehicle `vin` or `vehicle-plate` and want its history — returns registration/accident history and cross-referenc
 - **`egrul-bot`** (high) — Use when you have a Russian `employer-org`, INN/OGRN, or a director's `name` and want official EGRUL company data via Telegram — returns com
-- **`exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization`** (medium) — OSINT tool: Exploring The Jihadi Telegram World: A Brief Overview - European Eye on Radicalization.
 - **`fakedetail-com-2`** (medium) — Use when you need to understand or demonstrate how a WhatsApp chat screenshot can be fabricated — a counter-OSINT/evidence-verification refe
 - **`fediverse-explorer`** (medium) — Use when you have an interest, `name` or `username` and want to find matching Mastodon/fediverse accounts — returns `social-profile`s.
 - **`find-telegram-channels-bots-groups`** (medium) — Use when you have a topic, name, or keyword and want to discover related Telegram channels/groups/bots — returns channel links, descriptions

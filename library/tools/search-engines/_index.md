@@ -85,7 +85,6 @@ kind: group-index
 - **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
 - **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`base`** (low) — OSINT tool: Base.
-- **`bazel`** (medium) — Google’s own build tool that has built-in support for building both client and server software, including client applications for both Andro
 - **`bbc-news`** (low) — OSINT tool: BBC News.
 - **`beautiful-news`** (low) — OSINT tool: Beautiful News.
 - **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
@@ -245,7 +244,6 @@ kind: group-index
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
-- **`freewareweb`** (medium) — FTP file search engine
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
@@ -534,7 +532,6 @@ kind: group-index
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.
 - **`presearch`** (low) — OSINT tool: Presearch.
 - **`press-reader`** (low) — OSINT tool: Press Reader.
-- **`productreviews-australia`** (medium) — Website related to product reviews
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
@@ -544,7 +541,6 @@ kind: group-index
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
 - **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
-- **`quranicarabiccorpus`** (medium) — Website that offers Quranic scripture search services
 - **`qwant`** (low) — OSINT tool: Qwant.
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
@@ -655,7 +651,6 @@ kind: group-index
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Use when you need to discover an OSINT tool for a given selector/task — returns a filterable directory of 500+ vetted OSINT resources by cat
-- **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
 - **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
 - **`thepiratebay`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
@@ -687,7 +682,6 @@ kind: group-index
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
 - **`us-census-bureau`** (low) — Use when you have a `geolocation`/`address` and want demographic and economic context — returns population, housing, income, and business st
 - **`us-department-of-housing-and-urban-development`** (medium) — Use when you have a US `address` or `geolocation` and want official housing/area data for it — returns area context, income limits and housi
-- **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — Use when you have a `name` and want to find them in official US federal publications — congressional hearings, court opinions, the Federal R
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
 - **`usa-gov`** (medium) — Use as the official gateway to US government services and agencies — a directory/portal to find the right federal/state agency and record sy
@@ -764,7 +758,7 @@ kind: group-index
 - **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t
 - **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
 - **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
-- **`yaraif`** (medium) — OSINT tool: YARAif.
+- **`yaraif`** (medium) — Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — return
 - **`yassen-com`** (medium) — OSINT tool: Yassen.com.
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
