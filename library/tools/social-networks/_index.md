@@ -351,7 +351,7 @@ kind: group-index
 - **`mastodon`** (high) — Use when you have a `name` or `username` and want to find a subject's profile on the decentralised Mastodon/fediverse network — returns a so
 - **`mastogizmos-com`** (high) — Use when you have a username, hashtag or topic and want to search across the decentralised Mastodon fediverse — returns matching profiles, p
 - **`matthewcassinelli-com`** (high) — Use when you have a Mastodon/fediverse handle or profile link and want its stable numeric account ID — this free Apple Shortcut returns the 
-- **`mavekite`** (medium) — Search TikTok profile by username.
+- **`mavekite`** (medium) — Use when you have a TikTok `username` and want the public profile without logging in — returns user ID, bio, follower/like counts, region, a
 - **`mediamister-com`** (high) — Use when you have an Instagram `username` and want its permanent numeric user ID — returns the stable numeric ID that survives username chan
 - **`medium-com-2`** (high) — Use when you have a `name`/`username` and want a methodology for investigating them on LinkedIn — a how-to article yielding techniques that 
 - **`meetme`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MeetMe social/dating "people nearby" network — returns a soc

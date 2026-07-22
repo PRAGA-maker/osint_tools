@@ -192,7 +192,6 @@ kind: group-index
 - **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
 - **`gitgraber`** (low) — Search and clone sensitive information from GitHub.
-- **`glesys-sweden`** (medium) — Sweden based service provider for registering websites and domain addresses, including cloud hosting services
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
 - **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r

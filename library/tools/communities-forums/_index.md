@@ -119,7 +119,6 @@ kind: group-index
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — OSINT tool: Friendpaste.
-- **`geek-com`** (medium) — Online articles and news related to science, technology, television, and movies
 - **`get-pocket-news-saving-app`** (medium) — Website offers article saving service, mostly on mobile devices, but also PC compatible
 - **`gettechmedia`** (medium) — Online articles, news, and reviews related to technology, computers, gadgets, and future trends
 - **`gettr-search`** (low) — Structured Gettr user search.
@@ -225,7 +224,7 @@ kind: group-index
 - **`paste-monster`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public markdown pastebin for dumped text — returns paste cont
 - **`paste-sh`** (medium) — Use when you have a `password`-protected or link-shared snippet and want to read or create an end-to-end-encrypted paste — returns text cont
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
-- **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.
+- **`pastebin-cz`** (medium) — Use when you have a `username`, `email`, or keyword and want public pastes — returns snippet/text dumps that may leak credentials, contacts,
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
 - **`pastesite-net`** (medium) — Use when you have a `username`, `email` or keyword and want to check a pastebin for dumped text — browse/search public pastes that may conta

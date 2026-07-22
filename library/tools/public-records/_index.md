@@ -933,7 +933,7 @@ kind: group-index
 - **`thewebco`** (medium) — OSINT tool: TheWebCo.
 - **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
 - **`toronto-star`** (low) — OSINT tool: Toronto Star.
-- **`tracxn`** (medium) — OSINT tool: Tracxn.
+- **`tracxn`** (medium) — Use when you have a company or `name` and want private-market intelligence — returns startup profiles, funding, founders, and investor/assoc
 - **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
 - **`trading-economics`** (low) — OSINT tool: Trading Economics.

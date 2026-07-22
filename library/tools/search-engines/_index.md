@@ -602,7 +602,7 @@ kind: group-index
 - **`reeder`** (low) — OSINT tool: Reeder.
 - **`reference-source-microsoft`** (medium) — Open source code search engine
 - **`religion-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
-- **`remax-house-listing-search-canada`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`remax-house-listing-search-canada`** (medium) — Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the lis
 - **`research-gate`** (low) — OSINT tool: Research Gate.
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
@@ -793,7 +793,7 @@ kind: group-index
 - **`wintria`** (low) — OSINT tool: Wintria.
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
 - **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —
-- **`woboq-code-browser`** (medium) — Code search engine
+- **`woboq-code-browser`** (medium) — Use when you need to read/navigate a C/C++ open-source codebase in the browser — returns cross-referenced, hyperlinked source for projects l
 - **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.
 - **`word-tracker`** (low) — OSINT tool: Word Tracker.
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 

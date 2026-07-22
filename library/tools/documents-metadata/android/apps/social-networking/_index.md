@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata/android/apps/social-networking
 
 ## Skills here
-- **`facebook`** (medium) — Profile reconnaissance, relationship mapping, photo analysis, location tracking
+- **`facebook`** (medium) — Use when you have a `name`, `email`, `phone`, or `username` and want a person's social footprint — returns profile, friends/associates, phot
 - **`pinterest`** (medium) — Use when you have a `username`, `name` or `image` and want interest/lifestyle profiling — returns `social-profile`, boards/pins, `geolocatio
 - **`twitter`** (medium) — Real-time monitoring, account verification, relationship mapping, sentiment analysis
 

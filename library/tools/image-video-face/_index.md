@@ -18,7 +18,7 @@ kind: group-index
 - **`webcams/`** — 3 skill(s) below.
 
 ## Skills here
-- **`360cities-net-map`** (medium) — world map of panoramic (360 degrees) images
+- **`360cities-net-map`** (medium) — Use when you have a `geolocation` and want ground-level imagery — returns a world map of geolocated 360° panoramic photos to verify or compa
 - **`age-toolpie-com`** (medium) — Use when you have a face photo and want a quick automated age estimate to sanity-check whether an image plausibly matches a missing person's
 - **`ailab-wondershare-com-2`** (low) — Use when you need to strip the background off a subject photo so the face/clothing is isolated before running reverse-image search or compar
 - **`ailab-wondershare-com-3`** (medium) — Use when a low-resolution photo of a subject is too small/blurry to search and you want an AI upscale to recover detail before reverse-image
