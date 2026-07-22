@@ -83,7 +83,7 @@ kind: group-index
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
 - **`ehow`** (low) — OSINT tool: eHow.
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
-- **`eumom-ie`** (medium) — OSINT tool: eumom.ie.
+- **`eumom-ie`** (medium) — Use when you have a `username` or `name` and want to trace an Irish parent's pregnancy/parenting forum posts — returns `social-profile` post
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`eweek-technology-news`** (medium) — Use when you have a `name`/`employer-org` in enterprise IT and want press coverage — returns articles, quotes, and role/company context.
@@ -113,7 +113,7 @@ kind: group-index
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
-- **`friendpaste`** (medium) — OSINT tool: Friendpaste.
+- **`friendpaste`** (medium) — Use when you have a `username`, `email`, or leak keyword and want to find text/code dumps posted publicly — returns pasted `password`, `emai
 - **`get-pocket-news-saving-app`** (medium) — Website offers article saving service, mostly on mobile devices, but also PC compatible
 - **`gettr-search`** (low) — Structured Gettr user search.
 - **`ghost`** (low) — OSINT tool: Ghost.

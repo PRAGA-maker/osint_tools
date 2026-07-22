@@ -34,7 +34,7 @@ kind: group-index
 - **`bellingcat-openstreetmap-search`** (high) — Use when you have a `physical-description` of a scene (several nearby feature types) and want candidate `geolocation`s where they co-occur —
 - **`bfro-bigfoot-sightings-database`** (medium) — Use when you have a `geolocation` (US state/county or Canadian province) and want dated eyewitness reports pinned to remote areas — returns 
 - **`bigfoot-and-ufo-map`** (medium) — Use when you have a `geolocation` and want crowdsourced anomaly-sighting points nearby — returns mapped Bigfoot/UFO/other sighting locations
-- **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Bigfoot sightings reports density around the USA
+- **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Use when you have a US `geolocation` and want the density of reported Bigfoot sightings and the local biome there — returns `geolocation` co
 - **`bing-maps`** (medium) — Use when you need a second mapping/imagery source — Microsoft aerial and 3D views, directions, and business search — to confirm a location o
 - **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a
 - **`broadcastify`** (low) — OSINT tool: Broadcastify.
@@ -243,7 +243,7 @@ kind: group-index
 - **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
 - **`radioid-database`** (low) — OSINT tool: RadioID Database.
 - **`radioreference`** (low) — OSINT tool: RadioReference.
-- **`rain-alarm`** (medium) — shows where it is raining on the map. You can enable notification of approaching rain (in the browser and in the mobile app)
+- **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.

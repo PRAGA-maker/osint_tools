@@ -879,7 +879,7 @@ kind: group-index
 - **`statistics-and-data`** (high) — Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-lev
 - **`statistics-canada`** (low) — Use when you have a Canadian `address`, postal area, or `employer-org` and want authoritative demographic, economic, and community context —
 - **`street-name-changes`** (high) — Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the
-- **`superpages-directory-united-states`** (medium) — Search directory for local businesses and retailers
+- **`superpages-directory-united-states`** (medium) — Use when you have a `name` or `employer-org` and want US business and white-pages listings — returns `address`, `phone` and business affilia
 - **`supreme-court-of-canada-cases`** (high) — Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (
 - **`supreme-court`** (high) — Use when you have a `name` and want to find whether that person was a party in a Supreme Court of Canada case — returns name, document-id, a
 - **`supremecourt-uk`** (high) — Use when you have a `name` and want to check if they are a party in a UK Supreme Court case — returns case parties, document-id citations, a
@@ -1003,7 +1003,6 @@ kind: group-index
 - **`yearbooks-myheritage`** (high) — Use when you have a `name` and want an older photo and school context — searches digitized US school yearbooks and returns yearbook images, 
 - **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
 - **`yell-online-business-directory-uk`** (medium) — Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website
-- **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
 - **`youcontrol`** (medium) — Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, address
 - **`zendy-io`** (medium) — Use when you have a researcher's `name` (or a topic) and want their academic publications, affiliations and co-authors across many publisher
 - **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.

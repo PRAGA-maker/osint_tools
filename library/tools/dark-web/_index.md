@@ -61,7 +61,7 @@ kind: group-index
 - **`i2p-invisible-internet-project`** (low) — OSINT tool: I2P - Invisible Internet Project.
 - **`iaca-dark-web-investigation-support`** (medium) — Federated dark web investigation support and discovery
 - **`inmates-plus`** (high) — Use when you have a `name` and want to check whether someone is or was incarcerated in a US state or county facility — returns `address` (fa
-- **`international-organization-for-standardization-catalogue`** (medium) — Website that identifies the worlwide industrial sector standards for materials and quality assessments
+- **`international-organization-for-standardization-catalogue`** (medium) — Use when you have an `employer-org` or a standard number and want to confirm which ISO standards apply/are cited — returns `document-id` sta
 - **`kilos-darknet-search-engine`** (low) — OSINT tool: KILOS Darknet Search Engine.
 - **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
 - **`mail2tor`** (low) — OSINT tool: Mail2Tor.
@@ -115,7 +115,7 @@ kind: group-index
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.
 - **`western-union-agent-locator`** (medium) — Use when you have a `geolocation`/`address` (city/country) and want the Western Union agent/pickup locations there — returns branch `address
 - **`wikieducator`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
-- **`witchdoctor-new-zealand`** (medium) — Website related to tech reviews
+- **`witchdoctor-new-zealand`** (medium) — Use when you have a `name` and want to check a long-running NZ technology-review publication's byline/quote archive — returns `social-profil
 - **`world-real-time-air-quality-index`** (medium) — Use when you have a place (`geolocation`/`address`) and want current or historical air-quality readings for environmental context — returns 
 - **`ycombinator`** (low) — Use when you have a `username` (or name) in the tech world and want their Hacker News posts/comments — returns a `social-profile` and a sear
 

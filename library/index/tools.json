@@ -22069,41 +22069,48 @@
   {
     "id": "visual-genome",
     "name": "Visual Genome",
-    "description": "Image relationship analysis and multimodal data research",
+    "description": "Use when you need a large annotated image dataset (objects, regions, relationships) to build or benchmark image-analysis tooling — returns bulk `image` corpus data, not per-target lookups.",
     "url": "https://visualgenome.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "public-datasets"
     ],
-    "bestFor": "Image relationship analysis and multimodal data research",
-    "input": "Dataset query or download request",
-    "output": "Annotated image corpus with objects, regions, and relation graphs",
-    "selectorsIn": [],
+    "bestFor": "Sourcing a densely-annotated image corpus for training or evaluating scene-understanding / image-analysis models.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free for academic/research use; images and annotations are downloadable in bulk (JSON + image links), no payment.",
     "opsec": "passive",
-    "opsecNote": "Academic dataset access with no direct investigative target interaction.",
+    "opsecNote": "This is infrastructure, not a target lookup — you download a static research dataset. There is no interaction with any subject and nothing is disclosed about an investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A well-known academic dataset (Stanford, Krishna et al.); reputable for research, but it is a fixed corpus of everyday web images with crowd-sourced annotations, not an investigative source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "VisualGenome",
+      "Visual Genome dataset"
+    ],
+    "tags": [
+      "public-datasets",
+      "image-analysis",
+      "ml-training-data"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/public-datasets/visual-genome.md"
   },
   {
@@ -27075,43 +27082,50 @@
   {
     "id": "eumom-ie",
     "name": "eumom.ie",
-    "description": "OSINT tool: eumom.ie.",
+    "description": "Use when you have a `username` or `name` and want to trace an Irish parent's pregnancy/parenting forum posts — returns `social-profile` posting history and thread context.",
     "url": "https://www.eumom.ie/forums/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing an Irish parent's or expectant mother's forum posts, due-date threads and disclosed life details.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; a free account is only needed to post replies or start threads.",
+    "opsec": "passive",
+    "opsecNote": "Reading and Google-dorking public threads is passive and leaves no trace with the target. Do NOT register with your real identity or reply to a target's thread — posting is active and visible to the community. Use a sock-puppet account and browser if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running (est. 2000) Irish parenting community, now under the everymum brand. Content is user-generated self-disclosure, so treat individual claims as leads, not verified fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "everymum",
+      "eumom forums"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "parenting-community"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/eumom-ie.md"
   },
   {
@@ -28424,37 +28438,50 @@
   {
     "id": "friendpaste",
     "name": "Friendpaste",
-    "description": "OSINT tool: Friendpaste.",
+    "description": "Use when you have a `username`, `email`, or leak keyword and want to find text/code dumps posted publicly — returns pasted `password`, `email` and other leaked content.",
     "url": "https://friendpaste.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Hunting leaked credentials, dumps and shared snippets that actors post to this Pastebin-style service.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "password",
+      "email",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account required to create or read a paste.",
+    "opsec": "passive",
+    "opsecNote": "Reading pastes and Google-dorking the domain is passive. There is no site-wide search, so you rely on external search engines — which is invisible to whoever posted the paste. Do not post the target's data yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An open, anonymous paste host with no moderation guarantee; pasted content is unauthenticated and may be fabricated, stale or planted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "friendpaste pastebin"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "credential-leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/friendpaste.md"
   },
   {
@@ -41631,24 +41658,30 @@
   {
     "id": "international-organization-for-standardization-catalogue",
     "name": "International Organization For Standardization Catalogue",
-    "description": "Website that identifies the worlwide industrial sector standards for materials and quality assessments",
-    "url": "http://www.iso.org/iso/home.html",
+    "description": "Use when you have an `employer-org` or a standard number and want to confirm which ISO standards apply/are cited — returns `document-id` standard references.",
+    "url": "https://www.iso.org/standards.html",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Looking up ISO standard numbers, titles and scopes when a document, product or company cites compliance.",
+    "selectorsIn": [
+      "employer-org",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching the catalogue (numbers, titles, scopes, abstracts) is free; the full text of a standard must be purchased.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public reference catalogue; searching it is passive and unconnected to any target. Only iso.org's own web logs see your queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official International Organization for Standardization site; the catalogue metadata (numbers, titles, statuses) is authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -41657,15 +41690,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ISO catalogue",
+      "iso.org standards"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/international-organization-for-standardization-catalogue.md"
   },
   {
@@ -44338,41 +44374,49 @@
   {
     "id": "witchdoctor-new-zealand",
     "name": "WitchDoctor (New Zealand)",
-    "description": "Website related to tech reviews",
-    "url": "http://www.witchdoctor.co.nz",
+    "description": "Use when you have a `name` and want to check a long-running NZ technology-review publication's byline/quote archive — returns `social-profile` / author attribution.",
+    "url": "https://witchdoctor.co.nz",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a New Zealand consumer-tech review site's archive for a person's byline, review or quote.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; ad-supported. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and Google-dorking a public news/review site is passive and reveals nothing to any subject; only your requests reach the publisher.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An independent NZ tech-review publication (bylined journalism), not an investigative database; useful only as a searchable media archive.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "nz"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Witchdoctor.co.nz"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "media-archive"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/witchdoctor-new-zealand.md"
   },
   {
@@ -114477,42 +114521,47 @@
   {
     "id": "bigfoot-sightings-and-density-of-the-us-with-biomes",
     "name": "Bigfoot Sightings and Density of the US with Biomes",
-    "description": "Bigfoot sightings reports density around the USA",
+    "description": "Use when you have a US `geolocation` and want the density of reported Bigfoot sightings and the local biome there — returns `geolocation` context layers.",
     "url": "https://www.arcgis.com/apps/View/index.html?appid=f987f36187c140aeab6eb157e909eb64",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising where BFRO Bigfoot-sighting reports cluster across the US, overlaid on biome data.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public ArcGIS web map; no account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "A read-only public ArcGIS map; browsing it is passive and reveals nothing to any target. Only your requests to Esri's ArcGIS hosting are logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hobbyist ArcGIS StoryMap built from crowd-sourced BFRO sighting reports; the underlying \"sightings\" are anecdotal and unverifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bigfoot density map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Anomalies and \"Lost Places\""
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/bigfoot-sightings-and-density-of-the-us-with-biomes.md"
   },
   {
@@ -124984,42 +125033,47 @@
   {
     "id": "rain-alarm",
     "name": "Rain Alarm",
-    "description": "shows where it is raining on the map. You can enable notification of approaching rain (in the browser and in the mobile app)",
+    "description": "Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weather context.",
     "url": "http://rain-alarm.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking real-time rain/snow radar and approaching-precipitation for a specific location or timeframe.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web map and basic app; a paid premium tier removes ads and adds extra alert/forecast features. Free tier is sufficient for radar checks.",
+    "opsec": "passive",
+    "opsecNote": "Viewing the public radar map is passive and reveals nothing to any target. If you install the mobile app and enable location alerts, you share your own device location with the provider (Foreca-sourced) — use a chosen map coordinate rather than your live GPS when investigating someone else's area.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial consumer weather app aggregating third-party radar (Foreca, national met services); reliable as live weather, but not an authoritative historical-archive source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Rain Alarm radar"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Nature"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/rain-alarm.md"
   },
   {
@@ -259476,47 +259530,52 @@
   {
     "id": "superpages-directory-united-states",
     "name": "Superpages Directory (United States)",
-    "description": "Search directory for local businesses and retailers",
+    "description": "Use when you have a `name` or `employer-org` and want US business and white-pages listings — returns `address`, `phone` and business affiliations.",
     "url": "http://www.superpages.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a US business or a person's white-pages listing by name and location.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "address",
+      "phone",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory search; the people-search side hands off to a paid third-party white-pages partner for full detail.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the public directory is passive and does not notify anyone. If you click through to the partnered white-pages/people-search service, you leave that third party's site (and its trackers); treat any paid unlock there as a separate decision.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legacy US Yellow-Pages-style directory now aggregating listings and monetising a people-search hand-off; listing freshness varies and is not independently verified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "superpages",
+      "Superpages Yellow Pages"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "superpages-com",
       "superpages-online-yellow-pages-local-business-directory"
@@ -266228,40 +266287,6 @@
     "_file": "library/tools/public-records/yell-online-business-directory-uk.md"
   },
   {
-    "id": "york-city-pa-compensation",
-    "name": "York City PA Compensation",
-    "description": "OSINT tool: York City PA Compensation.",
-    "url": "https://b2.caspio.com/dp/0a92100001903125816c4d34a37a",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/york-city-pa-compensation.md"
-  },
-  {
     "id": "youcontrol",
     "name": "YouControl",
     "description": "Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, addresses and linked entities.",
@@ -272173,24 +272198,31 @@
   {
     "id": "catawiki",
     "name": "Catawiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
-    "url": "http://www.catawiki.com",
+    "description": "Use when you have a `username` or `name` and want to trace a collectibles seller/bidder or a specific object's sale — returns `social-profile` seller pages and item provenance.",
+    "url": "https://www.catawiki.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a collectibles auction seller's profile, their listed lots, and provenance of a specific object.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse listings and view public seller profiles; only bidding/buying requires an account and payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings and public seller profiles is passive. Registering, bidding, or messaging a seller is active and attributable — do that only from a sock-puppet account, never with your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, legitimate European online auction house with expert-vetted lots; seller-supplied listing text and provenance claims are still self-reported and should be corroborated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -272199,15 +272231,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "aliases": [
+      "catawiki.com"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "auctions",
+      "marketplace",
+      "seller-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/catawiki.md"
   },
   {

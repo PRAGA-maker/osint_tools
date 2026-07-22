@@ -132,7 +132,7 @@ kind: group-index
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
-- **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`catawiki`** (medium) — Use when you have a `username` or `name` and want to trace a collectibles seller/bidder or a specific object's sale — returns `social-profil
 - **`ceek-meta-search-japan`** (low) — Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sourc
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
 - **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
