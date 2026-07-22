@@ -420,7 +420,6 @@ kind: group-index
 - **`guttr`** (low) — OSINT tool: GUTTR.
 - **`hathitrust-digital-library`** (medium) — Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns em
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
-- **`healthcare-education-providers`** (medium) — OSINT tool: HEALTHCARE EDUCATION PROVIDERS.
 - **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute
 - **`highly-cited-researchers`** (medium) — List of highly cited researchers, including search by name and affiliation
 - **`his-piers`** (low) — OSINT tool: HIS Piers.
@@ -575,7 +574,6 @@ kind: group-index
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 
-- **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
 - **`ministry-of-corporate-affairs-india`** (medium) — Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporat
 - **`minnesota-registered-voter-verification`** (medium) — Use when you have a name plus DOB and want to confirm a Minnesota voter registration — returns registration status and polling-place/precinc
 - **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 

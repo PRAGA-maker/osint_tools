@@ -11,7 +11,7 @@ kind: group-index
 - **`caselaw-access-project`** (medium) — Use when you have a `name` and want to find US court opinions that mention the person — returns case `document-id`, court/date, and `associa
 - **`courtlistener`** (medium) — Use when you have a party `name`, docket number, or judge and want free US court records — returns opinions, dockets, and filings that often
 - **`docket-alarm`** (medium) — Use when you have a `name` (party) or docket/case number and want US litigation records — returns dockets, filings, and case status across f
-- **`epstein-exposed`** (medium) — Epstein case document research
+- **`epstein-exposed`** (low) — Use when you have a `name` and want to check the Epstein case record — returns matching documents, flight-log entries, emails and network co
 - **`familywatchdog-sex-offender-search`** (medium) — Use when you have a `name` or `address` and want to check US sex-offender registries — returns offender photo, registered `address`, and off
 - **`federal-inmate-locator`** (high) — Use when you have a `name` or BOP register number and want to know if the person is in US federal prison — returns facility, custody status,
 - **`free-law-recap-archive`** (medium) — Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming

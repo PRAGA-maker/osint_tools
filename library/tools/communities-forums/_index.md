@@ -132,7 +132,7 @@ kind: group-index
 - **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
 - **`itpro`** (medium) — Enterprise and business IT news
 - **`itv-television-united-kingdom`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`itworldcanada`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`itworldcanada`** (low) — Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies a
 - **`ivpaste`** (medium) — Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email
 - **`joomla`** (low) — OSINT tool: Joomla.
 - **`jsbin`** (medium) — Use when you have a `jsbin.com` link or need to inspect/preserve shared front-end code — returns the saved HTML/CSS/JS of a "bin" (a `docume
@@ -142,7 +142,7 @@ kind: group-index
 - **`knok`** (medium) — Use when you have a name or location and want to check a home-exchange community for a member profile or listed property — returns social-pr
 - **`knowledge-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`kyc360`** (low) — Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage
-- **`lavalife`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`lavalife`** (low) — Use when you have a `username` or `name` and want to check for a Lavalife dating profile — returns social-profile, self-described details an
 - **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
@@ -165,7 +165,7 @@ kind: group-index
 - **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
 - **`money-talk-org`** (medium) — Use when you have a `username` and want to trace their posting history on a long-running personal-finance forum — returns post history, prof
 - **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
-- **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
+- **`montreal-gazette`** (medium) — Use when you have a `name` and a Montreal/Quebec tie and want news, obituary or local-event coverage — returns articles, obituaries and asso
 - **`mumsnet-com`** (medium) — Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, p
 - **`myfitnesspal`** (low) — Use when you have a `username` and want to check whether it belongs to a MyFitnessPal member and read their public community-forum footprint
 - **`mynetworktv-united-states`** (medium) — Use when you have a US location and want the local broadcast station carrying MyNetworkTV — returns the affiliate station/market via its Loc
@@ -252,7 +252,7 @@ kind: group-index
 - **`scrt-link`** (low) — Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
 - **`search-futuruma-screencaps`** (low) — OSINT tool: Search Futuruma screencaps.
-- **`seattle-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
+- **`seattle-times-news`** (medium) — Use when you have a `name` and a Seattle/Pacific-Northwest tie and want news, obituary or local-event coverage — returns articles, obituarie
 - **`seeking-arrangement`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Seeking dating platform — returns a socia
 - **`seniorfriendfinder`** (medium) — Use when you have a `name`/`username`/`geolocation` for an older subject and want a dating-profile check — returns a `social-profile` with p
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w

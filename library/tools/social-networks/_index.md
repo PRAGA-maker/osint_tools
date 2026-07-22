@@ -668,7 +668,6 @@ kind: group-index
 - **`twittertrails-com`** (high) — Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com d
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for
 - **`twitterwebviewer-com`** (high) — Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile conten
-- **`twitwork`** (medium) — Electron/Node.js desktop app to monitor a live Twitter stream.
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
 - **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests

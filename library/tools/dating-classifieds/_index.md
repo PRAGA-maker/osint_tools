@@ -57,7 +57,7 @@ kind: group-index
 - **`kijiji-canada`** (medium) — Use when you have a `name`, handle, or location and want a subject's classified ads — returns listings with seller display name, photos, are
 - **`kleinanzeigen-de`** (high) — Use when a German-speaking subject may post on Germany's largest classifieds site — pivot from name/phone/location to seller listings and co
 - **`locanto-free-classified-ads-worldwide`** (medium) — Use when you have a username, phone, or location and want to find a subject's classified ads (jobs, personals, sales) — returns social-profi
-- **`loot-com-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`loot-com-classified-ads-united-kingdom`** (medium) — Use when you have a `name`, `phone` or UK locale and want a subject's classified ads — returns ad contact details, location hints and item c
 - **`lovingcreators-com`** (medium) — OSINT tool: lovingcreators.com.
 - **`match-com`** (medium) — Use when you have a `username`, photo or profile detail and want to confirm a subject's dating presence — returns dating profile, photos and
 - **`meetup`** (high) — Use when a subject's hobbies/interests are known — find the groups and in-person events they attend, plus public member profiles and RSVP hi
