@@ -347,7 +347,6 @@ kind: group-index
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
 - **`qualys-ssl-check`** (low) — OSINT tool: Qualys SSL Check.
-- **`quango-seo-ranks-and-monitoring`** (medium) — Search for information and statistics about any online website
 - **`quantcast`** (low) — OSINT tool: Quantcast.
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
@@ -395,7 +394,6 @@ kind: group-index
 - **`shaw-speed-test-canada`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`sify-technologies-limited-india`** (medium) — Indian information and communications technology company that provides end to end ICT solutions
-- **`silicon-house-india`** (medium) — India based service provider for registering websites and domain addresses
 - **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Domain investigation #python tool
@@ -518,7 +516,6 @@ kind: group-index
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
 - **`xurlfind3r`** (low) — Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine
-- **`xypnet-zambia`** (medium) — Service provider for registering websites and domain addresses
 - **`you-get-signal`** (low) — OSINT tool: You Get Signal.
 - **`yougetsignal-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain
 - **`zscaler-global-threat-map-dashboard`** (low) — OSINT tool: Zscaler Global Threat Map Dashboard.

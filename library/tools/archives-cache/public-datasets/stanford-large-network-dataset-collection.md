@@ -32,6 +32,8 @@ deprecated: false
 relatedTools:
 - palladio
 - swap-stanford-edu
+- highwire-free-online-full-text-articles
+- regular-expression-analyzer
 aliases:
 - SNAP datasets
 - snap.stanford.edu/data

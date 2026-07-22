@@ -24,7 +24,6 @@ kind: group-index
 - **`sanctions-screening/`** — 4 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
 - **`us-political-records/`** — 2 skill(s) below.
-- **`us-voter-records/`** — 0 skill(s) below.
 
 ## Skills here
 - **`1c-database-converter`** (medium) — Use when you have a seized/leaked 1C accounting database file (.1CD, .cf, .epf, .efd) and want to read its records — returns grepable CSV th
@@ -41,7 +40,6 @@ kind: group-index
 - **`acrevalue`** (low) — Land-parcel value and ownership mapping tool.
 - **`adultwork-com`** (high) — Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profil
 - **`advanced-registry-search`** (low) — Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — retu
-- **`afrobarometer`** (medium) — huge database of the results of sociological surveys conducted in African countries over the last 20 years
 - **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
 - **`aiddata`** (low) — OSINT tool: AidData.
@@ -164,7 +162,6 @@ kind: group-index
 - **`citizens-police-data-project`** (medium) — Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint 
 - **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
-- **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
 - **`clinicaltrials-gov`** (medium) — Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, spon
 - **`cms-gov`** (medium) — Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the pay
 - **`college-police-uk`** (high) — Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's 
@@ -256,7 +253,7 @@ kind: group-index
 - **`disputesregister-org`** (high) — Use when you have an `employer-org` or `name` and want a global directory of official company registries plus a searchable register of publi
 - **`dlook-local-business-directory-australia`** (low) — Use when you have a business `name` or `employer-org` in Australia and want its listing — returns the business `address`, `phone`, and categ
 - **`dnb-co-uk`** (high) — Use when you have a company `name` (or `employer-org`/`address`) and want to confirm the entity and its D-U-N-S number — returns `employer-o
-- **`dnc-email-database`** (medium) — OSINT tool: DNC email database.
+- **`dnc-email-database`** (medium) — Use when you have a `name`, `email`, or organisation and want to check whether they appear in the 2016 WikiLeaks DNC email leak — returns ma
 - **`dobsearch`** (high) — Use when you have a `name` and want date of birth, addresses, phone and relatives — returns an aggregated US people-search profile including
 - **`docinfo-org`** (high) — Use when you have a doctor's `name` and want to confirm and locate them professionally — returns the states they're licensed in, medical sch
 - **`doe-data-explorer`** (medium) — Use when you have a researcher `name` or `employer-org` and want their U.S. Department of Energy scientific datasets — returns author, affil
@@ -354,10 +351,8 @@ kind: group-index
 - **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
 - **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
 - **`georgefloyd-protest-police-brutality-videos`** (low) — Use when you have a `geolocation`/date from the 2020 George Floyd protests and want documented incident footage — returns a curated spreadsh
-- **`georgia-ports-authority`** (medium) — Georgia Ports Authority Guide and Directory
 - **`georgia-voters-com`** (high) — Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address,
 - **`georgia`** (high) — Use when you have a `name` (or GDC ID) and want to locate someone in Georgia state prison custody — returns current facility/status plus dob
-- **`german-gov-employee-database-unknown`** (medium) — OSINT tool: German Gov Employee Database (Unknown).
 - **`germany`** (high) — Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — ret
 - **`gettr`** (low) — OSINT tool: Gettr.
 - **`gi-files`** (medium) — Use when you have a `name`/`email` possibly tied to Stratfor's 2004–2011 intelligence emails and want mentions or correspondence — returns m
@@ -536,7 +531,6 @@ kind: group-index
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
 - **`leolist`** (low) — OSINT tool: LeoList.
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
-- **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE

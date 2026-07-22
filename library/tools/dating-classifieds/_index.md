@@ -26,7 +26,6 @@ kind: group-index
 - **`datingadvice`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to dating queries
 - **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
-- **`ebin-pub`** (medium) — OSINT tool: ebin.pub.
 - **`eroticbeauties-net`** (low) — Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-p
 - **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
 - **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
@@ -71,7 +70,7 @@ kind: group-index
 - **`onlycanadian-fans`** (medium) — Use when you have a `username`/`name` and think the subject is a Canadian OnlyFans creator — returns matching creator `social-profile`s filt
 - **`onlydanske-dk`** (medium) — Use when you have a `username` or creator name and want to check whether it maps to a Danish OnlyFans persona — returns the linked `social-p
 - **`onlyespana-es`** (low) — Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a
-- **`onlyfam`** (medium) — OnlyFans search and model finder.
+- **`onlyfam`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find or confirm a person's OnlyFans creator presence — returns social-p
 - **`onlyfans-com`** (medium) — Use when you have a `username` and want to confirm/read a subject's public OnlyFans creator profile — returns `social-profile`, `name`, some
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — OSINT tool: OnlyFinder.

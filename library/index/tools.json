@@ -21184,7 +21184,9 @@
     "deprecated": false,
     "relatedTools": [
       "palladio",
-      "swap-stanford-edu"
+      "swap-stanford-edu",
+      "highwire-free-online-full-text-articles",
+      "regular-expression-analyzer"
     ],
     "aliases": [
       "SNAP datasets",
@@ -30425,49 +30427,6 @@
     "_file": "library/tools/communities-forums/macleans-magazine-canada.md"
   },
   {
-    "id": "magportal-north-america",
-    "name": "MagPortal (North America)",
-    "description": "Searchable website for a major online news/media publisher covering global events and having large reader/fan base",
-    "url": "http://magportal.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "magportal"
-    ],
-    "_file": "library/tools/communities-forums/magportal-north-america.md"
-  },
-  {
     "id": "mamba-ru",
     "name": "Mamba (mamba.ru)",
     "description": "Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, `geolocation` (city), `image` and `dob`/age.",
@@ -34919,46 +34878,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/rick-and-morty-screencaps-search.md"
-  },
-  {
-    "id": "rss-tools-website",
-    "name": "RSS Tools Website",
-    "description": "Website that provides links to tools and informatino related to RSS Feeds",
-    "url": "http://www.rss-tools.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/rss-tools-website.md"
   },
   {
     "id": "saafe-info",
@@ -45518,47 +45437,6 @@
     "_file": "library/tools/dating-classifieds/ebay.md"
   },
   {
-    "id": "ebin-pub",
-    "name": "ebin.pub",
-    "description": "OSINT tool: ebin.pub.",
-    "url": "https://ebin.pub/all-things-osint-and-onlyfans.html",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/ebin-pub.md"
-  },
-  {
     "id": "eroticbeauties-net",
     "name": "eroticbeauties.net (OnlyFans directory)",
     "description": "Use when you have a `username` and want to check whether it maps to a listed adult-content (OnlyFans) creator — returns the linked `social-profile` and profile metadata.",
@@ -47739,29 +47617,33 @@
   {
     "id": "onlyfam",
     "name": "OnlyFam",
-    "description": "OnlyFans search and model finder.",
+    "description": "Use when you have a `username`, `name`, or `geolocation` and want to find or confirm a person's OnlyFans creator presence — returns social-profile links and profile metadata.",
     "url": "https://onlyfam.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "Searching for OnlyFans models",
+    "bestFor": "Locating or confirming a subject's OnlyFans creator account and pivot handles by name, username, or location.",
     "selectorsIn": [
+      "username",
       "name",
-      "username"
+      "geolocation"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Browsing and keyword/location search of the public index is free with no signup; deeper analytics/filters are gated behind a paid tier, but the free search is enough for lookup and confirmation.",
+    "opsec": "passive",
+    "opsecNote": "This is a third-party index of public OnlyFans profile data; searching it does not touch OnlyFans or notify the creator. Do not log into or subscribe to any account you find from your own identity — that would deanonymize you and pay the target. Treat the adult-content context with care and use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party scraper of OnlyFans public data, not affiliated with OnlyFans; coverage and freshness are self-claimed (600k+ creators) and unaudited, so treat hits as leads to verify on the real profile.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -47770,15 +47652,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OnlyFam.com",
+      "OnlyFans finder"
+    ],
     "tags": [
       "onlyfans",
       "creator-search",
       "adult"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyfam.md"
   },
   {
@@ -82398,52 +82284,6 @@
     "_file": "library/tools/domains-ip-infrastructure/qualys-ssl-check.md"
   },
   {
-    "id": "quango-seo-ranks-and-monitoring",
-    "name": "Quango SEO Ranks & Monitoring",
-    "description": "Search for information and statistics about any online website",
-    "url": "http://www.qango.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/quango-seo-ranks-and-monitoring.md"
-  },
-  {
     "id": "quantcast",
     "name": "Quantcast",
     "description": "OSINT tool: Quantcast.",
@@ -85288,52 +85128,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/sify-technologies-limited-india.md"
-  },
-  {
-    "id": "silicon-house-india",
-    "name": "Silicon House (India)",
-    "description": "India based service provider for registering websites and domain addresses",
-    "url": "http://www.siliconhouse.net",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/silicon-house-india.md"
   },
   {
     "id": "similarweb",
@@ -92898,52 +92692,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/xurlfind3r.md"
-  },
-  {
-    "id": "xypnet-zambia",
-    "name": "Xypnet (Zambia)",
-    "description": "Service provider for registering websites and domain addresses",
-    "url": "http://www.xypnet.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/xypnet-zambia.md"
   },
   {
     "id": "you-get-signal",
@@ -161100,49 +160848,6 @@
     "_file": "library/tools/messaging/exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization.md"
   },
   {
-    "id": "fake-whatsapp-chat-generator",
-    "name": "Fake WhatsApp Chat Generator",
-    "description": "OSINT tool: Fake WhatsApp Chat Generator.",
-    "url": "https://www.fakewhats.com/generator",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "whatsapp-fake-chat-generator"
-    ],
-    "_file": "library/tools/messaging/fake-whatsapp-chat-generator.md"
-  },
-  {
     "id": "fakedetail-com-2",
     "name": "fakedetail.com (Fake WhatsApp Chat Generator)",
     "description": "Use when you need to understand or demonstrate how a WhatsApp chat screenshot can be fabricated — a counter-OSINT/evidence-verification reference, not a lookup — outputs realistic fake chat images.",
@@ -213365,42 +213070,6 @@
     "_file": "library/tools/public-records/advanced-registry-search.md"
   },
   {
-    "id": "afrobarometer",
-    "name": "Afrobarometer",
-    "description": "huge database of the results of sociological surveys conducted in African countries over the last 20 years",
-    "url": "https://afrobarometer.org/online-data-analysis/analyse-online",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Datasets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/afrobarometer.md"
-  },
-  {
     "id": "agoa-data-center",
     "name": "AGOA Data Center",
     "description": "OSINT tool: AGOA Data Center.",
@@ -220027,46 +219696,6 @@
     "_file": "library/tools/public-records/civilian-office-of-police-accountability.md"
   },
   {
-    "id": "clearview-ai-us-taxpayer-funded-entities",
-    "name": "Clearview AI US taxpayer-funded entities",
-    "description": "OSINT tool: Clearview AI US taxpayer-funded entities.",
-    "url": "https://datawrapper.dwcdn.net/VOOIE/16/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "arizona-le-database-abc15",
-      "cop26-registered-attendees",
-      "independent-fundamental-baptist-sexual-misconduct-database",
-      "the-philadelphia-police-misconduct-database"
-    ],
-    "_file": "library/tools/public-records/clearview-ai-us-taxpayer-funded-entities.md"
-  },
-  {
     "id": "clinicaltrials-gov",
     "name": "ClinicalTrials.gov",
     "description": "Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, sponsoring `employer-org`s, trial sites and contact `address`/`phone`.",
@@ -225107,35 +224736,41 @@
   {
     "id": "dnc-email-database",
     "name": "DNC email database",
-    "description": "OSINT tool: DNC email database.",
-    "url": "https://wikileaks.org//dnc-emails/",
+    "description": "Use when you have a `name`, `email`, or organisation and want to check whether they appear in the 2016 WikiLeaks DNC email leak — returns matching emails, sender/recipient addresses, and dates.",
+    "url": "https://wikileaks.org/dnc-emails/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching the 2016 DNC email leak for a person's correspondence, addresses, and associates.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public WikiLeaks archive; no account, key, or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public WikiLeaks archive is passive and does not touch the target, but the host is politically sensitive and may be logged/blocked on some networks — use a sock-puppet browser (WikiLeaks itself recommends Tor). The data is stolen correspondence, so weigh legal/ethical exposure before relying on it in a report.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Primary-source email dump published by WikiLeaks; the messages are widely regarded as authentic (several corroborated in litigation and reporting), but WikiLeaks is a partisan publisher, so treat individual attributions as needing corroboration.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "akp-email-database",
       "gi-files",
@@ -225146,6 +224781,18 @@
       "wikileaks",
       "wikileaks-search"
     ],
+    "aliases": [
+      "WikiLeaks DNC emails",
+      "DNC email leak 2016"
+    ],
+    "tags": [
+      "wikileaks",
+      "leaked-emails",
+      "breach-data"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/dnc-email-database.md"
   },
   {
@@ -230765,52 +230412,6 @@
     "_file": "library/tools/public-records/georgia.md"
   },
   {
-    "id": "georgia-ports-authority",
-    "name": "Georgia Ports Authority",
-    "description": "Georgia Ports Authority Guide and Directory",
-    "url": "http://www.seaportsinfo.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/georgia-ports-authority.md"
-  },
-  {
     "id": "georgia-voters-com",
     "name": "Georgia-Voters.com",
     "description": "Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address, age/registration date and voting-district context.",
@@ -230859,40 +230460,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/georgia-voters-com.md"
-  },
-  {
-    "id": "german-gov-employee-database-unknown",
-    "name": "German Gov Employee Database (Unknown)",
-    "description": "OSINT tool: German Gov Employee Database (Unknown).",
-    "url": "https://c0acz339.caspio.com/dp/E171600054612b9f79fb4ddf8f2b",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/german-gov-employee-database-unknown.md"
   },
   {
     "id": "germany",
@@ -240460,40 +240027,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/lexington-fayette-county-ky-health-department-restaurant-inspections.md"
-  },
-  {
-    "id": "lexington-ky-employee-salaries-2021",
-    "name": "Lexington KY Employee Salaries 2021",
-    "description": "OSINT tool: Lexington KY Employee Salaries 2021.",
-    "url": "https://c0ect130.caspio.com/dp/c852100055664d756c6e441aa963",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/lexington-ky-employee-salaries-2021.md"
   },
   {
     "id": "libguides-community-search",
@@ -269661,46 +269194,6 @@
     "_file": "library/tools/search-engines/bellingcat-s-online-investigation-toolkit-2.md"
   },
   {
-    "id": "beso-shopping-search-engine",
-    "name": "Beso Shopping Search Engine",
-    "description": "Online retailer for fashion items, manufactured products and other online shopping items",
-    "url": "http://www.beso.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/beso-shopping-search-engine.md"
-  },
-  {
     "id": "bespacific",
     "name": "beSpacific",
     "description": "Use when you have a topic, agency, or `name` tied to law/tech/government and want a curated, searchable feed of primary-source reporting on it — returns links to authoritative documents and articles (a research pivot, no direct selector output).",
@@ -277309,40 +276802,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/flipboard.md"
-  },
-  {
-    "id": "flippity",
-    "name": "Flippity",
-    "description": "OSINT tool: Flippity.",
-    "url": "https://www.flippity.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/flippity.md"
   },
   {
     "id": "fluther",
@@ -285279,40 +284738,6 @@
     "_file": "library/tools/search-engines/lexcraft-cornell-university-legal-wiki-canada.md"
   },
   {
-    "id": "libgen-rs",
-    "name": "Libgen.rs",
-    "description": "OSINT tool: Libgen.rs.",
-    "url": "http://libgen.rs/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/libgen-rs.md"
-  },
-  {
     "id": "libraries-io",
     "name": "Libraries.io",
     "description": "Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points — returns social-profile, email, domain.",
@@ -292868,46 +292293,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/qilt-university-australia.md"
-  },
-  {
-    "id": "qsearch",
-    "name": "Qsearch",
-    "description": "Facebook timeline search tool",
-    "url": "http://www.qsearch.cc",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/qsearch.md"
   },
   {
     "id": "query-server",
@@ -304771,40 +304156,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/zoomeye.md"
-  },
-  {
-    "id": "zorexeye",
-    "name": "ZorexEye",
-    "description": "OSINT tool: ZorexEye.",
-    "url": "http://zorexeye.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/zorexeye.md"
   },
   {
     "id": "17-imginn",
@@ -336936,40 +336287,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok-creative-center-statistics.md"
-  },
-  {
-    "id": "tiktok-downloader",
-    "name": "TikTok downloader",
-    "description": "OSINT tool: TikTok downloader.",
-    "url": "https://tiktokd.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tiktok-downloader.md"
   },
   {
     "id": "tiktok-osint",

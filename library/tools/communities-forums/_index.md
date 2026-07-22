@@ -150,7 +150,6 @@ kind: group-index
 - **`lonely-planet`** (low) — Use when you have a `geolocation` and need travel-context — venues, neighbourhoods, transport, and accommodation a subject might use — retur
 - **`loveaholics`** (medium) — Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating sit
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
-- **`magportal-north-america`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`mamba-ru`** (medium) — Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, 
 - **`mashable`** (medium) — Use when you have a `name` or `username` and want tech/social-media/pop-culture coverage mentioning them — returns `social-profile`/byline, 
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
@@ -240,7 +239,6 @@ kind: group-index
 - **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en
 - **`restaurant-news-united-states`** (medium) — Use when you have an `employer-org`/`name` in US foodservice and want press-release coverage — returns announcements, franchise info, and na
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
-- **`rss-tools-website`** (medium) — Website that provides links to tools and informatino related to RSS Feeds
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
 - **`safenote`** (medium) — Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (y
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships

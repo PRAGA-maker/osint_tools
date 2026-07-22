@@ -585,7 +585,6 @@ kind: group-index
 - **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
 - **`tiktake-net`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want to save the original, watermark-free clip for analysis or evidence — return
 - **`tiktok-creative-center-statistics`** (low) — Use when you have a region/time window and want TikTok's trending hashtags, songs, creators and videos there — returns ranked trend data by 
-- **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
 - **`tiktok-scraper`** (medium) — Use when you have a TikTok `username`, hashtag, or music/trend and want to collect its posts and metadata in bulk — returns video posts plus
 - **`tiktok-search-engine`** (medium) — Use when you have a `username` or `name` and want to find a subject's TikTok profile/videos without logging into TikTok — returns social-pro
