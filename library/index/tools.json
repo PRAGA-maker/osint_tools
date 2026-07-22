@@ -126182,42 +126182,50 @@
   },
   {
     "id": "sun-rise-noon-and-set-time-and-direction",
-    "name": "Sun rise, noon, and set time and direction.",
-    "description": "OSINT tool: Sun rise, noon, and set time and direction..",
+    "name": "Sollumis (sun position & direction)",
+    "description": "Use when you have a candidate `geolocation` and a date and want the sun's azimuth/altitude to chrono-locate a photo by its shadows — returns sun timings and directions to test against an image.",
     "url": "https://sollumis.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Chronolocation — matching shadow direction/length in a photo to sun position at a place and time.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A client-side astronomy calculator. You enter a location/date, not anything about a person; nothing about the subject is transmitted. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-purpose solar-position visualizer; the underlying astronomy is deterministic and checkable against other sun calculators (SunCalc, NOAA).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "sollumis.com",
+      "sun position tool"
+    ],
     "tags": [
-      "chronolocation"
+      "chronolocation",
+      "geolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/sun-rise-noon-and-set-time-and-direction.md"
   },
   {
@@ -213632,36 +213640,56 @@
   },
   {
     "id": "advanced-registry-search",
-    "name": "Advanced Registry Search",
-    "description": "OSINT tool: Advanced Registry Search.",
+    "name": "Registry of Lobbyists — Advanced Search (Canada)",
+    "description": "Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — returns `name`, `employer-org`, `associate` links.",
     "url": "https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/advSrch?lang=eng",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Canada's federal Registry of Lobbyists by lobbyist, firm, client, or subject matter.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government registry operated by the Office of the Commissioner of Lobbying of Canada; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a public federal registry is passive and leaves no trace with the subject. It reflects official filings, not your interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official Government of Canada registry (Office of the Commissioner of Lobbying); filings are legally required and authoritative.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Registry of Lobbyists Canada",
+      "lobbycanada.gc.ca advanced search",
+      "OCL registry"
+    ],
+    "tags": [
+      "public-records",
+      "government",
+      "lobbying",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/advanced-registry-search.md"
   },
   {
@@ -253206,36 +253234,55 @@
   },
   {
     "id": "rcmp-death-search",
-    "name": "RCMP Death Search",
-    "description": "OSINT tool: RCMP Death Search.",
+    "name": "RCMP National Grave Discovery Database",
+    "description": "Use when you have the `name` of a deceased former RCMP member and want to locate their grave and death details — returns `geolocation` (burial site), `dob`, and death date.",
     "url": "https://c0cqk108.caspio.com/dp/9156100036f195cdf0934662917c",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating the grave and confirming death of a former Royal Canadian Mounted Police member.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to use, but requires creating a login (email + password) to access the Caspio-hosted database.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A memorial/genealogy database lookup; queries stay with the database host and never reach any living subject. Register with a sock-puppet email since account creation is required.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "A volunteer/veteran-community grave-discovery project (Caspio-hosted), not an official RCMP or government registry; entries are contributor-sourced.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ca"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "RCMP Death Search",
+      "RCMP National Grave Discovery Database"
+    ],
+    "tags": [
+      "public-records",
+      "graves",
+      "death-records",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rcmp-death-search.md"
   },
   {
@@ -286671,46 +286718,6 @@
     "_file": "library/tools/search-engines/mereku-com.md"
   },
   {
-    "id": "metabear-meta-search-engine-russia",
-    "name": "Metabear Meta Search Engine (Russia)",
-    "description": "Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
-    "url": "http://www.metabear.ru",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/metabear-meta-search-engine-russia.md"
-  },
-  {
     "id": "metacritic",
     "name": "Metacritic",
     "description": "Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — returns `social-profile`.",
@@ -287776,46 +287783,56 @@
   },
   {
     "id": "najdsi-slovenia",
-    "name": "Najdsi (Slovenia)",
-    "description": "OSINT tool: Najdsi (Slovenia).",
+    "name": "Najdi.si (Slovenia)",
+    "description": "Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `social-profile`, news, and `domain` leads.",
     "url": "https://www.najdi.si",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Slovenia-focused web, news, and business-directory search from a name or keyword.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username",
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Slovenian web portal; no account needed for search.",
+    "opsec": "passive",
+    "opsecNote": "Standard search-engine queries. Use a sock-puppet/clean browser if the subject is sensitive; the portal logs queries like any search engine, but nothing reaches the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing Slovenian web portal (Najdi.si); results are indexed content plus linked directories (Bizi, 1188, iTIS), not a verified dataset.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "si"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "search",
-      "international"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "najdi-slovenia"
     ],
+    "aliases": [
+      "najdi.si",
+      "Najdsi"
+    ],
+    "tags": [
+      "search",
+      "international",
+      "slovenia"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/najdsi-slovenia.md"
   },
   {
@@ -288859,44 +288876,55 @@
   {
     "id": "newsnow-canada",
     "name": "NewsNow (Canada)",
-    "description": "Comprehensive news aggregator",
+    "description": "Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — returns dated `social-profile`/news leads for a timeline.",
     "url": "https://www.newsnow.com/ca/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Real-time Canadian news aggregation and topic tracking across many sources from a single query.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read headlines; NewsNow links out to the original publishers. No account needed for basic use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ordinary news search; queries stay with NewsNow and never reach the subject. Follow links in a clean browser if the outlet is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A headline aggregator, not a publisher; relevance/ranking is algorithmic, so always open and assess the original source article.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "newsworld-usa"
     ],
+    "aliases": [
+      "newsnow.com/ca",
+      "NewsNow Canada"
+    ],
+    "tags": [
+      "toddington",
+      "news",
+      "aggregator",
+      "canada"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/newsnow-canada.md"
   },
   {
@@ -301648,46 +301676,6 @@
     "_file": "library/tools/search-engines/wazap-video-and-game-search-japan.md"
   },
   {
-    "id": "we-feel",
-    "name": "We Feel",
-    "description": "Twitter search tool that analyzes emotions in real-time",
-    "url": "http://wefeel.csiro.au",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/we-feel.md"
-  },
-  {
     "id": "web-archive-search-tool",
     "name": "Web archive search tool",
     "description": "OSINT tool: Web archive search tool.",
@@ -310259,47 +310247,54 @@
   },
   {
     "id": "download-tiktok-videos-without-watermark-for-free-tiktok-video-downloader-online",
-    "name": "Download TikTok Videos Without Watermark For Free - TikTok Video Downloader online",
-    "description": "OSINT tool: Download TikTok Videos Without Watermark For Free - TikTok Video Downloader online.",
+    "name": "SnapTik (TikTok downloader)",
+    "description": "Use when you have a TikTok video URL (`social-profile`) and want a clean, watermark-free copy to preserve and analyze — returns the downloaded video (`image` frames, `metadata-exif`).",
     "url": "https://snaptik.app",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a TikTok video without the watermark for evidence preservation and frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free (ad-supported); no account or install. Third-party, not affiliated with TikTok/ByteDance.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public video URL into SnapTik's site; SnapTik fetches the video server-side, so the download does not come from your IP and does not notify the uploader. Do not paste private/unlisted content. Ads/redirects on the page are aggressive — use an ad-blocker and don't click through.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party TikTok downloader; reliable at its task but ad-heavy and outside TikTok's control, so behaviour can change without notice.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "tiktok"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "snaptik-app"
     ],
+    "aliases": [
+      "snaptik.app",
+      "SnapTik"
+    ],
+    "tags": [
+      "tiktok",
+      "video-download",
+      "evidence-capture"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/download-tiktok-videos-without-watermark-for-free-tiktok-video-downloader-online.md"
   },
   {

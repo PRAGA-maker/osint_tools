@@ -268,7 +268,7 @@ kind: group-index
 - **`spot`** (medium) — Use when you have a `geolocation` region plus a described scene and want candidate coordinates matching that description in OpenStreetMap — 
 - **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
 - **`street-art-cities`** (medium) — Use when you have a photo of a mural/street-art in the background and want its `geolocation` — a crowdsourced world map of geotagged street 
-- **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..
+- **`sun-rise-noon-and-set-time-and-direction`** (medium) — Use when you have a candidate `geolocation` and a date and want the sun's azimuth/altitude to chrono-locate a photo by its shadows — returns
 - **`sunearthtools-com`** (medium) — Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun 
 - **`surging-seas-risk-zone-map`** (medium) — Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocati
 - **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.

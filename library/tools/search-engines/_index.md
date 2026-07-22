@@ -431,7 +431,6 @@ kind: group-index
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
-- **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
 - **`metager-meta-search-engine`** (medium) — Use when you have a `name`, `username` or keyword and want privacy-preserving results merged from multiple engines — returns web results Goo
 - **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
@@ -453,7 +452,7 @@ kind: group-index
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
 - **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
-- **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
+- **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
 - **`national-criminal-justice-service`** (low) — Use when you need US criminal-justice research, statistics, and publications for background/context — returns reports and document-id refere
@@ -475,7 +474,7 @@ kind: group-index
 - **`newslink`** (low) — OSINT tool: Newslink.
 - **`newslookup-com`** (low) — OSINT tool: Newslookup.com.
 - **`newslookup`** (low) — OSINT tool: NewsLookup.
-- **`newsnow-canada`** (medium) — Comprehensive news aggregator
+- **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — OSINT tool: Newsnow.
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
 - **`newspaperindex`** (low) — OSINT tool: Newspaperindex.
@@ -734,7 +733,6 @@ kind: group-index
 - **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
 - **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
 - **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie
-- **`we-feel`** (medium) — Twitter search tool that analyzes emotions in real-time
 - **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
 - **`web-directories`** (low) — Directory of web directories
 - **`web-search-navigator`** (low) — extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others

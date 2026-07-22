@@ -40,7 +40,7 @@ kind: group-index
 - **`access-state-records-online-staterecords-org`** (high) — Use when you have a `name` and want a US public-records starting point (criminal, court, arrest, vital records) — returns aggregated record 
 - **`acrevalue`** (low) — Land-parcel value and ownership mapping tool.
 - **`adultwork-com`** (high) — Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profil
-- **`advanced-registry-search`** (medium) — OSINT tool: Advanced Registry Search.
+- **`advanced-registry-search`** (low) — Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — retu
 - **`afrobarometer`** (medium) — huge database of the results of sociological surveys conducted in African countries over the last 20 years
 - **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
@@ -757,7 +757,7 @@ kind: group-index
 - **`quandl`** (medium) — Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and 
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
-- **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
+- **`rcmp-death-search`** (low) — Use when you have the `name` of a deceased former RCMP member and want to locate their grave and death details — returns `geolocation` (buri
 - **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
 - **`realtor`** (medium) — Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `
 - **`rechercher-par-entreprise`** (low) — OSINT tool: Rechercher par entreprise.
