@@ -15,7 +15,7 @@ kind: group-index
 ## Skills here
 - **`4chan-search`** (medium) — Use when you have a `username`, phrase, or image tied to 4chan and want to search across boards and archives for posts — returns matching th
 - **`4chan`** (low) — Use when a subject or image may surface on 4chan and you want to find/preserve posts — returns anonymous threads and images (best searched v
-- **`51-com-china`** (medium) — Web game platform based in China
+- **`51-com-china`** (low) — Use when you have a `username` tied to Chinese web/gaming circles and want to check for a 51.com profile — returns social-profile, display d
 - **`a-small-world`** (medium) — Use when you have a `name`/`username` for an affluent-travel subject and want to check for a members-club profile — returns a `social-profil
 - **`abc-television-australia`** (medium) — Use when you have a `name` and want Australian national/local news coverage of a subject — returns `social-profile`/mention, event dates and
 - **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search
@@ -69,7 +69,7 @@ kind: group-index
 - **`ctv-news-worldwide-canada`** (medium) — Use when you have a `name` and want Canadian national/local news coverage of a subject — returns `social-profile`/mention, event dates and n
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
-- **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
+- **`defencetalk-com`** (medium) — Use when you have a `username` or defence-topic interest and want to trace a member on the DefenceTalk military forum — returns social-profi
 - **`defuse`** (medium) — Use when you have found a `defuse.ca` pastebin link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you al
 - **`deviantart`** (medium) — Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and communit
 - **`digg`** (medium) — Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — retu
@@ -93,7 +93,6 @@ kind: group-index
 - **`financial-post`** (low) — Use when you have a `name` or `employer-org` and want to search Canadian business-news coverage for mentions — returns article context linki
 - **`flickmetrix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flicksurfer-com`** (low) — alternative way to find anything interesting on Netflix
-- **`flipkey`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`flixable-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
@@ -121,7 +120,7 @@ kind: group-index
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
-- **`hashbin`** (medium) — OSINT tool: HashBin.
+- **`hashbin`** (low) — Use when you have a `hashb.in` paste link (with its key in the URL fragment) and want to read its contents — returns the decrypted paste tex
 - **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area

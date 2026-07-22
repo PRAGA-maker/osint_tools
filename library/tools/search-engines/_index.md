@@ -129,7 +129,6 @@ kind: group-index
 - **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
 - **`canadian-department-of-finance`** (medium) — Use when you need official Canadian federal fiscal/economic documents or named officials — returns budgets, consultations, publications, and
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Use when you have a `name` or `address`/region and want to find a Canadian lawyer or law firm — returns contact details, firm, address and p
-- **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Use when you have an `address`/ZIP and want the postal carrier routes within a radius — returns geolocation/address coverage context.
 - **`catawiki`** (medium) — Use when you have a `username` or `name` and want to trace a collectibles seller/bidder or a specific object's sale — returns `social-profil

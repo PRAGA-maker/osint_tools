@@ -150,7 +150,7 @@ kind: group-index
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
 - **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
 - **`center-for-international-earth-science-information-network`** (low) — OSINT tool: Center for International Earth Science Information Network.
-- **`central-and-eastern-european-business-directory`** (medium) — Central and Eastern European Business Directory
+- **`central-and-eastern-european-business-directory`** (low) — Use when you have an `employer-org` in Central/Eastern Europe and want a company-research gateway — returns a curated link to a CEE business
 - **`cepii`** (low) — OSINT tool: CEPII.
 - **`charteredaccountants-ie`** (medium) — Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and 
 - **`checkatrade-com`** (medium) — Use when you have a tradesperson's `name`, business name or `address`/area and want their UK trade listing, reviews and contact/location — r

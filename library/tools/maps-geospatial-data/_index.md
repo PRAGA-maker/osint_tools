@@ -28,7 +28,6 @@ kind: group-index
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
-- **`douwe-com`** (medium) — OSINT tool: douwe.com.
 - **`earth`** (medium) — Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocat
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
 - **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
@@ -119,7 +118,7 @@ kind: group-index
 - **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
 - **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora
 - **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.
-- **`ukraine-war-map-heatmap`** (medium) — OSINT tool: Ukraine War Map/Heatmap.
+- **`ukraine-war-map-heatmap`** (low) — Use when you have a `geolocation` in the Ukraine conflict zone and want to see control/activity over time — returns a time-animated map of f
 - **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
 - **`us-labor-strike-map`** (medium) — Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an eve
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo

@@ -23525,41 +23525,53 @@
   {
     "id": "51-com-china",
     "name": "51.com (China)",
-    "description": "Web game platform based in China",
-    "url": "http://51.com",
+    "description": "Use when you have a `username` tied to Chinese web/gaming circles and want to check for a 51.com profile — returns social-profile, display details and photos.",
+    "url": "http://www.51.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a username maps to a profile on 51.com, a legacy Chinese gaming/social platform.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use the platform; viewing personal profiles / using friend-discovery features generally requires a (free) registered account.",
+    "opsec": "active",
+    "opsecNote": "Meaningful profile browsing and search on 51.com require a logged-in account, so use a sock-puppet registration on a clean IP. The platform is Chinese-operated — assume queries are logged; never use a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-running but legacy Chinese gaming/social portal; content is user-generated and the platform's data-handling is opaque, so treat everything as unverified.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "cn"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "51.com",
+      "51 gaming social platform"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "china"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/51-com-china.md"
   },
   {
@@ -26344,43 +26356,52 @@
   {
     "id": "defencetalk-com",
     "name": "defencetalk.com",
-    "description": "OSINT tool: defencetalk.com.",
+    "description": "Use when you have a `username` or defence-topic interest and want to trace a member on the DefenceTalk military forum — returns social-profile, post history and stated details.",
     "url": "https://www.defencetalk.com/military/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and profiling a member of the DefenceTalk world military/defence forum by username.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read threads and view member profiles. Registration (free) is only needed to post, not to browse.",
+    "opsec": "passive",
+    "opsecNote": "Reading threads and public profiles is passive. Viewing a member's full profile may nudge \"who viewed\" style signals on some forum software — browse logged-out where possible, and use a sock-puppet if you register.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running public defence-discussion forum (tens of thousands of threads, hundreds of thousands of posts); member statements are self-reported and unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DefenceTalk",
+      "DefenceTalk Forum"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "Forums",
+      "military"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/defencetalk-com.md"
   },
   {
@@ -27566,46 +27587,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/flicksurfer-com.md"
-  },
-  {
-    "id": "flipkey",
-    "name": "FlipKey",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "https://www.flipkey.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/flipkey.md"
   },
   {
     "id": "flixable-com",
@@ -28916,37 +28897,47 @@
   {
     "id": "hashbin",
     "name": "HashBin",
-    "description": "OSINT tool: HashBin.",
-    "url": "https://hashb.in/#Q===",
+    "description": "Use when you have a `hashb.in` paste link (with its key in the URL fragment) and want to read its contents — returns the decrypted paste text and any selectors inside it.",
+    "url": "https://hashb.in/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Decrypting and reading a hashb.in paste link you found, since the decryption key travels in the URL fragment.",
+    "selectorsIn": [
+      "password"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, client-side-encrypted pastebin; no account needed to create or read a paste.",
+    "opsec": "passive",
+    "opsecNote": "Because encryption/decryption happen in your browser and the key is in the URL fragment (after",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "An open-source, zero-knowledge pastebin (source on GitHub); trustworthy as a reader of links you already have, but its contents are not indexed or searchable by anyone, including you.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "hashb.in",
+      "HashBin encrypted pastebin"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "encrypted-paste"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/hashbin.md"
   },
   {
@@ -44923,41 +44914,53 @@
   {
     "id": "bargaincity-classified-ads-canada",
     "name": "Bargaincity Classified Ads (Canada)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a `name`, `phone` or locale and want a subject's Canadian classified ads — returns ad contact details, location hints and item context.",
     "url": "https://www.bargaincity.ca",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's buy/sell or services ads across Canada with the contact details attached.",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse, search and post classified ads across Canada. Posting/managing your own ads needs a free account; searching does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and reading ads is passive and discloses nothing to the poster. Contacting an advertiser is active and reveals you — use a sock-puppet identity for any outreach.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An established free Canadian classifieds platform (Bargaincity Classifieds Ltd); ad content is user-submitted and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BargainCity",
+      "bargaincity.ca"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "classifieds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/bargaincity-classified-ads-canada.md"
   },
   {
@@ -154388,48 +154391,6 @@
     "_file": "library/tools/maps-geospatial-data/digitaldigging-org.md"
   },
   {
-    "id": "douwe-com",
-    "name": "douwe.com",
-    "description": "OSINT tool: douwe.com.",
-    "url": "https://douwe.com/projects/visited?region=world",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/douwe-com.md"
-  },
-  {
     "id": "earth",
     "name": "earth (nullschool)",
     "description": "Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocation claims about a photo or event.",
@@ -158552,35 +158513,50 @@
   {
     "id": "ukraine-war-map-heatmap",
     "name": "Ukraine War Map/Heatmap",
-    "description": "OSINT tool: Ukraine War Map/Heatmap.",
+    "description": "Use when you have a `geolocation` in the Ukraine conflict zone and want to see control/activity over time — returns a time-animated map of frontline and event density.",
     "url": "https://ruarq.github.io/ukraine-war-heatmap",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Visualising how territorial control and conflict activity around a location in Ukraine changed over time.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source web visualisation hosted on GitHub Pages; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static client-side web map — you load public data, contacting no target and disclosing nothing about a subject. Standard browsing; a VPN keeps even the map request private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A community/open-source visualisation built on aggregated open-source conflict reporting; it inherits the lag and error of its upstream data and is not an official source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ua"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "ukraine-war-heatmap",
+      "ruarq ukraine war map"
+    ],
+    "tags": [
+      "conflict-mapping",
+      "geospatial",
+      "ukraine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/ukraine-war-map-heatmap.md"
   },
   {
@@ -219586,52 +219562,56 @@
   {
     "id": "central-and-eastern-european-business-directory",
     "name": "Central & Eastern European Business Directory",
-    "description": "Central and Eastern European Business Directory",
+    "description": "Use when you have an `employer-org` in Central/Eastern Europe and want a company-research gateway — returns a curated link to a CEE business directory via MSU's globalEDGE.",
     "url": "https://globaledge.msu.edu/global-resources/resource/1274",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reaching a vetted Central & Eastern European company directory through globalEDGE's resource catalogue.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "globalEDGE (Michigan State University) is a free academic resource portal; the CEE directory it links to may have its own access terms, but the gateway itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading an academic resource catalogue and following an outbound link — no target is contacted. Standard passive browsing; the destination directory's own site sees your visit if you click through.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "globalEDGE is a well-regarded international-business knowledge portal run by Michigan State University's CIBER; the catalogue entry is curated, though the linked third-party directory is not MSU-operated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "eu"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "global-edge-resource-directory",
+      "globaledge",
+      "globaledge-database-of-international-business-statistics"
+    ],
+    "aliases": [
+      "CEE Business Directory",
+      "globalEDGE resource 1274"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "global-edge-resource-directory",
-      "globaledge",
-      "globaledge-database-of-international-business-statistics"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/central-and-eastern-european-business-directory.md"
   },
   {
@@ -271872,46 +271852,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/canadian-law-list-lawyer-search-engine-canada.md"
-  },
-  {
-    "id": "careerbuilder-canada",
-    "name": "CareerBuilder (Canada)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
-    "url": "http://www.careerbuilder.ca",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/careerbuilder-canada.md"
   },
   {
     "id": "careerone-australia",

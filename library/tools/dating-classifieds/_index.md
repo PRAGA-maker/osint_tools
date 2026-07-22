@@ -14,7 +14,7 @@ kind: group-index
 - **`autotrader-classified-ads-united-kingdom`** (medium) — Use when you have a UK `vehicle-plate` or a car for sale and want vehicle/seller detail — returns basic vehicle-check data and, from listing
 - **`ayi-com`** (low) — Use when checking whether a subject keeps a casual/location-based dating profile by `username` or `geolocation` — a legacy "Are You Interest
 - **`badoo`** (medium) — Use when you have a `username`, `image`, or `geolocation` and want to find a subject's profile on one of the largest global dating/people-ne
-- **`bargaincity-classified-ads-canada`** (medium) — Classified advertisements-related website that provides regional services
+- **`bargaincity-classified-ads-canada`** (medium) — Use when you have a `name`, `phone` or locale and want a subject's Canadian classified ads — returns ad contact details, location hints and 
 - **`beautifulpeople-com`** (low) — Use when checking a niche, member-voted dating community for a subject's profile by `username` or `image` — a small, vetting-gated platform.
 - **`bed-page`** (medium) — Use when you have a `name`, `phone`, or location and want classified/personal ads — returns ad listings with contact numbers, photos, and lo
 - **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
