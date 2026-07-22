@@ -89,7 +89,7 @@ kind: group-index
 - **`synonyms-net`** (low) — Language-related search for synonyms and antonyms
 - **`systran-translate`** (low) — Language translator
 - **`trans8it`** (low) — OSINT tool: Trans8it.
-- **`translate-by-babylon-free-online-translation`** (low) — OSINT tool: Translate by Babylon - Free Online Translation.
+- **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns
 - **`translate-com`** (low) — OSINT tool: Translate.com.
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes

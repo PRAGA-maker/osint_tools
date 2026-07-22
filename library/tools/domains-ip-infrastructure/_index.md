@@ -67,7 +67,7 @@ kind: group-index
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
 - **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
 - **`anubis`** (low) — Subdomain enumeration and information gathering tool
-- **`aort`** (low) — All in one domain recon tool: portscan; email services enumeration; subdomain information gathering; find info in Wayback Machine and more.
+- **`aort`** (low) — Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `doma
 - **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
 - **`api-mylnikov-org`** (low) — get lattitude and longitude by WiFI BBSID
 - **`apnic`** (medium) — Use when you have an `ip-address` in the Asia-Pacific region and want to know who holds the block — returns the registered network operator,

@@ -22,7 +22,7 @@ kind: group-index
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
 - **`cat-uxo`** (low) — A repository for professionals working in the explosive ordnance disposal (EOD) space.
 - **`cites-trade-database`** (low) — Around 23 million records of trade in wildlife since 1975.
-- **`convert-geographic-units`** (low) — A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.
+- **`convert-geographic-units`** (low) — Use when you have a `geolocation` in one coordinate format and want it in another (DD, DMS, UTM, NATO) across map datums — returns the conve
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
@@ -123,7 +123,7 @@ kind: group-index
 - **`virtualvacation-us`** (low) — Use when you want to train street-level geolocation skills — a free GeoGuessr-style game (City Guesser) that drops you into a random locatio
 - **`visionofbritain-org-uk`** (low) — Use when you have a UK place name/postcode or `geolocation` and want its historical maps, census and descriptions 1801–2001 — returns histor
 - **`waze`** (low) — Use when you have a `geolocation` and want real-time, crowd-sourced road conditions there — returns live traffic, incidents, and user report
-- **`what3words`** (low) — A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a uniq
+- **`what3words`** (low) — Use when you have a three-word what3words code (or a `geolocation`/`address`) and want to resolve it to precise lat/long — returns a 3-metre
 - **`whentaken-com`** (low) — Use when you want to practice chronolocation and geolocation — a game that shows a photo and asks you to guess where and when it was taken, 
 - **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.
 - **`wildlife-trade-portal`** (low) — An open-source tool to search wildlife seizure data worldwide.

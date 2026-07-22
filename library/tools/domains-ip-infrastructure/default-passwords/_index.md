@@ -10,7 +10,7 @@ kind: group-index
 - **`default-password-lookup-utility`** (low) — OSINT tool: Default Password Lookup Utility.
 - **`default-passwords-db`** (low) — OSINT tool: Default Passwords DB.
 - **`default-passwords-list`** (low) — OSINT tool: Default passwords list.
-- **`default-router-passwords`** (low) — OSINT tool: Default Router Passwords.
+- **`default-router-passwords`** (low) — Use when you have a router/DVR/camera make and model (`device-id`) and want its factory default login — returns the default `password` and u
 - **`hashes-org`** (low) — OSINT tool: Hashes.org.
 - **`open-sez-me-default-passwords`** (low) — OSINT tool: Open Sez Me Default Passwords.
 - **`phenoelit-default-password-list`** (low) — OSINT tool: Phenoelit Default Password List.

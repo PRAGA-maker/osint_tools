@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`checkip`** (low) — Display local IP and network info
-- **`networkminer`** (low) — Network forensics and file extraction from traffic
+- **`networkminer`** (low) — Use when you have a captured PCAP and want to carve out files, images, credentials and host details from the traffic — returns `email`, `pas
 - **`packet-total`** (low) — Cloud-based network forensics analysis
 - **`wireshark`** (low) — Network packet analysis and protocol debugging
 

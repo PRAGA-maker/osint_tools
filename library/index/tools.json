@@ -61396,43 +61396,50 @@
   {
     "id": "aort",
     "name": "AORT",
-    "description": "All in one domain recon tool: portscan; email services enumeration; subdomain information gathering; find info in Wayback Machine and more.",
+    "description": "Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `domain`s and `email`s.",
     "url": "https://github.com/D3Ext/AORT",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot domain reconnaissance (subdomains + ports + Wayback endpoints + email harvest) from a single CLI run.",
     "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
       "domain",
       "email"
     ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); install cost is only the pip package or a git clone.",
+    "opsec": "active",
+    "opsecNote": "AORT actively touches the target — DNS zone-transfer attempts, port scans and live subdomain probing generate traffic to the target's own infrastructure. Run from a disposable VPS/IP, not your attributable network, and stick to passive modes if you must stay quiet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by D3Ext with public commit history and a userbase in the bug-bounty community; you can read the code before running it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "All in One Recon Tool",
+      "D3Ext AORT"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aort.md"
   },
   {
@@ -65995,29 +66002,34 @@
   {
     "id": "default-router-passwords",
     "name": "Default Router Passwords",
-    "description": "OSINT tool: Default Router Passwords.",
+    "description": "Use when you have a router/DVR/camera make and model (`device-id`) and want its factory default login — returns the default `password` and username.",
     "url": "https://www.routerpasswords.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "default-passwords"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up the factory default username/password for a specific network device by manufacturer and model.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open community database; no account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching the database is a passive reference lookup that touches no target device. Actually using a returned credential against a device you are not authorised to access is intrusive and may be illegal — the lookup is OSINT, the login is not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained default-credential list; entries are crowd-contributed, so a given pair may be outdated or wrong for a specific firmware revision.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -66025,11 +66037,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "routerpasswords.com",
+      "default password database"
+    ],
+    "tags": [
+      "default-passwords"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/default-passwords/default-router-passwords.md"
   },
   {
@@ -77637,29 +77654,37 @@
   {
     "id": "networkminer",
     "name": "NetworkMiner",
-    "description": "Network forensics and file extraction from traffic",
+    "description": "Use when you have a captured PCAP and want to carve out files, images, credentials and host details from the traffic — returns `email`, `password`, `image` and `ip-address` artifacts.",
     "url": "https://www.netresec.com/?page=Networkminer",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "network-analysis-tools"
     ],
-    "bestFor": "Network forensics and file extraction from traffic",
-    "input": "PCAP network traffic files",
-    "output": "Extracted files, metadata, network sessions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Passive network forensics — extracting transferred files, images, emails and cleartext credentials from a PCAP without touching the wire.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "email",
+      "password",
+      "image",
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "NetworkMiner Free Edition covers PCAP parsing, file/image/credential extraction and live sniffing at no cost; the Professional edition (~$1,300) adds OSINT hash/IP lookups, OS fingerprinting, CLI scripting and browser tracing.",
     "opsec": "passive",
-    "opsecNote": "Passive analysis of already-captured traffic.",
+    "opsecNote": "Analysis is fully offline against a capture you already hold — nothing is sent to any subject or third party. The only exposure is if you enable Pro's online OSINT lookups, which query external services; keep those off for air-gapped work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Flagship tool from Netresec (Sweden), widely used in DFIR and law enforcement training; long track record and reproducible output.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -77667,11 +77692,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Netresec NetworkMiner"
+    ],
+    "tags": [
+      "network-forensics",
+      "pcap"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/network-analysis-tools/networkminer.md"
   },
   {
@@ -78238,31 +78268,38 @@
   {
     "id": "onyphe",
     "name": "Onyphe",
-    "description": "Internet asset discovery and threat intel",
+    "description": "Use when you have an `ip-address` or `domain` and want its exposed services, open ports, certificates and passive-DNS history — returns infrastructure `domain`s and `ip-address`es.",
     "url": "https://www.onyphe.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ipv4"
     ],
-    "bestFor": "Internet asset discovery and threat intel",
-    "input": "IP, domain, CVE",
-    "output": "Services, vulnerabilities, certificates, datasources",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Pivoting an IP or domain across internet-wide scan data, passive DNS and certificate history to map related infrastructure.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier available after registration with a limited daily query quota and history depth; deeper history, exports and higher API limits are paid.",
     "opsec": "passive",
-    "opsecNote": "Passive intelligence from public sources.",
+    "opsecNote": "Queries hit Onyphe's own scan/passive-DNS datasets, not the target, so the subject sees nothing — but you must log in, so the search is tied to your account. Use a dedicated investigative account, not a personal one.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established commercial cyber-intelligence provider (France-based) that runs its own internet-wide scanners; data is first-party collected, not resold scraping.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -78270,11 +78307,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "onyphe.io",
+      "ONYPHE"
+    ],
+    "tags": [
+      "internet-scanning",
+      "passive-dns"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipv4/onyphe.md"
   },
   {
@@ -88823,29 +88866,35 @@
   {
     "id": "where-does-this-link-go",
     "name": "Where Does This Link Go?",
-    "description": "Tracing redirect chains for suspicious links",
+    "description": "Use when you have a shortened or suspicious URL (`domain`) and want to see the full redirect chain and final destination without clicking it — returns hops and the final `domain`.",
     "url": "https://wheregoes.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "url-expanders"
     ],
-    "bestFor": "Tracing redirect chains for suspicious links",
-    "input": "URL",
-    "output": "Redirect hops, response codes, and final destination",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Expanding a short link and tracing every redirect hop to its final landing page from the safety of a server.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; an optional newsletter/account is teased for future extras (API, history) but the core tracer needs nothing.",
     "opsec": "passive",
-    "opsecNote": "Provides passive redirect tracing before manual browser interaction.",
+    "opsecNote": "WhereGoes fetches the URL from its own servers, so your IP never touches the target link — this is the safe way to expand a link a subject sent without tipping them off or landing on malware.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent redirect-checker; results are directly verifiable (the hops it lists are reproducible), so trust rests on the observable chain rather than the operator.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -88853,11 +88902,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhereGoes",
+      "wheregoes.com"
+    ],
+    "tags": [
+      "url-expander"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/url-expanders/where-does-this-link-go.md"
   },
   {
@@ -104006,37 +104060,46 @@
   {
     "id": "gdown",
     "name": "Gdown",
-    "description": "When downloading files from Google Drive curl/wget fails (because of the security notice). But this problem is easily solved",
+    "description": "Use when you have a Google Drive share link or file ID and want to reliably download the file (including large ones and whole folders) for evidence — returns the saved file.",
     "url": "https://github.com/wkentaro/gdown",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Downloading public Google Drive files and folders from the command line when curl/wget hit the virus-scan interstitial.",
+    "selectorsIn": [
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); a single pip package.",
+    "opsec": "passive",
+    "opsecNote": "Downloading a public Drive file is passive to the owner, but the request comes from your IP and Google may log it against the file's access stats — use a sock-puppet Google session / VPS if the download itself should not be attributable to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used open-source utility (wkentaro) with a large PyPI footprint; code is auditable and behaviour is easy to verify against a known file.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gdown pip",
+      "google drive downloader"
+    ],
     "tags": [
       "Downloaders"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/gdown.md"
   },
   {
@@ -150913,43 +150976,51 @@
   {
     "id": "convert-geographic-units",
     "name": "Convert Geographic Units",
-    "description": "A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.",
+    "description": "Use when you have a `geolocation` in one coordinate format and want it in another (DD, DMS, UTM, NATO) across map datums — returns the converted `geolocation`.",
     "url": "http://rcn.montana.edu/resources/Converter.aspx",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a single set of coordinates between decimal degrees, DMS, UTM and NATO/MGRS across datums like WGS84 and NAD83.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic resource hosted by Montana State University; no account.",
+    "opsec": "passive",
+    "opsecNote": "A purely client/server math conversion of coordinates you already hold — nothing is sent to any subject and there is no target interaction.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted by Montana State University's Yellowstone Research Coordination Network; conversions are deterministic geodesy, verifiable against any other converter.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "what3words"
+    ],
+    "aliases": [
+      "coordinate converter",
+      "Yellowstone RCN converter"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "maps"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/convert-geographic-units.md"
   },
   {
@@ -155590,13 +155661,13 @@
   {
     "id": "what3words",
     "name": "what3words",
-    "description": "A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a unique combination of three words, available in 60 languagues.",
+    "description": "Use when you have a three-word what3words code (or a `geolocation`/`address`) and want to resolve it to precise lat/long — returns a 3-metre `geolocation`.",
     "url": "http://what3words.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a what3words three-word address to exact coordinates (and vice versa) at 3-metre resolution.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -155604,32 +155675,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to look up and share locations on the web map and apps; paid plans exist only for the developer API at volume.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a code on the public map is passive — nothing is sent to the subject. If you resolve a code the subject shared themselves (e.g. in a message or emergency call), you are only decoding data you already hold.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by what3words Ltd; the grid is a fixed, published geocoding system used by emergency services in several countries, so a resolved code is authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "what3words-2",
+      "convert-geographic-units"
+    ],
+    "aliases": [
+      "w3w",
+      "three word address"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "maps"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "what3words-2"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/what3words.md"
   },
   {
@@ -290164,37 +290242,33 @@
   {
     "id": "searchdorks",
     "name": "SearchDorks",
-    "description": "OSINT tool: SearchDorks.",
+    "description": "Use when you want a ready-made search dork for Google/Shodan/Censys/FOFA/ZoomEye and want to describe your goal in plain English — returns copy-ready dork syntax.",
     "url": "https://kriztalz.sh/search-dorks/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a plain-English research goal into correct dork syntax for Google and the major internet-scan engines.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, browser-based, no sign-up and no data stored.",
+    "opsec": "passive",
+    "opsecNote": "Generating a dork is passive — it only writes query text in your browser. OpSec risk moves to wherever you then *run* the dork (Google, Shodan, etc.), which logs the search against your session/IP; run sensitive dorks from a sock-puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent single-developer utility; the value is the generated query, which you inspect and can correct before use, so trust rests on your own review of the output.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "google-dorks-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "domainrecon",
       "faviconhash",
@@ -290203,6 +290277,16 @@
       "pgpkeyanalyser",
       "traceroutevisualizer"
     ],
+    "aliases": [
+      "Search Dorks",
+      "kriztalz search-dorks"
+    ],
+    "tags": [
+      "google-dorks-tools"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/searchdorks.md"
   },
   {
@@ -344018,37 +344102,44 @@
   {
     "id": "translate-by-babylon-free-online-translation",
     "name": "Translate by Babylon - Free Online Translation",
-    "description": "OSINT tool: Translate by Babylon - Free Online Translation.",
+    "description": "Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns translated text.",
     "url": "http://translation.babylon-software.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Fast free web translation of short foreign-language text across 75+ languages during an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The web translator is free; Babylon also sells a paid desktop translation/dictionary application. The legacy translation.babylon-software.com subdomain is intermittent — the live entry point is https://www.babylon-software.com/.",
+    "opsec": "passive",
+    "opsecNote": "Pasting text into any hosted translator sends that text to a third-party server. Never paste sensitive case material, PII, or anything you would not want logged — sanitise or use an offline translator for confidential content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Babylon is a long-established commercial translation vendor, but historically bundled adware in its installers — use the web translator, avoid the downloadable toolbar/installer.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Babylon Translator",
+      "babylon-software translation"
+    ],
     "tags": [
       "translation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/translate-by-babylon-free-online-translation.md"
   },
   {

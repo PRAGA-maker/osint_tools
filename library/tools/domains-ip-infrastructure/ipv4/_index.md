@@ -11,7 +11,7 @@ kind: group-index
 - **`hacker-target-reverse-dns`** (low) — Reverse DNS lookup of IP addresses
 - **`ip-to-asn-db`** (low) — IP to ASN lookup with historical data
 - **`ipv4-cidr-report`** (low) — CIDR block analysis and subnet enumeration
-- **`onyphe`** (low) — Internet asset discovery and threat intel
+- **`onyphe`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, certificates and passive-DNS history — returns infr
 - **`port-scanner-online`** (low) — Quick port availability checks
 - **`reverse-report`** (low) — Reverse IP and domain lookups
 - **`team-cymru-ip-to-asn`** (low) — IP to ASN mapping
