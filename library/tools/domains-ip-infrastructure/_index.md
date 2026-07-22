@@ -51,7 +51,6 @@ kind: group-index
 
 ## Skills here
 - **`0xdork`** (low) — Very light and simple #Python tool for Google Dorking
-- **`1-and-1-ionos-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
 - **`accuranker`** (low) — OSINT tool: Accuranker.
@@ -119,7 +118,6 @@ kind: group-index
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (medium) — OSINT tool: coffer.com.
 - **`cogipas-internet-privacy-guide`** (medium) — Search tool that identifies the IP address you are currently using
-- **`conexcol-hosting-colombia`** (medium) — Service provider for registering websites and domain addresses
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
 - **`cookieserve-com`** (low) — detailed website cookie analyze

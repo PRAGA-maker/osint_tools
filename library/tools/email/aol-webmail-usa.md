@@ -36,7 +36,6 @@ relatedTools:
 - google-gmail
 - aol
 - aol-explorer-for-windows-systems
-- aol-travel
 aliases:
 - AOL Mail
 - webmail.aol.com

@@ -37,7 +37,6 @@ relatedTools:
 - familypedia
 - itlaw
 - lotrowikia
-- memory-alpha-star-trek-universe-wiki
 - religion-wiki
 - wikiawikis
 - wikirecipes

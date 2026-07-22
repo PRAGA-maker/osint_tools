@@ -26,7 +26,6 @@ kind: group-index
 - **`astronomy-sun-moon-eclipses`** (medium) — Use when you have a `geolocation` and a date/time and want the sun/moon position and light times — returns azimuth, elevation, sunrise/sunse
 - **`atlas`** (low) — Use when you have your own case location data (spreadsheet/coordinates) and want to load, map, and run spatial analysis on it collaborativel
 - **`atlasify`** (low) — Use when checking an OSINT toollist reference to atlasify.com — the domain is currently unreachable (TLS/self-signed certificate error), so 
-- **`australia-ufo-map-2008`** (medium) — UFO sigthins Google Map Australia 2008
 - **`automated-transcription-for-radio-stations`** (low) — OSINT tool: Automated transcription for radio stations.
 - **`average-gamma-dose-rate-map`** (low) — Use when you have a `geolocation` in Europe and want current environmental radiation readings for that area — returns station-level gamma do
 - **`baidu-maps`** (medium) — Use when a person, address, or photo points to mainland China and you need the local-quality map, POIs, satellite, and street-level Panorama
@@ -217,7 +216,7 @@ kind: group-index
 - **`openstreetmap-2`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry. (Dup
 - **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — Use when you have a `geolocation` clue (a described object — kiosk, pylon, bench type) and want the exact OSM tag/key to query in Overpass T
 - **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
-- **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
+- **`openswitchmapsweb`** (medium) — Use when you have a `geolocation` (coordinates or a map view) and want to inspect that exact spot across 160+ map/imagery services in one cl
 - **`opentopia`** (low) — OSINT tool: Opentopia.
 - **`osm-smart-menu`** (medium) — Use when you have a `geolocation` open in one map/OSM page and want to jump to the same spot in dozens of other maps and OSM tools — a brows
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 

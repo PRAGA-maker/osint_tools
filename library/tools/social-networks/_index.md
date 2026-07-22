@@ -92,7 +92,6 @@ kind: group-index
 - **`coderstats`** (low) — Developer activity and statistics tracker for GitHub.
 - **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
-- **`commentpicker`** (medium) — Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data ex
 - **`commits-top`** (medium) — Use when you have a country/city and want the most active GitHub developers there — returns ranked `social-profile`s (GitHub usernames) by c
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
 - **`covaxxy`** (low) — OSINT tool: CoVaxxy.
@@ -332,7 +331,6 @@ kind: group-index
 - **`kworb`** (medium) — Use when you have a musician/artist `name` and want to gauge their public streaming and chart footprint across YouTube, Spotify and iTunes —
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
 - **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
-- **`linkedin-datahub`** (medium) — linkedIn's generalized metadata search & discovery tool
 - **`linkedin-email-reverse-lookup`** (high) — Use when you have an `email` and want the matching LinkedIn profile — returns the person's name, profile ID/username, and photo via a logged
 - **`linkedin-search-engine-with-images`** (high) — Use when you have a `name`/`employer-org` and want LinkedIn profiles surfaced with thumbnail photos for fast visual matching — returns socia
 - **`linkedin-search-engine`** (high) — Use when you have a `name`, `employer-org` or `username` and want to find someone's LinkedIn profile without logging into LinkedIn — returns
@@ -727,7 +725,7 @@ kind: group-index
 - **`youtube-booster`** (low) — Use when you have a YouTube video with a location/object you want to identify and want one-click frame extraction into reverse-image search 
 - **`youtube-caption-searcher`** (low) — Use when you have a YouTube video and a keyword and want to jump to where it's spoken in the captions — returns caption timestamps, surfacin
 - **`youtube-channel-archiver`** (medium) — Use when you have a YouTube `social-profile` (channel URL) and want to bulk-preserve its videos, thumbnails, and comments before they vanish
-- **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
+- **`youtube-channel-id`** (medium) — Use when you have a YouTube channel URL, handle, or username and want its canonical channel ID plus owner/profile details — returns social-p
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
 - **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
 - **`youtube-comment-search-chrome-extension`** (medium) — Use when you have a YouTube video and a `username`/keyword and want to find matching comments — returns comments by author/content with time

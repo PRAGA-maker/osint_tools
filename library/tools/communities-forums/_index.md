@@ -10,7 +10,7 @@ kind: group-index
 - **`discord-servers/`** — 3 skill(s) below.
 - **`forum-search-engines/`** — 4 skill(s) below.
 - **`irc-search/`** — 3 skill(s) below.
-- **`reddit-communities/`** — 3 skill(s) below.
+- **`reddit-communities/`** — 2 skill(s) below.
 
 ## Skills here
 - **`4chan-search`** (medium) — Use when you have a `username`, phrase, or image tied to 4chan and want to search across boards and archives for posts — returns matching th
@@ -27,7 +27,6 @@ kind: group-index
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
 - **`analystforum-com`** (medium) — OSINT tool: analystforum.com.
 - **`answers-com`** (low) — OSINT tool: Answers.com.
-- **`aol-travel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
@@ -116,15 +115,12 @@ kind: group-index
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — OSINT tool: Friendpaste.
 - **`get-pocket-news-saving-app`** (medium) — Website offers article saving service, mostly on mobile devices, but also PC compatible
-- **`gettechmedia`** (medium) — Online articles, news, and reviews related to technology, computers, gadgets, and future trends
 - **`gettr-search`** (low) — Structured Gettr user search.
 - **`ghost`** (low) — OSINT tool: Ghost.
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
 - **`google-com-12`** (medium) — OSINT tool: google.com.
-- **`google-com-21`** (medium) — OSINT tool: google.com.
-- **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
@@ -153,7 +149,6 @@ kind: group-index
 - **`kyc360`** (low) — Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage
 - **`lavalife`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
-- **`liferea-linux-rss-news-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
@@ -259,7 +254,6 @@ kind: group-index
 - **`safenote`** (medium) — Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (y
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
-- **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`sciencedaily-com`** (medium) — Use when you have a researcher `name` or `employer-org` and want their reported studies for background — returns science/health research new
 - **`scrt-link`** (low) — Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time
 - **`search-engine-watch`** (low) — Use when you want to learn search-engine/SEO techniques and industry news to improve your own searching — an educational news site, not a pe
@@ -332,7 +326,6 @@ kind: group-index
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
 - **`vrbo`** (medium) — Use when you have a name or a location and want to check a vacation-rental platform for a host's listing — returns address-area, image and s
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
-- **`washington-post-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`washington-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.

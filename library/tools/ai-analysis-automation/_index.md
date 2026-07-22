@@ -44,7 +44,7 @@ kind: group-index
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
 - **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
 - **`awesome-malware-analysis`** (low) — OSINT tool: awesome-malware-analysis.
-- **`awesome-osint-mcp-servers`** (medium) — Curated list of OSINT MCP servers for AI-driven investigations.
+- **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
 - **`awesome-privacy`** (low) — OSINT tool: awesome-privacy.
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.

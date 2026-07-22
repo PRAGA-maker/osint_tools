@@ -39,7 +39,6 @@ source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
 relatedTools:
-- commentpicker
 - commentpicker-com
 - find-my-facebook-id-2
 - instagram-user-id

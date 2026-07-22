@@ -39,7 +39,6 @@ registration: false
 invitationOnly: false
 deprecated: false
 relatedTools:
-- insecac
 aliases: []
 tags:
 - webcams

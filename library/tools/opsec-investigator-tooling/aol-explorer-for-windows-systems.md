@@ -35,7 +35,6 @@ lastVerified: ''
 enrichment: stub
 relatedTools:
 - aol
-- aol-travel
 - aol-webmail-usa
 ---
 

@@ -7,7 +7,7 @@ kind: group-index
 # search-engines
 
 ## Sub-groups
-- **`academic-publication-search/`** — 16 skill(s) below.
+- **`academic-publication-search/`** — 15 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
 - **`ftp-search/`** — 1 skill(s) below.
 - **`general-search/`** — 14 skill(s) below.
@@ -339,7 +339,6 @@ kind: group-index
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
 - **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
-- **`ibj-criminal-defense-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
 - **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
@@ -347,7 +346,6 @@ kind: group-index
 - **`indeed-job-search-engine-worldwide`** (low) — Use when you have an `employer-org`, role, or location and want job-market context — returns job postings that reveal employers, locations, 
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
 - **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia
-- **`insecac`** (medium) — Worlds biggest online cameras directory
 - **`inside`** (low) — Human edited web directory, formerly known as Mahalo
 - **`intelligence-x`** (medium) — Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop la
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
@@ -376,7 +374,7 @@ kind: group-index
 - **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
 - **`journal-guide`** (low) — OSINT tool: Journal Guide.
 - **`journal-seek`** (low) — OSINT tool: Journal Seek.
-- **`journalist-s-toolbox-investigative`** (medium) — SPJ-associated curated set of investigative research tools for journalists.
+- **`journalist-s-toolbox-investigative`** (medium) — Use when you need a vetted starting point for an investigation and want a curated directory of people-tracing, public-records, and verificat
 - **`jstor`** (low) — OSINT tool: JSTOR.
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
@@ -436,7 +434,6 @@ kind: group-index
 - **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
-- **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.
 - **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metacritic`** (medium) — Use when you have a `username` and want to check for a matching reviewer profile revealing a person's ratings history and interests — return
@@ -446,7 +443,6 @@ kind: group-index
 - **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
-- **`military-occupation-codes-canada`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
 - **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
 - **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
@@ -570,7 +566,6 @@ kind: group-index
 - **`pricegrabber`** (medium) — Website allowing users to compare prices of products from different websites
 - **`productreviews-australia`** (medium) — Website related to product reviews
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
-- **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
 - **`pubmed`** (low) — OSINT tool: PubMed.
@@ -616,7 +611,6 @@ kind: group-index
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
-- **`scala`** (medium) — Open source code search engine
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedirect`** (low) — OSINT tool: ScienceDirect.
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
@@ -656,7 +650,6 @@ kind: group-index
 - **`sharkscope`** (medium) — Use when you have a poker `username` and want to confirm and profile the player behind it — returns tournament history, results and country,
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (low) — Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments a
-- **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`short-url-search-engine`** (medium) — Use when you have a `username`, `name`, or keyword and want to find shortened links (bit.ly, t.co, goo.gl, etc.) referencing it — a Google C
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.
 - **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
@@ -768,7 +761,6 @@ kind: group-index
 - **`wikichristian`** (low) — Use when you have a `name` of a religious figure, denomination, or Christian topic and want a community encyclopedia entry — returns backgro
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile
-- **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
 - **`wikimedia-meta-wiki`** (low) — Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
@@ -777,7 +769,6 @@ kind: group-index
 - **`wikishire-united-kingdom`** (medium) — Use when you have a British/Irish place name and want to resolve it geographically — returns county, coordinates, and local geographic conte
 - **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
-- **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
 - **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
 - **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
 - **`wiley`** (low) — OSINT tool: Wiley.

@@ -84,7 +84,6 @@ kind: group-index
 - **`downloadhelper`** (medium) — Use when you have a page hosting a video/image you need to preserve for analysis — returns the downloaded media file for archiving, framing,
 - **`dupli-checker`** (high) — Use when you have a photo of a person/place and want a quick multi-engine reverse-image lookup — returns matching social-profile pages and i
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
-- **`earthviewer360-com`** (medium) — Click on a point on the map to see a 360 degree video panorama (it's possiblle to pause to see some areas in more detail)
 - **`everypixel`** (medium) — Use when you have an `image` and want to find it across stock-photo agencies (and check if it's AI-generated) — returns matching stock listi
 - **`exiflooter`** (high) — Use when you have images (or a URL/directory of them) and want to extract GPS metadata and map it — returns geolocation from metadata-exif.
 - **`exiftool-2`** (high) — Use when you have a media/document file and want a full local metadata dump — returns metadata-exif, geolocation, device-id (same tool as ex
@@ -166,7 +165,7 @@ kind: group-index
 - **`impulseadventure`** (high) — Use when you have a JPEG and want to inspect its compression signatures and structure for tampering/source clues — returns forensic markers 
 - **`imvu`** (high) — Use when you have a `username` and want to check IMVU, a large 3D-avatar social network — returns a `social-profile` with avatar images, joi
 - **`in20years-co`** (high) — Use when you have a face photo and want to visualize an aged-up version of the same person — returns an AI age-progressed face image.
-- **`inpe-image-catalog`** (medium) — free satellite images catalogue.
+- **`inpe-image-catalog`** (medium) — Use when you have a `geolocation` (an area of interest, esp. South America) and want free medium-resolution satellite imagery for it — retur
 - **`internet-archive-open-source-videos`** (medium) — Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, download
 - **`invid-verification-plugin`** (low) — A toolkit that supports the verification of videos and images.
 - **`ios-gadgethacks-com`** (low) — Use when you need awareness that blacked-out / redacted regions in images can sometimes be recovered — this is a how-to article, not an inte

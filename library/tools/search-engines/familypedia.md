@@ -33,7 +33,6 @@ registration: false
 relatedTools:
 - itlaw
 - lotrowikia
-- memory-alpha-star-trek-universe-wiki
 - religion-wiki
 - thefaceoff-ice-hockey-wiki
 - wikiawikis

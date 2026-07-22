@@ -36,7 +36,6 @@ enrichment: stub
 relatedTools:
 - familypedia
 - itlaw
-- memory-alpha-star-trek-universe-wiki
 - religion-wiki
 - thefaceoff-ice-hockey-wiki
 - wikiawikis

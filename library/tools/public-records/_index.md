@@ -10,7 +10,6 @@ kind: group-index
 - **`additional-resources/`** — 2 skill(s) below.
 - **`annual-reports/`** — 4 skill(s) below.
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
-- **`birth-records/`** — 0 skill(s) below.
 - **`company-profiles/`** — 11 skill(s) below.
 - **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
@@ -255,7 +254,7 @@ kind: group-index
 - **`diligenciagroup-com`** (high) — Use when you have a `name`, `address`, or `employer-org` linked to the Middle East or Africa and want authoritative corporate-registry data,
 - **`directaccessportal-co-uk`** (high) — Use when you have a barrister's `name` (or need to identify one in England & Wales) and want their chambers, practice areas and contact rout
 - **`directorwho-co-uk`** (high) — Use when you have a `name` and want the UK companies they are/were a director of, plus co-directors and DOB/address hints — returns employer
-- **`dirt-diggers-digest-guide-united-states`** (medium) — Dirt Diggers digest guide to strategic corporate research.
+- **`dirt-diggers-digest-guide-united-states`** (medium) — Use when you have a company or executive `name`/`employer-org` and want a methodology plus source list to map its ownership, directors, and 
 - **`disputesregister-org`** (high) — Use when you have an `employer-org` or `name` and want a global directory of official company registries plus a searchable register of publi
 - **`dlook-local-business-directory-australia`** (low) — Use when you have a business `name` or `employer-org` in Australia and want its listing — returns the business `address`, `phone`, and categ
 - **`dnb-co-uk`** (high) — Use when you have a company `name` (or `employer-org`/`address`) and want to confirm the entity and its D-U-N-S number — returns `employer-o
@@ -691,7 +690,6 @@ kind: group-index
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
 - **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
 - **`ontario-genealogy-and-history-database-index`** (medium) — Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death
-- **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-f
@@ -715,7 +713,6 @@ kind: group-index
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Use when a subject, company or vehicle ties to Bulgaria and you need country-specific registries and search resources — returns a curated di
 - **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
-- **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
 - **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
 - **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
@@ -982,7 +979,6 @@ kind: group-index
 - **`vat-lookup-co-uk`** (high) — Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and 
 - **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na
 - **`vat-search-eu`** (medium) — Use when you have an EU company `name` or VAT number and want to validate/resolve it — returns the VAT-registered business `name`, `address`
-- **`viking-rifle-series-shooter-live-results`** (medium) — OSINT tool: Viking Rifle Series Shooter Live Results.
 - **`virtualglobetrotting-com`** (medium) — Use when you have a `name` or place and want user-submitted satellite/street-view locations — returns pinpointed `address`es/coordinates for
 - **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
 - **`vizala`** (low) — OSINT tool: Vizala.

@@ -13,7 +13,6 @@ kind: group-index
 - **`google-scholar`** (medium) — Use when you have a `name` (or `employer-org`) and want the subject's academic output, co-authors and affiliations — returns papers, citatio
 - **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
 - **`lazy-scholar`** (medium) — Use when you have a paper's DOI/URL and want its free full text — a browser extension that finds legal open-access copies of paywalled acade
-- **`library-databases`** (medium) — Identifying specialized academic databases by subject for deep literature research
 - **`open-access-scholarly-journals`** (low) — Use when you have an author `name` and want their open-access papers on this publisher — returns publications that reveal `employer-org` aff
 - **`open-library`** (medium) — Use when you have an author `name`, title, or ISBN and want book records — returns editions, publication metadata, and links to readable/bor
 - **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w

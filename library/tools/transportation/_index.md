@@ -143,7 +143,7 @@ kind: group-index
 - **`plane-finder`** (low) — OSINT tool: Plane Finder.
 - **`planefinder-army-live-flight-tracker`** (low) — OSINT tool: Planefinder Army Live Flight Tracker.
 - **`planefinder`** (low) — Live flight tracker.
-- **`planespotters-net`** (medium) — OSINT tool: Planespotters.net.
+- **`planespotters-net`** (medium) — Use when you have an aircraft registration/tail number (read off a photo) or an operator name and want the airframe's full operator history 
 - **`plate-recognizer`** (medium) — Use when you have an `image` of a vehicle and want to read its licence plate automatically — returns the `vehicle-plate` string plus make/mo
 - **`plates-mania`** (medium) — Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.
 - **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
