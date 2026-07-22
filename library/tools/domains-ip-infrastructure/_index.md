@@ -382,7 +382,7 @@ kind: group-index
 - **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
 - **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
 - **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
-- **`securitytrails`** (low) — OSINT tool: SecurityTrails.
+- **`securitytrails`** (low) — Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `do
 - **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
 - **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
@@ -497,7 +497,7 @@ kind: group-index
 - **`whois-service`** (low) — OSINT tool: WHOIS Service.
 - **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
 - **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
-- **`whoisds-com`** (low) — database of domains registered in the last day
+- **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
 - **`whoishostingthis`** (low) — OSINT tool: WhoIsHostingThis.
 - **`whoismind`** (low) — OSINT tool: WhoisMind.
 - **`whoisrequest`** (low) — OSINT tool: WhoIsRequest.

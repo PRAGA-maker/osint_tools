@@ -12622,38 +12622,46 @@
   },
   {
     "id": "qubes",
-    "name": "Qubes",
-    "description": "OSINT tool: Qubes.",
+    "name": "Qubes OS",
+    "description": "Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) into disposable VMs — a hardened investigator workstation.",
     "url": "https://www.qubes-os.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Running investigations in isolated, disposable VMs so a malicious file or link can't compromise your host or cross-contaminate identities.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; the only cost is compatible hardware (needs decent RAM and virtualization support).",
+    "opsec": "passive",
+    "opsecNote": "This is investigator opsec, not a target lookup. Qubes isolates each task/persona in its own VM (with disposable VMs for one-off risky actions) so malware detonation or a compromised sock-puppet stays contained. Route networking through a VPN/Whonix qube for anonymity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Well-regarded open-source security OS with a long track record and public audits; endorsed in the privacy/security community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Qubes OS",
+      "QubesOS"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "operating-system"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/qubes.md"
   },
   {
@@ -14128,37 +14136,49 @@
   {
     "id": "snort",
     "name": "Snort",
-    "description": "OSINT tool: Snort.",
+    "description": "Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches packets against threat rules.",
     "url": "https://www.snort.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Monitoring your own network/honeypot for intrusions and malicious traffic using signature rules.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (GPL, maintained by Cisco/Talos); the community ruleset is free, subscriber rulesets get updates sooner for a fee.",
+    "opsec": "passive",
+    "opsecNote": "This is defensive tooling you run on your OWN network, not a query against a subject. It passively inspects traffic you are authorised to see; deploying it to monitor networks you don't control is unlawful interception.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "The de-facto open-source IDS/IPS, maintained by Cisco Talos with two decades of use; source and rules are public and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Snort IDS",
+      "Snort3"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "ids"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/snort.md"
   },
   {
@@ -29432,41 +29452,50 @@
   {
     "id": "livejournal",
     "name": "LiveJournal",
-    "description": "OSINT tool: LiveJournal.",
+    "description": "Use when you have a `username` and want to find an associated blog/journal, its posts, interests and friend network — returns a `social-profile` and `associate` links.",
     "url": "https://www.livejournal.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a username to a LiveJournal blog and mining its posts, profile fields and friends list for links and history.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read public journals and profiles; paid accounts remove ads and add features but are not needed for OSINT reading.",
+    "opsec": "passive",
+    "opsecNote": "Reading public journals is passive. Logging in to view friends-locked posts, or leaving a comment/profile view, can be visible — use a sock-puppet account and avoid any interaction that notifies the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running blogging platform (now Russian-owned, SUP Media); public content is user-authored, so treat claims as self-reported.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LJ",
+      "livejournal.com"
+    ],
     "tags": [
-      "forums"
+      "forums",
+      "blogging"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/livejournal.md"
   },
   {
@@ -82437,37 +82466,52 @@
   {
     "id": "securitytrails",
     "name": "SecurityTrails",
-    "description": "OSINT tool: SecurityTrails.",
+    "description": "Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `domain`s and `ip-address`es over time.",
     "url": "https://securitytrails.com/dns-trails",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Pivoting a domain/IP through historical DNS, subdomain enumeration and WHOIS-history to map infrastructure and past ownership.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free account gives limited web queries and a small API quota; deeper history, bulk subdomains and higher API limits are paid (SecurityTrails is now part of Recorded Future).",
+    "opsec": "passive",
+    "opsecNote": "Queries hit SecurityTrails' own historical datasets, not the target — the subject is never contacted. Searches are tied to your account, so use a dedicated investigative login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established commercial DNS-intelligence provider (Recorded Future); data is first-party collected passive DNS and WHOIS history, widely used in threat intel.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "DNSTrails",
+      "SecurityTrails DNS history"
+    ],
     "tags": [
       "domain-and-ip-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/securitytrails.md"
   },
   {
@@ -89612,42 +89656,49 @@
   {
     "id": "whoisds-com",
     "name": "WhoisDS.com",
-    "description": "database of domains registered in the last day",
+    "description": "Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadable lists of new `domain`s plus WHOIS lookups.",
     "url": "http://whoisds.com/newly-registered-domains",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading daily lists of newly registered domains and running individual WHOIS lookups to catch fresh infrastructure.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Daily newly-registered-domain lists and basic WHOIS are free (with quotas/limits); bulk downloads, larger history and API access are paid.",
+    "opsec": "passive",
+    "opsecNote": "Downloading published new-domain lists and running WHOIS is passive — you query WhoisDS' data and registry records, not the target host. Registrant PII is largely GDPR-redacted; correlate on dates/patterns rather than expecting names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A domain-data aggregator; the newly-registered lists are compiled from zone files, useful but best cross-checked against a registry or second source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WhoisDS",
+      "newly registered domains list"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Databases of domains"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whoisds-com.md"
   },
   {
@@ -154087,13 +154138,13 @@
   {
     "id": "openseamap",
     "name": "OpenSeaMap",
-    "description": "Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources",
+    "description": "Use when you have a maritime `geolocation` and want nautical context — sea marks, harbours, shipping lanes, depths — returns a nautical chart layer over the location.",
     "url": "https://map.openseamap.org/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Getting nautical/maritime map context (buoys, harbours, lanes, sea marks) for a coastal or open-water location.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -154101,32 +154152,41 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, community-built on OpenStreetMap data; no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public map is passive and reveals nothing to any subject — standard browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An OpenStreetMap-based crowdsourced nautical chart; coverage and accuracy vary by region and must not be used for actual navigation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "openseamap-the-free-nautical-chart",
+      "what3words",
+      "convert-geographic-units"
+    ],
+    "aliases": [
+      "OpenSeaMap",
+      "open sea map"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "maps"
+      "maps",
+      "maritime"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "openseamap-the-free-nautical-chart"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/openseamap.md"
   },
   {
@@ -175657,39 +175717,46 @@
   },
   {
     "id": "jsonhero",
-    "name": "JSONHero",
-    "description": "Free online tool for visualizing data in JSON format. With tree structure display, syntax highlighting, link preview, pictures, colors and many other interesting features.",
+    "name": "JSON Hero",
+    "description": "Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree view, search, and link/image preview.",
     "url": "https://jsonhero.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly exploring, searching and previewing a large JSON payload without hand-reading raw text.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (by Trigger.dev); no account needed.",
+    "opsec": "passive",
+    "opsecNote": "You paste JSON into a hosted viewer, so the data leaves your machine and gets a shareable URL. Do NOT paste sensitive case data, PII, or credentials — for confidential payloads use an offline JSON viewer or CyberChef locally instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project from Trigger.dev with public source; a formatting/inspection utility, so risk is data-handling (hosted) not data-integrity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "JSONHero",
+      "jsonhero.io"
+    ],
     "tags": [
-      "NOOSINT tools",
-      "Visualization tools"
+      "Visualization tools",
+      "json"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/jsonhero.md"
   },
   {
@@ -177698,37 +177765,43 @@
   {
     "id": "mullvad-browser",
     "name": "Mullvad Browser",
-    "description": "OSINT tool: Mullvad Browser.",
+    "description": "Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessions blend into the crowd.",
     "url": "https://mullvad.net/en/browser",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Conducting attributable-risk OSINT from a hardened, fingerprint-resistant browser (paired with a VPN) instead of Tor.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The browser is free and open source; the optional Mullvad VPN it pairs with is paid, but the browser works with any VPN or none.",
+    "opsec": "passive",
+    "opsecNote": "This is investigator opsec, not a target query. Mullvad Browser minimises your browser fingerprint so sock-puppet sessions look generic; run it behind a VPN, keep separate profiles per persona, and never log into your real accounts in it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Built by the Tor Project in collaboration with Mullvad VPN; open source and based on the hardened Tor Browser engine minus the Tor network.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Mullvad Browser"
+    ],
     "tags": [
       "browsers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/mullvad-browser.md"
   },
   {
@@ -220432,43 +220505,52 @@
   {
     "id": "d-and-b-company-search",
     "name": "D&B Company Search",
-    "description": "OSINT tool: D&B Company Search.",
+    "description": "Use when you have a company `name` and want its D-U-N-S profile — registered address, industry, size, executives and corporate family — returns `employer-org` and `associate` links.",
     "url": "https://www.dnb.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a company's D&B business profile (D-U-N-S number, address, industry, key executives, corporate family tree).",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company-directory profiles are free to view; full credit reports, contacts and D&B Hoovers data require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Searching D&B's public business directory is passive research against corporate records — the subject/company is not contacted. Full reports require an account, which ties queries to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Dun & Bradstreet is a long-established commercial-data provider whose D-U-N-S numbering is an industry standard for identifying businesses.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Dun & Bradstreet",
+      "DNB company search",
+      "D-U-N-S lookup"
+    ],
     "tags": [
       "corporate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/d-and-b-company-search.md"
   },
   {
@@ -286288,45 +286370,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/oxford-journals.md"
-  },
-  {
-    "id": "packettotal",
-    "name": "PacketTotal",
-    "description": ".pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline of dns-queries and http-connections, download files for detailed analyze.",
-    "url": "https://packettotal.com/app/search",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "packet-total"
-    ],
-    "_file": "library/tools/search-engines/packettotal.md"
   },
   {
     "id": "pagodo-passive-google-dork",

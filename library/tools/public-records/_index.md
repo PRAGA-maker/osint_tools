@@ -223,7 +223,7 @@ kind: group-index
 - **`cyprus`** (high) — Use when you have a company `name`, officer `name` or registration number tied to Cyprus and want official corporate records — returns `empl
 - **`cyprusregistry-com`** (high) — Use when you have an `employer-org` or director `name` in Cyprus and want company officers, shareholders, and addresses — returns employer-o
 - **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
-- **`d-and-b-company-search`** (low) — OSINT tool: D&B Company Search.
+- **`d-and-b-company-search`** (low) — Use when you have a company `name` and want its D-U-N-S profile — registered address, industry, size, executives and corporate family — retu
 - **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
 - **`data-gov`** (low) — OSINT tool: Data.gov.

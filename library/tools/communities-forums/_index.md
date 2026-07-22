@@ -126,7 +126,7 @@ kind: group-index
 - **`lavalife`** (low) — Use when you have a `username` or `name` and want to check for a Lavalife dating profile — returns social-profile, self-described details an
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
-- **`livejournal`** (low) — OSINT tool: LiveJournal.
+- **`livejournal`** (medium) — Use when you have a `username` and want to find an associated blog/journal, its posts, interests and friend network — returns a `social-prof
 - **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
 - **`lonely-planet`** (low) — Use when you have a `geolocation` and need travel-context — venues, neighbourhoods, transport, and accommodation a subject might use — retur
 - **`loveaholics`** (medium) — Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating sit

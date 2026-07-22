@@ -319,7 +319,7 @@ kind: group-index
 - **`pywhat`** (low) — OSINT tool: pywhat.
 - **`qlikview`** (low) — OSINT tool: QlikView.
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
-- **`qubes`** (low) — OSINT tool: Qubes.
+- **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
 - **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
 - **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`raphael`** (low) — OSINT tool: Raphael.
@@ -358,7 +358,7 @@ kind: group-index
 - **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
 - **`sn0int`** (low) — OSINT tool: sn0int.
 - **`snappa`** (low) — OSINT tool: Snappa.
-- **`snort`** (low) — OSINT tool: Snort.
+- **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
 - **`social-links`** (low) — OSINT tool: Social Links.
 - **`soundeffectssearch-com`** (low) — find a sound library
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.

@@ -507,7 +507,6 @@ kind: group-index
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
 - **`oxford-journals`** (low) — OSINT tool: Oxford Journals.
-- **`packettotal`** (low) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline 
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — OSINT tool: Paperball.news.
 - **`paperboy`** (low) — OSINT tool: Paperboy.

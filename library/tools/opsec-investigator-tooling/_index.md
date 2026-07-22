@@ -241,7 +241,7 @@ kind: group-index
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Website that scans suspicious or potentially compromised files with multiple anti-virus programs
 - **`jsoncrack`** (low) — Online tool for visualizing, editing and searching for text in JSON files. With the ability to save, export and share results via a link.
-- **`jsonhero`** (low) — Free online tool for visualizing data in JSON format. With tree structure display, syntax highlighting, link preview, pictures, colors and m
+- **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`jsonvisio`** (low) — Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files.
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
 - **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
@@ -291,7 +291,7 @@ kind: group-index
 - **`microsoft-safety-and-security-center`** (low) — Information about online privacy, security websites, and programs, provided by Microsoft
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mozilla-firefox`** (low) — Internet browser program
-- **`mullvad-browser`** (low) — OSINT tool: Mullvad Browser.
+- **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
 - **`multilogin`** (low) — multi-login browser extension
 - **`my-browser-info`** (low) — Analyzes your browser and computer for information being revealed about you
