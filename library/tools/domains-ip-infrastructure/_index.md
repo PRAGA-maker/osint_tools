@@ -421,13 +421,12 @@ kind: group-index
 - **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al
 - **`technology-lookup`** (low) — OSINT tool: Technology Lookup.
 - **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps
-- **`test-net-network-tools`** (medium) — Tools including whois lookup, reverse lookup, traceroute, ping test, proxy checker, and more
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`thales`** (low) — OSINT tool: Thales.
 - **`the-favicon-finder`** (low) — Instantly finds the favicon and all .ico files on the site, and then generates links to download them quickly.
 - **`the-information-laundromat`** (low) — A tool for analyzing content replication and site architecture to detect information laundering.
-- **`thehot`** (medium) — Free online backlink checker tool
+- **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — OSINT tool: Threat Actor Usernames Scrape.
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
 - **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.

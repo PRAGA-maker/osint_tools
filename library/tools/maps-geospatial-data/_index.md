@@ -96,7 +96,7 @@ kind: group-index
 - **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
 - **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond
 - **`policy-map`** (low) — Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housin
-- **`power-plants-in-the-united-states`** (medium) — OSINT tool: Power Plants in the United States.
+- **`power-plants-in-the-united-states`** (medium) — Use when you have a US `geolocation`/`address` and want to identify nearby electricity-generating facilities, their fuel type and operator —
 - **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
 - **`quick-geolocation-search`** (low) — A tool that brings several maps into one place for easy location search.
 - **`radar-interference-tracker-rit`** (low) — Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.

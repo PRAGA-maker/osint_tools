@@ -55,7 +55,6 @@ kind: group-index
 - **`cnet`** (medium) — Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/compa
 - **`cnn-news-united-states`** (medium) — Use when you have a `name` and want major US/global news coverage mentioning a subject — returns `social-profile`/byline, event dates and na
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
-- **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
 - **`computerworld`** (low) — Use when you have a `name` or `employer-org` in enterprise IT and want long-run coverage — returns `employer-org`, `associate` and professio
 - **`computing`** (low) — Use when you have a `name` or `employer-org` in the UK tech/IT sector and want to search a leading trade publication for coverage — returns 
@@ -109,7 +108,6 @@ kind: group-index
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`hashbin`** (low) — Use when you have a `hashb.in` paste link (with its key in the URL fragment) and want to read its contents — returns the decrypted paste tex
 - **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e
-- **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
@@ -126,7 +124,6 @@ kind: group-index
 - **`knok`** (medium) — Use when you have a name or location and want to check a home-exchange community for a member profile or listed property — returns social-pr
 - **`kyc360`** (low) — Use when you have an `employer-org` or `name` in a financial-crime/AML context and want expert news, guidance and regulatory-change coverage
 - **`lavalife`** (low) — Use when you have a `username` or `name` and want to check for a Lavalife dating profile — returns social-profile, self-described details an
-- **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
@@ -141,7 +138,6 @@ kind: group-index
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
 - **`metafilter`** (low) — Use when you have a `username` (or real `name`) and want to surface a long-running community member's post/comment history and interests — r
 - **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
-- **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
 - **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
 - **`money-talk-org`** (medium) — Use when you have a `username` and want to trace their posting history on a long-running personal-finance forum — returns post history, prof
 - **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
@@ -260,7 +256,6 @@ kind: group-index
 - **`the-silph-road`** (low) — Pokemon GO community travelers' card/profile directory; lets you look up a player's public Silph card by username. Referenced in sinwindie's
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
 - **`theaustralian-national-news`** (medium) — Use when you have a `name` or `employer-org` linked to Australia and want national coverage — returns `associate`, `employer-org` and event 
-- **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
 - **`thepaperboy`** (medium) — Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to searc
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
 - **`theverge-tech-news`** (medium) — Use when you have a `name`/`employer-org` in tech, startups, or gadgets and want coverage — returns articles, quotes, and role/company conte

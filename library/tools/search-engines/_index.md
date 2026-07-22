@@ -49,7 +49,6 @@ kind: group-index
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
-- **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
@@ -64,7 +63,6 @@ kind: group-index
 - **`arabo-com`** (low) — Use when you have a `name`, business, or topic in the Arab world and want Arabic-language sites a Western engine misses — returns social-pro
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
 - **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
-- **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
 - **`asian-development-bank`** (low) — Use when you have an `employer-org`, project, or contractor tied to development work in Asia-Pacific and want official project, procurement,
@@ -83,7 +81,6 @@ kind: group-index
 - **`ballotpedia-united-states`** (medium) — Use when you have a `name` of a US politician, candidate, or public official and want their verified biography, offices held, and campaign/e
 - **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
 - **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
-- **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`base`** (low) — OSINT tool: Base.
 - **`bbc-news`** (low) — OSINT tool: BBC News.
 - **`beautiful-news`** (low) — OSINT tool: Beautiful News.
@@ -205,7 +202,6 @@ kind: group-index
 - **`encyclopedia-of-math`** (medium) — Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, re
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
 - **`eniro-sweden`** (low) — OSINT tool: Eniro (Sweden).
-- **`entireweb-text-based-search-engine`** (medium) — Surface web search engine covering worldwide results
 - **`etools`** (low) — OSINT tool: Etools.
 - **`euronews`** (low) — OSINT tool: Euronews.
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
@@ -234,7 +230,6 @@ kind: group-index
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
-- **`findhow`** (medium) — The how-to directory
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
 - **`firebounty`** (low) — Bug bounty search engine
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
@@ -244,7 +239,6 @@ kind: group-index
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
-- **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
@@ -296,7 +290,6 @@ kind: group-index
 - **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
 - **`googler`** (low) — command line google search tool
 - **`goosh-org`** (low) — online google search command line tool
-- **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
@@ -440,7 +433,6 @@ kind: group-index
 - **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
-- **`news-and-moods-search-australia`** (medium) — Search engine that provides keyword stats and trends along with results
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
 - **`news-map`** (low) — OSINT tool: News Map.
 - **`news-now`** (low) — OSINT tool: News Now.
@@ -603,7 +595,6 @@ kind: group-index
 - **`seek-job-search-engine-new-zealand`** (medium) — Use when you have a `name` or `employer-org` and want a subject's NZ job/employment footprint — returns employer, role, and location leads f
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
 - **`seosly-com`** (medium) — Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working s
-- **`seqe-search-engines-query-engine`** (medium) — OSINT tool: SEQE - Search Engines Query Engine.
 - **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
 - **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
 - **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
@@ -623,7 +614,6 @@ kind: group-index
 - **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
 - **`sogou-china`** (low) — OSINT tool: SoGou (China).
-- **`somalia-conflict`** (medium) — List of individuals reported missing in connection with the conflict in Somalia
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`soovle`** (low) — OSINT tool: Soovle.
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
@@ -636,12 +626,10 @@ kind: group-index
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
 - **`storyful`** (low) — OSINT tool: Storyful.
-- **`suchmaschinen-datenbank`** (medium) — German meta search engine
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
 - **`sunxdcc`** (low) — XDCC file search engine
 - **`superdesk`** (low) — OSINT tool: Superdesk.
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
-- **`surf-canyon-ebay-search`** (medium) — eBay search engine
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
@@ -692,7 +680,6 @@ kind: group-index
 - **`vichiti`** (medium) — Use when you have a single selector (`email`, `username`, `phone`, `ip-address`, `domain`, or crypto wallet) and want a fast multi-module re
 - **`vinden-meta-search-netherlands`** (medium) — Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links t
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
-- **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results
 - **`vulnerability-and-exploit-database`** (medium) — Use when you have a `domain` or software product tied to a target's infrastructure and want known CVEs/exploits for it — returns vulnerabili
 - **`wackysafe`** (low) — Kid-friendly search engine.
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
@@ -759,7 +746,6 @@ kind: group-index
 - **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
 - **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
 - **`yaraif`** (medium) — Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — return
-- **`yassen-com`** (medium) — OSINT tool: Yassen.com.
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised

@@ -395,7 +395,6 @@ kind: group-index
 - **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
 - **`government-staff-directory`** (medium) — Use when you have a `name` or department (`employer-org`) of a Government of Alberta employee and want to confirm the role and a work phone 
 - **`govsalaries`** (medium) — Use when you have a `name` (and ideally a US state/employer) and want to confirm public-sector employment and pay — returns `employer-org`, 
-- **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
 - **`greataupair-com`** (medium) — Use when you have a `name` and suspect the subject works or seeks work in childcare/eldercare — returns a social-profile with location, job 
 - **`greater-sacramento-area-public-salaries`** (medium) — Use when you have a `name` of a public employee in the Sacramento region and want to confirm their employer and pay — returns `employer-org`
@@ -524,7 +523,7 @@ kind: group-index
 - **`lei-bloomberg-com`** (medium) — Use when you have an `employer-org` name or a Legal Entity Identifier (LEI) and want authoritative entity-registration detail — returns the 
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
 - **`leolist`** (low) — OSINT tool: LeoList.
-- **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
+- **`libguides-community-search`** (medium) — Use when you have a topic, a librarian `name`, or an institution (`employer-org`) and want curated academic research guides — returns the gu
 - **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
 - **`library-of-congress-united-states`** (medium) — Use when you have a `name`, place or topic and want historical records — newspapers, directories, photos, manuscripts, maps — that can place
@@ -570,7 +569,6 @@ kind: group-index
 - **`money-house-search-switzerland`** (medium) — Use when you have a `name` or Swiss `employer-org` and want commercial-register data — returns company registrations, directorships and addr
 - **`montana-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for a Montana resident and want to confirm voter registration — returns registration status, precinct and
 - **`montana`** (high) — Use when you have a `name` (or DOC ID) and want to check Montana state incarceration/supervision records — returns offender status, facility
-- **`montreal-council-of-social-agencies-database`** (medium) — OSINT tool: Montreal Council of Social Agencies Database.
 - **`most-wanted`** (high) — Use when you have a `name` (or are working an image/case) and want to check whether the person appears on the FBI's wanted/most-wanted lists
 - **`mpts-uk-org-2`** (high) — Use when you have a doctor's `name` (or GMC number) and want to check for UK fitness-to-practise tribunal hearings/decisions against them — 
 - **`mpts-uk-org`** (high) — Use when you have a UK doctor's `name` and want fitness-to-practise tribunal records — returns hearing listings and decision documents namin
@@ -659,7 +657,6 @@ kind: group-index
 - **`online-services-pei-business-corporate-registry`** (low) — OSINT tool: Online Services PEI Business / Corporate Registry.
 - **`online-students-research-toolkit`** (medium) — Use when you have a research question and want a curated index of authoritative databases and advanced-search tips — returns links to subjec
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
-- **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
 - **`ontario-genealogy-and-history-database-index`** (medium) — Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
@@ -736,7 +733,6 @@ kind: group-index
 - **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
 - **`public-library-of-science-search`** (medium) — Use when you have a researcher's `name` (or `employer-org`) and want their open-access publications, co-authors and institutional affiliatio
 - **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
-- **`public-records`** (medium) — Unclear - requires VP clarification
 - **`quandl`** (medium) — Use when you need financial/economic/company market datasets for context — now Nasdaq Data Link; returns datasets on markets, companies and 
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
@@ -840,7 +836,6 @@ kind: group-index
 - **`spotlight-com`** (high) — Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services a
 - **`spyfu`** (low) — Use when you have a `domain` and want its SEO/PPC footprint — keywords, ad history and competitors — to profile the business behind a site; 
 - **`sra-org-uk`** (medium) — Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and fir
-- **`st-louis-county-salaries-fiscal-2020`** (medium) — OSINT tool: St. Louis County salaries fiscal 2020.
 - **`startup-tracker`** (low) — Use when you have a startup/company `name`, `domain`, or founder `name` and want an aggregated company profile with links, funding signals, 
 - **`state-adoption-resources`** (high) — Use when a missing-persons/family case involves adoption and you need each US state's rules for accessing (largely sealed) adoption records 
 - **`state-and-county-jail-inmate-locators`** (high) — Use when you have a `name` and want to check whether a subject is currently or was recently incarcerated in a US state prison or county jail
@@ -947,7 +942,7 @@ kind: group-index
 - **`webmd-medical-sciences-search`** (low) — Use when you have a doctor's `name` (US) and want their practice location, specialty and credentials — returns a practice `address`, `employ
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
 - **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
-- **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
+- **`whaleslide`** (medium) — Use when you want to run web searches on a `name`/`username` without being tracked — a privacy-preserving general search engine that returns
 - **`whitepages-reverse-address-search`** (medium) — Use when you have an `address` and want to know who is associated with it — returns resident names, phone numbers and likely associates.
 - **`who-data`** (low) — OSINT tool: WHO Data.
 - **`who-do-you-search`** (medium) — Use when you have a business/service `name` or trade and a city and want local recommendations and business listings — returns local `employ

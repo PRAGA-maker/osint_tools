@@ -39,7 +39,7 @@ kind: group-index
 - **`audiense`** (high) — Use when you have a Twitter/X `username` or audience and want deep audience-segmentation intelligence — returns audience segments, influence
 - **`authentic8-com-2`** (high) — Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform 
 - **`authentic8-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and met
-- **`auto-scroll-search`** (medium) — automatically scrolls the page down (and loads the ribbon) until the specified keyword appears on it.
+- **`auto-scroll-search`** (medium) — Use when you need to find a `name`/`username`/keyword buried deep in an infinite-scroll feed (X, Facebook, Instagram, YouTube) — auto-scroll
 - **`backtweets`** (medium) — Use when you have a `domain`/URL or `username` and want archived tweets that linked back to it — returns social-profile handles and tweet re
 - **`barkov-net`** (high) — Use when you have a VKontakte/OK/Telegram community, user list or profile criteria and want to enumerate and filter users — returns `social-
 - **`bayt-com`** (high) — Use when you have a `name`/`username` of a Middle East / Gulf professional and want their CV-style profile and work history — returns a `soc

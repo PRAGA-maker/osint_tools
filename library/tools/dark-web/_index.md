@@ -67,7 +67,6 @@ kind: group-index
 - **`mullvad-vpn`** (low) — OSINT tool: Mullvad VPN.
 - **`naval-open-source-intelligence`** (low) — Use when you need curated open-source naval/maritime-military news and analysis — returns an actively updated feed of naval developments for
 - **`newsworld-usa`** (medium) — Use when you have a `name`/`employer-org` and want recent and archived US news mentions — returns aggregated headlines linking a subject to 
-- **`north-american-industry-classification-system-naics-canada`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`north-american-sic-structure-united-states`** (medium) — Use when you have a SIC `document-id` code (or an industry name) and want to decode the industrial sector — returns the classified industry/
 - **`onion-engine`** (low) — OSINT tool: Onion Engine.
 - **`onion-land`** (low) — OSINT tool: Onion Land.

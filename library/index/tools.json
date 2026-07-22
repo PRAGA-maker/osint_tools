@@ -25602,42 +25602,6 @@
     "_file": "library/tools/communities-forums/coffeemetsbagel.md"
   },
   {
-    "id": "commie",
-    "name": "commie",
-    "description": "OSINT tool: commie.",
-    "url": "https://commie.io/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/commie.md"
-  },
-  {
     "id": "community-screwfix-com",
     "name": "community.screwfix.com",
     "description": "Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history for that handle.",
@@ -28424,46 +28388,6 @@
     "_file": "library/tools/communities-forums/hastebin.md"
   },
   {
-    "id": "history-channel-television-canada",
-    "name": "History Channel Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.history.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/history-channel-television-canada.md"
-  },
-  {
     "id": "homestay",
     "name": "Homestay.com",
     "description": "Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area, image and social-profile leads tying a person to a home.",
@@ -29360,42 +29284,6 @@
     "_file": "library/tools/communities-forums/lavalife.md"
   },
   {
-    "id": "lesma-eu",
-    "name": "lesma.eu",
-    "description": "OSINT tool: lesma.eu.",
-    "url": "https://lesma.eu/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/lesma-eu.md"
-  },
-  {
     "id": "linkedin-groups",
     "name": "LinkedIn Groups",
     "description": "Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to and fellow members (`associate`).",
@@ -30098,46 +29986,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/metv-united-states.md"
-  },
-  {
-    "id": "mghurston-list-of-fake-news-satire-and-hoax-websites",
-    "name": "MGHurston List of Fake News, Satire, and Hoax Websites",
-    "description": "Listing that identifies the current leading online fake or hoax websites",
-    "url": "http://michaelghurston.com/2014/10/list-of-fake-news-sites-satire-and-hoaxes",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/mghurston-list-of-fake-news-satire-and-hoax-websites.md"
   },
   {
     "id": "militaryforums-co-uk",
@@ -36041,46 +35889,6 @@
     "_file": "library/tools/communities-forums/theaustralian-national-news.md"
   },
   {
-    "id": "thebigproject",
-    "name": "TheBigProject",
-    "description": "Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)",
-    "url": "http://www.thebigproject.co.uk/news",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/thebigproject.md"
-  },
-  {
     "id": "thepaperboy",
     "name": "ThePaperboy",
     "description": "Use when you have a `geolocation` (country/region) and want the local/national newspapers covering it — returns newspaper `domain`s to search for coverage of a person or event.",
@@ -40466,46 +40274,6 @@
     "_file": "library/tools/dark-web/newsworld-usa.md"
   },
   {
-    "id": "north-american-industry-classification-system-naics-canada",
-    "name": "North American Industry Classification System (NAICS) Canada",
-    "description": "Website that identifies the industrial sector classification across the country at the national level",
-    "url": "http://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVDPage1&db=imdb&dis=2&adm=8&TVD=118464",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/north-american-industry-classification-system-naics-canada.md"
-  },
-  {
     "id": "north-american-sic-structure-united-states",
     "name": "North American SIC Structure (United States)",
     "description": "Use when you have a SIC `document-id` code (or an industry name) and want to decode the industrial sector — returns the classified industry/employer-org context.",
@@ -43863,46 +43631,6 @@
     "_file": "library/tools/dating-classifieds/eroticbeauties-net.md"
   },
   {
-    "id": "fairfax-advertisers-classified-ads-australia",
-    "name": "Fairfax Advertisers Classified Ads (Australia)",
-    "description": "Classified advertisements-related website that provides regional services",
-    "url": "https://advertisers.com.au",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/fairfax-advertisers-classified-ads-australia.md"
-  },
-  {
     "id": "fansearch",
     "name": "Fansearch",
     "description": "Use when you have a `username`, `name`, or `geolocation` and want to find a subject's OnlyFans creator profile — returns a `social-profile` link plus display name and location.",
@@ -44282,49 +44010,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/francais-a-londres-org-french-classifieds.md"
-  },
-  {
-    "id": "free-classified-website-listing",
-    "name": "Free Classified Website Listing",
-    "description": "Classified advertisements-related website that lists at least 1000 websites worldwide",
-    "url": "http://free-classifieds-website-list.blogspot.ca/p/blog-page_7.html",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rootdig"
-    ],
-    "_file": "library/tools/dating-classifieds/free-classified-website-listing.md"
   },
   {
     "id": "freeads-classified-ads-united-kingdom",
@@ -45266,47 +44951,6 @@
     "_file": "library/tools/dating-classifieds/loot-com-classified-ads-united-kingdom.md"
   },
   {
-    "id": "lovingcreators-com",
-    "name": "lovingcreators.com",
-    "description": "OSINT tool: lovingcreators.com.",
-    "url": "http://lovingcreators.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/lovingcreators-com.md"
-  },
-  {
     "id": "match-com",
     "name": "Match.com",
     "description": "Use when you have a `username`, photo or profile detail and want to confirm a subject's dating presence — returns dating profile, photos and self-reported details.",
@@ -45476,47 +45120,6 @@
     "_file": "library/tools/dating-classifieds/merchant-circle-classified-ads-united-states.md"
   },
   {
-    "id": "modelsearcher-com",
-    "name": "modelsearcher.com",
-    "description": "OSINT tool: modelsearcher.com.",
-    "url": "https://modelsearcher.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/modelsearcher-com.md"
-  },
-  {
     "id": "nzdoctor-free-classified-ads-new-zealand",
     "name": "NZ Doctor Classifieds (New Zealand)",
     "description": "Use when you have a `name` or clinic in the NZ health sector and want employment/recruitment ads — returns employer-org, contact names, and location.",
@@ -45628,49 +45231,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/offerup.md"
-  },
-  {
-    "id": "ohio-department-of-transportation",
-    "name": "Ohio Department of Transportation",
-    "description": "Ohio Department of Transportations website providing information about construction projects and maps dating back to 1912",
-    "url": "http://www.dot.state.oh.us/pages/home.aspx",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "lucas-county-ohio-areis-online"
-    ],
-    "_file": "library/tools/dating-classifieds/ohio-department-of-transportation.md"
   },
   {
     "id": "okcupid",
@@ -85446,52 +85006,6 @@
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/terrorist-financing/terrorist-finance-tracking-program.md"
   },
   {
-    "id": "test-net-network-tools",
-    "name": "Test-Net Network Tools",
-    "description": "Tools including whois lookup, reverse lookup, traceroute, ping test, proxy checker, and more",
-    "url": "http://www.test-net.org",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/test-net-network-tools.md"
-  },
-  {
     "id": "testmy-net-internet-speed-test",
     "name": "TestMy.Net Internet Speed Test",
     "description": "Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-lookup value.",
@@ -85718,31 +85232,31 @@
   },
   {
     "id": "thehot",
-    "name": "TheHot",
-    "description": "Free online backlink checker tool",
+    "name": "TheHOTH Backlink Checker",
+    "description": "Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `ip-address`.",
     "url": "https://www.thehoth.com/backlinks-checker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping which sites link to a target domain, and the referring domains/IPs behind those links.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free checker returns a capped backlink report; a fuller report/export may prompt for an email, and the vendor upsells paid SEO services. Underlying data is SEMrush-powered.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query TheHOTH about a domain, not the domain's owner — the target site is not touched and gets no alert. TheHOTH (and SEMrush) log the lookup; use a sock-puppet email if you unlock the extended report.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "TheHOTH is an established SEO vendor and the data is sourced from SEMrush's crawl; results are a marketing-grade sample of backlinks, not an exhaustive authoritative index.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -85751,15 +85265,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TheHoth backlinks checker",
+      "HOTH backlink checker"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/thehot.md"
   },
   {
@@ -107783,44 +107300,51 @@
   },
   {
     "id": "economy-ni-gov-uk",
-    "name": "economy-ni.gov.uk",
-    "description": "OSINT tool: economy-ni.gov.uk.",
+    "name": "NI Insolvency DRO/BRO Register Search",
+    "description": "Use when you have a `name` and want to check Northern Ireland's official register of Debt Relief Orders and Bankruptcy Restrictions Orders — returns `address`, order type and case reference (`document-id`).",
     "url": "https://www.economy-ni.gov.uk/services/dro-bro-and-iva-register-search",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person in Northern Ireland has an active Debt Relief Order or Bankruptcy Restrictions Order and reading the recorded address.",
     "selectorsIn": [
-      "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government register; no account or payment required to search.",
+    "opsec": "passive",
+    "opsecNote": "A public statutory register search — you query a government index, not the subject. The department may log queries, but nothing notifies the person named. Use a sock-puppet browser if you want to conceal the search origin.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the NI Department for the Economy Insolvency Service — the authoritative first-party register, so a hit is a reliable record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "economy-ni.gov.uk insolvency register",
+      "Northern Ireland DRO BRO register"
+    ],
     "tags": [
       "creditdebt",
-      "Credit & Debtor Information"
+      "Credit & Debtor Information",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/economy-ni-gov-uk.md"
   },
   {
@@ -108418,48 +107942,6 @@
       "vat-number-validation"
     ],
     "_file": "library/tools/financial-crypto/europa-eu.md"
-  },
-  {
-    "id": "experian-co-uk",
-    "name": "experian.co.uk",
-    "description": "OSINT tool: experian.co.uk.",
-    "url": "https://www.experian.co.uk/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/experian-co-uk.md"
   },
   {
     "id": "fdic-search",
@@ -154981,35 +154463,49 @@
   {
     "id": "power-plants-in-the-united-states",
     "name": "Power Plants in the United States",
-    "description": "OSINT tool: Power Plants in the United States.",
+    "description": "Use when you have a US `geolocation`/`address` and want to identify nearby electricity-generating facilities, their fuel type and operator — returns `geolocation`, `employer-org`.",
     "url": "https://www.arcgis.com/apps/dashboards/201fc98c0d74482d8b3acb0c4cc47f16",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Locating and identifying power-generation plants near a US point of interest and reading their operator/fuel type.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public ArcGIS dashboard; no account needed to pan, zoom or click plant markers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only Esri/ArcGIS map layer — no query touches any person. Only your connection to arcgis.com is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-published ArcGIS dashboard built on public EIA/federal generation datasets; provenance of the specific layer is not first-party, so treat plant attributes as reference not gospel.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "US Power Plants dashboard"
+    ],
+    "tags": [
+      "infrastructure",
+      "geospatial"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/power-plants-in-the-united-states.md"
   },
   {
@@ -193853,37 +193349,48 @@
   {
     "id": "globalexperts",
     "name": "GlobalExperts",
-    "description": "OSINT tool: GlobalExperts.",
+    "description": "Use when you have a `name` of an academic, analyst or commentator and want to confirm they are a listed subject-matter expert and read their affiliation and public contact — returns `employer-org`, `social-profile`.",
     "url": "http://www.theglobalexperts.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a named academic/analyst is a vetted public commentator and reading their institutional affiliation.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory run by the UN Alliance of Civilizations; no account or payment to browse expert profiles.",
+    "opsec": "passive",
+    "opsecNote": "You read a public directory of opinion-leaders — no query reaches the subject. Only your own connection to the UNAOC site is exposed; use a sock-puppet browser if you want to hide research interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Directory developed by the UN Alliance of Civilizations for journalists; profiles are self/partner-submitted, so affiliations are strong leads to cross-check, not authoritative identity proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Global Experts",
+      "UNAOC Global Experts"
+    ],
     "tags": [
       "expert-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/people-search/globalexperts.md"
   },
   {
@@ -230691,52 +230198,6 @@
     "_file": "library/tools/public-records/govsalaries.md"
   },
   {
-    "id": "grammar-check",
-    "name": "Grammar Check",
-    "description": "Online grammar, spelling, and punctuation editor",
-    "url": "https://www.grammarcheck.net/editor/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/grammar-check.md"
-  },
-  {
     "id": "grave-info-us",
     "name": "GraveInfo.com (Snake Hill / Potter's Field burials)",
     "description": "Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index returning burial listing and approximate date.",
@@ -237489,30 +236950,30 @@
   {
     "id": "libguides-community-search",
     "name": "LibGuides Community Search",
-    "description": "Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide",
+    "description": "Use when you have a topic, a librarian `name`, or an institution (`employer-org`) and want curated academic research guides — returns the guide's author and hosting library (`employer-org`).",
     "url": "https://community.libguides.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding curated subject research guides across thousands of libraries, and confirming a librarian's host institution.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public search across Springshare's LibGuides community; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a public directory of library guides — no query reaches any subject. Only your connection to Springshare is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Springshare-hosted index of guides authored by named librarians at real institutions; the guide content itself is authoritative curation, though it is a discovery aid, not a records database.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -237521,18 +236982,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "grey-literature-list-of-gateways"
+    ],
+    "aliases": [
+      "LibGuides community",
+      "Springshare LibGuides search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "grey-literature-list-of-gateways"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/libguides-community-search.md"
   },
   {
@@ -240017,40 +239481,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/public-records/montana-registered-voter-verification.md"
-  },
-  {
-    "id": "montreal-council-of-social-agencies-database",
-    "name": "Montreal Council of Social Agencies Database",
-    "description": "OSINT tool: Montreal Council of Social Agencies Database.",
-    "url": "http://www.archives.mcgill.ca/resources/db/mcsasearch.htm",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/montreal-council-of-social-agencies-database.md"
   },
   {
     "id": "most-wanted",
@@ -245208,40 +244638,6 @@
     "_file": "library/tools/public-records/onlinesearch-mns-mu.md"
   },
   {
-    "id": "onondaga-county-home-sales",
-    "name": "Onondaga County Home Sales",
-    "description": "OSINT tool: Onondaga County Home Sales.",
-    "url": "https://b2.caspio.com/dp.asp?AppKey=18321000d7j6h9j6c1i4e8f0i5a9",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/onondaga-county-home-sales.md"
-  },
-  {
     "id": "ontario-genealogy-and-history-database-index",
     "name": "Ontario Genealogy & History Database Index",
     "description": "Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death records.",
@@ -249353,48 +248749,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/public-records/public-library-of-science-search.md"
-  },
-  {
-    "id": "public-records",
-    "name": "Public Records?",
-    "description": "Unclear - requires VP clarification",
-    "url": "https://www.brbpublications.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "Unclear - requires VP clarification",
-    "input": "Unknown",
-    "output": "Unknown",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "FLAG: Ambiguous tool name; VP guidance needed",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "brb-public-records",
-      "state-appellate-and-supreme-courts"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/public-records.md"
   },
   {
     "id": "public-records-directory",
@@ -255135,40 +254489,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/sra-org-uk.md"
-  },
-  {
-    "id": "st-louis-county-salaries-fiscal-2020",
-    "name": "St. Louis County salaries fiscal 2020",
-    "description": "OSINT tool: St. Louis County salaries fiscal 2020.",
-    "url": "https://c0bkr141.caspio.com/dp/936b1000d0c132c8cbbb4f0c8c1f",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/st-louis-county-salaries-fiscal-2020.md"
   },
   {
     "id": "startup-tracker",
@@ -260980,35 +260300,48 @@
   {
     "id": "whaleslide",
     "name": "WhaleSlide",
-    "description": "OSINT tool: WhaleSlide.",
+    "description": "Use when you want to run web searches on a `name`/`username` without being tracked — a privacy-preserving general search engine that returns web results (`social-profile`).",
     "url": "https://whaleslide.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running low-footprint web queries on a subject through a no-tracking, ad-free search engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, ad-free search engine funded by affiliate/charity donations; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The selling point is OpSec — WhaleSlide states it does not store per-visit data or sell it to advertisers, which reduces the trail your searches leave versus mainstream engines. Still route through a sock-puppet/VPN if the query itself is sensitive; you are trusting their no-log claim.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "British privacy-focused search engine; independent of Google, but its no-log/privacy claims are self-asserted and not independently audited here.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhaleSlide search"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/whaleslide.md"
   },
   {
@@ -264108,40 +263441,6 @@
     "_file": "library/tools/search-engines/news-search/allyoucanread-com.md"
   },
   {
-    "id": "amazon-cloud-search-engine",
-    "name": "Amazon Cloud Search Engine",
-    "description": "OSINT tool: Amazon Cloud Search Engine.",
-    "url": "https://cse.google.com/cse?cx=005797772976587943970:g-6ohngosio#gsc.tab=0",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/amazon-cloud-search-engine.md"
-  },
-  {
     "id": "american-society-of-civil-engineers",
     "name": "American Society of Civil Engineers",
     "description": "OSINT tool: American Society of Civil Engineers.",
@@ -264766,46 +264065,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/argumentsearch-com.md"
-  },
-  {
-    "id": "aristotele-search-engine-italy",
-    "name": "Aristotele Search Engine (Italy)",
-    "description": "Italy based surface web search engine covering regional results",
-    "url": "https://www.aristotele.net/altri-motori-di-ricerca/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/aristotele-search-engine-italy.md"
   },
   {
     "id": "arkansas-medical-license-search",
@@ -265840,46 +265099,6 @@
       "bielefeld-academic-search-engine"
     ],
     "_file": "library/tools/search-engines/base.md"
-  },
-  {
-    "id": "base-de-datos-spanish-language",
-    "name": "Base De Datos (Spanish language)",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
-    "url": "http://www.basededatos.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/base-de-datos-spanish-language.md"
   },
   {
     "id": "bbc-news",
@@ -271798,46 +271017,6 @@
     "_file": "library/tools/search-engines/eniro-sweden.md"
   },
   {
-    "id": "entireweb-text-based-search-engine",
-    "name": "Entireweb Text-based Search Engine",
-    "description": "Surface web search engine covering worldwide results",
-    "url": "http://www.entireweb.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/entireweb-text-based-search-engine.md"
-  },
-  {
     "id": "etools",
     "name": "Etools",
     "description": "OSINT tool: Etools.",
@@ -273187,46 +272366,6 @@
     "_file": "library/tools/search-engines/find-who-events.md"
   },
   {
-    "id": "findhow",
-    "name": "FindHow",
-    "description": "The how-to directory",
-    "url": "http://www.findhow.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/findhow.md"
-  },
-  {
     "id": "findlaw",
     "name": "FindLaw",
     "description": "Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`, and `phone`.",
@@ -273756,46 +272895,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/ftp-search/ftp-google-dork.md"
-  },
-  {
-    "id": "full-text-reports",
-    "name": "Full Text Reports",
-    "description": "Selection of hand picked academic, corporate, government and research reports",
-    "url": "http://fulltextreports.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/full-text-reports.md"
   },
   {
     "id": "fullhunt",
@@ -276678,40 +275777,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/goosh-org.md"
-  },
-  {
-    "id": "gopit-search-engine-home",
-    "name": "GoPit Search Engine - Home",
-    "description": "OSINT tool: GoPit Search Engine - Home.",
-    "url": "https://www.gopit.com/socialsearch/index.php?type=Social",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/gopit-search-engine-home.md"
   },
   {
     "id": "government-attic",
@@ -283730,46 +282795,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/new-zealand-law-society.md"
-  },
-  {
-    "id": "news-and-moods-search-australia",
-    "name": "News & Moods Search (Australia)",
-    "description": "Search engine that provides keyword stats and trends along with results",
-    "url": "https://www.newsandmoods.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/news-and-moods-search-australia.md"
   },
   {
     "id": "news-explorer-bluemix",
@@ -291836,40 +290861,6 @@
     "_file": "library/tools/search-engines/seosly-com-2.md"
   },
   {
-    "id": "seqe-search-engines-query-engine",
-    "name": "SEQE - Search Engines Query Engine",
-    "description": "OSINT tool: SEQE - Search Engines Query Engine.",
-    "url": "https://seqe.me/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/seqe-search-engines-query-engine.md"
-  },
-  {
     "id": "seznam-cz",
     "name": "seznam.cz",
     "description": "Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, and Czech-language page leads.",
@@ -292734,46 +291725,6 @@
     "_file": "library/tools/search-engines/sogou-china.md"
   },
   {
-    "id": "somalia-conflict",
-    "name": "Somalia Conflict",
-    "description": "List of individuals reported missing in connection with the conflict in Somalia",
-    "url": "http://familylinks.icrc.org/somalia/en/Pages/Home.aspx",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/somalia-conflict.md"
-  },
-  {
     "id": "sonicrun",
     "name": "SonicRun",
     "description": "Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream engines may bury or omit.",
@@ -293430,46 +292381,6 @@
     "_file": "library/tools/search-engines/general-search/stract.md"
   },
   {
-    "id": "suchmaschinen-datenbank",
-    "name": "Suchmaschinen Datenbank",
-    "description": "German meta search engine",
-    "url": "http://www.suchmaschinen-datenbank.de",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/suchmaschinen-datenbank.md"
-  },
-  {
     "id": "summit-county-fiscal-office",
     "name": "Summit County Fiscal Office",
     "description": "Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`, and assessment details.",
@@ -293645,46 +292556,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/superuser.md"
-  },
-  {
-    "id": "surf-canyon-ebay-search",
-    "name": "Surf Canyon eBay Search",
-    "description": "eBay search engine",
-    "url": "http://www.surfcanyon.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/surf-canyon-ebay-search.md"
   },
   {
     "id": "surfnetkids",
@@ -296215,46 +295086,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/virgilio-search-portal-italy.md"
-  },
-  {
-    "id": "visto-search-engine-greece",
-    "name": "Visto Search Engine (Greece)",
-    "description": "Greek web search engine covering regional results",
-    "url": "http://www.visto.gr",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/visto-search-engine-greece.md"
   },
   {
     "id": "vulnerability-and-exploit-database",
@@ -299513,40 +298344,6 @@
     "_file": "library/tools/search-engines/yaraif.md"
   },
   {
-    "id": "yassen-com",
-    "name": "Yassen.com",
-    "description": "OSINT tool: Yassen.com.",
-    "url": "http://yassen.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/yassen-com.md"
-  },
-  {
     "id": "yeggi",
     "name": "Yeggi",
     "description": "3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.",
@@ -301022,38 +299819,48 @@
   {
     "id": "auto-scroll-search",
     "name": "Auto Scroll Search",
-    "description": "automatically scrolls the page down (and loads the ribbon) until the specified keyword appears on it.",
+    "description": "Use when you need to find a `name`/`username`/keyword buried deep in an infinite-scroll feed (X, Facebook, Instagram, YouTube) — auto-scrolls and jumps to matches, surfacing the `social-profile`/post.",
     "url": "https://chrome.google.com/webstore/detail/auto-scroll-search/ieceeinfkigfaeoomfimmecebngempef/related",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "In-page find (Ctrl-F) that keeps auto-loading an infinite feed until your term appears.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension (beta); no account or payment. Developer declares no data collection.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely client-side in your browser against whatever page you are already viewing — it sends nothing to the target. If you point it at a logged-in feed, you are acting as your own logged-in account, so use a sock-puppet account for any account-gated feed; the extension itself adds no extra exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small independent extension (~10k users, 4.6★) by developer Glen Chiacchieri; declares no data collection, but it is unaudited third-party browser code — install in a research profile.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Auto Scroll Search Chrome extension"
+    ],
     "tags": [
       "Social Media",
       "Universal"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/auto-scroll-search.md"
   },
   {
