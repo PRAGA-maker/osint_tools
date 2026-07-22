@@ -3682,40 +3682,45 @@
   {
     "id": "deepseek",
     "name": "DeepSeek",
-    "description": "Document summarization, OSINT data analysis, translation, and pattern identification in collected data",
+    "description": "Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI-generated analysis, summaries and translations.",
     "url": "https://www.deepseek.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Document summarization, OSINT data analysis, translation, and pattern identification in collected data",
-    "input": "Text prompts, documents, queries",
-    "output": "AI-generated analysis, summaries, translations, and responses",
+    "bestFor": "Summarising long documents, translating, and surfacing patterns/entities across collected investigation notes.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web/app chat; a separate paid API platform for developers.",
     "opsec": "active",
-    "opsecNote": "Data is processed by servers operated by a Chinese company; do not submit classified, sensitive, or personally identifiable investigation data.",
+    "opsecNote": "Text you submit is processed on servers operated by a China-based company and may be retained/used for training. Do NOT paste classified, sensitive, or personally identifiable investigation data, victim details, or anything you can't disclose to a third party. Use only on non-sensitive, already-public material or synthetic examples.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Capable general LLM, but like any model it hallucinates — treat every factual claim, citation or \"identification\" it produces as unverified until independently checked.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DeepSeek Chat"
+    ],
+    "tags": [
+      "ai",
+      "llm",
+      "analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/deepseek.md"
   },
   {
@@ -33817,46 +33822,6 @@
     "_file": "library/tools/communities-forums/safenote.md"
   },
   {
-    "id": "sagadating-co-uk",
-    "name": "Sagadating.co.uk",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://www.sagadating.co.uk/s",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/sagadating-co-uk.md"
-  },
-  {
     "id": "sansar",
     "name": "Sansar",
     "description": "Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent.",
@@ -34796,37 +34761,49 @@
   {
     "id": "stackexchange",
     "name": "StackExchange",
-    "description": "OSINT tool: StackExchange.",
+    "description": "Use when you have a `username` or `name` and want to find the person's Q&A activity across the Stack Exchange network — returns a linked `social-profile` with bio, location and cross-linked accounts.",
     "url": "http://stackexchange.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pivoting a developer/tech-savvy subject's username into a rich profile (bio, location, linked GitHub/Twitter) via their Q&A history.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search all Stack Exchange sites; no account needed to read.",
+    "opsec": "passive",
+    "opsecNote": "Reading public profiles and posts leaves no trace to the subject. Avoid logging in with an attributable account if you want to stay anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party Stack Exchange network; profile data is user-supplied, so treat self-declared name/location/employer as leads.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Stack Exchange",
+      "Stack Overflow network"
+    ],
     "tags": [
       "q-a-sites"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/stackexchange.md"
   },
   {
@@ -40128,48 +40105,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/money-center.md"
-  },
-  {
-    "id": "mullvad-vpn",
-    "name": "Mullvad VPN",
-    "description": "OSINT tool: Mullvad VPN.",
-    "url": "http://o54hon2e2vj6c7m3aqqu6uyece65by3vgoxxhlqlsvkmacw6a7m7kiad.onion/en",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/mullvad-vpn.md"
   },
   {
     "id": "naval-open-source-intelligence",
@@ -59972,40 +59907,6 @@
     "_file": "library/tools/documents-metadata/warble-alerts.md"
   },
   {
-    "id": "webfinery-source-code-search",
-    "name": "Webfinery \\| Source Code Search",
-    "description": "OSINT tool: Webfinery \\| Source Code Search.",
-    "url": "https://webfinery.com/search",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/webfinery-source-code-search.md"
-  },
-  {
     "id": "webpreserver",
     "name": "WebPreserver",
     "description": "A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their computers or servers",
@@ -62259,48 +62160,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/advisories/australian-cyber-security-centre.md"
-  },
-  {
-    "id": "autoexif",
-    "name": "AutoExif",
-    "description": "A simple script to read and delete metadata from images and ACVH videos.",
-    "url": "https://github.com/SirCryptic/autoexif",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "image"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website's files metadata analyze and files downloads"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/autoexif.md"
   },
   {
     "id": "awesome-tech-stack",
@@ -79358,41 +79217,53 @@
   {
     "id": "peeringdb",
     "name": "PeeringDB",
-    "description": "Internet peering and AS relationship mapping",
+    "description": "Use when you have an ASN, network/org name or `ip-address` and want the operator behind it — org, facilities, IX presence and NOC contacts — returns `employer-org`, `ip-address` ranges and facility `address`.",
     "url": "https://www.peeringdb.com/advanced_search",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "bgp"
     ],
-    "bestFor": "Internet peering and AS relationship mapping",
-    "input": "ASN, organization, or IX",
-    "output": "Peering relationships, exchange points, contacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mapping the organisation, physical facilities and peering contacts behind an autonomous system or network.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "ip-address",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public registry; a free account unlocks a few extra filter fields and contact visibility.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of public peering data.",
+    "opsecNote": "Reads a public infrastructure registry — no contact with the target network. Only your connection to PeeringDB is exposed; a login is attributable, so use a research account if you want extra fields anonymously.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Community-maintained, industry-standard peering registry (since 2004); entries are self-published by network operators, so treat operator-supplied detail as authoritative-but-self-declared.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PeeringDB"
+    ],
+    "tags": [
+      "bgp",
+      "asn",
+      "network-infrastructure"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bgp/peeringdb.md"
   },
   {
@@ -84306,48 +84177,54 @@
   {
     "id": "striker",
     "name": "Striker",
-    "description": "Quick and simple tool for gathering information about domain (http headers, technologies, vulnerabilities etc).",
+    "description": "Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — returns discovered `domain`s and findings.",
     "url": "https://github.com/s0md3v/Striker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot recon sweep of a domain (attack surface, subdomains, tech, misconfigurations) from the command line.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python); no account. Striker 2.0 is explicitly a prototype, not production-ready.",
+    "opsec": "active",
+    "opsecNote": "Striker actively probes the target — subdomain enumeration, port scan of the top 1000 TCP ports, header/sensitive-file requests. All of this is logged by the target and any IDS. Only run against infrastructure you're authorised to test, and always via an anonymising exit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by s0md3v; leverages retire.js/Wappalyzer/sqlmap, but the current 2.0 line is a stated prototype, so expect rough edges.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "orbit",
       "photon",
       "zen",
       "zen-github-com"
     ],
+    "aliases": [
+      "Striker recon"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Domain/IP investigation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/striker.md"
   },
   {
@@ -86152,42 +86029,49 @@
   {
     "id": "unshorten-it",
     "name": "Unshorten.it",
-    "description": "OSINT tool: Unshorten.it.",
+    "description": "Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `domain` plus a preview and safety rating.",
     "url": "https://unshorten.it/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Revealing where a bit.ly/t.co/short link actually goes without clicking it yourself.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for interactive single-URL expansion; bulk/API access is paid.",
+    "opsec": "passive",
+    "opsecNote": "Unshorten.it fetches the link on its own servers, so the destination sees Unshorten.it's IP, not yours — this is the safe way to resolve a hostile/tracking short link. The destination is not directly touched by you, but assume the shortener's operator can see that the link was resolved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running third-party unshortener; the destination and safety rating are reliable indicators but not a guarantee the target is safe.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "unshorten.it",
+      "URL expander"
+    ],
     "tags": [
       "Domain/IP/Links",
       "URL unshorteners"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/unshorten-it.md"
   },
   {
@@ -88890,41 +88774,50 @@
   {
     "id": "whatweb",
     "name": "WhatWeb",
-    "description": "CLI-based web technology fingerprinting",
+    "description": "Use when you have a `domain`/URL and want to fingerprint its stack (CMS, server, JS libraries, versions) and surface disclosed emails — returns detected technologies and `email` addresses.",
     "url": "https://github.com/urbanadventurer/WhatWeb",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "CLI-based web technology fingerprinting",
-    "input": "Domain or URL",
-    "output": "Detected technologies, headers, and fingerprint matches",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Identifying what a website is built on (CMS, framework, server, analytics IDs) and pulling emails/versions from a single scan.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Ruby); install locally, no account.",
     "opsec": "active",
-    "opsecNote": "Directly scans target endpoints and can be noisy depending on scan options.",
+    "opsecNote": "WhatWeb connects directly to the target's web server; at higher aggression levels (-a 3/4) it makes extra requests that appear in the target's logs. Use aggression 1 (passive/stealthy) and route through a VPN/sock-puppet exit when you don't want to be attributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Widely-used open-source project (urbanadventurer, 6.7k+ stars, actively released); results are as reliable as its 1,800+ plugins, occasionally false-positive on versions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "whatweb"
+    ],
+    "tags": [
+      "web-fingerprinting",
+      "recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/whatweb.md"
   },
   {
@@ -103815,35 +103708,49 @@
   {
     "id": "export-comments",
     "name": "Export Comments",
-    "description": "OSINT tool: Export Comments.",
+    "description": "Use when you have a public post/video URL and want every comment with handles and timestamps as a spreadsheet — returns commenter `username`s and comment text for network and evidence analysis.",
     "url": "https://exportcomments.com/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting all comments (and commenter handles) from a social post/video into Excel/CSV/JSON.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier exports a capped number of comments per post with no account/credit card; larger exports and scheduling require a paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It reads publicly visible comments via the post URL — no interaction with the target or commenters. You are handing the post URL to a third-party service, so avoid using it on access-restricted content you shouldn't redistribute.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial comment-export service; data is a direct pull of public comments, but completeness depends on the platform's API/limits at export time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "ExportComments"
+    ],
+    "tags": [
+      "social-media",
+      "comments",
+      "evidence"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/export-comments.md"
   },
   {
@@ -104135,13 +104042,13 @@
   {
     "id": "gowitness",
     "name": "gowitness",
-    "description": "Go web screenshot utility using Chrome Headless for bulk page capture.",
+    "description": "Use when you have a list of `domain`s/`ip-address`es and want to bulk-screenshot their web interfaces for visual triage and evidence — returns `image` captures plus page `metadata-exif` (headers, tech).",
     "url": "https://github.com/sensepost/gowitness",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "Bulk screenshotting lists of URLs/hosts to visually triage and preserve evidence",
+    "bestFor": "Bulk-screenshotting lists of URLs/hosts to visually triage and preserve a subject's web presence as evidence.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -104150,15 +104057,16 @@
       "image",
       "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Go); runs locally with headless Chrome, no account.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "gowitness loads each target in headless Chrome, so it makes real HTTP requests the target can log. Screenshotting a large list is noisy; throttle, and route through a VPN/proxy when capturing a subject's own sites.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "SensePost (Orange Cyberdefense) project, 4.3k+ stars.",
+    "trustNote": "SensePost (Orange Cyberdefense) project, actively released (v3.x, 4k+ stars).",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -104167,7 +104075,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "frack"
+    ],
+    "aliases": [
+      "gowitness"
+    ],
     "tags": [
       "screenshot",
       "recon",
@@ -104175,11 +104089,8 @@
       "headless-chrome"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "frack"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/gowitness.md"
   },
   {
@@ -166330,45 +166241,6 @@
     "_file": "library/tools/opsec-investigator-tooling/adobe-photoshop-mix-app-mobile-android.md"
   },
   {
-    "id": "ai-face-maker",
-    "name": "AI Face maker",
-    "description": "Just draw a person face (note that there is a separate tool for each part of the face) and the neural network will generate a realistic photo based on it.",
-    "url": "https://massless.io/tool/face-maker-ai/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face",
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/ai-face-maker.md"
-  },
-  {
     "id": "ai-video-generator",
     "name": "AI video generator",
     "description": "Type the text (video script). Choose a character and script template. Click the \"Submit a video\" button. Enter your registration data and wait for the letter with the result",
@@ -175919,46 +175791,6 @@
     "_file": "library/tools/opsec-investigator-tooling/kasm.md"
   },
   {
-    "id": "kaspersky-internet-security",
-    "name": "Kaspersky Internet Security",
-    "description": "Malware and virus detection and elimination programs available for Mac and PC",
-    "url": "https://www.kaspersky.ca",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/kaspersky-internet-security.md"
-  },
-  {
     "id": "kaspersky-tdsskiller-anti-rootkit-tool",
     "name": "Kaspersky TDSSKiller Anti-Rootkit Tool",
     "description": "Specialized anti-rootkit tool for advanced PC users",
@@ -177624,24 +177456,31 @@
   {
     "id": "mit-pgp-public-key-server",
     "name": "MIT PGP Public Key Server",
-    "description": "Website from MIT that offers a search for PGP Public Key Servers",
+    "description": "Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and the owner's stated `name`.",
     "url": "http://pgp.mit.edu",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a target uses PGP and harvesting the names/emails/key dates bound to their public key.",
+    "selectorsIn": [
+      "email",
+      "name"
+    ],
+    "selectorsOut": [
+      "email",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public keyserver run by MIT; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching for a key is a passive lookup — the key owner is not notified. Do NOT upload or certify anything; only search/extract. The keyserver operator sees your query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing MIT-operated keyserver; keys and their user IDs are self-published by owners, so a UID proves someone published that name/email, not that it's genuine.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -177650,20 +177489,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "mit-pgp-key-server"
+    ],
+    "aliases": [
+      "pgp.mit.edu",
+      "MIT keyserver"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mit-pgp-key-server",
-      "places2",
-      "tweetmap"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/mit-pgp-public-key-server.md"
   },
   {
@@ -179217,46 +179058,6 @@
     "_file": "library/tools/opsec-investigator-tooling/privacy-clean-up/panopticlick.md"
   },
   {
-    "id": "paper-creativity-app-mobile-ios",
-    "name": "Paper Creativity App (Mobile – iOS)",
-    "description": "App for mobile devices for creating and sharing ideas, notes, diagrams and drawings",
-    "url": "https://itunes.apple.com/ca/app/paper-notes-photo-annotation/id506003812?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/paper-creativity-app-mobile-ios.md"
-  },
-  {
     "id": "parrot-security",
     "name": "Parrot Security",
     "description": "OSINT tool: Parrot Security.",
@@ -179935,42 +179736,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/postmates-delivery-app-mobile-ios.md"
-  },
-  {
-    "id": "pramp",
-    "name": "Pramp",
-    "description": "The service allows you to take five free (!) online #coding and #productmanagement interview training sessions with peers",
-    "url": "https://www.pramp.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pramp.md"
   },
   {
     "id": "premium-proxy-service",
@@ -185584,41 +185349,53 @@
   {
     "id": "unpaywall",
     "name": "Unpaywall",
-    "description": "Firefox add-on by Impactstory Team that looks for open-access legal articles",
+    "description": "Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read affiliations and coauthors — surfaces `employer-org` and `associate` links.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/unpaywall",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting the full text of a subject's paywalled research (via legal open-access copies) to mine affiliations and coauthors.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser extension and free API from the non-profit Our Research (formerly Impactstory); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Unpaywall queries its own open-access index by DOI as you browse — it does not contact the author. It sees the DOIs you look up; use a research browser profile if that browsing pattern is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Maintained by Our Research, a respected scholarly-infrastructure non-profit; it only links to legally-hosted open-access copies.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Unpaywall",
+      "oaDOI"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "academic"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/unpaywall.md"
   },
   {
@@ -341423,38 +341200,52 @@
   {
     "id": "deepl",
     "name": "DeepL",
-    "description": "High-quality machine translation.",
+    "description": "Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `name`s, places (`address`) and detail from foreign-language sources.",
     "url": "https://www.deepl.com/translator",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "High-accuracy translation of foreign-language profiles, documents and posts during investigation.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web translator (with per-request length limits) and free document translation quota; DeepL Pro removes limits and adds an API.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive with respect to the subject, but you are sending the text to DeepL's servers. On the free tier text may be processed/retained per their policy — do not paste sensitive, classified or PII-heavy investigation material; self-host or use an offline model for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Reputable commercial MT provider with strong quality; still machine translation, so nuance, names and idioms can be mistranslated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "deepl-translator"
     ],
+    "aliases": [
+      "DeepL Translator"
+    ],
+    "tags": [
+      "translation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/deepl.md"
   },
   {
@@ -343449,46 +343240,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/translation-language/plagiarsim-checker.md"
-  },
-  {
-    "id": "poetry-net",
-    "name": "Poetry.net",
-    "description": "Language-related search for famous poets, poems, and poetry",
-    "url": "http://www.poetry.net",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/poetry-net.md"
   },
   {
     "id": "promt-free-online-translator",
@@ -350394,41 +350145,49 @@
   {
     "id": "my-ship-tracking",
     "name": "My Ship Tracking",
-    "description": "OSINT tool: My Ship Tracking.",
+    "description": "Use when you have a vessel `name`, MMSI or IMO and want its live AIS position, track history and operator — returns `geolocation` and `employer-org`.",
     "url": "https://www.myshiptracking.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a named/ID'd vessel in real time via AIS and reading its recent track and operator.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free live map, vessel search and basic details; extended history, alerts and higher-resolution data sit behind paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "You query a public AIS aggregator, not the vessel — nothing is signalled to the ship or crew. Only your connection to MyShipTracking is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community/commercial AIS aggregator; positions come from terrestrial/satellite AIS receivers, so coverage gaps and spoofed/switched-off transponders are possible.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "MyShipTracking"
+    ],
     "tags": [
-      "maritime"
+      "maritime",
+      "ais"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/my-ship-tracking.md"
   },
   {

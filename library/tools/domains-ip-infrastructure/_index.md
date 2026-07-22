@@ -80,7 +80,6 @@ kind: group-index
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
-- **`autoexif`** (low) — A simple script to read and delete metadata from images and ACVH videos.
 - **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
 - **`azure-tenant-resolution-by-pingcastle`** (low) — OSINT tool: Azure Tenant Resolution by PingCastle.
 - **`bbot`** (low) — Recursive internet scanner that chains modules for subdomains, emails, and attack surface.
@@ -412,7 +411,7 @@ kind: group-index
 - **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — OSINT tool: Squatm3gator.
-- **`striker`** (low) — Quick and simple tool for gathering information about domain (http headers, technologies, vulnerabilities etc).
+- **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
 - **`subdomain-finder`** (low) — OSINT tool: Subdomain Finder.
 - **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
@@ -442,7 +441,7 @@ kind: group-index
 - **`udon`** (low) — #go tool to find assets/domains based by Google Analytics ID
 - **`umatrix`** (low) — Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, track
 - **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
-- **`unshorten-it`** (low) — OSINT tool: Unshorten.it.
+- **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom
 - **`unshorten-me`** (low) — OSINT tool: Unshorten.me.
 - **`urlhaus`** (low) — OSINT tool: URLhaus.
 - **`urlquery`** (low) — OSINT tool: urlQuery.

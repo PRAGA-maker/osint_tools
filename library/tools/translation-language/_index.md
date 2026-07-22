@@ -27,7 +27,7 @@ kind: group-index
 - **`cockney-rhyming-slang-converter`** (low) — Language-related tool for converting regular speech into Cockney ryhming slang (used in London)
 - **`collinsdictionary`** (low) — Tool for translating text and web content from one language to another
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
-- **`deepl`** (low) — High-quality machine translation.
+- **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
 - **`definitions-net`** (low) — Multilingual dictionary providing definitions from various reference resources
 - **`dictionary-com-translation`** (low) — OSINT tool: Dictionary.com: Translation.
 - **`dictionary-com`** (low) — Search for definitions, grammar, slang, acronyms, and more
@@ -72,7 +72,6 @@ kind: group-index
 - **`paulschou-binary-translator`** (low) — Tool used to encode and decode ASCII and ANSI text
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
 - **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement
-- **`poetry-net`** (low) — Language-related search for famous poets, poems, and poetry
 - **`promt-free-online-translator`** (low) — Tool for translating text and web content from one language to another
 - **`quotes-net`** (low) — Language-related search for famous quotes and popular sayings
 - **`reddit-r-translator`** (low) — OSINT tool: Reddit/r/translator.

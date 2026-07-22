@@ -26,7 +26,6 @@ kind: group-index
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
-- **`ai-face-maker`** (low) — Just draw a person face (note that there is a separate tool for each part of the face) and the neural network will generate a realistic phot
 - **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
 - **`airbnb-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
@@ -248,7 +247,6 @@ kind: group-index
 - **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
 - **`kali-linux`** (low) — Offensive-security Linux distribution with many recon/OSINT tools preinstalled.
 - **`kasm`** (low) — OSINT tool: Kasm.
-- **`kaspersky-internet-security`** (low) — Malware and virus detection and elimination programs available for Mac and PC
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
@@ -291,7 +289,7 @@ kind: group-index
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
 - **`metacleaner-com`** (low) — OSINT tool: Metacleaner.com.
 - **`microsoft-safety-and-security-center`** (low) — Information about online privacy, security websites, and programs, provided by Microsoft
-- **`mit-pgp-public-key-server`** (low) — Website from MIT that offers a search for PGP Public Key Servers
+- **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mozilla-firefox`** (low) — Internet browser program
 - **`mullvad-browser`** (low) — OSINT tool: Mullvad Browser.
 - **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
@@ -327,7 +325,6 @@ kind: group-index
 - **`pandasecurity-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`pandora-radio-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
-- **`paper-creativity-app-mobile-ios`** (low) — App for mobile devices for creating and sharing ideas, notes, diagrams and drawings
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — OSINT tool: Parrot Security.
 - **`passhunt`** (low) — Command line tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 
@@ -344,7 +341,6 @@ kind: group-index
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
-- **`pramp`** (low) — The service allows you to take five free (!) online #coding and #productmanagement interview training sessions with peers
 - **`premium-proxy-service`** (low) — Proxy server and free proxy list
 - **`primeos`** (low) — OSINT tool: PrimeOS.
 - **`prism-break`** (low) — OSINT tool: PRISM Break.
@@ -481,7 +477,7 @@ kind: group-index
 - **`ucbrowser`** (low) — OSINT tool: UCBrowser.
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Anonymous browsing service provider
-- **`unpaywall`** (low) — Firefox add-on by Impactstory Team that looks for open-access legal articles
+- **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
 - **`update-scanner-add-on`** (low) — Firefox browser add-on for monitoring changes to a webpage without using RSS or Atom feeds
 - **`upload-disroot`** (low) — OSINT tool: Upload \| Disroot.
 - **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.

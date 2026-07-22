@@ -272,7 +272,6 @@ kind: group-index
 - **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`warble-alerts`** (low) — Website offering social media content monitoring and alert services; sends daily alerts via email
-- **`webfinery-source-code-search`** (low) — OSINT tool: Webfinery \| Source Code Search.
 - **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
 - **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
 - **`wheredoesthislinkgo-modified-url-expander`** (low) — Tool for expanding URL address hyperlinks that have been previously shortened

@@ -107,7 +107,7 @@ kind: group-index
 - **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
 - **`decopy-ai-image-detector`** (low) — Detecting AI-generated profile photos, fake news images, and synthetic media
 - **`deepai-ai-image-detector`** (low) — AI-generated image detection, media verification in OSINT investigations
-- **`deepseek`** (low) — Document summarization, OSINT data analysis, translation, and pattern identification in collected data
+- **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
 - **`dehashed-cli`** (low) — OSINT tool: Dehashed CLI.
 - **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity

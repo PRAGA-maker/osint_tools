@@ -213,7 +213,6 @@ kind: group-index
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
 - **`safenote`** (medium) — Use when you have found a `safenote.co` link in a subject's trail and want to read it — opens a one-time, self-destructing encrypted note (y
-- **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
 - **`sciencedaily-com`** (medium) — Use when you have a researcher `name` or `employer-org` and want their reported studies for background — returns science/health research new
 - **`scrt-link`** (low) — Use when you (the investigator) need to share a secret — a `password`, credential, or sensitive note — via an end-to-end-encrypted, one-time
@@ -233,7 +232,7 @@ kind: group-index
 - **`spacebin`** (medium) — Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expo
 - **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
-- **`stackexchange`** (low) — OSINT tool: StackExchange.
+- **`stackexchange`** (low) — Use when you have a `username` or `name` and want to find the person's Q&A activity across the Stack Exchange network — returns a linked `so
 - **`subreddits-org`** (low) — Directory of active subreddits.
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.

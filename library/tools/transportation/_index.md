@@ -121,7 +121,7 @@ kind: group-index
 - **`maritimeconnector`** (low) — OSINT tool: MaritimeConnector.
 - **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
-- **`my-ship-tracking`** (low) — OSINT tool: My Ship Tracking.
+- **`my-ship-tracking`** (low) — Use when you have a vessel `name`, MMSI or IMO and want its live AIS position, track history and operator — returns `geolocation` and `emplo
 - **`national-insurance-crime-bureau-vin-search`** (medium) — Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns
 - **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
 - **`noaa-fisheries-vessel-search`** (low) — Use when you have a US commercial fishing vessel name/permit and want its official record — returns permit holder, homeport and vessel detai
