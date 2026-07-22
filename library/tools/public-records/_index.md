@@ -273,7 +273,7 @@ kind: group-index
 - **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
 - **`europages-business-search-europe`** (medium) — Use when you have a company `name`/`employer-org` and want to find and locate it in Europe — returns matching business listings with `addres
-- **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.
+- **`european-union-open-data-portal`** (low) — Use when you need official EU datasets — sanctions lists, company/funding records, statistics, geospatial data — for a subject or entity — r
 - **`europeana`** (medium) — Use when you have a `name`, place, or `employer-org` and want historical photos, records, artworks or documents about them — returns digitiz
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
 - **`eurostat`** (low) — OSINT tool: Eurostat.

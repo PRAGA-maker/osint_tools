@@ -75,7 +75,7 @@ kind: group-index
 - **`chartblocks`** (low) — OSINT tool: chartblocks.
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Timesaving tool that allows cheat sheets to be loaded directly into the command line (or Sublime Text/IntelliJ IDEA) using the curl command 
-- **`checkphish-ai`** (low) — OSINT tool: Checkphish.ai.
+- **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
 - **`cipherstick`** (low) — OSINT tool: Cipherstick.
 - **`circos`** (low) — OSINT tool: Circos.
 - **`code-repository-google-cse`** (low) — Google CSE for search 15 code repository services
@@ -94,7 +94,7 @@ kind: group-index
 - **`csvkit`** (low) — OSINT tool: csvkit.
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
 - **`cyberbro`** (low) — OSINT tool: Cyberbro.
-- **`cyberchef`** (low) — Building and replaying multi-step decode and transform recipes
+- **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
 - **`cybergordon`** (low) — OSINT tool: CyberGordon.
 - **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
 - **`cyotek-webcopy`** (low) — OSINT tool: Cyotek WebCopy.
@@ -224,7 +224,7 @@ kind: group-index
 - **`lucidchart`** (low) — OSINT tool: Lucidchart.
 - **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
 - **`mailbox`** (low) — OSINT tool: Mailbox.
-- **`mailvelope`** (low) — OSINT tool: Mailvelope.
+- **`mailvelope`** (low) — Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-e
 - **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
 - **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra

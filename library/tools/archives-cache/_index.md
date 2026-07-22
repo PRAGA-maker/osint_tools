@@ -46,7 +46,7 @@ kind: group-index
 - **`feed-filter-maker`** (low) — OSINT tool: Feed Filter Maker.
 - **`feedbooster`** (low) — OSINT tool: FeedBooster.
 - **`feederator`** (low) — OSINT tool: Feederator.
-- **`feedly`** (low) — OSINT tool: Feedly.
+- **`feedly`** (low) — Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, se
 - **`feedreader`** (low) — OSINT tool: FeedReader.
 - **`fetchrss`** (low) — OSINT tool: FetchRSS.
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or

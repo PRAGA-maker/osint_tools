@@ -2356,35 +2356,50 @@
   {
     "id": "checkphish-ai",
     "name": "Checkphish.ai",
-    "description": "OSINT tool: Checkphish.ai.",
+    "description": "Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a risk verdict and page capture.",
     "url": "https://checkphish.ai/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free real-time scanning of a URL for phishing/scam indicators with a rendered screenshot and hosting details.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free URL scans available (a free Bolster account may be required); the underlying commercial platform (Bolster) sells brand-protection/API tiers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "CheckPhish loads the URL from its own sandbox, so your IP never touches the suspicious site — this is the safe way to inspect a link a subject sent. It does log your submitted URL to their service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Bolster (a commercial anti-phishing vendor); verdicts are automated ML classifications — useful triage, but confirm before acting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "CheckPhish",
+      "checkphish.bolster.ai"
+    ],
+    "tags": [
+      "phishing",
+      "url-scanner"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/checkphish-ai.md"
   },
   {
@@ -3160,28 +3175,29 @@
   {
     "id": "cyberchef",
     "name": "CyberChef",
-    "description": "Building and replaying multi-step decode and transform recipes",
+    "description": "Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the decoded plaintext or restructured data.",
     "url": "https://gchq.github.io/CyberChef/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Building and replaying multi-step decode and transform recipes",
-    "input": "Text, binary, hex, Base64, and structured payloads",
-    "output": "Transformed output for each selected operation chain",
+    "bestFor": "Building and replaying multi-step decode/transform \"recipes\" on any text or binary blob you pull out of an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (Apache-2.0); runs entirely client-side and can be self-hosted or run offline.",
     "opsec": "passive",
-    "opsecNote": "Public web app use is convenient, but locally hosted builds are preferred for sensitive data.",
+    "opsecNote": "All processing happens in your own browser — data is not sent to a server. For sensitive material, download the standalone build and run it offline/air-gapped rather than the public GitHub Pages copy, so nothing leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and open-sourced by GCHQ; the code is public and processing is local, so output is deterministic and independently verifiable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -3189,11 +3205,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Cyber Chef",
+      "the Cyber Swiss Army Knife"
+    ],
+    "tags": [
+      "decoding",
+      "data-transform"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cyberchef.md"
   },
   {
@@ -8516,37 +8538,43 @@
   {
     "id": "mailvelope",
     "name": "Mailvelope",
-    "description": "OSINT tool: Mailvelope.",
+    "description": "Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-end encryption.",
     "url": "https://www.mailvelope.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Adding OpenPGP encryption/decryption and key management to browser webmail (Gmail, Outlook, etc.) for secure investigator comms.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; no account with Mailvelope required.",
+    "opsec": "passive",
+    "opsecNote": "This is defensive/opsec tooling for the investigator, not a query against a target. It encrypts your own mail so intermediaries can't read it; keep your private key and passphrase off shared machines and use it in a dedicated investigative browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Open-source (audited in the past), widely recommended OpenPGP browser extension maintained by Mailvelope GmbH; source is public on GitHub.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Mailvelope PGP"
+    ],
     "tags": [
       "privacy-and-encryption-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/mailvelope.md"
   },
   {
@@ -19251,40 +19279,47 @@
   {
     "id": "feedly",
     "name": "Feedly",
-    "description": "OSINT tool: Feedly.",
+    "description": "Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, searchable stream of new posts.",
     "url": "http://www.feedly.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Standing up a monitoring dashboard of RSS/news/blog feeds to track ongoing coverage of a person, org or topic.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier covers a limited number of feeds/boards; Pro/Enterprise add AI (\"Leo\") filtering, more feeds, search and alerts.",
+    "opsec": "passive",
+    "opsecNote": "Aggregating public feeds is passive — you read published content, the subject sees nothing. Your feed list and reading live in a Feedly account, so use a dedicated investigative account rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established commercial RSS aggregator (Feedly Inc.); it relays publishers' own feeds, so content authority is the underlying source's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "feedly-rss-reader"
+    ],
+    "aliases": [
+      "Feedly RSS"
+    ],
     "tags": [
       "web-monitoring"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "feedly-rss-reader"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/feedly.md"
   },
   {
@@ -64835,43 +64870,52 @@
   {
     "id": "cloudunflare",
     "name": "CloudUnflare",
-    "description": "Reconnaissance Real IP address for Cloudflare Bypass",
+    "description": "Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and historical DNS records.",
     "url": "https://github.com/greycatz/CloudUnflare",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Reconnaissance to uncover the origin server IP hidden behind Cloudflare via historical DNS.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "address",
+      "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open source (BSD); requires a free CompleteDNS account for the historical-DNS API it queries.",
+    "opsec": "active",
+    "opsecNote": "The script queries the CompleteDNS API and resolves records; if you then connect to a discovered origin IP to confirm it, that contact comes from your IP and can be logged by the target. Verify candidate origins from a disposable IP, and never treat an unmasked origin as licence to attack it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source bash script (greycatz); results are only as good as the historical-DNS data source and require manual verification of each candidate IP.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "CloudUnflare",
+      "Cloudflare bypass recon"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Cloudfare"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cloudunflare.md"
   },
   {
@@ -74463,45 +74507,50 @@
   {
     "id": "jsluice",
     "name": "JSLUICE",
-    "description": "#go library for extracting juicy info from JavaScript files: urls, paths, API secrets etc.",
+    "description": "Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns endpoints and leaked `domain`s.",
     "url": "https://github.com/BishopFox/jsluice",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mining a site's JavaScript for hidden endpoints, paths and accidentally committed API keys/secrets.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT) from Bishop Fox; a Go library and CLI.",
+    "opsec": "passive",
+    "opsecNote": "Parsing JS you have already downloaded is passive analysis. Fetching the JS from the live site (to feed jsluice) touches the target's server from your IP — pull files via an archive or a disposable IP if that contact should not be attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Bishop Fox (a reputable security firm) and authored by tomnomnom; open source with an active user base.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gitgot"
+    ],
+    "aliases": [
+      "jsluice"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website's files metadata analyze and files downloads"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "gitgot"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/jsluice.md"
   },
   {
@@ -75445,31 +75494,34 @@
   {
     "id": "malpedia",
     "name": "Malpedia",
-    "description": "Malware family identification",
+    "description": "Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family analysis and threat-actor links.",
     "url": "https://malpedia.caad.fkie.fraunhofer.de/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Malware family identification",
-    "input": "Malware sample or family name",
-    "output": "Malware family analysis and YARA rules",
+    "bestFor": "Identifying and getting reference context on a malware family (aliases, references, YARA, actor associations).",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "associate"
+    ],
     "status": "live",
-    "pricing": "freemium",
+    "pricing": "free",
+    "costNote": "Free to use; the public inventory and statistics are open, but full sample/YARA access is gated behind an invite-only trust-group account.",
     "opsec": "passive",
-    "opsecNote": "Passive malware research database",
+    "opsecNote": "Browsing the public inventory is passive research against a reference DB, not the target. Uploading a sample or querying via an authenticated account ties activity to your identity — use an appropriate research account for anything beyond public browsing.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Fraunhofer FKIE (a German research institute); a well-curated, citation-grade malware reference used across the threat-intel community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -75477,11 +75529,16 @@
     "invitationOnly": true,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Fraunhofer Malpedia"
+    ],
+    "tags": [
+      "malware",
+      "threat-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/malpedia.md"
   },
   {
@@ -75824,43 +75881,56 @@
   {
     "id": "maxmind-demo",
     "name": "MaxMind Demo",
-    "description": "Quick IP geolocation",
-    "url": "https://www.maxmind.com/en/home",
+    "description": "Use when you have an `ip-address` and want a quick country/region/city/ASN geolocation estimate — returns approximate `geolocation` and network owner.",
+    "url": "https://www.maxmind.com/en/geoip-demo",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Quick IP geolocation",
-    "input": "IP address",
-    "output": "Country, region, city, coordinates, ASN",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A fast, single-IP geolocation and ASN lookup against MaxMind's GeoIP2 database via their web demo.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "The web demo is free; a MaxMind account/login is required to run it, and bulk/programmatic use needs a paid GeoIP2 subscription or the free GeoLite2 database.",
     "opsec": "passive",
-    "opsecNote": "Queries MaxMind; submissions logged.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query MaxMind's database, not the target host, so the subject's IP is never contacted — but the lookup is tied to your MaxMind account. Use a dedicated account for investigative work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "MaxMind is the industry-standard commercial IP-geolocation provider; its GeoIP2 data underpins many other tools, though city-level accuracy is an estimate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
       "maxmind"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MaxMind GeoIP demo",
+      "GeoIP2 demo"
+    ],
+    "tags": [
+      "ip-geolocation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/maxmind-demo.md"
   },
   {
@@ -223139,37 +223209,39 @@
   {
     "id": "european-union-open-data-portal",
     "name": "European Union Open Data Portal",
-    "description": "OSINT tool: European Union Open Data Portal.",
+    "description": "Use when you need official EU datasets — sanctions lists, company/funding records, statistics, geospatial data — for a subject or entity — returns structured open data.",
     "url": "http://open-data.europa.eu/en/data",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching 1.5M+ official EU datasets (sanctions, CORDIS funding, statistics, geospatial) from one portal.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account needed to search or download (optional EU Login for extras).",
+    "opsec": "passive",
+    "opsecNote": "Querying a public open-data portal is passive and anonymous — no login required and the subject is not contacted. Standard browser hygiene (VPN/puppet) suffices for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official portal managed by the Publications Office of the European Union; datasets are authoritative primary sources from EU institutions and member states.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "e-justice-europa-eu",
       "eu-consolidated-corporate-registers",
@@ -223182,6 +223254,16 @@
       "inspire-geoportal",
       "vat-number-validation"
     ],
+    "aliases": [
+      "data.europa.eu",
+      "EU Open Data Portal"
+    ],
+    "tags": [
+      "data-and-statistics"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/european-union-open-data-portal.md"
   },
   {

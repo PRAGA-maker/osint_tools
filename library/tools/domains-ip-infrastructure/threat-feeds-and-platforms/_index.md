@@ -14,7 +14,7 @@ kind: group-index
 - **`honeydb`** (low) — IoT honeypot intelligence
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering
 - **`ibm-x-force-exchange`** (low) — Malware and threat intelligence
-- **`malpedia`** (low) — Malware family identification
+- **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 
 - **`maltiverse`** (low) — IOC aggregation and scoring
 - **`malware-information-sharing-platform`** (low) — Threat intelligence sharing
 - **`malware-patrol`** (low) — Malware IOC and feed intelligence

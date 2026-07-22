@@ -113,7 +113,7 @@ kind: group-index
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
 - **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
 - **`cloudmare`** (low) — Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS
-- **`cloudunflare`** (low) — Reconnaissance Real IP address for Cloudflare Bypass
+- **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
@@ -262,7 +262,7 @@ kind: group-index
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
-- **`jsluice`** (low) — #go library for extracting juicy info from JavaScript files: urls, paths, API secrets etc.
+- **`jsluice`** (low) — Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns
 - **`kali-intelligence-suite-kis`** (low) — Framework for fast, autonomous, centralized collection of intelligence by orchestrating standard pentest tools.
 - **`kaspersky-cyberthreat-live-map`** (low) — OSINT tool: Kaspersky Cyberthreat live Map.
 - **`kloth`** (low) — OSINT tool: Kloth.
