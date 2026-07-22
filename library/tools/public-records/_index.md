@@ -224,9 +224,9 @@ kind: group-index
 - **`cyprusregistry-com`** (high) — Use when you have an `employer-org` or director `name` in Cyprus and want company officers, shareholders, and addresses — returns employer-o
 - **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
 - **`d-and-b-company-search`** (low) — Use when you have a company `name` and want its D-U-N-S profile — registered address, industry, size, executives and corporate family — retu
-- **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
+- **`data-ddosecrets-search`** (low) — Use when you have a `name`, `email` or `domain` and want to find it inside published leaked/hacked datasets — returns matching documents and
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
-- **`data-gov`** (low) — OSINT tool: Data.gov.
+- **`data-gov`** (low) — Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keywor
 - **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
 - **`data-world`** (low) — OSINT tool: data.world.
 - **`databasd`** (low) — OSINT tool: Databasd.
@@ -362,7 +362,7 @@ kind: group-index
 - **`globaledge-database-of-international-business-statistics`** (low) — OSINT tool: globalEDGE Database of International Business Statistics.
 - **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
-- **`gogettr`** (low) — OSINT tool: gogettr.
+- **`gogettr`** (low) — Use when you have a GETTR `username`, hashtag or post and want to archive its data — a Python client pulling posts, comments, followers and 
 - **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
 - **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
 - **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.

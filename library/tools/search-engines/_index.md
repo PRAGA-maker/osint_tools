@@ -210,7 +210,7 @@ kind: group-index
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
 - **`fact-checking`** (low) — OSINT tool: Fact-Checking.
 - **`fact-monster`** (low) — Kid friendly search engine.
-- **`faganfinder`** (low) — OSINT tool: FaganFinder.
+- **`faganfinder`** (low) — Use when you need the right search engine/tool for a task and don't know it exists — a curated portal of specialist search tools by category
 - **`falla`** (medium) — Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain`
 - **`familypedia`** (medium) — Use when you have a `name` (especially with an ancestor/surname angle) and want crowdsourced genealogy — family trees, relatives, dates — re
 - **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
@@ -587,7 +587,7 @@ kind: group-index
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
 - **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 
 - **`searcher`** (low) — A very fast and simple #go tool that allows you to collect search results from a list of keywords in the following search engines: Ask Bing 
-- **`searxng-baresearch-org`** (low) — Privacy metasearch aggregator (SearXNG instance).
+- **`searxng-baresearch-org`** (low) — Use when you want to search many engines at once without being tracked — a public SearXNG metasearch instance aggregating Google, Bing and o
 - **`searxng`** (low) — OSINT tool: SearXNG.
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social
 - **`seek-job-search-engine-new-zealand`** (medium) — Use when you have a `name` or `employer-org` and want a subject's NZ job/employment footprint — returns employer, role, and location leads f

@@ -58782,24 +58782,25 @@
   {
     "id": "the-time-zone-converter",
     "name": "The Time Zone Converter",
-    "description": "Converts time between time zones and locations",
+    "description": "Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across regions.",
     "url": "http://www.thetimezoneconverter.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a post/event time between time zones to reconcile timestamps from different sources or infer a subject's local time.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no registration. The classic thetimezoneconverter.com now redirects to the equivalent free converter at dateful.com.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A pure utility — you enter a time and zones, nothing about a subject is transmitted or looked up. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A simple deterministic time-zone calculation; correct by construction as long as you pick the right zones (mind DST). Now served via Dateful.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58808,15 +58809,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thetimezoneconverter.com",
+      "Dateful Time Zone Converter"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "time-zone",
+      "timestamps",
+      "documents-metadata"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/the-time-zone-converter.md"
   },
   {
@@ -154977,43 +154981,55 @@
   {
     "id": "strava",
     "name": "Strava",
-    "description": "Social media fitness app with exercise map based on users' GPS data.",
+    "description": "Use when you have a `name`/`username` or a location of interest and want exercise-route patterns — returns public activities, segments and heatmap `geolocation` traces.",
     "url": "https://www.strava.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Finding where a subject runs/rides (home, gym, routine routes) via their public Strava activities, or reading a location's activity from the global heatmap.",
     "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
+      "name",
+      "username",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free account lets you view public profiles, activities and the global heatmap; street-level heatmap zoom and some map detail require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public profile or the heatmap is passive, but Strava shows athletes who views their profile if you use a logged-in identifiable account — use a sock-puppet account. Following a private athlete sends them a request (active); never do that from an attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party data from the subject's own device GPS; famously reliable enough that the heatmap exposed secret military bases and a president's bodyguards' routes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "strava.com",
+      "Strava heatmap"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "maps"
+      "geolocation",
+      "fitness",
+      "heatmap"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/strava.md"
   },
   {
@@ -220495,74 +220511,102 @@
   },
   {
     "id": "data-ddosecrets-search",
-    "name": "Data \\| DDoSecrets Search",
-    "description": "OSINT tool: Data \\| DDoSecrets Search.",
+    "name": "DDoSecrets Search (Library of Leaks)",
+    "description": "Use when you have a `name`, `email` or `domain` and want to find it inside published leaked/hacked datasets — returns matching documents and their source dataset.",
     "url": "https://search.ddosecrets.com/data/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching millions of leaked/hacked documents published in the public interest for a name, email, or organisation.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; DDoSecrets is a non-profit and states cost should never be a barrier to access.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching is passive and does not touch your subject. But the underlying material is hacked/leaked data — handling, storing and acting on it carries legal and ethical constraints that vary by jurisdiction and your authorisation. Treat any hit as a lead to verify against lawful sources, and follow your engagement's legal-gate rules.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by Distributed Denial of Secrets, an established transparency non-profit; the datasets are authentic leaks but are unvetted primary material — corroborate before relying on any single record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ddosecrets",
-      "project-whispers"
+    "aliases": [
+      "Library of Leaks",
+      "DDoSecrets search",
+      "Distributed Denial of Secrets"
     ],
+    "tags": [
+      "leaks",
+      "public-records",
+      "breach-data"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/data-ddosecrets-search.md"
   },
   {
     "id": "data-gov",
     "name": "Data.gov",
-    "description": "OSINT tool: Data.gov.",
+    "description": "Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keyword and organisation.",
     "url": "https://www.data.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding authoritative US federal (and some state/local) open datasets — geospatial, regulatory, demographic — to corroborate or contextualise an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; no registration to search or download.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public data catalog — you search datasets, not people. Fully passive with nothing disclosed about any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The US government's official open-data portal; datasets come from federal agencies, so provenance is authoritative (though individual datasets vary in freshness).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "data.gov",
+      "US open data catalog",
+      "catalog.data.gov"
+    ],
+    "tags": [
+      "open-data",
+      "government",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/data-gov.md"
   },
   {
@@ -228242,36 +228286,51 @@
   },
   {
     "id": "gogettr",
-    "name": "gogettr",
-    "description": "OSINT tool: gogettr.",
+    "name": "GoGettr",
+    "description": "Use when you have a GETTR `username`, hashtag or post and want to archive its data — a Python client pulling posts, comments, followers and profiles from GETTR.",
     "url": "https://pypi.org/project/gogettr/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "bestFor": "Bulk-collecting a GETTR user's posts, comments, followers/following and profile, or trending posts/hashtags, for archival and analysis.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open-source (Stanford Internet Observatory); no API key needed — it uses GETTR's public endpoints.",
+    "opsec": "active",
+    "opsecNote": "The client makes requests to GETTR's servers to pull data. It needs no login and names no third-party service, but heavy pulling is high-volume traffic against GETTR from your IP — run from attributable-safe infrastructure and rate-limit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Built by the Stanford Internet Observatory for research; well-regarded but SIO wound down in 2024, so maintenance is uncertain and it may break if GETTR changes its API.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "stanfordio/gogettr",
+      "GETTR API client"
+    ],
+    "tags": [
+      "gettr",
+      "social-scraper",
+      "python"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gogettr.md"
   },
   {
@@ -271424,37 +271483,45 @@
   {
     "id": "faganfinder",
     "name": "FaganFinder",
-    "description": "OSINT tool: FaganFinder.",
+    "description": "Use when you need the right search engine/tool for a task and don't know it exists — a curated portal of specialist search tools by category.",
     "url": "http://www.faganfinder.com/engines",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering the best specialist search engine or database for a specific need (images, academic, news, government, social, dark web) rather than defaulting to Google.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; some tools it links to may themselves be paid, but FaganFinder access is free.",
+    "opsec": "passive",
+    "opsecNote": "A static link directory — you browse categories and click out to other tools. No target is queried; fully passive. OpSec depends on the downstream tool you choose.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running (since 2001), individually maintained by Michael Fagan; a respected, curated meta-directory rather than an automated scraper.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Fagan Finder",
+      "faganfinder.com"
+    ],
     "tags": [
+      "search-portal",
+      "directory",
       "meta-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/faganfinder.md"
   },
   {
@@ -290523,51 +290590,53 @@
   },
   {
     "id": "searxng-baresearch-org",
-    "name": "SearXNG (baresearch.org)",
-    "description": "Privacy metasearch aggregator (SearXNG instance).",
+    "name": "baresearch.org (SearXNG)",
+    "description": "Use when you want to search many engines at once without being tracked — a public SearXNG metasearch instance aggregating Google, Bing and others privately.",
     "url": "https://baresearch.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Open-source metasearch aggregating many engines without tracking.",
+    "bestFor": "Running a privacy-preserving metasearch that pulls results from multiple engines at once, without a personalised/filter-bubbled account.",
     "selectorsIn": [
       "name",
-      "username"
+      "username",
+      "domain"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public instance; no account or registration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "SearXNG proxies your query to the upstream engines, so the engines see the instance rather than you — reducing personalised tracking. But you are trusting the instance operator with your queries; for maximum control, self-host your own SearXNG rather than using a public one for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A public community-run SearXNG instance (open-source metasearch). Reliability depends on the operator and on upstream engines not blocking it; results are only as good as the sources it can reach.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
     "aliases": [
-      "Searx",
-      "SearXNG"
+      "baresearch.org",
+      "SearXNG baresearch"
     ],
     "tags": [
-      "search-engine",
       "metasearch",
-      "privacy"
+      "privacy",
+      "searxng"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/searxng-baresearch-org.md"
   },
   {
@@ -354253,40 +354322,50 @@
   {
     "id": "wikiroutes",
     "name": "WikiRoutes",
-    "description": "Public transport database.",
+    "description": "Use when you have a `geolocation`/city and want its public-transport network — returns bus/tram/metro routes, stops and coverage for that area.",
     "url": "http://wikiroutes.info/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Looking up the bus/tram/metro routes and stops serving a specific place, to reason about how a subject could have travelled to/from it.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no signup required.",
+    "opsec": "passive",
+    "opsecNote": "A public crowdsourced transit map — you query places, not people. Fully passive with nothing disclosed about any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Crowdsourced (community-submitted and community-verified via voting); coverage and accuracy vary by city, so treat routes as indicative and cross-check locally.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wikiroutes.info",
+      "Routees"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "transport"
+      "transportation",
+      "public-transit",
+      "routes"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/wikiroutes.md"
   },
   {

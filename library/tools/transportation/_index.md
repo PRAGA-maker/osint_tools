@@ -198,7 +198,7 @@ kind: group-index
 - **`wandermap`** (low) — hiking routes world map
 - **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor
 - **`wikicars`** (medium) — Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a
-- **`wikiroutes`** (low) — Public transport database.
+- **`wikiroutes`** (low) — Use when you have a `geolocation`/city and want its public-transport network — returns bus/tram/metro routes, stops and coverage for that ar
 - **`world-aviation-accident-database-1962-2007`** (low) — OSINT tool: World Aviation Accident Database 1962-2007.
 - **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.
 - **`world-license-plates`** (medium) — Use when you have an `image` of a licence plate (or its format) and want to identify where it's from — returns the country/region `geolocati

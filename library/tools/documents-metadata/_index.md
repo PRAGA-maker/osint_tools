@@ -252,7 +252,7 @@ kind: group-index
 - **`textise-net`** (low) — convert the HTML code of a page to TXT
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
 - **`the-time-now`** (low) — Tells you what time it is in any location or time zone
-- **`the-time-zone-converter`** (low) — Converts time between time zones and locations
+- **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thedorkbox`** (low) — A collection of Google dorks &amp; OSINT techniques
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
