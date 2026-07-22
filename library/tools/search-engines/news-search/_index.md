@@ -13,7 +13,7 @@ kind: group-index
 - **`inshorts`** (medium) — Use when you want quick 60-word summaries of (mainly Indian) news by category and want to spot/track a story — returns news items with sourc
 - **`newsbrief`** (medium) — Use when you have a `name` or `employer-org` and want breaking multilingual news mentions — returns clustered articles across ~70 languages 
 - **`newsnow-co-uk`** (medium) — Use when you have a `name`, `employer-org` or topic and want current news aggregated across many outlets — returns real-time headlines and a
-- **`newspaperarchive-com`** (medium) — OSINT tool: NewspaperARCHIVE.com.
+- **`newspaperarchive-com`** (medium) — Use when you have a `name`, place, or date and want historical newspaper coverage (obituaries, notices, articles) spanning centuries — retur
 - **`pressreader-com`** (medium) — Use when you have a `name`, place, or event and want full-text hits across thousands of newspapers and magazines worldwide (including local 
 - **`yougotthenews`** (medium) — Use when you have a `name` or `employer-org` and want news/media mentions of them — returns articles that can reveal associates, roles and e
 

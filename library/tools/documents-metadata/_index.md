@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata
 
 ## Sub-groups
-- **`android/`** — 14 skill(s) below.
+- **`android/`** — 13 skill(s) below.
 - **`app-analysis/`** — 4 skill(s) below.
 - **`device-forensics/`** — 2 skill(s) below.
 - **`hosted-automated-analysis/`** — 18 skill(s) below.

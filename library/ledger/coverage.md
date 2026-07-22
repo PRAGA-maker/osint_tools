@@ -2,28 +2,28 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7729 total · 4492 full · 3237 stub (58% enriched)
+**Tools:** 7726 total · 4495 full · 3231 stub (58% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3632 · medium: 2133 · high: 1964
+low: 3633 · medium: 2129 · high: 1964
 
 ## Tools by trust
-community: 3536 · unverified: 2687 · trusted: 1497 · untrustworthy: 6 · personal: 3
+community: 3537 · unverified: 2682 · trusted: 1498 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 12/455
 - `archives-cache` — 80/126
-- `communities-forums` — 228/333
+- `communities-forums` — 230/333
 - `dark-web` — 33/116
 - `dating-classifieds` — 73/103
-- `documents-metadata` — 36/313
+- `documents-metadata` — 36/312
 - `domains-ip-infrastructure` — 100/717
 - `email` — 245/246
 - `evidence-capture` — 8/30
-- `financial-crypto` — 49/116
+- `financial-crypto` — 49/115
 - `geolocation` — 288/343
 - `image-video-face` — 439/454
 - `maps-geospatial-data` — 57/126
@@ -32,7 +32,7 @@ community: 3536 · unverified: 2687 · trusted: 1497 · untrustworthy: 6 · pers
 - `people-search` — 255/258
 - `phone` — 134/137
 - `public-records` — 835/1042
-- `search-engines` — 458/845
+- `search-engines` — 459/844
 - `social-networks` — 715/791
 - `training-ctf` — 4/12
 - `translation-language` — 15/103
@@ -42,7 +42,7 @@ community: 3536 · unverified: 2687 · trusted: 1497 · untrustworthy: 6 · pers
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 986 leaves
-- `library/tools/search-engines` — 793 leaves
+- `library/tools/search-engines` — 792 leaves
 - `library/tools/social-networks` — 763 leaves
 - `library/tools/opsec-investigator-tooling` — 526 leaves
 - `library/tools/domains-ip-infrastructure` — 476 leaves
@@ -60,7 +60,7 @@ community: 3536 · unverified: 2687 · trusted: 1497 · untrustworthy: 6 · pers
 - `library/tools/archives-cache` — 111 leaves
 - `library/tools/dark-web` — 105 leaves
 - `library/tools/dating-classifieds` — 105 leaves
-- `library/tools/financial-crypto` — 98 leaves
+- `library/tools/financial-crypto` — 97 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

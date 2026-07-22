@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`boardreader`** (medium) — Use when you have a `name`, `username`, or phrase and want it found across web forums and message boards — returns matching posts/threads wi
-- **`craigslist-forums`** (medium) — Reviewing Craigslist community discussions and regional forum activity
+- **`craigslist-forums`** (medium) — Use when you have a `username` or keyword and want to read a person's public Craigslist forum posts and regional community chatter — returns
 - **`delphi-forum-search`** (medium) — Use when you have a username or a niche topic and want decades of community forum posts to mine — returns social-profile, associate and text
 - **`google-groups-search`** (medium) — Use when you have a `name`, `email`, or `username` and want decades of archived Usenet and mailing-list posts they may have written — return
 

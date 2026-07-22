@@ -319,7 +319,7 @@ kind: group-index
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.
 - **`vrbo`** (medium) — Use when you have a name or a location and want to check a vacation-rental platform for a host's listing — returns address-area, image and s
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
-- **`washington-times-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
+- **`washington-times-news`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want US national/political news coverage and its searchable archive — retur
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
 - **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.
 - **`wikipedia-list-of-world-newspapers`** (medium) — Wikipedia's list of world newspapers categorized by continent/country

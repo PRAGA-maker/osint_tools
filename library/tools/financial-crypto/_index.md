@@ -101,7 +101,6 @@ kind: group-index
 - **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — OSINT tool: radixdlt.com.
-- **`reddit-com`** (medium) — OSINT tool: reddit.com.
 - **`rupep`** (low) — Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.
 - **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.

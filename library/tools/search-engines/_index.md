@@ -422,7 +422,6 @@ kind: group-index
 - **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
 - **`magportal`** (low) — OSINT tool: MagPortal.
 - **`mailing-list-archives-search-engine`** (low) — OSINT tool: Mailing List Archives Search Engine.
-- **`makeupalley`** (medium) — Website related to makeup, skincare, and other beauty related reviews
 - **`maldevel-osint`** (low) — Tools, scripts and tips useful during OSINT investigations and reconnaissance.
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
