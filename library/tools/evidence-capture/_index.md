@@ -7,7 +7,7 @@ kind: group-index
 # evidence-capture
 
 ## Sub-groups
-- **`map-locations/`** — 1 skill(s) below.
+- **`map-locations/`** — 0 skill(s) below.
 - **`screen-capture/`** — 2 skill(s) below.
 - **`web-browsing/`** — 6 skill(s) below.
 

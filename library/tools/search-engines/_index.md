@@ -497,7 +497,6 @@ kind: group-index
 - **`one-liner-osint`** (low) — Collection of powerful one-liner commands for OSINT gathering.
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
-- **`onet`** (medium) — OSINT tool: Onet.
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (low) — OSINT tool: OnlineNewspapers.
 - **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.

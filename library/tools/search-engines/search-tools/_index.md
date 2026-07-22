@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`dorksearch-com`** (medium) — Use when you have a `domain`, `name`, or keyword and want to build advanced Google search operators ("dorks") without memorizing syntax — re
-- **`dorksearch-netlify-app`** (medium) — Fast, simple Google dork query generation
+- **`dorksearch-netlify-app`** (medium) — Use when you have a `name`, `email`, `username`, or `domain` and want help composing Google dork queries to surface hidden pages — returns a
 - **`google-alerts`** (medium) — Use when you have a `name`, `username`, `email`, `phone`, or `domain` and want ongoing notification whenever new pages mentioning it are ind
 - **`google-custom-search-engine`** (medium) — Use when you want to build your own Google search scoped to a chosen set of sites/domains — a Programmable Search Engine you configure, then
 - **`pagodo-passive-google-dork`** (medium) — Use when you have a `domain` and want to automate Google Hacking Database dorks against it — returns exposed/sensitive URLs (`document-id`s)

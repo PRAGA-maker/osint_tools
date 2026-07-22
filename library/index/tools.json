@@ -48283,47 +48283,6 @@
     "_file": "library/tools/dating-classifieds/plentyoffish-online-dating.md"
   },
   {
-    "id": "pornhoard-com",
-    "name": "pornhoard.com",
-    "description": "OSINT tool: pornhoard.com.",
-    "url": "https://www.pornhoard.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/pornhoard-com.md"
-  },
-  {
     "id": "quikr-classified-ads-india",
     "name": "Quikr Classified Ads (India)",
     "description": "Use when you have a `name`, handle, or location in India and want a subject's classified ads — returns listings with seller display name, photos, city, and contact leads.",
@@ -106724,48 +106683,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/evidence-capture/gdown.md"
-  },
-  {
-    "id": "google-street-view-hyperlapse",
-    "name": "Google Street View - Hyperlapse",
-    "description": "Route documentation, geographic visualization, temporal narrative",
-    "url": "https://github.com/TeehanLax/Hyperlapse.js",
-    "category": "evidence-capture",
-    "path": [
-      "evidence-capture",
-      "map-locations"
-    ],
-    "bestFor": "Route documentation, geographic visualization, temporal narrative",
-    "input": "Route coordinates (start/end points)",
-    "output": "Hyperlapse video animation showing virtual travel along route",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses public Google Street View data; passive visualization with no active reconnaissance.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "hyperlapse"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/evidence-capture/map-locations/google-street-view-hyperlapse.md"
   },
   {
     "id": "gowitness",
@@ -274933,29 +274850,39 @@
   {
     "id": "dorksearch-netlify-app",
     "name": "dorksearch.netlify.app",
-    "description": "Fast, simple Google dork query generation",
+    "description": "Use when you have a `name`, `email`, `username`, or `domain` and want help composing Google dork queries to surface hidden pages — returns a ready-to-run dork URL yielding `social-profile`, `document-id`, `domain`.",
     "url": "https://dorksearch.netlify.app/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "search-tools"
     ],
-    "bestFor": "Fast, simple Google dork query generation",
-    "input": "Keywords and dork operators",
-    "output": "Google dork search URL",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quickly assembling Google advanced-operator (dork) queries around a selector without memorizing the syntax.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account; a lightweight client-side query builder.",
     "opsec": "passive",
-    "opsecNote": "Generates and redirects to Google search queries; passive public search only.",
+    "opsecNote": "The builder itself just assembles a query string; the actual search runs on Google under your session. Run the resulting dork from a sock-puppet browser — Google logs the query and the target sites see nothing until you click through.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-built, Netlify-hosted dork helper (not the only tool by this name) — it only formats standard Google operators, so there is no data-quality risk, just verify it points at real google.com searches.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -274968,11 +274895,16 @@
       "reddit-timer",
       "search-it"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "dorksearch"
+    ],
+    "tags": [
+      "google-dorks",
+      "search-operators"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-tools/dorksearch-netlify-app.md"
   },
   {
@@ -289749,50 +289681,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/one-look-reverse-dictionary.md"
-  },
-  {
-    "id": "onet",
-    "name": "Onet",
-    "description": "OSINT tool: Onet.",
-    "url": "https://www.onet.pl",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "search",
-      "international"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "onet-pl-poland"
-    ],
-    "_file": "library/tools/search-engines/onet.md"
   },
   {
     "id": "onet-pl-poland",
