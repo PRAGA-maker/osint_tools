@@ -51,7 +51,7 @@ kind: group-index
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
 - **`coinchoose-com`** (low) — Use when a crypto trace surfaces an unfamiliar coin/ticker and you want quick market and mining context — returns prices, market caps and mi
 - **`coinmap`** (low) — OSINT tool: CoinMap.
-- **`coinmarketcap`** (low) — OSINT tool: CoinMarketCap.
+- **`coinmarketcap`** (low) — Use when you have a crypto asset name/symbol (or a token from a `crypto-wallet` trace) and want to identify and value it — returns market da
 - **`coinwink-com`** (low) — OSINT tool: Coinwink.com.
 - **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
 - **`credit-osint`** (low) — A very simple #python tool to gather information about bank cards and validate them.

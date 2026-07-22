@@ -102,7 +102,7 @@ kind: group-index
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
 - **`data-to-go`** (low) — OSINT tool: Data to Go.
 - **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
-- **`datawrapper`** (low) — OSINT tool: Datawrapper.
+- **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — HTML/JS deobfuscator
 - **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
 - **`decopy-ai-image-detector`** (low) — Detecting AI-generated profile photos, fake news images, and synthetic media

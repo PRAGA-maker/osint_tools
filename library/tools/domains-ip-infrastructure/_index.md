@@ -184,7 +184,7 @@ kind: group-index
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
 - **`gitgraber`** (low) — Search and clone sensitive information from GitHub.
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
-- **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
+- **`goblyn`** (low) — Use when you have a `domain` and want the metadata inside its exposed files — enumerates directories/files and extracts EXIF/document `metad
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, creation/expiry dates, name servers and (when not privacy
 - **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
@@ -330,7 +330,7 @@ kind: group-index
 - **`openlinkprofiler`** (low) — OSINT tool: OpenLinkProfiler.
 - **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
 - **`opensquat`** (low) — Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;
-- **`oralyzer`** (low) — Script that check website for following types of Open Redirect Vulnerabilities
+- **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
 - **`orb`** (low) — Massive footprinting tool.
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
@@ -444,7 +444,6 @@ kind: group-index
 - **`unshorten-me`** (low) — OSINT tool: Unshorten.me.
 - **`urlhaus`** (low) — OSINT tool: URLhaus.
 - **`urlquery`** (low) — OSINT tool: urlQuery.
-- **`urlscan`** (low) — OSINT tool: urlscan.
 - **`urlvoid`** (low) — OSINT tool: URLVoid.
 - **`urlxray`** (low) — OSINT tool: Urlxray.
 - **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers

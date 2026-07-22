@@ -170,7 +170,7 @@ kind: group-index
 - **`companieshouse-gi`** (medium) — Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors
 - **`companieshouse-im`** (medium) — Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `addre
 - **`company-check-zauba`** (low) — OSINT tool: Company Check Zauba.
-- **`company-check`** (low) — OSINT tool: Company Check.
+- **`company-check`** (low) — Use when you have a `name` (director) or `employer-org` and want UK/Ireland company records — returns directorships, financials, and co-dire
 - **`company-information-service-gov-uk-2`** (high) — Use when you have a `name`, `employer-org` or `address` and want dissolved/closed UK companies — returns company details, registered address
 - **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
 - **`company-information-service-gov-uk`** (high) — Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships 
@@ -587,7 +587,7 @@ kind: group-index
 - **`naics-code-search`** (low) — OSINT tool: NAICS Code Search.
 - **`napit-org-uk`** (high) — Use when you have a UK tradesperson `name`, `employer-org` or postcode and want to verify NAPIT registration — returns the registered busine
 - **`narcotics-control-reports`** (medium) — Use when you have a country/region and want US State Dept assessments of its drug trafficking and money-laundering landscape — returns count
-- **`nation-master`** (low) — OSINT tool: Nation Master.
+- **`nation-master`** (low) — Use when you need country-level context statistics (crime, economy, demographics) to frame an investigation — returns comparable national in
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
 - **`national-center-for-state-courts-united-states`** (low) — Use when you have a US `address`/jurisdiction and want to find the correct state or county court-record system to search — returns pointers 
 - **`national-company-registers`** (medium) — Use when you have an `employer-org` (or a person's directorship) in a specific country and need the official corporate registry — a director

@@ -686,7 +686,7 @@ kind: group-index
 - **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie
 - **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
 - **`web-directories`** (low) — Directory of web directories
-- **`web-search-navigator`** (low) — extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others
+- **`web-search-navigator`** (low) — Use when you run high volumes of searches and want keyboard-driven navigation of results across Google, YouTube, GitHub and more — a product
 - **`webcam-hopper`** (medium) — Use when you have a `geolocation`/`address` and want live public webcam views of that area — returns live `image` feeds searchable by countr
 - **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and

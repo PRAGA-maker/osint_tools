@@ -2,28 +2,28 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7533 total · 4610 full · 2923 stub (61% enriched)
+**Tools:** 7532 total · 4619 full · 2913 stub (61% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3611 · high: 1964 · medium: 1958
+low: 3610 · high: 1964 · medium: 1958
 
 ## Tools by trust
-community: 3502 · unverified: 2479 · trusted: 1543 · untrustworthy: 6 · personal: 3
+community: 3505 · unverified: 2472 · trusted: 1546 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 23/454
+- `ai-analysis-automation` — 25/454
 - `archives-cache` — 83/124
 - `communities-forums` — 235/289
 - `dark-web` — 35/110
 - `dating-classifieds` — 78/90
 - `documents-metadata` — 41/309
-- `domains-ip-infrastructure` — 125/706
+- `domains-ip-infrastructure` — 128/705
 - `email` — 245/246
 - `evidence-capture` — 11/29
-- `financial-crypto` — 52/111
+- `financial-crypto` — 53/111
 - `geolocation` — 289/340
 - `image-video-face` — 439/452
 - `maps-geospatial-data` — 62/123
@@ -31,8 +31,8 @@ community: 3502 · unverified: 2479 · trusted: 1543 · untrustworthy: 6 · pers
 - `opsec-investigator-tooling` — 46/552
 - `people-search` — 256/258
 - `phone` — 134/137
-- `public-records` — 847/1012
-- `search-engines` — 471/791
+- `public-records` — 849/1012
+- `search-engines` — 472/791
 - `social-networks` — 719/788
 - `training-ctf` — 4/12
 - `translation-language` — 20/101
@@ -45,7 +45,7 @@ community: 3502 · unverified: 2479 · trusted: 1543 · untrustworthy: 6 · pers
 - `library/tools/social-networks` — 760 leaves
 - `library/tools/search-engines` — 740 leaves
 - `library/tools/opsec-investigator-tooling` — 522 leaves
-- `library/tools/domains-ip-infrastructure` — 466 leaves
+- `library/tools/domains-ip-infrastructure` — 465 leaves
 - `library/tools/ai-analysis-automation` — 418 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves

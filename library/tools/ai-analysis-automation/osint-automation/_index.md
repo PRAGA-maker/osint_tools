@@ -12,7 +12,7 @@ kind: group-index
 - **`intelligencex`** (low) — Leaked data, breach database, and darknet intelligence searching
 - **`intrec-pack`** (low) — Streamlined OSINT tool environment setup and deployment
 - **`microsoft-flow`** (low) — Orchestrating OSINT workflows across multiple platforms/APIs
-- **`omnibus`** (low) — Comprehensive multi-source artifact investigation with modular extensibility
+- **`omnibus`** (low) — Use when you have mixed artifacts (`ip-address`, `domain`, `email`, `username`, hash, wallet) and want a session-based CLI to enrich them ac
 - **`osrframework`** (low) — Comprehensive username and email enumeration with extensible architecture
 - **`phoneinfoga`** (low) — Phone number validation and intelligence gathering
 - **`photon`** (low) — Web reconnaissance and endpoint discovery

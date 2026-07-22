@@ -3493,37 +3493,44 @@
   {
     "id": "datawrapper",
     "name": "Datawrapper",
-    "description": "OSINT tool: Datawrapper.",
+    "description": "Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizations.",
     "url": "https://datawrapper.de",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly building professional charts, choropleth maps and sortable tables from investigation data for a report or briefing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Generous free tier (create/publish charts, no account needed to try); paid plans add custom branding, larger teams and offline export options.",
+    "opsec": "passive",
+    "opsecNote": "A visualization tool, not a lookup — it queries no target. But whatever data you paste/upload is processed on Datawrapper's servers and published charts are public by URL; never upload sensitive PII you don't intend to expose.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established tool used by major newsrooms (NYT, Reuters, AP, WaPo); reliable and well-documented, though the output quality depends entirely on your input data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "datawrapper.de"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "data-visualization",
+      "charts",
+      "reporting"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/datawrapper.md"
   },
   {
@@ -9615,46 +9622,57 @@
   {
     "id": "omnibus",
     "name": "Omnibus",
-    "description": "Comprehensive multi-source artifact investigation with modular extensibility",
+    "description": "Use when you have mixed artifacts (`ip-address`, `domain`, `email`, `username`, hash, wallet) and want a session-based CLI to enrich them across sources — returns aggregated intel per artifact.",
     "url": "https://github.com/InQuest/omnibus",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Comprehensive multi-source artifact investigation with modular extensibility",
-    "input": "IP addresses, domains, emails, usernames, file hashes, Bitcoin addresses",
-    "output": "JSON exports of aggregated results, session-based artifact management",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Running an interactive CLI \"investigation session\" that collects and enriches technical indicators (IPs, domains, emails, usernames, hashes, BTC addresses) from multiple modules.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "email",
+      "username",
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "email"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT).",
     "opsec": "active",
-    "opsecNote": "Depends on integrated modules; primarily active queries",
+    "opsecNote": "Modules reach out to third-party APIs/services to enrich each artifact, so queries about the target leave your machine to those providers. Some modules need API keys tied to accounts. Run from attributable-safe infrastructure and review which modules are active before a run.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by InQuest (a reputable security vendor), but written for Python 2.7 and only lightly maintained — expect setup friction and some dead modules on modern systems.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": true,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "iocextract",
-      "threatingestor"
+    "coverage": [
+      "global"
     ],
-    "aliases": [],
-    "tags": [],
+    "auth": "api-key",
+    "api": false,
+    "localInstall": true,
+    "registration": false,
+    "aliases": [
+      "InQuest Omnibus",
+      "omnibus-cli"
+    ],
+    "tags": [
+      "osint-automation",
+      "artifact-enrichment"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/omnibus.md"
   },
   {
@@ -69550,45 +69568,49 @@
   {
     "id": "goblyn",
     "name": "Goblyn",
-    "description": "tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the files, if it find some file it will get the metadata of file",
+    "description": "Use when you have a `domain` and want the metadata inside its exposed files — enumerates directories/files and extracts EXIF/document `metadata-exif`.",
     "url": "https://github.com/loseys/Goblyn",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering files left in a website's open directories and pulling their document/image metadata (authors, software, timestamps) for leads.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "metadata-exif",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0). Requires exiftool installed alongside it.",
+    "opsec": "active",
+    "opsecNote": "It actively crawls the target site's directories and downloads files — this generates traffic in the target's server logs. Only run against sites you're authorised to assess; use attributable-safe infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source GPL-3.0 project (single v0.1 release, 2021); functional but only lightly maintained — verify it still installs cleanly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "loseys/Goblyn"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website's files metadata analyze and files downloads"
+      "metadata-extraction",
+      "file-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "oblivion"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/goblyn.md"
   },
   {
@@ -78816,42 +78838,48 @@
   {
     "id": "oralyzer",
     "name": "Oralyzer",
-    "description": "Script that check website for following types of Open Redirect Vulnerabilities",
+    "description": "Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitable.",
     "url": "https://github.com/r0075h3ll/Oralyzer",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Probing a target URL for open-redirect vulnerabilities (header/JavaScript/meta-based) and CRLF injection during infrastructure/security assessment.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0).",
+    "opsec": "active",
+    "opsecNote": "This actively sends crafted requests to the target site to test redirect behaviour — it WILL appear in the target's logs as fuzzing traffic. Only run against systems you are authorised to test; use attributable-safe infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source security script (800+ GitHub stars, GPL-3.0); code is auditable but it is offensive tooling — use only with authorisation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Oralyzer open redirect"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "open-redirect",
+      "web-security"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/oralyzer.md"
   },
   {
@@ -86519,86 +86547,55 @@
     "_file": "library/tools/domains-ip-infrastructure/reputation/urlquery-net.md"
   },
   {
-    "id": "urlscan",
-    "name": "urlscan",
-    "description": "OSINT tool: urlscan.",
-    "url": "https://urlscan.io/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "urlscan-io"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/urlscan.md"
-  },
-  {
     "id": "urlscan-io",
     "name": "urlscan.io",
-    "description": "Investigating suspicious URLs with scan snapshots and indicators",
+    "description": "Use when you have a `domain`/URL or `ip-address` and want its scan history — returns screenshots, contacted domains/IPs, and page resources for pivoting.",
     "url": "https://urlscan.io/search/#*",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "discovery"
     ],
-    "bestFor": "Investigating suspicious URLs with scan snapshots and indicators",
-    "input": "URL or domain",
-    "output": "Scan reports including redirects, requests, domains, IPs, and screenshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Looking up past scans of a URL/domain to see what it looked like, which IPs and domains it contacted, and what it hosted — without visiting it yourself.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "image"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search the public scan database and submit public scans; private/unlisted scans and higher API volume need a paid commercial plan.",
     "opsec": "passive",
-    "opsecNote": "Analysis runs on urlscan infrastructure; target contact is performed from their scanners.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "Searching existing scans is fully passive — the target site never sees you. If you SUBMIT a new scan, urlscan fetches the URL from its own infrastructure (not yours), but a public scan is visible to everyone; mark scans unlisted/private (paid) if the URL itself is sensitive.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely used, reputable web-scanning service relied on by the security/OSINT community; results are reproducible artifacts (screenshots, HAR, DOM) rather than opinions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "urlscan"
+    "registration": false,
+    "aliases": [
+      "urlscan",
+      "urlscan.io search"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "Domain/IP/Links",
+      "Domain/IP investigation",
+      "url-scanning"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/urlscan-io.md"
   },
   {
@@ -106845,41 +106842,49 @@
   {
     "id": "coinmarketcap",
     "name": "CoinMarketCap",
-    "description": "OSINT tool: CoinMarketCap.",
+    "description": "Use when you have a crypto asset name/symbol (or a token from a `crypto-wallet` trace) and want to identify and value it — returns market data plus official site/explorer `domain` links.",
     "url": "https://coinmarketcap.com",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a cryptocurrency/token by name or symbol, valuing it, and jumping to its official site and block-explorer links.",
     "selectorsIn": [
       "crypto-wallet"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view prices, charts and coin info; the data API and some pro analytics have paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "You query market data about a coin, not a person — fully passive and nothing about your subject is disclosed. No account needed for the basics.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The most widely-referenced crypto market-data aggregator; prices/market caps are industry-standard, though listing is not an endorsement of a project's legitimacy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CMC",
+      "coinmarketcap.com"
+    ],
     "tags": [
-      "crypto"
+      "crypto",
+      "market-data",
+      "financial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/coinmarketcap.md"
   },
   {
@@ -217399,43 +217404,55 @@
   {
     "id": "company-check",
     "name": "Company Check",
-    "description": "OSINT tool: Company Check.",
+    "description": "Use when you have a `name` (director) or `employer-org` and want UK/Ireland company records — returns directorships, financials, and co-director `associate` links.",
     "url": "https://companycheck.co.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Cross-referencing a person's name to the UK/Ireland companies they direct, and mapping their fellow directors and company financial history.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free membership gives basic company data (ad-supported); unlimited reports and financials/CCJ detail need a paid plan (~£35/month or £350/year).",
+    "opsec": "passive",
+    "opsecNote": "Queries a commercial aggregator of public registry data, not the subject — fully passive and the subject is not notified. Registering for the free tier ties searches to your account, so use an investigator/sock-puppet identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates official Companies House (UK) and CRO (Ireland) filings plus credit data; the underlying registry facts are authoritative, the derived risk scores are the vendor's own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "companycheck.co.uk",
+      "Company Check UK"
+    ],
     "tags": [
-      "corporate"
+      "public-records",
+      "company-registry",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-check.md"
   },
   {
@@ -240543,37 +240560,45 @@
   {
     "id": "nation-master",
     "name": "Nation Master",
-    "description": "OSINT tool: Nation Master.",
+    "description": "Use when you need country-level context statistics (crime, economy, demographics) to frame an investigation — returns comparable national indicators across 200+ countries.",
     "url": "http://www.nationmaster.com/statistics",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling and comparing national statistics (crime rates, demographics, economy, transport, etc.) to add context or baseline figures to a report.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse country statistics and comparisons.",
+    "opsec": "passive",
+    "opsecNote": "A reference/statistics site; you query country data, never a person. Fully passive with nothing disclosed about any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregates public-domain international datasets; figures can be dated or drawn from older source years, so cite the underlying source/year for anything decisive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "nationmaster.com",
+      "NationMaster"
+    ],
     "tags": [
-      "data-and-statistics"
+      "statistics",
+      "reference",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nation-master.md"
   },
   {
@@ -295389,37 +295414,45 @@
   {
     "id": "web-search-navigator",
     "name": "Web Search Navigator",
-    "description": "extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others",
+    "description": "Use when you run high volumes of searches and want keyboard-driven navigation of results across Google, YouTube, GitHub and more — a productivity browser extension.",
     "url": "https://github.com/infokiller/web-search-navigator",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Speeding up manual search-heavy investigation by adding vim-style keyboard shortcuts to search-result pages.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT).",
+    "opsec": "passive",
+    "opsecNote": "A local browser extension that only rebinds keys on result pages — it sends nothing extra to any server and does not change what your searches expose. OpSec is unchanged from browsing normally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Open-source (MIT), actively maintained browser extension with ~950 GitHub stars; a productivity aid rather than a data source, so no data-quality concerns.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "web-search-navigator extension",
+      "infokiller/web-search-navigator"
+    ],
     "tags": [
-      "Tools for Google"
+      "productivity",
+      "browser-extension",
+      "search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/web-search-navigator.md"
   },
   {
