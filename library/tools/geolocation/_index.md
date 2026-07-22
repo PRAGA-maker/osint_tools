@@ -127,7 +127,7 @@ kind: group-index
 - **`gps-visualizer`** (high) — Use when you have an `address` or `geolocation` and want to convert between them or plot points on a map — returns latitude/longitude, addre
 - **`grassgis`** (medium) — Use when you need heavy-duty desktop GIS analysis of raster/vector `geolocation` data — terrain, viewshed, imagery — beyond what a web map o
 - **`ham-radio-qrz-callsign-database-search`** (low) — OSINT tool: Ham Radio QRZ Callsign Database Search.
-- **`hate-map`** (medium) — OSINT tool: Hate Map.
+- **`hate-map`** (medium) — Use when you have a `geolocation` (US state/area) or a group name and want to see hate/anti-government groups active there — returns `employ
 - **`haunted-places`** (medium) — Google Earth map of ghost sightings around the world
 - **`hawaii-traffic-cameras`** (low) — OSINT tool: Hawaii Traffic Cameras.
 - **`here-2`** (high) — Use when you have an `address`/`geolocation` and want maps, routing, and location context from HERE's mapping platform (alternative basemap 
@@ -163,7 +163,6 @@ kind: group-index
 - **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
 - **`localfocus-nl-geokit`** (medium) — Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocod
 - **`localtimes-info`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time and UTC offset shown on a world map — returns the local wal
-- **`lookr`** (medium) — OSINT tool: Lookr.
 - **`lost-places-map`** (medium) — Use when you have an `image` or `geolocation` of an abandoned/urbex site and want to identify or locate it — returns mapped `geolocation`s o
 - **`lostplace-atlas`** (medium) — Use when you have a `geolocation` (or an image of an abandoned site) in Germany/Europe and want to identify or cross-reference it — returns 
 - **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.

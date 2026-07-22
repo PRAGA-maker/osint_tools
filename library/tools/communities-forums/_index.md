@@ -111,7 +111,6 @@ kind: group-index
 - **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`friendfinder`** (medium) — Use when you have a `name`/`username` and a rough `geolocation` and want to check for a matching dating/social profile — returns `social-pro
 - **`friendpaste`** (medium) — Use when you have a `username`, `email`, or leak keyword and want to find text/code dumps posted publicly — returns pasted `password`, `emai
-- **`get-pocket-news-saving-app`** (medium) — Website offers article saving service, mostly on mobile devices, but also PC compatible
 - **`gettr-search`** (low) — Structured Gettr user search.
 - **`ghost`** (low) — OSINT tool: Ghost.
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede

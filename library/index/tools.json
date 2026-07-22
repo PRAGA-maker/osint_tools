@@ -28428,50 +28428,6 @@
     "_file": "library/tools/communities-forums/friendpaste.md"
   },
   {
-    "id": "get-pocket-news-saving-app",
-    "name": "Get Pocket News Saving App",
-    "description": "Website offers article saving service, mostly on mobile devices, but also PC compatible",
-    "url": "https://getpocket.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "pocket"
-    ],
-    "_file": "library/tools/communities-forums/get-pocket-news-saving-app.md"
-  },
-  {
     "id": "gettr-search",
     "name": "Gettr Search",
     "description": "Structured Gettr user search.",
@@ -43300,54 +43256,59 @@
   },
   {
     "id": "reddit-onions",
-    "name": "Reddit Onions",
-    "description": "Tracking .onion ecosystem changes via community reports",
+    "name": "r/onions (Reddit)",
+    "description": "Use when you have a dark-web keyword, service name, or `crypto-wallet` and want community reports on current .onion sites and their status — returns onion `domain` leads and scam warnings.",
     "url": "https://www.reddit.com/r/onions/",
     "category": "dark-web",
     "path": [
       "dark-web",
       "general-info"
     ],
-    "bestFor": "Tracking .onion ecosystem changes via community reports",
-    "input": "Posts, comments, and subreddit search terms",
-    "output": "User-reported onion links and operational status discussions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Crowd-sourced discovery and vetting of .onion services — which are live, which are scams, which just moved.",
+    "selectorsIn": [
+      "domain",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; a Reddit account (optional, sock-puppet) is only needed to post or search while logged in.",
     "opsec": "passive",
-    "opsecNote": "Content consumption is passive; authenticated interactions are attributable to Reddit accounts.",
+    "opsecNote": "Reading the subreddit on the clearnet is passive. Do NOT open .onion links mentioned here in a normal browser — use Tor Browser. Posting or commenting is attributable to your Reddit account, so use a sock puppet and never reveal case details.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous community reports; links are user-submitted and frequently include scams, phishing mirrors, and dead onions — verify everything independently.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "here",
-      "r-opendirectories",
       "reddit",
-      "reddit-askmeanything",
-      "reddit-com",
-      "reddit-com-2",
       "reddit-darknet",
       "reddit-deep-web",
-      "reddit-guide-to-opting-out-of-background-check-websites",
-      "reddit-old-reddit-search",
-      "reddit-r-translator"
+      "r-opendirectories"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "r/onions",
+      "reddit onions"
+    ],
+    "tags": [
+      "dark-web",
+      "Tor",
+      "reddit"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/general-info/reddit-onions.md"
   },
   {
@@ -118981,47 +118942,56 @@
   },
   {
     "id": "hate-map",
-    "name": "Hate Map",
-    "description": "OSINT tool: Hate Map.",
+    "name": "SPLC Hate Map",
+    "description": "Use when you have a `geolocation` (US state/area) or a group name and want to see hate/anti-government groups active there — returns `employer-org` (group) names tied to a `geolocation`.",
     "url": "https://www.splcenter.org/hate-map",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping active US hate and anti-government/extremist groups by state, ideology, and year.",
     "selectorsIn": [
-      "geolocation"
+      "geolocation",
+      "employer-org"
     ],
     "selectorsOut": [
+      "employer-org",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free interactive map published by the Southern Poverty Law Center; no account required. Data downloadable.",
+    "opsec": "passive",
+    "opsecNote": "Browsing SPLC's public map is passive and touches no subject. It reflects SPLC's classifications, not your interest. No sock puppet needed to view.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Compiled by the SPLC using its own methodology; classifications are researched but advocacy-driven and sometimes contested, so treat group labels as SPLC's assessment, not neutral fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "extremist-groups",
       "extremist-profiles"
     ],
+    "aliases": [
+      "SPLC Hate Map",
+      "Southern Poverty Law Center hate map"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "Politics, conflicts and crisis",
+      "extremism"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/hate-map.md"
   },
   {
@@ -120816,48 +120786,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/geolocation/localtimes-info.md"
-  },
-  {
-    "id": "lookr",
-    "name": "Lookr",
-    "description": "OSINT tool: Lookr.",
-    "url": "https://www.lookr.com",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "image"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cctv",
-      "webcam"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/lookr.md"
   },
   {
     "id": "lost-places-map",
@@ -231658,46 +231586,58 @@
   },
   {
     "id": "global-edge-resource-directory",
-    "name": "Global EDGE Resource Directory",
-    "description": "Finding international business intelligence resources and databases by topic",
+    "name": "globalEDGE Resource Directory",
+    "description": "Use when you have an `employer-org`, industry, or country and want curated international business/trade data sources — returns links to registries, statistics, and reports (`employer-org` context).",
     "url": "https://globaledge.msu.edu/global-resources",
     "category": "public-records",
     "path": [
       "public-records",
       "general-info-and-news"
     ],
-    "bestFor": "Finding international business intelligence resources and databases by topic",
-    "input": "Topic or resource category (browsed from directory)",
-    "output": "Curated links to international business data sources, reports, and tools",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A curated directory of thousands of international business, trade, and country-research resources, organized by topic.",
+    "selectorsIn": [
+      "employer-org",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free directory hosted by Michigan State University's International Business Center; no account needed.",
     "opsec": "passive",
-    "opsecNote": "Reference directory; no interaction with targets.",
+    "opsecNote": "A reference directory of external resources; browsing it involves no interaction with any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Maintained by Michigan State University (International Business Center); it curates links to third-party sources, so verify each destination's own reliability.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "central-and-eastern-european-business-directory",
       "globaledge",
-      "globaledge-database-of-international-business-statistics"
+      "globaledge-database-of-international-business-statistics",
+      "central-and-eastern-european-business-directory"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "globalEDGE",
+      "MSU globalEDGE global resources"
+    ],
+    "tags": [
+      "public-records",
+      "business-intelligence",
+      "international-trade",
+      "directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/general-info-and-news/global-edge-resource-directory.md"
   },
   {
@@ -234656,32 +234596,33 @@
   },
   {
     "id": "highly-cited-researchers",
-    "name": "Highly Cited Researchers",
-    "description": "List of highly cited researchers, including search by name and affiliation",
+    "name": "Highly Cited Researchers (Clarivate)",
+    "description": "Use when you have a researcher's `name` or an institution and want to confirm their field, affiliation, and standing — returns `employer-org` (institution), country, and research area.",
     "url": "https://hcr.clarivate.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying an academic's institution, country, and research field against Clarivate's annual Highly Cited Researchers list.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The searchable list is free to browse; the underlying Web of Science data behind it is a paid Clarivate product, but the HCR directory itself is public.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public directory lookup; searching a name touches only Clarivate's list and never reaches the person. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Published by Clarivate (Web of Science) using citation analysis; inclusion is a reliable signal of research standing, though it only covers the highly-cited top tier, not researchers generally.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -234689,15 +234630,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "HCR Clarivate",
+      "hcr.clarivate.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
+      "academic",
+      "researchers",
+      "verification"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/highly-cited-researchers.md"
   },
   {
