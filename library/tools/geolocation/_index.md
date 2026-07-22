@@ -34,7 +34,7 @@ kind: group-index
 - **`baton-rouge-traffic-cams`** (low) — OSINT tool: Baton Rouge Traffic Cams.
 - **`bellingcat-openstreetmap-search`** (high) — Use when you have a `physical-description` of a scene (several nearby feature types) and want candidate `geolocation`s where they co-occur —
 - **`bfro-bigfoot-sightings-database`** (medium) — Use when you have a `geolocation` (US state/county or Canadian province) and want dated eyewitness reports pinned to remote areas — returns 
-- **`bigfoot-and-ufo-map`** (medium) — Bigfoot, UFO and other sightings around USA and Europe
+- **`bigfoot-and-ufo-map`** (medium) — Use when you have a `geolocation` and want crowdsourced anomaly-sighting points nearby — returns mapped Bigfoot/UFO/other sighting locations
 - **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Bigfoot sightings reports density around the USA
 - **`bing-maps`** (medium) — Use when you need a second mapping/imagery source — Microsoft aerial and 3D views, directions, and business search — to confirm a location o
 - **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a

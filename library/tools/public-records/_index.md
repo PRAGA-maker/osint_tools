@@ -484,7 +484,7 @@ kind: group-index
 - **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.
 - **`international-federation-of-accountants-ifac`** (low) — Use when you have a `name`/`employer-org` in accountancy and want to trace their professional body — returns member-organization directories
 - **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
-- **`international-monetary-fund`** (medium) — Website providing data and publications regarding IMF lending, exchange rates, and other economic and financial indicators
+- **`international-monetary-fund`** (medium) — Use when you need macro-financial context on a country or lending program — returns economic indicators, exchange rates, and IMF program/pub
 - **`international-trade-center`** (low) — OSINT tool: International Trade Center.
 - **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
 - **`investing-com`** (medium) — Use when you have a public company or ticker and want its profile — returns business description, key executives, financials and filings con
@@ -728,7 +728,7 @@ kind: group-index
 - **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a
 - **`padmapper`** (low) — Use when you have an `address` or area and want the rental market around it — returns mapped rental listings (price, unit details, location)
 - **`panjiva-com`** (low) — Use when you have a company `name`/`employer-org` in trade and want its import/export shipments — returns bill-of-lading records naming supp
-- **`paperpanda`** (medium) — In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registra
+- **`paperpanda`** (medium) — Use when you have a paywalled academic article and want a free full-text PDF — returns a legally-available open-access copy in one click.
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
 - **`parler-archive-search`** (low) — OSINT tool: Parler Archive Search.
 - **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.

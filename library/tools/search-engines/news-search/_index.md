@@ -10,7 +10,6 @@ kind: group-index
 - **`allyoucanread-com`** (low) — Use when you have a `geolocation` (country/region) and want the local newspapers and magazines that cover it — returns news-outlet `domain` 
 - **`flipboard`** (medium) — Use when you have a `username`/`name` and want a subject's Flipboard presence — returns their profile, curated magazines and shared articles
 - **`google-news-search`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across outlets and time — returns articles, dates, and named ass
-- **`hubii`** (medium) — OSINT tool: Hubii.
 - **`inshorts`** (medium) — Use when you want quick 60-word summaries of (mainly Indian) news by category and want to spot/track a story — returns news items with sourc
 - **`newsbrief`** (medium) — Use when you have a `name` or `employer-org` and want breaking multilingual news mentions — returns clustered articles across ~70 languages 
 - **`newsnow-co-uk`** (medium) — Use when you have a `name`, `employer-org` or topic and want current news aggregated across many outlets — returns real-time headlines and a

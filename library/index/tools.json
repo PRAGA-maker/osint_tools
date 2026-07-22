@@ -34558,46 +34558,6 @@
     "_file": "library/tools/communities-forums/polymeta-news.md"
   },
   {
-    "id": "popsugar-australia",
-    "name": "Popsugar (Australia)",
-    "description": "Website related to fashion trends, entertainment, beauty, and fitness",
-    "url": "http://www.popsugar.com.au",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/popsugar-australia.md"
-  },
-  {
     "id": "postach-io",
     "name": "Postach.io",
     "description": "Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` and published post content.",
@@ -36652,37 +36612,48 @@
   {
     "id": "snippet-host",
     "name": "snippet.host",
-    "description": "OSINT tool: snippet.host.",
+    "description": "Use when you have a `username` or keyword and want public code/text pastes — returns snippets that may leak credentials, contacts, or handles.",
     "url": "https://snippet.host/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a minimal paste/snippet host for leaked code, config, or text tied to a handle or keyword.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read public snippets and to post; a free account is only needed to manage/keep your own snippets.",
+    "opsec": "passive",
+    "opsecNote": "Reading public snippets is passive. It also runs a Tor hidden service, so it is used to share sensitive material — treat any credentials/PII you find as live and handle responsibly; never re-post or exfiltrate. Do not log in with a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent minimalist paste host; content is anonymous, user-submitted, and unmoderated for accuracy.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "snippet.host"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "paste-site"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/snippet-host.md"
   },
   {
@@ -40503,25 +40474,32 @@
   },
   {
     "id": "andi",
-    "name": "Andi",
-    "description": "AI search assistant, ad-free and privacy-focused",
+    "name": "Andi Search",
+    "description": "Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to pivot from.",
     "url": "https://andisearch.com/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Ad-free, privacy-oriented AI search that summarises results and cites sources for a name or topic.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account required for basic search. Privacy-focused (does not require login or profiling).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Andi's servers rather than a major ad-tracking engine, which is a mild privacy plus, but it is still a third party seeing your search — use a VPN/sock-puppet for sensitive queries. It reads the clearnet, not the dark web, despite this file's category.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent AI search product; answers are model-generated summaries that can be incomplete or wrong, so always follow the cited links.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -40530,16 +40508,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Andi",
+      "andisearch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "deep-web-search",
-      "artificial-intelligence"
+      "artificial-intelligence",
+      "ai-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/andi.md"
   },
   {
@@ -60614,7 +60596,7 @@
   {
     "id": "signal-private-messenger",
     "name": "Signal Private Messenger",
-    "description": "Identity verification, account discovery via phone/email, community research",
+    "description": "Use when you have a `phone` and want to check whether it has a Signal account — returns account existence and any public profile name/avatar.",
     "url": "https://signal.org/",
     "category": "documents-metadata",
     "path": [
@@ -60623,38 +60605,50 @@
       "apps",
       "instant-messaging"
     ],
-    "bestFor": "Identity verification, account discovery via phone/email, community research",
-    "input": "Phone numbers, email addresses, usernames",
-    "output": "Account existence, profile names, avatar images",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming whether a phone number is registered on Signal and reading its self-set profile name/avatar.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Very limited information exposure; encrypted content not accessible",
+    "costNote": "Free, open-source app. You need your own Signal account (a phone number) to run the contact-discovery check.",
+    "opsec": "active",
+    "opsecNote": "Adding the target's number as a contact queries Signal's servers and stages a potential conversation. Signal does not notify the owner that you looked, but if you send a message request they will see it — stop at the existence/profile check. Use a dedicated sock-puppet number/device, never your real account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "First-party, open-source, audited messenger (Signal Foundation); the registration signal is authoritative, though profile name/avatar are user-set and optional.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "signal-org"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Signal",
+      "signal.org"
+    ],
+    "tags": [
+      "instant-messaging",
+      "account-existence",
+      "phone-osint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/signal-private-messenger.md"
   },
   {
@@ -115611,43 +115605,50 @@
   },
   {
     "id": "bigfoot-and-ufo-map",
-    "name": "Bigfoot and UFO map",
-    "description": "Bigfoot, UFO and other sightings around USA and Europe",
+    "name": "Bigfoot & UFO Sightings Map",
+    "description": "Use when you have a `geolocation` and want crowdsourced anomaly-sighting points nearby — returns mapped Bigfoot/UFO/other sighting locations across the US and Europe.",
     "url": "https://www.google.com/maps/d/viewer?msa=0&mid=1PX4dE4ZRFR8pEnc2xHATGQe1rDA&ll=33.679013212530805%2C-38.36085893876531&z=3",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing a crowdsourced Google map of reported Bigfoot, UFO, and other anomaly sightings.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google My Maps layer; no account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "Passive map viewing hosted by Google; you browse a static crowdsourced layer, so there is no subject-specific query to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-author Google My Maps layer aggregating self-reported \"sightings\"; entries are anecdotal, unverified, and novelty-grade.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bigfoot and UFO map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
+      "Anomalies and \"Lost Places\"",
+      "crowdsourced-map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/bigfoot-and-ufo-map.md"
   },
   {
@@ -144247,44 +144248,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/minipaint.md"
-  },
-  {
-    "id": "movio-la",
-    "name": "Movio.la",
-    "description": "Create spoken person video from text",
-    "url": "https://www.movio.la/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/movio-la.md"
   },
   {
     "id": "museo",
@@ -215383,7 +215346,8 @@
       "macron-campaign-emails",
       "sony-archives",
       "wikileaks",
-      "wikileaks-search"
+      "wikileaks-search",
+      "ice-patrol"
     ],
     "aliases": [
       "AKP emails",
@@ -239162,51 +239126,54 @@
   },
   {
     "id": "international-monetary-fund",
-    "name": "International Monetary Fund",
-    "description": "Website providing data and publications regarding IMF lending, exchange rates, and other economic and financial indicators",
+    "name": "IMF Data",
+    "description": "Use when you need macro-financial context on a country or lending program — returns economic indicators, exchange rates, and IMF program/publication records.",
     "url": "https://www.imf.org/en/Data",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative country-level economic data and IMF lending/program records for background and entity context.",
     "selectorsIn": [
-      "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, official IMF data portal; most datasets are open with no account (bulk API access also free).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive access to a public institutional data portal; you query countries and indicators, not people, so there is nothing subject-specific to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party International Monetary Fund data; authoritative for the economic indicators and program records it publishes.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "imf-world-economic-outlook-database"
     ],
+    "aliases": [
+      "IMF Data",
+      "imf.org/data"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "company-search",
+      "economic-data"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/international-monetary-fund.md"
   },
   {
@@ -252535,37 +252502,49 @@
   {
     "id": "paperpanda",
     "name": "PaperPanda",
-    "description": "In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registration or payment. This extension finds freely available PDF versions of articles in one click.",
-    "url": "https://chrome.google.com/webstore/detail/paperpanda-%E2%80%94-get-millions/ggjlkinaanncojaippgbndimlhcdlohf/related?utm_source=web",
+    "description": "Use when you have a paywalled academic article and want a free full-text PDF — returns a legally-available open-access copy in one click.",
+    "url": "https://chrome.google.com/webstore/detail/paperpanda-%E2%80%94-get-millions/ggjlkinaanncojaippgbndimlhcdlohf",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-click retrieval of freely available PDF versions of scientific papers behind paywalls.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser extension; no account or payment. Sources legal open-access copies (repositories, preprints, author pages).",
+    "opsec": "passive",
+    "opsecNote": "The extension sends the article DOI/identifier to its lookup backend to find a copy; that discloses which paper you are reading to the extension provider. For sensitive research use a clean browser profile. It retrieves legal open-access copies, not pirated ones.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-built academic-access extension (Unpaywall-style); it locates legally-hosted copies, so results depend on whether an open version exists.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PaperPanda",
+      "Paper Panda extension"
+    ],
     "tags": [
-      "Science"
+      "Science",
+      "academic-access",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/paperpanda.md"
   },
   {
@@ -274095,42 +274074,39 @@
   },
   {
     "id": "canadian-department-of-finance",
-    "name": "Canadian Department of Finance",
-    "description": "Canada's Department of Finance site with searchable database",
+    "name": "Canada Department of Finance",
+    "description": "Use when you need official Canadian federal fiscal/economic documents or named officials — returns budgets, consultations, publications, and contacts.",
     "url": "https://www.canada.ca/en/department-finance.html",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Canada's federal finance department for budgets, consultations, publications, and named officials.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Official Government of Canada site; free and open, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive browsing/searching of a public government site; no per-subject query is required and nothing sensitive is disclosed by reading it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Government of Canada department site; authoritative for federal fiscal policy documents and official contacts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "canadian-business-research",
       "completed-access-to-information-requests",
@@ -274142,6 +274118,20 @@
       "canadian-importers-database",
       "canadian-copyrights-database"
     ],
+    "aliases": [
+      "Department of Finance Canada",
+      "Finance Canada"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "government",
+      "canada"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/canadian-department-of-finance.md"
   },
   {
@@ -278407,25 +278397,30 @@
   },
   {
     "id": "encyclopedia-of-math",
-    "name": "Encyclopedia of Math",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on mathematics",
+    "name": "Encyclopedia of Mathematics",
+    "description": "Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, references, and attributions.",
     "url": "https://www.encyclopediaofmath.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up rigorous definitions of mathematical concepts and the people/works a theorem is attributed to.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open wiki (maintained by the European Mathematical Society and Springer); no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reference lookup with no per-subject query; ordinary web browsing, nothing to leak beyond standard logging.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Curated academic wiki backed by the EMS/Springer with editorial oversight; far more reliable than an open-edit wiki for its subject.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -278434,15 +278429,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Encyclopedia of Math",
+      "encyclopediaofmath.org",
+      "EoM"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reference",
+      "mathematics"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/encyclopedia-of-math.md"
   },
   {
@@ -280773,46 +280774,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/galaxy-search-directory.md"
-  },
-  {
-    "id": "game-convention-central-player-search",
-    "name": "Game Convention Central Player Search",
-    "description": "Website that offers a search engine for locating players of leading games and gaming communities",
-    "url": "http://www.gameconventioncentral.com/p/player-game-search.html",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/game-convention-central-player-search.md"
   },
   {
     "id": "gametracker-search",
@@ -284627,46 +284588,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/https-vulmon-com.md"
-  },
-  {
-    "id": "hubii",
-    "name": "Hubii",
-    "description": "OSINT tool: Hubii.",
-    "url": "https://hubii.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "news-search"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/news-search/hubii.md"
   },
   {
     "id": "hunter-search-engine",
@@ -290708,40 +290629,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/mymunka-safe-search-engine-for-kids.md"
-  },
-  {
-    "id": "mywoodle-com",
-    "name": "Mywoodle.com",
-    "description": "OSINT tool: Mywoodle.com.",
-    "url": "https://mywoodle.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/mywoodle-com.md"
   },
   {
     "id": "najdi-slovenia",
@@ -302190,25 +302077,30 @@
   },
   {
     "id": "termwiki",
-    "name": "Termwiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on words and terms",
+    "name": "TermWiki",
+    "description": "Use when you have a specialised or foreign-language term and want its meaning/translation — returns multilingual definitions and the contributor behind an entry.",
     "url": "http://www.termwiki.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up and translating industry/technical terminology across many languages.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read; contributing/editing requires a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reference lookup; searching a term is not a per-person query. Ordinary browsing, nothing sensitive leaked. Only creating a contributor account leaves a footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced multilingual terminology wiki (operated by CSOFT); entries are community-contributed, so quality varies by term and language.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -302217,15 +302109,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TermWiki",
+      "termwiki.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "terminology",
+      "translation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/termwiki.md"
   },
   {

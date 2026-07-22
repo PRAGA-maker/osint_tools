@@ -12,7 +12,7 @@ kind: group-index
 - **`ftp-search/`** — 1 skill(s) below.
 - **`general-search/`** — 15 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
-- **`news-search/`** — 11 skill(s) below.
+- **`news-search/`** — 10 skill(s) below.
 - **`other-search/`** — 1 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
@@ -128,7 +128,7 @@ kind: group-index
 - **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
 - **`campaign-finance-reports-and-data`** (medium) — Use when you have a `name` and want US federal political donation records — returns address, employer-org, and occupation from FEC filings.
 - **`canadian-charity-search`** (medium) — Use when you have a charity or person name and want the CRA registered-charity record — returns employer-org status, address, directors/trus
-- **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
+- **`canadian-department-of-finance`** (medium) — Use when you need official Canadian federal fiscal/economic documents or named officials — returns budgets, consultations, publications, and
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Use when you have a `name` or `address`/region and want to find a Canadian lawyer or law firm — returns contact details, firm, address and p
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
@@ -219,7 +219,7 @@ kind: group-index
 - **`ekoru`** (medium) — Use when you want an alternative web search that doesn't track/profile you — a privacy-branded metasearch; query a `name`/`username`/`domain
 - **`elocalfinder-hybrid-meta-search`** (low) — Use when you have a US `name` or business term and want the same query run across several web engines side by side — returns social-profile 
 - **`elsevier`** (low) — OSINT tool: Elsevier.
-- **`encyclopedia-of-math`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on m
+- **`encyclopedia-of-math`** (medium) — Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, re
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
 - **`eniro-sweden`** (low) — OSINT tool: Eniro (Sweden).
 - **`entireweb-text-based-search-engine`** (medium) — Surface web search engine covering worldwide results
@@ -268,7 +268,6 @@ kind: group-index
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Use when you have an organisation or topic and want human-curated site listings a crawler-based engine buried — returns domain and social-pr
-- **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
 - **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
@@ -466,7 +465,6 @@ kind: group-index
 - **`myallsearch`** (low) — OSINT tool: Myallsearch.
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
-- **`mywoodle-com`** (medium) — OSINT tool: Mywoodle.com.
 - **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
 - **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
@@ -702,7 +700,7 @@ kind: group-index
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
 - **`tabnine`** (medium) — Java code search engine
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
-- **`termwiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on w
+- **`termwiki`** (medium) — Use when you have a specialised or foreign-language term and want its meaning/translation — returns multilingual definitions and the contrib
 - **`terrorism-reports`** (medium) — Use when you have a `name` or `employer-org` and want to check it against the US State Department's congressionally-mandated annual terroris
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie

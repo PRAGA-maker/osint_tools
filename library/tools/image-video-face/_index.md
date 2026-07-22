@@ -211,7 +211,6 @@ kind: group-index
 - **`metatube-com`** (high) — Use when you have a `name`/`username` or keyword and want to find videos about a subject aggregated from across platforms — returns social-p
 - **`midomi-music-search-engine`** (high) — Use when you have an audio clip, hum, or song playing in a subject's video and want to identify the track — returns song title/artist metada
 - **`minipaint`** (high) — Use when you need a free in-browser photo editor to crop, sharpen, adjust, or annotate a missing-person image before running face/reverse-im
-- **`movio-la`** (medium) — Create spoken person video from text
 - **`museo`** (low) — Use when you want to keyword/color-search public-domain art and museum image collections — returns artworks/images, not people; low direct v
 - **`musipedia-music-search-engine`** (high) — Use when you have a melody (hummed, whistled, or tapped) — e.g. background music in a subject's video — and want to identify the tune; retur
 - **`mxface-ai`** (high) — Use when you have two photos and need a 1:1 face-match score (same person or not), or face detection/landmarks — returns a similarity score 

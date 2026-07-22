@@ -241,7 +241,6 @@ kind: group-index
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`polymeta-news`** (medium) — International news website
-- **`popsugar-australia`** (medium) — Website related to fashion trends, entertainment, beauty, and fitness
 - **`postach-io`** (medium) — Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` a
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
 - **`proboards`** (low) — OSINT tool: ProBoards.
@@ -283,7 +282,7 @@ kind: group-index
 - **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
 - **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
 - **`smat`** (low) — OSINT tool: smat.
-- **`snippet-host`** (medium) — OSINT tool: snippet.host.
+- **`snippet-host`** (medium) — Use when you have a `username` or keyword and want public code/text pastes — returns snippets that may leak credentials, contacts, or handle
 - **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expo
