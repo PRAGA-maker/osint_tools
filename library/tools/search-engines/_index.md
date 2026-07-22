@@ -469,7 +469,7 @@ kind: group-index
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
-- **`onlinenewspapers`** (low) — OSINT tool: OnlineNewspapers.
+- **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
 - **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.
 - **`open-directory-finder`** (low) — OSINT tool: Open Directory Finder.
 - **`open-directory-search`** (low) — OSINT tool: Open Directory Search.

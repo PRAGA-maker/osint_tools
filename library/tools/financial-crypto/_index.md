@@ -81,7 +81,7 @@ kind: group-index
 - **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
 - **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
-- **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
+- **`importyeti`** (low) — Use when you have a company `name`/`employer-org` and want its overseas suppliers and shipment history from US customs data — returns suppli
 - **`insolvency-govt-nz`** (medium) — Use when you have a `name` in New Zealand and want to check for insolvency — returns bankruptcies, No Asset Procedures, and liquidations wit
 - **`insolvencydirect-bis-gov-uk`** (medium) — Use when you have a `name` and want to check UK personal-insolvency records (bankruptcies, IVAs, debt relief orders) — returns the individua
 - **`jahs-ie`** (medium) — Use when you have an Irish subject's `name` and want to check whether they hold an insolvency/debt arrangement — returns `address`, `dob` an

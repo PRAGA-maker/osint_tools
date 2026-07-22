@@ -61,7 +61,7 @@ kind: group-index
 - **`bendobrown`** (low) — OSINT tool: Bendobrown.
 - **`bevigil-cli`** (low) — OSINT tool: BeVigil-CLI.
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
-- **`bitwarden`** (low) — OSINT tool: Bitwarden.
+- **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
 - **`bizint`** (low) — OSINT tool: Bizint.
 - **`blender`** (low) — Blender is an open-source 3D creation suite supporting the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing, and
 - **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif

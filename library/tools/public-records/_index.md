@@ -276,7 +276,7 @@ kind: group-index
 - **`european-union-open-data-portal`** (low) — Use when you need official EU datasets — sanctions lists, company/funding records, statistics, geospatial data — for a subject or entity — r
 - **`europeana`** (medium) — Use when you have a `name`, place, or `employer-org` and want historical photos, records, artworks or documents about them — returns digitiz
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
-- **`eurostat`** (low) — OSINT tool: Eurostat.
+- **`eurostat`** (low) — Use when you need official EU statistics — demographics, economy, migration, crime, regional data — to build context around a place, sector 
 - **`exa-ai`** (high) — Use when you have a company `name` or website `domain` and want an AI-compiled dossier — people, funding, competitors, news — returns `emplo
 - **`explainpaper`** (low) — Use when you have a dense academic/technical `document-id` (a paper) and want plain-language explanations of it — returns simplified explana
 - **`explee-com`** (high) — Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-

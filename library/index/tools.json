@@ -1812,37 +1812,44 @@
   {
     "id": "bitwarden",
     "name": "Bitwarden",
-    "description": "OSINT tool: Bitwarden.",
+    "description": "Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. Investigator opsec, not a lookup.",
     "url": "https://bitwarden.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Generating and safely storing unique credentials per persona/account so investigative identities stay separated and uncompromised.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier covers unlimited passwords/devices and is genuinely usable; a low-cost Premium and paid Teams/Enterprise add extras. Open source and self-hostable for free.",
+    "opsec": "passive",
+    "opsecNote": "This is defensive tooling for you, not a query against a subject. It keeps each sock-puppet's credentials unique and isolated. Protect the master password with a strong passphrase + 2FA; if it's compromised, every stored identity is. Consider self-hosting or separate vaults for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Open source and independently security-audited; one of the most widely trusted password managers, with a self-hostable server.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Bitwarden"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "password-manager"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/bitwarden.md"
   },
   {
@@ -80033,43 +80040,60 @@
   {
     "id": "pulsedive",
     "name": "Pulsedive",
-    "description": "IOC enrichment and risk scoring",
+    "description": "Use when you have an `ip-address`, `domain` or URL (IOC) and want enrichment, risk scoring and linked indicators — returns threat context and related `domain`s/`ip-address`es.",
     "url": "https://pulsedive.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "IOC enrichment and risk scoring",
-    "input": "IP, URL, domain, or IOC",
-    "output": "Enriched threat intelligence and risk factors",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enriching an indicator (IP/domain/URL) with risk score, threat context and linked IOCs from aggregated feeds.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account gives web search and a limited API quota; higher volume, active scanning and bulk features are paid.",
     "opsec": "passive",
-    "opsecNote": "Passive querying of enrichment database",
+    "opsecNote": "Passive lookups query Pulsedive's aggregated database, not the target — the subject sees nothing. Note Pulsedive can also actively scan an indicator on request; that would touch the target, so keep to passive enrichment unless you intend a live probe.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-established threat-intelligence enrichment platform aggregating public feeds; risk scores are derived and best treated as a signal to corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "onyphe",
+      "securitytrails",
+      "leakix"
+    ],
+    "aliases": [
+      "Pulsedive",
+      "pulsedive.com"
+    ],
+    "tags": [
+      "threat-intel",
+      "ioc-enrichment"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/pulsedive.md"
   },
   {
@@ -108420,13 +108444,13 @@
   {
     "id": "importyeti",
     "name": "ImportYeti",
-    "description": "Search 60 million US customs sea shipment records, find company suppliers.",
+    "description": "Use when you have a company `name`/`employer-org` and want its overseas suppliers and shipment history from US customs data — returns supplier orgs and business `associate`s.",
     "url": "https://www.importyeti.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a company's suppliers, buyers and trade relationships from 60M+ US customs sea-shipment (bill-of-lading) records.",
     "selectorsIn": [
       "employer-org",
       "name"
@@ -108435,29 +108459,36 @@
       "employer-org",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the core US import shipment data; some advanced features/exports are paid.",
+    "opsec": "passive",
+    "opsecNote": "You search a public customs dataset, not the company — nothing is sent to the subject. Basic search works without an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built on official US Customs bill-of-lading records (the same source as Panjiva/ImportGenius); the underlying data is government-sourced and reliable, aggregation caveats aside.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Import Yeti",
+      "importyeti.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "companies-finance"
+      "companies-finance",
+      "trade-data"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/importyeti.md"
   },
   {
@@ -223437,49 +223468,55 @@
   {
     "id": "eurostat",
     "name": "Eurostat",
-    "description": "OSINT tool: Eurostat.",
+    "description": "Use when you need official EU statistics — demographics, economy, migration, crime, regional data — to build context around a place, sector or population — returns structured datasets.",
     "url": "http://ec.europa.eu/eurostat",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative EU/European statistics (population, economy, migration, regional indicators) for background and base rates.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open; no account to browse, download or use the API.",
+    "opsec": "passive",
+    "opsecNote": "Querying published aggregate statistics is passive and anonymous — no login, no target contact. It's macro/background data, not information about individuals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official statistical office of the European Union; authoritative, methodologically documented data used across policy and journalism.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "e-justice-europa-eu",
+      "european-union-open-data-portal",
       "eu-consolidated-corporate-registers",
+      "e-justice-europa-eu",
       "eu-sanctions-tool",
       "europa-eu",
       "europa-press-releases",
       "european-commission-home-affairs",
-      "european-union-open-data-portal",
       "frontex-migratory-map",
       "inspire-geoportal",
       "vat-number-validation"
     ],
+    "aliases": [
+      "Eurostat",
+      "ec.europa.eu/eurostat"
+    ],
+    "tags": [
+      "data-and-statistics"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/eurostat.md"
   },
   {
@@ -284540,37 +284577,44 @@
   {
     "id": "onlinenewspapers",
     "name": "OnlineNewspapers",
-    "description": "OSINT tool: OnlineNewspapers.",
+    "description": "Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousands of newspapers worldwide.",
     "url": "http://www.onlinenewspapers.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Locating local and national newspaper websites by country/region to find hyperlocal coverage of a person or event.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a directory and reading published news is passive — nothing is sent to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "A long-standing directory of newspaper websites; it's a link index, so the authority of any story is the individual outlet's, and some listed links may be stale.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Online Newspapers",
+      "onlinenewspapers.com"
+    ],
     "tags": [
       "news"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/onlinenewspapers.md"
   },
   {
@@ -341011,7 +341055,13 @@
     "relatedTools": [
       "baidu",
       "baidu-image-search",
-      "baidu-maps"
+      "baidu-maps",
+      "baidu-china",
+      "baidu-com",
+      "baidu-image-search-2",
+      "baidu-images",
+      "baiduknows-search-engine-china",
+      "baike-baidu-chinese-language"
     ],
     "aliases": [
       "百度翻译",

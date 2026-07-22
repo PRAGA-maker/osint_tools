@@ -30,6 +30,12 @@ relatedTools:
 - baidu
 - baidu-image-search
 - baidu-maps
+- baidu-china
+- baidu-com
+- baidu-image-search-2
+- baidu-images
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 aliases:
 - 百度翻译
 - fanyi.baidu.com

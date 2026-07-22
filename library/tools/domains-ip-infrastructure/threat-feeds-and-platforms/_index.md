@@ -20,7 +20,7 @@ kind: group-index
 - **`malware-patrol`** (low) — Malware IOC and feed intelligence
 - **`mlsecproject-combine`** (low) — Threat feed aggregation
 - **`mr-looquer-ioc-feed-1st-dual-stack-threat-feed`** (low) — IOC threat feed access
-- **`pulsedive`** (low) — IOC enrichment and risk scoring
+- **`pulsedive`** (low) — Use when you have an `ip-address`, `domain` or URL (IOC) and want enrichment, risk scoring and linked indicators — returns threat context an
 - **`rescure-cyber-threat-intelligence-project`** (low) — Threat intelligence feeds
 - **`scam-database`** (low) — Scam and fraud reporting
 
