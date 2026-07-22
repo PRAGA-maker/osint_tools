@@ -111,7 +111,6 @@ kind: group-index
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
 - **`waymore`** (medium) — Use when you have a `domain` and want the fullest possible historical URL/content footprint — returns archived links and downloaded response
-- **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
 - **`web-archive-org`** (medium) — Use when you have a domain/URL and want its historical snapshots — returns past versions of a page (deleted content, old contact details, pr
 - **`web-archives-chrome-google-com`** (medium) — Use when you have a `domain`/URL and want archived or cached copies of it fast — a browser extension that queries Wayback, Archive.today, Go
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.

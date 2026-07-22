@@ -22791,42 +22791,6 @@
     "_file": "library/tools/archives-cache/waymore.md"
   },
   {
-    "id": "web-archive-bibalex-org",
-    "name": "web.archive.bibalex.org",
-    "description": "OSINT tool: web.archive.bibalex.org.",
-    "url": "http://web.archive.bibalex.org/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/web-archive-bibalex-org.md"
-  },
-  {
     "id": "web-archive-org",
     "name": "web.archive.org (Wayback Machine)",
     "description": "Use when you have a domain/URL and want its historical snapshots — returns past versions of a page (deleted content, old contact details, prior identities) and can save a live page now.",
@@ -44005,29 +43969,35 @@
   {
     "id": "torbot",
     "name": "TorBot",
-    "description": "Automated dark web crawling and onion link collection",
+    "description": "Use when you have a seed `domain` (.onion or clearnet) and want to crawl and map dark-web link structure — returns discovered `domain` links, page titles and metadata.",
     "url": "https://github.com/DedSecInside/TorBot",
     "category": "dark-web",
     "path": [
       "dark-web",
       "discovery"
     ],
-    "bestFor": "Automated dark web crawling and onion link collection",
-    "input": "Seed onion links and crawl configuration",
-    "output": "Crawled onion pages, discovered links, and metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Automated .onion crawling from a seed link to build a link tree of connected dark-web sites and surface pages of interest.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL); the only cost is running it yourself over Tor.",
     "opsec": "active",
-    "opsecNote": "Crawling generates repeated target requests that can be detected by destination services.",
+    "opsecNote": "This is ACTIVE — TorBot makes real requests to every crawled site, which those hidden services can log. Always route through Tor (never crawl .onion clearnet-side), throttle depth, and run from an isolated VM/identity; deep crawls can be noisy and slow.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Actively maintained open-source project (DedSecInside; v4.1.1 released 2026-07-19, 1000+ commits) — code is auditable, but crawl results are only as trustworthy as the hidden services visited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -44035,11 +44005,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DedSecInside/TorBot"
+    ],
+    "tags": [
+      "dark-web",
+      "onion-crawler",
+      "cli",
+      "open-source"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/discovery/torbot.md"
   },
   {
@@ -47949,47 +47926,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyfinder-com.md"
-  },
-  {
-    "id": "onlyleaks-pro",
-    "name": "onlyleaks.pro",
-    "description": "OSINT tool: onlyleaks.pro.",
-    "url": "https://www.onlyleaks.pro/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/onlyleaks-pro.md"
   },
   {
     "id": "onlysearch-co",
@@ -272926,46 +272862,6 @@
     "_file": "library/tools/search-engines/comicvine.md"
   },
   {
-    "id": "command-e",
-    "name": "Command E",
-    "description": "Universal search and productivity app",
-    "url": "https://getcommande.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/command-e.md"
-  },
-  {
     "id": "conservapedia",
     "name": "Conservapedia",
     "description": "Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns background and `associate` links.",
@@ -273881,24 +273777,31 @@
   {
     "id": "dakkadakka-wargame-player-finder",
     "name": "DakkaDakka Wargame Player Finder",
-    "description": "Website that offers a search engine for locating players of leading games and gaming communities",
+    "description": "Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/location — returns `social-profile`, `geolocation`.",
     "url": "http://www.dakkadakka.com/core/player_finder.jsp",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating members of the DakkaDakka wargaming community by area to tie a hobbyist alias to a rough location and forum profile.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free community feature; posting/messaging needs a free forum account, but the finder is browsable.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the player finder is passive. To message a member you must register and log in — do that only from a sock-puppet account, never an attributable one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A member-submitted directory on a large, long-running hobby forum — locations and details are self-reported and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -273907,15 +273810,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dakkadakka.com player finder"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "hobby-community"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dakkadakka-wargame-player-finder.md"
   },
   {

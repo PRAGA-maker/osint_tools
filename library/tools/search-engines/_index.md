@@ -155,7 +155,6 @@ kind: group-index
 - **`colorado-licensed-professional-lookup`** (medium) — Use when you have a `name` and think the subject holds a Colorado professional license — returns license status, profession/`employer-org`, 
 - **`colorado-unclaimed-property-search`** (medium) — Use when you have a `name` (person or business) and a Colorado connection and want to find unclaimed property/money the state holds for them
 - **`comicvine`** (medium) — Use when you have a `username` seen elsewhere and want to check for a matching comics-community profile — returns `social-profile` and forum
-- **`command-e`** (medium) — Universal search and productivity app
 - **`conservapedia`** (medium) — Use when you have a `name` of a public/political figure and want a biographical article from a US-conservative viewpoint — returns backgroun
 - **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
 - **`context-menu-search`** (medium) — Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine
@@ -175,7 +174,7 @@ kind: group-index
 - **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
-- **`dakkadakka-wargame-player-finder`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`dakkadakka-wargame-player-finder`** (medium) — Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/loc
 - **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
 - **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).

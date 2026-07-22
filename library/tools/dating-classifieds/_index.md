@@ -75,7 +75,6 @@ kind: group-index
 - **`onlyfans-com`** (medium) — Use when you have a `username` and want to confirm/read a subject's public OnlyFans creator profile — returns `social-profile`, `name`, some
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — OSINT tool: OnlyFinder.
-- **`onlyleaks-pro`** (medium) — OSINT tool: onlyleaks.pro.
 - **`onlysearch-co`** (low) — OSINT tool: Onlysearch.co.
 - **`onlysuomi`** (low) — Finnish OnlyFans directory.
 - **`onlytop-fr`** (medium) — Use when you have a `username`, `name`, or location and want to find a matching OnlyFans creator profile — returns `social-profile`, locatio

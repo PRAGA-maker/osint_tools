@@ -2,23 +2,23 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7719 total · 4513 full · 3206 stub (58% enriched)
+**Tools:** 7716 total · 4515 full · 3201 stub (58% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3635 · medium: 2120 · high: 1964
+low: 3635 · medium: 2117 · high: 1964
 
 ## Tools by trust
-community: 3536 · unverified: 2669 · trusted: 1505 · untrustworthy: 6 · personal: 3
+community: 3538 · unverified: 2664 · trusted: 1505 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 12/455
-- `archives-cache` — 81/126
+- `archives-cache` — 81/125
 - `communities-forums` — 232/330
-- `dark-web` — 34/116
-- `dating-classifieds` — 75/103
+- `dark-web` — 35/116
+- `dating-classifieds` — 75/102
 - `documents-metadata` — 37/312
 - `domains-ip-infrastructure` — 100/716
 - `email` — 245/246
@@ -32,7 +32,7 @@ community: 3536 · unverified: 2669 · trusted: 1505 · untrustworthy: 6 · pers
 - `people-search` — 255/258
 - `phone` — 134/137
 - `public-records` — 838/1041
-- `search-engines` — 463/843
+- `search-engines` — 464/842
 - `social-networks` — 715/791
 - `training-ctf` — 4/12
 - `translation-language` — 15/103
@@ -42,7 +42,7 @@ community: 3536 · unverified: 2669 · trusted: 1505 · untrustworthy: 6 · pers
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 986 leaves
-- `library/tools/search-engines` — 791 leaves
+- `library/tools/search-engines` — 790 leaves
 - `library/tools/social-networks` — 763 leaves
 - `library/tools/opsec-investigator-tooling` — 526 leaves
 - `library/tools/domains-ip-infrastructure` — 475 leaves
@@ -57,9 +57,9 @@ community: 3536 · unverified: 2669 · trusted: 1505 · untrustworthy: 6 · pers
 - `library/tools/messaging` — 173 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 126 leaves
-- `library/tools/archives-cache` — 111 leaves
+- `library/tools/archives-cache` — 110 leaves
 - `library/tools/dark-web` — 105 leaves
-- `library/tools/dating-classifieds` — 105 leaves
+- `library/tools/dating-classifieds` — 104 leaves
 - `library/tools/financial-crypto` — 97 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves
