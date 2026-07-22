@@ -170,7 +170,7 @@ kind: group-index
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — OSINT tool: Free Fax.
 - **`free-proxy-list`** (low) — Free proxies that are freshly checked and updated every 10 minutes
-- **`free-proxy-world`** (low) — Free proxy list, sortable by proxy type, anonymity and country
+- **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
 - **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
 - **`freshstart`** (low) — multi-login browser extension
 - **`generate-data`** (low) — Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or Java
@@ -239,7 +239,7 @@ kind: group-index
 - **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Website that scans suspicious or potentially compromised files with multiple anti-virus programs
-- **`jsoncrack`** (low) — Online tool for visualizing, editing and searching for text in JSON files. With the ability to save, export and share results via a link.
+- **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`jsonvisio`** (low) — Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files.
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services

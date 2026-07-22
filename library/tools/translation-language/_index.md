@@ -63,7 +63,7 @@ kind: group-index
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
 - **`meowni-ca`** (low) — OSINT tool: meowni.ca.
 - **`microsoft-translator`** (low) — OSINT tool: Microsoft Translator.
-- **`netlingo-listing-of-chat-acronyms`** (low) — Language-related listing of sms, txt, msn, slang, symbols and abbreviations used in online chats
+- **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Language-related search for slang words in current and former use on the World Wide Web
 - **`odysseytranslator`** (low) — OSINT tool: OdysseyTranslator.
 - **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use

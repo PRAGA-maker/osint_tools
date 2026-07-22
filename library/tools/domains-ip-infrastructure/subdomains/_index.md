@@ -18,7 +18,7 @@ kind: group-index
 - **`gobuster`** (low) — Fast DNS and vhost brute-force enumeration
 - **`google-subdomains`** (low) — Indexed subdomain discovery, publicly visible subdomain enumeration
 - **`owasp-maryam`** (low) — Scriptable multi-module OSINT reconnaissance workflows
-- **`pentest-tools-com-subdomains`** (low) — Quick browser-based subdomain discovery without local setup
+- **`pentest-tools-com-subdomains`** (low) — Use when you have a `domain` and want a quick browser-based subdomain enumeration with no local setup — returns discovered subdomains and DN
 - **`recon-ng`** (low) — Modular web recon, API-driven data collection
 - **`seclists-dns-subdomains`** (low) — Supplying high-quality DNS wordlists for enumeration tools
 - **`sublist3r`** (low) — Combining passive and active subdomain discovery in one tool

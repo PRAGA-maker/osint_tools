@@ -254,7 +254,7 @@ kind: group-index
 - **`the-time-now`** (low) — Tells you what time it is in any location or time zone
 - **`the-time-zone-converter`** (low) — Converts time between time zones and locations
 - **`thedorkbox`** (low) — A collection of Google dorks &amp; OSINT techniques
-- **`thexifer-net`** (low) — OSINT tool: thexifer.net.
+- **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded
 - **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
 - **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
 - **`transferwise`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency

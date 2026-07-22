@@ -58909,13 +58909,13 @@
   {
     "id": "thexifer-net",
     "name": "thexifer.net",
-    "description": "OSINT tool: thexifer.net.",
+    "description": "Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded `geolocation`.",
     "url": "https://www.thexifer.net/index.php",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Web-based viewing and editing of image metadata (175+ EXIF/IPTC/XMP tags), including GPS coordinates, plus one-click metadata stripping.",
     "selectorsIn": [
       "image"
     ],
@@ -58923,32 +58923,38 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows ~5 files / 60 MB with limited batch features; premium unlocks more.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to thexifer's servers, so the file (and any embedded GPS/identity) leaves your machine. For a sensitive subject's photo, prefer a local tool like exiftool; only use this when the image is already public or non-sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A functional third-party EXIF web tool; the metadata it displays is read directly from the file and independently verifiable with exiftool.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "thexifer"
+    ],
+    "aliases": [
+      "theXifer",
+      "thexifer.net"
+    ],
     "tags": [
       "exifdata",
       "EXIF Data Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thexifer"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/thexifer-net.md"
   },
   {
@@ -73062,45 +73068,53 @@
   {
     "id": "ip-fingerprints-reverse-ip-lookup",
     "name": "IP Fingerprints - Reverse IP Lookup",
-    "description": "Find domains on shared hosting",
+    "description": "Use when you have an `ip-address` and want the other domains hosted on it (shared hosting neighbors) — returns a list of co-hosted `domain`s.",
     "url": "https://ipfingerprints.com/reverseip.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "neighbor-domains"
     ],
-    "bestFor": "Find domains on shared hosting",
-    "input": "IP address",
-    "output": "List of domains on IP",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding other domains sharing a server/IP with your target (neighbor domains on shared hosting).",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account. Part of the ipfingerprints.com free IP toolset (geolocation, WHOIS, port scan).",
     "opsec": "passive",
-    "opsecNote": "Passive DNS reverse lookup.",
+    "opsecNote": "The reverse lookup queries a hosted dataset, not the target server, so the subject isn't contacted. Note that ipfingerprints also offers an active port scanner — that separate tool would touch the target, so stay on the reverse-IP page for passive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running free IP-tools site; reverse-IP results depend on its data source and are best corroborated with a second neighbor-domain tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "ip-finger-prints",
       "ip-fingerprints",
       "ipfingerprints"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IPFingerprints reverse IP",
+      "reverse IP lookup"
+    ],
+    "tags": [
+      "reverse-ip",
+      "neighbor-domains"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/neighbor-domains/ip-fingerprints-reverse-ip-lookup.md"
   },
   {
@@ -79465,45 +79479,55 @@
   {
     "id": "pentest-tools-com-subdomains",
     "name": "Pentest-tools.com Subdomains",
-    "description": "Quick browser-based subdomain discovery without local setup",
+    "description": "Use when you have a `domain` and want a quick browser-based subdomain enumeration with no local setup — returns discovered subdomains and DNS details (`domain`).",
     "url": "https://pentest-tools.com/information-gathering/find-subdomains-of-domain",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Quick browser-based subdomain discovery without local setup",
-    "input": "Domain name",
-    "output": "List of discovered subdomains and related DNS intelligence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast, setup-free subdomain discovery for a domain, run from Pentest-Tools' cloud rather than your own host.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "A limited number of light scans are free (may require a free account); deeper enumeration, exports and API need a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "Scanning is performed by Pentest-Tools infrastructure, not directly from your host.",
+    "opsecNote": "Enumeration runs on Pentest-Tools' infrastructure, so probing traffic comes from their servers, not your IP. Your target and results are stored in your account, so use a dedicated login.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A reputable commercial pentest-tooling vendor; subdomain results are standard DNS/enumeration output that you can independently reproduce.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "pentest-tools-com"
+      "pentest-tools-com",
+      "securitytrails"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Pentest-Tools Find Subdomains"
+    ],
+    "tags": [
+      "subdomains",
+      "dns"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/pentest-tools-com-subdomains.md"
   },
   {
@@ -172786,24 +172810,27 @@
   {
     "id": "free-proxy-world",
     "name": "Free Proxy World",
-    "description": "Free proxy list, sortable by proxy type, anonymity and country",
+    "description": "Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port entries (use with strong caution).",
     "url": "https://www.freeproxy.world",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a filterable list of free public proxies (by country/anonymity/type) for low-stakes, throwaway browsing.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free proxy list; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Free public proxies are inherently untrustworthy — the operator can log, inject, or MITM your traffic, and many are compromised hosts. NEVER route logins, sensitive queries, or anything over HTTPS you care about through them. For real investigative anonymity use a paid VPN or Tor, not these.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An aggregator of anonymous public proxies of unknown provenance; neither the list nor the proxies themselves can be trusted, so treat every entry as hostile until proven otherwise.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -172812,15 +172839,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "freeproxy.world",
+      "Free Proxy World"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/free-proxy-world.md"
   },
   {
@@ -175657,39 +175688,49 @@
   },
   {
     "id": "jsoncrack",
-    "name": "Jsoncrack",
-    "description": "Online tool for visualizing, editing and searching for text in JSON files. With the ability to save, export and share results via a link.",
+    "name": "JSON Crack",
+    "description": "Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relationships — a visual JSON explorer.",
     "url": "https://jsoncrack.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Visualizing a JSON document as a navigable graph to understand nested structure and spot the fields that matter.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The web editor is free (open source; self-hostable); a premium/desktop version adds features. Basic visualization needs no account.",
+    "opsec": "passive",
+    "opsecNote": "The hosted editor sends your JSON to their service (and can create shareable links). Do NOT paste PII, credentials, or confidential case data — self-host the open-source version or use a local viewer for sensitive material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (AykutSarac/jsoncrack.com) with public source; it's a visualizer, so the only real concern is that the hosted version is remote.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jsonhero",
+      "cyberchef"
+    ],
+    "aliases": [
+      "JSONCrack",
+      "jsoncrack.com"
+    ],
     "tags": [
-      "NOOSINT tools",
-      "Visualization tools"
+      "Visualization tools",
+      "json"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/jsoncrack.md"
   },
   {
@@ -342972,24 +343013,25 @@
   {
     "id": "netlingo-listing-of-chat-acronyms",
     "name": "NetLingo Listing of Chat Acronyms",
-    "description": "Language-related listing of sms, txt, msn, slang, symbols and abbreviations used in online chats",
+    "description": "Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, including safety/\"leetspeak\" codes.",
     "url": "http://www.netlingo.com/acronyms.php",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding online/text chat acronyms, slang and abbreviations found in a subject's messages or posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference site (ad-supported); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference you read — nothing is sent to any subject and no lookup of a person is involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established internet-language reference; crowdsourced meanings, so a given acronym may have multiple or evolving interpretations.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -342998,15 +343040,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "NetLingo acronyms",
+      "chat acronym dictionary"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "language-translation-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/netlingo-listing-of-chat-acronyms.md"
   },
   {
