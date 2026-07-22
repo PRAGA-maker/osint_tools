@@ -157,7 +157,7 @@ kind: group-index
 - **`drishti`** (low) — Nodejs toolkit for OSINT
 - **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
-- **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
+- **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
@@ -176,7 +176,7 @@ kind: group-index
 - **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
-- **`gandi-uk`** (medium) — UK based service provider for registering websites and domain addresses
+- **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).
@@ -211,7 +211,6 @@ kind: group-index
 - **`heartbleed-check`** (low) — OSINT tool: Heartbleed Check.
 - **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
-- **`hostgator-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
 - **`httpfy`** (low) — A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redire

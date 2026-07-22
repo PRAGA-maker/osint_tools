@@ -754,7 +754,7 @@ kind: group-index
 - **`wikichristian`** (low) — Use when you have a `name` of a religious figure, denomination, or Christian topic and want a community encyclopedia entry — returns backgro
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile
-- **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
+- **`wikimatrix`** (low) — Use when you have a `username` or topic and want to discover which wiki platforms/communities exist to search it against — returns a directo
 - **`wikimedia-meta-wiki`** (low) — Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked
 - **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
 - **`wikiquote`** (medium) — Use when you have a `name` of a notable person and want sourced quotations that corroborate identity and surface associates — returns name a

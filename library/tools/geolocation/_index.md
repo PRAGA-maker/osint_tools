@@ -294,7 +294,7 @@ kind: group-index
 - **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
 - **`unixtime-org`** (medium) — Use when you have a Unix/epoch timestamp from `metadata-exif`, logs, or filenames and want the human date/time — returns the converted calen
 - **`unixtimestamp-com`** (medium) — Use when you have a Unix/epoch timestamp from metadata or a log and want the human date/time — returns the converted datetime to anchor an e
-- **`urbex-database-map`** (medium) — Europe lost places map based by Urbex database
+- **`urbex-database-map`** (medium) — Use when you have an approximate `geolocation` in Europe and want to identify abandoned/derelict "lost places" nearby — returns mapped `geol
 - **`us-crisis-monitor`** (medium) — Use when you have a `geolocation` or `address` in the US and want to know what protests, political violence, or armed-group activity was rec
 - **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.
 - **`usa-fishermap`** (low) — Use when you have a `geolocation` on a US freshwater body and want its bathymetry — returns a depth map (contours/spot depths) to support wa

@@ -102,7 +102,6 @@ kind: group-index
 - **`deck-blue`** (high) — Use when you have a Bluesky `username` and want to monitor their posts, searches and lists in real time across columns — returns live `socia
 - **`dev-to`** (high) — Use when you have a Mastodon `username`/handle and want the numeric account ID via the public API — returns social-profile metadata to pivot
 - **`diaspora`** (high) — Use when you have a `name` or `username` and want to check for a presence on the decentralised Diaspora* social network — returns a social-p
-- **`discord-bots`** (medium) — OSINT tool: Discord Bots.
 - **`discord-center`** (medium) — Use when you want to find or profile a public Discord community by topic or name — returns server listings (social-profile) with member coun
 - **`discord-chat-exporter`** (medium) — Use when you have access to a Discord server/channel and want an offline, searchable archive of its messages — returns exported chat logs (H
 - **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c

@@ -183,7 +183,7 @@ kind: group-index
 - **`company-search-tool`** (medium) — Use when you have a company name or an `employer-org`/`associate` link and want to investigate the company and its directors/owners across m
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
 - **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
-- **`competeshark`** (medium) — OSINT tool: CompeteShark.
+- **`competeshark`** (low) — Use when you have an `employer-org` or `domain` and want to monitor how a target company changes its website, pricing, and marketing over ti
 - **`completed-access-to-information-requests`** (medium) — Use when you have a topic, agency, or `name` and want to search summaries of already-completed Canadian federal ATI (freedom-of-information)
 - **`connectedpapers`** (low) — Use when you have an academic `name` or a paper and want to map their body of work and co-authors as a visual citation graph — returns colla
 - **`connecticut-registered-voter-verification`** (medium) — Use when you have a `name` and `dob` in Connecticut and want to confirm voter registration — returns registration status, town, and polling 
@@ -724,7 +724,6 @@ kind: group-index
 - **`planningalerts-org-au`** (high) — Use when you have an Australian `address`/area and want local development/planning applications — returns addresses, applicant details, and 
 - **`planningportal-nsw-gov-au`** (high) — Use when you have an `address` in New South Wales and want the property's planning, zoning, and land context — returns geolocation, lot/parc
 - **`planningsystemni-gov-uk`** (high) — Use when you have an `address` (or applicant/agent `name`) in Northern Ireland and want planning-application records tying a person to a pro
-- **`plunkett-research`** (medium) — OSINT tool: Plunkett Research.
 - **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
 - **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
 - **`police-complaint-lookup`** (low) — Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved of

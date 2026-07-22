@@ -19,7 +19,7 @@ kind: group-index
 - **`archive-org-downloader`** (medium) — Use when you have an archive.org `document-id`/URL for a borrow-only book and want the full text offline — returns a downloaded PDF you can 
 - **`archive-org`** (high) — Use when you have a `domain` or URL and want to retrieve historical snapshots of a page as it looked in the past — returns archived captures
 - **`archive-page-addons-mozilla-org`** (medium) — Use when you have a `domain`/URL and want to preserve a live page before it changes — saves a permanent archive.today snapshot you can cite 
-- **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
+- **`archive-page-chrome-google-com`** (medium) — Use when you have a `domain`/URL you are viewing and want to preserve a permanent snapshot before it changes — sends the current page to Arc
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
 - **`archive-vn`** (high) — Use when you have a `domain` or URL and want an on-demand, permanent snapshot of a page (including JS-heavy or short-lived content) — return
 - **`archivebox`** (medium) — Use when you need to preserve web pages, profiles, or posts before they change or vanish — self-hosted, it captures HTML/PDF/WARC/screenshot
