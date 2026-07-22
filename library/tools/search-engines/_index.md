@@ -52,7 +52,6 @@ kind: group-index
 - **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
 - **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
-- **`american-association-of-port-authorities`** (medium) — Site providing information on all the ports of the Western Hemisphere
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — A tool that helps developers view the Android source code.
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
@@ -144,7 +143,6 @@ kind: group-index
 - **`citeseerx`** (medium) — Use when you have an author `name` and want their academic papers/citations — a free scientific-literature search engine (CS-heavy); returns
 - **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
 - **`citizendium`** (medium) — Use when you have a `name` or topic and want an expert-authored encyclopedia entry as a Wikipedia cross-check — returns articles with contri
-- **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
 - **`citysearch`** (medium) — Use when you have a business `name` or `employer-org` and a `geolocation` and want its listing details — returns `address`, `phone`, and a `
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
 - **`clearing-and-depository-services`** (low) — Use when you need Canadian securities-market infrastructure info (participant lists, ISIN issuance, regulatory notices) — mostly institution
@@ -187,7 +185,6 @@ kind: group-index
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
-- **`defcad`** (medium) — Search engine for 3D printable models
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
 - **`digle`** (low) — OSINT tool: Digle.
@@ -695,7 +692,6 @@ kind: group-index
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
 - **`susper`** (low) — Use when you want a privacy-oriented open-source web search that isn't Google/Bing — returns web result links for a keyword query.
 - **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
-- **`tabnine`** (medium) — Java code search engine
 - **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
 - **`termwiki`** (medium) — Use when you have a specialised or foreign-language term and want its meaning/translation — returns multilingual definitions and the contrib
 - **`terrorism-reports`** (medium) — Use when you have a `name` or `employer-org` and want to check it against the US State Department's congressionally-mandated annual terroris

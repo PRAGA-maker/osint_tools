@@ -31,7 +31,6 @@ kind: group-index
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
-- **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
 - **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re

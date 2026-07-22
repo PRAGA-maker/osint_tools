@@ -24,7 +24,6 @@ kind: group-index
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
 - **`alamo-rental-receipts`** (medium) — OSINT tool: Alamo Rental Receipts.
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
-- **`ancapa-sciences-intelligence-analysis`** (medium) — Company specializing in analysis, education, and training for both the government and private industries
 - **`askmid`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm whether that vehicle is insured on the Motor Insurance Database — returns an insu
 - **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference
 - **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
@@ -41,7 +40,6 @@ kind: group-index
 - **`car-vehicle-model-recognition-online`** (medium) — Use when you have an `image` of a vehicle and want its brand, model, year and colour identified — returns a `physical-description` of the ve
 - **`caranalytics-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want the car's history and status — returns spec, MOT/tax and (paid) previous-keeper counts and p
 - **`cars-com-black-book-value`** (low) — Use when you have a known vehicle (make/model/year/mileage) and want an independent market value — returns a valuation figure to sanity-chec
-- **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
 - **`casa-aircraft-search-australia`** (medium) — Use when you have an Australian aircraft mark (VH-xxx) and want the aircraft and its registered holder — returns aircraft details, employer-
 - **`certified-aircraft-database`** (low) — Use when you have an aircraft tail number (`vehicle-plate`) and want to decode its country of registration — returns the `geolocation` (nati
 - **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy

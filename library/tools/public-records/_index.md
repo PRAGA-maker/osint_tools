@@ -128,7 +128,6 @@ kind: group-index
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
-- **`cal-poly-email-search`** (medium) — OSINT tool: Cal Poly Email Search.
 - **`california-registered-voter-verification`** (medium) — Use when you have a `name` + DOB and want to confirm California voter registration status — returns a registration confirmation, not a searc
 - **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
 - **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
@@ -169,7 +168,6 @@ kind: group-index
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
 - **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
 - **`clinicaltrials-gov`** (medium) — Use when you have an investigator/sponsor `name` or a study and want the people and places behind it — returns principal investigators, spon
-- **`cme-group`** (medium) — Information on trading, risk management, and more
 - **`cms-gov`** (medium) — Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the pay
 - **`college-police-uk`** (high) — Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's 
 - **`colorado-statewide-marriage-index`** (medium) — Use when you have a `name` and want to find their Colorado marriage record (1953–2006) — returns spouse `name`/`associate` and marriage `dob
@@ -549,7 +547,7 @@ kind: group-index
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
 - **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
-- **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
+- **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
 - **`library-of-congress-united-states`** (medium) — Use when you have a `name`, place or topic and want historical records — newspapers, directories, photos, manuscripts, maps — that can place
 - **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
@@ -719,7 +717,6 @@ kind: group-index
 - **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
 - **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
 - **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
-- **`pa-perry-county-2017-compensation-search-and-report`** (medium) — OSINT tool: PA Perry County 2017 Compensation Search and Report.
 - **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
@@ -840,7 +837,6 @@ kind: group-index
 - **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
 - **`sec-gov`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company af
 - **`secret-surveillance-catalogue`** (medium) — Use when you have a `device-id` / equipment name (an IMSI-catcher, cell-site simulator, or surveillance box) and want to understand its capa
-- **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
 - **`security-licence-status-verification`** (medium) — Use when you have a `name`, business name or licence number and want to confirm a British Columbia security-worker/business licence — return
 - **`seethroughny-pensions`** (medium) — Use when you have a `name` of a New York public-sector retiree and want their pension record — returns employer-org, retirement date and ann
@@ -1004,7 +1000,6 @@ kind: group-index
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
 - **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
-- **`worcester-ma-employee-gross-pay`** (medium) — OSINT tool: Worcester MA Employee Gross Pay.
 - **`world-bank-data`** (low) — OSINT tool: World Bank Data.
 - **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
@@ -1021,7 +1016,6 @@ kind: group-index
 - **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
 - **`yell-online-business-directory-uk`** (medium) — Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website
 - **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
-- **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
 - **`youcontrol`** (medium) — Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, address
 - **`zendy-io`** (medium) — Use when you have a researcher's `name` (or a topic) and want their academic publications, affiliations and co-authors across many publisher
 - **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.

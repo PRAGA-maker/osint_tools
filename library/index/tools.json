@@ -24402,46 +24402,6 @@
     "_file": "library/tools/communities-forums/babycenter.md"
   },
   {
-    "id": "bbc-news-united-kingdom",
-    "name": "BBC News (United Kingdom)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.bbc.com/news/world",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/bbc-news-united-kingdom.md"
-  },
-  {
     "id": "before-reddit-optimize-a-post",
     "name": "before reddit | optimize a post",
     "description": "OSINT tool: before reddit | optimize a post.",
@@ -63904,57 +63864,6 @@
     "_file": "library/tools/domains-ip-infrastructure/all-net-tool.md"
   },
   {
-    "id": "all-net-tools-toolbox-blacklist-checker",
-    "name": "All Net Tools Toolbox Blacklist Checker",
-    "description": "Search tool that identifies if an IP addressis on an anti-spam blacklist",
-    "url": "http://all-nettools.com/toolbox/blacklist-check.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "all-net-tool",
-      "all-net-tools-toolbox-domain-information",
-      "all-net-tools-toolbox-traceroute"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/all-net-tools-toolbox-blacklist-checker.md"
-  },
-  {
     "id": "all-net-tools-toolbox-domain-information",
     "name": "All Nettools Toolbox — Domain Information",
     "description": "Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and hosting info.",
@@ -65808,52 +65717,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/reputation/bluecoat-webpulse.md"
-  },
-  {
-    "id": "bluehost-united-states",
-    "name": "Bluehost (United States)",
-    "description": "Service provider for registering websites and domain addresses",
-    "url": "http://www.bluehost.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/bluehost-united-states.md"
   },
   {
     "id": "bluto",
@@ -113203,51 +113066,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/search-our-ppp-loan-database.md"
-  },
-  {
-    "id": "secjuice-com",
-    "name": "secjuice.com",
-    "description": "OSINT tool: secjuice.com.",
-    "url": "https://www.secjuice.com/crypto-osint/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "secjuice-com-3"
-    ],
-    "_file": "library/tools/financial-crypto/secjuice-com.md"
   },
   {
     "id": "sortcodes-co-uk",
@@ -219144,40 +218962,6 @@
     "_file": "library/tools/public-records/government-records/ca-salary-db.md"
   },
   {
-    "id": "cal-poly-email-search",
-    "name": "Cal Poly Email Search",
-    "description": "OSINT tool: Cal Poly Email Search.",
-    "url": "https://c0acw966.caspio.com/dp/5dbe60009c7190a3b0bb407eaea0",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/cal-poly-email-search.md"
-  },
-  {
     "id": "california",
     "name": "California",
     "description": "Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration status, facility, age and CDCR ID.",
@@ -221334,52 +221118,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/public-records/clinicaltrials-gov.md"
-  },
-  {
-    "id": "cme-group",
-    "name": "CME Group",
-    "description": "Information on trading, risk management, and more",
-    "url": "https://www.cmegroup.com/education/browse-all.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/cme-group.md"
   },
   {
     "id": "cms-gov",
@@ -242004,35 +241742,56 @@
   {
     "id": "library-and-archives-canada-lac",
     "name": "Library and Archives Canada (LAC)",
-    "description": "OSINT tool: Library and Archives Canada (LAC).",
+    "description": "Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, and document-id references from census, immigration and military files.",
     "url": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Canadian census, immigration, military and genealogical collections by name to build a historical/family picture of a person.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "dob",
+      "associate",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and view most digitised records online; ordering high-resolution copies of some archival items can carry a fee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you are querying a national archive's public collections, not the subject. Nothing is exposed to the person searched. Standard puppet-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official national archive of Canada (Bibliothèque et Archives Canada); records are authoritative government/archival sources.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "LAC",
+      "Bibliothèque et Archives Canada",
+      "bac-lac.gc.ca"
+    ],
+    "tags": [
+      "genealogy",
+      "government-records",
+      "archives",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/library-and-archives-canada-lac.md"
   },
   {
@@ -251547,40 +251306,6 @@
     "_file": "library/tools/public-records/pa-forfeiture-2010-2016-search.md"
   },
   {
-    "id": "pa-perry-county-2017-compensation-search-and-report",
-    "name": "PA Perry County 2017 Compensation Search and Report",
-    "description": "OSINT tool: PA Perry County 2017 Compensation Search and Report.",
-    "url": "https://b2.caspio.com/dp/0a921000e05cf4b592b245aeae20",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/pa-perry-county-2017-compensation-search-and-report.md"
-  },
-  {
     "id": "pa-school-districts-deeds-user-facing-web-search",
     "name": "PA School Districts Deeds user-facing web search",
     "description": "OSINT tool: PA School Districts Deeds user-facing web search.",
@@ -258058,50 +257783,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/public-records/secret-surveillance-catalogue.md"
-  },
-  {
-    "id": "section-16-deadline-calculator",
-    "name": "Section 16 Deadline Calculator",
-    "description": "OSINT tool: Section 16 Deadline Calculator.",
-    "url": "https://section-16-deadline-calculator.vercel.app/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "checkuser",
-      "followgraph-for-mastodon",
-      "gitvio",
-      "osint-steam",
-      "xplore-x-vercel-app",
-      "youtube-lookup"
-    ],
-    "_file": "library/tools/public-records/section-16-deadline-calculator.md"
   },
   {
     "id": "securities-administrators-ca",
@@ -266848,40 +266529,6 @@
     "_file": "library/tools/public-records/wisconsin-registered-voter-verification.md"
   },
   {
-    "id": "worcester-ma-employee-gross-pay",
-    "name": "Worcester MA Employee Gross Pay",
-    "description": "OSINT tool: Worcester MA Employee Gross Pay.",
-    "url": "https://c0acu481.caspio.com/dp/e0536000108787410ed749fdb240",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/worcester-ma-employee-gross-pay.md"
-  },
-  {
     "id": "world-bank-data",
     "name": "World Bank Data",
     "description": "OSINT tool: World Bank Data.",
@@ -267735,40 +267382,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/york-city-pa-compensation.md"
-  },
-  {
-    "id": "york-county-va-2017-public-salaries",
-    "name": "York County VA 2017 Public Salaries",
-    "description": "OSINT tool: York County VA 2017 Public Salaries.",
-    "url": "https://b2.caspio.com/dp/0a921000b12e238357df42e7affc",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/york-county-va-2017-public-salaries.md"
   },
   {
     "id": "youcontrol",
@@ -269739,46 +269352,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/amazon-cloud-search-engine.md"
-  },
-  {
-    "id": "american-association-of-port-authorities",
-    "name": "American Association of Port Authorities",
-    "description": "Site providing information on all the ports of the Western Hemisphere",
-    "url": "http://www.aapa-ports.org/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/american-association-of-port-authorities.md"
   },
   {
     "id": "american-society-of-civil-engineers",
@@ -274242,46 +273815,6 @@
     "_file": "library/tools/search-engines/citizendium.md"
   },
   {
-    "id": "city-of-brampton",
-    "name": "City of Brampton",
-    "description": "City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations",
-    "url": "http://www.brampton.ca/en/residents/Parking/Pages/poa-payment.aspx",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/city-of-brampton.md"
-  },
-  {
     "id": "citysearch",
     "name": "Citysearch",
     "description": "Use when you have a business `name` or `employer-org` and a `geolocation` and want its listing details — returns `address`, `phone`, and a `domain`.",
@@ -276277,46 +275810,6 @@
       "scicheck"
     ],
     "_file": "library/tools/search-engines/debunking-false-stories-archives.md"
-  },
-  {
-    "id": "defcad",
-    "name": "DEFCAD",
-    "description": "Search engine for 3D printable models",
-    "url": "http://defcad.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/defcad.md"
   },
   {
     "id": "densephrase",
@@ -301236,46 +300729,6 @@
       "swisscows"
     ],
     "_file": "library/tools/search-engines/swisscows-com.md"
-  },
-  {
-    "id": "tabnine",
-    "name": "tabnine",
-    "description": "Java code search engine",
-    "url": "https://www.tabnine.com/code",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/tabnine.md"
   },
   {
     "id": "taylor-and-francis-online",
@@ -354652,46 +354105,6 @@
     "_file": "library/tools/transportation/amtrak-status-maps-archive-database.md"
   },
   {
-    "id": "ancapa-sciences-intelligence-analysis",
-    "name": "Ancapa Sciences Intelligence Analysis",
-    "description": "Company specializing in analysis, education, and training for both the government and private industries",
-    "url": "http://www.anacapasciences.com/ia/index.html",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/ancapa-sciences-intelligence-analysis.md"
-  },
-  {
     "id": "askmid",
     "name": "askMID",
     "description": "Use when you have a UK `vehicle-plate` and want to confirm whether that vehicle is insured on the Motor Insurance Database — returns an insured/not-insured status (no owner PII).",
@@ -355619,48 +355032,6 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "_file": "library/tools/transportation/cars-com-black-book-value.md"
-  },
-  {
-    "id": "cars-for-sale-in-the-uk-newsnow-classifieds",
-    "name": "Cars for sale in the UK - NewsNow Classifieds",
-    "description": "OSINT tool: Cars for sale in the UK - NewsNow Classifieds.",
-    "url": "https://www.newsnow.co.uk/classifieds/cars-vans-for-sale",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/cars-for-sale-in-the-uk-newsnow-classifieds.md"
   },
   {
     "id": "casa-aircraft-search-australia",

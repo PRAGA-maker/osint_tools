@@ -63,7 +63,6 @@ kind: group-index
 - **`alexa`** (low) — OSINT tool: Alexa.
 - **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
-- **`all-net-tools-toolbox-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
 - **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
@@ -91,7 +90,6 @@ kind: group-index
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — OSINT tool: Bitdefender Threat Map.
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
-- **`bluehost-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`breachhq`** (low) — OSINT tool: BreachHQ.
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
 - **`broken-link-hijacker`** (low) — Crawls the website and searches for all the broken links (in "<a href" and "<img src").
