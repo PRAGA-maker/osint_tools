@@ -358,7 +358,7 @@ kind: group-index
 - **`you-tldr-com`** (high) — Use when you have a subject's YouTube video/channel (`social-profile`) and want its transcript and a summary without watching — returns `nam
 - **`youku-chinese-language`** (high) — Use when you have a `name`/`username` and want a Chinese subject's video presence — search Youku, China's major video platform, for their up
 - **`younow`** (high) — Use when you have a `username` and want to check for a live-streaming profile with bio, photo, and broadcast history — returns a social-prof
-- **`youtube-captions-alternate-extractor`** (medium) — OSINT tool: YouTube Captions (Alternate Extractor).
+- **`youtube-captions-alternate-extractor`** (low) — Use when you have a video URL (YouTube and others) and want its subtitles/transcript — returns the caption text, surfacing names, places and
 - **`youtube-metadata`** (medium) — Use when you have a YouTube video, channel, or playlist URL and want its full metadata — returns upload/publish timestamps, geotags, thumbna
 - **`youtube`** (medium) — OSINT tool: YouTube.
 - **`youtubetranscript-com`** (high) — Use when you have a YouTube video (a `social-profile` URL) and want its full spoken transcript to mine for names, places and details — retur

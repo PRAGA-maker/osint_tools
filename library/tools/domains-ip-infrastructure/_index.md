@@ -116,7 +116,7 @@ kind: group-index
 - **`cloudmare`** (low) — Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS
 - **`cloudunflare`** (low) — Reconnaissance Real IP address for Cloudflare Bypass
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
-- **`coffer-com`** (medium) — OSINT tool: coffer.com.
+- **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
 - **`cookieserve-com`** (low) — detailed website cookie analyze
@@ -253,7 +253,6 @@ kind: group-index
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
-- **`ipage-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`ipanalyzer-privacy-test`** (medium) — Use when you have an `ip-address` (or `domain`) and want its geolocation, network owner, reverse DNS, open services and blacklist status in 
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
 - **`ipinfo-map`** (low) — paste up to 500,000 IPs below to see where they're located on a map

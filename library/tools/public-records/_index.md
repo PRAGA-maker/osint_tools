@@ -961,7 +961,6 @@ kind: group-index
 - **`ustitlerecords-com`** (high) — Use when you have a `name` or `address` and want US property/title records — returns property ownership, transfer history, liens and all pro
 - **`utah-gun-exchange`** (low) — OSINT tool: Utah Gun Exchange.
 - **`utah`** (high) — Use when you have a `name` and want to check whether the person is under Utah Department of Corrections supervision — returns name, offender
-- **`validfleetlist-unknown-sail-boat-database`** (medium) — OSINT tool: ValidFleetList (unknown Sail Boat database).
 - **`vat-lookup-co-uk`** (high) — Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and 
 - **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na
 - **`vat-search-eu`** (medium) — Use when you have an EU company `name` or VAT number and want to validate/resolve it — returns the VAT-registered business `name`, `address`

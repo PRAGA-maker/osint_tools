@@ -22,7 +22,6 @@ kind: group-index
 - **`airnav-radarbox`** (low) — Live flight tracker.
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
-- **`alamo-rental-receipts`** (medium) — OSINT tool: Alamo Rental Receipts.
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
 - **`askmid`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm whether that vehicle is insured on the Motor Insurance Database — returns an insu
 - **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference

@@ -147,7 +147,6 @@ kind: group-index
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
 - **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
-- **`logpasta`** (medium) — OSINT tool: Logpasta.
 - **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
 - **`lonely-planet`** (low) — Use when you have a `geolocation` and need travel-context — venues, neighbourhoods, transport, and accommodation a subject might use — retur
 - **`loveaholics`** (medium) — Use when you have a `name`, `username`, `email` or `image` and want to check whether the subject has a profile on the Loveaholics dating sit
@@ -313,7 +312,7 @@ kind: group-index
 - **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.
 - **`unogs-com`** (low) — Netflix search without registration
 - **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`usa-today-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may 
+- **`usa-today-news`** (medium) — Use when you have a `name` and want US national or local news coverage — returns articles and obituaries naming people, relatives and dates.
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,
 - **`verybin`** (medium) — Use when you have found a `verybin.com` link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you already h

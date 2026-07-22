@@ -20570,40 +20570,52 @@
   {
     "id": "quick-cache-and-archive-search",
     "name": "Quick Cache and Archive search",
-    "description": "quick search website old versions in different search engines and archives (21 source)",
+    "description": "Use when you have a `domain` or URL and want old/cached versions across many archives at once — returns links to snapshots in 21 caches and web archives.",
     "url": "https://quickcacheandarchivesearch.onrender.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Fanning one URL out to 21 cache/archive sources at once to find historical or deleted versions of a page.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free web tool by cyb-detective, hosted on Render's free tier — it may cold-start slowly or be briefly unavailable, but there's no paywall or account.",
+    "opsec": "passive",
+    "opsecNote": "It builds and opens links to third-party archives; you don't hit the target site directly (the archives serve cached copies), so the subject isn't notified. Following a link then loads that archive, not the origin.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A community utility from a known OSINT author (cyb-detective) that simply assembles queries to established archives; it stores nothing itself, so trust rests on the underlying archives.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "khoji-onrender-com"
     ],
+    "aliases": [
+      "Quick Cache and Archive Search",
+      "cyb-detective archive search"
+    ],
+    "tags": [
+      "Archives",
+      "web-archive",
+      "cache"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/quick-cache-and-archive-search.md"
   },
   {
@@ -30273,42 +30285,6 @@
     "_file": "library/tools/communities-forums/livejournal.md"
   },
   {
-    "id": "logpasta",
-    "name": "Logpasta",
-    "description": "OSINT tool: Logpasta.",
-    "url": "https://logpasta.com/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/logpasta.md"
-  },
-  {
     "id": "london-free-press",
     "name": "London Free Press",
     "description": "Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or corroborate a subject.",
@@ -38418,44 +38394,55 @@
   {
     "id": "usa-today-news",
     "name": "USA Today News",
-    "description": "Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may require an account or payment for full acess to newspaper archives",
-    "url": "http://www.usatoday.com",
+    "description": "Use when you have a `name` and want US national or local news coverage — returns articles and obituaries naming people, relatives and dates.",
+    "url": "https://www.usatoday.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Searching US national news (and its local network) for coverage of a named person or event.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read some articles; a metered paywall/subscription covers much content and full archive access. Basic search is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching the site is passive and discloses nothing to any subject. Use a VPN to keep the query private; prefer reader/archive views over logging in for metered pieces.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major US national newspaper (Gannett), also the hub of a large local-paper network; edited reporting, generally reliable, though it is press coverage rather than a primary record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
     "relatedTools": [
       "eu-usatoday-com"
     ],
+    "aliases": [
+      "usatoday.com",
+      "USA Today"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "news-journalism",
+      "obituaries"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/usa-today-news.md"
   },
   {
@@ -67434,43 +67421,53 @@
   },
   {
     "id": "coffer-com",
-    "name": "coffer.com",
-    "description": "OSINT tool: coffer.com.",
+    "name": "coffer.com (MAC_Find)",
+    "description": "Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's MAC ranges).",
     "url": "http://www.coffer.com/mac_find/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a MAC address prefix (OUI) to its hardware manufacturer, or listing a vendor's MAC ranges.",
     "selectorsIn": [
-      "domain"
+      "mac-address"
     ],
     "selectorsOut": [
-      "domain"
+      "device-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup, no account. Caveat — the underlying OUI database was last refreshed around 2013, so newer allocations may be missing.",
+    "opsec": "passive",
+    "opsecNote": "A purely local lookup of a MAC prefix against a static vendor table; you contact no target and reveal nothing about a subject. Standard passive web use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "The self-described “Internet’s oldest online MAC address database”; the OUI mapping is accurate for its era but stale (≈2013), so confirm modern prefixes against a current source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MAC_Find",
+      "coffer MAC lookup",
+      "OUI lookup"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "mac-address"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/coffer-com.md"
   },
   {
@@ -76307,52 +76304,6 @@
       "ipaddress-tools"
     ],
     "_file": "library/tools/domains-ip-infrastructure/ipaddress-com.md"
-  },
-  {
-    "id": "ipage-united-states",
-    "name": "iPage (United States)",
-    "description": "Service provider for registering websites and domain addresses",
-    "url": "http://www.ipage.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ipage-united-states.md"
   },
   {
     "id": "ipanalyzer-privacy-test",
@@ -127699,42 +127650,50 @@
   {
     "id": "usa-fishermap",
     "name": "USA Fishermap",
-    "description": "when you click on a freshwater body of water, its detailed map opens, on which the depth at different points is marked",
+    "description": "Use when you have a `geolocation` on a US freshwater body and want its bathymetry — returns a depth map (contours/spot depths) to support water-search planning and verification.",
     "url": "https://usa.fishermap.org/depth-map/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Getting a depth/contour map of a US lake or reservoir to inform water-search or geolocation verification.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view depth maps for many US freshwater bodies in the browser; some advanced/offline features may be paid, but the core web maps are free.",
+    "opsec": "passive",
+    "opsecNote": "You browse public bathymetric maps; no target is contacted and nothing is disclosed about a subject. Ordinary passive web use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A crowd/aggregate bathymetry map service; depth data is approximate and sourced from surveys of varying age and accuracy, so treat depths as indicative, not survey-grade.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Fishermap USA",
+      "lake depth map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Nature"
+      "Nature",
+      "bathymetry"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/usa-fishermap.md"
   },
   {
@@ -152832,42 +152791,50 @@
   {
     "id": "youtube-captions-alternate-extractor",
     "name": "YouTube Captions (Alternate Extractor)",
-    "description": "OSINT tool: YouTube Captions (Alternate Extractor).",
+    "description": "Use when you have a video URL (YouTube and others) and want its subtitles/transcript — returns the caption text, surfacing names, places and details spoken on screen.",
     "url": "https://downsub.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the full subtitle/transcript text out of a YouTube (or other platform) video for reading and keyword analysis.",
     "selectorsIn": [
-      "image",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "metadata-exif"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool (DownSub); paste a video URL and download the subtitles. No account needed for basic extraction.",
+    "opsec": "passive",
+    "opsecNote": "You submit the video URL to DownSub's servers, not to the uploader — the subject is not notified. DownSub sees which videos you extract; use a sock-puppet/VPN if that matters. It does not interact with the target's channel.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A third-party subtitle-download service; it reads publicly available captions/auto-captions, so accuracy depends on the video's own (often auto-generated) subtitles.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DownSub",
+      "YouTube subtitle downloader"
+    ],
     "tags": [
-      "video"
+      "video",
+      "transcript",
+      "captions"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/youtube-captions-alternate-extractor.md"
   },
   {
@@ -264059,40 +264026,6 @@
     "_file": "library/tools/public-records/utah-gun-exchange.md"
   },
   {
-    "id": "validfleetlist-unknown-sail-boat-database",
-    "name": "ValidFleetList (unknown Sail Boat database)",
-    "description": "OSINT tool: ValidFleetList (unknown Sail Boat database).",
-    "url": "https://c0eru285.caspio.com/dp/0dc330002829dcc1ad864b5bb094",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/validfleetlist-unknown-sail-boat-database.md"
-  },
-  {
     "id": "vat-lookup-co-uk",
     "name": "vat-lookup.co.uk",
     "description": "Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and address, plus VAT-registration history.",
@@ -351995,48 +351928,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/transportation/ais-ships-map.md"
-  },
-  {
-    "id": "alamo-rental-receipts",
-    "name": "Alamo Rental Receipts",
-    "description": "OSINT tool: Alamo Rental Receipts.",
-    "url": "https://legacy.alamo.com/en_us/car-rental/receipts.html",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/alamo-rental-receipts.md"
   },
   {
     "id": "amtrak-status-maps-archive-database",
