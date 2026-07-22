@@ -91,7 +91,6 @@ kind: group-index
 - **`learnmeabitcoin-com`** (low) — Use when you have a `crypto-wallet` (Bitcoin address or txid) and want to inspect its raw on-chain data and understand how to read it — retu
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
-- **`medium-com`** (medium) — OSINT tool: medium.com.
 - **`mixero-io`** (medium) — Use when you have a `crypto-wallet` and want to recognise whether funds were routed through a Bitcoin mixer/tumbler — returns awareness of a
 - **`mylostaccount-org-uk`** (medium) — Use when you (as holder, next of kin, or executor) need to trace a dormant UK bank, building society, or NS&I account for a person — returns
 - **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)

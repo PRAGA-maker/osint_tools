@@ -49,7 +49,7 @@ kind: group-index
 - **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
 - **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
-- **`go-kml-maps`** (medium) — OSINT tool: Go KML Maps.
+- **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
 - **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
 - **`google-flood-hub`** (low) — A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.
 - **`google-map-search-engine`** (medium) — OSINT tool: Google Map Search Engine.

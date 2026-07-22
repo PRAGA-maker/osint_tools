@@ -71,7 +71,6 @@ kind: group-index
 - **`newsblur`** (low) — OSINT tool: Newsblur.
 - **`omeareader`** (low) — OSINT tool: OmeaReader.
 - **`onwebchange`** (low) — OSINT tool: OnWebChange.
-- **`osint2h22v-substack-com`** (medium) — OSINT tool: osint2h22v.substack.com.
 - **`pagecached-com`** (medium) — Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yah
 - **`perma-cc`** (medium) — Use when you have a web page `domain`/URL that is evidence and want a permanent, citable archived snapshot — returns a stable perma-link (`d
 - **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)

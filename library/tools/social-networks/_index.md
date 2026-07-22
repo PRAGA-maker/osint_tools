@@ -330,7 +330,7 @@ kind: group-index
 - **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
 - **`kworb`** (medium) — Use when you have a musician/artist `name` and want to gauge their public streaming and chart footprint across YouTube, Spotify and iTunes —
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
-- **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
+- **`linkdtime`** (medium) — Use when you have LinkedIn post/comment/activity `social-profile` URLs and want exact timestamps — returns a chronological timeline with pre
 - **`linkedin-email-reverse-lookup`** (high) — Use when you have an `email` and want the matching LinkedIn profile — returns the person's name, profile ID/username, and photo via a logged
 - **`linkedin-search-engine-with-images`** (high) — Use when you have a `name`/`employer-org` and want LinkedIn profiles surfaced with thumbnail photos for fast visual matching — returns socia
 - **`linkedin-search-engine`** (high) — Use when you have a `name`, `employer-org` or `username` and want to find someone's LinkedIn profile without logging into LinkedIn — returns

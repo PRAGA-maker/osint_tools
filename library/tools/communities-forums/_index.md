@@ -48,7 +48,7 @@ kind: group-index
 - **`care2`** (medium) — Use when you have a `name`/`username` and want to find a subject's activism footprint — petitions signed/created, causes, and member profile
 - **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
 - **`centos-pastebin-service`** (medium) — Use when you have a `username`/keyword and want to search public pastes for leaked configs, logs, or credentials — returns paste content tie
-- **`charitable-impact`** (medium) — Network of charities in Canada
+- **`charitable-impact`** (medium) — Use when you have a Canadian charity or `employer-org` name and want to confirm it and its giving context — returns `employer-org` charity d
 - **`chemistry-com`** (medium) — Use when you have a `username`, `name`, or `image` and want to check for a matching profile on the Chemistry.com dating site — returns a soc
 - **`christian-mingle`** (medium) — Use when you have a `name`, `username` or `image` and suspect the subject uses this Christian dating site — returns a dating `social-profile
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
@@ -66,7 +66,7 @@ kind: group-index
 - **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
 - **`council-on-foreign-relations`** (medium) — Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
-- **`ctv-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
+- **`ctv-news-worldwide-canada`** (medium) — Use when you have a `name` and want Canadian national/local news coverage of a subject — returns `social-profile`/mention, event dates and n
 - **`ctv-sci-fi-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
 - **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
@@ -211,7 +211,7 @@ kind: group-index
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
 - **`pastesite-net`** (medium) — Use when you have a `username`, `email` or keyword and want to check a pastebin for dumped text — browse/search public pastes that may conta
-- **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`pbs-television-united-states`** (medium) — Use when you have a `name` and want US public-broadcasting coverage, documentaries or program credits mentioning a subject — returns `social
 - **`pc-magazine`** (medium) — Use when you have a consumer-tech product name or spec surfaced in a case and want authoritative reviews, specs and background — returns pro
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
 - **`pinkbike`** (medium) — Use when you have a `username` or `name` tied to mountain biking and want their profile, posts and marketplace listings — returns social-pro
@@ -273,7 +273,7 @@ kind: group-index
 - **`subreddits-org`** (low) — Directory of active subreddits.
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.
-- **`svbtle`** (medium) — Website related to social networking and blogging
+- **`svbtle`** (medium) — Use when you have a `username` and want to find a subject's minimalist blog on the Svbtle network — returns `social-profile`, long-form post
 - **`sympsons-screencaps-search`** (low) — OSINT tool: Sympsons screencaps search.
 - **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
 - **`tech-advisor-uk`** (low) — Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publicatio
@@ -328,7 +328,7 @@ kind: group-index
 - **`win-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
-- **`world-channel-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 
 - **`write-as`** (medium) — OSINT tool: Write.as.
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza

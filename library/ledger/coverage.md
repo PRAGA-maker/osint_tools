@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7753 total · 4436 full · 3317 stub (57% enriched)
+**Tools:** 7751 total · 4445 full · 3306 stub (57% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3611 · medium: 2179 · high: 1963
+low: 3611 · medium: 2177 · high: 1963
 
 ## Tools by trust
-community: 3533 · unverified: 2736 · trusted: 1475 · untrustworthy: 6 · personal: 3
+community: 3536 · unverified: 2726 · trusted: 1480 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 12/455
-- `archives-cache` — 78/127
-- `communities-forums` — 215/335
+- `archives-cache` — 78/126
+- `communities-forums` — 220/335
 - `dark-web` — 32/116
 - `dating-classifieds` — 70/103
 - `documents-metadata` — 35/313
 - `domains-ip-infrastructure` — 96/720
 - `email` — 245/246
 - `evidence-capture` — 8/30
-- `financial-crypto` — 47/118
+- `financial-crypto` — 47/117
 - `geolocation` — 283/343
 - `image-video-face` — 438/454
-- `maps-geospatial-data` — 55/127
+- `maps-geospatial-data` — 56/127
 - `messaging` — 177/188
-- `opsec-investigator-tooling` — 37/558
+- `opsec-investigator-tooling` — 38/558
 - `people-search` — 254/258
 - `phone` — 134/137
 - `public-records` — 826/1048
-- `search-engines` — 452/849
-- `social-networks` — 712/793
+- `search-engines` — 453/849
+- `social-networks` — 713/793
 - `training-ctf` — 4/12
 - `translation-language` — 15/103
 - `transportation` — 109/216
@@ -57,10 +57,10 @@ community: 3533 · unverified: 2736 · trusted: 1475 · untrustworthy: 6 · pers
 - `library/tools/messaging` — 173 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 127 leaves
-- `library/tools/archives-cache` — 112 leaves
+- `library/tools/archives-cache` — 111 leaves
 - `library/tools/dark-web` — 105 leaves
 - `library/tools/dating-classifieds` — 105 leaves
-- `library/tools/financial-crypto` — 100 leaves
+- `library/tools/financial-crypto` — 99 leaves
 - `library/tools/translation-language` — 89 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

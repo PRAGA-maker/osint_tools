@@ -20419,50 +20419,6 @@
     "_file": "library/tools/archives-cache/onwebchange.md"
   },
   {
-    "id": "osint2h22v-substack-com",
-    "name": "osint2h22v.substack.com",
-    "description": "OSINT tool: osint2h22v.substack.com.",
-    "url": "https://osint2h22v.substack.com/p/new-osint-source-discovery-internet",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "archive",
-      "Archive & Cached Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "sherpaintelligence-substack-com"
-    ],
-    "_file": "library/tools/archives-cache/osint2h22v-substack-com.md"
-  },
-  {
     "id": "pagecached-com",
     "name": "pagecached.com",
     "description": "Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yahoo Japan and other caches for that page.",
@@ -25303,42 +25259,51 @@
   },
   {
     "id": "charitable-impact",
-    "name": "Charitable Impact",
-    "description": "Network of charities in Canada",
+    "name": "CharitableImpact",
+    "description": "Use when you have a Canadian charity or `employer-org` name and want to confirm it and its giving context — returns `employer-org` charity detail and donation-platform presence.",
     "url": "https://www.charitableimpact.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a Canadian charity exists on a major donation platform and researching giving/charity context.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search charities; donating (the platform's core function) moves money but browsing is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing/searching charities is passive. Do NOT attempt to view or infer another person's private donation history — donor records are not public, and probing them is out of scope and likely a privacy violation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A legitimate Canadian donor-advised giving platform; charity listings draw on CRA-registered charities, but treat platform pages as directory context, not the authoritative registry.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Charitable Impact",
+      "charitableimpact.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "charity",
+      "canada",
+      "donations"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/charitable-impact.md"
   },
   {
@@ -26249,42 +26214,51 @@
   },
   {
     "id": "ctv-news-worldwide-canada",
-    "name": "CTV News Worldwide (Canada)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.ctvnews.ca/world",
+    "name": "CTV News (Canada)",
+    "description": "Use when you have a `name` and want Canadian national/local news coverage of a subject — returns `social-profile`/mention, event dates and named `associate` context.",
+    "url": "http://www.ctvnews.ca",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a major Canadian news archive for a person named, quoted, or reported on.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported, no hard paywall.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject; only CTV/its ad partners log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major Canadian broadcast news organisation with editorial standards and regional stations; credible reporting, still secondary to primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CTV News",
+      "ctvnews.ca"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "archive",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ctv-news-worldwide-canada.md"
   },
   {
@@ -33315,42 +33289,52 @@
   },
   {
     "id": "pbs-television-united-states",
-    "name": "PBS Television (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "name": "PBS (United States)",
+    "description": "Use when you have a `name` and want US public-broadcasting coverage, documentaries or program credits mentioning a subject — returns `social-profile`/mention and `associate` context.",
     "url": "http://www.pbs.org",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching US public-television news, documentaries and program archives for a person named, interviewed, or credited.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public-broadcaster content and archives; no paywall, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public broadcaster site is passive and invisible to any subject; only PBS's servers log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major US public broadcaster with strong editorial and documentary standards; credible content, still secondary to primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PBS",
+      "pbs.org",
+      "Public Broadcasting Service"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "documentary",
+      "united-states"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "pbs-search"
     ],
@@ -36359,24 +36343,31 @@
   {
     "id": "svbtle",
     "name": "Svbtle",
-    "description": "Website related to social networking and blogging",
+    "description": "Use when you have a `username` and want to find a subject's minimalist blog on the Svbtle network — returns `social-profile`, long-form posts and disclosed personal detail.",
     "url": "https://svbtle.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a person's long-form blog posts and profile on the invite-oriented Svbtle publishing network.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read published blogs; publishing is a paid/curated membership.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking public blogs is passive and invisible to the author. Do not sign up or comment from an attributable identity if you need to interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small, design-led blogging network historically favoured by tech/design writers; posts are self-authored opinion/personal content, useful as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -36385,15 +36376,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "svbtle.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "blogging",
+      "social-network",
+      "long-form"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/svbtle.md"
   },
   {
@@ -38994,42 +38987,51 @@
   },
   {
     "id": "world-channel-television-united-states",
-    "name": "World Channel Television (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "name": "WORLD Channel (United States)",
+    "description": "Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program context and named `associate` links.",
     "url": "http://worldchannel.org",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a US public-television documentary/social-issue channel for a person featured, interviewed, or credited.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public-broadcasting content; no paywall or account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public broadcaster site is passive and invisible to any subject; only the channel's servers log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A US public-media channel (PBS/WGBH-affiliated) focused on documentary and social-issue programming; credible content, still secondary to primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WORLD Channel",
+      "worldchannel.org"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "documentary",
+      "united-states"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/world-channel-television-united-states.md"
   },
   {
@@ -111543,48 +111545,6 @@
     "_file": "library/tools/financial-crypto/matbea.md"
   },
   {
-    "id": "medium-com",
-    "name": "medium.com",
-    "description": "OSINT tool: medium.com.",
-    "url": "https://lampyre-io.medium.com/collecting-bitcoin-wallet-info-for-osint-purposes-4c4d0f73a4fb",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/medium-com.md"
-  },
-  {
     "id": "metasleuth",
     "name": "MetaSleuth",
     "description": "Use when you have a `crypto-wallet` address or tx hash and want to trace fund flows across chains — returns linked `crypto-wallet`s, exchange endpoints and `associate` clusters.",
@@ -155420,43 +155380,50 @@
   },
   {
     "id": "go-kml-maps",
-    "name": "Go KML Maps",
-    "description": "OSINT tool: Go KML Maps.",
+    "name": "KMLMap (gokml.net)",
+    "description": "Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` map view with layers and Street View.",
     "url": "http://gokml.net/maps",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Overlaying KML data on Google Maps with traffic/transit/Street View layers and custom styling.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web mapping utility; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Rendering a map is passive. Note that supplying a KML via a public URL means gokml.net (and Google Maps) fetch and can log it — for sensitive coordinates, prefer an offline viewer (Google Earth Pro) rather than a third-party web renderer.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small open (GitHub-hosted) mapping utility built on Google Maps; it renders your data — the geographic accuracy comes from Google Maps and your KML.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KMLMap",
+      "gokml.net"
+    ],
     "tags": [
-      "maps"
+      "kml",
+      "mapping",
+      "geospatial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/go-kml-maps.md"
   },
   {
@@ -190514,7 +190481,7 @@
   {
     "id": "whatismybrowser-com",
     "name": "WhatIsMyBrowser.com",
-    "description": "Verifying browser fingerprint and user-agent visibility during OSINT sessions",
+    "description": "Use when you need to verify what your own investigation browser leaks — returns your visible user-agent, headers, IP and fingerprint so you can confirm your sock-puppet setup is clean.",
     "url": "https://www.whatismybrowser.com/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -190522,36 +190489,45 @@
       "anonymous-browsing",
       "spoof-user-agent"
     ],
-    "bestFor": "Verifying browser fingerprint and user-agent visibility during OSINT sessions",
-    "input": "No input required (detects current browser automatically)",
-    "output": "Browser name, version, OS, plugins, and shareable detection link",
+    "bestFor": "Confirming your investigation browser's user-agent, IP and fingerprint before touching a target.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address",
+      "device-id"
+    ],
     "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Visiting this site sends your real browser data to their servers; use only to test anonymization setups.",
+    "pricing": "freemium",
+    "costNote": "Free browser-fingerprint/user-agent self-check; also offers a paid user-agent-parsing API/database for developers (not needed for OpSec self-checks).",
+    "opsec": "passive",
+    "opsecNote": "This is an OpSec self-test — you point it at YOUR OWN session, never a target. It shows exactly what a site sees from you (UA, headers, IP, language, fingerprint bits); use it to confirm your sock-puppet browser/VPN isn't leaking a real UA, WebRTC IP or timezone that would attribute you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established, reputable browser-capabilities reference site; the self-check reflects your actual request, so it is directly verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "What Is My Browser",
+      "whatismybrowser.com"
+    ],
+    "tags": [
+      "opsec",
+      "fingerprint",
+      "user-agent"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "user-agent-parser"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/whatismybrowser-com.md"
   },
   {
@@ -287617,42 +287593,52 @@
   },
   {
     "id": "mouthshut-north-america",
-    "name": "Mouthshut (North America)",
-    "description": "Website related to product reviews",
+    "name": "MouthShut",
+    "description": "Use when you have a `username` or `name` and want a subject's consumer reviews and reviewer profile — returns `social-profile`, posting history and disclosed location/purchase detail.",
     "url": "http://www.mouthshut.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's consumer-review profile and history on a large (India-centric) reviews platform.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read reviews and public reviewer profiles; an account is only needed to post.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking public reviews/profiles is passive and invisible to the reviewer. Do not register or reply from an attributable identity if you need to interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-running (India-centric) consumer-review site; reviews and profile detail are user-generated self-report, useful as leads.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MouthShut.com",
+      "mouthshut.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "reviews",
+      "social-network",
+      "india"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mouthshut-north-america.md"
   },
   {
@@ -322890,38 +322876,49 @@
   {
     "id": "linkdtime",
     "name": "LinkdTime",
-    "description": "Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.",
+    "description": "Use when you have LinkedIn post/comment/activity `social-profile` URLs and want exact timestamps — returns a chronological timeline with precise dates/times.",
     "url": "https://github.com/Lucksi/LinkdTime",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting the exact date/time behind LinkedIn posts, comments and activity and building a timeline from a list of links.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python); you run it locally, no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "LinkdTime derives timestamps from the LinkedIn activity URN embedded in the link — it does not need to log into or actively hit the target's profile if you already hold the URLs. Collect the source URLs OpSec-safely (LinkedIn views can be visible); the timeline generation itself is offline/local.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Open-source on GitHub (Lucksi/LinkdTime), 100% Python; the timestamp derivation is deterministic from LinkedIn's own activity IDs, so results are verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "other-platforms"
+    "aliases": [
+      "LinkdTime",
+      "Lucksi/LinkdTime"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "linkedin",
+      "timeline",
+      "cli"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "mr-holmes"
     ],

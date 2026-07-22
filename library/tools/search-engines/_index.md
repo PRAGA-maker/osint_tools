@@ -447,7 +447,7 @@ kind: group-index
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
 - **`monstercrawler-meta-search-engine`** (medium) — Use when you have a `name`, `username` or `email` and want blended results across Google/Bing/Yahoo at once — returns `social-profile`, `dom
 - **`moody-s`** (low) — Use when you have an `employer-org` (a company or bond issuer) and want its credit standing — returns issuer profiles, credit ratings, and r
-- **`mouthshut-north-america`** (medium) — Website related to product reviews
+- **`mouthshut-north-america`** (medium) — Use when you have a `username` or `name` and want a subject's consumer reviews and reviewer profile — returns `social-profile`, posting hist
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
 - **`myallsearch`** (low) — OSINT tool: Myallsearch.
