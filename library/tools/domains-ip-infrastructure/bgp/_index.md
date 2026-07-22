@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`bgp-malicious-content-ranking`** (low) — Identify malicious ASNs and networks
-- **`bgp-tools`** (low) — BGP routing and AS analysis
 - **`hurricane-electric-bgp-toolkit`** (low) — BGP analysis and routing intelligence
 - **`peeringdb`** (low) — Use when you have an ASN, network/org name or `ip-address` and want the operator behind it — org, facilities, IX presence and NOC contacts —
 

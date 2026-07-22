@@ -29,7 +29,7 @@ kind: group-index
 - **`auto-bid-master-auction`** (medium) — Use when you have a `vin` and want a salvage/auction history and photos of a specific vehicle — returns listing photos, damage/condition, ti
 - **`autogespot`** (medium) — Use when you have a `vehicle-plate` or a photo of a distinctive car and want crowd-sourced sightings — returns geolocation, date, and images
 - **`autowini-vin-search-international`** (medium) — Use when you want to check whether a specific used vehicle is listed for international export sale — returns marketplace listing details (NO
-- **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.
+- **`aviation-safety-network`** (medium) — Use when you have an aircraft registration or a date/place and want its accident/incident history — returns the occurrence details, location
 - **`bikemap`** (low) — biking route world map
 - **`boatnerd-great-lakes-shipping`** (medium) — Use when you have a Great Lakes vessel name and want to identify and track it — returns vessel details, photos, history and AIS-based positi
 - **`canadian-black-book-values`** (medium) — Use when you have a Canadian vehicle's year/make/model or VIN and want its market value — returns physical-description and a valuation to co

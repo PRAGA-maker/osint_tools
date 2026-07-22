@@ -12,7 +12,7 @@ kind: group-index
 - **`attack-surface-security-testing/`** — 1 skill(s) below.
 - **`aws-enumeration/`** — 3 skill(s) below.
 - **`azure-gcp-discovery/`** — 5 skill(s) below.
-- **`bgp/`** — 4 skill(s) below.
+- **`bgp/`** — 3 skill(s) below.
 - **`blacklists/`** — 4 skill(s) below.
 - **`certificate-search/`** — 6 skill(s) below.
 - **`change-detection/`** — 6 skill(s) below.
@@ -207,7 +207,7 @@ kind: group-index
 - **`hakrawler`** (low) — Extreme(!) fast crawler designed for easy, quick discovery of links, endpoints and assets within a web application.
 - **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
-- **`heartbleed-check`** (low) — OSINT tool: Heartbleed Check.
+- **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
 - **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques

@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`aslookup-com`** (low) — BGP and ASN lookup
 - **`hacker-target-reverse-dns`** (low) — Reverse DNS lookup of IP addresses
-- **`ip-to-asn-db`** (low) — IP to ASN lookup with historical data
+- **`ip-to-asn-db`** (low) — Use when you have an `ip-address` and want the ASN, network prefix and owning organization it belongs to — returns the ASN, prefix and org (
 - **`ipv4-cidr-report`** (low) — CIDR block analysis and subnet enumeration
 - **`onyphe`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, certificates and passive-DNS history — returns infr
 - **`port-scanner-online`** (low) — Quick port availability checks

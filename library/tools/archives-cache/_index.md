@@ -67,7 +67,7 @@ kind: group-index
 - **`microsystools-com`** (low) — Use when you have a `domain` you need to preserve and want a full offline copy — returns a locally-saved, browsable snapshot of the entire s
 - **`national-center-for-biotechnology`** (medium) — Use when you have a researcher `name` or affiliation and want their publications, datasets and co-authors across 30+ biomedical databases — 
 - **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
-- **`newsblur`** (low) — OSINT tool: Newsblur.
+- **`newsblur`** (low) — Use when you want to monitor news sites, blogs and RSS feeds about a subject in one filtered stream — an open-source feed reader with traini
 - **`omeareader`** (low) — OSINT tool: OmeaReader.
 - **`onwebchange`** (low) — OSINT tool: OnWebChange.
 - **`pagecached-com`** (medium) — Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yah

@@ -102,7 +102,6 @@ kind: group-index
 - **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
-- **`counter-osint-guide-for-russians`** (low) — OSINT tool: Counter-OSINT guide for Russians.
 - **`coveryourtracks-eff-org`** (low) — can tell a lot about your browser and computer, including showing a list of installed fonts on the system.
 - **`crackstation-net`** (low) — password hash cracker
 - **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
