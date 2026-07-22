@@ -42,7 +42,6 @@ kind: group-index
 - **`bambuser`** (high) — Use to recognise Bambuser-powered live-shopping video embedded on a retailer's site — a B2B video-commerce platform with no public people-se
 - **`bandcamp`** (high) — Use when you have a `username`/`name` of a musician or music fan and want their public profile — returns social-profile, image, and often a 
 - **`bbc-co-uk`** (low) — Use as background reading on how reverse image search works — this is a BBC Bitesize educational article, not an operational OSINT tool.
-- **`bbc-news-visual-search`** (medium) — Enter the name of the item and the service will show in which news stories and at what time interval it appeared
 - **`befunky-com`** (low) — Use when you need to crop, rotate, adjust, or annotate a subject photo before reverse-image search or comparison — a general browser photo e
 - **`berify`** (high) — Use when you have an `image` or `face` and want to find where else it appears online across multiple engines plus a proprietary index — retu
 - **`betaface`** (high) — Use when you have a face photo and want automated facial analysis — landmark detection, demographic/attribute estimation, and similarity com
@@ -53,7 +52,6 @@ kind: group-index
 - **`camera-summary-exif-tool`** (high) — Use when you have an `image` (JPEG) and want its embedded camera metadata — returns EXIF details like camera make/model, timestamp and any G
 - **`camera-trace`** (medium) — Use when an image's EXIF holds a camera serial number and you want to find other photos taken by that same camera across the web.
 - **`camgirlfinder-net`** (medium) — Use when you have a face photo and want to check whether the person appears as a model on adult webcam (cam) sites.
-- **`camstreamer`** (medium) — OSINT tool: Camstreamer.
 - **`capcut-com`** (low) — Use when you need to trim, stabilize, upscale, or extract frames from video/CCTV footage — an editor, not a search tool.
 - **`captin-fact`** (low) — Use when you have a video (YouTube) and want crowd-sourced fact-checks of statements in it — returns sourced verifications/refutations tied 
 - **`carrot2`** (medium) — Use when a name or keyword returns sprawling web results and you want them auto-clustered into themes to spot relevant sub-topics fast.

@@ -23690,46 +23690,6 @@
     "_file": "library/tools/communities-forums/a-small-world.md"
   },
   {
-    "id": "abc-news-united-states",
-    "name": "ABC News (United States)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://abcnews.go.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/abc-news-united-states.md"
-  },
-  {
     "id": "abc-television-australia",
     "name": "ABC Television (Australia)",
     "description": "Searchable website for a major television network covering global events and having large reader/fan base",
@@ -24440,46 +24400,6 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-20",
     "_file": "library/tools/communities-forums/babycenter.md"
-  },
-  {
-    "id": "bbc-news-iplayer-united-kingdom",
-    "name": "BBC News iPlayer (United Kingdom)",
-    "description": "iPlayer offered by BBC",
-    "url": "https://www.bbc.co.uk/iplayer",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/bbc-news-iplayer-united-kingdom.md"
   },
   {
     "id": "bbc-news-united-kingdom",
@@ -27280,49 +27200,6 @@
     "_file": "library/tools/communities-forums/ehow.md"
   },
   {
-    "id": "engadget-com",
-    "name": "EnGadget.com",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
-    "url": "http://www.engadget.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "engadget"
-    ],
-    "_file": "library/tools/communities-forums/engadget-com.md"
-  },
-  {
     "id": "etusivu",
     "name": "Etusivu",
     "description": "OSINT tool: Etusivu.",
@@ -29071,46 +28948,6 @@
     "_file": "library/tools/communities-forums/gizmodo-com.md"
   },
   {
-    "id": "global-television-canada",
-    "name": "Global Television (Canada)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.globaltv.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/global-television-canada.md"
-  },
-  {
     "id": "google-com-12",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -29237,48 +29074,6 @@
     "_file": "library/tools/communities-forums/google-com-29.md"
   },
   {
-    "id": "google-com-33",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Anursingforum.co.uk%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-33.md"
-  },
-  {
     "id": "google-com-36",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -29319,48 +29114,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-36.md"
-  },
-  {
-    "id": "google-com-9",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforums.moneysavingexpert.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-9.md"
   },
   {
     "id": "google-groups",
@@ -29617,46 +29370,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/hastebin.md"
-  },
-  {
-    "id": "hgtv-television-canada",
-    "name": "HGTV Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.hgtv.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/hgtv-television-canada.md"
   },
   {
     "id": "history-channel-television-canada",
@@ -30892,37 +30605,50 @@
   {
     "id": "linkode-alpha",
     "name": "Linkode(alpha)",
-    "description": "OSINT tool: Linkode(alpha).",
+    "description": "Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password, crypto-wallet); there is no public search.",
     "url": "https://linkode.org/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a specific Linkode code/text paste you were handed a link to; useful mainly as negative knowledge — you cannot discover pastes here.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "email",
+      "password",
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste is passive. Open the link in a puppet browser in case it is tracked, and preserve the contents (screenshot/copy) before you leave — pastes can be set read-only or expire.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An alpha-stage public code/text paste host supporting many languages; run by an unknown operator with no stated longevity guarantee.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "zbin"
+    ],
+    "aliases": [
+      "linkode.org",
+      "Linkode"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/linkode-alpha.md"
   },
   {
@@ -37646,46 +37372,6 @@
     "_file": "library/tools/communities-forums/the-comedy-network-television-canada.md"
   },
   {
-    "id": "the-cw-network-television-united-states",
-    "name": "The CW Network Television (United States)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.cwtv.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/the-cw-network-television-united-states.md"
-  },
-  {
     "id": "the-economist-world-news-united-kingdom",
     "name": "The Economist",
     "description": "Use when you have a `name` or `employer-org` of some public prominence and want serious international coverage or analysis — returns `employer-org`, `associate` and event context from published articles.",
@@ -40006,37 +39692,49 @@
   {
     "id": "zbin",
     "name": "ZBin",
-    "description": "OSINT tool: ZBin.",
+    "description": "Use when you already hold a ZBin paste link and want to read its contents — returns whatever the poster put in it (possibly email, password, crypto-wallet); it is NOT searchable.",
     "url": "https://zbin.dev/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a specific encrypted paste you were handed a link to; useful mainly as negative knowledge — you cannot discover pastes here.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "email",
+      "password",
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste is passive, but a \"burn after reading\" paste is destroyed the moment you open it — screenshot/preserve before you navigate away, and open in a puppet browser in case the link is booby-trapped or tracked.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A public PrivateBin instance (client-side-encrypted, zero-knowledge); the operator cannot read pastes, and neither can you without the full link + key.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "linkode-alpha"
+    ],
+    "aliases": [
+      "zbin.dev"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/zbin.md"
   },
   {
@@ -66274,52 +65972,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/breachhq.md"
-  },
-  {
-    "id": "broadband-speed-checker-uk",
-    "name": "Broadband Speed Checker (UK)",
-    "description": "Analysis tool that assesses the speed of your Internet connection",
-    "url": "http://www.broadbandspeedchecker.co.uk",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/broadband-speed-checker-uk.md"
   },
   {
     "id": "broken-link-checker",
@@ -132358,45 +132010,6 @@
     "_file": "library/tools/image-video-face/bbc-co-uk.md"
   },
   {
-    "id": "bbc-news-visual-search",
-    "name": "BBC News Visual Search",
-    "description": "Enter the name of the item and the service will show in which news stories and at what time interval it appeared",
-    "url": "http://zeus.robots.ox.ac.uk/bbc_search/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Other Image Search Engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/bbc-news-visual-search.md"
-  },
-  {
     "id": "befunky-com",
     "name": "befunky.com",
     "description": "Use when you need to crop, rotate, adjust, or annotate a subject photo before reverse-image search or comparison — a general browser photo editor.",
@@ -133160,45 +132773,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/camgirlfinder-net.md"
-  },
-  {
-    "id": "camstreamer",
-    "name": "Camstreamer",
-    "description": "OSINT tool: Camstreamer.",
-    "url": "https://camstreamer.com/live/map",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Worldwide street webcams"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/camstreamer.md"
   },
   {
     "id": "capcut-com",
@@ -156705,48 +156279,6 @@
     "_file": "library/tools/maps-geospatial-data/go-kml-maps.md"
   },
   {
-    "id": "google-co-uk",
-    "name": "google.co.uk",
-    "description": "OSINT tool: google.co.uk.",
-    "url": "https://www.google.co.uk/maps",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/google-co-uk.md"
-  },
-  {
     "id": "google-earth-engine",
     "name": "Google Earth Engine",
     "description": "Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.",
@@ -157480,40 +157012,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/landmark-toolpie-com.md"
-  },
-  {
-    "id": "live-action-map-com",
-    "name": "Live-action-map.com",
-    "description": "OSINT tool: Live-action-map.com.",
-    "url": "https://www.live-action-map.com/",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/live-action-map-com.md"
   },
   {
     "id": "live-map-of-london-underground-trains",
@@ -173065,24 +172563,25 @@
   {
     "id": "brave-browser",
     "name": "Brave Browser",
-    "description": "Privacy-focused Chromium browser shipped in the Trace Labs VM with OSINT extensions pre-installed.",
+    "description": "Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface for every web-manual tool.",
     "url": "https://brave.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Privacy-respecting browsing for investigations with the Forensic OSINT capture extension.",
+    "bestFor": "A privacy-respecting Chromium browser (with Tor windows and fingerprint defence) for anonymous investigation sessions.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; a paid Brave VPN/Firewall add-on exists but nothing in the browser's investigative use requires it.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is your OpSec layer, not a query tool — it leaks nothing to targets by itself. Use a dedicated puppet profile (or a private/Tor window) per case so cookies, logins and history never cross-contaminate identities. Brave's Tor windows route through Tor but are NOT a full Tails-grade anonymity guarantee; for high-risk work prefer a purpose-built VM.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Installed and configured (with forced Forensic OSINT extension) in the Trace Labs VM.",
+    "trustNote": "Well-known open-source Chromium fork maintained by Brave Software; shipped and pre-configured (with the Forensic OSINT capture extension) in the Trace Labs OSINT VM.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -173091,7 +172590,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "brave"
+    ],
+    "aliases": [
+      "Brave",
+      "brave.com"
+    ],
     "tags": [
       "browser",
       "privacy",
@@ -173099,11 +172604,8 @@
       "opsec"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "brave"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/brave-browser.md"
   },
   {
@@ -200595,42 +200097,6 @@
     "_file": "library/tools/people-search/melissadata.md"
   },
   {
-    "id": "monster",
-    "name": "Monster",
-    "description": "OSINT tool: Monster.",
-    "url": "http://www.monster.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "job-search-resources"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/monster.md"
-  },
-  {
     "id": "mr-holmes",
     "name": "Mr.Holmes",
     "description": "Use when you have a `username`, `email`, `phone`, or `domain` and want a one-command multi-module sweep — returns `social-profile`, email/service links, phone recon, and a relationship graph.",
@@ -204812,37 +204278,53 @@
   {
     "id": "sources",
     "name": "Sources",
-    "description": "OSINT tool: Sources.",
+    "description": "Use when you have a name or a subject-matter area and want to confirm a person's role, employer, and public contact details as a media spokesperson/expert — returns employer-org, phone, email, social-profile.",
     "url": "http://www.sources.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding and verifying experts, spokespersons and organisational contacts by name or topic.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "phone",
+      "email",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the public directory; listing yourself as a source is a paid membership, but querying it is not.",
+    "opsec": "passive",
+    "opsecNote": "A public third-party directory — searching it does not touch the target. Entries are self-submitted by experts/organisations for publicity, so treat contact details as officially published rather than private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running Canadian journalists' source directory (Sources.com / Sources Select Resources); listings are self-submitted, so accuracy depends on the member.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Sources.com",
+      "Sources Select Resources"
+    ],
     "tags": [
       "expert-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/people-search/sources.md"
   },
   {
@@ -230605,40 +230087,6 @@
     "_file": "library/tools/public-records/finland.md"
   },
   {
-    "id": "first-philadelphia-preparatory-charter-school-staff-public-release-2017",
-    "name": "First Philadelphia Preparatory Charter School Staff Public Release 2017",
-    "description": "OSINT tool: First Philadelphia Preparatory Charter School Staff Public Release 2017.",
-    "url": "https://b2.caspio.com/dp/0a921000842668d3d3e644d2bd8f",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/first-philadelphia-preparatory-charter-school-staff-public-release-2017.md"
-  },
-  {
     "id": "fivethirtyeight",
     "name": "FiveThirtyEight",
     "description": "OSINT tool: FiveThirtyEight.",
@@ -238714,42 +238162,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/inpi-fr.md"
-  },
-  {
-    "id": "insight-jini",
-    "name": "Insight Jini",
-    "description": "Extreme quick, extreme simple and free online tool for data visalization and analysis",
-    "url": "https://insightjini.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Databases and data analyzes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/insight-jini.md"
   },
   {
     "id": "insolvency-practitioners-org-uk",
@@ -258193,41 +257605,59 @@
   {
     "id": "search-the-open-information-catalogue",
     "name": "Search the Open Information Catalogue",
-    "description": "OSINT tool: Search the Open Information Catalogue.",
-    "url": "https://www2.gov.bc.ca/gov/search?id=9199E7BC9682482EB9EA0B6D6B8D386C",
+    "description": "Use when you have a name, organisation or topic and want proactively-released BC government records mentioning it — returns document-id, employer-org, and named individuals in disclosed FOI/briefing material.",
+    "url": "https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/open-government/open-information",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching British Columbia's proactively disclosed FOI responses, briefing notes and released records by keyword or name.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government transparency portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you are searching a government publication index, not touching the subject. Nothing you type is exposed to the person named; still use a puppet browser as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of British Columbia Open Information portal; records are authoritative government disclosures.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "clicklaw",
       "cso",
       "search-for-open-information-documents",
       "security-licence-status-verification"
     ],
+    "aliases": [
+      "BC Open Information",
+      "Open Information Catalogue"
+    ],
+    "tags": [
+      "foi",
+      "government-records",
+      "canada",
+      "british-columbia"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-the-open-information-catalogue.md"
   },
   {
@@ -260403,50 +259833,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/solocheck-ie.md"
-  },
-  {
-    "id": "sorted-by-birth-date",
-    "name": "Sorted by Birth Date",
-    "description": "Inmate lookup by birth date",
-    "url": "https://www.bop.gov/inmateloc/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "birth-records"
-    ],
-    "bestFor": "Inmate lookup by birth date",
-    "input": "Date of birth, state/federal system",
-    "output": "Inmate records, location, release date",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Feature of various inmate databases",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "federal-bureau-of-prisons-inmate-locator-us",
-      "federal-inmate-locator",
-      "the-inmate-locator"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/birth-records/sorted-by-birth-date.md"
   },
   {
     "id": "sortedbybirthdate",
@@ -275005,46 +274391,6 @@
     "_file": "library/tools/search-engines/clatscope-info-tool.md"
   },
   {
-    "id": "clear-regulatory-directory-unitd-states",
-    "name": "CLEAR Regulatory Directory (Unitd States)",
-    "description": "Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges",
-    "url": "https://www.clearhq.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/clear-regulatory-directory-unitd-states.md"
-  },
-  {
     "id": "clearing-and-depository-services",
     "name": "CDS (Clearing and Depository Services)",
     "description": "Use when you need Canadian securities-market infrastructure info (participant lists, ISIN issuance, regulatory notices) — mostly institutional; limited public data and no consumer securities search.",
@@ -285266,46 +284612,6 @@
     "_file": "library/tools/search-engines/inside.md"
   },
   {
-    "id": "instya",
-    "name": "Instya",
-    "description": "Product research, shopping comparisons, eCommerce OSINT only",
-    "url": "https://www.instya.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "general-search"
-    ],
-    "bestFor": "Product research, shopping comparisons, eCommerce OSINT only",
-    "input": "Product names, shopping categories",
-    "output": "Product listings across eCommerce sites with curated buying guides",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Category mismatch - primarily an eCommerce/shopping search engine, not general web OSINT; consider moving to commerce category",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/general-search/instya.md"
-  },
-  {
     "id": "intelligence-x",
     "name": "Intelligence X (Tools)",
     "description": "Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop launcher of specialist lookups for it — returns links into services that yield `document-id`/`social-profile`.",
@@ -295233,49 +294539,6 @@
     "_file": "library/tools/search-engines/parseek-iran.md"
   },
   {
-    "id": "pay-toronto-tickets",
-    "name": "Pay Toronto Tickets",
-    "description": "City of Toronto site for paying provincial tickets - lists location IDs and corresponding municipalities",
-    "url": "http://www.toronto.ca/pay-toronto-tickets/poatickets/poa_offices.htm",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "plowto"
-    ],
-    "_file": "library/tools/search-engines/pay-toronto-tickets.md"
-  },
-  {
     "id": "pbs-kids",
     "name": "PBS Kids",
     "description": "Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from the PBS",
@@ -300921,46 +300184,6 @@
     "_file": "library/tools/search-engines/soovle.md"
   },
   {
-    "id": "soso",
-    "name": "Soso",
-    "description": "Chinese web search engine",
-    "url": "http://soso.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/soso.md"
-  },
-  {
     "id": "spiderfoot-poppopjmp-fork",
     "name": "SpiderFoot (poppopjmp fork)",
     "description": "Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ modules — returns `email`, `social-profile`, `domain`, `ip-address`, and `address` correlations.",
@@ -305295,46 +304518,6 @@
     "_file": "library/tools/search-engines/webhound-anoncatalyst.md"
   },
   {
-    "id": "webkams",
-    "name": "WebKams",
-    "description": "Search live webcams around the world",
-    "url": "https://www.webkams.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/webkams.md"
-  },
-  {
     "id": "welcome-to-dealstrap",
     "name": "Welcome to Dealstrap!",
     "description": "OSINT tool: Welcome to Dealstrap!.",
@@ -305817,46 +305000,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/wikidot.md"
-  },
-  {
-    "id": "wikihow",
-    "name": "Wikihow",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based search",
-    "url": "http://www.wikihow.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/wikihow.md"
   },
   {
     "id": "wikiindex",
@@ -311553,48 +310696,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/social-networks/buffer.md"
-  },
-  {
-    "id": "burrrd",
-    "name": "burrrd.",
-    "description": "OSINT tool: burrrd..",
-    "url": "https://burrrd.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/burrrd.md"
   },
   {
     "id": "buzz-sumo",

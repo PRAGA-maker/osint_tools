@@ -17,7 +17,6 @@ kind: group-index
 - **`4chan`** (low) — Use when a subject or image may surface on 4chan and you want to find/preserve posts — returns anonymous threads and images (best searched v
 - **`51-com-china`** (medium) — Web game platform based in China
 - **`a-small-world`** (medium) — Use when you have a `name`/`username` for an affluent-travel subject and want to check for a members-club profile — returns a `social-profil
-- **`abc-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
@@ -32,7 +31,6 @@ kind: group-index
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
-- **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
 - **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Use when you have a `name`/`username` linked to US real-estate investing and want their member profile — returns bio, location, activity and
@@ -86,7 +84,6 @@ kind: group-index
 - **`doxbin`** (medium) — OSINT tool: doxbin.
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
 - **`ehow`** (low) — OSINT tool: eHow.
-- **`engadget-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
 - **`eumom-ie`** (medium) — OSINT tool: eumom.ie.
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
@@ -126,18 +123,14 @@ kind: group-index
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
-- **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
-- **`google-com-33`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
-- **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`hashbin`** (medium) — OSINT tool: HashBin.
 - **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e
-- **`hgtv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
@@ -163,7 +156,7 @@ kind: group-index
 - **`lesma-eu`** (medium) — OSINT tool: lesma.eu.
 - **`liferea-linux-rss-news-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`linkedin-groups`** (medium) — Use when you have a `name`/`username` or a topic and want a person's professional affiliations — returns the LinkedIn Groups they belong to 
-- **`linkode-alpha`** (medium) — OSINT tool: Linkode(alpha).
+- **`linkode-alpha`** (medium) — Use when you already hold a Linkode paste link and want to read its contents — returns whatever the poster stored (possibly email, password,
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
 - **`logpasta`** (medium) — OSINT tool: Logpasta.
 - **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
@@ -304,7 +297,6 @@ kind: group-index
 - **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text, credentials, or contact frag
 - **`the-comedy-network-television-canada`** (low) — Use when you have a `name` tied to Canadian comedy/entertainment TV and want show, cast or programming info — returns `social-profile`/progr
-- **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-economist-world-news-united-kingdom`** (low) — Use when you have a `name` or `employer-org` of some public prominence and want serious international coverage or analysis — returns `employ
 - **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
 - **`the-guardian-united-kingdom`** (medium) — Use when you have a `name`/`employer-org` in UK public life and want investigative coverage and gov-data journalism — returns articles, name
@@ -354,7 +346,7 @@ kind: group-index
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
-- **`zbin`** (medium) — OSINT tool: ZBin.
+- **`zbin`** (medium) — Use when you already hold a ZBin paste link and want to read its contents — returns whatever the poster put in it (possibly email, password,
 - **`zdnet-technology-news-and-reviews`** (low) — Use when you have a `name` or `employer-org` in the tech industry and want press coverage, quotes or bylines — returns `employer-org`, `asso
 - **`zerobin`** (medium) — Use when you find a ZeroBin/PrivateBin paste link in a subject's messages, or need to share case data securely — a zero-knowledge, browser-e
 

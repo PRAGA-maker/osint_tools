@@ -10,7 +10,7 @@ kind: group-index
 - **`additional-resources/`** — 2 skill(s) below.
 - **`annual-reports/`** — 4 skill(s) below.
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
-- **`birth-records/`** — 1 skill(s) below.
+- **`birth-records/`** — 0 skill(s) below.
 - **`company-profiles/`** — 11 skill(s) below.
 - **`court-criminal-records/`** — 17 skill(s) below.
 - **`death-records/`** — 2 skill(s) below.
@@ -324,7 +324,6 @@ kind: group-index
 - **`findmypast-ie`** (high) — Use when you have a `name` and Irish ancestry/context and want historical records (census, BMD, church, migration) to build family and ident
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
 - **`finland`** (medium) — Use when you have a `name` or `employer-org` linked to Finland and want registered companies, officers and addresses — returns `employer-org
-- **`first-philadelphia-preparatory-charter-school-staff-public-release-2017`** (medium) — OSINT tool: First Philadelphia Preparatory Charter School Staff Public Release 2017.
 - **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
 - **`fl-energy-money-in-politics`** (medium) — OSINT tool: FL Energy Money in Politics.
 - **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
@@ -476,7 +475,6 @@ kind: group-index
 - **`inmateaid`** (high) — Use when you have a `name` and think a US subject may be incarcerated — returns inmate records with facility/location, inmate ID, and age/DO
 - **`inmemorium-canada`** (high) — Use when you have a `name` and want to confirm a Canadian death and pull obituary details — returns death/birth dates, funeral location and 
 - **`inpi-fr`** (high) — Use when you have a French `name`, `employer-org`, or `address` and want official company records and directors/beneficial owners — returns 
-- **`insight-jini`** (medium) — Extreme quick, extreme simple and free online tool for data visalization and analysis
 - **`insolvency-practitioners-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a UK insolvency practitioner's licence, firm, and business address — returns name, em
 - **`integrated-companies-research-china-hong-kong`** (medium) — Use when you have a `name` or company and want Hong Kong corporate records — searches HK-registered companies by name and directors, returni
 - **`inteltechniques-business-search-tool`** (high) — Use when you have a company `employer-org` or a business owner's `name` and want to sweep many business-record sources at once — returns reg
@@ -835,7 +833,7 @@ kind: group-index
 - **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
 - **`search-polk-county-ordinance`** (low) — Use when you have an address, subdivision, or property description in Polk County, FL and want the local ordinance record touching it — retu
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
-- **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
+- **`search-the-open-information-catalogue`** (medium) — Use when you have a name, organisation or topic and want proactively-released BC government records mentioning it — returns document-id, emp
 - **`searchable-fcc-id-database`** (low) — Use when you have an FCC ID from a wireless device (`device-id`) and want to identify it — returns manufacturer, model, internal photos, man
 - **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re

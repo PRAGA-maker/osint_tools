@@ -73,7 +73,6 @@ kind: group-index
 - **`bskyfollowfinder`** (medium) — Use when you have a Bluesky `username`/`social-profile` and want to map its social graph — returns associate accounts that the profile's own
 - **`bskyviewer-github-io`** (high) — Use when you have a Bluesky `username`/handle and want to view a profile, posts, and threads without an account — returns social-profile con
 - **`buffer`** (low) — Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwi
-- **`burrrd`** (medium) — OSINT tool: burrrd..
 - **`buzz-sumo`** (low) — Use when you have a topic, `domain`, or `name` and want to find their top content, who shared it, and connected authors/journalists — return
 - **`calialec-snap-map-private-api`** (medium) — Use when you have a `geolocation` (coordinates/place) and want the public Snapchat snaps and stories posted there — returns Snap Map media w
 - **`castrick`** (high) — Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-pr

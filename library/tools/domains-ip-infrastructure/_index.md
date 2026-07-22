@@ -93,7 +93,6 @@ kind: group-index
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`bluehost-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`breachhq`** (low) — OSINT tool: BreachHQ.
-- **`broadband-speed-checker-uk`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
 - **`broken-link-hijacker`** (low) — Crawls the website and searches for all the broken links (in "<a href" and "<img src").
 - **`browserling`** (low) — OSINT tool: Browserling.

@@ -142,7 +142,6 @@ kind: group-index
 - **`melissa-us-2`** (high) — Use when you have a `name`, `address`, `phone` or `email` and want to verify and enrich it into full contact detail — returns matched name, 
 - **`melissa-us`** (high) — Use when you have a US `address` (or name/phone) and want to verify/normalise it and find associated residents — returns standardised `addre
 - **`melissadata`** (high) — Use when you have an `address`, `name`, `phone` or `email` and want to verify it and pull linked contact/identity data — returns current res
-- **`monster`** (medium) — OSINT tool: Monster.
 - **`mr-holmes`** (high) — Use when you have a `username`, `email`, `phone`, or `domain` and want a one-command multi-module sweep — returns `social-profile`, email/se
 - **`muckrack`** (low) — Use when you have a `name` (or `employer-org`) for a journalist/media figure and want their beat, outlet and social presence — returns `soci
 - **`my-cse-for-search-in-48-pastebin-sites`** (high) — Use when you have a `name`, `username`, `email` or other selector and want to find it in leaked/pasted data — a Google Custom Search Engine 
@@ -215,7 +214,7 @@ kind: group-index
 - **`social-recon`** (high) — Use when you have a `username` or `email` and want an automated sweep of their online footprint — returns social-profile, associate, and ema
 - **`socialcatfish`** (high) — Use when you have an `image`, `email`, `phone`, `username` or `name` and want a reverse-lookup that verifies identity and surfaces linked pr
 - **`socialpath`** (high) — Use when you have a `username` and want to track its reuse across social platforms and profile it — returns matching profiles, activity, and
-- **`sources`** (medium) — OSINT tool: Sources.
+- **`sources`** (medium) — Use when you have a name or a subject-matter area and want to confirm a person's role, employer, and public contact details as a media spoke
 - **`spokeo-com`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want an aggregated US people profile — returns address history, phone/email, 
 - **`spokeo`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a consolidated US person report that also links social profiles — retur
 - **`spydialer-reverse-phone-lookup`** (high) — Use when you have a US `phone` and want the owner — returns owner `name`, carrier/line-type and location; also does reverse name/address/ema

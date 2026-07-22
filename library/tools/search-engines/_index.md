@@ -10,7 +10,7 @@ kind: group-index
 - **`academic-publication-search/`** — 16 skill(s) below.
 - **`code-search/`** — 5 skill(s) below.
 - **`ftp-search/`** — 1 skill(s) below.
-- **`general-search/`** — 15 skill(s) below.
+- **`general-search/`** — 14 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 10 skill(s) below.
 - **`other-search/`** — 1 skill(s) below.
@@ -147,7 +147,6 @@ kind: group-index
 - **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
 - **`citysearch`** (medium) — Use when you have a business `name` or `employer-org` and a `geolocation` and want its listing details — returns `address`, `phone`, and a `
 - **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
-- **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
 - **`clearing-and-depository-services`** (low) — Use when you need Canadian securities-market infrastructure info (participant lists, ISIN issuance, regulatory notices) — mostly institution
 - **`clicklaw`** (low) — Use when you need plain-language British Columbia / Canadian legal context and want to understand a process or your rights — returns curated
 - **`cloud-bucket-search-engine`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want exposed cloud storage — returns public S3/Azure/GCS bucket listings and file
@@ -560,7 +559,6 @@ kind: group-index
 - **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
-- **`pay-toronto-tickets`** (medium) — City of Toronto site for paying provincial tickets - lists location IDs and corresponding municipalities
 - **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
 - **`pdfsearch-io`** (low) — OSINT tool: Pdfsearch.io.
 - **`perplexity`** (low) — OSINT tool: Perplexity.
@@ -677,7 +675,6 @@ kind: group-index
 - **`somalia-conflict`** (medium) — List of individuals reported missing in connection with the conflict in Somalia
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`soovle`** (low) — OSINT tool: Soovle.
-- **`soso`** (medium) — Chinese web search engine
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
@@ -765,7 +762,6 @@ kind: group-index
 - **`webcrawler-meta-search`** (low) — Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a na
 - **`webdork`** (medium) — Use when you have a `domain` or `employer-org` and want to automate Google-dorking for exposed data — a Python CLI that runs dork queries to
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
-- **`webkams`** (medium) — Search live webcams around the world
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
 - **`white-house-disclosures`** (medium) — Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 
 - **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
@@ -776,7 +772,6 @@ kind: group-index
 - **`wikichristian`** (low) — Use when you have a `name` of a religious figure, denomination, or Christian topic and want a community encyclopedia entry — returns backgro
 - **`wikicrimes`** (low) — Use when you have a `geolocation`/area and want crowdsourced crime reports mapped there — returns location-tagged incident points and densit
 - **`wikidot`** (low) — Use when you have a `username` or topic and want content or profiles hosted on the Wikidot wiki farm — returns wiki pages and author profile
-- **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 
 - **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
 - **`wikimedia-meta-wiki`** (low) — Use when you have a Wikimedia editor `username` and want their cross-project (SUL) global account and coordination activity — returns linked

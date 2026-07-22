@@ -50,7 +50,6 @@ kind: group-index
 - **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
 - **`go-kml-maps`** (medium) — OSINT tool: Go KML Maps.
-- **`google-co-uk`** (medium) — OSINT tool: google.co.uk.
 - **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
 - **`google-flood-hub`** (low) — A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.
 - **`google-map-search-engine`** (medium) — OSINT tool: Google Map Search Engine.
@@ -67,7 +66,6 @@ kind: group-index
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
 - **`kayak-airlines-search-engine`** (low) — Use when you have an airline name or IATA code and want its official identifier and contact line — returns the airline's name, two-letter co
 - **`landmark-toolpie-com`** (medium) — Use when you have an `image` showing a recognizable landmark and want to identify it — returns the landmark's name and `geolocation`/`addres
-- **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
 - **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv

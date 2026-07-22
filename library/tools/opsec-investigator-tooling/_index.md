@@ -72,7 +72,7 @@ kind: group-index
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
 - **`bool`** (low) — Boolean search assistant
 - **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
-- **`brave-browser`** (medium) — Privacy-focused Chromium browser shipped in the Trace Labs VM with OSINT extensions pre-installed.
+- **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bromite`** (low) — OSINT tool: Bromite.
 - **`bugmenot`** (low) — login and passwords for public accounts in different services
 - **`bunker-is`** (low) — OSINT tool: Bunker.is.
