@@ -19,7 +19,7 @@ kind: group-index
 - **`pubmed-national-center-for-biotechnology-information`** (medium) — Use when you have a researcher/clinician `name` and want their biomedical publications — returns authored papers with affiliations, co-autho
 - **`pubpeer`** (medium) — Use when you have a `name`, DOI, or paper title and want post-publication peer critique — returns comment threads flagging errors, image man
 - **`science-direct`** (medium) — Use when you have a researcher `name` and want their science/engineering publications — returns authored articles with affiliations, co-auth
-- **`science-publications`** (medium) — OSINT tool: Science Publications.
+- **`science-publications`** (medium) — Use when you have an author `name` and want their academic journal articles — returns `social-profile`/authorship, `employer-org` affiliatio
 - **`the-open-syllabus-project`** (medium) — Use when you have an author `name` or a text/title and want to see which universities and courses assign it — returns employer-org (institut
 - **`uk-national-archives`** (medium) — Use when you have a `name`, place, or record reference and want UK government/historical records — returns catalogue entries (military, will
 

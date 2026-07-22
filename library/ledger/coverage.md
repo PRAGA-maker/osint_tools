@@ -2,50 +2,50 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7755 total · 4426 full · 3329 stub (57% enriched)
+**Tools:** 7753 total · 4436 full · 3317 stub (57% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3611 · medium: 2181 · high: 1963
+low: 3611 · medium: 2179 · high: 1963
 
 ## Tools by trust
-community: 3531 · unverified: 2743 · trusted: 1471 · untrustworthy: 6 · personal: 4
+community: 3533 · unverified: 2736 · trusted: 1475 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 12/455
 - `archives-cache` — 78/127
-- `communities-forums` — 212/335
+- `communities-forums` — 215/335
 - `dark-web` — 32/116
-- `dating-classifieds` — 69/103
+- `dating-classifieds` — 70/103
 - `documents-metadata` — 35/313
-- `domains-ip-infrastructure` — 96/721
+- `domains-ip-infrastructure` — 96/720
 - `email` — 245/246
 - `evidence-capture` — 8/30
 - `financial-crypto` — 47/118
 - `geolocation` — 283/343
-- `image-video-face` — 437/454
+- `image-video-face` — 438/454
 - `maps-geospatial-data` — 55/127
 - `messaging` — 177/188
 - `opsec-investigator-tooling` — 37/558
 - `people-search` — 254/258
 - `phone` — 134/137
-- `public-records` — 826/1049
-- `search-engines` — 449/849
+- `public-records` — 826/1048
+- `search-engines` — 452/849
 - `social-networks` — 712/793
 - `training-ctf` — 4/12
 - `translation-language` — 15/103
-- `transportation` — 107/216
+- `transportation` — 109/216
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 993 leaves
+- `library/tools/public-records` — 992 leaves
 - `library/tools/search-engines` — 797 leaves
 - `library/tools/social-networks` — 765 leaves
 - `library/tools/opsec-investigator-tooling` — 526 leaves
-- `library/tools/domains-ip-infrastructure` — 480 leaves
+- `library/tools/domains-ip-infrastructure` — 479 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
 - `library/tools/image-video-face` — 359 leaves
 - `library/tools/communities-forums` — 332 leaves

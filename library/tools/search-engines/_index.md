@@ -362,7 +362,7 @@ kind: group-index
 - **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
 - **`ivmachiavelli-osint-team-links`** (medium) — Use when you need to find the right OSINT tool for a task — a large community-curated GitHub directory of OSINT links organized by category.
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
-- **`ixigo`** (medium) — India travel information site
+- **`ixigo`** (medium) — Use when you have an Indian train/flight/PNR or `geolocation` context and want travel-status and route info — returns `geolocation` schedule
 - **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
 - **`jersey-financial-services-commission`** (medium) — Use when you have a Jersey company `name` or `employer-org` and want its registry record — returns registration status, company number and o
 - **`jewish-virtual-library-online`** (medium) — Use when you have a `name` of a notable figure and want a biographical/reference entry — returns `social-profile`-style biography, dates and
@@ -684,7 +684,7 @@ kind: group-index
 - **`terrorism-reports`** (medium) — Use when you have a `name` or `employer-org` and want to check it against the US State Department's congressionally-mandated annual terroris
 - **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
-- **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.
+- **`the-osint-rack-mario-santella`** (medium) — Use when you need to discover an OSINT tool for a given selector/task — returns a filterable directory of 500+ vetted OSINT resources by cat
 - **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
 - **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light

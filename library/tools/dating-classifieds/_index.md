@@ -36,7 +36,7 @@ kind: group-index
 - **`fanspedia-net`** (low) — Use when you have a `username`, creator name or location and want to check a third-party OnlyFans directory for a matching creator profile —
 - **`fapello-com`** (medium) — OSINT tool: fapello.com.
 - **`farmers-only`** (low) — Use when a subject has a rural/agricultural background and you want to check for a profile on this US niche dating site by `username` or `im
-- **`fikfap-com`** (medium) — OSINT tool: fikfap.com.
+- **`fikfap-com`** (medium) — Use when you have a `username` and want to check for a subject's presence on this adult short-video platform — returns `social-profile`, `im
 - **`findr-fans`** (low) — OSINT tool: Findr.fans.
 - **`francais-a-londres-org-french-classifieds`** (low) — Use when investigating a French-speaking subject in London/the UK — search this Franco-British community site's classifieds and listings by 
 - **`free-classified-website-listing`** (medium) — Classified advertisements-related website that lists at least 1000 websites worldwide

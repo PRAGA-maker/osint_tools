@@ -23660,42 +23660,52 @@
   },
   {
     "id": "abc-television-australia",
-    "name": "ABC Television (Australia)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.abc.net.au/tv",
+    "name": "ABC (Australian Broadcasting Corporation)",
+    "description": "Use when you have a `name` and want Australian national/local news coverage of a subject — returns `social-profile`/mention, event dates and named `associate` context.",
+    "url": "http://www.abc.net.au",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Australia's national public broadcaster archive for a person named, quoted, or reported on.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public-broadcaster content; no paywall, no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject; only the ABC's servers log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Australia's national public broadcaster with strong editorial standards and deep local/regional coverage; credible journalism, still secondary to primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ABC News Australia",
+      "abc.net.au",
+      "Australian Broadcasting Corporation"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "archive",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/abc-television-australia.md"
   },
   {
@@ -25646,25 +25656,31 @@
   },
   {
     "id": "cnn-news-united-states",
-    "name": "CNN News (United States)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
+    "name": "CNN (United States)",
+    "description": "Use when you have a `name` and want major US/global news coverage mentioning a subject — returns `social-profile`/byline, event dates and named `associate` context.",
     "url": "http://www.cnn.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a major global news archive for a person named, quoted, or reported on.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search most articles; ad-supported with some metered/premium content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public news site is passive and invisible to any subject; only CNN/its ad partners log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major international news organisation with editorial standards; well-sourced, but still secondary journalism (interpretation), not primary record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -25673,15 +25689,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CNN",
+      "cnn.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "archive",
+      "global"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "relatedTools": [
       "cnn"
     ],
@@ -29244,25 +29263,32 @@
   },
   {
     "id": "information-week-news",
-    "name": "Information Week News",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
+    "name": "InformationWeek",
+    "description": "Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-org` context and named `associate` links.",
     "url": "http://www.informationweek.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding enterprise-IT and business-technology coverage naming a person, executive, or company.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read most articles; some gated/registration-walled analyst content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and dorking a public trade-news site is passive and invisible to any subject; only the publisher/ad partners log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running enterprise-IT trade publication; credible for tech-industry context, mixing reporting with vendor-adjacent and contributed content — corroborate specifics.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -29271,15 +29297,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Information Week",
+      "informationweek.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-media",
+      "tech",
+      "enterprise-it"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/information-week-news.md"
   },
   {
@@ -45941,43 +45970,51 @@
   },
   {
     "id": "fikfap-com",
-    "name": "fikfap.com",
-    "description": "OSINT tool: fikfap.com.",
+    "name": "FikFap",
+    "description": "Use when you have a `username` and want to check for a subject's presence on this adult short-video platform — returns `social-profile`, `image`/`face` frames and linked creator handles.",
     "url": "https://fikfap.com/discover",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a handle maps to a creator profile on a TikTok-style adult short-video platform.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "face"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse/discover; some creator content or interaction may sit behind sign-up or paid unlocks.",
+    "opsec": "active",
+    "opsecNote": "Adult platform — browse only from an isolated sock-puppet browser/session, never a personal or work account/IP. Signing in, following, or messaging a creator is attributable and can alert them. Handle any imagery lawfully and minimise what you retain; if content suggests a minor or non-consensual material, stop and escalate to law enforcement.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party adult short-video platform; creator identities are self-asserted and often pseudonymous, so treat any match as a lead requiring corroboration.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fikfap.com"
+    ],
     "tags": [
-      "onlyfans",
-      "OnlyFans Related Sites"
+      "adult",
+      "social-network",
+      "username-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/fikfap-com.md"
   },
   {
@@ -70214,52 +70251,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/easywhois.md"
-  },
-  {
-    "id": "ekhwan-uae",
-    "name": "Ekhwan (UAE)",
-    "description": "UAE based service provider for registering websites and domain addresses",
-    "url": "http://ekhwan.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ekhwan-uae.md"
   },
   {
     "id": "ericom-page-risk-analysis",
@@ -133197,41 +133188,53 @@
   {
     "id": "deepfakebench",
     "name": "DeepfakeBench",
-    "description": "Comparing deepfake detector performance across common benchmarks",
+    "description": "Use when you have an `image`/`face` and need to build or benchmark deepfake-detection tooling — returns a standardized detector/benchmark framework, not a per-image verdict.",
     "url": "https://github.com/SCLBD/DeepfakeBench",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "deepfake-detection"
     ],
-    "bestFor": "Comparing deepfake detector performance across common benchmarks",
-    "input": "Deepfake datasets and benchmark configs",
-    "output": "Evaluation metrics such as AUC and model comparisons",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Benchmarking and running deepfake/face-forgery detectors under a standardized, reproducible framework.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (academic). Running detectors needs your own compute (GPU recommended) and model weights per the repo.",
     "opsec": "passive",
-    "opsecNote": "Research framework executed locally without required external submissions.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "You run this locally on media you already hold — no network query about a subject, nothing disclosed externally. Keep case media on a controlled machine; don't upload sensitive images to third-party detector services when a local run suffices.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "A widely-cited academic benchmark (SCLBD) with open code; results are as trustworthy as the chosen detector and dataset — a research framework, not a courtroom oracle.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DeepfakeBench",
+      "SCLBD/DeepfakeBench"
+    ],
+    "tags": [
+      "deepfake-detection",
+      "image-forensics",
+      "benchmark"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deepfake-detection/deepfakebench.md"
   },
   {
@@ -250184,40 +250187,6 @@
     "_file": "library/tools/public-records/company-profiles/owler.md"
   },
   {
-    "id": "pa-school-districts-deeds-user-facing-web-search",
-    "name": "PA School Districts Deeds user-facing web search",
-    "description": "OSINT tool: PA School Districts Deeds user-facing web search.",
-    "url": "https://b2.caspio.com/dp/0a92100000938817df46468fa2a0",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/pa-school-districts-deeds-user-facing-web-search.md"
-  },
-  {
     "id": "pacer",
     "name": "PACER",
     "description": "Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs across federal courts.",
@@ -283634,42 +283603,50 @@
   },
   {
     "id": "ixigo",
-    "name": "Ixigo",
-    "description": "India travel information site",
+    "name": "ixigo",
+    "description": "Use when you have an Indian train/flight/PNR or `geolocation` context and want travel-status and route info — returns `geolocation` schedule/status context for India travel.",
     "url": "http://www.ixigo.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Checking Indian train/flight schedules, live running status and PNR/route information.",
+    "selectorsIn": [
+      "geolocation",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search schedules, live train status and PNR status; bookings are the paid/commercial side.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Schedule and status lookups are passive. A PNR status check requires the traveller's PNR number (which you must already lawfully hold) — do not attempt to obtain or brute-force someone else's PNR; that would be intrusive and likely unlawful.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, established Indian travel aggregator pulling from official rail/air feeds; schedule/status data is generally reliable, sourced from operators.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ixigo.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "travel",
+      "india",
+      "transport-schedules"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ixigo.md"
   },
   {
@@ -295444,42 +295421,53 @@
   },
   {
     "id": "science-publications",
-    "name": "Science Publications",
-    "description": "OSINT tool: Science Publications.",
+    "name": "Science Publications (thescipub.com)",
+    "description": "Use when you have an author `name` and want their academic journal articles — returns `social-profile`/authorship, `employer-org` affiliation and co-author `associate` links.",
     "url": "https://www.thescipub.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's open-access journal articles, their affiliation and co-authors.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open-access publisher; articles are free to read, no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching a public publisher site is passive and reveals nothing to any subject; only the publisher's servers log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An open-access journal publisher; useful as an authorship/affiliation source, but open-access venues vary widely in editorial rigour, so weight the scholarship itself cautiously.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Science Publications",
+      "thescipub.com"
+    ],
+    "tags": [
+      "academic",
+      "publications",
+      "authorship"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/science-publications.md"
   },
   {
@@ -299300,25 +299288,33 @@
   },
   {
     "id": "the-osint-rack-mario-santella",
-    "name": "The OSINT Rack (Mario Santella)",
-    "description": "Personal curated 'rack' of OSINT tools by Mario Santella.",
+    "name": "The OSINT Rack",
+    "description": "Use when you need to discover an OSINT tool for a given selector/task — returns a filterable directory of 500+ vetted OSINT resources by category, type and pricing.",
     "url": "https://www.mariosantella.com/the-osint-rack/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "A practitioner's hand-picked tool shortlist",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right OSINT tool for a task by filtering a large curated directory by category, type and cost.",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and filter; it is a directory that links out to the actual tools (which have their own pricing).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a tool directory is passive and reveals nothing about a target — you run no query against a subject here, you only pick tools to use elsewhere.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "personal",
-    "trustNote": "Personal site of practitioner Mario Santella.",
+    "trust": "community",
+    "trustNote": "A curated OSINT resource directory (now at osintrack.com) maintained by practitioner Mario Santella; a helpful meta-resource, but inclusion is curation, not endorsement of each linked tool.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -299327,14 +299323,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Rack",
+      "osintrack.com",
+      "Mario Santella OSINT Rack"
+    ],
     "tags": [
-      "tool-collection",
-      "personal"
+      "osint-directory",
+      "tool-index",
+      "meta-resource"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/the-osint-rack-mario-santella.md"
   },
   {
@@ -352318,42 +352319,54 @@
   },
   {
     "id": "australian-maritime-safety-authority-amsa",
-    "name": "Australian Maritime Safety Authority (AMSA)",
-    "description": "Maritime-related website that offers a search of an Australian database of naval vessel types",
+    "name": "AMSA — Australian Register of Ships",
+    "description": "Use when you have a vessel name/ID or an owner `name` and want Australian ship-registration detail — returns `employer-org`/owner, vessel `document-id` and registration status.",
     "url": "http://www.amsa.gov.au/vessels/shipping-registration/list-of-registered-ships",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up an Australian-registered ship, its owner and registration details.",
+    "selectorsIn": [
+      "name",
+      "vin"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public register from a government agency; the searchable list of registered ships is browsable without payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public government register; searching it is passive and reveals nothing to any subject. Only AMSA's servers log your query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Australian Maritime Safety Authority, a federal government agency; registration data is authoritative.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "AMSA",
+      "Australian Register of Ships",
+      "amsa.gov.au"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "maritime",
+      "vessel-registration",
+      "public-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/australian-maritime-safety-authority-amsa.md"
   },
   {
@@ -361229,24 +361242,29 @@
   {
     "id": "wikicars",
     "name": "Wikicars",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on vehicles",
+    "description": "Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a car seen in imagery or an account.",
     "url": "http://wikicars.org/en/Main_Page",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying or researching a vehicle make/model/generation from a crowdsourced automotive encyclopedia.",
+    "selectorsIn": [
+      "physical-description"
+    ],
+    "selectorsOut": [
+      "vehicle-plate"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free crowdsourced wiki; no account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public wiki is passive and reveals nothing to any subject; only the site's servers log the visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A crowdsourced, lightly-maintained automotive wiki (aging infrastructure, occasional SSL issues); useful as reference, but user-edited and possibly outdated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -361255,15 +361273,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WikiCars",
+      "wikicars.org"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "vehicles",
+      "reference",
+      "encyclopedia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/wikicars.md"
   },
   {

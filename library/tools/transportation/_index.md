@@ -26,7 +26,7 @@ kind: group-index
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
 - **`askmid`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm whether that vehicle is insured on the Motor Insurance Database — returns an insu
 - **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference
-- **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
+- **`australian-maritime-safety-authority-amsa`** (medium) — Use when you have a vessel name/ID or an owner `name` and want Australian ship-registration detail — returns `employer-org`/owner, vessel `d
 - **`auto-bid-master-auction`** (medium) — Use when you have a `vin` and want a salvage/auction history and photos of a specific vehicle — returns listing photos, damage/condition, ti
 - **`autogespot`** (medium) — Use when you have a `vehicle-plate` or a photo of a distinctive car and want crowd-sourced sightings — returns geolocation, date, and images
 - **`autowini-vin-search-international`** (medium) — OSINT tool: Autowini (Vin Search International).
@@ -202,7 +202,7 @@ kind: group-index
 - **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
 - **`wandermap`** (low) — hiking routes world map
 - **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor
-- **`wikicars`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on v
+- **`wikicars`** (medium) — Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a
 - **`wikiroutes`** (low) — Public transport database.
 - **`world-aviation-accident-database-1962-2007`** (low) — OSINT tool: World Aviation Accident Database 1962-2007.
 - **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.

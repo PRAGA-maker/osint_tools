@@ -704,7 +704,6 @@ kind: group-index
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Use when a subject, company or vehicle ties to Bulgaria and you need country-specific registries and search resources — returns a curated di
 - **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
-- **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
 - **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a

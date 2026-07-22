@@ -17,7 +17,7 @@ kind: group-index
 - **`4chan`** (low) — Use when a subject or image may surface on 4chan and you want to find/preserve posts — returns anonymous threads and images (best searched v
 - **`51-com-china`** (medium) — Web game platform based in China
 - **`a-small-world`** (medium) — Use when you have a `name`/`username` for an affluent-travel subject and want to check for a members-club profile — returns a `social-profil
-- **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
+- **`abc-television-australia`** (medium) — Use when you have a `name` and want Australian national/local news coverage of a subject — returns `social-profile`/mention, event dates and
 - **`actualidad-world-newspapers-online`** (medium) — Use when you have a `geolocation`/region and want its local press — returns curated links to online newspapers by country, so you can search
 - **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
 - **`airbnb`** (medium) — Use when you have a host/guest `name` or profile URL and want their Airbnb presence — returns profile details, reviews, and approximate list
@@ -55,7 +55,7 @@ kind: group-index
 - **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness
 - **`cl1p`** (medium) — Use when you have a known/guessable `username` or label and want to check whether someone left text or files at cl1p.net/<that-name> — retur
 - **`cnet`** (medium) — Use when you have a `name` or `employer-org` in tech/consumer-electronics and want press coverage — returns articles, quotes, and role/compa
-- **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
+- **`cnn-news-united-states`** (medium) — Use when you have a `name` and want major US/global news coverage mentioning a subject — returns `social-profile`/byline, event dates and na
 - **`coffeemetsbagel`** (medium) — Use when you already know a subject uses this dating app and want to confirm their in-app profile — but note it offers no public search, so 
 - **`commie`** (medium) — OSINT tool: commie.
 - **`community-screwfix-com`** (low) — Use when you have a `username` and want to check the Screwfix UK trade/DIY forum — returns social-profile confirmation and posting history f
@@ -128,7 +128,7 @@ kind: group-index
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
-- **`information-week-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`information-week-news`** (medium) — Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-o
 - **`inkdrop-international-newspapers`** (medium) — English online news outlets from around the world
 - **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
 - **`itpro`** (medium) — Enterprise and business IT news

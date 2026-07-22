@@ -158,7 +158,6 @@ kind: group-index
 - **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
-- **`ekhwan-uae`** (medium) — UAE based service provider for registering websites and domain addresses
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
