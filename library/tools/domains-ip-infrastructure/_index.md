@@ -106,7 +106,6 @@ kind: group-index
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
 - **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
-- **`chismodon`** (low) — Command line #osint toolkit for domain information gathering. Search by domain name, Google Play Store ID, CIDR/ASN, email/username/password
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
 - **`cloudbrute`** (low) — Tool to find target infrastructure, files, and apps on the popular cloud providers
@@ -317,7 +316,7 @@ kind: group-index
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
-- **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
+- **`nmap-formatter`** (low) — Use when you have Nmap XML scan output for an `ip-address`/`domain` and want a readable report — converts it to HTML, CSV, JSON, Markdown, S
 - **`nmap-online`** (low) — OSINT tool: NMAP Online.
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide

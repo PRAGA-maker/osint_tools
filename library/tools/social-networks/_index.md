@@ -505,7 +505,7 @@ kind: group-index
 - **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — Use when you have a VK (VKontakte) numeric user id and want hidden profile metadata without logging in — returns account creation/last-seen 
 - **`sn0int-framework-module-for-pornhub`** (medium) — Use when you have a Pornhub `username`/profile and want its linked identities — returns the display `name`, linked `social-profile`s (Instag
 - **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 
-- **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
+- **`snap-political-ads-library`** (low) — Use when you have an advertiser `name`/`employer-org` and want their Snapchat political-ad history — returns advertiser org, spend, reach an
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — Use when you have a Snapchat `username` and want to confirm the account exists — returns a Snapcode image when the handle is valid.
 - **`snapchat-user-search`** (medium) — Use when you have a `username`/`name` or a city and want to find Snapchat users — returns member profiles with age, location, and photos (se
@@ -595,7 +595,7 @@ kind: group-index
 - **`tinder-2`** (high) — Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns so
 - **`tokimeki-blue`** (high) — Use when you have a Bluesky `username` (handle) and want a TweetDeck-style, multi-column view of that account's posts, feeds and media to mo
 - **`tokinsights-com`** (medium) — Use when you have a TikTok `username`/handle and want historical follower/engagement analytics and tracked account data — returns social-pro
-- **`toolzu`** (low) — Instagram viewer and analytics tool.
+- **`toolzu`** (low) — Use when you have an Instagram `username` and want to view/download public profile content and stories without logging in — returns `social-
 - **`toutatis-2`** (high) — Use when you have an Instagram `username`/ID and want the obfuscated contact data Instagram holds — returns partially-masked `email` and `ph
 - **`toutatis`** (high) — Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric u
 - **`treeverse-2`** (high) — Use when you have an X/Twitter thread or `username` and want to visualize a conversation as a navigable tree to map participants and replies

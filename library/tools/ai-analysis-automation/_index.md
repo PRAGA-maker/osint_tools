@@ -256,7 +256,7 @@ kind: group-index
 - **`open-pgp`** (low) — OSINT tool: Open PGP.
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
 - **`openrefine`** (low) — OSINT tool: OpenRefine.
-- **`ora`** (low) — OSINT tool: ORA.
+- **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
 - **`oryon-osint-query-tool`** (low) — Construct investigations links in Google Sheet
 - **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.
 - **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
@@ -267,7 +267,6 @@ kind: group-index
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
 - **`osint-explorer`** (low) — OSINT framework for intelligence gathering.
 - **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
-- **`osint-framework`** (low) — OSINT tool: OSINT Framework.
 - **`osint-harvester`** (low) — Lightweight OSINT toolkit that collects and normalizes intelligence from multiple sources.
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — OSINT tool: OSINT.SH.

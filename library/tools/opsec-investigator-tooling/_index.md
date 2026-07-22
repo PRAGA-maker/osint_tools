@@ -169,7 +169,6 @@ kind: group-index
 - **`foursquare-swarm-social-networking-app-mobile-android`** (low) — App for mobile devices for social messaging and reviews
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — OSINT tool: Free Fax.
-- **`free-proxy-list`** (low) — Free proxies that are freshly checked and updated every 10 minutes
 - **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
 - **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
 - **`freshstart`** (low) — multi-login browser extension
@@ -293,7 +292,7 @@ kind: group-index
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
 - **`multilogin`** (low) — multi-login browser extension
-- **`my-browser-info`** (low) — Analyzes your browser and computer for information being revealed about you
+- **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
 - **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies

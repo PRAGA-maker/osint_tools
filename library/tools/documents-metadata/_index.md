@@ -137,7 +137,7 @@ kind: group-index
 - **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
 - **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
 - **`google-to-search-profiles-on-github`** (low) — OSINT tool: Google to search profiles on GitHub.
-- **`grep-app`** (low) — OSINT tool: grep.app.
+- **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
 - **`grep-for-osint`** (low) — simple toolkit that helps to quickly extract "important data" (phone numbers, email addresses, URLs) from the text / file directory
 - **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
 - **`guru-com`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations

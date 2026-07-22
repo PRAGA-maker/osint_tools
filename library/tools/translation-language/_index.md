@@ -72,7 +72,7 @@ kind: group-index
 - **`paulschou-binary-translator`** (low) — Tool used to encode and decode ASCII and ANSI text
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
 - **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement
-- **`promt-free-online-translator`** (low) — Tool for translating text and web content from one language to another
+- **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Language-related search for famous quotes and popular sayings
 - **`reddit-r-translator`** (low) — OSINT tool: Reddit/r/translator.
 - **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
@@ -93,7 +93,6 @@ kind: group-index
 - **`translate-com`** (low) — OSINT tool: Translate.com.
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
-- **`urbandictionary-com`** (low) — OSINT tool: urbandictionary.com.
 - **`vizard-ai`** (low) — OSINT tool: vizard.ai.
 - **`webopedia-com`** (low) — OSINT tool: webopedia.com.
 - **`wordreference-translator`** (low) — Tool for translating text and web content from one language to another

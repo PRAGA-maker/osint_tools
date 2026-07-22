@@ -90,7 +90,7 @@ kind: group-index
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
 - **`footballforums-net`** (medium) — Use when you have a `username` tied to football fandom and want their forum presence — returns their profile, posts and club allegiance, exp
-- **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
+- **`forum-cyclinguk-org`** (medium) — Use when you have a `username` that may belong to a UK cyclist and want their forum footprint — returns the member's `social-profile`, posts
 - **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
 - **`forum-officer-com`** (medium) — Use when you have a `username` and want to check for a matching law-enforcement community profile — returns social-profile, posts, and locat
 - **`forums-digitalspy-com`** (medium) — Use when you have a `username` and want to check for an account on a large long-running UK entertainment forum — returns the linked `social-

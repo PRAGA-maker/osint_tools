@@ -9944,40 +9944,52 @@
   {
     "id": "ora",
     "name": "ORA",
-    "description": "OSINT tool: ORA.",
+    "description": "Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, key actors and sub-groups.",
     "url": "http://www.casos.cs.cmu.edu/projects/ora/software.php",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Turning a list of people-to-people (or people-to-place) connections into a visual social-network graph with metrics that surface the most-connected actors.",
+    "selectorsIn": [
+      "associate",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "ORA-LITE is free from CMU CASOS (Windows only, capped at 2,000 nodes per entity class). The full ORA-PRO (PC/Mac, unlimited) is a paid product sold separately by Netanomics.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on your own machine against data you have already collected — no queries leave the desktop, so nothing about the target is disclosed to a third party. OpSec risk is only in how you gathered the underlying relationship data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Developed and maintained by the CASOS centre at Carnegie Mellon University; a long-standing, peer-cited academic tool for dynamic network analysis.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "the-data-and-story-library"
+    ],
+    "aliases": [
+      "ORA-LITE",
+      "ORA-PRO",
+      "CASOS ORA"
+    ],
     "tags": [
       "social-network-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "the-data-and-story-library"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ora.md"
   },
   {
@@ -10329,46 +10341,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/osint-explorer.md"
-  },
-  {
-    "id": "osint-framework",
-    "name": "OSINT Framework",
-    "description": "OSINT tool: OSINT Framework.",
-    "url": "http://osintframework.com/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "osint-framework-2",
-      "osint-framework-3"
-    ],
-    "_file": "library/tools/ai-analysis-automation/osint-framework.md"
   },
   {
     "id": "osint-framework-osint-dev-team",
@@ -27536,13 +27508,13 @@
   {
     "id": "forum-cyclinguk-org",
     "name": "forum.cyclinguk.org",
-    "description": "OSINT tool: forum.cyclinguk.org.",
-    "url": "https://forum.cyclinguk.org/index.php?sid=57457d819c3cfd3c4bd95753664061ef",
+    "description": "Use when you have a `username` that may belong to a UK cyclist and want their forum footprint — returns the member's `social-profile`, posts and joined-date.",
+    "url": "https://forum.cyclinguk.org/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a username posts on the Cycling UK (formerly CTC) community forum and mining their public post history for leads.",
     "selectorsIn": [
       "username"
     ],
@@ -27550,29 +27522,35 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read publicly; a free account is only needed to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading member profiles and threads is passive and unauthenticated — no notice to the member. Do not register or message with an attributable identity; a profile view while logged out leaves no trace to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A genuine phpBB community forum run by Cycling UK; content is member-generated, so treat individual claims as self-reported.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Cycling UK Forum",
+      "CTC Forum"
+    ],
     "tags": [
       "forums",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/forum-cyclinguk-org.md"
   },
   {
@@ -46553,40 +46531,6 @@
     "_file": "library/tools/dating-classifieds/secretfans.md"
   },
   {
-    "id": "similarfans",
-    "name": "SimilarFans",
-    "description": "OSINT tool: SimilarFans.",
-    "url": "https://similarfans.com/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/similarfans.md"
-  },
-  {
     "id": "sotugas",
     "name": "SoTugas",
     "description": "Portuguese OnlyFans directory.",
@@ -52792,37 +52736,53 @@
   {
     "id": "grep-app",
     "name": "grep.app",
-    "description": "OSINT tool: grep.app.",
+    "description": "Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (and `social-profile` handles) that contain it.",
     "url": "https://grep.app/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regex/exact search across a half-million public GitHub repositories to find a leaked email, handle, key or domain hardcoded in code.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use with no account. Rate-limited on heavy automated use.",
+    "opsec": "passive",
+    "opsecNote": "You query grep.app's index, not GitHub or the target directly, so the developer whose code you search is not notified. Passive; only your search terms are disclosed to grep.app.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known code-search engine (now \"Grep by Vercel\"), listed in Bellingcat's investigation toolkit; results link to the real public repositories so every hit is verifiable at source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "code-search"
+    "aliases": [
+      "Grep by Vercel",
+      "grep app code search"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "code-search",
+      "github",
+      "documents-metadata"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/grep-app.md"
   },
   {
@@ -64250,49 +64210,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/url-expanders/checkshorturl.md"
-  },
-  {
-    "id": "chismodon",
-    "name": "Chismodon",
-    "description": "Command line #osint toolkit for domain information gathering. Search by domain name, Google Play Store ID, CIDR/ASN, email/username/password. Partly free.",
-    "url": "https://github.com/chiasmod0n/chiasmodon",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "email",
-      "username"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/chismodon.md"
   },
   {
     "id": "cira-whois-canada",
@@ -78036,42 +77953,50 @@
   {
     "id": "nmap-formatter",
     "name": "Nmap Formatter",
-    "description": "A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite",
+    "description": "Use when you have Nmap XML scan output for an `ip-address`/`domain` and want a readable report — converts it to HTML, CSV, JSON, Markdown, SQLite or Graphviz.",
     "url": "https://github.com/vdjagilev/nmap-formatter",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Turning raw Nmap XML into shareable/searchable formats (HTML report, CSV, JSON, Graphviz graph) for infrastructure investigations.",
     "selectorsIn": [
+      "ip-address",
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). No account, no API key.",
+    "opsec": "passive",
+    "opsecNote": "The formatter itself only processes a local XML file you already have — it makes no network connection and reveals nothing. Any OpSec exposure comes from the Nmap scan that produced the XML, not from this tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source Go utility on GitHub (MIT-licensed); the code is auditable and it performs no external calls.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "nmap-formatter",
+      "vdjagilev/nmap-formatter"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Domain/IP investigation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nmap-formatter.md"
   },
   {
@@ -172767,46 +172692,6 @@
     "_file": "library/tools/opsec-investigator-tooling/free-fax.md"
   },
   {
-    "id": "free-proxy-list",
-    "name": "Free Proxy List",
-    "description": "Free proxies that are freshly checked and updated every 10 minutes",
-    "url": "https://free-proxy-list.net",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/free-proxy-list.md"
-  },
-  {
     "id": "free-proxy-world",
     "name": "Free Proxy World",
     "description": "Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port entries (use with strong caution).",
@@ -177900,24 +177785,27 @@
   {
     "id": "my-browser-info",
     "name": "My Browser Info",
-    "description": "Analyzes your browser and computer for information being revealed about you",
+    "description": "Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprint as a target would see it.",
     "url": "http://mybrowserinfo.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A quick self-check of the IP, user-agent and browser/OS details your current session is exposing, to validate a sock-puppet or proxy setup.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account or registration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a self-directed check — you look at your own connection, not a target's. Run it to confirm your VPN/proxy is masking your real IP and that your user-agent looks plausible before doing any active work against a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple long-standing \"what am I leaking\" page (Speednet Group); it reports your own request headers, which are self-evidently correct.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -177926,15 +177814,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+    "aliases": [
+      "mybrowserinfo.com"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "opsec",
+      "fingerprint",
+      "browser-info"
+    ],
+    "source": "opsec",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/my-browser-info.md"
   },
   {
@@ -326298,29 +326188,31 @@
   {
     "id": "snap-political-ads-library",
     "name": "Snap Political Ads Library",
-    "description": "Snapchat's library of political ads on the platform.",
+    "description": "Use when you have an advertiser `name`/`employer-org` and want their Snapchat political-ad history — returns advertiser org, spend, reach and targeting.",
     "url": "https://www.snap.com/en-GB/political-ads",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Researching political advertising on Snapchat",
+    "bestFor": "Researching who paid for political/advocacy advertising on Snapchat and how the campaigns were targeted.",
     "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
       "employer-org",
       "name"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public transparency archive; downloadable as annual CSV/ZIP files, no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You download static archive files from Snap's servers; no query names a specific person and nothing is disclosed to the advertiser. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party transparency data published by Snap Inc. itself; authoritative for what it covers (paid political/advocacy ads only).",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -326329,15 +326221,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Snapchat Political Ads Library",
+      "Snap Ads Transparency"
+    ],
     "tags": [
       "snapchat",
       "political-ads",
       "transparency"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snap-political-ads-library.md"
   },
   {
@@ -331680,13 +331575,13 @@
   {
     "id": "toolzu",
     "name": "Toolzu",
-    "description": "Instagram viewer and analytics tool.",
+    "description": "Use when you have an Instagram `username` and want to view/download public profile content and stories without logging in — returns `social-profile` data and `image` media.",
     "url": "https://toolzu.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Instagram profile/analytics viewer.",
+    "bestFor": "Anonymously viewing and downloading a public Instagram profile's photos, videos and stories without using your own logged-in account.",
     "selectorsIn": [
       "username"
     ],
@@ -331694,15 +331589,18 @@
       "social-profile",
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free anonymous story viewer and basic profile search; deeper analytics, bulk downloads and the \"14 metrics\" analyzer sit behind subscriptions ($7–$19/month).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Acts as an intermediary so the target's Instagram does not see your account view the profile/story — good for not tipping off the subject. But you are trusting a third-party site with your search terms; use a sock-puppet context and never log in with a real Instagram account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Third-party Instagram scraper; not affiliated with Meta. Data is only as fresh as its cache and features break when Instagram changes its front end.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -331710,9 +331608,10 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "aliases": [
-      "Toolzu Profile"
+      "Toolzu Profile",
+      "Toolzu Instagram Viewer"
     ],
     "tags": [
       "instagram",
@@ -331720,8 +331619,8 @@
       "analytics"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/toolzu.md"
   },
   {
@@ -343479,24 +343378,25 @@
   {
     "id": "promt-free-online-translator",
     "name": "PROMT Free Online Translator",
-    "description": "Tool for translating text and web content from one language to another",
+    "description": "Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated text plus dictionary context.",
     "url": "http://www.online-translator.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly translating short foreign-language posts, bios or documents (20+ languages incl. Russian) into your working language during an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free with no registration; up to 5,000 characters per translation. Mobile apps and higher-volume/desktop products are separate paid PROMT offerings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste text into a third-party server, so never submit anything sensitive or attributable to a live operation. Translating a subject's public post here does not touch the subject, but the text you paste is disclosed to PROMT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by PROMT, an established commercial machine-translation vendor; quality is solid for European and Slavic languages but, like all MT, imperfect on slang.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -343505,18 +343405,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reverso-free-online-translator",
+      "frengly-free-online-translator"
+    ],
+    "aliases": [
+      "PROMT.One",
+      "online-translator.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "language-translation-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "online-translator"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/promt-free-online-translator.md"
   },
   {
@@ -344470,46 +344374,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/translation-language/text/urban-dictionary.md"
-  },
-  {
-    "id": "urbandictionary-com",
-    "name": "urbandictionary.com",
-    "description": "OSINT tool: urbandictionary.com.",
-    "url": "http://www.urbandictionary.com/",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "urban-dictionary"
-    ],
-    "_file": "library/tools/translation-language/urbandictionary-com.md"
   },
   {
     "id": "vizard-ai",
