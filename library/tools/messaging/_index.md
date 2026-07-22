@@ -18,7 +18,7 @@ kind: group-index
 ## Skills here
 - **`2chat`** (high) — Use when you have a phone number and need to confirm whether it has an active WhatsApp account.
 - **`3-webresolver`** (low) — Use when you have a `username`, `email`, `phone`, or `ip-address` and want grey-hat resolver lookups (legacy Skype-to-IP, phone info, leaked
-- **`4-vedbex-email-to-skype`** (medium) — OSINT tool: 4- Vedbex: Email to Skype.
+- **`4-vedbex-email-to-skype`** (medium) — Use when you have an `email` and want to find the linked Skype account — returns the Skype username/social-profile tied to that address.
 - **`agentfns-bot`** (low) — Use when you have a Russian company INN/OGRN (or counterparty name) and need instant official business-registry details via Telegram.
 - **`aicontentfy-com`** (low) — Use when you need to learn Google-dork techniques for surfacing public WhatsApp group invite links — this is a how-to article, not a tool.
 - **`alphr-com`** (low) — Use when you need a how-to reference for finding WhatsApp groups, group IDs, admins, and members — this is an instructional article, not a t

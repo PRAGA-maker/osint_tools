@@ -132,7 +132,7 @@ kind: group-index
 - **`land-registry-property-search`** (high) — Use when you have a UK `address` and want the legal owner — returns the registered proprietor's name and title details from the official lan
 - **`leak-lookup`** (high) — Use when you have an `email`, `username`, or `domain` and want to find which data breaches exposed it and what associated credentials/fields
 - **`leakey`** (high) — Use when you have a leaked API key/token/credential (e.g. found in a breach or paste) and want to validate whether it is still live and whic
-- **`library-of-congress-ask-a-librarian`** (medium) — OSINT tool: Library of Congress: Ask a Librarian.
+- **`library-of-congress-ask-a-librarian`** (low) — Use when you have a hard-to-source research question about a `name`, place or `document-id` and want expert help locating records — returns 
 - **`licenseplates`** (medium) — Use when you have an `image` of an unknown `vehicle-plate` and want to identify its origin — returns the country/state/era a plate design be
 - **`lookupuk`** (high) — Use when you're trying to trace a lost friend/relative in the UK and want a portal of search resources plus reunion message boards — returns
 - **`lullar-com-3-appspot-com`** (high) — Use when you have an `email`, `username`, or `name` and want to sweep 175+ platforms for matching public profiles in one query — returns soc

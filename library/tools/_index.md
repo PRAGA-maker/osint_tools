@@ -16,7 +16,7 @@ kind: group-index
 - **`domains-ip-infrastructure/`** — 722 skill(s) below.
 - **`email/`** — 250 skill(s) below.
 - **`evidence-capture/`** — 32 skill(s) below.
-- **`financial-crypto/`** — 119 skill(s) below.
+- **`financial-crypto/`** — 118 skill(s) below.
 - **`geolocation/`** — 345 skill(s) below.
 - **`image-video-face/`** — 462 skill(s) below.
 - **`maps-geospatial-data/`** — 127 skill(s) below.
@@ -24,12 +24,12 @@ kind: group-index
 - **`opsec-investigator-tooling/`** — 562 skill(s) below.
 - **`people-search/`** — 266 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
-- **`public-records/`** — 1063 skill(s) below.
+- **`public-records/`** — 1061 skill(s) below.
 - **`search-engines/`** — 854 skill(s) below.
 - **`social-networks/`** — 832 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 216 skill(s) below.
+- **`transportation/`** — 215 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
 

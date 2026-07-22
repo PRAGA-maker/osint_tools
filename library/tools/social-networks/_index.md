@@ -478,7 +478,7 @@ kind: group-index
 - **`rknight-me`** (high) — Use when you have a Mastodon `username`/handle and want its numeric account ID to unlock API/RSS access to the account's posts — returns the
 - **`rocketreach-co`** (high) — Use when you have a `name` + `employer-org` (or a company domain) and want the subject's professional email, phone and social profiles — ret
 - **`rooms-of-clubhouse`** (low) — OSINT tool: Rooms of Clubhouse.
-- **`ruby`** (medium) — Simple tool for searching videos by keyword in Rumble, BitChute, YouTube and saving results (author, title, link) to CSV file.
+- **`ruby`** (medium) — Use when you have a keyword, `name` or `username` and want video content across Rumble, BitChute and YouTube — returns author usernames, cha
 - **`rumble-com`** (high) — Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel p
 - **`savettok`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want a clean, watermark-free copy for frame-by-frame or reverse-image analysis —
 - **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci

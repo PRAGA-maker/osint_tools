@@ -240,7 +240,6 @@ kind: group-index
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
 - **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
 - **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
-- **`dauphin-county-pa-2017-compensation`** (medium) — OSINT tool: Dauphin County PA 2017 Compensation.
 - **`dbpedia`** (low) — OSINT tool: DBPedia.
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
 - **`deepdyve`** (medium) — Use when you have a `name` or `employer-org` and want to find someone's academic publications and co-authors — returns employer-org, associa
@@ -261,7 +260,7 @@ kind: group-index
 - **`dobsearch`** (high) — Use when you have a `name` and want date of birth, addresses, phone and relatives — returns an aggregated US people-search profile including
 - **`docinfo-org`** (high) — Use when you have a doctor's `name` and want to confirm and locate them professionally — returns the states they're licensed in, medical sch
 - **`doe-data-explorer`** (medium) — Use when you have a researcher `name` or `employer-org` and want their U.S. Department of Energy scientific datasets — returns author, affil
-- **`drug-enforcement-administration`** (medium) — DEA website providing reports, publications, facts and other resources
+- **`drug-enforcement-administration`** (medium) — Use when you have a `name` and want DEA public records — returns fugitive listings, press-release arrest details and (via Diversion Control)
 - **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
 - **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
@@ -1002,7 +1001,6 @@ kind: group-index
 - **`yell-online-business-directory-uk`** (medium) — Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website
 - **`youcontrol`** (medium) — Use when you have a Ukrainian company or a person's `name` and want ownership/connection data — returns founders, beneficial owners, address
 - **`zendy-io`** (medium) — Use when you have a researcher's `name` (or a topic) and want their academic publications, affiliations and co-authors across many publisher
-- **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.
 - **`zillow`** (medium) — Use when you have a US `address` and want property details, sale/price history and interior photos — returns geolocation, physical-descripti
 - **`zoominfo`** (medium) — Use when you have a person `name` or `employer-org` and want their job title, company and colleagues — returns employer-org, address and ass
 - **`zoopla`** (medium) — Use when you have a UK `address` or postcode and want property details, price/sale history, and estimated value — returns property records, 

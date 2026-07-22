@@ -49585,41 +49585,53 @@
   {
     "id": "yourclassifieds-ca-canada",
     "name": "Yourclassifieds.ca (Canada)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a `name`, `phone` or locale and want a subject's classified ads across Ontario — returns ad contact details, address hints and associates.",
     "url": "http://yourclassifieds.ca",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's buy/sell, real-estate or services ads across Ontario's Metroland community papers.",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search ads; posting or managing your own ads needs a (free) registered account. Searching does not.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing/searching ads is passive and discloses nothing to the poster. If you contact an advertiser, use a sock-puppet identity — that step is active and reveals you to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate classifieds network for Metroland's ~113 Ontario community newspapers; ad content is self-posted, so contact details are user-supplied and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YourClassifieds.ca",
+      "Metroland classifieds"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "classifieds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/yourclassifieds-ca-canada.md"
   },
   {
@@ -109048,44 +109060,52 @@
   },
   {
     "id": "bpfi-ie",
-    "name": "bpfi.ie",
-    "description": "OSINT tool: bpfi.ie.",
+    "name": "bpfi.ie Account Validation",
+    "description": "Use when you have an Irish/UK `document-id` (account number + sort code) and want to confirm it is valid — returns a validity check and points to the owning bank via sort code.",
     "url": "https://bpfi.ie/customer-assist/account-validation/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether an account number / sort-code combination is structurally valid before acting on it.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public facility provided by the Banking & Payments Federation Ireland (\"free of charge\"). No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You validate a number against BPFI's checker, not against any bank account or its owner — nothing is disclosed to the account holder. It is a format/check-digit validation, not a live balance or ownership query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Banking & Payments Federation Ireland, the representative body for the Irish banking sector — an authoritative source for Irish sort-code/account validation.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "ie",
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BPFI account validation",
+      "Banking & Payments Federation Ireland"
+    ],
     "tags": [
       "banksites",
-      "Banking Related Sites"
+      "Banking Related Sites",
+      "account-validation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bpfi-ie.md"
   },
   {
@@ -109955,44 +109975,53 @@
   },
   {
     "id": "csol-ie",
-    "name": "csol.ie",
-    "description": "OSINT tool: csol.ie.",
+    "name": "csol.ie Bankruptcy Search",
+    "description": "Use when you have a `name` and want to check Ireland's public bankruptcy register — returns bankruptcy status, address and adjudication details for a matched person.",
     "url": "https://www.csol.ie/ccms/bankruptcy.html#/search",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a named person appears on Ireland's official bankruptcy register.",
     "selectorsIn": [
-      "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search on Courts Service Online (Ireland). No account or payment to search the bankruptcy register.",
+    "opsec": "passive",
+    "opsecNote": "You query the Irish Courts Service register, not the subject — nobody is notified. Standard web access to a government public-records portal; use a VPN if you want to keep the query itself private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Courts Service Online (csol.ie) is the official Irish Courts Service system; bankruptcy adjudications listed here are authoritative public records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Courts Service Online bankruptcy",
+      "Irish bankruptcy register",
+      "CSOL"
+    ],
     "tags": [
       "creditdebt",
-      "Credit & Debtor Information"
+      "Credit & Debtor Information",
+      "bankruptcy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/csol-ie.md"
   },
   {
@@ -112821,48 +112850,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/wikipedia-list-of-registers.md"
-  },
-  {
-    "id": "wikipedia-org",
-    "name": "wikipedia.org",
-    "description": "OSINT tool: wikipedia.org.",
-    "url": "https://en.wikipedia.org/wiki/International_Bank_Account_Number#IBAN_formats_by_country",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "banksites",
-      "Banking Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/wikipedia-org.md"
   },
   {
     "id": "xmrchain-net",
@@ -159323,46 +159310,53 @@
   },
   {
     "id": "4-vedbex-email-to-skype",
-    "name": "4- Vedbex: Email to Skype",
-    "description": "OSINT tool: 4- Vedbex: Email to Skype.",
+    "name": "Vedbex: Email to Skype",
+    "description": "Use when you have an `email` and want to find the linked Skype account — returns the Skype username/social-profile tied to that address.",
     "url": "https://www.vedbex.com/tools/email2skype",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an email address to its associated Skype account/username.",
     "selectorsIn": [
-      "username",
       "email"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; enter an email and hit \"Resolve.\" No login or payment observed for the basic lookup.",
+    "opsec": "passive",
+    "opsecNote": "You submit the target email to a third-party resolver (Vedbex), not to the target — the subject is not notified. Vedbex sees every address you query; use a sock-puppet if the query is sensitive. It does not add or message the Skype account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party tool site (vedbex.com) wrapping Skype's directory search; results depend on Microsoft's Skype directory and can be incomplete or stale.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "skype"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "vedbex-com"
     ],
+    "aliases": [
+      "Vedbex email2skype",
+      "Email to Skype"
+    ],
+    "tags": [
+      "skype",
+      "email-to-account"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/messaging/4-vedbex-email-to-skype.md"
   },
   {
@@ -198575,43 +198569,59 @@
   {
     "id": "library-of-congress-ask-a-librarian",
     "name": "Library of Congress: Ask a Librarian",
-    "description": "OSINT tool: Library of Congress: Ask a Librarian.",
+    "description": "Use when you have a hard-to-source research question about a `name`, place or `document-id` and want expert help locating records — returns librarian-sourced leads to documents and collections.",
     "url": "http://www.loc.gov/rr/askalib",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting a Library of Congress reference librarian to point you to obscure records, historical documents, or collections you can't locate yourself.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public reference service from the U.S. Library of Congress. No account or payment; you submit a question and a librarian replies by email.",
+    "opsec": "passive",
+    "opsecNote": "You email a research question to LoC staff — do not include operational detail, real target identities you want kept private, or anything you wouldn't want logged by a federal institution. Frame questions as generic research and use a sock-puppet email.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official U.S. Library of Congress reference service staffed by professional librarians — authoritative for pointing to genuine collections and records.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "library-of-congress-united-states",
       "newspaper-navigator",
       "usa-telephone-directory-collection",
       "webarchive-loc-gov"
     ],
+    "aliases": [
+      "Ask a Librarian LOC",
+      "loc.gov Ask a Librarian"
+    ],
+    "tags": [
+      "expert-search",
+      "reference-service"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/people-search/library-of-congress-ask-a-librarian.md"
   },
   {
@@ -224439,40 +224449,6 @@
     "_file": "library/tools/public-records/datasetsearch-research-google-com.md"
   },
   {
-    "id": "dauphin-county-pa-2017-compensation",
-    "name": "Dauphin County PA 2017 Compensation",
-    "description": "OSINT tool: Dauphin County PA 2017 Compensation.",
-    "url": "https://b2.caspio.com/dp/0a921000a2f20d556db84221a92c",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/dauphin-county-pa-2017-compensation.md"
-  },
-  {
     "id": "dbpedia",
     "name": "DBPedia",
     "description": "OSINT tool: DBPedia.",
@@ -225670,47 +225646,53 @@
   {
     "id": "drug-enforcement-administration",
     "name": "Drug Enforcement Administration",
-    "description": "DEA website providing reports, publications, facts and other resources",
-    "url": "http://www.justice.gov/dea/",
+    "description": "Use when you have a `name` and want DEA public records — returns fugitive listings, press-release arrest details and (via Diversion Control) registrant validation for a `name`/`employer-org`.",
+    "url": "https://www.dea.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking DEA fugitive listings and press releases for a named person, and validating a DEA registrant number for a practitioner/business.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "physical-description",
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free U.S. federal government resources. No account or payment for fugitive listings, press releases, or the public DEA registration validation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing DEA.gov and its press releases is passive and discloses nothing about a subject. The Diversion Control registrant-validation page is meant to verify a DEA number you already have; querying it does not notify the registrant.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official website of the U.S. Drug Enforcement Administration; fugitive listings, press releases and registrant data are authoritative federal sources.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DEA",
+      "dea.gov",
+      "justice.gov/dea"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "academic-scholarly-research-tools"
+      "law-enforcement"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/drug-enforcement-administration.md"
   },
   {
@@ -266330,44 +266312,6 @@
       "zillow-united-states"
     ],
     "_file": "library/tools/public-records/zillow.md"
-  },
-  {
-    "id": "zillow-canada",
-    "name": "Zillow Canada",
-    "description": "OSINT tool: Zillow Canada.",
-    "url": "https://www.zillow.com/z/canada/canada-homes/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "zillow",
-      "zillow-united-states"
-    ],
-    "_file": "library/tools/public-records/zillow-canada.md"
   },
   {
     "id": "zoominfo",
@@ -331374,38 +331318,52 @@
   {
     "id": "ruby",
     "name": "RUBY",
-    "description": "Simple tool for searching videos by keyword in Rumble, BitChute, YouTube and saving results (author, title, link) to CSV file.",
+    "description": "Use when you have a keyword, `name` or `username` and want video content across Rumble, BitChute and YouTube — returns author usernames, channel URLs and video links.",
     "url": "https://github.com/jakecreps/ruby",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk keyword search of Rumble + BitChute + YouTube at once, exported to CSV for triage.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python script (MIT-style OSINT utility by Jake Creps). No account or API key required to run the basic keyword search.",
+    "opsec": "passive",
+    "opsecNote": "The script queries public search/listing pages of the three platforms from your machine — run it behind a VPN so your own IP isn't the one hitting the platforms repeatedly. It does not log you in or contact any target directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Written by Jake Creps, a well-known OSINT practitioner, and covered by OS2INT; community-maintained open source, so it can break when a platform changes its markup.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "jakecreps/ruby",
+      "Rumble BitChute YouTube scraper"
+    ],
     "tags": [
       "Social Media",
-      "Universal"
+      "Universal",
+      "video-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ruby.md"
   },
   {
@@ -356193,51 +356151,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/transportation/itu-ship-station-database.md"
-  },
-  {
-    "id": "janes-fighting-ships-yearbook",
-    "name": "Janes Fighting Ships Yearbook",
-    "description": "Maritime-related website that offers a search of the global database of naval vessel types",
-    "url": "https://www.ihs.com/products/janes-fighting-ships.html",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "his-piers",
-      "jane-s-defence-land-platforms-yearbook",
-      "janes-all-the-world-s-aircraft-yearbook"
-    ],
-    "_file": "library/tools/transportation/janes-fighting-ships-yearbook.md"
   },
   {
     "id": "kayak-travel-search-engine",
