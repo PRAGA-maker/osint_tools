@@ -203,7 +203,6 @@ kind: group-index
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
 - **`paste-monster`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public markdown pastebin for dumped text — returns paste cont
 - **`paste-sh`** (medium) — Use when you have a `password`-protected or link-shared snippet and want to read or create an end-to-end-encrypted paste — returns text cont
-- **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
 - **`pastebin-cz`** (medium) — Use when you have a `username`, `email`, or keyword and want public pastes — returns snippet/text dumps that may leak credentials, contacts,
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
@@ -326,7 +325,7 @@ kind: group-index
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 
-- **`write-as`** (medium) — OSINT tool: Write.as.
+- **`write-as`** (medium) — Use when you have a `username` or Write.as blog handle and want to read someone's publicly published writing — returns `social-profile`, `na
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahootech-news-and-updates`** (low) — Use when you have a `name` tied to a tech/business story and want aggregated news coverage — returns article mentions and associate/organiza
 - **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation

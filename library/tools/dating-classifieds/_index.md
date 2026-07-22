@@ -72,7 +72,7 @@ kind: group-index
 - **`onlydanske-dk`** (medium) — Use when you have a `username` or creator name and want to check whether it maps to a Danish OnlyFans persona — returns the linked `social-p
 - **`onlyespana-es`** (low) — Use when you have a `username`, name or Spanish city and want to check a Spain-focused OnlyFans directory for a matching creator — returns a
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
-- **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
+- **`onlyfans-com`** (medium) — Use when you have a `username` and want to confirm/read a subject's public OnlyFans creator profile — returns `social-profile`, `name`, some
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — OSINT tool: OnlyFinder.
 - **`onlyleaks-pro`** (medium) — OSINT tool: onlyleaks.pro.

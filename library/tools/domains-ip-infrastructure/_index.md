@@ -231,7 +231,6 @@ kind: group-index
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
-- **`internet-access-providers-meta-list`** (medium) — Website that provides a list of internet access providers in the US, Canada, and worldwide
 - **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
 - **`internetdb-shodan-io`** (low) — OSINT tool: Internetdb.shodan.io.
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na

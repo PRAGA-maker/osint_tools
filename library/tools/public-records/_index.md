@@ -24,7 +24,7 @@ kind: group-index
 - **`sanctions-screening/`** — 4 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
 - **`us-political-records/`** — 2 skill(s) below.
-- **`us-voter-records/`** — 1 skill(s) below.
+- **`us-voter-records/`** — 0 skill(s) below.
 
 ## Skills here
 - **`1c-database-converter`** (medium) — Use when you have a seized/leaked 1C accounting database file (.1CD, .cf, .epf, .efd) and want to read its records — returns grepable CSV th
@@ -65,7 +65,7 @@ kind: group-index
 - **`ancestor-hunt`** (high) — Use when you have a `name` and want a curated directory of free genealogy/public-record collections (births, deaths, marriages, obituaries, 
 - **`ancestry-family-search-engine-united-kingdom`** (medium) — Use when you have a `name` and want UK genealogical/historical records — returns relatives (`associate`), historical `address`es, and `dob`/
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
-- **`arabbarometer`** (medium) — database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018
+- **`arabbarometer`** (medium) — Use when you need regional public-opinion context for an Arab country and want survey data by topic — returns aggregate statistics (not indi
 - **`architecture-com`** (medium) — Use when you have a `name` and think the person is a UK architect — returns their RIBA chartered status, practice/employer-org, and professi
 - **`archived-moe`** (low) — OSINT tool: archived.moe.
 - **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres

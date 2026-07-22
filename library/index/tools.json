@@ -21152,29 +21152,30 @@
   {
     "id": "stanford-large-network-dataset-collection",
     "name": "Stanford Large Network Dataset Collection",
-    "description": "Network analysis modeling and graph-based OSINT experimentation",
-    "url": "https://snap.stanford.edu/data/#amazon",
+    "description": "Use when you have a research/tooling need for graph data and want ready-made social/communication network datasets — returns downloadable graph datasets (not target PII).",
+    "url": "https://snap.stanford.edu/data/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "public-datasets"
     ],
-    "bestFor": "Network analysis modeling and graph-based OSINT experimentation",
-    "input": "Dataset selection request",
-    "output": "Downloadable graph datasets and documentation",
+    "bestFor": "Sourcing real-world graph datasets to prototype and validate network-analysis and link-analysis tooling.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free academic resource; open download, no account.",
     "opsec": "passive",
-    "opsecNote": "Public academic data access only; no interaction with investigation targets.",
+    "opsecNote": "You download static, pre-published academic datasets — no query touches an investigation target. Purely a methodology/tooling resource.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Stanford's SNAP group (Jure Leskovec's lab); datasets are curated, documented and widely cited in academic literature.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -21182,16 +21183,21 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "highwire-free-online-full-text-articles",
       "palladio",
-      "regular-expression-analyzer",
       "swap-stanford-edu"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SNAP datasets",
+      "snap.stanford.edu/data"
+    ],
+    "tags": [
+      "datasets",
+      "graph-analysis",
+      "academic"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/public-datasets/stanford-large-network-dataset-collection.md"
   },
   {
@@ -33047,42 +33053,6 @@
     "_file": "library/tools/communities-forums/paste-sh.md"
   },
   {
-    "id": "paste-ubuntu",
-    "name": "paste.ubuntu",
-    "description": "OSINT tool: paste.ubuntu.",
-    "url": "https://paste.ubuntu.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/paste-ubuntu.md"
-  },
-  {
     "id": "pastebin-cz",
     "name": "Pastebin.cz",
     "description": "Use when you have a `username`, `email`, or keyword and want public pastes — returns snippet/text dumps that may leak credentials, contacts, or handles.",
@@ -39051,37 +39021,54 @@
   {
     "id": "write-as",
     "name": "Write.as",
-    "description": "OSINT tool: Write.as.",
+    "description": "Use when you have a `username` or Write.as blog handle and want to read someone's publicly published writing — returns `social-profile`, `name`.",
     "url": "https://write.as/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Reading a subject's public long-form/anonymous blog posts and pivoting from a Write.as handle to identity clues.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier supports anonymous publishing and reading; Pro (~$6/mo) adds custom domains, RSS and subscriptions. Reading public posts is entirely free.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public Write.as blog or the \"Read Write.as\" feed is passive and invisible to the author. Only logging in, subscribing, or commenting is active — never do that from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Genuine first-party publishing platform (Musing Studio) — the posts it serves are authentic; the limiting factor is authorship, since Write.as is built for anonymous/pseudonymous writing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "rentry",
+      "justpaste"
+    ],
+    "aliases": [
+      "write.as",
+      "writefreely"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "blogging",
+      "anonymous-publishing"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/write-as.md"
   },
   {
@@ -43295,7 +43282,13 @@
       "reddit",
       "reddit-darknet",
       "reddit-deep-web",
-      "r-opendirectories"
+      "r-opendirectories",
+      "here",
+      "reddit-askmeanything",
+      "reddit-com-2",
+      "reddit-guide-to-opting-out-of-background-check-websites",
+      "reddit-old-reddit-search",
+      "reddit-r-translator"
     ],
     "aliases": [
       "r/onions",
@@ -47836,42 +47829,55 @@
   {
     "id": "onlyfans-com",
     "name": "onlyfans.com",
-    "description": "OSINT tool: onlyfans.com.",
+    "description": "Use when you have a `username` and want to confirm/read a subject's public OnlyFans creator profile — returns `social-profile`, `name`, sometimes `geolocation`.",
     "url": "https://onlyfans.com/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a creator handle exists on OnlyFans and reading the public profile header (display name, bio, avatar, linked socials) without paying.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Viewing a creator's public profile page (display name, bio, avatar, banner, free posts) is free; the paywalled feed requires a subscription/payment.",
+    "opsec": "active",
+    "opsecNote": "A logged-out visit to onlyfans.com/<handle> is largely passive, but interacting (subscribing, tipping, messaging, following) is attributable and notifies the creator. If you must log in, use a sock-puppet account and payment method, never an attributable one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party platform — the profile header it serves is authentic; display names and bios are self-asserted by the creator, so treat them as claims.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "coomer-st"
+    ],
+    "aliases": [
+      "OnlyFans"
+    ],
     "tags": [
       "onlyfans",
+      "adult",
+      "creator-platforms",
       "OnlyFans Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyfans-com.md"
   },
   {
@@ -62651,7 +62657,7 @@
   {
     "id": "yik-yak",
     "name": "Yik Yak",
-    "description": "Location-based event monitoring, community sentiment analysis, anonymity assessment",
+    "description": "Use when you have a `geolocation` (near a US college) and want to read anonymous local posts for situational context — returns `social-profile`, `geolocation`.",
     "url": "https://www.yikyak.com/",
     "category": "documents-metadata",
     "path": [
@@ -62660,24 +62666,30 @@
       "apps",
       "instant-messaging"
     ],
-    "bestFor": "Location-based event monitoring, community sentiment analysis, anonymity assessment",
-    "input": "Location coordinates, proximity radius",
-    "output": "Anonymous posts, location data, user engagement, community trends",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reading hyperlocal anonymous chatter tied to a campus/area to gauge community sentiment or surface event chatter.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Designed for anonymity; minimal PII exposure, but location data and timing can reveal patterns",
+    "costNote": "Free app; no paid tier required to read or post within your local radius.",
+    "opsec": "active",
+    "opsecNote": "Yik Yak only shows Yaks within ~5 miles of your device's real GPS location, so to read a target area you must physically be there or spoof GPS on the device/emulator — either way you are creating an account and connecting. Never post; posting is attributable to your session even though it is displayed anonymously.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Posts are anonymous and unverified by design — treat everything as unattributed claims, not fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
@@ -62685,11 +62697,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "yikyak"
+    ],
+    "tags": [
+      "anonymous",
+      "hyperlocal",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/yik-yak.md"
   },
   {
@@ -74882,52 +74900,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/tools/international-domain-name-conversion-tool.md"
-  },
-  {
-    "id": "internet-access-providers-meta-list",
-    "name": "Internet Access Providers Meta List",
-    "description": "Website that provides a list of internet access providers in the US, Canada, and worldwide",
-    "url": "http://www.herbison.com/herbison/iap_meta_list.html",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/internet-access-providers-meta-list.md"
   },
   {
     "id": "internet-census-2012",
@@ -214823,38 +214795,45 @@
   },
   {
     "id": "arabbarometer",
-    "name": "Arabbarometer",
-    "description": "database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018",
+    "name": "Arab Barometer",
+    "description": "Use when you need regional public-opinion context for an Arab country and want survey data by topic — returns aggregate statistics (not individual PII).",
     "url": "https://www.arabbarometer.org/survey-data/data-analysis-tool/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Sourcing credible aggregate public-opinion and demographic survey data across 16 Arab countries for context and baselines.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; the online analysis tool and dataset downloads are open, no payment required (some raw datasets ask for a free registration).",
+    "opsec": "passive",
+    "opsecNote": "You query aggregate survey results, never an individual. No target interaction; safe to use openly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by a nonpartisan research network (Princeton University / partner institutions) with a documented, widely-cited methodology.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "arabbarometer.org"
+    ],
     "tags": [
-      "Datasets"
+      "datasets",
+      "public-opinion",
+      "middle-east"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arabbarometer.md"
   },
   {
@@ -240949,7 +240928,8 @@
       "linkedin-com",
       "linkedin-groups",
       "griffin-glynn-hatless1der",
-      "www-linkedin-com-pub-dir-people-search"
+      "www-linkedin-com-pub-dir-people-search",
+      "hatless-investigations-group"
     ],
     "aliases": [
       "LinkedIn.com"
@@ -264385,49 +264365,6 @@
     "_file": "library/tools/public-records/vizala.md"
   },
   {
-    "id": "voter-registration-data",
-    "name": "Voter Registration Data",
-    "description": "Voter registration verification",
-    "url": "https://www.sos.secretary.state.gov/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "us-voter-records"
-    ],
-    "bestFor": "Voter registration verification",
-    "input": "Name, state, county",
-    "output": "Registration status, voting history",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "State-specific access and restrictions vary",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "narcotics-control-reports",
-      "terrorism-reports"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/us-voter-records/voter-registration-data.md"
-  },
-  {
     "id": "washington",
     "name": "Washington DOC Inmate Search",
     "description": "Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC number (`document-id`), `dob` and custody status.",
@@ -267926,24 +267863,25 @@
   {
     "id": "android-code-search",
     "name": "Android Code Search",
-    "description": "A tool that helps developers view the Android source code.",
-    "url": "https://cs.android.com/androidx",
+    "description": "Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns code context (not target PII).",
+    "url": "https://cs.android.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Reading and cross-referencing the official Android/AndroidX source when analyzing an app, permission, or API behavior.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Google-hosted code browser; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are browsing Google's public source index; no query touches an investigation target. Purely a reference/tooling resource.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Google-operated code search over the public Android Open Source Project — authoritative for what the platform source actually contains.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -267952,18 +267890,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "android-studio-and-sdk-tools"
     ],
+    "aliases": [
+      "cs.android.com",
+      "AOSP code search"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "reverse-engineering"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/android-code-search.md"
   },
   {
@@ -272020,35 +271962,50 @@
   {
     "id": "chrome-extension-archive-search-engine",
     "name": "Chrome Extension Archive Search Engine",
-    "description": "OSINT tool: Chrome Extension Archive Search Engine.",
+    "description": "Use when you have a Chrome extension name, id, or developer and want to find archived/indexed extension pages — returns `domain`, `social-profile` (developer) links.",
     "url": "https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Locating archived or indexed Chrome Web Store extension listings and developer details for an extension of interest.",
+    "selectorsIn": [
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a scoped Google search; queries go to Google like any search. Passive to the extension developer, but assume Google logs the query — use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-configured Google Custom/Programmable Search Engine — coverage is whatever sites the (anonymous) creator scoped it to, and it can silently rot over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "mindmap-search-engine"
+    ],
     "aliases": [],
-    "tags": [],
+    "tags": [
+      "google-cse",
+      "browser-extensions"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/chrome-extension-archive-search-engine.md"
   },
   {
@@ -286927,35 +286884,49 @@
   {
     "id": "mindmap-search-engine",
     "name": "Mindmap Search Engine",
-    "description": "OSINT tool: Mindmap Search Engine.",
-    "url": "http://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0",
+    "description": "Use when you want an alternate scoped Google search to broaden a query — returns web `social-profile` / `domain` links (scope is opaque, test empirically).",
+    "url": "https://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A secondary, community-configured Google search to diversify results — value depends entirely on its (undisclosed) site scope.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A scoped Google search; queries go to Google. Passive to any target, but assume Google logs the query — use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Anonymous community-built Google Custom/Programmable Search Engine — the sites it covers are not disclosed and it may have rotted; verify what it returns before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "chrome-extension-archive-search-engine"
+    ],
     "aliases": [],
-    "tags": [],
+    "tags": [
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mindmap-search-engine.md"
   },
   {
@@ -293533,24 +293504,32 @@
   {
     "id": "rapusia",
     "name": "Rapusia",
-    "description": "Charitable search engine that supports environmental projects and initiatives.",
+    "description": "Use when you want an alternative, non-tracking general web search that may surface results your primary engine ranks differently — returns web `social-profile` / `domain` links.",
     "url": "https://rapusia.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A privacy-oriented alternate general search engine to diversify result sets away from Google's ranking.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported search; the operator donates a share of ad revenue to charity. No account, no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Rapusia states it does not track users or share data with advertisers and encrypts browser-to-server traffic — reasonable for querying selectors, but as with any third-party engine, run it from a sock-puppet browser and assume your query could be logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate small charity-search project, but a thin front over upstream index(es); result completeness and its no-tracking claims are not independently audited.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -293559,15 +293538,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "rapusia.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "privacy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/rapusia.md"
   },
   {

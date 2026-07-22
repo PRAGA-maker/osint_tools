@@ -53,7 +53,7 @@ kind: group-index
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
 - **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
-- **`android-code-search`** (medium) — A tool that helps developers view the Android source code.
+- **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
 - **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
@@ -136,7 +136,7 @@ kind: group-index
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
 - **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
 - **`chegg-search-engine`** (medium) — Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public p
-- **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
+- **`chrome-extension-archive-search-engine`** (medium) — Use when you have a Chrome extension name, id, or developer and want to find archived/indexed extension pages — returns `domain`, `social-pr
 - **`chromium-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and co
 - **`cisco-talos-intelligence`** (medium) — Use when you have an `ip-address`, `domain` or sender `email` and want its threat/spam reputation — returns Talos's reputation verdict, owni
 - **`citeseerx`** (medium) — Use when you have an author `name` and want their academic papers/citations — a free scientific-literature search engine (CS-heavy); returns
@@ -438,7 +438,7 @@ kind: group-index
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
 - **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
 - **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
-- **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
+- **`mindmap-search-engine`** (medium) — Use when you want an alternate scoped Google search to broaden a query — returns web `social-profile` / `domain` links (scope is opaque, tes
 - **`mojeek-search-engine-united-kingdom`** (medium) — Use when you have a `name`, `username`, `email`, or `phone` and want results from an independent, non-Google/Bing index that surfaces pages 
 - **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
@@ -571,7 +571,7 @@ kind: group-index
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
 - **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe
-- **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
+- **`rapusia`** (medium) — Use when you want an alternative, non-tracking general web search that may surface results your primary engine ranks differently — returns w
 - **`ratedpeople-united-kingdom`** (medium) — Use when you have a UK tradesperson's `name`/`employer-org` or a `geolocation` and want their trade profile — returns `social-profile`, `emp
 - **`ratemyemployer-canada`** (low) — Use when you have an `employer-org` in Canada and want employee reviews and context — returns workplace ratings, location/industry and revie
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo

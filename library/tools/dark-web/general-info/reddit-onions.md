@@ -36,6 +36,12 @@ relatedTools:
 - reddit-darknet
 - reddit-deep-web
 - r-opendirectories
+- here
+- reddit-askmeanything
+- reddit-com-2
+- reddit-guide-to-opting-out-of-background-check-websites
+- reddit-old-reddit-search
+- reddit-r-translator
 aliases:
 - r/onions
 - reddit onions
