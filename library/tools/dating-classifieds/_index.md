@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`ad-mart-classified-ads-united-kingdom`** (medium) — Use when you have a `name`/`username` or item and want UK classified-ad activity — now UK Classifieds; returns ads exposing seller `phone`/l
-- **`admireme-vip`** (medium) — OSINT tool: admireme.vip.
+- **`admireme-vip`** (medium) — Use when you have a `username` or `name` and want to check for a creator-subscription profile — returns the profile, teaser content, and lin
 - **`adpost-com-worldwide`** (medium) — Use when you have a name/username/phone/email and want their classified ads worldwide — returns matching listings with seller contact detail
 - **`adultfriendfinder`** (medium) — Use when you have a `username`, `image`, or rough `geolocation` and want to check whether a subject maintains an adult-dating profile — sear
 - **`autotrader-classified-ads-united-kingdom`** (medium) — Use when you have a UK `vehicle-plate` or a car for sale and want vehicle/seller detail — returns basic vehicle-check data and, from listing
@@ -63,7 +63,7 @@ kind: group-index
 - **`meetup`** (high) — Use when a subject's hobbies/interests are known — find the groups and in-person events they attend, plus public member profiles and RSVP hi
 - **`merchant-circle-classified-ads-united-states`** (medium) — Use when you have a business `name` or `address`/locality and want the local-merchant listing behind it — returns address, phone and busines
 - **`modelsearcher-com`** (medium) — OSINT tool: modelsearcher.com.
-- **`nzdoctor-free-classified-ads-new-zealand`** (medium) — Classified advertisements-related website that provides regional services
+- **`nzdoctor-free-classified-ads-new-zealand`** (medium) — Use when you have a `name` or clinic in the NZ health sector and want employment/recruitment ads — returns employer-org, contact names, and 
 - **`offerup`** (high) — Use when a US subject buys/sells locally — pivot from a seller alias or item to a profile with photos, approximate location, ratings, and tr
 - **`ohio-department-of-transportation`** (medium) — Ohio Department of Transportations website providing information about construction projects and maps dating back to 1912
 - **`okcupid`** (medium) — Use when you have a `name`, `username` or photo and want to check for a dating profile — returns `social-profile`, `image` and self-reported

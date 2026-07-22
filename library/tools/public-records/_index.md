@@ -77,7 +77,7 @@ kind: group-index
 - **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
 - **`arizona-genealogy-birth-and-death-certificates`** (medium) — Use when you have a `name` (and roughly a date/place) and want scanned Arizona birth or death certificates in the public window — returns im
 - **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
-- **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Use when you have a `name` tied to Ashley County, Arkansas and want obituary/death notices — returns dob/dod, surviving relatives, and homet
 - **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
 - **`arrest-warrants`** (high) — Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches
 - **`arrests`** (high) — Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, 

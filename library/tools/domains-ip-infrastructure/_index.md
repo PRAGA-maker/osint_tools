@@ -64,7 +64,7 @@ kind: group-index
 - **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
-- **`all-net-tools-toolbox-domain-information`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
 - **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
@@ -324,7 +324,7 @@ kind: group-index
 - **`netcraft`** (low) — Site reports, DNS search, and hosting history tools.
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
-- **`network-tools`** (medium) — Web trace, WHOIS, and domain lookups
+- **`network-tools`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS re
 - **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire

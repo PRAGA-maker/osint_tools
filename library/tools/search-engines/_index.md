@@ -63,7 +63,7 @@ kind: group-index
 - **`aol`** (low) — OSINT tool: Aol.
 - **`ap`** (low) — OSINT tool: AP.
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
-- **`app-store-custom-search-engine`** (medium) — OSINT tool: App Store Custom Search Engine.
+- **`app-store-custom-search-engine`** (medium) — Use when you have an app name, developer, or `username` and want to search Apple/Google app-store listings — returns developer org, linked s
 - **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
 - **`arabo-com`** (low) — Use when you have a `name`, business, or topic in the Arab world and want Arabic-language sites a Western engine misses — returns social-pro
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
@@ -186,7 +186,7 @@ kind: group-index
 - **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
 - **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
-- **`debate-cards`** (medium) — OSINT tool: Debate.cards.
+- **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
 - **`defcad`** (medium) — Search engine for 3D printable models
@@ -227,7 +227,7 @@ kind: group-index
 - **`etools`** (low) — OSINT tool: Etools.
 - **`euronews`** (low) — OSINT tool: Euronews.
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
-- **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
+- **`european-commission-home-affairs`** (medium) — Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agen
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (low) — Use when you have a brand `name` or `employer-org` and want EU trademark filings — returns the trademark owner `name`/`employer-org` and fil
 - **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res

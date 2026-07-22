@@ -183,7 +183,7 @@ kind: group-index
 - **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
 - **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
-- **`money-talk-org`** (medium) — OSINT tool: money-talk.org.
+- **`money-talk-org`** (medium) — Use when you have a `username` and want to trace their posting history on a long-running personal-finance forum — returns post history, prof
 - **`moneyforums-citywire-co-uk`** (medium) — Use when you have a `username` active in UK investing circles and want their forum posts/history — a live UK money/investment discussion boa
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`mumsnet-com`** (medium) — Use when you have a `username` and want to check for an account on the UK's largest parenting forum — returns the linked `social-profile`, p

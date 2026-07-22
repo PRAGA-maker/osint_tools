@@ -31749,13 +31749,13 @@
   {
     "id": "money-talk-org",
     "name": "money-talk.org",
-    "description": "OSINT tool: money-talk.org.",
+    "description": "Use when you have a `username` and want to trace their posting history on a long-running personal-finance forum — returns post history, profile, and linked details.",
     "url": "http://www.money-talk.org/board.html",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a username into years of forum posts on a personal-finance/investing message board.",
     "selectorsIn": [
       "username"
     ],
@@ -31763,29 +31763,35 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read the boards and member profiles; a free account is only needed to post.",
+    "opsec": "passive",
+    "opsecNote": "Browsing threads and member profiles is passive and read-only. Do NOT register or message a member from a real identity — that becomes active and exposes you. If you must register, use a sock-puppet account and clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established phpBB-style community forum (250k+ posts, 36k+ members); content is user-generated and unmoderated for accuracy.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Money Talk Financial Forum",
+      "money-talk.org board"
+    ],
     "tags": [
       "forums",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/money-talk-org.md"
   },
   {
@@ -45473,43 +45479,52 @@
   },
   {
     "id": "admireme-vip",
-    "name": "admireme.vip",
-    "description": "OSINT tool: admireme.vip.",
+    "name": "AdmireMe.VIP",
+    "description": "Use when you have a `username` or `name` and want to check for a creator-subscription profile — returns the profile, teaser content, and linked social handles.",
     "url": "https://admireme.vip/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and pivoting from a reused handle on a UK-based OnlyFans-style creator platform.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing profiles and the free \"teaser wall\" costs nothing; exclusive content sits behind a monthly subscription or per-item purchase.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public profiles and teasers is passive. Do NOT subscribe, tip, or message from a real identity — that is active, leaves a payment/message trail, and can alert the creator. Use a sock-puppet account and clean browser if you must go past the teaser wall.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Real operating platform (Kiwi Leisure Limited, UK Company No. 11489400); profile data is self-published by creators.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "admireme.vip",
+      "AdmireMe VIP"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "creator-platform"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/admireme-vip.md"
   },
   {
@@ -48167,42 +48182,55 @@
   },
   {
     "id": "nzdoctor-free-classified-ads-new-zealand",
-    "name": "NZDoctor Free Classified Ads (New Zealand)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "name": "NZ Doctor Classifieds (New Zealand)",
+    "description": "Use when you have a `name` or clinic in the NZ health sector and want employment/recruitment ads — returns employer-org, contact names, and location.",
     "url": "https://www.nzdoctor.co.nz/classifieds",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Placing a doctor, nurse, or practice manager in New Zealand via medical-sector job and locum ads.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Classifieds/vacancy listings are free to browse without an account; the wider NZ Doctor news site has some subscriber-only content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read-only browsing of a public recruitment board. No login and no notification to any listed contact; a standard clean browser session is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by NZ Doctor / The Health Media, a legitimate NZ medical-sector publisher; ads are advertiser-submitted.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "nz"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NZDoctor classifieds",
+      "New Zealand Doctor jobs"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "classifieds",
+      "employment"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/nzdoctor-free-classified-ads-new-zealand.md"
   },
   {
@@ -64295,31 +64323,33 @@
   },
   {
     "id": "all-net-tools-toolbox-domain-information",
-    "name": "All Net Tools Toolbox Domain Information",
-    "description": "Tool that identifies the available registration information for a website or domain name",
+    "name": "All Nettools Toolbox — Domain Information",
+    "description": "Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and hosting info.",
     "url": "http://all-nettools.com/toolbox/network-tools.htm",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick browser-based WHOIS and domain-registration lookup with no install or account.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "ip-address",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web toolbox; no registration or API key. Runs the lookup from the site's server.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The lookup runs from All Nettools' server, not your machine, so the target domain/registrar sees the tool's IP rather than yours — a mild privacy plus. You still trust the operator with the query; use for non-sensitive recon or route through a sock-puppet if needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent network-tools site; it surfaces registry/WHOIS data verbatim, so accuracy tracks the underlying registrar, not the site.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -64328,20 +64358,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "all-net-tool",
+      "all-net-tools-toolbox-blacklist-checker",
+      "all-net-tools-toolbox-traceroute"
+    ],
+    "aliases": [
+      "all-nettools domain info",
+      "All Nettools WHOIS"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "all-net-tool",
-      "all-net-tools-toolbox-blacklist-checker",
-      "all-net-tools-toolbox-traceroute"
-    ],
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/all-net-tools-toolbox-domain-information.md"
   },
   {
@@ -81271,31 +81304,33 @@
   },
   {
     "id": "network-tools",
-    "name": "Network Tools",
-    "description": "Web trace, WHOIS, and domain lookups",
+    "name": "Network-Tools.com",
+    "description": "Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS records, and network path.",
     "url": "https://network-tools.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, no-install WHOIS / DNS / ping / traceroute lookups on a domain or IP.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "ip-address",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or API key. Lookups run from the site's server.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries run from Network-Tools' servers, so the target sees the tool's IP, not yours. You still disclose the query to the operator; fine for routine infra recon, use a sock-puppet path for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established free network-diagnostics site; it relays registry/DNS output, so accuracy tracks the sources it queries.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -81304,15 +81339,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "all-net-tools-toolbox-domain-information"
+    ],
+    "aliases": [
+      "network-tools.com",
+      "Network Tools express lookup"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/network-tools.md"
   },
   {
@@ -131381,45 +131422,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/aiseesoft-com.md"
-  },
-  {
-    "id": "aliseeks-com",
-    "name": "Aliseeks.com",
-    "description": "search items by photo in AliExpress and Ebay",
-    "url": "https://www.aliseeks.com/search",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/aliseeks-com.md"
   },
   {
     "id": "alos",
@@ -217093,48 +217095,53 @@
   },
   {
     "id": "arkansas-ashley-county-ledger-search-united-states",
-    "name": "Arkansas Ashley County Ledger Search (United States)",
-    "description": "Geneology-related search for ancestral, family, and historical records, using a database from multiple countries",
+    "name": "Ashley County Ledger Obituaries (Arkansas, US)",
+    "description": "Use when you have a `name` tied to Ashley County, Arkansas and want obituary/death notices — returns dob/dod, surviving relatives, and hometown.",
     "url": "http://www.ashleycountyledger.com/obituaries",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding local obituaries and next-of-kin for people connected to Ashley County, Arkansas (Crossett, Hamburg, Wilmot).",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
+      "dob",
+      "associate",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Obituary listings are browsable free; the full paper and archive search sit behind a subscription/login wall.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only browsing of a public newspaper site. No query is tied to the subject beyond a standard web request and no account owner is notified; use a clean browser if you simply want to avoid the paper logging your interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Genuine local newspaper (The Ashley County Ledger); obituary text is family-submitted, so spellings and relationships are as accurate as the funeral notice, not independently verified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Ashley County Ledger",
+      "ashleycountyledger.com obituaries"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "obituaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arkansas-ashley-county-ledger-search-united-states.md"
   },
   {
@@ -270982,35 +270989,51 @@
   {
     "id": "app-store-custom-search-engine",
     "name": "App Store Custom Search Engine",
-    "description": "OSINT tool: App Store Custom Search Engine.",
+    "description": "Use when you have an app name, developer, or `username` and want to search Apple/Google app-store listings — returns developer org, linked sites, and social profiles.",
     "url": "https://cse.google.com/cse/publicurl?cx=006205189065513216365:aqogom-kfne",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scoping a Google search to app-store listing pages to find who publishes an app and their linked contact details.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free to use (Google Programmable Search); no account needed. Results depend on a third-party CSE configuration that can rot over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs as an ordinary Google query, so it leaks only to Google — not to any app developer. No account or login required; a clean browser session is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built Google Programmable Search Engine (CSE); it only re-scopes Google's index, so result quality is Google's but the site whitelist is whoever configured the cx.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "App Store CSE",
+      "Google Programmable Search app stores"
+    ],
+    "tags": [
+      "custom-search-engine",
+      "app-store"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/app-store-custom-search-engine.md"
   },
   {
@@ -276962,36 +276985,51 @@
   },
   {
     "id": "debate-cards",
-    "name": "Debate.cards",
-    "description": "OSINT tool: Debate.cards.",
+    "name": "Debate.Cards",
+    "description": "Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citations, publications, and affiliations.",
     "url": "http://debate.cards/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching competitive-debate evidence to surface an author's quoted work and citation details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and read; the corpus is community-uploaded open-evidence debate files.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only full-text search of a public evidence archive; no account, no per-subject leak beyond a normal web query. Clean-browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run indexer of open debate evidence; cards are excerpts uploaded by debaters, so citation accuracy varies and passages are selectively highlighted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "debate.cards",
+      "Debate Card Search Engine"
+    ],
+    "tags": [
+      "academic-search",
+      "evidence-search",
+      "citations"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/debate-cards.md"
   },
   {
@@ -278919,25 +278957,28 @@
   },
   {
     "id": "european-commission-home-affairs",
-    "name": "European Commission Home Affairs",
-    "description": "European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site",
+    "name": "European Commission (Home Affairs portal)",
+    "description": "Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agencies, and reports.",
     "url": "https://commission.europa.eu/index_en",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A jumping-off hub to official EU home-affairs, internal-security, and justice resources.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Official EU institutional site; entirely free and open, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public government portal is passive and unremarkable. Standard clean-browser hygiene is enough; there is no per-subject query here to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party European Commission website; authoritative for EU policy and as a gateway to official EU agencies and databases.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -278946,15 +278987,6 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "e-justice-europa-eu",
       "eu-consolidated-corporate-registers",
@@ -278967,6 +278999,21 @@
       "inspire-geoportal",
       "vat-number-validation"
     ],
+    "aliases": [
+      "European Commission Home Affairs",
+      "DG HOME",
+      "commission.europa.eu"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "government",
+      "eu"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/european-commission-home-affairs.md"
   },
   {
