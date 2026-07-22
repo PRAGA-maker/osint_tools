@@ -205,7 +205,7 @@ kind: group-index
 - **`paste-sh`** (medium) — Use when you have a `password`-protected or link-shared snippet and want to read or create an end-to-end-encrypted paste — returns text cont
 - **`pastebin-cz`** (medium) — Use when you have a `username`, `email`, or keyword and want public pastes — returns snippet/text dumps that may leak credentials, contacts,
 - **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
-- **`pasteshr`** (medium) — OSINT tool: PasteShr.
+- **`pasteshr`** (medium) — Use when you have a `name`, `email`, or `username` and want to find leaked/dumped text (credentials, dox, lists) posted to this pastebin — r
 - **`pastesite-net`** (medium) — Use when you have a `username`, `email` or keyword and want to check a pastebin for dumped text — browse/search public pastes that may conta
 - **`pbs-television-united-states`** (medium) — Use when you have a `name` and want US public-broadcasting coverage, documentaries or program credits mentioning a subject — returns `social
 - **`pc-magazine`** (medium) — Use when you have a consumer-tech product name or spec surfaced in a case and want authoritative reviews, specs and background — returns pro
@@ -265,7 +265,6 @@ kind: group-index
 - **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
 - **`stackexchange`** (low) — OSINT tool: StackExchange.
-- **`stratfor-global-intelligence`** (medium) — World's leading geopolitical intelligence platform analysing global events
 - **`subreddits-org`** (low) — Directory of active subreddits.
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.

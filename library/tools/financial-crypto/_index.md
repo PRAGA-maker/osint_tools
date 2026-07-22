@@ -100,7 +100,7 @@ kind: group-index
 - **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
 - **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
-- **`radixdlt-com`** (medium) — OSINT tool: radixdlt.com.
+- **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address
 - **`rupep`** (low) — Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.
 - **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.

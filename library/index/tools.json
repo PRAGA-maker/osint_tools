@@ -33152,37 +33152,55 @@
   {
     "id": "pasteshr",
     "name": "PasteShr",
-    "description": "OSINT tool: PasteShr.",
+    "description": "Use when you have a `name`, `email`, or `username` and want to find leaked/dumped text (credentials, dox, lists) posted to this pastebin — returns `email`, `phone`, `password`.",
     "url": "https://www.pasteshr.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Surfacing dumped text (leaks, dox, combolists) hosted on PasteShr that mentions a selector, via external search.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free paste-hosting site; reading pastes needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading a paste is passive. Do not create an account or post; treat any credentials you find as evidence to report, never to test or reuse.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An anonymous public paste host with no editorial control — content is user-submitted, unverified, and frequently removed or expired.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pastebin-com",
+      "pastebin-osint-harvester"
+    ],
+    "aliases": [
+      "pasteshr.com"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/pasteshr.md"
   },
   {
@@ -36133,46 +36151,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/stackexchange.md"
-  },
-  {
-    "id": "stratfor-global-intelligence",
-    "name": "Stratfor Global Intelligence",
-    "description": "World's leading geopolitical intelligence platform analysing global events",
-    "url": "http://www.stratfor.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/stratfor-global-intelligence.md"
   },
   {
     "id": "subreddits-org",
@@ -49610,42 +49588,64 @@
   {
     "id": "x-ray-contact",
     "name": "x-ray.contact",
-    "description": "OSINT tool: x-ray.contact.",
+    "description": "Use when you have a `name`, `email`, `phone`, `image`, or `username` and want a broker-aggregated people-search across 16+ data providers — returns `social-profile`, `address`, `phone`, `email`, `name`.",
     "url": "https://x-ray.contact/blog/how-to-find-someone-on-onlyfans-without-a-username/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot aggregated people-search that fans a selector out across many data providers, including linking adult-creator/social profiles.",
     "selectorsIn": [
+      "name",
+      "email",
+      "phone",
+      "image",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "address",
+      "phone",
+      "email",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier advertised as ~100 basic searches/month with no card; deeper/expanded results and higher volume are paywalled.",
+    "opsec": "passive",
+    "opsecNote": "You are not touching the target, but you ARE submitting the target's selector to a third-party data broker that logs and retains queries. Run it from a sock-puppet account; never enter your own or a client's real identifiers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial data-broker aggregator reselling third-party datasets of unknown provenance and freshness — results are leads, not verified facts, and may be stale or wrong.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "coomer-st",
+      "onlyfans-com"
+    ],
+    "aliases": [
+      "x-ray.contact",
+      "xray contact"
+    ],
     "tags": [
       "onlyfans",
+      "people-search",
+      "data-broker",
       "OnlyFans Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/x-ray-contact.md"
   },
   {
@@ -112073,44 +112073,52 @@
   },
   {
     "id": "radixdlt-com",
-    "name": "radixdlt.com",
-    "description": "OSINT tool: radixdlt.com.",
+    "name": "radixdlt.com (Radix Dashboard)",
+    "description": "Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` addresses, balances and transaction history.",
     "url": "https://dashboard.radixdlt.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Exploring accounts, transactions, tokens and validators on the Radix (Babylon) ledger from a known account address.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public block explorer; no account or payment to browse the ledger.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public Radix ledger is passive and invisible to the address owner. Query from a sock-puppet browser as standard hygiene, but no signal reaches the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The official dashboard now redirects to the community explorer RadixScan; on-chain data is authoritative (read straight from the public ledger), while any labels/tags are community-added.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Radix Dashboard",
+      "radixscan",
+      "dashboard.radixdlt.com"
+    ],
     "tags": [
       "cryptosites",
+      "blockchain-explorer",
+      "radix",
       "CryptoCurrency Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/radixdlt-com.md"
   },
   {
@@ -287044,44 +287052,6 @@
     "_file": "library/tools/search-engines/mojeek-search-engine-united-kingdom.md"
   },
   {
-    "id": "monster-crawler-search",
-    "name": "Monster Crawler Search",
-    "description": "OSINT tool: Monster Crawler Search.",
-    "url": "http://monstercrawler.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "monstercrawler-com",
-      "monstercrawler-meta-search-engine"
-    ],
-    "_file": "library/tools/search-engines/monster-crawler-search.md"
-  },
-  {
     "id": "monstercrawler-com",
     "name": "MonsterCrawler",
     "description": "Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns page links, images and mentions.",
@@ -352108,44 +352078,44 @@
   },
   {
     "id": "autowini-vin-search-international",
-    "name": "Autowini (Vin Search International)",
-    "description": "OSINT tool: Autowini (Vin Search International).",
+    "name": "Autowini",
+    "description": "Use when you want to check whether a specific used vehicle is listed for international export sale — returns marketplace listing details (NOT a VIN-to-owner lookup).",
     "url": "http://www.autowini.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "vehicle-plate",
-      "vin"
-    ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Browsing Korea-based international used-vehicle export listings to see if a particular vehicle is on the market.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing listings is free; selling requires paid membership tiers and buying involves transaction fees.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public listings is passive. Do not register or contact a seller from an attributable account; use a sock puppet if you must inquire.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial used-car export marketplace — despite the harvested \"VIN Search\" label it offers NO VIN-to-owner lookup; it only lists vehicles for sale.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "autowini.com"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "marketplace"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/autowini-vin-search-international.md"
   },
   {
@@ -360782,41 +360752,48 @@
   {
     "id": "world-aeronautical-database",
     "name": "World Aeronautical Database",
-    "description": "Aviation reference checks for airports, airlines, and aircraft",
+    "description": "Use when you have an airport code, airline, or aircraft type and want reference details — returns airport/airline/aircraft data (a context reference, not target PII).",
     "url": "https://worldaerodata.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "air-traffic-records"
     ],
-    "bestFor": "Aviation reference checks for airports, airlines, and aircraft",
-    "input": "Airport code, airline, aircraft type, or route context",
-    "output": "Airport details, airline profiles, and aircraft-related reference data",
+    "bestFor": "Quick reference lookups for airport identifiers, airline profiles, and aircraft types when contextualizing a flight or route.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free reference site; no account. Reliability is the issue, not cost.",
     "opsec": "passive",
-    "opsecNote": "Public aviation reference retrieval with no target interaction.",
+    "opsecNote": "Static aviation reference retrieval — no query touches an investigation target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running hobby aviation reference of uncertain maintenance; it has a history of outages and returned server errors on last check — verify anything critical against an authoritative source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "worldaerodata.com",
+      "World Aero Data"
+    ],
+    "tags": [
+      "aviation",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-22",
+    "enrichment": "full",
     "_file": "library/tools/transportation/air-traffic-records/world-aeronautical-database.md"
   },
   {

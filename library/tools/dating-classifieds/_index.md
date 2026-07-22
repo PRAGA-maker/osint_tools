@@ -107,7 +107,7 @@ kind: group-index
 - **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
 - **`used-ca`** (medium) — Use when you have a `name`, `username`, `phone` or a BC/Canadian location and want a subject's classified ads — returns seller listings with
 - **`vivastreet-classified-ads-united-kingdom`** (medium) — Use when you have a `phone`, `name`, or region and want to find a subject's UK classified ads (jobs, personals, services, vehicles for sale)
-- **`x-ray-contact`** (medium) — OSINT tool: x-ray.contact.
+- **`x-ray-contact`** (medium) — Use when you have a `name`, `email`, `phone`, `image`, or `username` and want a broker-aggregated people-search across 16+ data providers — 
 - **`yourclassifieds-ca-canada`** (medium) — Use when you have a `name`, `phone` or locale and want a subject's classified ads across Ontario — returns ad contact details, address hints
 - **`zoosk`** (medium) — Use when you suspect a subject has a dating profile and have a `name`/`username`/`image` — Zoosk is a large mainstream dating app whose publ
 

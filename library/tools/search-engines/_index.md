@@ -440,7 +440,6 @@ kind: group-index
 - **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
 - **`mindmap-search-engine`** (medium) — Use when you want an alternate scoped Google search to broaden a query — returns web `social-profile` / `domain` links (scope is opaque, tes
 - **`mojeek-search-engine-united-kingdom`** (medium) — Use when you have a `name`, `username`, `email`, or `phone` and want results from an independent, non-Google/Bing index that surfaces pages 
-- **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
 - **`monstercrawler-meta-search-engine`** (medium) — Use when you have a `name`, `username` or `email` and want blended results across Google/Bing/Yahoo at once — returns `social-profile`, `dom
 - **`moody-s`** (low) — Use when you have an `employer-org` (a company or bond issuer) and want its credit standing — returns issuer profiles, credit ratings, and r

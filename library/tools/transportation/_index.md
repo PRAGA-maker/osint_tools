@@ -28,7 +28,7 @@ kind: group-index
 - **`australian-maritime-safety-authority-amsa`** (medium) — Use when you have a vessel name/ID or an owner `name` and want Australian ship-registration detail — returns `employer-org`/owner, vessel `d
 - **`auto-bid-master-auction`** (medium) — Use when you have a `vin` and want a salvage/auction history and photos of a specific vehicle — returns listing photos, damage/condition, ti
 - **`autogespot`** (medium) — Use when you have a `vehicle-plate` or a photo of a distinctive car and want crowd-sourced sightings — returns geolocation, date, and images
-- **`autowini-vin-search-international`** (medium) — OSINT tool: Autowini (Vin Search International).
+- **`autowini-vin-search-international`** (medium) — Use when you want to check whether a specific used vehicle is listed for international export sale — returns marketplace listing details (NO
 - **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.
 - **`bikemap`** (low) — biking route world map
 - **`boatnerd-great-lakes-shipping`** (medium) — Use when you have a Great Lakes vessel name and want to identify and track it — returns vessel details, photos, history and AIS-based positi
