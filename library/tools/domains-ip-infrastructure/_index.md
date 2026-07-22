@@ -343,7 +343,6 @@ kind: group-index
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
-- **`planethoster-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`poodle-check`** (low) — OSINT tool: Poodle Check.
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
@@ -516,7 +515,7 @@ kind: group-index
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
 - **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
-- **`wordpress`** (medium) — Website creation and hosting site
+- **`wordpress`** (medium) — Use when you have a `domain` or `username` and want to enumerate a WordPress site's authors — returns usernames, display names and linked so
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
 - **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.

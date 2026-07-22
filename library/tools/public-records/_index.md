@@ -106,7 +106,7 @@ kind: group-index
 - **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
 - **`binlist`** (low) — OSINT tool: Binlist.
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
-- **`bizeurope`** (medium) — OSINT tool: Bizeurope.
+- **`bizeurope`** (medium) — Use when you have an `employer-org` or product/sector and want to find a European company's registered contact details — returns address, as
 - **`biznar-business-search-engines`** (medium) — Use when you have a `name` or `employer-org` and want business/deep-web sources searched in parallel — returns `employer-org` context and `s
 - **`bizportal-gov-za`** (high) — Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and direc
 - **`bizwiki-business-wiki-search-united-states`** (medium) — Use when you have a US business `name` and a location and want its listing — a free crawler-built directory; returns `employer-org` details 
@@ -624,7 +624,7 @@ kind: group-index
 - **`nevada-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for someone possibly in Nevada and want to confirm voter registration — returns registration status, coun
 - **`new-england-facts`** (high) — Use when you have a `name` in the US Northeast and want an address, phone, relatives and property links — returns an aggregated people/prope
 - **`new-hampshire`** (high) — Use when you have a `name` and want to check New Hampshire state custody — returns offender name, current location, charges/convictions, par
-- **`new-jersey-registered-voter-verification`** (medium) — New Jersey registered voter verification and search
+- **`new-jersey-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` and want to confirm New Jersey voter registration and locale — returns registration status, municipality/
 - **`new-jersey-voter-records`** (high) — Use when you have a `name` and want to confirm a New Jersey address, birth year, and party from voter-registration data — returns residentia
 - **`new-jersey`** (high) — Use when you have a `name` and want to check New Jersey state prison custody — returns inmate status, `document-id` (SBI/ID number), `dob`/a
 - **`new-mexico`** (high) — Use when you have a `name` (or offender number) and want to check whether someone is in New Mexico state custody or has absconded — returns 

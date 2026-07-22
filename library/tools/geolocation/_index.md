@@ -100,7 +100,7 @@ kind: group-index
 - **`geoint-py`** (low) — Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/pr
 - **`geoint-search`** (medium) — Use when you have a place name/`geolocation` clue and want to search a curated set of geospatial/OSINT sources at once — returns geolocation
 - **`geoint`** (medium) — Use when you have an `image` or `geolocation` to place and want a curated hub of geolocation/GEOINT tools and datasets in one board — return
-- **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
+- **`geoip-tracker-tool`** (medium) — Use when you have an `ip-address` and want an approximate geographic location and network owner — returns geolocation, ISP/org and address-r
 - **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
 - **`geoplatform-portal`** (low) — Use when you have a `geolocation` or `address` and want authoritative U.S. federal geospatial layers — returns geolocation context (boundari
 - **`geoportail-france`** (high) — Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadast
@@ -147,7 +147,7 @@ kind: group-index
 - **`instant-google-street-view`** (high) — Use when you have an `address`/`geolocation` and want an immediate, navigable Google Street View panorama of that exact spot.
 - **`instantatlas`** (low) — Use when you need to build interactive thematic/statistical maps and dashboards from your own area-level data — a reporting tool, not a peop
 - **`ipligence-ip-address-geolocation-program`** (high) — Use when you have an `ip-address` or `domain`/hostname and want its approximate city/country location — returns geolocation and a coarse add
-- **`isric-data-hub`** (medium) — OSINT tool: ISRIC Data Hub.
+- **`isric-data-hub`** (medium) — Use when you have a candidate `geolocation` and want soil/terrain ground-truth to verify it against a photo — returns soil-type and land att
 - **`kartaview`** (high) — Use when you have a `geolocation` and want free, open, crowdsourced street-level imagery as an alternative to Google Street View.
 - **`kartograph`** (low) — Use when you (as a developer) want to render custom interactive SVG maps from your own geodata — a map-making library, not a lookup tool.
 - **`lake-county-fire-cameras`** (low) — OSINT tool: Lake County Fire Cameras.

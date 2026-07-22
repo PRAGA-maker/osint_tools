@@ -7,7 +7,7 @@ kind: group-index
 # documents-metadata/android/apps/instant-messaging
 
 ## Skills here
-- **`kik`** (medium) — User discovery, profile analysis, public username search
+- **`kik`** (high) — Use when you have a `username` and want to confirm a Kik Messenger account and pull its public profile — returns social-profile, display nam
 - **`line`** (high) — Use when you have a LINE ID (`username`) or `phone` and want to confirm a LINE account and view its public profile — returns display name, a
 - **`signal-private-messenger`** (medium) — Use when you have a `phone` and want to check whether it has a Signal account — returns account existence and any public profile name/avatar
 - **`snapchat`** (medium) — Use when you have a `username`, Snapcode, or `phone` and want to confirm a Snapchat identity and pull public Snap Map/story signals — return
