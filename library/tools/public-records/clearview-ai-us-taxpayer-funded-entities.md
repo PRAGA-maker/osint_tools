@@ -32,7 +32,6 @@ enrichment: stub
 relatedTools:
 - arizona-le-database-abc15
 - cop26-registered-attendees
-- how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have
 - independent-fundamental-baptist-sexual-misconduct-database
 - the-philadelphia-police-misconduct-database
 ---

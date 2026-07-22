@@ -717,7 +717,7 @@ kind: group-index
 - **`yaseeker`** (medium) — Use when you have a Yandex `username`/`email` and want to resolve the account — returns the owner `name`, profile `image`, linked `social-pr
 - **`yesitsme`** (high) — Use when you have a `name` plus a partial `email` or `phone` and want to find the matching Instagram account — returns the username/social-p
 - **`yoodownload-com`** (high) — Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and m
-- **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
+- **`yotube-channel-search`** (medium) — Use when you have a `name`/keyword and want to enumerate YouTube channels matching it with their IDs, creation dates and stats as a table — 
 - **`youfilter-youtube-advanced-search-filter`** (low) — Use when you have a YouTube search or channel and want structured results — returns social-profile and username leads (channel owners, conta
 - **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
 - **`yout`** (medium) — Use when you have a link to a video/audio post (YouTube, TikTok, Instagram, etc.) and want to preserve it as a file before it disappears — r

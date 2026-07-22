@@ -30,7 +30,6 @@ localInstall: false
 registration: false
 relatedTools:
 - chicago-police-department-demographics
-- george-floyd-where-black-people-are-most-disproportionately-killed-by-police
 - maine-county-law-enforcement-discipline-chart
 - pa-ppp-database
 aliases:

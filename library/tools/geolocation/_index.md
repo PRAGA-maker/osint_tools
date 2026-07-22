@@ -331,7 +331,7 @@ kind: group-index
 - **`worldmap-harvard`** (low) — Use when you need specialized GIS data layers (historical, demographic, environmental) overlaid on a base map to add context to a location, 
 - **`worldtimebuddy-com`** (low) — Use when you have a post/message timestamp and a candidate `geolocation` and want to convert between time zones — helps infer a subject's lo
 - **`worldtimelapse-mapping-website`** (high) — Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — return
-- **`worldwebcams`** (medium) — OSINT tool: WorldWebcams.
+- **`worldwebcams`** (medium) — Use when you have a `geolocation`/`address` (a place of interest) and want to browse public landscape webcams there on a map for live ground
 - **`worldwide-detention-centres-map`** (high) — Use when you have a `geolocation`/country and want to identify immigration detention facilities there — returns facility locations, status a
 - **`worldwide-osint-tools-map`** (medium) — Use when you need to discover country-specific OSINT resources (registries, directories, search sites) for the country where a case is locat
 - **`wunderground`** (medium) — Use when you have a `geolocation` and a date and want the weather that day — returns historical temperature, precipitation, wind, and condit

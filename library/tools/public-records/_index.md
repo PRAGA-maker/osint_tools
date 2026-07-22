@@ -161,7 +161,6 @@ kind: group-index
 - **`cia-world-factbook`** (low) — OSINT tool: CIA World Factbook.
 - **`cilexgroup-org-uk`** (high) — Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, g
 - **`cipfa-org`** (medium) — Use when you have a `name` and want to confirm UK public-finance accountancy credentials — returns whether the person is a CIPFA member/regi
-- **`citation-machine`** (medium) — Automatic citation generator for APA, MLA, Chicago, and more writing styles
 - **`citizens-police-data-project`** (medium) — Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint 
 - **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
 - **`civilian-office-of-police-accountability`** (medium) — Use when you have a Chicago police incident or officer and want the official complaint/investigation record — returns case files, allegation
@@ -356,7 +355,6 @@ kind: group-index
 - **`general-land-office-records`** (medium) — Use when you have a `name` and want historical US federal land grants to that person — returns land-patent records with `geolocation` (state
 - **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
 - **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
-- **`george-floyd-where-black-people-are-most-disproportionately-killed-by-police`** (medium) — OSINT tool: George Floyd - Where black people are most disproportionately killed by police.
 - **`georgefloyd-protest-police-brutality-videos`** (low) — Use when you have a `geolocation`/date from the 2020 George Floyd protests and want documented incident footage — returns a curated spreadsh
 - **`georgia-ports-authority`** (medium) — Georgia Ports Authority Guide and Directory
 - **`georgia-voters-com`** (high) — Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address,
@@ -422,7 +420,6 @@ kind: group-index
 - **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
 - **`guidestar`** (medium) — Use when you have an `employer-org` (nonprofit) or a `name` and want US nonprofit filings and leadership — returns officers, addresses, Form
 - **`gun-dealer-inspections-the-trace`** (medium) — Use when you have a US gun-dealer business `name` or `address`/`geolocation` and want its ATF inspection/disciplinary history — returns `emp
-- **`gutneberg-project`** (medium) — Database of over 59,000 free eBooks, including Kindle eBooks
 - **`guttr`** (low) — OSINT tool: GUTTR.
 - **`hathitrust-digital-library`** (medium) — Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns em
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
@@ -434,7 +431,6 @@ kind: group-index
 - **`home-comptroller-texas-gov`** (medium) — Use when you have a `name` or business and want Texas state financial records — returns entity/franchise-tax status, sales-tax permits, and 
 - **`homefacts-us`** (medium) — Use when you have a US `address` and want neighborhood/property intelligence — returns property details plus nearby registered offenders, ha
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
-- **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
 - **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
 - **`i-cyprus-com`** (high) — Use when you have a company or director `name` in Cyprus and want corporate-registry detail — returns directors, shareholders, secretaries, 
 - **`iaea-online-org`** (high) — Use when you need to find or verify a UK/international independent automotive engineer assessor by location/specialty — returns a matching p
@@ -583,7 +579,6 @@ kind: group-index
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 
 - **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
-- **`milwaukee-wisconsin-city-employee-salaries-2019`** (medium) — OSINT tool: Milwaukee Wisconsin City Employee Salaries 2019.
 - **`ministry-of-corporate-affairs-india`** (medium) — Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporat
 - **`minnesota-registered-voter-verification`** (medium) — Use when you have a name plus DOB and want to confirm a Minnesota voter registration — returns registration status and polling-place/precinc
 - **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 
@@ -622,7 +617,6 @@ kind: group-index
 - **`nationwide-business-directory-australia`** (medium) — Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address
 - **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 
 - **`nb-courts-public-self-serve-website`** (high) — Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case partici
-- **`nc-state-employee-overtime-2018-search-and-report`** (medium) — OSINT tool: NC State Employee Overtime 2018 Search and Report.
 - **`nc-state-government-salaries-search-and-report`** (medium) — Use when you have a `name` you think is a North Carolina state employee and want to confirm it — returns their agency (`employer-org`), job 
 - **`ncra-sourcebook`** (high) — Use when you have a `name` you believe belongs to a court reporter, captioner, or legal videographer and want to confirm the professional an
 - **`nebraska`** (high) — Use when you have a `name` and want to check whether a person is or was incarcerated in Nebraska state prison — returns inmate record, ID (`
@@ -673,7 +667,6 @@ kind: group-index
 - **`offender-tracking-information-system-otis`** (high) — Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and loc
 - **`office-of-national-drug-control-policy`** (medium) — Use for US drug-policy context and program/directory references — a government information site, not a person search (no personal records).
 - **`offshorealert-com`** (medium) — Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports an
-- **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
 - **`ohio-mhas`** (medium) — Use when an Ohio subject may be in behavioral-health treatment and you want licensed-provider/facility references — returns employer-org and
 - **`ohio-obituaries-death-and-marriage-search`** (high) — Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead a
 - **`ohio-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` for someone in Ohio and want to confirm voter registration — returns registration status, county, precinc
@@ -713,7 +706,6 @@ kind: group-index
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Use when a subject, company or vehicle ties to Bulgaria and you need country-specific registries and search resources — returns a curated di
 - **`osti-science-cinema-search`** (medium) — Use when you have a researcher `name`/topic and want US DOE science videos — a speech-indexed multimedia search; returns science talks/video
-- **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
 - **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur

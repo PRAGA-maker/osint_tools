@@ -155,7 +155,7 @@ kind: group-index
 - **`telepathy-2`** (high) — Use when you have a Telegram channel/group or a user's `social-profile` and want to archive it and enumerate members — returns member lists,
 - **`telepathy`** (medium) — Use when you have a Telegram channel/group or `username` and want to archive and analyze it at scale — returns member lists, message archive
 - **`telerecon`** (high) — Use when you have a Telegram `username`, `phone` or channel and want to scrape and profile that target across Telegram — returns messages, c
-- **`telescan`** (medium) — search users in groups (and in which groups is the user) by id, username or phone number (if it's in your contacts)
+- **`telescan`** (medium) — Use when you have a Telegram `username`, user ID, or a `phone` already in your contacts and want to discover which shared groups a user is i
 - **`telesearch`** (high) — Use when you have a `name`/keyword and want to find public Telegram channels, groups, and bots about it — returns social-profile leads with 
 - **`teleteg`** (high) — Use when you have a topic, `name` or keyword and want to discover public Telegram channels/groups around it — returns social-profile links t
 - **`teletracker`** (high) — Use when you have a Telegram channel/bot ID and want to harvest and archive its messages, media, and owner info — returns exported content a

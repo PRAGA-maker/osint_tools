@@ -12,7 +12,7 @@ kind: group-index
 - **`ftp-search/`** — 1 skill(s) below.
 - **`general-search/`** — 14 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
-- **`news-search/`** — 10 skill(s) below.
+- **`news-search/`** — 9 skill(s) below.
 - **`other-search/`** — 1 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
@@ -381,7 +381,6 @@ kind: group-index
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
-- **`keys-openpgp-org`** (medium) — OSINT tool: keys.openpgp.org.
 - **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
 - **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
@@ -563,7 +562,6 @@ kind: group-index
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.
 - **`presearch`** (low) — OSINT tool: Presearch.
 - **`press-reader`** (low) — OSINT tool: Press Reader.
-- **`pricegrabber`** (medium) — Website allowing users to compare prices of products from different websites
 - **`productreviews-australia`** (medium) — Website related to product reviews
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
@@ -731,7 +729,7 @@ kind: group-index
 - **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
 - **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
 - **`vancouver-sun-opinions`** (low) — Use when you have a `name` linked to British Columbia and want op-ed/columnist coverage — returns `associate`, `employer-org` and viewpoint/
-- **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
+- **`vichiti`** (medium) — Use when you have a single selector (`email`, `username`, `phone`, `ip-address`, `domain`, or crypto wallet) and want a fast multi-module re
 - **`vinden-meta-search-netherlands`** (medium) — Use when you have a `name` or keyword tied to the Netherlands and want a Dutch-oriented search/portal view — returns web results and links t
 - **`virgilio-search-portal-italy`** (medium) — Use when you have a `name`, business, or topic with an Italian angle and want localized results — an Italian web portal with search, news, m
 - **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results

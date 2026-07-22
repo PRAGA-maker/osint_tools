@@ -31,7 +31,6 @@ registration: false
 relatedTools:
 - chicago-police-department-demographics
 - iowa-cities-police-budgets
-- george-floyd-where-black-people-are-most-disproportionately-killed-by-police
 aliases:
 - Maine LE Discipline Chart
 tags:

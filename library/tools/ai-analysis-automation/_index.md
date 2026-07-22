@@ -173,7 +173,7 @@ kind: group-index
 - **`guerrilla-mail`** (low) — OSINT tool: Guerrilla Mail.
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
-- **`h-i-v-e`** (medium) — Automated OSINT multi-tool for efficient data gathering.
+- **`h-i-v-e`** (medium) — Use when you have a `phone`, `email`, `username`, `ip-address`, or a leaked text database and want a single Python multi-tool to run reverse
 - **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
 - **`harpoon`** (low) — CLI tool for open-source and threat intelligence with many plugin commands.
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r

@@ -120,7 +120,6 @@ kind: group-index
 - **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (low) — Use when you have a `name` or `employer-org` in a tech/gadget/science context and want published reporting, quotes or product coverage — ret
-- **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
@@ -129,7 +128,6 @@ kind: group-index
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
-- **`huffington-post-online-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
 - **`information-week-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -226,7 +224,6 @@ kind: group-index
 - **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
-- **`polymeta-news`** (medium) — International news website
 - **`postach-io`** (medium) — Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` a
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
 - **`proboards`** (low) — OSINT tool: ProBoards.

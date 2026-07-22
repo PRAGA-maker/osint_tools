@@ -33,7 +33,6 @@ registration: false
 relatedTools:
 - arizona-le-database-abc15
 - clearview-ai-us-taxpayer-funded-entities
-- how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have
 - independent-fundamental-baptist-sexual-misconduct-database
 - the-philadelphia-police-misconduct-database
 aliases:
