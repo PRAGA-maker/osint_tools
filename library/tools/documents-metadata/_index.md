@@ -42,7 +42,7 @@ kind: group-index
 - **`awesomelists-top`** (low) — OSINT tool: Awesomelists.top.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool
-- **`bitly-url-shortener-and-link-manager`** (low) — Tool for shortening URL address hyperlinks
+- **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
 - **`bubbl-us-online-flow-chart-tool`** (low) — Tool for creating online flow charts using linked bubbles
@@ -217,7 +217,7 @@ kind: group-index
 - **`savevideo-me`** (low) — Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/W
 - **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi
 - **`scoop-it`** (low) — Publishing content services website
-- **`screencast-o-matic`** (low) — Website that offers services related to downloading and saving audio content from a website
+- **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
 - **`screenshot-guru`** (low) — Website that provides screen capture capability, taking screenshots of full webpages via a URL
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
 - **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.

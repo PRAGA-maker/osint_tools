@@ -89,7 +89,7 @@ kind: group-index
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
 - **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
 - **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
-- **`chrome`** (low) — OSINT tool: Chrome.
+- **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
 - **`citymapper-mapping-app-mobile-android`** (low) — App for mobile devices for local maps of city areas
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
@@ -292,7 +292,7 @@ kind: group-index
 - **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Multi-platform web browser program
-- **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — App for mobile devices for conducting ping, traceroute, whois, DNS, net speed, port and wifi scanning actions
+- **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
 - **`new-ip-now-web-proxy`** (low) — Anonymous browsing service provider
 - **`nino-generator`** (low) — OSINT tool: NINO Generator.
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
@@ -348,13 +348,13 @@ kind: group-index
 - **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
 - **`receive-sms-online-for-free`** (low) — OSINT tool: Receive SMS Online for FREE.
 - **`receive-sms-online`** (low) — OSINT tool: Receive SMS Online.
-- **`redbooth-team-collaboration-app`** (low) — Mobile device app for collaboration, task management, file sharing and communication allowing 5 free users
+- **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
 - **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resume-generator`** (low) — OSINT tool: Resume Generator.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
-- **`ripoff-report`** (low) — Searchable database of complaints, scams, lawsuits, and frauds
+- **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
 - **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
@@ -404,7 +404,6 @@ kind: group-index
 - **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
 - **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers
 - **`soundcloud-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
-- **`soundcloud-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`soundraw`** (low) — AI music generation
