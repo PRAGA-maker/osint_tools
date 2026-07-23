@@ -55,7 +55,7 @@ kind: group-index
 - **`gpx-file-editor`** (medium) — Use when you have a `.gpx`/`.kml` track file (with embedded `metadata-exif` timestamps) and want to view, edit and read the route, points an
 - **`gridreferencefinder-com`** (medium) — Use when you have a UK `address`, postcode, or `geolocation` and want to convert it between coordinate systems — returns OSGB grid reference
 - **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro
-- **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.
+- **`here-wego`** (low) — Use when you have an `address`/`geolocation` and want an independent map, satellite/street view, and routing alternative to Google/Apple — r
 - **`hitta-se`** (low) — Mapping service for Sweden
 - **`inciweb`** (medium) — Use when you have a `geolocation` (US region/date) and need official wildfire-incident context — returns fire location, perimeter maps, size
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors

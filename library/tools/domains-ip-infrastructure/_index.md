@@ -431,7 +431,6 @@ kind: group-index
 - **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom
 - **`unshorten-me`** (low) — OSINT tool: Unshorten.me.
 - **`urlhaus`** (low) — Use when you have a `domain`/URL, host or `ip-address` and want to know if it distributes malware — returns malicious URLs, payloads and hos
-- **`urlquery`** (low) — OSINT tool: urlQuery.
 - **`urlvoid`** (low) — OSINT tool: URLVoid.
 - **`urlxray`** (low) — OSINT tool: Urlxray.
 - **`uscrapper`** (low) — Use when you have a `domain`/URL and want contact details harvested from it — returns `email`s, `phone`s, `social-profile` links, and other 

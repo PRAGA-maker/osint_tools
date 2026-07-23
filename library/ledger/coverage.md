@@ -2,33 +2,33 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7424 total · 5026 full · 2398 stub (67% enriched)
+**Tools:** 7422 total · 5034 full · 2388 stub (67% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3478 · medium: 1982 · high: 1964
+low: 3475 · medium: 1983 · high: 1964
 
 ## Tools by trust
-community: 3499 · unverified: 2218 · trusted: 1698 · untrustworthy: 6 · personal: 3
+community: 3496 · unverified: 2215 · trusted: 1702 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 64/448
-- `archives-cache` — 88/120
+- `ai-analysis-automation` — 65/448
+- `archives-cache` — 89/120
 - `communities-forums` — 237/287
 - `dark-web` — 45/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 81/297
-- `domains-ip-infrastructure` — 266/681
+- `documents-metadata` — 82/297
+- `domains-ip-infrastructure` — 266/680
 - `email` — 245/246
 - `evidence-capture` — 13/29
 - `financial-crypto` — 58/107
 - `geolocation` — 292/340
 - `image-video-face` — 441/451
-- `maps-geospatial-data` — 78/123
+- `maps-geospatial-data` — 79/123
 - `messaging` — 179/184
-- `opsec-investigator-tooling` — 95/532
+- `opsec-investigator-tooling` — 97/531
 - `people-search` — 256/257
 - `phone` — 134/137
 - `public-records` — 873/1005
@@ -36,7 +36,7 @@ community: 3499 · unverified: 2218 · trusted: 1698 · untrustworthy: 6 · pers
 - `social-networks` — 733/784
 - `training-ctf` — 5/12
 - `translation-language` — 24/100
-- `transportation` — 129/210
+- `transportation` — 131/210
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -44,8 +44,8 @@ community: 3499 · unverified: 2218 · trusted: 1698 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 953 leaves
 - `library/tools/social-networks` — 756 leaves
 - `library/tools/search-engines` — 721 leaves
-- `library/tools/opsec-investigator-tooling` — 507 leaves
-- `library/tools/domains-ip-infrastructure` — 450 leaves
+- `library/tools/opsec-investigator-tooling` — 506 leaves
+- `library/tools/domains-ip-infrastructure` — 449 leaves
 - `library/tools/ai-analysis-automation` — 414 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves

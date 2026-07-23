@@ -169,7 +169,7 @@ kind: group-index
 - **`graphx`** (low) — OSINT tool: GraphX.
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
 - **`guardian-project`** (low) — OSINT tool: Guardian Project.
-- **`guerrilla-mail`** (low) — OSINT tool: Guerrilla Mail.
+- **`guerrilla-mail`** (low) — Use when an investigation step needs a throwaway inbox — sign up to a target's site/service, receive a verification code, or test a flow wit
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
 - **`h-i-v-e`** (medium) — Use when you have a `phone`, `email`, `username`, `ip-address`, or a leaked text database and want a single Python multi-tool to run reverse

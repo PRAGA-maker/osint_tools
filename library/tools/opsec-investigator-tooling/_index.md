@@ -168,7 +168,7 @@ kind: group-index
 - **`generate-sa-id-numbers`** (low) — Use when you have a `dob` (and gender/citizenship) and want to construct or sanity-check the structure of a South African national ID number
 - **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
-- **`get-safe-online-database`** (low) — Website providing information about online privacy and security-related subjects
+- **`get-safe-online-database`** (low) — Use as a reference when you need to understand or explain a scam/fraud typology (romance, investment, phishing) — a public advice library, n
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
 - **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
 - **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
@@ -225,7 +225,6 @@ kind: group-index
 - **`international-name-generator`** (low) — OSINT tool: International Name Generator.
 - **`ipcheck`** (low) — OSINT tool: IPCheck.
 - **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
-- **`iron-vest`** (low) — Offers protectection of information you share online, including passwords, payments, and other personal information
 - **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
 - **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
@@ -348,7 +347,7 @@ kind: group-index
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
-- **`runkeeper`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
 - **`safari-for-macos`** (low) — Internet browser for Mac
 - **`safari-for-windows`** (low) — Internet browser download available for Windows
 - **`safari`** (low) — OSINT tool: Safari.

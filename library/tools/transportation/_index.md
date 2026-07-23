@@ -61,7 +61,7 @@ kind: group-index
 - **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
 - **`enterprise-rental-receipts`** (low) — Use when you (or lawful process) have access to an Enterprise Plus account and need that account's own rental receipts — returns the renter'
 - **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
-- **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
+- **`equasis`** (low) — Use when you have a vessel IMO/`name` or a shipping company and want ownership, management, and safety records — returns employer-org (owner
 - **`eships-net`** (low) — OSINT tool: eships.net.
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
 - **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
@@ -70,7 +70,7 @@ kind: group-index
 - **`faa-registry`** (low) — Use when you have a US aircraft tail number (N-number) or an owner `name` and want the registered owner and address — returns the owner `nam
 - **`faxvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want the vehicle's identity and history — returns free decoded specs plus (paid) title, 
 - **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.
-- **`fleetmon`** (low) — OSINT tool: FleetMon.
+- **`fleetmon`** (low) — Use when you have a vessel `name`/IMO/MMSI (or a port) and want its live AIS position, voyage history, and particulars — returns geolocation
 - **`flight-radar-24`** (low) — OSINT tool: Flight Radar 24.
 - **`flight-stats`** (low) — Use when you have a flight number, route or airport and want status/history — returns real-time and historical flight data to confirm a pers
 - **`flight-status-info`** (low) — - get a list of airports by city name; - view the flight schedule of a particular airport; - view the flight schedule of a particular airlin
