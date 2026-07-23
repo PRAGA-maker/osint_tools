@@ -353,7 +353,7 @@ kind: group-index
 - **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resume-generator`** (low) — OSINT tool: Resume Generator.
-- **`resurrect-pages`** (low) — Firefox add-on by Anthony Lieuallen for viewing dead pages and broken links
+- **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Searchable database of complaints, scams, lawsuits, and frauds
 - **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages

@@ -335,7 +335,7 @@ kind: group-index
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
-- **`qualys-ssl-check`** (low) — OSINT tool: Qualys SSL Check.
+- **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
 - **`quantcast`** (low) — OSINT tool: Quantcast.
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.

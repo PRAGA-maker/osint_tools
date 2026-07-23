@@ -281,7 +281,7 @@ kind: group-index
 - **`google-search`** (low) — OSINT tool: Google Search.
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia
-- **`google-unlocked`** (low) — browser extension uncensor google search results
+- **`google-unlocked`** (low) — Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into t
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
 - **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
 - **`googler`** (low) — command line google search tool
@@ -503,7 +503,7 @@ kind: group-index
 - **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
 - **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
-- **`pdfsearch-io`** (low) — OSINT tool: Pdfsearch.io.
+- **`pdfsearch-io`** (low) — Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download lin
 - **`perplexity`** (low) — OSINT tool: Perplexity.
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 

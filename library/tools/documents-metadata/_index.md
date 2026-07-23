@@ -35,7 +35,7 @@ kind: group-index
 - **`apple-icloud-usa`** (low) — Cloud storage and cloud computing service by Apple
 - **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
-- **`audacity`** (low) — Website that offers services related to downloading and saving audio files
+- **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
 - **`aware-online`** (low) — OSINT website offering various search tools including reddit search, vimeo search, facebook search, and more.
 - **`awesome-indexed`** (low) — OSINT tool: Awesome-indexed.
 - **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
@@ -116,7 +116,6 @@ kind: group-index
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
 - **`foursquare-time-machine`** (low) — Foursquare history visualizer and discovery tool
 - **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.
-- **`free-ocr`** (low) — OSINT tool: Free OCR.
 - **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`fundrazr`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi

@@ -1927,38 +1927,51 @@
   {
     "id": "blender",
     "name": "Blender",
-    "description": "Blender is an open-source 3D creation suite supporting the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing, and motion tracking, even video editing.",
+    "description": "Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulations to verify `geolocation`.",
     "url": "https://www.blender.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Building 3D reconstructions and sun/shadow simulations to verify locations, sightlines, and event geometry.",
+    "selectorsIn": [
+      "image",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL); cross-platform desktop application, no account.",
+    "opsec": "passive",
+    "opsecNote": "Blender runs entirely offline on your machine — reconstructing a scene from imagery you already have touches no target and leaks nothing. It's analyst-side tooling; the only OpSec note is standard evidence hygiene (work on copies, keep source imagery's chain of custody).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Blender is a mature, widely-used open-source 3D suite (Blender Foundation) featured in the Bellingcat toolkit; it's a modeling tool, so conclusions depend on how faithfully you build the scene.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Blender 3D",
+      "blender.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "data-organization-analysis"
+      "data-organization-analysis",
+      "3d-reconstruction",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/blender.md"
   },
   {
@@ -19818,40 +19831,53 @@
   {
     "id": "followthatpage",
     "name": "FollowThatPage",
-    "description": "OSINT tool: FollowThatPage.",
-    "url": "http://www.followthatpage.com",
+    "description": "Use when you have a `domain`/URL you want watched and want email alerts on changes — returns a periodic diff of what text was added or removed.",
+    "url": "https://www.followthatpage.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Free email alerts when a specific web page's text changes, with the added/removed content shown.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier monitors a set number of pages at a daily/weekly cadence; more pages and hourly checks require a paid plan.",
+    "opsec": "active",
+    "opsecNote": "FollowThatPage's own servers fetch the target page on a schedule, so the recurring requests come from its infrastructure, not your IP — that shields you, though the target's server sees periodic hits from a known monitoring service (which it may block). You register with an email address; use a sock-puppet email, and remember the monitored content is processed on their servers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running free change-monitoring service; simple and reliable for static pages, but (per its own notice) target sites can block it, and it's a third party you trust to fetch pages.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "follow-that-page"
     ],
+    "aliases": [
+      "Follow That Page",
+      "followthatpage.com"
+    ],
+    "tags": [
+      "web-monitoring",
+      "change-detection"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/followthatpage.md"
   },
   {
@@ -48440,41 +48466,46 @@
   {
     "id": "audacity",
     "name": "Audacity",
-    "description": "Website that offers services related to downloading and saving audio files",
-    "url": "http://audacityteam.org",
+    "description": "Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to location, edits, or background events.",
+    "url": "https://www.audacityteam.org/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Free desktop audio forensics — spectrogram analysis, cleanup, and isolating background sounds in a recording.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL); cross-platform desktop application, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Audacity runs offline on your machine, so analyzing a recording you already hold touches no one and leaks nothing — passive. Standard evidence hygiene applies: work on a copy, keep the original untouched for chain of custody, and note recent Audacity builds have had telemetry/privacy discussions — use the official build and review its privacy settings.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established open-source audio editor (now under Muse Group); a general audio tool, so forensic conclusions depend on your analysis, not the tool asserting anything.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Audacity audio editor",
+      "audacityteam.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
+      "audio-forensics",
       "useful-websites-tools-documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/audacity.md"
   },
   {
@@ -52075,46 +52106,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/free-full-pdf.md"
-  },
-  {
-    "id": "free-ocr",
-    "name": "Free OCR",
-    "description": "OSINT tool: Free OCR.",
-    "url": "https://www.free-ocr.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "ocr"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/free-ocr.md"
   },
   {
     "id": "freelancer",
@@ -69352,29 +69343,35 @@
   {
     "id": "gcpbucketbrute",
     "name": "GCPBucketBrute",
-    "description": "Enumerating likely GCS bucket names at scale",
+    "description": "Use when you have a target `name`/`domain` and want its Google Cloud Storage buckets — returns valid bucket names and their access/permission status.",
     "url": "https://github.com/RhinoSecurityLabs/GCPBucketBrute",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "azure-gcp-discovery"
     ],
-    "bestFor": "Enumerating likely GCS bucket names at scale",
-    "input": "Target company names, domains, and custom wordlists",
-    "output": "Valid bucket names with access status and findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating and permission-testing likely Google Cloud Storage bucket names for a target.",
+    "selectorsIn": [
+      "name",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Rhino Security Labs); Python. Works unauthenticated or with (your own) GCP credentials for privilege checks.",
     "opsec": "active",
-    "opsecNote": "Performs direct requests against GCS endpoints and can be detected in provider logs.",
+    "opsecNote": "GCPBucketBrute sends requests directly to Google Cloud Storage endpoints for each candidate bucket, so the activity is visible in Google's/target's logs and originates from your IP unless proxied — this is active enumeration. Only run it against targets you're authorized to assess; brute-forcing others' cloud infrastructure may be unlawful. Route through a proxy and use throwaway GCP creds for the permission checks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by Rhino Security Labs, a reputable cloud-security firm; it tests real GCS endpoints, so a reported bucket/permission is verifiable, though wordlist-driven guessing is inherently incomplete.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -69382,11 +69379,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GCPBucketBrute",
+      "RhinoSecurityLabs/GCPBucketBrute"
+    ],
+    "tags": [
+      "gcp",
+      "cloud-storage",
+      "bucket-enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/gcpbucketbrute.md"
   },
   {
@@ -79371,41 +79375,59 @@
   {
     "id": "owasp-maryam",
     "name": "OWASP Maryam",
-    "description": "Scriptable multi-module OSINT reconnaissance workflows",
+    "description": "Use when you have a `domain`, `email`, or `username` and want modular recon in one framework — returns subdomains, docs/metadata, related `email`s and `social-profile`s.",
     "url": "https://github.com/saeeddhqan/Maryam",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Scriptable multi-module OSINT reconnaissance workflows",
-    "input": "Domain, IP, email, username, or module-specific query terms",
-    "output": "Module-based findings such as subdomains, metadata, and related intelligence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Running scriptable, multi-module OSINT recon (subdomains, search, metadata, contacts) from one framework.",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (OWASP project); install via pip/git. Some modules need free API keys to reach their sources.",
     "opsec": "active",
-    "opsecNote": "Can issue direct queries and module-driven probes depending on selected workflow.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Maryam is a framework of modules with mixed OpSec: passive modules read search engines and third-party APIs, but others issue DNS queries or fetch documents directly from the target. Know which module you're running — an active one hits the target from your IP. Route through a proxy/VPN and a sock-puppet, and supply throwaway API keys, not personal ones.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An OWASP-affiliated open-source framework (saeeddhqan); modular and auditable, but results are aggregated from many upstream sources of varying reliability.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Maryam",
+      "OWASP Maryam"
+    ],
+    "tags": [
+      "recon-framework",
+      "subdomains",
+      "osint-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/owasp-maryam.md"
   },
   {
@@ -80360,37 +80382,52 @@
   {
     "id": "qualys-ssl-check",
     "name": "Qualys SSL Check",
-    "description": "OSINT tool: Qualys SSL Check.",
+    "description": "Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server configuration grade.",
     "url": "https://www.ssllabs.com/ssltest/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Inspecting a domain's TLS certificate details and server SSL configuration in depth.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service from Qualys SSL Labs; no account needed.",
+    "opsec": "active",
+    "opsecNote": "SSL Labs actively connects to the target host on port 443 to test its TLS config, so the request originates from Qualys's scanners (not your IP), which shields you — but the target's server does log a connection from a known SSL Labs scanner. There's also an option to make results public; keep 'Do not show results on the boards' checked for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Qualys SSL Labs is the industry-standard TLS testing service; certificate and configuration data is authoritative (read live from the server).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SSL Labs",
+      "Qualys SSL Test",
+      "ssllabs.com"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "tls",
+      "certificates"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/qualys-ssl-check.md"
   },
   {
@@ -86643,29 +86680,35 @@
   {
     "id": "urlcrazy",
     "name": "URLCrazy",
-    "description": "Typosquatting domain discovery",
+    "description": "Use when you have a `domain` and want its typo/look-alike variants — returns permutations plus which are registered and their resolving `ip-address`.",
     "url": "https://www.morningstarsecurity.com/research/urlcrazy",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "typosquatting"
     ],
-    "bestFor": "Typosquatting domain discovery",
-    "input": "Domain name",
-    "output": "Domain variant list, registration status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Generating typosquat/look-alike domain permutations and checking which are registered.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; ships with Kali Linux and installs from source (Ruby).",
     "opsec": "active",
-    "opsecNote": "Generates 2000+ variants requiring DNS queries for availability checking",
+    "opsecNote": "URLCrazy generates ~2000 permutations and then does DNS lookups to see which resolve — those DNS queries go out from your resolver/IP. It does not connect to the target site itself, but resolving thousands of names is observable to your DNS provider. Use a privacy-respecting resolver or route through a proxy; the generated variants are only leads until you check each.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing open-source tool (Morningstar Security) bundled in Kali; permutation logic is deterministic and the registration/DNS data is read live, so results are verifiable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -86673,11 +86716,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "urlcrazy",
+      "URLCrazy"
+    ],
+    "tags": [
+      "typosquatting",
+      "domain-permutation",
+      "phishing-detection"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/typosquatting/urlcrazy.md"
   },
   {
@@ -181280,41 +181330,51 @@
   {
     "id": "resurrect-pages",
     "name": "Resurrect Pages",
-    "description": "Firefox add-on by Anthony Lieuallen for viewing dead pages and broken links",
+    "description": "Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is, Google Cache, and more.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/resurrect-pages",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-click access to cached/archived copies of a dead page across several archive services at once.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT); a lightweight Firefox add-on.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Resurrect Pages just builds and opens lookup URLs at archive services (Wayback, archive.is, etc.), so you query the archive — not the dead page's original server. That makes it passive toward the target. The archive services see the request; use a sock-puppet browser session for sensitive research, and note archive.is may show a CAPTCHA.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Open-source Firefox add-on (Anthony Lieuallen), 4.6★ and maintained (updated 2026); it only constructs archive-lookup URLs, so there's minimal trust surface.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Resurrect Pages",
+      "Firefox Resurrect Pages"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "archives"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/resurrect-pages.md"
   },
   {
@@ -276139,37 +276199,50 @@
   {
     "id": "google-unlocked",
     "name": "Google Unlocked",
-    "description": "browser extension uncensor google search results",
+    "description": "Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into the page.",
     "url": "https://github.com/Ibit-to/google-unlocked",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Revealing Google results that were removed/hidden due to DMCA takedown notices.",
+    "selectorsIn": [
+      "name",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; but removed from the Chrome Web Store and Firefox Add-ons, so it must be side-loaded manually or run as a userscript.",
+    "opsec": "passive",
+    "opsecNote": "The extension only re-parses Google's own results page you already loaded (it reads the DMCA-removal notices Google appends and pulls the delisted URLs back in), so it issues no extra queries against any target — passive. It runs your normal Google session, so standard search-OpSec applies: use a signed-out/sock-puppet browser and a VPN if the query names a live subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source (Ibit-to) but unmaintained (last release v1.6, Jan 2022) and delisted from official stores; it may break as Google changes its results markup, and side-loaded extensions should be reviewed before install.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google Unlocked",
+      "Ibit-to/google-unlocked"
+    ],
     "tags": [
-      "Search engines"
+      "Search engines",
+      "dmca",
+      "uncensor"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-unlocked.md"
   },
   {
@@ -287143,35 +287216,49 @@
   {
     "id": "pdfsearch-io",
     "name": "Pdfsearch.io",
-    "description": "OSINT tool: Pdfsearch.io.",
+    "description": "Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download links.",
     "url": "https://www.pdfsearch.io/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text and semantic search across a large index of PDF documents and books.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free searching; some features/volume may sit behind an account or paid tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching queries pdfsearch.io's own document index, so you don't touch any subject — passive. Your searches are logged by the site; use a sock-puppet session. Downloading a result fetches it from wherever it's hosted, and be mindful that some indexed PDFs may be copyrighted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party PDF search engine indexing millions of documents with metadata and semantic search; coverage and freshness are unverified, so treat it as one corpus among several.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "PDFSearch.io",
+      "pdfsearch"
+    ],
+    "tags": [
+      "document-search",
+      "pdf"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/pdfsearch-io.md"
   },
   {

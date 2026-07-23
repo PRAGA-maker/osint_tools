@@ -16,7 +16,7 @@ kind: group-index
 - **`findsubdomains`** (low) — Automated subdomain enumeration, organization name filtering, subdomain statistics
 - **`gdns`** (low) — Quick DNS enumeration via Google DNS services
 - **`gobuster`** (low) — Use when you have a `domain` and want to brute-force its subdomains/paths/vhosts — returns discovered subdomains, directories and virtual ho
-- **`owasp-maryam`** (low) — Scriptable multi-module OSINT reconnaissance workflows
+- **`owasp-maryam`** (low) — Use when you have a `domain`, `email`, or `username` and want modular recon in one framework — returns subdomains, docs/metadata, related `e
 - **`pentest-tools-com-subdomains`** (low) — Use when you have a `domain` and want a quick browser-based subdomain enumeration with no local setup — returns discovered subdomains and DN
 - **`recon-ng`** (low) — Modular web recon, API-driven data collection
 - **`seclists-dns-subdomains`** (low) — Supplying high-quality DNS wordlists for enumeration tools

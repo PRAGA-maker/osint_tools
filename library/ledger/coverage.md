@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7469 total · 4883 full · 2586 stub (65% enriched)
+**Tools:** 7468 total · 4893 full · 2575 stub (65% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3534 · medium: 1971 · high: 1964
+low: 3533 · medium: 1971 · high: 1964
 
 ## Tools by trust
-community: 3500 · unverified: 2295 · trusted: 1665 · untrustworthy: 6 · personal: 3
+community: 3503 · unverified: 2288 · trusted: 1668 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 51/452
-- `archives-cache` — 85/122
+- `ai-analysis-automation` — 52/452
+- `archives-cache` — 86/122
 - `communities-forums` — 237/288
 - `dark-web` — 40/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 71/301
-- `domains-ip-infrastructure` — 216/684
+- `documents-metadata` — 72/300
+- `domains-ip-infrastructure` — 220/684
 - `email` — 245/246
 - `evidence-capture` — 12/29
 - `financial-crypto` — 56/109
@@ -28,11 +28,11 @@ community: 3500 · unverified: 2295 · trusted: 1665 · untrustworthy: 6 · pers
 - `image-video-face` — 440/452
 - `maps-geospatial-data` — 75/123
 - `messaging` — 178/184
-- `opsec-investigator-tooling` — 72/546
+- `opsec-investigator-tooling` — 73/546
 - `people-search` — 256/257
 - `phone` — 134/137
 - `public-records` — 866/1008
-- `search-engines` — 499/779
+- `search-engines` — 501/779
 - `social-networks` — 724/786
 - `training-ctf` — 5/12
 - `translation-language` — 23/101
@@ -50,7 +50,7 @@ community: 3500 · unverified: 2295 · trusted: 1665 · untrustworthy: 6 · pers
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 285 leaves
-- `library/tools/documents-metadata` — 255 leaves
+- `library/tools/documents-metadata` — 254 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves

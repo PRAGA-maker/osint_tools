@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`aadinternals`** (low) — Use when a target uses Microsoft 365 / Entra ID (Azure AD) and you want tenant reconnaissance — returns tenant details, domains, and user/lo
-- **`gcpbucketbrute`** (low) — Enumerating likely GCS bucket names at scale
+- **`gcpbucketbrute`** (low) — Use when you have a target `name`/`domain` and want its Google Cloud Storage buckets — returns valid bucket names and their access/permissio
 - **`microburst`** (low) — Use when you have an `employer-org`/`domain` and want to enumerate its public Azure footprint (storage accounts, subdomains, services) or au
 - **`roadtools`** (low) — Enumerating Azure AD objects and privilege relationships
 - **`stormspotter`** (low) — Visual analysis of Azure attack paths and privilege chains

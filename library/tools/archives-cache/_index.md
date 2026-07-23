@@ -50,7 +50,7 @@ kind: group-index
 - **`feedreader`** (low) — OSINT tool: FeedReader.
 - **`fetchrss`** (low) — OSINT tool: FetchRSS.
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or
-- **`followthatpage`** (low) — OSINT tool: FollowThatPage.
+- **`followthatpage`** (low) — Use when you have a `domain`/URL you want watched and want email alerts on changes — returns a periodic diff of what text was added or remov
 - **`gau`** (medium) — Use when you have a `domain` and want every URL ever seen for it across web archives — returns a bulk list of historical URLs (`document-id`
 - **`gh-archive`** (low) — Public dataset of GitHub activity events.
 - **`grab-site`** (medium) — Use when you have a `domain` or `social-profile` URL and want to capture a full, court-quality WARC archive of it before it changes or disap
