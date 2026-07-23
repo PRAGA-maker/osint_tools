@@ -21,7 +21,7 @@ kind: group-index
 - **`gowitness`** (low) — Use when you have a list of `domain`s/`ip-address`es and want to bulk-screenshot their web interfaces for visual triage and evidence — retur
 - **`image-extractor`** (low) — OSINT tool: Image Extractor.
 - **`imgur-album-downloader`** (low) — OSINT tool: Imgur Album Downloader.
-- **`link-gopher`** (low) — OSINT tool: Link Gopher.
+- **`link-gopher`** (low) — Use when you have a page open and want every link and unique domain on it extracted at once — returns a de-duplicated list of URLs and domai
 - **`loader-to`** (low) — OSINT tool: Loader.to.
 - **`media-downloader-net`** (low) — OSINT tool: Media-downloader.net.
 - **`megatools`** (low) — The [http://Mega.nz](http://Mega.nz) file exchange contains links to many files, including various databases of leaked data. You can use the

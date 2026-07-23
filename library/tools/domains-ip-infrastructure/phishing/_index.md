@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/phishing
 
 ## Skills here
-- **`https-openphish-com-feed-txt`** (low) — Phishing URL detection
+- **`https-openphish-com-feed-txt`** (low) — Use when you have a `domain`/URL and want to check whether it is a known phishing site — returns a live list of confirmed phishing URLs.
 - **`phishstats`** (low) — Phishing campaign analysis
 - **`phishtank`** (low) — Phishing site verification
 - **`secai-ai`** (low) — Security research and threat intelligence

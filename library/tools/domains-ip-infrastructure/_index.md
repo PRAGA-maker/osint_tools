@@ -51,7 +51,7 @@ kind: group-index
 
 ## Skills here
 - **`0xdork`** (low) — Very light and simple #Python tool for Google Dorking
-- **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
+- **`aa419-fake-sites-database`** (low) — Use when you have a `domain` or an impersonated brand `name` and want to know if it is a catalogued scam/fake site — returns matching fraudu
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
 - **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
@@ -320,7 +320,7 @@ kind: group-index
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
-- **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
+- **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
 - **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
@@ -446,7 +446,7 @@ kind: group-index
 - **`urlvoid`** (low) — OSINT tool: URLVoid.
 - **`urlxray`** (low) — OSINT tool: Urlxray.
 - **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers
-- **`user-agent-parser`** (low) — User Agent String can be found, for example, in the logs of your site (or someone else's), in the source code of some CLI tools for #osint a
+- **`user-agent-parser`** (low) — Use when you have a User-Agent string (from logs, headers or a tool config) and want it decoded — returns the device, OS and browser it desc
 - **`validin`** (low) — OSINT tool: Validin.
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
 - **`verisign`** (low) — OSINT tool: Verisign.

@@ -59,7 +59,7 @@ kind: group-index
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — OSINT tool: Bellingcat.
 - **`bendobrown`** (low) — OSINT tool: Bendobrown.
-- **`bevigil-cli`** (low) — OSINT tool: BeVigil-CLI.
+- **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
 - **`bizint`** (low) — OSINT tool: Bizint.
@@ -201,7 +201,7 @@ kind: group-index
 - **`inkscape`** (low) — OSINT tool: Inkscape.
 - **`intelhub`** (low) — OSINT tool: IntelHub.
 - **`intellyweave`** (low) — OSINT tool: IntellyWeave.
-- **`ivre`** (low) — framework for network recon
+- **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic
 - **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`jqplot`** (low) — OSINT tool: jqPlot.
@@ -262,7 +262,7 @@ kind: group-index
 - **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
 - **`osint-belarus`** (low) — OSINT tool: OSINT Belarus.
-- **`osint-cli-tool-skeleton`** (low) — OSINT tool: osint-cli-tool-skeleton.
+- **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
 - **`osint-explorer`** (low) — OSINT framework for intelligence gathering.
