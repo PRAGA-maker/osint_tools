@@ -421,7 +421,7 @@ kind: group-index
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
-- **`news-now`** (low) — OSINT tool: News Now.
+- **`news-now`** (low) — Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped 
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — OSINT tool: News Search.
 - **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.

@@ -219,7 +219,7 @@ kind: group-index
 - **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
 - **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
-- **`shared-count`** (low) — Social URL analytics tool for tracking URL shares, likes and tweets
+- **`shared-count`** (low) — Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-UR
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — tool for filtering RSS feeds
 - **`site-dorks`** (low) — Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites
@@ -243,7 +243,7 @@ kind: group-index
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
 - **`textise-net`** (low) — convert the HTML code of a page to TXT
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
-- **`the-time-now`** (low) — Tells you what time it is in any location or time zone
+- **`the-time-now`** (low) — Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence an
 - **`the-time-zone-converter`** (low) — Use when you have a timestamp and two locations and want them aligned — converts a time between time zones/cities to correlate events across
 - **`thedorkbox`** (low) — A collection of Google dorks &amp; OSINT techniques
 - **`thexifer-net`** (medium) — Use when you have an `image` and want to read (or strip) its EXIF/IPTC/XMP metadata including GPS — returns `metadata-exif` and any embedded

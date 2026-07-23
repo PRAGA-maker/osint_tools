@@ -414,7 +414,7 @@ kind: group-index
 - **`vortex`** (low) — OSINT tool: Vortex.
 - **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Quick AI content checks for text and images during media verification
-- **`waybackurls`** (low) — OSINT tool: Waybackurls.
+- **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
 - **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
 - **`wickr`** (low) — OSINT tool: Wickr.

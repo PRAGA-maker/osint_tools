@@ -136,7 +136,7 @@ kind: group-index
 - **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
-- **`dnsreaper`** (low) — TwiSub-domain takeover tool
+- **`dnsreaper`** (low) — Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` na
 - **`domain-codex`** (low) — OSINT tool: Domain Codex.
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
@@ -248,7 +248,7 @@ kind: group-index
 - **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
 - **`ipvoid`** (low) — OSINT tool: IPVoid.
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
-- **`ismalicious`** (low) — OSINT tool: isMalicious.
+- **`ismalicious`** (low) — Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+
 - **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
@@ -280,7 +280,7 @@ kind: group-index
 - **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host
 - **`metafinder`** (low) — Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and pa
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
-- **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
+- **`miteru`** (low) — Use when you want to hunt live phishing kits — it pulls suspicious `domain` URLs from phishing feeds and flags those exposing a downloadable
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
 - **`mksub`** (low) — Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for res
 - **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
@@ -319,7 +319,7 @@ kind: group-index
 - **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
 - **`openlinkprofiler`** (low) — Use when you have a `domain` and want its backlink profile — returns the sites linking to it, revealing related properties, partners, and ne
 - **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
-- **`opensquat`** (low) — Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;
+- **`opensquat`** (low) — Use when you have a brand/keyword and want to catch look-alike phishing `domain`s registered against it — scans newly-registered-domain feed
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
 - **`orb`** (low) — Use when you have a `domain` and want a broad automated footprint — one CLI run gathers WHOIS, subdomains, DNS records, and (active) port/se
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
@@ -395,7 +395,6 @@ kind: group-index
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-cli
 - **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
-- **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu

@@ -17308,38 +17308,53 @@
   },
   {
     "id": "waybackurls",
-    "name": "Waybackurls",
-    "description": "OSINT tool: Waybackurls.",
+    "name": "waybackurls",
+    "description": "Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pages, parameters, exposed files) to mine.",
     "url": "https://github.com/tomnomnom/waybackurls",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Dumping all historically-archived URLs for a domain to find old/hidden pages and parameters.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (tomnomnom); a single Go binary, no account or API key.",
+    "opsec": "passive",
+    "opsecNote": "Reads from the public Wayback Machine index rather than touching the target's live site, so it's low-footprint recon. The query goes to web.archive.org over your IP — route through a sock-puppet/VPN for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely-used, well-known recon utility from tomnomnom; the data is authoritative archive.org content, only as complete as what was crawled.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tomnomnom/waybackurls"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "recon",
+      "wayback",
+      "domain"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "gau"
+    ],
     "_file": "library/tools/ai-analysis-automation/waybackurls.md"
   },
   {
@@ -58068,42 +58083,50 @@
   },
   {
     "id": "shared-count",
-    "name": "Shared Count",
-    "description": "Social URL analytics tool for tracking URL shares, likes and tweets",
-    "url": "http://www.sharedcount.com/",
+    "name": "SharedCount",
+    "description": "Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-URL social-metric numbers to gauge reach.",
+    "url": "https://www.sharedcount.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Measuring how widely a specific URL was shared/engaged with on Facebook and Pinterest.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier ~500 API requests/day after registering for a free API key; paid plans for higher volume. Founded 2010, still operating.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You submit target URLs to SharedCount, which queries the social platforms' public count endpoints — you're not touching the target's account. Queries are tied to your API key/account, so use a sock-puppet registration.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established commercial analytics service; the counts come from platform APIs, whose coverage has shrunk over the years (esp. as Facebook restricted share data), so treat numbers as approximate.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "sharedcount.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "social-metrics"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/shared-count.md"
   },
   {
@@ -59287,24 +59310,29 @@
   {
     "id": "the-time-now",
     "name": "The Time Now",
-    "description": "Tells you what time it is in any location or time zone",
-    "url": "http://www.thetimenow.com/",
+    "description": "Use when you have a `geolocation`/place or timezone and want the exact current local time, date and UTC offset — helps timestamp evidence and align a subject's post times to a real timezone.",
+    "url": "https://www.thetimenow.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting accurate current local time / UTC offset for any city to reconcile timestamps.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public website; no account or payment. Ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up a place's clock, not the subject — nothing about the target is transmitted. Standard sock-puppet browsing hygiene applies but there's no target-facing exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A simple ad-supported world-clock/timezone site; the time/DST data is standard and easily cross-checked against any authoritative time source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -59313,15 +59341,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thetimenow.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "timezone"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/the-time-now.md"
   },
   {
@@ -67275,42 +67306,51 @@
   {
     "id": "dnsreaper",
     "name": "dnsReaper",
-    "description": "TwiSub-domain takeover tool",
+    "description": "Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` names an attacker could claim.",
     "url": "https://github.com/punk-security/dnsReaper",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast subdomain-takeover scanning of a domain against 50+ takeover signatures.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (AGPL-3.0, Punk Security); run via Python or Docker. Fetching records from cloud DNS providers needs your own provider API credentials.",
+    "opsec": "active",
+    "opsecNote": "dnsReaper resolves and probes each candidate subdomain, so it sends live requests to the target's DNS and the third-party services referenced by dangling records. That traffic is attributable — only scan domains you're authorised to test, and use a sock-puppet IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by Punk Security, a known offensive-security firm; open source and widely used in CI pipelines for takeover detection.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "punk-security/dnsReaper"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Subdomains scan/brute"
+      "Subdomains scan/brute",
+      "takeover"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "subfinder"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/dnsreaper.md"
   },
   {
@@ -74909,37 +74949,57 @@
   {
     "id": "ismalicious",
     "name": "isMalicious",
-    "description": "OSINT tool: isMalicious.",
+    "description": "Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+ threat sources — returns malicious/clean scoring plus WHOIS/DNS/SSL enrichment.",
     "url": "https://ismalicious.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "One-stop reputation/threat check of an indicator against hundreds of intel sources.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email",
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free account = 30 checks/month with a free API key (no card); Pro tier ~€99/mo for 10,000 checks. Anonymous users get limited results.",
+    "opsec": "passive",
+    "opsecNote": "You submit the indicator to a third-party aggregator that logs your queries and account; it does not alert the indicator's owner. Use a sock-puppet email/API key and avoid submitting indicators you don't want a vendor to retain.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregates 570+ public/commercial feeds and shows which sources flagged an indicator, so verdicts are traceable; it's a third-party roll-up, not an original source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ismalicious.com"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "reputation",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "virustotal"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/ismalicious.md"
   },
   {
@@ -76985,42 +77045,49 @@
   {
     "id": "miteru",
     "name": "Miteru",
-    "description": "Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables directory listing and contains a phishing kit (compressed file) or not",
+    "description": "Use when you want to hunt live phishing kits — it pulls suspicious `domain` URLs from phishing feeds and flags those exposing a downloadable kit — returning the malicious `domain`s and kit archives.",
     "url": "https://github.com/ninoseki/miteru",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Continuously detecting phishing-kit archives exposed by directory listing on freshly-reported phishing URLs.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT, ninoseki); a Ruby gem. Feeds like urlscan.io are free; heavy use may want your own API keys.",
+    "opsec": "active",
+    "opsecNote": "Miteru visits live phishing URLs to test for directory listing and fetch kit archives, so it makes real requests to attacker infrastructure from your IP. Run it from an isolated sock-puppet/VM environment and treat downloaded kits as malware.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "From ninoseki (author of Mitaka/Mihari), a respected threat-intel toolmaker; explicitly labelled experimental/research-only.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ninoseki/miteru"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "phishing",
+      "threat-intel"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "mihari",
       "mitaka"
@@ -79582,43 +79649,54 @@
   },
   {
     "id": "opensquat",
-    "name": "OPENSQUAT",
-    "description": "Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;",
+    "name": "openSquat",
+    "description": "Use when you have a brand/keyword and want to catch look-alike phishing `domain`s registered against it — scans newly-registered-domain feeds and returns suspicious squatting `domain`s.",
     "url": "https://github.com/atenreiro/opensquat",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting typosquatting/phishing domains impersonating a brand from newly-registered-domain feeds.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Community/core engine is free and open-source (GPLv3, atenreiro). VirusTotal confirmation needs a free VT API key; premium NRD feeds/API need an opensquat.com key.",
+    "opsec": "passive",
+    "opsecNote": "The core keyword scan reads public newly-registered-domain feeds and does not touch the suspect sites, so it's low-footprint. Enabling --vt/--dns queries VirusTotal/Quad9 about the candidates over your IP — expected, but attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source anti-phishing tool; keyword/Levenshtein matching is transparent, but candidate lists need human triage to separate real threats from coincidental names.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "atenreiro/opensquat",
+      "OPENSQUAT"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "phishing",
+      "typosquatting"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "dns-twist"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/opensquat.md"
   },
   {
@@ -84932,50 +85010,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search/spyse.md"
-  },
-  {
-    "id": "spyse-com",
-    "name": "Spyse.com",
-    "description": "domain investigation toolbox",
-    "url": "https://spyse.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "spyse"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/spyse-com.md"
   },
   {
     "id": "sqli-dorks-generator",
@@ -105541,37 +105575,47 @@
   {
     "id": "megatools",
     "name": "Megatools",
-    "description": "The [http://Mega.nz](http://Mega.nz) file exchange contains links to many files, including various databases of leaked data. You can use the megatools command-line tool to automate your work with this file-sharing service.",
-    "url": "https://megous.com/git/megatools",
+    "description": "Use when you have a MEGA.nz link or account and want to list/download its contents from the command line — returns the downloaded files (leak dumps, shared archives) for offline analysis.",
+    "url": "https://megatools.megous.com/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Scripted listing and downloading of MEGA.nz public links and folders (incl. leaked-data dumps).",
+    "selectorsIn": [
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; packaged in most distros (`apt install megatools`, `brew install megatools`). No account needed for public links.",
+    "opsec": "active",
+    "opsecNote": "megadl fetches files from MEGA's servers over your IP; MEGA logs the download. For sensitive/leaked-data links use a sock-puppet IP/VPN, and be mindful of the legal and ethical exposure of downloading breach dumps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing open-source MEGA client (megous.com); distro-packaged and widely used, though extractor behaviour can lag MEGA API changes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "megatools.megous.com",
+      "megadl"
+    ],
     "tags": [
-      "Downloaders"
+      "Downloaders",
+      "mega",
+      "leaks"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/megatools.md"
   },
   {
@@ -105953,42 +105997,52 @@
   },
   {
     "id": "you-get",
-    "name": "You Get",
-    "description": "Universal content downloader: - download video from popular sites like #YouTube or #TikTok - scrape webpages and download images - download binary files and other non-html content from sites",
+    "name": "you-get",
+    "description": "Use when you have a media URL (`social-profile` post, video, image gallery) and want to download the original file as evidence — returns the saved `image`/video with its source intact.",
     "url": "https://github.com/soimort/you-get",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line downloading of videos/images from YouTube, TikTok and 100+ sites for preservation.",
     "selectorsIn": [
+      "social-profile",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT, soimort); a Python CLI, actively maintained. No account needed for public content.",
+    "opsec": "active",
+    "opsecNote": "you-get fetches the media directly from the source platform over your IP, so the download is visible to that platform's logs. Use a sock-puppet IP/VPN and note that logging in for private/age-gated media ties the download to that account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, popular open-source downloader (56k+ stars); extractor reliability varies as sites change their players.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "soimort/you-get"
+    ],
     "tags": [
-      "Downloaders"
+      "Downloaders",
+      "evidence",
+      "video"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
-      "translate-shell"
+      "yt-dlp"
     ],
     "_file": "library/tools/evidence-capture/you-get.md"
   },
@@ -108492,46 +108546,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/edgar-command-line-interface-edgar-tool.md"
-  },
-  {
-    "id": "elliptic",
-    "name": "Elliptic",
-    "description": "OSINT tool: Elliptic.",
-    "url": "https://www.elliptic.co",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/elliptic.md"
   },
   {
     "id": "etherscan",
@@ -283531,38 +283545,52 @@
   },
   {
     "id": "news-now",
-    "name": "News Now",
-    "description": "OSINT tool: News Now.",
-    "url": "http://www.newsnow.co.uk",
+    "name": "NewsNow",
+    "description": "Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped article links to monitor coverage.",
+    "url": "https://www.newsnow.co.uk",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Real-time aggregated news monitoring on a person, company or topic across many outlets.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; optional free sign-in adds personalised \"My Topics\"/\"My Feed\". A paid B2B media-monitoring product (NewsNow Pro) exists but isn't needed for OSINT browsing.",
+    "opsec": "passive",
+    "opsecNote": "You read an aggregator's public feeds; nothing about the subject is sent to them. Sign-in personalisation ties saved topics to an account, so use a sock puppet if you save searches.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established UK news aggregator that links out to original outlets; it curates/links rather than reports, so verify each story at its source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "newsnow.co.uk"
+    ],
     "tags": [
-      "news"
+      "news",
+      "aggregator",
+      "monitoring"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-now.md"
   },
   {
