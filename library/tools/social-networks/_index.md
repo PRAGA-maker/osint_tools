@@ -455,7 +455,7 @@ kind: group-index
 - **`reddit-user-extractor`** (medium) — Use when you have a Reddit `username` and want their full comment/post history offline — returns a CSV of comments (id, subreddit, date, bod
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
 - **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
-- **`redditery`** (low) — Explore Reddit posts and comments by criteria.
+- **`redditery`** (low) — Use when you have a subreddit or topic and want a fast full-screen gallery interface to browse Reddit content — returns an image/media-forwa
 - **`redditle-com`** (medium) — Use when you have a `username`, `name`, or topic and want to search Reddit cleanly — returns Reddit posts, comments, and social-profile lead
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
 - **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence

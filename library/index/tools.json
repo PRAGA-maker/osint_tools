@@ -5392,37 +5392,53 @@
   {
     "id": "ghostery",
     "name": "Ghostery",
-    "description": "OSINT tool: Ghostery.",
+    "description": "Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks tracking on your own investigation browsing.",
     "url": "https://www.ghostery.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Enumerating the trackers/analytics a site loads (for fingerprinting/attribution) and blocking tracking during OSINT browsing.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (Chrome/Firefox/Edge/Safari); an optional paid privacy suite exists but the tracker-blocker is free.",
+    "opsec": "passive",
+    "opsecNote": "Defensive/observational — it inspects and blocks trackers in YOUR browser. Enabling it on investigation browsing reduces the trackers that fingerprint you. When used to enumerate a site's trackers, you're just loading a public page; nothing extra is sent to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Well-known, open-source anti-tracking extension with a long track record; the tracker list is transparent and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Ghostery",
+      "ghostery.com"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy",
+      "trackers",
+      "browser-extension",
+      "anti-tracking"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ghostery.md"
   },
   {
@@ -14180,40 +14196,54 @@
   {
     "id": "sitesucker",
     "name": "SiteSucker",
-    "description": "OSINT tool: SiteSucker.",
+    "description": "Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, images, PDFs and files with structure intact.",
     "url": "http://ricks-apps.com/osx/sitesucker/index.html",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Mirroring an entire website locally (pages, images, documents) for offline review and evidence preservation.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Standard SiteSucker is free on the Mac App Store; SiteSucker Pro (embedded-video and Tor support) is paid with a 14-day trial. macOS only.",
+    "opsec": "active",
+    "opsecNote": "SiteSucker downloads from YOUR machine/IP, crawling the target site directly — the target's server sees and can log the crawl (many requests from your address). Throttle the download, respect robots where appropriate, and consider Tor (Pro) or a VPN when the crawl should not trace back to you. Only mirror sites you're authorized to archive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-established, widely-used macOS site-downloader (Rick Cranisky); mature and reliable, distributed via the Mac App Store.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "offline-browsing"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "ricks-apps-com"
     ],
+    "aliases": [
+      "SiteSucker"
+    ],
+    "tags": [
+      "website-mirror",
+      "offline-copy",
+      "macos",
+      "evidence-capture"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sitesucker.md"
   },
   {
@@ -15044,49 +15074,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/virtual-machines/subgraph-os.md"
-  },
-  {
-    "id": "surveilliance-self-defense",
-    "name": "Surveilliance Self Defense",
-    "description": "OSINT tool: Surveilliance Self Defense.",
-    "url": "https://ssd.eff.org",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "coveryourtracks-eff-org",
-      "electronic-frontier-foundation-eff-tools",
-      "https-everywhere",
-      "panopticlick",
-      "privacy-badger"
-    ],
-    "_file": "library/tools/ai-analysis-automation/surveilliance-self-defense.md"
   },
   {
     "id": "tableau-public",
@@ -20308,42 +20295,59 @@
   },
   {
     "id": "lumen",
-    "name": "Lumen",
-    "description": "A research project collecting and publishing legal takedown notices for online content transparency",
+    "name": "Lumen Database",
+    "description": "Use when you have a `domain`, URL, or company/person `name` and want to find legal takedown notices (DMCA, court orders) filed against online content — returns the notices, who complained, and what URLs were targeted.",
     "url": "https://lumendatabase.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering what content someone tried to remove from the internet (and who filed the request) via published takedown notices.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public research database (Harvard Berkman Klein Center); a free API/registration is available for bulk access.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — searching an archive of already-published legal notices. Nothing touches your subject and no one is notified. Some personal details in notices are redacted by Lumen; treat what remains as public record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running academic transparency project (Harvard's Berkman Klein Center, formerly Chilling Effects); notices are primary-source documents submitted by platforms.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "archiving"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "copyright-search"
     ],
+    "aliases": [
+      "Lumen",
+      "Chilling Effects",
+      "lumendatabase.org"
+    ],
+    "tags": [
+      "takedown",
+      "dmca",
+      "transparency",
+      "archive"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/lumen.md"
   },
   {
@@ -51702,37 +51706,50 @@
   {
     "id": "filesec-io",
     "name": "Filesec.io",
-    "description": "OSINT tool: Filesec.io.",
+    "description": "Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSes are affected — returns per-extension attack context and defenses.",
     "url": "https://filesec.io/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Reference lookup of a file extension's known malicious uses and which platforms it can attack.",
+    "selectorsIn": [
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public knowledge base; community-contributed, no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you read a static reference site; you never upload the file itself, so nothing about your sample or subject leaves your machine. It explains the file type; it does not analyze your specific file.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open community reference in the style of GTFOBins/LOLBAS; curated by security practitioners, so entries are informative but community-maintained.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Filesec.io",
+      "filesec"
+    ],
     "tags": [
-      "file-search"
+      "file-extensions",
+      "malware",
+      "attack-reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/filesec-io.md"
   },
   {
@@ -57688,25 +57705,30 @@
   },
   {
     "id": "screenshot-guru",
-    "name": "Screenshot Guru",
-    "description": "Website that provides screen capture capability, taking screenshots of full webpages via a URL",
+    "name": "Screenshot.guru",
+    "description": "Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `image` of the rendered page.",
     "url": "https://screenshot.guru",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Capturing a clean, full-length, high-resolution screenshot of a public web page from just its URL.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "active",
+    "opsecNote": "Screenshot.guru renders the target page from ITS OWN servers, so your IP doesn't hit the target — but the page is actually fetched and can log a visit from the service. It cannot capture login-walled or heavily-dynamic (AJAX/Flash) pages. Preserve the source URL and capture time yourself for provenance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple, long-available hosted screenshot service (by the Digital Inspiration/Labnol author); reliable for public static pages within its stated limits.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -57715,15 +57737,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "screenshot.guru"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "screenshot",
+      "evidence-capture",
+      "full-page"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/screenshot-guru.md"
   },
   {
@@ -74360,29 +74387,34 @@
   {
     "id": "ipv6-cidr-report",
     "name": "IPv6 CIDR Report",
-    "description": "IPv6 CIDR block analysis",
+    "description": "Use when you have an `ip-address` (IPv6) or ASN and want to understand the global IPv6 routing table — returns per-AS IPv6 prefix allocations and aggregation data.",
     "url": "https://www.cidr-report.org/v6/as2.0/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ipv6"
     ],
-    "bestFor": "IPv6 CIDR block analysis",
-    "input": "IPv6 CIDR block",
-    "output": "IPv6 ranges, subnet breakdown",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mapping which autonomous system announces an IPv6 prefix and how the global IPv6 routing table is aggregated.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free long-running public BGP-analysis report; no account needed.",
     "opsec": "passive",
-    "opsecNote": "Passive analysis of IPv6 allocation data.",
+    "opsecNote": "Fully passive — you read a periodically-generated report built from public BGP data. No target is contacted and nothing is logged against your subject. This is routing-table intelligence, not host contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Geoff Huston / APNIC, a foundational and widely-cited source for BGP routing-table analysis.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -74392,11 +74424,19 @@
     "relatedTools": [
       "ipv4-cidr-report"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CIDR Report IPv6",
+      "cidr-report.org"
+    ],
+    "tags": [
+      "bgp",
+      "ipv6",
+      "routing",
+      "asn"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipv6/ipv6-cidr-report.md"
   },
   {
@@ -166966,25 +167006,26 @@
   },
   {
     "id": "account-killer",
-    "name": "Account Killer",
-    "description": "Website providing information on how to delete accounts on various social media and people finder platforms",
+    "name": "AccountKiller",
+    "description": "Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for deleting accounts, useful both for OpSec cleanup and understanding a platform's account model.",
     "url": "https://www.accountkiller.com/en/home",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A directory of step-by-step account-deletion guides and direct removal links for hundreds of social and people-search sites.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free community reference directory; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reference — you read deletion instructions; nothing is queried about a target. Its main investigator value is OpSec hygiene (removing your own personas/footprint) and understanding how a given people-search or social site handles accounts and removals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing crowd-maintained directory of deletion instructions; links can drift as sites change their settings pages, so verify against the live platform.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -166992,19 +167033,25 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "accountkiller-com"
     ],
+    "aliases": [
+      "AccountKiller",
+      "accountkiller.com"
+    ],
+    "tags": [
+      "toddington",
+      "account-deletion",
+      "opsec",
+      "privacy"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/account-killer.md"
   },
   {
@@ -324309,28 +324356,29 @@
   {
     "id": "redditery",
     "name": "Redditery",
-    "description": "Explore Reddit posts and comments by criteria.",
+    "description": "Use when you have a subreddit or topic and want a fast full-screen gallery interface to browse Reddit content — returns an image/media-forward view of subreddit posts.",
     "url": "http://www.redditery.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Browsing Reddit content with custom filters",
+    "bestFor": "Quickly skimming a subreddit's image/media posts in a distraction-free gallery layout.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool (also a Chrome extension); no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive from Reddit's side — it just renders public subreddit content via Reddit's data, so browsing does not notify anyone. Use a sock-puppet/logged-out browser as normal; you're viewing public posts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small long-lived third-party Reddit gallery front-end (by Maxime Simon); it re-displays public Reddit content, so reliability tracks Reddit's public data availability.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -324339,14 +324387,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Redditery",
+      "redditery.com"
+    ],
     "tags": [
       "reddit",
-      "browser"
+      "gallery",
+      "social"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/redditery.md"
   },
   {

@@ -106,7 +106,7 @@ kind: group-index
 - **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 
 - **`fide`** (low) — World chess player ratings website
 - **`fifa`** (low) — Football team rankings website
-- **`filesec-io`** (low) — OSINT tool: Filesec.io.
+- **`filesec-io`** (low) — Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSe
 - **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
@@ -217,7 +217,7 @@ kind: group-index
 - **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi
 - **`scoop-it`** (low) — Publishing content services website
 - **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
-- **`screenshot-guru`** (low) — Website that provides screen capture capability, taking screenshots of full webpages via a URL
+- **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
 - **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
 - **`shared-count`** (low) — Social URL analytics tool for tracking URL shares, likes and tweets

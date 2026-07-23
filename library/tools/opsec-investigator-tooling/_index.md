@@ -19,7 +19,7 @@ kind: group-index
 - **`9-steps-to-security-in-the-digital-age`** (low) — Online privacy guide to security in the digital age
 - **`aba-generator`** (low) — OSINT tool: ABA Generator.
 - **`abine-blur-app`** (low) — Secure personal information you put online such as passwords, payments, etc.
-- **`account-killer`** (low) — Website providing information on how to delete accounts on various social media and people finder platforms
+- **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
 - **`adblock-extension-chrome`** (low) — Add-on for Google Chrome that blocks Youtube and Facebook video ads
 - **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking
 - **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files

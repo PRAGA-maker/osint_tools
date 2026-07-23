@@ -149,7 +149,7 @@ kind: group-index
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
 - **`geekflare-tools`** (low) — 39 online free tools for website testing
 - **`gephi`** (low) — OSINT tool: Gephi.
-- **`ghostery`** (low) — OSINT tool: Ghostery.
+- **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
 - **`gitguardian-public-github-monitoring`** (low) — OSINT tool: GitGuardian - Public GitHub Monitoring.
 - **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
@@ -349,7 +349,7 @@ kind: group-index
 - **`shrewdeye`** (low) — Online versions of popular command line #osint tools: Amass, SubFinder, AssetFinder, GAU, DNSX
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sintelix`** (low) — OSINT tool: Sintelix.
-- **`sitesucker`** (low) — OSINT tool: SiteSucker.
+- **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
 - **`skopenow`** (low) — OSINT tool: Skopenow.
 - **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
 - **`sn0int`** (low) — OSINT tool: sn0int.
@@ -368,7 +368,6 @@ kind: group-index
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
 - **`storymap`** (low) — OSINT tool: StoryMap.
 - **`sub3-suite`** (low) — OSINT tool: Sub3 Suite.
-- **`surveilliance-self-defense`** (low) — OSINT tool: Surveilliance Self Defense.
 - **`tableau-public`** (low) — OSINT tool: Tableau Public.
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
