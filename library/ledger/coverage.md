@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7488 total · 4837 full · 2651 stub (64% enriched)
+**Tools:** 7487 total · 4846 full · 2641 stub (64% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3554 · medium: 1970 · high: 1964
+low: 3553 · medium: 1970 · high: 1964
 
 ## Tools by trust
-community: 3505 · unverified: 2339 · trusted: 1635 · untrustworthy: 6 · personal: 3
+community: 3502 · unverified: 2334 · trusted: 1642 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -19,24 +19,24 @@ community: 3505 · unverified: 2339 · trusted: 1635 · untrustworthy: 6 · pers
 - `communities-forums` — 237/288
 - `dark-web` — 40/109
 - `dating-classifieds` — 78/90
-- `documents-metadata` — 66/304
-- `domains-ip-infrastructure` — 199/688
+- `documents-metadata` — 68/304
+- `domains-ip-infrastructure` — 201/688
 - `email` — 245/246
 - `evidence-capture` — 12/29
-- `financial-crypto` — 55/109
+- `financial-crypto` — 56/109
 - `geolocation` — 291/340
 - `image-video-face` — 440/452
-- `maps-geospatial-data` — 73/123
+- `maps-geospatial-data` — 74/123
 - `messaging` — 178/184
 - `opsec-investigator-tooling` — 65/548
-- `people-search` — 256/258
+- `people-search` — 256/257
 - `phone` — 134/137
-- `public-records` — 862/1010
-- `search-engines` — 496/783
+- `public-records` — 863/1010
+- `search-engines` — 497/783
 - `social-networks` — 723/786
 - `training-ctf` — 5/12
 - `translation-language` — 23/101
-- `transportation` — 124/211
+- `transportation` — 125/211
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -51,7 +51,7 @@ community: 3505 · unverified: 2339 · trusted: 1635 · untrustworthy: 6 · pers
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 285 leaves
 - `library/tools/documents-metadata` — 257 leaves
-- `library/tools/people-search` — 248 leaves
+- `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves
 - `library/tools/messaging` — 169 leaves

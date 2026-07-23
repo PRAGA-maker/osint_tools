@@ -53257,41 +53257,53 @@
   {
     "id": "hybrid-analysis",
     "name": "Hybrid Analysis",
-    "description": "Advanced malware behavior analysis and evasion detection",
+    "description": "Use when you have a suspicious file/URL or a file hash and want a behavioural malware report — returns sandbox verdict, IOCs, and related samples.",
     "url": "https://hybrid-analysis.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Advanced malware behavior analysis and evasion detection",
-    "input": "Files (30MB max free tier), URLs, APKs (up to 30 per month free)",
-    "output": "Hybrid behavioral analysis, memory dumps, disassembly, IOC extraction, behavioral indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Detonating a suspicious document/executable/URL in a free sandbox, or searching an existing hash for its behavioural report and IOCs.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search existing reports and submit files (free tier caps uploads, ~limited submissions/month, 30 MB files). A free CrowdStrike/HA account and API key unlock more. Heavy/commercial use is paid.",
     "opsec": "active",
-    "opsecNote": "Free tier limited to 30 uploads/month; file uploads to external sandbox infrastructure",
+    "opsecNote": "Submitting a file or URL is ACTIVE and consequential — the sample (and any secrets or victim data inside it) is uploaded to third-party infrastructure and often becomes searchable by other analysts. If a target could be watching, detonating their URL can tip them off. Prefer *searching by hash* first; only upload when you accept the exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CrowdStrike (Falcon Sandbox); a mainstream, reputable malware-analysis service widely used by SOCs and researchers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Falcon Sandbox",
+      "HA",
+      "hybrid-analysis.com"
+    ],
+    "tags": [
+      "malware-sandbox",
+      "ioc-extraction",
+      "threat-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/hybrid-analysis.md"
   },
   {
@@ -59591,7 +59603,7 @@
   {
     "id": "tylabs-quicksand-framework",
     "name": "TYLabs QuickSand Framework",
-    "description": "Document and PDF malware analysis with exploit detection",
+    "description": "Use when you have a suspicious Office document/PDF and want exploit/malware detection — returns YARA matches, embedded-exploit findings, and extracted payloads.",
     "url": "https://scan.tylabs.com/",
     "category": "documents-metadata",
     "path": [
@@ -59599,34 +59611,45 @@
       "hosted-automated-analysis",
       "office-files"
     ],
-    "bestFor": "Document and PDF malware analysis with exploit detection",
-    "input": "Office documents (.doc, .xls, .ppt), PDFs, emails, Postscript",
-    "output": "YARA signature matches, exploit detection, risk scoring, threat analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Static analysis of malicious documents (Office, PDF, email) to detect exploits, obfuscation, and embedded active content.",
+    "selectorsIn": [
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "The QuickSand engine is free and open source (quicksand.io) and runs offline locally; the hosted scan.tylabs.com service is free to use but involves uploading files.",
     "opsec": "active",
-    "opsecNote": "Hosted analysis requires file upload; local installation available for offline use",
+    "opsecNote": "The hosted scanner requires uploading the document to third-party infrastructure — do NOT upload confidential/PII-laden documents there. For sensitive material, run the open-source QuickSand library locally, which is passive and offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source document-forensics tool by tylabs (QuickSand); auditable and used in malware-analysis workflows, though a smaller project than mainstream sandboxes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "QuickSand",
+      "quicksand.io",
+      "scan.tylabs.com"
+    ],
+    "tags": [
+      "document-malware",
+      "exploit-detection",
+      "yara"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/office-files/tylabs-quicksand-framework.md"
   },
   {
@@ -65768,42 +65791,50 @@
   {
     "id": "cve-binary-tool",
     "name": "CVE Binary Tool",
-    "description": "#Python tool to find known vulnerabilities in software, using data from the NVD), list of CVEs, Redhat, OSV and GAD. 200+ checkers in one tool",
+    "description": "Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with severities.",
     "url": "https://github.com/intel/cve-bin-tool",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Scanning binaries/SBOMs to enumerate known CVEs in bundled components, using 200+ built-in checkers.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Intel, GPL). pip-installable; pulls public vulnerability data (an optional free NVD API key speeds updates).",
+    "opsec": "passive",
+    "opsecNote": "Scans files you already have, locally — the only network traffic is fetching public CVE databases, never anything to a target. Fully passive with respect to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Intel as an active open-source project with a large contributor base; auditable source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "cve-bin-tool",
+      "CVE Binary Tool"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "vulnerabilities",
+      "sbom",
+      "binary-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cve-binary-tool.md"
   },
   {
@@ -82998,43 +83029,57 @@
   {
     "id": "shadowserver-foundation",
     "name": "Shadowserver Foundation",
-    "description": "IP/domain reputation and abuse intelligence",
+    "description": "Use when you have a `domain`/`ip-address` or a network you're authorized over and want abuse/exposure intelligence — returns reputation, malicious activity, and exposed-service reports.",
     "url": "https://www.shadowserver.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "domain-blacklists"
     ],
-    "bestFor": "IP/domain reputation and abuse intelligence",
-    "input": "IP address or domain",
-    "output": "Reputation reports, blocklists, abuse intelligence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative, non-profit abuse and exposure intelligence on IPs/domains, plus free daily network reports for networks you own.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Non-profit; core data and reports are free. Detailed victim/network reports are provided free to the verified owner of a network/CIDR or a national CSIRT (subscription with proof of authority).",
     "opsec": "passive",
-    "opsecNote": "Passive intelligence from honeypots and network sensors; no active scanning",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Shadowserver's data comes from its own honeypots, sinkholes, and internet-wide scanning — you query their datasets, not the target, so the subject is not alerted. Free network reports require you to prove authority over the network you're asking about.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, respected non-profit security organisation working with CSIRTs and law enforcement worldwide; data is high-quality and mission-driven.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "shadowserver"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Shadowserver",
+      "shadowserver.org"
+    ],
+    "tags": [
+      "threat-intel",
+      "abuse-intelligence",
+      "exposed-services"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/shadowserver-foundation.md"
   },
   {
@@ -109604,44 +109649,58 @@
   {
     "id": "rupep",
     "name": "RuPEP",
-    "description": "Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.",
+    "description": "Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `associate` links.",
     "url": "https://rupep.org/en/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling politically exposed persons (PEPs) and their networks across Russia, Belarus, Kazakhstan and Kyrgyzstan.",
     "selectorsIn": [
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
+      "associate",
       "employer-org",
-      "associate"
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read profiles; structured data is also available as a dataset/API (used by OpenSanctions and others).",
+    "opsec": "passive",
+    "opsecNote": "You read a public database; the subject is not notified and no query is tied to a target beyond RuPEP's own logs. Downloading the dataset and searching locally leaks nothing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-regarded investigative PEP database, referenced by Bellingcat and integrated into OpenSanctions; sources are documented per profile.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ru",
+      "by",
+      "kz",
+      "kg"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RuPEP",
+      "rupep.org",
+      "Russian PEP database"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
+      "pep",
+      "politically-exposed-persons",
+      "due-diligence",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/rupep.md"
   },
   {
@@ -152570,13 +152629,13 @@
   {
     "id": "google-earth-engine",
     "name": "Google Earth Engine",
-    "description": "Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.",
+    "description": "Use when you have a `geolocation`/area and want to analyze satellite imagery over time — returns processed multi-source imagery, indices, and change detection.",
     "url": "https://code.earthengine.google.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Planetary-scale analysis of decades of satellite imagery (Landsat, Sentinel) for change detection, dating events, and land-cover analysis.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -152584,29 +152643,41 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free for research, education, and non-commercial use (requires signing up and being approved for a free Earth Engine account); commercial use is paid. The Code Editor and Python/JS APIs are the free access points.",
+    "opsec": "passive",
+    "opsecNote": "You analyze archived satellite imagery on Google's servers — nothing touches the ground location or any subject. Your scripts/account are visible to Google; use a research account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's established geospatial-analysis platform, drawing on authoritative public imagery archives (USGS/ESA); widely used by researchers and Bellingcat-listed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "GEE",
+      "Earth Engine",
+      "code.earthengine.google.com"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
+      "satellite-imagery",
+      "change-detection",
+      "remote-sensing",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/google-earth-engine.md"
   },
   {
@@ -202544,54 +202615,6 @@
     "_file": "library/tools/people-search/zabasearch.md"
   },
   {
-    "id": "zer0sint",
-    "name": "zer0sint",
-    "description": "Tool to uncover and examine publicly accessible information.",
-    "url": "https://github.com/0giv/zer0sint",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "General public-info lookups across selectors",
-    "selectorsIn": [
-      "username",
-      "email",
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "email",
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "community",
-    "trustNote": "Small community OSINT tool (16 stars).",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "multi-tool",
-      "public-info"
-    ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/zer0sint.md"
-  },
-  {
     "id": "zintro",
     "name": "Zintro",
     "description": "Use when you have a `name` and want to check for an expert/consultant profile — Zintro is an expert-network marketplace whose profiles sometimes surface a subject's specialty and bio.",
@@ -228596,42 +228619,53 @@
   {
     "id": "globaledge-database-of-international-business-statistics",
     "name": "globalEDGE Database of International Business Statistics",
-    "description": "OSINT tool: globalEDGE Database of International Business Statistics.",
-    "url": "http://globaledge.msu.edu/tools-and-data/dibs",
+    "description": "Use when you have a country/`geolocation` and want economic/trade indicators — returns comparable international business statistics by country and metric.",
+    "url": "https://globaledge.msu.edu/tools-and-data/dibs",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Comparable country-level economic, trade, and business statistics for context and cross-country comparison.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free resource from Michigan State University (globalEDGE). Free registration may be prompted for building custom statistic sets.",
+    "opsec": "passive",
+    "opsecNote": "You read public aggregate statistics; no target is contacted and nothing is tied to an individual. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Michigan State University's International Business Center, aggregating data from sources like the World Bank, IMF, and UN; academic, reputable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "globaledge",
+      "global-edge-resource-directory",
+      "central-and-eastern-european-business-directory"
+    ],
+    "aliases": [
+      "globalEDGE DIBS",
+      "Database of International Business Statistics",
+      "MSU globalEDGE"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "economic-indicators",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "central-and-eastern-european-business-directory",
-      "global-edge-resource-directory",
-      "globaledge"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/globaledge-database-of-international-business-statistics.md"
   },
   {
@@ -287803,42 +287837,57 @@
   {
     "id": "pubmed",
     "name": "PubMed",
-    "description": "OSINT tool: PubMed.",
-    "url": "http://www.ncbi.nlm.nih.gov/pubmed",
+    "description": "Use when you have a researcher/clinician `name` or `employer-org` and want their biomedical publications — returns papers, affiliations, and co-author `associate`s.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's biomedical/scientific publications, their institutional affiliations, and their co-author network.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free U.S. National Library of Medicine service. No account needed; the E-utilities API is free.",
+    "opsec": "passive",
+    "opsecNote": "You search a public government literature database; nothing is sent to the subject and searches aren't tied to any target beyond NCBI's logs. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. National Library of Medicine (NIH); the authoritative index of biomedical literature.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "national-center-for-biotechnology",
       "openi-nlm-nih-gov",
       "pubmed-national-center-for-biotechnology-information"
     ],
+    "aliases": [
+      "PubMed",
+      "NCBI PubMed",
+      "MEDLINE"
+    ],
+    "tags": [
+      "academic-resources",
+      "grey-literature",
+      "biomedical"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/pubmed.md"
   },
   {
@@ -355248,38 +355297,53 @@
   {
     "id": "zugfinder",
     "name": "ZugFinder",
-    "description": "Detailed information on trains, stations and real-time train traffic for European countries",
+    "description": "Use when you have a train number/route/station and want live position and delay history — returns real-time train location, delays, and historical punctuality.",
     "url": "https://www.zugfinder.net/en/start",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Live tracking and historical delay/position data for long-distance trains across Germany and neighbouring European countries.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for live tracking and ~30 days of delay history. \"Zugfinder Pro\" (paid) unlocks up to 2 years of historical data.",
+    "opsec": "passive",
+    "opsecNote": "You read a public train-tracking site; nothing identifies who you're researching and no target is contacted. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent European rail-tracking site fed by public timetable/positioning data; not an official operator source but well-established.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "de",
+      "at",
+      "it",
+      "dk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "zugfinder.net",
+      "Zugfinder Pro"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Railway"
+      "railway",
+      "transport",
+      "train-tracking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/zugfinder.md"
   },
   {

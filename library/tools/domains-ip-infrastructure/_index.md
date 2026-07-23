@@ -123,7 +123,7 @@ kind: group-index
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
 - **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
-- **`cve-binary-tool`** (low) — #Python tool to find known vulnerabilities in software, using data from the NVD), list of CVEs, Redhat, OSV and GAD. 200+ checkers in one to
+- **`cve-binary-tool`** (low) — Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with se
 - **`cve-map`** (low) — Simple #go command line tool for getting information about CVEs: by ID, by vendor, by product, by severity, by cvss score and much more.
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
 - **`dark-web-informer`** (low) — OSINT tool: Dark Web Informer.

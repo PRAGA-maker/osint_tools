@@ -358,7 +358,7 @@ kind: group-index
 - **`gla-gov-uk`** (high) — Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed bus
 - **`glassdoor`** (medium) — Use when you have an `employer-org` (or a person's employer) and want inside detail — returns salaries, reviews, interview accounts, and occ
 - **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.
-- **`globaledge-database-of-international-business-statistics`** (low) — OSINT tool: globalEDGE Database of International Business Statistics.
+- **`globaledge-database-of-international-business-statistics`** (low) — Use when you have a country/`geolocation` and want economic/trade indicators — returns comparable international business statistics by count
 - **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
 - **`gogettr`** (low) — Use when you have a GETTR `username`, hashtag or post and want to archive its data — a Python client pulling posts, comments, followers and 

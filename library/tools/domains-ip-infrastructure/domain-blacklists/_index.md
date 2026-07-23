@@ -12,7 +12,7 @@ kind: group-index
 - **`dns-sinkhole`** (low) — DNS-based malware blocking
 - **`malwareurl`** (low) — Use when you have a `domain`, `ip-address`, or URL and want to check whether it is flagged as malicious — returns a reputation/threat classi
 - **`scumware-org`** (low) — Malware and spyware domain research
-- **`shadowserver-foundation`** (low) — IP/domain reputation and abuse intelligence
+- **`shadowserver-foundation`** (low) — Use when you have a `domain`/`ip-address` or a network you're authorized over and want abuse/exposure intelligence — returns reputation, mal
 - **`zeus-c2-tracker`** (low) — Zeus botnet C2 blocking
 - **`zeus-tracker`** (low) — Zeus botnet tracking and blocking
 

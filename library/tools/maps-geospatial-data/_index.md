@@ -47,7 +47,7 @@ kind: group-index
 - **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
 - **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
-- **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
+- **`google-earth-engine`** (low) — Use when you have a `geolocation`/area and want to analyze satellite imagery over time — returns processed multi-source imagery, indices, an
 - **`google-flood-hub`** (low) — Use when you have a `geolocation`/`address` on a river and want current flood conditions and AI forecasts — returns river-level status and f
 - **`gosur-map`** (low) — Use when you have an `address` or `geolocation` and want satellite/aerial imagery of it with extras like live cams and weather — returns a s
 - **`govmap`** (low) — Use when you have an `address`/`geolocation` in Israel and want official parcel, planning, and imagery data — returns cadastral boundaries, 

@@ -249,7 +249,6 @@ kind: group-index
 - **`yasni-2`** (high) — Use when you have a `name` and want an aggregated web/people profile — links, mentions, and contact leads pulled from across the open web — 
 - **`zaba-search`** (high) — Use when you have a US `name` (or phone) and want free current/past addresses and phone numbers — returns address, phone, age and links to f
 - **`zabasearch`** (high) — Use when you have a US `name` and want a free first-pass people search — returns current/prior `address`, `phone`, and approximate `dob`/age
-- **`zer0sint`** (low) — Tool to uncover and examine publicly accessible information.
 - **`zintro`** (medium) — Use when you have a `name` and want to check for an expert/consultant profile — Zintro is an expert-network marketplace whose profiles somet
 - **`ziprecruiter`** (medium) — Use when you have a `name` and want employment/job-history leads — returns candidate resumes, job-seeker profiles and employer context from 
 

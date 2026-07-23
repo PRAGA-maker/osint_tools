@@ -519,7 +519,7 @@ kind: group-index
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
-- **`pubmed`** (low) — OSINT tool: PubMed.
+- **`pubmed`** (low) — Use when you have a researcher/clinician `name` or `employer-org` and want their biomedical publications — returns papers, affiliations, and
 - **`pytrends`** (low) — Use when you want to pull Google Trends data programmatically for a term/`name`/topic — returns interest-over-time, regional interest and re
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
