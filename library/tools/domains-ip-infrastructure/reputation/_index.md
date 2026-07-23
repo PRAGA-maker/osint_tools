@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/reputation
 
 ## Skills here
-- **`alienvault-open-threat-exchange`** (low) — Community threat intelligence sharing
+- **`alienvault-open-threat-exchange`** (low) — Use when you have an `ip-address`, `domain`, URL, or file hash and want community threat-intel context — returns pulses and IOCs showing whe
 - **`bluecoat-webpulse`** (low) — URL categorization, website reputation filtering, malicious link detection
 - **`cisco-talos`** (low) — IP/domain reputation intelligence
 - **`deepviz-domain-search`** (low) — Domain/IP threat intelligence, malware analysis, threat feed subscription

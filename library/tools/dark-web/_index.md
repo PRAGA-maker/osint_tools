@@ -54,7 +54,7 @@ kind: group-index
 - **`hidden-guns`** (low) — OSINT tool: Hidden Guns.
 - **`honor-guns`** (low) — OSINT tool: Honor Guns.
 - **`human-trafficking-search`** (medium) — Use when a case has a trafficking dimension and you need vetted research, country reports, and NGO/resource context — returns background doc
-- **`i2p-invisible-internet-project`** (low) — OSINT tool: I2P - Invisible Internet Project.
+- **`i2p-invisible-internet-project`** (low) — Use when an investigation touches I2P "eepsites"/services and you need to access or understand this anonymity network — the client software 
 - **`iaca-dark-web-investigation-support`** (medium) — Use when you have a `username`, `name`, `crypto-wallet`, or keyword and want vetted Tor search engines and marketplace directories to run it
 - **`inmates-plus`** (high) — Use when you have a `name` and want to check whether someone is or was incarcerated in a US state or county facility — returns `address` (fa
 - **`international-organization-for-standardization-catalogue`** (medium) — Use when you have an `employer-org` or a standard number and want to confirm which ISO standards apply/are cited — returns `document-id` sta

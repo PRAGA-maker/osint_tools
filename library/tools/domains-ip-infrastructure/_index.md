@@ -212,7 +212,7 @@ kind: group-index
 - **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse
 - **`hussh`** (low) — shell script for domain analyzing
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
-- **`hypestat`** (low) — OSINT tool: HypeStat.
+- **`hypestat`** (low) — Use when you have a `domain` and want a free at-a-glance stats sheet — returns estimated traffic, hosting/`ip-address`, tech, and analytics/
 - **`iana-root-zone-database`** (low) — OSINT tool: IANA — Root Zone Database.
 - **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.

@@ -13,7 +13,7 @@ kind: group-index
 - **`keyword-density`** (low) — On-page keyword frequency analysis
 - **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
 - **`sitedossier`** (low) — Quick domain intelligence aggregation
-- **`siteliner`** (low) — Duplicate-content and link-health audits
+- **`siteliner`** (low) — Use when you have a `domain` and want a content/link audit — returns duplicate-content matches, broken links and page inventory for the site
 - **`sitesleuth`** (low) — Tracking code intelligence and related domain discovery
 - **`spyonweb`** (low) — Finding related infrastructure via shared IDs
 - **`statscrop`** (low) — Quick website popularity snapshots

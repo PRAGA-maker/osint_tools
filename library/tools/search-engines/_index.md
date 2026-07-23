@@ -278,7 +278,7 @@ kind: group-index
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
-- **`google-news`** (low) — OSINT tool: Google News.
+- **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
 - **`google-safesearch-filter`** (low) — Google safesearch settings
 - **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
 - **`google-search`** (low) — OSINT tool: Google Search.
@@ -351,7 +351,6 @@ kind: group-index
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
-- **`kagi-search`** (low) — OSINT tool: Kagi Search.
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
 - **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
@@ -524,7 +523,7 @@ kind: group-index
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co
 - **`pubmed`** (low) — OSINT tool: PubMed.
-- **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.
+- **`pytrends`** (low) — Use when you want to pull Google Trends data programmatically for a term/`name`/topic — returns interest-over-time, regional interest and re
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
