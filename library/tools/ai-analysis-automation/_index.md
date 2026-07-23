@@ -34,7 +34,7 @@ kind: group-index
 - **`ashok`** (low) — Swiff knife for #osint
 - **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
 - **`aware-online-com`** (low) — OSINT tool: Aware-online.com.
-- **`awesome-anti-forensic`** (low) — OSINT tool: awesome-anti-forensic.
+- **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — OSINT tool: awesome-ctf.
 - **`awesome-forensics`** (low) — OSINT tool: awesome-forensics.
 - **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes

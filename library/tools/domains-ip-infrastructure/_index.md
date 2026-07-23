@@ -433,7 +433,7 @@ kind: group-index
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
 - **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
 - **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo
-- **`udon`** (low) — #go tool to find assets/domains based by Google Analytics ID
+- **`udon`** (low) — Use when you have a `domain` and want other sites run by the same owner via a shared Google Analytics/AdSense ID — returns sibling `domain`s
 - **`umatrix`** (low) — Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, track
 - **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
 - **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom

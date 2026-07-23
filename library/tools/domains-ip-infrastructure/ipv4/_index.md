@@ -12,7 +12,7 @@ kind: group-index
 - **`ip-to-asn-db`** (low) — Use when you have an `ip-address` and want the ASN, network prefix and owning organization it belongs to — returns the ASN, prefix and org (
 - **`ipv4-cidr-report`** (low) — CIDR block analysis and subnet enumeration
 - **`onyphe`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, certificates and passive-DNS history — returns infr
-- **`port-scanner-online`** (low) — Quick port availability checks
+- **`port-scanner-online`** (low) — Use when you have an `ip-address` or `domain` and want to know which ports/services are open without scanning from your own IP — returns ope
 - **`reverse-report`** (low) — Reverse IP and domain lookups
 - **`team-cymru-ip-to-asn`** (low) — IP to ASN mapping
 

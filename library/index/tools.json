@@ -737,37 +737,49 @@
   {
     "id": "awesome-anti-forensic",
     "name": "awesome-anti-forensic",
-    "description": "OSINT tool: awesome-anti-forensic.",
+    "description": "Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and which analysis tools counter it. Reference, not an analyzer.",
     "url": "https://github.com/remiflavien1/awesome-anti-forensic",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A curated reference of anti-forensic tools and techniques (data hiding, wiping, spoofing, anti-analysis).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open \"awesome list\" on GitHub; no account, no cost.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of a public GitHub list. Nothing is run and nothing about a case is transmitted. The tools it links are dual-use — study them to recognise evasion, and use any offensively only within your authority.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-curated GitHub awesome-list; it aggregates third-party tools it did not author, so vet each linked project independently.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "malware-analysis-tools",
+      "exiftool"
+    ],
+    "aliases": [
+      "awesome-anti-forensic",
+      "anti-forensics list"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "anti-forensics",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/awesome-anti-forensic.md"
   },
   {
@@ -54703,41 +54715,50 @@
   },
   {
     "id": "malware-analysis-tools",
-    "name": "Malware Analysis Tools",
-    "description": "Malware analysis tool discovery and best practices reference",
+    "name": "malwareanalysis.tools",
+    "description": "Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, not an analyzer itself.",
     "url": "https://malwareanalysis.tools/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "Malware analysis tool discovery and best practices reference",
-    "input": "Tool research, methodology guidance",
-    "output": "Tool recommendations, analysis methodologies, safety practices, learning resources",
+    "bestFor": "Discovering the right malware-analysis tool and safe-handling practices for a given task.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free community reference directory; no account, no cost.",
     "opsec": "passive",
-    "opsecNote": "Reference resource only; no file uploads or active analysis",
+    "opsecNote": "A reading reference only — you browse tool listings, upload nothing, and analyse no sample here. Fully passive; nothing about a case is transmitted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained directory (OSINT-Framework-inspired layout); it curates third-party tools it did not build, so vet each linked tool independently.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "awesome-anti-forensic",
+      "any-run"
+    ],
+    "aliases": [
+      "Malware Analysis Tools",
+      "malwareanalysis.tools"
+    ],
+    "tags": [
+      "malware-analysis",
+      "reference",
+      "directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/malware-analysis-tools.md"
   },
   {
@@ -56051,46 +56072,6 @@
       "snradar"
     ],
     "_file": "library/tools/documents-metadata/osintdashboard-azurewebsites-net.md"
-  },
-  {
-    "id": "ow-ly-url-shortener",
-    "name": "Ow.ly URL Shortener",
-    "description": "Tool for shortening URL address hyperlinks for Hootsuite",
-    "url": "http://ow.ly/url/shorten-url",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/ow-ly-url-shortener.md"
   },
   {
     "id": "pageinsider",
@@ -79821,44 +79802,59 @@
   },
   {
     "id": "port-scanner-online",
-    "name": "Port scanner Online",
-    "description": "Quick port availability checks",
+    "name": "Port Scanner Online",
+    "description": "Use when you have an `ip-address` or `domain` and want to know which ports/services are open without scanning from your own IP — returns open ports and detected services.",
     "url": "https://portscanner.online/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ipv4"
     ],
-    "bestFor": "Quick port availability checks",
-    "input": "IP and port",
-    "output": "Port status (open/closed)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Browser-based port/service discovery on a host, run from the service's IP rather than your own.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free basic scans (common ports); advanced scan types, full port ranges, and saved results require registration or a paid plan.",
     "opsec": "active",
-    "opsecNote": "Active probing; may be logged by firewalls.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is ACTIVE reconnaissance — packets hit the target's ports and can trip its firewall/IDS. The scan originates from portscanner.online's servers (not your IP), which shields you somewhat, but the *target* is still probed. Only scan hosts you are authorised to test; unauthorised scanning may be illegal in some jurisdictions.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party online scanner wrapping Nmap/RustScan/Unicornscan; results are only as trustworthy as the service, and it sees which targets you scan.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "online-port-scanner"
+      "shodan",
+      "nmap",
+      "censys"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "portscanner.online",
+      "Online Port Scanner"
+    ],
+    "tags": [
+      "port-scan",
+      "infrastructure",
+      "recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipv4/port-scanner-online.md"
   },
   {
@@ -86195,43 +86191,55 @@
   },
   {
     "id": "udon",
-    "name": "UDON",
-    "description": "#go tool to find assets/domains based by Google Analytics ID",
+    "name": "udon",
+    "description": "Use when you have a `domain` and want other sites run by the same owner via a shared Google Analytics/AdSense ID — returns sibling `domain`s linked by tracking code.",
     "url": "https://github.com/dhn/udon",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting from one domain to a network of sites sharing the same Google Analytics/AdSense tracking ID.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source Go tool; it queries free third-party APIs (HackerTarget, OSINT.sh, SpyOnWeb, Site-Overview) that may rate-limit.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it queries third-party ID-to-domain databases, never the target's own sites, so the domain owner sees nothing. The lookup services log your queries; route through a clean IP for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community Go tool (dhn/udon, ~180 stars); its accuracy depends entirely on the third-party ID databases it aggregates, which are incomplete and can be stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "spyonweb",
+      "analyzeid",
+      "builtwith"
+    ],
+    "aliases": [
+      "udon",
+      "dhn udon"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website analyze"
+      "Website analyze",
+      "analytics-id"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/udon.md"
   },
   {
@@ -169176,38 +169184,51 @@
   },
   {
     "id": "centbrowser",
-    "name": "CentBrowser",
-    "description": "OSINT tool: CentBrowser.",
+    "name": "Cent Browser",
+    "description": "Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation features; not a data source.",
     "url": "http://www.centbrowser.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A Chromium-based browser with per-session proxy and privacy controls for keeping investigator personas separate.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to download and use; closed-source freeware built on Chromium.",
+    "opsec": "passive",
+    "opsecNote": "A browser is only as anonymous as how you run it. Cent Browser adds proxy/privacy controls but is CLOSED-SOURCE freeware based on an older Chromium — it may lag on security patches and its telemetry can't be audited. For real anonymity, run it through Tor/a trusted VPN and keep each persona in its own profile; for high-risk work prefer Tor Browser or a hardened open-source build.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "unverified",
+    "trustNote": "Popular closed-source Chromium fork; convenient for compartmentalisation, but unaudited and historically slow to track upstream Chromium security releases.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tor-browser",
+      "mullvad-browser",
+      "firefox-multi-account-containers"
+    ],
+    "aliases": [
+      "CentBrowser",
+      "centbrowser.com"
+    ],
     "tags": [
-      "browsers"
+      "browsers",
+      "sock-puppet",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/centbrowser.md"
   },
   {
@@ -283329,36 +283350,54 @@
   },
   {
     "id": "news-search-engine",
-    "name": "News Search Engine",
-    "description": "OSINT tool: News Search Engine.",
+    "name": "News Search Engine (Google CSE)",
+    "description": "Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions with dates and named people.",
     "url": "https://cse.google.com/cse?cx=013991603413798772546:fvmtax6anhd",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-box searching of a preset list of news outlets via a Google Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. Coverage is fixed by the CSE's site list and can drift over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive news search; the subject is never contacted. Queries go to Google — use a clean browser for sensitive names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine; results are Google's, but the outlet list is set by an unknown curator and may be stale or narrow.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-news",
+      "google-advanced-search"
+    ],
+    "aliases": [
+      "News Search CSE"
+    ],
+    "tags": [
+      "news",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search-engine.md"
   },
   {
@@ -285078,35 +285117,53 @@
   {
     "id": "open-directory-finder",
     "name": "Open Directory Finder",
-    "description": "OSINT tool: Open Directory Finder.",
+    "description": "Use when you have a `name`, filename, or keyword and want files sitting in exposed \"open directory\" web listings — returns direct links to documents, images, video, and archives.",
     "url": "https://odfinder.github.io/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding files exposed in publicly-listed open directories via ready-made search-engine dorks.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; it builds and launches dork queries against public search engines, no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Building/running the search is passive (queries go to Google/Bing, not the file hosts). But CLICKING a resulting open-directory link connects you directly to that server, which logs your IP — treat that step as active and use a clean/VM browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community front end (odfinder.github.io) that constructs open-directory dork queries; the tool is simple and transparent, but the files it surfaces are unvetted and may be malicious or illegal.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-advanced-search",
+      "filepursuit"
+    ],
+    "aliases": [
+      "ODfinder",
+      "Open Directory Search"
+    ],
+    "tags": [
+      "open-directories",
+      "dorks",
+      "file-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/open-directory-finder.md"
   },
   {
@@ -295753,36 +295810,56 @@
   },
   {
     "id": "web-archive-search-tool",
-    "name": "Web archive search tool",
-    "description": "OSINT tool: Web archive search tool.",
+    "name": "Aware Online Web Archive Search Tool",
+    "description": "Use when you have a `name`, `username`, or keyword and want archived (Wayback/Archive.org) texts, images, video, audio, and software — returns archived items with metadata fields.",
     "url": "https://www.aware-online.com/osint-tools/web-archive-search-tool/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Archive.org's collections by title/author/username/description to recover deleted or historical content.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free hosted helper by Aware Online; it builds queries against the free Internet Archive (archive.org) — no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive research against archived copies — you query the Internet Archive, never the subject's live site, so the target is not alerted. Aware Online/Archive.org log standard analytics; use a clean browser for sensitive terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A query helper by Aware Online B.V., a reputable Dutch OSINT training firm, sitting on top of the authoritative Internet Archive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wayback-machine",
+      "archive-today"
+    ],
+    "aliases": [
+      "Aware Online Web Archive Search",
+      "archive.org search helper"
+    ],
+    "tags": [
+      "web-archive",
+      "wayback",
+      "osint-tools"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/web-archive-search-tool.md"
   },
   {

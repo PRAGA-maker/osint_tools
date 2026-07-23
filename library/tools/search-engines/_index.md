@@ -434,7 +434,7 @@ kind: group-index
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
 - **`news-map`** (low) — OSINT tool: News Map.
 - **`news-now`** (low) — OSINT tool: News Now.
-- **`news-search-engine`** (low) — OSINT tool: News Search Engine.
+- **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — OSINT tool: News Search.
 - **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
 - **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
@@ -470,7 +470,7 @@ kind: group-index
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
 - **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.
-- **`open-directory-finder`** (low) — OSINT tool: Open Directory Finder.
+- **`open-directory-finder`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in exposed "open directory" web listings — returns direct links to d
 - **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
 - **`open-grey`** (low) — OSINT tool: Open Grey.
 - **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
@@ -681,7 +681,7 @@ kind: group-index
 - **`washington-office-of-financial-management`** (medium) — Use when you have a `name` of a Washington State employee or an agency and want public workforce/salary and demographic data — returns state
 - **`watch-out-investors`** (medium) — Use when you have a `name` or Indian ID (PAN/CIN/DIN) and want to know if that person or company has been named in an Indian regulatory or e
 - **`wazap-video-and-game-search-japan`** (low) — Use when you have a Japanese-gaming `username` or game title and want to search a large Japanese game database/community for profiles, revie
-- **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
+- **`web-archive-search-tool`** (low) — Use when you have a `name`, `username`, or keyword and want archived (Wayback/Archive.org) texts, images, video, audio, and software — retur
 - **`web-directories`** (low) — Directory of web directories
 - **`web-search-navigator`** (low) — Use when you run high volumes of searches and want keyboard-driven navigation of results across Google, YouTube, GitHub and more — a product
 - **`webcam-hopper`** (medium) — Use when you have a `geolocation`/`address` and want live public webcam views of that area — returns live `image` feeds searchable by countr

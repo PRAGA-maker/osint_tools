@@ -166,7 +166,7 @@ kind: group-index
 - **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`madeit-australia`** (low) — Website related to arts and crafts events
-- **`malware-analysis-tools`** (low) — Malware analysis tool discovery and best practices reference
+- **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
 - **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
 - **`meawfy`** (low) — OSINT tool: Meawfy.
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -187,7 +187,6 @@ kind: group-index
 - **`online-metadata-viewer-and-editor`** (low) — High-quality and well-made. Support docx, xlsx, msg, pptx, jpeg, vsd, mpp.
 - **`online-ocr-converter`** (low) — Tool that performs optical character recognition, converting scanned PDF documents and photos into editable and searchable electronic docume
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
-- **`ow-ly-url-shortener`** (low) — Tool for shortening URL address hyperlinks for Hootsuite
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
 - **`pages2images`** (low) — Website screenshot tool
 - **`paste-search`** (low) — OSINT tool: Paste Search.

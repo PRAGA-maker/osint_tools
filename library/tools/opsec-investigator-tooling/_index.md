@@ -82,7 +82,7 @@ kind: group-index
 - **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardguru`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`ccleaner-pc`** (low) — Program that assists in cleaning and optimizing PC systems
-- **`centbrowser`** (low) — OSINT tool: CentBrowser.
+- **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
 - **`cheat-sheet-maker`** (low) — simple tool for creating cheat sheets
 - **`chepy`** (low) — Python command line version of CyberChef
