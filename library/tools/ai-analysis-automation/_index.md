@@ -244,7 +244,7 @@ kind: group-index
 - **`observable`** (low) — OSINT tool: Observable.
 - **`obsidian`** (low) — OSINT tool: Obsidian.
 - **`oda-the-online-disassembler`** (low) — OSINT tool: ODA - The Online Disassembler.
-- **`offliberty`** (low) — OSINT tool: Offliberty.
+- **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
 - **`oftoolbox`** (low) — List of tools to create, share and monetize adult content (OnlyFans-focused).
 - **`ollama`** (low) — Private AI analysis of sensitive OSINT data, local document processing without cloud exposure

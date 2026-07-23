@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7518 total · 4695 full · 2823 stub (62% enriched)
+**Tools:** 7517 total · 4704 full · 2813 stub (62% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3594 · high: 1964 · medium: 1960
+low: 3593 · high: 1964 · medium: 1960
 
 ## Tools by trust
-community: 3505 · unverified: 2426 · trusted: 1578 · untrustworthy: 6 · personal: 3
+community: 3505 · unverified: 2423 · trusted: 1580 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 33/453
+- `ai-analysis-automation` — 34/453
 - `archives-cache` — 84/124
 - `communities-forums` — 236/289
 - `dark-web` — 36/110
 - `dating-classifieds` — 78/90
-- `documents-metadata` — 48/308
-- `domains-ip-infrastructure` — 157/697
+- `documents-metadata` — 49/308
+- `domains-ip-infrastructure` — 161/697
 - `email` — 245/246
 - `evidence-capture` — 12/29
 - `financial-crypto` — 54/110
@@ -28,22 +28,22 @@ community: 3505 · unverified: 2426 · trusted: 1578 · untrustworthy: 6 · pers
 - `image-video-face` — 439/452
 - `maps-geospatial-data` — 67/123
 - `messaging` — 178/184
-- `opsec-investigator-tooling` — 53/551
+- `opsec-investigator-tooling` — 54/551
 - `people-search` — 256/258
 - `phone` — 134/137
 - `public-records` — 854/1012
-- `search-engines` — 477/790
+- `search-engines` — 478/789
 - `social-networks` — 720/787
 - `training-ctf` — 4/12
 - `translation-language` — 20/101
-- `transportation` — 119/211
+- `transportation` — 120/211
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 959 leaves
 - `library/tools/social-networks` — 759 leaves
-- `library/tools/search-engines` — 739 leaves
+- `library/tools/search-engines` — 738 leaves
 - `library/tools/opsec-investigator-tooling` — 521 leaves
 - `library/tools/domains-ip-infrastructure` — 460 leaves
 - `library/tools/ai-analysis-automation` — 418 leaves

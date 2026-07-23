@@ -82,7 +82,7 @@ kind: group-index
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
 - **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
 - **`azure-tenant-resolution-by-pingcastle`** (low) — OSINT tool: Azure Tenant Resolution by PingCastle.
-- **`bbot`** (low) — Recursive internet scanner that chains modules for subdomains, emails, and attack surface.
+- **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
 - **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
 - **`bi-zone`** (low) — OSINT tool: Bi.Zone.
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
@@ -451,7 +451,7 @@ kind: group-index
 - **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
-- **`view-rendered-source`** (low) — The standard browser source code view did not display the actual source code. View Rendered Source extension solve this problem. It shows th
+- **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
 - **`vincos-it`** (low) — world social media popularity map
 - **`virus-total`** (low) — OSINT tool: Virus Total.
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca

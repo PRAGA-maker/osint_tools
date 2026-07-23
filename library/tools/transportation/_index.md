@@ -67,7 +67,7 @@ kind: group-index
 - **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
 - **`europlates-eu`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of origin by matching format and design — returns a `
 - **`exotic-cars-the-largest-photo-collection`** (low) — Use when you have an `image` or `vehicle-plate` of an exotic car and want spotting records — returns dated, geotagged photos of that specifi
-- **`faa-registry`** (low) — OSINT tool: FAA Registry.
+- **`faa-registry`** (low) — Use when you have a US aircraft tail number (N-number) or an owner `name` and want the registered owner and address — returns the owner `nam
 - **`faxvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want the vehicle's identity and history — returns free decoded specs plus (paid) title, 
 - **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.
 - **`fleetmon`** (low) — OSINT tool: FleetMon.

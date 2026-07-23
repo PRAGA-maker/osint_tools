@@ -230,7 +230,7 @@ kind: group-index
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
-- **`firebounty`** (low) — Bug bounty search engine
+- **`firebounty`** (low) — Use when you have an `employer-org`/`domain` and want to know its bug-bounty or vulnerability-disclosure policy and in-scope assets — return
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
@@ -551,7 +551,6 @@ kind: group-index
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
-- **`reviewmeta`** (low) — OSINT tool: ReviewMeta.
 - **`rfc-fyi`** (low) — Browseable, searchable RFC index
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth

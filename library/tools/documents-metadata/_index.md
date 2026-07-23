@@ -96,7 +96,7 @@ kind: group-index
 - **`exif-py`** (low) — get exif data of photos thrue command line
 - **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).
 - **`exif-viewer-addons-mozilla-org`** (low) — OSINT tool: exif viewer (addons.mozilla.org).
-- **`exif-viewer-classic-chrome-google-com`** (low) — OSINT tool: exif viewer classic (chrome.google.com).
+- **`exif-viewer-classic-chrome-google-com`** (low) — Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any 
 - **`exif-viewer-pro-chrome-google-com`** (low) — OSINT tool: exif viewer pro (chrome.google.com).
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
 - **`exiftool-lucasgelfond-online`** (low) — OSINT tool: exiftool.lucasgelfond.online.

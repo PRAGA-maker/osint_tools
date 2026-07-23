@@ -9543,37 +9543,44 @@
   {
     "id": "offliberty",
     "name": "Offliberty",
-    "description": "OSINT tool: Offliberty.",
+    "description": "Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadable file. Now unreliable; prefer yt-dlp for anything important.",
     "url": "http://offliberty.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quick browser-based download of a single online video/audio for offline preservation (evidence capture).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web service, no account — but reliability has degraded badly and many links now fail.",
+    "opsec": "active",
+    "opsecNote": "Offliberty's server fetches the media, so your IP isn't exposed to the source platform — but you paste the target URL into a third-party site that sees exactly what you're preserving. For sensitive evidence use a self-hosted downloader (yt-dlp) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Long-running but now poorly-maintained third-party downloader; frequently stalls or fails in 2026. Fine as a quick grab, not for reliable or sensitive evidence capture.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "offliberty.com"
+    ],
     "tags": [
-      "offline-browsing"
+      "offline-browsing",
+      "media-download"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/offliberty.md"
   },
   {
@@ -50968,14 +50975,14 @@
   },
   {
     "id": "exif-viewer-classic-chrome-google-com",
-    "name": "exif viewer classic (chrome.google.com)",
-    "description": "OSINT tool: exif viewer classic (chrome.google.com).",
+    "name": "EXIF Viewer Classic (Chrome)",
+    "description": "Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any GPS `geolocation` embedded in the photo.",
     "url": "https://chrome.google.com/webstore/detail/exif-viewer-classic/nafpfdcmppffipmhcpkbplhkoiekndck",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "In-browser EXIF/metadata inspection of images on any web page, including GPS coordinates when present.",
     "selectorsIn": [
       "image"
     ],
@@ -50983,29 +50990,36 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension; no account.",
+    "opsec": "passive",
+    "opsecNote": "EXIF is parsed locally in your browser from the image already loaded on the page — no upload to a third party. Viewing the page itself is a normal visit; the metadata read leaks nothing further.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party community browser extension; convenient, but as with any extension review its permissions before installing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "exif viewer classic",
+      "EXIF Viewer Classic extension"
+    ],
     "tags": [
       "exifdata",
       "EXIF Data Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/exif-viewer-classic-chrome-google-com.md"
   },
   {
@@ -62477,13 +62491,13 @@
   {
     "id": "bbot",
     "name": "BBOT",
-    "description": "Recursive internet scanner that chains modules for subdomains, emails, and attack surface.",
+    "description": "Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomains (`domain`s), `ip-address`es, `email`s and occasional `social-profile`s.",
     "url": "https://github.com/blacklanternsecurity/bbot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Recursive domain/email/subdomain enumeration",
+    "bestFor": "Recursive, module-chaining enumeration of an organization's subdomains, IPs, emails and attack surface.",
     "selectorsIn": [
       "domain",
       "ip-address",
@@ -62495,15 +62509,16 @@
       "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (Python); install via `pipx install bbot`. Some modules use third-party APIs that need free keys for full coverage.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "BBOT's default recursive scans include active modules that directly probe the target (DNS brute-force, port scans, web requests), so traffic hits the target from your host. Use passive-only presets, proxies and API-backed sources when you need to stay off the target's radar.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Maintained by Black Lantern Security (9.9k stars); reputable infosec tooling.",
+    "trustNote": "Maintained by Black Lantern Security (9k+ GitHub stars); reputable, widely-used, auditable open-source recon framework.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -62512,8 +62527,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "bbot"
+      "bbot",
+      "blacklanternsecurity/bbot"
     ],
     "tags": [
       "recursive-scanner",
@@ -62522,8 +62539,8 @@
       "modules"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bbot.md"
   },
   {
@@ -76626,42 +76643,53 @@
   },
   {
     "id": "mnemonic",
-    "name": "Mnemonic",
-    "description": "Passive DNS lookups, historical domain resolutions, DNS reconnaissance",
+    "name": "Mnemonic PassiveDNS",
+    "description": "Use when you have a `domain` or `ip-address` and want its historical DNS resolutions — returns which IPs a domain resolved to over time (and vice-versa), with first/last-seen timestamps.",
     "url": "https://passivedns.mnemonic.no/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "passivedns"
     ],
-    "bestFor": "Passive DNS lookups, historical domain resolutions, DNS reconnaissance",
-    "input": "Domain or IP address",
-    "output": "DNS query history with timestamps, associated IPs, and historical resolutions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Historical passive-DNS — mapping a domain's past IP resolutions (and reverse) with timestamps, without touching the domain.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free passive-DNS service from mnemonic (a Norwegian security firm); public web queries are open, with heavier/API use gated by a requested free key.",
     "opsec": "passive",
-    "opsecNote": "Queries a passive database of DNS records; does not contact the target domain.",
+    "opsecNote": "Truly passive — it returns DNS observations from mnemonic's own sensors and never queries the target domain, so the subject sees nothing. mnemonic logs your searches; use a clean session for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by mnemonic, an established Norwegian cybersecurity company; a long-standing, well-regarded passive-DNS source used across the industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "mnemonic PassiveDNS",
+      "passivedns.mnemonic.no"
+    ],
+    "tags": [
+      "passivedns",
+      "dns-history"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/passivedns/mnemonic.md"
   },
   {
@@ -85535,41 +85563,53 @@
   {
     "id": "threatpinch-lookup",
     "name": "ThreatPinch Lookup",
-    "description": "Indicator enrichment",
+    "description": "Use when you're reading a page full of IOCs (`ip-address`, `domain`, hashes, `email`) and want hover-to-enrich tooltips pulling threat-intel from many sources at once — returns inline reputation/enrichment without leaving the page.",
     "url": "https://github.com/cloudtracer/ThreatPinchLookup",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ioc-tools"
     ],
-    "bestFor": "Indicator enrichment",
-    "input": "IOC or domain/IP/hash",
-    "output": "Enriched threat intelligence from multiple sources",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "In-browser hover enrichment of IOCs (IP, domain, hash, email, CVE) across many threat-intel sources at once.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source; installs as a Chrome/Firefox extension. Some data sources need your own free API keys entered in the settings.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of public threat intel APIs",
+    "opsecNote": "Enrichment queries go to third-party threat-intel APIs, not the target — but every IOC you hover is sent to those services, so assume your lookups are visible to each configured provider. Add only keys/sources you're comfortable exposing your indicators to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Open-source browser extension with a public GitHub repo; auditable, though it aggregates many third-party APIs whose availability and quality vary.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ThreatPinchLookup",
+      "cloudtracer/ThreatPinchLookup"
+    ],
+    "tags": [
+      "ioc-tools",
+      "threat-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ioc-tools/threatpinch-lookup.md"
   },
   {
@@ -87263,42 +87303,48 @@
   {
     "id": "view-rendered-source",
     "name": "View Rendered Source",
-    "description": "The standard browser source code view did not display the actual source code. View Rendered Source extension solve this problem. It shows the html code after all JavaScript functions (full page load, page scrolling, and other user actions) ",
+    "description": "Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-injected links, trackers and content the plain source hides.",
     "url": "https://chrome.google.com/webstore/detail/view-rendered-source/ejgngohbdedoabanmclafpkoogegdpob",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Seeing the post-JavaScript rendered DOM of a page and diffing it against the raw source to find injected links/trackers.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account.",
+    "opsec": "active",
+    "opsecNote": "To render the page it loads the target in your browser, so the site sees a normal visit from your IP — no different from browsing it directly. Use a VPN/sock-puppet browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular third-party developer extension; useful and widely used, but community-maintained rather than from a verified security vendor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "View Rendered Source extension"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Source Code Analyzes"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/view-rendered-source.md"
   },
   {
@@ -177301,37 +177347,45 @@
   {
     "id": "markwhen",
     "name": "MarkWhen",
-    "description": "Free online tool that converts Markdown to graphical timeline. It will come in handy for investigations where you need to investigate time-bound events, or simply for quick project planning. Export results in .SVG, .PNG, .MW or share link.",
+    "description": "Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markdown and it renders an interactive timeline you can export.",
     "url": "https://markwhen.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a text list of dated events into a graphical, exportable investigation timeline.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web editor (open source); no account needed to create and export a timeline.",
+    "opsec": "passive",
+    "opsecNote": "The web editor processes your text in-browser; content stays local unless you use the share-link/cloud feature. For sensitive case data, self-host or keep to local export and avoid generating a public share link.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Open-source timeline tool with a public project; it is analysis/visualization plumbing, not a data source, so trust concerns are about where you store your notes, not data accuracy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Markwhen",
+      "markwhen.com"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "NOOSINT tools",
+      "timeline"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/markwhen.md"
   },
   {
@@ -272636,39 +272690,51 @@
   },
   {
     "id": "firebounty",
-    "name": "Firebounty",
-    "description": "Bug bounty search engine",
+    "name": "FireBounty",
+    "description": "Use when you have an `employer-org`/`domain` and want to know its bug-bounty or vulnerability-disclosure policy and in-scope assets — returns the program scope, listing linked `domain`s and disclosure channels.",
     "url": "https://firebounty.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a huge aggregated directory of bug-bounty / VDP programs to find an organization's policy and declared in-scope assets.",
+    "selectorsIn": [
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the directory (150k+ policies); commercial bug-bounty launch services are separate/paid.",
+    "opsec": "passive",
+    "opsecNote": "You query FireBounty's aggregated directory, not the target organization, so no target-side exposure. FireBounty logs your searches like any site; nothing sensitive is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running aggregator of publicly-posted VDP/bug-bounty policies (operated alongside YesWeHack); a convenient index of public policy pages rather than an authoritative registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Firebounty",
+      "firebounty.com"
+    ],
     "tags": [
       "Search engines",
       "Bugbounty/vulnerabilities search tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/firebounty.md"
   },
   {
@@ -288899,40 +288965,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/reuters.md"
-  },
-  {
-    "id": "reviewmeta",
-    "name": "ReviewMeta",
-    "description": "OSINT tool: ReviewMeta.",
-    "url": "https://reviewmeta.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/reviewmeta.md"
   },
   {
     "id": "rfc-fyi",
@@ -347870,45 +347902,54 @@
   {
     "id": "faa-registry",
     "name": "FAA Registry",
-    "description": "OSINT tool: FAA Registry.",
+    "description": "Use when you have a US aircraft tail number (N-number) or an owner `name` and want the registered owner and address — returns the owner `name`/`employer-org`, mailing `address` and aircraft details.",
     "url": "https://registry.faa.gov/aircraftinquiry/nnum_inquiry.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a US N-number to its registered owner (name/company + address), or finding aircraft registered to a person/company.",
     "selectorsIn": [
+      "document-id",
       "name"
     ],
     "selectorsOut": [
-      "geolocation"
+      "name",
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official FAA aircraft registration inquiry; no account.",
+    "opsec": "passive",
+    "opsecNote": "Public government registry — you query the FAA, not any subject, so there is no target-side exposure. Standard web-server logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official FAA aircraft registration database; the owner-of-record and registration data is authoritative US government record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "aircraft-registry",
       "federal-aviation-administration"
     ],
+    "aliases": [
+      "FAA Aircraft Inquiry",
+      "N-Number Inquiry"
+    ],
+    "tags": [
+      "aviation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/faa-registry.md"
   },
   {

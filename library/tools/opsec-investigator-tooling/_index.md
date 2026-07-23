@@ -275,7 +275,7 @@ kind: group-index
 - **`many-passwords`** (low) — Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels)
 - **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
 - **`markmap`** (low) — A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to c
-- **`markwhen`** (low) — Free online tool that converts Markdown to graphical timeline. It will come in handy for investigations where you need to investigate time-b
+- **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`matweb-info`** (low) — OSINT tool: Matweb.info.
 - **`maxthon`** (low) — OSINT tool: Maxthon.
