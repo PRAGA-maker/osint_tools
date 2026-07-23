@@ -31,7 +31,7 @@ kind: group-index
 - **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
 - **`emily-bz`** (medium) — Use when you have a Google Street View panorama URL and want its exact capture time — returns the precise timestamp (to ~2s) of that pano, a
 - **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally
-- **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
+- **`f4map`** (low) — Use when you have a `geolocation`/`address` and want a 3D rendering of the buildings and terrain there — returns an interactive 3D view for 
 - **`findlatitudeandlongitude-com`** (low) — Use when you have an `address` or a map point and want exact latitude/longitude (or the reverse) — returns `geolocation`.
 - **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur

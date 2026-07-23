@@ -54041,42 +54041,53 @@
   },
   {
     "id": "katana",
-    "name": "Katana",
-    "description": "Katana-dork scanner is a simple python tool that automates Google hacking/dorking and supports Tor.",
+    "name": "Katana (dork scanner)",
+    "description": "Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.",
     "url": "https://github.com/TebbaaX/Katana",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automating Google Hacking/Dorking (GHDB) queries from the CLI with Tor support.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open source (Python). Repo archived (read-only) in 2025 — the author describes it as an old educational project; usable but unmaintained.",
+    "opsec": "active",
+    "opsecNote": "Katana automates real Google searches from your host, which Google rate-limits and can CAPTCHA/block for scripted queries; that pattern is attributable to your IP. It supports Tor for exactly this reason — route through it. Dorking a target's own domain is passive toward the target (you query Google, not them), but heavy automated searching risks your search identity, not the subject's.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A known but archived, self-described educational dork script. It just wraps Google queries — reliability depends on Google not blocking automated searches, which it increasingly does. Prefer a maintained dorking approach for serious work.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Katana-ds",
+      "TebbaaX/Katana"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "dorks",
+      "google-hacking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/katana.md"
   },
   {
@@ -61265,41 +61276,53 @@
   {
     "id": "altdns",
     "name": "AltDNS",
-    "description": "Discovering likely subdomain variants through permutations",
+    "description": "Use when you have a set of known subdomains for a `domain` and want to discover more by permutation — returns resolved alternate subdomains.",
     "url": "https://github.com/infosec-au/altdns",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Discovering likely subdomain variants through permutations",
-    "input": "Known subdomains, wordlist, and target domain",
-    "output": "Resolved alternative subdomains and permutation results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Generating and resolving permutation-based subdomain guesses (dev-, staging-, -1, -old) from known subdomains.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (Python). Limited maintenance (open PRs/issues), but the core still works.",
     "opsec": "active",
-    "opsecNote": "Performs direct DNS resolution on generated permutations, creating active query footprints.",
+    "opsecNote": "AltDNS resolves each generated permutation via DNS. Those lookups are active — they hit DNS resolvers (and, for the target's zone, ultimately its authoritative servers), which can be logged. Use your own/neutral resolvers and only enumerate domains you're authorised to assess; consider a VPS you're willing to attribute.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-known subdomain-permutation tool. Effectiveness depends on a good seed set (200+ known subdomains) and wordlist; it complements rather than replaces passive enumeration.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "subdomain-finder"
+    ],
+    "aliases": [
+      "infosec-au/altdns"
+    ],
+    "tags": [
+      "subdomains",
+      "dns-recon",
+      "permutation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/altdns.md"
   },
   {
@@ -86464,37 +86487,41 @@
   {
     "id": "urlhaus",
     "name": "URLhaus",
-    "description": "OSINT tool: URLhaus.",
+    "description": "Use when you have a `domain`/URL, host or `ip-address` and want to know if it distributes malware — returns malicious URLs, payloads and hosting details.",
     "url": "https://urlhaus.abuse.ch",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a domain/URL/host is a known malware-distribution site, with associated payloads.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and public — browsable database, downloadable feeds, and a free API (incl. bulk). Operated by abuse.ch (Spamhaus).",
+    "opsec": "passive",
+    "opsecNote": "You query URLhaus's own database of already-collected malicious URLs, not the malware sites — the subject sees nothing. Only URLhaus sees your query. Never browse the listed URLs directly; they serve live malware. Analyse payloads by hash in a sandbox.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by abuse.ch (now part of Spamhaus) — a highly reputable, community-standard threat-intel source consumed across the industry. A listing is authoritative; freshness is good but a clean result isn't proof of safety.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "abusech",
       "malwarebazaar",
@@ -86502,6 +86529,18 @@
       "zeus-c2-tracker",
       "zeus-tracker"
     ],
+    "aliases": [
+      "abuse.ch URLhaus",
+      "urlhaus.abuse.ch"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "malware",
+      "threat-intel"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/urlhaus.md"
   },
   {
@@ -108353,42 +108392,52 @@
   },
   {
     "id": "iban-com",
-    "name": "Iban.com",
-    "description": "Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is serviced",
+    "name": "Iban.com IBAN Checker",
+    "description": "Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) and country.",
     "url": "https://www.iban.com/iban-checker",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Validating an IBAN and resolving it to the servicing bank, BIC and country.",
     "selectorsIn": [
-      "crypto-wallet"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web IBAN checker (a demo of iban.com's paid IBAN Suite/API). Interactive single-IBAN validation is free; bulk/API is paid.",
+    "opsec": "passive",
+    "opsecNote": "You paste an IBAN you already hold into a validator — nothing is sent to the account holder or their bank, and no transaction occurs. Only iban.com sees the IBAN you submit; avoid pasting an IBAN tied to a live-sensitive matter if you'd rather not expose it to a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "iban.com is a established IBAN-services vendor; validation (MOD-97 checksum, structure, country) is deterministic and reliable. Bank identification is only as current as its BIC directory.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IBAN checker",
+      "iban.com"
+    ],
     "tags": [
-      "Bank information search"
+      "Bank information search",
+      "iban",
+      "financial"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/iban-com.md"
   },
   {
@@ -151559,13 +151608,13 @@
   {
     "id": "f4map",
     "name": "F4Map",
-    "description": "F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.",
+    "description": "Use when you have a `geolocation`/`address` and want a 3D rendering of the buildings and terrain there — returns an interactive 3D view for scene matching.",
     "url": "https://demo.f4map.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing a location in interactive 3D (building heights, shapes, terrain) built from OpenStreetMap data.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -151573,32 +151622,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The demo map (demo.f4map.com) is free to browse with no account. F4 sells the underlying 3D-map technology for embedding.",
+    "opsec": "passive",
+    "opsecNote": "You browse a rendered map built from OpenStreetMap — nothing touches any subject or location owner. Only F4Map's servers see the coordinates you view; use a VPN if even that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A capable OSM-based 3D renderer. Building heights/shapes are only as complete and accurate as OpenStreetMap for that area — dense cities render well, rural/less-mapped areas are sparse or generic.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "maps"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "demo-4map-com"
     ],
+    "aliases": [
+      "F4 Map",
+      "demo.f4map.com"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "maps",
+      "3d"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/f4map.md"
   },
   {
@@ -245312,45 +245368,56 @@
   },
   {
     "id": "openownership",
-    "name": "OpenOwnership",
-    "description": "Investigating beneficial ownership of corporate entities across jurisdictions",
+    "name": "Open Ownership",
+    "description": "Use when you need to find where a jurisdiction's beneficial-ownership data lives — returns a map/directory of national registers and open BO data standards, not a single lookup.",
     "url": "https://www.openownership.org/en/",
     "category": "public-records",
     "path": [
       "public-records",
       "beneficial-ownership-lookup"
     ],
-    "bestFor": "Investigating beneficial ownership of corporate entities across jurisdictions",
-    "input": "Company name, jurisdiction, or person name",
-    "output": "Beneficial ownership chains, corporate structures, and linked entities across registers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Locating which countries have public beneficial-ownership registers and how to access their data.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free advocacy/standards organisation. Publishes the Beneficial Ownership Data Standard and a worldwide map of register implementations; historically ran a central Register (now largely wound down in favour of national registers).",
     "opsec": "passive",
-    "opsecNote": "Public web queries against open data; no notification to subjects.",
+    "opsecNote": "You read public advocacy/standards content and follow links to national registers — nothing touches any company or person, and there's no notification to subjects. Only the sites you visit see your queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Open Ownership is a well-regarded transparency NGO and the maintainer of the Beneficial Ownership Data Standard. Note the caveat — it is a signpost/standards body now, not a one-stop searchable global register; the actual data lives in national registers.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "openownership-org",
-      "openownership-register"
+      "openownership-register",
+      "opencorporates"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OpenOwnership",
+      "Open Ownership"
+    ],
+    "tags": [
+      "beneficial-ownership",
+      "corporate-records",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/beneficial-ownership-lookup/openownership.md"
   },
   {
@@ -263410,40 +263477,53 @@
   {
     "id": "alltheinternet",
     "name": "AllTheInternet",
-    "description": "OSINT tool: AllTheInternet.",
+    "description": "Use when you have a `name`/`username`/keyword and want one query fanned across many engines and services — returns a launchpad of results from Google, Bing, socials and more.",
     "url": "http://www.alltheinternet.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single search box that pushes your query to many search engines and specialised services at once.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free metasearch launcher, no account. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "AllTheInternet hands your query off to the individual engines (opening tabs / relaying), so those engines still see a search and may see your IP when results load. Nothing touches your subject directly. Use a sock-puppet browser/VPN if you don't want the query tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A simple metasearch launchpad, not a ranking engine — it just routes your query to other services. Useful for breadth; the quality of any result is the destination engine's, not AllTheInternet's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "meta-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "alltheinternet-com"
     ],
+    "aliases": [
+      "All the Internet",
+      "alltheinternet.com"
+    ],
+    "tags": [
+      "meta-search",
+      "search-launcher"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/alltheinternet.md"
   },
   {
@@ -345010,47 +345090,56 @@
   },
   {
     "id": "ads-b-exchange-radar-view",
-    "name": "ADS-B Exchange Radar View",
-    "description": "OSINT tool: ADS-B Exchange Radar View.",
+    "name": "ADS-B Exchange Radar View (Globe)",
+    "description": "Use when you have an aircraft registration/callsign or a location and want the live unfiltered globe view of air traffic — returns real-time aircraft geolocation and identity.",
     "url": "https://globe.adsbexchange.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "The modern globe-style live map of ADS-B Exchange — unfiltered real-time aircraft tracking by registration, hex, or area.",
     "selectorsIn": [
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the live globe with no account. Historical data / API access is a paid ADS-B Exchange offering.",
+    "opsec": "passive",
+    "opsecNote": "You read a crowd-sourced feed of aircraft transponder broadcasts — nothing touches the aircraft or its operator, and no subject is notified. Only ADS-B Exchange sees your browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ADS-B Exchange is the leading *unfiltered* tracker — it doesn't honour the block lists that hide private/government jets elsewhere. Coverage is community-receiver-dependent, so gaps exist where no receiver is nearby.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ads-b-exchange",
       "ads-b-historical-flight-viewer",
       "flight-tracker"
     ],
+    "aliases": [
+      "ADSBexchange globe",
+      "globe.adsbexchange.com"
+    ],
+    "tags": [
+      "aviation",
+      "flight-tracking",
+      "geolocation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/ads-b-exchange-radar-view.md"
   },
   {

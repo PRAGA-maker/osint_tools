@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/subdomains
 
 ## Skills here
-- **`altdns`** (low) — Discovering likely subdomain variants through permutations
+- **`altdns`** (low) — Use when you have a set of known subdomains for a `domain` and want to discover more by permutation — returns resolved alternate subdomains.
 - **`aquatone`** (low) — Visual subdomain reconnaissance, HTTP service discovery, attack surface mapping
 - **`bluto`** (low) — Initial domain footprinting and asset discovery
 - **`dns-recon`** (low) — DNS enumeration, zone transfer testing, subdomain brute forcing, DNS security assessment

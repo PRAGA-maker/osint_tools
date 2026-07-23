@@ -78,7 +78,7 @@ kind: group-index
 - **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
 - **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
-- **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
+- **`iban-com`** (low) — Use when you have an IBAN (`document-id`) and want to validate it and identify the bank/country behind it — returns the bank, branch (BIC) a
 - **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
 - **`importyeti`** (low) — Use when you have a company `name`/`employer-org` and want its overseas suppliers and shipment history from US customs data — returns suppli
 - **`insolvency-govt-nz`** (medium) — Use when you have a `name` in New Zealand and want to check for insolvency — returns bankruptcies, No Asset Procedures, and liquidations wit

@@ -158,7 +158,7 @@ kind: group-index
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
 - **`joinme-screensharing-tool`** (low) — Website that provides screen sharing and online meetings
 - **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
-- **`katana`** (low) — Katana-dork scanner is a simple python tool that automates Google hacking/dorking and supports Tor.
+- **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
 - **`kickstarter`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`knowyourmeme`** (low) — Website that provides a database of Internet-based memes, culture and online behaviour

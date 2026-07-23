@@ -13,7 +13,7 @@ kind: group-index
 - **`vehicle-records/`** — 8 skill(s) below.
 
 ## Skills here
-- **`ads-b-exchange-radar-view`** (low) — OSINT tool: ADS-B Exchange Radar View.
+- **`ads-b-exchange-radar-view`** (low) — Use when you have an aircraft registration/callsign or a location and want the live unfiltered globe view of air traffic — returns real-time
 - **`ads-b-historical-flight-viewer`** (low) — OSINT tool: ADS-B Historical Flight Viewer.
 - **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
 - **`airfleets`** (low) — Database for aircraft details.

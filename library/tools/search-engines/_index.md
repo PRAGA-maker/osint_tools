@@ -47,7 +47,7 @@ kind: group-index
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
 - **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
-- **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
+- **`alltheinternet`** (low) — Use when you have a `name`/`username`/keyword and want one query fanned across many engines and services — returns a launchpad of results fr
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
