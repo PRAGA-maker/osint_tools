@@ -448,7 +448,6 @@ kind: group-index
 - **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
 - **`newswhip`** (low) — OSINT tool: NewsWhip.
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
-- **`nod`** (low) — OSINT tool: Nod.
 - **`notey`** (low) — OSINT tool: Notey.
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt

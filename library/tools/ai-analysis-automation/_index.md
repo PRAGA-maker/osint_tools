@@ -19,7 +19,7 @@ kind: group-index
 - **`a1-website-download`** (low) — OSINT tool: A1 Website Download.
 - **`abine`** (low) — OSINT tool: Abine.
 - **`adium`** (low) — OSINT tool: Adium.
-- **`advanced-search-operators-list`** (low) — List of the links to the docs for different services, which explain using of advanced search operators
+- **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
 - **`aeon`** (low) — OSINT tool: Aeon.
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
 - **`ai-or-not`** (low) — Detecting AI-generated images and audio in disinformation investigations and media verification

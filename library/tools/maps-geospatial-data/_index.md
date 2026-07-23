@@ -92,7 +92,7 @@ kind: group-index
 - **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
 - **`overturemaps-org`** (medium) — Use when you have an `address` or place and want open, structured map data — returns `geolocation` for buildings, places/POIs, addresses, an
 - **`peakvisor-com`** (medium) — Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summ
-- **`peakvisor`** (low) — Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun tr
+- **`peakvisor`** (medium) — Use when you have a photo showing mountains/terrain and a rough `geolocation` and want to identify peaks and confirm the vantage point — ret
 - **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
 - **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond
 - **`policy-map`** (low) — Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housin

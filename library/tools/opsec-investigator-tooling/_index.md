@@ -175,7 +175,7 @@ kind: group-index
 - **`generate-data`** (low) — Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or Java
 - **`generate-sa-id-numbers`** (low) — OSINT tool: Generate SA ID Numbers.
 - **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
-- **`geotagonline`** (low) — add fake geotags to photo
+- **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Website providing information about online privacy and security-related subjects
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
 - **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
@@ -316,7 +316,7 @@ kind: group-index
 - **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
 - **`osintlab`** (low) — Script that automates installation of ~50 OSINT recon tools.
 - **`osintux`** (low) — OSINT tool: Osintux.
-- **`overcast-podcast-app-mobile-ios`** (low) — App for mobile devices for podcasting services
+- **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
 - **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing
 - **`pandasecurity-free-antivirus`** (low) — Malware and virus detection and elimination program

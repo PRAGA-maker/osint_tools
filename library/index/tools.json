@@ -116,37 +116,44 @@
   {
     "id": "advanced-search-operators-list",
     "name": "Advanced Search Operators List",
-    "description": "List of the links to the docs for different services, which explain using of advanced search operators",
+    "description": "Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links to each platform's official operator docs.",
     "url": "https://github.com/cipher387/Advanced-search-operators-list",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly finding the official advanced-search operator documentation for 100+ services.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public GitHub repository; no account needed to read it.",
+    "opsec": "passive",
+    "opsecNote": "A static reference list on GitHub — reading it leaks nothing about your target. OpSec applies only when you subsequently run the operators against a live service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Curated by cipher387 (a well-known OSINT author); a link directory, so its value is the quality of the pointers rather than any data of its own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cipher387 advanced search operators"
+    ],
     "tags": [
-      "My Projects"
+      "ai-analysis-automation",
+      "dorks",
+      "reference"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "apis-for-osint",
       "awesome-grep",
@@ -16852,41 +16859,52 @@
   {
     "id": "w-generator",
     "name": "W Generator",
-    "description": "Custom wordlist generation for password attacks, multi-language targeted wordlists",
+    "description": "Use when you have personal facts about a subject (`name`, `dob`, `username`) and want a targeted password wordlist for authorised credential testing — returns candidate `password` lists.",
     "url": "https://app.wgen.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "wordlist"
     ],
-    "bestFor": "Custom wordlist generation for password attacks, multi-language targeted wordlists",
-    "input": "Personal information (names, dates, usernames), custom pattern definitions; 60+ languages",
-    "output": "Generated wordlists with millions of word candidates; exportable patterns",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Building custom, pattern-driven password wordlists from a target's known personal details across 60+ languages.",
+    "selectorsIn": [
+      "name",
+      "dob",
+      "username"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free browser-based generator; a free offline version also exists on GitHub. No account required.",
     "opsec": "passive",
-    "opsecNote": "Browser-based frontend; runs entirely client-side; explicitly no data collection reported",
+    "opsecNote": "The pattern builder runs in-browser and does not touch any target system — generation itself is passive. Using the resulting wordlist against a live account is active and must be authorised (pentest/red-team engagement or your own account); brute-forcing someone else's login is intrusive and often illegal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent security utility (wgen.io) with public docs and an open-source offline build; not a vetted enterprise tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WGEN",
+      "wgen.io"
+    ],
+    "tags": [
+      "ai-analysis-automation",
+      "wordlist",
+      "password-cracking"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/wordlist/w-generator.md"
   },
   {
@@ -48772,41 +48790,47 @@
   {
     "id": "bookmarkee-bookmark-organizer",
     "name": "Bookmarkee Bookmark Organizer",
-    "description": "Online bookmark manager to organize links",
+    "description": "Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not a data-source.",
     "url": "https://www.bookmarkee.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Keeping a private, cross-device set of links/leads for a case in one dashboard.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Explicitly free — no charge, no ads, no email spam per the site. Requires a registered account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is workflow infrastructure, not a lookup — but you are storing your investigation's links on a third-party server tied to an email/password. Use a dedicated sock-puppet account and never store links that reveal the target or your identity; mark pages private (default), not public.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-standing free consumer bookmark service (500k+ users); it holds whatever links you save, so treat it as untrusted storage.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Bookmarkee"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "documents-metadata",
+      "workflow",
+      "bookmark-manager",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/bookmarkee-bookmark-organizer.md"
   },
   {
@@ -62635,43 +62659,54 @@
   {
     "id": "bgp-malicious-content-ranking",
     "name": "BGP Malicious Content Ranking",
-    "description": "Identify malicious ASNs and networks",
+    "description": "Use when you have an `ip-address` or ASN and want to know how malicious the hosting network is — returns a threat-rank score for the Autonomous System.",
     "url": "https://bgpranking.circl.lu/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "bgp"
     ],
-    "bestFor": "Identify malicious ASNs and networks",
-    "input": "ASN or prefix",
-    "output": "Threat ranking, malicious activity metrics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Scoring an ASN/network for concentration of malicious activity from aggregated blocklists.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public service run by CIRCL; open-source, with API access — no account required.",
     "opsec": "passive",
-    "opsecNote": "Passive threat intelligence from public sources.",
+    "opsecNote": "You query CIRCL's aggregated blocklist database, not the target network, so the subject host gets no signal. Fully passive infrastructure reconnaissance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CIRCL (Computer Incident Response Center Luxembourg), a national CERT; open-source and widely used in threat-intel workflows.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "CIRCL BGP Ranking",
+      "BGP Ranking"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "bgp",
+      "threat-intel",
+      "asn"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "lookyloo"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/bgp/bgp-malicious-content-ranking.md"
   },
   {
@@ -64820,41 +64855,51 @@
   {
     "id": "cloudfail",
     "name": "CloudFail",
-    "description": "Bypass Cloudflare to find origin IP",
+    "description": "Use when you have a Cloudflare-fronted `domain` and want to uncover the real origin server — returns candidate origin `ip-address`(es) and subdomains.",
     "url": "https://github.com/m0rtem/CloudFail",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "protected-by-cloud-services"
     ],
-    "bestFor": "Bypass Cloudflare to find origin IP",
-    "input": "Domain protected by Cloudflare",
-    "output": "Origin IP address (if discoverable)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding the origin IP behind Cloudflare via DNS history, the Crimeflare DB, and subdomain brute-forcing.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (MIT) Python3 CLI tool on GitHub; no account.",
     "opsec": "active",
-    "opsecNote": "Uses active enumeration and DNS history techniques.",
+    "opsecNote": "This is ACTIVE — the subdomain brute-force phase sends thousands of DNS/HTTP requests that can hit the target's infrastructure and be logged. Run it through Tor (`--tor`) and only against systems you are authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used community tool (2.7k+ stars) but no formal releases and reliant on third-party datasets (DNSDumpster, Crimeflare) whose freshness varies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "m0rtem CloudFail"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "cloudflare",
+      "origin-ip",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/protected-by-cloud-services/cloudfail.md"
   },
   {
@@ -66034,41 +66079,49 @@
   {
     "id": "default-passwords-db",
     "name": "Default Passwords DB",
-    "description": "OSINT tool: Default Passwords DB.",
+    "description": "Use when you have a device/vendor `employer-org` or product model and want its factory default credentials — returns candidate default `password`(s) for authorised testing.",
     "url": "https://cirt.net/passwords/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "default-passwords"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up factory default usernames/passwords for network devices and software by vendor.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, publicly accessible reference database on cirt.net (maintainers of Nikto); no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the database is passive — it is a static reference and reveals nothing about any target. Actually using a default credential against a live device is active, intrusive, and must be authorised.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing reference maintained by the CIRT.net / Nikto project; entries are community-contributed and may be dated for newer hardware.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CIRT.net default password database"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "default-passwords",
+      "credentials"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/default-passwords/default-passwords-db.md"
   },
   {
@@ -66870,43 +66923,52 @@
   {
     "id": "dnssec-analyzer",
     "name": "DNSSEC Analyzer",
-    "description": "DNSSEC chain-of-trust validation",
+    "description": "Use when you have a `domain` and want to validate its DNSSEC chain of trust — returns a step-by-step signature/validation status for the zone.",
     "url": "https://dnssec-analyzer.verisignlabs.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "dnssec"
     ],
-    "bestFor": "DNSSEC chain-of-trust validation",
-    "input": "Domain names",
-    "output": "DNSSEC validation status and chain details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a domain's DNSSEC is correctly signed and the chain of trust validates end to end.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public service hosted by Verisign Labs; no account.",
     "opsec": "passive",
-    "opsecNote": "No identification risk; passive DNS lookup",
+    "opsecNote": "A standard public DNS/DNSSEC lookup performed by Verisign's resolver, not by you against the target — passive, with no signal to the domain owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Verisign Labs, the .com/.net registry operator and a core DNS authority; results are authoritative for DNSSEC validation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "Verisign DNSSEC Debugger"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "dnssec",
+      "dns"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "verisign"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/dnssec/dnssec-analyzer.md"
   },
   {
@@ -68179,42 +68241,51 @@
   {
     "id": "expireddomains-net",
     "name": "Expireddomains.net",
-    "description": "lists of deleted and expired domains (last 7 days)",
+    "description": "Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching `domain`s with backlink, archive and DNS data.",
     "url": "https://www.expireddomains.net/deleted-domains/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Searching hundreds of millions of expired/deleted domains with age, backlink and archive metrics.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search after a free account registration; full filters and complete listings require the (free) login, with premium tiers for heavier use.",
+    "opsec": "passive",
+    "opsecNote": "You query expireddomains.net's own aggregated index, not any target's live infrastructure — passive. Register with a sock-puppet email; the account is what unlocks filters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established, widely-used dropped-domain search engine; metrics are aggregated from third-party sources (backlinks, Archive.org) and are indicative rather than authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ExpiredDomains.net",
+      "deleted domains search"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Databases of domains"
+      "domains-ip-infrastructure",
+      "domains",
+      "passive-dns"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/expireddomains-net.md"
   },
   {
@@ -75748,43 +75819,50 @@
   {
     "id": "malwareurl",
     "name": "MalwareURL",
-    "description": "Malware URL reputation checking",
+    "description": "Use when you have a `domain`, `ip-address`, or URL and want to check whether it is flagged as malicious — returns a reputation/threat classification.",
     "url": "https://www.malwareurl.com/index.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "domain-blacklists"
     ],
-    "bestFor": "Malware URL reputation checking",
-    "input": "URL",
-    "output": "Reputation report, blocklist data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a domain/URL/IP is listed for malware, phishing, or DDoS activity.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free site-reputation lookup on the website; downloadable blacklists and the perimeter-protection/monitoring portal are commercial (14-day trial).",
     "opsec": "passive",
-    "opsecNote": "Free lookup service available; commercial network integration available",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "You are querying MalwareURL's own reputation database, not touching the target host, so the subject gets no signal. Do not visit a flagged URL directly from an attributable browser.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running commercial threat-intelligence vendor; the free lookup is a teaser for paid feeds and coverage/false-positive rates are not independently audited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "aliases": [
+      "MalwareURL site reputation lookup"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "domain-blacklists",
+      "threat-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/malwareurl.md"
   },
   {
@@ -76569,59 +76647,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/mlsecproject-combine.md"
-  },
-  {
-    "id": "mmhdan",
-    "name": "MMHDAN",
-    "description": "Calculate a fingerprint of a website (HTML, Favicon, Certificate in SHA1, SHA256, MD5, MMH3) and create the quick links to search it in IOT search engines",
-    "url": "https://mmhdan.herokuapp.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "osm-finder",
-      "query-server",
-      "redditsearch",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/mmhdan.md"
   },
   {
     "id": "mnemonic",
@@ -108005,44 +108030,54 @@
   {
     "id": "eu-consolidated-corporate-registers",
     "name": "EU consolidated corporate registers",
-    "description": "Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.",
+    "description": "Use when you have a company `name` (or a subject's likely `employer-org`) and want to find its official registration across the EU, Iceland, Liechtenstein and Norway — returns company records and linked officers/associates.",
     "url": "https://e-justice.europa.eu/content_find_a_company-489-en.do",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the interconnected business registers of all EU member states plus EEA countries from one official portal.",
     "selectorsIn": [
       "employer-org",
       "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search via the EU e-Justice \"Find a company\" portal (BRIS). Individual national registers may charge for full certified extracts.",
+    "opsec": "passive",
+    "opsecNote": "Public official-record search; you query the EU portal, not the subject, so there is no signal to the target. Some national registers log access for certified documents — use the free search for reconnaissance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official EU e-Justice portal (Business Registers Interconnection System) aggregating member-state registers — authoritative primary-source data.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BRIS",
+      "EU Business Registers Interconnection System",
+      "Find a company e-Justice"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
+      "financial-crypto",
+      "companies-finance",
+      "corporate-registry",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "e-justice-europa-eu",
       "eu-sanctions-tool",
@@ -154565,43 +154600,51 @@
   {
     "id": "peakvisor",
     "name": "PeakVisor",
-    "description": "Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun trails & weather data. In active development for OS research.",
+    "description": "Use when you have a photo showing mountains/terrain and a rough `geolocation` and want to identify peaks and confirm the vantage point — returns a refined `geolocation` via 3-D terrain matching.",
     "url": "https://peakvisor.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying mountain peaks and skyline/ridge lines in a photo to verify or narrow where it was taken.",
     "selectorsIn": [
       "geolocation",
-      "address"
+      "address",
+      "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web 3-D map and peak identification; a \"PeakVisor PRO\" subscription unlocks offline maps and advanced app features.",
+    "opsec": "passive",
+    "opsecNote": "You work against PeakVisor's terrain model and your own imagery, not the subject or their accounts — fully passive. No signal reaches anyone connected to the photo.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Well-regarded outdoor/terrain app used in the geolocation community (listed in Bellingcat's toolkit); peak data is crowd/DB-sourced and generally accurate for named summits.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PeakVisor 3D map"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "maps"
+      "maps-geospatial-data",
+      "geolocation",
+      "terrain",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "peakvisor-com"
     ],
@@ -173284,42 +173327,50 @@
   {
     "id": "geotagonline",
     "name": "GeoTagOnline",
-    "description": "add fake geotags to photo",
+    "description": "Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadata-exif` set.",
     "url": "https://geotagonline.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Reading or writing the GPS/geolocation EXIF header of JPG photos in bulk from the browser.",
     "selectorsIn": [
-      "geolocation",
-      "image"
-    ],
-    "selectorsOut": [
+      "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser-based geotagging for JPGs; marketed for local-SEO. No account needed for basic use.",
+    "opsec": "passive",
+    "opsecNote": "Runs in-browser for tagging your own images, so it does not touch any target. The OpSec use here is defensive/sock-puppet — crafting or scrubbing EXIF geolocation on photos you publish so they don't leak your real location. Never upload a subject's sensitive images to a third-party site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small commercial SEO utility; fine for writing EXIF tags on your own images, but it is a third-party site — do not feed it evidence photos.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Geotag Online"
+    ],
     "tags": [
-      "Sock Puppets"
+      "opsec-investigator-tooling",
+      "metadata",
+      "sock-puppet",
+      "exif"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/geotagonline.md"
   },
   {
@@ -179226,41 +179277,50 @@
   {
     "id": "overcast-podcast-app-mobile-ios",
     "name": "Overcast Podcast App (Mobile – iOS)",
-    "description": "App for mobile devices for podcasting services",
+    "description": "Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, not a data-source that resolves selectors.",
     "url": "https://itunes.apple.com/ca/app/overcast-podcast-player/id888422857?mt=8",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Playing, chapter-scrubbing and re-listening to podcast episodes a subject appears in or produces, on an iOS device.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free on the iOS App Store (optional paid tier removes nothing essential for listening).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Playback is passive — subscribing to or streaming a public podcast does not notify the creator. Do it on a sock-puppet device/Apple ID if you want no linkage; avoid interacting (ratings, reviews) which are attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Well-known independent iOS podcast client by Marco Arment; the app itself is reputable, though the intelligence value is only in the public podcast content you play through it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Overcast",
+      "Overcast podcast player"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "opsec-investigator-tooling",
+      "mobile-app",
+      "podcast",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/overcast-podcast-app-mobile-ios.md"
   },
   {
@@ -284082,42 +284142,6 @@
     "_file": "library/tools/search-engines/niche.md"
   },
   {
-    "id": "nod",
-    "name": "Nod",
-    "description": "OSINT tool: Nod.",
-    "url": "http://get-nod.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news-digest-and-discovery-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/nod.md"
-  },
-  {
     "id": "notey",
     "name": "Notey",
     "description": "OSINT tool: Notey.",
@@ -302540,35 +302564,47 @@
   {
     "id": "check-channel-badges",
     "name": "Check channel badges",
-    "description": "OSINT tool: Check channel badges.",
+    "description": "Use when you have a Twitch `username` and want to see that channel's custom sub/bit badges — returns `social-profile` corroboration and evidence of a monetised, established channel.",
     "url": "https://cactus.tools/twitch/badges",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Listing the subscriber and bit-cheer badges configured on a Twitch channel.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool, part of the cactus.tools Twitch utility collection; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads Twitch's public badge data via the channel name — you never authenticate or interact with the target, so no signal reaches them. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent Twitch tool by \"Alex\" (cactus.tools); it surfaces public Twitch data, so accuracy tracks Twitch's own API.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "cactus.tools twitch badges"
+    ],
+    "tags": [
+      "social-networks",
+      "twitch"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "check-twitch-follow-length",
       "twitch-following",
@@ -334294,35 +334330,50 @@
   {
     "id": "twitch-payout-search",
     "name": "Twitch Payout Search",
-    "description": "OSINT tool: Twitch Payout Search.",
+    "description": "Use when you have a Twitch `username` (or streamer `name`) and want to check their subscription earnings from the Oct-2021 Twitch leak — returns a payout figure that corroborates the account and its scale.",
     "url": "https://sizeof.cat/project/twitch-payout-search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a top-10k Twitch streamer's Aug 2019–Sep 2021 subscription earnings from the leaked payout data.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, browser-only tool; no account or payment. All data is processed client-side.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The search runs entirely in your browser against a local copy of the leaked dataset — nothing is uploaded and no query hits Twitch, so the subject gets no signal. Note the data itself is a stolen leak; handling it may carry legal/ethical constraints depending on your jurisdiction and purpose.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Hobby project by sizeof(cat) built on the Oct-2021 Twitch breach; figures match the widely-circulated leak but are not officially confirmed by Twitch.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Twitch leak payout lookup",
+      "sizeof cat twitch payouts"
+    ],
+    "tags": [
+      "social-networks",
+      "financial",
+      "data-breach"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "ransomware-darknet-websites"
     ],

@@ -79,7 +79,7 @@ kind: group-index
 - **`chat-downloader`** (medium) — Use when you have a `social-profile` / livestream or VOD URL and want the full chat log — returns commenter `username`s, `name`s, and timest
 - **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
 - **`chearch`** (medium) — Use when you have a Reddit `username` or keyword and want to query historical Reddit posts/comments with filters — returns matching posts/co
-- **`check-channel-badges`** (low) — OSINT tool: Check channel badges.
+- **`check-channel-badges`** (low) — Use when you have a Twitch `username` and want to see that channel's custom sub/bit badges — returns `social-profile` corroboration and evid
 - **`check-twitch-follow-length`** (low) — OSINT tool: Check Twitch follow length.
 - **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
 - **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
@@ -629,7 +629,7 @@ kind: group-index
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.
 - **`twitch-insights`** (medium) — Use when you have a Twitch `username` (or numeric ID) and want to confirm the account exists, when it was created, and whether it is a known
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
-- **`twitch-payout-search`** (low) — OSINT tool: Twitch Payout Search.
+- **`twitch-payout-search`** (low) — Use when you have a Twitch `username` (or streamer `name`) and want to check their subscription earnings from the Oct-2021 Twitch leak — ret
 - **`twitch-recover`** (medium) — Use when you have a Twitch channel `username` (or stream ID/timestamp) and want to recover deleted, sub-only or unlisted VODs, clips and str
 - **`twitch-stream-filter`** (medium) — Use when you want to find live Twitch streams by criteria — title, game, language, viewer count, broadcaster type — returns `social-profile`
 - **`twitch-tools-lolarchiver-com`** (high) — Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, 

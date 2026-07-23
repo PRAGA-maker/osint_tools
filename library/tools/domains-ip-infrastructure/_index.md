@@ -159,7 +159,7 @@ kind: group-index
 - **`etda`** (low) — OSINT tool: ETDA.
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
 - **`expandurl`** (low) — URL expander that resolves shortened links to their final destination. Referenced in sinwindie's MISC URL Expander bookmarklet.
-- **`expireddomains-net`** (low) — lists of deleted and expired domains (last 7 days)
+- **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
 - **`fast-google-dorks-scan`** (low) — Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.
 - **`favfreak`** (low) — #python tool for using favicon.ico hashes for finding new assets/IP addresses and technologies owned by a company.
 - **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
@@ -288,7 +288,6 @@ kind: group-index
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
 - **`mksub`** (low) — A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Subli
-- **`mmhdan`** (low) — Calculate a fingerprint of a website (HTML, Favicon, Certificate in SHA1, SHA256, MD5, MMH3) and create the quick links to search it in IOT 
 - **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
 - **`moz-link-explorer`** (low) — Analyse the links of any website.
 - **`mx-toolbox-blacklist-check`** (medium) — Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation 

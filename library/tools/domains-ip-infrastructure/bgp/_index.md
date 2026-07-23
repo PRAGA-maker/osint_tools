@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/bgp
 
 ## Skills here
-- **`bgp-malicious-content-ranking`** (low) — Identify malicious ASNs and networks
+- **`bgp-malicious-content-ranking`** (low) — Use when you have an `ip-address` or ASN and want to know how malicious the hosting network is — returns a threat-rank score for the Autonom
 - **`hurricane-electric-bgp-toolkit`** (low) — BGP analysis and routing intelligence
 - **`peeringdb`** (low) — Use when you have an ASN, network/org name or `ip-address` and want the operator behind it — org, facilities, IX presence and NOC contacts —
 

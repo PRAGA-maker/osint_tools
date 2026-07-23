@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`default-password-lookup-utility`** (low) — OSINT tool: Default Password Lookup Utility.
-- **`default-passwords-db`** (low) — OSINT tool: Default Passwords DB.
+- **`default-passwords-db`** (low) — Use when you have a device/vendor `employer-org` or product model and want its factory default credentials — returns candidate default `pass
 - **`default-passwords-list`** (low) — OSINT tool: Default passwords list.
 - **`default-router-passwords`** (low) — Use when you have a router/DVR/camera make and model (`device-id`) and want its factory default login — returns the default `password` and u
 - **`hashes-org`** (low) — OSINT tool: Hashes.org.

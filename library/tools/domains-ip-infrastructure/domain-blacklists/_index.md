@@ -10,7 +10,7 @@ kind: group-index
 - **`blackweb`** (low) — Squid proxy malware filtering
 - **`critical-stack-intel`** (low) — Network IDS threat intelligence
 - **`dns-sinkhole`** (low) — DNS-based malware blocking
-- **`malwareurl`** (low) — Malware URL reputation checking
+- **`malwareurl`** (low) — Use when you have a `domain`, `ip-address`, or URL and want to check whether it is flagged as malicious — returns a reputation/threat classi
 - **`scumware-org`** (low) — Malware and spyware domain research
 - **`shadowserver-foundation`** (low) — IP/domain reputation and abuse intelligence
 - **`zeus-c2-tracker`** (low) — Zeus botnet C2 blocking

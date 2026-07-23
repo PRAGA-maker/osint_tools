@@ -43,7 +43,7 @@ kind: group-index
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool
 - **`bitly-url-shortener-and-link-manager`** (low) — Tool for shortening URL address hyperlinks
-- **`bookmarkee-bookmark-organizer`** (low) — Online bookmark manager to organize links
+- **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
 - **`bubbl-us-online-flow-chart-tool`** (low) — Tool for creating online flow charts using linked bubbles
 - **`bubbly`** (low) — A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their a
