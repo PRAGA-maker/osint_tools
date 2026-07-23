@@ -99,7 +99,7 @@ kind: group-index
 - **`censys-ipv4`** (low) — OSINT tool: Censys IPv4.
 - **`central-ops`** (low) — OSINT tool: Central Ops.
 - **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
-- **`certificate-search`** (low) — OSINT tool: Certificate Search.
+- **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
@@ -123,7 +123,7 @@ kind: group-index
 - **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
 - **`cve-binary-tool`** (low) — Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with se
-- **`cve-map`** (low) — Simple #go command line tool for getting information about CVEs: by ID, by vendor, by product, by severity, by cvss score and much more.
+- **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
 - **`dark-web-informer`** (low) — OSINT tool: Dark Web Informer.
 - **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
@@ -218,7 +218,7 @@ kind: group-index
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
-- **`infosniper`** (low) — OSINT tool: Infosniper.
+- **`infosniper`** (low) — Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host de
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.

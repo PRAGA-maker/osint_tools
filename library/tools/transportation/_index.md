@@ -156,7 +156,7 @@ kind: group-index
 - **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis
 - **`rzjets-net`** (low) — user updated online database (census) of civilian jet and turbojet aircraft
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
-- **`searates-container-tracking`** (low) — tracking a shipping container by number
+- **`searates-container-tracking`** (low) — Use when you have a shipping container, Bill of Lading, or booking number (`document-id`) and want its current position and route — returns 
 - **`searchquarry`** (medium) — Use when you have a US `vehicle-plate`, `vin` or `name` and want vehicle/public-records data — a commercial lookup whose free tier only conf
 - **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.
 - **`ship-spotting`** (low) — OSINT tool: Ship Spotting.

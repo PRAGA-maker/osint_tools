@@ -57,7 +57,7 @@ kind: group-index
 - **`learn-languages`** (low) — OSINT tool: Learn Languages.
 - **`lexicool-translation`** (low) — OSINT tool: Lexicool Translation.
 - **`lexilogos-com`** (low) — OSINT tool: lexilogos.com.
-- **`lexilogos`** (low) — OSINT tool: Lexilogos.
+- **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
 - **`linguee-english-french-dictionary`** (low) — Tool for translating text and web content from one language to another; including a language translation dictionary
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
@@ -82,7 +82,7 @@ kind: group-index
 - **`signing-savvy-sign-language-translator`** (low) — Translates English text to sign language
 - **`slangit`** (low) — Slang dictionary for learning slang terms, acronyms, abbreviations, and emoticons
 - **`smallseotools-plagiarism-checker`** (low) — Language and academic-related program that matches uploaded text against a database of text material, checking for plagiarsim and copyright 
-- **`smart-words-org`** (low) — OSINT tool: smart-words.org.
+- **`smart-words-org`** (low) — Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbrevi
 - **`stars21-com`** (low) — OSINT tool: stars21.com.
 - **`superemojitranslator-com`** (low) — OSINT tool: superemojitranslator.com.
 - **`symbols-com`** (low) — Language-related directory of one of the webs largest collections for symbols, signs and flags

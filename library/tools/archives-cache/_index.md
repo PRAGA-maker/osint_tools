@@ -61,7 +61,6 @@ kind: group-index
 - **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
 - **`lumen`** (low) — A research project collecting and publishing legal takedown notices for online content transparency
 - **`lux-leaks`** (medium) — Use when you have an `employer-org` (a large company) and want to know if it appears in the Luxembourg Leaks tax-ruling investigation — retu
-- **`memento-timetravel`** (low) — Meta-archive search across multiple web-archive providers.
 - **`mention`** (low) — OSINT tool: Mention.
 - **`metawarc`** (medium) — Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamp
 - **`microsystools-com`** (low) — Use when you have a `domain` you need to preserve and want a full offline copy — returns a locally-saved, browsable snapshot of the entire s

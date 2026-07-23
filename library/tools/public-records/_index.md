@@ -662,7 +662,7 @@ kind: group-index
 - **`open-data-policing`** (medium) — Use when you have a location, agency, or officer ID and want to analyze traffic-stop patterns — returns aggregate stop, search, and use-of-f
 - **`open-data-portal-m-nchen-german`** (low) — Use when you need official Munich municipal datasets (statistics, geography, infrastructure) to ground-truth a location or administrative co
 - **`open-knowledge-maps`** (medium) — Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an auth
-- **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
+- **`opendata-by-socrata`** (low) — Use when you have a `name` or `address` and want to mine open government datasets (permits, licenses, salaries, property, inspections) — ret
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
 - **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.

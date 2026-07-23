@@ -102,7 +102,7 @@ kind: group-index
 - **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
-- **`coveryourtracks-eff-org`** (low) — can tell a lot about your browser and computer, including showing a list of installed fonts on the system.
+- **`coveryourtracks-eff-org`** (low) — Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uni
 - **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
 - **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
 - **`crontab-guru`** (low) — Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and ne

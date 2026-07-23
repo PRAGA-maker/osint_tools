@@ -20328,52 +20328,6 @@
     "_file": "library/tools/archives-cache/lux-leaks.md"
   },
   {
-    "id": "memento-timetravel",
-    "name": "Memento TimeTravel",
-    "description": "Meta-archive search across multiple web-archive providers.",
-    "url": "http://timetravel.mementoweb.org/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "Aggregator that finds archived copies of a URL across many web archives.",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "Mementoweb"
-    ],
-    "tags": [
-      "archive",
-      "aggregator",
-      "historical"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/memento-timetravel.md"
-  },
-  {
     "id": "mention",
     "name": "Mention",
     "description": "OSINT tool: Mention.",
@@ -64126,35 +64080,48 @@
   {
     "id": "certificate-search",
     "name": "Certificate Search",
-    "description": "OSINT tool: Certificate Search.",
+    "description": "Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns additional `domain` values.",
     "url": "https://osint.sh/crt/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Passive subdomain and hostname discovery for a domain by mining public TLS-certificate (CT) logs.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use as part of the osint.sh toolkit; no account required for the web lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads public Certificate Transparency logs — you never touch the target's own infrastructure, so subdomain discovery here is invisible to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of the free tools on osint.sh; it surfaces CT-log data (the same public source as crt.sh), so results are as reliable as the certificates that were logged.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "osint.sh certificate search",
+      "crt osint.sh"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "certificate-transparency",
+      "subdomain-enumeration"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search.md"
   },
   {
@@ -65837,42 +65804,44 @@
   {
     "id": "cve-map",
     "name": "CVE MAP",
-    "description": "Simple #go command line tool for getting information about CVEs: by ID, by vendor, by product, by severity, by cvss score and much more.",
+    "description": "Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity, CVSS, affected products, exploit/PoC status).",
     "url": "https://github.com/projectdiscovery/cvemap",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
+    "bestFor": "CLI querying and filtering of CVE data by ID, vendor, product, severity, or CVSS score for infrastructure/attack-surface context.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open source (ProjectDiscovery, MIT). Works without an account subject to a modest rate limit; a free ProjectDiscovery API key removes rate limiting.",
+    "opsec": "passive",
+    "opsecNote": "Queries ProjectDiscovery's CVE dataset, not any target host — no packets reach the subject's infrastructure. It is a lookup tool, not a scanner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by ProjectDiscovery, a well-known open-source security tooling group; now distributed as the successor CLI \"vulnx\", which the cvemap repo redirects to.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cvemap",
+      "vulnx"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "vulnerability-research"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "alertx",
       "dnsx",
@@ -70464,46 +70433,6 @@
     "_file": "library/tools/domains-ip-infrastructure/reputation/google-safe-browsing-api.md"
   },
   {
-    "id": "google-subdomains",
-    "name": "Google Subdomains",
-    "description": "Indexed subdomain discovery, publicly visible subdomain enumeration",
-    "url": "https://www.google.com/?gws_rd=ssl#q=site:%3Cdomain.com%3E",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "subdomains"
-    ],
-    "bestFor": "Indexed subdomain discovery, publicly visible subdomain enumeration",
-    "input": "Domain name (as Google Dork syntax: site:domain.com)",
-    "output": "Indexed subdomains and pages from Google search results",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses Google's search index; no direct contact with the target domain.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/subdomains/google-subdomains.md"
-  },
-  {
     "id": "google-trends",
     "name": "Google Trends",
     "description": "Search trend analysis and keyword research",
@@ -72303,37 +72232,46 @@
   {
     "id": "infosniper",
     "name": "Infosniper",
-    "description": "OSINT tool: Infosniper.",
+    "description": "Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host details.",
     "url": "http://www.infosniper.net",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Quick IP-to-location lookup showing country/region/city, coordinates on a map, and the ISP behind an address.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A handful of free lookups per day (≈5); full detail (city, coordinates, provider) and higher volume need a Pro pass (≈$7) or an API key.",
+    "opsec": "passive",
+    "opsecNote": "Query hits Infosniper's geolocation database, not the target host — the subject is not contacted or alerted. Never confuse the ISP's registered city with the person's real location.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent third-party geolocation aggregator; accuracy is database-derived and coarse (often only correct to country/region), not authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "infosniper.net"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "ip-geolocation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "info-sniper",
       "infosniper-net"
@@ -170074,37 +170012,44 @@
   {
     "id": "coveryourtracks-eff-org",
     "name": "coveryourtracks.eff.org",
-    "description": "can tell a lot about your browser and computer, including showing a list of installed fonts on the system.",
+    "description": "Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uniqueness, tracker exposure, and installed-font/fingerprint surface.",
     "url": "https://coveryourtracks.eff.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Auditing your own OPSEC browser for fingerprinting uniqueness and tracker/ad-network exposure.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free EFF project; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Point it at your OWN investigation browser, never a target. It profiles the browser making the request; run it from your sock-puppet/VM to see exactly how unique that identity looks before you use it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Electronic Frontier Foundation (EFF); the successor to Panopticlick and a well-regarded reference on browser fingerprinting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Cover Your Tracks",
+      "Panopticlick successor"
+    ],
     "tags": [
-      "Browser analyze"
+      "Browser analyze",
+      "opsec",
+      "fingerprinting"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "electronic-frontier-foundation-eff-tools",
       "https-everywhere",
@@ -245398,35 +245343,52 @@
   {
     "id": "opendata-by-socrata",
     "name": "OpenData by Socrata",
-    "description": "OSINT tool: OpenData by Socrata.",
+    "description": "Use when you have a `name` or `address` and want to mine open government datasets (permits, licenses, salaries, property, inspections) — returns `address`, `employer-org`, and other record fields.",
     "url": "https://opendata.socrata.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Cross-searching government open-data portals for records tied to a person, business, or address.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and query datasets; a free app token only raises API rate limits and is not needed for manual search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a public data catalogue, not the subject. No contact with the target; queries may be logged by Socrata/Tyler but reveal only your interest, never the subject's involvement.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Platform operated by Tyler Technologies (Socrata); each dataset is published by a government agency, so accuracy depends on the publishing body, not Socrata.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Socrata Open Data",
+      "data.socrata.com"
+    ],
+    "tags": [
+      "public-records",
+      "open-data",
+      "government-datasets"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/opendata-by-socrata.md"
   },
   {
@@ -343138,37 +343100,47 @@
   {
     "id": "lexilogos",
     "name": "Lexilogos",
-    "description": "OSINT tool: Lexilogos.",
+    "description": "Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to read or romanize it — supports cross-script `name` work.",
     "url": "https://www.lexilogos.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A portal of 400+ language dictionaries plus on-screen keyboards for typing and transliterating non-Latin scripts.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use, supported by donations; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A reference site — you look up words and type characters locally. No selector about the subject is sent anywhere identifying; treat it as a passive language aid.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running independent scholarly portal (Xavier Nègre, 2002–present); it links out to many third-party dictionaries whose quality varies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "lexilogos.com"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "transliteration",
+      "dictionaries"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "lexilogos-com"
     ],
@@ -344407,38 +344379,43 @@
   {
     "id": "smart-words-org",
     "name": "smart-words.org",
-    "description": "OSINT tool: smart-words.org.",
+    "description": "Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbreviations and acronyms.",
     "url": "https://www.smart-words.org/abbreviations/text.html",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding internet/SMS abbreviations and acronyms (LOL, IMHO, 2moro, etc.) found in messages.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference page; no account required.",
+    "opsec": "passive",
+    "opsecNote": "A static reference list. You read it locally; nothing about the subject or the message you are decoding is transmitted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general-purpose reference site's abbreviation glossary; useful and broadly correct but not an authoritative or actively curated lexicon.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "smart-words.org abbreviations"
+    ],
     "tags": [
       "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "Translation & Transcription Sites",
+      "slang-glossary"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/translation-language/smart-words-org.md"
   },
   {
@@ -352747,38 +352724,47 @@
   {
     "id": "searates-container-tracking",
     "name": "Searates container tracking",
-    "description": "tracking a shipping container by number",
+    "description": "Use when you have a shipping container, Bill of Lading, or booking number (`document-id`) and want its current position and route — returns `geolocation` and voyage status.",
     "url": "https://www.searates.com/container/tracking/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating an ocean-freight container on the world map and reading its transit status from a container/BL/booking number.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookups for basic tracking (no API key needed); high-volume/automated tracking is a paid SeaRates/DP World API.",
+    "opsec": "passive",
+    "opsecNote": "You query SeaRates' tracking service with a shipment identifier, not any person. Nothing is sent to the shipper/consignee; the query only reveals your interest to SeaRates.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by SeaRates (a DP World company); data is aggregated from carriers, so freshness and completeness depend on the carrier feeding the container.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "searates.com container tracking"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Maritime"
+      "Maritime",
+      "container-tracking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/transportation/searates-container-tracking.md"
   },
   {
