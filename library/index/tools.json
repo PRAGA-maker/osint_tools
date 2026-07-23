@@ -40799,36 +40799,55 @@
   },
   {
     "id": "onionsearch",
-    "name": "onionsearch",
-    "description": "OSINT tool: onionsearch.",
+    "name": "OnionSearch",
+    "description": "Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URLs matching the term as a CSV.",
     "url": "https://pypi.org/project/onionsearch/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "bestFor": "Bulk-querying 15+ darknet search engines from one command to collect .onion links matching a term.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (megadose/OnionSearch); install via pip. Runs against public darknet search engines at no cost.",
+    "opsec": "active",
+    "opsecNote": "Scraping .onion search engines is active reconnaissance on the darknet. Run it through Tor from an isolated/VM environment, never from an attributable IP. It only queries search engines (not the listed hidden services), but visiting any returned .onion still requires Tor and caution — treat results as untrusted/possibly illegal content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "python-lib",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known open-source tool by megadose (author of holehe/toutatis); widely used, but a community scraper dependent on volatile darknet engines.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "ahmia",
+      "torch"
+    ],
+    "aliases": [
+      "OnionSearch",
+      "megadose OnionSearch"
+    ],
+    "tags": [
+      "dark-web",
+      "tor",
+      "darknet-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/onionsearch.md"
   },
   {
@@ -65519,48 +65538,6 @@
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/critical-stack-intel.md"
   },
   {
-    "id": "crt-sh-certificate-search",
-    "name": "crt.sh - Certificate Search",
-    "description": "Certificate search, subdomain discovery via CT logs, detecting unauthorized certificates",
-    "url": "https://crt.sh/?",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "certificate-search"
-    ],
-    "bestFor": "Certificate search, subdomain discovery via CT logs, detecting unauthorized certificates",
-    "input": "Domain name (with or without wildcard)",
-    "output": "List of certificates issued to the domain with Subject Alternative Names and issue/expiry dates",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Queries public Certificate Transparency logs; does not contact the target domain.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "crt-certificate-search"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/certificate-search/crt-sh-certificate-search.md"
-  },
-  {
     "id": "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
     "name": "Crypto Scam & Crypto Phishing URL Threat Intel Feed",
     "description": "OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.",
@@ -79372,41 +79349,54 @@
   {
     "id": "packet-storm",
     "name": "Packet Storm",
-    "description": "OSINT tool: Packet Storm.",
+    "description": "Use when you have a software product, CVE, or `domain`'s tech stack and want public exploits, advisories, and tools affecting it — returns exploit code, advisories, and researcher handles.",
     "url": "https://packetstormsecurity.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "exploits"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding published exploits, security advisories, and tools for a given product or vulnerability.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public archive of exploits, advisories, and security tools; no account needed to browse or download.",
+    "opsec": "passive",
+    "opsecNote": "Browsing and downloading from Packet Storm is passive — you touch Packet Storm, not the target. Actually running any exploit against a system is active and likely illegal without authorisation; that is out of scope here. Use a clean/VM environment when handling exploit code.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established (since 1998) reputable security archive widely used by researchers and defenders.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "exploit-db",
+      "cve-search"
+    ],
+    "aliases": [
+      "Packet Storm Security",
+      "packetstormsecurity.com"
+    ],
+    "tags": [
+      "exploits",
+      "advisories",
+      "vulnerabilities"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/exploits/packet-storm.md"
   },
   {
@@ -85517,44 +85507,53 @@
   {
     "id": "threatingestor",
     "name": "ThreatIngestor",
-    "description": "Automated IOC collection and enrichment",
+    "description": "Use when you want to automate collecting indicators (`domain`, `ip-address`, hashes) from many threat feeds, RSS, and Twitter into one place — returns extracted, deduped IOCs.",
     "url": "https://github.com/InQuest/ThreatIngestor",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ioc-tools"
     ],
-    "bestFor": "Automated IOC collection and enrichment",
-    "input": "Multiple threat feeds and RSS sources",
-    "output": "Aggregated and enriched IOCs in repository",
+    "bestFor": "Automated, scheduled extraction of IOCs from RSS/Twitter/threat feeds into a store or downstream system.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (InQuest, Apache-2.0); self-hosted, so cost is only the feeds/APIs you point it at.",
     "opsec": "passive",
-    "opsecNote": "Passive aggregation of public threat feeds",
+    "opsecNote": "Runs on your own infrastructure and pulls from public feeds; nothing about a target is queried. Configure source API keys as secrets. Passive by nature, but you control where extracted IOCs are sent.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by InQuest, an established threat-intelligence vendor; widely used open-source project.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "iocextract",
       "omnibus"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ThreatIngestor",
+      "InQuest ThreatIngestor"
+    ],
+    "tags": [
+      "threat-intel",
+      "ioc",
+      "automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ioc-tools/threatingestor.md"
   },
   {
@@ -88033,50 +88032,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/weare-ie.md"
-  },
-  {
-    "id": "web-cam-taxi",
-    "name": "Web Cam Taxi",
-    "description": "open webcams around the world",
-    "url": "https://www.webcamtaxi.com/en/russia/moscow-province/badoo-office.html",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Communications, Internet, Technologies"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "webcamtaxi"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/web-cam-taxi.md"
   },
   {
     "id": "web-check",
@@ -125377,38 +125332,55 @@
   {
     "id": "webcamtaxi",
     "name": "Webcamtaxi",
-    "description": "OSINT tool: Webcamtaxi.",
+    "description": "Use when you have a `geolocation`/place and want live public webcams there to confirm current conditions, weather, or activity — returns live streams tied to `address`/coordinates.",
     "url": "https://www.webcamtaxi.com/en/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding curated live public webcams for a specific city, landmark, or region.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and watch; the site is ad-supported and embeds publicly available webcam streams.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive viewing of public webcam feeds — you observe a place, not a person, and no target is contacted. The site logs standard analytics; use a clean browser if the location matters operationally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community/commercial webcam directory embedding third-party public streams; individual cameras' locations and uptime are unverified.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "web-cam-taxi"
+      "earthcam",
+      "windy-webcams",
+      "insecam"
     ],
+    "aliases": [
+      "Webcam Taxi",
+      "webcamtaxi.com"
+    ],
+    "tags": [
+      "webcams",
+      "live-streams",
+      "geolocation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/webcamtaxi.md"
   },
   {
@@ -155073,38 +155045,54 @@
   {
     "id": "resource-watch",
     "name": "Resource Watch",
-    "description": "A free open-data platform that hosts 300+ datasets on different topics relating to the environment and human well-being, including real-time datasets.",
+    "description": "Use when you have a `geolocation` and want environmental/human-wellbeing context layers (fires, floods, land cover, air quality, conflict) — returns dated geospatial data for a place.",
     "url": "https://resourcewatch.org/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Overlaying 300+ environmental and socio-economic datasets on a map to add context to a location.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-data platform by World Resources Institute; datasets and the map viewer are free, with a public API.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of open geospatial datasets. No target interaction; the platform never learns your subject. Standard web analytics apply — use a clean browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the World Resources Institute (WRI); aggregates authoritative datasets (NASA, NOAA, etc.) with cited sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nasa-firms",
+      "sentinel-hub",
+      "global-forest-watch"
+    ],
+    "aliases": [
+      "Resource Watch",
+      "resourcewatch.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "geospatial"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/resource-watch.md"
   },
   {
@@ -167232,42 +167220,53 @@
   },
   {
     "id": "anonymox",
-    "name": "AnonymoX",
-    "description": "Browser extension for protecting your privacy and anonymous browsing",
+    "name": "anonymoX",
+    "description": "Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-address`; not a substitute for a trusted VPN/Tor.",
     "url": "https://www.anonymox.net/en",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "One-click, in-browser proxy to mask your IP or appear in another country for casual research.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier offers a handful of proxy identities/countries with bandwidth caps; premium unlocks more locations and speed.",
+    "opsec": "active",
+    "opsecNote": "This is an anonymity aid for YOU, not a target action — but a free third-party proxy extension is a weak one. It can see and log your traffic, leaks via WebRTC/DNS are common, and browser-only proxying does not cover other apps. For anything sensitive use a trusted VPN or Tor, not this. Treat it as light obfuscation only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial German browser-extension proxy; closed-source and free-proxy-based, so its handling of your traffic cannot be independently verified — do not trust it with sensitive activity.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mullvad-vpn",
+      "tor-browser"
+    ],
+    "aliases": [
+      "AnonymoX",
+      "anonymox.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "proxy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymox.md"
   },
   {
@@ -276590,39 +276589,57 @@
   },
   {
     "id": "hacker-news-algolia",
-    "name": "Hacker News Algolia",
-    "description": "Hacker News search engine with filters. Useful for finding all mentions of a product or person.",
+    "name": "Hacker News Search (Algolia)",
+    "description": "Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions, HN handles, and linked profiles.",
     "url": "https://hn.algolia.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Full-text search of all Hacker News posts and comments to surface mentions of a person, handle, company, or domain.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free full-text HN search powered by Algolia; no account. A free public API mirrors every query.",
+    "opsec": "passive",
+    "opsecNote": "Passive search of a public archive; the HN users you find are not notified. Queries hit Algolia's servers — use a clean browser for sensitive terms. Reading a user's HN profile is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Hacker News search, run by Algolia in partnership with Y Combinator; indexes the authentic HN corpus.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-advanced-search"
+    ],
+    "aliases": [
+      "HN Search",
+      "Algolia HN",
+      "hn.algolia.com"
+    ],
     "tags": [
       "Search engines",
-      "Bugbounty/vulnerabilities search tools"
+      "Bugbounty/vulnerabilities search tools",
+      "hacker-news"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/hacker-news-algolia.md"
   },
   {
@@ -279488,81 +279505,54 @@
   },
   {
     "id": "keywordtool",
-    "name": "KeywordTool",
-    "description": "OSINT tool: KeywordTool.",
+    "name": "Keyword Tool",
+    "description": "Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related query terms across Google/YouTube/Bing/etc.",
     "url": "http://keywordtool.io",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Harvesting search-engine autocomplete suggestions around a term to discover associated topics and phrasings.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The free tier lists autocomplete keyword suggestions; search volume, CPC, and full export are paywalled behind a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Passive keyword lookups against a third-party SEO service; the subject is never contacted. Queries reach keywordtool.io — use a clean browser for sensitive terms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial SEO keyword-research service that scrapes public autocomplete APIs; the suggestions are real, the analytics numbers are its own estimates.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-trends",
+      "answerthepublic"
+    ],
+    "aliases": [
+      "KeywordTool",
+      "keywordtool.io"
+    ],
     "tags": [
       "keywords-discovery-and-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "keywordtool-io"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/keywordtool.md"
-  },
-  {
-    "id": "keywordtool-io",
-    "name": "Keywordtool.io",
-    "description": "keyword matching for Google, YouTube, Amazon, Ebay, Bing, Instagram, Twitter",
-    "url": "https://keywordtool.io/search/keywords/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Keywords, trends, news analytics"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "keywordtool"
-    ],
-    "_file": "library/tools/search-engines/keywordtool-io.md"
   },
   {
     "id": "kiddle",
@@ -353854,39 +353844,58 @@
   },
   {
     "id": "understanding-war-map-room",
-    "name": "Understanding War Map Room",
-    "description": "collection of maps illustrating military conflicts in different countries.",
+    "name": "ISW Map Room",
+    "description": "Use when you have a conflict `geolocation` or date and want authoritative, dated control-of-terrain maps — returns front-line positions and named settlements over time.",
     "url": "https://www.understandingwar.org/map-room",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Reading dated, sourced conflict maps (front lines, control of terrain, strikes) for active war zones.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to view; the Institute for the Study of War publishes the maps openly, funded as a nonpartisan nonprofit.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of published analytical maps. No target interaction; ISW logs standard web analytics. Use a clean browser for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the Institute for the Study of War (ISW), a recognised Washington-based conflict-analysis institution whose assessments are sourced and widely cited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ua",
+      "ru",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "liveuamap",
+      "google-my-maps"
+    ],
+    "aliases": [
+      "Understanding War Map Room",
+      "ISW Interactive Map",
+      "understandingwar.org map room"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Military tracking"
+      "Military tracking",
+      "conflict-mapping"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/understanding-war-map-room.md"
   },
   {

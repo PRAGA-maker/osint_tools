@@ -14,7 +14,7 @@ kind: group-index
 - **`azure-gcp-discovery/`** — 5 skill(s) below.
 - **`bgp/`** — 3 skill(s) below.
 - **`blacklists/`** — 4 skill(s) below.
-- **`certificate-search/`** — 6 skill(s) below.
+- **`certificate-search/`** — 5 skill(s) below.
 - **`change-detection/`** — 6 skill(s) below.
 - **`cloud-configuration-analysis/`** — 5 skill(s) below.
 - **`default-passwords/`** — 7 skill(s) below.
@@ -458,7 +458,6 @@ kind: group-index
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
-- **`web-cam-taxi`** (low) — open webcams around the world
 - **`web-check`** (low) — OSINT tool: Web-Check.
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 

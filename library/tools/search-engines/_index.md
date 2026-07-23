@@ -299,7 +299,7 @@ kind: group-index
 - **`greynet-international`** (low) — OSINT tool: GreyNet International.
 - **`greynoise-io`** (low) — OSINT tool: Greynoise.io.
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
-- **`hacker-news-algolia`** (low) — Hacker News search engine with filters. Useful for finding all mentions of a product or person.
+- **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,
 - **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
 - **`hawaii-professional-and-vocational-license-search`** (medium) — Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and th
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
@@ -356,8 +356,7 @@ kind: group-index
 - **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
 - **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
-- **`keywordtool-io`** (low) — keyword matching for Google, YouTube, Amazon, Ebay, Bing, Instagram, Twitter
-- **`keywordtool`** (low) — OSINT tool: KeywordTool.
+- **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
 - **`kiddle`** (low) — Kid-friendly search engine.
 - **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
 - **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result

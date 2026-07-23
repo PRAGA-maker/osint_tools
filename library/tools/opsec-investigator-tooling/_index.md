@@ -38,7 +38,7 @@ kind: group-index
 - **`anonaddy`** (low) — OSINT tool: AnonAddy.
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Anonymous browsing service provider
-- **`anonymox`** (low) — Browser extension for protecting your privacy and anonymous browsing
+- **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
 - **`anydo-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
 - **`apple-app-store`** (low) — Website that provides searches for apps for Apple iOS-type mobile devices

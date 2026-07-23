@@ -181,7 +181,7 @@ kind: group-index
 - **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
 - **`uk-govt-vessel-lists`** (medium) — Use when you have a UK fishing `vessel-plate`/name and want official registration details — returns vessel name, RSS number, length, and hom
 - **`ukraine-liveuamap-com`** (low) — online tracking of war-related events in Ukraine.
-- **`understanding-war-map-room`** (low) — collection of maps illustrating military conflicts in different countries.
+- **`understanding-war-map-room`** (low) — Use when you have a conflict `geolocation` or date and want authoritative, dated control-of-terrain maps — returns front-line positions and 
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
 - **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Use when you have a vessel `name`, `employer-org` or keyword and want US Coast Guard marine-casualty investigation reports — returns documen
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres

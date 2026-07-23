@@ -72,7 +72,7 @@ kind: group-index
 - **`onion-search-engine`** (low) — OSINT tool: Onion search engine.
 - **`onion-search`** (low) — OSINT tool: Onion Search.
 - **`onions-darknetlive`** (low) — OSINT tool: Onions - Darknetlive.
-- **`onionsearch`** (low) — OSINT tool: onionsearch.
+- **`onionsearch`** (low) — Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URL
 - **`osint-me-1`** (low) — OSINT tool: osint.me 1.
 - **`osint-me-2`** (low) — OSINT tool: osint.me 2.
 - **`osint-me-3`** (low) — OSINT tool: osint.me 3.

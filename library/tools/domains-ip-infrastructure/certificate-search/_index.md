@@ -10,7 +10,6 @@ kind: group-index
 - **`censys`** (low) — Certificate discovery, host enumeration, exposure monitoring
 - **`certgraph`** (low) — Certificate mapping, domain relationship discovery, hostname enumeration via SSL certificates
 - **`certkit-certificate-transparency-log-search`** (low) — CT certificate search, subdomain enumeration, certificate misuse detection
-- **`crt-sh-certificate-search`** (low) — Certificate search, subdomain discovery via CT logs, detecting unauthorized certificates
 - **`google-s-certificate-transparency`** (low) — Certificate discovery, unauthorized cert detection, domain monitoring
 - **`spyse`** (low) — Domain intelligence, certificate discovery, subdomain enumeration, vulnerability identification
 

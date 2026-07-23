@@ -306,7 +306,7 @@ kind: group-index
 - **`webcam-nl-nl`** (medium) — Use when you have a Dutch `geolocation` or `address` and want live public-camera imagery of that spot — returns `image` (live video stills).
 - **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
 - **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.
-- **`webcamtaxi`** (low) — OSINT tool: Webcamtaxi.
+- **`webcamtaxi`** (low) — Use when you have a `geolocation`/place and want live public webcams there to confirm current conditions, weather, or activity — returns liv
 - **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio
 - **`whatiswhere-com`** (medium) — Use when you have an approximate geolocation and want every nearby point-of-interest of a given type — returns candidate addresses and geolo
 - **`whatiswhere`** (high) — Use when you have a `geolocation` or `address` and want to enumerate every nearby point-of-interest by type/keyword — returns `geolocation` 
