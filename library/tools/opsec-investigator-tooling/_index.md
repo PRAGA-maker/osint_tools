@@ -361,7 +361,6 @@ kind: group-index
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Python tool for automating password hash detection (based on Hashcat). It can work with single strings as well as with long lists of hashes 
-- **`searchonymous`** (low) — Firefox browser add-on that lets you search Google anonymously while remaining logged in
 - **`security-first-umbrella`** (low) — OSINT tool: Security First - Umbrella.
 - **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
 - **`send-text-free`** (low) — OSINT tool: Send text free.

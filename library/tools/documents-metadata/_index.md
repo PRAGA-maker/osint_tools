@@ -223,8 +223,7 @@ kind: group-index
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — tool for filtering RSS feeds
 - **`site-dorks`** (low) — Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites
-- **`slide-share`** (low) — Search and share slide shows, presentations, infographics, documents, and more
-- **`slideshare`** (low) — OSINT tool: SlideShare.
+- **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
 - **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
 - **`snagit`** (low) — Program that provides screen capture services, currently the best commercial program for this action
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black

@@ -247,14 +247,14 @@ kind: group-index
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
 - **`ollama`** (low) — Private AI analysis of sensitive OSINT data, local document processing without cloud exposure
-- **`onion-lookup`** (low) — OSINT tool: onion-lookup.
+- **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — OSINT tool: Online Tools.
 - **`open-dns`** (low) — OSINT tool: Open DNS.
 - **`open-pgp`** (low) — OSINT tool: Open PGP.
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
-- **`openrefine`** (low) — OSINT tool: OpenRefine.
+- **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
 - **`oryon-osint-query-tool`** (low) — Construct investigations links in Google Sheet
 - **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.

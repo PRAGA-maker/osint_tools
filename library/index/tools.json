@@ -9983,37 +9983,48 @@
   {
     "id": "onion-lookup",
     "name": "onion-lookup",
-    "description": "OSINT tool: onion-lookup.",
+    "description": "Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-dates, related indicators) from the AIL project.",
     "url": "https://onion.ail-project.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a .onion hidden service exists and retrieving its indexed metadata.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "You query the AIL project's index over the clearnet, not the hidden service itself — so you do NOT connect to the .onion (no Tor circuit to the target, no footprint on it). This is safer than visiting the onion directly. Data is whatever AIL has previously crawled, so absence means \"not indexed,\" not \"doesn't exist.\"",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Part of the AIL Project by CIRCL (Luxembourg CERT), a reputable threat-intel org; open source (AGPLv3).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "onion-lookup",
+      "AIL onion lookup"
+    ],
     "tags": [
+      "dark-web",
+      "onion-services",
       "threat-intelligence"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/onion-lookup.md"
   },
   {
@@ -10231,37 +10242,44 @@
   {
     "id": "openrefine",
     "name": "OpenRefine",
-    "description": "OSINT tool: OpenRefine.",
+    "description": "Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a local tool for wrangling tabular data before analysis.",
     "url": "https://github.com/OpenRefine",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Cleaning, deduplicating, clustering, and reconciling messy tabular data (CSV/JSON/etc.) locally.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "OpenRefine runs locally (a server on your own machine, viewed in the browser), so your data never leaves your host unless you deliberately use a reconciliation service or fetch-URLs feature — those DO send data out, so disable/avoid them for sensitive datasets. Ideal for handling case data offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Mature, well-known open-source data-wrangling tool (formerly Google Refine); runs offline and is widely used in data journalism and OSINT.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OpenRefine",
+      "Google Refine"
+    ],
     "tags": [
-      "other-tools"
+      "data-cleaning",
+      "data-wrangling",
+      "reconciliation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/openrefine.md"
   },
   {
@@ -58163,25 +58181,32 @@
   },
   {
     "id": "slide-share",
-    "name": "Slide Share",
-    "description": "Search and share slide shows, presentations, infographics, documents, and more",
+    "name": "SlideShare",
+    "description": "Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org context, and document leads with metadata.",
     "url": "https://www.slideshare.net/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's uploaded slide decks/documents and the professional context (and metadata) they reveal.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public SlideShare content and profiles is passive and doesn't notify the uploader. SlideShare is a LinkedIn/Scribd property, so a viewing account links to that identity — browse logged-out or with a sock puppet. Downloaded decks may carry document metadata (author, software, timestamps) worth extracting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A mainstream slide/document-sharing platform (now under Scribd); content is user-uploaded, useful as leads and for the metadata it carries.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58190,58 +58215,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SlideShare",
+      "slideshare.net"
+    ],
     "tags": [
+      "presentations",
+      "document-search",
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "slideshare"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/slide-share.md"
-  },
-  {
-    "id": "slideshare",
-    "name": "SlideShare",
-    "description": "OSINT tool: SlideShare.",
-    "url": "http://www.slideshare.net",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "document-and-slides-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "slide-share"
-    ],
-    "_file": "library/tools/documents-metadata/slideshare.md"
   },
   {
     "id": "slink-url-shortener",
@@ -70714,32 +70701,38 @@
   },
   {
     "id": "google-safe-browsing-api",
-    "name": "Google Safe Browsing API",
-    "description": "Malware and phishing URL detection",
+    "name": "Google Safe Browsing",
+    "description": "Use when you have a `domain`/URL and want Google's verdict on whether it's flagged for malware, phishing, or unwanted software — returns a safe/unsafe classification and threat type.",
     "url": "https://developers.google.com/safe-browsing/?csw=1",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "Malware and phishing URL detection",
+    "bestFor": "Checking whether a URL/domain is on Google's malware/phishing/unwanted-software blocklists.",
     "input": "URL or domain",
     "output": "Safe/unsafe classification, threat type",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
     "opsec": "passive",
-    "opsecNote": "Free for non-commercial use; commercial use requires Web Risk API (paid)",
+    "opsecNote": "You query Google's precomputed threat lists, not the suspect site, so you don't touch the target and it isn't alerted. The Site Status transparency page needs no account; the API needs a Google Cloud key (free for non-commercial — commercial use requires the paid Web Risk API). Use a dedicated Google/Cloud project for the key.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google service powering browser safe-browsing warnings; authoritative for what Google itself flags.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -70747,11 +70740,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Safe Browsing",
+      "Google Safe Browsing API",
+      "Transparency Report Site Status"
+    ],
+    "tags": [
+      "url-reputation",
+      "phishing-detection",
+      "malware"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/google-safe-browsing-api.md"
   },
   {
@@ -84538,29 +84539,42 @@
   {
     "id": "spiderfoot",
     "name": "SpiderFoot",
-    "description": "Automated recon, attack surface mapping, threat intelligence",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, `name`, or `phone` and want automated multi-source recon — 200+ modules correlate it into related domains, IPs, profiles, and breaches.",
     "url": "https://github.com/smicallef/spiderfoot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "saas-footprinting"
     ],
-    "bestFor": "Automated recon, attack surface mapping, threat intelligence",
+    "bestFor": "Automated, multi-source OSINT recon that correlates a seed selector into a connected intelligence graph.",
     "input": "Domain, IP, email, name, phone, subnet",
     "output": "Correlated intelligence graph, structured findings across modules",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "email",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
     "opsec": "active",
-    "opsecNote": "Some modules actively probe targets. Review module settings before running.",
+    "opsecNote": "SpiderFoot runs many modules; MOST are passive (query third-party APIs/databases), but some ACTIVELY probe the target (DNS, port/banner, web crawl). Choose a passive-only scan or review the module set before running, or you will send attributable traffic to the target. Supply API keys via a dedicated account and run behind controlled infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Widely-used, long-maintained open-source framework (Steve Micallef); the engine is reliable, individual findings inherit their source module's quality.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -84568,11 +84582,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SpiderFoot",
+      "smicallef/spiderfoot"
+    ],
+    "tags": [
+      "recon-automation",
+      "attack-surface",
+      "osint-framework"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/saas-footprinting/spiderfoot.md"
   },
   {
@@ -182352,46 +182373,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/search-that-hash.md"
-  },
-  {
-    "id": "searchonymous",
-    "name": "Searchonymous",
-    "description": "Firefox browser add-on that lets you search Google anonymously while remaining logged in",
-    "url": "https://addons.mozilla.org/en-US/firefox/addon/searchonymous",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/searchonymous.md"
   },
   {
     "id": "security-first-umbrella",
@@ -345726,42 +345707,50 @@
   {
     "id": "airframes",
     "name": "Airframes",
-    "description": "A database of aircraft details",
+    "description": "Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data and the operator/owner behind it.",
     "url": "http://www.airframes.org/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an aircraft registration, SELCAL, or Mode-S/ICAO24 code to registry details and operator.",
     "selectorsIn": [
-      "vehicle-plate"
+      "vehicle-plate",
+      "document-id"
     ],
     "selectorsOut": [
-      "geolocation"
+      "employer-org",
+      "vehicle-plate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "You query Airframes' aircraft registry database, not the aircraft or its operator, so nobody is contacted or alerted. It maps a tail/Mode-S code to registry data; it does not track live position — pair it with an ADS-B tracker for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community aircraft registry database; the site notes it's \"under development,\" so coverage/records can be incomplete — corroborate against official registries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "airframes.org"
+    ],
     "tags": [
+      "aircraft-registry",
+      "mode-s",
       "bellingcat-toolkit",
       "transport"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/airframes.md"
   },
   {

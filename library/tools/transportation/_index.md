@@ -17,7 +17,7 @@ kind: group-index
 - **`ads-b-historical-flight-viewer`** (low) — OSINT tool: ADS-B Historical Flight Viewer.
 - **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
 - **`airfleets`** (low) — Database for aircraft details.
-- **`airframes`** (low) — A database of aircraft details
+- **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
 - **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr
 - **`airnav-radarbox`** (low) — Live flight tracker.
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.

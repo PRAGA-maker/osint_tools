@@ -13,7 +13,7 @@ kind: group-index
 - **`deepviz-domain-search`** (low) — Domain/IP threat intelligence, malware analysis, threat feed subscription
 - **`exonerator`** (low) — Verify Tor relay membership by date
 - **`fortiguard-reputation-service`** (low) — Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and an
-- **`google-safe-browsing-api`** (low) — Malware and phishing URL detection
+- **`google-safe-browsing-api`** (low) — Use when you have a `domain`/URL and want Google's verdict on whether it's flagged for malware, phishing, or unwanted software — returns a s
 - **`ip-void`** (low) — Check IP reputation and blacklist status
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation
 - **`sucuri-sitecheck`** (low) — Use when you have a `domain` and want a free remote malware/blacklist scan plus fingerprinting of its CMS and server — returns infection sta
