@@ -19,7 +19,7 @@ kind: group-index
 - **`alphadictionary-com`** (low) — Search from over 1000 online English dictionaries at once
 - **`apertium-org`** (low) — OSINT tool: apertium.org.
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
-- **`babelfish-language-translations`** (low) — Text and web content translation tool
+- **`babelfish-language-translations`** (low) — Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate sh
 - **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 
 - **`binary-translator`** (low) — Tool for translating from one language form to another
 - **`bing-microsoft-translator`** (low) — Machine translation service.

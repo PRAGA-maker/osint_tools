@@ -487,7 +487,6 @@ kind: group-index
 - **`search4faces-com-ch00`** (medium) — Use when you have a `face`/`image` of a person and want to match it against Clubhouse profile avatars — returns candidate Clubhouse `social-
 - **`searchisback`** (high) — Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and pos
 - **`searchmy-bio`** (high) — Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profile
-- **`searchstream-live`** (low) — OSINT tool: Searchstream.live.
 - **`seart-github-search`** (low) — Use when you want to find GitHub repositories by metadata (language, stars, commits, contributors, activity dates) rather than by name — ret
 - **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p

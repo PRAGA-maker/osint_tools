@@ -179,7 +179,6 @@ kind: group-index
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
 - **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
 - **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
-- **`gmail-messaging-app-mobile-android`** (low) — App for mobile devices for email and messaging services
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — OSINT tool: Gnu Icecat.
 - **`gnunet`** (low) — Network protocol stack for building secure, distibuted, privacy-preserving applications

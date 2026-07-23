@@ -59,7 +59,7 @@ kind: group-index
 - **`ahrefs`** (low) — OSINT tool: ahrefs.
 - **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
-- **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
+- **`aline`** (low) — Use when you have a `domain` and want the documents it has exposed to Google — a CLI that runs filetype dorks and bulk-downloads the hits fo
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
@@ -187,7 +187,7 @@ kind: group-index
 - **`godaddy-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, creation/expiry dates, name servers and (when not privacy
 - **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
 - **`gogetcrawl`** (low) — Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from W
-- **`google-bug-bounty-dorks-generator`** (low) — Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.
+- **`google-bug-bounty-dorks-generator`** (low) — Use when you have a `domain` and want a ready-made battery of Google dorks — enter the target and get clickable searches for exposed files, 
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
 - **`google-universal-dork-builder`** (low) — Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your
 - **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
@@ -395,7 +395,7 @@ kind: group-index
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
-- **`sputnik`** (low) — Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shod
+- **`sputnik`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-cli
 - **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
 - **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
@@ -422,7 +422,7 @@ kind: group-index
 - **`tormap`** (low) — Worldwide online map of Tor Nodes
 - **`traceroutevisualizer`** (low) — OSINT tool: TracerouteVisualizer.
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
-- **`try-jsoup-org`** (low) — online version of HTML pasrer [http://github.com/jhy/jsoup](http://github.com/jhy/jsoup)
+- **`try-jsoup-org`** (low) — Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to p
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
 - **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
 - **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo

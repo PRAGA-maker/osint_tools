@@ -152,7 +152,7 @@ kind: group-index
 - **`childcare-co-uk`** (high) — Use when you have a `name` or postcode and want to find a subject who works in UK childcare/tutoring — returns provider profiles with area, 
 - **`childminding-ie`** (high) — Use when you have an Irish county/`address` (or a childminder's `name`) and want to find registered childminders in that area — returns chil
 - **`ci-general-company-registry-cayman-islands`** (medium) — Use when you have a company name or director name and want the official Cayman Islands corporate record — returns company existence, directo
-- **`cia-world-factbook`** (low) — OSINT tool: CIA World Factbook.
+- **`cia-world-factbook`** (low) — Use when an investigation crosses into a country you don't know — returns authoritative reference on its geography, government, languages, a
 - **`cilexgroup-org-uk`** (high) — Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, g
 - **`cipfa-org`** (medium) — Use when you have a `name` and want to confirm UK public-finance accountancy credentials — returns whether the person is a CIPFA member/regi
 - **`citizens-police-data-project`** (medium) — Use when you have the name of a Chicago police officer and want their complaint/misconduct record — returns employer-org details, complaint 

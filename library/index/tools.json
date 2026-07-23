@@ -7191,49 +7191,55 @@
   {
     "id": "ifttt-instagram-integrations",
     "name": "IFTTT Instagram Integrations",
-    "description": "Instagram workflows and automations via IFTTT.",
+    "description": "Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives a sock-puppet's feed and cannot monitor a target `social-profile`.",
     "url": "https://ifttt.com/instagram",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Automating monitoring/collection triggers around Instagram activity",
+    "bestFor": "Auto-archiving or relaying activity from your own connected (sock-puppet) Instagram account — not for monitoring other people.",
     "selectorsIn": [
-      "username",
       "social-profile"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free plan allows a couple of applets; Instagram triggers now require IFTTT Pro AND a connected Instagram Business account.",
+    "opsec": "passive",
+    "opsecNote": "You must connect a real Instagram Business account and grant IFTTT access — so use a dedicated sock-puppet account, never a personal or attributable one. IFTTT sees and stores whatever the applet passes.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "IFTTT is a legitimate automation platform, but its Instagram capability is heavily curtailed by Instagram's API restrictions and gives no visibility into accounts you don't control.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "ifttt"
+    ],
+    "aliases": [
+      "IFTTT Instagram"
+    ],
     "tags": [
       "instagram",
       "automation",
       "ifttt"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ifttt"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ifttt-instagram-integrations.md"
   },
   {
@@ -15153,38 +15159,49 @@
   },
   {
     "id": "tagul",
-    "name": "Tagul",
-    "description": "OSINT tool: Tagul.",
+    "name": "Tagul (WordArt)",
+    "description": "Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a word-frequency cloud for quick visual triage.",
     "url": "https://tagul.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising term frequency in a body of collected text so recurring names, handles, places, or topics jump out at a glance.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Rebranded to WordArt.com (tagul.com redirects there). Creating and viewing word clouds is free; high-resolution/vector downloads and some styles require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "You paste your collected text into a third-party web app — that text is uploaded to WordArt's servers. Never paste raw sensitive/PII-laden material; scrub identifiers or work from a de-identified word list.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial word-cloud generator; reliable as a visualisation utility but it produces presentation graphics, not analytic evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "WordArt",
+      "WordArt.com",
+      "tagul.com"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "word-cloud"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tagul.md"
   },
   {
@@ -61248,42 +61265,53 @@
   {
     "id": "aline",
     "name": "Aline",
-    "description": "a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.",
+    "description": "Use when you have a `domain` and want the documents it has exposed to Google — a CLI that runs filetype dorks and bulk-downloads the hits for metadata analysis, returning files rich in `metadata-exif` and `document-id`.",
     "url": "https://github.com/ferreiraklet/Aline",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-harvesting a domain's Google-indexed files (PDF, DOCX, XLSX, etc.) by filetype so you can mine them for author names, usernames, and software metadata.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "metadata-exif",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI (ferreiraklet/Aline); no account or key.",
+    "opsec": "active",
+    "opsecNote": "Two active footprints — heavy Google querying can trigger CAPTCHAs/temporary blocks on your IP, and downloading each file hits the hosting server directly, appearing in the target's access logs. Run Google searches sparingly and pull downloads through a VPN/sock-puppet egress.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small but real open-source tool (~30 stars, active commit history); it wraps Google dorking and downloading, so trust the mechanism, verify each downloaded file's provenance yourself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "google-bug-bounty-dorks-generator"
+    ],
+    "aliases": [
+      "ferreiraklet/Aline"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website's files metadata analyze and files downloads"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aline.md"
   },
   {
@@ -70315,42 +70343,54 @@
   {
     "id": "google-bug-bounty-dorks-generator",
     "name": "Google Bug Bounty Dorks Generator",
-    "description": "Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.",
+    "description": "Use when you have a `domain` and want a ready-made battery of Google dorks — enter the target and get clickable searches for exposed files, configs, login pages, subdomains, and code leaks.",
     "url": "https://taksec.github.io/google-dorks-bug-bounty/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Instantly generating a large, categorised set of prebuilt Google dork links scoped to a target domain for exposed-asset discovery.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source static web page (TakSec's google-dorks-bug-bounty); runs entirely in your browser.",
+    "opsec": "passive",
+    "opsecNote": "The generator is client-side — it just builds search-URLs, so no server learns your target from the tool itself. But every dork you then click runs a real Google search under your session; do that from a sock-puppet/VPN browser so the reconnaissance isn't tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source project by security researcher TakSec; it only assembles Google search strings, so there is no data-quality risk in the tool — only in interpreting the search results.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "aline"
+    ],
+    "aliases": [
+      "TakSec Google Dorks",
+      "google-dorks-bug-bounty"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/google-bug-bounty-dorks-generator.md"
   },
   {
@@ -84245,42 +84285,53 @@
   {
     "id": "sputnik",
     "name": "Sputnik",
-    "description": "Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shodan, ThreatMiner and many others.",
+    "description": "Use when you have a `domain`, `ip-address`, URL, or file hash on any page and want to fan it out across dozens of OSINT services — right-click to pull reputation, hosting, and threat data in one action.",
     "url": "https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd/related",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-right-click enrichment of a highlighted IP/domain/URL/hash across VirusTotal, Shodan, Censys, GreyNoise, AbuseIPDB and ~20 more OSINT services.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source browser extension (mitchmoser/sputnik); some destination services (Shodan, Censys, VirusTotal) may need their own free account for full results.",
+    "opsec": "passive",
+    "opsecNote": "Sputnik itself is a launcher — it opens the third-party service in a tab rather than querying the target directly, so it's passive toward the subject. But every service you fan out to sees the artifact and logs the lookup; you're broadcasting your interest to many vendors at once, so use a research browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source OSINT extension by Mitch Moser; it only forwards artifacts to well-known public services, so trust rests on those downstream sources, not on Sputnik itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Sputnik OSINT extension"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/sputnik.md"
   },
   {
@@ -86208,42 +86259,52 @@
   {
     "id": "try-jsoup-org",
     "name": "Try.jsoup.org",
-    "description": "online version of HTML pasrer [http://github.com/jhy/jsoup](http://github.com/jhy/jsoup)",
+    "description": "Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to pull links, emails, and hidden text.",
     "url": "http://try.jsoup.org",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Testing CSS-selector/XPath extraction against a page's HTML to pull out links, emails, and structured fields without writing code.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
+      "email",
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public demo of the open-source jsoup HTML parser, maintained by jsoup's author; no account.",
+    "opsec": "passive",
+    "opsecNote": "If you paste HTML you already have, nothing leaves toward the target. If you use the \"fetch from URL\" mode, jsoup.org's server retrieves the page — so the request comes from jsoup's IP, not yours, which incidentally shields you from the target's logs (but exposes your target of interest to jsoup.org).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Official interactive demo of jsoup by Jonathan Hedley (its author); a stable, long-running reference tool rather than a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "try jsoup",
+      "jsoup online parser"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Searchers, scrapers, extractors, parsers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/try-jsoup-org.md"
   },
   {
@@ -173934,46 +173995,6 @@
     "_file": "library/tools/opsec-investigator-tooling/glassdoor-business-app-mobile-ios.md"
   },
   {
-    "id": "gmail-messaging-app-mobile-android",
-    "name": "Gmail Messaging App (Mobile – Android)",
-    "description": "App for mobile devices for email and messaging services",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.gm",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/gmail-messaging-app-mobile-android.md"
-  },
-  {
     "id": "gmail-messaging-app-mobile-ios",
     "name": "Gmail Messaging App (Mobile – iOS)",
     "description": "App for mobile devices for email and messaging services",
@@ -217162,40 +217183,49 @@
   {
     "id": "cia-world-factbook",
     "name": "CIA World Factbook",
-    "description": "OSINT tool: CIA World Factbook.",
+    "description": "Use when an investigation crosses into a country you don't know — returns authoritative reference on its geography, government, languages, and communications/internet infrastructure to contextualise other findings.",
     "url": "https://www.cia.gov/the-world-factbook/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Getting authoritative country-level context (administrative divisions, languages, phone/internet infrastructure, borders) to interpret a subject's location and comms.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, public US-government reference; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading static reference pages on a US-government site; it reveals only which country you're researching, and only to CIA.gov's own web analytics. No interaction with any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US-government reference compiled from government and international sources; authoritative for country-level facts, though figures are periodically updated rather than real-time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "cia-foia"
     ],
+    "aliases": [
+      "World Factbook",
+      "CIA Factbook"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "country-reference"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cia-world-factbook.md"
   },
   {
@@ -326194,40 +326224,6 @@
     "_file": "library/tools/social-networks/searchmy-bio.md"
   },
   {
-    "id": "searchstream-live",
-    "name": "Searchstream.live",
-    "description": "OSINT tool: Searchstream.live.",
-    "url": "https://searchstream.live/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/searchstream-live.md"
-  },
-  {
     "id": "seart-github-search",
     "name": "SEART Github Search",
     "description": "Use when you want to find GitHub repositories by metadata (language, stars, commits, contributors, activity dates) rather than by name — returns a filtered list of repos and their attributes.",
@@ -341801,24 +341797,27 @@
   {
     "id": "babelfish-language-translations",
     "name": "Babelfish Language Translations",
-    "description": "Text and web content translation tool",
+    "description": "Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate short phrases returning nuance MT misses.",
     "url": "https://www.babelfish.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Getting a human, native-speaker translation of slang, idioms, or ambiguous short phrases that automated translators render wrong.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free community Q&A translation site; no account needed to read, though posting a question may require sign-up.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Anything you post becomes a PUBLIC question visible on the site and to search engines. Never paste identifying, sensitive, or case-specific text (real names, addresses, message content that could be traced) — paraphrase or strip identifiers first.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced translations from anonymous community members of unknown fluency; a single answer can be wrong or joke — corroborate before relying on it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -341827,15 +341826,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "babelfish.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "language-translation-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/babelfish-language-translations.md"
   },
   {

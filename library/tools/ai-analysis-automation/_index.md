@@ -193,7 +193,7 @@ kind: group-index
 - **`hunchly`** (low) — OSINT tool: Hunchly.
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
 - **`i2p`** (low) — OSINT tool: I2P.
-- **`ifttt-instagram-integrations`** (low) — Instagram workflows and automations via IFTTT.
+- **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
 - **`illuminarty`** (low) — AI image detection with model attribution, deepfake and synthetic media investigation
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
@@ -372,7 +372,7 @@ kind: group-index
 - **`sub3-suite`** (low) — OSINT tool: Sub3 Suite.
 - **`surveilliance-self-defense`** (low) — OSINT tool: Surveilliance Self Defense.
 - **`tableau-public`** (low) — OSINT tool: Tableau Public.
-- **`tagul`** (low) — OSINT tool: Tagul.
+- **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
 - **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
 - **`tenssens`** (low) — osint framework
