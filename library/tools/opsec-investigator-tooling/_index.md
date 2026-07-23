@@ -160,7 +160,7 @@ kind: group-index
 - **`forager`** (low) — Quick search tool extension by Chrome
 - **`foursquare-swarm-social-networking-app-mobile-android`** (low) — App for mobile devices for social messaging and reviews
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
-- **`free-fax`** (low) — OSINT tool: Free Fax.
+- **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
 - **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
 - **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
 - **`freshstart`** (low) — multi-login browser extension

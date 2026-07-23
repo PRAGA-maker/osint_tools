@@ -33,6 +33,7 @@ relatedTools:
 - firms
 - nasa-earthdata-search
 - nasa-firms
+- nasa-kids-club
 aliases:
 - Worldview
 - worldview.earthdata.nasa.gov

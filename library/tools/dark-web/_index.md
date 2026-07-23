@@ -74,7 +74,7 @@ kind: group-index
 - **`osint-me-1`** (low) — OSINT tool: osint.me 1.
 - **`osint-me-2`** (low) — OSINT tool: osint.me 2.
 - **`osint-me-3`** (low) — OSINT tool: osint.me 3.
-- **`pasta`** (low) — Pastebin scraper, which generates random paste addresses and checks if there is any text in them.
+- **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Command line #python tool, which downloads all the pastes of a particular #Pastebin user.
 - **`pathfinder`** (low) — OSINT tool: Pathfinder.
 - **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.

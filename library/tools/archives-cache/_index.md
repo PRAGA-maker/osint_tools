@@ -112,7 +112,6 @@ kind: group-index
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.
 - **`web-cache-viewer-chrome-google-com`** (medium) — Use when you have a `domain`/URL and want an archived copy of a page — right-click to open its Wayback Machine or Google Cache version, retu
 - **`webarchive-loc-gov`** (medium) — Use when you have a `domain`/URL or topic and want curated, preserved historical web captures — returns archived pages and `metadata-exif`/d
-- **`webreader`** (low) — OSINT tool: WebReader.
 - **`webrecorder-tools`** (medium) — Use when you need to capture a live web page (dynamic, logged-in, or soon-to-vanish) as a high-fidelity archive — returns a self-contained W
 - **`website-diff`** (low) — Use when you have a `domain`/URL and want to compare two versions of a page (live or Wayback snapshots) and see the meaningful changes — ret
 - **`website-watcher`** (low) — OSINT tool: WebSite Watcher.

@@ -346,7 +346,7 @@ kind: group-index
 - **`reconnor`** (low) — Educational recon and OSINT tool suite.
 - **`redirectdetective`** (low) — OSINT tool: RedirectDetective.
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
-- **`regexper`** (low) — A simple and free online tool for visualizing regular expressions. Just copy the regular expression to the site and convert it into a detail
+- **`regexper`** (low) — Use when you have a regular expression and want to understand or debug it — pastes a regex and returns a railroad-diagram visualization; a h
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
 - **`remote-dns-lookup`** (low) — OSINT tool: Remote DNS Lookup.
 - **`repolist`** (low) — Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists fr
@@ -387,7 +387,7 @@ kind: group-index
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
 - **`smart-ruler`** (low) — Simple #GoogleChrome extension (200 000 users) for those who like to explore the design of different sites
-- **`snov-io-technology-checker`** (low) — type name of #webdev technology (jquery, django, wordpress etc) and get the list of websites, which used it.
+- **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
 - **`snyk-io`** (low) — Website Vulnerabilities Scanner
 - **`soc-multi-tool`** (low) — Chrome Extension for quick: IP/Domain Reputation Lookup IP/ Domain Info Lookup Hash Reputation Lookup (Decoding of Base64 & HEX using CyberC
 - **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
@@ -462,7 +462,7 @@ kind: group-index
 - **`webscout`** (low) — OSINT tool: Webscout.
 - **`website-information`** (low) — OSINT tool: Website Information.
 - **`website-search-tool`** (low) — OSINT tool: Website search tool.
-- **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
+- **`websitetechminer-py`** (low) — Use when you have a `domain` (or a CSV of domains) and want its technology stack from BuiltWith + Wappalyzer in bulk — returns per-domain te
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a
 - **`what-cms`** (low) — Use when you have a `domain`/URL and want to identify its CMS and web tech stack — returns the detected platform, frameworks and hosting.

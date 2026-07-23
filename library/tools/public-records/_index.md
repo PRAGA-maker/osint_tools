@@ -47,7 +47,7 @@ kind: group-index
 - **`alabama-deaths`** (medium) — Use when you have a `name` and want an Alabama death record (1908–1974) — returns dob, address, and associate (next-of-kin) links from the F
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
-- **`alberta-business-search`** (low) — OSINT tool: Alberta Business Search.
+- **`alberta-business-search`** (medium) — Use when you have a company `name`/number or a person's `name` and want Alberta (Canada) corporate records — returns registered address, dir
 - **`alberta-police-misconduct-database`** (low) — Use when you have a `name` of an Alberta police officer and want documented misconduct history — returns named incidents, investigation outc
 - **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
 - **`alibaba-china`** (medium) — Use when you have an `employer-org`, product or supplier and want the company behind it — returns `employer-org` profile, `address`, `phone`

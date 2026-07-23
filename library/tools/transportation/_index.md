@@ -116,7 +116,6 @@ kind: group-index
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
 - **`maritime-awareness-project`** (low) — OSINT tool: Maritime Awareness Project.
-- **`maritime-connector-com-ships`** (low) — OSINT tool: Maritime-connector.com/ships.
 - **`maritime-database`** (low) — Use when you have a vessel name, port, or shipping-company name and want directory details linking ships, ports and maritime companies — ret
 - **`maritimeconnector`** (low) — OSINT tool: MaritimeConnector.
 - **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.

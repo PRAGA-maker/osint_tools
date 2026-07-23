@@ -35,6 +35,9 @@ relatedTools:
 - lastfm-monitor
 - lol-monitor
 - psn-monitor
+- spotify-monitor
+- spotify-profile-monitor
+- xbox-monitor
 aliases:
 - steam_monitor
 - misiektoja steam_monitor

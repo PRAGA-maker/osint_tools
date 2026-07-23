@@ -315,7 +315,7 @@ kind: group-index
 - **`whereisthisplace`** (high) — Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.
 - **`whodidit`** (medium) — Use when you have a `geolocation` and want the OpenStreetMap editors who changed that area — returns editor usernames and edit dates.
 - **`whoishere-py`** (medium) — Use when you have monitor-mode WiFi hardware on-site and want to detect a person's presence via their device's probe requests — returns mac-
-- **`wifispc-com`** (low) — OSINT tool: Wifispc.com.
+- **`wifispc-com`** (low) — Use when you have a `geolocation`/`address` (venue, city, or coordinates) and want known public WiFi hotspots there — returns SSIDs, passwor
 - **`wikiloc-gps-location-sharing`** (high) — Use when you have a `username`/`name` or an area `geolocation` and want user-posted GPS trails (with start points, dates and photos) — retur
 - **`wikimapia`** (medium) — Use when you need crowd-labeled names and descriptions of buildings, businesses, and landmarks at a location that official maps leave blank.
 - **`wikinearby`** (medium) — Use when you have coordinates and want Wikipedia-documented places around them — returns nearby notable geolocation/landmarks to identify or

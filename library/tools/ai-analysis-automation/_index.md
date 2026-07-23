@@ -280,7 +280,7 @@ kind: group-index
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
 - **`osinttracker`** (low) — A simple and free online tool to visualize investigations and collect data about different entry points (domains, email addresses, crypto wa
 - **`ossec`** (low) — OSINT tool: OSSEC.
-- **`outwit`** (low) — OSINT tool: Outwit.
+- **`outwit`** (low) — Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages i
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
 - **`palladio`** (low) — Use when you have tabular relationship data (people, places, dates, links) and want to visualise it as a network graph, map, or timeline — a
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping

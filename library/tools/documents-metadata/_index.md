@@ -239,9 +239,9 @@ kind: group-index
 - **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
 - **`taskrabbit`** (low) — Website related to outsourcing of jobs related to homes and neighbourhoods
-- **`tastedive-current-multimedia-trends`** (low) — Website that recommends trending music, movies, books, games and more
+- **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`techuk`** (low) — Online organization website providing information on computer and information technology occupations
-- **`telcodata-us`** (low) — US Telecommunications Database; mobile telephone number lookup
+- **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 
 - **`textise-net`** (low) — convert the HTML code of a page to TXT
 - **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
 - **`the-time-now`** (low) — Tells you what time it is in any location or time zone

@@ -344,7 +344,6 @@ kind: group-index
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
 - **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
-- **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
 - **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
 - **`keywordtool`** (low) — Use when you have a `name`, `username`, or brand and want the search-autocomplete phrases the world associates with it — returns related que
