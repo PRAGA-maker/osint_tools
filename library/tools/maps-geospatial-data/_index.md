@@ -50,7 +50,7 @@ kind: group-index
 - **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
 - **`google-flood-hub`** (low) — Use when you have a `geolocation`/`address` on a river and want current flood conditions and AI forecasts — returns river-level status and f
 - **`gosur-map`** (low) — Use when you have an `address` or `geolocation` and want satellite/aerial imagery of it with extras like live cams and weather — returns a s
-- **`govmap`** (low) — GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and i
+- **`govmap`** (low) — Use when you have an `address`/`geolocation` in Israel and want official parcel, planning, and imagery data — returns cadastral boundaries, 
 - **`gps-latitude-longitude-com`** (medium) — Use when you have an `address` or a map point and want its precise coordinates — returns `geolocation` in decimal, DMS, and UTM formats.
 - **`gpx-file-editor`** (medium) — Use when you have a `.gpx`/`.kml` track file (with embedded `metadata-exif` timestamps) and want to view, edit and read the route, points an
 - **`gridreferencefinder-com`** (medium) — Use when you have a UK `address`, postcode, or `geolocation` and want to convert it between coordinate systems — returns OSGB grid reference

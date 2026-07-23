@@ -1,50 +1,93 @@
 ---
 id: ioc-parser
 name: IOC Parser
-description: IOC extraction from reports
+description: Use when you have a `domain`/threat report (PDF/HTML/text) and want the indicators pulled out — returns structured IOCs (domains, IPs, hashes, URLs).
 url: https://github.com/armbues/ioc_parser
 category: domains-ip-infrastructure
 path:
 - domains-ip-infrastructure
 - ioc-tools
-bestFor: IOC extraction from reports
-input: Raw text or security reports
-output: Parsed IOCs in structured format
-selectorsIn: []
-selectorsOut: []
+bestFor: Bulk-extracting indicators of compromise from PDF/HTML/text security reports into CSV/JSON/YARA.
+selectorsIn:
+- domain
+selectorsOut:
+- domain
+- ip-address
 status: live
 pricing: free
+costNote: Free and open source (MIT). Installed via pip; runs locally.
 opsec: passive
-opsecNote: Local text analysis without network interaction
+opsecNote: Parses documents locally with no network calls (unless you enable the optional link-fetch), so nothing about your source material leaves your machine.
 humanInLoop: false
 humanInLoopReason: []
-bestInteractionPattern: web-manual
-trust: unverified
-trustNote: ''
+bestInteractionPattern: cli
+trust: community
+trustNote: Long-standing, widely-forked open-source parser (armbues/ioc_parser); auditable MIT source.
 missingPersonsRelevance: low
-coverage: []
+coverage:
+- global
 auth: none
-api: false
+api: true
 localInstall: true
 registration: false
-invitationOnly: false
-deprecated: false
 relatedTools: []
-aliases: []
-tags: []
+aliases:
+- iocp
+- ioc_parser
+tags:
+- ioc-extraction
+- threat-intel
+- cli
 source: arf-seed
-lastVerified: ''
-enrichment: stub
+lastVerified: '2026-07-23'
+enrichment: full
 ---
 
 # IOC Parser
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> Feed it a messy threat report; get back a clean, deduplicated list of every domain, IP, hash, and URL it mentions.
 
-- **URL:** https://github.com/armbues/ioc_parser
-- **Best for:** IOC extraction from reports
-- **Input → Output:** Raw text or security reports → Parsed IOCs in structured format
-- **OpSec:** passive. Local text analysis without network interaction
+## When to use
+You have a security report, threat advisory, or any document (`PDF`, `HTML`, or text) and want to machine-extract its indicators of compromise instead of copying them by hand. IOC Parser regexes out `domain`s, `ip-address`es, file hashes, URLs, CVEs, and emails, deduplicates them, and writes CSV/JSON/YARA. It's an extraction/tooling helper feeding infrastructure analysis; missing-persons relevance is low (it accelerates working through documents tied to a case).
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: cli)
+1. Install: `pip install ioc_parser` (add extras for PDF/HTML support — PyPDF2/pdfminer, BeautifulSoup).
+2. Run against a file:
+   ```
+   iocp -i pdf report.pdf
+   iocp -i html page.html -o json
+   ```
+   `-i` sets input type (pdf/html/txt), `-o` the output format (csv/json/yara), and it deduplicates by default.
+3. Read the structured output — each IOC with its type.
+4. Pivot: feed extracted `domain`s/`ip-address`es straight into passive DNS, reputation feeds (`[[alienvault-otx]]`, GreyNoise), or WHOIS for enrichment.
+
+## Inputs → Outputs
+- **In:** a `PDF`/`HTML`/text document (the `domain`s etc. are inside it)
+- **Out:** structured `domain`, `ip-address`, hash, URL, CVE, email indicators (CSV/JSON/YARA)
+- **Empty/negative result looks like:** no IOCs extracted — either the document genuinely has none, or (for image-only/scanned PDFs) the text layer is missing; OCR first, then re-parse.
+
+## Gotchas & OpSec
+- Scanned/image PDFs have no extractable text — you'll get nothing until you OCR them.
+- Regex extraction can defang or mangle intentionally-obfuscated IOCs (`hxxp`, `[.]`); check the pattern file handles the report's defanging style.
+- OpSec: passive/local; only the optional "download referenced links" mode touches the network.
+
+## Overlaps ("do both")
+- Feeds enrichment tools (`[[alienvault-otx]]`, GreyNoise, passive DNS, WHOIS) — IOC Parser *extracts*, those *enrich*. Comparable to other IOC extractors (e.g. Cacador, iocextract); use whichever handles your input format best.
+
+## Trust & verifiability
+`trust: community` — mature, auditable MIT-licensed code; because extraction is regex-based, spot-check a few IOCs against the source document for defanging/false extractions.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | ioc-parser |
+| category | domains-ip-infrastructure |
+| selectorsIn → selectorsOut | domain → domain, ip-address |
+| pricing / cost | free |
+| trust | community |
+| MP relevance | low |
+| interaction | cli |
+| opsec | passive |
+| human-in-loop | no |

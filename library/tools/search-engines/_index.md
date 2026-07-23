@@ -726,7 +726,7 @@ kind: group-index
 - **`xsint`** (high) — Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one comman
 - **`xtorx`** (low) — fast torrents search engine
 - **`yacy`** (low) — Use when you want to run web searches through a decentralized, self-hosted engine with no central logging — returns `domain`/page results fr
-- **`yagooglesearch`** (low) — "Simulates real human Google search behavior to prevent rate limiting by Google and if HTTP 429 blocked by Google, logic to back off and con
+- **`yagooglesearch`** (low) — Use when you have a `name`/`username`/query and want to script Google results without getting 429-blocked — returns result URLs programmatic
 - **`yahoo-com-2`** (high) — Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns
 - **`yahoo-com`** (high) — Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web re
 - **`yahoo-news`** (low) — OSINT tool: Yahoo News.

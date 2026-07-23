@@ -6792,38 +6792,52 @@
   },
   {
     "id": "httpie-io",
-    "name": "HTTPIE.IO",
-    "description": "command-line HTTP client",
+    "name": "HTTPie",
+    "description": "Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.",
     "url": "https://httpie.io/run",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A human-friendly command-line HTTP client for manually inspecting endpoints, headers, and APIs during investigation.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The `httpie` CLI is free and open source (BSD). httpie.io also offers a paid hosted API-testing product; the CLI you need for OSINT is free.",
+    "opsec": "active",
+    "opsecNote": "Every request goes directly from your machine to the target server, which logs your IP and user-agent. Route through a proxy/VPN and set a neutral user-agent when probing a subject's infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "HTTPie is a mainstream, widely-adopted open-source HTTP client; the CLI is well-maintained and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "httpie",
+      "http command"
+    ],
     "tags": [
-      "Code"
+      "http-client",
+      "api-testing",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/httpie-io.md"
   },
   {
@@ -16370,35 +16384,46 @@
   {
     "id": "vega-editor",
     "name": "Vega Editor",
-    "description": "OSINT tool: Vega Editor.",
+    "description": "Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON spec, in-browser.",
     "url": "https://vega.github.io/editor/#/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Prototyping charts and node-link/network graphs from your own data using Vega/Vega-Lite specs, entirely in the browser.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source online editor hosted by the Vega project (University of Washington IDL). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The editor runs client-side in your browser; specs and data you paste are processed locally and not uploaded, unless you explicitly use the Gist share feature. Avoid the share/export-to-Gist option with sensitive data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official editor for the well-established open-source Vega/Vega-Lite visualization grammars, maintained by the UW Interactive Data Lab.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Vega-Lite editor",
+      "vega.github.io editor"
+    ],
+    "tags": [
+      "data-visualization",
+      "charts",
+      "analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/vega-editor.md"
   },
   {
@@ -55536,46 +55561,6 @@
     "_file": "library/tools/documents-metadata/national-restaurant-association-united-states.md"
   },
   {
-    "id": "national-software-reference-library",
-    "name": "National Software Reference Library",
-    "description": "Eliminating known-good files in forensic investigations and digital triage",
-    "url": "https://nsrl.hashsets.com/national_software_reference_library1_search.php",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "search"
-    ],
-    "bestFor": "Eliminating known-good files in forensic investigations and digital triage",
-    "input": "File hash (MD5, SHA-1, SHA-256), software query",
-    "output": "Hash matches to known software, file metadata, product versioning",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "No registration required; lookup-only service; government maintained",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/search/national-software-reference-library.md"
-  },
-  {
     "id": "new-zealand-government-it-jobs",
     "name": "New Zealand Government IT Jobs",
     "description": "Online government website providing information on computer and information technology occupations",
@@ -56495,38 +56480,51 @@
   },
   {
     "id": "pdfx",
-    "name": "PDFX",
-    "description": "get meta data of PDF files thrue command line",
+    "name": "PDFx",
+    "description": "Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv IDs.",
     "url": "https://github.com/metachris/pdfx",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling metadata, text, and all embedded/referenced links out of a PDF from the command line.",
+    "selectorsIn": [
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Apache 2.0). Repository archived June 2023 — still installable and working, but unmaintained.",
+    "opsec": "passive",
+    "opsecNote": "Metadata/text/link extraction runs locally with no network calls. The optional \"download referenced PDFs / check broken links\" mode DOES reach out to those URLs — skip it if you don't want to touch the referenced hosts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source utility by metachris; auditable source, but the repo is archived/unmaintained since 2023.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "pdfx"
+    ],
     "tags": [
-      "Files"
+      "pdf",
+      "metadata-extraction",
+      "documents"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pdfx.md"
   },
   {
@@ -59852,49 +59850,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/upwork.md"
-  },
-  {
-    "id": "urlex-modified-url-expander",
-    "name": "Urlex Modified URL Expander",
-    "description": "Tool for modifying URL address hyperlinks",
-    "url": "http://urlex.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "url-expander"
-    ],
-    "_file": "library/tools/documents-metadata/urlex-modified-url-expander.md"
   },
   {
     "id": "valkyrie-file-analysis",
@@ -73014,41 +72969,52 @@
   {
     "id": "ioc-parser",
     "name": "IOC Parser",
-    "description": "IOC extraction from reports",
+    "description": "Use when you have a `domain`/threat report (PDF/HTML/text) and want the indicators pulled out — returns structured IOCs (domains, IPs, hashes, URLs).",
     "url": "https://github.com/armbues/ioc_parser",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ioc-tools"
     ],
-    "bestFor": "IOC extraction from reports",
-    "input": "Raw text or security reports",
-    "output": "Parsed IOCs in structured format",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Bulk-extracting indicators of compromise from PDF/HTML/text security reports into CSV/JSON/YARA.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT). Installed via pip; runs locally.",
     "opsec": "passive",
-    "opsecNote": "Local text analysis without network interaction",
+    "opsecNote": "Parses documents locally with no network calls (unless you enable the optional link-fetch), so nothing about your source material leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Long-standing, widely-forked open-source parser (armbues/ioc_parser); auditable MIT source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "iocp",
+      "ioc_parser"
+    ],
+    "tags": [
+      "ioc-extraction",
+      "threat-intel",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ioc-tools/ioc-parser.md"
   },
   {
@@ -76691,47 +76657,53 @@
   },
   {
     "id": "mksub",
-    "name": "MKSUB",
-    "description": "A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Sublist3r, Amass, Gobuster etc).",
+    "name": "mksub",
+    "description": "Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for resolvers.",
     "url": "https://github.com/trickest/mksub",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Generating tens of thousands of multi-level subdomain permutations from a wordlist to feed a DNS brute-forcer.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). Binary, Docker, or `go install`.",
+    "opsec": "passive",
+    "opsecNote": "mksub only *generates* candidate names locally — it performs no DNS queries itself, so it's passive. The active exposure comes from whatever resolver/brute-forcer you feed its output to; anonymise that step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by Trickest, a reputable recon-automation vendor; small auditable Go utility.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Wordlists generators"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "mkpath",
       "trickest-inventory"
     ],
+    "aliases": [
+      "mksub"
+    ],
+    "tags": [
+      "subdomain-enumeration",
+      "wordlist-generator",
+      "recon"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/mksub.md"
   },
   {
@@ -86374,7 +86346,7 @@
   {
     "id": "un-security-council-consolidated-list",
     "name": "UN Security Council Consolidated List",
-    "description": "UN sanctions verification",
+    "description": "Use when you have a `name` (person or entity) and want to check UN sanctions designation — returns match status plus aliases, DOB, and listing narrative.",
     "url": "https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -86382,39 +86354,49 @@
       "terrorism-and-extremism",
       "sanctions-and-watchlists"
     ],
-    "bestFor": "UN sanctions verification",
-    "input": "Person or entity name",
-    "output": "UN designation status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative check of whether a person or entity is under UN Security Council sanctions, with identifying details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official UN resource; downloadable in HTML, PDF, and XML. No account.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of official UN data",
+    "opsecNote": "You read/download an official UN list; the subject is never contacted and no query is tied to a specific target when you download the full list. Prefer downloading the full dataset and searching locally to leak nothing to any server.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party United Nations Security Council source — the authoritative global consolidated sanctions list, updated as designations change.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "statistics-and-data",
-      "un-comtrade-database",
-      "un-data",
-      "unstats-social-indicators"
+      "un-data"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "UN Consolidated Sanctions List",
+      "UNSC Consolidated List",
+      "UN sanctions list"
+    ],
+    "tags": [
+      "sanctions",
+      "watchlist",
+      "due-diligence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/un-security-council-consolidated-list.md"
   },
   {
@@ -152727,43 +152709,54 @@
   {
     "id": "govmap",
     "name": "GovMap",
-    "description": "GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and infrastructure details.",
+    "description": "Use when you have an `address`/`geolocation` in Israel and want official parcel, planning, and imagery data — returns cadastral boundaries, addresses, and aerial layers.",
     "url": "https://www.govmap.gov.il/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Israel's national GIS portal — looking up a parcel, address, or coordinate against official cadastral, planning, and aerial-imagery layers.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Israeli government mapping portal. No account for core layers.",
+    "opsec": "passive",
+    "opsecNote": "You browse a government map server; the subject is not notified. Only GovMap's own logs see your queries. Use a neutral session if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Israeli government (Survey of Israel / national mapping); authoritative cadastral and planning data for the country.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "il"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "govmap.gov.il",
+      "מפות ישראל",
+      "Israel national map"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "maps"
+      "gis",
+      "cadastral",
+      "israel",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/govmap.md"
   },
   {
@@ -259259,41 +259252,52 @@
   },
   {
     "id": "undps-human-development-index",
-    "name": "UNDPs Human Development Index",
-    "description": "OSINT tool: UNDPs Human Development Index.",
-    "url": "http://hdr.undp.org/en/data",
+    "name": "UNDP Human Development Index",
+    "description": "Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country and year.",
+    "url": "https://hdr.undp.org/data-center",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Authoritative country-level development statistics (HDI, life expectancy, education, income) for context and baselines.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official UN Development Programme data; downloadable tables/CSV. No account.",
+    "opsec": "passive",
+    "opsecNote": "You read/download public UN statistics; nothing is tied to any target. Downloading the full dataset and querying locally leaks nothing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the UNDP Human Development Report Office — a primary, authoritative source for international development indicators.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "human-development-reports"
     ],
+    "aliases": [
+      "HDI",
+      "UNDP HDR Data Center",
+      "Human Development Index"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "development-indicators",
+      "reference"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/undps-human-development-index.md"
   },
   {
@@ -298184,42 +298188,56 @@
   },
   {
     "id": "yagooglesearch",
-    "name": "Yagooglesearch",
-    "description": "\"Simulates real human Google search behavior to prevent rate limiting by Google and if HTTP 429 blocked by Google, logic to back off and continue trying\" (c)",
+    "name": "yagooglesearch",
+    "description": "Use when you have a `name`/`username`/query and want to script Google results without getting 429-blocked — returns result URLs programmatically.",
     "url": "https://github.com/opsdisk/yagooglesearch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automating Google dork/search result collection in Python with human-like pacing and back-off to dodge rate-limiting.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; pip-installable Python library. No API key (it scrapes the web UI).",
+    "opsec": "active",
+    "opsecNote": "This programmatically queries Google from your IP — Google sees automated traffic and may serve CAPTCHAs or HTTP 429 blocks. Use a dedicated/proxied IP and consider the library's proxy support; heavy use can get an IP temporarily blocked.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Well-known open-source library by opsdisk (also behind pagodo); actively used in dorking pipelines.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "metagoofil",
       "pagodo-passive-google-dork"
     ],
+    "aliases": [
+      "yagooglesearch",
+      "yet another google search"
+    ],
+    "tags": [
+      "google-dorking",
+      "search-automation",
+      "python-lib"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yagooglesearch.md"
   },
   {

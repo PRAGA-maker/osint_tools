@@ -914,7 +914,7 @@ kind: group-index
 - **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
 - **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.
 - **`unctad-stat`** (low) — OSINT tool: UNCTAD STAT.
-- **`undps-human-development-index`** (low) — OSINT tool: UNDPs Human Development Index.
+- **`undps-human-development-index`** (low) — Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country 
 - **`unece`** (low) — OSINT tool: UNECE.
 - **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
 - **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.

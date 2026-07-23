@@ -285,7 +285,7 @@ kind: group-index
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
-- **`mksub`** (low) — A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Subli
+- **`mksub`** (low) — Use when you have a `domain` and want a large candidate subdomain list to brute-force — returns permuted multi-level subdomain names for res
 - **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
 - **`moz-link-explorer`** (low) — Analyse the links of any website.
 - **`mx-toolbox-blacklist-check`** (medium) — Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation 

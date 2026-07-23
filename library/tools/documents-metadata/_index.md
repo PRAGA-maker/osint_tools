@@ -15,7 +15,7 @@ kind: group-index
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
 - **`pdfs/`** — 2 skill(s) below.
-- **`search/`** — 6 skill(s) below.
+- **`search/`** — 5 skill(s) below.
 
 ## Skills here
 - **`1-free-online-ocr`** (low) — OSINT tool: 1- Free Online OCR.
@@ -194,7 +194,7 @@ kind: group-index
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`pdfdrive`** (low) — PDF/book search index.
 - **`pdfmyurl`** (low) — Saves webpages as a PDF
-- **`pdfx`** (low) — get meta data of PDF files thrue command line
+- **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
 - **`pearltrees`** (low) — Website related to social networking and bookmarking activities allowing users to save web pages, files, videos, photos, and notes
 - **`photosint-chrome-google-com`** (low) — OSINT tool: photosint (chrome.google.com).
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — OSINT tool: picture exif cleaner (addons.mozilla.org).
@@ -263,7 +263,6 @@ kind: group-index
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
 - **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
-- **`urlex-modified-url-expander`** (low) — Tool for modifying URL address hyperlinks
 - **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.

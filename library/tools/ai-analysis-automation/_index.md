@@ -186,7 +186,7 @@ kind: group-index
 - **`html-editor`** (low) — OSINT tool: HTML editor.
 - **`html-sanitizer-tool`** (low) — OSINT tool: HTML Sanitizer Tool.
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
-- **`httpie-io`** (low) — command-line HTTP client
+- **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
 - **`https-everywhere`** (low) — OSINT tool: HTTPs Everywhere.
 - **`httrack`** (low) — OSINT tool: HTTrack.
 - **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
@@ -404,7 +404,7 @@ kind: group-index
 - **`uforio`** (low) — Generate word clouds from Reddit threads.
 - **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
 - **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
-- **`vega-editor`** (low) — OSINT tool: Vega Editor.
+- **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — OSINT tool: Venngage.
 - **`vis-js`** (low) — OSINT tool: Vis.js.
 - **`visme`** (low) — OSINT tool: Visme.
