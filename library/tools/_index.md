@@ -13,7 +13,7 @@ kind: group-index
 - **`dark-web/`** — 108 skill(s) below.
 - **`dating-classifieds/`** — 92 skill(s) below.
 - **`documents-metadata/`** — 299 skill(s) below.
-- **`domains-ip-infrastructure/`** — 685 skill(s) below.
+- **`domains-ip-infrastructure/`** — 684 skill(s) below.
 - **`email/`** — 250 skill(s) below.
 - **`evidence-capture/`** — 31 skill(s) below.
 - **`financial-crypto/`** — 110 skill(s) below.
@@ -25,11 +25,11 @@ kind: group-index
 - **`people-search/`** — 265 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
 - **`public-records/`** — 1020 skill(s) below.
-- **`search-engines/`** — 779 skill(s) below.
+- **`search-engines/`** — 778 skill(s) below.
 - **`social-networks/`** — 823 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 100 skill(s) below.
-- **`transportation/`** — 210 skill(s) below.
+- **`transportation/`** — 209 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
 

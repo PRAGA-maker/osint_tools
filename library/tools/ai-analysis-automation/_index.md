@@ -159,7 +159,7 @@ kind: group-index
 - **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
 - **`gnu-pg`** (low) — OSINT tool: GNU PG.
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
-- **`google-colaboratory`** (low) — OSINT tool: Google Colaboratory.
+- **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — get the most detailed
 - **`gpg-tools`** (low) — OSINT tool: GPG Tools.

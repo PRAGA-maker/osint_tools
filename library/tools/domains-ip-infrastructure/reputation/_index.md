@@ -17,7 +17,7 @@ kind: group-index
 - **`ip-void`** (low) — Check IP reputation and blacklist status
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation
 - **`sucuri-sitecheck`** (low) — Use when you have a `domain` and want a free remote malware/blacklist scan plus fingerprinting of its CMS and server — returns infection sta
-- **`threatminer-org`** (low) — Threat intelligence research, IOC investigation, malware/phishing link analysis
+- **`threatminer-org`** (low) — Use when you have a `domain`, `ip-address`, file hash, or SSL cert and want linked threat-intel — returns related domains/IPs, WHOIS, and ma
 - **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.
 - **`url-void`** (low) — Website reputation checking, malware/phishing detection, threat analysis
 - **`urlquery-net`** (low) — Use when you have a suspicious `domain`/URL and want a safe hosted analysis of it — screenshots, hosting IP, redirects, and malware/phishing

@@ -409,7 +409,6 @@ kind: group-index
 - **`myallsearch`** (low) — OSINT tool: Myallsearch.
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
-- **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
 - **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
 - **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur

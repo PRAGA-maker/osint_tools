@@ -31,6 +31,13 @@ relatedTools:
 - yandex
 - yandex-image-search
 - yandex-maps
+- yandex-browser
+- yandex-images
+- yandex-mail
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandexmaps
 aliases:
 - Yandex Wordstat
 - wordstat.yandex.com

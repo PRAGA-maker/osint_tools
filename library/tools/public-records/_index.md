@@ -431,7 +431,7 @@ kind: group-index
 - **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
 - **`ilo-world-employment-and-social-outlook-trends`** (low) — OSINT tool: ILO World Employment and Social Outlook Trends.
 - **`ilostat`** (low) — OSINT tool: ILOSTAT.
-- **`imf-world-economic-outlook-database`** (low) — OSINT tool: IMF World Economic Outlook Database.
+- **`imf-world-economic-outlook-database`** (low) — Use when you need authoritative country-level macroeconomic figures (GDP, inflation, unemployment) for context in an investigation — returns
 - **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
 - **`immo-data-fr`** (high) — Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/da
 - **`inc-5000`** (medium) — Use when you have an `employer-org` or `name` and want to confirm a fast-growing US private company, its location and leadership — returns `
