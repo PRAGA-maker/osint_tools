@@ -340,7 +340,7 @@ kind: group-index
 - **`map-of-github`** (low) — Use when you have a GitHub repository or topic and want to see related projects clustered by similarity — returns a visual map of neighborin
 - **`map-of-reddit`** (medium) — Use when you have a subreddit or topic and want to discover adjacent communities a subject might frequent — returns an interactive similarit
 - **`mastodon-github-com`** (medium) — Use when you have a known Mastodon `username`/handle on a specific instance and want to resolve it to a stable account ID and profile metada
-- **`mastodon-search-engine`** (low) — OSINT tool: Mastodon Search Engine.
+- **`mastodon-search-engine`** (low) — Use when you have a `username`, `name`, or keyword and want to find posts/profiles across the Mastodon fediverse — returns `social-profile` 
 - **`mastodon`** (high) — Use when you have a `name` or `username` and want to find a subject's profile on the decentralised Mastodon/fediverse network — returns a so
 - **`mastogizmos-com`** (high) — Use when you have a username, hashtag or topic and want to search across the decentralised Mastodon fediverse — returns matching profiles, p
 - **`matthewcassinelli-com`** (high) — Use when you have a Mastodon/fediverse handle or profile link and want its stable numeric account ID — this free Apple Shortcut returns the 

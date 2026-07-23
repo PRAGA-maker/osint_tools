@@ -61979,44 +61979,55 @@
   {
     "id": "aquatone",
     "name": "Aquatone",
-    "description": "Visual subdomain reconnaissance, HTTP service discovery, attack surface mapping",
+    "description": "Use when you have a `domain` (or a list of discovered hosts) and want a fast visual map of its web attack surface — returns HTTP screenshots, response headers, and a clustered HTML report.",
     "url": "https://github.com/michenriksen/aquatone",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Visual subdomain reconnaissance, HTTP service discovery, attack surface mapping",
-    "input": "Domain name",
-    "output": "Discovered subdomains, open ports, HTTP screenshots, consolidated reconnaissance report",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Screenshotting and clustering a large list of hosts to eyeball a target's web footprint quickly.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "employer-org"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open source (MIT); pre-compiled Go binary, runs locally. No cost.",
     "opsec": "active",
-    "opsecNote": "Makes HTTP requests to discovered hosts to capture screenshots and fingerprint services; supports integration with passive enumeration tools.",
+    "opsecNote": "Aquatone makes real HTTP(S) requests to every host to capture screenshots and headers, so your IP lands in each target's web/server logs. This is active reconnaissance — route it through a VPN/proxy or a throwaway VPS for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used open-source recon tool by Michael Henriksen; note the GitHub repo was archived (read-only) in Jan 2023, so it is unmaintained though still functional.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "birdwatcher",
       "gitrob"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "aquatone",
+      "michenriksen/aquatone"
+    ],
+    "tags": [
+      "subdomain-recon",
+      "screenshots",
+      "attack-surface"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/aquatone.md"
   },
   {
@@ -64654,41 +64665,49 @@
   {
     "id": "cisco-umbrella-popularity-list",
     "name": "Cisco Umbrella Popularity List",
-    "description": "Top-domain popularity and DNS trend context",
+    "description": "Use when you have a `domain` and want to gauge how popular/common it is in global DNS traffic — returns a top-1-million ranking (present-and-ranked, or absent) as context.",
     "url": "https://s3-us-west-1.amazonaws.com/umbrella-static/index.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Top-domain popularity and DNS trend context",
-    "input": "Domain or list lookup",
-    "output": "Popularity ranking and related DNS-derived context",
-    "selectorsIn": [],
+    "bestFor": "Quickly judging whether a domain is a mainstream high-traffic site or an obscure one, from DNS-based popularity ranking.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free downloadable CSV (top-1m.csv.zip); no account or key required.",
     "opsec": "passive",
-    "opsecNote": "Consumes published ranking data with low direct exposure.",
+    "opsecNote": "Fully passive — you download a static, aggregated ranking file from an S3 bucket and grep it offline. No query touches the domain in question, so there is zero exposure to any target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Cisco Umbrella (OpenDNS) from its global DNS resolver traffic; a widely-cited domain-popularity dataset in security research.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Umbrella 1 Million",
+      "Cisco Umbrella top 1m",
+      "OpenDNS popularity list"
+    ],
+    "tags": [
+      "domain-popularity",
+      "dns",
+      "dataset"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/cisco-umbrella-popularity-list.md"
   },
   {
@@ -65755,41 +65774,48 @@
   {
     "id": "cve-details",
     "name": "CVE Details",
-    "description": "OSINT tool: CVE Details.",
+    "description": "Use when you have a `domain`/product and version (or a CVE id) and want its known vulnerabilities and severity — returns CVE listings, CVSS scores, and vendor/product vulnerability history.",
     "url": "https://www.cvedetails.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "advisories"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
+    "bestFor": "Looking up the known-vulnerability history of a vendor, product, or specific software version.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse; an optional free account/API key unlocks saved searches and programmatic access.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you query cvedetails.com's aggregated NVD data, never the target. The subject learns nothing. Use it to understand what a fingerprinted service *could* be vulnerable to before any active step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running aggregator of the US National Vulnerability Database (NVD/MITRE CVE) data, widely used in the security industry; data is authoritative because it mirrors NVD.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "cvedetails",
+      "cvedetails.com"
+    ],
+    "tags": [
+      "vulnerabilities",
+      "cve",
+      "advisories"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/advisories/cve-details.md"
   },
   {
@@ -67924,43 +67950,54 @@
   {
     "id": "dshield-api",
     "name": "DShield API",
-    "description": "Query IPs involved in attacks",
+    "description": "Use when you have an `ip-address` and want to know if it has been seen attacking networks — returns attack/report counts, targeted-systems totals, ASN, and threat-feed associations.",
     "url": "https://isc.sans.edu/api/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "blacklists"
     ],
-    "bestFor": "Query IPs involved in attacks",
-    "input": "IP address",
-    "output": "Attack reports, threat activity",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether an IP has a history of malicious/attack activity from SANS ISC honeynet data.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Completely free, no authentication or API key required; best-effort with soft rate limits (may return HTTP 429 under load).",
     "opsec": "passive",
-    "opsecNote": "Passive threat intelligence from SANS monitored networks.",
+    "opsecNote": "Fully passive — you query SANS ISC's aggregated honeypot data about an IP; the IP's owner is never contacted and sees nothing. Only SANS logs your API request.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Run by the SANS Internet Storm Center, a respected security-community project; data is aggregated from a broad honeynet of contributing sensors.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "sans-internet-storm-center-diary-full-text"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SANS ISC API",
+      "Internet Storm Center API",
+      "isc.sans.edu/api"
+    ],
+    "tags": [
+      "threat-intelligence",
+      "ip-reputation",
+      "blacklists"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/blacklists/dshield-api.md"
   },
   {
@@ -107413,41 +107450,50 @@
   {
     "id": "coinmap",
     "name": "CoinMap",
-    "description": "OSINT tool: CoinMap.",
+    "description": "Use when you have a `geolocation`/area and want to see businesses and ATMs that accept cryptocurrency there — returns mapped `address` points of crypto-accepting venues.",
     "url": "https://coinmap.org",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Locating crypto-accepting merchants and ATMs on a world map, filtered by area.",
     "selectorsIn": [
-      "crypto-wallet"
+      "geolocation"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the map and add listings; maintained by Invity. No account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public heatmap of crowdsourced merchant listings; nothing is queried about any individual. It maps businesses/ATMs, not people or wallets, so it exposes no target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced merchant/ATM directory (OpenStreetMap-based, maintained by Invity); entries are user-submitted, so accuracy and freshness vary by location.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "coinmap.org",
+      "CoinMap+"
+    ],
     "tags": [
-      "crypto"
+      "crypto",
+      "merchant-map",
+      "atm"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/coinmap.md"
   },
   {
@@ -163231,28 +163277,30 @@
   {
     "id": "telegram-directory-tdirectory-me",
     "name": "Telegram Directory (tdirectory.me)",
-    "description": "Comprehensive Telegram directory of channels/groups/bots.",
+    "description": "Use when you have a `name`, keyword, or topic and want to discover public Telegram channels/groups/bots tied to a person or interest — returns matching `social-profile` links plus channel analytics.",
     "url": "https://tdirectory.me",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Browsing a broad Telegram directory",
+    "bestFor": "Discovering public Telegram channels, groups, and bots by name or keyword.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse; no account required. Listings are owner-submitted plus indexed.",
+    "opsec": "passive",
+    "opsecNote": "Searching the directory is passive — you query tdirectory.me, not Telegram itself, so the channel owner is not notified. Only when you click through and JOIN a Telegram channel do you become visible to it; browse the directory first, and join from a sock-puppet Telegram account if you must.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party, largely owner-submitted directory; entries are self-listed and rated by users, so coverage is partial and metadata unverified.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -163261,14 +163309,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tdirectory",
+      "tdirectory.me",
+      "Telegram Directory"
+    ],
     "tags": [
       "telegram",
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-directory-tdirectory-me.md"
   },
   {
@@ -169296,37 +169348,48 @@
   {
     "id": "bugmenot",
     "name": "BugMenot",
-    "description": "login and passwords for public accounts in different services",
+    "description": "Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account — returns community-submitted username/password pairs.",
     "url": "http://bugmenot.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Getting past mandatory-signup walls on non-sensitive sites without registering your own identity.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; no account needed to look up or submit shared logins.",
+    "opsec": "passive",
+    "opsecNote": "Using a shared login means you are NOT registering with your own email/identity, which is good for OpSec. But these credentials are public and shared — never use them on anything sensitive, never enter payment info, and assume the account may be monitored or already burned. Only appropriate for read-only access to low-stakes content walls.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community-submitted credentials with no guarantee they work; sites actively block BugMenot and many domains (banking, email, anything with real stakes) are excluded by policy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "bugmenot.com"
+    ],
     "tags": [
-      "Passwords"
+      "Passwords",
+      "shared-logins",
+      "registration-bypass"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/bugmenot.md"
   },
   {
@@ -176495,50 +176558,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/kali-anonsurf.md"
-  },
-  {
-    "id": "kali-linux",
-    "name": "Kali Linux",
-    "description": "Offensive-security Linux distribution with many recon/OSINT tools preinstalled.",
-    "url": "https://www.kali.org/get-kali/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "A versatile security/recon workstation",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "desktop-app",
-    "trust": "trusted",
-    "trustNote": "Maintained by Offensive Security; industry-standard pentest distro.",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vm",
-      "linux-distro",
-      "recon"
-    ],
-    "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "goofile",
-      "kali-linux-os"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/kali-linux.md"
   },
   {
     "id": "kasm",
@@ -221200,40 +221219,6 @@
       "oh-shint-osint-web-resources"
     ],
     "_file": "library/tools/public-records/data-sets-oh-shint.md"
-  },
-  {
-    "id": "data-world",
-    "name": "data.world",
-    "description": "OSINT tool: data.world.",
-    "url": "https://data.world/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/data-world.md"
   },
   {
     "id": "databasd",
@@ -270713,37 +270698,47 @@
   {
     "id": "dorkgpt",
     "name": "DorkGPT",
-    "description": "OSINT tool: DorkGPT.",
+    "description": "Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced search operators to paste into Google.",
     "url": "https://www.dorkgpt.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Turning a plain-English investigative goal into a working Google dork (advanced-operator query).",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; generation runs in-browser with no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Generating a dork is passive — you only send your natural-language prompt to DorkGPT, which returns query text; nothing touches the target. The subsequent Google search is where the real (still passive) query happens. Avoid pasting sensitive real names into the generator if you don't want them logged by the third-party service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent AI helper that composes Google search-operator strings; it doesn't access any data itself, so the only risk is a poorly-formed or over-broad query — always sanity-check the output.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Dork GPT",
+      "dorkgpt.com"
+    ],
     "tags": [
-      "google-dorks-tools"
+      "google-dorks-tools",
+      "ai"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dorkgpt.md"
   },
   {
@@ -287442,45 +287437,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/presearch.md"
-  },
-  {
-    "id": "press-reader",
-    "name": "Press Reader",
-    "description": "OSINT tool: Press Reader.",
-    "url": "http://www.pressreader.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "pressreader-com"
-    ],
-    "_file": "library/tools/search-engines/press-reader.md"
   },
   {
     "id": "pressreader-com",
@@ -317537,35 +317493,50 @@
   {
     "id": "mastodon-search-engine",
     "name": "Mastodon Search Engine",
-    "description": "OSINT tool: Mastodon Search Engine.",
+    "description": "Use when you have a `username`, `name`, or keyword and want to find posts/profiles across the Mastodon fediverse — returns `social-profile` and post mentions via a scoped Google Custom Search.",
     "url": "https://cse.google.com/cse?cx=334aec4c3c73ed945",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/handle search across many Mastodon instances at once, since Mastodon has no global search.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query Google's index of public Mastodon pages, not any instance directly, so no fediverse account is notified. Only Google sees your search terms. Clicking through to a profile is a normal public web visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-maintained Google Custom Search Engine scoped to a curated set of Mastodon instances; coverage depends on which instances the CSE includes and on Google's index, so it is inherently partial.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Mastodon CSE",
+      "fediverse search"
+    ],
+    "tags": [
+      "mastodon",
+      "fediverse",
+      "custom-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mastodon-search-engine.md"
   },
   {

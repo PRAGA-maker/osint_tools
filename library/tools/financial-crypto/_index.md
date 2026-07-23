@@ -48,7 +48,7 @@ kind: group-index
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
 - **`coinchoose-com`** (low) — Use when a crypto trace surfaces an unfamiliar coin/ticker and you want quick market and mining context — returns prices, market caps and mi
-- **`coinmap`** (low) — OSINT tool: CoinMap.
+- **`coinmap`** (low) — Use when you have a `geolocation`/area and want to see businesses and ATMs that accept cryptocurrency there — returns mapped `address` point
 - **`coinmarketcap`** (low) — Use when you have a crypto asset name/symbol (or a token from a `crypto-wallet` trace) and want to identify and value it — returns market da
 - **`coinwink-com`** (low) — OSINT tool: Coinwink.com.
 - **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.

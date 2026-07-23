@@ -123,7 +123,7 @@ kind: group-index
 - **`telegram-channels-list`** (medium) — Use when you have a topic/keyword and want to discover public Telegram channels around it — returns social-profile and username.
 - **`telegram-channels-scraper-telegraphite`** (high) — Use when you have public Telegram channel `username`s and want their posts, media, and any leaked contacts archived to JSON — returns social
 - **`telegram-channels`** (medium) — Use when you have a `username`, keyword or topic and want to discover public Telegram channels/groups — returns social-profile links to matc
-- **`telegram-directory-tdirectory-me`** (low) — Comprehensive Telegram directory of channels/groups/bots.
+- **`telegram-directory-tdirectory-me`** (low) — Use when you have a `name`, keyword, or topic and want to discover public Telegram channels/groups/bots tied to a person or interest — retur
 - **`telegram-finder-telegram-finder-io`** (high) — Use when you have a `phone`, `email` or LinkedIn `social-profile` and want to find the matching Telegram account — returns the linked Telegr
 - **`telegram-finder`** (high) — Use when you have a `phone` number (or email) and want to find the linked Telegram account — returns the Telegram profile/username where the
 - **`telegram-group-joiner`** (medium) — Use when you have a list of Telegram group/channel links and want a research account joined to all of them at once — a batch-join helper; en

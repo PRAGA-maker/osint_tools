@@ -70,7 +70,7 @@ kind: group-index
 - **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bromite`** (low) — OSINT tool: Bromite.
-- **`bugmenot`** (low) — login and passwords for public accounts in different services
+- **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
 - **`bunker-is`** (low) — OSINT tool: Bunker.is.
 - **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
 - **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
@@ -233,7 +233,6 @@ kind: group-index
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
 - **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
-- **`kali-linux`** (low) — Offensive-security Linux distribution with many recon/OSINT tools preinstalled.
 - **`kasm`** (low) — OSINT tool: Kasm.
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015

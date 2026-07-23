@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`australian-cyber-security-centre`** (low) — OSINT tool: Australian Cyber Security Centre.
 - **`canadian-centre-for-cyber-security`** (low) — OSINT tool: Canadian Centre for Cyber Security.
-- **`cve-details`** (low) — OSINT tool: CVE Details.
+- **`cve-details`** (low) — Use when you have a `domain`/product and version (or a CVE id) and want its known vulnerabilities and severity — returns CVE listings, CVSS 
 - **`cve-mitre`** (low) — Use when you have a CVE ID or a product/keyword and want the authoritative vulnerability record — returns the official CVE description, affe
 - **`nvd-nist`** (low) — OSINT tool: NVD - NIST.
 - **`osv-vulnerability-library`** (low) — OSINT tool: OSV Vulnerability Library.

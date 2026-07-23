@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`blocklist-de`** (low) — Check IP blacklist status
-- **`dshield-api`** (low) — Query IPs involved in attacks
+- **`dshield-api`** (low) — Use when you have an `ip-address` and want to know if it has been seen attacking networks — returns attack/report counts, targeted-systems t
 - **`firehol-ip-lists`** (low) — Block malicious/spam IP sources
 - **`project-honey-pot`** (low) — Check IP for spam and attack history
 

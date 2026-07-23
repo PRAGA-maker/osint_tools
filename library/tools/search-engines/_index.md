@@ -183,7 +183,7 @@ kind: group-index
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
 - **`dorkgenius`** (low) — OSINT tool: DorkGenius.
-- **`dorkgpt`** (low) — OSINT tool: DorkGPT.
+- **`dorkgpt`** (low) — Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced searc
 - **`dpa-international`** (low) — OSINT tool: DPA International.
 - **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
 - **`duckduckgo-bangs`** (low) — extension that add DuckDuckGo bang buttons to search results and search links in the context menu
@@ -508,7 +508,6 @@ kind: group-index
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.
 - **`presearch`** (low) — OSINT tool: Presearch.
-- **`press-reader`** (low) — OSINT tool: Press Reader.
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam
 - **`property-value`** (low) — Use when you have an Australian `address` and want its property profile — returns estimated value, sales/listing history and comparables (Co

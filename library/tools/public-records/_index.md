@@ -226,7 +226,6 @@ kind: group-index
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
 - **`data-gov`** (low) — Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keywor
 - **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
-- **`data-world`** (low) — OSINT tool: data.world.
 - **`databasd`** (low) — OSINT tool: Databasd.
 - **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address

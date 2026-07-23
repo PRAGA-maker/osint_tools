@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/analytics
 
 ## Skills here
-- **`cisco-umbrella-popularity-list`** (low) — Top-domain popularity and DNS trend context
+- **`cisco-umbrella-popularity-list`** (low) — Use when you have a `domain` and want to gauge how popular/common it is in global DNS traffic — returns a top-1-million ranking (present-and
 - **`clearwebstats-com`** (low) — Lightweight web popularity lookups
 - **`ewhois`** (low) — Quick WHOIS lookups
 - **`keyword-density`** (low) — On-page keyword frequency analysis
