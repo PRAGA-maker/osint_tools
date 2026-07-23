@@ -131,7 +131,7 @@ kind: group-index
 - **`dirhunt`** (low) — Use when you have a `domain` and want to discover and analyse its web directories — finds "index of" listings, hidden folders and files acro
 - **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website
 - **`ditto`** (low) — Use when you have a `domain` and want to find look-alike/homograph variants — generates confusable domain permutations and checks which are 
-- **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
+- **`dns-history-lookup`** (low) — Use when you have a domain and want its historical DNS records to uncover past hosting IPs — returns ip-address and domain history that can 
 - **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
@@ -297,7 +297,7 @@ kind: group-index
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
 - **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
-- **`netcraft`** (low) — Site reports, DNS search, and hosting history tools.
+- **`netcraft`** (low) — Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domai
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
 - **`network-tools`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS re

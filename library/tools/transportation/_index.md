@@ -106,7 +106,7 @@ kind: group-index
 - **`license-plate-mania`** (medium) — Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plat
 - **`license-plate-maps`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of issue — a reference collection of plate-format gui
 - **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 
-- **`live-atc`** (low) — Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft a
+- **`live-atc`** (low) — Use when you have an aircraft near a covered airport and want tail numbers/callsigns from live tower audio — returns vehicle-plate (tail num
 - **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
 - **`live-piracy-map`** (low) — OSINT tool: Live Piracy Map.
 - **`live-train-tracker`** (low) — A world map showing real-time train traffic (with route point's exact geographic coordinates) and schedules on the roads of Europe, North an

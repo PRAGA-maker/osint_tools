@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`about-maps-and-satellites`** (low) — A guide to using map and satellite tools.
-- **`acled-armed-conflict-location-and-event-data-project`** (low) — ACLED provides data and analysis on political violence and protest around the world, facilitating research, policy making, and journalistic 
+- **`acled-armed-conflict-location-and-event-data-project`** (medium) — Use when you have a place and date range in a conflict/protest zone and want geolocated event data — returns geolocation and address-level e
 - **`active-agency-map`** (medium) — Use when you have a `geolocation` / region and want to see a community-curated Google My Map of agency locations plotted for it — returns `a
 - **`alltrails`** (medium) — Use when you have a subject's `username`/`name` or a location and want their recorded hikes/runs and photos — returns geolocation (trail act
 - **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat

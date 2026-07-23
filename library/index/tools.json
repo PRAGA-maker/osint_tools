@@ -33821,58 +33821,6 @@
     "_file": "library/tools/communities-forums/redditlist.md"
   },
   {
-    "id": "redditsearch",
-    "name": "RedditSearch",
-    "description": "OSINT tool: RedditSearch.",
-    "url": "https://reddysearchgo.herokuapp.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "mmhdan",
-      "osm-finder",
-      "query-server",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/communities-forums/redditsearch.md"
-  },
-  {
     "id": "rediff-web-portal-india",
     "name": "Rediff Web Portal (India)",
     "description": "Use when you have a Rediffmail `email` or an Indian subject and want portal context — a live Indian news/email/shopping portal, most relevant as the host behind @rediffmail.com addresses.",
@@ -64505,44 +64453,55 @@
   },
   {
     "id": "changedetect",
-    "name": "ChangeDetect",
-    "description": "Flexible page change monitoring with self-hosted control",
+    "name": "changedetection.io",
+    "description": "Use when you have a web page (profile, listing, notice) and want to be alerted when its content changes — returns dated change diffs/snapshots for monitoring a subject's online footprint.",
     "url": "https://changedetection.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "change-detection"
     ],
-    "bestFor": "Flexible page change monitoring with self-hosted control",
-    "input": "Target URL and optional monitoring rules/selectors",
-    "output": "Change alerts, snapshots, and webhook/integration notifications",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Automated monitoring of a web page for content changes, with diffs, snapshots, and alerts.",
+    "selectorsIn": [
+      "domain",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "When self-hosted, investigators control infrastructure and request origin; hosted mode proxies checks through provider systems.",
+    "costNote": "Open-source and free to self-host (Docker/pip); an optional paid hosted plan runs the checks for you.",
+    "opsec": "active",
+    "opsecNote": "Each check fetches the target page, so it repeatedly touches the subject's server from your monitoring host. Self-host to control the source IP/User-Agent (and route via proxy) — hosted mode fetches from the provider's infrastructure instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Popular open-source project (widely deployed, active repo); self-hosting means you can audit exactly what it does.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "change-detection"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "changedetection.io",
+      "ChangeDetect"
+    ],
+    "tags": [
+      "change-monitoring",
+      "surveillance",
+      "automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/changedetect.md"
   },
   {
@@ -66986,35 +66945,50 @@
   {
     "id": "dns-history-lookup",
     "name": "DNS History Lookup",
-    "description": "OSINT tool: DNS History Lookup.",
+    "description": "Use when you have a domain and want its historical DNS records to uncover past hosting IPs — returns ip-address and domain history that can reveal a site's origin behind later CDN/privacy layers.",
     "url": "https://osint.sh/dnshistory/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Revealing a domain's historical A/MX/NS records to find the original hosting IP before a proxy was added.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Web tools on osint.sh are free with no account; the API is limited to sponsors.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "osint.sh queries its own historical DNS dataset, so the target domain's servers are not contacted by your lookup — passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of osint.sh, a popular free all-in-one OSINT toolkit; historical DNS data is aggregated by a third party, so corroborate critical findings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "osint.sh DNS history"
+    ],
+    "tags": [
+      "dns",
+      "history",
+      "passive-dns"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dns-history-lookup.md"
   },
   {
@@ -77131,44 +77105,53 @@
   },
   {
     "id": "mitre-ttps",
-    "name": "Mitre TTPs",
-    "description": "Threat modeling and TTP analysis",
+    "name": "MITRE ATT&CK",
+    "description": "Use when you have observed adversary behavior or malware and want to classify the tactics/techniques — returns technique document-ids and a shared taxonomy; a reference framework, not a people source.",
     "url": "https://attack.mitre.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ttps"
     ],
-    "bestFor": "Threat modeling and TTP analysis",
-    "input": "Search for tactics, techniques, or threat groups",
-    "output": "Technique descriptions and mitigation strategies",
+    "bestFor": "A standardized catalog of adversary tactics, techniques, and procedures for classifying and communicating observed behavior.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open; the full knowledge base is downloadable (STIX/TAXII) and there is a public API — no account.",
     "opsec": "passive",
-    "opsecNote": "Passive research of public threat intelligence",
+    "opsecNote": "You read a public knowledge base; nothing about a target is transmitted, so it is entirely passive with no leakage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by MITRE (a US non-profit R&D organization); ATT&CK is the de-facto industry-standard adversary-behavior taxonomy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "mitre-att-and-ck"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MITRE ATT&CK",
+      "ATT&CK",
+      "Mitre TTPs"
+    ],
+    "tags": [
+      "threat-intel",
+      "ttp",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ttps/mitre-ttps.md"
   },
   {
@@ -78218,13 +78201,13 @@
   {
     "id": "netcraft",
     "name": "Netcraft",
-    "description": "Site reports, DNS search, and hosting history tools.",
+    "description": "Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domain, and hosting/registrar history for infrastructure attribution.",
     "url": "https://netcraft.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Site report / hosting history / DNS lookups for a domain",
+    "bestFor": "Site reports with hosting history, tech stack, and network details to attribute and track a domain over time.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -78233,15 +78216,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The public Site Report tool is free; Netcraft's takedown/anti-phishing and API products are commercial. No account needed for the basic report.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Netcraft answers from its own long-running survey data, so the target site is not directly contacted by your query — passive attribution research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Long-established internet research company.",
+    "trustNote": "Netcraft has run internet-infrastructure surveys since the 1990s; its hosting-history data is a recognized, long-standing reference.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -78250,18 +78234,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "netcraft-site-report"
+    ],
+    "aliases": [
+      "Netcraft Site Report"
+    ],
     "tags": [
       "site-report",
       "dns",
       "hosting-history"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "netcraft-site-report"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/netcraft.md"
   },
   {
@@ -79788,41 +79774,50 @@
   {
     "id": "osv-vulnerability-library",
     "name": "OSV Vulnerability Library",
-    "description": "OSINT tool: OSV Vulnerability Library.",
+    "description": "Use when you have a software package/version (or a domain's tech stack) and want known open-source vulnerabilities — returns advisory document-ids, a reference database not a people source.",
     "url": "https://osv.dev/list",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "advisories"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
+    "bestFor": "Looking up known vulnerabilities affecting a specific open-source package and version.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open (run by Google/OpenSSF); free public API and downloadable database dumps, no account.",
+    "opsec": "passive",
+    "opsecNote": "You query a public vulnerability database about software, not about a person — nothing about a target is transmitted, so it is fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Google's Open Source Security Team / OpenSSF; aggregates authoritative advisory feeds (GHSA, PyPA, RustSec, OSS-Fuzz, etc.).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OSV",
+      "osv.dev",
+      "Open Source Vulnerabilities"
+    ],
+    "tags": [
+      "vulnerabilities",
+      "advisories",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/advisories/osv-vulnerability-library.md"
   },
   {
@@ -90035,47 +90030,59 @@
   {
     "id": "whois-arin",
     "name": "Whois ARIN",
-    "description": "IP address and ASN registration data, North American internet resource tracking",
+    "description": "Use when you have an ip-address or ASN in North America and want its registered owner and contacts — returns employer-org, address, and point-of-contact email/phone from the RIR registry.",
     "url": "https://whois.arin.net/ui/advanced.jsp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "IP address and ASN registration data, North American internet resource tracking",
-    "input": "IP address, ASN, organization name, contact information",
-    "output": "IP ownership, organization details, Points of Contact (POCs), ASN information",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative ownership and contact lookup for North American IP ranges and ASNs.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "email",
+      "phone"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public registry; no account. A free API key unlocks the REST/RWS interface for bulk queries.",
     "opsec": "passive",
-    "opsecNote": "Queries official ARIN database; does not contact targets or perform active scanning.",
+    "opsecNote": "Queries ARIN's own registry database; the target network is not contacted and no active scanning occurs — fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ARIN is the official Regional Internet Registry for North America; its WHOIS is the authoritative source for allocations in its region.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "account-arin-net",
       "arin",
-      "arin-net",
-      "search-arin-net",
+      "account-arin-net",
       "whois-arin-online"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ARIN Whois",
+      "ARIN Whois-RWS"
+    ],
+    "tags": [
+      "whois",
+      "ip-registry",
+      "asn"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/whois-arin.md"
   },
   {
@@ -151444,42 +151451,57 @@
   {
     "id": "acled-armed-conflict-location-and-event-data-project",
     "name": "ACLED (Armed Conflict Location & Event Data Project)",
-    "description": "ACLED provides data and analysis on political violence and protest around the world, facilitating research, policy making, and journalistic reporting.",
+    "description": "Use when you have a place and date range in a conflict/protest zone and want geolocated event data — returns geolocation and address-level event records to build local context around a subject's whereabouts.",
     "url": "https://acleddata.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "conflict"
+    "bestFor": "Geolocated, dated records of political violence and protest to establish on-the-ground context for a place and time.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free Data Export Tool, downloadable files, and public dashboards; a free myACLED account unlocks the Explorer and API for advanced/bulk access.",
+    "opsec": "passive",
+    "opsecNote": "You query ACLED's curated event database, not the subject — passive. Note ACLED's access terms and attribution requirements when you reuse the data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "web-manual",
+    "trust": "trusted",
+    "trustNote": "ACLED is a widely-cited, methodologically documented conflict-data project used by researchers, journalists, and governments.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
     "relatedTools": [
       "acled-data-crisis-map",
       "us-crisis-monitor"
     ],
+    "aliases": [
+      "ACLED",
+      "Armed Conflict Location and Event Data"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "conflict",
+      "geospatial"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/acled-armed-conflict-location-and-event-data-project.md"
   },
   {
@@ -163822,45 +163844,51 @@
   {
     "id": "telegram-history-dump",
     "name": "telegram-history-dump",
-    "description": "Dump Telegram chat history to JSON.",
+    "description": "Use when you have access to a Telegram account and want to export its chat/group history for offline analysis — returns social-profile message logs (JSON/HTML) from dialogs the account can see.",
     "url": "https://github.com/tvdstaaij/telegram-history-dump",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Exporting Telegram chat history for offline analysis",
+    "bestFor": "Bulk-exporting a Telegram account's own chat and group history to JSON for offline searching.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source, but depends on telegram-cli, which is largely unmaintained and often broken against the current Telegram API.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally against an account you control; it reads history the logged-in account already has access to and does not scrape strangers. Exporting private group content still carries legal/ethical duties — only export what you are authorized to.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community project (last release 2017); functional only if you can get its telegram-cli dependency working, so verify before relying on it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "telegram history dump"
+    ],
     "tags": [
       "telegram",
       "export",
       "history"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-history-dump.md"
   },
   {
@@ -350476,45 +350504,55 @@
   {
     "id": "live-atc",
     "name": "Live ATC",
-    "description": "Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft are trying to obscure their information from other sites, it might be another way to grab tail number",
-    "url": "http://liveatc.net/",
+    "description": "Use when you have an aircraft near a covered airport and want tail numbers/callsigns from live tower audio — returns vehicle-plate (tail number) and geolocation context that flight-trackers may hide.",
+    "url": "https://www.liveatc.net/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Listening to live/archived air-traffic-control audio to catch a tail number or callsign an aircraft tried to keep off flight-tracking sites.",
     "selectorsIn": [
-      "vehicle-plate"
-    ],
-    "selectorsOut": [
+      "vehicle-plate",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "vehicle-plate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to stream live and to access recent archived recordings; volunteer-run, funded by donations/store.",
+    "opsec": "passive",
+    "opsecNote": "You are listening to publicly broadcast, unencrypted radio; nothing about you or the aircraft owner is transmitted — fully passive. Note that recording/relaying ATC audio has local legal nuances in some jurisdictions.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running volunteer network of receiver feeds; coverage and audio quality depend on local volunteers, but the audio itself is primary-source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "transport"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "live-air-traffic-control"
     ],
+    "aliases": [
+      "LiveATC.net"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "transport",
+      "aviation"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/live-atc.md"
   },
   {

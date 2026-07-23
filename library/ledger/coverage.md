@@ -2,32 +2,32 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7400 total · 5119 full · 2281 stub (69% enriched)
+**Tools:** 7399 total · 5128 full · 2271 stub (69% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3448 · medium: 1988 · high: 1964
+low: 3446 · medium: 1989 · high: 1964
 
 ## Tools by trust
-community: 3482 · unverified: 2178 · trusted: 1731 · untrustworthy: 6 · personal: 3
+community: 3483 · unverified: 2172 · trusted: 1735 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 82/447
 - `archives-cache` — 91/120
-- `communities-forums` — 239/287
+- `communities-forums` — 239/286
 - `dark-web` — 46/108
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 91/296
-- `domains-ip-infrastructure` — 290/672
+- `domains-ip-infrastructure` — 296/672
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 59/105
 - `geolocation` — 293/340
 - `image-video-face` — 442/451
-- `maps-geospatial-data` — 80/123
-- `messaging` — 179/184
+- `maps-geospatial-data` — 81/123
+- `messaging` — 180/184
 - `opsec-investigator-tooling` — 101/528
 - `people-search` — 256/257
 - `phone` — 134/137
@@ -36,7 +36,7 @@ community: 3482 · unverified: 2178 · trusted: 1731 · untrustworthy: 6 · pers
 - `social-networks` — 734/784
 - `training-ctf` — 6/12
 - `translation-language` — 25/100
-- `transportation` — 135/208
+- `transportation` — 136/208
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -49,7 +49,7 @@ community: 3482 · unverified: 2178 · trusted: 1731 · untrustworthy: 6 · pers
 - `library/tools/ai-analysis-automation` — 413 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
-- `library/tools/communities-forums` — 284 leaves
+- `library/tools/communities-forums` — 283 leaves
 - `library/tools/documents-metadata` — 250 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves

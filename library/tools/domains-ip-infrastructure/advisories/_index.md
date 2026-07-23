@@ -12,7 +12,7 @@ kind: group-index
 - **`cve-details`** (low) — Use when you have a `domain`/product and version (or a CVE id) and want its known vulnerabilities and severity — returns CVE listings, CVSS 
 - **`cve-mitre`** (low) — Use when you have a CVE ID or a product/keyword and want the authoritative vulnerability record — returns the official CVE description, affe
 - **`nvd-nist`** (low) — OSINT tool: NVD - NIST.
-- **`osv-vulnerability-library`** (low) — OSINT tool: OSV Vulnerability Library.
+- **`osv-vulnerability-library`** (low) — Use when you have a software package/version (or a domain's tech stack) and want known open-source vulnerabilities — returns advisory docume
 - **`owasp`** (low) — OSINT tool: OWASP.
 - **`secunia`** (low) — OSINT tool: Secunia.
 - **`securityfocus`** (low) — OSINT tool: SecurityFocus.

@@ -202,7 +202,6 @@ kind: group-index
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
 - **`redditlist`** (low) — OSINT tool: Redditlist.
-- **`redditsearch`** (low) — OSINT tool: RedditSearch.
 - **`rediff-web-portal-india`** (low) — Use when you have a Rediffmail `email` or an Indian subject and want portal context — a live Indian news/email/shopping portal, most relevan
 - **`reelgood-com`** (low) — search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)
 - **`refdesk-newspaper-search`** (medium) — Use when you have a subject's `name` and a `geolocation` and want the right local newspaper to search for coverage of them — returns links t

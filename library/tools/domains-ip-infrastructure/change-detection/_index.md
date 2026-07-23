@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`change-detection`** (low) — Self-hosted page change monitoring
-- **`changedetect`** (low) — Flexible page change monitoring with self-hosted control
+- **`changedetect`** (low) — Use when you have a web page (profile, listing, notice) and want to be alerted when its content changes — returns dated change diffs/snapsho
 - **`follow-that-page`** (low) — Tracking updates on specific web pages by keyword
 - **`urlwatch`** (low) — Self-hosted web page change monitoring automation
 - **`visualping`** (low) — Use when you have a `domain`/URL (a profile, listing, or org page) and want to be alerted when it changes — returns visual/text diffs and ch

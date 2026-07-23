@@ -128,7 +128,7 @@ kind: group-index
 - **`telegram-finder`** (high) — Use when you have a `phone` number (or email) and want to find the linked Telegram account — returns the Telegram profile/username where the
 - **`telegram-group-joiner`** (medium) — Use when you have a list of Telegram group/channel links and want a research account joined to all of them at once — a batch-join helper; en
 - **`telegram-group-telegram-group-com`** (low) — Search and join Telegram groups.
-- **`telegram-history-dump`** (low) — Dump Telegram chat history to JSON.
+- **`telegram-history-dump`** (low) — Use when you have access to a Telegram account and want to export its chat/group history for offline analysis — returns social-profile messa
 - **`telegram-message-analyzer`** (medium) — Use when you have an exported Telegram chat (HTML) and want a behavioural profile of a `username`/participant — returns activity-by-hour/day
 - **`telegram-nearby-map`** (medium) — Use when you have a `geolocation` and want to find Telegram users who enabled "People Nearby" there — returns nearby profiles plotted on a m
 - **`telegram-osint-lib-postuf`** (medium) — Use when you have a `phone` or `username` and want to enrich it against Telegram programmatically — a PHP library that checks presence, reso
