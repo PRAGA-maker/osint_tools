@@ -15,10 +15,10 @@ kind: group-index
 - **`ether`** (low) — Transparent malware analysis resistant to anti-analysis evasion
 - **`hybrid-analysis`** (low) — Advanced malware behavior analysis and evasion detection
 - **`joe-file-analyzer`** (low) — PE file malware analysis with system interaction tracking
-- **`jotti-s-malware-scanner`** (low) — Quick multi-engine scan without installation or account setup
+- **`jotti-s-malware-scanner`** (low) — Use when you have a suspicious file (`document-id`/hash) and want a quick multi-engine AV verdict — returns per-engine detections and the fi
 - **`koodous`** (low) — Android malware analysis with community collaboration and threat intelligence
 - **`malware-config`** (low) — Malware configuration extraction and C2 server tracking
-- **`metadefender`** (low) — Enterprise-grade multi-engine malware detection and advanced threat analysis
+- **`metadefender`** (low) — Use when you have a file or hash (`document-id`) or a `domain`/`ip-address` and want multi-engine malware/reputation analysis — returns verd
 - **`opswat-meta-defender`** (low) — Multi-engine malware detection with advanced threat analysis
 - **`pikker-ee-cuckoo-sandbox`** (low) — Free automated dynamic malware analysis with detailed behavioral reports
 - **`uncover-it`** (low) — Fast static malware configuration extraction

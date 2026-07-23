@@ -53953,43 +53953,54 @@
   {
     "id": "jotti-s-malware-scanner",
     "name": "Jotti's Malware Scanner",
-    "description": "Quick multi-engine scan without installation or account setup",
+    "description": "Use when you have a suspicious file (`document-id`/hash) and want a quick multi-engine AV verdict — returns per-engine detections and the file's hashes.",
     "url": "https://virusscan.jotti.org/en-US/scan-file",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Quick multi-engine scan without installation or account setup",
-    "input": "Files (up to 5 concurrent, 250MB per file)",
-    "output": "Detection results from 14+ AV engines, file metadata, scan reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A fast, no-account multi-AV scan of a suspicious file to get a consensus verdict.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account, no payment. Up to 5 files at once, 250 MB each.",
     "opsec": "active",
-    "opsecNote": "No account required; file uploads to external scanning service",
+    "opsecNote": "You UPLOAD the file to Jotti's servers, and Jotti shares samples with the AV vendors behind it — so the file leaves your control and may be retained/distributed. Never upload sensitive, confidential, or personal evidential files; a file's very existence on a scanner can tip off an attacker who watches for their sample. Prefer hash lookups for sensitive material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, well-known free multi-engine scanner. Verdicts are the underlying AV engines' opinions — subject to false positives/negatives — not a definitive ruling.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "jottis-malware-scan"
+      "jottis-malware-scan",
+      "metadefender"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Jotti",
+      "virusscan.jotti.org"
+    ],
+    "tags": [
+      "malware",
+      "multi-av",
+      "file-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/jotti-s-malware-scanner.md"
   },
   {
@@ -54955,44 +54966,59 @@
   },
   {
     "id": "metadefender",
-    "name": "MetaDefender",
-    "description": "Enterprise-grade multi-engine malware detection and advanced threat analysis",
+    "name": "MetaDefender Cloud",
+    "description": "Use when you have a file or hash (`document-id`) or a `domain`/`ip-address` and want multi-engine malware/reputation analysis — returns verdicts and extracted IOCs.",
     "url": "https://metadefender.opswat.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Enterprise-grade multi-engine malware detection and advanced threat analysis",
-    "input": "Files, URLs, streams",
-    "output": "Multi-engine detection results, threat verdicts, behavioral analysis, IOC extraction",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Multi-engine file/URL/IP reputation and malware analysis with IOC extraction (hash lookups possible).",
+    "selectorsIn": [
+      "document-id",
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier (web + limited API) for scanning and hash/URL/IP lookups; higher volume and advanced features are paid (OPSWAT commercial plans).",
     "opsec": "active",
-    "opsecNote": "File uploads required; commercial and free tiers available",
+    "opsecNote": "Submitting a file uploads it to OPSWAT's cloud (shared for analysis) — don't upload sensitive/evidential files; use the hash-lookup path instead, which reveals nothing new. Domain/IP/hash lookups query OPSWAT's database and never touch the target, so those are effectively passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party service from OPSWAT, an established security vendor. Multi-engine verdicts are credible but are engine opinions (false positives/negatives apply); reputation data quality varies by indicator.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "opswat-meta-defender"
+      "opswat-meta-defender",
+      "jotti-s-malware-scanner"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OPSWAT MetaDefender",
+      "MetaDefender Cloud"
+    ],
+    "tags": [
+      "malware",
+      "multi-av",
+      "reputation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/metadefender.md"
   },
   {
@@ -69853,85 +69879,52 @@
     "_file": "library/tools/domains-ip-infrastructure/godaddy-whois-lookup.md"
   },
   {
-    "id": "gofindwhois",
-    "name": "GoFindWhois",
-    "description": "More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, redirect check, reputation analyze.",
-    "url": "https://gofindwhois.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/gofindwhois.md"
-  },
-  {
     "id": "gogetcrawl",
     "name": "GoGetCrawl",
-    "description": "Search and download archived web pages and files from Common Crawl and Wayback Machine.",
+    "description": "Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from Wayback and Common Crawl.",
     "url": "https://github.com/karust/gogetcrawl",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting a domain's historical URLs and files from the Wayback Machine and Common Crawl.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Go, MIT). Usable as a CLI, a Go library, or via Docker. Queries public archives — no key.",
+    "opsec": "passive",
+    "opsecNote": "GoGetCrawl reads from the Wayback Machine and Common Crawl, not the target's live server, so the subject sees nothing — the archives already captured the pages. Only the archive services see your queries. This is a passive way to enumerate a site without touching it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A focused, maintained (2023) open-source archive-extraction tool. It's a client over reputable archives, so result quality is the archives' coverage; it fetches, it doesn't vouch.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "karust/gogetcrawl",
+      "gau-like"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "web-archive",
+      "url-extraction"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/gogetcrawl.md"
   },
   {
@@ -83744,42 +83737,50 @@
   {
     "id": "sourcewolf",
     "name": "SourceWolf",
-    "description": "A tool for analyzing #javascript files. It finds all the variables, endpoints and social media links mentioned in the code in just a few seconds.",
+    "description": "Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints and social links.",
     "url": "https://github.com/ksharinarayanan/SourceWolf",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Crawling a site's responses/JavaScript to surface hidden endpoints, URLs and embedded social links.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Python3). Last release 2021 — functional but unmaintained.",
+    "opsec": "active",
+    "opsecNote": "SourceWolf can send live requests to the target to crawl responses and brute-force URLs/subdomains — those hits come from your host and are logged there. It can also parse locally-saved response files (fully passive). Use the local-file mode, or a burner proxy/VPS, for anything you don't want tied to you; only actively crawl targets you're authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A known recon utility, but unmaintained since 2021. Extraction is regex/crawl-based, so expect false positives and misses; verify discovered endpoints are live.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ksharinarayanan/SourceWolf"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website analyze"
+      "Website analyze",
+      "javascript-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/sourcewolf.md"
   },
   {
@@ -85232,59 +85233,6 @@
       "thale-s-cyberthreat-map"
     ],
     "_file": "library/tools/domains-ip-infrastructure/thales.md"
-  },
-  {
-    "id": "the-favicon-finder",
-    "name": "The Favicon Finder",
-    "description": "Instantly finds the favicon and all .ico files on the site, and then generates links to download them quickly.",
-    "url": "http://besticon.herokuapp.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "cheat-sheet-maker",
-      "mmhdan",
-      "osm-finder",
-      "query-server",
-      "redditsearch",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/the-favicon-finder.md"
   },
   {
     "id": "the-information-laundromat",
@@ -88775,44 +88723,52 @@
   {
     "id": "what-cms",
     "name": "What CMS",
-    "description": "A tool that you can use to identify the technologies used to power a website.",
+    "description": "Use when you have a `domain`/URL and want to identify its CMS and web tech stack — returns the detected platform, frameworks and hosting.",
     "url": "https://whatcms.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fingerprinting the CMS, framework and technologies a website runs on.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free single-site detections on the web (light rate limit); batch detection and an API are paid.",
+    "opsec": "passive",
+    "opsecNote": "WhatCMS fetches/fingerprints the site from its own servers, not yours, so the target sees WhatCMS's requests rather than your IP. Only WhatCMS sees the domain you queried. (If you'd rather leave no third-party trace at all, fingerprint locally with Wappalyzer instead.)",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular tech-detection service. Fingerprinting is heuristic — it can miss or misidentify heavily customised/proxied sites; treat the stack as probable, not certain.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WhatCMS",
+      "whatcms.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "websites"
+      "websites",
+      "tech-fingerprinting"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/what-cms.md"
   },
   {
@@ -167886,37 +167842,47 @@
   {
     "id": "backbox",
     "name": "BackBox",
-    "description": "OSINT tool: BackBox.",
+    "description": "Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.",
     "url": "https://www.backbox.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "An Ubuntu-based penetration-testing and security-analysis distro with recon/OSINT tools preinstalled.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (community edition). Ubuntu-based; runs as install, VM, or live image. No account.",
+    "opsec": "active",
+    "opsecNote": "BackBox is just the platform — its OpSec profile is whatever the tools you run inside it do, and many recon/pentest tools are active/intrusive. Run it isolated (VM/live-USB), route sensitive traffic through a VPN/Tor, and only point active tools at systems you're authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Established, long-standing Ubuntu-based security distribution. The distro is reputable and actively maintained; individual bundled tools vary in quality — judge each on its own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "kali-linux-os"
+    ],
+    "aliases": [
+      "BackBox Linux"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Virtual Machines/Linux distributions",
+      "security-distro",
+      "toolkit"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/backbox.md"
   },
   {
@@ -185045,24 +185011,25 @@
   {
     "id": "tsurugi-linux",
     "name": "Tsurugi Linux",
-    "description": "DFIR and OSINT-oriented Linux distribution.",
+    "description": "Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.",
     "url": "https://tsurugi-linux.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "A digital-forensics and OSINT workstation VM",
+    "bestFor": "A digital-forensics and OSINT workstation VM with forensic and investigation tools preinstalled.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free. Distributed as a full DFIR distro (Tsurugi Linux), a lightweight \"Acquire\" edition, and a Windows tool bundle. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Tsurugi is a workstation you run locally — reading/analysing evidence is inherently passive and touches no target. It's built for forensic soundness (write-blocking, hashing). As with any investigation VM, isolate it and mind that any online OSINT tools you launch from it have their own active footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Established DFIR-focused Linux distribution.",
+    "trustNote": "Established, community-recognised DFIR-focused distribution with a dedicated OSINT module. The distro is reputable; individual bundled tools vary in currency — evaluate each.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -185071,7 +185038,12 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "kali-linux-os"
+    ],
+    "aliases": [
+      "Tsurugi"
+    ],
     "tags": [
       "vm",
       "linux-distro",
@@ -185079,8 +185051,8 @@
       "forensics"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/tsurugi-linux.md"
   },
   {
@@ -301973,50 +301945,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/castrick.md"
-  },
-  {
-    "id": "channel-crawler",
-    "name": "Channel Crawler",
-    "description": "OSINT tool: Channel Crawler.",
-    "url": "https://channelcrawler.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "youtube"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "app-channelcrawler-com"
-    ],
-    "_file": "library/tools/social-networks/channel-crawler.md"
   },
   {
     "id": "chartmasters-org-spotify-streaming-numbers-tool",

@@ -187,8 +187,7 @@ kind: group-index
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, creation/expiry dates, name servers and (when not privacy
 - **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
-- **`gofindwhois`** (low) — More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, 
-- **`gogetcrawl`** (low) — Search and download archived web pages and files from Common Crawl and Wayback Machine.
+- **`gogetcrawl`** (low) — Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from W
 - **`google-bug-bounty-dorks-generator`** (low) — Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
 - **`google-transparency-report`** (low) — OSINT tool: Google Transparency Report.
@@ -401,7 +400,7 @@ kind: group-index
 - **`soc-multi-tool`** (low) — Chrome Extension for quick: IP/Domain Reputation Lookup IP/ Domain Info Lookup Hash Reputation Lookup (Decoding of Base64 & HEX using CyberC
 - **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
-- **`sourcewolf`** (low) — A tool for analyzing #javascript files. It finds all the variables, endpoints and social media links mentioned in the code in just a few sec
+- **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shod
 - **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
@@ -421,7 +420,6 @@ kind: group-index
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`thales`** (low) — OSINT tool: Thales.
-- **`the-favicon-finder`** (low) — Instantly finds the favicon and all .ico files on the site, and then generates links to download them quickly.
 - **`the-information-laundromat`** (low) — A tool for analyzing content replication and site architecture to detect information laundering.
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — OSINT tool: Threat Actor Usernames Scrape.
@@ -478,7 +476,7 @@ kind: group-index
 - **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a
-- **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.
+- **`what-cms`** (low) — Use when you have a `domain`/URL and want to identify its CMS and web tech stack — returns the detected platform, frameworks and hosting.
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
 - **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.

@@ -57,7 +57,7 @@ kind: group-index
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
-- **`backbox`** (low) — OSINT tool: BackBox.
+- **`backbox`** (low) — Use when you want an Ubuntu-based security/OSINT workstation as an alternative to Kali — a platform to run tools from, not a lookup itself.
 - **`badoo-dating-app-mobile-android`** (low) — App for android mobile device for meeting people on Badoo
 - **`badoo-dating-app-mobile-ios`** (low) — App for iOS mobile device for meeting people on Badoo
 - **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
@@ -460,7 +460,7 @@ kind: group-index
 - **`transform-tools`** (low) — This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript 
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`truecrypt-encryption-software`** (low) — Guide for TrueCrypt open-source disk encryption software for Windows, Mac and Linux
-- **`tsurugi-linux`** (low) — DFIR and OSINT-oriented Linux distribution.
+- **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Anonymous browsing service provider
