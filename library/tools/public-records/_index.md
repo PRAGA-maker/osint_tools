@@ -905,7 +905,7 @@ kind: group-index
 - **`ukrlp-co-uk`** (low) — Use when you have a training/education provider `name` or UKPRN and want its official registration — returns `employer-org`, `address`, cont
 - **`uksocialhousing-com`** (medium) — Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in 
 - **`uky-salaries-2019`** (medium) — Use when you have a `name` and want to confirm someone was a University of Kentucky employee in 2019 — returns their `employer-org` unit and
-- **`un-comtrade-database`** (low) — OSINT tool: UN COMTRADE Database.
+- **`un-comtrade-database`** (low) — Use when you need official country-to-country trade statistics for context — returns bilateral import/export volumes and values by product, 
 - **`un-data`** (low) — OSINT tool: UN Data.
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
 - **`unclaimed-money-us-google-search`** (medium) — Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns 

@@ -103,7 +103,7 @@ kind: group-index
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
 - **`coveryourtracks-eff-org`** (low) — can tell a lot about your browser and computer, including showing a list of installed fonts on the system.
-- **`crackstation-net`** (low) — password hash cracker
+- **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
 - **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
 - **`crontab-guru`** (low) — Online "shedule expression" editor (for setting task times in Crontab files).
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
@@ -261,7 +261,6 @@ kind: group-index
 - **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
 - **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
-- **`localbitcoins`** (low) — OSINT tool: LocalBitcoins.
 - **`localmonero-co`** (low) — OSINT tool: Localmonero.co.
 - **`macchanger`** (low) — Utility to view and spoof the MAC address of network interfaces.
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 

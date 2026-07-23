@@ -66,7 +66,7 @@ kind: group-index
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
 - **`analyticsrelationships`** (low) — Use when you have a `domain` and want to find other sites run by the same owner via a shared Google Analytics ID — returns co-owned `domain`
-- **`anubis`** (low) — Subdomain enumeration and information gathering tool
+- **`anubis`** (low) — Use when you have a `domain` and want subdomains aggregated from many sources at once — returns discovered sub`domain`s with optional resolv
 - **`aort`** (low) — Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `doma
 - **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
 - **`api-mylnikov-org`** (low) — get lattitude and longitude by WiFI BBSID
@@ -337,7 +337,6 @@ kind: group-index
 - **`poodle-check`** (low) — OSINT tool: Poodle Check.
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
-- **`ptrarchive-com`** (low) — search by 230 billion DNS records retrieved from 2008 to the present.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
 - **`qualys-ssl-check`** (low) — OSINT tool: Qualys SSL Check.

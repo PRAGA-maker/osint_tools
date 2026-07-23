@@ -1,50 +1,90 @@
 ---
 id: aadinternals
 name: AADInternals
-description: Deep Azure AD reconnaissance and security assessment
+description: Use when a target uses Microsoft 365 / Entra ID (Azure AD) and you want tenant reconnaissance — returns tenant details, domains, and user/login-existence signals.
 url: https://github.com/Gerenios/AADInternals
 category: domains-ip-infrastructure
 path:
 - domains-ip-infrastructure
 - azure-gcp-discovery
-bestFor: Deep Azure AD reconnaissance and security assessment
-input: Tenant identifiers, domain names, and account context
-output: Tenant/user intelligence, configuration findings, and attack-path indicators
-selectorsIn: []
-selectorsOut: []
+bestFor: Azure AD / M365 tenant enumeration (tenant ID, domains, user existence) from a domain or email.
+selectorsIn:
+- domain
+- email
+selectorsOut:
+- domain
+- email
 status: live
 pricing: free
+costNote: Free and open-source (MIT) PowerShell module; `Install-Module AADInternals`. Docs at aadinternals.com.
 opsec: active
-opsecNote: Queries Microsoft identity services directly and may generate tenant-visible activity.
+opsecNote: Some functions are PASSIVE (unauthenticated tenant recon via public Microsoft endpoints — tenant ID, domains). Others (user-existence probing, login attempts) are ACTIVE and can be logged by the target tenant and may trigger alerts. Only use against tenants you are authorised to assess; prefer the passive recon cmdlets for OSINT.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: cli
-trust: unverified
-trustNote: ''
+trust: trusted
+trustNote: Well-known, actively-maintained toolkit by Dr. Nestori Syynimaa (Gerenios); widely used in Azure AD security research and red-teaming.
 missingPersonsRelevance: low
-coverage: []
+coverage:
+- global
 auth: none
 api: false
 localInstall: true
 registration: false
-invitationOnly: false
-deprecated: false
-relatedTools: []
-aliases: []
-tags: []
+aliases:
+- AADInternals
+- Azure AD Internals
+tags:
+- domains-ip-infrastructure
+- azure-ad
+- m365
+- recon
+- powershell
 source: arf-seed
-lastVerified: ''
-enrichment: stub
+lastVerified: '2026-07-23'
+enrichment: full
 ---
 
 # AADInternals
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> A PowerShell toolkit for Azure AD / Microsoft 365 internals — including unauthenticated tenant reconnaissance from just a domain or email.
 
-- **URL:** https://github.com/Gerenios/AADInternals
-- **Best for:** Deep Azure AD reconnaissance and security assessment
-- **Input → Output:** Tenant identifiers, domain names, and account context → Tenant/user intelligence, configuration findings, and attack-path indicators
-- **OpSec:** active. Queries Microsoft identity services directly and may generate tenant-visible activity.
+## When to use
+Your target organisation uses Microsoft 365 / Entra ID and you want to map their tenant: confirm they use Azure AD, get the tenant ID and registered `domain`s, check whether a given `email`/user exists, and understand federation/authentication setup. The passive recon cmdlets need no credentials and are a strong footprinting step for M365-hosted orgs.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: cli)
+1. Install: `Install-Module AADInternals` (PowerShell); import the module.
+2. Passive recon: `Invoke-AADIntReconAsOutsider -DomainName example.com` returns tenant ID, tenant name, verified domains, and MX/SPF/DMARC/desktop-SSO signals.
+3. User existence: `Invoke-AADIntUserEnumerationAsOutsider` checks whether specific `email`s are valid tenant users (ACTIVE — use only when authorised).
+4. Pivot: verified `domain`s expand your target surface; confirmed users feed phishing-surface analysis (in authorised engagements) and org mapping.
+
+## Inputs → Outputs
+- **In:** `domain` or `email` of the target org
+- **Out:** tenant ID/name, verified `domain`s, authentication config, and user-existence (`email`) signals
+- **Empty/negative result looks like:** "not a managed tenant" — the domain isn't backed by Azure AD (they use another provider), so outsider recon returns nothing.
+
+## Gotchas & OpSec
+- Split behaviour: outsider *recon* is passive; user-*enumeration*/login functions are active and logged — get authorisation for those.
+- User-existence probing can trip tenant alerting/lockouts; go carefully and scoped.
+- It's Microsoft-cloud-specific — useless for orgs not on Azure AD/M365.
+
+## Overlaps ("do both")
+- Pairs with DNS/cert recon (`[[dnsrecon]]`, `[[google-s-certificate-transparency]]`) — those map hosts/subdomains; AADInternals maps the identity/tenant layer for M365 orgs.
+
+## Trust & verifiability
+`trust: trusted` — a mature, well-known, actively-maintained research toolkit; its outsider-recon output comes straight from Microsoft's own endpoints, so tenant facts are authoritative.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | aadinternals |
+| category | domains-ip-infrastructure |
+| selectorsIn → selectorsOut | domain, email → domain, email |
+| pricing / cost | free |
+| trust | trusted |
+| MP relevance | low |
+| interaction | cli |
+| opsec | active |
+| human-in-loop | no |

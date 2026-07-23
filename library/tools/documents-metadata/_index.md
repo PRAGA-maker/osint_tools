@@ -160,7 +160,7 @@ kind: group-index
 - **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
 - **`kickstarter`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
-- **`knowyourmeme`** (low) — Website that provides a database of Internet-based memes, culture and online behaviour
+- **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
 - **`lifestream`** (low) — Faith/religion based website related to social networking in the form of lifestreaming or digital diaries
 - **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts

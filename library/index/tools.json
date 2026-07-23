@@ -41466,36 +41466,51 @@
   },
   {
     "id": "ransomwatch",
-    "name": "ransomwatch 👀 🦅",
-    "description": "OSINT tool: ransomwatch 👀 🦅.",
+    "name": "ransomwatch",
+    "description": "Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-site claims (victim, group, date).",
     "url": "https://ransomwatch.telemetry.ltd/#/INDEX",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether an organisation appears as a claimed victim on ransomware leak sites.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free; open-source (Unlicense). The project is archived/unmaintained, so the hosted index may be stale or go offline — treat as a historical snapshot.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A clearnet mirror of ransomware leak-site claim data — you read an aggregated index, not the .onion sites directly, so it's passive. Do not navigate to the underlying leak sites without proper OpSec (Tor, isolated VM).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community project (\"transparent ransomware claim tracker\"); now archived, so data freshness is not guaranteed — verify against current trackers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "ransomwatch tracker"
+    ],
+    "tags": [
+      "dark-web",
+      "ransomware",
+      "threat-intel",
+      "leak-sites"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/ransomwatch.md"
   },
   {
@@ -54380,25 +54395,27 @@
   },
   {
     "id": "knowyourmeme",
-    "name": "Knowyourmeme",
-    "description": "Website that provides a database of Internet-based memes, culture and online behaviour",
+    "name": "Know Your Meme",
+    "description": "Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural context of the meme.",
     "url": "http://knowyourmeme.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying the origin, meaning, and context of a meme, image macro, phrase, or online symbol.",
+    "selectorsIn": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read (ad-supported); an account is only needed to submit/edit entries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public reference site — you look up cultural context, not a person. Passive; the usual note about browsing from a non-attributable session applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established meme encyclopedia (since 2007, Literally Media); entries are community-written but editorially reviewed — good for context, cite the primary source it points to.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -54407,15 +54424,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+    "aliases": [
+      "KYM",
+      "Knowyourmeme"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "documents-metadata",
+      "memes",
+      "culture",
+      "context"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "know-your-meme"
     ],
@@ -60782,41 +60803,54 @@
   {
     "id": "aadinternals",
     "name": "AADInternals",
-    "description": "Deep Azure AD reconnaissance and security assessment",
+    "description": "Use when a target uses Microsoft 365 / Entra ID (Azure AD) and you want tenant reconnaissance — returns tenant details, domains, and user/login-existence signals.",
     "url": "https://github.com/Gerenios/AADInternals",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "azure-gcp-discovery"
     ],
-    "bestFor": "Deep Azure AD reconnaissance and security assessment",
-    "input": "Tenant identifiers, domain names, and account context",
-    "output": "Tenant/user intelligence, configuration findings, and attack-path indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Azure AD / M365 tenant enumeration (tenant ID, domains, user existence) from a domain or email.",
+    "selectorsIn": [
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT) PowerShell module; `Install-Module AADInternals`. Docs at aadinternals.com.",
     "opsec": "active",
-    "opsecNote": "Queries Microsoft identity services directly and may generate tenant-visible activity.",
+    "opsecNote": "Some functions are PASSIVE (unauthenticated tenant recon via public Microsoft endpoints — tenant ID, domains). Others (user-existence probing, login attempts) are ACTIVE and can be logged by the target tenant and may trigger alerts. Only use against tenants you are authorised to assess; prefer the passive recon cmdlets for OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known, actively-maintained toolkit by Dr. Nestori Syynimaa (Gerenios); widely used in Azure AD security research and red-teaming.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "AADInternals",
+      "Azure AD Internals"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "azure-ad",
+      "m365",
+      "recon",
+      "powershell"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/aadinternals.md"
   },
   {
@@ -61726,42 +61760,50 @@
   {
     "id": "anubis",
     "name": "Anubis",
-    "description": "Subdomain enumeration and information gathering tool",
+    "description": "Use when you have a `domain` and want subdomains aggregated from many sources at once — returns discovered sub`domain`s with optional resolved `ip-address`es and cert/host detail.",
     "url": "https://github.com/jonluca/Anubis",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-command subdomain enumeration that collates results from many OSINT sources.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); `pip3 install anubis-netsec`. Some data sources it queries benefit from their own API keys.",
+    "opsec": "passive",
+    "opsecNote": "Mostly PASSIVE — it aggregates subdomains from third-party sources (crt.sh, DNSDumpster, VirusTotal, Shodan, NetCraft) rather than hammering the target. Optional resolution/port-scan steps are active and hit the target; skip those for a purely passive footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source subdomain aggregator (jonluca); result completeness depends on the upstream sources and any API keys you supply.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Subdomains scan/brute"
+    "aliases": [
+      "anubis-netsec"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "domains-ip-infrastructure",
+      "subdomains",
+      "recon",
+      "cli"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/anubis.md"
   },
   {
@@ -66994,43 +67036,54 @@
   {
     "id": "dnsrecon",
     "name": "dnsrecon",
-    "description": "Detailed DNS reconnaissance and validation",
+    "description": "Use when you have a `domain` and want thorough DNS enumeration — returns records (A/MX/NS/SOA/TXT/SRV), subdomains, PTR ranges, and zone-transfer results.",
     "url": "https://github.com/darkoperator/dnsrecon",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "saas-footprinting"
     ],
-    "bestFor": "Detailed DNS reconnaissance and validation",
-    "input": "Domain names, name servers, and optional DNS wordlists",
-    "output": "DNS records, discovered hosts, and transfer/bruteforce findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Comprehensive DNS reconnaissance of a domain from the command line.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-2.0); Python CLI, actively maintained. In Kali by default.",
     "opsec": "active",
-    "opsecNote": "Performs direct DNS queries and active enumeration techniques against target infrastructure.",
+    "opsecNote": "Standard record lookups are low-noise, but subdomain brute-forcing and zone-transfer attempts send traffic to the target's DNS and can be logged. Only run against authorised targets; use a resolver/VPN and scope the brute-force wordlist.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely-used open-source tool (darkoperator); a staple of DNS recon shipped in security distros.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "DNSRecon"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "dns",
+      "recon",
+      "cli"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "dns-recon"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/saas-footprinting/dnsrecon.md"
   },
   {
@@ -70283,41 +70336,51 @@
   {
     "id": "google-s-certificate-transparency",
     "name": "Google's Certificate Transparency",
-    "description": "Certificate discovery, unauthorized cert detection, domain monitoring",
+    "description": "Use when you need to understand or access the Certificate Transparency ecosystem — the reference for CT logs that record every TLS cert, enabling subdomain and cert discovery.",
     "url": "https://www.certificate-transparency.org/known-logs",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "certificate-search"
     ],
-    "bestFor": "Certificate discovery, unauthorized cert detection, domain monitoring",
-    "input": "Domain name or certificate fingerprint",
-    "output": "List of CT logs and certificates issued for the specified domain",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Understanding the CT log ecosystem and finding the logs that back cert-search tools like crt.sh.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public reference/infrastructure (Google's Certificate Transparency project); the logs themselves are openly queryable.",
     "opsec": "passive",
-    "opsecNote": "Queries public certificate logs without contacting the target domain.",
+    "opsecNote": "CT logs are public append-only records — querying them (directly or via a search front-end) is passive and never touches the target. This is how you enumerate a domain's certificates/subdomains without probing the target itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's official Certificate Transparency project; the authoritative reference for the CT standard and the list of known, trusted logs.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Certificate Transparency",
+      "CT logs"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "certificate-transparency",
+      "subdomains",
+      "passive-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search/google-s-certificate-transparency.md"
   },
   {
@@ -80158,47 +80221,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/psn-resolver.md"
-  },
-  {
-    "id": "ptrarchive-com",
-    "name": "ptrarchive.com",
-    "description": "search by 230 billion DNS records retrieved from 2008 to the present.",
-    "url": "http://ptrarchive.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Databases of domains"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ptrarchive-com.md"
   },
   {
     "id": "public-buckets",
@@ -170164,37 +170186,48 @@
   {
     "id": "crackstation-net",
     "name": "CrackStation.net",
-    "description": "password hash cracker",
+    "description": "Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.",
     "url": "https://crackstation.net/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Instantly reversing common unsalted password hashes (MD5, SHA1, NTLM, etc.) to plaintext.",
+    "selectorsIn": [
+      "password"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web lookup; up to 20 hashes per submission. No account.",
+    "opsec": "passive",
+    "opsecNote": "The lookup runs against CrackStation's own tables — you submit a hash, not the target's live account, so it's passive. But you are sending the hash to a third party; don't submit hashes you must keep confidential, and only work with hashes you're authorised to handle.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, well-regarded free service by Defuse Security; results are deterministic table lookups, so a hit is a correct plaintext.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Passwords"
+    "aliases": [
+      "CrackStation"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "opsec-investigator-tooling",
+      "password-cracking",
+      "hashes"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/crackstation-net.md"
   },
   {
@@ -177104,40 +177137,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/locabrowser-com.md"
-  },
-  {
-    "id": "localbitcoins",
-    "name": "LocalBitcoins",
-    "description": "OSINT tool: LocalBitcoins.",
-    "url": "https://localbitcoins.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/localbitcoins.md"
   },
   {
     "id": "localmonero-co",
@@ -258832,37 +258831,48 @@
   {
     "id": "un-comtrade-database",
     "name": "UN COMTRADE Database",
-    "description": "OSINT tool: UN COMTRADE Database.",
+    "description": "Use when you need official country-to-country trade statistics for context — returns bilateral import/export volumes and values by product, country and year.",
     "url": "http://comtrade.un.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Authoritative bilateral trade statistics (by product/country/year) for investigative context.",
+    "selectorsIn": [
+      "employer-org"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free access to the UN's official trade statistics via the web UI and API (Comtrade / Comtrade Plus); premium/bulk tiers exist but core data is free.",
+    "opsec": "passive",
+    "opsecNote": "Aggregate national trade statistics — no personal data, no target interaction; fully passive contextual research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The United Nations' official international trade statistics database, compiled from national reporting; the authoritative source for macro trade data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UN Comtrade",
+      "Comtrade Plus"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "trade-data",
+      "economics",
+      "context"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "statistics-and-data",
       "un-data",

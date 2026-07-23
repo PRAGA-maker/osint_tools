@@ -85,7 +85,7 @@ kind: group-index
 - **`raklet`** (low) — OSINT tool: Raklet.
 - **`ransomware-darknet-websites`** (low) — OSINT tool: Ransomware Darknet websites.
 - **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
-- **`ransomwatch`** (low) — OSINT tool: ransomwatch 👀 🦅.
+- **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — OSINT tool: RiseUp.
 - **`rooted`** (low) — OSINT tool: Rooted.
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
