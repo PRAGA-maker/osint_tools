@@ -5945,38 +5945,51 @@
   },
   {
     "id": "gpg-tools",
-    "name": "GPG Tools",
-    "description": "OSINT tool: GPG Tools.",
+    "name": "GPG Suite (GPGTools)",
+    "description": "Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (which can carry a name/email).",
     "url": "https://gpgtools.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "OpenPGP encryption/signing on macOS, and inspecting PGP keys/signatures for the identity they embed.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "email",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The GPG Suite core (GPG, GPG Keychain, Services) is free and open source; \"GPG Mail\" (the Apple Mail plugin) requires a paid support license on current macOS. Command-line GnuPG is fully free.",
+    "opsec": "passive",
+    "opsecNote": "This is your own opsec tooling — it protects your communications/files and lets you verify signatures. Handle keys locally; a private key is sensitive. When you inspect a PGP public key or signed message from a subject, the key's user ID (name + email) is a lead, but user IDs are self-asserted and can be forged, so verify rather than trust them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-standing, reputable macOS packaging of GnuPG; the underlying GnuPG is a widely-audited open-source standard.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GPGTools",
+      "GPG Suite",
+      "gpgtools.org"
+    ],
     "tags": [
+      "encryption",
+      "pgp",
+      "opsec",
       "privacy-and-encryption-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gpg-tools.md"
   },
   {
@@ -15131,41 +15144,56 @@
   {
     "id": "sub3-suite",
     "name": "Sub3 Suite",
-    "description": "OSINT tool: Sub3 Suite.",
+    "description": "Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomains, IPs, certs, ASNs, and related records.",
     "url": "https://github.com/3nock/sub3suite",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "GUI-driven subdomain and infrastructure enumeration with cross-correlation across many OSINT sources.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "Sub3 Suite is primarily passive — it queries third-party OSINT sources and APIs (cert transparency, passive DNS, WHOIS, search engines) rather than probing the target, so the subject isn't touched. Active brute/resolve modes exist; know which you enable. Add API keys via a dedicated account and run behind controlled infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source Qt GUI OSINT framework by 3nock; capable and actively developed community tool, results inherit their source's quality.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
+    "coverage": [
+      "global"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "none",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
     "relatedTools": [
       "ote-osint-template-engine",
       "spidersuite"
     ],
+    "aliases": [
+      "Sub3 Suite",
+      "sub3suite",
+      "3nock/sub3suite"
+    ],
+    "tags": [
+      "subdomain-enumeration",
+      "infrastructure-mapping",
+      "osint-framework"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sub3-suite.md"
   },
   {
@@ -33238,37 +33266,52 @@
   {
     "id": "quora",
     "name": "Quora",
-    "description": "OSINT tool: Quora.",
+    "description": "Use when you have a `name`/`username` and want a subject's Quora presence — returns social-profile, stated employer/education, interests, and their questions/answers as behavioral leads.",
     "url": "http://www.quora.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's Quora profile and mining their answers for bio, employer/education, and interests.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsec": "passive",
+    "opsecNote": "Reading public profiles/answers is passive, but Quora increasingly gates content behind a login wall and personalizes what it shows — use a sock-puppet account, never your real one, if you must log in. Following or upvoting is attributable; just read. What people volunteer in answers (locations, jobs, personal anecdotes) is often unguarded and revealing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A mainstream Q&A platform; profile bios and answers are self-authored and unverified — good for leads, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Quora",
+      "quora.com"
+    ],
     "tags": [
-      "q-a-sites"
+      "q-a-sites",
+      "social-profile",
+      "interests"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/quora.md"
   },
   {
@@ -37514,38 +37557,51 @@
   },
   {
     "id": "wideband-shortware-radio-receiver-map",
-    "name": "Wideband shortware radio receiver map",
-    "description": "Online map of shortwave radio receivers available for listening in your browser at the moment.",
+    "name": "KiwiSDR Receiver Map",
+    "description": "Use when you want to listen to radio from a specific place (or geolocate a transmission) — a world map of public online SDR receivers you can tune in-browser, returning geolocation context.",
     "url": "http://rx.linkfanel.net/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding and using public online SDR (KiwiSDR) receivers near a location to monitor radio, or to TDoA-geolocate a transmitter.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "opsec": "passive",
+    "opsecNote": "You listen through volunteers' public receivers; the receiver operator can see that a client connected, but no target person is contacted. Tuning to a frequency alerts no transmitter. TDoA geolocation and simple \"listen from near a place\" are passive intelligence gathering; note some KiwiSDRs restrict frequencies or connections.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running community map of public KiwiSDR/WebSDR receivers; availability of any given receiver varies and the map can be briefly unavailable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KiwiSDR map",
+      "rx.linkfanel.net",
+      "shortwave receiver map"
+    ],
     "tags": [
-      "TV/Radio"
+      "sdr",
+      "radio",
+      "signals",
+      "tv-radio"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/wideband-shortware-radio-receiver-map.md"
   },
   {
@@ -90420,43 +90476,54 @@
   },
   {
     "id": "whois-xml-api-whois-history-database",
-    "name": "Whois XML API Whois history database",
-    "description": "OSINT tool: Whois XML API Whois history database.",
+    "name": "WhoisXML API — WHOIS History",
+    "description": "Use when you have a `domain` and want its historical WHOIS records — past registrant names, emails, and orgs before privacy redaction — returning email, name, and employer-org leads.",
     "url": "https://whois.whoisxmlapi.com/database/pricing",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving historical WHOIS registrant records for a domain to recover pre-privacy owner details.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "email",
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "WhoisXML API is a paid data vendor; a free account grants limited introductory API credits (Domain Research Suite) usable for WHOIS History lookups, then it's paid per-query or via subscription. The bulk downloadable database is paid/enterprise.",
+    "opsec": "passive",
+    "opsecNote": "You query WhoisXML's historical WHOIS archive, not the domain or its owner — nothing reaches the target and no one is alerted. Historical records often predate GDPR redaction, so they can expose a registrant name/email that current WHOIS hides; handle recovered personal data responsibly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "WhoisXML API is a large, established WHOIS/DNS data provider; its historical archive is extensive and widely used, though it's a commercial source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "WhoisXML API WHOIS History",
+      "WHOIS History API"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
+      "whois-history",
+      "domain-ownership",
+      "domain-and-ip-investigation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-xml-api-whois-history-database.md"
   },
   {
@@ -154406,43 +154473,52 @@
   {
     "id": "mappy",
     "name": "Mappy",
-    "description": "Mapping service (and streetview in a couple of French cities \\[double check this!])",
+    "description": "Use when you have an `address`/`geolocation` in France or Western Europe and want an independent map and routing source — returns geolocation, addresses, and route/distance details.",
     "url": "http://en.mappy.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "French/Western-European maps, addresses, and route planning as an alternative basemap to Google.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "Searching a location is a passive map query with no target involvement and no alert. Mappy is a French service (RATP-connected) with strong France/Europe coverage; its data and imagery differ from Google's, which is exactly why it's useful as a second source, but it does not provide user location-history about people.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established French mapping/route service with institutional (RATP) backing; a legitimate independent basemap for France and neighboring countries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "fr",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mappy",
+      "mappy.com"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
+      "maps",
+      "routing",
+      "europe",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mappy.md"
   },
   {
@@ -170944,42 +171020,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/deep-face-live.md"
-  },
-  {
-    "id": "deft-linux",
-    "name": "Deft Linux",
-    "description": "OSINT tool: Deft Linux.",
-    "url": "https://deftlinux.net",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Virtual Machines/Linux distributions"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/deft-linux.md"
   },
   {
     "id": "delete-me-free-opt-out-guide",
@@ -233656,36 +233696,53 @@
   },
   {
     "id": "informnapalm",
-    "name": "INFORMNAPALM",
-    "description": "OSINT tool: INFORMNAPALM.",
+    "name": "InformNapalm",
+    "description": "Use when investigating Russian military involvement in aggression against Ukraine/Georgia — a volunteer OSINT database of units, personnel, and equipment returning name, employer-org, and associate leads.",
     "url": "https://informnapalm.org/db/russian-aggression/#lang=en&page=m_unit",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Researching identified Russian military units, servicemen, and equipment tied to documented aggression.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the published database is passive; the site is a volunteer-run investigative resource, not a live query against any individual, so no subject is alerted. It is an advocacy-aligned OSINT project documenting a conflict — findings are curated investigations; corroborate names/units against primary evidence before treating them as established fact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Volunteer international OSINT community focused on Russian aggression; well-known in the field, but partisan by mission — treat as sourced leads to verify.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "INFORMNAPALM",
+      "informnapalm.org"
+    ],
+    "tags": [
+      "military-osint",
+      "conflict",
+      "ukraine",
+      "russia"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/informnapalm.md"
   },
   {

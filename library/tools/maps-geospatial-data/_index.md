@@ -72,7 +72,7 @@ kind: group-index
 - **`maploco-com`** (medium) — Use when a subject has shared a "places I've visited" map graphic and you want to read their claimed travel — a widget generator you use to 
 - **`mapme-com`** (medium) — Use when a subject or org may publish a public interactive directory/map here — browse Mapme-hosted maps to place people, businesses or poin
 - **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
-- **`mappy`** (low) — Mapping service (and streetview in a couple of French cities \[double check this!])
+- **`mappy`** (low) — Use when you have an `address`/`geolocation` in France or Western Europe and want an independent map and routing source — returns geolocatio
 - **`mapswitcher`** (low) — Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source m
 - **`mapy-cz`** (low) — Mapping service for Czechia
 - **`merlin`** (low) — Identify birds (visually), through an app.

@@ -105,7 +105,6 @@ kind: group-index
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — OSINT tool: Decoding Social Security Numbers.
 - **`deep-face-live`** (low) — Real-time face swap for streaming and video calls
-- **`deft-linux`** (low) — OSINT tool: Deft Linux.
 - **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
 - **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video

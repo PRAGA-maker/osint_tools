@@ -193,7 +193,7 @@ kind: group-index
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph
 - **`proboards`** (low) — OSINT tool: ProBoards.
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re
-- **`quora`** (low) — OSINT tool: Quora.
+- **`quora`** (low) — Use when you have a `name`/`username` and want a subject's Quora presence — returns social-profile, stated employer/education, interests, an
 - **`r-opendirectories`** (low) — Use when you want to find publicly-exposed open web directories (files, media, dumps) — returns links to open directories others have discov
 - **`radio-free-europe`** (medium) — Use when you have a `name` and want reporting from Eastern Europe, Russia, Central Asia, the Caucasus or Iran — returns `social-profile`/men
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
@@ -277,7 +277,7 @@ kind: group-index
 - **`w3newspapers`** (medium) — Use when you have a `name` plus a country/region and want to reach that place's local newspapers to search for the person in news, obituarie
 - **`washington-times-news`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want US national/political news coverage and its searchable archive — retur
 - **`whatthehellshouldiwatchonnetflix-com`** (low) — alternative way to find anything interesting on Netflix
-- **`wideband-shortware-radio-receiver-map`** (low) — Online map of shortwave radio receivers available for listening in your browser at the moment.
+- **`wideband-shortware-radio-receiver-map`** (low) — Use when you want to listen to radio from a specific place (or geolocate a transmission) — a world map of public online SDR receivers you ca
 - **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Use when you have a `name` and want US public-TV documentary/social-issue coverage of a subject — returns `social-profile`/mention, program 

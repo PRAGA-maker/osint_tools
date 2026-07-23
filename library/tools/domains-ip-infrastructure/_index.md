@@ -477,7 +477,7 @@ kind: group-index
 - **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi
 - **`whois-search`** (low) — OSINT tool: Whois Search.
 - **`whois-service`** (low) — Use when you have an `ip-address` (or domain) and want reverse-IP / co-hosted domains and rough geolocation — returns domain, ip-address, ad
-- **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
+- **`whois-xml-api-whois-history-database`** (low) — Use when you have a `domain` and want its historical WHOIS records — past registrant names, emails, and orgs before privacy redaction — retu
 - **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
 - **`whoishostingthis`** (low) — Use when you have a `domain` and want to know which company hosts it — returns the hosting provider plus basic WHOIS/ownership context.

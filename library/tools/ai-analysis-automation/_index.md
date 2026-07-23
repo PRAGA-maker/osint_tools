@@ -162,7 +162,7 @@ kind: group-index
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — get the most detailed
-- **`gpg-tools`** (low) — OSINT tool: GPG Tools.
+- **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
 - **`graphviz-online`** (low) — OSINT tool: Graphviz Online.
@@ -366,7 +366,7 @@ kind: group-index
 - **`steganography-online`** (low) — OSINT tool: Steganography Online.
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
 - **`storymap`** (low) — OSINT tool: StoryMap.
-- **`sub3-suite`** (low) — OSINT tool: Sub3 Suite.
+- **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai
 - **`tableau-public`** (low) — OSINT tool: Tableau Public.
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.

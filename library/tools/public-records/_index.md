@@ -443,7 +443,7 @@ kind: group-index
 - **`infocreditgroup-com`** (medium) — Use when you have a company `name` or a person's `name` tied to a business and want credit, ownership, and due-diligence/KYC data across 130
 - **`infoempresa-com`** (high) — Use when you have a `name` or company and want to find a subject's Spanish company directorships, shareholdings, or registered addresses — r
 - **`infogreffe-fr`** (high) — Use when you have a company or director `name` in France and want official commercial-registry detail — returns company officers, registered
-- **`informnapalm`** (low) — OSINT tool: INFORMNAPALM.
+- **`informnapalm`** (medium) — Use when investigating Russian military involvement in aggression against Ukraine/Georgia — a volunteer OSINT database of units, personnel, 
 - **`infotrack-com-au`** (high) — Use when you have a `name`, `address` or `employer-org` in Australia and need professional property, company, court or person-locator search
 - **`inmate-locator-us`** (high) — Use when you have a `name` and want to find where a US inmate is incarcerated by routing to the right federal/state/ICE locator — returns co
 - **`inmateaid`** (high) — Use when you have a `name` and think a US subject may be incarcerated — returns inmate records with facility/location, inmate ID, and age/DO
