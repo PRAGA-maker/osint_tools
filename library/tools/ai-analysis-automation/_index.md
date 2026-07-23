@@ -174,7 +174,7 @@ kind: group-index
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
 - **`h-i-v-e`** (medium) — Use when you have a `phone`, `email`, `username`, `ip-address`, or a leaked text database and want a single Python multi-tool to run reverse
 - **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
-- **`harpoon`** (low) — CLI tool for open-source and threat intelligence with many plugin commands.
+- **`harpoon`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugin
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
 - **`highcharts`** (low) — OSINT tool: Highcharts.
 - **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
@@ -268,7 +268,7 @@ kind: group-index
 - **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
 - **`osint-harvester`** (low) — Lightweight OSINT toolkit that collects and normalizes intelligence from multiple sources.
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
-- **`osint-sh`** (low) — OSINT tool: OSINT.SH.
+- **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
 - **`osint-team`** (low) — OSINT tool: OSINT Team.
 - **`osint-techniques`** (low) — OSINT tool: OSINT Techniques.
 - **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
@@ -371,7 +371,7 @@ kind: group-index
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
 - **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
-- **`tenssens`** (low) — osint framework
+- **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
 - **`text-and-file-hash-calculator`** (low) — OSINT tool: Text and File Hash Calculator.
 - **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 

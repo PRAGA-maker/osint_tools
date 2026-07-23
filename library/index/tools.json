@@ -6444,13 +6444,13 @@
   {
     "id": "harpoon",
     "name": "Harpoon",
-    "description": "CLI tool for open-source and threat intelligence with many plugin commands.",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugins return infrastructure, reputation, and some social data.",
     "url": "https://github.com/Te-k/harpoon",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Threat-intel-flavored OSINT lookups (domains, IPs, some social platforms)",
+    "bestFor": "Threat-intel-flavored OSINT lookups (domains, IPs, some social platforms) from a single plugin-based CLI.",
     "selectorsIn": [
       "domain",
       "ip-address",
@@ -6462,15 +6462,17 @@
       "ip-address",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Most plugins query third-party services/APIs (Shodan, VirusTotal, Censys, DNS/CT databases), so lookups are passive toward the target — but they run under YOUR API keys and are logged by those providers. Use dedicated keys and a controlled network. A few plugins (e.g. direct DNS/HTTP) touch the target; know which command you're running.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Mature CLI by Te-k (1.3k stars); broad plugin set.",
+    "trustNote": "Mature CLI by Te-k (GPLv3, actively developed, 70+ commands); broad, well-regarded plugin set.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -6480,7 +6482,8 @@
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "harpoon"
+      "harpoon",
+      "Te-k/harpoon"
     ],
     "tags": [
       "cli",
@@ -6488,8 +6491,8 @@
       "plugins"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/harpoon.md"
   },
   {
@@ -10796,37 +10799,53 @@
   {
     "id": "osint-sh",
     "name": "OSINT.SH",
-    "description": "OSINT tool: OSINT.SH.",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, reverse-IP, subdomain, email and username lookups.",
     "url": "https://osint.sh/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A free browser suite of quick OSINT lookups (whois/DNS history, reverse IP, subdomains, username/email search) with no account.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "Lookups run server-side against OSINT.SH's own data/back-end sources, so the target isn't contacted directly. But you disclose your query selectors to a third-party site whose operators/data providers are not fully transparent — avoid submitting your most sensitive targets, and don't rely on it as sole sourcing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A popular free aggregator of OSINT lookups; convenient, but of uncertain provenance and data quality — corroborate results elsewhere.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT.SH",
+      "osint.sh"
+    ],
     "tags": [
-      "other-tools"
+      "osint-toolkit",
+      "multi-lookup",
+      "domain-and-ip-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-sh.md"
   },
   {
@@ -15358,37 +15377,52 @@
   {
     "id": "tenssens",
     "name": "Tenssens",
-    "description": "osint framework",
+    "description": "Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, geolocation, and port checks.",
     "url": "https://github.com/thenurhabib/tenssens",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-command footprinting of a domain/IP bundling whois, DNS, subdomains, headers, geoip, and port checks.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "active",
+    "opsecNote": "Some modules query passive sources, but others (port scan, admin-panel finder, HTTP headers, robots.txt) reach out to the target directly from your host and are logged there. Treat a full run as active/intrusive; use it only on assets you're authorized to test and route through controlled infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small community Python framework (thenurhabib, AGPL-3.0); auditable but modest maintenance and it wraps other free services.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tenssens",
+      "thenurhabib/tenssens"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "osint-framework",
+      "footprinting",
+      "recon",
+      "tools-collection"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tenssens.md"
   },
   {
@@ -63903,31 +63937,40 @@
   {
     "id": "censys",
     "name": "Censys",
-    "description": "Certificate discovery, host enumeration, exposure monitoring",
+    "description": "Use when you have a `domain`, `ip-address`, or certificate detail and want internet-wide scan data on it — returns hosts, open ports, service banners, and TLS certificates that reveal related infrastructure.",
     "url": "https://censys.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "certificate-search"
     ],
-    "bestFor": "Certificate discovery, host enumeration, exposure monitoring",
+    "bestFor": "Searching internet-wide host and certificate scan data to enumerate a target's infrastructure and find related assets.",
     "input": "Domain, IP, certificate fingerprint, search query",
     "output": "Host details, open ports, TLS certificates, service banners",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "freemium",
     "opsec": "passive",
-    "opsecNote": "Queries pre-scanned data. Does not probe the target directly.",
+    "opsecNote": "Censys serves results from its own internet-wide scans, so you never touch the target's host and it isn't alerted. A free account is required and its API/UI queries are logged against your account — use a dedicated investigative account and keep API keys isolated.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Censys (a reputable internet-measurement company, ex-University of Michigan); scan data is authoritative within scan cadence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -63939,11 +63982,18 @@
       "censys-ipv4",
       "search-censys-io"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Censys",
+      "search.censys.io"
+    ],
+    "tags": [
+      "certificate-search",
+      "host-enumeration",
+      "attack-surface"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search/censys.md"
   },
   {
@@ -80392,29 +80442,36 @@
   {
     "id": "project-honey-pot",
     "name": "Project Honey Pot",
-    "description": "Check IP for spam and attack history",
+    "description": "Use when you have an `ip-address` and want its spam/abuse history — returns a threat classification (harvester, spammer, dictionary attacker) with first/last-seen activity.",
     "url": "https://www.projecthoneypot.org/list_of_ips.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "blacklists"
     ],
-    "bestFor": "Check IP for spam and attack history",
+    "bestFor": "Checking whether an IP has a history of spam harvesting, comment spam, or dictionary/brute-force attacks.",
     "input": "IP address",
     "output": "Threat score, spam reports, attack activity",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "freemium",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of honeypot-collected threat data.",
+    "opsecNote": "You query Project Honey Pot's honeypot-collected database, not the host at the IP, so the target machine isn't contacted or alerted. Data reflects behavior seen by honeypots — it classifies an address, not a person, and shared/dynamic IPs may carry a prior tenant's history.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, respected anti-spam project (behind the http:BL / Http:BL DNSBL); data is from a distributed honeypot network.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -80422,11 +80479,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Project Honey Pot",
+      "projecthoneypot.org"
+    ],
+    "tags": [
+      "ip-reputation",
+      "spam-blacklist",
+      "threat-history"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/blacklists/project-honey-pot.md"
   },
   {
@@ -85253,35 +85317,41 @@
   {
     "id": "subfinder",
     "name": "Subfinder",
-    "description": "Passive subdomain enumeration for cloud asset inventorying",
+    "description": "Use when you have a `domain` and want its subdomains fast, passively — aggregates dozens of sources into a deduped list of subdomains, returning more domains to map.",
     "url": "https://github.com/projectdiscovery/subfinder",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "aws-enumeration"
     ],
-    "bestFor": "Passive subdomain enumeration for cloud asset inventorying",
+    "bestFor": "Fast passive subdomain enumeration by aggregating many third-party sources into one list.",
     "input": "Domain name and optional API credentials for data sources",
     "output": "Resolved and unresolved subdomain candidates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
     "opsec": "passive",
-    "opsecNote": "Uses third-party data sources by default and avoids active probing unless paired with other tools.",
+    "opsecNote": "By default subfinder pulls from third-party passive sources (cert transparency, DNS aggregators, search APIs) and does NOT send traffic to the target, so the subject isn't alerted. It becomes active only if you pipe results into a resolver/prober. Some sources need your own API keys — isolate those keys from your identity.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by ProjectDiscovery, a well-regarded security-tooling team; widely used and open source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": true,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
@@ -85289,11 +85359,18 @@
       "cve-map",
       "dnsx"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "subfinder",
+      "projectdiscovery/subfinder"
+    ],
+    "tags": [
+      "subdomain-enumeration",
+      "passive-recon",
+      "attack-surface"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aws-enumeration/subfinder.md"
   },
   {
@@ -298651,49 +298728,53 @@
   {
     "id": "yandex-wordstat",
     "name": "Yandex Wordstat",
-    "description": "OSINT tool: Yandex Wordstat.",
+    "description": "Use when you need search-demand and regional interest data for a keyword/name/brand on Yandex — returns query volumes and geographic breakdown, a soft signal of where a term matters.",
     "url": "https://wordstat.yandex.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Gauging Yandex search demand for a keyword/term and its regional distribution (strong for Russia/CIS).",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsec": "passive",
+    "opsecNote": "You query Yandex's aggregated search-statistics tool, not any individual — no person is identified or alerted. It requires a Yandex account to use; log in with a sock-puppet Yandex account, not a personal one, since Yandex logs the session.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Yandex product; the data authentically reflects Yandex search demand (Russia/CIS-weighted), though it's aggregate keyword statistics, not per-person data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "yandex",
+      "yandex-image-search",
+      "yandex-maps"
+    ],
+    "aliases": [
+      "Yandex Wordstat",
+      "wordstat.yandex.com"
+    ],
     "tags": [
+      "keyword-research",
+      "search-demand",
       "keywords-discovery-and-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "yandex",
-      "yandex-browser",
-      "yandex-image-search",
-      "yandex-images",
-      "yandex-mail",
-      "yandex-maps",
-      "yandex-russia",
-      "yandex-translate",
-      "yandex-video-search",
-      "yandexmaps"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yandex-wordstat.md"
   },
   {
@@ -350264,48 +350345,55 @@
   {
     "id": "license-plate-maps",
     "name": "License Plate Maps",
-    "description": "Collection of tools and maps for discerning license plates by country",
+    "description": "Use when you have a photo of a `vehicle-plate` and want to identify its country/region of issue — a reference collection of plate-format guides and maps returning geolocation leads.",
     "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/license-plate-maps",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the issuing country/region of a license plate from its format, colors, and codes.",
     "selectorsIn": [
       "vehicle-plate"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "opsec": "passive",
+    "opsecNote": "These are reference guides you read; identifying a plate's origin involves no query about the vehicle or owner and alerts no one. This tells you WHERE a plate is from, not WHO owns it — plate-to-owner lookups require restricted official databases, not these guides.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Curated on the Bellingcat investigation toolkit, which vets the resources it lists; the linked guides are community/reference material.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "transport"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "about-maps-and-satellites",
       "bellingcat-meta-content-library",
       "bellingcat-s-online-investigation-toolkit-2",
       "china-related-resources"
     ],
+    "aliases": [
+      "License Plate Maps",
+      "number plate identification"
+    ],
+    "tags": [
+      "license-plate",
+      "geolocation",
+      "bellingcat-toolkit",
+      "transport"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/license-plate-maps.md"
   },
   {

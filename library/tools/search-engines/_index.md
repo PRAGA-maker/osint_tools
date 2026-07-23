@@ -723,7 +723,7 @@ kind: group-index
 - **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
 - **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t
 - **`yandex-russia`** (low) — Use when you have an `image`/`face`, `name` or `username` and want a search engine whose reverse-image and CIS-region coverage beats Google 
-- **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
+- **`yandex-wordstat`** (low) — Use when you need search-demand and regional interest data for a keyword/name/brand on Yandex — returns query volumes and geographic breakdo
 - **`yaraif`** (medium) — Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — return
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 

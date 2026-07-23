@@ -104,7 +104,7 @@ kind: group-index
 - **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
 - **`license-plate-lookup`** (medium) — Use when you have a US `vehicle-plate` and want vehicle details — free tier returns make/model/year; owner name/address requires paid, DPPA-
 - **`license-plate-mania`** (medium) — Use when you have an image of a `vehicle-plate` and want to identify its country/region of origin and era — returns reference photos of plat
-- **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
+- **`license-plate-maps`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of issue — a reference collection of plate-format gui
 - **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 
 - **`live-atc`** (low) — Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft a
 - **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
