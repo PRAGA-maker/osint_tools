@@ -64,7 +64,7 @@ kind: group-index
 - **`bitcoinprivacy-guide`** (low) — OSINT tool: Bitcoinprivacy.guide.
 - **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
 - **`bitonic`** (low) — OSINT tool: Bitonic.
-- **`blackarch-linux`** (low) — OSINT tool: BlackArch Linux.
+- **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`blinklist`** (low) — Website that provides a listing for new and popular apps, including tech/software reviews
 - **`blogger-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
@@ -144,7 +144,7 @@ kind: group-index
 - **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
 - **`facebook-social-networking-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook,
 - **`fake-company-name-generator`** (low) — OSINT tool: Fake Company Name Generator.
-- **`fake-drivers-license-generator`** (low) — OSINT tool: Fake Drivers License Generator.
+- **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
 - **`fake-person-generator`** (low) — OSINT tool: Fake person generator.
@@ -267,7 +267,7 @@ kind: group-index
 - **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`magnifying-glass-tool-app-mobile-ios`** (low) — App for mobile devices for a combined flashlight and camera image magnification tool
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
-- **`malwoverview`** (low) — Get maximum information about potentially malicious files and links from: Virus Total, Hybrid Analysis, URLHaus, PolySwarm, Mal Share, Alien
+- **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels)
 - **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
 - **`markmap`** (low) — A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to c

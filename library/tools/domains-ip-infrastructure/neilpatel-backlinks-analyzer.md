@@ -35,6 +35,7 @@ lastVerified: ''
 enrichment: full
 relatedTools:
 - ubersuggest-keyword-creator
+- ubersuggest
 ---
 
 # Neilpatel backlinks analyzer

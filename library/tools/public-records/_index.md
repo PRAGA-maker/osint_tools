@@ -904,7 +904,7 @@ kind: group-index
 - **`uksocialhousing-com`** (medium) — Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in 
 - **`uky-salaries-2019`** (medium) — Use when you have a `name` and want to confirm someone was a University of Kentucky employee in 2019 — returns their `employer-org` unit and
 - **`un-comtrade-database`** (low) — Use when you need official country-to-country trade statistics for context — returns bilateral import/export volumes and values by product, 
-- **`un-data`** (low) — OSINT tool: UN Data.
+- **`un-data`** (low) — Use when you have a country/region and topic and want authoritative UN statistics — returns official demographic, economic, and social datas
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — Use when you have a `name` and want to find US unclaimed-property records tying them to a state/address — returns address and employer-org l
 - **`unclaimed-money-us-google-search`** (medium) — Use when you have a `name` (and maybe last-known `address`) and want to locate a person via US unclaimed-property/asset databases — returns 
 - **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns

@@ -32,6 +32,7 @@ localInstall: false
 registration: true
 relatedTools:
 - neilpatel-backlinks-analyzer
+- ubersuggest
 aliases:
 - ubersuggest
 - neilpatel ubersuggest

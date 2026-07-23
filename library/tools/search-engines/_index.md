@@ -220,7 +220,7 @@ kind: group-index
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
 - **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
 - **`filephish`** (low) — OSINT tool: FilePhish.
-- **`filepursuit-com`** (low) — OSINT tool: Filepursuit.com.
+- **`filepursuit-com`** (low) — Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, an
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti
@@ -646,7 +646,7 @@ kind: group-index
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and ass
 - **`twingly`** (low) — OSINT tool: Twingly.
-- **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
+- **`ubersuggest`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns estimated traffic, top keywords, and backlink/competitor data for 
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re
 - **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f
 - **`ukons-standard-occupational-classifications-united-kingdom`** (low) — Use when you have a UK job-title lead and want to normalize it to the ONS SOC occupation code — returns the standard classification, not a p

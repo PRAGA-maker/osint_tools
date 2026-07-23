@@ -77610,7 +77610,8 @@
     "lastVerified": "",
     "enrichment": "stub",
     "relatedTools": [
-      "ubersuggest-keyword-creator"
+      "ubersuggest-keyword-creator",
+      "ubersuggest"
     ],
     "_file": "library/tools/domains-ip-infrastructure/neilpatel-backlinks-analyzer.md"
   },
@@ -78979,41 +78980,54 @@
   {
     "id": "openlinkprofiler",
     "name": "OpenLinkProfiler",
-    "description": "OSINT tool: OpenLinkProfiler.",
-    "url": "http://www.openlinkprofiler.org/",
+    "description": "Use when you have a `domain` and want its backlink profile — returns the sites linking to it, revealing related properties, partners, and networks.",
+    "url": "https://www.openlinkprofiler.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A free backlink checker — seeing which other sites link to a target domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free backlink lookups; viewing full metrics now requires a (free) account/email verification, and volume/depth may be capped versus paid backlink tools.",
+    "opsec": "passive",
+    "opsecNote": "OpenLinkProfiler reports from its own crawl index, so it never touches the target site — passive and invisible to the subject. Registration ties queries to your (sock-puppet) email; use a throwaway. Backlink data is a crawl subset, so treat the link list as leads to corroborate, not a complete map.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free backlink-analysis tool; its index is smaller/less fresh than major commercial link databases, so use it as one source among several.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "openlink-profiler",
       "openlinkprofiles"
     ],
+    "aliases": [
+      "OpenLinkProfiler",
+      "openlinkprofiler.org"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "backlinks"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/openlinkprofiler.md"
   },
   {
@@ -86286,7 +86300,8 @@
     "localInstall": false,
     "registration": true,
     "relatedTools": [
-      "neilpatel-backlinks-analyzer"
+      "neilpatel-backlinks-analyzer",
+      "ubersuggest"
     ],
     "aliases": [
       "ubersuggest",
@@ -90275,35 +90290,56 @@
   {
     "id": "whoxy",
     "name": "Whoxy",
-    "description": "OSINT tool: Whoxy.",
+    "description": "Use when you have a `name`, `email`, or `domain` and want linked domains via WHOIS history — returns reverse-WHOIS matches and a domain's registration-change timeline.",
     "url": "https://www.whoxy.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-WHOIS (find domains registered by a name/email/org) and viewing a domain's historical WHOIS records.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free live-WHOIS and limited previews on the site; reverse-WHOIS, WHOIS history, and bulk/API access are cheap paid credits (not a full free tier).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Whoxy answers from its own WHOIS database, so you never query the registrar or target directly — passive and invisible to the subject. Your searches are tied to your Whoxy account/API key; use a sock-puppet account. Registrant data is only present where WHOIS privacy wasn't enabled, and historical records may expose details later redacted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established commercial WHOIS-data provider with a large historical database; coverage is good for gTLDs but patchy for privacy-protected and some ccTLD domains.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Whoxy",
+      "whoxy.com"
+    ],
+    "tags": [
+      "whois",
+      "reverse-whois",
+      "domain-history"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whoxy.md"
   },
   {
@@ -168636,37 +168672,45 @@
   {
     "id": "blackarch-linux",
     "name": "BlackArch Linux",
-    "description": "OSINT tool: BlackArch Linux.",
+    "description": "Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon, forensics, and analysis.",
     "url": "https://www.blackarch.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A single Linux environment pre-packaged with thousands of security and OSINT tools.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source; download the ISO or add the BlackArch repo to an existing Arch install at no cost.",
+    "opsec": "passive",
+    "opsecNote": "BlackArch is just the platform — installing it and its tools is passive and reveals nothing to any target. OpSec depends entirely on *how* you use the tools inside it: run investigations from a VM/live-USB, route traffic through a VPN/Tor, and keep separate instances per identity. Some bundled tools are active (they touch targets) — the distro doesn't anonymize you by itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A well-established Arch-based penetration-testing distribution with a large curated tool repository and public packaging; reputable, though (as with any pentest distro) you should vet individual bundled tools before use.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BlackArch",
+      "blackarch.org"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Virtual Machines/Linux distributions",
+      "pentest-distro",
+      "osint-workstation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/blackarch-linux.md"
   },
   {
@@ -172180,35 +172224,46 @@
   {
     "id": "fake-drivers-license-generator",
     "name": "Fake Drivers License Generator",
-    "description": "OSINT tool: Fake Drivers License Generator.",
+    "description": "Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fabricated license number/details.",
     "url": "https://fakeinfo.net/drivers-license-generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a realistically-formatted but fake driver's-license number/details for a sock-puppet identity.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web generator (fakeinfo.net); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generating fake license data is passive — nothing about a real subject is submitted. Its purpose is defensive persona-building. Do NOT use a generated license to impersonate a real person, deceive law enforcement, pass identity checks, or commit fraud — that is illegal. It is for filling out a cover identity's consistency, never for real-world identification.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "fakeinfo.net is an established fake-identity utility; the generated license numbers/details are format-plausible fabrications tied to no real record or person.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fake driver's license generator",
+      "fakeinfo drivers license"
+    ],
+    "tags": [
+      "sock-puppet",
+      "fake-identity"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "fake-company-name-generator",
       "fake-tiktok-profile-generator",
@@ -177564,37 +177619,53 @@
   {
     "id": "malwoverview",
     "name": "MALWOVERVIEW",
-    "description": "Get maximum information about potentially malicious files and links from: Virus Total, Hybrid Analysis, URLHaus, PolySwarm, Mal Share, Alien Vault, Malpedia, ThreatFox, Triage, InQuest",
+    "description": "Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analysis/URLHaus/etc verdicts from one CLI.",
     "url": "https://github.com/alexandreborges/malwoverview",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "First-response CLI triage of files/URLs/IPs across many malware and threat-intel services at once.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python); most integrated services need your own free API keys to return data.",
+    "opsec": "passive",
+    "opsecNote": "Reputation lookups are passive toward the target, but Malwoverview submits your indicators (hashes, URLs, domains, IPs) to third-party services — VirusTotal, Hybrid Analysis, URLHaus, Triage, and more — which log and may share what you submit. Submitting a URL/hash can also tip off an operator monitoring VT. Use throwaway API keys and never submit sensitive/private indicators you don't want disclosed.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Actively maintained open-source tool (Alexandre Borges); it aggregates other services, so verdict quality is inherited from those upstream sources, not Malwoverview itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "malwoverview",
+      "alexandreborges/malwoverview"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "ioc-enrichment",
+      "threat-intel",
+      "malware-triage"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/malwoverview.md"
   },
   {
@@ -259036,43 +259107,54 @@
   {
     "id": "un-data",
     "name": "UN Data",
-    "description": "OSINT tool: UN Data.",
+    "description": "Use when you have a country/region and topic and want authoritative UN statistics — returns official demographic, economic, and social datasets for context and corroboration.",
     "url": "http://data.un.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single search portal across the UN's official statistical databases (population, trade, social indicators, etc.).",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official United Nations data portal; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "A public UN statistics portal — browsing it discloses nothing to any subject and needs no login. The data is aggregate (country/region level) with no personal information, so there's no privacy exposure in querying it. Standard sock-puppet browsing is more than sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UN Statistics Division portal (UNdata) aggregating first-party UN-system databases; authoritative for international statistics, though some series lag by a year or more.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "statistics-and-data",
       "un-comtrade-database",
       "un-security-council-consolidated-list",
       "unstats-social-indicators"
     ],
+    "aliases": [
+      "UNdata",
+      "data.un.org"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "united-nations"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/un-data.md"
   },
   {
@@ -272682,35 +272764,48 @@
   {
     "id": "filepursuit-com",
     "name": "Filepursuit.com",
-    "description": "OSINT tool: Filepursuit.com.",
+    "description": "Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, and images across the web.",
     "url": "https://filepursuit.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching open/indexed web directories for files (docs, media, archives) by keyword or type.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web search; a paid tier/API and mobile app add higher limits and features.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching FilePursuit queries its own index of already-open directories, so you don't probe any target server — passive. Downloading a listed file fetches it from its host, which logs your IP; use a proxy/sock-puppet for sensitive files, and be aware some indexed files may be copyrighted or sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running file/open-directory search engine; it indexes publicly-exposed directory listings, so results are real but their provenance and legality vary file to file.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FilePursuit",
+      "filepursuit.com"
+    ],
+    "tags": [
+      "file-search",
+      "open-directories"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/filepursuit-com.md"
   },
   {
@@ -294504,37 +294599,55 @@
   {
     "id": "ubersuggest",
     "name": "Ubersuggest",
-    "description": "OSINT tool: Ubersuggest.",
-    "url": "http://ubersuggest.org",
+    "description": "Use when you have a `domain` and want its SEO/traffic footprint — returns estimated traffic, top keywords, and backlink/competitor data for site profiling.",
+    "url": "https://neilpatel.com/ubersuggest/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Quick SEO/traffic profiling of a domain — estimated visits, ranking keywords, and backlinks.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A few free lookups per day (with a free account); higher volume and full reports require a paid plan or lifetime license.",
+    "opsec": "passive",
+    "opsecNote": "Ubersuggest reports from its own crawl/SEO index, so it never touches the target site — passive and invisible to the subject. Free use is tied to a (sock-puppet) account/login that logs your queries. Metrics are *estimates*, not ground truth, so treat traffic/keyword figures as directional.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A mainstream commercial SEO tool (Neil Patel Digital); estimates are modeled, not measured, so figures are approximate and best cross-checked against another SEO source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Ubersuggest",
+      "Neil Patel Ubersuggest"
+    ],
     "tags": [
-      "keywords-discovery-and-research"
+      "keywords-discovery-and-research",
+      "seo",
+      "domain-profiling"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "neilpatel-backlinks-analyzer",
+      "ubersuggest-keyword-creator"
+    ],
     "_file": "library/tools/search-engines/ubersuggest.md"
   },
   {
@@ -323475,28 +323588,29 @@
   {
     "id": "reddit-enhancement-suite-chrome",
     "name": "Reddit Enhancement Suite (Chrome)",
-    "description": "Chrome extension enhancing the Reddit browsing experience.",
-    "url": "https://chrome.google.com/webstore/detail/redditenhancementsuite/kbmfpngjjgdllneeigpgjifpgocmfgmb",
+    "description": "Use when you are analyzing a Reddit `username` and want power-user tools — returns inline user tagging, account-age/karma visibility, and faster history/thread review.",
+    "url": "https://chromewebstore.google.com/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Power-user Reddit browsing with tagging and history",
+    "bestFor": "Power-user Reddit browsing — tag users, keep notes, and review post/comment history efficiently.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source browser extension; no account beyond your (sock-puppet) Reddit login.",
+    "opsec": "passive",
+    "opsecNote": "RES is a client-side UI layer over your normal Reddit browsing — it adds no extra requests to a target and stores your tags/notes locally, so it's passive. Any account interaction (voting, subscribing, expanding profiles) still happens under whatever Reddit account you're logged into; use a sock-puppet account, and remember RES has broad access to Reddit pages in your browser (install only the official version).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, open-source, widely-used Reddit extension (honestpuck/RES community); it only enhances the Reddit UI and does not exfiltrate data — install the official Web Store build.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -323505,15 +323619,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RES",
+      "Reddit Enhancement Suite"
+    ],
     "tags": [
       "reddit",
       "browser-enhancement",
       "chrome-extension"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-enhancement-suite-chrome.md"
   },
   {
@@ -353437,46 +353554,55 @@
   {
     "id": "shipspotting-com",
     "name": "ShipSpotting.com",
-    "description": "Community website for uploading pictures & details of vessels spotted around the world.",
-    "url": "http://shipspotting.com/",
+    "description": "Use when you have a vessel `name`/IMO and want photos and sighting history — returns dated, often geolocated ship photographs and vessel details.",
+    "url": "https://www.shipspotting.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding photographs and historical sightings of a specific vessel by name or IMO number.",
     "selectorsIn": [
       "vehicle-plate"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community photo database; viewing and searching need no account (uploading requires registration).",
+    "opsec": "passive",
+    "opsecNote": "You're browsing a public photo archive, not contacting any subject — passive. ShipSpotting logs visitors; use a sock-puppet session for sensitive research. Photo dates/locations are contributor-supplied and can be approximate or mislabeled, so treat a single sighting as a lead, not a fix.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known community ship-photo database featured in the Bellingcat toolkit; photos are authentic contributor uploads, but metadata (date/place) quality depends on the uploader.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "transport"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ship-spotting",
       "shipspotting-live-ais"
     ],
+    "aliases": [
+      "ShipSpotting",
+      "shipspotting.com"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "transport",
+      "vessels",
+      "maritime"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/shipspotting-com.md"
   },
   {

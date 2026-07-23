@@ -319,7 +319,7 @@ kind: group-index
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
 - **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
-- **`openlinkprofiler`** (low) — OSINT tool: OpenLinkProfiler.
+- **`openlinkprofiler`** (low) — Use when you have a `domain` and want its backlink profile — returns the sites linking to it, revealing related properties, partners, and ne
 - **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
 - **`opensquat`** (low) — Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
@@ -486,7 +486,7 @@ kind: group-index
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
 - **`whoishostingthis`** (low) — Use when you have a `domain` and want to know which company hosts it — returns the hosting provider plus basic WHOIS/ownership context.
 - **`whoismind`** (low) — Use when you have an `ip-address` and want its location and neighboring sites — returns `geolocation`, ISP/ASN, and reverse-IP `domain`s hos
-- **`whoxy`** (low) — OSINT tool: Whoxy.
+- **`whoxy`** (low) — Use when you have a `name`, `email`, or `domain` and want linked domains via WHOIS history — returns reverse-WHOIS matches and a domain's re
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
 - **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
