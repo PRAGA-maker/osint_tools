@@ -1304,37 +1304,46 @@
   {
     "id": "awesome-security",
     "name": "awesome-security",
-    "description": "OSINT tool: awesome-security.",
+    "description": "Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references to browse when picking an approach (no subject selectors).",
     "url": "https://github.com/sbilly/awesome-security",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A curated jumping-off index of security and OSINT tools/resources organised by topic, for discovering the right tool for a task.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source \"awesome list\" on GitHub; read online or clone.",
+    "opsec": "passive",
+    "opsecNote": "Just a GitHub reference page — reading it is passive and reveals nothing about a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A popular community-curated awesome list; entries are contributor-submitted and not all vetted or current, so treat it as a discovery index, not an endorsement.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "sbilly/awesome-security"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/awesome-security.md"
   },
   {
@@ -13285,42 +13294,6 @@
     "_file": "library/tools/ai-analysis-automation/researchbuzz.md"
   },
   {
-    "id": "resolver",
-    "name": "Resolver",
-    "description": "OSINT tool: Resolver.",
-    "url": "https://metaproductsrevolver.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "offline-browsing"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/resolver.md"
-  },
-  {
     "id": "rsa-encryption-decryption-and-prime-calculator",
     "name": "RSA encryption, decryption and prime calculator",
     "description": "OSINT tool: RSA encryption, decryption and prime calculator.",
@@ -13393,40 +13366,52 @@
   {
     "id": "sans-internet-storm-center-diary-full-text",
     "name": "SANS Internet Storm Center Diary (Full Text)",
-    "description": "OSINT tool: SANS Internet Storm Center Diary (Full Text).",
+    "description": "Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries, for tracking IOCs and campaigns (no subject selectors).",
     "url": "https://isc.sans.edu/rssfeed_full.xml",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Subscribing to SANS Internet Storm Center handler diaries in full text to monitor new threats, scanning trends, and indicators of compromise.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public RSS feed; no account or key.",
+    "opsec": "passive",
+    "opsecNote": "You're pulling a public RSS feed from SANS — entirely passive, revealing nothing about a subject. Any IOCs (IPs/domains) you then investigate are separate actions with their own footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "SANS Internet Storm Center is a long-standing, authoritative volunteer-analyst security operation; its handler diaries are well-sourced and reliable threat reporting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-rss-feeds"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "dshield-api"
     ],
+    "aliases": [
+      "SANS ISC Diary",
+      "Internet Storm Center RSS"
+    ],
+    "tags": [
+      "osint-rss-feeds",
+      "threat-intel"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sans-internet-storm-center-diary-full-text.md"
   },
   {
@@ -41382,38 +41367,53 @@
   {
     "id": "ransomware-darknet-websites",
     "name": "Ransomware Darknet websites",
-    "description": "OSINT tool: Ransomware Darknet websites.",
+    "description": "Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing to darknet extortion/leak portals.",
     "url": "https://sizeof.cat/post/ransomware-darknet-websites/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "A clearnet-readable, curated list of ransomware group darknet leak/extortion sites as an entry point for tracking victims and gang activity.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free clearnet blog post; no account to read.",
+    "opsec": "active",
+    "opsecNote": "Reading the clearnet list is passive, but its purpose is to send you to ransomware leak portals on Tor — a hostile, monitored environment. Visit any onion link only from a hardened Tor Browser on an isolated VM under a sock-puppet identity, and never log in or download from these sites casually.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A personal security blog's curated list; useful as a snapshot, but ransomware onion addresses rotate constantly as sites are seized or move, so treat entries as time-stamped leads to re-verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
-      "twitch-payout-search"
+      "onions-darknetlive"
     ],
+    "aliases": [
+      "ransomware leak sites list"
+    ],
+    "tags": [
+      "dark-web",
+      "ransomware",
+      "onion-directory"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/ransomware-darknet-websites.md"
   },
   {
@@ -73578,42 +73578,54 @@
   {
     "id": "ip-neighbors",
     "name": "IP Neighbors",
-    "description": "Find the hosting neighbors for a specific web site or hostname",
+    "description": "Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `domain` neighbours.",
     "url": "https://www.ip-neighbors.com/host/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a hostname's hosting neighbours (domains on the same IP) to surface a subject's other sites or shared-hosting tenants.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup; bulk/heavy use may be limited toward a paid tier or API.",
+    "opsec": "passive",
+    "opsecNote": "You query the service's hosting dataset, not the target server, so the lookup doesn't touch the subject's infrastructure. The service learns which host you're investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party reverse-IP service; coverage and freshness vary by its dataset, and shared-hosting neighbours are usually unrelated — treat results as leads.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "reverse-ip-lookup"
+    ],
+    "aliases": [
+      "ip-neighbors.com"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "reverse-ip"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-neighbors.md"
   },
   {
@@ -74521,37 +74533,51 @@
   {
     "id": "isp-tools",
     "name": "ISP.Tools",
-    "description": "OSINT tool: ISP.Tools.",
+    "description": "Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU tests from worldwide probes, returning reachability and `ip-address` intel.",
     "url": "https://www.isp.tools",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Distributed network diagnostics — ping/MTR/DNS/portscan a target from probes around the world to see how it responds from different locations.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web-based distributed diagnostics; no account.",
+    "opsec": "active",
+    "opsecNote": "The probes — not your machine — originate the traffic to the target, so active tests (ping/portscan) reach the target from ISP.Tools' infrastructure rather than your IP, which shields you. ISP.Tools still logs your query, and you should only scan hosts you're authorized to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A recognised free network-diagnostics service; the results are standard protocol tests (ping/DNS/traceroute), so they're as reliable as the underlying probes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "isp.tools"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "network-diagnostics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/isp-tools.md"
   },
   {
@@ -74960,41 +74986,60 @@
   {
     "id": "ki-tc",
     "name": "Ki.tc",
-    "description": "Generate trackable links to log visitor IPs",
+    "description": "Use when you have a channel to reach a subject and want their `ip-address` — a Grabify-style link shortener that logs the IP, geolocation, and browser of whoever opens your tracked link.",
     "url": "https://ki.tc",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ip-loggers"
     ],
-    "bestFor": "Generate trackable links to log visitor IPs",
-    "input": "Target URL or destination",
-    "output": "Tracker link, IP logs, browser info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Wrapping a link a subject will click so their IP, coarse location, and browser fingerprint get logged.",
+    "input": "Target URL or destination to wrap",
+    "output": "Tracker link, visitor IP logs, browser info",
+    "selectorsIn": [
+      "email",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Creates tracking mechanism; detection depends on how link is used.",
+    "costNote": "Free to create tracking links and read the logs.",
+    "opsec": "active",
+    "opsecNote": "A lure, not a passive lookup — the subject must click, and delivering the link is a deliberate, potentially unlawful contact (pretext/interception). Use only with clear authorization, from a sock-puppet account and burner delivery channel; the service retains everything you collect.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party tracking service; it sees every IP you capture and every link you make — treat its data handling as hostile.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "ip-logger",
+      "grabify"
+    ],
+    "aliases": [
+      "ki.tc"
+    ],
+    "tags": [
+      "ip-loggers",
+      "honeypot-link",
+      "ip-address"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-loggers/ki-tc.md"
   },
   {
@@ -81259,42 +81304,51 @@
   {
     "id": "repolist",
     "name": "Repolist",
-    "description": "A very fast and simple tool that allows to generate wordlists for different CMS and frameworks (using Github repos).",
+    "description": "Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists from the framework's GitHub repo to fuzz for hidden endpoints.",
     "url": "https://github.com/Ademking/repolist",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Building a precise directory/file wordlist from a CMS or framework's own GitHub repo, to feed content-discovery tools against a site built on it.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI (Ademking/repolist); install via pip.",
+    "opsec": "passive",
+    "opsecNote": "Generating the wordlist is passive — it only reads a public GitHub repo, nothing touches the target. It becomes active only when you USE the wordlist with a fuzzer (ffuf/gobuster) against a live site, which hits that server and is logged; tunnel that stage and stay in scope.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small but active open-source utility (100+ stars); it just extracts paths from a repo, so output correctness is transparent and easy to verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Ademking/repolist"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Wordlists generators"
+      "Wordlists generators",
+      "content-discovery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/repolist.md"
   },
   {
@@ -168832,46 +168886,6 @@
     "_file": "library/tools/opsec-investigator-tooling/blinklist.md"
   },
   {
-    "id": "blogger-social-networking-app-mobile-android",
-    "name": "Blogger Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and blogging",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.blogger",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/blogger-social-networking-app-mobile-android.md"
-  },
-  {
     "id": "blokt-privacy-guides",
     "name": "Blokt Privacy Guides",
     "description": "Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides",
@@ -169486,49 +169500,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/cardguru.md"
-  },
-  {
-    "id": "ccleaner-pc",
-    "name": "Ccleaner (PC)",
-    "description": "Program that assists in cleaning and optimizing PC systems",
-    "url": "http://www.piriform.com/ccleaner",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ccleaner"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/ccleaner-pc.md"
   },
   {
     "id": "centbrowser",
@@ -180029,46 +180000,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/paxful.md"
-  },
-  {
-    "id": "paypal-mobile-payment-app-mobile-android",
-    "name": "Paypal Mobile Payment App (Mobile – Android)",
-    "description": "App for mobile devices for mobile payment services",
-    "url": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/paypal-mobile-payment-app-mobile-android.md"
   },
   {
     "id": "pentoo-linux",
@@ -272018,38 +271949,49 @@
   {
     "id": "fact-checking",
     "name": "Fact-Checking",
-    "description": "OSINT tool: Fact-Checking.",
+    "description": "Use when you need to verify a claim or find a regional fact-checker — the Duke Reporters' Lab global database/map of fact-checking organisations worldwide (no subject selectors).",
     "url": "https://reporterslab.org/fact-checking/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Locating credible fact-checking organisations by country/language to verify a claim, image, or narrative you've encountered in an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free academic resource from the Duke Reporters' Lab; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public academic directory is passive and reveals nothing about a subject. The verification you do next (searching a claim, contacting a fact-checker) carries its own considerations.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Duke University Reporters' Lab, the standard academic census of fact-checking outlets; authoritative for who the fact-checkers are, though it indexes organisations rather than adjudicating individual claims.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "duke-reporters-lab"
     ],
+    "aliases": [
+      "Duke Reporters' Lab fact-checking database",
+      "fact-checking map"
+    ],
+    "tags": [
+      "verification",
+      "fact-checking"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/fact-checking.md"
   },
   {

@@ -48,7 +48,7 @@ kind: group-index
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
 - **`awesome-privacy`** (low) — OSINT tool: awesome-privacy.
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
-- **`awesome-security`** (low) — OSINT tool: awesome-security.
+- **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
 - **`awk-js`** (low) — AWK (script language) is a powerful command line tool for extracting data from texts and auto generating texts. For those who don't use CLI 
 - **`barcode-reader`** (low) — OSINT tool: Barcode Reader.
@@ -327,10 +327,9 @@ kind: group-index
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Google Sinker Search queries constructor (view pic), Google News Search queries constructor, Quick twitter account historical navigation in 
-- **`resolver`** (low) — OSINT tool: Resolver.
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
 - **`s-i-g-i-t`** (low) — Simple information gathering toolkit
-- **`sans-internet-storm-center-diary-full-text`** (low) — OSINT tool: SANS Internet Storm Center Diary (Full Text).
+- **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sans-osint-summit-2021-playlist`** (low) — OSINT tool: SANS OSINT Summit 2021 (Playlist).
 - **`sarenka`** (low) — OSINT tool: Sarenka.
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.

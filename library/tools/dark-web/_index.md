@@ -82,7 +82,7 @@ kind: group-index
 - **`pitch`** (low) — OSINT tool: Pitch.
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
 - **`raklet`** (low) — OSINT tool: Raklet.
-- **`ransomware-darknet-websites`** (low) — OSINT tool: Ransomware Darknet websites.
+- **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
 - **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — OSINT tool: RiseUp.

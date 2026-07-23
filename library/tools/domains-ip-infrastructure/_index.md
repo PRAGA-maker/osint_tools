@@ -236,7 +236,7 @@ kind: group-index
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
 - **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools
 - **`ip-location-io`** (low) — OSINT tool: IP Location.io.
-- **`ip-neighbors`** (low) — Find the hosting neighbors for a specific web site or hostname
+- **`ip-neighbors`** (low) — Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `dom
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
 - **`ip2geo-dev`** (low) — OSINT tool: ip2geo.dev.
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
@@ -250,7 +250,7 @@ kind: group-index
 - **`ipvoid`** (low) — OSINT tool: IPVoid.
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
 - **`ismalicious`** (low) — OSINT tool: isMalicious.
-- **`isp-tools`** (low) — OSINT tool: ISP.Tools.
+- **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
@@ -350,7 +350,7 @@ kind: group-index
 - **`regexper`** (low) — A simple and free online tool for visualizing regular expressions. Just copy the regular expression to the site and convert it into a detail
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
 - **`remote-dns-lookup`** (low) — OSINT tool: Remote DNS Lookup.
-- **`repolist`** (low) — A very fast and simple tool that allows to generate wordlists for different CMS and frameworks (using Github repos).
+- **`repolist`** (low) — Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists fr
 - **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re

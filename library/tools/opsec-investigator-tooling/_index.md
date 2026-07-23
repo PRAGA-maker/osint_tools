@@ -65,7 +65,6 @@ kind: group-index
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`blinklist`** (low) — Website that provides a listing for new and popular apps, including tech/software reviews
-- **`blogger-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
 - **`bool`** (low) — Boolean search assistant
 - **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
@@ -78,7 +77,6 @@ kind: group-index
 - **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardguru`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
-- **`ccleaner-pc`** (low) — Program that assists in cleaning and optimizing PC systems
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
 - **`cheat-sheet-maker`** (low) — simple tool for creating cheat sheets
@@ -319,7 +317,6 @@ kind: group-index
 - **`password-generator`** (low) — Password generator for creating strong passwords
 - **`password-safe`** (low) — Program that enhances security by offering password management services
 - **`paxful`** (low) — OSINT tool: Paxful.
-- **`paypal-mobile-payment-app-mobile-android`** (low) — App for mobile devices for mobile payment services
 - **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
 - **`pexels`** (low) — OSINT tool: Pexels.
 - **`pic-cic-code-database`** (low) — OSINT tool: PIC/CIC Code Database.
