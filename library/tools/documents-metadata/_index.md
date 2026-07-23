@@ -208,7 +208,7 @@ kind: group-index
 - **`pymeta`** (low) — A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`rebelmouse`** (low) — Creative agency and website publishing platform
-- **`recoverytoolbox`** (low) — recovery tools for corrupted Excel, CorelDraw, Photoshop, PowerPoint, RAR, ZIP, PDF and other files
+- **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
 - **`reposearch`** (low) — OSINT tool: Reposearch.
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-association-of-new-zealand`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
@@ -260,7 +260,7 @@ kind: group-index
 - **`true-random-number-service`** (low) — Program that creates random number sequences using a random number generator for numbers between 1 and 100
 - **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
 - **`twitter-analytics`** (low) — Website offering analytical capabilities of Twitter content
-- **`uk-government-information-technology`** (low) — Online government website providing information on computer and information technology occupations
+- **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
 - **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations

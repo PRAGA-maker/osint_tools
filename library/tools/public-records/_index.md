@@ -120,7 +120,6 @@ kind: group-index
 - **`brownbook`** (medium) — Use when you have a business `name`/`employer-org` and want its listing — returns address, phone, and contact details from a global crowd-so
 - **`buffalo-police`** (medium) — Use when you have a Buffalo (NY) police officer `name` or badge and want accountability/misconduct records — returns officer identity and co
 - **`bulgaria`** (high) — Use when you have a `name` or `employer-org` in Bulgaria and want to confirm company officers, ownership and registered addresses — returns 
-- **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
 - **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l

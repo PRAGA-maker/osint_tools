@@ -147,7 +147,7 @@ kind: group-index
 - **`fake-company-name-generator`** (low) — OSINT tool: Fake Company Name Generator.
 - **`fake-drivers-license-generator`** (low) — OSINT tool: Fake Drivers License Generator.
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
-- **`fake-identity-id-random-name-generator`** (low) — OSINT tool: Fake Identity ID Random Name Generator.
+- **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
 - **`fake-person-generator`** (low) — OSINT tool: Fake person generator.
 - **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.

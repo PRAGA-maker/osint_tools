@@ -449,7 +449,7 @@ kind: group-index
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
-- **`reddit-stream`** (low) — Live-stream Reddit comments in real time.
+- **`reddit-stream`** (low) — Use when you have a live Reddit thread (or a `username` active in one) and want its comments to update in real time — returns a live-refresh
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
 - **`reddit-timer`** (low) — Use when you have a subreddit (`social-profile`) and want its weekly posting-activity pattern — returns an hourly heatmap of when that commu
 - **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an

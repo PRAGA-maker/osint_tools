@@ -333,7 +333,7 @@ kind: group-index
 - **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
 - **`islegitsite`** (low) — Use when you have a `domain` and want a quick trust/scam assessment of a website — returns reputation, blocklist status, and HTTPS/popularit
 - **`issuu`** (medium) — Use when you have a name, org, or topic and want it inside published PDFs/magazines — searches millions of uploaded documents that surface n
-- **`itar-tass`** (low) — OSINT tool: Itar-Tass.
+- **`itar-tass`** (low) — Use when you have a `name`, `employer-org`, or event and want how Russia's state news agency reported it — returns Russian-state-media cover
 - **`itlaw`** (medium) — Use when you have a technology-law or cyber term and want a plain reference definition — returns an explanatory entry to interpret legal/tec
 - **`ivmachiavelli-osint-team-links`** (medium) — Use when you need to find the right OSINT tool for a task — a large community-curated GitHub directory of OSINT links organized by category.
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
@@ -360,13 +360,13 @@ kind: group-index
 - **`keywordtool`** (low) — OSINT tool: KeywordTool.
 - **`kiddle`** (low) — Kid-friendly search engine.
 - **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
-- **`kidrex`** (low) — Kid-friendly search engine.
+- **`kidrex`** (low) — Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe result
 - **`kids-search`** (low) — Kid-friendly search engine.
 - **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
 - **`kidsites-com`** (low) — Listing of youth-related websites
 - **`kidsnet-search-engine-australia`** (low) — Kid friendly search engine, including a dictionary, thesauras, and encylopedia
 - **`kidtopia`** (low) — Kid-friendly search engine.
-- **`kidzsearch`** (low) — Kid-friendly search engine
+- **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`law-enforcement-resource-portal`** (medium) — Use when you have a `name` or agency and want US law-enforcement news, products and community context — returns `social-profile`/mention and
@@ -465,7 +465,7 @@ kind: group-index
 - **`oh-shint-osint-web-resources`** (medium) — Use when you have a case type but not the right tool — returns a curated, categorised directory of OSINT web resources (people, phone, real 
 - **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
-- **`one-liner-osint`** (low) — Collection of powerful one-liner commands for OSINT gathering.
+- **`one-liner-osint`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want ready-made shell one-liners to enumerate it fast — returns copy-
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c

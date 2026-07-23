@@ -17376,7 +17376,7 @@
   {
     "id": "xorsearch-and-xorstrings",
     "name": "XORSearch & XORStrings",
-    "description": "String extraction and key hunting in encoded malware payloads",
+    "description": "Use when you have a binary blob or obfuscated file and want to find strings (URLs, IPs, keys, IOCs) hidden behind XOR/ROT/ROL encoding — returns decoded candidate strings and the key.",
     "url": "https://blog.didierstevens.com/programs/xorsearch/",
     "category": "ai-analysis-automation",
     "path": [
@@ -17384,36 +17384,47 @@
       "xor",
       "unix"
     ],
-    "bestFor": "String extraction and key hunting in encoded malware payloads",
-    "input": "Binary files and encoded byte streams",
-    "output": "Decoded candidate strings across transformation and key ranges",
+    "bestFor": "Brute-forcing XOR/ROL/ROT/SHIFT encodings in a binary to surface hidden strings and indicators.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open command-line tools by Didier Stevens; download and run locally.",
     "opsec": "passive",
-    "opsecNote": "Runs locally on analyst systems and does not require online submission.",
+    "opsecNote": "Runs entirely offline on your own machine — the sample never leaves your host. Ideal for analysing untrusted binaries in an isolated VM; passive toward any third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authored by Didier Stevens, a well-known SANS ISC handler; these tools are standard, widely-cited malware-analysis utilities.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "pdf-tools"
+      "pdf-tools",
+      "exiftool"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "XORSearch",
+      "XORStrings",
+      "Didier Stevens XORSearch"
+    ],
+    "tags": [
+      "malware-analysis",
+      "forensics",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/xor/unix/xorsearch-and-xorstrings.md"
   },
   {
@@ -57019,40 +57030,55 @@
   },
   {
     "id": "recoverytoolbox",
-    "name": "RecoveryToolBox",
-    "description": "recovery tools for corrupted Excel, CorelDraw, Photoshop, PowerPoint, RAR, ZIP, PDF and other files",
+    "name": "Recovery Toolbox",
+    "description": "Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `metadata-exif` — returns recovered text/images/metadata.",
     "url": "https://recoverytoolbox.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Repairing corrupted evidence files (Office docs, RAR/ZIP, PDF, PST mailboxes, images) to recover readable content.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free online repair previews and three freeware desktop tools (File Undelete, Mail Undelete, CD/DVD recovery); full recovery/export of most repair tools is paid.",
+    "opsec": "passive",
+    "opsecNote": "The ONLINE repair service uploads your file to Recovery Toolbox's servers — never send sensitive/evidential material that way. For anything confidential use the offline desktop tools so the file never leaves your machine. Passive toward any subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running commercial ISV (since 2003); legitimate but third-party, and the online tier requires uploading your file to them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exiftool"
+    ],
+    "aliases": [
+      "RecoveryToolBox",
+      "recoverytoolbox.com"
+    ],
     "tags": [
-      "Files"
+      "Files",
+      "file-repair",
+      "data-recovery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/recoverytoolbox.md"
   },
   {
@@ -59501,42 +59527,50 @@
   },
   {
     "id": "uk-government-information-technology",
-    "name": "UK Government Information Technology",
-    "description": "Online government website providing information on computer and information technology occupations",
+    "name": "UK Government ICT Strategy Resources",
+    "description": "Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search selector tool.",
     "url": "https://www.gov.uk/government/collections/ict-strategy-resources",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Reading authoritative UK Government ICT strategy, policy, and standards documents as reference/background.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public gov.uk content; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of published government policy pages. gov.uk logs standard web analytics; nothing about any subject is queried. Use a clean browser if you don't want the visit tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK Government (gov.uk) content — authoritative for UK public-sector ICT policy and standards.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk"
+    ],
+    "aliases": [
+      "ICT Strategy Resources",
+      "gov.uk ICT strategy"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/uk-government-information-technology.md"
   },
   {
@@ -171948,39 +171982,53 @@
   },
   {
     "id": "fake-identity-id-random-name-generator",
-    "name": "Fake Identity ID Random Name Generator",
-    "description": "OSINT tool: Fake Identity ID Random Name Generator.",
+    "name": "ElfQrin Fake Identity Generator",
+    "description": "Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet account — returns a full made-up identity.",
     "url": "https://www.elfqrin.com/fakeid.php",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a coherent fake persona to register and operate a sock-puppet research account without exposing your own identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web generator; no account required.",
+    "opsec": "active",
+    "opsecNote": "This is offensive OpSec *for you*, not target interaction — it manufactures a cover identity so your real details never touch a research account. The generated SSN/credit-card/ID numbers are format-valid fakes for testing personas ONLY; using them for fraud, real financial transactions, or identity deception against real institutions is illegal. Keep personas plausible and internally consistent, and record which persona you use where.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running hobbyist tool (ElfQrin/Valerio Capello); it fabricates random data locally-in-page and stores nothing, but is an unaffiliated third party.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "us-ssn-driver-license-state-id-passport-tax-id-generator"
+      "us-ssn-driver-license-state-id-passport-tax-id-generator",
+      "this-person-does-not-exist",
+      "fakenamegenerator"
     ],
+    "aliases": [
+      "ElfQrin Fake ID",
+      "Fake Identity Generator",
+      "fakeid.php"
+    ],
+    "tags": [
+      "sock-puppet",
+      "opsec",
+      "persona"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/fake-identity-id-random-name-generator.md"
   },
   {
@@ -214836,40 +214884,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/business.md"
-  },
-  {
-    "id": "business-directory-occ",
-    "name": "Business Directory \\| OCC",
-    "description": "OSINT tool: Business Directory \\| OCC.",
-    "url": "https://occ.ca/business-directory/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/business-directory-occ.md"
   },
   {
     "id": "business-gov-au",
@@ -278327,38 +278341,58 @@
   },
   {
     "id": "itar-tass",
-    "name": "Itar-Tass",
-    "description": "OSINT tool: Itar-Tass.",
+    "name": "TASS (ITAR-TASS)",
+    "description": "Use when you have a `name`, `employer-org`, or event and want how Russia's state news agency reported it — returns Russian-state-media coverage, named officials, and dates.",
     "url": "http://www.itar-tass.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Russian state news agency coverage (English and Russian) for people, organisations, and events.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; no account required for the public news site.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of a public news site. Note it is Russian state infrastructure — assume requests are logged; use a clean browser/VPN for sensitive research. No contact with any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "TASS is the official Russian state news agency; authoritative for what the Russian government says, but state-controlled — treat its framing as an official narrative, not neutral fact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ru",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-news"
+    ],
+    "aliases": [
+      "ITAR-TASS",
+      "Itar-Tass",
+      "TASS",
+      "itar-tass.com"
+    ],
     "tags": [
-      "news"
+      "news",
+      "russia",
+      "state-media"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/itar-tass.md"
   },
   {
@@ -279613,24 +279647,27 @@
   {
     "id": "kidrex",
     "name": "KidRex",
-    "description": "Kid-friendly search engine.",
+    "description": "Use when you want a SafeSearch-locked, kid-safe web search for a `name`/topic — a filtered Google Custom Search returning family-safe results; little investigative edge over plain search.",
     "url": "http://www.kidrex.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "A locked-SafeSearch, kid-oriented Google Custom Search front end.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported search; no account required. The homepage now redirects to alarms.org/kidrex after acquisition.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive web search. Queries go to a third party (and on to Google); use a clean browser for sensitive terms. No contact with any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A kid-safe search wrapping Google Programmable Search + SafeSearch, acquired by and now served under alarms.org; results are Google's, the filtering is KidRex's.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -279639,15 +279676,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "kidzsearch"
+    ],
+    "aliases": [
+      "kidrex.org",
+      "KidRex Safe Search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "kid-friendly-educational-search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/kidrex.md"
   },
   {
@@ -279853,24 +279896,27 @@
   {
     "id": "kidzsearch",
     "name": "KidzSearch",
-    "description": "Kid-friendly search engine",
+    "description": "Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; minimal investigative edge over plain search.",
     "url": "https://www.kidzsearch.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "A locked-SafeSearch, kid-oriented web search front end over Google results.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive web search. Queries go to a third party (and on to Google); use a clean browser for sensitive terms. No contact with any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial kid-safe search portal wrapping Google Programmable Search + SafeSearch; results are Google's, the filtering and framing are KidzSearch's.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -279879,18 +279925,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "boolify-boolean-search-teaching-tool-for-kids",
+      "kidrex"
+    ],
+    "aliases": [
+      "kidzsearch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "kid-friendly-educational-search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "boolify-boolean-search-teaching-tool-for-kids"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/kidzsearch.md"
   },
   {
@@ -284722,13 +284771,13 @@
   {
     "id": "one-liner-osint",
     "name": "One-Liner-OSINT",
-    "description": "Collection of powerful one-liner commands for OSINT gathering.",
+    "description": "Use when you have a `domain`, `ip-address`, `email`, or `username` and want ready-made shell one-liners to enumerate it fast — returns copy-paste recon commands producing more selectors.",
     "url": "https://github.com/yogsec/One-Liner-OSINT",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Copy-paste shell one-liners for quick OSINT tasks",
+    "bestFor": "Copy-paste shell one-liners for quick domain/IP/email/username recon.",
     "selectorsIn": [
       "domain",
       "ip-address",
@@ -284740,15 +284789,16 @@
       "ip-address",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free open-source GitHub repo (MIT); the one-liners are free, though some invoke services with their own quotas/keys.",
+    "opsec": "active",
+    "opsecNote": "The commands themselves are just text, but RUNNING them can be active — subfinder/amass/curl against a target's infrastructure touches their servers or third-party APIs and can be logged. Read each one-liner before running it; route active recon through a VPN/sock-puppet and never run commands you don't understand.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community one-liner reference (74 stars).",
+    "trustNote": "A community-maintained cheat-sheet repo (yogsec); commands are user-contributed — audit each before running rather than trusting blindly.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -284757,19 +284807,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "one-liners",
-      "reference",
-      "cheatsheet"
-    ],
-    "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "osint-tools-yogsec",
       "yogsec"
     ],
+    "aliases": [
+      "One-Liner-OSINT",
+      "yogsec one-liners"
+    ],
+    "tags": [
+      "one-liners",
+      "reference",
+      "cheatsheet",
+      "recon"
+    ],
+    "source": "gh-topic-osint-framework",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/one-liner-osint.md"
   },
   {
@@ -323745,28 +323799,29 @@
   {
     "id": "reddit-stream",
     "name": "Reddit Stream",
-    "description": "Live-stream Reddit comments in real time.",
+    "description": "Use when you have a live Reddit thread (or a `username` active in one) and want its comments to update in real time — returns a live-refreshing comment feed for monitoring.",
     "url": "http://reddit-stream.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Watching a thread's comments update live",
+    "bestFor": "Watching a Reddit thread's comments update live during a breaking/ongoing event.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account needed to watch a public thread.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of public Reddit comments — you never log in or interact, so the target sees nothing. It is a third-party viewer, so avoid pasting private/invite thread URLs into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing community-built live viewer over Reddit's public data; not affiliated with Reddit and dependent on Reddit's API remaining open.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -323775,15 +323830,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit",
+      "redective"
+    ],
+    "aliases": [
+      "reddit-stream.com"
+    ],
     "tags": [
       "reddit",
       "live",
-      "comments"
+      "comments",
+      "monitoring"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-stream.md"
   },
   {
