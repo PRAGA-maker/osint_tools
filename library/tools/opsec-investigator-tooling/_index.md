@@ -336,7 +336,7 @@ kind: group-index
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
 - **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).
 - **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
-- **`receive-sms-online-for-free`** (low) — OSINT tool: Receive SMS Online for FREE.
+- **`receive-sms-online-for-free`** (low) — Use when you (the investigator) need to receive an SMS verification code without using your real number — provides free shared public virtua
 - **`receive-sms-online`** (low) — OSINT tool: Receive SMS Online.
 - **`redbooth-team-collaboration-app`** (low) — Use when an investigation team needs a shared workspace to track case tasks, evidence, and communication — an operational collaboration tool
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out

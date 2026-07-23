@@ -240,7 +240,7 @@ kind: group-index
 - **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
 - **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
-- **`gibiru`** (low) — OSINT tool: Gibiru.
+- **`gibiru`** (low) — Use when you have a `name`/keyword and want uncensored, non-personalised web results that a mainstream engine may filter or rank down — retu
 - **`gifcities-org`** (low) — GIF Search Engine from archive.org
 - **`gijn-online-research-tools`** (medium) — Use when you need a vetted OSINT/verification tool for a task and want a journalist-grade curated list — returns pointers to tools for recor
 - **`girlsaskguys`** (medium) — Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.
@@ -500,7 +500,7 @@ kind: group-index
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
 - **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
 - **`pdfsearch-io`** (low) — Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download lin
-- **`perplexity`** (low) — OSINT tool: Perplexity.
+- **`perplexity`** (low) — Use when you have a natural-language research question about a `name`/entity and want a cited synthesis across the web — returns a summarise
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`phind`** (low) — OSINT tool: Phind.

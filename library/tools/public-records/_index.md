@@ -21,7 +21,7 @@ kind: group-index
 - **`patent-records/`** — 2 skill(s) below.
 - **`property-records/`** — 3 skill(s) below.
 - **`sanctions-pep/`** — 2 skill(s) below.
-- **`sanctions-screening/`** — 4 skill(s) below.
+- **`sanctions-screening/`** — 3 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
 - **`us-political-records/`** — 2 skill(s) below.
 

@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7434 total · 4990 full · 2444 stub (67% enriched)
+**Tools:** 7431 total · 4999 full · 2432 stub (67% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3494 · medium: 1976 · high: 1964
+low: 3490 · medium: 1977 · high: 1964
 
 ## Tools by trust
-community: 3502 · unverified: 2231 · trusted: 1692 · untrustworthy: 6 · personal: 3
+community: 3499 · unverified: 2229 · trusted: 1694 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -19,21 +19,21 @@ community: 3502 · unverified: 2231 · trusted: 1692 · untrustworthy: 6 · pers
 - `communities-forums` — 237/288
 - `dark-web` — 42/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 78/298
-- `domains-ip-infrastructure` — 254/681
+- `documents-metadata` — 79/298
+- `domains-ip-infrastructure` — 258/681
 - `email` — 245/246
 - `evidence-capture` — 13/29
-- `financial-crypto` — 58/109
+- `financial-crypto` — 58/108
 - `geolocation` — 291/340
 - `image-video-face` — 441/451
-- `maps-geospatial-data` — 75/123
+- `maps-geospatial-data` — 76/123
 - `messaging` — 179/184
-- `opsec-investigator-tooling` — 90/533
+- `opsec-investigator-tooling` — 91/533
 - `people-search` — 256/257
 - `phone` — 134/137
-- `public-records` — 872/1006
-- `search-engines` — 506/773
-- `social-networks` — 732/785
+- `public-records` — 872/1005
+- `search-engines` — 508/773
+- `social-networks` — 732/784
 - `training-ctf` — 5/12
 - `translation-language` — 24/100
 - `transportation` — 129/211
@@ -42,7 +42,7 @@ community: 3502 · unverified: 2231 · trusted: 1692 · untrustworthy: 6 · pers
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 953 leaves
-- `library/tools/social-networks` — 757 leaves
+- `library/tools/social-networks` — 756 leaves
 - `library/tools/search-engines` — 722 leaves
 - `library/tools/opsec-investigator-tooling` — 508 leaves
 - `library/tools/domains-ip-infrastructure` — 450 leaves
@@ -60,7 +60,7 @@ community: 3502 · unverified: 2231 · trusted: 1692 · untrustworthy: 6 · pers
 - `library/tools/archives-cache` — 106 leaves
 - `library/tools/dark-web` — 97 leaves
 - `library/tools/dating-classifieds` — 92 leaves
-- `library/tools/financial-crypto` — 92 leaves
+- `library/tools/financial-crypto` — 91 leaves
 - `library/tools/translation-language` — 86 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

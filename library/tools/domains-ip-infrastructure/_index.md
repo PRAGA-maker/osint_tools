@@ -133,7 +133,7 @@ kind: group-index
 - **`discord-resolver`** (low) — OSINT tool: Discord Resolver.
 - **`ditto`** (low) — Dsmall tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are av
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
-- **`dns-history`** (low) — OSINT tool: DNS History.
+- **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — TwiSub-domain takeover tool
@@ -168,7 +168,7 @@ kind: group-index
 - **`find-plus`** (low) — Regex Find-in-Page Tool
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit
 - **`focsec`** (low) — OSINT tool: Focsec.
-- **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
+- **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
 - **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
@@ -419,7 +419,7 @@ kind: group-index
 - **`tinyscan`** (low) — OSINT tool: TinyScan.
 - **`tor-whois`** (low) — OSINT tool: Tor Whois.
 - **`tormap`** (low) — Worldwide online map of Tor Nodes
-- **`traceroutevisualizer`** (low) — OSINT tool: TracerouteVisualizer.
+- **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
 - **`try-jsoup-org`** (low) — Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to p
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 

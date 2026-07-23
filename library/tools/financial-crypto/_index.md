@@ -28,7 +28,6 @@ kind: group-index
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch a
 - **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
-- **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.
 - **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
 - **`bitcoin-org`** (medium) — Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — retur
 - **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —

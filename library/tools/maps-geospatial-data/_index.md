@@ -112,7 +112,7 @@ kind: group-index
 - **`tfl-jamcams`** (medium) — Use when you have a London `geolocation` or `address` and want near-live traffic-camera stills plus incidents at that spot — returns geoloca
 - **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
-- **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
+- **`topotijdreis-nl`** (low) — Use when you have a Dutch `address`/`geolocation` and want to see how that spot looked across ~200 years of maps — returns historical Nether
 - **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora
 - **`uk-onshore-oil-and-gas-activity`** (medium) — Use when you have a `geolocation`/`address` in Great Britain and want to know the petroleum licences, wells and operators active there — ret
 - **`ukraine-war-map-heatmap`** (low) — Use when you have a `geolocation` in the Ukraine conflict zone and want to see control/activity over time — returns a time-animated map of f

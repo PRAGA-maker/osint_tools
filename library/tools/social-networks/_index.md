@@ -446,7 +446,6 @@ kind: group-index
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
-- **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Use when you have a live Reddit thread (or a `username` active in one) and want its comments to update in real time — returns a live-refresh
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
