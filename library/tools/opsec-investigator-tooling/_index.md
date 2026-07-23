@@ -254,7 +254,7 @@ kind: group-index
 - **`ladder`** (low) — A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTM
 - **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`ldplayer-net`** (low) — OSINT tool: Ldplayer.net.
-- **`lemmeknow`** (low) — Tool for "identifying mysterious text or analyze hard-coded strings". Identifies API keys, cryptocurrency wallet numbers, encrypted strings,
+- **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
 - **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lightshot-screen-capture-add-on`** (low) — Firefox browser add-on for taking screenshots

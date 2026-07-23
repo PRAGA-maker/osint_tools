@@ -57,7 +57,7 @@ kind: group-index
 - **`code-finder`** (low) — OSINT tool: Code Finder.
 - **`compressedcrack`** (low) — Simple tool for brute passwords for ZIP and RAR archives
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`computer-weekly`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
 - **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
 - **`consumerreports-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses

@@ -6041,43 +6041,56 @@
   },
   {
     "id": "greynoise",
-    "name": "Greynoise",
-    "description": "OSINT tool: Greynoise.",
+    "name": "GreyNoise",
+    "description": "Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns classification, actor/tags, and CVE activity.",
     "url": "https://greynoise.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Triaging whether an IP that touched a target is opportunistic mass-scanner noise or something worth investigating.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free searches at viz.greynoise.io without login; a free account adds more queries and a limited API. Full API/enterprise features are paid, but basic IP lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "You query GreyNoise's sensor data, never the target IP itself, so the owner of that IP is not alerted. Searches are logged to your GreyNoise account if you log in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely respected commercial threat-intelligence provider running a global sensor grid; the classification data is authoritative for \"is this IP scanning the internet.\"",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pygreynoise",
+      "alienvault-otx"
+    ],
+    "aliases": [
+      "GreyNoise Visualizer",
+      "greynoise.io",
+      "viz.greynoise.io"
+    ],
     "tags": [
-      "other-tools"
+      "threat-intel",
+      "ip-reputation",
+      "scanner-noise"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "grey-noise",
-      "greynoise-intelligence",
-      "greynoise-io"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/greynoise.md"
   },
   {
@@ -22181,45 +22194,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/vefsafn-is.md"
-  },
-  {
-    "id": "versionista",
-    "name": "versionista",
-    "description": "OSINT tool: versionista.",
-    "url": "http://versionista.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "versionista-website-monitoring"
-    ],
-    "_file": "library/tools/archives-cache/versionista.md"
   },
   {
     "id": "view-page-archive-addons-mozilla-org",
@@ -49410,41 +49384,54 @@
   {
     "id": "computer-weekly",
     "name": "Computer Weekly",
-    "description": "Online website that provides information about computers and IT, plus associated hardware, software, and concepts",
-    "url": "http://www.computerweekly.com",
+    "description": "Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source articles for background.",
+    "url": "https://www.computerweekly.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Background research on IT companies, executives, breaches, and enterprise-tech events via a long-running UK trade publication.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; some content may prompt a free registration/email wall. No hard paywall for core articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site leaks nothing about your target; only the publisher sees your visit. Use a clean session if you register to bypass any content wall.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established UK IT trade magazine (published since 1966, TechTarget-owned) with professional editorial standards; a reliable secondary source, not a primary data record.",
     "missingPersonsRelevance": "low",
     "coverage": [
+      "uk",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ComputerWeekly.com",
+      "Computer Weekly magazine"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "trade-press",
+      "it-news",
+      "background-research",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/computer-weekly.md"
   },
   {
@@ -61289,45 +61276,59 @@
   {
     "id": "alienvault-otx",
     "name": "AlienVault OTX",
-    "description": "Community threat intelligence",
+    "description": "Use when you have a `domain`, `ip-address`, or file hash and want community-sourced threat context — returns related indicators, malware/campaign tags, and passive DNS.",
     "url": "https://otx.alienvault.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Community threat intelligence",
-    "input": "IOC, domain, IP, or search query",
-    "output": "Community threat pulses and analysis",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enriching a domain/IP/hash with crowd-sourced \"pulses\" (threat reports) and pivoting to related indicators.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; a free account (and API key) unlocks the DirectConnect API and subscribing to pulses. No paid tier required for core lookups.",
     "opsec": "passive",
-    "opsecNote": "Passive community threat data sharing",
+    "opsecNote": "You query AT&T/LevelBlue's OTX servers, not the target's infrastructure, so the subject is not alerted. OTX does log searches against your account; use a research account, not one tied to your real identity, if attribution matters.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely-used platform operated by LevelBlue (formerly AT&T Cybersecurity / AlienVault). Underlying pulses are community-contributed, so individual indicators vary in quality; the platform itself is reputable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "alienvault-open-threat-exchange"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Open Threat Exchange",
+      "OTX",
+      "LevelBlue OTX"
+    ],
+    "tags": [
+      "threat-intel",
+      "passive-dns",
+      "ioc-enrichment"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/alienvault-otx.md"
   },
   {
@@ -62680,37 +62681,53 @@
   {
     "id": "azure-tenant-resolution-by-pingcastle",
     "name": "Azure Tenant Resolution by PingCastle",
-    "description": "OSINT tool: Azure Tenant Resolution by PingCastle.",
+    "description": "Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other domains registered to the same tenant.",
     "url": "https://tenantresolution.pingcastle.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a company's email/web domain to its Azure AD (Entra ID) tenant and enumerating sibling domains under that tenant.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public tool from PingCastle (Netwrix). No account required.",
+    "opsec": "passive",
+    "opsecNote": "Domain lookups read Microsoft's public OpenID configuration; ID lookups hit PingCastle's precomputed database built from certificate-transparency logs. The target organisation is not notified. Your query is seen only by PingCastle and Microsoft's public endpoints.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "PingCastle is a well-established Active Directory / Azure security vendor (part of Netwrix); the data derives from Microsoft's own OpenID config and public CT records.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "PingCastle Tenant Resolution",
+      "Azure AD tenant lookup",
+      "Entra tenant resolver"
+    ],
     "tags": [
+      "azure",
+      "entra-id",
+      "tenant-enumeration",
       "domain-and-ip-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/azure-tenant-resolution-by-pingcastle.md"
   },
   {
@@ -65970,42 +65987,50 @@
   {
     "id": "cvecrowd",
     "name": "CVECrowd",
-    "description": "Alternative to Cvetrends (stopped working due to Twitter API restrictions). Shows the most popular CVEs in Fidverse for the last 24 h.",
+    "description": "Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending CVEs with Fediverse/Bluesky chatter.",
     "url": "https://cvecrowd.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Spotting which vulnerabilities are being talked about in real time across Mastodon/Bluesky, as a successor to the defunct CVETrends.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; optional account. No paywall on the trending feed.",
+    "opsec": "passive",
+    "opsecNote": "You read a public trends site; nothing is sent to any target. Searching by CVE or product leaks only to CVECrowd's own logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Independent project by a security researcher; aggregates public posts from the Fediverse and Bluesky. Signal reflects social chatter, not authoritative severity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CVE Crowd",
+      "Crowd Intelligence on CVEs"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "vulnerabilities",
+      "threat-intel",
+      "trending"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cvecrowd.md"
   },
   {
@@ -68593,43 +68618,50 @@
   {
     "id": "favfreak",
     "name": "FavFreak",
-    "description": "#python tool for using favicon.ico hashes for finding new assets/IP addresses and technologies owned by a company.",
+    "description": "Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/`ip-address`es sharing a favicon.",
     "url": "https://github.com/devanshbatham/FavFreak",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fingerprinting infrastructure by favicon.ico hash to find sibling servers, admin panels, and shared tech behind an organisation.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "address",
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). Pairs with Shodan's http.favicon.hash search; a Shodan account is needed to act on the hashes at scale.",
+    "opsec": "active",
+    "opsecNote": "FavFreak itself fetches each target's /favicon.ico directly, so the target's web server logs your requests (an active touch). Route through a proxy/VPN. The follow-on pivot — searching the mmh3 hash in Shodan — is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source recon tool by devanshbatham; widely used in bug-bounty workflows. Read the code before running, as with any recon script.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "FavFreak favicon hash"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
+      "favicon-hash",
+      "asset-discovery",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/favfreak.md"
   },
   {
@@ -70751,91 +70783,6 @@
     "_file": "library/tools/domains-ip-infrastructure/graphystories.md"
   },
   {
-    "id": "grey-noise",
-    "name": "Grey Noise",
-    "description": "Distinguish malicious from benign internet activity",
-    "url": "https://viz.greynoise.io/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "reputation"
-    ],
-    "bestFor": "Distinguish malicious from benign internet activity",
-    "input": "IP address",
-    "output": "Classification, scanner type, threat assessment",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Passive threat intelligence; free tier available.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "greynoise",
-      "greynoise-intelligence",
-      "greynoise-io"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/reputation/grey-noise.md"
-  },
-  {
-    "id": "greynoise-intelligence",
-    "name": "GreyNoise Intelligence",
-    "description": "OSINT tool: GreyNoise Intelligence.",
-    "url": "https://www.greynoise.io/viz/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "grey-noise",
-      "greynoise",
-      "greynoise-io"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/greynoise-intelligence.md"
-  },
-  {
     "id": "gtmetrix-website-performance",
     "name": "GTmetrix Website Performance",
     "description": "Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a rendered screenshot.",
@@ -70986,47 +70933,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/ipv4/hacker-target-reverse-dns.md"
-  },
-  {
-    "id": "hackertarget",
-    "name": "Hackertarget",
-    "description": "14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))",
-    "url": "https://github.com/pyhackertarget/hackertarget",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/hackertarget.md"
   },
   {
     "id": "hackertarget-com",
@@ -176875,41 +176781,52 @@
   {
     "id": "lemmeknow",
     "name": "LemmeKnow",
-    "description": "Tool for \"identifying mysterious text or analyze hard-coded strings\". Identifies API keys, cryptocurrency wallet numbers, encrypted strings, YouTube channel IDs, IPs, credit card numbers and much more.",
+    "description": "Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with regex-matched descriptions.",
     "url": "https://github.com/swanandx/lemmeknow",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Instantly classifying mystery strings — wallet addresses, API keys, hashes, IDs — pulled from documents, dumps, or messages.",
     "selectorsIn": [
       "crypto-wallet"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "crypto-wallet",
+      "ip-address",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). Prebuilt binaries, cargo, Nix, or build-from-source; also runs in-browser via WebAssembly.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely locally against text you supply — no network calls, nothing leaves your machine. Safe to run on sensitive strings offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by swanandx, a faster Rust reimplementation of the well-known PyWhat identifier; auditable source, active community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "lemmeknow",
+      "pywhat alternative"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "string-identification",
+      "forensics",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/lemmeknow.md"
   },
   {
@@ -249810,45 +249727,59 @@
   },
   {
     "id": "rechercher-par-entreprise",
-    "name": "Rechercher par entreprise",
-    "description": "OSINT tool: Rechercher par entreprise.",
+    "name": "Rechercher par entreprise (RBQ Québec)",
+    "description": "Use when you have an `employer-org`/company name in Québec and want its construction-licence record — returns licence status, respondents, and business details.",
     "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Entreprise",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Verifying a Québec construction contractor's RBQ licence and pulling the company's respondents and status from the public register.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, official government registry (Régie du bâtiment du Québec). No account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public government registry search; the subject is not notified and nothing ties the query to you beyond RBQ's own server logs. Use a neutral browser session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Québec government source (Régie du bâtiment du Québec) — the authoritative record for construction licences in the province.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
-      "association-assq-qc-ca",
-      "banq-num-rique",
       "rechercher-par-r-gion-ou-type-de-travaux",
-      "rechercher-par-r-pondant",
-      "services-en-ligne",
-      "trouver-une-d-cision"
+      "rechercher-par-r-pondant"
     ],
+    "aliases": [
+      "RBQ Registre des détenteurs de licence",
+      "Search by company (RBQ)",
+      "Régie du bâtiment du Québec licence register"
+    ],
+    "tags": [
+      "public-records",
+      "business-registry",
+      "quebec",
+      "construction-licence"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rechercher-par-entreprise.md"
   },
   {
@@ -276708,48 +276639,6 @@
     "_file": "library/tools/search-engines/greynet-international.md"
   },
   {
-    "id": "greynoise-io",
-    "name": "Greynoise.io",
-    "description": "OSINT tool: Greynoise.io.",
-    "url": "https://www.greynoise.io/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google",
-      "IOT (ip search engines)"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "grey-noise",
-      "greynoise",
-      "greynoise-intelligence"
-    ],
-    "_file": "library/tools/search-engines/greynoise-io.md"
-  },
-  {
     "id": "gsearch",
     "name": "Gsearch",
     "description": "Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — returns `social-profile`, `domain`.",
@@ -299151,37 +299040,53 @@
   {
     "id": "zarebin-iran",
     "name": "Zarebin (Iran)",
-    "description": "OSINT tool: Zarebin (Iran).",
-    "url": "http://zarebin.ir",
+    "description": "Use when you have a `name`/`username` or Persian-language query and want Iran-focused results — returns Persian web, news, and media content a Western engine misses.",
+    "url": "https://zarebin.ir",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Persian-language and Iran-hosted content that Google indexes poorly, especially during Iranian internet restrictions.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search engine; no account required to search.",
+    "opsec": "active",
+    "opsecNote": "Zarebin is an Iranian state-aligned engine operating inside Iran's National Information Network — assume queries are logged and monitored by the operator. Never search from an identity or connection tied to you or the subject; use a sanitized sock-puppet browser and appropriate network hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "State-affiliated Iranian search engine; useful for reach into Persian content but the operator curates/filters results, so treat rankings and omissions as potentially manipulated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ir"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Zarebin",
+      "زره‌بین",
+      "Iranian search engine"
+    ],
     "tags": [
-      "main-national-search-engines"
+      "national-search-engine",
+      "persian",
+      "iran"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/zarebin-iran.md"
   },
   {
@@ -318053,40 +317958,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/memory-lol-github-com.md"
-  },
-  {
-    "id": "mentionmapp-analytics",
-    "name": "Mentionmapp Analytics",
-    "description": "OSINT tool: Mentionmapp Analytics.",
-    "url": "https://mentionmapp.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/mentionmapp-analytics.md"
   },
   {
     "id": "meta-content-library",
@@ -349441,42 +349312,51 @@
   {
     "id": "gpsjam",
     "name": "GPSJam",
-    "description": "GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing areas experiencing interference.",
+    "description": "Use when you have a `geolocation` / region and want to know if it is experiencing GPS/GNSS jamming — returns a daily interference heatmap derived from aircraft navigation data.",
     "url": "https://gpsjam.org/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether an area shows GPS/GNSS interference on a given day, to explain navigation anomalies or conflict activity.",
     "selectorsIn": [
-      "vehicle-plate"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public map. No account or API key.",
+    "opsec": "passive",
+    "opsecNote": "You browse a public map; nothing is sent to any target and the subject cannot see your query. No login means no account footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Ian Coleman from ADS-B Exchange aircraft data; a well-known, methodologically transparent resource cited by aviation and conflict analysts.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GPSJam.org",
+      "GPS interference map"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "transport"
+      "aviation",
+      "gnss",
+      "interference",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/gpsjam.md"
   },
   {

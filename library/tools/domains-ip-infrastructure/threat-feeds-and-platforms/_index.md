@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/threat-feeds-and-platforms
 
 ## Skills here
-- **`alienvault-otx`** (low) — Community threat intelligence
+- **`alienvault-otx`** (low) — Use when you have a `domain`, `ip-address`, or file hash and want community-sourced threat context — returns related indicators, malware/cam
 - **`aptnotes`** (low) — APT research and threat analysis
 - **`bot-scout`** (low) — Use when you have an `email`, `ip-address`, or `username` and want to check it against a database of known bots/spammers — returns a bot/not
 - **`cymon-open-threat-intelligence`** (low) — IP threat tracking

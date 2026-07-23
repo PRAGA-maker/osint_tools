@@ -738,7 +738,7 @@ kind: group-index
 - **`rcmp-death-search`** (low) — Use when you have the `name` of a deceased former RCMP member and want to locate their grave and death details — returns `geolocation` (buri
 - **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
 - **`realtor`** (medium) — Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `
-- **`rechercher-par-entreprise`** (low) — OSINT tool: Rechercher par entreprise.
+- **`rechercher-par-entreprise`** (low) — Use when you have an `employer-org`/company name in Québec and want its construction-licence record — returns licence status, respondents, a
 - **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — OSINT tool: Rechercher par région ou type de travaux.
 - **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
 - **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site

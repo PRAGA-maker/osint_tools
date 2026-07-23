@@ -96,7 +96,6 @@ kind: group-index
 - **`vandal`** (medium) — Use when you have a `domain`/URL and want to browse its Wayback Machine history efficiently — a browser extension that overlays archive.org 
 - **`vault-fbi-gov`** (medium) — Use when you have a `name` (person, org, or topic) and want declassified FBI records — returns scanned FOIA documents that may contain histo
 - **`vefsafn-is`** (medium) — Use when you have an Icelandic `domain` or URL and want historical snapshots of it — returns archived captures of .is / Iceland-related web 
-- **`versionista`** (low) — OSINT tool: versionista.
 - **`view-page-archive-addons-mozilla-org`** (medium) — Use when you have a URL that changed or vanished and want archived/cached copies across many services at once — returns document-id-style sn
 - **`vislibri`** (medium) — Use when a lead is a rare/old/second-hand book or document and you want to locate a copy and its sellers — returns marketplace listings (`ad
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG

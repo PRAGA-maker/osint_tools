@@ -34,7 +34,7 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 21 skill(s) below.
+- **`reputation/`** — 20 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
@@ -81,7 +81,7 @@ kind: group-index
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
 - **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
-- **`azure-tenant-resolution-by-pingcastle`** (low) — OSINT tool: Azure Tenant Resolution by PingCastle.
+- **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
 - **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
 - **`bi-zone`** (low) — OSINT tool: Bi.Zone.
@@ -125,7 +125,7 @@ kind: group-index
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
 - **`cve-binary-tool`** (low) — #Python tool to find known vulnerabilities in software, using data from the NVD), list of CVEs, Redhat, OSV and GAD. 200+ checkers in one to
 - **`cve-map`** (low) — Simple #go command line tool for getting information about CVEs: by ID, by vendor, by product, by severity, by cvss score and much more.
-- **`cvecrowd`** (low) — Alternative to Cvetrends (stopped working due to Twitter API restrictions). Shows the most popular CVEs in Fidverse for the last 24 h.
+- **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
 - **`dark-web-informer`** (low) — OSINT tool: Dark Web Informer.
 - **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
 - **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
@@ -161,7 +161,7 @@ kind: group-index
 - **`expandurl`** (low) — URL expander that resolves shortened links to their final destination. Referenced in sinwindie's MISC URL Expander bookmarklet.
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
 - **`fast-google-dorks-scan`** (low) — Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.
-- **`favfreak`** (low) — #python tool for using favicon.ico hashes for finding new assets/IP addresses and technologies owned by a company.
+- **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
 - **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
 - **`favicon-hasher`** (low) — Favicon.ico files hashes is a feature by which you can find domains related with your target. This tool generates hashes for all favicon.ico
 - **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
@@ -194,11 +194,9 @@ kind: group-index
 - **`google-universal-dork-builder`** (low) — Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your
 - **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
 - **`graphystories`** (low) — OSINT tool: GraphyStories.
-- **`greynoise-intelligence`** (low) — OSINT tool: GreyNoise Intelligence.
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
 - **`hacker-target`** (medium) — Use when you have a `domain` or `ip-address` and want fast recon (WHOIS, DNS, reverse-IP, reverse-DNS) — returns linked domains, IPs and hos
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
-- **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
 - **`hakrawler`** (low) — Use when you have a `domain` and want to crawl it fast for links, endpoints, JS files and in-scope assets — returns URLs and `domain`s (subd
 - **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.

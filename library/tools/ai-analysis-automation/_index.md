@@ -168,7 +168,7 @@ kind: group-index
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
 - **`graphviz-online`** (low) — OSINT tool: Graphviz Online.
 - **`graphx`** (low) — OSINT tool: GraphX.
-- **`greynoise`** (low) — OSINT tool: Greynoise.
+- **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
 - **`guardian-project`** (low) — OSINT tool: Guardian Project.
 - **`guerrilla-mail`** (low) — OSINT tool: Guerrilla Mail.
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f

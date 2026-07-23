@@ -350,7 +350,6 @@ kind: group-index
 - **`meetme`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MeetMe social/dating "people nearby" network — returns a soc
 - **`memory-lol-github-com`** (high) — Use when you have a Twitter/X `username` or numeric account ID and want its historical screen-name changes — returns prior `username`s and a
 - **`memory-lol`** (high) — Use when you have a Twitter/X `username` and want that account's past handles/screen-name history — returns prior usernames and the dates th
-- **`mentionmapp-analytics`** (low) — OSINT tool: Mentionmapp Analytics.
 - **`meta-content-library`** (medium) — Use when you have a `name`, `username`, or keyword and (as an approved researcher) want to search all public Facebook/Instagram/Threads post
 - **`mewe`** (high) — Use when you have a `name` or `username` and want to check for a MeWe profile (a privacy-focused social network that draws communities pushe
 - **`minesight`** (medium) — Use when you have a Minecraft `username` (or UUID) and want to see where that player has been active — returns servers seen, past usernames,

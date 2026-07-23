@@ -86,7 +86,7 @@ kind: group-index
 - **`freecarcheck-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want free vehicle history — returns make/model, MOT & tax status, DVLA history, stolen/plate-chan
 - **`freedar`** (low) — OSINT tool: Freedar.
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Use when you have a UK aircraft registration (`vehicle-plate`, a G- mark) and want its registered owner — returns owner `name` and `address`
-- **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
+- **`gpsjam`** (low) — Use when you have a `geolocation` / region and want to know if it is experiencing GPS/GNSS jamming — returns a daily interference heatmap de
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
 - **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w

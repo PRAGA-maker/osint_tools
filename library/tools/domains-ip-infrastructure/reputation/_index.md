@@ -14,7 +14,6 @@ kind: group-index
 - **`exonerator`** (low) — Verify Tor relay membership by date
 - **`fortiguard-reputation-service`** (low) — IP reputation lookup, botnet/malware source identification, threat intelligence
 - **`google-safe-browsing-api`** (low) — Malware and phishing URL detection
-- **`grey-noise`** (low) — Distinguish malicious from benign internet activity
 - **`ip-void`** (low) — Check IP reputation and blacklist status
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation
 - **`malware-domain-list`** (low) — Malware domain reputation queries

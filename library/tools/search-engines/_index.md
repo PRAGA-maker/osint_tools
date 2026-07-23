@@ -296,7 +296,6 @@ kind: group-index
 - **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
 - **`grey-literature-strategies`** (low) — OSINT tool: Grey Literature Strategies.
 - **`greynet-international`** (low) — OSINT tool: GreyNet International.
-- **`greynoise-io`** (low) — OSINT tool: Greynoise.io.
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,
 - **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
@@ -741,7 +740,7 @@ kind: group-index
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns ag
-- **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
+- **`zarebin-iran`** (low) — Use when you have a `name`/`username` or Persian-language query and want Iran-focused results — returns Persian web, news, and media content
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
 - **`zoomeye`** (medium) — Use when you have a `domain`/`ip-address` and want exposed-host, service and banner intel — returns ip-address, domain and device-id.
