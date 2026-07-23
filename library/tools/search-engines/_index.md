@@ -163,7 +163,7 @@ kind: group-index
 - **`dakkadakka-wargame-player-finder`** (medium) — Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/loc
 - **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
-- **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
+- **`daum-south-korea`** (low) — Use when you have a name, username, or term tied to South Korea and want Korean-language web/news/cafe results a Western engine misses — ret
 - **`ddgr`** (low) — Use when you want to script or automate DuckDuckGo searches from the terminal — returns search results as text or JSON, with bangs and regio
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
@@ -458,7 +458,7 @@ kind: group-index
 - **`open-grey`** (low) — OSINT tool: Open Grey.
 - **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
-- **`open-source-intelligence-txuswashere`** (low) — Comprehensive list of OSINT tools and methodologies.
+- **`open-source-intelligence-txuswashere`** (low) — Use when you need to discover OSINT tools and methodologies for a given selector or task — returns a curated reference index of tools/techni
 - **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.
 - **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
 - **`orange-france`** (low) — OSINT tool: Orange (France).

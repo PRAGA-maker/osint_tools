@@ -138,7 +138,7 @@ kind: group-index
 - **`explainshell-com`** (low) — OSINT tool: explainshell.com.
 - **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
 - **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
-- **`faviconhash`** (low) — OSINT tool: FaviconHash.
+- **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
 - **`filevault`** (low) — OSINT tool: FileVault.
 - **`find-osint-tool`** (low) — OSINT tool: Find osint tool.
 - **`flot`** (low) — OSINT tool: Flot.
@@ -319,7 +319,7 @@ kind: group-index
 - **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`raphael`** (low) — OSINT tool: Raphael.
 - **`raw`** (low) — OSINT tool: RAW.
-- **`rawgraphs`** (low) — RAWGraphs is an open-source data visualization tool designed for non-technical users, enabling the creation of customizable, editable charts
+- **`rawgraphs`** (low) — Use when you have tabular case data and want to turn it into a custom chart without coding — returns shareable visualizations that make patt
 - **`reconftw`** (low) — OSINT tool: ReconFTW.
 - **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
@@ -362,7 +362,7 @@ kind: group-index
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
 - **`steganography-online-codec`** (low) — OSINT tool: Steganography Online Codec.
-- **`steganography-online`** (low) — OSINT tool: Steganography Online.
+- **`steganography-online`** (low) — Use when you have a PNG image and want to hide or recover a hidden text message in it, entirely in-browser — returns extracted hidden text (
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
 - **`storymap`** (low) — OSINT tool: StoryMap.
 - **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai

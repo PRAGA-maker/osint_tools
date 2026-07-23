@@ -14,7 +14,7 @@ kind: group-index
 - **`712`** (high) — Use when you have a French landline or mobile number (06/07) and need the subscriber name + address via 118712's free reverse-lookup (annuai
 - **`800notes`** (low) — Community phone-complaint directory; useful for identifying spam/scam callers.
 - **`advanced-background-checks`** (high) — Use when you have a US phone number and need the owner's name, current/past addresses, relatives, and associates from aggregated public reco
-- **`americaphonebook`** (low) — Free phone directory lookup.
+- **`americaphonebook`** (medium) — Use when you have a US phone number or a name and want to resolve it to a person's name, address, or listed number — returns name, address, 
 - **`aql-com`** (medium) — Use when you have a UK phone number and need its network operator (and ported status) from Ofcom data, to confirm carrier before further pho
 - **`area-code-decoder-united-states`** (high) — Use when you have a US `phone` (or just its area code) and want the geographic region it maps to — returns the city/state/timezone the NANP 
 - **`best-phone-lookup`** (low) — Use when researching a US phone number — but note this domain is now a parked redirector, not a working lookup; prefer a live reverse-phone 

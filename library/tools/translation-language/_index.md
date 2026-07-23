@@ -87,7 +87,7 @@ kind: group-index
 - **`superemojitranslator-com`** (low) — OSINT tool: superemojitranslator.com.
 - **`symbols-com`** (low) — Language-related directory of one of the webs largest collections for symbols, signs and flags
 - **`synonyms-net`** (low) — Language-related search for synonyms and antonyms
-- **`systran-translate`** (low) — Language translator
+- **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated
 - **`trans8it`** (low) — OSINT tool: Trans8it.
 - **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns
 - **`translate-com`** (low) — OSINT tool: Translate.com.
