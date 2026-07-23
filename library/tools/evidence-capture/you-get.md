@@ -40,6 +40,7 @@ lastVerified: '2026-07-23'
 enrichment: full
 relatedTools:
 - yt-dlp
+- translate-shell
 ---
 
 # you-get

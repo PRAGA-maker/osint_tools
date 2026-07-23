@@ -232,7 +232,7 @@ kind: group-index
 - **`sourcegraph`** (low) — OSINT tool: SourceGraph.
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`statwing`** (low) — Intuitive data analytics tool
-- **`steghide`** (low) — Steganography tool to detect and extract data hidden inside image and audio files.
+- **`steghide`** (low) — Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, pl
 - **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
 - **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs

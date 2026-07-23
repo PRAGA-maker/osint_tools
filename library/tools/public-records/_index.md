@@ -946,7 +946,7 @@ kind: group-index
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
 - **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
-- **`world-bank-data`** (low) — OSINT tool: World Bank Data.
+- **`world-bank-data`** (low) — Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — return
 - **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.

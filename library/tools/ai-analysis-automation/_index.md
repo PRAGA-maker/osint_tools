@@ -66,7 +66,7 @@ kind: group-index
 - **`blender`** (low) — Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulati
 - **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif
 - **`boxcryptor`** (low) — OSINT tool: boxcryptor.
-- **`cacoo`** (low) — OSINT tool: Cacoo.
+- **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — OSINT tool: Canary Tokens.
 - **`canva`** (low) — OSINT tool: Canva.
 - **`cc-license`** (low) — OSINT tool: cc license.
@@ -189,7 +189,6 @@ kind: group-index
 - **`https-everywhere`** (low) — OSINT tool: HTTPs Everywhere.
 - **`httrack`** (low) — OSINT tool: HTTrack.
 - **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
-- **`hunchly`** (low) — OSINT tool: Hunchly.
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
 - **`i2p`** (low) — OSINT tool: I2P.
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
@@ -367,7 +366,7 @@ kind: group-index
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
 - **`storymap`** (low) — OSINT tool: StoryMap.
 - **`sub3-suite`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a GUI framework to enumerate and correlate infrastructure — returns subdomai
-- **`tableau-public`** (low) — OSINT tool: Tableau Public.
+- **`tableau-public`** (low) — Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns
 - **`tagul`** (low) — Use when you have a corpus of scraped text (posts, chat logs, comments) and want to see which terms, names, or places dominate — generates a
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
 - **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.

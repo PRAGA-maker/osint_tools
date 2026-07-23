@@ -352,7 +352,6 @@ kind: group-index
 - **`safari`** (low) — OSINT tool: Safari.
 - **`safetydetective-security-tools`** (low) — List of over 25 security tools, including anti-virus, malware, and spyware protection,
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
-- **`samy-kamkar`** (low) — OSINT tool: Samy Kamkar.
 - **`scamwatch`** (low) — Australian government website for information on scams
 - **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
 - **`screenshot-full-page-screen-capture`** (low) — record a video of part of the screen using a very easy-to-use browser extension

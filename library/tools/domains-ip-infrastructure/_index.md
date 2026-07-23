@@ -34,7 +34,7 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 19 skill(s) below.
+- **`reputation/`** — 18 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
@@ -57,7 +57,7 @@ kind: group-index
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of
 - **`ahrefs`** (low) — OSINT tool: ahrefs.
-- **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
+- **`aiodnsbrute`** (low) — Use when you have a domain and want to enumerate its live subdomains fast — returns domain (subdomains) and their ip-address records.
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
 - **`aline`** (low) — Use when you have a `domain` and want the documents it has exposed to Google — a CLI that runs filetype dorks and bulk-downloads the hits fo
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
@@ -214,7 +214,7 @@ kind: group-index
 - **`icann-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public r
 - **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
-- **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
+- **`imperva-live-threat-map`** (low) — Use when you want a real-time situational view of global cyber-attack activity and threat trends — returns aggregated attack/traffic statist
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host de
 - **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
@@ -245,7 +245,7 @@ kind: group-index
 - **`ipinfo-map`** (low) — Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
 - **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
-- **`ipvoid`** (low) — OSINT tool: IPVoid.
+- **`ipvoid`** (low) — Use when you have an ip-address or domain and want reputation, geolocation, blacklist status, WHOIS and DNS details in one place — returns g
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
 - **`ismalicious`** (low) — Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+
 - **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
@@ -413,7 +413,6 @@ kind: group-index
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
 - **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.
 - **`tinyscan`** (low) — OSINT tool: TinyScan.
-- **`tor-whois`** (low) — OSINT tool: Tor Whois.
 - **`tormap`** (low) — Worldwide online map of Tor Nodes
 - **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.

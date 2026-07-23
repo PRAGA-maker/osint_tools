@@ -2058,37 +2058,51 @@
   {
     "id": "cacoo",
     "name": "Cacoo",
-    "description": "OSINT tool: Cacoo.",
-    "url": "https://cacoo.com",
+    "description": "Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram — returns a visual map of associate connections, not new data.",
+    "url": "https://nulab.com/cacoo/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Collaborative online diagramming to lay out and share an investigation's entity-relationship / link chart.",
+    "selectorsIn": [
+      "name",
+      "associate"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free plan (limited sheets/collaborators); paid plans unlock more sheets, history, and team features. A free account is required.",
+    "opsec": "passive",
+    "opsecNote": "A cloud SaaS — any diagram you create is stored on Nulab's servers and shared with anyone you invite. Do not put real subject PII or case identifiers into a cloud diagram unless policy allows; prefer pseudonyms, or use an offline tool for sensitive maps.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Commercial product by Nulab (also makers of Backlog/Typetalk); the platform is legitimate, but it is a drawing canvas, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Nulab Cacoo"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "link-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cacoo.md"
   },
   {
@@ -7092,45 +7106,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/hugging-face-ai-detector.md"
-  },
-  {
-    "id": "hunchly",
-    "name": "Hunchly",
-    "description": "OSINT tool: Hunchly.",
-    "url": "https://www.hunch.ly/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hunchly-hidden-services-report"
-    ],
-    "_file": "library/tools/ai-analysis-automation/hunchly.md"
   },
   {
     "id": "hunt-osint-framework",
@@ -15274,37 +15249,51 @@
   {
     "id": "tableau-public",
     "name": "Tableau Public",
-    "description": "OSINT tool: Tableau Public.",
+    "description": "Use when you have tabular investigation data (or want to search others' published dashboards) and need interactive visual analysis — returns shareable charts and, via search, third-party datasets tied to a name/employer-org.",
     "url": "https://public.tableau.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free interactive dashboards for exploring your own case data, plus a searchable gallery of others' published vizzes.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "costNote": "Free tier of Tableau (Salesforce). The catch — everything you publish to Tableau Public is PUBLIC and searchable; there is no private save.",
+    "opsec": "passive",
+    "opsecNote": "Analyzing data locally in Tableau Public Desktop is passive, but PUBLISHING is not — saved workbooks are world-visible and indexed. Never publish case data, PII, or anything that reveals your subject or your interest. Treat it as a public broadcast.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Operated by Tableau/Salesforce; the platform is legitimate, though individual user-published dashboards are unverified third-party content.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Tableau"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tableau-public.md"
   },
   {
@@ -58782,28 +58771,30 @@
   {
     "id": "steghide",
     "name": "steghide",
-    "description": "Steganography tool to detect and extract data hidden inside image and audio files.",
+    "description": "Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, plus a presence signal.",
     "url": "https://github.com/StefanoDeVuono/steghide",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "Recovering hidden/embedded data from images shared by a subject (CTF-style).",
+    "bestFor": "Recovering data steganographically hidden inside a subject's JPEG/BMP/WAV/AU files (often CTF-style).",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "metadata-exif"
+      "metadata-exif",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; `apt install steghide` on Debian/Kali/Trace Labs VM, or build from the repo.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully local and offline — you run it against a file you already hold, so nothing leaves your machine and the subject is never contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Installed in the Trace Labs VM (install_steghide / apt steghide).",
+    "trustNote": "Classic, widely packaged steganography utility; this GitHub mirror tracks the long-standing steghide codebase shipped in Kali and the Trace Labs VM.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58812,15 +58803,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "steghide extract"
+    ],
     "tags": [
       "steganography",
       "forensics",
       "ctf"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/steghide.md"
   },
   {
@@ -61259,13 +61253,13 @@
   {
     "id": "aiodnsbrute",
     "name": "aiodnsbrute",
-    "description": "Python asynchronous DNS brute-force utility.",
+    "description": "Use when you have a domain and want to enumerate its live subdomains fast — returns domain (subdomains) and their ip-address records.",
     "url": "https://github.com/blark/aiodnsbrute",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Subdomain brute forcing",
+    "bestFor": "High-speed asynchronous subdomain brute-forcing to map an organization's or subject's web infrastructure.",
     "selectorsIn": [
       "domain"
     ],
@@ -61273,15 +61267,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python, pip-installable); no account or key.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "This is ACTIVE recon — it fires thousands of DNS queries whose answers (and, for resolved hosts, follow-on traffic) touch the target's and resolvers' logs. Route through a resolver/VPN you control, throttle the rate, and never point it at infrastructure you are not authorized to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Established DNS tool (670+ stars).",
+    "trustNote": "Established, well-starred open-source DNS tool (blark/aiodnsbrute); community-maintained rather than vendor-backed.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -61290,15 +61285,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "aio dns brute"
+    ],
     "tags": [
       "dns",
       "subdomain",
       "recon"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aiodnsbrute.md"
   },
   {
@@ -72670,37 +72668,45 @@
   {
     "id": "imperva-live-threat-map",
     "name": "Imperva Live Threat Map",
-    "description": "OSINT tool: Imperva Live Threat Map.",
+    "description": "Use when you want a real-time situational view of global cyber-attack activity and threat trends — returns aggregated attack/traffic statistics, not data on any specific person.",
     "url": "https://www.imperva.com/cyber-threat-attack-map/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A public real-time dashboard of worldwide attack activity for situational awareness and threat-trend context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view in the browser; no account or login for the public map. Imperva's underlying protection products are the paid offering.",
+    "opsec": "passive",
+    "opsecNote": "Purely a public visualization you watch — you submit no selectors and query nothing about a target, so it is entirely passive with zero leakage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Imperva (a Thales company) from its own global sensor network; a vendor marketing/awareness dashboard, aggregated not attributable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Imperva Cyber Threat Index",
+      "Imperva Cyber Attack Map"
+    ],
     "tags": [
-      "live-cyber-threat-maps"
+      "live-cyber-threat-maps",
+      "situational-awareness"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/imperva-live-threat-map.md"
   },
   {
@@ -74158,51 +74164,6 @@
     "_file": "library/tools/domains-ip-infrastructure/ipv4/ip-to-asn-db.md"
   },
   {
-    "id": "ip-void",
-    "name": "IP Void",
-    "description": "Check IP reputation and blacklist status",
-    "url": "https://www.ipvoid.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "reputation"
-    ],
-    "bestFor": "Check IP reputation and blacklist status",
-    "input": "IP address",
-    "output": "Threat score, blacklist status, reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Passive reputation lookup; account needed for full data.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "ipvoid",
-      "ipvoid-com"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/reputation/ip-void.md"
-  },
-  {
     "id": "ip2geo-dev",
     "name": "ip2geo.dev",
     "description": "OSINT tool: ip2geo.dev.",
@@ -74879,41 +74840,54 @@
   {
     "id": "ipvoid",
     "name": "IPVoid",
-    "description": "OSINT tool: IPVoid.",
-    "url": "http://www.ipvoid.com",
+    "description": "Use when you have an ip-address or domain and want reputation, geolocation, blacklist status, WHOIS and DNS details in one place — returns geolocation, domain, and reputation signals.",
+    "url": "https://www.ipvoid.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-stop free web toolkit for IP/domain reputation, geolocation, blacklist checks, and DNS/WHOIS lookups.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Web tools are free with no account; the related APIVoid service (programmatic access) is the paid product, but the browser tools here are free.",
+    "opsec": "passive",
+    "opsecNote": "Lookups are made from IPVoid's servers against public reputation/DNS data, so the target does not see your query. Still avoid tools that actively probe (their port-scan/screenshot utilities touch the target host directly) unless that's intended.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running toolkit by NoVirusThanks Company; aggregates well-known public blacklists and DNS/WHOIS sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "ip-void",
       "ipvoid-com"
     ],
+    "aliases": [
+      "IP Void",
+      "NoVirusThanks IPVoid"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "reputation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipvoid.md"
   },
   {
@@ -86517,47 +86491,6 @@
     "_file": "library/tools/domains-ip-infrastructure/tinyscan.md"
   },
   {
-    "id": "tor-whois",
-    "name": "Tor Whois",
-    "description": "OSINT tool: Tor Whois.",
-    "url": "https://torwhois.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/tor-whois.md"
-  },
-  {
     "id": "tormap",
     "name": "TorMap",
     "description": "Worldwide online map of Tor Nodes",
@@ -91152,41 +91085,55 @@
   {
     "id": "wireshark",
     "name": "Wireshark",
-    "description": "Network packet analysis and protocol debugging",
+    "description": "Use when you have a network-traffic capture (.pcap/.pcapng) and want to extract endpoints, hostnames, and app metadata — returns ip-address, domain, device-id and any cleartext account artifacts.",
     "url": "https://www.wireshark.org/download.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "network-analysis-tools"
     ],
-    "bestFor": "Network packet analysis and protocol debugging",
-    "input": "Network traffic capture file",
-    "output": "Detailed packet analysis, protocol breakdown",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Dissecting a captured .pcap to see who talked to whom and what identifiers leaked in cleartext.",
+    "selectorsIn": [
+      "ip-address",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "device-id",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Tool-dependent; passive capture or active sniffing possible.",
+    "costNote": "Free and open-source (GPLv2); no account, no paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Reading an existing capture is fully offline and passive. Live-capturing on a network you do not own or are not authorized to monitor can be unlawful interception — only capture traffic you are entitled to see.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-standing (since 1998) open-source project maintained by the Wireshark Foundation and audited by vendors and the community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Ethereal",
+      "tshark"
+    ],
+    "tags": [
+      "pcap",
+      "network-analysis",
+      "forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/network-analysis-tools/wireshark.md"
   },
   {
@@ -106029,7 +105976,8 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "relatedTools": [
-      "yt-dlp"
+      "yt-dlp",
+      "translate-shell"
     ],
     "_file": "library/tools/evidence-capture/you-get.md"
   },
@@ -182200,47 +182148,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/sales-navigator-for-gmail.md"
-  },
-  {
-    "id": "samy-kamkar",
-    "name": "Samy Kamkar",
-    "description": "OSINT tool: Samy Kamkar.",
-    "url": "https://samy.pl/peepmail",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "sockpuppet"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "peep-mail-search-tool",
-      "peepmail",
-      "samy-pl"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/samy-kamkar.md"
   },
   {
     "id": "scamwatch",
@@ -261802,42 +261709,54 @@
   {
     "id": "world-bank-data",
     "name": "World Bank Data",
-    "description": "OSINT tool: World Bank Data.",
-    "url": "http://data.worldbank.org",
+    "description": "Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — returns employer-org and location-level indicator data.",
+    "url": "https://data.worldbank.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free, authoritative country- and region-level development statistics for background and corroboration.",
+    "selectorsIn": [
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free and open; no account required. A documented developer API is available for bulk/programmatic access.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you query a public open-data portal, not the subject. No selectors about a person are sent anywhere.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party open-data portal of the World Bank; the World Development Indicators are internationally standardized official statistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "the-world-bank-open-data-catalog",
       "world-bank-investing-across-borders",
       "world-integrated-trade-solution"
     ],
+    "aliases": [
+      "World Development Indicators",
+      "WDI"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "public-records"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/world-bank-data.md"
   },
   {
@@ -271868,45 +271787,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/search-engines/engine-presearch-org.md"
-  },
-  {
-    "id": "eniro-sweden",
-    "name": "Eniro (Sweden)",
-    "description": "OSINT tool: Eniro (Sweden).",
-    "url": "http://www.eniro.se",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "eniro"
-    ],
-    "_file": "library/tools/search-engines/eniro-sweden.md"
   },
   {
     "id": "etools",
@@ -282627,45 +282507,6 @@
     "_file": "library/tools/search-engines/my-osint-training-tools.md"
   },
   {
-    "id": "myallsearch",
-    "name": "Myallsearch",
-    "description": "OSINT tool: Myallsearch.",
-    "url": "http://www.myallsearch.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "meta-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "myallsearch-com"
-    ],
-    "_file": "library/tools/search-engines/myallsearch.md"
-  },
-  {
     "id": "myallsearch-com",
     "name": "myallsearch.com",
     "url": "https://www.myallsearch.com/",
@@ -289332,38 +289173,47 @@
   {
     "id": "rfc-fyi",
     "name": "RFC.fyi",
-    "description": "Browseable, searchable RFC index",
+    "description": "Use when you have a protocol, keyword, or working-group name and want to find and read the relevant IETF RFC — returns RFC documents and their metadata, a reference tool not a people source.",
     "url": "https://rfc.fyi/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Fast full-text search and filtered browsing of the IETF RFC index.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open (open-source front-end over the public RFC index); no account.",
+    "opsec": "passive",
+    "opsecNote": "You are searching public standards documents, not querying anything about a subject — fully passive with no target exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A community front-end over the authoritative IETF/RFC Editor index; the documents themselves are the canonical internet standards.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RFC search"
+    ],
     "tags": [
-      "Search engines",
-      "Bugbounty/vulnerabilities search tools"
+      "search-engines",
+      "reference",
+      "protocols"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/rfc-fyi.md"
   },
   {

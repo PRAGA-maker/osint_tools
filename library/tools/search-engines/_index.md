@@ -198,7 +198,6 @@ kind: group-index
 - **`elsevier`** (low) — OSINT tool: Elsevier.
 - **`encyclopedia-of-math`** (medium) — Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, re
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
-- **`eniro-sweden`** (low) — OSINT tool: Eniro (Sweden).
 - **`etools`** (low) — OSINT tool: Etools.
 - **`euronews`** (low) — OSINT tool: Euronews.
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
@@ -405,7 +404,6 @@ kind: group-index
 - **`mouthshut-north-america`** (medium) — Use when you have a `username` or `name` and want a subject's consumer reviews and reviewer profile — returns `social-profile`, posting hist
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
-- **`myallsearch`** (low) — OSINT tool: Myallsearch.
 - **`mybuilder-north-america`** (low) — Use when you have a UK tradesperson's `name` or business and want to verify their trade profile and reviews — returns `social-profile`, trad
 - **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
 - **`najdsi-slovenia`** (medium) — Use when you have a `name`, `username`, or `domain` tied to Slovenia and want localized web/news results a global engine misses — returns `s
@@ -534,7 +532,7 @@ kind: group-index
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
 - **`reuters`** (low) — OSINT tool: Reuters.
-- **`rfc-fyi`** (low) — Browseable, searchable RFC index
+- **`rfc-fyi`** (low) — Use when you have a protocol, keyword, or working-group name and want to find and read the relevant IETF RFC — returns RFC documents and the
 - **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (low) — Use when you have a `domain` and want to find paths its robots.txt tries to hide from crawlers — returns disallowed/hidden directories worth
 - **`rockstargames-socialclub-player-search`** (medium) — Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-pro
