@@ -24,7 +24,7 @@ kind: group-index
 - **`archive-vn`** (high) — Use when you have a `domain` or URL and want an on-demand, permanent snapshot of a page (including JS-heavy or short-lived content) — return
 - **`archivebox`** (medium) — Use when you need to preserve web pages, profiles, or posts before they change or vanish — self-hosted, it captures HTML/PDF/WARC/screenshot
 - **`arquivo-pt`** (medium) — Use when you have a `domain`/URL or a `name` and want historical snapshots of Portuguese-web pages back to 1996 — returns archived page vers
-- **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
+- **`auto-archiver`** (medium) — Use when you have a list of social-media/webpage URLs (a `social-profile`, video, or post) and want to preserve them in a verifiable way — r
 - **`awasu`** (low) — OSINT tool: Awasu.
 - **`bellingcat-tiktok-hashtag-analysis`** (low) — Archive content and metadata from TikTok posts that contain one or more specified hashtags
 - **`blackwidow`** (medium) — Use when you have a `domain`/website and want to mirror or harvest it — a Windows site scanner that crawls a target site and extracts its li

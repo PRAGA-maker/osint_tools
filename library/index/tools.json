@@ -12680,35 +12680,51 @@
   {
     "id": "pywhat",
     "name": "pywhat",
-    "description": "OSINT tool: pywhat.",
+    "description": "Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashes, `crypto-wallet` addresses, IPs, API keys, and more).",
     "url": "https://pypi.org/project/pywhat/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Instantly recognising and classifying unknown strings/files — \"what is this?\" for OSINT artifacts.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "email",
+      "crypto-wallet",
+      "ip-address",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MIT); install via pip or Homebrew. Runs locally, no account or API key.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs entirely offline on your own machine against text/files you provide — nothing is sent anywhere, so it is fully passive with no signal to any target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "python-lib",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source utility (from the \"Bee-San\"/Ciphey ecosystem) with a large user base; identifications are regex/heuristic and may need confirmation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "pywhat",
+      "what"
+    ],
+    "tags": [
+      "ai-analysis-automation",
+      "identifier",
+      "cli",
+      "triage"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/pywhat.md"
   },
   {
@@ -18366,38 +18382,49 @@
   {
     "id": "auto-archiver",
     "name": "Auto Archiver",
-    "description": "Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.",
+    "description": "Use when you have a list of social-media/webpage URLs (a `social-profile`, video, or post) and want to preserve them in a verifiable way — returns local/cloud archives with hashes and metadata.",
     "url": "https://github.com/bellingcat/auto-archiver",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk, tamper-evident archiving of social media posts, videos and images from a CSV or Google Sheet.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). Self-hosted; you only pay for optional cloud storage (S3/Google Drive) or third-party enrichers you enable.",
+    "opsec": "active",
+    "opsecNote": "Archiving fetches each target URL, so requests originate from wherever you run it — the platform (and potentially the poster) can see a viewer/download hit. Run it from a non-attributable host/VPN and beware that some enrichers call external APIs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Maintained by Bellingcat, a leading open-source investigations org; widely used for evidence preservation with an active contributor community.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bellingcat Auto Archiver"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "archiving"
+      "archives-cache",
+      "evidence-preservation",
+      "social-media",
+      "cli"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "bellingcat-tiktok-hashtag-analysis",
       "instagram-location-search",
@@ -54369,41 +54396,50 @@
   {
     "id": "koodous",
     "name": "Koodous",
-    "description": "Android malware analysis with community collaboration and threat intelligence",
+    "description": "Use when you have an Android APK (or its hash/`document-id`) and want community malware analysis — returns detection verdicts, YARA matches, and analyst annotations.",
     "url": "https://koodous.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Android malware analysis with community collaboration and threat intelligence",
-    "input": "Android APK files, package names, hashes",
-    "output": "Malware detection results, community analysis, threat indicators, sample sharing",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Collaborative Android APK malware analysis with community YARA rules and threat intel.",
+    "selectorsIn": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "Registration available; community platform with shared threat intelligence",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free account for search and community analysis; higher-tier/API and bulk access are paid. Registration required for most features.",
+    "opsec": "passive",
+    "opsecNote": "Searching existing analyses by hash is passive. UPLOADING an APK shares it with the platform and community — never upload a sample that is sensitive to your investigation or that could tip off its author; assume uploads become searchable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established collaborative Android-malware platform used by analysts; verdicts blend automated detection with community-authored YARA rules, so quality varies by contributor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "Koodous platform"
+    ],
+    "tags": [
+      "documents-metadata",
+      "android",
+      "malware",
+      "apk",
+      "yara"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/koodous.md"
   },
   {
@@ -54815,41 +54851,51 @@
   {
     "id": "malware-traffic-analysis-net",
     "name": "Malware-Traffic-Analysis.net",
-    "description": "Malware network behavior analysis and training exercises",
+    "description": "Use when you need labelled malware PCAP samples and traffic-analysis exercises to learn or reference network IOCs — returns downloadable pcaps, samples, and write-ups.",
     "url": "https://www.malware-traffic-analysis.net/index.html",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "pcaps"
     ],
-    "bestFor": "Malware network behavior analysis and training exercises",
-    "input": "PCAP files, network traffic captures",
-    "output": "Network indicators (IPs, domains, C2 servers), behavioral analysis, post-exploitation patterns",
+    "bestFor": "A free library of malware pcap files and training exercises for network-traffic analysis.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; content is openly downloadable (malware samples are password-protected per the site's stated convention). No account.",
     "opsec": "passive",
-    "opsecNote": "PCAP analysis is passive; no live malware execution; educational resource",
+    "opsecNote": "Downloading pcaps/write-ups is passive reference use. The malware samples are LIVE malicious binaries — only open them in an isolated, non-networked analysis VM; never on your working host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running (since ~2013), well-regarded resource by Brad Duncan; widely cited in the DFIR/threat-intel community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MTA.net",
+      "Brad Duncan malware traffic"
+    ],
+    "tags": [
+      "documents-metadata",
+      "pcaps",
+      "malware",
+      "dfir",
+      "training"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pcaps/malware-traffic-analysis-net.md"
   },
   {
@@ -68623,30 +68669,30 @@
   {
     "id": "finalrecon",
     "name": "FinalRecon",
-    "description": "All-in-one web reconnaissance tool (headers, whois, DNS, crawler, ports, subdomains).",
+    "description": "Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and Wayback URLs.",
     "url": "https://github.com/thewhiteh4t/FinalRecon",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Fast web-app/domain footprinting from a single command.",
+    "bestFor": "Fast all-in-one web reconnaissance of a domain from a single CLI command.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address",
-      "email"
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); packaged in Kali and BlackArch. Self-hosted CLI, no account.",
+    "opsec": "active",
+    "opsecNote": "Several modules are ACTIVE — port scanning, directory brute-forcing and subdomain probing send traffic directly to the target and are logged. Only run against systems you are authorised to test; route through a VPN/Tor and prefer the passive-only modules for recon.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Well-known web recon tool by thewhiteh4t.",
+    "trustNote": "Popular open-source recon tool (2.9k+ stars) by thewhiteh4t; results are only as current as the upstream data sources it queries.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -68656,17 +68702,17 @@
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "thewhiteh4t/FinalRecon"
+      "FinalRecon web recon"
     ],
     "tags": [
-      "web-recon",
-      "dns",
-      "python",
-      "crawler"
+      "domains-ip-infrastructure",
+      "recon",
+      "cli",
+      "footprinting"
     ],
-    "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "nexfil",
       "seeker"
@@ -89454,42 +89500,53 @@
   {
     "id": "whois-freaks",
     "name": "Whois Freaks",
-    "description": "API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name",
+    "description": "Use when you have a person `name`, company, or email and want every domain registered with those details — returns matching `domain`s via reverse-WHOIS (430M+ domains since 1986).",
     "url": "https://whoisfreaks.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-WHOIS — finding all domains linked to a registrant name, company, or email.",
     "selectorsIn": [
-      "domain"
+      "name",
+      "email",
+      "employer-org"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "500 free credits on signup; heavier/bulk use is paid via tiered API plans. Data in JSON/XML.",
+    "opsec": "passive",
+    "opsecNote": "You query WhoisFreaks' historical WHOIS database, not the registrant — passive, no signal to the target. You do log into a third-party account, so use a sock-puppet registration.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "trust": "community",
+    "trustNote": "Commercial WHOIS/DNS data vendor; large historical corpus, but registrant data is increasingly redacted by GDPR/privacy so coverage skews to older/business registrations.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "WhoisFreaks"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Databases of domains"
+      "domains-ip-infrastructure",
+      "whois",
+      "reverse-whois",
+      "api"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-freaks.md"
   },
   {
@@ -106223,46 +106280,6 @@
       "blockchain-com"
     ],
     "_file": "library/tools/financial-crypto/blockchain-explorer.md"
-  },
-  {
-    "id": "blockchain-info",
-    "name": "Blockchain.info",
-    "description": "OSINT tool: Blockchain.info.",
-    "url": "https://blockchain.info",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/blockchain-info.md"
   },
   {
     "id": "blockchair",
@@ -243902,50 +243919,65 @@
   {
     "id": "occrp-aleph",
     "name": "OCCRP Aleph",
-    "description": "Cross-referencing persons and companies across public records, leaks, and investigative datasets",
+    "description": "Use when you have a person `name` or company `employer-org` and want to cross-reference them across leaks, corporate registries and public records — returns matching entities, documents and `associate` links.",
     "url": "https://aleph.occrp.org/",
     "category": "public-records",
     "path": [
       "public-records",
       "beneficial-ownership-lookup"
     ],
-    "bestFor": "Cross-referencing persons and companies across public records, leaks, and investigative datasets",
-    "input": "Person name, company name, or document keywords",
-    "output": "Entity profiles, linked datasets, document matches, and relationship mappings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching a person or company across hundreds of investigative datasets, leaks and official registers at once.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search the public datasets. A free account unlocks cross-referencing, alerts/tracking and uploading your own documents; some sensitive collections are restricted to vetted journalists.",
     "opsec": "passive",
-    "opsecNote": "Registration required for full access; queries are logged by OCCRP but subjects are not notified.",
+    "opsecNote": "You query OCCRP's aggregated archive, not the subject — passive, no signal to the target. Register with a professional/sock-puppet account; be aware OCCRP may log searches, and restricted datasets require a genuine journalist vetting.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Run by the Organized Crime and Corruption Reporting Project, a respected investigative journalism network; datasets are sourced/curated and provenance is documented per collection.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "Aleph",
+      "OCCRP Data"
+    ],
+    "tags": [
+      "public-records",
+      "leaks",
+      "corporate-registry",
+      "beneficial-ownership",
+      "investigative"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
-      "data-occrp-org",
+      "investigative-dashboard",
       "occrp-org",
       "organized-crime-and-corruption-reporting-project",
       "the-pegasus-project-occrp",
-      "visual-investigative-scenarios",
-      "investigative-dashboard"
+      "visual-investigative-scenarios"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/public-records/beneficial-ownership-lookup/occrp-aleph.md"
   },
   {
@@ -256542,37 +256574,46 @@
   {
     "id": "the-atlas-of-economic-complexity",
     "name": "The Atlas of Economic Complexity",
-    "description": "OSINT tool: The Atlas of Economic Complexity.",
+    "description": "Use when you need to understand a country's trade profile and economic structure as investigative context — returns interactive export/import data by country and product.",
     "url": "http://atlas.cid.harvard.edu",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Exploring 50+ years of global trade flows by country and product for macro/economic context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive tool from Harvard Growth Lab (now at atlas.hks.harvard.edu); all visualizations and data downloads are free, no account.",
+    "opsec": "passive",
+    "opsecNote": "Aggregate national trade statistics — no personal data and no target interaction; fully passive contextual research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Produced by Harvard's Growth Lab (Center for International Development) from UN COMTRADE-derived data with a documented cleaning methodology.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Atlas of Economic Complexity",
+      "Harvard Growth Lab Atlas"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "trade-data",
+      "economics",
+      "context"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "worldmap-harvard"
     ],
@@ -257673,37 +257714,47 @@
   {
     "id": "transparency-org-corruption-perception-index",
     "name": "Transparency.org Corruption Perception Index",
-    "description": "OSINT tool: Transparency.org Corruption Perception Index.",
+    "description": "Use when you need a country's perceived-corruption score as investigative context — returns per-country CPI scores/ranks (0–100) with year-over-year history.",
     "url": "http://www.transparency.org/cpi2015",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Benchmarking a country's public-sector corruption level for risk/context in an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; the current index and historical data/methodology are freely downloadable from Transparency International (see transparency.org/en/cpi). No account.",
+    "opsec": "passive",
+    "opsecNote": "Aggregate country-level index — no personal data, no target interaction; fully passive contextual reference.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published annually by Transparency International, the leading anti-corruption NGO, aggregating multiple independent expert/business surveys per country.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CPI",
+      "Corruption Perceptions Index",
+      "Transparency International CPI"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "corruption",
+      "risk",
+      "context"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/transparency-org-corruption-perception-index.md"
   },
   {

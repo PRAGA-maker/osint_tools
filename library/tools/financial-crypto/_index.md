@@ -36,7 +36,6 @@ kind: group-index
 - **`bitinfocharts-com`** (medium) — Use when you have a `crypto-wallet` address (or a name/exchange label) and want its balance, transaction activity, wealth rank, and public o
 - **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
 - **`blockchain-explorer`** (low) — OSINT tool: Blockchain Explorer.
-- **`blockchain-info`** (low) — OSINT tool: Blockchain.info.
 - **`blockchair-com`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterpar
 - **`blockcypher`** (low) — OSINT tool: Blockcypher.
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?

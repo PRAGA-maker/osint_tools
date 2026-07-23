@@ -315,7 +315,7 @@ kind: group-index
 - **`pygreynoise`** (low) — OSINT tool: pygreynoise.
 - **`python-code-checker`** (low) — quick find errors in code
 - **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
-- **`pywhat`** (low) — OSINT tool: pywhat.
+- **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
 - **`qlikview`** (low) — OSINT tool: QlikView.
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int

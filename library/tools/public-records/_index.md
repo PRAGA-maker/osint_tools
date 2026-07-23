@@ -865,7 +865,7 @@ kind: group-index
 - **`tfl-gov-uk`** (high) — Use when you have a London taxi/private-hire driver badge or a vehicle plate and want to confirm the licence is valid — returns licence stat
 - **`tgcg-members-page`** (low) — Use when you have a business name or region and want contact details for a listed member org — returns business `name`, `address`, and `phon
 - **`the-ancestor-hunt`** (high) — Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records —
-- **`the-atlas-of-economic-complexity`** (low) — OSINT tool: The Atlas of Economic Complexity.
+- **`the-atlas-of-economic-complexity`** (low) — Use when you need to understand a country's trade profile and economic structure as investigative context — returns interactive export/impor
 - **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re
 - **`the-data-and-story-library`** (low) — OSINT tool: The Data and Story Library.
 - **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
@@ -886,7 +886,7 @@ kind: group-index
 - **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
 - **`trading-economics`** (low) — OSINT tool: Trading Economics.
-- **`transparency-org-corruption-perception-index`** (low) — OSINT tool: Transparency.org Corruption Perception Index.
+- **`transparency-org-corruption-perception-index`** (low) — Use when you need a country's perceived-corruption score as investigative context — returns per-country CPI scores/ranks (0–100) with year-o
 - **`trellis`** (medium) — Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics
 - **`trinka`** (medium) — Use when you have two texts/documents and want authorship, plagiarism or consistency signals — returns grammar/style/plagiarism analysis to 
 - **`trouver-une-d-cision`** (medium) — Use when you have a `name` and want Quebec/Canadian court and tribunal decisions that mention the person as a party, witness, or professiona

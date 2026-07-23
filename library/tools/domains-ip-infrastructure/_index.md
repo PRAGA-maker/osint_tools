@@ -165,7 +165,7 @@ kind: group-index
 - **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
 - **`favicon-hasher`** (low) — Favicon.ico files hashes is a feature by which you can find domains related with your target. This tool generates hashes for all favicon.ico
 - **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
-- **`finalrecon`** (low) — All-in-one web reconnaissance tool (headers, whois, DNS, crawler, ports, subdomains).
+- **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
 - **`find-plus`** (low) — Regex Find-in-Page Tool
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit
 - **`focsec`** (low) — OSINT tool: Focsec.
@@ -480,7 +480,7 @@ kind: group-index
 - **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
 - **`whois-arin-online`** (low) — Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the regist
 - **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco
-- **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
+- **`whois-freaks`** (medium) — Use when you have a person `name`, company, or email and want every domain registered with those details — returns matching `domain`s via re
 - **`whois-history`** (low) — OSINT tool: Whois History.
 - **`whois-lookup-service`** (medium) — Use when you have a `domain` and want its public registration record — returns registrant/registrar details, dates, and nameservers (or a pr
 - **`whois-request`** (medium) — Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and name
