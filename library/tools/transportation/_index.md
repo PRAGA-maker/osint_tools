@@ -18,7 +18,7 @@ kind: group-index
 - **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
 - **`airfleets`** (low) — Database for aircraft details.
 - **`airframes`** (low) — A database of aircraft details
-- **`airlinecodes`** (low) — OSINT tool: Airlinecodes.
+- **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr
 - **`airnav-radarbox`** (low) — Live flight tracker.
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.

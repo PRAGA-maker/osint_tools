@@ -627,7 +627,7 @@ kind: group-index
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
 - **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
 - **`thepiratebay`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
-- **`thereisabotforthat-com`** (low) — search by catalog of 5151 bots for 17 different apps and platforms
+- **`thereisabotforthat-com`** (low) — Use when you want to find an existing chatbot for a task or platform — a searchable catalog of thousands of bots across Telegram, Slack, Dis
 - **`thingful-net`** (low) — OSINT tool: Thingful.net.
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
 - **`toddington-online-research-cheat-sheets`** (medium) — Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PD

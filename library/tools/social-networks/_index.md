@@ -135,7 +135,7 @@ kind: group-index
 - **`exportdata`** (high) — Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate link
 - **`f5bot`** (medium) — Use when you have a `name`, `username` or keyword and want to be emailed whenever it's mentioned on Reddit/Hacker News/Lobsters — returns ma
 - **`facebook-ad-s-link`** (medium) — Use when you have a Facebook Page `social-profile` (or its page-ID) and want to pull every ad it has run — returns the advertiser's other pa
-- **`facebook-applications-khalil-shreateh`** (low) — Collection of tools automating Facebook functions.
+- **`facebook-applications-khalil-shreateh`** (low) — Use when you have a Facebook `social-profile` and want its numeric ID or full-size profile photo — a page of small Facebook utilities; the I
 - **`facebook-bulk-id-usernames-to-s`** (high) — Use when you have Facebook profile/page `username`s or URLs and want their durable numeric IDs in bulk — returns the numeric account IDs tha
 - **`facebook-com`** (high) — Use when you have a `name`, `employer-org` or Page and want the ads that entity has run on Meta platforms — returns social-profile, employer
 - **`facebook-directory-users-by-name`** (high) — Use when you have a `name` and want to enumerate public Facebook profiles matching it via Facebook's own alphabetical directory — returns ca

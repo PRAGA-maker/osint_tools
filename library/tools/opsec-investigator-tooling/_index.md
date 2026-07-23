@@ -27,7 +27,6 @@ kind: group-index
 - **`adobe-photoshop-express-app-mobile-ios`** (low) — App for mobile devices for creating editing and sharing image-related media
 - **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
 - **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
-- **`airbnb-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — OSINT tool: Am I unique?.
 - **`amazon-mobile-app-mobile-android`** (low) — App for mobile devices for online shopping
@@ -74,7 +73,6 @@ kind: group-index
 - **`bromite`** (low) — OSINT tool: Bromite.
 - **`bugmenot`** (low) — login and passwords for public accounts in different services
 - **`bunker-is`** (low) — OSINT tool: Bunker.is.
-- **`call-recorder-management-app-mobile-ios`** (low) — App for mobile devices for recording audio from any telephone call
 - **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
 - **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
 - **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
@@ -151,7 +149,7 @@ kind: group-index
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fakeinfo`** (low) — Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, W
 - **`falcon-arch-linux`** (low) — OSINT tool: Falcon Arch Linux.
-- **`fastscanner-app-mobile-android`** (low) — App for mobile devices for turning your smartphone camera into a document scanner
+- **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
 - **`fedora-security-lab`** (low) — OSINT tool: Fedora Security Lab.
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
@@ -392,7 +390,7 @@ kind: group-index
 - **`slack-business-communication-app-mobile-ios`** (low) — App for mobile devices for business communications and networking
 - **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
 - **`sleipnir`** (low) — OSINT tool: Sleipnir.
-- **`slimjet`** (low) — OSINT tool: Slimjet.
+- **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`slydial-ringless-voicemail-messaging`** (low) — Proxy voice messaging service that goes directly to a person's voicemail
 - **`smstome-com`** (low) — OSINT tool: Smstome.com.
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging

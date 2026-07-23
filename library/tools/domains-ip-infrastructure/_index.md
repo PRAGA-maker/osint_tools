@@ -255,7 +255,7 @@ kind: group-index
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
 - **`jsluice`** (low) — Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns
-- **`kali-intelligence-suite-kis`** (low) — Framework for fast, autonomous, centralized collection of intelligence by orchestrating standard pentest tools.
+- **`kali-intelligence-suite-kis`** (low) — Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nm
 - **`kaspersky-cyberthreat-live-map`** (low) — OSINT tool: Kaspersky Cyberthreat live Map.
 - **`kloth`** (low) — OSINT tool: Kloth.
 - **`knockknock`** (low) — A very fast script written in #go that queries the ViewDNSInfo API (free, 500 results limit) and gets a list of domains related to target do
@@ -354,7 +354,7 @@ kind: group-index
 - **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
-- **`reverse-google-analytics`** (low) — OSINT tool: Reverse Google Analytics.
+- **`reverse-google-analytics`** (low) — Use when you have a `domain` and want the other sites run by the same operator — finds domains sharing its Google Analytics/AdSense tracking
 - **`reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it — returns the `domain` neighbours sharing that server, exposing li
 - **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
 - **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
@@ -373,7 +373,7 @@ kind: group-index
 - **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
 - **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
 - **`securitytrails`** (low) — Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `do
-- **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
+- **`seekolver`** (low) — Use when you have a `domain` (or org name) and want its live web attack surface — a Python CLI that pulls subdomains from open sources, reso
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
 - **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi

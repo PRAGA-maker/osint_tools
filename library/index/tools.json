@@ -51793,41 +51793,55 @@
   {
     "id": "fitbit",
     "name": "Fitbit",
-    "description": "Website related to social networking in the form of health, wellness, fitness, lifesteaming or digital diaries",
+    "description": "Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public profiles/challenges can occasionally leak `social-profile`, location, and connections.",
     "url": "https://www.fitbit.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a subject has a public Fitbit profile and mining any exposed activity, connections, or location text.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to use; a Fitbit/Google account is required to view most profiles, and the great majority of user data is private by default.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing a public profile is passive, but Fitbit is a Google property — browse from a sock-puppet account, and be aware that following/friending a subject is an active, visible action you should avoid.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate platform, but as an OSINT source it is weak — post-Google, almost everything is private; treat any exposed data as a rare bonus, not a reliable feed.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Fitbit profile"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "fitness-social"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/fitbit.md"
   },
   {
@@ -57254,42 +57268,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/recoverytoolbox.md"
-  },
-  {
-    "id": "reposearch",
-    "name": "Reposearch",
-    "description": "OSINT tool: Reposearch.",
-    "url": "http://codefinder.org/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "code-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/reposearch.md"
   },
   {
     "id": "restaurant-and-catering-industry-website-australia",
@@ -74845,13 +74823,13 @@
   {
     "id": "kali-intelligence-suite-kis",
     "name": "Kali Intelligence Suite (KIS)",
-    "description": "Framework for fast, autonomous, centralized collection of intelligence by orchestrating standard pentest tools.",
+    "description": "Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nmap, dnsrecon, gobuster, Shodan, Censys etc. into a PostgreSQL DB, returning `domain`, `ip-address`, `email`.",
     "url": "https://github.com/chopicalqui/KaliIntelligenceSuite",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Automating and centralizing the output of many recon/pentest tools against a target scope",
+    "bestFor": "Automating and centralising the output of many Kali recon/pentest tools against a target scope into one queryable database.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -74861,15 +74839,16 @@
       "ip-address",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source framework (chopicalqui/KaliIntelligenceSuite); runs via Docker, needs the underlying Kali tools and optional API keys (Shodan/Censys) for those modules.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "This is an active-scanning orchestrator — it runs nmap, gobuster, hydra and similar directly against target infrastructure, generating heavy, obvious traffic in the target's logs. Use ONLY within an authorised engagement scope, from controlled infrastructure; it is emphatically not a passive people-finder.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "95 stars; orchestration layer over standard Kali pentest tools.",
+    "trustNote": "Active, reasonably popular open-source project; it wraps standard, trusted tools, so results are as reliable as those tools — the value it adds is orchestration and storage, not new data.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -74878,6 +74857,12 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "dome",
+      "orb"
+    ],
     "aliases": [
       "KIS"
     ],
@@ -74888,8 +74873,8 @@
       "recon"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/kali-intelligence-suite-kis.md"
   },
   {
@@ -81478,35 +81463,54 @@
   {
     "id": "reverse-google-analytics",
     "name": "Reverse Google Analytics",
-    "description": "OSINT tool: Reverse Google Analytics.",
+    "description": "Use when you have a `domain` and want the other sites run by the same operator — finds domains sharing its Google Analytics/AdSense tracking ID, returning linked `domain`s.",
     "url": "https://osint.sh/analytics/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Linking multiple websites to one owner by matching the Google Analytics / AdSense ID they embed.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free browser tool in the osint.sh suite; heavy/bulk use points toward its paid API.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query osint.sh's crawled dataset of tracking IDs, not the target site, so the lookup is passive toward the subject. osint.sh learns which domain you're pivoting on.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of the well-known osint.sh toolset; matches depend on the crawl's coverage and freshness, and shared IDs occasionally reflect a shared agency rather than a shared owner.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "reverse-ip-lookup"
+    ],
+    "aliases": [
+      "osint.sh analytics",
+      "reverse analytics ID"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "tracking-id",
+      "attribution"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reverse-google-analytics.md"
   },
   {
@@ -82912,42 +82916,54 @@
   {
     "id": "seekolver",
     "name": "Seekolver",
-    "description": "#python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh",
+    "description": "Use when you have a `domain` (or org name) and want its live web attack surface — a Python CLI that pulls subdomains from open sources, resolves them, and reports which host HTTP(S) services, returning `domain` and `ip-address`.",
     "url": "https://github.com/Krypteria/Seekolver",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a domain's subdomains from multiple OSINT APIs and resolving them to find the live HTTP/HTTPS hosts.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python tool (Krypteria/Seekolver); optional VirusTotal/SecurityTrails API keys unlock those premium sources.",
+    "opsec": "active",
+    "opsecNote": "Subdomain gathering from APIs (crt.sh, AlienVault, SpyOnWeb) is passive, but Seekolver then resolves and connects to each subdomain to check for live HTTP(S) services — those probes reach the target's hosts and can appear in their logs. Route the resolution/probe stage through a controlled egress when discretion matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small but active open-source recon tool; it aggregates well-known sources, so accuracy tracks those and should be confirmed by re-resolving results.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "dome"
+    ],
+    "aliases": [
+      "Krypteria/Seekolver"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Subdomains scan/brute"
+      "Subdomains scan/brute",
+      "attack-surface"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/seekolver.md"
   },
   {
@@ -167180,46 +167196,6 @@
     "_file": "library/tools/opsec-investigator-tooling/ai-video-generator.md"
   },
   {
-    "id": "airbnb-travel-app-mobile-android",
-    "name": "AirBNB Travel App (Mobile – Android)",
-    "description": "App for mobile devices for locating accomodations while travelling",
-    "url": "https://play.google.com/store/apps/details?id=com.airbnb.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/airbnb-travel-app-mobile-android.md"
-  },
-  {
     "id": "airwatch-secure-content-locker-app-mobile-ios",
     "name": "Airwatch Secure Content Locker App (Mobile – iOS)",
     "description": "App for mobile devices that creates a secure content area on your device with password",
@@ -169322,46 +169298,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/bunker-is.md"
-  },
-  {
-    "id": "call-recorder-management-app-mobile-ios",
-    "name": "Call Recorder Management App (Mobile – iOS)",
-    "description": "App for mobile devices for recording audio from any telephone call",
-    "url": "https://apps.apple.com/us/app/call-recorder-for-iphone/id1503665233",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/call-recorder-management-app-mobile-ios.md"
   },
   {
     "id": "canadian-anti-fraud-centre",
@@ -172817,41 +172753,48 @@
   {
     "id": "fastscanner-app-mobile-android",
     "name": "Fastscanner App (Mobile – Android)",
-    "description": "App for mobile devices for turning your smartphone camera into a document scanner",
+    "description": "Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner producing a file you can then OCR or store as evidence (no subject selectors).",
     "url": "https://play.google.com/store/apps/details?id=com.coolmobilesolution.fastscannerfree",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Capturing a physical document, notice, or photo as a de-skewed, cropped PDF/image for the case file when you only have a phone.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free version scans to PDF with ads and basic features; a Pro upgrade removes ads and adds batch/OCR extras.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Scanning happens locally on the device, but the app can upload/share scans to cloud services — keep sensitive evidence local and disable auto-sync. As with any consumer scanner app, review its permissions before using it on case material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A common third-party consumer scanner app; fine for digitisation, but it is not evidence-grade software — document provenance yourself.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Fast Scanner"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "evidence-capture"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/fastscanner-app-mobile-android.md"
   },
   {
@@ -183112,37 +183055,47 @@
   {
     "id": "slimjet",
     "name": "Slimjet",
-    "description": "OSINT tool: Slimjet.",
+    "description": "Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no subject selectors in or out).",
     "url": "http://www.slimjet.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A privacy-leaning Chromium fork for investigative browsing, with ad/tracker blocking and anti-fingerprinting options built in.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free download (FlashPeak Slimjet) for Windows/macOS/Linux; no account.",
+    "opsec": "active",
+    "opsecNote": "Like any browser it is your leak surface. Slimjet's built-in ad/tracker blocking and anti-fingerprinting reduce passive tracking, but it does NOT anonymise your IP — pair it with a VPN/proxy and a compartmentalised profile per case, and don't sign into personal accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running Chromium fork by FlashPeak; reliable as a browser, but a smaller vendor than mainstream browsers — weigh that in your trust model and keep it updated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "chrome"
+    ],
+    "aliases": [
+      "FlashPeak Slimjet"
+    ],
     "tags": [
       "browsers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/slimjet.md"
   },
   {
@@ -293686,37 +293639,46 @@
   {
     "id": "thereisabotforthat-com",
     "name": "thereisabotforthat.com",
-    "description": "search by catalog of 5151 bots for 17 different apps and platforms",
+    "description": "Use when you want to find an existing chatbot for a task or platform — a searchable catalog of thousands of bots across Telegram, Slack, Discord, Messenger and more (no subject selectors).",
     "url": "https://thereisabotforthat.com/bots/search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering ready-made bots (including OSINT/utility bots) for a given platform or task via a keyword-searchable directory.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the catalog; the bots it links to have their own (often free) terms.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. The OpSec consideration is downstream — any third-party bot you then use may see whatever you send it, so vet a bot (and use a sock-puppet account) before feeding it real case data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community bot directory; listings are user/vendor-submitted and unvetted, so the catalog points you to bots but makes no guarantee of their quality, safety, or that they still work.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "there is a bot for that"
+    ],
     "tags": [
-      "Search engines"
+      "Search engines",
+      "bot-directory"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/thereisabotforthat-com.md"
   },
   {
@@ -305671,28 +305633,30 @@
   {
     "id": "facebook-applications-khalil-shreateh",
     "name": "Facebook Applications (Khalil Shreateh)",
-    "description": "Collection of tools automating Facebook functions.",
+    "description": "Use when you have a Facebook `social-profile` and want its numeric ID or full-size profile photo — a page of small Facebook utilities; the ID/photo viewers are useful, the automation bots are mostly ToS-violating and broken.",
     "url": "https://khalil-shreateh.com/khalil.shtml/social_applications/facebook-applications/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Miscellaneous Facebook automation utilities",
+    "bestFor": "Extracting a Facebook profile's numeric UID and viewing full-size profile/cover photos; other utilities on the page are largely defunct.",
     "selectorsIn": [
       "social-profile"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web utilities; no account for the simple viewers, though some tools ask you to connect your own Facebook (avoid).",
+    "opsec": "passive",
+    "opsecNote": "The ID and photo viewers just resolve public Facebook data, which is passive. Do NOT use the automation bots (auto-like, auto-comment, group posters) — they violate Facebook's terms, can get an account banned, and require granting the site access to your Facebook.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A personal site of assorted, largely dated Facebook utilities; the useful ones are simple lookups, but the page is not maintained to current Facebook APIs, so expect breakage.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -305701,17 +305665,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "khalil-shreateh-social-applications"
+    ],
+    "aliases": [
+      "Khalil Shreateh Facebook tools"
+    ],
     "tags": [
       "facebook",
       "automation"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "khalil-shreateh-social-applications"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-applications-khalil-shreateh.md"
   },
   {
@@ -345785,41 +345753,51 @@
   {
     "id": "airlinecodes",
     "name": "Airlinecodes",
-    "description": "OSINT tool: Airlinecodes.",
+    "description": "Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/country) or airline behind an IATA/ICAO code.",
     "url": "http://www.airlinecodes.co.uk/aptcodesearch.asp",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding IATA/ICAO airport and airline codes into real names and locations when reading tickets, itineraries, or booking references.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public reference database; no account.",
+    "opsec": "passive",
+    "opsecNote": "A static reference lookup — you enter a code, not anything about the subject, so it exposes nothing about your investigation beyond a code to the site's own logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running enthusiast-maintained aviation code database; accurate for the standardised IATA/ICAO codes it lists, though not an official IATA source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "airlinecodes.co.uk",
+      "airport code search"
+    ],
     "tags": [
-      "aviation"
+      "aviation",
+      "reference"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/airlinecodes.md"
   },
   {

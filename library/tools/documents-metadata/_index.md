@@ -108,7 +108,7 @@ kind: group-index
 - **`fifa`** (low) — Football team rankings website
 - **`filesec-io`** (low) — OSINT tool: Filesec.io.
 - **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
-- **`fitbit`** (low) — Website related to social networking in the form of health, wellness, fitness, lifesteaming or digital diaries
+- **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
 - **`folkd`** (low) — Social bookmarking and social search site
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
@@ -207,7 +207,6 @@ kind: group-index
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`rebelmouse`** (low) — Creative agency and website publishing platform
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `
-- **`reposearch`** (low) — OSINT tool: Reposearch.
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-association-of-new-zealand`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`restaurant-report-website-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
