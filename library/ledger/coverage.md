@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7422 total · 5034 full · 2388 stub (67% enriched)
+**Tools:** 7419 total · 5041 full · 2378 stub (67% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3475 · medium: 1983 · high: 1964
+low: 3471 · medium: 1984 · high: 1964
 
 ## Tools by trust
-community: 3496 · unverified: 2215 · trusted: 1702 · untrustworthy: 6 · personal: 3
+community: 3495 · unverified: 2213 · trusted: 1702 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 65/448
-- `archives-cache` — 89/120
+- `ai-analysis-automation` — 68/448
+- `archives-cache` — 90/120
 - `communities-forums` — 237/287
 - `dark-web` — 45/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 82/297
-- `domains-ip-infrastructure` — 266/680
+- `documents-metadata` — 83/297
+- `domains-ip-infrastructure` — 267/678
 - `email` — 245/246
 - `evidence-capture` — 13/29
 - `financial-crypto` — 58/107
@@ -33,10 +33,10 @@ community: 3496 · unverified: 2215 · trusted: 1702 · untrustworthy: 6 · pers
 - `phone` — 134/137
 - `public-records` — 873/1005
 - `search-engines` — 509/772
-- `social-networks` — 733/784
+- `social-networks` — 734/784
 - `training-ctf` — 5/12
 - `translation-language` — 24/100
-- `transportation` — 131/210
+- `transportation` — 131/209
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -53,7 +53,7 @@ community: 3496 · unverified: 2215 · trusted: 1702 · untrustworthy: 6 · pers
 - `library/tools/documents-metadata` — 251 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
-- `library/tools/transportation` — 192 leaves
+- `library/tools/transportation` — 191 leaves
 - `library/tools/messaging` — 169 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
@@ -65,7 +65,7 @@ community: 3496 · unverified: 2215 · trusted: 1702 · untrustworthy: 6 · pers
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
-- `library/tools/domains-ip-infrastructure/reputation` — 20 leaves
+- `library/tools/domains-ip-infrastructure/reputation` — 19 leaves
 - `library/tools/domains-ip-infrastructure/subdomains` — 17 leaves
 - `library/tools/image-video-face/images/metadata` — 17 leaves
 - `library/tools/public-records/court-criminal-records` — 17 leaves

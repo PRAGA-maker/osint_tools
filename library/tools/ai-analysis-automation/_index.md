@@ -90,7 +90,7 @@ kind: group-index
 - **`creately`** (low) — OSINT tool: creately.
 - **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
 - **`crossfilter`** (low) — OSINT tool: Crossfilter.
-- **`crowdsec`** (low) — OSINT tool: CrowdSec.
+- **`crowdsec`** (low) — Use when you have an `ip-address` and want crowd-sourced threat reputation on it — CrowdSec's CTI shows whether the IP is a known attacker, 
 - **`csvkit`** (low) — OSINT tool: csvkit.
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
 - **`cyberbro`** (low) — Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated
@@ -351,7 +351,7 @@ kind: group-index
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
 - **`skopenow`** (low) — OSINT tool: Skopenow.
 - **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
-- **`sn0int`** (low) — OSINT tool: sn0int.
+- **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — OSINT tool: Snappa.
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
 - **`social-links`** (low) — OSINT tool: Social Links.
@@ -359,7 +359,7 @@ kind: group-index
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
 - **`spideroak`** (low) — OSINT tool: Spideroak.
 - **`spidersuite`** (low) — OSINT tool: SpiderSuite.
-- **`spotify-monitor`** (low) — OSINT tool: spotify_monitor.
+- **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
 - **`steganography-online-codec`** (low) — OSINT tool: Steganography Online Codec.

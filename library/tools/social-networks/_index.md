@@ -546,7 +546,7 @@ kind: group-index
 - **`steam-id-finder`** (low) — Use when you have a Steam vanity name or profile URL (`username` / `social-profile`) and want every SteamID format plus the public profile —
 - **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
 - **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
-- **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
+- **`steamdb-info-calculator`** (low) — Use when you have a Steam `username`/vanity URL or SteamID and want the public account's games, playtime, and value — returns social-profile
 - **`steamid-uk`** (medium) — Use when you have a Steam `username`/ID and want name history and friend-link timelines — returns username, social-profile and associate.
 - **`sterraxcyl`** (medium) — Use when you have an Instagram `username` and want their followers/following exported with details — returns each connection's `username`, f
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s

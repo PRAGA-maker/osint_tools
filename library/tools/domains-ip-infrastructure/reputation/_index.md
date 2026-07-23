@@ -16,7 +16,6 @@ kind: group-index
 - **`google-safe-browsing-api`** (low) — Malware and phishing URL detection
 - **`ip-void`** (low) — Check IP reputation and blacklist status
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation
-- **`malware-domain-list`** (low) — Malware domain reputation queries
 - **`sucuri-sitecheck`** (low) — Use when you have a `domain` and want a free remote malware/blacklist scan plus fingerprinting of its CMS and server — returns infection sta
 - **`threatminer-org`** (low) — Threat intelligence research, IOC investigation, malware/phishing link analysis
 - **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.

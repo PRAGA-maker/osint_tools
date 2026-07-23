@@ -3050,37 +3050,52 @@
   {
     "id": "crowdsec",
     "name": "CrowdSec",
-    "description": "OSINT tool: CrowdSec.",
+    "description": "Use when you have an `ip-address` and want crowd-sourced threat reputation on it — CrowdSec's CTI shows whether the IP is a known attacker, its behaviors, and geolocation/AS.",
     "url": "https://github.com/crowdsecurity/crowdsec",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Checking an IP's crowd-sourced malicious reputation (attack categories, ranges, first/last seen) via CrowdSec CTI.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The engine and community blocklist are open source (MIT) and free. The CTI reputation lookup (console/API) has a free tier requiring a free account/API key; higher query volumes need a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Looking up an IP in CrowdSec CTI queries CrowdSec's database, not the host at that IP, so the target machine isn't contacted or alerted. Running the CrowdSec agent on your own server is a separate, defensive deployment. Use a dedicated account/API key for CTI queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely-adopted open-source security project (crowdsecurity); CTI is aggregated from a large community sensor network, so reputation reflects observed behavior, not attribution of a person.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "CrowdSec",
+      "crowdsec CTI"
+    ],
     "tags": [
-      "other-tools"
+      "ip-reputation",
+      "threat-intel",
+      "crowd-sourced"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/crowdsec.md"
   },
   {
@@ -14386,37 +14401,55 @@
   {
     "id": "sn0int",
     "name": "sn0int",
-    "description": "OSINT tool: sn0int.",
+    "description": "Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomains, social-profile, geolocation, breaches, and more.",
     "url": "https://github.com/kpcyrd/sn0int",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Modular, semi-automatic OSINT recon — seed an entity, run community modules to enrich and pivot it in a local graph.",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "ip-address",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile",
+      "geolocation",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (GPLv3+); packaged for Arch, Homebrew, Debian/Ubuntu, Alpine, NixOS, and Docker. Some modules call third-party APIs that may need your own keys.",
+    "opsec": "active",
+    "opsecNote": "Modules make real network requests — resolving domains, hitting APIs, fetching profiles — from your host, so activity is attributable to your IP. Modules run sandboxed, but review what each does before running; route through a VPN/proxy and use API keys not tied to your identity. Add targets to scope deliberately to avoid over-collecting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Well-regarded open-source framework by kpcyrd with an active module registry; modules are community-contributed, so vet third-party ones.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sn0int",
+      "kpcyrd/sn0int"
+    ],
     "tags": [
-      "other-tools"
+      "osint-framework",
+      "recon-automation",
+      "package-manager"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/sn0int.md"
   },
   {
@@ -14735,37 +14768,41 @@
   {
     "id": "spotify-monitor",
     "name": "spotify_monitor",
-    "description": "OSINT tool: spotify_monitor.",
+    "description": "Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity, playlists, and online/active patterns.",
     "url": "https://github.com/misiektoja/spotify_monitor",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "music-streaming-services"
+    "bestFor": "Continuously monitoring a public Spotify user's activity (now-playing, playlists, followers) for pattern-of-life signals.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (Python). Requires your own Spotify credentials/token (a free Spotify account) to poll the API.",
+    "opsec": "active",
+    "opsecNote": "The tool polls Spotify's API for a specific user on an interval using YOUR account/token, creating a sustained, attributable query pattern tied to your credentials. Use a dedicated sock-puppet Spotify account, never your personal one. Only a target's PUBLIC activity is visible; monitoring is passive toward the subject (they aren't notified) but is a deliberate, ongoing collection you should scope and time-limit.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Part of the actively-maintained misiektoja \"*_monitor\" OSINT suite on GitHub; community tool, code is open and auditable.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
     "relatedTools": [
       "github-monitor",
       "instagram-monitor",
@@ -14776,6 +14813,19 @@
       "steam-monitor",
       "xbox-monitor"
     ],
+    "aliases": [
+      "spotify_monitor",
+      "misiektoja/spotify_monitor"
+    ],
+    "tags": [
+      "spotify",
+      "activity-monitoring",
+      "pattern-of-life",
+      "music-streaming-services"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/spotify-monitor.md"
   },
   {
@@ -19719,37 +19769,49 @@
   {
     "id": "feedreader",
     "name": "FeedReader",
-    "description": "OSINT tool: FeedReader.",
+    "description": "Use when you have a subject's blog/site/news `domain` and want to monitor its updates over time — subscribe to its RSS feed and aggregate new posts as they publish.",
     "url": "http://www.feedreader.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregating and monitoring RSS feeds (a target's blog, forum, or news source) in one web reader.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web-based RSS aggregator (Feedreader Online). Appears lightly maintained (development blog stalled around 2017), but the reader still functions.",
+    "opsec": "passive",
+    "opsecNote": "Subscribing to and reading a public RSS feed is passive; the target site sees only ordinary feed fetches from the reader's servers, not from you, and is not alerted to who is watching. Do not rely on a third-party reader for sensitive monitoring — it learns which feeds you track; a local feed reader keeps that private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running but lightly-maintained RSS service; a generic aggregator, not an investigative data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Feedreader Online",
+      "feedreader.com"
+    ],
     "tags": [
-      "web-monitoring"
+      "rss",
+      "web-monitoring",
+      "feed-aggregator"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/feedreader.md"
   },
   {
@@ -53082,24 +53144,32 @@
   {
     "id": "guru-com",
     "name": "Guru.com",
-    "description": "Website related to outsourcing of jobs related to a variety of creative occupations",
-    "url": "http://www.guru.com",
+    "description": "Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history), skills, and stated location.",
+    "url": "https://www.guru.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a person's freelancer profile (skills, portfolio, work history, location) on the Guru marketplace.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing/searching public freelancer profiles is free. Hiring, messaging, and posting jobs require a (free-to-create) client account; some contact features sit behind the platform.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public profiles is passive and doesn't notify the freelancer. Messaging or hiring requires an account and is attributable — use a sock-puppet client account if you must engage. Freelancer-stated location/skills are self-reported and may be aspirational or obscured.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A mainstream freelance marketplace; profile data is user-submitted, useful as a lead and for corroboration rather than proof.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -53108,15 +53178,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Guru",
+      "guru.com"
+    ],
     "tags": [
+      "freelance-marketplace",
+      "profile-search",
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/guru-com.md"
   },
   {
@@ -69333,43 +69407,51 @@
   },
   {
     "id": "fuzzuli",
-    "name": "FUZZULI",
-    "description": "Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 different methods for creating wordlists: \"shuffle\", \"regular\", \"reverse\", \"mixed\" etc",
+    "name": "fuzzuli",
+    "description": "Use when you have a `domain` and want to hunt exposed backup/sensitive files on its web server — generates a domain-tailored wordlist and probes URLs, returning reachable file paths.",
     "url": "https://github.com/musana/fuzzuli",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Finding leaked backup/archive files (e.g. example.com.zip, backup.sql) by fuzzing domain-derived URL guesses.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); a Go CLI. A hosted web interface exists at fuzzuli.musana.net for light use.",
+    "opsec": "active",
+    "opsecNote": "This ACTIVELY probes the target's web server with many requests from your IP — it is intrusive, generates server logs, and can trip WAF/rate limits or look like an attack. Only run it against assets you are authorized to test; use it on your own/authorized infrastructure or with explicit scope. Route through controlled infrastructure and throttle.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular community pentest tool (musana on GitHub); code is open and auditable, but it's an offensive utility, not an institutional service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fuzzuli",
+      "musana/fuzzuli"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "url-fuzzing",
+      "backup-file-discovery",
+      "pentest",
+      "domain-and-ip-research"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/fuzzuli.md"
   },
   {
@@ -76027,46 +76109,6 @@
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/maltiverse.md"
   },
   {
-    "id": "malware-domain-list",
-    "name": "Malware Domain List",
-    "description": "Malware domain reputation queries",
-    "url": "https://www.malwaredomainlist.com/mdl.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "reputation"
-    ],
-    "bestFor": "Malware domain reputation queries",
-    "input": "Domain name",
-    "output": "Domain reputation report",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Queries curated malware domain database; passive lookup only",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/reputation/malware-domain-list.md"
-  },
-  {
     "id": "malware-information-sharing-platform",
     "name": "Malware Information Sharing Platform",
     "description": "Threat intelligence sharing",
@@ -77960,45 +78002,6 @@
       "netcraft-site-report"
     ],
     "_file": "library/tools/domains-ip-infrastructure/netcraft.md"
-  },
-  {
-    "id": "netcraft-site-report",
-    "name": "Netcraft Site Report",
-    "description": "OSINT tool: Netcraft Site Report.",
-    "url": "http://toolbar.netcraft.com/site_report?url=undefined#last_reboot",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "netcraft"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/netcraft-site-report.md"
   },
   {
     "id": "netlas-io",
@@ -329113,36 +329116,54 @@
   },
   {
     "id": "steamdb-info-calculator",
-    "name": "steamdb.info/calculator",
-    "description": "OSINT tool: steamdb.info/calculator.",
+    "name": "SteamDB Calculator",
+    "description": "Use when you have a Steam `username`/vanity URL or SteamID and want the public account's games, playtime, and value — returns social-profile detail and activity/interest leads.",
     "url": "https://steamdb.info/calculator/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a public Steam account — owned games, hours played, account value, and profile metadata.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to look up any public Steam profile; no account needed. SteamDB is ad-supported and Cloudflare-protected.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query SteamDB's index (which reads Steam's public API), not the user directly, so the target isn't notified. Only public profiles resolve — private accounts return little. Behind Cloudflare you may hit a browser challenge; solve it manually and avoid aggressive automated hits.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "SteamDB is a well-known community Steam database; data comes from Steam's public API, so it's accurate for public accounts but bounded by each profile's privacy settings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SteamDB calculator",
+      "steamdb.info/calculator"
+    ],
+    "tags": [
+      "steam",
+      "gaming-profile",
+      "social-networks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/steamdb-info-calculator.md"
   },
   {
@@ -350814,49 +350835,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/transportation/maritime-database.md"
-  },
-  {
-    "id": "maritimeconnector",
-    "name": "MaritimeConnector",
-    "description": "OSINT tool: MaritimeConnector.",
-    "url": "http://maritime-connector.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "maritime-connector-com-ships"
-    ],
-    "_file": "library/tools/transportation/maritimeconnector.md"
   },
   {
     "id": "military-ship-tracker",

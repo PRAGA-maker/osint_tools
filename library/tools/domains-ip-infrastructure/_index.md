@@ -34,7 +34,7 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 20 skill(s) below.
+- **`reputation/`** — 19 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
@@ -170,7 +170,7 @@ kind: group-index
 - **`focsec`** (low) — OSINT tool: Focsec.
 - **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
-- **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
+- **`fuzzuli`** (low) — Use when you have a `domain` and want to hunt exposed backup/sensitive files on its web server — generates a domain-tailored wordlist and pr
 - **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
@@ -298,7 +298,6 @@ kind: group-index
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
 - **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
-- **`netcraft-site-report`** (low) — OSINT tool: Netcraft Site Report.
 - **`netcraft`** (low) — Site reports, DNS search, and hosting history tools.
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr

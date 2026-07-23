@@ -136,7 +136,7 @@ kind: group-index
 - **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
 - **`grep-for-osint`** (low) — simple toolkit that helps to quickly extract "important data" (phone numbers, email addresses, URLs) from the text / file directory
 - **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
-- **`guru-com`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
 - **`hashtagifyme`** (low) — Search for Twitter Hashtags
 - **`hispavista-spain`** (low) — Spain-based digital marketing service
 - **`hoverme`** (low) — Tool that uncovers social media profiles for individuals
