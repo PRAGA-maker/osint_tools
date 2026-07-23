@@ -144,7 +144,7 @@ kind: group-index
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (low) — OSINT tool: DomainWatch.
-- **`dome`** (low) — Fast and reliable #python script that makes active and/or passive scan to obtain subdomains and search for open ports. Used 21 different #OS
+- **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
 - **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
@@ -228,7 +228,7 @@ kind: group-index
 - **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
 - **`intodns-ai`** (low) — OSINT tool: IntoDNS.ai.
 - **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
-- **`investigo`** (low) — A very simple and fast (written in #go) tool that searches for active links to social network accounts by username (or multiple usernames)
+- **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
 - **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
 - **`ip-checking`** (low) — OSINT tool: IP Checking.
 - **`ip-chicken`** (low) — Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.
@@ -323,7 +323,7 @@ kind: group-index
 - **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
 - **`opensquat`** (low) — Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
-- **`orb`** (low) — Massive footprinting tool.
+- **`orb`** (low) — Use when you have a `domain` and want a broad automated footprint — one CLI run gathers WHOIS, subdomains, DNS records, and (active) port/se
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
@@ -355,7 +355,7 @@ kind: group-index
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
 - **`reverse-google-analytics`** (low) — OSINT tool: Reverse Google Analytics.
-- **`reverse-ip-lookup`** (low) — OSINT tool: Reverse IP Lookup.
+- **`reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it — returns the `domain` neighbours sharing that server, exposing li
 - **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
 - **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
 - **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.

@@ -95,7 +95,6 @@ kind: group-index
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
 - **`vizard-ai`** (low) — OSINT tool: vizard.ai.
 - **`webopedia-com`** (low) — OSINT tool: webopedia.com.
-- **`wordreference-translator`** (low) — Tool for translating text and web content from one language to another
 - **`yamii`** (low) — OSINT tool: Yamii.
 - **`yandex-translate`** (low) — Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation —
 - **`yourdictionary-online-links`** (low) — Links to over 6600 online foreign language dictionaries and translation services

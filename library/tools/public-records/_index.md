@@ -685,7 +685,6 @@ kind: group-index
 - **`panjiva-com`** (low) — Use when you have a company `name`/`employer-org` in trade and want its import/export shipments — returns bill-of-lading records naming supp
 - **`paperpanda`** (medium) — Use when you have a paywalled academic article and want a free full-text PDF — returns a legally-available open-access copy in one click.
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
-- **`parler-archive-search`** (low) — OSINT tool: Parler Archive Search.
 - **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.
 - **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
 - **`penn-world-table`** (low) — OSINT tool: Penn World Table.

@@ -317,7 +317,6 @@ kind: group-index
 - **`indeed-job-search-engine-worldwide`** (low) — Use when you have an `employer-org`, role, or location and want job-market context — returns job postings that reveal employers, locations, 
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
 - **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia
-- **`inside`** (low) — Human edited web directory, formerly known as Mahalo
 - **`intelligence-x`** (medium) — Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop la
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
 - **`international-standard-classification-of-occupations`** (low) — Use when you have an `employer-org`/job-title lead and want to normalize or interpret an occupation into a standard ISCO code — returns the 

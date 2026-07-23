@@ -256,7 +256,6 @@ kind: group-index
 - **`portrait-search`** (high) — Use when you have a `name` of a notable/historical American and want catalogued portraits of them — returns portrait `image`s and biographic
 - **`preservetube-com`** (high) — Use when you have a YouTube video/channel (`social-profile`) and want to recover or archive it before/after deletion — returns the preserved
 - **`profileimageintel`** (high) — Use when you have a social `username`, profile-image URL, or WhatsApp `phone` and want to know when the profile picture was set/changed — re
-- **`pureref`** (low) — Image workspace; lets you arrange images in groups, organize them, etc.
 - **`quiteaplaylist-com`** (high) — Use when you have a YouTube playlist (a subject's `social-profile`) and want to recover videos that were deleted or made private — returns t
 - **`radioreference-station-search`** (medium) — Use when you have a `geolocation`/agency or radio call sign and want radio-comms intelligence — returns scanner frequencies, trunked-system 
 - **`remini-ai-photo-enhancer`** (high) — Use when you have a low-resolution or blurry `image`/`face` and want an AI upscale/restoration to make features more legible for a human vie

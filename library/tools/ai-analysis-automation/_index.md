@@ -114,7 +114,6 @@ kind: group-index
 - **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
 - **`diceware-generator`** (low) — OSINT tool: Diceware Generator.
 - **`digital-privacy-ffffffff0x`** (low) — Collection of privacy and security / OSINT resources.
-- **`disa-code-template-generator`** (low) — OSINT tool: DISA Code Template Generator.
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
 - **`disconnect`** (low) — OSINT tool: Disconnect.
 - **`discoshell`** (low) — OSINT tool: Discoshell.

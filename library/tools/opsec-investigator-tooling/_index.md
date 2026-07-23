@@ -31,7 +31,6 @@ kind: group-index
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — OSINT tool: Am I unique?.
 - **`amazon-mobile-app-mobile-android`** (low) — App for mobile devices for online shopping
-- **`amazon-mobile-app-mobile-ios`** (low) — App for mobile devices for online shopping
 - **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
 - **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
@@ -151,7 +150,6 @@ kind: group-index
 - **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fakeinfo`** (low) — Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, W
-- **`faker`** (low) — Python tool for generating fake data in different languages. Generate addresses, city names, postal codes (you can choose the country), name
 - **`falcon-arch-linux`** (low) — OSINT tool: Falcon Arch Linux.
 - **`fastscanner-app-mobile-android`** (low) — App for mobile devices for turning your smartphone camera into a document scanner
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
@@ -493,7 +491,6 @@ kind: group-index
 - **`waterfox`** (low) — OSINT tool: Waterfox.
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
-- **`web-proxy`** (low) — free web proxy
 - **`webdext`** (low) — An intelligent and quick web data extractor for #GoogleChrome. Support data extraction from web pages containing a list of objects such as p
 - **`webmapper`** (low) — Extension that create a map-visualization based by browser history. A visual representation of the most visited sites in 10, 20, 50 or 100 d
 - **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
