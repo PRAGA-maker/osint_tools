@@ -122,7 +122,6 @@ kind: group-index
 - **`catawiki`** (medium) — Use when you have a `username` or `name` and want to trace a collectibles seller/bidder or a specific object's sale — returns `social-profil
 - **`ceek-meta-search-japan`** (low) — Use when you have a Japanese-language `name`, `username` or keyword and want results aggregated across engines and Japanese news/video sourc
 - **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
-- **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
 - **`chegg-search-engine`** (medium) — Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public p
 - **`chrome-extension-archive-search-engine`** (medium) — Use when you have a Chrome extension name, id, or developer and want to find archived/indexed extension pages — returns `domain`, `social-pr
 - **`chromium-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it in the Chromium source tree — returns committer `name`/`email` and co
@@ -251,7 +250,6 @@ kind: group-index
 - **`globalleaks`** (low) — Use when you need to RECEIVE tips securely or recognise a whistleblowing intake site — open-source software that powers anonymous, encrypted
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
-- **`goo-japan`** (low) — OSINT tool: Goo (Japan).
 - **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
@@ -309,7 +307,6 @@ kind: group-index
 - **`https-vulmon-com`** (medium) — Use when you have a `domain`/software or a CVE and want vulnerability intelligence — returns CVE details, affected products and exploit refe
 - **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — Use when you need a curated reference of OSINT tools and methods — returns a categorized compendium of resources to pick the right tool for 
-- **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
 - **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
 - **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp

@@ -245,7 +245,7 @@ kind: group-index
 - **`oda-the-online-disassembler`** (low) — OSINT tool: ODA - The Online Disassembler.
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
-- **`oftoolbox`** (low) — List of tools to create, share and monetize adult content (OnlyFans-focused).
+- **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
 - **`ollama`** (low) — Private AI analysis of sensitive OSINT data, local document processing without cloud exposure
 - **`onion-lookup`** (low) — OSINT tool: onion-lookup.
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
@@ -307,7 +307,6 @@ kind: group-index
 - **`privazer`** (low) — OSINT tool: Privazer.
 - **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
-- **`proton-mail`** (low) — OSINT tool: Proton Mail.
 - **`psn-monitor`** (low) — OSINT tool: psn_monitor.
 - **`pyba`** (low) — OSINT tool: Pyba.
 - **`pygreynoise`** (low) — OSINT tool: pygreynoise.

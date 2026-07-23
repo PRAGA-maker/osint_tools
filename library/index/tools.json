@@ -9783,28 +9783,29 @@
   {
     "id": "oftoolbox",
     "name": "oftoolbox",
-    "description": "List of tools to create, share and monetize adult content (OnlyFans-focused).",
+    "description": "Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a curated directory of OnlyFans/creator platforms (context, not person-level data).",
     "url": "https://oftoolbox.net",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Reference of adult-content creator tooling (limited OSINT use)",
+    "bestFor": "Reference map of the adult-content-creator tool ecosystem (CRMs, schedulers, DMCA services) for context, not a profile lookup.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the directory; individual listed tools have their own (free or paid) pricing.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and reveals nothing to any subject — you are only reading a public tool list. It does not query or expose any creator's account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent affiliate-style directory of creator tools; listings are curated by the site owner and not independently verified, so treat entries as leads.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -9813,15 +9814,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OF Toolbox",
+      "oftoolbox.net"
+    ],
     "tags": [
       "onlyfans",
       "creator-tools",
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/oftoolbox.md"
   },
   {
@@ -12552,42 +12556,6 @@
       "pyosint"
     ],
     "_file": "library/tools/ai-analysis-automation/profounder.md"
-  },
-  {
-    "id": "proton-mail",
-    "name": "Proton Mail",
-    "description": "OSINT tool: Proton Mail.",
-    "url": "https://protonmail.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/proton-mail.md"
   },
   {
     "id": "psn-monitor",
@@ -51898,46 +51866,6 @@
     "_file": "library/tools/documents-metadata/flashcard-machine.md"
   },
   {
-    "id": "folkd",
-    "name": "Folkd",
-    "description": "Social bookmarking and social search site",
-    "url": "http://www.folkd.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/folkd.md"
-  },
-  {
     "id": "follow-up-then-email-reminder-program",
     "name": "Follow Up Then Email Reminder Program",
     "description": "Program that provides email-based scheduling and reminder services",
@@ -71508,47 +71436,53 @@
   {
     "id": "httpfy",
     "name": "HTTPFY",
-    "description": "A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redirect location and many other options (view pic).",
-    "url": "https://github.com/devXprite/httpfy/",
+    "description": "Use when you have a `domain` (or a list of domains) and want fast HTTP fingerprinting — returns which are live plus status, title, server, content-type, redirect target and body metrics.",
+    "url": "https://github.com/devXprite/httpfy",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly probing a list of domains to find the live ones and grab their HTTP fingerprints.",
     "selectorsIn": [
-      "domain",
-      "geolocation"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "geolocation"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (GPL-3.0); installed locally via npm/Node.js.",
+    "opsec": "active",
+    "opsecNote": "HTTPFY makes real HTTP requests to each target domain, so your IP appears in the target's web/server logs. This is active reconnaissance — route it through a VPN/proxy or a disposable VPS if you don't want the probe traced back to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source Node.js utility by an independent developer (devXprite) on GitHub; code is inspectable but not from a major vendor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "infooze"
     ],
+    "aliases": [
+      "httpfy",
+      "devXprite/httpfy"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Domain/IP investigation",
+      "http-probe"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/httpfy.md"
   },
   {
@@ -73860,46 +73794,56 @@
   {
     "id": "ip2location-com",
     "name": "IP2Location.com",
-    "description": "Accurate geolocation with proxy detection",
+    "description": "Use when you have an `ip-address` and want its geolocation plus proxy/VPN detection — returns geolocation, address (city/region/country), employer-org (ISP/ASN), and anonymizer status.",
     "url": "https://www.ip2location.com/demo",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Accurate geolocation with proxy detection",
-    "input": "IP address",
-    "output": "Location, ASN, proxy type, VPN status, timezone",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Turning an IP address into a location, ISP/ASN, and a proxy/VPN/anonymizer verdict.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web demo works with no account; a free account unlocks LITE databases and tools; higher-accuracy commercial databases and the IP2Location.io API are paid.",
     "opsec": "passive",
-    "opsecNote": "Passive database lookup; free tier limited.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "Passive database lookup — you query IP2Location's servers about the IP, never the IP's owner, so the subject sees nothing. Only your query hits IP2Location; use their site over a clean session if you don't want the lookup tied to you.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IP2Location is a long-established commercial IP-intelligence vendor; its geolocation and proxy databases are widely used in industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": false,
     "relatedTools": [
       "ip2location-free-email-header-tracer",
       "ip2location-free-ip-location-search"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IP2Location demo",
+      "ip2location.com"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "ip-geolocation",
+      "proxy-detection"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/ip2location-com.md"
   },
   {
@@ -87957,45 +87901,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/vincos-it.md"
-  },
-  {
-    "id": "virus-total",
-    "name": "Virus Total",
-    "description": "OSINT tool: Virus Total.",
-    "url": "https://www.virustotal.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "virustotal"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/virus-total.md"
   },
   {
     "id": "visual-ping-website-monitoring",
@@ -174240,41 +174145,49 @@
   {
     "id": "google-dashboard-privacy-control-tool",
     "name": "Google Dashboard Privacy Control Tool",
-    "description": "Website that allows Gmail users to turn off history, location and other surfing characteristics",
-    "url": "https://www.google.com/dashboard",
+    "description": "Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected devices — returns a self-review of your account's data footprint.",
+    "url": "https://myaccount.google.com/dashboard",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Self-audit and hardening of your own Google account before/after conducting online investigations.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Google service; requires signing in to the account you are auditing.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This operates only on YOUR OWN Google account — it is a personal OpSec hygiene tool, not a way to query a target. Use it to disable Web & App Activity, Location History, and to review connected devices/apps on the sock-puppet or investigator account you use for OSINT work, so your searches don't leak into a linked identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google Account settings surface (the old google.com/dashboard now redirects into myaccount.google.com); not a third-party scraper.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google Dashboard",
+      "Google Account activity controls",
+      "myaccount.google.com/dashboard"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "opsec"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-dashboard-privacy-control-tool.md"
   },
   {
@@ -187770,50 +187683,6 @@
       "user-agent-parser"
     ],
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/whatismybrowser-com.md"
-  },
-  {
-    "id": "whatsapp-fake-chat-generator",
-    "name": "WhatsApp Fake Chat Generator",
-    "description": "Generate fake WhatsApp conversations.",
-    "url": "http://www.fakewhats.com/generator",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "Creating mockups (not an intelligence-gathering tool)",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp",
-      "mockup"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fake-whatsapp-chat-generator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/whatsapp-fake-chat-generator.md"
   },
   {
     "id": "whatsapp-messaging-app-mobile-android",
@@ -247644,37 +247513,47 @@
   {
     "id": "pew-research-center",
     "name": "Pew Research Center",
-    "description": "OSINT tool: Pew Research Center.",
-    "url": "http://www.pewinternet.org/datasets",
+    "description": "Use when you have a demographic/behavioural research question and want authoritative US survey microdata and reports — returns downloadable datasets and statistics, not individual-person records.",
+    "url": "https://www.pewresearch.org/internet/datasets",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Context and base rates on how US populations behave online and offline (social media, dating apps, privacy attitudes).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; a free account (email login) is required to download the raw datasets, though reports are readable without one.",
+    "opsec": "passive",
+    "opsecNote": "Reading reports is fully passive. Downloading datasets requires registering a free account, which ties your email to the request — use a research/sock-puppet email if you don't want it linked to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Pew Research Center is a well-established non-partisan US fact tank; its survey methodology and microdata are widely cited in academia and journalism.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Pew Internet",
+      "pewinternet.org",
+      "Pew Research datasets"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/pew-research-center.md"
   },
   {
@@ -267949,48 +267828,6 @@
     "_file": "library/tools/search-engines/cellufun.md"
   },
   {
-    "id": "chatbottle",
-    "name": "ChatBottle",
-    "description": "A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of these, 260 are chatbots related to cats for Facebook Messenger.",
-    "url": "https://chatbottle.co/bots/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face",
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "chatbottle-telegram-bots"
-    ],
-    "_file": "library/tools/search-engines/chatbottle.md"
-  },
-  {
     "id": "chegg-search-engine",
     "name": "Chegg",
     "description": "Use when you have a name and reason to think a subject is a student or tutor and want to check an education-services platform for a public profile or Q&A/review footprint — returns social-profile leads.",
@@ -274463,42 +274300,6 @@
     "_file": "library/tools/search-engines/goldenowl-ai.md"
   },
   {
-    "id": "goo-japan",
-    "name": "Goo (Japan)",
-    "description": "OSINT tool: Goo (Japan).",
-    "url": "http://www.goo.ne.jp",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/goo-japan.md"
-  },
-  {
     "id": "goodgopher-com",
     "name": "GoodGopher.com",
     "description": "OSINT tool: GoodGopher.com.",
@@ -277605,45 +277406,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/i-intelligence-osint-handbook-2025.md"
-  },
-  {
-    "id": "i-search-from",
-    "name": "I search from",
-    "description": "allows you to customize the country, language, device, city when searching on Google",
-    "url": "http://isearchfrom.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "isearchfrom-com"
-    ],
-    "_file": "library/tools/search-engines/i-search-from.md"
   },
   {
     "id": "iconfinder-com",

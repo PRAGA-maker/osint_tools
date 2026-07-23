@@ -180,7 +180,7 @@ kind: group-index
 - **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
 - **`google-chrome`** (low) — Web browser developed by Google
-- **`google-dashboard-privacy-control-tool`** (low) — Website that allows Gmail users to turn off history, location and other surfing characteristics
+- **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-docs-voice-comments`** (low) — simple trick to save time. Voice comments in GoogleDocs, Sheets, Slides, and Forms.
 - **`google-forum-search`** (low) — Firefox browser add-on that allows for Google Forum Search
 - **`google-guide-to-removing-content-from-google`** (low) — Google webpage providing information about how to request the removal of personal information from their various services
@@ -491,7 +491,6 @@ kind: group-index
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
 - **`wevideo-video-editor-app-mobile-android`** (low) — App for mobile devices for social networking and creating, editing and publishing videos
-- **`whatsapp-fake-chat-generator`** (low) — Generate fake WhatsApp conversations.
 - **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
 - **`whatsapp-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging services
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.

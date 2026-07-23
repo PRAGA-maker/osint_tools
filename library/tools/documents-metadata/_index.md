@@ -110,7 +110,6 @@ kind: group-index
 - **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
-- **`folkd`** (low) — Social bookmarking and social search site
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
 - **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents

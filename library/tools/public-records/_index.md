@@ -692,7 +692,7 @@ kind: group-index
 - **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB
 - **`people-search-4`** (high) — Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and
 - **`permits-and-inspections-search-by-state`** (high) — Use when you have a property `address` or owner `name` and want building/permit records — returns a state-by-state directory of official per
-- **`pew-research-center`** (low) — OSINT tool: Pew Research Center.
+- **`pew-research-center`** (low) — Use when you have a demographic/behavioural research question and want authoritative US survey microdata and reports — returns downloadable 
 - **`pharmacyregulation-org`** (high) — Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, numb
 - **`pibuzz`** (medium) — Use when you have a `name` (or `employer-org`) and want to find where a US public-sector subject works and what they earn — returns a direct
 - **`plain-view-project`** (medium) — Use when you have the `name` of a current or former police officer in one of the covered US departments and want their public Facebook posts

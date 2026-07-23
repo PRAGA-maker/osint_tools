@@ -203,7 +203,7 @@ kind: group-index
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
-- **`httpfy`** (low) — A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redire
+- **`httpfy`** (low) — Use when you have a `domain` (or a list of domains) and want fast HTTP fingerprinting — returns which are live plus status, title, server, c
 - **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse
 - **`hussh`** (low) — shell script for domain analyzing
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
@@ -444,7 +444,6 @@ kind: group-index
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
 - **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
 - **`vincos-it`** (low) — world social media popularity map
-- **`virus-total`** (low) — OSINT tool: Virus Total.
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
 - **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
