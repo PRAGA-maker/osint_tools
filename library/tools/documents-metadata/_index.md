@@ -132,7 +132,7 @@ kind: group-index
 - **`google-cloud-ocr`** (low) — OSINT tool: Google Cloud OCR.
 - **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
 - **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
-- **`google-to-search-profiles-on-github`** (low) — OSINT tool: Google to search profiles on GitHub.
+- **`google-to-search-profiles-on-github`** (low) — Use when you have a `name`, skill, or `employer-org` and want to find someone's GitHub profile — builds a Google X-ray search string to surf
 - **`grep-app`** (low) — Use when you have a `username`, `email`, `domain` or other string and want to find it committed in public code — returns the repos/files (an
 - **`grep-for-osint`** (low) — simple toolkit that helps to quickly extract "important data" (phone numbers, email addresses, URLs) from the text / file directory
 - **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content

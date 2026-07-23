@@ -86,7 +86,7 @@ kind: group-index
 - **`compiler-explorer`** (low) — OSINT tool: Compiler Explorer.
 - **`complete-email-scraper`** (low) — Paste the link to the site and the bot finds the sitemap. The bot then goes through all the links on the site looking for email addresses (s
 - **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
-- **`copyleaks`** (low) — Detecting AI-written reports, verifying authenticity of documents, plagiarism analysis
+- **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — OSINT tool: creately.
 - **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
 - **`crossfilter`** (low) — OSINT tool: Crossfilter.

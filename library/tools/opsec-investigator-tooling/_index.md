@@ -230,7 +230,7 @@ kind: group-index
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
-- **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
+- **`kali-anonsurf`** (low) — Use for investigator opsec — routes your entire system's network traffic through Tor at the OS level and adds anti-forensic helpers, so all 
 - **`kasm`** (low) — OSINT tool: Kasm.
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015

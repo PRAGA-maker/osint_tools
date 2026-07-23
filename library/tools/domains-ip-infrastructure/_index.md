@@ -131,7 +131,7 @@ kind: group-index
 - **`dirhunt`** (low) — Tool for search and analyze directories, can find interesting things if the server has the "index of" mode enabled (also useful if the direc
 - **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website
 - **`discord-resolver`** (low) — OSINT tool: Discord Resolver.
-- **`ditto`** (low) — Dsmall tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are av
+- **`ditto`** (low) — Use when you have a `domain` and want to find look-alike/homograph variants — generates confusable domain permutations and checks which are 
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
 - **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
@@ -149,7 +149,7 @@ kind: group-index
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
 - **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
-- **`dpulse`** (low) — Tool for a complex, comprehensive approach to domain OSINT with reporting.
+- **`dpulse`** (low) — Use when you have a `domain` and want an all-in-one recon pass with a written report — enumerates subdomains, IPs, emails, and infrastructur
 - **`drishti`** (low) — Nodejs toolkit for OSINT
 - **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an

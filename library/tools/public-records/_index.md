@@ -186,7 +186,7 @@ kind: group-index
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
 - **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
 - **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — Use when you have a `name` or `employer-org` and want to check U.S. PPP/pandemic loans — returns employer-org, address, and associate (owner
-- **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
+- **`corporate-affairs-registry-database`** (medium) — Use when you have a company `name` or a person's `name` and want New Brunswick (Canada) corporate records — returns employer-org, registered
 - **`corporate-information`** (medium) — Use when you have a company `name` and want a consolidated financial/company profile — returns employer-org details, address and executive n
 - **`corporationwiki`** (medium) — Use when you have a `name` (or `employer-org`) and want to map a person's US business ties — returns associated companies, co-officers, and 
 - **`corporative-registry-catalog`** (medium) — Use when you have an `employer-org` or company lead in a specific country and want the link to that country's official business/company regi
