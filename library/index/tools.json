@@ -11310,44 +11310,52 @@
   },
   {
     "id": "osinttracker",
-    "name": "OSINTTracker",
-    "description": "A simple and free online tool to visualize investigations and collect data about different entry points (domains, email addresses, crypto wallet numbers) using hundreds of different online services.",
+    "name": "Osintracker",
+    "description": "Use when you have multiple entry points (`email`, `domain`, `crypto-wallet`, phone, accounts) and want to map and document an investigation as a linked graph — returns a visual, sourced entity/relationship board.",
     "url": "https://app.osintracker.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising and documenting an OSINT investigation as a local entity-relationship graph.",
     "selectorsIn": [
-      "crypto-wallet",
-      "email"
-    ],
-    "selectorsOut": [
-      "address",
+      "email",
       "crypto-wallet"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "associate",
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web app; all investigation data is stored locally in your browser (IndexedDB) — no account required, and nothing is uploaded.",
+    "opsec": "passive",
+    "opsecNote": "Data never leaves your machine (browser-local storage), which is strong OpSec for casework. It doesn't perform lookups against targets itself — you import findings from other tools — so it adds no target-facing footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Free tool by OSINT analyst Matthieu Amiot; well-regarded in the OSINT community. It's a documentation/visualisation aid — it holds your data, it doesn't source or verify it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINTTracker",
+      "app.osintracker.com"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "Tools collections/toolkits",
+      "visualization",
+      "case-management"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osinttracker.md"
   },
   {
@@ -66737,42 +66745,51 @@
   {
     "id": "dirhunt",
     "name": "Dirhunt",
-    "description": "Tool for search and analyze directories, can find interesting things if the server has the \"index of\" mode enabled (also useful if the directory listing is not enabled).",
+    "description": "Use when you have a `domain` and want to discover and analyse its web directories — finds \"index of\" listings, hidden folders and files across many sources, returning `domain`/URL paths.",
     "url": "https://github.com/Nekmo/dirhunt",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and analysing exposed/hidden web directories on a domain without brute force.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT, Nekmo); a Python CLI (`pip3 install dirhunt`). No API key needed.",
+    "opsec": "active",
+    "opsecNote": "Dirhunt crawls the target site directly (it also pulls hints from Wayback/VirusTotal/crt.sh), so it generates real requests to the target from your IP. The project itself asks for the site owner's consent; use a sock-puppet IP/proxy and only scan what you're authorised to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known open-source directory analyser; efficient and widely used, but findings are candidate paths to verify manually.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nekmo/dirhunt"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Find directories"
+      "Find directories",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "waybackurls"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/dirhunt.md"
   },
   {
@@ -66815,43 +66832,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/dirscraper.md"
-  },
-  {
-    "id": "discord-resolver",
-    "name": "Discord Resolver",
-    "description": "OSINT tool: Discord Resolver.",
-    "url": "https://www.leaked.site/index.php?resolver/discord.0/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "leaked-site"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/discord-resolver.md"
   },
   {
     "id": "ditto",
@@ -68948,42 +68928,54 @@
   {
     "id": "fast-google-dorks-scan",
     "name": "Fast Google Dorks Scan",
-    "description": "Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.",
+    "description": "Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive file types and path-traversal `domain`/URL hits.",
     "url": "https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Automated multi-category Google-dork scan of a domain for exposed panels and sensitive files.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (IvanGlinkin); a Bash script, optional Docker. No API key for the core run.",
+    "opsec": "active",
+    "opsecNote": "It issues many automated Google queries about the target domain from your IP; Google will CAPTCHA/throttle aggressive dorking, and the queries are attributable. Use a sock-puppet IP/VPN or the built-in proxy option, and pace it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source dorking script (1.7k+ stars); it only surfaces search-indexed content, so results are leads to verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IvanGlinkin/Fast-Google-Dorks-Scan",
+      "FGDS"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "google-dorks"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
+    "relatedTools": [
+      "dorks-hunter"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/fast-google-dorks-scan.md"
   },
   {
@@ -85132,29 +85124,34 @@
   {
     "id": "statscrop",
     "name": "StatsCrop",
-    "description": "Quick website popularity snapshots",
+    "description": "Use when you have a `domain` and want a quick popularity/traffic snapshot plus WHOIS and site stats — returns estimated rank, ownership and infrastructure summary as a starting profile.",
     "url": "https://www.statscrop.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Quick website popularity snapshots",
-    "input": "Domain",
-    "output": "Traffic rank estimates and summary site stats",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A fast, free at-a-glance profile of a website's popularity, WHOIS and basic stats.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free with no registration; instantly generates a report from a domain name.",
     "opsec": "passive",
-    "opsecNote": "Reads provider-side metrics without direct target interaction by the user.",
+    "opsecNote": "StatsCrop compiles third-party/estimated metrics without you visiting the target site directly, so it's low-footprint. Your query goes to StatsCrop over your IP; use a sock-puppet/VPN for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free SEO/stats aggregator; its traffic-rank and valuation figures are rough estimates, not measured analytics — useful for orientation, not for precise numbers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -85162,11 +85159,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "statscrop.com"
+    ],
+    "tags": [
+      "analytics",
+      "website-stats",
+      "whois"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/statscrop.md"
   },
   {
@@ -124678,35 +124681,49 @@
   {
     "id": "the-webcam-network",
     "name": "The Webcam Network",
-    "description": "OSINT tool: The Webcam Network.",
+    "description": "Use when you have a place or `geolocation` and want public live webcams at or near it — returns nearby camera feeds to visually confirm a location, weather or activity.",
     "url": "http://www.the-webcam-network.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding public live webcams near a given location for visual ground-truthing.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory; no account. Points to third-party public webcam feeds (data from Webcam Galore / GEOnet Names Server).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory reveals nothing about a target. When you open a linked webcam feed you're visiting that third-party host — apply sock-puppet browsing hygiene. All cameras are already-public feeds.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running (since 2004) public-webcam directory; it aggregates third-party feeds, so camera availability and freshness vary and some links go dead.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "the-webcam-network.com"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation",
+      "live-imagery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/the-webcam-network.md"
   },
   {
@@ -173565,25 +173582,26 @@
   },
   {
     "id": "forager",
-    "name": "Forager",
-    "description": "Quick search tool extension by Chrome",
+    "name": "Foragear QuickSearch",
+    "description": "Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds reading Google results, not a data source.",
     "url": "https://chrome.google.com/webstore/detail/foragear-quicksearch-%20too/cldhjjcfiadipgdiiklpdhdkkakacdbm",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Speeding up manual triage of Google search results via inline keyword highlighting and autoscroll.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome extension (optional PayPal tip). Installed from the Chrome Web Store; a small independent project.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A browser productivity add-on that highlights text in pages you already open — it doesn't query targets. As with any extension, it can read page content, so install only from the official Web Store and don't run it while handling highly sensitive material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small third-party Chrome extension (low install count) that only enhances result reading; verify its Web Store listing and permissions before installing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -173592,15 +173610,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Forager",
+      "Foragear Quick Search Tool"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "browser-extension"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/forager.md"
   },
   {
@@ -244656,29 +244678,38 @@
   {
     "id": "ofac-sanctions-list-search",
     "name": "OFAC Sanctions List Search",
-    "description": "Checking individuals or entities against U.S. sanctions programs",
+    "description": "Use when you have a `name` (person or `employer-org`) and want to check it against U.S. Treasury sanctions (SDN and consolidated lists) — returns matched records with program, list type and a confidence score.",
     "url": "https://sanctionssearch.ofac.treas.gov/",
     "category": "public-records",
     "path": [
       "public-records",
       "sanctions-screening"
     ],
-    "bestFor": "Checking individuals or entities against U.S. sanctions programs",
-    "input": "Name, address, entity type, ID number, or sanctions program",
-    "output": "Matched records with name, sanctions program, list designation, and confidence score",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative free check of a name against U.S. OFAC sanctions lists.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, official U.S. government tool; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Public U.S. government search tool; queries are submitted to a federal server and may be logged.",
+    "opsecNote": "You submit a name to a U.S. Treasury server, which may log the query; nothing is sent to the subject. No login. Use standard sock-puppet browsing hygiene, though there's no target-facing exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. Treasury's Office of Foreign Assets Control; this is the authoritative primary source for OFAC designations.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -244686,13 +244717,22 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "ofac-specially-designated-nationals-search-united-states"
+      "ofac-specially-designated-nationals-search-united-states",
+      "opensanctions-org"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OFAC SDN Search",
+      "sanctionssearch.ofac.treas.gov"
+    ],
+    "tags": [
+      "sanctions",
+      "ofac",
+      "kyc",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sanctions-screening/ofac-sanctions-list-search.md"
   },
   {
@@ -281246,46 +281286,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/search-engines/lukol-com.md"
-  },
-  {
-    "id": "lycos",
-    "name": "Lycos",
-    "description": "OSINT tool: Lycos.",
-    "url": "https://www.lycos.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "general-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "lycos-image-search",
-      "lycos-mail-usa"
-    ],
-    "_file": "library/tools/search-engines/lycos.md"
   },
   {
     "id": "mac-address-lookup",
@@ -352205,39 +352205,49 @@
   },
   {
     "id": "planefinder-army-live-flight-tracker",
-    "name": "Planefinder Army Live Flight Tracker",
-    "description": "OSINT tool: Planefinder Army Live Flight Tracker.",
+    "name": "Planefinder — Army Flight Tracker",
+    "description": "Use when you have an aircraft callsign, registration or want to watch military/\"ARMY\" flights live — returns real-time position, altitude, route and `geolocation` from ADS-B data.",
     "url": "https://planefinder.net/flight/ARMY",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Real-time tracking of aircraft (incl. military \"ARMY\" callsigns) on a live ADS-B map.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free live tracking on the web/apps (ad-supported); paid plans add extended playback history and extra data. No account for basic tracking.",
+    "opsec": "passive",
+    "opsecNote": "You observe public ADS-B broadcasts via Planefinder's servers — you don't touch the aircraft. Your queries go to planefinder.net over your IP; use a sock-puppet/VPN for sensitive monitoring. Note some military aircraft don't broadcast ADS-B and won't appear.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Planefinder is an established commercial ADS-B flight tracker; data is community/receiver-sourced ADS-B, accurate where coverage exists but blind where it doesn't.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Planefinder ARMY",
+      "planefinder.net"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Military tracking"
+      "Military tracking",
+      "flight-tracking",
+      "adsb"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "plane-finder",
       "planefinder"

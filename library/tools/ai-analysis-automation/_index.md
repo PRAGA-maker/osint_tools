@@ -278,7 +278,7 @@ kind: group-index
 - **`osintcurious`** (low) — OSINT tool: OSINTCurious.
 - **`osintstalker`** (low) — OSINT tool: OsintStalker.
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
-- **`osinttracker`** (low) — A simple and free online tool to visualize investigations and collect data about different entry points (domains, email addresses, crypto wa
+- **`osinttracker`** (low) — Use when you have multiple entry points (`email`, `domain`, `crypto-wallet`, phone, accounts) and want to map and document an investigation 
 - **`ossec`** (low) — OSINT tool: OSSEC.
 - **`outwit`** (low) — Use when you have a `domain`/URL (a page, listing, or profile set) and want to extract structured data or media at scale — turns web pages i
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management

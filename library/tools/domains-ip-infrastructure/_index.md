@@ -128,9 +128,8 @@ kind: group-index
 - **`dark-web-informer`** (low) — Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and
 - **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
 - **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
-- **`dirhunt`** (low) — Tool for search and analyze directories, can find interesting things if the server has the "index of" mode enabled (also useful if the direc
+- **`dirhunt`** (low) — Use when you have a `domain` and want to discover and analyse its web directories — finds "index of" listings, hidden folders and files acro
 - **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website
-- **`discord-resolver`** (low) — OSINT tool: Discord Resolver.
 - **`ditto`** (low) — Use when you have a `domain` and want to find look-alike/homograph variants — generates confusable domain permutations and checks which are 
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
 - **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
@@ -159,7 +158,7 @@ kind: group-index
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
 - **`expandurl`** (low) — URL expander that resolves shortened links to their final destination. Referenced in sinwindie's MISC URL Expander bookmarklet.
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
-- **`fast-google-dorks-scan`** (low) — Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.
+- **`fast-google-dorks-scan`** (low) — Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive 
 - **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
 - **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
 - **`favicon-hasher`** (low) — Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Sh

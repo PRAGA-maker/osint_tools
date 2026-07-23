@@ -377,7 +377,6 @@ kind: group-index
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
-- **`lycos`** (low) — OSINT tool: Lycos.
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
 - **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
 - **`magportal`** (low) — OSINT tool: MagPortal.

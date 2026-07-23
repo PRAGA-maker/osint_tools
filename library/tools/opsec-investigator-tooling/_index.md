@@ -156,7 +156,7 @@ kind: group-index
 - **`firefox-stealth`** (low) — OSINT tool: firefox-stealth.
 - **`firefox`** (low) — OSINT tool: Firefox.
 - **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
-- **`forager`** (low) — Quick search tool extension by Chrome
+- **`forager`** (low) — Use when you're scanning many search results and want relevant sections auto-highlighted and jumped to — a Chrome extension that speeds read
 - **`foursquare-swarm-social-networking-app-mobile-android`** (low) — App for mobile devices for social messaging and reviews
 - **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
 - **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
