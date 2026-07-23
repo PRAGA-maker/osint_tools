@@ -32,7 +32,7 @@ kind: group-index
 - **`credit-card-center`** (low) — OSINT tool: Credit Card Center.
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
 - **`dargle`** (low) — OSINT tool: Dargle.
-- **`dark-fail`** (low) — List of several dozen services in the .onion domain (marketplaces, email clients, VPN services, search engines) with up-to-date links and st
+- **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
 - **`dark-tracer`** (low) — OSINT tool: Dark Tracer.
 - **`dark-web-scraper`** (low) — Specify the start link and depth of crawl to research the .onion website for sensitive data (crypto wallets, API keys, emails, phone numbers
 - **`darknet-market-list`** (low) — OSINT tool: Darknet Market List.

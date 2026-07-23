@@ -174,7 +174,7 @@ kind: group-index
 - **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
-- **`geowifi`** (low) — Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).
+- **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
 - **`get-link-info`** (low) — OSINT tool: Get Link Info.
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
 - **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
@@ -334,7 +334,6 @@ kind: group-index
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
-- **`quantcast`** (low) — OSINT tool: Quantcast.
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
 - **`radb`** (low) — Provides information collected from all the registries that form part of the Internet Routing Registry

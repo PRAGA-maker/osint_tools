@@ -50,7 +50,7 @@ kind: group-index
 - **`happyscribe-com`** (low) — Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) —
 - **`idiomax-translation`** (low) — OSINT tool: IdiomaX Translation.
 - **`imtranslator-comparison-tool`** (low) — Tool for translating text and web content from one language to another
-- **`imtranslator`** (low) — OSINT tool: imTranslator.
+- **`imtranslator`** (low) — Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-Engli
 - **`itranslate-voice`** (low) — OSINT tool: iTranslate Voice.
 - **`itranslate`** (low) — OSINT tool: iTranslate.
 - **`know-your-meme`** (low) — OSINT tool: Know Your Meme.

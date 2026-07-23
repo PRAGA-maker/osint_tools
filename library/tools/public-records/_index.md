@@ -223,7 +223,7 @@ kind: group-index
 - **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
 - **`d-and-b-company-search`** (low) — Use when you have a company `name` and want its D-U-N-S profile — registered address, industry, size, executives and corporate family — retu
 - **`data-ddosecrets-search`** (low) — Use when you have a `name`, `email` or `domain` and want to find it inside published leaked/hacked datasets — returns matching documents and
-- **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
+- **`data-gov-uk`** (low) — Use when you have a UK `name`, `employer-org`, `address` or place and want official open datasets about it — returns government records on c
 - **`data-gov`** (low) — Use when you need an official US government dataset (federal, some state/local) — a free searchable catalog of 300k+ open datasets by keywor
 - **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
 - **`databasd`** (low) — OSINT tool: Databasd.
@@ -705,7 +705,6 @@ kind: group-index
 - **`police-protest-videos`** (medium) — Use when you have a US `geolocation`/date around the 2020 protests and want documented incident footage — returns geolocated videos of polic
 - **`police-surveillance-in-chicago`** (medium) — Use when you need to understand what surveillance technology Chicago police deploy (for counter-surveillance/context) — returns an education
 - **`policecrime-bgsu-edu`** (medium) — Use when you have a `name`, agency, or location and want to check whether a U.S. law-enforcement officer was arrested/charged with a crime —
-- **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
 - **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code
 - **`polk-court-records`** (high) — Use when you have a `name` and want to check Polk County, Florida court cases tied to them — returns case records, DOB, and case/document ID
 - **`pomanda-com`** (high) — Use when you have a company `name`, a director `name`, or an `address` in the UK and want company intelligence and officer links — returns r

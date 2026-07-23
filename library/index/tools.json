@@ -39042,41 +39042,50 @@
   },
   {
     "id": "dark-fail",
-    "name": "Dark Fail",
-    "description": "List of several dozen services in the .onion domain (marketplaces, email clients, VPN services, search engines) with up-to-date links and status (online/offline)",
+    "name": "dark.fail",
+    "description": "Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion `domain`s for markets, mail, search and news.",
     "url": "https://dark.fail/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the verified, currently-online .onion address for a known dark-web service.",
     "selectorsIn": [
-      "email"
+      "domain"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free (optional Monero donations). No account, no tracking, no JavaScript.",
+    "opsec": "passive",
+    "opsecNote": "Access over Tor. dark.fail deliberately serves no direct links, JS, or trackers to avoid deanonymising visitors, but you are browsing dark-web infrastructure — use Tor Browser in a hardened/sock-puppet setup and never log into anything from your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, respected uptime/verification directory; PGP-signs the addresses it lists, which is the standard defence against onion phishing clones — but always verify signatures yourself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dark.fail"
+    ],
     "tags": [
       "Search engines",
-      "Darknet/deepweb search tools"
+      "Darknet/deepweb search tools",
+      "onion",
+      "tor"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/dark-fail.md"
   },
   {
@@ -60528,24 +60537,25 @@
   {
     "id": "wetransfer",
     "name": "WeTransfer",
-    "description": "File transfer platform for sizes up up to 2GB",
+    "description": "Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer service; also the source of shared links you may need to analyse.",
     "url": "https://www.wetransfer.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Free ad-hoc transfer of large files to/from a collaborator or source.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier transfers up to ~2GB without an account (links expire, historically ~3 days); paid plans add larger sizes, longer retention and password protection.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Files uploaded to WeTransfer sit on its servers and the download link is a bearer token — anyone with the link can fetch it. Never transfer sensitive material unencrypted; encrypt first, share the link and passphrase out-of-band, and use a sock-puppet email so transfers aren't tied to your identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A mainstream commercial file-transfer service; reliable for delivery, but a third-party host — treat anything uploaded as leaving your control.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -60554,15 +60564,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wetransfer.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "file-transfer"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/wetransfer.md"
   },
   {
@@ -69934,45 +69947,52 @@
   },
   {
     "id": "geowifi",
-    "name": "GeoWiFi",
-    "description": "Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).",
+    "name": "geowifi",
+    "description": "Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return the access point's `geolocation`.",
     "url": "https://github.com/GONZOsint/geowifi",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a WiFi BSSID/SSID into a physical location from public geolocation databases.",
     "selectorsIn": [
-      "domain",
+      "mac-address",
       "geolocation"
     ],
     "selectorsOut": [
-      "domain",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GONZOsint). Some backends (Wigle, Google, Combain) need your own free API keys/credentials; others (Apple, Mylnikov) work without.",
+    "opsec": "passive",
+    "opsecNote": "You query third-party WiFi-location databases, not the target's network — you never touch the access point itself, so it's low-footprint. Queries and any API keys are attributable to you; use sock-puppet API accounts and a VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-regarded open-source geolocation tool by GONZOsint; results are only as accurate/current as the public wardriving databases behind it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GONZOsint/geowifi",
+      "GeoWiFi"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Communications, Internet, Technologies"
+      "Communications, Internet, Technologies",
+      "wifi",
+      "geolocation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "deepfaceui-github-com"
     ],
@@ -81048,42 +81068,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/qualys-ssl-check.md"
-  },
-  {
-    "id": "quantcast",
-    "name": "Quantcast",
-    "description": "OSINT tool: Quantcast.",
-    "url": "https://www.quantcast.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/quantcast.md"
   },
   {
     "id": "quick-sprout",
@@ -106832,49 +106816,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoinpaths-com.md"
-  },
-  {
-    "id": "bitcoinwhoswho",
-    "name": "Bitcoinwhoswho",
-    "description": "OSINT tool: Bitcoinwhoswho.",
-    "url": "https://bitcoinwhoswho.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bitcoin-who-s-who"
-    ],
-    "_file": "library/tools/financial-crypto/bitcoinwhoswho.md"
   },
   {
     "id": "bitinfocharts-com",
@@ -221501,37 +221442,51 @@
   {
     "id": "data-gov-uk",
     "name": "Data.gov.uk",
-    "description": "OSINT tool: Data.gov.uk.",
+    "description": "Use when you have a UK `name`, `employer-org`, `address` or place and want official open datasets about it — returns government records on companies, property, spending, transport and population.",
     "url": "https://data.gov.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching UK government open datasets (business, land/property, spending, transport, people).",
+    "selectorsIn": [
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free under the Open Government Licence v3.0; no account required to search or download most datasets.",
+    "opsec": "passive",
+    "opsecNote": "You query a UK government open-data portal, not the subject; nothing about your target is revealed to them. Standard sock-puppet browsing applies. Datasets are official public records, so citations are authoritative.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK government open-data portal; datasets are primary-source public records published by departments and public bodies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "data.gov.uk",
+      "National Data Library"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "open-data",
+      "uk-government"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/data-gov-uk.md"
   },
   {
@@ -248572,55 +248527,6 @@
     "_file": "library/tools/public-records/policecrime-bgsu-edu.md"
   },
   {
-    "id": "politicalmoneyline",
-    "name": "PoliticalMoneyLine",
-    "description": "Campaign-finance/lobbying records.",
-    "url": "http://politicalmoneyline.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "Federal campaign-finance and lobbying disclosure records.",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "us"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "MoneyLine"
-    ],
-    "tags": [
-      "donations",
-      "political",
-      "records"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "political-moneyline-us"
-    ],
-    "_file": "library/tools/public-records/politicalmoneyline.md"
-  },
-  {
     "id": "polk-county-ordinances",
     "name": "Polk County (FL) Code of Ordinances",
     "description": "Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code (ordinance text and section IDs) via the Municode Library.",
@@ -265632,36 +265538,45 @@
   },
   {
     "id": "awesome-public-datasets",
-    "name": "awesome-public-datasets",
-    "description": "OSINT tool: awesome-public-datasets.",
+    "name": "Awesome Public Datasets",
+    "description": "Use when you need a free public dataset on a topic (government, geography, health, social, finance) and want a curated index of where to get it — a jumping-off catalogue, not a person-lookup.",
     "url": "https://github.com/awesomedata/awesome-public-datasets",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A curated, topic-organised index of high-quality free public datasets to source from.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open (MIT); a GitHub markdown list. The linked datasets have their own varied licences/costs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the list on GitHub reveals nothing about a target. Each dataset you then visit is a separate site with its own logging — apply normal sock-puppet hygiene when you follow a link.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A large, long-maintained community catalogue (70k+ stars); it's an index of pointers, so quality/freshness depends on each linked dataset, and some links go stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "awesomedata/awesome-public-datasets"
+    ],
+    "tags": [
+      "open-data",
+      "datasets",
+      "directory"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/awesome-public-datasets.md"
   },
   {
@@ -341122,44 +341037,48 @@
   },
   {
     "id": "geoguesser",
-    "name": "GeoGuesser",
-    "description": "Geolocation skills, visual intelligence analysis, landmark identification",
+    "name": "GeoGuessr",
+    "description": "Use when you want to train geolocation and visual-intelligence skills — a game that drops you in Street View and rewards identifying a place from landmarks, signage and vegetation.",
     "url": "https://www.geoguessr.com/",
     "category": "training-ctf",
     "path": [
       "training-ctf",
       "games"
     ],
-    "bestFor": "Geolocation skills, visual intelligence analysis, landmark identification",
-    "input": "Street View imagery, map interface",
-    "output": "Accuracy score, location guess feedback, player rankings",
+    "bestFor": "Practising the \"where was this photo taken?\" skill core to image geolocation.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free limited play; a GeoGuessr Pro subscription unlocks unlimited maps/modes. Requires a (free) account to play.",
     "opsec": "passive",
-    "opsecNote": "No active reconnaissance; purely observational gameplay using public imagery.",
+    "opsecNote": "Training tool, not an investigative one — it only uses public Street View imagery and touches no target. You register an account with GeoGuessr; use a sock-puppet email if you prefer to keep it separate.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial geography game, not an OSINT data source; its value here is skill-building, not evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "geoguessr.com"
+    ],
+    "tags": [
+      "training",
+      "geolocation",
+      "visual-intelligence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/games/geoguesser.md"
   },
   {
@@ -343320,37 +343239,43 @@
   {
     "id": "imtranslator",
     "name": "imTranslator",
-    "description": "OSINT tool: imTranslator.",
-    "url": "http://imtranslator.net/translation",
+    "description": "Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-English posts, bios and documents.",
+    "url": "https://imtranslator.net/translation",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Fast multi-engine machine translation (with back-translation) of foreign-language OSINT text.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool (ad-supported); optional free browser extensions. No registration for basic translation.",
+    "opsec": "passive",
+    "opsecNote": "Text you paste is sent to imTranslator and its backend engines (Google/Bing) for processing — never paste sensitive, private, or leaked material. For confidential text use an offline translator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A front-end aggregating Google/Bing machine translation; convenient but the output is machine translation and can mislead on nuance, slang, and names.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "imtranslator.net"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "language"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "imtranslator-comparison-tool"
     ],

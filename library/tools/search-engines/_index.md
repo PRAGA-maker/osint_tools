@@ -73,7 +73,7 @@ kind: group-index
 - **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
 - **`avvo-north-america`** (medium) — Use when you have a `name` (of a US lawyer) or a location and want their professional profile — returns `employer-org` (firm), practice area
-- **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
+- **`awesome-public-datasets`** (low) — Use when you need a free public dataset on a topic (government, geography, health, social, finance) and want a curated index of where to get
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
 - **`baidu-china`** (low) — OSINT tool: Baidu (China).
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question

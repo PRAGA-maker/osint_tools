@@ -263,7 +263,7 @@ kind: group-index
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
-- **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
+- **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv
 - **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
 - **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).
 - **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 
