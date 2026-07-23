@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`aadinternals`** (low) — Deep Azure AD reconnaissance and security assessment
 - **`gcpbucketbrute`** (low) — Enumerating likely GCS bucket names at scale
-- **`microburst`** (low) — Azure subscription and service-level exposure testing
+- **`microburst`** (low) — Use when you have an `employer-org`/`domain` and want to enumerate its public Azure footprint (storage accounts, subdomains, services) or au
 - **`roadtools`** (low) — Enumerating Azure AD objects and privilege relationships
 - **`stormspotter`** (low) — Visual analysis of Azure attack paths and privilege chains
 

@@ -201,7 +201,7 @@ kind: group-index
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
 - **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
-- **`hakrawler`** (low) — Extreme(!) fast crawler designed for easy, quick discovery of links, endpoints and assets within a web application.
+- **`hakrawler`** (low) — Use when you have a `domain` and want to crawl it fast for links, endpoints, JS files and in-scope assets — returns URLs and `domain`s (subd
 - **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
@@ -360,7 +360,7 @@ kind: group-index
 - **`repolist`** (low) — A very fast and simple tool that allows to generate wordlists for different CMS and frameworks (using Github repos).
 - **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
-- **`reverse-google-adsense`** (low) — OSINT tool: Reverse Google Adsense.
+- **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
 - **`reverse-google-analytics`** (low) — OSINT tool: Reverse Google Analytics.
 - **`reverse-ip-lookup`** (low) — OSINT tool: Reverse IP Lookup.
 - **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.

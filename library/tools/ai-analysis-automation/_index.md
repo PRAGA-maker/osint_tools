@@ -196,7 +196,7 @@ kind: group-index
 - **`ifttt-instagram-integrations`** (low) — Instagram workflows and automations via IFTTT.
 - **`illuminarty`** (low) — AI image detection with model attribution, deepfake and synthetic media investigation
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.
-- **`infooze`** (low) — User Recon, Mail Finder, Whois/IP/DNS/headers lookup, InstaRecon, Git Recon, Exif Metadata
+- **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
 - **`infosec-reference`** (low) — OSINT tool: infosec reference.
 - **`inkscape`** (low) — OSINT tool: Inkscape.
 - **`intelhub`** (low) — OSINT tool: IntelHub.

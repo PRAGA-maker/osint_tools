@@ -596,7 +596,6 @@ kind: group-index
 - **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
 - **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
 - **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
-- **`sharedigger`** (low) — search files in popular file hosting services
 - **`sharkscope`** (medium) — Use when you have a poker `username` and want to confirm and profile the player behind it — returns tournament history, results and country,
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (low) — Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments a
@@ -741,7 +740,7 @@ kind: group-index
 - **`yahoo-search`** (low) — OSINT tool: Yahoo! Search.
 - **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
 - **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t
-- **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
+- **`yandex-russia`** (low) — Use when you have an `image`/`face`, `name` or `username` and want a search engine whose reverse-image and CIS-region coverage beats Google 
 - **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
 - **`yaraif`** (medium) — Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — return
 - **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
