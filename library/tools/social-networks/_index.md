@@ -661,7 +661,7 @@ kind: group-index
 - **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for
 - **`twitterwebviewer-com`** (high) — Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile conten
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
-- **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
+- **`twtdata-download-twitter-data`** (low) — Use when you have a Twitter/X `username` and want its followers/following or tweets as a spreadsheet — returns CSV/XLSX exports of an accoun
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
 - **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
 - **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —

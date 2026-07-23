@@ -85,14 +85,14 @@ kind: group-index
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
 - **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
-- **`riseup`** (low) — OSINT tool: RiseUp.
+- **`riseup`** (low) — Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose serv
 - **`rooted`** (low) — OSINT tool: Rooted.
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
 - **`stark-county-auditor`** (medium) — Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner nam
 - **`state-of-delaware-professional-license-validator`** (medium) — Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, a
 - **`swp-cx`** (low) — OSINT tool: swp.cx.
 - **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
-- **`the-hidden-wiki`** (low) — OSINT tool: The Hidden Wiki.
+- **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
 - **`thedevilseye`** (low) — Search links in #darknet (.onion domain zone) from command line without using a Tor network.
 - **`tool-path`** (low) — OSINT tool: Tool \| path.
 - **`top-guns`** (low) — OSINT tool: Top Guns.

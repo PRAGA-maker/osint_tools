@@ -80,7 +80,7 @@ kind: group-index
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
 - **`movebank`** (low) — Platform for animal tracking data.
 - **`nasa-firms`** (low) — Use when you have a `geolocation`/`address` and a date and want satellite thermal-anomaly data — returns mapped fire/heat detections to corr
-- **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
+- **`nasa-worldview`** (low) — Use when you have a `geolocation`/date and want near-real-time or historical full-Earth satellite imagery for that spot — returns daily glob
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
 - **`one-network`** (medium) — Use when you have a `geolocation`/`address` and a date and want the roadworks, closures, and traffic disruptions there — returns a live/plan

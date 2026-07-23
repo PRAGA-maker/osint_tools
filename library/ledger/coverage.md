@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7431 total · 4999 full · 2432 stub (67% enriched)
+**Tools:** 7429 total · 5007 full · 2422 stub (67% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3490 · medium: 1977 · high: 1964
+low: 3488 · medium: 1977 · high: 1964
 
 ## Tools by trust
-community: 3499 · unverified: 2229 · trusted: 1694 · untrustworthy: 6 · personal: 3
+community: 3498 · unverified: 2225 · trusted: 1697 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 60/448
 - `archives-cache` — 88/121
-- `communities-forums` — 237/288
-- `dark-web` — 42/108
+- `communities-forums` — 237/287
+- `dark-web` — 44/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 79/298
-- `domains-ip-infrastructure` — 258/681
+- `documents-metadata` — 79/297
+- `domains-ip-infrastructure` — 260/681
 - `email` — 245/246
 - `evidence-capture` — 13/29
 - `financial-crypto` — 58/108
 - `geolocation` — 291/340
 - `image-video-face` — 441/451
-- `maps-geospatial-data` — 76/123
+- `maps-geospatial-data` — 77/123
 - `messaging` — 179/184
-- `opsec-investigator-tooling` — 91/533
+- `opsec-investigator-tooling` — 93/533
 - `people-search` — 256/257
 - `phone` — 134/137
 - `public-records` — 872/1005
 - `search-engines` — 508/773
-- `social-networks` — 732/784
+- `social-networks` — 733/784
 - `training-ctf` — 5/12
 - `translation-language` — 24/100
 - `transportation` — 129/211
@@ -49,8 +49,8 @@ community: 3499 · unverified: 2229 · trusted: 1694 · untrustworthy: 6 · pers
 - `library/tools/ai-analysis-automation` — 414 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
-- `library/tools/communities-forums` — 285 leaves
-- `library/tools/documents-metadata` — 252 leaves
+- `library/tools/communities-forums` — 284 leaves
+- `library/tools/documents-metadata` — 251 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves

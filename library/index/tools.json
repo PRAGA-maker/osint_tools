@@ -27395,50 +27395,6 @@
     "_file": "library/tools/communities-forums/feedly-rss-reader.md"
   },
   {
-    "id": "files-pushshift-io-reddit",
-    "name": "Files.pushshift.io/reddit",
-    "description": "OSINT tool: Files.pushshift.io/reddit.",
-    "url": "https://files.pushshift.io/reddit",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "pushshift-api",
-      "search-twitter-users"
-    ],
-    "_file": "library/tools/communities-forums/files-pushshift-io-reddit.md"
-  },
-  {
     "id": "financial-post",
     "name": "Financial Post",
     "description": "Use when you have a `name` or `employer-org` and want to search Canadian business-news coverage for mentions — returns article context linking a person to companies, roles, and events.",
@@ -41661,43 +41617,47 @@
   {
     "id": "riseup",
     "name": "RiseUp",
-    "description": "OSINT tool: RiseUp.",
+    "description": "Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose services deliberately expose almost no user data.",
     "url": "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Recognizing a @riseup.net address as an activist privacy provider, and understanding why it yields little OSINT.",
     "selectorsIn": [
-      "username",
       "email"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, donation-funded services (email, VPN, chat, lists); email accounts are gated (historically invite/registration-limited) to prevent abuse.",
+    "opsec": "passive",
+    "opsecNote": "Recognizing a Riseup address is passive. Riseup is run by an activist tech collective and is explicitly privacy-protective — it keeps minimal logs and resists data requests, so expect email-enrichment tools to return essentially nothing for a @riseup.net address. If you use Riseup yourself, note accounts are gated and intended for activists, not casual sock puppets. The .onion address requires Tor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Riseup is a long-established, reputable activist-focused privacy provider; it is a genuine service, not an OSINT lookup tool, and was harvested into a dark-web link list because of its onion service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "invite",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Riseup.net",
+      "riseup"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "privacy-provider"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/riseup.md"
   },
   {
@@ -42002,43 +41962,48 @@
   {
     "id": "the-hidden-wiki",
     "name": "The Hidden Wiki",
-    "description": "OSINT tool: The Hidden Wiki.",
+    "description": "Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (a jump-off point, not a search of a person).",
     "url": "http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
+    "bestFor": "A categorised index of Tor onion services to orient a dark-web investigation.",
+    "selectorsIn": [],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse, but requires the Tor Browser; the canonical .onion address changes over time and countless clones exist.",
+    "opsec": "active",
+    "opsecNote": "Reaching it requires Tor — use the Tor Browser on a hardened/throwaway system, never your normal browser or IP. Many \"Hidden Wiki\" mirrors are scams, phishing, or link to illegal and malware-laden content; treat every link as hostile, click nothing transactional, and be aware of the legal exposure of even visiting some listed services. Verify you have the current legitimate address, as the URL rotates and impostors abound.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-edited onion directory with no authority behind it; links are unvetted, frequently dead, and often malicious or scam. Useful only as an orientation index, never as a trusted source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hidden Wiki"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "onion-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/the-hidden-wiki.md"
   },
   {
@@ -60535,49 +60500,6 @@
     "_file": "library/tools/documents-metadata/yotpo.md"
   },
   {
-    "id": "zamzar-online-file-converter",
-    "name": "Zamzar Online File Converter",
-    "description": "Online file donversion tool, converts documents, images, videos, and more to various formats",
-    "url": "https://www.zamzar.com/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "zamzar-com"
-    ],
-    "_file": "library/tools/documents-metadata/zamzar-online-file-converter.md"
-  },
-  {
     "id": "0xdork",
     "name": "0xdork",
     "description": "Very light and simple #Python tool for Google Dorking",
@@ -69880,7 +69802,7 @@
   {
     "id": "global-terrorism-database",
     "name": "Global Terrorism Database",
-    "description": "Terrorism research and analysis",
+    "description": "Use when you have a place, group `name`, or date and want records of terrorist incidents — returns coded attack records (date, location, perpetrator, casualties) for research and context.",
     "url": "https://www.start.umd.edu/research-projects/global-terrorism-database-gtd",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -69888,37 +69810,50 @@
       "terrorism-and-extremism",
       "academic-research"
     ],
-    "bestFor": "Terrorism research and analysis",
-    "input": "Search by attack, group, or date",
-    "output": "Terrorist attack records and analysis data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Researching historical terrorist incidents by group, location, or date for context and base rates.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free for non-commercial/academic use; downloading the full dataset requires agreeing to terms and registering.",
     "opsec": "passive",
-    "opsecNote": "Passive academic research database",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive academic research against a curated historical database; nothing is queried about any living private individual and no target is contacted. It is context/base-rate data, not a person-lookup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by START (National Consortium for the Study of Terrorism and Responses to Terrorism) at the University of Maryland; a widely-cited, methodologically documented academic dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": true,
     "relatedTools": [
       "start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism",
       "street-drug-slang"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GTD",
+      "START GTD"
+    ],
+    "tags": [
+      "terrorism",
+      "academic-dataset",
+      "research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/academic-research/global-terrorism-database.md"
   },
   {
@@ -85553,35 +85488,49 @@
   {
     "id": "technology-lookup",
     "name": "Technology Lookup",
-    "description": "OSINT tool: Technology Lookup.",
+    "description": "Use when you have a `domain` and want to know its web tech stack — returns detected CMS, frameworks, analytics IDs, servers and libraries the site runs.",
     "url": "https://osint.sh/stack/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Fingerprinting a website's technology stack (CMS, frameworks, analytics, server) from its domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool on the osint.sh toolkit; no account required for the web lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive from your side — osint.sh fetches and fingerprints the target site, so your IP typically does not directly hit the target (the service does). Only osint.sh sees your query; the target may see the service's requests, not yours.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of the free tools in the osint.sh suite; detection is heuristic (like Wappalyzer/BuiltWith) and can miss or misreport technologies, so corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "osint.sh stack",
+      "osint.sh technology lookup"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "tech-stack",
+      "fingerprinting"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/technology-lookup.md"
   },
   {
@@ -154622,13 +154571,13 @@
   {
     "id": "nasa-worldview",
     "name": "NASA Worldview",
-    "description": "NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere, land, and oceans.",
+    "description": "Use when you have a `geolocation`/date and want near-real-time or historical full-Earth satellite imagery for that spot — returns daily global satellite layers you can browse and download by date.",
     "url": "https://worldview.earthdata.nasa.gov/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing daily, date-selectable satellite imagery of a location for events, fires, floods, and change over time.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -154636,35 +154585,42 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free US-government (NASA EOSDIS) service; no account needed to view or download imagery.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you browse NASA's public imagery layers; nothing is queried about any person and no target is contacted. Safe to use freely.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by NASA's Earth Science Data and Information System (EOSDIS); authoritative government satellite data, though moderate resolution (hundreds of metres, not street-level).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "firms",
       "nasa-earthdata-search",
-      "nasa-firms",
-      "nasa-kids-club"
+      "nasa-firms"
     ],
+    "aliases": [
+      "Worldview",
+      "worldview.earthdata.nasa.gov",
+      "NASA EOSDIS Worldview"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "satellite-imagery",
+      "geospatial"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/nasa-worldview.md"
   },
   {
@@ -175682,35 +175638,47 @@
   {
     "id": "image-scrubber",
     "name": "Image Scrubber",
-    "description": "OSINT tool: Image Scrubber.",
+    "description": "Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side tool that removes metadata and lets you blur sensitive areas.",
     "url": "https://everestpipkin.github.io/image-scrubber/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Anonymising a photo before sharing — stripping EXIF and painting/blurring over faces or identifying details.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source; runs entirely in the browser (or offline from GitHub), no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A defensive tool for images YOU are about to release — it removes EXIF (GPS, device) and lets you redact faces so a shared photo doesn't dox subjects or reveal your location. All processing is client-side; nothing is uploaded. Verify redactions are irreversible (paint over, don't just blur lightly) before publishing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source tool by Everest Pipkin, widely recommended (Bellingcat and protest-safety guides); client-side and inspectable on GitHub.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "image scrubber",
+      "everestpipkin image-scrubber"
+    ],
+    "tags": [
+      "opsec",
+      "metadata-removal",
+      "redaction"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/image-scrubber.md"
   },
   {
@@ -188531,41 +188499,47 @@
   {
     "id": "youtube-transcript-search",
     "name": "YouTube Transcript Search",
-    "description": "Collect and search YouTube transcripts for multiple videos from a channel",
+    "description": "Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects and full-text-searches transcripts.",
     "url": "https://chromewebstore.google.com/detail/eeebipnojmgobognppffkenhdoidendi",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Full-text searching the spoken words across a channel's videos, instead of watching them all.",
+    "selectorsIn": [
+      "social-profile"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome extension; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — it pulls publicly available transcripts/captions and searches them locally; you are not interacting with the channel owner. Watching the source videos afterwards is normal public viewing (use a sock-puppet/logged-out session if you don't want it in your watch history).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Chrome extension listed via Toddington's curated directory; relies on YouTube's auto/creator captions, which can be inaccurate or missing, and extension availability can change.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YouTube transcript search extension"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "youtube"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/youtube-transcript-search.md"
   },
   {
@@ -336262,13 +336236,13 @@
   {
     "id": "twtdata-download-twitter-data",
     "name": "twtData (Download Twitter Data)",
-    "description": "Download Twitter follower/following data in CSV format.",
+    "description": "Use when you have a Twitter/X `username` and want its followers/following or tweets as a spreadsheet — returns CSV/XLSX exports of an account's network and posts for analysis.",
     "url": "https://www.twtdata.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Exporting an account's followers/following for analysis",
+    "bestFor": "Exporting a Twitter/X account's followers/following or tweets to CSV/XLSX for network analysis.",
     "selectorsIn": [
       "username"
     ],
@@ -336276,15 +336250,18 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "A free sample export is available; full follower/following/tweet exports are paid (per-record pricing, roughly a few dollars minimum for small accounts). Delivered by email.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — twtData pulls public Twitter/X data server-side; you don't interact with the account, and the target isn't notified. You must give twtData an email for delivery, so use a research/sock-puppet address; treat the exported list as sensitive personal data and handle it lawfully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party commercial data-export service; results reflect what it can pull from X at export time (subject to X's API limits/changes), so completeness and freshness vary.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -336294,7 +336271,8 @@
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "Download Twitter Data"
+      "Download Twitter Data",
+      "twtdata.com"
     ],
     "tags": [
       "twitter",
@@ -336302,8 +336280,8 @@
       "csv"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twtdata-download-twitter-data.md"
   },
   {

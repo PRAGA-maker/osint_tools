@@ -216,7 +216,7 @@ kind: group-index
 - **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
 - **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
-- **`image-scrubber`** (low) — OSINT tool: Image Scrubber.
+- **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
 - **`imei-number-generator`** (low) — OSINT tool: IMEI Number Generator.
 - **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
 - **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
@@ -510,7 +510,7 @@ kind: group-index
 - **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
-- **`youtube-transcript-search`** (low) — Collect and search YouTube transcripts for multiple videos from a channel
+- **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
 - **`zotero`** (low) — Browser add-on for Firefox, Chrome, and Safari that assists in collecting, organizing, citing, and sharing research and saved online webpage
 - **`zxing-barcode-scanner-app-mobile-android`** (low) — App for mobile devices for scanning and recognizing items with bar codes
 - **`zz-fo`** (low) — OSINT tool: Zz.fo.
