@@ -65,7 +65,7 @@ kind: group-index
 - **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
 - **`alojate-mexico`** (medium) — Use when a `domain` or `ip-address` traces to this Mexican provider and you want to identify the host/registrar — returns provider attributi
 - **`ample-hosting-south-africa`** (medium) — Use when a `domain` or `ip-address` traces to this provider and you want to identify the host — returns registrar/hosting attribution and an
-- **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
+- **`analyticsrelationships`** (low) — Use when you have a `domain` and want to find other sites run by the same owner via a shared Google Analytics ID — returns co-owned `domain`
 - **`anubis`** (low) — Subdomain enumeration and information gathering tool
 - **`aort`** (low) — Use when you have a `domain` and want one command to enumerate its subdomains, ports, endpoints and harvested emails — returns related `doma
 - **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
@@ -182,7 +182,7 @@ kind: group-index
 - **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
 - **`gitgraber`** (low) — Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials 
-- **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
+- **`go-dork`** (low) — Use when you have a `domain` (or a dork query) and want to automate Google/Bing/etc. dorking from the CLI — returns matching URLs and `domai
 - **`goblyn`** (low) — Use when you have a `domain` and want the metadata inside its exposed files — enumerates directories/files and extracts EXIF/document `metad
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, creation/expiry dates, name servers and (when not privacy
@@ -445,7 +445,7 @@ kind: group-index
 - **`urlxray`** (low) — OSINT tool: Urlxray.
 - **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers
 - **`user-agent-parser`** (low) — Use when you have a User-Agent string (from logs, headers or a tool config) and want it decoded — returns the device, OS and browser it desc
-- **`validin`** (low) — OSINT tool: Validin.
+- **`validin`** (low) — Use when you have a `domain` or `ip-address` and want deep historical DNS, subdomains, host-response and certificate data to pivot across an
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
 - **`verisign`** (low) — OSINT tool: Verisign.
 - **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
@@ -481,7 +481,7 @@ kind: group-index
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
 - **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.
 - **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
-- **`whois-arin-online`** (low) — OSINT tool: Whois Arin Online.
+- **`whois-arin-online`** (low) — Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the regist
 - **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco
 - **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
 - **`whois-history`** (low) — OSINT tool: Whois History.

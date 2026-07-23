@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/javascript
 
 ## Skills here
-- **`javascript-deobfuscator`** (low) — Browser-native JavaScript deobfuscation during web investigations
+- **`javascript-deobfuscator`** (low) — Use when a page (`domain`) runs obfuscated/minified JavaScript you need to read — this Firefox extension logs the actual code the page execu
 - **`js-beautifier`** (low) — Fast readability improvements for packed JavaScript
 - **`kahu-revelo`** (low) — Unpacking heavily obfuscated JavaScript samples on Windows
 - **`spidermonkey`** (low) — Local JavaScript execution and behavior testing without browser UI

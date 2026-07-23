@@ -48,7 +48,7 @@ kind: group-index
 - **`archstrike`** (low) — OSINT tool: ArchStrike.
 - **`argos-osint-workstation`** (low) — Script that automatically sets up an OSINT workstation on Ubuntu.
 - **`atom`** (low) — OSINT tool: Atom.
-- **`attifyos`** (low) — Linux distro for pentesting IoT devices.
+- **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
 - **`autoregex`** (low) — AI regular expressions generator. Generates a pattern by verbal description. It does not work perfectly (see picture with bitcoin wallet, th
 - **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
@@ -237,7 +237,7 @@ kind: group-index
 - **`iron-vest`** (low) — Offers protectection of information you share online, including passwords, payments, and other personal information
 - **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015
 - **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
-- **`jottis-malware-scan`** (low) — Website that scans suspicious or potentially compromised files with multiple anti-virus programs
+- **`jottis-malware-scan`** (low) — Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services

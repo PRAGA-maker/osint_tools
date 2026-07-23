@@ -7619,41 +7619,51 @@
   {
     "id": "javascript-deobfuscator",
     "name": "JavaScript Deobfuscator",
-    "description": "Browser-native JavaScript deobfuscation during web investigations",
+    "description": "Use when a page (`domain`) runs obfuscated/minified JavaScript you need to read — this Firefox extension logs the actual code the page executes, exposing hidden URLs, trackers and logic.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/javascript-deobfuscator/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "javascript"
     ],
-    "bestFor": "Browser-native JavaScript deobfuscation during web investigations",
-    "input": "JavaScript loaded in Firefox pages or pasted script content",
-    "output": "Readable deobfuscated script output in browser tooling",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Seeing the real JavaScript a page runs — deobfuscated/unpacked — to expose hidden endpoints, trackers and behavior.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free Firefox extension; no account.",
     "opsec": "active",
-    "opsecNote": "Browser execution context can run page scripts and trackers while analyzing content.",
+    "opsecNote": "To capture executing code you load the target page in your browser, which runs its scripts (and any trackers/callbacks) against your session — a real, attributable visit. Use a sandboxed/sock-puppet browser and VPN for hostile pages.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Long-standing Firefox extension (by a reputable developer) that logs code passed to eval/Function; auditable and widely used for web analysis.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "view-rendered-source"
+    ],
+    "aliases": [
+      "JavaScript Deobfuscator Firefox addon"
+    ],
+    "tags": [
+      "javascript",
+      "code-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/javascript/javascript-deobfuscator.md"
   },
   {
@@ -61470,45 +61480,50 @@
   {
     "id": "analyticsrelationships",
     "name": "AnalyticsRelationships",
-    "description": "command line #tool for to search for links between domains by Google Analytics ID",
+    "description": "Use when you have a `domain` and want to find other sites run by the same owner via a shared Google Analytics ID — returns co-owned `domain`s, including relationships hidden in historical/archived pages.",
     "url": "https://github.com/Josue87/AnalyticsRelationships",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering domains linked by a common Google Analytics UA/tracking ID, including from archived snapshots.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Go/Python versions); no account.",
+    "opsec": "passive",
+    "opsecNote": "It fetches the target's page (and public sources like the Wayback Machine / crawl data) to extract the Analytics ID, then queries third-party indexes for matches — the initial page fetch is a direct visit, so proxy it for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool from a known researcher (Josue87); auditable, and the technique (shared GA IDs = common ownership) is a well-established OSINT method.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "metafinder"
+    ],
+    "aliases": [
+      "Josue87/AnalyticsRelationships"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website analyze"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "metafinder"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analyticsrelationships.md"
   },
   {
@@ -69600,46 +69615,51 @@
   },
   {
     "id": "go-dork",
-    "name": "GO DORK",
-    "description": "Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.",
+    "name": "go-dork",
+    "description": "Use when you have a `domain` (or a dork query) and want to automate Google/Bing/etc. dorking from the CLI — returns matching URLs and `domain`s (exposed files, panels, indexed pages) fast.",
     "url": "https://github.com/dwisiswant0/go-dork",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast CLI automation of search-engine dorks across Google/Bing/DuckDuckGo/Yahoo/Shodan.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Go); install via `go install`. No account, though heavy use benefits from proxies/API keys.",
+    "opsec": "passive",
+    "opsecNote": "Dorks query the search engines, not the target, so the target site sees nothing — but the search engines see your queries and will throw CAPTCHAs/blocks on volume. Route through proxies and pace requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool from a well-known researcher (dwisiswant0); auditable Go source, widely used in recon workflows.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "apkleaks"
+    ],
+    "aliases": [
+      "dwisiswant0/go-dork"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "apkleaks"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/go-dork.md"
   },
   {
@@ -73749,41 +73769,52 @@
   {
     "id": "ip2whois",
     "name": "IP2WHOIS",
-    "description": "Domain and IP WHOIS lookups, registrant research",
+    "description": "Use when you have a `domain` and want its WHOIS registration — returns registrant `name`/`email`/`address` (when not redacted), registrar and registration dates.",
     "url": "https://www.ip2whois.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Domain and IP WHOIS lookups, registrant research",
-    "input": "Domain name or IP address",
-    "output": "WHOIS records, registrant details, location information, registration dates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free WHOIS lookups for a domain — registrant contact, registrar and registration/expiry dates.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "email",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web lookup from IP2Location; a free API key (with a monthly query quota) is available for programmatic use.",
     "opsec": "passive",
-    "opsecNote": "Queries public WHOIS databases; does not contact the target.",
+    "opsecNote": "Queries public WHOIS data via IP2Location, not the target domain, so the registrant sees nothing. IP2Location logs your lookups; use a clean session for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by IP2Location, an established IP/geolocation data vendor; the WHOIS data is sourced from registries and is a convenient free front-end rather than an authoritative registry itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IP2WHOIS",
+      "ip2whois.com"
+    ],
+    "tags": [
+      "whois-records",
+      "domain-and-ip-research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/ip2whois.md"
   },
   {
@@ -87036,37 +87067,54 @@
   {
     "id": "validin",
     "name": "Validin",
-    "description": "OSINT tool: Validin.",
+    "description": "Use when you have a `domain` or `ip-address` and want deep historical DNS, subdomains, host-response and certificate data to pivot across an actor's infrastructure — returns linked `domain`s and `ip-address`es.",
     "url": "https://app.validin.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Threat-infrastructure pivoting via rich historical DNS, host-response fingerprints, certificates and reputation.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free Community Edition (register at app.validin.com) gives generous DNS/history lookups; paid tiers add volume, API and advanced pivots.",
+    "opsec": "passive",
+    "opsecNote": "Validin serves data from its own collection/index, so lookups never touch the target's infrastructure. Queries are tied to your Community account — use a dedicated investigative login, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-regarded DNS/threat-intelligence platform used by threat hunters; a newer but respected source with its own large historical dataset and blocklist sightings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Validin Community",
+      "app.validin.com"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "passivedns",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/validin.md"
   },
   {
@@ -89316,38 +89364,40 @@
   },
   {
     "id": "whois-arin-online",
-    "name": "Whois Arin Online",
-    "description": "OSINT tool: Whois Arin Online.",
+    "name": "Whois ARIN Online",
+    "description": "Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the registered org `name`, `address` and abuse/technical contacts.",
     "url": "https://whois.arin.net",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a North American IP/network block to its registered owning organization and contact/address.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official ARIN Whois-RWS lookup; no account.",
+    "opsec": "passive",
+    "opsecNote": "You query ARIN's registry, not the target host, so the IP's user sees nothing. Standard registry logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by ARIN, the Regional Internet Registry for North America; the network-ownership and allocation data is authoritative registry record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "account-arin-net",
       "arin",
@@ -89355,6 +89405,16 @@
       "search-arin-net",
       "whois-arin"
     ],
+    "aliases": [
+      "ARIN Whois",
+      "whois.arin.net"
+    ],
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-arin-online.md"
   },
   {
@@ -167547,37 +167607,45 @@
   {
     "id": "attifyos",
     "name": "AttifyOS",
-    "description": "Linux distro for pentesting IoT devices.",
+    "description": "Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardware analysis tools so you don't assemble them yourself.",
     "url": "https://github.com/adi0x90/attifyos",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A pre-built Linux distribution bundling the tools needed to assess IoT and embedded-device security.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; distributed as a downloadable VM image / build instructions. No account.",
+    "opsec": "active",
+    "opsecNote": "A toolkit distro — OpSec depends entirely on what you run from it. Firmware/radio/network testing against devices you don't own can be intrusive and illegal; only assess hardware you own or are explicitly authorized to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community IoT-pentest distro associated with Attify; a convenient curated toolset, though not as actively updated as mainstream security distros — verify individual tools' currency.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Attify OS",
+      "adi0x90/attifyos"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Virtual Machines/Linux distributions",
+      "iot-security"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/attifyos.md"
   },
   {
@@ -175754,25 +175822,26 @@
   },
   {
     "id": "jottis-malware-scan",
-    "name": "Jottis Malware Scan",
-    "description": "Website that scans suspicious or potentially compromised files with multiple anti-virus programs",
-    "url": "http://virusscan.jotti.org/en",
+    "name": "Jotti's Malware Scan",
+    "description": "Use when you have a suspicious file and want a fast multi-engine verdict — upload it and Jotti scans it with ~15+ antivirus products at once, returning each engine's detection.",
+    "url": "https://virusscan.jotti.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Free multi-antivirus scanning of a suspicious file to get a consensus malware verdict.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free multi-AV file scanner; no account. File-size limits apply.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload the file to Jotti, which shares it with its antivirus partners. Never upload private, sensitive or confidential documents — treat anything you submit as disclosed to third parties. Upload only files you're comfortable making known to AV vendors.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, well-known independent multi-AV scanning service; a reputable alternative/complement to VirusTotal.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -175781,18 +175850,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "jotti-s-malware-scanner"
     ],
+    "aliases": [
+      "Jotti Malware Scan",
+      "virusscan.jotti.org"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "malware-scanning"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/jottis-malware-scan.md"
   },
   {
@@ -342603,39 +342675,48 @@
   },
   {
     "id": "happyscribe-com",
-    "name": "happyscribe.com",
-    "description": "OSINT tool: happyscribe.com.",
+    "name": "HappyScribe",
+    "description": "Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) — returns time-stamped text you can read, search and translate.",
     "url": "https://www.happyscribe.com/video-to-text",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Turning investigation audio/video into a searchable, time-stamped transcript, with subtitle and translation options.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — free minutes to try AI transcription; larger volume and human transcription are paid. Requires a (free) account.",
+    "opsec": "passive",
+    "opsecNote": "You upload the media to HappyScribe's cloud, where it is processed and stored on your account — treat the content as disclosed to a third party. For sensitive recordings use an offline/local transcription tool instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established commercial transcription SaaS; reliable as a service, but it is processing plumbing, not an evidence source, and it holds whatever media you upload.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "happyscribe.com",
+      "Happy Scribe"
+    ],
     "tags": [
       "translatortranscriptionsites",
       "Translation & Transcription Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/happyscribe-com.md"
   },
   {
@@ -344989,47 +345070,49 @@
   {
     "id": "yandex-translate",
     "name": "Yandex.Translate",
-    "description": "Machine translation, strong for Russian.",
+    "description": "Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation — returns readable translated text to search and understand.",
     "url": "https://translate.yandex.com/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Machine translation with particularly strong Russian/CIS-language coverage for reading foreign-language sources.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web translation (text, pages, images); a paid Cloud API exists for high-volume/programmatic use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Text you translate is sent to Yandex (a Russian company) and logged. Don't paste sensitive case material, names or selectors you don't want a third party to hold; for sensitive work prefer an offline translator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Yandex machine-translation service; reliable general-purpose MT, notably strong on Russian and neighboring languages.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "yandex",
-      "yandex-browser",
-      "yandex-image-search",
-      "yandex-images",
-      "yandex-mail",
-      "yandex-maps",
       "yandex-russia",
-      "yandex-video-search",
-      "yandex-wordstat",
-      "yandexmaps"
+      "yandex-maps",
+      "yandex-image-search"
     ],
+    "aliases": [
+      "Yandex Translate",
+      "translate.yandex.com"
+    ],
+    "tags": [
+      "translation",
+      "machine-translation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/yandex-translate.md"
   },
   {

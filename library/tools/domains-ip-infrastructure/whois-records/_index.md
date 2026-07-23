@@ -11,7 +11,7 @@ kind: group-index
 - **`domain-dossier`** (low) — Quick domain and IP reconnaissance with DNS and WHOIS data
 - **`domainiq`** (low) — Domain ownership history, reverse analytics lookup, competitor domain research
 - **`easywhois`** (low) — Quick domain WHOIS lookups and DNS checks
-- **`ip2whois`** (low) — Domain and IP WHOIS lookups, registrant research
+- **`ip2whois`** (low) — Use when you have a `domain` and want its WHOIS registration — returns registrant `name`/`email`/`address` (when not redacted), registrar an
 - **`netlas-io`** (low) — Internet reconnaissance, DNS and WHOIS lookups, attack surface discovery, vulnerability research
 - **`robtex`** (low) — DNS reconnaissance, IP and domain relationship mapping, historical internet data lookup
 - **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
