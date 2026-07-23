@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7475 total · 4853 full · 2622 stub (64% enriched)
+**Tools:** 7473 total · 4853 full · 2620 stub (64% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3540 · medium: 1971 · high: 1964
+low: 3538 · medium: 1971 · high: 1964
 
 ## Tools by trust
-community: 3499 · unverified: 2318 · trusted: 1649 · untrustworthy: 6 · personal: 3
+community: 3503 · unverified: 2311 · trusted: 1650 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -19,7 +19,7 @@ community: 3499 · unverified: 2318 · trusted: 1649 · untrustworthy: 6 · pers
 - `communities-forums` — 237/288
 - `dark-web` — 40/109
 - `dating-classifieds` — 78/90
-- `documents-metadata` — 71/303
+- `documents-metadata` — 71/301
 - `domains-ip-infrastructure` — 203/684
 - `email` — 245/246
 - `evidence-capture` — 12/29
@@ -50,7 +50,7 @@ community: 3499 · unverified: 2318 · trusted: 1649 · untrustworthy: 6 · pers
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 285 leaves
-- `library/tools/documents-metadata` — 257 leaves
+- `library/tools/documents-metadata` — 255 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 193 leaves

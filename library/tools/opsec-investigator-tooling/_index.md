@@ -34,7 +34,7 @@ kind: group-index
 - **`amazon-mobile-app-mobile-ios`** (low) — App for mobile devices for online shopping
 - **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
 - **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
-- **`annotely`** (low) — Perfectly simple tool for putting an arrow on a screenshot, highlighting some detail or blurring personal data.
+- **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
 - **`anonaddy`** (low) — OSINT tool: AnonAddy.
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Anonymous browsing service provider

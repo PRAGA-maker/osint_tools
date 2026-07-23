@@ -106,7 +106,7 @@ kind: group-index
 - **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
-- **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
+- **`cloakquest3r`** (low) — Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis
 - **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
 - **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
@@ -328,7 +328,7 @@ kind: group-index
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
-- **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
+- **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
 - **`poodle-check`** (low) — OSINT tool: Poodle Check.
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
@@ -427,7 +427,7 @@ kind: group-index
 - **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
 - **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo
 - **`udon`** (low) — Use when you have a `domain` and want other sites run by the same owner via a shared Google Analytics/AdSense ID — returns sibling `domain`s
-- **`umatrix`** (low) — Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, track
+- **`umatrix`** (low) — Use when you want to see and control every domain a page contacts at runtime — a matrix-based request blocker for observing a site's third-p
 - **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
 - **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom
 - **`unshorten-me`** (low) — OSINT tool: Unshorten.me.

@@ -232,7 +232,6 @@ kind: group-index
 - **`snagit`** (low) — Program that provides screen capture services, currently the best commercial program for this action
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`socialoomph`** (low) — Social media managing tool
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (low) — OSINT tool: SourceGraph.
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
@@ -269,7 +268,6 @@ kind: group-index
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
 - **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
-- **`wheredoesthislinkgo-modified-url-expander`** (low) — Tool for expanding URL address hyperlinks that have been previously shortened
 - **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
 - **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).
 - **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 

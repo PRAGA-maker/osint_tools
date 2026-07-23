@@ -58329,46 +58329,6 @@
     "_file": "library/tools/documents-metadata/socialmediarestaurant.md"
   },
   {
-    "id": "socialoomph",
-    "name": "Socialoomph",
-    "description": "Social media managing tool",
-    "url": "https://www.socialoomph.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/socialoomph.md"
-  },
-  {
     "id": "sourcebot",
     "name": "Sourcebot",
     "description": "Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or authorship traces — returns matching `email`/`username` mentions in code.",
@@ -60344,46 +60304,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/whatsapp-messenger.md"
-  },
-  {
-    "id": "wheredoesthislinkgo-modified-url-expander",
-    "name": "Wheredoesthislinkgo Modified URL Expander",
-    "description": "Tool for expanding URL address hyperlinks that have been previously shortened",
-    "url": "http://www.wheredoesthislinkgo.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/wheredoesthislinkgo-modified-url-expander.md"
   },
   {
     "id": "wolfram-alpha-personal-analytics",
@@ -64791,43 +64711,48 @@
   {
     "id": "cloakquest3r",
     "name": "CloakQuest3r",
-    "description": "Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scanning",
+    "description": "Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis, and IP history.",
     "url": "https://github.com/spyboy-productions/CloakQuest3r",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Attempting to reveal the true origin IP of a website hidden behind Cloudflare or another reverse proxy/CDN.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "address",
+      "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open source (MIT); free to run locally or on Colab/Cloud Shell/Binder.",
+    "opsec": "active",
+    "opsecNote": "It probes subdomains and infrastructure related to the target, and following a discovered origin IP means connecting to the target's real server — that traffic can appear in their logs. The project is explicitly authorised-testing only; run from an isolated/sock-puppet environment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source PoC by spyboy-productions; a best-effort heuristic tool, not a guaranteed de-cloak — results need independent confirmation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CloakQuest3r"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "cloudflare-bypass"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "https-github-com-spyboy-productions-valid8proxy",
       "r4ven"
@@ -77697,41 +77622,58 @@
   {
     "id": "netlas-io",
     "name": "Netlas.io",
-    "description": "Internet reconnaissance, DNS and WHOIS lookups, attack surface discovery, vulnerability research",
+    "description": "Use when you have a `domain`, `ip-address`, or ASN and want WHOIS/DNS, open ports, certificates, and historical infrastructure data — returns `domain`, `ip-address`, and attack-surface records.",
     "url": "https://app.netlas.io/whois_domains/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Internet reconnaissance, DNS and WHOIS lookups, attack surface discovery, vulnerability research",
+    "bestFor": "Internet-wide asset search — WHOIS/DNS lookups, attack-surface mapping, and historical infrastructure data for a domain or IP.",
     "input": "Domain name, IP address, ASN, DNS records",
     "output": "DNS records, WHOIS data, open ports, SSL certificates, service information, historical data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free registered tier with a modest daily request quota (~50/day historically); larger volume and API access are paid.",
     "opsec": "passive",
-    "opsecNote": "Queries cached internet scanning data; free tier available with 50 daily requests.",
+    "opsecNote": "Queries Netlas's own cached internet-scan data — you never scan or touch the target's servers, so the lookup is invisible to them. A free account (email) is needed for full features.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established internet-intelligence search engine (Netlas), comparable to Shodan/Censys; data is scan-derived and periodically refreshed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Netlas",
+      "netlas.io"
+    ],
+    "tags": [
+      "whois",
+      "dns",
+      "attack-surface",
+      "internet-scan"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/netlas-io.md"
   },
   {
@@ -79534,37 +79476,48 @@
   {
     "id": "pentest-tools-com",
     "name": "Pentest-Tools.com",
-    "description": "OSINT tool: Pentest-Tools.com.",
+    "description": "Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, and forgotten subdomains — returns leads and `domain` findings.",
     "url": "https://pentest-tools.com/information-gathering/google-hacking",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Running pre-built Google dork categories against a target domain to find publicly indexed sensitive content.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier runs basic reconnaissance without a subscription; a 7-day full trial and paid plans unlock the deeper scanners and reporting.",
+    "opsec": "passive",
+    "opsecNote": "The Google Hacking tool builds dork queries and runs them via Google — it does not scan the target's servers, so the target isn't contacted. Other Pentest-Tools scanners are active; this specific dorking tool is passive toward the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial security-tooling platform (Pentest-Tools.com) with a usable free tier; reputable vendor, results are Google's index rather than the vendor's own data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Pentest-Tools Google Hacking"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "google-dork",
+      "recon"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "pentest-tools-com-subdomains"
     ],
@@ -86231,42 +86184,47 @@
   {
     "id": "umatrix",
     "name": "uMatrix",
-    "description": "Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, tracking, data collection, and various experiments.",
+    "description": "Use when you want to see and control every domain a page contacts at runtime — a matrix-based request blocker for observing a site's third-party connections and hardening your investigation browser.",
     "url": "https://chrome.google.com/webstore/detail/umatrix/ogfcmafjalglgifnmanfmnieipoejdcf/related",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Observing and blocking the third-party domains, trackers, and scripts a web page loads, per site.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open source (GPLv3). No cost, no account.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally in your browser; nothing is sent to the subject. It hardens your OWN session against trackers and lets you inspect what a target page tries to load — useful for spotting analytics/CDN domains tied to a site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Created by the uBlock Origin author (gorhill); well-regarded but development ceased in 2020, so it's stable-but-unmaintained and best on Firefox going forward.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "uMatrix"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Source Code Analyzes"
+      "Source Code Analyzes",
+      "request-control"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/domains-ip-infrastructure/umatrix.md"
   },
   {
@@ -167099,37 +167057,43 @@
   {
     "id": "annotely",
     "name": "Annotely",
-    "description": "Perfectly simple tool for putting an arrow on a screenshot, highlighting some detail or blurring personal data.",
+    "description": "Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an evidence-presentation and redaction aid.",
     "url": "https://annotely.com/editor",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly annotating and redacting screenshots — arrows, highlights, and blurring of personal data — for investigation reports.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in-browser for core annotation; advanced/pro features may sit behind a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "A browser-based image editor for YOUR screenshots. For genuine redaction, prefer blur/pixelate over a solid box you might misplace, and verify the exported image no longer contains the sensitive detail — never assume an overlay removed underlying data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small third-party web image-annotation service; fine for non-sensitive markup, but avoid uploading case-critical originals to any third party.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "annotely.com"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "screenshot-annotation",
+      "redaction",
+      "reporting"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/opsec-investigator-tooling/annotely.md"
   },
   {
@@ -274655,37 +274619,43 @@
   {
     "id": "google-books-ngram-viewer",
     "name": "Google Books Ngram Viewer",
-    "description": "OSINT tool: Google Books Ngram Viewer.",
+    "description": "Use when you want to date a word, phrase, name, or slang by its frequency in published books over time — returns a usage-over-time chart, a corroboration/context aid (not a person locator).",
     "url": "https://books.google.com/ngrams/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Charting how often a term, name, or phrase appears in books across years to estimate when it entered use or peaked.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google research tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query an aggregate book-frequency corpus, not any person. Nothing about a subject is submitted; it's a context/dating aid.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A Google research tool over its digitised Books corpus; the underlying data is authoritative, though limited to what was scanned and to published books.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Ngram Viewer",
+      "Google Ngrams"
+    ],
     "tags": [
-      "Keywords, trends, news analytics"
+      "Keywords, trends, news analytics",
+      "corpus-linguistics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/search-engines/google-books-ngram-viewer.md"
   },
   {
@@ -352866,41 +352836,48 @@
   {
     "id": "ship-spotting",
     "name": "Ship Spotting",
-    "description": "OSINT tool: Ship Spotting.",
+    "description": "Use when you have a vessel `name` or IMO/registration and want dated, geolocated photographs of it — returns `image`, `geolocation`, and sighting history.",
     "url": "https://shipspotting.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding community-submitted, dated and located photographs of a specific ship to confirm its appearance, movements, and history.",
     "selectorsIn": [
-      "name"
+      "name",
+      "vehicle-plate"
     ],
     "selectorsOut": [
+      "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view photos; a free account is only needed to upload.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the public photo database is passive and reveals nothing about your subject. Photographer names and captions are public user content — treat them as leads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running enthusiast ship-photography community; photos and metadata are user-contributed, so dates/locations are as reliable as the submitter.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "shipspotting.com"
+    ],
     "tags": [
-      "maritime"
+      "maritime",
+      "vessel-photos"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "shipspotting-com",
       "shipspotting-live-ais"
