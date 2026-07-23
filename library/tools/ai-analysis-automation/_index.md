@@ -231,7 +231,7 @@ kind: group-index
 - **`merklemap`** (low) — OSINT tool: Merklemap.
 - **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
 - **`mihari`** (low) — OSINT tool: Mihari.
-- **`mitaka`** (low) — OSINT tool: mitaka.
+- **`mitaka`** (low) — Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel ser
 - **`mozilla-http-observatory`** (low) — OSINT tool: Mozilla HTTP Observatory.
 - **`mp3-spectrum-analyzer`** (low) — OSINT tool: MP3 Spectrum Analyzer.
 - **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 

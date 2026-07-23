@@ -433,7 +433,7 @@ kind: group-index
 - **`newsnow`** (low) — OSINT tool: Newsnow.
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
 - **`newspaperindex`** (low) — Use when you have a place or region and want its local/national newspapers to search for a `name` or event — returns a directory of online n
-- **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
+- **`newspapers-com`** (low) — Use when you have a `name` (plus an approximate place/date) and want historical newspaper coverage — obituaries, marriage/birth notices, loc
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
 - **`notey`** (low) — OSINT tool: Notey.
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
@@ -515,7 +515,7 @@ kind: group-index
 - **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
 - **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
-- **`qwant`** (low) — OSINT tool: Qwant.
+- **`qwant`** (low) — Use when you have a `name`, `username`, `email` or `phone` and want a privacy-preserving web search with a different result set than Google/
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
 - **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
 - **`rambler-search-engine-russia`** (medium) — Use when you have a `name`, `username`, or Russian-language keyword and want a Russian-market web index — returns web results skewed to RuNe

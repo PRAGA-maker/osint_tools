@@ -78,7 +78,7 @@ kind: group-index
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.
 - **`rss-search-engine`** (low) — OSINT tool: RSS Search Engine.
 - **`rss-search-hub`** (low) — OSINT tool: RSS Search Hub.
-- **`rssowl`** (low) — OSINT tool: RSSOwl.
+- **`rssowl`** (low) — Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS
 - **`scrapestorm-com`** (medium) — Use when you have a `domain` or target web page and want to bulk-extract structured data (emails, phones, names, listings) without coding — 
 - **`selfoss`** (low) — OSINT tool: Selfoss.
 - **`send-to-internet-archive-addons-mozilla-org`** (medium) — Use when you have a live page/URL you want preserved as evidence — one click sends it to the Wayback Machine, returning a timestamped archiv

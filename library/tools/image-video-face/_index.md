@@ -144,7 +144,7 @@ kind: group-index
 - **`hue-tools`** (low) — Use when you need to work with colors (generate, convert, blend palettes) — a color/design utility with marginal OSINT use for matching or d
 - **`huggingface-co-4`** (high) — Use when you have an audio/video clip of a subject and want an accurate transcript with per-word timing — returns spoken `name`s and `associ
 - **`huggingface-co`** (high) — Use when you have an `image` of a subject and want to strip the background to isolate the face/person before reverse-image or face search — 
-- **`hugin`** (low) — Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seaml
+- **`hugin`** (low) — Use when you have overlapping `image` frames of a place and want to stitch them into one wide/panoramic view — reconstructing a scene so you
 - **`hypem-music-search`** (high) — Use when you have an artist/DJ `name` or `username` and want to find their tracks, blog write-ups and linked profiles across music blogs — r
 - **`icon-finder`** (high) — Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not 
 - **`identifont-com`** (low) — Use when you have an `image` of text/lettering (a logo, document, sign, or tattoo) and want to identify the exact font — returns the typefac

@@ -442,7 +442,7 @@ kind: group-index
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
-- **`tunnelbear`** (low) — Anonymous browsing service provider
+- **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
 - **`twitter-profile-generator`** (low) — OSINT tool: Twitter Profile Generator.
 - **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking

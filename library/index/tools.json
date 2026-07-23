@@ -9258,36 +9258,54 @@
   },
   {
     "id": "mitaka",
-    "name": "mitaka",
-    "description": "OSINT tool: mitaka.",
+    "name": "Mitaka",
+    "description": "Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel services — returns pivots to related `domain`/`ip-address` and reputation data.",
     "url": "https://github.com/ninoseki/mitaka",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Right-click enrichment of a selected indicator (IP, domain, email, hash, wallet) across dozens of OSINT/threat-intel engines.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "email",
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MIT). Installed from the Chrome Web Store or Firefox Add-ons; some linked services need their own free/paid API keys or accounts.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Mitaka itself collects nothing (verifiable in source), but every pivot you click sends the indicator to a third-party service (VirusTotal, Shodan, urlscan, etc.) from your session — treat each click as an active query on that service and use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular open-source extension by ninoseki, widely used by DFIR/threat-intel analysts; code is public and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ninoseki/mitaka"
+    ],
+    "tags": [
+      "browser-extension",
+      "threat-intel",
+      "ioc",
+      "enrichment"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "mihari",
       "miteru"
@@ -21441,37 +21459,47 @@
   {
     "id": "rssowl",
     "name": "RSSOwl",
-    "description": "OSINT tool: RSSOwl.",
-    "url": "http://www.rssowl.org",
+    "description": "Use when you have a set of sites/`domain` feeds to monitor over time and want them aggregated, searched and filtered locally — a desktop RSS/Atom reader for standing surveillance of sources.",
+    "url": "https://www.rssowl.org",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Locally aggregating and filtering RSS/Atom feeds to watch news, blogs and sites for a subject over time.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; final release is v2.2.1. Requires a Java Runtime Environment; development is effectively frozen, so treat it as stable-but-unmaintained.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally on your machine and pulls feeds directly, so your IP fetches each source — use a sock-puppet/VPN if you're monitoring a target's own site. Nothing is uploaded to a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established open-source feed reader; stable but no longer actively developed, and it depends on a working Java runtime.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RSS Owl"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "rss",
+      "feeds",
+      "monitoring"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/rssowl.md"
   },
   {
@@ -56185,41 +56213,47 @@
   {
     "id": "online-ocr-converter",
     "name": "Online OCR Converter",
-    "description": "Tool that performs optical character recognition, converting scanned PDF documents and photos into editable and searchable electronic documents",
-    "url": "http://www.onlineocr.net",
+    "description": "Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machine-readable text you can then mine for `name`/`address`.",
+    "url": "https://www.onlineocr.net",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Free browser OCR of a scanned PDF/photo into editable Word/Excel/text.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for guests (~5 files/hour, up to 15MB each); a free account raises limits (50 pages, 200MB). No payment required for basic use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The document is uploaded to a third-party server for processing — never OCR sensitive, leaked, or confidential material here. For those, run a local OCR tool (e.g. Tesseract) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Free commercial OCR web service; adequate for clean scans, but a third-party uploader whose accuracy varies with image quality.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineOCR.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "ocr"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "online-ocr",
       "online-ocr-onlineocr-net"
@@ -60276,38 +60310,49 @@
   },
   {
     "id": "voyant-tools-org",
-    "name": "voyant-tools.org",
-    "description": "analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.",
+    "name": "Voyant Tools",
+    "description": "Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names and phrases — returns `name`/`associate` leads and term trends.",
     "url": "https://voyant-tools.org/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Fast frequency/keyword/context analysis of a document set to find recurring names and themes.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GPL). Hosted web version at voyant-tools.org, plus a downloadable desktop \"VoyantServer\" for offline/local use.",
+    "opsec": "passive",
+    "opsecNote": "The hosted version uploads your corpus to voyant-tools.org servers — do NOT paste sensitive/leaked documents into the public instance. For confidential material run the local VoyantServer instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running academic project (Stéphan Sinclair & Geoffrey Rockwell) widely used in the digital-humanities community; open source and inspectable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Voyant",
+      "voyant-tools.org"
+    ],
     "tags": [
-      "Files"
+      "Files",
+      "text-analysis",
+      "corpus"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/voyant-tools-org.md"
   },
   {
@@ -68021,42 +68066,53 @@
   {
     "id": "dorks-hunter",
     "name": "Dorks Hunter",
-    "description": "A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Database files, Exposed documents, Sub-subdomains, Login pages, SQL/PHP errors",
+    "description": "Use when you have a `domain` and want to auto-run a battery of Google dorks against it — returns exposed URLs, documents, login pages and error leaks (`domain`/`document-id`) worth chasing.",
     "url": "https://github.com/six2dez/dorks_hunter",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-command Google-dork sweep of a target domain for exposed files, panels and leaks.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source Python script (six2dez); no API key required for the core run.",
+    "opsec": "active",
+    "opsecNote": "The script fires many automated search-engine queries about the target domain from your IP. Google will throttle/CAPTCHA aggressive querying, and the searches themselves are attributable — run from a sock-puppet IP/VPN and pace the queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Part of the well-known six2dez recon tooling (reconftw author); widely used in bug-bounty/recon workflows, code is public.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dorks_hunter",
+      "six2dez/dorks_hunter"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "google-dorks",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "reconftw"
     ],
@@ -87137,42 +87193,48 @@
   {
     "id": "unshorten-me",
     "name": "Unshorten.me",
-    "description": "OSINT tool: Unshorten.me.",
+    "description": "Use when you have a shortened link (bit.ly, t.co, goo.gl, tinyurl, etc.) and want to see its real destination without clicking it — returns the expanded `domain`/URL.",
     "url": "https://unshorten.me/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Safely revealing where a shortened URL points before you visit it.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for interactive/manual use; a free-tier API (with an optional API key for higher limits) is available for automation.",
+    "opsec": "passive",
+    "opsecNote": "Unshorten.me resolves the redirect server-side, so the destination's server sees Unshorten.me's IP, not yours — a safer way to preview a hostile/tracking link than clicking it. The shortener operator can still see that the link was resolved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-standing free URL-expansion service; reliable for common shorteners, but it's a third party — verify sensitive destinations with a second expander.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "unshorten.me"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "URL unshorteners"
+      "URL unshorteners",
+      "redirect"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/unshorten-me.md"
   },
   {
@@ -106953,36 +107015,51 @@
   },
   {
     "id": "blockchain-explorer",
-    "name": "Blockchain Explorer",
-    "description": "OSINT tool: Blockchain Explorer.",
+    "name": "Blockchain.com Explorer",
+    "description": "Use when you have a `crypto-wallet` address or transaction hash and want its full on-chain history — balance, transactions and counterparties — returning linked `crypto-wallet` addresses to pivot on.",
     "url": "https://www.blockchain.com/explorer",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free public lookup of Bitcoin/Ethereum addresses and transactions and their counterparties.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public block explorer; no account required to browse addresses, transactions or blocks.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "On-chain data is public; you're reading a ledger, not touching the target. But your queries go to blockchain.com over your IP — use a sock-puppet/VPN so a monitored address lookup isn't tied to you. Never send funds to a target address to \"test\" it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "One of the oldest, most-used public block explorers; it renders authoritative on-chain data directly from the blockchain, though it doesn't attribute addresses to real identities.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Blockchain.com Explorer",
+      "blockchain.info explorer"
+    ],
+    "tags": [
+      "crypto",
+      "bitcoin",
+      "ethereum",
+      "blockchain-explorer"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "blockchain-com"
     ],
@@ -136633,38 +136710,51 @@
   {
     "id": "hugin",
     "name": "Hugin",
-    "description": "Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seamless panoramic images from multiple photographs.",
+    "description": "Use when you have overlapping `image` frames of a place and want to stitch them into one wide/panoramic view — reconstructing a scene so you can read signage, layout and `geolocation` clues across the whole area.",
     "url": "https://hugin.sourceforge.io/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Stitching multiple overlapping photos/video frames into a single panorama for scene reconstruction.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL). Desktop binaries for Windows, macOS and Linux; no account.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on your own machine — no images leave your computer, making it safe for sensitive material. Note that stitching strips/rewrites EXIF, so extract metadata BEFORE processing if you need it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Mature, long-standing open-source project (Panorama Tools lineage) listed in the Bellingcat toolkit; code is auditable and widely used.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hugin Panorama"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "misc"
+      "misc",
+      "image",
+      "panorama",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "septor-linux"
     ],
@@ -185889,41 +185979,48 @@
   {
     "id": "tunnelbear",
     "name": "TunnelBear",
-    "description": "Anonymous browsing service provider",
+    "description": "Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN with a free tier, for OpSec rather than target lookup.",
     "url": "https://www.tunnelbear.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Cheap/free VPN to separate your real IP from sock-puppet browsing and to appear in a chosen region.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier gives a small monthly data cap (historically ~2GB); unlimited data requires a paid plan. Requires creating an account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "This is investigator OpSec infrastructure, not a lookup tool. It hides your origin IP from the sites you visit and lets you appear in another country. It does NOT anonymise you the way Tor does — TunnelBear (a Canadian company, owned by McAfee) can see your traffic metadata, so use it for footprint reduction, not for high-threat anonymity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial VPN that publishes regular independent security audits (a genuine differentiator), but it is a for-profit provider you must trust with your traffic; not a substitute for Tor.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "TunnelBear VPN"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "vpn",
+      "opsec"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/tunnelbear.md"
   },
   {
@@ -241274,41 +241371,61 @@
   {
     "id": "namescan",
     "name": "NameScan",
-    "description": "Quick free sanctions and PEP screening with adverse media checks",
+    "description": "Use when you have a `name` (person or business) and want to check it against global sanctions, PEP and adverse-media lists — returns match flags plus linked `associate` names.",
     "url": "https://namescan.io",
     "category": "public-records",
     "path": [
       "public-records",
       "kyc-aml-tools"
     ],
-    "bestFor": "Quick free sanctions and PEP screening with adverse media checks",
-    "input": "Individual or business name",
-    "output": "Screening reports with sanctions matches, PEP flags, and adverse media hits",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free sanctions/PEP/adverse-media screening of a person or company name.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free instant scans are capped (a few per day/email); pay-as-you-go and MemberCheck enterprise plans add ongoing monitoring and higher volume.",
     "opsec": "passive",
-    "opsecNote": "Free scans available without registration; full access requires account creation.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You submit the target's name to a third-party compliance vendor that logs the query; it is not disclosed to the subject. Use a sock-puppet email if you register for extra free scans, and don't enter identifying data beyond the name.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial AML vendor aggregating third-party watchlists; sanctions/PEP matching is solid but adverse-media hits are keyword-driven and need manual confirmation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "opensanctions-org"
+    ],
+    "aliases": [
+      "NameScan.io",
+      "MemberCheck"
+    ],
+    "tags": [
+      "kyc",
+      "aml",
+      "sanctions",
+      "pep",
+      "adverse-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kyc-aml-tools/namescan.md"
   },
   {
@@ -284065,37 +284182,55 @@
   {
     "id": "newspapers-com",
     "name": "Newspapers.com",
-    "description": "OSINT tool: Newspapers.com.",
-    "url": "http://www.newspapers.com",
+    "description": "Use when you have a `name` (plus an approximate place/date) and want historical newspaper coverage — obituaries, marriage/birth notices, local news — returning `associate`, `address`, `dob` and `employer-org` leads.",
+    "url": "https://www.newspapers.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Mining historical newspaper archives (esp. obituaries) for family, dates and places tied to a name.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address",
+      "dob",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Indexed search results are visible free, but reading the full clipping requires a subscription (a 7-day free trial is offered). Operated alongside Ancestry.",
+    "opsec": "passive",
+    "opsecNote": "You search a commercial archive over your own account/IP; the subject is not notified. Register with a sock-puppet email/payment if you take the trial, and remember searches are logged to your account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Primary-source scans of real newspapers operated by Ancestry; content is authoritative, though OCR indexing can miss or garble names.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Newspapers.com Obituary Index"
+    ],
     "tags": [
-      "news"
+      "news",
+      "genealogy",
+      "obituaries",
+      "archives"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/newspapers-com.md"
   },
   {
@@ -288268,37 +288403,54 @@
   {
     "id": "qwant",
     "name": "Qwant",
-    "description": "OSINT tool: Qwant.",
-    "url": "http://www.qwant.com",
+    "description": "Use when you have a `name`, `username`, `email` or `phone` and want a privacy-preserving web search with a different result set than Google/Bing — returns `social-profile`, `domain` and `name` leads.",
+    "url": "https://www.qwant.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A no-tracking European search engine for pivoting selectors without personalising/leaking your session.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required. Funded as an independent European search product.",
+    "opsec": "passive",
+    "opsecNote": "Qwant states it does not store search history or profile users, so results aren't personalised to you — good for neutral, low-footprint searching. Still use a sock-puppet browser/VPN; you are querying a live service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established French search engine, EU-hosted, with a stated no-tracking privacy policy; a genuine independent index (partly Bing-backed), not a scraper.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "qwant.com"
+    ],
     "tags": [
-      "meta-search"
+      "meta-search",
+      "privacy",
+      "search-engine"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/qwant.md"
   },
   {

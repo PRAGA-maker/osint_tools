@@ -147,7 +147,7 @@ kind: group-index
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
-- **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
+- **`dorks-hunter`** (low) — Use when you have a `domain` and want to auto-run a battery of Google dorks against it — returns exposed URLs, documents, login pages and er
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
 - **`dpulse`** (low) — Use when you have a `domain` and want an all-in-one recon pass with a written report — enumerates subdomains, IPs, emails, and infrastructur
 - **`drishti`** (low) — Nodejs toolkit for OSINT
@@ -428,7 +428,7 @@ kind: group-index
 - **`umatrix`** (low) — Use when you want to see and control every domain a page contacts at runtime — a matrix-based request blocker for observing a site's third-p
 - **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
 - **`unshorten-it`** (low) — Use when you have a shortened/obfuscated link and want its true destination safely — expands it server-side and returns the destination `dom
-- **`unshorten-me`** (low) — OSINT tool: Unshorten.me.
+- **`unshorten-me`** (low) — Use when you have a shortened link (bit.ly, t.co, goo.gl, tinyurl, etc.) and want to see its real destination without clicking it — returns 
 - **`urlhaus`** (low) — Use when you have a `domain`/URL, host or `ip-address` and want to know if it distributes malware — returns malicious URLs, payloads and hos
 - **`urlvoid`** (low) — OSINT tool: URLVoid.
 - **`urlxray`** (low) — OSINT tool: Urlxray.

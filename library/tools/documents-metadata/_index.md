@@ -183,7 +183,7 @@ kind: group-index
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — OSINT tool: Online IDE and Paste Search Engine.
 - **`online-metadata-viewer-and-editor`** (low) — High-quality and well-made. Support docx, xlsx, msg, pptx, jpeg, vsd, mpp.
-- **`online-ocr-converter`** (low) — Tool that performs optical character recognition, converting scanned PDF documents and photos into editable and searchable electronic docume
+- **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
 - **`pages2images`** (low) — Website screenshot tool
@@ -260,7 +260,7 @@ kind: group-index
 - **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
-- **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.
+- **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
 - **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
