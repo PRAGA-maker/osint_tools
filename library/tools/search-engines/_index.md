@@ -261,7 +261,6 @@ kind: group-index
 - **`google-advanced-search-operators-guide`** (low) — Reference document listing Google advanced search operators.
 - **`google-adwords`** (low) — OSINT tool: Google Adwords.
 - **`google-and-bing`** (medium) — Use when you have almost any selector and want to widen the net with search dorks — returns a curated reference of Google and Bing operators
-- **`google-autocomplete-scraper`** (low) — One of the best ways to learn more about a person, company, or subject is to see what people are more likely to type in a search engine alon
 - **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa

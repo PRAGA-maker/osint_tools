@@ -496,7 +496,7 @@ kind: group-index
 - **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
 - **`waterfox`** (low) — OSINT tool: Waterfox.
 - **`web-history-stat`** (low) — detailed statistics of your browser history
-- **`web-of-trust`** (low) — Broswer add-on that identifies the trust ratings of websites
+- **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`web-proxy`** (low) — free web proxy
 - **`webdext`** (low) — An intelligent and quick web data extractor for #GoogleChrome. Support data extraction from web pages containing a list of objects such as p
 - **`webmapper`** (low) — Extension that create a map-visualization based by browser history. A visual representation of the most visited sites in 10, 20, 50 or 100 d

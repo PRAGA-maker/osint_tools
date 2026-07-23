@@ -34,6 +34,9 @@ localInstall: false
 registration: false
 relatedTools:
 - un-data
+- statistics-and-data
+- un-comtrade-database
+- unstats-social-indicators
 aliases:
 - UN Consolidated Sanctions List
 - UNSC Consolidated List

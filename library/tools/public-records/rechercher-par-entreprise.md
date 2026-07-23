@@ -34,6 +34,11 @@ registration: false
 relatedTools:
 - rechercher-par-r-gion-ou-type-de-travaux
 - rechercher-par-r-pondant
+- alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj
+- association-assq-qc-ca
+- banq-num-rique
+- services-en-ligne
+- trouver-une-d-cision
 aliases:
 - RBQ Registre des détenteurs de licence
 - Search by company (RBQ)

@@ -59,7 +59,6 @@ kind: group-index
 - **`ahrefs`** (low) — OSINT tool: ahrefs.
 - **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
-- **`alexa`** (low) — OSINT tool: Alexa.
 - **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
 - **`all-net-tool`** (medium) — Use when you have a `domain` or `ip-address` and want quick network diagnostics — returns WHOIS, traceroute, DNS, and proxy/anonymity check 
 - **`all-net-tools-toolbox-domain-information`** (medium) — Use when you have a `domain` or `ip-address` and want registration/DNS details from a browser — returns WHOIS registrant, name servers, and 
@@ -190,7 +189,6 @@ kind: group-index
 - **`gogetcrawl`** (low) — Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from W
 - **`google-bug-bounty-dorks-generator`** (low) — Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
-- **`google-transparency-report`** (low) — OSINT tool: Google Transparency Report.
 - **`google-universal-dork-builder`** (low) — Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your
 - **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
 - **`graphystories`** (low) — OSINT tool: GraphyStories.
@@ -399,7 +397,6 @@ kind: group-index
 - **`speedtest-com`** (medium) — Use to check your own connection's public `ip-address` and speed from Ookla's global servers — primarily a bandwidth test with an incidental
 - **`sputnik`** (low) — Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shod
 - **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
-- **`spyse-cli`** (low) — command line client for Spyse.com
 - **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
