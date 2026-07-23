@@ -13,7 +13,7 @@ kind: group-index
 - **`alltrails`** (low) — AllTrails.com is a tool for discovering hiking, biking, and running trails worldwide, providing detailed trail maps, user reviews, and navig
 - **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
 - **`apple-com`** (medium) — Use when you have an `address` or `geolocation` and want Apple's maps, satellite, and street-level "Look Around" imagery as a second source 
-- **`apple-maps`** (low) — Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.
+- **`apple-maps`** (low) — Use when you have an `address` or `geolocation` and want an independent basemap plus street-level "Look Around" imagery to verify or geoloca
 - **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
 - **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
@@ -114,7 +114,7 @@ kind: group-index
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
 - **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
 - **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora
-- **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.
+- **`uk-onshore-oil-and-gas-activity`** (medium) — Use when you have a `geolocation`/`address` in Great Britain and want to know the petroleum licences, wells and operators active there — ret
 - **`ukraine-war-map-heatmap`** (low) — Use when you have a `geolocation` in the Ukraine conflict zone and want to see control/activity over time — returns a time-animated map of f
 - **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
 - **`us-labor-strike-map`** (medium) — Use when you have a US `geolocation`/date and want labor-action context — returns mapped strikes/pickets by place and time to situate an eve

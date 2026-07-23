@@ -44,7 +44,7 @@ kind: group-index
 - **`tools/`** — 5 skill(s) below.
 - **`ttps/`** — 2 skill(s) below.
 - **`typosquatting/`** — 4 skill(s) below.
-- **`url-expanders/`** — 4 skill(s) below.
+- **`url-expanders/`** — 3 skill(s) below.
 - **`vulnerabilities/`** — 4 skill(s) below.
 - **`whois-records/`** — 14 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
@@ -276,7 +276,7 @@ kind: group-index
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
 - **`logsensor`** (low) — #Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
-- **`majestic`** (low) — OSINT tool: Majestic.
+- **`majestic`** (low) — Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow /
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
 - **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
 - **`maxmind`** (low) — OSINT tool: MaxMind.
@@ -495,7 +495,6 @@ kind: group-index
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
 - **`whoishostingthis`** (low) — OSINT tool: WhoIsHostingThis.
 - **`whoismind`** (low) — OSINT tool: WhoisMind.
-- **`whoisrequest`** (low) — OSINT tool: WhoIsRequest.
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec
@@ -506,7 +505,6 @@ kind: group-index
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
 - **`xurlfind3r`** (low) — Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine
-- **`you-get-signal`** (low) — OSINT tool: You Get Signal.
 - **`yougetsignal-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain
 - **`zscaler-global-threat-map-dashboard`** (low) — OSINT tool: Zscaler Global Threat Map Dashboard.
 

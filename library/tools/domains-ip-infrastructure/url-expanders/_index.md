@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`checkshorturl`** (low) — Safe short-link destination checks
-- **`link-expander`** (low) — Expanding shortened links safely
 - **`url-expander`** (low) — Resolving opaque short links
 - **`where-does-this-link-go`** (low) — Use when you have a shortened or suspicious URL (`domain`) and want to see the full redirect chain and final destination without clicking it
 

@@ -235,7 +235,7 @@ kind: group-index
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`socialoomph`** (low) — Social media managing tool
-- **`sourcebot`** (low) — OSINT tool: Sourcebot.
+- **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (low) — OSINT tool: SourceGraph.
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`statwing`** (low) — Intuitive data analytics tool

@@ -588,7 +588,7 @@ kind: group-index
 - **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 
 - **`searcher`** (low) — A very fast and simple #go tool that allows you to collect search results from a list of keywords in the following search engines: Ask Bing 
 - **`searxng-baresearch-org`** (low) — Use when you want to search many engines at once without being tracked — a public SearXNG metasearch instance aggregating Google, Bing and o
-- **`searxng`** (low) — OSINT tool: SearXNG.
+- **`searxng`** (low) — Use when you have a `name`, `username` or `email` and want to sweep many search engines at once without being profiled — returns aggregated 
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social
 - **`seek-job-search-engine-new-zealand`** (medium) — Use when you have a `name` or `employer-org` and want a subject's NZ job/employment footprint — returns employer, role, and location leads f
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera

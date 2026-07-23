@@ -804,7 +804,7 @@ kind: group-index
 - **`semantic-scholar`** (medium) — Use when you have a `name` in academia and want their papers, co-authors and affiliations as a free citation graph — returns employer-org, a
 - **`serpstat`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns keywords, competitors, backlinks and estimated visibility to profi
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
-- **`services-en-ligne`** (low) — OSINT tool: Services en ligne.
+- **`services-en-ligne`** (low) — Use when you have a `name` or `employer-org` in Québec and want their transport-registry file — heavy-vehicle owner/operator status, permits
 - **`sesac-com`** (high) — Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns
 - **`sesric-basic-social-and-economic-indicators`** (low) — OSINT tool: SESRIC Basic Social and Economic Indicators.
 - **`sesric-databases`** (low) — OSINT tool: SESRIC Databases.

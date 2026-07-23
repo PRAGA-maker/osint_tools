@@ -34963,28 +34963,29 @@
   {
     "id": "subreddits-org",
     "name": "Subreddits.org",
-    "description": "Directory of active subreddits.",
+    "description": "Use when you have a topic or `name`/keyword and want to find the relevant Reddit communities to monitor — returns matching subreddits as `social-profile` leads.",
     "url": "http://subreddits.org",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Browsing a directory of subreddits",
+    "bestFor": "Discovering the right subreddits on a topic so you know which communities to search or monitor.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free searchable directory of subreddits; no account, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory touches only subreddits.org, not Reddit or any subject — no exposure. Actually reading the subreddits it points you to is a separate, direct Reddit visit; use a sock-puppet Reddit session for that step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party directory of Reddit communities; a convenient discovery index, not affiliated with Reddit and not an authoritative or exhaustive list.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -34993,6 +34994,9 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "subreddits"
+    ],
     "aliases": [
       "Subreddits"
     ],
@@ -35001,11 +35005,8 @@
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "subreddits"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/subreddits-org.md"
   },
   {
@@ -58150,37 +58151,49 @@
   {
     "id": "sourcebot",
     "name": "Sourcebot",
-    "description": "OSINT tool: Sourcebot.",
+    "description": "Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or authorship traces — returns matching `email`/`username` mentions in code.",
     "url": "https://www.sourcebot.dev/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Fast regex + symbol code search across many self-indexed repos to hunt for leaked identifiers and authorship.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic tier is free and open source (self-hosted via a single Docker container); a Pro tier (~$20/user/month) adds AI features. Your code/index stays on your own infrastructure.",
+    "opsec": "passive",
+    "opsecNote": "You index and search repositories on your own self-hosted instance, so queries never touch the target or a third-party service. The only exposure is when Sourcebot pulls public repos to index — that fetch comes from your host/IP, so use a neutral egress if the target org would notice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project with a public GitHub repo; self-hosted so you can audit exactly what it does, but it is a code-search engine, not an OSINT data source in itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Sourcebot.dev"
+    ],
     "tags": [
       "code-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/sourcebot.md"
   },
   {
@@ -75138,46 +75151,6 @@
     "_file": "library/tools/domains-ip-infrastructure/lfitester.md"
   },
   {
-    "id": "link-expander",
-    "name": "Link Expander",
-    "description": "Expanding shortened links safely",
-    "url": "https://www.linkexpander.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "url-expanders"
-    ],
-    "bestFor": "Expanding shortened links safely",
-    "input": "Shortened URL",
-    "output": "Resolved destination URL and redirect behavior",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses preview/expansion workflows and avoids direct navigation in the browser.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/url-expanders/link-expander.md"
-  },
-  {
     "id": "linkfinder",
     "name": "LinkFinder",
     "description": "Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — returns discovered endpoints (`domain`).",
@@ -75433,37 +75406,53 @@
   {
     "id": "majestic",
     "name": "Majestic",
-    "description": "OSINT tool: Majestic.",
+    "description": "Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow / Citation Flow) that expose a site's network and affiliations.",
     "url": "https://majestic.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Backlink / inbound-link intelligence — discovering which sites link to a target domain and how reputable that link neighborhood is.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free Lite tier and rotating free demo searches give limited backlink/Site Explorer data; full backlink profiles require a paid subscription. Free browser plugin and basic backlink checker available.",
+    "opsec": "passive",
+    "opsecNote": "You query Majestic's crawl index, never the target site, so the domain owner sees no visit from you. Deeper use requires a Majestic account, which ties the searches to your registration — use a dedicated investigative account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established commercial link-intelligence provider (operating since 2004) with its own large-scale web crawl; widely used in SEO and investigations, though free-tier data is deliberately capped.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "ahrefs"
+    ],
+    "aliases": [
+      "Majestic SEO",
+      "MajesticSEO"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "backlinks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/majestic.md"
   },
   {
@@ -89915,45 +89904,6 @@
     "_file": "library/tools/domains-ip-infrastructure/whois-records/whoisology.md"
   },
   {
-    "id": "whoisrequest",
-    "name": "WhoIsRequest",
-    "description": "OSINT tool: WhoIsRequest.",
-    "url": "http://whoisrequest.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "whois-request"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/whoisrequest.md"
-  },
-  {
     "id": "whoxy",
     "name": "Whoxy",
     "description": "OSINT tool: Whoxy.",
@@ -90558,45 +90508,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/xurlfind3r.md"
-  },
-  {
-    "id": "you-get-signal",
-    "name": "You Get Signal",
-    "description": "OSINT tool: You Get Signal.",
-    "url": "http://www.yougetsignal.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "yougetsignal-com"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/you-get-signal.md"
   },
   {
     "id": "yougetsignal-com",
@@ -150796,43 +150707,55 @@
   {
     "id": "apple-maps",
     "name": "Apple Maps",
-    "description": "Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.",
+    "description": "Use when you have an `address` or `geolocation` and want an independent basemap plus street-level \"Look Around\" imagery to verify or geolocate a place — returns precise `geolocation` and street-level `image`s.",
     "url": "https://www.apple.com/maps/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "A second-source basemap and Look Around street-level imagery for geolocation and place verification, distinct from Google's coverage.",
     "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
+      "address",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free consumer mapping service from Apple; the web version is public (no Apple ID needed to browse), the app ships on Apple devices.",
+    "opsec": "passive",
+    "opsecNote": "Browsing maps and imagery reveals nothing to any subject. Apple logs map requests against your device/IP (and Apple ID if signed in) — use a clean session and stay signed out for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Apple mapping data and imagery; an authoritative, independently-collected basemap that usefully differs from Google's coverage and capture dates.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps",
+      "google-earth",
+      "bing-maps"
+    ],
+    "aliases": [
+      "Apple Maps Look Around",
+      "maps.apple.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "maps"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/apple-maps.md"
   },
   {
@@ -155493,35 +155416,51 @@
   {
     "id": "uk-onshore-oil-and-gas-activity",
     "name": "UK Onshore Oil and Gas Activity",
-    "description": "OSINT tool: UK Onshore Oil and Gas Activity.",
+    "description": "Use when you have a `geolocation`/`address` in Great Britain and want to know the petroleum licences, wells and operators active there — returns licence areas, well sites and the `employer-org`s that hold them.",
     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=29c31fa4b00248418e545d222e57ddaa",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Mapping onshore petroleum licences (PEDLs), wells and their operators across England, Scotland and Wales.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public map published by the North Sea Transition Authority (NSTA, formerly the Oil & Gas Authority); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Static government web map served from ArcGIS; browsing it reveals nothing to any subject. Standard ArcGIS/Esri request logging applies but there is no target-side exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official NSTA (UK government regulator) map layer; the licence, well and operator data is authoritative regulatory record.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "NSTA Onshore Oil and Gas Activity",
+      "Onshore Oil and Gas Activity map"
+    ],
+    "tags": [
+      "maps",
+      "energy-infrastructure"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/uk-onshore-oil-and-gas-activity.md"
   },
   {
@@ -175823,43 +175762,6 @@
     "_file": "library/tools/opsec-investigator-tooling/jsonhero.md"
   },
   {
-    "id": "jsonvisio",
-    "name": "Jsonvisio",
-    "description": "Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files.",
-    "url": "https://jsonvisio.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools",
-      "Visualization tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/jsonvisio.md"
-  },
-  {
     "id": "just-delete-me",
     "name": "Just Delete Me",
     "description": "Use when you have a service `username`/account and want the direct account-deletion link and difficulty rating — supports investigator OpSec and persona cleanup (no target selectors out).",
@@ -178307,24 +178209,27 @@
   {
     "id": "norton-safeweb-rating-search",
     "name": "Norton Safeweb Rating Search",
-    "description": "Website that offers the Norton Safe Web search for determining website safety ratings",
-    "url": "http://safeweb.norton.com",
+    "description": "Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — returns a rating, not a new selector.",
+    "url": "https://safeweb.norton.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Checking whether a domain has a malicious/phishing reputation before you interact with it.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reputation lookup portal from Gen Digital (Norton); no account needed to query a site.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Norton's servers, not the target site, so the domain owner never sees you. Norton logs the lookups you make; use a clean session if the target list is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party service from Gen Digital (Norton/Symantec); the rating reflects Norton's own crawler plus community reviews, an established commercial reputation source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -178333,18 +178238,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "symantec-norton-anti-virus"
+    ],
+    "aliases": [
+      "Norton Safe Web",
+      "safeweb.norton.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "proxy-servers-online-privacy-security-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "symantec-norton-anti-virus"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/norton-safeweb-rating-search.md"
   },
   {
@@ -182035,38 +181943,42 @@
   {
     "id": "shadowcrypt-tools",
     "name": "Shadowcrypt Tools",
-    "description": "24 online tools for OSINT, network scanning, MD5 encryption and many others",
+    "description": "Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one browser page — returns co-hosted `domain`s, `geolocation` and infrastructure detail.",
     "url": "https://shadowcrypt.net/tools/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "One-stop browser recon (DNS, WHOIS, IP geo, reverse-IP, headers) without installing anything.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tools; no account or payment. Access is gated by a Cloudflare Turnstile challenge.",
+    "opsec": "passive",
+    "opsecNote": "All lookups run server-side from Shadowcrypt's infrastructure, so the target never sees your IP — but Shadowcrypt does see every domain/IP you query. Treat the operator as a third party that logs your targets; use a sock-puppet session and don't paste sensitive selectors.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small independent tool site with no named operator or transparency policy; results are convenient but should be corroborated against an authoritative source before you rely on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools",
-      "Routine/Data Extraction Automation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cloudflare-resolver-tool",
       "geoip-tracker-tool",
@@ -182074,6 +181986,17 @@
       "page-links-extractor-tool",
       "phone-number-lookup-tool"
     ],
+    "aliases": [
+      "ShadowCrypt",
+      "shadowcrypt.net"
+    ],
+    "tags": [
+      "NOOSINT tools",
+      "Routine/Data Extraction Automation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md"
   },
   {
@@ -253001,36 +252924,41 @@
   },
   {
     "id": "services-en-ligne",
-    "name": "Services en ligne",
-    "description": "OSINT tool: Services en ligne.",
+    "name": "Services en ligne (Commission des transports du Québec)",
+    "description": "Use when you have a `name` or `employer-org` in Québec and want their transport-registry file — heavy-vehicle owner/operator status, permits and authorizations — returns registration status, `address` and `document-id` references.",
     "url": "https://www.pes.ctq.gouv.qc.ca/pes/faces/dossierclient/recherche.jsp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a Québec individual or business in the heavy-vehicle owner/operator and transport-permit registries.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public consultation service of the Commission des transports du Québec (CTQ); no account for the public register search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public government registry lookup — you query the CTQ, not the subject, so there is no target-side exposure. Interface and results are in French.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Québec (Commission des transports du Québec) registry; the registration, permit and operator data is authoritative public record.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
       "association-assq-qc-ca",
@@ -253040,6 +252968,18 @@
       "rechercher-par-r-pondant",
       "trouver-une-d-cision"
     ],
+    "aliases": [
+      "CTQ Services en ligne",
+      "Commission des transports du Québec dossier client"
+    ],
+    "tags": [
+      "quebec",
+      "transport-registry",
+      "public-records"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/services-en-ligne.md"
   },
   {
@@ -290751,37 +290691,51 @@
   {
     "id": "searxng",
     "name": "SearXNG",
-    "description": "OSINT tool: SearXNG.",
+    "description": "Use when you have a `name`, `username` or `email` and want to sweep many search engines at once without being profiled — returns aggregated links, `social-profile`s and `domain`s from a privacy-preserving metasearch.",
     "url": "https://searxng.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Privacy-preserving metasearch that aggregates ~200 engines into one query without logging or profiling you.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (AGPL). Use a hosted public instance (list at searx.space) or self-host via Docker at no cost.",
+    "opsec": "passive",
+    "opsecNote": "A strong OpSec choice — no cookies/profiling, results can be proxied, and it works over Tor, so your search terms aren't tied to a personal Google/Bing profile. On a public instance the operator can still see your queries; self-host or pick a trusted instance for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Mature, widely-used open-source project (AGPL); self-hostable and auditable. Result quality depends on which upstream engines a given instance enables.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SearX-NG",
+      "searxng.org"
+    ],
     "tags": [
       "meta-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/searxng.md"
   },
   {

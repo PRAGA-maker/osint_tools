@@ -240,7 +240,6 @@ kind: group-index
 - **`jottis-malware-scan`** (low) — Website that scans suspicious or potentially compromised files with multiple anti-virus programs
 - **`jsoncrack`** (low) — Use when you have a complex JSON blob (API dump, scraped data) and want to see it as an interactive node graph to trace structure and relati
 - **`jsonhero`** (low) — Use when you have a large or messy JSON blob (an API dump, a scraped payload) and want to explore it visually — a browser tool with tree vie
-- **`jsonvisio`** (low) — Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files.
 - **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
 - **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
 - **`kali-linux`** (low) — Offensive-security Linux distribution with many recon/OSINT tools preinstalled.
@@ -301,7 +300,7 @@ kind: group-index
 - **`new-ip-now-web-proxy`** (low) — Anonymous browsing service provider
 - **`nino-generator`** (low) — OSINT tool: NINO Generator.
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
-- **`norton-safeweb-rating-search`** (low) — Website that offers the Norton Safe Web search for determining website safety ratings
+- **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
 - **`off-the-record-instant-messaging-plug-in`** (low) — Program that offers encrypted instant messaging services that cannot be monitored
 - **`offen-osint`** (low) — OSINT tool: Offen Osint.
@@ -387,7 +386,7 @@ kind: group-index
 - **`septor-linux`** (low) — OSINT tool: Septor Linux.
 - **`sessionbox`** (low) — multi-login browser extension
 - **`shadowcrypt-messaging`** (low) — Tool for a browser add-on that encrypts messaging for webmail and social networking sites
-- **`shadowcrypt-tools`** (low) — 24 online tools for OSINT, network scanning, MD5 encryption and many others
+- **`shadowcrypt-tools`** (low) — Use when you have a `domain` or `ip-address` and want quick network recon (DNS, WHOIS, IP geolocation, reverse-IP, HTTP headers) from one br
 - **`shazam-music-entertainment-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
