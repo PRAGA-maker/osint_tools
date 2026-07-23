@@ -21,7 +21,6 @@ kind: group-index
 - **`a-ton-of-privacy`** (low) — Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.
 - **`acfcs-org`** (low) — Use when you want reference material and technique guides for tracing crypto/financial crime (e.g. Bitcoin tracking for investigators) — ret
 - **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
-- **`addresswatcher-com`** (low) — OSINT tool: Addresswatcher.com.
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
 - **`aib-gov-uk`** (medium) — Use when you have a `name` and want to check Scotland's statutory insolvency register — returns `address`, `dob` and case `document-id` for 
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.

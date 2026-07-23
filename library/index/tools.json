@@ -9076,37 +9076,53 @@
   {
     "id": "nazar",
     "name": "NAZAR",
-    "description": "universal Osint Toolkit",
+    "description": "Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, ip-address and domain data.",
     "url": "https://github.com/MR-NULL666/NAZAR",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single lightweight CLI menu bundling basic recon (Instagram lookup, IP/reverse-IP, DNS, port scan, headers).",
+    "selectorsIn": [
+      "username",
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "ip-address",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source, no API keys required. Small hobby project — last release (1.0.6) dated 2021; dormant but installable.",
+    "opsec": "active",
+    "opsecNote": "Modules like port scan, traceroute and header detection send packets directly from your host to the target, which is logged there; the Instagram/DNS/reverse-IP modules go through third-party services. Run from a VPN/VPS you're willing to burn, and don't point the active scanners at infrastructure you're not authorised to probe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Minimal single-author toolkit (a few commits, ~20 stars, dormant since 2021) that wraps public services and standard network tools. Nothing here is authoritative; verify every module's output at its original source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "NAZAR OSINT toolkit",
+      "MR-NULL666/NAZAR"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "Tools collections/toolkits",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/nazar.md"
   },
   {
@@ -19055,38 +19071,52 @@
   {
     "id": "distill-io",
     "name": "Distill.io",
-    "description": "Distill.io is a website change monitoring tool that allows users to track changes on web pages.",
+    "description": "Use when you have a `domain`/URL and want to be alerted the moment a page changes — returns change notifications and a diff of what changed.",
     "url": "https://distill.io/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Monitoring a specific web page (or page region) for changes and getting alerted when it updates.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free tier — 25 local (browser) monitors, 5 cloud monitors, ~6-hour check frequency, 1000 checks/month, 30 email alerts. Paid plans add faster/cloud monitoring.",
+    "opsec": "active",
+    "opsecNote": "Local monitors fetch the page from your own browser, so the target site sees your visits on each check; cloud monitors fetch from Distill's servers instead (your IP hidden, but you trust Distill with the URL and any login). For sensitive targets prefer cloud monitors or a sock-puppet profile, and never point a logged-in local monitor at a subject-controlled site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial change-monitoring service recommended in the Bellingcat toolkit; reliable for detecting changes, but it's a closed third party you entrust with the URLs (and cloud credentials) you monitor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Distill Web Monitor",
+      "distill.io"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "archiving"
+      "archiving",
+      "change-monitoring"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/distill-io.md"
   },
   {
@@ -67255,47 +67285,6 @@
     "_file": "library/tools/domains-ip-infrastructure/dork-dump.md"
   },
   {
-    "id": "dork-scanner",
-    "name": "Dork Scanner",
-    "description": "NOT support Google. Only Bing, ASK and [http://WoW.com](http://WoW.com) (AOL) search engines. Can work with very long lists of queries/documents (in .txt files)",
-    "url": "https://github.com/Balgogan/dorkscanner",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/dork-scanner.md"
-  },
-  {
     "id": "dorks-faisalahmed-me",
     "name": "dorks.faisalahmed.me",
     "description": "online constructor of google dorks for searching \"sensitive\" wesite pages",
@@ -76127,37 +76116,52 @@
   {
     "id": "misp-galaxy",
     "name": "MISP Galaxy",
-    "description": "OSINT tool: MISP Galaxy.",
-    "url": "https://www.misp-galaxy.org/360net/",
+    "description": "Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/alias links and context.",
+    "url": "https://www.misp-galaxy.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving threat-actor aliases and mapping APT groups to their known synonyms, tools and targets.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free and open. Data published under CC0 / 2-clause BSD; browsable on the web and downloadable as JSON from GitHub.",
+    "opsec": "passive",
+    "opsecNote": "A static reference dataset — you read public taxonomies. No query touches any actor or target; nothing to leak beyond your own visit to the site/repo.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the MISP Project and a large open community; widely used across CTI teams. Clusters aggregate vendor reporting, so attribution reflects those sources' confidence, not ground truth.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "MISP galaxy clusters",
+      "misp-galaxy.org"
+    ],
     "tags": [
-      "threat-actor-search"
+      "threat-actor-search",
+      "threat-intel",
+      "attribution"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/misp-galaxy.md"
   },
   {
@@ -81787,46 +81791,6 @@
     "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/scanless.md"
   },
   {
-    "id": "scans-io",
-    "name": "Scans.io",
-    "description": "Historical internet scan data access",
-    "url": "https://scans.io/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "host-port-discovery"
-    ],
-    "bestFor": "Historical internet scan data access",
-    "input": "IP or domain",
-    "output": "Historical scan results, service history",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive access to historical scanning archives.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/scans-io.md"
-  },
-  {
     "id": "scoutsuite",
     "name": "ScoutSuite",
     "description": "Snapshot-style multi-cloud security posture reviews",
@@ -82945,43 +82909,53 @@
   },
   {
     "id": "single-file",
-    "name": "SIngle File",
-    "description": "GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file",
+    "name": "SingleFile",
+    "description": "Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file.",
     "url": "https://github.com/gildas-lormeau/SingleFile",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Capturing a web page as one self-contained HTML file for offline evidence preservation.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (AGPL-3.0). No account, no server — runs entirely in your browser or via the CLI.",
+    "opsec": "active",
+    "opsecNote": "SingleFile fetches the live page from your own browser/host, so the target site's logs see your IP and user-agent like any normal visit. It does not phone home. Use a sock-puppet browser profile or VPN when capturing a subject-controlled site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Mature, widely used open-source project by Gildas Lormeau; source is public and auditable. The archived file is a WYSIWYG copy of what your browser rendered, not a cryptographically notarised capture.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SingleFile extension",
+      "gildas-lormeau/SingleFile",
+      "SingleFileZ"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Source Code Analyzes"
+      "archiving",
+      "evidence-capture"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/single-file.md"
   },
   {
@@ -84383,35 +84357,51 @@
   {
     "id": "subdomain-finder",
     "name": "Subdomain Finder",
-    "description": "OSINT tool: Subdomain Finder.",
+    "description": "Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.",
     "url": "https://osint.sh/subdomain/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Fast passive subdomain enumeration of a domain from a free web tool — no install.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool, part of the osint.sh suite. No account or payment; generous but subject to soft rate limits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Enumeration is done by osint.sh from certificate-transparency logs and passive DNS, not by probing the target, so the subject's servers see nothing. Only osint.sh sees the domain you queried; use a VPN if that matters to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular free OSINT toolbox; results are as complete as its passive sources (CT logs / passive DNS) and can miss subdomains that never appeared in a certificate. Corroborate with a second enumerator for coverage.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "osint.sh subdomain finder",
+      "osint.sh subdomain"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "subdomain-enumeration",
+      "passive-recon"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomain-finder.md"
   },
   {
@@ -89133,42 +89123,53 @@
   {
     "id": "whois-domain-search-tool",
     "name": "Whois Domain Search Tool",
-    "description": "A tool that allows you to query whois data for a site name in several domain zones at once.",
+    "description": "Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain records and availability.",
     "url": "https://whois.marcaria.com/en",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a name's WHOIS record and registration status across many domain zones in one query.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "name"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "name",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "WHOIS lookup and multi-TLD availability search are free; Marcaria is a domain registrar that monetises by selling registrations. No account needed to look up records.",
+    "opsec": "passive",
+    "opsecNote": "You query Marcaria's WHOIS front-end, not the target — the subject's infrastructure sees nothing. Note that registrar lookup pages sometimes place speculative registration orders; only use the read-only WHOIS/availability view and don't trigger a purchase flow. Use a VPN to keep your own query private from Marcaria.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Front-end of a commercial registrar (Marcaria). WHOIS output mirrors registry data but is increasingly redacted by GDPR/privacy proxies; the multi-TLD view is convenient but the registrar's primary goal is selling you a domain.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Marcaria WHOIS",
+      "whois.marcaria.com"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "whois"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-domain-search-tool.md"
   },
   {
@@ -89448,38 +89449,55 @@
   {
     "id": "whois-service",
     "name": "WHOIS Service",
-    "description": "OSINT tool: WHOIS Service.",
+    "description": "Use when you have an `ip-address` (or domain) and want reverse-IP / co-hosted domains and rough geolocation — returns domain, ip-address, address.",
     "url": "https://whoismind.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-IP lookup — enumerating other domains hosted on the same IP as a target.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web lookups, no account. Ad-supported, with paid/bulk data upsells; the interactive reverse-IP and IP-geo tools need no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit WhoisMind's servers, not the target's infrastructure, so the subject sees nothing. Assume WhoisMind logs your query IP; use a VPN if you need to keep your own origin private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator of WHOIS / IP / reverse-DNS data of unknown provenance; reverse-IP results can be stale or noisy on shared hosts. Corroborate before relying on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "whoismind"
     ],
+    "aliases": [
+      "WhoisMind",
+      "whoismind.com"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Domain/IP investigation",
+      "reverse-ip"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-service.md"
   },
   {
@@ -105091,46 +105109,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/financial-crypto/addresschecker-eu.md"
-  },
-  {
-    "id": "addresswatcher-com",
-    "name": "Addresswatcher.com",
-    "description": "OSINT tool: Addresswatcher.com.",
-    "url": "https://addresswatcher.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/addresswatcher-com.md"
   },
   {
     "id": "afd-co-uk",
@@ -180940,40 +180918,52 @@
   {
     "id": "rug",
     "name": "Rug",
-    "description": "Extreme simple tool for generating random user data.",
+    "description": "Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo (all fake).",
     "url": "https://github.com/rly0nheart/rug",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating throwaway random-identity data (name, address, DOB, avatar) for sock-puppet setup.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source. Repo was archived (read-only) in June 2024; the final 1.0.0 Windows installer still works.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally and pulls sample identities from the randomuser.me API, so only randomuser.me sees a generic request — never your target. The generated identities are fictitious; never reuse them to impersonate a real person, and remember a determined platform can still trace the sock puppet by IP/device, so pair with a clean browser/VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small single-author hobby project, now archived. It only wraps the public randomuser.me data, so risk is low, but it is unmaintained — treat as a convenience generator, not critical tooling.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "reddit-post-scraping-tool"
     ],
+    "aliases": [
+      "rug identity generator",
+      "rly0nheart/rug"
+    ],
+    "tags": [
+      "Sock Puppets",
+      "identity-generator"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/rug.md"
   },
   {
@@ -324912,38 +324902,53 @@
   {
     "id": "search-for-a-twitch-channel",
     "name": "Search for a Twitch channel",
-    "description": "OSINT tool: Search for a Twitch channel.",
+    "description": "Use when you have a Twitch `username`/channel and want streaming stats, schedule and activity history — returns social-profile plus behavioural pattern data.",
     "url": "https://sullygnome.com/channelsearch",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Profiling a Twitch streamer's activity — when they stream, what they play, growth and audience.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free hobby-project analytics site; no account or payment. Historical windows (7/30/90/180/365 days) all open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "SullyGnome reads Twitch's public API and its own historical archive; it never contacts the streamer. The target gets no signal. Only your own browsing is exposed to SullyGnome.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running independent Twitch analytics tracker; figures are estimates derived from periodic API polling, not official Twitch numbers, so treat as directional.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "sully-gnome"
     ],
+    "aliases": [
+      "SullyGnome channel search",
+      "SullyGnome"
+    ],
+    "tags": [
+      "twitch",
+      "social-networks",
+      "streaming-analytics"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search-for-a-twitch-channel.md"
   },
   {

@@ -479,7 +479,7 @@ kind: group-index
 - **`rumble-com`** (high) — Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel p
 - **`savettok`** (medium) — Use when you have a TikTok video URL (`social-profile`) and want a clean, watermark-free copy for frame-by-frame or reverse-image analysis —
 - **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci
-- **`search-for-a-twitch-channel`** (low) — OSINT tool: Search for a Twitch channel.
+- **`search-for-a-twitch-channel`** (low) — Use when you have a Twitch `username`/channel and want streaming stats, schedule and activity history — returns social-profile plus behaviou
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
 - **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
 - **`search-reddit-comments-by-user`** (medium) — Use when you have a Reddit `username` and want to search that user's comment history for keywords — returns matching comments with subreddit

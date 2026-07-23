@@ -23,7 +23,7 @@ kind: group-index
 - **`domain-blacklists/`** — 8 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
 - **`geolocation/`** — 8 skill(s) below.
-- **`host-port-discovery/`** — 7 skill(s) below.
+- **`host-port-discovery/`** — 6 skill(s) below.
 - **`ioc-tools/`** — 6 skill(s) below.
 - **`ip-loggers/`** — 3 skill(s) below.
 - **`ipv4/`** — 8 skill(s) below.
@@ -147,7 +147,6 @@ kind: group-index
 - **`domainwatch`** (low) — OSINT tool: DomainWatch.
 - **`dome`** (low) — Fast and reliable #python script that makes active and/or passive scan to obtain subdomains and search for open ports. Used 21 different #OS
 - **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
-- **`dork-scanner`** (low) — NOT support Google. Only Bing, ASK and [http://WoW.com](http://WoW.com) (AOL) search engines. Can work with very long lists of queries/docum
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
 - **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
@@ -287,7 +286,7 @@ kind: group-index
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
 - **`metadetective`** (low) — A simple tool that analyzes the metadata of files in a specific directory and extracts important information from them (names of document cr
 - **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
-- **`misp-galaxy`** (low) — OSINT tool: MISP Galaxy.
+- **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
 - **`mksub`** (low) — A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Subli
@@ -390,7 +389,7 @@ kind: group-index
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
-- **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
+- **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Domain investigation #python tool
 - **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
@@ -412,7 +411,7 @@ kind: group-index
 - **`squatm3gator`** (low) — OSINT tool: Squatm3gator.
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
-- **`subdomain-finder`** (low) — OSINT tool: Subdomain Finder.
+- **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.
 - **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
 - **`subdomainsbrute`** (low) — Very(!) fast and simple tool for subdomain bruteforce. It find 53 subdomains, scanned 31160 variations in 31 seconds.
 - **`talend-api-tester-free-edition`** (low) — tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behav
@@ -485,14 +484,14 @@ kind: group-index
 - **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.
 - **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
 - **`whois-arin-online`** (low) — OSINT tool: Whois Arin Online.
-- **`whois-domain-search-tool`** (low) — A tool that allows you to query whois data for a site name in several domain zones at once.
+- **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco
 - **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
 - **`whois-history`** (low) — OSINT tool: Whois History.
 - **`whois-lookup-service`** (medium) — Use when you have a `domain` and want its public registration record — returns registrant/registrar details, dates, and nameservers (or a pr
 - **`whois-request`** (medium) — Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and name
 - **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi
 - **`whois-search`** (low) — OSINT tool: Whois Search.
-- **`whois-service`** (low) — OSINT tool: WHOIS Service.
+- **`whois-service`** (low) — Use when you have an `ip-address` (or domain) and want reverse-IP / co-hosted domains and rough geolocation — returns domain, ip-address, ad
 - **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
 - **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab

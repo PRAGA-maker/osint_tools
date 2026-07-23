@@ -363,7 +363,7 @@ kind: group-index
 - **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
-- **`rug`** (low) — Extreme simple tool for generating random user data.
+- **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`safari-for-macos`** (low) — Internet browser for Mac
 - **`safari-for-windows`** (low) — Internet browser download available for Windows

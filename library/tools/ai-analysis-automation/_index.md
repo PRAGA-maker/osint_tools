@@ -235,7 +235,7 @@ kind: group-index
 - **`mitaka`** (low) — OSINT tool: mitaka.
 - **`mozilla-http-observatory`** (low) — OSINT tool: Mozilla HTTP Observatory.
 - **`mp3-spectrum-analyzer`** (low) — OSINT tool: MP3 Spectrum Analyzer.
-- **`nazar`** (low) — universal Osint Toolkit
+- **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
 - **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
 - **`nixintel`** (low) — OSINT tool: NixIntel.
