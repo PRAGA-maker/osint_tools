@@ -231,7 +231,7 @@ kind: group-index
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expo
 - **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits
-- **`squarespace`** (low) — OSINT tool: SquareSpace.
+- **`squarespace`** (low) — Use when you have a `domain` or `username` and want to confirm a personal/business site is Squarespace-hosted and mine it for owner contact 
 - **`stackexchange`** (low) — Use when you have a `username` or `name` and want to find the person's Q&A activity across the Stack Exchange network — returns a linked `so
 - **`subreddits-org`** (low) — Use when you have a topic or `name`/keyword and want to find the relevant Reddit communities to monitor — returns matching subreddits as `so
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing

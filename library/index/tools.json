@@ -11493,38 +11493,49 @@
   },
   {
     "id": "perspective",
-    "name": "Perspective",
-    "description": "OSINT tool: Perspective.",
+    "name": "Perspective (FINOS)",
+    "description": "Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interactively — a local analysis engine, not a selector lookup.",
     "url": "https://github.com/finos/perspective",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Interactively slicing and visualising large tabular/streaming datasets during analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Apache-2.0), maintained under the OpenJS/FINOS foundation; runs locally with no service fees.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely on your own machine (WebAssembly in-browser, or the Python/Node/Rust library) — data never leaves your host unless you deliberately wire it to a remote source. Ideal for analysing sensitive case data offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "A well-known open-source project governed by FINOS (Fintech Open Source Foundation) / OpenJS, originally built at J.P. Morgan; source is public and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jupyter",
+      "gephi"
+    ],
+    "aliases": [
+      "FINOS Perspective",
+      "perspective-python"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/perspective.md"
   },
   {
@@ -34913,42 +34924,56 @@
   },
   {
     "id": "squarespace",
-    "name": "SquareSpace",
-    "description": "OSINT tool: SquareSpace.",
+    "name": "Squarespace",
+    "description": "Use when you have a `domain` or `username` and want to confirm a personal/business site is Squarespace-hosted and mine it for owner contact and social links — returns `social-profile` / `email` leads.",
     "url": "https://www.squarespace.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising and profiling a Squarespace-built personal or small-business website tied to a subject.",
     "selectorsIn": [
+      "domain",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Building a site is paid, but viewing any published Squarespace site is free; you are consuming published pages, not the builder.",
+    "opsec": "passive",
+    "opsecNote": "Passive browsing of a public site is unattributable beyond normal web-server logs. Do NOT sign up or use the contact form to probe — that is active and identifiable. Use a clean browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Squarespace is a legitimate hosting platform; the OSINT value is in individual user-built sites, whose accuracy varies by owner and is unverified.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "wappalyzer",
+      "builtwith"
+    ],
+    "aliases": [
+      "SquareSpace",
+      "squarespace.com"
+    ],
     "tags": [
-      "forums"
+      "forums",
+      "website-builder",
+      "hosting"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/squarespace.md"
   },
   {
@@ -49359,42 +49384,57 @@
   },
   {
     "id": "consumeraffairs-north-america",
-    "name": "Consumeraffairs (North America)",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "http://www.consumeraffairs.com",
+    "name": "ConsumerAffairs",
+    "description": "Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate/contact leads and business reputation signals.",
+    "url": "https://www.consumeraffairs.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading crowdsourced customer reviews and complaints about a North American business.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search reviews; the site monetises via lead-gen and brand partnerships, not a reader paywall.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing is passive and unauthenticated — you read published reviews. Posting a review yourself would be active and identifiable, so stay a reader unless you deliberately want to engage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial review aggregator; reviews are moderated but crowdsourced and can be gamed or incentivised, so individual entries are unverified.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "trustpilot",
+      "better-business-bureau"
+    ],
+    "aliases": [
+      "ConsumerAffairs",
+      "consumeraffairs.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "business-reviews"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/consumeraffairs-north-america.md"
   },
   {
@@ -50288,46 +50328,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/e-gg-timer-alarm-tool.md"
-  },
-  {
-    "id": "earthcam-net",
-    "name": "EarthCam.net",
-    "description": "Website providing webcam content, technology, and services",
-    "url": "https://www.earthcam.net/about/aboutus.php",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/earthcam-net.md"
   },
   {
     "id": "easybib",
@@ -55081,44 +55081,57 @@
   },
   {
     "id": "mever-gr",
-    "name": "mever.gr",
-    "description": "OSINT tool: mever.gr.",
+    "name": "MeVer Image Verification Assistant",
+    "description": "Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — returns tampering-localisation heatmaps and extracted metadata.",
     "url": "https://mever.gr/forensics/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting and localising digital forgery in a suspect photo before you trust it as evidence.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "metadata-exif",
-      "geolocation"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tool run by the MeVer / CERTH-ITI research group; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to a third-party academic server (CERTH-ITI, Greece) for processing, so the picture leaves your control. Do not upload material that is itself sensitive/evidential without authority. The analysis never touches the person who created the image, so it is passive toward the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by the Multimedia Knowledge & Social Media Analytics Lab (MeVer) at CERTH-ITI, the peer-reviewed research group behind the EU REVEAL and WeVerify verification projects.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "forensically",
+      "fotoforensics"
+    ],
+    "aliases": [
+      "MeVer",
+      "Image Verification Assistant",
+      "CERTH-ITI forensics"
+    ],
     "tags": [
       "exifdata",
-      "EXIF Data Related Sites"
+      "EXIF Data Related Sites",
+      "image-forensics"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/mever-gr.md"
   },
   {
@@ -70633,47 +70646,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/gtmetrix-website-performance.md"
-  },
-  {
-    "id": "h3x-cctv",
-    "name": "H3X-CCTV",
-    "description": "A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras",
-    "url": "https://github.com/the-h3x/H3X-CCTV",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/h3x-cctv.md"
   },
   {
     "id": "hacker-target",
@@ -150724,35 +150696,51 @@
   {
     "id": "active-agency-map",
     "name": "Active Agency Map",
-    "description": "OSINT tool: Active Agency Map.",
+    "description": "Use when you have a `geolocation` / region and want to see a community-curated Google My Map of agency locations plotted for it — returns `address` / `geolocation` pins.",
     "url": "https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reading a shared Google My Maps layer of plotted agency locations as a starting geographic reference.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "A free, publicly viewable Google My Maps custom map; no Google account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read of a shared Google map. Google logs your view under your session/IP; use a clean browser if you do not want the view tied to you. You are not contacting any plotted location, so it is passive toward third parties.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A user-created (\"This map was created by a user\") Google My Map with no named maintainer or provenance; pins are unverified and may be stale.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-my-maps"
+    ],
+    "aliases": [
+      "Active Agency Map"
+    ],
+    "tags": [
+      "google-my-maps",
+      "custom-map"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/active-agency-map.md"
   },
   {
@@ -286687,38 +286675,55 @@
   },
   {
     "id": "oxford-journals",
-    "name": "Oxford Journals",
-    "description": "OSINT tool: Oxford Journals.",
-    "url": "http://www.oxfordjournals.org",
+    "name": "Oxford Journals (Oxford Academic)",
+    "description": "Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, or timeframe — returns author affiliation and co-author `associate` leads.",
+    "url": "https://www.oxfordjournals.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching Oxford University Press journals to tie an academic name to affiliations, co-authors, and dates.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Abstracts, author names, and affiliations are free to search and read; many full-text PDFs are paywalled or require an institutional login.",
+    "opsec": "passive",
+    "opsecNote": "Passive keyword search of a public academic platform. Oxford Academic logs searches under your session/IP; use a clean browser for sensitive queries. No contact with the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Oxford University Press's official journals platform; oxfordjournals.org now 301-redirects to academic.oup.com. Authoritative bibliographic metadata.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "academic-journals",
+      "google-scholar"
+    ],
+    "aliases": [
+      "Oxford Journals",
+      "Oxford Academic",
+      "academic.oup.com"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "scholarly-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/oxford-journals.md"
   },
   {
@@ -297030,38 +297035,56 @@
   },
   {
     "id": "wiley",
-    "name": "Wiley",
-    "description": "OSINT tool: Wiley.",
+    "name": "Wiley Online Library",
+    "description": "Use when you have a `name` (an author) or research topic and want scholarly articles and books that tie a person to a field, institution, and co-authors — returns affiliation and `associate` leads.",
     "url": "https://www.wiley.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching Wiley's journals and books to anchor an academic name to affiliations, co-authors, and dates.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching and reading abstracts/author metadata is free on onlinelibrary.wiley.com; most full-text is paywalled or needs institutional access.",
+    "opsec": "passive",
+    "opsecNote": "Passive keyword search of a public academic publisher. Wiley logs searches under your session/IP; use a clean browser for sensitive queries. No contact with the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "John Wiley & Sons is a major, long-established academic publisher; the Wiley Online Library carries authoritative bibliographic metadata.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "oxford-journals",
+      "academic-journals",
+      "google-scholar"
+    ],
+    "aliases": [
+      "Wiley",
+      "Wiley Online Library",
+      "onlinelibrary.wiley.com"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "scholarly-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wiley.md"
   },
   {
@@ -298525,7 +298548,13 @@
       "yandex-image-search",
       "yandex-images",
       "yandex-maps",
-      "yandex-translate"
+      "yandex-translate",
+      "yandex",
+      "yandex-browser",
+      "yandex-mail",
+      "yandex-video-search",
+      "yandex-wordstat",
+      "yandexmaps"
     ],
     "aliases": [
       "Yandex",
@@ -340835,41 +340864,48 @@
   },
   {
     "id": "smart-questions",
-    "name": "Smart Questions",
-    "description": "Research methodology, effective questioning, and stronger information-seeking habits",
+    "name": "How To Ask Questions The Smart Way",
+    "description": "Use when you need methodology on framing research questions and getting useful answers from technical communities — returns a durable checklist for effective information-seeking.",
     "url": "https://www.catb.org/esr/faqs/smart-questions.html",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Research methodology, effective questioning, and stronger information-seeking habits",
-    "input": "Reader engagement with essay guidelines and practical examples",
-    "output": "Improved question framing, clearer research requests, and better community responses",
+    "bestFor": "Learning to frame investigative/technical questions so experts and communities actually answer them.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "A free, freely-mirrored public essay; no account, no cost.",
     "opsec": "passive",
-    "opsecNote": "Pure methodology reference; no target interaction or probing.",
+    "opsecNote": "Pure methodology reference — a static essay. No target interaction, no probing, nothing leaks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Eric S. Raymond & Rick Moen's canonical, decades-old and widely-cited guide; stable and unchanged for years.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Smart Questions",
+      "ESR smart-questions",
+      "How To Ask Questions The Smart Way"
+    ],
+    "tags": [
+      "methodology",
+      "tradecraft",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/smart-questions.md"
   },
   {
@@ -345100,7 +345136,14 @@
     "relatedTools": [
       "yandex-russia",
       "yandex-maps",
-      "yandex-image-search"
+      "yandex-image-search",
+      "yandex",
+      "yandex-browser",
+      "yandex-images",
+      "yandex-mail",
+      "yandex-video-search",
+      "yandex-wordstat",
+      "yandexmaps"
     ],
     "aliases": [
       "Yandex Translate",

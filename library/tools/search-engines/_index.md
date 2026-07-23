@@ -505,7 +505,7 @@ kind: group-index
 - **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
-- **`oxford-journals`** (low) — OSINT tool: Oxford Journals.
+- **`oxford-journals`** (low) — Use when you have a `name` (an author) or a research topic and want scholarly journal articles that place a person in a field, institution, 
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — OSINT tool: Paperball.news.
 - **`paperboy`** (low) — OSINT tool: Paperboy.
@@ -709,7 +709,7 @@ kind: group-index
 - **`wikisource`** (medium) — Use when you have a name and want it located in historical/public-domain documents — returns document mentions, dates and associate/place co
 - **`wikitravel`** (medium) — Use when you have a `geolocation` (a place name in a case) and want crowdsourced local knowledge — neighborhoods, transport, landmarks, "get
 - **`wikivoyage`** (low) — Use when you have a place/`geolocation` and want ground-truth local context — returns a crowdsourced travel guide of districts, landmarks, t
-- **`wiley`** (low) — OSINT tool: Wiley.
+- **`wiley`** (low) — Use when you have a `name` (an author) or research topic and want scholarly articles and books that tie a person to a field, institution, an
 - **`wintria`** (low) — OSINT tool: Wintria.
 - **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
 - **`wiredmagazine-electronic-device-reviews`** (low) — Use when you have an image or partial description of a consumer device and want to identify its make/model and specs from detailed reviews —

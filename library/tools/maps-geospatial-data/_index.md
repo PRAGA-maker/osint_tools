@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`about-maps-and-satellites`** (low) — A guide to using map and satellite tools.
 - **`acled-armed-conflict-location-and-event-data-project`** (low) — ACLED provides data and analysis on political violence and protest around the world, facilitating research, policy making, and journalistic 
-- **`active-agency-map`** (medium) — OSINT tool: Active Agency Map.
+- **`active-agency-map`** (medium) — Use when you have a `geolocation` / region and want to see a community-curated Google My Map of agency locations plotted for it — returns `a
 - **`alltrails`** (low) — AllTrails.com is a tool for discovering hiking, biking, and running trails worldwide, providing detailed trail maps, user reviews, and navig
 - **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
 - **`apple-com`** (medium) — Use when you have an `address` or `geolocation` and want Apple's maps, satellite, and street-level "Look Around" imagery as a second source 

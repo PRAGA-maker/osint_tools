@@ -59,7 +59,7 @@ kind: group-index
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage
-- **`consumeraffairs-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
 - **`consumerreports-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`consumersearch`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
@@ -80,7 +80,6 @@ kind: group-index
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
-- **`earthcam-net`** (low) — Website providing webcam content, technology, and services
 - **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
 - **`edocr`** (low) — Presentation management website that allows EDoc and EFile sharing
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
@@ -174,7 +173,7 @@ kind: group-index
 - **`mediainforobot`** (low) — telegram bot to getting metadata from different types of files
 - **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
 - **`mendeley-academic-research-manager`** (low) — Academic-related research manager allowing the colloboration and sharing of data online
-- **`mever-gr`** (low) — OSINT tool: mever.gr.
+- **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
 - **`microsoft-office-online`** (low) — Website for Microsoft Office Online that offers collaboration services, including access to free template documents
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mp3juices`** (low) — Website that offers services related to downloading and saving audio files from a video

@@ -288,7 +288,7 @@ kind: group-index
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
 - **`peerblock`** (low) — OSINT tool: Peerblock.
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
-- **`perspective`** (low) — OSINT tool: Perspective.
+- **`perspective`** (low) — Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interacti
 - **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
