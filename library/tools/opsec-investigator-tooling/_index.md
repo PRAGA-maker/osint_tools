@@ -105,7 +105,7 @@ kind: group-index
 - **`coveryourtracks-eff-org`** (low) — can tell a lot about your browser and computer, including showing a list of installed fonts on the system.
 - **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
 - **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
-- **`crontab-guru`** (low) — Online "shedule expression" editor (for setting task times in Crontab files).
+- **`crontab-guru`** (low) — Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and ne
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.

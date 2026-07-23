@@ -954,7 +954,6 @@ kind: group-index
 - **`world-bank-data`** (low) — OSINT tool: World Bank Data.
 - **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
-- **`world-bank-investing-across-borders`** (low) — OSINT tool: World Bank Investing Across Borders.
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
 - **`wto-statistics`** (low) — OSINT tool: WTO Statistics.
 - **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — Use when you have a `name` and think the subject works for the Ontario government — returns their ministry/`employer-org`, office `phone`, a

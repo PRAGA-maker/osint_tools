@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`db-ip`** (low) — Accurate IP geolocation with developer API
-- **`info-sniper`** (low) — Multi-field reverse lookup (IP/email/phone)
+- **`info-sniper`** (low) — Use when you have an `ip-address` and want its approximate geolocation and network owner — returns country/region/city, ISP, coordinates and
 - **`ip-fingerprints`** (low) — Find domains on shared hosting
 - **`ip-location-finder`** (low) — Quick IP location with maps
 - **`ip2location-com`** (low) — Accurate geolocation with proxy detection

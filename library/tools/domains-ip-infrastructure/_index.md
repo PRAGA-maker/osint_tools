@@ -368,7 +368,7 @@ kind: group-index
 - **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
 - **`sameid`** (low) — OSINT tool: SameID.
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
-- **`scan4all`** (low) — 15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many ma
+- **`scan4all`** (low) — Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerpr
 - **`scrape-api`** (low) — Proxy API for Web Scraping
 - **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
 - **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne

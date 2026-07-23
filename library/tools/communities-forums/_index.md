@@ -201,7 +201,6 @@ kind: group-index
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.
-- **`reddit-metrics`** (low) — OSINT tool: Reddit Metrics.
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
 - **`redditlist`** (low) — OSINT tool: Redditlist.
 - **`redditsearch`** (low) — OSINT tool: RedditSearch.

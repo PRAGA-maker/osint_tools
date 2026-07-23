@@ -97,7 +97,7 @@ kind: group-index
 - **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
 - **`cybergordon`** (low) — OSINT tool: CyberGordon.
 - **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
-- **`cyotek-webcopy`** (low) — OSINT tool: Cyotek WebCopy.
+- **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — OSINT tool: D3js.
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
 - **`data-to-go`** (low) — OSINT tool: Data to Go.
@@ -198,7 +198,7 @@ kind: group-index
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
 - **`infosec-reference`** (low) — OSINT tool: infosec reference.
-- **`inkscape`** (low) — OSINT tool: Inkscape.
+- **`inkscape`** (low) — Use when you need to edit, trace, measure, or annotate images/vectors during analysis — a free vector-graphics editor useful for image foren
 - **`intelhub`** (low) — OSINT tool: IntelHub.
 - **`intellyweave`** (low) — OSINT tool: IntellyWeave.
 - **`ivre`** (low) — Use when you have `ip-address`/`domain` scan data and want to build and query your own recon database — returns hosts, open ports and servic

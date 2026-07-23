@@ -215,7 +215,7 @@ kind: group-index
 - **`restaurants-canada-website-canada`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Website that offers services related to downloading and saving videos from a web page
-- **`savevideo-me`** (low) — Website that offers services related to downloading and saving videos from a web page
+- **`savevideo-me`** (low) — Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/W
 - **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi
 - **`scoop-it`** (low) — Publishing content services website
 - **`screencast-o-matic`** (low) — Website that offers services related to downloading and saving audio content from a website

@@ -3351,37 +3351,48 @@
   {
     "id": "cyotek-webcopy",
     "name": "Cyotek WebCopy",
-    "description": "OSINT tool: Cyotek WebCopy.",
+    "description": "Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and assets with links remapped.",
     "url": "http://www.cyotek.com/cyotek-webcopy",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Downloading a whole website locally (offline mirror) for analysis and evidence preservation.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Windows application (requires .NET Framework 4.6); no account.",
+    "opsec": "active",
+    "opsecNote": "WebCopy CRAWLS the target site to mirror it, sending many requests that appear in the site's logs (from your IP). Only mirror sites you're authorised to, throttle the crawl, and route through a VPN; a fast full-site copy is noisy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Established free tool from Cyotek; it faithfully mirrors what the HTTP server returns (no JS rendering), so dynamic sites copy incompletely.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "offline-browsing"
+    "aliases": [
+      "WebCopy",
+      "Cyotek WebCopy"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "ai-analysis-automation",
+      "website-mirror",
+      "preservation",
+      "offline"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cyotek-webcopy.md"
   },
   {
@@ -7352,37 +7363,48 @@
   {
     "id": "inkscape",
     "name": "Inkscape",
-    "description": "OSINT tool: Inkscape.",
+    "description": "Use when you need to edit, trace, measure, or annotate images/vectors during analysis — a free vector-graphics editor useful for image forensics and evidence markup.",
     "url": "https://inkscape.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Free vector editing/tracing/annotation of imagery for analysis and evidence presentation.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL); cross-platform desktop app. No account.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on your machine — fully passive, nothing leaves your host. Ideal for handling case imagery you don't want uploaded to any web tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Mature, widely-used open-source vector editor; reputable and offline, so no data-handling risk beyond your own machine.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
+    "aliases": [
+      "Inkscape vector editor"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "ai-analysis-automation",
+      "image",
+      "vector",
+      "annotation",
+      "forensics"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/inkscape.md"
   },
   {
@@ -33501,46 +33523,6 @@
     "_file": "library/tools/communities-forums/reddit-insight.md"
   },
   {
-    "id": "reddit-metrics",
-    "name": "Reddit Metrics",
-    "description": "OSINT tool: Reddit Metrics.",
-    "url": "http://redditmetrics.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/reddit-metrics.md"
-  },
-  {
     "id": "reddit-old-reddit-search",
     "name": "Reddit (old.reddit search)",
     "description": "Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their social-profile activity, interests, associates and location/timing signals.",
@@ -57503,24 +57485,29 @@
   {
     "id": "savevideo-me",
     "name": "Savevideo.me",
-    "description": "Website that offers services related to downloading and saving videos from a web page",
+    "description": "Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/WebM/FLV).",
     "url": "http://savevideo.me",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Downloading videos from many social platforms via URL for offline analysis/preservation.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool (donation-supported); no account or install. Multiple formats/qualities offered.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "savevideo.me fetches the public video server-side, so the download to you doesn't directly hit the target's profile. But you paste the URL into a third-party site — for sensitive work prefer a local tool (yt-dlp). Public content only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A general multi-platform video downloader; convenient and free, but an ad/donation-supported third party — verify the file and prefer local tools for sensitive cases.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -57529,15 +57516,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+    "aliases": [
+      "SaveVideo.me"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "documents-metadata",
+      "video-download",
+      "evidence"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "savevideo"
     ],
@@ -72435,47 +72424,55 @@
   },
   {
     "id": "info-sniper",
-    "name": "Info Sniper",
-    "description": "Multi-field reverse lookup (IP/email/phone)",
+    "name": "InfoSniper",
+    "description": "Use when you have an `ip-address` and want its approximate geolocation and network owner — returns country/region/city, ISP, coordinates and a map.",
     "url": "https://www.infosniper.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Multi-field reverse lookup (IP/email/phone)",
-    "input": "IP, email, or phone",
-    "output": "Associated accounts and social profiles",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick IP geolocation — country/city, ISP/organisation, and coordinates for an IP address.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free with limited daily lookups (≈5/day in trial); a low-cost Pro tier and API add volume. No account for the basic free lookups.",
     "opsec": "passive",
-    "opsecNote": "Correlates public data; paid features available.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "You query IP-geolocation databases, not the target host — passive, no signal to the IP's owner. Databases can be sensitive to VPN/proxy use.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates multiple geolocation databases; country-level is fairly reliable (95–99% claimed), but city-level and org data are estimates that can be wrong.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": false,
+    "aliases": [
+      "InfoSniper"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "ip-geolocation",
+      "geolocation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "infosniper",
       "infosniper-net"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/info-sniper.md"
   },
   {
@@ -82088,43 +82085,53 @@
   },
   {
     "id": "scan4all",
-    "name": "Scan4all",
-    "description": "15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many many more",
+    "name": "scan4all",
+    "description": "Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerprints, and PoC-based vuln findings.",
     "url": "https://github.com/hktalent/scan4all",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "High-speed combined port scanning, fingerprinting, and vulnerability detection (nuclei/nmap-integrated).",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
+      "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (BSD-3); Go tool (`go install github.com/GhostTroops/scan4all@latest`; the hktalent repo is the same project). No account.",
+    "opsec": "active",
+    "opsecNote": "Highly ACTIVE — it port-scans, fingerprints, brute-forces and fires thousands of PoCs directly at the target, which is loud and unambiguously logged/alertable. Only run against systems you are explicitly authorised to test; scope it and route through controlled infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source offensive scanner (hktalent/GhostTroops) integrating nuclei/nmap/vscan; findings need verification, and running it is an intrusive act requiring authorisation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "scan4all",
+      "GhostTroops scan4all"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "domains-ip-infrastructure",
+      "vulnerability-scanner",
+      "port-scan",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/scan4all.md"
   },
   {
@@ -151534,13 +151541,13 @@
   {
     "id": "copernicus-browser-formerly-sentinel-hub-playground-eo-browser",
     "name": "Copernicus Browser (formerly Sentinel Hub Playground, EO Browser)",
-    "description": "A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with data updated every 5-10 days.",
+    "description": "Use when you have a `geolocation`/`address` and want recent satellite imagery of it — returns free Sentinel/Copernicus imagery by location and date for verification and change detection.",
     "url": "https://browser.dataspace.copernicus.eu/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing and downloading free Sentinel satellite imagery of a location across dates for change detection.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -151548,32 +151555,41 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free via the Copernicus Data Space Ecosystem; a free account unlocks full features (downloads, statistical/analysis tools).",
+    "opsec": "passive",
+    "opsecNote": "You browse public satellite archives, not the subject — fully passive, no target signal. Register with a sock-puppet account if you want to keep saved analyses separate.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trust": "trusted",
+    "trustNote": "Official ESA/European Commission Copernicus platform; imagery is authoritative satellite data straight from the Sentinel missions.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Copernicus Browser",
+      "EO Browser",
+      "Sentinel Hub"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
+      "maps-geospatial-data",
+      "satellite",
+      "imagery",
+      "geolocation",
+      "verification"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "copernicus-open-access-hub"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/copernicus-browser-formerly-sentinel-hub-playground-eo-browser.md"
   },
   {
@@ -170315,37 +170331,45 @@
   {
     "id": "crontab-guru",
     "name": "Crontab guru",
-    "description": "Online \"shedule expression\" editor (for setting task times in Crontab files).",
+    "description": "Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and next-run times for a cron string.",
     "url": "https://crontab.guru/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Building and validating cron schedule expressions for automated/recurring collection jobs.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web editor by Cronitor; no account.",
+    "opsec": "passive",
+    "opsecNote": "A syntax helper — you type a schedule expression, not any target data; fully passive with no OSINT-target exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known free utility from Cronitor; deterministically parses/explains cron syntax, so its output is reliable by construction.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "crontab.guru"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "opsec-investigator-tooling",
+      "automation",
+      "cron",
+      "utility"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/crontab-guru.md"
   },
   {
@@ -261509,47 +261533,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/world-bank-enterprise-surveys.md"
-  },
-  {
-    "id": "world-bank-investing-across-borders",
-    "name": "World Bank Investing Across Borders",
-    "description": "OSINT tool: World Bank Investing Across Borders.",
-    "url": "http://iab.worldbank.org",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "the-world-bank-open-data-catalog",
-      "world-bank-data",
-      "world-integrated-trade-solution"
-    ],
-    "_file": "library/tools/public-records/world-bank-investing-across-borders.md"
   },
   {
     "id": "world-integrated-trade-solution",
