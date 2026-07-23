@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/virtual-machines
 
 ## Skills here
-- **`kali-linux-os`** (low) — Penetration testing; security research; red team operations; OSINT research
+- **`kali-linux-os`** (low) — Use when you need a ready-made investigation workstation preloaded with OSINT/security tools — a platform to run tools from, not a lookup it
 - **`parrotsec-os`** (low) — Penetration testing; red team; privacy-conscious computing; cybersecurity research
 - **`subgraph-os`** (low) — High-security threat model; adversary resistance; encrypted communications
 - **`tails-live-os`** (low) — High-anonymity OSINT; Tor-based anonymous communication for journalists and activists

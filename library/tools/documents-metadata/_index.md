@@ -225,7 +225,7 @@ kind: group-index
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
 - **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
 - **`shared-count`** (low) — Social URL analytics tool for tracking URL shares, likes and tweets
-- **`shhgit`** (low) — OSINT tool: Shhgit.
+- **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — tool for filtering RSS feeds
 - **`site-dorks`** (low) — Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites
 - **`slide-share`** (low) — Search and share slide shows, presentations, infographics, documents, and more

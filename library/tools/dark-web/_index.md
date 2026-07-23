@@ -93,7 +93,7 @@ kind: group-index
 - **`stark-county-auditor`** (medium) — Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner nam
 - **`state-of-delaware-professional-license-validator`** (medium) — Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, a
 - **`swp-cx`** (low) — OSINT tool: swp.cx.
-- **`tails-the-amnesic-incognito-live-system`** (low) — OSINT tool: TAILS - The Amnesic Incognito Live System.
+- **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
 - **`the-hidden-wiki`** (low) — OSINT tool: The Hidden Wiki.
 - **`thedevilseye`** (low) — Search links in #darknet (.onion domain zone) from command line without using a Tor network.
 - **`tool-path`** (low) — OSINT tool: Tool \| path.

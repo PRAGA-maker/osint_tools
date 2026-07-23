@@ -386,7 +386,7 @@ kind: group-index
 - **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
 - **`these-are-the-tools-open-source-researchers-say-they-need`** (low) — OSINT tool: These Are the Tools Open Source Researchers Say They Need.
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
-- **`thunderbird`** (low) — OSINT tool: Thunderbird.
+- **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
 - **`tik-tok`** (low) — OSINT tool: Tik-tok.
 - **`tiki-toki`** (low) — OSINT tool: Tiki-toki.
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.

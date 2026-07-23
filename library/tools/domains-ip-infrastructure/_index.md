@@ -32,7 +32,7 @@ kind: group-index
 - **`network-analysis-tools/`** — 4 skill(s) below.
 - **`passivedns/`** — 3 skill(s) below.
 - **`phishing/`** — 4 skill(s) below.
-- **`protected-by-cloud-services/`** — 2 skill(s) below.
+- **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
 - **`reputation/`** — 21 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
@@ -108,7 +108,7 @@ kind: group-index
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
-- **`cloudbrute`** (low) — Tool to find target infrastructure, files, and apps on the popular cloud providers
+- **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
 - **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
 - **`cloudmare`** (low) — Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS
@@ -181,7 +181,7 @@ kind: group-index
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
 - **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
-- **`gitgraber`** (low) — Search and clone sensitive information from GitHub.
+- **`gitgraber`** (low) — Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials 
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
 - **`goblyn`** (low) — Use when you have a `domain` and want the metadata inside its exposed files — enumerates directories/files and extracts EXIF/document `metad
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
@@ -408,7 +408,7 @@ kind: group-index
 - **`spyse-cli`** (low) — command line client for Spyse.com
 - **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
-- **`squatm3gator`** (low) — OSINT tool: Squatm3gator.
+- **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
 - **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.

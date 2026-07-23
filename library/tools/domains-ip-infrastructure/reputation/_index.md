@@ -20,7 +20,7 @@ kind: group-index
 - **`malware-domain-list`** (low) — Malware domain reputation queries
 - **`sucuri-sitecheck`** (low) — Website malware scanning, vulnerability detection, security assessment
 - **`threatminer-org`** (low) — Threat intelligence research, IOC investigation, malware/phishing link analysis
-- **`trend-micro-site-safety-center`** (low) — Website safety verification, malware/phishing detection, threat assessment
+- **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.
 - **`url-void`** (low) — Website reputation checking, malware/phishing detection, threat analysis
 - **`urlquery-net`** (low) — URL reputation scanning, malware detection, phishing detection, threat analysis
 - **`vurl-online`** (low) — URL/domain dissection and reputation

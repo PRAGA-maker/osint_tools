@@ -7872,44 +7872,50 @@
   {
     "id": "kali-linux-os",
     "name": "Kali Linux OS",
-    "description": "Penetration testing; security research; red team operations; OSINT research",
+    "description": "Use when you need a ready-made investigation workstation preloaded with OSINT/security tools — a platform to run tools from, not a lookup itself.",
     "url": "https://www.kali.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "virtual-machines"
     ],
-    "bestFor": "Penetration testing; security research; red team operations; OSINT research",
-    "input": "N/A (OS distribution)",
-    "output": "Debian-based Linux environment with security tools",
+    "bestFor": "A Debian-based OS/VM bundling hundreds of OSINT and security tools in one ready environment.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Designed for active security testing; opsec depends on network configuration",
+    "costNote": "Free and open source (Offensive Security / OffSec). Run as bare-metal, VM, WSL, live-USB, or cloud image; no cost or account.",
+    "opsec": "active",
+    "opsecNote": "Kali is just the platform — its OpSec profile is whatever the tools you run inside it do, and many are active/intrusive. Run it in a disposable VM, route sensitive traffic through a VPN/Tor, and use sock-puppet identities. A default Kali install is noisy on a network; don't point its scanners at anything you're not authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "The de-facto standard security distro, maintained by OffSec. The distro itself is reputable; individual bundled tools vary in quality and maintenance — judge each on its own merits.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "goofile",
-      "kali-linux"
+      "kali-linux",
+      "goofile"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Kali",
+      "Kali Linux"
+    ],
+    "tags": [
+      "virtual-machines",
+      "toolkit",
+      "security-distro"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/virtual-machines/kali-linux-os.md"
   },
   {
@@ -15462,40 +15468,55 @@
   {
     "id": "thunderbird",
     "name": "Thunderbird",
-    "description": "OSINT tool: Thunderbird.",
+    "description": "Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-exif and routing detail.",
     "url": "https://www.thunderbird.net/en-US/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
+    "bestFor": "A free desktop mail client for reading full email headers/source and safely examining messages and attachments.",
+    "selectorsIn": [
+      "email"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "ip-address",
+      "metadata-exif",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (Mozilla). Cross-platform desktop app; no cost or account beyond the mailbox you connect.",
+    "opsec": "active",
+    "opsecNote": "Thunderbird is a real mail client — if you connect an account it logs into that mailbox and can send/receive as it. Block remote content (disable auto-loading images) so a message can't beacon your IP/read-receipt back to the sender. For pure header analysis, open a saved .eml offline rather than syncing a live account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Mozilla's flagship open-source email client — mature and auditable. Header data it displays is the raw message source; its evidentiary value depends on the message being genuine (headers can be forged upstream).",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": false,
+    "localInstall": true,
+    "registration": false,
     "relatedTools": [
       "google-forum-search"
     ],
+    "aliases": [
+      "Mozilla Thunderbird"
+    ],
+    "tags": [
+      "privacy-and-encryption-tools",
+      "email",
+      "header-analysis"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/thunderbird.md"
   },
   {
@@ -41799,44 +41820,48 @@
   },
   {
     "id": "tails-the-amnesic-incognito-live-system",
-    "name": "TAILS - The Amnesic Incognito Live System",
-    "description": "OSINT tool: TAILS - The Amnesic Incognito Live System.",
+    "name": "Tails — The Amnesic Incognito Live System",
+    "description": "Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a lookup tool.",
     "url": "https://tails.net/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "bestFor": "A bootable, amnesic, Tor-routed live OS for anonymous, trace-free browsing (incl. .onion) during sensitive investigations.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (part of the Tor ecosystem). You supply a USB stick; no cost or account.",
+    "opsec": "active",
+    "opsecNote": "Tails is itself an OpSec control — it forces all traffic through Tor and forgets everything on shutdown, so your investigation leaves no local trace and your real IP is hidden from sites you visit. Caveats — logging into a personal/attributable account inside Tails deanonymises you anyway, and the exit-node/site still sees a Tor connection. Use dedicated sock-puppet accounts only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Reputable, long-established, open-source project audited by the security community and tied to the Tor Project. The anonymity guarantees hold only if you follow its guidance (no personal logins, no persistence of identifiers).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Tails",
+      "The Amnesic Incognito Live System"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "anonymity",
+      "opsec"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/tails-the-amnesic-incognito-live-system.md"
   },
   {
@@ -57547,39 +57572,57 @@
   },
   {
     "id": "shhgit",
-    "name": "Shhgit",
-    "description": "OSINT tool: Shhgit.",
+    "name": "shhgit",
+    "description": "Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credentials and the commits exposing them.",
     "url": "https://github.com/eth0izzle/shhgit",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Real-time monitoring of public GitHub/GitLab/Bitbucket for freshly-committed secrets and credentials.",
+    "selectorsIn": [
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open source; self-hosted. Needs GitHub API token(s). NOTE — the project is officially no longer maintained; the code still runs but receives no updates.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "opsecNote": "shhgit consumes the public GitHub events firehose and matches locally — it never contacts the target org, so the subject sees nothing. Your API token(s) attribute the polling to your account. Any live secret you find is a responsible-disclosure matter — report/rotate, never use it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known secret-scanning tool, but the maintainer has explicitly discontinued it and moved to a commercial offering. Signature set is frozen, so newer token formats slip through; verify hits manually.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "gitgraber",
       "the-endorser"
     ],
+    "aliases": [
+      "eth0izzle/shhgit"
+    ],
+    "tags": [
+      "github",
+      "secrets",
+      "monitoring"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/shhgit.md"
   },
   {
@@ -59902,41 +59945,54 @@
   {
     "id": "vx-vault",
     "name": "VX Vault",
-    "description": "Access to active malware sample collections",
+    "description": "Use when you have a malware `domain`/URL or file hash and want to check a live malware-URL tracker — returns recent malicious URLs, hosting IPs and sample hashes.",
     "url": "https://vxvault.net/ViriList.php",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "search"
     ],
-    "bestFor": "Access to active malware sample collections",
-    "input": "Web interface browsing, malware sample queries",
-    "output": "Malware sample information, related indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking a live feed of recently-seen malware distribution URLs, their IPs and sample hashes.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public tracker, no account. A plain list view and per-entry detail pages; refreshed roughly every 12 hours.",
     "opsec": "passive",
-    "opsecNote": "Web-based browsing interface; no registration typically required",
+    "opsecNote": "You browse VX Vault's own catalogue of already-collected malware URLs — you are not visiting the malicious sites themselves. Do NOT open the listed URLs in a real browser; they point to live malware. Analyse hashes/URLs in a sandbox.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running community malware-URL tracker, ingested by mainstream blocklists (FireHOL, IntelMQ). Reliable as a feed of observed malicious URLs; it's a tracker, not an analysis verdict service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "VXVault",
+      "vxvault.net"
+    ],
+    "tags": [
+      "malware",
+      "threat-intel",
+      "ioc"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/search/vx-vault.md"
   },
   {
@@ -64565,42 +64621,50 @@
   {
     "id": "cloudbrute",
     "name": "CloudBrute",
-    "description": "Tool to find target infrastructure, files, and apps on the popular cloud providers",
+    "description": "Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage and app URLs.",
     "url": "https://github.com/0xsha/CloudBrute",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Black-box enumeration of a target's cloud storage/apps across AWS, GCP, Azure, DO, Alibaba, Vultr, Linode.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "employer-org"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Go). No cloud credentials needed. Last release 2020 — functional but unmaintained; provider endpoints/behaviour may have drifted.",
+    "opsec": "active",
+    "opsecNote": "CloudBrute actively probes cloud-provider endpoints with generated names, and successful hits are real requests to the target's cloud assets that those providers (and the asset owner's access logs) can record. It supports proxy and user-agent randomisation for a reason — route through a burner proxy/VPS and only enumerate assets you're authorised to assess.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular (1k+ stars) open-source recon tool, but unmaintained since 2020; wordlist quality drives results and provider changes may cause misses/false negatives. Verify each hit is live and belongs to the target.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "0xsha/CloudBrute"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Subdomains scan/brute"
+      "Subdomains scan/brute",
+      "cloud-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cloudbrute.md"
   },
   {
@@ -64721,46 +64785,6 @@
       "shadowcrypt-tools"
     ],
     "_file": "library/tools/domains-ip-infrastructure/cloudflare-resolver-tool.md"
-  },
-  {
-    "id": "cloudflare-watch",
-    "name": "CloudFlare Watch",
-    "description": "Identify Cloudflare-protected sites",
-    "url": "https://www.crimeflare.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "protected-by-cloud-services"
-    ],
-    "bestFor": "Identify Cloudflare-protected sites",
-    "input": "Domain or IP",
-    "output": "Cloudflare status, origin IP (if discoverable)",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive lookup of Cloudflare configurations.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/protected-by-cloud-services/cloudflare-watch.md"
   },
   {
     "id": "cloudmare",
@@ -69378,47 +69402,55 @@
   {
     "id": "gitgraber",
     "name": "gitGraber",
-    "description": "Search and clone sensitive information from GitHub.",
+    "description": "Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials and the files exposing them.",
     "url": "https://github.com/hisxo/gitGraber",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Monitoring GitHub for leaked sensitive data tied to a target",
+    "bestFor": "Monitoring public GitHub in near-real-time for API keys and secrets tied to a target org/keyword.",
     "selectorsIn": [
       "employer-org",
       "domain"
     ],
     "selectorsOut": [
       "email",
-      "metadata-exif"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open source (Python3). Needs a free GitHub API token to run searches; last substantive update ~2019, so expect some detection patterns to be dated.",
+    "opsec": "passive",
+    "opsecNote": "gitGraber searches GitHub's public index for your keywords — it never contacts the target org, so the subject sees nothing. Your GitHub token ties the searches to your account, and viewing a leaked secret is a sensitive act; handle any discovered credential responsibly (report/rotate, don't use).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular, widely referenced secret-monitoring tool, but inactive since ~2019 — its built-in service patterns (AWS, GCP, Stripe, Twilio…) may miss newer token formats. Verify hits manually.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "shhgit"
+    ],
+    "aliases": [
+      "hisxo/gitGraber"
+    ],
     "tags": [
       "github",
       "secrets",
       "monitoring"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/gitgraber.md"
   },
   {
@@ -84138,37 +84170,50 @@
   {
     "id": "squatm3gator",
     "name": "Squatm3gator",
-    "description": "OSINT tool: Squatm3gator.",
+    "description": "Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted domains.",
     "url": "https://github.com/david3107/squatm3gator",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Generating and checking cybersquatting / typosquat variants of a domain (substitution, flip, homoglyph).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; self-hosted via Docker. No account or key.",
+    "opsec": "passive",
+    "opsecNote": "Generation is local; the registration checks query WHOIS/DNS for the candidate domains, not the original target's servers — so the subject of the original domain sees nothing. The squat domains' registrars/DNS may log the lookups from your host; use a VPN/VPS if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Black Hat Arsenal-presented open-source tool (built on squatm3). Solid for generating variants; \"available/registered\" status is only as fresh as the WHOIS/DNS it queries at run time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "squatm3",
+      "david3107/squatm3gator"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "typosquatting",
+      "phishing"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/squatm3gator.md"
   },
   {
@@ -85761,41 +85806,51 @@
   {
     "id": "trend-micro-site-safety-center",
     "name": "Trend Micro Site Safety Center",
-    "description": "Website safety verification, malware/phishing detection, threat assessment",
+    "description": "Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.",
     "url": "https://global.sitesafety.trendmicro.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "Website safety verification, malware/phishing detection, threat assessment",
-    "input": "Website URL",
-    "output": "Safety rating, category classification, threat indicators, historical data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Getting Trend Micro's safety rating and content category for a domain/URL.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web lookup, no account. (Trend Micro also offers a reclassification-request flow, but querying a rating is free.)",
     "opsec": "passive",
-    "opsecNote": "Queries Trend Micro's pre-scanned website reputation database without contacting the target.",
+    "opsecNote": "You query Trend Micro's pre-scanned reputation database, not the target site, so the subject sees nothing. Only Trend Micro sees the domain you check. Don't then browse a flagged-dangerous URL from a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party reputation service from Trend Micro, a major security vendor. Categorisation is automated and can be stale or coarse for small/new sites; it's a reputable signal, not a verdict.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Trend Micro Site Safety",
+      "sitesafety.trendmicro.com"
+    ],
+    "tags": [
+      "reputation",
+      "url-reputation",
+      "safe-browsing"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/trend-micro-site-safety-center.md"
   },
   {
@@ -348210,47 +348265,56 @@
   },
   {
     "id": "flight-tracker",
-    "name": "Flight Tracker",
-    "description": "OSINT tool: Flight Tracker.",
+    "name": "Flight Tracker (ADS-B Exchange)",
+    "description": "Use when you have an aircraft registration/callsign or a location and want live flight positions — returns real-time aircraft geolocation and identity.",
     "url": "https://global.adsbexchange.com/virtualradar/desktop.html",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Live, unfiltered real-time tracking of aircraft by registration, callsign, or map area.",
     "selectorsIn": [
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The live map is free to browse with no account. ADS-B Exchange sells historical data / API access; real-time map viewing is open.",
+    "opsec": "passive",
+    "opsecNote": "You read a crowd-sourced feed of aircraft transponder broadcasts — nothing you do touches the aircraft or its operator, and there's no signal back to any subject. Only ADS-B Exchange sees your browsing; use a VPN if you want to keep even that private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ADS-B Exchange is the best-known *unfiltered* flight tracker — it does not honour the block lists that hide private/government jets on FlightRadar24/FlightAware, so its coverage of sensitive aircraft is stronger. Data is community-fed, so gaps exist where no receiver is nearby.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ads-b-exchange",
       "ads-b-exchange-radar-view",
       "ads-b-historical-flight-viewer"
     ],
+    "aliases": [
+      "ADS-B Exchange",
+      "ADSB Exchange VirtualRadar"
+    ],
+    "tags": [
+      "aviation",
+      "flight-tracking",
+      "geolocation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/flight-tracker.md"
   },
   {
