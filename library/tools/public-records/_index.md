@@ -437,7 +437,7 @@ kind: group-index
 - **`inc-5000`** (medium) — Use when you have an `employer-org` or `name` and want to confirm a fast-growing US private company, its location and leadership — returns `
 - **`inciteful`** (low) — Use when you have a `document-id` (a paper's title/DOI/arXiv/PubMed link) and want its citation network — returns connected papers and their
 - **`independent-fundamental-baptist-sexual-misconduct-database`** (high) — Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — ret
-- **`index-mundi`** (low) — OSINT tool: Index Mundi.
+- **`index-mundi`** (low) — Use when you have a country or region and want quick comparative statistics and commodity data — returns country-level indicator data for ba
 - **`indiana-offender-database-search`** (high) — Use when you have a `name` (or DOC number) and want to check Indiana incarceration status — returns offender ID, DOB, offense, facility and 
 - **`info-clipper-com`** (high) — Use when you have a company `name` (or an `employer-org`/`phone`) and want its registry profile, directors and address across 200 countries 
 - **`infocreditgroup-com`** (medium) — Use when you have a company `name` or a person's `name` tied to a business and want credit, ownership, and due-diligence/KYC data across 130
@@ -777,7 +777,7 @@ kind: group-index
 - **`scotussearch-com`** (low) — Use when you have a `name` and want to find where it appears in US Supreme Court oral arguments (as a party, attorney or speaker) — returns 
 - **`scwonline-wales`** (high) — Use when you have a `name` of a social care worker in Wales and want to verify their registration — returns the registrant `name`, registrat
 - **`search-datasets`** (low) — OSINT tool: Search Datasets.
-- **`search-for-a-federal-corporation`** (low) — OSINT tool: Search for a Federal Corporation.
+- **`search-for-a-federal-corporation`** (medium) — Use when you have a company name or director/officer name in Canada and want the official federal incorporation record — returns employer-or
 - **`search-for-company-documents`** (low) — OSINT tool: Search for Company Documents.
 - **`search-for-open-information-documents`** (medium) — Use when you have a `name` or `employer-org` tied to the BC (Canada) government and want disclosed records — returns documents, `associate` 
 - **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
@@ -886,7 +886,7 @@ kind: group-index
 - **`trinka`** (medium) — Use when you have two texts/documents and want authorship, plagiarism or consistency signals — returns grammar/style/plagiarism analysis to 
 - **`trouver-une-d-cision`** (medium) — Use when you have a `name` and want Quebec/Canadian court and tribunal decisions that mention the person as a party, witness, or professiona
 - **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re
-- **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.
+- **`trump-twitter-archive`** (low) — Use when you need the complete, searchable record of Donald Trump's tweets (including deleted ones) — returns dated social-profile posts you
 - **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
 - **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.
 - **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return

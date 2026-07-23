@@ -14,7 +14,7 @@ kind: group-index
 
 ## Skills here
 - **`ads-b-exchange-radar-view`** (low) — Use when you have an aircraft registration/callsign or a location and want the live unfiltered globe view of air traffic — returns real-time
-- **`ads-b-historical-flight-viewer`** (low) — OSINT tool: ADS-B Historical Flight Viewer.
+- **`ads-b-historical-flight-viewer`** (medium) — Use when you have an aircraft (tail/registration, hex, or callsign) and want to replay its past flights — returns geolocation tracks and tim
 - **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
 - **`airfleets`** (low) — Database for aircraft details.
 - **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
@@ -194,7 +194,7 @@ kind: group-index
 - **`vincheck-info`** (medium) — Use when you have a `vin` or `vehicle-plate` and want a free vehicle history — returns title/salvage/theft history, specs, and recalls (vehi
 - **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
 - **`wandermap`** (low) — hiking routes world map
-- **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor
+- **`websdr`** (low) — Use when you have a frequency/region and want to listen to live radio from an internet-connected receiver near that location — returns audio
 - **`wikicars`** (medium) — Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a
 - **`wikiroutes`** (low) — Use when you have a `geolocation`/city and want its public-transport network — returns bus/tram/metro routes, stops and coverage for that ar
 - **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.

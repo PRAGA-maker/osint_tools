@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`censys`** (low) — Use when you have a `domain`, `ip-address`, or certificate detail and want internet-wide scan data on it — returns hosts, open ports, servic
 - **`certgraph`** (low) — Certificate mapping, domain relationship discovery, hostname enumeration via SSL certificates
-- **`certkit-certificate-transparency-log-search`** (low) — CT certificate search, subdomain enumeration, certificate misuse detection
+- **`certkit-certificate-transparency-log-search`** (low) — Use when you have a domain and want its issued TLS certificates to enumerate subdomains — returns domain (subdomains via SANs) from public C
 - **`google-s-certificate-transparency`** (low) — Use when you need to understand or access the Certificate Transparency ecosystem — the reference for CT logs that record every TLS cert, ena
 - **`spyse`** (low) — Domain intelligence, certificate discovery, subdomain enumeration, vulnerability identification
 

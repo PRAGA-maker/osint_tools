@@ -10184,38 +10184,53 @@
   },
   {
     "id": "open-pgp",
-    "name": "Open PGP",
-    "description": "OSINT tool: Open PGP.",
+    "name": "OpenPGP (Enigmail)",
+    "description": "Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity verification for opsec; Enigmail itself is now superseded.",
     "url": "https://www.enigmail.net/index.php/en",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Encrypting investigator email and verifying PGP-signed messages/keys tied to a subject or persona.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source. Note that Enigmail no longer supports Thunderbird — modern users should use Thunderbird's built-in OpenPGP or GnuPG directly.",
+    "opsec": "passive",
+    "opsecNote": "Encrypting/signing your own mail is a defensive opsec measure. Verifying a subject's public key or signature is passive (offline crypto), but publishing your own key or emailing the subject is an active, attributable step — keep persona keys separate from real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "OpenPGP is an open standard with strong tooling (GnuPG); Enigmail specifically is legacy — its Thunderbird role was absorbed into the client, so prefer the maintained path.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Enigmail",
+      "PGP",
+      "GnuPG"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/open-pgp.md"
   },
   {
@@ -63056,57 +63071,6 @@
     "_file": "library/tools/domains-ip-infrastructure/bi-zone.md"
   },
   {
-    "id": "bing-ip-search",
-    "name": "Bing IP Search",
-    "description": "Find domains on IP using Bing index",
-    "url": "https://www.bing.com/search?q=ip%3A8.8.8.8",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "neighbor-domains"
-    ],
-    "bestFor": "Find domains on IP using Bing index",
-    "input": "IP address",
-    "output": "Domains indexed by Bing on that IP",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive search using Bing's public index.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "bing",
-      "bing-creations",
-      "bing-images",
-      "bing-maps",
-      "bing-microsoft-translator",
-      "bing-news",
-      "bing-translate",
-      "bing-videos",
-      "bing-webmaster-tools",
-      "see-it-search-it"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/neighbor-domains/bing-ip-search.md"
-  },
-  {
     "id": "bing-webmaster-tools",
     "name": "Bing Webmaster Tools",
     "description": "OSINT tool: Bing Webmaster Tools.",
@@ -64371,42 +64335,51 @@
   },
   {
     "id": "certkit-certificate-transparency-log-search",
-    "name": "CertKit - Certificate Transparency Log Search",
-    "description": "CT certificate search, subdomain enumeration, certificate misuse detection",
+    "name": "CertKit — Certificate Transparency Log Search",
+    "description": "Use when you have a domain and want its issued TLS certificates to enumerate subdomains — returns domain (subdomains via SANs) from public Certificate Transparency logs.",
     "url": "https://www.certkit.io/tools/ct-logs/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "certificate-search"
     ],
-    "bestFor": "CT certificate search, subdomain enumeration, certificate misuse detection",
-    "input": "Domain name",
-    "output": "List of certificates with issuance dates, expiry dates, and Subject Alternative Names",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Passive subdomain enumeration by mining a domain's certificates from Certificate Transparency logs.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free tier returns up to 100 certificates per query; unlimited results, brand monitoring, and API access require a paid Business account.",
     "opsec": "passive",
-    "opsecNote": "Queries public Certificate Transparency logs; does not contact the target.",
+    "opsecNote": "CT logs are public and CertKit queries them on its servers, so the target domain is never contacted — fully passive with no footprint on the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial certificate-monitoring service; the CT data itself is authoritative (public append-only logs), the free web tool is a convenient front-end.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CertKit CT logs"
+    ],
+    "tags": [
+      "certificate-transparency",
+      "subdomain",
+      "passive-dns"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search/certkit-certificate-transparency-log-search.md"
   },
   {
@@ -233455,38 +233428,52 @@
   },
   {
     "id": "index-mundi",
-    "name": "Index Mundi",
-    "description": "OSINT tool: Index Mundi.",
-    "url": "http://www.indexmundi.com",
+    "name": "IndexMundi",
+    "description": "Use when you have a country or region and want quick comparative statistics and commodity data — returns country-level indicator data for background and corroboration, not person data.",
+    "url": "https://www.indexmundi.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast country statistics, comparisons, and commodity prices aggregated from public sources into one browsable site.",
+    "selectorsIn": [
+      "address",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse; aggregates World Bank, CIA World Factbook, and commodity sources. No account.",
+    "opsec": "passive",
+    "opsecNote": "You browse aggregated public statistics, never querying anything about a subject — fully passive with no leakage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running third-party aggregator; the underlying data is from authoritative sources (World Bank, CIA Factbook), but always trace a figure to its origin.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "world-bank-data"
+    ],
+    "aliases": [
+      "Index Mundi"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/index-mundi.md"
   },
   {
@@ -252472,36 +252459,54 @@
   },
   {
     "id": "search-for-a-federal-corporation",
-    "name": "Search for a Federal Corporation",
-    "description": "OSINT tool: Search for a Federal Corporation.",
-    "url": "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html?locale=en_CA",
+    "name": "Search for a Federal Corporation (Corporations Canada)",
+    "description": "Use when you have a company name or director/officer name in Canada and want the official federal incorporation record — returns employer-org status, address, and named directors/officers.",
+    "url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpSrch.html?locale=en_CA",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming a Canadian federal corporation and pulling its status, registered office, and directors from the official registry.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official government registry (Corporations Canada / ISED); no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A passive query against a public government registry; nothing is disclosed to the company and no active probing occurs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Innovation, Science and Economic Development Canada (ISED) / Corporations Canada — the authoritative federal corporate registry.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Corporations Canada search",
+      "Federal Corporation Search"
+    ],
+    "tags": [
+      "company-registry",
+      "public-records",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-for-a-federal-corporation.md"
   },
   {
@@ -258349,35 +258354,49 @@
   {
     "id": "trump-twitter-archive",
     "name": "Trump Twitter Archive",
-    "description": "OSINT tool: Trump Twitter Archive.",
+    "description": "Use when you need the complete, searchable record of Donald Trump's tweets (including deleted ones) — returns dated social-profile posts you can filter and export for research.",
     "url": "https://www.thetrumparchive.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching and exporting the full historical archive of Donald Trump's tweets, including deleted posts.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search, filter, and browse; the raw dataset is downloadable. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a static third-party archive; nothing is sent to the subject and no live account is queried — fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known independent archive widely used by journalists and researchers; corroborate individual tweets against other archives for citation-grade certainty.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "The Trump Archive",
+      "thetrumparchive.com"
+    ],
+    "tags": [
+      "twitter-archive",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/trump-twitter-archive.md"
   },
   {
@@ -345622,47 +345641,55 @@
   },
   {
     "id": "ads-b-historical-flight-viewer",
-    "name": "ADS-B Historical Flight Viewer",
-    "description": "OSINT tool: ADS-B Historical Flight Viewer.",
+    "name": "ADS-B Historical Flight Viewer (ADSBExchange)",
+    "description": "Use when you have an aircraft (tail/registration, hex, or callsign) and want to replay its past flights — returns geolocation tracks and timing from ADSBExchange's historical ADS-B data.",
     "url": "https://flight-data.adsbexchange.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Replaying historical aircraft movements on ADSBExchange to reconstruct where a plane (and by inference its occupants) went and when.",
     "selectorsIn": [
+      "vehicle-plate",
       "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The globe replay (history back to ~2020) is free to view with no account; bulk historical data files and ad-free access are paid/feeder-gated.",
+    "opsec": "passive",
+    "opsecNote": "You view recorded, publicly-broadcast ADS-B positions — nothing is sent to the aircraft or its owner, so it is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "ADSBExchange is a well-known unfiltered crowd-sourced ADS-B network (it does not honor blocking lists), making it a primary reference for flight tracking.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ads-b-exchange",
       "ads-b-exchange-radar-view",
       "flight-tracker"
     ],
+    "aliases": [
+      "ADSBExchange replay",
+      "ADS-B Exchange historical"
+    ],
+    "tags": [
+      "aviation",
+      "flight-tracking"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/ads-b-historical-flight-viewer.md"
   },
   {
@@ -355015,39 +355042,53 @@
   },
   {
     "id": "websdr",
-    "name": "WEBSDR",
-    "description": "online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Morse code).",
-    "url": "http://websdr.ewi.utwente.nl:8901",
+    "name": "WebSDR",
+    "description": "Use when you have a frequency/region and want to listen to live radio from an internet-connected receiver near that location — returns audio intelligence (callsigns, voice, Morse) tied to a geolocation.",
+    "url": "http://websdr.org",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Listening in-browser to remote software-defined radios worldwide to monitor shortwave/aviation/marine/amateur traffic from a chosen location.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use in a browser; the receivers are hosted by universities and volunteers, funded independently.",
+    "opsec": "passive",
+    "opsecNote": "You listen to publicly broadcast radio through a third party's receiver — the transmitting station cannot see you, so it is passive. The receiver operator does see your connection; use a sock-puppet browser/VPN if that matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "websdr.org is the long-running directory of WebSDR receivers (originated at the University of Twente); individual receivers are volunteer-run.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "WebSDR.org",
+      "Web Software Defined Radio"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Military tracking"
+      "radio",
+      "sdr",
+      "military-tracking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/websdr.md"
   },
   {

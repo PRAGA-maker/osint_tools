@@ -251,7 +251,7 @@ kind: group-index
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — OSINT tool: Online Tools.
 - **`open-dns`** (low) — OSINT tool: Open DNS.
-- **`open-pgp`** (low) — OSINT tool: Open PGP.
+- **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke

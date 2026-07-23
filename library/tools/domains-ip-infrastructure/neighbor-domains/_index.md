@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/neighbor-domains
 
 ## Skills here
-- **`bing-ip-search`** (low) — Find domains on IP using Bing index
 - **`ip-fingerprints-reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it (shared hosting neighbors) — returns a list of co-hosted `domain`s
 - **`myipneighbors`** (low) — Find all domains on same shared IP
 - **`tcp-ip-utils-domain-neighbors`** (low) — Identify related domains on same IP
