@@ -125,7 +125,7 @@ kind: group-index
 - **`cve-binary-tool`** (low) — Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with se
 - **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
-- **`dark-web-informer`** (low) — OSINT tool: Dark Web Informer.
+- **`dark-web-informer`** (low) — Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and
 - **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
 - **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
 - **`dirhunt`** (low) — Tool for search and analyze directories, can find interesting things if the server has the "index of" mode enabled (also useful if the direc

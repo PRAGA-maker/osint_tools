@@ -211,7 +211,7 @@ kind: group-index
 - **`lastfm-monitor`** (low) — OSINT tool: lastfm_monitor.
 - **`lastpass`** (low) — OSINT tool: Lastpass.
 - **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
-- **`linkscope-client`** (low) — OSINT tool: LinkScope Client.
+- **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
 - **`linkscope`** (low) — OSINT tool: LinkScope.
 - **`linkuroius`** (low) — OSINT tool: Linkuroius.
 - **`listify`** (low) — OSINT tool: Listify.
@@ -274,7 +274,7 @@ kind: group-index
 - **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — OSINT tool: OSINT Updates - a free weekly newsletter for OSINTers.
-- **`osintcombine-tools`** (low) — OSINT tool: Osintcombine Tools.
+- **`osintcombine-tools`** (medium) — Use when you want a free, browser-based hub of OSINT pivots and utilities — returns a launcher of search/social/domain/crypto/username tools
 - **`osintcurious`** (low) — OSINT tool: OSINTCurious.
 - **`osintstalker`** (low) — OSINT tool: OsintStalker.
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
@@ -361,7 +361,7 @@ kind: group-index
 - **`spidersuite`** (low) — OSINT tool: SpiderSuite.
 - **`spotify-monitor`** (low) — OSINT tool: spotify_monitor.
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
-- **`steam-monitor`** (low) — OSINT tool: steam_monitor.
+- **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
 - **`steganography-online-codec`** (low) — OSINT tool: Steganography Online Codec.
 - **`steganography-online`** (low) — OSINT tool: Steganography Online.
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.

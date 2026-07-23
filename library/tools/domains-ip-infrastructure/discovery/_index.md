@@ -15,7 +15,7 @@ kind: group-index
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior
 - **`shodan`** (low) — Use when you have an `ip-address`, `domain` or `employer-org` and want its internet-exposed devices/services — returns open ports, banners, 
 - **`sitediff`** (low) — Tracking site changes between snapshots for monitoring and QA
-- **`urldna`** (low) — Quick URL/domain triage and intelligence pivoting
+- **`urldna`** (low) — Use when you have a `domain`/URL and want a safe server-side scan of it — returns screenshot, resolved `ip-address`, TLS/tech details, and a
 - **`urlscan-io`** (low) — Use when you have a `domain`/URL or `ip-address` and want its scan history — returns screenshots, contacted domains/IPs, and page resources 
 - **`wappalyzer`** (low) — Detecting web technologies and software dependencies at scale
 - **`zoomeye-ai`** (low) — Internet device discovery, service enumeration, vulnerability mapping, attack surface assessment

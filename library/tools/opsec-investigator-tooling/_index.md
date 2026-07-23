@@ -277,7 +277,6 @@ kind: group-index
 - **`mozilla-firefox`** (low) — Internet browser program
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
 - **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
-- **`multilogin`** (low) — multi-login browser extension
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
 - **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
@@ -311,7 +310,7 @@ kind: group-index
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — OSINT tool: Parrot Security.
-- **`passhunt`** (low) — Command line tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 
+- **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
 - **`password-generator`** (low) — Password generator for creating strong passwords
 - **`password-safe`** (low) — Program that enhances security by offering password management services
 - **`paxful`** (low) — OSINT tool: Paxful.
