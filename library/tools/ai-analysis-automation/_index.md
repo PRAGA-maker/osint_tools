@@ -158,7 +158,7 @@ kind: group-index
 - **`glit`** (low) — OSINT tool: Glit.
 - **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
 - **`gnu-pg`** (low) — OSINT tool: GNU PG.
-- **`gomapenum`** (low) — Gather emails on Linkedin (via Linkedin and via Google) + User enumeration and password bruteforce on Azure, ADFS, OWA, O365 (this part seem
+- **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — OSINT tool: Google Colaboratory.
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — get the most detailed

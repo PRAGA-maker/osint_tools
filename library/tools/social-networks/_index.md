@@ -181,7 +181,7 @@ kind: group-index
 - **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
 - **`follower-wonk-compare`** (medium) — Use when you have two or three Twitter/X `username`s and want their shared audience — returns followers-in-common and overlap analysis to pr
-- **`followeraudit`** (low) — OSINT tool: FollowerAudit.
+- **`followeraudit`** (low) — Use when you have an X/Twitter `username` and want to assess how many of its followers are fake/bot/inactive — returns an authenticity score
 - **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — Use when you have a `name`, keyword, or `username` and want to find or profile social accounts by bio text and analyze their followers — ret
 - **`forcesreunited-co-uk`** (high) — Use when you have a UK military subject's `name`, unit, or service era and want to place them via a veterans' network — returns a member `so
 - **`free-people-search-tool`** (high) — Use when you have a `name` (plus location or company) and want a one-box hub that fans a search across LinkedIn, Twitter, GitHub, and Dribbb

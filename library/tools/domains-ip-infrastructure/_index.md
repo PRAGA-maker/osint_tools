@@ -115,7 +115,7 @@ kind: group-index
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
-- **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
+- **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
 - **`cookieserve-com`** (low) — detailed website cookie analyze
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
 - **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
@@ -168,7 +168,6 @@ kind: group-index
 - **`find-plus`** (low) — Regex Find-in-Page Tool
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit
 - **`focsec`** (low) — OSINT tool: Focsec.
-- **`follow-net`** (low) — OSINT tool: Follow.net.
 - **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif

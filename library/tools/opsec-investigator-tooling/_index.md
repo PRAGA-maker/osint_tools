@@ -93,7 +93,6 @@ kind: group-index
 - **`cloudhq`** (low) — A collection of several dozen extensions for #Chrome that allow you to extend the functionality of the standard #Gmail interface and maximiz
 - **`cloudwards`** (low) — Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more
 - **`codegent-chinese-mandarin-phrases-app-mobile-android`** (low) — App for mobile devices for learning phrases in the Chinese Mandarin language
-- **`comodo-dragon`** (low) — OSINT tool: Comodo Dragon.
 - **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
@@ -166,7 +165,7 @@ kind: group-index
 - **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
 - **`freshstart`** (low) — multi-login browser extension
 - **`generate-data`** (low) — Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or Java
-- **`generate-sa-id-numbers`** (low) — OSINT tool: Generate SA ID Numbers.
+- **`generate-sa-id-numbers`** (low) — Use when you have a `dob` (and gender/citizenship) and want to construct or sanity-check the structure of a South African national ID number
 - **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat
 - **`get-safe-online-database`** (low) — Website providing information about online privacy and security-related subjects
@@ -202,7 +201,7 @@ kind: group-index
 - **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`grindr-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and e-dating
 - **`grok-knowledge-base-for-phishing-scams`** (low) — Listing of scam, fraud, hoax, and phishing types
-- **`guid-uuid-and-short-guid-generator`** (low) — OSINT tool: GUID/UUID and short GUID generator.
+- **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
 - **`hacker-vision-extension-chrome`** (low) — Add-on for Google Chrome that changes the background from white to black
 - **`hide-my-ass-proxy-website`** (low) — Anonymous browsing service provider
@@ -249,12 +248,12 @@ kind: group-index
 - **`lemmeknow`** (low) — Use when you have an unknown string (a `crypto-wallet`, hash, token, ID) and want to identify what it is — returns candidate types with rege
 - **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
-- **`lightshot-screen-capture-add-on`** (low) — Firefox browser add-on for taking screenshots
+- **`lightshot-screen-capture-add-on`** (low) — Use when you need to quickly screenshot a selected area of a browser tab to preserve `metadata-exif`-free visual evidence during an investig
 - **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
 - **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
 - **`localmonero-co`** (low) — OSINT tool: Localmonero.co.
-- **`macchanger`** (low) — Utility to view and spoof the MAC address of network interfaces.
+- **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
@@ -291,7 +290,7 @@ kind: group-index
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
-- **`off-the-record-instant-messaging-plug-in`** (low) — Program that offers encrypted instant messaging services that cannot be monitored
+- **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
 - **`offen-osint`** (low) — OSINT tool: Offen Osint.
 - **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating

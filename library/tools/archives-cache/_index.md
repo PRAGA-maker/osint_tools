@@ -67,7 +67,6 @@ kind: group-index
 - **`national-center-for-biotechnology`** (medium) — Use when you have a researcher `name` or affiliation and want their publications, datasets and co-authors across 30+ biomedical databases — 
 - **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
 - **`newsblur`** (low) — Use when you want to monitor news sites, blogs and RSS feeds about a subject in one filtered stream — an open-source feed reader with traini
-- **`omeareader`** (low) — OSINT tool: OmeaReader.
 - **`onwebchange`** (low) — OSINT tool: OnWebChange.
 - **`pagecached-com`** (medium) — Use when you have a `domain`/URL and want to know which archives hold a cached snapshot — returns links to Wayback, Archive.today, Bing, Yah
 - **`perma-cc`** (medium) — Use when you have a web page `domain`/URL that is evidence and want a permanent, citable archived snapshot — returns a stable perma-link (`d
