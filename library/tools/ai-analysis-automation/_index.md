@@ -427,7 +427,7 @@ kind: group-index
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
 - **`x86-and-x64-intel-assembler`** (low) — OSINT tool: x86 and x64 Intel Assembler.
 - **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 
-- **`you-com`** (low) — AI-assisted web research, summarizing search results, multi-source research aggregation
+- **`you-com`** (low) — Use when you have a `name`/`username` and want an AI-summarized web sweep with citations — returns synthesized answers plus linked source pa
 - **`youcode`** (low) — Add free, privacy source code search engine with popular tech sites snippets in search results: Mozilla Developer Network; Github; W3 School
 - **`zen`** (low) — OSINT tool: Zen.
 - **`zingchart`** (low) — OSINT tool: ZingChart.

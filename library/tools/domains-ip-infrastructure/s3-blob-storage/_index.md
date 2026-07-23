@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/s3-blob-storage
 
 ## Skills here
-- **`bucketloot`** (low) — Supplemental bucket discovery when validating legacy workflows
+- **`bucketloot`** (low) — Use when you have an exposed cloud bucket URL (`domain`) and want to mine it — returns secrets, sensitive files, and extracted `email`/`doma
 - **`goblob`** (low) — Enumerating Azure blob container exposure quickly
 - **`lazys3`** (low) — Quick permutation-based S3 bucket name discovery
 - **`public-buckets`** (low) — Investigating exposed bucket contents without running local scanners

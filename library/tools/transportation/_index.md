@@ -137,7 +137,7 @@ kind: group-index
 - **`passenger-airlines-wiki`** (low) — OSINT tool: Passenger Airlines Wiki.
 - **`plane-finder`** (low) — OSINT tool: Plane Finder.
 - **`planefinder-army-live-flight-tracker`** (low) — OSINT tool: Planefinder Army Live Flight Tracker.
-- **`planefinder`** (low) — Live flight tracker.
+- **`planefinder`** (low) — Use when you have a flight number, callsign, or aircraft registration and want its live/historical position — returns real-time `geolocation
 - **`planespotters-net`** (medium) — Use when you have an aircraft registration/tail number (read off a photo) or an operator name and want the airframe's full operator history 
 - **`plate-recognizer`** (medium) — Use when you have an `image` of a vehicle and want to read its licence plate automatically — returns the `vehicle-plate` string plus make/mo
 - **`plates-mania`** (medium) — Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.

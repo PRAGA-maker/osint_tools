@@ -162,7 +162,7 @@ kind: group-index
 - **`fast-google-dorks-scan`** (low) — Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.
 - **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
 - **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
-- **`favicon-hasher`** (low) — Favicon.ico files hashes is a feature by which you can find domains related with your target. This tool generates hashes for all favicon.ico
+- **`favicon-hasher`** (low) — Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Sh
 - **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
 - **`find-plus`** (low) — Regex Find-in-Page Tool
@@ -435,7 +435,7 @@ kind: group-index
 - **`urlquery`** (low) — OSINT tool: urlQuery.
 - **`urlvoid`** (low) — OSINT tool: URLVoid.
 - **`urlxray`** (low) — OSINT tool: Urlxray.
-- **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers
+- **`uscrapper`** (low) — Use when you have a `domain`/URL and want contact details harvested from it — returns `email`s, `phone`s, `social-profile` links, and other 
 - **`user-agent-parser`** (low) — Use when you have a User-Agent string (from logs, headers or a tool config) and want it decoded — returns the device, OS and browser it desc
 - **`validin`** (low) — Use when you have a `domain` or `ip-address` and want deep historical DNS, subdomains, host-response and certificate data to pivot across an
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
@@ -484,7 +484,7 @@ kind: group-index
 - **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
 - **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
-- **`whoishostingthis`** (low) — OSINT tool: WhoIsHostingThis.
+- **`whoishostingthis`** (low) — Use when you have a `domain` and want to know which company hosts it — returns the hosting provider plus basic WHOIS/ownership context.
 - **`whoismind`** (low) — OSINT tool: WhoisMind.
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin

@@ -17650,30 +17650,36 @@
   {
     "id": "you-com",
     "name": "You.com",
-    "description": "AI-assisted web research, summarizing search results, multi-source research aggregation",
+    "description": "Use when you have a `name`/`username` and want an AI-summarized web sweep with citations — returns synthesized answers plus linked source pages and images.",
     "url": "https://you.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "AI-assisted web research, summarizing search results, multi-source research aggregation",
-    "input": "Search queries or conversational prompts",
-    "output": "AI-generated answers with cited web sources, images, news, and follow-up research paths",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "AI-assisted web research that summarizes and cites multiple sources for a subject in one pass.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier for basic AI search; advanced models, unlimited queries, and API access require an account and a paid plan.",
     "opsec": "active",
-    "opsecNote": "Queries are logged; account required for advanced features. Do not submit sensitive subject information.",
+    "opsecNote": "Queries go to You.com's servers (and its underlying LLM providers) and are logged; a signed-in account ties every search to you. Treat this as active disclosure — never paste a subject's sensitive PII into the prompt, and use a signed-out/sock-puppet session. The AI may also fabricate ('hallucinate') details, so it can invent facts you must not trust.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "You.com is a legitimate commercial AI-search company, but LLM output can hallucinate; every claim must be verified against the cited source, and uncited claims discarded.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -17683,11 +17689,17 @@
     "relatedTools": [
       "youcode"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "You.com search",
+      "YouChat"
+    ],
+    "tags": [
+      "ai-search",
+      "research-aggregation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/you-com.md"
   },
   {
@@ -63370,29 +63382,35 @@
   {
     "id": "bucketloot",
     "name": "BucketLoot",
-    "description": "Supplemental bucket discovery when validating legacy workflows",
+    "description": "Use when you have an exposed cloud bucket URL (`domain`) and want to mine it — returns secrets, sensitive files, and extracted `email`/`domain`/subdomain assets.",
     "url": "https://github.com/redhuntlabs/BucketLoot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "s3-blob-storage"
     ],
-    "bestFor": "Supplemental bucket discovery when validating legacy workflows",
-    "input": "Bucket name patterns and target-related keywords",
-    "output": "Candidate bucket names and accessible resource indications",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
+    "bestFor": "Automated inspection of a public S3/GCS/DigitalOcean bucket for secrets, keywords, and leaked assets.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Insufficient current documentation to classify behavior confidently.",
+    "costNote": "Free and open-source (MIT); a single Go binary. Guest mode scans up to ~1,000 files without any cloud credentials.",
+    "opsec": "active",
+    "opsecNote": "BucketLoot fetches objects directly from the target bucket, so the cloud provider's access logs record your IP against those GET requests — this is active collection. Only run it against buckets you are authorized to inspect; accessing others' storage may be unlawful even when 'public.' Route through a proxy/VPN and a sock-puppet identity, and never exfiltrate real personal data you find.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by RedHunt Labs (open-source, presented at Black Hat); it inspects public/exposed storage, and any secret it flags should be validated before you rely on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -63400,11 +63418,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BucketLoot",
+      "redhuntlabs/BucketLoot"
+    ],
+    "tags": [
+      "s3",
+      "cloud-storage",
+      "secrets-scanning"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/bucketloot.md"
   },
   {
@@ -68609,42 +68634,51 @@
   {
     "id": "favicon-hasher",
     "name": "Favicon Hasher",
-    "description": "Favicon.ico files hashes is a feature by which you can find domains related with your target. This tool generates hashes for all favicon.ico on the site (+ quick links to find them in Shodan, Censys, Zoomeye)",
+    "description": "Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Shodan/Censys/ZoomEye pivots.",
     "url": "https://faviconhasher.codejavu.tech/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a site's favicon into a search hash to discover other hosts serving the same icon.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; the downstream engines it links to (Shodan, Censys, ZoomEye, FOFA, Netlas) have their own free/paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "The tool fetches the target's favicon to hash it (a single, low-noise request), and the actual infrastructure search happens on Shodan/Censys against their pre-collected scan data — not against the target. Effectively passive. Your queries are logged by faviconhasher.tech and the search engines you pivot into; use a sock-puppet session for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community reconnaissance utility (codejavu.tech); the hashing is deterministic and verifiable, and it merely constructs search-engine query URLs, so there's little to trust beyond correct hashing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "FaviconHasher",
+      "favicon hash generator"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Favicon search"
+      "Favicon search",
+      "infrastructure"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/favicon-hasher.md"
   },
   {
@@ -86942,48 +86976,53 @@
   {
     "id": "uscrapper",
     "name": "USCRAPPER",
-    "description": "Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers",
+    "description": "Use when you have a `domain`/URL and want contact details harvested from it — returns `email`s, `phone`s, `social-profile` links, and other extracted identifiers.",
     "url": "https://github.com/z0m31en7/Uscrapper",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Automated one-shot extraction of emails, phones, and social links from a target web page.",
     "selectorsIn": [
-      "domain",
-      "email",
-      "phone"
-    ],
-    "selectorsOut": [
-      "address",
       "domain"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "email",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; run locally with Python.",
+    "opsec": "active",
+    "opsecNote": "USCRAPPER fetches the target page(s) directly from your machine, so the site's logs see your IP and user-agent — this is active reconnaissance against the target's server. Run it through a VPN/proxy and a sock-puppet user-agent, and respect that hammering a small personal site is noisy and potentially attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source community tool (z0m31en7/Uscrapper); it is a straightforward regex/scraper, so review the code before running and treat extracted data as unverified leads.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "what-mail"
+    ],
+    "aliases": [
+      "Uscrapper",
+      "z0m31en7/Uscrapper"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Searchers, scrapers, extractors, parsers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "what-mail"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/uscrapper.md"
   },
   {
@@ -89932,37 +89971,50 @@
   {
     "id": "whoishostingthis",
     "name": "WhoIsHostingThis",
-    "description": "OSINT tool: WhoIsHostingThis.",
-    "url": "http://www.whoishostingthis.com",
+    "description": "Use when you have a `domain` and want to know which company hosts it — returns the hosting provider plus basic WHOIS/ownership context.",
+    "url": "https://www.whoishostingthis.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-box lookup of which hosting provider serves a given website.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "employer-org"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The lookup tool is free; the site is now mostly affiliate-driven hosting reviews with the tool as one small feature.",
+    "opsec": "passive",
+    "opsecNote": "The lookup resolves the domain and reads its hosting/IP footprint from public data, so the target site is not meaningfully probed by you — passive. WhoIsHostingThis logs your queries; use a sock-puppet session for sensitive domains. Cross-check its answer, as the identified host can be a CDN/reseller rather than the true origin.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running but now affiliate/review-focused site; the hosting-lookup feature still works but is secondary, and results (especially behind a CDN) should be corroborated with a direct WHOIS/DNS check.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Who Is Hosting This",
+      "whoishostingthis.com"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "hosting-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whoishostingthis.md"
   },
   {
@@ -180656,35 +180708,36 @@
   {
     "id": "random-face-generator",
     "name": "Random Face Generator",
-    "description": "OSINT tool: Random Face Generator.",
+    "description": "Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does not exist.",
     "url": "https://fakeinfo.net/random-face-generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Producing an original AI face for a sock-puppet avatar that won't reverse-image-match a real person.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "face",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web generator (fakeinfo.net); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generating a face is passive and reveals nothing about any subject — its purpose is defensive: a GAN face won't reverse-image-search back to a real photo the way a stolen picture would. Caveats: AI faces have tell-tale artifacts (asymmetric earrings, warped backgrounds/teeth) and the same face can be regenerated by others, so a determined analyst may flag it as synthetic. Never use it to impersonate a real, identifiable person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "fakeinfo.net is a known fake-identity utility using GAN-generated faces (StyleGAN-style); output is synthetic and not linked to any real individual.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "fake-company-name-generator",
       "fake-drivers-license-generator",
@@ -180694,6 +180747,18 @@
       "fakeinfo-net",
       "twitter-profile-generator"
     ],
+    "aliases": [
+      "fake face generator",
+      "AI face generator"
+    ],
+    "tags": [
+      "sock-puppet",
+      "fake-identity",
+      "ai-face"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/random-face-generator.md"
   },
   {
@@ -183630,35 +183695,50 @@
   {
     "id": "stegonline",
     "name": "StegOnline",
-    "description": "OSINT tool: StegOnline.",
+    "description": "Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-browser steganalysis.",
     "url": "https://stegonline.georgeom.net/upload",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Browser-based steganography analysis — pulling hidden bit-planes, strings, and payloads out of an image.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source web app; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "StegOnline processes images in your browser, but you are uploading the image to georgeom.net's page — for a sensitive exhibit prefer the open-source local version (run it offline) so the file never leaves your machine. Analysis is passive toward any subject; the risk is exposing evidence to a third-party host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source stego tool by George Om (source on GitHub); widely used in CTF/forensics, so its behavior is transparent and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Steg Online",
+      "georgeom StegOnline"
+    ],
+    "tags": [
+      "steganography",
+      "image-forensics"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/stegonline.md"
   },
   {
@@ -184358,35 +184438,48 @@
   {
     "id": "this-rental-does-not-exist",
     "name": "This Rental Does Not Exist",
-    "description": "OSINT tool: This Rental Does Not Exist.",
+    "description": "Use when you need an AI-generated fake rental-listing `image` for sock-puppet cover, or as a reference for spotting AI-fabricated property scams — returns synthetic listing photos.",
     "url": "https://thisrentaldoesnotexist.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A demo of GAN-generated fake rental listings — sock-puppet imagery and a reference for recognizing AI-faked property scams.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free demo page; no account. Images are StyleGAN-generated (credited CC-BY-NC, Nvidia).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing/using the demo is passive and discloses nothing about a subject. Its investigative value is defensive awareness — it shows how convincing an AI-fabricated rental looks (real-seeming photos, incoherent text), which is exactly the tell of many rental-scam listings. Don't use generated images to defraud anyone; that's illegal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A single-purpose 'thisXdoesnotexist' demo page using StyleGAN imagery; it's a proof-of-concept, not a full generator, and produces synthetic images unlinked to any real property.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "thisrentaldoesnotexist",
+      "This Rental Does Not Exist"
+    ],
+    "tags": [
+      "sock-puppet",
+      "ai-generated",
+      "scam-awareness"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/this-rental-does-not-exist.md"
   },
   {
@@ -186494,35 +186587,35 @@
   {
     "id": "vin-generator",
     "name": "VIN Generator",
-    "description": "OSINT tool: VIN Generator.",
+    "description": "Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicle identification number.",
     "url": "https://www.fakenamegenerator.com/vehicle-identification-number.php",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Producing a realistically-formatted but fake VIN to pad out a sock-puppet identity.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "vin"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web generator (FakeNameGenerator); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generating a fake VIN is passive — nothing is submitted about a real subject. The OpSec point is defensive persona-building for your sock puppet. Do not use a generated VIN to impersonate a real vehicle, deceive authorities, or commit fraud; that is illegal. It exists to fill out a cover identity, not to spoof a genuine registration.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "FakeNameGenerator is a long-standing fake-identity utility; the VINs are format-plausible fabrications, not tied to any real vehicle registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "aba-generator",
       "credit-card-generator",
@@ -186531,6 +186624,17 @@
       "sin-generator",
       "ssn-generator"
     ],
+    "aliases": [
+      "fake VIN generator",
+      "vehicle identification number generator"
+    ],
+    "tags": [
+      "sock-puppet",
+      "fake-identity"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/vin-generator.md"
   },
   {
@@ -351786,46 +351890,53 @@
   {
     "id": "planefinder",
     "name": "PlaneFinder",
-    "description": "Live flight tracker.",
-    "url": "http://planefinder.net/",
+    "description": "Use when you have a flight number, callsign, or aircraft registration and want its live/historical position — returns real-time `geolocation`, route, and altitude.",
+    "url": "https://planefinder.net/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking a specific aircraft's live position and recent flight history on a world map.",
     "selectorsIn": [
       "vehicle-plate"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free live map and basic tracking in-browser; deeper playback/history and ad-free use sit behind a paid subscription/app tier.",
+    "opsec": "passive",
+    "opsecNote": "You query PlaneFinder's aggregated ADS-B feed, never the aircraft — tracking is passive and invisible to the target. PlaneFinder logs your session/queries; use a sock-puppet browser if the airframe you're tracking is sensitive. Note some military/private aircraft are filtered or blocked from public feeds.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established commercial ADS-B/MLAT flight-tracking network (part of the Airnav/PlaneFinder ecosystem) featured in the Bellingcat toolkit; coverage depends on volunteer receiver density.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "transport"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "plane-finder",
       "planefinder-army-live-flight-tracker"
     ],
+    "aliases": [
+      "PlaneFinder.net",
+      "Plane Finder"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "transport",
+      "flight-tracking"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/planefinder.md"
   },
   {
