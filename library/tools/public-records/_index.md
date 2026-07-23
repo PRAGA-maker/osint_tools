@@ -99,7 +99,7 @@ kind: group-index
 - **`better-business-bureau`** (medium) — Use when you have a business `name` or `employer-org` and want its contact details, principals and complaint history — returns `address`, `p
 - **`bgafd-co-uk`** (medium) — Use when you need to identify a British adult-film performer by stage name and resolve aliases/physical description — a niche performer data
 - **`big101-obituaries-listing-north-america`** (high) — Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obitua
-- **`bigquery-public-datasets`** (low) — OSINT tool: BigQuery public datasets.
+- **`bigquery-public-datasets`** (low) — Use when you need to query large public datasets at scale with SQL — census, GitHub, patents, crypto ledgers, geospatial and more — returns 
 - **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
 - **`binlist`** (low) — OSINT tool: Binlist.
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
@@ -167,7 +167,7 @@ kind: group-index
 - **`companies-and-orgs-search-engine`** (medium) — Use when you have a company or organization `name` (or an `employer-org` lead) and want a Google Custom Search Engine tuned to corporate/org
 - **`companieshouse-gi`** (medium) — Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors
 - **`companieshouse-im`** (medium) — Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `addre
-- **`company-check-zauba`** (low) — OSINT tool: Company Check Zauba.
+- **`company-check-zauba`** (medium) — Use when you have an Indian company or director `name` and want official corporate registry details — directors, CIN, registered `address`, 
 - **`company-check`** (low) — Use when you have a `name` (director) or `employer-org` and want UK/Ireland company records — returns directorships, financials, and co-dire
 - **`company-information-service-gov-uk-2`** (high) — Use when you have a `name`, `employer-org` or `address` and want dissolved/closed UK companies — returns company details, registered address
 - **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
@@ -232,7 +232,7 @@ kind: group-index
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
 - **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
-- **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
+- **`datasetsearch-research-google-com`** (low) — Use when you need to find a published dataset on a topic (by keyword) across thousands of repositories — returns dataset listings with descr
 - **`dbpedia`** (low) — Use when you have an entity `name` (person, org, place) and want structured, machine-readable facts from Wikipedia — returns linked attribut
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
 - **`deepdyve`** (medium) — Use when you have a `name` or `employer-org` and want to find someone's academic publications and co-authors — returns employer-org, associa

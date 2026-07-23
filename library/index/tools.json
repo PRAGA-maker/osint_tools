@@ -23452,42 +23452,57 @@
   },
   {
     "id": "website-diff",
-    "name": "Website-Diff",
-    "description": "OSINT tool: Website-Diff.",
+    "name": "Website-Diff (Wayback-Diff)",
+    "description": "Use when you have a `domain`/URL and want to compare two versions of a page (live or Wayback snapshots) and see the meaningful changes — returns a scored, noise-stripped diff of what changed.",
     "url": "https://github.com/GeiserX/Website-Diff",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Diffing two versions of a web page (live vs archive, or two archive snapshots) with banners/analytics stripped and changes scored by significance.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (GPL-3.0); install via pip, from source, or Docker. Not intended for commercial use.",
+    "opsec": "active",
+    "opsecNote": "Diffing live URLs fetches those pages from YOUR machine, so the target server sees the request; diffing two Wayback snapshots only touches the Internet Archive, which is fully passive. Prefer archive-vs-archive when you don't want to touch the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source tool (GeiserX) built around Wayback Machine snapshots; deterministic diffing whose output you can re-verify by inspecting the snapshots yourself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "buscapaginasblancas",
       "wayback-archive"
     ],
+    "aliases": [
+      "Website-Diff",
+      "wayback-diff"
+    ],
+    "tags": [
+      "diff",
+      "change-detection",
+      "wayback",
+      "archive"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/website-diff.md"
   },
   {
@@ -57574,44 +57589,54 @@
   },
   {
     "id": "scan-qr-code",
-    "name": "Scan QR Code",
-    "description": "While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. This service will help to recognize a QR-code by a picture",
+    "name": "Scan QR Code from Image (4qrcode)",
+    "description": "Use when you have an `image` of a QR code (a photo of a poster, billboard, sticker) and want to decode it — returns the QR's embedded content (URL, text, geolocation, contact).",
     "url": "https://4qrcode.com/scan-qr-code.php",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding a QR code from an uploaded photo/screenshot to reveal the URL or data it points to.",
     "selectorsIn": [
-      "geolocation",
       "image"
     ],
     "selectorsOut": [
+      "domain",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You upload the QR image to 4qrcode's server to decode it, so the image is processed by a third party — strip any sensitive surroundings first. Crucially, do NOT auto-open the decoded URL from your real browser; the link may be attacker-controlled — inspect it in a sandbox/sock-puppet first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple third-party QR decoder; the decode itself is deterministic and re-checkable with any offline QR reader.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Scan QR Code",
+      "4qrcode QR scanner"
+    ],
     "tags": [
-      "Image Search and Identification",
-      "Exif Analyze and editing"
+      "qr-code",
+      "decode",
+      "image"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/scan-qr-code.md"
   },
   {
@@ -67593,35 +67618,56 @@
   {
     "id": "domainwatch",
     "name": "DomainWatch",
-    "description": "OSINT tool: DomainWatch.",
+    "description": "Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other domains sharing the same registrant.",
     "url": "https://domainwat.ch/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "WHOIS lookup and reverse-WHOIS — pivoting from a registrant name/email/org to every other domain they registered.",
+    "selectorsIn": [
+      "domain",
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free web WHOIS and reverse-WHOIS searches with limits; bulk/API access is paid. Availability can be intermittent.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query DomainWatch's stored WHOIS index, not the target's domain, so nothing touches the subject and no one is notified. Registrant data is frequently privacy-masked; treat unmasked historical records as leads to confirm.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "A third-party WHOIS/reverse-WHOIS aggregator; useful for pivots, but its historical registrant data can be stale or partial and should be confirmed.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "DomainWatch",
+      "domainwat.ch"
+    ],
+    "tags": [
+      "whois",
+      "reverse-whois",
+      "domain-registrant"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domainwatch.md"
   },
   {
@@ -138064,42 +138110,60 @@
   },
   {
     "id": "invid-verification-plugin",
-    "name": "InVID Verification Plugin",
-    "description": "A toolkit that supports the verification of videos and images.",
+    "name": "InVID / WeVerify Verification Plugin",
+    "description": "Use when you have an `image` or a social-media video and want to verify it — fragment video into keyframes, run reverse-image search, read metadata and apply forensic filters — returns keyframes, metadata-exif and origin leads.",
     "url": "https://weverify.eu/verification-plugin/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "The Swiss-army-knife browser toolkit for debunking/verifying videos and images (keyframes, reverse image, metadata, forensics, geolocation).",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser extension (Chrome/Firefox/Edge) developed under EU research projects (InVID, WeVerify, vera.ai); no payment required.",
+    "opsec": "passive",
+    "opsecNote": "Mostly passive analysis you run in your browser, but individual actions vary — reverse-image searches query third-party engines (Google, Yandex, Bing, TinEye) and loading a social video fetches it from the platform. None of this notifies the content's author. Use a sock-puppet browser session as usual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Built by academic/journalism consortia (InVID, WeVerify, now vera.ai) and the standard verification toolkit in newsroom/fact-checking workflows.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "misc"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "reveal-image-verification-assistant"
     ],
+    "aliases": [
+      "InVID",
+      "WeVerify",
+      "Verification Plugin",
+      "Fake News Debunker"
+    ],
+    "tags": [
+      "video-verification",
+      "reverse-image",
+      "forensics",
+      "fact-checking"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/invid-verification-plugin.md"
   },
   {
@@ -213973,36 +214037,58 @@
   },
   {
     "id": "bigquery-public-datasets",
-    "name": "BigQuery public datasets",
-    "description": "OSINT tool: BigQuery public datasets.",
+    "name": "BigQuery Public Datasets",
+    "description": "Use when you need to query large public datasets at scale with SQL — census, GitHub, patents, crypto ledgers, geospatial and more — returns query results joining across public data.",
     "url": "https://cloud.google.com/bigquery/public-data/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "SQL analysis of massive public datasets (blockchain ledgers, GitHub activity, census, patents, weather) hosted in Google BigQuery.",
+    "selectorsIn": [
+      "crypto-wallet",
+      "username"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The datasets are free to access; you pay only for query compute beyond Google's free 1 TB/month query allowance. A Google Cloud account is required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you query Google-hosted copies of public data; no target is contacted. Note that queries run under YOUR authenticated Google Cloud project, so Google logs your usage/billing; use a dedicated project if you want investigation activity separated.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google Cloud service hosting curated public datasets (many maintained by the data owners); authoritative for the datasets it mirrors.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "BigQuery public data",
+      "Google BigQuery datasets"
+    ],
+    "tags": [
+      "datasets",
+      "sql",
+      "blockchain",
+      "big-data"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bigquery-public-datasets.md"
   },
   {
@@ -218019,44 +218105,58 @@
   },
   {
     "id": "company-check-zauba",
-    "name": "Company Check Zauba",
-    "description": "OSINT tool: Company Check Zauba.",
+    "name": "ZaubaCorp (Company Check)",
+    "description": "Use when you have an Indian company or director `name` and want official corporate registry details — directors, CIN, registered `address`, filings — returns company and director records with cross-links.",
     "url": "https://www.zaubacorp.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Indian (MCA-registered) companies and directors — directorships, co-directors, registered address and status.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
+      "address",
+      "name",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and view core company/director details; full financial documents and some reports are paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a public aggregation of India's MCA corporate registry; no target is contacted. Data is official filing data, but can lag the registry; confirm critical facts on the MCA portal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A widely-used third-party mirror/aggregator of India's Ministry of Corporate Affairs data; reliable for leads, but the authoritative source is MCA itself.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "in"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ZaubaCorp",
+      "Zauba Corp",
+      "zaubacorp.com"
+    ],
     "tags": [
-      "corporate"
+      "india",
+      "corporate-registry",
+      "directors",
+      "company-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-check-zauba.md"
   },
   {
@@ -221469,36 +221569,49 @@
   },
   {
     "id": "datasetsearch-research-google-com",
-    "name": "Datasetsearch.research.google.com",
-    "description": "OSINT tool: Datasetsearch.research.google.com.",
+    "name": "Google Dataset Search",
+    "description": "Use when you need to find a published dataset on a topic (by keyword) across thousands of repositories — returns dataset listings with descriptions, providers and download/access links.",
     "url": "https://datasetsearch.research.google.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering openly-published datasets (government, academic, NGO) on any topic via a single search engine.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google search service; no account required (the datasets it points to may have their own access terms).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — a search engine over dataset metadata. It indexes public dataset descriptions; downloading a dataset happens on the provider's site under their terms. No target is involved.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google service that indexes dataset metadata published with schema.org markup; a discovery layer, so vet the underlying provider for each dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Google Dataset Search",
+      "datasetsearch.research.google.com"
+    ],
+    "tags": [
+      "datasets",
+      "open-data",
+      "discovery"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/datasetsearch-research-google-com.md"
   },
   {
@@ -291725,42 +291838,6 @@
     "_file": "library/tools/search-engines/short-url-search-engine.md"
   },
   {
-    "id": "silobreaker",
-    "name": "Silobreaker",
-    "description": "OSINT tool: Silobreaker.",
-    "url": "http://www.silobreaker.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/silobreaker.md"
-  },
-  {
     "id": "similar-site-search",
     "name": "Similar Site Search",
     "description": "Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the one you entered.",
@@ -329100,36 +329177,58 @@
   },
   {
     "id": "steam-community-search",
-    "name": "Steam Community :: Search",
-    "description": "OSINT tool: Steam Community :: Search.",
+    "name": "Steam Community User Search",
+    "description": "Use when you have a `username`/persona or real `name` and want to find a matching Steam gaming profile — returns Steam `social-profile`s to pivot on friends, activity and linked accounts.",
     "url": "https://steamcommunity.com/search/users/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Finding a person's Steam profile by persona name to pivot into their gaming footprint, friends and linked accounts.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; searching the user directory requires being logged into a Steam account.",
+    "opsec": "active",
+    "opsecNote": "The user-search page requires a logged-in Steam session, so use a sock-puppet Steam account — never your real one. Viewing a public profile does not notify the owner, but befriending or messaging would; stop at passive profile viewing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trust": "trusted",
+    "trustNote": "First-party Valve/Steam directory; the profiles returned are authoritative Steam accounts, though display-name matches need corroboration.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Steam Community search",
+      "Steam user search"
+    ],
+    "tags": [
+      "steam",
+      "gaming",
+      "social",
+      "username"
+    ],
+    "source": "osintambition-social",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/steam-community-search.md"
   },
   {
@@ -335150,36 +335249,56 @@
   },
   {
     "id": "twitter-bot-checker",
-    "name": "Twitter Bot Checker",
-    "description": "OSINT tool: Twitter Bot Checker.",
+    "name": "Circleboom Twitter Bot Checker",
+    "description": "Use when you have an X/Twitter `username` and want to flag likely bot/fake/spam accounts among its followers or following — returns a list of flagged accounts with bot-like indicators.",
     "url": "https://circleboom.com/twitter-management-tool/twitter-circle-tool/twitter-bot-checker",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Screening an X (Twitter) account's followers/following for bot, fake and spam accounts.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Circleboom offers a free tier (advertised as \"free forever\"); deeper analysis and bulk actions are on paid plans. Availability of X data depends on Circleboom's API access, which X has repeatedly restricted.",
+    "opsec": "active",
+    "opsecNote": "Requires connecting an X (Twitter) account via OAuth to Circleboom's dashboard — use a sock-puppet X account, never your real one. Analyzing a public account doesn't notify it, but the OAuth session ties the activity to whatever account you authorize.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial social-management vendor with a free bot-check tool; detection is heuristic and proprietary, and X API limits can affect coverage — treat flags as estimates.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Circleboom Bot Checker",
+      "Twitter Bot Checker"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "bot-detection",
+      "follower-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-bot-checker.md"
   },
   {

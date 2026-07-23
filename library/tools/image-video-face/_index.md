@@ -166,7 +166,7 @@ kind: group-index
 - **`in20years-co`** (high) — Use when you have a face photo and want to visualize an aged-up version of the same person — returns an AI age-progressed face image.
 - **`inpe-image-catalog`** (medium) — Use when you have a `geolocation` (an area of interest, esp. South America) and want free medium-resolution satellite imagery for it — retur
 - **`internet-archive-open-source-videos`** (medium) — Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, download
-- **`invid-verification-plugin`** (low) — A toolkit that supports the verification of videos and images.
+- **`invid-verification-plugin`** (medium) — Use when you have an `image` or a social-media video and want to verify it — fragment video into keyframes, run reverse-image search, read m
 - **`ios-gadgethacks-com`** (low) — Use when you need awareness that blacked-out / redacted regions in images can sometimes be recovered — this is a how-to article, not an inte
 - **`ipvm-calculator`** (low) — Tool for simulating camera views (for geolocations).
 - **`iqdb-org`** (low) — Use when you have an `image` that looks like anime/manga/game art and want its source — returns matching booru-database entries (source, art

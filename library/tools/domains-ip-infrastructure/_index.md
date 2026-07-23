@@ -143,7 +143,7 @@ kind: group-index
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
-- **`domainwatch`** (low) — OSINT tool: DomainWatch.
+- **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
 - **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages

@@ -543,7 +543,7 @@ kind: group-index
 - **`star-history`** (low) — Use when you have a GitHub repo (from a subject's `username`) and want its star trajectory — returns a star-count-over-time chart as a signa
 - **`statflux`** (high) — Use when you have an Instagram `username` and want a public-facing analytics snapshot of the account — returns `social-profile` metrics and 
 - **`stayfriends-de`** (high) — Use when you have a German-speaking subject's `name` and a school and want to place them via a class-reunion network — returns a `social-pro
-- **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
+- **`steam-community-search`** (medium) — Use when you have a `username`/persona or real `name` and want to find a matching Steam gaming profile — returns Steam `social-profile`s to 
 - **`steam-id-finder`** (low) — Use when you have a Steam vanity name or profile URL (`username` / `social-profile`) and want every SteamID format plus the public profile —
 - **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
 - **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
@@ -640,7 +640,7 @@ kind: group-index
 - **`twitter-account-detector`** (low) — Use when you have a webpage/`domain` and want the Twitter/X accounts it references — a Chrome extension that surfaces all X handles linked o
 - **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur
 - **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
-- **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.
+- **`twitter-bot-checker`** (low) — Use when you have an X/Twitter `username` and want to flag likely bot/fake/spam accounts among its followers or following — returns a list o
 - **`twitter-chat-schedule`** (high) — Use when you have a subject's topic/interest or a hashtag and want to find the recurring Twitter/X chats and moderators around it — returns 
 - **`twitter-control-panel`** (low) — Use when you review X/Twitter feeds during investigations and want to strip the algorithmic clutter — returns a cleaner, chronological view 
 - **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return

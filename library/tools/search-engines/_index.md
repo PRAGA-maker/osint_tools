@@ -589,7 +589,6 @@ kind: group-index
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (low) — Use when you have a merchant/store name and want to read its collected customer reviews — returns reviewer first-name + location fragments a
 - **`short-url-search-engine`** (medium) — Use when you have a `username`, `name`, or keyword and want to find shortened links (bit.ly, t.co, goo.gl, etc.) referencing it — a Google C
-- **`silobreaker`** (low) — OSINT tool: Silobreaker.
 - **`similar-site-search`** (low) — Use when you have a `domain` and want related/competitor sites — returns a list of websites similar in content, features, or niche to the on
 - **`similarsites-com`** (medium) — Use when you have a `domain` and want a ranked list of related/competitor sites — returns candidate `domain`s that may share an owner, niche
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s

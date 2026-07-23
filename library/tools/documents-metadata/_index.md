@@ -214,7 +214,7 @@ kind: group-index
 - **`reveal-image-verification-assistant`** (medium) — Use when you have an `image` and want to detect tampering — returns eight forensic filters (ELA, double-quantization, noise, DCT, etc.) plus
 - **`savefrom-net`** (low) — Website that offers services related to downloading and saving videos from a web page
 - **`savevideo-me`** (low) — Use when you have a public video URL from a social platform and want to save the clip as evidence — returns a downloadable video file (MP4/W
-- **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi
+- **`scan-qr-code`** (low) — Use when you have an `image` of a QR code (a photo of a poster, billboard, sticker) and want to decode it — returns the QR's embedded conten
 - **`scoop-it`** (low) — Publishing content services website
 - **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
 - **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima

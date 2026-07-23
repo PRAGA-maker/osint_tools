@@ -114,7 +114,7 @@ kind: group-index
 - **`webarchive-loc-gov`** (medium) — Use when you have a `domain`/URL or topic and want curated, preserved historical web captures — returns archived pages and `metadata-exif`/d
 - **`webreader`** (low) — OSINT tool: WebReader.
 - **`webrecorder-tools`** (medium) — Use when you need to capture a live web page (dynamic, logged-in, or soon-to-vanish) as a high-fidelity archive — returns a self-contained W
-- **`website-diff`** (low) — OSINT tool: Website-Diff.
+- **`website-diff`** (low) — Use when you have a `domain`/URL and want to compare two versions of a page (live or Wayback snapshots) and see the meaningful changes — ret
 - **`website-watcher`** (low) — OSINT tool: WebSite Watcher.
 - **`winds`** (low) — OSINT tool: Winds.
 - **`world-cat`** (low) — Use when you have a book/publication title or author `name` and want to locate it — returns which libraries hold it and full bibliographic d
