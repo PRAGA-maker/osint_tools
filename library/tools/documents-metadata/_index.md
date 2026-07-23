@@ -195,13 +195,13 @@ kind: group-index
 - **`pdfdrive`** (low) — PDF/book search index.
 - **`pdfmyurl`** (low) — Saves webpages as a PDF
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
-- **`pearltrees`** (low) — Website related to social networking and bookmarking activities allowing users to save web pages, files, videos, photos, and notes
+- **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
 - **`photosint-chrome-google-com`** (low) — OSINT tool: photosint (chrome.google.com).
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — OSINT tool: picture exif cleaner (addons.mozilla.org).
 - **`pixelprivacy`** (low) — Blog related to online privacy and protection
 - **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
 - **`powtoon-animation-program`** (low) — Program that creates and animates videos and presentations
-- **`prezi`** (low) — Presentation management website
+- **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 
 - **`printwhatyoulike`** (low) — Program that helps you select and print selected portions of web pages online
 - **`punchbowl`** (low) — Website related to event invitation and party planning
 - **`pymeta`** (low) — A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.

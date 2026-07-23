@@ -354,7 +354,6 @@ kind: group-index
 - **`gijn-org-3`** (medium) — Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownersh
 - **`gijn-org`** (high) — Use when you need a vetted methodology or country/sector guide for an investigation (e.g. tracing companies or people abroad) — returns cura
 - **`github-io`** (high) — Use when you have the `name` of a deceased person and want to find their burial record and, via neighbouring graves, family surnames — retur
-- **`givesendgo`** (low) — OSINT tool: GiveSendGo.
 - **`gla-gov-uk`** (high) — Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed bus
 - **`glassdoor`** (medium) — Use when you have an `employer-org` (or a person's employer) and want inside detail — returns salaries, reviews, interview accounts, and occ
 - **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.

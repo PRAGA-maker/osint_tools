@@ -11861,29 +11861,37 @@
   {
     "id": "phoneinfoga",
     "name": "PhoneInfoga",
-    "description": "Phone number validation and intelligence gathering",
+    "description": "Use when you have a `phone` number and want to validate it and gather footprint intelligence (carrier, line type, VoIP flags, and search-engine footprints) — returns carrier/geographic data and pivot leads.",
     "url": "https://github.com/sundowndev/PhoneInfoga",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Phone number validation and intelligence gathering",
+    "bestFor": "Scanning an international phone number for carrier/line-type facts and generating footprint/search leads.",
     "input": "Phone numbers",
     "output": "Country, carrier, line type, reputation status, associated information",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Open source (GPLv3); free to run. Some scanner integrations (e.g. Numverify, third-party APIs) need free API keys to enrich results.",
     "opsec": "passive",
-    "opsecNote": "Queries public sources passively; no real-time tracking",
+    "opsecNote": "Local formatting/validation is fully passive. But its footprint scanners issue Google/Bing/DuckDuckGo dork queries and can call third-party APIs — those queries touch search engines and API providers, not the number's owner, and never place a call or SMS to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Widely used open-source project by sundowndev; currently stable but flagged unmaintained, so integrations may drift over time.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -11891,11 +11899,15 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "phoneinfoga"
+    ],
+    "tags": [
+      "phone-osint",
+      "osint-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/ai-analysis-automation/osint-automation/phoneinfoga.md"
   },
   {
@@ -31850,13 +31862,13 @@
   {
     "id": "parler-search",
     "name": "Parler Search",
-    "description": "Structured Parler user/hashtag search.",
+    "description": "Use when you have a `username` or `name` and want to find that person's Parler profile, posts, and hashtag activity — returns `social-profile` and posted content.",
     "url": "https://app.parler.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Search Parler user profiles, posts and hashtags.",
+    "bestFor": "Searching Parler user profiles, posts, and hashtags on the (relaunched) platform.",
     "selectorsIn": [
       "username",
       "name"
@@ -31864,32 +31876,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; some search/feed features require a (free) Parler account login.",
+    "opsec": "active",
+    "opsecNote": "Searching or viewing while logged into a Parler account ties the activity to that account and may surface you to the target via follows/notifications — use a sock-puppet account and browser, never a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party platform search, but Parler has gone offline, changed owners, and pivoted repeatedly (including a crypto/token relaunch), so coverage and availability are volatile.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Parler app search",
+      "app.parler.com"
+    ],
     "tags": [
       "parler",
       "social",
       "forum"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "parler-com"
     ],
@@ -34761,41 +34778,47 @@
   {
     "id": "snoopsnoo",
     "name": "SnoopSnoo",
-    "description": "OSINT tool: SnoopSnoo.",
+    "description": "Use when you have a Reddit `username` and want a behavioural profile of that account — returns inferred interests, activity patterns, top subreddits, and self-disclosed hints (`social-profile`).",
     "url": "https://snoopsnoo.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling a Reddit user's interests, activity times, and top communities from their public comment/post history.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reads a user's public Reddit history via SnoopSnoo's servers — the target is not notified and you never touch their account. Only public data is analysed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community-built analytics (open source, hosted best-effort); has had extended outages tied to upstream API changes, so treat availability as unreliable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "snoopsnoo.com"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "user-profiling"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/communities-forums/snoopsnoo.md"
   },
   {
@@ -56530,24 +56553,31 @@
   {
     "id": "pearltrees",
     "name": "Pearltrees",
-    "description": "Website related to social networking and bookmarking activities allowing users to save web pages, files, videos, photos, and notes",
+    "description": "Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-profile` and interest/associate leads.",
     "url": "http://www.pearltrees.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a person's public Pearltrees collections to map their interests, saved documents, and network.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and to hold a basic account; larger storage/premium features are paid, but public collections are viewable without paying.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public collections is passive, but Pearltrees can show \"who viewed\"/activity to logged-in users — browse logged-out or from a sock-puppet account, never your real one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established consumer bookmarking service; content is user-generated, so any \"fact\" in a collection is the subject's claim, not verified data.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -56556,15 +56586,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "pearltrees.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "bookmarking",
+      "social-curation",
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/documents-metadata/pearltrees.md"
   },
   {
@@ -56874,24 +56905,31 @@
   {
     "id": "prezi",
     "name": "Prezi",
-    "description": "Presentation management website",
+    "description": "Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, and embedded documents (`social-profile`, `document-id`).",
     "url": "https://prezi.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a person's public Prezi presentations to surface professional work, affiliations, and embedded content.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view public presentations and to hold a basic account; advanced authoring/privacy features are paid. Public prezis are viewable without paying.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public presentations is passive and unlogged to the subject. Creating a Prezi account to follow a user's profile can expose you — browse logged-out or from a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Mainstream presentation platform; content is user-created, so anything in a deck is the author's claim, not verified fact.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -56900,15 +56938,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "prezi.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "presentations",
+      "documents",
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/documents-metadata/prezi.md"
   },
   {
@@ -171642,40 +171681,47 @@
   {
     "id": "face-generator",
     "name": "Face Generator",
-    "description": "Face Generator for creating #sockpuppets. Customize gender, age, head position, emotions, hair and skin color, makeup and glasses.",
+    "description": "Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downloadable `image`/`face` of a person who does not exist.",
     "url": "https://generated.photos/face-generator/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a customizable AI face for an investigator sock-puppet profile.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to generate and preview; downloading (especially full-res / commercial-license use) requires sign-up and can be gated behind a paid plan or credits.",
+    "opsec": "passive",
+    "opsecNote": "Creates a fabricated face for YOUR cover identity — never a target. Do not reuse the same generated image across accounts (it becomes reverse-image-searchable and links your puppets); regenerate a fresh face per persona.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial AI-face service (Generated Photos); reputable vendor, but check the current licence terms before using an image publicly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Generated Photos Face Generator"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "synthetic-faces"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "relatedTools": [
       "2-682-783-free-ai-generated-photos",
       "face-anonimyzer"
@@ -228169,53 +228215,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/github-io.md"
-  },
-  {
-    "id": "givesendgo",
-    "name": "GiveSendGo",
-    "description": "OSINT tool: GiveSendGo.",
-    "url": "https://bloopbase.keybase.pub/LEFTHOOK/GiveSendGo/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "8chan",
-      "bloopbase",
-      "foodora",
-      "gettr",
-      "iron-march",
-      "ledger",
-      "liker",
-      "royal-canadian-mounted-police",
-      "slack",
-      "utah-gun-exchange",
-      "weedmaps"
-    ],
-    "_file": "library/tools/public-records/givesendgo.md"
   },
   {
     "id": "gla-gov-uk",
@@ -292052,42 +292051,6 @@
     "_file": "library/tools/search-engines/sonicrun.md"
   },
   {
-    "id": "soovle",
-    "name": "Soovle",
-    "description": "OSINT tool: Soovle.",
-    "url": "http://www.soovle.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "keywords-discovery-and-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/soovle.md"
-  },
-  {
     "id": "spiderfoot-poppopjmp-fork",
     "name": "SpiderFoot (poppopjmp fork)",
     "description": "Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ modules — returns `email`, `social-profile`, `domain`, `ip-address`, and `address` correlations.",
@@ -297561,37 +297524,43 @@
   {
     "id": "world-newspapers",
     "name": "World-Newspapers",
-    "description": "OSINT tool: World-Newspapers.",
+    "description": "Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subject — returns links to local news outlets.",
     "url": "http://www.world-newspapers.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the local newspapers/magazines of a country or region so you can search local press for a person or event.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; no account required.",
+    "opsec": "passive",
+    "opsecNote": "A link directory — you browse it and then read third-party news sites. Nothing about your subject is submitted here; normal OpSec applies once you follow a link to an outlet's own search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing curated directory of world news outlets; link quality varies and some listed sites may be stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "world-newspapers.com"
+    ],
     "tags": [
-      "news"
+      "news",
+      "newspaper-directory",
+      "local-press"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/search-engines/world-newspapers.md"
   },
   {
@@ -328878,35 +328847,50 @@
   {
     "id": "steam-id-finder",
     "name": "Steam ID Finder",
-    "description": "OSINT tool: Steam ID Finder.",
+    "description": "Use when you have a Steam vanity name or profile URL (`username` / `social-profile`) and want every SteamID format plus the public profile — returns `social-profile` and account identifiers.",
     "url": "https://steamidfinder.com/lookup/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Converting a Steam vanity URL/username into SteamID64/SteamID3/SteamID and pulling the public profile snapshot.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web lookups; no account needed for the basic converter.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool queries Steam's public profile data on your behalf; the target is not notified. Viewing a profile directly while logged into your own Steam account can appear in \"recent visitors\" on some setups — use the finder, not your logged-in client, for a quiet look.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party utility over Steam's public API/community pages; the ID math is deterministic and reliable, profile fields are only as current as Steam's public data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "steamidfinder.com",
+      "SteamID lookup"
+    ],
+    "tags": [
+      "steam",
+      "gaming",
+      "id-converter"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
     "_file": "library/tools/social-networks/steam-id-finder.md"
   },
   {

@@ -138,7 +138,7 @@ kind: group-index
 - **`extremetech-virutal-box`** (low) — Program for Virtual Machine (VM) software that protects your system from malware and attacks
 - **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
 - **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
-- **`face-generator`** (low) — Face Generator for creating #sockpuppets. Customize gender, age, head position, emotions, hair and skin color, makeup and glasses.
+- **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — App for mobile devices for messaging services related to Facebook
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
 - **`facebook-pages-social-networking-app-mobile-ios`** (low) — App for mobile devices for monitoring Facebook page activity

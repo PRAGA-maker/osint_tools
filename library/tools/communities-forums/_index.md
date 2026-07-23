@@ -169,7 +169,7 @@ kind: group-index
 - **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
 - **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.
 - **`paaster`** (medium) — Use when you hold a `paaster.io` link (or need to preserve text) and want to read/store an end-to-end-encrypted paste — returns the paste co
-- **`parler-search`** (low) — Structured Parler user/hashtag search.
+- **`parler-search`** (low) — Use when you have a `username` or `name` and want to find that person's Parler profile, posts, and hashtag activity — returns `social-profil
 - **`passion-com`** (low) — Use when you have a `username` or `name`/location and want to check for an adult-dating presence on Passion.com (a FriendFinder-network site
 - **`paste-in-ua`** (medium) — Use when you have a `username`, `email` or `domain` and want to check a Ukrainian/RU-language pastebin for dumped credentials, leaked lists 
 - **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
@@ -226,7 +226,7 @@ kind: group-index
 - **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
 - **`smat`** (low) — OSINT tool: smat.
 - **`snippet-host`** (medium) — Use when you have a `username` or keyword and want public code/text pastes — returns snippets that may leak credentials, contacts, or handle
-- **`snoopsnoo`** (low) — OSINT tool: SnoopSnoo.
+- **`snoopsnoo`** (low) — Use when you have a Reddit `username` and want a behavioural profile of that account — returns inferred interests, activity patterns, top su
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m
 - **`spacebin`** (medium) — Use when you have an `email`, `username`, or `name` and want to check a paste host for dumps or mentions — returns pasted text that may expo
 - **`sqoop`** (medium) — Use when you have a `name` or `employer-org` and want US federal court, SEC, patent, and DOJ filings that mention it — returns document hits

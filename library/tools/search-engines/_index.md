@@ -604,7 +604,6 @@ kind: group-index
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
 - **`sogou-china`** (low) — OSINT tool: SoGou (China).
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
-- **`soovle`** (low) — OSINT tool: Soovle.
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
@@ -714,7 +713,7 @@ kind: group-index
 - **`wordpress-custom-search`** (low) — OSINT tool: WordPress Custom Search.
 - **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
 - **`world-digital-library`** (low) — OSINT tool: World Digital Library.
-- **`world-newspapers`** (low) — OSINT tool: World-Newspapers.
+- **`world-newspapers`** (low) — Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subjec
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int
 - **`worldnews`** (low) — OSINT tool: WorldNews.
 - **`wow-search-engine-united-kingdom`** (low) — Use when you want an alternate general web search (AOL/Yahoo-powered) to cross-check results a mainstream engine buries — returns web result

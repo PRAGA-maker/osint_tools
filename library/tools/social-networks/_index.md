@@ -545,7 +545,7 @@ kind: group-index
 - **`statflux`** (high) — Use when you have an Instagram `username` and want a public-facing analytics snapshot of the account — returns `social-profile` metrics and 
 - **`stayfriends-de`** (high) — Use when you have a German-speaking subject's `name` and a school and want to place them via a class-reunion network — returns a `social-pro
 - **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
-- **`steam-id-finder`** (low) — OSINT tool: Steam ID Finder.
+- **`steam-id-finder`** (low) — Use when you have a Steam vanity name or profile URL (`username` / `social-profile`) and want every SteamID format plus the public profile —
 - **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
 - **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
