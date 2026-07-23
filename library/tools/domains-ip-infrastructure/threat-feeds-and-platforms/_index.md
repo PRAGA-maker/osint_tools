@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`alienvault-otx`** (low) — Community threat intelligence
 - **`aptnotes`** (low) — APT research and threat analysis
-- **`bot-scout`** (low) — Bot and spam detection
+- **`bot-scout`** (low) — Use when you have an `email`, `ip-address`, or `username` and want to check it against a database of known bots/spammers — returns a bot/not
 - **`cymon-open-threat-intelligence`** (low) — IP threat tracking
 - **`honeydb`** (low) — IoT honeypot intelligence
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering

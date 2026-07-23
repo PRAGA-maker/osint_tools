@@ -345,7 +345,7 @@ kind: group-index
 - **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
 - **`semid-osint-framework`** (low) — Search user info in Tiktok, Playstation, Discord, Doxbin,Twitter, Github
 - **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
-- **`serpapi`** (low) — OSINT tool: SerpApi.
+- **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — OSINT tool: SerpScan.
 - **`shanti-interactive`** (low) — OSINT tool: Shanti Interactive.
 - **`shellcheck-net`** (low) — analyzes command-line scripts and explains in detail the errors found in them

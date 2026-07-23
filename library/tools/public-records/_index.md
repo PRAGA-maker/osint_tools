@@ -234,7 +234,7 @@ kind: group-index
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
 - **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
 - **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
-- **`dbpedia`** (low) — OSINT tool: DBPedia.
+- **`dbpedia`** (low) — Use when you have an entity `name` (person, org, place) and want structured, machine-readable facts from Wikipedia — returns linked attribut
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
 - **`deepdyve`** (medium) — Use when you have a `name` or `employer-org` and want to find someone's academic publications and co-authors — returns employer-org, associa
 - **`delaware`** (high) — Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning cust
@@ -502,7 +502,7 @@ kind: group-index
 - **`labcfrontdoor-co-uk`** (medium) — Use when you have a UK `address`/postcode or trade `employer-org` and want to find the registered "competent person" building tradespeople t
 - **`land-valuation-bermuda`** (medium) — Use when you have a Bermuda property `address` (parish/road) or assessment number and want its official valuation record — returns the prope
 - **`landlordregistrationscotland-gov-uk`** (high) — Use when you have a Scottish rental property `address` (postcode) or a landlord registration number and want to confirm who is the registere
-- **`landmatrix`** (low) — OSINT tool: LandMatrix.
+- **`landmatrix`** (low) — Use when you have a company/investor `employer-org` or a country and want to find large-scale land acquisitions tied to it — returns land de
 - **`landregistryireland-com`** (high) — Use when you have an Irish property `address`/eircode and want to buy its ownership record — returns owner name, address, and mortgage/assoc
 - **`landregistryservices-com`** (high) — Use when you have a UK property `address` and want the registered owner's `name` and title details — returns name, address, and document-id 
 - **`latinobarometro`** (low) — OSINT tool: Latinobarometro.

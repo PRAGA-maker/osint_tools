@@ -13837,37 +13837,54 @@
   {
     "id": "serpapi",
     "name": "SerpApi",
-    "description": "OSINT tool: SerpApi.",
+    "description": "Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organic, maps, knowledge graph, images).",
     "url": "https://serpapi.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
+    "bestFor": "Programmatic, structured scraping of Google and other search engines (handles proxies/CAPTCHAs).",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free plan gives ~250 searches/month; paid plans ($25–$275+/mo) for higher volume. Requires an API key.",
+    "opsec": "passive",
+    "opsecNote": "SerpApi runs the search from its own infrastructure/proxies, so the query does not originate from your IP — good separation. But your search terms (which may name the target) are sent to a third party; assume they're logged.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Established commercial SERP-scraping vendor with documented, stable JSON schemas; results mirror the live search engine.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "SerpApi.com"
+    ],
+    "tags": [
+      "ai-analysis-automation",
+      "search",
+      "api",
+      "automation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/serpapi.md"
   },
   {
@@ -63189,43 +63206,52 @@
   {
     "id": "bot-scout",
     "name": "Bot Scout",
-    "description": "Bot and spam detection",
+    "description": "Use when you have an `email`, `ip-address`, or `username` and want to check it against a database of known bots/spammers — returns a bot/not-bot verdict with sighting details.",
     "url": "https://botscout.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Bot and spam detection",
-    "input": "IP, email, or username",
-    "output": "Bot activity and spam records",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether an email/IP/username is a known bot or spammer account.",
+    "selectorsIn": [
+      "email",
+      "ip-address",
+      "username"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free lookups (~1,500/day without a key; a free API key raises this). No payment for basic use.",
     "opsec": "passive",
-    "opsecNote": "Passive honeypot-based detection",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "You query BotScout's own database of reported bot signatures, not the person — passive, no signal to the subject. Sending a target's email/IP to a third party is a minor data-sharing consideration.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "Long-running community anti-bot database (10M+ signatures); a hit means \"reported as a bot\", which is a signal, not proof of automation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "aliases": [
+      "BotScout"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "anti-bot",
+      "reputation",
+      "spam"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/bot-scout.md"
   },
   {
@@ -79439,50 +79465,6 @@
     "_file": "library/tools/domains-ip-infrastructure/exploits/packet-storm.md"
   },
   {
-    "id": "packet-total",
-    "name": "Packet Total",
-    "description": "Cloud-based network forensics analysis",
-    "url": "https://www.packettotal.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "network-analysis-tools"
-    ],
-    "bestFor": "Cloud-based network forensics analysis",
-    "input": "PCAP files",
-    "output": "Traffic analysis, threat indicators, IoCs",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Passive analysis of PCAP; consider privacy of uploaded data.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "packettotal"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/network-analysis-tools/packet-total.md"
-  },
-  {
     "id": "pageglimpse",
     "name": "PageGlimpse",
     "description": "OSINT tool: PageGlimpse.",
@@ -81815,41 +81797,52 @@
   {
     "id": "s3scanner",
     "name": "S3Scanner",
-    "description": "Validating bucket exposure and permissions across S3-compatible targets",
+    "description": "Use when you have a target `domain`/organisation and want to find its open cloud storage buckets — returns exposed S3-compatible buckets and their read/write permissions.",
     "url": "https://github.com/sa7mon/s3scanner",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "s3-blob-storage"
     ],
-    "bestFor": "Validating bucket exposure and permissions across S3-compatible targets",
-    "input": "Bucket names, generated candidates, or wordlist-driven targets",
-    "output": "Bucket existence and permission states (list/read/write/public indicators)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating and permission-testing open S3 (and S3-compatible) buckets across cloud providers.",
+    "selectorsIn": [
+      "domain",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT); Go CLI with Docker support. No account for public-bucket checks.",
     "opsec": "active",
-    "opsecNote": "Actively queries cloud storage endpoints and leaves provider-side request logs.",
+    "opsecNote": "ACTIVE — it sends requests to candidate bucket endpoints and tests permissions, which cloud providers/targets can log. Only run against organisations you are authorised to assess; do NOT download or alter bucket contents. Route through a VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular, well-maintained open-source scanner (sa7mon); it reports bucket existence/permissions accurately, but candidate name generation is only as good as your wordlist.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "s3scanner"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "cloud",
+      "s3",
+      "bucket-enumeration",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/s3scanner.md"
   },
   {
@@ -83151,43 +83144,49 @@
   {
     "id": "similarweb",
     "name": "SimilarWeb",
-    "description": "Competitor traffic and referral analysis",
+    "description": "Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and related sites.",
     "url": "https://www.similarweb.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Competitor traffic and referral analysis",
-    "input": "Domain",
-    "output": "Traffic channels, engagement, and competitor benchmarking",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Estimating a website's traffic, audience, referral sources and competitor/related sites.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tools (website traffic checker, company/technology checker) give topline estimates; deep data and history need a paid subscription or account.",
     "opsec": "passive",
-    "opsecNote": "Relies on provider-side datasets and panels; no active probing required by user.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "You query SimilarWeb's own aggregated panel data, not the target site — passive, no signal to the site owner. The free checker needs no account; use a sock-puppet login for saved research.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Major commercial web-intelligence vendor; figures are modelled estimates from panels/clickstream, directionally useful but not exact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "aliases": [
+      "Similarweb"
+    ],
+    "tags": [
+      "domains-ip-infrastructure",
+      "analytics",
+      "web-traffic"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/similarweb.md"
   },
   {
@@ -152587,38 +152586,51 @@
   {
     "id": "google-flood-hub",
     "name": "Google Flood Hub",
-    "description": "A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.",
+    "description": "Use when you have a `geolocation`/`address` on a river and want current flood conditions and AI forecasts — returns river-level status and flood risk for that location.",
     "url": "https://sites.research.google/floods/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking AI-based river-flood forecasts and current flood conditions for a location.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public tool from Google Research; no account.",
+    "opsec": "passive",
+    "opsecNote": "Public environmental map — you look up a location, not a person; fully passive with no target signal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Google Research using their published flood-forecasting models; the site itself flags outputs as approximate and informational, to be checked against official sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Flood Hub",
+      "Google flood forecasting"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "environment-wildlife"
+      "maps-geospatial-data",
+      "flood",
+      "environment",
+      "forecasting"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/google-flood-hub.md"
   },
   {
@@ -176824,42 +176836,6 @@
     "_file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-ios.md"
   },
   {
-    "id": "librewolf",
-    "name": "LibreWolf",
-    "description": "OSINT tool: LibreWolf.",
-    "url": "https://librewolf.net",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/librewolf.md"
-  },
-  {
     "id": "lightshot-screen-capture-add-on",
     "name": "Lightshot Screen Capture Add-on",
     "description": "Firefox browser add-on for taking screenshots",
@@ -177338,40 +177314,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/magnifying-glass-tool-app-mobile-ios.md"
-  },
-  {
-    "id": "maildrop",
-    "name": "MailDrop",
-    "description": "OSINT tool: MailDrop.",
-    "url": "https://maildrop.cc/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/maildrop.md"
   },
   {
     "id": "malwarebytes-anti-malware",
@@ -221370,38 +221312,53 @@
   },
   {
     "id": "dbpedia",
-    "name": "DBPedia",
-    "description": "OSINT tool: DBPedia.",
+    "name": "DBpedia",
+    "description": "Use when you have an entity `name` (person, org, place) and want structured, machine-readable facts from Wikipedia — returns linked attributes and `associate`/`employer-org` relations via SPARQL.",
     "url": "http://wiki.dbpedia.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Querying Wikipedia's content as a structured knowledge graph (SPARQL) for entity facts and relationships.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source knowledge graph; public SPARQL endpoint, Linked Data access, and downloadable datasets. No account.",
+    "opsec": "passive",
+    "opsecNote": "Querying a public knowledge base about notable entities — no target interaction, fully passive. Note the subject must be notable enough to have a Wikipedia article for coverage to exist.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Long-running academic/community project extracting structured data from Wikipedia; accuracy inherits Wikipedia's (crowd-edited) and the extraction can lag live edits (except DBpedia Live).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DBPedia"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "knowledge-graph",
+      "wikipedia",
+      "sparql"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/dbpedia.md"
   },
   {
@@ -236364,37 +236321,52 @@
   {
     "id": "landmatrix",
     "name": "LandMatrix",
-    "description": "OSINT tool: LandMatrix.",
+    "description": "Use when you have a company/investor `employer-org` or a country and want to find large-scale land acquisitions tied to it — returns land deals with investors, locations and `address`/`associate` links.",
     "url": "http://landmatrix.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracing large-scale land deals to the companies and investors behind them, by country or investor.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open, independently-run database; all maps, tables and charts are public with no account.",
+    "opsec": "passive",
+    "opsecNote": "Public research database — you query aggregated deal records, not any target; fully passive with no signal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Independent global monitoring initiative (Land Matrix) run by a partnership of research institutions; deals are sourced and referenced, though completeness varies by country.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Land Matrix"
+    ],
     "tags": [
-      "data-and-statistics"
+      "public-records",
+      "land-deals",
+      "corporate",
+      "investigative"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/landmatrix.md"
   },
   {

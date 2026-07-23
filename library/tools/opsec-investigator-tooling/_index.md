@@ -257,7 +257,6 @@ kind: group-index
 - **`lemmeknow`** (low) — Tool for "identifying mysterious text or analyze hard-coded strings". Identifies API keys, cryptocurrency wallet numbers, encrypted strings,
 - **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
-- **`librewolf`** (low) — OSINT tool: LibreWolf.
 - **`lightshot-screen-capture-add-on`** (low) — Firefox browser add-on for taking screenshots
 - **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
@@ -269,7 +268,6 @@ kind: group-index
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`magnifying-glass-tool-app-mobile-ios`** (low) — App for mobile devices for a combined flashlight and camera image magnification tool
-- **`maildrop`** (low) — OSINT tool: MailDrop.
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Get maximum information about potentially malicious files and links from: Virus Total, Hybrid Analysis, URLHaus, PolySwarm, Mal Share, Alien
 - **`many-passwords`** (low) — Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels)

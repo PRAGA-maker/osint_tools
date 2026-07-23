@@ -11,7 +11,7 @@ kind: group-index
 - **`clearwebstats-com`** (low) — Lightweight web popularity lookups
 - **`ewhois`** (low) — Quick WHOIS lookups
 - **`keyword-density`** (low) — On-page keyword frequency analysis
-- **`similarweb`** (low) — Competitor traffic and referral analysis
+- **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
 - **`sitedossier`** (low) — Quick domain intelligence aggregation
 - **`siteliner`** (low) — Duplicate-content and link-health audits
 - **`sitesleuth`** (low) — Tracking code intelligence and related domain discovery

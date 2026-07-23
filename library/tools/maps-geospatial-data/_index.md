@@ -48,7 +48,7 @@ kind: group-index
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
 - **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
 - **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
-- **`google-flood-hub`** (low) — A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.
+- **`google-flood-hub`** (low) — Use when you have a `geolocation`/`address` on a river and want current flood conditions and AI forecasts — returns river-level status and f
 - **`gosur-map`** (low) — Use when you have an `address` or `geolocation` and want satellite/aerial imagery of it with extras like live cams and weather — returns a s
 - **`govmap`** (low) — GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and i
 - **`gps-latitude-longitude-com`** (medium) — Use when you have an `address` or a map point and want its precise coordinates — returns `geolocation` in decimal, DMS, and UTM formats.
