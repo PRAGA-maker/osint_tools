@@ -62,7 +62,7 @@ kind: group-index
 - **`bluesky`** (high) — Use when you have a `username` or `name` and want to find and read a subject's Bluesky account and social graph — returns social-profile, po
 - **`blueskydirectory-com`** (high) — Use when you have a `name`, `username`, or interest and want to find or search Bluesky (bsky/AT Protocol) profiles, lists, and starter packs
 - **`blueskymeter-com`** (high) — Use when you have a Bluesky `username` (handle) and want public account analytics — returns follower/engagement metrics and profile activity
-- **`bot-sentinel-dashboard-bot-sentinel`** (low) — OSINT tool: Bot Sentinel Dashboard ‹ Bot Sentinel.
+- **`bot-sentinel-dashboard-bot-sentinel`** (low) — Use when you have an X/Twitter `username` and want a data-driven rating of how likely the account engages in inauthentic/trollbot behavior —
 - **`botometer-by-osome`** (low) — Use when you have a Twitter/X `username` and want a bot-likelihood score — now archival ("Botometer X"), returns a pre-June-2023 automation 
 - **`botometer`** (medium) — Use when you have a Twitter/X `username` and want a bot-likelihood score for the account — returns a bot/human probability and behavioural s
 - **`botslayer`** (low) — OSINT tool: BotSlayer.

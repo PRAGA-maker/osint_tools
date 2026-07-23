@@ -15,7 +15,7 @@ kind: group-index
 - **`sitedossier`** (low) — Quick domain intelligence aggregation
 - **`siteliner`** (low) — Use when you have a `domain` and want a content/link audit — returns duplicate-content matches, broken links and page inventory for the site
 - **`sitesleuth`** (low) — Tracking code intelligence and related domain discovery
-- **`spyonweb`** (low) — Finding related infrastructure via shared IDs
+- **`spyonweb`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID, IP or nameserver) and want to find other sites run by the same owner — retur
 - **`statscrop`** (low) — Quick website popularity snapshots
 - **`visual-site-mapper`** (low) — Generating website structure maps
 - **`whatweb`** (low) — Use when you have a `domain`/URL and want to fingerprint its stack (CMS, server, JS libraries, versions) and surface disclosed emails — retu

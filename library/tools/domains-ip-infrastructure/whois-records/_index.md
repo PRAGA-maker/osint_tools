@@ -16,7 +16,7 @@ kind: group-index
 - **`robtex`** (low) — DNS reconnaissance, IP and domain relationship mapping, historical internet data lookup
 - **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
 - **`viewdns-info`** (low) — DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking
-- **`website-informer`** (low) — Website profiling, ownership verification, traffic estimation, technical stack discovery
+- **`website-informer`** (low) — Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email lin
 - **`who-is`** (low) — Domain registration research, WHOIS lookups, RDAP queries, IP tracking
 - **`whois-amped`** (low) — Mobile-friendly WHOIS lookups, quick domain information retrieval
 - **`whois-arin`** (low) — IP address and ASN registration data, North American internet resource tracking

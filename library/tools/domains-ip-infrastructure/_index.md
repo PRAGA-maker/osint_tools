@@ -225,7 +225,7 @@ kind: group-index
 - **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
 - **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
-- **`intodns-ai`** (low) — OSINT tool: IntoDNS.ai.
+- **`intodns-ai`** (low) — Use when you have a `domain` and want a deterministic health check of its DNS and email security posture — SPF, DKIM, DMARC, DNSSEC, MTA-STS
 - **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
 - **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
 - **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
@@ -308,7 +308,7 @@ kind: group-index
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — Use when you have Nmap XML scan output for an `ip-address`/`domain` and want a readable report — converts it to HTML, CSV, JSON, Markdown, S
-- **`nmap-online`** (low) — OSINT tool: NMAP Online.
+- **`nmap-online`** (low) — Use when you have a `domain` or `ip-address` and want a quick browser-based Nmap port scan without a local install — returns open ports and 
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries

@@ -12,7 +12,7 @@ kind: group-index
 - **`cisco-talos`** (low) — IP/domain reputation intelligence
 - **`deepviz-domain-search`** (low) — Domain/IP threat intelligence, malware analysis, threat feed subscription
 - **`exonerator`** (low) — Verify Tor relay membership by date
-- **`fortiguard-reputation-service`** (low) — IP reputation lookup, botnet/malware source identification, threat intelligence
+- **`fortiguard-reputation-service`** (low) — Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and an
 - **`google-safe-browsing-api`** (low) — Malware and phishing URL detection
 - **`ip-void`** (low) — Check IP reputation and blacklist status
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation

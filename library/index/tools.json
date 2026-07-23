@@ -69144,30 +69144,36 @@
   },
   {
     "id": "fortiguard-reputation-service",
-    "name": "FortiGuard Reputation Service",
-    "description": "IP reputation lookup, botnet/malware source identification, threat intelligence",
+    "name": "FortiGuard Web Filter / IP Reputation Lookup",
+    "description": "Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and any malicious/reputation flag.",
     "url": "https://fortiguard.com/iprep",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "IP reputation lookup, botnet/malware source identification, threat intelligence",
-    "input": "IP address or IP range",
-    "output": "IP reputation score, threat categories, malware associations, botnet status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking how Fortinet categorizes and rates a URL/IP (content category, malicious reputation).",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public lookup from Fortinet (FortiGuard Labs); no account required for single lookups.",
     "opsec": "passive",
-    "opsecNote": "Queries Fortinet's IP reputation database without contacting the target IP.",
+    "opsecNote": "Passive — you query FortiGuard's threat-intel database, not the target host, so the subject site/IP is not contacted and receives no notification. Reflects Fortinet's classification, which is one vendor's view.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Fortinet/FortiGuard Labs data — a major commercial threat-intelligence vendor; authoritative for how Fortinet products will treat the target.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -69177,11 +69183,20 @@
     "relatedTools": [
       "fortiguard-labs"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FortiGuard",
+      "FortiGuard Web Filter Lookup",
+      "iprep"
+    ],
+    "tags": [
+      "reputation",
+      "threat-intel",
+      "web-filter",
+      "ip"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/fortiguard-reputation-service.md"
   },
   {
@@ -72823,38 +72838,55 @@
   },
   {
     "id": "intodns-ai",
-    "name": "IntoDNS.ai",
-    "description": "OSINT tool: IntoDNS.ai.",
+    "name": "intoDNS.ai",
+    "description": "Use when you have a `domain` and want a deterministic health check of its DNS and email security posture — SPF, DKIM, DMARC, DNSSEC, MTA-STS, BIMI, FCrDNS, blacklists — returns config findings and issues.",
     "url": "https://intodns.ai",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-shot DNS + email-security audit of a domain (SPF/DKIM/DMARC/DNSSEC/MTA-STS/blacklists).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free forever for the public web tools; an optional API/monitoring tier exists but basic scans need no key or account.",
+    "opsec": "passive",
+    "opsecNote": "Passive from your side — you query intoDNS.ai, which resolves the domain's public DNS records; it does not contact the target's users and sends no notification. It reads published DNS/mail configuration, all of which is public data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A modern successor to the classic intoDNS check; runs deterministic, standards-based checks (references internet.nl-style methodology) whose results are reproducible with dig.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "intoDNS",
+      "intodns.ai"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "dns",
+      "email-security",
+      "spf-dkim-dmarc",
+      "domain-health"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/intodns-ai.md"
   },
   {
@@ -78367,36 +78399,54 @@
   },
   {
     "id": "nmap-online",
-    "name": "NMAP Online",
-    "description": "OSINT tool: NMAP Online.",
+    "name": "Nmap Online (osint.sh)",
+    "description": "Use when you have a `domain` or `ip-address` and want a quick browser-based Nmap port scan without a local install — returns open ports and detected services.",
     "url": "https://osint.sh/nmap/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "bestFor": "One-click online Nmap scan of a host's common ports from the OSINT.sh toolset.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool in the OSINT.sh suite; no account required.",
+    "opsec": "active",
+    "opsecNote": "The scan is issued from OSINT.sh's servers, so your own IP is not what hits the target — but a scan still reaches the target and can appear in its logs as scanner traffic. Only scan hosts you're authorized to probe; the scope is limited to common ports.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of the widely-used free OSINT.sh toolkit; a thin hosted Nmap front-end whose results are reproducible with a local Nmap.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "osint.sh nmap",
+      "online nmap"
+    ],
+    "tags": [
+      "port-scan",
+      "nmap",
+      "infrastructure"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nmap-online.md"
   },
   {
@@ -84424,43 +84474,55 @@
   {
     "id": "spyonweb",
     "name": "SpyOnWeb",
-    "description": "Finding related infrastructure via shared IDs",
+    "description": "Use when you have a `domain` (or a Google Analytics/AdSense ID, IP or nameserver) and want to find other sites run by the same owner — returns related `domain`s sharing the same tracking/hosting fingerprint.",
     "url": "https://www.spyonweb.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Finding related infrastructure via shared IDs",
-    "input": "Domain or analytics/ad IDs",
-    "output": "Related domains and shared identifier pivots",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Uses indexed identifier data and does not require active probing.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
+    "bestFor": "Reverse-lookup by shared Google Analytics/AdSense ID, IP or DNS to uncover a person's or operator's other websites.",
+    "selectorsIn": [
+      "domain"
     ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to query on the web; a paid API tier exists. Availability is intermittent and its index can be stale.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you query SpyOnWeb's own pre-collected index, not the target's sites, so nothing touches the subject's infrastructure and no one is notified. Confirm any surfaced link by viewing the shared Analytics/AdSense ID in the pages' source yourself.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "trust": "community",
+    "trustNote": "Long-standing reverse-analytics tool widely cited in OSINT guides; its database is periodically updated and can lag, so treat matches as leads to verify.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SpyOnWeb",
+      "spyonweb.com"
+    ],
+    "tags": [
+      "reverse-analytics",
+      "adsense",
+      "google-analytics",
+      "domain-correlation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/spyonweb.md"
   },
   {
@@ -85200,46 +85262,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/switch-internet-domains-whois-ch.md"
-  },
-  {
-    "id": "synapsint",
-    "name": "SynapsInt",
-    "description": "Unified OSINT research, subdomain discovery, multi-vector intelligence gathering",
-    "url": "https://synapsint.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "subdomains"
-    ],
-    "bestFor": "Unified OSINT research, subdomain discovery, multi-vector intelligence gathering",
-    "input": "Domain, IP, email, phone, username, CVE ID",
-    "output": "Subdomains, DNS records, WHOIS data, open ports, vulnerabilities, social media accounts, historical data",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Aggregates publicly available information from multiple sources; no direct target contact.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/subdomains/synapsint.md"
   },
   {
     "id": "talend-api-tester-free-edition",
@@ -89054,29 +89076,36 @@
   {
     "id": "website-informer",
     "name": "Website Informer",
-    "description": "Website profiling, ownership verification, traffic estimation, technical stack discovery",
+    "description": "Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email links — returns registration, infrastructure and related-site data.",
     "url": "https://website.informer.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Website profiling, ownership verification, traffic estimation, technical stack discovery",
-    "input": "Domain name or URL",
-    "output": "Visitor statistics, safety ratings, domain owner information, technology stack, Alexa rank, historical snapshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A quick single-page domain dossier (WHOIS + DNS + hosting + related sites + email-to-domain links).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web reports; a browser extension is also offered. No account needed for basic reports.",
     "opsec": "passive",
-    "opsecNote": "Aggregates public website data and statistics; does not contact the target infrastructure.",
+    "opsecNote": "Passive — you query Website Informer's aggregated data, not the target site, so nothing touches the subject's server and no notification is sent. WHOIS/owner fields may be privacy-masked; treat any surfaced email as a lead to verify.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Part of the Informer.com family of site-report services; aggregates public WHOIS/DNS/traffic data whose freshness varies and should be confirmed at source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -89084,11 +89113,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Website Informer",
+      "website.informer.com"
+    ],
+    "tags": [
+      "whois",
+      "dns",
+      "domain-profile"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/website-informer.md"
   },
   {
@@ -104921,36 +104957,53 @@
   },
   {
     "id": "image-extractor",
-    "name": "Image Extractor",
-    "description": "OSINT tool: Image Extractor.",
+    "name": "Extract.pics (Image Extractor)",
+    "description": "Use when you have a webpage URL (`domain`) and want to pull every image it loads — including lazy-loaded and background assets — returns a downloadable gallery of `image`s.",
     "url": "https://extract.pics/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting all images from a webpage (including dynamically/lazy-loaded ones) for evidence capture.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free to extract and download images from a URL; higher-volume/API use is on paid plans.",
+    "opsec": "active",
+    "opsecNote": "Extract.pics loads the target page from ITS OWN servers to render and harvest images, so your IP isn't what hits the target — but the target site is actually fetched (JS executed), so it can log a visit from the service. Do not paste a URL you shouldn't be visiting; download promptly and preserve source URL + timestamp for provenance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A popular, well-known image-extraction service; it renders pages server-side, so it captures assets a simple \"save page\" misses, but it's a third-party processor.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "extract.pics",
+      "Image Extractor"
+    ],
+    "tags": [
+      "image-extraction",
+      "evidence-capture",
+      "scraping"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/image-extractor.md"
   },
   {
@@ -108587,42 +108640,56 @@
   },
   {
     "id": "fdic-search",
-    "name": "FDIC search",
-    "description": "Search banks by FDIC (Federal Deposit Insurance Corporation) certificate number and get detailed information about it",
+    "name": "FDIC BankFind Suite",
+    "description": "Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, history and status — returns official institution records.",
     "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative lookup of any FDIC-insured US bank's official name, address, branches, charter and history.",
     "selectorsIn": [
-      "crypto-wallet"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official US government service (FDIC); an open API is also provided at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — querying a public federal database of institutions. No target is contacted and nothing is logged against your subject. This covers institutions, not individual account holders.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party US Federal Deposit Insurance Corporation data — the authoritative record for FDIC-insured banks.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "FDIC BankFind",
+      "BankFind Suite"
+    ],
     "tags": [
-      "Bank information search"
+      "banking",
+      "public-records",
+      "financial",
+      "us-government"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/fdic-search.md"
   },
   {
@@ -301668,36 +301735,54 @@
   },
   {
     "id": "bot-sentinel-dashboard-bot-sentinel",
-    "name": "Bot Sentinel Dashboard ‹ Bot Sentinel",
-    "description": "OSINT tool: Bot Sentinel Dashboard ‹ Bot Sentinel.",
+    "name": "Bot Sentinel",
+    "description": "Use when you have an X/Twitter `username` and want a data-driven rating of how likely the account engages in inauthentic/trollbot behavior — returns a 0–100% problematic-behavior score.",
     "url": "https://botsentinel.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Scoring an X (Twitter) account for inauthentic, troll, or coordinated-harassment behavior.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to look up an account's rating. Note the service has been in transition (Twitter/X revoked its API access in 2022; it announced an AI-powered relaunch in 2026), so coverage and availability are uneven.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query Bot Sentinel's own analysis, not the target account, and the subject is not notified. Ratings are behavioral estimates from its model, not proof; use as one signal, not a verdict.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known independent disinformation/bot tracker (founded 2018); its scoring is proprietary and its data pipeline has been disrupted by X API changes, so treat scores as indicative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Bot Sentinel",
+      "botsentinel.com"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "bot-detection",
+      "disinformation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bot-sentinel-dashboard-bot-sentinel.md"
   },
   {
@@ -350788,42 +350873,56 @@
   },
   {
     "id": "maritime-database",
-    "name": "Maritime Database",
-    "description": "OSINT tool: Maritime Database.",
+    "name": "Maritime-Database",
+    "description": "Use when you have a vessel name, port, or shipping-company name and want directory details linking ships, ports and maritime companies — returns company `address`es, vessel and port records.",
     "url": "https://www.maritime-database.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up shipping companies, vessels and ports and the links between them (company addresses, fleets, port data).",
     "selectorsIn": [
+      "employer-org",
       "name"
     ],
     "selectorsOut": [
-      "geolocation"
+      "employer-org",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; companies can self-register listings.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing a public maritime directory. No target is contacted. Because companies can self-list, treat entries as claimed rather than verified and cross-check against official registries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community maritime directory (50k+ vessels, 2k+ ports); useful for leads but partly self-submitted, so verify critical facts against IMO/flag-state registries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Maritime Database",
+      "maritime-database.com"
+    ],
     "tags": [
-      "maritime"
+      "maritime",
+      "vessels",
+      "shipping-companies",
+      "ports"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/maritime-database.md"
   },
   {
