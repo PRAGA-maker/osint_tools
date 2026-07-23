@@ -48196,37 +48196,46 @@
   {
     "id": "analyze-file-format-online",
     "name": "Analyze file format online",
-    "description": "OSINT tool: Analyze file format online.",
+    "description": "Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binary signatures and file details.",
     "url": "https://www.aconvert.com/analyze.html",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a file's real format (by binary signature) and reading basic metadata online.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool (aconvert.com); upload a file or supply a URL. No account.",
+    "opsec": "passive",
+    "opsecNote": "You upload the file to a third-party server for analysis — do NOT submit sensitive/evidential files here; use a local tool (`file`, TrID, exiftool) for anything confidential. Reading the result is otherwise passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general file-conversion site's analyzer; convenient for quick format ID, but a third-party upload with no security guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "aconvert analyze"
+    ],
     "tags": [
-      "Files"
+      "documents-metadata",
+      "file-format",
+      "metadata"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/analyze-file-format-online.md"
   },
   {
@@ -54041,8 +54050,8 @@
   },
   {
     "id": "joesandbox-document-analyzer",
-    "name": "JoeSandbox Document Analyzer",
-    "description": "Comprehensive malware analysis with behavioral insights and threat scoring",
+    "name": "Joe Sandbox Document Analyzer",
+    "description": "Use when you have a suspicious file or URL (`document-id`) and want deep behavioural malware analysis — returns a detonation report with threat score and extracted IOCs.",
     "url": "https://www.joesandbox.com/",
     "category": "documents-metadata",
     "path": [
@@ -54050,34 +54059,47 @@
       "hosted-automated-analysis",
       "office-files"
     ],
-    "bestFor": "Comprehensive malware analysis with behavioral insights and threat scoring",
-    "input": "Executable files, documents, PDFs, URLs, APKs (Max 30MB free tier)",
-    "output": "Behavioral analysis, network IOCs, detection verdicts, MITRE ATT&CK mappings, export formats (JSON, XML, HTML, PDF)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Deep automated sandbox detonation of documents/executables/URLs with behavioural reporting.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "File uploads are processed on external sandbox; free tier limited to 30 submissions/month",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Joe Sandbox Cloud Basic offers free community analysis (public submissions); private/commercial tiers add confidentiality and more depth.",
+    "opsec": "passive",
+    "opsecNote": "Submitting to the free/community tier makes your sample and report PUBLIC — never upload case-sensitive files there (it can tip off an attacker or leak evidence). Searching existing reports is passive; detonating your own file is a disclosure decision.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Joe Security's sandbox is a well-established, respected automated malware-analysis platform used across the DFIR industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "Joe Sandbox",
+      "Joe Security sandbox"
+    ],
+    "tags": [
+      "documents-metadata",
+      "malware",
+      "sandbox",
+      "dfir"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/office-files/joesandbox-document-analyzer.md"
   },
   {
@@ -58549,29 +58571,30 @@
   },
   {
     "id": "stegosuite",
-    "name": "StegOSuite",
-    "description": "Graphical steganography tool to hide and extract data in image files.",
+    "name": "Stegosuite",
+    "description": "Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via steganography.",
     "url": "https://github.com/osde8info/stegosuite",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "GUI-based detection/extraction of hidden data in images.",
+    "bestFor": "GUI embedding/extraction of hidden (optionally AES-encrypted) data in BMP/GIF/JPG/PNG images.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "metadata-exif"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL-3.0) Java GUI app; run locally (`java -jar stegosuite-*.jar`). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs entirely offline on your machine against files you hold — passive, nothing leaves your host. Handle suspect images in an isolated environment as you would any untrusted file.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
-    "trust": "trusted",
-    "trustNote": "Optionally installed in the Trace Labs VM (install_stegosuite).",
+    "trust": "community",
+    "trustNote": "Established open-source steganography tool; it works with data hidden by its own scheme, so it's not a universal stego detector — a negative doesn't rule out other methods.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -58584,13 +58607,14 @@
       "StegOSuite"
     ],
     "tags": [
+      "documents-metadata",
       "steganography",
-      "gui",
-      "ctf"
+      "image",
+      "forensics"
     ],
-    "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/stegosuite.md"
   },
   {
@@ -72131,42 +72155,53 @@
   },
   {
     "id": "icann-lookup",
-    "name": "Icann Lookup",
-    "description": "OSINT tool: Icann Lookup.",
+    "name": "ICANN Lookup",
+    "description": "Use when you have a `domain` and want its authoritative registration data — returns the official RDAP/WHOIS record (registrar, dates, status, name servers).",
     "url": "https://lookup.icann.org/en/lookup",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Authoritative WHOIS/RDAP lookup of a domain's registration from ICANN's own portal.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official ICANN lookup; no account.",
+    "opsec": "passive",
+    "opsecNote": "A standard registration-data query against ICANN's RDAP service — passive, no signal to the domain owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by ICANN, the body that coordinates the domain-name system; the authoritative front-end for registration data (RDAP/WHOIS).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ICANN WHOIS",
+      "ICANN RDAP lookup"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domains-ip-infrastructure",
+      "whois",
+      "rdap",
+      "registration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
-      "icann-org",
       "icann-whois-lookup",
-      "lookup-icann-org",
       "rdrs-icann-org"
     ],
     "_file": "library/tools/domains-ip-infrastructure/icann-lookup.md"
@@ -147204,28 +147239,29 @@
   {
     "id": "tiktok-video-downloader-ssstik",
     "name": "TikTok Video Downloader (ssstik)",
-    "description": "Download TikTok videos without watermark.",
+    "description": "Use when you have a public TikTok video URL and want to save the clip (no watermark) as evidence — returns a downloadable MP4/MP3 of the `image`/video.",
     "url": "https://ssstik.io/en-1",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Saving TikTok video evidence without watermark",
+    "bestFor": "Saving a public TikTok video without watermark for offline analysis/evidence.",
     "selectorsIn": [
       "social-profile"
     ],
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, unlimited, no account or install; downloads MP4 (HD) or MP3.",
+    "opsec": "passive",
+    "opsecNote": "ssstik fetches the public video server-side from its own infrastructure — so the download to you doesn't hit the target's profile directly. But you paste the URL into a third-party site; for sensitive work prefer a local downloader (yt-dlp). Only works on public accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular free TikTok downloader (since 2018), not affiliated with TikTok; it reliably returns the source video but is an ad-supported third party.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -147234,15 +147270,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ssstik",
+      "ssstik.io"
+    ],
     "tags": [
+      "image-video-face",
       "tiktok",
       "video-download",
       "evidence"
     ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "ssstik-io"
     ],
@@ -269831,42 +269871,52 @@
   },
   {
     "id": "ddgr",
-    "name": "DDGR",
-    "description": "Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting",
+    "name": "ddgr",
+    "description": "Use when you want to script or automate DuckDuckGo searches from the terminal — returns search results as text or JSON, with bangs and region control.",
     "url": "https://github.com/jarun/ddgr",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line DuckDuckGo search with JSON export, bang support, and Tor compatibility.",
     "selectorsIn": [
-      "geolocation"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "geolocation"
+      "domain",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0); `pip3 install ddgr` or via package managers. No account, no API key.",
+    "opsec": "passive",
+    "opsecNote": "Searches run from your machine to DuckDuckGo (which doesn't track/personalise like Google), and ddgr works over Tor for extra separation. Your queries still leave your host — use Tor/VPN for sensitive terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known open-source utility by jarun (author of buku/googler); results mirror DuckDuckGo directly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DDGR"
+    ],
     "tags": [
-      "Tools for DuckDuckGo"
+      "search-engines",
+      "duckduckgo",
+      "cli",
+      "automation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "relatedTools": [
       "googler"
     ],
@@ -270585,42 +270635,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/dogpile-meta-search.md"
-  },
-  {
-    "id": "dorkeye",
-    "name": "DorkEye",
-    "description": "OSINT tool: DorkEye.",
-    "url": "https://github.com/xPloits3c/DorkEye",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "google-dorks-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/dorkeye.md"
   },
   {
     "id": "dorkgenius",
@@ -283401,42 +283415,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/news-explorer-bluemix.md"
-  },
-  {
-    "id": "news-map",
-    "name": "News Map",
-    "description": "OSINT tool: News Map.",
-    "url": "http://newsmap.jp",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/news-map.md"
   },
   {
     "id": "news-now",
@@ -347775,42 +347753,50 @@
   },
   {
     "id": "cruise-mapper",
-    "name": "Cruise Mapper",
-    "description": "OSINT tool: Cruise Mapper.",
+    "name": "CruiseMapper",
+    "description": "Use when you have a cruise ship name and want its live position, itinerary, and deck plans — returns near-real-time `geolocation` and schedule for the vessel.",
     "url": "https://www.cruisemapper.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking a cruise ship's current position, itinerary, and schedule.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tracker; no account for basic ship tracking, itineraries, and deck plans.",
+    "opsec": "passive",
+    "opsecNote": "You query CruiseMapper's aggregated AIS/schedule data, not the vessel — passive. Note position data is AIS-derived and can lag or be gapped at sea.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Popular cruise-tracking site aggregating AIS positions and published itineraries; positions are as reliable as the underlying AIS feed (delays/gaps possible).",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
+    "aliases": [
+      "Cruise Mapper"
     ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "transportation",
+      "ship-tracking",
+      "ais",
+      "geolocation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/transportation/cruise-mapper.md"
   },
   {

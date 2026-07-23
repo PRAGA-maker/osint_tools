@@ -30,7 +30,7 @@ kind: group-index
 - **`agent-ransack`** (low) — Free, fast hard drive file searching utility for windows
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
-- **`analyze-file-format-online`** (low) — OSINT tool: Analyze file format online.
+- **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`apple-icloud-usa`** (low) — Cloud storage and cloud computing service by Apple
 - **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -238,7 +238,7 @@ kind: group-index
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`statwing`** (low) — Intuitive data analytics tool
 - **`steghide`** (low) — Steganography tool to detect and extract data hidden inside image and audio files.
-- **`stegosuite`** (low) — Graphical steganography tool to hide and extract data in image files.
+- **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
 - **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes

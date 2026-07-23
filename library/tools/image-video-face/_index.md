@@ -318,7 +318,7 @@ kind: group-index
 - **`thehackernews-com`** (high) — Use when you have an `image` containing pixelated/blurred redacted text and want to attempt reconstruction — points to the Unredacter/Depix 
 - **`theinpaint`** (low) — Use when you have an `image` with a watermark/text/overlay obscuring a detail and want a clean working copy for reverse-image search — retur
 - **`tikfuel-com`** (high) — Use when you have a TikTok `username` and want the full-resolution profile picture (which TikTok only shows small) to reverse-image or face-
-- **`tiktok-video-downloader-ssstik`** (low) — Download TikTok videos without watermark.
+- **`tiktok-video-downloader-ssstik`** (low) — Use when you have a public TikTok video URL and want to save the clip (no watermark) as evidence — returns a downloadable MP4/MP3 of the `im
 - **`tineye-com`** (high) — Use when you have an `image` and want to find where else it appears online and its earliest/other copies — returns matching pages (`social-p
 - **`tineye-reverse-image-sear-chrome-google-com`** (high) — Use when you have an `image` and want a one-right-click TinEye reverse search for exact copies and earliest appearances — returns pages host
 - **`tineye-reverse-image-search-addons-mozilla-org`** (high) — Use when you have an `image` and want to find where else it appears online and its earliest known instance — this Firefox add-on runs TinEye

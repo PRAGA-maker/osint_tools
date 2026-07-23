@@ -165,7 +165,7 @@ kind: group-index
 - **`datasploit-fogsec-mirror`** (medium) — Use when you have a `name`, `email`, `domain`, `username`, or `phone` and want to run automated multi-source recon that aggregates raw findi
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
 - **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
-- **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
+- **`ddgr`** (low) — Use when you want to script or automate DuckDuckGo searches from the terminal — returns search results as text or JSON, with bangs and regio
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
@@ -183,7 +183,6 @@ kind: group-index
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
-- **`dorkeye`** (low) — OSINT tool: DorkEye.
 - **`dorkgenius`** (low) — OSINT tool: DorkGenius.
 - **`dorkgpt`** (low) — OSINT tool: DorkGPT.
 - **`dpa-international`** (low) — OSINT tool: DPA International.
@@ -431,7 +430,6 @@ kind: group-index
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
-- **`news-map`** (low) — OSINT tool: News Map.
 - **`news-now`** (low) — OSINT tool: News Now.
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
 - **`news-search`** (low) — OSINT tool: News Search.
