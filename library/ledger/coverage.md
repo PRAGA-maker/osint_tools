@@ -10,7 +10,7 @@ _"full" = authored (has a `## When to use` body); the enrichment field is derive
 low: 3538 · medium: 1971 · high: 1964
 
 ## Tools by trust
-community: 3503 · unverified: 2311 · trusted: 1650 · untrustworthy: 6 · personal: 3
+community: 3501 · unverified: 2310 · trusted: 1653 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 

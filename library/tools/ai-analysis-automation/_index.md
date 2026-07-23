@@ -82,7 +82,7 @@ kind: group-index
 - **`code-understanding-tools-list`** (low) — Tools for understanding other people's code
 - **`codepen`** (low) — OSINT tool: CodePen.
 - **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
-- **`columbus-project`** (low) — OSINT tool: Columbus Project.
+- **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c
 - **`compiler-explorer`** (low) — OSINT tool: Compiler Explorer.
 - **`complete-email-scraper`** (low) — Paste the link to the site and the bot finds the sitemap. The bot then goes through all the links on the site looking for email addresses (s
 - **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
@@ -283,7 +283,7 @@ kind: group-index
 - **`ossec`** (low) — OSINT tool: OSSEC.
 - **`outwit`** (low) — OSINT tool: Outwit.
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
-- **`palladio`** (low) — OSINT tool: Palladio.
+- **`palladio`** (low) — Use when you have tabular relationship data (people, places, dates, links) and want to visualise it as a network graph, map, or timeline — a
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
 - **`peerblock`** (low) — OSINT tool: Peerblock.
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
@@ -426,7 +426,7 @@ kind: group-index
 - **`wot`** (low) — OSINT tool: WOT.
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
 - **`x86-and-x64-intel-assembler`** (low) — OSINT tool: x86 and x64 Intel Assembler.
-- **`xbox-monitor`** (low) — OSINT tool: xbox_monitor.
+- **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 
 - **`you-com`** (low) — AI-assisted web research, summarizing search results, multi-source research aggregation
 - **`youcode`** (low) — Add free, privacy source code search engine with popular tech sites snippets in search results: Mozilla Developer Network; Github; W3 School
 - **`zen`** (low) — OSINT tool: Zen.

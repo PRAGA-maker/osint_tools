@@ -390,7 +390,7 @@ kind: group-index
 - **`gov-uk`** (medium) — Use when you have a UK VAT number (an `employer-org` identifier) and want to validate it — HMRC returns the registered business `name` and `
 - **`govchain-co-za`** (high) — Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a 
 - **`govdata-das-datenportal-f-r-deutschland-german`** (low) — Use when you have a German place, agency or `employer-org` and want official open datasets — returns administrative, geographic and statisti
-- **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
+- **`government-of-canada-open-data`** (low) — Use when you have a `name`, `employer-org`, or place and want Canadian federal datasets (contracts, grants, spending, ATI summaries) — retur
 - **`government-staff-directory`** (medium) — Use when you have a `name` or department (`employer-org`) of a Government of Alberta employee and want to confirm the role and a work phone 
 - **`govsalaries`** (medium) — Use when you have a `name` (and ideally a US state/employer) and want to confirm public-sector employment and pay — returns `employer-org`, 
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
