@@ -3200,37 +3200,55 @@
   {
     "id": "cyberbro",
     "name": "Cyberbro",
-    "description": "OSINT tool: Cyberbro.",
+    "description": "Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated CTI verdicts and reverse-DNS/geolocation context.",
     "url": "https://github.com/stanfrbd/cyberbro",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting IoCs from garbage input and scoring them across 30+ threat-intel services at once.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (MIT). Self-host with Docker/Python at no cost; some upstream CTI services it queries need your own free API keys to unlock full data.",
+    "opsec": "passive",
+    "opsecNote": "Reputation lookups are passive against the target, but Cyberbro forwards your indicators to third-party CTI providers (VirusTotal, Shodan, AbuseIPDB, etc.). Those providers log and may retain what you submit, so treat any indicator you paste as disclosed to them. Self-hosting keeps the app itself off a shared cloud.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Actively maintained open-source project (stanfrbd) with an MIT license and public issue tracker; it is a query aggregator, so data quality is inherited from the upstream services, not Cyberbro itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "cyberbro CTI",
+      "stanfrbd/cyberbro"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "ioc-enrichment",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cyberbro.md"
   },
   {
@@ -39192,48 +39210,6 @@
     "_file": "library/tools/dark-web/daunt-link.md"
   },
   {
-    "id": "dcdutchconnectionuk",
-    "name": "DCdutchconnectionUK",
-    "description": "OSINT tool: DCdutchconnectionUK.",
-    "url": "http://wbz2lrxhw4dd7h5t2wnoczmcz5snjpym4pr7dzjmah4vi6yywn37bdyd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/dcdutchconnectionuk.md"
-  },
-  {
     "id": "dedope",
     "name": "DeDope",
     "description": "OSINT tool: DeDope.",
@@ -66558,41 +66534,54 @@
   {
     "id": "dns-dumpster",
     "name": "DNS Dumpster",
-    "description": "Subdomain enumeration, DNS reconnaissance, infrastructure mapping",
+    "description": "Use when you have a `domain` and want its DNS footprint — returns subdomains, MX/TXT/host records, resolving `ip-address`es and an infrastructure map.",
     "url": "https://dnsdumpster.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "passivedns"
     ],
-    "bestFor": "Subdomain enumeration, DNS reconnaissance, infrastructure mapping",
-    "input": "Domain name",
-    "output": "MX records, TXT records, Host records, subdomains, infrastructure map",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Passive subdomain enumeration and infrastructure mapping for a domain without touching the target's own servers.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool from Hacker Target; heavy/automated use is nudged toward their paid API, but interactive lookups are free.",
     "opsec": "passive",
-    "opsecNote": "Passive DNS research without sending direct DNS requests or probing the target.",
+    "opsecNote": "DNS Dumpster answers from Hacker Target's own passive-DNS and scan data, so your lookup does not send DNS queries or probes to the target's nameservers — the subject sees nothing. Your query is logged by dnsdumpster.com; use a sock-puppet session if you don't want the domain of interest tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Run by Hacker Target, a long-established infrastructure-recon vendor; results are aggregated from their scanning/passive-DNS sources and may lag or miss very new subdomains.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "dnsdumpster",
+      "Hacker Target DNS Dumpster"
+    ],
+    "tags": [
+      "passive-dns",
+      "subdomain-enum",
+      "infrastructure"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/passivedns/dns-dumpster.md"
   },
   {
@@ -73984,42 +73973,50 @@
   {
     "id": "ipinfo-map",
     "name": "IPinfo map",
-    "description": "paste up to 500,000 IPs below to see where they're located on a map",
+    "description": "Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.",
     "url": "https://ipinfo.io/map",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-plotting a list of IP addresses on a map to spot clustering or a rough geographic origin.",
     "selectorsIn": [
-      "domain"
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The paste-and-map tool is free and needs no account; full-accuracy datasets, the API, and large-volume enrichment sit behind IPinfo's paid/free-API-key tiers.",
+    "opsec": "passive",
+    "opsecNote": "You are pasting IPs into ipinfo.io — you never contact the hosts themselves, so the map step is passive toward any target. IPinfo does log the addresses you submit. If the IPs came from your own logs (e.g. who visited a honeypot), remember you're disclosing them to a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IPinfo is a well-known commercial IP-data provider; free-tier geolocation is city-level and approximate, best treated as a region hint rather than a precise location.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ipinfo.io map",
+      "IPinfo bulk IP map"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "ip-geolocation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipinfo-map.md"
   },
   {
@@ -169627,41 +169624,53 @@
   {
     "id": "citymapper-mapping-app-mobile-ios",
     "name": "Citymapper Mapping App (Mobile – iOS)",
-    "description": "App for mobile devices for local maps of city areas",
+    "description": "Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, and reachable-area context.",
     "url": "https://apps.apple.com/us/app/citymapper-all-live-transit/id469463298",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Modeling how a person could actually move through a covered metro area — routes, transit times, and plausible travel radius.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free iOS app (in-app Citymapper Club subscription is optional and not needed for routing).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Route planning is passive toward any subject — you're querying Citymapper's servers about places, not the person. Citymapper does log your searches and, if you grant location permission, your device location; run it on a burner/investigation device with location sharing off and no personal Apple ID if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Citymapper is a well-established multimodal transit app (owned by Via) covering many major world cities; routing data is reliable within its coverage and stale/absent outside it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Citymapper",
+      "Citymapper iOS"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "transit",
+      "geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/citymapper-mapping-app-mobile-ios.md"
   },
   {
@@ -170445,42 +170454,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/deep-face-live.md"
-  },
-  {
-    "id": "deepfakesweb",
-    "name": "Deepfakesweb",
-    "description": "Create deepfake videos ONLINE",
-    "url": "https://deepfakesweb.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/deepfakesweb.md"
   },
   {
     "id": "deft-linux",
@@ -186603,37 +186576,45 @@
   {
     "id": "vivaldi",
     "name": "Vivaldi",
-    "description": "OSINT tool: Vivaldi.",
+    "description": "Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-profile`s and `domain`s.",
     "url": "https://vivaldi.com",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A Chromium-based browser whose profiles and tab tiling make it a tidy home for separate sock-puppet identities.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to download and use on Windows, macOS, Linux, and Android; no account required to browse.",
+    "opsec": "passive",
+    "opsecNote": "Vivaldi is a browsing platform, not an anonymizer — it does not hide your IP or defeat fingerprinting on its own. Its value for OpSec is compartmentalization: use a dedicated Profile per sock-puppet, disable sync/telemetry, and pair it with a VPN/Tor. Signing into a Vivaldi account for sync leaks your identity across profiles, so keep investigative profiles account-less.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Made by Vivaldi Technologies (founded by ex-Opera staff); Chromium-based, closed-source UI over an open engine, with a long-standing pro-privacy stance and no ad/data-broker business model.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Vivaldi browser"
+    ],
     "tags": [
-      "browsers"
+      "browsers",
+      "sock-puppet",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/vivaldi.md"
   },
   {
@@ -214511,42 +214492,6 @@
     "_file": "library/tools/public-records/boston-police-internal-affairs-cases-2010-2020.md"
   },
   {
-    "id": "bp-statistical-review-of-world-energy",
-    "name": "BP Statistical Review of World Energy",
-    "description": "OSINT tool: BP Statistical Review of World Energy.",
-    "url": "http://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/bp-statistical-review-of-world-energy.md"
-  },
-  {
     "id": "bps-org-uk",
     "name": "bps.org.uk (Directory of Chartered Psychologists)",
     "description": "Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the practitioner's `name`, chartered status, and location/`employer-org` area.",
@@ -226148,45 +226093,50 @@
   {
     "id": "foia-gov-search",
     "name": "FOIA.gov Search",
-    "description": "US federal FOIA records search/request portal.",
+    "description": "Use when you have a topic, agency, or `name` and want US federal records — returns previously-released FOIA documents and the path to file your own request.",
     "url": "https://search.foia.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Search and request US federal records via FOIA.",
+    "bestFor": "Searching already-released federal FOIA records and finding the right agency to file a new request with.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free federal portal; filing a FOIA request is free to submit, though some agencies charge search/copy fees for large fulfillments.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the FOIA library and reading released records is passive and anonymous. Filing an actual request is different — it is a formal, identity-attached legal action on the record with a federal agency, and the subject of the request is not notified but the request itself may later be released. Treat searching (passive) and requesting (attributable) as separate steps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US government FOIA portal operated by the Department of Justice / OIP; it indexes agencies' own FOIA reading rooms and request pipelines.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "FOIA.gov",
+      "search.foia.gov"
+    ],
     "tags": [
       "foia",
       "government",
       "records"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/foia-gov-search.md"
   },
   {
@@ -259551,41 +259501,52 @@
   {
     "id": "us-data-and-statistics",
     "name": "US Data and Statistics",
-    "description": "OSINT tool: US Data and Statistics.",
+    "description": "Use when you have a place, agency, or topic and want the official US federal source for that statistic — returns links to Census, BLS, and other authoritative datasets.",
     "url": "https://www.usa.gov/statistics",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A signposting gateway from USA.gov to authoritative US federal statistical agencies and their data.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US government portal; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "A public government directory page — browsing it reveals nothing to any target and requires no login. Standard sock-puppet browsing hygiene is more than sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official USA.gov page run by the US General Services Administration; it curates links to first-party federal statistical agencies (Census, BLS, etc.).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "state-local-tribal-gov-page-search",
       "usa-gov"
     ],
+    "aliases": [
+      "USA.gov statistics",
+      "US federal statistics directory"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "government"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-data-and-statistics.md"
   },
   {
@@ -289314,38 +289275,51 @@
   {
     "id": "s",
     "name": "S",
-    "description": "Search from command line in 106 different sources",
+    "description": "Use when you have a `name`, `username`, or `email` and want to fan the same query across 150+ search sites from your terminal — returns browser tabs of results per provider.",
     "url": "https://github.com/zquestz/s",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Firing one query at any of 150+ named search engines from the command line without opening each site by hand.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); install via Go, Homebrew (`s-search`), or AUR.",
+    "opsec": "passive",
+    "opsecNote": "`s` just constructs a search URL and opens it in your default browser (or returns JSON with `-o json`), so the query hits the chosen provider from your real browser/IP unless you point it at a sock-puppet profile. It sends nothing to any zquestz server. Route it through a burner browser + VPN when the query names a live subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing, widely packaged open-source CLI (zquestz) under an MIT license; it only builds and opens URLs, so there is no hidden data collection to trust.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "s-search",
+      "zquestz/s"
+    ],
     "tags": [
       "Search engines",
       "Universal search tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/s.md"
   },
   {
@@ -298275,37 +298249,50 @@
   {
     "id": "yahoo-search",
     "name": "Yahoo! Search",
-    "description": "OSINT tool: Yahoo! Search.",
-    "url": "https://www.yahoo.com",
+    "description": "Use when you have a `name`, `username`, or `email` and want a second general-web index beyond Google/Bing — returns web pages, images, and `social-profile` mentions.",
+    "url": "https://search.yahoo.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A general web search engine useful as a differently-ranked second opinion to Google and Bing.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching Yahoo does not contact the target, but Yahoo logs your queries and (if signed into a Yahoo account) ties them to you. Search from a signed-out sock-puppet session; results are also personalized by IP/region, so a VPN changes what you see.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yahoo (Apollo/Yahoo Inc.); its web results are currently powered largely by Bing's index, so overlap with Bing is high but ranking and some verticals differ.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Yahoo Search",
+      "search.yahoo.com"
+    ],
     "tags": [
       "general-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yahoo-search.md"
   },
   {
@@ -336609,40 +336596,53 @@
   {
     "id": "username-availability",
     "name": "Username Availability",
-    "description": "OSINT tool: Username Availability.",
+    "description": "Use when you have a `username` and want to know if it's claimed/held on Twitch (including by suspended or deleted channels) — returns a taken/available signal.",
     "url": "https://cactus.tools/twitch/username",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether a Twitch handle is claimed, including by suspended or deleted channels that Twitch's own search hides.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free, no account needed; rate-limited to ~20 lookups/minute.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query cactus.tools, not Twitch's account for the subject, so the target is not contacted or notified. cactus.tools logs your lookups; use a sock-puppet session if the handle you're checking is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Unofficial third-party Twitch tool (cactus.tools); it reads Twitch's public API for handle status and is not affiliated with Twitch. As of its own site notice it has intermittently reported the checker as non-functional, hence status degraded.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "check-channel-badges",
       "check-twitch-follow-length",
       "twitch-following"
     ],
+    "aliases": [
+      "cactus.tools Twitch username",
+      "Twitch username availability"
+    ],
+    "tags": [
+      "twitch",
+      "username-check"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/username-availability.md"
   },
   {

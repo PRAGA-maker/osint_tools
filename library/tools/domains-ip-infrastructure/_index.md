@@ -244,7 +244,7 @@ kind: group-index
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
 - **`ipanalyzer-privacy-test`** (medium) — Use when you have an `ip-address` (or `domain`) and want its geolocation, network owner, reverse DNS, open services and blacklist status in 
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
-- **`ipinfo-map`** (low) — paste up to 500,000 IPs below to see where they're located on a map
+- **`ipinfo-map`** (low) — Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
 - **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
 - **`ipvoid`** (low) — OSINT tool: IPVoid.

@@ -113,7 +113,6 @@ kind: group-index
 - **`boatinfoworld`** (medium) — Use when you have a `name` (owner or vessel) and want US Coast Guard documented-vessel records — returns owner `name`, `address`, `document-
 - **`bookkeepers-org-uk`** (medium) — Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's busine
 - **`boston-police-internal-affairs-cases-2010-2020`** (medium) — Use when you have a `name` of a Boston Police officer and want their internal-affairs/disciplinary history — returns documented IA cases (20
-- **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
 - **`brb-public-records`** (medium) — Use when you need to find the authoritative source for a US public record and want to know which agency holds it — returns links and access 
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
@@ -315,7 +314,7 @@ kind: group-index
 - **`florida-residents-directory`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, rela
 - **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma
 - **`flvoters-com`** (high) — Use when you have a Florida subject's `name` and want their public voter record — returns registered name, address, DOB, party and (public) 
-- **`foia-gov-search`** (low) — US federal FOIA records search/request portal.
+- **`foia-gov-search`** (low) — Use when you have a topic, agency, or `name` and want US federal records — returns previously-released FOIA documents and the path to file y
 - **`forbes-global-2000`** (medium) — Use when you have an `employer-org` and want to verify and size it — returns whether a company is among the world's 2000 largest public firm
 - **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
 - **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
@@ -920,7 +919,7 @@ kind: group-index
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
-- **`us-data-and-statistics`** (low) — OSINT tool: US Data and Statistics.
+- **`us-data-and-statistics`** (low) — Use when you have a place, agency, or topic and want the official US federal source for that statistic — returns links to Census, BLS, and o
 - **`us-dept-of-energy-office-of-science-search`** (medium) — Use when you have a researcher `name` and want their DOE-funded scientific output — returns publications, affiliations, and co-authors.
 - **`us-institute-of-peace`** (low) — Use when a case touches conflict, extremism, or a fragile region and you need vetted research and named actors/organizations — returns repor
 - **`us-tax-court`** (high) — Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), part

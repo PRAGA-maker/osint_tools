@@ -671,7 +671,7 @@ kind: group-index
 - **`untwitch-com`** (medium) — Use when you have a `social-profile` (a Twitch VOD or clip URL) and want to pull the video offline for frame-by-frame analysis — returns `im
 - **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
 - **`us-twitter-trend-calendar`** (medium) — Use when you have a date and want to know what was trending on X/Twitter (and Google) in the US then — returns ranked historical trending ke
-- **`username-availability`** (low) — OSINT tool: Username Availability.
+- **`username-availability`** (low) — Use when you have a `username` and want to know if it's claimed/held on Twitch (including by suspended or deleted channels) — returns a take
 - **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
 - **`vidnice`** (medium) — Use when you have a TikTok `username`/hashtag and want to view the profile and videos anonymously — returns social-profile, videos, stats, a
 - **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile

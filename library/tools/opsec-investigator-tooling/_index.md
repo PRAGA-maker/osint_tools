@@ -91,7 +91,7 @@ kind: group-index
 - **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
 - **`chrome`** (low) — OSINT tool: Chrome.
 - **`citymapper-mapping-app-mobile-android`** (low) — App for mobile devices for local maps of city areas
-- **`citymapper-mapping-app-mobile-ios`** (low) — App for mobile devices for local maps of city areas
+- **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
 - **`click-and-clean-extension-chrome`** (low) — Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks
 - **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
@@ -111,7 +111,6 @@ kind: group-index
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — OSINT tool: Decoding Social Security Numbers.
 - **`deep-face-live`** (low) — Real-time face swap for streaming and video calls
-- **`deepfakesweb`** (low) — Create deepfake videos ONLINE
 - **`deft-linux`** (low) — OSINT tool: Deft Linux.
 - **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
 - **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
@@ -486,7 +485,7 @@ kind: group-index
 - **`view-exif-data-online-remove-exif-online`** (low) — OSINT tool: View Exif data online, remove Exif online.
 - **`vin-generator`** (low) — OSINT tool: VIN Generator.
 - **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed
-- **`vivaldi`** (low) — OSINT tool: Vivaldi.
+- **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
 - **`vkontakte-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking
 - **`voicebooking`** (low) — fake voice generator
 - **`vpn-for-beginners`** (low) — Beginners guide to VPN by Best VPN

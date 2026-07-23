@@ -548,7 +548,7 @@ kind: group-index
 - **`rockstargames-socialclub-player-search`** (medium) — Use when you have a gaming `username`/handle and want a subject's Rockstar (GTA Online / Red Dead) profile and crews — returns a `social-pro
 - **`rotten-tomatoes`** (medium) — Use when you have a `username` and want to check for a matching audience-reviewer profile revealing a person's ratings and interests — retur
 - **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
-- **`s`** (low) — Search from command line in 106 different sources
+- **`s`** (low) — Use when you have a `name`, `username`, or `email` and want to fan the same query across 150+ search sites from your terminal — returns brow
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
@@ -726,7 +726,7 @@ kind: group-index
 - **`yahoo-com-2`** (high) — Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns
 - **`yahoo-com`** (high) — Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web re
 - **`yahoo-news`** (low) — OSINT tool: Yahoo News.
-- **`yahoo-search`** (low) — OSINT tool: Yahoo! Search.
+- **`yahoo-search`** (low) — Use when you have a `name`, `username`, or `email` and want a second general-web index beyond Google/Bing — returns web pages, images, and `
 - **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
 - **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t
 - **`yandex-russia`** (low) — Use when you have an `image`/`face`, `name` or `username` and want a search engine whose reverse-image and CIS-region coverage beats Google 

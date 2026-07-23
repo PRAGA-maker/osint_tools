@@ -41,7 +41,6 @@ kind: group-index
 - **`darkweb-forums`** (low) — OSINT tool: Darkweb Forums.
 - **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
-- **`dcdutchconnectionuk`** (low) — OSINT tool: DCdutchconnectionUK.
 - **`dedope`** (low) — OSINT tool: DeDope.
 - **`deep-money-transfer`** (low) — OSINT tool: Deep Money Transfer.
 - **`deep-search`** (low) — OSINT tool: Deep Search.

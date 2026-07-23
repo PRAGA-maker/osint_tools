@@ -93,7 +93,7 @@ kind: group-index
 - **`crowdsec`** (low) — OSINT tool: CrowdSec.
 - **`csvkit`** (low) — OSINT tool: csvkit.
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
-- **`cyberbro`** (low) — OSINT tool: Cyberbro.
+- **`cyberbro`** (low) — Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated
 - **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
 - **`cybergordon`** (low) — OSINT tool: CyberGordon.
 - **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
