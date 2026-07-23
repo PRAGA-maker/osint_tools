@@ -79,7 +79,7 @@ kind: group-index
 - **`military-bases-around-the-world-umap`** (medium) — Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `g
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
 - **`movebank`** (low) — Platform for animal tracking data.
-- **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
+- **`nasa-firms`** (low) — Use when you have a `geolocation`/`address` and a date and want satellite thermal-anomaly data — returns mapped fire/heat detections to corr
 - **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc

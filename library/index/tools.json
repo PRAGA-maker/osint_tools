@@ -7854,41 +7854,48 @@
   {
     "id": "js-beautifier",
     "name": "JS Beautifier",
-    "description": "Fast readability improvements for packed JavaScript",
+    "description": "Use when you have minified/obfuscated JavaScript from a `domain` and want it readable — returns formatted source so you can spot endpoints, keys, or tracking IDs.",
     "url": "https://beautifier.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "javascript"
     ],
-    "bestFor": "Fast readability improvements for packed JavaScript",
-    "input": "Minified or obfuscated JavaScript source text",
-    "output": "Formatted JavaScript with normalized structure and spacing",
+    "bestFor": "Reformatting packed or minified JavaScript into readable code for manual analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (web tool, plus npm/Python packages and editor plugins).",
     "opsec": "passive",
-    "opsecNote": "Typical use is low-risk code formatting through a public web interface.",
+    "opsecNote": "Beautifying code you already have is passive — it just reformats text. On the public beautifier.io you paste the script into a third-party page (harmless for public site code, but avoid pasting anything sensitive/proprietary); run the open-source `js-beautify` locally to keep the code entirely offline. Note beautifying does not *deobfuscate* — it only reformats.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The well-known open-source js-beautify project (jsbeautifier.org / beautifier.io); deterministic formatting with an auditable, widely-used codebase.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "js-beautify",
+      "beautifier.io",
+      "jsbeautifier"
+    ],
+    "tags": [
+      "javascript",
+      "deobfuscation",
+      "code-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/javascript/js-beautifier.md"
   },
   {
@@ -45819,38 +45826,57 @@
   {
     "id": "onlyfinder",
     "name": "OnlyFinder",
-    "description": "OSINT tool: OnlyFinder.",
+    "description": "Use when you have a `username`, `name`, `geolocation`, or `face` and want to find a matching OnlyFans creator — returns creator `social-profile`s and handles.",
     "url": "https://onlyfinder.com/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating an OnlyFans creator by username, display name, location, or (paid) face image.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "geolocation",
+      "face"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free text/username/location search; face-recognition (\"search by image\") and some advanced features are behind a paid tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching OnlyFinder queries its own index of public OnlyFans profile data, so you don't interact with the creator or OnlyFans itself — passive. OnlyFinder logs your searches; if you upload a `face` image, you disclose it to their service, so use a sock-puppet account and never upload a private/sensitive image of a person you're not authorized to search for.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party OnlyFans search index (not affiliated with OnlyFans); matches — especially face-based ones — are probabilistic leads that must be confirmed against the actual profile.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "onlyfinder-com"
     ],
+    "aliases": [
+      "OnlyFinder",
+      "onlyfinder.com"
+    ],
+    "tags": [
+      "onlyfans",
+      "adult-platform-search",
+      "username-search"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyfinder.md"
   },
   {
@@ -68421,43 +68447,54 @@
   {
     "id": "exploit-db",
     "name": "Exploit DB",
-    "description": "OSINT tool: Exploit DB.",
+    "description": "Use when you have a software/service and version (from a banner or `domain` recon) and want public exploits/PoCs for it — returns exploit entries, CVEs, and affected versions.",
     "url": "https://www.exploit-db.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "exploits"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up public proof-of-concept exploits and advisories for a specific product/version.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public archive maintained by OffSec; no account needed to search or download.",
+    "opsec": "passive",
+    "opsecNote": "Searching Exploit-DB queries a public archive and does not touch any target — passive. It is reference material: reading about an exploit is fine; actually running one against a system you don't own is illegal and out of scope for OSINT. Use it to understand what a discovered service is vulnerable to, not to attack it. Your searches are logged by exploit-db.com; use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The canonical public exploit archive, maintained by OffSec (creators of Kali/OSCP); entries are curated and mapped to CVEs, though some PoCs are old or non-functional.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "google-hacking-database"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Exploit Database",
+      "EDB",
+      "exploit-db.com"
+    ],
+    "tags": [
+      "exploits",
+      "vulnerabilities",
+      "cve"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/exploits/exploit-db.md"
   },
   {
@@ -72635,38 +72672,52 @@
   {
     "id": "internetdb-shodan-io",
     "name": "Internetdb.shodan.io",
-    "description": "OSINT tool: Internetdb.shodan.io.",
+    "description": "Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and known CVEs, no API key.",
     "url": "https://internetdb.shodan.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A free, keyless, one-request lookup of an IP's open ports, hostnames, and known vulnerabilities.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free for non-commercial use with no Shodan account or API key; commercial use requires a Shodan enterprise license. Data refreshes roughly weekly.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "InternetDB returns Shodan's pre-collected scan data, so your query never touches the target host — fully passive. You hit Shodan's endpoint (e.g. `curl https://internetdb.shodan.io/1.2.3.4`), which Shodan logs against your IP; use a proxy/sock-puppet if you don't want the lookup attributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Operated by Shodan, the established internet-scan provider; data is authoritative for what Shodan last observed but lags real time (weekly cadence) and is a minimal subset (no banners).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "shodan"
     ],
+    "aliases": [
+      "Shodan InternetDB",
+      "internetdb"
+    ],
+    "tags": [
+      "shodan",
+      "ip-recon"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/internetdb-shodan-io.md"
   },
   {
@@ -76272,45 +76323,55 @@
   {
     "id": "metafinder",
     "name": "MetaFinder",
-    "description": "At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their metadata. But. It searches Baidu and that makes it quite effective.",
+    "description": "Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and paths from file `metadata-exif`.",
     "url": "https://github.com/Josue87/MetaFinder",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Harvesting a domain's public documents via search engines (incl. Baidu) and extracting author/software metadata.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "name",
+      "username",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; run locally with Python.",
+    "opsec": "passive",
+    "opsecNote": "MetaFinder finds documents through search engines (Google/Bing/DuckDuckGo/Baidu) and then downloads the files to read their metadata. The search phase is passive, but downloading the documents fetches them from wherever they're hosted (often the target's own site), which can appear in that server's logs — route it through a proxy/VPN and a sock-puppet identity.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool by Josue87 (author of other well-regarded recon tools); metadata it extracts is only as accurate as the documents' own embedded fields.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "analyticsrelationships"
+    ],
+    "aliases": [
+      "MetaFinder",
+      "Josue87/MetaFinder"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website's files metadata analyze and files downloads"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "analyticsrelationships"
-    ],
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/metafinder.md"
   },
   {
@@ -80104,33 +80165,40 @@
   {
     "id": "public-buckets",
     "name": "Public Buckets",
-    "description": "Investigating exposed bucket contents without running local scanners",
+    "description": "Use when you have a `name`, `domain`, or keyword and want files leaking in open cloud storage — returns indexed public bucket objects with downloadable links.",
     "url": "https://buckets.grayhatwarfare.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "s3-blob-storage"
     ],
-    "bestFor": "Investigating exposed bucket contents without running local scanners",
-    "input": "Keywords, domains, filenames, and object metadata filters",
-    "output": "Indexed public bucket/object matches with downloadable links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching a pre-built index of open S3/Azure/GCP buckets by keyword, domain, or filename without scanning yourself.",
+    "selectorsIn": [
+      "name",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "email"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free searching with a (free) account returns limited results; deeper access, more results, and API use require a paid GrayHatWarfare subscription.",
     "opsec": "passive",
-    "opsecNote": "Queries an existing index rather than probing target infrastructure directly.",
+    "opsecNote": "GrayHatWarfare queries its own precompiled index of already-public buckets, so searching does not touch the target's storage — passive. Opening/downloading a listed object does fetch it from the provider, which logs your IP. Your searches are tied to your GrayHatWarfare account; use a sock-puppet account, and only access data you are authorized to.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial index of exposed buckets; results reflect what its crawler has found and may be stale (a listed object can be removed/secured since indexing).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
@@ -80140,11 +80208,18 @@
       "grayhatwarfare",
       "url-shorteners-search"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GrayHatWarfare Public Buckets",
+      "buckets.grayhatwarfare.com"
+    ],
+    "tags": [
+      "s3",
+      "cloud-storage",
+      "exposed-data"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/public-buckets.md"
   },
   {
@@ -87662,31 +87737,36 @@
   {
     "id": "visualping",
     "name": "VisualPing",
-    "description": "Automated webpage change monitoring",
+    "description": "Use when you have a `domain`/URL (a profile, listing, or org page) and want to be alerted when it changes — returns visual/text diffs and change notifications.",
     "url": "https://visualping.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "change-detection"
     ],
-    "bestFor": "Automated webpage change monitoring",
-    "input": "URL and watch settings",
-    "output": "Change alerts with visual or text diffs",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Monitoring a web page and getting alerted, with a diff, whenever its content changes.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier covers a small number of pages at a low check frequency; more pages, faster intervals, and advanced options require a paid plan.",
     "opsec": "active",
-    "opsecNote": "Performs recurring fetches of target pages based on monitoring cadence.",
+    "opsecNote": "VisualPing (not you) fetches the target page on a schedule from its own servers, so the requests come from VisualPing's infrastructure, not your IP — this shields you but the target's server does see recurring automated hits from a known monitoring service. Don't set an aggressive interval on a small/sensitive site, and remember the page content you monitor is stored on VisualPing's servers under your account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established commercial change-detection SaaS; reliable for what it does, but a third party you're trusting to fetch and store target-page snapshots.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -87696,11 +87776,17 @@
     "relatedTools": [
       "visual-ping-website-monitoring"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Visualping",
+      "visualping.io"
+    ],
+    "tags": [
+      "change-detection",
+      "monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/visualping.md"
   },
   {
@@ -88083,37 +88169,50 @@
   {
     "id": "web-check",
     "name": "Web-Check",
-    "description": "OSINT tool: Web-Check.",
+    "description": "Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, and historical/archive context.",
     "url": "https://web-check.as93.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A fast, all-in-one dashboard of everything publicly knowable about a website's infrastructure.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT); use the public instance or self-host your own from GitHub.",
+    "opsec": "passive",
+    "opsecNote": "Web-Check reads DNS, certificate transparency, archives, and passive sources rather than aggressively probing the target, so it's low-noise. On the public instance your query and the target domain pass through as93.net's server; self-host if you need the lookup to stay entirely private, and use a sock-puppet session either way.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Popular open-source project by Alicia Sykes (Lissy93) with a transparent, auditable codebase and a self-host option; it aggregates authoritative sources (DNS, CT logs, WHOIS).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Web-Check as93",
+      "Lissy93 web-check"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "infrastructure"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/web-check.md"
   },
   {
@@ -90020,40 +90119,52 @@
   {
     "id": "whoismind",
     "name": "WhoisMind",
-    "description": "OSINT tool: WhoisMind.",
-    "url": "http://www.whoismind.com",
+    "description": "Use when you have an `ip-address` and want its location and neighboring sites — returns `geolocation`, ISP/ASN, and reverse-IP `domain`s hosted on it.",
+    "url": "https://www.whoismind.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-IP lookups (what else is hosted on this IP) plus IP geolocation and ISP context.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookups; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "WhoisMind answers from its own IP/hosting database, so you don't touch the target's server — passive. Your queries are logged by whoismind.com; use a sock-puppet session for sensitive lookups. Its self-stated disclaimer that it is not an FCRA consumer-reporting service means results are informational leads, not vetted records.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free IP/reverse-IP utility; reverse-IP and geolocation data are approximate and drawn from third-party feeds, so co-hosted domains and locations are leads to verify, not confirmed facts.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "whois-service"
     ],
+    "aliases": [
+      "WhoisMind",
+      "whoismind.com"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "reverse-ip"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whoismind.md"
   },
   {
@@ -154090,13 +154201,13 @@
   {
     "id": "nasa-firms",
     "name": "NASA FIRMS",
-    "description": "Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and explosions.",
+    "description": "Use when you have a `geolocation`/`address` and a date and want satellite thermal-anomaly data — returns mapped fire/heat detections to corroborate fires, explosions, or burning.",
     "url": "https://firms2.modaps.eosdis.nasa.gov/map/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and timestamping fires, explosions, or thermal events at a location using satellite infra-red detections.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -154104,35 +154215,43 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free NASA/US-government service; the interactive map needs no account, and the data-download/API portal offers a free MAP_KEY.",
+    "opsec": "passive",
+    "opsecNote": "You query NASA's satellite archive, not any subject — fully passive and unattributable to a target. It's a US government site; standard sock-puppet browsing is more than enough. The data is aggregate earth-observation, so there's no personal-privacy exposure in the query itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authoritative NASA Earth-observation product (MODIS/VIIRS active-fire detections) featured in the Bellingcat toolkit; detections are real thermal anomalies but require interpretation — not every hotspot is a fire.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "maps"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "firms",
       "nasa-earthdata-search",
       "nasa-kids-club",
       "nasa-worldview"
     ],
+    "aliases": [
+      "FIRMS",
+      "Fire Information for Resource Management System"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "maps",
+      "satellite",
+      "thermal-detection"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-23",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/nasa-firms.md"
   },
   {
@@ -184992,42 +185111,6 @@
       "tor-project"
     ],
     "_file": "library/tools/opsec-investigator-tooling/tor-browser.md"
-  },
-  {
-    "id": "torch",
-    "name": "Torch",
-    "description": "OSINT tool: Torch.",
-    "url": "http://www.torchbrowser.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "browsers"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/torch.md"
   },
   {
     "id": "torch-flashlight-tool-app-mobile-ios",

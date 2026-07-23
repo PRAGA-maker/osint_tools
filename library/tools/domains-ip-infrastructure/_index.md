@@ -223,7 +223,7 @@ kind: group-index
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
 - **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
-- **`internetdb-shodan-io`** (low) — OSINT tool: Internetdb.shodan.io.
+- **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
 - **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
 - **`intodns-ai`** (low) — OSINT tool: IntoDNS.ai.
@@ -279,7 +279,7 @@ kind: group-index
 - **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
 - **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host
-- **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
+- **`metafinder`** (low) — Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and pa
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
 - **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
@@ -451,7 +451,7 @@ kind: group-index
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
-- **`web-check`** (low) — OSINT tool: Web-Check.
+- **`web-check`** (low) — Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, 
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera
@@ -485,7 +485,7 @@ kind: group-index
 - **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
 - **`whoisds-com`** (low) — Use when you want the list of domains newly registered on a given day (to catch a subject's or scammer's fresh domains) — returns downloadab
 - **`whoishostingthis`** (low) — Use when you have a `domain` and want to know which company hosts it — returns the hosting provider plus basic WHOIS/ownership context.
-- **`whoismind`** (low) — OSINT tool: WhoisMind.
+- **`whoismind`** (low) — Use when you have an `ip-address` and want its location and neighboring sites — returns `geolocation`, ISP/ASN, and reverse-IP `domain`s hos
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (low) — Use when you have a `domain` or `ip-address` and want to know where a site is hosted — returns hosting provider, IP geolocation, DNS and lin
 - **`wintelguy-com`** (medium) — Use when you have a `mac-address` or email headers and want free network utilities — returns MAC/WWN vendor, subnet math, and mail-trace dec

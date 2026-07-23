@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`javascript-deobfuscator`** (low) — Use when a page (`domain`) runs obfuscated/minified JavaScript you need to read — this Firefox extension logs the actual code the page execu
-- **`js-beautifier`** (low) — Fast readability improvements for packed JavaScript
+- **`js-beautifier`** (low) — Use when you have minified/obfuscated JavaScript from a `domain` and want it readable — returns formatted source so you can spot endpoints, 
 - **`kahu-revelo`** (low) — Unpacking heavily obfuscated JavaScript samples on Windows
 - **`spidermonkey`** (low) — Local JavaScript execution and behavior testing without browser UI
 
