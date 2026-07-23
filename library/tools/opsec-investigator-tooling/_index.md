@@ -217,7 +217,7 @@ kind: group-index
 - **`hipstamatic-camera-app-mobile-ios`** (low) — App for mobile devices for social networking and picture sharing
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
 - **`hola-vpn`** (low) — VPN for unblocking wesbites and anonymous browsing
-- **`hotspot-shield-proxy-tool-us-access`** (low) — Anonymous browsing service provider with Hotspot Shield VPN
+- **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Retrieve proxies from popular proxy sources, officiently validate proxies, save the list of validated proxies to a file
 - **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
 - **`hulu-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing TV-related media

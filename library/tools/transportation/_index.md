@@ -51,7 +51,7 @@ kind: group-index
 - **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
 - **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st
 - **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
-- **`container-tracking`** (low) — OSINT tool: Container Tracking.
+- **`container-tracking`** (low) — Use when you have a shipping container or B/L number and want its location and movement across carriers — returns container status, route, a
 - **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.
 - **`cosint-osint-on-cars`** (medium) — Use when you have a `vehicle-plate`, `vin`, or a photo of a car and want a method for pivoting to an owner or location — returns `name`, `ad
 - **`crewlist-org-uk`** (low) — Use when you have a `name` of a British merchant seafarer (c.1855–1950s) and want their crew-list records — returns ships served, dates and 

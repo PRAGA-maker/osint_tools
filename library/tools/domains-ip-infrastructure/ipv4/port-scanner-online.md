@@ -35,6 +35,7 @@ relatedTools:
 - shodan
 - nmap
 - censys
+- online-port-scanner
 aliases:
 - portscanner.online
 - Online Port Scanner

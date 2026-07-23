@@ -15,7 +15,7 @@ kind: group-index
 - **`omnibus`** (low) — Use when you have mixed artifacts (`ip-address`, `domain`, `email`, `username`, hash, wallet) and want a session-based CLI to enrich them ac
 - **`osrframework`** (low) — Comprehensive username and email enumeration with extensible architecture
 - **`phoneinfoga`** (low) — Phone number validation and intelligence gathering
-- **`photon`** (low) — Web reconnaissance and endpoint discovery
+- **`photon`** (low) — Use when you have a `domain`/URL and want to crawl it fast for emails, social links, files, subdomains, and keys — returns harvested `email`
 - **`scrummage`** (low) — Multi-source OSINT aggregation via unified web interface
 - **`slash`** (low) — Username enumeration and social media account discovery
 

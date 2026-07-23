@@ -16,7 +16,6 @@ kind: group-index
 - **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
 - **`4-ever-proxy`** (low) — OSINT tool: 4 Ever Proxy.
 - **`activetk`** (low) — OSINT tool: ActiveTK.
-- **`ahmia-link-graph`** (low) — Enter the name of the site in the .onion domain zone and see what other sites in the #onion domain zone it is associated with.
 - **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
 - **`ancestor-search`** (medium) — Use when you have a `name` and want genealogy/vital records — returns links into census, birth/marriage/death, immigration, and other histor
 - **`andi`** (medium) — Use when you have a `name` or topic and want an AI-summarised, ad-free web search — returns synthesised answers with cited source links to p
@@ -59,7 +58,7 @@ kind: group-index
 - **`iaca-dark-web-investigation-support`** (medium) — Use when you have a `username`, `name`, `crypto-wallet`, or keyword and want vetted Tor search engines and marketplace directories to run it
 - **`inmates-plus`** (high) — Use when you have a `name` and want to check whether someone is or was incarcerated in a US state or county facility — returns `address` (fa
 - **`international-organization-for-standardization-catalogue`** (medium) — Use when you have an `employer-org` or a standard number and want to confirm which ISO standards apply/are cited — returns `document-id` sta
-- **`kilos-darknet-search-engine`** (low) — OSINT tool: KILOS Darknet Search Engine.
+- **`kilos-darknet-search-engine`** (low) — Use when you have a darknet vendor `username`, `crypto-wallet`, or product term and want marketplace listings and vendor profiles — returns 
 - **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
 - **`mail2tor`** (low) — OSINT tool: Mail2Tor.
 - **`medina-county-auditor`** (medium) — Use when you have a `name` or `address` in Medina County, Ohio and want property records — returns owner `name`, `address`, parcel/valuation

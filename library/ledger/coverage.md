@@ -2,41 +2,41 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7510 total · 4748 full · 2762 stub (63% enriched)
+**Tools:** 7509 total · 4756 full · 2753 stub (63% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3586 · high: 1964 · medium: 1960
+low: 3585 · high: 1964 · medium: 1960
 
 ## Tools by trust
-community: 3507 · unverified: 2398 · trusted: 1596 · untrustworthy: 6 · personal: 3
+community: 3508 · unverified: 2395 · trusted: 1597 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 38/453
+- `ai-analysis-automation` — 39/453
 - `archives-cache` — 84/124
 - `communities-forums` — 237/289
-- `dark-web` — 37/110
+- `dark-web` — 38/109
 - `dating-classifieds` — 78/90
 - `documents-metadata` — 54/306
 - `domains-ip-infrastructure` — 170/694
 - `email` — 245/246
 - `evidence-capture` — 12/29
 - `financial-crypto` — 54/110
-- `geolocation` — 290/340
+- `geolocation` — 291/340
 - `image-video-face` — 439/452
 - `maps-geospatial-data` — 69/123
 - `messaging` — 178/184
-- `opsec-investigator-tooling` — 59/551
+- `opsec-investigator-tooling` — 60/551
 - `people-search` — 256/258
 - `phone` — 134/137
 - `public-records` — 854/1011
-- `search-engines` — 489/788
+- `search-engines` — 491/788
 - `social-networks` — 721/787
 - `training-ctf` — 5/12
-- `translation-language` — 22/101
-- `transportation` — 121/211
+- `translation-language` — 23/101
+- `transportation` — 122/211
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -58,7 +58,7 @@ community: 3507 · unverified: 2398 · trusted: 1596 · untrustworthy: 6 · pers
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
 - `library/tools/archives-cache` — 109 leaves
-- `library/tools/dark-web` — 99 leaves
+- `library/tools/dark-web` — 98 leaves
 - `library/tools/dating-classifieds` — 92 leaves
 - `library/tools/financial-crypto` — 92 leaves
 - `library/tools/translation-language` — 87 leaves

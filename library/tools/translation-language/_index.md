@@ -76,7 +76,7 @@ kind: group-index
 - **`quotes-net`** (low) — Language-related search for famous quotes and popular sayings
 - **`reddit-r-translator`** (low) — OSINT tool: Reddit/r/translator.
 - **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
-- **`reverso-free-online-translator`** (low) — Tool for translating text and web content from one language to another
+- **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
 - **`riverside-com`** (low) — OSINT tool: riverside.com.
 - **`scphillips-morse-code-translator`** (low) — Tool for translating morse code
 - **`signing-savvy-sign-language-translator`** (low) — Translates English text to sign language

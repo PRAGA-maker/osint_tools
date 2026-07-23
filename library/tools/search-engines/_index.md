@@ -68,7 +68,7 @@ kind: group-index
 - **`asian-development-bank`** (low) — Use when you have an `employer-org`, project, or contractor tied to development work in Asia-Pacific and want official project, procurement,
 - **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
 - **`ask-metafilter`** (low) — Use when you have a `username`, `name`, or niche question and want a long-lived Q&A community's answers — returns posts, member profiles, an
-- **`ask`** (low) — OSINT tool: Ask.
+- **`ask`** (low) — Use when you want a secondary general web search for a `name`/term to catch results the big engines rank differently — returns web links, so
 - **`athlinks`** (medium) — Use when you have a `name` and want a subject's endurance-race history — returns race results with dates, `geolocation`, finish times, and a
 - **`australian-bureau-of-statistics`** (low) — Use when you have an Australian place or demographic question and want official census/population data — returns area statistics that frame 
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
@@ -444,7 +444,7 @@ kind: group-index
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — OSINT tool: Newsnow.
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
-- **`newspaperindex`** (low) — OSINT tool: Newspaperindex.
+- **`newspaperindex`** (low) — Use when you have a place or region and want its local/national newspapers to search for a `name` or event — returns a directory of online n
 - **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
 - **`newswhip`** (low) — OSINT tool: NewsWhip.
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school

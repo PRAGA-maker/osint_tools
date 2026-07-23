@@ -324,7 +324,7 @@ kind: group-index
 - **`wiman`** (low) — OSINT tool: Wiman.
 - **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce
 - **`world-population-density-map`** (medium) — Use when you have a place (`geolocation`) and want fine-grained population-density context down to towns and metros — returns an interactive
-- **`worldcam`** (low) — OSINT tool: WorldCam.
+- **`worldcam`** (low) — Use when you have a `geolocation`/place and want live public webcams there to verify conditions or activity — returns live streams tied to a
 - **`worldmap-harvard`** (low) — Use when you need specialized GIS data layers (historical, demographic, environmental) overlaid on a base map to add context to a location, 
 - **`worldtimebuddy-com`** (low) — Use when you have a post/message timestamp and a candidate `geolocation` and want to convert between time zones — helps infer a subject's lo
 - **`worldtimelapse-mapping-website`** (high) — Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — return
