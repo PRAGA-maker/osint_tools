@@ -482,7 +482,7 @@ kind: group-index
 - **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`venmo-mobile-payment-app-mobile-android`** (low) — App for mobile devices for mobile payment services
 - **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
-- **`video-downloadhelper`** (low) — Browser add-on for Firefox and Chrome that downloads videos
+- **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
 - **`view-exif-data-online-remove-exif-online`** (low) — OSINT tool: View Exif data online, remove Exif online.
 - **`vin-generator`** (low) — OSINT tool: VIN Generator.
 - **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed

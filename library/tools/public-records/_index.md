@@ -302,7 +302,7 @@ kind: group-index
 - **`finance-ni-gov-uk`** (high) — Use when you have a Northern Ireland property `address` and want its official valuation/rating record — returns the property's capital value
 - **`financial-conduct-authority`** (low) — OSINT tool: Financial Conduct Authority.
 - **`financialplanning-org-uk`** (high) — Use when you have a `name`, firm or UK location and want to confirm a certified financial planner — returns the planner's name, firm/employe
-- **`fincen-msb-registrant-search`** (low) — OSINT tool: FinCEN MSB Registrant Search.
+- **`fincen-msb-registrant-search`** (low) — Use when you have a business `name` (or a person tied to one) and want to check whether it registered with FinCEN as a money services busine
 - **`find-a-prisoner`** (high) — Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public d
 - **`find-a-teacher`** (medium) — Use when you have a `name` and want to confirm someone is a certified Ontario teacher — returns certification status, qualifications, and an
 - **`findagraveinscotland-com`** (high) — Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), c
@@ -666,7 +666,7 @@ kind: group-index
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
 - **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.
 - **`openpayrolls-com`** (medium) — Use when you have a `name` and want a subject's public-sector salary, job title, and employer — returns employer-org, address (locale), and 
-- **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
+- **`opensanctions-org`** (low) — Use when you have a `name` (person or company) and want to check it against global sanctions, PEP, and watchlist data — returns matches with
 - **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
 - **`optical-org`** (medium) — Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registrati
 - **`oregon-dpsst-professional-standards-cases-database`** (medium) — Use when you have a `name` of an Oregon public-safety professional and want disciplinary/decertification records — returns document-backed `

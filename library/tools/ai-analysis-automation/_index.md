@@ -154,7 +154,7 @@ kind: group-index
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
 - **`gitguardian-public-github-monitoring`** (low) — OSINT tool: GitGuardian - Public GitHub Monitoring.
 - **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
-- **`github-search`** (low) — collection of Github investigation command line tools. Explore users, employes, endpoints,surveys and grab the repos
+- **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`gitpod-io`** (low) — run code from repositories on Github directly in a browser
 - **`glit`** (low) — OSINT tool: Glit.
 - **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
@@ -219,7 +219,7 @@ kind: group-index
 - **`live-demo`** (low) — OSINT tool: Live demo.
 - **`localfocus`** (low) — OSINT tool: LocalFocus.
 - **`lockbin`** (low) — OSINT tool: Lockbin.
-- **`logseq`** (low) — Logseq is an open-source knowledge management tool that enables users to organize their notes, tasks, and projects.
+- **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — OSINT tool: lol_monitor.
 - **`lucidchart`** (low) — OSINT tool: Lucidchart.
 - **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
@@ -284,7 +284,6 @@ kind: group-index
 - **`outwit`** (low) — OSINT tool: Outwit.
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
 - **`palladio`** (low) — OSINT tool: Palladio.
-- **`passiverecon`** (low) — OSINT tool: PassiveRecon.
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
 - **`peerblock`** (low) — OSINT tool: Peerblock.
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti

@@ -90,7 +90,7 @@ kind: group-index
 - **`eventbrite-united-states`** (low) — Website related to event management and ticket sales
 - **`evite`** (low) — Website related to event invitation and party planning
 - **`evuln`** (low) — Program that provides multiple tools and programs to prevent website hacking and protective monitoring
-- **`exif-app`** (low) — Press "Diff check button", upload two graphical images and get a comparison table of their metadata. The differences are highlighted in yell
+- **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
 - **`exif-py`** (low) — get exif data of photos thrue command line
 - **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).

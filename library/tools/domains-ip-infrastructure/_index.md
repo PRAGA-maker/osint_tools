@@ -278,7 +278,7 @@ kind: group-index
 - **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.
 - **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
-- **`metadetective`** (low) — A simple tool that analyzes the metadata of files in a specific directory and extracts important information from them (names of document cr
+- **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host
 - **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
 - **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
