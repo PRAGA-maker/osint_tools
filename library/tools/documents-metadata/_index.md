@@ -75,7 +75,7 @@ kind: group-index
 - **`designcrowd`** (low) — Graphic design outsourcing website
 - **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time
 - **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
-- **`diigo`** (low) — Website related to social networking and bookmarking activities allowing users to tag and share bookmarked pages with other users in the com
+- **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
 - **`documentcloud`** (low) — OSINT tool: DocumentCloud.
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
@@ -190,7 +190,6 @@ kind: group-index
 - **`paste-search`** (low) — OSINT tool: Paste Search.
 - **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
-- **`pdfdrive`** (low) — PDF/book search index.
 - **`pdfmyurl`** (low) — Saves webpages as a PDF
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr

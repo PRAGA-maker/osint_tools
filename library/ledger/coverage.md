@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7393 total · 5170 full · 2223 stub (69% enriched)
+**Tools:** 7391 total · 5177 full · 2214 stub (70% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3437 · medium: 1992 · high: 1964
+low: 3435 · medium: 1992 · high: 1964
 
 ## Tools by trust
-community: 3487 · unverified: 2156 · trusted: 1741 · untrustworthy: 6 · personal: 3
+community: 3489 · unverified: 2149 · trusted: 1744 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -19,23 +19,23 @@ community: 3487 · unverified: 2156 · trusted: 1741 · untrustworthy: 6 · pers
 - `communities-forums` — 240/286
 - `dark-web` — 46/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 95/296
-- `domains-ip-infrastructure` — 306/670
+- `documents-metadata` — 96/295
+- `domains-ip-infrastructure` — 309/670
 - `email` — 245/246
 - `evidence-capture` — 15/29
-- `financial-crypto` — 59/105
+- `financial-crypto` — 59/104
 - `geolocation` — 294/340
 - `image-video-face` — 443/451
-- `maps-geospatial-data` — 82/123
+- `maps-geospatial-data` — 83/123
 - `messaging` — 180/184
 - `opsec-investigator-tooling` — 101/526
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 883/1004
 - `search-engines` — 520/768
-- `social-networks` — 734/784
+- `social-networks` — 735/784
 - `training-ctf` — 6/12
-- `translation-language` — 27/100
+- `translation-language` — 28/100
 - `transportation` — 138/207
 - `username` — 102/104
 
@@ -50,7 +50,7 @@ community: 3487 · unverified: 2156 · trusted: 1741 · untrustworthy: 6 · pers
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
 - `library/tools/communities-forums` — 283 leaves
-- `library/tools/documents-metadata` — 250 leaves
+- `library/tools/documents-metadata` — 249 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 189 leaves
@@ -60,7 +60,7 @@ community: 3487 · unverified: 2156 · trusted: 1741 · untrustworthy: 6 · pers
 - `library/tools/archives-cache` — 105 leaves
 - `library/tools/dark-web` — 97 leaves
 - `library/tools/dating-classifieds` — 92 leaves
-- `library/tools/financial-crypto` — 88 leaves
+- `library/tools/financial-crypto` — 87 leaves
 - `library/tools/translation-language` — 86 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/evidence-capture` — 23 leaves

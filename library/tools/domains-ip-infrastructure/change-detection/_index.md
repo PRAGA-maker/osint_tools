@@ -10,7 +10,7 @@ kind: group-index
 - **`change-detection`** (low) — Self-hosted page change monitoring
 - **`changedetect`** (low) — Use when you have a web page (profile, listing, notice) and want to be alerted when its content changes — returns dated change diffs/snapsho
 - **`follow-that-page`** (low) — Tracking updates on specific web pages by keyword
-- **`urlwatch`** (low) — Self-hosted web page change monitoring automation
+- **`urlwatch`** (low) — Use when you have a `domain`/URL (or JSON API) you want to monitor for changes over time — a self-hosted CLI that alerts you when a page's c
 - **`visualping`** (low) — Use when you have a `domain`/URL (a profile, listing, or org page) and want to be alerted when it changes — returns visual/text diffs and ch
 - **`watchthatpage`** (low) — Monitoring static web pages for updates over time
 

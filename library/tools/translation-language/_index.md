@@ -12,7 +12,7 @@ kind: group-index
 - **`text/`** — 11 skill(s) below.
 
 ## Skills here
-- **`abbreviations-com`** (low) — Language-related search engine focusing on abbreviations and acronyms
+- **`abbreviations-com`** (low) — Use when you have an unknown acronym or abbreviation from a document/chat/handle and want its expansions — returns candidate meanings to dec
 - **`acronym-finder`** (low) — Language-related search engine focusing on acronyms
 - **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
 - **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing

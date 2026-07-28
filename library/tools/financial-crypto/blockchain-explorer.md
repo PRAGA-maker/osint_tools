@@ -40,7 +40,6 @@ source: osint4all
 lastVerified: '2026-07-23'
 enrichment: full
 relatedTools:
-- blockchain-com
 ---
 
 # Blockchain.com Explorer
@@ -68,7 +67,7 @@ You have a `crypto-wallet` address (or a transaction hash) surfaced from a scam,
 - OpSec: passive (reading public data), but your lookups hit blockchain.com from your IP — use a sock-puppet/VPN for sensitive addresses and never transact with a target address.
 
 ## Overlaps ("do both")
-- Pairs with `[[blockchain-com]]` and dedicated clustering/attribution services — this explorer gives the raw on-chain trail, while attribution tools try to tie addresses to exchanges or real-world identities.
+- Pairs with dedicated clustering/attribution services — this explorer gives the raw on-chain trail, while attribution tools try to tie addresses to exchanges or real-world identities.
 
 ## Trust & verifiability
 `trust: trusted` — a long-standing, widely-used explorer rendering authoritative data straight from the blockchain; the data is reliable, but identity attribution is not something it provides.

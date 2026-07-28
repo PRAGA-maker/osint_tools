@@ -20,7 +20,7 @@ kind: group-index
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
 - **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
-- **`cat-uxo`** (low) — A repository for professionals working in the explosive ordnance disposal (EOD) space.
+- **`cat-uxo`** (low) — Use when you have an `image` of a suspected munition/ordnance and want to identify it — a reference database of bombs, mines, rockets, and I
 - **`cites-trade-database`** (low) — Use when you have a species, country or `employer-org` in a wildlife-trafficking case and want the official record of legal international wi
 - **`convert-geographic-units`** (low) — Use when you have a `geolocation` in one coordinate format and want it in another (DD, DMS, UTM, NATO) across map datums — returns the conve
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (medium) — Use when you have a `geolocation`/`address` and want recent satellite imagery of it — returns free Sentinel/Copernicus imagery by location a

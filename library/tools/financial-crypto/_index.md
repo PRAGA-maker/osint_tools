@@ -32,7 +32,6 @@ kind: group-index
 - **`bitcoin-org`** (medium) — Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — retur
 - **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —
 - **`bitinfocharts-com`** (medium) — Use when you have a `crypto-wallet` address (or a name/exchange label) and want its balance, transaction activity, wealth rank, and public o
-- **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
 - **`blockchain-explorer`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want its full on-chain history — balance, transactions and counterpartie
 - **`blockchair-com`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterpar
 - **`blockcypher`** (low) — OSINT tool: Blockcypher.

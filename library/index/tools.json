@@ -50577,41 +50577,50 @@
   {
     "id": "diigo",
     "name": "Diigo",
-    "description": "Website related to social networking and bookmarking activities allowing users to tag and share bookmarked pages with other users in the community",
+    "description": "Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for their bookmarks — returns saved links/notes.",
     "url": "https://www.diigo.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Bookmarking, highlighting, and archiving web pages as an investigator; also reading a target's public bookmarks.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier with limits (bookmarks, highlights, cached copies); paid plans raise limits and add features.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Two modes. As a research tool, use a sock-puppet Diigo account and keep your libraries PRIVATE — public libraries leak your entire research trail. As a lookup, viewing a target's *public* bookmarks is passive and doesn't alert them.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running mainstream bookmarking service; reliable as a tool. Any target-profile data is user-published and only as complete as what they chose to share publicly.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "diigo.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "Useful Websites, Tools & Documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/diigo.md"
   },
   {
@@ -56786,50 +56795,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/pdfs/pdf-tools.md"
-  },
-  {
-    "id": "pdfdrive",
-    "name": "PDFDrive",
-    "description": "PDF/book search index.",
-    "url": "https://www.pdfdrive.net/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "Search a large index of PDF documents and books.",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "documents",
-      "pdf",
-      "books"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/pdfdrive.md"
   },
   {
     "id": "pdfmyurl",
@@ -67630,41 +67595,51 @@
   {
     "id": "dnsviz",
     "name": "DNSViz",
-    "description": "Visual DNSSEC validation and DNS misconfiguration analysis",
+    "description": "Use when you have a `domain` and want a visual, authoritative analysis of its DNS/DNSSEC chain and misconfigurations — returns a diagnosed `domain` DNS/DNSSEC map.",
     "url": "https://dnsviz.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "dnssec"
     ],
-    "bestFor": "Visual DNSSEC validation and DNS misconfiguration analysis",
-    "input": "Domain name",
-    "output": "DNS resolution graphs, DNSSEC status, and validation diagnostics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visualizing and diagnosing a domain's DNSSEC chain of trust and DNS delegation problems.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public tool (and open-source; can be self-hosted/run as a CLI).",
     "opsec": "passive",
-    "opsecNote": "Analysis runs against public DNS infrastructure without direct interaction with domain owners.",
+    "opsecNote": "DNSViz's servers perform the DNS queries against the authoritative nameservers, so you never contact the target directly — passive from your side. Only the domain name is submitted. Results are publicly viewable by URL, so don't treat a submitted domain as secret.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely used, well-regarded DNSSEC analysis tool (originated at Sandia National Labs, now community-maintained); its diagnostics are authoritative for DNS/DNSSEC.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "dnssec-analyzer",
+      "verisign"
+    ],
+    "aliases": [
+      "dnsviz.net"
+    ],
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dnssec/dnsviz.md"
   },
   {
@@ -79051,42 +79026,52 @@
   },
   {
     "id": "nvd-nist",
-    "name": "NVD - NIST",
-    "description": "OSINT tool: NVD - NIST.",
+    "name": "NVD (NIST National Vulnerability Database)",
+    "description": "Use when you have a software product, version, or CVE ID and want authoritative vulnerability details and severity — returns CVE records, CVSS scores, and affected-product data.",
     "url": "https://nvd.nist.gov/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "advisories"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Authoritative lookup of CVEs, CVSS severity, and affected software versions for a product.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free US-government resource; open data plus a free public API (rate-limited without a free key).",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you query NIST's public database about software/CVEs, not any target system. No login for browsing; an optional free API key raises rate limits.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The US government's authoritative vulnerability database (NIST); the reference source for CVE enrichment and CVSS scoring.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "NVD",
+      "nvd.nist.gov",
+      "National Vulnerability Database"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "advisories"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/advisories/nvd-nist.md"
   },
   {
@@ -87681,42 +87666,51 @@
   },
   {
     "id": "urlwatch",
-    "name": "Urlwatch",
-    "description": "Self-hosted web page change monitoring automation",
+    "name": "urlwatch",
+    "description": "Use when you have a `domain`/URL (or JSON API) you want to monitor for changes over time — a self-hosted CLI that alerts you when a page's content changes; returns diffs of what changed.",
     "url": "https://github.com/thp/urlwatch",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "change-detection"
     ],
-    "bestFor": "Self-hosted web page change monitoring automation",
-    "input": "URLs, feeds, and local watch configuration",
-    "output": "Diffs and alerts through email, console, or integrations",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Automated, self-hosted monitoring of web pages/APIs for content changes, with notifications.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Can run locally or on controlled infrastructure, allowing investigators to manage request origin and monitoring cadence.",
+    "costNote": "Free, open-source Python CLI (install via pip); you run it yourself.",
+    "opsec": "active",
+    "opsecNote": "Each check fetches the target URL from YOUR host, so the site's server sees your requests on your polling schedule — that repetition can be noticed. Route through a proxy/sock-puppet and use a sane interval; add filters so you only diff the content you care about.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Mature, well-maintained open-source project (thp/urlwatch) with a large user base; reliable and transparent.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "urlwatch",
+      "thp urlwatch"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "change-detection"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/change-detection/urlwatch.md"
   },
   {
@@ -107067,49 +107061,6 @@
     "_file": "library/tools/financial-crypto/bitcoin/bitref.md"
   },
   {
-    "id": "blockchain-com",
-    "name": "Blockchain.com",
-    "description": "OSINT tool: Blockchain.com.",
-    "url": "https://www.blockchain.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "blockchain-explorer"
-    ],
-    "_file": "library/tools/financial-crypto/blockchain-com.md"
-  },
-  {
     "id": "blockchain-explorer",
     "name": "Blockchain.com Explorer",
     "description": "Use when you have a `crypto-wallet` address or transaction hash and want its full on-chain history — balance, transactions and counterparties — returning linked `crypto-wallet` addresses to pivot on.",
@@ -107156,9 +107107,7 @@
     "source": "osint4all",
     "lastVerified": "2026-07-23",
     "enrichment": "full",
-    "relatedTools": [
-      "blockchain-com"
-    ],
+    "relatedTools": null,
     "_file": "library/tools/financial-crypto/blockchain-explorer.md"
   },
   {
@@ -152202,38 +152151,48 @@
   {
     "id": "cat-uxo",
     "name": "CAT-UXO",
-    "description": "A repository for professionals working in the explosive ordnance disposal (EOD) space.",
+    "description": "Use when you have an `image` of a suspected munition/ordnance and want to identify it — a reference database of bombs, mines, rockets, and IEDs; returns type/identification data.",
     "url": "https://cat-uxo.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying explosive ordnance (bombs, mines, submunitions, rockets, IEDs) from reference photos and specs.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core reference database is free to browse; some lessons/contribution features sit behind free membership.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the reference library is passive and reveals nothing about your investigation. This is identification reference only — never act on a real-world device; report suspected ordnance to qualified EOD authorities.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A specialist EOD community knowledge base; well-regarded within the demining/EOD field, but a community resource — corroborate identifications with authoritative references.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "conflict"
+    "relatedTools": [],
+    "aliases": [
+      "cat-uxo.com",
+      "Counter-terrorism and UXO"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "maps-and-geospatial"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/cat-uxo.md"
   },
   {
@@ -308213,29 +308172,30 @@
   },
   {
     "id": "find-github-user-id-caius",
-    "name": "Find Github User ID (caius)",
-    "description": "Get a GitHub user's unique numeric identifier.",
+    "name": "Find GitHub User ID (caius)",
+    "description": "Use when you have a GitHub `username` and want its stable numeric user ID — returns the immutable ID that survives renames, letting you track an account across username changes.",
     "url": "http://caius.github.io/github_id",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Resolving a GitHub username to its numeric ID",
+    "bestFor": "Converting a GitHub username to its permanent numeric user ID (and vice-versa) to defeat renames.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free client-side page; uses the public GitHub API.",
+    "opsec": "passive",
+    "opsecNote": "The lookup calls GitHub's public API for the username — passive and unauthenticated. It does not notify the account owner. Runs in your browser; nothing is stored by the tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A tiny single-purpose utility by GitHub user Caius Durling; it just wraps the official GitHub API, so results are as authoritative as the API itself.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -308244,14 +308204,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "github",
-      "id-lookup"
+    "relatedTools": [],
+    "aliases": [
+      "github user id lookup",
+      "caius github_id"
     ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "social-networks"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/find-github-user-id-caius.md"
   },
   {
@@ -341552,41 +341515,44 @@
   {
     "id": "abbreviations-com",
     "name": "Abbreviations.com",
-    "description": "Language-related search engine focusing on abbreviations and acronyms",
+    "description": "Use when you have an unknown acronym or abbreviation from a document/chat/handle and want its expansions — returns candidate meanings to decode jargon, org names, and codes.",
     "url": "http://www.abbreviations.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding an acronym or abbreviation into its possible full meanings across many domains.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search (part of the STANDS4 reference network); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You're looking up a generic abbreviation in a public dictionary — no target is involved and nothing sensitive is exposed. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large community/crowd-contributed acronym dictionary (STANDS4); comprehensive but crowd-sourced, so expansions are candidates to judge in context, not authoritative.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
+    "relatedTools": [],
+    "aliases": [
+      "abbreviations.com",
+      "STANDS4 abbreviations"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "translation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/abbreviations-com.md"
   },
   {
