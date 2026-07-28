@@ -2,37 +2,37 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7321 total · 5370 full · 1951 stub (73% enriched)
+**Tools:** 7318 total · 5379 full · 1939 stub (73% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3352 · medium: 2005 · high: 1964
+low: 3348 · medium: 2006 · high: 1964
 
 ## Tools by trust
-community: 3485 · unverified: 2015 · trusted: 1812 · untrustworthy: 6 · personal: 3
+community: 3483 · unverified: 2012 · trusted: 1814 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 116/437
-- `archives-cache` — 95/119
+- `ai-analysis-automation` — 120/435
+- `archives-cache` — 96/119
 - `communities-forums` — 242/286
 - `dark-web` — 48/106
 - `dating-classifieds` — 80/90
 - `documents-metadata` — 111/290
-- `domains-ip-infrastructure` — 359/663
-- `email` — 245/246
+- `domains-ip-infrastructure` — 359/662
+- `email` — 246/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 67/100
 - `geolocation` — 298/338
 - `image-video-face` — 446/451
-- `maps-geospatial-data` — 93/123
+- `maps-geospatial-data` — 94/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 123/512
+- `opsec-investigator-tooling` — 124/512
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 896/1000
-- `search-engines` — 536/760
+- `search-engines` — 537/760
 - `social-networks` — 740/778
 - `training-ctf` — 6/12
 - `translation-language` — 34/96
@@ -46,7 +46,7 @@ community: 3485 · unverified: 2015 · trusted: 1812 · untrustworthy: 6 · pers
 - `library/tools/search-engines` — 710 leaves
 - `library/tools/opsec-investigator-tooling` — 492 leaves
 - `library/tools/domains-ip-infrastructure` — 441 leaves
-- `library/tools/ai-analysis-automation` — 406 leaves
+- `library/tools/ai-analysis-automation` — 404 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 323 leaves
 - `library/tools/communities-forums` — 283 leaves

@@ -29,7 +29,7 @@ kind: group-index
 - **`app-store-scraper`** (low) — get the most detailed metadata about the app from AppStore
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
 - **`arbor-js`** (low) — OSINT tool: Arbor.js.
-- **`arkhammirror`** (low) — OSINT tool: ArkhamMirror.
+- **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
 - **`ashok`** (low) — Swiff knife for #osint
 - **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
@@ -52,7 +52,6 @@ kind: group-index
 - **`awk-js`** (low) — AWK (script language) is a powerful command line tool for extracting data from texts and auto generating texts. For those who don't use CLI 
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
-- **`beaker`** (low) — OSINT tool: Beaker.
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — OSINT tool: Bellingcat.
@@ -258,7 +257,7 @@ kind: group-index
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
-- **`osint-explorer`** (low) — OSINT framework for intelligence gathering.
+- **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
 - **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
 - **`osint-harvester`** (low) — Lightweight OSINT toolkit that collects and normalizes intelligence from multiple sources.
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
@@ -337,7 +336,6 @@ kind: group-index
 - **`serpscan`** (low) — OSINT tool: SerpScan.
 - **`shanti-interactive`** (low) — OSINT tool: Shanti Interactive.
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
-- **`shrewdeye`** (low) — Online versions of popular command line #osint tools: Amass, SubFinder, AssetFinder, GAU, DNSX
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sintelix`** (low) — OSINT tool: Sintelix.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
@@ -373,7 +371,7 @@ kind: group-index
 - **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
-- **`tik-tok`** (low) — OSINT tool: Tik-tok.
+- **`tik-tok`** (low) — Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualiz
 - **`tiki-toki`** (low) — Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/p
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
 - **`timeflow`** (low) — OSINT tool: Timeflow.

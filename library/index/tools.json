@@ -599,37 +599,53 @@
   {
     "id": "arkhammirror",
     "name": "ArkhamMirror",
-    "description": "OSINT tool: ArkhamMirror.",
+    "description": "Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timelines, and link graphs.",
     "url": "https://github.com/mantisfury/ArkhamMirror",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Local-first, AI-assisted analysis of document sets — entity extraction, timelines, and network graphs.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open source; self-hosted via Docker/local install (your own compute; optional local or API LLM).",
+    "opsec": "passive",
+    "opsecNote": "Explicitly local-first and air-gap capable — documents stay on your machine and nothing is exported unless you choose to. If you wire it to a cloud LLM API, your document text goes to that provider; keep it fully local for sensitive material.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Actively-maintained open-source project (also branded \"SHATTERED\"); a capable community tool but not an accredited forensics product — verify its AI-derived findings.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SHATTERED",
+      "mantisfury/ArkhamMirror"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "document-analysis",
+      "entity-extraction"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/arkhammirror.md"
   },
   {
@@ -1565,42 +1581,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/bazzellpy.md"
-  },
-  {
-    "id": "beaker",
-    "name": "Beaker",
-    "description": "OSINT tool: Beaker.",
-    "url": "http://beakernotebook.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/beaker.md"
   },
   {
     "id": "bellingcat",
@@ -9157,31 +9137,32 @@
   {
     "id": "microsoft-flow",
     "name": "Microsoft Flow",
-    "description": "Orchestrating OSINT workflows across multiple platforms/APIs",
+    "description": "Use when you need to automate multi-step OSINT collection across APIs — returns scheduled/triggered workflows that call connectors and export results.",
     "url": "https://flow.microsoft.com/en-us/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Orchestrating OSINT workflows across multiple platforms/APIs",
-    "input": "Multiple connector inputs (email, web APIs, databases, spreadsheets)",
-    "output": "Automated workflow results, notifications, report exports",
+    "bestFor": "No-code orchestration of recurring OSINT tasks across email, web APIs, and spreadsheets.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Freemium — a free tier exists, but useful automation quotas and premium connectors require a paid Power Automate / Microsoft 365 plan.",
     "opsec": "passive",
-    "opsecNote": "Cloud-hosted Microsoft service; log all activities",
+    "opsecNote": "Investigator-side automation hosted in Microsoft's cloud. Everything your flows touch (queried selectors, fetched pages, results) transits and is logged by Microsoft — do not route sensitive targets or attributable credentials through it; keep collection to non-sensitive, scheduled tasks.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft product (renamed Power Automate in 2019); reliable as software, though it is a general automation platform, not an OSINT-specific tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -9189,11 +9170,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Power Automate",
+      "MS Flow"
+    ],
+    "tags": [
+      "automation",
+      "workflow",
+      "osint-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/microsoft-flow.md"
   },
   {
@@ -10691,13 +10679,13 @@
   {
     "id": "osint-explorer",
     "name": "OSINT-Explorer",
-    "description": "OSINT framework for intelligence gathering.",
+    "description": "Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`, and `ip-address` results.",
     "url": "https://github.com/gowthamaraj/OSINT-Explorer",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "General-purpose OSINT gathering",
+    "bestFor": "A lightweight self-hosted framework that chains common recon lookups from one interface.",
     "selectorsIn": [
       "username",
       "email",
@@ -10709,15 +10697,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source; self-hosted (your own compute). Some underlying lookups may need free API keys.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Mostly passive database/API lookups, but depending on the modules enabled it may hit third-party services that log the selector you query. Run from an isolated environment and review which modules make active requests before pointing it at a sensitive target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Small community framework (22 stars).",
+    "trustNote": "A small single-maintainer GitHub project (low star count); auditable but modest and not widely battle-tested — treat as a convenience wrapper over better-known tools.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -10726,14 +10715,17 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "gowthamaraj/OSINT-Explorer"
+    ],
     "tags": [
       "framework",
-      "multi-tool"
+      "multi-tool",
+      "recon"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-explorer.md"
   },
   {
@@ -14209,42 +14201,6 @@
     "_file": "library/tools/ai-analysis-automation/shellcheck-net.md"
   },
   {
-    "id": "shrewdeye",
-    "name": "ShrewdEye",
-    "description": "Online versions of popular command line #osint tools: Amass, SubFinder, AssetFinder, GAU, DNSX",
-    "url": "https://shrewdeye.app/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools collections/toolkits"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/shrewdeye.md"
-  },
-  {
     "id": "silent-circle",
     "name": "Silent circle",
     "description": "OSINT tool: Silent circle.",
@@ -15943,37 +15899,44 @@
   {
     "id": "tik-tok",
     "name": "Tik-tok",
-    "description": "OSINT tool: Tik-tok.",
+    "description": "Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualization library, not subject data).",
     "url": "https://datanews.github.io/tik-tok",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building simple, mobile-friendly vertical timelines to visualise a sequence of events.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (JavaScript library on GitHub).",
+    "opsec": "passive",
+    "opsecNote": "Investigator-side visualization. It runs client-side from data you supply (a spreadsheet/CSV of events) and involves no target interaction. Keep the underlying case data local; if you publish the timeline, review it for anything sensitive first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An open-source timeline library by DataNews (a newsroom data team); mature enough to use but a small, journalism-oriented utility, not an OSINT-specific tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Tik Tok timeline",
+      "datanews tik-tok"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "timeline"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tik-tok.md"
   },
   {
@@ -18958,37 +18921,49 @@
   {
     "id": "bridge-suumitsu",
     "name": "Bridge.Suumitsu",
-    "description": "OSINT tool: Bridge.Suumitsu.",
+    "description": "Use when a site/social profile has no RSS and you want to monitor it — returns a generated RSS/Atom feed of its updates for change-tracking.",
     "url": "https://bridge.suumitsu.eu",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Generating RSS feeds from sites that don't offer them, so you can monitor a target's updates.",
+    "selectorsIn": [
+      "social-profile",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public RSS-Bridge instance; no account. Being a hosted instance, uptime and the set of working bridges vary.",
+    "opsec": "passive",
+    "opsecNote": "Passive monitoring — the public instance server fetches the target site to build the feed, so requests come from the instance, not you. Note the instance operator sees which feeds you create; for sensitive monitoring, self-host RSS-Bridge instead of using someone else's server.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-run public instance of the open-source RSS-Bridge project; the software is trusted, but any single hosted instance can go down or fall behind.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RSS-Bridge (suumitsu instance)",
+      "bridge.suumitsu.eu"
+    ],
     "tags": [
-      "web-monitoring"
+      "web-monitoring",
+      "rss"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/bridge-suumitsu.md"
   },
   {
@@ -80693,46 +80668,6 @@
     "_file": "library/tools/domains-ip-infrastructure/ipv4/port-scanner-online.md"
   },
   {
-    "id": "portmap",
-    "name": "Portmap",
-    "description": "Port scanning and service discovery",
-    "url": "https://portmap.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "host-port-discovery"
-    ],
-    "bestFor": "Port scanning and service discovery",
-    "input": "IP address or hostname",
-    "output": "Open ports, service types, versions",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Active port scanning probes target network.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/portmap.md"
-  },
-  {
     "id": "privacy-net-privacy-analyzer",
     "name": "Privacy.net Privacy Analyzer",
     "description": "Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerprint, and which sites you're logged into.",
@@ -93377,48 +93312,52 @@
   {
     "id": "cleantalk-email-ip-check",
     "name": "CleanTalk Email/IP Check",
-    "description": "Free email/IP spam-blacklist reputation check.",
+    "description": "Use when you have an `email` or `ip-address` and want its spam/abuse reputation — returns blacklist status and whether it's been seen in spam activity.",
     "url": "https://cleantalk.org/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Check an email/IP against spam blacklists.",
+    "bestFor": "Checking whether an email address or IP appears on spam blacklists / has an abuse history.",
     "selectorsIn": [
       "email",
       "ip-address"
     ],
     "selectorsOut": [
-      "email"
+      "email",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The email/IP blacklist lookups are free with no account; CleanTalk's anti-spam SaaS and API are paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reputation lookup against CleanTalk's own database — the email/IP owner is never contacted, so no signal reaches the subject. Your query is logged by CleanTalk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial anti-spam vendor's free lookup; the blacklist reflects CleanTalk's own crowd-sourced spam data, useful as a signal but not an authoritative registry.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "CleanTalk"
+      "CleanTalk",
+      "cleantalk blacklist"
     ],
     "tags": [
       "email",
       "spam",
-      "blacklist"
+      "blacklist",
+      "ip-reputation"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/email/cleantalk-email-ip-check.md"
   },
   {
@@ -152448,38 +152387,50 @@
   {
     "id": "cryo-tools",
     "name": "CryO Tools",
-    "description": "Scientific tools for investigating the cryosphere (areas with snow & ice)",
+    "description": "Use when an investigation involves snow/ice/glacier terrain — returns open-source scientific software for modelling and analysing the cryosphere.",
     "url": "https://cryo-tools.org/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding open-source software to analyse glaciers, snow, ice, and other cryosphere data.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; a directory pointing to open-source scientific tools (OGGM, COSIPY, OSARIS, etc.).",
+    "opsec": "passive",
+    "opsecNote": "Passive — a public directory of scientific software; no target interaction. Any geospatial analysis you run is on public satellite/climate datasets, not on a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A curated hub of established, peer-used cryospheric-science software; the listed tools come from academic/research communities.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CryoTools",
+      "cryo-tools.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "cryosphere",
+      "geospatial"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/cryo-tools.md"
   },
   {
@@ -185222,39 +185173,46 @@
   },
   {
     "id": "tobloef-com",
-    "name": "Tobloef.com",
-    "description": "text to mind map",
+    "name": "Tobloef.com (Text2MindMap)",
+    "description": "Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not subject data).",
     "url": "https://tobloef.com/text2mindmap/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly converting an indented outline into a shareable mind-map diagram.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account required for basic use.",
+    "opsec": "passive",
+    "opsecNote": "Investigator-side note-visualization. Whatever you type is entered into a third-party web page — keep sensitive subject details out of it, or use a local/offline mind-mapping tool for anything confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small personal web utility (tobloef.com); fine for structuring your own notes, but not an accredited or auditable tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Text2MindMap",
+      "text2mindmap"
+    ],
     "tags": [
       "NOOSINT tools",
-      "Visualization tools"
+      "Visualization tools",
+      "mind-map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/tobloef-com.md"
   },
   {
@@ -266855,35 +266813,48 @@
   {
     "id": "blogs-search-engine",
     "name": "Blogs Search Engine",
-    "description": "OSINT tool: Blogs Search Engine.",
+    "description": "Use when you have a `name`/`username`/keyword and want a person's blog posts — returns matching blog articles and author `social-profile`s.",
     "url": "https://cse.google.com/cse?cx=013991603413798772546:8c1g6f0frp8#gsc.tab=0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching across blogging platforms at once for a person's posts or a topic.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — results come from Google's index, so you never hit the blog hosts directly and the author gets no signal. Standard Google-query hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine scoped to blogging sites; coverage is defined by the CSE's creator and can drift or break over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "blog search CSE"
+    ],
+    "tags": [
+      "google-cse",
+      "blogs"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/blogs-search-engine.md"
   },
   {

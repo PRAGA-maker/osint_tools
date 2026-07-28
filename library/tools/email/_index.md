@@ -36,7 +36,7 @@ kind: group-index
 - **`briteverify-email-verification`** (medium) — Use when you have an email address and want to confirm it is real/deliverable (mailbox exists, domain valid) — returns a deliverability verd
 - **`buster`** (high) — Use when you have an `email` and want linked accounts, breaches, pastes and reverse-WHOIS domains — returns social-profile, name and domain 
 - **`checkleaked-cc`** (high) — Use when you have an email, username, password, IP, or domain and want to find it across aggregated breach datasets — returns matching breac
-- **`cleantalk-email-ip-check`** (low) — Free email/IP spam-blacklist reputation check.
+- **`cleantalk-email-ip-check`** (low) — Use when you have an `email` or `ip-address` and want its spam/abuse reputation — returns blacklist status and whether it's been seen in spa
 - **`contacthelp-com`** (low) — Use when you want company customer-service contact details (phone, support email); despite its breach-site tag it is a consumer contact dire
 - **`credenshow`** (high) — Use when you have an email, username, phone, or domain and want to search aggregated breach/credential datasets — returns matching leaked re
 - **`cybernews-personal-data-leak-check`** (medium) — Use when you have an `email` and want to know if it appears in known breaches — returns how many leaks it's in and which categories of data 

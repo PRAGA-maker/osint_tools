@@ -24,7 +24,7 @@ kind: group-index
 - **`cites-trade-database`** (low) — Use when you have a species, country or `employer-org` in a wildlife-trafficking case and want the official record of legal international wi
 - **`convert-geographic-units`** (low) — Use when you have a `geolocation` in one coordinate format and want it in another (DD, DMS, UTM, NATO) across map datums — returns the conve
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (medium) — Use when you have a `geolocation`/`address` and want recent satellite imagery of it — returns free Sentinel/Copernicus imagery by location a
-- **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
+- **`cryo-tools`** (low) — Use when an investigation involves snow/ice/glacier terrain — returns open-source scientific software for modelling and analysing the cryosp
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
 - **`earth`** (medium) — Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocat
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.

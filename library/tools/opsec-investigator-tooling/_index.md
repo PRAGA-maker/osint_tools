@@ -413,7 +413,7 @@ kind: group-index
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`tinywall-windows-firewall-enhancement`** (low) — Program that enhances security by offering extra firewall protection
-- **`tobloef-com`** (low) — text to mind map
+- **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.
 - **`tor`** (low) — Browser protects against tracking, surveillance, and censorship

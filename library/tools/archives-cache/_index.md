@@ -29,7 +29,7 @@ kind: group-index
 - **`bellingcat-tiktok-hashtag-analysis`** (low) — Archive content and metadata from TikTok posts that contain one or more specified hashtags
 - **`blackwidow`** (medium) — Use when you have a `domain`/website and want to mirror or harvest it — a Windows site scanner that crawls a target site and extracts its li
 - **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
-- **`bridge-suumitsu`** (low) — OSINT tool: Bridge.Suumitsu.
+- **`bridge-suumitsu`** (low) — Use when a site/social profile has no RSS and you want to monitor it — returns a generated RSS/Atom feed of its updates for change-tracking.
 - **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as
 - **`carbon-dating-the-web`** (low) — Use when you have a URL/`domain` and want to estimate when the page was created — returns an inferred creation date from archives, shortener
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
