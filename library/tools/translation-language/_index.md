@@ -42,7 +42,6 @@ kind: group-index
 - **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
 - **`get-otter-ai`** (low) — OSINT tool: get.otter.ai.
 - **`gizoogle-textilizer`** (low) — Tool for translating English to street slang
-- **`global-language-monitor`** (low) — Language-related website with articles that focus on language data, language statistics, and language trends
 - **`google-quest-visual-wordlens`** (low) — Tool for translating words found in images from one language to another
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
 - **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another

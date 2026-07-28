@@ -250,7 +250,7 @@ kind: group-index
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
 - **`oryon-osint-query-tool`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens
-- **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.
+- **`oscobo-search-engine`** (low) — Use when you want to run web searches without personalization/tracking — returns web results from a privacy search engine that stores no que
 - **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
 - **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan

@@ -235,7 +235,7 @@ kind: group-index
 - **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
 - **`r4ven`** (medium) — Use when a subject will open a link you control and you want their precise `geolocation`, real `ip-address`, and `device-id` — returns those
 - **`radio-locator`** (low) — OSINT tool: Radio-Locator.
-- **`radio-sherlock`** (low) — OSINT tool: Radio-Sherlock.
+- **`radio-sherlock`** (low) — Use when you have a radio callsign/term and want related amateur-radio data — returns search results across DX/ham-radio sources, useful for
 - **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
 - **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa
 - **`radioreference`** (low) — OSINT tool: RadioReference.

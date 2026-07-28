@@ -266,7 +266,7 @@ kind: group-index
 - **`tutpaste`** (medium) — Use when you have a `username`/`email` and want to check a pastebin for leaked text, dumps or code tied to it — returns public paste content
 - **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — Use when you have a `username` or `name` of a UK small-business owner and want their forum footprint — returns the linked `social-profile`, 
-- **`unogs-com`** (low) — Netflix search without registration
+- **`unogs-com`** (low) — Use when you need to know which countries a Netflix title streams in — returns per-country catalog availability (a region-verification aid, 
 - **`usa-today-news`** (medium) — Use when you have a `name` and want US national or local news coverage — returns articles and obituaries naming people, relatives and dates.
 - **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (low) — Use when you have a `vaultb.in` paste link (or find one referenced by a subject) and want to read its contents — may return email, password,

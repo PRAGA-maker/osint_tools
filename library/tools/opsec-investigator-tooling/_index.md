@@ -69,7 +69,6 @@ kind: group-index
 - **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
-- **`bunker-is`** (low) — OSINT tool: Bunker.is.
 - **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
 - **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
 - **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
@@ -141,7 +140,6 @@ kind: group-index
 - **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fakeinfo`** (low) — Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, W
-- **`falcon-arch-linux`** (low) — OSINT tool: Falcon Arch Linux.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
 - **`fedora-security-lab`** (low) — OSINT tool: Fedora Security Lab.
