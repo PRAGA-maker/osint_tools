@@ -215,7 +215,7 @@ kind: group-index
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host de
 - **`infrapedia`** (low) — Use when you have a `geolocation`, city, or network/`domain` and want to map the physical internet — data centers, submarine cables, IXPs, f
-- **`instantdomainsearch`** (low) — search for domains for sale
+- **`instantdomainsearch`** (low) — Use when you have a `domain` name idea and want instant availability + who owns taken ones — returns registration status and links to for-sa
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
 - **`internet-census-2012`** (low) — Use when you need a historical 2012 snapshot of an `ip-address`/`domain` — returns that era's reverse-DNS, open-port and geolocation records
 - **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
@@ -291,7 +291,7 @@ kind: group-index
 - **`name-com-bulk-search`** (low) — Use when you have a `domain` or brand stem and want to see, across many TLDs and permutations at once, which variants are registered vs avai
 - **`name-com-united-states`** (low) — Use when you have a `domain` and want registration/availability and WHOIS basics — returns registrar/availability data and (redacted) WHOIS 
 - **`namecheap-united-states`** (medium) — Use when you have a `domain` and want registration/availability and WHOIS details — returns registrar, registration status, and any unredact
-- **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
+- **`ndorker`** (low) — Use when you have a `domain` and want an automated dorking sweep — returns Google/GitHub/Shodan/vendor dork results exposing exposed assets 
 - **`neilpatel-backlinks-analyzer`** (low) — Use when you have a `domain`/page and want to see which other sites link to it — returns referring `domain`s and backlink details, exposing 
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
 - **`netcraft`** (low) — Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domai

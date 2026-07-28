@@ -114,7 +114,7 @@ kind: group-index
 - **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
-- **`maritime-awareness-project`** (low) — OSINT tool: Maritime Awareness Project.
+- **`maritime-awareness-project`** (low) — Use when you have an Asia-Pacific maritime `geolocation` and want claims/incident context — returns an interactive map of territorial disput
 - **`maritime-database`** (low) — Use when you have a vessel name, port, or shipping-company name and want directory details linking ships, ports and maritime companies — ret
 - **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve

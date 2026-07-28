@@ -46867,29 +46867,31 @@
   {
     "id": "secretfans",
     "name": "SecretFans",
-    "description": "Search engine for OnlyFans creators.",
+    "description": "Use when you have a `name`/`username` or traits and want a subject's OnlyFans presence — returns matching creator `social-profile`s.",
     "url": "https://secretfans.net/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "Searching OnlyFans creators",
+    "bestFor": "Finding OnlyFans creator profiles by keyword, niche, location, or popularity.",
     "selectorsIn": [
       "name",
-      "username"
+      "username",
+      "geolocation"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for searchers; creators can list free, with paid featured/top placement (so ranking is partly paid).",
+    "opsec": "passive",
+    "opsecNote": "Passive keyword search against the site's index — the creator is never contacted. Adult-content platform; use a puppet browser and handle any subject's identity/consent/legal context with care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party aggregator not affiliated with OnlyFans; index completeness is unknown and paid placement skews rankings, so results are leads, not confirmation.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -46898,15 +46900,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "onlysearch-co"
+    ],
+    "aliases": [
+      "secretfans.net"
+    ],
     "tags": [
       "onlyfans",
       "creator-search",
       "adult"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/secretfans.md"
   },
   {
@@ -72860,42 +72867,49 @@
   {
     "id": "instantdomainsearch",
     "name": "InstantDomainSearch",
-    "description": "search for domains for sale",
+    "description": "Use when you have a `domain` name idea and want instant availability + who owns taken ones — returns registration status and links to for-sale/WHOIS info.",
     "url": "https://instantdomainsearch.com/domain/sale",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Instantly checking whether a domain is registered, available, or for sale across many TLDs.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search availability across TLDs; monetised via registrar/marketplace referral links (buying a domain costs money, searching doesn't).",
+    "opsec": "passive",
+    "opsecNote": "Passive — availability checks query registry/DNS data, not the domain owner, so no signal reaches a target. Your typed searches are seen by the service; avoid typing sensitive investigation-specific names you don't want logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial domain-search/marketplace tool; availability data is reliable, but it exists to sell domains, so treat \"for sale\" prompts as sales funnels.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Instant Domain Search",
+      "instantdomainsearch.com"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Databases of domains"
+      "Databases of domains",
+      "domain-availability"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/instantdomainsearch.md"
   },
   {
@@ -78140,42 +78154,51 @@
   {
     "id": "ndorker",
     "name": "nDorker",
-    "description": "Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, Codepen, Codeshare and other sites (\"vendor dorking\")",
+    "description": "Use when you have a `domain` and want an automated dorking sweep — returns Google/GitHub/Shodan/vendor dork results exposing exposed assets and info.",
     "url": "https://github.com/nerrorsec/nDorker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Automating Google, GitHub, Shodan, and vendor dorking against a target domain.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Python CLI); some engines may need free API keys (e.g. Shodan).",
+    "opsec": "active",
+    "opsecNote": "The dorks run against live search engines and services (Google, GitHub, Shodan). You are not touching the target's own servers, but the queries are logged by those platforms and can be rate-limited/blocked — run from a puppet environment and mind API-key attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source community tool (nerrorsec, ~200+ stars); auditable, but a small project — treat it as a convenience automator over well-known dork techniques.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "nDorker",
+      "Google-Dorker",
+      "nerrorsec/nDorker"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "dorking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ndorker.md"
   },
   {
@@ -155842,38 +155865,53 @@
   {
     "id": "police-records-access-project",
     "name": "Police Records Access Project",
-    "description": "A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and misconduct cases.",
+    "description": "Use when you have a California officer `name` or agency (`employer-org`) and want misconduct/use-of-force records — returns searchable internal-affairs documents.",
     "url": "https://clean.calmatters.org/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching California police misconduct, use-of-force, and shooting records by officer name or agency.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public database; no account required to search.",
+    "opsec": "passive",
+    "opsecNote": "Passive query against a public records database — the officer/agency is never contacted. These are lawfully-released public records, but they concern real people and serious allegations; handle findings responsibly and confirm identity before attributing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by UC Berkeley and Stanford and published jointly by CalMatters, the LA Times, SF Chronicle and KQED under California's Right to Know Act; sourced from official agency records.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CLEAN",
+      "CalMatters Police Records",
+      "California Police Records Access Project"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "conflict"
+      "conflict",
+      "police-records",
+      "public-records"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/police-records-access-project.md"
   },
   {
@@ -174070,42 +174108,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/freenet.md"
-  },
-  {
-    "id": "freshstart",
-    "name": "FreshStart",
-    "description": "multi-login browser extension",
-    "url": "https://chrome.google.com/webstore/detail/freshstart-cross-browser/nmidkjogcjnnlfimjcedenagjfacpobb?hl=ru",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/freshstart.md"
   },
   {
     "id": "generate-data",
@@ -226254,40 +226256,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/finland.md"
-  },
-  {
-    "id": "fivethirtyeight",
-    "name": "FiveThirtyEight",
-    "description": "OSINT tool: FiveThirtyEight.",
-    "url": "https://fivethirtyeight.com/?s=",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/fivethirtyeight.md"
   },
   {
     "id": "florida",
@@ -350513,35 +350481,49 @@
   {
     "id": "maritime-awareness-project",
     "name": "Maritime Awareness Project",
-    "description": "OSINT tool: Maritime Awareness Project.",
+    "description": "Use when you have an Asia-Pacific maritime `geolocation` and want claims/incident context — returns an interactive map of territorial disputes, imagery, and an incident timeline.",
     "url": "https://map.nbr.org/interactivemap/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Understanding maritime territorial claims, incidents, and features in the East/South China Seas.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no account required for the public interactive map and analyses.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive browsing of a public analytical map — no target interaction. It covers geopolitical/maritime features and states' claims, not individuals, so minimal personal-privacy exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Produced by the National Bureau of Asian Research with Sasakawa USA; an established think-tank resource with expert analysis, though claim depictions reflect analytical judgement.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MAP",
+      "NBR Maritime Awareness Project"
+    ],
+    "tags": [
+      "maritime",
+      "geopolitics",
+      "interactive-map"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/maritime-awareness-project.md"
   },
   {

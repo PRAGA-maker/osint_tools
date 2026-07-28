@@ -308,7 +308,6 @@ kind: group-index
 - **`findmypast-ie`** (high) — Use when you have a `name` and Irish ancestry/context and want historical records (census, BMD, church, migration) to build family and ident
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
 - **`finland`** (medium) — Use when you have a `name` or `employer-org` linked to Finland and want registered companies, officers and addresses — returns `employer-org
-- **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
 - **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
 - **`florida-residents-directory`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, rela
 - **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma

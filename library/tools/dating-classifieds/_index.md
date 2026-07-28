@@ -80,7 +80,7 @@ kind: group-index
 - **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.
 - **`search-tempest`** (high) — Use when you need to sweep Craigslist (and eBay) across many cities at once for a subject's listings, alias, or distinctive item — instead o
 - **`searchalljunk`** (high) — Use when you want to query multiple classifieds/marketplace sources from one box — a meta-search front-end for second-hand listings across p
-- **`secretfans`** (low) — Search engine for OnlyFans creators.
+- **`secretfans`** (low) — Use when you have a `name`/`username` or traits and want a subject's OnlyFans presence — returns matching creator `social-profile`s.
 - **`sotugas-net`** (medium) — Use when you have a `username` or `name` and want a Portuguese creator profile — returns a directory listing of Portugal-based OnlyFans crea
 - **`sotugas`** (low) — Portuguese OnlyFans directory.
 - **`spark-com`** (high) — Use when a subject may use a relationship-oriented dating site — search Spark by area/age/interests to surface a profile photo, bio, and app
