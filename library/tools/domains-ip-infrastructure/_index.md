@@ -342,7 +342,7 @@ kind: group-index
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
 - **`regexper`** (low) — Use when you have a regular expression and want to understand or debug it — pastes a regex and returns a railroad-diagram visualization; a h
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
-- **`remote-dns-lookup`** (low) — OSINT tool: Remote DNS Lookup.
+- **`remote-dns-lookup`** (low) — Use when you have an `ip-address` and want the domain name(s) and ISP behind it — returns reverse-DNS host and provider, a pivot from IP bac
 - **`repolist`** (low) — Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists fr
 - **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.

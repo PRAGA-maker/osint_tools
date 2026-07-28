@@ -53649,13 +53649,13 @@
   {
     "id": "imgonline-com-ua",
     "name": "imgonline.com.ua",
-    "description": "OSINT tool: imgonline.com.ua.",
+    "description": "Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns metadata and geolocation.",
     "url": "https://www.imgonline.com.ua/eng/exif-editor.php",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing and editing EXIF/IPTC/XMP metadata of a JPEG online, losslessly (no recompression).",
     "selectorsIn": [
       "image"
     ],
@@ -53663,29 +53663,40 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool, no account; part of imgonline.com.ua's large free image-utility collection.",
+    "opsec": "passive",
+    "opsecNote": "Uploading a subject's image sends it to a third-party server (imgonline is a Ukraine-based image-tools site). For sensitive or evidentiary photos, prefer a local tool (exiftool). Use its metadata-removal utilities on your OWN images before publishing to avoid leaking device/GPS data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular free image-utility site; reliable for casual metadata viewing/editing, but not an auditable forensic tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "view-exif-data-online-remove-exif-online"
+    ],
+    "aliases": [
+      "imgonline",
+      "imgonline.com.ua EXIF editor"
+    ],
     "tags": [
       "exifdata",
-      "EXIF Data Related Sites"
+      "EXIF Data Related Sites",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/imgonline-com-ua.md"
   },
   {
@@ -81821,37 +81832,50 @@
   {
     "id": "remote-dns-lookup",
     "name": "Remote DNS Lookup",
-    "description": "OSINT tool: Remote DNS Lookup.",
+    "description": "Use when you have an `ip-address` and want the domain name(s) and ISP behind it — returns reverse-DNS host and provider, a pivot from IP back to infrastructure.",
     "url": "https://remote.12dt.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-DNS lookup of an IP address to its associated domain/host and ISP.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; capped at ~75 lookups per 24 hours per user.",
+    "opsec": "passive",
+    "opsecNote": "You query the tool's resolver, not the target's server, so the subject is not alerted. It performs registry/PTR-style resolution; standard third-party site logging applies, so use a clean browser if you don't want the lookup tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small free utility; useful for a quick reverse lookup but corroborate results with an authoritative DNS/PTR query for anything decisive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "remote.12dt.com",
+      "reverse DNS lookup"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "reverse-dns"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/remote-dns-lookup.md"
   },
   {
@@ -167459,35 +167483,49 @@
   {
     "id": "10minutemail-com",
     "name": "10minutemail.com",
-    "description": "OSINT tool: 10minutemail.com.",
+    "description": "Use when you need a throwaway `email` inbox to receive a one-off verification code without exposing a real address — an investigator OpSec tool, not a lookup on a subject.",
     "url": "https://10minutemail.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Spinning up an instant, no-signup disposable inbox to catch a single confirmation/verification email.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core disposable inbox is free with no signup; a paid tier extends address lifetime and adds features. The free 10-minute (extendable) inbox covers most OpSec needs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Protects YOUR identity — no target is contacted. Anything sent to the inbox is readable by anyone with the address, so never route password resets or anything sensitive through it. Many sites block known disposable-mail domains, so it works for throwaway registrations only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running, widely-used disposable-mail service; treat every message in it as public and ephemeral.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "simplelogin"
+    ],
+    "aliases": [
+      "10 Minute Mail",
+      "10minutemail"
+    ],
+    "tags": [
+      "opsec",
+      "disposable-email",
+      "sock-puppet"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/10minutemail-com.md"
   },
   {
@@ -170170,37 +170208,50 @@
   {
     "id": "cardguru",
     "name": "CardGuru",
-    "description": "tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)",
+    "description": "Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds. Investigator OpSec, not a lookup.",
     "url": "https://cardguru.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating Luhn-valid, non-functional test card numbers to satisfy form-level card validation on throwaway/sock-puppet registrations.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single and bulk generation plus a validator; exports JSON/XML/CSV. No account.",
+    "opsec": "passive",
+    "opsecNote": "These are format-valid TEST numbers (Luhn/MOD-10) with NO funds behind them — they pass a form's syntax check but will never complete a real charge. Use only to get past a validation field on a legitimate sock-puppet signup; do NOT use them to attempt purchases, obtain paid goods/services, or defraud anyone — that is illegal and out of scope.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Simple free test-card generator implementing the public Luhn algorithm; nothing here is a real financial instrument.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "10minutemail-com",
+      "simplelogin"
+    ],
+    "aliases": [
+      "CardGuru",
+      "cardguru.io"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "opsec",
+      "test-card"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/cardguru.md"
   },
   {
@@ -171250,46 +171301,63 @@
   {
     "id": "decoding-social-security-numbers",
     "name": "Decoding Social Security Numbers",
-    "description": "OSINT tool: Decoding Social Security Numbers.",
+    "description": "Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal lead, not identity.",
     "url": "https://stevemorse.org/ssn/ssn.html",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Decoding the area/group digits of an older US Social Security Number to its likely state and approximate year of issue.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free single-page tool on Stephen Morse's One-Step site; no account, runs in the browser.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A local/in-browser lookup table — it computes from the number you enter and does not query any government system, so nothing is logged externally about the SSN. You are still handling sensitive PII; only enter an SSN you are lawfully entitled to process, and do so on a trusted machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of Stephen P. Morse's well-known One-Step genealogy toolset; the SSA numbering scheme it decodes only applies to SSNs issued before randomization in June 2011.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
+      "social-security-death-index",
+      "encoding-and-decoding-driver-s-license-numbers",
       "brooklyn-genealogy",
       "chicago-cook-county-genealogy",
-      "encoding-and-decoding-driver-s-license-numbers",
       "familysearch-s-united-states-record-collections",
       "new-jersey-voter-records",
       "new-york-state-prison-records",
       "new-york-state-voter-records",
-      "social-security-death-index",
       "street-name-changes"
     ],
+    "aliases": [
+      "SSN decoder",
+      "Stephen Morse SSN",
+      "One-Step SSN"
+    ],
+    "tags": [
+      "ssn",
+      "identity-analysis",
+      "genealogy"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/decoding-social-security-numbers.md"
   },
   {
@@ -180472,35 +180540,53 @@
   {
     "id": "pic-cic-code-database",
     "name": "PIC/CIC Code Database",
-    "description": "OSINT tool: PIC/CIC Code Database.",
+    "description": "Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — returns the telecom operator and its location.",
     "url": "https://www.allredtech.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a 4-digit PIC/CIC (Carrier Identification Code) to the long-distance carrier and location it belongs to.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free searchable database (Allred Tech); no account. Updated daily.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference-table lookup against Allred Tech's public database — no target infrastructure is touched and no subject is alerted. Standard third-party site logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing niche telecom reference billed as the most complete CIC database; useful for a specialised lookup, verify against the NANPA/telecom source if decisive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Allred Tech",
+      "Carrier Identification Code database",
+      "CIC lookup"
+    ],
+    "tags": [
+      "telecom",
+      "carrier-codes"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/pic-cic-code-database.md"
   },
   {
@@ -180998,24 +181084,25 @@
   {
     "id": "proxy-org",
     "name": "Proxy.org",
-    "description": "Listing of anonymous web proxies",
+    "description": "Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a lookup on a subject.",
     "url": "http://proxy.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A continuously-updated directory of thousands of public web proxies for disposable, low-attribution browsing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free directory; the listed proxies are third-party and free to use.",
+    "opsec": "active",
+    "opsecNote": "Public proxies are run by unknown operators who can log, inject, or alter everything you route through them — never send credentials, logins, or sensitive case data over one. Treat them as burner viewing paths only; for real anonymity use Tor or a vetted VPN, not a random public proxy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Proxy.org itself is a stable directory, but the proxies it lists are untrusted third parties of unknown provenance.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -181024,15 +181111,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "proxy.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "opsec"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/proxy-org.md"
   },
   {
@@ -186843,38 +186935,55 @@
   {
     "id": "view-exif-data-online-remove-exif-online",
     "name": "View Exif data online, remove Exif online",
-    "description": "OSINT tool: View Exif data online, remove Exif online.",
+    "description": "Use when you have an `image` and want to read its EXIF metadata (camera, timestamp, GPS on a map) or strip EXIF before sharing — returns metadata and geolocation.",
     "url": "http://www.verexif.com/en/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Quickly viewing a photo's EXIF (including GPS plotted on a map) and, separately, stripping EXIF from your own images before publishing.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; accepts uploads up to 20MB or an image URL.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Uploading a subject's photo sends it to a third-party server — the site states it does not store copies, but you are still handing the image to an external service; for sensitive material prefer a local tool (exiftool). Use the strip feature on your OWN images to remove GPS/camera data before you publish, so you don't leak your location.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Simple long-standing web EXIF viewer/remover; adequate for quick checks, but for evidentiary work verify with a local tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
+      "imgonline-com-ua",
       "verexif"
     ],
+    "aliases": [
+      "VerExif",
+      "verexif.com"
+    ],
+    "tags": [
+      "exifdata",
+      "metadata",
+      "geolocation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/view-exif-data-online-remove-exif-online.md"
   },
   {
@@ -247594,43 +247703,56 @@
   {
     "id": "pepchecker",
     "name": "PepChecker",
-    "description": "Screening individuals against PEP lists and international sanctions databases",
+    "description": "Use when you have a person's `name` and want to know if they are a politically exposed person or on a sanctions list — returns PEP/sanctions matches and exposure details.",
     "url": "https://pepchecker.com",
     "category": "public-records",
     "path": [
       "public-records",
       "sanctions-pep"
     ],
-    "bestFor": "Screening individuals against PEP lists and international sanctions databases",
-    "input": "Person name",
-    "output": "PEP match results, sanctions list matches, risk indicators, and political exposure details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast name screening against PEP and international sanctions lists (OFAC, DFAT and others) across 240+ countries.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "10 free PEP/sanctions searches on signup; beyond that, and for bulk screening, monitoring and API, is paid.",
     "opsec": "passive",
-    "opsecNote": "Web-based queries; registration required for workspace features. Subjects are not notified.",
+    "opsecNote": "You query PepChecker's databases, not the subject's own infrastructure, so the person is not notified. The search runs inside your account, so the query is logged to your identity — use an appropriate account for sensitive work.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial compliance vendor aggregating public PEP/sanctions lists; matches are name-based and need manual disambiguation and confirmation against the primary list.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PepChecker",
+      "pepchecker.com"
+    ],
+    "tags": [
+      "sanctions",
+      "pep",
+      "compliance-screening"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sanctions-pep/pepchecker.md"
   },
   {

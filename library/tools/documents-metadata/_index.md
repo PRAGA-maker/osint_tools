@@ -139,7 +139,7 @@ kind: group-index
 - **`hoverme`** (low) — Tool that uncovers social media profiles for individuals
 - **`identify-plans`** (low) — OSINT tool: Identify plans.
 - **`image-analyzer-addon`** (low) — View all images on a page and expose image properties, EXIF data, and one-click download
-- **`imgonline-com-ua`** (low) — OSINT tool: imgonline.com.ua.
+- **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
 - **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
 - **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations

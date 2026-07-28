@@ -13,7 +13,7 @@ kind: group-index
 - **`privacy-clean-up/`** — 9 skill(s) below.
 
 ## Skills here
-- **`10minutemail-com`** (low) — OSINT tool: 10minutemail.com.
+- **`10minutemail-com`** (low) — Use when you need a throwaway `email` inbox to receive a one-off verification code without exposing a real address — an investigator OpSec t
 - **`2-682-783-free-ai-generated-photos`** (low) — OSINT tool: 2,682,783 free AI generated photos.
 - **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
 - **`9-steps-to-security-in-the-digital-age`** (low) — Online privacy guide to security in the digital age
@@ -73,7 +73,7 @@ kind: group-index
 - **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
 - **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
-- **`cardguru`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
 - **`chepy`** (low) — Python command line version of CyberChef
@@ -99,7 +99,7 @@ kind: group-index
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
-- **`decoding-social-security-numbers`** (low) — OSINT tool: Decoding Social Security Numbers.
+- **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
 - **`deep-face-live`** (low) — Real-time face swap for streaming and video calls
 - **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
 - **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
@@ -301,7 +301,7 @@ kind: group-index
 - **`paxful`** (low) — OSINT tool: Paxful.
 - **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
-- **`pic-cic-code-database`** (low) — OSINT tool: PIC/CIC Code Database.
+- **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
 - **`pinterest-social-bookmarking-app-mobile-android`** (low) — App for mobile devices for social networking
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
 - **`plentyoffish-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
@@ -312,7 +312,7 @@ kind: group-index
 - **`privacy-net`** (low) — Listing of privacy resources
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
-- **`proxy-org`** (low) — Listing of anonymous web proxies
+- **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
 - **`pushbullet-management-extension-chrome`** (low) — Add-on for Google Chrome that coordinates online activities between several personal devices
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
@@ -447,7 +447,7 @@ kind: group-index
 - **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
 - **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
 - **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
-- **`view-exif-data-online-remove-exif-online`** (low) — OSINT tool: View Exif data online, remove Exif online.
+- **`view-exif-data-online-remove-exif-online`** (low) — Use when you have an `image` and want to read its EXIF metadata (camera, timestamp, GPS on a map) or strip EXIF before sharing — returns met
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
 - **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
