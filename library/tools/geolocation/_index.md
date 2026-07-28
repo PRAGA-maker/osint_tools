@@ -266,7 +266,6 @@ kind: group-index
 - **`sun-rise-noon-and-set-time-and-direction`** (medium) — Use when you have a candidate `geolocation` and a date and want the sun's azimuth/altitude to chrono-locate a photo by its shadows — returns
 - **`sunearthtools-com`** (medium) — Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun 
 - **`surging-seas-risk-zone-map`** (medium) — Use when you have a coastal `geolocation` and want its sea-level-rise/flood exposure — a contextual map layer, returns flood-risk `geolocati
-- **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.
 - **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map
 - **`taste-atlas`** (low) — Use when you have an `image` of an identifiable regional dish and want to narrow the `geolocation` where it's traditional — returns a countr
 - **`terrafly-map-united-states`** (high) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery

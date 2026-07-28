@@ -29,7 +29,6 @@ kind: group-index
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
 - **`charlieuk`** (low) — OSINT tool: CharlieUK.
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
-- **`credit-card-center`** (low) — OSINT tool: Credit Card Center.
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
 - **`dargle`** (low) — OSINT tool: Dargle.
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 

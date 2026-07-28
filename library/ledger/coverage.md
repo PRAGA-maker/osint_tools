@@ -2,37 +2,37 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7295 total · 5448 full · 1847 stub (74% enriched)
+**Tools:** 7292 total · 5453 full · 1839 stub (74% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3324 · medium: 2007 · high: 1964
+low: 3321 · medium: 2007 · high: 1964
 
 ## Tools by trust
-community: 3474 · unverified: 1986 · trusted: 1826 · untrustworthy: 6 · personal: 3
+community: 3474 · unverified: 1982 · trusted: 1827 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 125/432
+- `ai-analysis-automation` — 126/432
 - `archives-cache` — 96/119
 - `communities-forums` — 244/286
-- `dark-web` — 49/104
+- `dark-web` — 49/103
 - `dating-classifieds` — 82/90
 - `documents-metadata` — 116/290
-- `domains-ip-infrastructure` — 376/660
+- `domains-ip-infrastructure` — 378/660
 - `email` — 246/246
 - `evidence-capture` — 16/29
-- `financial-crypto` — 71/100
-- `geolocation` — 300/338
+- `financial-crypto` — 71/99
+- `geolocation` — 300/337
 - `image-video-face` — 446/451
-- `maps-geospatial-data` — 96/123
+- `maps-geospatial-data` — 97/123
 - `messaging` — 181/184
 - `opsec-investigator-tooling` — 137/503
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 900/999
-- `search-engines` — 540/757
+- `search-engines` — 541/757
 - `social-networks` — 740/776
 - `training-ctf` — 6/12
 - `translation-language` — 39/95
@@ -58,10 +58,10 @@ community: 3474 · unverified: 1986 · trusted: 1826 · untrustworthy: 6 · pers
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
 - `library/tools/archives-cache` — 104 leaves
-- `library/tools/dark-web` — 94 leaves
+- `library/tools/dark-web` — 93 leaves
 - `library/tools/dating-classifieds` — 92 leaves
 - `library/tools/username` — 86 leaves
-- `library/tools/financial-crypto` — 84 leaves
+- `library/tools/financial-crypto` — 83 leaves
 - `library/tools/translation-language` — 81 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves

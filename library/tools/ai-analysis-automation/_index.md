@@ -278,7 +278,7 @@ kind: group-index
 - **`peerblock`** (low) — OSINT tool: Peerblock.
 - **`personal-security-checklist`** (low) — Use when you (or a source/witness) need to harden digital privacy and security — a comprehensive, prioritized checklist of concrete protecti
 - **`perspective`** (low) — Use when you have a large or streaming dataset (call records, transactions, scraped rows) and want to pivot, chart, and explore it interacti
-- **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
+- **`pgpkeyanalyser`** (low) — Use when you have a PGP/OpenPGP public key and want the identities baked into it — returns `name`, `email`, and key metadata (fingerprint, d
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.

@@ -548,7 +548,7 @@ kind: group-index
 - **`search-engine-colossus`** (low) — International directory of search engines
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
 - **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
-- **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
+- **`search-engines-scraper`** (low) — Use when you have a `name`, `username`, or `email` and want to sweep many engines at once — returns aggregated result URLs (`social-profile`
 - **`search-it`** (medium) — Use when you have one selector and want to query it fast across many engines/platforms — returns a single-page launcher for Google, Bing, Re
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
 - **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi

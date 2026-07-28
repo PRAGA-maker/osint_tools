@@ -173,7 +173,7 @@ kind: group-index
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
-- **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
+- **`ghost-eye`** (low) — Use when you have a `domain` or `ip-address` and want a menu-driven recon sweep — returns WHOIS, DNS, open ports, CMS, and `geolocation`.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
 - **`gitgraber`** (low) — Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials 
 - **`go-dork`** (low) — Use when you have a `domain` (or a dork query) and want to automate Google/Bing/etc. dorking from the CLI — returns matching URLs and `domai
@@ -229,7 +229,7 @@ kind: group-index
 - **`ip-chicken`** (low) — Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.
 - **`ip-geo-location-lookup`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/region/city, coordinates, ISP and AS
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
-- **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools
+- **`ip-investigation-toolbox`** (low) — Use when you have an `ip-address` and want many lookups at once — returns `geolocation`, routing, open ports, and threat/host data from 15 s
 - **`ip-location-io`** (low) — OSINT tool: IP Location.io.
 - **`ip-neighbors`** (low) — Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `dom
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
