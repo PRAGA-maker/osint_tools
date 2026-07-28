@@ -78,7 +78,7 @@ kind: group-index
 - **`merlin`** (low) — Identify birds (visually), through an app.
 - **`military-bases-around-the-world-umap`** (medium) — Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `g
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
-- **`movebank`** (low) — Platform for animal tracking data.
+- **`movebank`** (low) — Use when you have a species, region or research `geolocation` question and want animal-tracking datasets — returns tagged-animal movement tr
 - **`nasa-firms`** (low) — Use when you have a `geolocation`/`address` and a date and want satellite thermal-anomaly data — returns mapped fire/heat detections to corr
 - **`nasa-worldview`** (low) — Use when you have a `geolocation`/date and want near-real-time or historical full-Earth satellite imagery for that spot — returns daily glob
 - **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name

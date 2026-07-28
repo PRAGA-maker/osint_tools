@@ -572,7 +572,7 @@ kind: group-index
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
 - **`seosly-com`** (medium) — Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working s
 - **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
-- **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
+- **`seznam-czech-republic`** (low) — Use when you have a `name`, `username` or Czech `address`/business term and want results a global engine misses — returns Czech-language web
 - **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
 - **`sharkscope`** (medium) — Use when you have a poker `username` and want to confirm and profile the player behind it — returns tournament history, results and country,
 - **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con

@@ -171,7 +171,7 @@ kind: group-index
 - **`fediverse`** (high) — Use when a subject may be on decentralized social networks and you need to know which platforms/instances exist — a guide to the Fediverse (
 - **`fidonet-nodelist`** (medium) — Use when you have a person's name or a rough location tied to old BBS/FidoNet activity and want to find their sysop node entry — returns a `
 - **`find-github-user-id-caius`** (low) — Use when you have a GitHub `username` and want its stable numeric user ID — returns the immutable ID that survives renames, letting you trac
-- **`find-instagram-user-id-code-of-a-ninja`** (low) — Get an Instagram numeric ID from a username.
+- **`find-instagram-user-id-code-of-a-ninja`** (low) — Use when you have an Instagram `username` and want its permanent numeric user ID — returns the immutable account ID that survives handle ren
 - **`find-instagram-user-id`** (medium) — Use when you have an Instagram `username` and want its stable numeric account ID — returns the numeric Instagram user ID that persists acros
 - **`find-my-facebook-id-2`** (high) — Use when you have a Facebook profile/page/group URL or vanity name and want its stable numeric ID — returns the numeric Facebook ID for use 
 - **`find-my-facebook-id-3`** (high) — Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile ag

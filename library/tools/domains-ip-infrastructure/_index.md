@@ -229,7 +229,7 @@ kind: group-index
 - **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
 - **`ip-checking`** (low) — OSINT tool: IP Checking.
 - **`ip-chicken`** (low) — Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.
-- **`ip-geo-location-lookup`** (low) — OSINT tool: IP GEO Location Lookup.
+- **`ip-geo-location-lookup`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/region/city, coordinates, ISP and AS
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
 - **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools
 - **`ip-location-io`** (low) — OSINT tool: IP Location.io.
@@ -334,7 +334,7 @@ kind: group-index
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
-- **`radb`** (low) — Provides information collected from all the registries that form part of the Internet Routing Registry
+- **`radb`** (low) — Use when you have an `ip-address`, prefix or ASN and want its Internet Routing Registry records — returns the registered route objects, orig
 - **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
 - **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 
 - **`raymond`** (low) — Framework for gathering information about website

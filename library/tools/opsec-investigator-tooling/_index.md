@@ -459,7 +459,7 @@ kind: group-index
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
 - **`username-generator`** (low) — OSINT tool: Username Generator.
 - **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
-- **`venmo-mobile-payment-app-mobile-android`** (low) — App for mobile devices for mobile payment services
+- **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
 - **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
 - **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
 - **`view-exif-data-online-remove-exif-online`** (low) — OSINT tool: View Exif data online, remove Exif online.

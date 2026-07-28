@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`analyzeid`** (low) — Pivoting from shared tracking IDs to related domains
 - **`builtwith`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack, trackers, and hosting/analytics IDs — returns pivotable `d
-- **`criminal-ip-search`** (low) — Threat-focused lookup of internet-facing assets and exposures
+- **`criminal-ip-search`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, risk score and hosting context — returns asset fing
 - **`kraken`** (low) — CLI-driven reconnaissance against domain and host assets
 - **`online-nikto-scanner`** (low) — Web server vulnerability scanning
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior

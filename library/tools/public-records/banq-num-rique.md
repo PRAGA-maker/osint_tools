@@ -32,7 +32,14 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj
+- association-assq-qc-ca
+- rechercher-par-entreprise
+- rechercher-par-r-gion-ou-type-de-travaux
+- rechercher-par-r-pondant
+- services-en-ligne
+- trouver-une-d-cision
 aliases:
 - BAnQ
 - Bibliothèque et Archives nationales du Québec
