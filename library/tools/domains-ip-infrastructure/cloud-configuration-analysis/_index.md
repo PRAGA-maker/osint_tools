@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/cloud-configuration-analysis
 
 ## Skills here
-- **`checkov`** (low) — Shift-left cloud misconfiguration detection in IaC repositories
+- **`checkov`** (low) — Use when you have a `domain`/org's infrastructure-as-code repo and want to find its cloud misconfigurations — returns policy violations with
 - **`cloud-custodian`** (low) — Automated cloud governance and continuous configuration enforcement
 - **`prowler`** (low) — Broad cloud security and compliance baseline assessments
 - **`scoutsuite`** (low) — Use when you have credentials to a cloud account (AWS/Azure/GCP/etc.) and want a read-only security-posture audit — returns an HTML report o

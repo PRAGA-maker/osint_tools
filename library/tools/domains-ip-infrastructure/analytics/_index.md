@@ -14,7 +14,6 @@ kind: group-index
 - **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
 - **`sitedossier`** (low) — Quick domain intelligence aggregation
 - **`siteliner`** (low) — Use when you have a `domain` and want a content/link audit — returns duplicate-content matches, broken links and page inventory for the site
-- **`sitesleuth`** (low) — Tracking code intelligence and related domain discovery
 - **`spyonweb`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID, IP or nameserver) and want to find other sites run by the same owner — retur
 - **`statscrop`** (low) — Use when you have a `domain` and want a quick popularity/traffic snapshot plus WHOIS and site stats — returns estimated rank, ownership and 
 - **`visual-site-mapper`** (low) — Generating website structure maps

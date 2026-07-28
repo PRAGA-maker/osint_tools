@@ -14149,37 +14149,45 @@
   {
     "id": "shellcheck-net",
     "name": "shellcheck.net",
-    "description": "analyzes command-line scripts and explains in detail the errors found in them",
+    "description": "Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings explaining each issue.",
     "url": "https://www.shellcheck.net/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Linting and explaining bash/sh scripts online or via CLI during analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (GPLv3); the web version and the CLI are both free with no account.",
+    "opsec": "passive",
+    "opsecNote": "Investigator-side/analysis tool. If you paste a script into the web version, that text leaves your machine and hits shellcheck.net — do NOT paste sensitive or attributable script content there; install the CLI and run it locally for anything confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely-used GPLv3 open-source project (koalaman/shellcheck) packaged in most Linux distros and integrated into major editors.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ShellCheck",
+      "shellcheck"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "static-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/shellcheck-net.md"
   },
   {
@@ -16266,35 +16274,47 @@
   {
     "id": "torrent-to-magnet",
     "name": "Torrent to Magnet",
-    "description": "OSINT tool: Torrent to Magnet.",
+    "description": "Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.",
     "url": "https://nutbread.github.io/t2m/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a .torrent file into a magnet URI (and its infohash) without uploading it anywhere.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source, static web page; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive and client-side — the conversion runs in JavaScript in your browser, so the .torrent file never leaves your machine and no server sees it. Safe for analysing a torrent file you obtained without tipping off anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small open-source GitHub Pages utility (nutbread/t2m); code is public and does the hashing locally, but it is a hobby project with no ongoing guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "t2m",
+      "torrent2magnet"
+    ],
+    "tags": [
+      "utility",
+      "torrents"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/torrent-to-magnet.md"
   },
   {
@@ -23799,42 +23819,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/data-leaks/wikileaks.md"
-  },
-  {
-    "id": "winds",
-    "name": "Winds",
-    "description": "OSINT tool: Winds.",
-    "url": "http://winds.getstream.io",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/winds.md"
   },
   {
     "id": "world-cat",
@@ -64574,29 +64558,34 @@
   {
     "id": "checkov",
     "name": "Checkov",
-    "description": "Shift-left cloud misconfiguration detection in IaC repositories",
+    "description": "Use when you have a `domain`/org's infrastructure-as-code repo and want to find its cloud misconfigurations — returns policy violations with severity and remediation.",
     "url": "https://github.com/bridgecrewio/checkov",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "cloud-configuration-analysis"
     ],
-    "bestFor": "Shift-left cloud misconfiguration detection in IaC repositories",
-    "input": "IaC source files, templates, and configuration manifests",
-    "output": "Policy violations with severity and remediation context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Statically scanning Terraform/CloudFormation/Kubernetes IaC for insecure cloud settings.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (Apache-2.0). A managed SaaS tier (Prisma Cloud / former Bridgecrew) exists but the CLI scanner is fully free.",
     "opsec": "passive",
-    "opsecNote": "Analyzes local code/config files without probing target cloud environments directly.",
+    "opsecNote": "Passive — it parses local IaC files (e.g. a target org's public GitHub repo you have cloned) and never touches the live cloud environment, so the target sees nothing. Only analyse code you are authorised to review.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Widely-adopted open-source scanner (bridgecrewio/checkov, now under Palo Alto/Prisma Cloud) with thousands of built-in policies and an active community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -64604,11 +64593,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "checkov",
+      "bridgecrew checkov"
+    ],
+    "tags": [
+      "iac-security",
+      "cloud-misconfiguration",
+      "static-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cloud-configuration-analysis/checkov.md"
   },
   {
@@ -84292,46 +84288,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/siteliner.md"
-  },
-  {
-    "id": "sitesleuth",
-    "name": "SiteSleuth",
-    "description": "Tracking code intelligence and related domain discovery",
-    "url": "https://www.sitesleuth.io/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "analytics"
-    ],
-    "bestFor": "Tracking code intelligence and related domain discovery",
-    "input": "Domain, Google Analytics ID, AdSense ID, or Stripe key",
-    "output": "List of associated domains and tracking codes",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive intelligence from indexed tracking identifiers; no direct queries to targets",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/analytics/sitesleuth.md"
   },
   {
     "id": "skype-resolver",
@@ -156451,49 +156407,58 @@
   {
     "id": "tencent-maps",
     "name": "Tencent Maps",
-    "description": "Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offering satellite imagery, street maps, street view (coverage) and historical view perspectives.",
+    "description": "Use when you have an `address`/`geolocation` in China and want local maps, satellite and street-level imagery — returns Chinese-optimized `geolocation` context.",
     "url": "http://map.qq.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Street/satellite/point-of-interest mapping inside mainland China where Western maps are sparse.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the web map; developer APIs require a Tencent account/key but the consumer map does not.",
+    "opsec": "passive",
+    "opsecNote": "Passive map browsing. Note this is a Chinese platform (Tencent) — assume queries may be logged under PRC jurisdiction; browse from a puppet/VPN session and expect the UI and POI data to be Chinese-language. Chinese maps use the GCJ-02 (\"Mars\") coordinate offset, so lat/long will not align with WGS-84 sources.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party Tencent product (formerly SOSO Maps); authoritative for China coverage but a commercial Chinese service, not an independent/verifiable open dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "cn"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "maps"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "qzone",
       "qzone-china",
       "tencent-com",
       "tencent-qq-mail"
     ],
+    "aliases": [
+      "腾讯地图",
+      "SOSO Maps",
+      "map.qq.com"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "maps",
+      "china"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/tencent-maps.md"
   },
   {
@@ -158470,28 +158435,32 @@
   {
     "id": "chattoday",
     "name": "ChatToday",
-    "description": "Online chat platform for connecting and chatting with people.",
+    "description": "Use when you have a `username`/`name` and want a person's messaging-app handles — returns self-listed Kik/Snapchat/Telegram/Discord `social-profile`s and location.",
     "url": "https://chattoday.com",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "General chat platform (limited OSINT use)",
+    "bestFor": "Finding a person's cross-app messaging handles (Kik, Snapchat, Telegram, Discord) from a public profile directory.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; posting your own profile requires a free account.",
+    "opsec": "passive",
+    "opsecNote": "Passive browsing of a public directory — you read self-posted profiles and never contact the subject. Profiles are user-submitted and often tied to people seeking chat/dating contacts, so handle the data (and any minors' presence) with care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small user-generated chat-directory site; profiles are self-submitted and unverified, with no authority behind the identity claims.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -158500,14 +158469,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ChatToday.com"
+    ],
     "tags": [
       "chat",
-      "messaging"
+      "messaging",
+      "username-directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/messaging/chattoday.md"
   },
   {
@@ -244477,40 +244449,53 @@
   {
     "id": "oecd-aid-database",
     "name": "OECD Aid Database",
-    "description": "OSINT tool: OECD Aid Database.",
+    "description": "Use when you have an `employer-org` (donor/agency/NGO) and want its official development-aid flows — returns funding records by donor, recipient, sector and year.",
     "url": "http://www.oecd.org/dac/stats/data.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracing official development assistance (ODA) flows between donors, recipient countries and implementing organisations.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public statistics; no account needed to browse or download via the OECD Data Explorer.",
+    "opsec": "passive",
+    "opsecNote": "Passive query against a public statistical portal — nothing reaches any subject. Data is aggregate/activity-level (donors, agencies, projects), not individuals, so there is minimal personal-privacy exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official OECD Development Assistance Committee (DAC) statistics — the authoritative international source for ODA figures.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "oecd-data"
     ],
+    "aliases": [
+      "OECD DAC statistics",
+      "Creditor Reporting System",
+      "OECD Data Explorer"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "development-finance"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oecd-aid-database.md"
   },
   {
@@ -281147,35 +281132,51 @@
   {
     "id": "mailing-list-archives-search-engine",
     "name": "Mailing List Archives Search Engine",
-    "description": "OSINT tool: Mailing List Archives Search Engine.",
+    "description": "Use when you have a `name`/`email`/keyword and want their posts in public mailing-list archives — returns matching list threads and messages.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching across many public mailing-list archives at once for a person's posts or an email address.",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — results are served from Google's index, so you never touch the mailing-list servers directly and the subject gets no signal. Standard Google-query hygiene (puppet browser) applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine over a curated set of list archives; coverage is defined by whoever built the CSE and can drift or break over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "mailing list search",
+      "listserv archive search"
+    ],
+    "tags": [
+      "mailing-lists",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mailing-list-archives-search-engine.md"
   },
   {
@@ -282970,41 +282971,53 @@
   {
     "id": "network-entity-reputation-database-nerd",
     "name": "Network Entity Reputation Database (NERD)",
-    "description": "database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the country code (useful for large-scale research)",
+    "description": "Use when you have an `ip-address` and want its threat reputation and history — returns malicious-activity reports, first/last seen, and origin `geolocation`.",
     "url": "https://nerd.cesnet.cz/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking whether an IP has been reported as malicious and reviewing its abuse history.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public access to the reputation data via web and API; some raw Warden alert data is restricted to trusted CSIRT partners.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query NERD's aggregated database, not the target IP itself, so the address you look up is never contacted. Run by CESNET (Czech academic network); assume queries are logged by the operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CESNET's Liberouter team (Czech National Research and Education Network); aggregates reputable feeds (Warden, DShield, AlienVault OTX, MISP, public blacklists).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Bugbounty/vulnerabilities search tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ip-search-network-entity-reputation-database"
     ],
+    "aliases": [
+      "NERD",
+      "CESNET NERD"
+    ],
+    "tags": [
+      "Search engines",
+      "Bugbounty/vulnerabilities search tools",
+      "ip-reputation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/network-entity-reputation-database-nerd.md"
   },
   {
@@ -297505,41 +297518,55 @@
   {
     "id": "wordstat-yandex-ru",
     "name": "Wordstat.yandex.ru",
-    "description": "the estimated number of Yandex searches in the coming month for different keywords",
+    "description": "Use when you have a `name`/keyword/brand and want its Yandex search demand — returns query volumes, related terms, and regional interest across Russian-speaking regions.",
     "url": "https://wordstat.yandex.ru/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Gauging how often and where a term/name is searched on Yandex (Russia/CIS keyword intelligence).",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, but requires a Yandex account login to view results.",
+    "opsec": "passive",
+    "opsecNote": "Passive keyword research — you query Yandex's own tool, not any subject. A Yandex login is required, so use a puppet Yandex account; assume queries are logged under Russian jurisdiction. The person you research is never contacted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Yandex keyword-planning tool; the search-volume figures are Yandex's own and authoritative for the Yandex ecosystem.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Keywords, trends, news analytics"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "rasp-yandex-ru-map-trains",
       "yandex-people-search"
     ],
+    "aliases": [
+      "Yandex Wordstat",
+      "wordstat"
+    ],
+    "tags": [
+      "Keywords, trends, news analytics",
+      "yandex",
+      "russia"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wordstat-yandex-ru.md"
   },
   {

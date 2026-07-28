@@ -373,7 +373,7 @@ kind: group-index
 - **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
 - **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
 - **`magportal`** (low) — OSINT tool: MagPortal.
-- **`mailing-list-archives-search-engine`** (low) — OSINT tool: Mailing List Archives Search Engine.
+- **`mailing-list-archives-search-engine`** (low) — Use when you have a `name`/`email`/keyword and want their posts in public mailing-list archives — returns matching list threads and messages
 - **`maldevel-osint`** (low) — Use when you want a curated reference of OSINT techniques/scripts/tips — a small GitHub collection of investigation and reconnaissance notes
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
@@ -408,7 +408,7 @@ kind: group-index
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
 - **`naver-south-korea`** (medium) — Use when your subject or topic is South Korean and you want Korea-specific web, blog, café and news results Google misses — returns Korean `
 - **`nerdydata-source-code-search-engine`** (medium) — Use when you have a code snippet, tracking ID, or `domain` and want other sites sharing it — returns the `domain` list plus company, `email`
-- **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
+- **`network-entity-reputation-database-nerd`** (low) — Use when you have an `ip-address` and want its threat reputation and history — returns malicious-activity reports, first/last seen, and orig
 - **`neuskool`** (medium) — Use when you have one selector and want to query it across many services from one page — returns a start-page launcher for Google, YouTube, 
 - **`new-zealand-law-society`** (medium) — Use when you have a name and want to confirm a New Zealand lawyer — returns employer-org (firm), practising status, and location from the of
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
@@ -690,7 +690,7 @@ kind: group-index
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
 - **`wordpress-custom-search`** (low) — Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable S
-- **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
+- **`wordstat-yandex-ru`** (low) — Use when you have a `name`/keyword/brand and want its Yandex search demand — returns query volumes, related terms, and regional interest acr
 - **`world-digital-library`** (low) — OSINT tool: World Digital Library.
 - **`world-newspapers`** (low) — Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subjec
 - **`worldchambersnetwork-directory-search`** (medium) — Use when you need to find a chamber of commerce by country or region — returns the chamber's employer-org details and address as a route int

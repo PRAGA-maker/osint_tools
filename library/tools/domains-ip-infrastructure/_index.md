@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`advisories/`** — 10 skill(s) below.
-- **`analytics/`** — 12 skill(s) below.
+- **`analytics/`** — 11 skill(s) below.
 - **`attack-surface-security-testing/`** — 1 skill(s) below.
 - **`aws-enumeration/`** — 3 skill(s) below.
 - **`azure-gcp-discovery/`** — 5 skill(s) below.

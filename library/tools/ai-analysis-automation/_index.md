@@ -336,7 +336,7 @@ kind: group-index
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — OSINT tool: SerpScan.
 - **`shanti-interactive`** (low) — OSINT tool: Shanti Interactive.
-- **`shellcheck-net`** (low) — analyzes command-line scripts and explains in detail the errors found in them
+- **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
 - **`shrewdeye`** (low) — Online versions of popular command line #osint tools: Amass, SubFinder, AssetFinder, GAU, DNSX
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sintelix`** (low) — OSINT tool: Sintelix.
@@ -382,7 +382,7 @@ kind: group-index
 - **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
 - **`tldr`** (low) — A tool that is a great time-saver when working with the command line. Enter "tldr command name" and get a brief description with examples of
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
-- **`torrent-to-magnet`** (low) — OSINT tool: Torrent to Magnet.
+- **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.
 - **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
 - **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T

@@ -107,7 +107,7 @@ kind: group-index
 - **`somerandomstuff1-wordpress-com`** (medium) — Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markin
 - **`species-plus`** (low) — Centralized website with vulnerable species information.
 - **`strava`** (low) — Use when you have a `name`/`username` or a location of interest and want exercise-route patterns — returns public activities, segments and h
-- **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
+- **`tencent-maps`** (low) — Use when you have an `address`/`geolocation` in China and want local maps, satellite and street-level imagery — returns Chinese-optimized `g
 - **`terra-server`** (medium) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to downlo
 - **`tfl-jamcams`** (medium) — Use when you have a London `geolocation` or `address` and want near-live traffic-camera stills plus incidents at that spot — returns geoloca
 - **`the-european-space-agency-esa-earth-online`** (low) — Use when you have a `geolocation`/`address` and want satellite Earth-observation imagery and environmental data for that area — returns EO i

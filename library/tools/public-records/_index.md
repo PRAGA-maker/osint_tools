@@ -632,7 +632,7 @@ kind: group-index
 - **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
 - **`obsidian-cli`** (medium) — Use when you keep case notes in an Obsidian vault and want to open, search, create and edit them from the terminal — returns scripted, autom
 - **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp
-- **`oecd-aid-database`** (low) — OSINT tool: OECD Aid Database.
+- **`oecd-aid-database`** (low) — Use when you have an `employer-org` (donor/agency/NGO) and want its official development-aid flows — returns funding records by donor, recip
 - **`oecd-data`** (low) — OSINT tool: OECD Data.
 - **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.
 - **`ofac-sanctioned-search-engine`** (low) — OSINT tool: OFAC Sanctioned Search Engine.

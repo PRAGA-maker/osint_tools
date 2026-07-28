@@ -33,7 +33,7 @@ kind: group-index
 - **`botim-me`** (high) — Use when you have a `phone` number (often Gulf/Middle-East) and want to check whether it has a BOTIM messaging account and see any public pr
 - **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.
 - **`chatsearchrobot`** (high) — Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram c
-- **`chattoday`** (low) — Online chat platform for connecting and chatting with people.
+- **`chattoday`** (low) — Use when you have a `username`/`name` and want a person's messaging-app handles — returns self-listed Kik/Snapchat/Telegram/Discord `social-
 - **`chatvisualizer-com`** (medium) — Use when you already possess a WhatsApp chat export and want visual statistics of it — returns activity patterns and per-participant `name`/
 - **`commentgram-cse`** (medium) — Use when you have a `username`, `name` or keyword and want to search across indexed Telegram channel comments/discussion for it — returns ma
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
