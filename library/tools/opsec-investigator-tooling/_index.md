@@ -139,7 +139,7 @@ kind: group-index
 - **`fake-drivers-license-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking fake `document-id` for a fictional driver's license — returns a fab
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
 - **`fake-identity-id-random-name-generator`** (low) — Use when you need a consistent fabricated persona (name, DOB, address, look-alike ID/card numbers) to stand up an investigator sock-puppet a
-- **`fake-person-generator`** (low) — OSINT tool: Fake person generator.
+- **`fake-person-generator`** (low) — Use when you need a coherent fictional identity for a research sock-puppet account — returns fabricated persona details (name, address, DOB,
 - **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fakeinfo`** (low) — Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, W
@@ -322,7 +322,7 @@ kind: group-index
 - **`prism-break`** (low) — OSINT tool: PRISM Break.
 - **`privacy-net`** (low) — Listing of privacy resources
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
-- **`proton-vpn`** (low) — OSINT tool: Proton VPN.
+- **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Listing of anonymous web proxies
 - **`pushbullet-management-extension-chrome`** (low) — Add-on for Google Chrome that coordinates online activities between several personal devices
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
@@ -500,7 +500,7 @@ kind: group-index
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-transcript-search`** (low) — Use when you have a YouTube `social-profile`/channel and want to search across its videos' spoken content — a Chrome extension that collects
-- **`zotero`** (low) — Browser add-on for Firefox, Chrome, and Safari that assists in collecting, organizing, citing, and sharing research and saved online webpage
+- **`zotero`** (low) — Use when you need to capture, snapshot, organize, and cite web pages and documents during an investigation — builds a searchable, timestampe
 - **`zxing-barcode-scanner-app-mobile-android`** (low) — App for mobile devices for scanning and recognizing items with bar codes
 - **`zz-fo`** (low) — OSINT tool: Zz.fo.
 

@@ -13,7 +13,7 @@ kind: group-index
 - **`easywhois`** (low) — Quick domain WHOIS lookups and DNS checks
 - **`ip2whois`** (low) — Use when you have a `domain` and want its WHOIS registration — returns registrant `name`/`email`/`address` (when not redacted), registrar an
 - **`netlas-io`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want WHOIS/DNS, open ports, certificates, and historical infrastructure data — return
-- **`robtex`** (low) — DNS reconnaissance, IP and domain relationship mapping, historical internet data lookup
+- **`robtex`** (low) — Use when you have a `domain`, `ip-address`, hostname, or ASN and want its DNS records plus historical domain↔IP relationships — returns rela
 - **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
 - **`viewdns-info`** (low) — DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking
 - **`website-informer`** (low) — Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email lin

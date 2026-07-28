@@ -92,7 +92,7 @@ kind: group-index
 - **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
 - **`browserling`** (low) — OSINT tool: Browserling.
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
-- **`carbon14`** (low) — A simple Python tool that helps you determine when (approximately) some content was published. It find the Last-Modified header of linked im
+- **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
 - **`censys-certificates`** (low) — OSINT tool: Censys Certificates.

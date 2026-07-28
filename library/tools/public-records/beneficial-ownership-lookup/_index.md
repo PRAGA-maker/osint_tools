@@ -7,7 +7,7 @@ kind: group-index
 # public-records/beneficial-ownership-lookup
 
 ## Skills here
-- **`icij-offshore-leaks-database`** (low) — Tracing offshore company structures and hidden ownership from leaked documents
+- **`icij-offshore-leaks-database`** (low) — Use when you have a `name`, company (`employer-org`), or `address` and want hidden offshore ownership/company links from ICIJ's leaks — retu
 - **`occrp-aleph`** (medium) — Use when you have a person `name` or company `employer-org` and want to cross-reference them across leaks, corporate registries and public r
 - **`openownership`** (medium) — Use when you need to find where a jurisdiction's beneficial-ownership data lives — returns a map/directory of national registers and open BO
 

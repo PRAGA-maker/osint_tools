@@ -242,7 +242,7 @@ kind: group-index
 - **`pinterest-chrome-add-on`** (high) — Use when you have an `image` or `face` and want to reverse-search it through Pinterest's visual-search engine from a right-click — returns v
 - **`pixabay`** (high) — Use when you have a suspect profile `image` and want to check whether it is a royalty-free stock photo — a match here flags a likely fake/so
 - **`pixlr-com`** (high) — Use when you have an `image` and want to enhance, crop, or dissect it in-browser — returns a cleaned/zoomed/adjusted `image` you can then pu
-- **`pixplot`** (low) — PixPlot is a tool that utilizes machine learning and WebGL to provide an interactive visualization of large image collections, allowing user
+- **`pixplot`** (low) — Use when you have a large `image` collection and want an ML-driven interactive map clustering visually-similar images — surfaces patterns, d
 - **`pixsy`** (medium) — Use when you have an `image` (ideally your own/authorised) and want to find everywhere it appears online via deep match monitoring — returns
 - **`placespotter-com`** (high) — Use when you have an `image` and want an AI's guess at where it was taken — returns approximate coordinates and location details.
 - **`planet-gallery`** (medium) — Use when you have a `geolocation` and a notable event and want before/after satellite imagery of that place — returns curated Planet satelli

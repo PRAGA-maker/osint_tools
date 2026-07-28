@@ -92,7 +92,6 @@ kind: group-index
 - **`swp-cx`** (low) — OSINT tool: swp.cx.
 - **`tails-the-amnesic-incognito-live-system`** (low) — Use when you need a disposable, anonymous investigation OS that leaves no trace and routes everything through Tor — an OpSec platform, not a
 - **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
-- **`thedevilseye`** (low) — Search links in #darknet (.onion domain zone) from command line without using a Tor network.
 - **`tool-path`** (low) — OSINT tool: Tool \| path.
 - **`top-guns`** (low) — OSINT tool: Top Guns.
 - **`tor-link`** (low) — OSINT tool: tor.link.

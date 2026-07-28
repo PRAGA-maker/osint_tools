@@ -2,41 +2,41 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7359 total · 5247 full · 2112 stub (71% enriched)
+**Tools:** 7358 total · 5255 full · 2103 stub (71% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3399 · medium: 1996 · high: 1964
+low: 3398 · medium: 1996 · high: 1964
 
 ## Tools by trust
-community: 3497 · unverified: 2090 · trusted: 1763 · untrustworthy: 6 · personal: 3
+community: 3499 · unverified: 2083 · trusted: 1767 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 99/439
 - `archives-cache` — 92/120
 - `communities-forums` — 240/286
-- `dark-web` — 47/107
+- `dark-web` — 47/106
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 101/293
-- `domains-ip-infrastructure` — 334/667
+- `domains-ip-infrastructure` — 336/667
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 60/101
 - `geolocation` — 294/339
-- `image-video-face` — 445/451
+- `image-video-face` — 446/451
 - `maps-geospatial-data` — 88/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 108/522
+- `opsec-investigator-tooling` — 111/522
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 886/1002
+- `public-records` — 887/1002
 - `search-engines` — 525/764
 - `social-networks` — 737/782
 - `training-ctf` — 6/12
 - `translation-language` — 32/99
-- `transportation` — 141/205
+- `transportation` — 142/205
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -58,7 +58,7 @@ community: 3497 · unverified: 2090 · trusted: 1763 · untrustworthy: 6 · pers
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
 - `library/tools/archives-cache` — 105 leaves
-- `library/tools/dark-web` — 97 leaves
+- `library/tools/dark-web` — 96 leaves
 - `library/tools/dating-classifieds` — 92 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/translation-language` — 85 leaves
