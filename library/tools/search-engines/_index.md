@@ -45,7 +45,7 @@ kind: group-index
 - **`alhea-search-engine`** (low) — Use when you have a `name`, `username`, or `email` and want a metasearch view pulling from several engines at once — returns `social-profile
 - **`all-in-one`** (low) — OSINT tool: All-in-One.
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
-- **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
+- **`alleba-philippines`** (low) — Use when your subject or content is Philippine and you want a local search engine/directory that surfaces PH sites a global engine buries — 
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — Use when you have a `name`/`username`/keyword and want one query fanned across many engines and services — returns a launchpad of results fr
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
@@ -164,7 +164,6 @@ kind: group-index
 - **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
 - **`daum-south-korea`** (low) — Use when you have a name, username, or term tied to South Korea and want Korean-language web/news/cafe results a Western engine misses — ret
 - **`ddgr`** (low) — Use when you want to script or automate DuckDuckGo searches from the terminal — returns search results as text or JSON, with bangs and regio
-- **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica

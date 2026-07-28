@@ -109,7 +109,6 @@ kind: group-index
 - **`find-pdf-doc`** (low) — Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `docum
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
-- **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
 - **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
 - **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.
@@ -226,7 +225,7 @@ kind: group-index
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
-- **`sourcegraph`** (low) — OSINT tool: SourceGraph.
+- **`sourcegraph`** (medium) — Use when you have a `username`, `email`, key, or code string and want to search across public open-source repositories at scale — returns em
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`statwing`** (low) — Intuitive data analytics tool
 - **`steghide`** (low) — Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, pl

@@ -56,7 +56,6 @@ kind: group-index
 - **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Use when you have a `domain` and want to see who links to it — returns referring `domain`s and top backlinks, exposing the site's network of
-- **`ahrefs`** (low) — OSINT tool: ahrefs.
 - **`aiodnsbrute`** (low) — Use when you have a domain and want to enumerate its live subdomains fast — returns domain (subdomains) and their ip-address records.
 - **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
 - **`aline`** (low) — Use when you have a `domain` and want the documents it has exposed to Google — a CLI that runs filetype dorks and bulk-downloads the hits fo
@@ -121,7 +120,7 @@ kind: group-index
 - **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
 - **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
-- **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
+- **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — Use when you have a `domain`/URL (or want to enrich one) and want to check it against a free feed of known crypto-scam/phishing sites — retu
 - **`cve-binary-tool`** (low) — Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with se
 - **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
