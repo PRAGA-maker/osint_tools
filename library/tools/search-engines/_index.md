@@ -213,7 +213,6 @@ kind: group-index
 - **`federal-register`** (medium) — Use when you have a `name` or `employer-org` and want to find their appearance in US federal rules, notices, or agency actions — returns nam
 - **`fefoo-mega-search`** (medium) — Use when you have a `name` or `username` and want to fire the same query across many search engines and verticals fast — returns social-prof
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
-- **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
 - **`filephish`** (low) — OSINT tool: FilePhish.
 - **`filepursuit-com`** (low) — Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, an
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
@@ -420,7 +419,7 @@ kind: group-index
 - **`newslookup-com`** (low) — OSINT tool: Newslookup.com.
 - **`newslookup`** (low) — OSINT tool: NewsLookup.
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
-- **`newsnow`** (low) — OSINT tool: Newsnow.
+- **`newsnow`** (low) — Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated head
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
 - **`newspaperindex`** (low) — Use when you have a place or region and want its local/national newspapers to search for a `name` or event — returns a directory of online n
 - **`newspapers-com`** (low) — Use when you have a `name` (plus an approximate place/date) and want historical newspaper coverage — obituaries, marriage/birth notices, loc

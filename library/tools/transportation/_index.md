@@ -116,7 +116,7 @@ kind: group-index
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
 - **`maritime-awareness-project`** (low) — Use when you have an Asia-Pacific maritime `geolocation` and want claims/incident context — returns an interactive map of territorial disput
 - **`maritime-database`** (low) — Use when you have a vessel name, port, or shipping-company name and want directory details linking ships, ports and maritime companies — ret
-- **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.
+- **`military-ship-tracker`** (low) — Use when you have a naval/military vessel name or want to see military ships broadcasting AIS in an area — returns live positions and vessel
 - **`mot-history`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's official test history — returns make/model/colour, the mileage recorded at eve
 - **`my-ship-tracking`** (low) — Use when you have a vessel `name`, MMSI or IMO and want its live AIS position, track history and operator — returns `geolocation` and `emplo
 - **`national-insurance-crime-bureau-vin-search`** (medium) — Use when you have a `vin` and want to know if the vehicle was reported stolen (and not recovered) or declared a salvage/total loss — returns

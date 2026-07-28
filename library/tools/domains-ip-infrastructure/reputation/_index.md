@@ -11,7 +11,7 @@ kind: group-index
 - **`bluecoat-webpulse`** (low) — URL categorization, website reputation filtering, malicious link detection
 - **`cisco-talos`** (low) — IP/domain reputation intelligence
 - **`deepviz-domain-search`** (low) — Domain/IP threat intelligence, malware analysis, threat feed subscription
-- **`exonerator`** (low) — Verify Tor relay membership by date
+- **`exonerator`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at the time — returns a yes/no with relay deta
 - **`fortiguard-reputation-service`** (low) — Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and an
 - **`google-safe-browsing-api`** (low) — Use when you have a `domain`/URL and want Google's verdict on whether it's flagged for malware, phishing, or unwanted software — returns a s
 - **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation

@@ -87,7 +87,7 @@ kind: group-index
 - **`engage121`** (low) — Website offering social media content and publishing services
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Website related to event management and ticket sales
-- **`eventbrite-united-states`** (low) — Website related to event management and ticket sales
+- **`eventbrite-united-states`** (low) — Use when you have a `name`, `username`, or an event/organizer and want to find events a subject organized or attended — returns organizer pr
 - **`evite`** (low) — Website related to event invitation and party planning
 - **`evuln`** (low) — Program that provides multiple tools and programs to prevent website hacking and protective monitoring
 - **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
