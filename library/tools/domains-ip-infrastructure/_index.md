@@ -217,7 +217,7 @@ kind: group-index
 - **`infrapedia`** (low) — Use when you have a `geolocation`, city, or network/`domain` and want to map the physical internet — data centers, submarine cables, IXPs, f
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
-- **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
+- **`internet-census-2012`** (low) — Use when you need a historical 2012 snapshot of an `ip-address`/`domain` — returns that era's reverse-DNS, open-port and geolocation records
 - **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
 - **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
@@ -233,7 +233,7 @@ kind: group-index
 - **`ip-location-io`** (low) — OSINT tool: IP Location.io.
 - **`ip-neighbors`** (low) — Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `dom
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
-- **`ip2geo-dev`** (low) — OSINT tool: ip2geo.dev.
+- **`ip2geo-dev`** (low) — Use when you have an `ip-address` and want programmatic geolocation — returns country/city `geolocation`, ISP and ASN via a REST API or SDK.
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
@@ -404,7 +404,7 @@ kind: group-index
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`thales`** (low) — OSINT tool: Thales.
-- **`the-information-laundromat`** (low) — A tool for analyzing content replication and site architecture to detect information laundering.
+- **`the-information-laundromat`** (low) — Use when you have a `domain` (or article URL/text) and want to find other sites sharing its content or infrastructure — returns linked `doma
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.

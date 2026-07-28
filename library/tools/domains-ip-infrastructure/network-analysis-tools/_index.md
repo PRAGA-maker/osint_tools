@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/network-analysis-tools
 
 ## Skills here
-- **`checkip`** (low) — Display local IP and network info
+- **`checkip`** (low) — Use when you have an `ip-address` and want a one-command dossier — returns `geolocation`, `domain` (reverse DNS), ASN/network, and threat-re
 - **`networkminer`** (low) — Use when you have a captured PCAP and want to carve out files, images, credentials and host details from the traffic — returns `email`, `pas
 - **`wireshark`** (low) — Use when you have a network-traffic capture (.pcap/.pcapng) and want to extract endpoints, hostnames, and app metadata — returns ip-address,
 

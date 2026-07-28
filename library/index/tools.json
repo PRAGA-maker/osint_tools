@@ -8110,37 +8110,47 @@
   {
     "id": "keepass-password-safe",
     "name": "KeePass Password Safe",
-    "description": "OSINT tool: KeePass Password Safe.",
+    "description": "Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject data.",
     "url": "http://keepass.info",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Keeping sock-puppet logins, API keys and case credentials in one offline encrypted database.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (OSI-certified); no paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Investigator-side OpSec. The database is a single local, offline `.kdbx` file encrypted with AES-256/ChaCha20 — nothing is uploaded, so there is no network exposure. Protect the master key and the file itself; anyone with both has every credential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established OSI-certified open-source project; source is auditable and the format is widely supported by third-party clients.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "KeePass",
+      "KeePassXC",
+      "kdbx"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "password-manager",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/keepass-password-safe.md"
   },
   {
@@ -15366,29 +15376,30 @@
   {
     "id": "tails-live-os",
     "name": "Tails Live OS",
-    "description": "High-anonymity OSINT; Tor-based anonymous communication for journalists and activists",
+    "description": "Use when you need a disposable, Tor-routed workstation for sensitive OSINT — returns an amnesic Debian environment that leaves no trace and hides your real IP.",
     "url": "https://tails.boum.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "virtual-machines"
     ],
-    "bestFor": "High-anonymity OSINT; Tor-based anonymous communication for journalists and activists",
-    "input": "N/A (OS distribution)",
-    "output": "Debian-based Tor-routed anonymous environment",
+    "bestFor": "Booting a throwaway, Tor-only operating system for high-risk research with zero local footprint.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Completely free and open source; only cost is a USB stick (8GB+) to write the image to.",
     "opsec": "active",
-    "opsecNote": "All traffic routed through Tor; HTTPS Everywhere; encrypted messaging; no traces on shutdown",
+    "opsecNote": "This is investigator-side OpSec. All traffic is forced through Tor, so the sites you visit see a Tor exit node, not your real `ip-address`; the OS is amnesic and forgets everything on shutdown. Caveat — exiting to a login page or logging into personal accounts over Tor still deanonymises you; keep puppet identities strictly separate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Developed by the Tails project, which merged with the Tor Project in 2024; endorsed by the EFF and used by journalists and activists worldwide.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -15396,11 +15407,20 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Tails",
+      "The Amnesic Incognito Live System",
+      "tails.net"
+    ],
+    "tags": [
+      "privacy-and-encryption-tools",
+      "anonymity",
+      "tor",
+      "live-os"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/virtual-machines/tails-live-os.md"
   },
   {
@@ -46066,35 +46086,53 @@
   {
     "id": "onlysearch-co",
     "name": "Onlysearch.co",
-    "description": "OSINT tool: Onlysearch.co.",
+    "description": "Use when you have a `name`/`username` or physical traits and want to find a subject's OnlyFans presence — returns matching creator `social-profile`s.",
     "url": "https://onlysearch.co/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating OnlyFans creator profiles by keyword, location or physical description.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "geolocation",
+      "physical-description"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search; the site monetises via paid promotion/placement for creators.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive keyword search against the site's own index — you never contact the creator. Results and the platform are adult-content; keep queries in a puppet browser and be mindful of the sensitivity/legal context around any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Third-party aggregator not affiliated with OnlyFans; index completeness and result accuracy are unverified, and paid placement can skew rankings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "OnlySearch",
+      "onlysearch.co"
+    ],
+    "tags": [
+      "adult-content",
+      "creator-search",
+      "social-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlysearch-co.md"
   },
   {
@@ -64482,29 +64520,36 @@
   {
     "id": "checkip",
     "name": "checkip",
-    "description": "Display local IP and network info",
+    "description": "Use when you have an `ip-address` and want a one-command dossier — returns `geolocation`, `domain` (reverse DNS), ASN/network, and threat-reputation data.",
     "url": "https://github.com/jreisinger/checkip",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "network-analysis-tools"
     ],
-    "bestFor": "Display local IP and network info",
-    "input": "Local system (no input needed)",
-    "output": "Local IP, gateway, DNS servers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Aggregating geolocation, DNS, ASN and abuse-reputation for an IP in a single CLI call.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive system utility; local only.",
+    "costNote": "Free and open source (MIT). Core checks work with no keys; a few enrichers (VirusTotal, AbuseIPDB) need free API keys.",
+    "opsec": "active",
+    "opsecNote": "Mostly passive database lookups, but by default it also runs active probes (ping, TLS handshake) against the target IP — pass `-no-active` to stay fully passive. Some enrichers submit the IP to third-party APIs (VirusTotal, etc.), which log the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source Go project by Jozef Reisinger; auditable code, but a single-maintainer community tool rather than an accredited service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -64512,11 +64557,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "jreisinger/checkip",
+      "checkip cli"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "ip-reputation",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/network-analysis-tools/checkip.md"
   },
   {
@@ -72982,35 +73034,54 @@
   {
     "id": "internet-census-2012",
     "name": "Internet Census 2012",
-    "description": "OSINT tool: Internet Census 2012.",
+    "description": "Use when you need a historical 2012 snapshot of an `ip-address`/`domain` — returns that era's reverse-DNS, open-port and geolocation records from a public-domain IPv4 scan.",
     "url": "http://census2012.sourceforge.net/paper.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up what an IPv4 address hosted or resolved to in 2012 for historical infrastructure context.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "All data released into the public domain; free to download, but the datasets are very large (terabytes) and mirror availability varies.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — you query a static, downloaded archive, never the live target. No signal reaches the address you are researching. Note the data was collected via the illegal Carna botnet; it is public-domain and widely cited, but be aware of its provenance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known 2012 research artifact (anonymous author, \"Carna botnet\"); frequently cited in academic work, but unofficial and the scan method was unauthorized.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Carna Botnet",
+      "Internet Census 2012",
+      "IPv4 census"
+    ],
+    "tags": [
+      "historical-dataset",
+      "ipv4-scan",
+      "infrastructure-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/internet-census-2012.md"
   },
   {
@@ -74087,37 +74158,53 @@
   {
     "id": "ip2geo-dev",
     "name": "ip2geo.dev",
-    "description": "OSINT tool: ip2geo.dev.",
+    "description": "Use when you have an `ip-address` and want programmatic geolocation — returns country/city `geolocation`, ISP and ASN via a REST API or SDK.",
     "url": "https://ip2geo.dev",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestFor": "Scripting IPv4/IPv6 → country/city/ISP/ASN lookups from your own code.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier of 1,000 conversions/month with a signed-up API key; paid plans lift the quota.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you send the target `ip-address` to ip2geo.dev's API, never to the target. The provider logs your queries against your API key; use a puppet account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "unverified",
+    "trustNote": "Commercial developer API; no independent audit of its geolocation database accuracy, and provenance of the underlying data is not disclosed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ip2geo",
+      "ip2geo.dev API"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "ip-geolocation",
+      "api"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip2geo-dev.md"
   },
   {
@@ -86236,13 +86323,13 @@
   {
     "id": "the-information-laundromat",
     "name": "The Information Laundromat",
-    "description": "A tool for analyzing content replication and site architecture to detect information laundering.",
+    "description": "Use when you have a `domain` (or article URL/text) and want to find other sites sharing its content or infrastructure — returns linked `domain`s and shared technical `ip-address`/tracker indicators.",
     "url": "https://informationlaundromat.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Uncovering networks of sites that republish the same content or share hidden technical fingerprints.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -86251,29 +86338,38 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use via the web interface; batch searches require a free registration code (email info@securingdemocracy.org).",
+    "opsec": "passive",
+    "opsecNote": "Queries run server-side against search engines, GDELT and the tool's own indicators — you never touch the target sites directly, so it is passive from the target's perspective. Your searches are logged by the operator (German Marshall Fund / ASD).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by the German Marshall Fund's Alliance for Securing Democracy with the Institute for Strategic Dialogue and University of Amsterdam; a recognised disinformation-research group.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Information Laundromat",
+      "ASD Information Laundromat"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "websites"
+      "websites",
+      "disinformation",
+      "infrastructure-analysis"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/the-information-laundromat.md"
   },
   {
@@ -123262,40 +123358,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/satintel.md"
-  },
-  {
-    "id": "scanmap",
-    "name": "Scanmap",
-    "description": "OSINT tool: Scanmap.",
-    "url": "https://scanmap.mobi/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/scanmap.md"
   },
   {
     "id": "scribble-maps",
@@ -167922,37 +167984,48 @@
   {
     "id": "am-i-unique",
     "name": "Am I unique?",
-    "description": "OSINT tool: Am I unique?.",
+    "description": "Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is among all visitors.",
     "url": "https://amiunique.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether your OSINT browser leaves a rare, trackable fingerprint before you use it on targets.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free research service run by Université de Lille / Inria.",
+    "opsec": "passive",
+    "opsecNote": "Investigator-side OpSec. You test your *own* browser, not a target. The site records your fingerprint and sets a cookie (≈4 months) for its research dataset — run it in the same puppet browser/profile you intend to harden, and clear the cookie afterward if you don't want to contribute.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Academic project (Université de Lille, Inria/Spirals team); results and methodology are published in peer-reviewed fingerprinting research.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "AmIUnique",
+      "amiunique.org"
+    ],
     "tags": [
-      "anonymity"
+      "anonymity",
+      "browser-fingerprinting",
+      "opsec"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/am-i-unique.md"
   },
   {
@@ -168126,36 +168199,54 @@
   },
   {
     "id": "anonaddy",
-    "name": "AnonAddy",
-    "description": "OSINT tool: AnonAddy.",
+    "name": "AnonAddy (addy.io)",
+    "description": "Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses that forward to you.",
     "url": "https://anonaddy.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Creating throwaway email aliases so investigation sign-ups never expose your real address.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives unlimited standard aliases (username.addy.io), 1 recipient, 10 shared-domain aliases and 10MB/mo bandwidth; Lite $1/mo and Pro $3/mo (billed yearly) add custom domains, more recipients and unlimited bandwidth. Fully open source and self-hostable at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is investigator-side OpSec, not a lookup on a subject. Aliases forward to a real recipient inbox, so treat that recipient as sensitive — use a dedicated puppet inbox, not your personal address. Deactivate or delete an alias the moment a site starts abusing it; a leaked alias points back to your account, not the wider world.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source (GitHub), self-hostable, actively maintained; rebranded from AnonAddy to addy.io. Community-run rather than an accredited data provider.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "addy.io",
+      "anonaddy",
+      "anonymous email forwarding"
+    ],
+    "tags": [
+      "privacy-and-encryption-tools",
+      "email-aliases",
+      "opsec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonaddy.md"
   },
   {
@@ -170154,55 +170245,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/chat-and-date-social-networking-app-mobile-android.md"
-  },
-  {
-    "id": "cheat-sheet-maker",
-    "name": "Cheat sheet maker",
-    "description": "simple tool for creating cheat sheets",
-    "url": "http://cheatsheet-maker.herokuapp.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools",
-      "Visualization tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "before-reddit-optimize-a-post",
-      "blackbird-2",
-      "mmhdan",
-      "osm-finder",
-      "query-server",
-      "redditsearch",
-      "the-favicon-finder",
-      "trending-words-of-reddit",
-      "username-availability-checker",
-      "web-proxy"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/cheat-sheet-maker.md"
   },
   {
     "id": "chepy",
@@ -309507,50 +309549,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/social-networks/ghunt-online-version.md"
-  },
-  {
-    "id": "git-awards",
-    "name": "Git-Awards",
-    "description": "Rank GitHub users and repositories.",
-    "url": "http://git-awards.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Ranking a developer's GitHub standing by location/language",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github",
-      "ranking"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/git-awards.md"
   },
   {
     "id": "gitcolombo",

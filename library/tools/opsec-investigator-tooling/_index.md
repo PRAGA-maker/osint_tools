@@ -28,12 +28,12 @@ kind: group-index
 - **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
 - **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
-- **`am-i-unique`** (low) — OSINT tool: Am I unique?.
+- **`am-i-unique`** (low) — Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is a
 - **`amazon-mobile-app-mobile-android`** (low) — App for mobile devices for online shopping
 - **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
 - **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
-- **`anonaddy`** (low) — OSINT tool: AnonAddy.
+- **`anonaddy`** (low) — Use when you have an `email` inbox and want disposable forwarding aliases for sock-puppet accounts — returns new alias `email` addresses tha
 - **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
 - **`anonymouse-web-proxy`** (low) — Anonymous browsing service provider
 - **`anonymox`** (low) — Use when you need a quick browser-level IP/location change for light sock-puppet browsing — a proxy extension returning a foreign `ip-addres
@@ -77,7 +77,6 @@ kind: group-index
 - **`cardguru`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
-- **`cheat-sheet-maker`** (low) — simple tool for creating cheat sheets
 - **`chepy`** (low) — Python command line version of CyberChef
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
 - **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly

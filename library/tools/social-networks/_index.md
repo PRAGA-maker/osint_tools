@@ -198,7 +198,6 @@ kind: group-index
 - **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
 - **`ghostcodes-addmesnaps-directories`** (medium) — Use when you have a `name`, interest, or handle and want to find someone's Snapchat account — returns public Snapchat usernames from opt-in 
 - **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
-- **`git-awards`** (low) — Rank GitHub users and repositories.
 - **`gitcolombo`** (medium) — Use when you have a GitHub `username`, repo or org URL and want the real names/emails behind its commits — returns name, email and correlate
 - **`github-chart`** (low) — Use when you have a GitHub `username` and want to profile their activity rhythm — returns a visual of commit timing that hints at timezone, 
 - **`github-hovercard`** (low) — Use when you're triaging GitHub `username`s/repos and want at-a-glance detail — hovering shows the user's or repo's key info without opening

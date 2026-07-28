@@ -200,7 +200,7 @@ kind: group-index
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`jqplot`** (low) — OSINT tool: jqPlot.
 - **`justdeleteme`** (low) — OSINT tool: justdeleteme.
-- **`keepass-password-safe`** (low) — OSINT tool: KeePass Password Safe.
+- **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — OSINT tool: keyFinder.
 - **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.
 - **`lastfm-monitor`** (low) — OSINT tool: lastfm_monitor.

@@ -10,7 +10,7 @@ kind: group-index
 - **`kali-linux-os`** (low) — Use when you need a ready-made investigation workstation preloaded with OSINT/security tools — a platform to run tools from, not a lookup it
 - **`parrotsec-os`** (low) — Use when you need a hardened, tool-loaded investigation OS for OSINT/forensics with built-in anonymity — provides a ready Linux environment,
 - **`subgraph-os`** (low) — Use when you want a hardened, Tor-routed Linux OS to run investigations from — an OpSec/anonymity workstation, not a lookup tool (no selecto
-- **`tails-live-os`** (low) — High-anonymity OSINT; Tor-based anonymous communication for journalists and activists
+- **`tails-live-os`** (low) — Use when you need a disposable, Tor-routed workstation for sensitive OSINT — returns an amnesic Debian environment that leaves no trace and 
 - **`virtualbox`** (low) — Desktop and server virtualization; OSINT lab environments
 - **`vmware-workstation-player`** (low) — Desktop virtualization for personal/educational use
 

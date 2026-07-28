@@ -248,7 +248,6 @@ kind: group-index
 - **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.
 - **`satellites-pro`** (high) — Use when you have coordinates or a place and want a quick free web view of satellite imagery and map layers.
 - **`satintel`** (low) — Use when you need satellite reconnaissance (orbital/TLE data, satellite tracking) rather than ground geolocation of a person.
-- **`scanmap`** (low) — OSINT tool: Scanmap.
 - **`scribble-maps`** (high) — Use when you need to draw markers, shapes and notes on a map and share or export an annotated investigative map.
 - **`seeker`** (medium) — Use when you can get a subject to click a link (with authorization) and want their precise location — returns GPS geolocation plus ip-addres
 - **`sentinel-hub`** (high) — Use when you need dated, recent satellite imagery of an area to detect change over time or confirm current ground conditions.
