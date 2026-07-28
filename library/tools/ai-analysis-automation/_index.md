@@ -42,7 +42,6 @@ kind: group-index
 - **`awesome-incident-response`** (low) — OSINT tool: awesome-incident-response.
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
 - **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
-- **`awesome-malware-analysis`** (low) — OSINT tool: awesome-malware-analysis.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
 - **`awesome-privacy`** (low) — OSINT tool: awesome-privacy.
@@ -116,7 +115,7 @@ kind: group-index
 - **`dnsx`** (low) — OSINT tool: dnsx.
 - **`do-not-track`** (low) — OSINT tool: Do Not Track.
 - **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
-- **`dorks-collections-list`** (low) — List of Github repositories and articles with list of dorks for different search engines
+- **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do
 - **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`dropmark`** (low) — OSINT tool: Dropmark.
 - **`duckduckgo-ai-chat`** (low) — Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries
@@ -339,7 +338,6 @@ kind: group-index
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sintelix`** (low) — OSINT tool: Sintelix.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
-- **`skopenow`** (low) — OSINT tool: Skopenow.
 - **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — OSINT tool: Snappa.
@@ -399,7 +397,6 @@ kind: group-index
 - **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
 - **`voidaccess`** (low) — OSINT tool: VoidAccess.
 - **`voidly-censorship-index`** (low) — OSINT tool: Voidly Censorship Index.
-- **`vortex`** (low) — OSINT tool: Vortex.
 - **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Quick AI content checks for text and images during media verification
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa

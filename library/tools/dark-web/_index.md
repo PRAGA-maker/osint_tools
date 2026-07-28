@@ -41,7 +41,6 @@ kind: group-index
 - **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
 - **`daunt-link`** (low) — OSINT tool: daunt.link.
 - **`dedope`** (low) — OSINT tool: DeDope.
-- **`deep-money-transfer`** (low) — OSINT tool: Deep Money Transfer.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
 - **`eucanna`** (low) — OSINT tool: EuCanna.

@@ -17,7 +17,7 @@ kind: group-index
 - **`2-682-783-free-ai-generated-photos`** (low) — OSINT tool: 2,682,783 free AI generated photos.
 - **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
 - **`9-steps-to-security-in-the-digital-age`** (low) — Online privacy guide to security in the digital age
-- **`aba-generator`** (low) — OSINT tool: ABA Generator.
+- **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
 - **`abine-blur-app`** (low) — Secure personal information you put online such as passwords, payments, etc.
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
 - **`adblock-extension-chrome`** (low) — Add-on for Google Chrome that blocks Youtube and Facebook video ads
@@ -330,7 +330,6 @@ kind: group-index
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
 - **`safari-for-macos`** (low) — Internet browser for Mac
-- **`safari-for-windows`** (low) — Internet browser download available for Windows
 - **`safari`** (low) — OSINT tool: Safari.
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.

@@ -1139,42 +1139,6 @@
     "_file": "library/tools/ai-analysis-automation/awesome-lockpicking.md"
   },
   {
-    "id": "awesome-malware-analysis",
-    "name": "awesome-malware-analysis",
-    "description": "OSINT tool: awesome-malware-analysis.",
-    "url": "https://github.com/rshipp/awesome-malware-analysis",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "related-awesome-lists"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/awesome-malware-analysis.md"
-  },
-  {
     "id": "awesome-osint-mcp-servers",
     "name": "awesome-osint-mcp-servers",
     "description": "Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — returns a categorised directory of installable capabilities.",
@@ -4283,37 +4247,41 @@
   {
     "id": "dorks-collections-list",
     "name": "Dorks collections list",
-    "description": "List of Github repositories and articles with list of dorks for different search engines",
+    "description": "Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated dork sets pointing at `document-id`/exposed data.",
     "url": "https://github.com/cipher387/Dorks-collections-list",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A meta-index of Google/Shodan/GitHub/etc. dork collections to copy-paste when hunting a selector across search engines.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source reference repo; no install strictly needed (it's a Markdown link index), though you can clone it.",
+    "opsec": "passive",
+    "opsecNote": "The repo itself is passive to read. The dorks you then run execute on third-party search engines (Google, Shodan, Censys, GitHub) — those log your queries but the target isn't touched. Some dork categories (carding, cameras) point at sensitive/illegal content; stay within your investigative scope and law.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Curated by cipher387 (Cyber Detective), a well-known OSINT author; it's a link aggregator, so quality varies by the external lists it points to.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "My Projects"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "advanced-search-operators-list",
       "apis-for-osint",
@@ -4323,6 +4291,18 @@
       "maltego-transforms-list",
       "python-osint-automation-examples"
     ],
+    "aliases": [
+      "cipher387 dorks list",
+      "dorks collection"
+    ],
+    "tags": [
+      "google-dorking",
+      "search-operators",
+      "reference"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/dorks-collections-list.md"
   },
   {
@@ -14380,45 +14360,6 @@
     "_file": "library/tools/ai-analysis-automation/sitesucker.md"
   },
   {
-    "id": "skopenow",
-    "name": "Skopenow",
-    "description": "OSINT tool: Skopenow.",
-    "url": "https://www.skopenow.com/news",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-blogs"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "skopenow-com"
-    ],
-    "_file": "library/tools/ai-analysis-automation/skopenow.md"
-  },
-  {
     "id": "slash",
     "name": "Slash",
     "description": "Username enumeration and social media account discovery",
@@ -17165,42 +17106,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/voidly-censorship-index.md"
-  },
-  {
-    "id": "vortex",
-    "name": "Vortex",
-    "description": "OSINT tool: Vortex.",
-    "url": "http://www.dotmatics.com/products/vortex",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/vortex.md"
   },
   {
     "id": "w-generator",
@@ -39460,48 +39365,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/dedope.md"
-  },
-  {
-    "id": "deep-money-transfer",
-    "name": "Deep Money Transfer",
-    "description": "OSINT tool: Deep Money Transfer.",
-    "url": "http://fgkat66twl7s7eshw32dqcjneqaxre2gtbq2omen332pg6n4fr5464ad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/deep-money-transfer.md"
   },
   {
     "id": "deep-search",
@@ -72672,44 +72535,53 @@
   {
     "id": "idn-checker",
     "name": "IDN Checker",
-    "description": "IDN Checker detects visually similar versions of a domain.",
+    "description": "Use when you have a `domain` and want to find visually-similar (homograph) lookalike domains — returns registered impersonating `domain`s and their WHOIS.",
     "url": "https://holdintegrity.com/checker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Spotting IDN/homograph lookalikes of a domain used for phishing or impersonation.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The one-off checker is free to use; ongoing automated monitoring is sold as the paid \"Domains Integrity Service.\"",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query HoldIntegrity's checker about a domain string; the lookalike domains and their owners are not contacted. Only the checker's operator sees your query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by HoldIntegrity (a brand-protection vendor); the checker surfaces WHOIS/registration data for lookalikes, which is verifiable independently.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "central-ops"
+    ],
+    "aliases": [
+      "HoldIntegrity IDN checker",
+      "homograph checker"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "websites"
+      "homograph",
+      "phishing"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/idn-checker.md"
   },
   {
@@ -89392,42 +89264,53 @@
   {
     "id": "webcopilot",
     "name": "WEBCOPILOT",
-    "description": "All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnerabilities",
+    "description": "Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-address` leads.",
     "url": "https://github.com/h4r5h1t/webcopilot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-command subdomain enumeration, endpoint crawling, screenshotting, and vulnerability triage for a target domain.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). Runs locally; wraps other free CLI recon tools it installs for you.",
+    "opsec": "active",
+    "opsecNote": "This is active recon — it resolves subdomains, crawls endpoints, screenshots live hosts, and probes for vulnerabilities, all of which send traffic to the target's servers and can be logged/WAF-flagged. Run from an attribution-safe host; do not point the vuln-scan (`-a`) at systems you're not authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by GitHub user h4r5h1t; auditable but single-maintainer, and it orchestrates several third-party tools under the hood.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "amass",
+      "dork-dump"
+    ],
+    "aliases": [
+      "webcopilot recon"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Domain/IP investigation"
+      "subdomain-enumeration",
+      "recon-automation",
+      "attack-surface"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webcopilot.md"
   },
   {
@@ -89759,45 +89642,56 @@
   {
     "id": "website-information",
     "name": "Website Information",
-    "description": "OSINT tool: Website Information.",
+    "description": "Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocation`, headers, and tech profile.",
     "url": "https://one-plus.github.io/WebsiteInformation",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A single free page linking many website/network lookups (WHOIS, DNS, IP geolocation, headers, tech stack) for quick domain triage.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static toolkit hosted on GitHub Pages; it links out to third-party services (CentralOps, Robtex, etc.) that are themselves free for interactive use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page is a set of links; each lookup runs on a third-party service, so the target isn't touched directly by you. As with any WHOIS/DNS tool, you're querying public records — the exception is any email-verification link, which may probe a mail server. Prefer the passive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built link hub (GitHub Pages) that aggregates established third-party tools; trust each destination on its own merits.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "bookmarks",
-      "document-search",
-      "google-and-bing",
-      "google-plus-and-linkedin",
-      "instagram-reddit-and-snapchat",
-      "osint-toolkit",
-      "twitter-monitoring",
-      "youtube-periscope-twitch-and-dailymotion"
+      "central-ops",
+      "osint-toolkit"
     ],
+    "aliases": [
+      "WebsiteInformation toolkit"
+    ],
+    "tags": [
+      "domain-research",
+      "whois",
+      "toolkit"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/website-information.md"
   },
   {
@@ -167856,35 +167750,33 @@
   {
     "id": "aba-generator",
     "name": "ABA Generator",
-    "description": "OSINT tool: ABA Generator.",
+    "description": "Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid ABA number, no target data.",
     "url": "https://www.fakenamegenerator.com/aba-validator.php",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating/validating plausible ABA routing numbers when building a sock-puppet identity or checking a number's checksum.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web utility on FakeNameGenerator.com; no login. (The site runs ads.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Purely a local checksum utility on a public page — it touches no target and reveals nothing about anyone. OpSec relevance is only that it helps you keep a consistent, non-real sock-puppet identity; never use a generated number to commit fraud or open real financial accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of the long-standing FakeNameGenerator suite; the ABA checksum algorithm is public, so output validity is trivially checkable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "credit-card-generator",
       "fake-name-generator",
@@ -167893,6 +167785,17 @@
       "ssn-generator",
       "vin-generator"
     ],
+    "aliases": [
+      "ABA routing number validator",
+      "FakeNameGenerator ABA"
+    ],
+    "tags": [
+      "sock-puppet",
+      "identity-tooling"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/aba-generator.md"
   },
   {
@@ -182217,46 +182120,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/safari-for-macos.md"
-  },
-  {
-    "id": "safari-for-windows",
-    "name": "Safari (for Windows)",
-    "description": "Internet browser download available for Windows",
-    "url": "https://support.apple.com/downloads/safari",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "web-browsers"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/safari-for-windows.md"
   },
   {
     "id": "safetydetective-security-tools",

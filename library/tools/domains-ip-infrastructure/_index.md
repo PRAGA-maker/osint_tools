@@ -209,7 +209,7 @@ kind: group-index
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
 - **`icann-lookup`** (low) — Use when you have a `domain` and want its authoritative registration data — returns the official RDAP/WHOIS record (registrar, dates, status
 - **`icann-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public r
-- **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
+- **`idn-checker`** (low) — Use when you have a `domain` and want to find visually-similar (homograph) lookalike domains — returns registered impersonating `domain`s an
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — Use when you want a real-time situational view of global cyber-attack activity and threat trends — returns aggregated attack/traffic statist
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
@@ -443,7 +443,7 @@ kind: group-index
 - **`web-check`** (low) — Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, 
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
-- **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera
+- **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
 - **`webemailextractor-com`** (low) — extract email's and phone numbers from the website or list of website
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
 - **`webmeup`** (low) — OSINT tool: WebMeUp.
@@ -451,7 +451,7 @@ kind: group-index
 - **`webpalm`** (low) — Command-line tool that traverse a website and generate a tree of all its webpages. Also it can scrape and extract data using #regex.
 - **`webscore`** (low) — OSINT tool: Webscore.
 - **`webscout`** (low) — OSINT tool: Webscout.
-- **`website-information`** (low) — OSINT tool: Website Information.
+- **`website-information`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocati
 - **`website-search-tool`** (low) — Use when you have a `domain` and want a guided query builder that fans it out across WHOIS, archives, shared-analytics-ID, and backlink look
 - **`websitetechminer-py`** (low) — Use when you have a `domain` (or a CSV of domains) and want its technology stack from BuiltWith + Wappalyzer in bulk — returns per-domain te
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
