@@ -297,7 +297,7 @@ kind: group-index
 - **`prism`** (low) — OSINT tool: PRISM.
 - **`privacy-badger`** (low) — OSINT tool: Privacy Badger.
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
-- **`privazer`** (low) — OSINT tool: Privazer.
+- **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-
 - **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
 - **`psn-monitor`** (low) — OSINT tool: psn_monitor.

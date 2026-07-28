@@ -434,7 +434,7 @@ kind: group-index
 - **`twitter-profile-generator`** (low) — OSINT tool: Twitter Profile Generator.
 - **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
 - **`twitter-social-networking-mobile-ios`** (low) — App for mobile devices for social networking
-- **`two-factor-authentication-list`** (low) — List of websites indicating whether a site uses two factor authentication or not
+- **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
 - **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
 - **`uber-private-driver-app-mobile-android`** (low) — App for mobile devices for searching for and communicating with private hire driving services
 - **`uber-private-driver-app-mobile-ios`** (low) — App for mobile devices for searching for and communicating with private hire driving services

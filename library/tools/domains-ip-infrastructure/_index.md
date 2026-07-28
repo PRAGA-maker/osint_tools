@@ -50,7 +50,6 @@ kind: group-index
 - **`wireless-network-info/`** — 2 skill(s) below.
 
 ## Skills here
-- **`0xdork`** (low) — Very light and simple #Python tool for Google Dorking
 - **`aa419-fake-sites-database`** (low) — Use when you have a `domain` or an impersonated brand `name` and want to know if it is a catalogued scam/fake site — returns matching fraudu
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
 - **`accuranker`** (low) — OSINT tool: Accuranker.
@@ -339,7 +338,7 @@ kind: group-index
 - **`raymond`** (low) — Framework for gathering information about website
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
 - **`reconnor`** (low) — Educational recon and OSINT tool suite.
-- **`redirectdetective`** (low) — OSINT tool: RedirectDetective.
+- **`redirectdetective`** (low) — Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting i
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
 - **`regexper`** (low) — Use when you have a regular expression and want to understand or debug it — pastes a regex and returns a railroad-diagram visualization; a h
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv

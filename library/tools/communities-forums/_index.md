@@ -110,7 +110,7 @@ kind: group-index
 - **`homestay`** (medium) — Use when you have a name or location and want to check a homestay-accommodation platform for a host's live-in listing — returns address-area
 - **`hot-sheet-news`** (low) — Use when you have a subject's likely region/interest and want a single dashboard of major TV, sports and news outlets to scan for coverage —
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
-- **`imcdb`** (low) — Internet Movie Cars Database
+- **`imcdb`** (low) — Use when you need to identify a vehicle's make/model/year from styling cues — a large, image-rich reference of cars, useful as a visual comp
 - **`information-week-news`** (medium) — Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-o
 - **`iptv-org`** (low) — Use when you have a country/region and want its publicly-listed IP TV channels and (sometimes) livestream links — returns geolocation-scoped
 - **`itworldcanada`** (low) — Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies a

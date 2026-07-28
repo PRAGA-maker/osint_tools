@@ -12551,38 +12551,45 @@
   },
   {
     "id": "privazer",
-    "name": "Privazer",
-    "description": "OSINT tool: Privazer.",
-    "url": "http://privazer.com",
+    "name": "PrivaZer",
+    "description": "Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-forensic hygiene tool, not a lookup.",
+    "url": "https://privazer.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Securely removing browsing/system traces from your own Windows workstation between or after cases.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for personal use on Windows; a paid \"Donors\" version adds extras. Free tier covers core cleaning.",
+    "opsec": "active",
+    "opsecNote": "This is a defensive/anti-forensic tool that permanently deletes data on YOUR machine — back up your case evidence to separate storage FIRST, or you may destroy it. Use it to reduce local traces of an investigation, not on anything you must retain. Secure-wipe of free space is slow but real.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A known Windows privacy-cleaner (Goversoft); reputable but third-party — download only from the official site and keep evidence backed up before running destructive cleans.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Privazer"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy",
+      "anti-forensics",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/privazer.md"
   },
   {
@@ -18695,37 +18702,46 @@
   {
     "id": "awasu",
     "name": "Awasu",
-    "description": "OSINT tool: Awasu.",
-    "url": "http://www.awasu.com",
+    "description": "Use when you want to monitor many web/RSS sources for new mentions of a subject and keep an archived, searchable feed history — returns change/mention alerts over time.",
+    "url": "https://awasu.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Desktop feed aggregation and monitoring — watching many sources for new items and keeping their history.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free Personal Edition for Windows; Advanced/Professional editions add features. Core monitoring works in the free tier.",
+    "opsec": "passive",
+    "opsecNote": "Awasu polls feeds from your machine, so watched sites see your IP fetching their RSS — routine and low-signal, but use a VPN if you don't want a source to notice repeated polls. It monitors public feeds, not the subject directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-established Windows feed reader/monitor; reliable software, though it depends on sources publishing feeds (many sites have dropped RSS).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Awasu feed reader"
+    ],
     "tags": [
+      "rss",
+      "monitoring",
       "web-monitoring"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/awasu.md"
   },
   {
@@ -28985,38 +29001,48 @@
   },
   {
     "id": "imcdb",
-    "name": "IMCDB",
-    "description": "Internet Movie Cars Database",
-    "url": "http://imcdb.org",
+    "name": "IMCDb (Internet Movie Cars Database)",
+    "description": "Use when you need to identify a vehicle's make/model/year from styling cues — a large, image-rich reference of cars, useful as a visual comparison aid — returns vehicle identification.",
+    "url": "https://www.imcdb.org/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Identifying or confirming a car's make/model/year by comparing against a large, well-labelled image database.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, community-run, ad-supported; no account required to browse or search.",
+    "opsec": "passive",
+    "opsecNote": "Passive browsing of a public film-car database; you disclose nothing about a target. Its use in real investigations is as a visual reference, not a query against the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A hobbyist community database cataloguing vehicles appearing in films/TV; identifications are crowd-contributed and generally careful, but its scope is on-screen cars, not a universal vehicle identifier.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Internet Movie Cars Database",
+      "imcdb.org"
+    ],
     "tags": [
-      "Movies"
+      "vehicles",
+      "identification",
+      "reference"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/imcdb.md"
   },
   {
@@ -48097,41 +48123,49 @@
   {
     "id": "agent-ransack",
     "name": "Agent Ransack",
-    "description": "Free, fast hard drive file searching utility for windows",
-    "url": "http://www.mythicsoft.com/agentransack",
+    "description": "Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with regex — returns matching files.",
+    "url": "https://www.mythicsoft.com/agentransack/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast local full-text + filename searching across large document sets with regex and content preview.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free edition of Mythicsoft's FileLocator; the Pro version (FileLocator Pro) adds features but the free Agent Ransack covers core searching. Windows.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs entirely locally on your own machine over your own files — nothing is sent anywhere, which is ideal for handling sensitive dumps offline. Keep such material on an encrypted, air-gapped or isolated workstation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A long-established Windows tool from Mythicsoft; widely used and reputable for local file search.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FileLocator",
+      "Mythicsoft Agent Ransack"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "file-search",
+      "documents",
+      "forensics"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/agent-ransack.md"
   },
   {
@@ -60666,53 +60700,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/yotpo.md"
-  },
-  {
-    "id": "0xdork",
-    "name": "0xdork",
-    "description": "Very light and simple #Python tool for Google Dorking",
-    "url": "https://github.com/rlyonheart/0xdork",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "open-corporates-command-line-client-occli",
-      "thedevilseye",
-      "thelordeye",
-      "thorndyke"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/0xdork.md"
   },
   {
     "id": "aa419-fake-sites-database",
@@ -81534,40 +81521,51 @@
   {
     "id": "redirectdetective",
     "name": "RedirectDetective",
-    "description": "OSINT tool: RedirectDetective.",
+    "description": "Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting it yourself — returns the destination domain.",
     "url": "http://redirectdetective.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Unmasking where a short/redirecting link actually leads, step by step, before you click it.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "RedirectDetective fetches the URL from its own servers, so the destination sees the tool's IP, not yours — a safety benefit for probing hostile links. But the service itself sees the URL you submit; don't submit links that themselves contain private tokens/session data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing third-party redirect tracer; it reports the hops it observes, but cannot always follow JavaScript/meta-refresh or cloaked redirects that behave differently per client.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "redirect-detective"
     ],
+    "aliases": [
+      "Redirect Detective"
+    ],
+    "tags": [
+      "url-analysis",
+      "redirects",
+      "domain-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/redirectdetective.md"
   },
   {
@@ -110654,42 +110652,50 @@
   },
   {
     "id": "token-view",
-    "name": "Token View",
-    "description": "OSINT tool: Token View.",
-    "url": "https://tokenview.com",
+    "name": "Tokenview",
+    "description": "Use when you have a `crypto-wallet` address or tx hash and want its balance, transaction history and counterparties across many blockchains — returns crypto-wallet links.",
+    "url": "https://tokenview.io/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Multi-chain blockchain exploring — tracing an address's transactions and counterparties across 100+ chains in one place.",
     "selectorsIn": [
       "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web explorer for browsing addresses/transactions; bulk/API access and advanced analytics are paid. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of public on-chain data; the wallet owner is not notified. Blockchain data is public and permanent. If you want to avoid the service tying queries to you, use a VPN — but the lookup itself is non-intrusive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely-used multi-chain explorer; on-chain facts (balances, txs) are verifiable against the chains themselves, while any labels/attribution it adds are heuristic.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tokenview.io",
+      "Token View"
+    ],
     "tags": [
-      "crypto"
+      "crypto",
+      "blockchain-explorer",
+      "tracing"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/token-view.md"
   },
   {
@@ -121726,36 +121732,51 @@
   },
   {
     "id": "outage-map",
-    "name": "Outage map",
-    "description": "OSINT tool: Outage map.",
+    "name": "Utility Outage Map (Toronto Hydro)",
+    "description": "Use when you have a `geolocation`/`address` and a time and want to confirm a power outage there — utility outage maps corroborate blackout events and timelines.",
     "url": "https://www.torontohydro.com/outage-map",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Corroborating whether (and when) a power outage affected a specific area, using a utility's live outage map.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public outage map from the utility; no account. (This entry uses Toronto Hydro as the example; most electric utilities publish an equivalent map for their service area.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read of a public utility map; you disclose only your own view, nothing about a subject. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the electric utility itself (Toronto Hydro), so outage data is first-party — though maps are near-real-time and typically don't retain long history.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Toronto Hydro outage map",
+      "power outage map"
+    ],
+    "tags": [
+      "outages",
+      "geolocation",
+      "event-corroboration"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/outage-map.md"
   },
   {
@@ -185916,25 +185937,28 @@
   },
   {
     "id": "two-factor-authentication-list",
-    "name": "Two Factor Authentication List",
-    "description": "List of websites indicating whether a site uses two factor authentication or not",
-    "url": "http://twofactorauth.org",
+    "name": "2FA Directory (twofactorauth)",
+    "description": "Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or reasoning about a subject's account security.",
+    "url": "https://2fa.directory/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Checking which sites support 2FA and what methods (TOTP, SMS, hardware key) they offer.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source community directory (formerly twofactorauth.org, now 2fa.directory). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read of a public directory; you look up a service, not a person, so nothing about a subject is disclosed. Its main value is defensive — hardening the accounts you investigate from.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained open-source directory (GitHub); entries are crowd-updated and can lag a site's current options — verify on the service itself for decisions.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -185943,15 +185967,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "twofactorauth.org",
+      "2fa.directory"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "2fa",
+      "account-security",
+      "opsec",
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/two-factor-authentication-list.md"
   },
   {
@@ -241135,47 +241163,51 @@
   },
   {
     "id": "naics-code-search",
-    "name": "NAICS Code Search",
-    "description": "OSINT tool: NAICS Code Search.",
-    "url": "https://www.census.gov/cgi-bin/sssd/naics/naicsrch",
+    "name": "NAICS Code Search (US Census)",
+    "description": "Use when you have an industry keyword or a business and want its NAICS industry code (or the reverse) — the code that unlocks industry-scoped searches in other business databases.",
+    "url": "https://www.census.gov/naics/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Translating between an industry/business description and its official NAICS code for use in other datasets.",
     "selectorsIn": [
-      "name",
       "employer-org"
     ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US Census Bureau tool; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of a public code reference; you search an industry keyword or code, disclosing nothing about a subject. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US Census Bureau NAICS reference — the authoritative source for North American industry classification codes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "corporate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "us-census-bureau"
     ],
+    "aliases": [
+      "NAICS lookup",
+      "North American Industry Classification System"
+    ],
+    "tags": [
+      "corporate",
+      "industry-codes",
+      "census"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/naics-code-search.md"
   },
   {

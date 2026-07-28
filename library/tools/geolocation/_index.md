@@ -216,7 +216,7 @@ kind: group-index
 - **`opentopia`** (low) — OSINT tool: Opentopia.
 - **`osm-smart-menu`** (medium) — Use when you have a `geolocation` open in one map/OSM page and want to jump to the same spot in dozens of other maps and OSM tools — a brows
 - **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 
-- **`outage-map`** (low) — OSINT tool: Outage map.
+- **`outage-map`** (low) — Use when you have a `geolocation`/`address` and a time and want to confirm a power outage there — utility outage maps corroborate blackout e
 - **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects
 - **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O
 - **`pastvu-com`** (medium) — Use when you have a `geolocation` or an old `image` and want historical photos mapped to that spot — returns dated, geolocated imagery to co

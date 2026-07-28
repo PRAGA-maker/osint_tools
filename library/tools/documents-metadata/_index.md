@@ -27,7 +27,7 @@ kind: group-index
 - **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
 - **`adobe-photoshop-program`** (low) — Program that allows you to view, create and modify images in multiple document formats
 - **`advertise-com`** (low) — Website that offers social media advertising, marketing, and search engine optimization services
-- **`agent-ransack`** (low) — Free, fast hard drive file searching utility for windows
+- **`agent-ransack`** (low) — Use when you have a folder/drive of documents (a leak dump, downloaded records, disk image) and want fast full-text and filename search with
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar

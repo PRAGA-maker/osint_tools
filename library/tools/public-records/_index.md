@@ -580,7 +580,7 @@ kind: group-index
 - **`myheritage`** (high) — Use when you have a `name` and want genealogical records — births, marriages, deaths, family links — to establish relatives, `dob`, and life
 - **`myplan-ie`** (high) — Use when you have an Irish property `address`/location and want planning applications there (applicant names, addresses) — returns name, add
 - **`nadj-org-uk`** (medium) — Use when you have a `name`, business name or `address`/area and want to find a UK disc jockey's professional listing — returns `name`, `empl
-- **`naics-code-search`** (low) — OSINT tool: NAICS Code Search.
+- **`naics-code-search`** (low) — Use when you have an industry keyword or a business and want its NAICS industry code (or the reverse) — the code that unlocks industry-scope
 - **`napit-org-uk`** (high) — Use when you have a UK tradesperson `name`, `employer-org` or postcode and want to verify NAPIT registration — returns the registered busine
 - **`narcotics-control-reports`** (medium) — Use when you have a country/region and want US State Dept assessments of its drug trafficking and money-laundering landscape — returns count
 - **`nation-master`** (low) — Use when you need country-level context statistics (crime, economy, demographics) to frame an investigation — returns comparable national in

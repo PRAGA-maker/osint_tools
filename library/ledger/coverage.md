@@ -2,36 +2,36 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7329 total · 5326 full · 2003 stub (72% enriched)
+**Tools:** 7328 total · 5335 full · 1993 stub (72% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3362 · medium: 2003 · high: 1964
+low: 3361 · medium: 2003 · high: 1964
 
 ## Tools by trust
-community: 3491 · unverified: 2038 · trusted: 1791 · untrustworthy: 6 · personal: 3
+community: 3493 · unverified: 2032 · trusted: 1794 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 107/437
-- `archives-cache` — 94/120
-- `communities-forums` — 241/286
+- `ai-analysis-automation` — 108/437
+- `archives-cache` — 95/120
+- `communities-forums` — 242/286
 - `dark-web` — 48/106
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 109/290
-- `domains-ip-infrastructure` — 351/665
+- `documents-metadata` — 110/290
+- `domains-ip-infrastructure` — 352/664
 - `email` — 245/246
 - `evidence-capture` — 15/29
-- `financial-crypto` — 62/100
-- `geolocation` — 296/339
+- `financial-crypto` — 63/100
+- `geolocation` — 297/339
 - `image-video-face` — 446/451
 - `maps-geospatial-data` — 92/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 117/514
+- `opsec-investigator-tooling` — 118/514
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 894/1000
+- `public-records` — 895/1000
 - `search-engines` — 532/760
 - `social-networks` — 740/780
 - `training-ctf` — 6/12
@@ -45,7 +45,7 @@ community: 3491 · unverified: 2038 · trusted: 1791 · untrustworthy: 6 · pers
 - `library/tools/social-networks` — 752 leaves
 - `library/tools/search-engines` — 710 leaves
 - `library/tools/opsec-investigator-tooling` — 494 leaves
-- `library/tools/domains-ip-infrastructure` — 442 leaves
+- `library/tools/domains-ip-infrastructure` — 441 leaves
 - `library/tools/ai-analysis-automation` — 406 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 324 leaves
