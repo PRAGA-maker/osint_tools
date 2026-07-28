@@ -11237,42 +11237,6 @@
     "_file": "library/tools/ai-analysis-automation/osintcurious.md"
   },
   {
-    "id": "osintstalker",
-    "name": "OsintStalker",
-    "description": "OSINT tool: OsintStalker.",
-    "url": "https://github.com/milo2012/osintstalker",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/osintstalker.md"
-  },
-  {
     "id": "osinttools-linayorda",
     "name": "OSINTtools (LinaYorda)",
     "description": "Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-media and locate tools for turning a `name`/`username`/`image` into a `social-profile` or `address`.",
@@ -12827,37 +12791,48 @@
   {
     "id": "pygreynoise",
     "name": "pygreynoise",
-    "description": "OSINT tool: pygreynoise.",
+    "description": "Use when you have an `ip-address` and want to know if it's mass internet-scanning \"noise\" or targeted — GreyNoise's official Python client/CLI; returns classification and actor context.",
     "url": "https://github.com/GreyNoise-Intelligence/pygreynoise",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
+    "bestFor": "Enriching IPs via GreyNoise to distinguish benign internet background scanners from targeted activity.",
+    "selectorsIn": [
+      "ip-address"
     ],
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The library is free/open-source; it calls the GreyNoise API, which has a free \"Community\" tier and paid plans for full features.",
+    "opsec": "passive",
+    "opsecNote": "You query GreyNoise's dataset about an IP, not the IP itself — passive, no packets to the target. Requires a GreyNoise API key (register with a sock-puppet identity). Community-tier queries are logged by GreyNoise.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "The official Python SDK/CLI from GreyNoise Intelligence, a reputable internet-scanning-intelligence company; classifications are well-regarded in the security community.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "pygreynoise",
+      "greynoise python"
+    ],
+    "tags": [],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/pygreynoise.md"
   },
   {
@@ -52330,50 +52305,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/forensicdots-de.md"
-  },
-  {
-    "id": "foursquare-time-machine",
-    "name": "Foursquare Time Machine",
-    "description": "Foursquare history visualizer and discovery tool",
-    "url": "https://foursquare.com/timemachine",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "foursquare",
-      "foursquare-business-search"
-    ],
-    "_file": "library/tools/documents-metadata/foursquare-time-machine.md"
   },
   {
     "id": "free-full-pdf",
@@ -106683,49 +106614,6 @@
     "_file": "library/tools/financial-crypto/bindb-com.md"
   },
   {
-    "id": "bitcoin-atm-map",
-    "name": "Bitcoin ATM map",
-    "description": "OSINT tool: Bitcoin ATM map.",
-    "url": "https://coinatmradar.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "coinatmradar-com"
-    ],
-    "_file": "library/tools/financial-crypto/bitcoin-atm-map.md"
-  },
-  {
     "id": "bitcoin-forums-search-engine",
     "name": "Bitcoin Forums Search Engine",
     "description": "OSINT tool: Bitcoin Forums Search Engine.",
@@ -108866,49 +108754,6 @@
       "vat-number-validation"
     ],
     "_file": "library/tools/financial-crypto/eu-consolidated-corporate-registers.md"
-  },
-  {
-    "id": "eu-sanctions-map",
-    "name": "EU Sanctions Map",
-    "description": "Database of sanctions imposed by the European Union and the United Nations",
-    "url": "https://www.sanctionsmap.eu/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "employer-org",
-      "name"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/eu-sanctions-map.md"
   },
   {
     "id": "europa-eu",
@@ -223973,53 +223818,55 @@
   },
   {
     "id": "eu-sanctions-tool",
-    "name": "EU Sanctions Tool",
-    "description": "Checking individuals or entities against EU sanctions regimes",
-    "url": "https://sanctions-tool.ec.europa.eu",
+    "name": "EU Sanctions Map / Consolidated List",
+    "description": "Use when you have a `name` or `employer-org` and want to check it against EU sanctions regimes — returns whether a person/entity is listed, plus the legal basis and identifiers.",
+    "url": "https://www.sanctionsmap.eu/",
     "category": "public-records",
     "path": [
       "public-records",
       "sanctions-screening"
     ],
-    "bestFor": "Checking individuals or entities against EU sanctions regimes",
-    "input": "Person or entity name",
-    "output": "Matches against EU consolidated sanctions list with designation details",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
+    "bestFor": "Screening an individual or organization against official EU financial-sanctions and asset-freeze lists.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official EU resource; no account. (The original sanctions-tool.ec.europa.eu host is retired; use the EU Sanctions Map / Consolidated FSD list.)",
     "opsec": "passive",
-    "opsecNote": "Public EU government search tool; queries are submitted to an EU server and may be logged.",
+    "opsecNote": "You search the EU's own public list — passive, with no notification to the subject and no exposure of your investigation. Screening a name reveals nothing to that person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official EU sanctions resource maintained by the EU institutions; the consolidated list (FSD) is the authoritative record of EU-sanctioned persons and entities.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "e-justice-europa-eu",
-      "eu-consolidated-corporate-registers",
-      "europa-eu",
-      "europa-press-releases",
-      "european-commission-home-affairs",
-      "european-union-open-data-portal",
-      "eurostat",
-      "frontex-migratory-map",
-      "inspire-geoportal",
-      "vat-number-validation"
+    "relatedTools": [],
+    "aliases": [
+      "EU Sanctions Tool",
+      "EU Sanctions Map",
+      "EU Consolidated Sanctions List"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "sanctions-screening",
+      "public-records"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sanctions-screening/eu-sanctions-tool.md"
   },
   {
@@ -334423,45 +334270,6 @@
     "_file": "library/tools/social-networks/twitch-followage-tool.md"
   },
   {
-    "id": "twitch-following",
-    "name": "Twitch Following",
-    "description": "OSINT tool: Twitch Following.",
-    "url": "https://cactus.tools/twitch/following",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "check-channel-badges",
-      "check-twitch-follow-length",
-      "username-availability"
-    ],
-    "_file": "library/tools/social-networks/twitch-following.md"
-  },
-  {
     "id": "twitch-insights",
     "name": "Twitch Insights",
     "description": "Use when you have a Twitch `username` (or numeric ID) and want to confirm the account exists, when it was created, and whether it is a known bot — returns `social-profile` confirmation and account age.",
@@ -343357,24 +343165,25 @@
   {
     "id": "imtranslator-comparison-tool",
     "name": "IMTranslator Comparison Tool",
-    "description": "Tool for translating text and web content from one language to another",
+    "description": "Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagreements flag phrases needing a human.",
     "url": "http://imtranslator.net/compare",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Comparing multiple machine-translation engines on the same text in one view.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Your text is sent through IMTranslator to several third-party MT engines — so it reaches multiple providers at once. Never submit confidential material; use offline MT for sensitive text. Otherwise passive, with no target exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running translation aggregator (Smart Link Corporation); it relays other engines' output, so quality is theirs, and results are candidates to judge in context.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -343383,18 +343192,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "imtranslator"
     ],
+    "aliases": [
+      "imtranslator.net compare",
+      "IMTranslator"
+    ],
+    "tags": [
+      "translation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/imtranslator-comparison-tool.md"
   },
   {
@@ -343823,37 +343633,44 @@
   {
     "id": "microsoft-translator",
     "name": "Microsoft Translator",
-    "description": "OSINT tool: Microsoft Translator.",
-    "url": "http://www.microsoft.com/en-us/translator",
+    "description": "Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/DeepL on names, idioms, and less-common languages.",
+    "url": "https://www.microsoft.com/en-us/translator",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Free machine translation of text and web pages as a second opinion alongside other engines.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The web translator (Bing Translator) is free; the Azure Translator API is paid beyond a free tier.",
+    "opsec": "passive",
+    "opsecNote": "Pasting text sends it to Microsoft's servers. Don't submit confidential case material to any hosted translator — for sensitive text use an offline/self-hosted engine. Translating is otherwise passive and doesn't touch your target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft service; a reliable mainstream MT engine, though machine output still needs human judgment on names and idioms.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Bing Translator",
+      "microsoft.com translator"
+    ],
     "tags": [
       "translation"
     ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/microsoft-translator.md"
   },
   {
@@ -354292,48 +354109,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/transportation/uk-govt-vessel-lists.md"
-  },
-  {
-    "id": "ukraine-liveuamap-com",
-    "name": "Ukraine liveuamap.com",
-    "description": "online tracking of war-related events in Ukraine.",
-    "url": "https://liveuamap.com/ru",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Military tracking"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "live-universal-awareness-map",
-      "liveuamap",
-      "map-of-syrian-civil-war"
-    ],
-    "_file": "library/tools/transportation/ukraine-liveuamap-com.md"
   },
   {
     "id": "understanding-war-map-room",

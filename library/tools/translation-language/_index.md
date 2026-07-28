@@ -49,7 +49,7 @@ kind: group-index
 - **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another
 - **`happyscribe-com`** (low) — Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) —
 - **`idiomax-translation`** (low) — OSINT tool: IdiomaX Translation.
-- **`imtranslator-comparison-tool`** (low) — Tool for translating text and web content from one language to another
+- **`imtranslator-comparison-tool`** (low) — Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagre
 - **`imtranslator`** (low) — Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-Engli
 - **`itranslate-voice`** (low) — OSINT tool: iTranslate Voice.
 - **`itranslate`** (low) — OSINT tool: iTranslate.
@@ -62,7 +62,7 @@ kind: group-index
 - **`linguee-english-french-dictionary`** (low) — Tool for translating text and web content from one language to another; including a language translation dictionary
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
 - **`meowni-ca`** (low) — OSINT tool: meowni.ca.
-- **`microsoft-translator`** (low) — OSINT tool: Microsoft Translator.
+- **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
 - **`noslang-dictionary`** (low) — Language-related search for slang words in current and former use on the World Wide Web
 - **`odysseytranslator`** (low) — OSINT tool: OdysseyTranslator.

@@ -27,7 +27,6 @@ kind: group-index
 - **`binbase-com`** (medium) — Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-o
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch a
-- **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
 - **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
 - **`bitcoin-org`** (medium) — Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — retur
 - **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —
@@ -63,7 +62,6 @@ kind: group-index
 - **`ethplorer-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address (or a token/contract) and want its balances, token holdings, and transaction counterpa
 - **`ethtective-com`** (medium) — Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link 
 - **`eu-consolidated-corporate-registers`** (medium) — Use when you have a company `name` (or a subject's likely `employer-org`) and want to find its official registration across the EU, Iceland,
-- **`eu-sanctions-map`** (low) — Database of sanctions imposed by the European Union and the United Nations
 - **`europa-eu`** (low) — Use when you are tracing a `crypto-wallet` in a criminal-finance context and want an authoritative methodology reference — returns Europol's
 - **`fdic-search`** (low) — Use when you have a bank name (`employer-org`) and want authoritative US regulatory details — charter, headquarters `address`, branches, his
 - **`fingble-nftport`** (low) — One of the most accurate search engines for finding NFT by uploaded image. Works well with faces. Also it's possible to search by keyword or

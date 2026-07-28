@@ -275,7 +275,6 @@ kind: group-index
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — OSINT tool: OSINT Updates - a free weekly newsletter for OSINTers.
 - **`osintcombine-tools`** (medium) — Use when you want a free, browser-based hub of OSINT pivots and utilities — returns a launcher of search/social/domain/crypto/username tools
 - **`osintcurious`** (low) — OSINT tool: OSINTCurious.
-- **`osintstalker`** (low) — OSINT tool: OsintStalker.
 - **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
 - **`osinttracker`** (low) — Use when you have multiple entry points (`email`, `domain`, `crypto-wallet`, phone, accounts) and want to map and document an investigation 
 - **`ossec`** (low) — OSINT tool: OSSEC.
@@ -308,7 +307,7 @@ kind: group-index
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
 - **`psn-monitor`** (low) — OSINT tool: psn_monitor.
 - **`pyba`** (low) — OSINT tool: Pyba.
-- **`pygreynoise`** (low) — OSINT tool: pygreynoise.
+- **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
 - **`python-code-checker`** (low) — quick find errors in code
 - **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe

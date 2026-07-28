@@ -113,7 +113,6 @@ kind: group-index
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
 - **`forensic-analyzer`** (medium) — Use when you have an `image` and want to check for manipulation and pull embedded metadata — returns EXIF/IPTC/XMP blocks, GPS `geolocation`
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
-- **`foursquare-time-machine`** (low) — Foursquare history visualizer and discovery tool
 - **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.
 - **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`fundrazr`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects

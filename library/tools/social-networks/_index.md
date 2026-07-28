@@ -623,7 +623,6 @@ kind: group-index
 - **`twish`** (low) — Use when you want to build an advanced Twitter/X search query (by user, keyword, date, engagement) from a `name`/`username` without memorisi
 - **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
 - **`twitch-followage-tool`** (medium) — Use when you have a Twitch `username` and want the full list of channels that account follows, with follow dates — returns `social-profile` 
-- **`twitch-following`** (low) — OSINT tool: Twitch Following.
 - **`twitch-insights`** (medium) — Use when you have a Twitch `username` (or numeric ID) and want to confirm the account exists, when it was created, and whether it is a known
 - **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
 - **`twitch-payout-search`** (low) — Use when you have a Twitch `username` (or streamer `name`) and want to check their subscription earnings from the Oct-2021 Twitch leak — ret
