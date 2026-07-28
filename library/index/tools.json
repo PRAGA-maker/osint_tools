@@ -5462,37 +5462,54 @@
   {
     "id": "gitguardian-public-github-monitoring",
     "name": "GitGuardian - Public GitHub Monitoring",
-    "description": "OSINT tool: GitGuardian - Public GitHub Monitoring.",
+    "description": "Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret alerts tied to your perimeter.",
     "url": "https://www.gitguardian.com/monitor-public-github-for-secrets",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Detecting an organization's leaked secrets/credentials exposed across public GitHub in near real time.",
+    "selectorsIn": [
+      "domain",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free/monitored tier for individual developers and small perimeters; organization-wide public monitoring is a paid product. Claiming your domain perimeter requires verification.",
+    "opsec": "passive",
+    "opsecNote": "You monitor your OWN organization's leaks against GitGuardian's index of public GitHub — this is defensive, and you should only claim/monitor a perimeter you are authorized to. Findings are exposed secrets; handle them as sensitive incident data and rotate leaked credentials rather than reusing them.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "GitGuardian is a well-known secrets-detection vendor scanning the public GitHub firehose; authoritative for what it has indexed, bounded to your verified perimeter.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "GitGuardian",
+      "gitguardian.com"
+    ],
     "tags": [
-      "threat-intelligence"
+      "threat-intelligence",
+      "secrets-detection",
+      "defensive"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gitguardian-public-github-monitoring.md"
   },
   {
@@ -75537,41 +75554,49 @@
   {
     "id": "kaspersky-cyberthreat-live-map",
     "name": "Kaspersky Cyberthreat live Map",
-    "description": "OSINT tool: Kaspersky Cyberthreat live Map.",
+    "description": "Use when you want a live global picture of malware/attack detections by country — returns real-time threat-telemetry visualization, situational context rather than per-subject data.",
     "url": "https://cybermap.kaspersky.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A live, visual global map of cyberthreat detections (by type and country) for situational awareness.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public visualization; no account.",
+    "opsec": "passive",
+    "opsecNote": "You view an aggregate telemetry map on Kaspersky's site — no target is queried and nothing you enter reaches a subject. Standard third-party site logging; be aware it is a vendor marketing/telemetry product.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party Kaspersky visualization of their own detection telemetry; representative of what their products see, not an independent or complete measure of global threats.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "live-cyber-threat-maps"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "cybermap",
       "kaspersky-tdsskiller-anti-rootkit-tool"
     ],
+    "aliases": [
+      "Kaspersky Cybermap",
+      "cybermap.kaspersky.com"
+    ],
+    "tags": [
+      "live-cyber-threat-maps",
+      "threat-intelligence"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/kaspersky-cyberthreat-live-map.md"
   },
   {
@@ -76915,13 +76940,13 @@
   {
     "id": "metabigor",
     "name": "metabigor",
-    "description": "OSINT tools for intelligence gathering without requiring API keys.",
+    "description": "Use when you have an `employer-org`, ASN, or `ip-address` and want its network footprint with no API keys — returns IP ranges, related domains and org infrastructure.",
     "url": "https://github.com/j3ssie/metabigor",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "No-API-key recon on IP ranges, ASN, organizations and certificates.",
+    "bestFor": "No-API-key CLI recon on IP ranges, ASNs, organizations and certificates.",
     "selectorsIn": [
       "ip-address",
       "domain",
@@ -76932,15 +76957,16 @@
       "domain",
       "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Go); no API keys required — it scrapes public sources itself.",
+    "opsec": "active",
+    "opsecNote": "metabigor queries public data sources (search engines, ASN/registry data, certificate transparency, and can drive scanners) from your machine — some modes touch third-party services and, if you enable active scanning, the target's infrastructure. Run reconnaissance modes from a VPN/sock-puppet host, and treat any scan-driving mode as active against the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "By j3ssie (Osmedeus author); focuses on infra recon.",
+    "trustNote": "By j3ssie (author of Osmedeus); a well-known open-source recon tool focused on infrastructure enumeration.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -76949,6 +76975,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "cdnstrip"
+    ],
     "aliases": [
       "j3ssie/metabigor"
     ],
@@ -76956,14 +76986,12 @@
       "asn",
       "ip-ranges",
       "go",
-      "no-api-key"
+      "no-api-key",
+      "reconnaissance"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cdnstrip"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/metabigor.md"
   },
   {
@@ -112790,38 +112818,51 @@
   {
     "id": "broadcastify",
     "name": "Broadcastify",
-    "description": "OSINT tool: Broadcastify.",
+    "description": "Use when you want live or archived public-safety radio for a specific `geolocation` (county/agency) — returns real-time scanner audio to corroborate incidents and timing.",
     "url": "https://www.broadcastify.com/listen/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Listening to live and archived police/fire/EMS and other public-safety radio feeds by US county/area.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Live feeds are free (browsable by state/county); archived recordings and premium/ad-free listening require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You listen to publicly broadcast radio relayed by volunteers — entirely passive, no target is touched. Archived audio behind the paywall is tied to your account. Radio traffic is unverified operational chatter; treat it as a lead, not confirmed fact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running crowd-sourced scanner-feed aggregator; feed availability and coverage depend on local volunteers and legal restrictions (some jurisdictions encrypt or ban rebroadcast).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "calls-node-status"
     ],
+    "aliases": [
+      "Broadcastify",
+      "broadcastify.com"
+    ],
+    "tags": [
+      "scanner",
+      "public-safety-radio",
+      "live-audio"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/broadcastify.md"
   },
   {
@@ -178735,35 +178776,49 @@
   {
     "id": "metacleaner-com",
     "name": "Metacleaner.com",
-    "description": "OSINT tool: Metacleaner.com.",
+    "description": "Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author and edit history. Investigator OpSec.",
     "url": "https://metacleaner.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "One-drop online removal of hidden metadata (EXIF/GPS, document author/edit history) from images, Office/PDF docs, audio and video.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier cleans 1 file/day (5MB) without an account, 5 files/day registered; higher limits are paid. Cleaned file downloads to your browser.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is defensive metadata hygiene for YOUR outputs — it strips data that would otherwise leak your device, GPS, or identity when you publish. But the file is uploaded to Metacleaner's server to be cleaned, so for highly sensitive material prefer a local tool (exiftool/mat2). Never rely on it to sanitize something you can't risk a third party seeing in transit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Convenient third-party metadata remover; the site says it doesn't store files, but for sensitive work verify results and prefer a local, auditable tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "view-exif-data-online-remove-exif-online"
+    ],
+    "aliases": [
+      "Metacleaner",
+      "metacleaner.com"
+    ],
+    "tags": [
+      "opsec",
+      "metadata",
+      "exif-removal"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/metacleaner-com.md"
   },
   {
@@ -186531,36 +186586,48 @@
   },
   {
     "id": "upload-disroot",
-    "name": "Upload \\| Disroot",
-    "description": "OSINT tool: Upload \\| Disroot.",
+    "name": "Upload | Disroot",
+    "description": "Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transfer tool, not a lookup on a subject.",
     "url": "https://disroot.org/en/services/upload",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Uploading a file to get a self-destructing, optionally password-protected share link from a privacy-focused non-profit host.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; run by the Disroot non-profit collective (donation-supported). Per-file size and retention limits apply.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Protects your workflow, not a target — it lets you move a file without a Big-Tech account or link tracking. Set an expiry and, for sensitive files, a password and client-side encryption; a plain link is still guessable-by-whoever-has-it. Don't upload material you're not authorized to hold, and remember Disroot's servers process the file in transit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Disroot is an established privacy-focused non-profit running libre services (this is their Lufi-based upload); trustworthy operator, but it's still third-party hosting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Disroot Upload",
+      "Disroot Lufi"
+    ],
+    "tags": [
+      "opsec",
+      "file-sharing",
+      "privacy"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/upload-disroot.md"
   },
   {
@@ -210873,30 +210940,32 @@
   {
     "id": "acrevalue",
     "name": "AcreValue",
-    "description": "Land-parcel value and ownership mapping tool.",
+    "description": "Use when you have a rural/agricultural `address` or map location and want parcel boundaries, ownership and value — returns parcel owner, acreage, and land value.",
     "url": "https://www.acrevalue.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Parcel/land ownership and value mapping for rural/agricultural land.",
+    "bestFor": "Mapping land parcels to owners, acreage and estimated value, especially rural/agricultural US land.",
     "selectorsIn": [
       "address",
       "geolocation"
     ],
     "selectorsOut": [
       "address",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account gives limited parcel lookups and the map; full parcel/owner detail and unlimited access require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a public land-records/valuation service, not the landowner — no subject is alerted. Detailed parcel views may require login, tying the search to your account; use an appropriate one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial agricultural land-data service aggregating public parcel/assessor records; owner data is as current as the underlying county records, which lag.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "us"
@@ -210905,7 +210974,12 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "AcreValue",
+      "acrevalue.com"
+    ],
     "tags": [
       "address",
       "parcel",
@@ -210913,8 +210987,8 @@
       "property"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/acrevalue.md"
   },
   {
@@ -342471,38 +342545,49 @@
   {
     "id": "get-otter-ai",
     "name": "get.otter.ai",
-    "description": "OSINT tool: get.otter.ai.",
+    "description": "Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speaker-labeled text you can analyze.",
     "url": "https://get.otter.ai/interview-transcription/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Automatic English speech-to-text transcription of recordings, with speaker separation and search.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free plan gives a monthly cap of transcription minutes and limited imports; longer/bulk transcription and advanced features require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Audio you upload is sent to and processed on Otter's servers — do not upload confidential, privileged, or legally-sensitive recordings you must keep off third-party infrastructure. Only transcribe recordings you are lawfully entitled to process; consent/recording laws vary by jurisdiction.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Established commercial transcription service; ASR output is imperfect (names, jargon, crosstalk) and must be checked against the audio for anything decisive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Otter.ai",
+      "otter.ai"
+    ],
     "tags": [
       "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "Translation & Transcription Sites",
+      "transcription"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/get-otter-ai.md"
   },
   {

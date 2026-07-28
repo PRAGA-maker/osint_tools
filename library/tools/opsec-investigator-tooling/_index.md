@@ -260,7 +260,7 @@ kind: group-index
 - **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
 - **`mega`** (low) — OSINT tool: MEGA.
 - **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
-- **`metacleaner-com`** (low) — OSINT tool: Metacleaner.com.
+- **`metacleaner-com`** (low) — Use when you have a file (image/doc/PDF/video) and want its hidden metadata stripped before you publish or share — removes EXIF/GPS, author 
 - **`microsoft-safety-and-security-center`** (low) — Information about online privacy, security websites, and programs, provided by Microsoft
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mozilla-firefox`** (low) — Internet browser program
@@ -436,7 +436,7 @@ kind: group-index
 - **`ultrasurf-proxy-website`** (low) — Anonymous browsing service provider
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
 - **`update-scanner-add-on`** (low) — Firefox browser add-on for monitoring changes to a webpage without using RSS or Atom feeds
-- **`upload-disroot`** (low) — OSINT tool: Upload \| Disroot.
+- **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
 - **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
 - **`urban-legends-online`** (low) — Searchable database of scam, fraud, hoax, phishing and misinformation articles
 - **`us-cop-reference-guide-app-mobile-android`** (low) — App for mobile devices for reference material for US-based LEO's

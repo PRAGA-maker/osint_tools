@@ -40,7 +40,7 @@ kind: group-index
 - **`free-website-translation`** (low) — OSINT tool: Free Website Translation.
 - **`freetranslation`** (low) — OSINT tool: FreeTranslation.
 - **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
-- **`get-otter-ai`** (low) — OSINT tool: get.otter.ai.
+- **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
 - **`gizoogle-textilizer`** (low) — Tool for translating English to street slang
 - **`google-quest-visual-wordlens`** (low) — Tool for translating words found in images from one language to another
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials

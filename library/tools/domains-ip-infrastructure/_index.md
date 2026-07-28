@@ -251,7 +251,7 @@ kind: group-index
 - **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
 - **`jsluice`** (low) — Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns
 - **`kali-intelligence-suite-kis`** (low) — Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nm
-- **`kaspersky-cyberthreat-live-map`** (low) — OSINT tool: Kaspersky Cyberthreat live Map.
+- **`kaspersky-cyberthreat-live-map`** (low) — Use when you want a live global picture of malware/attack detections by country — returns real-time threat-telemetry visualization, situatio
 - **`kloth`** (low) — OSINT tool: Kloth.
 - **`knockknock`** (low) — A very fast script written in #go that queries the ViewDNSInfo API (free, 500 results limit) and gets a list of domains related to target do
 - **`knowledgenow`** (low) — OSINT tool: KNOWLEDGENOW.
@@ -271,7 +271,7 @@ kind: group-index
 - **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
 - **`maxmind`** (low) — OSINT tool: MaxMind.
 - **`mayorsecdnsscan`** (low) — Use when you have a `domain` and want its DNS records, zone-transfer exposure, and enumerated subdomains — returns subdomain `domain`s and t
-- **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
+- **`metabigor`** (low) — Use when you have an `employer-org`, ASN, or `ip-address` and want its network footprint with no API keys — returns IP ranges, related domai
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
 - **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host
 - **`metafinder`** (low) — Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and pa

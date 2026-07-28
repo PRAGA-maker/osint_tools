@@ -37,7 +37,7 @@ kind: group-index
 - **`academictree`** (medium) — Use when you have an academic's `name` and want their mentors, students and collaborators — returns `associate` links, `employer-org` affili
 - **`accaglobal-com`** (high) — Use when you have a `name`, firm or town and want to confirm someone is a chartered certified accountant (ACCA member) — returns membership 
 - **`access-state-records-online-staterecords-org`** (high) — Use when you have a `name` and want a US public-records starting point (criminal, court, arrest, vital records) — returns aggregated record 
-- **`acrevalue`** (low) — Land-parcel value and ownership mapping tool.
+- **`acrevalue`** (low) — Use when you have a rural/agricultural `address` or map location and want parcel boundaries, ownership and value — returns parcel owner, acr
 - **`adultwork-com`** (high) — Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profil
 - **`advanced-registry-search`** (low) — Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — retu
 - **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.

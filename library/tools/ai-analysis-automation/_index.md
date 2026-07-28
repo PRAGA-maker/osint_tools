@@ -146,7 +146,7 @@ kind: group-index
 - **`gephi`** (low) — OSINT tool: Gephi.
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
-- **`gitguardian-public-github-monitoring`** (low) — OSINT tool: GitGuardian - Public GitHub Monitoring.
+- **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
 - **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`gitpod-io`** (low) — run code from repositories on Github directly in a browser

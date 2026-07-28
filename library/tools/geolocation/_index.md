@@ -37,7 +37,7 @@ kind: group-index
 - **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Use when you have a US `geolocation` and want the density of reported Bigfoot sightings and the local biome there — returns `geolocation` co
 - **`bing-maps`** (medium) — Use when you need a second mapping/imagery source — Microsoft aerial and 3D views, directions, and business search — to confirm a location o
 - **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a
-- **`broadcastify`** (low) — OSINT tool: Broadcastify.
+- **`broadcastify`** (low) — Use when you want live or archived public-safety radio for a specific `geolocation` (county/agency) — returns real-time scanner audio to cor
 - **`calcmaps`** (medium) — Use when you have a `geolocation` and need to measure on a map — returns area, distance, radius, bearing, and elevation for points/routes/po
 - **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
 - **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
