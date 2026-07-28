@@ -808,37 +808,44 @@
   {
     "id": "awesome-ctf",
     "name": "awesome-ctf",
-    "description": "OSINT tool: awesome-ctf.",
+    "description": "Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject data.",
     "url": "https://github.com/apsdehal/awesome-ctf",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding vetted CTF, forensics, stego, and recon tools/resources to learn a technique.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source GitHub \"awesome list\"; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive reference reading — it's a public GitHub list of links, involving no target interaction. It teaches methods and points to tools; the OpSec of each linked tool is that tool's own concern.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A popular community-curated \"awesome\" list on GitHub; usefulness depends on volunteer upkeep, so some links drift or die over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "awesome-ctf list"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "reference",
+      "ctf"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/awesome-ctf.md"
   },
   {
@@ -7104,37 +7111,48 @@
   {
     "id": "i2p",
     "name": "I2P",
-    "description": "OSINT tool: I2P.",
+    "description": "Use when you need to reach or research I2P hidden services anonymously — returns access to the I2P overlay network (an anonymity layer, not subject data).",
     "url": "https://geti2p.net",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously accessing I2P \"eepsite\" hidden services and darknet content outside Tor.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; no account.",
+    "opsec": "active",
+    "opsecNote": "Investigator-side anonymity. I2P routes your traffic through a peer-to-peer garlic-routed overlay, hiding your real `ip-address` from the hidden service you visit. But by design you also relay other users' traffic, and misconfiguration (or leaving I2P for the clearnet) can deanonymise you — keep it in an isolated VM and never log into attributable accounts over it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-running open-source anonymity project (The Invisible Internet Project); the software is auditable and widely studied.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Invisible Internet Project",
+      "geti2p",
+      "eepsite"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "anonymity",
+      "darknet"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/i2p.md"
   },
   {
@@ -52538,44 +52556,57 @@
   {
     "id": "github",
     "name": "GitHub",
-    "description": "Open source code hosting community for users to collaborate and create projects.",
+    "description": "Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s and `associate`s.",
     "url": "https://github.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Pivoting a developer identity into commit emails, real names, projects, and collaborators.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and search public code and profiles; paid plans are only for private hosting, not for OSINT reading.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of public data — but starring, following, or opening issues is logged and visible to the target. Search and read while logged out (or from a puppet account); never interact from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft-owned platform; the data (commits, profiles) is authoritative, though profile display names and bios are user-supplied.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "github-gist"
     ],
+    "aliases": [
+      "github.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "useful-websites-tools-documents",
+      "code-hosting"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/github.md"
   },
   {
@@ -64610,42 +64641,51 @@
   {
     "id": "checkphishai",
     "name": "CheckPhishAI",
-    "description": "An online tool that finds registered domain typosquats and analyzes them for suspicious activity.",
+    "description": "Use when you have a `domain`/URL and want to detect phishing or typosquats of it — returns scan verdicts, screenshots, and lookalike `domain`s.",
     "url": "https://checkphish.bolster.ai/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Scanning a URL for phishing/scam signals and finding registered typosquat domains of a brand.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free real-time URL scans (no login for basic checks); typosquat monitoring and higher-volume/API use are on freemium/paid Bolster tiers.",
+    "opsec": "passive",
+    "opsecNote": "Passive from the target's view — CheckPhish fetches and renders the URL from its own infrastructure, so the site sees Bolster's crawler, not you. Still, submitting a URL discloses your interest to Bolster; use a puppet account for sensitive investigations.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Free scanner from Bolster (a commercial anti-phishing vendor); verdicts are automated ML classifications, useful as leads but not authoritative rulings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CheckPhish",
+      "checkphish.bolster.ai"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "phishing",
+      "typosquat"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/checkphishai.md"
   },
   {
@@ -107283,35 +107323,50 @@
   {
     "id": "blockcypher",
     "name": "Blockcypher",
-    "description": "OSINT tool: Blockcypher.",
+    "description": "Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and linked `crypto-wallet` addresses.",
     "url": "https://live.blockcypher.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Exploring Bitcoin/Ethereum/Litecoin/Dogecoin addresses and transactions in a web block explorer.",
+    "selectorsIn": [
+      "crypto-wallet",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The web explorer is free with no account; the developer API is freemium (free tier with rate limits, paid tiers for higher volume).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — blockchain data is public and you query BlockCypher's index, not the wallet owner, so no signal reaches the target. Your lookups are logged by BlockCypher; use a puppet session if the address under investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established blockchain-infrastructure provider; the explorer reflects on-chain data, which is independently verifiable against the public ledgers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BlockCypher",
+      "live.blockcypher.com"
+    ],
+    "tags": [
+      "blockchain-explorer",
+      "crypto",
+      "bitcoin"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/blockcypher.md"
   },
   {
@@ -108480,44 +108535,40 @@
   {
     "id": "edgar",
     "name": "EDGAR",
-    "description": "Database of corporate filings for the US",
+    "description": "Use when you have a `name` or company (`employer-org`) and want US SEC filings — returns officers, insiders, ownership and `associate` links from corporate disclosures.",
     "url": "https://www.sec.gov/edgar/search/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Full-text searching US public-company filings for people, companies, and their relationships.",
     "selectorsIn": [
       "employer-org",
       "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and official; no account. A public JSON/REST API is available for automation.",
+    "opsec": "passive",
+    "opsecNote": "Passive query against a US-government public database — the subject receives no signal. Filings are public record, so there is no intrusion, but treat personal details (home addresses in some filings) responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the US Securities and Exchange Commission; filings are legally-mandated primary-source records.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "sec-company-search",
       "sec-gov",
@@ -108525,6 +108576,18 @@
       "us-securities-and-exchange-commission",
       "edgar-u-s-securities-and-exchange-commission-filings"
     ],
+    "aliases": [
+      "SEC EDGAR",
+      "EDGAR full-text search"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "companies-finance",
+      "corporate-records"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/edgar.md"
   },
   {
@@ -122336,38 +122399,52 @@
   {
     "id": "plowto",
     "name": "PlowTO",
-    "description": "OSINT tool: PlowTO.",
+    "description": "Use when you need real-time positions of Toronto's winter road vehicles — returns live `geolocation` of city snow plows and salt trucks.",
     "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/road-maintenance/winter-maintenance/plowto/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Watching the live location of City of Toronto snow-clearing vehicles during winter.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public City of Toronto service; no account. Seasonal — available only in the winter season and taken offline for maintenance in summer.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive viewing of a public municipal map — no subject interaction. It tracks city vehicles, not people; useful chiefly as a corroborating layer (e.g. confirming a location's weather/road-clearing state at a time).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official City of Toronto service; the vehicle positions are first-party municipal telemetry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "pay-toronto-tickets"
     ],
+    "aliases": [
+      "Plow TO",
+      "Toronto snow plow tracker"
+    ],
+    "tags": [
+      "toronto",
+      "municipal",
+      "live-map"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/plowto.md"
   },
   {
@@ -179425,40 +179502,6 @@
     "_file": "library/tools/opsec-investigator-tooling/okcupid-social-networking-app-mobile-android.md"
   },
   {
-    "id": "one-time-mobile-by-osintstash",
-    "name": "One-time Mobile by @OsintStash",
-    "description": "OSINT tool: One-time Mobile by @OsintStash.",
-    "url": "https://threader.app/thread/1199785692274077696",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/one-time-mobile-by-osintstash.md"
-  },
-  {
     "id": "openmedia",
     "name": "OpenMedia",
     "description": "Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian government's surveillance activities",
@@ -180114,50 +180157,54 @@
   {
     "id": "parrot-security",
     "name": "Parrot Security",
-    "description": "OSINT tool: Parrot Security.",
+    "description": "Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security tooling.",
     "url": "https://twitter.com/ParrotSec",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A privacy-hardened Linux distribution pre-packed with OSINT, forensics, and pentest tools.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source; download the ISO at parrotsec.org at no cost.",
+    "opsec": "active",
+    "opsecNote": "Investigator-side tooling. Parrot bundles anonymity features (AnonSurf to route traffic over Tor) and sandboxed apps, but running it does not make you anonymous by default — configure AnonSurf/VPN before touching targets, and keep the OSINT work in a dedicated puppet environment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Well-established security distribution maintained by the Parrot Project (Parrot OS / Parrot Security Edition); an actively-developed Kali alternative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Virtual Machines/Linux distributions"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "global-terriorism-database",
       "murph-live",
       "tormap",
       "twitter",
       "twitter-advanced-search",
-      "twitter-analytics",
-      "twitter-com",
-      "twitter-date-search",
-      "twitter-image-search",
-      "twitter-name-search-twitter-name-search",
-      "twitter-x-location-search"
+      "twitter-analytics"
     ],
+    "aliases": [
+      "ParrotSec",
+      "Parrot OS",
+      "Parrot Security OS"
+    ],
+    "tags": [
+      "Virtual Machines/Linux distributions",
+      "pentest-distro",
+      "linux"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/parrot-security.md"
   },
   {
@@ -309935,49 +309982,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/social-networks/github-repository-size.md"
-  },
-  {
-    "id": "github-stars-githubstars-com",
-    "name": "Github Stars (githubstars.com)",
-    "description": "Showcase of popular GitHub repositories.",
-    "url": "http://githubstars.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Browsing trending/popular GitHub repos",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github",
-      "directory"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/github-stars-githubstars-com.md"
   },
   {
     "id": "github-trending-archives",

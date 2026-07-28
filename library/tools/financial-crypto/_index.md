@@ -33,7 +33,7 @@ kind: group-index
 - **`bitinfocharts-com`** (medium) — Use when you have a `crypto-wallet` address (or a name/exchange label) and want its balance, transaction activity, wealth rank, and public o
 - **`blockchain-explorer`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want its full on-chain history — balance, transactions and counterpartie
 - **`blockchair-com`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterpar
-- **`blockcypher`** (low) — OSINT tool: Blockcypher.
+- **`blockcypher`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and linked `cr
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
 - **`bpfi-ie`** (low) — Use when you have an Irish/UK `document-id` (account number + sort code) and want to confirm it is valid — returns a validity check and poin
 - **`btc-com`** (low) — OSINT tool: BTC.com.
@@ -56,7 +56,7 @@ kind: group-index
 - **`csol-ie`** (medium) — Use when you have a `name` and want to check Ireland's public bankruptcy register — returns bankruptcy status, address and adjudication deta
 - **`economy-ni-gov-uk`** (medium) — Use when you have a `name` and want to check Northern Ireland's official register of Debt Relief Orders and Bankruptcy Restrictions Orders —
 - **`edgar-command-line-interface-edgar-tool`** (low) — Tool for the retrieval of corporate and financial data from SEC's EDGAR (Electronic Data Gathering, Analysis, and Retrieval) database.
-- **`edgar`** (low) — Database of corporate filings for the US
+- **`edgar`** (medium) — Use when you have a `name` or company (`employer-org`) and want US SEC filings — returns officers, insiders, ownership and `associate` links
 - **`etherscan-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address and want its full on-chain history — returns balance, every transaction, token holding
 - **`ethplorer-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address (or a token/contract) and want its balances, token holdings, and transaction counterpa
 - **`ethtective-com`** (medium) — Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link 

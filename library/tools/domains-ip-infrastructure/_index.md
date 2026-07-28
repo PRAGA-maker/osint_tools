@@ -102,7 +102,7 @@ kind: group-index
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
 - **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
-- **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
+- **`checkphishai`** (low) — Use when you have a `domain`/URL and want to detect phishing or typosquats of it — returns scan verdicts, screenshots, and lookalike `domain
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis
 - **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage

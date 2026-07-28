@@ -205,7 +205,6 @@ kind: group-index
 - **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
 - **`github-release-stats`** (medium) — Use when you have a GitHub repo (a `username`/org + repo) and want its per-release download counts and release metadata — returns download t
 - **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
-- **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
 - **`github-trending-archives`** (low) — Use when you want to know which repos/developers trended on GitHub on a past date — returns dated archives of GitHub's trending lists for hi
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
 - **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r

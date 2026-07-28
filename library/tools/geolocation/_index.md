@@ -226,7 +226,7 @@ kind: group-index
 - **`photo-map-ru`** (medium) — Use when you have a `geolocation` in the former USSR and want VK posts taken there — returns geotagged VKontakte photos/posts plotted on a m
 - **`pic2map`** (high) — Use when you have a photo and want to extract embedded EXIF/GPS metadata and plot the capture location on a map.
 - **`pictimo`** (low) — Use when you have a `geolocation`/place and want live public webcams there to observe or corroborate a scene — returns real-time imagery for
-- **`plowto`** (low) — OSINT tool: PlowTO.
+- **`plowto`** (low) — Use when you need real-time positions of Toronto's winter road vehicles — returns live `geolocation` of city snow plows and salt trucks.
 - **`police-crime-maps-uk`** (medium) — Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns stre
 - **`polymaps`** (low) — Use when you are a developer building a custom slippy-map web visualization with SVG/vector tiles, not for ad-hoc lookups.
 - **`poweroutage`** (low) — Use when you have a `geolocation`/region and a time and want to confirm whether a power outage was occurring there — returns live and histor

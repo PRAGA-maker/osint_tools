@@ -120,7 +120,7 @@ kind: group-index
 - **`gitdorker`** (low) — Use when you have a `username`, `employer-org`, or `domain` and want secrets/emails/keys exposed across public GitHub — returns `email` and 
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
-- **`github`** (low) — Open source code hosting community for users to collaborate and create projects.
+- **`github`** (medium) — Use when you have a `username`/`name`/`email` and want a developer's code, contacts and network — returns profile, repos, commit `email`s an
 - **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers
 - **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place

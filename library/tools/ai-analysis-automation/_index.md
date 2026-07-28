@@ -34,7 +34,7 @@ kind: group-index
 - **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
-- **`awesome-ctf`** (low) — OSINT tool: awesome-ctf.
+- **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
 - **`awesome-forensics`** (low) — OSINT tool: awesome-forensics.
 - **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
 - **`awesome-hacking`** (low) — OSINT tool: awesome-hacking.
@@ -186,7 +186,7 @@ kind: group-index
 - **`httrack`** (low) — OSINT tool: HTTrack.
 - **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
-- **`i2p`** (low) — OSINT tool: I2P.
+- **`i2p`** (low) — Use when you need to reach or research I2P hidden services anonymously — returns access to the I2P overlay network (an anonymity layer, not 
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
 - **`illuminarty`** (low) — Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating mod
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.

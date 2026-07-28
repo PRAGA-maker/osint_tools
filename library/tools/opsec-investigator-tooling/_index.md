@@ -283,7 +283,6 @@ kind: group-index
 - **`offen-osint`** (low) — OSINT tool: Offen Osint.
 - **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
-- **`one-time-mobile-by-osintstash`** (low) — OSINT tool: One-time Mobile by @OsintStash.
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
 - **`opera`** (low) — OSINT tool: Opera.
 - **`osint-sync`** (low) — Browser extension for OSINT (Osint Sync).
@@ -298,7 +297,7 @@ kind: group-index
 - **`pandora-radio-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
-- **`parrot-security`** (low) — OSINT tool: Parrot Security.
+- **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
 - **`passhunt`** (low) — Use when you have identified a `domain`/device vendor and model and want its factory default credentials — a CLI that searches ~2000 default
 - **`password-generator`** (low) — Password generator for creating strong passwords
 - **`password-safe`** (low) — Program that enhances security by offering password management services
