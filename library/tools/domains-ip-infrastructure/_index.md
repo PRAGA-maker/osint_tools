@@ -355,7 +355,7 @@ kind: group-index
 - **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
-- **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
+- **`ronin-recon`** (low) — Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findi
 - **`sameid`** (low) — OSINT tool: SameID.
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — Use when you have a target `domain`/`ip-address` range and want a fast all-in-one vulnerability and port scan — returns open ports, fingerpr

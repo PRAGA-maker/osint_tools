@@ -126,7 +126,7 @@ kind: group-index
 - **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
 - **`gogetfunding`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
-- **`google-cloud-ocr`** (low) — OSINT tool: Google Cloud OCR.
+- **`google-cloud-ocr`** (medium) — Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, inclu
 - **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
 - **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
 - **`google-to-search-profiles-on-github`** (low) — Use when you have a `name`, skill, or `employer-org` and want to find someone's GitHub profile — builds a Google X-ray search string to surf

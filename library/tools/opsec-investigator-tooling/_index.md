@@ -51,7 +51,6 @@ kind: group-index
 - **`autoregex`** (low) — AI regular expressions generator. Generates a pattern by verbal description. It does not work perfectly (see picture with bitcoin wallet, th
 - **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
 - **`avg-antivirus-for-mac`** (low) — Malware and virus detection and elimination program for PC and Mac
-- **`avg-antivirus-for-pc`** (low) — Malware and virus detection and elimination program for PC
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
@@ -214,7 +213,6 @@ kind: group-index
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
 - **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
 - **`image-scrubber`** (low) — Use when you (the investigator) are about to publish a photo and want to strip its EXIF and redact faces/identifiers first — a client-side t
-- **`imei-number-generator`** (low) — OSINT tool: IMEI Number Generator.
 - **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
 - **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
 - **`instant-preview`** (low) — Chrome extension that adds instant previews to the search engine results page.
@@ -316,7 +314,6 @@ kind: group-index
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
-- **`premium-proxy-service`** (low) — Proxy server and free proxy list
 - **`primeos`** (low) — OSINT tool: PrimeOS.
 - **`prism-break`** (low) — OSINT tool: PRISM Break.
 - **`privacy-net`** (low) — Listing of privacy resources

@@ -84,7 +84,6 @@ kind: group-index
 - **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
 - **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
 - **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
-- **`clubsearch-search-clubhouse-rooms`** (low) — OSINT tool: ClubSearch -- search Clubhouse rooms.
 - **`cobalt-tools`** (high) — Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its met
 - **`codeofaninja-com`** (high) — Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use acros
 - **`coderstats`** (low) — Developer activity and statistics tracker for GitHub.

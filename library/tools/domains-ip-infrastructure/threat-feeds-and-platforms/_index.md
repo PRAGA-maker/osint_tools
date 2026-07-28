@@ -13,7 +13,7 @@ kind: group-index
 - **`cymon-open-threat-intelligence`** (low) — IP threat tracking
 - **`honeydb`** (low) — IoT honeypot intelligence
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering
-- **`ibm-x-force-exchange`** (low) — Malware and threat intelligence
+- **`ibm-x-force-exchange`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want IBM's threat-intel reputation and reports on it — returns domain, ip-
 - **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 
 - **`maltiverse`** (low) — IOC aggregation and scoring
 - **`malware-information-sharing-platform`** (low) — Threat intelligence sharing

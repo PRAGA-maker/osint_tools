@@ -52820,42 +52820,55 @@
   },
   {
     "id": "google-cloud-ocr",
-    "name": "Google Cloud OCR",
-    "description": "OSINT tool: Google Cloud OCR.",
+    "name": "Google Cloud OCR (Vision)",
+    "description": "Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, including document-id and address leads.",
     "url": "https://cloud.google.com/vision/docs/drag-and-drop",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "High-accuracy OCR of text in images/documents, including non-Latin scripts and dense/handwritten text.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "document-id"
+      "document-id",
+      "address",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The drag-and-drop demo page is free to try in-browser. Programmatic use is Google Cloud Vision API — a free monthly quota (first ~1,000 units/month) then paid per-use; the API needs a GCP account and key.",
+    "opsec": "active",
+    "opsecNote": "OCR happens on Google's servers — you upload the image, so it (and whatever it depicts) leaves your control and is processed/possibly logged by Google. Don't submit sensitive or evidentiary documents you can't expose; for confidential material use a local OCR engine instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Google Cloud Vision is a leading, well-maintained OCR service with strong multilingual/handwriting accuracy. OCR still makes errors on poor scans — verify critical characters (IDs, numbers) against the source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "tesseract-ocr",
+      "yandex-translate"
+    ],
     "tags": [
-      "ocr"
+      "ocr",
+      "documents",
+      "image-analysis"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/google-cloud-ocr.md"
   },
   {
@@ -72181,45 +72194,56 @@
   {
     "id": "ibm-x-force-exchange",
     "name": "IBM X-Force Exchange",
-    "description": "Malware and threat intelligence",
+    "description": "Use when you have a `domain`, `ip-address`, URL, or file hash and want IBM's threat-intel reputation and reports on it — returns domain, ip-address reputation and infrastructure leads.",
     "url": "https://exchange.xforce.ibmcloud.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Malware and threat intelligence",
-    "input": "IOC, domain, or malware sample",
-    "output": "Threat analysis and intelligence reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking the reputation and threat context of an IOC (domain, IP, URL, hash) against IBM X-Force intelligence.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier after registration covers interactive IOC lookups; higher API rate limits and premium feeds require paid plans.",
     "opsec": "passive",
-    "opsecNote": "Passive querying of threat database",
+    "opsecNote": "Queries hit IBM's threat database, not the target's infrastructure, so lookups are passive and invisible to your subject. Your searches are tied to your X-Force account; use an account you're comfortable associating with the investigation.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by IBM Security (X-Force). A reputable commercial threat-intel platform; reputation scores are IBM's assessment — corroborate with other feeds before acting on a verdict.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "ibm-x-force-exchange-current-malicious-activity"
+      "ibm-x-force-exchange-current-malicious-activity",
+      "virustotal",
+      "urlscan-io"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "threat-intel",
+      "ioc-reputation",
+      "domain-and-ip-research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/ibm-x-force-exchange.md"
   },
   {
@@ -82432,13 +82456,13 @@
   {
     "id": "ronin-recon",
     "name": "ronin-recon",
-    "description": "Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.",
+    "description": "Use when you have a `domain` or `ip-address` and want a recursive automated recon sweep (subdomains, DNS, ports, TLS certs) that feeds findings back into itself — returns domain, ip-address.",
     "url": "https://github.com/ronin-rb/ronin-recon",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Recursive automated infrastructure recon",
+    "bestFor": "Recursive infrastructure recon that keeps expanding from discovered subdomains/IPs/certs automatically.",
     "selectorsIn": [
       "domain",
       "ip-address"
@@ -82447,15 +82471,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Ruby gem, part of the Ronin toolkit). Install via RubyGems; no account.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "ronin-recon performs active DNS resolution, port scanning, and TLS/cert fetching against the target and its discovered assets — this traffic reaches the target and can be logged. Its recursive nature amplifies volume as it expands, so scope carefully and run only against infrastructure you're authorised to test, from a suitable host/VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Part of the Ronin Ruby security toolkit.",
+    "trustNote": "Part of the actively-developed Ronin Ruby security toolkit (ronin-rb). Open-source and inspectable; results are as good as its worker modules and your scoping.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -82464,7 +82489,12 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "dnsdumpster",
+      "cloudmare",
+      "sn1per"
+    ],
     "tags": [
       "recon-engine",
       "dns",
@@ -82472,8 +82502,8 @@
       "tls"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ronin-recon.md"
   },
   {
@@ -110497,36 +110527,52 @@
   },
   {
     "id": "tmx",
-    "name": "TMX",
-    "description": "OSINT tool: TMX.",
-    "url": "https://www.m-x.ca/en/trading/data/quotes?symbol=",
+    "name": "TMX / Montréal Exchange (quotes)",
+    "description": "Use when you have a listed `employer-org`/ticker and want Canadian market quotes and derivatives data from the Montréal Exchange — returns employer-org market data (reference lookup).",
+    "url": "https://www.m-x.ca/en/trading/data/quotes",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up Montréal Exchange (Bourse de Montréal) quotes and listed derivatives for a Canadian instrument.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Delayed quotes and basic instrument data are free on m-x.ca; real-time and deep market data are paid (TMX data products).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public market-data pages is passive and reveals nothing about your subject. Standard site logging of your own visit applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Montréal Exchange (part of TMX Group) is Canada's authoritative derivatives exchange. Market data is official; it is instrument/company-level data, not people data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "tmx-tsx",
+      "sedar"
+    ],
+    "tags": [
+      "companies-finance",
+      "stock-exchange",
+      "canada",
+      "derivatives"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/tmx.md"
   },
   {
@@ -168708,49 +168754,6 @@
     "_file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-mac.md"
   },
   {
-    "id": "avg-antivirus-for-pc",
-    "name": "AVG Antivirus (for PC)",
-    "description": "Malware and virus detection and elimination program for PC",
-    "url": "http://free.avg.com/ca-en/homepage",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "avg-antivirus-for-mac"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-pc.md"
-  },
-  {
     "id": "avira-free-antivirus",
     "name": "Avira Free Antivirus",
     "description": "Malware and virus detection and elimination program",
@@ -176005,40 +176008,6 @@
     "_file": "library/tools/opsec-investigator-tooling/image-scrubber.md"
   },
   {
-    "id": "imei-number-generator",
-    "name": "IMEI Number Generator",
-    "description": "OSINT tool: IMEI Number Generator.",
-    "url": "https://dyrk.org/tools/imei/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/imei-number-generator.md"
-  },
-  {
     "id": "instagram-social-networking-app",
     "name": "Instagram Social Networking App",
     "description": "App for mobile devices for social networking and photo sharing",
@@ -180633,46 +180602,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/postmates-delivery-app-mobile-ios.md"
-  },
-  {
-    "id": "premium-proxy-service",
-    "name": "Premium Proxy Service",
-    "description": "Proxy server and free proxy list",
-    "url": "https://premproxy.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/premium-proxy-service.md"
   },
   {
     "id": "primeos",
@@ -214077,43 +214006,50 @@
   {
     "id": "binlist",
     "name": "Binlist",
-    "description": "OSINT tool: Binlist.",
+    "description": "Use when you have a payment-card BIN/IIN (first 6–8 digits, a `document-id`) and want the issuing bank, brand, and country — returns employer-org (bank) and geolocation.",
     "url": "https://binlist.net",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a card's first 6–8 digits to its issuing bank, card scheme, type, and country.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public BIN-lookup API/site; rate-limited for anonymous use. No account for basic lookups.",
+    "opsec": "passive",
+    "opsecNote": "You look up only the BIN (the first 6–8 digits, which identify the bank, NOT a specific person or account) against a public database — passive and target-invisible. Never submit or store a full card number; the BIN alone is all this needs and all you should handle.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A long-standing community BIN database. Coverage is good for major issuers but not exhaustive or perfectly current; treat bank/country as a strong lead, and note BINs can be reissued.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "wikipedia-list-of-registers"
+    ],
     "tags": [
-      "corporate"
+      "corporate",
+      "bin-lookup",
+      "payment-cards"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/binlist.md"
   },
   {
@@ -256933,51 +256869,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/the-inmate-locator.md"
-  },
-  {
-    "id": "the-investigator-s-handbook-a-guide-to-using-opencorporates",
-    "name": "The Investigator’s Handbook: A Guide to Using OpenCorporates",
-    "description": "OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.",
-    "url": "https://blog.opencorporates.com/2017/10/31/the-investigators-handbook-a-guide-to-using-opencorporates",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "corporate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "opencorporates"
-    ],
-    "_file": "library/tools/public-records/the-investigator-s-handbook-a-guide-to-using-opencorporates.md"
   },
   {
     "id": "the-nypd-files",
@@ -302582,40 +302473,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/clubhouse-database.md"
-  },
-  {
-    "id": "clubsearch-search-clubhouse-rooms",
-    "name": "ClubSearch -- search Clubhouse rooms",
-    "description": "OSINT tool: ClubSearch -- search Clubhouse rooms.",
-    "url": "https://clubsearch.io/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/clubsearch-search-clubhouse-rooms.md"
   },
   {
     "id": "cobalt-tools",

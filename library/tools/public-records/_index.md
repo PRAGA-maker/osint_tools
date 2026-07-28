@@ -101,7 +101,7 @@ kind: group-index
 - **`big101-obituaries-listing-north-america`** (high) — Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obitua
 - **`bigquery-public-datasets`** (low) — Use when you need to query large public datasets at scale with SQL — census, GitHub, patents, crypto ledgers, geospatial and more — returns 
 - **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
-- **`binlist`** (low) — OSINT tool: Binlist.
+- **`binlist`** (low) — Use when you have a payment-card BIN/IIN (first 6–8 digits, a `document-id`) and want the issuing bank, brand, and country — returns employe
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
 - **`bizeurope`** (medium) — Use when you have an `employer-org` or product/sector and want to find a European company's registered contact details — returns address, as
 - **`biznar-business-search-engines`** (medium) — Use when you have a `name` or `employer-org` and want business/deep-web sources searched in parallel — returns `employer-org` context and `s
@@ -860,7 +860,6 @@ kind: group-index
 - **`the-ancestor-hunt`** (high) — Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records —
 - **`the-atlas-of-economic-complexity`** (low) — Use when you need to understand a country's trade profile and economic structure as investigative context — returns interactive export/impor
 - **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re
-- **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
 - **`the-nypd-files`** (medium) — Use when you have a New York City police officer `name` (or badge number) and want their civilian-complaint history — returns misconduct rec
 - **`the-pegasus-project-occrp`** (medium) — Use when you have a `name` and want to know if they appear among Pegasus spyware targets — returns the "Who's on the List" investigative fin
 - **`the-philadelphia-police-misconduct-database`** (medium) — Use when you have a Philadelphia police officer's `name` and want their disciplinary/arbitration history — returns per-officer misconduct ca

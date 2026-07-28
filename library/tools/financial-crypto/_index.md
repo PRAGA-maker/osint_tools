@@ -95,7 +95,7 @@ kind: group-index
 - **`sortcodes-co-uk`** (medium) — Use when you have a UK bank `document-id` (six-digit sort code) and want to identify the bank and branch behind it — returns the institution
 - **`start-me`** (medium) — Use when you have a `crypto-wallet` or a crypto-investigation goal and want a curated directory of blockchain/crypto OSINT tools — returns p
 - **`tmx-tsx`** (low) — Use when you have an `employer-org` listed (or seeking listing) on the Toronto Stock Exchange and want its official profile — returns employ
-- **`tmx`** (low) — OSINT tool: TMX.
+- **`tmx`** (low) — Use when you have a listed `employer-org`/ticker and want Canadian market quotes and derivatives data from the Montréal Exchange — returns e
 - **`token-view`** (low) — OSINT tool: Token View.
 - **`tradint-research-tool`** (low) — OSINT tool: Tradint Research Tool.
 - **`wallet-labels`** (low) — Search across more than 7.5M #Ethereum addresses labeled to easily identify wallets and exchange
