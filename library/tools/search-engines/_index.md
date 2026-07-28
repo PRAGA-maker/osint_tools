@@ -269,7 +269,7 @@ kind: group-index
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
 - **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
-- **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
+- **`google-search-scraper`** (low) — Use when you have a query and a target `geolocation`/language and want structured Google SERP data at scale (organic, ads, related) — return
 - **`google-search`** (low) — OSINT tool: Google Search.
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia

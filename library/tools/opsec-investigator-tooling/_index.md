@@ -108,7 +108,7 @@ kind: group-index
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
-- **`dracos-linux`** (low) — OSINT tool: Dracos Linux.
+- **`dracos-linux`** (low) — Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment 
 - **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
 - **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
@@ -205,7 +205,7 @@ kind: group-index
 - **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
 - **`hola-vpn`** (low) — VPN for unblocking wesbites and anonymous browsing
 - **`hotspot-shield-proxy-tool-us-access`** (low) — Use when you need a quick VPN to mask your IP or appear in another country for research — returns a substitute `ip-address`; a commercial fr
-- **`https-github-com-spyboy-productions-valid8proxy`** (low) — Retrieve proxies from popular proxy sources, officiently validate proxies, save the list of validated proxies to a file
+- **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
 - **`hulu-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing TV-related media
 - **`huron-osint`** (low) — OSINT tool: Huron Osint.
@@ -276,7 +276,6 @@ kind: group-index
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Multi-platform web browser program
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
-- **`new-ip-now-web-proxy`** (low) — Anonymous browsing service provider
 - **`nino-generator`** (low) — OSINT tool: NINO Generator.
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re

@@ -29082,38 +29082,48 @@
   },
   {
     "id": "iptv-org",
-    "name": "IPTV org",
-    "description": "Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livestream).",
+    "name": "iptv-org",
+    "description": "Use when you have a country/region and want its publicly-listed IP TV channels and (sometimes) livestream links — returns geolocation-scoped media sources.",
     "url": "https://iptv-org.github.io/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding publicly-available IPTV channels by country to monitor local/regional broadcasts.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source; the channel database and M3U playlists are on GitHub, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the channel list/API is passive. Opening a livestream connects you to the stream host (its IP sees you) — use a VPN if you don't want that host to log your IP. Only public/legal streams; don't use it to access pirated content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large community-maintained index of publicly available streams; links rot frequently and legality of individual streams varies by region — verify before relying on one.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "iptv-org",
+      "iptv github"
+    ],
     "tags": [
-      "TV/Radio"
+      "tv",
+      "media-monitoring",
+      "livestream"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/iptv-org.md"
   },
   {
@@ -48813,38 +48823,48 @@
   },
   {
     "id": "binvis",
-    "name": "Binvis",
-    "description": "lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool",
+    "name": "BinVis.io",
+    "description": "Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns metadata-exif style structural clues.",
     "url": "https://binvis.io/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Visually fingerprinting a binary/file to spot embedded files, encryption, padding or hidden data.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, browser-based; the analysis runs client-side in your browser.",
+    "opsec": "passive",
+    "opsecNote": "Processing is client-side, so the file isn't uploaded to a server — but confirm that before dropping in sensitive evidence, and prefer an offline copy of the tool for classified material. Analysing a file leaks nothing to its author.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source visualiser by a known security author (Aldo Cortesi); the technique (space-filling byte plots) is well documented.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "binvis",
+      "binary visualiser"
+    ],
     "tags": [
-      "Files"
+      "file-analysis",
+      "binary",
+      "forensics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/binvis.md"
   },
   {
@@ -71849,43 +71869,57 @@
   {
     "id": "hurricane-electric-bgp-toolkit",
     "name": "Hurricane Electric BGP Toolkit",
-    "description": "BGP analysis and routing intelligence",
+    "description": "Use when you have an `ip-address`, `domain` or ASN and want its routing, network owner, DNS and neighbouring infrastructure — returns ip-address, domain, employer-org.",
     "url": "https://bgp.he.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "bgp"
     ],
-    "bestFor": "BGP analysis and routing intelligence",
-    "input": "ASN, IP range, or prefix",
-    "output": "BGP routes, peering, organization info",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mapping who owns/routes an IP or ASN and what other prefixes, DNS and hosts sit alongside it.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account needed; Hurricane Electric provides it as a public service.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of public BGP data.",
+    "opsecNote": "Fully passive — it queries public BGP/RIR/DNS data, never the target's own servers. Nothing you look up reaches the subject. Safe without a sock puppet, though VPN hygiene is always fine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Hurricane Electric, a major global backbone/transit provider; the BGP and RIR data it surfaces is authoritative public routing information.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "hurricane-electric-internet-services"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "bgp.he.net",
+      "HE BGP Toolkit"
+    ],
+    "tags": [
+      "bgp",
+      "asn",
+      "network-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bgp/hurricane-electric-bgp-toolkit.md"
   },
   {
@@ -85979,43 +86013,50 @@
   },
   {
     "id": "terms-of-service-didn-t-read",
-    "name": "Terms of Service Didn't Read",
-    "description": "find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps",
+    "name": "Terms of Service; Didn't Read (ToS;DR)",
+    "description": "Use when you have a service `domain` and want a plain-language, graded summary of what its terms and privacy policy actually do to users — returns policy/privacy context.",
     "url": "https://tosdr.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly understanding the privacy/data practices baked into a website or app's terms without reading the legalese.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, community/non-profit project; browser add-on and API also available at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of pre-analysed public policies; you don't touch the target service, only ToS;DR's own site. Nothing about a subject is disclosed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A volunteer-driven non-profit that peer-reviews service terms; coverage and grade freshness vary by service, and analyses reflect community judgement.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ToS;DR",
+      "tosdr.org"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Website analyze"
+      "privacy",
+      "terms-of-service",
+      "website-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terms-of-service-didn-t-read.md"
   },
   {
@@ -171437,37 +171478,45 @@
   {
     "id": "dracos-linux",
     "name": "Dracos Linux",
-    "description": "OSINT tool: Dracos Linux.",
+    "description": "Use when you want a lightweight, CLI-focused penetration-testing/OSINT Linux distro to run recon tools from a clean, disposable environment — a full investigation OS.",
     "url": "https://dracos-linux.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A lightweight Debian-based pentest/forensics distro for running recon and analysis tools in a compartmentalised environment.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GPLv3); download the ISO and run in a VM or on hardware. No account.",
+    "opsec": "passive",
+    "opsecNote": "The distro is your working environment, not a data source. Run it in a VM/live-USB dedicated to a case so tooling and artefacts stay compartmentalised, and route it through a VPN/Tor. As a smaller community distro, vet the ISO checksum on download.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "An Indonesian open-source pentest distro (screetsec/DracOS), actively maintained but far smaller and less audited than Kali/Parrot; verify the ISO and treat bundled tools with normal caution.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DracOS",
+      "Dracos GNU/Linux"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "linux-distro",
+      "pentest",
+      "investigator-tooling"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/dracos-linux.md"
   },
   {
@@ -175728,42 +175777,51 @@
   },
   {
     "id": "https-github-com-spyboy-productions-valid8proxy",
-    "name": "https://github.com/spyboy-productions/Valid8Proxy",
-    "description": "Retrieve proxies from popular proxy sources, officiently validate proxies, save the list of validated proxies to a file",
+    "name": "Valid8Proxy",
+    "description": "Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your recon tooling.",
     "url": "https://github.com/spyboy-productions/Valid8Proxy",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Building and validating a list of live public proxies to rotate through during recon.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (Python) on GitHub; run locally, no account or key.",
+    "opsec": "active",
+    "opsecNote": "The tool actively reaches out to test each proxy, and public free proxies are frequently malicious/honeypots — never route sensitive or authenticated traffic through scraped proxies, since the operator can intercept it. Use validated proxies only for low-stakes, non-authenticated recon, and prefer paid/residential or Tor for anything that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community Python tool; read the code before running. The proxies it returns are third-party and untrusted by nature.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cloakquest3r",
       "r4ven"
     ],
+    "aliases": [
+      "Valid8Proxy"
+    ],
+    "tags": [
+      "proxy",
+      "cli",
+      "opsec"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/https-github-com-spyboy-productions-valid8proxy.md"
   },
   {
@@ -178879,46 +178937,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/network-analyzer-investigation-tool-app-mobile-ios.md"
-  },
-  {
-    "id": "new-ip-now-web-proxy",
-    "name": "New IP Now Web Proxy",
-    "description": "Anonymous browsing service provider",
-    "url": "http://newipnow.com",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/new-ip-now-web-proxy.md"
   },
   {
     "id": "nino-generator",
@@ -237578,35 +237596,52 @@
   {
     "id": "leolist",
     "name": "LeoList",
-    "description": "OSINT tool: LeoList.",
+    "description": "Use when you have a `phone`, `username` or city and want to find matching Canadian classified/personal ads — returns phone, social-profile and location leads.",
     "url": "https://www.leolist.cc/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Canadian classified and personal ads by city, keyword, phone or handle to locate a subject's postings.",
+    "selectorsIn": [
+      "phone",
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "phone",
+      "social-profile",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse and search listings; posting/promoting ads is paid. No account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings is passive, but content includes adult/personal ads — use a sock-puppet browser and never contact posters, register, or reply during research. In trafficking/missing-persons contexts, involve law enforcement; do not run stings yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An unmoderated classifieds platform; listings are user-generated, unverified, and often use burner contact details — treat everything as a lead to corroborate, not fact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Leo List"
+    ],
+    "tags": [
+      "classifieds",
+      "personals",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/leolist.md"
   },
   {
@@ -275825,42 +275860,40 @@
   },
   {
     "id": "google-search-scraper",
-    "name": "Google Search Scraper",
-    "description": "Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of custom country, language and location",
+    "name": "Apify Google Search Scraper",
+    "description": "Use when you have a query and a target `geolocation`/language and want structured Google SERP data at scale (organic, ads, related) — returns domains and geolocation-scoped results.",
     "url": "https://apify.com/apify/google-search-scraper",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Programmatically harvesting Google SERPs (organic + ads + related) for a query across chosen country/language/location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Runs on Apify's platform; a free monthly credit tier exists, heavier use consumes paid credits. Requires an Apify account and API token.",
+    "opsec": "active",
+    "opsecNote": "Scraping runs from Apify's cloud, not your IP, which shields you from Google — but Apify sees your queries and results. Don't put case-sensitive query strings through a third-party cloud you wouldn't trust with them; use a sock-puppet Apify account for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A first-party Apify-maintained actor on a reputable scraping platform; output quality is good but it's a commercial cloud tool, and Google SERP structure changes can affect results.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "apify-s-google-maps-scraper",
       "dark-web-scraper",
@@ -275874,6 +275907,18 @@
       "twitter-url-scraper",
       "youtube-scraper"
     ],
+    "aliases": [
+      "Apify Google SERP scraper"
+    ],
+    "tags": [
+      "google",
+      "serp",
+      "scraping",
+      "automation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-search-scraper.md"
   },
   {
@@ -334353,35 +334398,48 @@
   {
     "id": "twitchmetrics-net",
     "name": "Twitchmetrics.net",
-    "description": "OSINT tool: Twitchmetrics.net.",
+    "description": "Use when you have a Twitch `username` and want their channel stats, growth history, games played and rankings — returns social-profile context.",
     "url": "https://www.twitchmetrics.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a Twitch streamer's audience, activity history, games and ranking without logging into Twitch.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to view channel profiles, rankings and historical stats; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive third-party analytics; you view aggregated public data, so the streamer isn't notified you looked. Passive — no need to touch the target's Twitch page directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Twitch analytics aggregator; figures are derived estimates from public Twitch data, not official Twitch numbers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Twitch Metrics"
+    ],
+    "tags": [
+      "twitch",
+      "streaming",
+      "analytics"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitchmetrics-net.md"
   },
   {

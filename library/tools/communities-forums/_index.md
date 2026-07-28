@@ -112,7 +112,7 @@ kind: group-index
 - **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
 - **`information-week-news`** (medium) — Use when you have a `name` or `employer-org` and want enterprise-IT/tech news mentioning them — returns `social-profile`/byline, `employer-o
-- **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
+- **`iptv-org`** (low) — Use when you have a country/region and want its publicly-listed IP TV channels and (sometimes) livestream links — returns geolocation-scoped
 - **`itworldcanada`** (low) — Use when you have a `name` or `employer-org` in Canadian tech/IT and want trade-press coverage — returns articles naming people, companies a
 - **`ivpaste`** (medium) — Use when you have a `name`, `email`, or `username` and want to check whether it appears in a public paste (dump, leak, dox) — returns `email
 - **`joomla`** (low) — OSINT tool: Joomla.

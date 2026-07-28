@@ -401,7 +401,7 @@ kind: group-index
 - **`talend-api-tester-free-edition`** (low) — Use when you have an API endpoint on a `domain` and want to hand-craft requests and inspect responses in-browser — returns domain/response d
 - **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al
 - **`technology-lookup`** (low) — Use when you have a `domain` and want to know its web tech stack — returns detected CMS, frameworks, analytics IDs, servers and libraries th
-- **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps
+- **`terms-of-service-didn-t-read`** (low) — Use when you have a service `domain` and want a plain-language, graded summary of what its terms and privacy policy actually do to users — r
 - **`testmy-net-internet-speed-test`** (medium) — Use to test your own connection's speed and see the public `ip-address` your egress presents — an independent speed test; minimal target-loo
 - **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
 - **`thales`** (low) — OSINT tool: Thales.

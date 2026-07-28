@@ -41,7 +41,7 @@ kind: group-index
 - **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
 - **`awesomelists-top`** (low) — OSINT tool: Awesomelists.top.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
-- **`binvis`** (low) — lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool
+- **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services

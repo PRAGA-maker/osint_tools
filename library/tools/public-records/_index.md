@@ -518,7 +518,7 @@ kind: group-index
 - **`legalmondo-com`** (high) — Use when you have a Spanish `employer-org`/company name and want to know which registries hold its data — a free methodology guide pointing 
 - **`lei-bloomberg-com`** (medium) — Use when you have an `employer-org` name or a Legal Entity Identifier (LEI) and want authoritative entity-registration detail — returns the 
 - **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
-- **`leolist`** (low) — OSINT tool: LeoList.
+- **`leolist`** (low) — Use when you have a `phone`, `username` or city and want to find matching Canadian classified/personal ads — returns phone, social-profile a
 - **`libguides-community-search`** (medium) — Use when you have a topic, a librarian `name`, or an institution (`employer-org`) and want curated academic research guides — returns the gu
 - **`library-and-archives-canada-lac`** (medium) — Use when you have a name (and rough era) and want Canadian historical records on a person — returns dob, associate/family links, address, an
 - **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
