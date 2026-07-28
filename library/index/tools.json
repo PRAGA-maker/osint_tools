@@ -39103,40 +39103,6 @@
     "_file": "library/tools/dark-web/dark-fail.md"
   },
   {
-    "id": "dark-tracer",
-    "name": "Dark Tracer",
-    "description": "OSINT tool: Dark Tracer.",
-    "url": "https://darktracer.io/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/dark-tracer.md"
-  },
-  {
     "id": "dark-web-scraper",
     "name": "Dark Web Scraper",
     "description": "Specify the start link and depth of crawl to research the .onion website for sensitive data (crypto wallets, API keys, emails, phone numbers, social media profiles).",
@@ -56237,35 +56203,53 @@
   {
     "id": "online-ide-and-paste-search-engine",
     "name": "Online IDE and Paste Search Engine",
-    "description": "OSINT tool: Online IDE and Paste Search Engine.",
+    "description": "Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste URLs) and exposed `password`/secrets.",
     "url": "https://redhuntlabs.com/online-ide-search",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching 40+ paste sites, online IDEs, and code-sharing platforms for a keyword, handle, or leaked secret.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "password",
+      "email"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web search tool by RedHunt Labs; no login for basic searches. It's a lead-in to their paid NVADR attack-surface platform, but the search box itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query RedHunt Labs' index, not the paste sites directly, so the target isn't touched. RedHunt sees your search terms — avoid pasting a live secret you don't want logged by a third party; search a fragment instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by RedHunt Labs, an established attack-surface-management vendor; index freshness and coverage aren't independently audited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RedHunt Labs Code Leak Search",
+      "paste search engine"
+    ],
+    "tags": [
+      "paste-sites",
+      "code-leak",
+      "credentials"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/online-ide-and-paste-search-engine.md"
   },
   {
@@ -61669,43 +61653,58 @@
   {
     "id": "amass",
     "name": "Amass",
-    "description": "Comprehensive external attack-surface and subdomain mapping",
+    "description": "Use when you have a `domain` and want to map its full external footprint — returns subdomains and their `ip-address` infrastructure.",
     "url": "https://github.com/owasp-amass/amass",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "saas-footprinting"
     ],
-    "bestFor": "Comprehensive external attack-surface and subdomain mapping",
-    "input": "Domain names, ASN data, CIDRs, and optional API credentials",
-    "output": "Correlated graph of domains, subdomains, infrastructure, and relationships",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Deep subdomain enumeration and external attack-surface mapping for a target domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Apache-2.0). No cost to run; some optional data-source integrations use free API keys.",
     "opsec": "active",
-    "opsecNote": "Supports both passive and active techniques, including DNS probing and brute-force modes.",
+    "opsecNote": "Passive mode (`enum -passive`) queries only third-party data sources and never touches the target. Active/brute modes do DNS resolution and brute-force lookups that hit the target's authoritative DNS and can be logged — run those from an attribution-safe host.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OWASP flagship project, ~15k GitHub stars, actively maintained by the OWASP Amass team.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": true,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "dork-dump"
+    ],
+    "aliases": [
+      "OWASP Amass",
+      "amass enum"
+    ],
+    "tags": [
+      "subdomain-enumeration",
+      "attack-surface",
+      "dns"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/saas-footprinting/amass.md"
   },
   {
@@ -64169,42 +64168,58 @@
   {
     "id": "central-ops",
     "name": "Central Ops",
-    "description": "OSINT tool: Central Ops.",
-    "url": "http://centralops.net",
+    "description": "Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip-address`, and owner details.",
+    "url": "https://centralops.net/co/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-stop web dashboard for WHOIS, DNS, traceroute, and email verification without installing anything.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for limited interactive use with no login, ads, or CAPTCHA. Operated by Hexillion (Plano, TX); heavier/automated use is sold via the paid Hexillion API.",
+    "opsec": "active",
+    "opsecNote": "Queries run from CentralOps' servers, not yours — WHOIS/DNS lookups don't reveal your IP. But \"Email Dossier\" does a live SMTP probe of the target mail server (connects and checks the mailbox), which the receiving server can log. Use Domain/IP lookups freely; treat the email check as a touch on the target's infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running service by Hexillion, a private tools vendor; results are drawn from authoritative public records (registry WHOIS, DNS, ARIN/RIPE).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "domain-dossier",
       "email-dossier",
       "free-online-network-tools"
     ],
+    "aliases": [
+      "CentralOps.net",
+      "Hexillion CentralOps"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "whois",
+      "dns"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/central-ops.md"
   },
   {
@@ -68079,47 +68094,57 @@
   {
     "id": "dork-dump",
     "name": "DORK DUMP",
-    "description": "Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.",
+    "description": "Use when you have a `domain` and want the public documents Google has indexed on it — downloads them and returns their `metadata-exif`.",
     "url": "https://github.com/dievus/msdorkdump",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Harvesting a domain's Google-indexed files (pdf/doc/xls/ppt…) and extracting their embedded metadata.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "metadata-exif",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (GPL-3.0). Runs locally; no account or API key.",
+    "opsec": "active",
+    "opsecNote": "The document search is Google-dork queries (passive against the target). But it then downloads each file, so the target's web server / CDN sees direct download requests from your IP. Run behind a VPN/proxy if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Open-source Python tool by researcher \"dievus\" (~200 GitHub stars); auditable but maintained by one author.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Website's files metadata analyze and files downloads"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "geemail-user-finder",
       "mayorsecdnsscan",
       "oh365userfinder"
     ],
+    "aliases": [
+      "msdorkdump",
+      "MSDorkDump"
+    ],
+    "tags": [
+      "document-metadata",
+      "google-dorking",
+      "metadata-extraction"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dork-dump.md"
   },
   {
@@ -107875,50 +107900,60 @@
   {
     "id": "china-related-resources",
     "name": "China-related resources",
-    "description": "Resources for research on companies in China.,",
+    "description": "Use when you have a `name` or `employer-org` in China and want official corporate/court records — returns `employer-org`, `associate`, and business ownership links.",
     "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/china-related-resources",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "A curated Bellingcat index of Chinese company registries, court databases, and credit systems for corporate/person research in China.",
     "selectorsIn": [
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The Bellingcat index page is free. Most linked databases are free, though some require a Chinese phone number to register or are geofenced to China IPs; a few (e.g. QCC full reports) charge for premium detail.",
+    "opsec": "passive",
+    "opsecNote": "Reading the Bellingcat page is passive. The linked Chinese portals may require registration (Chinese mobile number) and log queries; several are geofenced, so you may need a China-based IP/VPN. Register with a sock-puppet identity, never your own.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Bellingcat's volunteer team; the page itself is a vetted index, and the sources it points to are official Chinese government/court databases.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "cn"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "companies-finance"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "about-maps-and-satellites",
       "bellingcat-meta-content-library",
       "bellingcat-s-online-investigation-toolkit-2",
       "license-plate-maps"
     ],
+    "aliases": [
+      "Bellingcat China resources",
+      "China company research"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "companies-finance",
+      "china"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/china-related-resources.md"
   },
   {
@@ -108317,35 +108352,51 @@
   {
     "id": "cryptocurrency-search-tool",
     "name": "Cryptocurrency search tool",
-    "description": "OSINT tool: Cryptocurrency search tool.",
+    "description": "Use when you have a `crypto-wallet` address (or tx/block id) and want its history and web mentions — returns transaction history, balance, and links to `social-profile`/`name`.",
     "url": "https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A free hub that turns a crypto address, transaction, or block id into blockchain data plus a surface-web search for that address.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tools page from Aware Online Academy; no login. Some buttons redirect you to third-party block explorers to complete the lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Blockchain queries hit public explorers and are passive toward the wallet owner (they can't see who looked). The \"address web search\" runs a Google-style search — normal search-engine logging applies, nothing reaches the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Published by Aware Online, a Dutch OSINT training company; it's a convenience wrapper over public block explorers and search engines rather than a proprietary dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Aware Online cryptocurrency search",
+      "crypto address search"
+    ],
+    "tags": [
+      "cryptocurrency",
+      "blockchain",
+      "wallet-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/cryptocurrency-search-tool.md"
   },
   {
@@ -170913,44 +170964,55 @@
   {
     "id": "cloudhq",
     "name": "CloudHQ",
-    "description": "A collection of several dozen extensions for #Chrome that allow you to extend the functionality of the standard #Gmail interface and maximize your #productivity. Tracking, sorting, sharing, saving, editing and much more.",
+    "description": "Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking, returning open-time `ip-address`/`geolocation` signals.",
     "url": "https://www.cloudhq.net/apps",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A suite of free/freemium Gmail & Chrome extensions for email export/preservation, tracking, and inbox automation on an investigator sock-puppet account.",
     "selectorsIn": [
-      "face",
-      "image"
+      "email"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Many individual extensions have a free tier; advanced/bulk features and some apps require a paid CloudHQ subscription. A CloudHQ/Google account is needed to install.",
+    "opsec": "active",
+    "opsecNote": "Most features (Save-as-PDF export, tracking blocker) are passive and defensive. But the \"Email Tracker\" plants a tracking pixel — if you send a tracked message to a subject, opening it reports their `ip-address`, approximate `geolocation`, device and open-time back to you. That is an ACTIVE, intrusive touch on the target; only do it with authorisation, and use the tracking BLOCKER on your own inbound mail.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "CloudHQ is an established SaaS vendor, but these are third-party Gmail add-ons that request broad mailbox permissions — install only on a dedicated sock-puppet Google account, never a real one.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools",
-      "Routine/Data Extraction Automation"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "support-cloudhq-net"
     ],
+    "aliases": [
+      "cloudHQ Gmail apps",
+      "CloudHQ extensions"
+    ],
+    "tags": [
+      "gmail-tooling",
+      "email-tracking",
+      "workflow-automation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/cloudhq.md"
   },
   {
@@ -181272,46 +181334,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/proxy-org.md"
-  },
-  {
-    "id": "pushbullet-management-extension-chrome",
-    "name": "Pushbullet Management Extension (Chrome)",
-    "description": "Add-on for Google Chrome that coordinates online activities between several personal devices",
-    "url": "https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pushbullet-management-extension-chrome.md"
   },
   {
     "id": "quickvoice-recorder-app-mobile-ios",
@@ -224723,39 +224745,55 @@
   {
     "id": "extremist-profiles",
     "name": "Extremist Profiles",
-    "description": "OSINT tool: Extremist Profiles.",
-    "url": "https://www.splcenter.org/fighting-hate/extremist-files/individual",
+    "description": "Use when you have a `name` and want to check whether they are a profiled extremist — returns `physical-description`, `associate` groups, and ideology background.",
+    "url": "https://www.splcenter.org/resources/extremist-files/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up an individual in the SPLC's vetted database of profiled U.S. extremists.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "physical-description",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no login. Maintained by the Southern Poverty Law Center (SPLC), a U.S. non-profit.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — you're reading a public non-profit website; the subject gets no signal. Standard web-request logging by SPLC only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "SPLC is an established civil-rights organisation; profiles are researched and sourced, though the SPLC's inclusion criteria are its own editorial judgment and have drawn criticism — treat as a lead, not legal fact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "extremist-groups",
       "hate-map"
     ],
+    "aliases": [
+      "SPLC Extremist Files",
+      "SPLC individual extremists"
+    ],
+    "tags": [
+      "extremism",
+      "splc",
+      "named-individuals"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/extremist-profiles.md"
   },
   {
@@ -285805,13 +285843,13 @@
   {
     "id": "osint-bookmark",
     "name": "osint-bookmark",
-    "description": "Curated collection of investigation tools for company research, scanning, DNS, and Whois.",
+    "description": "Use when you want a ready-made browser bookmark set of OSINT tools organised by task — returns an importable catalog spanning people, `domain`, DNS, and social research.",
     "url": "https://github.com/neospl0it/osint-bookmark",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Bookmark-style reference of investigation tools",
+    "bestFor": "Importing a categorised OSINT tool collection straight into your browser's bookmarks bar.",
     "selectorsIn": [
       "domain",
       "name"
@@ -285819,15 +285857,16 @@
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source on GitHub; download the HTML bookmark file, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The repo itself is just a bookmark file — reading/importing it touches nothing. OpSec depends on the individual tools you then open from it; vet each before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Curated bookmark set (220 stars).",
+    "trustNote": "Community-curated bookmark set by GitHub user neospl0it (~220 stars); it's a link collection, so link rot and unvetted third-party tools are the main caveats.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -285836,14 +285875,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "neospl0it osint-bookmark",
+      "OSINT bookmarks"
+    ],
     "tags": [
       "bookmarks",
-      "catalog"
+      "catalog",
+      "tool-directory"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-bookmark.md"
   },
   {
@@ -302955,49 +302998,6 @@
     "lastVerified": "2026-07-13",
     "enrichment": "full",
     "_file": "library/tools/social-networks/codeofaninja-com.md"
-  },
-  {
-    "id": "coderstats",
-    "name": "CoderStats",
-    "description": "Developer activity and statistics tracker for GitHub.",
-    "url": "https://coderstats.net",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Profiling a developer's GitHub activity",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github",
-      "developer-stats"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/coderstats.md"
   },
   {
     "id": "commentpicker-com",
@@ -327401,47 +327401,6 @@
       "awesome-browser-extensions-for-osint"
     ],
     "_file": "library/tools/social-networks/social-media-osint-tools-collection.md"
-  },
-  {
-    "id": "social-mentions",
-    "name": "Social Mentions",
-    "description": "OSINT tool: Social Mentions.",
-    "url": "https://www.social-searcher.com/media-monitoring/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-search-3",
-      "google-social-search",
-      "social-profiles-finder",
-      "social-searcher",
-      "social-trends"
-    ],
-    "_file": "library/tools/social-networks/social-mentions.md"
   },
   {
     "id": "social-profiles-finder",

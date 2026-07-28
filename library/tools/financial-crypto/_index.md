@@ -40,7 +40,7 @@ kind: group-index
 - **`btcbook-guarda-com`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history,
 - **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi
 - **`chainalysis`** (low) — Use when you have a `crypto-wallet` address and want to screen it against OFAC/UN/EU sanctions for free — full transaction-tracing (Reactor)
-- **`china-related-resources`** (low) — Resources for research on companies in China.,
+- **`china-related-resources`** (low) — Use when you have a `name` or `employer-org` in China and want official corporate/court records — returns `employer-org`, `associate`, and b
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
 - **`coinchoose-com`** (low) — Use when a crypto trace surfaces an unfamiliar coin/ticker and you want quick market and mining context — returns prices, market caps and mi
@@ -50,7 +50,7 @@ kind: group-index
 - **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
 - **`credit-osint`** (low) — A very simple #python tool to gather information about bank cards and validate them.
 - **`cryptocompare-com`** (low) — Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextu
-- **`cryptocurrency-search-tool`** (low) — OSINT tool: Cryptocurrency search tool.
+- **`cryptocurrency-search-tool`** (low) — Use when you have a `crypto-wallet` address (or tx/block id) and want its history and web mentions — returns transaction history, balance, a
 - **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
 - **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
 - **`csol-ie`** (medium) — Use when you have a `name` and want to check Ireland's public bankruptcy register — returns bankruptcy status, address and adjudication deta

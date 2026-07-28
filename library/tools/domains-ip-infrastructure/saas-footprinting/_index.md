@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/saas-footprinting
 
 ## Skills here
-- **`amass`** (low) — Comprehensive external attack-surface and subdomain mapping
+- **`amass`** (low) — Use when you have a `domain` and want to map its full external footprint — returns subdomains and their `ip-address` infrastructure.
 - **`dnsrecon`** (low) — Use when you have a `domain` and want thorough DNS enumeration — returns records (A/MX/NS/SOA/TXT/SRV), subdomains, PTR ranges, and zone-tra
 - **`spiderfoot`** (medium) — Use when you have a `domain`, `ip-address`, `email`, `name`, or `phone` and want automated multi-source recon — 200+ modules correlate it in
 

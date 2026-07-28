@@ -178,7 +178,7 @@ kind: group-index
 - **`new-zealand-technology-industry-association`** (low) — Online organization website providing information on computer and information technology occupations
 - **`occupational-outlook-handbook-it-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
-- **`online-ide-and-paste-search-engine`** (low) — OSINT tool: Online IDE and Paste Search Engine.
+- **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
 - **`online-metadata-viewer-and-editor`** (low) — High-quality and well-made. Support docx, xlsx, msg, pptx, jpeg, vsd, mpp.
 - **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.

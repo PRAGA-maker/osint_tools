@@ -279,7 +279,7 @@ kind: group-index
 - **`explee-com`** (high) — Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-
 - **`explore-canada-s-real-estate-market`** (medium) — Use when you have a Canadian `address` or area and want current property listings — returns listing photos, asking price, address details an
 - **`extremist-groups`** (low) — Use when you have an `employer-org`/group name or an `associate` tie and want the ideology, history and geography of a US hate or antigovern
-- **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
+- **`extremist-profiles`** (low) — Use when you have a `name` and want to check whether they are a profiled extremist — returns `physical-description`, `associate` groups, and
 - **`ezilon`** (low) — Use when you have an `employer-org` or business `name` in a specific world region and want a human-curated directory listing to confirm it e
 - **`familyecho-com`** (medium) — Use when you have gathered several relatives (`name`/`associate`) and want a free workspace to build and visualise the family tree — returns
 - **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 

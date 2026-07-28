@@ -86,7 +86,7 @@ kind: group-index
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
 - **`click-and-clean-extension-chrome`** (low) — Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks
 - **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
-- **`cloudhq`** (low) — A collection of several dozen extensions for #Chrome that allow you to extend the functionality of the standard #Gmail interface and maximiz
+- **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more
 - **`codegent-chinese-mandarin-phrases-app-mobile-android`** (low) — App for mobile devices for learning phrases in the Chinese Mandarin language
 - **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
@@ -312,7 +312,6 @@ kind: group-index
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O
 - **`proxy-org`** (low) — Use when you need a fresh web proxy to view a target's content from a non-attributable address — an investigator OpSec directory, not a look
-- **`pushbullet-management-extension-chrome`** (low) — Add-on for Google Chrome that coordinates online activities between several personal devices
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — Use when building a sock-puppet and you need a non-reverse-searchable profile photo — returns an AI-generated `face` of a person who does no
 - **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).

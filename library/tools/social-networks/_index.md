@@ -86,7 +86,6 @@ kind: group-index
 - **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
 - **`cobalt-tools`** (high) — Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its met
 - **`codeofaninja-com`** (high) — Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use acros
-- **`coderstats`** (low) — Developer activity and statistics tracker for GitHub.
 - **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
 - **`commits-top`** (medium) — Use when you have a country/city and want the most active GitHub developers there — returns ranked `social-profile`s (GitHub usernames) by c
@@ -511,7 +510,6 @@ kind: group-index
 - **`snscrape`** (high) — Use when you have a `username`, hashtag, or keyword and want to bulk-collect a social account's public posts without an API key — returns po
 - **`social-blade`** (medium) — Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `socia
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
-- **`social-mentions`** (low) — OSINT tool: Social Mentions.
 - **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
 - **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
 - **`social-stats`** (medium) — Use when you have a VK community/user `username` or `name` and want engagement and activity statistics for that VKontakte page — returns soc

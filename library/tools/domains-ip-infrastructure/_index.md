@@ -95,7 +95,7 @@ kind: group-index
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
 - **`censys-certificates`** (low) — OSINT tool: Censys Certificates.
 - **`censys-ipv4`** (low) — OSINT tool: Censys IPv4.
-- **`central-ops`** (low) — OSINT tool: Central Ops.
+- **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
 - **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
 - **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
@@ -142,7 +142,7 @@ kind: group-index
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (medium) — Use when you have a `domain`, or a registrant `name`/`email`, and want WHOIS plus reverse-WHOIS — returns registration details and other dom
 - **`dome`** (low) — Use when you have a `domain` and want to map its subdomains and open ports — a CLI that pulls subdomains from 21 OSINT sources (passive) or 
-- **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
+- **`dork-dump`** (medium) — Use when you have a `domain` and want the public documents Google has indexed on it — downloads them and returns their `metadata-exif`.
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
 - **`dorks-hunter`** (low) — Use when you have a `domain` and want to auto-run a battery of Google dorks against it — returns exposed URLs, documents, login pages and er
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
