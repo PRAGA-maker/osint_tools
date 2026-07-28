@@ -10,7 +10,7 @@ kind: group-index
 - **`cisco-umbrella-popularity-list`** (low) — Use when you have a `domain` and want to gauge how popular/common it is in global DNS traffic — returns a top-1-million ranking (present-and
 - **`clearwebstats-com`** (low) — Use when you have a `domain` and want an aggregated snapshot — WHOIS, hosting IP, nameservers, SEO/traffic estimates — in one page; returns 
 - **`ewhois`** (low) — Quick WHOIS lookups
-- **`keyword-density`** (low) — On-page keyword frequency analysis
+- **`keyword-density`** (low) — Use when you have a `domain`/page (or text) and want its most frequent terms — returns word/phrase frequency and density, revealing a page's
 - **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
 - **`sitedossier`** (low) — Quick domain intelligence aggregation
 - **`siteliner`** (low) — Use when you have a `domain` and want a content/link audit — returns duplicate-content matches, broken links and page inventory for the site

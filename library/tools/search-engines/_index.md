@@ -48,7 +48,6 @@ kind: group-index
 - **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — Use when you have a `name`/`username`/keyword and want one query fanned across many engines and services — returns a launchpad of results fr
-- **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
@@ -561,7 +560,6 @@ kind: group-index
 - **`search-it`** (medium) — Use when you have one selector and want to query it fast across many engines/platforms — returns a single-page launcher for Google, Bing, Re
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
 - **`search-shared`** (medium) — Use when you have a `name`/keyword and want files hosted on file-sharing sites — returns links to matching content across hosts like Mediafi
-- **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
 - **`searchall-net`** (low) — Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — r
 - **`searchdorks`** (low) — Use when you want a ready-made search dork for Google/Shodan/Censys/FOFA/ZoomEye and want to describe your goal in plain English — returns c
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
@@ -670,7 +668,6 @@ kind: group-index
 - **`webcrawler-meta-search`** (low) — Use when you want a quick second-opinion web search that blends multiple engines — returns combined Google/Bing/Yahoo-style results for a na
 - **`webdork`** (medium) — Use when you have a `domain` or `employer-org` and want to automate Google-dorking for exposed data — a Python CLI that runs dork queries to
 - **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
-- **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
 - **`white-house-disclosures`** (medium) — Use when you have a `name` of a White House official or staffer and want their public financial-disclosure and ethics filings — returns OGE 
 - **`wiby`** (medium) — Use when you have a `name` or `username` and want to surface mentions on old, small, independent "classic web" pages that mainstream engines
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites

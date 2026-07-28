@@ -86,7 +86,7 @@ kind: group-index
 - **`numbers`** (low) — Search NFT by Content ID, Commit hash, keywords or uploaded photo.
 - **`osint-assassin`** (low) — Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot 
 - **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
-- **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
+- **`osint-tools-map`** (low) — Use when you have a country/region (or a `name`/`employer-org` tied to one) and need the local public registries and records to search — ret
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address
 - **`rupep`** (low) — Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `

@@ -83,7 +83,6 @@ kind: group-index
 - **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
 - **`columbus-project`** (low) — Use when you have a `domain` and want a fast, passive list of its subdomains — an API-first service backed by Certificate Transparency and c
 - **`compiler-explorer`** (low) — OSINT tool: Compiler Explorer.
-- **`complete-email-scraper`** (low) — Paste the link to the site and the bot finds the sitemap. The bot then goes through all the links on the site looking for email addresses (s
 - **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — OSINT tool: creately.
@@ -375,7 +374,6 @@ kind: group-index
 - **`the-fuck`** (low) — Simple app which corrects your previous console commands.
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
-- **`these-are-the-tools-open-source-researchers-say-they-need`** (low) — OSINT tool: These Are the Tools Open Source Researchers Say They Need.
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
 - **`tik-tok`** (low) — OSINT tool: Tik-tok.
@@ -399,7 +397,6 @@ kind: group-index
 - **`venngage`** (low) — OSINT tool: Venngage.
 - **`vis-js`** (low) — OSINT tool: Vis.js.
 - **`visme`** (low) — OSINT tool: Visme.
-- **`visual-investigative-scenarios`** (low) — OSINT tool: Visual Investigative Scenarios.
 - **`visualize-free`** (low) — OSINT tool: Visualize Free.
 - **`visualize-me`** (low) — OSINT tool: Visualize.me.
 - **`visually`** (low) — OSINT tool: visually.

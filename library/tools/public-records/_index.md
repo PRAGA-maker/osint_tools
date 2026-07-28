@@ -89,7 +89,7 @@ kind: group-index
 - **`backgroundchecks-org`** (medium) — Use when you have a US `name` and need to find which public-records/genealogy database to search — a curated directory of free record source
 - **`bahrainbourse-com`** (low) — Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announce
 - **`bank-for-international-settlements-statistics`** (low) — OSINT tool: Bank for International Settlements Statistics.
-- **`banq-num-rique`** (low) — OSINT tool: BAnQ numérique.
+- **`banq-num-rique`** (medium) — Use when you have a `name`/`address` connected to Québec and want historical records — returns civil-registry, newspaper, notarial, photo an
 - **`barcode-lookup`** (medium) — Use when you have a barcode/UPC/EAN number (a `document-id`) — read off a product, package, or object in a photo — and want to identify the 
 - **`base-academic-search-engine`** (medium) — Use when you have a `name` and want their scholarly output across repositories worldwide — returns papers, theses, and documents (with autho
 - **`baytown-tx-employee-directory`** (medium) — Use when you have a `name` you suspect works for the City of Baytown, Texas and want to confirm — returns employee/department listing detail
@@ -862,7 +862,6 @@ kind: group-index
 - **`the-ancestor-hunt`** (high) — Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records —
 - **`the-atlas-of-economic-complexity`** (low) — Use when you need to understand a country's trade profile and economic structure as investigative context — returns interactive export/impor
 - **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re
-- **`the-data-and-story-library`** (low) — OSINT tool: The Data and Story Library.
 - **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
 - **`the-nypd-files`** (medium) — Use when you have a New York City police officer `name` (or badge number) and want their civilian-complaint history — returns misconduct rec
 - **`the-pegasus-project-occrp`** (medium) — Use when you have a `name` and want to know if they appear among Pegasus spyware targets — returns the "Who's on the List" investigative fin

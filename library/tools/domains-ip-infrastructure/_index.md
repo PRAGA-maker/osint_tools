@@ -79,7 +79,7 @@ kind: group-index
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
-- **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
+- **`awesome-tech-stack`** (low) — Use when you have a `domain` and want its technology stack plus a security/modernity assessment — returns detected technologies and an "awes
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
 - **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
@@ -294,7 +294,7 @@ kind: group-index
 - **`name-com-united-states`** (low) — Use when you have a `domain` and want registration/availability and WHOIS basics — returns registrar/availability data and (redacted) WHOIS 
 - **`namecheap-united-states`** (medium) — Use when you have a `domain` and want registration/availability and WHOIS details — returns registrar, registration status, and any unredact
 - **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
-- **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page
+- **`neilpatel-backlinks-analyzer`** (low) — Use when you have a `domain`/page and want to see which other sites link to it — returns referring `domain`s and backlink details, exposing 
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
 - **`netcraft`** (low) — Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domai
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
