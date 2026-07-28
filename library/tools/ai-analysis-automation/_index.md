@@ -121,7 +121,7 @@ kind: group-index
 - **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`dropmark`** (low) — OSINT tool: Dropmark.
 - **`duckduckgo-ai-chat`** (low) — Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries
-- **`duckduckgo-url-scraper`** (low) — OSINT tool: DuckDuckGo URL scraper.
+- **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
 - **`easely`** (low) — OSINT tool: easely.
@@ -246,7 +246,6 @@ kind: group-index
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
 - **`online-tools`** (low) — OSINT tool: Online Tools.
-- **`open-dns`** (low) — OSINT tool: Open DNS.
 - **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l

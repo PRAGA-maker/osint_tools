@@ -4446,38 +4446,52 @@
   },
   {
     "id": "duckduckgo-url-scraper",
-    "name": "DuckDuckGo URL scraper",
-    "description": "OSINT tool: DuckDuckGo URL scraper.",
+    "name": "DuckDuckGo URL Scraper (its0x08)",
+    "description": "Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/URLs.",
     "url": "https://github.com/its0x08/duckduckgo",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling DuckDuckGo search-result URLs from the command line to feed other recon tools.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (Python 3) on GitHub; run it locally, no account or key.",
+    "opsec": "active",
+    "opsecNote": "Scraping DuckDuckGo sends automated queries from your IP — that's active and can trip rate limits or blocks. Route through a proxy/VPN, keep the built-in rate limiting on, and don't hammer it; heavy automated scraping may breach the engine's terms.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small community CLI (self-described v0.0.1-beta \"demonstration\"); read the code before running, and expect breakage when DuckDuckGo changes its markup.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ddg url scraper",
+      "its0x08 duckduckgo"
+    ],
     "tags": [
-      "other-tools"
+      "search",
+      "cli",
+      "automation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/duckduckgo-url-scraper.md"
   },
   {
@@ -10095,42 +10109,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/online-tools.md"
-  },
-  {
-    "id": "open-dns",
-    "name": "Open DNS",
-    "description": "OSINT tool: Open DNS.",
-    "url": "https://www.opendns.com/home-internet-security",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/open-dns.md"
   },
   {
     "id": "open-pgp",
@@ -51190,44 +51168,49 @@
   },
   {
     "id": "exif-remove-chrome-google-com",
-    "name": "exif remove (chrome.google.com)",
-    "description": "OSINT tool: exif remove (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/exif-remove/eamoopmkknodiipphhmfckacmigfngda",
+    "name": "Exif Remove (Chrome extension)",
+    "description": "Use when you need to strip EXIF/metadata from your OWN images before publishing — an OpSec tool that removes geolocation and camera data — returns cleaned images.",
+    "url": "https://chromewebstore.google.com/detail/exif-remove/eamoopmkknodiipphhmfckacmigfngda",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Batch-removing EXIF metadata (GPS, camera, timestamps) from images you are about to share, for OpSec.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "metadata-exif",
-      "geolocation"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension; no account or payment. Processing is local in the browser.",
+    "opsec": "passive",
+    "opsecNote": "This is a defensive/OpSec tool — it REMOVES metadata rather than reading a target's. Use it on your own images (screenshots, evidence you republish) so you don't leak your GPS/device/timestamp. Processing is client-side, so images aren't uploaded, but verify that on install.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Chrome extension (not a major vendor); it advertises local, permission-light processing, but audit its permissions before trusting it with sensitive images.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Exif Remove extension"
+    ],
     "tags": [
-      "exifdata",
-      "EXIF Data Related Sites"
+      "exif",
+      "metadata",
+      "opsec"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/exif-remove-chrome-google-com.md"
   },
   {
@@ -56587,44 +56570,49 @@
   {
     "id": "pdfmyurl",
     "name": "PDFmyURL",
-    "description": "Saves webpages as a PDF",
-    "url": "http://pdfmyurl.com/",
+    "description": "Use when you have a `domain`/URL and want to capture the live web page as a PDF for evidence preservation — returns a timestamped PDF snapshot.",
+    "url": "https://pdfmyurl.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Quickly saving a live web page as a PDF to preserve it before it changes or disappears.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free ad-hoc single-page conversions in the browser; higher-volume/API and watermark-free use are paid. No account needed for a one-off.",
+    "opsec": "active",
+    "opsecNote": "PDFmyURL's servers fetch the target URL, so the request reaches the site from PDFmyURL's IP, not yours — that hides you, but it also means a third party sees what you're capturing. For sensitive or authenticated pages, use a local capture (browser print-to-PDF) instead so the content never touches a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party conversion service; the PDF is only as trustworthy as your provenance notes — record the URL, capture time and method, since a rendered PDF is easy to alter.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "pdf-my-url"
     ],
+    "aliases": [
+      "PDF my URL"
+    ],
+    "tags": [
+      "evidence-capture",
+      "documents",
+      "curated-directory"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pdfmyurl.md"
   },
   {
@@ -112918,36 +112906,49 @@
   },
   {
     "id": "city-webcams-com",
-    "name": "city-webcams.com",
-    "description": "OSINT tool: city-webcams.com.",
+    "name": "City-Webcams.com",
+    "description": "Use when you have a `geolocation`/`address` and want a live public webcam of that place to confirm current conditions or ground truth — returns geolocation context.",
     "url": "https://city-webcams.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a live public webcam near a city/landmark to observe current conditions in real time.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse the webcam directory; ad-supported. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You watch a public webcam feed; nothing about your target is disclosed and the feed operator can't tie the view to your subject. Passive. Use a VPN if you don't want the site's ad/analytics stack tied to your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator of publicly available webcam feeds; individual feeds are hosted elsewhere and vary in reliability and uptime.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "city webcams"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/city-webcams-com.md"
   },
   {
@@ -154660,14 +154661,14 @@
   },
   {
     "id": "mapy-cz",
-    "name": "mapy.cz",
-    "description": "Mapping service for Czechia",
-    "url": "http://mapy.cz",
+    "name": "Mapy.cz",
+    "description": "Use when you have a `geolocation`/`address` and want high-quality maps, aerial imagery and street-level panoramas — strongest in Czechia and Central Europe — returns geolocation.",
+    "url": "https://mapy.cz",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Street-level panoramas and detailed aerial/topographic imagery, especially across Czechia and Central Europe.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -154675,29 +154676,37 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in the browser and mobile app (operated by Seznam.cz); no account required to view maps or panoramas.",
+    "opsec": "passive",
+    "opsecNote": "Passive map browsing; you disclose only your own queries, nothing about a target. Standard VPN hygiene is enough. Panorama capture dates vary, so note the imagery date when using it as evidence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Seznam.cz, a major Czech internet company; imagery and panoramas are first-party and widely used by geolocation investigators.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Seznam Mapy",
+      "mapy.com"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "maps"
+      "maps",
+      "panorama",
+      "geolocation",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mapy-cz.md"
   },
   {
@@ -234353,38 +234362,51 @@
   },
   {
     "id": "international-trade-center",
-    "name": "International Trade Center",
-    "description": "OSINT tool: International Trade Center.",
-    "url": "http://www.intracen.org/ByCountry.aspx",
+    "name": "ITC Country Profile (International Trade Centre)",
+    "description": "Use when you have a country and want its official import/export trade statistics, top products and trading partners — returns aggregate trade context, no person data.",
+    "url": "https://marketanalysis.intracen.org/en/country-profile",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Pulling a country's trade profile — top exports/imports, partner countries, product-level flows.",
+    "selectorsIn": [
+      "address"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view country profiles and headline trade data; deeper drill-downs in Trade Map may require a free registration. No payment for the public tiers.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of aggregate trade statistics; there is no target-specific query, so nothing about a subject is disclosed. Registration (if you go deeper) uses an email — use a sock-puppet address if you prefer.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the International Trade Centre (joint agency of the WTO and UN); data is sourced from official national trade statistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ITC",
+      "Intracen",
+      "Trade Map country profile"
+    ],
     "tags": [
-      "data-and-statistics"
+      "trade-statistics",
+      "public-records",
+      "un-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/international-trade-center.md"
   },
   {
@@ -343138,25 +343160,26 @@
   },
   {
     "id": "noslang-dictionary",
-    "name": "NoSlang Dictionary",
-    "description": "Language-related search for slang words in current and former use on the World Wide Web",
-    "url": "http://www.noslang.com/dictionary",
+    "name": "NoSlang Internet Slang Dictionary",
+    "description": "Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a subject's messages.",
+    "url": "https://www.noslang.com/dictionary",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding internet slang, texting acronyms and leetspeak found in a subject's messages or posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search the dictionary and use the slang translator; ad-supported, no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up terms in a public dictionary; nothing about your target is transmitted. Fully passive. Paste snippets, not whole private messages, if you're cautious about third-party sites logging text.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A crowd-built slang dictionary; definitions are community-sourced and can be incomplete, dated, or region-specific — treat as a starting interpretation, not authority.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -343165,18 +343188,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "slang-dictionary-and-translator"
     ],
+    "aliases": [
+      "NoSlang",
+      "internet slang translator"
+    ],
+    "tags": [
+      "slang",
+      "language",
+      "curated-directory"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/noslang-dictionary.md"
   },
   {
@@ -351731,42 +351757,52 @@
   },
   {
     "id": "ports-com",
-    "name": "Ports.com",
-    "description": "online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list of the seas through which it passes.",
+    "name": "Ports.com Sea Route Calculator",
+    "description": "Use when you have two ports/`geolocation`s and want the optimal sea route and transit time between them — returns a route, distance and seas transited.",
     "url": "https://ports.com/sea-route/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Calculating the sea route, distance and transit time between two ports at a chosen speed.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The sea-route calculator and port directory are free to use in the browser; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive route calculation; you enter ports, not target data, so nothing about a subject is disclosed. Safe to use without a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party maritime info/route site; route estimates are approximate (great-circle/optimal-path modelling) and not a substitute for navigational charts.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Maritime"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ports"
     ],
+    "aliases": [
+      "ports.com sea route"
+    ],
+    "tags": [
+      "maritime",
+      "transport",
+      "routing"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/ports-com.md"
   },
   {

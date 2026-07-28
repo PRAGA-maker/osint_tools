@@ -457,7 +457,7 @@ kind: group-index
 - **`international-federation-of-accountants-ifac`** (low) — Use when you have a `name`/`employer-org` in accountancy and want to trace their professional body — returns member-organization directories
 - **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
 - **`international-monetary-fund`** (medium) — Use when you need macro-financial context on a country or lending program — returns economic indicators, exchange rates, and IMF program/pub
-- **`international-trade-center`** (low) — OSINT tool: International Trade Center.
+- **`international-trade-center`** (low) — Use when you have a country and want its official import/export trade statistics, top products and trading partners — returns aggregate trad
 - **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
 - **`investing-com`** (medium) — Use when you have a public company or ticker and want its profile — returns business description, key executives, financials and filings con
 - **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — OSINT tool: Ioserv.com/en/jurisdictions/jurisdlist/.

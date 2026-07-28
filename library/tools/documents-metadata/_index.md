@@ -93,7 +93,7 @@ kind: group-index
 - **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
 - **`exif-py`** (low) — Use when you have an `image` file and want to extract its embedded EXIF metadata from the command line — returns metadata-exif, GPS geolocat
-- **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).
+- **`exif-remove-chrome-google-com`** (low) — Use when you need to strip EXIF/metadata from your OWN images before publishing — an OpSec tool that removes geolocation and camera data — r
 - **`exif-viewer-addons-mozilla-org`** (low) — Use when you have an `image` (local file or a URL) and want its EXIF/IPTC/XMP metadata and any embedded GPS in-browser — returns `metadata-e
 - **`exif-viewer-classic-chrome-google-com`** (low) — Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any 
 - **`exif-viewer-pro-chrome-google-com`** (medium) — Use when you have an `image` in the browser and want its embedded EXIF/metadata (camera, timestamp, GPS) without downloading it — returns `m
@@ -187,7 +187,7 @@ kind: group-index
 - **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
 - **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
-- **`pdfmyurl`** (low) — Saves webpages as a PDF
+- **`pdfmyurl`** (low) — Use when you have a `domain`/URL and want to capture the live web page as a PDF for evidence preservation — returns a timestamped PDF snapsh
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
 - **`photosint-chrome-google-com`** (medium) — Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — re

@@ -138,7 +138,7 @@ kind: group-index
 - **`plate-recognizer`** (medium) — Use when you have an `image` of a vehicle and want to read its licence plate automatically — returns the `vehicle-plate` string plus make/mo
 - **`plates-mania`** (medium) — Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.
 - **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
-- **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
+- **`ports-com`** (low) — Use when you have two ports/`geolocation`s and want the optimal sea route and transit time between them — returns a route, distance and seas
 - **`radarbox`** (medium) — Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, 
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
 - **`rasp-yandex-ru-map-trains`** (low) — Use when you have a `geolocation`/region in Russia, Belarus, Ukraine, Kazakhstan or Abkhazia and want live train positions and rail schedule

@@ -74,7 +74,7 @@ kind: group-index
 - **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mappy`** (low) — Use when you have an `address`/`geolocation` in France or Western Europe and want an independent map and routing source — returns geolocatio
 - **`mapswitcher`** (low) — Use when you have a `geolocation` open in one map service and want the same spot in 30+ other map providers — returns the same `geolocation`
-- **`mapy-cz`** (low) — Mapping service for Czechia
+- **`mapy-cz`** (low) — Use when you have a `geolocation`/`address` and want high-quality maps, aerial imagery and street-level panoramas — strongest in Czechia and
 - **`merlin`** (low) — Identify birds (visually), through an app.
 - **`military-bases-around-the-world-umap`** (medium) — Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `g
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit

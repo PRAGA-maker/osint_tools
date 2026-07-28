@@ -46,7 +46,7 @@ kind: group-index
 - **`cartodb`** (low) — Use when you have a sizeable spatial dataset (addresses, coordinates, geometries) and need cloud-based mapping, SQL/spatial analysis, and sh
 - **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns
 - **`citizen-com`** (medium) — Use when you have a US `geolocation` and time window and want to know what safety incidents (shootings, fires, police activity, missing-pers
-- **`city-webcams-com`** (low) — OSINT tool: city-webcams.com.
+- **`city-webcams-com`** (low) — Use when you have a `geolocation`/`address` and want a live public webcam of that place to confirm current conditions or ground truth — retu
 - **`collection-of-cadastral-maps`** (medium) — Use when you have an `address` or `geolocation` in a specific country and want the official land-registry/cadastral portal that maps parcels
 - **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color
 - **`copernix`** (low) — Use when you have a place name or `geolocation` and want to see every Wikipedia article geotagged to that area on a map — returns local `geo

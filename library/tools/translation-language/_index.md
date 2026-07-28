@@ -61,7 +61,7 @@ kind: group-index
 - **`meowni-ca`** (low) — OSINT tool: meowni.ca.
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep
 - **`netlingo-listing-of-chat-acronyms`** (low) — Use when you hit an unfamiliar text/chat acronym or slang in messages and want its meaning — a reference list of SMS/chat abbreviations, inc
-- **`noslang-dictionary`** (low) — Language-related search for slang words in current and former use on the World Wide Web
+- **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s
 - **`odysseytranslator`** (low) — OSINT tool: OdysseyTranslator.
 - **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use
 - **`online-translator`** (low) — OSINT tool: Online Translator.
