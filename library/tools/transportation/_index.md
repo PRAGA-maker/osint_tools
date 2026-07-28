@@ -125,7 +125,7 @@ kind: group-index
 - **`nomerogram-ru`** (medium) — Use when you have a Russian `vehicle-plate` and want photos of that car — returns user-submitted images of vehicles matching the plate, with
 - **`number-plate-check`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — retu
 - **`opensky-network`** (low) — Use when you have an aircraft `vehicle-plate` (tail/ICAO24) or callsign and want live and historical ADS-B positions — returns geolocation t
-- **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
+- **`openstreetmap-public-transport`** (low) — Use when you have a `geolocation`/area and want its public-transit network — returns downloadable tram/bus/metro/train route data from OpenS
 - **`orto-website`** (medium) — Use when you have a US `vehicle-plate`, `vin`, or photo of a car and want its history and specs — returns make/model/year, VIN, specs, valua
 - **`oscar-job-function-codes-united-kingdom`** (medium) — Use when you have a UK public-sector role code or job title and want to decode it — returns the standardized function/category that maps a p
 - **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.

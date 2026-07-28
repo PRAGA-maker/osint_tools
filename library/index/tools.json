@@ -7576,52 +7576,70 @@
   {
     "id": "intelligencex",
     "name": "IntelligenceX",
-    "description": "Leaked data, breach database, and darknet intelligence searching",
+    "description": "Use when you have an `email`, `domain`, `ip-address`, or selector and want it searched across leaks, pastes, darknet and historical web — returns matching breach/leak intelligence.",
     "url": "https://intelx.io/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Leaked data, breach database, and darknet intelligence searching",
-    "input": "Email addresses, domains, IP addresses, hash values",
-    "output": "Matching intelligence from pastes, leaks, darknet indexes, domain registrations",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching a selector across data leaks, breach dumps, pastes, darknet indexes, and archived web/WHOIS in one place.",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "ip-address",
+      "name"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain",
+      "password",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account gives limited searches with redacted previews; full results, historical data, and API access require paid tiers.",
     "opsec": "passive",
-    "opsecNote": "Web-based; queries cached intelligence passively",
+    "opsecNote": "You query Intelligence X's cached/indexed data, not the subject's infrastructure, so the person is not alerted. Searches run under your account and are logged to it — use an appropriate identity. Handle any exposed credentials/PII you retrieve as sensitive; viewing leaked data can carry legal/ethical constraints depending on jurisdiction and purpose.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Well-known commercial intelligence search engine with a large archive; results are drawn from leaked/third-party data of varying accuracy and age, so corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
+      "intelligence-x-telegram-search",
+      "intelligencex-linkedin-search",
       "facebook-graph-searcher-intelligencex",
       "intelligence-x",
       "intelligence-x-2",
       "intelligence-x-person-tools",
-      "intelligence-x-telegram-search",
-      "intelligencex-linkedin-search",
-      "intelx-io",
-      "tools"
+      "intelx-io"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Intelligence X",
+      "intelx.io",
+      "IntelX"
+    ],
+    "tags": [
+      "leaks",
+      "breach-data",
+      "darknet",
+      "threat-intelligence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/intelligencex.md"
   },
   {
@@ -75364,43 +75382,56 @@
   {
     "id": "joe-sandbox-url-analyzer",
     "name": "Joe Sandbox Url Analyzer",
-    "description": "Malware/phishing analysis, URL behavior detection, deep web threat investigation",
+    "description": "Use when you have a suspicious `domain`/URL and want to detonate it safely and see its behavior — returns a threat verdict plus network, DOM and redirect intelligence.",
     "url": "https://www.url-analyzer.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "Malware/phishing analysis, URL behavior detection, deep web threat investigation",
-    "input": "URL or document file",
-    "output": "Detailed behavior analysis, DOM tree, browser data, network capture, threat assessment",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Safely detonating a URL in an instrumented browser sandbox to assess phishing/malware behavior without visiting it yourself.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free/community submissions available (results public); private analyses and higher volume require a paid Joe Sandbox account.",
     "opsec": "active",
-    "opsecNote": "Executes URLs in real browsers; detectable by advanced anti-analysis techniques.",
+    "opsecNote": "The sandbox (not you) actually visits and executes the URL — which protects your machine, but the target site sees the sandbox's traffic and can fingerprint or evade it. On the free/community tier, submissions and reports are typically PUBLIC, so never submit a URL that itself leaks case-sensitive info (tokens in the path, private links); use a paid private analysis for those.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Joe Security is a well-known malware-analysis vendor; the URL analyzer is a credible sandbox, though evasive sites can defeat any sandbox and community reports are public.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "url-analyzer.net",
+      "Joe Sandbox URL"
+    ],
+    "tags": [
+      "sandbox",
+      "phishing",
+      "malware-analysis",
+      "url-reputation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/joe-sandbox-url-analyzer.md"
   },
   {
@@ -91965,52 +91996,6 @@
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/zeus-c2-tracker.md"
   },
   {
-    "id": "zeus-tracker",
-    "name": "ZeuS Tracker",
-    "description": "Zeus botnet tracking and blocking",
-    "url": "https://zeustracker.abuse.ch/blocklist.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "domain-blacklists"
-    ],
-    "bestFor": "Zeus botnet tracking and blocking",
-    "input": "None (blocklist provider)",
-    "output": "Domain blocklist, IP blocklist, Snort rules, Squid format",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public tracker; passive monitoring of Zeus C2 activity",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "abusech",
-      "malwarebazaar",
-      "urlhaus",
-      "yaraif",
-      "zeus-c2-tracker"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/zeus-tracker.md"
-  },
-  {
     "id": "zone-h-org",
     "name": "Zone-H.org",
     "description": "Historical tracking of website defacement incidents",
@@ -105956,40 +105941,56 @@
   {
     "id": "online-tool-to-extract-links-from-any-web-page",
     "name": "Online Tool to Extract Links from any Web Page",
-    "description": "OSINT tool: Online Tool to Extract Links from any Web Page.",
+    "description": "Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subject's web footprint.",
     "url": "https://hackertarget.com/extract-links/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling all hyperlinks from a page in one pass to map where it points and discover related sites/profiles.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free web tool (HackerTarget) with a daily/query limit; higher volume and API access are paid.",
+    "opsec": "active",
+    "opsecNote": "HackerTarget's server fetches the target page (not your machine), so the site sees HackerTarget's IP rather than yours — a mild OpSec benefit. But it is an active fetch of the target, and your query is submitted to and logged by a third party; don't paste sensitive internal URLs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "HackerTarget is a long-running, reputable provider of hosted recon utilities; this tool simply returns the links present on the fetched page.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
+      "hackertarget-com",
       "hacker-target",
-      "hacker-target-reverse-dns",
-      "hackertarget-com"
+      "hacker-target-reverse-dns"
     ],
+    "aliases": [
+      "HackerTarget extract links",
+      "link extractor"
+    ],
+    "tags": [
+      "evidence-capture",
+      "link-analysis",
+      "reconnaissance"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/online-tool-to-extract-links-from-any-web-page.md"
   },
   {
@@ -177966,43 +177967,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/locabrowser-com.md"
   },
   {
-    "id": "localmonero-co",
-    "name": "Localmonero.co",
-    "description": "OSINT tool: Localmonero.co.",
-    "url": "https://localmonero.co/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "monero-blocks"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/localmonero-co.md"
-  },
-  {
     "id": "macchanger",
     "name": "macchanger",
     "description": "Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware MAC.",
@@ -182432,42 +182396,6 @@
       "open-multiple-links-one-click"
     ],
     "_file": "library/tools/opsec-investigator-tooling/scrapersnbots.md"
-  },
-  {
-    "id": "screenshot-full-page-screen-capture",
-    "name": "Screenshot - Full Page Screen Capture",
-    "description": "record a video of part of the screen using a very easy-to-use browser extension",
-    "url": "https://chrome.google.com/webstore/detail/screen-recorder/jgmmgiojkjopgnanopiamhbhnpaednfg/related",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/screenshot-full-page-screen-capture.md"
   },
   {
     "id": "scrim-email-protector",
@@ -224326,35 +224254,53 @@
   {
     "id": "europol-most-wanted-search-engine",
     "name": "Europol Most Wanted Search Engine",
-    "description": "OSINT tool: Europol Most Wanted Search Engine.",
+    "description": "Use when you have a `name` or photo and want to check Europe's most-wanted fugitives — returns matches from the Europol Most Wanted list with the underlying case and country.",
     "url": "https://cse.google.com/cse?cx=f08e8dc2172da1ba8",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching the EU Most Wanted fugitives list to check whether a subject is a wanted person and to pull the associated case details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "physical-description",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; the underlying Europol Most Wanted site (eumostwanted.eu) is a public EU service.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public fugitives database — no subject is contacted or alerted. This is a custom search wrapper; you can also go straight to the canonical source at eumostwanted.eu. Treat a \"wanted\" match as an official lead to corroborate, and involve/notify law enforcement appropriately rather than acting on it independently.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Sits over Europol's official EU Most Wanted list (eumostwanted.eu); the source is authoritative, though this particular Google Custom Search wrapper's coverage can drift.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "EU Most Wanted",
+      "Europol Most Wanted"
+    ],
+    "tags": [
+      "most-wanted",
+      "fugitives",
+      "law-enforcement"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/europol-most-wanted-search-engine.md"
   },
   {
@@ -351473,42 +351419,51 @@
   {
     "id": "openstreetmap-public-transport",
     "name": "OpenStreetMap Public Transport",
-    "description": "Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the right) for tram, bus, metro and train routes.",
+    "description": "Use when you have a `geolocation`/area and want its public-transit network — returns downloadable tram/bus/metro/train route data from OpenStreetMap for that area.",
     "url": "https://wadouk.github.io/osm-public-transports/#3/27.29/5.45",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading OpenStreetMap public-transport route data (tram, bus, metro, train) for a selected map area.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; data comes from OpenStreetMap (open data).",
+    "opsec": "passive",
+    "opsecNote": "You browse and download open map data — no target is contacted or alerted. The queries hit OSM/Overpass infrastructure, not any subject; standard third-party logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community front end over OpenStreetMap data; coverage and accuracy depend on how well volunteers have mapped transit in that area.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "OSM public transport",
+      "osm-public-transports"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Transport"
+      "Transport",
+      "openstreetmap"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/openstreetmap-public-transport.md"
   },
   {

@@ -14,7 +14,7 @@ kind: group-index
 - **`exonerator`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at the time — returns a yes/no with relay deta
 - **`fortiguard-reputation-service`** (low) — Use when you have an `ip-address` or `domain` and want Fortinet's categorization and reputation for it — returns the content category and an
 - **`google-safe-browsing-api`** (low) — Use when you have a `domain`/URL and want Google's verdict on whether it's flagged for malware, phishing, or unwanted software — returns a s
-- **`joe-sandbox-url-analyzer`** (low) — Malware/phishing analysis, URL behavior detection, deep web threat investigation
+- **`joe-sandbox-url-analyzer`** (low) — Use when you have a suspicious `domain`/URL and want to detonate it safely and see its behavior — returns a threat verdict plus network, DOM
 - **`sucuri-sitecheck`** (low) — Use when you have a `domain` and want a free remote malware/blacklist scan plus fingerprinting of its CMS and server — returns infection sta
 - **`threatminer-org`** (low) — Use when you have a `domain`, `ip-address`, file hash, or SSL cert and want linked threat-intel — returns related domains/IPs, WHOIS, and ma
 - **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.

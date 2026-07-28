@@ -25,7 +25,7 @@ kind: group-index
 - **`loader-to`** (low) — OSINT tool: Loader.to.
 - **`media-downloader-net`** (low) — OSINT tool: Media-downloader.net.
 - **`megatools`** (low) — Use when you have a MEGA.nz link or account and want to list/download its contents from the command line — returns the downloaded files (lea
-- **`online-tool-to-extract-links-from-any-web-page`** (low) — OSINT tool: Online Tool to Extract Links from any Web Page.
+- **`online-tool-to-extract-links-from-any-web-page`** (low) — Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subje
 - **`page-links-extractor-tool`** (low) — OSINT tool: Page Links Extractor Tool.
 - **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
 - **`soundscrape`** (low) — Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com.

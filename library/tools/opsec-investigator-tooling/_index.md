@@ -240,7 +240,6 @@ kind: group-index
 - **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
 - **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
 - **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
-- **`localmonero-co`** (low) — OSINT tool: Localmonero.co.
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
@@ -338,7 +337,6 @@ kind: group-index
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
 - **`scamwatch`** (low) — Australian government website for information on scams
 - **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
-- **`screenshot-full-page-screen-capture`** (low) — record a video of part of the screen using a very easy-to-use browser extension
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
