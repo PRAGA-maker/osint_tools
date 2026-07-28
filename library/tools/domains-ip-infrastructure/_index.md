@@ -174,7 +174,6 @@ kind: group-index
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
-- **`get-link-info`** (low) — OSINT tool: Get Link Info.
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
 - **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
@@ -217,7 +216,7 @@ kind: group-index
 - **`imperva-live-threat-map`** (low) — Use when you want a real-time situational view of global cyber-attack activity and threat trends — returns aggregated attack/traffic statist
 - **`infosniper-net`** (medium) — Use when you have an `ip-address` or `domain` and want its approximate geolocation — returns country/region/city, ISP and coordinates plotte
 - **`infosniper`** (low) — Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host de
-- **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
+- **`infrapedia`** (low) — Use when you have a `geolocation`, city, or network/`domain` and want to map the physical internet — data centers, submarine cables, IXPs, f
 - **`instantdomainsearch`** (low) — search for domains for sale
 - **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
 - **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
@@ -455,7 +454,7 @@ kind: group-index
 - **`webscore`** (low) — OSINT tool: Webscore.
 - **`webscout`** (low) — OSINT tool: Webscout.
 - **`website-information`** (low) — OSINT tool: Website Information.
-- **`website-search-tool`** (low) — OSINT tool: Website search tool.
+- **`website-search-tool`** (low) — Use when you have a `domain` and want a guided query builder that fans it out across WHOIS, archives, shared-analytics-ID, and backlink look
 - **`websitetechminer-py`** (low) — Use when you have a `domain` (or a CSV of domains) and want its technology stack from BuiltWith + Wappalyzer in bulk — returns per-domain te
 - **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`well-known-dev`** (low) — Use when you have a `domain` and want to mine its /.well-known/ files and related infra — returns security.txt contacts, ad networks, IPs, a

@@ -15,7 +15,6 @@ kind: group-index
 ## Skills here
 - **`ads-b-exchange-radar-view`** (low) — Use when you have an aircraft registration/callsign or a location and want the live unfiltered globe view of air traffic — returns real-time
 - **`ads-b-historical-flight-viewer`** (medium) — Use when you have an aircraft (tail/registration, hex, or callsign) and want to replay its past flights — returns geolocation tracks and tim
-- **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
 - **`airfleets`** (low) — Database for aircraft details.
 - **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
 - **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr

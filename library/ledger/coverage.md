@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7398 total · 5153 full · 2245 stub (69% enriched)
+**Tools:** 7395 total · 5161 full · 2234 stub (69% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3442 · medium: 1992 · high: 1964
+low: 3439 · medium: 1992 · high: 1964
 
 ## Tools by trust
-community: 3482 · unverified: 2166 · trusted: 1741 · untrustworthy: 6 · personal: 3
+community: 3485 · unverified: 2160 · trusted: 1741 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 88/447
+- `ai-analysis-automation` — 92/447
 - `archives-cache` — 91/120
 - `communities-forums` — 240/286
 - `dark-web` — 46/108
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 93/296
-- `domains-ip-infrastructure` — 301/671
+- `domains-ip-infrastructure` — 304/670
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 59/105
@@ -28,15 +28,15 @@ community: 3482 · unverified: 2166 · trusted: 1741 · untrustworthy: 6 · pers
 - `image-video-face` — 443/451
 - `maps-geospatial-data` — 81/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 101/528
+- `opsec-investigator-tooling` — 101/527
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 883/1004
 - `search-engines` — 518/768
 - `social-networks` — 734/784
 - `training-ctf` — 6/12
-- `translation-language` — 26/100
-- `transportation` — 138/208
+- `translation-language` — 27/100
+- `transportation` — 138/207
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -44,8 +44,8 @@ community: 3482 · unverified: 2166 · trusted: 1741 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 952 leaves
 - `library/tools/social-networks` — 756 leaves
 - `library/tools/search-engines` — 717 leaves
-- `library/tools/opsec-investigator-tooling` — 504 leaves
-- `library/tools/domains-ip-infrastructure` — 445 leaves
+- `library/tools/opsec-investigator-tooling` — 503 leaves
+- `library/tools/domains-ip-infrastructure` — 444 leaves
 - `library/tools/ai-analysis-automation` — 413 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 325 leaves
@@ -53,7 +53,7 @@ community: 3482 · unverified: 2166 · trusted: 1741 · untrustworthy: 6 · pers
 - `library/tools/documents-metadata` — 250 leaves
 - `library/tools/people-search` — 247 leaves
 - `library/tools/email` — 222 leaves
-- `library/tools/transportation` — 190 leaves
+- `library/tools/transportation` — 189 leaves
 - `library/tools/messaging` — 169 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves

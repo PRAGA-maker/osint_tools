@@ -17,7 +17,7 @@ kind: group-index
 - **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
 - **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing
 - **`alphadictionary-com`** (low) — Search from over 1000 online English dictionaries at once
-- **`apertium-org`** (low) — OSINT tool: apertium.org.
+- **`apertium-org`** (low) — Use when you have foreign-language text (a `name`, post, or document) and want a free, private machine translation — returns readable transl
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
 - **`babelfish-language-translations`** (low) — Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate sh
 - **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 

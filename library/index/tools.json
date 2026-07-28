@@ -3797,40 +3797,46 @@
   {
     "id": "decopy-ai-image-detector",
     "name": "Decopy AI Image Detector",
-    "description": "Detecting AI-generated profile photos, fake news images, and synthetic media",
+    "description": "Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to flag synthetic/fake personas.",
     "url": "https://decopy.ai/ai-image-detector/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Detecting AI-generated profile photos, fake news images, and synthetic media",
-    "input": "Image file or URL",
-    "output": "AI generation probability score with model identification hints",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Screening a suspected profile photo or media image for signs it was AI-generated.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "Images are uploaded to third-party servers for analysis; avoid submitting operationally sensitive images.",
+    "pricing": "free",
+    "costNote": "Free to use, no subscription; supports JPG/PNG/WebP up to 10MB or an image URL.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to Decopy's servers for analysis. The site claims zero-retention (images processed then deleted), but treat any upload as leaving your control — only submit already-public images and strip EXIF first if the source matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial AI-detection service; detectors are probabilistic and beatable, so its score is a lead indicator, never proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "decopy.ai image detector",
+      "AI image detector decopy"
+    ],
     "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/decopy-ai-image-detector.md"
   },
   {
@@ -4065,35 +4071,44 @@
   {
     "id": "diceware-generator",
     "name": "Diceware Generator",
-    "description": "OSINT tool: Diceware Generator.",
+    "description": "Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Diceware passphrases client-side; returns a passphrase.",
     "url": "https://www.rempe.us/diceware/#eff",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Generating high-entropy Diceware/EFF passphrases in the browser for investigator account hygiene.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source; runs entirely in the browser.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generation is client-side using the browser's cryptographic RNG, so the passphrase never leaves your machine. Still, treat any generated secret as sensitive — for maximum assurance run it offline or use the physical dice method for your highest-value keys.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project by Glenn Rempe implementing the EFF/Diceware wordlists; auditable code, but as with any web crypto tool, verify it runs locally (offline) for critical secrets.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "EFF Diceware passphrase generator",
+      "rempe diceware"
+    ],
     "tags": [],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/diceware-generator.md"
   },
   {
@@ -10400,38 +10415,53 @@
   },
   {
     "id": "oryon-osint-query-tool",
-    "name": "Oryon OSINT query tool",
-    "description": "Construct investigations links in Google Sheet",
-    "url": "https://docs.google.com/spreadsheets/d/1_x3PXGOahhKT3-ePaWhb3hM1dVxjmBvsVlw6D6lilTQ/edit#gid=1116439221",
+    "name": "Oryon OSINT Query Tool",
+    "description": "Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens of services — returns targeted search URLs.",
+    "url": "https://docs.google.com/spreadsheets/d/1_x3PXGOahhKT3-ePaWhb3hM1dVxjmBvsVlw6D6lilTQ/edit",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "One spreadsheet that turns a single selector into ready-made query links across many OSINT services.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public Google Sheet; make your own copy (File > Make a copy) to use it.",
+    "opsec": "passive",
+    "opsecNote": "Type selectors into YOUR OWN copy of the sheet — don't edit the shared master. Link generation is passive; you only expose yourself when you open a generated link, so do that from a sock-puppet browser/IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained Google Sheet (from the Oryon OSINT browser project); it only assembles links, so trust rests on the destination services.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Oryon OSINT QueryTool",
+      "oryon query tool"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "other-resources"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/oryon-osint-query-tool.md"
   },
   {
@@ -15117,37 +15147,52 @@
   {
     "id": "steganography-online-codec",
     "name": "Steganography Online Codec",
-    "description": "OSINT tool: Steganography Online Codec.",
+    "description": "Use when you have an `image` you suspect hides a message (or want to embed one) and need to encode/decode LSB steganography with AES-256 — returns hidden text or a carrier image.",
     "url": "https://www.pelock.com/products/steganography-online-codec",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Encoding or extracting an AES-256-encrypted hidden message in the least-significant bits of an image.",
+    "selectorsIn": [
+      "image",
+      "password"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free browser tool; encoding/decoding runs client-side, no account.",
+    "opsec": "passive",
+    "opsecNote": "PELock states passwords, images, and messages are not logged server-side, and the LSB math runs in-browser — but you are still loading a target's image into a third-party page. For sensitive evidence, prefer an offline stego tool. Only lossless formats (PNG) survive; re-saving as JPG or posting to platforms that recompress destroys the payload.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Made by PELock (a known software-protection vendor); functional and free, but a single-vendor web tool, so verify any recovered message with a second stego tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "PELock Steganography Online Codec",
+      "online steganography codec"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "other-resources"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/steganography-online-codec.md"
   },
   {
@@ -65050,41 +65095,50 @@
   {
     "id": "clearwebstats-com",
     "name": "ClearWebStats.com",
-    "description": "Lightweight web popularity lookups",
+    "description": "Use when you have a `domain` and want an aggregated snapshot — WHOIS, hosting IP, nameservers, SEO/traffic estimates — in one page; returns `ip-address`, `domain` infra and ownership hints.",
     "url": "https://www.clearwebstats.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Lightweight web popularity lookups",
-    "input": "Domain",
-    "output": "Estimated rank and summary traffic metrics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A quick one-page aggregate of a domain's hosting, WHOIS, nameservers, and rough traffic/SEO stats.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported; no account.",
     "opsec": "passive",
-    "opsecNote": "Uses provider-collected analytics rather than direct target scanning.",
+    "opsecNote": "You query ClearWebStats' aggregated data, not the target site, so it's passive from your side. Avoid clicking the ads/upsells on the page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An auto-generated \"website worth\"/stats aggregator; hosting/WHOIS fields are usually accurate, but traffic and valuation figures are crude estimates — verify anything important at the primary source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "clearwebstats.com",
+      "ClearWebStats"
+    ],
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/clearwebstats-com.md"
   },
   {
@@ -70031,50 +70085,6 @@
     "_file": "library/tools/domains-ip-infrastructure/geowifi.md"
   },
   {
-    "id": "get-link-info",
-    "name": "Get Link Info",
-    "description": "OSINT tool: Get Link Info.",
-    "url": "https://www.getlinkinfo.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "URL unshorteners"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "getlinkinfo"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/get-link-info.md"
-  },
-  {
     "id": "getlinkinfo",
     "name": "GetLinkInfo",
     "description": "URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookmarklet.",
@@ -72911,42 +72921,50 @@
   {
     "id": "infrapedia",
     "name": "Infrapedia",
-    "description": "Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges",
+    "description": "Use when you have a `geolocation`, city, or network/`domain` and want to map the physical internet — data centers, submarine cables, IXPs, fiber — around it; returns infrastructure locations.",
     "url": "https://www.infrapedia.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Interactive atlas of physical internet infrastructure — submarine cables, data centers, fiber routes, and internet exchanges.",
     "selectorsIn": [
+      "geolocation",
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The interactive map is free to browse; advanced/enterprise data and API tiers are paid, but the core atlas needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the map is entirely passive — you query Infrapedia's own dataset, never the facilities themselves. No login required for the public map.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Industry-referenced infrastructure atlas built from operator and public datasets; facility/cable data is well-regarded but community/vendor-sourced, so treat exact coordinates as approximate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Communications, Internet, Technologies"
+    "relatedTools": [],
+    "aliases": [
+      "infrapedia.com",
+      "internet infrastructure map"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/infrapedia.md"
   },
   {
@@ -89534,36 +89552,51 @@
   },
   {
     "id": "website-search-tool",
-    "name": "Website search tool",
-    "description": "OSINT tool: Website search tool.",
+    "name": "Website Search Tool (Aware-Online)",
+    "description": "Use when you have a `domain` and want a guided query builder that fans it out across WHOIS, archives, shared-analytics-ID, and backlink lookups — returns targeted investigation links.",
     "url": "https://www.aware-online.com/en/osint-tools/website-search-tool/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Turning a single domain into ready-made queries across WHOIS, archives, shared-ID, and backlink services.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free query-builder page from Aware Online Academy; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page constructs search URLs client-side and you can enter placeholder data then edit the URL. It's passive until you open a generated link — do that from a sock-puppet browser. A few destinations (some historical-WHOIS archives) are paid.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Curated URL builder from a reputable OSINT training academy; it only assembles links, so reliability rests on the destination services.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "aware-online-com"
+    ],
+    "aliases": [
+      "Aware Online website search tool"
+    ],
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/website-search-tool.md"
   },
   {
@@ -174432,49 +174465,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/gnunet.md"
-  },
-  {
-    "id": "gnupg-pgp-encryption",
-    "name": "GnuPG PGP Encryption",
-    "description": "Program that provides PGP standard encryption",
-    "url": "http://www.gnupg.org",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "gnu-pg"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/gnupg-pgp-encryption.md"
   },
   {
     "id": "gofoss-net",
@@ -341756,39 +341746,45 @@
   },
   {
     "id": "apertium-org",
-    "name": "apertium.org",
-    "description": "OSINT tool: apertium.org.",
-    "url": "https://www.apertium.org/index.eng.html#?dir=eng-epo&q=",
+    "name": "Apertium",
+    "description": "Use when you have foreign-language text (a `name`, post, or document) and want a free, private machine translation — returns readable translated text, strong on lesser-served language pairs.",
+    "url": "https://www.apertium.org/index.eng.html",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Free open-source machine translation, especially for related/minority language pairs big engines cover poorly.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; a public web demo plus a self-hostable engine and API.",
+    "opsec": "passive",
+    "opsecNote": "The public demo sends your text to apertium.org for translation. Because it's open-source you can self-host the engine to keep sensitive text entirely local — do that for confidential case material rather than pasting it into any hosted translator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established open-source MT project (rule-based); high quality on its supported pairs, but machine translation of names/idioms can mislead — verify critical strings.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+    "relatedTools": [],
+    "aliases": [
+      "apertium.org",
+      "apertium machine translation"
     ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "translation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/apertium-org.md"
   },
   {
@@ -345952,50 +345948,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/transportation/air-traffic-records/ads-b-nl.md"
-  },
-  {
-    "id": "aircraft-registry",
-    "name": "Aircraft Registry",
-    "description": "OSINT tool: Aircraft Registry.",
-    "url": "https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "faa-registry",
-      "federal-aviation-administration"
-    ],
-    "_file": "library/tools/transportation/aircraft-registry.md"
   },
   {
     "id": "airfleets",

@@ -105,14 +105,14 @@ kind: group-index
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — HTML/JS deobfuscator
 - **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
-- **`decopy-ai-image-detector`** (low) — Detecting AI-generated profile photos, fake news images, and synthetic media
+- **`decopy-ai-image-detector`** (low) — Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to 
 - **`deepai-ai-image-detector`** (low) — AI-generated image detection, media verification in OSINT investigations
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
 - **`dehashed-cli`** (low) — OSINT tool: Dehashed CLI.
 - **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
 - **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
-- **`diceware-generator`** (low) — OSINT tool: Diceware Generator.
+- **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Collection of privacy and security / OSINT resources.
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
 - **`disconnect`** (low) — OSINT tool: Disconnect.
@@ -255,7 +255,7 @@ kind: group-index
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
-- **`oryon-osint-query-tool`** (low) — Construct investigations links in Google Sheet
+- **`oryon-osint-query-tool`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens
 - **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.
 - **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
@@ -361,7 +361,7 @@ kind: group-index
 - **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
 - **`steam-monitor`** (medium) — Use when you have a Steam account (`username`/Steam64 ID) and want to track its activity over time — a CLI that logs online/offline, game pl
-- **`steganography-online-codec`** (low) — OSINT tool: Steganography Online Codec.
+- **`steganography-online-codec`** (low) — Use when you have an `image` you suspect hides a message (or want to embed one) and need to encode/decode LSB steganography with AES-256 — r
 - **`steganography-online`** (low) — Use when you have a PNG image and want to hide or recover a hidden text message in it, entirely in-browser — returns extracted hidden text (
 - **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
 - **`storymap`** (low) — OSINT tool: StoryMap.

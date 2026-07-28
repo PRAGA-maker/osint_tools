@@ -174,7 +174,6 @@ kind: group-index
 - **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
 - **`gnu-icecat`** (low) — OSINT tool: Gnu Icecat.
 - **`gnunet`** (low) — Network protocol stack for building secure, distibuted, privacy-preserving applications
-- **`gnupg-pgp-encryption`** (low) — Program that provides PGP standard encryption
 - **`gofoss-net`** (low) — OSINT tool: gofoss.net.
 - **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information
 - **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity

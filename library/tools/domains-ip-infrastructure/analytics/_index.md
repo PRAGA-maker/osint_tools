@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`cisco-umbrella-popularity-list`** (low) — Use when you have a `domain` and want to gauge how popular/common it is in global DNS traffic — returns a top-1-million ranking (present-and
-- **`clearwebstats-com`** (low) — Lightweight web popularity lookups
+- **`clearwebstats-com`** (low) — Use when you have a `domain` and want an aggregated snapshot — WHOIS, hosting IP, nameservers, SEO/traffic estimates — in one page; returns 
 - **`ewhois`** (low) — Quick WHOIS lookups
 - **`keyword-density`** (low) — On-page keyword frequency analysis
 - **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
