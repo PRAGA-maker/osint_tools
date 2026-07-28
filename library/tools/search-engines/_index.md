@@ -611,7 +611,7 @@ kind: group-index
 - **`thelordeye`** (low) — Use when you have a device/service query or `ip-address` and want internet-connected devices matching it — returns webcams, routers, IoT and
 - **`thepiratebay`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
 - **`thereisabotforthat-com`** (low) — Use when you want to find an existing chatbot for a task or platform — a searchable catalog of thousands of bots across Telegram, Slack, Dis
-- **`thingful-net`** (low) — OSINT tool: Thingful.net.
+- **`thingful-net`** (low) — Use when you have a `geolocation` and want public IoT/sensor devices there (weather, air quality, energy, marine) plotted on a map — returns
 - **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
 - **`toddington-online-research-cheat-sheets`** (medium) — Use when you want quick-reference search-operator and social-media-recon cheat sheets to sharpen a query — returns downloadable reference PD
 - **`topix`** (low) — OSINT tool: Topix.

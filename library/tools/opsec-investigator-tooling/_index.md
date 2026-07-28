@@ -48,7 +48,7 @@ kind: group-index
 - **`atom`** (low) — OSINT tool: Atom.
 - **`attifyos`** (low) — Use when you need a ready-made toolkit for IoT/embedded-device security testing — a Linux distro pre-loaded with firmware, radio and hardwar
 - **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
-- **`autoregex`** (low) — AI regular expressions generator. Generates a pattern by verbal description. It does not work perfectly (see picture with bitcoin wallet, th
+- **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
 - **`avg-antivirus-for-mac`** (low) — Malware and virus detection and elimination program for PC and Mac
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
@@ -122,7 +122,7 @@ kind: group-index
 - **`eset-smart-security`** (low) — Malware and virus detection and elimination program
 - **`exif-viewer-add-on-for-chrome`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
-- **`exonerator-ip-address-checker`** (low) — Website search that identifies if a given IP address was used as a Tor relay
+- **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
 - **`export-chrome-history`** (low) — A simple extension for Googlechrome that allows you to save detailed information about links from browser history as CSV/JSON. Useful for bo
 - **`extremetech-virutal-box`** (low) — Program for Virtual Machine (VM) software that protects your system from malware and attacks

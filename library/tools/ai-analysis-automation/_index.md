@@ -236,7 +236,7 @@ kind: group-index
 - **`nixory`** (low) — OSINT tool: Nixory.
 - **`nodebox`** (low) — OSINT tool: Nodebox.
 - **`observable`** (low) — OSINT tool: Observable.
-- **`obsidian`** (low) — OSINT tool: Obsidian.
+- **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;
 - **`oda-the-online-disassembler`** (low) — OSINT tool: ODA - The Online Disassembler.
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
@@ -364,7 +364,7 @@ kind: group-index
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
 - **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
 - **`tenssens`** (low) — Use when you have a `domain` or `ip-address` and want a quick multi-check recon pass — one Python CLI runs whois, DNS, subdomains, headers, 
-- **`text-and-file-hash-calculator`** (low) — OSINT tool: Text and File Hash Calculator.
+- **`text-and-file-hash-calculator`** (low) — Use when you need to compute or verify MD5/SHA hashes of text or a file — to confirm integrity, match a known/blocklisted hash, or fingerpri
 - **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m

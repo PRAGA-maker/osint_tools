@@ -39,7 +39,7 @@ kind: group-index
 - **`btc-com`** (low) — OSINT tool: BTC.com.
 - **`btcbook-guarda-com`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history,
 - **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi
-- **`chainalysis`** (low) — OSINT tool: Chainalysis.
+- **`chainalysis`** (low) — Use when you have a `crypto-wallet` address and want to screen it against OFAC/UN/EU sanctions for free — full transaction-tracing (Reactor)
 - **`china-related-resources`** (low) — Resources for research on companies in China.,
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
@@ -89,7 +89,7 @@ kind: group-index
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address
 - **`rupep`** (low) — Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `
-- **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
+- **`sanctionsexplorer`** (low) — Use when you have a `name` or `employer-org` and want to check current/historical OFAC, UN and EU sanctions listings — returns employer-org,
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.
 - **`search-our-ppp-loan-database`** (low) — OSINT tool: Search Our PPP Loan Database.
 - **`sortcodes-co-uk`** (medium) — Use when you have a UK bank `document-id` (six-digit sort code) and want to identify the bank and branch behind it — returns the institution
