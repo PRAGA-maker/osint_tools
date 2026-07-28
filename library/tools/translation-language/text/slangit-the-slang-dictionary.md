@@ -30,6 +30,7 @@ registration: false
 relatedTools:
 - urban-dictionary
 - emojipedia
+- slangit
 aliases:
 - Slangit
 - slang.net

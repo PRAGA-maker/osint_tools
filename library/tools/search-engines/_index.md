@@ -198,7 +198,7 @@ kind: group-index
 - **`encyclopedia-of-math`** (medium) — Use when you have a mathematical term or named theorem/person and want an authoritative definition — returns wiki articles with concepts, re
 - **`engine-presearch-org`** (medium) — Use when you want a privacy-oriented, non-personalized search engine as an alternative lens — returns web results without the tracking/perso
 - **`etools`** (low) — OSINT tool: Etools.
-- **`euronews`** (low) — OSINT tool: Euronews.
+- **`euronews`** (low) — Use when you have a `name`, place, or event and want pan-European news coverage and video to corroborate or date it — a news source, no pers
 - **`europa-press-releases`** (low) — Use when you have a `name` or `employer-org` and want EU institutional mentions — searches official EU press releases, statements, and speec
 - **`european-commission-home-affairs`** (medium) — Use when you need EU-level entry points on internal security, migration, and anti-trafficking — returns links to official EU databases, agen
 - **`european-trademark-search`** (low) — Use when you have a brand `name` or `employer-org` and want EU trademark filings — returns the trademark owner `name`/`employer-org` and fil

@@ -255,7 +255,7 @@ kind: group-index
 - **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.
 - **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
-- **`osint-belarus`** (low) — OSINT tool: OSINT Belarus.
+- **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
 - **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.

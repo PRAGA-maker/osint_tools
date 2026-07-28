@@ -141,7 +141,6 @@ kind: group-index
 - **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
 - **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
 - **`radarbox`** (medium) — Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, 
-- **`radarbox24-pro`** (low) — OSINT tool: radarbox24-pro.
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
 - **`rasp-yandex-ru-map-trains`** (low) — Use when you have a `geolocation`/region in Russia, Belarus, Ukraine, Kazakhstan or Abkhazia and want live train positions and rail schedule
 - **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 

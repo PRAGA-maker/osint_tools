@@ -10468,38 +10468,48 @@
   },
   {
     "id": "osint-belarus",
-    "name": "OSINT Belarus",
-    "description": "OSINT tool: OSINT Belarus.",
+    "name": "OSINT Беларусь (Telegram)",
+    "description": "Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource channel, no personal selectors out.",
     "url": "https://t.me/s/osintby",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Following a Russian-language Telegram channel that curates OSINT tools and Belarus/EE monitoring resources.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public Telegram channel; readable in-browser via the /s/ web preview without a Telegram account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public web preview (t.me/s/osintby) is passive and requires no login. If you join via a Telegram client to see full history or the discussion chat, use a sock-puppet Telegram account — joining exposes your account to the channel/admins.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent, admin-curated channel (Russian-language). Useful for leads and tool discovery, but curation is opinionated and unvetted — verify any tool or claim independently.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "by",
+      "ru",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "osintby",
+      "OSINT Belarus Telegram"
+    ],
     "tags": [
-      "other-resources"
+      "other-resources",
+      "telegram-channel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-belarus.md"
   },
   {
@@ -56646,14 +56656,14 @@
   },
   {
     "id": "photosint-chrome-google-com",
-    "name": "photosint (chrome.google.com)",
-    "description": "OSINT tool: photosint (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd",
+    "name": "photosint (Chrome extension)",
+    "description": "Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — returns metadata-exif and geolocation hints.",
+    "url": "https://chromewebstore.google.com/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Passively flagging EXIF-bearing images as you browse and reading their metadata/geotags in one click.",
     "selectorsIn": [
       "image"
     ],
@@ -56661,29 +56671,42 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome/Chromium extension; no account or payment. Open-source (support/source on GitHub).",
+    "opsec": "passive",
+    "opsecNote": "Metadata parsing happens locally in your browser, so no query is sent to the target. But it fires on every page you load, so the images it inspects are whatever you browse — do reconnaissance from a sock-puppet browser profile to avoid mixing target sites into your real history.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Third-party extension by an independent developer (Haris87); ~3k users, source published on GitHub. Not a first-party or vendor tool — treat parsed values as leads.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "exif-data-viewer",
+      "jimpl",
+      "exiftool"
+    ],
+    "aliases": [
+      "PhotOSINT",
+      "photosint extension"
+    ],
     "tags": [
       "exifdata",
-      "EXIF Data Related Sites"
+      "EXIF Data Related Sites",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/photosint-chrome-google-com.md"
   },
   {
@@ -63125,41 +63148,59 @@
   {
     "id": "bluto",
     "name": "Bluto",
-    "description": "Initial domain footprinting and asset discovery",
+    "description": "Use when you have a `domain` and want an all-in-one recon pass (DNS records, zone-transfer/brute subdomains, and harvested staff emails) — returns domain, email, name.",
     "url": "https://github.com/darryllane/Bluto",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Initial domain footprinting and asset discovery",
-    "input": "Target domain and optional scan switches",
-    "output": "Aggregated recon output including DNS and related domain artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Legacy one-shot DNS recon that also enumerates staff emails from a target domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). No account. Requires an Email Hunter (hunter.io) API key for the email-enumeration feature.",
     "opsec": "active",
-    "opsecNote": "Runs active lookups against target-related infrastructure and third-party services.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Bluto runs active lookups — DNS brute-forcing, attempted zone transfers, and third-party queries (NetCraft, Hunter, breach checks) that touch infrastructure related to the target. Run from an attributable-safe host/VPN; DNS brute force is noisy and may appear in the authoritative server's logs.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool by darryllane (originally RandomStorm). Last release 2.4.7 in July 2018 and effectively unmaintained; requires Python 2.7 (end-of-life), so treat as legacy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "domain-dossier",
+      "dnsdumpster",
+      "theharvester"
+    ],
+    "aliases": [
+      "darryllane/Bluto"
+    ],
+    "tags": [
+      "dns-recon",
+      "subdomains"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/bluto.md"
   },
   {
@@ -67426,45 +67467,54 @@
   {
     "id": "domain-dossier",
     "name": "Domain Dossier",
-    "description": "Quick domain and IP reconnaissance with DNS and WHOIS data",
+    "description": "Use when you have a `domain` or `ip-address` and want a one-page recon report — WHOIS, DNS records, network whois, and optional traceroute/service scan — returns domain, ip-address.",
     "url": "https://centralops.net/co/DomainDossier.aspx",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Quick domain and IP reconnaissance with DNS and WHOIS data",
-    "input": "Domain name or IP address",
-    "output": "WHOIS records, DNS records, IP information, registration details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A fast, free, single-page WHOIS + DNS + network-whois report for a domain or IP.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool from CentralOps.net; no account needed for the standard report. Heavy/automated use is throttled toward their paid API.",
     "opsec": "passive",
-    "opsecNote": "Queries public WHOIS and DNS records; does not contact the target domain directly.",
+    "opsecNote": "WHOIS, DNS and registry lookups are queried by CentralOps' servers, not from your IP, so the target site doesn't see you. Enabling the optional \"traceroute\" or \"service scan\" makes CentralOps actively probe the target host — still from their infrastructure, but it is active reconnaissance; leave those off for a purely passive pass.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "CentralOps.net (Hexillion) is a long-established network-tools provider; results are pulled live from authoritative registries and DNS, not a stale cache.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "central-ops",
       "email-dossier",
-      "free-online-network-tools"
+      "free-online-network-tools",
+      "viewdns-info"
     ],
-    "aliases": [],
-    "tags": [],
+    "tags": [
+      "whois",
+      "dns-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/domain-dossier.md"
   },
   {
@@ -155484,13 +155534,13 @@
   {
     "id": "planet-labs",
     "name": "Planet Labs",
-    "description": "Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.",
+    "description": "Use when you have a `geolocation` or `address` and want recent, near-daily high-cadence satellite imagery of that spot to confirm activity or change — returns geolocation-anchored imagery.",
     "url": "https://www.planet.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Near-daily 3m (and on-demand sub-meter) satellite imagery to detect change at a specific location over time.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -155498,32 +155548,40 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Core imagery is a paid commercial subscription. Free access exists only through gated programs — Planet's Education & Research program and, for tropical-forest monitoring, the Norway/NICFI basemaps (free to registered users). No open anonymous imagery browser.",
+    "opsec": "active",
+    "opsecNote": "Access requires an account and, for the free programs, an application tied to your identity/affiliation. Your queries and area-of-interest selections are logged against that account. Use an institutional identity you're comfortable attaching to the investigation; do not assume searches are anonymous.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Planet Labs PBC is a publicly traded, first-party satellite operator; imagery is primary sensor data, not aggregated third-party content.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "planet-gallery",
+      "sentinel-hub",
+      "google-earth-pro"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "satellite-imagery"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "planet-gallery"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/planet-labs.md"
   },
   {
@@ -181487,40 +181545,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/resume-builder.md"
-  },
-  {
-    "id": "resume-generator",
-    "name": "Resume Generator",
-    "description": "OSINT tool: Resume Generator.",
-    "url": "https://thisresumedoesnotexist.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/resume-generator.md"
   },
   {
     "id": "resurrect-pages",
@@ -249260,42 +249284,6 @@
     "_file": "library/tools/public-records/propertypriceregisterireland-com.md"
   },
   {
-    "id": "prs-risk-indicators",
-    "name": "PRS Risk Indicators",
-    "description": "OSINT tool: PRS Risk Indicators.",
-    "url": "http://www.prsgroup.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/prs-risk-indicators.md"
-  },
-  {
     "id": "psa-gov-ie",
     "name": "psa-gov.ie (PSA licence register)",
     "description": "Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns licence status, holder name and firm.",
@@ -271788,37 +271776,46 @@
   {
     "id": "euronews",
     "name": "Euronews",
-    "description": "OSINT tool: Euronews.",
-    "url": "http://www.euronews.com",
+    "description": "Use when you have a `name`, place, or event and want pan-European news coverage and video to corroborate or date it — a news source, no personal selectors out.",
+    "url": "https://www.euronews.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Searching multilingual pan-European news and video for regional events, people in the news, and context.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read/watch; no account required. Ad-supported with optional newsletters.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching a public news site is passive — nothing about your subject is disclosed. Standard site analytics/cookies apply to you as a visitor; use a clean browser profile if you don't want the visit tied to your other research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established multilingual European news organisation with editorial standards; corroborate specific claims against a second outlet as with any single source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "eu",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "euronews.com"
+    ],
     "tags": [
       "news"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/euronews.md"
   },
   {
@@ -344306,46 +344303,6 @@
     "_file": "library/tools/translation-language/text/slang-dictionary-and-translator.md"
   },
   {
-    "id": "slangit",
-    "name": "Slangit",
-    "description": "Slang dictionary for learning slang terms, acronyms, abbreviations, and emoticons",
-    "url": "https://slangit.com/",
-    "category": "translation-language",
-    "path": [
-      "translation-language"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/translation-language/slangit.md"
-  },
-  {
     "id": "slangit-the-slang-dictionary",
     "name": "Slangit - The Slang Dictionary",
     "description": "Use when you have chat/text messages full of slang, acronyms, or emoji and want them decoded — returns plain-language definitions and usage context.",
@@ -344378,7 +344335,8 @@
     "registration": false,
     "relatedTools": [
       "urban-dictionary",
-      "emojipedia"
+      "emojipedia",
+      "slangit"
     ],
     "aliases": [
       "Slangit",
@@ -352215,49 +352173,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/transportation/radarbox.md"
-  },
-  {
-    "id": "radarbox24-pro",
-    "name": "radarbox24-pro",
-    "description": "OSINT tool: radarbox24-pro.",
-    "url": "https://www.radarbox24.com",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "aviation"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "airnav-radarbox"
-    ],
-    "_file": "library/tools/transportation/radarbox24-pro.md"
   },
   {
     "id": "railcabrides",

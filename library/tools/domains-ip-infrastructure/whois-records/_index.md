@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`dnsstuff`** (low) — Quick DNS and WHOIS lookups, network diagnostics
-- **`domain-dossier`** (low) — Quick domain and IP reconnaissance with DNS and WHOIS data
+- **`domain-dossier`** (low) — Use when you have a `domain` or `ip-address` and want a one-page recon report — WHOIS, DNS records, network whois, and optional traceroute/s
 - **`domainiq`** (low) — Domain ownership history, reverse analytics lookup, competitor domain research
 - **`easywhois`** (low) — Quick domain WHOIS lookups and DNS checks
 - **`ip2whois`** (low) — Use when you have a `domain` and want its WHOIS registration — returns registrant `name`/`email`/`address` (when not redacted), registrar an

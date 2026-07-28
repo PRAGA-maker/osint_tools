@@ -79,7 +79,6 @@ kind: group-index
 - **`riverside-com`** (low) — OSINT tool: riverside.com.
 - **`scphillips-morse-code-translator`** (low) — Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibrati
 - **`signing-savvy-sign-language-translator`** (low) — Translates English text to sign language
-- **`slangit`** (low) — Slang dictionary for learning slang terms, acronyms, abbreviations, and emoticons
 - **`smallseotools-plagiarism-checker`** (low) — Language and academic-related program that matches uploaded text against a database of text material, checking for plagiarsim and copyright 
 - **`smart-words-org`** (low) — Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbrevi
 - **`stars21-com`** (low) — OSINT tool: stars21.com.

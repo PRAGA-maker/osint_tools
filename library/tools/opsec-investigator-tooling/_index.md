@@ -335,7 +335,6 @@ kind: group-index
 - **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
 - **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
-- **`resume-generator`** (low) — OSINT tool: Resume Generator.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
 - **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages

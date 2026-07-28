@@ -191,7 +191,7 @@ kind: group-index
 - **`pdfmyurl`** (low) — Saves webpages as a PDF
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID
 - **`pearltrees`** (low) — Use when you have a `name` or `username` and want a subject's curated web collections (bookmarks, files, notes, photos) — returns `social-pr
-- **`photosint-chrome-google-com`** (low) — OSINT tool: photosint (chrome.google.com).
+- **`photosint-chrome-google-com`** (medium) — Use when you have an `image` (or a web page full of images) and want to surface embedded EXIF metadata and jump to reverse-image search — re
 - **`picture-exif-cleaner-addons-mozilla-org`** (low) — Use when you (the investigator) are about to share an image and want to strip its EXIF metadata first — a Firefox add-on that removes embedd
 - **`pixelprivacy`** (low) — Blog related to online privacy and protection
 - **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites

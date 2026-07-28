@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`altdns`** (low) — Use when you have a set of known subdomains for a `domain` and want to discover more by permutation — returns resolved alternate subdomains.
 - **`aquatone`** (low) — Use when you have a `domain` (or a list of discovered hosts) and want a fast visual map of its web attack surface — returns HTTP screenshots
-- **`bluto`** (low) — Initial domain footprinting and asset discovery
+- **`bluto`** (low) — Use when you have a `domain` and want an all-in-one recon pass (DNS records, zone-transfer/brute subdomains, and harvested staff emails) — r
 - **`dns-recon`** (low) — Use when you have a `domain` and want its full DNS footprint — returns records, discovered subdomains, zone-transfer and PTR results.
 - **`dnspop`** (low) — Command-line DNS recon and record analysis
 - **`fierce-domain-scanner`** (low) — DNS recon and subdomain-to-IP mapping

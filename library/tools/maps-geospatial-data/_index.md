@@ -93,7 +93,7 @@ kind: group-index
 - **`overturemaps-org`** (medium) — Use when you have an `address` or place and want open, structured map data — returns `geolocation` for buildings, places/POIs, addresses, an
 - **`peakvisor-com`** (medium) — Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summ
 - **`peakvisor`** (medium) — Use when you have a photo showing mountains/terrain and a rough `geolocation` and want to identify peaks and confirm the vantage point — ret
-- **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
+- **`planet-labs`** (low) — Use when you have a `geolocation` or `address` and want recent, near-daily high-cadence satellite imagery of that spot to confirm activity o
 - **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond
 - **`policy-map`** (low) — Use when you have an `address`/neighborhood and want its socioeconomic and demographic profile — returns mapped data on demographics, housin
 - **`power-plants-in-the-united-states`** (medium) — Use when you have a US `geolocation`/`address` and want to identify nearby electricity-generating facilities, their fuel type and operator —

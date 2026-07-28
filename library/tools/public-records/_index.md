@@ -722,7 +722,6 @@ kind: group-index
 - **`property-search-public-records-by-state`** (medium) — Use when you have a US `name` or `address` and want the right county/state property-records portal — returns links to official assessor/reco
 - **`propertypriceregister-ie`** (medium) — Use when you have an Irish `address` (or area) and want to confirm a residential sale, its date and price — returns the sale date, price and
 - **`propertypriceregisterireland-com`** (high) — Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address 
-- **`prs-risk-indicators`** (low) — OSINT tool: PRS Risk Indicators.
 - **`psa-gov-ie`** (high) — Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns li
 - **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
 - **`public-library-of-science-search`** (medium) — Use when you have a researcher's `name` (or `employer-org`) and want their open-access publications, co-authors and institutional affiliatio
