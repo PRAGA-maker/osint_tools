@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7334 total · 5293 full · 2041 stub (72% enriched)
+**Tools:** 7333 total · 5302 full · 2031 stub (72% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3367 · medium: 2003 · high: 1964
+low: 3366 · medium: 2003 · high: 1964
 
 ## Tools by trust
-community: 3491 · unverified: 2054 · trusted: 1780 · untrustworthy: 6 · personal: 3
+community: 3486 · unverified: 2052 · trusted: 1786 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -20,23 +20,23 @@ community: 3491 · unverified: 2054 · trusted: 1780 · untrustworthy: 6 · pers
 - `dark-web` — 48/106
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 106/290
-- `domains-ip-infrastructure` — 348/665
+- `domains-ip-infrastructure` — 349/665
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 62/100
 - `geolocation` — 294/339
 - `image-video-face` — 446/451
-- `maps-geospatial-data` — 89/123
+- `maps-geospatial-data` — 90/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 112/516
+- `opsec-investigator-tooling` — 114/515
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 889/1000
+- `public-records` — 891/1000
 - `search-engines` — 530/761
-- `social-networks` — 737/780
+- `social-networks` — 739/780
 - `training-ctf` — 6/12
 - `translation-language` — 33/96
-- `transportation` — 143/203
+- `transportation` — 144/203
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -44,7 +44,7 @@ community: 3491 · unverified: 2054 · trusted: 1780 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 948 leaves
 - `library/tools/social-networks` — 752 leaves
 - `library/tools/search-engines` — 710 leaves
-- `library/tools/opsec-investigator-tooling` — 495 leaves
+- `library/tools/opsec-investigator-tooling` — 494 leaves
 - `library/tools/domains-ip-infrastructure` — 442 leaves
 - `library/tools/ai-analysis-automation` — 407 leaves
 - `library/tools/image-video-face` — 357 leaves

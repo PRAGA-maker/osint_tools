@@ -113,7 +113,7 @@ kind: group-index
 - **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address
 - **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
 - **`echofon`** (low) — Website offering analytical capabilities of Twitter content
-- **`edge`** (low) — OSINT tool: Edge.
+- **`edge`** (low) — Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser fo
 - **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
 - **`emailformat-de`** (low) — OSINT tool: Emailformat.de.
 - **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
@@ -341,7 +341,7 @@ kind: group-index
 - **`safari-for-macos`** (low) — Internet browser for Mac
 - **`safari-for-windows`** (low) — Internet browser download available for Windows
 - **`safari`** (low) — OSINT tool: Safari.
-- **`safetydetective-security-tools`** (low) — List of over 25 security tools, including anti-virus, malware, and spyware protection,
+- **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
 - **`scamwatch`** (low) — Australian government website for information on scams
 - **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
@@ -388,7 +388,6 @@ kind: group-index
 - **`spybot-search-and-destroy`** (low) — Malware and virus detection and elimination program
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
 - **`ssn-generator`** (low) — OSINT tool: SSN Generator.
-- **`stayfocusd-management-extension-chrome`** (low) — Add-on for Google Chrome that lets you block yourself or limit your own time on a specified website
 - **`stealthy-proxy-server-extension-chrome`** (low) — Add-on for Google Chrome that allows for anonymous browsing and viewing material blocked by nationality
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (low) — Add-on that provides multi-media search engine capabilities and results viewing

@@ -85755,43 +85755,50 @@
   },
   {
     "id": "talend-api-tester-free-edition",
-    "name": "Talend API Tester Free Edition",
-    "description": "tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behavior",
-    "url": "https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related?hl=ru",
+    "name": "Talend API Tester - Free Edition",
+    "description": "Use when you have an API endpoint on a `domain` and want to hand-craft requests and inspect responses in-browser — returns domain/response data for enrichment pivots.",
+    "url": "https://chromewebstore.google.com/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Manually probing REST/SOAP/HTTP APIs from the browser — headers, auth, method, body — and reading raw responses.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The Chrome \"Free Edition\" extension is free for individual manual testing; Talend/Qlik sells a paid Cloud tier for teams and automation, but the free edition needs no account.",
+    "opsec": "active",
+    "opsecNote": "This sends real HTTP requests to the target endpoint from your machine, so your IP and request headers hit the target's server logs. Treat as active reconnaissance — route through a VPN/sock-puppet setup and avoid patterns that look like probing or abuse.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Talend (now part of Qlik), an established data-integration vendor; the extension is the genuine vendor product (formerly Restlet Client).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Restlet Client",
+      "Talend Cloud API Tester"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Source Code Analyzes"
+      "api",
+      "http-client",
+      "source-code-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/talend-api-tester-free-edition.md"
   },
   {
@@ -151745,38 +151752,50 @@
   {
     "id": "aqueduct-water-risk-atlas",
     "name": "Aqueduct Water Risk Atlas",
-    "description": "The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risks globally.",
+    "description": "Use when you have a `geolocation`/`address` and want the water-stress, flood and drought risk profile of that place — returns geolocation context layers.",
     "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading water-stress, flood and drought risk for any point/region on an interactive world map.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive atlas from the World Resources Institute; underlying data is also free to download. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Passive read against WRI's map tiles; you disclose nothing about your target, only your own map queries. Safe to use without a sock puppet, though the usual VPN hygiene applies on sensitive cases.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the World Resources Institute, a well-established research NGO; methodology and datasets are documented and peer-reviewed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WRI Aqueduct",
+      "Aqueduct Water Risk"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment",
+      "geospatial",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/aqueduct-water-risk-atlas.md"
   },
   {
@@ -171604,38 +171623,45 @@
   },
   {
     "id": "edge",
-    "name": "Edge",
-    "description": "OSINT tool: Edge.",
+    "name": "Microsoft Edge",
+    "description": "Use when you need an investigator browser with InPrivate windows, DevTools device/geo emulation and Collections — a free Chromium browser for compartmentalised OSINT sessions.",
     "url": "https://www.microsoft.com/en-us/windows/microsoft-edge/microsoft-edge",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A free Chromium-based browser usable as a disposable/compartmentalised investigation environment.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free from Microsoft; bundled with Windows and available for macOS/Linux. No account required (signing in syncs profiles but is optional).",
+    "opsec": "passive",
+    "opsecNote": "The browser itself is a neutral tool, but it is your OpSec surface — sign OUT, use a dedicated InPrivate/guest profile per investigation, and route through a VPN so sessions aren't linked to your identity or to each other. Signing into a Microsoft account defeats compartmentalisation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft browser built on open-source Chromium; the browser is genuine, though as a Microsoft product it phones home telemetry you should harden.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Microsoft Edge browser",
+      "Chromium Edge"
+    ],
     "tags": [
-      "browsers"
+      "browsers",
+      "investigator-tooling"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/edge.md"
   },
   {
@@ -181894,25 +181920,26 @@
   },
   {
     "id": "safetydetective-security-tools",
-    "name": "SafetyDetective Security Tools",
-    "description": "List of over 25 security tools, including anti-virus, malware, and spyware protection,",
+    "name": "SafetyDetectives Free Security Tools List",
+    "description": "Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT OpSec — a directory, not a lookup.",
     "url": "https://www.safetydetectives.com/blog/free-security-tools-that-you-need-to-start-using-now/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A starting shortlist of free consumer security/privacy tools for hardening an investigator's own machine and identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The article itself is free to read; many tools it lists are freemium and it is affiliate-monetised, so treat rankings as advertising-influenced.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a blog post leaks nothing about a target. The OpSec value is indirect — it points to tools that harden YOUR setup (VPN, AV, breach checks). Vet each recommended tool independently before installing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An affiliate-driven consumer-security review site; listings and rankings are influenced by referral revenue, so it is a starting point to vet, not an authority.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -181921,15 +181948,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SafetyDetectives free tools"
+    ],
     "tags": [
-      "toddington",
+      "opsec",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/safetydetective-security-tools.md"
   },
   {
@@ -183798,46 +183827,6 @@
       "vin-generator"
     ],
     "_file": "library/tools/opsec-investigator-tooling/ssn-generator.md"
-  },
-  {
-    "id": "stayfocusd-management-extension-chrome",
-    "name": "Stayfocusd Management Extension (Chrome)",
-    "description": "Add-on for Google Chrome that lets you block yourself or limit your own time on a specified website",
-    "url": "https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en-US",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/stayfocusd-management-extension-chrome.md"
   },
   {
     "id": "stealthy-proxy-server-extension-chrome",
@@ -224330,40 +224319,56 @@
   },
   {
     "id": "extremist-groups",
-    "name": "Extremist Groups",
-    "description": "OSINT tool: Extremist Groups.",
+    "name": "Extremist Groups (SPLC Extremist Files)",
+    "description": "Use when you have an `employer-org`/group name or an `associate` tie and want the ideology, history and geography of a US hate or antigovernment group — returns associate, geolocation.",
     "url": "https://www.splcenter.org/fighting-hate/extremist-files/groups",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Profiling a named US extremist group's ideology, activities and where it operates.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read of a public advocacy-org website. Browsing individual group profiles leaks only that you visited SPLC pages; use a sock-puppet browser/VPN if you don't want your IP in SPLC's server logs while working a sensitive case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Compiled and editorialised by the Southern Poverty Law Center, a partisan advocacy nonprofit. Group listings reflect SPLC's designations and are disputed by some listed organisations — treat as a lead/context source, not neutral fact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "extremist-profiles",
       "hate-map"
     ],
+    "aliases": [
+      "SPLC Extremist Files",
+      "SPLC hate group database"
+    ],
+    "tags": [
+      "extremism",
+      "hate-groups",
+      "splc"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/extremist-groups.md"
   },
   {
@@ -259382,38 +259387,48 @@
   },
   {
     "id": "unece",
-    "name": "UNECE",
-    "description": "OSINT tool: UNECE.",
+    "name": "UNECE Statistical Database",
+    "description": "Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — returns aggregate context, no person data.",
     "url": "http://w3.unece.org/PXWeb/en",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Pulling official cross-country statistics for Europe, North America and Central Asia from one PXWeb portal.",
+    "selectorsIn": [
+      "address"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public statistical portal run by a UN body; no account or payment. Data is downloadable as tables/CSV.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of aggregate public statistics; there is no target-specific query, so nothing about a subject is disclosed. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official statistics portal of the United Nations Economic Commission for Europe, compiled from member states' national statistical offices.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UN Economic Commission for Europe statistics",
+      "UNECE PXWeb"
+    ],
     "tags": [
-      "data-and-statistics"
+      "statistics",
+      "public-records",
+      "un-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unece.md"
   },
   {
@@ -299543,36 +299558,48 @@
   },
   {
     "id": "anonymous-ad-preview-tool",
-    "name": "Anonymous Ad Preview Tool",
-    "description": "OSINT tool: Anonymous Ad Preview Tool.",
+    "name": "Google Anonymous Ad Preview Tool",
+    "description": "Use when you have a `geolocation` and want to see Google search results/ads as they'd appear to someone in that place and device — returns localized SERP context.",
     "url": "https://ads.google.com/anon/AdPreview",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Viewing Google search results and ads for a specific location/language/device without a Google Ads account.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no Google Ads account or login needed (the /anon/ endpoint is the accountless version).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google's ad-preview endpoint, not the target. It does not touch the subject and does not count as a real ad impression/click. Passive; use a clean browser/VPN if you don't want the query tied to your identity, though no account is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google tool; the returned SERP/ad eligibility reflects Google's own simulation for the chosen location and device.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google Ad Preview and Diagnosis (anonymous)",
+      "accountless ad preview"
+    ],
+    "tags": [
+      "google",
+      "serp",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/anonymous-ad-preview-tool.md"
   },
   {
@@ -327884,13 +327911,13 @@
   {
     "id": "sourcinglab-pinterest-search",
     "name": "SourcingLab Pinterest Search",
-    "description": "Pinterest search for pins, boards and users.",
+    "description": "Use when you have a `name` or `username` and want to find their Pinterest pins, boards and profile — returns social-profile.",
     "url": "https://sourcinglab.io/search/pinterest",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Targeted searching of Pinterest pins/boards/users",
+    "bestFor": "Targeted searching of Pinterest pins, boards and users without hand-crafting Google dorks.",
     "selectorsIn": [
       "name",
       "username"
@@ -327898,15 +327925,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web search helper; no account required to run a query.",
+    "opsec": "passive",
+    "opsecNote": "The tool builds and runs the search for you (typically via search-engine queries), so you hit Pinterest indirectly rather than logging into it. Passive, but do it from a sock-puppet browser/VPN so a sensitive query isn't tied to your real IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party query-builder that wraps public search; not affiliated with Pinterest. Results depend on the underlying search engine's index, so completeness varies.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -327915,14 +327943,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SourcingLab Pinterest"
+    ],
     "tags": [
       "pinterest",
-      "search"
+      "social-search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sourcinglab-pinterest-search.md"
   },
   {
@@ -353184,43 +353214,52 @@
   },
   {
     "id": "tokyo-mou",
-    "name": "Tokyo MOU",
-    "description": "Ship inspection/history database (PSC Database)",
+    "name": "Tokyo MOU PSC Database",
+    "description": "Use when you have a ship `name` or IMO `document-id` and want its Asia-Pacific port-state-control inspection and detention history — returns operator org and inspection ports.",
     "url": "http://www.tokyo-mou.org/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a vessel's inspection, deficiency and detention record across Asia-Pacific ports.",
     "selectorsIn": [
-      "vehicle-plate"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
+      "employer-org",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public PSC inspection search is free; no account required. A separate members' site exists for member authorities only.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup against a regional maritime authority's public database; you disclose only your own query, nothing to the vessel or its operator. Standard VPN hygiene is enough on sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Tokyo MOU, the official Asia-Pacific port state control organisation (22 member maritime authorities); inspection records are first-party regulatory data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Tokyo Memorandum of Understanding",
+      "Asia-Pacific PSC database"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "transport"
+      "maritime",
+      "transport",
+      "bellingcat-toolkit"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/tokyo-mou.md"
   },
   {

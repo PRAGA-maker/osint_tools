@@ -398,7 +398,7 @@ kind: group-index
 - **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.
 - **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
 - **`subdomainsbrute`** (low) — Use when you have a `domain` and want to enumerate its live subdomains fast via dictionary brute-force — returns discovered subdomain `domai
-- **`talend-api-tester-free-edition`** (low) — tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behav
+- **`talend-api-tester-free-edition`** (low) — Use when you have an API endpoint on a `domain` and want to hand-craft requests and inspect responses in-browser — returns domain/response d
 - **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al
 - **`technology-lookup`** (low) — Use when you have a `domain` and want to know its web tech stack — returns detected CMS, frameworks, analytics IDs, servers and libraries th
 - **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps

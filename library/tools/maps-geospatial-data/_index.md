@@ -14,7 +14,7 @@ kind: group-index
 - **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
 - **`apple-com`** (medium) — Use when you have an `address` or `geolocation` and want Apple's maps, satellite, and street-level "Look Around" imagery as a second source 
 - **`apple-maps`** (low) — Use when you have an `address` or `geolocation` and want an independent basemap plus street-level "Look Around" imagery to verify or geoloca
-- **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
+- **`aqueduct-water-risk-atlas`** (low) — Use when you have a `geolocation`/`address` and want the water-stress, flood and drought risk profile of that place — returns geolocation co
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
 - **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an

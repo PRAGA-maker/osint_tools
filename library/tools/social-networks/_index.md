@@ -31,7 +31,7 @@ kind: group-index
 - **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
 - **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
-- **`anonymous-ad-preview-tool`** (low) — OSINT tool: Anonymous Ad Preview Tool.
+- **`anonymous-ad-preview-tool`** (low) — Use when you have a `geolocation` and want to see Google search results/ads as they'd appear to someone in that place and device — returns l
 - **`anylizer-com`** (medium) — Use when you have a YouTube/Vimeo video URL and want to inspect it frame-by-frame in slow motion — returns a precise per-frame view for read
 - **`app-fanpagekarma-com`** (high) — Use when you have a `name` or `username` and want to find and compare public Facebook (and other social) pages/profiles by keyword — returns
 - **`arctic-shift-2`** (high) — Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — retur
@@ -527,7 +527,7 @@ kind: group-index
 - **`soig`** (high) — Use when you have an Instagram `username` and want profile metadata, hashtags, and post details beyond what the profile page shows — returns
 - **`sometag`** (high) — Use when you have an Instagram `username`, hashtag or place `name` and want to browse that public profile, its posts, tagged locations and h
 - **`sotwe-com`** (high) — Use when you have a Twitter/X `username` and want to read their tweets without an X login — returns `social-profile` timeline content, thoug
-- **`sourcinglab-pinterest-search`** (low) — Pinterest search for pins, boards and users.
+- **`sourcinglab-pinterest-search`** (low) — Use when you have a `name` or `username` and want to find their Pinterest pins, boards and profile — returns social-profile.
 - **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
 - **`spaces-down`** (medium) — Use when you have an X/Twitter Spaces link or a host `username` and want the audio for review — returns a downloadable MP3 recording of the 
 - **`speak-subtitles-to-youtube`** (low) — Use when you have a `social-profile` (a foreign-language YouTube video/channel of a subject) and need to understand its spoken content — a b
