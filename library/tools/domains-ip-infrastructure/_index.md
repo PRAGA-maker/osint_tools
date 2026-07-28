@@ -483,7 +483,6 @@ kind: group-index
 - **`woorank-review-and-seo`** (medium) — Use when you have a `domain` and want a consolidated profile of the website — technologies, traffic estimates, SEO/meta data and identifiers
 - **`wordpress`** (medium) — Use when you have a `domain` or `username` and want to enumerate a WordPress site's authors — returns usernames, display names and linked so
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
-- **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
 - **`xurlfind3r`** (low) — Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns

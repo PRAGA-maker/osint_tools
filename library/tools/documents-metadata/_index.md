@@ -234,7 +234,6 @@ kind: group-index
 - **`stegseek`** (low) — Use when you have an `image`/file suspected of hiding steghide-embedded data and want to crack it — brute-forces the passphrase and extracts
 - **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
 - **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
-- **`taskrabbit`** (low) — Website related to outsourcing of jobs related to homes and neighbourhoods
 - **`tastedive-current-multimedia-trends`** (low) — Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public "Tas
 - **`techuk`** (low) — Online organization website providing information on computer and information technology occupations
 - **`telcodata-us`** (low) — Use when you have a US/Canada `phone` (or an NPA-NXX prefix) and want the carrier, rate center, and switch behind it — returns employer-org 

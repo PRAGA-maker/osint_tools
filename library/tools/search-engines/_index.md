@@ -248,7 +248,6 @@ kind: group-index
 - **`globalleaks`** (low) — Use when you need to RECEIVE tips securely or recognise a whistleblowing intake site — open-source software that powers anonymous, encrypted
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
-- **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
 - **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
@@ -693,7 +692,7 @@ kind: group-index
 - **`word-tracker`** (low) — OSINT tool: Word Tracker.
 - **`wordpress-com`** (medium) — Use when you have a `name` or `username` and want to find blogs and posts they authored on WordPress.com — returns social-profile, username 
 - **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
-- **`wordpress-custom-search`** (low) — OSINT tool: WordPress Custom Search.
+- **`wordpress-custom-search`** (low) — Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable S
 - **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
 - **`world-digital-library`** (low) — OSINT tool: World Digital Library.
 - **`world-newspapers`** (low) — Use when you have a place (`address`/`geolocation`) and want that region's local newspapers and magazines to search for coverage of a subjec

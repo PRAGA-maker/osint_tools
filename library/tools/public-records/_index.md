@@ -733,7 +733,7 @@ kind: group-index
 - **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
 - **`realtor`** (medium) — Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `
 - **`rechercher-par-entreprise`** (low) — Use when you have an `employer-org`/company name in Québec and want its construction-licence record — returns licence status, respondents, a
-- **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — OSINT tool: Rechercher par région ou type de travaux.
+- **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — Use when you have a `geolocation`/region or trade type in Québec and want to enumerate licensed construction contractors there — returns emp
 - **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
 - **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site
 - **`refseek`** (medium) — Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that genera

@@ -3738,42 +3738,51 @@
   {
     "id": "deepai-ai-image-detector",
     "name": "DeepAI AI Image Detector",
-    "description": "AI-generated image detection, media verification in OSINT investigations",
-    "url": "https://deepai.org/ai-image-detector",
+    "description": "Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a classification, no personal selectors.",
+    "url": "https://deepai.org/machine-learning-model/ai-image-detector",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "AI-generated image detection, media verification in OSINT investigations",
-    "input": "Image URL or file upload",
-    "output": "AI likelihood score and classification result",
-    "selectorsIn": [],
+    "bestFor": "Fast triage of whether an image is likely AI-generated during media verification.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to try in-browser with limited usage; heavier/API use requires a DeepAI account and paid credits (Pro subscription).",
     "opsec": "active",
-    "opsecNote": "Image content is submitted to DeepAI servers; use with non-sensitive imagery.",
+    "opsecNote": "You upload the image to DeepAI's servers for analysis, so the file leaves your control and is processed by a third party. Do not submit sensitive, private, or evidentiary imagery you can't expose; strip identifying context and use a sock-puppet account if uploading anything tied to a live case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "DeepAI is a commercial ML-API vendor. AI-image detectors are probabilistic and error-prone (false positives on heavily edited real photos, misses on newer generators); treat the score as a weak signal, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "text2img"
+      "text2img",
+      "forensically",
+      "fotoforensics"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DeepAI image detector"
+    ],
+    "tags": [
+      "media-verification",
+      "deepfake-detection"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/deepai-ai-image-detector.md"
   },
   {
@@ -15217,41 +15226,51 @@
   {
     "id": "subgraph-os",
     "name": "Subgraph OS",
-    "description": "High-security threat model; adversary resistance; encrypted communications",
+    "description": "Use when you want a hardened, Tor-routed Linux OS to run investigations from — an OpSec/anonymity workstation, not a lookup tool (no selectors in/out).",
     "url": "https://subgraph.com/index.en.html",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "virtual-machines"
     ],
-    "bestFor": "High-security threat model; adversary resistance; encrypted communications",
-    "input": "N/A (OS distribution)",
-    "output": "Hardened Linux environment with Tor integration",
+    "bestFor": "A hardened Tor-integrated Linux environment for compartmentalised, anonymous investigative work.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "live",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Default Tor routing; kernel hardening (grsecurity, PaX); AppArmor profiles; Oz sandboxing",
+    "costNote": "Free and open-source. Downloadable as an installer, live-disk, or VM image.",
+    "opsec": "passive",
+    "opsecNote": "This is itself an OpSec tool — it forces traffic through Tor, sandboxes apps (Oz), and hardens the kernel, so running your investigation inside it protects YOUR attribution. It performs no queries against a target. Because the project is dormant, security updates may be stale — do not rely on it as your sole anonymity layer for high-risk work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Open-source project (Subgraph). Long stuck at an alpha stage with no evidence of active maintenance (site © 2023 but no recent releases); treat as dormant/experimental.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "tails",
+      "whonix",
+      "tor-browser"
+    ],
+    "aliases": [
+      "Subgraph"
+    ],
+    "tags": [
+      "opsec",
+      "anonymity-os",
+      "virtual-machines"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/virtual-machines/subgraph-os.md"
   },
   {
@@ -58782,46 +58801,6 @@
     "_file": "library/tools/documents-metadata/studyblue.md"
   },
   {
-    "id": "taskrabbit",
-    "name": "TaskRabbit",
-    "description": "Website related to outsourcing of jobs related to homes and neighbourhoods",
-    "url": "https://api.taskrabbit.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/taskrabbit.md"
-  },
-  {
     "id": "tastedive-current-multimedia-trends",
     "name": "TasteDive",
     "description": "Use when you have a target's stated interest (a band, film, book, game) or a TasteDive username and want related tastes or their public \"Tastebuds\" connections — returns social-profile and associate leads.",
@@ -84361,7 +84340,7 @@
   {
     "id": "sn1per",
     "name": "Sn1per",
-    "description": "Full-scope pentest automation and recon",
+    "description": "Use when you have a `domain` or `ip-address` and want automated end-to-end recon + vulnerability scanning that orchestrates 90+ tools — returns domain, ip-address plus open ports and findings.",
     "url": "https://github.com/1N3/Sn1per",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -84369,34 +84348,50 @@
       "vulnerabilities",
       "scanners"
     ],
-    "bestFor": "Full-scope pentest automation and recon",
-    "input": "Target domains or IPs",
-    "output": "Recon data, open ports, vulnerabilities, and footprinting results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-command attack-surface recon and vuln scanning that wraps dozens of underlying tools.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Community Edition is free and source-available (this GitHub repo). Professional (~$984/yr per seat) and Enterprise tiers add a web UI, JSON API, unlimited scans, and reporting — not needed for CLI recon.",
     "opsec": "active",
-    "opsecNote": "Generates significant network traffic and alerts; high IDS/WAF detection risk",
+    "opsecNote": "HIGHLY ACTIVE and noisy — Sn1per runs port scans, service probes, and active vulnerability checks directly against the target, generating significant traffic that IDS/WAF/hosting providers will log and may alert on. Only run against infrastructure you are authorized to test; use `-m stealth`/passive modes for lower-noise recon, and never point it at third-party assets you don't own or have permission for.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running open-source project by 1N3, actively maintained (Sn1per Professional 2026 release). Widely used in offensive security; the free CE is the source in this repo.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "domain-dossier",
+      "theharvester",
+      "dnsdumpster"
+    ],
+    "aliases": [
+      "1N3/Sn1per",
+      "sniper scanner"
+    ],
+    "tags": [
+      "vulnerability-scanner",
+      "recon-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/sn1per.md"
   },
   {
@@ -91351,45 +91346,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/wordtune-com.md"
-  },
-  {
-    "id": "world-monitor-tech",
-    "name": "World Monitor Tech",
-    "description": "OSINT tool: World Monitor Tech.",
-    "url": "https://tech.worldmonitor.app",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "live-cyber-threat-maps"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "world-monitor"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/world-monitor-tech.md"
   },
   {
     "id": "xboxresolver-com",
@@ -177094,46 +177050,6 @@
     "_file": "library/tools/opsec-investigator-tooling/kindle-reading-app-mobile-android.md"
   },
   {
-    "id": "kindle-reading-app-mobile-ios",
-    "name": "Kindle Reading App (Mobile – iOS)",
-    "description": "App for mobile devices for reading e-books using the Kindle program",
-    "url": "https://itunes.apple.com/ca/app/kindle-read-books-ebooks-magazines/id302584613?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/kindle-reading-app-mobile-ios.md"
-  },
-  {
     "id": "ladder",
     "name": "LADDER",
     "description": "A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTML code of web pages and more.",
@@ -187003,46 +186919,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/vivaldi.md"
-  },
-  {
-    "id": "vkontakte-social-networking-app-mobile-android",
-    "name": "Vkontakte Social Networking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking",
-    "url": "https://play.google.com/store/apps/details?id=com.vkontakte.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/vkontakte-social-networking-app-mobile-android.md"
   },
   {
     "id": "voicebooking",
@@ -250008,45 +249884,64 @@
   },
   {
     "id": "rechercher-par-r-gion-ou-type-de-travaux",
-    "name": "Rechercher par région ou type de travaux",
-    "description": "OSINT tool: Rechercher par région ou type de travaux.",
+    "name": "RBQ Registre des licences — recherche par région ou type de travaux",
+    "description": "Use when you have a `geolocation`/region or trade type in Québec and want to enumerate licensed construction contractors there — returns employer-org, address, document-id (licence numbers).",
     "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=RegionTypeTravaux",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Enumerating RBQ-licensed construction contractors in Québec by region and/or type of work.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "document-id",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government registry (Régie du bâtiment du Québec); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are querying an official Québec government registry, not the subject. Fully passive from the target's perspective. Standard government-site logging of your visit applies; use a clean browser profile if you don't want the query tied to your other research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Régie du bâtiment du Québec (RBQ), the provincial construction regulator; this is the authoritative licence registry, not a third-party aggregator.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
-      "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
-      "association-assq-qc-ca",
-      "banq-num-rique",
       "rechercher-par-entreprise",
       "rechercher-par-r-pondant",
+      "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
+      "banq-num-rique",
       "services-en-ligne",
-      "trouver-une-d-cision"
+      "trouver-une-d-cision",
+      "association-assq-qc-ca"
     ],
+    "aliases": [
+      "RBQ registre des licences",
+      "Quebec construction licence registry"
+    ],
+    "tags": [
+      "public-records",
+      "quebec",
+      "business-registry"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rechercher-par-r-gion-ou-type-de-travaux.md"
   },
   {
@@ -274393,40 +274288,6 @@
     "_file": "library/tools/search-engines/goldenowl-ai.md"
   },
   {
-    "id": "goodgopher-com",
-    "name": "GoodGopher.com",
-    "description": "OSINT tool: GoodGopher.com.",
-    "url": "https://goodgopher.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/goodgopher-com.md"
-  },
-  {
     "id": "goodhousekeeping",
     "name": "Good Housekeeping",
     "description": "Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.",
@@ -297444,36 +297305,49 @@
   },
   {
     "id": "wordpress-custom-search",
-    "name": "WordPress Custom Search",
-    "description": "OSINT tool: WordPress Custom Search.",
+    "name": "WordPress Custom Search (Google Programmable Search)",
+    "description": "Use when you have a `name`/`username`/keyword and want to search across WordPress-hosted blogs specifically — a scoped Google Programmable Search, no personal selectors out.",
     "url": "https://cse.google.com/cse?cx=011081986282915606282:w8bndhohpi0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Keyword/name searching restricted to WordPress-hosted blog content via a prebuilt Google CSE.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use (Google Programmable Search / Custom Search Engine). No account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google's Programmable Search, not to any target site, so this is passive against your subject. Google logs the search against your session/IP as with any Google query; use a clean browser profile if you don't want it tied to your other research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine; its site list and freshness are controlled by whoever built the CSE and are opaque. Coverage can silently degrade over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "WordPress CSE",
+      "WordPress blog search"
+    ],
+    "tags": [
+      "custom-search-engine",
+      "blogs"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wordpress-custom-search.md"
   },
   {

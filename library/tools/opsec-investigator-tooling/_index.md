@@ -236,7 +236,6 @@ kind: group-index
 - **`kik-messaging-app-mobile-android`** (low) — App for mobile devices for real-time messaging services, one of the Top 100 apps for 2015
 - **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
-- **`kindle-reading-app-mobile-ios`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTM
 - **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`ldplayer-net`** (low) — OSINT tool: Ldplayer.net.
@@ -463,7 +462,6 @@ kind: group-index
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
 - **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
-- **`vkontakte-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking
 - **`voicebooking`** (low) — fake voice generator
 - **`vpn-for-beginners`** (low) — Beginners guide to VPN by Best VPN
 - **`vpn`** (low) — Database of VPNs

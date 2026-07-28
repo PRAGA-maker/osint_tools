@@ -103,7 +103,7 @@ kind: group-index
 - **`de4js`** (low) — HTML/JS deobfuscator
 - **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
 - **`decopy-ai-image-detector`** (low) — Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to 
-- **`deepai-ai-image-detector`** (low) — AI-generated image detection, media verification in OSINT investigations
+- **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
 - **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
