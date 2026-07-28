@@ -109,7 +109,7 @@ kind: group-index
 - **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
 - **`download-all-images`** (low) — Firefox extension that offers services related to saving all images on a web page
-- **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Add-on for Google Chrome that checks hyperlinks for malicious content or links
+- **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
 - **`dracos-linux`** (low) — OSINT tool: Dracos Linux.
 - **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
 - **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address

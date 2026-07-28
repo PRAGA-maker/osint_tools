@@ -78,7 +78,7 @@ kind: group-index
 - **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
 - **`riverside-com`** (low) — OSINT tool: riverside.com.
-- **`scphillips-morse-code-translator`** (low) — Tool for translating morse code
+- **`scphillips-morse-code-translator`** (low) — Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibrati
 - **`signing-savvy-sign-language-translator`** (low) — Translates English text to sign language
 - **`slangit`** (low) — Slang dictionary for learning slang terms, acronyms, abbreviations, and emoticons
 - **`smallseotools-plagiarism-checker`** (low) — Language and academic-related program that matches uploaded text against a database of text material, checking for plagiarsim and copyright 

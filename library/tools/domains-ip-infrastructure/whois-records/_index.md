@@ -17,7 +17,7 @@ kind: group-index
 - **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
 - **`viewdns-info`** (low) — DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking
 - **`website-informer`** (low) — Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email lin
-- **`who-is`** (low) — Domain registration research, WHOIS lookups, RDAP queries, IP tracking
+- **`who-is`** (low) — Use when you have a `domain` or `ip-address` and want registration, DNS and network ownership data — returns WHOIS/RDAP registrant details, 
 - **`whois-amped`** (low) — Mobile-friendly WHOIS lookups, quick domain information retrieval
 - **`whois-arin`** (low) — Use when you have an ip-address or ASN in North America and want its registered owner and contacts — returns employer-org, address, and poin
 - **`whoisology`** (medium) — Use when you have an `email`, registrant `name` or `domain` and want reverse-WHOIS and historical ownership — returns other domains sharing 

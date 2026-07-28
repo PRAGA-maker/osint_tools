@@ -385,7 +385,7 @@ kind: group-index
 - **`smart-ruler`** (low) — Simple #GoogleChrome extension (200 000 users) for those who like to explore the design of different sites
 - **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
 - **`snyk-io`** (low) — Website Vulnerabilities Scanner
-- **`soc-multi-tool`** (low) — Chrome Extension for quick: IP/Domain Reputation Lookup IP/ Domain Info Lookup Hash Reputation Lookup (Decoding of Base64 & HEX using CyberC
+- **`soc-multi-tool`** (low) — Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns V
 - **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
 - **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
 - **`sourcewolf`** (low) — Use when you have a `domain`/URL and want hidden endpoints, subdomains and links mined from its JS and responses — returns URLs, endpoints a
@@ -438,7 +438,7 @@ kind: group-index
 - **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
 - **`vincos-it`** (low) — world social media popularity map
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
-- **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
+- **`vstat-info`** (low) — Use when you have a `domain` and want estimated traffic, audience and referral data — returns visitor estimates, traffic sources and related
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
@@ -462,7 +462,7 @@ kind: group-index
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
 - **`whatismyipaddress`** (low) — Use when you have an `ip-address` and want quick geolocation, ISP/hostname, and blacklist context — returns `geolocation`, `domain`, and net
-- **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
+- **`whatruns`** (low) — Use when you have a `domain` and want to fingerprint the technologies running a website (CMS, analytics, CDN, plugins, fonts) — returns tech
 - **`whois-arin-online`** (low) — Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the regist
 - **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco
 - **`whois-freaks`** (medium) — Use when you have a person `name`, company, or email and want every domain registered with those details — returns matching `domain`s via re

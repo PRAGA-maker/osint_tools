@@ -7,7 +7,6 @@ kind: group-index
 # ai-analysis-automation
 
 ## Sub-groups
-- **`barcodes-qr/`** — 0 skill(s) below.
 - **`javascript/`** — 4 skill(s) below.
 - **`osint-automation/`** — 11 skill(s) below.
 - **`php/`** — 1 skill(s) below.
@@ -109,7 +108,6 @@ kind: group-index
 - **`deepai-ai-image-detector`** (low) — AI-generated image detection, media verification in OSINT investigations
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI
 - **`defend-network`** (low) — OSINT tool: defend.network.
-- **`dehashed-cli`** (low) — OSINT tool: Dehashed CLI.
 - **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
 - **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa

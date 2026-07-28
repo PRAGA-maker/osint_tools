@@ -110,7 +110,7 @@ kind: group-index
 - **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
 - **`terra-server`** (medium) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to downlo
 - **`tfl-jamcams`** (medium) — Use when you have a London `geolocation` or `address` and want near-live traffic-camera stills plus incidents at that spot — returns geoloca
-- **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
+- **`the-european-space-agency-esa-earth-online`** (low) — Use when you have a `geolocation`/`address` and want satellite Earth-observation imagery and environmental data for that area — returns EO i
 - **`the-perry-casta-eda-library-map-collection`** (medium) — Use when you have a `geolocation` or place name and want historical, topographic or thematic maps of it — returns free downloadable map imag
 - **`topotijdreis-nl`** (low) — Use when you have a Dutch `address`/`geolocation` and want to see how that spot looked across ~200 years of maps — returns historical Nether
 - **`travic-tracker-geops`** (medium) — Use when you have a `geolocation` and time and want live public-transport positions there — returns real-time vehicle movements to corrobora

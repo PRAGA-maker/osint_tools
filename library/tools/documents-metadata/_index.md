@@ -92,7 +92,7 @@ kind: group-index
 - **`evuln`** (low) — Program that provides multiple tools and programs to prevent website hacking and protective monitoring
 - **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
-- **`exif-py`** (low) — get exif data of photos thrue command line
+- **`exif-py`** (low) — Use when you have an `image` file and want to extract its embedded EXIF metadata from the command line — returns metadata-exif, GPS geolocat
 - **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).
 - **`exif-viewer-addons-mozilla-org`** (low) — OSINT tool: exif viewer (addons.mozilla.org).
 - **`exif-viewer-classic-chrome-google-com`** (low) — Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any 

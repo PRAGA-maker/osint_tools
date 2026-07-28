@@ -3926,42 +3926,6 @@
     "_file": "library/tools/ai-analysis-automation/defend-network.md"
   },
   {
-    "id": "dehashed-cli",
-    "name": "Dehashed CLI",
-    "description": "OSINT tool: Dehashed CLI.",
-    "url": "https://github.com/hmaverickadams/DeHashed-API-Tool",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/dehashed-cli.md"
-  },
-  {
     "id": "developer-search-tool",
     "name": "Developer search tool",
     "description": "Take the art of copy and paste from Stack Overflow to a new level of speed and productivity",
@@ -51302,40 +51266,53 @@
   {
     "id": "exif-py",
     "name": "EXIF-PY",
-    "description": "get exif data of photos thrue command line",
+    "description": "Use when you have an `image` file and want to extract its embedded EXIF metadata from the command line — returns metadata-exif, GPS geolocation, and camera device-id.",
     "url": "https://github.com/ianare/exif-py",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling EXIF/GPS/camera metadata out of a photo locally, in a script or one-liner.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (BSD-3-Clause); installed from PyPI as `exifread`.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely on your own machine against a local file — nothing is uploaded and the subject is never contacted. Still, work on a copy so you don't alter the original evidence file's timestamps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Mature, well-maintained open-source library (ianare/exif-py, ~950 stars, pure-Python, active through Python 3.13). Reads what the file declares; it does not verify authenticity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exiftool"
+    ],
+    "aliases": [
+      "exifread",
+      "EXIF.py"
+    ],
     "tags": [
       "Image Search and Identification",
       "Exif Analyze and editing"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/exif-py.md"
   },
   {
@@ -80305,41 +80282,50 @@
   {
     "id": "phenoelit-default-password-list",
     "name": "Phenoelit Default Password List",
-    "description": "OSINT tool: Phenoelit Default Password List.",
-    "url": "https://phenoelit.org/dpl/dpl.html",
+    "description": "Use when you have a device make/model (`device-id`) and want its factory-default credentials — returns the vendor's default username/`password` pairs.",
+    "url": "https://phenoelit.de/dpl/dpl.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "default-passwords"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up factory-default login credentials for networking/hardware by vendor and model.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "password"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free static reference page; no account. Content is frozen (last substantive update ~2008).",
+    "opsec": "passive",
+    "opsecNote": "This is a static reference list — reading it contacts nobody but Phenoelit. Actually USING a default credential against a device you don't own is intrusion; only apply on systems you are authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing, well-known reference maintained by the Phenoelit group. Data is accurate for its era but stale; the .org host is unreliable, the .de mirror is the working copy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Phenoelit DPL",
+      "Default Password List"
+    ],
+    "tags": [
+      "default-passwords",
+      "reference-list"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/default-passwords/phenoelit-default-password-list.md"
   },
   {
@@ -82832,41 +82818,53 @@
   {
     "id": "scumware-org",
     "name": "scumware.org",
-    "description": "Malware and spyware domain research",
+    "description": "Use when you have a `domain`, `ip-address` or file hash and want to check it against a malware/phishing threat database — returns associated malicious URLs, IPs and classifications.",
     "url": "https://www.scumware.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "domain-blacklists"
     ],
-    "bestFor": "Malware and spyware domain research",
-    "input": "Domain or URL",
-    "output": "Domain reputation/blocklist data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a domain/IP/hash is catalogued as malicious and pivoting to the URLs/IPs linked to a threat.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free for security/malware researchers; some detailed views require credits earned by solving CAPTCHAs.",
     "opsec": "passive",
-    "opsecNote": "Community-maintained research database; passive lookup only",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query scumware.org's own crawl database, not the malicious host, so nothing touches the target infrastructure. Your query is logged by scumware.org.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-run threat database populated by automated crawling and user submissions; useful for corroboration, not an authoritative verdict.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "soc-multi-tool"
+    ],
     "aliases": [],
-    "tags": [],
+    "tags": [
+      "malware",
+      "domain-blacklist"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/scumware-org.md"
   },
   {
@@ -84478,42 +84476,54 @@
   {
     "id": "soc-multi-tool",
     "name": "SOC Multi Tool",
-    "description": "Chrome Extension for quick: IP/Domain Reputation Lookup IP/ Domain Info Lookup Hash Reputation Lookup (Decoding of Base64 & HEX using CyberChef File Extension & Filename Lookup and more",
-    "url": "https://chrome.google.com/webstore/detail/soc-multi-tool/diagjgnagmnjdfnfcciocmjcllacgkab/",
+    "description": "Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns VirusTotal/AbuseIPDB reputation, WHOIS and decoded values.",
+    "url": "https://chromewebstore.google.com/detail/soc-multi-tool/diagjgnagmnjdfnfcciocmjcllacgkab",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One right-click to run an IP/domain/hash through reputation and OSINT services during triage.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address",
+      "mac-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source Chrome extension (by Zachary Henard); underlying VirusTotal/AbuseIPDB lookups open their web pages, which may have their own limits.",
+    "opsec": "active",
+    "opsecNote": "Each lookup submits the indicator to third-party services (VirusTotal, AbuseIPDB, WHOIS), so those providers — and anyone watching them — see what you're investigating. Never submit indicators that are sensitive or attacker-visible; use a research browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source SOC/analyst extension (~3k users, 4.9★); the developer states no data is collected. It orchestrates other services rather than holding its own data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "scumware-org",
+      "dr-web-anti-virus-link-checker-extension-chrome"
+    ],
+    "aliases": [
+      "SOC Multi-tool"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Dorks/Pentest/Vulnerabilities"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/soc-multi-tool.md"
   },
   {
@@ -88400,42 +88410,50 @@
   {
     "id": "vstat-info",
     "name": "vstat.info",
-    "description": "Getting detailed info about website traffic (sources, keywords, linked sites etc)",
+    "description": "Use when you have a `domain` and want estimated traffic, audience and referral data — returns visitor estimates, traffic sources and related `domain`s.",
     "url": "https://vstat.info",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Estimating a website's traffic volume, audience profile and referral/linked sites.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free traffic estimates per domain; deeper analytics/exports and the browser extension sit behind paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "You query vstat's own aggregated panel data, not the target site, so nothing touches the subject's server. vstat sees which domains you look up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party estimate based on panel/modelled data (roughly tracks Similarweb for large sites). Numbers are estimates, not the site's real analytics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatruns"
+    ],
+    "aliases": [
+      "VStat"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website traffic look up"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/vstat-info.md"
   },
   {
@@ -89869,42 +89887,48 @@
   {
     "id": "whatruns",
     "name": "WhatRuns",
-    "description": "extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.",
-    "url": "https://chrome.google.com/webstore/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip/related",
+    "description": "Use when you have a `domain` and want to fingerprint the technologies running a website (CMS, analytics, CDN, plugins, fonts) — returns tech-stack details and pivotable tracker/analytics IDs linking related `domain`s.",
+    "url": "https://www.whatruns.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click tech-stack fingerprint of a website, including analytics/tracker IDs that can tie sites to a common owner.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser extension; no registration required.",
+    "opsec": "active",
+    "opsecNote": "The extension fingerprints the page you are actually viewing, so you load the target site directly from your IP. Use a sock-puppet browser/VPN if the owner might notice a visit; do not log into anything.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular third-party extension (~450k users). Detection is heuristic pattern-matching and can miss or misattribute technologies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "vstat-info"
+    ],
     "aliases": [],
     "tags": [
       "Domain/IP/Links",
       "Website technology look up"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whatruns.md"
   },
   {
@@ -90010,41 +90034,56 @@
   {
     "id": "who-is",
     "name": "Who.is",
-    "description": "Domain registration research, WHOIS lookups, RDAP queries, IP tracking",
+    "description": "Use when you have a `domain` or `ip-address` and want registration, DNS and network ownership data — returns WHOIS/RDAP registrant details, nameservers, DNS records and IP ownership.",
     "url": "https://who.is/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Domain registration research, WHOIS lookups, RDAP queries, IP tracking",
-    "input": "Domain name or IP address",
-    "output": "WHOIS records, RDAP data, DNS records, nameservers, registrant information",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast web WHOIS/RDAP + DNS lookup for a domain or IP, with historical records behind a paid tier.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "name",
+      "email",
+      "address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free WHOIS, RDAP, DNS and IP lookups; Domain History reports and Pro monitoring are paid add-ons.",
     "opsec": "passive",
-    "opsecNote": "Queries public WHOIS and RDAP databases; does not perform active scanning.",
+    "opsecNote": "Queries public WHOIS/RDAP/DNS registries via who.is, not the target's own server, so the subject is not contacted. Your query is seen by who.is; use a sock-puppet if you don't want it logged against you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running third-party WHOIS/RDAP front-end. Data quality depends on the underlying registries; it presents, it does not vouch.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "icann-whois-lookup"
+    ],
+    "aliases": [
+      "who.is"
+    ],
+    "tags": [
+      "whois",
+      "domain-registration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/who-is.md"
   },
   {
@@ -128651,38 +128690,44 @@
   {
     "id": "autostitch",
     "name": "AutoStitch",
-    "description": "Autostitch is a free tool for seamlessly combining multiple photos into a single panoramic image, making it ideal for creating wide-angle photography without needing specialized equipment.",
+    "description": "Use when you have several overlapping `image`s of a scene and want them merged into one wide panorama — returns a stitched composite image.",
     "url": "https://mattabrown.github.io/autostitch.html",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Automatically stitching overlapping photos/frames into a single wide-angle panorama to reconstruct a scene.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Windows demo download (64-bit; legacy 32-bit); the macOS build is discontinued.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally on your own machine against your own image files — no upload, no contact with any subject. Work on copies to preserve originals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Research-grade panorama stitcher (Matthew Brown) using SIFT matching; the algorithm underpinned commercial products (Autopano, Photosynth). Reliable geometry, but a stitch is a reconstruction, not evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [],
     "tags": [
       "bellingcat-toolkit",
       "misc"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/autostitch.md"
   },
   {
@@ -156308,13 +156353,13 @@
   {
     "id": "the-european-space-agency-esa-earth-online",
     "name": "The European Space Agency (ESA) - Earth Online",
-    "description": "The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications from climate monitoring to natural disaster assessment.",
+    "description": "Use when you have a `geolocation`/`address` and want satellite Earth-observation imagery and environmental data for that area — returns EO imagery and datasets.",
     "url": "https://earth.esa.int/eogateway/tools",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Accessing ESA satellite/Earth-observation imagery and environmental datasets for a location or time window.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -156322,29 +156367,38 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free access to a large catalogue of ESA Earth-observation data; a free EO Sign-In account is required to order/download many products.",
+    "opsec": "passive",
+    "opsecNote": "You browse ESA's public data portal, not any target — the subject is never contacted. Downloading generally requires a (free) ESA account, so use a research identity if you don't want the activity tied to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official European Space Agency portal; the imagery and data are authoritative primary sources from ESA missions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ESA Earth Online",
+      "EO Gateway"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "satellite-imagery"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/the-european-space-agency-esa-earth-online.md"
   },
   {
@@ -171333,24 +171387,27 @@
   {
     "id": "dr-web-anti-virus-link-checker-extension-chrome",
     "name": "Dr Web Anti-Virus Link Checker Extension (Chrome)",
-    "description": "Add-on for Google Chrome that checks hyperlinks for malicious content or links",
-    "url": "https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb",
+    "description": "Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict.",
+    "url": "https://chromewebstore.google.com/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Vetting a link or small download for malware/phishing from the browser context menu before opening it.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension from Dr.Web; no account required.",
+    "opsec": "active",
+    "opsecNote": "Scanning a link sends that URL to Dr.Web's cloud, so the vendor sees which addresses you check — do not scan links whose existence is sensitive to your investigation. It also loads/scans the target for you, which can touch the destination server.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Published by Doctor Web (Dr.Web), an established antivirus vendor; ~60k users, 4.4★. Verdicts reflect Dr.Web's own reputation engine.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -171359,15 +171416,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "soc-multi-tool"
+    ],
+    "aliases": [
+      "Dr.Web Link Checker"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/dr-web-anti-virus-link-checker-extension-chrome.md"
   },
   {
@@ -344418,24 +344480,25 @@
   {
     "id": "scphillips-morse-code-translator",
     "name": "SCPhillips Morse Code Translator",
-    "description": "Tool for translating morse code",
-    "url": "http://morsecode.scphillips.com/translator.html",
+    "description": "Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibration playback.",
+    "url": "https://morsecode.world/international/translator.html",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Bidirectional Morse↔text translation with playback (sound, flashing light, vibration).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool (the former morsecode.scphillips.com now redirects here); optional shop is unrelated to the translator.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs in-browser and you paste your own content; nothing is sent to a target. Avoid pasting genuinely sensitive material into any third-party web tool as a habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known long-running Morse resource (Stephen C. Phillips' tool, now at morsecode.world). Deterministic conversion — output is verifiable by hand against a Morse chart.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -344444,15 +344507,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "morsecode.world translator",
+      "Stephen Phillips Morse translator"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "language-translation-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/scphillips-morse-code-translator.md"
   },
   {

@@ -35,7 +35,7 @@ kind: group-index
 - **`app-geoinfer-com`** (high) — Use when you have a photo with no GPS/EXIF and need an AI prediction of where it was taken (coordinates plus a confidence radius).
 - **`arcgis-com`** (medium) — Use when you have a place/area and want to plot geotagged public social media (Flickr, YouTube, Twitter, webcams) on a map to find imagery f
 - **`ascii2d-net`** (medium) — Use when you have an `image` (especially artwork, avatars, or anime-style images) and want to find its source and higher-res copies — return
-- **`autostitch`** (low) — Autostitch is a free tool for seamlessly combining multiple photos into a single panoramic image, making it ideal for creating wide-angle ph
+- **`autostitch`** (low) — Use when you have several overlapping `image`s of a scene and want them merged into one wide panorama — returns a stitched composite image.
 - **`background-removal-tool`** (low) — Use when you need to cut the subject out of a busy photo so the face/clothing is isolated before reverse-image search or comparison.
 - **`baidu-image-search-2`** (high) — Use when you have an image or face and want matches indexed by China's dominant search engine — returns visually similar images and the Chin
 - **`baidu-image-search`** (high) — Use when you have an `image` or `face` and want reverse-image matches from Chinese-language and China-hosted sources — returns visually simi
