@@ -879,7 +879,7 @@ kind: group-index
 - **`tracxn`** (medium) — Use when you have a company or `name` and want private-market intelligence — returns startup profiles, funding, founders, and investor/assoc
 - **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
-- **`trading-economics`** (low) — OSINT tool: Trading Economics.
+- **`trading-economics`** (low) — Use when you have a country or economic indicator and want reference macro data — returns historical/current stats (GDP, inflation, rates, t
 - **`transparency-org-corruption-perception-index`** (low) — Use when you need a country's perceived-corruption score as investigative context — returns per-country CPI scores/ranks (0–100) with year-o
 - **`trellis`** (medium) — Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics
 - **`trinka`** (medium) — Use when you have two texts/documents and want authorship, plagiarism or consistency signals — returns grammar/style/plagiarism analysis to 

@@ -189,7 +189,7 @@ kind: group-index
 - **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
 - **`i2p`** (low) — OSINT tool: I2P.
 - **`ifttt-instagram-integrations`** (low) — Use when you want to automate around Instagram via IFTTT — but note it only triggers on YOUR OWN connected business account, so it archives 
-- **`illuminarty`** (low) — AI image detection with model attribution, deepfake and synthetic media investigation
+- **`illuminarty`** (low) — Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating mod
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
 - **`infosec-reference`** (low) — OSINT tool: infosec reference.

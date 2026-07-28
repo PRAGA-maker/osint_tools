@@ -84,7 +84,7 @@ kind: group-index
 - **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
 - **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
-- **`citymapper-mapping-app-mobile-android`** (low) — App for mobile devices for local maps of city areas
+- **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
 - **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
 - **`click-and-clean-extension-chrome`** (low) — Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks
@@ -371,7 +371,6 @@ kind: group-index
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
 - **`simplelogin`** (low) — OSINT tool: SimpleLogin.
 - **`sin-generator`** (low) — OSINT tool: SIN Generator.
-- **`skype-voip-communications-app-mobile-android`** (low) — App for mobile devices for VOIP communications services
 - **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
 - **`slack-business-communication-app-mobile-ios`** (low) — App for mobile devices for business communications and networking
@@ -498,7 +497,6 @@ kind: group-index
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`yahoo-mail-app-mobile-ios`** (low) — App for mobile devices for email services
 - **`yandex-browser`** (low) — OSINT tool: Yandex Browser.
-- **`yelp-business-search-app-mobile-ios`** (low) — App for mobile devices for locating business by name, contact informatio, or geolocation
 - **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
 - **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
 - **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing

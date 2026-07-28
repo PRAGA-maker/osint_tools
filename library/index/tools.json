@@ -7276,42 +7276,55 @@
   {
     "id": "illuminarty",
     "name": "Illuminarty",
-    "description": "AI image detection with model attribution, deepfake and synthetic media investigation",
+    "description": "Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating model (Midjourney, DALL-E, Stable Diffusion, etc.).",
     "url": "https://app.illuminarty.ai/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "AI image detection with model attribution, deepfake and synthetic media investigation",
-    "input": "Image file upload or URL",
-    "output": "AI generation probability and suspected generating model (Midjourney, DALL-E, SD, etc.)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Screening a suspicious photo/profile picture for AI generation and estimating which model produced it.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives limited detections in-browser; higher volume, object-level analysis and API access require a paid plan/registration.",
     "opsec": "active",
-    "opsecNote": "Images uploaded to Illuminarty servers; registration required for full feature access.",
+    "opsecNote": "You upload the target image to Illuminarty's servers, so the image leaves your control and is processed by a third party. Do not upload sensitive/case-confidential images you cannot expose; strip or note any EXIF first.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial AI-content-detection service; detectors are probabilistic and imperfect (both false positives and false negatives), so treat scores as one signal, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "decopy-ai-image-detector",
+      "fotoforensics"
+    ],
+    "aliases": [
+      "illuminarty.ai"
+    ],
+    "tags": [
+      "ai-detection",
+      "deepfake",
+      "image-forensics",
+      "arf-seed"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/illuminarty.md"
   },
   {
@@ -7614,41 +7627,47 @@
   {
     "id": "intrec-pack",
     "name": "IntRec-Pack",
-    "description": "Streamlined OSINT tool environment setup and deployment",
+    "description": "Use when you want to stand up an OSINT/recon toolkit quickly — an installer/manager that downloads and sets up a curated bundle of intelligence-gathering tools and dependencies.",
     "url": "https://github.com/NullArray/IntRec-Pack",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Streamlined OSINT tool environment setup and deployment",
-    "input": "N/A (installer script)",
-    "output": "Installed tool suite with integrated dependencies",
+    "bestFor": "Bootstrapping a working OSINT/recon environment — installs and manages a set of common gathering tools and their dependencies from one script.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (installer/manager script); the tools it installs are themselves free/open-source.",
     "opsec": "passive",
-    "opsecNote": "Wrapper script; opsec depends on installed tools",
+    "opsecNote": "The installer itself just fetches and sets up software — passive. Real OpSec depends entirely on which installed tools you then run and how; a tool that later scans or contacts targets is active, so judge OpSec per-tool at use time.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community project by GitHub user NullArray; it automates installing third-party tools, so review the script and the tools it pulls before running, ideally in a disposable VM.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IntRec-Pack",
+      "Intelligence and Reconnaissance Package"
+    ],
+    "tags": [
+      "osint-automation",
+      "toolkit-installer",
+      "arf-seed"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/intrec-pack.md"
   },
   {
@@ -54519,25 +54538,34 @@
   {
     "id": "kickstarter",
     "name": "Kickstarter",
-    "description": "Website related to crowdsourced funding (venture capital) for ideas and projects",
+    "description": "Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, backer/comment activity and project history.",
     "url": "https://www.kickstarter.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person or venture's crowdfunding trail — creator profile, self-written bio, stated location, project history and public backer/comment activity.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse projects, creator profiles and comments; an account is only needed to back or post, not to research.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public projects, profiles and comments is passive and does not notify anyone. Backing a project or commenting is visible and traceable — don't interact from a real account. A subject's own creator/backer activity is a public trail you can read without touching them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trust": "trusted",
+    "trustNote": "Official Kickstarter site; project, creator and comment data are first-party. Creator bios/locations are self-declared, so treat those as claims to corroborate.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -54545,15 +54573,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-search"
+    ],
+    "aliases": [
+      "kickstarter.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "crowdfunding",
+      "people-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/kickstarter.md"
   },
   {
@@ -62837,46 +62870,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bbot.md"
-  },
-  {
-    "id": "belati",
-    "name": "Belati",
-    "description": "Multi-source OSINT collection automation",
-    "url": "https://github.com/aancw/Belati",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "tools"
-    ],
-    "bestFor": "Multi-source OSINT collection automation",
-    "input": "Domains and targets",
-    "output": "Aggregated OSINT data",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Primarily passive; behavior depends on configured modules",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/tools/belati.md"
   },
   {
     "id": "bgp-malicious-content-ranking",
@@ -85238,41 +85231,56 @@
   {
     "id": "stormspotter",
     "name": "Stormspotter",
-    "description": "Visual analysis of Azure attack paths and privilege chains",
+    "description": "Use when you have authorized access to an Azure tenant and want to map its attack surface — returns an interactive graph of Azure/AAD identities, resources, roles and privilege-escalation paths.",
     "url": "https://github.com/Azure/Stormspotter",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "azure-gcp-discovery"
     ],
-    "bestFor": "Visual analysis of Azure attack paths and privilege chains",
-    "input": "Azure subscription/tenant metadata collected by collectors",
-    "output": "Interactive graph of Azure identities, resources, and attack edges",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Red-team/assessment mapping of an Azure subscription and Azure AD — visualising identities, resources and attack edges as a Neo4j graph.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Microsoft/Azure GitHub). Requires you to run Neo4j (free community edition) locally.",
     "opsec": "active",
-    "opsecNote": "Collection phase performs authenticated queries against Azure APIs.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "The collection phase (Stormcollector) makes AUTHENTICATED queries against Azure APIs using credentials you supply — this is active, logged by Azure, and must only be run against a tenant you are authorized to assess. It is not a passive external-recon tool.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
+    "bestInteractionPattern": "docker",
+    "trust": "trusted",
+    "trustNote": "Published under Microsoft's official Azure GitHub organization; it reads live Azure/AAD data, so the graph is authoritative for the tenant at collection time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Stormspotter",
+      "Azure Stormspotter"
+    ],
+    "tags": [
+      "azure",
+      "attack-graph",
+      "cloud-recon",
+      "arf-seed"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/stormspotter.md"
   },
   {
@@ -170334,41 +170342,52 @@
   {
     "id": "citymapper-mapping-app-mobile-android",
     "name": "Citymapper Mapping App (Mobile – Android)",
-    "description": "App for mobile devices for local maps of city areas",
+    "description": "Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings and transport options for feasibility/timeline analysis.",
     "url": "https://play.google.com/store/apps/details?id=com.citymapper.app.release",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Detailed multimodal transit routing in major cities — testing how (and how long) someone could travel between two points using real public-transport data.",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free app (also usable at citymapper.com); optional paid \"Club\" tier isn't needed for routing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Planning a route is passive and involves no target — you are querying a transit-routing service about places, not people. Don't enable location sharing / trip logging on a research device if you want no local trace.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Established transit-routing app using official transport-agency data for its supported cities; routing and timings are reliable within covered metros.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps"
+    ],
+    "aliases": [
+      "Citymapper"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "transit",
+      "routing"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/citymapper-mapping-app-mobile-android.md"
   },
   {
@@ -183047,46 +183066,6 @@
     "_file": "library/tools/opsec-investigator-tooling/sin-generator.md"
   },
   {
-    "id": "skype-voip-communications-app-mobile-android",
-    "name": "Skype VOIP Communications App (Mobile – Android)",
-    "description": "App for mobile devices for VOIP communications services",
-    "url": "https://play.google.com/store/apps/details?id=com.skype.raider",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/skype-voip-communications-app-mobile-android.md"
-  },
-  {
     "id": "skype-voip-communications-app-mobile-ios",
     "name": "Skype VOIP Communications App (Mobile – iOS)",
     "description": "App for mobile devices for VOIP communications services",
@@ -188571,46 +188550,6 @@
       "yandexmaps"
     ],
     "_file": "library/tools/opsec-investigator-tooling/yandex-browser.md"
-  },
-  {
-    "id": "yelp-business-search-app-mobile-ios",
-    "name": "Yelp Business Search App (Mobile – iOS)",
-    "description": "App for mobile devices for locating business by name, contact informatio, or geolocation",
-    "url": "https://apps.apple.com/us/app/yelp-food-services-around-me/id284910350",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/yelp-business-search-app-mobile-ios.md"
   },
   {
     "id": "yelp-social-reviews-app-mobile-android",
@@ -258118,37 +258057,51 @@
   {
     "id": "trading-economics",
     "name": "Trading Economics",
-    "description": "OSINT tool: Trading Economics.",
-    "url": "http://www.tradingeconomics.com",
+    "description": "Use when you have a country or economic indicator and want reference macro data — returns historical/current stats (GDP, inflation, rates, trade, credit ratings) by country.",
+    "url": "https://tradingeconomics.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "A one-stop reference for macroeconomic indicators, markets and credit ratings across ~200 countries — background/context, not people data.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core indicator pages and charts are free to view; historical data export, API and advanced features require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Reading public statistics pages is passive and reveals nothing about any target — this is a reference dataset, not an investigative lookup of a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely-cited economic-data aggregator that compiles official sources (central banks, statistics offices); figures are generally reliable but always trace an important number back to its primary source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "unctad-stat",
+      "unstats-social-indicators"
+    ],
+    "aliases": [
+      "tradingeconomics.com"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "economics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/public-records/trading-economics.md"
   },
   {
@@ -289037,41 +288990,56 @@
   },
   {
     "id": "research-gate",
-    "name": "Research Gate",
-    "description": "OSINT tool: Research Gate.",
-    "url": "http://www.researchgate.net",
+    "name": "ResearchGate",
+    "description": "Use when you have a researcher's `name` or `employer-org` and want their academic profile — returns publications, affiliation, co-authors and often a photo and contact route.",
+    "url": "https://www.researchgate.net",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding a scientist/academic's profile — publications, institution, co-author network and biographical detail — from a name or field.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "associate",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and view public profiles/abstracts; a free account (academic-oriented) unlocks messaging and some full texts. No payment needed for the OSINT use.",
+    "opsec": "passive",
+    "opsecNote": "Public profile and publication pages can be viewed without logging in — passive. If you log in and view a profile, ResearchGate may show the profile owner that you viewed them (\"who viewed your profile\"), so browse logged-out or with a sock-puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Large academic social network; profiles are self-published by researchers (or auto-generated from publication metadata), so affiliation and authorship are usually reliable but bios are self-reported.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "researchgate-net",
+      "google-scholar"
+    ],
+    "aliases": [
+      "researchgate.net",
+      "Research Gate"
+    ],
     "tags": [
       "academic-resources-and-grey-literature"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "researchgate-net"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/research-gate.md"
   },
   {
@@ -293591,44 +293559,59 @@
   {
     "id": "thelordeye",
     "name": "TheLordEye",
-    "description": "Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic lights, routers, smart TVs etc",
+    "description": "Use when you have a device/service query or `ip-address` and want internet-connected devices matching it — returns webcams, routers, IoT and their `ip-address`/`geolocation` via the Shodan API.",
     "url": "https://github.com/rlyonheart/thelordseye",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A lightweight CLI wrapper over the Shodan API for querying internet-exposed devices (webcams, routers, smart TVs, ICS) and looking up individual IPs.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The tool itself is free/open-source, but it requires a Shodan.io API key — Shodan has a limited free tier and paid plans for higher quotas.",
+    "opsec": "passive",
+    "opsecNote": "Queries run against Shodan's pre-collected scan dataset, so the target device is not contacted directly from your machine — reconnaissance is passive. Your Shodan account (tied to the API key) logs your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source CLI by GitHub user rlyonheart; it is a thin front-end over the official Shodan API, so result quality equals Shodan's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google",
-      "IOT (ip search engines)"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "0xdork",
-      "open-corporates-command-line-client-occli",
       "thedevilseye",
-      "thorndyke"
+      "thorndyke",
+      "criminal-ip-search"
     ],
+    "aliases": [
+      "thelordseye",
+      "the lord's eye"
+    ],
+    "tags": [
+      "Tools for Google",
+      "IOT (ip search engines)",
+      "shodan"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/thelordeye.md"
   },
   {
@@ -323835,50 +323818,6 @@
     "_file": "library/tools/social-networks/reddit-post-scraping-tool.md"
   },
   {
-    "id": "reddit-search-cemulate",
-    "name": "Reddit Search (cemulate)",
-    "description": "Alternative Reddit search tool.",
-    "url": "http://cemulate.github.io/reddit-search",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Keyword searching Reddit content",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit",
-      "search"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/reddit-search-cemulate.md"
-  },
-  {
     "id": "reddit-search-engine",
     "name": "Reddit Search Engine (Google CSE)",
     "description": "Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thread links.",
@@ -349341,41 +349280,55 @@
   {
     "id": "freedar",
     "name": "Freedar",
-    "description": "OSINT tool: Freedar.",
+    "description": "Use when you have an aircraft registration/callsign or an area of interest and want live ADS-B positions — returns aircraft location, altitude, callsign and track, including military/private not filtered elsewhere.",
     "url": "https://radar.freedar.uk/virtualradar/desktop.html",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Live flight tracking over the UK/Europe with no aircraft filtering — shows military and blocked/private aircraft that mainstream trackers hide.",
     "selectorsIn": [
-      "name"
+      "name",
+      "vehicle-plate"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community-run flight tracker (Freedar.uk); no account required to view the radar.",
+    "opsec": "passive",
+    "opsecNote": "Viewing the live map is passive — you observe broadcast ADS-B/MLAT signals aggregated by Freedar; no target is contacted and nothing is sent to the aircraft or operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-run UK aggregator (ScoobyMedia/Freedar.uk) exchanging feeds with Wigan Radar and ADSBHub; data is crowd-fed ADS-B/MLAT, accurate where receivers exist but with coverage gaps.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "gb",
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "adsb-exchange",
+      "flightradar24"
+    ],
+    "aliases": [
+      "Freedar.uk",
+      "Freedar Virtual Radar"
+    ],
     "tags": [
-      "aviation"
+      "aviation",
+      "flight-tracking",
+      "adsb"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/freedar.md"
   },
   {

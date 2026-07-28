@@ -10,7 +10,7 @@ kind: group-index
 - **`analyst-research-tools`** (low) — Multi-category OSINT: people search, social media, archives, email discovery
 - **`ifttt`** (low) — Use when you want to automate monitoring — turn a `social-profile`, RSS feed or keyword trigger into automatic alerts/logging so a subject's
 - **`intelligencex`** (low) — Leaked data, breach database, and darknet intelligence searching
-- **`intrec-pack`** (low) — Streamlined OSINT tool environment setup and deployment
+- **`intrec-pack`** (low) — Use when you want to stand up an OSINT/recon toolkit quickly — an installer/manager that downloads and sets up a curated bundle of intellige
 - **`microsoft-flow`** (low) — Orchestrating OSINT workflows across multiple platforms/APIs
 - **`omnibus`** (low) — Use when you have mixed artifacts (`ip-address`, `domain`, `email`, `username`, hash, wallet) and want a session-based CLI to enrich them ac
 - **`osrframework`** (low) — Comprehensive username and email enumeration with extensible architecture

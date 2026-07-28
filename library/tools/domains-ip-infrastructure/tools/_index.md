@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/tools
 
 ## Skills here
-- **`belati`** (low) — Multi-source OSINT collection automation
 - **`burp-suite`** (low) — Web application penetration testing
 - **`eyewitness`** (low) — Visual site enumeration and credential identification
 - **`hunting-new-registered-domains`** (low) — Phishing domain detection and brand threat monitoring

@@ -526,7 +526,7 @@ kind: group-index
 - **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
 - **`reeder`** (low) — OSINT tool: Reeder.
 - **`remax-house-listing-search-canada`** (medium) — Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the lis
-- **`research-gate`** (low) — OSINT tool: Research Gate.
+- **`research-gate`** (low) — Use when you have a researcher's `name` or `employer-org` and want their academic profile — returns publications, affiliation, co-authors an
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
 - **`restaurant-business-online-united-states`** (medium) — Use when you have a `name` or `employer-org` in the US foodservice industry and want trade-press coverage — returns news, roles, and company
 - **`reuser-s-repertorium`** (medium) — Use when you need a vetted starting point of OSINT sources for a country, registry or topic — returns curated links to people, registry, map
@@ -613,7 +613,7 @@ kind: group-index
 - **`the-guantanamo-docket`** (low) — Use when you have a `name` of a Guantanamo Bay detainee and want their case file — returns a profile plus government documents (status revie
 - **`the-osint-rack-mario-santella`** (medium) — Use when you need to discover an OSINT tool for a given selector/task — returns a filterable directory of 500+ vetted OSINT resources by cat
 - **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
-- **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
+- **`thelordeye`** (low) — Use when you have a device/service query or `ip-address` and want internet-connected devices matching it — returns webcams, routers, IoT and
 - **`thepiratebay`** (medium) — Use when you have a torrent uploader handle (or a file of interest) and want to attribute it — returns username, social-profile and associat
 - **`thereisabotforthat-com`** (low) — Use when you want to find an existing chatbot for a task or platform — a searchable catalog of thousands of bots across Telegram, Slack, Dis
 - **`thingful-net`** (low) — OSINT tool: Thingful.net.

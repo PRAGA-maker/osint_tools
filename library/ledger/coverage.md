@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7374 total · 5216 full · 2158 stub (70% enriched)
+**Tools:** 7370 total · 5225 full · 2145 stub (70% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3416 · medium: 1994 · high: 1964
+low: 3410 · medium: 1996 · high: 1964
 
 ## Tools by trust
-community: 3489 · unverified: 2121 · trusted: 1755 · untrustworthy: 6 · personal: 3
+community: 3492 · unverified: 2111 · trusted: 1758 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 96/441
+- `ai-analysis-automation` — 98/441
 - `archives-cache` — 92/120
 - `communities-forums` — 240/286
 - `dark-web` — 47/108
 - `dating-classifieds` — 79/90
-- `documents-metadata` — 97/294
-- `domains-ip-infrastructure` — 326/670
+- `documents-metadata` — 98/294
+- `domains-ip-infrastructure` — 327/669
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 60/102
@@ -28,23 +28,23 @@ community: 3489 · unverified: 2121 · trusted: 1755 · untrustworthy: 6 · pers
 - `image-video-face` — 444/451
 - `maps-geospatial-data` — 86/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 104/525
+- `opsec-investigator-tooling` — 105/523
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 885/1003
-- `search-engines` — 521/765
-- `social-networks` — 737/783
+- `public-records` — 886/1003
+- `search-engines` — 523/765
+- `social-networks` — 737/782
 - `training-ctf` — 6/12
 - `translation-language` — 31/99
-- `transportation` — 138/205
+- `transportation` — 139/205
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 951 leaves
-- `library/tools/social-networks` — 755 leaves
+- `library/tools/social-networks` — 754 leaves
 - `library/tools/search-engines` — 714 leaves
-- `library/tools/opsec-investigator-tooling` — 502 leaves
+- `library/tools/opsec-investigator-tooling` — 501 leaves
 - `library/tools/domains-ip-infrastructure` — 444 leaves
 - `library/tools/ai-analysis-automation` — 408 leaves
 - `library/tools/image-video-face` — 357 leaves

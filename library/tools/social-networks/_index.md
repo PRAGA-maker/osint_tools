@@ -443,7 +443,6 @@ kind: group-index
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
-- **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.

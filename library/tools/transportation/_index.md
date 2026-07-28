@@ -83,7 +83,7 @@ kind: group-index
 - **`free-license-plate-search-check-any-license-plate-free`** (medium) — Use when you have a US license plate and want to identify the vehicle — returns year/make/model, specs and VIN-linked history (NOT owner nam
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
 - **`freecarcheck-co-uk`** (medium) — Use when you have a UK `vehicle-plate` and want free vehicle history — returns make/model, MOT & tax status, DVLA history, stolen/plate-chan
-- **`freedar`** (low) — OSINT tool: Freedar.
+- **`freedar`** (low) — Use when you have an aircraft registration/callsign or an area of interest and want live ADS-B positions — returns aircraft location, altitu
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Use when you have a UK aircraft registration (`vehicle-plate`, a G- mark) and want its registered owner — returns owner `name` and `address`
 - **`gpsjam`** (low) — Use when you have a `geolocation` / region and want to know if it is experiencing GPS/GNSS jamming — returns a daily interference heatmap de
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
