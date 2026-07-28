@@ -417,7 +417,7 @@ kind: group-index
 - **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
 - **`tinder-dating-app-mobile-ios`** (low) — App for mobile devices for dating and relationship services
-- **`tineye-reverse-image-search-extension-chrome`** (low) — Add-on for Google Chrome that allows you to search for matching images
+- **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`tinywall-windows-firewall-enhancement`** (low) — Program that enhances security by offering extra firewall protection
 - **`tobloef-com`** (low) — text to mind map

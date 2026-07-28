@@ -24,7 +24,6 @@ kind: group-index
 - **`binary-translator`** (low) — Tool for translating from one language form to another
 - **`bing-microsoft-translator`** (low) — Machine translation service.
 - **`clipto-com`** (low) — OSINT tool: clipto.com.
-- **`cockney-rhyming-slang-converter`** (low) — Language-related tool for converting regular speech into Cockney ryhming slang (used in London)
 - **`collinsdictionary`** (low) — Tool for translating text and web content from one language to another
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
@@ -91,7 +90,7 @@ kind: group-index
 - **`translate-com`** (low) — OSINT tool: Translate.com.
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
-- **`vizard-ai`** (low) — OSINT tool: vizard.ai.
+- **`vizard-ai`** (low) — Use when you have a video/audio of a subject and want an AI transcript to search and quote what was said — a transcription tool, outputs tex
 - **`webopedia-com`** (low) — OSINT tool: webopedia.com.
 - **`yamii`** (low) — OSINT tool: Yamii.
 - **`yandex-translate`** (low) — Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation —

@@ -382,7 +382,7 @@ kind: group-index
 - **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
-- **`smart-ruler`** (low) — Simple #GoogleChrome extension (200 000 users) for those who like to explore the design of different sites
+- **`smart-ruler`** (low) — Use when you have an on-screen `image`/web element and want to measure pixel distances, angles, and dimensions — a measurement aid for image
 - **`snov-io-technology-checker`** (low) — Use when you have a `domain` and want its web technology stack, or a technology name and want other `domain`s using it — returns tech-stack 
 - **`snyk-io`** (low) — Website Vulnerabilities Scanner
 - **`soc-multi-tool`** (low) — Use when you have a `domain`, `ip-address`, hash or `mac-address` and want fast reputation/OSINT lookups from a right-click menu — returns V
@@ -411,7 +411,7 @@ kind: group-index
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
 - **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.
-- **`tinyscan`** (low) — OSINT tool: TinyScan.
+- **`tinyscan`** (low) — Use when you have a `domain`/URL and want a safe remote scan — screenshot, resolved IP/geolocation, tech stack, DNS/SSL/headers — without vi
 - **`tormap`** (low) — Worldwide online map of Tor Nodes
 - **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
@@ -466,7 +466,7 @@ kind: group-index
 - **`whois-arin-online`** (low) — Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the regist
 - **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco
 - **`whois-freaks`** (medium) — Use when you have a person `name`, company, or email and want every domain registered with those details — returns matching `domain`s via re
-- **`whois-history`** (low) — OSINT tool: Whois History.
+- **`whois-history`** (medium) — Use when you have a `domain` and want its historical WHOIS records to recover a registrant name/email/address hidden by today's privacy reda
 - **`whois-lookup-service`** (medium) — Use when you have a `domain` and want its public registration record — returns registrant/registrar details, dates, and nameservers (or a pr
 - **`whois-request`** (medium) — Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and name
 - **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi

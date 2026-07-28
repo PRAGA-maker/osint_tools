@@ -185,7 +185,7 @@ kind: group-index
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
 - **`pages2images`** (low) — Website screenshot tool
-- **`paste-search`** (low) — OSINT tool: Paste Search.
+- **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
 - **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`pdfmyurl`** (low) — Saves webpages as a PDF

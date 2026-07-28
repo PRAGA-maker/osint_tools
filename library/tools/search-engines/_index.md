@@ -205,7 +205,6 @@ kind: group-index
 - **`excite-search-engine`** (medium) — Use when you want a second-opinion web search plus classic White/Yellow Pages links from one legacy portal — returns aggregated web/news res
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
 - **`fact-checking`** (low) — Use when you need to verify a claim or find a regional fact-checker — the Duke Reporters' Lab global database/map of fact-checking organisat
-- **`fact-monster`** (low) — Kid friendly search engine.
 - **`faganfinder`** (low) — Use when you need the right search engine/tool for a task and don't know it exists — a curated portal of specialist search tools by category
 - **`falla`** (medium) — Use when you want to run one query across 15+ search engines from the command line — a Python CLI scraper; feed a `name`/`username`/`domain`
 - **`familypedia`** (medium) — Use when you have a `name` (especially with an ancestor/surname angle) and want crowdsourced genealogy — family trees, relatives, dates — re

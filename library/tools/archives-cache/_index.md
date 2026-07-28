@@ -52,7 +52,7 @@ kind: group-index
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or
 - **`followthatpage`** (low) — Use when you have a `domain`/URL you want watched and want email alerts on changes — returns a periodic diff of what text was added or remov
 - **`gau`** (medium) — Use when you have a `domain` and want every URL ever seen for it across web archives — returns a bulk list of historical URLs (`document-id`
-- **`gh-archive`** (low) — Public dataset of GitHub activity events.
+- **`gh-archive`** (medium) — Use when you have a GitHub `username` (or repo/org) and want their full historical public-event activity at scale — returns social-profile a
 - **`grab-site`** (medium) — Use when you have a `domain` or `social-profile` URL and want to capture a full, court-quality WARC archive of it before it changes or disap
 - **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
 - **`index-commoncrawl-org`** (medium) — Use when you have a `domain` and want every URL Common Crawl captured for it — returns archived URLs (`document-id`s) with pointers to the s
@@ -74,7 +74,7 @@ kind: group-index
 - **`replayweb`** (medium) — Use when you have a WARC/WACZ web-archive file and want to browse it as a live site — returns an interactive replay of the captured pages, i
 - **`ricks-apps-com`** (medium) — Use when you have a `domain`/URL and want a full local, offline copy of the site before it changes or disappears — returns a browsable mirro
 - **`rootssearch`** (medium) — Use when you have a name plus dates/places and want to search many genealogy sites at once — returns social-profile-style record hits and as
-- **`rss-feed-reader`** (low) — OSINT tool: RSS Feed Reader.
+- **`rss-feed-reader`** (low) — Use when you have a `domain`/site tied to a subject and want to monitor its new posts passively via RSS — a monitoring aid, surfaces social-
 - **`rss-micro`** (low) — OSINT tool: RSS Micro.
 - **`rss-search-engine`** (low) — OSINT tool: RSS Search Engine.
 - **`rss-search-hub`** (low) — OSINT tool: RSS Search Hub.

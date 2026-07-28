@@ -21,7 +21,7 @@ kind: group-index
 - **`metadefender`** (low) — Use when you have a file or hash (`document-id`) or a `domain`/`ip-address` and want multi-engine malware/reputation analysis — returns verd
 - **`opswat-meta-defender`** (low) — Multi-engine malware detection with advanced threat analysis
 - **`pikker-ee-cuckoo-sandbox`** (low) — Free automated dynamic malware analysis with detailed behavioral reports
-- **`uncover-it`** (low) — Fast static malware configuration extraction
+- **`uncover-it`** (low) — Use when you have a malware sample/executable and want fast static config extraction (C2 servers, keys, indicators) without detonating it — 
 - **`valkyrie-file-analysis`** (low) — Advanced malware analysis with human expert review option
 - **`virustotal`** (low) — Malware analysis, URL reputation, file hash lookups
 
