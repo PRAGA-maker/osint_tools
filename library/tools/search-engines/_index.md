@@ -589,7 +589,7 @@ kind: group-index
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
 - **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
-- **`sogou-china`** (low) — OSINT tool: SoGou (China).
+- **`sogou-china`** (low) — Use when you have a `name`, `username`, or Chinese-language term and want results a Western engine misses — Sogou also searches WeChat publi
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
@@ -634,7 +634,7 @@ kind: group-index
 - **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and ass
-- **`twingly`** (low) — OSINT tool: Twingly.
+- **`twingly`** (low) — Use when you have a `name`, `username`, or keyword and want broad blog/news/forum (and dark-web) monitoring across many languages — returns 
 - **`ubersuggest`** (low) — Use when you have a `domain` and want its SEO/traffic footprint — returns estimated traffic, top keywords, and backlink/competitor data for 
 - **`uk-law-society`** (medium) — Use when you have a `name` or firm and want to confirm a solicitor in England & Wales — returns the solicitor's firm, practice areas, and re
 - **`uk-patent-search`** (medium) — Use when you have a `name` or `employer-org` and want their UK patents — returns patent filings with inventors, applicants, addresses, and f

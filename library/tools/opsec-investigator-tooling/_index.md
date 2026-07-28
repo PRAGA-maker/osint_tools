@@ -290,7 +290,6 @@ kind: group-index
 - **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`one-time-mobile-by-osintstash`** (low) — OSINT tool: One-time Mobile by @OsintStash.
-- **`onionshare-file-sharing-tool`** (low) — Tool for file sharing utilizing Tor claiming to be secure and anonymous
 - **`online-link-scan`** (low) — Website that offers an online virus scanner that scans links for malware, trojans and viruses
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
 - **`opera`** (low) — OSINT tool: Opera.

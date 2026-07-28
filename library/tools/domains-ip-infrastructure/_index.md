@@ -89,7 +89,7 @@ kind: group-index
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
 - **`breachhq`** (low) — OSINT tool: BreachHQ.
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
-- **`broken-link-hijacker`** (low) — Crawls the website and searches for all the broken links (in "<a href" and "<img src").
+- **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
 - **`browserling`** (low) — OSINT tool: Browserling.
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
 - **`carbon14`** (low) — A simple Python tool that helps you determine when (approximately) some content was published. It find the Last-Modified header of linked im
@@ -486,7 +486,7 @@ kind: group-index
 - **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
 - **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
-- **`xurlfind3r`** (low) — Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine
+- **`xurlfind3r`** (low) — Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns
 - **`yougetsignal-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain
 - **`zscaler-global-threat-map-dashboard`** (low) — OSINT tool: Zscaler Global Threat Map Dashboard.
 

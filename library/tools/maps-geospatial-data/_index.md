@@ -89,7 +89,7 @@ kind: group-index
 - **`openguessr-com`** (medium) — Use when you want to train `geolocation`-from-street-view skills — a free GeoGuessr-style game that drills recognising a place from visual c
 - **`openseamap`** (low) — Use when you have a maritime `geolocation` and want nautical context — sea marks, harbours, shipping lanes, depths — returns a nautical char
 - **`openstreetmap-nominatim`** (medium) — Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocati
-- **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
+- **`orbtrack`** (low) — Use when you have a `geolocation` and a time and want to know which satellites were overhead — returns satellite pass predictions to reason 
 - **`overturemaps-org`** (medium) — Use when you have an `address` or place and want open, structured map data — returns `geolocation` for buildings, places/POIs, addresses, an
 - **`peakvisor-com`** (medium) — Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summ
 - **`peakvisor`** (medium) — Use when you have a photo showing mountains/terrain and a rough `geolocation` and want to identify peaks and confirm the vantage point — ret

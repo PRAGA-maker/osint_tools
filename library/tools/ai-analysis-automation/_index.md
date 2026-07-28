@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation
 
 ## Sub-groups
-- **`barcodes-qr/`** — 1 skill(s) below.
+- **`barcodes-qr/`** — 0 skill(s) below.
 - **`javascript/`** — 4 skill(s) below.
 - **`osint-automation/`** — 11 skill(s) below.
 - **`php/`** — 1 skill(s) below.
@@ -51,7 +51,7 @@ kind: group-index
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
 - **`awk-js`** (low) — AWK (script language) is a powerful command line tool for extracting data from texts and auto generating texts. For those who don't use CLI 
-- **`barcode-reader`** (low) — OSINT tool: Barcode Reader.
+- **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
 - **`beaker`** (low) — OSINT tool: Beaker.
 - **`befunky`** (low) — OSINT tool: Befunky.

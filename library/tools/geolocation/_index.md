@@ -238,7 +238,7 @@ kind: group-index
 - **`radio-locator`** (low) — OSINT tool: Radio-Locator.
 - **`radio-sherlock`** (low) — OSINT tool: Radio-Sherlock.
 - **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
-- **`radioid-database`** (low) — OSINT tool: RadioID Database.
+- **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa
 - **`radioreference`** (low) — OSINT tool: RadioReference.
 - **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w

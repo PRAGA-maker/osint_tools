@@ -85,7 +85,7 @@ kind: group-index
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of technology
 - **`engage121`** (low) — Website offering social media content and publishing services
-- **`etherpad-collaborative-editing`** (low) — Program that offers collaborative online editing services for editing text and documents in real time
+- **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Website related to event management and ticket sales
 - **`eventbrite-united-states`** (low) — Website related to event management and ticket sales
 - **`evite`** (low) — Website related to event invitation and party planning
@@ -122,7 +122,7 @@ kind: group-index
 - **`git-hound`** (low) — OSINT tool: git-hound.
 - **`gitdorker`** (low) — OSINT tool: GitDorker.
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
-- **`github-search-engine`** (low) — OSINT tool: GitHub Search Engine.
+- **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (low) — Open source code hosting community for users to collaborate and create projects.
 - **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers

@@ -1479,41 +1479,48 @@
   },
   {
     "id": "barcode-reader",
-    "name": "Barcode Reader",
-    "description": "OSINT tool: Barcode Reader.",
+    "name": "Barcode Reader (Inlite)",
+    "description": "Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, including `document-id` fields from US/Canadian licenses.",
     "url": "http://online-barcode-reader.inliteresearch.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding 1D/2D barcodes and QR codes from an uploaded image, including PDF417 driver's-license data.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online demo of Inlite's Barcode Reader SDK; no account for the web app.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to Inlite's server to decode it. A driver's-license PDF417 contains highly sensitive PII — think carefully before uploading a real ID to a third party; for sensitive material use an offline decoder (e.g. zxing) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Public demo from Inlite Research, an established barcode-SDK vendor; decoding is deterministic and reliable, but it's a third-party upload service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
+    "relatedTools": [],
+    "aliases": [
+      "Inlite barcode reader",
+      "online QR code reader"
     ],
+    "tags": [],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "clearimage-barcode-reader"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/barcode-reader.md"
   },
   {
@@ -2576,48 +2583,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/circos.md"
-  },
-  {
-    "id": "clearimage-barcode-reader",
-    "name": "ClearImage Barcode Reader",
-    "description": "Barcode and QR code decoding from uploaded files",
-    "url": "https://online-barcode-reader.inliteresearch.com/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation",
-      "barcodes-qr"
-    ],
-    "bestFor": "Barcode and QR code decoding from uploaded files",
-    "input": "Image files and PDFs containing barcode or QR symbols",
-    "output": "Decoded barcode and QR payload values",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Uploaded files are processed by a third-party web service and may be logged.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "barcode-reader"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/barcodes-qr/clearimage-barcode-reader.md"
   },
   {
     "id": "code-repository-google-cse",
@@ -51052,42 +51017,45 @@
   },
   {
     "id": "etherpad-collaborative-editing",
-    "name": "Etherpad Collaborative Editing",
-    "description": "Program that offers collaborative online editing services for editing text and documents in real time",
-    "url": "http://etherpad.org",
+    "name": "Etherpad",
+    "description": "Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor; a workflow tool, not a data source.",
+    "url": "https://etherpad.org",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Real-time multi-investigator note-taking on a self-hosted pad, keeping case notes off third-party clouds.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; self-host it, or use a public instance (public pads are NOT private).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public Etherpad instances store your notes on someone else's server and pads are often reachable by URL guessing — never put case-sensitive material on a public pad. Self-host (or use a trusted private instance) for any real investigation notes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Mature open-source project; trustworthy as software, but the privacy of your notes depends entirely on which instance you use and how it's configured.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "etherpad.org",
+      "Etherpad Lite"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "Useful Websites, Tools & Documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/etherpad-collaborative-editing.md"
   },
   {
@@ -52862,36 +52830,53 @@
   },
   {
     "id": "github-search-engine",
-    "name": "GitHub Search Engine",
-    "description": "OSINT tool: GitHub Search Engine.",
+    "name": "GitHub Search Engine (Google CSE)",
+    "description": "Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns code/repo hits and `social-profile`/`domain` leads.",
     "url": "https://cse.google.com/cse?cx=1b053c8ec746d6611",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching GitHub content through Google's index to surface leaked secrets, emails, and mentions.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google (which indexes GitHub), not to the repo owners, so this is passive and unattributed to the target. Because it uses Google's cache, it can even surface content since deleted from GitHub — good for you, but handle any exposed secrets responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google CSE scoped to GitHub; results are Google's index, so quality is high but coverage lags GitHub's native, real-time search.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [],
+    "aliases": [
+      "GitHub Google CSE",
+      "github custom search"
+    ],
+    "tags": [
+      "document-and-slides-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/github-search-engine.md"
   },
   {
@@ -63648,43 +63633,49 @@
   },
   {
     "id": "broken-link-hijacker",
-    "name": "Broken Link Hijacker",
-    "description": "Crawls the website and searches for all the broken links (in \"<a href\" and \"<img src\").",
+    "name": "Broken Link Hijacker (BLH)",
+    "description": "Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may be hijackable or reveal defunct infrastructure.",
     "url": "https://github.com/MayankPandey01/BrokenLinkHijacker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Crawling a site to enumerate broken outbound links and flag potentially claimable expired domains.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI.",
+    "opsec": "active",
+    "opsecNote": "The crawler actively fetches pages on the target site to test its links, so the target's server sees your requests. It is a light crawl, but not passive — run from a sock-puppet host and respect scope/authorization; only crawl sites you're permitted to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small community bug-bounty tool (~100 stars, limited maintenance); functional but unaudited — verify its findings manually.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BLH",
+      "BrokenLinkHijacker"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Broken Links Checkers"
+      "Domain/IP/Links"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/broken-link-hijacker.md"
   },
   {
@@ -91597,43 +91588,49 @@
   },
   {
     "id": "xurlfind3r",
-    "name": "XURLFIND3R",
-    "description": "Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine",
+    "name": "xurlfind3r",
+    "description": "Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns a deduplicated list of known URLs.",
     "url": "https://github.com/hueristiq/xurlfind3r",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Passively harvesting a domain's historically known URLs from multiple archive/threat-intel sources at once.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Go CLI. Some sources (Intelligence X, URLScan, GitHub) return more when you add their free API keys.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — it pulls from third-party archives (Wayback, Common Crawl, AlienVault OTX, URLScan, IntelX) and never sends traffic to the target domain, so the subject sees nothing. Add API keys via config for fuller results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Actively maintained open-source tool by hueristiq (700+ stars); results are only as complete/fresh as the underlying archives.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "xurlfind3r",
+      "hueristiq xurlfind3r"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Domain/IP/Links"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/xurlfind3r.md"
   },
   {
@@ -122863,35 +122860,50 @@
   {
     "id": "radioid-database",
     "name": "RadioID Database",
-    "description": "OSINT tool: RadioID Database.",
-    "url": "https://database.radioid.net/database/search#!",
+    "description": "Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coarse `geolocation` from radio registrations.",
+    "url": "https://radioid.net/database/search",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Resolving a DMR radio ID or amateur callsign to the registered operator's name and location.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database; no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query RadioID's own dataset, not the operator, so the lookup is passive and leaves no trace with the subject. The data is self-registered by amateur operators and derived from public licensing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run registry (radioid.net) tying DMR IDs to callsigns; callsign→name is backed by national licensing, but city/location is operator-supplied and can be stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [],
+    "aliases": [
+      "radioid.net",
+      "DMR ID database"
+    ],
+    "tags": [
+      "geolocation"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/radioid-database.md"
   },
   {
@@ -155513,43 +155525,48 @@
   {
     "id": "orbtrack",
     "name": "OrbTrack",
-    "description": "Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for 5 days ahead, + International Space Station video feed.",
+    "description": "Use when you have a `geolocation` and a time and want to know which satellites were overhead — returns satellite pass predictions to reason about possible imagery of a location/event.",
     "url": "https://www.orbtrack.org",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Predicting which satellites pass over a given location and when, up to five days ahead.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; uses public orbital data (TLEs) from CelesTrak.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you compute passes from public orbital elements; nothing about your query reaches any third party of investigative interest. No login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Hobbyist/educational tracker built on standard CelesTrak TLE data and SGP4 propagation; predictions are physics-based and reliable within TLE accuracy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "satellite-imagery"
+    "relatedTools": [],
+    "aliases": [
+      "orbtrack.org",
+      "OrbTrack satellite tracker"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "maps-and-geospatial"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/orbtrack.md"
   },
   {
@@ -179479,46 +179496,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/one-time-mobile-by-osintstash.md"
-  },
-  {
-    "id": "onionshare-file-sharing-tool",
-    "name": "OnionShare File-Sharing Tool",
-    "description": "Tool for file sharing utilizing Tor claiming to be secure and anonymous",
-    "url": "https://onionshare.org",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/onionshare-file-sharing-tool.md"
   },
   {
     "id": "online-link-scan",
@@ -292318,43 +292295,55 @@
   },
   {
     "id": "sogou-china",
-    "name": "SoGou (China)",
-    "description": "OSINT tool: SoGou (China).",
-    "url": "http://www.sogou.com/",
+    "name": "Sogou (China)",
+    "description": "Use when you have a `name`, `username`, or Chinese-language term and want results a Western engine misses — Sogou also searches WeChat public accounts and Zhihu; returns `social-profile`/`domain` leads.",
+    "url": "https://www.sogou.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Chinese-language web search plus unique indexes of WeChat public accounts and Zhihu Q&A.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; no account required for basic queries.",
+    "opsec": "passive",
+    "opsecNote": "Sogou is a Chinese search engine (owned by Tencent) — assume queries are logged and subject to PRC data practices. Use a sock-puppet browser and a non-attributable IP; do not run sensitive queries from an identifiable connection.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major, legitimate Chinese search engine; results are real but ranked under Chinese content rules and may be censored/filtered.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "sogou",
-      "sogou-wechat-search",
-      "sougou-com"
+      "sogou-wechat-search"
     ],
+    "aliases": [
+      "搜狗",
+      "sogou.com"
+    ],
+    "tags": [
+      "Search engines",
+      "Universal search tools"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sogou-china.md"
   },
   {
@@ -294613,37 +294602,53 @@
   {
     "id": "twingly",
     "name": "Twingly",
-    "description": "OSINT tool: Twingly.",
-    "url": "http://www.twingly.com",
+    "description": "Use when you have a `name`, `username`, or keyword and want broad blog/news/forum (and dark-web) monitoring across many languages — returns matching posts and `social-profile`/`domain` leads.",
+    "url": "https://www.twingly.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "API-driven monitoring of news, blogs, and forums worldwide for mentions of a subject or term.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — free API trial/keys with volume limits; sustained/commercial use is paid.",
+    "opsec": "passive",
+    "opsecNote": "You query Twingly's aggregated index, not the source sites, so monitoring is passive and the subject isn't alerted. API use requires registering for a key (tie it to a sock-puppet identity, not your real one).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established Swedish content-aggregation company; its index is broad and reputable, but coverage per source varies and its data is a firehose to filter, not a curated answer.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "twingly.com",
+      "Twingly Blog Search"
+    ],
     "tags": [
-      "blog-search"
+      "Search engines",
+      "Universal search tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/twingly.md"
   },
   {
