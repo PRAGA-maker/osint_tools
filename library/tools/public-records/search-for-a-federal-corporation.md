@@ -31,7 +31,17 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- canadian-business-research
+- canadian-copyrights-database
+- canadian-department-of-finance
+- canadian-importers-database
+- canadian-intellectual-property-office
+- canadian-trademarks-database
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- gov-data-canada
+- government-of-canada-open-data
 aliases:
 - Corporations Canada search
 - Federal Corporation Search

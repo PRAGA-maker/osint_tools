@@ -33,7 +33,7 @@ kind: group-index
 - **`arkhammirror`** (low) — OSINT tool: ArkhamMirror.
 - **`ashok`** (low) — Swiff knife for #osint
 - **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
-- **`aware-online-com`** (low) — OSINT tool: Aware-online.com.
+- **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — OSINT tool: awesome-ctf.
 - **`awesome-forensics`** (low) — OSINT tool: awesome-forensics.
@@ -183,7 +183,7 @@ kind: group-index
 - **`hotspot-shield`** (low) — OSINT tool: Hotspot Shield.
 - **`how-to-verify`** (low) — Visual fact checking mind maps for verification video, audio, source, text. Detailed workflows descriptions with tools, tips and tricks.
 - **`html-editor`** (low) — OSINT tool: HTML editor.
-- **`html-sanitizer-tool`** (low) — OSINT tool: HTML Sanitizer Tool.
+- **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
 - **`https-everywhere`** (low) — OSINT tool: HTTPs Everywhere.

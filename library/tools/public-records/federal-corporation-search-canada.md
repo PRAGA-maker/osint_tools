@@ -41,6 +41,7 @@ relatedTools:
 - completed-access-to-information-requests
 - gov-data-canada
 - government-of-canada-open-data
+- search-for-a-federal-corporation
 aliases:
 - Corporations Canada
 - Federal Corporation Search

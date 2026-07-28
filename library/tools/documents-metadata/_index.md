@@ -48,7 +48,7 @@ kind: group-index
 - **`bubbl-us-online-flow-chart-tool`** (low) — Tool for creating online flow charts using linked bubbles
 - **`bubbly`** (low) — A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their a
 - **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
-- **`catchvideo`** (low) — Website that offers services related to downloading and saving videos from a web page
+- **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
 - **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
@@ -107,7 +107,7 @@ kind: group-index
 - **`fide`** (low) — World chess player ratings website
 - **`fifa`** (low) — Football team rankings website
 - **`filesec-io`** (low) — Use when you have a suspicious file's extension (`document-id`/attachment) and want to know how attackers abuse that file type and which OSe
-- **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
+- **`find-pdf-doc`** (low) — Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `docum
 - **`fitbit`** (low) — Use when a subject has a Fitbit presence and you want lifestyle/activity signals — a mostly-private fitness platform whose limited public pr
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services

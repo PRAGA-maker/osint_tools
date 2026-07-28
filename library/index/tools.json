@@ -708,37 +708,53 @@
   {
     "id": "aware-online-com",
     "name": "Aware-online.com",
-    "description": "OSINT tool: Aware-online.com.",
+    "description": "Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social URLs — returns `social-profile` and `domain` leads.",
     "url": "https://www.aware-online.com/en/osint-tools",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free browser-based query builders that assemble effective search and social-media URLs from a selector.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "All the custom OSINT tools on the site are free; the paid product is their separate training academy.",
+    "opsec": "passive",
+    "opsecNote": "The tools build search URLs client-side. Aware-Online explicitly notes you can enter fake data, then edit the generated URL, so nothing sensitive is stored on their site. You only touch the target platform when you actually open a generated link — do that from a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by Aware Online Academy, an established OSINT training provider in the Netherlands; the tools are curated URL builders rather than data sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Aware Online OSINT tools",
+      "aware-online osint"
+    ],
     "tags": [
       "other-resources"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/aware-online-com.md"
   },
   {
@@ -5052,7 +5068,14 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "domainrecon",
+      "githubrecon",
+      "metadata-viewer",
+      "pgpkeyanalyser",
+      "searchdorks",
+      "traceroutevisualizer"
+    ],
     "aliases": [
       "favicon hash generator",
       "mmh3 favicon"
@@ -6861,41 +6884,47 @@
   {
     "id": "html-sanitizer-tool",
     "name": "HTML Sanitizer Tool",
-    "description": "OSINT tool: HTML Sanitizer Tool.",
+    "description": "Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it — an ancillary display-safety utility, not a data source.",
     "url": "https://defuse.ca/html-sanitize.htm",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Escaping HTML special characters so untrusted scraped markup renders as inert text.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web utility on defuse.ca; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Whatever you paste is sent to defuse.ca to be processed. Do not paste sensitive case data into a third-party site — for anything private, use the equivalent local one-liner (the page publishes its PHP/JS logic) instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of Taylor Hornby's long-standing defuse.ca toolbox; simple and reputable, but this is a developer utility, not an OSINT data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "big-number-calculator",
       "defuse",
       "text-and-file-hash-calculator",
       "x86-and-x64-intel-assembler"
     ],
+    "aliases": [
+      "HTML escape tool",
+      "defuse.ca html-sanitize"
+    ],
+    "tags": [],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/html-sanitizer-tool.md"
   },
   {
@@ -27207,38 +27236,50 @@
   },
   {
     "id": "doesthedogdie",
-    "name": "Doesthedogdie",
-    "description": "This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses, animal abuse, domestic violence etc).",
+    "name": "Does the Dog Die?",
+    "description": "Use when you have a movie/TV/game/book title and want crowdsourced content-warning data — a niche community DB with user accounts, not a person-search tool.",
     "url": "https://www.doesthedogdie.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up crowd-voted content/trigger warnings for a specific piece of media by title.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read; optional paid membership removes ads and adds features.",
+    "opsec": "passive",
+    "opsecNote": "Browsing titles is passive and needs no login. Registering (to reach a user's profile/contributions) is only worthwhile with a sock-puppet account; don't use a real identity to poke at a subject's activity here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowdsourced content-warning wiki; entries are community-voted, so accuracy varies and it is peripheral to identity investigations.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "doesthedogdie.com",
+      "Does the Dog Die"
+    ],
     "tags": [
       "Movies"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/doesthedogdie.md"
   },
   {
@@ -49314,24 +49355,30 @@
   {
     "id": "catchvideo",
     "name": "Catchvideo",
-    "description": "Website that offers services related to downloading and saving videos from a web page",
+    "description": "Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `metadata-exif` and frame analysis.",
     "url": "http://catchvideo.net/en",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Grabbing a downloadable copy of an online video before it is deleted, for preservation and analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web service; optional browser extension/desktop helper, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste a URL and Catchvideo's servers fetch the video, so the source platform sees Catchvideo's IP, not yours — good for passive capture. But you are trusting a third-party site with the URL you're investigating; avoid it for highly sensitive targets and consider yt-dlp locally instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free third-party downloader; functional but ad-supported and unaudited, and it blocks copyrighted (e.g. Vevo) content.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -49340,15 +49387,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "catchvideo.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "useful-websites-tools-documents"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/catchvideo.md"
   },
   {
@@ -51988,37 +52038,50 @@
   {
     "id": "find-pdf-doc",
     "name": "Find-pdf-doc",
-    "description": "OSINT tool: Find-pdf-doc.",
+    "description": "Use when you have a `name` or `employer-org` and want to surface documents (PDF/DOC/PPT/XLS) mentioning them across the web — returns `document-id` leads and file URLs.",
     "url": "http://www.findpdfdoc.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword search restricted to document filetypes (PDF, DOC, PPT, XLS, TXT) rather than web pages.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free document search engine; no account.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive, but the results link to third-party file hosts of unknown reputation. Do not open or download results on your real machine — use a sandbox/sock-puppet, since document downloads can carry tracking or malware.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A basic third-party filetype search engine that indexes documents it does not host; result quality and hosted-file safety are unvetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "findpdfdoc.com",
+      "PDF DOC search engine"
+    ],
     "tags": [
       "document-and-slides-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/find-pdf-doc.md"
   },
   {
@@ -85422,42 +85485,50 @@
   {
     "id": "subdomainsbrute",
     "name": "SubDomainsBrute",
-    "description": "Very(!) fast and simple tool for subdomain bruteforce. It find 53 subdomains, scanned 31160 variations in 31 seconds.",
+    "description": "Use when you have a `domain` and want to enumerate its live subdomains fast via dictionary brute-force — returns discovered subdomain `domain`s and their `ip-address`es.",
     "url": "https://github.com/lijiejie/subDomainsBrute",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, high-concurrency subdomain brute-forcing to map an organization's web footprint.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI (MIT); no account or key.",
+    "opsec": "active",
+    "opsecNote": "Brute-forcing sends a large volume of DNS queries to public resolvers to resolve candidate names — it does not hit the target's own servers directly, but the query burst is noisy and can be rate-limited or logged by the resolvers you use. Run from a sock-puppet host and throttle if you need to stay quiet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular community pentest tool by lijiejie (thousands of GitHub stars); widely used but unaudited, so validate discovered hosts before acting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "subDomainsBrute",
+      "lijiejie subdomain brute"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Subdomains scan/brute"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomainsbrute.md"
   },
   {
@@ -87878,41 +87949,51 @@
   },
   {
     "id": "verisign",
-    "name": "Verisign",
-    "description": "OSINT tool: Verisign.",
+    "name": "Verisign DNSSEC Debugger",
+    "description": "Use when you have a `domain` and want to validate its DNSSEC chain of trust and spot signing/delegation errors — returns a diagnosed `domain` DNSSEC status.",
     "url": "http://dnssec-debugger.verisignlabs.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a domain's DNSSEC is correctly signed and where the chain of trust breaks.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public tool from Verisign Labs; no account or key.",
+    "opsec": "passive",
+    "opsecNote": "Verisign's servers perform the DNS/DNSSEC lookups against the authoritative nameservers — you never contact the target infrastructure directly, so this is passive from your side. Only the domain name is sent to Verisign.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Verisign Labs, the authoritative registry for .com/.net and a core DNS operator; results are authoritative for DNSSEC validation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "dnssec-analyzer"
+    ],
+    "aliases": [
+      "Verisign DNSSEC Analyzer",
+      "dnssec-debugger.verisignlabs.com"
+    ],
     "tags": [
       "domain-and-ip-research"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "dnssec-analyzer"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/verisign.md"
   },
   {
@@ -89736,41 +89817,53 @@
   {
     "id": "whatismyipaddress",
     "name": "WhatIsMyIPAddress",
-    "description": "OSINT tool: WhatIsMyIPAddress.",
+    "description": "Use when you have an `ip-address` and want quick geolocation, ISP/hostname, and blacklist context — returns `geolocation`, `domain`, and network attribution.",
     "url": "http://whatismyipaddress.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast lookup of an IP's approximate location, ISP/hostname, and whether it's a known proxy/blacklisted.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookups; the site upsells a VPN but the IP tools require no payment or account.",
+    "opsec": "passive",
+    "opsecNote": "You are querying a third-party database about an IP, not contacting the IP itself, so the target is not alerted. If you leave the input blank it reveals YOUR OWN public IP — always type the target IP in explicitly when investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running commercial IP-info site; geolocation is database-derived and approximate (city/ISP level, not a street address).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "whatismyipaddress-blacklist-checker",
       "whatismyipaddress-com"
     ],
+    "aliases": [
+      "whatismyipaddress.com",
+      "what is my ip address"
+    ],
+    "tags": [
+      "domain-and-ip-research"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whatismyipaddress.md"
   },
   {
@@ -90087,7 +90180,9 @@
     "relatedTools": [
       "arin",
       "account-arin-net",
-      "whois-arin-online"
+      "whois-arin-online",
+      "arin-net",
+      "search-arin-net"
     ],
     "aliases": [
       "ARIN Whois",
@@ -130304,38 +130399,49 @@
   {
     "id": "cleanup-pictures",
     "name": "Cleanup.Pictures",
-    "description": "Web tool for quickly removing objects from an image.",
+    "description": "Use when you have an `image` and want to remove distracting objects/watermarks/text so a cleaner crop reverse-searches better — returns a retouched `image`.",
     "url": "https://cleanup.pictures/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "AI inpainting to erase overlays, watermarks, or clutter from an image before reverse-image search.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier is unlimited but caps output at 720p; a Pro plan (~$3/mo) unlocks full resolution.",
+    "opsec": "passive",
+    "opsecNote": "You upload the target's image to a third-party (ClipDrop/Stability) server, which is a privacy exposure — the image leaves your control. Use only on images already public, strip EXIF first, and prefer a sock-puppet account for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Made by ClipDrop (Stability AI); a reputable product, but it is an image editor — anything it removes/reconstructs is AI-invented, not evidence.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "cleanup.pictures",
+      "ClipDrop Cleanup"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "misc"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/cleanup-pictures.md"
   },
   {
@@ -215773,7 +215879,8 @@
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "Canada.ca business research",
@@ -215844,7 +215951,8 @@
       "completed-access-to-information-requests",
       "federal-corporation-search-canada",
       "gov-data-canada",
-      "government-of-canada-open-data"
+      "government-of-canada-open-data",
+      "search-for-a-federal-corporation"
     ],
     "_file": "library/tools/public-records/canadian-copyrights-database.md"
   },
@@ -215891,7 +215999,8 @@
       "canadian-trademarks-database",
       "completed-access-to-information-requests",
       "government-of-canada-open-data",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "CID",
@@ -216061,7 +216170,8 @@
       "government-of-canada-open-data",
       "canadian-trademarks-database",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "CIPO",
@@ -216290,7 +216400,8 @@
       "gov-data-canada",
       "government-of-canada-open-data",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "CIPO Trademarks",
@@ -218758,7 +218869,8 @@
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "ATI Summaries",
@@ -225465,7 +225577,8 @@
       "canadian-importers-database",
       "completed-access-to-information-requests",
       "gov-data-canada",
-      "government-of-canada-open-data"
+      "government-of-canada-open-data",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "Corporations Canada",
@@ -229607,7 +229720,8 @@
       "canadian-department-of-finance",
       "canadian-importers-database",
       "canadian-intellectual-property-office",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "open.canada.ca",
@@ -230922,7 +231036,8 @@
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "_file": "library/tools/public-records/government-of-canada-open-data.md"
   },
@@ -252543,7 +252658,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "canadian-business-research",
+      "canadian-copyrights-database",
+      "canadian-department-of-finance",
+      "canadian-importers-database",
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database",
+      "completed-access-to-information-requests",
+      "federal-corporation-search-canada",
+      "gov-data-canada",
+      "government-of-canada-open-data"
+    ],
     "aliases": [
       "Corporations Canada search",
       "Federal Corporation Search"
@@ -267820,7 +267946,8 @@
       "canadian-intellectual-property-office",
       "canadian-trademarks-database",
       "canadian-importers-database",
-      "canadian-copyrights-database"
+      "canadian-copyrights-database",
+      "search-for-a-federal-corporation"
     ],
     "aliases": [
       "Department of Finance Canada",
@@ -292588,38 +292715,50 @@
   {
     "id": "startpage-parser",
     "name": "Startpage Parser",
-    "description": "Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python tool allows to scrape big amounts of results without using proxies.",
+    "description": "Use when you have a `name` or `username` and want to bulk-scrape web search results without tripping Google's rate limits — returns candidate `domain` and `social-profile` links.",
     "url": "https://github.com/knassar702/startpage-parser",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Programmatically harvesting large volumes of search-result links for a query without proxies or CAPTCHAs.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (pip-installable) Python library; no API key or account.",
+    "opsec": "passive",
+    "opsecNote": "Queries go to Startpage.com, which proxies Google and does not require login or reveal your identity to the sites in the results. You are not touching the target directly — only reading indexed pages. Run from a sock-puppet IP if you are scraping at volume, since Startpage may still throttle a single address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community project by a single GitHub author (knassar702); useful but unaudited, so verify links it returns before acting on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "startpage scraper"
+    ],
     "tags": [
       "Search engines",
       "Universal search tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/startpage-parser.md"
   },
   {

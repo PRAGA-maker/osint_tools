@@ -596,7 +596,7 @@ kind: group-index
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — OSINT tool: Springer.
 - **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
-- **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
+- **`startpage-parser`** (low) — Use when you have a `name` or `username` and want to bulk-scrape web search results without tripping Google's rate limits — returns candidat
 - **`startpagina-search-netherlands`** (low) — Use when you have a `name` or keyword tied to the Netherlands and want Dutch-focused web results and directory links — returns `social-profi
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo

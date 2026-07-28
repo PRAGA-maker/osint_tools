@@ -29,7 +29,13 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- domainrecon
+- githubrecon
+- metadata-viewer
+- pgpkeyanalyser
+- searchdorks
+- traceroutevisualizer
 aliases:
 - favicon hash generator
 - mmh3 favicon

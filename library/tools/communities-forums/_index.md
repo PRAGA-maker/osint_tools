@@ -72,7 +72,7 @@ kind: group-index
 - **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
 - **`disboards`** (medium) — Use when you have a `username` or `name` you suspect posts on this Disney-fan forum and want their post history — returns `social-profile`, 
 - **`disqus`** (medium) — Use when you have a Disqus username and want that person's cross-site public comment history — returns social-profile, associate and text le
-- **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses
+- **`doesthedogdie`** (low) — Use when you have a movie/TV/game/book title and want crowdsourced content-warning data — a niche community DB with user accounts, not a per
 - **`dpaste`** (medium) — Use when you have a `username`, `email`, `domain` or leak keyword and want to check a public pastebin for dumped credentials, contact lists 
 - **`ehow`** (low) — OSINT tool: eHow.
 - **`eumom-ie`** (medium) — Use when you have a `username` or `name` and want to trace an Irish parent's pregnancy/parenting forum posts — returns `social-profile` post

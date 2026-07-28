@@ -38,6 +38,7 @@ relatedTools:
 - completed-access-to-information-requests
 - government-of-canada-open-data
 - canadian-copyrights-database
+- search-for-a-federal-corporation
 aliases:
 - CID
 - Canadian Importers Database

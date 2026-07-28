@@ -399,7 +399,7 @@ kind: group-index
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
 - **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.
 - **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
-- **`subdomainsbrute`** (low) — Very(!) fast and simple tool for subdomain bruteforce. It find 53 subdomains, scanned 31160 variations in 31 seconds.
+- **`subdomainsbrute`** (low) — Use when you have a `domain` and want to enumerate its live subdomains fast via dictionary brute-force — returns discovered subdomain `domai
 - **`talend-api-tester-free-edition`** (low) — tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behav
 - **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al
 - **`technology-lookup`** (low) — Use when you have a `domain` and want to know its web tech stack — returns detected CMS, frameworks, analytics IDs, servers and libraries th
@@ -432,7 +432,7 @@ kind: group-index
 - **`user-agent-parser`** (low) — Use when you have a User-Agent string (from logs, headers or a tool config) and want it decoded — returns the device, OS and browser it desc
 - **`validin`** (low) — Use when you have a `domain` or `ip-address` and want deep historical DNS, subdomains, host-response and certificate data to pivot across an
 - **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
-- **`verisign`** (low) — OSINT tool: Verisign.
+- **`verisign`** (low) — Use when you have a `domain` and want to validate its DNSSEC chain of trust and spot signing/delegation errors — returns a diagnosed `domain
 - **`versionista-website-monitoring`** (low) — Use when you have a `domain`/URL and want to detect and archive changes to that web page over time — returns dated diffs of the monitored pa
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
@@ -462,7 +462,7 @@ kind: group-index
 - **`what-cms`** (low) — Use when you have a `domain`/URL and want to identify its CMS and web tech stack — returns the detected platform, frameworks and hosting.
 - **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
 - **`whatismyipaddress-blacklist-checker`** (low) — Use when you have an `ip-address` or `domain` and want to know whether it is listed on anti-spam blacklists (DNSBLs) — returns a reputation 
-- **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.
+- **`whatismyipaddress`** (low) — Use when you have an `ip-address` and want quick geolocation, ISP/hostname, and blacklist context — returns `geolocation`, `domain`, and net
 - **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
 - **`whois-arin-online`** (low) — Use when you have an `ip-address` (or ASN) in North America and want to know which organization owns that network block — returns the regist
 - **`whois-domain-search-tool`** (low) — Use when you have a `domain` (or a bare name) and want to check WHOIS/registration across many TLDs at once — returns registrant/domain reco

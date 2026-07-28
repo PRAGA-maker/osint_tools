@@ -43,6 +43,7 @@ relatedTools:
 - government-of-canada-open-data
 - canadian-importers-database
 - canadian-copyrights-database
+- search-for-a-federal-corporation
 aliases:
 - CIPO Trademarks
 - Canadian Trademarks Database

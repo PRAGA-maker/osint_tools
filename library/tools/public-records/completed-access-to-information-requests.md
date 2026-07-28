@@ -38,6 +38,7 @@ relatedTools:
 - canadian-trademarks-database
 - canadian-importers-database
 - canadian-copyrights-database
+- search-for-a-federal-corporation
 aliases:
 - ATI Summaries
 - open.canada.ca ATI search

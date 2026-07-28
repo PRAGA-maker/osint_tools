@@ -37,6 +37,8 @@ relatedTools:
 - arin
 - account-arin-net
 - whois-arin-online
+- arin-net
+- search-arin-net
 aliases:
 - ARIN Whois
 - ARIN Whois-RWS

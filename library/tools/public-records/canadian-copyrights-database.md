@@ -50,6 +50,7 @@ relatedTools:
 - federal-corporation-search-canada
 - gov-data-canada
 - government-of-canada-open-data
+- search-for-a-federal-corporation
 ---
 
 # Canadian Copyrights Database

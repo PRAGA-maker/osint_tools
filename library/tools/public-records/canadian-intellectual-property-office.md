@@ -41,6 +41,7 @@ relatedTools:
 - canadian-trademarks-database
 - canadian-importers-database
 - canadian-copyrights-database
+- search-for-a-federal-corporation
 aliases:
 - CIPO
 - Canadian Patents Database

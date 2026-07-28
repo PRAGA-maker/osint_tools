@@ -41,6 +41,7 @@ relatedTools:
 - canadian-importers-database
 - canadian-intellectual-property-office
 - canadian-copyrights-database
+- search-for-a-federal-corporation
 aliases:
 - open.canada.ca
 - Government of Canada Open Data
