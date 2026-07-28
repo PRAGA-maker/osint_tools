@@ -305,7 +305,7 @@ kind: group-index
 - **`password-safe`** (low) — Program that enhances security by offering password management services
 - **`paxful`** (low) — OSINT tool: Paxful.
 - **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
-- **`pexels`** (low) — OSINT tool: Pexels.
+- **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — OSINT tool: PIC/CIC Code Database.
 - **`pinterest-social-bookmarking-app-mobile-android`** (low) — App for mobile devices for social networking
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking

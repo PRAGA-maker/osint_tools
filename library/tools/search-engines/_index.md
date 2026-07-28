@@ -184,7 +184,7 @@ kind: group-index
 - **`dorkgpt`** (low) — Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced searc
 - **`dpa-international`** (low) — OSINT tool: DPA International.
 - **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
-- **`duckduckgo-bangs`** (low) — extension that add DuckDuckGo bang buttons to search results and search links in the context menu
+- **`duckduckgo-bangs`** (low) — Use when you want to jump a query straight into a specific site's search from one box — thousands of !shortcuts (e.g. !g, !w, !gh) that rout
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
 - **`ecosia-search-engine`** (medium) — Use when you want a privacy-respecting general web search from a different index than Google — returns web results (name/username/domain men
 - **`ecosia`** (low) — Use when you want an alternative general web search index (Bing-backed) to cross-check a `name`, `username` or `email` against Google — retu
@@ -217,7 +217,6 @@ kind: group-index
 - **`filephish`** (low) — OSINT tool: FilePhish.
 - **`filepursuit-com`** (low) — Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, an
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
-- **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti
 - **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (low) — Use when you have a UK bank `document-id` (sort code) or a bank name and want to resolve the other — returns the bank/branch behind a sort c

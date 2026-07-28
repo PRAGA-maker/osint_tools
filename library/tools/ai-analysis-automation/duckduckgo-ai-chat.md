@@ -31,6 +31,7 @@ deprecated: false
 relatedTools:
 - duckduckgo
 - duckduckgo-com
+- duckduckgo-bangs
 aliases: []
 tags: []
 source: arf-seed

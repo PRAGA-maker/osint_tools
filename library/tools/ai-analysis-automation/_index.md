@@ -72,7 +72,7 @@ kind: group-index
 - **`chart-js`** (low) — OSINT tool: Chart.js.
 - **`chartblocks`** (low) — OSINT tool: chartblocks.
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
-- **`cheat-sh`** (low) — Timesaving tool that allows cheat sheets to be loaded directly into the command line (or Sublime Text/IntelliJ IDEA) using the curl command 
+- **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
 - **`cipherstick`** (low) — OSINT tool: Cipherstick.
 - **`circos`** (low) — OSINT tool: Circos.
@@ -139,7 +139,7 @@ kind: group-index
 - **`find-osint-tool`** (low) — OSINT tool: Find osint tool.
 - **`flot`** (low) — OSINT tool: Flot.
 - **`fotor`** (low) — OSINT tool: Fotor.
-- **`foxyrecon`** (low) — 44 osint tools in one add-on for #Firefox
+- **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
 - **`frack`** (low) — OSINT tool: Frack.
 - **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
@@ -332,7 +332,6 @@ kind: group-index
 - **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — OSINT tool: security-list.
 - **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
-- **`semid-osint-framework`** (low) — Search user info in Tiktok, Playstation, Discord, Doxbin,Twitter, Github
 - **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — OSINT tool: SerpScan.

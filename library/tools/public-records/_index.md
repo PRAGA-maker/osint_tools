@@ -140,7 +140,7 @@ kind: group-index
 - **`canpages-search-canada`** (medium) — Use when you have a Canadian `name`, business, `phone`, or `address` and want directory details — returns business/residential listings, pho
 - **`capstat-nyc`** (medium) — Use when you have a `name` of a New York City police officer (or a lawsuit plaintiff) and want to find their command/precinct history and co
 - **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
-- **`catalogue-of-research-databases-occrp-id`** (low) — OSINT tool: Catalogue of Research Databases | OCCRP ID.
+- **`catalogue-of-research-databases-occrp-id`** (low) — Use when you have a `name` or `employer-org` and need to know WHICH public register or database to search in a given country — returns point
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
 - **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
 - **`center-for-international-earth-science-information-network`** (low) — OSINT tool: Center for International Earth Science Information Network.

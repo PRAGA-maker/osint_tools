@@ -79,7 +79,7 @@ kind: group-index
 - **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
 - **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe
 - **`find-food-support`** (low) — Use when you have a US `address`/area and want nearby free-food resources — returns food pantries, meal services and EBT-accepting stores by
-- **`fisgonia`** (low) — OSINT tool: Fisgonia.
+- **`fisgonia`** (low) — Use when you have a `geolocation` and want publicly-accessible IP cameras (and other public sensors) plotted on a map of that area — returns
 - **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea
 - **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.
 - **`flickr-common-map`** (medium) — Use when you have an old/undated `image` or a `geolocation` and want to browse geotagged Flickr Commons archive photos for that place to hel

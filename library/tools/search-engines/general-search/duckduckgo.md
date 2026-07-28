@@ -37,6 +37,7 @@ relatedTools:
 - bing
 - google
 - duckduckgo-com
+- duckduckgo-bangs
 aliases:
 - DDG
 - duckduckgo.com

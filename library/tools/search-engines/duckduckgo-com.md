@@ -43,6 +43,7 @@ enrichment: full
 relatedTools:
 - duckduckgo
 - duckduckgo-ai-chat
+- duckduckgo-bangs
 ---
 
 # duckduckgo.com
