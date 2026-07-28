@@ -101,7 +101,7 @@ kind: group-index
 - **`quick-geolocation-search`** (low) — A tool that brings several maps into one place for easy location search.
 - **`radar-interference-tracker-rit`** (low) — Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.
 - **`radio-garden`** (low) — Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language cont
-- **`rammb-slider`** (low) — Real-time weather satellites of the entire globe
+- **`rammb-slider`** (low) — Use when you have a `geolocation`/`address` and want recent, time-stepped satellite imagery of that spot for weather/scene verification — re
 - **`resource-watch`** (low) — Use when you have a `geolocation` and want environmental/human-wellbeing context layers (fires, floods, land cover, air quality, conflict) —
 - **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow
 - **`somerandomstuff1-wordpress-com`** (medium) — Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markin

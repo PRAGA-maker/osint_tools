@@ -46,7 +46,7 @@ kind: group-index
 - **`typosquatting/`** — 4 skill(s) below.
 - **`url-expanders/`** — 3 skill(s) below.
 - **`vulnerabilities/`** — 4 skill(s) below.
-- **`whois-records/`** — 14 skill(s) below.
+- **`whois-records/`** — 13 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
 
 ## Skills here
@@ -186,7 +186,7 @@ kind: group-index
 - **`gogetcrawl`** (low) — Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from W
 - **`google-bug-bounty-dorks-generator`** (low) — Use when you have a `domain` and want a ready-made battery of Google dorks — enter the target and get clickable searches for exposed files, 
 - **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
-- **`google-universal-dork-builder`** (low) — Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your
+- **`google-universal-dork-builder`** (low) — Use when you have a `domain`/target and want to quickly assemble advanced search-operator "dork" queries for Google/Bing/Yandex — returns cr
 - **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
 - **`graphystories`** (low) — OSINT tool: GraphyStories.
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
@@ -206,7 +206,7 @@ kind: group-index
 - **`hussh`** (low) — shell script for domain analyzing
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
 - **`hypestat`** (low) — Use when you have a `domain` and want a free at-a-glance stats sheet — returns estimated traffic, hosting/`ip-address`, tech, and analytics/
-- **`iana-root-zone-database`** (low) — OSINT tool: IANA — Root Zone Database.
+- **`iana-root-zone-database`** (low) — Use when you have a `domain`'s TLD and want the authoritative registry/sponsoring organization behind it — returns the TLD operator (`employ
 - **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
 - **`icann-lookup`** (low) — Use when you have a `domain` and want its authoritative registration data — returns the official RDAP/WHOIS record (registrar, dates, status

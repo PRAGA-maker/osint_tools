@@ -2,46 +2,46 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7362 total · 5241 full · 2121 stub (71% enriched)
+**Tools:** 7359 total · 5247 full · 2112 stub (71% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3402 · medium: 1996 · high: 1964
+low: 3399 · medium: 1996 · high: 1964
 
 ## Tools by trust
-community: 3497 · unverified: 2095 · trusted: 1761 · untrustworthy: 6 · personal: 3
+community: 3497 · unverified: 2090 · trusted: 1763 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 99/439
 - `archives-cache` — 92/120
 - `communities-forums` — 240/286
-- `dark-web` — 47/108
+- `dark-web` — 47/107
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 101/293
-- `domains-ip-infrastructure` — 331/668
+- `domains-ip-infrastructure` — 334/667
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 60/101
 - `geolocation` — 294/339
 - `image-video-face` — 445/451
-- `maps-geospatial-data` — 87/123
+- `maps-geospatial-data` — 88/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 107/522
+- `opsec-investigator-tooling` — 108/522
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 886/1003
+- `public-records` — 886/1002
 - `search-engines` — 525/764
 - `social-networks` — 737/782
 - `training-ctf` — 6/12
 - `translation-language` — 32/99
-- `transportation` — 140/205
+- `transportation` — 141/205
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 951 leaves
+- `library/tools/public-records` — 950 leaves
 - `library/tools/social-networks` — 754 leaves
 - `library/tools/search-engines` — 713 leaves
 - `library/tools/opsec-investigator-tooling` — 500 leaves
@@ -72,8 +72,8 @@ community: 3497 · unverified: 2095 · trusted: 1761 · untrustworthy: 6 · pers
 - `library/tools/domains-ip-infrastructure/threat-feeds-and-platforms` — 16 leaves
 - `library/tools/search-engines/academic-publication-search` — 15 leaves
 - `library/tools/documents-metadata/hosted-automated-analysis` — 14 leaves
-- `library/tools/domains-ip-infrastructure/whois-records` — 14 leaves
 - `library/tools/search-engines/general-search` — 14 leaves
+- `library/tools/domains-ip-infrastructure/whois-records` — 13 leaves
 - `library/tools/people-search/general-people-search` — 13 leaves
 
 ## Source exhaustion (Go Deep)

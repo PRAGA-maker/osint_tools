@@ -143,7 +143,7 @@ kind: group-index
 - **`radarbox`** (medium) — Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, 
 - **`radarbox24-pro`** (low) — OSINT tool: radarbox24-pro.
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
-- **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
+- **`rasp-yandex-ru-map-trains`** (low) — Use when you have a `geolocation`/region in Russia, Belarus, Ukraine, Kazakhstan or Abkhazia and want live train positions and rail schedule
 - **`recordsfinder`** (medium) — Use when you have a `name`, `phone`, `address`, `vehicle-plate` or `vin` and want a US public-records aggregate — returns names, addresses, 
 - **`redbook-car-pricing-authority-australia`** (medium) — Use when you have an Australian vehicle's make/model/year (or a plate/VIN lookup) and want to identify and value it — returns vehicle specif
 - **`reverse-genie-license-plate-search`** (medium) — Use when you have a US `vehicle-plate` and want to try to tie it to an owner — a free front-end that funnels toward name/address results, mo

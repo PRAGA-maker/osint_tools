@@ -740,7 +740,6 @@ kind: group-index
 - **`refseek`** (medium) — Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that genera
 - **`regional-municipality-of-durham`** (medium) — Use when a case touches Durham Region (Ontario, Canada) and you need geospatial/municipal context — returns open datasets (boundaries, facil
 - **`registrant-directory`** (medium) — Use when you have a physician's `name` in British Columbia and want to verify their medical registration/licence — returns registration stat
-- **`registrant-lookup`** (low) — OSINT tool: Registrant Lookup.
 - **`rehold`** (medium) — Use when you have a US `address` and want current/historical residents plus their phones — returns `name`, `phone`, `associate`, property de
 - **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
 - **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.

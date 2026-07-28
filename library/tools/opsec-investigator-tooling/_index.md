@@ -117,7 +117,7 @@ kind: group-index
 - **`edge`** (low) — OSINT tool: Edge.
 - **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
 - **`emailformat-de`** (low) — OSINT tool: Emailformat.de.
-- **`encoding-and-decoding-driver-s-license-numbers`** (low) — OSINT tool: Encoding and Decoding Driver's License Numbers.
+- **`encoding-and-decoding-driver-s-license-numbers`** (low) — Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a c
 - **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
 - **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`eset-smart-security`** (low) — Malware and virus detection and elimination program

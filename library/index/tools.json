@@ -40705,48 +40705,6 @@
     "_file": "library/tools/dark-web/onion-land.md"
   },
   {
-    "id": "onion-search",
-    "name": "Onion Search",
-    "description": "OSINT tool: Onion Search.",
-    "url": "https://github.com/megadose/OnionSearch",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Darknet/deepweb search tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "holehe",
-      "palenath",
-      "toutatis"
-    ],
-    "_file": "library/tools/dark-web/onion-search.md"
-  },
-  {
     "id": "onion-search-engine",
     "name": "Onion search engine",
     "description": "OSINT tool: Onion search engine.",
@@ -70833,42 +70791,49 @@
   {
     "id": "google-universal-dork-builder",
     "name": "Google (universal) Dork Builder",
-    "description": "Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your own database",
-    "url": "https://addons.mozilla.org/ru/firefox/addon/google-dork-builder/",
+    "description": "Use when you have a `domain`/target and want to quickly assemble advanced search-operator \"dork\" queries for Google/Bing/Yandex — returns crafted queries that surface exposed pages (`domain`).",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/google-dork-builder/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Building and saving advanced-operator search dorks (site:, filetype:, intitle:) across engines, with Google Hacking Database import.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Firefox add-on (small user base, last updated ~2021); no account.",
+    "opsec": "passive",
+    "opsecNote": "The extension only assembles query strings locally. Running the resulting searches is ordinary passive web search — logged by the engine and tied to your IP, so use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A small community Firefox add-on that just constructs query strings, so the risk is minimal; the value is convenience, not data — verify every hit at the source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Google Dork Builder"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "google-dorking"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/google-universal-dork-builder.md"
   },
   {
@@ -72098,38 +72063,53 @@
   {
     "id": "iana-root-zone-database",
     "name": "IANA — Root Zone Database",
-    "description": "OSINT tool: IANA — Root Zone Database.",
+    "description": "Use when you have a `domain`'s TLD and want the authoritative registry/sponsoring organization behind it — returns the TLD operator (`employer-org`) and registry details.",
     "url": "https://www.iana.org/domains/root/db",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Authoritative lookup of every top-level domain, its type, and its sponsoring/registry organization.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free authoritative public database; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public reference data from IANA; nothing touches any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IANA (a function of ICANN) operates the DNS root; this is the definitive, first-party registry of TLDs and their sponsors.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "iana-whois-service"
     ],
+    "aliases": [
+      "Root Zone Database",
+      "IANA Root Zone Database"
+    ],
+    "tags": [
+      "dns",
+      "tld",
+      "registry",
+      "whois"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/iana-root-zone-database.md"
   },
   {
@@ -80350,29 +80330,32 @@
   {
     "id": "phishtank",
     "name": "PhishTank",
-    "description": "Phishing site verification",
+    "description": "Use when you have a `domain`/URL and want to know whether it's a known, community-verified phishing site — returns phishing status and verification detail.",
     "url": "https://www.phishtank.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "phishing"
     ],
-    "bestFor": "Phishing site verification",
-    "input": "Phishing URL or suspected malicious site",
-    "output": "Phishing status and community verification votes",
-    "selectorsIn": [],
+    "bestFor": "Checking whether a URL/domain is a known, community-verified phishing site.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; a free API key (registration) is available for automated/bulk lookups.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of community-reported database",
+    "opsecNote": "A lookup queries PhishTank's database, not the phishing site itself, so it's passive. Never open the live phishing URL from your real environment — verify via the database and, if you must view it, use an isolated sandbox.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Cisco (formerly OpenDNS); entries are community-submitted and confirmed by verification votes, so reliable in aggregate but only as fresh as recent submissions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -80380,11 +80363,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PhishTank"
+    ],
+    "tags": [
+      "phishing",
+      "url-reputation",
+      "threat-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/phishing/phishtank.md"
   },
   {
@@ -90072,46 +90061,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/who-is.md"
-  },
-  {
-    "id": "whois-amped",
-    "name": "Whois AMPed",
-    "description": "Mobile-friendly WHOIS lookups, quick domain information retrieval",
-    "url": "https://whoisamped.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "whois-records"
-    ],
-    "bestFor": "Mobile-friendly WHOIS lookups, quick domain information retrieval",
-    "input": "Domain name",
-    "output": "WHOIS records, domain registration information, registrant details",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Accesses public WHOIS data; no target probing or direct contact.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/whois-records/whois-amped.md"
   },
   {
     "id": "whois-arin",
@@ -155905,13 +155854,13 @@
   {
     "id": "rammb-slider",
     "name": "RAMMB SLIDER",
-    "description": "Real-time weather satellites of the entire globe",
+    "description": "Use when you have a `geolocation`/`address` and want recent, time-stepped satellite imagery of that spot for weather/scene verification — returns time-stamped satellite `geolocation` views.",
     "url": "https://rammb-slider.cira.colostate.edu/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing zoomable, time-animated geostationary satellite imagery (GOES, Himawari, Meteosat) over any point on Earth.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -155919,29 +155868,38 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public tool from CIRA (Colorado State University) using NOAA/partner satellite data; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive imagery browsing — queries hit CIRA/NOAA servers, nothing touches any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CIRA at Colorado State University with official NOAA/EUMETSAT/JMA satellite feeds; an authoritative imagery source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SLIDER",
+      "CIRA SLIDER"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "satellite-imagery"
+      "satellite-imagery",
+      "weather",
+      "chronolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/rammb-slider.md"
   },
   {
@@ -171757,35 +171715,41 @@
   {
     "id": "encoding-and-decoding-driver-s-license-numbers",
     "name": "Encoding and Decoding Driver's License Numbers",
-    "description": "OSINT tool: Encoding and Decoding Driver's License Numbers.",
+    "description": "Use when you have a `name` + `dob` + sex (or a `document-id`) and want the algorithmic driver's-license number a state assigns — returns a candidate `document-id`, or reverses one back to identity fields.",
     "url": "https://stevemorse.org/dl/dl.html",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Encoding identity fields into (or decoding) the soundex-based driver's-license numbers used by certain US states.",
+    "selectorsIn": [
+      "name",
+      "dob",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; runs in-browser, part of Steve Morse's public genealogy toolset.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The calculation runs client-side in JavaScript — nothing you type is sent to a server or to any subject. Fully local and passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing, well-regarded Steve Morse genealogy/OSINT toolset; the formulas apply ONLY to states that derive DL numbers algorithmically — states that assign random/sequential numbers cannot be encoded or decoded.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "brooklyn-genealogy",
       "chicago-cook-county-genealogy",
@@ -171797,6 +171761,19 @@
       "social-security-death-index",
       "street-name-changes"
     ],
+    "aliases": [
+      "Steve Morse DL decoder",
+      "driver's license number decoder"
+    ],
+    "tags": [
+      "driver-license",
+      "document-id",
+      "identity",
+      "genealogy"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/encoding-and-decoding-driver-s-license-numbers.md"
   },
   {
@@ -250360,40 +250337,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/public-records/registrant-directory.md"
-  },
-  {
-    "id": "registrant-lookup",
-    "name": "Registrant Lookup",
-    "description": "OSINT tool: Registrant Lookup.",
-    "url": "https://www.cdsbc.org/home/registrant-lookup#/lookup/dentists",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/registrant-lookup.md"
   },
   {
     "id": "regrid-us-only",
@@ -352319,42 +352262,54 @@
   {
     "id": "rasp-yandex-ru-map-trains",
     "name": "Rasp.yandex.ru/map/trains",
-    "description": "Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia",
+    "description": "Use when you have a `geolocation`/region in Russia, Belarus, Ukraine, Kazakhstan or Abkhazia and want live train positions and rail schedules — returns live train `geolocation`.",
     "url": "https://rasp.yandex.ru/map/trains",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Yandex's live rail map for Russia and neighbouring CIS countries.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse; no Yandex account required to view the map.",
+    "opsec": "passive",
+    "opsecNote": "Passive to any subject, but this is a Russian service — Yandex logs your IP. For sensitive Russia/CIS investigations use a sock-puppet/VPN session and do NOT log into a Yandex account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Yandex; authoritative for CIS rail schedules and positions, but it is a Russian commercial service and should be treated with the corresponding OpSec caution.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ru"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Railway"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "wordstat-yandex-ru",
       "yandex-people-search"
     ],
+    "aliases": [
+      "Yandex Trains Map",
+      "Yandex Rasp trains"
+    ],
+    "tags": [
+      "Maps, Geolocation and Transport",
+      "Railway",
+      "transit",
+      "russia"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/rasp-yandex-ru-map-trains.md"
   },
   {
