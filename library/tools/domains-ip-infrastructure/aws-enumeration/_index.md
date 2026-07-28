@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/aws-enumeration
 
 ## Skills here
-- **`awsbucketdump`** (low) — Targeted S3 bucket discovery and object collection
+- **`awsbucketdump`** (low) — Use when you have an `employer-org`/`domain` and want to find exposed Amazon S3 buckets and download their contents — returns discovered buc
 - **`cloud-enum`** (low) — Rapid discovery of cloud storage exposure across major providers
 - **`subfinder`** (low) — Use when you have a `domain` and want its subdomains fast, passively — aggregates dozens of sources into a deduped list of subdomains, retur
 

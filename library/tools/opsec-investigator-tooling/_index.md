@@ -355,7 +355,7 @@ kind: group-index
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
-- **`search-that-hash`** (low) — Python tool for automating password hash detection (based on Hashcat). It can work with single strings as well as with long lists of hashes 
+- **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — OSINT tool: Security First - Umbrella.
 - **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
 - **`send-text-free`** (low) — OSINT tool: Send text free.

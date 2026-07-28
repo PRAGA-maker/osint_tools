@@ -2,40 +2,40 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7375 total · 5199 full · 2176 stub (70% enriched)
+**Tools:** 7374 total · 5206 full · 2168 stub (70% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3418 · medium: 1993 · high: 1964
+low: 3417 · medium: 1993 · high: 1964
 
 ## Tools by trust
-community: 3484 · unverified: 2132 · trusted: 1750 · untrustworthy: 6 · personal: 3
+community: 3490 · unverified: 2125 · trusted: 1750 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 94/441
+- `ai-analysis-automation` — 96/441
 - `archives-cache` — 91/120
 - `communities-forums` — 240/286
 - `dark-web` — 47/108
 - `dating-classifieds` — 79/90
 - `documents-metadata` — 97/294
-- `domains-ip-infrastructure` — 318/670
+- `domains-ip-infrastructure` — 321/670
 - `email` — 245/246
 - `evidence-capture` — 15/29
 - `financial-crypto` — 60/102
 - `geolocation` — 294/340
 - `image-video-face` — 444/451
-- `maps-geospatial-data` — 84/123
+- `maps-geospatial-data` — 85/123
 - `messaging` — 180/184
-- `opsec-investigator-tooling` — 102/525
+- `opsec-investigator-tooling` — 103/525
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 885/1003
 - `search-engines` — 520/765
 - `social-networks` — 736/783
 - `training-ctf` — 6/12
-- `translation-language` — 31/100
+- `translation-language` — 31/99
 - `transportation` — 138/205
 - `username` — 102/104
 
@@ -60,9 +60,9 @@ community: 3484 · unverified: 2132 · trusted: 1750 · untrustworthy: 6 · pers
 - `library/tools/archives-cache` — 105 leaves
 - `library/tools/dark-web` — 97 leaves
 - `library/tools/dating-classifieds` — 92 leaves
-- `library/tools/translation-language` — 86 leaves
 - `library/tools/username` — 86 leaves
 - `library/tools/financial-crypto` — 85 leaves
+- `library/tools/translation-language` — 85 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
 - `library/tools/domains-ip-infrastructure/reputation` — 18 leaves

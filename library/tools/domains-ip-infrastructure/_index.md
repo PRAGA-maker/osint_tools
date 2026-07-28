@@ -336,7 +336,7 @@ kind: group-index
 - **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
 - **`radb`** (low) — Provides information collected from all the registries that form part of the Internet Routing Registry
 - **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
-- **`ransomlook`** (low) — "Yet another Ransomware gang tracker" (c) Group profiles, recent updates, forums and markets list + some stats. A real treasure cybercrime r
+- **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 
 - **`raymond`** (low) — Framework for gathering information about website
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
 - **`reconnor`** (low) — Educational recon and OSINT tool suite.

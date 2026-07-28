@@ -56,7 +56,6 @@ kind: group-index
 - **`know-your-meme`** (low) — OSINT tool: Know Your Meme.
 - **`learn-languages`** (low) — OSINT tool: Learn Languages.
 - **`lexicool-translation`** (low) — OSINT tool: Lexicool Translation.
-- **`lexilogos-com`** (low) — OSINT tool: lexilogos.com.
 - **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
 - **`linguee-english-french-dictionary`** (low) — Tool for translating text and web content from one language to another; including a language translation dictionary

@@ -7,7 +7,7 @@ kind: group-index
 # ai-analysis-automation/wordlist
 
 ## Skills here
-- **`cewl`** (low) — Custom wordlist generation; password cracking preparation; web reconnaissance
+- **`cewl`** (low) — Use when you have a `domain` and want a target-specific wordlist (and any emails) built from its site content — returns a custom wordlist pl
 - **`cupp`** (low) — Password list generation, targeted dictionary attacks, penetration testing
 - **`owasp-d4n155`** (low) — Dynamic wordlist generation from target websites, intelligent password cracking
 - **`w-generator`** (low) — Use when you have personal facts about a subject (`name`, `dob`, `username`) and want a targeted password wordlist for authorised credential
