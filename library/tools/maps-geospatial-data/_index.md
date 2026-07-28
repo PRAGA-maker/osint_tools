@@ -45,7 +45,7 @@ kind: group-index
 - **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from
 - **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
 - **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
-- **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
+- **`global-monitoring-system-ecosolve`** (low) — Use when investigating online illegal wildlife trade and you want AI-monitored market data across key countries — returns aggregated traffic
 - **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
 - **`google-earth-engine`** (low) — Use when you have a `geolocation`/area and want to analyze satellite imagery over time — returns processed multi-source imagery, indices, an
 - **`google-flood-hub`** (low) — Use when you have a `geolocation`/`address` on a river and want current flood conditions and AI forecasts — returns river-level status and f

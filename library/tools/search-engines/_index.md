@@ -425,7 +425,6 @@ kind: group-index
 - **`newspaperindex`** (low) — Use when you have a place or region and want its local/national newspapers to search for a `name` or event — returns a directory of online n
 - **`newspapers-com`** (low) — Use when you have a `name` (plus an approximate place/date) and want historical newspaper coverage — obituaries, marriage/birth notices, loc
 - **`niche`** (low) — Use when you have a school/college `employer-org` or a `geolocation` and want profile data — returns rankings, stats, and reviews for school
-- **`notey`** (low) — OSINT tool: Notey.
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
 - **`oa-mg`** (low) — OSINT tool: OA.mg.

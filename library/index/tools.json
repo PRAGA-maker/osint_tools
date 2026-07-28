@@ -33878,37 +33878,47 @@
   {
     "id": "reelgood-com",
     "name": "Reelgood.com",
-    "description": "search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)",
+    "description": "Use when you have a title (movie/show) a subject references and want to know which streaming services carry it — returns streaming-availability context, no personal selectors.",
     "url": "https://reelgood.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Checking which of 150+ streaming services (Netflix, Prime, HBO, Disney+, etc.) carry a given film or show.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse; an optional free account only saves a personal watchlist. No paywall on availability data.",
+    "opsec": "passive",
+    "opsecNote": "Purely a media-catalog search against Reelgood's site — no target infrastructure is touched and nothing is disclosed to any subject. Standard third-party site logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial streaming-guide aggregator; catalog data can lag real service availability and is region-dependent.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Reelgood",
+      "reelgood.com"
+    ],
     "tags": [
-      "Movies"
+      "Movies",
+      "streaming"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/reelgood-com.md"
   },
   {
@@ -49779,44 +49789,50 @@
   {
     "id": "consumerreports-north-america",
     "name": "Consumerreports (North America)",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
-    "url": "http://www.consumerreports.org",
+    "description": "Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context, no personal selectors.",
+    "url": "https://www.consumerreports.org",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Independent, non-profit product and service ratings, recall and safety context for goods a subject bought or sold.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Headlines, buying guides, safety alerts and recall notices are free; full ratings and detailed test data sit behind a paid membership.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading published reviews on a public site — no target is contacted and nothing is disclosed. Standard third-party site logging only; use a clean browser if you don't want the visit tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established independent US non-profit (Consumer Reports / Consumers Union); no advertising and editorially independent, though full ratings are paywalled.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "consumer-reports-security-planner"
     ],
+    "aliases": [
+      "Consumer Reports",
+      "consumerreports.org"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "useful-websites-tools-documents",
+      "product-reviews"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/consumerreports-north-america.md"
   },
   {
@@ -68612,41 +68628,54 @@
   {
     "id": "ewhois",
     "name": "Ewhois",
-    "description": "Quick WHOIS lookups",
+    "description": "Use when you have a `domain` and want registration, DNS, hosting and traffic analytics in one panel — returns registrant email/name, IP, and related infrastructure.",
     "url": "https://www.ewhois.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "analytics"
     ],
-    "bestFor": "Quick WHOIS lookups",
-    "input": "Domain",
-    "output": "Registrant, registrar, dates, and nameserver records",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-stop WHOIS plus DNS, subdomain, SSL and traffic-analytics panel for a domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "email",
+      "name",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free browser lookups; an optional free account only unlocks saved searches/favorites, not the core data.",
     "opsec": "passive",
-    "opsecNote": "Performs standard registration lookups with low operational risk.",
+    "opsecNote": "You query eWhois's own servers, not the target's infrastructure, so the subject is not alerted. eWhois relays public WHOIS/DNS and SimilarWeb data; use a clean browser if you don't want the lookup tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent commercial aggregator; data mirrors registry WHOIS and SimilarWeb, so verify anything decisive against an authoritative source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "eWhois",
+      "ewhois.com"
+    ],
+    "tags": [
+      "whois",
+      "domain-analytics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/ewhois.md"
   },
   {
@@ -77978,46 +78007,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/myip-ip-address.md"
-  },
-  {
-    "id": "myipneighbors",
-    "name": "MyIPNeighbors",
-    "description": "Find all domains on same shared IP",
-    "url": "https://www.my-ip-neighbors.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "neighbor-domains"
-    ],
-    "bestFor": "Find all domains on same shared IP",
-    "input": "IP address",
-    "output": "List of domains on IP, subdomains",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive DNS reverse lookup.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/neighbor-domains/myipneighbors.md"
   },
   {
     "id": "name-com-bulk-search",
@@ -153474,38 +153463,54 @@
   {
     "id": "global-monitoring-system-ecosolve",
     "name": "Global Monitoring System - ECOSOLVE",
-    "description": "Illicit online wildlife markets data from Brazil, South Africa and Thailand.",
+    "description": "Use when investigating online illegal wildlife trade and you want AI-monitored market data across key countries — returns aggregated trafficking-ad trends, no personal selectors.",
     "url": "https://www.ecosolve.eco/dashboard",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregated intelligence on online illegal wildlife markets (species, platforms, languages, geographies) from the GI-TOC ECO-SOLVE programme.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public dashboard and Global Trend Reports are free; full national data-hub feeds are shared with law enforcement and partners, not open to the public.",
+    "opsec": "passive",
+    "opsecNote": "You read an aggregated research dashboard — you are not contacting traffickers or touching marketplace listings directly, so there is no target-facing exposure. If you then pivot to the underlying platforms/listings, treat that as separate active work with its own OpSec.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Global Initiative Against Transnational Organized Crime (GI-TOC), EU-funded, and listed in Bellingcat's toolkit; a credible institutional source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "br",
+      "co",
+      "th",
+      "id",
+      "ng",
+      "za"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "ECO-SOLVE",
+      "ECOSOLVE Global Monitoring System",
+      "GI-TOC ECO-SOLVE"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "wildlife-crime"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/global-monitoring-system-ecosolve.md"
   },
   {
@@ -180106,7 +180111,11 @@
       "tormap",
       "twitter",
       "twitter-advanced-search",
-      "twitter-analytics"
+      "twitter-analytics",
+      "twitter-com",
+      "twitter-date-search",
+      "twitter-image-search",
+      "twitter-x-location-search"
     ],
     "aliases": [
       "ParrotSec",
@@ -180733,40 +180742,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/postmates-delivery-app-mobile-ios.md"
-  },
-  {
-    "id": "primeos",
-    "name": "PrimeOS",
-    "description": "OSINT tool: PrimeOS.",
-    "url": "https://www.primeos.in/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "desktop-app",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/primeos.md"
   },
   {
     "id": "prism-break",
@@ -182901,35 +182876,49 @@
   {
     "id": "simplelogin",
     "name": "SimpleLogin",
-    "description": "OSINT tool: SimpleLogin.",
+    "description": "Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an investigator OpSec tool, not a lookup.",
     "url": "https://simplelogin.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Creating burner/alias email addresses that forward to your inbox, for sock-puppet registrations and safe contact.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives up to 10 aliases and unlimited forwarding; unlimited aliases, custom domains and more mailboxes are paid (Proton-bundled). Open-source, self-hostable for free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "This protects YOUR identity — it does not touch any target. Aliases hide your real address from services you sign up to and from people you email. Register the SimpleLogin account itself on a clean, non-attributable identity; a subpoena to SimpleLogin/Proton can still unmask the forwarding inbox, so it is privacy, not anonymity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source, acquired by Proton (2022); widely used and audited. Trust the software; remember the provider can be legally compelled.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "simplelogin.io",
+      "SimpleLogin alias"
+    ],
+    "tags": [
+      "opsec",
+      "email-alias",
+      "sock-puppet"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/simplelogin.md"
   },
   {
@@ -283840,42 +283829,6 @@
     "_file": "library/tools/search-engines/niche.md"
   },
   {
-    "id": "notey",
-    "name": "Notey",
-    "description": "OSINT tool: Notey.",
-    "url": "http://www.notey.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "blog-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/notey.md"
-  },
-  {
     "id": "nrc-research-press",
     "name": "NRC Research Press",
     "description": "OSINT tool: NRC Research Press.",
@@ -342138,37 +342091,44 @@
   {
     "id": "free-translator",
     "name": "Free translator",
-    "description": "OSINT tool: Free translator.",
+    "description": "Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated text, no personal selectors.",
     "url": "http://www.free-translator.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quick free machine translation of short text snippets or a web page across ~100 languages.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free machine translation; capped at roughly 200 words per text request. No account.",
+    "opsec": "passive",
+    "opsecNote": "Anything you paste is sent to a third-party translation service — do not paste sensitive case text, credentials, or PII you must keep confidential. Translating a URL causes the service to fetch that page, so avoid pasting a private/target-controlled URL you don't want fetched by a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Dated third-party translation portal that brokers to underlying MT engines; quality and uptime are inconsistent, so treat output as gist only.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "free-translator.com"
+    ],
     "tags": [
       "translation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/free-translator.md"
   },
   {
@@ -343930,41 +343890,49 @@
   {
     "id": "signing-savvy-sign-language-translator",
     "name": "Signing Savvy Sign Language Translator",
-    "description": "Translates English text to sign language",
+    "description": "Use when a subject, witness or source communicates in American Sign Language and you need to look up or verify a sign — returns ASL video demonstrations, no personal selectors.",
     "url": "https://www.signingsavvy.com/sign/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up American Sign Language (ASL) signs and fingerspelling as an English↔ASL reference dictionary.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core word/sign dictionary and fingerspelling are free; premium membership adds sentences, word lists, and extra learning features.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference dictionary lookup on a public site — no target is contacted and nothing is disclosed. Standard third-party site logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Deaf/Coda/educator-owned ASL resource; well-regarded as a learning dictionary but it is a reference, not an automated translator.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Signing Savvy",
+      "signingsavvy.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "sign-language",
+      "asl"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/signing-savvy-sign-language-translator.md"
   },
   {

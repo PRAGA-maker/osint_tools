@@ -33,6 +33,10 @@ relatedTools:
 - twitter
 - twitter-advanced-search
 - twitter-analytics
+- twitter-com
+- twitter-date-search
+- twitter-image-search
+- twitter-x-location-search
 aliases:
 - ParrotSec
 - Parrot OS

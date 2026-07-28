@@ -60,7 +60,7 @@ kind: group-index
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 
 - **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage
 - **`consumeraffairs-north-america`** (low) — Use when you have an `employer-org` (a company or brand name) and want customer complaints, ratings, and reviewer detail — returns associate
-- **`consumerreports-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`consumerreports-north-america`** (low) — Use when you have a product/service or business name and want independent ratings and safety/recall context — returns product-review context
 - **`consumersearch`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
 - **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.

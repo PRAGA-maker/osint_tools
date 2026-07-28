@@ -203,7 +203,7 @@ kind: group-index
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
 - **`redditlist`** (low) — OSINT tool: Redditlist.
 - **`rediff-web-portal-india`** (low) — Use when you have a Rediffmail `email` or an Indian subject and want portal context — a live Indian news/email/shopping portal, most relevan
-- **`reelgood-com`** (low) — search engine for more than 300 free and paid streaming services (Netflix, Amazon Prime Video, HBO, BBC, DisneyPlus)
+- **`reelgood-com`** (low) — Use when you have a title (movie/show) a subject references and want to know which streaming services carry it — returns streaming-availabil
 - **`refdesk-newspaper-search`** (medium) — Use when you have a subject's `name` and a `geolocation` and want the right local newspaper to search for coverage of them — returns links t
 - **`rentry`** (medium) — Use when you're chasing leaked/dumped data or a subject's posted notes — Rentry is a markdown pastebin where dumps and lists live; search-en
 - **`restaurant-news-united-states`** (medium) — Use when you have an `employer-org`/`name` in US foodservice and want press-release coverage — returns announcements, franchise info, and na

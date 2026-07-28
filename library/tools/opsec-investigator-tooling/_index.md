@@ -308,7 +308,6 @@ kind: group-index
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
-- **`primeos`** (low) — OSINT tool: PrimeOS.
 - **`prism-break`** (low) — OSINT tool: PRISM Break.
 - **`privacy-net`** (low) — Listing of privacy resources
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
@@ -357,7 +356,7 @@ kind: group-index
 - **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
 - **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
-- **`simplelogin`** (low) — OSINT tool: SimpleLogin.
+- **`simplelogin`** (low) — Use when you need a disposable, forwarding `email` alias to register accounts or contact sources without exposing your real inbox — an inves
 - **`sin-generator`** (low) — OSINT tool: SIN Generator.
 - **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking

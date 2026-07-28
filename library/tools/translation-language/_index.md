@@ -36,7 +36,7 @@ kind: group-index
 - **`ethnologue`** (low) — OSINT tool: Ethnologue.
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
 - **`flockwatch`** (low) — OSINT tool: FlockWatch.
-- **`free-translator`** (low) — OSINT tool: Free translator.
+- **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
 - **`free-website-translation`** (low) — OSINT tool: Free Website Translation.
 - **`freetranslation`** (low) — OSINT tool: FreeTranslation.
 - **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
@@ -75,7 +75,7 @@ kind: group-index
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
 - **`riverside-com`** (low) — OSINT tool: riverside.com.
 - **`scphillips-morse-code-translator`** (low) — Use when you have Morse code (or text) and want it converted the other way — returns decoded text or encoded Morse, with audio/light/vibrati
-- **`signing-savvy-sign-language-translator`** (low) — Translates English text to sign language
+- **`signing-savvy-sign-language-translator`** (low) — Use when a subject, witness or source communicates in American Sign Language and you need to look up or verify a sign — returns ASL video de
 - **`smallseotools-plagiarism-checker`** (low) — Language and academic-related program that matches uploaded text against a database of text material, checking for plagiarsim and copyright 
 - **`smart-words-org`** (low) — Use when you have chat/SMS/email text full of internet slang and acronyms and want to decode it — returns plain-language meanings of abbrevi
 - **`stars21-com`** (low) — OSINT tool: stars21.com.
