@@ -2,40 +2,40 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7308 total · 5413 full · 1895 stub (74% enriched)
+**Tools:** 7307 total · 5421 full · 1886 stub (74% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3338 · medium: 2006 · high: 1964
+low: 3337 · medium: 2006 · high: 1964
 
 ## Tools by trust
-community: 3479 · unverified: 2001 · trusted: 1819 · untrustworthy: 6 · personal: 3
+community: 3479 · unverified: 1998 · trusted: 1821 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 121/435
+- `ai-analysis-automation` — 122/435
 - `archives-cache` — 96/119
 - `communities-forums` — 244/286
 - `dark-web` — 49/106
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 114/290
-- `domains-ip-infrastructure` — 365/661
+- `documents-metadata` — 115/290
+- `domains-ip-infrastructure` — 367/661
 - `email` — 246/246
 - `evidence-capture` — 15/29
-- `financial-crypto` — 68/100
+- `financial-crypto` — 69/100
 - `geolocation` — 299/338
 - `image-video-face` — 446/451
 - `maps-geospatial-data` — 96/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 132/508
+- `opsec-investigator-tooling` — 133/507
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 897/999
-- `search-engines` — 538/757
+- `search-engines` — 539/757
 - `social-networks` — 740/778
 - `training-ctf` — 6/12
-- `translation-language` — 37/95
+- `translation-language` — 38/95
 - `transportation` — 148/203
 - `username` — 102/104
 
@@ -44,7 +44,7 @@ community: 3479 · unverified: 2001 · trusted: 1819 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 947 leaves
 - `library/tools/social-networks` — 750 leaves
 - `library/tools/search-engines` — 707 leaves
-- `library/tools/opsec-investigator-tooling` — 489 leaves
+- `library/tools/opsec-investigator-tooling` — 488 leaves
 - `library/tools/domains-ip-infrastructure` — 441 leaves
 - `library/tools/ai-analysis-automation` — 404 leaves
 - `library/tools/image-video-face` — 357 leaves

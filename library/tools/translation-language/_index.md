@@ -24,7 +24,7 @@ kind: group-index
 - **`binary-translator`** (low) — Tool for translating from one language form to another
 - **`bing-microsoft-translator`** (low) — Machine translation service.
 - **`clipto-com`** (low) — OSINT tool: clipto.com.
-- **`collinsdictionary`** (low) — Tool for translating text and web content from one language to another
+- **`collinsdictionary`** (low) — Use when you have a foreign-language word or short phrase in a record and want an authoritative translation/definition — returns dictionary 
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
 - **`definitions-net`** (low) — Multilingual dictionary providing definitions from various reference resources

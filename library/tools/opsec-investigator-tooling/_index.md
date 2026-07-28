@@ -118,7 +118,7 @@ kind: group-index
 - **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
 - **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`eset-smart-security`** (low) — Malware and virus detection and elimination program
-- **`exif-viewer-add-on-for-chrome`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
+- **`exif-viewer-add-on-for-chrome`** (low) — Use when you have an `image` on a web page and want its EXIF metadata (camera, timestamp, GPS) inline via right-click — returns metadata and
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
@@ -416,7 +416,6 @@ kind: group-index
 - **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
-- **`transfer-sh`** (low) — OSINT tool: transfer.sh.
 - **`transform-tools`** (low) — This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript 
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`truecrypt-encryption-software`** (low) — Guide for TrueCrypt open-source disk encryption software for Windows, Mac and Linux

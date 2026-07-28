@@ -98,7 +98,7 @@ kind: group-index
 - **`exif-viewer-classic-chrome-google-com`** (low) — Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any 
 - **`exif-viewer-pro-chrome-google-com`** (medium) — Use when you have an `image` in the browser and want its embedded EXIF/metadata (camera, timestamp, GPS) without downloading it — returns `m
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
-- **`exiftool-lucasgelfond-online`** (low) — OSINT tool: exiftool.lucasgelfond.online.
+- **`exiftool-lucasgelfond-online`** (low) — Use when you have a sensitive `image` and want full ExifTool metadata (camera, timestamp, GPS) without uploading it anywhere — runs ExifTool
 - **`eyedex`** (low) — OSINT tool: eyedex.
 - **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations

@@ -145,7 +145,7 @@ kind: group-index
 - **`context-menu-search`** (medium) — Use when you want to right-click any selected `name`/`username` and search it in a chosen engine — a Chrome extension that adds multi-engine
 - **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
 - **`copyright-search`** (low) — Use when you have a `domain`, `name` or `employer-org` and want to see copyright/DMCA complaints tied to it — returns complainant/sender det
-- **`core`** (low) — OSINT tool: Core.
+- **`core`** (low) — Use when you have a `name`, topic, or affiliation and want a subject's academic output — returns open-access papers, author affiliations and
 - **`criminology-wiki`** (medium) — Use when you have a `name` of a crime figure or case and want a crowd-sourced background summary — returns biographical and case details to 
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 

@@ -91,7 +91,7 @@ kind: group-index
 - **`rupep`** (low) — Use when you have a `name` from Russia/Belarus/Central Asia and want to check political exposure — returns positions, family, and business `
 - **`sanctionsexplorer`** (low) — Use when you have a `name` or `employer-org` and want to check current/historical OFAC, UN and EU sanctions listings — returns employer-org,
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.
-- **`search-our-ppp-loan-database`** (low) — OSINT tool: Search Our PPP Loan Database.
+- **`search-our-ppp-loan-database`** (low) — Use when you have a business `name`, an `address`/area, or a person tied to a company and want their US PPP loan record — returns loan amoun
 - **`sortcodes-co-uk`** (medium) — Use when you have a UK bank `document-id` (six-digit sort code) and want to identify the bank and branch behind it — returns the institution
 - **`start-me`** (medium) — Use when you have a `crypto-wallet` or a crypto-investigation goal and want a curated directory of blockchain/crypto OSINT tools — returns p
 - **`tmx-tsx`** (low) — Use when you have an `employer-org` listed (or seeking listing) on the Toronto Stock Exchange and want its official profile — returns employ
