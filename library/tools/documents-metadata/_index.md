@@ -247,7 +247,6 @@ kind: group-index
 - **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
 - **`transferwise`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
-- **`true-random-number-service`** (low) — Program that creates random number sequences using a random number generator for numbers between 1 and 100
 - **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
 - **`twitter-analytics`** (low) — Website offering analytical capabilities of Twitter content
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 

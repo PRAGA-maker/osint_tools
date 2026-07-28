@@ -12,7 +12,7 @@ kind: group-index
 - **`ip-fingerprints`** (low) — Find domains on shared hosting
 - **`ip-location-finder`** (low) — Quick IP location with maps
 - **`ip2location-com`** (low) — Use when you have an `ip-address` and want its geolocation plus proxy/VPN detection — returns geolocation, address (city/region/country), em
-- **`ipv4-ipv6-lists-by-country-code`** (low) — Country-level IP enumeration
+- **`ipv4-ipv6-lists-by-country-code`** (low) — Use when you have an `ip-address` or a country and want the authoritative CIDR ranges allocated to that country — returns ip-address ranges 
 - **`maxmind-demo`** (low) — Use when you have an `ip-address` and want a quick country/region/city/ASN geolocation estimate — returns approximate `geolocation` and netw
 - **`utrace`** (low) — IP location and traceroute
 

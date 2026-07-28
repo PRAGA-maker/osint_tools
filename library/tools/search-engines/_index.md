@@ -167,7 +167,7 @@ kind: group-index
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
 - **`debate-cards`** (medium) — Use when you have a `name` (an author or expert) and want to find where their work is quoted as competitive-debate evidence — returns citati
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
-- **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
+- **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
 - **`digle`** (low) — OSINT tool: Digle.
@@ -449,7 +449,7 @@ kind: group-index
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
 - **`online-books-page-united-states`** (low) — Use when you have an author `name` or title and want to find freely-readable full-text books online — returns links to full texts that can c
 - **`onlinenewspapers`** (medium) — Use when you need to find local/regional newspapers for a specific country or city to search for a subject or event — a directory of thousan
-- **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.
+- **`open-access-scientific-journals`** (low) — Use when you have a `name` (an author/researcher) and want their open-access publications and affiliations from this OA publisher — returns 
 - **`open-directory-finder`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in exposed "open directory" web listings — returns direct links to d
 - **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
 - **`open-grey`** (low) — OSINT tool: Open Grey.

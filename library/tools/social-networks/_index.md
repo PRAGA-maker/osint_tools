@@ -731,7 +731,6 @@ kind: group-index
 - **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
 - **`youtube-word-search`** (medium) — Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word
-- **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
 - **`ytcs`** (medium) — Use when you have a `username` or `name` and a YouTube video and want to find their comments — a browser extension that keyword-searches a v
 - **`ytgrep`** (medium) — Use when you have one or more YouTube video URLs and want to grep their captions for a word/phrase — returns matching subtitle lines with ti
 - **`zalo-me`** (high) — Use when you have a Vietnamese `phone` number or `name` and want to check for a Zalo messaging account and its public profile — returns a so

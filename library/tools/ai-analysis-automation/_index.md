@@ -297,7 +297,7 @@ kind: group-index
 - **`preceden`** (low) — OSINT tool: Preceden.
 - **`prism`** (low) — OSINT tool: PRISM.
 - **`privacy-badger`** (low) — OSINT tool: Privacy Badger.
-- **`privacy-com`** (low) — OSINT tool: Privacy.com.
+- **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
 - **`privazer`** (low) — OSINT tool: Privazer.
 - **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
@@ -376,7 +376,7 @@ kind: group-index
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
 - **`tik-tok`** (low) — OSINT tool: Tik-tok.
-- **`tiki-toki`** (low) — OSINT tool: Tiki-toki.
+- **`tiki-toki`** (low) — Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/p
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
 - **`timeflow`** (low) — OSINT tool: Timeflow.
 - **`timeline`** (low) — OSINT tool: Timeline.

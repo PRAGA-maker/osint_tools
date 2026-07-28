@@ -110,7 +110,7 @@ kind: group-index
 - **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
 - **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
-- **`cloudmare`** (low) — Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS
+- **`cloudmare`** (low) — Use when you have a `domain` behind Cloudflare/Sucuri/Incapsula and want to uncover its real origin server IP via DNS/history misconfigurati
 - **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
@@ -408,7 +408,7 @@ kind: group-index
 - **`thales`** (low) — OSINT tool: Thales.
 - **`the-information-laundromat`** (low) — A tool for analyzing content replication and site architecture to detect information laundering.
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
-- **`threat-actor-usernames-scrape`** (low) — OSINT tool: Threat Actor Usernames Scrape.
+- **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
 - **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.
 - **`tinyscan`** (low) — OSINT tool: TinyScan.

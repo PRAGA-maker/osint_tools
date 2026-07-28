@@ -12501,37 +12501,49 @@
   {
     "id": "privacy-com",
     "name": "Privacy.com",
-    "description": "OSINT tool: Privacy.com.",
+    "description": "Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card — an OpSec aid, no selectors out.",
     "url": "https://privacy.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Generating single-use/merchant-locked virtual debit cards to protect an investigator's real payment identity.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free personal plan issues virtual cards (with monthly card-count limits); paid plans add more cards and cashback. Requires a linked US bank account and identity verification (KYC).",
+    "opsec": "passive",
+    "opsecNote": "This is an OpSec tool that protects YOU — it hides your real card number from merchants and lets you set spend limits, useful when subscribing to paid OSINT services or funding a cover persona. But it is US-only, KYC-bound, and legally tied to your real identity/bank; it is NOT anonymous payment and must not be used for fraud or to impersonate a real person's finances.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A regulated US fintech (virtual-card issuer). Legitimate and reputable for privacy-preserving payments, but it is a first-party financial account tied to your KYC identity, not an OSINT data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "fake-name-generator",
+      "this-person-does-not-exist"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "opsec",
+      "sock-puppet"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/privacy-com.md"
   },
   {
@@ -15929,38 +15941,49 @@
   },
   {
     "id": "tiki-toki",
-    "name": "Tiki-toki",
-    "description": "OSINT tool: Tiki-toki.",
-    "url": "http://www.tiki-toki.com",
+    "name": "Tiki-Toki",
+    "description": "Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/presentation tool, no selectors out.",
+    "url": "https://www.tiki-toki.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building interactive, multimedia timelines to organise and present an investigation's chronology.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free account allows one fully-functional web timeline. Paid tiers add multiple/private timelines, group editing, and offline (desktop) export.",
+    "opsec": "passive",
+    "opsecNote": "You author a timeline from data you already hold; the tool doesn't query the subject, so building it is passive. BUT a free-tier timeline is web-hosted and public by default — do not put sensitive case detail, PII, or an active investigation's findings into a public timeline. Use private (paid) timelines or a self-hosted alternative for anything confidential.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial timeline-authoring service. It's a presentation/analysis aid, not a data source — there is no external data to trust or verify, only what you enter.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "time-graphics",
+      "timelinejs"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "timeline",
+      "analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tiki-toki.md"
   },
   {
@@ -59421,46 +59444,6 @@
     "_file": "library/tools/documents-metadata/transitions-abroad.md"
   },
   {
-    "id": "true-random-number-service",
-    "name": "True Random Number Service",
-    "description": "Program that creates random number sequences using a random number generator for numbers between 1 and 100",
-    "url": "http://www.random.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/true-random-number-service.md"
-  },
-  {
     "id": "truecaller",
     "name": "Truecaller",
     "description": "Use when you have a `phone` number and want a crowd-sourced caller-ID name — returns the name/label others have saved for that number plus carrier/region and spam reports.",
@@ -65145,42 +65128,54 @@
   {
     "id": "cloudmare",
     "name": "Cloudmare",
-    "description": "Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS",
+    "description": "Use when you have a `domain` behind Cloudflare/Sucuri/Incapsula and want to uncover its real origin server IP via DNS/history misconfigurations — returns ip-address, domain.",
     "url": "https://github.com/MrH0wl/Cloudmare",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the origin server IP hidden behind a CDN/WAF (Cloudflare, Sucuri, Incapsula).",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
+      "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python CLI). Some data-source lookups (e.g. SecurityTrails/Shodan) work better with free API keys added to the config.",
+    "opsec": "active",
+    "opsecNote": "Cloudmare queries historical DNS, cert transparency, subdomains, and can directly probe candidate IPs to confirm the origin — that verification traffic hits the target's real server and may be logged there. Run passive-only sources first; use a VPN/disposable host before any confirmation probes.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool by MrH0wl. Community-maintained; effectiveness depends entirely on the target having a real misconfiguration (leaked historical IP, exposed subdomain), so results are opportunistic.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "domain-dossier",
+      "dnsdumpster",
+      "shodan"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Cloudfare"
+      "Cloudfare",
+      "origin-ip"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cloudmare.md"
   },
   {
@@ -74610,42 +74605,53 @@
   },
   {
     "id": "ipv4-ipv6-lists-by-country-code",
-    "name": "IPv4/IPv6 lists by country code",
-    "description": "Country-level IP enumeration",
-    "url": "https://github.com/ipverse/",
+    "name": "IPverse — IPv4/IPv6 lists by country code",
+    "description": "Use when you have an `ip-address` or a country and want the authoritative CIDR ranges allocated to that country — returns ip-address ranges / geolocation-by-allocation.",
+    "url": "https://github.com/ipverse/rir-ip",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Country-level IP enumeration",
-    "input": "Country code",
-    "output": "IP ranges in CIDR notation",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mapping a country code to its allocated IP ranges (or checking which country an IP's block belongs to).",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open data (public GitHub repos, updated from RIR delegation files). Clone/download or fetch raw files; no account.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of public IP allocations.",
+    "opsecNote": "You download static allocation lists from GitHub and process them locally — nothing touches the target or their network. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Community project (ipverse) that mirrors the Regional Internet Registries' delegation data into per-country CIDR files. Source data is authoritative (RIRs); the repo is a convenience packaging, so confirm freshness against the last update.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "domain-dossier",
+      "ipinfo-io"
+    ],
+    "tags": [
+      "ip-geolocation",
+      "cidr",
+      "country-allocation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/ipv4-ipv6-lists-by-country-code.md"
   },
   {
@@ -86225,42 +86231,55 @@
   {
     "id": "threat-actor-usernames-scrape",
     "name": "Threat Actor Usernames Scrape",
-    "description": "OSINT tool: Threat Actor Usernames Scrape.",
+    "description": "Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns social-profile/associate leads.",
     "url": "https://github.com/spmedia/Threat-Actor-Usernames-Scrape",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking a username against a free bulk dataset of cybercrime-forum handles for CTI enrichment.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open dataset on GitHub (text/JSON files); clone or download, no account.",
+    "opsec": "passive",
+    "opsecNote": "Searching is done locally against downloaded files, so nothing touches any forum or the subject — fully passive. Cloning the repo is a normal GitHub action. Do not log into the source cybercrime forums yourself to \"confirm\" a hit; that is active and risky.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A single researcher's (spmedia) crowd-scraped compilation from active and defunct forums; unofficial and unvetted. Presence is a lead, not identity proof, and the data can be stale or contain scraping artefacts.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-actor-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
-      "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
       "phishingseclists",
+      "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
       "telegram-channel-joiner"
     ],
+    "aliases": [
+      "spmedia Threat Actor Usernames"
+    ],
+    "tags": [
+      "threat-actor-search",
+      "username",
+      "dark-web"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-actor-usernames-scrape.md"
   },
   {
@@ -270102,40 +270121,48 @@
   },
   {
     "id": "debunking-false-stories-archives",
-    "name": "Debunking False Stories Archives",
-    "description": "OSINT tool: Debunking False Stories Archives.",
+    "name": "FactCheck.org — Debunking False Stories Archive",
+    "description": "Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verification archive, no personal selectors out.",
     "url": "https://www.factcheck.org/fake-news/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a circulating story/claim has already been fact-checked and debunked.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to read; no account. Nonprofit-funded (Annenberg Public Policy Center).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public fact-checking archive is fully passive — nothing about your subject is disclosed. Standard site analytics apply to you as a visitor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "FactCheck.org is a long-established, nonpartisan project of the Annenberg Public Policy Center (University of Pennsylvania) with a transparent sourcing methodology.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "fact-check",
       "scicheck"
     ],
+    "tags": [
+      "fact-checking",
+      "misinformation",
+      "news-verification"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/debunking-false-stories-archives.md"
   },
   {
@@ -284796,41 +284823,52 @@
   },
   {
     "id": "open-access-scientific-journals",
-    "name": "Open Access Scientific Journals",
-    "description": "OSINT tool: Open Access Scientific Journals.",
-    "url": "http://www.pagepress.org",
+    "name": "Open Access Scientific Journals (PagePress)",
+    "description": "Use when you have a `name` (an author/researcher) and want their open-access publications and affiliations from this OA publisher — returns name, employer-org, associate leads.",
+    "url": "https://www.pagepress.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a researcher's freely readable papers, affiliations, and co-authors within an open-access journal publisher.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open-access publisher — articles are free to read in full; no account needed to search or read.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public academic publisher is passive; you never contact the subject. Author names, affiliations, and emails printed in papers are self-published by the authors, but handle any contact details you find ethically.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "PagePress is one open-access publisher (primarily biomedical/scientific journals). Legitimate but narrow — it indexes only its own titles, so treat it as one source among many, not a comprehensive scholarly search.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "open-access-scholarly-journals",
+      "google-scholar"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "open-access"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "open-access-scholarly-journals"
-    ],
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/open-access-scientific-journals.md"
   },
   {
@@ -340140,47 +340178,6 @@
     "_file": "library/tools/social-networks/tiktok/yt-dlp.md"
   },
   {
-    "id": "ytcomments-klostermann-ca",
-    "name": "Ytcomments.klostermann.ca",
-    "description": "OSINT tool: Ytcomments.klostermann.ca.",
-    "url": "http://ytcomments.klostermann.ca",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "youtube"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/ytcomments-klostermann-ca.md"
-  },
-  {
     "id": "ytcs",
     "name": "YTCS (YouTube Comment Search)",
     "description": "Use when you have a `username` or `name` and a YouTube video and want to find their comments — a browser extension that keyword-searches a video's comments in-page.",
@@ -351257,43 +351254,54 @@
   },
   {
     "id": "opensky-network",
-    "name": "OpenSky-Network",
-    "description": "Community, open source flight tracking network.",
-    "url": "http://opensky-network.org/",
+    "name": "OpenSky Network",
+    "description": "Use when you have an aircraft `vehicle-plate` (tail/ICAO24) or callsign and want live and historical ADS-B positions — returns geolocation tracks, including data other trackers hide.",
+    "url": "https://opensky-network.org/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Live and historical aircraft position tracking from raw ADS-B, including flights filtered out of commercial trackers.",
     "selectorsIn": [
-      "vehicle-plate"
+      "vehicle-plate",
+      "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for research/non-commercial use. Live REST/state API is free (anonymous or with a free account for higher limits); the deeper historical archive requires a free academic/research account. No paid tier needed for typical OSINT.",
+    "opsec": "passive",
+    "opsecNote": "You query OpenSky's servers, never the aircraft, so tracking is passive and invisible to the target. Requests are tied to your account/IP and rate-limited; use a research account you're comfortable being associated with the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A non-profit, academia-backed community ADS-B network (used widely in aviation research and journalism). Data is crowd-sourced receiver feeds — coverage gaps exist, but what's reported is raw sensor data, not editorialised.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "ads-b-exchange-radar-view",
+      "flight-radar-24",
+      "airnav-radarbox"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "transport"
+      "transport",
+      "aviation",
+      "adsb"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-28",
+    "enrichment": "full",
     "_file": "library/tools/transportation/opensky-network.md"
   },
   {
