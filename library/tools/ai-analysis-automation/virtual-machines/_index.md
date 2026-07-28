@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`kali-linux-os`** (low) — Use when you need a ready-made investigation workstation preloaded with OSINT/security tools — a platform to run tools from, not a lookup it
-- **`parrotsec-os`** (low) — Penetration testing; red team; privacy-conscious computing; cybersecurity research
+- **`parrotsec-os`** (low) — Use when you need a hardened, tool-loaded investigation OS for OSINT/forensics with built-in anonymity — provides a ready Linux environment,
 - **`subgraph-os`** (low) — High-security threat model; adversary resistance; encrypted communications
 - **`tails-live-os`** (low) — High-anonymity OSINT; Tor-based anonymous communication for journalists and activists
 - **`virtualbox`** (low) — Desktop and server virtualization; OSINT lab environments

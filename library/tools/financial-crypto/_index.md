@@ -50,7 +50,6 @@ kind: group-index
 - **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
 - **`credit-osint`** (low) — A very simple #python tool to gather information about bank cards and validate them.
 - **`cryptocompare-com`** (low) — Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextu
-- **`cryptocurrency-alerting`** (low) — OSINT tool: Cryptocurrency Alerting.
 - **`cryptocurrency-search-tool`** (low) — OSINT tool: Cryptocurrency search tool.
 - **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
 - **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.

@@ -99,7 +99,6 @@ kind: group-index
 - **`exif-viewer-pro-chrome-google-com`** (medium) — Use when you have an `image` in the browser and want its embedded EXIF/metadata (camera, timestamp, GPS) without downloading it — returns `m
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
 - **`exiftool-lucasgelfond-online`** (low) — OSINT tool: exiftool.lucasgelfond.online.
-- **`expatica`** (low) — Searchable guides to moving, working, and living abroad
 - **`eyedex`** (low) — OSINT tool: eyedex.
 - **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations
@@ -119,7 +118,7 @@ kind: group-index
 - **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
 - **`git-hound`** (low) — OSINT tool: git-hound.
-- **`gitdorker`** (low) — OSINT tool: GitDorker.
+- **`gitdorker`** (low) — Use when you have a `username`, `employer-org`, or `domain` and want secrets/emails/keys exposed across public GitHub — returns `email` and 
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c
 - **`github`** (low) — Open source code hosting community for users to collaborate and create projects.

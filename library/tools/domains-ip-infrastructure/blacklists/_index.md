@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/blacklists
 
 ## Skills here
-- **`blocklist-de`** (low) — Check IP blacklist status
+- **`blocklist-de`** (low) — Use when you have an `ip-address` and want to know whether it has been reported for attacks (SSH, mail, web) — returns blacklist status and 
 - **`dshield-api`** (low) — Use when you have an `ip-address` and want to know if it has been seen attacking networks — returns attack/report counts, targeted-systems t
 - **`firehol-ip-lists`** (low) — Block malicious/spam IP sources
 - **`project-honey-pot`** (low) — Use when you have an `ip-address` and want its spam/abuse history — returns a threat classification (harvester, spammer, dictionary attacker

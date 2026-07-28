@@ -255,7 +255,7 @@ kind: group-index
 - **`magnifying-glass-tool-app-mobile-ios`** (low) — App for mobile devices for a combined flashlight and camera image magnification tool
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
-- **`many-passwords`** (low) — Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels)
+- **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
 - **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
 - **`markmap`** (low) — A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to c
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
@@ -289,7 +289,6 @@ kind: group-index
 - **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`one-time-mobile-by-osintstash`** (low) — OSINT tool: One-time Mobile by @OsintStash.
-- **`online-link-scan`** (low) — Website that offers an online virus scanner that scans links for malware, trojans and viruses
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
 - **`opera`** (low) — OSINT tool: Opera.
 - **`osint-sync`** (low) — Browser extension for OSINT (Osint Sync).

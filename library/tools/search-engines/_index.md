@@ -54,7 +54,7 @@ kind: group-index
 - **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
-- **`aol`** (low) — OSINT tool: Aol.
+- **`aol`** (low) — Use when you have a `name`, `username`, or `domain` and want a second general web index for cross-checking — returns `social-profile` and `d
 - **`ap`** (low) — OSINT tool: AP.
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
 - **`app-store-custom-search-engine`** (medium) — Use when you have an app name, developer, or `username` and want to search Apple/Google app-store listings — returns developer org, linked s

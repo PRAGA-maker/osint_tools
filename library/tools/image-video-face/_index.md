@@ -168,7 +168,7 @@ kind: group-index
 - **`internet-archive-open-source-videos`** (medium) — Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, download
 - **`invid-verification-plugin`** (medium) — Use when you have an `image` or a social-media video and want to verify it — fragment video into keyframes, run reverse-image search, read m
 - **`ios-gadgethacks-com`** (low) — Use when you need awareness that blacked-out / redacted regions in images can sometimes be recovered — this is a how-to article, not an inte
-- **`ipvm-calculator`** (low) — Tool for simulating camera views (for geolocations).
+- **`ipvm-calculator`** (low) — Use when you have a `geolocation`/`address` of a surveillance camera and want to model its field of view and blind spots over satellite/stre
 - **`iqdb-org`** (low) — Use when you have an `image` that looks like anime/manga/game art and want its source — returns matching booru-database entries (source, art
 - **`isgen-ai`** (medium) — Use when you have an image and want to estimate whether it was AI-generated (deepfake/synthetic) — returns a likelihood/verdict, not a rever
 - **`istockphoto`** (medium) — Use when you suspect a profile `image` is a stock/model photo and want to check it against a major royalty-free catalog — returns matching s

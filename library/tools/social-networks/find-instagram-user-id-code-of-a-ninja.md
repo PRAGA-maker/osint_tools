@@ -31,6 +31,8 @@ registration: false
 relatedTools:
 - find-instagram-user-id
 - codeofaninja-com
+- codeofaninja-com-2
+- codeofaninja-com-3
 aliases:
 - codeofaninja instagram user id
 - instagram id finder

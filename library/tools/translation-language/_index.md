@@ -58,7 +58,7 @@ kind: group-index
 - **`lexicool-translation`** (low) — OSINT tool: Lexicool Translation.
 - **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
-- **`linguee-english-french-dictionary`** (low) — Tool for translating text and web content from one language to another; including a language translation dictionary
+- **`linguee-english-french-dictionary`** (low) — Use when you have foreign-language text (a `name`, post, or document snippet) and want an accurate translation shown with real bilingual exa
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
 - **`meowni-ca`** (low) — OSINT tool: meowni.ca.
 - **`microsoft-translator`** (low) — Use when you have foreign-language text, a page, or a document and want a fast free translation — a second engine to cross-check Google/Deep

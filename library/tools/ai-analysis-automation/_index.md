@@ -53,7 +53,6 @@ kind: group-index
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
 - **`beaker`** (low) — OSINT tool: Beaker.
-- **`befunky`** (low) — OSINT tool: Befunky.
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — OSINT tool: Bellingcat.
