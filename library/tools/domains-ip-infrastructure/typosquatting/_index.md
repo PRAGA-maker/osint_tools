@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/typosquatting
 
 ## Skills here
-- **`catphish`** (low) — Red team phishing domain generation
+- **`catphish`** (low) — Use when you have a `domain` and want to enumerate lookalike/typosquat variants (and which are registered or available) — returns candidate 
 - **`dns-twist`** (low) — Typosquatting and phishing domain detection
 - **`dnstwister`** (low) — Use when you have a `domain` and want its typosquat/look-alike permutations and whether they're registered — returns candidate domain varian
 - **`urlcrazy`** (low) — Use when you have a `domain` and want its typo/look-alike variants — returns permutations plus which are registered and their resolving `ip-

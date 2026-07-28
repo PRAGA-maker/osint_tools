@@ -21,7 +21,6 @@ kind: group-index
 - **`url-void`** (low) — Website reputation checking, malware/phishing detection, threat analysis
 - **`urlquery-net`** (low) — Use when you have a suspicious `domain`/URL and want a safe hosted analysis of it — screenshots, hosting IP, redirects, and malware/phishing
 - **`vurl-online`** (low) — URL/domain dissection and reputation
-- **`watchguard-reputationauthority`** (low) — URL/IP reputation scoring, threat risk assessment, malicious source identification
 - **`web-inspector-online-scan`** (low) — Use when you have a suspicious `domain`/URL and want a free malware/blacklist scan of the site — returns a threat verdict and blacklist stat
 - **`webroot-brightcloud-url-ip-lookup`** (low) — URL/IP reputation lookup, web classification, threat intelligence, web categorization
 - **`zscaler-zulu-url-risk-analyzer`** (low) — URL risk scoring, web threat detection, malicious content analysis

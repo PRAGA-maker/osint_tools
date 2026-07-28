@@ -108,7 +108,7 @@ kind: group-index
 - **`live-atc`** (low) — Use when you have an aircraft near a covered airport and want tail numbers/callsigns from live tower audio — returns vehicle-plate (tail num
 - **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
 - **`live-piracy-map`** (low) — OSINT tool: Live Piracy Map.
-- **`live-train-tracker`** (low) — A world map showing real-time train traffic (with route point's exact geographic coordinates) and schedules on the roads of Europe, North an
+- **`live-train-tracker`** (low) — Use when you have a `geolocation`/region in Europe, the Americas, or Australia and want real-time train positions and schedules — returns li
 - **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
 - **`lucas-county-ohio-areis-online`** (medium) — Use when you have a `name` or `address` in Lucas County, Ohio and want property records — returns owner `name`, parcel `address`, mailing ad
 - **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.

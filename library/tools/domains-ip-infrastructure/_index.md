@@ -34,7 +34,7 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 18 skill(s) below.
+- **`reputation/`** — 17 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
@@ -272,7 +272,7 @@ kind: group-index
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
 - **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
 - **`maxmind`** (low) — OSINT tool: MaxMind.
-- **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.
+- **`mayorsecdnsscan`** (low) — Use when you have a `domain` and want its DNS records, zone-transfer exposure, and enumerated subdomains — returns subdomain `domain`s and t
 - **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
 - **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host

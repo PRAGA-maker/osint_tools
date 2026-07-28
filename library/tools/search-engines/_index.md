@@ -80,7 +80,7 @@ kind: group-index
 - **`ballotpedia-united-states`** (medium) — Use when you have a `name` of a US politician, candidate, or public official and want their verified biography, offices held, and campaign/e
 - **`bank-of-canada-unclaimed-balances`** (high) — Use when you have a `name` and want dormant Canadian bank accounts tied to it — returns account-holder name, last-known address fragment and
 - **`bank-of-canada`** (low) — Use when you have a `name` and want to check Canada's Unclaimed Balances registry (dormant bank accounts) — the Bank of Canada site's one ge
-- **`base`** (low) — OSINT tool: Base.
+- **`base`** (low) — Use when you have a `name` (or topic) and want scholarly publications and grey literature by or about a person — returns academic documents 
 - **`bbc-news`** (low) — OSINT tool: BBC News.
 - **`beautiful-news`** (low) — OSINT tool: Beautiful News.
 - **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
@@ -272,7 +272,6 @@ kind: group-index
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
 - **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
-- **`google-safesearch-filter`** (low) — Google safesearch settings
 - **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
 - **`google-search`** (low) — OSINT tool: Google Search.
 - **`google-shopping-search-engine`** (medium) — Use when you have a product/listing detail from a photo or ad and want to identify or price it — returns matching products, sellers, and pri

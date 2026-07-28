@@ -94,7 +94,7 @@ kind: group-index
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
 - **`exif-py`** (low) — Use when you have an `image` file and want to extract its embedded EXIF metadata from the command line — returns metadata-exif, GPS geolocat
 - **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).
-- **`exif-viewer-addons-mozilla-org`** (low) — OSINT tool: exif viewer (addons.mozilla.org).
+- **`exif-viewer-addons-mozilla-org`** (low) — Use when you have an `image` (local file or a URL) and want its EXIF/IPTC/XMP metadata and any embedded GPS in-browser — returns `metadata-e
 - **`exif-viewer-classic-chrome-google-com`** (low) — Use when you have an `image` on a web page and want its EXIF metadata without downloading it — right-click to see camera, timestamp and any 
 - **`exif-viewer-pro-chrome-google-com`** (medium) — Use when you have an `image` in the browser and want its embedded EXIF/metadata (camera, timestamp, GPS) without downloading it — returns `m
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
