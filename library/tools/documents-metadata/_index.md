@@ -138,7 +138,7 @@ kind: group-index
 - **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
 - **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations
-- **`inmatrix-zoomplayer`** (low) — Program that (with codex packs) plays all public video formats
+- **`inmatrix-zoomplayer`** (low) — Use when you have a recovered/unusual `image` or video file that standard players will not open — plays a very wide range of media formats s
 - **`instapaper`** (low) — Use when you have a target `domain`/URL and want to capture its readable text for offline review and evidence-keeping — returns a saved, de-
 - **`intensedebate`** (low) — Use when you have an IntenseDebate `username` and want that commenter's cross-site history and profile — returns their comment history, link
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 

@@ -13098,42 +13098,6 @@
     "_file": "library/tools/ai-analysis-automation/pywhat.md"
   },
   {
-    "id": "qlikview",
-    "name": "QlikView",
-    "description": "OSINT tool: QlikView.",
-    "url": "https://www.visualintelligence.co.nz/qlikview",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/qlikview.md"
-  },
-  {
     "id": "quadrigram",
     "name": "Quadrigram",
     "description": "OSINT tool: Quadrigram.",
@@ -14594,42 +14558,6 @@
     "_file": "library/tools/ai-analysis-automation/snort.md"
   },
   {
-    "id": "social-links",
-    "name": "Social Links",
-    "description": "OSINT tool: Social Links.",
-    "url": "https://blog.sociallinks.io/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-blogs"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/social-links.md"
-  },
-  {
     "id": "spf-explainer",
     "name": "SPF Explainer",
     "description": "Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.",
@@ -14709,42 +14637,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/javascript/spidermonkey.md"
-  },
-  {
-    "id": "spideroak",
-    "name": "Spideroak",
-    "description": "OSINT tool: Spideroak.",
-    "url": "https://spideroak.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/spideroak.md"
   },
   {
     "id": "spidersuite",
@@ -15676,37 +15568,48 @@
   {
     "id": "the-fuck",
     "name": "The Fuck",
-    "description": "Simple app which corrects your previous console commands.",
+    "description": "Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep momentum. Not a selector tool; a shell-productivity utility.",
     "url": "https://github.com/nvbn/thefuck",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Auto-correcting the previous failed console command so CLI OSINT tooling flows without retyping.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (MIT); install via brew or pip, no account.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely on your own machine against your own shell history; it makes no network calls about a target and leaks nothing externally.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Extremely popular MIT-licensed project (90k+ GitHub stars) with a large contributor base; widely packaged in Homebrew and Linux distros.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "thefuck",
+      "fuck (command)"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "shell-productivity"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/the-fuck.md"
   },
   {
@@ -35327,38 +35230,50 @@
   },
   {
     "id": "sympsons-screencaps-search",
-    "name": "Sympsons screencaps search",
-    "description": "OSINT tool: Sympsons screencaps search.",
+    "name": "Frinkiac (Simpsons Screencap Search)",
+    "description": "Use when you have a quote or a suspected Simpsons `image`/meme and want to source the exact frame — returns the matching screenshot, episode, and caption. Narrow provenance/meme-origin tool.",
     "url": "https://frinkiac.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the episode and frame behind a Simpsons quote or screenshot/meme.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account; you can search frames and generate captioned images/GIFs at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Searches a public Simpsons screenshot index; you type a quote, not anything about a target, so it leaks nothing. Standard web-request hygiene (sock-puppet browser) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known fan-built search engine indexing The Simpsons frame-by-frame; accurate for what it covers (the show), maintained independently.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Frinkiac",
+      "Simpsons screencaps search"
+    ],
     "tags": [
-      "Movies"
+      "Movies",
+      "meme-origin",
+      "image-provenance"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/sympsons-screencaps-search.md"
   },
   {
@@ -53467,42 +53382,50 @@
   },
   {
     "id": "inmatrix-zoomplayer",
-    "name": "Inmatrix Zoomplayer",
-    "description": "Program that (with codex packs) plays all public video formats",
+    "name": "Inmatrix Zoom Player",
+    "description": "Use when you have a recovered/unusual `image` or video file that standard players will not open — plays a very wide range of media formats so you can view the content. Not a selector-extraction tool.",
     "url": "http://www.inmatrix.com/files/zoomplayer_download.shtml",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Playing obscure or codec-heavy video/audio files during evidence review on Windows.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Zoom Player has a free edition; the MAX/Pro tiers are paid (\"Buy Now\"). Windows only. The free edition covers ordinary playback needs.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "A local desktop media player — it plays files on your machine and makes no network queries about a target. Review evidence on an isolated/analysis machine, since opening unknown media can still trigger codec-level exploits.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running independent Windows product (Inmatrix); reputable but closed-source, so behavior on untrusted files cannot be audited.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Zoom Player",
+      "ZoomPlayer"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "media-player",
+      "evidence-review"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/inmatrix-zoomplayer.md"
   },
   {
@@ -63778,41 +63701,51 @@
   {
     "id": "certgraph",
     "name": "certgraph",
-    "description": "Certificate mapping, domain relationship discovery, hostname enumeration via SSL certificates",
+    "description": "Use when you have a `domain` and want to discover related/sibling domains an operator controls — returns a graph of linked `domain`s via shared TLS certificate SANs.",
     "url": "https://github.com/lanrat/certgraph",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "certificate-search"
     ],
-    "bestFor": "Certificate mapping, domain relationship discovery, hostname enumeration via SSL certificates",
-    "input": "Hostname or domain name",
-    "output": "Directed graph showing domain nodes and certificate alternative name connections between domains",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Crawling the graph of certificate Subject Alternative Names to surface an operator's related domains.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Open-source (GPL-2.0); free binaries, Docker image, and source. Optional Censys driver needs free API keys.",
     "opsec": "passive",
-    "opsecNote": "Default HTTPS driver can make connections to hosts; alternative drivers query CT logs passively. Use CT drivers for stealth.",
+    "opsecNote": "The default HTTP/SMTP drivers open direct TLS connections to the target's hosts, which those hosts can log. To stay fully passive, use the `--driver crtsh` (Certificate Transparency via crt.sh) or Censys driver so you never touch the target infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by lanrat on GitHub; packaged in Kali and BlackArch. Mechanism (CT logs / live cert SANs) is verifiable and deterministic, not a proprietary black box.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CertGraph"
+    ],
+    "tags": [
+      "certificate-search",
+      "domain-recon",
+      "Code"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/certificate-search/certgraph.md"
   },
   {
@@ -177464,41 +177397,55 @@
   {
     "id": "link-cash-locator-app",
     "name": "LINK Cash Locator App",
-    "description": "ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man",
+    "description": "Use when you have a `geolocation`/`address` in the UK or Crown Dependencies and want the nearest cash machines — returns ATM `address`es and map `geolocation`s from the LINK network.",
     "url": "https://play.google.com/store/apps/details?id=com.linkschemeltd.atmlocator&hl=en_CA",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping ATMs near a point in the UK, Jersey, Guernsey, Gibraltar or the Isle of Man.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Android app published by LINK Scheme Ltd; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Queries run against LINK's public ATM directory, not against any person, so it leaks nothing about a target. It does request your location/map data through the app — run it on a clean device if that matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Published by LINK Scheme Ltd, the operator of the UK's national ATM network; the underlying data is authoritative first-party ATM location data.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "LINK ATM Locator",
+      "Cash Locator"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/link-cash-locator-app.md"
   },
   {
@@ -280322,38 +280269,56 @@
   {
     "id": "library-genesis",
     "name": "Library Genesis",
-    "description": "\"search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere\" (c)",
+    "description": "Use when you have an author `name` or a title and want to find/read the books or academic papers behind it — returns document metadata and `document-id`s (ISBN/DOI) plus downloadable full text.",
     "url": "https://libgen.fun",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating and reading books and academic articles by title, author, ISBN, or DOI, including paywalled material.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search and download; no account. Availability is unstable — the project runs across rotating mirror domains and individual mirrors go up and down.",
+    "opsec": "active",
+    "opsecNote": "Library Genesis is a shadow library and legally contested in many jurisdictions; accessing it can be logged by your ISP and downloads may carry legal/copyright risk. Use a VPN/sock-puppet connection and treat any downloaded file as untrusted (scan before opening).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous, mirror-hosted shadow library with no accountable operator; catalog metadata is community-uploaded and files can be mislabeled or tampered with.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "LibGen",
+      "Libgen",
+      "Library Genesis"
+    ],
     "tags": [
       "Search engines",
-      "Filesharing Search Engines"
+      "Filesharing Search Engines",
+      "academic-search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/library-genesis.md"
   },
   {
@@ -293587,38 +293552,54 @@
   {
     "id": "trufflepiggy-context-search",
     "name": "Trufflepiggy (Context Search)",
-    "description": "Search selected text in different search engines and sites from Google Chrome context menu.",
-    "url": "https://chrome.google.com/webstore/detail/trufflepiggy-context-sear/chffnhocnckigoapjdienmaphjnljpmo",
+    "description": "Use when you have selected `image` or text on a page and want to fan a lookup out across many search engines/OSINT sites at once — returns `social-profile`, `image` matches, and site hits from a right-click menu.",
+    "url": "https://chromewebstore.google.com/detail/trufflepiggy-context-sear/chffnhocnckigoapjdienmaphjnljpmo",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Right-click multi-engine and reverse-image searches on selected text or images without retyping into each site.",
+    "selectorsIn": [
+      "image",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome/Chromium extension; no account or payment required.",
+    "opsec": "active",
+    "opsecNote": "Each launched search sends the selected text/image to whatever third-party engines you configured, from your browser session. Run it in a sock-puppet browser profile so queries about a target are not tied to your real accounts or cookies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent extension (~1k users, 4.5-star/22 ratings) migrated to Manifest V3 and updated May 2025; it only automates opening searches, it stores no target data itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Context Search",
+      "Trufflepiggy"
+    ],
     "tags": [
-      "Search engines",
-      "Universal search tools"
+      "Universal search tools",
+      "reverse-image-search",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/trufflepiggy-context-search.md"
   },
   {

@@ -357,7 +357,7 @@ kind: group-index
 - **`lendx`** (low) — OSINT tool: LENDX.
 - **`lexcraft-cornell-university-legal-wiki-canada`** (low) — Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-informati
 - **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
-- **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
+- **`library-genesis`** (low) — Use when you have an author `name` or a title and want to find/read the books or academic papers behind it — returns document metadata and `
 - **`lilo`** (medium) — Use when you want an alternate (French) search front-end to cross-check results outside your usual engine — returns general web results with
 - **`limetorrents`** (medium) — Use when you have a `username`/uploader handle or a content keyword and want to see torrents linked to it — returns uploader `social-profile
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
@@ -609,7 +609,7 @@ kind: group-index
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
-- **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
+- **`trufflepiggy-context-search`** (low) — Use when you have selected `image` or text on a page and want to fan a lookup out across many search engines/OSINT sites at once — returns `
 - **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
 - **`tviv`** (medium) — Use when you have a name or clue about a TV programme and want to identify the show, its network, air dates, and cast — returns name and ass

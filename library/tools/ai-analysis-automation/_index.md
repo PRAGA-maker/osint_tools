@@ -295,7 +295,6 @@ kind: group-index
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
 - **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
-- **`qlikview`** (low) — OSINT tool: QlikView.
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
 - **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
@@ -330,9 +329,7 @@ kind: group-index
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
 - **`snappa`** (low) — OSINT tool: Snappa.
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
-- **`social-links`** (low) — OSINT tool: Social Links.
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
-- **`spideroak`** (low) — OSINT tool: Spideroak.
 - **`spidersuite`** (low) — OSINT tool: SpiderSuite.
 - **`spotify-monitor`** (low) — Use when you have a Spotify `username`/user URI and want to track a subject's listening in near-real-time — returns social-profile activity,
 - **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
@@ -351,7 +348,7 @@ kind: group-index
 - **`textures-js`** (low) — OSINT tool: Textures.js.
 - **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
-- **`the-fuck`** (low) — Simple app which corrects your previous console commands.
+- **`the-fuck`** (low) — Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profi
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.

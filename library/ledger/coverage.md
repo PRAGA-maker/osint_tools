@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7203 total · 5732 full · 1471 stub (79% enriched)
+**Tools:** 7200 total · 5739 full · 1461 stub (79% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3226 · medium: 2013 · high: 1964
+low: 3223 · medium: 2013 · high: 1964
 
 ## Tools by trust
-community: 3453 · trusted: 1900 · unverified: 1844 · untrustworthy: 6
+community: 3454 · trusted: 1901 · unverified: 1839 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 176/419
+- `ai-analysis-automation` — 177/416
 - `archives-cache` — 96/115
-- `communities-forums` — 252/285
+- `communities-forums` — 253/285
 - `dark-web` — 54/98
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 140/278
-- `domains-ip-infrastructure` — 441/644
+- `documents-metadata` — 141/278
+- `domains-ip-infrastructure` — 442/644
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 78/95
@@ -28,11 +28,11 @@ community: 3453 · trusted: 1900 · unverified: 1844 · untrustworthy: 6
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 107/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 176/492
+- `opsec-investigator-tooling` — 177/492
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 914/992
-- `search-engines` — 561/746
+- `search-engines` — 563/746
 - `social-networks` — 749/774
 - `training-ctf` — 6/12
 - `translation-language` — 43/94
@@ -46,7 +46,7 @@ community: 3453 · trusted: 1900 · unverified: 1844 · untrustworthy: 6
 - `library/tools/search-engines` — 698 leaves
 - `library/tools/opsec-investigator-tooling` — 481 leaves
 - `library/tools/domains-ip-infrastructure` — 433 leaves
-- `library/tools/ai-analysis-automation` — 391 leaves
+- `library/tools/ai-analysis-automation` — 388 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 282 leaves

@@ -233,7 +233,7 @@ kind: group-index
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.
 - **`svbtle`** (medium) — Use when you have a `username` and want to find a subject's minimalist blog on the Svbtle network — returns `social-profile`, long-form post
-- **`sympsons-screencaps-search`** (low) — OSINT tool: Sympsons screencaps search.
+- **`sympsons-screencaps-search`** (low) — Use when you have a quote or a suspected Simpsons `image`/meme and want to source the exact frame — returns the matching screenshot, episode
 - **`taxi-driver-co-uk`** (medium) — Use when you have a `username` in the UK private-hire/taxi trade and want a matching forum profile — returns social-profile, posts, and loca
 - **`tech-advisor-uk`** (low) — Use when you have a `name` of a UK technology journalist/contributor and want their byline archive and articles — a consumer-tech publicatio
 - **`techcrunch`** (low) — Use when you have a `name` or `employer-org` in the startup/tech world and want coverage of funding, launches and people — returns `employer
