@@ -131,7 +131,6 @@ kind: group-index
 - **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t
 - **`fotor`** (low) — OSINT tool: Fotor.
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
-- **`frack`** (low) — OSINT tool: Frack.
 - **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
 - **`geekflare-tools`** (low) — 39 online free tools for website testing
@@ -280,7 +279,7 @@ kind: group-index
 - **`pinpoint`** (medium) — Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns i
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
 - **`pixxa`** (low) — OSINT tool: Pixxa.
-- **`pldb`** (low) — A huge knowledge base of 4050 programming languages. For each language you can see its place in the ranking, the number of users and reposit
+- **`pldb`** (low) — Use when you have a programming-language name or artifact and want authoritative background on that language (origin, ranking, features, ref
 - **`plotly`** (low) — OSINT tool: Plotly.
 - **`preceden`** (low) — OSINT tool: Preceden.
 - **`prism`** (low) — OSINT tool: PRISM.

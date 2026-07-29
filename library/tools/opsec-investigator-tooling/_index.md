@@ -438,7 +438,7 @@ kind: group-index
 - **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
 - **`walmart-shopping-app-mobile-ios`** (low) — App for mobile devices for online shopping through Walmart
 - **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
-- **`waterfox`** (low) — OSINT tool: Waterfox.
+- **`waterfox`** (low) — Use when you want a hardened, low-telemetry Firefox-based browser for investigative sessions — returns a privacy-focused browsing environmen
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti

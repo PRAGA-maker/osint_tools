@@ -35,7 +35,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- sn-radar-vk-photo-search
+- snradar
 aliases:
 - OSINT Dashboard
 - osintdashboard.azurewebsites.net

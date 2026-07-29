@@ -29,7 +29,16 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- global-terriorism-database
+- murph-live
+- parrot-security
+- tormap
+- twitter-advanced-search
+- twitter-com
+- twitter-date-search
+- twitter-image-search
+- twitter-x-location-search
 aliases:
 - Twitter Analytics
 - X Analytics

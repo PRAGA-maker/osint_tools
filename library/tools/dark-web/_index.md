@@ -22,7 +22,7 @@ kind: group-index
 - **`bitpharma`** (low) — OSINT tool: BitPharma.
 - **`black-market`** (low) — OSINT tool: Black Market.
 - **`blockpath-com`** (low) — OSINT tool: Blockpath.com.
-- **`browseriling`** (low) — OSINT tool: Browseriling.
+- **`browseriling`** (low) — Use when you have an `.onion` or clearnet URL and want to open it in a real cloud Tor browser without installing anything — returns a render
 - **`canadian-numbering-administrator`** (medium) — Use when you have a Canadian `phone` number and want the carrier behind it — returns the operating company (carrier) assigned that NPA-NXX c
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
 - **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return

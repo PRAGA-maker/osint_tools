@@ -55,7 +55,6 @@ kind: group-index
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — Use when you have a `name`, `username`, or `domain` and want a second general web index for cross-checking — returns `social-profile` and `d
-- **`ap`** (low) — OSINT tool: AP.
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l
 - **`app-store-custom-search-engine`** (medium) — Use when you have an app name, developer, or `username` and want to search Apple/Google app-store listings — returns developer org, linked s
 - **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
@@ -232,7 +231,7 @@ kind: group-index
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
 - **`gexsi`** (low) — Use when you have a `name`, `username`, or keyword and want an additional general-web index to widen coverage — returns web page results (`s
 - **`gibiru`** (low) — Use when you have a `name`/keyword and want uncensored, non-personalised web results that a mainstream engine may filter or rank down — retu
-- **`gifcities-org`** (low) — GIF Search Engine from archive.org
+- **`gifcities-org`** (low) — Use when you have a keyword and want to find animated GIFs salvaged from 1990s GeoCities pages — returns period GIFs each linked back to its
 - **`gijn-online-research-tools`** (medium) — Use when you need a vetted OSINT/verification tool for a task and want a journalist-grade curated list — returns pointers to tools for recor
 - **`girlsaskguys`** (medium) — Use when you have a `username` and want their posts/opinions on this relationships Q&A community — returns social-profile and username.
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
@@ -322,7 +321,7 @@ kind: group-index
 - **`jobsdb-asia`** (medium) — Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV
 - **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
 - **`journal-guide`** (low) — OSINT tool: Journal Guide.
-- **`journal-seek`** (low) — OSINT tool: Journal Seek.
+- **`journal-seek`** (low) — Use when you have a journal name/abbreviation or ISSN and want to identify the publication and its scope/homepage — returns journal metadata
 - **`journalist-s-toolbox-investigative`** (medium) — Use when you need a vetted starting point for an investigation and want a curated directory of people-tracing, public-records, and verificat
 - **`jstor`** (low) — OSINT tool: JSTOR.
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
@@ -444,7 +443,6 @@ kind: group-index
 - **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
 - **`orange-france`** (low) — OSINT tool: Orange (France).
 - **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
-- **`orion`** (low) — open-Source Search Engine for social networking websites.
 - **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
 - **`oscobo`** (medium) — Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links
 - **`osint-blogs-search-engine`** (low) — Use when you have a `name`, `username`, tool, or technique and want to search a curated set of OSINT blogs and practitioner writeups at once

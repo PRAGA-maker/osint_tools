@@ -155,7 +155,7 @@ kind: group-index
 - **`madeit-australia`** (low) — Website related to arts and crafts events
 - **`malware-analysis-tools`** (low) — Use when you have a suspicious file/sample and need to choose the right analysis tool and safe methodology — a curated reference directory, 
 - **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
-- **`meawfy`** (low) — OSINT tool: Meawfy.
+- **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`mediainforobot`** (low) — telegram bot to getting metadata from different types of files
 - **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands

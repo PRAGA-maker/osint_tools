@@ -187,7 +187,7 @@ kind: group-index
 - **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
 - **`hakrawler`** (low) — Use when you have a `domain` and want to crawl it fast for links, endpoints, JS files and in-scope assets — returns URLs and `domain`s (subd
-- **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
+- **`hcl-threat-map`** (low) — Use when you want a live, region/industry-filtered dashboard of recent deep/dark-web cyberattack activity — returns aggregated threat trends
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
 - **`hexometer-stack-checker`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack — returns the CMS, frameworks, analytics IDs and third-part

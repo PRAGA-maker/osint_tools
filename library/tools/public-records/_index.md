@@ -736,7 +736,7 @@ kind: group-index
 - **`registrant-directory`** (medium) — Use when you have a physician's `name` in British Columbia and want to verify their medical registration/licence — returns registration stat
 - **`rehold`** (medium) — Use when you have a US `address` and want current/historical residents plus their phones — returns `name`, `phone`, `associate`, property de
 - **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
-- **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.
+- **`rental-in-canada`** (low) — Use when you have a business `name` or `address` in Canada and want its listing — returns address, phone, and reviews from the n49 local dir
 - **`research-rabbit`** (medium) — Use when you have an academic's `name` or a known paper and want their body of work and collaborators — returns papers, co-authors (`associa
 - **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
 - **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 

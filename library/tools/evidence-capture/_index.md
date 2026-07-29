@@ -28,7 +28,7 @@ kind: group-index
 - **`online-tool-to-extract-links-from-any-web-page`** (low) — Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subje
 - **`page-links-extractor-tool`** (low) — OSINT tool: Page Links Extractor Tool.
 - **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
-- **`soundscrape`** (low) — Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com.
+- **`soundscrape`** (low) — Use when you have a `social-profile` on SoundCloud/Bandcamp/Mixcloud/Audiomack and want to archive the target's audio uploads as evidence — 
 - **`stream-downloader`** (low) — Use when you have a `url` to a video/audio/live-stream page (mostly Chinese platforms) and want to archive the media as evidence — returns a
 - **`timeline-js3`** (medium) — Use when you have a set of dated events/evidence and want to build an interactive multimedia chronology — returns a shareable/embeddable web
 - **`wenku`** (low) — download documents from Baidu Wenku without registration
