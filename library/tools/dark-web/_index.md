@@ -65,7 +65,7 @@ kind: group-index
 - **`onion-search-engine`** (low) — OSINT tool: Onion search engine.
 - **`onions-darknetlive`** (low) — Use when you need current, curated `.onion` addresses for darknet markets and forums — returns verified onion `domain` links to reach dark-w
 - **`onionsearch`** (low) — Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URL
-- **`osint-me-1`** (low) — OSINT tool: osint.me 1.
+- **`osint-me-1`** (low) — Use when you have a `username`/`email` and want a vetted starting list of Tor onion indexers, leak archives, and dark-web news to search for
 - **`osint-me-2`** (low) — OSINT tool: osint.me 2.
 - **`osint-me-3`** (low) — OSINT tool: osint.me 3.
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 

@@ -242,7 +242,7 @@ kind: group-index
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
 - **`github-with-awesome-list-search-engine`** (low) — Use when you need to discover an OSINT/security tool or resource — returns matches scoped to GitHub "awesome-*" curated lists via a Google C
 - **`globalleaks`** (low) — Use when you need to RECEIVE tips securely or recognise a whistleblowing intake site — open-source software that powers anonymous, encrypted
-- **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
+- **`globalspec-engineer-search-engine`** (low) — Use when you have an `employer-org` or engineering product/spec and want to identify suppliers, manufacturers, and industry contacts — retur
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
 - **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
@@ -273,7 +273,7 @@ kind: group-index
 - **`google-unlocked`** (low) — Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into t
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
 - **`googledrive-search-engine`** (low) — Use when you have a `name`, keyword, or filename and want to find publicly-shared Google Drive/Docs files indexed by Google — returns expose
-- **`googler`** (low) — command line google search tool
+- **`googler`** (low) — Use when you have a `name`/`username`/`email`/`phone`/`domain` and want to run scriptable Google web/news/site searches from the terminal — 
 - **`goosh-org`** (low) — online google search command line tool
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Use when you have an `employer-org` or keyword and want US federal grant activity — returns funding opportunities and (via awards) organisat
@@ -342,7 +342,7 @@ kind: group-index
 - **`kids-search`** (low) — Kid-friendly search engine.
 - **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
 - **`kidsites-com`** (low) — Listing of youth-related websites
-- **`kidsnet-search-engine-australia`** (low) — Kid friendly search engine, including a dictionary, thesauras, and encylopedia
+- **`kidsnet-search-engine-australia`** (low) — Use when you want a filtered, child-safe general web search plus a bundled dictionary/thesaurus/encyclopedia — a niche search front-end with
 - **`kidtopia`** (low) — Kid-friendly search engine.
 - **`kidzsearch`** (low) — Use when you want a SafeSearch-locked, ad-light web search for a `name`/topic — a filtered Google front end returning family-safe results; m
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 

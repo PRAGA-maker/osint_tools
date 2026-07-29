@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7232 total · 5664 full · 1568 stub (78% enriched)
+**Tools:** 7229 total · 5671 full · 1558 stub (78% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3257 · medium: 2011 · high: 1964
+low: 3254 · medium: 2011 · high: 1964
 
 ## Tools by trust
-community: 3453 · unverified: 1889 · trusted: 1883 · untrustworthy: 6 · personal: 1
+community: 3453 · trusted: 1886 · unverified: 1883 · untrustworthy: 6 · personal: 1
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 170/423
+- `ai-analysis-automation` — 170/421
 - `archives-cache` — 96/118
 - `communities-forums` — 250/286
-- `dark-web` — 51/99
+- `dark-web` — 52/99
 - `dating-classifieds` — 82/90
 - `documents-metadata` — 131/282
-- `domains-ip-infrastructure` — 426/648
+- `domains-ip-infrastructure` — 427/648
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 74/95
@@ -28,12 +28,12 @@ community: 3453 · unverified: 1889 · trusted: 1883 · untrustworthy: 6 · pers
 - `image-video-face` — 446/451
 - `maps-geospatial-data` — 106/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 166/497
+- `opsec-investigator-tooling` — 167/496
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 912/995
-- `search-engines` — 557/749
-- `social-networks` — 746/775
+- `search-engines` — 560/749
+- `social-networks` — 747/775
 - `training-ctf` — 6/12
 - `translation-language` — 41/94
 - `transportation` — 161/202
@@ -46,7 +46,7 @@ community: 3453 · unverified: 1889 · trusted: 1883 · untrustworthy: 6 · pers
 - `library/tools/search-engines` — 700 leaves
 - `library/tools/opsec-investigator-tooling` — 484 leaves
 - `library/tools/domains-ip-infrastructure` — 433 leaves
-- `library/tools/ai-analysis-automation` — 394 leaves
+- `library/tools/ai-analysis-automation` — 392 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 283 leaves

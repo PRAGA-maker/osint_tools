@@ -90,7 +90,7 @@ kind: group-index
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
 - **`commits-top`** (medium) — Use when you have a country/city and want the most active GitHub developers there — returns ranked `social-profile`s (GitHub usernames) by c
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
-- **`covaxxy`** (low) — OSINT tool: CoVaxxy.
+- **`covaxxy`** (low) — Use when you want to study state-level COVID-19 vaccine misinformation and hashtag/news-sharing patterns on Twitter — a research dashboard/d
 - **`crowdtangle`** (low) — Use when you want historical Facebook/Instagram public-post monitoring — but note the tool was SHUT DOWN by Meta in August 2024 and is no lo
 - **`dashboard-laterforreddit-com-analysis`** (medium) — Use when you have a subreddit and want its activity patterns — returns best-post-time heatmaps and popular-post trends for that community.
 - **`datanyze-com`** (medium) — Use when you have a `name` on LinkedIn or an `employer-org` and want business contact data — returns work `email`, direct-dial `phone` and f

@@ -65,7 +65,6 @@ kind: group-index
 - **`blackhole`** (low) — OSINT tool: BlackHole.
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
 - **`bool`** (low) — Boolean search assistant
-- **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
 - **`brave-browser`** (medium) — Use when you need a privacy-hardened browser for sock-puppet OSINT work — returns no selectors itself; it is the anonymised viewing surface 
 - **`bugmenot`** (low) — Use when you hit a registration wall on a low-stakes website and want a shared throwaway login to view content without creating an account —
 - **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
@@ -267,7 +266,7 @@ kind: group-index
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
 - **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
-- **`netsurf`** (low) — Multi-platform web browser program
+- **`netsurf`** (low) — Use when you want a lightweight, minimal-footprint web browser for a disposable/low-resource investigation VM — a small independent browser,
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
 - **`nino-generator`** (low) — Use when you're building a UK sock-puppet identity and need a plausibly-formatted but fake National Insurance Number for a test field — retu
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials

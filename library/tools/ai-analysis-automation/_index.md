@@ -93,7 +93,6 @@ kind: group-index
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — OSINT tool: D3js.
 - **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
-- **`data-to-go`** (low) — OSINT tool: Data to Go.
 - **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfu
@@ -111,7 +110,6 @@ kind: group-index
 - **`discoshell`** (low) — OSINT tool: Discoshell.
 - **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
-- **`do-not-track`** (low) — OSINT tool: Do Not Track.
 - **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
 - **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do
 - **`dropbase`** (low) — OSINT tool: Dropbase.

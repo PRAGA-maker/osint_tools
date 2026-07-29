@@ -7,7 +7,7 @@ kind: group-index
 # root
 
 ## Sub-groups
-- **`ai-analysis-automation/`** — 429 skill(s) below.
+- **`ai-analysis-automation/`** — 427 skill(s) below.
 - **`archives-cache/`** — 119 skill(s) below.
 - **`communities-forums/`** — 295 skill(s) below.
 - **`dark-web/`** — 100 skill(s) below.
