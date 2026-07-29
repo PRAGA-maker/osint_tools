@@ -110,7 +110,7 @@ kind: group-index
 - **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
 - **`cloudmare`** (low) — Use when you have a `domain` behind Cloudflare/Sucuri/Incapsula and want to uncover its real origin server IP via DNS/history misconfigurati
 - **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
-- **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
+- **`cmlabs-tools`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack (CMS, server, JS libraries, widgets) — returns the detected
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
@@ -335,7 +335,7 @@ kind: group-index
 - **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 
 - **`raymond`** (low) — Framework for gathering information about website
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
-- **`reconnor`** (low) — Educational recon and OSINT tool suite.
+- **`reconnor`** (low) — Use when you have a `domain`, `username`, or `email` and want a broad Python recon/OSINT toolkit in one place — returns subdomains, `social-
 - **`redirectdetective`** (low) — Use when you have a shortened or suspicious URL/`domain` and want to reveal its full redirect chain and final destination without visiting i
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
 - **`regexper`** (low) — Use when you have a regular expression and want to understand or debug it — pastes a regex and returns a railroad-diagram visualization; a h

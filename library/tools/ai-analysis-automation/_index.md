@@ -231,7 +231,7 @@ kind: group-index
 - **`nodebox`** (low) — OSINT tool: Nodebox.
 - **`observable`** (low) — OSINT tool: Observable.
 - **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;
-- **`oda-the-online-disassembler`** (low) — OSINT tool: ODA - The Online Disassembler.
+- **`oda-the-online-disassembler`** (low) — Use when you have a binary or raw bytes (from a suspect file, firmware, shellcode) and want to disassemble it in-browser — returns architect
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
@@ -398,7 +398,7 @@ kind: group-index
 - **`world-monitor`** (low) — Geopolitical OSINT, global event monitoring, early warning intelligence gathering
 - **`wot`** (low) — OSINT tool: WOT.
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
-- **`x86-and-x64-intel-assembler`** (low) — OSINT tool: x86 and x64 Intel Assembler.
+- **`x86-and-x64-intel-assembler`** (low) — Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disa
 - **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 
 - **`you-com`** (low) — Use when you have a `name`/`username` and want an AI-summarized web sweep with citations — returns synthesized answers plus linked source pa
 - **`youcode`** (low) — Add free, privacy source code search engine with popular tech sites snippets in search results: Mozilla Developer Network; Github; W3 School

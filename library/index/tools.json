@@ -9837,35 +9837,48 @@
   {
     "id": "oda-the-online-disassembler",
     "name": "ODA - The Online Disassembler",
-    "description": "OSINT tool: ODA - The Online Disassembler.",
+    "description": "Use when you have a binary or raw bytes (from a suspect file, firmware, shellcode) and want to disassemble it in-browser — returns architecture-aware assembly and object metadata.",
     "url": "https://onlinedisassembler.com/odaweb/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quick in-browser disassembly of PE/ELF/raw binaries across many CPU architectures without local tooling.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free cloud disassembler (Syscall7); no account for basic use.",
+    "opsec": "active",
+    "opsecNote": "You UPLOAD the binary to ODA's servers to disassemble it — the sample leaves your machine and is processed by a third party. Do not upload sensitive/case-confidential or malware you're not permitted to share; for those, use a local disassembler instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running cloud disassembler by Syscall7; reputable for what it is, but a third-party service you are trusting with uploaded samples.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ODA",
+      "Online Disassembler"
+    ],
+    "tags": [
+      "disassembler",
+      "reverse-engineering",
+      "malware-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/oda-the-online-disassembler.md"
   },
   {
@@ -11414,29 +11427,39 @@
   {
     "id": "osrframework",
     "name": "OSRFramework",
-    "description": "Comprehensive username and email enumeration with extensible architecture",
+    "description": "Use when you have a `username`, `email`, `name`, or `phone` and want to enumerate it across many platforms at once — returns matching `social-profile`s, candidate emails, and linked accounts.",
     "url": "https://github.com/i3visio/osrframework",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Comprehensive username and email enumeration with extensible architecture",
-    "input": "Usernames, email addresses, domains, phone numbers (platform-dependent)",
-    "output": "Consolidated results across platforms; GraphQL-compatible output; Maltego transforms",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "One-command multi-platform enumeration of a username/email/name via usufy/mailfy/searchfy/phonefy.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "username"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (AGPLv3+, i3visio); `pip install osrframework`. No account.",
     "opsec": "active",
-    "opsecNote": "Queries generate API requests across target services",
+    "opsecNote": "usufy/mailfy check each account by actually requesting the profile URL on each target platform, so those platforms see requests. This is active enumeration — run it from a sock-puppet egress/VPN, not an attributable IP, if the targets matter.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing, well-known i3visio project (usufy/mailfy lineage); still installable, but many of its platform checkers have bit-rotted as sites changed, so expect false negatives — hence status degraded.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -11444,11 +11467,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OSRFramework",
+      "usufy",
+      "mailfy"
+    ],
+    "tags": [
+      "username-enumeration",
+      "osint-automation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/osrframework.md"
   },
   {
@@ -17499,41 +17529,51 @@
   {
     "id": "x86-and-x64-intel-assembler",
     "name": "x86 and x64 Intel Assembler",
-    "description": "OSINT tool: x86 and x64 Intel Assembler.",
+    "description": "Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disassembled Intel-syntax instructions.",
     "url": "https://defuse.ca/online-x86-assembler.htm",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quick bidirectional assemble/disassemble of short x86/x64 snippets without local tooling.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool (Defuse Security); no account, no limits noted.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste short assembly/hex into the page, which is processed server-side (it runs GCC/objdump). Fine for benign snippets; for sensitive or malicious shellcode you don't want to share, use a local assembler instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of defuse.ca (Defuse Security / Taylor Hornby), a long-standing, well-regarded set of free security utilities.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "big-number-calculator",
       "defuse",
       "html-sanitizer-tool",
       "text-and-file-hash-calculator"
     ],
+    "aliases": [
+      "defuse online assembler"
+    ],
+    "tags": [
+      "assembler",
+      "reverse-engineering"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/x86-and-x64-intel-assembler.md"
   },
   {
@@ -65093,42 +65133,53 @@
   {
     "id": "cmlabs-tools",
     "name": "CMLabs Tools",
-    "description": "OSINT tool: CMLabs Tools.",
+    "description": "Use when you have a `domain` and want to fingerprint the site's technology stack (CMS, server, JS libraries, widgets) — returns the detected technologies and versions.",
     "url": "https://tools.cmlabs.co/en/technology-lookup",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting what technologies a website is built on (CMS, server, frameworks, trackers).",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for a few lookups; cmlabs free tools prompt a login/registration after ~5 uses.",
+    "opsec": "passive",
+    "opsecNote": "The lookup is run by cmlabs' servers against the target site, so your IP isn't what contacts the site. Passive from your side; note you may hit a login wall after several uses — use a research account if you sign in.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of 30+ free SEO tools from cmlabs (an SEO agency); a convenience tech-fingerprint tool, comparable to Wappalyzer/BuiltWith and only as accurate as its signatures.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "cmlabs technology lookup"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website technology look up"
+      "Website technology look up",
+      "tech-fingerprint"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cmlabs-tools.md"
   },
   {
@@ -81370,13 +81421,13 @@
   {
     "id": "reconnor",
     "name": "Reconnor",
-    "description": "Educational recon and OSINT tool suite.",
+    "description": "Use when you have a `domain`, `username`, or `email` and want a broad Python recon/OSINT toolkit in one place — returns subdomains, `social-profile` hits, breach/email data, and infra info.",
     "url": "https://github.com/enginestein/Reconnor",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Learning/basic recon across DNS, web, and OSINT tasks",
+    "bestFor": "A single Python suite bundling ~90 recon/OSINT scripts (subdomains, username search, email finding, tech fingerprinting).",
     "selectorsIn": [
       "domain",
       "username",
@@ -81384,17 +81435,19 @@
     ],
     "selectorsOut": [
       "domain",
-      "social-profile"
+      "social-profile",
+      "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python); `pip install -r requirements.txt`. Optional AI integrations (OpenAI/Anthropic/Gemini/Ollama) need your own keys.",
+    "opsec": "active",
+    "opsecNote": "Many modules actively query target platforms/hosts (username checks across 60+ sites, subdomain probing, port scanning). Treat it as active enumeration — run from a sock-puppet egress, and be aware some modules (port/SMB/LDAP scanning) directly touch target infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "personal",
-    "trustNote": "~2 stars; educational project.",
+    "trust": "unverified",
+    "trustNote": "A small single-author educational project (~2 stars, few commits); functional but low-maturity and low-adoption, so validate results and read the scripts before trusting them.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -81403,14 +81456,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Reconnor"
+    ],
     "tags": [
       "educational",
       "recon-suite"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reconnor.md"
   },
   {
@@ -173333,54 +173391,6 @@
     "_file": "library/tools/opsec-investigator-tooling/fake-youtube-channel-generator.md"
   },
   {
-    "id": "fakeinfo",
-    "name": "Fakeinfo",
-    "description": "Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, WhatsApp, Line, Linkedin.",
-    "url": "https://fakeinfo.net/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face",
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Sock Puppets"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fake-company-name-generator",
-      "fake-drivers-license-generator",
-      "fake-tiktok-profile-generator",
-      "fake-youtube-channel-generator",
-      "fakeinfo-net",
-      "random-face-generator",
-      "twitter-profile-generator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/fakeinfo.md"
-  },
-  {
     "id": "fastscanner-app-mobile-android",
     "name": "Fastscanner App (Mobile – Android)",
     "description": "Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner producing a file you can then OCR or store as evidence (no subject selectors).",
@@ -227350,37 +227360,47 @@
   {
     "id": "gapminder-world",
     "name": "Gapminder World",
-    "description": "OSINT tool: Gapminder World.",
+    "description": "Use when you need free, well-sourced country-level development statistics (health, income, demographics) for context — returns downloadable indicators and interactive charts; aggregate data only.",
     "url": "http://www.gapminder.org/data",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free, attributable world-development indicators and bubble-chart visualisations for background context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free (\"and always will be free\"); CSV downloads and online tools, no account.",
+    "opsec": "passive",
+    "opsecNote": "A public statistics site — no query concerns any individual. Fully passive background research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An independent Swedish foundation (Hans Rosling's Gapminder); data is compiled from World Bank/UN/WHO sources with documented methodology and attribution.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Gapminder",
+      "Gapminder World"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gapminder-world.md"
   },
   {

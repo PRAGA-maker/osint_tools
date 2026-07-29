@@ -326,7 +326,7 @@ kind: group-index
 - **`funeral-notices-death-notices-and-obituaries-australia`** (high) — Use when you have a `name` and want Australian death/funeral notices — returns family-member associate names, funeral location/date and deat
 - **`funeralnet`** (high) — Use when you have a `name` and want to confirm a death and surface funeral/obituary details — date, hometown and surviving family — across U
 - **`funeraltimes-com`** (high) — Use when you have a `name` and want Northern Ireland / Ireland death and funeral notices — returns name, dob (death date), address, associat
-- **`gapminder-world`** (low) — OSINT tool: Gapminder World.
+- **`gapminder-world`** (low) — Use when you need free, well-sourced country-level development statistics (health, income, demographics) for context — returns downloadable 
 - **`gassaferegister-co-uk`** (medium) — Use when you have a UK gas engineer/business `name`, `employer-org`, or `address`/postcode and want to verify Gas Safe registration — return
 - **`gazettes-africa`** (high) — Use when you have a `name`/`employer-org` and want to full-text search African government gazettes for official notices (directorships, name
 - **`gdc-uk-org`** (high) — Use when you have a `name` (or registration number) and want to confirm a UK dental professional's registration, status and area — returns c

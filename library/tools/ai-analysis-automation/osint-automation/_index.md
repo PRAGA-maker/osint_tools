@@ -13,7 +13,7 @@ kind: group-index
 - **`intrec-pack`** (low) — Use when you want to stand up an OSINT/recon toolkit quickly — an installer/manager that downloads and sets up a curated bundle of intellige
 - **`microsoft-flow`** (low) — Use when you need to automate multi-step OSINT collection across APIs — returns scheduled/triggered workflows that call connectors and expor
 - **`omnibus`** (low) — Use when you have mixed artifacts (`ip-address`, `domain`, `email`, `username`, hash, wallet) and want a session-based CLI to enrich them ac
-- **`osrframework`** (low) — Comprehensive username and email enumeration with extensible architecture
+- **`osrframework`** (low) — Use when you have a `username`, `email`, `name`, or `phone` and want to enumerate it across many platforms at once — returns matching `socia
 - **`phoneinfoga`** (medium) — Use when you have a `phone` number and want to validate it and gather footprint intelligence (carrier, line type, VoIP flags, and search-eng
 - **`photon`** (low) — Use when you have a `domain`/URL and want to crawl it fast for emails, social links, files, subdomains, and keys — returns harvested `email`
 - **`scrummage`** (medium) — Use when you have a selector (name, username, email, domain, IP, wallet) and want to run it across many OSINT sources at once from one self-
