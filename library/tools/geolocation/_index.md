@@ -14,7 +14,7 @@ kind: group-index
 
 ## Skills here
 - **`24timezones-com`** (medium) — Use when you have a `geolocation` (city/country) and want its current local time, UTC offset, and DST state — returns the local wall-clock t
-- **`511on-ca`** (low) — OSINT tool: 511on.ca.
+- **`511on-ca`** (low) — Use when you have a `geolocation` or `address` in Ontario and want live road conditions, traffic cameras and closures at that spot — returns
 - **`acled-data-crisis-map`** (medium) — Use when you have a `geolocation` and want dated political-violence, protest, and conflict events there — returns geolocated events with dat
 - **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
 - **`airport-webcams`** (low) — OSINT tool: Airport Webcams.

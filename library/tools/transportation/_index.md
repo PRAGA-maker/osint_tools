@@ -47,7 +47,7 @@ kind: group-index
 - **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Use when you have a UK aircraft registration mark (`vehicle-plate`, e.g. G-ABCD) and want the registered owner — returns owner `name` and `a
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
-- **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
+- **`collection-of-public-transport-maps`** (low) — Use when you have a `geolocation`/city and want live public-transport tracking maps for it — returns real-time transit vehicle positions and
 - **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st
 - **`container-tracking-cargo`** (low) — Use when you have a shipping container number and don't know its carrier — returns links into the right carrier/lessor tracking portal to lo
 - **`container-tracking`** (low) — Use when you have a shipping container or B/L number and want its location and movement across carriers — returns container status, route, a
@@ -146,7 +146,7 @@ kind: group-index
 - **`reverse-genie-license-plate-search`** (medium) — Use when you have a US `vehicle-plate` and want to try to tie it to an owner — a free front-end that funnels toward name/address results, mo
 - **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
 - **`runmap`** (low) — running routes world map
-- **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis
+- **`russia-ukraine-monitor-map`** (low) — Use when you have a `geolocation` or `image` from the Russia-Ukraine conflict and want verified, geolocated open-source footage for that are
 - **`rzjets-net`** (low) — Use when you have an aircraft registration, serial, or type and want its history and operators — a community census of civil jet and turbopr
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
 - **`searates-container-tracking`** (low) — Use when you have a shipping container, Bill of Lading, or booking number (`document-id`) and want its current position and route — returns 

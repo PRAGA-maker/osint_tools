@@ -244,7 +244,7 @@ kind: group-index
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
 - **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv
 - **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
-- **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).
+- **`xifr-addons-mozilla-org`** (medium) — Use when you have an `image` on a web page and want to read its EXIF/IPTC/XMP metadata (including GPS) in-browser — returns metadata-exif an
 - **`xifr`** (medium) — Use when you have an image in your browser and want its embedded metadata — returns EXIF/IPTC/XMP fields including camera, timestamps and a 
 - **`yotpo`** (low) — eCommerce marketing platform offering advanced solutions for customer reviews and visual marketing
 

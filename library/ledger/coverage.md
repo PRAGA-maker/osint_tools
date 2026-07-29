@@ -2,29 +2,29 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7165 total · 5831 full · 1334 stub (81% enriched)
+**Tools:** 7164 total · 5840 full · 1324 stub (81% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3180 · medium: 2021 · high: 1964
+low: 3178 · medium: 2022 · high: 1964
 
 ## Tools by trust
-community: 3450 · trusted: 1924 · unverified: 1785 · untrustworthy: 6
+community: 3450 · trusted: 1927 · unverified: 1781 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 196/411
+- `ai-analysis-automation` — 197/410
 - `archives-cache` — 96/115
 - `communities-forums` — 254/285
 - `dark-web` — 56/95
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 148/274
-- `domains-ip-infrastructure` — 458/635
+- `documents-metadata` — 149/274
+- `domains-ip-infrastructure` — 462/635
 - `email` — 246/246
 - `evidence-capture` — 20/29
 - `financial-crypto` — 78/95
-- `geolocation` — 306/336
+- `geolocation` — 307/336
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 109/123
 - `messaging` — 182/184
@@ -36,7 +36,7 @@ community: 3450 · trusted: 1924 · unverified: 1785 · untrustworthy: 6
 - `social-networks` — 750/774
 - `training-ctf` — 6/12
 - `translation-language` — 48/94
-- `transportation` — 170/201
+- `transportation` — 172/201
 - `username` — 103/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -46,7 +46,7 @@ community: 3450 · trusted: 1924 · unverified: 1785 · untrustworthy: 6
 - `library/tools/search-engines` — 691 leaves
 - `library/tools/opsec-investigator-tooling` — 479 leaves
 - `library/tools/domains-ip-infrastructure` — 429 leaves
-- `library/tools/ai-analysis-automation` — 385 leaves
+- `library/tools/ai-analysis-automation` — 384 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 282 leaves

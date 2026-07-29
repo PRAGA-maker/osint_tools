@@ -48,7 +48,6 @@ kind: group-index
 - **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
 - **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
-- **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
 - **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
@@ -233,7 +232,7 @@ kind: group-index
 - **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
-- **`online-tools`** (low) — OSINT tool: Online Tools.
+- **`online-tools`** (low) — Use when you have an encoded/hashed string from collected data and want to decode, hash, encrypt or reformat it in the browser — returns the
 - **`open-pgp`** (low) — Use when an investigator needs to encrypt/sign email or verify a subject's PGP signature/key — returns encrypted comms and key/identity veri
 - **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
 - **`openrefine`** (low) — Use when you have a messy dataset from an investigation (scraped records, leaks, exports) and need to clean, cluster, and reconcile it — a l

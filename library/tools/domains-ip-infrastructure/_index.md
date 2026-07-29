@@ -200,7 +200,7 @@ kind: group-index
 - **`hypestat`** (low) — Use when you have a `domain` and want a free at-a-glance stats sheet — returns estimated traffic, hosting/`ip-address`, tech, and analytics/
 - **`iana-root-zone-database`** (low) — Use when you have a `domain`'s TLD and want the authoritative registry/sponsoring organization behind it — returns the TLD operator (`employ
 - **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons
-- **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
+- **`ibm-x-force-exchange-current-malicious-activity`** (low) — Use when you want a live map of current malicious activity and a jump-off point to look up specific IPs/domains/hashes in X-Force's intel — 
 - **`icann-lookup`** (low) — Use when you have a `domain` and want its authoritative registration data — returns the official RDAP/WHOIS record (registrar, dates, status
 - **`icann-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public r
 - **`idn-checker`** (low) — Use when you have a `domain` and want to find visually-similar (homograph) lookalike domains — returns registered impersonating `domain`s an
@@ -242,7 +242,7 @@ kind: group-index
 - **`isp-tools`** (low) — Use when you have a `domain`/`ip-address` and want to probe it from many global vantage points — runs ping, MTR, DNS, portscan, and MTU test
 - **`iwantmyname-search`** (low) — Use when you have a `domain` and want to check availability and basic WHOIS — returns registration/expiry dates, status, and nameservers, or
 - **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
-- **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
+- **`jsleak`** (low) — Use when you have a `domain`/URL list and want to mine its JavaScript for secrets, emails, endpoints and links — returns leaked emails, API 
 - **`jsluice`** (low) — Use when you have a target's JavaScript files (`domain`) and want to extract URLs, paths and hard-coded secrets/API keys from them — returns
 - **`kali-intelligence-suite-kis`** (low) — Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nm
 - **`kaspersky-cyberthreat-live-map`** (low) — Use when you want a live global picture of malware/attack detections by country — returns real-time threat-telemetry visualization, situatio
@@ -324,7 +324,7 @@ kind: group-index
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
 - **`r3con1z3r`** (low) — Use when you have a `domain` and want a one-command passive footprint bundled into an HTML report — returns WHOIS, DNS, headers, links and t
 - **`radb`** (low) — Use when you have an `ip-address`, prefix or ASN and want its Internet Routing Registry records — returns the registered route objects, orig
-- **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
+- **`radware-live-cyber-threat-map`** (low) — Use when you want an at-a-glance global picture of live cyber-attack activity by region and type — returns aggregate attack visualisation (n
 - **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 
 - **`raymond`** (low) — Framework for gathering information about website
 - **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr

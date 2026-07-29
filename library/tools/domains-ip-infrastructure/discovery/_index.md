@@ -10,7 +10,7 @@ kind: group-index
 - **`analyzeid`** (low) — Use when you have a `domain` and want other sites the same person runs — pivots on shared Google Analytics/AdSense/Amazon/tracking IDs and e
 - **`builtwith`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack, trackers, and hosting/analytics IDs — returns pivotable `d
 - **`criminal-ip-search`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, risk score and hosting context — returns asset fing
-- **`kraken`** (low) — CLI-driven reconnaissance against domain and host assets
+- **`kraken`** (low) — Use when you have a set of `domain`/`ip-address` hosts to test and want to organise screenshots, notes and progress across a team — returns 
 - **`online-nikto-scanner`** (low) — Web server vulnerability scanning
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior
 - **`shodan`** (low) — Use when you have an `ip-address`, `domain` or `employer-org` and want its internet-exposed devices/services — returns open ports, banners, 
