@@ -307,7 +307,7 @@ kind: group-index
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
 - **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
-- **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
+- **`open-multiple-links-one-click`** (low) — Use when you have a list of `domain`s/URLs and want to open them all at once — a free web utility that launches every link in its own tab fo
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
 - **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
 - **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
@@ -368,7 +368,7 @@ kind: group-index
 - **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
 - **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
-- **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
+- **`server-status-pwn`** (low) — Use when you have a `domain`/host with an exposed Apache /server-status and want to harvest live request data — returns visited `domain`s, U
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file

@@ -48,7 +48,7 @@ kind: group-index
 - **`alleba-philippines`** (low) — Use when your subject or content is Philippine and you want a local search engine/directory that surfaces PH sites a global engine buries — 
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — Use when you have a `name`/`username`/keyword and want one query fanned across many engines and services — returns a launchpad of results fr
-- **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
+- **`american-society-of-civil-engineers`** (low) — Use when you have an engineer/researcher `name` and want their civil-engineering publications — returns authored papers with affiliations an
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
 - **`animalsearch`** (low) — Animal search directory aimed at kids
@@ -156,7 +156,7 @@ kind: group-index
 - **`cyber-criminals-most-wanted`** (low) — Use when you need reference material on a cybercrime type (scams, stalking, spam, hacking) and want plain-language explainers and resource p
 - **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
-- **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
+- **`cybersecurity-osint-paulveillard`** (low) — Use when you want to discover OSINT tools by category — a GitHub "awesome" list returning tool leads and methodology references, not subject
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Use when your subject is a tabletop wargamer and you have a `username` or `geolocation` and want to find their DakkaDakka member profile/loc
@@ -609,7 +609,7 @@ kind: group-index
 - **`topix`** (low) — OSINT tool: Topix.
 - **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
 - **`topuniversities`** (medium) — Use when you have an `employer-org` (a university a subject claims) and want to verify it is a real, ranked institution — returns institutio
-- **`torrent-seeker`** (low) — torrents search engine
+- **`torrent-seeker`** (low) — Use when you have a `name`, `username`, or keyword and want to search dozens of torrent indexes at once — returns torrent listings and uploa
 - **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t

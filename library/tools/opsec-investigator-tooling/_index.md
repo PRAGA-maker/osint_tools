@@ -24,7 +24,7 @@ kind: group-index
 - **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking
 - **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
 - **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
-- **`adobe-photoshop-express-app-mobile-ios`** (low) — App for mobile devices for creating editing and sharing image-related media
+- **`adobe-photoshop-express-app-mobile-ios`** (low) — Use when you have an `image` and want to edit/crop/annotate it on a phone — a mobile image editor for preparing sock-puppet avatars and mark
 - **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
 - **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
@@ -328,7 +328,6 @@ kind: group-index
 - **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
-- **`safari-for-macos`** (low) — Internet browser for Mac
 - **`safari`** (low) — Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web 
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
@@ -357,7 +356,7 @@ kind: group-index
 - **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
 - **`slack-business-communication-app-mobile-ios`** (low) — App for mobile devices for business communications and networking
 - **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
-- **`sleipnir`** (low) — OSINT tool: Sleipnir.
+- **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
 - **`slydial-ringless-voicemail-messaging`** (low) — Proxy voice messaging service that goes directly to a person's voicemail
 - **`smstome-com`** (low) — OSINT tool: Smstome.com.
@@ -454,7 +453,6 @@ kind: group-index
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
 - **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
-- **`webmapper`** (low) — Extension that create a map-visualization based by browser history. A visual representation of the most visited sites in 10, 20, 50 or 100 d
 - **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China

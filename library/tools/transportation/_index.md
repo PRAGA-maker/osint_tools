@@ -89,7 +89,7 @@ kind: group-index
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
 - **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w
-- **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
+- **`illegal-unreported-unregular-fishing-vessels-list`** (low) — Use when you have a vessel `name`, IMO/registration `document-id`, or call sign and want to check IUU-fishing blacklists — returns listing s
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
 - **`inmarsat-ships-directory`** (medium) — Use when you have a vessel name/ID and want its satellite contact numbers — returns Inmarsat mobile numbers (phone/telex/fax) for ships fitt
 - **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries

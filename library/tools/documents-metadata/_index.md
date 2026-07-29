@@ -78,7 +78,7 @@ kind: group-index
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
-- **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
+- **`easybib`** (low) — Use when you need to cite a tweet, webpage or document in MLA/APA/Chicago — a citation generator that formats a source into a reference for 
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
 - **`engage121`** (low) — Website offering social media content and publishing services
@@ -147,7 +147,6 @@ kind: group-index
 - **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
 - **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
-- **`joinme-screensharing-tool`** (low) — Website that provides screen sharing and online meetings
 - **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
 - **`katana`** (low) — Use when you have a Google dork / GHDB query and want it automated over Tor — returns the search-result URLs matching the dork.
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
