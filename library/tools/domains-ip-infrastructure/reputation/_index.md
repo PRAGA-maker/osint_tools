@@ -19,7 +19,7 @@ kind: group-index
 - **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.
 - **`url-void`** (low) — Use when you have a `domain` tied to your subject (a personal site, a link from their profile, a scam contact) and want to know if it is fla
 - **`urlquery-net`** (low) — Use when you have a suspicious `domain`/URL and want a safe hosted analysis of it — screenshots, hosting IP, redirects, and malware/phishing
-- **`vurl-online`** (low) — URL/domain dissection and reputation
+- **`vurl-online`** (low) — Use when you have a suspicious URL/`domain` and want to view its source and dissect it safely from a remote server — returns the page's HTML
 - **`web-inspector-online-scan`** (low) — Use when you have a suspicious `domain`/URL and want a free malware/blacklist scan of the site — returns a threat verdict and blacklist stat
 - **`webroot-brightcloud-url-ip-lookup`** (low) — Use when you have a `domain`, URL, or `ip-address` and want its reputation, web category, and risk score — returns domain, ip-address.
 - **`zscaler-zulu-url-risk-analyzer`** (low) — Use when you have a `domain`/URL and want a fast risk score plus content/host analysis of whether it is malicious — returns a risk verdict a

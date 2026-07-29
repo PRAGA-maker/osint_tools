@@ -79,7 +79,7 @@ kind: group-index
 - **`nonfungible-com`** (low) — Use when investigating NFT activity and you want market-level analytics and historical sales trends by collection — returns aggregated NFT m
 - **`north-data`** (low) — Search for people and companies in EU corporate and trade registers + visualize relationships
 - **`osint-assassin`** (low) — Use when you want a curated start.me link-collection of OSINT resources (crypto/blockchain-leaning) — returns a directory of tools to pivot 
-- **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
+- **`osint-cryptocurrencies`** (low) — Use when you have a `crypto-wallet`/transaction and want a curated, explained directory of crypto-investigation tools — returns a vetted sta
 - **`osint-tools-map`** (low) — Use when you have a country/region (or a `name`/`employer-org` tied to one) and need the local public registries and records to search — ret
 - **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
 - **`radixdlt-com`** (medium) — Use when you have a Radix `crypto-wallet` account address and want to inspect its on-chain activity — returns linked `crypto-wallet` address

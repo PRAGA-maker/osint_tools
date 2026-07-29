@@ -47,7 +47,7 @@ kind: group-index
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
-- **`awk-js`** (low) — AWK (script language) is a powerful command line tool for extracting data from texts and auto generating texts. For those who don't use CLI 
+- **`awk-js`** (low) — Use when you have a block of text/log/CSV output and want to extract, filter, or reshape fields quickly in the browser — a no-install AWK pl
 - **`barcode-reader`** (low) — Use when you have an `image` of a barcode, QR code, or ID/driver's-license and want the encoded data decoded — returns the payload, includin
 - **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
@@ -71,7 +71,7 @@ kind: group-index
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
 - **`cipherstick`** (low) — OSINT tool: Cipherstick.
-- **`circos`** (low) — OSINT tool: Circos.
+- **`circos`** (low) — Use when you have relational data (who-contacts-whom, wallet flows, co-occurrences) and want a circular link diagram to reveal the structure
 - **`code-repository-google-cse`** (low) — Google CSE for search 15 code repository services
 - **`code-understanding-tools-list`** (low) — Tools for understanding other people's code
 - **`codepen`** (low) — OSINT tool: CodePen.
@@ -252,7 +252,7 @@ kind: group-index
 - **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
 - **`osint-explorer`** (low) — Use when you have a `username`/`email`/`domain`/`ip-address` and want a scripted recon sweep — returns aggregated `social-profile`, `domain`
 - **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
-- **`osint-harvester`** (low) — Lightweight OSINT toolkit that collects and normalizes intelligence from multiple sources.
+- **`osint-harvester`** (low) — Use when you have a `domain`/`ip-address`/URL and want a scripted collect-and-normalize of DNS, WHOIS, HTTP headers, and IP reputation into 
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
 - **`osint-team`** (low) — OSINT tool: OSINT Team.

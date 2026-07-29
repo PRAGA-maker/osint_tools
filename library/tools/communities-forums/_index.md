@@ -196,7 +196,7 @@ kind: group-index
 - **`quora`** (low) — Use when you have a `name`/`username` and want a subject's Quora presence — returns social-profile, stated employer/education, interests, an
 - **`r-opendirectories`** (low) — Use when you want to find publicly-exposed open web directories (files, media, dumps) — returns links to open directories others have discov
 - **`radio-free-europe`** (medium) — Use when you have a `name` and want reporting from Eastern Europe, Russia, Central Asia, the Caucasus or Iran — returns `social-profile`/men
-- **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
+- **`radion-net`** (low) — Use when you have a `geolocation` (or a station name heard in audio/video) and want to identify local radio stations there — a geolocation-c
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.

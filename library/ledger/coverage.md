@@ -2,36 +2,36 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7222 total · 5688 full · 1534 stub (78% enriched)
+**Tools:** 7219 total · 5697 full · 1522 stub (78% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3247 · medium: 2011 · high: 1964
+low: 3244 · medium: 2011 · high: 1964
 
 ## Tools by trust
-community: 3451 · trusted: 1889 · unverified: 1875 · untrustworthy: 6 · personal: 1
+community: 3451 · trusted: 1891 · unverified: 1871 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 171/420
-- `archives-cache` — 96/118
-- `communities-forums` — 251/286
+- `ai-analysis-automation` — 174/420
+- `archives-cache` — 96/117
+- `communities-forums` — 252/286
 - `dark-web` — 54/99
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 134/280
-- `domains-ip-infrastructure` — 428/647
+- `documents-metadata` — 135/280
+- `domains-ip-infrastructure` — 429/647
 - `email` — 246/246
 - `evidence-capture` — 18/29
-- `financial-crypto` — 76/95
+- `financial-crypto` — 77/95
 - `geolocation` — 305/336
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 107/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 169/494
+- `opsec-investigator-tooling` — 170/492
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 912/995
+- `public-records` — 913/995
 - `search-engines` — 560/748
 - `social-networks` — 748/775
 - `training-ctf` — 6/12
@@ -44,7 +44,7 @@ community: 3451 · trusted: 1889 · unverified: 1875 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 944 leaves
 - `library/tools/social-networks` — 748 leaves
 - `library/tools/search-engines` — 699 leaves
-- `library/tools/opsec-investigator-tooling` — 482 leaves
+- `library/tools/opsec-investigator-tooling` — 481 leaves
 - `library/tools/domains-ip-infrastructure` — 433 leaves
 - `library/tools/ai-analysis-automation` — 391 leaves
 - `library/tools/image-video-face` — 357 leaves
@@ -57,7 +57,7 @@ community: 3451 · trusted: 1889 · unverified: 1875 · untrustworthy: 6 · pers
 - `library/tools/messaging` — 169 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/maps-geospatial-data` — 123 leaves
-- `library/tools/archives-cache` — 103 leaves
+- `library/tools/archives-cache` — 102 leaves
 - `library/tools/dating-classifieds` — 92 leaves
 - `library/tools/dark-web` — 89 leaves
 - `library/tools/username` — 86 leaves

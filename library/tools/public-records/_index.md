@@ -230,7 +230,7 @@ kind: group-index
 - **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
 - **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
 - **`dataset-domainsproject-org`** (low) — Use when you have a `domain` fragment or keyword and want to enumerate matching registered domains — returns a bulk `domain` list for patter
-- **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
+- **`datasetlist-com`** (low) — Use when you need a public machine-learning dataset (faces, images, text, audio) to build or benchmark a recognition/analysis model — return
 - **`datasetsearch-research-google-com`** (low) — Use when you need to find a published dataset on a topic (by keyword) across thousands of repositories — returns dataset listings with descr
 - **`dbpedia`** (low) — Use when you have an entity `name` (person, org, place) and want structured, machine-readable facts from Wikipedia — returns linked attribut
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam

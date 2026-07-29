@@ -86,7 +86,6 @@ kind: group-index
 - **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more
-- **`codegent-chinese-mandarin-phrases-app-mobile-android`** (low) — App for mobile devices for learning phrases in the Chinese Mandarin language
 - **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
@@ -261,7 +260,6 @@ kind: group-index
 - **`mit-pgp-public-key-server`** (low) — Use when you have an `email` or `name` and want to check for an associated PGP public key — the key's user IDs reveal linked `email`s and th
 - **`mozilla-firefox`** (low) — Internet browser program
 - **`mullvad-browser`** (low) — Use when you need a hardened, anti-fingerprinting browser for investigative work without Tor — a privacy browser that makes your OSINT sessi
-- **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
 - **`my-browser-info`** (low) — Use when you want to check what your own browser leaks before touching a target — returns your `ip-address`, user-agent and basic fingerprin
 - **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
 - **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
@@ -408,7 +406,7 @@ kind: group-index
 - **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
-- **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing
+- **`tumblr-social-networking-app-mobile-android`** (low) — Use when you have a `username`/keyword and want to explore a subject's Tumblr blog, tags, and reblog network — returns `social-profile`, `as
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
