@@ -33,7 +33,7 @@ kind: group-index
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
-- **`awesome-forensics`** (low) — OSINT tool: awesome-forensics.
+- **`awesome-forensics`** (low) — Use when you need to pick a digital-forensics tool for a task — returns a curated, categorised list of free/open-source forensic analysis to
 - **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
 - **`awesome-hacking`** (low) — OSINT tool: awesome-hacking.
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
@@ -250,7 +250,7 @@ kind: group-index
 - **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
 - **`osint-sh`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want a free no-login web toolkit — runs reverse-whois, DNS history, r
 - **`osint-team`** (low) — OSINT tool: OSINT Team.
-- **`osint-techniques`** (low) — OSINT tool: OSINT Techniques.
+- **`osint-techniques`** (low) — Use when you need a technique reference or a vetted tool for a selector — returns methodology write-ups and a curated OSINT tools directory.
 - **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — Use when you want to keep your tooling and tradecraft current — a free weekly newsletter rounding up new OSINT tools, techniques, and news f

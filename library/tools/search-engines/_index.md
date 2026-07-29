@@ -539,7 +539,7 @@ kind: group-index
 - **`searchdorks`** (low) — Use when you want a ready-made search dork for Google/Shodan/Censys/FOFA/ZoomEye and want to describe your goal in plain English — returns c
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
 - **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 
-- **`searcher`** (low) — A very fast and simple #go tool that allows you to collect search results from a list of keywords in the following search engines: Ask Bing 
+- **`searcher`** (low) — Use when you have a keyword/`name` and want results from many search engines at once — returns aggregated JSON links from Ask, Bing, Brave, 
 - **`searxng-baresearch-org`** (low) — Use when you want to search many engines at once without being tracked — a public SearXNG metasearch instance aggregating Google, Bing and o
 - **`searxng`** (low) — Use when you have a `name`, `username` or `email` and want to sweep many search engines at once without being profiled — returns aggregated 
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social

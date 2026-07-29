@@ -143,7 +143,6 @@ kind: group-index
 - **`catalogue-of-research-databases-occrp-id`** (low) — Use when you have a `name` or `employer-org` and need to know WHICH public register or database to search in a given country — returns point
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
 - **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
-- **`center-for-international-earth-science-information-network`** (low) — OSINT tool: Center for International Earth Science Information Network.
 - **`central-and-eastern-european-business-directory`** (low) — Use when you have an `employer-org` in Central/Eastern Europe and want a company-research gateway — returns a curated link to a CEE business
 - **`cepii`** (low) — OSINT tool: CEPII.
 - **`charteredaccountants-ie`** (medium) — Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and 
@@ -679,7 +678,7 @@ kind: group-index
 - **`paperpanda`** (medium) — Use when you have a paywalled academic article and want a free full-text PDF — returns a legally-available open-access copy in one click.
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
 - **`parler-capitol-videos`** (low) — Use when you have a time or `geolocation` at the US Capitol on Jan 6, 2021 and want ProPublica's archive of geolocated, timestamped Parler v
-- **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
+- **`paul-hensel-s-general-informational-data-page`** (low) — Use when you need country/state-level reference datasets for context — returns curated links to political-science, geography, and demographi
 - **`penn-world-table`** (low) — OSINT tool: Penn World Table.
 - **`pennsylvania-registered-voter-verification`** (medium) — Use when you have a `name` (plus DOB and county) for a Pennsylvania resident and want to confirm voter registration — returns registration s
 - **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB

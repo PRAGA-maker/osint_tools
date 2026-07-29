@@ -425,7 +425,6 @@ kind: group-index
 - **`vincos-it`** (low) — Use when you have a `geolocation`/country and want to know which social network dominates there — returns a country-by-country map of the le
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
 - **`vstat-info`** (low) — Use when you have a `domain` and want estimated traffic, audience and referral data — returns visitor estimates, traffic sources and related
-- **`w3snoop`** (low) — OSINT tool: w3snoop.
 - **`w3techs`** (low) — OSINT tool: w3techs.
 - **`weare-ie`** (medium) — Use when you have an Irish `.ie` `domain` and want registry-backed WHOIS and registrar details — returns registration status, registrar, and
 - **`web-check`** (low) — Use when you have a `domain` and want a one-page infrastructure profile — returns DNS, SSL/TLS, headers, server tech, hosting `ip-address`, 

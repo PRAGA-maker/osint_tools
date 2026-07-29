@@ -118,7 +118,6 @@ kind: group-index
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
-- **`export-chrome-history`** (low) — A simple extension for Googlechrome that allows you to save detailed information about links from browser history as CSV/JSON. Useful for bo
 - **`extremetech-virutal-box`** (low) — Program for Virtual Machine (VM) software that protects your system from malware and attacks
 - **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
 - **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
@@ -136,7 +135,7 @@ kind: group-index
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
 - **`fastscanner-app-mobile-android`** (low) — Use when you need to digitise a physical document or photo into a clean PDF/image in the field — turns a phone camera into a scanner produci
 - **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
-- **`fedora-security-lab`** (low) — OSINT tool: Fedora Security Lab.
+- **`fedora-security-lab`** (low) — Use when you want a ready-made security/forensics workstation — returns a live-bootable Fedora spin preloaded with pentesting and forensic t
 - **`fetching-title`** (low) — OSINT tool: Fetching title....
 - **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
 - **`findemails`** (low) — OSINT tool: FindEmails.
