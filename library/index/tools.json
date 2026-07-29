@@ -6460,43 +6460,59 @@
   },
   {
     "id": "hive-ai-generated-content-detection",
-    "name": "Hive AI Generated Content Detection",
-    "description": "High-volume AI content detection, bulk media verification in large investigation datasets",
+    "name": "Hive AI-Generated Content Detection",
+    "description": "Use when you have an `image`, video, or audio and want to test if it's AI-generated/deepfake — returns confidence scores and likely generator model.",
     "url": "https://hivemoderation.com/ai-generated-content-detection",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "High-volume AI content detection, bulk media verification in large investigation datasets",
-    "input": "Text, image, or video content via API or web demo",
-    "output": "AI generation probability scores for text, image, and video content",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Screening a photo, video, or audio clip for AI generation / deepfake manipulation during verification.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web demo (Hive Detect), a free Chrome extension, and an X bot for spot checks; high-volume/API use is paid.",
     "opsec": "active",
-    "opsecNote": "Content is processed by Hive Moderation servers; API key required for high-volume use.",
+    "opsecNote": "You upload the media (or a URL) to Hive's servers for analysis, so the file leaves your control and is processed by a third party — do not submit private/sensitive images you can't disclose. No alert reaches the media's subject. Uploading a URL causes Hive to fetch it, touching that host.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "rate-limit"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hive is an established commercial AI-moderation vendor; its detectors are widely used and it participates in industry deepfake-detection efforts. Scores are probabilistic — strong signal, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "deepware-scanner",
+      "sensity-ai"
+    ],
+    "aliases": [
+      "Hive Detect",
+      "Hive Moderation"
+    ],
+    "tags": [
+      "deepfake-detection",
+      "ai-content",
+      "media-verification"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/hive-ai-generated-content-detection.md"
   },
   {
@@ -11126,7 +11142,8 @@
     "relatedTools": [
       "nixintel",
       "osint-tools-yogsec",
-      "bellingcat-online-investigation-toolkit"
+      "bellingcat-online-investigation-toolkit",
+      "osint-techniques-tools"
     ],
     "aliases": [
       "osinttechniques.com"
@@ -13079,39 +13096,39 @@
   },
   {
     "id": "python-osint-automation-examples",
-    "name": "Python OSINT automation examples",
-    "description": "In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.",
+    "name": "Python OSINT Automation Examples",
+    "description": "Use when you want to script or automate an OSINT task in Python — returns copy-ready code snippets for common OSINT workflows.",
     "url": "https://github.com/cipher387/Python-osint-automation-examples",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Getting quick, ready-to-adapt Python snippets for automating OSINT lookups and data collection.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source GitHub repository of code examples; clone or copy snippets. Some examples call third-party APIs that may need their own keys.",
+    "opsec": "passive",
+    "opsecNote": "The repo itself is inert reference code — reading it touches no target. Any script you run inherits the footprint of the APIs/sites it queries; add your own proxying and rate-limiting for OpSec, and mind each API's terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Maintained by cipher387 (a prolific, well-followed OSINT-tools curator). Educational examples rather than a packaged library; review and adapt each snippet before use.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "My Projects"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
+      "one-liner-osint",
+      "osint-tools-yogsec",
       "advanced-search-operators-list",
       "apis-for-osint",
       "awesome-grep",
@@ -13120,6 +13137,17 @@
       "grep-for-osint",
       "maltego-transforms-list"
     ],
+    "aliases": [
+      "cipher387 Python OSINT examples"
+    ],
+    "tags": [
+      "automation",
+      "python",
+      "code-examples"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/python-osint-automation-examples.md"
   },
   {
@@ -17480,42 +17508,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/website-ripper-copier.md"
-  },
-  {
-    "id": "wickr",
-    "name": "Wickr",
-    "description": "OSINT tool: Wickr.",
-    "url": "https://wickr.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/wickr.md"
   },
   {
     "id": "world-monitor",
@@ -59582,31 +59574,41 @@
   {
     "id": "virustotal",
     "name": "VirusTotal",
-    "description": "Malware analysis, URL reputation, file hash lookups",
+    "description": "Use when you have a file hash, `domain`, `ip-address`, or URL and want reputation/malware context — returns detection verdicts, related infrastructure, and pivot data.",
     "url": "https://www.virustotal.com/gui/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "Malware analysis, URL reputation, file hash lookups",
-    "input": "File, file hash, URL, domain, IP address",
-    "output": "Detection results, behavioral analysis, community comments, related indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reputation and relationship lookups on files, hashes, domains, IPs, and URLs — a central pivot point for infrastructure OSINT.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Uploaded files become visible to other VirusTotal users. Hash lookups are private.",
+    "costNote": "Free tier with a registered account (public API, ~4 requests/min, 500/day). Enterprise/VT Intelligence with advanced search, retrohunt, and relationships is paid.",
+    "opsec": "active",
+    "opsecNote": "Submitting a FILE uploads it to VirusTotal and shares it with the security community and paying customers — never upload sensitive/private documents you don't want disclosed. Looking up an existing hash/domain/IP/URL is passive (no upload) and safe. Uploading a URL causes VT to fetch it, which can touch the target site.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "rate-limit"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Google (Chronicle); the de-facto standard multi-engine reputation service. Aggregates 70+ AV engines and vast passive-DNS/relationship data. Verdicts are indicative, not definitive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -59614,13 +59616,22 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "virus-total"
+      "urlscan-io",
+      "shodan",
+      "hybrid-analysis"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "VT",
+      "virustotal.com"
+    ],
+    "tags": [
+      "malware-analysis",
+      "reputation",
+      "passive-dns"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/virustotal.md"
   },
   {
@@ -66391,41 +66402,57 @@
   {
     "id": "dnspop",
     "name": "dnspop",
-    "description": "Command-line DNS recon and record analysis",
+    "description": "Use when you have a `domain` and want the most effective subdomain-guessing wordlists — returns ranked lists of common subdomain labels for brute-forcing.",
     "url": "https://github.com/bitquark/dnspop",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "Command-line DNS recon and record analysis",
-    "input": "Domain and optional scan parameters",
-    "output": "DNS records, discovered hosts, and recon findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Seeding subdomain brute-force tools with data-driven \"most popular subdomain\" wordlists.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Performs direct DNS queries against resolvers and target-associated records.",
+    "costNote": "Free, open-source on GitHub; download the prebuilt wordlists or run the scripts. No account.",
+    "opsec": "passive",
+    "opsecNote": "The wordlists and analysis scripts are inert — building or reading them touches no target. The brute-force you feed them into (against a subject's domain) does send DNS queries and, if the resolver is the target's, may be observable. Prefer a public/passive resolver first; treat active enumeration as mildly noisy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Created by bitquark from analysis of large domain datasets; the \"popular subdomains\" list is widely used and bundled into other recon tools. Data is a few years old but subdomain naming conventions are durable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "seclists-dns-subdomains",
+      "amass",
+      "subfinder"
+    ],
+    "aliases": [
+      "bitquark dnspop",
+      "popular-subdomains"
+    ],
+    "tags": [
+      "wordlist",
+      "subdomain-enumeration",
+      "dns-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/dnspop.md"
   },
   {
@@ -113253,35 +113280,57 @@
   {
     "id": "default-router-login",
     "name": "Default Router Login",
-    "description": "OSINT tool: Default Router Login.",
+    "description": "Use when you have a router brand/model or a gateway `ip-address` and want its default credentials and admin address — returns default IP, username, and password.",
     "url": "https://www.cleancss.com/router-default/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up factory-default admin IP, username, and password for a router by brand/model.",
+    "selectorsIn": [
+      "device-id",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "password"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference database; no account. Browser-based lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the reference database is passive and touches no target. Using the credentials to log into a router you do not own is unauthorised access — only apply them to devices you own or are explicitly authorised to test. The lookup itself leaks nothing about your target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A large community/vendor-sourced list of factory defaults hosted by CleanCSS. Broadly accurate for common models, but defaults change by firmware/region — treat as reference, not guarantee.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "routerpasswords-com",
+      "shodan"
+    ],
+    "aliases": [
+      "CleanCSS router defaults",
+      "default gateway credentials"
+    ],
+    "tags": [
+      "router",
+      "default-credentials",
+      "network-recon"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/default-router-login.md"
   },
   {
@@ -224698,35 +224747,58 @@
   {
     "id": "fbi-most-wanted-search-engine",
     "name": "FBI Most Wanted Search Engine",
-    "description": "OSINT tool: FBI Most Wanted Search Engine.",
+    "description": "Use when you have a `name` or case detail and want to check US federal wanted/missing/kidnapping listings — returns matching FBI and law-enforcement bulletin pages.",
     "url": "https://cse.google.com/cse?cx=1ee952e6584aa91f9",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching across FBI Most Wanted, missing-persons, and kidnapping bulletins in one query.",
+    "selectorsIn": [
+      "name",
+      "physical-description"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine over official law-enforcement wanted/missing pages; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a Google search over public bulletin pages — you query Google, not any subject, and nothing is disclosed to the person searched for. Standard search-engine logging applies; use a clean session if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "A third-party Google Custom Search Engine (CSE), not an official FBI portal. It scopes Google to law-enforcement wanted/missing sites; the underlying bulletin pages are authoritative, but the CSE config is community-maintained and its coverage/scope can drift.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "fbi-gov",
+      "namus",
+      "charley-project"
+    ],
+    "aliases": [
+      "FBI Most Wanted CSE"
+    ],
+    "tags": [
+      "wanted",
+      "missing-persons",
+      "law-enforcement"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/fbi-most-wanted-search-engine.md"
   },
   {
@@ -280758,36 +280830,57 @@
   },
   {
     "id": "mamont-s-open-ftp-index",
-    "name": "Mamont's open FTP Index",
-    "description": "OSINT tool: Mamont's open FTP Index.",
+    "name": "Mamont's Open FTP Index",
+    "description": "Use when you have a filename/keyword and want files exposed on public FTP servers — returns FTP hosts and paths hosting matching files.",
     "url": "https://www.mmnt.net/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching the contents of publicly accessible FTP servers for a filename or keyword.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to search/browse; no account. A long-running but aging (copyright 2011) index, so coverage is dated.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the index queries mmnt.net, not the target. Actually connecting to a discovered FTP server to retrieve a file is a direct connection from your host to that server (logged there) — use a VPN/proxy if attribution matters, and only access data you are authorised to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing independent FTP search engine (\"Mamont\", by Constantine Aygi). Genuine and historically useful, but the crawl is old — many indexed servers are gone, and results skew stale.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "napalm-ftp-indexer",
+      "shodan"
+    ],
+    "aliases": [
+      "mmnt.net",
+      "Mamont FTP search"
+    ],
+    "tags": [
+      "ftp-search",
+      "file-search",
+      "exposed-data"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mamont-s-open-ftp-index.md"
   },
   {
@@ -315042,47 +315135,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/kaspr-io.md"
-  },
-  {
-    "id": "keepvid",
-    "name": "KeepVid",
-    "description": "OSINT tool: KeepVid.",
-    "url": "https://keepvid.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "youtube"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/keepvid.md"
   },
   {
     "id": "khalil-shreateh-social-applications",

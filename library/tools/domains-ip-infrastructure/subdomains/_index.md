@@ -11,7 +11,7 @@ kind: group-index
 - **`aquatone`** (low) — Use when you have a `domain` (or a list of discovered hosts) and want a fast visual map of its web attack surface — returns HTTP screenshots
 - **`bluto`** (low) — Use when you have a `domain` and want an all-in-one recon pass (DNS records, zone-transfer/brute subdomains, and harvested staff emails) — r
 - **`dns-recon`** (low) — Use when you have a `domain` and want its full DNS footprint — returns records, discovered subdomains, zone-transfer and PTR results.
-- **`dnspop`** (low) — Command-line DNS recon and record analysis
+- **`dnspop`** (low) — Use when you have a `domain` and want the most effective subdomain-guessing wordlists — returns ranked lists of common subdomain labels for 
 - **`fierce-domain-scanner`** (low) — Use when you have a `domain` and want to enumerate its subdomains and map them to non-contiguous IP space — returns discovered `domain`s and
 - **`gdns`** (low) — Quick DNS enumeration via Google DNS services
 - **`gobuster`** (low) — Use when you have a `domain` and want to brute-force its subdomains/paths/vhosts — returns discovered subdomains, directories and virtual ho

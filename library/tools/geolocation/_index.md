@@ -59,7 +59,7 @@ kind: group-index
 - **`cybermap`** (high) — Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged a
 - **`cyclocane`** (low) — Use when a photo/event references a storm or you need to know what tropical cyclone was active at a place and time — returns current and rec
 - **`datacore-gn-unepgrid-ch`** (low) — Use when you have a `geolocation`/region and want authoritative environmental geospatial layers for it — returns UNEP GeoNetwork datasets (h
-- **`default-router-login`** (low) — OSINT tool: Default Router Login.
+- **`default-router-login`** (low) — Use when you have a router brand/model or a gateway `ip-address` and want its default credentials and admin address — returns default IP, us
 - **`degulesider-mapping-program-for-europe-denmark`** (high) — Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — 
 - **`demo-4map-com`** (medium) — Use when you have a `geolocation` and want a 3D view of the built environment — returns rendered building heights, shapes, and roof forms fr
 - **`digikam`** (high) — Use when you have a batch of images and need to read/map their EXIF GPS and metadata at scale — an open-source photo manager that geotags, m

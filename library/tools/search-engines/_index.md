@@ -367,7 +367,7 @@ kind: group-index
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
 - **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
-- **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
+- **`mamont-s-open-ftp-index`** (low) — Use when you have a filename/keyword and want files exposed on public FTP servers — returns FTP hosts and paths hosting matching files.
 - **`mamont`** (medium) — Use when you have a filename, keyword, or `domain` and want to find files exposed on public FTP servers — returns file paths, hosting server
 - **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
 - **`mereku-com`** (low) — OSINT tool: Mereku.com.

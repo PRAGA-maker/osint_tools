@@ -289,7 +289,7 @@ kind: group-index
 - **`familysearch`** (high) — Use when you have a deceased US subject's `name` and want death/birth-date confirmation and last residence — returns name, DOB/death date an
 - **`fastpeoplesearch-com-reverse-address`** (high) — Use when you have a US `address`, `name`, or `phone` and want the people tied to it — returns names, relatives, phones and prior addresses.
 - **`fatal-encounters`** (high) — Use when you have a `name`, `geolocation`, or date and need to check whether a person died during a police interaction in the US since 2000 
-- **`fbi-most-wanted-search-engine`** (low) — OSINT tool: FBI Most Wanted Search Engine.
+- **`fbi-most-wanted-search-engine`** (medium) — Use when you have a `name` or case detail and want to check US federal wanted/missing/kidnapping listings — returns matching FBI and law-enf
 - **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
 - **`federal-corporation-search-canada`** (medium) — Use when you have a Canadian company/business `name` or a person's `name` and want federally-incorporated company records and directors — re
 - **`federal-court`** (high) — Use when you have a `name` and want to find Federal Court of Canada judgments and orders naming that party — returns case decisions, docket/

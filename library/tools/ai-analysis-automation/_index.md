@@ -159,7 +159,7 @@ kind: group-index
 - **`harpoon`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugin
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
 - **`highcharts`** (low) — Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT da
-- **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
+- **`hive-ai-generated-content-detection`** (low) — Use when you have an `image`, video, or audio and want to test if it's AI-generated/deepfake — returns confidence scores and likely generato
 - **`hohli`** (low) — OSINT tool: Hohli.
 - **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
 - **`hotspot-shield`** (low) — Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool tha
@@ -288,7 +288,7 @@ kind: group-index
 - **`psn-monitor`** (low) — Use when you have a subject's PlayStation Network `username`/PSN ID and want to track their online presence — monitors online/offline status
 - **`pyba`** (low) — OSINT tool: Pyba.
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
-- **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
+- **`python-osint-automation-examples`** (low) — Use when you want to script or automate an OSINT task in Python — returns copy-ready code snippets for common OSINT workflows.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — Use when you need a security-by-compartmentalization operating system to isolate risky OSINT work (malware, sketchy links, sock puppets) int
@@ -381,7 +381,6 @@ kind: group-index
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
 - **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
-- **`wickr`** (low) — OSINT tool: Wickr.
 - **`world-monitor`** (low) — Geopolitical OSINT, global event monitoring, early warning intelligence gathering
 - **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.

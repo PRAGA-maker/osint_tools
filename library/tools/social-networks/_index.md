@@ -308,7 +308,6 @@ kind: group-index
 - **`justlog`** (medium) — Use when you have a Twitch `username` and a channel and want their chat history there — returns the user's logged messages (with timestamps)
 - **`karma-decay`** (medium) — Use when you have an `image` and want to find whether/where it was posted on Reddit — returns the Reddit submissions (subreddits, `username`
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
-- **`keepvid`** (low) — OSINT tool: KeepVid.
 - **`khalil-shreateh-social-applications`** (medium) — Use when you have a social `username` and want quick enrichment — profile-picture full-view, ID lookup, post/account timestamps, TikTok user
 - **`khendrikse-netlify-app`** (high) — Use when you have a Mastodon handle (`username`@instance) and want its stable numeric account ID for API queries — a short guide returning t
 - **`khoji-github-com`** (high) — Use when you have a Snapchat `username` and want to download that user's full Bitmoji avatar history — returns image artifacts revealing app

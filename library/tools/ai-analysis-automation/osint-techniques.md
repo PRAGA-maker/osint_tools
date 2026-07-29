@@ -32,6 +32,7 @@ relatedTools:
 - nixintel
 - osint-tools-yogsec
 - bellingcat-online-investigation-toolkit
+- osint-techniques-tools
 aliases:
 - osinttechniques.com
 tags:
