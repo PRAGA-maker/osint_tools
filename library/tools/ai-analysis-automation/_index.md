@@ -66,7 +66,7 @@ kind: group-index
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
-- **`cipherstick`** (low) — OSINT tool: Cipherstick.
+- **`cipherstick`** (low) — Use when you want to practise or teach OSINT investigation technique on realistic puzzles — returns browser-based training challenges, not c
 - **`circos`** (low) — Use when you have relational data (who-contacts-whom, wallet flows, co-occurrences) and want a circular link diagram to reveal the structure
 - **`code-repository-google-cse`** (low) — Google CSE for search 15 code repository services
 - **`code-understanding-tools-list`** (low) — Tools for understanding other people's code

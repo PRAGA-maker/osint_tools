@@ -2301,38 +2301,46 @@
   },
   {
     "id": "cipherstick",
-    "name": "Cipherstick",
-    "description": "OSINT tool: Cipherstick.",
+    "name": "CipherStick",
+    "description": "Use when you want to practise or teach OSINT investigation technique on realistic puzzles — returns browser-based training challenges, not case data.",
     "url": "https://cipherstick.tech",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Sharpening investigator tradecraft with free, browser-based OSINT puzzles.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free — no account, login or payment; PDF completion certificates on solving.",
+    "opsec": "passive",
+    "opsecNote": "Passive and training-only — challenges use fictional cases, so no real subject is involved. Still practise good habits (sock-puppet accounts, clean browser) as you would on real work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independently-run OSINT training site with a small set of curated challenges, updated roughly monthly; a learning resource, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "cipherstick.tech"
+    ],
     "tags": [
-      "other-resources"
+      "other-resources",
+      "training",
+      "ctf"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cipherstick.md"
   },
   {
@@ -67387,42 +67395,52 @@
   {
     "id": "dumpsterdiver",
     "name": "DumpsterDiver",
-    "description": "Tool can analyze big volumes of data and find some \"secrets\" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)",
+    "description": "Use when you have a `domain`'s file dump / repo / large dataset and want to surface hardcoded secrets (keys, passwords) via entropy analysis — returns leaked credentials and suspicious strings.",
     "url": "https://github.com/securing/DumpsterDiver",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Entropy/pattern scanning of large file sets to find API keys, SSH keys and passwords.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "password"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free/open-source Python tool; no account. Note the repo was archived (read-only) in Feb 2025 but still runs.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it analyses files you have already collected locally; it does not touch the subject's servers. Handle any discovered credentials responsibly and never use them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by securing (a known security firm); archived/read-only since Feb 2025, so no further updates, but the tool is functional and reputable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jsleak"
+    ],
+    "aliases": [
+      "securing/DumpsterDiver"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website's files metadata analyze and files downloads"
+      "Website's files metadata analyze and files downloads",
+      "secrets"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dumpsterdiver.md"
   },
   {
@@ -72149,13 +72167,13 @@
   {
     "id": "intelspy",
     "name": "intelspy",
-    "description": "Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.",
+    "description": "Use when you have an `ip-address`/`domain`/range and want automated multi-threaded service enumeration and web/SMB scans — returns open ports, services and enumerated infrastructure.",
     "url": "https://github.com/maldevel/intelspy",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Active network recon and service enumeration of a host/range",
+    "bestFor": "Automated active recon and service enumeration of a host or network range.",
     "selectorsIn": [
       "ip-address",
       "domain"
@@ -72164,15 +72182,16 @@
       "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free/open-source (GPLv3) Python 3 tool; no account. It orchestrates external tools (nmap, nikto, gobuster, smbmap), which must be installed.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Active and noisy — it launches port scans, service probes, web content scans and brute-forcing directly against the target. This is unmistakably hostile in logs/IDS; only run against systems you are explicitly authorised to test, from a controlled egress.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "238 stars; offensive network recon tooling.",
+    "trustNote": "Community offensive-recon tool (~237 stars, v2) by maldevel; a wrapper that automates well-known scanners.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -72181,18 +72200,21 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "maldevel-osint",
+      "crab"
+    ],
+    "aliases": [
+      "maldevel/intelspy"
+    ],
     "tags": [
       "network-recon",
       "scanning",
       "enumeration"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "maldevel-osint"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/intelspy.md"
   },
   {
@@ -118122,40 +118144,6 @@
     "_file": "library/tools/geolocation/lightingmaps.md"
   },
   {
-    "id": "live-bar-and-pub-webcams",
-    "name": "Live Bar and Pub Webcams",
-    "description": "OSINT tool: Live Bar and Pub Webcams.",
-    "url": "http://gobefore.me/cams/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/live-bar-and-pub-webcams.md"
-  },
-  {
     "id": "live-cams-iplivecams",
     "name": "Live Cams \\| Iplivecams",
     "description": "OSINT tool: Live Cams \\| Iplivecams.",
@@ -122214,35 +122202,53 @@
   {
     "id": "radio-locator",
     "name": "Radio-Locator",
-    "description": "OSINT tool: Radio-Locator.",
+    "description": "Use when you have a `geolocation`/`address` (or a station's call letters) and want the local AM/FM stations, formats and coverage there — returns nearby stations and broadcast geography.",
     "url": "https://radio-locator.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding which radio stations cover a location, or mapping a station's broadcast area.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search stations, formats and coverage; some detailed engineering/coverage maps may be gated behind paid/pro features.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public broadcast directory; no subject is involved. It's a reference database, not a query about any person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established, widely-cited AM/FM directory (17,000+ station links, 12,000+ streams); US/Canada coverage is strongest.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "radio-locator.com",
+      "Radio Locator"
+    ],
+    "tags": [
+      "radio",
+      "broadcast",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/radio-locator.md"
   },
   {
@@ -155875,38 +155881,52 @@
   {
     "id": "river-runner-global",
     "name": "River Runner Global",
-    "description": "Calculate which water stream a drop of rain will follow",
+    "description": "Use when you have a `geolocation` and want to trace where surface water there flows downstream — returns the full river path and waterbodies to the sea.",
     "url": "https://river-runner-global.samlearner.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracing the downstream watercourse from any point on Earth for hydrology/geolocation context.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive web visualisation; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you click a point on a public hydrology map; no subject is involved and you enter no target identity. It uses public elevation/flow datasets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-regarded visualisation by Sam Learner, built on public elevation/hydrography data (Bellingcat-listed); it models likely flow paths, not guaranteed real-world routing.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "quick-geolocation-search"
+    ],
+    "aliases": [
+      "River Runner",
+      "samlearner river runner"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "hydrology"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/river-runner-global.md"
   },
   {
@@ -184625,46 +184645,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/todoist-management-app-mobile-android.md"
-  },
-  {
-    "id": "tor",
-    "name": "Tor",
-    "description": "Browser protects against tracking, surveillance, and censorship",
-    "url": "https://tor.org",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "web-browsers"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/tor.md"
   },
   {
     "id": "tor-browser",
@@ -340425,24 +340405,25 @@
   {
     "id": "binary-translator",
     "name": "Binary Translator",
-    "description": "Tool for translating from one language form to another",
+    "description": "Use when you have binary (or other machine encodings) in collected data and want to convert it to text and back — returns decoded text/ASCII/hex/decimal.",
     "url": "http://binarytranslator.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Converting between binary, text, ASCII, hex and decimal in the browser.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported web converter; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive toward any subject, but the string you paste is sent to a third-party site. Don't submit sensitive unique values; for confidential material use a local/offline converter instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Simple third-party conversion utility; deterministic output but hosted by an unknown operator, so avoid pasting sensitive data.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -340451,15 +340432,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "online-tools"
+    ],
+    "aliases": [
+      "binarytranslator.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "encoding"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/binary-translator.md"
   },
   {
@@ -342847,51 +342834,50 @@
   },
   {
     "id": "reddit-r-translator",
-    "name": "Reddit/r/translator",
-    "description": "OSINT tool: Reddit/r/translator.",
+    "name": "Reddit r/translator",
+    "description": "Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced language ID and translation.",
     "url": "https://www.reddit.com/r/translator",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Getting a human to identify an unknown language and translate hard cases machines fail on.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free community subreddit; reading is open, posting a request needs a free Reddit account.",
+    "opsec": "active",
+    "opsecNote": "Active if you post — a translation request is public and visible to a large community, and posting an image/text can expose case material and your account. Strip identifying context, use a sock-puppet Reddit account, and never post sensitive personal data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, long-running volunteer translation community; answers are helpful but unofficial and unverified — quality depends on who responds.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit",
+      "lexicool-translation"
+    ],
+    "aliases": [
+      "r/translator"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "crowdsourced"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "here",
-      "r-opendirectories",
-      "reddit",
-      "reddit-askmeanything",
-      "reddit-com",
-      "reddit-com-2",
-      "reddit-darknet",
-      "reddit-deep-web",
-      "reddit-guide-to-opting-out-of-background-check-websites",
-      "reddit-old-reddit-search",
-      "reddit-onions"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/reddit-r-translator.md"
   },
   {

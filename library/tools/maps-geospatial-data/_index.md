@@ -103,7 +103,7 @@ kind: group-index
 - **`radio-garden`** (low) — Use when you have a `geolocation` and want to hear its local live radio — returns location-linked broadcast audio for cultural/language cont
 - **`rammb-slider`** (low) — Use when you have a `geolocation`/`address` and want recent, time-stepped satellite imagery of that spot for weather/scene verification — re
 - **`resource-watch`** (low) — Use when you have a `geolocation` and want environmental/human-wellbeing context layers (fires, floods, land cover, air quality, conflict) —
-- **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow
+- **`river-runner-global`** (low) — Use when you have a `geolocation` and want to trace where surface water there flows downstream — returns the full river path and waterbodies
 - **`somerandomstuff1-wordpress-com`** (medium) — Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markin
 - **`species-plus`** (low) — Use when you have a species name and want its CITES/CMS legal-protection, trade-control and country-distribution status — returns geolocatio
 - **`strava`** (low) — Use when you have a `name`/`username` or a location of interest and want exercise-route patterns — returns public activities, segments and h

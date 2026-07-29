@@ -155,7 +155,6 @@ kind: group-index
 - **`leaflet`** (high) — Use when you need to build a custom interactive web map to plot OSINT findings — a developer library, not a lookup service.
 - **`light-pollution-world-map`** (low) — Use when you have a candidate `geolocation` and a night photo and want to test whether the sky brightness/darkness matches — returns a layer
 - **`lightingmaps`** (low) — Use when you have an `image`/video showing a storm or a claimed time+place and want to verify lightning activity there and then — returns re
-- **`live-bar-and-pub-webcams`** (low) — OSINT tool: Live Bar and Pub Webcams.
 - **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
 - **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
 - **`localfocus-nl-geokit`** (medium) — Use when you have a list of `address`es or raw coordinates and want to convert them into map-ready `geolocation` data — returns batch-geocod
@@ -234,7 +233,7 @@ kind: group-index
 - **`qgis`** (high) — Use when you need to overlay, measure and analyze geospatial layers (imagery, terrain, coordinates) for serious location analysis.
 - **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
 - **`r4ven`** (medium) — Use when a subject will open a link you control and you want their precise `geolocation`, real `ip-address`, and `device-id` — returns those
-- **`radio-locator`** (low) — OSINT tool: Radio-Locator.
+- **`radio-locator`** (low) — Use when you have a `geolocation`/`address` (or a station's call letters) and want the local AM/FM stations, formats and coverage there — re
 - **`radio-sherlock`** (low) — Use when you have a radio callsign/term and want related amateur-radio data — returns search results across DX/ham-radio sources, useful for
 - **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
 - **`radioid-database`** (low) — Use when you have a DMR ID or ham-radio `username`/callsign and want the operator's real `name`, city and country — returns identity and coa

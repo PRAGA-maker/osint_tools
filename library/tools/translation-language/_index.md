@@ -21,7 +21,7 @@ kind: group-index
 - **`awesome-translations-list`** (medium) — Use when you have foreign-language `name`, `address` or document text and want a curated menu of translation/transliteration tools to render
 - **`babelfish-language-translations`** (low) — Use when machine translation garbles slang, idiom, or dialect and you want a human read — a community Q&A where native speakers translate sh
 - **`baidu-translate`** (low) — Use when you have Chinese (or other-language) text and want a free translation strong on Chinese — returns translated text; pairs well with 
-- **`binary-translator`** (low) — Tool for translating from one language form to another
+- **`binary-translator`** (low) — Use when you have binary (or other machine encodings) in collected data and want to convert it to text and back — returns decoded text/ASCII
 - **`bing-microsoft-translator`** (low) — Machine translation service.
 - **`clipto-com`** (low) — OSINT tool: clipto.com.
 - **`collinsdictionary`** (low) — Use when you have a foreign-language word or short phrase in a record and want an authoritative translation/definition — returns dictionary 
@@ -69,7 +69,7 @@ kind: group-index
 - **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
 - **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
-- **`reddit-r-translator`** (low) — OSINT tool: Reddit/r/translator.
+- **`reddit-r-translator`** (low) — Use when you have foreign or unknown-language text/handwriting/audio and want humans to identify and translate it — returns crowd-sourced la
 - **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation
 - **`riverside-com`** (low) — OSINT tool: riverside.com.

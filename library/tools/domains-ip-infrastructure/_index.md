@@ -144,7 +144,7 @@ kind: group-index
 - **`doteasy-canada`** (low) — Use when a WHOIS record names Doteasy as the registrar/host of a `domain` and you want context on this Canadian provider — background on the
 - **`dpulse`** (low) — Use when you have a `domain` and want an all-in-one recon pass with a written report — enumerates subdomains, IPs, emails, and infrastructur
 - **`drishti`** (low) — Nodejs toolkit for OSINT
-- **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
+- **`dumpsterdiver`** (low) — Use when you have a `domain`'s file dump / repo / large dataset and want to surface hardcoded secrets (keys, passwords) via entropy analysis
 - **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (low) — Use when you have a `domain` and want registration metadata (registrar, dates, nameservers, and any unredacted registrant details) — returns
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
@@ -210,7 +210,7 @@ kind: group-index
 - **`infosniper`** (low) — Use when you have an `ip-address` and want its approximate geographic location and network operator — returns `geolocation` plus ISP/host de
 - **`infrapedia`** (low) — Use when you have a `geolocation`, city, or network/`domain` and want to map the physical internet — data centers, submarine cables, IXPs, f
 - **`instantdomainsearch`** (low) — Use when you have a `domain` name idea and want instant availability + who owns taken ones — returns registration status and links to for-sa
-- **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
+- **`intelspy`** (low) — Use when you have an `ip-address`/`domain`/range and want automated multi-threaded service enumeration and web/SMB scans — returns open port
 - **`internet-census-2012`** (low) — Use when you need a historical 2012 snapshot of an `ip-address`/`domain` — returns that era's reverse-DNS, open-port and geolocation records
 - **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na

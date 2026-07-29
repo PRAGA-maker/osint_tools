@@ -394,7 +394,6 @@ kind: group-index
 - **`tobloef-com`** (low) — Use when you want to turn indented notes into a mind map for an investigation — returns a visual diagram from text (an analyst tool, not sub
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.
-- **`tor`** (low) — Browser protects against tracking, surveillance, and censorship
 - **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
