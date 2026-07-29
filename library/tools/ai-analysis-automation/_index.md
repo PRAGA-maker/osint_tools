@@ -150,7 +150,6 @@ kind: group-index
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
-- **`graphviz-online`** (low) — OSINT tool: Graphviz Online.
 - **`graphx`** (low) — OSINT tool: GraphX.
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
 - **`guardian-project`** (low) — Use when you need vetted privacy/anti-surveillance apps for OpSec — Guardian Project builds open-source tools (Orbot, ProofMode, Haven) for 

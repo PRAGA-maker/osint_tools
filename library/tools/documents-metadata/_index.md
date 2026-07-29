@@ -93,7 +93,7 @@ kind: group-index
 - **`exif-viewer-pro-chrome-google-com`** (medium) — Use when you have an `image` in the browser and want its embedded EXIF/metadata (camera, timestamp, GPS) without downloading it — returns `m
 - **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
 - **`exiftool-lucasgelfond-online`** (low) — Use when you have a sensitive `image` and want full ExifTool metadata (camera, timestamp, GPS) without uploading it anywhere — runs ExifTool
-- **`eyedex`** (low) — OSINT tool: eyedex.
+- **`eyedex`** (low) — Use when you have a `name`, filename, or keyword and want files sitting in public open directories — returns matching files across indexed o
 - **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 

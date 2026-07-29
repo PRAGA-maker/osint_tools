@@ -416,7 +416,7 @@ kind: group-index
 - **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
 - **`ultrasurf-proxy-website`** (low) — Anonymous browsing service provider
 - **`unpaywall`** (low) — Use when you're researching an academic subject and hit paywalled papers — Unpaywall finds the free legal open-access copy so you can read a
-- **`update-scanner-add-on`** (low) — Firefox browser add-on for monitoring changes to a webpage without using RSS or Atom feeds
+- **`update-scanner-add-on`** (low) — Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over ti
 - **`upload-disroot`** (low) — Use when you need to share an evidence file with a source or teammate via a privacy-respecting, expiring link — an investigator OpSec transf
 - **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
 - **`urban-legends-online`** (low) — Searchable database of scam, fraud, hoax, phishing and misinformation articles

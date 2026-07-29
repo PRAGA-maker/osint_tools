@@ -14,7 +14,7 @@ kind: group-index
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering
 - **`ibm-x-force-exchange`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want IBM's threat-intel reputation and reports on it — returns domain, ip-
 - **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 
-- **`maltiverse`** (low) — IOC aggregation and scoring
+- **`maltiverse`** (low) — Use when you have an `ip-address`, `domain`, URL, or file hash and want a threat-intel verdict — returns malicious/suspicious classification
 - **`malware-patrol`** (low) — Use when you have a `domain`, URL, or `ip-address` and want to know if it's flagged as malware/C2/phishing in a curated threat feed — return
 - **`mlsecproject-combine`** (low) — Threat feed aggregation
 - **`mr-looquer-ioc-feed-1st-dual-stack-threat-feed`** (low) — IOC threat feed access

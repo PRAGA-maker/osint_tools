@@ -13,7 +13,6 @@ kind: group-index
 - **`dns-recon`** (low) — Use when you have a `domain` and want its full DNS footprint — returns records, discovered subdomains, zone-transfer and PTR results.
 - **`dnspop`** (low) — Command-line DNS recon and record analysis
 - **`fierce-domain-scanner`** (low) — Use when you have a `domain` and want to enumerate its subdomains and map them to non-contiguous IP space — returns discovered `domain`s and
-- **`findsubdomains`** (low) — Automated subdomain enumeration, organization name filtering, subdomain statistics
 - **`gdns`** (low) — Quick DNS enumeration via Google DNS services
 - **`gobuster`** (low) — Use when you have a `domain` and want to brute-force its subdomains/paths/vhosts — returns discovered subdomains, directories and virtual ho
 - **`owasp-maryam`** (low) — Use when you have a `domain`, `email`, or `username` and want modular recon in one framework — returns subdomains, docs/metadata, related `e

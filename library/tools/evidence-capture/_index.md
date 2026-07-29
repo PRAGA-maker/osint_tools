@@ -13,7 +13,7 @@ kind: group-index
 ## Skills here
 - **`commentexporter-com`** (low) — OSINT tool: Commentexporter.com.
 - **`download-sorter`** (low) — simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put
-- **`dumpitblue-plus`** (low) — Chrome extension to dump Facebook content for offline analysis.
+- **`dumpitblue-plus`** (medium) — Use when you have a Facebook `social-profile`/page open and want to capture it for offline analysis — returns a fully-expanded, saveable cop
 - **`export-comments`** (low) — Use when you have a public post/video URL and want every comment with handles and timestamps as a spreadsheet — returns commenter `username`
 - **`exportgram`** (low) — Export Instagram comments to Excel/CSV/JSON.
 - **`forensic-osint-full-page-screen-capture`** (high) — Use when you need to preserve a web page or social profile as defensible evidence — captures full-page screenshots with metadata (URL, times

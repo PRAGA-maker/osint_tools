@@ -5975,40 +5975,6 @@
     "_file": "library/tools/ai-analysis-automation/grammarly-ai-detector.md"
   },
   {
-    "id": "graphviz-online",
-    "name": "Graphviz Online",
-    "description": "OSINT tool: Graphviz Online.",
-    "url": "https://dreampuf.github.io/GraphvizOnline/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/graphviz-online.md"
-  },
-  {
     "id": "graphx",
     "name": "GraphX",
     "description": "OSINT tool: GraphX.",
@@ -51012,38 +50978,52 @@
   },
   {
     "id": "eyedex",
-    "name": "eyedex",
-    "description": "OSINT tool: eyedex.",
+    "name": "EyeDex",
+    "description": "Use when you have a `name`, filename, or keyword and want files sitting in public open directories — returns matching files across indexed open-directory servers.",
     "url": "https://www.eyedex.org/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching publicly-exposed open directories for files by name/keyword across many servers at once.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; no account. It indexes links to files on open directories — it does not host them.",
+    "opsec": "passive",
+    "opsecNote": "Searching EyeDex's index is passive and doesn't alert anyone. But *opening* a found file downloads it from a stranger's open directory over your IP and can expose you to malware or illegal content — do that only in a sandbox/VM on a sock-puppet IP, if at all.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party crawler of open directories with no accountable operator; results point to unvetted files on random servers, so treat everything as untrusted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "file-search"
+    "relatedTools": [],
+    "aliases": [
+      "eyedex",
+      "eyedex.org",
+      "open directory search"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "file-search",
+      "open-directory",
+      "documents-metadata"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/eyedex.md"
   },
   {
@@ -65941,43 +65921,52 @@
   },
   {
     "id": "dirscraper",
-    "name": "Dirscraper",
-    "description": "OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website",
+    "name": "dirscraper",
+    "description": "Use when you have a `domain`/website and want to surface hidden endpoints and subdomains referenced in its JavaScript — returns directories/paths and subdomains found in JS source.",
     "url": "https://github.com/Cillian-Collins/dirscraper",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting undocumented endpoints, paths, and subdomains embedded in a site's JavaScript files.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python tool; no account or key.",
+    "opsec": "active",
+    "opsecNote": "dirscraper fetches the target's pages and JavaScript files directly from your machine, so the target's server logs your requests — this is active reconnaissance. Probing the discovered endpoints afterward is more active still. Run from a VPN/sock-puppet and avoid hammering the host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small but well-regarded open-source recon tool (200+ stars); the technique (parsing JS for endpoints) is standard, results depend on the target's code.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Source Code Analyzes"
+    "relatedTools": [
+      "turbolist3r"
     ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "dirscraper"
+    ],
+    "tags": [
+      "recon",
+      "javascript",
+      "endpoint-discovery"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dirscraper.md"
   },
   {
@@ -68447,46 +68436,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/findmyass-hostspider.md"
-  },
-  {
-    "id": "findsubdomains",
-    "name": "FindSubDomains",
-    "description": "Automated subdomain enumeration, organization name filtering, subdomain statistics",
-    "url": "https://findsubdomains.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "subdomains"
-    ],
-    "bestFor": "Automated subdomain enumeration, organization name filtering, subdomain statistics",
-    "input": "Domain name or keyword",
-    "output": "Discovered subdomains, organization associations, popularity metrics, filtering options",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses passive DNS and search-based methods for subdomain discovery; no active probing.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/subdomains/findsubdomains.md"
   },
   {
     "id": "firehol-ip-lists",
@@ -75778,43 +75727,59 @@
   {
     "id": "maltiverse",
     "name": "Maltiverse",
-    "description": "IOC aggregation and scoring",
+    "description": "Use when you have an `ip-address`, `domain`, URL, or file hash and want a threat-intel verdict — returns malicious/suspicious classification, sources, and related indicators.",
     "url": "https://maltiverse.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "IOC aggregation and scoring",
-    "input": "IOC or threat indicator",
-    "output": "Threat scores and context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether an IP/domain/URL/hash is a known bad indicator, with aggregated sourcing and links to related IOCs.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free community account gives web search and limited API access to the IOC dataset; higher API volume, feeds, and enterprise features are paid.",
     "opsec": "passive",
-    "opsecNote": "Passive aggregation of threat data",
+    "opsecNote": "You query Maltiverse's aggregated IOC database, not the indicator's owner — the target infrastructure is not touched, so it's passive and doesn't tip anyone off. You do disclose the indicator you're researching to Maltiverse; use hash/indicator lookups (which reveal nothing new) rather than uploading anything sensitive.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An established threat-intelligence platform aggregating and scoring IOCs from many feeds; reputable, though (like all aggregators) a verdict is only as current as its sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "virustotal",
+      "urlscan-io"
+    ],
+    "aliases": [
+      "Maltiverse",
+      "maltiverse.com"
+    ],
+    "tags": [
+      "threat-intel",
+      "ioc",
+      "reputation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/maltiverse.md"
   },
   {
@@ -104489,46 +104454,56 @@
   {
     "id": "dumpitblue-plus",
     "name": "DumpItBlue+",
-    "description": "Chrome extension to dump Facebook content for offline analysis.",
+    "description": "Use when you have a Facebook `social-profile`/page open and want to capture it for offline analysis — returns a fully-expanded, saveable copy of the page's content.",
     "url": "https://chrome.google.com/webstore/detail/dumpitblue%2B/igmgknoioooacbcpcfgjigbaajpelbfe/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "Capturing/exporting Facebook page content for review",
+    "bestFor": "Expanding and preserving Facebook pages/profiles/threads for offline review and evidence.",
     "selectorsIn": [
       "social-profile"
     ],
     "selectorsOut": [
-      "metadata-exif"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Chrome extension by Le-tools (complements the DumpItBlue bookmarklet); no account.",
+    "opsec": "passive",
+    "opsecNote": "It manipulates the CACHED copy of the Facebook page already loaded in your browser (scroll/expand/isolate) — it doesn't post, like, or message, so it doesn't alert the target. But you must be viewing the page from some account; use a sock-puppet Facebook login, never your real one, and capture from a clean profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trust": "community",
+    "trustNote": "A long-standing, actively-updated OSINT capture extension from Le-tools, widely listed in investigator toolkits; it modifies only your local page copy.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook",
-      "scraping",
-      "evidence",
-      "chrome-extension"
+    "relatedTools": [
+      "hunchly"
     ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "DumpItBlue+",
+      "DumpItBlue"
+    ],
+    "tags": [
+      "evidence-capture",
+      "facebook",
+      "socmint",
+      "browser-extension"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/dumpitblue-plus.md"
   },
   {
@@ -185710,42 +185685,50 @@
   },
   {
     "id": "update-scanner-add-on",
-    "name": "Update Scanner Add-on",
-    "description": "Firefox browser add-on for monitoring changes to a webpage without using RSS or Atom feeds",
-    "url": "https://addons.mozilla.org/en-us/firefox/addon/update-scanner/?src=search",
+    "name": "Update Scanner",
+    "description": "Use when you have a `domain`/webpage and want to be alerted when its content changes — returns highlighted diffs of a monitored page over time.",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/update-scanner/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Watching a specific webpage (a profile, listing, or notice) for changes when it offers no RSS/Atom feed.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free, open-source Firefox add-on; no account. Last updated ~2019, so unmaintained but functional.",
+    "opsec": "active",
+    "opsecNote": "Update Scanner re-fetches the monitored page on a schedule FROM YOUR BROWSER, so the target's server sees repeated hits from your IP at regular intervals — a pattern that can stand out. Monitor from a sock-puppet browser/VPN, and set a sensible (not aggressive) scan frequency to stay low-noise.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A long-standing, well-rated Firefox add-on (thousands of users); simple and reliable, but no longer actively maintained.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+    "relatedTools": [
+      "visualping"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "Update Scanner"
+    ],
+    "tags": [
+      "monitoring",
+      "change-detection",
+      "browser-extension"
+    ],
+    "source": "sinwindie-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/update-scanner-add-on.md"
   },
   {

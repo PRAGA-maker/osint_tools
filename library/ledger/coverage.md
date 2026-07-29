@@ -2,33 +2,33 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7168 total · 5816 full · 1352 stub (81% enriched)
+**Tools:** 7166 total · 5821 full · 1345 stub (81% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3184 · medium: 2020 · high: 1964
+low: 3181 · medium: 2021 · high: 1964
 
 ## Tools by trust
-community: 3449 · trusted: 1922 · unverified: 1791 · untrustworthy: 6
+community: 3450 · trusted: 1923 · unverified: 1787 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 195/412
+- `ai-analysis-automation` — 195/411
 - `archives-cache` — 96/115
 - `communities-forums` — 254/285
 - `dark-web` — 56/95
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 147/274
-- `domains-ip-infrastructure` — 453/637
+- `documents-metadata` — 148/274
+- `domains-ip-infrastructure` — 455/636
 - `email` — 246/246
-- `evidence-capture` — 19/29
+- `evidence-capture` — 20/29
 - `financial-crypto` — 78/95
 - `geolocation` — 306/336
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 108/123
 - `messaging` — 182/184
-- `opsec-investigator-tooling` — 188/487
+- `opsec-investigator-tooling` — 189/487
 - `people-search` — 256/257
 - `phone` — 136/137
 - `public-records` — 918/991
@@ -65,9 +65,9 @@ community: 3449 · trusted: 1922 · unverified: 1791 · untrustworthy: 6
 - `library/tools/financial-crypto` — 79 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
-- `library/tools/domains-ip-infrastructure/subdomains` — 17 leaves
 - `library/tools/image-video-face/images/metadata` — 17 leaves
 - `library/tools/public-records/court-criminal-records` — 17 leaves
+- `library/tools/domains-ip-infrastructure/subdomains` — 16 leaves
 - `library/tools/domains-ip-infrastructure/reputation` — 15 leaves
 - `library/tools/search-engines/academic-publication-search` — 15 leaves
 - `library/tools/documents-metadata/hosted-automated-analysis` — 14 leaves

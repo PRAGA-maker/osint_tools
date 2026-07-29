@@ -38,7 +38,7 @@ kind: group-index
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
-- **`subdomains/`** — 17 skill(s) below.
+- **`subdomains/`** — 16 skill(s) below.
 - **`terrorism-and-extremism/`** — 7 skill(s) below.
 - **`threat-feeds-and-platforms/`** — 14 skill(s) below.
 - **`tools/`** — 4 skill(s) below.
@@ -124,7 +124,7 @@ kind: group-index
 - **`dark-web-informer`** (low) — Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and
 - **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
 - **`dirhunt`** (low) — Use when you have a `domain` and want to discover and analyse its web directories — finds "index of" listings, hidden folders and files acro
-- **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website
+- **`dirscraper`** (low) — Use when you have a `domain`/website and want to surface hidden endpoints and subdomains referenced in its JavaScript — returns directories/
 - **`ditto`** (low) — Use when you have a `domain` and want to find look-alike/homograph variants — generates confusable domain permutations and checks which are 
 - **`dns-history-lookup`** (low) — Use when you have a domain and want its historical DNS records to uncover past hosting IPs — returns ip-address and domain history that can 
 - **`dns-history`** (low) — Use when you have a `domain` and want to see how its nameservers changed over time — returns a timeline of historical NS records to reveal p
