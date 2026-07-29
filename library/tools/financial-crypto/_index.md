@@ -50,7 +50,6 @@ kind: group-index
 - **`cryptocompare-com`** (low) — Use when you have a `crypto-wallet`'s holdings or a coin/token and want market price, exchange listings and historical valuation to contextu
 - **`cryptocurrency-search-tool`** (low) — Use when you have a `crypto-wallet` address (or tx/block id) and want its history and web mentions — returns transaction history, balance, a
 - **`cryptocurrencyalerting-com`** (low) — Use when you have a `crypto-wallet` address and want live movement monitoring — returns transaction alerts across major chains as ongoing pa
-- **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
 - **`csol-ie`** (medium) — Use when you have a `name` and want to check Ireland's public bankruptcy register — returns bankruptcy status, address and adjudication deta
 - **`economy-ni-gov-uk`** (medium) — Use when you have a `name` and want to check Northern Ireland's official register of Debt Relief Orders and Bankruptcy Restrictions Orders —
 - **`edgar-command-line-interface-edgar-tool`** (low) — Use when you have a `name`, company, or ticker and want to pull or monitor SEC EDGAR filings from the command line — returns employer-org, a

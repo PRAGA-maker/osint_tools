@@ -23,7 +23,7 @@ kind: group-index
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
 - **`1websdirectory`** (medium) — Use when you have an `employer-org`/business name and want a directory listing — returns the business's website and category/country classif
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
-- **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
+- **`3dfindit`** (low) — Use when you have a part image, sketch, or keyword and want to identify matching CAD/BIM models and their manufacturers — returns employer-o
 - **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
 - **`abc-search-engine`** (medium) — Use when you have a name, username, or domain and want an alternate general web-search index to catch links a mainstream engine ranks differ
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
@@ -36,7 +36,7 @@ kind: group-index
 - **`access-to-archival-databases`** (medium) — Use when you have a `name` (and optionally a `dob`/place) and want to search U.S. National Archives electronic records — returns name, dob, 
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
-- **`african-journal-online`** (low) — OSINT tool: African Journal Online.
+- **`african-journal-online`** (low) — Use when you have a `name` or research topic and want scholarly articles published in African journals — returns document-id, employer-org, 
 - **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.

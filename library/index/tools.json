@@ -2,40 +2,55 @@
   {
     "id": "a1-website-download",
     "name": "A1 Website Download",
-    "description": "OSINT tool: A1 Website Download.",
+    "description": "Use when you have a `domain`/URL and want a complete offline mirror of a site for preservation and analysis — returns document-id, image, metadata-exif.",
     "url": "http://www.microsystools.com/products/website-download",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Mirroring an entire website to disk for offline evidence review and archiving.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free mode crawls up to 500 pages per site indefinitely; 30-day fully-functional trial; Pro license ~$39 for unlimited crawl depth and command-line support.",
+    "opsec": "active",
+    "opsecNote": "Active — the crawler downloads pages directly from the target site, exposing your IP/User-Agent and generating a burst of server-log traffic that's easy to notice. Route through a proxy/VPN and throttle the crawl for any subject-controlled site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established commercial utility by Microsys; it is a downloader, so the trust question is the integrity of the target site's content, not the tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "A1 Website Download",
+      "Microsys A1"
+    ],
     "tags": [
-      "offline-browsing"
+      "offline-browsing",
+      "archiving",
+      "scraping"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "microsystools-com"
     ],
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/a1-website-download.md"
   },
   {
@@ -51989,37 +52004,52 @@
   {
     "id": "free-full-pdf",
     "name": "Free Full PDF",
-    "description": "OSINT tool: Free Full PDF.",
+    "description": "Use when you have a subject's `name` or a research topic and want free full-text scientific PDFs they authored — returns document-id, employer-org, associate.",
     "url": "http://www.freefullpdf.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding free full-text academic PDFs by author name or topic.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free full-text scientific PDF search; optional free registration only for community/sharing features.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a search over indexed scholarly PDFs; you never contact the subject. Downloading a paper touches the hosting journal/repository, not the author.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party academic PDF aggregator (a curated scholarly custom-search front end); verify each hit against the original publisher, since aggregators can surface stale or mislabelled copies.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "FreeFullPDF",
+      "freefullpdf.com"
+    ],
     "tags": [
-      "document-and-slides-search"
+      "document-and-slides-search",
+      "academic",
+      "papers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/free-full-pdf.md"
   },
   {
@@ -62591,37 +62621,53 @@
   {
     "id": "bgpview-io",
     "name": "Bgpview.io",
-    "description": "OSINT tool: Bgpview.io.",
+    "description": "Use when you have an `ip-address`, ASN, or `domain` and want to map the routing/hosting infrastructure and owning organisation behind it — returns ip-address, domain, employer-org.",
     "url": "https://bgpview.io",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping the ASN, ISP, prefixes and owning org behind an IP or domain.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public BGP toolkit and JSON API (api.bgpview.io); no account or API key required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query BGPView's own cached routing tables and RIR WHOIS data, not the target's infrastructure, so nothing is sent to the subject or the host being investigated.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent BGP toolkit widely used by network engineers; data is sourced from public routing tables and Regional Internet Registry WHOIS, so it is verifiable against those primary sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "BGPView",
+      "bgpview.io"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "asn",
+      "bgp"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/bgpview-io.md"
   },
   {
@@ -69523,44 +69569,53 @@
   {
     "id": "geo-data-tool",
     "name": "Geo Data Tool",
-    "description": "IP geolocation service to identify the location and other technical information associated to IP addresses.",
+    "description": "Use when you have an `ip-address` or `domain` and want its estimated location on a map plus ISP and hostname — returns geolocation, ip-address, employer-org.",
     "url": "https://www.geodatatool.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Map-based IP/domain geolocation with ISP and hostname.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "geolocation",
+      "ip-address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — the lookup runs against the tool's geo-IP databases; nothing is sent to the subject or the host. The result is an estimate, and VPN/proxy IPs resolve to the operator's server rather than the person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Listed in Bellingcat's Online Investigation Toolkit; results are database estimates and rarely correspond to a target's exact physical location.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Geo Data Tool",
+      "geodatatool.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "websites"
+      "websites",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geo-data-tool.md"
   },
   {
@@ -73353,37 +73408,53 @@
   {
     "id": "ip-2-geolocation",
     "name": "IP 2 Geolocation",
-    "description": "OSINT tool: IP 2 Geolocation.",
+    "description": "Use when you have an `ip-address` or `domain` and want its estimated location plus the owning ISP/company — returns geolocation, ip-address, employer-org.",
     "url": "http://ip2geolocation.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free IP/domain geolocation with ISP and owner details.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "ip-address",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web lookup indexing 4B+ IPs; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — the lookup runs against the service's own geolocation database; nothing is sent to the subject or the host whose IP you enter.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Consumer IP-geolocation site; results are database estimates that can be off by city/region and resolve VPN/proxy IPs to the operator — treat as approximate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "IP2GeoLocation",
+      "ip2geolocation.com"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "geolocation",
+      "ip"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-2-geolocation.md"
   },
   {
@@ -76679,45 +76750,52 @@
   {
     "id": "metadata-parser",
     "name": "Metadata Parser",
-    "description": "A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, and more).",
+    "description": "Use when you have a `domain`/URL and want to programmatically pull page metadata (title, description, author, Open Graph images) at scale — returns metadata-exif, image, name.",
     "url": "https://github.com/jvanasco/metadata_parser",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting Open Graph / meta-tag data (author, images, description) from web pages in Python.",
     "selectorsIn": [
-      "domain",
-      "geolocation",
-      "image"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "geolocation"
+      "metadata-exif",
+      "image",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python library; install with `pip install metadata_parser`.",
+    "opsec": "active",
+    "opsecNote": "Active — the library fetches each target URL directly from wherever you run it, exposing your IP and User-Agent to the target's web server. Route through a proxy/VPN and set a neutral User-Agent when scraping subject-controlled pages.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Mature open-source library by jvanasco, in production \"for many years\" and used to parse billions of documents; source is public and auditable on GitHub.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "metadata_parser",
+      "jvanasco/metadata_parser"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website's files metadata analyze and files downloads"
+      "metadata",
+      "python"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/metadata-parser.md"
   },
   {
@@ -80061,42 +80139,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/exploits/packet-storm.md"
-  },
-  {
-    "id": "pageglimpse",
-    "name": "PageGlimpse",
-    "description": "OSINT tool: PageGlimpse.",
-    "url": "http://www.pageglimpse.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/pageglimpse.md"
   },
   {
     "id": "peeringdb",
@@ -84164,44 +84206,6 @@
     "_file": "library/tools/domains-ip-infrastructure/analytics/siteliner.md"
   },
   {
-    "id": "skype-resolver",
-    "name": "Skype Resolver",
-    "description": "OSINT tool: Skype Resolver.",
-    "url": "http://www.skypeipresolver.net/index.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "2-skypeipresolver-net",
-      "cloudflare-resolver"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/skype-resolver.md"
-  },
-  {
     "id": "smallseotools",
     "name": "SmallSEOTools",
     "description": "OSINT tool: SmallSEOTools.",
@@ -87940,41 +87944,53 @@
   {
     "id": "utrace",
     "name": "utrace",
-    "description": "IP location and traceroute",
+    "description": "Use when you have an `ip-address` or `domain` and want a fast approximate geolocation plus ASN/provider and route path — returns geolocation, ip-address.",
     "url": "https://en.utrace.de/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "IP location and traceroute",
-    "input": "IP or hostname",
-    "output": "Location, ASN, reverse DNS, route path",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick approximate IP/domain geolocation with ASN, provider and optional traceroute.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free German geolocation service with a free public XML API (utrace.de/api.php); no key or account.",
     "opsec": "active",
-    "opsecNote": "Traceroute is active; geolocation is passive.",
+    "opsecNote": "The geolocation lookup itself is passive (utrace's cached database). The optional traceroute runs from utrace's servers and sends probe packets toward the target IP — active toward the host, but it does not reveal you to the subject. Nothing identifies the investigator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Consumer IP-geolocation site of unknown data provenance; results are database estimates and should be treated as approximate and corroborated elsewhere.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "utrace",
+      "en.utrace.de"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "geolocation",
+      "ip"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/utrace.md"
   },
   {
@@ -108167,46 +108183,6 @@
     "lastVerified": "2026-07-19",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/cryptocurrencyalerting-com.md"
-  },
-  {
-    "id": "cryptocurrencyfacts-com",
-    "name": "cryptocurrencyfacts.com/",
-    "description": "OSINT tool: cryptocurrencyfacts.com/.",
-    "url": "https://cryptocurrencyfacts.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/cryptocurrencyfacts-com.md"
   },
   {
     "id": "csol-ie",
@@ -262946,37 +262922,52 @@
   {
     "id": "3dfindit",
     "name": "3DFindit",
-    "description": "tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.",
+    "description": "Use when you have a part image, sketch, or keyword and want to identify matching CAD/BIM models and their manufacturers — returns employer-org, document-id.",
     "url": "https://3dfindit.com/textsearch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying a mechanical/CAD part and its manufacturer via text, sketch, or 3D-geometry search.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the public 3D CAD/BIM catalogs; a free account and paid tiers unlock model downloads and advanced search features.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a search over indexed manufacturer CAD/BIM catalogs; nothing is sent to any subject. Uploading a proprietary part sketch does, however, send that geometry to the service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A CADENAS-operated commercial catalog search; results reflect the manufacturer catalogs it has indexed and should be corroborated with the manufacturer directly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "3DFindit",
+      "3Dfindit.com",
+      "CADENAS 3DfindIT"
+    ],
     "tags": [
-      "Search engines"
+      "Search engines",
+      "cad",
+      "3d-models"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/3dfindit.md"
   },
   {
@@ -263620,37 +263611,53 @@
   {
     "id": "african-journal-online",
     "name": "African Journal Online",
-    "description": "OSINT tool: African Journal Online.",
+    "description": "Use when you have a `name` or research topic and want scholarly articles published in African journals — returns document-id, employer-org, associate.",
     "url": "http://www.ajol.info",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding African-published scholarly articles by author name or topic.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read abstracts; most full text is open-access, though some journals restrict downloads behind a free login or publisher paywall.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a search over a scholarly database; the subject is never contacted and nothing about your query reaches them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running South Africa-based nonprofit hosting the largest curated collection of peer-reviewed African-published journals; content comes from the journals themselves and is citable at source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "AJOL",
+      "African Journals Online",
+      "ajol.info"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "academic",
+      "africa"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/african-journal-online.md"
   },
   {

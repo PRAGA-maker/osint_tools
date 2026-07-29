@@ -80,7 +80,7 @@ kind: group-index
 - **`awesome-tech-stack`** (low) — Use when you have a `domain` and want its technology stack plus a security/modernity assessment — returns detected technologies and an "awes
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
-- **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
+- **`bgpview-io`** (low) — Use when you have an `ip-address`, ASN, or `domain` and want to map the routing/hosting infrastructure and owning organisation behind it — r
 - **`bi-zone`** (low) — OSINT tool: Bi.Zone.
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
@@ -166,7 +166,7 @@ kind: group-index
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Use when you have a `domain` and want to hunt exposed backup/sensitive files on its web server — generates a domain-tailored wordlist and pr
 - **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
-- **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
+- **`geo-data-tool`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location on a map plus ISP and hostname — returns geolocation, ip-addre
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
@@ -221,7 +221,7 @@ kind: group-index
 - **`intodns-ai`** (low) — Use when you have a `domain` and want a deterministic health check of its DNS and email security posture — SPF, DKIM, DMARC, DNSSEC, MTA-STS
 - **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
 - **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
-- **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
+- **`ip-2-geolocation`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location plus the owning ISP/company — returns geolocation, ip-address,
 - **`ip-checking`** (low) — OSINT tool: IP Checking.
 - **`ip-chicken`** (low) — Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.
 - **`ip-geo-location-lookup`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/region/city, coordinates, ISP and AS
@@ -269,7 +269,7 @@ kind: group-index
 - **`maxmind`** (low) — OSINT tool: MaxMind.
 - **`mayorsecdnsscan`** (low) — Use when you have a `domain` and want its DNS records, zone-transfer exposure, and enumerated subdomains — returns subdomain `domain`s and t
 - **`metabigor`** (low) — Use when you have an `employer-org`, ASN, or `ip-address` and want its network footprint with no API keys — returns IP ranges, related domai
-- **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
+- **`metadata-parser`** (low) — Use when you have a `domain`/URL and want to programmatically pull page metadata (title, description, author, Open Graph images) at scale — 
 - **`metadetective`** (low) — Use when you have a `domain` or a set of documents/images and want to harvest their metadata for author names, usernames, software, and host
 - **`metafinder`** (low) — Use when you have a `domain` and want documents it has published plus their metadata — returns author `name`s, `username`s, software, and pa
 - **`misp-galaxy`** (low) — Use when you have a threat-actor `name`/alias or malware label and want its canonical cluster, synonyms and attribution — returns associate/
@@ -318,7 +318,6 @@ kind: group-index
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
-- **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
 - **`poodle-check`** (low) — Use when you have a `domain`/host and want to know if its SSL/TLS is vulnerable to the POODLE (SSLv3) downgrade attack — returns a pass/fail
@@ -373,7 +372,6 @@ kind: group-index
 - **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Use when you have a `domain` or `ip-address` and want automated recon (WHOIS, reverse-IP, subdomains, nameservers, Cloudflare detection) — r
-- **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
 - **`smart-ruler`** (low) — Use when you have an on-screen `image`/web element and want to measure pixel distances, angles, and dimensions — a measurement aid for image
