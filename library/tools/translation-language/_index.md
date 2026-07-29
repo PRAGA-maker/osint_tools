@@ -27,7 +27,7 @@ kind: group-index
 - **`collinsdictionary`** (low) — Use when you have a foreign-language word or short phrase in a record and want an authoritative translation/definition — returns dictionary 
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
 - **`deepl`** (low) — Use when a subject's profile, document or post is in a language you don't read — DeepL gives high-quality translation so you can extract `na
-- **`definitions-net`** (low) — Multilingual dictionary providing definitions from various reference resources
+- **`definitions-net`** (low) — Use when you have a foreign or unfamiliar term from collected material and want a definition plus translation in 40+ languages — returns pla
 - **`dictionary-com-translation`** (low) — OSINT tool: Dictionary.com: Translation.
 - **`dictionary-com`** (low) — Search for definitions, grammar, slang, acronyms, and more
 - **`dragon-speech-recognition-solutions`** (low) — Program that recognized speech and translates it into text
@@ -51,7 +51,7 @@ kind: group-index
 - **`itranslate`** (low) — Use when you have foreign-language text, speech, or an image tied to a subject and need a quick translation — returns translated text/voice 
 - **`know-your-meme`** (low) — OSINT tool: Know Your Meme.
 - **`learn-languages`** (low) — OSINT tool: Learn Languages.
-- **`lexicool-translation`** (low) — OSINT tool: Lexicool Translation.
+- **`lexicool-translation`** (low) — Use when you have foreign-language text from collected material and want to compare several machine translators side by side — returns Engli
 - **`lexilogos`** (low) — Use when you have a `name` or text in a foreign language/script and want dictionaries, transliteration keyboards, and etymology tools to rea
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
 - **`linguee-english-french-dictionary`** (low) — Use when you have foreign-language text (a `name`, post, or document snippet) and want an accurate translation shown with real bilingual exa

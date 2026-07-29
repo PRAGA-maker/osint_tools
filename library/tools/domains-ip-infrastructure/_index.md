@@ -230,7 +230,7 @@ kind: group-index
 - **`ip2geo-dev`** (low) — Use when you have an `ip-address` and want programmatic geolocation — returns country/city `geolocation`, ISP and ASN via a REST API or SDK.
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
-- **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
+- **`ipaddress-com`** (low) — Use when you have an `ip-address` or `domain` and want geolocation, WHOIS ownership, DNS records and blacklist status — returns geolocation,
 - **`ipanalyzer-privacy-test`** (medium) — Use when you have an `ip-address` (or `domain`) and want its geolocation, network owner, reverse DNS, open services and blacklist status in 
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
 - **`ipinfo-map`** (low) — Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.
@@ -248,7 +248,6 @@ kind: group-index
 - **`kaspersky-cyberthreat-live-map`** (low) — Use when you want a live global picture of malware/attack detections by country — returns real-time threat-telemetry visualization, situatio
 - **`kloth`** (low) — Use when you have a `domain` or `ip-address` and want quick web-based DNS/network lookups (DNS records, DNSBL/blacklist checks) without a sh
 - **`knockknock`** (low) — Use when you have a `domain` and want other domains likely owned by the same person/company — a Go CLI over the ViewDNS API returning relate
-- **`knowledgenow`** (low) — OSINT tool: KNOWLEDGENOW.
 - **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
 - **`larger-io`** (low) — OSINT tool: Larger.io.
 - **`lazarusholic`** (low) — OSINT tool: lazarusholic.
@@ -363,7 +362,7 @@ kind: group-index
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
 - **`seotools-for-excel`** (low) — Use when you have a `domain` (or list of URLs) and want to bulk-extract on-page HTML, domain age, and backlink signals into a spreadsheet — 
 - **`server-status-pwn`** (low) — Use when you have a `domain`/host with an exposed Apache /server-status and want to harvest live request data — returns visited `domain`s, U
-- **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
+- **`shadowscatcher-shodan`** (low) — Use when you have an `ip-address` or `domain` and want to query Shodan programmatically for exposed services/devices from Go — returns ip-ad
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
@@ -436,7 +435,7 @@ kind: group-index
 - **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
 - **`webemailextractor-com`** (low) — Use when you have a `domain`/website (or list of them) and want the contact points published on it — extracts `email`s and `phone` numbers f
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
-- **`webosint`** (low) — Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.
+- **`webosint`** (low) — Use when you have a `domain` and want a guided, step-by-step passive recon sweep (WHOIS, DNS, reverse-IP, certs, subdomains) — returns domai
 - **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract
 - **`webscore`** (low) — OSINT tool: Webscore.
 - **`website-information`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocati

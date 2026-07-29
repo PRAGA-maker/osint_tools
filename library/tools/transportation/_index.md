@@ -89,7 +89,7 @@ kind: group-index
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
 - **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — Use when you have a vessel `name`, IMO/registration `document-id`, or call sign and want to check IUU-fishing blacklists — returns listing s
-- **`imo-registry`** (low) — Ship/shipping-related information from the IMO
+- **`imo-registry`** (low) — Use when you have an IMO number, ship name or shipping-company name (`document-id` / `employer-org`) and want official maritime particulars 
 - **`inmarsat-ships-directory`** (medium) — Use when you have a vessel name/ID and want its satellite contact numbers — returns Inmarsat mobile numbers (phone/telex/fax) for ships fitt
 - **`international-aircraft-search-by-manufacturer`** (medium) — Use when you have an aircraft tail number or vehicle plate and want the registration record — RegoSearch routes you into official registries
 - **`international-registry-of-mobile-assets`** (low) — Use when you have an aircraft identifier or owner/creditor `employer-org` and want registered financial interests in aircraft — returns regi

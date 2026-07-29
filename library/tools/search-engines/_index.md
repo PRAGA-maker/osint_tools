@@ -678,7 +678,7 @@ kind: group-index
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
-- **`xgs`** (low) — allows you to search for links to onion sites using Google Dorks (site:[http://onion.cab](http://onion.cab), site:[http://onion.city](http:/
+- **`xgs`** (low) — Use when you have a search term/dork and want to run it against Google (and legacy .onion gateways) from a Python CLI — returns domain/link 
 - **`xsint`** (high) — Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one comman
 - **`xtorx`** (low) — fast torrents search engine
 - **`yacy`** (low) — Use when you want to run web searches through a decentralized, self-hosted engine with no central logging — returns `domain`/page results fr

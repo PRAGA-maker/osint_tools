@@ -229,7 +229,7 @@ kind: group-index
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
 - **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
-- **`ollama`** (low) — Private AI analysis of sensitive OSINT data, local document processing without cloud exposure
+- **`ollama`** (low) — Use when you have collected OSINT text/documents and want to run an LLM over them entirely offline — returns local model output with no data
 - **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.

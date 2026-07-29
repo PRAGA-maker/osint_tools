@@ -10041,28 +10041,29 @@
   {
     "id": "ollama",
     "name": "Ollama",
-    "description": "Private AI analysis of sensitive OSINT data, local document processing without cloud exposure",
+    "description": "Use when you have collected OSINT text/documents and want to run an LLM over them entirely offline — returns local model output with no data leaving your machine.",
     "url": "https://ollama.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Private AI analysis of sensitive OSINT data, local document processing without cloud exposure",
-    "input": "Text prompts, documents (via integration), API calls",
-    "output": "LLM-generated responses using locally running open-source models",
+    "bestFor": "Private, offline LLM analysis of sensitive collected material (summaries, entity extraction, translation) without cloud exposure.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "The local engine and open models are free and open-source (MIT). An optional Ollama Cloud/Pro tier (~$20/mo) runs larger models on their servers — avoid it for sensitive data, defeating the local-only benefit.",
     "opsec": "passive",
-    "opsecNote": "Runs entirely on local hardware; no data leaves your machine. Ideal for sensitive investigations requiring AI analysis.",
+    "opsecNote": "Passive and self-contained when run locally — prompts and documents never leave your hardware, which is the whole point for confidential missing-persons material. Only the initial model download touches the network; verify you are pulling from official model sources. Do NOT route sensitive data through the paid Cloud tier.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Widely adopted open-source project (github.com/ollama/ollama) with a large community; model quality varies by which open model you pull.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -10070,11 +10071,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ollama.com"
+    ],
+    "tags": [
+      "llm",
+      "local-ai",
+      "offline",
+      "analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ollama.md"
   },
   {
@@ -73735,30 +73743,32 @@
   {
     "id": "ipaddress-com",
     "name": "IPAddress.com",
-    "description": "IP/DNS lookup with geolocation.",
+    "description": "Use when you have an `ip-address` or `domain` and want geolocation, WHOIS ownership, DNS records and blacklist status — returns geolocation, ip-address and domain infrastructure detail.",
     "url": "https://www.ipaddress.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "IP and DNS lookup with geolocation.",
+    "bestFor": "One-stop web console for IP/domain WHOIS, geolocation, DNS and blacklist checks.",
     "selectorsIn": [
       "ip-address",
       "domain"
     ],
     "selectorsOut": [
       "ip-address",
-      "geolocation"
+      "geolocation",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser tool; no account or payment required. Ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — the subject is never contacted; you query IPAddress.com's own databases about an address. Your lookups are logged by the site, so use a clean/VPN IP for sensitive casework. Geolocation is ISP/registry-level, not a home address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running commercial IP-tools portal aggregating public WHOIS/DNS/geo databases; data is only as fresh as its upstream sources.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -73767,18 +73777,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "ip",
-      "dns",
-      "geolocation"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ipaddress-tools"
     ],
+    "aliases": [
+      "ipaddress.com"
+    ],
+    "tags": [
+      "ip",
+      "dns",
+      "geolocation",
+      "whois"
+    ],
+    "source": "inteltechniques-tools",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipaddress-com.md"
   },
   {
@@ -74980,42 +74993,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/knockknock.md"
-  },
-  {
-    "id": "knowledgenow",
-    "name": "KNOWLEDGENOW",
-    "description": "OSINT tool: KNOWLEDGENOW.",
-    "url": "https://know.netenrich.com/content/track/threat-actor",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-actor-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/knowledgenow.md"
   },
   {
     "id": "kraken",
@@ -83081,13 +83058,13 @@
   {
     "id": "shadowscatcher-shodan",
     "name": "shadowscatcher/shodan",
-    "description": "Go client library for the Shodan.io internet-device search engine.",
+    "description": "Use when you have an `ip-address` or `domain` and want to query Shodan programmatically for exposed services/devices from Go — returns ip-address and domain infrastructure detail.",
     "url": "https://github.com/shadowscatcher/shodan",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Programmatic Shodan queries for exposed devices/services by IP or domain",
+    "bestFor": "Type-safe Go client for scripting Shodan.io device/service lookups at scale.",
     "selectorsIn": [
       "ip-address",
       "domain"
@@ -83096,23 +83073,27 @@
       "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The library is free/open-source, but it calls the Shodan API, which requires a Shodan account and API key. Shodan's free tier is limited; deeper filters/queries need a paid Shodan membership.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive toward the subject — you query Shodan's pre-collected scan data, not the target's host directly. Your API key ties every query to your Shodan account, so use a dedicated research account for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "119 stars; a Go SDK wrapping the Shodan API (requires Shodan API key; Shodan has free and paid tiers).",
+    "trustNote": "Community Go SDK (~119 stars) wrapping the official Shodan REST API; it is a client, so data authority rests with Shodan, not this wrapper.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
+    "relatedTools": [],
     "aliases": [
       "go-shodan"
     ],
@@ -83123,8 +83104,8 @@
       "iot"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/shadowscatcher-shodan.md"
   },
   {
@@ -88725,42 +88706,41 @@
   {
     "id": "webosint",
     "name": "WEBOSINT",
-    "description": "Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.",
+    "description": "Use when you have a `domain` and want a guided, step-by-step passive recon sweep (WHOIS, DNS, reverse-IP, certs, subdomains) — returns domain, ip-address and geolocation detail.",
     "url": "https://github.com/C3n7ral051nt4g3ncy/webosint",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Interactive, single-domain passive reconnaissance walkthrough in Python.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The script is free/open-source. It calls HackerTarget (optional key), WhoisXML API and WhoisFreaks — the latter two need API keys (free trial tiers available); a \"free\" run mode limits some steps.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — it queries third-party WHOIS/DNS/cert services, not the target's server directly. Note that your queried domains are seen by those upstream APIs (HackerTarget, WhoisXML, WhoisFreaks), so use research-only API keys.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small single-author OSINT script (C3n7ral051nt4g3ncy); functional but not widely audited — verify outputs against the underlying services.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "curl-for-osint",
       "masto",
@@ -88768,6 +88748,17 @@
       "prot1ntelligence",
       "whatsmyname-python"
     ],
+    "aliases": [
+      "webosint.py"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "Dorks/Pentest/Vulnerabilities",
+      "domain-recon"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webosint.md"
   },
   {
@@ -155637,13 +155628,13 @@
   {
     "id": "quick-geolocation-search",
     "name": "Quick geolocation search",
-    "description": "A tool that brings several maps into one place for easy location search.",
+    "description": "Use when you have a `geolocation` or `address` and want to jump the same coordinates across 160+ online maps at once — returns geolocation views across many mapping services.",
     "url": "https://cybdetective.com/quickgeolocationsearch.html",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Pushing one set of coordinates into dozens of maps (satellite, street, marine, air, social) without re-typing.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -155651,33 +155642,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser utility by CybDetective; no account. Some destination maps it links to may themselves require their own logins.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you are only opening public map layers for a location, not contacting anyone. Each destination map you click sees your visit and the coordinates; use a clean browser/VPN if the location is operationally sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by CybDetective and listed in the Bellingcat toolkit; it is a launcher of third-party maps, so accuracy rests with each destination service.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "maps"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cybdetective-com",
       "osint-tools-map"
     ],
+    "aliases": [
+      "cybdetective quick geolocation search"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "maps",
+      "geolocation"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/quick-geolocation-search.md"
   },
   {
@@ -235486,35 +235483,48 @@
   {
     "id": "kaggle",
     "name": "Kaggle",
-    "description": "OSINT tool: Kaggle.",
+    "description": "Use when you want to find open datasets that may contain relevant records (voter, geographic, breach-adjacent, demographic) — returns downloadable datasets to mine for names, locations and other fields.",
     "url": "https://www.kaggle.com/search?q=",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering and downloading public datasets that can be mined for records tied to an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search, register and download datasets. Hosted notebooks/compute have free quotas; heavier compute and some competitions may be gated. A free account is needed to download.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive toward any subject — you browse and download published datasets, you do not contact anyone. Downloads are tied to your Kaggle account; use a research identity. Handle any personal-data dataset lawfully and minimise what you retain.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Google-owned data-science platform; the platform is reputable but datasets are user-uploaded and unvetted — provenance and accuracy vary wildly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "kaggle.com",
+      "kaggle datasets"
+    ],
+    "tags": [
+      "datasets",
+      "public-records",
+      "data-mining"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kaggle.md"
   },
   {
@@ -296993,37 +297003,48 @@
   {
     "id": "xgs",
     "name": "XGS",
-    "description": "allows you to search for links to onion sites using Google Dorks (site:[http://onion.cab](http://onion.cab), site:[http://onion.city](http://onion.city) etc)",
+    "description": "Use when you have a search term/dork and want to run it against Google (and legacy .onion gateways) from a Python CLI — returns domain/link results.",
     "url": "https://github.com/XAMFRA/XGS",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Scripting Google Hacking Database (dork) searches, plus a legacy .onion dork mode.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free/open-source Python script; no account or key.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward any subject, but automated Google querying from your own IP is quickly flagged — Google will serve CAPTCHAs or block the IP after a few requests. Use a research IP and low volume.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small single-author GitHub script; its .onion dork feature relies on Tor2web gateways (onion.cab/onion.city) that are largely defunct, so only the Google-dork path is reliably useful.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "XAMFRA/XGS"
+    ],
     "tags": [
-      "Tools for Google"
+      "Tools for Google",
+      "google-dork"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/xgs.md"
   },
   {
@@ -340854,41 +340875,47 @@
   {
     "id": "definitions-net",
     "name": "Definitions.net",
-    "description": "Multilingual dictionary providing definitions from various reference resources",
+    "description": "Use when you have a foreign or unfamiliar term from collected material and want a definition plus translation in 40+ languages — returns plain-language meaning and cross-language equivalents.",
     "url": "http://www.definitions.net",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly defining and translating unfamiliar words/terms encountered during OSINT review.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported (part of the STANDS4 network); optional ad-free premium. A developer API exists.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you are looking up dictionary terms, not touching a subject. Avoid pasting sensitive, unique target phrases you don't want logged by a third-party site; look up individual words instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community/crowd-sourced reference (STANDS4 network) aggregating WordNet, Wiktionary, Webster and user contributions; quality varies with the source entry.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "definitions.net",
+      "STANDS4 Definitions"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "dictionary"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/definitions-net.md"
   },
   {
@@ -341988,37 +342015,44 @@
   {
     "id": "lexicool-translation",
     "name": "Lexicool Translation",
-    "description": "OSINT tool: Lexicool Translation.",
+    "description": "Use when you have foreign-language text from collected material and want to compare several machine translators side by side — returns English (or target-language) renderings.",
     "url": "http://www.lexicool.com/translate.asp",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "One page that launches the same text through Google, DeepL, Microsoft, Yandex, Reverso and Lara translators.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free aggregator/directory; it links out to the underlying free translators. No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward any subject, but the text you translate is sent to whichever third-party engine you pick (Google, DeepL, Microsoft, Yandex, etc.). Do NOT paste confidential case material into public translators; paraphrase or translate innocuous fragments only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing translation directory that aggregates third-party engines; it provides no translation of its own, so accuracy is the destination engine's.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "lexicool.com"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "language"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/lexicool-translation.md"
   },
   {
@@ -348459,42 +348493,54 @@
   {
     "id": "imo-registry",
     "name": "IMO Registry",
-    "description": "Ship/shipping-related information from the IMO",
+    "description": "Use when you have an IMO number, ship name or shipping-company name (`document-id` / `employer-org`) and want official maritime particulars — returns owner/operator company and flag/geolocation detail.",
     "url": "http://webaccounts.imo.org/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative lookups of ships, shipping companies and maritime incidents via the IMO's GISIS databases.",
     "selectorsIn": [
-      "vehicle-plate"
+      "document-id",
+      "employer-org"
     ],
     "selectorsOut": [
+      "employer-org",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public account. IMO Web Accounts is the single sign-on gateway to GISIS and other IMO apps; registration is required but costs nothing.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward any individual — you are searching official vessel/company records, not contacting a person. Note that access is tied to your registered IMO Web Account, so use a research identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the International Maritime Organization (a UN agency); GISIS is the authoritative registry of vessel and shipping-company data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "IMO Web Accounts",
+      "GISIS"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "transport"
+      "transport",
+      "maritime"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/imo-registry.md"
   },
   {
