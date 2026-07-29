@@ -17550,41 +17550,54 @@
   },
   {
     "id": "wot",
-    "name": "WOT",
-    "description": "OSINT tool: WOT.",
+    "name": "WOT (Web of Trust)",
+    "description": "Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware, or scam sites.",
     "url": "https://www.mywot.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "A fast reputation check on a website's trustworthiness before visiting or citing it.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free website checks and the browser extension; premium tiers add extra protection features.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a domain's reputation queries WOT's dataset, not the target site — the site owner isn't notified. The browser extension, however, sees the URLs you visit and sends them to WOT for rating; if that telemetry is a concern, use the website's manual lookup instead of the always-on extension.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "WOT ratings blend community reviews with ML/blacklists; useful as a heuristic, but community scoring can be gamed and has drawn past privacy criticism over its extension's data handling.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "getlinkinfo",
+      "urlscan-io",
       "web-of-trust"
     ],
+    "aliases": [
+      "WOT",
+      "Web of Trust",
+      "mywot"
+    ],
+    "tags": [
+      "website-reputation",
+      "safety",
+      "domain"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/wot.md"
   },
   {
@@ -61725,46 +61738,6 @@
     "_file": "library/tools/domains-ip-infrastructure/arin-net.md"
   },
   {
-    "id": "aslookup-com",
-    "name": "ASlookup.com",
-    "description": "BGP and ASN lookup",
-    "url": "https://aslookup.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "ipv4"
-    ],
-    "bestFor": "BGP and ASN lookup",
-    "input": "ASN or IP address",
-    "output": "IP ranges, organization, peering info",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive lookup of public BGP data.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/ipv4/aslookup-com.md"
-  },
-  {
     "id": "assay",
     "name": "ASSAY",
     "description": "URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame view and more.",
@@ -69154,53 +69127,6 @@
       "deepfaceui-github-com"
     ],
     "_file": "library/tools/domains-ip-infrastructure/geowifi.md"
-  },
-  {
-    "id": "getlinkinfo",
-    "name": "GetLinkInfo",
-    "description": "URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookmarklet.",
-    "url": "http://www.getlinkinfo.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "Safely expanding shortened links shared by or about a subject to reveal the true destination",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "url-expander",
-      "unshortener",
-      "bookmarklet"
-    ],
-    "source": "sinwindie-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "get-link-info"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/getlinkinfo.md"
   },
   {
     "id": "ghost-eye",
@@ -183467,42 +183393,55 @@
   },
   {
     "id": "storyful-multisearch-chrome-add-on",
-    "name": "Storyful Multisearch Chrome Add-On",
-    "description": "Add-on that provides multi-media search engine capabilities and results viewing",
+    "name": "Storyful Multisearch",
+    "description": "Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/Instagram/Tumblr/Spokeo etc. in parallel tabs.",
     "url": "https://chrome.google.com/webstore/detail/storyful-multisearch/hkglibabhninbjmaccpajiakojeacnaf?hl=en",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-click parallel search of a term across multiple social networks and search engines.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (MIT) Chrome extension by Storyful; source on GitHub. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It just opens normal search-result pages on each platform in separate tabs — the same queries you'd run by hand, so it's passive and doesn't contact any subject. Be aware you're hitting each platform from your own IP/browser session; run it in a sock-puppet browser profile if you don't want the searches tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Built and open-sourced by Storyful (a reputable journalism/verification agency); the code is public (MIT) and simply automates opening search URLs.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname"
+    ],
+    "aliases": [
+      "Storyful Multisearch",
+      "multisearch"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "social-media",
+      "socmint",
+      "search",
+      "browser-extension"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/storyful-multisearch-chrome-add-on.md"
   },
   {
@@ -221698,43 +221637,56 @@
   {
     "id": "dilisense",
     "name": "dilisense",
-    "description": "Commercial AML/KYC sanctions screening and PEP checks",
+    "description": "Use when you have a `name` (person or entity) and want to check it against global sanctions, PEP, and criminal watchlists — returns matching listings with source and jurisdiction.",
     "url": "https://dilisense.com/en",
     "category": "public-records",
     "path": [
       "public-records",
       "sanctions-screening"
     ],
-    "bestFor": "Commercial AML/KYC sanctions screening and PEP checks",
-    "input": "Name, date of birth, citizenship, or other identifying information",
-    "output": "Match results with entity details, list sources, and confidence scores",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free instant screening of a person or company against sanctions, PEP, and criminal watchlists worldwide.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "The web search tool is free and needs no registration; paid tiers add REST API, Excel batch screening, on-prem database, and ongoing monitoring.",
     "opsec": "passive",
-    "opsecNote": "Queries sent to dilisense servers; registration required so searches are tied to an account.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "Screening runs against dilisense's aggregated lists — you submit a name to their service, not to the subject, so the person is not alerted. Passive. Be mindful the query (a name) is sent to a third-party compliance vendor; use a neutral connection and don't include extra sensitive context in the search box.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "trust": "trusted",
+    "trustNote": "Aggregates 9,000+ official sanctions/PEP/watchlist sources refreshed multiple times daily; a compliance-grade dataset, though matches are name-based and need identity confirmation.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "relatedTools": [
+      "opensanctions"
+    ],
+    "aliases": [
+      "dilisense",
+      "dilisense.com"
+    ],
+    "tags": [
+      "sanctions",
+      "pep",
+      "watchlist",
+      "aml"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sanctions-screening/dilisense.md"
   },
   {
@@ -239959,36 +239911,57 @@
   },
   {
     "id": "mras-business-registry-search",
-    "name": "MRAS Business Registry Search",
-    "description": "OSINT tool: MRAS Business Registry Search.",
-    "url": "https://beta.canadasbusinessregistries.ca/search",
+    "name": "Canada's Business Registries (MRAS)",
+    "description": "Use when you have a company `name` or corporation number in Canada and want its official registry record — returns jurisdiction, status, registered office, and identifiers.",
+    "url": "https://canadasbusinessregistries.ca",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching businesses/corporations across participating Canadian jurisdictions from one official portal.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Government of Canada service (Multi-jurisdictional Registry Access Service); no account for basic search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An official public registry — you search a business, not a private person, and nothing about your investigation is disclosed to the subject. Fully passive. The registered addresses returned are public filings, not necessarily current personal residences.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Government of Canada (ISED) aggregating official provincial/federal corporate registries; authoritative primary-source data for participating jurisdictions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "opencorporates"
+    ],
+    "aliases": [
+      "MRAS",
+      "Canada's Business Registries",
+      "canadasbusinessregistries.ca"
+    ],
+    "tags": [
+      "public-records",
+      "corporate-registry",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mras-business-registry-search.md"
   },
   {
@@ -269912,24 +269885,32 @@
   {
     "id": "dirjournal",
     "name": "DirJournal",
-    "description": "Web directory, offering local searches by categories",
+    "description": "Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/address details.",
     "url": "https://www.dirjournal.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing a human-verified business directory by name or category for contact and address details.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search (no signup); only listing a business costs money. Ad/listing-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public business directory — you look up companies, not private individuals, and no subject is notified. Fully passive browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A curated directory (since 2007, rebuilt 2026) whose entries are editor-verified against an audit; useful but a secondary/aggregated source, not an official registry.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -269938,15 +269919,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "web-directories"
+    "relatedTools": [],
+    "aliases": [
+      "DirJournal",
+      "dirjournal.com"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "business-directory",
+      "local-search",
+      "reference"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dirjournal.md"
   },
   {
@@ -272112,40 +272097,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/felo.md"
-  },
-  {
-    "id": "filephish",
-    "name": "FilePhish",
-    "description": "OSINT tool: FilePhish.",
-    "url": "https://cartographia.github.io/FilePhish/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/filephish.md"
   },
   {
     "id": "filepursuit-com",

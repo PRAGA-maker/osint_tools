@@ -7,7 +7,7 @@ kind: group-index
 # public-records/sanctions-screening
 
 ## Skills here
-- **`dilisense`** (low) — Commercial AML/KYC sanctions screening and PEP checks
+- **`dilisense`** (medium) — Use when you have a `name` (person or entity) and want to check it against global sanctions, PEP, and criminal watchlists — returns matching
 - **`eu-sanctions-tool`** (low) — Use when you have a `name` or `employer-org` and want to check it against EU sanctions regimes — returns whether a person/entity is listed, 
 - **`ofac-sanctions-list-search`** (low) — Use when you have a `name` (person or `employer-org`) and want to check it against U.S. Treasury sanctions (SDN and consolidated lists) — re
 

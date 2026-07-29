@@ -26,7 +26,7 @@ kind: group-index
 - **`host-port-discovery/`** — 4 skill(s) below.
 - **`ioc-tools/`** — 6 skill(s) below.
 - **`ip-loggers/`** — 3 skill(s) below.
-- **`ipv4/`** — 8 skill(s) below.
+- **`ipv4/`** — 7 skill(s) below.
 - **`ipv6/`** — 1 skill(s) below.
 - **`neighbor-domains/`** — 3 skill(s) below.
 - **`network-analysis-tools/`** — 3 skill(s) below.
@@ -167,7 +167,6 @@ kind: group-index
 - **`geo-data-tool`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location on a map plus ISP and hostname — returns geolocation, ip-addre
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Use when you have a WiFi `mac-address` (BSSID) or SSID and want to geolocate it — queries Wigle, Apple, Google, Mylnikov and more to return 
-- **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
 - **`ghost-eye`** (low) — Use when you have a `domain` or `ip-address` and want a menu-driven recon sweep — returns WHOIS, DNS, open ports, CMS, and `geolocation`.
 - **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
 - **`gitgraber`** (low) — Use when you have an `employer-org` or `domain` and want to catch secrets/tokens leaked to GitHub in real time — returns leaked credentials 

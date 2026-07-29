@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/ipv4
 
 ## Skills here
-- **`aslookup-com`** (low) — BGP and ASN lookup
 - **`hacker-target-reverse-dns`** (low) — Use when you have an `ip-address` (or range) and want the domains/PTR records that resolve to it — returns `domain` leads.
 - **`ip-to-asn-db`** (low) — Use when you have an `ip-address` and want the ASN, network prefix and owning organization it belongs to — returns the ASN, prefix and org (
 - **`ipv4-cidr-report`** (low) — Use when you have an ASN or want to understand a network's global routing footprint — returns the AS's announced prefixes, aggregation stats

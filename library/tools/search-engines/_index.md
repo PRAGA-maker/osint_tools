@@ -169,7 +169,7 @@ kind: group-index
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/tee
 - **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
-- **`dirjournal`** (low) — Web directory, offering local searches by categories
+- **`dirjournal`** (low) — Use when you have a business `name` or category and want a curated directory listing — returns verified business profiles with contact/addre
 - **`disconnect-search`** (low) — OSINT tool: Disconnect Search.
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
@@ -210,7 +210,6 @@ kind: group-index
 - **`federal-register`** (medium) — Use when you have a `name` or `employer-org` and want to find their appearance in US federal rules, notices, or agency actions — returns nam
 - **`fefoo-mega-search`** (medium) — Use when you have a `name` or `username` and want to fire the same query across many search engines and verticals fast — returns social-prof
 - **`felo`** (medium) — Use when you have a `name`, topic, or question and want an AI answer engine that searches the live web multilingually — returns a cited synt
-- **`filephish`** (low) — OSINT tool: FilePhish.
 - **`filepursuit-com`** (low) — Use when you have a `name`/keyword and want files exposed in open directories — returns direct download links to documents, video, audio, an
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
 - **`filmaffinity-canada`** (medium) — Use when you have a `username` on the FilmAffinity movie community and want their profile — returns reviews, ratings history, and taste/acti

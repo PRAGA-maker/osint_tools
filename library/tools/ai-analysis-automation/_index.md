@@ -386,7 +386,7 @@ kind: group-index
 - **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
 - **`wickr`** (low) — OSINT tool: Wickr.
 - **`world-monitor`** (low) — Geopolitical OSINT, global event monitoring, early warning intelligence gathering
-- **`wot`** (low) — OSINT tool: WOT.
+- **`wot`** (low) — Use when you have a `domain` and want a quick reputation/safety read on it — returns a community + ML trust score flagging phishing, malware
 - **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
 - **`x86-and-x64-intel-assembler`** (low) — Use when you have x86/x64 assembly or raw machine-code bytes and want to convert between them in-browser — returns assembled opcodes or disa
 - **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 

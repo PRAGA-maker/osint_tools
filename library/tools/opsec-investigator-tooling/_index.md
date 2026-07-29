@@ -365,7 +365,7 @@ kind: group-index
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
 - **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
-- **`storyful-multisearch-chrome-add-on`** (low) — Add-on that provides multi-media search engine capabilities and results viewing
+- **`storyful-multisearch-chrome-add-on`** (medium) — Use when you have a keyword, `username`, or `name` and want to search many social platforms at once — opens the same query across Twitter/In
 - **`stutterbox`** (low) — OSINT tool: Stutterbox.
 - **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
 - **`system-status-management-app-mobile-ios`** (low) — App for mobile devices for monitoring and managing battery and memory usage

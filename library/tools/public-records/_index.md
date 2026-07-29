@@ -563,7 +563,7 @@ kind: group-index
 - **`most-wanted`** (high) — Use when you have a `name` (or are working an image/case) and want to check whether the person appears on the FBI's wanted/most-wanted lists
 - **`mpts-uk-org-2`** (high) — Use when you have a doctor's `name` (or GMC number) and want to check for UK fitness-to-practise tribunal hearings/decisions against them — 
 - **`mpts-uk-org`** (high) — Use when you have a UK doctor's `name` and want fitness-to-practise tribunal records — returns hearing listings and decision documents namin
-- **`mras-business-registry-search`** (low) — OSINT tool: MRAS Business Registry Search.
+- **`mras-business-registry-search`** (low) — Use when you have a company `name` or corporation number in Canada and want its official registry record — returns jurisdiction, status, reg
 - **`muckrock`** (medium) — Use when you want to file or search US public-records/FOIA requests and released government documents about a `name` or `employer-org` — ret
 - **`mugshots`** (high) — Use when you have a `name` and want to check for a US arrest/booking record — returns booking photo, charges, arrest location and date; trea
 - **`musicteachers-co-uk`** (low) — Use when you have a `name`, instrument or `address`/area and think the subject is a UK private music teacher — returns teacher `name`, `addr
