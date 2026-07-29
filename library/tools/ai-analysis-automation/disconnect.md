@@ -29,6 +29,7 @@ registration: false
 relatedTools:
 - ublock-origin
 - waterfox
+- disconnect-search
 aliases:
 - Disconnect.me
 - Disconnect Privacy

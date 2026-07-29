@@ -323,7 +323,7 @@ kind: group-index
 - **`journal-guide`** (low) — Use when you have a journal name/paper topic and want to identify or compare scholarly journals — returns journal profiles and matches (a re
 - **`journal-seek`** (low) — Use when you have a journal name/abbreviation or ISSN and want to identify the publication and its scope/homepage — returns journal metadata
 - **`journalist-s-toolbox-investigative`** (medium) — Use when you need a vetted starting point for an investigation and want a curated directory of people-tracing, public-records, and verificat
-- **`jstor`** (low) — OSINT tool: JSTOR.
+- **`jstor`** (low) — Use when you have a `name` or topic and want scholarly articles, books, or primary sources authored by or about a subject — returns academic
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Use when you have a jurisdiction/region and want the official website of its law-enforcement or justice agency — returns links to police/jus
@@ -470,7 +470,7 @@ kind: group-index
 - **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — OSINT tool: Paperball.news.
 - **`paperboy`** (low) — OSINT tool: Paperboy.
-- **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).
+- **`parseek-iran`** (low) — Use when you need current Persian-language news headlines aggregated from Iranian sources — returns categorized Iranian news links, not a pe
 - **`parseek`** (low) — Use when you have a `name`, `employer-org`, or event tied to Iran and want Persian-language news coverage — returns aggregated Iranian news 
 - **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
 - **`pdfsearch-io`** (low) — Use when you have a `name`/keyword and want it inside PDF documents/books — returns matching PDFs with author/year metadata and download lin
@@ -487,7 +487,6 @@ kind: group-index
 - **`pubmed`** (low) — Use when you have a researcher/clinician `name` or `employer-org` and want their biomedical publications — returns papers, affiliations, and
 - **`pytrends`** (low) — Use when you want to pull Google Trends data programmatically for a term/`name`/topic — returns interest-over-time, regional interest and re
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
-- **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
 - **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
 - **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
 - **`qwant`** (low) — Use when you have a `name`, `username`, `email` or `phone` and want a privacy-preserving web search with a different result set than Google/
@@ -530,7 +529,7 @@ kind: group-index
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-craigslist`** (medium) — Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns mat
-- **`search-engine-colossus`** (low) — International directory of search engines
+- **`search-engine-colossus`** (low) — Use when your subject has a foreign/regional nexus and you need that country's own search engines — returns a directory of search engines by
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
 - **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
 - **`search-engines-scraper`** (low) — Use when you have a `name`, `username`, or `email` and want to sweep many engines at once — returns aggregated result URLs (`social-profile`

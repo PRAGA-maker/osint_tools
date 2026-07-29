@@ -25,7 +25,7 @@ kind: group-index
 - **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
 - **`api-guesser`** (low) — Enter the API key or token to find out which service it can be used by.
 - **`apis-for-osint`** (low) — List of API's for gathering information about phone numbers, addresses, domains etc
-- **`app-store-scraper`** (low) — get the most detailed metadata about the app from AppStore
+- **`app-store-scraper`** (low) — Use when you have an app name, developer, or app ID and want structured Apple App Store data — returns app metadata, developer catalogs, and
 - **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
 - **`arbor-js`** (low) — OSINT tool: Arbor.js.
 - **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
@@ -223,7 +223,7 @@ kind: group-index
 - **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
 - **`nixintel`** (low) — OSINT tool: NixIntel.
 - **`nixory`** (low) — OSINT tool: Nixory.
-- **`nodebox`** (low) — OSINT tool: Nodebox.
+- **`nodebox`** (low) — Use when you have a dataset (connections, entities) and want to build custom node-based visualizations without heavy coding — returns genera
 - **`observable`** (low) — Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and 
 - **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;
 - **`oda-the-online-disassembler`** (low) — Use when you have a binary or raw bytes (from a suspect file, firmware, shellcode) and want to disassemble it in-browser — returns architect

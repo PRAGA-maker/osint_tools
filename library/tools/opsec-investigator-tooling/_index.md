@@ -18,7 +18,7 @@ kind: group-index
 - **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
 - **`9-steps-to-security-in-the-digital-age`** (low) — Use when you're hardening your investigator OPSEC — a free plain-language online-privacy guide covering passwords, VPNs, tracking, and accou
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
-- **`abine-blur-app`** (low) — Secure personal information you put online such as passwords, payments, etc.
+- **`abine-blur-app`** (low) — Use when you want masked emails/phone/cards to build isolated sock-puppet identities, or to remove your own data from brokers — a privacy/op
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
 - **`adblock-extension-chrome`** (low) — Add-on for Google Chrome that blocks Youtube and Facebook video ads
 - **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking

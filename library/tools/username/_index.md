@@ -12,7 +12,7 @@ kind: group-index
 
 ## Skills here
 - **`addmecontacts`** (low) — Use when you have a `username`/`name` and want to find messaging-app handles a person has publicly listed to be added — returns linked `soci
-- **`addmes`** (low) — 'Add Me' directory of Snapchat users on the web.
+- **`addmes`** (low) — Use when you have a Snapchat `username` (or want to find one by demographics) and want to confirm/discover Snapchat accounts — returns self-
 - **`alfred-osint`** (high) — Use when you have a `username` and want to find where it exists across social platforms — returns a list of matching profile URLs (a Sherloc
 - **`aliens-eye`** (high) — Use when you have a `username` and want to enumerate matching accounts across hundreds of platforms with ML-assisted confidence scoring — re
 - **`alternate-spelling-finder`** (high) — Use when you have a `name` and want its likely spelling variants — returns phonetic/transliteration alternatives to broaden name searches ac

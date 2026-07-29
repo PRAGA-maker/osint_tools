@@ -317,7 +317,6 @@ kind: group-index
 - **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
 - **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
 - **`france`** (medium) — Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, 
-- **`freebase`** (low) — OSINT tool: Freebase.
 - **`freebmd-org-uk`** (high) — Use when you have a `name` and want English & Welsh birth, marriage, or death registrations — returns the registration event with quarter/ye
 - **`freecen-org-uk`** (high) — Use when you have a `name` and rough year/place in 19th–early-20th-century Britain and want free transcribed census records to place a perso
 - **`freeones-com`** (high) — Use when a subject may work in the adult-entertainment industry and you have a `name`/stage name — returns aliases, linked social-profiles a

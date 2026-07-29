@@ -425,7 +425,7 @@ kind: group-index
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
 - **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
 - **`view-rendered-source`** (low) — Use when you have a `domain`/page and want to see its HTML after JavaScript has run — compares raw vs rendered DOM, exposing dynamically-inj
-- **`vincos-it`** (low) — world social media popularity map
+- **`vincos-it`** (low) — Use when you have a `geolocation`/country and want to know which social network dominates there — returns a country-by-country map of the le
 - **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
 - **`vstat-info`** (low) — Use when you have a `domain` and want estimated traffic, audience and referral data — returns visitor estimates, traffic sources and related
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
@@ -440,7 +440,6 @@ kind: group-index
 - **`webosint`** (low) — Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.
 - **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract
 - **`webscore`** (low) — OSINT tool: Webscore.
-- **`webscout`** (low) — OSINT tool: Webscout.
 - **`website-information`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocati
 - **`website-search-tool`** (low) — Use when you have a `domain` and want a guided query builder that fans it out across WHOIS, archives, shared-analytics-ID, and backlink look
 - **`websitetechminer-py`** (low) — Use when you have a `domain` (or a CSV of domains) and want its technology stack from BuiltWith + Wappalyzer in bulk — returns per-domain te
