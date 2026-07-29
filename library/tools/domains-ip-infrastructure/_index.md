@@ -116,7 +116,7 @@ kind: group-index
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
 - **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
-- **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
+- **`crab`** (low) — Use when you have a `domain`/`ip-address` and want a one-command port scan plus WHOIS/IP-info and OS guess — returns open ports, ip-address 
 - **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — Use when you have a `domain`/URL (or want to enrich one) and want to check it against a free feed of known crypto-scam/phishing sites — retu
 - **`cve-binary-tool`** (low) — Use when you have a binary, package list, or SBOM and want its known vulnerabilities — returns matched CVEs from NVD/OSV/Red Hat/GAD with se
 - **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
@@ -363,7 +363,6 @@ kind: group-index
 - **`seotools-for-excel`** (low) — Use when you have a `domain` (or list of URLs) and want to bulk-extract on-page HTML, domain age, and backlink signals into a spreadsheet — 
 - **`server-status-pwn`** (low) — Use when you have a `domain`/host with an exposed Apache /server-status and want to harvest live request data — returns visited `domain`s, U
 - **`shadowscatcher-shodan`** (low) — Use when you have an `ip-address` or `domain` and want to query Shodan programmatically for exposed services/devices from Go — returns ip-ad
-- **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
 - **`sitebroker`** (low) — Use when you have a `domain` or `ip-address` and want automated recon (WHOIS, reverse-IP, subdomains, nameservers, Cloudflare detection) — r
@@ -437,7 +436,7 @@ kind: group-index
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
 - **`webosint`** (low) — Use when you have a `domain` and want a guided, step-by-step passive recon sweep (WHOIS, DNS, reverse-IP, certs, subdomains) — returns domai
 - **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract
-- **`webscore`** (low) — OSINT tool: Webscore.
+- **`webscore`** (low) — Use when you have a `domain`/URL and want a fast legitimacy read (HTTPS, domain age, Wayback history, Safe Browsing) — returns basic trust s
 - **`website-information`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocati
 - **`website-search-tool`** (low) — Use when you have a `domain` and want a guided query builder that fans it out across WHOIS, archives, shared-analytics-ID, and backlink look
 - **`websitetechminer-py`** (low) — Use when you have a `domain` (or a CSV of domains) and want its technology stack from BuiltWith + Wappalyzer in bulk — returns per-domain te

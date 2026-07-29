@@ -42,7 +42,6 @@ kind: group-index
 - **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
 - **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
-- **`awesome-privacy`** (low) — OSINT tool: awesome-privacy.
 - **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
 - **`awesome-security`** (low) — Use when you need to find a security/OSINT tool for a category — a large curated GitHub index of security resources, tools, and references t
 - **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
@@ -107,11 +106,11 @@ kind: group-index
 - **`discoshell`** (low) — OSINT tool: Discoshell.
 - **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
-- **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
+- **`docmind-ai`** (low) — Use when you have sensitive documents to query and want a local RAG chat over them with no cloud exposure — returns summaries, Q&A and extra
 - **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do
 - **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`dropmark`** (low) — OSINT tool: Dropmark.
-- **`duckduckgo-ai-chat`** (low) — Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries
+- **`duckduckgo-ai-chat`** (low) — Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy 
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
@@ -317,7 +316,7 @@ kind: group-index
 - **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
 - **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
-- **`serpscan`** (low) — OSINT tool: SerpScan.
+- **`serpscan`** (low) — Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag

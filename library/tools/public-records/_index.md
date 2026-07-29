@@ -920,7 +920,6 @@ kind: group-index
 - **`vat-search-eu`** (medium) — Use when you have an EU company `name` or VAT number and want to validate/resolve it — returns the VAT-registered business `name`, `address`
 - **`virtualglobetrotting-com`** (medium) — Use when you have a `name` or place and want user-submitted satellite/street-view locations — returns pinpointed `address`es/coordinates for
 - **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
-- **`vizala`** (low) — OSINT tool: Vizala.
 - **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n
 - **`webmd-medical-sciences-search`** (low) — Use when you have a doctor's `name` (US) and want their practice location, specialty and credentials — returns a practice `address`, `employ
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st

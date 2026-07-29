@@ -118,7 +118,7 @@ kind: group-index
 - **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers
 - **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
-- **`gogetfunding`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`gogetfunding`** (low) — Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and
 - **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
 - **`google-cloud-ocr`** (medium) — Use when you have an `image` with text (document, sign, screenshot, handwriting) and want it transcribed — returns the extracted text, inclu
 - **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
@@ -147,7 +147,6 @@ kind: group-index
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
 - **`kickstarter`** (medium) — Use when you have a `name`, `username` or project/company and want its crowdfunding footprint — returns creator profiles, bios, locations, b
 - **`knowyourmeme`** (low) — Use when you have a meme `image`, phrase, or symbol and want its origin and meaning — returns the documented history, spread, and cultural c
-- **`lifestream`** (low) — Faith/religion based website related to social networking in the form of lifestreaming or digital diaries
 - **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts

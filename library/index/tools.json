@@ -1201,45 +1201,6 @@
     "_file": "library/tools/ai-analysis-automation/awesome-pentest.md"
   },
   {
-    "id": "awesome-privacy",
-    "name": "awesome-privacy",
-    "description": "OSINT tool: awesome-privacy.",
-    "url": "https://github.com/Lissy93/awesome-privacy/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "related-awesome-lists"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "personal-security-checklist"
-    ],
-    "_file": "library/tools/ai-analysis-automation/awesome-privacy.md"
-  },
-  {
     "id": "awesome-sec-talks",
     "name": "awesome-sec-talks",
     "description": "OSINT tool: awesome-sec-talks.",
@@ -4138,40 +4099,50 @@
   {
     "id": "docmind-ai",
     "name": "DocMind AI",
-    "description": "Private document analysis, querying sensitive documents without cloud exposure",
+    "description": "Use when you have sensitive documents to query and want a local RAG chat over them with no cloud exposure — returns summaries, Q&A and extracted insights processed entirely offline.",
     "url": "https://github.com/BjornMelin/docmind-ai-llm",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Private document analysis, querying sensitive documents without cloud exposure",
-    "input": "PDF and text document files",
-    "output": "LLM-generated summaries, Q&A responses, and extracted insights from documents",
+    "bestFor": "Private, offline question-answering and summarisation over collected documents.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free/open-source (MIT); self-hosted. You supply a local LLM backend (Ollama, vLLM, LM Studio); optional GPU speeds it up.",
     "opsec": "passive",
-    "opsecNote": "Runs entirely locally; no data is sent to external servers, making it suitable for sensitive document analysis.",
+    "opsecNote": "Passive and self-contained — the developers block remote LLM endpoints by default, so documents, embeddings and retrieval stay on your machine. Ideal for confidential case files. Only enable remote endpoints deliberately, and never for sensitive material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community single-author project; a Streamlit app wrapping local RAG. Output quality depends on the local model you attach.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "ollama"
+    ],
+    "aliases": [
+      "docmind-ai-llm"
+    ],
+    "tags": [
+      "llm",
+      "local-ai",
+      "rag",
+      "document-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/docmind-ai.md"
   },
   {
@@ -4310,28 +4281,29 @@
   {
     "id": "duckduckgo-ai-chat",
     "name": "DuckDuckGo AI Chat",
-    "description": "Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries",
+    "description": "Use when you want to run an LLM query anonymously for analysis without an account tied to you — returns AI answers via DuckDuckGo's privacy proxy.",
     "url": "https://duckduckgo.com/aichat",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries",
-    "input": "Text prompts and questions",
-    "output": "AI-generated responses with privacy protections in place",
+    "bestFor": "Anonymous, no-login LLM chat for lightweight OSINT analysis and drafting.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account required; DuckDuckGo (Duck.ai) proxies access to several third-party models.",
     "opsec": "passive",
-    "opsecNote": "DuckDuckGo proxies requests and does not link them to user accounts; offers better privacy than direct LLM providers.",
+    "opsecNote": "Passive — you are querying an AI, not a subject. DuckDuckGo proxies requests, strips your IP from the model provider, and states chats aren't used to train models or tied to an account. Still, don't paste truly sensitive case data into any hosted AI; use a local model (Ollama/DocMind) for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by DuckDuckGo (Duck.ai); a mainstream privacy-focused provider proxying reputable third-party models (e.g. OpenAI GPT, Anthropic Claude, Llama, Mistral).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -4341,13 +4313,21 @@
     "relatedTools": [
       "duckduckgo",
       "duckduckgo-com",
-      "duckduckgo-bangs"
+      "duckduckgo-bangs",
+      "ollama"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Duck.ai",
+      "duck.ai chat"
+    ],
+    "tags": [
+      "llm",
+      "privacy",
+      "anonymous-ai"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/duckduckgo-ai-chat.md"
   },
   {
@@ -14259,37 +14239,54 @@
   {
     "id": "serpscan",
     "name": "SerpScan",
-    "description": "OSINT tool: SerpScan.",
+    "description": "Use when you have a `domain` and want automated dorking + recon (subdomains, endpoints, JS, params) across multiple search engines — returns domain infrastructure and exposed paths.",
     "url": "https://github.com/Alaa-abdulridha/SerpScan",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestFor": "Automated multi-engine dorking and attack-surface recon for a target domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The tool is free/open-source, but it needs a SerpAPI key (free tier available) and external CLIs (subfinder, httpx, hakrawler) installed.",
+    "opsec": "active",
+    "opsecNote": "Mixed — dorking via SerpAPI is passive (queries search engines), but the crawling/probing tools it drives (httpx, hakrawler) send requests directly to the target's hosts and appear in their logs. Use a research IP and only run against authorised scope.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "unverified",
+    "trustNote": "Community single-author PHP tool; author states it is \"for education purposes only.\" Depends on third-party CLIs and SerpAPI.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "jsleak",
+      "webosint"
+    ],
+    "aliases": [
+      "Alaa-abdulridha/SerpScan"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "dorking",
+      "recon"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/serpscan.md"
   },
   {
@@ -24294,37 +24291,45 @@
   {
     "id": "answers-com",
     "name": "Answers.com",
-    "description": "OSINT tool: Answers.com.",
+    "description": "Use when you want to search a large user-generated Q&A corpus for context on a term, place or topic — returns crowd-written answers (low authority).",
     "url": "http://www.answers.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Skimming crowd-sourced Q&A for background context, not for verified facts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported, searchable; no account needed to read.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read public Q&A content; no subject is contacted. Standard web-browsing footprint applies; use a clean browser for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "User-generated Q&A/reference site (now also featuring AI chatbots); answers are unsourced and quality varies widely.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "answers.com",
+      "WikiAnswers"
+    ],
     "tags": [
-      "q-a-sites"
+      "q-a-sites",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/answers-com.md"
   },
   {
@@ -52296,24 +52301,32 @@
   {
     "id": "gogetfunding",
     "name": "GoGetFunding",
-    "description": "Website related to crowdsourced funding (venture capital) for ideas and projects",
+    "description": "Use when you have a `name` and want to find their public crowdfunding campaign — returns fundraiser text with name, location, associates and photos.",
     "url": "http://gogetfunding.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating a person's public fundraiser to mine story, location, contacts and images.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation",
+      "associate",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search public campaigns; only creating/donating to a campaign involves money.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read publicly-posted campaign pages; the subject isn't contacted. Browse logged out; do not donate or message from a real account, as organisers can see donor/comment identities.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established crowdfunding platform (operating since ~2011); campaign content is self-reported by organisers and unverified.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -52322,15 +52335,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gogetfunding.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "crowdfunding"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/gogetfunding.md"
   },
   {
@@ -54142,46 +54158,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/koodous.md"
-  },
-  {
-    "id": "lifestream",
-    "name": "Lifestream",
-    "description": "Faith/religion based website related to social networking in the form of lifestreaming or digital diaries",
-    "url": "http://www.lifestream.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/lifestream.md"
   },
   {
     "id": "line",
@@ -65053,42 +65029,53 @@
   {
     "id": "crab",
     "name": "Crab",
-    "description": "Well done and well designed port scanner, host info gatherer (include whois).",
+    "description": "Use when you have a `domain`/`ip-address` and want a one-command port scan plus WHOIS/IP-info and OS guess — returns open ports, ip-address and domain registration detail.",
     "url": "https://github.com/N0tA1dan/Crab",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick combined port scan + WHOIS/IP lookup + OS detection against a single host.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
+      "ip-address",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free/open-source (GPL-3.0) Python tool; no account or key.",
+    "opsec": "active",
+    "opsecNote": "Active — port scanning sends packets directly to the target host, which is visible in the target's logs/IDS and may be treated as hostile. Only scan systems you are authorised to test, from a research/VPN egress; the WHOIS/IP-info portion is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community single-author Python project (~24 stars) with a GPL-3.0 licence and an unlawful-use disclaimer; small and unaudited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "webosint"
+    ],
+    "aliases": [
+      "N0tA1dan/Crab"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "port-scanner"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/crab.md"
   },
   {
@@ -83248,47 +83235,6 @@
     "_file": "library/tools/domains-ip-infrastructure/discovery/shodan.md"
   },
   {
-    "id": "sicknerd",
-    "name": "SickNerd",
-    "description": "tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of results",
-    "url": "https://github.com/JakeWnuk/SickNerd",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/sicknerd.md"
-  },
-  {
     "id": "similarweb",
     "name": "SimilarWeb",
     "description": "Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and related sites.",
@@ -88897,38 +88843,51 @@
   },
   {
     "id": "webscore",
-    "name": "Webscore",
-    "description": "OSINT tool: Webscore.",
+    "name": "WebScore",
+    "description": "Use when you have a `domain`/URL and want a fast legitimacy read (HTTPS, domain age, Wayback history, Safe Browsing) — returns basic trust signals for the site.",
     "url": "https://garvit835.github.io/WebScore/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick, no-login trust/legitimacy check on a suspicious website.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free static web tool hosted on GitHub Pages; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject — checks run against third-party services (domain WHOIS/age, Wayback, Google Safe Browsing), not by hitting the target site as the subject. Your query is seen by those upstream services.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small community project; the authors explicitly call it \"basic checks... not a guarantee of a website's safety.\"",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "webosint"
+    ],
+    "aliases": [
+      "garvit835 WebScore"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "website-legitimacy"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webscore.md"
   },
   {
@@ -260349,42 +260308,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/vision-net-ie.md"
-  },
-  {
-    "id": "vizala",
-    "name": "Vizala",
-    "description": "OSINT tool: Vizala.",
-    "url": "https://vizala.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/vizala.md"
   },
   {
     "id": "washington",

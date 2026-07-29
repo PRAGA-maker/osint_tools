@@ -25,7 +25,7 @@ kind: group-index
 - **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
 - **`analystforum-com`** (medium) — Use when you have a `username` and want to trace a finance/CFA-candidate's forum footprint — returns `social-profile`, reused `username` and
-- **`answers-com`** (low) — OSINT tool: Answers.com.
+- **`answers-com`** (low) — Use when you want to search a large user-generated Q&A corpus for context on a term, place or topic — returns crowd-written answers (low aut
 - **`arabian-business-news-middle-east-english-language`** (medium) — Use when you have a `name` or `employer-org` tied to the Gulf/Middle East and want business-press coverage — returns articles, roles, and co
 - **`arrse-co-uk`** (medium) — Use when a subject has a British Army/UK military connection and you have a `username` or `name` — a large UK military forum; returns posts,
 - **`babycenter`** (low) — Use when you have a `username` and want to check a large parenting community for a subject's posts, groups, and life-stage details — returns
