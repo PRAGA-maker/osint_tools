@@ -1,27 +1,29 @@
 ---
 id: ai-or-not
 name: AI or Not
-description: Detecting AI-generated images and audio in disinformation investigations and media verification
+description: Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a confidence score.
 url: https://www.aiornot.com/
 category: ai-analysis-automation
 path:
 - ai-analysis-automation
-bestFor: Detecting AI-generated images and audio in disinformation investigations and media verification
-input: Image file or URL, audio file
-output: AI vs. human classification score with confidence percentage
-selectorsIn: []
+bestFor: Flagging likely AI-generated profile photos, faces, and audio during media verification and catfish/scam checks.
+selectorsIn:
+- image
+- face
 selectorsOut: []
 status: live
 pricing: freemium
+costNote: Free tier for occasional checks; higher volume and API access are paid.
 opsec: active
-opsecNote: Files are uploaded to a third-party server for analysis; avoid submitting sensitive operational images.
+opsecNote: You upload the media to a third-party server for analysis, so the file leaves your machine. Don't submit sensitive/confidential case imagery; and never upload a victim's private photos you aren't entitled to share.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: ''
+trustNote: A commercial AI-detection service; useful as a signal, but AI-vs-real detectors are probabilistic and error-prone — treat the verdict as a lead, never proof.
 missingPersonsRelevance: low
-coverage: []
+coverage:
+- global
 auth: none
 api: true
 localInstall: false
@@ -29,21 +31,57 @@ registration: false
 invitationOnly: false
 deprecated: false
 relatedTools: []
-aliases: []
-tags: []
+aliases:
+- AI or Not
+- aiornot.com
+tags:
+- ai-detection
+- media-verification
 source: arf-seed
-lastVerified: ''
-enrichment: stub
+lastVerified: '2026-07-29'
+enrichment: full
 ---
 
 # AI or Not
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> An AI-generation detector for images and audio: upload a photo, face, or clip and get a probability that it was machine-generated — a verification signal, not a verdict.
 
-- **URL:** https://www.aiornot.com/
-- **Best for:** Detecting AI-generated images and audio in disinformation investigations and media verification
-- **Input → Output:** Image file or URL, audio file → AI vs. human classification score with confidence percentage
-- **OpSec:** active. Files are uploaded to a third-party server for analysis; avoid submitting sensitive operational images.
+## When to use
+You're vetting a profile photo or media that might be fabricated — a suspected catfish/romance-scam avatar, an AI-generated face used to front a fake account, a doctored image in a disinformation trail. AI or Not gives a fast AI-vs-real score to prioritise which images to scrutinise further. It classifies media authenticity; it does not identify a person.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Go to https://www.aiornot.com/.
+2. Upload the `image`/`face` (or audio), or paste an image URL.
+3. Read the classification and confidence score (AI-generated vs real).
+4. Treat it as one signal: corroborate a "likely AI" flag with a reverse-image search (does it appear anywhere with history?) and manual artefact inspection.
+
+## Inputs → Outputs
+- **In:** `image` / `face` (or audio clip)
+- **Out:** AI-vs-real classification with a confidence percentage
+- **Empty/negative result looks like:** a low-confidence or "likely real" score — inconclusive; not proof the image is genuine, only that this detector didn't flag it.
+
+## Gotchas & OpSec
+- **Probabilistic** — false positives and negatives are common, especially on compressed/edited or novel-model images; never treat the score as definitive.
+- Uploads go to a third party — keep sensitive imagery off it.
+- Detectors lag generators; a brand-new model may evade it entirely.
+
+## Overlaps ("do both")
+- Pairs with reverse-image search (Google/Yandex/PimEyes) and manual forensics — an AI-generated face typically has *no* reverse-image history, so a "likely AI" flag plus "no matches anywhere" is a much stronger combined signal than either alone.
+
+## Trust & verifiability
+`trust: unverified` — a useful commercial signal, but AI-detection is inherently uncertain; corroborate every verdict with independent checks before acting on it.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | ai-or-not |
+| category | ai-analysis-automation |
+| selectorsIn → selectorsOut | image, face →  |
+| pricing / cost | freemium |
+| trust | unverified |
+| MP relevance | low |
+| interaction | web-manual |
+| opsec | active |
+| human-in-loop | no |

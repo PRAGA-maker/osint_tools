@@ -183,7 +183,7 @@ kind: group-index
 - **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
 - **`pinkbike`** (medium) — Use when you have a `username` or `name` tied to mountain biking and want their profile, posts and marketplace listings — returns social-pro
 - **`pistonheads-com`** (medium) — Use when you have a `username` (or a car/plate a subject is known to own) and want to find their PistonHeads forum posts, profile and classi
-- **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.
+- **`playphrase`** (low) — Use when you have a spoken phrase (from a clip whose film/show you're trying to identify) and want to find where it's said on screen — retur
 - **`plazoo-rss-feed-search-engine`** (medium) — Use when you have a name/keyword and want it across blog & news RSS feeds — returns matching feed posts (social-profile, associate leads).
 - **`plentyoffish`** (medium) — Use when you have a `username`, `name`, or photo and want to check a major dating platform for a subject's profile — returns `social-profile
 - **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post

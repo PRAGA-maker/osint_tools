@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`internet-census-search`** (low) — Search open services and devices
-- **`masscan`** (low) — Large-scale network port scanning
 - **`nmap`** (low) — Network reconnaissance and port scanning
 - **`online-port-scanner`** (low) — Use when you have an `ip-address` or `domain` and want to enumerate open ports and exposed services from a browser without installing Nmap —
 

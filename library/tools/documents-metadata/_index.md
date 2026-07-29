@@ -194,7 +194,7 @@ kind: group-index
 - **`prezi`** (low) — Use when you have a `name` or `username` and want a subject's public presentations — searchable slide decks that expose work, affiliations, 
 - **`printwhatyoulike`** (low) — Program that helps you select and print selected portions of web pages online
 - **`punchbowl`** (low) — Website related to event invitation and party planning
-- **`pymeta`** (low) — A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.
+- **`pymeta`** (low) — Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`rebelmouse`** (low) — Creative agency and website publishing platform
 - **`recoverytoolbox`** (low) — Use when you have a corrupted or damaged file (document, archive, image, mailbox) and want to repair it enough to extract its contents and `

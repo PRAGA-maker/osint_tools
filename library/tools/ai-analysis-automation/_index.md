@@ -21,7 +21,7 @@ kind: group-index
 - **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
 - **`aeon`** (low) — OSINT tool: Aeon.
 - **`aha-music`** (low) — Use when you have audio/video playing in a browser tab (e.g. a subject's clip) and want to identify the track — a Shazam-style browser exten
-- **`ai-or-not`** (low) — Detecting AI-generated images and audio in disinformation investigations and media verification
+- **`ai-or-not`** (low) — Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a 
 - **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
 - **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
 - **`api-guesser`** (low) — Enter the API key or token to find out which service it can be used by.
@@ -52,7 +52,7 @@ kind: group-index
 - **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
 - **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
 - **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
-- **`bellingcat`** (low) — OSINT tool: Bellingcat.
+- **`bellingcat`** (low) — Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a r
 - **`bendobrown`** (low) — OSINT tool: Bendobrown.
 - **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
@@ -97,7 +97,7 @@ kind: group-index
 - **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
 - **`de4js`** (low) — Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfu
-- **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
+- **`decompiler-com`** (low) — Use when you have a compiled artifact (JAR/class, APK/DEX, .NET EXE/DLL, .pyc, SWF, Lua) and want readable source in-browser — returns decom
 - **`decopy-ai-image-detector`** (low) — Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to 
 - **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
 - **`deepseek`** (low) — Use when you need an AI assistant to summarize documents, translate, or find patterns in collected OSINT data — a free LLM chat — returns AI

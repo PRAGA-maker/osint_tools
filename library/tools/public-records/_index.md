@@ -27,7 +27,7 @@ kind: group-index
 
 ## Skills here
 - **`1c-database-converter`** (medium) — Use when you have a seized/leaked 1C accounting database file (.1CD, .cf, .epf, .efd) and want to read its records — returns grepable CSV th
-- **`4chansearch-org`** (low) — OSINT tool: 4chansearch.org.
+- **`4chansearch-org`** (low) — Use when you have an `image` or keyword/`username` and want to search across 4chan boards for matching posts/images — returns 4chan threads 
 - **`50-states`** (low) — Use when you have a US state or region and want a curated jump-off to that state's public-records, vital-records, and directory portals — re
 - **`51-000-university-of-michigan-employee-salaries`** (high) — Use when you have a `name` believed to work at the University of Michigan and want to confirm employment, title and pay — returns `employer-
 - **`8chan-8kun-qresearch-board-search`** (low) — Use when you have a `username`, name, or keyword and want to search millions of archived 8chan/8kun QResearch posts and linked datasets — re

@@ -93,7 +93,7 @@ kind: group-index
 - **`carbon14`** (low) — Use when you have a web page (`domain`/URL) with `image`s and want to estimate when it was published — returns approximate dates from the im
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
-- **`censys-certificates`** (low) — OSINT tool: Censys Certificates.
+- **`censys-certificates`** (low) — Use when you have a `domain`, org name, or cert detail and want to search TLS/SSL certificates for related hosts — returns certificates, the
 - **`censys-ipv4`** (low) — Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, 
 - **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
 - **`cert4recon`** (low) — Use when you have a `domain` and want fast passive subdomain enumeration from certificate-transparency logs (crt.sh) — returns domain (subdo

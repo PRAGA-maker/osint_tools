@@ -248,28 +248,32 @@
   {
     "id": "ai-or-not",
     "name": "AI or Not",
-    "description": "Detecting AI-generated images and audio in disinformation investigations and media verification",
+    "description": "Use when you have an `image`/`face` or audio clip and want to judge whether it's AI-generated — returns an AI-vs-real classification with a confidence score.",
     "url": "https://www.aiornot.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Detecting AI-generated images and audio in disinformation investigations and media verification",
-    "input": "Image file or URL, audio file",
-    "output": "AI vs. human classification score with confidence percentage",
-    "selectorsIn": [],
+    "bestFor": "Flagging likely AI-generated profile photos, faces, and audio during media verification and catfish/scam checks.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier for occasional checks; higher volume and API access are paid.",
     "opsec": "active",
-    "opsecNote": "Files are uploaded to a third-party server for analysis; avoid submitting sensitive operational images.",
+    "opsecNote": "You upload the media to a third-party server for analysis, so the file leaves your machine. Don't submit sensitive/confidential case imagery; and never upload a victim's private photos you aren't entitled to share.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial AI-detection service; useful as a signal, but AI-vs-real detectors are probabilistic and error-prone — treat the verdict as a lead, never proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -277,11 +281,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "AI or Not",
+      "aiornot.com"
+    ],
+    "tags": [
+      "ai-detection",
+      "media-verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/ai-or-not.md"
   },
   {
@@ -1519,43 +1529,51 @@
   {
     "id": "bellingcat",
     "name": "Bellingcat",
-    "description": "OSINT tool: Bellingcat.",
+    "description": "Use when you need OSINT methodology, case studies, or vetted tool/technique guides — Bellingcat's investigations and how-to articles are a reference knowledge base, not a lookup tool.",
     "url": "https://www.bellingcat.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning proven OSINT techniques and following published investigations from a leading open-source research collective.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; a non-profit funded by grants/donations. No account.",
+    "opsec": "passive",
+    "opsecNote": "Reading articles is passive. Note that visiting from an attributable browser reveals your interest in specific topics/techniques; use a clean session if your research interest itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Bellingcat is a respected, methodologically rigorous open-source investigation collective; its guides and case studies are widely cited and reproducible.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-blogs"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "bellingcat-com",
       "bellingcat-openstreetmap-search",
       "these-are-the-tools-open-source-researchers-say-they-need",
       "xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat"
     ],
+    "aliases": [
+      "Bellingcat"
+    ],
+    "tags": [
+      "osint-blogs",
+      "methodology"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/bellingcat.md"
   },
   {
@@ -3613,35 +3631,46 @@
   {
     "id": "decompiler-com",
     "name": "Decompiler.com",
-    "description": "OSINT tool: Decompiler.com.",
-    "url": "http://www.decompiler.com/",
+    "description": "Use when you have a compiled artifact (JAR/class, APK/DEX, .NET EXE/DLL, .pyc, SWF, Lua) and want readable source in-browser — returns decompiled code to inspect for embedded artefacts.",
+    "url": "https://www.decompiler.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Drag-and-drop online decompilation of Java/Android/.NET/Python/Flash/Lua artifacts without local tooling.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free in-browser decompilation; no account for basic use.",
+    "opsec": "active",
+    "opsecNote": "You UPLOAD the artifact to decompiler.com's servers — the file leaves your machine and is processed by a third party. Never upload confidential, proprietary, or restricted samples; use a local decompiler (jadx, dnSpy, uncompyle6) for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A convenient online decompiler covering many formats; fine for quick triage, but a third-party upload service with no strong provenance guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "decompiler.com"
+    ],
+    "tags": [
+      "decompiler",
+      "reverse-engineering"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/decompiler-com.md"
   },
   {
@@ -32790,37 +32819,47 @@
   {
     "id": "playphrase",
     "name": "PlayPhrase",
-    "description": "Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.",
+    "description": "Use when you have a spoken phrase (from a clip whose film/show you're trying to identify) and want to find where it's said on screen — returns movie/TV fragments containing that phrase.",
     "url": "https://playphrase.me/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying which film/show a line of dialogue comes from by searching millions of movie phrase clips.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free searching with limits; a paid subscription removes caps/ads.",
+    "opsec": "passive",
+    "opsecNote": "You search a media index — nothing concerns any individual. Fully passive; no subject is touched.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A novelty \"cinema archaeology\" search over movie subtitles/clips; useful for media identification, not an investigative data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "PlayPhrase",
+      "playphrase.me"
+    ],
     "tags": [
-      "Movies"
+      "Movies",
+      "media-identification"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/playphrase.md"
   },
   {
@@ -57005,41 +57044,57 @@
   {
     "id": "pymeta",
     "name": "PYMETA",
-    "description": "A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.",
+    "description": "Use when you have a `domain` and want to harvest usernames/author names from its public documents — searches the web for the org's files and extracts their metadata to a CSV.",
     "url": "https://github.com/m8sec/pymeta",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering internal usernames, real names, software, and naming conventions from metadata in an organisation's public documents.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "username",
+      "metadata-exif",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python; `pip3 install pymetasec`); requires exiftool. No account.",
+    "opsec": "passive",
+    "opsecNote": "pymeta queries Google/Bing for the documents (passive to the target — the search engines see the queries, the target site does not) and then downloads the files it finds. The download step fetches files from the hosting server, so there is light contact; route through a sock-puppet egress if the target must not see downloads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A maintained open-source rewrite of PowerMeta (m8sec); popular in the recon community, inspectable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Exif Analyze and editing"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "crosslinked"
     ],
+    "aliases": [
+      "pymeta",
+      "pymetasec"
+    ],
+    "tags": [
+      "Image Search and Identification",
+      "Exif Analyze and editing",
+      "document-metadata"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pymeta.md"
   },
   {
@@ -63713,40 +63768,58 @@
   {
     "id": "censys-certificates",
     "name": "Censys Certificates",
-    "description": "OSINT tool: Censys Certificates.",
-    "url": "https://censys.io/certificates",
+    "description": "Use when you have a `domain`, org name, or cert detail and want to search TLS/SSL certificates for related hosts — returns certificates, their SANs (other `domain`s), and issuing hosts.",
+    "url": "https://search.censys.io/certificates",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Certificate-transparency search to map a target's infrastructure via shared/related TLS certificates.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Requires a free Censys account to search; generous free tier, with paid plans for higher volume/API and historical depth.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Censys's scanned certificate dataset, not the target — no probe reaches the subject's host. Note searches are tied to your logged-in Censys account; use a dedicated research account, not a personal one, if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Censys is a reputable internet-scanning company with an academic lineage (University of Michigan); its certificate data is authoritative, sourced from its own scans and CT logs.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "censys",
       "censys-ipv4",
       "search-censys-io"
     ],
+    "aliases": [
+      "Censys certificate search"
+    ],
+    "tags": [
+      "certificate-transparency",
+      "tls",
+      "infrastructure-mapping"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/censys-certificates.md"
   },
   {
@@ -76429,46 +76502,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/malwareurl.md"
-  },
-  {
-    "id": "masscan",
-    "name": "Masscan",
-    "description": "Large-scale network port scanning",
-    "url": "https://github.com/robertdavidgraham/masscan",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "host-port-discovery"
-    ],
-    "bestFor": "Large-scale network port scanning",
-    "input": "IP range",
-    "output": "Open ports, response times",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Active scanner; generates significant network traffic.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/host-port-discovery/masscan.md"
   },
   {
     "id": "matika",
@@ -210228,35 +210261,51 @@
   {
     "id": "4chansearch-org",
     "name": "4chansearch.org",
-    "description": "OSINT tool: 4chansearch.org.",
+    "description": "Use when you have an `image` or keyword/`username` and want to search across 4chan boards for matching posts/images — returns 4chan threads and posts as leads.",
     "url": "https://4chansearch.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Searching 4chan boards by image or text to find a subject's posts or where an image circulated.",
+    "selectorsIn": [
+      "image",
+      "username"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free search front-end (built on Google-style custom search over 4chan/archives); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching is passive — you query an index, not 4chan users. But content on 4chan can be extreme; view results in an isolated/sandboxed browser, and never interact with or post to threads from an attributable identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community search front-end over 4chan boards and archives; convenient but its index/coverage is opaque and incomplete, so absence of a hit proves little.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "4chansearch.org",
+      "4chan search"
+    ],
+    "tags": [
+      "imageboard",
+      "4chan",
+      "content-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/4chansearch-org.md"
   },
   {
