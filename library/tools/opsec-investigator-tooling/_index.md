@@ -330,7 +330,7 @@ kind: group-index
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
 - **`safari-for-macos`** (low) — Internet browser for Mac
-- **`safari`** (low) — OSINT tool: Safari.
+- **`safari`** (low) — Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web 
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
 - **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
@@ -367,7 +367,7 @@ kind: group-index
 - **`snopes-fact-checker`** (low) — Use when you have a viral claim, rumour, image or urban legend and want to know if it's true, false or mixed — returns a sourced fact-check 
 - **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
 - **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers
-- **`soundcloud-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
+- **`soundcloud-music-app-mobile-android`** (low) — Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, a
 - **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
 - **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
 - **`soundraw`** (low) — AI music generation
@@ -455,7 +455,7 @@ kind: group-index
 - **`waterfox`** (low) — OSINT tool: Waterfox.
 - **`web-history-stat`** (low) — detailed statistics of your browser history
 - **`web-of-trust`** (low) — Use when you have a `domain` and want a crowd-sourced reputation read — returns community trust/safety ratings for the website.
-- **`webdext`** (low) — An intelligent and quick web data extractor for #GoogleChrome. Support data extraction from web pages containing a list of objects such as p
+- **`webdext`** (low) — Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extracti
 - **`webmapper`** (low) — Extension that create a map-visualization based by browser history. A visual representation of the most visited sites in 10, 20, 50 or 100 d
 - **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China

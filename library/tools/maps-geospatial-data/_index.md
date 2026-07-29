@@ -71,7 +71,7 @@ kind: group-index
 - **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage
 - **`maploco-com`** (medium) — Use when a subject has shared a "places I've visited" map graphic and you want to read their claimed travel — a widget generator you use to 
 - **`mapme-com`** (medium) — Use when a subject or org may publish a public interactive directory/map here — browse Mapme-hosted maps to place people, businesses or poin
-- **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`mapmyfitness`** (medium) — Use when a subject may log workouts publicly and you want their routes/start points — a fitness social network whose public activity maps ca
 - **`mappy`** (low) — Use when you have an `address`/`geolocation` in France or Western Europe and want an independent map and routing source — returns geolocatio
 - **`mapswitcher`** (low) — Use when you have a `geolocation` open in one map service and want the same spot in 30+ other map providers — returns the same `geolocation`
 - **`mapy-cz`** (low) — Use when you have a `geolocation`/`address` and want high-quality maps, aerial imagery and street-level panoramas — strongest in Czechia and

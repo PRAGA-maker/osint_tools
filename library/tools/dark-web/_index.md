@@ -92,7 +92,6 @@ kind: group-index
 - **`tor-link`** (low) — OSINT tool: tor.link.
 - **`tor-mail`** (low) — OSINT tool: Tor Mail.
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
-- **`tor2web-tor-hidden-services-gateway`** (low) — OSINT tool: Tor2Web: Tor Hidden Services Gateway.
 - **`torbox`** (low) — OSINT tool: TorBox.
 - **`torry-io`** (low) — OSINT tool: torry.io.
 - **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.

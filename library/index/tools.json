@@ -2013,35 +2013,50 @@
   {
     "id": "canary-tokens",
     "name": "Canary Tokens",
-    "description": "OSINT tool: Canary Tokens.",
-    "url": "http://canarytokens.org/generate",
+    "description": "Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geolocation`, and user-agent when triggered.",
+    "url": "https://canarytokens.org/generate",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Planting a honeytoken (in a file, link, or email) that phones home with the viewer's IP and metadata the moment it's opened.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "ip-address",
+      "geolocation",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "The public canarytokens.org generator is free; Thinkst also offers a paid Canary/Canarytokens enterprise product. Free tier covers the common token types.",
+    "opsec": "active",
+    "opsecNote": "This is an ACTIVE trap. A token only fires when someone interacts with the bait you plant, and it captures THEIR IP/metadata — so its legality and ethics depend entirely on how you deploy it. Never embed a token in content you send under false pretences to entrap an uninvolved person; the classic legitimate use is instrumenting your own documents/accounts to detect intruders. Consider legal-gate review before offensive use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Thinkst (a well-known security vendor); the service and its alerting are reliable and widely used in the industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Canarytokens",
+      "Thinkst Canarytokens"
+    ],
+    "tags": [
+      "honeytoken",
+      "counterintelligence",
+      "opsec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/canary-tokens.md"
   },
   {
@@ -3213,37 +3228,52 @@
   {
     "id": "cybergordon",
     "name": "CyberGordon",
-    "description": "OSINT tool: CyberGordon.",
+    "description": "Use when you have an `ip-address`, `domain`, `email`, or file hash and want a one-query reputation/threat check across dozens of sources — returns aggregated risk verdicts and enrichment.",
     "url": "https://cybergordon.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Fanning a single indicator (IP, domain, URL, email, hash) out across many threat-intel and reputation engines in one lookup.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web interface for interactive lookups; heavier/automated use and some engines may require an account or paid plan.",
+    "opsec": "passive",
+    "opsecNote": "CyberGordon queries third-party reputation databases about the indicator, not the indicator's owner — so it is passive with respect to your target. Note that submitting an indicator shares it with CyberGordon and downstream engines; don't submit sensitive case data you need to keep confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-regarded community IOC aggregator; results are only as good as the underlying engines it queries, and it adds no independent verification of its own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Cyber Gordon"
+    ],
     "tags": [
-      "other-tools"
+      "threat-intelligence",
+      "ioc-enrichment",
+      "reputation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/cybergordon.md"
   },
   {
@@ -9343,37 +9373,50 @@
   {
     "id": "mozilla-http-observatory",
     "name": "Mozilla HTTP Observatory",
-    "description": "OSINT tool: Mozilla HTTP Observatory.",
+    "description": "Use when you have a `domain` and want to assess a site's HTTP security posture (headers, TLS, cookies) — returns a security grade and configuration findings for that host.",
     "url": "https://developer.mozilla.org/en-US/observatory",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Grading a website's HTTP security headers and configuration to profile how a target's infrastructure is set up.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public scanner run by Mozilla (MDN); no account required.",
+    "opsec": "active",
+    "opsecNote": "The scan makes real HTTP requests to the target site to inspect its responses, so the target's server sees a hit from Mozilla's scanner (not directly from you). Mildly active — you are not anonymous to the site if it correlates the scan, but your own IP is not the requester. Avoid scanning if even Mozilla-sourced probing would tip off a sensitive target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Mozilla and hosted on MDN; a reputable, well-documented first-party security scanner.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "HTTP Observatory",
+      "MDN Observatory"
+    ],
     "tags": [
-      "other-tools"
+      "website-security",
+      "infrastructure",
+      "headers"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/mozilla-http-observatory.md"
   },
   {
@@ -42227,43 +42270,6 @@
     "_file": "library/tools/dark-web/tor-wiki.md"
   },
   {
-    "id": "tor2web-tor-hidden-services-gateway",
-    "name": "Tor2Web: Tor Hidden Services Gateway",
-    "description": "OSINT tool: Tor2Web: Tor Hidden Services Gateway.",
-    "url": "https://tor2web.onionsearchengine.com/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "onion-search-engine"
-    ],
-    "_file": "library/tools/dark-web/tor2web-tor-hidden-services-gateway.md"
-  },
-  {
     "id": "torbot",
     "name": "TorBot",
     "description": "Use when you have a seed `domain` (.onion or clearnet) and want to crawl and map dark-web link structure — returns discovered `domain` links, page titles and metadata.",
@@ -68872,41 +68878,53 @@
   {
     "id": "fierce-domain-scanner",
     "name": "Fierce Domain Scanner",
-    "description": "DNS recon and subdomain-to-IP mapping",
+    "description": "Use when you have a `domain` and want to enumerate its subdomains and map them to non-contiguous IP space — returns discovered `domain`s and resolved `ip-address`es.",
     "url": "https://github.com/davidpepper/fierce-domain-scanner",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "subdomains"
     ],
-    "bestFor": "DNS recon and subdomain-to-IP mapping",
-    "input": "Domain, DNS server options, and optional wordlist/range parameters",
-    "output": "Subdomains, resolved IPs, and DNS reconnaissance findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "DNS reconnaissance — zone-transfer attempts and brute-force subdomain enumeration to find a target's IP footprint.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source. You provide the Perl runtime; no account or key needed.",
     "opsec": "active",
-    "opsecNote": "Performs direct DNS lookups and optional scans that can be logged by infrastructure.",
+    "opsecNote": "Fierce performs direct DNS queries and brute-force lookups against the target's nameservers, which authoritative DNS operators can log. This is active recon — run it from controlled infrastructure (VPS/VPN), not your home IP, when the target could notice or object.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legacy Perl fork (davidpepper) of RSnake's original fierce; 300+ stars but old and only lightly maintained — a modern Python rewrite (mschwager/fierce) exists and may be preferable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fierce.pl",
+      "fierce DNS scanner"
+    ],
+    "tags": [
+      "subdomains",
+      "dns-recon",
+      "recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/fierce-domain-scanner.md"
   },
   {
@@ -91251,41 +91269,54 @@
   {
     "id": "windows-defender-security-intelligence-wdsi",
     "name": "Windows Defender Security Intelligence (WDSI)",
-    "description": "Reporting malicious sites to Microsoft and checking URL threat status",
+    "description": "Use when you have a suspicious `domain`/URL and want to check Microsoft's threat classification or report it for analysis — returns Microsoft's verdict and a submission record.",
     "url": "https://www.microsoft.com/en-us/wdsi",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "report-malicious-sites"
     ],
-    "bestFor": "Reporting malicious sites to Microsoft and checking URL threat status",
-    "input": "URLs",
-    "output": "Threat status and submission confirmation",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reporting a malicious URL to Microsoft and checking how SmartScreen/Defender classifies a site.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free Microsoft service; submitting some sample types or viewing submission history may require a Microsoft account sign-in.",
     "opsec": "passive",
-    "opsecNote": "Microsoft-tracked; submissions aggregated for threat intelligence",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You submit a URL/sample to Microsoft for analysis — the interaction is with Microsoft, not the target site, so it does not tip off the site's operator. Microsoft logs submissions and ties them to your account if signed in; use an operational account for reporting.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft security portal (Defender/SmartScreen intelligence); an authoritative source for Microsoft's own classifications.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WDSI",
+      "Microsoft Security Intelligence"
+    ],
+    "tags": [
+      "report-malicious-sites",
+      "threat-intelligence",
+      "microsoft"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/report-malicious-sites/windows-defender-security-intelligence-wdsi.md"
   },
   {
@@ -154700,42 +154731,56 @@
   },
   {
     "id": "mapmyfitness",
-    "name": "Mapmyfitness",
-    "description": "Website related to social networking in the form of health, wellness, and/or fitness",
-    "url": "http://www.mapmyfitness.com",
+    "name": "MapMyFitness",
+    "description": "Use when a subject may log workouts publicly and you want their routes/start points — a fitness social network whose public activity maps can leak `geolocation` and routines.",
+    "url": "https://www.mapmyfitness.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Finding a person's publicly shared run/ride routes and workout patterns, which can reveal home/work areas and daily routine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create an account and view public profiles/routes; premium (MVP) tiers add training features. Viewing public activity needs no payment.",
+    "opsec": "active",
+    "opsecNote": "Browsing public routes is passive, but to see much you often need a logged-in account, and following/friending a target is active and visible. Use a sock-puppet account. Treat any home-location inference from routes as sensitive — this is exactly the Strava-style leak that endangers people, so handle findings carefully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trust": "community",
+    "trustNote": "Operated by Under Armour (MapMyFitness/MapMyRun family); a legitimate platform, but user-shared data is self-published and privacy-setting dependent.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "MapMyRun",
+      "MapMyRide",
+      "Under Armour MapMyFitness"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "fitness",
+      "geolocation",
+      "social-profile"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mapmyfitness.md"
   },
   {
@@ -181966,37 +182011,44 @@
   {
     "id": "safari",
     "name": "Safari",
-    "description": "OSINT tool: Safari.",
-    "url": "http://www.apple.com/safari",
+    "description": "Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web browser with only incidental OSINT utility.",
+    "url": "https://www.apple.com/safari",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing/viewing content as an Apple client and using Web Inspector to inspect page source and network requests.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, bundled with macOS/iOS; not available on Windows/Android.",
+    "opsec": "passive",
+    "opsecNote": "A browser is only as private as how you use it. Safari's Private Browsing isolates a session and its Intelligent Tracking Prevention limits cross-site tracking, but it does not hide your IP — pair with a VPN/Tor and a sock-puppet profile for real OpSec. Being signed into Apple/iCloud in the same browser can leak identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "First-party Apple software; legitimate and secure as a browser, but it is general-purpose, not an OSINT tool in itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Apple Safari"
+    ],
     "tags": [
-      "browsers"
+      "browsers",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/safari.md"
   },
   {
@@ -183586,42 +183638,53 @@
   },
   {
     "id": "soundcloud-music-app-mobile-android",
-    "name": "Soundcloud Music App (Mobile – Android)",
-    "description": "App for mobile devices for searching for and playing music",
+    "name": "SoundCloud Music App (Mobile – Android)",
+    "description": "Use when a subject may create or share audio and you have a `name`/`username` — SoundCloud profiles expose a `social-profile`, bio, links, and follower network.",
     "url": "https://play.google.com/store/apps/details?id=com.soundcloud.android",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's SoundCloud presence — profile, tracks, bio links, and social connections — from a reused username.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse profiles and stream on web/app; a subscription only removes ads and unlocks offline play. No account needed to view public profiles on the web.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public SoundCloud profiles and tracks (via web or app) is passive and anonymous. Following, liking, or commenting requires login and is visible to the target — use a sock-puppet account if you interact, and prefer read-only observation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "SoundCloud is a legitimate platform, but profiles are self-created and pseudonymous; identity links are inferential, not verified.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "SoundCloud",
+      "SoundCloud Android app"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "social-profile",
+      "music",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/soundcloud-music-app-mobile-android.md"
   },
   {
@@ -187457,38 +187520,45 @@
   {
     "id": "webdext",
     "name": "Webdext",
-    "description": "An intelligent and quick web data extractor for #GoogleChrome. Support data extraction from web pages containing a list of objects such as product listing, news listing, search result, etc",
-    "url": "https://chrome.google.com/webstore/detail/webdext/jkgddhdaaejpmlmddpbedgnkdgiacblk/related",
+    "description": "Use when you need to extract a structured list off a web page (search results, listings, profiles) into a table/CSV — a Chrome data-extraction extension; returns tabular data, not new selectors.",
+    "url": "https://chromewebstore.google.com/detail/webdext/jkgddhdaaejpmlmddpbedgnkdgiacblk",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Point-and-click scraping of repeated items on a page (result rows, product/news/profile listings) into structured data.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension for basic extraction; some versions gate advanced features or exports behind a paid tier. Verify current availability in the Chrome Web Store before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "The extension runs locally in your browser and reads pages you already load, so it doesn't add active requests beyond your own browsing — but you are still visiting the target site normally, so use a sock-puppet browser profile/VPN when scraping a site that could identify you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Chrome extension; installing it grants page-reading access, and its Web Store listing/availability can change. Review permissions before use.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Webdext Chrome extension"
+    ],
     "tags": [
-      "NOOSINT tools",
-      "Routine/Data Extraction Automation"
+      "data-extraction",
+      "scraping",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/webdext.md"
   },
   {

@@ -62,7 +62,7 @@ kind: group-index
 - **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif
 - **`boxcryptor`** (low) — OSINT tool: boxcryptor.
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
-- **`canary-tokens`** (low) — OSINT tool: Canary Tokens.
+- **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
 - **`cc-license`** (low) — OSINT tool: cc license.
 - **`ccleaner`** (low) — OSINT tool: CCleaner.
@@ -89,7 +89,7 @@ kind: group-index
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
 - **`cyberbro`** (low) — Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated
 - **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
-- **`cybergordon`** (low) — OSINT tool: CyberGordon.
+- **`cybergordon`** (low) — Use when you have an `ip-address`, `domain`, `email`, or file hash and want a one-query reputation/threat check across dozens of sources — r
 - **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
 - **`cyotek-webcopy`** (low) — Use when you want a full offline mirror of a `domain`/website for analysis or preservation — returns a local copy of the site's pages and as
 - **`d3js`** (low) — OSINT tool: D3js.
@@ -222,7 +222,7 @@ kind: group-index
 - **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
 - **`mihari`** (low) — Use when you have an `ip-address`/`domain` indicator and want to hunt and monitor related infrastructure across many OSINT sources at once —
 - **`mitaka`** (low) — Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel ser
-- **`mozilla-http-observatory`** (low) — OSINT tool: Mozilla HTTP Observatory.
+- **`mozilla-http-observatory`** (low) — Use when you have a `domain` and want to assess a site's HTTP security posture (headers, TLS, cookies) — returns a security grade and config
 - **`mp3-spectrum-analyzer`** (low) — OSINT tool: MP3 Spectrum Analyzer.
 - **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
