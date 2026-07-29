@@ -46,7 +46,7 @@ kind: group-index
 - **`typosquatting/`** — 4 skill(s) below.
 - **`url-expanders/`** — 3 skill(s) below.
 - **`vulnerabilities/`** — 4 skill(s) below.
-- **`whois-records/`** — 13 skill(s) below.
+- **`whois-records/`** — 12 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
 
 ## Skills here
@@ -157,7 +157,6 @@ kind: group-index
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
 - **`fast-google-dorks-scan`** (low) — Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive 
 - **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
-- **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
 - **`favicon-hasher`** (low) — Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Sh
 - **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
@@ -231,7 +230,7 @@ kind: group-index
 - **`ip-investigation-toolbox`** (low) — Use when you have an `ip-address` and want many lookups at once — returns `geolocation`, routing, open ports, and threat/host data from 15 s
 - **`ip-location-io`** (low) — Use when you have an `ip-address` and want its approximate geolocation, ISP/ASN/org, and proxy/threat flags across several databases — retur
 - **`ip-neighbors`** (low) — Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `dom
-- **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
+- **`ip-search-network-entity-reputation-database`** (low) — Use when you have an `ip-address` (or ASN/subnet) and want to know if it is a known malicious/abusive host — returns a reputation score, thr
 - **`ip2geo-dev`** (low) — Use when you have an `ip-address` and want programmatic geolocation — returns country/city `geolocation`, ISP and ASN via a REST API or SDK.
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
@@ -363,7 +362,6 @@ kind: group-index
 - **`search-censys-io`** (medium) — Use when you have a `domain` or `ip-address` and want its internet-facing infrastructure, certificates, and services — returns linked domain
 - **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
 - **`secretfinder`** (low) — Use when you have a `domain`/web app and want to scrape its JavaScript for leaked API keys, tokens, endpoints and secrets — returns domain (
-- **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
 - **`securitytrails`** (low) — Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `do
 - **`seekolver`** (low) — Use when you have a `domain` (or org name) and want its live web attack surface — a Python CLI that pulls subdomains from open sources, reso
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
@@ -445,9 +443,8 @@ kind: group-index
 - **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
 - **`webemailextractor-com`** (low) — extract email's and phone numbers from the website or list of website
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
-- **`webmeup`** (low) — OSINT tool: WebMeUp.
 - **`webosint`** (low) — Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.
-- **`webpalm`** (low) — Command-line tool that traverse a website and generate a tree of all its webpages. Also it can scrape and extract data using #regex.
+- **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract
 - **`webscore`** (low) — OSINT tool: Webscore.
 - **`webscout`** (low) — OSINT tool: Webscout.
 - **`website-information`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want a bundled panel of website-research lookups — returns WHOIS, DNS, `geolocati

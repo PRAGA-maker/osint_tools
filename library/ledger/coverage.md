@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7264 total · 5562 full · 1702 stub (76% enriched)
+**Tools:** 7259 total · 5568 full · 1691 stub (76% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3291 · medium: 2009 · high: 1964
+low: 3286 · medium: 2009 · high: 1964
 
 ## Tools by trust
-community: 3472 · unverified: 1927 · trusted: 1856 · untrustworthy: 6 · personal: 3
+community: 3469 · unverified: 1924 · trusted: 1857 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -20,7 +20,7 @@ community: 3472 · unverified: 1927 · trusted: 1856 · untrustworthy: 6 · pers
 - `dark-web` — 51/100
 - `dating-classifieds` — 82/90
 - `documents-metadata` — 126/284
-- `domains-ip-infrastructure` — 397/659
+- `domains-ip-infrastructure` — 401/655
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 74/97
@@ -32,20 +32,20 @@ community: 3472 · unverified: 1927 · trusted: 1856 · untrustworthy: 6 · pers
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 906/998
-- `search-engines` — 546/754
+- `search-engines` — 546/753
 - `social-networks` — 745/775
 - `training-ctf` — 6/12
-- `translation-language` — 40/94
-- `transportation` — 156/202
+- `translation-language` — 41/94
+- `transportation` — 157/202
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 946 leaves
 - `library/tools/social-networks` — 748 leaves
-- `library/tools/search-engines` — 704 leaves
+- `library/tools/search-engines` — 703 leaves
 - `library/tools/opsec-investigator-tooling` — 486 leaves
-- `library/tools/domains-ip-infrastructure` — 440 leaves
+- `library/tools/domains-ip-infrastructure` — 437 leaves
 - `library/tools/ai-analysis-automation` — 396 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 322 leaves
@@ -73,7 +73,6 @@ community: 3472 · unverified: 1927 · trusted: 1856 · untrustworthy: 6 · pers
 - `library/tools/search-engines/academic-publication-search` — 15 leaves
 - `library/tools/documents-metadata/hosted-automated-analysis` — 14 leaves
 - `library/tools/search-engines/general-search` — 14 leaves
-- `library/tools/domains-ip-infrastructure/whois-records` — 13 leaves
 - `library/tools/people-search/general-people-search` — 13 leaves
 
 ## Source exhaustion (Go Deep)

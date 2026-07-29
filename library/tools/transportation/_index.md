@@ -171,7 +171,7 @@ kind: group-index
 - **`the-burnsy-vehicle-osint`** (medium) — Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and regi
 - **`tokyo-mou`** (low) — Use when you have a ship `name` or IMO `document-id` and want its Asia-Pacific port-state-control inspection and detention history — returns
 - **`track-trace`** (medium) — Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and deliver
-- **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
+- **`transit-visualisation`** (low) — Use when you have an approximate `geolocation` and want to see live public-transport vehicle positions and route networks there — returns re
 - **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
 - **`uk-govt-vessel-lists`** (medium) — Use when you have a UK fishing `vessel-plate`/name and want official registration details — returns vessel name, RSS number, length, and hom
 - **`understanding-war-map-room`** (low) — Use when you have a conflict `geolocation` or date and want authoritative, dated control-of-terrain maps — returns front-line positions and 

@@ -18,7 +18,7 @@ kind: group-index
 - **`sucuri-sitecheck`** (low) — Use when you have a `domain` and want a free remote malware/blacklist scan plus fingerprinting of its CMS and server — returns infection sta
 - **`threatminer-org`** (low) — Use when you have a `domain`, `ip-address`, file hash, or SSL cert and want linked threat-intel — returns related domains/IPs, WHOIS, and ma
 - **`trend-micro-site-safety-center`** (low) — Use when you have a `domain`/URL and want a vendor safety verdict and content category — returns a reputation rating and classification.
-- **`url-void`** (low) — Website reputation checking, malware/phishing detection, threat analysis
+- **`url-void`** (low) — Use when you have a `domain` tied to your subject (a personal site, a link from their profile, a scam contact) and want to know if it is fla
 - **`urlquery-net`** (low) — Use when you have a suspicious `domain`/URL and want a safe hosted analysis of it — screenshots, hosting IP, redirects, and malware/phishing
 - **`vurl-online`** (low) — URL/domain dissection and reputation
 - **`web-inspector-online-scan`** (low) — Use when you have a suspicious `domain`/URL and want a free malware/blacklist scan of the site — returns a threat verdict and blacklist stat

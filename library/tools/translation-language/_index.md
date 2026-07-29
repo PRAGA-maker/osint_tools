@@ -41,7 +41,7 @@ kind: group-index
 - **`freetranslation`** (low) — OSINT tool: FreeTranslation.
 - **`frengly-free-online-translator`** (low) — Tool for translating text and web content from one language to another
 - **`get-otter-ai`** (low) — Use when you have English audio/video (an interview, call, or recording) tied to a subject and want a searchable transcript — returns speake
-- **`gizoogle-textilizer`** (low) — Tool for translating English to street slang
+- **`gizoogle-textilizer`** (low) — Use when you have a block of text and want it rendered into (or read back from) US "gangsta"/AAVE-style slang — a novelty language aid, retu
 - **`google-quest-visual-wordlens`** (low) — Tool for translating words found in images from one language to another
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
 - **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another
