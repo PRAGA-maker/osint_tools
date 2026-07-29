@@ -284,7 +284,7 @@ kind: group-index
 - **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
 - **`trendsmap-com`** (medium) — Use when you have a `geolocation` (a city/region) and want the Twitter/X trends, hashtags and active accounts there — returns `social-profil
 - **`ufo-reporting-map`** (low) — Use when you have a `geolocation`/time and want crowd-posted sighting reports there — a niche map of user "UFO" posts that can occasionally 
-- **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
+- **`ukraine-live-cams`** (low) — Use when you have a location in Ukraine and want nearby live webcams plus fire and frontline overlays for geolocation/verification — returns
 - **`unixtime-org`** (medium) — Use when you have a Unix/epoch timestamp from `metadata-exif`, logs, or filenames and want the human date/time — returns the converted calen
 - **`unixtimestamp-com`** (medium) — Use when you have a Unix/epoch timestamp from metadata or a log and want the human date/time — returns the converted datetime to anchor an e
 - **`urbex-database-map`** (medium) — Use when you have an approximate `geolocation` in Europe and want to identify abandoned/derelict "lost places" nearby — returns mapped `geol

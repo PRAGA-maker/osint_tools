@@ -899,7 +899,7 @@ kind: group-index
 - **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — Use when you have a `name` and want unclaimed-property records — returns a last-known `address`, holder, and sometimes co-owner `associate` 
 - **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
 - **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.
-- **`unctad-stat`** (low) — OSINT tool: UNCTAD STAT.
+- **`unctad-stat`** (low) — Use when you have a country/economy and want authoritative UN trade, investment, and development statistics for context — returns background
 - **`undps-human-development-index`** (low) — Use when you have a country/`geolocation` and want socio-economic baseline data — returns HDI and related development indicators by country 
 - **`unece`** (low) — Use when you have a country/region and want official UNECE cross-country statistics (population, migration, transport, gender, forestry) — r
 - **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.

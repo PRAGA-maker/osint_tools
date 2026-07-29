@@ -185,7 +185,7 @@ kind: group-index
 - **`illuminarty`** (low) — Use when you have an `image` and want to know whether it is AI-generated — returns an AI-probability score and a guess at the generating mod
 - **`infogr-am`** (low) — OSINT tool: Infogr.am.
 - **`infooze`** (low) — Use when you have a `username`, `email`, `domain` or `image` and want a single CLI that runs 18 recon modules (user recon, mail finder, whoi
-- **`infosec-reference`** (low) — OSINT tool: infosec reference.
+- **`infosec-reference`** (low) — Use when you need a curated knowledge base to point you to the right infosec/OSINT technique, tool, or reading — returns reference material.
 - **`inkscape`** (low) — Use when you need to edit, trace, measure, or annotate images/vectors during analysis — a free vector-graphics editor useful for image foren
 - **`intelhub`** (low) — OSINT tool: IntelHub.
 - **`intellyweave`** (low) — OSINT tool: IntellyWeave.

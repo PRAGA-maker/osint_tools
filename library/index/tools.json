@@ -7528,38 +7528,47 @@
   },
   {
     "id": "infosec-reference",
-    "name": "infosec reference",
-    "description": "OSINT tool: infosec reference.",
+    "name": "Infosec Reference",
+    "description": "Use when you need a curated knowledge base to point you to the right infosec/OSINT technique, tool, or reading — returns reference material.",
     "url": "https://github.com/rmusser01/Infosec_Reference",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A large curated infosec/security knowledge base and reading list to find methods and tools.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source knowledge base hosted on GitHub (also rendered as a web book).",
+    "opsec": "passive",
+    "opsecNote": "Passive — reading reference material; nothing touches any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-maintained reference by rmusser01; a curated index/reading list, so treat specifics as pointers and verify against the primary sources it links.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Infosec_Reference",
+      "rmusser01 Infosec Reference"
+    ],
     "tags": [
-      "related-awesome-lists"
+      "related-awesome-lists",
+      "reference",
+      "knowledge-base"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/infosec-reference.md"
   },
   {
@@ -76378,43 +76387,55 @@
   {
     "id": "malware-patrol",
     "name": "Malware Patrol",
-    "description": "Malware IOC and feed intelligence",
+    "description": "Use when you have a `domain`, URL, or `ip-address` and want to know if it's flagged as malware/C2/phishing in a curated threat feed — returns domain, ip-address.",
     "url": "https://www.malwarepatrol.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Malware IOC and feed intelligence",
-    "input": "IOC queries or feed subscriptions",
-    "output": "Malware hashes, URLs, and threat intel",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking domains/URLs/IPs/hashes against curated malware, C2, and phishing threat feeds.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free/community feed access with registration; full feeds, historical data, and API are commercial subscriptions.",
     "opsec": "passive",
-    "opsecNote": "Passive consumption of threat feeds",
+    "opsecNote": "Passive — you consume threat-intel feeds rather than contacting the target; registration ties your queries to an account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial threat-intelligence provider; feed inclusion is a corroborating signal, not proof, and coverage skews to known/reported threats.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Malware Patrol",
+      "malwarepatrol.net"
+    ],
+    "tags": [
+      "threat-intel",
+      "malware",
+      "ioc"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/malware-patrol.md"
   },
   {
@@ -125261,35 +125282,52 @@
   {
     "id": "ukraine-live-cams",
     "name": "Ukraine Live Cams",
-    "description": "OSINT tool: Ukraine Live Cams.",
+    "description": "Use when you have a location in Ukraine and want nearby live webcams plus fire and frontline overlays for geolocation/verification — returns geolocation, image.",
     "url": "https://nagix.github.io/ukraine-livecams/#5.5/47.774/31.685/0/45",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding live public webcams across Ukraine with NASA fire and control-line overlays for conflict/geolocation verification.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free open-source map (GitHub Pages); it aggregates third-party public webcams and open datasets.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you view public webcam feeds and open data. Watching a camera sends traffic to that camera's host (a third party), not to any subject; use a VPN if that host's location matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source hobby project by Akihiko Kusanagi aggregating public webcams, NASA FIRMS fire data, and Liveuamap control lines; overlays are third-party and should be corroborated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ua"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Ukraine Live Cams",
+      "nagix ukraine-livecams"
+    ],
+    "tags": [
+      "webcams",
+      "geolocation",
+      "ukraine",
+      "conflict"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ukraine-live-cams.md"
   },
   {
@@ -259473,41 +259511,50 @@
   {
     "id": "unctad-stat",
     "name": "UNCTAD STAT",
-    "description": "OSINT tool: UNCTAD STAT.",
+    "description": "Use when you have a country/economy and want authoritative UN trade, investment, and development statistics for context — returns background economic data.",
     "url": "http://unctadstat.unctad.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative UN trade, investment, and development statistics for almost every economy.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UN data under Creative Commons terms; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — public statistics browsing; nothing touches any subject and no query is attributable to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official statistics from UNCTAD (UN Conference on Trade and Development); authoritative macro-economic and trade data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "UNCTADstat",
+      "UNCTAD Data Hub"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "un",
+      "trade"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "unctad-country-fact-sheets",
       "unctad-investment-country-profiles"
     ],
+    "enrichment": "full",
     "_file": "library/tools/public-records/unctad-stat.md"
   },
   {
@@ -345287,38 +345334,50 @@
   {
     "id": "amtrak-status-maps-archive-database",
     "name": "Amtrak Status Maps Archive Database",
-    "description": "find out the train schedule for a station on a particular day that passed many years ago (since 2008)",
+    "description": "Use when you have an Amtrak train/station and a past date and want the actual historical arrival/departure times — returns geolocation.",
     "url": "https://juckins.net/amtrak_status/archive/html/history.php",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Looking up historical Amtrak arrival/departure times at a station for a past date (data since 2008).",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free community-run archive; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — querying a historical database; nothing touches any subject and no query is tied to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running community-maintained archive that has scraped and stored Amtrak status data since 2008; reliable in practice but unofficial (not Amtrak).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "ASMAD",
+      "Amtrak Status Maps Archive",
+      "juckins Amtrak status"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Railway"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/amtrak-status-maps-archive-database.md"
   },
   {
