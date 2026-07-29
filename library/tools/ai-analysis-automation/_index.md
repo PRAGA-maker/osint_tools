@@ -118,7 +118,7 @@ kind: group-index
 - **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
 - **`einvestigator`** (low) — OSINT tool: eInvestigator.
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
-- **`epic-privacy-browser`** (low) — OSINT tool: Epic Privacy Browser.
+- **`epic-privacy-browser`** (low) — Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggre
 - **`eraser`** (low) — OSINT tool: Eraser.
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
 - **`exhibit`** (low) — Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-ri
@@ -277,7 +277,7 @@ kind: group-index
 - **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
 - **`pidgin`** (low) — Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once 
 - **`piktochart`** (low) — OSINT tool: Piktochart.
-- **`pinpoint`** (low) — A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journal
+- **`pinpoint`** (medium) — Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns i
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
 - **`pixxa`** (low) — OSINT tool: Pixxa.
 - **`pldb`** (low) — A huge knowledge base of 4050 programming languages. For each language you can see its place in the ranking, the number of users and reposit

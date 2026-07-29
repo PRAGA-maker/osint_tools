@@ -2,40 +2,40 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7183 total · 5776 full · 1407 stub (80% enriched)
+**Tools:** 7180 total · 5784 full · 1396 stub (80% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3206 · medium: 2013 · high: 1964
+low: 3200 · medium: 2016 · high: 1964
 
 ## Tools by trust
-community: 3448 · trusted: 1913 · unverified: 1816 · untrustworthy: 6
+community: 3448 · trusted: 1916 · unverified: 1810 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 188/413
+- `ai-analysis-automation` — 190/413
 - `archives-cache` — 96/115
 - `communities-forums` — 253/285
 - `dark-web` — 54/95
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 142/276
+- `documents-metadata` — 145/276
 - `domains-ip-infrastructure` — 448/640
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 78/95
-- `geolocation` — 305/336
+- `geolocation` — 306/336
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 108/123
 - `messaging` — 182/184
-- `opsec-investigator-tooling` — 184/489
+- `opsec-investigator-tooling` — 184/488
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 915/992
-- `search-engines` — 568/745
+- `search-engines` — 568/743
 - `social-networks` — 750/774
 - `training-ctf` — 6/12
-- `translation-language` — 44/94
+- `translation-language` — 46/94
 - `transportation` — 169/201
 - `username` — 102/104
 
@@ -43,8 +43,8 @@ community: 3448 · trusted: 1913 · unverified: 1816 · untrustworthy: 6
 
 - `library/tools/public-records` — 942 leaves
 - `library/tools/social-networks` — 747 leaves
-- `library/tools/search-engines` — 697 leaves
-- `library/tools/opsec-investigator-tooling` — 480 leaves
+- `library/tools/search-engines` — 695 leaves
+- `library/tools/opsec-investigator-tooling` — 479 leaves
 - `library/tools/domains-ip-infrastructure` — 431 leaves
 - `library/tools/ai-analysis-automation` — 385 leaves
 - `library/tools/image-video-face` — 357 leaves

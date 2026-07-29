@@ -30,7 +30,7 @@ kind: group-index
 - **`average-gamma-dose-rate-map`** (low) — Use when you have a `geolocation` in Europe and want current environmental radiation readings for that area — returns station-level gamma do
 - **`baidu-maps`** (medium) — Use when a person, address, or photo points to mainland China and you need the local-quality map, POIs, satellite, and street-level Panorama
 - **`batchgeo`** (medium) — Use when you have a spreadsheet/list of addresses and want to drop them onto an interactive, shareable map fast — no GIS account or setup.
-- **`baton-rouge-traffic-cams`** (low) — OSINT tool: Baton Rouge Traffic Cams.
+- **`baton-rouge-traffic-cams`** (medium) — Use when you have a `geolocation`/`address` in Baton Rouge, LA and want live traffic-camera views — an ArcGIS map of city/parish traffic cam
 - **`bellingcat-openstreetmap-search`** (high) — Use when you have a `physical-description` of a scene (several nearby feature types) and want candidate `geolocation`s where they co-occur —
 - **`bfro-bigfoot-sightings-database`** (medium) — Use when you have a `geolocation` (US state/county or Canadian province) and want dated eyewitness reports pinned to remote areas — returns 
 - **`bigfoot-and-ufo-map`** (medium) — Use when you have a `geolocation` and want crowdsourced anomaly-sighting points nearby — returns mapped Bigfoot/UFO/other sighting locations

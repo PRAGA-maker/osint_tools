@@ -222,7 +222,6 @@ kind: group-index
 - **`firebounty`** (low) — Use when you have an `employer-org`/`domain` and want to know its bug-bounty or vulnerability-disclosure policy and in-scope assets — return
 - **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
 - **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
-- **`fonetask`** (low) — OSINT tool: FONETASK.
 - **`foreign-agents-registration-act`** (medium) — Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employer
 - **`france24`** (low) — OSINT tool: France24.
 - **`fravia-soxoj`** (medium) — Use when your searches keep coming up empty and you want to level up search-engine craft — a curated methodology resource ("The Art of Searc
@@ -262,7 +261,6 @@ kind: group-index
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
-- **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
 - **`google-news`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across thousands of outlets — returns aggregated articles, dates
 - **`google-search-scraper`** (low) — Use when you have a query and a target `geolocation`/language and want structured Google SERP data at scale (organic, ads, related) — return
 - **`google-search`** (low) — OSINT tool: Google Search.

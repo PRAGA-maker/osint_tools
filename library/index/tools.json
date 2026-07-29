@@ -4562,37 +4562,48 @@
   {
     "id": "epic-privacy-browser",
     "name": "Epic Privacy Browser",
-    "description": "OSINT tool: Epic Privacy Browser.",
+    "description": "Use when you need a compartmentalized browsing environment for OSINT — a free Chromium browser with a built-in encrypted proxy/VPN and aggressive tracker/fingerprint blocking.",
     "url": "https://www.epicbrowser.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing targets from a hardened, tracker-blocking browser with a built-in country-selectable proxy.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free download for desktop and mobile; the built-in encrypted proxy/VPN is included at no cost.",
+    "opsec": "passive",
+    "opsecNote": "The point of this tool is OPSEC — it reduces what your browsing leaks (trackers, fingerprint, real IP via its proxy). It is a defensive shield for the investigator, not a query against a subject. Still verify the proxy is on before visiting a sensitive target, and don't log into identity-linked accounts in the same session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercially maintained Chromium fork (Hidden Reflex) with a real user base; treat its privacy claims as a helpful layer, not a guarantee — pair with your own network hygiene for anything high-stakes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Epic Browser",
+      "Epic Privacy Browser"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-browser",
+      "opsec",
+      "proxy"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/epic-privacy-browser.md"
   },
   {
@@ -12433,39 +12444,58 @@
   },
   {
     "id": "pinpoint",
-    "name": "Pinpoint",
-    "description": "A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journalists, academic researchers and university students.",
+    "name": "Google Pinpoint",
+    "description": "Use when you have a large `document-id` collection (PDFs, scans, audio) and want to search and extract entities across all of it — returns indexed text, people/orgs/locations, transcripts.",
     "url": "https://journaliststudio.google.com/pinpoint/about",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "OCR-ing, transcribing, and entity-searching big document/media collections in one place.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but access is gated — Google grants accounts to journalists, academic researchers, and university students who apply/qualify.",
+    "opsec": "passive",
+    "opsecNote": "You upload documents you already hold into Google's cloud; it does not query any subject. Collections are private by default, but this is Google's infrastructure — do not upload material you're not comfortable storing with a third party, and mind source-protection obligations.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "First-party Google (Journalist Studio) tool used by major newsrooms (AP, NYT, Le Figaro); OCR/transcription are machine-generated, so verify extracted text against the source page.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": true,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Pinpoint",
+      "Journalist Studio Pinpoint"
+    ],
     "tags": [
-      "bellingcat-toolkit",
-      "data-organization-analysis"
+      "document-analysis",
+      "ocr",
+      "entity-extraction"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/pinpoint.md"
   },
   {
@@ -55753,48 +55783,58 @@
   },
   {
     "id": "osintdashboard-azurewebsites-net",
-    "name": "osintdashboard.azurewebsites.net",
-    "description": "OSINT tool: osintdashboard.azurewebsites.net.",
+    "name": "OSINT Dashboard",
+    "description": "Use when you have a `domain`, `image`, or `phone` and want a quick combined lookup — returns URL/IP/DNS details, image EXIF/GPS, and phone carrier/location.",
     "url": "https://osintdashboard.azurewebsites.net/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "A single-page multi-tool for URL/IP analysis, image EXIF extraction, and phone-number lookup.",
     "selectorsIn": [
-      "image"
+      "domain",
+      "image",
+      "phone"
     ],
     "selectorsOut": [
-      "metadata-exif",
-      "geolocation"
+      "ip-address",
+      "domain",
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free student/community project; hosted on a free Azure App Service tier, so it may sleep or be slow on first load.",
+    "opsec": "passive",
+    "opsecNote": "URL/phone lookups query public data sources server-side, and EXIF is parsed from the image you upload — none of this contacts the subject. Uploading an image sends it to a third-party server, so strip anything sensitive you don't want stored, or use a local EXIF tool for sensitive files.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An open-source project (source on GitHub) by named student authors; it aggregates third-party lookups, so accuracy — especially phone \"user information\" — is only as good as its upstream sources.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "OSINT Dashboard",
+      "osintdashboard.azurewebsites.net"
+    ],
     "tags": [
-      "exifdata",
-      "EXIF Data Related Sites"
+      "multi-tool",
+      "exif",
+      "phone-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "sn-radar-vk-photo-search",
-      "snradar"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/osintdashboard-azurewebsites-net.md"
   },
   {
@@ -57936,25 +57976,32 @@
   },
   {
     "id": "squareup",
-    "name": "SquareUp",
-    "description": "Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency",
+    "name": "Square (Squareup)",
+    "description": "Use when you have a small-business `name`/`employer-org` or a Square receipt/store link and want to confirm a Square payment presence — returns store/receipt details tied to the merchant.",
     "url": "https://squareup.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Confirming a business uses Square and reading its public Square Online store or receipt pages.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Square is free to sign up for as a merchant; for an investigator it's simply a public store/receipt surface to read — no cost to view public pages.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a Square Online store or a shared receipt page is like viewing any website — passive and not notified to the merchant. Do not attempt to make test transactions or contact the seller from an attributable identity; that becomes active and traceable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Square (Block, Inc.) is a first-party mainstream payments provider; public store/receipt pages are authentic to the merchant, though they reveal only what the merchant chose to publish.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -57963,15 +58010,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Square",
+      "Squareup",
+      "Square Online"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "payments",
+      "small-business",
+      "merchant"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/squareup.md"
   },
   {
@@ -58965,55 +59019,52 @@
   },
   {
     "id": "twitter-analytics",
-    "name": "Twitter Analytics",
-    "description": "Website offering analytical capabilities of Twitter content",
+    "name": "X (Twitter) Analytics",
+    "description": "Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in account only.",
     "url": "https://analytics.twitter.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Measuring impressions/engagement on your own (or a managed sock-puppet's) X posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Native analytics moved to x.com/i/account_analytics and now shows data only for the logged-in account; full analytics are increasingly gated behind X Premium.",
+    "opsec": "active",
+    "opsecNote": "This works only while logged into an X account, and it reports on THAT account's own posts — you cannot view a third party's analytics. Use it strictly on a sock-puppet account you control (e.g. to gauge an outreach/appeal post's reach); logging in is an authenticated, attributable action, so keep it off any identity-linked account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party X analytics — the numbers are authoritative for the logged-in account, but its scope is limited to your own account, so it is not a tool for investigating others.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Twitter Analytics",
+      "X Analytics",
+      "analytics.twitter.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "twitter",
+      "x",
+      "analytics"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "global-terriorism-database",
-      "murph-live",
-      "parrot-security",
-      "tormap",
-      "twitter",
-      "twitter-advanced-search",
-      "twitter-com",
-      "twitter-date-search",
-      "twitter-image-search",
-      "twitter-name-search-twitter-name-search",
-      "twitter-x-location-search"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/twitter-analytics.md"
   },
   {
@@ -111562,35 +111613,54 @@
   {
     "id": "baton-rouge-traffic-cams",
     "name": "Baton Rouge Traffic Cams",
-    "description": "OSINT tool: Baton Rouge Traffic Cams.",
+    "description": "Use when you have a `geolocation`/`address` in Baton Rouge, LA and want live traffic-camera views — an ArcGIS map of city/parish traffic cameras.",
     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=0ec05ffb0d2d4735a969e8f31f820a7b",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Viewing live/near-live traffic-camera feeds across Baton Rouge / East Baton Rouge Parish on a map.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public ArcGIS web map; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view publicly published traffic-camera feeds via ArcGIS — the subject is not contacted or notified. Your request goes to Esri/ArcGIS and the camera host; use a research browser if you want to keep even that access unattributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "An ArcGIS web app republishing a municipal/parish traffic-camera layer; camera coverage, uptime, and refresh rate depend on the underlying agency feed, not the map.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Baton Rouge Traffic Cameras",
+      "EBR traffic cams"
+    ],
+    "tags": [
+      "traffic-cameras",
+      "geolocation",
+      "louisiana"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/baton-rouge-traffic-cams.md"
   },
   {
@@ -172257,46 +172327,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-ios.md"
-  },
-  {
-    "id": "facebook-pages-social-networking-app-mobile-ios",
-    "name": "Facebook Pages Social Networking App (Mobile – iOS)",
-    "description": "App for mobile devices for monitoring Facebook page activity",
-    "url": "https://itunes.apple.com/ca/app/facebook-pages-manager/id514643583?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/facebook-pages-social-networking-app-mobile-ios.md"
   },
   {
     "id": "facebook-social-networking-app-mobile-android",
@@ -272688,40 +272718,6 @@
     "_file": "library/tools/search-engines/fofa.md"
   },
   {
-    "id": "fonetask",
-    "name": "FONETASK",
-    "description": "OSINT tool: FONETASK.",
-    "url": "http://fonetask.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/fonetask.md"
-  },
-  {
     "id": "foreign-agents-registration-act",
     "name": "FARA — Foreign Agents Registration Act (DOJ)",
     "description": "Use when you have a `name` or `employer-org` and want to check US foreign-agent registrations — returns registrant/principal names, employers and disclosed activities.",
@@ -275139,42 +275135,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/search-engines/google-news.md"
-  },
-  {
-    "id": "google-news-print-archive",
-    "name": "Google News Print Archive",
-    "description": "OSINT tool: Google News Print Archive.",
-    "url": "http://news.google.com/newspapers",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-news-print-archive.md"
   },
   {
     "id": "google-news-search",
@@ -340224,24 +340184,25 @@
   {
     "id": "acronym-finder",
     "name": "Acronym Finder",
-    "description": "Language-related search engine focusing on acronyms",
+    "description": "Use when you have an unfamiliar acronym/abbreviation in a document or chat and want its likely expansions — a large searchable database of acronym meanings.",
     "url": "http://www.acronymfinder.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up what an acronym or abbreviation stands for, ranked by likelihood and category.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported lookup; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reference lookup that queries a dictionary database, not the subject. The only footprint is your own search on a third-party site; a research browser suffices for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-established acronym database; entries are crowd/editor-sourced and an acronym often has many meanings, so treat results as candidate expansions to disambiguate by context.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -340250,15 +340211,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "AcronymFinder",
+      "Acronym Finder"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "reference",
+      "acronyms",
+      "abbreviations"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/acronym-finder.md"
   },
   {
@@ -343643,38 +343610,49 @@
   },
   {
     "id": "trans8it",
-    "name": "Trans8it",
-    "description": "OSINT tool: Trans8it.",
+    "name": "transl8it!",
+    "description": "Use when you have text/SMS-speak or abbreviations and want plain English (or vice-versa) — a free web translator for \"txt speak\", chat slang, and abbreviations.",
     "url": "http://transl8it.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding SMS/chat abbreviations and \"txt speak\" into readable English.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Translates text you paste, querying no subject. As with any third-party text tool, paste sanitized excerpts rather than sensitive raw messages.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing novelty txt-speak translator; its dictionary is crowd-style and dated, so read output as a rough decode, not an authoritative one — modern slang may be missed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "transl8it",
+      "transl8it"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "sms-speak",
+      "slang"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/trans8it.md"
   },
   {

@@ -13,7 +13,7 @@ kind: group-index
 
 ## Skills here
 - **`abbreviations-com`** (low) — Use when you have an unknown acronym or abbreviation from a document/chat/handle and want its expansions — returns candidate meanings to dec
-- **`acronym-finder`** (low) — Language-related search engine focusing on acronyms
+- **`acronym-finder`** (low) — Use when you have an unfamiliar acronym/abbreviation in a document or chat and want its likely expansions — a large searchable database of a
 - **`acronym-server`** (low) — Language-related search engine searchable by word or acronym
 - **`after-the-deadline-language-tool`** (low) — Language-related tool that checks spelling, style and grammar of writing
 - **`alphadictionary-com`** (low) — Search from over 1000 online English dictionaries at once
@@ -82,7 +82,7 @@ kind: group-index
 - **`symbols-com`** (low) — Language-related directory of one of the webs largest collections for symbols, signs and flags
 - **`synonyms-net`** (low) — Language-related search for synonyms and antonyms
 - **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated
-- **`trans8it`** (low) — OSINT tool: Trans8it.
+- **`trans8it`** (low) — Use when you have text/SMS-speak or abbreviations and want plain English (or vice-versa) — a free web translator for "txt speak", chat slang
 - **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns
 - **`translate-com`** (low) — OSINT tool: Translate.com.
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read

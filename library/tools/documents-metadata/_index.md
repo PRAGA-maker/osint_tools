@@ -172,7 +172,7 @@ kind: group-index
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
 - **`online-metadata-viewer-and-editor`** (low) — Use when you have a file (`image`, docx, xlsx, pptx, msg, vsd, mpp) and want to view or edit its embedded metadata in the browser — returns 
 - **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
-- **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
+- **`osintdashboard-azurewebsites-net`** (medium) — Use when you have a `domain`, `image`, or `phone` and want a quick combined lookup — returns URL/IP/DNS details, image EXIF/GPS, and phone c
 - **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
 - **`pastes-search-engine`** (low) — Use when you have an `email`/`username`/keyword and want to search across paste sites (Pastebin et al.) for leaked/dumped text — returns pas
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
@@ -213,7 +213,7 @@ kind: group-index
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au
 - **`sourcegraph`** (medium) — Use when you have a `username`, `email`, key, or code string and want to search across public open-source repositories at scale — returns em
-- **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
+- **`squareup`** (low) — Use when you have a small-business `name`/`employer-org` or a Square receipt/store link and want to confirm a Square payment presence — retu
 - **`statwing`** (low) — Intuitive data analytics tool
 - **`steghide`** (low) — Use when you have an image or audio file from a subject and suspect embedded data — returns hidden files/text extracted from the carrier, pl
 - **`stegosuite`** (low) — Use when you suspect an `image` hides embedded data and you want to extract it (or embed your own) — returns hidden text/files concealed via
@@ -234,7 +234,7 @@ kind: group-index
 - **`transferwise`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
 - **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
-- **`twitter-analytics`** (low) — Website offering analytical capabilities of Twitter content
+- **`twitter-analytics`** (low) — Use when you operate a sock-puppet X account and want reach/impression data on your own posts — X's native analytics for the logged-in accou
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec

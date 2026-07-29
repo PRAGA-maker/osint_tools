@@ -125,7 +125,6 @@ kind: group-index
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
 - **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
-- **`facebook-pages-social-networking-app-mobile-ios`** (low) — App for mobile devices for monitoring Facebook page activity
 - **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
 - **`facebook-social-networking-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook,
 - **`fake-company-name-generator`** (low) — OSINT tool: Fake Company Name Generator.
