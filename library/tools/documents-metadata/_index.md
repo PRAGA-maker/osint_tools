@@ -86,7 +86,7 @@ kind: group-index
 - **`eventbrite-canada`** (low) — Website related to event management and ticket sales
 - **`eventbrite-united-states`** (low) — Use when you have a `name`, `username`, or an event/organizer and want to find events a subject organized or attended — returns organizer pr
 - **`evite`** (low) — Website related to event invitation and party planning
-- **`evuln`** (low) — Program that provides multiple tools and programs to prevent website hacking and protective monitoring
+- **`evuln`** (low) — Use when you have a `domain` and want a free scan for injected malware, malicious redirects, or defacement — returns a compromise verdict fo
 - **`exif-app`** (low) — Use when you have one or two `image` files and want to read or compare their EXIF metadata (GPS, camera, timestamps) — returns `metadata-exi
 - **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
 - **`exif-py`** (low) — Use when you have an `image` file and want to extract its embedded EXIF metadata from the command line — returns metadata-exif, GPS geolocat

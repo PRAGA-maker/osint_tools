@@ -62,7 +62,7 @@ kind: group-index
 - **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
 - **`equasis`** (low) — Use when you have a vessel IMO/`name` or a shipping company and want ownership, management, and safety records — returns employer-org (owner
 - **`eships-net`** (low) — OSINT tool: eships.net.
-- **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
+- **`europe-station-maps-floor-plan`** (low) — Use when you have a European railway station `address`/`geolocation` and want its interior floor plan and platform layout — returns detailed
 - **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
 - **`europlates-eu`** (medium) — Use when you have a photo of a `vehicle-plate` and want to identify its country/region of origin by matching format and design — returns a `
 - **`exotic-cars-the-largest-photo-collection`** (low) — Use when you have an `image` or `vehicle-plate` of an exotic car and want spotting records — returns dated, geotagged photos of that specifi

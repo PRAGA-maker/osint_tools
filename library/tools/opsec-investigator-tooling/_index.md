@@ -201,7 +201,7 @@ kind: group-index
 - **`https-github-com-spyboy-productions-valid8proxy`** (low) — Use when you need a fresh, working proxy list — it scrapes public proxy sources and validates them, saving live proxies to a file for your r
 - **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
 - **`hulu-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing TV-related media
-- **`huron-osint`** (low) — OSINT tool: Huron Osint.
+- **`huron-osint`** (low) — Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation envir
 - **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
 - **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
 - **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
@@ -235,7 +235,7 @@ kind: group-index
 - **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
 - **`lightshot-screen-capture-add-on`** (low) — Use when you need to quickly screenshot a selected area of a browser tab to preserve `metadata-exif`-free visual evidence during an investig
 - **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
-- **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
+- **`linkedin-network-and-job-finder-mobile-ios`** (low) — Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph 
 - **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
 - **`macchanger`** (low) — Use when you want to spoof or randomize the `mac-address` of your own network interface for investigator OpSec — returns/sets a new hardware
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
@@ -321,7 +321,6 @@ kind: group-index
 - **`resume-builder`** (low) — OSINT tool: Resume Builder.
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
-- **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
 - **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo

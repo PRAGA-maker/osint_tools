@@ -12171,42 +12171,55 @@
   {
     "id": "phishingseclists",
     "name": "PhishingSecLists",
-    "description": "OSINT tool: PhishingSecLists.",
+    "description": "Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and campaign data — returns exposed paths/`document-id` leads on the malicious host.",
     "url": "https://github.com/spmedia/PhishingSecLists",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Content-discovery wordlists tuned to phishing/scam kits, for finding where a fraud site stores captured credentials and campaign artifacts.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source wordlists on GitHub (actively maintained); no cost.",
+    "opsec": "active",
+    "opsecNote": "Using these lists means directory-brute-forcing a live phishing host with gobuster/ffuf — that is active scanning that the operator (or their hosting/CDN) will see and can block or flag. Only do it within authorized scope, from sock-puppet infrastructure, and pace requests to avoid tipping the actor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by spmedia, a threat-intel-focused author, with a substantial commit history; the lists are curated from real phishing-kit filenames across multiple languages.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "threat-intelligence"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
       "telegram-channel-joiner",
       "threat-actor-usernames-scrape"
     ],
+    "aliases": [
+      "spmedia PhishingSecLists",
+      "phishing wordlists"
+    ],
+    "tags": [
+      "threat-intelligence",
+      "content-discovery",
+      "phishing"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/phishingseclists.md"
   },
   {
@@ -40705,39 +40718,55 @@
   },
   {
     "id": "onion-search-engine",
-    "name": "Onion search engine",
-    "description": "OSINT tool: Onion search engine.",
+    "name": "Onion Search Engine",
+    "description": "Use when you have a `username`/`email`/keyword and want to search Tor `.onion` content from the clearnet without running Tor — returns dark-web site/`social-profile` leads.",
     "url": "https://onionsearchengine.com/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Clearnet keyword search across indexed Tor hidden services, with a proxy to preview results without a Tor browser.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search from the clearnet; no account.",
+    "opsec": "active",
+    "opsecNote": "Searching is done on the clearnet, but Onion Search Engine offers a built-in proxy to open .onion results without Tor — using that proxy routes your request (and any content it fetches) through a third party you don't control, which is an OpSec and safety risk. For anything beyond a title/snippet, switch to Tor Browser on an isolated VM. Search from sock-puppet egress.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing community clearnet-to-onion search service; its crawl covers only a slice of Tor and, like all onion indexes, surfaces scam/phishing mirrors, so treat results as leads to verify.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "tor2web-tor-hidden-services-gateway"
     ],
+    "aliases": [
+      "onionsearchengine.com"
+    ],
+    "tags": [
+      "darkweb",
+      "onion-search",
+      "Dark Web Links"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/onion-search-engine.md"
   },
   {
@@ -42224,13 +42253,13 @@
   {
     "id": "tor-link",
     "name": "tor.link",
-    "description": "OSINT tool: tor.link.",
+    "description": "Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns dark-web `social-profile`/site leads.",
     "url": "https://tor.link/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "A clearnet-accessible darknet search engine and categorized directory of .onion markets, forums, and services.",
     "selectorsIn": [
       "username",
       "email"
@@ -42238,29 +42267,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse and search; no account.",
+    "opsec": "active",
+    "opsecNote": "The index is browsable on the clearnet from tor.link, but acting on any result means opening a .onion address — do that only in Tor Browser on an isolated VM (Tails/Whonix). The directory lists many illicit markets/services; treat listings as untrusted and screen for legality before opening. Searching from your real IP/browser is attributable to tor.link and its ad partners; use sock-puppet egress.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous community-run darknet directory; link accuracy is not vetted and phishing clones of listed sites are common — cross-check onion addresses against trusted sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tor.link darknet search"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "onion-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/tor-link.md"
   },
   {
@@ -50855,25 +50892,30 @@
   },
   {
     "id": "evuln",
-    "name": "Evuln",
-    "description": "Program that provides multiple tools and programs to prevent website hacking and protective monitoring",
-    "url": "http://evuln.com/#",
+    "name": "eVuln",
+    "description": "Use when you have a `domain` and want a free scan for injected malware, malicious redirects, or defacement — returns a compromise verdict for the site.",
+    "url": "http://evuln.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Free malware/defacement scanning of a website and browsing eVuln's advisories on known site compromises.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free online website malware scanner and PHP code scanner plus public security advisories; hands-on malware removal and ongoing monitoring are paid services.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The scanner fetches the target site from eVuln's servers, so your IP isn't exposed to the target — but you submit the domain to a third-party SaaS that logs it. Fine for passive checks on public sites; don't submit private/unlisted hosts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running small commercial website-security vendor (malware removal/monitoring) offering free scanner tools; results are a point-in-time signal, not a full audit.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -50882,15 +50924,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "eVuln malware scanner"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "website-malware-scan"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/evuln.md"
   },
   {
@@ -64614,48 +64659,6 @@
     "_file": "library/tools/domains-ip-infrastructure/cira-whois-canada.md"
   },
   {
-    "id": "cisco-talos",
-    "name": "Cisco Talos",
-    "description": "IP/domain reputation intelligence",
-    "url": "https://talosintelligence.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "reputation"
-    ],
-    "bestFor": "IP/domain reputation intelligence",
-    "input": "IP address or domain",
-    "output": "Reputation score, threat indicators, intelligence reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Passive intelligence from Cisco's extensive network of sensors and endpoints",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "cisco-talos-intelligence"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/reputation/cisco-talos.md"
-  },
-  {
     "id": "cisco-umbrella-popularity-list",
     "name": "Cisco Umbrella Popularity List",
     "description": "Use when you have a `domain` and want to gauge how popular/common it is in global DNS traffic — returns a top-1-million ranking (present-and-ranked, or absent) as context.",
@@ -65343,43 +65346,50 @@
   },
   {
     "id": "cookieserve-com",
-    "name": "cookieserve.com",
-    "description": "detailed website cookie analyze",
+    "name": "CookieServe",
+    "description": "Use when you have a `domain` and want an itemized audit of the cookies and trackers it sets — returns tracker/third-party `domain` links for infrastructure correlation.",
     "url": "https://www.cookieserve.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Scanning a website to enumerate its cookies, trackers, and third-party analytics/ad domains.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free cookie-scan tool (marketed for GDPR cookie-consent compliance); no account for a basic scan.",
+    "opsec": "passive",
+    "opsecNote": "CookieServe fetches the target site from its OWN servers, not yours, so your IP is not exposed to the target — but you are submitting the target domain to a third-party SaaS that may log/cache it. Safe for passive infrastructure recon; don't submit private/unlisted URLs you don't want retained.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial cookie-consent/compliance vendor's free scanner; results are a technical readout, reliable as far as the crawl reaches (single-page, cookies visible at scan time).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cookieserve",
+      "cookie scanner"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Cookies analyze"
+      "Cookies analyze",
+      "tracker-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cookieserve-com.md"
   },
   {
@@ -157500,39 +157510,54 @@
   },
   {
     "id": "world-database-on-protected-and-conserved-areas",
-    "name": "World Database on Protected and Conserved Areas",
-    "description": "A comprehensive global database on terrestrial and marine protected areas.",
+    "name": "Protected Planet (WDPA)",
+    "description": "Use when you have a `geolocation`/`address` and want to know whether it falls in a protected or conserved area — returns the area's boundary, name, designation and managing authority.",
     "url": "https://www.protectedplanet.net/en/search-areas?geo_type=site",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether coordinates lie inside a national park / reserve / marine protected area and identifying its managing authority.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view; bulk data downloads are free for non-commercial use with a short registration.",
+    "opsec": "passive",
+    "opsecNote": "You query an authoritative environmental reference database with coordinates or area names; no subject is contacted. Purely observational geospatial enrichment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The WDPA is compiled by UN Environment Programme World Conservation Monitoring Centre (UNEP-WCMC) and IUCN — the authoritative global protected-areas dataset.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Protected Planet",
+      "WDPA",
+      "World Database on Protected Areas"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "geospatial-reference"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/world-database-on-protected-and-conserved-areas.md"
   },
   {
@@ -176021,38 +176046,45 @@
   },
   {
     "id": "huron-osint",
-    "name": "Huron Osint",
-    "description": "OSINT tool: Huron Osint.",
+    "name": "Huron OSINT (OsintDistro)",
+    "description": "Use when you want a pre-built OSINT virtual machine bundling Maltego, Recon-ng, Shodan and metadata tools — a ready-made investigation environment, not a per-selector lookup.",
     "url": "https://github.com/HuronOsint/OsintDistro",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A ready-to-run OSINT Linux VM (OVA) preloaded with common investigation tools and a Tor/tracker-blocking browser setup.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free download (VM image hosted on Mega, linked from the GitHub repo); no license fee.",
+    "opsec": "passive",
+    "opsecNote": "A self-contained VM is itself an OpSec win — run investigations in a disposable, isolated machine separated from your host identity. But an unmaintained image ships outdated, unpatched software; sandbox it, keep snapshots, and update the tools before trusting it with sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "A small community project (HuronOsint/OsintDistro, ~60 stars) distributed as an OVA via Mega, largely at v1.0 with minimal recent commits — verify the image and its bundled tools before use.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OsintDistro",
+      "Huron distro"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Virtual Machines/Linux distributions",
+      "osint-vm"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/huron-osint.md"
   },
   {
@@ -177627,42 +177659,57 @@
   },
   {
     "id": "linkedin-network-and-job-finder-mobile-ios",
-    "name": "LinkedIn Network and Job Finder (Mobile – iOS)",
-    "description": "LinkedIn network and job finder app",
+    "name": "LinkedIn (iOS App)",
+    "description": "Use when you have a `name`/`employer-org`/`email` and want the official LinkedIn app's authenticated view of a subject's professional graph — returns `social-profile`, `employer-org`, `associate` links.",
     "url": "https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestFor": "Mobile, authenticated access to LinkedIn's people/company graph for professional-network mapping.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The app is free; the underlying LinkedIn account is free to create. Premium (recruiter/sales) tiers ($30–$120/mo) unlock deeper search and who-viewed data, but core profile/company browsing is free.",
+    "opsec": "active",
+    "opsecNote": "LinkedIn is heavily attributed — viewing a profile can notify the target (\"who viewed your profile\"), and the app is tied to YOUR logged-in identity. Investigate only from a maintained sock-puppet account with private/anonymous browsing mode enabled in settings; never use your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "The official first-party LinkedIn Corporation app (App Store ID 288429040), actively updated; the data is LinkedIn's own, so authoritative for what users self-publish.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "LinkedIn Network and Job Finder",
+      "LinkedIn iOS"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "professional-network"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/linkedin-network-and-job-finder-mobile-ios.md"
   },
   {
@@ -181698,46 +181745,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/ripoff-report.md"
-  },
-  {
-    "id": "rosetta-stone-learn-languages-app-mobile-android",
-    "name": "Rosetta Stone Learn Languages App (Mobile – Android)",
-    "description": "App for mobile devices for learning words and phrases in up to 19 languages",
-    "url": "https://play.google.com/store/apps/details?id=air.com.rosettastone.mobile.CoursePlayer&hl=en_GB",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/rosetta-stone-learn-languages-app-mobile-android.md"
   },
   {
     "id": "rosetta-stone-learn-languages-app-mobile-ios",
@@ -343928,24 +343935,28 @@
   {
     "id": "smallseotools-plagiarism-checker",
     "name": "SmallSEOTools Plagiarism Checker",
-    "description": "Language and academic-related program that matches uploaded text against a database of text material, checking for plagiarsim and copyright infringement",
+    "description": "Use when you have a block of `text` and want to find where else it appears online — returns the source `domain`/URLs that match, exposing copied bios, listings, or reused content.",
     "url": "http://smallseotools.com/plagiarism-checker",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a paragraph of text (bio, ad, listing, message) back to the pages it was copied from or reused across.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web checker with a per-scan word limit (typically ~1,000 words/query); larger volume nudges toward a paid plan, but the free tier is enough for OSINT snippet-tracing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste text into a third-party SaaS that queries search engines on your behalf — your IP is not shown to the matched sites, but the pasted text is submitted to and may be retained by SmallSEOTools. Never paste sensitive, private, or unpublished text you don't want stored.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A popular free SEO-tools site; the checker is a convenience wrapper over search-engine matching, so results are only as good as what search engines index and it can miss paywalled/deep-web copies.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -343954,19 +343965,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "smallseotools",
       "smallseotools-backlink-checker"
     ],
+    "aliases": [
+      "SmallSEOTools plagiarism"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "language-translation-tools",
+      "text-matching"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/smallseotools-plagiarism-checker.md"
   },
   {
@@ -347523,39 +347537,52 @@
   },
   {
     "id": "europe-station-maps-floor-plan",
-    "name": "Europe station maps floor plan",
-    "description": "OSINT tool: Europe station maps floor plan.",
+    "name": "NS International Station Maps & Floor Plans",
+    "description": "Use when you have a European railway station `address`/`geolocation` and want its interior floor plan and platform layout — returns detailed station layout for geolocation/movement analysis.",
     "url": "https://www.nsinternational.com/en/stations/station-maps-floor-plan",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Interior floor plans and platform layouts of major European train stations for geolocation and route reconstruction.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference maps from NS International (Dutch Railways' international arm); no account.",
+    "opsec": "passive",
+    "opsecNote": "You browse published station reference maps on a public rail site; nothing about a subject is submitted. Fully observational — a background/enrichment resource, not a query against a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by NS International (Nederlandse Spoorwegen), the official Dutch rail operator; the station layouts are authoritative operator data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NS International station maps",
+      "European station floor plans"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Railway"
+      "Railway",
+      "reference-map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/europe-station-maps-floor-plan.md"
   },
   {

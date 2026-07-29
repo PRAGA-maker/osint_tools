@@ -276,7 +276,7 @@ kind: group-index
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.
-- **`phishingseclists`** (low) — OSINT tool: PhishingSecLists.
+- **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
 - **`pidgin`** (low) — OSINT tool: Pidgin.
 - **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (low) — A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journal

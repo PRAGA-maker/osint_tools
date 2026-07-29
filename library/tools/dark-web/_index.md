@@ -62,7 +62,7 @@ kind: group-index
 - **`north-american-sic-structure-united-states`** (medium) — Use when you have a SIC `document-id` code (or an industry name) and want to decode the industrial sector — returns the classified industry/
 - **`onion-engine`** (low) — OSINT tool: Onion Engine.
 - **`onion-land`** (low) — Use when you have a `username`, `email`, keyword or vendor name and want to find where it appears on Tor/I2P dark-web sites — returns .onion
-- **`onion-search-engine`** (low) — OSINT tool: Onion search engine.
+- **`onion-search-engine`** (low) — Use when you have a `username`/`email`/keyword and want to search Tor `.onion` content from the clearnet without running Tor — returns dark-
 - **`onions-darknetlive`** (low) — Use when you need current, curated `.onion` addresses for darknet markets and forums — returns verified onion `domain` links to reach dark-w
 - **`onionsearch`** (low) — Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URL
 - **`osint-me-1`** (low) — Use when you have a `username`/`email` and want a vetted starting list of Tor onion indexers, leak archives, and dark-web news to search for
@@ -88,7 +88,7 @@ kind: group-index
 - **`the-hidden-wiki`** (low) — Use when you have a dark-web investigation and want a starting directory of Tor .onion services — returns categorised links to onion sites (
 - **`tool-path`** (low) — OSINT tool: Tool \| path.
 - **`top-guns`** (low) — OSINT tool: Top Guns.
-- **`tor-link`** (low) — OSINT tool: tor.link.
+- **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
 - **`tor-mail`** (low) — OSINT tool: Tor Mail.
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
 - **`torbox`** (low) — OSINT tool: TorBox.

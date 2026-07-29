@@ -34,7 +34,7 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 17 skill(s) below.
+- **`reputation/`** — 16 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
@@ -113,7 +113,7 @@ kind: group-index
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
-- **`cookieserve-com`** (low) — detailed website cookie analyze
+- **`cookieserve-com`** (low) — Use when you have a `domain` and want an itemized audit of the cookies and trackers it sets — returns tracker/third-party `domain` links for
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
 - **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
 - **`cqcounter-site-info`** (medium) — Use when you have a `domain` or `ip-address` and want a quick one-page infrastructure and traffic snapshot — returns WHOIS, DNS, reverse-IP,
