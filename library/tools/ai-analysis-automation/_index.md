@@ -148,7 +148,7 @@ kind: group-index
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
 - **`gitpod-io`** (low) — run code from repositories on Github directly in a browser
 - **`glit`** (low) — OSINT tool: Glit.
-- **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
+- **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
 - **`gnu-pg`** (low) — OSINT tool: GNU PG.
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr

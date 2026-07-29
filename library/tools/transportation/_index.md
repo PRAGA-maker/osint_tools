@@ -131,7 +131,7 @@ kind: group-index
 - **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
 - **`partial-number-plate-search`** (medium) — Use when you have only part of a UK `vehicle-plate` (from a witness or dashcam) and want to shortlist the full plate — narrow candidates wit
 - **`passenger-airlines-wiki`** (low) — Use when you have an airline `name`, IATA/ICAO code, or callsign and want to resolve it to its country, hub and operating status — returns g
-- **`plane-finder`** (low) — OSINT tool: Plane Finder.
+- **`plane-finder`** (low) — Use when you have a flight number, aircraft registration, or `geolocation` and want live/historical ADS-B flight tracking — returns geolocat
 - **`planefinder-army-live-flight-tracker`** (low) — Use when you have an aircraft callsign, registration or want to watch military/"ARMY" flights live — returns real-time position, altitude, r
 - **`planefinder`** (low) — Use when you have a flight number, callsign, or aircraft registration and want its live/historical position — returns real-time `geolocation
 - **`planespotters-net`** (medium) — Use when you have an aircraft registration/tail number (read off a photo) or an operator name and want the airframe's full operator history 
@@ -163,7 +163,7 @@ kind: group-index
 - **`shipspotting-live-ais`** (medium) — Use when you have a vessel name/IMO or a ship photo and want vessel identification and imagery — returns ship photos, vessel details, and ph
 - **`skyscanner-travel-search-engine`** (medium) — Use when you have a `geolocation` route and want travel-feasibility context — returns flight/route options, dates, prices, and carriers to c
 - **`skyscanner`** (medium) — Use when you have an origin/destination and dates and want to know which flights, routes, and airlines connect them — returns schedules, car
-- **`skyvector`** (low) — tool is designed for planning private flights. And you can find an incredible amount of data about the current situation in the sky on it
+- **`skyvector`** (low) — Use when you have a `geolocation`, airport code, or navaid and want free aeronautical charts, airport data and flight-planning info — return
 - **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
 - **`submarinecablemap-com`** (low) — submarine communications cables map

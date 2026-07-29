@@ -96,7 +96,7 @@ kind: group-index
 - **`censys-certificates`** (low) — OSINT tool: Censys Certificates.
 - **`censys-ipv4`** (low) — Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, 
 - **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
-- **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
+- **`cert4recon`** (low) — Use when you have a `domain` and want fast passive subdomain enumeration from certificate-transparency logs (crt.sh) — returns domain (subdo
 - **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me

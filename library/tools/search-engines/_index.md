@@ -384,7 +384,6 @@ kind: group-index
 - **`metager-privacy-protected-search`** (medium) — Use when you have a `name`, `username`, or `email` and want web results from a privacy-preserving metasearch that blends several engines — r
 - **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
-- **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
 - **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
 - **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
 - **`mindmap-search-engine`** (medium) — Use when you want an alternate scoped Google search to broaden a query — returns web `social-profile` / `domain` links (scope is opaque, tes

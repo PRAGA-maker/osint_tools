@@ -333,7 +333,7 @@ kind: group-index
 - **`safari`** (low) — OSINT tool: Safari.
 - **`safetydetective-security-tools`** (low) — Use when you want a curated list of free consumer security/privacy tools (antivirus, VPN, password, breach checks) to harden your own OSINT 
 - **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
-- **`scamwatch`** (low) — Australian government website for information on scams
+- **`scamwatch`** (low) — Use when you have a suspected scam, scam phone/email, or fraud pattern and want Australia's official guidance, scam-type reference and repor
 - **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
@@ -444,7 +444,7 @@ kind: group-index
 - **`video-downloadhelper`** (low) — Use when you need to preserve a `social-profile` video or streamed clip as evidence before it's deleted — a browser extension that downloads
 - **`view-exif-data-online-remove-exif-online`** (low) — Use when you have an `image` and want to read its EXIF metadata (camera, timestamp, GPS on a map) or strip EXIF before sharing — returns met
 - **`vin-generator`** (low) — Use when building a sock-puppet persona and you need a plausible-looking `vin` for a fictional vehicle — returns a format-valid, fake vehicl
-- **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed
+- **`visual-ping-extension-chrome`** (low) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns change-detection alerts (social-prof
 - **`vivaldi`** (low) — Use when you need a compartmentalized investigation browser — returns isolated, tab-tiled sock-puppet sessions for viewing target `social-pr
 - **`voicebooking`** (low) — fake voice generator
 - **`vpn-for-beginners`** (low) — Beginners guide to VPN by Best VPN

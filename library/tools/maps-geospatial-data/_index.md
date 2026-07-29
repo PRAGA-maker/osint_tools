@@ -64,7 +64,7 @@ kind: group-index
 - **`landmark-toolpie-com`** (medium) — Use when you have an `image` showing a recognizable landmark and want to identify it — returns the landmark's name and `geolocation`/`addres
 - **`live-map-of-london-underground-trains`** (low) — Use when you need near-real-time positions of London Underground trains to reason about a `geolocation` or timing on the Tube network — retu
 - **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
-- **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
+- **`locust-hub`** (low) — Use when you have a `geolocation` in the desert-locust belt and want FAO survey/swarm data and maps for tracking infestations — returns geol
 - **`manhole-co-il`** (low) — Use when you have an `image` or `geolocation` and want to identify a manhole/utility cover's origin — returns geolocation clues (country/cit
 - **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th
 - **`mapa-sk`** (low) — Mapping service for Slovakia
