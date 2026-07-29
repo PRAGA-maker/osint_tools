@@ -624,7 +624,7 @@ kind: group-index
 - **`twitch-stream-filter`** (medium) — Use when you want to find live Twitch streams by criteria — title, game, language, viewer count, broadcaster type — returns `social-profile`
 - **`twitch-tools-lolarchiver-com`** (high) — Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, 
 - **`twitch-tools-rootonline-de`** (high) — Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filt
-- **`twitch-tools`** (low) — OSINT tool: Twitch Tools.
+- **`twitch-tools`** (low) — Use when you have a Twitch `username`/channel and want to enumerate its followers, following, emotes, clips, VODs and moderation footprint —
 - **`twitch-username-and-user-id-addons-mozilla-org`** (medium) — Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames
 - **`twitch-username-search`** (low) — OSINT tool: Twitch Username Search.
 - **`twitchmetrics-net`** (low) — Use when you have a Twitch `username` and want their channel stats, growth history, games played and rankings — returns social-profile conte

@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7272 total · 5491 full · 1781 stub (75% enriched)
+**Tools:** 7271 total · 5498 full · 1773 stub (75% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3301 · medium: 2007 · high: 1964
+low: 3300 · medium: 2007 · high: 1964
 
 ## Tools by trust
-community: 3464 · unverified: 1965 · trusted: 1834 · untrustworthy: 6 · personal: 3
+community: 3462 · unverified: 1962 · trusted: 1838 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
@@ -19,24 +19,24 @@ community: 3464 · unverified: 1965 · trusted: 1834 · untrustworthy: 6 · pers
 - `communities-forums` — 244/286
 - `dark-web` — 50/101
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 120/286
-- `domains-ip-infrastructure` — 383/659
+- `documents-metadata` — 120/285
+- `domains-ip-infrastructure` — 384/659
 - `email` — 246/246
 - `evidence-capture` — 18/29
-- `financial-crypto` — 72/98
-- `geolocation` — 301/336
+- `financial-crypto` — 73/98
+- `geolocation` — 302/336
 - `image-video-face` — 446/451
-- `maps-geospatial-data` — 97/123
+- `maps-geospatial-data` — 98/123
 - `messaging` — 181/184
 - `opsec-investigator-tooling` — 144/503
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 902/998
+- `public-records` — 903/998
 - `search-engines` — 544/755
-- `social-networks` — 743/776
+- `social-networks` — 744/776
 - `training-ctf` — 6/12
 - `translation-language` — 39/94
-- `transportation` — 149/202
+- `transportation` — 150/202
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -51,7 +51,7 @@ community: 3464 · unverified: 1965 · trusted: 1834 · untrustworthy: 6 · pers
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 283 leaves
 - `library/tools/people-search` — 247 leaves
-- `library/tools/documents-metadata` — 241 leaves
+- `library/tools/documents-metadata` — 240 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 184 leaves
 - `library/tools/messaging` — 169 leaves

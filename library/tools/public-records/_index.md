@@ -294,7 +294,7 @@ kind: group-index
 - **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
 - **`federal-corporation-search-canada`** (medium) — Use when you have a Canadian company/business `name` or a person's `name` and want federally-incorporated company records and directors — re
 - **`federal-court`** (high) — Use when you have a `name` and want to find Federal Court of Canada judgments and orders naming that party — returns case decisions, docket/
-- **`federalcorporation`** (low) — OSINT tool: FederalCorporation.
+- **`federalcorporation`** (low) — Use when you have a `name` or `employer-org` and want Canadian federal corporation records — directors, addresses, and same-director company
 - **`felon-spy`** (low) — Do NOT use — a documented hoax that returns randomly-generated fake "criminal neighbor" data; it identifies no real person and has no OSINT 
 - **`filae-com`** (high) — Use when you have a `name` and want French civil/genealogical records (births, marriages, deaths, census) — returns dob/dates, places (addre
 - **`finance-ni-gov-uk`** (high) — Use when you have a Northern Ireland property `address` and want its official valuation/rating record — returns the property's capital value

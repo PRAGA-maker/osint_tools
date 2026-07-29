@@ -105,7 +105,7 @@ kind: group-index
 - **`resource-watch`** (low) — Use when you have a `geolocation` and want environmental/human-wellbeing context layers (fires, floods, land cover, air quality, conflict) —
 - **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow
 - **`somerandomstuff1-wordpress-com`** (medium) — Use when you have an `image`/street-scene and need to place it — returns a methodology (`geolocation` clues) for reading plates, road markin
-- **`species-plus`** (low) — Centralized website with vulnerable species information.
+- **`species-plus`** (low) — Use when you have a species name and want its CITES/CMS legal-protection, trade-control and country-distribution status — returns geolocatio
 - **`strava`** (low) — Use when you have a `name`/`username` or a location of interest and want exercise-route patterns — returns public activities, segments and h
 - **`tencent-maps`** (low) — Use when you have an `address`/`geolocation` in China and want local maps, satellite and street-level imagery — returns Chinese-optimized `g
 - **`terra-server`** (medium) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery and topo maps — free to search and view online, paid to downlo

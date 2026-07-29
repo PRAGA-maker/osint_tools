@@ -80,7 +80,6 @@ kind: group-index
 - **`doppelme`** (low) — Online avatar creator
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
 - **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
-- **`edocr`** (low) — Presentation management website that allows EDoc and EFile sharing
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
 - **`engadget`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of technology
 - **`engage121`** (low) — Website offering social media content and publishing services

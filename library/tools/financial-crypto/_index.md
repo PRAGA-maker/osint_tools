@@ -54,7 +54,7 @@ kind: group-index
 - **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
 - **`csol-ie`** (medium) — Use when you have a `name` and want to check Ireland's public bankruptcy register — returns bankruptcy status, address and adjudication deta
 - **`economy-ni-gov-uk`** (medium) — Use when you have a `name` and want to check Northern Ireland's official register of Debt Relief Orders and Bankruptcy Restrictions Orders —
-- **`edgar-command-line-interface-edgar-tool`** (low) — Tool for the retrieval of corporate and financial data from SEC's EDGAR (Electronic Data Gathering, Analysis, and Retrieval) database.
+- **`edgar-command-line-interface-edgar-tool`** (low) — Use when you have a `name`, company, or ticker and want to pull or monitor SEC EDGAR filings from the command line — returns employer-org, a
 - **`edgar`** (medium) — Use when you have a `name` or company (`employer-org`) and want US SEC filings — returns officers, insiders, ownership and `associate` links
 - **`etherscan-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address and want its full on-chain history — returns balance, every transaction, token holding
 - **`ethplorer-io`** (medium) — Use when you have an Ethereum `crypto-wallet` address (or a token/contract) and want its balances, token holdings, and transaction counterpa
