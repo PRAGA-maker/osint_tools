@@ -101,7 +101,7 @@ kind: group-index
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
 - **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
-- **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
+- **`check-point-live-cyber-threat-map`** (low) — Use when you want situational awareness of live global attack activity (source/target countries, attack types) — returns a real-time threat 
 - **`checkphishai`** (low) — Use when you have a `domain`/URL and want to detect phishing or typosquats of it — returns scan verdicts, screenshots, and lookalike `domain
 - **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis
@@ -151,7 +151,7 @@ kind: group-index
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
-- **`expandurl`** (low) — URL expander that resolves shortened links to their final destination. Referenced in sinwindie's MISC URL Expander bookmarklet.
+- **`expandurl`** (low) — Use when you have a shortened or suspicious `domain`/link and want its true final destination and redirect chain without clicking it — retur
 - **`expireddomains-net`** (low) — Use when you have a `domain` name or keyword and want to find recently deleted/expired domains and their history/metrics — returns matching 
 - **`fast-google-dorks-scan`** (low) — Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive 
 - **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
@@ -193,7 +193,7 @@ kind: group-index
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
 - **`hexometer-stack-checker`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack — returns the CMS, frameworks, analytics IDs and third-part
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
-- **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
+- **`hosthunter`** (low) — Use when you have one or more `ip-address` targets and want the virtual hostnames served on them — returns discovered FQDNs/hostnames (plus 
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
 - **`httpfy`** (low) — Use when you have a `domain` (or a list of domains) and want fast HTTP fingerprinting — returns which are live plus status, title, server, c
 - **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse

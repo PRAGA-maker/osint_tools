@@ -139,7 +139,7 @@ kind: group-index
 - **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
 - **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations
 - **`inmatrix-zoomplayer`** (low) — Program that (with codex packs) plays all public video formats
-- **`instapaper`** (low) — Website related to a social networking and bookmarking app
+- **`instapaper`** (low) — Use when you have a target `domain`/URL and want to capture its readable text for offline review and evidence-keeping — returns a saved, de-
 - **`intensedebate`** (low) — Website related to the provision of news feeds and comments from other websites
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
 - **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
@@ -212,7 +212,6 @@ kind: group-index
 - **`site-dorks`** (low) — Use when you have a search term (a `name`, email, or keyword) and want to dork it across many curated OSINT sites and multiple engines at on
 - **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
 - **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
-- **`snagit`** (low) — Program that provides screen capture services, currently the best commercial program for this action
 - **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`sourcebot`** (low) — Use when you have a `username` or `email` and want to search across a set of indexed code repositories for leaked identifiers, secrets or au

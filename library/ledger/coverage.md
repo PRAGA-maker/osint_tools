@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7219 total · 5697 full · 1522 stub (78% enriched)
+**Tools:** 7217 total · 5705 full · 1512 stub (79% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3244 · medium: 2011 · high: 1964
+low: 3242 · medium: 2011 · high: 1964
 
 ## Tools by trust
-community: 3451 · trusted: 1891 · unverified: 1871 · untrustworthy: 6
+community: 3451 · trusted: 1892 · unverified: 1868 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 174/420
-- `archives-cache` — 96/117
+- `archives-cache` — 96/116
 - `communities-forums` — 252/286
 - `dark-web` — 54/99
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 135/280
-- `domains-ip-infrastructure` — 429/647
+- `documents-metadata` — 136/279
+- `domains-ip-infrastructure` — 432/647
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 77/95
@@ -28,15 +28,15 @@ community: 3451 · trusted: 1891 · unverified: 1871 · untrustworthy: 6
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 107/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 170/492
+- `opsec-investigator-tooling` — 172/492
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 913/995
-- `search-engines` — 560/748
+- `search-engines` — 561/748
 - `social-networks` — 748/775
 - `training-ctf` — 6/12
 - `translation-language` — 42/94
-- `transportation` — 162/202
+- `transportation` — 163/202
 - `username` — 102/104
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -51,7 +51,7 @@ community: 3451 · trusted: 1891 · unverified: 1871 · untrustworthy: 6
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 283 leaves
 - `library/tools/people-search` — 247 leaves
-- `library/tools/documents-metadata` — 235 leaves
+- `library/tools/documents-metadata` — 234 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 184 leaves
 - `library/tools/messaging` — 169 leaves

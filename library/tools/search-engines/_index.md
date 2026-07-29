@@ -444,7 +444,7 @@ kind: group-index
 - **`open-hub`** (medium) — Use when you have a developer `username`/`name` or an open-source project and want their contribution history — returns linked `social-profi
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
 - **`open-source-intelligence-txuswashere`** (low) — Use when you need to discover OSINT tools and methodologies for a given selector or task — returns a curated reference index of tools/techni
-- **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.
+- **`opendirsearch-abifog-com`** (low) — Use when you have a `name`/keyword and want to find publicly exposed open directories hosting related files (docs, images, media) — returns 
 - **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
 - **`orange-france`** (low) — OSINT tool: Orange (France).
 - **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters

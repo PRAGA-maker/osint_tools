@@ -19,7 +19,7 @@ kind: group-index
 - **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
 - **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr
 - **`airnav-radarbox`** (low) — Live flight tracker.
-- **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
+- **`ais-boatnerd-com`** (low) — Use when you have a Great Lakes vessel name/identifier and want its live position and track — returns real-time AIS `geolocation` for ships 
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
 - **`amtrak-status-maps-archive-database`** (low) — Use when you have an Amtrak train/station and a past date and want the actual historical arrival/departure times — returns geolocation.
 - **`askmid`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm whether that vehicle is insured on the Motor Insurance Database — returns an insu

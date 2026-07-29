@@ -47,7 +47,6 @@ kind: group-index
 - **`feederator`** (low) — OSINT tool: Feederator.
 - **`feedly`** (low) — Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, se
 - **`feedreader`** (low) — Use when you have a subject's blog/site/news `domain` and want to monitor its updates over time — subscribe to its RSS feed and aggregate ne
-- **`fetchrss`** (low) — OSINT tool: FetchRSS.
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or
 - **`followthatpage`** (low) — Use when you have a `domain`/URL you want watched and want email alerts on changes — returns a periodic diff of what text was added or remov
 - **`gau`** (medium) — Use when you have a `domain` and want every URL ever seen for it across web archives — returns a bulk list of historical URLs (`document-id`
