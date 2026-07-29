@@ -482,7 +482,6 @@ kind: group-index
 - **`perplexity`** (low) — Use when you have a natural-language research question about a `name`/entity and want a cited synthesis across the web — returns a summarise
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
-- **`phind`** (low) — OSINT tool: Phind.
 - **`pinterest-trends`** (low) — Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity o
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.

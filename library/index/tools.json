@@ -54,45 +54,6 @@
     "_file": "library/tools/ai-analysis-automation/a1-website-download.md"
   },
   {
-    "id": "abine",
-    "name": "Abine",
-    "description": "OSINT tool: Abine.",
-    "url": "https://www.abine.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "abine-blur-app"
-    ],
-    "_file": "library/tools/ai-analysis-automation/abine.md"
-  },
-  {
     "id": "adium",
     "name": "Adium",
     "description": "OSINT tool: Adium.",
@@ -16760,41 +16721,52 @@
   {
     "id": "virtualbox",
     "name": "VirtualBox",
-    "description": "Desktop and server virtualization; OSINT lab environments",
+    "description": "Use when you need a disposable, isolated virtual machine to run OSINT tooling or open risky files safely — returns a sandboxed OS environment separate from your host.",
     "url": "https://www.virtualbox.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "virtual-machines"
     ],
-    "bestFor": "Desktop and server virtualization; OSINT lab environments",
-    "input": "ISO files, VM disk images (VDI, VMDK, VHD)",
-    "output": "Virtualized OS environment",
+    "bestFor": "Spinning up throwaway, snapshot-able VMs to isolate investigation environments, run Linux OSINT distros, and detonate/inspect suspicious files away from your host.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "No inherent privacy features; privacy depends on guest OS and network configuration",
+    "costNote": "Free and open-source (GPL) from Oracle; the Extension Pack is free for personal/evaluation use. Runs on Windows, macOS, and Linux.",
+    "opsec": "active",
+    "opsecNote": "A defensive/isolation tool for the investigator. Snapshots let you revert after each risky session, and NAT/host-only networking (plus a VPN inside the guest) keep host identity/IP separate. Note the guest still exits via your real connection unless you route it through a VPN/Tor — configure that deliberately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely used Oracle/OSS hypervisor. Trusted software; isolation is only as strong as your network/snapshot configuration.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "tails",
+      "tracelabs-osint-vm",
+      "septor-linux"
+    ],
+    "aliases": [
+      "Oracle VirtualBox",
+      "VBox"
+    ],
+    "tags": [
+      "virtualization",
+      "sandbox",
+      "osint-lab",
+      "Virtual Machines/Linux distributions"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/virtual-machines/virtualbox.md"
   },
   {
@@ -48423,25 +48395,31 @@
   },
   {
     "id": "aware-online",
-    "name": "Aware Online",
-    "description": "OSINT website offering various search tools including reddit search, vimeo search, facebook search, and more.",
+    "name": "Aware Online (OSINT Tools)",
+    "description": "Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct search links into Facebook, Reddit, Vimeo, YouTube, etc.",
     "url": "https://www.aware-online.com/osint-tools/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A free hub of custom search-query tools that turn a username/keyword into ready-made platform searches (Facebook, Reddit, Vimeo, YouTube, image search, and more).",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "The OSINT tools page is free to use (Aware Online also sells paid OSINT training separately). No account needed for the search tools.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tools just build query URLs; the actual searching happens on the destination platform, so treat each pivot with normal platform OpSec (sock-puppet browser, don't log in as yourself). Aware Online itself sees only that you loaded its tool page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Run by Aware Online, a known Dutch OSINT training company; the tools are convenience query-builders over public platform search, reliable as pivots but not a data source themselves.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -48450,15 +48428,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "osint-industries",
+      "whatsmyname",
+      "sherlock"
+    ],
+    "aliases": [
+      "Aware Online OSINT tools",
+      "aware-online.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "osint-toolkit",
+      "social-search",
+      "query-builder"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/aware-online.md"
   },
   {
@@ -71534,42 +71520,54 @@
   {
     "id": "hussh",
     "name": "Hussh",
-    "description": "shell script for domain analyzing",
+    "description": "Use when you have a `domain` and want a one-shot recon sweep — returns subdomains, live hosts, historical URLs, and basic vuln checks compiled into an HTML report.",
     "url": "https://github.com/harshnandwana/hussh",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A wrapper shell script that chains subdomain enumeration, host probing, Wayback URL collection, and spidering into a single automated domain-recon report.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source shell script; no account. Wraps other free tools (sublist3r, subfinder, httprobe, gospider) which must be installed — easiest via the recommended Docker/Kali setup.",
+    "opsec": "active",
+    "opsecNote": "Parts are passive (Wayback/CT queries) but httprobe and gospider actively connect to the target's hosts, generating traffic and logs and possibly tripping WAF/IDS. Run only against domains you're authorised to test, and from a sock-puppet host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small personal GitHub project (low stars, Kali-oriented) that orchestrates well-known tools; convenient but lightly maintained — verify the underlying tools' output rather than trusting the report blindly.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "owasp-amass",
+      "subfinder",
+      "waybackurls"
+    ],
+    "aliases": [
+      "hussh",
+      "harshnandwana/hussh"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "recon-automation",
+      "subdomain-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hussh.md"
   },
   {
@@ -79588,47 +79586,56 @@
   {
     "id": "owasp-amass",
     "name": "OWASP Amass",
-    "description": "The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.",
+    "description": "Use when you have a `domain` and want its full external attack surface — returns subdomains, associated IPs, ASNs, and related infrastructure via passive and active reconnaissance.",
     "url": "https://github.com/OWASP/Amass",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Deep subdomain enumeration and external asset/infrastructure mapping for a domain, aggregating dozens of OSINT sources plus optional active DNS.",
     "selectorsIn": [
-      "domain",
-      "face",
-      "image"
-    ],
-    "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Apache-2.0), maintained under OWASP. CLI; some data sources yield more with free API keys, but core use needs none.",
+    "opsec": "active",
+    "opsecNote": "Amass has a passive mode (queries third-party sources only — no target contact) and an active mode (DNS resolution, brute force, zone transfers that touch the target and its resolvers). Use passive for stealth; run active enumeration from a sock-puppet host and only against domains you're authorised to probe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The flagship OWASP asset-discovery project; widely used and community-audited. Aggregated results still include stale/dead subdomains — resolve before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "subfinder",
+      "crt-sh",
+      "hosthunter",
       "owasp-d4n155"
     ],
+    "aliases": [
+      "Amass",
+      "OWASP Amass"
+    ],
+    "tags": [
+      "Domain/IP/Links",
+      "subdomain-enumeration",
+      "attack-surface"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/owasp-amass.md"
   },
   {
@@ -173838,38 +173845,55 @@
   },
   {
     "id": "generate-data",
-    "name": "Generate Data",
-    "description": "Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or JavaScript (PHP, TypeScript, Python) arrays.",
+    "name": "Generate Data (generatedata.com)",
+    "description": "Use when you need realistic filler data to flesh out a sock-puppet persona or test a workflow — returns bulk fake names, emails, addresses, phones, etc. in CSV/JSON/SQL/XML.",
     "url": "https://generatedata.com/generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating plausible fake identity fields (names, addresses, phones, emails, dates) in bulk to populate sock-puppet personas or seed test datasets.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to use in-browser (open-source; self-hostable). A low-cost paid tier / donation unlocks larger row counts and extra features, but the free tier covers persona-scale needs.",
+    "opsec": "passive",
+    "opsecNote": "A defensive/tooling utility — it invents data, querying no target and exposing nothing about a subject. Use it to give sock puppets consistent, believable filler details. Never present generated data as if it were a real person's information, and don't use fake identities for fraud.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular long-running open-source data generator; reliable for what it is. Output is random filler — realistic-looking but meaningless, and combinations (name+address) are not real people.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fake-name-generator",
+      "this-person-does-not-exist"
+    ],
+    "aliases": [
+      "generatedata.com",
+      "generatedata"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "fake-data",
+      "persona-building"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/generate-data.md"
   },
   {
@@ -217558,48 +217582,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/public-records/companies-and-orgs-search-engine.md"
-  },
-  {
-    "id": "companies-house",
-    "name": "Companies House",
-    "description": "Looking up UK company details, officers, and filing history",
-    "url": "https://find-and-update.company-information.service.gov.uk/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "kyc-aml-tools"
-    ],
-    "bestFor": "Looking up UK company details, officers, and filing history",
-    "input": "Company name, company number, or officer name",
-    "output": "Company profiles, registered addresses, officer appointments, filing history, and document images",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public UK government service; searches are passive lookups against an open register.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/kyc-aml-tools/companies-house.md"
   },
   {
     "id": "companies-in-the-uk",
@@ -286742,42 +286724,6 @@
     "_file": "library/tools/search-engines/ph055a-osint-collection.md"
   },
   {
-    "id": "phind",
-    "name": "Phind",
-    "description": "OSINT tool: Phind.",
-    "url": "https://www.phind.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "general-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/phind.md"
-  },
-  {
     "id": "pinterest-trends",
     "name": "Pinterest Trends",
     "description": "Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity over time by region (topic-level, not person-level).",
@@ -309563,28 +309509,25 @@
   {
     "id": "githut",
     "name": "GitHut",
-    "description": "GitHub statistics and programming language visualizations.",
+    "description": "Use when you want context on programming-language popularity/activity across GitHub — returns an interactive dashboard of language trends, not any per-person lookup.",
     "url": "https://githut.info",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Viewing aggregate GitHub language statistics",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "bestFor": "A reference dashboard of programming-language usage/activity trends on GitHub — background context, not an investigative lookup.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public visualization; no account. Data derived from GitHub Archive, refreshed roughly quarterly.",
+    "opsec": "passive",
+    "opsecNote": "A static aggregate dashboard — you enter no subject data and reveal nothing. Only your own visit is seen by the site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community data-viz project over GitHub Archive; accurate as an aggregate trend snapshot, but it is not a tool for investigating any individual developer or repo.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -309593,14 +309536,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "github-search"
+    ],
+    "aliases": [
+      "GitHut",
+      "githut.info"
+    ],
     "tags": [
       "github",
-      "statistics"
+      "statistics",
+      "data-viz"
     ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "metaosint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/githut.md"
   },
   {

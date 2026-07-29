@@ -153,7 +153,7 @@ kind: group-index
 - **`free-fax`** (low) — Use when an investigation step requires sending a fax — e.g. a records/FOIA request to an agency that only accepts fax — and you want to do 
 - **`free-proxy-world`** (low) — Use when you want a quick list of free public HTTP/SOCKS proxies filtered by country, anonymity and type — returns proxy `ip-address`:port e
 - **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
-- **`generate-data`** (low) — Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or Java
+- **`generate-data`** (low) — Use when you need realistic filler data to flesh out a sock-puppet persona or test a workflow — returns bulk fake names, emails, addresses, 
 - **`generate-sa-id-numbers`** (low) — Use when you have a `dob` (and gender/citizenship) and want to construct or sanity-check the structure of a South African national ID number
 - **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`geotagonline`** (low) — Use when you have a JPG `image` and a `geolocation` and want to write (or read/overwrite) the EXIF GPS tag — returns the photo with `metadat

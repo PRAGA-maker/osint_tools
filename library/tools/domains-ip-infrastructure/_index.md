@@ -197,7 +197,7 @@ kind: group-index
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
 - **`httpfy`** (low) — Use when you have a `domain` (or a list of domains) and want fast HTTP fingerprinting — returns which are live plus status, title, server, c
 - **`hurricane-electric-internet-services`** (medium) — Use when you have an `ip-address`, `domain` or ASN and want its network context — returns the owning ASN, announced prefixes, peers, reverse
-- **`hussh`** (low) — shell script for domain analyzing
+- **`hussh`** (low) — Use when you have a `domain` and want a one-shot recon sweep — returns subdomains, live hosts, historical URLs, and basic vuln checks compil
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
 - **`hypestat`** (low) — Use when you have a `domain` and want a free at-a-glance stats sheet — returns estimated traffic, hosting/`ip-address`, tech, and analytics/
 - **`iana-root-zone-database`** (low) — Use when you have a `domain`'s TLD and want the authoritative registry/sponsoring organization behind it — returns the TLD operator (`employ
@@ -315,7 +315,7 @@ kind: group-index
 - **`oralyzer`** (low) — Use when you have a `domain`/URL with redirect parameters and want to test for open-redirect flaws — returns which parameters are exploitabl
 - **`orb`** (low) — Use when you have a `domain` and want a broad automated footprint — one CLI run gathers WHOIS, subdomains, DNS records, and (active) port/se
 - **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
-- **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
+- **`owasp-amass`** (low) — Use when you have a `domain` and want its full external attack surface — returns subdomains, associated IPs, ASNs, and related infrastructur
 - **`ozspeedtest-australia`** (medium) — Use when you want your own connection's `ip-address` and a broadband speed test from Australian servers — primarily a speed test with a basi
 - **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer

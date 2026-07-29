@@ -36,7 +36,7 @@ kind: group-index
 - **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
-- **`aware-online`** (low) — OSINT website offering various search tools including reddit search, vimeo search, facebook search, and more.
+- **`aware-online`** (low) — Use when you have a `username`, `name`, or keyword and want quick pre-built search queries across social/media platforms — returns direct se
 - **`awesome-indexed`** (low) — OSINT tool: Awesome-indexed.
 - **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses

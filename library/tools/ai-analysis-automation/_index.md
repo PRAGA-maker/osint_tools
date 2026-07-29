@@ -16,7 +16,6 @@ kind: group-index
 
 ## Skills here
 - **`a1-website-download`** (low) — Use when you have a `domain`/URL and want a complete offline mirror of a site for preservation and analysis — returns document-id, image, me
-- **`abine`** (low) — OSINT tool: Abine.
 - **`adium`** (low) — OSINT tool: Adium.
 - **`advanced-search-operators-list`** (low) — Use when you need the correct advanced-search / dork syntax for a specific service (Google, Gmail, Twitter, GitHub, Shodan…) — returns links
 - **`aeon`** (low) — OSINT tool: Aeon.

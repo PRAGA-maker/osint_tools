@@ -7,7 +7,6 @@ kind: group-index
 # public-records/kyc-aml-tools
 
 ## Skills here
-- **`companies-house`** (low) — Looking up UK company details, officers, and filing history
 - **`namescan`** (low) — Use when you have a `name` (person or business) and want to check it against global sanctions, PEP and adverse-media lists — returns match f
 - **`openscreening`** (low) — Visualizing connections between sanctioned entities, PEPs, and offshore structures
 

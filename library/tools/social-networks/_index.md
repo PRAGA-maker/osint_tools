@@ -207,7 +207,7 @@ kind: group-index
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
 - **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r
 - **`githubrecon`** (medium) — Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (in
-- **`githut`** (low) — GitHub statistics and programming language visualizations.
+- **`githut`** (low) — Use when you want context on programming-language popularity/activity across GitHub — returns an interactive dashboard of language trends, n
 - **`gitleak`** (medium) — Use when you have a GitHub `username` and want the email address(es) they used to author commits — returns `email` (and thereby a real-name 
 - **`gitsome`** (medium) — Use when you have an `email`, `username`/org, or `domain` and want to pivot through GitHub — extracts commit emails, maps emails to GitHub a
 - **`gitstar-ranking`** (medium) — Use when you have a GitHub `username` or org and want to gauge its prominence and footprint — returns global star rank, repositories, and th
