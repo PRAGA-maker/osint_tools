@@ -4967,37 +4967,44 @@
   {
     "id": "filevault",
     "name": "FileVault",
-    "description": "OSINT tool: FileVault.",
+    "description": "Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec control, not a selector lookup.",
     "url": "https://support.apple.com/en-us/HT204837",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Full-disk encryption of the investigator's own Mac to protect stored case material.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Built into macOS at no cost; no download or account required.",
+    "opsec": "passive",
+    "opsecNote": "This protects YOUR data, not a target's. Enabling it encrypts the whole startup disk with a key tied to your login/recovery key — store the recovery key offline; losing it means permanent data loss. It leaks nothing about anyone and is purely defensive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "First-party Apple full-disk encryption (XTS-AES-128) documented on Apple Support; the reference standard for Mac at-rest protection.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Apple FileVault",
+      "macOS full-disk encryption"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/filevault.md"
   },
   {
@@ -41124,48 +41131,6 @@
     "_file": "library/tools/dark-web/pastebin-bisque.md"
   },
   {
-    "id": "pathfinder",
-    "name": "Pathfinder",
-    "description": "OSINT tool: Pathfinder.",
-    "url": "http://euqrjceb3fa3o2rxjuqqkx76qjreqjlvtidfpgfyv6cd4z22hybnccyd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/pathfinder.md"
-  },
-  {
     "id": "peoples-drug-store",
     "name": "Peoples Drug Store",
     "description": "OSINT tool: Peoples Drug Store.",
@@ -49004,41 +48969,49 @@
   {
     "id": "bubbl-us-online-flow-chart-tool",
     "name": "Bubbl.us Online Flow Chart Tool",
-    "description": "Tool for creating online flow charts using linked bubbles",
+    "description": "Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produces a shareable relationship diagram, not new selector data.",
     "url": "https://bubbl.us",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Quick browser-based mind-mapping of people/entity relationships for link analysis.",
+    "selectorsIn": [
+      "associate"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows a small number of saved mind maps; paid plans unlock unlimited maps, image export, and collaboration.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You type your own findings into a third-party web app, so case data leaves your machine and sits on Bubbl.us servers — keep real names/identifiers out of it (use pseudonyms/codes) for sensitive investigations, and prefer an offline tool for anything protected.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Generic third-party diagramming SaaS; it stores whatever you enter and makes no investigative claims of its own.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Bubbl.us"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "link-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/bubbl-us-online-flow-chart-tool.md"
   },
   {
@@ -49975,41 +49948,47 @@
   {
     "id": "cute-pdf-writer-program",
     "name": "Cute PDF Writer Program",
-    "description": "Program that allows you to create PDF format documents",
+    "description": "Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `document-id` (PDF) exhibit.",
     "url": "http://www.cutepdf.com/Products/CutePDF/writer.asp",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Printing any viewable page or document to a stable PDF exhibit on Windows.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "CutePDF Writer (basic PDF creation) is free; CutePDF Pro (editing, forms, security) is paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs entirely locally as a Windows print driver — it sends nothing to a network and reveals nothing about a target. It captures whatever is on screen, so scrub your own username/paths from headers before filing the output as an exhibit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-standing third-party Windows utility (Acro Software); free version bundles/prompts for a converter dependency (Ghostscript). Vet the installer.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CutePDF Writer"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "evidence-capture"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/cute-pdf-writer-program.md"
   },
   {
@@ -55453,41 +55432,53 @@
   {
     "id": "microsoft-office-online",
     "name": "Microsoft Office Online",
-    "description": "Website for Microsoft Office Online that offers collaboration services, including access to free template documents",
+    "description": "Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — returns embedded `metadata-exif` and author `name` fields.",
     "url": "https://www.office.com/start/default.aspx",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Opening and reading Office documents (and their properties) in a sandboxed browser without local software.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tier (Office on the web) with a Microsoft account; desktop Microsoft 365 is a separate paid product.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Uploading a target's document to Microsoft's cloud sends its contents to a third party and may leave a copy in your OneDrive. For sensitive evidence prefer an offline viewer; when you do use it, work from a sock-puppet Microsoft account, not your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft service; renders documents faithfully and exposes the same document properties as desktop Office.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Office on the web",
+      "Office.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "document-metadata"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/microsoft-office-online.md"
   },
   {
@@ -89669,7 +89660,13 @@
     "registration": false,
     "relatedTools": [
       "central-ops",
-      "osint-toolkit"
+      "osint-toolkit",
+      "bookmarks",
+      "document-search",
+      "google-and-bing",
+      "instagram-reddit-and-snapchat",
+      "twitter-monitoring",
+      "youtube-periscope-twitch-and-dailymotion"
     ],
     "aliases": [
       "WebsiteInformation toolkit"
@@ -105655,35 +105652,49 @@
   {
     "id": "imgur-album-downloader",
     "name": "Imgur Album Downloader",
-    "description": "OSINT tool: Imgur Album Downloader.",
+    "description": "Use when you have an Imgur `social-profile`/album link and want to bulk-save every image for offline evidence — returns `image` files plus any embedded `metadata-exif`.",
     "url": "https://dschep.github.io/imgur-album-downloader/#/",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-click bulk download of an entire Imgur album or user gallery for preservation.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source (client-side web app and original Python CLI); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Downloads run against Imgur's public CDN; you never authenticate as the target. Fetch through a sock-puppet browser/VPN so the album owner cannot correlate a burst of image requests to you, and preserve originals with hashes before annotating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community project by Daniel Schep (dschep) on GitHub; a thin client over Imgur's own public endpoints, so no third-party data-quality risk.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "dschep imgur album downloader"
+    ],
+    "tags": [
+      "evidence-capture",
+      "imgur",
+      "image-download"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/imgur-album-downloader.md"
   },
   {
@@ -171409,40 +171420,49 @@
   {
     "id": "deep-face-live",
     "name": "Deep Face Live",
-    "description": "Real-time face swap for streaming and video calls",
+    "description": "Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a synthetic on-camera `face`.",
     "url": "https://github.com/iperov/DeepFaceLive",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Disguising the investigator's own face on live video calls or streams during undercover contact.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "face"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0), pre-built portable Windows releases; requires a capable GPU. Repo archived (read-only) Nov 2024 but downloads still work.",
+    "opsec": "passive",
+    "opsecNote": "This is a defensive/own-opsec tool — it alters YOUR outbound camera feed, it does not touch the target. Never present a swapped face as a real person's likeness (impersonation/fraud risk); use it only to avoid disclosing your true face during authorised undercover work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community deepfake project (iperov); archived and unmaintained. Vet the binary and run it isolated — no data-quality guarantees.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DeepFaceLive"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "opsec",
+      "deepfake"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/deep-face-live.md"
   },
   {
@@ -210935,37 +210955,51 @@
   {
     "id": "aiddata",
     "name": "AidData",
-    "description": "OSINT tool: AidData.",
+    "description": "Use when you have an `employer-org`, country, or funder `name` and want to map its international development-finance flows and counterparties — returns linked `employer-org` and `associate` entities.",
     "url": "http://aiddata.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracing who financed what, where, and for whom across global development and Chinese overseas lending.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public research datasets and dashboards; bulk data downloadable at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit a public academic research portal; no login and nothing about your subject is disclosed to the site. Standard passive research — still browse behind a VPN if the target is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Research lab at William & Mary; datasets are peer-reviewed, methodologically documented, and widely cited in academic and policy work.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "AidData W&M",
+      "China.AidData.org"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "development-finance",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/aiddata.md"
   },
   {
@@ -276631,42 +276665,6 @@
     "_file": "library/tools/search-engines/grey-literature-list-of-gateways.md"
   },
   {
-    "id": "grey-literature-strategies",
-    "name": "Grey Literature Strategies",
-    "description": "OSINT tool: Grey Literature Strategies.",
-    "url": "http://greylitstrategies.info",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/grey-literature-strategies.md"
-  },
-  {
     "id": "greynet-international",
     "name": "GreyNet International",
     "description": "OSINT tool: GreyNet International.",
@@ -324042,28 +324040,29 @@
   {
     "id": "redditp-reddtip",
     "name": "redditp (reddtip)",
-    "description": "Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).",
+    "description": "Use when you have a Reddit `username` (or subreddit) and want to rapidly triage their image submissions in a slideshow — returns the subject's posted `image` set.",
     "url": "https://www.redditp.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Browsing image-heavy subreddits in slideshow form",
+    "bestFor": "Fast slideshow review of every image a Reddit user or subreddit has posted.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source web viewer; no account needed to browse public content.",
+    "opsec": "passive",
+    "opsecNote": "Reads only public Reddit content and requires no login, so nothing links the viewing to you — but it renders full-resolution images from Reddit's CDN, so browse behind a VPN/sock-puppet if you are reviewing a live target's feed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source community viewer (ubershmekel) sitting on top of Reddit's public JSON; it reformats content it does not host, so no independent data claims.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -324080,8 +324079,8 @@
       "image-viewer"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/redditp-reddtip.md"
   },
   {

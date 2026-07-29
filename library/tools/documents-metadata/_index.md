@@ -45,7 +45,7 @@ kind: group-index
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
-- **`bubbl-us-online-flow-chart-tool`** (low) — Tool for creating online flow charts using linked bubbles
+- **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
 - **`bubbly`** (low) — A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their a
 - **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
@@ -68,7 +68,7 @@ kind: group-index
 - **`copypastecharacter`** (low) — Website that offers multiple sets of characters and symbols for cutting and pasting into documents or slides
 - **`crowdriff`** (low) — Visual marketing software platform
 - **`crowdspring`** (low) — Project outsourcing website
-- **`cute-pdf-writer-program`** (low) — Program that allows you to create PDF format documents
+- **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
 - **`cylect-io`** (low) — An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
 - **`de-digger`** (low) — OSINT tool: de digger.
@@ -169,7 +169,7 @@ kind: group-index
 - **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
 - **`mendeley-academic-research-manager`** (low) — Academic-related research manager allowing the colloboration and sharing of data online
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
-- **`microsoft-office-online`** (low) — Website for Microsoft Office Online that offers collaboration services, including access to free template documents
+- **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
 - **`mp3juices`** (low) — Website that offers services related to downloading and saving audio files from a video
 - **`mutagen`** (low) — get meta data of audiofiles thrue command line

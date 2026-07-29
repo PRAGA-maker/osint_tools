@@ -133,7 +133,7 @@ kind: group-index
 - **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
 - **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
-- **`filevault`** (low) — OSINT tool: FileVault.
+- **`filevault`** (low) — Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec co
 - **`find-osint-tool`** (low) — OSINT tool: Find osint tool.
 - **`flot`** (low) — OSINT tool: Flot.
 - **`fotor`** (low) — OSINT tool: Fotor.

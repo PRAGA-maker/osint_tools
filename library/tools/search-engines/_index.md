@@ -282,7 +282,6 @@ kind: group-index
 - **`grayhatwarfare`** (medium) — Use when you have a `name`, `email`, or `domain` and want to find files a target accidentally exposed in misconfigured public cloud buckets 
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
-- **`grey-literature-strategies`** (low) — OSINT tool: Grey Literature Strategies.
 - **`greynet-international`** (low) — OSINT tool: GreyNet International.
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,

@@ -72,7 +72,6 @@ kind: group-index
 - **`osint-me-3`** (low) — OSINT tool: osint.me 3.
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Command line #python tool, which downloads all the pastes of a particular #Pastebin user.
-- **`pathfinder`** (low) — OSINT tool: Pathfinder.
 - **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
 - **`pirate-bay`** (low) — OSINT tool: Pirate Bay.
 - **`pitch`** (low) — OSINT tool: Pitch.

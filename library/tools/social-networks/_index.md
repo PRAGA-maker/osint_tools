@@ -451,7 +451,7 @@ kind: group-index
 - **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
 - **`redditery`** (low) — Use when you have a subreddit or topic and want a fast full-screen gallery interface to browse Reddit content — returns an image/media-forwa
 - **`redditle-com`** (medium) — Use when you have a `username`, `name`, or topic and want to search Reddit cleanly — returns Reddit posts, comments, and social-profile lead
-- **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
+- **`redditp-reddtip`** (low) — Use when you have a Reddit `username` (or subreddit) and want to rapidly triage their image submissions in a slideshow — returns the subject
 - **`redditsave-com`** (low) — Use when you have a Reddit post URL (a `social-profile`) and want to preserve its video — returns a downloadable MP4 with audio for evidence
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.

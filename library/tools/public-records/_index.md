@@ -42,7 +42,7 @@ kind: group-index
 - **`advanced-registry-search`** (low) — Use when you have a `name` or `employer-org` and want to see federal lobbying registrations, clients, and lobbied officials in Canada — retu
 - **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
-- **`aiddata`** (low) — OSINT tool: AidData.
+- **`aiddata`** (low) — Use when you have an `employer-org`, country, or funder `name` and want to map its international development-finance flows and counterpartie
 - **`akp-email-database`** (medium) — Use when you have a `name`, `email`, or keyword tied to Turkey's AKP party and want leaked emails — returns messages, senders/recipients, an
 - **`alabama-deaths`** (medium) — Use when you have a `name` and want an Alabama death record (1908–1974) — returns dob, address, and associate (next-of-kin) links from the F
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),

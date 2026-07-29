@@ -20,7 +20,7 @@ kind: group-index
 - **`gdown`** (low) — Use when you have a Google Drive share link or file ID and want to reliably download the file (including large ones and whole folders) for e
 - **`gowitness`** (low) — Use when you have a list of `domain`s/`ip-address`es and want to bulk-screenshot their web interfaces for visual triage and evidence — retur
 - **`image-extractor`** (low) — Use when you have a webpage URL (`domain`) and want to pull every image it loads — including lazy-loaded and background assets — returns a d
-- **`imgur-album-downloader`** (low) — OSINT tool: Imgur Album Downloader.
+- **`imgur-album-downloader`** (low) — Use when you have an Imgur `social-profile`/album link and want to bulk-save every image for offline evidence — returns `image` files plus a
 - **`link-gopher`** (low) — Use when you have a page open and want every link and unique domain on it extracted at once — returns a de-duplicated list of URLs and domai
 - **`loader-to`** (low) — OSINT tool: Loader.to.
 - **`media-downloader-net`** (low) — OSINT tool: Media-downloader.net.

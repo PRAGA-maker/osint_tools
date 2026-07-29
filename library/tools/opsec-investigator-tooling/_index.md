@@ -100,7 +100,7 @@ kind: group-index
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
-- **`deep-face-live`** (low) — Real-time face swap for streaming and video calls
+- **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
 - **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
 - **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
