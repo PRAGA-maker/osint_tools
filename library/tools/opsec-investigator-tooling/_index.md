@@ -319,7 +319,7 @@ kind: group-index
 - **`resurrect-pages`** (low) — Use when you hit a dead link or removed page (`domain`/URL) and want an archived copy — returns one-click lookups across Wayback, archive.is
 - **`ripoff-report`** (low) — Use when you have a `name` or `employer-org` and want consumer complaints tying them to scams, disputes, addresses, and other people — retur
 - **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
-- **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
+- **`rss-subscription-extension-chrome`** (low) — Use when you have a `domain`/site and want to monitor it for new posts — a Google-published Chrome extension that auto-detects RSS/Atom feed
 - **`rug`** (low) — Use when you need a plausible, randomly generated identity to build a sock-puppet account — returns a synthetic name, address, dob and photo
 - **`runkeeper`** (medium) — Use when you have a subject's `username`/`name` and want their public running/walking activities and routes — returns geolocation (GPS route
 - **`safari`** (low) — Use when you specifically need Apple's browser (private browsing, Web Inspector, or to view content as an Apple/iOS client) — a general web 

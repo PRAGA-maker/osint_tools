@@ -406,7 +406,7 @@ kind: group-index
 - **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
 - **`news-now`** (low) — Use when you have a `name`, topic or `employer-org` and want a real-time, multi-source news feed about it — returns aggregated, timestamped 
 - **`news-search-engine`** (low) — Use when you have a `name`, `employer-org`, or event and want it searched across a curated set of news sites at once — returns news mentions
-- **`news-search`** (low) — OSINT tool: News Search.
+- **`news-search`** (low) — Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mention
 - **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
 - **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
 - **`newslookup-com`** (low) — OSINT tool: Newslookup.com.

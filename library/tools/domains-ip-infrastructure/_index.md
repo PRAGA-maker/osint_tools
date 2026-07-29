@@ -76,7 +76,6 @@ kind: group-index
 - **`arin`** (medium) — Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `a
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — Use when you have an `ip-address` or `domain` and want to find other websites hosted on the same IP — returns a reverse-IP list of co-hosted
-- **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
 - **`awesome-tech-stack`** (low) — Use when you have a `domain` and want its technology stack plus a security/modernity assessment — returns detected technologies and an "awes
 - **`azure-tenant-resolution-by-pingcastle`** (low) — Use when you have a `domain` (or Azure tenant ID) and want to map an organisation's Microsoft/Entra tenant — returns the tenant ID and other
 - **`bbot`** (low) — Use when you have a `domain`, `ip-address` or `email` and want deep recursive attack-surface enumeration — chains modules to return subdomai
@@ -363,7 +362,7 @@ kind: group-index
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
 - **`seo-spyglass`** (medium) — Use when you have a `domain` and want to map who links to it — returns referring domains, anchor text, and hosting IPs/C-blocks.
 - **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
-- **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
+- **`seotools-for-excel`** (low) — Use when you have a `domain` (or list of URLs) and want to bulk-extract on-page HTML, domain age, and backlink signals into a spreadsheet — 
 - **`server-status-pwn`** (low) — Use when you have a `domain`/host with an exposed Apache /server-status and want to harvest live request data — returns visited `domain`s, U
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of

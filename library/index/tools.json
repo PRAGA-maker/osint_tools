@@ -3474,29 +3474,33 @@
   {
     "id": "ddecode-php-decoder",
     "name": "DDecode - PHP Decoder",
-    "description": "Rapid decoding of obfuscated PHP webshell and malware snippets",
+    "description": "Use when you have obfuscated PHP (a webshell, malware snippet, or eval/base64 blob) and want readable source — returns deobfuscated PHP text plus any embedded URLs/IPs.",
     "url": "https://ddecode.com/phpdecoder/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "php"
     ],
-    "bestFor": "Rapid decoding of obfuscated PHP webshell and malware snippets",
-    "input": "Encoded or obfuscated PHP code",
-    "output": "Decoded and expanded PHP source text",
+    "bestFor": "Peeling layered eval/base64/gzinflate obfuscation off PHP webshells to reveal what the code actually does.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or payment required.",
     "opsec": "active",
-    "opsecNote": "Submitted samples are processed by a third-party server, so sensitive code should be sanitized first.",
+    "opsecNote": "You paste the sample into a third-party server, so the operator sees your submission. Never paste code containing your own secrets, and assume anything you submit could be logged. For untrusted-attacker code this is fine; for sensitive incident material prefer a local deobfuscator instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing free PHP-decoder site used by malware analysts; it mechanically unwraps encodings rather than making judgement calls, so its output is verifiable by re-running.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -3504,11 +3508,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DDecode",
+      "ddecode.com"
+    ],
+    "tags": [
+      "malware-analysis",
+      "deobfuscation",
+      "php"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/php/ddecode-php-decoder.md"
   },
   {
@@ -11236,37 +11247,48 @@
   {
     "id": "osint-updates-a-free-weekly-newsletter-for-osinters",
     "name": "OSINT Updates - a free weekly newsletter for OSINTers",
-    "description": "OSINT tool: OSINT Updates - a free weekly newsletter for OSINTers.",
+    "description": "Use when you want to keep your tooling and tradecraft current — a free weekly newsletter rounding up new OSINT tools, techniques, and news for investigators.",
     "url": "https://osintupdates.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Staying current on new OSINT tools, method changes, and platform shifts via a free weekly email digest.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free weekly newsletter published on Substack by OSINT Ambition; an optional paid tier may exist but the core roundup is free.",
+    "opsec": "passive",
+    "opsecNote": "This is a knowledge resource, not an investigative query — it touches no subject. The only footprint is your own subscription email; use a dedicated research inbox if you keep OPSEC separation between your identity and your work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-regarded community newsletter (8,000+ subscribers, endorsed by named practitioners like Henk van Ess); it curates and summarizes rather than being an authoritative data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "OSINT Updates",
+      "OSINT Ambition newsletter"
+    ],
     "tags": [
-      "other-resources"
+      "other-resources",
+      "newsletter",
+      "tradecraft"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-updates-a-free-weekly-newsletter-for-osinters.md"
   },
   {
@@ -14520,37 +14542,50 @@
   {
     "id": "snappa",
     "name": "Snappa",
-    "description": "OSINT tool: Snappa.",
-    "url": "https://snappa.io",
+    "description": "Use when you have `image` assets or findings to package and want a fast browser-based graphic editor — returns a composed `image` (report graphic, timeline card, redacted screenshot).",
+    "url": "https://snappa.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Quickly composing report graphics, annotated screenshots, and social-style cards from your own images without design software.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free plan allows a limited number of downloads per month with core templates, stock photos, and editing; a paid plan lifts the download cap and adds background removal, resizing, and scheduling.",
+    "opsec": "passive",
+    "opsecNote": "A general-purpose design tool, not an investigative query — it does not touch the subject. Note that anything you upload (screenshots, subject imagery) is stored on Snappa's servers; keep sensitive case material off third-party design tools or strip identifying data first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial design SaaS (a Canva-style editor); reliable as a tool but unrelated to data provenance — it produces artwork, it does not verify anything.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Snappa.io"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "reporting"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/snappa.md"
   },
   {
@@ -17857,42 +17892,6 @@
       "you-com"
     ],
     "_file": "library/tools/ai-analysis-automation/youcode.md"
-  },
-  {
-    "id": "zingchart",
-    "name": "ZingChart",
-    "description": "OSINT tool: ZingChart.",
-    "url": "http://www.zingchart.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/zingchart.md"
   },
   {
     "id": "zmail",
@@ -38251,48 +38250,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/dark-web/andi.md"
-  },
-  {
-    "id": "astra-guns",
-    "name": "Astra Guns",
-    "description": "OSINT tool: Astra Guns.",
-    "url": "http://s53txpmxln2657wz6kbueokpg3kbu4k4whunczeeotfpgb77l2tcwaad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/astra-guns.md"
   },
   {
     "id": "bitpharma",
@@ -61858,47 +61815,6 @@
     "_file": "library/tools/domains-ip-infrastructure/atsameip-intercode-ca.md"
   },
   {
-    "id": "audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance",
-    "name": "Audits website cookies, online tracking and HTTPS usage for GDPR compliance",
-    "description": "OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.",
-    "url": "https://2gdpr.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Domain/IP/Links",
-      "Cookies analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance.md"
-  },
-  {
     "id": "australian-cyber-security-centre",
     "name": "Australian Cyber Security Centre",
     "description": "OSINT tool: Australian Cyber Security Centre.",
@@ -67629,29 +67545,38 @@
   {
     "id": "easywhois",
     "name": "easyWhois",
-    "description": "Quick domain WHOIS lookups and DNS checks",
+    "description": "Use when you have a `domain` or `ip-address` and want registration, DNS, and lookalike-domain data — returns domain WHOIS, DNS records, and infrastructure hints.",
     "url": "https://www.easywhois.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "Quick domain WHOIS lookups and DNS checks",
-    "input": "Domain name",
-    "output": "WHOIS records, DNS information, registrant details, nameservers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast free WHOIS and DNS record lookups plus lookalike/homoglyph domain discovery.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "name",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public tool suite operated by easyDNS Technologies; no account or payment required. easyWhois now redirects to the DomainHelp/DNSskills suite.",
     "opsec": "passive",
-    "opsecNote": "Queries public WHOIS and DNS data; does not contact the target domain.",
+    "opsecNote": "Queries public WHOIS registries and DNS resolvers — it does not contact the target site's own server, so the subject is not tipped off. The lookup runs from easyDNS's infrastructure, not yours, so your IP is not exposed to the registrar.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by easyDNS Technologies, an established Canadian DNS/domain registrar; data comes straight from authoritative registries and resolvers, not a scraped mirror.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -67659,11 +67584,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DomainHelp",
+      "DNSskills",
+      "easyWhois"
+    ],
+    "tags": [
+      "whois",
+      "dns",
+      "domain-and-ip-research"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/easywhois.md"
   },
   {
@@ -83082,37 +83015,52 @@
   {
     "id": "seotools-for-excel",
     "name": "SEOTools for Excel",
-    "description": "OSINT tool: SEOTools for Excel.",
+    "description": "Use when you have a `domain` (or list of URLs) and want to bulk-extract on-page HTML, domain age, and backlink signals into a spreadsheet — returns per-URL `domain` metadata.",
     "url": "http://seotoolsforexcel.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Bulk-scraping page titles, meta, headings, links, and domain age for many URLs at once inside Excel.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier of the Excel add-in covers the core on-page/HTTP functions (HtmlTitle, XPathOnUrl, DomainAge, Spider, etc.); a paid license unlocks unlimited use and premium connectors (Majestic, Analytics).",
+    "opsec": "active",
+    "opsecNote": "The Spider crawler and Html* functions fetch the target pages directly from your machine, so your IP appears in the target's server logs. Route through a VPN/proxy and throttle crawl rate if the site is monitored.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running third-party Excel add-in by Niels Bosma; widely used in SEO circles but not an official Microsoft product — treat scraped values as raw, unaudited page data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "SeoTools",
+      "SEO Tools for Excel"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "scraping",
+      "bulk-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/seotools-for-excel.md"
   },
   {
@@ -181351,24 +181299,27 @@
   {
     "id": "rss-subscription-extension-chrome",
     "name": "RSS Subscription Extension (Chrome)",
-    "description": "Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage",
-    "url": "https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd",
+    "description": "Use when you have a `domain`/site and want to monitor it for new posts — a Google-published Chrome extension that auto-detects RSS/Atom feeds on any page.",
+    "url": "https://chromewebstore.google.com/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Discovering the hidden RSS/Atom feed of a target's blog, forum, or news page so you can monitor it passively.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Feed detection reads the page you are already viewing; subscribing in a reader then pulls updates server-side or from your reader, not by repeatedly hitting the target from an attributable browser session. Prefer subscribing via a feed reader over re-loading the target's site manually, so your interest is not obvious in their logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Published by Google (Google Ireland, Ltd.) on the Chrome Web Store, ~400k users, Manifest V3; a first-party extension, not a third-party scraper.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -181377,15 +181328,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "RSS Subscription Extension",
+      "Google RSS extension"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "monitoring",
+      "rss"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/rss-subscription-extension-chrome.md"
   },
   {
@@ -282543,35 +282500,53 @@
   {
     "id": "news-search",
     "name": "News Search",
-    "description": "OSINT tool: News Search.",
+    "description": "Use when you have a `name`, `employer-org`, or event keyword and want cross-source news coverage on one page — returns news articles/mentions to pivot from.",
     "url": "https://upstract.com/search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scanning many news outlets and aggregators at once for mentions of a person, org, or event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Upstract's aggregator and search are free to use; optional AI summarization/personalization features may sit behind a paid tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Upstract's aggregated index, not the subject — searching a name here does not touch the person or the original publishers in a way they'd attribute to you. Upstract markets itself as tracker-free, but still use a research browser/VPN for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Upstract is a reputable news aggregator (by the creator of Popurls) pulling from mainstream sources; it indexes third-party journalism, so trust flows from the underlying outlets, not Upstract itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Upstract Search",
+      "Upstract news search"
+    ],
+    "tags": [
+      "news",
+      "search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search.md"
   },
   {
