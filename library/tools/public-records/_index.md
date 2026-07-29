@@ -682,7 +682,7 @@ kind: group-index
 - **`panjiva-com`** (low) — Use when you have a company `name`/`employer-org` in trade and want its import/export shipments — returns bill-of-lading records naming supp
 - **`paperpanda`** (medium) — Use when you have a paywalled academic article and want a free full-text PDF — returns a legally-available open-access copy in one click.
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
-- **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.
+- **`parler-capitol-videos`** (low) — Use when you have a time or `geolocation` at the US Capitol on Jan 6, 2021 and want ProPublica's archive of geolocated, timestamped Parler v
 - **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
 - **`penn-world-table`** (low) — OSINT tool: Penn World Table.
 - **`pennsylvania-registered-voter-verification`** (medium) — Use when you have a `name` (plus DOB and county) for a Pennsylvania resident and want to confirm voter registration — returns registration s

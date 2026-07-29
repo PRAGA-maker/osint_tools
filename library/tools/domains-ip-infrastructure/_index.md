@@ -362,7 +362,7 @@ kind: group-index
 - **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne
 - **`search-censys-io`** (medium) — Use when you have a `domain` or `ip-address` and want its internet-facing infrastructure, certificates, and services — returns linked domain
 - **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
-- **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
+- **`secretfinder`** (low) — Use when you have a `domain`/web app and want to scrape its JavaScript for leaked API keys, tokens, endpoints and secrets — returns domain (
 - **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
 - **`securitytrails`** (low) — Use when you have a `domain` or `ip-address` and want its historical DNS records, current subdomains and WHOIS history — returns related `do
 - **`seekolver`** (low) — Use when you have a `domain` (or org name) and want its live web attack surface — a Python CLI that pulls subdomains from open sources, reso

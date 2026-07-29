@@ -166,7 +166,7 @@ kind: group-index
 - **`skyvector`** (low) — Use when you have a `geolocation`, airport code, or navaid and want free aeronautical charts, airport data and flight-planning info — return
 - **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
-- **`submarinecablemap-com`** (low) — submarine communications cables map
+- **`submarinecablemap-com`** (low) — Use when you have a `geolocation`/country/landing point and want to see the submarine communications cables serving it — returns geolocation
 - **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
 - **`the-burnsy-vehicle-osint`** (medium) — Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and regi
 - **`tokyo-mou`** (low) — Use when you have a ship `name` or IMO `document-id` and want its Asia-Pacific port-state-control inspection and detention history — returns

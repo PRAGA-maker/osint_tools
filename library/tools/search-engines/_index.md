@@ -575,7 +575,7 @@ kind: group-index
 - **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
 - **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
-- **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
+- **`snowfl-com`** (low) — Use when you have a filename, title, or `username` (uploader/release tag) and want to search many public torrent indexes at once — returns f
 - **`sogou-china`** (low) — Use when you have a `name`, `username`, or Chinese-language term and want results a Western engine misses — Sogou also searches WeChat publi
 - **`sonicrun`** (low) — Use when you have a `name`, `username` or `domain` and want a second, non-Google index — returns web, blog and news results that mainstream 
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
