@@ -46,7 +46,6 @@ kind: group-index
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
 - **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another
 - **`happyscribe-com`** (low) — Use when you have a video/audio file or URL in an investigation and want a searchable text transcript (and optional subtitles/translation) —
-- **`idiomax-translation`** (low) — OSINT tool: IdiomaX Translation.
 - **`imtranslator-comparison-tool`** (low) — Use when a translation is ambiguous and you want several engines side-by-side — runs one text through multiple MT engines at once so disagre
 - **`imtranslator`** (low) — Use when you have foreign-language text and want a quick machine translation with back-translation and TTS — helps read a target's non-Engli
 - **`itranslate`** (low) — Use when you have foreign-language text, speech, or an image tied to a subject and need a quick translation — returns translated text/voice 

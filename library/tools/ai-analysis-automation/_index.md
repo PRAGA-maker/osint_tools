@@ -31,7 +31,6 @@ kind: group-index
 - **`arbor-js`** (low) — OSINT tool: Arbor.js.
 - **`arkhammirror`** (medium) — Use when you have a pile of documents to analyze and want structured intelligence — returns extracted entities (`name`, `associate`), timeli
 - **`ashok`** (low) — Swiff knife for #osint
-- **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
 - **`aware-online-com`** (low) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want ready-made query builders that generate targeted search/social
 - **`awesome-anti-forensic`** (low) — Use when you need a catalogue of anti-forensic and evasion tools/techniques — to recognise how a subject hid, wiped, or spoofed data, and wh
 - **`awesome-ctf`** (low) — Use when you need to learn or upskill CTF/forensics/recon techniques — returns a curated reference list of tools and resources, not subject 
@@ -39,7 +38,7 @@ kind: group-index
 - **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
 - **`awesome-hacking`** (low) — OSINT tool: awesome-hacking.
 - **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
-- **`awesome-incident-response`** (low) — OSINT tool: awesome-incident-response.
+- **`awesome-incident-response`** (low) — Use when you need a curated index of digital-forensics and incident-response (DFIR) tools to pick the right one for a task — a reference lis
 - **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
 - **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
 - **`awesome-osint-mcp-servers`** (medium) — Use when you are building or extending an AI-agent OSINT workflow and want ready-made MCP servers that expose OSINT tools to an LLM — return
@@ -220,7 +219,7 @@ kind: group-index
 - **`maltego-transforms-m0m0sms-osint`** (medium) — Use when you are running link analysis in Maltego and want a big curated index of community transforms to install — returns a menu of transf
 - **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
 - **`master-password`** (low) — OSINT tool: Master Password.
-- **`merklemap`** (low) — OSINT tool: Merklemap.
+- **`merklemap`** (low) — Use when you have a `domain` and want to enumerate its subdomains and TLS certificates from certificate-transparency logs — returns linked s
 - **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
 - **`mihari`** (low) — Use when you have an `ip-address`/`domain` indicator and want to hunt and monitor related infrastructure across many OSINT sources at once —
 - **`mitaka`** (low) — Use when you have an `ip-address`, `domain`, `email`, `crypto-wallet` or file hash and want one-click enrichment across 65+ threat-intel ser
@@ -319,7 +318,7 @@ kind: group-index
 - **`s-i-g-i-t`** (low) — Simple information gathering toolkit
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sans-osint-summit-2021-playlist`** (low) — OSINT tool: SANS OSINT Summit 2021 (Playlist).
-- **`sarenka`** (low) — OSINT tool: Sarenka.
+- **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
 - **`script-safe`** (low) — OSINT tool: Script Safe.
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
@@ -331,7 +330,6 @@ kind: group-index
 - **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
 - **`serpapi`** (medium) — Use when you need to run search-engine queries at scale and get structured results in code — returns JSON of Google/Bing/etc. results (organ
 - **`serpscan`** (low) — OSINT tool: SerpScan.
-- **`shanti-interactive`** (low) — OSINT tool: Shanti Interactive.
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
 - **`sintelix`** (low) — OSINT tool: Sintelix.
@@ -341,7 +339,6 @@ kind: group-index
 - **`snappa`** (low) — OSINT tool: Snappa.
 - **`snort`** (low) — Use when you need to detect or log malicious/suspicious network traffic on infrastructure you control — an open-source IDS/IPS that matches 
 - **`social-links`** (low) — OSINT tool: Social Links.
-- **`soundeffectssearch-com`** (low) — find a sound library
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
 - **`spideroak`** (low) — OSINT tool: Spideroak.
 - **`spidersuite`** (low) — OSINT tool: SpiderSuite.

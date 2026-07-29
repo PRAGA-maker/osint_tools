@@ -212,7 +212,6 @@ kind: group-index
 - **`screencast-o-matic`** (low) — Use when you need to capture ephemeral online content (stories, live streams, scrolling profiles) as a video/screenshot record before it dis
 - **`screenshot-guru`** (low) — Use when you have a public webpage URL (`domain`) and want a high-resolution full-page screenshot for evidence — returns a downloadable `ima
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
-- **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
 - **`shared-count`** (low) — Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-UR
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — tool for filtering RSS feeds

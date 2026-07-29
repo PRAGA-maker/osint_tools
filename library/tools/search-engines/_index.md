@@ -180,7 +180,7 @@ kind: group-index
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
 - **`dog-bites-search-engine`** (medium) — Use when you have a `name` or incident detail and want dog-bite/dog-attack legal and news content searched — returns `name` and `address` le
 - **`dogpile-meta-search`** (medium) — Use when you have a `name`/`username` and want blended results across Google/Bing/Yahoo in one pass — returns social-profile and domain.
-- **`dorkgenius`** (low) — OSINT tool: DorkGenius.
+- **`dorkgenius`** (low) — Use when you have a target (a `name`, `domain`, filetype, or keyword) and want ready-made advanced search-engine dorks for Google/Bing/DuckD
 - **`dorkgpt`** (low) — Use when you have a target `domain`/`name` and a research goal and want a ready-made Google dork query — returns AI-generated advanced searc
 - **`dpa-international`** (low) — OSINT tool: DPA International.
 - **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.

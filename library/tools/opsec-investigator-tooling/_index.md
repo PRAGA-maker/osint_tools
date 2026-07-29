@@ -89,7 +89,7 @@ kind: group-index
 - **`cloudhq`** (low) — Use when you need Gmail-workflow add-ons for an investigation inbox — export/preserve emails as PDF, block or (actively) plant read-tracking
 - **`cloudwards`** (low) — Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more
 - **`codegent-chinese-mandarin-phrases-app-mobile-android`** (low) — App for mobile devices for learning phrases in the Chinese Mandarin language
-- **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
+- **`comodo-free-antivirus`** (low) — Use when you need free endpoint malware protection (with sandboxing/firewall) on your own investigator machine before handling suspect files
 - **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
 - **`coowon`** (low) — OSINT tool: Coowon.
 - **`coveryourtracks-eff-org`** (low) — Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uni

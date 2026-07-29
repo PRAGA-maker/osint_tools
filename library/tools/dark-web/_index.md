@@ -70,7 +70,7 @@ kind: group-index
 - **`osint-me-2`** (low) — OSINT tool: osint.me 2.
 - **`osint-me-3`** (low) — OSINT tool: osint.me 3.
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
-- **`pastebin-bisque`** (low) — Command line #python tool, which downloads all the pastes of a particular #Pastebin user.
+- **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
 - **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
 - **`pirate-bay`** (low) — OSINT tool: Pirate Bay.
 - **`pitch`** (low) — OSINT tool: Pitch.

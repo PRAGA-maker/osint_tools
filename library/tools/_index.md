@@ -7,12 +7,12 @@ kind: group-index
 # root
 
 ## Sub-groups
-- **`ai-analysis-automation/`** — 434 skill(s) below.
+- **`ai-analysis-automation/`** — 432 skill(s) below.
 - **`archives-cache/`** — 119 skill(s) below.
 - **`communities-forums/`** — 295 skill(s) below.
 - **`dark-web/`** — 102 skill(s) below.
 - **`dating-classifieds/`** — 92 skill(s) below.
-- **`documents-metadata/`** — 289 skill(s) below.
+- **`documents-metadata/`** — 288 skill(s) below.
 - **`domains-ip-infrastructure/`** — 667 skill(s) below.
 - **`email/`** — 250 skill(s) below.
 - **`evidence-capture/`** — 31 skill(s) below.
@@ -28,7 +28,7 @@ kind: group-index
 - **`search-engines/`** — 764 skill(s) below.
 - **`social-networks/`** — 815 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
-- **`translation-language/`** — 95 skill(s) below.
+- **`translation-language/`** — 94 skill(s) below.
 - **`transportation/`** — 203 skill(s) below.
 - **`username/`** — 105 skill(s) below.
 
