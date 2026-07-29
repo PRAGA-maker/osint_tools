@@ -480,7 +480,7 @@ kind: group-index
 - **`jisc`** (low) — Use when researching a UK academic/institutional subject and want a gateway to archives, journals, and digitised collections that may mentio
 - **`journal-officiel-gouv-fr`** (medium) — Use when you have a French association `name`, person, or `address` and want the official register — returns declared non-profit association
 - **`journalmap-geosearch`** (low) — Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `nam
-- **`junar`** (low) — OSINT tool: Junar.
+- **`junar`** (low) — Use when you want to browse government/agency open-data catalogs — Junar powers many public data portals whose datasets you can search and e
 - **`jurn-academic-search`** (low) — Use when you have an author `name` or topic and want free full-text scholarly content across arts, science, business, law and medicine — ret
 - **`justia-us-supreme-court-center-united-states`** (medium) — Use when you have a `name` or `employer-org` and want to check US Supreme Court case law — returns full opinions where they appear as a part
 - **`justice-gov-uk`** (medium) — Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status a
@@ -848,7 +848,6 @@ kind: group-index
 - **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
 - **`tendersinfo`** (medium) — Use when you have an `employer-org` and want to see the government/private tenders it bids on or wins worldwide — returns procurement listin
 - **`tennessee-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` and want to confirm a Tennessee voter registration — returns registration status, county, and polling pla
-- **`terrorism-incidents-database`** (low) — OSINT tool: Terrorism Incidents Database.
 - **`tess`** (medium) — Use when you have a person or company `name`, a brand, or a serial number and want US trademark filings — returns employer-org, name and add
 - **`texas-public-records-search`** (high) — Use when you have a `name` and a Texas nexus and want an organised directory into official Texas state/county record databases — returns lin
 - **`tfl-gov-uk-2`** (medium) — Use when you have a London taxi/private-hire licence or badge number, a vehicle plate, or an operator name and want to confirm it is validly

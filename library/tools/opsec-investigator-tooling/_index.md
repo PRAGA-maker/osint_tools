@@ -186,7 +186,7 @@ kind: group-index
 - **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
 - **`google-search-app-mobile-android`** (low) — App for mobile devices for general searches
 - **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
-- **`google-search-results-scraper`** (low) — Collects google search results and saves them into an Excel table
+- **`google-search-results-scraper`** (low) — Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`
 - **`google-translate-extension-chrome`** (low) — Add-on for Google Chrome that allows you to see translations of text directly on the webpage
 - **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
 - **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
@@ -410,7 +410,7 @@ kind: group-index
 - **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
 - **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
-- **`transform-tools`** (low) — This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript 
+- **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing

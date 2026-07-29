@@ -166,7 +166,7 @@ kind: group-index
 - **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
 - **`harpoon`** (low) — Use when you have a `domain`, `ip-address`, `email`, or `username` and want to run many threat-intel/OSINT lookups from one CLI — 70+ plugin
 - **`helix`** (medium) — Use when you have a `username` or `email` and want a mapped identity graph — returns cross-platform accounts, linked domains, and inferred r
-- **`highcharts`** (low) — OSINT tool: Highcharts.
+- **`highcharts`** (low) — Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT da
 - **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
 - **`hohli`** (low) — OSINT tool: Hohli.
 - **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
@@ -229,7 +229,7 @@ kind: group-index
 - **`nixintel`** (low) — OSINT tool: NixIntel.
 - **`nixory`** (low) — OSINT tool: Nixory.
 - **`nodebox`** (low) — OSINT tool: Nodebox.
-- **`observable`** (low) — OSINT tool: Observable.
+- **`observable`** (low) — Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and 
 - **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;
 - **`oda-the-online-disassembler`** (low) — Use when you have a binary or raw bytes (from a suspect file, firmware, shellcode) and want to disassemble it in-browser — returns architect
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab

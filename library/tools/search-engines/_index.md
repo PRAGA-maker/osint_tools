@@ -168,7 +168,7 @@ kind: group-index
 - **`debian-code-search`** (low) — Use when you have an `email`, `username` or string and want to find it across all Debian-packaged source — returns author `name`/`email` and
 - **`debunking-false-stories-archives`** (low) — Use when you have a viral claim, image, or story and want to check whether FactCheck.org has already debunked it — a misinformation-verifica
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
-- **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
+- **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/tee
 - **`digle`** (low) — OSINT tool: Digle.
 - **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
 - **`dirjournal`** (low) — Web directory, offering local searches by categories
@@ -614,7 +614,6 @@ kind: group-index
 - **`totalbeauty`** (low) — Use when you have a `username` and want to check a beauty-review community profile — returns social-profile confirmation and associate-style
 - **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
 - **`trademarkia`** (medium) — Use when you have a `name`, brand, or `employer-org` and want trademark filings — returns marks with owner/applicant name, address, attorney
-- **`trooclick`** (low) — OSINT tool: Trooclick.
 - **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
 - **`trulia-united-states`** (medium) — Use when you have a US `address` and want property/listing history plus neighborhood context — returns address details, listing history and 
 - **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.

@@ -6543,37 +6543,47 @@
   {
     "id": "highcharts",
     "name": "Highcharts",
-    "description": "OSINT tool: Highcharts.",
+    "description": "Use when you want to build interactive charts from investigation data on a web page — a JavaScript charting library for visualizing OSINT datasets, timelines and maps.",
     "url": "http://www.highcharts.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Rendering interactive charts, time series and maps from your own data in a web report or dashboard.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for personal and non-commercial use; a paid license is required for commercial/organizational use. The library is loaded via CDN or npm — no service account needed to render locally.",
+    "opsec": "passive",
+    "opsecNote": "Highcharts renders in the browser from data you supply; run it in your own page/report and it phones nothing home. Keep sensitive case data in a local/offline page rather than a public one, and avoid pulling the library from a third-party CDN if you must render truly sensitive data air-gapped — self-host the script instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A mature, widely used commercial JavaScript charting library (Highsoft); reliable and well-documented. It's a rendering library, not a data source, so there's no data-accuracy risk from the tool itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "observable"
+    ],
+    "aliases": [
+      "Highcharts JS",
+      "Highsoft Highcharts"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/highcharts.md"
   },
   {
@@ -9784,40 +9794,47 @@
   {
     "id": "observable",
     "name": "Observable",
-    "description": "OSINT tool: Observable.",
+    "description": "Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and sharing OSINT data analyses.",
     "url": "https://observablehq.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building interactive, reproducible data visualizations and analyses (networks, timelines, maps) from investigation data in a browser notebook.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier covers public notebooks and personal use; paid plans add private notebooks, collaboration and larger data. Open-source pieces (D3, Observable Plot, the Framework) are free to self-host.",
+    "opsec": "passive",
+    "opsecNote": "Observable runs your code and can host your notebooks. By default a hosted notebook may be PUBLIC — never paste raw case data, PII, or a subject's identifiers into a public notebook. For sensitive work use private notebooks (paid), run Observable Framework locally/offline, or strip data to non-identifying form before uploading.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A reputable data-viz platform from the team behind D3.js; the tooling is well-regarded. Trust concerns are operational (accidental public exposure of your data), not tool integrity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "what-goes-on-mastodon"
     ],
+    "aliases": [
+      "ObservableHQ",
+      "Observable notebooks"
+    ],
+    "tags": [
+      "infographics-and-data-visualization",
+      "data-analysis"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/observable.md"
   },
   {
@@ -53096,49 +53113,6 @@
     "_file": "library/tools/documents-metadata/guru-com.md"
   },
   {
-    "id": "hashtagifyme",
-    "name": "HashtagifyMe",
-    "description": "Search for Twitter Hashtags",
-    "url": "http://hashtagify.me",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hashtagify"
-    ],
-    "_file": "library/tools/documents-metadata/hashtagifyme.md"
-  },
-  {
     "id": "hispavista-spain",
     "name": "HispaVista (Spain)",
     "description": "Spain-based digital marketing service",
@@ -88977,7 +88951,7 @@
   {
     "id": "web-data-exposure-scanner",
     "name": "Web Data Exposure Scanner",
-    "description": "Detecting exposed sensitive data on web servers",
+    "description": "Use when you have a `domain`/URL and want to find sensitive data it exposes — crawls the site and returns `email`, `phone`, `document-id` and leaked file URLs.",
     "url": "https://github.com/eduardoit/web-data-exposure-scanner",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -88985,34 +88959,46 @@
       "vulnerabilities",
       "scanners"
     ],
-    "bestFor": "Detecting exposed sensitive data on web servers",
-    "input": "URLs/domains",
-    "output": "Exposed data findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Crawling a target website to surface exposed emails, phone numbers, ID-document numbers and sensitive files for an authorized exposure audit.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT). A Python 3.8+ CLI; no service fees.",
     "opsec": "active",
-    "opsecNote": "Active scanning may generate server logs and trigger alerts",
+    "opsecNote": "This actively crawls the target site (recursive, multi-threaded), so it generates real traffic and log entries and can trip WAF/IDS alerts — only run against sites you are authorized to assess. It has optional Tor support to mask origin, but Tor plus aggressive crawling can itself look hostile; throttle depth/threads and get authorization first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-developer open-source project (eduardoit) with public source you can audit; useful but not a widely vetted tool, so review the code and validate findings before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WDES",
+      "web-data-exposure-scanner"
+    ],
+    "tags": [
+      "recon",
+      "scanner",
+      "data-exposure"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/web-data-exposure-scanner.md"
   },
   {
@@ -153388,38 +153374,53 @@
   {
     "id": "global-forest-watch",
     "name": "Global Forest Watch",
-    "description": "Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics and more.",
+    "description": "Use when you have a `geolocation`/`address` and want land-cover, deforestation and fire-alert history there — returns dated forest-change and fire data for the spot.",
     "url": "https://www.globalforestwatch.org/map/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking tree-cover change, recent deforestation and satellite fire alerts at a location to corroborate or date imagery.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and public (World Resources Institute); no account needed to explore the map. A free login only adds saving/subscriptions and custom-area alerts.",
+    "opsec": "passive",
+    "opsecNote": "Read-only exploration of satellite-derived public datasets — you query a location, not a person, and nothing reaches any subject. If you subscribe to area alerts you create an account tied to your queries; browse without logging in for a zero-attribution footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the World Resources Institute using established satellite datasets (Hansen/UMD tree cover, NASA FIRMS fire alerts, GLAD deforestation); authoritative, citable environmental data.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "merlin"
+    ],
+    "aliases": [
+      "GFW",
+      "globalforestwatch.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/global-forest-watch.md"
   },
   {
@@ -154946,38 +154947,52 @@
   {
     "id": "merlin",
     "name": "Merlin",
-    "description": "Identify birds (visually), through an app.",
+    "description": "Use when you have an `image` or audio of a bird from footage/photos and want to identify the species — returns the bird's identity, a geolocation-narrowing clue.",
     "url": "https://merlin.allaboutbirds.org/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying a bird by photo or sound to constrain the geographic region where a photo/video was taken.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free app and web tool from the Cornell Lab of Ornithology; no payment. A free Cornell/eBird account is optional for syncing but not required to identify.",
+    "opsec": "passive",
+    "opsecNote": "You upload only the bird crop of a photo (or an audio clip) to Cornell's identifier — never the full sensitive image with identifying context. Identification runs against Cornell/eBird data; treat it as a passive research query. Strip metadata from any media before upload if provenance matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Built by the Cornell Lab of Ornithology on eBird's global observation dataset; an authoritative, science-backed species identifier widely used in geolocation research.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "global-forest-watch"
+    ],
+    "aliases": [
+      "Merlin Bird ID",
+      "Cornell Merlin"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/merlin.md"
   },
   {
@@ -175403,41 +175418,52 @@
   {
     "id": "google-search-results-scraper",
     "name": "Google Search Results Scraper",
-    "description": "Collects google search results and saves them into an Excel table",
+    "description": "Use when you have a Google query (e.g. a `name` or dork) and want its results as a spreadsheet — returns titles, links, snippets and `email`s pulled from the snippets.",
     "url": "https://chromewebstore.google.com/detail/google-search-results-scr/cmdkhofenchpdlkbpkheddfgfdmmobcc",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-capturing a Google SERP into Excel — site, title, link, snippet, and any emails in the snippets — for offline triage.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "email",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free Chrome extension; no account or payment. Requires a Chromium-based browser.",
+    "opsec": "active",
+    "opsecNote": "The extension automates paging through Google results in YOUR browser, which can look like scraping and trip Google's bot detection (CAPTCHAs, temporary blocks) on the IP/account you're signed into. Run it from a sock-puppet browser profile behind a VPN, not your personal Google session, and pace large collections.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Chrome extension (Brain Gain Recruiting, LLC) with a modest user base; it reads the Google result pages you view. Functionally simple but unvetted — audit permissions before installing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google SERP scraper"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "serp"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-search-results-scraper.md"
   },
   {
@@ -185571,37 +185597,43 @@
   {
     "id": "transform-tools",
     "name": "Transform Tools",
-    "description": "This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript to JSON, TypeScript to JavaScript, Markdown to HTML",
+    "description": "Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wrangling OSINT data.",
     "url": "https://transform.tools/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly converting between data formats (JSON, CSV, Markdown, HTML, GraphQL, code) while cleaning up collected OSINT data.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source; no account. Runs in the browser (most converters process input client-side).",
+    "opsec": "passive",
+    "opsecNote": "Most transform.tools converters run entirely in your browser (client-side), so data typically isn't sent to a server — but verify that for any given converter before pasting sensitive material, and prefer not to paste raw PII/case identifiers into a web tool at all. For truly sensitive data, use a local/offline converter instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular open-source developer utility (public source on GitHub); a format-conversion helper, not a data source, so trust concerns are limited to where a given converter processes your input.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "transform.tools"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "data-wrangling",
+      "developer-utility"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/transform-tools.md"
   },
   {
@@ -235962,37 +235994,44 @@
   {
     "id": "junar",
     "name": "Junar",
-    "description": "OSINT tool: Junar.",
+    "description": "Use when you want to browse government/agency open-data catalogs — Junar powers many public data portals whose datasets you can search and export, no account.",
     "url": "http://junar.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Recognizing and searching Junar-powered open-data portals (city/agency datasets, tables, APIs) as a public-records source.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The Junar platform itself is a paid B2B product sold to governments/agencies, but the public open-data portals it hosts are free for anyone to browse, filter, download, and query via API.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public open-data portal is passive — you query published datasets, not any individual, and nothing reaches a subject. Note that portal operators can log downloads/API calls; use a neutral connection if you'd rather not have bulk pulls tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Junar is an established open-data platform (used by governments such as the City of Palo Alto and agencies in Chile and Argentina); the data is published by the hosting authority, so authority rests with the source agency, not Junar.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Junar Data Platform",
+      "junar.com"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "open-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/junar.md"
   },
   {
@@ -256628,44 +256667,6 @@
     "_file": "library/tools/public-records/tennessee-registered-voter-verification.md"
   },
   {
-    "id": "terrorism-incidents-database",
-    "name": "Terrorism Incidents Database",
-    "description": "OSINT tool: Terrorism Incidents Database.",
-    "url": "http://smapp.rand.org/rwtid/search_form.php",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rand-terrorism-research",
-      "reveal-image-verification-assistant"
-    ],
-    "_file": "library/tools/public-records/terrorism-incidents-database.md"
-  },
-  {
     "id": "tess",
     "name": "USPTO Trademark Search (formerly TESS)",
     "description": "Use when you have a person or company `name`, a brand, or a serial number and want US trademark filings — returns employer-org, name and address of the trademark owner/attorney.",
@@ -270492,24 +270493,29 @@
   {
     "id": "dib-dab-doo-and-dilly-too-kids-search-engine",
     "name": "Dib Dab Doo and Dilly Too Kids Search Engine",
-    "description": "Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly",
+    "description": "Use when you want a kid-safe, human-filtered Google Custom Search view — a niche search front-end that restricts results to vetted child/teen-safe sites.",
     "url": "http://www.dibdabdoo.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a curated, allow-listed slice of the web (child/teen-safe sites) as an alternative filtered view of Google results.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and ad-free; no account. It's a Google Custom Search front-end maintained by a private individual.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A passive search front-end — queries go to Google's Custom Search backend, so treat it like any Google query for attribution (your IP/query are visible to Google). It offers no anonymity; use a sock-puppet/VPN setup if the query itself is sensitive. Nothing reaches a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hobbyist-run, ad-free kid-safe search site (a father maintaining a human-curated Google Custom Search allow-list); dependable for its stated purpose but a private project with narrow, opaque curation.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -270518,15 +270524,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Dib Dab Doo",
+      "dibdabdoo.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "kid-friendly-educational-search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/dib-dab-doo-and-dilly-too-kids-search-engine.md"
   },
   {
@@ -294025,42 +294034,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/search-engines/trademarkia.md"
-  },
-  {
-    "id": "trooclick",
-    "name": "Trooclick",
-    "description": "OSINT tool: Trooclick.",
-    "url": "http://trooclick.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news-digest-and-discovery-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/trooclick.md"
   },
   {
     "id": "trufflepiggy-context-search",

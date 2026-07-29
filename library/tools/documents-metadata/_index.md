@@ -131,7 +131,6 @@ kind: group-index
 - **`grep-for-osint`** (low) — Use when you have a text corpus or file directory (a dump, scraped pages, logs) and want to bulk-extract selectors — returns email, phone, i
 - **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
-- **`hashtagifyme`** (low) — Search for Twitter Hashtags
 - **`hispavista-spain`** (low) — Spain-based digital marketing service
 - **`hoverme`** (low) — Tool that uncovers social media profiles for individuals
 - **`identify-plans`** (low) — OSINT tool: Identify plans.

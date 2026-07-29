@@ -44,7 +44,7 @@ kind: group-index
 - **`getlostgame-app`** (low) — Use when you want to train and sharpen geolocation skills on random street-view scenes — a free GeoGuessr-style game; it builds the skill, i
 - **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from
 - **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
-- **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
+- **`global-forest-watch`** (low) — Use when you have a `geolocation`/`address` and want land-cover, deforestation and fire-alert history there — returns dated forest-change an
 - **`global-monitoring-system-ecosolve`** (low) — Use when investigating online illegal wildlife trade and you want AI-monitored market data across key countries — returns aggregated traffic
 - **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
 - **`google-earth-engine`** (low) — Use when you have a `geolocation`/area and want to analyze satellite imagery over time — returns processed multi-source imagery, indices, an
@@ -75,7 +75,7 @@ kind: group-index
 - **`mappy`** (low) — Use when you have an `address`/`geolocation` in France or Western Europe and want an independent map and routing source — returns geolocatio
 - **`mapswitcher`** (low) — Use when you have a `geolocation` open in one map service and want the same spot in 30+ other map providers — returns the same `geolocation`
 - **`mapy-cz`** (low) — Use when you have a `geolocation`/`address` and want high-quality maps, aerial imagery and street-level panoramas — strongest in Czechia and
-- **`merlin`** (low) — Identify birds (visually), through an app.
+- **`merlin`** (low) — Use when you have an `image` or audio of a bird from footage/photos and want to identify the species — returns the bird's identity, a geoloc
 - **`military-bases-around-the-world-umap`** (medium) — Use when you have a `geolocation` (or a photo near a base) and want to check for a nearby military installation — returns catalogued base `g
 - **`modis-wildfire`** (medium) — Use when you have a `geolocation` and want recent satellite-detected active fires there — returns geolocated fire/thermal-anomaly points wit
 - **`movebank`** (low) — Use when you have a species, region or research `geolocation` question and want animal-tracking datasets — returns tagged-animal movement tr
