@@ -149,7 +149,7 @@ kind: group-index
 - **`nbc-united-states`** (medium) — Use when you have a `name` and want US news coverage mentioning a subject — returns `social-profile`/byline attribution, event dates and cor
 - **`ndtv-s-gadgets-360`** (medium) — Use when you have a device/product name (`device-id`) or a tech-news lead and want specs, reviews and India-market pricing/availability — re
 - **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
-- **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
+- **`netflix-codes-com`** (low) — Use when you need Netflix's hidden genre/category codes to browse its catalogue by micro-genre — a reference index of streaming metadata, no
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
 - **`new-paste`** (low) — Use when you have a `username`, `email`, or leaked keyword and want to check a public pastebin for dumped text — returns paste content that 
 - **`new-york-post`** (medium) — Use when you have a `name` linked to New York or a tabloid-worthy event and want fast, name-heavy coverage — returns `associate`, `address` 

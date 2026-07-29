@@ -20,7 +20,6 @@ kind: group-index
 - **`527-explorer`** (low) — ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which
 - **`a-ton-of-privacy`** (low) — Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.
 - **`acfcs-org`** (low) — Use when you want reference material and technique guides for tracing crypto/financial crime (e.g. Bitcoin tracking for investigators) — ret
-- **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
 - **`afd-co-uk`** (medium) — Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, 
 - **`aib-gov-uk`** (medium) — Use when you have a `name` and want to check Scotland's statutory insolvency register — returns `address`, `dob` and case `document-id` for 
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
@@ -42,7 +41,7 @@ kind: group-index
 - **`chainalysis`** (low) — Use when you have a `crypto-wallet` address and want to screen it against OFAC/UN/EU sanctions for free — full transaction-tracing (Reactor)
 - **`china-related-resources`** (low) — Use when you have a `name` or `employer-org` in China and want official corporate/court records — returns `employer-org`, `associate`, and b
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
-- **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
+- **`coinbase-com`** (low) — Use when you have a `crypto-wallet` or token and want current market price, asset metadata, or to identify a Coinbase deposit address's chai
 - **`coinchoose-com`** (low) — Use when a crypto trace surfaces an unfamiliar coin/ticker and you want quick market and mining context — returns prices, market caps and mi
 - **`coinmap`** (low) — Use when you have a `geolocation`/area and want to see businesses and ATMs that accept cryptocurrency there — returns mapped `address` point
 - **`coinmarketcap`** (low) — Use when you have a crypto asset name/symbol (or a token from a `crypto-wallet` trace) and want to identify and value it — returns market da

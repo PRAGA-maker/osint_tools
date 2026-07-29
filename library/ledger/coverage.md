@@ -2,40 +2,40 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7268 total · 5532 full · 1736 stub (76% enriched)
+**Tools:** 7267 total · 5543 full · 1724 stub (76% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3297 · medium: 2007 · high: 1964
+low: 3296 · medium: 2007 · high: 1964
 
 ## Tools by trust
-community: 3468 · unverified: 1943 · trusted: 1848 · untrustworthy: 6 · personal: 3
+community: 3470 · unverified: 1936 · trusted: 1852 · untrustworthy: 6 · personal: 3
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 139/426
+- `ai-analysis-automation` — 141/426
 - `archives-cache` — 96/118
-- `communities-forums` — 247/286
+- `communities-forums` — 248/286
 - `dark-web` — 50/101
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 125/285
+- `documents-metadata` — 126/285
 - `domains-ip-infrastructure` — 393/659
 - `email` — 246/246
 - `evidence-capture` — 18/29
-- `financial-crypto` — 73/98
-- `geolocation` — 302/336
+- `financial-crypto` — 74/97
+- `geolocation` — 303/336
 - `image-video-face` — 446/451
 - `maps-geospatial-data` — 99/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 147/503
+- `opsec-investigator-tooling` — 150/503
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 904/998
+- `public-records` — 905/998
 - `search-engines` — 545/754
 - `social-networks` — 745/775
 - `training-ctf` — 6/12
-- `translation-language` — 39/94
+- `translation-language` — 40/94
 - `transportation` — 156/202
 - `username` — 102/104
 
@@ -61,7 +61,7 @@ community: 3468 · unverified: 1943 · trusted: 1848 · untrustworthy: 6 · pers
 - `library/tools/dating-classifieds` — 92 leaves
 - `library/tools/dark-web` — 91 leaves
 - `library/tools/username` — 86 leaves
-- `library/tools/financial-crypto` — 82 leaves
+- `library/tools/financial-crypto` — 81 leaves
 - `library/tools/translation-language` — 80 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves

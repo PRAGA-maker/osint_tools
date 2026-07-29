@@ -68,7 +68,7 @@ kind: group-index
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
 - **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement
 - **`promt-free-online-translator`** (low) — Use when you have foreign-language text from a source and want a neural translation into your working language — returns readable translated
-- **`quotes-net`** (low) — Language-related search for famous quotes and popular sayings
+- **`quotes-net`** (low) — Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — return
 - **`reddit-r-translator`** (low) — OSINT tool: Reddit/r/translator.
 - **`resources-saferschoolstogether-com`** (low) — OSINT tool: resources.saferschoolstogether.com.
 - **`reverso-free-online-translator`** (low) — Use when you have foreign-language text (a post, message, document snippet) and want it translated with usage examples — returns translation

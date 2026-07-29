@@ -298,7 +298,7 @@ kind: group-index
 - **`virtual-globe-trotting`** (medium) — Use when you have `geolocation` coordinates or a landmark/celebrity-home lead and want a labelled satellite/Street View catalogue — returns 
 - **`wayback-imagery`** (high) — Use when you need to see how a location's satellite imagery looked on specific past dates — to detect change, date a structure, or match an 
 - **`waze-livemap`** (high) — Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — retu
-- **`webcam-live`** (low) — OSINT tool: WEBCAM LIVE.
+- **`webcam-live`** (low) — Use when you have a `geolocation` (a town, promenade, ski resort or landmark) and want a live public camera view of it — returns real-time v
 - **`webcam-nl-nl`** (medium) — Use when you have a Dutch `geolocation` or `address` and want live public-camera imagery of that spot — returns `image` (live video stills).
 - **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
 - **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.

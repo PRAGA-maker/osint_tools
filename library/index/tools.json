@@ -16601,37 +16601,45 @@
   {
     "id": "venngage",
     "name": "Venngage",
-    "description": "OSINT tool: Venngage.",
+    "description": "Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/output tool, not a data source.",
     "url": "https://venngage.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Producing shareable infographics, timelines, and relationship diagrams to present OSINT findings.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows a limited number of designs with Venngage branding; premium tiers unlock private/high-res export, more templates, and team features.",
+    "opsec": "active",
+    "opsecNote": "This is a cloud SaaS editor — anything you upload (names, photos, case data) is stored on Venngage's servers. Do NOT put sensitive subject data or investigative material into a third-party design tool unless the case permits it; use redacted/placeholder content and a compartmentalised account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial infographic-design SaaS; reliable as a tool but it is a data sink, not a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Venngage infographics"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "reporting"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/venngage.md"
   },
   {
@@ -17008,37 +17016,49 @@
   {
     "id": "voidly-censorship-index",
     "name": "Voidly Censorship Index",
-    "description": "OSINT tool: Voidly Censorship Index.",
+    "description": "Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country censorship scores and blocked-service data.",
     "url": "https://voidly.ai/censorship-index",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Contextualising a subject's country by which apps/services are blocked, so you know why a person may be unreachable on a given platform.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open access with free CSV/JSON exports and a public API under CC BY 4.0; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query Voidly's aggregated dataset, not the target or their country's infrastructure. Fully passive; nothing about your subject is transmitted. Route through your normal research setup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent research project (Voidly Research) aggregating OONI, CensoredPlanet, IODA and its own measurement network; methodology is published but not a first-party authority.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Global Censorship Index",
+      "Voidly Atlas censorship"
+    ],
     "tags": [
-      "threat-intelligence"
+      "threat-intelligence",
+      "censorship",
+      "geolocation-context"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/voidly-censorship-index.md"
   },
   {
@@ -30959,38 +30979,45 @@
   {
     "id": "netflix-codes-com",
     "name": "netflix-codes.com",
-    "description": "alternative way to find anything interesting on Netflix",
-    "url": "http://netflix-codes.com",
+    "description": "Use when you need Netflix's hidden genre/category codes to browse its catalogue by micro-genre — a reference index of streaming metadata, not a people-search tool.",
+    "url": "https://netflix-codes.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Netflix's secret genre codes to reach niche category listings not shown in the normal menu.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference site; the codes themselves are used on your own Netflix account (which requires a subscription to view content).",
+    "opsec": "passive",
+    "opsecNote": "The code directory is a static public reference and reveals nothing about any subject. Actually browsing the genres happens inside your own logged-in Netflix session — use your own/sock account, not a target's.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained catalogue of Netflix's genre codes; unofficial and dependent on Netflix not changing the scheme.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Netflix secret codes",
+      "Netflix genre codes"
+    ],
     "tags": [
       "Movies",
-      "Netflix"
+      "Netflix",
+      "reference"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/netflix-codes-com.md"
   },
   {
@@ -50477,24 +50504,27 @@
   {
     "id": "engadget",
     "name": "Engadget",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of technology",
-    "url": "http://www.engadget.com/reviews",
+    "description": "Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a tech-reference source, not a people lookup.",
+    "url": "https://www.engadget.com/reviews",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Researching a consumer-electronics device's specs, capabilities, and release timeline to interpret it in an investigation.",
+    "selectorsIn": [
+      "device-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported tech-news and reviews site; no account required to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public tech-news site is passive and reveals nothing about a subject. Normal ad/tracker exposure applies; use your usual research browser hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established consumer-technology news and reviews publication; editorially reliable for gadget specs, though a secondary source.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -50503,18 +50533,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Engadget reviews"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "tech-reviews",
+      "device-reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "engadget-com"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/engadget.md"
   },
   {
@@ -106387,40 +106416,6 @@
     "_file": "library/tools/financial-crypto/acfcs-org.md"
   },
   {
-    "id": "addresschecker-eu",
-    "name": "Addresschecker.eu",
-    "description": "OSINT tool: Addresschecker.eu.",
-    "url": "http://addresschecker.eu/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/addresschecker-eu.md"
-  },
-  {
     "id": "afd-co-uk",
     "name": "afd.co.uk",
     "description": "Use when you have a UK `address`, `phone`, or `email` and want to validate it and pull matching reference data — returns confirmed address, phone status, and geographic codes.",
@@ -107812,41 +107807,49 @@
   {
     "id": "coinbase-com",
     "name": "Coinbase.com",
-    "description": "OSINT tool: Coinbase.com.",
+    "description": "Use when you have a `crypto-wallet` or token and want current market price, asset metadata, or to identify a Coinbase deposit address's chain — returns market/reference data, not owner identity.",
     "url": "https://www.coinbase.com",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up an asset's live price/metadata and recognising Coinbase-controlled deposit addresses during a crypto trace.",
     "selectorsIn": [
       "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Price/market pages and asset explorers are free to view without an account; trading and holding funds requires a KYC-verified account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing Coinbase's public price/asset pages is passive and anonymous. Do NOT attempt to log into, probe, or transact against a target's account — that is intrusive, likely illegal, and account owners are notified of activity. Subpoena-gated KYC data is never accessible via OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Major US-regulated, publicly traded cryptocurrency exchange; its public price and asset reference data are reliable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Coinbase exchange",
+      "coinbase.com prices"
+    ],
     "tags": [
-      "crypto"
+      "crypto",
+      "exchange",
+      "market-data"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/coinbase-com.md"
   },
   {
@@ -126008,36 +126011,50 @@
   },
   {
     "id": "webcam-live",
-    "name": "WEBCAM LIVE",
-    "description": "OSINT tool: WEBCAM LIVE.",
+    "name": "WhatsupCams Live Webcams",
+    "description": "Use when you have a `geolocation` (a town, promenade, ski resort or landmark) and want a live public camera view of it — returns real-time visual confirmation of a place.",
     "url": "https://www.whatsupcams.com/en/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting a real-time or recent live-camera view of a specific European/tourist location to corroborate ground conditions or verify a scene.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to watch all public webcams; paid tiers are only for businesses wanting \"High Visibility\" promotion, not for viewers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You watch a publicly broadcast stream; the location owner cannot see who is watching. Nothing about your subject is transmitted. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial webcam-hosting platform; feeds are operated by third-party businesses/locations, so timing and framing are not independently guaranteed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhatsupCams",
+      "WEBCAM LIVE whatsupcams"
+    ],
+    "tags": [
+      "webcam",
+      "geolocation",
+      "live-video"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/webcam-live.md"
   },
   {
@@ -174878,24 +174895,31 @@
   {
     "id": "google-guide-to-removing-content-from-google",
     "name": "Google Guide to Removing Content From Google",
-    "description": "Google webpage providing information about how to request the removal of personal information from their various services",
+    "description": "Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct removal request path, not lookup data.",
     "url": "https://support.google.com/legal/troubleshooter/1114905?hl=en",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Filing a legal/privacy removal request to take doxxed personal data out of Google Search and Google services.",
+    "selectorsIn": [
+      "name",
+      "address",
+      "phone"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Google legal-support troubleshooter; no account required to read, though submitting some requests needs a Google sign-in.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is a defensive/self-protection resource — you are reading Google's own guidance and submitting your own removal request. It reveals nothing about a target. If filing on someone's behalf, you become the named requester, so use an account you control for that purpose.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google Legal Help / Support content; the authoritative source for its own removal policies and forms.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -174904,15 +174928,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google content removal troubleshooter",
+      "Remove personal information from Google"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "opsec",
+      "privacy",
+      "content-removal"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/google-guide-to-removing-content-from-google.md"
   },
   {
@@ -175558,24 +175585,25 @@
   {
     "id": "grok-knowledge-base-for-phishing-scams",
     "name": "GROK Knowledge Base For Phishing Scams",
-    "description": "Listing of scam, fraud, hoax, and phishing types",
+    "description": "Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns definitional/reference material, not lookup data.",
     "url": "https://grok.lsu.edu/article.aspx?articleid=16680",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and naming the category of a phishing/scam message so an investigator or victim knows what they are dealing with.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public knowledge-base article from Louisiana State University's GROK IT support wiki; no login.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a static university reference article. It touches no target infrastructure and leaks nothing — safe to browse directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Louisiana State University IT (GROK knowledge base); institutional, non-commercial reference.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -175584,15 +175612,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LSU GROK phishing article",
+      "GROK scam knowledge base"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "opsec",
+      "phishing",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/grok-knowledge-base-for-phishing-scams.md"
   },
   {
@@ -184982,42 +185013,55 @@
   },
   {
     "id": "tinder-dating-app-mobile-ios",
-    "name": "Tinder Dating App (Mobile – iOS)",
-    "description": "App for mobile devices for dating and relationship services",
-    "url": "https://itunes.apple.com/ca/app/tinder/id547702041?mt=8",
+    "name": "Tinder (iOS Dating App)",
+    "description": "Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — returns `social-profile`, `image`, and `physical-description`.",
+    "url": "https://apps.apple.com/ca/app/tinder/id547702041",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Locating a person's dating-app presence to harvest recent photos, first name, age, distance, and volunteered bio details.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to install and browse within your area; discovery is limited by radius/age filters unless you pay for Tinder Plus/Gold to expand range and location.",
+    "opsec": "active",
+    "opsecNote": "Tinder is a live social platform — creating an account and swiping generates activity, and appearing in a target's stack can alert them. Always use a fully separate sock-puppet account, device/profile, and location. Never message the target. Screenshotting a match may be visible in some flows; assume interactions can surface.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Official Tinder app (Match Group); the app is legitimate, but any profile you find is self-reported and unverified.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Tinder dating app",
+      "Tinder iOS"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "dating-app",
+      "social-profile",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/tinder-dating-app-mobile-ios.md"
   },
   {
@@ -253001,43 +253045,40 @@
   {
     "id": "sec-company-search",
     "name": "SEC Company Search",
-    "description": "OSINT tool: SEC Company Search.",
+    "description": "Use when you have a `name` or `employer-org` and want US securities filings tying a person to a public company — returns `employer-org`, `associate`, and `address` links.",
     "url": "https://www.sec.gov/edgar/searchedgar/companysearch.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is an officer, director, or major shareholder of a US-listed company and pulling their disclosed filings.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free US government service (EDGAR); no account or API key required for the web search.",
+    "opsec": "passive",
+    "opsecNote": "You are querying the SEC's public EDGAR database, not the target. Searches are anonymous and leave no trace to the subject; no sock puppet needed, though route through a clean IP if you prefer to keep your investigation off SEC access logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. Securities and Exchange Commission; EDGAR filings are legally mandated primary-source disclosures.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "corporate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "edgar",
       "sec-gov",
@@ -253045,6 +253086,17 @@
       "us-securities-and-exchange-commission",
       "edgar-u-s-securities-and-exchange-commission-filings"
     ],
+    "aliases": [
+      "EDGAR company search",
+      "SEC EDGAR"
+    ],
+    "tags": [
+      "corporate",
+      "public-records"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sec-company-search.md"
   },
   {
@@ -343589,41 +343641,44 @@
   {
     "id": "quotes-net",
     "name": "Quotes.net",
-    "description": "Language-related search for famous quotes and popular sayings",
-    "url": "http://www.quotes.net",
+    "description": "Use when you have a fragment of text (a bio line, tattoo, or message) and want to check whether it is a known quote and who said it — returns attribution/source of the quotation.",
+    "url": "https://www.quotes.net",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and attributing a famous quote or saying that appears in a subject's profile, message, or imagery.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free searchable quotation database (part of the STANDS4 network); no account required to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public quotations database; nothing about your subject is transmitted to them. Fully passive — though, as with any third-party site, avoid pasting sensitive full messages verbatim if the phrasing itself is identifying.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running crowd-sourced quotations database (STANDS4); attributions are user-contributed and can be misattributed.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Quotes.net",
+      "STANDS4 quotes"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/quotes-net.md"
   },
   {

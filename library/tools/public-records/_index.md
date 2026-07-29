@@ -783,7 +783,7 @@ kind: group-index
 - **`searchable-fcc-id-database`** (low) — Use when you have an FCC ID from a wireless device (`device-id`) and want to identify it — returns manufacturer, model, internal photos, man
 - **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
-- **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
+- **`sec-company-search`** (low) — Use when you have a `name` or `employer-org` and want US securities filings tying a person to a public company — returns `employer-org`, `as
 - **`sec-gov`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company af
 - **`secret-surveillance-catalogue`** (medium) — Use when you have a `device-id` / equipment name (an IMSI-catcher, cell-site simulator, or surveillance box) and want to understand its capa
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest

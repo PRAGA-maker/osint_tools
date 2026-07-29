@@ -175,7 +175,7 @@ kind: group-index
 - **`google-dashboard-privacy-control-tool`** (low) — Use when you (the investigator) want to audit and lock down what your own Google account exposes — activity, location history, connected dev
 - **`google-docs-voice-comments`** (low) — simple trick to save time. Voice comments in GoogleDocs, Sheets, Slides, and Forms.
 - **`google-forum-search`** (low) — Firefox browser add-on that allows for Google Forum Search
-- **`google-guide-to-removing-content-from-google`** (low) — Google webpage providing information about how to request the removal of personal information from their various services
+- **`google-guide-to-removing-content-from-google`** (low) — Use when you (or a subject you protect) want to request removal of personal information from Google's index/services — returns the correct r
 - **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
 - **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
 - **`google-maps-app-mobile-ios`** (low) — App for mobile devices for mapping and geolocation services
@@ -192,7 +192,7 @@ kind: group-index
 - **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
 - **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`grindr-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and e-dating
-- **`grok-knowledge-base-for-phishing-scams`** (low) — Listing of scam, fraud, hoax, and phishing types
+- **`grok-knowledge-base-for-phishing-scams`** (low) — Use when you need a plain-English reference cataloguing scam, hoax, and phishing types to classify a lure or brief a subject — returns defin
 - **`guid-uuid-and-short-guid-generator`** (low) — Use when you need to generate a GUID/UUID or convert between full and short (Base64) GUID forms while handling `device-id`/token artifacts —
 - **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
 - **`hacker-vision-extension-chrome`** (low) — Add-on for Google Chrome that changes the background from white to black
@@ -401,7 +401,7 @@ kind: group-index
 - **`timehop-past-activity-app-mobile-android`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
 - **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
-- **`tinder-dating-app-mobile-ios`** (low) — App for mobile devices for dating and relationship services
+- **`tinder-dating-app-mobile-ios`** (low) — Use when you have a subject who may be active on dating apps and want to find their Tinder profile, photos, and self-reported details — retu
 - **`tineye-reverse-image-search-extension-chrome`** (medium) — Use when you have an `image` in your browser and want to right-click it into TinEye's reverse image search in one step — returns image match
 - **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`tinywall-windows-firewall-enhancement`** (low) — Program that enhances security by offering extra firewall protection

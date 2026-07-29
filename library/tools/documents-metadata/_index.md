@@ -81,7 +81,7 @@ kind: group-index
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
 - **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
 - **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
-- **`engadget`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of technology
+- **`engadget`** (low) — Use when you have a device model or gadget and want reviews/specs to understand its capabilities, release date, or identifying features — a 
 - **`engage121`** (low) — Website offering social media content and publishing services
 - **`etherpad-collaborative-editing`** (low) — Use when a team needs to co-write case notes in real time on infrastructure you control — an open-source, self-hostable collaborative editor
 - **`eventbrite-canada`** (low) — Website related to event management and ticket sales

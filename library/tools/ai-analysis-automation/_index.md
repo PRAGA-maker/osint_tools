@@ -381,7 +381,7 @@ kind: group-index
 - **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
 - **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
-- **`venngage`** (low) — OSINT tool: Venngage.
+- **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
 - **`vis-js`** (low) — OSINT tool: Vis.js.
 - **`visme`** (low) — OSINT tool: Visme.
 - **`visualize-free`** (low) — OSINT tool: Visualize Free.
@@ -390,7 +390,7 @@ kind: group-index
 - **`vocal-remover`** (low) — An AI-based service that removes vocals from a song, leaving only the music. It works amazingly well.
 - **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
 - **`voidaccess`** (low) — OSINT tool: VoidAccess.
-- **`voidly-censorship-index`** (low) — OSINT tool: Voidly Censorship Index.
+- **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
 - **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Quick AI content checks for text and images during media verification
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
