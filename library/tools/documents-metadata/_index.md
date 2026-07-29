@@ -31,7 +31,7 @@ kind: group-index
 - **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
-- **`angellist`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
 - **`apple-icloud-usa`** (low) — Cloud storage and cloud computing service by Apple
 - **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification

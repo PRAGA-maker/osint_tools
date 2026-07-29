@@ -12095,44 +12095,6 @@
     "_file": "library/tools/ai-analysis-automation/phishingseclists.md"
   },
   {
-    "id": "phone-number-search-constructor",
-    "name": "Phone Number Search Constructor",
-    "description": "OSINT tool: Phone Number Search Constructor.",
-    "url": "https://cipher387.github.io/phonenumberqueryconstructor/",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "My Projects"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/phone-number-search-constructor.md"
-  },
-  {
     "id": "phoneinfoga",
     "name": "PhoneInfoga",
     "description": "Use when you have a `phone` number and want to validate it and gather footprint intelligence (carrier, line type, VoIP flags, and search-engine footprints) — returns carrier/geographic data and pivot leads.",
@@ -26495,41 +26457,49 @@
   {
     "id": "deck-for-reddit",
     "name": "Deck for Reddit",
-    "description": "OSINT tool: Deck for Reddit.",
+    "description": "Use when you have `username`s or subreddits to watch and want a multi-column TweetDeck-style dashboard to monitor them side by side — returns social-profile and associate leads.",
     "url": "https://rdddeck.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "A multi-column dashboard for watching several Reddit users, subreddits, or searches at once in real time.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, browser-based Reddit dashboard. No account required to view public content; signing in with Reddit adds personalized columns.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it reads public Reddit content via Reddit's API from your browser. Do NOT sign in with a real Reddit account for target monitoring (that ties the activity to you); browse logged-out or with a sock-puppet, ideally via VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Reddit client (rdddeck) built on Reddit's public API; convenient for monitoring but unofficial — verify anything critical on reddit.com.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "rdddeck",
+      "Deck for Reddit"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "monitoring"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/deck-for-reddit.md"
   },
   {
@@ -48130,24 +48100,32 @@
   {
     "id": "angellist",
     "name": "AngelList",
-    "description": "Website related to crowdsourced funding (venture capital) for ideas and projects",
+    "description": "Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns employer-org, associate and social-profile leads.",
     "url": "https://angel.co",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Profiling startups and the people around them — founders, employees, and investors — via the AngelList/Wellfound ecosystem.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse many company and people profiles; angel.co now redirects to Wellfound (the talent/jobs side). Some profiles/features and full recruiter tools need a free account or paid plan.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — browsing public startup/people profiles. Signing in (recommended for fuller profiles) ties viewing to your account and some profiles can see recruiter/viewer activity — use a sock-puppet account and avoid \"connect\"/message actions that notify the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known startup platform (AngelList → Wellfound); profiles are largely self-reported by users and companies, so treat roles/titles as claimed, not verified.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -48156,15 +48134,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "AngelList",
+      "Wellfound",
+      "angel.co"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "companies-finance",
+      "startups"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/angellist.md"
   },
   {
@@ -63296,29 +63278,36 @@
   {
     "id": "cacador",
     "name": "Cacador",
-    "description": "Indicator extraction and deduplication",
+    "description": "Use when you have a report, threat feed, or blob of text and want to extract and deduplicate indicators (IPs, domains, emails, hashes, URLs) — returns ip-address, domain and email leads.",
     "url": "https://github.com/sroberts/cacador",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ioc-tools"
     ],
-    "bestFor": "Indicator extraction and deduplication",
-    "input": "Documents and threat feeds",
-    "output": "Extracted and deduplicated IOCs",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast local extraction and deduplication of IOCs (IPs, domains, URLs, emails, hashes) from unstructured text.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (Go) CLI by Scott Roberts. Download a binary or build from source; no account.",
     "opsec": "passive",
-    "opsecNote": "Local processing tool for passive analysis",
+    "opsecNote": "Fully passive and offline — it parses text you already have and makes no network calls, so it's safe to run against sensitive reports or dumps in an air-gapped environment. Extraction only; it does not query or contact any indicator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Mature open-source IOC-extraction tool from a well-known DFIR author (Scott Roberts); regex-based, so review output for false positives.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -63328,11 +63317,17 @@
     "relatedTools": [
       "jager"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Cacador",
+      "cacador ioc extractor"
+    ],
+    "tags": [
+      "ioc-extraction",
+      "dfir"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ioc-tools/cacador.md"
   },
   {
@@ -73743,37 +73738,49 @@
   {
     "id": "ip-location-io",
     "name": "IP Location.io",
-    "description": "OSINT tool: IP Location.io.",
+    "description": "Use when you have an `ip-address` and want its approximate geolocation, ISP/ASN/org, and proxy/threat flags across several databases — returns geolocation and ip-address (network owner) leads.",
     "url": "https://iplocation.io",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free IP geolocation and network lookup, cross-referenced across multiple geolocation databases, plus 50+ network tools.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free web lookups; aggregates several third-party databases (IP2Location, DB-IP, IPInfo, Criminal IP). No account for basic use.",
+    "opsec": "passive",
+    "opsecNote": "Passive against the target — the site queries geolocation databases, not the subject's host, so nothing reaches them. Your query is logged by IPLocation.io; don't submit anything you must keep confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregator over several commercial IP databases; useful for cross-checking, but IP geolocation is inherently approximate — never treat city-level results as a person's address.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "iplocation.io",
+      "IPLocation.io"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "ip-geolocation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-location-io.md"
   },
   {
@@ -81762,42 +81769,50 @@
   {
     "id": "retire-js",
     "name": "Retire.js",
-    "description": "GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries",
+    "description": "Use when you have a `domain`/web app and want to fingerprint the JavaScript libraries it loads and flag known-vulnerable versions — returns metadata-exif (tech stack) and domain leads.",
     "url": "https://chrome.google.com/webstore/detail/retirejs/moibopkbhjceeedibkbkbchbjnkadmom/related",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting which JavaScript libraries (and vulnerable versions) a website uses, via a browser extension or CLI.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
+      "metadata-exif",
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source. Available as a Chrome/Firefox extension, an npm CLI, a Burp/ZAP plugin, and a Grunt task.",
+    "opsec": "passive",
+    "opsecNote": "The extension inspects JavaScript your browser already loaded from normally visiting the site — no extra probing of the target, so it's as passive as an ordinary visit. Still, that visit reaches the target's server from your IP; use a sock-puppet browser/VPN if the visit itself must not be attributed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-established open-source project (RetireJS) maintained against a public vulnerability database; widely used in appsec.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Retire.js",
+      "RetireJS"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Source Code Analyzes"
+      "Source Code Analyzes",
+      "tech-fingerprint"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/retire-js.md"
   },
   {
@@ -345761,38 +345776,50 @@
   {
     "id": "bikemap",
     "name": "Bikemap",
-    "description": "biking route world map",
+    "description": "Use when you have a `username` or `geolocation` and want user-uploaded cycling routes that can reveal a person's home area and movement patterns — returns geolocation and social-profile leads.",
     "url": "https://www.bikemap.net/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing user-shared cycling routes worldwide; public routes/profiles can leak a rider's home area and habits.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse public routes and profiles; premium unlocks navigation/offline features. A free account is needed to save routes.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse public routes/profiles that riders chose to share, without contacting them. As with Strava-style data, public routes can inadvertently reveal a rider's home/start point; you are reading, not probing. Use a sock-puppet account if you sign in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established cycling-route community platform; route data is user-generated, so accuracy and completeness vary and only public content is visible.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "bikemap.net"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Routes"
+      "Routes",
+      "fitness-app"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/bikemap.md"
   },
   {
@@ -348257,41 +348284,47 @@
   {
     "id": "flightconnections",
     "name": "FlightConnections",
-    "description": "OSINT tool: FlightConnections.",
+    "description": "Use when you have an airport, airline `name`, or route and want to see which airlines fly it and all direct destinations from an airport — returns geolocation (routes, reachable cities) leads.",
     "url": "https://www.flightconnections.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping which airlines operate a route and every direct destination reachable from a given airport.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view route maps and airline/airport connections in the browser; some advanced filters/features may be behind a paid tier. No account needed for basic use.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — a public route-map reference. Browsing reveals nothing about your target and touches only FlightConnections' site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used flight-route reference; schedules/routes come from airline timetable data and can lag real-world changes (new/dropped routes, seasonal service).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "flightconnections.com"
+    ],
     "tags": [
-      "aviation"
+      "aviation",
+      "routes"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/flightconnections.md"
   },
   {

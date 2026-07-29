@@ -281,7 +281,6 @@ kind: group-index
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.
 - **`phishingseclists`** (low) — OSINT tool: PhishingSecLists.
-- **`phone-number-search-constructor`** (low) — OSINT tool: Phone Number Search Constructor.
 - **`pidgin`** (low) — OSINT tool: Pidgin.
 - **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (low) — A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journal

@@ -229,7 +229,7 @@ kind: group-index
 - **`ip-geo-location-lookup`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/region/city, coordinates, ISP and AS
 - **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
 - **`ip-investigation-toolbox`** (low) — Use when you have an `ip-address` and want many lookups at once — returns `geolocation`, routing, open ports, and threat/host data from 15 s
-- **`ip-location-io`** (low) — OSINT tool: IP Location.io.
+- **`ip-location-io`** (low) — Use when you have an `ip-address` and want its approximate geolocation, ISP/ASN/org, and proxy/threat flags across several databases — retur
 - **`ip-neighbors`** (low) — Use when you have a `domain`/hostname and want the other sites sharing its server — resolves the host to its IP and lists the co-hosted `dom
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
 - **`ip2geo-dev`** (low) — Use when you have an `ip-address` and want programmatic geolocation — returns country/city `geolocation`, ISP and ASN via a REST API or SDK.
@@ -343,7 +343,7 @@ kind: group-index
 - **`registerit-whois-lookup`** (low) — Use when you have a `domain` and want to check its registration and availability — returns registrant/registrar WHOIS details where not priv
 - **`remote-dns-lookup`** (low) — Use when you have an `ip-address` and want the domain name(s) and ISP behind it — returns reverse-DNS host and provider, a pivot from IP bac
 - **`repolist`** (low) — Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists fr
-- **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
+- **`retire-js`** (low) — Use when you have a `domain`/web app and want to fingerprint the JavaScript libraries it loads and flag known-vulnerable versions — returns 
 - **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
 - **`reverse-google-analytics`** (low) — Use when you have a `domain` and want the other sites run by the same operator — finds domains sharing its Google Analytics/AdSense tracking

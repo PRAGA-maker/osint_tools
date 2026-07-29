@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/ioc-tools
 
 ## Skills here
-- **`cacador`** (low) — Indicator extraction and deduplication
+- **`cacador`** (low) — Use when you have a report, threat feed, or blob of text and want to extract and deduplicate indicators (IPs, domains, emails, hashes, URLs)
 - **`ioc-parser`** (low) — Use when you have a `domain`/threat report (PDF/HTML/text) and want the indicators pulled out — returns structured IOCs (domains, IPs, hashe
 - **`iocextract`** (low) — Use when you have text with defanged/obfuscated indicators and want them extracted and refanged — returns clean IOCs (domains, IPs, URLs, ha
 - **`jager`** (low) — IOC collection and aggregation

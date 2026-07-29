@@ -64,7 +64,7 @@ kind: group-index
 - **`council-on-foreign-relations`** (medium) — Use when you have an `employer-org` or `name` in the defense/security/geopolitics space and want authoritative background, conflict trackers
 - **`crn-com-technology-news-for-solution-providers`** (low) — Use when you have an IT-industry person `name` or `employer-org` and want news coverage placing them in a company, role, or event — returns 
 - **`ctv-news-worldwide-canada`** (medium) — Use when you have a `name` and want Canadian national/local news coverage of a subject — returns `social-profile`/mention, event dates and n
-- **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
+- **`deck-for-reddit`** (low) — Use when you have `username`s or subreddits to watch and want a multi-column TweetDeck-style dashboard to monitor them side by side — return
 - **`defencetalk-com`** (medium) — Use when you have a `username` or defence-topic interest and want to trace a member on the DefenceTalk military forum — returns social-profi
 - **`defuse`** (medium) — Use when you have found a `defuse.ca` pastebin link in a subject's trail and want to read it — decrypts a client-side-encrypted paste you al
 - **`deviantart`** (medium) — Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and communit
