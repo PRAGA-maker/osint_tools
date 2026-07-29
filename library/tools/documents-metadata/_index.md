@@ -162,7 +162,7 @@ kind: group-index
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`mediainforobot`** (low) — telegram bot to getting metadata from different types of files
 - **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
-- **`mendeley-academic-research-manager`** (low) — Academic-related research manager allowing the colloboration and sharing of data online
+- **`mendeley-academic-research-manager`** (low) — Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
 - **`microsoft-office-online`** (low) — Use when you have a suspect Office `document-id` (a .docx/.xlsx/.pptx file or link) and want to open and inspect it safely in-browser — retu
 - **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.

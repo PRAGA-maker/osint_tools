@@ -337,7 +337,6 @@ kind: group-index
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
-- **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
 - **`send-text-free`** (low) — Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, no
 - **`send`** (low) — OSINT tool: Send.
 - **`sendatext`** (low) — OSINT tool: SendaText.
@@ -374,7 +373,7 @@ kind: group-index
 - **`spybot-search-and-destroy`** (low) — Malware and virus detection and elimination program
 - **`srware-iron`** (low) — OSINT tool: SRWare Iron.
 - **`ssn-generator`** (low) — OSINT tool: SSN Generator.
-- **`stealthy-proxy-server-extension-chrome`** (low) — Add-on for Google Chrome that allows for anonymous browsing and viewing material blocked by nationality
+- **`stealthy-proxy-server-extension-chrome`** (low) — Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, tru
 - **`stegonline`** (low) — Use when you have an `image` suspected of hiding data — returns extracted bit-planes, embedded strings/files, and `metadata-exif` from in-br
 - **`storyful-multisearch-chrome-add-on`** (low) — Add-on that provides multi-media search engine capabilities and results viewing
 - **`stutterbox`** (low) — OSINT tool: Stutterbox.

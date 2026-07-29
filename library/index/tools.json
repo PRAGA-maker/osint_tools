@@ -2877,37 +2877,47 @@
   {
     "id": "crossfilter",
     "name": "Crossfilter",
-    "description": "OSINT tool: Crossfilter.",
+    "description": "Use when you have a large multi-dimensional dataset and want fast interactive filtering in the browser — a JS library for exploring OSINT records across many fields at once.",
     "url": "http://square.github.io/crossfilter",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building fast, linked, multi-dimensional filters over big local datasets (records, events, transactions) for interactive exploration.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Apache-2.0); a client-side JavaScript library loaded from GitHub/CDN. No account or service.",
+    "opsec": "passive",
+    "opsecNote": "Crossfilter runs entirely in the browser on data you load — it calls no external service, so it's safe for offline/air-gapped analysis of sensitive datasets. Keep sensitive dashboards on a local page and self-host the library rather than pulling it from a public CDN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known open-source library (originally from Square) for coordinated multi-dimensional filtering, commonly paired with dc.js/D3; mature though only lightly maintained now.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "observable",
+      "highcharts"
+    ],
+    "aliases": [
+      "crossfilter.js"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/crossfilter.md"
   },
   {
@@ -8848,37 +8858,44 @@
   {
     "id": "lucidchart",
     "name": "Lucidchart",
-    "description": "OSINT tool: Lucidchart.",
+    "description": "Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org maps from your findings.",
     "url": "https://www.lucidchart.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Building link-analysis / association charts, entity-relationship maps and timelines to visualize how people, orgs and events connect.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows a limited number of documents/objects; larger diagrams, collaboration and advanced features are paid. The free tier suffices for small case maps.",
+    "opsec": "passive",
+    "opsecNote": "Lucidchart is cloud-hosted (documents stored on Lucid's servers, easy to share by link) — never put real names, identifiers, or sensitive case data into a document that could be shared or left public. For sensitive link charts, use a local/offline diagram tool, or pseudonymize entities. It contacts no subject; the risk is your own data living in someone else's cloud.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A mainstream, established commercial diagramming SaaS (Lucid Software); reliable as a tool. Trust concern is operational (cloud storage/sharing of sensitive case data), not tool integrity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Lucidchart",
+      "Lucid"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "link-analysis"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/lucidchart.md"
   },
   {
@@ -15812,41 +15829,51 @@
   {
     "id": "the-scraper",
     "name": "The Scraper",
-    "description": "Simple tool for scrapping emails and social media accounts from the website's source code.",
+    "description": "Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profile` links from page source.",
     "url": "https://github.com/champmq/TheScrapper",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting emails, phone numbers and linked social-media accounts from a website's source for footprinting an org or person behind a site.",
     "selectorsIn": [
-      "email"
+      "domain"
     ],
     "selectorsOut": [
+      "email",
+      "phone",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Python 3, GPL-3.0). Runs as a CLI or a Streamlit web UI; supports batch input from CSV/Excel.",
+    "opsec": "active",
+    "opsecNote": "It crawls the target site directly, so your IP appears in that site's logs — modest for a single site, more conspicuous when batching many URLs. Use a VPN/sock-puppet for target-facing crawls and keep depth reasonable. Extracted contact data is personal information; handle it lawfully and only for legitimate investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source, moderately-starred community scraper (champmq/TheScrapper) with public, auditable source; simple pattern-based extraction, so expect some noise and verify hits.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TheScrapper",
+      "The Scrapper"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "scraper",
+      "contact-extraction"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/the-scraper.md"
   },
   {
@@ -17277,40 +17304,48 @@
   {
     "id": "wasitai",
     "name": "WasItAI",
-    "description": "Quick AI content checks for text and images during media verification",
+    "description": "Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verification.",
     "url": "https://wasitai.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Quick AI content checks for text and images during media verification",
-    "input": "Text or image file",
-    "output": "AI-generated probability classification",
-    "selectorsIn": [],
+    "bestFor": "Screening a photo/profile picture for signs it was AI-generated (Midjourney/DALL·E/Stable Diffusion) during verification.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free credits on sign-up (renew monthly) and a small guest allowance; heavier use, detailed reports and API access need an account/paid credits.",
     "opsec": "active",
-    "opsecNote": "Content submitted to third-party servers for analysis; not suitable for sensitive material.",
+    "opsecNote": "The image is uploaded to WasItAI's servers for analysis, so never submit sensitive/evidentiary media you can't expose to a third party — upload only a non-sensitive copy, and strip identifying EXIF first. It doesn't contact the image's subject, but the upload itself leaves the file with an external service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party AI-image detector; such classifiers are probabilistic and error-prone (both false positives and misses), so treat any verdict as one weak signal, not proof.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WasItAI",
+      "wasitai.com"
+    ],
+    "tags": [
+      "media-verification",
+      "ai-detection",
+      "image-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/wasitai.md"
   },
   {
@@ -55108,41 +55143,51 @@
   {
     "id": "mendeley-academic-research-manager",
     "name": "Mendeley Academic Research Manager",
-    "description": "Academic-related research manager allowing the colloboration and sharing of data online",
+    "description": "Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author profiles and shared libraries.",
     "url": "https://www.mendeley.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Managing case sources/citations and browsing researchers' public Mendeley profiles and publication lists.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create an account, manage references, and use the desktop/web app; larger storage and enterprise features are paid. Public author profiles are viewable without paying.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Two modes — as a documentation tool it stores YOUR source library (keep sensitive case citations in a private/local library, since Mendeley is Elsevier-hosted cloud); as a lookup it reads researchers' public profiles passively without contacting them. Don't put investigation-sensitive notes into a synced cloud library.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Elsevier; a mainstream, established academic reference manager. Public profile/publication data is user-provided and Elsevier-hosted — reliable but reflects what researchers chose to publish.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "auth": "account",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Mendeley",
+      "Mendeley Reference Manager"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "academic"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/mendeley-academic-research-manager.md"
   },
   {
@@ -66114,42 +66159,6 @@
     "_file": "library/tools/domains-ip-infrastructure/geolocation/db-ip.md"
   },
   {
-    "id": "dedicated-or-not",
-    "name": "Dedicated or Not",
-    "description": "OSINT tool: Dedicated or Not.",
-    "url": "http://dedicatedornot.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/dedicated-or-not.md"
-  },
-  {
     "id": "deepviz-domain-search",
     "name": "Deepviz Domain Search",
     "description": "Domain/IP threat intelligence, malware analysis, threat feed subscription",
@@ -66807,46 +66816,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/dns-recon.md"
-  },
-  {
-    "id": "dns-sinkhole",
-    "name": "DNS Sinkhole",
-    "description": "DNS-based malware blocking",
-    "url": "https://malc0de.com/bl/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "domain-blacklists"
-    ],
-    "bestFor": "DNS-based malware blocking",
-    "input": "DNS zone file",
-    "output": "Malware domain sinkhole list",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public malware database; Cloudflare CAPTCHA protection added",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/dns-sinkhole.md"
   },
   {
     "id": "dns-twist",
@@ -153355,43 +153324,43 @@
   {
     "id": "gjirafa",
     "name": "Gjirafa",
-    "description": "Mapping service for Albania (specially Kosovo)",
+    "description": "Use when you have a `geolocation`/`address` in Albania or Kosovo and want local mapping/place data — a regional map service with stronger Balkan coverage than global maps.",
     "url": "https://gjirafa.biz/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Local mapping, place names and business listings for Albania and Kosovo, where global map providers are often thin.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; part of the Gjirafa group (the region's main tech/search/media company). A consent/SSO gate (bisko.io) may appear but browsing the map is free.",
+    "opsec": "passive",
+    "opsecNote": "Passive map browsing — you query the service about a place, not a person, and nothing reaches a subject. Note it's a regional commercial service that may set cookies/consent (bisko.io) and can log queries; use a clean/VPN'd session for sensitive location work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Gjirafa, the dominant Albania/Kosovo internet company; regionally authoritative for local place data, though not an official cadastral/government source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "al"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "maps"
+      "maps",
+      "balkans"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/gjirafa.md"
   },
   {
@@ -182438,40 +182407,6 @@
     "_file": "library/tools/opsec-investigator-tooling/security-first-umbrella.md"
   },
   {
-    "id": "security-in-a-box",
-    "name": "Security in a Box",
-    "description": "OSINT tool: Security in a Box.",
-    "url": "https://securityinabox.org/en/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/security-in-a-box.md"
-  },
-  {
     "id": "send",
     "name": "Send",
     "description": "OSINT tool: Send.",
@@ -184007,41 +183942,45 @@
   {
     "id": "stealthy-proxy-server-extension-chrome",
     "name": "Stealthy Proxy Server Extension (Chrome)",
-    "description": "Add-on for Google Chrome that allows for anonymous browsing and viewing material blocked by nationality",
+    "description": "Use when you need one-click proxy browsing to reach geo-blocked sites — a free Chrome proxy extension; convenient, but a weak-anonymity, trust-the-provider option.",
     "url": "https://chrome.google.com/webstore/detail/stealthy/ieaebnkibonmpbhdaanjkmedikadnoje",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly viewing geo-restricted/censored web content from another apparent location during OSINT browsing.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free Chrome extension (100k+ users). A free proxy — no paid tier required, which itself is a caution (see OpSec).",
+    "opsec": "active",
+    "opsecNote": "A free browser proxy routes your traffic through a third party who can see and log it — it changes your apparent location but is NOT trustworthy anonymity. Never send credentials or sensitive investigation traffic through it, don't log into real accounts while it's on, and prefer a reputable VPN or Tor for genuine OpSec. Use it only for low-stakes \"view what a geo-blocked page shows\" checks, ideally in a throwaway profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party free proxy extension; free proxies have inherent trust problems (traffic visibility, unknown logging). Functional for geo-unblocking, but not a vetted privacy tool.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Stealthy extension"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "proxy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/stealthy-proxy-server-extension-chrome.md"
   },
   {
@@ -225792,13 +225731,13 @@
   {
     "id": "financial-conduct-authority",
     "name": "Financial Conduct Authority",
-    "description": "OSINT tool: Financial Conduct Authority.",
+    "description": "Use when you have a `name` or firm and want to check UK financial regulation status — the FCA Register returns regulated firms/individuals, their status and `employer-org` links.",
     "url": "https://register.fca.org.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a person or firm is FCA-authorised in the UK and pulling their regulatory history, roles and linked firms.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -225807,28 +225746,37 @@
       "employer-org",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and public; no account needed to search the FCA Financial Services Register.",
+    "opsec": "passive",
+    "opsecNote": "An official public register — searching it is passive, anonymous, and never notifies the subject. Safe to query directly; no sock puppet required for the lookup itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official register of the UK's financial regulator (FCA); authoritative for authorisation status, approved-person roles, and regulatory actions in the UK.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FCA Register",
+      "FCA Financial Services Register",
+      "register.fca.org.uk"
+    ],
     "tags": [
-      "corporate"
+      "corporate",
+      "regulatory",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/financial-conduct-authority.md"
   },
   {
@@ -274620,42 +274568,6 @@
       "kali-linux-os"
     ],
     "_file": "library/tools/search-engines/goofile.md"
-  },
-  {
-    "id": "goofram",
-    "name": "Goofram",
-    "description": "OSINT tool: Goofram.",
-    "url": "http://www.goofram.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "meta-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/goofram.md"
   },
   {
     "id": "google",

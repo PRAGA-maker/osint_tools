@@ -298,7 +298,7 @@ kind: group-index
 - **`felon-spy`** (low) — Do NOT use — a documented hoax that returns randomly-generated fake "criminal neighbor" data; it identifies no real person and has no OSINT 
 - **`filae-com`** (high) — Use when you have a `name` and want French civil/genealogical records (births, marriages, deaths, census) — returns dob/dates, places (addre
 - **`finance-ni-gov-uk`** (high) — Use when you have a Northern Ireland property `address` and want its official valuation/rating record — returns the property's capital value
-- **`financial-conduct-authority`** (low) — OSINT tool: Financial Conduct Authority.
+- **`financial-conduct-authority`** (low) — Use when you have a `name` or firm and want to check UK financial regulation status — the FCA Register returns regulated firms/individuals, 
 - **`financialplanning-org-uk`** (high) — Use when you have a `name`, firm or UK location and want to confirm a certified financial planner — returns the planner's name, firm/employe
 - **`fincen-msb-registrant-search`** (low) — Use when you have a business `name` (or a person tied to one) and want to check whether it registered with FinCEN as a money services busine
 - **`find-a-prisoner`** (high) — Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public d

@@ -20,7 +20,7 @@ kind: group-index
 - **`default-passwords/`** — 7 skill(s) below.
 - **`discovery/`** — 12 skill(s) below.
 - **`dnssec/`** — 2 skill(s) below.
-- **`domain-blacklists/`** — 7 skill(s) below.
+- **`domain-blacklists/`** — 6 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
 - **`geolocation/`** — 8 skill(s) below.
 - **`host-port-discovery/`** — 4 skill(s) below.
@@ -124,7 +124,6 @@ kind: group-index
 - **`cve-map`** (low) — Use when you have a product, vendor, or CVE ID and want structured vulnerability data from the command line — returns CVE details (severity,
 - **`cvecrowd`** (low) — Use when you have a `domain`/product and want to know which CVEs the security community is actively discussing right now — returns trending 
 - **`dark-web-informer`** (low) — Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and
-- **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
 - **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
 - **`dirhunt`** (low) — Use when you have a `domain` and want to discover and analyse its web directories — finds "index of" listings, hidden folders and files acro
 - **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website

@@ -82,7 +82,7 @@ kind: group-index
 - **`copyleaks`** (low) — Use when you need to test whether text/a document is plagiarized or AI-generated — paste content and get a plagiarism percentage, AI-probabi
 - **`creately`** (low) — OSINT tool: creately.
 - **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
-- **`crossfilter`** (low) — OSINT tool: Crossfilter.
+- **`crossfilter`** (low) — Use when you have a large multi-dimensional dataset and want fast interactive filtering in the browser — a JS library for exploring OSINT re
 - **`crowdsec`** (low) — Use when you have an `ip-address` and want crowd-sourced threat reputation on it — CrowdSec's CTI shows whether the IP is a known attacker, 
 - **`csvkit`** (low) — Use when you have a bulk data dump (CSV/Excel/JSON) and want to slice, search, join, and query it from the command line to pull out records 
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
@@ -209,7 +209,7 @@ kind: group-index
 - **`lockbin`** (low) — OSINT tool: Lockbin.
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
 - **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
-- **`lucidchart`** (low) — OSINT tool: Lucidchart.
+- **`lucidchart`** (low) — Use when you want to map an investigation's link/network diagram — a web diagramming tool for building association charts, timelines and org
 - **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
 - **`mailbox`** (low) — OSINT tool: Mailbox.
 - **`mailvelope`** (low) — Use when you need to send or read OpenPGP-encrypted email in a webmail account (or manage PGP keys) — a browser extension that adds end-to-e
@@ -357,7 +357,7 @@ kind: group-index
 - **`the-citizen-lab`** (low) — Use when you need authoritative research on spyware, surveillance, censorship and digital threats — a research group's report feed you can m
 - **`the-fuck`** (low) — Simple app which corrects your previous console commands.
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
-- **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
+- **`the-scraper`** (low) — Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profi
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
 - **`tik-tok`** (low) — Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualiz
@@ -389,7 +389,7 @@ kind: group-index
 - **`voidaccess`** (low) — OSINT tool: VoidAccess.
 - **`voidly-censorship-index`** (low) — Use when you have a country/`geolocation` and want to know which platforms are blocked and how heavily it censors — returns per-country cens
 - **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
-- **`wasitai`** (low) — Quick AI content checks for text and images during media verification
+- **`wasitai`** (low) — Use when you have an `image` and want to check if it's AI-generated — an image detector returning a real-vs-AI probability for media verific
 - **`waybackurls`** (low) — Use when you have a `domain` and want every URL the Wayback Machine has ever archived for it — returns historical `domain`/URL paths (old pa
 - **`webassistant`** (low) — OSINT tool: WebAssistant.
 - **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.

@@ -43,7 +43,7 @@ kind: group-index
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Use when you have a `name` of a healthcare provider in Georgia (US) and want to verify their license — returns license status, type, number,
 - **`getlostgame-app`** (low) — Use when you want to train and sharpen geolocation skills on random street-view scenes — a free GeoGuessr-style game; it builds the skill, i
 - **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from
-- **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
+- **`gjirafa`** (low) — Use when you have a `geolocation`/`address` in Albania or Kosovo and want local mapping/place data — a regional map service with stronger Ba
 - **`global-forest-watch`** (low) — Use when you have a `geolocation`/`address` and want land-cover, deforestation and fire-alert history there — returns dated forest-change an
 - **`global-monitoring-system-ecosolve`** (low) — Use when investigating online illegal wildlife trade and you want AI-monitored market data across key countries — returns aggregated traffic
 - **`go-kml-maps`** (medium) — Use when you have a KML/geospatial `geolocation` file and want to render/overlay it on Google Maps — returns an interactive `geolocation` ma
