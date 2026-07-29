@@ -240,7 +240,7 @@ kind: group-index
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
 - **`ipinfo-map`** (low) — Use when you have one or many `ip-address`es and want to see where they geolocate — returns a plotted world map with per-IP `geolocation`.
 - **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
-- **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
+- **`iptools-robot`** (low) — Use when you have a `domain` or `ip-address` and want a one-message Telegram bot to return whois, DNS, SSL, open ports, geolocation, threat 
 - **`ipvoid`** (low) — Use when you have an ip-address or domain and want reputation, geolocation, blacklist status, WHOIS and DNS details in one place — returns g
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
 - **`ismalicious`** (low) — Use when you have a `domain`, `ip-address`, URL, `email`, `crypto-wallet` or file hash and want an aggregated reputation verdict across 570+

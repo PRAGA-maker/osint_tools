@@ -416,7 +416,6 @@ kind: group-index
 - **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
 - **`newslink`** (low) — OSINT tool: Newslink.
 - **`newslookup-com`** (low) — OSINT tool: Newslookup.com.
-- **`newslookup`** (low) — OSINT tool: NewsLookup.
 - **`newsnow-canada`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want current + recent Canadian news mentions aggregated from many outlets — retur
 - **`newsnow`** (low) — Use when you have a `name`, org, or topic and want fast, real-time aggregated news coverage across thousands of sources — returns dated head
 - **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.

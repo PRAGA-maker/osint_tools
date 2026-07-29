@@ -5819,40 +5819,53 @@
   {
     "id": "google-play-scraper",
     "name": "Google Play Scraper",
-    "description": "get the most detailed",
+    "description": "Use when you have a `username` (developer handle) or an app package name and want to pull an app's full Google Play listing, developer catalog, and reviews programmatically — returns employer-org, associate, and device-id leads.",
     "url": "https://github.com/facundoolano/google-play-scraper",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scripting bulk extraction of Google Play app metadata, developer app catalogs, and user reviews.",
+    "selectorsIn": [
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "MIT-licensed Node.js library; free to install and run. No API key or Google account required.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Google Play's public web endpoints from your IP. High-volume scraping can trigger rate limiting or a temporary block, so throttle requests and consider a proxy for large runs. No login means no attribution to a named account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Widely-used open-source scraper (facundoolano) with thousands of GitHub stars; author has stated it is no longer actively maintained and may break when Google changes its page layout.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "app-store-scraper"
+    ],
+    "aliases": [
+      "google-play-scraper",
+      "gplay-scraper"
+    ],
     "tags": [
       "Apps and programs"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "app-store-scraper"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/google-play-scraper.md"
   },
   {
@@ -8640,37 +8653,40 @@
   {
     "id": "lol-monitor",
     "name": "lol_monitor",
-    "description": "OSINT tool: lol_monitor.",
+    "description": "Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real time — returns social-profile, associate and geolocation-timing leads.",
     "url": "https://github.com/misiektoja/lol_monitor",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gaming-platforms"
+    "bestFor": "Real-time monitoring of a League of Legends player's online/match activity with CSV activity logs.",
+    "selectorsIn": [
+      "username"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "GPL-3.0 open-source Python; free. Requires your own free Riot API key and Python 3.12+.",
+    "opsec": "passive",
+    "opsecNote": "Polls Riot's public API using your own API key — you never contact the target, and they get no notification. The monitored player cannot see they are being watched. Keep your Riot API key private; run from an environment you control.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Part of misiektoja's well-regarded family of activity monitors (steam/psn/xbox/spotify/instagram etc.); active open-source project, but data accuracy depends on Riot's API exposing match state.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
     "relatedTools": [
       "github-monitor",
       "instagram-monitor",
@@ -8681,6 +8697,16 @@
       "steam-monitor",
       "xbox-monitor"
     ],
+    "aliases": [
+      "lol_monitor",
+      "League of Legends monitor"
+    ],
+    "tags": [
+      "gaming-platforms"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/lol-monitor.md"
   },
   {
@@ -71568,29 +71594,38 @@
   {
     "id": "hunting-new-registered-domains",
     "name": "Hunting-New-Registered-Domains",
-    "description": "Phishing domain detection and brand threat monitoring",
+    "description": "Use when you have a brand/keyword/domain and want to catch newly registered look-alike domains (typosquat/phishing) from the daily new-domains feed — returns domain, ip-address and metadata-exif leads.",
     "url": "https://github.com/gfek/Hunting-New-Registered-Domains",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "tools"
     ],
-    "bestFor": "Phishing domain detection and brand threat monitoring",
+    "bestFor": "Detecting typosquatting/phishing domains by scanning the daily newly-registered-domains list for permutations of a keyword.",
     "input": "Domain patterns or keywords",
     "output": "List of newly registered matching domains",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Open-source Python (hnrd.py); free. Consumes the free daily Whoisds new-domains list. A VirusTotal API key is optional for detection enrichment.",
     "opsec": "passive",
-    "opsecNote": "WHOIS queries may create observable patterns; otherwise passive",
+    "opsecNote": "Works from the public Whoisds daily list plus lookups (DNS, whois, SSL, VirusTotal); it does not contact the suspect domain's owner. Enrichment lookups (whois/DNS/VT) go out from your IP and are logged by those services — use API keys and, if needed, a proxy for the enrichment stage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source tool (gfek, hundreds of GitHub stars); relies on the third-party Whoisds daily feed for completeness.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -71598,11 +71633,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "hnrd",
+      "Hunting New Registered Domains"
+    ],
+    "tags": [
+      "phishing",
+      "typosquatting",
+      "Domain/IP investigation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/tools/hunting-new-registered-domains.md"
   },
   {
@@ -74394,42 +74436,55 @@
   {
     "id": "iptools-robot",
     "name": "@iptools_robot",
-    "description": "univsersal domain investigation Telegram bot",
+    "description": "Use when you have a `domain` or `ip-address` and want a one-message Telegram bot to return whois, DNS, SSL, open ports, geolocation, threat reports, cookies and page metadata — returns ip-address, domain, geolocation and metadata-exif leads.",
     "url": "https://t.me/iptools_robot",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Fast all-in-one domain/IP recon from inside Telegram — whois, DNS, SSL, ports, geo, threat and metadata in one reply.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "ip-address",
+      "domain",
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free to query via Telegram; may rate-limit heavy use or gate advanced checks. No API key needed for basic lookups.",
+    "opsec": "passive",
+    "opsecNote": "The bot performs the lookups from its own infrastructure, so your IP does not touch the target — but you disclose your query (and your Telegram identity) to a third-party bot of unknown operator. Use a sock-puppet Telegram account and never query anything you must keep confidential.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Telegram bot of unknown operator; convenient aggregator but not authoritative. Confirm any actionable result on a first-party source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "iptools_robot",
+      "IP Tools Telegram bot"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Domain/IP investigation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/iptools-robot.md"
   },
   {
@@ -105748,37 +105803,48 @@
   {
     "id": "stream-downloader",
     "name": "Stream Downloader",
-    "description": "Download streams from different sites",
+    "description": "Use when you have a `url` to a video/audio/live-stream page (mostly Chinese platforms) and want to archive the media as evidence — returns a downloaded media file with metadata-exif.",
     "url": "https://github.com/lunnlew/stream-downloader",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Command-line archiving of video/audio from Chinese streaming platforms (Bilibili, Youku, iQIYI, Tencent, Ximalaya, etc.).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "MIT-licensed, free. Installed via npm; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Downloading fetches the media from the source platform over your IP like any normal viewer. Live-stream capture is real-time and leaves normal viewer traffic. Use a VPN/proxy if you must not reveal your IP to the platform. Archive promptly — streams and live content disappear.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source (lunnlew) but the repository was archived read-only in November 2021 and is no longer maintained; site-specific extractors may have broken as platforms changed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "stream-dl",
+      "stream-downloader"
+    ],
     "tags": [
       "Downloaders"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/stream-downloader.md"
   },
   {
@@ -109737,47 +109803,6 @@
     "_file": "library/tools/financial-crypto/north-data.md"
   },
   {
-    "id": "numbers",
-    "name": "Numbers",
-    "description": "Search NFT by Content ID, Commit hash, keywords or uploaded photo.",
-    "url": "https://nftsearch.site/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "image"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NFT"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/numbers.md"
-  },
-  {
     "id": "opensea",
     "name": "OpenSea",
     "description": "Use when you have a `crypto-wallet` address and want its NFT holdings and trading history — returns the wallet's owned/created NFTs, transfers, sales, and offers across multiple chains.",
@@ -112500,38 +112525,52 @@
   {
     "id": "calls-node-status",
     "name": "Calls Node Status",
-    "description": "OSINT tool: Calls Node Status.",
+    "description": "Use when you have a `geolocation` or a radio system of interest and want to see which Broadcastify Calls ingest nodes are live and recently active — returns geolocation and device-id (node) leads.",
     "url": "https://www.broadcastify.com/calls/status/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking which Broadcastify Calls ingest nodes are online and when each last relayed radio traffic.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The status page is free to view. Listening to some Calls feeds/archives may require a free account or Premium subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only public dashboard; viewing it reveals nothing about your target and touches only Broadcastify's own infrastructure. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party status page operated by Broadcastify (RadioReference); the node list itself is authoritative for their network, though coverage depends on volunteer ingest operators.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "broadcastify"
     ],
+    "aliases": [
+      "Broadcastify Calls Node Status"
+    ],
+    "tags": [
+      "radio",
+      "scanner"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/calls-node-status.md"
   },
   {
@@ -177881,38 +177920,52 @@
   {
     "id": "manytools",
     "name": "Manytools",
-    "description": "Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.",
+    "description": "Use when you have a raw artifact (an IP, a hash, a user-agent string, an image) and want a quick free browser utility to transform or inspect it — returns ip-address, metadata-exif, and domain leads.",
     "url": "https://manytools.org",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A grab-bag of free single-purpose web utilities (whois, DNS, user-agent parse, hashing, image tools) for quick one-off conversions.",
+    "selectorsIn": [
+      "ip-address",
+      "domain",
+      "image"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for non-commercial/private use; no account required. Some pages carry ads.",
+    "opsec": "passive",
+    "opsecNote": "Network lookups (whois, DNS, IP) run from Manytools' servers, so the target is not touched from your IP — but you disclose your query to a third-party site. Do not paste sensitive data (real target images/hashes you must keep confidential) into an untrusted web utility; download the tool locally instead when confidentiality matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small independent utility site; useful but not an authoritative data source. Treat lookup results as convenience, verify anything important elsewhere.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "manytools.org"
+    ],
     "tags": [
       "NOOSINT tools",
       "Routine/Data Extraction Automation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/manytools.md"
   },
   {
@@ -179091,38 +179144,55 @@
   },
   {
     "id": "offen-osint",
-    "name": "Offen Osint",
-    "description": "OSINT tool: Offen Osint.",
+    "name": "OffenOsint",
+    "description": "Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working investigation environment (name, username, domain, ip-address leads via its bundled tools).",
     "url": "https://github.com/Double2Sky/OffenOsint",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A downloadable Kali-based VM image pre-configured with a full OSINT/recon toolchain and Tor/VPN plumbing.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free .OVA download; built on Kali Linux and other FOSS tools. Needs VirtualBox and disk space to run.",
+    "opsec": "passive",
+    "opsecNote": "The VM ships with Tor/VPN plumbing so you can route collection through an anonymizing layer — configure and verify it BEFORE running any active tool. The image itself is inert; opsec depends on how you use the bundled tools (some, like port scanners, are active and touch targets). Download the OVA from the official repo and verify integrity before importing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Community project (Double2Sky) bundling well-known FOSS tools; it repackages trusted upstreams but is itself an individual's beta release — inspect what it installs before trusting it with sensitive work.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OffenOsint",
+      "Offensive OSINT VM"
+    ],
     "tags": [
       "Virtual Machines/Linux distributions"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/offen-osint.md"
   },
   {
@@ -283083,45 +283153,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/newslink.md"
-  },
-  {
-    "id": "newslookup",
-    "name": "NewsLookup",
-    "description": "OSINT tool: NewsLookup.",
-    "url": "http://www.newslookup.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "newslookup-com"
-    ],
-    "_file": "library/tools/search-engines/newslookup.md"
   },
   {
     "id": "newslookup-com",

@@ -29,7 +29,7 @@ kind: group-index
 - **`page-links-extractor-tool`** (low) — OSINT tool: Page Links Extractor Tool.
 - **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
 - **`soundscrape`** (low) — Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com.
-- **`stream-downloader`** (low) — Download streams from different sites
+- **`stream-downloader`** (low) — Use when you have a `url` to a video/audio/live-stream page (mostly Chinese platforms) and want to archive the media as evidence — returns a
 - **`timeline-js3`** (medium) — Use when you have a set of dated events/evidence and want to build an interactive multimedia chronology — returns a shareable/embeddable web
 - **`wenku`** (low) — download documents from Baidu Wenku without registration
 - **`you-get`** (low) — Use when you have a media URL (`social-profile` post, video, image gallery) and want to download the original file as evidence — returns the

@@ -39,7 +39,7 @@ kind: group-index
 - **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a
 - **`broadcastify`** (low) — Use when you want live or archived public-safety radio for a specific `geolocation` (county/agency) — returns real-time scanner audio to cor
 - **`calcmaps`** (medium) — Use when you have a `geolocation` and need to measure on a map — returns area, distance, radius, bearing, and elevation for points/routes/po
-- **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
+- **`calls-node-status`** (low) — Use when you have a `geolocation` or a radio system of interest and want to see which Broadcastify Calls ingest nodes are live and recently 
 - **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
 - **`camvista`** (medium) — Use when you have a `geolocation` or `address` in a covered city and want a live public webcam of that spot — returns street-level `image` v
 - **`carte-ma`** (medium) — Use when you have a Moroccan `geolocation`/`address` or a street-level photo taken in Morocco and want to match or verify the scene against 

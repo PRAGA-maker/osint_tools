@@ -153,7 +153,7 @@ kind: group-index
 - **`gomapenum`** (low) — Use when you have an `employer-org` or `domain` and want to harvest employee `email` addresses and enumerate valid accounts across Microsoft
 - **`google-colaboratory`** (low) — Use when you need to run an OSINT Python tool/notebook without local install — a free cloud Jupyter environment to execute recon scripts, pr
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
-- **`google-play-scraper`** (low) — get the most detailed
+- **`google-play-scraper`** (low) — Use when you have a `username` (developer handle) or an app package name and want to pull an app's full Google Play listing, developer catal
 - **`gpg-tools`** (low) — Use for investigator-side encryption on macOS — sign/encrypt files and email with OpenPGP, and inspect PGP keys/signatures you encounter (wh
 - **`gptzero`** (low) — Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
@@ -210,7 +210,7 @@ kind: group-index
 - **`localfocus`** (low) — OSINT tool: LocalFocus.
 - **`lockbin`** (low) — OSINT tool: Lockbin.
 - **`logseq`** (low) — Use when you need to organise an investigation's notes, entities, and links into a connected knowledge graph — a local-first tool for buildi
-- **`lol-monitor`** (low) — OSINT tool: lol_monitor.
+- **`lol-monitor`** (low) — Use when you have a target's League of Legends Riot ID and want to track when they start/finish matches and log their game activity in real 
 - **`lucidchart`** (low) — OSINT tool: Lucidchart.
 - **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
 - **`mailbox`** (low) — OSINT tool: Mailbox.

@@ -248,7 +248,7 @@ kind: group-index
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
-- **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
+- **`manytools`** (low) — Use when you have a raw artifact (an IP, a hash, a user-agent string, an image) and want a quick free browser utility to transform or inspec
 - **`markmap`** (low) — Use when you have investigation notes in Markdown and want to turn them into an interactive mind map to see structure and gaps — an analysis
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
@@ -276,7 +276,7 @@ kind: group-index
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
 - **`off-the-record-instant-messaging-plug-in`** (low) — Use when you need end-to-end encrypted, deniable IM for investigator communications over XMPP/Pidgin — provides encryption, authentication, 
-- **`offen-osint`** (low) — OSINT tool: Offen Osint.
+- **`offen-osint`** (low) — Use when you want a ready-made virtual machine preloaded with 50+ OSINT and recon tools instead of installing each one — returns a working i
 - **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
