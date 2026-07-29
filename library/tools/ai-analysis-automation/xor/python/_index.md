@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`balbuzard`** (low) — Automated deobfuscation and indicator extraction from suspicious files
-- **`iheartxor-py`** (low) — Targeted extraction of XOR-obfuscated strings from binaries
+- **`iheartxor-py`** (low) — Use when you have a binary/`document-id` with XOR-obfuscated strings and want to recover them — brute-forces single-byte XOR keys within a r
 - **`nomorexor-py`** (low) — Recovering long XOR keys in malware binaries
 - **`xorbruteforcer-py`** (low) — Single-byte XOR key brute-forcing and quick validation
 

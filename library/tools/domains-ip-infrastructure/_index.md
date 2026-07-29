@@ -20,7 +20,7 @@ kind: group-index
 - **`default-passwords/`** — 7 skill(s) below.
 - **`discovery/`** — 12 skill(s) below.
 - **`dnssec/`** — 2 skill(s) below.
-- **`domain-blacklists/`** — 6 skill(s) below.
+- **`domain-blacklists/`** — 5 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
 - **`geolocation/`** — 8 skill(s) below.
 - **`host-port-discovery/`** — 4 skill(s) below.
@@ -437,7 +437,7 @@ kind: group-index
 - **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
 - **`webconfs-domain-age-tool`** (medium) — Use when you have a `domain` and want to estimate how long a website has existed — returns an approximate age based on the earliest Wayback 
 - **`webcopilot`** (low) — Use when you have a `domain` and want an automated recon chain — returns subdomains, live hosts, endpoints, and screenshots as `domain`/`ip-
-- **`webemailextractor-com`** (low) — extract email's and phone numbers from the website or list of website
+- **`webemailextractor-com`** (low) — Use when you have a `domain`/website (or list of them) and want the contact points published on it — extracts `email`s and `phone` numbers f
 - **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
 - **`webosint`** (low) — Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.
 - **`webpalm`** (low) — Use when you have a `domain` and want to map its full page tree and regex-scrape content from it — returns discovered URLs/paths and extract

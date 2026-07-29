@@ -68,7 +68,7 @@ kind: group-index
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
 - **`cylect-io`** (low) — An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
-- **`de-digger`** (low) — OSINT tool: de digger.
+- **`de-digger`** (low) — Use when you have a `name`, keyword, or filename and want publicly shared Google Drive files about a subject — returns links to exposed docu
 - **`designcrowd`** (low) — Graphic design outsourcing website
 - **`dictation-online-dictation-tool`** (low) — Use when you have audio/video and want a quick free browser transcription to text — a speech-to-text utility for turning spoken evidence int
 - **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 

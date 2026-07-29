@@ -148,7 +148,7 @@ kind: group-index
 - **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
 - **`runmap`** (low) — running routes world map
 - **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis
-- **`rzjets-net`** (low) — user updated online database (census) of civilian jet and turbojet aircraft
+- **`rzjets-net`** (low) — Use when you have an aircraft registration, serial, or type and want its history and operators — a community census of civil jet and turbopr
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
 - **`searates-container-tracking`** (low) — Use when you have a shipping container, Bill of Lading, or booking number (`document-id`) and want its current position and route — returns 
 - **`searchquarry`** (medium) — Use when you have a US `vehicle-plate`, `vin` or `name` and want vehicle/public-records data — a commercial lookup whose free tier only conf

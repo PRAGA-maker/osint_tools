@@ -98,7 +98,6 @@ kind: group-index
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a
 - **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
 - **`blogs-search-engine`** (low) — Use when you have a `name`/`username`/keyword and want a person's blog posts — returns matching blog articles and author `social-profile`s.
-- **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
 - **`blue-search`** (low) — Use when you want an alternative general web search engine (now rebranded GOOD, on the independent Brave index) to cross-check results a mai
 - **`bookfinder-search-engine`** (medium) — Use when you have an author `name` (or an ISBN) and want to confirm authorship, pseudonyms, self-published or rare titles — returns book lis
 - **`bookmarks`** (medium) — Use when you're on a target's web page and want in-browser OSINT actions — a drag-to-toolbar bookmarklet set that runs Facebook/Twitter sear
@@ -582,7 +581,7 @@ kind: group-index
 - **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`summit-county-fiscal-office`** (medium) — Use when you have a `name` or `address` in Summit County, Ohio and want property/tax records — returns the owner `name`, property `address`,
-- **`sunxdcc`** (low) — XDCC file search engine
+- **`sunxdcc`** (low) — Use when you have a filename/keyword and want to find files offered by XDCC bots on IRC — returns the network, bot, pack number, and filenam
 - **`superdesk`** (low) — OSINT tool: Superdesk.
 - **`superuser`** (medium) — Use when you have a `username` and want a matching Stack Exchange (Super User) Q&A profile — returns social-profile, activity, and technical
 - **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more

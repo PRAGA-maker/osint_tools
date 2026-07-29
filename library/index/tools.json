@@ -1805,42 +1805,6 @@
     "_file": "library/tools/ai-analysis-automation/bitwarden.md"
   },
   {
-    "id": "bizint",
-    "name": "Bizint",
-    "description": "OSINT tool: Bizint.",
-    "url": "http://www.bizint.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/bizint.md"
-  },
-  {
     "id": "blender",
     "name": "Blender",
     "description": "Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulations to verify `geolocation`.",
@@ -7247,7 +7211,7 @@
   {
     "id": "iheartxor-py",
     "name": "iheartxor.py",
-    "description": "Targeted extraction of XOR-obfuscated strings from binaries",
+    "description": "Use when you have a binary/`document-id` with XOR-obfuscated strings and want to recover them — brute-forces single-byte XOR keys within a regex pattern to reveal hidden text.",
     "url": "https://hooked-on-mnemonics.blogspot.com/p/iheartxor.html",
     "category": "ai-analysis-automation",
     "path": [
@@ -7255,34 +7219,48 @@
       "xor",
       "python"
     ],
-    "bestFor": "Targeted extraction of XOR-obfuscated strings from binaries",
-    "input": "Binary data, dumps, or encoded string segments",
-    "output": "Recovered candidate strings and associated key bytes",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Brute-forcing single-byte XOR-encoded strings out of malware/binary samples during reverse engineering.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; the full Python source is published on the author's blog (and mirrored on GitHub/Codepad).",
     "opsec": "passive",
-    "opsecNote": "Offline local script execution keeps sample handling under analyst control.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Runs entirely offline on a local file you already hold — no network activity, nothing about a target leaves your machine. Analyze suspected-malware samples in an isolated VM regardless.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Written by Alexander Hanel (Hooked on Mnemonics blog), a recognized malware-analysis author; the code is short, open, and auditable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "iheartxor",
+      "iheartxor.py"
+    ],
+    "tags": [
+      "reverse-engineering",
+      "xor",
+      "malware-analysis",
+      "Code"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/xor/python/iheartxor-py.md"
   },
   {
@@ -12325,37 +12303,53 @@
   {
     "id": "pidgin",
     "name": "Pidgin",
-    "description": "OSINT tool: Pidgin.",
+    "description": "Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once — a multi-protocol messaging client.",
     "url": "https://www.pidgin.im",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Logging into and monitoring multiple chat networks (IRC, XMPP/Jabber, and more via plugins) from one client under a managed persona.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "costNote": "Free and open-source (GPL); cross-platform (Windows, Linux, macOS via ports).",
+    "opsec": "active",
+    "opsecNote": "Connecting and chatting is active engagement — the other party and the network see your account and can see your IP unless you route Pidgin through Tor/a proxy. Use a dedicated sock-puppet account, enable OTR/OMEMO where appropriate, and never log in with an identifiable handle.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely audited open-source IM client maintained by the Pidgin project and packaged in every major Linux distro.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Pidgin IM"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "messaging",
+      "chat-networks",
+      "sockpuppet"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/pidgin.md"
   },
   {
@@ -13592,37 +13586,60 @@
   {
     "id": "s-i-g-i-t",
     "name": "S.I.G.I.T.",
-    "description": "Simple information gathering toolkit",
+    "description": "Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks, mail/phone lookup, dorking, DNS/WHOIS, and IP geolocation.",
     "url": "https://github.com/termuxhackers-id/SIGIT",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One CLI menu that runs common OSINT modules (userrecon, mailfinder, phoneinfo, dnslookup, iplocation) on Termux or Kali.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "phone",
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "ip-address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source; installs via a shell script on Termux or Kali. No account needed for the core modules.",
+    "opsec": "active",
+    "opsecNote": "Some modules (reverse IP, host/DNS lookups) query third-party APIs and the facedumper module needs your own Facebook cookies — those touch external services and, for facedumper, log you into Facebook. Run from a sock-puppet environment and avoid modules that require your real credentials.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community Termux/Kali toolkit that shells out to various third-party sites/APIs; it aggregates other services rather than holding its own data, and those upstreams can change or break at any time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "SIGIT",
+      "Simple Information Gathering Toolkit"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "Code",
+      "osint-toolkit",
+      "termux"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/s-i-g-i-t.md"
   },
   {
@@ -17803,48 +17820,6 @@
       "you-com"
     ],
     "_file": "library/tools/ai-analysis-automation/youcode.md"
-  },
-  {
-    "id": "zen",
-    "name": "Zen",
-    "description": "OSINT tool: Zen.",
-    "url": "https://github.com/s0md3v/Zen",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "other-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "orbit",
-      "photon",
-      "striker",
-      "zen-github-com"
-    ],
-    "_file": "library/tools/ai-analysis-automation/zen.md"
   },
   {
     "id": "zingchart",
@@ -42226,48 +42201,6 @@
     "_file": "library/tools/dark-web/torry-io.md"
   },
   {
-    "id": "uk-guns-and-ammo",
-    "name": "UK Guns & Ammo",
-    "description": "OSINT tool: UK Guns & Ammo.",
-    "url": "http://k6m3fagp4w4wspmdt23fldnwrmknse74gmxosswvaxf3ciasficpenad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/uk-guns-and-ammo.md"
-  },
-  {
     "id": "ukons-standard-industrial-classifications-united-kingdom",
     "name": "UK ONS Standard Industrial Classifications (SIC)",
     "description": "Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.",
@@ -49751,37 +49684,53 @@
   {
     "id": "de-digger",
     "name": "de digger",
-    "description": "OSINT tool: de digger.",
+    "description": "Use when you have a `name`, keyword, or filename and want publicly shared Google Drive files about a subject — returns links to exposed documents/files (`document-id`, `metadata-exif`).",
     "url": "https://www.dedigger.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding publicly shared Google Drive documents and files by keyword and file-type operators.",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; runs as a specialized Google search front-end, no account required.",
+    "opsec": "passive",
+    "opsecNote": "It builds and runs Google queries — you are querying Google's index, not the target's Drive, so the subject is not alerted. Standard search hygiene (sock-puppet browser) applies; opening a found file is a separate, more active step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community OSINT utility that wraps Google dorking of Google Drive's public URL space; results come straight from Google, so accuracy tracks Google's index.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "file-search"
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "dedigger",
+      "de-digger"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "google-dorking",
+      "document-search",
+      "filesharing"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/de-digger.md"
   },
   {
@@ -65337,48 +65286,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/criminal-ip-search.md"
-  },
-  {
-    "id": "critical-stack-intel",
-    "name": "Critical Stack Intel",
-    "description": "Network IDS threat intelligence",
-    "url": "https://intel.criticalstack.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "domain-blacklists"
-    ],
-    "bestFor": "Network IDS threat intelligence",
-    "input": "Bro/Zeek intel format",
-    "output": "Intel.log entries, network alerts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Requires registration; polled hourly from curated threat intelligence feeds",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": true,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/domain-blacklists/critical-stack-intel.md"
   },
   {
     "id": "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
@@ -88901,44 +88808,54 @@
   {
     "id": "webemailextractor-com",
     "name": "Webemailextractor.com",
-    "description": "extract email's and phone numbers from the website or list of website",
+    "description": "Use when you have a `domain`/website (or list of them) and want the contact points published on it — extracts `email`s and `phone` numbers from page content.",
     "url": "https://www.webemailextractor.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling emails and phone numbers published across a target website or a batch of websites.",
     "selectorsIn": [
-      "domain",
+      "domain"
+    ],
+    "selectorsOut": [
       "email",
       "phone"
     ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "A free tier exists for evaluation; higher-volume plans start around $100/mo. The free tier is enough to sweep a single target site.",
+    "opsec": "active",
+    "opsecNote": "The extractor fetches pages from the target website, so requests originate toward the target's server (or the service's, depending on how it crawls) and can appear in the site's logs. Scope it to one site at a time and avoid aggressive batch crawls that stand out.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial lead-generation/scraping product; it extracts only what is already published on the pages it visits, but result completeness and behavior are not independently audited.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Web Email Extractor",
+      "webemailextractor"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Cookies analyze"
+      "email-discovery",
+      "scraping",
+      "lead-generation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webemailextractor-com.md"
   },
   {
@@ -183369,42 +183286,6 @@
     "_file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-ios.md"
   },
   {
-    "id": "soundraw",
-    "name": "Soundraw",
-    "description": "AI music generation",
-    "url": "https://soundraw.io/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "NOOSINT tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/soundraw.md"
-  },
-  {
     "id": "speech-jammer",
     "name": "Speech Jammer",
     "description": "OSINT tool: Speech Jammer.",
@@ -183593,48 +183474,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/srware-iron.md"
-  },
-  {
-    "id": "ssn-generator",
-    "name": "SSN Generator",
-    "description": "OSINT tool: SSN Generator.",
-    "url": "https://www.fakenamegenerator.com/social-security-number.php",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "aba-generator",
-      "credit-card-generator",
-      "fake-name-generator",
-      "nino-generator",
-      "sin-generator",
-      "vin-generator"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/ssn-generator.md"
   },
   {
     "id": "stealthy-proxy-server-extension-chrome",
@@ -266571,45 +266410,6 @@
     "_file": "library/tools/search-engines/blogs-search-engine.md"
   },
   {
-    "id": "blogsearchengine",
-    "name": "BlogSearchEngine",
-    "description": "OSINT tool: BlogSearchEngine.",
-    "url": "http://www.blogsearchengine.org",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "blog-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "blog-search-engine"
-    ],
-    "_file": "library/tools/search-engines/blogsearchengine.md"
-  },
-  {
     "id": "blue-search",
     "name": "Blue Search",
     "description": "Use when you want an alternative general web search engine (now rebranded GOOD, on the independent Brave index) to cross-check results a mainstream engine buries — returns web results toward `social-profile`, `domain`, `document-id`.",
@@ -292162,39 +291962,52 @@
   },
   {
     "id": "sunxdcc",
-    "name": "Sunxdcc",
-    "description": "XDCC file search engine",
+    "name": "SunXDCC",
+    "description": "Use when you have a filename/keyword and want to find files offered by XDCC bots on IRC — returns the network, bot, pack number, and filename to request via IRC.",
     "url": "http://sunxdcc.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Searching for files distributed by XDCC bots across IRC networks.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to search (donation-supported). Note the operator has announced the service is migrating to skullxdcc.com and sunxdcc.com may be retired — verify the live domain.",
+    "opsec": "active",
+    "opsecNote": "Searching the index is passive, but actually retrieving a file means joining an IRC network and messaging a bot, which exposes your IRC client and IP to that network and the bot operator. Use a sock-puppet IRC identity and consider a bouncer/VPN.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small hobbyist-run search index over IRC XDCC offers; it only lists what bots advertise, and both the index and the files are unvetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "SunXDCC",
+      "sunxdcc.com"
+    ],
     "tags": [
-      "Search engines",
-      "Filesharing Search Engines"
+      "Filesharing Search Engines",
+      "irc",
+      "xdcc"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sunxdcc.md"
   },
   {
@@ -351940,39 +351753,54 @@
   },
   {
     "id": "rzjets-net",
-    "name": "Rzjets.net",
-    "description": "user updated online database (census) of civilian jet and turbojet aircraft",
+    "name": "rzjets.net",
+    "description": "Use when you have an aircraft registration, serial, or type and want its history and operators — a community census of civil jet and turboprop airframes returning `document-id`-level airframe records.",
     "url": "http://rzjets.net/aircraft/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Looking up the production and operator history of a specific civil jet/turbojet airframe.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, community-maintained online database; browsing is open, and registering (free) lets you contribute corrections.",
+    "opsec": "passive",
+    "opsecNote": "A public reference database — you query aircraft records, not a person, so there is no target-facing footprint. Standard browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A volunteer-curated aircraft census; broad and well-cross-referenced but user-updated, so individual records should be corroborated against an official registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "rzjets",
+      "rzjets.net"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Aviation"
+      "aviation",
+      "aircraft-registry",
+      "transportation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/rzjets-net.md"
   },
   {

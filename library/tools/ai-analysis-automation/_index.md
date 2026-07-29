@@ -56,7 +56,6 @@ kind: group-index
 - **`bevigil-cli`** (low) — Use when you have a `domain` or mobile-app package id and want assets extracted from scanned apps — returns subdomains, urls and s3 buckets.
 - **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
 - **`bitwarden`** (low) — Use when you need to securely store and separate credentials for investigative accounts and sock puppets — an open-source password manager. 
-- **`bizint`** (low) — OSINT tool: Bizint.
 - **`blender`** (low) — Use when you have `image`s/video of a place and want to reconstruct or test its 3D geometry — returns modeled scenes and sun/shadow simulati
 - **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif
 - **`boxcryptor`** (low) — OSINT tool: boxcryptor.
@@ -276,7 +275,7 @@ kind: group-index
 - **`phantomtrace`** (medium) — Use when you have a `username`, `email`, `domain` or `image` and want a one-shot recon sweep — account hunting across 35+ sites, breach chec
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.
 - **`phishingseclists`** (low) — Use when you have a suspected phishing/scam `domain` and want wordlists to discover its hidden credential-capture files, admin panels, and c
-- **`pidgin`** (low) — OSINT tool: Pidgin.
+- **`pidgin`** (low) — Use when you have a chat `username`/handle on IRC, XMPP, etc. and want to engage or observe from a sock-puppet across many networks at once 
 - **`piktochart`** (low) — OSINT tool: Piktochart.
 - **`pinpoint`** (low) — A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journal
 - **`pixel-block`** (low) — OSINT tool: Pixel Block.
@@ -308,7 +307,7 @@ kind: group-index
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
 - **`researchbuzz`** (low) — Google Sinker Search queries constructor (view pic), Google News Search queries constructor, Quick twitter account historical navigation in 
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
-- **`s-i-g-i-t`** (low) — Simple information gathering toolkit
+- **`s-i-g-i-t`** (low) — Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks,
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
@@ -394,7 +393,6 @@ kind: group-index
 - **`xbox-monitor`** (low) — Use when you have an Xbox Live `username` (gamertag) and want to monitor their online status, games played, and profile over time — returns 
 - **`you-com`** (low) — Use when you have a `name`/`username` and want an AI-summarized web sweep with citations — returns synthesized answers plus linked source pa
 - **`youcode`** (low) — Add free, privacy source code search engine with popular tech sites snippets in search results: Mozilla Developer Network; Github; W3 School
-- **`zen`** (low) — OSINT tool: Zen.
 - **`zingchart`** (low) — OSINT tool: ZingChart.
 - **`zmail`** (low) — OSINT tool: ZMail.
 
