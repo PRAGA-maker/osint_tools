@@ -12,7 +12,7 @@ kind: group-index
 
 ## Skills here
 - **`712`** (high) — Use when you have a French landline or mobile number (06/07) and need the subscriber name + address via 118712's free reverse-lookup (annuai
-- **`800notes`** (low) — Community phone-complaint directory; useful for identifying spam/scam callers.
+- **`800notes`** (medium) — Use when you have a `phone` number and want crowdsourced reports on who's calling from it — returns caller-identity guesses, scam/spam tags,
 - **`advanced-background-checks`** (high) — Use when you have a US phone number and need the owner's name, current/past addresses, relatives, and associates from aggregated public reco
 - **`americaphonebook`** (medium) — Use when you have a US phone number or a name and want to resolve it to a person's name, address, or listed number — returns name, address, 
 - **`aql-com`** (medium) — Use when you have a UK phone number and need its network operator (and ported status) from Ofcom data, to confirm carrier before further pho

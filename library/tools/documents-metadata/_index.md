@@ -157,7 +157,7 @@ kind: group-index
 - **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
 - **`meawfy`** (low) — Use when you have a `name`, title, or keyword and want to find publicly-shared MEGA.nz files/folders about it — returns MEGA links to docume
 - **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`mediainforobot`** (low) — telegram bot to getting metadata from different types of files
+- **`mediainforobot`** (low) — Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/conta
 - **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
 - **`mendeley-academic-research-manager`** (low) — Use when you want to organize sources and find researchers' public profiles/publications — a reference manager (Elsevier) with public author
 - **`mever-gr`** (low) — Use when you have an `image` and want to know whether it has been digitally manipulated (face-swap, splice, copy-move, object add/delete) — 
@@ -243,7 +243,6 @@ kind: group-index
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
-- **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
 - **`wetransfer`** (low) — Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer serv
 - **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
 - **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).

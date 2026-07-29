@@ -247,7 +247,7 @@ kind: group-index
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`matweb-info`** (low) — OSINT tool: Matweb.info.
-- **`maxthon`** (low) — OSINT tool: Maxthon.
+- **`maxthon`** (low) — Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — 
 - **`mcafee-anti-virus-for-pc`** (low) — Malware and virus detection and elimination program
 - **`mcafee-internet-security-for-mac`** (low) — Malware and virus detection and elimination program for Mac
 - **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
@@ -349,7 +349,6 @@ kind: group-index
 - **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
 - **`sleipnir`** (low) — Use when you want an alternative Chromium-based browser on Windows/macOS for OSINT browsing — a tab-focused browser from Fenrir, useful as a
 - **`slimjet`** (low) — Use when you want a Chromium-based browser with built-in ad/tracker blocking for OSINT browsing — an alternative sock-puppet environment (no
-- **`slydial-ringless-voicemail-messaging`** (low) — Proxy voice messaging service that goes directly to a person's voicemail
 - **`smstome-com`** (low) — OSINT tool: Smstome.com.
 - **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
 - **`snapchat-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and self-deleting messages

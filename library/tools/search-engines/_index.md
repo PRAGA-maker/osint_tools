@@ -320,7 +320,7 @@ kind: group-index
 - **`jobrapido-job-search-engine-worldwide`** (medium) — Use when you have an `employer-org` or job/location and want current vacancies — returns aggregated job listings by company and place, usefu
 - **`jobsdb-asia`** (medium) — Use when you have a `name` and an Asian-region employment angle and want to find a subject's job listings, recruiter posts, or (via their CV
 - **`jora-job-search-engine-new-zealand`** (medium) — Use when you have an `employer-org` or role/location in New Zealand and want current vacancies — returns aggregated job listings by company 
-- **`journal-guide`** (low) — OSINT tool: Journal Guide.
+- **`journal-guide`** (low) — Use when you have a journal name/paper topic and want to identify or compare scholarly journals — returns journal profiles and matches (a re
 - **`journal-seek`** (low) — Use when you have a journal name/abbreviation or ISSN and want to identify the publication and its scope/homepage — returns journal metadata
 - **`journalist-s-toolbox-investigative`** (medium) — Use when you need a vetted starting point for an investigation and want a curated directory of people-tracing, public-records, and verificat
 - **`jstor`** (low) — OSINT tool: JSTOR.

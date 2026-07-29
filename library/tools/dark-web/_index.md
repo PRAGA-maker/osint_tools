@@ -89,7 +89,7 @@ kind: group-index
 - **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
 - **`torbox`** (low) — OSINT tool: TorBox.
-- **`torry-io`** (low) — OSINT tool: torry.io.
+- **`torry-io`** (low) — Use when you have a keyword, `username`, or onion `domain` and want to search Tor/dark-web content from a normal browser — returns onion lin
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.

@@ -3984,40 +3984,49 @@
   {
     "id": "disconnect",
     "name": "Disconnect",
-    "description": "OSINT tool: Disconnect.",
+    "description": "Use when you want to block trackers during investigative browsing or understand who tracks a site — returns a tracker-blocking layer and tracker classification data.",
     "url": "https://disconnect.me",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Reducing tracker/telemetry leakage in your investigative browser and seeing what trackers a page loads.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free consumer browser extensions/apps (its tracker list powers Firefox/Edge protection); enterprise and the Lightbox privacy-intelligence API are paid.",
+    "opsec": "passive",
+    "opsecNote": "This is defensive tooling for YOUR browser — it blocks third-party trackers so your investigative sessions leak less. It is not a lookup you point at a subject and does not anonymize you (no IP masking). Pair with a VPN/Tor when origin-hiding matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Disconnect is an established privacy company whose open tracker-protection lists are used by major browsers; reputable and widely vetted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ublock-origin",
+      "waterfox"
+    ],
+    "aliases": [
+      "Disconnect.me",
+      "Disconnect Privacy"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy",
+      "tracker-blocking",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "disconnect-search"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/disconnect.md"
   },
   {
@@ -42137,44 +42146,57 @@
   },
   {
     "id": "torry-io",
-    "name": "torry.io",
-    "description": "OSINT tool: torry.io.",
+    "name": "Torry",
+    "description": "Use when you have a keyword, `username`, or onion `domain` and want to search Tor/dark-web content from a normal browser — returns onion links viewable anonymously.",
     "url": "https://www.torry.io/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Searching dark-web/onion content without running Tor Browser, then opening results through Tor anonymously.",
     "selectorsIn": [
       "username",
-      "email"
+      "email",
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web search plus free browser extensions/apps; no account required for basic searching.",
+    "opsec": "passive",
+    "opsecNote": "Torry proxies Tor access, so your clearnet IP isn't directly touching onion services, and it states searches are stripped of IP/metadata and not logged — but you are trusting a third party's claims. For serious work don't rely on it for anonymity; use a hardened Tor Browser in a VM. Never enter real credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party service that brokers Tor access with strong no-log privacy claims that cannot be independently verified; convenient, but not an audited anonymity system.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "browseriling",
+      "tor-browser"
+    ],
+    "aliases": [
+      "torry.io",
+      "Torry search"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "onion-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/torry-io.md"
   },
   {
@@ -54738,37 +54760,56 @@
   {
     "id": "mediainforobot",
     "name": "@mediainforobot",
-    "description": "telegram bot to getting metadata from different types of files",
+    "description": "Use when you have a media file (or Telegram media) and want its technical MediaInfo, screenshots, or audio spectrogram — returns codec/container metadata and derived visuals.",
     "url": "https://t.me/mediainforobot",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestFor": "Pulling detailed MediaInfo (codecs, container, duration) and spectrograms/screenshots from a video or audio file via Telegram.",
+    "selectorsIn": [
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Telegram bot; requires a Telegram account to message it. Open-source (GitLab spechide/MediaInfoRoBot).",
+    "opsec": "active",
+    "opsecNote": "You must SEND the file (or its link) to a third-party Telegram bot, so the media leaves your control and passes through Telegram's and the bot operator's infrastructure. Never submit media containing a subject's private/sensitive content. Use a sock-puppet Telegram account and, ideally, only non-sensitive samples.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "An open-source community Telegram bot (source on GitLab); the tool is transparent, but you are trusting an unaffiliated operator with whatever you upload.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "exiftool",
+      "mediainfo"
+    ],
+    "aliases": [
+      "mediainforobot",
+      "MediaInfo Bot",
+      "mi bot"
+    ],
     "tags": [
-      "Files"
+      "metadata",
+      "media-analysis",
+      "telegram-bot"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/mediainforobot.md"
   },
   {
@@ -59742,50 +59783,6 @@
     "_file": "library/tools/documents-metadata/search/vx-vault.md"
   },
   {
-    "id": "webpreserver",
-    "name": "WebPreserver",
-    "description": "A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their computers or servers",
-    "url": "https://www.pagefreezer.com/webpreserver/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "blog-pagefreezer-com"
-    ],
-    "_file": "library/tools/documents-metadata/webpreserver.md"
-  },
-  {
     "id": "wetransfer",
     "name": "WeTransfer",
     "description": "Use when you need to receive or send large files during an investigation (evidence, media, documents) — a free no-account file-transfer service; also the source of shared links you may need to analyse.",
@@ -62638,37 +62635,48 @@
   {
     "id": "breachhq",
     "name": "BreachHQ",
-    "description": "OSINT tool: BreachHQ.",
+    "description": "Use when you have a threat-actor or APT-group name and want a reference profile — returns actor origin, type, aliases, and linked references (not a breach-lookup for individuals).",
     "url": "https://breach-hq.com/threat-actors",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a named cyber threat actor / APT group's profile, origin, and references.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public reference (by Beyond Identity); the core threat-actor database is openly readable, contribution optional via signup.",
+    "opsec": "passive",
+    "opsecNote": "A public catalog you browse by actor name — you submit no subject selector, so nothing about your investigation leaves your browser. Fully passive reading.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Curated/aggregated threat-actor listings published by a security vendor with community contribution; a secondary reference, confidence levels noted per entry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "BreachHQ",
+      "breach-hq.com"
+    ],
     "tags": [
-      "threat-actor-search"
+      "threat-actors",
+      "threat-intel",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/breachhq.md"
   },
   {
@@ -72576,43 +72584,58 @@
   },
   {
     "id": "intezer-analyzer",
-    "name": "Intezer Analyzer",
-    "description": "Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, Endpoints",
+    "name": "Intezer Analyze",
+    "description": "Use when you have a file, file hash, URL, or `ip-address` from a subject and want malware/threat analysis via code reuse — returns malware-family and threat-actor attribution.",
     "url": "https://analyze.intezer.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Classifying a suspicious file/hash by code-reuse to a known malware family or threat actor.",
     "selectorsIn": [
-      "domain"
+      "document-id",
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Community Edition allows up to ~10 file analyses per day plus hash/URL/IP lookups; higher volume and enterprise features are paid.",
+    "opsec": "active",
+    "opsecNote": "Uploading a file or querying an indicator sends it to Intezer's cloud, where it may be retained and (for uploads) potentially shared in threat-intel context. Never upload a file that itself contains a subject's private data. Prefer submitting a hash over the raw file; use hash/IP lookups (which reveal nothing new) when possible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Intezer is a reputable commercial malware-analysis vendor known for its code-reuse \"genetic\" analysis; results are vendor-produced but well-regarded in the industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "virustotal"
+    ],
+    "aliases": [
+      "Intezer Analyze",
+      "Intezer Community"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "malware-analysis",
+      "threat-intel",
+      "file-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/intezer-analyzer.md"
   },
   {
@@ -86399,42 +86422,52 @@
   {
     "id": "turbolist3r",
     "name": "Turbolist3r",
-    "description": "An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce (flag -b)",
+    "description": "Use when you have a `domain` and want to enumerate its subdomains plus DNS/CNAME analysis — returns discovered subdomains flagged for possible takeover.",
     "url": "https://github.com/alex14324/Turbolist3r",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Passive-plus-DNS subdomain enumeration of a target domain, with automatic CNAME/takeover analysis.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python tool; a fork of Sublist3r. No account or key for the OSINT sources it queries.",
+    "opsec": "active",
+    "opsecNote": "OSINT-source enumeration is passive, but Turbolist3r also resolves discovered names against public DNS — that DNS activity is low-noise but not zero, and any later direct probing of the found hosts touches target infrastructure. Enumerate from a VPN/sock-puppet if the target might watch its logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A lightly-maintained community fork of the well-known Sublist3r; the underlying technique is standard, but this specific fork has minimal commit history.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "sublist3r"
+    ],
+    "aliases": [
+      "Turbolist3r"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Subdomains scan/brute"
+      "subdomain-enumeration",
+      "dns",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/turbolist3r.md"
   },
   {
@@ -177968,37 +178001,48 @@
   {
     "id": "maxthon",
     "name": "Maxthon",
-    "description": "OSINT tool: Maxthon.",
-    "url": "http://www.maxthon.com",
+    "description": "Use when you want an alternative Chromium browser with built-in VPN, ad-blocking, and media/screenshot capture for investigative browsing — returns a browsing environment, not target data.",
+    "url": "https://www.maxthon.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A Chromium-based investigative browser with built-in VPN, ad-block, split-screen, and page/video capture.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to download and use (built-in VPN via Bright Data, ad-block, incognito); a paid membership adds extras but isn't required.",
+    "opsec": "passive",
+    "opsecNote": "Defensive tooling for your side, not a target lookup. The built-in \"free VPN\" is third-party (Bright Data) — treat it as light IP obfuscation, not trustworthy anonymity, and don't route sensitive work through it. Maxthon historically syncs data to its cloud; disable cloud sync and don't store investigative accounts in it. For real anonymity use Tor.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "unverified",
+    "trustNote": "A long-running commercial Chromium browser; functional, but closed-source with a history of cloud data-sync and a bundled third-party VPN — vet before trusting it with sensitive sessions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "waterfox",
+      "tor-browser"
+    ],
+    "aliases": [
+      "Maxthon",
+      "maxthon.com"
+    ],
     "tags": [
-      "browsers"
+      "browsers",
+      "opsec"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/maxthon.md"
   },
   {
@@ -182745,49 +182789,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/slimjet.md"
-  },
-  {
-    "id": "slydial-ringless-voicemail-messaging",
-    "name": "Slydial Ringless Voicemail Messaging",
-    "description": "Proxy voice messaging service that goes directly to a person's voicemail",
-    "url": "http://www.slydial.com/index.php",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "slydial"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/slydial-ringless-voicemail-messaging.md"
   },
   {
     "id": "smstome-com",
@@ -202452,29 +202453,32 @@
   {
     "id": "800notes",
     "name": "800notes",
-    "description": "Community phone-complaint directory; useful for identifying spam/scam callers.",
+    "description": "Use when you have a `phone` number and want crowdsourced reports on who's calling from it — returns caller-identity guesses, scam/spam tags, and commenter details.",
     "url": "https://800notes.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Crowdsourced directory of phone-number complaints and caller reports.",
+    "bestFor": "Checking a phone number against a crowdsourced directory of caller complaints and identity reports.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone"
+      "phone",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read; no account needed to view. Posting a comment requires registration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public complaints database — you do NOT call or contact the number, so the owner is never alerted. Fully passive. Use a clean browser if you don't want the lookup in your local history.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trustNote": "Long-running crowdsourced reverse-phone complaint site; entries are anonymous user reports, so treat identity claims as leads, not fact.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
     ],
@@ -202482,16 +202486,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "800 Notes"
+      "800notes",
+      "800 notes"
     ],
     "tags": [
       "phone",
-      "caller-reports"
+      "reverse-phone",
+      "scam-reports"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/phone/800notes.md"
   },
   {
@@ -278407,38 +278414,52 @@
   },
   {
     "id": "journal-guide",
-    "name": "Journal Guide",
-    "description": "OSINT tool: Journal Guide.",
+    "name": "JournalGuide",
+    "description": "Use when you have a journal name/paper topic and want to identify or compare scholarly journals — returns journal profiles and matches (a reference tool, not people search).",
     "url": "https://www.journalguide.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying and comparing academic journals by name, publisher, or by matching a paper's title/abstract.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account required to search and compare.",
+    "opsec": "passive",
+    "opsecNote": "You look up journals, not people — no subject selector is submitted, so browsing is fully passive and leaks nothing about your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free journal-evaluation tool (from Research Square/Editage ecosystem) aggregating journal metadata; reputable for discovery, not an authoritative registry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "journal-seek"
+    ],
+    "aliases": [
+      "JournalGuide",
+      "journalguide.com"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/journal-guide.md"
   },
   {

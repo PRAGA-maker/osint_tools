@@ -84,7 +84,7 @@ kind: group-index
 - **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
 - **`bitdefender-threat-map`** (low) — Use when you want live situational awareness of global cyberattacks — an interactive real-time map of attacks, infections and spam by countr
 - **`blacklist-alert-check`** (medium) — Use when you have an `ip-address` or `domain` and want to know if it is listed on anti-spam DNSBLs — returns which blacklists flag it.
-- **`breachhq`** (low) — OSINT tool: BreachHQ.
+- **`breachhq`** (low) — Use when you have a threat-actor or APT-group name and want a reference profile — returns actor origin, type, aliases, and linked references
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
 - **`broken-link-hijacker`** (low) — Use when you have a `domain` and want to crawl it for dead links (in `<a href>`/`<img src>`) — returns broken URLs whose expired domains may
 - **`browserling`** (low) — OSINT tool: Browserling.
@@ -215,7 +215,7 @@ kind: group-index
 - **`internet-census-2012`** (low) — Use when you need a historical 2012 snapshot of an `ip-address`/`domain` — returns that era's reverse-DNS, open-port and geolocation records
 - **`internetdb-shodan-io`** (low) — Use when you have an `ip-address` and want Shodan's fast free snapshot — returns open ports, hostnames (`domain`), software CPEs, tags, and 
 - **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
-- **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
+- **`intezer-analyzer`** (low) — Use when you have a file, file hash, URL, or `ip-address` from a subject and want malware/threat analysis via code reuse — returns malware-f
 - **`intodns-ai`** (low) — Use when you have a `domain` and want a deterministic health check of its DNS and email security posture — SPF, DKIM, DMARC, DNSSEC, MTA-STS
 - **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
 - **`investigo`** (low) — Use when you have a `username` and want every social platform it exists on — a fast Go CLI (Sherlock-based) that checks the handle across hu
@@ -406,7 +406,7 @@ kind: group-index
 - **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
 - **`try-jsoup-org`** (low) — Use when you have a page's HTML or a `domain`/URL and want to extract specific elements — run CSS-selector queries in a browser sandbox to p
 - **`tucows-canada`** (medium) — Use when a domain in your investigation is registered via Tucows/OpenSRS — context on the world's 2nd-largest registrar; the corporate site 
-- **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
+- **`turbolist3r`** (low) — Use when you have a `domain` and want to enumerate its subdomains plus DNS/CNAME analysis — returns discovered subdomains flagged for possib
 - **`ubersuggest-keyword-creator`** (medium) — Use when you have a `domain` and want its traffic, top pages, backlinks, and competitor/related domains — returns `domain` leads and site-fo
 - **`udon`** (low) — Use when you have a `domain` and want other sites run by the same owner via a shared Google Analytics/AdSense ID — returns sibling `domain`s
 - **`umatrix`** (low) — Use when you want to see and control every domain a page contacts at runtime — a matrix-based request blocker for observing a site's third-p

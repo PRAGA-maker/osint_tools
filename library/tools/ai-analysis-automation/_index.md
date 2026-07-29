@@ -104,7 +104,7 @@ kind: group-index
 - **`diceware-generator`** (low) — Use when you need a strong, memorable passphrase for a sock-puppet account or an encryption key — an OpSec utility that generates EFF/Dicewa
 - **`digital-privacy-ffffffff0x`** (low) — Collection of privacy and security / OSINT resources.
 - **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
-- **`disconnect`** (low) — OSINT tool: Disconnect.
+- **`disconnect`** (low) — Use when you want to block trackers during investigative browsing or understand who tracks a site — returns a tracker-blocking layer and tra
 - **`discoshell`** (low) — OSINT tool: Discoshell.
 - **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
 - **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
