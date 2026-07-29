@@ -110,7 +110,7 @@ kind: group-index
 - **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
 - **`cmlabs-tools`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack (CMS, server, JS libraries, widgets) — returns the detected
 - **`coffer-com`** (low) — Use when you have a `mac-address` and want the hardware vendor behind it — returns the manufacturer/OUI owner, and the reverse (a vendor's M
-- **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
+- **`contacts-details-scraper`** (low) — Use when you have a `domain`/website and want to harvest its published contact points — returns emails, phone numbers and linked social prof
 - **`content-security-policy-csp-validator`** (low) — Use when you have a `domain` or URL and want to inspect and validate its Content-Security-Policy and other security headers — returns header
 - **`cookieserve-com`** (low) — Use when you have a `domain` and want an itemized audit of the cookies and trackers it sets — returns tracker/third-party `domain` links for
 - **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
@@ -161,7 +161,7 @@ kind: group-index
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit
 - **`focsec`** (low) — OSINT tool: Focsec.
 - **`fortiguard-labs`** (low) — Use when you have a threat-actor `name` or group and want a reference profile — returns adversary encyclopedia entries with attribution, ali
-- **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
+- **`free-online-network-tools`** (low) — Use when you have a `domain`, `ip-address` or `email` and want a combined WHOIS/DNS/traceroute/email-validation dossier — returns registrati
 - **`fuzzuli`** (low) — Use when you have a `domain` and want to hunt exposed backup/sensitive files on its web server — generates a domain-tailored wordlist and pr
 - **`gandi-uk`** (low) — Use when you have a `domain` and want its registration record (registrar, dates, nameservers, and any unredacted registrant details) — retur
 - **`geo-data-tool`** (low) — Use when you have an `ip-address` or `domain` and want its estimated location on a map plus ISP and hostname — returns geolocation, ip-addre
@@ -288,7 +288,7 @@ kind: group-index
 - **`neilpatel-backlinks-analyzer`** (low) — Use when you have a `domain`/page and want to see which other sites link to it — returns referring `domain`s and backlink details, exposing 
 - **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
 - **`netcraft`** (low) — Use when you have a domain or ip-address and want its hosting history, technology stack, and network attribution — returns ip-address, domai
-- **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
+- **`netscout-cyber-threat-map`** (low) — Use when you want a live global picture of DDoS/attack activity by region and type — returns aggregate attack visualisation (not per-target 
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
 - **`network-tools`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS re
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)

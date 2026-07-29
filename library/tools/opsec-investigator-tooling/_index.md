@@ -299,7 +299,6 @@ kind: group-index
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
 - **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
 - **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
-- **`prism-break`** (low) — OSINT tool: PRISM Break.
 - **`privacy-net`** (low) — Listing of privacy resources
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
 - **`proton-vpn`** (low) — Use when you need to mask your real IP and location during recon — provides encrypted VPN tunneling with a genuine free tier (investigator O

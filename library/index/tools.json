@@ -12664,37 +12664,33 @@
   {
     "id": "privacy-badger",
     "name": "Privacy Badger",
-    "description": "OSINT tool: Privacy Badger.",
+    "description": "Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a defensive opsec tool).",
     "url": "https://www.eff.org/privacybadger",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Automatically blocking cross-site trackers in the browser you investigate with.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source, built by the EFF (non-profit); no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive and defensive — it reduces the trackers/cookies that could fingerprint or correlate your browsing during investigations. It does not anonymise your IP; pair it with a VPN/Tor and a sock-puppet profile for real cover.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Developed and maintained by the Electronic Frontier Foundation (EFF); open-source and widely trusted.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "coveryourtracks-eff-org",
       "electronic-frontier-foundation-eff-tools",
@@ -12702,6 +12698,17 @@
       "panopticlick",
       "surveilliance-self-defense"
     ],
+    "aliases": [
+      "EFF Privacy Badger"
+    ],
+    "tags": [
+      "privacy-and-encryption-tools",
+      "tracker-blocker",
+      "opsec"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/privacy-badger.md"
   },
   {
@@ -16572,35 +16579,48 @@
   {
     "id": "url-decoder-encoder",
     "name": "URL Decoder/Encoder",
-    "description": "OSINT tool: URL Decoder/Encoder.",
+    "description": "Use when you have a percent-encoded URL/parameter and want to read or build it — returns the decoded/encoded string in the browser.",
     "url": "https://meyerweb.com/eric/tools/dencoder/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quick percent-encode/decode of URLs and query parameters.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free single-purpose web page (Eric Meyer's dencoder); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive and client-side — the encode/decode runs in your browser (JavaScript), so the string isn't sent anywhere. Still, avoid pasting anything you wouldn't want in your browser history; for extreme sensitivity use a local decoder.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing single-purpose utility by web-standards author Eric Meyer; trivial, deterministic, client-side.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "online-tools"
+    ],
+    "aliases": [
+      "meyerweb dencoder",
+      "dencoder"
+    ],
+    "tags": [
+      "encoding",
+      "url",
+      "utilities"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/url-decoder-encoder.md"
   },
   {
@@ -64760,46 +64780,56 @@
   {
     "id": "contacts-details-scraper",
     "name": "Contacts Details Scraper",
-    "description": "Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any website.",
+    "description": "Use when you have a `domain`/website and want to harvest its published contact points — returns emails, phone numbers and linked social profiles.",
     "url": "https://github.com/vdrmota/Social-Media-and-Contact-Info-Extractor",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Crawling a website to extract emails, phone numbers and social-media profile links.",
     "selectorsIn": [
-      "domain",
-      "email",
-      "face",
-      "image",
-      "phone"
-    ],
-    "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "selectorsOut": [
+      "email",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Open-source; runs free as an Apify actor (Apify's free tier covers light use) or from source. Heavier Apify usage consumes platform credits.",
+    "opsec": "active",
+    "opsecNote": "Active — it crawls the target website, so requests hit the subject's server and appear in their logs. When run via Apify the crawl originates from Apify's infrastructure, not your IP; running from source uses your own IP, so use a research egress.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community open-source Apify actor (~122 stars) by vdrmota; extraction is regex/HTML-parsing based, so expect noise and false positives.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "webosint",
+      "jsleak"
+    ],
+    "aliases": [
+      "Social Media and Contact Info Extractor"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "Searchers, scrapers, extractors, parsers",
+      "contact-scraper"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/contacts-details-scraper.md"
   },
   {
@@ -68681,41 +68711,58 @@
   },
   {
     "id": "free-online-network-tools",
-    "name": "Free online network tools",
-    "description": "OSINT tool: Free online network tools.",
+    "name": "Free online network tools (CentralOps)",
+    "description": "Use when you have a `domain`, `ip-address` or `email` and want a combined WHOIS/DNS/traceroute/email-validation dossier — returns registration, DNS and network detail in one report.",
     "url": "https://centralops.net/co/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-page \"Domain Dossier\"/\"Email Dossier\" combining WHOIS, DNS, traceroute and network lookups.",
+    "selectorsIn": [
+      "domain",
+      "ip-address",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free to use with per-session query limits; heavier use is rate-limited or gated. No account for basic lookups.",
+    "opsec": "active",
+    "opsecNote": "Mostly passive lookups (WHOIS/DNS), but Domain Dossier can run a traceroute and connect to the target's mail/servers, which touches the subject's infrastructure. Email Dossier probes the mail server (without sending mail). Use a research IP; the checks originate from CentralOps, not you, but some steps reach the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established free network-tools site (CentralOps.net / Hexillion); aggregates standard WHOIS/DNS/network lookups.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "central-ops",
       "domain-dossier",
       "email-dossier"
     ],
+    "aliases": [
+      "CentralOps",
+      "CentralOps.net"
+    ],
+    "tags": [
+      "whois",
+      "dns",
+      "network-tools"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/free-online-network-tools.md"
   },
   {
@@ -77703,37 +77750,48 @@
   {
     "id": "netscout-cyber-threat-map",
     "name": "NETSCOUT Cyber Threat Map",
-    "description": "OSINT tool: NETSCOUT Cyber Threat Map.",
+    "description": "Use when you want a live global picture of DDoS/attack activity by region and type — returns aggregate attack visualisation (not per-target lookup).",
     "url": "https://horizon.netscout.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Situational-awareness visualisation of worldwide DDoS/attack trends.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public visualisation (NETSCOUT Cyber Threat Horizon); no account for the map.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you view an aggregate dashboard; no subject is involved and you enter no target data. It reflects NETSCOUT/ATLAS sensor telemetry, not the whole internet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Vendor (NETSCOUT) awareness dashboard drawn from its ATLAS DDoS telemetry; illustrative rather than an investigative per-target source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "radware-live-cyber-threat-map",
+      "ibm-x-force-exchange-current-malicious-activity"
+    ],
+    "aliases": [
+      "NETSCOUT Cyber Threat Horizon",
+      "horizon.netscout.com"
+    ],
     "tags": [
-      "live-cyber-threat-maps"
+      "live-cyber-threat-maps",
+      "ddos"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/netscout-cyber-threat-map.md"
   },
   {
@@ -180359,40 +180417,6 @@
     "_file": "library/tools/opsec-investigator-tooling/postmates-delivery-app-mobile-ios.md"
   },
   {
-    "id": "prism-break",
-    "name": "PRISM Break",
-    "description": "OSINT tool: PRISM Break.",
-    "url": "https://prism-break.org/en/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/prism-break.md"
-  },
-  {
     "id": "privacy-guides",
     "name": "Privacy Guides",
     "description": "Use when you're building an investigator's OpSec setup and need vetted privacy tools — returns curated, criteria-based recommendations for VPNs, browsers, email, and more.",
@@ -243863,40 +243887,47 @@
   {
     "id": "oecd-data",
     "name": "OECD Data",
-    "description": "OSINT tool: OECD Data.",
+    "description": "Use when you need authoritative country-level economic/social statistics for context or base rates — returns official OECD indicators and datasets (not person-level data).",
     "url": "https://data.oecd.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official comparable statistics across OECD/partner countries for background and context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official statistics from the OECD; downloadable, with an open data API. No account for browsing.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read published aggregate statistics; no subject is involved and it holds no personal data. Nothing you look up ties to an individual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the OECD, an intergovernmental organisation; authoritative, methodologically documented aggregate statistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "oecd-aid-database"
     ],
+    "aliases": [
+      "data.oecd.org",
+      "OECD Data Explorer"
+    ],
+    "tags": [
+      "data-and-statistics",
+      "official-statistics"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oecd-data.md"
   },
   {
@@ -260765,35 +260796,54 @@
   {
     "id": "whosarat-com",
     "name": "WhosaRat.com",
-    "description": "OSINT tool: WhosaRat.com.",
+    "description": "Use when you have a `name` and want to check a crowd-submitted database of alleged informants/cooperating witnesses — returns unverified informant/agent profiles (partial paywall).",
     "url": "https://whosarat.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a name appears in a user-submitted informant/cooperating-witness database.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Limited free browsing; viewing full profiles, documents and posting requires a paid membership (partial paywall).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive toward the subject, but this is a sensitive, adversarial database — searching or registering ties activity to you. Use a research identity; never create or post content, and treat entries as unproven allegations, not fact.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Crowd-sourced, user-submitted content about individuals; not curated or authenticated. High risk of error, bias and fabrication — corroborate only against court records.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Who's a Rat",
+      "whosarat"
+    ],
+    "tags": [
+      "informants",
+      "court-adjacent",
+      "crowdsourced"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/whosarat-com.md"
   },
   {
@@ -286431,40 +286481,53 @@
   {
     "id": "pr-newswire",
     "name": "PR Newswire",
-    "description": "OSINT tool: PR Newswire.",
+    "description": "Use when you have a `name` or `employer-org` and want official press releases mentioning them — returns timestamped corporate/personnel announcements and associates.",
     "url": "http://www.prnewswire.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching official press releases for executive/personnel moves and company announcements.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read published releases (distribution/publishing is the paid side, for issuers).",
+    "opsec": "passive",
+    "opsecNote": "Passive — you read publicly-distributed press releases; no subject is contacted. Ordinary browsing footprint applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established press-release distributor (owned by Cision); releases are official statements from the issuing organisations, though inherently promotional.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "prnewswire"
     ],
+    "aliases": [
+      "prnewswire.com"
+    ],
+    "tags": [
+      "news",
+      "press-releases"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/pr-newswire.md"
   },
   {
@@ -343804,39 +343867,47 @@
   },
   {
     "id": "webopedia-com",
-    "name": "webopedia.com",
-    "description": "OSINT tool: webopedia.com.",
+    "name": "Webopedia (text/chat abbreviations)",
+    "description": "Use when you have unfamiliar SMS/chat/internet slang in collected messages and want its meaning — returns plain-English expansions of abbreviations.",
     "url": "https://www.webopedia.com/quick_ref/textmessageabbreviations.asp",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding text-message and internet slang/abbreviations found in chats and posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported reference page; no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you look up generic abbreviations, not any subject. Look up individual terms rather than pasting whole private messages into a third-party site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running tech reference site (Webopedia); its text-abbreviations list is a broad but informal glossary, not authoritative linguistics.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Webopedia text message abbreviations",
+      "webopedia.com"
+    ],
     "tags": [
       "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "Translation & Transcription Sites",
+      "slang"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/webopedia-com.md"
   },
   {

@@ -628,7 +628,7 @@ kind: group-index
 - **`obsidian-cli`** (medium) — Use when you keep case notes in an Obsidian vault and want to open, search, create and edit them from the terminal — returns scripted, autom
 - **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp
 - **`oecd-aid-database`** (low) — Use when you have an `employer-org` (donor/agency/NGO) and want its official development-aid flows — returns funding records by donor, recip
-- **`oecd-data`** (low) — OSINT tool: OECD Data.
+- **`oecd-data`** (low) — Use when you need authoritative country-level economic/social statistics for context or base rates — returns official OECD indicators and da
 - **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.
 - **`ofac-sanctioned-search-engine`** (low) — Use when you have a `name` or `employer-org` and want to check exposure to US Treasury/OFAC sanctions sources in one search — returns sancti
 - **`offender-tracking-information-system-otis`** (high) — Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and loc
@@ -929,7 +929,7 @@ kind: group-index
 - **`who-data`** (low) — Use when you need authoritative country-level health statistics for context (mortality, disease, health-system data) — the WHO Global Health
 - **`who-do-you-search`** (medium) — Use when you have a business/service `name` or trade and a city and want local recommendations and business listings — returns local `employ
 - **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
-- **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.
+- **`whosarat-com`** (low) — Use when you have a `name` and want to check a crowd-submitted database of alleged informants/cooperating witnesses — returns unverified inf
 - **`windeed-co-za`** (high) — Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — 
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
 - **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre

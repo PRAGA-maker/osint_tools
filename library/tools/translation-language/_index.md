@@ -88,7 +88,7 @@ kind: group-index
 - **`translate-shell`** (medium) — Use when you have foreign-language text (a post, `name`, bio, or document) and want fast terminal translation/transliteration — returns read
 - **`tv-tropes`** (low) — Language-related directories of writing devices, conventions, and stereotypes
 - **`vizard-ai`** (low) — Use when you have a video/audio of a subject and want an AI transcript to search and quote what was said — a transcription tool, outputs tex
-- **`webopedia-com`** (low) — OSINT tool: webopedia.com.
+- **`webopedia-com`** (low) — Use when you have unfamiliar SMS/chat/internet slang in collected messages and want its meaning — returns plain-English expansions of abbrev
 - **`yamii`** (low) — OSINT tool: Yamii.
 - **`yandex-translate`** (low) — Use when you have foreign-language text/pages (especially Russian and CIS languages) in an investigation and want fast machine translation —
 - **`yourdictionary-online-links`** (low) — Links to over 6600 online foreign language dictionaries and translation services

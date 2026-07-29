@@ -478,7 +478,7 @@ kind: group-index
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`pinterest-trends`** (low) — Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity o
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
-- **`pr-newswire`** (low) — OSINT tool: PR Newswire.
+- **`pr-newswire`** (low) — Use when you have a `name` or `employer-org` and want official press releases mentioning them — returns timestamped corporate/personnel anno
 - **`presearch`** (low) — OSINT tool: Presearch.
 - **`project-vote-smart`** (medium) — Use when you have a `name` of a U.S. elected official or candidate and want their public political record — returns biography, voting record
 - **`property-services-regulatory-authority`** (medium) — Use when you have an Irish `name` or `address` and want the PSRA's public registers — returns licensed estate-agent/auctioneer details (`nam

@@ -280,7 +280,7 @@ kind: group-index
 - **`plotly`** (low) — OSINT tool: Plotly.
 - **`preceden`** (low) — OSINT tool: Preceden.
 - **`prism`** (low) — OSINT tool: PRISM.
-- **`privacy-badger`** (low) — OSINT tool: Privacy Badger.
+- **`privacy-badger`** (low) — Use when you want to block trackers in your investigator browser to reduce your footprint — returns automatic tracker/cookie blocking (a def
 - **`privacy-com`** (low) — Use when you need a masked/virtual payment card to buy OSINT subscriptions or register sock-puppet accounts without exposing your real card 
 - **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-
 - **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
@@ -363,7 +363,7 @@ kind: group-index
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
 - **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co
 - **`uforio`** (low) — Generate word clouds from Reddit threads.
-- **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
+- **`url-decoder-encoder`** (low) — Use when you have a percent-encoded URL/parameter and want to read or build it — returns the decoded/encoded string in the browser.
 - **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
 - **`vega-editor`** (low) — Use when you have investigation data and want a quick interactive chart/graph — returns rendered Vega/Vega-Lite visualizations from a JSON s
 - **`venngage`** (low) — Use when you have finished findings and want to turn them into a clear infographic, timeline, or link chart for a report — a visualization/o
