@@ -222,7 +222,7 @@ kind: group-index
 - **`sina-weibo-chinese`** (medium) — Use when you have a `username`/`name` tied to China and want their Weibo profile — returns social-profile, posts, photos, and location/assoc
 - **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
 - **`slashdot`** (medium) — Use when you have a `username` and want to check for a Slashdot profile — returns the user's comment history and self-disclosed detail on th
-- **`smat`** (low) — OSINT tool: smat.
+- **`smat`** (low) — Use when you have a `username`, keyword, or narrative and want to search and chart its spread across fringe/alt platforms (Telegram, 4chan, 
 - **`snippet-host`** (medium) — Use when you have a `username` or keyword and want public code/text pastes — returns snippets that may leak credentials, contacts, or handle
 - **`snoopsnoo`** (low) — Use when you have a Reddit `username` and want a behavioural profile of that account — returns inferred interests, activity patterns, top su
 - **`south-asian-american-digital-archive`** (medium) — Use when you have a `name` tied to the South Asian American community and want historical/genealogical records — returns document-id, name m

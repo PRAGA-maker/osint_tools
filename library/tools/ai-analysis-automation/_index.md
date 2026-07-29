@@ -125,7 +125,7 @@ kind: group-index
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — OSINT tool: Epic Privacy Browser.
 - **`eraser`** (low) — OSINT tool: Eraser.
-- **`euvsdisinfo`** (low) — OSINT tool: EUvsDisinfo.
+- **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
 - **`exhibit`** (low) — OSINT tool: Exhibit.
 - **`explainshell-com`** (low) — OSINT tool: explainshell.com.
 - **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
@@ -203,7 +203,7 @@ kind: group-index
 - **`lastpass`** (low) — OSINT tool: Lastpass.
 - **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
-- **`linkscope`** (low) — OSINT tool: LinkScope.
+- **`linkscope`** (low) — Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and v
 - **`linkuroius`** (low) — OSINT tool: Linkuroius.
 - **`listify`** (low) — OSINT tool: Listify.
 - **`live-demo`** (low) — OSINT tool: Live demo.

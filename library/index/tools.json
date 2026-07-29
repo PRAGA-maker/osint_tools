@@ -4675,37 +4675,51 @@
   {
     "id": "euvsdisinfo",
     "name": "EUvsDisinfo",
-    "description": "OSINT tool: EUvsDisinfo.",
+    "description": "Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin disinformation cases — returns source/associate and document-id leads.",
     "url": "https://euvsdisinfo.eu/category/blog/feed/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a curated database of catalogued pro-Kremlin disinformation narratives and the outlets that spread them.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public database and RSS feed run by the EU's East StratCom Task Force (EEAS). No account required.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — reading/searching a public database and its RSS feed. Nothing you do reaches any target. Note it catalogues narratives and outlets, not private individuals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official EU (EEAS East StratCom Task Force) project; each case is documented with sources, though it reflects an explicit EU counter-disinformation mandate — read it as sourced analysis, not neutral wire copy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "EUvsDisinfo",
+      "euvsdisinfo.eu",
+      "EU East StratCom"
+    ],
     "tags": [
-      "osint-rss-feeds"
+      "osint-rss-feeds",
+      "disinformation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/euvsdisinfo.md"
   },
   {
@@ -8351,37 +8365,59 @@
   {
     "id": "linkscope",
     "name": "LinkScope",
-    "description": "OSINT tool: LinkScope.",
+    "description": "Use when you have any selector (name, email, domain, username) and want a free Maltego-style link-analysis graph that runs resolutions and visualizes connections — returns associate, social-profile, domain and email leads.",
     "url": "https://accentusoft.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free, open-source visual link-analysis (entity graphs + automated \"resolutions\") for OSINT investigations — a Maltego alternative.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "domain",
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile",
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open source (AccentuSoft/LinkScope-Client on GitHub); GPL-licensed. Runs locally as a desktop/Docker app. Some resolutions need their own API keys.",
+    "opsec": "active",
+    "opsecNote": "Mixed — the graph tool is local, but individual resolutions actively query external services (WHOIS, social sites, search engines, APIs) from your machine, so those leave footprints on the queried services. Route through a proxy/VPN, use sock-puppet API keys, and know which resolutions touch a target directly before running them at scale.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project (AccentuSoft); a capable Maltego-style tool, but community-maintained — verify each resolution's data source and quality.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LinkScope",
+      "LinkScope Client",
+      "AccentuSoft"
+    ],
     "tags": [
-      "other-tools"
+      "other-tools",
+      "link-analysis",
+      "graph"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/linkscope.md"
   },
   {
@@ -34715,42 +34751,53 @@
   },
   {
     "id": "smat",
-    "name": "smat",
-    "description": "OSINT tool: smat.",
+    "name": "SMAT",
+    "description": "Use when you have a `username`, keyword, or narrative and want to search and chart its spread across fringe/alt platforms (Telegram, 4chan, Gab, Bitchute, VK, etc.) — returns social-profile and associate leads.",
     "url": "https://www.smat-app.com/timeline",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword/timeline search and activity charts across many fringe and alt-tech social platforms at once.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool (Social Media Analysis Toolkit), maintained as a public-interest project. No account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — SMAT queries its own collected datasets, so you don't touch the platforms or accounts directly. Searches run against archived/aggregated data; your query stays with SMAT. Good for studying extremist/fringe content without visiting the source platforms yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Public-interest research tool widely used by journalists/researchers; coverage depends on which platforms/datasets it currently ingests, which changes over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Social Media Analysis Toolkit",
+      "smat-app.com"
+    ],
     "tags": [
-      "forums"
+      "forums",
+      "fringe-platforms",
+      "disinformation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/smat.md"
   },
   {
@@ -68485,41 +68532,53 @@
   {
     "id": "eyewitness",
     "name": "EyeWitness",
-    "description": "Visual site enumeration and credential identification",
+    "description": "Use when you have a list of `domain`s/URLs/IPs and want automated screenshots plus header/title capture to triage many web services fast — returns image and metadata-exif leads.",
     "url": "https://github.com/ChrisTruncer/EyeWitness",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "tools"
     ],
-    "bestFor": "Visual site enumeration and credential identification",
-    "input": "URL lists",
-    "output": "Screenshots, headers, and default credential matches",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Bulk-screenshotting and fingerprinting a large list of web services to triage which are worth investigating.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "HTTP requests visible in target server logs; screenshots leave network footprint",
+    "costNote": "Free, open-source (Python). Ships in Kali; install via the repo's setup script.",
+    "opsec": "active",
+    "opsecNote": "ACTIVE — EyeWitness makes real HTTP(S) requests to every target to grab screenshots and headers, so your IP appears in each target's server logs. Use a VPN/proxy or Tor routing, throttle, and only point it at hosts you're authorized to enumerate. Not a passive tool despite feeling like \"just screenshots\".",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used, well-known recon tool by Chris Truncer (FortyNorth Security); mature and broadly trusted in the security community.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "EyeWitness"
+    ],
+    "tags": [
+      "screenshotting",
+      "web-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/tools/eyewitness.md"
   },
   {
@@ -87544,40 +87603,51 @@
   {
     "id": "urlvoid",
     "name": "URLVoid",
-    "description": "OSINT tool: URLVoid.",
+    "description": "Use when you have a `domain`/URL and want its reputation across 30+ blocklists plus basic hosting info — returns domain, ip-address and reputation leads.",
     "url": "http://www.urlvoid.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking a website/domain's reputation against many blocklist and threat-reputation engines at once.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free website-reputation checker (by NoVirusThanks). No account needed for basic scans; an API is available on paid plans.",
+    "opsec": "passive",
+    "opsecNote": "Passive against the target — URLVoid queries reputation services and its own data, so you do not connect to the suspect site directly. Your query is logged by URLVoid, a third party; don't submit anything you must keep confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running reputation aggregator (NoVirusThanks); it summarizes third-party blocklists, so treat a clean result as \"not flagged\", not \"proven safe\".",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domain-and-ip-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "url-void"
     ],
+    "aliases": [
+      "urlvoid.com"
+    ],
+    "tags": [
+      "domain-and-ip-research",
+      "reputation"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/urlvoid.md"
   },
   {
@@ -323303,29 +323373,31 @@
   {
     "id": "reddit-search-realsrikar",
     "name": "Reddit Search (realsrikar)",
-    "description": "Reddit content search tool.",
+    "description": "Use when you have a `username`, keyword, or subreddit and want a clean browser-based way to search and browse Reddit content — returns social-profile and associate leads.",
     "url": "https://realsrikar.github.io/reddit-search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Keyword searching Reddit content",
+    "bestFor": "Lightweight browser-based searching/browsing of Reddit posts and comments without logging in.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, static client-side web tool hosted on GitHub Pages. No account or install.",
+    "opsec": "passive",
+    "opsecNote": "The tool runs in your browser and queries Reddit's public data — searches may hit Reddit from YOUR IP, so use a VPN/sock-puppet if you must not appear in Reddit's request logs. No login means no personal Reddit account is exposed. It reads only public Reddit content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party GitHub Pages front-end over Reddit's public data; convenient but unofficial — verify results against reddit.com directly.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -323334,14 +323406,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "reddit-search realsrikar"
+    ],
     "tags": [
       "reddit",
       "search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-search-realsrikar.md"
   },
   {
@@ -334178,40 +334253,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/social-networks/twitchmetrics-net.md"
-  },
-  {
-    "id": "twitchtracker",
-    "name": "TwitchTracker",
-    "description": "OSINT tool: TwitchTracker.",
-    "url": "https://twitchtracker.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitchtracker.md"
   },
   {
     "id": "twitonomy",
@@ -346996,28 +347037,32 @@
   {
     "id": "cyclevin",
     "name": "CycleVIN",
-    "description": "Motorcycle-specific VIN history.",
+    "description": "Use when you have a motorcycle/powersports `vin` and want its history — title, theft, salvage, odometer and recall records — returns vin history and address/associate (title transfer) leads.",
     "url": "https://www.cyclevin.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "Motorcycle VIN history lookup.",
+    "bestFor": "Motorcycle and powersports VIN history reports (title, theft, salvage, odometer, recalls).",
     "selectorsIn": [
       "vin"
     ],
     "selectorsOut": [
-      "vin"
+      "vin",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free VIN spec-decode, NHTSA recall lookup, and market-value/ownership-cost estimates; the full history report (title/theft/salvage/odometer) is paid at ~$25 per VIN (dealer bulk pricing available).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you query a commercial VIN database, never the vehicle owner. Buying a report leaves a payment trail with CycleVIN; use appropriate billing if attribution matters. Nothing reaches the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial VIN-history vendor focused on motorcycles/powersports; data is aggregated from DMV/title/insurance/theft sources, so completeness varies by state and record availability.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "us"
@@ -347026,14 +347071,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CycleVIN",
+      "cyclevin.com"
+    ],
     "tags": [
       "vin",
       "motorcycle"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/cyclevin.md"
   },
   {

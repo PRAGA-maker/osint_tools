@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`burp-suite`** (low) — Web application penetration testing
-- **`eyewitness`** (low) — Visual site enumeration and credential identification
+- **`eyewitness`** (low) — Use when you have a list of `domain`s/URLs/IPs and want automated screenshots plus header/title capture to triage many web services fast — r
 - **`hunting-new-registered-domains`** (low) — Use when you have a brand/keyword/domain and want to catch newly registered look-alike domains (typosquat/phishing) from the daily new-domai
 - **`international-domain-name-conversion-tool`** (low) — Use when you have a `domain` in Unicode/IDN or Punycode form and want its equivalent — returns the converted form so you can spot look-alike
 

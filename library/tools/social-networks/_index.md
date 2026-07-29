@@ -440,7 +440,7 @@ kind: group-index
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
-- **`reddit-search-realsrikar`** (low) — Reddit content search tool.
+- **`reddit-search-realsrikar`** (low) — Use when you have a `username`, keyword, or subreddit and want a clean browser-based way to search and browse Reddit content — returns socia
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Use when you have a live Reddit thread (or a `username` active in one) and want its comments to update in real time — returns a live-refresh
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
@@ -628,7 +628,6 @@ kind: group-index
 - **`twitch-username-and-user-id-addons-mozilla-org`** (medium) — Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames
 - **`twitch-username-search`** (low) — OSINT tool: Twitch Username Search.
 - **`twitchmetrics-net`** (low) — Use when you have a Twitch `username` and want their channel stats, growth history, games played and rankings — returns social-profile conte
-- **`twitchtracker`** (low) — OSINT tool: TwitchTracker.
 - **`twitter-account-detector`** (low) — Use when you have a webpage/`domain` and want the Twitter/X accounts it references — a Chrome extension that surfaces all X handles linked o
 - **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur
 - **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
