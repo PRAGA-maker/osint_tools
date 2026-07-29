@@ -55,7 +55,6 @@ kind: group-index
 - **`inmates-plus`** (high) — Use when you have a `name` and want to check whether someone is or was incarcerated in a US state or county facility — returns `address` (fa
 - **`international-organization-for-standardization-catalogue`** (medium) — Use when you have an `employer-org` or a standard number and want to confirm which ISO standards apply/are cited — returns `document-id` sta
 - **`kilos-darknet-search-engine`** (low) — Use when you have a darknet vendor `username`, `crypto-wallet`, or product term and want marketplace listings and vendor profiles — returns 
-- **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
 - **`mail2tor`** (low) — Use when you encounter a `@mail2tor` `email` and want to understand it — a Tor-only anonymous mail service, so the address signals deliberat
 - **`medina-county-auditor`** (medium) — Use when you have a `name` or `address` in Medina County, Ohio and want property records — returns owner `name`, `address`, parcel/valuation
 - **`money-center`** (low) — OSINT tool: Money Center.

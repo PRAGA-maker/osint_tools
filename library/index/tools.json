@@ -2077,37 +2077,43 @@
   {
     "id": "canva",
     "name": "Canva",
-    "description": "OSINT tool: Canva.",
+    "description": "Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces shareable graphics, not an intelligence source.",
     "url": "https://www.canva.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly producing clean report graphics, timelines, and relationship charts for briefings.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Generous free tier covers most reporting needs; Canva Pro (paid) unlocks brand kits, more assets, and background removal.",
+    "opsec": "passive",
+    "opsecNote": "You enter your own analysis into a third-party cloud app, so case content leaves your machine and is stored on Canva's servers. Keep sensitive names/identifiers out of designs (use codes/pseudonyms), or use offline tools for anything protected. It reveals nothing about a target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Mainstream commercial design SaaS; reliable as software but stores whatever you upload — a data-handling consideration, not a data-quality one.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "aliases": [],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "reporting"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/canva.md"
   },
   {
@@ -2995,37 +3001,43 @@
   {
     "id": "csvkit",
     "name": "csvkit",
-    "description": "OSINT tool: csvkit.",
+    "description": "Use when you have a bulk data dump (CSV/Excel/JSON) and want to slice, search, join, and query it from the command line to pull out records tied to a subject — an analysis aid, not a lookup source.",
     "url": "https://github.com/wireservice/csvkit",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line wrangling and SQL-querying of tabular data dumps during analysis.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source Python toolkit; install via pip.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on data you already hold — it touches no network and reveals nothing about a target. OpSec concerns are about how you obtained and store the underlying dataset, not about running csvkit on it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Mature, widely-used open-source toolkit by the Wireservice/data-journalism community; stable and well-documented.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wireservice csvkit"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-wrangling"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/csvkit.md"
   },
   {
@@ -4541,42 +4553,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/ai-analysis-automation/e4gl30s1nt.md"
-  },
-  {
-    "id": "easely",
-    "name": "easely",
-    "description": "OSINT tool: easely.",
-    "url": "http://www.easel.ly",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/easely.md"
   },
   {
     "id": "einvestigator",
@@ -13866,41 +13842,50 @@
   {
     "id": "seclists",
     "name": "SecLists",
-    "description": "OSINT tool: SecLists.",
+    "description": "Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — returns curated list files, not lookups on a person.",
     "url": "https://github.com/danielmiessler/SecLists",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A one-stop collection of usernames, passwords, and fuzzing wordlists to feed other enumeration tools.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "username",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; clone the GitHub repo (large — hundreds of MB).",
+    "opsec": "passive",
+    "opsecNote": "The repo itself is inert reference data — cloning it touches only GitHub and reveals nothing about a target. OpSec risk arises from what you DO with the lists (spraying credentials or enumerating names is active and often intrusive); the lists alone are passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely used, well-maintained community project by Daniel Miessler and contributors; the de-facto standard wordlist collection in security work.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "related-awesome-lists"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "robotsdisallowed",
       "seclists-dns-subdomains"
     ],
+    "aliases": [
+      "danielmiessler SecLists"
+    ],
+    "tags": [
+      "related-awesome-lists",
+      "wordlists"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/seclists.md"
   },
   {
@@ -19731,42 +19716,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/archives-cache/feed-filter-maker.md"
-  },
-  {
-    "id": "feedbooster",
-    "name": "FeedBooster",
-    "description": "OSINT tool: FeedBooster.",
-    "url": "http://www.qsensei.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/feedbooster.md"
   },
   {
     "id": "feederator",
@@ -40227,40 +40176,6 @@
     "_file": "library/tools/dark-web/kilos-darknet-search-engine.md"
   },
   {
-    "id": "linkbaseorg",
-    "name": "LinkBaseORG",
-    "description": "OSINT tool: LinkBaseORG.",
-    "url": "https://link-base.org/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/linkbaseorg.md"
-  },
-  {
     "id": "mail2tor",
     "name": "Mail2Tor",
     "description": "Use when you encounter a `@mail2tor` `email` and want to understand it — a Tor-only anonymous mail service, so the address signals deliberate anonymity rather than a pivotable identity.",
@@ -49784,46 +49699,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/convert-net.md"
-  },
-  {
-    "id": "copernic-desktop-search-tool",
-    "name": "Copernic Desktop Search Tool",
-    "description": "Award-winning desktop search tool for PC",
-    "url": "http://www.copernic.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/copernic-desktop-search-tool.md"
   },
   {
     "id": "copypastecharacter",
@@ -64973,29 +64848,35 @@
   {
     "id": "cloud-enum",
     "name": "cloud_enum",
-    "description": "Rapid discovery of cloud storage exposure across major providers",
+    "description": "Use when you have an `employer-org`/`domain` or keyword and want to find that entity's exposed public cloud storage (AWS S3, Azure, GCP) — returns discovered `domain`/URL buckets and endpoints.",
     "url": "https://github.com/initstring/cloud_enum",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "aws-enumeration"
     ],
-    "bestFor": "Rapid discovery of cloud storage exposure across major providers",
-    "input": "Company names, domains, and custom keywords/wordlists",
-    "output": "Potentially exposed cloud storage resources by provider",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating an organisation's public/exposed cloud storage across AWS, Azure, and GCP from names and keywords.",
+    "selectorsIn": [
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source Python tool; run locally.",
     "opsec": "active",
-    "opsecNote": "Performs direct enumeration requests against cloud provider endpoints.",
+    "opsecNote": "It sends direct enumeration requests to AWS/Azure/GCP endpoints derived from your keywords. Those providers (and, via access logs, sometimes the resource owner) can see the probes. Run from an attributable-to-nobody host/VPN and only against targets you are authorised to assess.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known open-source tool by initstring; widely used in cloud-security assessment. Verify buckets it flags before drawing conclusions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -65005,11 +64886,18 @@
     "relatedTools": [
       "initstring-linkedin2username"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "cloud_enum"
+    ],
+    "tags": [
+      "cloud-enumeration",
+      "aws",
+      "azure",
+      "gcp"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/aws-enumeration/cloud-enum.md"
   },
   {
@@ -123191,40 +123079,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/reverseimagelocation.md"
-  },
-  {
-    "id": "rfsearch-com",
-    "name": "Rfsearch.com",
-    "description": "OSINT tool: Rfsearch.com.",
-    "url": "http://rfsearch.com/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/rfsearch-com.md"
   },
   {
     "id": "rivermap",
@@ -264851,39 +264705,52 @@
   {
     "id": "archive-it-org",
     "name": "Archive-it.org",
-    "description": "OSINT tool: Archive-it.org.",
+    "description": "Use when you have a `domain`/URL or an organisation `name` and want to find curated, thematically-archived web snapshots of it — returns historical `social-profile`/page captures from institutional collections.",
     "url": "https://archive-it.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching thousands of curated web-archive collections built by libraries, archives, and NGOs.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Browsing and full-text searching the public collections is free; building/hosting your own archive collection is a paid institutional subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the Internet Archive's Archive-It portal, not the target's live site, so the subject sees nothing. It logs your searches like any web service — browse behind a VPN for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Internet Archive; collections are curated by named libraries, universities, and archives, making captures well-provenanced.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-it",
       "wayback-archive-it-org"
     ],
+    "aliases": [
+      "Archive-It"
+    ],
+    "tags": [
+      "web-archive",
+      "wayback"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/archive-it-org.md"
   },
   {
@@ -276267,35 +276134,49 @@
   {
     "id": "googledrive-search-engine",
     "name": "GoogleDrive Search Engine",
-    "description": "OSINT tool: GoogleDrive Search Engine.",
+    "description": "Use when you have a `name`, keyword, or filename and want to find publicly-shared Google Drive/Docs files indexed by Google — returns exposed `document-id` files and their author `name`s.",
     "url": "https://cse.google.com/cse?cx=c64ba311eb8c31896",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Surfacing publicly-shared Google Drive documents, sheets, and slides that were meant to be private.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Programmable (Custom) Search Engine; no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit Google's index, not the document owners, so no target is alerted. Google logs your searches — use a sock-puppet Google session/VPN for sensitive work, and note that opening a found file may register a view for the owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine restricting results to Google Drive/Docs domains; coverage depends on that config and Google's index, and can drift over time.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google Drive CSE"
+    ],
+    "tags": [
+      "google-drive",
+      "document-search",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/googledrive-search-engine.md"
   },
   {
@@ -329804,33 +329685,36 @@
   {
     "id": "tailwind",
     "name": "Tailwind",
-    "description": "Social media scheduling tool including Pinterest.",
+    "description": "Use when you want to understand a subject's Pinterest footprint via keyword/content analytics — primarily a marketing scheduler with only marginal investigative value.",
     "url": "https://www.tailwindapp.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Pinterest scheduling/analytics (limited OSINT use)",
+    "bestFor": "Pinterest keyword and content analytics (limited OSINT use).",
     "selectorsIn": [
       "social-profile"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free plan (\"start free, no credit card\") with limited features; paid plans unlock scheduling volume, analytics, and Instagram/Facebook tools.",
+    "opsec": "active",
+    "opsecNote": "This is your-account marketing tooling, not a passive lookup — you log in and connect accounts. It is designed to publish/analyse your own Pinterest, so using it to study a target is off-label and requires authenticating, which is attributable. Prefer plain, logged-out Pinterest browsing for passive research on a subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate mainstream Pinterest marketing SaaS (a long-standing Pinterest partner), but built for content creators, not investigators — investigative utility is incidental.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
@@ -329840,8 +329724,8 @@
       "scheduling"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tailwind.md"
   },
   {

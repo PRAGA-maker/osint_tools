@@ -7,17 +7,17 @@ kind: group-index
 # root
 
 ## Sub-groups
-- **`ai-analysis-automation/`** — 436 skill(s) below.
-- **`archives-cache/`** — 120 skill(s) below.
+- **`ai-analysis-automation/`** — 435 skill(s) below.
+- **`archives-cache/`** — 119 skill(s) below.
 - **`communities-forums/`** — 295 skill(s) below.
-- **`dark-web/`** — 103 skill(s) below.
+- **`dark-web/`** — 102 skill(s) below.
 - **`dating-classifieds/`** — 92 skill(s) below.
-- **`documents-metadata/`** — 292 skill(s) below.
+- **`documents-metadata/`** — 291 skill(s) below.
 - **`domains-ip-infrastructure/`** — 668 skill(s) below.
 - **`email/`** — 250 skill(s) below.
 - **`evidence-capture/`** — 31 skill(s) below.
 - **`financial-crypto/`** — 103 skill(s) below.
-- **`geolocation/`** — 340 skill(s) below.
+- **`geolocation/`** — 339 skill(s) below.
 - **`image-video-face/`** — 460 skill(s) below.
 - **`maps-geospatial-data/`** — 123 skill(s) below.
 - **`messaging/`** — 189 skill(s) below.

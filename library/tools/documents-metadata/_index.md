@@ -64,7 +64,6 @@ kind: group-index
 - **`consumersearch`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
 - **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
-- **`copernic-desktop-search-tool`** (low) — Award-winning desktop search tool for PC
 - **`copypastecharacter`** (low) — Website that offers multiple sets of characters and symbols for cutting and pasting into documents or slides
 - **`crowdriff`** (low) — Visual marketing software platform
 - **`crowdspring`** (low) — Project outsourcing website

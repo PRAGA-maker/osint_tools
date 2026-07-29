@@ -242,7 +242,6 @@ kind: group-index
 - **`rain-alarm`** (medium) — Use when you have a `geolocation` and want live precipitation/radar for that spot — returns current and approaching-rain `geolocation` weath
 - **`rally-maps`** (low) — Use when you have footage/photos of a rally-racing stage and want to place it — returns the event location, route, date and results from a w
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
-- **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
 - **`rivermap`** (medium) — Use when you have a `geolocation` (an image of a river/waterway or a European region) and want detailed hydrological data to help identify i
 - **`safe-airspace`** (medium) — Use when you have a country/region `geolocation` and want conflict-zone aviation risk intel — warnings, incident history, GPS jamming/spoofi
 - **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.

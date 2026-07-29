@@ -44,7 +44,6 @@ kind: group-index
 - **`factinsect`** (low) — Use when you have a news claim or article and want to know if trusted sources confirm or contradict it — returns a green/red/grey verdict wi
 - **`feed-exileed`** (low) — OSINT tool: Feed Exileed.
 - **`feed-filter-maker`** (low) — OSINT tool: Feed Filter Maker.
-- **`feedbooster`** (low) — OSINT tool: FeedBooster.
 - **`feederator`** (low) — OSINT tool: Feederator.
 - **`feedly`** (low) — Use when you want to continuously monitor news sites, blogs and RSS feeds about a subject or topic in one place — returns a deduplicated, se
 - **`feedreader`** (low) — Use when you have a subject's blog/site/news `domain` and want to monitor its updates over time — subscribe to its RSS feed and aggregate ne

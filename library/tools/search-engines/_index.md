@@ -60,7 +60,7 @@ kind: group-index
 - **`app-store-custom-search-engine`** (medium) — Use when you have an app name, developer, or `username` and want to search Apple/Google app-store listings — returns developer org, linked s
 - **`appropedia`** (low) — Use when you have a `name` or `username` active in sustainability/appropriate-technology and want their wiki contributions — returns authore
 - **`arabo-com`** (low) — Use when you have a `name`, business, or topic in the Arab world and want Arabic-language sites a Western engine misses — returns social-pro
-- **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
+- **`archive-it-org`** (low) — Use when you have a `domain`/URL or an organisation `name` and want to find curated, thematically-archived web snapshots of it — returns his
 - **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
@@ -273,7 +273,7 @@ kind: group-index
 - **`google-to-search-profiles-on-stack-overflow`** (medium) — Use when you have a `name`, skills or a location and want to find matching Stack Overflow profiles via a Google X-ray query — returns `socia
 - **`google-unlocked`** (low) — Use when a Google search for a `name`/`domain` looks scrubbed by DMCA removals — returns the hidden/delisted result links re-injected into t
 - **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
-- **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
+- **`googledrive-search-engine`** (low) — Use when you have a `name`, keyword, or filename and want to find publicly-shared Google Drive/Docs files indexed by Google — returns expose
 - **`googler`** (low) — command line google search tool
 - **`goosh-org`** (low) — online google search command line tool
 - **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 

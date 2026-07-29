@@ -64,7 +64,7 @@ kind: group-index
 - **`boxcryptor`** (low) — OSINT tool: boxcryptor.
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — OSINT tool: Canary Tokens.
-- **`canva`** (low) — OSINT tool: Canva.
+- **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
 - **`cc-license`** (low) — OSINT tool: cc license.
 - **`ccleaner`** (low) — OSINT tool: CCleaner.
 - **`chart-js`** (low) — OSINT tool: Chart.js.
@@ -86,7 +86,7 @@ kind: group-index
 - **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
 - **`crossfilter`** (low) — OSINT tool: Crossfilter.
 - **`crowdsec`** (low) — Use when you have an `ip-address` and want crowd-sourced threat reputation on it — CrowdSec's CTI shows whether the IP is a known attacker, 
-- **`csvkit`** (low) — OSINT tool: csvkit.
+- **`csvkit`** (low) — Use when you have a bulk data dump (CSV/Excel/JSON) and want to slice, search, join, and query it from the command line to pull out records 
 - **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
 - **`cyberbro`** (low) — Use when you have a messy blob of indicators (`ip-address`, `domain`, hashes, URLs) and want bulk reputation/enrichment — returns aggregated
 - **`cyberchef`** (low) — Use when you have encoded, encrypted, or obfuscated data (Base64, hex, timestamps, ciphers) and want to decode/transform it — returns the de
@@ -122,7 +122,6 @@ kind: group-index
 - **`duckduckgo-url-scraper`** (low) — Use when you have a search query/`domain` and want a scriptable list of DuckDuckGo result URLs for a pipeline — returns a list of domains/UR
 - **`dygraphs`** (low) — OSINT tool: dygraphs.
 - **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
-- **`easely`** (low) — OSINT tool: easely.
 - **`einvestigator`** (low) — OSINT tool: eInvestigator.
 - **`encsf-mp`** (low) — OSINT tool: EncSF MP.
 - **`epic-privacy-browser`** (low) — OSINT tool: Epic Privacy Browser.
@@ -325,7 +324,7 @@ kind: group-index
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
 - **`script-safe`** (low) — OSINT tool: Script Safe.
 - **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
-- **`seclists`** (low) — OSINT tool: SecLists.
+- **`seclists`** (low) — Use when you need ready-made `username`, `password`, and name/subdomain wordlists to seed enumeration or credential-stuffing checks — return
 - **`sector035`** (low) — OSINT tool: Sector035.
 - **`securesha`** (low) — OSINT tool: Securesha.
 - **`security-list`** (low) — OSINT tool: security-list.

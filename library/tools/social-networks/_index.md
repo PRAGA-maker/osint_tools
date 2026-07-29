@@ -555,7 +555,7 @@ kind: group-index
 - **`sully-gnome`** (medium) — Use when you have a Twitch `username`/channel and want its activity history — returns games streamed, schedule, growth, watch-time, and peak
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
 - **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho
-- **`tailwind`** (low) — Social media scheduling tool including Pinterest.
+- **`tailwind`** (low) — Use when you want to understand a subject's Pinterest footprint via keyword/content analytics — primarily a marketing scheduler with only ma
 - **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
