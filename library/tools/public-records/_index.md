@@ -712,7 +712,7 @@ kind: group-index
 - **`prison-search-free-prison-inmate-locators`** (high) — Use when you have a `name` and want to find the right official US inmate locator — a state-by-state directory of free federal, state, and co
 - **`private-eye-co-uk`** (high) — Use when you have an `address` or area in England/Wales and want to know if it's owned by an offshore company — returns the offshore owner, 
 - **`probaterecords-co-uk`** (medium) — Use when you have a deceased person's `name` and want an official sealed copy of their England & Wales will or grant of probate — returns `a
-- **`project-whispers`** (low) — OSINT tool: Project Whispers.
+- **`project-whispers`** (low) — Use when you have a `username`, handle, or keyword and want to search leaked far-right Discord chat logs for it — returns matching messages 
 - **`proper-ie`** (high) — Use when you have an Irish `address`/area and want sale-price history from Ireland's public Residential Property Price Register — returns tr
 - **`property-records-public-records-by-state`** (high) — Use when you have a `name` or `address` and want official county property/deed records — returns a directory of free government sources to p
 - **`property-search-public-records-by-state`** (medium) — Use when you have a US `name` or `address` and want the right county/state property-records portal — returns links to official assessor/reco
@@ -938,7 +938,6 @@ kind: group-index
 - **`wisconsin-registered-voter-verification`** (medium) — Use when you have a name and location and want to confirm a Wisconsin voter registration — returns registration status and polling-place/pre
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
 - **`world-bank-data`** (low) — Use when you have an employer-org, country, or region and want authoritative development/economic statistics to corroborate context — return
-- **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
 - **`wto-statistics`** (low) — OSINT tool: WTO Statistics.

@@ -32,7 +32,7 @@ kind: group-index
 - **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`analyze-file-format-online`** (low) — Use when you have a file of unknown or mislabelled type and want its true format plus basic metadata — returns detected format(s) from binar
 - **`angellist`** (low) — Use when you have a `name` or startup/`employer-org` and want founder, employee, and investor profiles from the startup ecosystem — returns 
-- **`apple-icloud-usa`** (low) — Cloud storage and cloud computing service by Apple
+- **`apple-icloud-usa`** (medium) — Use when you have an `email` or `phone` and want to test whether it is a registered Apple ID — returns account-existence signal (and, in a w
 - **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
 - **`audacity`** (low) — Use when you have an audio file/recording and want to analyze it — returns spectrogram/waveform views, isolated sounds, and clues to locatio
@@ -140,7 +140,7 @@ kind: group-index
 - **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations
 - **`inmatrix-zoomplayer`** (low) — Program that (with codex packs) plays all public video formats
 - **`instapaper`** (low) — Use when you have a target `domain`/URL and want to capture its readable text for offline review and evidence-keeping — returns a saved, de-
-- **`intensedebate`** (low) — Website related to the provision of news feeds and comments from other websites
+- **`intensedebate`** (low) — Use when you have an IntenseDebate `username` and want that commenter's cross-site history and profile — returns their comment history, link
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
 - **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
 - **`jeff-sagarin-north-america`** (low) — Website related to sports ratings

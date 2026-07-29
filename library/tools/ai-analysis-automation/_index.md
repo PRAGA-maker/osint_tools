@@ -191,7 +191,7 @@ kind: group-index
 - **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
 - **`jqplot`** (low) — OSINT tool: jqPlot.
-- **`justdeleteme`** (low) — OSINT tool: justdeleteme.
+- **`justdeleteme`** (low) — Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, an
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — OSINT tool: keyFinder.
 - **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.

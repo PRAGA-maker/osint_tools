@@ -65,7 +65,6 @@ kind: group-index
 - **`bot-sentinel-dashboard-bot-sentinel`** (low) — Use when you have an X/Twitter `username` and want a data-driven rating of how likely the account engages in inauthentic/trollbot behavior —
 - **`botometer-by-osome`** (low) — Use when you have a Twitter/X `username` and want a bot-likelihood score — now archival ("Botometer X"), returns a pre-June-2023 automation 
 - **`botometer`** (medium) — Use when you have a Twitter/X `username` and want a bot-likelihood score for the account — returns a bot/human probability and behavioural s
-- **`botslayer`** (low) — OSINT tool: BotSlayer.
 - **`brandwatch`** (high) — Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, se
 - **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
 - **`bsky-social`** (medium) — Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow

@@ -340,7 +340,7 @@ kind: group-index
 - **`remote-dns-lookup`** (low) — Use when you have an `ip-address` and want the domain name(s) and ISP behind it — returns reverse-DNS host and provider, a pivot from IP bac
 - **`repolist`** (low) — Use when you have a `domain` running a known CMS/framework and want a targeted content-discovery wordlist — generates path/file wordlists fr
 - **`retire-js`** (low) — Use when you have a `domain`/web app and want to fingerprint the JavaScript libraries it loads and flag known-vulnerable versions — returns 
-- **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
+- **`reverse-domain`** (low) — Use when you have a `domain` or `ip-address` and want other domains sharing the same infrastructure/registrant — returns a list of related `
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
 - **`reverse-google-analytics`** (low) — Use when you have a `domain` and want the other sites run by the same operator — finds domains sharing its Google Analytics/AdSense tracking
 - **`reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it — returns the `domain` neighbours sharing that server, exposing li

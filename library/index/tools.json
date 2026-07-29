@@ -8006,38 +8006,50 @@
   },
   {
     "id": "justdeleteme",
-    "name": "justdeleteme",
-    "description": "OSINT tool: justdeleteme.",
+    "name": "JustDeleteMe",
+    "description": "Use when you have a service/platform name and want the direct account-deletion URL and difficulty rating — returns deletion links, notes, and an easy/medium/hard/impossible rating per service.",
     "url": "http://justdelete.me",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "A reference directory of direct account-deletion links and difficulty ratings for hundreds of web services — used for privacy hygiene and to understand deletion friction on a platform.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (community-maintained on GitHub); browser extension available. No account.",
+    "opsec": "passive",
+    "opsecNote": "A static reference directory — you look up a service, you don't query any target. Reading it discloses nothing about a subject. The linked deletion pages, of course, only apply to accounts you control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running open-source community project (contributions via GitHub); reliable as a curated pointer list, though individual links can drift as services change their flows.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "accountkiller",
+      "backgroundchecks-org"
+    ],
+    "aliases": [
+      "justdelete.me",
+      "Just Delete Me"
+    ],
     "tags": [
-      "privacy-and-encryption-tools"
+      "privacy-and-encryption-tools",
+      "account-deletion",
+      "opsec-reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/justdeleteme.md"
   },
   {
@@ -33644,46 +33656,6 @@
     "_file": "library/tools/communities-forums/discord-servers/reconxplorer.md"
   },
   {
-    "id": "reddit-insight",
-    "name": "Reddit Insight",
-    "description": "OSINT tool: Reddit Insight.",
-    "url": "https://www.redditinsight.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/reddit-insight.md"
-  },
-  {
     "id": "reddit-old-reddit-search",
     "name": "Reddit (old.reddit search)",
     "description": "Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their social-profile activity, interests, associates and location/timing signals.",
@@ -48292,26 +48264,35 @@
   },
   {
     "id": "apple-icloud-usa",
-    "name": "Apple iCloud (USA)",
-    "description": "Cloud storage and cloud computing service by Apple",
+    "name": "Apple iCloud / Apple ID",
+    "description": "Use when you have an `email` or `phone` and want to test whether it is a registered Apple ID — returns account-existence signal (and, in a warranted/consent context, access to the subject's iCloud content).",
     "url": "https://www.icloud.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming whether an email/phone is tied to a live Apple ID via Apple's sign-in / account-recovery flow.",
+    "selectorsIn": [
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Apple service; no account or payment needed to reach the sign-in/existence check. iCloud storage tiers are paid but irrelevant to the existence lookup.",
+    "opsec": "active",
+    "opsecNote": "Probing Apple's sign-in/recovery for someone's address touches Apple's auth infrastructure for the target account. Stop at the existence signal — do NOT enter passwords, request 2FA codes, or trigger a recovery, which would alert the account owner. Use a sock-puppet browser/IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trust": "trusted",
+    "trustNote": "Operated by Apple; the sign-in/recovery endpoints are first-party and authoritative for Apple-ID existence. Actual iCloud data access is off-limits without the owner's credentials, consent, or legal process.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -48319,15 +48300,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com",
+      "app-profiler-me"
+    ],
+    "aliases": [
+      "Apple ID",
+      "iCloud",
+      "appleid.apple.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "account-existence"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/apple-icloud-usa.md"
   },
   {
@@ -53637,24 +53627,31 @@
   {
     "id": "intensedebate",
     "name": "IntenseDebate",
-    "description": "Website related to the provision of news feeds and comments from other websites",
+    "description": "Use when you have an IntenseDebate `username` and want that commenter's cross-site history and profile — returns their comment history, linked accounts, and profile details.",
     "url": "https://intensedebate.com",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling a commenter's public profile and cross-blog comment history from the IntenseDebate comment platform to enumerate their footprint and views.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free comment platform by Automattic (WordPress); public commenter profiles and comment history are viewable without an account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public IntenseDebate profile/comment history is passive read-only browsing — the commenter isn't notified. Don't log in or reply from a real account; a sock puppet keeps your interest hidden.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate Automattic-owned comment system; the data is the user's own public comments, but linked \"identities\" are self-asserted and should be corroborated.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -53663,15 +53660,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "disqus",
+      "disqus-comment-history"
+    ],
+    "aliases": [
+      "IntenseDebate comments",
+      "intensedebate.com profile"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "comment-platform"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/intensedebate.md"
   },
   {
@@ -81752,36 +81757,56 @@
   },
   {
     "id": "reverse-domain",
-    "name": "Reverse Domain",
-    "description": "OSINT tool: Reverse Domain.",
+    "name": "Reverse Domain (osint.sh)",
+    "description": "Use when you have a `domain` or `ip-address` and want other domains sharing the same infrastructure/registrant — returns a list of related `domain`s.",
     "url": "https://osint.sh/domain/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free reverse-domain / co-hosted-domain lookup to expand from one domain or IP to the wider footprint on the same infrastructure.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web tool in the osint.sh all-in-one suite; no account required. Rate-limited on the free front-end.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The lookup runs against osint.sh's own datasets (passive DNS / hosting records), not the target's servers, so you don't touch the subject's infrastructure. You do disclose the queried domain/IP to osint.sh.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run osint.sh toolkit (secgron); convenient and free, but data is a snapshot of third-party sources — corroborate hits before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "osint-sh",
+      "viewdns-reverse-ip",
+      "crt-sh"
+    ],
+    "aliases": [
+      "osint.sh reverse domain",
+      "reverse domain lookup"
+    ],
+    "tags": [
+      "reverse-domain",
+      "reverse-ip",
+      "domain-footprint"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reverse-domain.md"
   },
   {
@@ -107861,36 +107886,52 @@
   },
   {
     "id": "coinwink-com",
-    "name": "Coinwink.com",
-    "description": "OSINT tool: Coinwink.com.",
+    "name": "Coinwink",
+    "description": "Use when you're tracking a crypto asset relevant to a case and want to be alerted on price moves without watching charts — returns email/Telegram/SMS alerts when a coin hits a threshold.",
     "url": "https://coinwink.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Free crypto price-alert monitoring (email/Telegram/SMS) for coins/tokens tied to an investigation — a monitoring utility, not a blockchain-analysis tool.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier allows ~5 active email and ~5 active Telegram alerts plus a watchlist; paid plans ($8–$12/mo) lift limits and add SMS. Free tier suffices for light monitoring.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You monitor public market prices, not any target — nothing about a subject is disclosed. To receive alerts you register an email/phone with Coinwink, so use a research contact, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Straightforward commercial price-alert service; reliable for what it is, but it only relays market data and has no investigative/on-chain capability.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "coinmarketcap",
+      "blockchain-explorer"
+    ],
+    "aliases": [
+      "coinwink.com",
+      "Coinwink price alerts"
+    ],
+    "tags": [
+      "crypto",
+      "price-alerts",
+      "monitoring"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/coinwink-com.md"
   },
   {
@@ -248904,40 +248945,58 @@
   },
   {
     "id": "project-whispers",
-    "name": "Project Whispers",
-    "description": "OSINT tool: Project Whispers.",
+    "name": "Project Whispers (DDoSecrets)",
+    "description": "Use when you have a `username`, handle, or keyword and want to search leaked far-right Discord chat logs for it — returns matching messages with author handles, timestamps, and server context.",
     "url": "https://whispers.ddosecrets.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text searching millions of leaked messages from neo-Nazi/QAnon/far-right Discord servers for a handle, phrase, or identifier.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search; DDoSecrets is a nonprofit transparency collective. Some bulk datasets are gated to journalists/researchers, but the Whispers search is publicly usable.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search DDoSecrets' hosted archive, not any live service, so subjects aren't alerted. Note DDoSecrets is a leak-transparency site and your queries are logged there; use a sock-puppet browser/VPN, and treat the underlying data as sensitive leaked material to handle carefully and legally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Curated by DDoSecrets, an established transparency nonprofit; the archive is genuine leaked data widely used by journalists/researchers. As with any leak, verify identity claims — handles can be reused or spoofed within the logs.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "data-ddosecrets-search",
       "ddosecrets"
     ],
+    "aliases": [
+      "Whispers DDoSecrets",
+      "whispers.ddosecrets.com"
+    ],
+    "tags": [
+      "leaks",
+      "discord",
+      "extremism-research",
+      "breach-data"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/project-whispers.md"
   },
   {
@@ -261538,45 +261597,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/public-records/world-bank-data.md"
-  },
-  {
-    "id": "world-bank-doing-business",
-    "name": "World Bank Doing Business",
-    "description": "OSINT tool: World Bank Doing Business.",
-    "url": "http://www.doingbusiness.org",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "doingbusiness-north-america"
-    ],
-    "_file": "library/tools/public-records/world-bank-doing-business.md"
   },
   {
     "id": "world-bank-enterprise-surveys",
@@ -280622,42 +280642,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/linkosaurus-news-blog.md"
-  },
-  {
-    "id": "list-of-newspapers-com",
-    "name": "List of Newspapers.com",
-    "description": "OSINT tool: List of Newspapers.com.",
-    "url": "http://www.listofnewspapers.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "news"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/list-of-newspapers-com.md"
   },
   {
     "id": "live-traffic-cameras-in-europe",
@@ -301497,48 +301481,6 @@
       "trends-tool"
     ],
     "_file": "library/tools/social-networks/botometer-by-osome.md"
-  },
-  {
-    "id": "botslayer",
-    "name": "BotSlayer",
-    "description": "OSINT tool: BotSlayer.",
-    "url": "https://osome.iu.edu/tools/botslayer",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "botometer",
-      "botometer-by-osome",
-      "covaxxy",
-      "network-tool",
-      "osome-iu-edu",
-      "trends-tool"
-    ],
-    "_file": "library/tools/social-networks/botslayer.md"
   },
   {
     "id": "brandwatch",
@@ -341702,37 +341644,53 @@
   {
     "id": "ethnologue",
     "name": "Ethnologue",
-    "description": "OSINT tool: Ethnologue.",
+    "description": "Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, population, and dialects to geolocate/attribute a subject by language.",
     "url": "https://www.ethnologue.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "The authoritative reference on the world's living languages — mapping a language or dialect to the countries/regions and communities where it's spoken.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A limited number of page views are free; full/unrestricted access to language pages, maps and data requires a paid subscription. Basic language-location facts are reachable on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "A reference database — you look up languages, not people. Nothing about any subject is disclosed; only your own browsing is seen by the site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by SIL International since 1951; the standard scholarly catalogue of world languages and the source of ISO 639-3 codes. Authoritative for language facts, though speaker counts are estimates.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "glottolog",
+      "language-identification-tools"
+    ],
+    "aliases": [
+      "Ethnologue Languages of the World",
+      "SIL Ethnologue"
+    ],
     "tags": [
-      "translation"
+      "translation",
+      "language-reference",
+      "geolocation-aid"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/ethnologue.md"
   },
   {
@@ -347729,47 +347687,59 @@
   },
   {
     "id": "federal-aviation-administration",
-    "name": "Federal Aviation Administration",
-    "description": "Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.",
-    "url": "http://registry.faa.gov/aircraftinquiry/NNum\\_inquiry.aspx",
+    "name": "FAA Aircraft Registry (N-Number Inquiry)",
+    "description": "Use when you have a US aircraft tail number (N-number) and want its registered owner — returns owner `name`/`address`, aircraft make/model and registration status.",
+    "url": "https://registry.faa.gov/aircraftinquiry/NNum_inquiry.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a US N-number tail marking to the registered owner's name and address, plus aircraft particulars.",
     "selectorsIn": [
       "vehicle-plate"
     ],
     "selectorsOut": [
-      "geolocation"
+      "name",
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US-government public record; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "You query a US-government database, not the owner — the aircraft owner is not notified. Only the FAA sees your lookup. Nothing is disclosed to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official FAA aircraft registry — the authoritative US registration record. Note that owner data can be an LLC, trust, or dealer rather than the actual operator/pilot.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "transport"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "aircraft-registry",
-      "faa-registry"
+      "faa-registry",
+      "adsb-exchange"
     ],
+    "aliases": [
+      "FAA N-Number inquiry",
+      "FAA aircraft registry",
+      "registry.faa.gov"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "transport",
+      "aircraft",
+      "vehicle-registration"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/federal-aviation-administration.md"
   },
   {

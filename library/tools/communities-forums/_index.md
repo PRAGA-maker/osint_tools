@@ -199,7 +199,6 @@ kind: group-index
 - **`radion-net`** (low) — Use when you have a `geolocation` (or a station name heard in audio/video) and want to identify local radio stations there — a geolocation-c
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
-- **`reddit-insight`** (low) — OSINT tool: Reddit Insight.
 - **`reddit-old-reddit-search`** (high) — Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their
 - **`redditlist`** (low) — OSINT tool: Redditlist.
 - **`rediff-web-portal-india`** (low) — Use when you have a Rediffmail `email` or an Indian subject and want portal context — a live Indian news/email/shopping portal, most relevan

@@ -361,7 +361,6 @@ kind: group-index
 - **`lilo`** (medium) — Use when you want an alternate (French) search front-end to cross-check results outside your usual engine — returns general web results with
 - **`limetorrents`** (medium) — Use when you have a `username`/uploader handle or a content keyword and want to see torrents linked to it — returns uploader `social-profile
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
-- **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Use when you have a `geolocation`/road in Europe and want live eyes on it — returns real-time public traffic-camera feeds by country, city a
 - **`loopnet`** (medium) — Use when you have an `address` or `employer-org` and want commercial-property listings, locations and broker/owner contacts — returns `addre
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results

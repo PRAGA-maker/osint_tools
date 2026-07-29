@@ -33,7 +33,7 @@ kind: group-index
 - **`dragon-speech-recognition-solutions`** (low) — Program that recognized speech and translates it into text
 - **`emojipedia-org`** (low) — OSINT tool: emojipedia.org.
 - **`emojitranslate-com`** (low) — OSINT tool: emojitranslate.com.
-- **`ethnologue`** (low) — OSINT tool: Ethnologue.
+- **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
 - **`flockwatch`** (low) — OSINT tool: FlockWatch.
 - **`free-translator`** (low) — Use when you have foreign-language text or a foreign-language page tied to a subject and need a quick gist translation — returns translated 
