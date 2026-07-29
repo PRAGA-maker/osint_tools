@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`https-openphish-com-feed-txt`** (low) — Use when you have a `domain`/URL and want to check whether it is a known phishing site — returns a live list of confirmed phishing URLs.
-- **`phishstats`** (low) — Phishing campaign analysis
+- **`phishstats`** (low) — Use when you have a `domain`, `ip-address`, or URL and want to know if it's linked to phishing — returns matching phishing records with scor
 - **`phishtank`** (low) — Use when you have a `domain`/URL and want to know whether it's a known, community-verified phishing site — returns phishing status and verif
 - **`secai-ai`** (low) — Security research and threat intelligence
 

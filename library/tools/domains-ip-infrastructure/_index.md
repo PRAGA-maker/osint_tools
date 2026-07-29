@@ -250,7 +250,7 @@ kind: group-index
 - **`knockknock`** (low) — Use when you have a `domain` and want other domains likely owned by the same person/company — a Go CLI over the ViewDNS API returning relate
 - **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
 - **`larger-io`** (low) — OSINT tool: Larger.io.
-- **`lazarusholic`** (low) — OSINT tool: lazarusholic.
+- **`lazarusholic`** (low) — Use when you have an IoC or actor name tied to North Korean APT activity — returns linked reports, incidents, and indicators (domains, IPs, 
 - **`leakix`** (low) — Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed service
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
 - **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu

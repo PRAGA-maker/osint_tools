@@ -346,7 +346,7 @@ kind: group-index
 - **`the-fuck`** (low) — Use when you are working a case from the terminal and a command fails on a typo/missing flag — it suggests the corrected command so you keep
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Use when you have a `domain`/website and want the contact details it exposes — a Python tool that pulls `email`s, `phone`s and `social-profi
-- **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
+- **`threat-actor-usernames`** (low) — Use when you have a `username`/alias and want to know if it's a known threat actor and where they operate — returns matching handles and the
 - **`thunderbird`** (low) — Use when you have an `email` or a raw message and want to read full headers, sources and attachments — returns sender ip-address, metadata-e
 - **`tik-tok`** (low) — Use when you need to present investigation events as a clean vertical timeline — returns an embeddable, mobile-friendly timeline (a visualiz
 - **`tiki-toki`** (low) — Use when you have a set of dated events and want to build a shareable interactive timeline to visualise a subject's activity — an analysis/p

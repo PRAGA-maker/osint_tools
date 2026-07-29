@@ -12,7 +12,7 @@ kind: group-index
 - **`ewhois`** (low) — Use when you have a `domain` and want registration, DNS, hosting and traffic analytics in one panel — returns registrant email/name, IP, and
 - **`keyword-density`** (low) — Use when you have a `domain`/page (or text) and want its most frequent terms — returns word/phrase frequency and density, revealing a page's
 - **`similarweb`** (low) — Use when you have a `domain` and want its estimated traffic, audience geography, referrers and competitors — returns website analytics and r
-- **`sitedossier`** (low) — Quick domain intelligence aggregation
+- **`sitedossier`** (low) — Use when you have a `domain` or `ip-address` and want related infrastructure — returns other domains on the same host/name servers, plus a d
 - **`siteliner`** (low) — Use when you have a `domain` and want a content/link audit — returns duplicate-content matches, broken links and page inventory for the site
 - **`spyonweb`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID, IP or nameserver) and want to find other sites run by the same owner — retur
 - **`statscrop`** (low) — Use when you have a `domain` and want a quick popularity/traffic snapshot plus WHOIS and site stats — returns estimated rank, ownership and 

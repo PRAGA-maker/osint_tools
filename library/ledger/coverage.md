@@ -2,7 +2,7 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7148 total · 5893 full · 1255 stub (82% enriched)
+**Tools:** 7148 total · 5900 full · 1248 stub (82% enriched)
 
 **Strategies:** 92 total
 
@@ -10,17 +10,17 @@ _"full" = authored (has a `## When to use` body); the enrichment field is derive
 low: 3159 · medium: 2025 · high: 1964
 
 ## Tools by trust
-community: 3438 · trusted: 1944 · unverified: 1760 · untrustworthy: 6
+community: 3439 · trusted: 1946 · unverified: 1757 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 208/408
+- `ai-analysis-automation` — 209/408
 - `archives-cache` — 97/115
 - `communities-forums` — 255/285
 - `dark-web` — 57/95
 - `dating-classifieds` — 82/90
 - `documents-metadata` — 154/273
-- `domains-ip-infrastructure` — 473/633
+- `domains-ip-infrastructure` — 476/633
 - `email` — 246/246
 - `evidence-capture` — 21/28
 - `financial-crypto` — 78/95
@@ -32,7 +32,7 @@ community: 3438 · trusted: 1944 · unverified: 1760 · untrustworthy: 6
 - `people-search` — 256/257
 - `phone` — 136/137
 - `public-records` — 924/989
-- `search-engines` — 583/738
+- `search-engines` — 586/738
 - `social-networks` — 750/772
 - `training-ctf` — 7/12
 - `translation-language` — 51/94

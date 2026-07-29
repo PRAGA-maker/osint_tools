@@ -274,10 +274,10 @@ kind: group-index
 - **`grayhatwarfare`** (medium) — Use when you have a `name`, `email`, or `domain` and want to find files a target accidentally exposed in misconfigured public cloud buckets 
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
 - **`grey-literature-list-of-gateways`** (low) — Use when you have a `name` or topic and need non-commercial reports (technical, government, conference) — returns a curated list of ~30 grey
-- **`greynet-international`** (low) — OSINT tool: GreyNet International.
+- **`greynet-international`** (low) — Use when you need grey-literature research access — returns GreyNet's grey-literature network, its GreyGuide repository, and conference/refe
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,
-- **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
+- **`hacking-the-cloud`** (low) — Use when you're assessing cloud infrastructure and need attack/technique references — returns an encyclopedia of AWS/Azure/GCP offensive tac
 - **`hawaii-professional-and-vocational-license-search`** (medium) — Use when you have a name (or business) and want their Hawaii professional/occupational license — returns license type, number, status and th
 - **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
 - **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
@@ -485,7 +485,7 @@ kind: group-index
 - **`pubmed`** (low) — Use when you have a researcher/clinician `name` or `employer-org` and want their biomedical publications — returns papers, affiliations, and
 - **`pytrends`** (low) — Use when you want to pull Google Trends data programmatically for a term/`name`/topic — returns interest-over-time, regional interest and re
 - **`qilt-university-australia`** (medium) — Use when you have an Australian `employer-org` (university/college) and want to verify it and its outcomes — returns institution profiles, s
-- **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
+- **`quetzal-search`** (low) — Use when you have a `name` or research topic and want biomedical literature — returns relevant PubMed/MEDLINE articles via natural-language 
 - **`quickfound-subject-search-engine`** (medium) — Use when you want a topic to browse curated reference links and subject search portals — a directory site grouping news/science/history/biog
 - **`qwant`** (low) — Use when you have a `name`, `username`, `email` or `phone` and want a privacy-preserving web search with a different result set than Google/
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
