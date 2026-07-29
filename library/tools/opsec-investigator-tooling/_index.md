@@ -91,7 +91,7 @@ kind: group-index
 - **`coowon`** (low) — OSINT tool: Coowon.
 - **`coveryourtracks-eff-org`** (low) — Use when you want to test how identifiable and fingerprintable your investigation browser is before doing OSINT — returns your browser's uni
 - **`crackstation-net`** (low) — Use when you have an unsalted `password` hash and want the plaintext — returns the original password via massive precomputed lookup tables.
-- **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
+- **`credit-card-generator`** (low) — Use when building a sock-puppet persona and a form demands a Luhn-valid card number for format validation — generates fake, non-functional t
 - **`crontab-guru`** (low) — Use when you need to write or decode a cron schedule expression for automating recurring OSINT jobs — returns a plain-English reading and ne
 - **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
@@ -276,7 +276,7 @@ kind: group-index
 - **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
 - **`opera`** (low) — OSINT tool: Opera.
-- **`osint-sync`** (low) — Browser extension for OSINT (Osint Sync).
+- **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
 - **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
 - **`osintlab`** (low) — Script that automates installation of ~50 OSINT recon tools.

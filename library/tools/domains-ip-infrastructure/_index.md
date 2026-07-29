@@ -400,7 +400,7 @@ kind: group-index
 - **`thehot`** (medium) — Use when you have a `domain` and want its inbound backlink profile — referring domains, referring IPs and anchor text — returns `domain`, `i
 - **`threat-actor-usernames-scrape`** (low) — Use when you have a `username` and want to know whether it appears among ~812k handles scraped from cybercrime/dark-web forums — returns soc
 - **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
-- **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.
+- **`tidos-framework`** (low) — Use when you have a `domain` and want a scripted recon sweep — a modular web-recon/pentest framework whose passive OSINT modules return subd
 - **`tinyscan`** (low) — Use when you have a `domain`/URL and want a safe remote scan — screenshot, resolved IP/geolocation, tech stack, DNS/SSL/headers — without vi
 - **`tormap`** (low) — Worldwide online map of Tor Nodes
 - **`traceroutevisualizer`** (low) — Use when you have traceroute/tracert/MTR output and want to see the network path on a map — returns each hop's `geolocation` and an interact

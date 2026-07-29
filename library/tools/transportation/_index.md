@@ -78,7 +78,7 @@ kind: group-index
 - **`flightaware`** (medium) — Use when you have a flight number, tail number (aircraft registration), or airport and want live and historical flight tracking — returns ro
 - **`flightconnections`** (low) — Use when you have an airport, airline `name`, or route and want to see which airlines fly it and all direct destinations from an airport — r
 - **`flightwise`** (low) — OSINT tool: Flightwise.
-- **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.
+- **`free-aviation-records-black-book-online`** (low) — Use when you have an aircraft N-number, a pilot `name`, or a location and want US aviation public records — a directory linking FAA/NTSB reg
 - **`free-car-license-plate-lookup`** (medium) — Use when you have a `vehicle-plate` (plus state) and want to pull the linked vehicle profile and VIN — returns vin plus make/model/title sig
 - **`free-license-plate-search-check-any-license-plate-free`** (medium) — Use when you have a US license plate and want to identify the vehicle — returns year/make/model, specs and VIN-linked history (NOT owner nam
 - **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact

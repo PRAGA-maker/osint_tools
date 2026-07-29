@@ -691,7 +691,7 @@ kind: group-index
 - **`yagooglesearch`** (low) — Use when you have a `name`/`username`/query and want to script Google results without getting 429-blocked — returns result URLs programmatic
 - **`yahoo-com-2`** (high) — Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns
 - **`yahoo-com`** (high) — Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web re
-- **`yahoo-news`** (low) — OSINT tool: Yahoo News.
+- **`yahoo-news`** (low) — Use when you have a `name`, event, or place and want mainstream news coverage aggregated from many outlets — returns articles (with `name`s,
 - **`yahoo-search`** (low) — Use when you have a `name`, `username`, or `email` and want a second general-web index beyond Google/Bing — returns web pages, images, and `
 - **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
 - **`yamli-arabic`** (medium) — Use when you have a name a subject spells in Latin letters and want its Arabic-script results — returns social-profile and domain leads by t

@@ -122,7 +122,7 @@ kind: group-index
 - **`eraser`** (low) — OSINT tool: Eraser.
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
 - **`exhibit`** (low) — OSINT tool: Exhibit.
-- **`explainshell-com`** (low) — OSINT tool: explainshell.com.
+- **`explainshell-com`** (low) — Use when you have an unfamiliar shell command (from a writeup, a log, or a tool's README) and want each flag explained — paste it, get a pla
 - **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
 - **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
@@ -289,7 +289,7 @@ kind: group-index
 - **`privazer`** (low) — Use when you need to clean and securely wipe traces from your OWN investigation machine (history, caches, temp, free-space) — an OpSec/anti-
 - **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
 - **`profounder`** (low) — searching users by nickname and scrapping url's from website
-- **`psn-monitor`** (low) — OSINT tool: psn_monitor.
+- **`psn-monitor`** (low) — Use when you have a subject's PlayStation Network `username`/PSN ID and want to track their online presence — monitors online/offline status
 - **`pyba`** (low) — OSINT tool: Pyba.
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
 - **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
@@ -365,7 +365,7 @@ kind: group-index
 - **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
 - **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
-- **`ublock-origin`** (low) — OSINT tool: uBlock Origin.
+- **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co
 - **`uforio`** (low) — Generate word clouds from Reddit threads.
 - **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
 - **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
