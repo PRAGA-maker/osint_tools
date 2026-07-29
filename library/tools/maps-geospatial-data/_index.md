@@ -18,7 +18,7 @@ kind: group-index
 - **`arcgis-online`** (medium) — Use when you have a `geolocation`/`address` or an area of interest and want rich map layers and public data — returns satellite/aerial image
 - **`atlas-co`** (medium) — Use when you have `geolocation`/`address` data points and want to plot and spatially analyze them — returns an interactive map with distance
 - **`baidu-com`** (medium) — Use when you have an `address` or place in China and want mapping, satellite, and street-view imagery — returns `geolocation` coordinates an
-- **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
+- **`birdnet`** (low) — Use when you have audio (e.g. from a subject's video) with birdsong and want to narrow location — identifies bird species from sound and map
 - **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
 - **`cat-uxo`** (low) — Use when you have an `image` of a suspected munition/ordnance and want to identify it — a reference database of bombs, mines, rockets, and I
 - **`cites-trade-database`** (low) — Use when you have a species, country or `employer-org` in a wildlife-trafficking case and want the official record of legal international wi
@@ -36,7 +36,7 @@ kind: group-index
 - **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur
 - **`freemaptools-com`** (medium) — Use when you have a `geolocation` or `address`/postcode and want to convert, measure or visualise it — returns coordinate conversions, radiu
-- **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
+- **`gaode-maps`** (low) — Use when you have a Chinese `address` or `geolocation` and want accurate, China-specific maps, POI and street-level imagery — returns precis
 - **`generate-a-panorama`** (medium) — Use when you have a candidate viewpoint `geolocation` and a photo showing a horizon/mountain skyline — returns a labelled synthetic panorama
 - **`geocam-ru`** (medium) — Use when you have a `geolocation` (a city or place) and want live public webcam feeds there — returns real-time street/traffic/scenic camera
 - **`geomastr-com`** (medium) — Use when you have an `image` of an unknown place and want country/region clues — returns a searchable reference of bollards, plates, signs, 

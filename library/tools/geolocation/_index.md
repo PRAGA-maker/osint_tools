@@ -124,7 +124,7 @@ kind: group-index
 - **`googlestreetview`** (high) — Use when you have a `geolocation`/`address` (or photo clues) and want to see the place at ground level — returns street-level imagery to ver
 - **`gps-visualizer`** (high) — Use when you have an `address` or `geolocation` and want to convert between them or plot points on a map — returns latitude/longitude, addre
 - **`grassgis`** (medium) — Use when you need heavy-duty desktop GIS analysis of raster/vector `geolocation` data — terrain, viewshed, imagery — beyond what a web map o
-- **`ham-radio-qrz-callsign-database-search`** (low) — OSINT tool: Ham Radio QRZ Callsign Database Search.
+- **`ham-radio-qrz-callsign-database-search`** (low) — Use when you have an amateur-radio callsign (a `document-id`) or a licensee `name` and want the operator's identity and registered location 
 - **`hate-map`** (medium) — Use when you have a `geolocation` (US state/area) or a group name and want to see hate/anti-government groups active there — returns `employ
 - **`hawaii-traffic-cameras`** (low) — Use when you have a `geolocation` in Hawaii and want live public traffic-camera views and road conditions to confirm real-time activity at a
 - **`here-2`** (high) — Use when you have an `address`/`geolocation` and want maps, routing, and location context from HERE's mapping platform (alternative basemap 

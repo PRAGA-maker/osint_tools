@@ -63,7 +63,7 @@ kind: group-index
 - **`archive-it-org`** (low) — Use when you have a `domain`/URL or an organisation `name` and want to find curated, thematically-archived web snapshots of it — returns his
 - **`argumentsearch-com`** (low) — Use when you have a controversial topic or claim and want pro/con arguments mined from debate portals — a research/reasoning aid, not a peop
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
-- **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
+- **`ary-recon`** (low) — Use when you want a single-page launcher of passive-recon links organised by task — a directory (not a scanner) that points you to 30+ subdo
 - **`asian-development-bank`** (low) — Use when you have an `employer-org`, project, or contractor tied to development work in Asia-Pacific and want official project, procurement,
 - **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
 - **`ask-metafilter`** (low) — Use when you have a `username`, `name`, or niche question and want a long-lived Q&A community's answers — returns posts, member profiles, an
@@ -486,7 +486,7 @@ kind: group-index
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
 - **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`phind`** (low) — OSINT tool: Phind.
-- **`pinterest-trends`** (low) — OSINT tool: Pinterest Trends.
+- **`pinterest-trends`** (low) — Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity o
 - **`population-reference-bureau`** (medium) — Use when you have a `geolocation`/region and want demographic base-rates (age, migration, household structure) to contextualise a case — ret
 - **`pr-newswire`** (low) — OSINT tool: PR Newswire.
 - **`presearch`** (low) — OSINT tool: Presearch.

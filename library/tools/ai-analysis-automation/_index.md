@@ -64,7 +64,6 @@ kind: group-index
 - **`cacoo`** (low) — Use when you have a set of entities and links (people, accounts, addresses) and want to build a shareable link-analysis/relationship diagram
 - **`canary-tokens`** (low) — Use when you want to unmask who opens a document/link/email by planting a tripwire — returns the opener's `ip-address`, approximate `geoloca
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
-- **`cc-license`** (low) — OSINT tool: cc license.
 - **`ccleaner`** (low) — OSINT tool: CCleaner.
 - **`chart-js`** (low) — OSINT tool: Chart.js.
 - **`chartblocks`** (low) — OSINT tool: chartblocks.
@@ -97,7 +96,7 @@ kind: group-index
 - **`data-to-go`** (low) — OSINT tool: Data to Go.
 - **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
 - **`datawrapper`** (low) — Use when you have investigation data and want to turn it into clear charts, maps or tables — a free web app for publishable data visualizati
-- **`de4js`** (low) — HTML/JS deobfuscator
+- **`de4js`** (low) — Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfu
 - **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
 - **`decopy-ai-image-detector`** (low) — Use when you have an `image` (e.g. a profile photo) and want a quick read on whether it is AI-generated — returns an AI-likelihood score to 
 - **`deepai-ai-image-detector`** (low) — Use when you have an `image` and want a quick AI-generated-vs-real likelihood score to triage possible synthetic/deepfake media — returns a 
@@ -111,7 +110,7 @@ kind: group-index
 - **`disconnect`** (low) — OSINT tool: Disconnect.
 - **`discoshell`** (low) — OSINT tool: Discoshell.
 - **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
-- **`dnsx`** (low) — OSINT tool: dnsx.
+- **`dnsx`** (low) — Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and t
 - **`do-not-track`** (low) — OSINT tool: Do Not Track.
 - **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
 - **`dorks-collections-list`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want ready-made dork queries to hunt it across engines — returns curated do

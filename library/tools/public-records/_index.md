@@ -932,7 +932,7 @@ kind: group-index
 - **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
 - **`whaleslide`** (medium) — Use when you want to run web searches on a `name`/`username` without being tracked — a privacy-preserving general search engine that returns
 - **`whitepages-reverse-address-search`** (medium) — Use when you have an `address` and want to know who is associated with it — returns resident names, phone numbers and likely associates.
-- **`who-data`** (low) — OSINT tool: WHO Data.
+- **`who-data`** (low) — Use when you need authoritative country-level health statistics for context (mortality, disease, health-system data) — the WHO Global Health
 - **`who-do-you-search`** (medium) — Use when you have a business/service `name` or trade and a city and want local recommendations and business listings — returns local `employ
 - **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
 - **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.

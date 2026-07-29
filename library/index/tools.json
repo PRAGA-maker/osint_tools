@@ -2102,46 +2102,6 @@
     "_file": "library/tools/ai-analysis-automation/canva.md"
   },
   {
-    "id": "cc-license",
-    "name": "cc license",
-    "description": "OSINT tool: cc license.",
-    "url": "http://i.creativecommons.org/l/by-sa/4.0/88x31.png",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "license"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cc-search",
-      "creative-commons-attribution-sharealike-4-0-international"
-    ],
-    "_file": "library/tools/ai-analysis-automation/cc-license.md"
-  },
-  {
     "id": "ccleaner",
     "name": "CCleaner",
     "description": "OSINT tool: CCleaner.",
@@ -3594,37 +3554,47 @@
   {
     "id": "de4js",
     "name": "De4js",
-    "description": "HTML/JS deobfuscator",
+    "description": "Use when you have obfuscated/packed JavaScript (from a suspect site, a phishing kit, a scam page) and want to read it — an in-browser deobfuscator that returns human-readable source.",
     "url": "https://lelinhtinh.github.io/de4js/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Unpacking and beautifying obfuscated JavaScript so you can read what a page's script actually does.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source, runs entirely client-side in your browser; no account.",
+    "opsec": "passive",
+    "opsecNote": "De4js runs in your own browser — the code you paste is not sent to a server, so pasting hostile script is safe from an exfiltration standpoint. It only transforms text; it does NOT execute the script, which is exactly why it's safe for malware analysis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Open-source community project (lelinhtinh/de4js); inspectable and client-side, but community-maintained with no formal audit.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "de4js"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "javascript-deobfuscation",
+      "malware-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/de4js.md"
   },
   {
@@ -4143,42 +4113,55 @@
   {
     "id": "dnsx",
     "name": "dnsx",
-    "description": "OSINT tool: dnsx.",
+    "description": "Use when you have a `domain` (or a list of subdomains) and want fast, scriptable DNS resolution/brute-force — returns resolved records and the `ip-address`(es) behind each host.",
     "url": "https://github.com/projectdiscovery/dnsx",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "High-speed DNS resolution, record enumeration, and subdomain brute-forcing from the command line.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (ProjectDiscovery, Go); no key required for core DNS use.",
+    "opsec": "passive",
+    "opsecNote": "Resolving records queries public/recursive DNS, not the target's own servers, so it is passive. Brute-forcing subdomains sends many queries to resolvers (and, for records that exist, the authoritative NS) — noisy on your own network, but not direct contact with the subject's web server. Use trusted resolvers you control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by ProjectDiscovery, a well-known security-tooling team; open-source and widely used, actively developed.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "dns"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "alertx",
       "cve-map",
       "subfinder"
     ],
+    "aliases": [
+      "projectdiscovery/dnsx"
+    ],
+    "tags": [
+      "dns",
+      "infrastructure-enumeration"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/dnsx.md"
   },
   {
@@ -87294,29 +87277,34 @@
   {
     "id": "url-expander",
     "name": "URL Expander",
-    "description": "Resolving opaque short links",
+    "description": "Use when you have an opaque shortened link (bit.ly, t.co, tinyurl, etc.) and want its true destination without clicking — returns the expanded `domain`/URL and the redirect chain.",
     "url": "https://urlex.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "url-expanders"
     ],
-    "bestFor": "Resolving opaque short links",
-    "input": "Shortened URL",
-    "output": "Expanded URL and redirect details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Safely revealing where a short link actually points before you visit it.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web service, limited to ~100 lookups/day; no account.",
     "opsec": "passive",
-    "opsecNote": "Primarily destination resolution with low direct operational exposure.",
+    "opsecNote": "urlex.org fetches the redirect on your behalf, so the destination server sees urlex's request, not your IP — this is the safe way to resolve a suspicious link. Do not paste a one-time/tracking short link you don't want a third party to log and follow.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running (since 2011) single-operator utility; reputable and SafeBrowsing-clean, but a third party you are trusting to fetch on your behalf.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -87326,11 +87314,17 @@
     "relatedTools": [
       "urlex-modified-url-expander"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "urlex.org",
+      "Urlex"
+    ],
+    "tags": [
+      "url-expander",
+      "link-safety"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/url-expanders/url-expander.md"
   },
   {
@@ -116984,35 +116978,58 @@
   {
     "id": "ham-radio-qrz-callsign-database-search",
     "name": "Ham Radio QRZ Callsign Database Search",
-    "description": "OSINT tool: Ham Radio QRZ Callsign Database Search.",
+    "description": "Use when you have an amateur-radio callsign (a `document-id`) or a licensee `name` and want the operator's identity and registered location — returns `name`, `address`, and grid-square `geolocation`.",
     "url": "https://www.qrz.com/lookup",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a ham-radio callsign to the licensed operator's name and registered address/location.",
+    "selectorsIn": [
+      "document-id",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic callsign lookups are free; advanced/bulk search and some detail fields require a (free or paid) logged-in QRZ account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query QRZ's database, not the operator — the subject is not contacted. Note that logged-in lookups are tied to your QRZ account; use a research account, not a personal one, if attribution matters.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "QRZ mirrors official government amateur-radio license registries (e.g. the US FCC ULS), which are public record; identity data is authoritative for licensed operators.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global",
+      "us"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "QRZ",
+      "QRZ callsign lookup"
+    ],
+    "tags": [
+      "amateur-radio",
+      "callsign",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ham-radio-qrz-callsign-database-search.md"
   },
   {
@@ -152007,43 +152024,50 @@
   },
   {
     "id": "birdnet",
-    "name": "BirdNet",
-    "description": "Identify bird sounds - find bird sounds on a global map.",
+    "name": "BirdNET",
+    "description": "Use when you have audio (e.g. from a subject's video) with birdsong and want to narrow location — identifies bird species from sound and maps where that species is observed, yielding `geolocation` context.",
     "url": "https://birdnet.cornell.edu/map",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying bird species from audio and using their observed range to constrain where a recording was made.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic/conservation project from Cornell; the analyzer and observation map are free to use.",
+    "opsec": "passive",
+    "opsecNote": "You analyze audio you already hold against Cornell's model/observation data — nothing is sent to or about the subject. If you upload the subject's audio to BirdNET's servers, be mindful that clip is transmitted to a third party; strip identifying metadata first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Cornell University's K. Lisa Yang Center for Conservation Bioacoustics with Chemnitz University of Technology; a serious, peer-reviewed scientific project.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "BirdNet"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "audio-geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cornell-legal-information-institute-united-states",
-      "lexcraft-cornell-university-legal-wiki-canada"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/birdnet.md"
   },
   {
@@ -152888,43 +152912,55 @@
   {
     "id": "gaode-maps",
     "name": "Gaode Maps",
-    "description": "Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.",
+    "description": "Use when you have a Chinese `address` or `geolocation` and want accurate, China-specific maps, POI and street-level imagery — returns precise `geolocation`/`address` context Google Maps lacks inside China.",
     "url": "https://gaode.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping, POI search, and street-level imagery inside mainland China where Western maps are sparse or misaligned.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free consumer web/app map (AMap); the developer API tier requires an Alibaba/AMap key, but manual use is free.",
+    "opsec": "passive",
+    "opsecNote": "A Chinese (Alibaba) service — assume queries may be logged under Chinese jurisdiction and the interface is China-centric. Browse from a clean/sock-puppet session; do not log in with an attributable account. The subject is not contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Alibaba's AMap is a leading, well-resourced Chinese mapping provider; data quality inside China is excellent, but it is a proprietary commercial service with China-specific coordinate handling.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "AMap",
+      "高德地图",
+      "Amap"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "maps"
+      "maps",
+      "china"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/gaode-maps.md"
   },
   {
@@ -261338,37 +261374,47 @@
   {
     "id": "who-data",
     "name": "WHO Data",
-    "description": "OSINT tool: WHO Data.",
+    "description": "Use when you need authoritative country-level health statistics for context (mortality, disease, health-system data) — the WHO Global Health Observatory; aggregate data only, no person-level records.",
     "url": "http://www.who.int/gho/en",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official aggregate global/country health indicators for background and context.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-access data portal with a public API; no account.",
+    "opsec": "passive",
+    "opsecNote": "Public statistical portal — no query concerns any individual. Entirely passive background research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The World Health Organization's official statistics platform; authoritative for the aggregate health indicators it publishes.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "WHO Global Health Observatory",
+      "GHO"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "public-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/who-data.md"
   },
   {
@@ -265087,24 +265133,25 @@
   {
     "id": "ary-recon",
     "name": "Ary-Recon",
-    "description": "Web-based directory of passive reconnaissance tools.",
+    "description": "Use when you want a single-page launcher of passive-recon links organised by task — a directory (not a scanner) that points you to 30+ subdomain/email/IP/breach tools.",
     "url": "https://github.com/giriaryan694-a11y/Ary-Recon",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Browsing passive recon tools by category",
+    "bestFor": "Browsing passive-reconnaissance tools by category from one HTML page.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source single-page HTML directory; no account, no install beyond opening a file.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The directory itself does nothing but link out — it's passive. OpSec depends entirely on whichever linked tool you then use; each destination has its own exposure profile, so vet the target tool before running it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "personal",
-    "trustNote": "0 stars; small directory page.",
+    "trust": "unverified",
+    "trustNote": "A small single-author GitHub project (0 stars, ~11 commits, last updated 2025); a convenience index, not a vetted authority — judge each linked tool on its own merits.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -265113,14 +265160,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ARY Recon"
+    ],
     "tags": [
       "directory",
       "passive-recon"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ary-recon.md"
   },
   {
@@ -287149,41 +287201,52 @@
   {
     "id": "pinterest-trends",
     "name": "Pinterest Trends",
-    "description": "OSINT tool: Pinterest Trends.",
+    "description": "Use when you want to gauge interest/seasonality of a keyword or topic on Pinterest — returns trending search terms and relative popularity over time by region (topic-level, not person-level).",
     "url": "https://trends.pinterest.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Checking how a keyword/topic trends on Pinterest and surfacing related rising search terms.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The trends explorer is free to view; deeper insights/ads data require a (free) Pinterest business login.",
+    "opsec": "passive",
+    "opsecNote": "You query aggregate trend data, not any individual — no subject is touched. Some views prompt a Pinterest login; use a research account, not a personal one, if you sign in.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Pinterest's own first-party analytics product; the trend data is authoritative for the Pinterest platform (though it reflects Pinterest users, not the general population).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Keywords, trends, news analytics"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "pinterest",
       "uk-pinterest-com"
     ],
+    "aliases": [
+      "Pinterest Trends"
+    ],
+    "tags": [
+      "Keywords, trends, news analytics",
+      "trend-analysis"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/pinterest-trends.md"
   },
   {
