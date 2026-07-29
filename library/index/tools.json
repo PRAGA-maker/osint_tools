@@ -52106,35 +52106,61 @@
   {
     "id": "git-hound",
     "name": "git-hound",
-    "description": "OSINT tool: git-hound.",
+    "description": "Use when you have a keyword, `domain`, `employer-org`, or username and want secrets/credentials leaked across public GitHub — returns matching code, API keys, and exposed `password`s.",
     "url": "https://github.com/tillson/git-hound",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Hunting exposed API keys, credentials, and secrets across all of public GitHub via keyword + regex, with entropy/dictionary false-positive filtering.",
+    "selectorsIn": [
+      "domain",
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "password",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MIT). CLI. Needs a (free) GitHub account/session to use GitHub's code search; heavy use is subject to GitHub rate limits.",
+    "opsec": "active",
+    "opsecNote": "Searching is passive toward the secret's owner, but you authenticate to GitHub, so your account is tied to the queries — use a sock-puppet GitHub account. Finding a live credential doesn't authorise using it; validating a key against the real service is intrusive and often illegal. Report, don't exploit.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular, actively maintained OSS by tillson (v3.0, dashboard); reliable tool. Output needs triage — even with entropy/dictionary filters, expect false positives and revoked/dummy keys.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "trufflehog",
+      "gitleaks",
+      "github-search"
+    ],
+    "aliases": [
+      "git-hound",
+      "githound",
+      "tillson git-hound"
+    ],
+    "tags": [
+      "github",
+      "secret-scanning",
+      "credential-leak",
+      "Dorks/Pentest/Vulnerabilities"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/git-hound.md"
   },
   {
@@ -65805,41 +65831,56 @@
   {
     "id": "db-ip",
     "name": "DB-IP",
-    "description": "Accurate IP geolocation with developer API",
+    "description": "Use when you have an `ip-address` and want its approximate location and network owner — returns country/city, ISP/ASN, and organisation.",
     "url": "https://db-ip.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "geolocation"
     ],
-    "bestFor": "Accurate IP geolocation with developer API",
-    "input": "IP address",
-    "output": "Location, timezone, ISP, coordinates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Geolocating an IP to country/city and identifying its ISP/ASN/organisation, via a free web lookup, downloadable databases, or an API.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web demo lookup and a free \"IP to Country Lite\" database; higher-accuracy city-level data and the API need a paid plan (free trial available). Free tier is fine for coarse geolocation.",
     "opsec": "passive",
-    "opsecNote": "Passive database lookup; free API rate limited.",
+    "opsecNote": "You query DB-IP's dataset, not the IP's owner — nothing is sent to the target. Only DB-IP sees your lookup. IP geolocation is approximate and can be wrong by city/region; never treat it as a person's precise location.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established IP-geolocation provider used by large firms; accurate at country level, approximate at city level. Like all IP geo, it locates the network/ISP node, not necessarily the user.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "ipinfo-io",
+      "maxmind-geoip",
+      "viewdns-info"
+    ],
+    "aliases": [
+      "DB-IP",
+      "db-ip.com"
+    ],
+    "tags": [
+      "ip-geolocation",
+      "asn",
+      "network-intel"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/db-ip.md"
   },
   {
@@ -74319,43 +74360,58 @@
   {
     "id": "ipv4-cidr-report",
     "name": "IPv4 CIDR Report",
-    "description": "CIDR block analysis and subnet enumeration",
+    "description": "Use when you have an ASN or want to understand a network's global routing footprint — returns the AS's announced prefixes, aggregation stats, and routing-table context.",
     "url": "https://www.cidr-report.org/as2.0/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "ipv4"
     ],
-    "bestFor": "CIDR block analysis and subnet enumeration",
-    "input": "CIDR block",
-    "output": "IP ranges, subnet breakdown",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Analysing the global BGP routing table by Autonomous System — which prefixes an AS announces and how its address space is aggregated.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public routing-analysis report (maintained by Geoff Huston/APNIC). No account.",
     "opsec": "passive",
-    "opsecNote": "Passive analysis of IP allocation data.",
+    "opsecNote": "A read-only aggregate report built from public BGP data — you submit nothing about a target and touch no target infrastructure. Only your visit to the report is seen.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-standing, authoritative routing report widely cited by network operators. Reflects public BGP announcements accurately; it describes networks, not individuals.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
+      "bgp-he-net",
+      "viewdns-info",
+      "db-ip",
       "ipv6-cidr-report"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CIDR Report",
+      "cidr-report.org"
+    ],
+    "tags": [
+      "bgp",
+      "asn",
+      "routing",
+      "ipv4"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipv4/ipv4-cidr-report.md"
   },
   {
@@ -88016,41 +88072,59 @@
   {
     "id": "viewdns-info",
     "name": "ViewDNS.info",
-    "description": "DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking",
+    "description": "Use when you have a `domain` or `ip-address` and want DNS/WHOIS intelligence — returns reverse-IP, reverse-WHOIS, IP history, DNS records, and more from one free toolkit.",
     "url": "https://viewdns.info/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "whois-records"
     ],
-    "bestFor": "DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking",
-    "input": "Domain name, IP address, registrant name/email, nameserver",
-    "output": "DNS records, WHOIS information, reverse lookups, IP hosting, historical DNS changes",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A one-stop free toolkit of DNS/IP reconnaissance lookups — reverse IP, reverse WHOIS, IP history, DNS records, port scan, and related domain-intel tools.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "address"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "The web tools are free to use (a free lookup allowance per tool); an API and bulk data products are paid. Reverse WHOIS/IP and history are usable free in the browser.",
     "opsec": "passive",
-    "opsecNote": "Queries public DNS and WHOIS data; does not perform active probing of targets.",
+    "opsecNote": "Lookups run against ViewDNS's own datasets and public records, not the target's servers (except the optional port scanner, which actively probes the target). You disclose the queried domain/IP to ViewDNS. For the port scanner specifically, treat it as active and use a sock-puppet IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, widely used domain-intel site; dependable for quick lookups. Reverse-WHOIS and IP-history data are third-party snapshots — corroborate before drawing firm conclusions.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "reverse-domain",
+      "crt-sh",
+      "securitytrails"
+    ],
+    "aliases": [
+      "ViewDNS",
+      "viewdns.info"
+    ],
+    "tags": [
+      "whois",
+      "reverse-ip",
+      "reverse-whois",
+      "dns-recon"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-records/viewdns-info.md"
   },
   {
@@ -179557,37 +179631,51 @@
   {
     "id": "osintux",
     "name": "Osintux",
-    "description": "OSINT tool: Osintux.",
-    "url": "http://www.osintux.org",
+    "description": "Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation and anonymity tools.",
+    "url": "https://www.osintux.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A ready-made, Spanish-language OSINT Linux distribution with investigation and privacy tools preinstalled — an investigator workstation, especially for Spanish-speaking analysts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GNU GPL); downloaded as an image and run/installed. No account or cost.",
+    "opsec": "passive",
+    "opsecNote": "A defensive/tooling environment for the investigator — it runs no queries itself. Run it live/in a VM and route through a VPN/Tor for a clean, separated investigation environment. Verify the download image before booting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Community project (Spanish OSINT community, active as of 2024); useful curated toolset, but a smaller/independent distro — verify the image and keep tools updated.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "septor-linux",
+      "tracelabs-osint-vm",
+      "virtualbox"
+    ],
+    "aliases": [
+      "Osintux",
+      "OSINTUX",
+      "osintux.org"
+    ],
     "tags": [
-      "Virtual Machines/Linux distributions"
+      "Virtual Machines/Linux distributions",
+      "osint-workstation",
+      "spanish"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/osintux.md"
   },
   {
@@ -245586,48 +245674,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/public-records/opendata-by-socrata.md"
-  },
-  {
-    "id": "opengazettes",
-    "name": "OpenGazettes",
-    "description": "OSINT tool: OpenGazettes.",
-    "url": "http://opengazettes.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "corporate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/opengazettes.md"
   },
   {
     "id": "openleis-com",
@@ -344657,42 +344703,56 @@
   {
     "id": "airfleets",
     "name": "Airfleets",
-    "description": "Database for aircraft details.",
-    "url": "http://airfleets.net/home",
+    "description": "Use when you have an aircraft registration, serial (MSN), or operator and want its history — returns the airframe's operators, delivery dates, age, and current status.",
+    "url": "https://www.airfleets.net/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up an individual airframe's production/operator history (by registration or MSN) and browsing airline fleet compositions.",
     "selectorsIn": [
-      "vehicle-plate"
+      "vehicle-plate",
+      "employer-org"
     ],
     "selectorsOut": [
-      "geolocation"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community aviation database; browsing and searches are free without an account.",
+    "opsec": "passive",
+    "opsecNote": "A public reference database — you look up airframes, not people, and nobody is notified. Only Airfleets sees your query. Ownership/operator here is the airline/lessor, rarely an individual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-established enthusiast-maintained aviation database; broadly accurate for commercial airframe histories, but community-sourced, so cross-check registrations against official registries.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "planespotters-net",
+      "federal-aviation-administration",
+      "adsb-exchange"
+    ],
+    "aliases": [
+      "Airfleets",
+      "airfleets.net"
+    ],
     "tags": [
-      "bellingcat-toolkit",
+      "aviation",
+      "aircraft-database",
+      "fleet",
       "transport"
     ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/airfleets.md"
   },
   {
@@ -346520,45 +346580,57 @@
   },
   {
     "id": "container-tracking-cargo",
-    "name": "container-tracking (Cargo)",
-    "description": "OSINT tool: container-tracking (Cargo).",
+    "name": "container-tracking.org",
+    "description": "Use when you have a shipping container number and don't know its carrier — returns links into the right carrier/lessor tracking portal to locate the container.",
     "url": "https://container-tracking.org",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "A directory/gateway of container and leasing-company tracking portals — the fast way to find which carrier's tracker to use for a given container.",
     "selectorsIn": [
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory of carrier/lessor tracking links; no account. Tracking itself happens on each carrier's own site.",
+    "opsec": "passive",
+    "opsecNote": "A directory of links — you disclose only the container number to whichever carrier portal you follow; shipment parties aren't notified. As with any single-source tracker, cross-checking is wise.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenience aggregator/directory pointing to carriers' official trackers; the authoritative data lives on each carrier's site, so trust those, not the directory itself.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "maersk-tracking",
+      "vesselfinder",
+      "marinetraffic",
       "container-tracking"
     ],
+    "aliases": [
+      "container-tracking.org",
+      "Container-Tracking directory"
+    ],
+    "tags": [
+      "container-tracking",
+      "shipping",
+      "logistics",
+      "transport"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/container-tracking-cargo.md"
   },
   {

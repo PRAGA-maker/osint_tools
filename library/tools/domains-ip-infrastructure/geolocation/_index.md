@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/geolocation
 
 ## Skills here
-- **`db-ip`** (low) — Accurate IP geolocation with developer API
+- **`db-ip`** (low) — Use when you have an `ip-address` and want its approximate location and network owner — returns country/city, ISP/ASN, and organisation.
 - **`info-sniper`** (low) — Use when you have an `ip-address` and want its approximate geolocation and network owner — returns country/region/city, ISP, coordinates and
 - **`ip-fingerprints`** (low) — Find domains on shared hosting
 - **`ip-location-finder`** (low) — Use when you have an `ip-address` and want a fast geolocation guess plus ISP/host details — returns approximate `geolocation`, ISP/org, and 

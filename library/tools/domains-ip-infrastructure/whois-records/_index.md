@@ -14,7 +14,7 @@ kind: group-index
 - **`netlas-io`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want WHOIS/DNS, open ports, certificates, and historical infrastructure data — return
 - **`robtex`** (low) — Use when you have a `domain`, `ip-address`, hostname, or ASN and want its DNS records plus historical domain↔IP relationships — returns rela
 - **`switch-internet-domains-whois-ch`** (low) — .ch and .li domain ownership research, Swiss Internet infrastructure lookup
-- **`viewdns-info`** (low) — DNS reconnaissance, reverse IP and reverse WHOIS lookups, historical DNS tracking
+- **`viewdns-info`** (low) — Use when you have a `domain` or `ip-address` and want DNS/WHOIS intelligence — returns reverse-IP, reverse-WHOIS, IP history, DNS records, a
 - **`website-informer`** (low) — Use when you have a `domain` and want a one-page profile of it — WHOIS, DNS/IP, hosting, traffic estimate, similar sites and owner/email lin
 - **`who-is`** (low) — Use when you have a `domain` or `ip-address` and want registration, DNS and network ownership data — returns WHOIS/RDAP registrant details, 
 - **`whois-arin`** (low) — Use when you have an ip-address or ASN in North America and want its registered owner and contacts — returns employer-org, address, and poin

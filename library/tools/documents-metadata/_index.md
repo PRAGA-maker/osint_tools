@@ -112,7 +112,7 @@ kind: group-index
 - **`fundrazr`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
-- **`git-hound`** (low) — OSINT tool: git-hound.
+- **`git-hound`** (low) — Use when you have a keyword, `domain`, `employer-org`, or username and want secrets/credentials leaked across public GitHub — returns matchi
 - **`gitdorker`** (low) — Use when you have a `username`, `employer-org`, or `domain` and want secrets/emails/keys exposed across public GitHub — returns `email` and 
 - **`github-code-search`** (low) — Use when you have an `email`, `username`, domain or secret pattern and want to find it inside public code/commits on GitHub — returns matchi
 - **`github-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find leaked references across GitHub via a Google Custom Search — returns c

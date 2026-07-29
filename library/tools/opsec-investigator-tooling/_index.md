@@ -280,7 +280,7 @@ kind: group-index
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
 - **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
 - **`osintlab`** (low) — Script that automates installation of ~50 OSINT recon tools.
-- **`osintux`** (low) — OSINT tool: Osintux.
+- **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
 - **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing

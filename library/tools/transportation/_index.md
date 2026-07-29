@@ -15,7 +15,7 @@ kind: group-index
 ## Skills here
 - **`ads-b-exchange-radar-view`** (low) — Use when you have an aircraft registration/callsign or a location and want the live unfiltered globe view of air traffic — returns real-time
 - **`ads-b-historical-flight-viewer`** (medium) — Use when you have an aircraft (tail/registration, hex, or callsign) and want to replay its past flights — returns geolocation tracks and tim
-- **`airfleets`** (low) — Database for aircraft details.
+- **`airfleets`** (low) — Use when you have an aircraft registration, serial (MSN), or operator and want its history — returns the airframe's operators, delivery date
 - **`airframes`** (low) — Use when you have an aircraft registration/tail number or a Mode-S/ICAO24 hex code and want to identify the aircraft — returns registry data
 - **`airlinecodes`** (low) — Use when you have an airline/airport code or `name` from an itinerary and want to decode it — returns the airport `geolocation` (city/countr
 - **`airnav-radarbox`** (low) — Live flight tracker.
@@ -49,7 +49,7 @@ kind: group-index
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
 - **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
 - **`connecticut-license-verification`** (medium) — Use when you already have a 9-digit Connecticut DMV credential number and want to confirm it is valid and its status — returns credential st
-- **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
+- **`container-tracking-cargo`** (low) — Use when you have a shipping container number and don't know its carrier — returns links into the right carrier/lessor tracking portal to lo
 - **`container-tracking`** (low) — Use when you have a shipping container or B/L number and want its location and movement across carriers — returns container status, route, a
 - **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.
 - **`cosint-osint-on-cars`** (medium) — Use when you have a `vehicle-plate`, `vin`, or a photo of a car and want a method for pivoting to an owner or location — returns `name`, `ad
