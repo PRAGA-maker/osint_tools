@@ -287,7 +287,6 @@ kind: group-index
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
 - **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing
 - **`pandasecurity-free-antivirus`** (low) — Malware and virus detection and elimination program
-- **`pandora-radio-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to

@@ -39,7 +39,6 @@ kind: group-index
 - **`aware-online`** (low) — OSINT website offering various search tools including reddit search, vimeo search, facebook search, and more.
 - **`awesome-indexed`** (low) — OSINT tool: Awesome-indexed.
 - **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
-- **`awesomelists-top`** (low) — OSINT tool: Awesomelists.top.
 - **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`binvis`** (low) — Use when you have a file of unknown type/contents and want to visually spot its structure, embedded data or file-type regions — returns meta
 - **`bitly-url-shortener-and-link-manager`** (low) — Use when you have a `bit.ly` short link and want to know where it really points and how it's performing — append "+" to reveal the destinati
@@ -71,7 +70,7 @@ kind: group-index
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
 - **`de-digger`** (low) — OSINT tool: de digger.
 - **`designcrowd`** (low) — Graphic design outsourcing website
-- **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time
+- **`dictation-online-dictation-tool`** (low) — Use when you have audio/video and want a quick free browser transcription to text — a speech-to-text utility for turning spoken evidence int
 - **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
 - **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
@@ -177,9 +176,8 @@ kind: group-index
 - **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
-- **`pages2images`** (low) — Website screenshot tool
 - **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
-- **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
+- **`pastes-search-engine`** (low) — Use when you have an `email`/`username`/keyword and want to search across paste sites (Pastebin et al.) for leaked/dumped text — returns pas
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`pdfmyurl`** (low) — Use when you have a `domain`/URL and want to capture the live web page as a PDF for evidence preservation — returns a timestamped PDF snapsh
 - **`pdfx`** (low) — Use when you have a PDF and want its metadata plus every referenced link — returns document metadata, extracted text, and URLs/DOIs/arXiv ID

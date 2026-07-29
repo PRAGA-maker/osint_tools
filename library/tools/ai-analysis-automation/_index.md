@@ -312,7 +312,6 @@ kind: group-index
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
 - **`s-i-g-i-t`** (low) — Simple information gathering toolkit
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries
-- **`sans-osint-summit-2021-playlist`** (low) — OSINT tool: SANS OSINT Summit 2021 (Playlist).
 - **`sarenka`** (low) — Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one 
 - **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
 - **`script-safe`** (low) — OSINT tool: Script Safe.

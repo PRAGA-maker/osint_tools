@@ -174,7 +174,6 @@ kind: group-index
 - **`dirjournal`** (low) — Web directory, offering local searches by categories
 - **`disconnect-search`** (low) — OSINT tool: Disconnect Search.
 - **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
-- **`disneybooks`** (low) — Disney books search aimed at kids
 - **`disneysearch`** (low) — Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general 
 - **`document-search`** (low) — OSINT tool: Document Search.
 - **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.

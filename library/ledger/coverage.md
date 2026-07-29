@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7227 total · 5681 full · 1546 stub (78% enriched)
+**Tools:** 7222 total · 5688 full · 1534 stub (78% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3252 · medium: 2011 · high: 1964
+low: 3247 · medium: 2011 · high: 1964
 
 ## Tools by trust
-community: 3453 · trusted: 1889 · unverified: 1878 · untrustworthy: 6 · personal: 1
+community: 3451 · trusted: 1889 · unverified: 1875 · untrustworthy: 6 · personal: 1
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 171/421
+- `ai-analysis-automation` — 171/420
 - `archives-cache` — 96/118
-- `communities-forums` — 250/286
+- `communities-forums` — 251/286
 - `dark-web` — 54/99
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 132/282
+- `documents-metadata` — 134/280
 - `domains-ip-infrastructure` — 428/647
 - `email` — 246/246
 - `evidence-capture` — 18/29
-- `financial-crypto` — 74/95
+- `financial-crypto` — 76/95
 - `geolocation` — 305/336
-- `image-video-face` — 446/451
+- `image-video-face` — 447/451
 - `maps-geospatial-data` — 107/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 169/495
+- `opsec-investigator-tooling` — 169/494
 - `people-search` — 256/257
 - `phone` — 135/137
 - `public-records` — 912/995
-- `search-engines` — 560/749
-- `social-networks` — 747/775
+- `search-engines` — 560/748
+- `social-networks` — 748/775
 - `training-ctf` — 6/12
 - `translation-language` — 42/94
 - `transportation` — 162/202
@@ -43,15 +43,15 @@ community: 3453 · trusted: 1889 · unverified: 1878 · untrustworthy: 6 · pers
 
 - `library/tools/public-records` — 944 leaves
 - `library/tools/social-networks` — 748 leaves
-- `library/tools/search-engines` — 700 leaves
-- `library/tools/opsec-investigator-tooling` — 483 leaves
+- `library/tools/search-engines` — 699 leaves
+- `library/tools/opsec-investigator-tooling` — 482 leaves
 - `library/tools/domains-ip-infrastructure` — 433 leaves
-- `library/tools/ai-analysis-automation` — 392 leaves
+- `library/tools/ai-analysis-automation` — 391 leaves
 - `library/tools/image-video-face` — 357 leaves
 - `library/tools/geolocation` — 322 leaves
 - `library/tools/communities-forums` — 283 leaves
 - `library/tools/people-search` — 247 leaves
-- `library/tools/documents-metadata` — 237 leaves
+- `library/tools/documents-metadata` — 235 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 184 leaves
 - `library/tools/messaging` — 169 leaves

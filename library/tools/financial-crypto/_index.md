@@ -26,14 +26,14 @@ kind: group-index
 - **`binbase-com`** (medium) — Use when you have a payment-card BIN (`document-id`, the first 6–8 digits) and want to identify the issuer — returns the issuing `employer-o
 - **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — Use when you have a card BIN/IIN or a UK/Irish bank sort code (`document-id`) from a subject and want to identify the issuing bank, branch a
-- **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
+- **`bitcoin-forums-search-engine`** (low) — Use when you have a `username`/`crypto-wallet`/keyword and want to search across Bitcoin/crypto community forums at once — returns forum pos
 - **`bitcoin-org`** (medium) — Use when you need a vetted jumping-off directory of Bitcoin block explorers, mempool/on-chain analysis tools, and learning resources — retur
 - **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —
 - **`bitinfocharts-com`** (medium) — Use when you have a `crypto-wallet` address (or a name/exchange label) and want its balance, transaction activity, wealth rank, and public o
 - **`blockchain-explorer`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want its full on-chain history — balance, transactions and counterpartie
 - **`blockchair-com`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterpar
 - **`blockcypher`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and linked `cr
-- **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
+- **`blockexplorer`** (low) — Use when you have a `crypto-wallet` address or transaction ID and want to trace its on-chain activity — returns balances, transaction histor
 - **`bpfi-ie`** (low) — Use when you have an Irish/UK `document-id` (account number + sort code) and want to confirm it is valid — returns a validity check and poin
 - **`btcbook-guarda-com`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history,
 - **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi

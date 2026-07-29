@@ -13723,42 +13723,6 @@
     "_file": "library/tools/ai-analysis-automation/sans-internet-storm-center-diary-full-text.md"
   },
   {
-    "id": "sans-osint-summit-2021-playlist",
-    "name": "SANS OSINT Summit 2021 (Playlist)",
-    "description": "OSINT tool: SANS OSINT Summit 2021 (Playlist).",
-    "url": "https://www.youtube.com/playlist?list=PLs4eo9Tja8bj3jJvv42LxOkhc2_ylpS9y",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-videos"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/sans-osint-summit-2021-playlist.md"
-  },
-  {
     "id": "sarenka",
     "name": "Sarenka",
     "description": "Use when you have a `domain`/`ip-address` and want a self-hosted tool to pull attack-surface data from Shodan/Censys and CVE sources in one place — returns host services and `ip-address`/CVE context.",
@@ -37739,42 +37703,49 @@
   },
   {
     "id": "wix",
-    "name": "Wix",
-    "description": "OSINT tool: Wix.",
+    "name": "Wix (username site check)",
+    "description": "Use when you have a `username` and want to check whether it owns a Wix-hosted site — returns a `social-profile`/personal site at that handle.",
     "url": "https://wix.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a username maps to a Wix-hosted site and mining that site for identity details.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse any public Wix site; a Wix account is only needed to build one, not to view.",
+    "opsec": "passive",
+    "opsecNote": "Visiting a public `username.wixsite.com` page is an ordinary web request, but Wix pages embed heavy analytics and the site owner may see referrer/visit data — browse from sock-puppet egress and avoid contact forms, which reach the owner directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Wix is a major first-party site-builder; the platform is real and reliable, but \"presence of a site at a handle\" is only a lead — handles are not reserved uniquely to one person.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wixsite",
+      "wix.com"
+    ],
     "tags": [
-      "forums"
+      "forums",
+      "username-presence"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/wix.md"
   },
   {
@@ -48698,43 +48669,6 @@
     "_file": "library/tools/documents-metadata/awesome-open-source.md"
   },
   {
-    "id": "awesomelists-top",
-    "name": "Awesomelists.top",
-    "description": "OSINT tool: Awesomelists.top.",
-    "url": "http://dev.awesomelists.top/#/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "awesome-lists-awesomelists-top"
-    ],
-    "_file": "library/tools/documents-metadata/awesomelists-top.md"
-  },
-  {
     "id": "bazaarvoice-north-america",
     "name": "Bazaarvoice (North America)",
     "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses",
@@ -50207,25 +50141,28 @@
   },
   {
     "id": "dictation-online-dictation-tool",
-    "name": "Dictation Online Dictation Tool",
-    "description": "Tool for Chrome browser that transcribes your speech to text in real time",
+    "name": "Dictation.io",
+    "description": "Use when you have audio/video and want a quick free browser transcription to text — a speech-to-text utility for turning spoken evidence into searchable notes.",
     "url": "https://dictation.io",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, free, in-browser speech-to-text for transcribing spoken content into searchable notes.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser tool (uses the Web Speech API); no account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Transcription happens via the browser's built-in speech engine — which, in Chrome, sends captured audio to Google's speech service for recognition. Do not feed it sensitive/confidential audio you can't send to a third party; for that, use a local/offline transcriber (e.g. Whisper) instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small free web utility wrapping the browser's Web Speech API; accuracy and language support are the browser's, not a dedicated engine's, so transcripts need proofing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -50234,15 +50171,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "dictation.io"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "transcription"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/dictation-online-dictation-tool.md"
   },
   {
@@ -56223,49 +56163,6 @@
     "_file": "library/tools/documents-metadata/pageinsider.md"
   },
   {
-    "id": "pages2images",
-    "name": "Pages2Images",
-    "description": "Website screenshot tool",
-    "url": "http://www.page2images.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "page2images"
-    ],
-    "_file": "library/tools/documents-metadata/pages2images.md"
-  },
-  {
     "id": "paste-search",
     "name": "Paste Search (psbdmp.ws)",
     "description": "Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds/data) — returns email, password, associate leads.",
@@ -56322,35 +56219,53 @@
   {
     "id": "pastes-search-engine",
     "name": "Pastes Search Engine",
-    "description": "OSINT tool: Pastes Search Engine.",
+    "description": "Use when you have an `email`/`username`/keyword and want to search across paste sites (Pastebin et al.) for leaked/dumped text — returns pastes exposing credentials, `password`, and `social-profile` data.",
     "url": "https://cse.google.com/cse?cx=661713d0371832a02",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-box search across many paste/dump sites for an email, handle, or keyword appearing in leaked text.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "password",
+      "social-profile",
+      "email"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The query runs against Google's index, not the paste sites, so it's passive to any target. Use sock-puppet egress; be aware that opening a paste containing real credentials may itself be sensitive — handle any exposed data lawfully and don't act on live credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community Google CSE scoped to paste/dump sites; only covers pastes Google has indexed (many are unlisted/removed), and the site list is opaque and can rot.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pastebin search",
+      "paste dump search"
+    ],
+    "tags": [
+      "pastes",
+      "breach-search",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/pastes-search-engine.md"
   },
   {
@@ -106742,35 +106657,52 @@
   {
     "id": "bitcoin-forums-search-engine",
     "name": "Bitcoin Forums Search Engine",
-    "description": "OSINT tool: Bitcoin Forums Search Engine.",
+    "description": "Use when you have a `username`/`crypto-wallet`/keyword and want to search across Bitcoin/crypto community forums at once — returns forum posts and `social-profile` leads.",
     "url": "https://cse.google.com/cse?cx=f49f9d5e679b15787",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-box search across Bitcointalk and other crypto forums for a handle, wallet address, or keyword.",
+    "selectorsIn": [
+      "username",
+      "crypto-wallet",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "crypto-wallet"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A normal Google query behind a CSE — your search reaches Google, not the forums, so it's passive to the target. Use sock-puppet egress for target handles/wallets, and remember the forum posts you then open are logged by those forums.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built Google CSE scoped to crypto forums; coverage depends on the (unseen) site list in its config and can drift or break without notice.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "bitcointalk search",
+      "crypto forums CSE"
+    ],
+    "tags": [
+      "crypto",
+      "forum-search",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin-forums-search-engine.md"
   },
   {
@@ -107285,46 +107217,51 @@
   {
     "id": "blockexplorer",
     "name": "BlockExplorer",
-    "description": "Following a bitcoin trail or following a bitcoin account?",
+    "description": "Use when you have a `crypto-wallet` address or transaction ID and want to trace its on-chain activity — returns balances, transaction history, and linked counterparty `crypto-wallet`s.",
     "url": "https://blockexplorer.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a Bitcoin (and multi-chain) address or transaction to map balances, flows, and counterparties.",
     "selectorsIn": [
-      "employer-org",
-      "name",
-      "crypto-wallet"
+      "crypto-wallet",
+      "document-id"
     ],
     "selectorsOut": [
-      "employer-org",
-      "associate",
-      "crypto-wallet"
+      "crypto-wallet",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public block explorer; no account.",
+    "opsec": "passive",
+    "opsecNote": "Blockchains are public; querying an address here reveals nothing to its owner and leaves no trace with them. Do the lookup from sock-puppet egress purely to keep it out of your own attributable history — the target cannot see the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing public block explorer (originally by theymos); it reflects on-chain data faithfully, but attribution of an address to a person is analyst inference, not data the explorer provides.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "blockexplorer.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "companies-finance"
+      "companies-finance",
+      "blockchain",
+      "crypto"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/blockexplorer.md"
   },
   {
@@ -133424,38 +133361,49 @@
   {
     "id": "fdupes",
     "name": "fdupes",
-    "description": "Github - Locating exact matches of duplicate files.",
+    "description": "Use when you have a large set of downloaded images/files and want to find byte-for-byte duplicates locally — a CLI de-duplicator for cleaning evidence sets.",
     "url": "https://github.com/adrianlopezroche/fdupes",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding and removing exact-duplicate files in a scraped/downloaded evidence collection.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; install from your package manager (`apt/brew install fdupes`).",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on your own machine against local files — nothing is uploaded and no target is contacted. The only consideration is handling the evidence files themselves securely (encrypted volume, careful with `-d` delete).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-established open-source utility (adrianlopezroche/fdupes) widely packaged across Linux distros; it compares file content (size then MD5 then byte-by-byte), so matches are exact and reliable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fdupes cli"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "misc"
+      "misc",
+      "deduplication",
+      "file-triage"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fdupes.md"
   },
   {
@@ -180046,46 +179994,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/pandasecurity-free-antivirus.md"
-  },
-  {
-    "id": "pandora-radio-app-mobile-android",
-    "name": "Pandora Radio App (Mobile – Android)",
-    "description": "App for mobile devices for searching and playing radio channels",
-    "url": "https://play.google.com/store/apps/details?id=com.pandora.android&hl=en",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pandora-radio-app-mobile-android.md"
   },
   {
     "id": "pandora-radio-app-mobile-ios",
@@ -270631,49 +270539,6 @@
     "_file": "library/tools/search-engines/discovery-family-channel.md"
   },
   {
-    "id": "disneybooks",
-    "name": "DisneyBooks",
-    "description": "Disney books search aimed at kids",
-    "url": "http://books.disney.com/?cmp=dpw_disneybooks_vanity",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "disneysearch"
-    ],
-    "_file": "library/tools/search-engines/disneybooks.md"
-  },
-  {
     "id": "disneysearch",
     "name": "DisneySearch",
     "description": "Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general OSINT value.",
@@ -324757,35 +324622,49 @@
   {
     "id": "rooms-of-clubhouse",
     "name": "Rooms of Clubhouse",
-    "description": "OSINT tool: Rooms of Clubhouse.",
+    "description": "Use when you want to discover active Clubhouse audio rooms by topic/keyword/language — returns live room and `social-profile` leads on the Clubhouse platform.",
     "url": "https://roomsofclubhouse.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword/topic discovery of live Clubhouse audio rooms and the accounts hosting them.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free to search room listings; actually joining a room requires the Clubhouse app and account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the third-party room directory is passive. Joining a room in the Clubhouse app is attributed to your account and may show you in the audience — use a sock-puppet Clubhouse account, never your real one, and remember hosts can see who is in the room.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party community directory over Clubhouse; unofficial, and its usefulness has faded with Clubhouse's sharp decline in activity since its 2021 peak.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "roomsofclubhouse"
+    ],
+    "tags": [
+      "clubhouse",
+      "audio-social",
+      "room-discovery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/rooms-of-clubhouse.md"
   },
   {
