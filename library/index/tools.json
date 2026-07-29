@@ -4683,38 +4683,48 @@
   },
   {
     "id": "exhibit",
-    "name": "Exhibit",
-    "description": "OSINT tool: Exhibit.",
-    "url": "http://www.simile-widgets.org/exhibit",
+    "name": "Exhibit (SIMILE Widgets)",
+    "description": "Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-rich interactive pages.",
+    "url": "http://www.simile-widgets.org/exhibit/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Publishing your own structured dataset as a searchable, faceted web page with maps and timelines.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (BSD license); self-hosted, no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A local/self-hosted presentation framework — it renders data you already hold and contacts no subject. If you embed live map tiles, those tile requests go to the map provider; host offline or use a research network for sensitive datasets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Legacy MIT SIMILE project (copyright through ~2013), still online and BSD-licensed but effectively unmaintained; solid for what it does but expect no updates or support.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "SIMILE Exhibit",
+      "Exhibit"
+    ],
     "tags": [
-      "infographics-and-data-visualization"
+      "infographics-and-data-visualization",
+      "data-publishing"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/exhibit.md"
   },
   {
@@ -13564,38 +13574,55 @@
   },
   {
     "id": "researchbuzz",
-    "name": "ResearchBuzz",
-    "description": "Google Sinker Search queries constructor (view pic), Google News Search queries constructor, Quick twitter account historical navigation in http://archive.org, Blogspace Time Machine and more tools",
-    "url": "https://researchbuzz.github.io/",
+    "name": "ResearchBuzz (SearchGizmos)",
+    "description": "Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries and timeline navigations.",
+    "url": "https://searchgizmos.com/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Building targeted search queries (Google, News, social, Internet Archive) with small free web tools by Tara Calishain.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tools by ResearchBuzz's Tara Calishain; the ResearchBuzz tools moved to SearchGizmos.com. No account required.",
+    "opsec": "passive",
+    "opsecNote": "The gizmos only *construct* queries and hand you a URL — the actual searching happens on Google/Archive/etc. under whatever browser session you run it in. Use a research browser/VPN for the follow-through searches; the constructor itself touches no subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by Tara Calishain (ResearchBuzz), a long-respected search/research author; the tools are simple query builders, so results come from the underlying engines, not from her.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ResearchBuzz",
+      "SearchGizmos",
+      "Tara Calishain"
+    ],
     "tags": [
-      "Tools collections/toolkits"
+      "tools-collections-toolkits",
+      "search",
+      "query-builder"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/researchbuzz.md"
   },
   {
@@ -48622,46 +48649,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/bubbl-us-online-flow-chart-tool.md"
-  },
-  {
-    "id": "bubbly",
-    "name": "Bubbly",
-    "description": "A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their audio with other users",
-    "url": "http://bubbly.net",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/bubbly.md"
   },
   {
     "id": "canadavisa-it-salary-ranges",
@@ -158024,28 +158011,29 @@
   {
     "id": "chatbottle-telegram-bots",
     "name": "ChatBottle Telegram Bots",
-    "description": "Directory of Telegram bots.",
+    "description": "Use when you want to find a Telegram bot for a task (OSINT lookups, search, monitoring) — a searchable directory of Telegram bots with categories and descriptions.",
     "url": "https://chatbottle.co/bots/telegram",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Discovering Telegram bots useful for investigations",
+    "bestFor": "Discovering Telegram bots — including OSINT/lookup bots — by keyword and category.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free bot directory; browsing and searching require no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory does not touch any subject. Note that actually running an OSINT Telegram bot later is a different, often active step — the bot operator sees your queries and your Telegram identity; use a sock-puppet Telegram account for that, not this directory.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party aggregator of publicly listed Telegram bots; listings are user/self-submitted, so treat any bot's claimed function as unverified until you test it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -158054,18 +158042,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "chatbottle",
+      "ChatBottle"
+    ],
     "tags": [
       "telegram",
       "bots",
       "directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "chatbottle"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/messaging/chatbottle-telegram-bots.md"
   },
   {
@@ -167164,24 +167155,25 @@
   {
     "id": "9-steps-to-security-in-the-digital-age",
     "name": "9 Steps to Security in the Digital Age",
-    "description": "Online privacy guide to security in the digital age",
+    "description": "Use when you're hardening your investigator OPSEC — a free plain-language online-privacy guide covering passwords, VPNs, tracking, and account hygiene.",
     "url": "https://www.wizcase.com/blog/online-privacy-guide-steps-to-security-in-the-digital-age/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "A quick refresher on personal digital-privacy hygiene before or during investigative work.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free blog guide on WizCase; no account. Note WizCase is a commercial VPN/security review site, so expect product recommendations.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A reading resource, not a query — it touches no subject. It's OPSEC *advice* for protecting your own investigator identity; apply the hygiene it describes rather than treating it as a tool you run.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A vendor-published (WizCase) privacy listicle; the general advice is sound but the site monetizes VPN/security affiliate recommendations, so weigh product suggestions accordingly.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -167190,15 +167182,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "9 Steps to Security in the Digital Age",
+      "WizCase online privacy guide"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "opsec",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/9-steps-to-security-in-the-digital-age.md"
   },
   {
@@ -170017,46 +170015,6 @@
     "_file": "library/tools/opsec-investigator-tooling/chrome.md"
   },
   {
-    "id": "chrome-web-store",
-    "name": "Chrome Web Store",
-    "description": "Website that provides searches for Google Chrome browser add-ons/extensions",
-    "url": "https://chromewebstore.google.com/category/extensions",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/chrome-web-store.md"
-  },
-  {
     "id": "citymapper-mapping-app-mobile-android",
     "name": "Citymapper Mapping App (Mobile – Android)",
     "description": "Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings and transport options for feasibility/timeline analysis.",
@@ -172209,41 +172167,55 @@
   {
     "id": "facebook-messenger-app-mobile-android",
     "name": "Facebook Messenger App (Mobile – Android)",
-    "description": "App for mobile devices for messaging services related to Facebook",
+    "description": "Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active, and read receipts.",
     "url": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading Facebook presence signals (active-now, last-active, read receipts) for a known Facebook account.",
+    "selectorsIn": [
+      "social-profile",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free Meta app; requires a Facebook/Messenger account to use.",
+    "opsec": "active",
+    "opsecNote": "Messenger is inherently active — viewing a profile, appearing online, and especially sending a message are all visible to the target, and read receipts run both ways. Use a fully built sock-puppet Facebook account, disable your own active status, and never message from an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "First-party Meta application; the presence data it shows is authoritative for that account, though users can disable active status, so absence of a signal proves nothing.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Facebook Messenger",
+      "Messenger Android"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "social-media",
+      "facebook"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-android.md"
   },
   {
@@ -179323,24 +179295,27 @@
   {
     "id": "osintlab",
     "name": "OSINTLAB",
-    "description": "Script that automates installation of ~50 OSINT recon tools.",
+    "description": "Use when you have a fresh Kali workstation and want a ready recon toolkit — a bash installer that deploys ~50 OSINT tools (subdomain, email, breach, social) in one pass.",
     "url": "https://github.com/Purpl3-Dev/OSINTLAB",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Bulk-installing common OSINT tools on a workstation",
+    "bestFor": "Bulk-provisioning ~50 common OSINT/recon tools on a Kali Linux workstation with one script.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source on GitHub; no account required (individual tools it installs may have their own API-key needs).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Running the installer only touches package repos and the tools' own GitHub/PyPI sources, not any investigation target. Review install.sh before running — you are executing a third-party script as your recon user; run it in a disposable VM you keep separate from your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community installer script (38 stars).",
+    "trustNote": "Small community repo (~39 stars, few commits) by an individual dev; it just orchestrates other well-known tools, so audit install.sh and trust the underlying tools, not the wrapper.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -179349,15 +179324,21 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "OSINTLAB",
+      "Purpl3-Dev OSINTLAB"
+    ],
     "tags": [
       "installer",
       "provisioning",
       "setup"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/osintlab.md"
   },
   {
@@ -187668,41 +187649,53 @@
   {
     "id": "yahoo-finance-app-mobile-android",
     "name": "Yahoo Finance App (Mobile – Android)",
-    "description": "App for mobile devices for monitoring stocks and finance",
+    "description": "Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and news for public companies.",
     "url": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.finance",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling public-company financials, leadership, and news for an organization tied to a subject.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Yahoo Finance app; a paid \"Plus\" tier adds premium analytics but the core company data is free and needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads public market and corporate data from Yahoo's servers; it never contacts the subject or their employer. No special sock-puppet needed, though normal research-network hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Established mainstream finance aggregator; company fundamentals derive from exchanges/filings, but figures can lag or contain feed errors, so confirm load-bearing numbers against primary filings.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Yahoo Finance",
+      "Yahoo Finance Android"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "add-ons-apps-extensions",
+      "corporate",
+      "finance"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/yahoo-finance-app-mobile-android.md"
   },
   {
@@ -274760,35 +274753,55 @@
   {
     "id": "google-docs-cse",
     "name": "Google Docs CSE",
-    "description": "OSINT tool: Google Docs CSE.",
+    "description": "Use when you have a `name`, `email`, or keyword and want to find publicly exposed Google Docs/Sheets/Slides — a Google Custom Search Engine scoped to docs.google.com.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:rse-4irjrn8#gsc.tab=0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Surfacing public/exposed Google Docs, Sheets, and Slides that mention a person, email, or keyword.",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine (Custom Search); no account needed to run the public search page.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google's index, not the documents themselves, so the doc owners are not notified by the search. Opening a returned doc, however, may register a view for shared files — open with a sock-puppet Google session and avoid requesting access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine restricted to docs.google.com; the results are Google's, but the CSE scope was set by an unknown author, so confirm what domains it actually covers.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Google Docs Custom Search",
+      "docs.google.com CSE"
+    ],
+    "tags": [
+      "google-dork",
+      "exposed-documents",
+      "search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-docs-cse.md"
   },
   {
@@ -341177,38 +341190,48 @@
   {
     "id": "emojitranslate-com",
     "name": "emojitranslate.com",
-    "description": "OSINT tool: emojitranslate.com.",
+    "description": "Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji sequences.",
     "url": "https://emojitranslate.com/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Converting emoji-heavy messages to readable words to interpret coded or stylized posts.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Client-side style translation of text you paste — it queries no subject and touches no account. Still avoid pasting sensitive raw case content into any third-party site; translate a sanitized excerpt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A novelty word↔emoji converter; useful as a rough decoding aid, but emoji meaning is contextual and slang-driven, so its mapping is suggestive, not authoritative.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Emoji Translate",
+      "emojitranslate"
+    ],
     "tags": [
-      "translatortranscriptionsites",
-      "Translation & Transcription Sites"
+      "translation",
+      "emoji",
+      "slang"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/emojitranslate-com.md"
   },
   {
@@ -346931,46 +346954,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/transportation/equasis.md"
-  },
-  {
-    "id": "eships-net",
-    "name": "eships.net",
-    "description": "OSINT tool: eships.net.",
-    "url": "http://eships.net",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "maritime"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/eships-net.md"
   },
   {
     "id": "europe-station-maps-floor-plan",

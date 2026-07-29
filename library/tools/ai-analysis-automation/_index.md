@@ -121,7 +121,7 @@ kind: group-index
 - **`epic-privacy-browser`** (low) — OSINT tool: Epic Privacy Browser.
 - **`eraser`** (low) — OSINT tool: Eraser.
 - **`euvsdisinfo`** (low) — Use when you have a claim, narrative, outlet, or `name` and want to check it against the EU's searchable database of catalogued pro-Kremlin 
-- **`exhibit`** (low) — OSINT tool: Exhibit.
+- **`exhibit`** (low) — Use when you have structured case data (JSON/CSV) and want a filterable, mappable, timelined web view — an open-source framework for data-ri
 - **`explainshell-com`** (low) — Use when you have an unfamiliar shell command (from a writeup, a log, or a tool's README) and want each flag explained — paste it, get a pla
 - **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
 - **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
@@ -305,7 +305,7 @@ kind: group-index
 - **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
 - **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
 - **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
-- **`researchbuzz`** (low) — Google Sinker Search queries constructor (view pic), Google News Search queries constructor, Quick twitter account historical navigation in 
+- **`researchbuzz`** (low) — Use when you have a `name` or keyword and want purpose-built search constructors — free tools that build Google/News/social/archive queries 
 - **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
 - **`s-i-g-i-t`** (low) — Use when you have a `name`, `username`, `phone`, `ip-address`, or `domain` and want a quick multi-tool recon pass — bundles username checks,
 - **`sans-internet-storm-center-diary-full-text`** (low) — Use when you want an authoritative, monitorable feed of emerging threats and attack patterns — the full-text RSS of SANS ISC handler diaries

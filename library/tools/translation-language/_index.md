@@ -32,7 +32,7 @@ kind: group-index
 - **`dictionary-com`** (low) — Search for definitions, grammar, slang, acronyms, and more
 - **`dragon-speech-recognition-solutions`** (low) — Program that recognized speech and translates it into text
 - **`emojipedia-org`** (low) — OSINT tool: emojipedia.org.
-- **`emojitranslate-com`** (low) — OSINT tool: emojitranslate.com.
+- **`emojitranslate-com`** (low) — Use when you have emoji-laden text and want plain-language sense (or vice-versa) — a free web translator that maps between words and emoji s
 - **`ethnologue`** (low) — Use when you have a language name, code, or region and want to know where a language is spoken and by whom — returns speaker geography, popu
 - **`evernote-com`** (low) — OSINT tool: evernote.com.
 - **`flockwatch`** (low) — OSINT tool: FlockWatch.

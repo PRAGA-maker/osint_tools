@@ -31,7 +31,7 @@ kind: group-index
 - **`awesome-telegram-osint`** (medium) — Use when you have a Telegram `username`/`phone` and need the right tool for it — a curated catalog of Telegram OSINT search engines, bots, d
 - **`bmi-np-bot`** (high) — Use when you have a Russian `phone` number and want its current mobile operator and geographic region, accounting for number portability (MN
 - **`botim-me`** (high) — Use when you have a `phone` number (often Gulf/Middle-East) and want to check whether it has a BOTIM messaging account and see any public pr
-- **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.
+- **`chatbottle-telegram-bots`** (low) — Use when you want to find a Telegram bot for a task (OSINT lookups, search, monitoring) — a searchable directory of Telegram bots with categ
 - **`chatsearchrobot`** (high) — Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram c
 - **`chattoday`** (low) — Use when you have a `username`/`name` and want a person's messaging-app handles — returns self-listed Kik/Snapchat/Telegram/Discord `social-
 - **`chatvisualizer-com`** (medium) — Use when you already possess a WhatsApp chat export and want visual statistics of it — returns activity patterns and per-participant `name`/

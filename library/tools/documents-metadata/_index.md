@@ -45,7 +45,6 @@ kind: group-index
 - **`bookmarkee-bookmark-organizer`** (low) — Use when you need a free, account-based place to organize and access investigation links from any device — a personal bookmark manager, not 
 - **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
 - **`bubbl-us-online-flow-chart-tool`** (low) — Use when you have a set of `associate`/entity links and want to lay them out as a visual link-analysis mind map — an analysis aid that produ
-- **`bubbly`** (low) — A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their a
 - **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
 - **`catchvideo`** (low) — Use when you have a `social-profile` or video-page URL and want to download the raw video as evidence — returns a saved media file for `meta
 - **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev

@@ -16,7 +16,7 @@ kind: group-index
 - **`10minutemail-com`** (low) — Use when you need a throwaway `email` inbox to receive a one-off verification code without exposing a real address — an investigator OpSec t
 - **`2-682-783-free-ai-generated-photos`** (low) — OSINT tool: 2,682,783 free AI generated photos.
 - **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
-- **`9-steps-to-security-in-the-digital-age`** (low) — Online privacy guide to security in the digital age
+- **`9-steps-to-security-in-the-digital-age`** (low) — Use when you're hardening your investigator OPSEC — a free plain-language online-privacy guide covering passwords, VPNs, tracking, and accou
 - **`aba-generator`** (low) — Use when you need to validate or generate a syntactically-valid US bank routing (ABA) number for a sock-puppet — returns a checksum-valid AB
 - **`abine-blur-app`** (low) — Secure personal information you put online such as passwords, payments, etc.
 - **`account-killer`** (low) — Use when you need to know how an account exists or can be removed on a given platform — provides per-site directions and direct links for de
@@ -77,7 +77,6 @@ kind: group-index
 - **`chepy`** (low) — Use when you have encoded/encrypted/obfuscated data (a token, a blob, an encoded string) and want to transform it from the command line — a 
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
 - **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
-- **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
 - **`chrome`** (low) — Use when you need a hardened, disposable browsing environment for OSINT — Chrome profiles, incognito, DevTools, and extensions form the base
 - **`citymapper-mapping-app-mobile-android`** (medium) — Use when you have an `address`/`geolocation` in a supported city and want realistic transit routing — returns door-to-door routes, timings a
 - **`citymapper-mapping-app-mobile-ios`** (low) — Use when you have an `address` or `geolocation` in a covered city and want realistic transit/travel options — returns routes, travel times, 
@@ -124,7 +123,7 @@ kind: group-index
 - **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
 - **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
-- **`facebook-messenger-app-mobile-android`** (low) — App for mobile devices for messaging services related to Facebook
+- **`facebook-messenger-app-mobile-android`** (low) — Use when you have a `social-profile` on Facebook and want activity/presence signals — Meta's Messenger app shows active status, last-active,
 - **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
 - **`facebook-pages-social-networking-app-mobile-ios`** (low) — App for mobile devices for monitoring Facebook page activity
 - **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
@@ -279,7 +278,7 @@ kind: group-index
 - **`osint-sync`** (low) — Use when you have a `username`, `email`, or `phone` and want to fan the search across 20+ platforms and premium tools from the browser — ret
 - **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
 - **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
-- **`osintlab`** (low) — Script that automates installation of ~50 OSINT recon tools.
+- **`osintlab`** (low) — Use when you have a fresh Kali workstation and want a ready recon toolkit — a bash installer that deploys ~50 OSINT tools (subdomain, email,
 - **`osintux`** (low) — Use when you want a preconfigured Spanish-language Linux environment for OSINT work — returns a Debian-based distro bundling investigation a
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
@@ -459,7 +458,7 @@ kind: group-index
 - **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
 - **`workflow-task-automation-app-mobile-ios`** (low) — App for mobile devices for business communications and sharing of materials
 - **`xmind-works`** (low) — Online tool for open and editing .xmind files
-- **`yahoo-finance-app-mobile-android`** (low) — App for mobile devices for monitoring stocks and finance
+- **`yahoo-finance-app-mobile-android`** (low) — Use when you have an `employer-org` and want its financial/corporate profile — Yahoo Finance shows tickers, filings-linked data, execs, and 
 - **`yahoo-finance-app-mobile-ios`** (low) — App for mobile devices for monitoring stocks and finance
 - **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
 - **`yahoo-mail-app-mobile-ios`** (low) — App for mobile devices for email services

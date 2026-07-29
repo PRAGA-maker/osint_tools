@@ -257,7 +257,7 @@ kind: group-index
 - **`google-com-hack-attack`** (medium) — Use when you have a `domain`/target and want a ready-made dorking surface — a Google Custom Search Engine pre-tuned to surface exposed files
 - **`google-cse-instances-search-engine`** (medium) — Use when you have a `name`/`username`/`domain` and want to search a curated OSINT-focused Google Programmable Search Engine that queries onl
 - **`google-custom-search`** (medium) — Use when you have a set of sites (or a whole search vertical) and want a reusable Google-powered search box scoped to just them — returns Go
-- **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
+- **`google-docs-cse`** (low) — Use when you have a `name`, `email`, or keyword and want to find publicly exposed Google Docs/Sheets/Slides — a Google Custom Search Engine 
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
