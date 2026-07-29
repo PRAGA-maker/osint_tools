@@ -132,7 +132,7 @@ kind: group-index
 - **`mamba-ru`** (medium) — Use when you have a `username`, `name` or `image` and want to find a subject on Russia's largest dating network — returns `social-profile`, 
 - **`mashable`** (medium) — Use when you have a `name` or `username` and want tech/social-media/pop-culture coverage mentioning them — returns `social-profile`/byline, 
 - **`match`** (medium) — Use when you have a `name`/`username`/`image` and want to check for a dating profile — a major dating site you can browse for photos, first 
-- **`medium`** (low) — OSINT tool: Medium.
+- **`medium`** (low) — Use when you have a `username` or `name` and want a person's Medium articles, profile, and the topics/people they engage with — returns soci
 - **`meetic-com-europe`** (medium) — Use when you have a `username`, `name` or photo and want to check for a Meetic dating profile in Europe — returns the linked `social-profile
 - **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
 - **`metafilter`** (low) — Use when you have a `username` (or real `name`) and want to surface a long-running community member's post/comment history and interests — r

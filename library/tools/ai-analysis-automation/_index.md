@@ -173,7 +173,7 @@ kind: group-index
 - **`hohli`** (low) — OSINT tool: Hohli.
 - **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
 - **`hotspot-shield`** (low) — OSINT tool: Hotspot Shield.
-- **`how-to-verify`** (low) — Visual fact checking mind maps for verification video, audio, source, text. Detailed workflows descriptions with tools, tips and tricks.
+- **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
 - **`html-editor`** (low) — OSINT tool: HTML editor.
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes

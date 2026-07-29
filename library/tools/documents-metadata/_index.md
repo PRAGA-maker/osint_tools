@@ -75,7 +75,7 @@ kind: group-index
 - **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time
 - **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
 - **`diigo`** (low) — Use when you need to collect, annotate, and archive web evidence during an investigation, or to mine a subject's public Diigo `username` for
-- **`documentcloud`** (low) — OSINT tool: DocumentCloud.
+- **`documentcloud`** (low) — Use when you have a `name`, org, or keyword and want to search millions of primary-source documents uploaded by journalists — returns docume
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
@@ -176,7 +176,7 @@ kind: group-index
 - **`occupational-outlook-handbook-it-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
-- **`online-metadata-viewer-and-editor`** (low) — High-quality and well-made. Support docx, xlsx, msg, pptx, jpeg, vsd, mpp.
+- **`online-metadata-viewer-and-editor`** (low) — Use when you have a file (`image`, docx, xlsx, pptx, msg, vsd, mpp) and want to view or edit its embedded metadata in the browser — returns 
 - **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
@@ -247,7 +247,7 @@ kind: group-index
 - **`uk-government-information-technology`** (low) — Use when you need official UK Government ICT policy, strategy, and standards documents — a gov.uk reference collection, not a people-search 
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
-- **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`upwork`** (low) — Use when you have a `name`/`username` and want a freelancer's public profile — skills, work history, portfolio, location and rates — returns
 - **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 

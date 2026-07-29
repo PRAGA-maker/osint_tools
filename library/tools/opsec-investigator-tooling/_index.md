@@ -339,7 +339,7 @@ kind: group-index
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
-- **`security-first-umbrella`** (low) — OSINT tool: Security First - Umbrella.
+- **`security-first-umbrella`** (low) — Use when you need a free, offline digital- and physical-security guide (checklists and how-tos) to plan investigator OpSec before or during 
 - **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
 - **`send-text-free`** (low) — Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, no
 - **`send`** (low) — OSINT tool: Send.
