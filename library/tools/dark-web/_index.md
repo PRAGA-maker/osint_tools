@@ -32,7 +32,6 @@ kind: group-index
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
 - **`dargle`** (low) — Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s,
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
-- **`dark-web-scraper`** (low) — Specify the start link and depth of crawl to research the .onion website for sensitive data (crypto wallets, API keys, emails, phone numbers
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret
 - **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
 - **`darkweb-archive`** (low) — Free simple tool that allows you to download website files in the .onion domain zone as an archive with html, css, javascript and other file

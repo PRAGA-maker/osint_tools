@@ -40,7 +40,7 @@ kind: group-index
 - **`social-analysis/`** — 1 skill(s) below.
 - **`subdomains/`** — 17 skill(s) below.
 - **`terrorism-and-extremism/`** — 7 skill(s) below.
-- **`threat-feeds-and-platforms/`** — 15 skill(s) below.
+- **`threat-feeds-and-platforms/`** — 14 skill(s) below.
 - **`tools/`** — 4 skill(s) below.
 - **`ttps/`** — 2 skill(s) below.
 - **`typosquatting/`** — 4 skill(s) below.
@@ -265,7 +265,7 @@ kind: group-index
 - **`majestic`** (low) — Use when you have a `domain` and want to map who links to it — returns the backlinking `domain`s and link-intelligence metrics (Trust Flow /
 - **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
 - **`matika`** (medium) — Use when you have an `ip-address`, `domain`, `email`, hash or `crypto-wallet` selector on a page and want to pivot it across many intel engi
-- **`maxmind`** (low) — OSINT tool: MaxMind.
+- **`maxmind`** (low) — Use when you have an `ip-address` and want its likely geolocation and network — returns country/region/city, ASN, and ISP/organization from 
 - **`mayorsecdnsscan`** (low) — Use when you have a `domain` and want its DNS records, zone-transfer exposure, and enumerated subdomains — returns subdomain `domain`s and t
 - **`metabigor`** (low) — Use when you have an `employer-org`, ASN, or `ip-address` and want its network footprint with no API keys — returns IP ranges, related domai
 - **`metadata-parser`** (low) — Use when you have a `domain`/URL and want to programmatically pull page metadata (title, description, author, Open Graph images) at scale — 
@@ -294,7 +294,6 @@ kind: group-index
 - **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
 - **`network-solutions-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrant name, contact details, dates, and hosting IP where not pr
 - **`network-tools`** (medium) — Use when you have a `domain` or `ip-address` and want quick WHOIS, DNS, ping, and traceroute from the browser — returns registration, DNS re
-- **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
 - **`nindo-host-morocco`** (medium) — Use when a `domain` resolves to a Moroccan registrar/host and you want provider context — returns domain and employer-org (hosting provider)
 - **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.

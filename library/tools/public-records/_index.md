@@ -360,7 +360,7 @@ kind: group-index
 - **`gogettr`** (low) — Use when you have a GETTR `username`, hashtag or post and want to archive its data — a Python client pulling posts, comments, followers and 
 - **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
 - **`goodfirms`** (medium) — Use when you have a company name and want its B2B profile — returns employer-org details, location/address, services, and named leadership f
-- **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.
+- **`google-public-data-explorer`** (low) — Use when you need public statistical/demographic data for a place — Google's Public Data Explorer now redirects to Data Commons, which retur
 - **`google-scholar-search-tips`** (medium) — Use when you want to sharpen a Google Scholar query (author operators, phrase/field syntax) — returns the official help/reference for search
 - **`gouvernement-du-qu-bec`** (low) — Use when you have an `employer-org`, `address`, or `geolocation` in Québec and want official open data — returns employer-org, address, and 
 - **`gov-cy`** (high) — Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`,

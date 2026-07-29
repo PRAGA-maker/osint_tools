@@ -7,7 +7,7 @@ kind: group-index
 # domains-ip-infrastructure/discovery
 
 ## Skills here
-- **`analyzeid`** (low) — Pivoting from shared tracking IDs to related domains
+- **`analyzeid`** (low) — Use when you have a `domain` and want other sites the same person runs — pivots on shared Google Analytics/AdSense/Amazon/tracking IDs and e
 - **`builtwith`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack, trackers, and hosting/analytics IDs — returns pivotable `d
 - **`criminal-ip-search`** (low) — Use when you have an `ip-address` or `domain` and want its exposed services, open ports, risk score and hosting context — returns asset fing
 - **`kraken`** (low) — CLI-driven reconnaissance against domain and host assets

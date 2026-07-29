@@ -625,7 +625,7 @@ kind: group-index
 - **`twitch-tools-rootonline-de`** (high) — Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filt
 - **`twitch-tools`** (low) — Use when you have a Twitch `username`/channel and want to enumerate its followers, following, emotes, clips, VODs and moderation footprint —
 - **`twitch-username-and-user-id-addons-mozilla-org`** (medium) — Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames
-- **`twitch-username-search`** (low) — OSINT tool: Twitch Username Search.
+- **`twitch-username-search`** (low) — Use when you have a `username` and want to know if it exists on Twitch (or monitor when a handle frees up) — returns whether the Twitch hand
 - **`twitchmetrics-net`** (low) — Use when you have a Twitch `username` and want their channel stats, growth history, games played and rankings — returns social-profile conte
 - **`twitter-account-detector`** (low) — Use when you have a webpage/`domain` and want the Twitter/X accounts it references — a Chrome extension that surfaces all X handles linked o
 - **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur

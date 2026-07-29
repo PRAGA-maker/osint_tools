@@ -37,7 +37,7 @@ kind: group-index
 - **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Use when you have an `employer-org` or role/location and want current UK vacancies and salary data — returns aggregated job listings by comp
 - **`african-journal-online`** (low) — Use when you have a `name` or research topic and want scholarly articles published in African journals — returns document-id, employer-org, 
-- **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
+- **`agence-france-presse-afp`** (low) — Use when you have a `name`, event, or place and want reporting/imagery from a major global news wire — AFP's site and fact-check arm return 
 - **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
 - **`airlines-inform`** (medium) — Use when you have an airline, airport or aircraft-type reference and want to decode it — returns airline/fleet/airport details (`employer-or

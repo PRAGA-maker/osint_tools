@@ -131,7 +131,6 @@ kind: group-index
 - **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
 - **`guru-com`** (low) — Use when you have a `name`/`username` and want a subject's freelance profile — returns social-profile, employer-org (freelance work history)
 - **`hispavista-spain`** (low) — Spain-based digital marketing service
-- **`hoverme`** (low) — Tool that uncovers social media profiles for individuals
 - **`identify-plans`** (low) — Use when you have an `image` of vegetation in a photo and want to identify the plant species — narrows the `geolocation` by matching flora t
 - **`image-analyzer-addon`** (low) — View all images on a page and expose image properties, EXIF data, and one-click download
 - **`imgonline-com-ua`** (low) — Use when you have a JPEG `image` and want to read or edit its EXIF/IPTC/XMP metadata (including any GPS) without recompressing — returns met
