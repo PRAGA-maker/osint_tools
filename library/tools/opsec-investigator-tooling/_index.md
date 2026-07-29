@@ -63,7 +63,6 @@ kind: group-index
 - **`bitonic`** (low) — OSINT tool: Bitonic.
 - **`blackarch-linux`** (low) — Use when you want a ready-made investigation workstation — returns an Arch-based distro pre-loaded with 2800+ security/OSINT tools for recon
 - **`blackhole`** (low) — OSINT tool: BlackHole.
-- **`blinklist`** (low) — Website that provides a listing for new and popular apps, including tech/software reviews
 - **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
 - **`bool`** (low) — Boolean search assistant
 - **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau

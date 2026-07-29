@@ -401,7 +401,6 @@ kind: group-index
 - **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
 - **`guidestar`** (medium) — Use when you have an `employer-org` (nonprofit) or a `name` and want US nonprofit filings and leadership — returns officers, addresses, Form
 - **`gun-dealer-inspections-the-trace`** (medium) — Use when you have a US gun-dealer business `name` or `address`/`geolocation` and want its ATF inspection/disciplinary history — returns `emp
-- **`guttr`** (low) — OSINT tool: GUTTR.
 - **`hathitrust-digital-library`** (medium) — Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns em
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
 - **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute

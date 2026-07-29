@@ -538,7 +538,6 @@ kind: group-index
 - **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
-- **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience
 - **`search-craigslist`** (medium) — Use when you have a keyword, `name`, `phone` or item and want to search Craigslist classified ads across every US city at once — returns mat
 - **`search-engine-colossus`** (low) — International directory of search engines
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 

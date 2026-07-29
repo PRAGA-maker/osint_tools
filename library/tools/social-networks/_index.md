@@ -28,7 +28,7 @@ kind: group-index
 - **`accountkiller-com`** (high) — Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — retur
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (low) — Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded 
 - **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
-- **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
+- **`all-twitch-streamers-search`** (low) — Use when you have a `username`/`name` and want to find a Twitch channel and its stats — returns the `social-profile`, activity history and a
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
 - **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
 - **`anonymous-ad-preview-tool`** (low) — Use when you have a `geolocation` and want to see Google search results/ads as they'd appear to someone in that place and device — returns l

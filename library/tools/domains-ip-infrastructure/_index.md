@@ -251,7 +251,7 @@ kind: group-index
 - **`kali-intelligence-suite-kis`** (low) — Use when you have a `domain`/`ip-address` scope and want one framework to run and centralise dozens of recon/pentest tools — orchestrates nm
 - **`kaspersky-cyberthreat-live-map`** (low) — Use when you want a live global picture of malware/attack detections by country — returns real-time threat-telemetry visualization, situatio
 - **`kloth`** (low) — Use when you have a `domain` or `ip-address` and want quick web-based DNS/network lookups (DNS records, DNSBL/blacklist checks) without a sh
-- **`knockknock`** (low) — A very fast script written in #go that queries the ViewDNSInfo API (free, 500 results limit) and gets a list of domains related to target do
+- **`knockknock`** (low) — Use when you have a `domain` and want other domains likely owned by the same person/company — a Go CLI over the ViewDNS API returning relate
 - **`knowledgenow`** (low) — OSINT tool: KNOWLEDGENOW.
 - **`lacnic`** (medium) — Use when you have an `ip-address` or `domain` in Latin America/Caribbean and want the allocation record — returns the holder org, contacts a
 - **`larger-io`** (low) — OSINT tool: Larger.io.

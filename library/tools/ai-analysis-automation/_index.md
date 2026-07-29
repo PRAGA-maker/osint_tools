@@ -132,7 +132,7 @@ kind: group-index
 - **`faviconhash`** (low) — Use when you have a website/favicon and want its hash to find every other host serving the same icon — returns a favicon hash and pivot link
 - **`filevault`** (low) — Use when you need to encrypt your own investigator macOS device at rest so seized/lost hardware cannot leak case data — a defensive opsec co
 - **`find-osint-tool`** (low) — OSINT tool: Find osint tool.
-- **`flot`** (low) — OSINT tool: Flot.
+- **`flot`** (low) — Use when you want simple interactive line/bar/time charts on a web page via jQuery — an open-source plotting library for visualizing OSINT t
 - **`fotor`** (low) — OSINT tool: Fotor.
 - **`foxyrecon`** (low) — Use when you have an indicator (email, `domain`, `ip-address`, hash, `phone`, ASN) and want to fan it out across 150+ OSINT resources from y
 - **`frack`** (low) — OSINT tool: Frack.
@@ -158,7 +158,7 @@ kind: group-index
 - **`graphviz-online`** (low) — OSINT tool: Graphviz Online.
 - **`graphx`** (low) — OSINT tool: GraphX.
 - **`greynoise`** (low) — Use when you have an `ip-address` and want to know whether it is internet-wide background scanning noise or a targeted actor — returns class
-- **`guardian-project`** (low) — OSINT tool: Guardian Project.
+- **`guardian-project`** (low) — Use when you need vetted privacy/anti-surveillance apps for OpSec — Guardian Project builds open-source tools (Orbot, ProofMode, Haven) for 
 - **`guerrilla-mail`** (low) — Use when an investigation step needs a throwaway inbox — sign up to a target's site/service, receive a verification code, or test a flow wit
 - **`gumshoe`** (medium) — Use when you have a `name`, `username`, `email` or `domain` and want an automated recursive OSINT-Framework pivot engine — returns chained f
 - **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
@@ -172,7 +172,7 @@ kind: group-index
 - **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
 - **`hotspot-shield`** (low) — Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool tha
 - **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
-- **`html-editor`** (low) — OSINT tool: HTML editor.
+- **`html-editor`** (low) — Use when you have raw or scraped HTML and want to view/clean/preview it — a free online WYSIWYG+source editor for inspecting markup and conv
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it
 - **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
 - **`httpie-io`** (low) — Use when you have a `domain`/API endpoint and want to probe it by hand — returns raw HTTP responses, headers, and JSON in a readable CLI.
@@ -197,7 +197,7 @@ kind: group-index
 - **`keepass-password-safe`** (low) — Use when you need to store investigation credentials and puppet-account logins securely — returns an encrypted local vault, not any subject 
 - **`keyfinder`** (low) — OSINT tool: keyFinder.
 - **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.
-- **`lastfm-monitor`** (low) — OSINT tool: lastfm_monitor.
+- **`lastfm-monitor`** (medium) — Use when you have a Last.fm `username` and want to track their listening in real time — returns now-playing/online-activity signals and a li
 - **`lastpass`** (low) — OSINT tool: Lastpass.
 - **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
 - **`linkscope-client`** (medium) — Use when you have any selector and want to build a visual link-analysis graph across OSINT sources — a free, Maltego-style desktop tool that
@@ -329,7 +329,6 @@ kind: group-index
 - **`serpscan`** (low) — OSINT tool: SerpScan.
 - **`shellcheck-net`** (low) — Use when you have a shell script (yours or one recovered from a target) and want to understand or debug it — returns annotated warnings expl
 - **`silent-circle`** (low) — OSINT tool: Silent circle.
-- **`sintelix`** (low) — OSINT tool: Sintelix.
 - **`sitesucker`** (low) — Use when you have a website URL (`domain`) and want a complete offline copy for preservation and analysis — downloads the site's pages, imag
 - **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
 - **`sn0int`** (medium) — Use when you have a `domain`, `email`, `ip-address`, or `username` and want to run automated recon modules that expand it — returns subdomai
