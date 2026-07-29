@@ -165,14 +165,14 @@ kind: group-index
 - **`skyscanner`** (medium) — Use when you have an origin/destination and dates and want to know which flights, routes, and airlines connect them — returns schedules, car
 - **`skyvector`** (low) — Use when you have a `geolocation`, airport code, or navaid and want free aeronautical charts, airport data and flight-planning info — return
 - **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
-- **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
+- **`submarine-tracker`** (low) — Use when you have a vessel `name`/hull and want the last-known AIS position of submarines and naval vessels on a live map — returns geolocat
 - **`submarinecablemap-com`** (low) — Use when you have a `geolocation`/country/landing point and want to see the submarine communications cables serving it — returns geolocation
 - **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
 - **`the-burnsy-vehicle-osint`** (medium) — Use when you have a `vehicle-plate`, `vin`, or vehicle photo and need the right lookup — a curated directory of vehicle-OSINT tools and regi
 - **`tokyo-mou`** (low) — Use when you have a ship `name` or IMO `document-id` and want its Asia-Pacific port-state-control inspection and detention history — returns
 - **`track-trace`** (medium) — Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and deliver
 - **`transit-visualisation`** (low) — Use when you have an approximate `geolocation` and want to see live public-transport vehicle positions and route networks there — returns re
-- **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
+- **`transtats-bts-gov`** (low) — Use when you have a U.S. flight (airline + number, or route + date) and want its actual historical departure/arrival times and delays — retu
 - **`uk-govt-vessel-lists`** (medium) — Use when you have a UK fishing `vessel-plate`/name and want official registration details — returns vessel name, RSS number, length, and hom
 - **`understanding-war-map-room`** (low) — Use when you have a conflict `geolocation` or date and want authoritative, dated control-of-terrain maps — returns front-line positions and 
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf

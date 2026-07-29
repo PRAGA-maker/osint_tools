@@ -16223,38 +16223,47 @@
   },
   {
     "id": "tio-run",
-    "name": "TIO RUN",
-    "description": "Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser",
+    "name": "TIO Run",
+    "description": "Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns the program's output.",
     "url": "https://tio.run",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Running throwaway code, decoders, and regex tests in-browser with no local setup.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, ad-free, no registration; the underlying interpreters are open-source (MIT) on GitHub.",
+    "opsec": "passive",
+    "opsecNote": "Passive with respect to any subject — but your code and anything you paste are sent to and run on TIO's servers. Never paste sensitive case data, credentials, or PII; treat it as a public sandbox.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known open-source online interpreter (MIT-licensed, code public); the operator can see whatever you submit, so keep inputs non-sensitive.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Try It Online",
+      "tio.run"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "sandbox",
+      "utility"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tio-run.md"
   },
   {
@@ -65043,44 +65052,6 @@
     "_file": "library/tools/domains-ip-infrastructure/protected-by-cloud-services/cloudfail.md"
   },
   {
-    "id": "cloudflare-resolver",
-    "name": "Cloudflare Resolver",
-    "description": "OSINT tool: Cloudflare Resolver.",
-    "url": "http://www.skypeipresolver.net/cloudflare.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "2-skypeipresolver-net",
-      "skype-resolver"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/cloudflare-resolver.md"
-  },
-  {
     "id": "cloudflare-resolver-tool",
     "name": "Cloudflare Resolver Tool",
     "description": "OSINT tool: Cloudflare Resolver Tool.",
@@ -81201,7 +81172,7 @@
   {
     "id": "rand-terrorism-research",
     "name": "RAND Terrorism Research",
-    "description": "Terrorism research and policy analysis",
+    "description": "Use when you have a group, actor `name`, or topic and want authoritative think-tank research and analysis on terrorism/extremism — returns document-id, associate.",
     "url": "https://www.rand.org/topics/terrorism.html",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -81209,37 +81180,48 @@
       "terrorism-and-extremism",
       "research-centers"
     ],
-    "bestFor": "Terrorism research and policy analysis",
-    "input": "Search for terrorism research",
-    "output": "Academic papers and research findings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Authoritative, citable research and analysis on terrorism, extremism, and related security topics.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public access to RAND's terrorism research library; most reports download as free PDFs.",
     "opsec": "passive",
-    "opsecNote": "Passive access to public research",
+    "opsecNote": "Passive — reading published public research; nothing touches any subject and no query is attributable to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "RAND Corporation is a long-established nonpartisan nonprofit research institution; its terrorism work is methodologically reviewed and citable at source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "RAND terrorism",
+      "rand.org terrorism"
+    ],
+    "tags": [
+      "terrorism",
+      "research",
+      "think-tank"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
-      "reveal-image-verification-assistant",
       "terrorism-incidents-database"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/research-centers/rand-terrorism-research.md"
   },
   {
@@ -85423,37 +85405,53 @@
   {
     "id": "subdomainradar-io",
     "name": "SubDomainRadar.io",
-    "description": "OSINT tool: SubDomainRadar.io.",
+    "description": "Use when you have a `domain` and want to enumerate its subdomains and exposed hosts across many data sources — returns domain, ip-address.",
     "url": "https://subdomainradar.io",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Enumerating a domain's subdomains and attack surface across 50+ data sources.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free account grants 100 points and basic enumerators (no card); paid plans from ~€29.99/mo unlock more sources, scanning, screenshots and full API access.",
+    "opsec": "passive",
+    "opsecNote": "The subdomain enumeration draws on passive data sources and won't touch the target. The optional port-scan, vulnerability-scan and screenshot features are active — they send traffic to the target's hosts, so only enable them with authorisation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent commercial recon platform that aggregates 50+ public sources; results are cross-checkable against those upstream sources.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "SubDomainRadar.io",
+      "subdomainradar.io"
+    ],
     "tags": [
-      "domain-and-ip-research"
+      "domain-and-ip-research",
+      "subdomains",
+      "recon"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/subdomainradar-io.md"
   },
   {
@@ -107471,46 +107469,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/financial-crypto/mixer-tracking/breadcrumbs-app.md"
-  },
-  {
-    "id": "btc-com",
-    "name": "BTC.com",
-    "description": "OSINT tool: BTC.com.",
-    "url": "https://btc.com",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "crypto"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/btc-com.md"
   },
   {
     "id": "btcbook-guarda-com",
@@ -152545,41 +152503,54 @@
   {
     "id": "eia-global-environmental-crime-tracker",
     "name": "EIA Global Environmental Crime Tracker",
-    "description": "Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.",
+    "description": "Use when you have a species, country, or seizure and want verified environmental-crime cases, routes, and enforcement data — returns geolocation, associate.",
     "url": "https://eia-international.org/global-environmental-crime-tracker/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping verified international environmental-crime seizures, trafficking routes, and enforcement cases.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive database and dashboard; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing a published crime database; nothing touches any subject and no query is attributable to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Environmental Investigation Agency (an established investigative NGO) and listed in Bellingcat's toolkit; data is described as verified, though it captures only a fraction of actual activity.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "EIA Environmental Crime Tracker",
+      "Global Environmental Crime Tracker"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "environment-wildlife"
+      "environment-wildlife",
+      "crime"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "environmental-investigation-agency"
     ],
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/eia-global-environmental-crime-tracker.md"
   },
   {
@@ -285488,35 +285459,51 @@
   {
     "id": "osint-blogs-search-engine",
     "name": "OSINT Blogs Search Engine",
-    "description": "OSINT tool: OSINT Blogs Search Engine.",
+    "description": "Use when you have a `name`, `username`, tool, or technique and want to search a curated set of OSINT blogs and practitioner writeups at once — returns document-id, social-profile.",
     "url": "https://cse.google.com/cse?cx=fd4729049350a76d0",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching a curated collection of OSINT blogs and practitioner writeups in a single query.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — it's a Google-powered search, so queries go to Google, not to any subject. Use a sock-puppet/logged-out Google session if the query pattern itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built Google Custom Search Engine; its coverage is only the sites the curator added and can drift as blogs move, rename, or close.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "OSINT blogs CSE"
+    ],
+    "tags": [
+      "search",
+      "osint-blogs",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-blogs-search-engine.md"
   },
   {
@@ -352975,39 +352962,54 @@
   },
   {
     "id": "submarine-tracker",
-    "name": "SUBMARINE TRACKER",
-    "description": "OSINT tool: SUBMARINE TRACKER.",
+    "name": "Submarine Tracker",
+    "description": "Use when you have a vessel `name`/hull and want the last-known AIS position of submarines and naval vessels on a live map — returns geolocation.",
     "url": "https://www.marinevesseltraffic.com/submarine-vessels-tracking-map",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating the last-known AIS position of submarines and naval vessels on a live map.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free live AIS map; deeper history and features on the wider MarineVesselTraffic/MarineTraffic ecosystem may require payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you read public AIS broadcasts; no vessel is contacted. Note that most military submarines run AIS dark, so a blank map is expected, not evidence of absence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party AIS aggregator; positions are only as current and complete as vessels choose to transmit, and naval vessels routinely suppress AIS.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Submarine Tracker",
+      "MarineVesselTraffic submarines"
+    ],
+    "tags": [
+      "maritime",
+      "ais",
+      "vessel-tracking"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "military-ship-tracker"
     ],
+    "enrichment": "full",
     "_file": "library/tools/transportation/submarine-tracker.md"
   },
   {
@@ -353328,38 +353330,49 @@
   {
     "id": "transtats-bts-gov",
     "name": "Transtats.bts.gov",
-    "description": "flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))",
+    "description": "Use when you have a U.S. flight (airline + number, or route + date) and want its actual historical departure/arrival times and delays — returns geolocation.",
     "url": "https://transtats.bts.gov/ONTIME/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Verifying whether a specific U.S. domestic flight operated and its real departure/arrival times.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public U.S. government (Bureau of Transportation Statistics) data; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a government statistics database; nothing touches the subject and no query is tied to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official U.S. DOT Bureau of Transportation Statistics data covering the largest U.S. carriers — authoritative for U.S. domestic flight performance.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "BTS TranStats",
+      "TranStats On-Time"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Aviation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/transtats-bts-gov.md"
   },
   {

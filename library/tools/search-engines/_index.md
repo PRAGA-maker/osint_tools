@@ -452,7 +452,7 @@ kind: group-index
 - **`orion`** (low) — open-Source Search Engine for social networking websites.
 - **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
 - **`oscobo`** (medium) — Use when you have a `name` or keyword and want a privacy-preserving web search that stores nothing about you — returns web results and links
-- **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
+- **`osint-blogs-search-engine`** (low) — Use when you have a `name`, `username`, tool, or technique and want to search a curated set of OSINT blogs and practitioner writeups at once
 - **`osint-bookmark`** (low) — Use when you want a ready-made browser bookmark set of OSINT tools organised by task — returns an importable catalog spanning people, `domai
 - **`osint-cheat-sheet`** (low) — Use when you need to discover more OSINT tools, datasets, or techniques for a selector — a curated index pointing to resources across people
 - **`osint-combine-tools`** (high) — Use when you have a `username`, `geolocation`, or social handle and want a vetted free toolset to expand it — returns social-profiles, geo l

@@ -35,7 +35,6 @@ kind: group-index
 - **`blockcypher`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and linked `cr
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
 - **`bpfi-ie`** (low) — Use when you have an Irish/UK `document-id` (account number + sort code) and want to confirm it is valid — returns a validity check and poin
-- **`btc-com`** (low) — OSINT tool: BTC.com.
 - **`btcbook-guarda-com`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or transaction ID and want its on-chain activity — returns balance, transaction history,
 - **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi
 - **`chainalysis`** (low) — Use when you have a `crypto-wallet` address and want to screen it against OFAC/UN/EU sanctions for free — full transaction-tracing (Reactor)

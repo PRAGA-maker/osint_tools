@@ -107,7 +107,6 @@ kind: group-index
 - **`cloakquest3r`** (low) — Use when you have a `domain` behind Cloudflare/a CDN and want to uncover its real origin `ip-address` — via subdomain scanning, SSL analysis
 - **`cloudbrute`** (low) — Use when you have a company `name`/`domain` and want to discover its cloud assets (buckets, apps) across providers — returns exposed storage
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
-- **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
 - **`cloudmare`** (low) — Use when you have a `domain` behind Cloudflare/Sucuri/Incapsula and want to uncover its real origin server IP via DNS/history misconfigurati
 - **`cloudunflare`** (low) — Use when a target `domain` sits behind Cloudflare and you want to find its real origin `ip-address` — returns candidate origin IPs and histo
 - **`cmlabs-tools`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack (CMS, server, JS libraries, widgets) — returns the detected
@@ -389,7 +388,7 @@ kind: group-index
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
 - **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.
-- **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
+- **`subdomainradar-io`** (low) — Use when you have a `domain` and want to enumerate its subdomains and exposed hosts across many data sources — returns domain, ip-address.
 - **`subdomainsbrute`** (low) — Use when you have a `domain` and want to enumerate its live subdomains fast via dictionary brute-force — returns discovered subdomain `domai
 - **`talend-api-tester-free-edition`** (low) — Use when you have an API endpoint on a `domain` and want to hand-craft requests and inspect responses in-browser — returns domain/response d
 - **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al

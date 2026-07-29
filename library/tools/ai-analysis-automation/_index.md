@@ -366,7 +366,7 @@ kind: group-index
 - **`timeflow`** (low) — OSINT tool: Timeflow.
 - **`timeline`** (low) — OSINT tool: Timeline.
 - **`timetoast`** (low) — OSINT tool: Timetoast.
-- **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
+- **`tio-run`** (low) — Use when you need to run or test a code snippet, decoder, or regex in-browser across 600+ languages without installing anything — returns th
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
 - **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.

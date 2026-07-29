@@ -28,7 +28,7 @@ kind: group-index
 - **`digitaldigging-org`** (medium) — Use when you have an `image`/`geolocation` puzzle and want current technique guidance — Henk van Ess's OSINT newsletter on AI-powered geoloc
 - **`earth`** (medium) — Use when you have a `geolocation` and a date/time and want the wind, weather, and ocean conditions then — corroborates or breaks chronolocat
 - **`earthquake-watch`** (medium) — Use when you have a `geolocation` and want recent seismic events there — returns geolocated earthquakes with magnitude, depth, and time.
-- **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
+- **`eia-global-environmental-crime-tracker`** (low) — Use when you have a species, country, or seizure and want verified environmental-crime cases, routes, and enforcement data — returns geoloca
 - **`emily-bz`** (medium) — Use when you have a Google Street View panorama URL and want its exact capture time — returns the precise timestamp (to ~2s) of that pano, a
 - **`environmental-justice-atlas`** (low) — Use when you have a place or a company/`employer-org` and want documented environmental conflicts there — returns geolocation, employer-org 
 - **`f4map`** (low) — Use when you have a `geolocation`/`address` and want a 3D rendering of the buildings and terrain there — returns an interactive 3D view for 
