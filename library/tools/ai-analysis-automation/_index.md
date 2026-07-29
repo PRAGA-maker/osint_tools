@@ -218,7 +218,7 @@ kind: group-index
 - **`nazar`** (low) — Use when you have a `username`, `ip-address` or `domain` and want to run several basic recon modules from one CLI — returns social-profile, 
 - **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
 - **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
-- **`nixintel`** (low) — OSINT tool: NixIntel.
+- **`nixintel`** (low) — Use when you need a technique or tool reference for an OSINT problem — returns tutorials, methodology write-ups, and a curated OSINT resourc
 - **`nixory`** (low) — OSINT tool: Nixory.
 - **`nodebox`** (low) — Use when you have a dataset (connections, entities) and want to build custom node-based visualizations without heavy coding — returns genera
 - **`observable`** (low) — Use when you have a dataset and want to explore/visualize it interactively in the browser — a JavaScript notebook platform for building and 

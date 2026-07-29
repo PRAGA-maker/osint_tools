@@ -76,7 +76,7 @@ kind: group-index
 - **`everymountainintheworld`** (medium) — Use when you have a `geolocation` with a distinctive peak/summit and want to identify it — returns named mountains with elevation and links 
 - **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
 - **`fao-map-catalog`** (medium) — Use when you have a `geolocation` or region and want authoritative land-cover, agricultural, water and terrain layers for it — returns geosp
-- **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
+- **`feeds-talonvoice-com`** (medium) — Use when you have a `geolocation`/city and want live text of public-safety radio traffic there — returns searchable transcriptions of scanne
 - **`felt`** (medium) — Use when you have `geolocation` points, an `address` list, or an `image`/map to annotate — returns a shareable interactive map with drawn fe
 - **`find-food-support`** (low) — Use when you have a US `address`/area and want nearby free-food resources — returns food pantries, meal services and EBT-accepting stores by
 - **`fisgonia`** (low) — Use when you have a `geolocation` and want publicly-accessible IP cameras (and other public sensors) plotted on a map of that area — returns

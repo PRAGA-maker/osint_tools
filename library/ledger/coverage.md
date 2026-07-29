@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7157 total · 5863 full · 1294 stub (81% enriched)
+**Tools:** 7155 total · 5874 full · 1281 stub (82% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3171 · medium: 2022 · high: 1964
+low: 3168 · medium: 2023 · high: 1964
 
 ## Tools by trust
-community: 3444 · trusted: 1931 · unverified: 1776 · untrustworthy: 6
+community: 3440 · trusted: 1937 · unverified: 1772 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 203/409
+- `ai-analysis-automation` — 204/409
 - `archives-cache` — 96/115
 - `communities-forums` — 255/285
 - `dark-web` — 56/95
 - `dating-classifieds` — 82/90
-- `documents-metadata` — 150/273
-- `domains-ip-infrastructure` — 469/634
+- `documents-metadata` — 151/273
+- `domains-ip-infrastructure` — 471/634
 - `email` — 246/246
-- `evidence-capture` — 20/29
+- `evidence-capture` — 21/28
 - `financial-crypto` — 78/95
-- `geolocation` — 308/335
+- `geolocation` — 309/335
 - `image-video-face` — 447/451
 - `maps-geospatial-data` — 110/123
 - `messaging` — 182/184
 - `opsec-investigator-tooling` — 189/485
 - `people-search` — 256/257
 - `phone` — 136/137
-- `public-records` — 921/990
-- `search-engines` — 577/739
-- `social-networks` — 750/774
+- `public-records` — 922/990
+- `search-engines` — 581/739
+- `social-networks` — 750/773
 - `training-ctf` — 6/12
 - `translation-language` — 51/94
 - `transportation` — 172/201
@@ -42,7 +42,7 @@ community: 3444 · trusted: 1931 · unverified: 1776 · untrustworthy: 6
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 940 leaves
-- `library/tools/social-networks` — 747 leaves
+- `library/tools/social-networks` — 746 leaves
 - `library/tools/search-engines` — 691 leaves
 - `library/tools/opsec-investigator-tooling` — 478 leaves
 - `library/tools/domains-ip-infrastructure` — 428 leaves
@@ -63,7 +63,7 @@ community: 3444 · trusted: 1931 · unverified: 1776 · untrustworthy: 6
 - `library/tools/dark-web` — 85 leaves
 - `library/tools/translation-language` — 80 leaves
 - `library/tools/financial-crypto` — 79 leaves
-- `library/tools/evidence-capture` — 23 leaves
+- `library/tools/evidence-capture` — 22 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
 - `library/tools/image-video-face/images/metadata` — 17 leaves
 - `library/tools/public-records/court-criminal-records` — 17 leaves

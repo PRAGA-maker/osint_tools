@@ -9565,37 +9565,51 @@
   {
     "id": "nixintel",
     "name": "NixIntel",
-    "description": "OSINT tool: NixIntel.",
+    "description": "Use when you need a technique or tool reference for an OSINT problem — returns tutorials, methodology write-ups, and a curated OSINT resource start page.",
     "url": "https://nixintel.info/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning the how-to method and finding the right tool for a specific OSINT task (SSL/infra attribution, social-media accounts, geolocation).",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Blog and resource pages are free to read; the author also teaches paid SANS courses, but no paywall on the site content.",
+    "opsec": "passive",
+    "opsecNote": "You are reading a public blog — no target interaction. Apply the OpSec practices each individual article describes when you go on to run the tools it covers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by Steven Harris, a well-known OSINT practitioner and SANS instructor (SEC497/SEC587). Widely cited reference material; methodology-focused rather than a data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "osint-tools-yogsec",
+      "bellingcat-online-investigation-toolkit"
+    ],
+    "aliases": [
+      "nixintel.info",
+      "Steven Harris OSINT"
+    ],
     "tags": [
-      "osint-blogs"
+      "osint-blogs",
+      "methodology",
+      "reference"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/nixintel.md"
   },
   {
@@ -59436,41 +59450,58 @@
   {
     "id": "violation-tracker",
     "name": "Violation Tracker",
-    "description": "US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimination, price-fixing, bribery, and other cases.",
-    "url": "https://www.goodjobsfirst.org/violation-tracker",
+    "description": "Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agencies, penalties, and parent-company links.",
+    "url": "https://violationtracker.goodjobsfirst.org/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a company's record of US corporate misconduct — fines, settlements, and criminal cases since 2000.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view results. Bulk download of results and a few detail fields are reserved for subscribers; the on-screen investigative data is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public research database; you query Good Jobs First's servers, not any target. No login required and nothing is disclosed to the company being searched. Standard search-engine logging applies — use a clean session if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Produced by the Corporate Research Project of Good Jobs First, a long-established non-profit; records are sourced from federal regulators, the DOJ, state AGs and local agencies, with citations to the originating action.",
     "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "opencorporates",
+      "sec-edgar"
+    ],
+    "aliases": [
+      "Good Jobs First Violation Tracker"
+    ],
     "tags": [
+      "corporate-records",
+      "regulatory",
       "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
+      "curated-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/violation-tracker.md"
   },
   {
@@ -71833,43 +71864,62 @@
   {
     "id": "immuniweb",
     "name": "ImmuniWeb",
-    "description": "Web security testing and scanning",
+    "description": "Use when you have a `domain` (or email/org) and want free passive posture reports — returns SSL, website, email, privacy and dark-web/breach exposure findings.",
     "url": "https://www.immuniweb.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "attack-surface-security-testing"
     ],
-    "bestFor": "Web security testing and scanning",
-    "input": "Web application or target URL",
-    "output": "Vulnerability reports and risk assessment",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free non-intrusive security/privacy posture checks on a domain, plus a dark-web & breach exposure snapshot for an organisation.",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "Performs actual penetration testing and scanning - generates server logs",
+    "costNote": "Community Edition tests (SSL, Website, Email, Privacy, Mobile, Dark Web Exposure) are free and run without an account. Full continuous monitoring and pentest services are paid enterprise products.",
+    "opsec": "passive",
+    "opsecNote": "The free Community tests query ImmuniWeb's own telemetry and public sources; the SSL/Email/Privacy tests are effectively passive fingerprinting. The Website Security Test does perform a light non-intrusive scan of the target — treat that one as mildly active and only run it against assets you may test. No target-owner alert is generated. ImmuniWeb logs and publishes results to a shared statistics board unless you opt out.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "captcha",
+      "rate-limit"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ImmuniWeb (Geneva-based application security vendor, formerly High-Tech Bridge) is an established commercial firm; its free tools are widely cited in industry and its scan engines are its own products.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "immuniweb-directory"
+    ],
+    "aliases": [
+      "High-Tech Bridge",
+      "ImmuniWeb Community Edition"
+    ],
+    "tags": [
+      "ssl-test",
+      "dark-web-exposure",
+      "attack-surface"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/attack-surface-security-testing/immuniweb.md"
   },
   {
@@ -81818,29 +81868,32 @@
   {
     "id": "robotsdisallowed",
     "name": "RobotsDisallowed",
-    "description": "robots.txt enumeration and directory discovery",
+    "description": "Use when you have a `domain` and want a high-signal wordlist of paths site owners hide in robots.txt — returns candidate directories for content discovery.",
     "url": "https://github.com/danielmiessler/RobotsDisallowed",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "vulnerabilities"
     ],
-    "bestFor": "robots.txt enumeration and directory discovery",
-    "input": "Used as wordlist input for directory brute-forcing",
-    "output": "Directory path wordlist",
-    "selectorsIn": [],
+    "bestFor": "Seeding a directory/content-discovery scan with paths that real sites explicitly disallowed in robots.txt.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, MIT-licensed text files on GitHub; clone or download, no account needed.",
     "opsec": "passive",
-    "opsecNote": "Passive wordlist only; no requests made to target during list use",
+    "opsecNote": "The wordlist itself is inert — reading it touches no target. It becomes active only when you feed it to a fuzzer (gobuster/ffuf) against a live host, which does generate request logs on that host. OpSec scope belongs to the scanner you pair it with, not this list.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Maintained by Daniel Miessler (also SecLists); 1.5k+ stars. Data is aggregated from public robots.txt files of top sites. Last data refresh March 2019, so it is a static, dormant-but-usable corpus.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -81851,11 +81904,17 @@
       "seclists",
       "seclists-dns-subdomains"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RobotsDisallowed wordlist"
+    ],
+    "tags": [
+      "wordlist",
+      "content-discovery",
+      "web-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/vulnerabilities/robotsdisallowed.md"
   },
   {
@@ -104437,40 +104496,6 @@
     "_file": "library/tools/email/zen-github-com.md"
   },
   {
-    "id": "commentexporter-com",
-    "name": "Commentexporter.com",
-    "description": "OSINT tool: Commentexporter.com.",
-    "url": "https://www.commentexporter.com/",
-    "category": "evidence-capture",
-    "path": [
-      "evidence-capture"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/evidence-capture/commentexporter-com.md"
-  },
-  {
     "id": "download-sorter",
     "name": "Download Sorter",
     "description": "simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put \"Downloads\" folder in order.",
@@ -105322,35 +105347,40 @@
   {
     "id": "page-links-extractor-tool",
     "name": "Page Links Extractor Tool",
-    "description": "OSINT tool: Page Links Extractor Tool.",
+    "description": "Use when you have a `domain`/URL and want every hyperlink on that page pulled out — returns a list of internal and external links (further domains, social profiles).",
     "url": "https://shadowcrypt.net/tools/pagelinks",
     "category": "evidence-capture",
     "path": [
       "evidence-capture"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Quickly harvesting all outbound and internal links from a single web page to map where it points.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool on ShadowCrypt; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "ShadowCrypt fetches the page server-side, so the request to the target originates from ShadowCrypt's infrastructure, not your IP — mildly protective. But you are trusting a third party with the URL you are investigating; avoid submitting sensitive internal URLs. No alert reaches the page owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "ShadowCrypt is an independent free web-tools suite (WHOIS, subdomain finder, IP geolocation, DNS). Functional and live; a small community project rather than an established vendor, so verify anything critical.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "cloudflare-resolver-tool",
       "geoip-tracker-tool",
@@ -105358,6 +105388,16 @@
       "phone-number-lookup-tool",
       "shadowcrypt-tools"
     ],
+    "aliases": [
+      "ShadowCrypt Page Links Extractor"
+    ],
+    "tags": [
+      "link-extraction",
+      "web-recon"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/evidence-capture/page-links-extractor-tool.md"
   },
   {
@@ -114023,36 +114063,55 @@
   },
   {
     "id": "feeds-talonvoice-com",
-    "name": "Feeds.talonvoice.com",
-    "description": "OSINT tool: Feeds.talonvoice.com.",
+    "name": "Talon Voice Radio Scanner Feeds",
+    "description": "Use when you have a `geolocation`/city and want live text of public-safety radio traffic there — returns searchable transcriptions of scanner audio with playback.",
     "url": "https://feeds.talonvoice.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reading real-time speech-to-text transcriptions of US police/emergency scanner feeds by city.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to read; donation-funded project. Coverage is limited to whatever feeds are actively transcribed at the time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read a public web page of already-public radio traffic; you do not transmit or contact anyone, and monitoring is passive. Note that in some jurisdictions retaining or republishing public-safety audio has legal nuance — handle transcripts accordingly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Independent open-source project that ingests live scanner audio and transcribes it via speech recognition. Transcripts are machine-generated and community-corrected, so treat wording as approximate.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "broadcastify"
+    ],
+    "aliases": [
+      "Talon Voice scanner feeds",
+      "feeds.talonvoice.com"
+    ],
+    "tags": [
+      "scanner",
+      "public-safety",
+      "radio"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/feeds-talonvoice-com.md"
   },
   {
@@ -250673,39 +250732,63 @@
   },
   {
     "id": "rjsc-connect",
-    "name": "RJSC Connect",
-    "description": "OSINT tool: RJSC Connect.",
+    "name": "RJSC Connect (Nova Scotia Registry of Joint Stock Companies)",
+    "description": "Use when you have an `employer-org` or business name in Nova Scotia and want its registration record — returns entity status, registered address, and associated officers/agents.",
     "url": "https://rjsc.novascotia.ca/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming and looking up Nova Scotia (Canada) registered companies, societies, and business names.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Name/existence search is free; obtaining full certificates or detailed filing documents typically incurs a Service Nova Scotia fee and may require a Connect account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "An official provincial government registry; you query the government's system, not any target, and the business owner is not notified. Some detailed lookups require signing in with a Nova Scotia account — use appropriate hygiene if you create one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Service Nova Scotia / Access Nova Scotia — the authoritative provincial corporate and business-name registry (Registry of Joint Stock Companies).",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ca"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
-      "employee-contact-directory-search-novascotia-ca"
+      "employee-contact-directory-search-novascotia-ca",
+      "opencorporates"
     ],
+    "aliases": [
+      "Registry of Joint Stock Companies",
+      "Nova Scotia RJSC",
+      "Access Nova Scotia business registry"
+    ],
+    "tags": [
+      "business-registry",
+      "canada",
+      "corporate-records"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rjsc-connect.md"
   },
   {
@@ -275921,40 +276004,51 @@
   {
     "id": "grey-literature-list-of-gateways",
     "name": "Grey Literature – List of Gateways",
-    "description": "OSINT tool: Grey Literature – List of Gateways.",
+    "description": "Use when you have a `name` or topic and need non-commercial reports (technical, government, conference) — returns a curated list of ~30 grey-literature gateways to search.",
     "url": "http://csulb.libguides.com/graylit",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the right database to search for grey literature — technical reports, government documents, preprints, and conference proceedings.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The guide itself is free (public university LibGuide). Individual gateways it lists are mostly free/open; a few may gate full text.",
+    "opsec": "passive",
+    "opsecNote": "A static library research guide — reading it touches no target. Searches you run on the linked gateways are ordinary public-database queries; apply normal session hygiene there.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by a California State University Long Beach librarian; a vetted academic reference guide. Authority for each result rests with the destination gateway.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "libguides-community-search"
     ],
+    "aliases": [
+      "CSULB Gray Literature LibGuide",
+      "Grey literature gateways"
+    ],
+    "tags": [
+      "academic-resources-and-grey-literature",
+      "reference"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/grey-literature-list-of-gateways.md"
   },
   {
@@ -285644,24 +285738,25 @@
   {
     "id": "osint-tools-yogsec",
     "name": "OSINT-Tools (yogsec)",
-    "description": "Collection of OSINT tools and methods for intelligence gathering.",
+    "description": "Use when you have a selector and don't know which tool fits — returns a categorised directory of OSINT tools and methods to pick from.",
     "url": "https://github.com/yogsec/OSINT-Tools",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Discovering OSINT tools and methods by category",
+    "bestFor": "Discovering the right OSINT tool or method for a given selector, organised across 26 investigation categories.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; browse in the README or clone.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference list on GitHub — reading it touches no target. OpSec applies only to the individual tools you then choose to run; the directory itself leaks nothing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community tool/method collection (57 stars).",
+    "trustNote": "Community-maintained tool/method collection (~67 stars) by the yogsec project; actively organised but link quality varies — treat listed tools as leads to verify, not endorsements.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -285670,19 +285765,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "one-liner-osint",
+      "yogsec",
+      "bellingcat-online-investigation-toolkit"
+    ],
+    "aliases": [
+      "yogsec OSINT-Tools"
+    ],
     "tags": [
       "directory",
       "reference",
       "methods"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "one-liner-osint",
-      "yogsec"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/osint-tools-yogsec.md"
   },
   {
@@ -287849,37 +287949,56 @@
   {
     "id": "reeder",
     "name": "Reeder",
-    "description": "OSINT tool: Reeder.",
-    "url": "http://reederapp.com",
+    "description": "Use when you have a set of `domain`/feed sources on a subject and want to monitor them continuously — returns a unified timeline of new posts, videos, and podcasts.",
+    "url": "https://reederapp.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Continuously monitoring RSS/Atom feeds, YouTube channels, podcasts, and social sources tied to a subject in one timeline.",
+    "selectorsIn": [
+      "domain",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The current Reeder (rebuilt, iOS 17+/macOS 14+) is free to download and use with iCloud sync; an optional subscription adds premium sync/features. Legacy \"Reeder Classic\" is a one-time paid app.",
+    "opsec": "passive",
+    "opsecNote": "Reeder fetches public feeds directly from the source servers, so subscribing to a subject's feed sends requests from your device/IP to their host — recurring, low-volume, and indistinguishable from any RSS reader, but not zero-footprint. For sensitive monitoring, front it with a feed proxy. It does not require logging into the monitored platforms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established (15+ years) independent reader app by Silvio Rizzi; reputable, privacy-respecting, widely reviewed. It is a client, not a data source — reliability is that of the feeds you add.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "feedly",
+      "inoreader"
+    ],
+    "aliases": [
+      "Reeder app",
+      "reederapp.com"
+    ],
     "tags": [
+      "rss",
+      "feed-monitoring",
       "news-digest-and-discovery-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/reeder.md"
   },
   {
@@ -297879,37 +297998,53 @@
   {
     "id": "yeggi",
     "name": "Yeggi",
-    "description": "3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.",
+    "description": "Use when you have a `username`, keyword, or model name and want to find 3D-printable model listings across repositories — returns links to designer profiles on Thingiverse, Printables, etc.",
     "url": "https://www.yeggi.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Meta-searching 3D model repositories to locate a design or a maker's uploads across many sites at once.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; no account needed. A free account adds saved lists and new-model alerts. Individual model downloads may be paid on the destination repository, not on Yeggi.",
+    "opsec": "passive",
+    "opsecNote": "A public meta-search engine; you query Yeggi, not the maker. Clicking through to a repository is a normal visit to that site. No target notification. Use a clean session for attribution hygiene as with any search engine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent aggregator run since 2013 by Sebastian Karpp; indexes 6M+ models across public 3D repositories. Reliable as a discovery layer; authority for any listing is the destination repo.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "yeggi.com"
+    ],
     "tags": [
-      "Search engines"
+      "Search engines",
+      "3d-printing",
+      "hobbyist"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yeggi.md"
   },
   {
@@ -301653,45 +301788,6 @@
       "username-availability"
     ],
     "_file": "library/tools/social-networks/check-channel-badges.md"
-  },
-  {
-    "id": "check-twitch-follow-length",
-    "name": "Check Twitch follow length",
-    "description": "OSINT tool: Check Twitch follow length.",
-    "url": "https://cactus.tools/twitch/followage",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "check-channel-badges",
-      "twitch-following",
-      "username-availability"
-    ],
-    "_file": "library/tools/social-networks/check-twitch-follow-length.md"
   },
   {
     "id": "chosic-com",
@@ -342929,7 +343025,15 @@
     "registration": false,
     "relatedTools": [
       "reddit",
-      "lexicool-translation"
+      "lexicool-translation",
+      "here",
+      "r-opendirectories",
+      "reddit-com-2",
+      "reddit-darknet",
+      "reddit-deep-web",
+      "reddit-guide-to-opting-out-of-background-check-websites",
+      "reddit-old-reddit-search",
+      "reddit-onions"
     ],
     "aliases": [
       "r/translator"

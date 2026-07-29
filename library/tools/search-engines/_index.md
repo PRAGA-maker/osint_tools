@@ -274,7 +274,7 @@ kind: group-index
 - **`government-science-portal`** (medium) — Use when you have a researcher `name` and want their US federally-funded publications and reports — returns `employer-org` and `document-id`
 - **`grayhatwarfare`** (medium) — Use when you have a `name`, `email`, or `domain` and want to find files a target accidentally exposed in misconfigured public cloud buckets 
 - **`grey-guide`** (low) — OSINT tool: Grey Guide.
-- **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
+- **`grey-literature-list-of-gateways`** (low) — Use when you have a `name` or topic and need non-commercial reports (technical, government, conference) — returns a curated list of ~30 grey
 - **`greynet-international`** (low) — OSINT tool: GreyNet International.
 - **`gsearch`** (low) — Use when you have a `name`, `username`, or `email` and want a fast Google Custom Search front-end for site- or domain-scoped queries — retur
 - **`hacker-news-algolia`** (low) — Use when you have a `name`, `username`, `domain`, or product and want every Hacker News post/comment mentioning it — returns dated mentions,
@@ -461,7 +461,7 @@ kind: group-index
 - **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate
 - **`osint-toolkit-cybersight-security`** (low) — Use when you have a selector but need the right tool and want a categorized catalog of OSINT tools/websites to pick from — returns tool poin
 - **`osint-tools-howtofind-bot`** (low) — Catalog of open-source OSINT tools.
-- **`osint-tools-yogsec`** (low) — Collection of OSINT tools and methods for intelligence gathering.
+- **`osint-tools-yogsec`** (low) — Use when you have a selector and don't know which tool fits — returns a categorised directory of OSINT tools and methods to pick from.
 - **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
 - **`osintgeek-tools`** (medium) — Use when you have a `username`, `email`, `image` or `domain` and want a curated launchpad of vetted lookup tools (with a DACH/German focus) 
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
@@ -501,7 +501,7 @@ kind: group-index
 - **`realtor-com-united-states`** (medium) — Use when you have a US `address` or an agent `name` and want property listing history or a real-estate agent's contact/brokerage — returns a
 - **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
 - **`recruit-net`** (low) — Use when you have an `employer-org` or role and want job-posting context — aggregates listings from company sites and boards across many cou
-- **`reeder`** (low) — OSINT tool: Reeder.
+- **`reeder`** (low) — Use when you have a set of `domain`/feed sources on a subject and want to monitor them continuously — returns a unified timeline of new post
 - **`remax-house-listing-search-canada`** (medium) — Use when you have a Canadian `address` or agent `name` and want real-estate context — returns property listings, prices, photos, and the lis
 - **`research-gate`** (low) — Use when you have a researcher's `name` or `employer-org` and want their academic profile — returns publications, affiliation, co-authors an
 - **`resellerratings-north-america`** (low) — Use when you have a `username`/reviewer handle or a company and want customer-review context — returns reviewer `social-profile` fragments a
@@ -692,7 +692,7 @@ kind: group-index
 - **`yandex-russia`** (low) — Use when you have an `image`/`face`, `name` or `username` and want a search engine whose reverse-image and CIS-region coverage beats Google 
 - **`yandex-wordstat`** (low) — Use when you need search-demand and regional interest data for a keyword/name/brand on Yandex — returns query volumes and geographic breakdo
 - **`yaraif`** (medium) — Use when you have a suspicious file or hash (`document-id`) and want to know what malware it is and what infrastructure it links to — return
-- **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
+- **`yeggi`** (low) — Use when you have a `username`, keyword, or model name and want to find 3D-printable model listings across repositories — returns links to d
 - **`yelp`** (medium) — Use when you have a business `name`/location or a reviewer `username` and want details or activity — returns business `address`/`phone` and 
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Use when you want a privacy-leaning alternative web search (charity-funded) for a second-opinion result set on a `name`/keyword — returns ag

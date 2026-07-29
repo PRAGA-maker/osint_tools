@@ -237,7 +237,7 @@ kind: group-index
 - **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
 - **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
 - **`upwork`** (low) — Use when you have a `name`/`username` and want a freelancer's public profile — skills, work history, portfolio, location and rates — returns
-- **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
+- **`violation-tracker`** (low) — Use when you have an `employer-org` (or a company-linked person) and want its US regulatory/criminal penalty history — returns cases, agenci
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — Use when you have a body of text or documents (`.txt`, `.docx`, `.pdf`, a pasted corpus) and want to surface the most frequent words, names 
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos

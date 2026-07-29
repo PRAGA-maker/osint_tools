@@ -747,7 +747,7 @@ kind: group-index
 - **`rightmove-co-uk`** (high) — Use when you have a UK `address`/postcode and want a property's sold-price history and past listing photos — Rightmove's house-price tool re
 - **`rip-ie`** (high) — Use when you have a `name` (and rough locality) of someone who may have died in Ireland and want the death/funeral notice — returns death no
 - **`rivoters-com`** (high) — Use when you have a `name` and want a Rhode Island resident's registered-voter record — returns their address, year/date of birth and helps 
-- **`rjsc-connect`** (low) — OSINT tool: RJSC Connect.
+- **`rjsc-connect`** (low) — Use when you have an `employer-org` or business name in Nova Scotia and want its registration record — returns entity status, registered add
 - **`romania`** (high) — Use when you have a Romanian `employer-org`/company name (or CUI) and want the official trade-register record — returns registered `address`
 - **`rootsweb-2`** (high) — Use when you have a `name` and want ancestry/family links — returns user-submitted family trees (WorldConnect), relatives, birth/death dates
 - **`ros-gov-uk-2`** (high) — Use when you have a Scottish property `address` (postcode) and want the owner and price history — returns owner name, address, and document-

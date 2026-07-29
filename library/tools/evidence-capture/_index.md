@@ -11,7 +11,6 @@ kind: group-index
 - **`web-browsing/`** — 6 skill(s) below.
 
 ## Skills here
-- **`commentexporter-com`** (low) — OSINT tool: Commentexporter.com.
 - **`download-sorter`** (low) — simple tool that will help set up the distribution of files with different extensions into different folders in a minute and permanently put
 - **`dumpitblue-plus`** (medium) — Use when you have a Facebook `social-profile`/page open and want to capture it for offline analysis — returns a fully-expanded, saveable cop
 - **`export-comments`** (low) — Use when you have a public post/video URL and want every comment with handles and timestamps as a spreadsheet — returns commenter `username`
@@ -26,7 +25,7 @@ kind: group-index
 - **`media-downloader-net`** (low) — OSINT tool: Media-downloader.net.
 - **`megatools`** (low) — Use when you have a MEGA.nz link or account and want to list/download its contents from the command line — returns the downloaded files (lea
 - **`online-tool-to-extract-links-from-any-web-page`** (low) — Use when you have a `domain`/page URL and want every link it contains — returns the full list of outbound/internal links for mapping a subje
-- **`page-links-extractor-tool`** (low) — OSINT tool: Page Links Extractor Tool.
+- **`page-links-extractor-tool`** (low) — Use when you have a `domain`/URL and want every hyperlink on that page pulled out — returns a list of internal and external links (further d
 - **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
 - **`soundscrape`** (low) — Use when you have a `social-profile` on SoundCloud/Bandcamp/Mixcloud/Audiomack and want to archive the target's audio uploads as evidence — 
 - **`stream-downloader`** (low) — Use when you have a `url` to a video/audio/live-stream page (mostly Chinese platforms) and want to archive the media as evidence — returns a

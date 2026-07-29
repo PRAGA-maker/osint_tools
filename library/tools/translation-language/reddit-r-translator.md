@@ -30,6 +30,14 @@ registration: false
 relatedTools:
 - reddit
 - lexicool-translation
+- here
+- r-opendirectories
+- reddit-com-2
+- reddit-darknet
+- reddit-deep-web
+- reddit-guide-to-opting-out-of-background-check-websites
+- reddit-old-reddit-search
+- reddit-onions
 aliases:
 - r/translator
 tags:

@@ -79,7 +79,6 @@ kind: group-index
 - **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
 - **`chearch`** (medium) — Use when you have a Reddit `username` or keyword and want to query historical Reddit posts/comments with filters — returns matching posts/co
 - **`check-channel-badges`** (low) — Use when you have a Twitch `username` and want to see that channel's custom sub/bit badges — returns `social-profile` corroboration and evid
-- **`check-twitch-follow-length`** (low) — OSINT tool: Check Twitch follow length.
 - **`chosic-com`** (low) — Use when you have a `social-profile` (a public Spotify playlist URL/username) and want to profile the owner's taste — returns genres, moods,
 - **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
 - **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
