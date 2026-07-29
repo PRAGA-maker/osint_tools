@@ -188,7 +188,6 @@ kind: group-index
 - **`vin-info`** (medium) — Use when you have a `vin` and want a vehicle-history/decoder report — returns technical specs, damage/auction/mileage history and historical
 - **`vincheck-info`** (medium) — Use when you have a `vin` or `vehicle-plate` and want a free vehicle history — returns title/salvage/theft history, specs, and recalls (vehi
 - **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
-- **`wandermap`** (low) — hiking routes world map
 - **`websdr`** (low) — Use when you have a frequency/region and want to listen to live radio from an internet-connected receiver near that location — returns audio
 - **`wikicars`** (medium) — Use when you have a `physical-description` of a vehicle and want to identify make/model/era — returns vehicle reference detail to pin down a
 - **`wikiroutes`** (low) — Use when you have a `geolocation`/city and want its public-transport network — returns bus/tram/metro routes, stops and coverage for that ar

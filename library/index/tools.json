@@ -12869,45 +12869,6 @@
     "_file": "library/tools/ai-analysis-automation/pygreynoise.md"
   },
   {
-    "id": "python-code-checker",
-    "name": "Python Code Checker",
-    "description": "quick find errors in code",
-    "url": "https://extendsclass.com/python-tester.html",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "extendclass"
-    ],
-    "_file": "library/tools/ai-analysis-automation/python-code-checker.md"
-  },
-  {
     "id": "python-osint-automation-examples",
     "name": "Python OSINT automation examples",
     "description": "In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.",
@@ -55610,46 +55571,6 @@
     "_file": "library/tools/documents-metadata/new-zealand-government-it-jobs.md"
   },
   {
-    "id": "new-zealand-technology-industry-association",
-    "name": "New Zealand Technology Industry Association",
-    "description": "Online organization website providing information on computer and information technology occupations",
-    "url": "http://www.nztech.org.nz",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/new-zealand-technology-industry-association.md"
-  },
-  {
     "id": "nox-app-player",
     "name": "NoxPlayer (Nox App Player)",
     "description": "Use when you need to run Android OSINT/messaging apps on a desktop to investigate a `phone`/`username` — an emulator that hosts mobile-only apps in a controllable, disposable environment.",
@@ -56081,46 +56002,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/opswat-meta-defender.md"
-  },
-  {
-    "id": "origami-framework",
-    "name": "Origami Framework",
-    "description": "PDF parsing and manipulation for malicious PDF analysis",
-    "url": "https://code.google.com/archive/p/origami-pdf/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "pdfs"
-    ],
-    "bestFor": "PDF parsing and manipulation for malicious PDF analysis",
-    "input": "PDF files, PDF objects, malicious content",
-    "output": "Parsed PDF structure, extracted objects, deobfuscated content, modified PDFs",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Open-source framework; local installation required; no file uploads",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/pdfs/origami-framework.md"
   },
   {
     "id": "osint-researcher",
@@ -58040,41 +57921,52 @@
   {
     "id": "site-dorks",
     "name": "Site Dorks",
-    "description": "Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites",
+    "description": "Use when you have a search term (a `name`, email, or keyword) and want to dork it across many curated OSINT sites and multiple engines at once — returns candidate `social-profile`/`document-id` hits.",
     "url": "https://github.com/Zarcolio/sitedorks",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fanning a single search term across hundreds of site-scoped dorks and several search engines.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source Python script; run locally.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "It builds and opens search-engine queries, so the engines (Google/Bing/Yandex/etc.) see your searches — not the targets. Run behind a VPN/sock-puppet browser; a burst of many dorks can trip engine rate limits/CAPTCHAs, so pace it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Open-source tool by Zarcolio; it only constructs and launches queries against public engines, so no independent data claims.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sitedorks"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents"
+      "useful-websites-tools-documents",
+      "google-dorking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/site-dorks.md"
   },
   {
@@ -63827,40 +63719,57 @@
   {
     "id": "censys-ipv4",
     "name": "Censys IPv4",
-    "description": "OSINT tool: Censys IPv4.",
-    "url": "https://censys.io/ipv4",
+    "description": "Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, and linked `domain`/infrastructure.",
+    "url": "https://search.censys.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up what services, ports, and certificates a given IP/host exposes from Censys's internet-wide scans.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account gives a limited monthly query/result quota on Censys Search; higher volume and API access are paid. (The old censys.io/ipv4 path now redirects to search.censys.io.)",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Censys's own scan database, not the target host, so the subject's server sees nothing from your lookup. Censys logs your searches against your account — use a research account, not one tied to your identity, for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Censys is a reputable internet-measurement platform (originating from University of Michigan research); its host data is authoritative scan data, though snapshots can lag reality.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "censys",
       "censys-certificates",
       "search-censys-io"
     ],
+    "aliases": [
+      "Censys host search"
+    ],
+    "tags": [
+      "infrastructure",
+      "host-scan",
+      "certificates"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/censys-ipv4.md"
   },
   {
@@ -67365,43 +67274,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dnssec/dnsviz.md"
-  },
-  {
-    "id": "domain-codex",
-    "name": "Domain Codex",
-    "description": "OSINT tool: Domain Codex.",
-    "url": "https://www.domaincodex.com/search.php",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/domain-codex.md"
   },
   {
     "id": "domain-dossier",
@@ -110888,42 +110760,49 @@
   {
     "id": "wallet-labels",
     "name": "Wallet Labels",
-    "description": "Search across more than 7.5M #Ethereum addresses labeled to easily identify wallets and exchange",
+    "description": "Use when you have a `crypto-wallet` address and want a human-readable label (exchange, whale, scammer, DAO, contract) for it — returns entity labels across major chains.",
     "url": "https://www.walletlabels.xyz/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Attaching a known identity/category label to an on-chain wallet address.",
     "selectorsIn": [
       "crypto-wallet"
     ],
     "selectorsOut": [
-      "address",
-      "crypto-wallet"
+      "crypto-wallet",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free-tier lookups planned (advertised ~1,000/month, no card); a paid API is \"coming soon.\"",
+    "opsec": "passive",
+    "opsecNote": "Querying a label database does not touch the wallet owner or the blockchain, so nothing is alerted. It is a public-address lookup — still use a research browser/VPN for sensitive cases.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Early open-beta project with a hand-verified but currently very small label set (a handful of wallets at time of check); treat coverage as minimal and any label as a lead to corroborate.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "walletlabels.xyz"
+    ],
     "tags": [
-      "Cryptocurrencies"
+      "Cryptocurrencies",
+      "crypto-wallet",
+      "attribution"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/wallet-labels.md"
   },
   {
@@ -168976,44 +168855,48 @@
   {
     "id": "avg-antivirus-for-mac",
     "name": "AVG Antivirus (for Mac)",
-    "description": "Malware and virus detection and elimination program for PC and Mac",
+    "description": "Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec control, not a selector lookup.",
     "url": "https://www.avg.com/en-ca/homepage#mac",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Free antivirus/malware scanning on the investigator's own macOS device.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "AVG AntiVirus FREE for Mac is free; AVG Internet Security (firewall, ransomware, web shield) is paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Protects YOUR device, not a target. Note that a real-time AV product phones telemetry/samples home to its vendor — acceptable for a general workstation, but use a dedicated, isolated analysis VM (not your everyday AV) when detonating suspect malware so nothing leaks case context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Mainstream consumer AV (AVG, an Avast/Gen brand); effective as endpoint hygiene, but a commercial product that collects usage telemetry.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "avg-antivirus-for-pc"
     ],
+    "aliases": [
+      "AVG AntiVirus FREE Mac"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "proxy-servers-online-privacy-security-tools",
+      "opsec"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-mac.md"
   },
   {
@@ -178122,37 +178005,44 @@
   {
     "id": "markmap",
     "name": "MARKMAP",
-    "description": "A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to create an informative and clear visualization.",
+    "description": "Use when you have investigation notes in Markdown and want to turn them into an interactive mind map to see structure and gaps — an analysis/visualisation aid, not an intelligence source.",
     "url": "https://markmap.js.org/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a Markdown outline of findings into an interactive SVG/HTML mind map.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; runs in the browser (also available as a CLI/VS Code extension).",
+    "opsec": "passive",
+    "opsecNote": "The web playground renders your Markdown client-side, but treat any hosted instance as untrusted with sensitive case notes — for protected material use the offline CLI/extension so nothing is transmitted. It reveals nothing about a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (markmap.js.org / gera2ld); transparent, client-side rendering with no data claims of its own.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "markmap.js"
+    ],
     "tags": [
-      "NOOSINT tools"
+      "NOOSINT tools",
+      "mind-map",
+      "visualization"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/markmap.md"
   },
   {
@@ -182359,35 +182249,48 @@
   {
     "id": "send-text-free",
     "name": "Send text free",
-    "description": "OSINT tool: Send text free.",
+    "description": "Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, not a lookup.",
     "url": "https://globfone.com/send-text/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Sending a one-off SMS to a phone number from the web without revealing your personal number.",
+    "selectorsIn": [
+      "phone"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web SMS (ad-supported); premium tiers exist for calling. Now requires account \"credibility\" verification to send.",
+    "opsec": "active",
+    "opsecNote": "This SENDS a message to a target's `phone` — an active, intrusive contact that the recipient sees and can report; it is not passive research. Delivery is not truly anonymous (the service now requires verification and logs sending). Only use for authorised pretext contact, from a sock-puppet identity, and understand the message is attributable to the platform.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running free web-communications service (Globfone); reliable for sending, but message delivery/anti-abuse behaviour is opaque and it is not anonymous.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Globfone Send Text"
+    ],
+    "tags": [
+      "sms",
+      "burner",
+      "opsec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/send-text-free.md"
   },
   {
@@ -234154,37 +234057,46 @@
   {
     "id": "international-energy-agency-statistics",
     "name": "International Energy Agency Statistics",
-    "description": "OSINT tool: International Energy Agency Statistics.",
-    "url": "http://www.iea.org/statistics",
+    "description": "Use when you have a country or energy `employer-org` and want authoritative energy production/consumption/price statistics for context — a macro reference dataset, not a person-lookup.",
+    "url": "https://www.iea.org/data-and-statistics",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Country- and sector-level energy statistics for background/context research.",
+    "selectorsIn": [
+      "employer-org"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A large set of headline statistics, charts, and reports is free to browse; detailed/bulk datasets are sold. (The old /statistics path now sits under /data-and-statistics.)",
+    "opsec": "passive",
+    "opsecNote": "Public reference data from an intergovernmental agency; browsing reveals nothing about your subject. Standard passive research — no login needed for the free material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The IEA is an OECD-affiliated intergovernmental body; its statistics are authoritative and widely cited in policy and industry.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IEA statistics",
+      "IEA data and statistics"
+    ],
     "tags": [
-      "data-and-statistics"
+      "data-and-statistics",
+      "energy"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/international-energy-agency-statistics.md"
   },
   {
@@ -234236,45 +234148,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/public-records/international-federation-of-accountants-ifac.md"
-  },
-  {
-    "id": "international-labour-comparisons",
-    "name": "International Labour Comparisons",
-    "description": "OSINT tool: International Labour Comparisons.",
-    "url": "http://www.bls.gov/fls/chartbook.htm",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "data-and-statistics"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "occupational-outlook-handbook-it-united-states"
-    ],
-    "_file": "library/tools/public-records/international-labour-comparisons.md"
   },
   {
     "id": "international-monetary-fund",
@@ -311499,35 +311372,46 @@
   {
     "id": "hashatit",
     "name": "Hashatit",
-    "description": "OSINT tool: Hashatit.",
+    "description": "Use when you have a hashtag or keyword and want to search public social posts tagged with it across networks — returns tagged `social-profile`/`image` content.",
     "url": "https://www.hashatit.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Cross-network hashtag/keyword search to surface public posts on a topic or event.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free hashtag search; no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Hashatit's aggregator, not the posters, so no target is alerted. It surfaces only already-public tagged content — browse behind a VPN for sensitive topics, and corroborate on the native network before relying on a post.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party hashtag search aggregator; coverage and freshness depend on which networks it can still pull from, which erodes as platform APIs tighten.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "aliases": [],
-    "tags": [],
+    "tags": [
+      "hashtag-search",
+      "social-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/hashatit.md"
   },
   {
@@ -354232,43 +354116,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-records/vindecodr.md"
-  },
-  {
-    "id": "wandermap",
-    "name": "Wandermap",
-    "description": "hiking routes world map",
-    "url": "http://www.wandermap.net/en/#/z15/55.7522011,37.6156006/terrain",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Routes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/transportation/wandermap.md"
   },
   {
     "id": "websdr",

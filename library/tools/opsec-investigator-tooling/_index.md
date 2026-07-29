@@ -50,7 +50,7 @@ kind: group-index
 - **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
 - **`autoregex`** (low) — Use when you need a regex from a plain-English description (or to explain one) to extract selectors — emails, phones, wallet addresses — fro
 - **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
-- **`avg-antivirus-for-mac`** (low) — Malware and virus detection and elimination program for PC and Mac
+- **`avg-antivirus-for-mac`** (low) — Use when you need free endpoint malware protection for your own investigator Mac before handling suspect files/links — a defensive opsec con
 - **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`awesome-browser-extensions-for-osint`** (medium) — Use when you want a browser extension to speed up an investigation task and need a vetted list — returns categorized OSINT extensions with u
 - **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
@@ -249,7 +249,7 @@ kind: group-index
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
 - **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
-- **`markmap`** (low) — A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to c
+- **`markmap`** (low) — Use when you have investigation notes in Markdown and want to turn them into an interactive mind map to see structure and gaps — an analysis
 - **`markwhen`** (low) — Use when you have a set of time-stamped events from an investigation and want a shareable visual timeline — write events as plain text/Markd
 - **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`matweb-info`** (low) — OSINT tool: Matweb.info.
@@ -341,7 +341,7 @@ kind: group-index
 - **`search-that-hash`** (low) — Use when you have a `password` hash and want it identified and cracked — returns the hash type and, where crackable, the plaintext `password
 - **`security-first-umbrella`** (low) — OSINT tool: Security First - Umbrella.
 - **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
-- **`send-text-free`** (low) — OSINT tool: Send text free.
+- **`send-text-free`** (low) — Use when you need to send an SMS to a `phone` number without exposing your own number during sock-puppet contact — a free web SMS sender, no
 - **`send`** (low) — OSINT tool: Send.
 - **`sendatext`** (low) — OSINT tool: SendaText.
 - **`septor-linux`** (low) — OSINT tool: Septor Linux.

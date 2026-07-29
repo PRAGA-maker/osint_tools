@@ -237,7 +237,7 @@ kind: group-index
 - **`graphtreon-com`** (high) — Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial
 - **`gravatar-email-checker`** (high) — Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reuse
 - **`hadzy-com`** (medium) — Use when you have a YouTube `username` or a specific video and want to search and analyse its public comments — returns matching comments, a
-- **`hashatit`** (low) — OSINT tool: Hashatit.
+- **`hashatit`** (low) — Use when you have a hashtag or keyword and want to search public social posts tagged with it across networks — returns tagged `social-profil
 - **`hashtagify`** (low) — Use when you have a topic/hashtag or `username` and want to find related hashtags and the top accounts using them — returns influencer `soci
 - **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
 - **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears

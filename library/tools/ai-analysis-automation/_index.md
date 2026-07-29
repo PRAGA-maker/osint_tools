@@ -300,7 +300,6 @@ kind: group-index
 - **`psn-monitor`** (low) — OSINT tool: psn_monitor.
 - **`pyba`** (low) — OSINT tool: Pyba.
 - **`pygreynoise`** (low) — Use when you have an `ip-address` and want to know if it's mass internet-scanning "noise" or targeted — GreyNoise's official Python client/C
-- **`python-code-checker`** (low) — quick find errors in code
 - **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
 - **`pywhat`** (low) — Use when you have an unknown string or file and want to identify what the artifacts in it are — returns typed identifications (emails, hashe
 - **`qlikview`** (low) — OSINT tool: QlikView.

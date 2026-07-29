@@ -14,7 +14,7 @@ kind: group-index
 - **`ios/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
-- **`pdfs/`** — 2 skill(s) below.
+- **`pdfs/`** — 1 skill(s) below.
 - **`search/`** — 4 skill(s) below.
 
 ## Skills here
@@ -174,7 +174,6 @@ kind: group-index
 - **`mutagen`** (low) — get meta data of audiofiles thrue command line
 - **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
-- **`new-zealand-technology-industry-association`** (low) — Online organization website providing information on computer and information technology occupations
 - **`occupational-outlook-handbook-it-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`odcrawler`** (low) — Use when you have a filename/keyword and want files exposed in open directories — returns links to matching files on indexed open web server
 - **`online-ide-and-paste-search-engine`** (low) — Use when you have a `username`, `email`, or `domain` and want to find it leaked in public paste/code sites — returns `document-id` (paste UR
@@ -217,7 +216,7 @@ kind: group-index
 - **`shared-count`** (low) — Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-UR
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
 - **`siftrss-com`** (low) — tool for filtering RSS feeds
-- **`site-dorks`** (low) — Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites
+- **`site-dorks`** (low) — Use when you have a search term (a `name`, email, or keyword) and want to dork it across many curated OSINT sites and multiple engines at on
 - **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
 - **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
 - **`snagit`** (low) — Program that provides screen capture services, currently the best commercial program for this action

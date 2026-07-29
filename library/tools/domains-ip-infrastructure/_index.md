@@ -94,7 +94,7 @@ kind: group-index
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
 - **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
 - **`censys-certificates`** (low) — OSINT tool: Censys Certificates.
-- **`censys-ipv4`** (low) — OSINT tool: Censys IPv4.
+- **`censys-ipv4`** (low) — Use when you have an `ip-address` or `domain` and want Censys's internet-wide scan data on that host — returns open ports, services, certs, 
 - **`central-ops`** (low) — Use when you have a `domain`, `ip-address`, or `email` and want registration, DNS, and network records in one report — returns `domain`, `ip
 - **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
 - **`certificate-search`** (low) — Use when you have a `domain` and want to discover its subdomains and related hostnames from Certificate Transparency logs — returns addition
@@ -134,7 +134,6 @@ kind: group-index
 - **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Use when you have a `domain` or `ip-address` and want registration and DNS infrastructure detail — returns WHOIS, nameservers, DNS records, 
 - **`dnsreaper`** (low) — Use when you have a `domain` (or a set of DNS records) and want to find subdomains vulnerable to takeover — returns the dangling `domain` na
-- **`domain-codex`** (low) — OSINT tool: Domain Codex.
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.

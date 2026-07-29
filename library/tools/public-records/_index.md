@@ -452,9 +452,8 @@ kind: group-index
 - **`integrated-companies-research-china-hong-kong`** (medium) — Use when you have a `name` or company and want Hong Kong corporate records — searches HK-registered companies by name and directors, returni
 - **`inteltechniques-business-search-tool`** (high) — Use when you have a company `employer-org` or a business owner's `name` and want to sweep many business-record sources at once — returns reg
 - **`interment`** (high) — Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and rela
-- **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.
+- **`international-energy-agency-statistics`** (low) — Use when you have a country or energy `employer-org` and want authoritative energy production/consumption/price statistics for context — a m
 - **`international-federation-of-accountants-ifac`** (low) — Use when you have a `name`/`employer-org` in accountancy and want to trace their professional body — returns member-organization directories
-- **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
 - **`international-monetary-fund`** (medium) — Use when you need macro-financial context on a country or lending program — returns economic indicators, exchange rates, and IMF program/pub
 - **`international-trade-center`** (low) — Use when you have a country and want its official import/export trade statistics, top products and trading partners — returns aggregate trad
 - **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
