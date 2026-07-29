@@ -146,7 +146,6 @@ kind: group-index
 - **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
 - **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
 - **`github-search`** (low) — Use when you have an `employer-org`, `domain`, or `username` and want to mine GitHub for employees, leaked secrets, endpoints, and subdomain
-- **`gitpod-io`** (low) — run code from repositories on Github directly in a browser
 - **`glit`** (low) — OSINT tool: Glit.
 - **`gmapcatcher`** (low) — Use when you have a `geolocation` and want to download and cache map tiles (Google/OSM/Bing) for offline browsing and archiving — returns im
 - **`gnu-pg`** (low) — OSINT tool: GNU PG.
@@ -172,7 +171,7 @@ kind: group-index
 - **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
 - **`hohli`** (low) — OSINT tool: Hohli.
 - **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
-- **`hotspot-shield`** (low) — OSINT tool: Hotspot Shield.
+- **`hotspot-shield`** (low) — Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool tha
 - **`how-to-verify`** (low) — Use when you have `image`, video, audio, text, or a source to verify and want a guided workflow (an interactive knowledge graph) recommendin
 - **`html-editor`** (low) — OSINT tool: HTML editor.
 - **`html-sanitizer-tool`** (low) — Use when you have raw HTML/text scraped during an investigation and want to safely escape special characters before displaying or storing it

@@ -5549,42 +5549,6 @@
     "_file": "library/tools/ai-analysis-automation/github-search.md"
   },
   {
-    "id": "gitpod-io",
-    "name": "Gitpod.io",
-    "description": "run code from repositories on Github directly in a browser",
-    "url": "https://gitpod.io/workspaces",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Code"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/gitpod-io.md"
-  },
-  {
     "id": "glit",
     "name": "Glit",
     "description": "OSINT tool: Glit.",
@@ -6673,40 +6637,48 @@
   {
     "id": "hotspot-shield",
     "name": "Hotspot Shield",
-    "description": "OSINT tool: Hotspot Shield.",
+    "description": "Use when you need to mask your own IP/location while conducting passive OSINT — a consumer VPN for investigator OpSec, not a lookup tool that returns data on a target.",
     "url": "https://www.hotspotshield.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Hiding the investigator's real IP and approximate location behind a VPN endpoint during research.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier with data/server limits and ads; premium subscription unlocks full server choice, speed, and no data cap.",
+    "opsec": "passive",
+    "opsecNote": "This is an OpSec aid for YOU, not a tool aimed at a target. It routes your traffic through Hotspot Shield's servers — meaning you trust that provider with your browsing metadata. For sensitive investigations prefer a reputable no-logs VPN or Tor; understand a commercial VPN can be compelled to log. It changes your apparent IP, not your browser fingerprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial VPN (Pango/Aura); reliable as connectivity software, but a for-profit provider you must trust with your traffic — not an investigative data source.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "privacy-and-encryption-tools"
+    "coverage": [
+      "global"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "account",
+    "api": false,
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
     "relatedTools": [
       "hotspot-shield-proxy-tool-us-access"
     ],
+    "aliases": [
+      "Hotspot Shield VPN"
+    ],
+    "tags": [
+      "privacy-and-encryption-tools",
+      "opsec",
+      "vpn"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/hotspot-shield.md"
   },
   {
@@ -13767,43 +13739,59 @@
   {
     "id": "scrummage",
     "name": "Scrummage",
-    "description": "Multi-source OSINT aggregation via unified web interface",
+    "description": "Use when you have a selector (name, username, email, domain, IP, wallet) and want to run it across many OSINT sources at once from one self-hosted dashboard — returns aggregated `social-profile`, `email`, `domain`, `ip-address` hits.",
     "url": "https://github.com/matamorphosis/Scrummage",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation",
       "osint-automation"
     ],
-    "bestFor": "Multi-source OSINT aggregation via unified web interface",
-    "input": "Search queries across plugin-specific data types",
-    "output": "Aggregated results from blockchain, HIBP, Shodan, DuckDuckGo, Twitter, YouTube",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fanning a single selector out across 50+ OSINT plugins from one self-hosted web console and archiving the results.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Fully open-source (GPL-3.0); free of charge. You supply your own API keys for plugins that need them (Shodan, HIBP, etc.) and your own hosting.",
     "opsec": "active",
-    "opsecNote": "Depends on underlying search plugins; includes passive and active queries",
+    "opsecNote": "Scrummage is only as passive as its plugins — some (e.g. Shodan lookups, HIBP) are passive, others actively query targets or third parties from your server's IP. Self-host it behind a VPN/VPS you control, and review which plugins fire before running a query so you don't touch a target directly.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Open-source project (matamorphosis) with active commit history; you run the code yourself, so you can audit it, but plugin output quality depends on the underlying third-party sources.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Scrummage OSINT platform"
+    ],
+    "tags": [
+      "osint-automation",
+      "aggregator",
+      "self-hosted"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-automation/scrummage.md"
   },
   {
@@ -38830,43 +38818,51 @@
   {
     "id": "dargle",
     "name": "Dargle",
-    "description": "OSINT tool: Dargle.",
+    "description": "Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s, titles, and timestamps.",
     "url": "http://www.dargle.net/search",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword/domain searching a crawled index of dark-web sites with title, domain-source, and timestamp columns.",
     "selectorsIn": [
-      "username",
-      "email"
+      "domain",
+      "username"
     ],
     "selectorsOut": [
+      "domain",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web search interface; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query Dargle's own crawled index from the clearnet — you are not visiting the onion sites directly, so this is passive reconnaissance. As with any dark-web search, use a compartmentalised browser/IP and do not enter sensitive case identifiers you wouldn't want logged by a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small independent dark-web index (listed by uk-osint) with no published methodology; coverage, freshness, and operator are unknown, so treat results as leads only.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Dargle dark web search"
+    ],
     "tags": [
       "darkweb",
-      "Dark Web Links"
+      "Dark Web Links",
+      "search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/dargle.md"
   },
   {
@@ -49274,42 +49270,6 @@
       "cnet"
     ],
     "_file": "library/tools/documents-metadata/cnet-technology-products-reviews.md"
-  },
-  {
-    "id": "code-finder",
-    "name": "Code Finder",
-    "description": "OSINT tool: Code Finder.",
-    "url": "https://codefinder.dev/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "code-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/code-finder.md"
   },
   {
     "id": "compressedcrack",
@@ -71414,43 +71374,53 @@
   {
     "id": "honeydb",
     "name": "HoneyDB",
-    "description": "IoT honeypot intelligence",
+    "description": "Use when you have an `ip-address` and want to know whether it has been caught attacking honeypots — returns threat/reputation data and recent malicious-activity logs for that host.",
     "url": "https://honeydb.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "IoT honeypot intelligence",
-    "input": "IP address or attack queries",
-    "output": "Honeypot interaction logs and threat data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether an IP appears in a live honeypot-network threat feed and what services it has been probing.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free account gives access to the community threat feed and API with rate limits; higher-volume/commercial use is on paid subscription tiers.",
     "opsec": "passive",
-    "opsecNote": "Passive honeypot-based intelligence",
+    "opsecNote": "You query HoneyDB's collected honeypot data, not the target IP itself — no packet ever touches the host you are looking up, so this is passive. Registering creates an account tied to your email; use an operational address.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent honeypot-network project with a public real-time feed; data is observational (what its sensors saw), not an authoritative blocklist.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "HoneyDB threat feed"
+    ],
+    "tags": [
+      "threat-intelligence",
+      "ip-reputation",
+      "honeypot"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/honeydb.md"
   },
   {
@@ -84063,42 +84033,51 @@
   {
     "id": "sitebroker",
     "name": "SiteBroker",
-    "description": "Domain investigation #python tool",
+    "description": "Use when you have a `domain` or `ip-address` and want automated recon (WHOIS, reverse-IP, subdomains, nameservers, Cloudflare detection) — returns `domain`, `ip-address`, and related infrastructure.",
     "url": "https://github.com/Anon-Exploiter/SiteBroker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-command domain/IP reconnaissance bundling WHOIS, reverse-IP, subdomain scanning and Cloudflare detection.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT). No account or key needed; you provide the Python runtime.",
+    "opsec": "active",
+    "opsecNote": "Several modules (crawling, subdomain scanning, banner grabbing, admin-panel detection) send requests directly to the target's infrastructure from your IP — this is active recon. Run from a VPS/VPN you control, not your home IP, when the target could be hostile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Public MIT-licensed tool (429★) but archived/read-only since May 2024 — unmaintained, so some search-engine and third-party integrations may have broken.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "SiteBroker python recon"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Domain/IP investigation"
+      "Domain/IP investigation",
+      "recon"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/sitebroker.md"
   },
   {
@@ -177242,41 +177221,54 @@
   {
     "id": "kik-messaging-app-mobile-android",
     "name": "Kik Messaging App (Mobile – Android)",
-    "description": "App for mobile devices for real-time messaging services, one of the Top 100 apps for 2015",
+    "description": "Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social-profile` confirmation and a display `name`/`image`.",
     "url": "https://play.google.com/store/apps/details?id=kik.android",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a Kik username exists and viewing its display name and avatar, since Kik identities are username-based and not phone-number-searchable.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free app; account creation is free and does not require a phone number (email only), which is why Kik is common among users seeking anonymity.",
+    "opsec": "active",
+    "opsecNote": "Interacting with Kik requires your own account, and adding/messaging a target's username can notify them and expose your account. Use a dedicated sock-puppet account and device profile; observe only, do not message the subject. Kik shows limited public data by username without contact.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "The official Kik app (Kik Interactive) is legitimate, but any profile is self-created, pseudonymous, and unverified — Kik is deliberately low-identity.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Kik Messenger",
+      "Kik Android"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "messaging-app",
+      "social-profile",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/kik-messaging-app-mobile-android.md"
   },
   {
@@ -184586,41 +184578,48 @@
   {
     "id": "the-weather-channel-app-mobile-android",
     "name": "The Weather Channel App (Mobile – Android)",
-    "description": "App for mobile devices for weather updates",
+    "description": "Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT value, not a lookup on a person.",
     "url": "https://play.google.com/store/apps/details?id=com.weather.Weather",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Getting current conditions and forecasts for a location as light context; not suitable for precise historical weather verification.",
+    "selectorsIn": [
+      "geolocation"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported app (premium removes ads); no purchase needed for basic forecasts.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Looking up weather for a location reveals nothing to any subject and is fully passive. Note the app itself collects the investigator's own device location/telemetry — run it on a research device, not one tied to your identity, if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "Operated by The Weather Company; forecast data is reliable, but the app is a consumer forecast product, not a historical-weather archive suitable for evidentiary verification.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Weather Channel app",
+      "weather.com app"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "weather",
+      "geolocation-context",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/the-weather-channel-app-mobile-android.md"
   },
   {
@@ -185879,35 +185878,34 @@
   {
     "id": "twitter-profile-generator",
     "name": "Twitter Profile Generator",
-    "description": "OSINT tool: Twitter Profile Generator.",
+    "description": "Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots are made — returns a fabricated profile image.",
     "url": "https://fakeinfo.net/fake-twitter-profile-generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a fake but realistic Twitter/X profile mockup for sock-puppet cover or for recognising/debunking forged screenshots.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free to generate profiles on FakeInfo.net; no account required for the basic generator.",
+    "opsec": "active",
+    "opsecNote": "This creates fabricated content. Legitimate uses are OpSec (building a consistent sock-puppet identity for passive research) and disinformation analysis (understanding how forged profile screenshots are produced). Do NOT use generated fakes to impersonate a real person, deceive a platform, or fabricate evidence — that is fraud. Nothing is submitted to Twitter/X.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free novelty/mockup generator (FakeInfo.net); output is deliberately fake and has no evidentiary value — that is the entire point of the tool.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "fake-company-name-generator",
       "fake-drivers-license-generator",
@@ -185917,6 +185915,18 @@
       "fakeinfo-net",
       "random-face-generator"
     ],
+    "aliases": [
+      "FakeInfo fake Twitter profile",
+      "fake X profile generator"
+    ],
+    "tags": [
+      "sock-puppet",
+      "disinformation",
+      "opsec"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/twitter-profile-generator.md"
   },
   {
@@ -244619,35 +244629,52 @@
   {
     "id": "ofac-sanctioned-search-engine",
     "name": "OFAC Sanctioned Search Engine",
-    "description": "OSINT tool: OFAC Sanctioned Search Engine.",
+    "description": "Use when you have a `name` or `employer-org` and want to check exposure to US Treasury/OFAC sanctions sources in one search — returns sanctions-list mentions and links.",
     "url": "https://cse.google.com/cse?cx=e96467889fb82b9b0",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A first-pass sanctions screen of a person or entity across OFAC-related sites via a curated Google Custom Search.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free — it is a Google Custom Search Engine over OFAC-related sources; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A Google Custom Search query. It touches Google, not the subject, and reveals nothing to the target. Standard search-engine privacy applies; use a clean session if you want the query off your Google history.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google CSE, not an official Treasury tool — coverage is only as good as the sites its creator indexed and can drift over time. Confirm hits against OFAC's official SDN search.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "OFAC sanctions CSE",
+      "OFAC search engine"
+    ],
+    "tags": [
+      "sanctions",
+      "public-records",
+      "corporate"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ofac-sanctioned-search-engine.md"
   },
   {
@@ -270734,24 +270761,27 @@
   {
     "id": "disneysearch",
     "name": "DisneySearch",
-    "description": "Disney's search feature aimed at kids",
-    "url": "http://search.disney.com",
+    "description": "Use when you specifically need Disney's own kid-safe, brand-scoped site search — a curated entertainment search with essentially no general OSINT value.",
+    "url": "https://search.disney.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Searching Disney-branded/kid-safe content only; not a general-purpose investigative search engine.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free Disney-hosted search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A branded site-search over Disney properties; queries go to Disney, not to any subject, and reveal nothing about a target. Fully passive, though (as always) queries may be logged by the operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Disney, but as a heavily filtered, brand-scoped kids' search it indexes almost nothing useful for investigations; the endpoint often returns only a landing shell.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -270760,18 +270790,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "disneybooks"
     ],
+    "aliases": [
+      "Disney Search"
+    ],
+    "tags": [
+      "kid-friendly-educational-search-engines",
+      "entertainment"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/disneysearch.md"
   },
   {

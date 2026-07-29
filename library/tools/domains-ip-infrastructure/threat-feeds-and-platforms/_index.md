@@ -11,7 +11,7 @@ kind: group-index
 - **`aptnotes`** (low) — APT research and threat analysis
 - **`bot-scout`** (low) — Use when you have an `email`, `ip-address`, or `username` and want to check it against a database of known bots/spammers — returns a bot/not
 - **`cymon-open-threat-intelligence`** (low) — IP threat tracking
-- **`honeydb`** (low) — IoT honeypot intelligence
+- **`honeydb`** (low) — Use when you have an `ip-address` and want to know whether it has been caught attacking honeypots — returns threat/reputation data and recen
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering
 - **`ibm-x-force-exchange`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want IBM's threat-intel reputation and reports on it — returns domain, ip-
 - **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 

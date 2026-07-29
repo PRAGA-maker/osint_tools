@@ -54,7 +54,6 @@ kind: group-index
 - **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
 - **`cnet-technology-products-reviews`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
-- **`code-finder`** (low) — OSINT tool: Code Finder.
 - **`compressedcrack`** (low) — Simple tool for brute passwords for ZIP and RAR archives
 - **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computer-weekly`** (low) — Use when you have a `name`/`employer-org` in UK IT/enterprise tech and want trade-press coverage — returns news, features, and named-source 

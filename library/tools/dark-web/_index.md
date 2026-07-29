@@ -30,7 +30,7 @@ kind: group-index
 - **`charlieuk`** (low) — OSINT tool: CharlieUK.
 - **`cpic-stolen-property-search`** (medium) — Use when you have a serial number, VIN, or plate and want to check if it is reported stolen in Canada — returns a stolen/not-found status to
 - **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
-- **`dargle`** (low) — OSINT tool: Dargle.
+- **`dargle`** (low) — Use when you have a `domain` or keyword and want to search an index of onion/dark-web sites and their metadata — returns matching `domain`s,
 - **`dark-fail`** (low) — Use when you have (or need) a Tor `.onion` service and want its PGP-verified current address and up/down status — returns trustworthy onion 
 - **`dark-web-scraper`** (low) — Specify the start link and depth of crawl to research the .onion website for sensitive data (crypto wallets, API keys, emails, phone numbers
 - **`darknet-market-list`** (low) — Use when you need a current, clearweb-readable list of active darknet markets and their onion addresses for investigation — a directory; ret

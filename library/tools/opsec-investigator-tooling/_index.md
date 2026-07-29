@@ -227,7 +227,7 @@ kind: group-index
 - **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
 - **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015
 - **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
-- **`kik-messaging-app-mobile-android`** (low) — App for mobile devices for real-time messaging services, one of the Top 100 apps for 2015
+- **`kik-messaging-app-mobile-android`** (low) — Use when a subject is known by a Kik `username` and you want to confirm the account and observe its public display details — returns `social
 - **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
 - **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
 - **`ladder`** (low) — A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTM
@@ -392,7 +392,7 @@ kind: group-index
 - **`text2img`** (low) — text to image AI generator
 - **`the-cloak-proxy-website`** (low) — Website offering anonymous web surfing
 - **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
-- **`the-weather-channel-app-mobile-android`** (low) — App for mobile devices for weather updates
+- **`the-weather-channel-app-mobile-android`** (low) — Use when you have a `geolocation` and want current/forecast weather context for it — a consumer weather app of marginal, corroborative OSINT
 - **`thexifer`** (low) — Use when you have an `image` and want to read, strip or forge its EXIF/IPTC/XMP metadata — returns viewed or rewritten metadata-exif.
 - **`this-baseball-player-does-not-exist`** (low) — A non-existent personality generator that generates people who look amazingly natural.
 - **`this-rental-does-not-exist`** (low) — Use when you need an AI-generated fake rental-listing `image` for sock-puppet cover, or as a reference for spotting AI-fabricated property s
@@ -420,7 +420,7 @@ kind: group-index
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
-- **`twitter-profile-generator`** (low) — OSINT tool: Twitter Profile Generator.
+- **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
 - **`twitter-social-networking-mobile-ios`** (low) — App for mobile devices for social networking
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 

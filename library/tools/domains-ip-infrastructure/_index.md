@@ -375,7 +375,7 @@ kind: group-index
 - **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
 - **`single-file`** (low) — Use when you have a `domain`/URL and want a faithful, self-contained snapshot of the page for evidence — returns a single archived HTML file
 - **`site-analyzer`** (medium) — Use when you have a `domain`/page and want an SEO/technical audit — returns indexability, content, and UX signals about the site (infrastruc
-- **`sitebroker`** (low) — Domain investigation #python tool
+- **`sitebroker`** (low) — Use when you have a `domain` or `ip-address` and want automated recon (WHOIS, reverse-IP, subdomains, nameservers, Cloudflare detection) — r
 - **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
 - **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
