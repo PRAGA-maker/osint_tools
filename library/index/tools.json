@@ -68787,13 +68787,13 @@
   {
     "id": "fierce",
     "name": "Fierce",
-    "description": "DNS reconnaissance tool for locating non-contiguous IP space and hostnames.",
+    "description": "Use when you have a `domain` and want to discover its subdomains and non-contiguous IP space via DNS reconnaissance — returns domain, ip-address.",
     "url": "https://github.com/mschwager/fierce",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "DNS recon / subdomain and IP-space discovery for a domain",
+    "bestFor": "DNS recon — subdomain and non-contiguous IP-space discovery for a domain.",
     "selectorsIn": [
       "domain"
     ],
@@ -68801,15 +68801,16 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL); install via pip (`pip install fierce`) or use the copy bundled in Kali/pentest distros.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Active — Fierce sends DNS queries and can brute-force subdomains against the target's name servers, generating traffic that shows in their DNS logs. Only run it against domains you're authorised to enumerate, and consider running from a disposable VPS rather than your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Classic DNS recon tool, bundled in Kali.",
+    "trustNote": "A classic, long-standing DNS reconnaissance tool bundled in Kali; open-source, so its behaviour is auditable.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -68818,15 +68819,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "fierce",
+      "mschwager/fierce"
+    ],
     "tags": [
       "dns",
       "subdomains",
       "recon"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/fierce.md"
   },
   {
@@ -89386,43 +89391,58 @@
   {
     "id": "webroot-brightcloud-url-ip-lookup",
     "name": "Webroot BrightCloud URL/IP Lookup",
-    "description": "URL/IP reputation lookup, web classification, threat intelligence, web categorization",
+    "description": "Use when you have a `domain`, URL, or `ip-address` and want its reputation, web category, and risk score — returns domain, ip-address.",
     "url": "https://www.brightcloud.com/tools/url-ip-lookup.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "reputation"
     ],
-    "bestFor": "URL/IP reputation lookup, web classification, threat intelligence, web categorization",
-    "input": "URL or IP address",
-    "output": "Threat assessment, content category, reputation score, WHOIS data, risk level",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking the reputation, content category, and risk level of a URL, domain, or IP.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web lookup (CAPTCHA-gated, limited queries); the underlying BrightCloud reputation data is otherwise sold as a commercial feed/API.",
     "opsec": "passive",
-    "opsecNote": "Queries BrightCloud's reputation database without directly contacting the target.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive — you query BrightCloud's reputation database, so the target site/IP is never contacted by you. Your query does go to Webroot/OpenText.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A reputable commercial threat-intelligence vendor (Webroot/OpenText); the category and reputation are its proprietary scoring — a strong signal, not ground truth.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "BrightCloud URL/IP Lookup",
+      "Webroot BrightCloud"
+    ],
+    "tags": [
+      "reputation",
+      "threat-intel",
+      "url-classification"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "brightcloud"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reputation/webroot-brightcloud-url-ip-lookup.md"
   },
   {
@@ -91794,7 +91814,7 @@
   {
     "id": "zone-h-org",
     "name": "Zone-H.org",
-    "description": "Historical tracking of website defacement incidents",
+    "description": "Use when you have a `domain` or `ip-address` and want its history of recorded website-defacement incidents with mirrored evidence — returns domain, ip-address.",
     "url": "https://zone-h.org/archive",
     "category": "domains-ip-infrastructure",
     "path": [
@@ -91802,34 +91822,46 @@
       "vulnerabilities",
       "disclosure-sites"
     ],
-    "bestFor": "Historical tracking of website defacement incidents",
-    "input": "Search terms, domains, or browsing archive filters",
-    "output": "Defacement records with timestamps and mirrored evidence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking a domain/host/IP for a history of recorded website defacements and who claimed them.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public archive; submitting/notifier features require a free account, browsing does not.",
     "opsec": "passive",
-    "opsecNote": "Uses a third-party archive and does not require direct interaction with target infrastructure.",
+    "opsecNote": "Passive — you browse a third-party archive of past events; the target's own infrastructure is never contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running (Estonia, since 2002) defacement archive; entries are attacker-submitted \"notifications,\" so individual claims are self-reported and should be mirror-checked before trusting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Zone-H",
+      "zone-h.org"
+    ],
+    "tags": [
+      "defacement",
+      "hacktivism",
+      "archive"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/vulnerabilities/disclosure-sites/zone-h-org.md"
   },
   {
@@ -179087,35 +179119,47 @@
   {
     "id": "nino-generator",
     "name": "NINO Generator",
-    "description": "OSINT tool: NINO Generator.",
+    "description": "Use when you're building a UK sock-puppet identity and need a plausibly-formatted but fake National Insurance Number for a test field — returns document-id.",
     "url": "https://www.fakenamegenerator.com/national-insurance-number.php",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating format-valid but fake UK National Insurance Numbers for sock-puppet / test data.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web generator (part of the FakeNameGenerator suite); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — numbers are generated locally at random; nothing is looked up or submitted. These are FAKE, format-valid strings — never use them to impersonate a real person, claim benefits, or commit fraud, which is illegal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of the long-running FakeNameGenerator suite; outputs are deliberately fake test data, not real or issued NINOs.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "National Insurance Number generator",
+      "FakeNameGenerator NINO"
+    ],
+    "tags": [
+      "sock-puppet",
+      "opsec",
+      "test-data"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "aba-generator",
       "credit-card-generator",
@@ -179124,6 +179168,7 @@
       "ssn-generator",
       "vin-generator"
     ],
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/nino-generator.md"
   },
   {
@@ -186585,38 +186630,50 @@
   {
     "id": "username-generator",
     "name": "Username Generator",
-    "description": "OSINT tool: Username Generator.",
+    "description": "Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.",
     "url": "https://www.lastpass.com/features/username-generator",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Generating random, unlinkable usernames for sock-puppet / investigative accounts.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The in-browser generator is free with no account; LastPass upsells its password manager but the tool itself needs no sign-up.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — generation runs client-side in your browser, so nothing is submitted. Use a fresh, unrelated username for each persona so your sock accounts can't be linked to each other or back to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free utility from a mainstream vendor (LastPass); it's just a random-string generator, so there's no data-quality concern — only the discipline not to reuse outputs.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "LastPass Username Generator"
+    ],
+    "tags": [
+      "sock-puppet",
+      "opsec",
+      "identity"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
     "relatedTools": [
       "lastpass"
     ],
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/username-generator.md"
   },
   {
@@ -289611,37 +289668,52 @@
   {
     "id": "scirp",
     "name": "SCIRP",
-    "description": "OSINT tool: SCIRP.",
+    "description": "Use when you have an author `name` or research topic and want open-access papers published in SCIRP journals — returns document-id, employer-org, associate.",
     "url": "http://www.scirp.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding open-access papers and author affiliations across SCIRP's journal catalogue.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read full-text open-access papers; authors pay publication fees (this is an author-pays open-access publisher).",
+    "opsec": "passive",
+    "opsecNote": "Passive — searching a publisher's site; no contact with any subject and no query attributable to a person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "SCIRP is a large author-pays open-access publisher widely flagged as low-quality/\"predatory\"; use it to locate a subject's output and affiliation, not as evidence of research credibility.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Scientific Research Publishing",
+      "scirp.org"
+    ],
     "tags": [
-      "academic-resources-and-grey-literature"
+      "academic-resources-and-grey-literature",
+      "academic",
+      "open-access"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/scirp.md"
   },
   {

@@ -530,7 +530,7 @@ kind: group-index
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
-- **`scirp`** (low) — OSINT tool: SCIRP.
+- **`scirp`** (low) — Use when you have an author `name` or research topic and want open-access papers published in SCIRP journals — returns document-id, employer
 - **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
 - **`search-all`** (medium) — Use when you have a `name`/`username` selector and want to fire it across many search engines fast — returns the same query re-run on Google

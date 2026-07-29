@@ -156,7 +156,7 @@ kind: group-index
 - **`fast-google-dorks-scan`** (low) — Use when you have a `domain` and want an automated sweep of 45+ Google-dork categories against it — returns exposed admin panels, sensitive 
 - **`favfreak`** (low) — Use when you have a `domain` or a list of hosts and want to cluster them by favicon hash to discover related assets — returns grouped hosts/
 - **`favicon-hasher`** (low) — Use when you have a `domain` and want its favicon hash to find related/mirror infrastructure — returns MMH3/MD5/etc hashes plus one-click Sh
-- **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
+- **`fierce`** (low) — Use when you have a `domain` and want to discover its subdomains and non-contiguous IP space via DNS reconnaissance — returns domain, ip-add
 - **`finalrecon`** (low) — Use when you have a target `domain`/URL and want a one-command footprint — returns headers, WHOIS, DNS, subdomains, ports, directories and W
 - **`find-plus`** (low) — Regex Find-in-Page Tool
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit

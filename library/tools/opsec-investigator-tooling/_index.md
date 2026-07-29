@@ -269,7 +269,7 @@ kind: group-index
 - **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
 - **`netsurf`** (low) — Multi-platform web browser program
 - **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — Use when you have a `domain` or `ip-address` and only a phone to hand — runs ping, traceroute, whois, DNS, and port scans from iOS, returnin
-- **`nino-generator`** (low) — OSINT tool: NINO Generator.
+- **`nino-generator`** (low) — Use when you're building a UK sock-puppet identity and need a plausibly-formatted but fake National Insurance Number for a test field — retu
 - **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
 - **`norton-safeweb-rating-search`** (low) — Use when you have a `domain` and want a reputation/safety verdict (malware, phishing, community reviews) before visiting or trusting it — re
 - **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
@@ -432,7 +432,7 @@ kind: group-index
 - **`urban-legends-online`** (low) — Searchable database of scam, fraud, hoax, phishing and misinformation articles
 - **`us-cop-reference-guide-app-mobile-android`** (low) — App for mobile devices for reference material for US-based LEO's
 - **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
-- **`username-generator`** (low) — OSINT tool: Username Generator.
+- **`username-generator`** (low) — Use when you're building a sock-puppet identity and need a random, non-attributable `username` — returns username.
 - **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
 - **`venmo-mobile-payment-app-mobile-android`** (medium) — Use when you have a `name`, `username` or `phone` and want a subject's Venmo profile and public payment activity — returns their handle, fri
 - **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
