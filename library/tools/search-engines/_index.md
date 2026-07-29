@@ -52,7 +52,6 @@ kind: group-index
 - **`android-code-search`** (medium) — Use when you have an Android package name, class, or resource string and want to locate it in the official AOSP/AndroidX source — returns co
 - **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
 - **`animalsearch`** (low) — Animal search directory aimed at kids
-- **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
 - **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — Use when you have a `name`, `username`, or `domain` and want a second general web index for cross-checking — returns `social-profile` and `d
 - **`app-store-and-itunes-search-engine`** (low) — Use when you have a developer/company `name` or app name and want to find their App Store/iTunes apps and developer identity — returns app l

@@ -64,7 +64,7 @@ kind: group-index
 - **`crowdriff`** (low) — Visual marketing software platform
 - **`crowdspring`** (low) — Project outsourcing website
 - **`cute-pdf-writer-program`** (low) — Use when you need to turn a web page, record, or on-screen exhibit into a fixed PDF for the case file — a virtual printer that outputs a `do
-- **`cylect-io`** (low) — An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface
+- **`cylect-io`** (medium) — Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggre
 - **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
 - **`de-digger`** (low) — Use when you have a `name`, keyword, or filename and want publicly shared Google Drive files about a subject — returns links to exposed docu
 - **`designcrowd`** (low) — Graphic design outsourcing website

@@ -19168,38 +19168,56 @@
   },
   {
     "id": "changedetection-io-open-source",
-    "name": "ChangeDetection.io Open Source",
-    "description": "OSINT tool: ChangeDetection.io Open Source.",
+    "name": "ChangeDetection.io (Open Source)",
+    "description": "Use when you have a `domain`/URL and want to be alerted when its content changes — returns diffs of monitored pages over time.",
     "url": "https://github.com/dgtlmoon/changedetection.io",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Self-hosted monitoring of web pages for changes, with alerts and visual/text diffs over time.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (self-host via Docker/pip). The maintainers also offer a paid hosted version, but the OSS self-hosted tool is fully free.",
+    "opsec": "passive",
+    "opsecNote": "Self-hosted monitoring fetches the target page on a schedule from wherever you run it, so your server's IP repeatedly requests the subject's page — set a realistic interval and route through a proxy if the recurring pattern matters. Nothing is disclosed to the page owner beyond normal web requests. Optional browser/JS rendering fetches more like a real user.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular, actively maintained open-source project by dgtlmoon (tens of thousands of GitHub stars). Self-hosted, so you control the data; reliability is high.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
+    "coverage": [
+      "global"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "auth": "none",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "visualping",
+      "urlwatch"
+    ],
+    "aliases": [
+      "changedetection.io",
+      "dgtlmoon changedetection"
+    ],
+    "tags": [
+      "change-monitoring",
+      "web-monitoring",
+      "self-hosted"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/changedetection-io-open-source.md"
   },
   {
@@ -40811,50 +40829,57 @@
   },
   {
     "id": "osint-me-3",
-    "name": "osint.me 3",
-    "description": "OSINT tool: osint.me 3.",
+    "name": "OSINT Me – Dark Web Investigations Resources",
+    "description": "Use when you're starting a dark-web investigation and need a vetted resource list — returns curated tools, methods, and safety guidance for Tor/onion research.",
     "url": "https://www.osintme.com/index.php/2022/02/12/darkweb-osint-investigations-resources-for-2022/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "bestFor": "A curated reading list of dark-web OSINT tools, onion search engines, and investigative methodology.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free blog article on osintme.com; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is passive. The dark-web activity it describes is not — follow its safety guidance (isolated VM, Tor, no logins tying to your identity) before touching any onion resource it links.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published on osintme.com, an established OSINT practitioner blog. A curated 2022 resource roundup — solid as a starting map, but dark-web links rot fast, so verify each before use.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
+      "ahmia",
+      "dark-search",
+      "tor-project",
       "osint-list-of-public-sex-offenders-registers-osintme-com",
       "osint-me-1",
       "osint-me-2",
       "osintme-com"
     ],
+    "aliases": [
+      "osintme darkweb resources",
+      "OSINT Me dark web guide"
+    ],
+    "tags": [
+      "dark-web",
+      "methodology",
+      "reference"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/osint-me-3.md"
   },
   {
@@ -49569,42 +49594,65 @@
   {
     "id": "cylect-io",
     "name": "Cylect.io",
-    "description": "An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface",
+    "description": "Use when you have a `name`, `email`, `username`, or `phone` and want a one-stop AI-assisted search across many OSINT sources — returns aggregated matches to triage.",
     "url": "https://cylect.io",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A single AI-driven interface that fans a selector out across multiple OSINT databases and consolidates the hits.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "phone",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — a limited number of free searches, with paid plans for higher volume and full result access. Account required.",
+    "opsec": "active",
+    "opsecNote": "You submit the subject's selector to a third-party aggregator, which queries many sources on your behalf; the query and your account activity are logged by Cylect and the downstream providers. Use a dedicated investigative account, not a personal one, and avoid submitting selectors you must keep confidential.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "trustNote": "A commercial AI OSINT aggregator; convenient but a black box — it does not always show which source produced a hit, and result quality/coverage cannot be independently audited. Treat outputs as leads to verify at the primary source.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents",
-      "artificial-intelligence"
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [
+      "osint-industries",
+      "epieos",
+      "maltego"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "cylect",
+      "cylect.io"
+    ],
+    "tags": [
+      "aggregator",
+      "ai-osint",
+      "people-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/cylect-io.md"
   },
   {
@@ -53740,42 +53788,65 @@
   },
   {
     "id": "joe-file-analyzer",
-    "name": "Joe File Analyzer",
-    "description": "PE file malware analysis with system interaction tracking",
+    "name": "Joe Sandbox File Analyzer",
+    "description": "Use when you have a suspicious file (`document-id`/hash) and want dynamic malware analysis — returns behaviour, IOCs, and system-interaction reports.",
     "url": "https://www.file-analyzer.net/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "hosted-automated-analysis"
     ],
-    "bestFor": "PE file malware analysis with system interaction tracking",
-    "input": "PE executable files (.exe, .dll, etc.)",
-    "output": "Hybrid behavioral analysis, system calls, network IOCs, threat scores",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Detonating a Windows/PE file in a sandbox to observe behaviour and extract indicators of compromise.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "file-analyzer.net now redirects to Joe Sandbox (joesandbox.com), which offers a free Community/Cloud Basic tier (public reports) alongside paid private analysis. Free tier requires the file be submitted publicly.",
     "opsec": "active",
-    "opsecNote": "File uploads to Joe Sandbox infrastructure; free tier has submission limits",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You UPLOAD the file to Joe Sandbox and, on the free tier, the report is PUBLIC and shared with the community — never submit sensitive/private documents. Detonation causes the sandbox to execute the sample and reach out to its C2/network resources, which can alert an attacker's infrastructure that the sample was analysed. Use hash search first when you only need existing results.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Joe Security's Joe Sandbox is a well-established commercial malware-analysis platform used across the industry. Reports are detailed and reproducible; verdicts are analyst aids, not absolute.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "joesandbox-document-analyzer",
+      "joe-apk-analyzer",
+      "joe-sandbox-url-analyzer",
+      "virustotal",
+      "hybrid-analysis"
+    ],
+    "aliases": [
+      "file-analyzer.net",
+      "Joe Sandbox File Analyzer"
+    ],
+    "tags": [
+      "malware-analysis",
+      "sandbox",
+      "dynamic-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/hosted-automated-analysis/joe-file-analyzer.md"
   },
   {
@@ -90144,39 +90215,59 @@
   },
   {
     "id": "whois-search",
-    "name": "Whois Search",
-    "description": "OSINT tool: Whois Search.",
+    "name": "Verisign WHOIS Search",
+    "description": "Use when you have a `domain` and want authoritative registration data — returns registrar, registration/expiry dates, name servers, and EPP status.",
     "url": "https://webwhois.verisign.com/webwhois-ui/index.jsp?language=en_US",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Authoritative WHOIS lookups for .com/.net (and other) domains from the registry operator itself.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public WHOIS from Verisign; no account. Registrar-level detail comes from the sponsoring registrar's WHOIS/RDAP.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A standard WHOIS query to the registry — you don't contact the domain's owner or their servers, and no alert is generated. Verisign may rate-limit or CAPTCHA abusive query volumes. Registrant personal data is usually redacted post-GDPR.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Verisign is the registry operator for .com and .net — this is authoritative registry WHOIS, not a third-party reseller cache.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
+      "whois-domaintools",
+      "whoxy",
+      "viewdns-info",
       "verisign-whois-lookup"
     ],
+    "aliases": [
+      "Verisign WHOIS",
+      "webwhois.verisign.com"
+    ],
+    "tags": [
+      "whois",
+      "domain-registration",
+      "dns"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/whois-search.md"
   },
   {
@@ -120023,40 +120114,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/mooncalc.md"
-  },
-  {
-    "id": "mozilla-location-service",
-    "name": "Mozilla Location Service",
-    "description": "OSINT tool: Mozilla Location Service.",
-    "url": "https://location.services.mozilla.com/map#0.7/0/0",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/mozilla-location-service.md"
   },
   {
     "id": "murph-live",
@@ -263979,42 +264036,6 @@
     "_file": "library/tools/search-engines/animalsearch.md"
   },
   {
-    "id": "anon-scraper",
-    "name": "Anon Scraper",
-    "description": "Search uploaded files to AnonFile using Google",
-    "url": "https://github.com/370rokas/anonscraper",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Tools for Google"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/anon-scraper.md"
-  },
-  {
     "id": "aol",
     "name": "AOL Search",
     "description": "Use when you have a `name`, `username`, or `domain` and want a second general web index for cross-checking — returns `social-profile` and `domain` leads via Yahoo/Bing-backed results.",
@@ -339733,46 +339754,53 @@
   {
     "id": "forensic-osint-kb-guides",
     "name": "Forensic OSINT KB Guides",
-    "description": "Digital evidence preservation, chain-of-custody documentation, court-ready OSINT reporting",
+    "description": "Use when you need process guidance for defensible OSINT — returns how-to guides on evidence preservation, chain-of-custody, and court-ready reporting.",
     "url": "https://www.forensicosint.com/osint-guide",
     "category": "training-ctf",
     "path": [
       "training-ctf"
     ],
-    "bestFor": "Digital evidence preservation, chain-of-custody documentation, court-ready OSINT reporting",
-    "input": "Target URLs or digital media requiring forensic capture",
-    "output": "Timestamped artifacts, metadata analysis guidance, preserved evidence workflows",
+    "bestFor": "Learning to capture and document online evidence so it holds up for legal/court use.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
-    "pricing": "freemium",
+    "pricing": "free",
+    "costNote": "The knowledge-base guides are free to read; Forensic OSINT also sells a paid capture tool, but the guidance content is open.",
     "opsec": "passive",
-    "opsecNote": "Evidence collection focus; requires proper methodology for investigative and legal contexts.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "Reading guidance touches no target. The value is process — apply the OpSec practices each guide describes (clean capture environment, hashing, documentation) when you do the actual collection.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Vendor-published knowledge base (Forensic OSINT, a browser-capture tool company). Practical, defensibility-focused guidance; naturally oriented toward their product, so treat tool mentions as one option.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "forensic-osint",
+      "hunchly",
+      "osint-techniques",
       "forensicosint-com",
       "forensicosint-com-3"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "Forensic OSINT guide",
+      "forensicosint.com"
+    ],
+    "tags": [
+      "methodology",
+      "evidence-preservation",
+      "reporting"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/training-ctf/forensic-osint-kb-guides.md"
   },
   {

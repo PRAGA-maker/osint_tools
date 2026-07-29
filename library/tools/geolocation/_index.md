@@ -188,7 +188,6 @@ kind: group-index
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.
 - **`monitor-tracking-civic-space-worldwide-map`** (low) — Use when you have a country/`geolocation` and want its civic-space rating and recent rights conditions — returns country civic-freedom ratin
 - **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc
-- **`mozilla-location-service`** (low) — OSINT tool: Mozilla Location Service.
 - **`murph-live`** (low) — OSINT tool: @murph\_live.
 - **`native-land-ca`** (medium) — Use when you have a `geolocation` and want the Indigenous nations, languages and treaties historically tied to that point — returns territor
 - **`natural-hazards-map-worldwide`** (medium) — Use when you have a `geolocation`/`address` and want its natural-hazard exposure (flood, quake, wind/hail) — returns hazard-zone `geolocatio

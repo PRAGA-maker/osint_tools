@@ -14,7 +14,7 @@ kind: group-index
 - **`detux-linux-sandbox`** (low) — Linux malware analysis across multiple architectures
 - **`ether`** (low) — Transparent malware analysis resistant to anti-analysis evasion
 - **`hybrid-analysis`** (low) — Use when you have a suspicious file/URL or a file hash and want a behavioural malware report — returns sandbox verdict, IOCs, and related sa
-- **`joe-file-analyzer`** (low) — PE file malware analysis with system interaction tracking
+- **`joe-file-analyzer`** (low) — Use when you have a suspicious file (`document-id`/hash) and want dynamic malware analysis — returns behaviour, IOCs, and system-interaction
 - **`jotti-s-malware-scanner`** (low) — Use when you have a suspicious file (`document-id`/hash) and want a quick multi-engine AV verdict — returns per-engine detections and the fi
 - **`koodous`** (low) — Use when you have an Android APK (or its hash/`document-id`) and want community malware analysis — returns detection verdicts, YARA matches,
 - **`malware-config`** (low) — Malware configuration extraction and C2 server tracking

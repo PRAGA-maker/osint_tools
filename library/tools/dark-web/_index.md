@@ -65,7 +65,7 @@ kind: group-index
 - **`onionsearch`** (low) — Use when you have a keyword, `name`, or `username` and want to search many Tor .onion search engines at once — returns aggregated .onion URL
 - **`osint-me-1`** (low) — Use when you have a `username`/`email` and want a vetted starting list of Tor onion indexers, leak archives, and dark-web news to search for
 - **`osint-me-2`** (low) — OSINT tool: osint.me 2.
-- **`osint-me-3`** (low) — OSINT tool: osint.me 3.
+- **`osint-me-3`** (low) — Use when you're starting a dark-web investigation and need a vetted resource list — returns curated tools, methods, and safety guidance for 
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
 - **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
