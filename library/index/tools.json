@@ -10565,37 +10565,44 @@
   {
     "id": "osint-ambition-publication",
     "name": "OSINT Ambition Publication",
-    "description": "OSINT tool: OSINT Ambition Publication.",
+    "description": "Use when you want tradecraft, tool tips and walkthroughs to plan an investigation — a Medium-hosted OSINT publication returning techniques and tool leads, not subject data.",
     "url": "https://publication.osintambition.org/",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning current OSINT methods, tool reviews and case walkthroughs to improve how you run an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; articles are on Medium, where some posts may sit behind Medium's metered paywall. A free weekly newsletter (newsletter.osintambition.org) mirrors much of the content.",
+    "opsec": "passive",
+    "opsecNote": "This is reading material, not a lookup against any target — browsing it reveals nothing about your case. If you want to avoid Medium associating the reading with a personal account, read logged-out or in a clean browser; Medium tracks reads for signed-in users.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community OSINT publication (part of the OSINT Ambition project) with multiple contributing authors on Medium; quality varies by author and posts are not formally peer-reviewed, so verify techniques before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Ambition",
+      "OSINT Ambition Medium"
+    ],
     "tags": [
-      "osint-blogs"
+      "osint-blogs",
+      "education"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-ambition-publication.md"
   },
   {
@@ -16190,37 +16197,44 @@
   {
     "id": "tldr",
     "name": "TLDR",
-    "description": "A tool that is a great time-saver when working with the command line. Enter \"tldr command name\" and get a brief description with examples of how to use it.",
+    "description": "Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a full man page.",
     "url": "https://github.com/tldr-pages/tldr",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Getting fast, example-first usage for OSINT CLI tools and standard Unix commands without reading a full man page.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (community-maintained, CC BY 4.0). Multiple free clients; the pages are also browsable at tldr.inbrowser.app with no install.",
+    "opsec": "passive",
+    "opsecNote": "A local documentation lookup — it queries the tldr-pages content cache, not any target. It touches no investigation subject and leaks nothing about your case; the only network traffic is fetching/updating the community page cache from GitHub.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely adopted open-source project (tens of thousands of GitHub stars) with public contribution history; content is community-reviewed via pull request.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tldr-pages",
+      "tldr"
+    ],
     "tags": [
-      "Code"
+      "Code",
+      "cli-utility"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/tldr.md"
   },
   {
@@ -27683,38 +27697,43 @@
   {
     "id": "flicksurfer-com",
     "name": "flicksurfer.com",
-    "description": "alternative way to find anything interesting on Netflix",
+    "description": "Use when you want to rank/discover Netflix titles by aggregated critic and user ratings — a niche media-discovery site, not a people or infrastructure lookup.",
     "url": "http://flicksurfer.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and filtering highly-rated Netflix movies and shows by combined IMDb / Rotten Tomatoes / Netflix ratings.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use with no subscription or account required; it's an ad-supported public web app.",
+    "opsec": "passive",
+    "opsecNote": "A public content-discovery site — browsing it involves no target and leaks nothing about an investigation. Standard web hygiene (no login, optionally a VPN) is more than sufficient; there is nothing sensitive to protect here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party Netflix catalog aggregator; ratings are pulled from external sources and can lag Netflix's live catalog (titles that were removed may still appear). No editorial vetting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FlickSurfer"
+    ],
     "tags": [
       "Movies",
       "Netflix"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/flicksurfer-com.md"
   },
   {
@@ -40370,48 +40389,6 @@
     "lastVerified": "2026-07-21",
     "enrichment": "full",
     "_file": "library/tools/dark-web/medina-county-auditor.md"
-  },
-  {
-    "id": "money-center",
-    "name": "Money Center",
-    "description": "OSINT tool: Money Center.",
-    "url": "http://l5keufi2jvz34eva7znc4we2e743kqn33o2qjxme2l7r6ylozpwsi2yd.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/money-center.md"
   },
   {
     "id": "naval-open-source-intelligence",
@@ -57892,37 +57869,49 @@
   {
     "id": "siftrss-com",
     "name": "Siftrss.com",
-    "description": "tool for filtering RSS feeds",
+    "description": "Use when you have an RSS/Atom feed `url` and want a filtered version that only emits items matching your terms — returns a new feed `url` for monitoring a target.",
     "url": "https://siftrss.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Turning a noisy RSS/Atom feed into a filtered feed that alerts only on items mentioning a subject's name, handle, or keyword.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use with no account or login required; you paste a feed URL and get a filtered feed URL back.",
+    "opsec": "passive",
+    "opsecNote": "SiftRSS fetches the source feed server-side on its own infrastructure, so the target site sees SiftRSS's servers, not you — this is good passive tradecraft for monitoring. Note that your filter terms (which may reveal who/what you are watching) are stored in the generated feed URL on a third-party service; keep the terms generic if that matters and consume the feed through a reader you control.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small independent free utility; it is a pass-through filter proxy rather than a data source, so trust concerns are about uptime and privacy of your filter terms, not data accuracy.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SiftRSS",
+      "RSS feed filter"
+    ],
     "tags": [
-      "Files"
+      "Files",
+      "monitoring"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/siftrss-com.md"
   },
   {
@@ -71388,42 +71377,51 @@
   {
     "id": "hexometer-stack-checker",
     "name": "Hexometer stack checker",
-    "description": "OSINT tool: Hexometer stack checker.",
+    "description": "Use when you have a `domain` and want to fingerprint the site's technology stack — returns the CMS, frameworks, analytics IDs and third-party services as pivot points.",
     "url": "https://hexometer.com/stack-checker",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating the CMS, JS frameworks, analytics/tracking IDs and hosting services behind a website for infrastructure pivoting.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The standalone \"stack checker\" page now redirects to Hexomatic (hexomatic.com), where tech-stack discovery runs as a workflow automation. A free Hexomatic account exists but credits/scans are limited on the free tier; heavy or bulk use is paid.",
+    "opsec": "passive",
+    "opsecNote": "A single stack lookup is passive against the target — the scan hits the site's public pages once, indistinguishable from a normal visit; route through a VPN if you want to avoid your IP appearing in the target's logs. Building a Hexomatic workflow means your query is stored in a third-party SaaS account, so use a sock-puppet registration.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Hexact Inc. commercial product (Hexometer/Hexomatic); tech detection is reliable but the free \"instant checker\" branding has been folded into a paywalled automation platform, so treat it as one detector among several.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Hexomatic tech stack discovery",
+      "Hexometer technology lookup"
+    ],
     "tags": [
       "Domain/IP/Links",
       "Website technology look up"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/hexometer-stack-checker.md"
   },
   {
@@ -78914,45 +78912,51 @@
   {
     "id": "nperf-com-map-5g",
     "name": "nperf.com/map/5g",
-    "description": "5G coverage #map worldwide",
+    "description": "Use when you have a `geolocation`/`address` and want to know which mobile operators have 5G there — returns crowdsourced 5G coverage by carrier for a location.",
     "url": "https://www.nperf.com/en/map/5g",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Checking crowdsourced worldwide 5G coverage by operator at a given location for connectivity/plausibility context.",
     "selectorsIn": [
-      "domain"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The public map is free to view; nPerf's PRO tool with advanced filtering is a paid product aimed at mobile operators, but nothing paid is needed for basic coverage lookups.",
+    "opsec": "passive",
+    "opsecNote": "Read-only public map — you query nPerf's servers about a location, not any target, and nothing about your subject is transmitted. No login, no target contact; ordinary web hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "nPerf is an established connectivity-benchmark company; data is crowdsourced from nPerf app users on 5G devices, so coverage reflects where users tested — sparse-user areas are under-represented and \"detected\" cells may be pre-commercial test signals.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nperf-com-map"
+    ],
+    "aliases": [
+      "nPerf 5G map"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Communications, Internet, Technologies"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "nperf-com-map"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nperf-com-map-5g.md"
   },
   {
@@ -152153,7 +152157,10 @@
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "cornell-legal-information-institute-united-states",
+      "lexcraft-cornell-university-legal-wiki-canada"
+    ],
     "aliases": [
       "BirdNet"
     ],
@@ -168166,41 +168173,54 @@
   {
     "id": "amazon-mobile-app-mobile-android",
     "name": "Amazon Mobile App (Mobile – Android)",
-    "description": "App for mobile devices for online shopping",
+    "description": "Use when you have a `name`, `email`, or `username` and want to surface a subject's public Amazon presence — returns wishlist-derived `address` (ship-to city) and a confirmed `name`.",
     "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=en",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reaching a subject's public Amazon wishlists, reviews and profile from a mobile device to pull a first name + ship-to city.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "The app is free; an Amazon account (free to create) is needed to log in and browse most features, but public wishlist/profile pages are reachable without it.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Browsing another person's public Amazon wishlist or reviewer profile is passive and does not notify them. Do NOT add items to a cart from their list, message the seller, or browse while logged into a personal account — use a clean sock-puppet Amazon account so your own name/recommendations never leak into the session and purchases are never accidentally tied to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Official Amazon.com shopping client published by Amazon; the underlying data (wishlists, reviews, profiles) is first-party and only as public as the subject chose to make it.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Amazon Shopping app",
+      "Amazon Android app"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/amazon-mobile-app-mobile-android.md"
   },
   {
@@ -185985,41 +186005,57 @@
   {
     "id": "twitter-social-networking-mobile-ios",
     "name": "Twitter Social Networking (Mobile – iOS)",
-    "description": "App for mobile devices for social networking",
+    "description": "Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-profile`, `geolocation`/`address` hints, `image`, and `associate` links.",
     "url": "https://itunes.apple.com/ca/app/twitter/id333903271?mt=8",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading, monitoring and reverse-lookup on an X (Twitter) account from a mobile device, including features (nearby, contact-match) that the desktop web hides.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "image",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
+    "costNote": "The app is free; a (free) X account is required to view most content since logged-out browsing is heavily restricted. X Premium is optional and not needed for OSINT reading.",
+    "opsec": "active",
+    "opsecNote": "Viewing profiles while logged in is loggable by X and the \"who viewed\" surface can expose you via follow suggestions and contact-matching — X may suggest your sock account to the target if your contacts/number overlap. Always use a dedicated sock-puppet account with no real contacts uploaded, disable \"let others find me by phone/email\", and never follow or like from it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Official X Corp (formerly Twitter, Inc.) iOS client; the data is first-party platform content, authoritative for what the account actually posted.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "X iOS app",
+      "Twitter iOS app"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "add-ons-apps-extensions"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/twitter-social-networking-mobile-ios.md"
   },
   {
@@ -289741,45 +289777,6 @@
     "lastVerified": "2026-07-22",
     "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/science-publications.md"
-  },
-  {
-    "id": "sciencedirect",
-    "name": "ScienceDirect",
-    "description": "OSINT tool: ScienceDirect.",
-    "url": "http://www.sciencedirect.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "science-direct"
-    ],
-    "_file": "library/tools/search-engines/sciencedirect.md"
   },
   {
     "id": "sciencedomain",

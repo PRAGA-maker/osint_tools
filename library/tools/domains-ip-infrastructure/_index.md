@@ -193,7 +193,7 @@ kind: group-index
 - **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — Use when you have a `domain`/host and want to test whether its TLS server is vulnerable to the Heartbleed bug (CVE-2014-0160) — returns a vu
-- **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
+- **`hexometer-stack-checker`** (low) — Use when you have a `domain` and want to fingerprint the site's technology stack — returns the CMS, frameworks, analytics IDs and third-part
 - **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
@@ -303,7 +303,7 @@ kind: group-index
 - **`nmap-formatter`** (low) — Use when you have Nmap XML scan output for an `ip-address`/`domain` and want a readable report — converts it to HTML, CSV, JSON, Markdown, S
 - **`nmap-online`** (low) — Use when you have a `domain` or `ip-address` and want a quick browser-based Nmap port scan without a local install — returns open ports and 
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
-- **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
+- **`nperf-com-map-5g`** (low) — Use when you have a `geolocation`/`address` and want to know which mobile operators have 5G there — returns crowdsourced 5G coverage by carr
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
 - **`ooni-explorer`** (low) — Use when you have a `domain`/URL and want to know if and where it is blocked/censored — returns country-by-country reachability measurements
 - **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata

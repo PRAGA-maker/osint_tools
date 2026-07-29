@@ -246,7 +246,7 @@ kind: group-index
 - **`ora`** (low) — Use when you have a set of `associate` links / `social-profile` connections and want to map and analyse the network — returns centrality, ke
 - **`oryon-osint-query-tool`** (low) — Use when you have a `name`, `username`, `email`, or `domain` and want a spreadsheet that auto-builds investigation query links across dozens
 - **`oscobo-search-engine`** (low) — Use when you want to run web searches without personalization/tracking — returns web results from a privacy search engine that stores no que
-- **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
+- **`osint-ambition-publication`** (low) — Use when you want tradecraft, tool tips and walkthroughs to plan an investigation — a Medium-hosted OSINT publication returning techniques a
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
 - **`osint-belarus`** (low) — Use when you want a curated, Russian-language feed of OSINT tools and regional monitoring links for Belarus/Eastern Europe — a resource chan
 - **`osint-cli-tool-skeleton`** (low) — Use when you are building your own OSINT lookup tool and want a ready-made CLI scaffold — a developer template, not an investigative lookup 
@@ -368,7 +368,7 @@ kind: group-index
 - **`timeline`** (low) — OSINT tool: Timeline.
 - **`timetoast`** (low) — OSINT tool: Timetoast.
 - **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
-- **`tldr`** (low) — A tool that is a great time-saver when working with the command line. Enter "tldr command name" and get a brief description with examples of
+- **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
 - **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.
 - **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.

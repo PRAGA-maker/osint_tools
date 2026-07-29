@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- cornell-legal-information-institute-united-states
+- lexcraft-cornell-university-legal-wiki-canada
 aliases:
 - BirdNet
 tags:

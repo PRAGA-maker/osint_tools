@@ -57,7 +57,6 @@ kind: group-index
 - **`kilos-darknet-search-engine`** (low) — Use when you have a darknet vendor `username`, `crypto-wallet`, or product term and want marketplace listings and vendor profiles — returns 
 - **`mail2tor`** (low) — Use when you encounter a `@mail2tor` `email` and want to understand it — a Tor-only anonymous mail service, so the address signals deliberat
 - **`medina-county-auditor`** (medium) — Use when you have a `name` or `address` in Medina County, Ohio and want property records — returns owner `name`, `address`, parcel/valuation
-- **`money-center`** (low) — OSINT tool: Money Center.
 - **`naval-open-source-intelligence`** (low) — Use when you need curated open-source naval/maritime-military news and analysis — returns an actively updated feed of naval developments for
 - **`newsworld-usa`** (medium) — Use when you have a `name`/`employer-org` and want recent and archived US news mentions — returns aggregated headlines linking a subject to 
 - **`north-american-sic-structure-united-states`** (medium) — Use when you have a SIC `document-id` code (or an industry name) and want to decode the industrial sector — returns the classified industry/

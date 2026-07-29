@@ -530,7 +530,6 @@ kind: group-index
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
 - **`sapo`** (low) — Use when your subject is Portuguese or Portugal-based and you want a local web portal/search to surface localised results and profiles — ret
 - **`scholarpedia`** (medium) — Use when you encounter a technical/scientific concept in a case and want an expert-written, peer-reviewed explainer — returns authoritative 
-- **`sciencedirect`** (low) — OSINT tool: ScienceDirect.
 - **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
 - **`scirp`** (low) — OSINT tool: SCIRP.
 - **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.

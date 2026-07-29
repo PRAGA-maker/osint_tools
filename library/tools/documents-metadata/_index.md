@@ -212,7 +212,7 @@ kind: group-index
 - **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
 - **`shared-count`** (low) — Use when you have a URL/`domain` and want its social engagement counts (Facebook shares/reactions/comments, Pinterest pins) — returns per-UR
 - **`shhgit`** (low) — Use when you have an `employer-org`/`domain` keyword and want to catch secrets pushed to public git in real time — returns leaked credential
-- **`siftrss-com`** (low) — tool for filtering RSS feeds
+- **`siftrss-com`** (low) — Use when you have an RSS/Atom feed `url` and want a filtered version that only emits items matching your terms — returns a new feed `url` fo
 - **`site-dorks`** (low) — Use when you have a search term (a `name`, email, or keyword) and want to dork it across many curated OSINT sites and multiple engines at on
 - **`slide-share`** (low) — Use when you have a `name`/`username` or topic and want a subject's uploaded presentations/documents — returns social-profile, employer-org 
 - **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks

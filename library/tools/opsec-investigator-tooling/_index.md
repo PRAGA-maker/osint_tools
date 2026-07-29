@@ -29,7 +29,7 @@ kind: group-index
 - **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
 - **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
 - **`am-i-unique`** (low) — Use when you want to test how identifiable your investigation browser is — returns your browser `device-id` fingerprint and how rare it is a
-- **`amazon-mobile-app-mobile-android`** (low) — App for mobile devices for online shopping
+- **`amazon-mobile-app-mobile-android`** (low) — Use when you have a `name`, `email`, or `username` and want to surface a subject's public Amazon presence — returns wishlist-derived `addres
 - **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
 - **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
 - **`annotely`** (low) — Use when you need to annotate a screenshot for a report — add arrows/highlights to mark evidence or blur personal data before sharing — an e
@@ -420,7 +420,7 @@ kind: group-index
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
 - **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
-- **`twitter-social-networking-mobile-ios`** (low) — App for mobile devices for social networking
+- **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
 - **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
 - **`uber-private-driver-app-mobile-android`** (low) — App for mobile devices for searching for and communicating with private hire driving services
