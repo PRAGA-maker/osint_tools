@@ -76,7 +76,7 @@ kind: group-index
 - **`cardguru`** (low) — Use when a sock-puppet signup form demands a card number for format validation — generates Luhn-valid TEST card numbers that carry no funds.
 - **`centbrowser`** (low) — Use when you need a hardened, multi-identity browsing setup for sock-puppet research — a Chromium-based browser with proxy/isolation feature
 - **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
-- **`chepy`** (low) — Python command line version of CyberChef
+- **`chepy`** (low) — Use when you have encoded/encrypted/obfuscated data (a token, a blob, an encoded string) and want to transform it from the command line — a 
 - **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
 - **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
 - **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
@@ -414,7 +414,6 @@ kind: group-index
 - **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
 - **`transform-tools`** (low) — This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript 
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
-- **`truecrypt-encryption-software`** (low) — Guide for TrueCrypt open-source disk encryption software for Windows, Mac and Linux
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
 - **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 

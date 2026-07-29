@@ -2,25 +2,25 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 7258 total · 5577 full · 1681 stub (76% enriched)
+**Tools:** 7255 total · 5583 full · 1672 stub (76% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3285 · medium: 2009 · high: 1964
+low: 3282 · medium: 2009 · high: 1964
 
 ## Tools by trust
-community: 3465 · unverified: 1924 · trusted: 1861 · untrustworthy: 6 · personal: 2
+community: 3463 · unverified: 1922 · trusted: 1862 · untrustworthy: 6 · personal: 2
 
 ## Tools by category (full/total)
 
-- `ai-analysis-automation` — 148/424
+- `ai-analysis-automation` — 149/424
 - `archives-cache` — 96/118
 - `communities-forums` — 248/286
 - `dark-web` — 51/100
 - `dating-classifieds` — 82/90
 - `documents-metadata` — 126/284
-- `domains-ip-infrastructure` — 402/655
+- `domains-ip-infrastructure` — 405/654
 - `email` — 246/246
 - `evidence-capture` — 18/29
 - `financial-crypto` — 74/97
@@ -28,11 +28,11 @@ community: 3465 · unverified: 1924 · trusted: 1861 · untrustworthy: 6 · pers
 - `image-video-face` — 446/451
 - `maps-geospatial-data` — 102/123
 - `messaging` — 181/184
-- `opsec-investigator-tooling` — 156/503
+- `opsec-investigator-tooling` — 157/502
 - `people-search` — 256/257
 - `phone` — 135/137
-- `public-records` — 907/998
-- `search-engines` — 548/753
+- `public-records` — 907/997
+- `search-engines` — 549/753
 - `social-networks` — 745/775
 - `training-ctf` — 6/12
 - `translation-language` — 41/94
@@ -44,7 +44,7 @@ community: 3465 · unverified: 1924 · trusted: 1861 · untrustworthy: 6 · pers
 - `library/tools/public-records` — 946 leaves
 - `library/tools/social-networks` — 748 leaves
 - `library/tools/search-engines` — 703 leaves
-- `library/tools/opsec-investigator-tooling` — 486 leaves
+- `library/tools/opsec-investigator-tooling` — 485 leaves
 - `library/tools/domains-ip-infrastructure` — 437 leaves
 - `library/tools/ai-analysis-automation` — 395 leaves
 - `library/tools/image-video-face` — 357 leaves

@@ -16,7 +16,6 @@ kind: group-index
 - **`ibm-x-force-exchange`** (low) — Use when you have a `domain`, `ip-address`, URL, or file hash and want IBM's threat-intel reputation and reports on it — returns domain, ip-
 - **`malpedia`** (low) — Use when you have a malware family name or sample and want authoritative family context, references and YARA rules — returns malware family 
 - **`maltiverse`** (low) — IOC aggregation and scoring
-- **`malware-information-sharing-platform`** (low) — Threat intelligence sharing
 - **`malware-patrol`** (low) — Malware IOC and feed intelligence
 - **`mlsecproject-combine`** (low) — Threat feed aggregation
 - **`mr-looquer-ioc-feed-1st-dual-stack-threat-feed`** (low) — IOC threat feed access

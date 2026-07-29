@@ -10,7 +10,7 @@ kind: group-index
 - **`db-ip`** (low) — Accurate IP geolocation with developer API
 - **`info-sniper`** (low) — Use when you have an `ip-address` and want its approximate geolocation and network owner — returns country/region/city, ISP, coordinates and
 - **`ip-fingerprints`** (low) — Find domains on shared hosting
-- **`ip-location-finder`** (low) — Quick IP location with maps
+- **`ip-location-finder`** (low) — Use when you have an `ip-address` and want a fast geolocation guess plus ISP/host details — returns approximate `geolocation`, ISP/org, and 
 - **`ip2location-com`** (low) — Use when you have an `ip-address` and want its geolocation plus proxy/VPN detection — returns geolocation, address (city/region/country), em
 - **`ipv4-ipv6-lists-by-country-code`** (low) — Use when you have an `ip-address` or a country and want the authoritative CIDR ranges allocated to that country — returns ip-address ranges 
 - **`maxmind-demo`** (low) — Use when you have an `ip-address` and want a quick country/region/city/ASN geolocation estimate — returns approximate `geolocation` and netw

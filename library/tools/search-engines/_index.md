@@ -92,7 +92,7 @@ kind: group-index
 - **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
 - **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
 - **`bing-advanced-search-options`** (medium) — Use when you have any selector to query and want to search Bing precisely — a reference to Bing's advanced operators (site:, filetype:, cont
-- **`bing-news`** (low) — OSINT tool: Bing News.
+- **`bing-news`** (low) — Use when you have a `name`, org, or event and want news coverage as a second engine to Google — returns news articles, dates, and outlets th
 - **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
 - **`bizjournals-business-news-search`** (low) — Use when you have a `name` or `employer-org` in US local business and want metro-level coverage — returns `employer-org`, `associate` and ca
 - **`biznar`** (medium) — Use when you have a `name`/`employer-org` and want deep-web business results a normal engine misses — returns social-profile, employer-org a

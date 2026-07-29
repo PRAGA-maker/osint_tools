@@ -322,14 +322,14 @@ kind: group-index
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`pentest-tools-com`** (low) — Use when you have a `domain` and want hosted recon — the Google Hacking tool builds and runs dork queries to surface exposed files, logins, 
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
-- **`poodle-check`** (low) — OSINT tool: Poodle Check.
+- **`poodle-check`** (low) — Use when you have a `domain`/host and want to know if its SSL/TLS is vulnerable to the POODLE (SSLv3) downgrade attack — returns a pass/fail
 - **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
 - **`qualys-ssl-check`** (low) — Use when you have a `domain` and want its TLS/certificate posture — returns the SSL cert chain (names, issuer, validity, SANs) and server co
 - **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
-- **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
+- **`r3con1z3r`** (low) — Use when you have a `domain` and want a one-command passive footprint bundled into an HTML report — returns WHOIS, DNS, headers, links and t
 - **`radb`** (low) — Use when you have an `ip-address`, prefix or ASN and want its Internet Routing Registry records — returns the registered route objects, orig
 - **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
 - **`ransomlook`** (low) — Use when you have an `employer-org`/`domain` and want to know if it appears as a ransomware victim, or want to profile a ransomware group — 

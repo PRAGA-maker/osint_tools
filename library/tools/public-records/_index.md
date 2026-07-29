@@ -472,7 +472,6 @@ kind: group-index
 - **`irelandnursing-com`** (high) — Use when you have a `name` and want to check if they're a registered Irish nurse/midwife — returns license status and directory details for 
 - **`irishdentalassoc-ie`** (medium) — Use when you have a dentist's `name` or a location in Ireland and want to confirm they are a practising IDA member and find their practice —
 - **`iron-march`** (low) — OSINT tool: Iron March.
-- **`ironmarch-exposed`** (low) — OSINT tool: Ironmarch.exposed.
 - **`italy`** (high) — Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the compan
 - **`jail-and-inmate-records-search-directory`** (high) — Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceratio
 - **`jail-records`** (high) — Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators r
