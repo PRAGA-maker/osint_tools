@@ -20600,42 +20600,6 @@
     "_file": "library/tools/archives-cache/lux-leaks.md"
   },
   {
-    "id": "mention",
-    "name": "Mention",
-    "description": "OSINT tool: Mention.",
-    "url": "https://en.mention.com",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-monitoring"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/mention.md"
-  },
-  {
     "id": "metawarc",
     "name": "metawarc",
     "description": "Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamps) from archived files.",
@@ -42196,48 +42160,6 @@
     "_file": "library/tools/dark-web/tor-link.md"
   },
   {
-    "id": "tor-mail",
-    "name": "Tor Mail",
-    "description": "OSINT tool: Tor Mail.",
-    "url": "http://tormailt3jjpm7naq5nkuqqdpmaspzif4vnjjtmqbejsc7ahi4gj2wad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/tor-mail.md"
-  },
-  {
     "id": "tor-wiki",
     "name": "Tor Wiki",
     "description": "OSINT tool: Tor Wiki.",
@@ -56107,46 +56029,6 @@
     "_file": "library/tools/documents-metadata/osintdashboard-azurewebsites-net.md"
   },
   {
-    "id": "pageinsider",
-    "name": "PageInsider",
-    "description": "Website that shows a summary of information that is or was on a specific website",
-    "url": "http://www.pageinsider.com",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "useful-websites-tools-documents"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/pageinsider.md"
-  },
-  {
     "id": "paste-search",
     "name": "Paste Search (psbdmp.ws)",
     "description": "Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds/data) — returns email, password, associate leads.",
@@ -63261,41 +63143,56 @@
   {
     "id": "burp-suite",
     "name": "Burp Suite",
-    "description": "Web application penetration testing",
+    "description": "Use when you need to intercept, inspect, and manipulate a web app's HTTP(S) traffic to understand or test it — returns a full proxy view of requests/responses plus manual testing tools.",
     "url": "https://portswigger.net/burp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "tools"
     ],
-    "bestFor": "Web application penetration testing",
-    "input": "Web applications and URLs",
-    "output": "Security findings, intercepted traffic, and vulnerability reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Intercepting and analysing web/app traffic as a proxy — seeing the API calls, cookies, tokens and hidden endpoints behind a site during investigation or testing.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Burp Suite Community Edition is free (manual proxy, repeater, decoder). Professional/DAST editions (automated scanning) are paid. The free edition covers most investigative proxy work.",
     "opsec": "active",
-    "opsecNote": "Full active scanning; generates extensive server logs and may trigger WAF/IDS alerts",
+    "opsecNote": "Interception is passive, but Burp's active scanner, intruder, and repeated requests hit the target server directly, generate heavy logs, and can trip WAF/IDS alerts — only run active tooling against systems you're authorised to test. Route through a sock-puppet IP where appropriate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Industry-standard web-security toolkit by PortSwigger; the Community Edition is legitimate first-party software. \"Trusted\" as a tool — findings still require your interpretation.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "owasp-zap",
+      "xnlinkfinder"
+    ],
+    "aliases": [
+      "Burp",
+      "Burp Suite Community Edition",
+      "PortSwigger Burp"
+    ],
+    "tags": [
+      "web-proxy",
+      "pentest",
+      "traffic-analysis",
+      "Dorks/Pentest/Vulnerabilities"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/tools/burp-suite.md"
   },
   {
@@ -65873,48 +65770,6 @@
     "_file": "library/tools/domains-ip-infrastructure/cvecrowd.md"
   },
   {
-    "id": "cymon-open-threat-intelligence",
-    "name": "Cymon Open Threat Intelligence",
-    "description": "IP threat tracking",
-    "url": "https://cymon.io/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "threat-feeds-and-platforms"
-    ],
-    "bestFor": "IP threat tracking",
-    "input": "IP address or threat indicator",
-    "output": "Malware and threat reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Passive threat database queries",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/cymon-open-threat-intelligence.md"
-  },
-  {
     "id": "dark-web-informer",
     "name": "Dark Web Informer",
     "description": "Use when you have a threat-actor/group `name` and want a reference profile — returns a searchable database of threat actors, APT groups, and ransomware crews (sourced from MISP Galaxy).",
@@ -66000,48 +65855,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/geolocation/db-ip.md"
-  },
-  {
-    "id": "deepviz-domain-search",
-    "name": "Deepviz Domain Search",
-    "description": "Domain/IP threat intelligence, malware analysis, threat feed subscription",
-    "url": "https://search.deepviz.com/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "reputation"
-    ],
-    "bestFor": "Domain/IP threat intelligence, malware analysis, threat feed subscription",
-    "input": "Domain, IP, file hash (MD5), or malware sample",
-    "output": "Threat intelligence data, malware associations, related IOCs, daily threat feeds",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Queries threat intelligence databases without contacting the target.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/reputation/deepviz-domain-search.md"
   },
   {
     "id": "default-password-lookup-utility",
@@ -81962,36 +81775,55 @@
   },
   {
     "id": "reverse-mx-record",
-    "name": "Reverse MX Record",
-    "description": "OSINT tool: Reverse MX Record.",
+    "name": "Reverse MX Record (osint.sh)",
+    "description": "Use when you have a mail-server hostname (MX) and want the other domains that use it for email — returns a list of `domain`s sharing that mail infrastructure.",
     "url": "https://osint.sh/reversemx/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding all domains that route mail through a given MX host — useful for clustering domains behind a shared or self-hosted mail server.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web tool in the osint.sh suite; no account. Rate-limited on the free front-end.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The lookup runs against osint.sh's dataset of DNS/MX records, not the target's servers, so you never touch the subject's mail infrastructure. You do disclose the queried MX host to osint.sh.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run osint.sh toolkit; convenient and free, but a third-party dataset snapshot — corroborate hits against live DNS before relying on them.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "reverse-domain",
+      "osint-sh",
+      "crt-sh"
+    ],
+    "aliases": [
+      "osint.sh reverse mx",
+      "reverse mx lookup"
+    ],
+    "tags": [
+      "reverse-mx",
+      "mail-infrastructure",
+      "domain-footprint"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reverse-mx-record.md"
   },
   {
@@ -84806,50 +84638,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/analytics/spyonweb.md"
-  },
-  {
-    "id": "spyse",
-    "name": "Spyse",
-    "description": "Domain intelligence, certificate discovery, subdomain enumeration, vulnerability identification",
-    "url": "https://spyse.com/search/certificate",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure",
-      "certificate-search"
-    ],
-    "bestFor": "Domain intelligence, certificate discovery, subdomain enumeration, vulnerability identification",
-    "input": "Domain, IP, certificate, email, or organization name",
-    "output": "Domain details, subdomains, certificates, WHOIS info, CVEs, open ports, scraped emails",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Queries Spyse's pre-scanned database; does not contact the target directly.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "spyse-com"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/certificate-search/spyse.md"
   },
   {
     "id": "sqli-dorks-generator",
@@ -91478,45 +91266,54 @@
   {
     "id": "xnlinkfinder",
     "name": "xnLinkFinder",
-    "description": "Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.",
+    "description": "Use when you have a target `domain`/URL and want to discover its endpoints, parameters, and leaked secrets — returns a list of discovered links/endpoints (and a target wordlist) from crawling, JS, and archives.",
     "url": "https://github.com/xnl-h4ck3r/xnLinkFinder",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting endpoints, parameters, and potential secrets for a target by crawling it and mining JS/HAR/archive/Burp data — attack-surface and hidden-endpoint discovery.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; pip-installable Python 3 CLI. No account or key required (though pulling archive data may use optional free sources).",
+    "opsec": "active",
+    "opsecNote": "Crawling mode connects directly to the target and can generate noticeable traffic/logs; passive modes (parsing existing JS/HAR/Burp/waymore output) touch nothing new. Prefer the passive inputs for stealth, and run active crawling from a sock-puppet host when needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular, actively maintained OSS by xnl-h4ck3r (1.6k+ stars); community-trusted. Output is raw discovered strings — expect noise and validate endpoints before acting.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "waymore",
+      "burp-suite",
+      "crt-sh"
+    ],
+    "aliases": [
+      "xnLinkFinder",
+      "xnl-h4ck3r linkfinder"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Dorks/Pentest/Vulnerabilities"
+      "Dorks/Pentest/Vulnerabilities",
+      "endpoint-discovery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "waymore"
-    ],
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/xnlinkfinder.md"
   },
   {
@@ -182396,37 +182193,49 @@
   {
     "id": "sessionbox",
     "name": "SessionBox",
-    "description": "multi-login browser extension",
-    "url": "https://chrome.google.com/webstore/detail/sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig?hl=ru",
+    "description": "Use when you need to run many isolated sock-puppet logins to the same site from one browser — returns per-tab separated cookie/session containers so identities don't cross-contaminate.",
+    "url": "https://sessionbox.io/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Keeping multiple sock-puppet accounts on the same platform logged in simultaneously and isolated, without juggling separate browsers or profiles.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier allows a limited number of sessions/tabs; paid plans (and the heavier \"SessionBox One\" desktop app) raise limits and add proxy-per-identity and team features. Free tier suffices for a few personas.",
+    "opsec": "active",
+    "opsecNote": "This is an investigator OpSec tool — it isolates identities so you don't accidentally deanonymise a persona. But session data syncs through SessionBox's service, so use throwaway logins, pair each persona with its own proxy/VPN, and never mix a real account into a SessionBox container.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial browser extension/app; widely used for multi-accounting, but it does handle your session cookies, so treat it as a trusted-with-caution intermediary and keep real identities out of it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "multilogin",
+      "firefox-multi-account-containers"
+    ],
+    "aliases": [
+      "SessionBox multi-login",
+      "SessionBox One"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "multi-login",
+      "session-isolation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/sessionbox.md"
   },
   {
@@ -184626,37 +184435,53 @@
   {
     "id": "thispersondoesnotexistapi-unofficial",
     "name": "ThisPersonDoesNotExistAPI (unofficial)",
-    "description": "#Python library that returns a random \"doesnotexist\" person picture generated by AI (with site [http://thispersondoesnotexist.com](http://thispersondoesnotexist.com))",
+    "description": "Use when you need to fetch AI-generated sock-puppet `face`/`image` files programmatically at scale — returns a random non-existent person's portrait via a small Python library.",
     "url": "https://github.com/David-Lor/ThisPersonDoesNotExistAPI",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "Scripted/bulk retrieval of ThisPersonDoesNotExist GAN faces (with built-in de-duplication) for provisioning many sock-puppet avatars at once.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "face",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Apache-2.0). It's a thin Python wrapper around the public thispersondoesnotexist.com endpoint — no API key, no cost.",
+    "opsec": "passive",
+    "opsecNote": "A defensive/tooling utility — it produces synthetic faces, so no real person is queried. It scrapes a third-party site programmatically, so throttle requests, and reverse-image-check any face before use. Never reuse the same generated face across personas.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Small open-source library (Apache-2.0) — but the repo was archived (read-only, unmaintained) in April 2026, so it may break if the upstream site changes its endpoint. Verify it still fetches before depending on it.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "this-person-does-not-exist",
+      "this-baseball-player-does-not-exist"
+    ],
+    "aliases": [
+      "ThisPersonDoesNotExistAPI",
+      "David-Lor TPDNE API"
+    ],
     "tags": [
-      "Sock Puppets"
+      "Sock Puppets",
+      "sock-puppet-avatar",
+      "gan-face",
+      "python-lib"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/thispersondoesnotexistapi-unofficial.md"
   },
   {
@@ -350019,35 +349844,54 @@
   {
     "id": "maersk-tracking",
     "name": "Maersk Tracking",
-    "description": "OSINT tool: Maersk Tracking.",
+    "description": "Use when you have a Maersk container, booking, or bill-of-lading number and want the shipment's current location and movement history — returns port milestones, vessel, and status.",
     "url": "https://www.maersk.com/tracking/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Tracking a specific Maersk container/booking/BL number through its port-by-port journey and current status.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public tracking page from Maersk; no account needed for basic container/BL lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Maersk's public tracking with a shipment reference — the parties to the shipment aren't notified. Only Maersk sees your lookup. No subject-side exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Maersk carrier data — authoritative for shipments Maersk carries. Only covers Maersk-line cargo; other carriers need their own portals or an aggregator.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "vesselfinder",
+      "marinetraffic"
+    ],
+    "aliases": [
+      "Maersk container tracking",
+      "maersk.com/tracking"
+    ],
+    "tags": [
+      "shipping",
+      "container-tracking",
+      "logistics",
+      "transport"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-29",
+    "enrichment": "full",
     "_file": "library/tools/transportation/maersk-tracking.md"
   },
   {

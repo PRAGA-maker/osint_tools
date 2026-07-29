@@ -89,7 +89,6 @@ kind: group-index
 - **`tool-path`** (low) — OSINT tool: Tool \| path.
 - **`top-guns`** (low) — OSINT tool: Top Guns.
 - **`tor-link`** (low) — Use when you have a `username`/`email`/keyword and want to find related Tor `.onion` sites via a clearnet darknet directory/search — returns
-- **`tor-mail`** (low) — OSINT tool: Tor Mail.
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
 - **`torbox`** (low) — OSINT tool: TorBox.
 - **`torry-io`** (low) — OSINT tool: torry.io.

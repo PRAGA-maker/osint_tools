@@ -175,7 +175,6 @@ kind: group-index
 - **`online-metadata-viewer-and-editor`** (low) — Use when you have a file (`image`, docx, xlsx, pptx, msg, vsd, mpp) and want to view or edit its embedded metadata in the browser — returns 
 - **`online-ocr-converter`** (low) — Use when you have a scanned document or `image` (PDF, JPG, TIFF) and want its text extracted into a searchable/editable file — returns machi
 - **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
-- **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
 - **`paste-search`** (medium) — Use when you have an `email`, `username`, `domain`, or keyword and want to find it in dumped Pastebin/paste-site content (often leaked creds
 - **`pastes-search-engine`** (low) — Use when you have an `email`/`username`/keyword and want to search across paste sites (Pastebin et al.) for leaked/dumped text — returns pas
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency

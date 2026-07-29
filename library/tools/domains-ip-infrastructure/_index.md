@@ -14,7 +14,7 @@ kind: group-index
 - **`azure-gcp-discovery/`** — 5 skill(s) below.
 - **`bgp/`** — 3 skill(s) below.
 - **`blacklists/`** — 4 skill(s) below.
-- **`certificate-search/`** — 5 skill(s) below.
+- **`certificate-search/`** — 4 skill(s) below.
 - **`change-detection/`** — 6 skill(s) below.
 - **`cloud-configuration-analysis/`** — 5 skill(s) below.
 - **`default-passwords/`** — 7 skill(s) below.
@@ -34,13 +34,13 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 1 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 16 skill(s) below.
+- **`reputation/`** — 15 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
 - **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
 - **`subdomains/`** — 17 skill(s) below.
 - **`terrorism-and-extremism/`** — 7 skill(s) below.
-- **`threat-feeds-and-platforms/`** — 16 skill(s) below.
+- **`threat-feeds-and-platforms/`** — 15 skill(s) below.
 - **`tools/`** — 4 skill(s) below.
 - **`ttps/`** — 2 skill(s) below.
 - **`typosquatting/`** — 4 skill(s) below.
@@ -344,7 +344,7 @@ kind: group-index
 - **`reverse-google-adsense`** (low) — Use when you have a `domain` and want to find other sites run by the same owner by matching their Google AdSense/Analytics publisher ID — re
 - **`reverse-google-analytics`** (low) — Use when you have a `domain` and want the other sites run by the same operator — finds domains sharing its Google Analytics/AdSense tracking
 - **`reverse-ip-lookup`** (low) — Use when you have an `ip-address` and want the other domains hosted on it — returns the `domain` neighbours sharing that server, exposing li
-- **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
+- **`reverse-mx-record`** (low) — Use when you have a mail-server hostname (MX) and want the other domains that use it for email — returns a list of `domain`s sharing that ma
 - **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
 - **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
@@ -474,7 +474,7 @@ kind: group-index
 - **`wordpress`** (medium) — Use when you have a `domain` or `username` and want to enumerate a WordPress site's authors — returns usernames, display names and linked so
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
-- **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
+- **`xnlinkfinder`** (low) — Use when you have a target `domain`/URL and want to discover its endpoints, parameters, and leaked secrets — returns a list of discovered li
 - **`xurlfind3r`** (low) — Use when you have a `domain` and want every URL ever seen for it from passive archives (Wayback, Common Crawl, OTX, URLScan, etc.) — returns
 - **`yougetsignal-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other websites hosted on the same server — returns a list of co-hosted `domain
 - **`zscaler-global-threat-map-dashboard`** (low) — OSINT tool: Zscaler Global Threat Map Dashboard.

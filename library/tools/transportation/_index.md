@@ -111,7 +111,7 @@ kind: group-index
 - **`live-train-tracker`** (low) — Use when you have a `geolocation`/region in Europe, the Americas, or Australia and want real-time train positions and schedules — returns li
 - **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
 - **`lucas-county-ohio-areis-online`** (medium) — Use when you have a `name` or `address` in Lucas County, Ohio and want property records — returns owner `name`, parcel `address`, mailing ad
-- **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.
+- **`maersk-tracking`** (low) — Use when you have a Maersk container, booking, or bill-of-lading number and want the shipment's current location and movement history — retu
 - **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
 - **`maritime-awareness-project`** (low) — Use when you have an Asia-Pacific maritime `geolocation` and want claims/incident context — returns an interactive map of territorial disput
