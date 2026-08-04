@@ -60,7 +60,7 @@ kind: group-index
 - **`noslang-dictionary`** (low) — Use when you have chat/DM text full of slang, acronyms or leetspeak and want plain-English meanings — returns decoded terms to interpret a s
 - **`online-slang-dictionary`** (low) — Language-related search for slang words in current and former common use
 - **`online-translator`** (low) — OSINT tool: Online Translator.
-- **`paralink-translation-tool`** (low) — Tool for translating text and web content from one language to another
+- **`paralink-translation-tool`** (low) — Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple
 - **`paulschou-binary-translator`** (low) — Tool used to encode and decode ASCII and ANSI text
 - **`phrases-net`** (low) — Language-related search for famous phrases, verbs, and idioms
 - **`plagiarsim-checker`** (low) — Language and academic-related program that checks for plagiarsim and copyright infringement

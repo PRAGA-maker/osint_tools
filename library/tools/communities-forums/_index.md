@@ -187,7 +187,6 @@ kind: group-index
 - **`plazoo-rss-feed-search-engine`** (medium) — Use when you have a name/keyword and want it across blog & news RSS feeds — returns matching feed posts (social-profile, associate leads).
 - **`plentyoffish`** (medium) — Use when you have a `username`, `name`, or photo and want to check a major dating platform for a subject's profile — returns `social-profile
 - **`plurk`** (medium) — Use when you have a `username` or `name` and want to find a Plurk microblogging profile — returns the public `social-profile`, timeline post
-- **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
 - **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`postach-io`** (medium) — Use when you have a `username` and want to check for a matching personal blog on this Evernote-powered platform — returns `social-profile` a
 - **`posthaven`** (low) — Use when you have a `name`, `username` or `email` and want to check for a personal blog on Posthaven — returns blog posts revealing biograph

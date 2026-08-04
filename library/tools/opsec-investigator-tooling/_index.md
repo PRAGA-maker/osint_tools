@@ -96,7 +96,7 @@ kind: group-index
 - **`decoding-social-security-numbers`** (low) — Use when you have a pre-2011 US `document-id` (SSN) and want its likely issuing state and issue-year range — returns a geographic/temporal l
 - **`deep-face-live`** (low) — Use when you have a puppet `face`/`image` and want a real-time face swap on webcam or video calls to protect your own identity — returns a s
 - **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
-- **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
+- **`distill-web-monitor-firefox-add-on`** (low) — Use when you have a `domain`/web page or feed and want to be alerted the moment it changes — returns email/SMS/push notifications on detecte
 - **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
 - **`download-all-images`** (low) — Use when you have a web page and want to bulk-collect every `image` on it (including iframes) for reverse-search / EXIF triage — returns the
 - **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Use when you have a suspicious `domain`/link and want to scan it for malware or phishing before you click — returns a safe/malicious verdict
@@ -115,7 +115,6 @@ kind: group-index
 - **`exif-viewer-firefox-add-on`** (low) — Use when you have an `image` on a web page or local JPEG and want its embedded metadata — displays EXIF/IPTC/XMP incl. camera, timestamp and
 - **`exonerator-ip-address-checker`** (low) — Use when you have an `ip-address` and a date and want to know whether that IP was a Tor relay at that time — returns a yes/no that reframes 
 - **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
-- **`extremetech-virutal-box`** (low) — Program for Virtual Machine (VM) software that protects your system from malware and attacks
 - **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
 - **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
 - **`face-generator`** (low) — Use when you need a synthetic, non-real face for a sock-puppet identity — customize gender, age, pose, hair/skin, emotion — returns a downlo
@@ -232,7 +231,6 @@ kind: group-index
 - **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
 - **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
 - **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
-- **`magnifying-glass-tool-app-mobile-ios`** (low) — App for mobile devices for a combined flashlight and camera image magnification tool
 - **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
 - **`malwoverview`** (low) — Use when you have a file hash, `domain`, URL, or `ip-address` and want multi-source threat-intel triage — returns aggregated VT/Hybrid-Analy
 - **`many-passwords`** (low) — Use when you have a `device-id` (router/IoT make & model) and want the manufacturer's factory default login — returns candidate `password` v
@@ -274,7 +272,6 @@ kind: group-index
 - **`overcast-podcast-app-mobile-ios`** (low) — Use when you need to listen to and search a subject's podcast output on iOS — a free podcast player, useful for consuming audio evidence, no
 - **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
 - **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing
-- **`pandasecurity-free-antivirus`** (low) — Malware and virus detection and elimination program
 - **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
 - **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
 - **`parrot-security`** (low) — Use when you need a ready-made pentest/OSINT Linux workstation — returns a Debian-based distro pre-loaded with investigation and security to
@@ -285,7 +282,6 @@ kind: group-index
 - **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
 - **`pexels`** (low) — Use when you want neutral stock imagery for a sock-puppet's non-face content — and, reversed, to check whether a profile photo is a giveaway
 - **`pic-cic-code-database`** (low) — Use when you have a 4-digit North American Carrier Identification Code (PIC/CIC) from a phone record and want the carrier behind it — return
-- **`pinterest-social-bookmarking-app-mobile-android`** (low) — App for mobile devices for social networking
 - **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
 - **`plentyoffish-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
 - **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
@@ -384,7 +380,6 @@ kind: group-index
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.
 - **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
-- **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
 - **`transform-tools`** (low) — Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wr
 - **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
 - **`tsurugi-linux`** (low) — Use when you need a ready DFIR/OSINT workstation for evidence analysis — a preloaded forensic platform, not a lookup tool.
@@ -393,7 +388,6 @@ kind: group-index
 - **`tunnelbear`** (low) — Use when you (the investigator) need to mask your own `ip-address` and route a research session through another country — an audited VPN wit
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
 - **`twitter-profile-generator`** (low) — Use when you need a realistic mock Twitter/X profile — either to build a sock-puppet persona or to understand how faked profile screenshots 
-- **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
 - **`twitter-social-networking-mobile-ios`** (medium) — Use when you have a `username`, `name`, or `phone`/`email` and want to work a subject's X/Twitter presence from a phone — returns `social-pr
 - **`two-factor-authentication-list`** (low) — Use when you want to know whether a given service supports two-factor authentication and which methods — for hardening your own accounts or 
 - **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
@@ -429,7 +423,6 @@ kind: group-index
 - **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
 - **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
 - **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
-- **`wevideo-video-editor-app-mobile-android`** (low) — App for mobile devices for social networking and creating, editing and publishing videos
 - **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
 - **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
 - **`windows-10-online-emulator`** (low) — OSINT tool: Windows 10 Online Emulator.

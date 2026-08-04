@@ -2163,42 +2163,6 @@
     "_file": "library/tools/ai-analysis-automation/chart-js.md"
   },
   {
-    "id": "chartblocks",
-    "name": "chartblocks",
-    "description": "OSINT tool: chartblocks.",
-    "url": "http://www.chartblocks.com",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "infographics-and-data-visualization"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/chartblocks.md"
-  },
-  {
     "id": "chatsecure",
     "name": "Chatsecure",
     "description": "OSINT tool: Chatsecure.",
@@ -9908,42 +9872,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/offliberty.md"
-  },
-  {
-    "id": "offshore-cat",
-    "name": "OffShore.cat",
-    "description": "OSINT tool: OffShore.cat.",
-    "url": "https://offshore.cat/vpn",
-    "category": "ai-analysis-automation",
-    "path": [
-      "ai-analysis-automation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vpn-services"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/ai-analysis-automation/offshore-cat.md"
   },
   {
     "id": "oftoolbox",
@@ -32848,54 +32776,6 @@
     "_file": "library/tools/communities-forums/plurk.md"
   },
   {
-    "id": "pokebattler-profiles",
-    "name": "PokeBattler Profiles",
-    "description": "Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.",
-    "url": "https://www.pokebattler.com/profiles",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "Searching for a Pokemon GO player profile by username/handle",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "username",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "PokeBattler"
-    ],
-    "tags": [
-      "pokemon-go",
-      "gaming",
-      "username-search",
-      "community"
-    ],
-    "source": "sinwindie-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/pokebattler-profiles.md"
-  },
-  {
     "id": "police-community",
     "name": "police.community",
     "description": "Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and policing-community context.",
@@ -40688,48 +40568,6 @@
     "_file": "library/tools/dark-web/pastebin-bisque.md"
   },
   {
-    "id": "peoples-drug-store",
-    "name": "Peoples Drug Store",
-    "description": "OSINT tool: Peoples Drug Store.",
-    "url": "http://xf2gry25d3tyxkiu2xlvczd3q7jl6yyhtpodevjugnxia2u665asozad.onion/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/peoples-drug-store.md"
-  },
-  {
     "id": "pirate-bay",
     "name": "Pirate Bay",
     "description": "Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public torrent index — returns `social-profile`-style upload footprints.",
@@ -41234,48 +41072,6 @@
     "lastVerified": "2026-07-23",
     "enrichment": "full",
     "_file": "library/tools/dark-web/riseup.md"
-  },
-  {
-    "id": "rooted",
-    "name": "Rooted",
-    "description": "OSINT tool: Rooted.",
-    "url": "https://rooted.wtf/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/rooted.md"
   },
   {
     "id": "search-systems-public-records-us",
@@ -42074,48 +41870,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/dark-web/us-inmate-locator.md"
-  },
-  {
-    "id": "vorm-web",
-    "name": "Vorm Web",
-    "description": "OSINT tool: Vorm Web.",
-    "url": "https://vormweb.de/en/",
-    "category": "dark-web",
-    "path": [
-      "dark-web"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "darkweb",
-      "Dark Web Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/vorm-web.md"
   },
   {
     "id": "western-union-agent-locator",
@@ -75075,43 +74829,53 @@
   },
   {
     "id": "linkklipper",
-    "name": "linkKlipper",
-    "description": "The easiest extension to collect links from an open web page: - select links with Ctrl/Command key or download all; - filter links by extension or using Regular Expressions; - download in CSV/TXT.",
+    "name": "Link Klipper (extract all links)",
+    "description": "Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to CSV/TXT.",
     "url": "https://chrome.google.com/webstore/detail/link-klipper-extract-all/fahollcgofmpnehocdgofnhkkchiekoo",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "One-click harvesting of every hyperlink on a page (profile, directory, search results) into a clean CSV for pivoting.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; the developer states it runs entirely in the browser and sends no data to external servers.",
+    "opsec": "passive",
+    "opsecNote": "Link extraction runs locally on the page you already loaded — it makes no extra requests to the target, so it adds no footprint beyond your normal page visit. Anonymity depends only on how you loaded the page (VPN/sock puppet as needed).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular, well-rated extension (tens of thousands of users) that operates locally; low risk since it only reads the DOM of the current page and exports links.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "linkKlipper",
+      "Link Klipper - Extract all links"
+    ],
     "tags": [
-      "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "link-extraction",
+      "scraping",
+      "csv-export",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/linkklipper.md"
   },
   {
@@ -81745,44 +81509,61 @@
   },
   {
     "id": "scam-database",
-    "name": "Scam Database",
-    "description": "Scam and fraud reporting",
+    "name": "ScamDB",
+    "description": "Use when you have a `phone`, `email`, `domain`, social handle, or `crypto-wallet` and want to check crowd-reported scam activity — returns community fraud reports tied to that identifier.",
     "url": "https://www.scamdb.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "threat-feeds-and-platforms"
     ],
-    "bestFor": "Scam and fraud reporting",
-    "input": "Phone, email, or website",
-    "output": "Unverified scam reports and details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quickly checking whether a contact identifier has been reported as a scam by the public.",
+    "selectorsIn": [
+      "phone",
+      "email",
+      "domain",
+      "crypto-wallet",
+      "username"
+    ],
+    "selectorsOut": [
+      "phone",
+      "email",
+      "domain",
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; submitting a report may require an account, but lookups are open.",
     "opsec": "passive",
-    "opsecNote": "Passive lookup of community reports",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
+    "opsecNote": "You are searching community reports about an identifier — the subject is not contacted or notified. Only your own request is logged.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced and explicitly unverified — the site states all reports are unverified user submissions. Treat hits as allegations/leads, never as established fact.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "scamdb.net",
+      "Scam Database"
+    ],
+    "tags": [
+      "scam",
+      "fraud",
+      "threat-intel",
+      "reputation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/scam-database.md"
   },
   {
@@ -170222,42 +170003,52 @@
   },
   {
     "id": "distill-web-monitor-firefox-add-on",
-    "name": "Distill Web Monitor Firefox Add-on",
-    "description": "Website monitoring tool for Firefox that monitors webpages for changes",
+    "name": "Distill Web Monitor (Firefox add-on)",
+    "description": "Use when you have a `domain`/web page or feed and want to be alerted the moment it changes — returns email/SMS/push notifications on detected content changes.",
     "url": "https://addons.mozilla.org/en-CA/firefox/addon/distill-web-monitor-ff/?src=search",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Watching a target's webpage, profile, or feed and getting alerted when a selected region changes.",
+    "selectorsIn": [
+      "domain"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier monitors a limited number of local watches; a paid Distill plan adds cloud monitoring, more watches, higher check frequency, and cross-device sync.",
+    "opsec": "active",
+    "opsecNote": "In its default (local) mode, Distill re-fetches the watched page from YOUR browser/IP on a schedule — repeated automated hits can be visible in the target's server logs and look like a returning visitor. For standoff monitoring use the cloud plan (fetches from Distill's servers) and/or route your browser through a VPN. Your watchlist/account data lives with Distill.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A widely-used, well-rated change-monitoring extension (tens of thousands of users); mature and reliable, though it is a commercial freemium product and your watchlist is stored with the vendor on paid tiers.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Distill.io",
+      "Distill Web Monitor"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
+      "web-monitoring",
+      "change-detection",
+      "alerts",
+      "browser-extension"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/distill-web-monitor-firefox-add-on.md"
   },
   {
@@ -171221,49 +171012,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/expedia-travel-app-mobile-android.md"
-  },
-  {
-    "id": "extremetech-virutal-box",
-    "name": "ExtremeTech Virutal Box",
-    "description": "Program for Virtual Machine (VM) software that protects your system from malware and attacks",
-    "url": "http://www.extremetech.com/tag/virtualbox",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "extremetech"
-    ],
-    "_file": "library/tools/opsec-investigator-tooling/extremetech-virutal-box.md"
   },
   {
     "id": "f-secure-anti-virus-for-mac",
@@ -176667,46 +176415,6 @@
     "_file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-ios.md"
   },
   {
-    "id": "magnifying-glass-tool-app-mobile-ios",
-    "name": "Magnifying Glass Tool App (Mobile – iOS)",
-    "description": "App for mobile devices for a combined flashlight and camera image magnification tool",
-    "url": "https://itunes.apple.com/ca/app/magnifying-glass-light-digital/id406048120?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/magnifying-glass-tool-app-mobile-ios.md"
-  },
-  {
     "id": "malwarebytes-anti-malware",
     "name": "Malwarebytes Anti-Malware",
     "description": "Malware and virus detection and elimination program",
@@ -178632,46 +178340,6 @@
     "_file": "library/tools/opsec-investigator-tooling/pagezipper.md"
   },
   {
-    "id": "pandasecurity-free-antivirus",
-    "name": "PandaSecurity Free Antivirus",
-    "description": "Malware and virus detection and elimination program",
-    "url": "http://www.pandasecurity.com/usa/homeusers/solutions/free-antivirus",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pandasecurity-free-antivirus.md"
-  },
-  {
     "id": "pandora-radio-app-mobile-ios",
     "name": "Pandora Radio App (Mobile – iOS)",
     "description": "App for mobile devices for searching and playing radio channels",
@@ -179208,46 +178876,6 @@
     "lastVerified": "2026-07-28",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/pic-cic-code-database.md"
-  },
-  {
-    "id": "pinterest-social-bookmarking-app-mobile-android",
-    "name": "Pinterest Social Bookmarking App (Mobile – Android)",
-    "description": "App for mobile devices for social networking",
-    "url": "https://play.google.com/store/apps/details?id=com.pinterest",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-android.md"
   },
   {
     "id": "pinterest-social-bookmarking-app-mobile-ios",
@@ -183789,46 +183417,6 @@
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/trace-my-ip.md"
   },
   {
-    "id": "trancreative-converter-plus-app-mobile-ios",
-    "name": "TranCreative Converter Plus App (Mobile – iOS)",
-    "description": "App for mobile devices for converting units of measurement and currencies",
-    "url": "https://itunes.apple.com/us/app/converter-plus-iphone-ipod/id370146222?mt=8",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/trancreative-converter-plus-app-mobile-ios.md"
-  },
-  {
     "id": "transform-tools",
     "name": "Transform Tools",
     "description": "Use when you have data in one format and need it in another — a free web collection of converters (JSON↔schemas, CSV, Markdown, HTML) for wrangling OSINT data.",
@@ -184190,46 +183778,6 @@
     "lastVerified": "2026-07-29",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/twitter-profile-generator.md"
-  },
-  {
-    "id": "twitter-social-networking-mobile-android",
-    "name": "Twitter Social Networking (Mobile – Android)",
-    "description": "App for mobile devices for social networking",
-    "url": "https://play.google.com/store/apps/details?id=com.twitter.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/twitter-social-networking-mobile-android.md"
   },
   {
     "id": "twitter-social-networking-mobile-ios",
@@ -185901,46 +185449,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/wechat-messaging-app-mobile-ios-china.md"
-  },
-  {
-    "id": "wevideo-video-editor-app-mobile-android",
-    "name": "WEVideo Video Editor App (Mobile – Android)",
-    "description": "App for mobile devices for social networking and creating, editing and publishing videos",
-    "url": "https://play.google.com/store/apps/details?id=com.wevideo.mobile.android",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "add-ons-apps-extensions"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/wevideo-video-editor-app-mobile-android.md"
   },
   {
     "id": "what-browser-am-i-using-co",
@@ -222404,44 +221912,57 @@
   {
     "id": "everypolitician",
     "name": "EveryPolitician",
-    "description": "Looking up current and former political office-holders globally for PEP screening",
+    "description": "Use when you have a `name` (and maybe a country) and want to check whether they are or were a political office-holder — returns positions, party, terms, and identifiers for PEP screening.",
     "url": "https://everypolitician.org/",
     "category": "public-records",
     "path": [
       "public-records",
       "sanctions-pep"
     ],
-    "bestFor": "Looking up current and former political office-holders globally for PEP screening",
-    "input": "Person name, country, or political position",
-    "output": "Politician profiles, positions held, party affiliations, and jurisdictional data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "PEP (politically-exposed-person) screening — confirming whether a subject holds/held political office anywhere in the world.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "dob"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free open data (Creative Commons BY-NC), built on Wikidata and now maintained within the OpenSanctions ecosystem; commercial licensing available separately.",
     "opsec": "passive",
-    "opsecNote": "Public database queries against open data; no notification to subjects.",
+    "opsecNote": "You query an open, public database built from Wikidata — no subject is ever notified and nothing touches the person's infrastructure. Only your own request is logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Community/OpenSanctions project sourced from Wikidata with hundreds of thousands of office-holders; data is crowd-curated so cross-check specifics, but provenance is transparent and citable.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "every-politician",
       "everypolitician-org"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Every Politician"
+    ],
+    "tags": [
+      "pep",
+      "politicians",
+      "sanctions-screening",
+      "wikidata"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sanctions-pep/everypolitician.md"
   },
   {
@@ -243468,36 +242989,56 @@
   },
   {
     "id": "online-services-pei-business-corporate-registry",
-    "name": "Online Services PEI Business / Corporate Registry",
-    "description": "OSINT tool: Online Services PEI Business / Corporate Registry.",
+    "name": "PEI Business / Corporate Registry",
+    "description": "Use when you have a `name` or company operating in Prince Edward Island, Canada and want its registry record — returns corporation status, directors/officers, and addresses.",
     "url": "https://www.princeedwardisland.ca/en/feature/pei-business-corporate-registry-original#/service/LegacyBusiness/LegacyBusinessSearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a Prince Edward Island company or business name to link people to corporate entities and addresses.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official government search; full certified copies of documents may carry a fee, but the search and basic record view are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a government corporate registry is passive — no subject is notified. The registry is a public record; only your own request is logged by the province's site (which sits behind Radware bot protection).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Government of Prince Edward Island — an authoritative primary source for PEI corporate records.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "PEI Corporate Registry",
+      "Prince Edward Island Business Registry"
+    ],
+    "tags": [
+      "corporate-registry",
+      "canada",
+      "public-records",
+      "business-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/online-services-pei-business-corporate-registry.md"
   },
   {
@@ -293273,46 +292814,6 @@
     "_file": "library/tools/search-engines/vulnerability-and-exploit-database.md"
   },
   {
-    "id": "wackysafe",
-    "name": "WackySafe",
-    "description": "Kid-friendly search engine.",
-    "url": "https://wackysafe.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "kid-friendly-educational-search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/wackysafe.md"
-  },
-  {
     "id": "walla-israel",
     "name": "Walla (Israel)",
     "description": "OSINT tool: Walla (Israel).",
@@ -341241,24 +340742,25 @@
   {
     "id": "paralink-translation-tool",
     "name": "Paralink Translation Tool",
-    "description": "Tool for translating text and web content from one language to another",
+    "description": "Use when you have foreign-language text or a web page and want it in your language — returns translations across 160+ languages via multiple engines, with dictionary and TTS.",
     "url": "http://translation2.paralink.com",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Free multi-engine translation of foreign-language OSINT text (posts, documents, pages) with a dictionary and text-to-speech.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free web translator; browser extensions available. It routes through Google and Bing engines, so no proprietary account is needed.",
+    "opsec": "active",
+    "opsecNote": "The text you paste is sent to third-party translation engines (Google/Bing) via Paralink — do not submit a subject's private messages or sensitive case text verbatim. For sensitive material, paraphrase or use an offline translator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An aggregator front-end over Google and Bing translation; output quality equals those engines. Machine translation is imperfect — verify names, idioms, and legal terms with a fluent reviewer for anything critical.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
@@ -341267,18 +340769,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "language-translation-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "free-translation"
     ],
+    "aliases": [
+      "Paralink Translator"
+    ],
+    "tags": [
+      "translation",
+      "language",
+      "multi-engine"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/paralink-translation-tool.md"
   },
   {

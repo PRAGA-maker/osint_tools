@@ -641,7 +641,7 @@ kind: group-index
 - **`oklavoters-com`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details (address, party, precinct) — returns address, name, dob.
 - **`on-demand-court-records`** (high) — Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), fi
 - **`online-searchable-death-indexes-and-records-united-states`** (high) — Use when you have a deceased US subject's `name` and want the right state death index — returns links to death records giving dates, place a
-- **`online-services-pei-business-corporate-registry`** (low) — OSINT tool: Online Services PEI Business / Corporate Registry.
+- **`online-services-pei-business-corporate-registry`** (low) — Use when you have a `name` or company operating in Prince Edward Island, Canada and want its registry record — returns corporation status, d
 - **`online-students-research-toolkit`** (medium) — Use when you have a research question and want a curated index of authoritative databases and advanced-search tips — returns links to subjec
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
 - **`ontario-genealogy-and-history-database-index`** (medium) — Use when you have an Ontario/Upper Canada `name` and want historical vital records — returns dob-era, associate and name from marriage/death

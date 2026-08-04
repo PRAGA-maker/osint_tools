@@ -65,7 +65,6 @@ kind: group-index
 - **`osint-me-3`** (low) — Use when you're starting a dark-web investigation and need a vetted resource list — returns curated tools, methods, and safety guidance for 
 - **`pasta`** (low) — Use when you have a `username` (a Pastebin account) or want to sweep recent public pastes for leaked selectors — returns emails, usernames, 
 - **`pastebin-bisque`** (low) — Use when you have a Pastebin `username` and want to bulk-download all of that user's public pastes for offline review — returns their paste 
-- **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
 - **`pirate-bay`** (low) — Use when you have a `username` (an uploader handle) and want to enumerate their torrent-upload history and activity on the largest public to
 - **`pitch`** (low) — OSINT tool: Pitch.
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
@@ -73,7 +72,6 @@ kind: group-index
 - **`ransomware-darknet-websites`** (low) — Use when you're tracking ransomware activity and need a starting index of gang leak-site `.onion` addresses — a clearnet blog list pointing 
 - **`ransomwatch`** (low) — Use when you have a company `name`/`employer-org` and want to check whether a ransomware group has claimed it as a victim — returns leak-sit
 - **`riseup`** (low) — Use when a target's email is @riseup.net (or you need activist-grade sock-puppet infra) — context on Riseup, a privacy collective whose serv
-- **`rooted`** (low) — OSINT tool: Rooted.
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
 - **`stark-county-auditor`** (medium) — Use when you have an owner `name` or an `address`/parcel in Stark County, Ohio and want property ownership and valuation — returns owner nam
 - **`state-of-delaware-professional-license-validator`** (medium) — Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, a
@@ -88,7 +86,6 @@ kind: group-index
 - **`torry-io`** (low) — Use when you have a keyword, `username`, or onion `domain` and want to search Tor/dark-web content from a normal browser — returns onion lin
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Use when you have a UK company's SIC code or `employer-org` and want to decode its declared industry — returns employer-org context.
 - **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
-- **`vorm-web`** (low) — OSINT tool: Vorm Web.
 - **`western-union-agent-locator`** (medium) — Use when you have a `geolocation`/`address` (city/country) and want the Western Union agent/pickup locations there — returns branch `address
 - **`witchdoctor-new-zealand`** (medium) — Use when you have a `name` and want to check a long-running NZ technology-review publication's byline/quote archive — returns `social-profil
 - **`world-real-time-air-quality-index`** (medium) — Use when you have a place (`geolocation`/`address`) and want current or historical air-quality readings for environmental context — returns 

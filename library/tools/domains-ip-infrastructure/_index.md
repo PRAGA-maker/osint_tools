@@ -250,7 +250,7 @@ kind: group-index
 - **`leakix`** (low) — Use when you have an `ip-address` or `domain` and want to see its exposed/misconfigured services and indexed leaks — returns exposed service
 - **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
 - **`linkfinder`** (low) — Use when you have a target's JavaScript files or a page (`domain`) and want to extract endpoints, paths and URLs referenced in the JS — retu
-- **`linkklipper`** (low) — The easiest extension to collect links from an open web page: - select links with Ctrl/Command key or download all; - filter links by extens
+- **`linkklipper`** (low) — Use when you have a web page and want every link off it as data — returns all URLs on the page, filterable by extension/regex, exported to C
 - **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
 - **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
 - **`logsensor`** (low) — #Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies

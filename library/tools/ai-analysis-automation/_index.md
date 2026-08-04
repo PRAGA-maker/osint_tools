@@ -61,7 +61,6 @@ kind: group-index
 - **`canva`** (low) — Use when you need to lay out an investigation report, timeline, or link-chart exhibit for presentation — a free design tool that produces sh
 - **`ccleaner`** (low) — OSINT tool: CCleaner.
 - **`chart-js`** (low) — OSINT tool: Chart.js.
-- **`chartblocks`** (low) — OSINT tool: chartblocks.
 - **`chatsecure`** (low) — OSINT tool: Chatsecure.
 - **`cheat-sh`** (low) — Use when you need instant command/tool syntax at the terminal (curl cheat.sh/<tool>) — a fast reference for the recon and analysis commands 
 - **`checkphish-ai`** (low) — Use when you have a suspicious URL (`domain`) and want a free real-time verdict on whether it is phishing/scam plus a screenshot — returns a
@@ -219,7 +218,6 @@ kind: group-index
 - **`obsidian`** (low) — Use when you need a local, linked note vault to organise an investigation — entities, timelines, sources — and see relationships in a graph;
 - **`oda-the-online-disassembler`** (low) — Use when you have a binary or raw bytes (from a suspect file, firmware, shellcode) and want to disassemble it in-browser — returns architect
 - **`offliberty`** (low) — Use when you have a media URL (`domain`/link) and want to grab an offline copy of the video/audio before it's deleted — returns a downloadab
-- **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
 - **`oftoolbox`** (low) — Use when you have a `username` tied to adult-content creation and want to understand the tooling ecosystem a creator likely uses — returns a
 - **`ollama`** (low) — Use when you have collected OSINT text/documents and want to run an LLM over them entirely offline — returns local model output with no data
 - **`onion-lookup`** (low) — Use when you have a Tor `.onion` address and want to confirm it exists and pull its metadata — returns onion domain details (titles, seen-da
