@@ -173,7 +173,7 @@ kind: group-index
 - **`godaddy`** (medium) — Use when a `domain` is registered via GoDaddy and you want registrar/WHOIS context and availability — returns domain and registrar/employer-
 - **`gogetcrawl`** (low) — Use when you have a `domain` and want every URL/file it ever exposed from web archives — returns archived URLs and downloadable files from W
 - **`google-bug-bounty-dorks-generator`** (low) — Use when you have a `domain` and want a ready-made battery of Google dorks — enter the target and get clickable searches for exposed files, 
-- **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
+- **`google-chrome-webpage-regexp-search`** (low) — Use when you have a rendered web page and want to extract patterned data — returns every regex match (emails, phones, IPs, IDs) highlighted 
 - **`google-universal-dork-builder`** (low) — Use when you have a `domain`/target and want to quickly assemble advanced search-operator "dork" queries for Google/Bing/Yandex — returns cr
 - **`gotanda`** (low) — Use when you have a `domain`, `ip-address` or URL on a web page and want to pivot it across many OSINT engines from a right-click menu — ret
 - **`gtmetrix-website-performance`** (low) — Use when you have a `domain`/URL and want to see how a site is built — returns its resource waterfall, third-party hosts/CDNs, tech, and a r
@@ -368,7 +368,7 @@ kind: group-index
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
 - **`squatm3gator`** (low) — Use when you have a `domain` and want to enumerate look-alike / typosquat variants and see which are registered — returns candidate squatted
 - **`striker`** (low) — Use when you have a `domain` and want fast offensive recon — subdomains, tech fingerprint, header/misconfig and sensitive-file checks — retu
-- **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
+- **`stylifyme`** (low) — Use when you have a `domain` and want its visual style fingerprint — returns the site's colour palette, fonts, sizes and spacing as a downlo
 - **`subdomain-finder`** (low) — Use when you have a `domain` and want its subdomains discovered passively — returns subdomain hosts and their resolved ip-address.
 - **`subdomainradar-io`** (low) — Use when you have a `domain` and want to enumerate its subdomains and exposed hosts across many data sources — returns domain, ip-address.
 - **`subdomainsbrute`** (low) — Use when you have a `domain` and want to enumerate its live subdomains fast via dictionary brute-force — returns discovered subdomain `domai

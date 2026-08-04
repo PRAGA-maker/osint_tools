@@ -4914,37 +4914,54 @@
   {
     "id": "gephi",
     "name": "Gephi",
-    "description": "OSINT tool: Gephi.",
+    "description": "Use when you have a set of `associate`/entity relationships and want to visualize and analyze them as a network graph — returns clustered link-analysis charts revealing key nodes and communities.",
     "url": "https://gephi.org",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Turning relationship data (people, accounts, domains) into an interactive link-analysis graph to find central nodes and communities.",
+    "selectorsIn": [
+      "associate",
+      "name",
+      "social-profile",
+      "domain"
+    ],
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL); no account, no paid tier. Donation-supported.",
+    "opsec": "passive",
+    "opsecNote": "Gephi runs entirely on your own machine and does not contact any subject — analysis is fully offline once your data is loaded. Keep sensitive case graphs on an encrypted local disk; nothing is uploaded.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Long-established open-source project used by universities and cited in 10,000+ peer-reviewed papers; the software is reputable, though the analysis quality depends entirely on the data you feed it.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gephi",
+      "gephi lite"
+    ],
     "tags": [
-      "social-network-analysis"
+      "link-analysis",
+      "network-graph",
+      "visualization",
+      "awesome-osint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/gephi.md"
   },
   {
@@ -15614,40 +15631,49 @@
   {
     "id": "trace-labs-blog",
     "name": "Trace Labs Blog",
-    "description": "OSINT tool: Trace Labs Blog.",
+    "description": "Use when you want missing-persons OSINT methodology, tooling and training — returns Trace Labs' articles, geolocation guides, VM releases and Search Party CTF write-ups.",
     "url": "https://www.tracelabs.org/blog/rss.xml",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "",
+    "bestFor": "Learning missing-persons OSINT tradecraft, methodology and tooling from the Trace Labs team.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free blog / RSS feed; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading the blog is passive and reveals nothing about any subject. The techniques it teaches, however, are for real missing-persons cases — apply them ethically and within Trace Labs' rules of engagement (no contact with the subject or family, no illegal access).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official blog of Trace Labs, a well-known nonprofit that runs the Global OSINT Search Party CTF crowdsourcing OSINT for real missing-persons cases in partnership with law enforcement.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "osint-rss-feeds"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "trace-labs-osint-vm"
     ],
+    "aliases": [
+      "trace labs",
+      "tracelabs blog"
+    ],
+    "tags": [
+      "missing-persons",
+      "methodology",
+      "training",
+      "awesome-osint"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/trace-labs-blog.md"
   },
   {
@@ -22351,38 +22377,52 @@
   {
     "id": "web-archives",
     "name": "Web Archives",
-    "description": "A browser extension to view archived and cached versions of a website on multiple archiving sites.",
+    "description": "Use when you have a `domain`/URL and want to pull up its archived or cached versions across many providers at once — returns links to Wayback, cache and archive snapshots.",
     "url": "https://github.com/dessant/web-archives",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-click lookup of a page's archived/cached copies across Wayback Machine, archive.today, cached views and more.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPLv3); install from your browser's extension store, no account.",
+    "opsec": "passive",
+    "opsecNote": "The extension queries public archive/cache providers, not the live target site, so you can read a deleted or altered page without hitting the subject's own server. Note the archive providers (and Google/Bing caches) see your request; use a clean browser profile if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Open-source, actively maintained extension by Armin Sebastian, distributed through the official Chrome/Edge/Firefox/Safari/Opera stores; it only orchestrates queries to reputable public archives.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "web archives extension",
+      "dessant web-archives"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "archiving"
+      "archives",
+      "wayback",
+      "cache"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web-archives.md"
   },
   {
@@ -37772,7 +37812,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "activetk"
+      "activetk",
+      "ghunt-online-version"
     ],
     "aliases": [
       "darkweb archive",
@@ -39472,7 +39513,8 @@
     "relatedTools": [
       "osint-me-1",
       "osint-me-3",
-      "osint-list-of-public-sex-offenders-registers-osintme-com"
+      "osint-list-of-public-sex-offenders-registers-osintme-com",
+      "osintme-com"
     ],
     "aliases": [
       "osintme dark web osint",
@@ -67256,42 +67298,52 @@
   {
     "id": "google-chrome-webpage-regexp-search",
     "name": "Google Chrome webpage Regexp search",
-    "description": "OSINT tool: Google Chrome webpage Regexp search.",
-    "url": "https://chrome.google.com/webstore/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn",
+    "description": "Use when you have a rendered web page and want to extract patterned data — returns every regex match (emails, phones, IPs, IDs) highlighted on the page.",
+    "url": "https://chromewebstore.google.com/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
+    "bestFor": "Searching the current web page with a regular expression to pull out emails, phones, IPs or other patterned strings.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "domain"
+      "email",
+      "phone",
+      "ip-address",
+      "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source Chrome extension; no account.",
+    "opsec": "passive",
+    "opsecNote": "The extension runs locally in your browser against pages you already have open — it sends nothing anywhere. It does not fetch the page for you, so use it behind whatever browsing OpSec (sock-puppet/VPN) you already apply to the visit itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source Chrome extension (source on GitHub) that adds Ctrl+F-style search with full regular-expression support; it only reads the DOM of the current tab.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "chrome regex search",
+      "regexp page search"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Searchers, scrapers, extractors, parsers"
+      "browser-extension",
+      "regex",
+      "data-extraction"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/google-chrome-webpage-regexp-search.md"
   },
   {
@@ -82000,42 +82052,50 @@
   {
     "id": "stylifyme",
     "name": "Stylifyme",
-    "description": "Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between two sites (common rare design features may indicate common owner)",
+    "description": "Use when you have a `domain` and want its visual style fingerprint — returns the site's colour palette, fonts, sizes and spacing as a downloadable style guide.",
     "url": "http://stylifyme.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting a website's colours, fonts and sizing to fingerprint its design or compare sites.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; enter a URL, view and download the style guide, no account.",
+    "opsec": "passive",
+    "opsecNote": "Stylify Me fetches and renders the target site from its own servers, so your IP is not exposed to the site owner. It only reads front-end styling — nothing about the subject is touched.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small free tool by designers Annabelle Yoon and Michael Mrowetz (open-source engine on GitHub); reliable for what it does, though results can be imprecise on complex/JS-heavy sites.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "stylify me",
+      "stylifyme"
+    ],
     "tags": [
       "Domain/IP/Links",
-      "Website analyze"
+      "website-fingerprint",
+      "design"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/stylifyme.md"
   },
   {
@@ -245985,39 +246045,58 @@
   {
     "id": "search-for-company-documents",
     "name": "Search for Company Documents",
-    "description": "OSINT tool: Search for Company Documents.",
-    "url": "https://www.sedar.com/search/search_form_pc_en.htm",
+    "description": "Use when you have a Canadian public company or issuer `name` and want its official regulatory filings — returns prospectuses, financials and insider documents naming directors and officers.",
+    "url": "https://www.sedarplus.ca/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Retrieving official Canadian public-company / securities filings (SEDAR+) and the people named in them.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public access; SEDAR+ is the official filing system operated by the Canadian Securities Administrators. No account needed to search public filings.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You are querying an official public-records system, not the subject, so the lookup is passive and undisclosed. Note SEDAR+ uses bot-protection; run searches manually in a browser rather than scripting them.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "SEDAR+ (sedarplus.ca) is the official electronic filing system of the Canadian Securities Administrators, replacing the legacy sedar.com; filings are authoritative primary regulatory records.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-for-investment-fund-documents",
-      "xbrl-voluntary-filing-program"
+    "relatedTools": [],
+    "aliases": [
+      "SEDAR",
+      "SEDAR+",
+      "sedarplus"
     ],
+    "tags": [
+      "company-filings",
+      "public-records",
+      "canada",
+      "securities"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-for-company-documents.md"
   },
   {
@@ -276731,35 +276810,48 @@
   {
     "id": "newspaper-archive",
     "name": "Newspaper Archive",
-    "description": "OSINT tool: Newspaper Archive.",
+    "description": "Use when you have a `name`, place or event and want historical Turkish/Ottoman press coverage — returns OCR-searchable newspaper pages and clippings by keyword or date.",
     "url": "https://www.gastearsivi.com/en/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text (OCR) searching millions of historical Turkish and Ottoman newspaper pages by keyword or date.",
+    "selectorsIn": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Large parts of the archive (e.g. Cumhuriyet 1929–present) are free to search and read as PDF; some features/collections have moved behind pricing — the core keyword search and many titles remain free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive archive search — you query a media database, not the subject. No login needed for free content; use a clean browser if you don't want searches tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
+    "trustNote": "Gaste Arşivi is an independent digitization project widely regarded as Turkey's most comprehensive free newspaper archive; the scanned pages are authentic primary press, though OCR accuracy varies with scan quality.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "tr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Gaste Arşivi",
+      "gastearsivi",
+      "Turkish newspaper archive"
+    ],
+    "tags": [
+      "newspaper-archive",
+      "turkey",
+      "historical-press"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/newspaper-archive.md"
   },
   {
@@ -291908,42 +292000,6 @@
     "lastVerified": "2026-07-17",
     "enrichment": "full",
     "_file": "library/tools/search-engines/other-search/zenodo.md"
-  },
-  {
-    "id": "zetoc",
-    "name": "Zetoc",
-    "description": "OSINT tool: Zetoc.",
-    "url": "http://zetoc.jisc.ac.uk",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "academic-resources-and-grey-literature"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/zetoc.md"
   },
   {
     "id": "zoomeye",
@@ -315367,50 +315423,6 @@
     "_file": "library/tools/social-networks/react-reddit-search-app.md"
   },
   {
-    "id": "readr-for-reddit",
-    "name": "Readr for Reddit",
-    "description": "Chrome extension for improved Reddit reading.",
-    "url": "https://chrome.google.com/webstore/detail/readr-forreddit/molhdaofohigaepljchpmfablknhabmo",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "Improved reading layout for Reddit threads",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reddit",
-      "reader",
-      "chrome-extension"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/readr-for-reddit.md"
-  },
-  {
     "id": "recover-fb-account",
     "name": "Recover FB Account (existence oracle)",
     "description": "Use when you have an `email` or `phone` and want to confirm whether it is tied to a Facebook account — returns account existence plus the masked name/photo Facebook shows on the recovery screen.",
@@ -336816,41 +336828,46 @@
   {
     "id": "synonyms-net",
     "name": "Synonyms.net",
-    "description": "Language-related search for synonyms and antonyms",
-    "url": "http://www.synonyms.net",
+    "description": "Use when you have a word or phrase and want its synonyms, antonyms, definitions and translations in 40+ languages — returns alternative terms to broaden keyword searches.",
+    "url": "https://www.synonyms.com/",
     "category": "translation-language",
     "path": [
       "translation-language"
     ],
-    "bestFor": "",
+    "bestFor": "Expanding a search keyword into synonyms, related terms and multilingual equivalents.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free crowdsourced thesaurus (STANDS4 network); optional signup and API, but lookups are free and open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reference lookup — a thesaurus query touches no subject and needs no login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Part of the long-running STANDS4 reference network; crowdsourced but well-established. Reference content, not investigative data.",
     "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "synonyms.net",
+      "synonyms.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "language-translation-tools"
+      "language-translation-tools",
+      "thesaurus"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-08-04",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/synonyms-net.md"
   },
   {

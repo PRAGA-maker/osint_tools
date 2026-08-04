@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - activetk
+- ghunt-online-version
 aliases:
 - darkweb archive
 - activetk darkweb archive

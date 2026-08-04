@@ -74,7 +74,7 @@ kind: group-index
 - **`stars21-com`** (low) — OSINT tool: stars21.com.
 - **`superemojitranslator-com`** (low) — OSINT tool: superemojitranslator.com.
 - **`symbols-com`** (low) — Use when you have an unidentified symbol, sign, flag, or glyph (from an `image`) and want to identify its meaning — returns encyclopedic ent
-- **`synonyms-net`** (low) — Language-related search for synonyms and antonyms
+- **`synonyms-net`** (low) — Use when you have a word or phrase and want its synonyms, antonyms, definitions and translations in 40+ languages — returns alternative term
 - **`systran-translate`** (low) — Use when you have foreign-language text (a post, document, or name) and want an accurate translation to work the source — returns translated
 - **`trans8it`** (low) — Use when you have text/SMS-speak or abbreviations and want plain English (or vice-versa) — a free web translator for "txt speak", chat slang
 - **`translate-by-babylon-free-online-translation`** (low) — Use when you have foreign-language text (a name, post, or document snippet) and want a quick free translation across 75+ languages — returns

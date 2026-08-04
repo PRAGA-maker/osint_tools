@@ -117,7 +117,7 @@ kind: group-index
 - **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
 - **`fusioncharts`** (low) — OSINT tool: FusionCharts.
 - **`geekflare-tools`** (low) — Use when you have a `domain` or `ip-address` and want fast web/DNS/security checks in one place — returns DNS records, WHOIS, TLS/security-h
-- **`gephi`** (low) — OSINT tool: Gephi.
+- **`gephi`** (medium) — Use when you have a set of `associate`/entity relationships and want to visualize and analyze them as a network graph — returns clustered li
 - **`ghostery`** (low) — Use when you want to see and block the trackers and analytics a webpage loads — reveals third-party tracker/ad IDs on a site and blocks trac
 - **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
 - **`gitguardian-public-github-monitoring`** (low) — Use when you have a `domain`/org and want to know if its secrets (keys, credentials) have leaked in public GitHub — returns leaked-secret al
@@ -323,7 +323,7 @@ kind: group-index
 - **`tldr`** (low) — Use when you have a shell command name and want concise, example-driven usage help at the terminal — returns practical examples instead of a
 - **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
 - **`torrent-to-magnet`** (low) — Use when you have a `.torrent` file and want its magnet link / infohash — returns a magnet URI computed locally in your browser.
-- **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
+- **`trace-labs-blog`** (high) — Use when you want missing-persons OSINT methodology, tooling and training — returns Trace Labs' articles, geolocation guides, VM releases an
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
 - **`ublock-origin`** (low) — Use when you are browsing target sites and want to block ads, trackers, and beacons that could fingerprint your investigation browser — a co
 - **`uforio`** (low) — Generate word clouds from Reddit threads.

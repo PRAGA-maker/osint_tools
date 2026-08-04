@@ -762,7 +762,7 @@ kind: group-index
 - **`scwonline-wales`** (high) — Use when you have a `name` of a social care worker in Wales and want to verify their registration — returns the registrant `name`, registrat
 - **`search-datasets`** (low) — OSINT tool: Search Datasets.
 - **`search-for-a-federal-corporation`** (medium) — Use when you have a company name or director/officer name in Canada and want the official federal incorporation record — returns employer-or
-- **`search-for-company-documents`** (low) — OSINT tool: Search for Company Documents.
+- **`search-for-company-documents`** (medium) — Use when you have a Canadian public company or issuer `name` and want its official regulatory filings — returns prospectuses, financials and
 - **`search-for-open-information-documents`** (medium) — Use when you have a `name` or `employer-org` tied to the BC (Canada) government and want disclosed records — returns documents, `associate` 
 - **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
 - **`search-polk-county-ordinance`** (low) — Use when you have an address, subdivision, or property description in Polk County, FL and want the local ordinance record touching it — retu
